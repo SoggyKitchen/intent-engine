@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Optional
 
 from jinja2 import Environment, FileSystemLoader
-from python_slugify import slugify
+from slugify import slugify
 
 from core.db import db
 from core.logger import log
