@@ -751,7 +751,7 @@ def run_programmatic(max_pages: int = 500) -> int:
 
     generated = 0
 
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=3) as executor:
         futures = {
             executor.submit(fn, *args): args
             for fn, args in tasks

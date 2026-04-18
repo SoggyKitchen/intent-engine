@@ -13,9 +13,9 @@ _last_reset: dict[str, float] = defaultdict(float)
 _lock = threading.Lock()
 
 DAILY_LIMITS = {
-    "groq_70b":   500_000,
-    "groq_gemma": 500_000,
-    "groq_8b":    500_000,
+    "groq_70b":   90_000,   # Free tier: 100k TPD hard limit, stop at 90k
+    "groq_8b":    50_000,   # Free tier: 6k TPM; conservative daily cap
+    "groq_3b":    80_000,   # llama-3.2-3b — light model, generous cap
     "cerebras":   300_000,
     "openrouter": 200_000,
 }
@@ -63,9 +63,9 @@ def _get_ordered_providers():
     providers = []
     groq_key = get("GROQ_API_KEY")
     if groq_key:
-        providers.append(("groq_70b",   "llama-3.3-70b-versatile", _groq_client))
-        providers.append(("groq_gemma", "gemma2-9b-it",             _groq_client))
-        providers.append(("groq_8b",    "llama-3.1-8b-instant",     _groq_client))
+        providers.append(("groq_70b", "llama-3.3-70b-versatile", _groq_client))
+        providers.append(("groq_8b",  "llama-3.1-8b-instant",    _groq_client))
+        providers.append(("groq_3b",  "llama-3.2-3b-preview",    _groq_client))
     cerebras_key = get("CEREBRAS_API_KEY")
     if cerebras_key:
         providers.append(("cerebras", "llama3.1-70b", _cerebras_client))

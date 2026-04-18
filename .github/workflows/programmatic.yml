@@ -5,14 +5,14 @@ on:
     inputs:
       max_pages:
         description: 'Max pages to generate'
-        default: '200'
+        default: '8'
   schedule:
-    - cron: "0 1 * * *"   # Every day 1 AM UTC
+    - cron: "0 0,6,12,18 * * *"   # 4x daily every 6h — spreads 100k daily token budget safely
 
 jobs:
   programmatic:
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 45
 
     steps:
       - uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
           DB_PATH: data/intent.db
 
       - name: Run programmatic SEO
-        run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '80' }}
+        run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '8' }}
         continue-on-error: true
         env:
           DB_PATH: data/intent.db
