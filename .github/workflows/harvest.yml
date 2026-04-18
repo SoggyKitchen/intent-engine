@@ -39,6 +39,7 @@ jobs:
 
       - name: Harvest signals
         run: uv run engine harvest
+        continue-on-error: true
         env:
           DB_PATH: data/intent.db
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

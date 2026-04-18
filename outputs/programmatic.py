@@ -69,12 +69,15 @@ ALTERNATIVE_TARGETS = {
 
 
 def _already_generated(slug_hint: str) -> bool:
-    with db() as conn:
-        row = conn.execute(
-            "SELECT COUNT(*) FROM outputs WHERE title LIKE ?",
-            (f"%{slug_hint}%",)
-        ).fetchone()
-    return row[0] > 0
+    try:
+        with db() as conn:
+            row = conn.execute(
+                "SELECT COUNT(*) FROM outputs WHERE title LIKE ?",
+                (f"%{slug_hint}%",)
+            ).fetchone()
+        return row[0] > 0
+    except Exception:
+        return False
 
 
 def _generate_comparison_page(tool_a: str, tool_b: str, vertical: str) -> bool:
@@ -237,9 +240,9 @@ Return JSON:
     }}
   ],
   "comparison_features": [
-    {{"name": "Starting Price", "values": {json.dumps([f"${i*10+9}/mo" for i in range(len(tools))])}}},
-    {{"name": "Free Trial", "values": {json.dumps(["Yes" for _ in tools])}}},
-    {{"name": "Best For", "values": {json.dumps([audience for _ in tools])}}}
+    {{"name": "Starting Price", "values": ["<price per tool>"]}},
+    {{"name": "Free Trial", "values": ["<yes/no per tool>"]}},
+    {{"name": "Best For", "values": ["<use case per tool>"]}}
   ],
   "verdict": "For {audience}, our top pick delivers the best balance of features and price. Start with the free trial to validate before committing.",
   "faqs": [
@@ -252,9 +255,6 @@ Return JSON:
   "primary_keyword": "best {vertical.replace('_',' ')} software for {audience}",
   "secondary_keywords": ["top {vertical.replace('_',' ')} tools {audience}", "{vertical.replace('_',' ')} software {audience} {time.strftime('%Y')}"]
 }}"""
-    import json as _json
-    prompt = prompt.replace("json.dumps", "_json.dumps")
-
     result = complete_json(prompt)
     if not result:
         return False
@@ -345,8 +345,22 @@ HIGH_VALUE_PRICING_TARGETS = [
 ]
 
 
+def _ping_google_sitemap():
+    try:
+        import httpx
+        domain = get("SITE_DOMAIN", "https://saaspare.org")
+        httpx.get(f"https://www.google.com/ping?sitemap={domain}/sitemap.xml", timeout=10)
+        httpx.get(f"https://www.bing.com/ping?sitemap={domain}/sitemap.xml", timeout=10)
+        log.info("Pinged Google + Bing sitemap endpoints")
+    except Exception as e:
+        log.warning(f"Sitemap ping failed: {e}")
+
+
 def run_programmatic(max_pages: int = 500) -> int:
-    """Generate comparison + alternatives pages for all tool combinations."""
+    """Generate comparison + alternatives + pricing + best-of pages."""
+    from core.db import migrate
+    migrate()
+
     generated = 0
     domain = get("SITE_DOMAIN", "https://saaspare.org")
     log.info(f"Starting programmatic SEO run — target {max_pages} pages for {domain}")
@@ -404,6 +418,9 @@ def run_programmatic(max_pages: int = 500) -> int:
             time.sleep(1.5)
         except Exception as e:
             log.warning(f"Failed best-of {vertical}/{audience}: {e}")
+
+    if generated > 0:
+        _ping_google_sitemap()
 
     log.info(f"Programmatic run complete: {generated} pages generated")
     return generated

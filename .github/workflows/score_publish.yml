@@ -25,6 +25,7 @@ jobs:
 
       - name: Score signals
         run: uv run engine score
+        continue-on-error: true
         env:
           DB_PATH: data/intent.db
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -37,6 +38,7 @@ jobs:
 
       - name: Generate & publish outputs
         run: uv run engine publish
+        continue-on-error: true
         env:
           DB_PATH: data/intent.db
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -67,6 +69,7 @@ jobs:
 
       - name: Post to social media
         run: uv run engine social
+        continue-on-error: true
         env:
           DB_PATH: data/intent.db
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
