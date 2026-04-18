@@ -19,6 +19,16 @@ QUERIES = [
     "tired of",
     "need a solution",
     "advice on",
+    "replacing",
+    "migrating from",
+    "evaluating",
+    "we use",
+    "anyone tried",
+    "thoughts on",
+    "comparison between",
+    "worth it",
+    "open source alternative",
+    "budget for",
 ]
 
 TAGS = ["ask_hn", "story", "comment"]

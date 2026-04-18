@@ -12,6 +12,10 @@ SUBREDDITS = [
     "CloudComputing", "marketing", "smallbusiness", "SideProject",
     "indiehackers", "MachineLearning", "artificial", "datascience",
     "cybersecurity", "netsec", "devtools", "programming",
+    "sales", "B2Bmarketing", "businessintelligence", "analytics",
+    "msp", "sysadmin", "ITManagers", "product_management",
+    "nocode", "Entrepreneur", "fintech", "legaltech",
+    "HRtech", "recruiting", "ecommerce", "shopify",
 ]
 
 HEADERS = {"User-Agent": "IntentEngine/1.0 (signal harvester; contact: bot@intentengine.local)"}

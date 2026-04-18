@@ -62,3 +62,19 @@ niches:
     lead_value_usd: 10000
     active: true
     daily_budget: 200
+
+  - vertical: legal_compliance
+    description: Legal tech, contract management, compliance tools, e-signature
+    keywords: [contract management, e-signature, compliance software, legal tech, gdpr tool, docusign alternative]
+    affiliate_category: legal
+    lead_value_usd: 18000
+    active: true
+    daily_budget: 100
+
+  - vertical: finance_ops
+    description: Accounting software, expense management, CFO tools, invoicing
+    keywords: [accounting software, expense management, quickbooks alternative, invoicing tool, spend management]
+    affiliate_category: finance
+    lead_value_usd: 14000
+    active: true
+    daily_budget: 100
