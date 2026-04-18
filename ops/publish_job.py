@@ -1,0 +1,79 @@
+import time
+import yaml
+from pathlib import Path
+
+from core.db import db
+from core.logger import log
+from core.secrets import MONETIZATION_MODE
+from outputs.lead_pack import generate as gen_lead_pack
+from outputs.seo_page import generate_from_cluster, find_clusters
+from publisher.gumroad import publish_lead_pack
+from publisher.pages_deploy import deploy_all
+
+NICHES_FILE = Path("config/niches.yaml")
+
+
+def run():
+    niches = _load_active_niches()
+    seo_pages_generated = 0
+    lead_packs_generated = 0
+    deployed = False
+
+    for niche in niches:
+        vertical = niche["vertical"]
+        log.info(f"Processing vertical: {vertical}")
+
+        clusters = find_clusters(vertical, min_size=5)
+        for cluster in clusters:
+            if _already_generated_seo_today(vertical):
+                continue
+            page_path = generate_from_cluster(vertical, cluster)
+            if page_path:
+                seo_pages_generated += 1
+                log.info(f"SEO page: {page_path}")
+
+        if MONETIZATION_MODE in ("full", "parent_holds_account"):
+            if _enough_signals_for_pack(vertical):
+                pack_path = gen_lead_pack(vertical)
+                if pack_path:
+                    title = f"{vertical.replace('_', ' ').title()} Buyer Intent Pack — {time.strftime('%b %d')}"
+                    url = publish_lead_pack(pack_path, vertical, title)
+                    if url:
+                        lead_packs_generated += 1
+                        log.info(f"Lead pack published: {url}")
+
+    if seo_pages_generated > 0:
+        deployed = deploy_all()
+
+    log.info(
+        f"Publish job done: {seo_pages_generated} SEO pages, "
+        f"{lead_packs_generated} lead packs, deployed={deployed}"
+    )
+
+
+def _load_active_niches() -> list[dict]:
+    if not NICHES_FILE.exists():
+        return []
+    with open(NICHES_FILE) as f:
+        cfg = yaml.safe_load(f)
+    return [n for n in cfg.get("niches", []) if n.get("active", True)]
+
+
+def _already_generated_seo_today(vertical: str) -> bool:
+    today_start = int(time.time()) - 86400
+    with db() as conn:
+        row = conn.execute("""
+            SELECT COUNT(*) FROM outputs
+            WHERE vertical = ? AND type = 'seo_page' AND created_at >= ?
+        """, (vertical, today_start)).fetchone()
+    return row[0] > 0
+
+
+def _enough_signals_for_pack(vertical: str) -> bool:
+    since_ts = int(time.time()) - 7 * 86400
+    with db() as conn:
+        row = conn.execute("""
+            SELECT COUNT(*) FROM scored_signals
+            WHERE vertical = ? AND ts >= ? AND profit_score >= 8
+        """, (vertical, since_ts)).fetchone()
+    return row[0] >= 10

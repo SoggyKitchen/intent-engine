@@ -1,0 +1,27 @@
+You are a B2B buying-intent analyst. Analyze this public signal and return ONLY valid JSON.
+
+SIGNAL:
+Source: {source}
+Title: {title}
+Body: {body}
+
+Score this signal strictly as a B2B buying intent indicator. Return exactly this JSON structure:
+
+{{
+  "intent": <0-100, how strongly this indicates active buying intent for a B2B product/service>,
+  "budget_signal": <0-100, how strongly this indicates they have/control budget>,
+  "urgency": <0-100, how urgently they need a solution>,
+  "vertical": "<one of: devtools|saas_analytics|marketing_automation|cloud_infra|cybersecurity|hr_recruiting|ecommerce_tools|ai_ml_tools|other>",
+  "buyer_role": "<best guess at role: founder|cto|developer|marketer|hr_manager|security_engineer|data_scientist|unknown>",
+  "estimated_deal_usd": <realistic annual contract value if they buy a solution, integer>,
+  "monetization_path": "<best option: lead_pack|affiliate|report|none>",
+  "confidence": <0.0-1.0, your confidence in this scoring>,
+  "reasoning": "<one sentence explaining the key signal>"
+}}
+
+Rules:
+- intent>70 means genuinely ready to evaluate or purchase
+- budget_signal>60 means clear budget authority or company spending
+- If this is spam, irrelevant, or personal (not B2B), return all scores 0 and monetization_path "none"
+- estimated_deal_usd should be realistic for the industry (devtools: $5k-$50k, cloud: $20k-$200k)
+- Only return JSON, no other text

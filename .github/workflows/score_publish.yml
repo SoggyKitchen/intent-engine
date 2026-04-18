@@ -1,0 +1,87 @@
+name: Score & Publish
+
+on:
+  schedule:
+    - cron: "30 8 * * *"    # Daily at 8:30 AM UTC
+  workflow_dispatch:
+
+jobs:
+  score-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Score signals
+        run: uv run engine score
+        env:
+          DB_PATH: data/intent.db
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          SCORE_BATCH_SIZE: "150"
+          LOG_LEVEL: INFO
+          MONETIZATION_MODE: ${{ secrets.MONETIZATION_MODE }}
+
+      - name: Generate & publish outputs
+        run: uv run engine publish
+        env:
+          DB_PATH: data/intent.db
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          CF_PAGES_DEPLOY_HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+          CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}
+          AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          MONETIZATION_MODE: ${{ secrets.MONETIZATION_MODE }}
+          DRY_RUN: ${{ secrets.DRY_RUN }}
+          LOG_LEVEL: INFO
+
+      - name: Run optimizer
+        run: uv run engine optimize
+        env:
+          DB_PATH: data/intent.db
+          LOG_LEVEL: INFO
+
+      - name: Submit backlinks + IndexNow
+        run: uv run engine backlinks
+        env:
+          DB_PATH: data/intent.db
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          DRY_RUN: ${{ secrets.DRY_RUN }}
+
+      - name: Post to social media
+        run: uv run engine social
+        env:
+          DB_PATH: data/intent.db
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          DRY_RUN: ${{ secrets.DRY_RUN }}
+
+      - name: Print stats
+        run: uv run engine stats
+        env:
+          DB_PATH: data/intent.db
+
+      - name: Commit DB and generated files
+        run: |
+          git config user.email "bot@intentengine.local"
+          git config user.name "IntentBot"
+          git add data/intent.db outputs/generated/ site/pages/ || true
+          git diff --staged --quiet || git commit -m "chore: score+publish $(date -u +%Y-%m-%d) [skip ci]"
+          git push

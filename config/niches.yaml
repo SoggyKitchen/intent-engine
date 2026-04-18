@@ -1,0 +1,64 @@
+niches:
+  - vertical: devtools
+    description: Developer tools, IDEs, CI/CD, testing frameworks
+    keywords: [devtools, developer tools, ci/cd, testing framework, ide, code editor, deployment]
+    affiliate_category: software
+    lead_value_usd: 5000
+    active: true
+    daily_budget: 200
+
+  - vertical: saas_analytics
+    description: SaaS analytics, dashboards, BI tools
+    keywords: [analytics dashboard, business intelligence, data visualization, reporting tool, metrics]
+    affiliate_category: software
+    lead_value_usd: 8000
+    active: true
+    daily_budget: 150
+
+  - vertical: marketing_automation
+    description: Email marketing, CRM, marketing automation platforms
+    keywords: [email marketing, crm, marketing automation, lead nurturing, customer journey]
+    affiliate_category: marketing
+    lead_value_usd: 6000
+    active: true
+    daily_budget: 200
+
+  - vertical: cloud_infra
+    description: Cloud infrastructure, hosting, serverless, databases
+    keywords: [cloud hosting, aws alternative, database, serverless, vps, kubernetes]
+    affiliate_category: infrastructure
+    lead_value_usd: 12000
+    active: true
+    daily_budget: 150
+
+  - vertical: cybersecurity
+    description: Security tools, penetration testing, compliance
+    keywords: [security tool, penetration testing, compliance, soc2, gdpr, vulnerability scanner]
+    affiliate_category: security
+    lead_value_usd: 15000
+    active: true
+    daily_budget: 100
+
+  - vertical: hr_recruiting
+    description: HR software, ATS, recruiting tools, HRIS
+    keywords: [applicant tracking, ats, recruiting software, hris, hr management, payroll]
+    affiliate_category: hr
+    lead_value_usd: 7000
+    active: true
+    daily_budget: 150
+
+  - vertical: ecommerce_tools
+    description: E-commerce platforms, payment processing, inventory management
+    keywords: [ecommerce platform, shopify alternative, payment gateway, inventory management]
+    affiliate_category: ecommerce
+    lead_value_usd: 4000
+    active: true
+    daily_budget: 200
+
+  - vertical: ai_ml_tools
+    description: AI/ML platforms, LLM APIs, data labeling, MLOps
+    keywords: [llm api, ai platform, machine learning, mlops, data labeling, vector database]
+    affiliate_category: ai
+    lead_value_usd: 10000
+    active: true
+    daily_budget: 200

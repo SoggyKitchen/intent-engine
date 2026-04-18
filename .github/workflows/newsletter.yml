@@ -1,0 +1,47 @@
+name: Weekly Newsletter
+
+on:
+  schedule:
+    - cron: "0 10 * * 5"    # Every Friday 10 AM UTC
+  workflow_dispatch:
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Generate and send newsletter
+        run: uv run engine newsletter
+        env:
+          DB_PATH: data/intent.db
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          DRY_RUN: ${{ secrets.DRY_RUN }}
+
+      - name: Inject capture forms into new pages
+        run: uv run engine inject-forms
+        env:
+          DB_PATH: data/intent.db
+          EMAIL_FORM_ACTION: ${{ secrets.EMAIL_FORM_ACTION }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+
+      - name: Commit
+        run: |
+          git config user.email "bot@intentengine.local"
+          git config user.name "IntentBot"
+          git add outputs/generated/ site/pages/ || true
+          git diff --staged --quiet || git commit -m "chore: newsletter+forms $(date -u +%Y-%m-%d) [skip ci]"
+          git push

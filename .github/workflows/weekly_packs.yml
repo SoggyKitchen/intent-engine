@@ -1,0 +1,44 @@
+name: Weekly Lead Packs
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"     # Every Monday 9 AM UTC
+  workflow_dispatch:
+
+jobs:
+  weekly-packs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Generate packs for all verticals
+        run: |
+          for vertical in devtools saas_analytics marketing_automation cloud_infra cybersecurity hr_recruiting ecommerce_tools ai_ml_tools; do
+            echo "Generating pack for $vertical..."
+            uv run engine pack $vertical || echo "Skipped $vertical (not enough signals)"
+          done
+        env:
+          DB_PATH: data/intent.db
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          MONETIZATION_MODE: ${{ secrets.MONETIZATION_MODE }}
+          DRY_RUN: ${{ secrets.DRY_RUN }}
+          LOG_LEVEL: INFO
+
+      - name: Commit outputs
+        run: |
+          git config user.email "bot@intentengine.local"
+          git config user.name "IntentBot"
+          git add data/intent.db outputs/generated/ || true
+          git diff --staged --quiet || git commit -m "chore: weekly packs $(date -u +%Y-%m-%d) [skip ci]"
+          git push

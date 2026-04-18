@@ -1,0 +1,60 @@
+name: Harvest Signals
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # Every 6 hours
+  workflow_dispatch:          # Allow manual trigger
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Restore database
+        run: |
+          mkdir -p data
+          if [ -f data/intent.db ]; then
+            echo "Database exists"
+          else
+            echo "Fresh database"
+          fi
+
+      - name: Init DB
+        run: uv run engine init
+        env:
+          DB_PATH: data/intent.db
+          LOG_LEVEL: INFO
+
+      - name: Harvest signals
+        run: uv run engine harvest
+        env:
+          DB_PATH: data/intent.db
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
+          GITHUB_TOKEN: ${{ secrets.GH_DATA_TOKEN }}
+          STACKEXCHANGE_KEY: ${{ secrets.STACKEXCHANGE_KEY }}
+          HEALTHCHECKS_URL: ${{ secrets.HEALTHCHECKS_URL }}
+          LOOKBACK_HOURS: "7"
+          LOG_LEVEL: INFO
+
+      - name: Commit DB
+        run: |
+          git config user.email "bot@intentengine.local"
+          git config user.name "IntentBot"
+          git add data/intent.db
+          git diff --staged --quiet || git commit -m "chore: harvest $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+          git push

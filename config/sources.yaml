@@ -1,0 +1,79 @@
+sources:
+  reddit:
+    enabled: true
+    subreddits:
+      - entrepreneur
+      - startups
+      - SaaS
+      - webdev
+      - devops
+      - aws
+      - CloudComputing
+      - marketing
+      - smallbusiness
+      - SideProject
+      - indiehackers
+      - MachineLearning
+      - artificial
+      - datascience
+      - cybersecurity
+      - netsec
+    post_limit: 50
+    comment_depth: 2
+    min_score: 5
+
+  hackernews:
+    enabled: true
+    queries:
+      - "looking for"
+      - "recommend"
+      - "alternative to"
+      - "switching from"
+      - "best tool for"
+      - "hiring"
+      - "who wants to be hired"
+    tags: [ask_hn, show_hn]
+    hits_per_page: 50
+
+  github:
+    enabled: true
+    search_queries:
+      - "looking for alternative"
+      - "recommendation for"
+      - "does anyone know"
+      - "what tool"
+    languages: [python, javascript, typescript, go, rust]
+    min_reactions: 3
+
+  rss:
+    enabled: true
+    feeds:
+      - name: ProductHunt
+        url: https://www.producthunt.com/feed
+        category: launches
+      - name: IndieHackers
+        url: https://www.indiehackers.com/feed.rss
+        category: founders
+      - name: TechCrunch Startups
+        url: https://techcrunch.com/category/startups/feed/
+        category: funding
+      - name: Y Combinator HN
+        url: https://news.ycombinator.com/rss
+        category: tech
+      - name: VentureBeat AI
+        url: https://venturebeat.com/category/ai/feed/
+        category: ai
+      - name: The SaaS Weekly
+        url: https://saasweekly.com/feed
+        category: saas
+
+  stackoverflow:
+    enabled: true
+    tags:
+      - software-recommendations
+      - tools
+      - devops
+      - cloud
+      - machine-learning
+    min_score: 3
+    page_size: 50
