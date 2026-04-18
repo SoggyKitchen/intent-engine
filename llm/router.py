@@ -92,20 +92,29 @@ def _parse_json_response(text: str) -> Optional[dict]:
 
 
 def _groq_client(prompt: str, system: str, model: str) -> Optional[dict]:
-    from groq import Groq
+    from groq import Groq, RateLimitError
     client = Groq(api_key=get("GROQ_API_KEY"))
     messages = []
     if system:
         messages.append({"role": "system", "content": system})
     messages.append({"role": "user", "content": prompt})
-    resp = client.chat.completions.create(
-        model=model,
-        messages=messages,
-        temperature=0.1,
-        max_tokens=600,
-        response_format={"type": "json_object"},
-    )
-    return json.loads(resp.choices[0].message.content)
+    for attempt in range(3):
+        try:
+            resp = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                temperature=0.1,
+                max_tokens=4000,
+                response_format={"type": "json_object"},
+            )
+            return json.loads(resp.choices[0].message.content)
+        except RateLimitError:
+            wait = 60 * (attempt + 1)
+            log.warning(f"Groq rate limit hit, waiting {wait}s (attempt {attempt+1}/3)")
+            time.sleep(wait)
+        except Exception:
+            raise
+    raise Exception("Groq rate limit exceeded after 3 retries")
 
 
 def _gemini_client(prompt: str, system: str, model: str) -> Optional[dict]:
@@ -129,9 +138,9 @@ def _cerebras_client(prompt: str, system: str, model: str) -> Optional[dict]:
     messages.append({"role": "user", "content": prompt})
     resp = httpx.post(
         "https://api.cerebras.ai/v1/chat/completions",
-        json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 600},
+        json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 4000},
         headers=headers,
-        timeout=30,
+        timeout=60,
     )
     resp.raise_for_status()
     return _parse_json_response(resp.json()["choices"][0]["message"]["content"])
@@ -142,7 +151,7 @@ def _openrouter_client(prompt: str, system: str, model: str) -> Optional[dict]:
     headers = {
         "Authorization": f"Bearer {get('OPENROUTER_API_KEY')}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://github.com/you/intent-engine",
+        "HTTP-Referer": "https://saaspare.org",
     }
     messages = []
     if system:
@@ -150,9 +159,9 @@ def _openrouter_client(prompt: str, system: str, model: str) -> Optional[dict]:
     messages.append({"role": "user", "content": prompt})
     resp = httpx.post(
         "https://openrouter.ai/api/v1/chat/completions",
-        json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 600},
+        json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 4000},
         headers=headers,
-        timeout=45,
+        timeout=60,
     )
     resp.raise_for_status()
     return _parse_json_response(resp.json()["choices"][0]["message"]["content"])

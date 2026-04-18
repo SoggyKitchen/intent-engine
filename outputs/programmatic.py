@@ -376,7 +376,7 @@ def run_programmatic(max_pages: int = 500) -> int:
                 if ok:
                     generated += 1
                     log.info(f"[{generated}] {tool_a} vs {tool_b} ({vertical})")
-                time.sleep(1.5)
+                time.sleep(3)
             except Exception as e:
                 log.warning(f"Failed {tool_a} vs {tool_b}: {e}")
 
@@ -391,7 +391,7 @@ def run_programmatic(max_pages: int = 500) -> int:
                 if ok:
                     generated += 1
                     log.info(f"[{generated}] alternatives to {target} ({vertical})")
-                time.sleep(1.5)
+                time.sleep(3)
             except Exception as e:
                 log.warning(f"Failed alternatives {target}: {e}")
 
@@ -403,7 +403,7 @@ def run_programmatic(max_pages: int = 500) -> int:
             if ok:
                 generated += 1
                 log.info(f"[{generated}] pricing: {tool}")
-            time.sleep(1.5)
+            time.sleep(3)
         except Exception as e:
             log.warning(f"Failed pricing {tool}: {e}")
 
@@ -415,7 +415,7 @@ def run_programmatic(max_pages: int = 500) -> int:
             if ok:
                 generated += 1
                 log.info(f"[{generated}] best-of: {vertical} for {audience}")
-            time.sleep(1.5)
+            time.sleep(3)
         except Exception as e:
             log.warning(f"Failed best-of {vertical}/{audience}: {e}")
 
