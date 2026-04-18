@@ -270,6 +270,33 @@ PROGRAMS = {
          "affiliate_url": "https://www.expressvpn.com/affiliates", "network": "impact",
          "commission": "$13–36 per sale", "commission_pct": 0, "recurring": False, "avg_plan_usd": 25},
     ],
+
+    "seo_tools": [
+        {"name": "Semrush", "homepage": "https://www.semrush.com",
+         "affiliate_url": "https://www.semrush.com/partner/", "network": "impact",
+         "commission": "$200 per new subscription", "commission_pct": 0, "recurring": False, "avg_plan_usd": 200},
+        {"name": "Moz Pro", "homepage": "https://moz.com",
+         "affiliate_url": "https://moz.com/affiliate", "network": "shareasale",
+         "commission": "20% recurring", "commission_pct": 20, "recurring": True, "avg_plan_usd": 99},
+        {"name": "Surfer SEO", "homepage": "https://surferseo.com",
+         "affiliate_url": "https://surferseo.com/affiliate/", "network": "partnerstack",
+         "commission": "25% recurring", "commission_pct": 25, "recurring": True, "avg_plan_usd": 89},
+        {"name": "SE Ranking", "homepage": "https://seranking.com",
+         "affiliate_url": "https://seranking.com/partners.html", "network": "partnerstack",
+         "commission": "30% recurring", "commission_pct": 30, "recurring": True, "avg_plan_usd": 55},
+        {"name": "Mangools", "homepage": "https://mangools.com",
+         "affiliate_url": "https://mangools.com/affiliate-program", "network": "direct",
+         "commission": "30% recurring", "commission_pct": 30, "recurring": True, "avg_plan_usd": 49},
+        {"name": "SpyFu", "homepage": "https://www.spyfu.com",
+         "affiliate_url": "https://www.spyfu.com/affiliate", "network": "shareasale",
+         "commission": "40% per sale", "commission_pct": 40, "recurring": False, "avg_plan_usd": 39},
+        {"name": "Clearscope", "homepage": "https://www.clearscope.io",
+         "affiliate_url": "https://www.clearscope.io/partners", "network": "direct",
+         "commission": "20% recurring", "commission_pct": 20, "recurring": True, "avg_plan_usd": 189},
+        {"name": "Screaming Frog", "homepage": "https://www.screamingfrog.co.uk",
+         "affiliate_url": "https://www.screamingfrog.co.uk/seo-spider/", "network": "direct",
+         "commission": "direct traffic only", "commission_pct": 0, "recurring": False, "avg_plan_usd": 18},
+    ],
 }
 
 _ALL_AFFILIATE_URLS: dict[str, str] = {

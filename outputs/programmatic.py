@@ -1,11 +1,11 @@
 """
 Programmatic SEO — generates all page types for all known tool combinations.
-6 page types x 15 verticals x ~45 pairs each = 4000+ pages/month potential.
-Uses ThreadPoolExecutor(3) to run 3 LLM calls in parallel (one per Groq model bucket).
+7 page types x 16 verticals x ~90 pairs each = 6000+ pages/month potential.
+Uses ThreadPoolExecutor(5) to run 5 LLM providers in parallel.
 """
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from itertools import combinations
+from itertools import combinations, permutations
 from pathlib import Path
 
 from core.db import db
@@ -76,6 +76,10 @@ TOOLS_BY_VERTICAL = {
         "NordLayer", "Perimeter 81", "Cisco AnyConnect", "ExpressVPN Business",
         "Twingate", "Cloudflare Access", "Tailscale", "WireGuard", "Zscaler", "OpenVPN",
     ],
+    "seo_tools": [
+        "Semrush", "Moz Pro", "Surfer SEO", "SE Ranking", "Mangools",
+        "SpyFu", "Clearscope", "Screaming Frog", "Ubersuggest", "Ahrefs",
+    ],
 }
 
 ALTERNATIVE_TARGETS = {
@@ -92,6 +96,7 @@ ALTERNATIVE_TARGETS = {
     "password_managers": ["LastPass", "1Password", "Dashlane"],
     "video_conferencing": ["Zoom", "Microsoft Teams", "Google Meet"],
     "vpn_business": ["NordLayer", "Cisco AnyConnect", "Perimeter 81"],
+    "seo_tools": ["Semrush", "Ahrefs", "Moz Pro"],
 }
 
 HIGH_VALUE_PRICING_TARGETS = [
@@ -126,6 +131,11 @@ HIGH_VALUE_PRICING_TARGETS = [
     ("NordLayer", "vpn_business"),
     ("Deel", "hr_recruiting"),
     ("Gusto", "hr_recruiting"),
+    ("Semrush", "seo_tools"),
+    ("Surfer SEO", "seo_tools"),
+    ("Clearscope", "seo_tools"),
+    ("Moz Pro", "seo_tools"),
+    ("SE Ranking", "seo_tools"),
 ]
 
 BEST_OF_QUERIES = [
@@ -150,6 +160,9 @@ BEST_OF_QUERIES = [
     ("password_managers", "business", ["1Password", "LastPass", "Bitwarden", "Dashlane", "Keeper"]),
     ("video_conferencing", "remote teams", ["Zoom", "Google Meet", "Microsoft Teams", "Whereby", "Loom"]),
     ("vpn_business", "startups", ["NordLayer", "Twingate", "Cloudflare Access", "Perimeter 81", "Tailscale"]),
+    ("seo_tools", "small business", ["Mangools", "SE Ranking", "Ubersuggest", "SpyFu", "Surfer SEO"]),
+    ("seo_tools", "enterprise", ["Semrush", "Moz Pro", "Clearscope", "Surfer SEO", "SE Ranking"]),
+    ("seo_tools", "content teams", ["Surfer SEO", "Clearscope", "Semrush", "Mangools", "SE Ranking"]),
 ]
 
 HIGH_VALUE_COUPON_TARGETS = [
@@ -173,6 +186,8 @@ HIGH_VALUE_COUPON_TARGETS = [
     ("Zoom", "video_conferencing"),
     ("Deel", "hr_recruiting"),
     ("Rippling", "hr_recruiting"),
+    ("Semrush", "seo_tools"),
+    ("Surfer SEO", "seo_tools"),
 ]
 
 HIGH_VALUE_REVIEW_TARGETS = [
@@ -196,6 +211,9 @@ HIGH_VALUE_REVIEW_TARGETS = [
     ("ActiveCampaign", "marketing_automation"),
     ("DocuSign", "legal_compliance"),
     ("Amplitude", "saas_analytics"),
+    ("Semrush", "seo_tools"),
+    ("Surfer SEO", "seo_tools"),
+    ("Moz Pro", "seo_tools"),
 ]
 
 FREE_PLAN_TARGETS = [
@@ -219,7 +237,55 @@ FREE_PLAN_TARGETS = [
     ("Cloudflare Access", "vpn_business"),
     ("Snyk", "cybersecurity"),
     ("Linear", "devtools"),
+    ("Ubersuggest", "seo_tools"),
+    ("SE Ranking", "seo_tools"),
+    ("Mangools", "seo_tools"),
 ]
+
+
+VERTICAL_PRIORITY = {
+    "seo_tools": 1,
+    "finance_ops": 2,
+    "hr_recruiting": 3,
+    "ai_ml_tools": 4,
+    "legal_compliance": 5,
+    "marketing_automation": 6,
+    "crm": 7,
+    "devtools": 8,
+    "saas_analytics": 9,
+    "project_management": 10,
+    "ecommerce_tools": 11,
+    "cybersecurity": 12,
+    "cloud_infra": 13,
+    "password_managers": 14,
+    "video_conferencing": 15,
+    "vpn_business": 16,
+}
+
+PAGE_TYPE_PRIORITY = {
+    "_generate_pricing_page": 1,
+    "_generate_comparison_page": 2,
+    "_generate_review_page": 3,
+    "_generate_alternatives_page": 4,
+    "_generate_coupon_page": 5,
+    "_generate_free_plan_page": 6,
+    "_generate_bestof_page": 7,
+}
+
+
+def _task_priority(task: tuple) -> tuple:
+    fn, args = task
+    page_p = PAGE_TYPE_PRIORITY.get(fn.__name__, 99)
+    if fn.__name__ == "_generate_comparison_page":
+        vertical = args[2]
+    elif fn.__name__ == "_generate_bestof_page":
+        vertical = args[0]
+    elif len(args) > 1:
+        vertical = args[1]
+    else:
+        vertical = ""
+    vert_p = VERTICAL_PRIORITY.get(vertical, 99)
+    return (page_p, vert_p)
 
 
 def _already_generated(slug_hint: str) -> bool:
@@ -659,7 +725,7 @@ def run_programmatic(max_pages: int = 500) -> int:
     tasks: list[tuple] = []
 
     for vertical, tools in TOOLS_BY_VERTICAL.items():
-        for tool_a, tool_b in combinations(tools, 2):
+        for tool_a, tool_b in permutations(tools, 2):
             tasks.append((_generate_comparison_page, (tool_a, tool_b, vertical)))
 
     for vertical, targets in ALTERNATIVE_TARGETS.items():
@@ -681,9 +747,11 @@ def run_programmatic(max_pages: int = 500) -> int:
     for tool, vertical in FREE_PLAN_TARGETS:
         tasks.append((_generate_free_plan_page, (tool, vertical)))
 
+    tasks.sort(key=_task_priority)
+
     generated = 0
 
-    with ThreadPoolExecutor(max_workers=3) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         futures = {
             executor.submit(fn, *args): args
             for fn, args in tasks

@@ -17,6 +17,7 @@ from publisher.affiliate_registry import get_go_url, get_links_for_vertical, get
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 SITE_DIR = Path("site/pages")
 AMAZON_TAG = get("AMAZON_ASSOCIATE_TAG", "yourtag-22")
+_JINJA_ENV = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
 
 
 def _affiliate_url(tool_name: str, base_url: str, vertical: str = "") -> str:
@@ -128,8 +129,7 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
     data["related_pages"] = _get_related_pages(vertical, slug)
     data["brevo_form_id"] = get("BREVO_FORM_ID", "")
 
-    env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
-    tmpl = env.get_template("comparison_page.html.j2")
+    tmpl = _JINJA_ENV.get_template("comparison_page.html.j2")
     html = tmpl.render(**data)
 
     if DRY_RUN:

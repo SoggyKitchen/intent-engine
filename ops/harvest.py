@@ -1,6 +1,7 @@
 import hashlib
 import time
 import uuid
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Iterator
 
 from adapters.hn import HNAdapter
@@ -41,16 +42,17 @@ def run():
     adapters.append(StackOverflowAdapter())
 
     total_new = 0
-    for adapter in adapters:
-        adapter_count = 0
-        try:
-            for signal in adapter.fetch(since_ts):
-                if _save_signal(signal):
-                    adapter_count += 1
-                    total_new += 1
-        except Exception as e:
-            log.error(f"Adapter {adapter.name} failed: {e}")
-        log.info(f"{adapter.name}: {adapter_count} new signals")
+    with ThreadPoolExecutor(max_workers=len(adapters)) as pool:
+        futures = {pool.submit(_run_adapter, adapter, since_ts): adapter.name
+                   for adapter in adapters}
+        for future in as_completed(futures):
+            name = futures[future]
+            try:
+                count = future.result()
+                total_new += count
+                log.info(f"{name}: {count} new signals")
+            except Exception as e:
+                log.error(f"Adapter {name} failed: {e}")
 
     with db() as conn:
         conn.execute("""
@@ -63,19 +65,26 @@ def run():
     return total_new
 
 
+def _run_adapter(adapter, since_ts: int) -> int:
+    count = 0
+    try:
+        for signal in adapter.fetch(since_ts):
+            if _save_signal(signal):
+                count += 1
+    except Exception as e:
+        log.error(f"Adapter {adapter.name} error mid-run: {e}")
+    return count
+
+
 def _save_signal(signal: RawSignal) -> bool:
     with db() as conn:
-        existing = conn.execute(
-            "SELECT id FROM raw_signals WHERE id = ?", (signal.id,)
-        ).fetchone()
-        if existing:
-            return False
-        conn.execute("""
-            INSERT INTO raw_signals (id, source, url, title, body, author, subreddit, score, ts, fetched_at)
+        result = conn.execute("""
+            INSERT OR IGNORE INTO raw_signals
+            (id, source, url, title, body, author, subreddit, score, ts, fetched_at)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (signal.id, signal.source, signal.url, signal.title, signal.body,
               signal.author, signal.subreddit, signal.score, signal.ts, int(time.time())))
-    return True
+        return result.rowcount > 0
 
 
 def _ping_health(job: str):

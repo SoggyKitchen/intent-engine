@@ -50,7 +50,8 @@ def run():
         if scored:
             _save_scored(scored)
             scored_count += 1
-        _mark_processed(row["id"])
+            _mark_processed(row["id"])
+        # If LLM failed (transient), leave unprocessed so next run retries
 
     with db() as conn:
         conn.execute("""

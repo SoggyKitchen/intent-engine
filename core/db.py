@@ -80,6 +80,8 @@ CREATE TABLE IF NOT EXISTS outputs (
     conversions     INTEGER DEFAULT 0
 );
 
+CREATE INDEX IF NOT EXISTS idx_outputs_vertical_type ON outputs(vertical, type, created_at DESC);
+
 CREATE TABLE IF NOT EXISTS bandit_arms (
     arm             TEXT PRIMARY KEY,
     alpha           REAL DEFAULT 1.0,
