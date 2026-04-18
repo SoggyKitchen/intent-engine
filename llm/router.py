@@ -1,5 +1,5 @@
 import json
-import os
+import re
 import time
 from collections import defaultdict
 from typing import Optional
@@ -11,10 +11,11 @@ _daily_tokens: dict[str, int] = defaultdict(int)
 _last_reset: dict[str, float] = defaultdict(float)
 
 DAILY_LIMITS = {
-    "groq": 500_000,
-    "gemini": 1_000_000,
-    "cerebras": 300_000,
-    "openrouter": 200_000,
+    "groq_70b":    500_000,
+    "groq_gemma":  500_000,
+    "groq_8b":     500_000,
+    "cerebras":    300_000,
+    "openrouter":  200_000,
 }
 
 
@@ -56,11 +57,9 @@ def _get_ordered_providers():
 
     groq_key = get("GROQ_API_KEY")
     if groq_key:
-        providers.append(("groq", "llama-3.3-70b-versatile", _groq_client))
-
-    gemini_key = get("GEMINI_API_KEY")
-    if gemini_key:
-        providers.append(("gemini", "gemini-2.0-flash", _gemini_client))
+        providers.append(("groq_70b",    "llama-3.3-70b-versatile", _groq_client))
+        providers.append(("groq_gemma",  "gemma2-9b-it",             _groq_client))
+        providers.append(("groq_8b",     "llama-3.1-8b-instant",     _groq_client))
 
     cerebras_key = get("CEREBRAS_API_KEY")
     if cerebras_key:
@@ -81,7 +80,6 @@ def _parse_json_response(text: str) -> Optional[dict]:
     try:
         return json.loads(text)
     except json.JSONDecodeError:
-        import re
         match = re.search(r'\{.*\}', text, re.DOTALL)
         if match:
             try:
@@ -91,6 +89,15 @@ def _parse_json_response(text: str) -> Optional[dict]:
     return None
 
 
+def _parse_groq_retry_seconds(error_message: str) -> float:
+    """Extract 'Please try again in X.Xs' or 'Xms' from Groq error and return seconds."""
+    m = re.search(r'try again in ([\d.]+)(ms|s)', str(error_message))
+    if m:
+        val = float(m.group(1))
+        return val / 1000.0 if m.group(2) == "ms" else val
+    return 10.0
+
+
 def _groq_client(prompt: str, system: str, model: str) -> Optional[dict]:
     from groq import Groq, RateLimitError
     client = Groq(api_key=get("GROQ_API_KEY"))
@@ -98,7 +105,7 @@ def _groq_client(prompt: str, system: str, model: str) -> Optional[dict]:
     if system:
         messages.append({"role": "system", "content": system})
     messages.append({"role": "user", "content": prompt})
-    for attempt in range(3):
+    for attempt in range(5):
         try:
             resp = client.chat.completions.create(
                 model=model,
@@ -108,22 +115,13 @@ def _groq_client(prompt: str, system: str, model: str) -> Optional[dict]:
                 response_format={"type": "json_object"},
             )
             return json.loads(resp.choices[0].message.content)
-        except RateLimitError:
-            wait = 60 * (attempt + 1)
-            log.warning(f"Groq rate limit hit, waiting {wait}s (attempt {attempt+1}/3)")
+        except RateLimitError as e:
+            wait = _parse_groq_retry_seconds(str(e)) + 1.0
+            log.warning(f"Groq [{model}] rate limit — sleeping {wait:.1f}s (attempt {attempt+1}/5)")
             time.sleep(wait)
         except Exception:
             raise
-    raise Exception("Groq rate limit exceeded after 3 retries")
-
-
-def _gemini_client(prompt: str, system: str, model: str) -> Optional[dict]:
-    import google.generativeai as genai
-    genai.configure(api_key=get("GEMINI_API_KEY"))
-    m = genai.GenerativeModel(model)
-    full_prompt = f"{system}\n\n{prompt}" if system else prompt
-    resp = m.generate_content(full_prompt)
-    return _parse_json_response(resp.text)
+    raise Exception(f"Groq [{model}] rate limit exceeded after 5 retries")
 
 
 def _cerebras_client(prompt: str, system: str, model: str) -> Optional[dict]:

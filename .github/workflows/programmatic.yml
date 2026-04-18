@@ -5,14 +5,14 @@ on:
     inputs:
       max_pages:
         description: 'Max pages to generate'
-        default: '80'
+        default: '200'
   schedule:
     - cron: "0 1 * * *"   # Every day 1 AM UTC
 
 jobs:
   programmatic:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 360
 
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +35,8 @@ jobs:
         env:
           DB_PATH: data/intent.db
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}
