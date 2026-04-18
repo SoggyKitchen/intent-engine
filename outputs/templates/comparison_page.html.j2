@@ -3,58 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }}</title>
+<title>{{ title }} | SaaSpare</title>
 <meta name="description" content="{{ meta_description }}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{{ canonical_url }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ canonical_url }}">
 <style>
-  :root { --primary: #1a1a2e; --accent: #e94560; --bg: #f8f9fa; --text: #333; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-         background: var(--bg); color: var(--text); line-height: 1.6; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
-  h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem; }
-  .subtitle { color: #666; margin-bottom: 2rem; font-size: 1.1rem; }
-  .tldr-box { background: #fff3cd; border-left: 4px solid #ffc107;
-              padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
-  .tldr-box strong { color: var(--primary); }
-  table { width: 100%; border-collapse: collapse; margin: 2rem 0; background: #fff;
-          box-shadow: 0 1px 4px rgba(0,0,0,.1); border-radius: 8px; overflow: hidden; }
-  th { background: var(--primary); color: #fff; padding: 0.85rem 1rem; text-align: left; }
-  td { padding: 0.75rem 1rem; border-bottom: 1px solid #eee; }
-  tr:last-child td { border-bottom: none; }
-  tr:hover td { background: #f5f5f5; }
-  .winner-badge { background: #28a745; color: #fff; padding: 2px 8px;
-                  border-radius: 12px; font-size: 0.75rem; margin-left: 6px; }
-  .cta-section { background: var(--primary); color: #fff; padding: 2rem;
-                 border-radius: 8px; margin: 2rem 0; text-align: center; }
-  .cta-section h2 { margin-bottom: 0.75rem; }
-  .cta-btn { display: inline-block; background: var(--accent); color: #fff;
-             padding: 0.8rem 2rem; border-radius: 6px; text-decoration: none;
-             font-weight: 600; margin-top: 0.75rem; }
-  .section { margin: 2.5rem 0; }
-  .section h2 { font-size: 1.4rem; color: var(--primary); margin-bottom: 1rem;
-                border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
-  .verdict-box { background: #d4edda; border-left: 4px solid #28a745;
-                 padding: 1rem 1.5rem; border-radius: 4px; }
-  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
-  .pros { background: #d4edda; padding: 1rem; border-radius: 6px; }
-  .cons { background: #f8d7da; padding: 1rem; border-radius: 6px; }
-  .pros h4 { color: #155724; } .cons h4 { color: #721c24; }
-  ul { padding-left: 1.2rem; } li { margin: 0.4rem 0; }
-  .faq-item { margin: 1rem 0; padding: 1rem; background: #fff;
-              border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.07); }
-  .faq-item h3 { color: var(--primary); font-size: 1rem; margin-bottom: 0.5rem; }
-  footer { text-align: center; color: #999; font-size: 0.85rem; margin-top: 3rem;
-           padding-top: 2rem; border-top: 1px solid #eee; }
-  @media(max-width:600px){ .pros-cons{grid-template-columns:1fr;} h1{font-size:1.5rem;} }
+  :root{--primary:#1a1a2e;--accent:#e94560;--bg:#f8f9fa;--text:#333}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  nav{background:var(--primary);padding:.7rem 1rem;display:flex;align-items:center;gap:1.5rem}
+  nav a{color:#ccc;text-decoration:none;font-size:.9rem}
+  nav a:first-child{color:#fff;font-weight:700;font-size:1.1rem;margin-right:auto}
+  nav a:hover{color:#fff}
+  .container{max-width:900px;margin:0 auto;padding:2rem 1rem}
+  .breadcrumb{color:#999;font-size:.85rem;margin-bottom:1rem}
+  .breadcrumb a{color:#0066cc;text-decoration:none}
+  h1{font-size:2rem;color:var(--primary);margin-bottom:.5rem}
+  .subtitle{color:#666;margin-bottom:2rem;font-size:1.1rem}
+  .tldr-box{background:#fff3cd;border-left:4px solid #ffc107;padding:1rem 1.5rem;margin:1.5rem 0;border-radius:4px}
+  .tldr-box strong{color:var(--primary)}
+  table{width:100%;border-collapse:collapse;margin:2rem 0;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.1);border-radius:8px;overflow:hidden}
+  th{background:var(--primary);color:#fff;padding:.85rem 1rem;text-align:left}
+  td{padding:.75rem 1rem;border-bottom:1px solid #eee}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#f5f5f5}
+  .winner-badge{background:#28a745;color:#fff;padding:2px 8px;border-radius:12px;font-size:.75rem;margin-left:6px}
+  .cta-section{background:var(--primary);color:#fff;padding:2rem;border-radius:8px;margin:2rem 0;text-align:center}
+  .cta-section h2{margin-bottom:.75rem}
+  .cta-btn{display:inline-block;background:var(--accent);color:#fff;padding:.8rem 2rem;border-radius:6px;text-decoration:none;font-weight:600;margin-top:.75rem;font-size:1.05rem}
+  .cta-btn:hover{background:#c73652}
+  .section{margin:2.5rem 0}
+  .section h2{font-size:1.4rem;color:var(--primary);margin-bottom:1rem;border-bottom:2px solid var(--accent);padding-bottom:.5rem}
+  .verdict-box{background:#d4edda;border-left:4px solid #28a745;padding:1rem 1.5rem;border-radius:4px}
+  .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+  .pros{background:#d4edda;padding:1rem;border-radius:6px}
+  .cons{background:#f8d7da;padding:1rem;border-radius:6px}
+  .pros h4{color:#155724}.cons h4{color:#721c24}
+  ul{padding-left:1.2rem}li{margin:.4rem 0}
+  .faq-item{margin:1rem 0;padding:1rem;background:#fff;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.07)}
+  .faq-item h3{color:var(--primary);font-size:1rem;margin-bottom:.5rem}
+  .related{background:#fff;border-radius:8px;padding:1.5rem;margin:2rem 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .related h3{color:var(--primary);margin-bottom:.75rem}
+  .related a{display:inline-block;background:#f0f0f0;padding:4px 12px;border-radius:14px;font-size:.85rem;text-decoration:none;color:#333;margin:3px}
+  .related a:hover{background:var(--accent);color:#fff}
+  .trust-bar{display:flex;gap:1.5rem;justify-content:center;padding:1rem;background:#fff;border-radius:6px;margin:1.5rem 0;font-size:.85rem;color:#666;flex-wrap:wrap}
+  .trust-bar span::before{content:'✓ ';color:#28a745;font-weight:700}
+  footer{text-align:center;color:#999;font-size:.85rem;margin-top:3rem;padding-top:2rem;border-top:1px solid #eee}
+  footer a{color:#aaa;text-decoration:none}
+  @media(max-width:600px){.pros-cons{grid-template-columns:1fr}h1{font-size:1.5rem}nav a.hide-mobile{display:none}}
 </style>
 {% if schema_json %}<script type="application/ld+json">{{ schema_json }}</script>{% endif %}
 </head>
 <body>
+<nav>
+  <a href="{{ site_domain | default('https://saaspare.org') }}">SaaSpare</a>
+  <a href="{{ site_domain | default('https://saaspare.org') }}/pages/" class="hide-mobile">All Comparisons</a>
+  <a href="{{ site_domain | default('https://saaspare.org') }}/about.html" class="hide-mobile">About</a>
+</nav>
 <div class="container">
+  <div class="breadcrumb">
+    <a href="{{ site_domain | default('https://saaspare.org') }}">Home</a> › <a href="{{ site_domain | default('https://saaspare.org') }}/pages/">Comparisons</a> › {{ title }}
+  </div>
+
   <h1>{{ title }}</h1>
   <p class="subtitle">{{ subtitle }}</p>
+
+  <div class="trust-bar">
+    <span>Updated {{ updated_date }}</span>
+    <span>Unbiased research</span>
+    <span>Real buyer data</span>
+    <span>Free to read</span>
+  </div>
 
   <div class="tldr-box">
     <strong>TL;DR:</strong> {{ tldr }}
@@ -76,32 +99,32 @@
     </table>
   </div>
 
+  {% if cta_url %}
+  <div class="cta-section">
+    <h2>Our Top Pick</h2>
+    <p>{{ cta_text }}</p>
+    <a class="cta-btn" href="{{ cta_url }}" rel="sponsored noopener" target="_blank">{{ cta_button }}</a>
+  </div>
+  {% endif %}
+
   {% for tool in tools %}
   <div class="section">
-    <h2>{{ tool.name }} — In Depth</h2>
+    <h2>{{ tool.name }} Review</h2>
     <p>{{ tool.description }}</p>
     <div class="pros-cons">
-      <div class="pros"><h4>✓ Pros</h4><ul>{% for p in tool.pros %}<li>{{ p }}</li>{% endfor %}</ul></div>
-      <div class="cons"><h4>✗ Cons</h4><ul>{% for c in tool.cons %}<li>{{ c }}</li>{% endfor %}</ul></div>
+      <div class="pros"><h4>Pros</h4><ul>{% for p in tool.pros %}<li>{{ p }}</li>{% endfor %}</ul></div>
+      <div class="cons"><h4>Cons</h4><ul>{% for c in tool.cons %}<li>{{ c }}</li>{% endfor %}</ul></div>
     </div>
     <p><strong>Pricing:</strong> {{ tool.pricing }}</p>
     {% if tool.affiliate_url %}
-    <p><a href="{{ tool.affiliate_url }}" rel="sponsored noopener">Try {{ tool.name }} Free →</a></p>
+    <p style="margin-top:.75rem"><a href="{{ tool.affiliate_url }}" rel="sponsored noopener" target="_blank" style="color:var(--accent);font-weight:600">Try {{ tool.name }} Free →</a></p>
     {% endif %}
   </div>
   {% endfor %}
 
-  <div class="verdict-box">
+  <div class="verdict-box section">
     <strong>Our Verdict:</strong> {{ verdict }}
   </div>
-
-  {% if cta_tool %}
-  <div class="cta-section">
-    <h2>Ready to get started?</h2>
-    <p>{{ cta_text }}</p>
-    <a class="cta-btn" href="{{ cta_url }}" rel="sponsored noopener">{{ cta_button }}</a>
-  </div>
-  {% endif %}
 
   <div class="section">
     <h2>Frequently Asked Questions</h2>
@@ -113,8 +136,27 @@
     {% endfor %}
   </div>
 
+  {% if related_pages %}
+  <div class="related">
+    <h3>Related Comparisons</h3>
+    {% for rp in related_pages %}
+    <a href="{{ rp.url }}">{{ rp.title }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="cta-section" style="margin-top:2rem">
+    <h2>Ready to choose?</h2>
+    <p>Start your free trial today — most tools offer 14-30 days free, no credit card required.</p>
+    {% if cta_url %}<a class="cta-btn" href="{{ cta_url }}" rel="sponsored noopener" target="_blank">{{ cta_button }}</a>{% endif %}
+  </div>
+
   <footer>
-    <p>Last updated: {{ updated_date }} · This page contains affiliate links. We may earn a commission at no extra cost to you.</p>
+    <p>Last updated: {{ updated_date }} &nbsp;·&nbsp;
+    <a href="{{ site_domain | default('https://saaspare.org') }}/about.html">About</a> &nbsp;·&nbsp;
+    <a href="{{ site_domain | default('https://saaspare.org') }}/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="{{ site_domain | default('https://saaspare.org') }}/contact.html">Contact</a></p>
+    <p style="margin-top:.5rem">This page contains affiliate links. We may earn a commission at no extra cost to you.</p>
   </footer>
 </div>
 </body>

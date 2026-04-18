@@ -98,8 +98,12 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
         for tool in data.get("tools", []):
             tool["affiliate_url"] = _affiliate_url(tool["name"], tool.get("homepage", "#"), vertical)
 
-    data["canonical_url"] = f"{get('SITE_DOMAIN', 'https://saaspare.org')}/{slug}"
+    domain = get("SITE_DOMAIN", "https://saaspare.org")
+    canonical = f"{domain}/pages/{slug}"
+    data["canonical_url"] = canonical
+    data["title"] = title
     data["updated_date"] = time.strftime("%B %d, %Y")
+    data["site_domain"] = domain
     data["schema_json"] = _build_schema(data)
 
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
@@ -116,9 +120,10 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
     page_id = hashlib.sha256(slug.encode()).hexdigest()[:12]
     with db() as conn:
         conn.execute("""
-            INSERT OR REPLACE INTO outputs (id, type, vertical, title, file_path, created_at)
-            VALUES (?, 'seo_page', ?, ?, ?, ?)
-        """, (page_id, vertical, title, str(out_path), int(time.time())))
+            INSERT OR REPLACE INTO outputs
+              (id, type, vertical, title, file_path, published_url, created_at)
+            VALUES (?, 'seo_page', ?, ?, ?, ?, ?)
+        """, (page_id, vertical, title, str(out_path), canonical, int(time.time())))
 
     return str(out_path)
 
