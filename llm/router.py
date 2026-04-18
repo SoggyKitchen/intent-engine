@@ -116,7 +116,7 @@ def _groq_client(prompt: str, system: str, model: str) -> Optional[dict]:
             )
             return json.loads(resp.choices[0].message.content)
         except RateLimitError as e:
-            wait = _parse_groq_retry_seconds(str(e)) + 1.0
+            wait = _parse_groq_retry_seconds(str(e)) + 10.0
             log.warning(f"Groq [{model}] rate limit — sleeping {wait:.1f}s (attempt {attempt+1}/5)")
             time.sleep(wait)
         except Exception:
