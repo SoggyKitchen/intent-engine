@@ -48,9 +48,18 @@ def _deploy_via_git(repo_url: str) -> bool:
             subprocess.run(["git", "clone", repo_url, str(site_repo)], check=True,
                            capture_output=True)
 
+        pages_dest = site_repo / "pages"
+        pages_dest.mkdir(exist_ok=True)
+
         for html_file in PAGES_DIR.glob("*.html"):
-            dest = site_repo / html_file.name
+            dest = pages_dest / html_file.name
             dest.write_text(html_file.read_text(encoding="utf-8"), encoding="utf-8")
+
+        redirects_src = SITE_DIR / "_redirects"
+        if redirects_src.exists():
+            (site_repo / "_redirects").write_text(
+                redirects_src.read_text(encoding="utf-8"), encoding="utf-8"
+            )
 
         _rebuild_sitemap(site_repo)
         _ping_indexnow(site_repo)
@@ -78,32 +87,40 @@ def _deploy_via_git(repo_url: str) -> bool:
 
 
 def _rebuild_sitemap(site_repo: Path):
-    pages = list(site_repo.glob("*.html"))
-    domain = get("SITE_DOMAIN", "https://yourdomain.com")
-    lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for p in pages:
-        if p.name == "index.html":
-            continue
+    pages_dir = site_repo / "pages"
+    pages = list(pages_dir.glob("*.html")) if pages_dir.exists() else []
+    domain = get("SITE_DOMAIN", "https://saaspare.org")
+    today = time.strftime("%Y-%m-%d")
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        f'  <url><loc>{domain}/</loc><lastmod>{today}</lastmod><priority>1.0</priority></url>',
+    ]
+    for p in sorted(pages):
         slug = p.stem
-        lines.append(f"  <url><loc>{domain}/{slug}</loc><lastmod>{time.strftime('%Y-%m-%d')}</lastmod></url>")
+        lines.append(f'  <url><loc>{domain}/pages/{slug}</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>')
     lines.append("</urlset>")
-    (site_repo / "sitemap.xml").write_text("\n".join(lines))
+    (site_repo / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    log.info(f"Sitemap rebuilt with {len(pages)} pages")
 
 
 def _ping_indexnow(site_repo: Path):
-    domain = get("SITE_DOMAIN", "https://yourdomain.com")
+    domain = get("SITE_DOMAIN", "https://saaspare.org")
     key = get("INDEXNOW_KEY", "")
     if not key:
+        log.debug("INDEXNOW_KEY not set — skipping IndexNow ping")
         return
-    pages = [f"{domain}/{p.stem}" for p in site_repo.glob("*.html") if p.name != "index.html"]
+    pages_dir = site_repo / "pages"
+    pages = [f"{domain}/pages/{p.stem}" for p in pages_dir.glob("*.html")] if pages_dir.exists() else []
     if not pages:
         return
     try:
-        httpx.post("https://api.indexnow.org/IndexNow", json={
-            "host": domain.replace("https://", ""),
+        resp = httpx.post("https://api.indexnow.org/IndexNow", json={
+            "host": domain.replace("https://", "").replace("http://", ""),
             "key": key,
-            "urlList": pages[:100],
+            "keyLocation": f"{domain}/{key}.txt",
+            "urlList": pages[:500],
         }, timeout=15)
-        log.info(f"IndexNow pinged {len(pages)} URLs")
+        log.info(f"IndexNow: submitted {len(pages)} URLs — status {resp.status_code}")
     except Exception as e:
         log.warning(f"IndexNow ping failed: {e}")

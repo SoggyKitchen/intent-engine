@@ -1,5 +1,6 @@
 import json
 import re
+import threading
 import time
 from collections import defaultdict
 from typing import Optional
@@ -9,13 +10,14 @@ from core.secrets import get
 
 _daily_tokens: dict[str, int] = defaultdict(int)
 _last_reset: dict[str, float] = defaultdict(float)
+_lock = threading.Lock()
 
 DAILY_LIMITS = {
-    "groq_70b":    500_000,
-    "groq_gemma":  500_000,
-    "groq_8b":     500_000,
-    "cerebras":    300_000,
-    "openrouter":  200_000,
+    "groq_70b":   500_000,
+    "groq_gemma": 500_000,
+    "groq_8b":    500_000,
+    "cerebras":   300_000,
+    "openrouter": 200_000,
 }
 
 
@@ -26,26 +28,31 @@ def _reset_if_needed(provider: str):
         _last_reset[provider] = now
 
 
-def _budget_ok(provider: str, estimated_tokens: int = 500) -> bool:
-    _reset_if_needed(provider)
-    return _daily_tokens[provider] + estimated_tokens < DAILY_LIMITS[provider]
+def _try_charge(provider: str, estimated_tokens: int = 500) -> bool:
+    with _lock:
+        _reset_if_needed(provider)
+        if _daily_tokens[provider] + estimated_tokens < DAILY_LIMITS[provider]:
+            _daily_tokens[provider] += estimated_tokens
+            return True
+        return False
 
 
-def _charge(provider: str, tokens: int):
-    _daily_tokens[provider] += tokens
+def _refund(provider: str, tokens: int):
+    with _lock:
+        _daily_tokens[provider] = max(0, _daily_tokens[provider] - tokens)
 
 
 def complete_json(prompt: str, system: str = "", estimated_tokens: int = 500) -> Optional[dict]:
     providers = _get_ordered_providers()
     for provider, model, client_fn in providers:
-        if not _budget_ok(provider, estimated_tokens):
+        if not _try_charge(provider, estimated_tokens):
             log.debug(f"Budget exhausted for {provider}, trying next")
             continue
         try:
             result = client_fn(prompt, system, model)
-            _charge(provider, estimated_tokens)
             return result
         except Exception as e:
+            _refund(provider, estimated_tokens)
             log.warning(f"LLM {provider} failed: {e}")
             continue
     log.error("All LLM providers exhausted or failed")
@@ -54,21 +61,17 @@ def complete_json(prompt: str, system: str = "", estimated_tokens: int = 500) ->
 
 def _get_ordered_providers():
     providers = []
-
     groq_key = get("GROQ_API_KEY")
     if groq_key:
-        providers.append(("groq_70b",    "llama-3.3-70b-versatile", _groq_client))
-        providers.append(("groq_gemma",  "gemma2-9b-it",             _groq_client))
-        providers.append(("groq_8b",     "llama-3.1-8b-instant",     _groq_client))
-
+        providers.append(("groq_70b",   "llama-3.3-70b-versatile", _groq_client))
+        providers.append(("groq_gemma", "gemma2-9b-it",             _groq_client))
+        providers.append(("groq_8b",    "llama-3.1-8b-instant",     _groq_client))
     cerebras_key = get("CEREBRAS_API_KEY")
     if cerebras_key:
         providers.append(("cerebras", "llama3.1-70b", _cerebras_client))
-
     openrouter_key = get("OPENROUTER_API_KEY")
     if openrouter_key:
         providers.append(("openrouter", "meta-llama/llama-3.3-70b-instruct:free", _openrouter_client))
-
     return providers
 
 
@@ -90,7 +93,6 @@ def _parse_json_response(text: str) -> Optional[dict]:
 
 
 def _parse_groq_retry_seconds(error_message: str) -> float:
-    """Extract 'Please try again in X.Xs' or 'Xms' from Groq error and return seconds."""
     m = re.search(r'try again in ([\d.]+)(ms|s)', str(error_message))
     if m:
         val = float(m.group(1))

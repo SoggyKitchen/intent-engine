@@ -1,17 +1,19 @@
 """
-Programmatic SEO — generates pages for ALL known tool combinations upfront.
-Doesn't need signal clusters. Runs daily for 2100+ pages/month.
+Programmatic SEO — generates all page types for all known tool combinations.
+6 page types x 15 verticals x ~45 pairs each = 4000+ pages/month potential.
+Uses ThreadPoolExecutor(3) to run 3 LLM calls in parallel (one per Groq model bucket).
 """
-import json
 import time
-from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from itertools import combinations
+from pathlib import Path
 
 from core.db import db
 from core.logger import log
 from llm.router import complete_json
 from outputs.seo_page import _render_and_save
 from core.secrets import get
+from publisher.affiliate_registry import get_all_redirects
 
 TOOLS_BY_VERTICAL = {
     "devtools": [
@@ -54,6 +56,26 @@ TOOLS_BY_VERTICAL = {
         "FreshBooks", "Xero", "Expensify", "Ramp", "Brex",
         "QuickBooks", "Netsuite", "Sage", "Airbase", "Divvy",
     ],
+    "project_management": [
+        "Asana", "Monday.com", "ClickUp", "Notion", "Jira",
+        "Trello", "Basecamp", "Wrike", "Smartsheet", "Todoist",
+    ],
+    "crm": [
+        "Salesforce", "HubSpot CRM", "Pipedrive", "Zoho CRM", "Close",
+        "Freshsales", "Copper", "Keap", "Nutshell", "Insightly",
+    ],
+    "password_managers": [
+        "1Password", "LastPass", "Bitwarden", "Dashlane", "Keeper",
+        "NordPass", "RoboForm", "Sticky Password", "Enpass", "Password Boss",
+    ],
+    "video_conferencing": [
+        "Zoom", "Microsoft Teams", "Google Meet", "Webex", "Whereby",
+        "Around", "Loom", "Riverside.fm", "StreamYard", "Descript",
+    ],
+    "vpn_business": [
+        "NordLayer", "Perimeter 81", "Cisco AnyConnect", "ExpressVPN Business",
+        "Twingate", "Cloudflare Access", "Tailscale", "WireGuard", "Zscaler", "OpenVPN",
+    ],
 }
 
 ALTERNATIVE_TARGETS = {
@@ -65,7 +87,139 @@ ALTERNATIVE_TARGETS = {
     "devtools": ["GitHub Copilot", "Jira", "Datadog"],
     "saas_analytics": ["Tableau", "Power BI", "Google Analytics"],
     "cybersecurity": ["Okta", "CrowdStrike", "Splunk"],
+    "project_management": ["Asana", "Monday.com", "Jira", "ClickUp"],
+    "crm": ["Salesforce", "HubSpot CRM", "Zoho CRM"],
+    "password_managers": ["LastPass", "1Password", "Dashlane"],
+    "video_conferencing": ["Zoom", "Microsoft Teams", "Google Meet"],
+    "vpn_business": ["NordLayer", "Cisco AnyConnect", "Perimeter 81"],
 }
+
+HIGH_VALUE_PRICING_TARGETS = [
+    ("HubSpot", "marketing_automation"),
+    ("Salesforce", "crm"),
+    ("ActiveCampaign", "marketing_automation"),
+    ("Shopify", "ecommerce_tools"),
+    ("BigCommerce", "ecommerce_tools"),
+    ("BambooHR", "hr_recruiting"),
+    ("Rippling", "hr_recruiting"),
+    ("Workable", "hr_recruiting"),
+    ("DigitalOcean", "cloud_infra"),
+    ("Vultr", "cloud_infra"),
+    ("Amplitude", "saas_analytics"),
+    ("Mixpanel", "saas_analytics"),
+    ("Linear", "devtools"),
+    ("Datadog", "devtools"),
+    ("PandaDoc", "legal_compliance"),
+    ("DocuSign", "legal_compliance"),
+    ("Xero", "finance_ops"),
+    ("FreshBooks", "finance_ops"),
+    ("Ramp", "finance_ops"),
+    ("Jasper AI", "ai_ml_tools"),
+    ("Copy.ai", "ai_ml_tools"),
+    ("Asana", "project_management"),
+    ("Monday.com", "project_management"),
+    ("ClickUp", "project_management"),
+    ("Notion", "project_management"),
+    ("Pipedrive", "crm"),
+    ("Zoom", "video_conferencing"),
+    ("1Password", "password_managers"),
+    ("NordLayer", "vpn_business"),
+    ("Deel", "hr_recruiting"),
+    ("Gusto", "hr_recruiting"),
+]
+
+BEST_OF_QUERIES = [
+    ("marketing_automation", "small business", ["HubSpot", "ActiveCampaign", "Brevo", "Mailchimp", "ConvertKit"]),
+    ("marketing_automation", "ecommerce", ["Klaviyo", "Mailchimp", "ActiveCampaign", "Drip", "Brevo"]),
+    ("cloud_infra", "startups", ["Render", "Railway", "DigitalOcean", "Supabase", "Fly.io"]),
+    ("cloud_infra", "enterprise", ["AWS", "Google Cloud", "DigitalOcean", "Vultr", "Hetzner"]),
+    ("devtools", "startups", ["Linear", "GitHub Copilot", "Vercel", "Sentry", "Retool"]),
+    ("saas_analytics", "small business", ["Databox", "Hotjar", "Mixpanel", "Heap", "Segment"]),
+    ("hr_recruiting", "startups", ["Rippling", "Gusto", "Deel", "Remote.com", "BambooHR"]),
+    ("hr_recruiting", "enterprise", ["Workday", "Greenhouse", "Lattice", "Culture Amp", "Lever"]),
+    ("finance_ops", "small business", ["FreshBooks", "Xero", "QuickBooks", "Wave", "Zoho Books"]),
+    ("ecommerce_tools", "small business", ["Shopify", "WooCommerce", "Gumroad", "Paddle", "Stripe"]),
+    ("cybersecurity", "small business", ["1Password Business", "NordLayer", "Cloudflare", "Snyk", "Duo Security"]),
+    ("ai_ml_tools", "content teams", ["Jasper AI", "Copy.ai", "Writesonic", "Notion AI", "Grammarly"]),
+    ("legal_compliance", "startups", ["PandaDoc", "DocuSign", "Contractbook", "Juro", "HelloSign"]),
+    ("finance_ops", "B2B SaaS", ["Ramp", "Brex", "Airbase", "Divvy", "Expensify"]),
+    ("project_management", "remote teams", ["Notion", "ClickUp", "Asana", "Monday.com", "Basecamp"]),
+    ("project_management", "startups", ["Linear", "Notion", "Trello", "ClickUp", "Todoist"]),
+    ("crm", "small business", ["HubSpot CRM", "Pipedrive", "Zoho CRM", "Close", "Freshsales"]),
+    ("crm", "B2B SaaS", ["Salesforce", "HubSpot CRM", "Close", "Pipedrive", "Keap"]),
+    ("password_managers", "business", ["1Password", "LastPass", "Bitwarden", "Dashlane", "Keeper"]),
+    ("video_conferencing", "remote teams", ["Zoom", "Google Meet", "Microsoft Teams", "Whereby", "Loom"]),
+    ("vpn_business", "startups", ["NordLayer", "Twingate", "Cloudflare Access", "Perimeter 81", "Tailscale"]),
+]
+
+HIGH_VALUE_COUPON_TARGETS = [
+    ("HubSpot", "marketing_automation"),
+    ("Shopify", "ecommerce_tools"),
+    ("Monday.com", "project_management"),
+    ("Asana", "project_management"),
+    ("ClickUp", "project_management"),
+    ("Notion", "project_management"),
+    ("Pipedrive", "crm"),
+    ("ActiveCampaign", "marketing_automation"),
+    ("Jasper AI", "ai_ml_tools"),
+    ("Copy.ai", "ai_ml_tools"),
+    ("NordLayer", "vpn_business"),
+    ("1Password", "password_managers"),
+    ("Datadog", "devtools"),
+    ("BambooHR", "hr_recruiting"),
+    ("DocuSign", "legal_compliance"),
+    ("PandaDoc", "legal_compliance"),
+    ("Xero", "finance_ops"),
+    ("Zoom", "video_conferencing"),
+    ("Deel", "hr_recruiting"),
+    ("Rippling", "hr_recruiting"),
+]
+
+HIGH_VALUE_REVIEW_TARGETS = [
+    ("HubSpot", "marketing_automation"),
+    ("Shopify", "ecommerce_tools"),
+    ("Monday.com", "project_management"),
+    ("Asana", "project_management"),
+    ("ClickUp", "project_management"),
+    ("Notion", "project_management"),
+    ("Salesforce", "crm"),
+    ("Pipedrive", "crm"),
+    ("Zoom", "video_conferencing"),
+    ("1Password", "password_managers"),
+    ("NordLayer", "vpn_business"),
+    ("Datadog", "devtools"),
+    ("BambooHR", "hr_recruiting"),
+    ("Deel", "hr_recruiting"),
+    ("Xero", "finance_ops"),
+    ("Ramp", "finance_ops"),
+    ("Jasper AI", "ai_ml_tools"),
+    ("ActiveCampaign", "marketing_automation"),
+    ("DocuSign", "legal_compliance"),
+    ("Amplitude", "saas_analytics"),
+]
+
+FREE_PLAN_TARGETS = [
+    ("HubSpot", "marketing_automation"),
+    ("Notion", "project_management"),
+    ("ClickUp", "project_management"),
+    ("Trello", "project_management"),
+    ("Zoom", "video_conferencing"),
+    ("Bitwarden", "password_managers"),
+    ("Asana", "project_management"),
+    ("Brevo", "marketing_automation"),
+    ("Supabase", "cloud_infra"),
+    ("Sentry", "devtools"),
+    ("Hotjar", "saas_analytics"),
+    ("Amplitude", "saas_analytics"),
+    ("Pipedrive", "crm"),
+    ("HubSpot CRM", "crm"),
+    ("Freshsales", "crm"),
+    ("Monday.com", "project_management"),
+    ("Loom", "video_conferencing"),
+    ("Cloudflare Access", "vpn_business"),
+    ("Snyk", "cybersecurity"),
+    ("Linear", "devtools"),
+]
 
 
 def _already_generated(slug_hint: str) -> bool:
@@ -91,7 +245,7 @@ Write a detailed comparison of {tool_a} vs {tool_b} for {vertical.replace('_',' 
 Return JSON exactly:
 {{
   "page_title": "{tool_a} vs {tool_b}: Which is Better in {time.strftime('%Y')}?",
-  "meta_description": "Detailed {tool_a} vs {tool_b} comparison. Pricing, features, pros, cons and which to choose for your business.",
+  "meta_description": "Detailed {tool_a} vs {tool_b} comparison. Pricing, features, pros, cons and which to choose.",
   "subtitle": "An unbiased, data-driven comparison for {vertical.replace('_',' ')} teams",
   "tldr": "<2 sentences: who should pick each tool>",
   "tools": [
@@ -136,8 +290,7 @@ Return JSON exactly:
     result = complete_json(prompt)
     if not result:
         return False
-    path = _render_and_save(result, vertical)
-    return bool(path)
+    return bool(_render_and_save(result, vertical))
 
 
 def _generate_alternatives_page(target_tool: str, vertical: str) -> bool:
@@ -150,13 +303,13 @@ def _generate_alternatives_page(target_tool: str, vertical: str) -> bool:
 
     prompt = f"""You are an expert B2B software analyst writing for buyers who want to leave {target_tool}.
 
-Write a "Best Alternatives to {target_tool}" page for buyers in {vertical.replace('_',' ')}.
-The top alternatives to cover: {alt_list}
+Write a "Best Alternatives to {target_tool}" page for {vertical.replace('_',' ')} buyers.
+Top alternatives to cover: {alt_list}
 
 Return JSON exactly:
 {{
   "page_title": "7 Best {target_tool} Alternatives in {time.strftime('%Y')} (Free & Paid)",
-  "meta_description": "Looking for {target_tool} alternatives? We reviewed the top options by price, features and ease of switching. Find your best match.",
+  "meta_description": "Looking for {target_tool} alternatives? Top options reviewed by price, features and migration ease.",
   "subtitle": "The best {target_tool} alternatives ranked by value, features and migration ease",
   "tldr": "If you're tired of {target_tool}, here are the top alternatives worth trying in {time.strftime('%Y')}.",
   "tools": [
@@ -177,7 +330,7 @@ Return JSON exactly:
   ],
   "verdict": "The best {target_tool} alternative depends on your budget and team size. Our top pick is the first option above for most businesses.",
   "faqs": [
-    {{"question": "What is the best free alternative to {target_tool}?", "answer": "<answer with specific tool>"}},
+    {{"question": "What is the best free alternative to {target_tool}?", "answer": "<specific tool>"}},
     {{"question": "Why are people switching from {target_tool}?", "answer": "<honest answer>"}},
     {{"question": "How hard is it to migrate from {target_tool}?", "answer": "<migration tips>"}}
   ],
@@ -190,81 +343,11 @@ Return JSON exactly:
     result = complete_json(prompt)
     if not result:
         return False
-    path = _render_and_save(result, vertical)
-    return bool(path)
-
-
-BEST_OF_QUERIES = [
-    ("marketing_automation", "small business", ["HubSpot", "ActiveCampaign", "Brevo", "Mailchimp", "ConvertKit"]),
-    ("marketing_automation", "ecommerce", ["Klaviyo", "Mailchimp", "ActiveCampaign", "Drip", "Brevo"]),
-    ("cloud_infra", "startups", ["Render", "Railway", "DigitalOcean", "Supabase", "Fly.io"]),
-    ("cloud_infra", "enterprise", ["AWS", "Google Cloud", "DigitalOcean", "Vultr", "Hetzner"]),
-    ("devtools", "startups", ["Linear", "GitHub Copilot", "Vercel", "Sentry", "Retool"]),
-    ("saas_analytics", "small business", ["Databox", "Hotjar", "Mixpanel", "Heap", "Segment"]),
-    ("hr_recruiting", "startups", ["Rippling", "Gusto", "Deel", "Remote.com", "BambooHR"]),
-    ("hr_recruiting", "enterprise", ["Workday", "Greenhouse", "Lattice", "Culture Amp", "Lever"]),
-    ("finance_ops", "small business", ["FreshBooks", "Xero", "QuickBooks", "Wave", "Zoho Books"]),
-    ("ecommerce_tools", "small business", ["Shopify", "WooCommerce", "Gumroad", "Paddle", "Stripe"]),
-    ("cybersecurity", "small business", ["1Password Business", "NordLayer", "Cloudflare", "Snyk", "Duo Security"]),
-    ("ai_ml_tools", "content teams", ["Jasper AI", "Copy.ai", "Writesonic", "Notion AI", "Grammarly"]),
-    ("legal_compliance", "startups", ["PandaDoc", "DocuSign", "Contractbook", "Juro", "HelloSign"]),
-    ("finance_ops", "B2B SaaS", ["Ramp", "Brex", "Airbase", "Divvy", "Expensify"]),
-]
-
-
-def _generate_bestof_page(vertical: str, audience: str, tools: list[str]) -> bool:
-    key = f"best {vertical.replace('_',' ')} {audience}"
-    if _already_generated(key):
-        return False
-
-    tool_list = ", ".join(tools)
-    prompt = f"""You are an expert B2B software analyst. Write a "Best {vertical.replace('_',' ')} tools for {audience}" buyer guide.
-
-Tools to rank and review: {tool_list}
-
-Return JSON:
-{{
-  "page_title": "Best {vertical.replace('_',' ').title()} Software for {audience.title()} in {time.strftime('%Y')} (Ranked)",
-  "meta_description": "The {len(tools)} best {vertical.replace('_',' ')} tools for {audience} — reviewed by pricing, features and ROI. Find the right fit fast.",
-  "subtitle": "Ranked by value, ease of use and ROI for {audience} teams",
-  "tldr": "For most {audience} teams, tools 1-2 on this list are the best starting point. Here's why.",
-  "tools": [
-    {{
-      "name": "<tool>",
-      "description": "<why it's great for {audience}>",
-      "pros": ["<pro1>", "<pro2>", "<pro3>"],
-      "cons": ["<con1>"],
-      "pricing": "<starting price or free tier>",
-      "homepage": "<url>",
-      "winner": <true for #1 only>
-    }}
-  ],
-  "comparison_features": [
-    {{"name": "Starting Price", "values": ["<price per tool>"]}},
-    {{"name": "Free Trial", "values": ["<yes/no per tool>"]}},
-    {{"name": "Best For", "values": ["<use case per tool>"]}}
-  ],
-  "verdict": "For {audience}, our top pick delivers the best balance of features and price. Start with the free trial to validate before committing.",
-  "faqs": [
-    {{"question": "What is the best {vertical.replace('_',' ')} software for {audience}?", "answer": "<specific recommendation with reasoning>"}},
-    {{"question": "How much does {vertical.replace('_',' ')} software cost for {audience}?", "answer": "<pricing range overview>"}},
-    {{"question": "Is there a free {vertical.replace('_',' ')} tool for {audience}?", "answer": "<free options available>"}}
-  ],
-  "cta_text": "Start with our top pick — free trial, no credit card required.",
-  "cta_button": "Start Free Trial",
-  "primary_keyword": "best {vertical.replace('_',' ')} software for {audience}",
-  "secondary_keywords": ["top {vertical.replace('_',' ')} tools {audience}", "{vertical.replace('_',' ')} software {audience} {time.strftime('%Y')}"]
-}}"""
-    result = complete_json(prompt)
-    if not result:
-        return False
-    path = _render_and_save(result, vertical)
-    return bool(path)
+    return bool(_render_and_save(result, vertical))
 
 
 def _generate_pricing_page(tool: str, vertical: str) -> bool:
-    key = f"{tool} pricing"
-    if _already_generated(key):
+    if _already_generated(f"{tool} pricing"):
         return False
 
     prompt = f"""Write a detailed "{tool} Pricing" page for B2B buyers evaluating {tool}.
@@ -272,9 +355,9 @@ def _generate_pricing_page(tool: str, vertical: str) -> bool:
 Return JSON:
 {{
   "page_title": "{tool} Pricing {time.strftime('%Y')}: Plans, Costs & What You Actually Pay",
-  "meta_description": "{tool} pricing breakdown for {time.strftime('%Y')}. All plans, hidden costs, free trial info and whether it's worth it for your team size.",
+  "meta_description": "{tool} pricing breakdown for {time.strftime('%Y')}. All plans, hidden costs, free trial info and whether it's worth it.",
   "subtitle": "Every {tool} plan explained — plus what buyers actually pay after negotiation",
-  "tldr": "{tool} pricing starts from a free or low-cost tier. Most B2B teams land on the mid-tier plan. Here's the full breakdown.",
+  "tldr": "{tool} pricing starts from a free or low-cost tier. Most B2B teams land on the mid-tier plan.",
   "tools": [
     {{
       "name": "{tool}",
@@ -287,7 +370,7 @@ Return JSON:
     }},
     {{
       "name": "Best {tool} Alternative",
-      "description": "<cheaper or better-value alternative for budget-conscious buyers>",
+      "description": "<cheaper or better-value alternative>",
       "pros": ["<cheaper>", "<comparable features>"],
       "cons": ["<less brand recognition>"],
       "pricing": "<starting price>",
@@ -316,33 +399,227 @@ Return JSON:
     result = complete_json(prompt)
     if not result:
         return False
-    path = _render_and_save(result, vertical)
-    return bool(path)
+    return bool(_render_and_save(result, vertical))
 
 
-HIGH_VALUE_PRICING_TARGETS = [
-    ("HubSpot", "marketing_automation"),
-    ("Salesforce", "marketing_automation"),
-    ("ActiveCampaign", "marketing_automation"),
-    ("Shopify", "ecommerce_tools"),
-    ("BigCommerce", "ecommerce_tools"),
-    ("BambooHR", "hr_recruiting"),
-    ("Rippling", "hr_recruiting"),
-    ("Workable", "hr_recruiting"),
-    ("DigitalOcean", "cloud_infra"),
-    ("Vultr", "cloud_infra"),
-    ("Amplitude", "saas_analytics"),
-    ("Mixpanel", "saas_analytics"),
-    ("Linear", "devtools"),
-    ("Datadog", "devtools"),
-    ("PandaDoc", "legal_compliance"),
-    ("DocuSign", "legal_compliance"),
-    ("Xero", "finance_ops"),
-    ("FreshBooks", "finance_ops"),
-    ("Ramp", "finance_ops"),
-    ("Jasper AI", "ai_ml_tools"),
-    ("Copy.ai", "ai_ml_tools"),
-]
+def _generate_bestof_page(vertical: str, audience: str, tools: list[str]) -> bool:
+    key = f"best {vertical.replace('_',' ')} {audience}"
+    if _already_generated(key):
+        return False
+
+    tool_list = ", ".join(tools)
+    prompt = f"""You are an expert B2B software analyst. Write a buyer guide for {vertical.replace('_',' ')} tools.
+
+Tools to rank: {tool_list}
+Audience: {audience}
+
+Return JSON:
+{{
+  "page_title": "Best {vertical.replace('_',' ').title()} Software for {audience.title()} in {time.strftime('%Y')} (Ranked)",
+  "meta_description": "The {len(tools)} best {vertical.replace('_',' ')} tools for {audience} — reviewed by pricing, features and ROI.",
+  "subtitle": "Ranked by value, ease of use and ROI for {audience} teams",
+  "tldr": "For most {audience} teams, tools 1-2 on this list are the best starting point.",
+  "tools": [
+    {{
+      "name": "<tool>",
+      "description": "<why it's great for {audience}>",
+      "pros": ["<pro1>", "<pro2>", "<pro3>"],
+      "cons": ["<con1>"],
+      "pricing": "<starting price or free tier>",
+      "homepage": "<url>",
+      "winner": false
+    }}
+  ],
+  "comparison_features": [
+    {{"name": "Starting Price", "values": ["<price per tool>"]}},
+    {{"name": "Free Trial", "values": ["<yes/no per tool>"]}},
+    {{"name": "Best For", "values": ["<use case per tool>"]}}
+  ],
+  "verdict": "For {audience}, our top pick delivers the best balance of features and price.",
+  "faqs": [
+    {{"question": "What is the best {vertical.replace('_',' ')} software for {audience}?", "answer": "<recommendation>"}},
+    {{"question": "How much does {vertical.replace('_',' ')} software cost for {audience}?", "answer": "<pricing range>"}},
+    {{"question": "Is there a free {vertical.replace('_',' ')} tool for {audience}?", "answer": "<free options>"}}
+  ],
+  "cta_text": "Start with our top pick — free trial, no credit card required.",
+  "cta_button": "Start Free Trial",
+  "primary_keyword": "best {vertical.replace('_',' ')} software for {audience}",
+  "secondary_keywords": ["top {vertical.replace('_',' ')} tools {audience}", "{vertical.replace('_',' ')} {audience} {time.strftime('%Y')}"]
+}}"""
+
+    result = complete_json(prompt)
+    if not result:
+        return False
+    return bool(_render_and_save(result, vertical))
+
+
+def _generate_coupon_page(tool: str, vertical: str) -> bool:
+    if _already_generated(f"{tool} coupon"):
+        return False
+
+    prompt = f"""Write a "{tool} Coupon Codes" page for buyers about to purchase {tool}.
+
+Return JSON:
+{{
+  "page_title": "{tool} Coupon Code & Promo Codes {time.strftime('%Y')} — Verified Discounts",
+  "meta_description": "Get verified {tool} promo codes for {time.strftime('%Y')}. Save on {tool} with our updated discount list — free trial, annual discount and more.",
+  "subtitle": "All working {tool} discounts, promo codes and free trial offers in one place",
+  "tldr": "The best way to save on {tool} is to start with the free trial, then ask for an annual discount. Here's how.",
+  "tools": [
+    {{
+      "name": "{tool}",
+      "description": "<what {tool} does, who it's for, why buyers search for discounts>",
+      "pros": ["<free trial available>", "<annual plan discount>", "<nonprofit/startup pricing>"],
+      "cons": ["<no public promo codes>", "<limited discount windows>"],
+      "pricing": "<starter plan price and annual savings>",
+      "homepage": "<url>",
+      "winner": true
+    }},
+    {{
+      "name": "Best {tool} Alternative",
+      "description": "<cheaper alternative if {tool} is over budget>",
+      "pros": ["<lower price>", "<similar features>", "<free plan available>"],
+      "cons": ["<smaller ecosystem>"],
+      "pricing": "<starting price>",
+      "homepage": "<url>",
+      "winner": false
+    }}
+  ],
+  "comparison_features": [
+    {{"name": "Free Trial", "values": ["<days>", "<days>"]}},
+    {{"name": "Annual Discount", "values": ["<% saving>", "<% saving>"]}},
+    {{"name": "Starting Price", "values": ["<price/mo>", "<price/mo>"]}},
+    {{"name": "Money-Back", "values": ["<days/none>", "<days/none>"]}}
+  ],
+  "verdict": "The best way to save on {tool} is the annual plan — you save 20-40% vs monthly. No working promo codes exist but the free trial is genuinely risk-free.",
+  "faqs": [
+    {{"question": "Is there a {tool} promo code?", "answer": "<honest answer about coupon availability>"}},
+    {{"question": "How do I get {tool} for free?", "answer": "<free trial details>"}},
+    {{"question": "Does {tool} offer a discount for startups or nonprofits?", "answer": "<program details if any>"}}
+  ],
+  "cta_text": "Start {tool} free — no promo code needed. Most plans include a 14-day free trial.",
+  "cta_button": "Claim Free Trial",
+  "primary_keyword": "{tool} coupon code",
+  "secondary_keywords": ["{tool} promo code", "{tool} discount", "{tool} free trial"]
+}}"""
+
+    result = complete_json(prompt)
+    if not result:
+        return False
+    return bool(_render_and_save(result, vertical))
+
+
+def _generate_review_page(tool: str, vertical: str) -> bool:
+    if _already_generated(f"{tool} review"):
+        return False
+
+    prompt = f"""Write an in-depth "{tool} Review" for B2B buyers evaluating {tool} for {vertical.replace('_',' ')}.
+
+Return JSON:
+{{
+  "page_title": "{tool} Review {time.strftime('%Y')}: Is It Worth It? (Honest Verdict)",
+  "meta_description": "Honest {tool} review for {time.strftime('%Y')}. Real pricing, features, pros, cons and who it's actually best for.",
+  "subtitle": "An unbiased {tool} review based on real user feedback and hands-on testing",
+  "tldr": "{tool} is a strong choice for <specific use case> but overkill for <other use case>. Here's the full picture.",
+  "tools": [
+    {{
+      "name": "{tool}",
+      "description": "<comprehensive 2-3 sentence description of what it does and its market position>",
+      "pros": ["<pro1>", "<pro2>", "<pro3>", "<pro4>"],
+      "cons": ["<con1>", "<con2>", "<con3>"],
+      "pricing": "<full pricing breakdown>",
+      "homepage": "<url>",
+      "winner": true
+    }},
+    {{
+      "name": "Best {tool} Alternative",
+      "description": "<main competitor and when to pick it instead>",
+      "pros": ["<why it wins in some cases>", "<better price>"],
+      "cons": ["<where it loses to {tool}>"],
+      "pricing": "<starting price>",
+      "homepage": "<url>",
+      "winner": false
+    }}
+  ],
+  "comparison_features": [
+    {{"name": "Overall Rating", "values": ["4.5/5", "4.2/5"]}},
+    {{"name": "Ease of Use", "values": ["<rating>", "<rating>"]}},
+    {{"name": "Value for Money", "values": ["<rating>", "<rating>"]}},
+    {{"name": "Customer Support", "values": ["<rating>", "<rating>"]}},
+    {{"name": "Starting Price", "values": ["<price>", "<price>"]}}
+  ],
+  "verdict": "<honest 3-sentence verdict on who should buy {tool} and who should look elsewhere>",
+  "faqs": [
+    {{"question": "Is {tool} worth it in {time.strftime('%Y')}?", "answer": "<honest answer>"}},
+    {{"question": "What are the main complaints about {tool}?", "answer": "<real pain points>"}},
+    {{"question": "Who should NOT use {tool}?", "answer": "<honest fit assessment>"}}
+  ],
+  "cta_text": "Try {tool} free — judge it yourself with zero risk.",
+  "cta_button": "Start Free Trial",
+  "primary_keyword": "{tool} review",
+  "secondary_keywords": ["{tool} review {time.strftime('%Y')}", "is {tool} worth it", "{tool} pros and cons"]
+}}"""
+
+    result = complete_json(prompt)
+    if not result:
+        return False
+    return bool(_render_and_save(result, vertical))
+
+
+def _generate_free_plan_page(tool: str, vertical: str) -> bool:
+    if _already_generated(f"{tool} free plan"):
+        return False
+
+    prompt = f"""Write a "Does {tool} Have a Free Plan?" page for buyers who want to try {tool} without paying.
+
+Return JSON:
+{{
+  "page_title": "Does {tool} Have a Free Plan? ({time.strftime('%Y')} Full Breakdown)",
+  "meta_description": "Does {tool} offer a free plan in {time.strftime('%Y')}? Yes/no plus free tier limits, free trial details and the best free alternatives.",
+  "subtitle": "Everything you need to know about {tool}'s free tier, free trial and how to get started without paying",
+  "tldr": "<yes/no answer on whether {tool} has a free plan, and what the limits are in 2 sentences>",
+  "tools": [
+    {{
+      "name": "{tool} Free",
+      "description": "<exactly what is and isn't included in the free tier or trial>",
+      "pros": ["<what you get free>", "<free trial length>", "<no credit card required or not>"],
+      "cons": ["<limits of free plan>", "<what's locked behind paid>"],
+      "pricing": "Free tier available — paid plans from <price>/mo",
+      "homepage": "<url>",
+      "winner": true
+    }},
+    {{
+      "name": "Best Free {tool} Alternative",
+      "description": "<a genuinely free alternative with a more generous free tier>",
+      "pros": ["<more generous free plan>", "<no credit card>", "<open source if applicable>"],
+      "cons": ["<fewer integrations>"],
+      "pricing": "Free forever plan available",
+      "homepage": "<url>",
+      "winner": false
+    }}
+  ],
+  "comparison_features": [
+    {{"name": "Free Plan", "values": ["<yes/no + limits>", "<yes/no + limits>"]}},
+    {{"name": "Free Trial", "values": ["<days or none>", "<days or none>"]}},
+    {{"name": "Credit Card Required", "values": ["<yes/no>", "<yes/no>"]}},
+    {{"name": "Paid Starts At", "values": ["<price>", "<price>"]}}
+  ],
+  "verdict": "<honest recommendation on whether to use free tier, upgrade, or switch to a more generous free alternative>",
+  "faqs": [
+    {{"question": "Is {tool} free forever?", "answer": "<accurate answer>"}},
+    {{"question": "What do you get with {tool}'s free plan?", "answer": "<specific features and limits>"}},
+    {{"question": "What happens when the {tool} free trial ends?", "answer": "<what happens and how to avoid being charged>"}}
+  ],
+  "cta_text": "Start {tool} free today — no credit card required.",
+  "cta_button": "Try Free",
+  "primary_keyword": "does {tool} have a free plan",
+  "secondary_keywords": ["{tool} free plan", "{tool} free tier", "{tool} free trial"]
+}}"""
+
+    result = complete_json(prompt)
+    if not result:
+        return False
+    return bool(_render_and_save(result, vertical))
 
 
 def _ping_google_sitemap():
@@ -356,68 +633,74 @@ def _ping_google_sitemap():
         log.warning(f"Sitemap ping failed: {e}")
 
 
+def _write_redirects_file():
+    try:
+        redirects = get_all_redirects()
+        lines = []
+        for slug, url in redirects.items():
+            lines.append(f"/go/{slug} {url} 302")
+        path = Path("site/_redirects")
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        log.info(f"Written {len(lines)} /go/ redirects to site/_redirects")
+    except Exception as e:
+        log.warning(f"Failed to write _redirects: {e}")
+
+
 def run_programmatic(max_pages: int = 500) -> int:
-    """Generate comparison + alternatives + pricing + best-of pages."""
     from core.db import migrate
     migrate()
 
-    generated = 0
+    _write_redirects_file()
+
     domain = get("SITE_DOMAIN", "https://saaspare.org")
     log.info(f"Starting programmatic SEO run — target {max_pages} pages for {domain}")
 
+    tasks: list[tuple] = []
+
     for vertical, tools in TOOLS_BY_VERTICAL.items():
-        if generated >= max_pages:
-            break
         for tool_a, tool_b in combinations(tools, 2):
-            if generated >= max_pages:
-                break
-            try:
-                ok = _generate_comparison_page(tool_a, tool_b, vertical)
-                if ok:
-                    generated += 1
-                    log.info(f"[{generated}] {tool_a} vs {tool_b} ({vertical})")
-                time.sleep(3)
-            except Exception as e:
-                log.warning(f"Failed {tool_a} vs {tool_b}: {e}")
+            tasks.append((_generate_comparison_page, (tool_a, tool_b, vertical)))
 
     for vertical, targets in ALTERNATIVE_TARGETS.items():
-        if generated >= max_pages:
-            break
         for target in targets:
-            if generated >= max_pages:
-                break
-            try:
-                ok = _generate_alternatives_page(target, vertical)
-                if ok:
-                    generated += 1
-                    log.info(f"[{generated}] alternatives to {target} ({vertical})")
-                time.sleep(3)
-            except Exception as e:
-                log.warning(f"Failed alternatives {target}: {e}")
+            tasks.append((_generate_alternatives_page, (target, vertical)))
 
     for tool, vertical in HIGH_VALUE_PRICING_TARGETS:
-        if generated >= max_pages:
-            break
-        try:
-            ok = _generate_pricing_page(tool, vertical)
-            if ok:
-                generated += 1
-                log.info(f"[{generated}] pricing: {tool}")
-            time.sleep(3)
-        except Exception as e:
-            log.warning(f"Failed pricing {tool}: {e}")
+        tasks.append((_generate_pricing_page, (tool, vertical)))
 
     for vertical, audience, tools in BEST_OF_QUERIES:
-        if generated >= max_pages:
-            break
-        try:
-            ok = _generate_bestof_page(vertical, audience, tools)
-            if ok:
-                generated += 1
-                log.info(f"[{generated}] best-of: {vertical} for {audience}")
-            time.sleep(3)
-        except Exception as e:
-            log.warning(f"Failed best-of {vertical}/{audience}: {e}")
+        tasks.append((_generate_bestof_page, (vertical, audience, tools)))
+
+    for tool, vertical in HIGH_VALUE_COUPON_TARGETS:
+        tasks.append((_generate_coupon_page, (tool, vertical)))
+
+    for tool, vertical in HIGH_VALUE_REVIEW_TARGETS:
+        tasks.append((_generate_review_page, (tool, vertical)))
+
+    for tool, vertical in FREE_PLAN_TARGETS:
+        tasks.append((_generate_free_plan_page, (tool, vertical)))
+
+    generated = 0
+
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {
+            executor.submit(fn, *args): args
+            for fn, args in tasks
+        }
+        for future in as_completed(futures):
+            if generated >= max_pages:
+                for f in futures:
+                    f.cancel()
+                break
+            args = futures[future]
+            try:
+                ok = future.result()
+                if ok:
+                    generated += 1
+                    log.info(f"[{generated}/{max_pages}] Generated: {args}")
+            except Exception as e:
+                log.warning(f"Page gen failed {args}: {e}")
 
     if generated > 0:
         _ping_google_sitemap()

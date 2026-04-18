@@ -12,7 +12,7 @@ from core.db import db
 from core.logger import log
 from core.secrets import DRY_RUN, get
 from llm.router import complete_json
-from publisher.affiliate_registry import get_links_for_vertical, get_best_programs_for_vertical
+from publisher.affiliate_registry import get_go_url, get_links_for_vertical, get_best_programs_for_vertical
 
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 SITE_DIR = Path("site/pages")
@@ -23,11 +23,32 @@ def _affiliate_url(tool_name: str, base_url: str, vertical: str = "") -> str:
     if "amazon.com" in base_url:
         sep = "&" if "?" in base_url else "?"
         return f"{base_url}{sep}tag={AMAZON_TAG}"
+    go = get_go_url(tool_name)
+    if go:
+        return go
     if vertical:
         links = get_links_for_vertical(vertical, [tool_name])
         if tool_name in links and links[tool_name] != base_url:
             return links[tool_name]
     return base_url
+
+
+def _get_related_pages(vertical: str, current_slug: str, limit: int = 6) -> list[dict]:
+    try:
+        domain = get("SITE_DOMAIN", "https://saaspare.org")
+        with db() as conn:
+            rows = conn.execute("""
+                SELECT title FROM outputs
+                WHERE vertical = ? AND type = 'seo_page' AND title NOT LIKE ?
+                ORDER BY created_at DESC LIMIT ?
+            """, (vertical, f"%{current_slug[:20]}%", limit)).fetchall()
+        result = []
+        for row in rows:
+            s = slugify(row[0])
+            result.append({"title": row[0], "url": f"{domain}/pages/{s}"})
+        return result
+    except Exception:
+        return []
 
 
 def generate_from_cluster(vertical: str, topic_cluster: list[dict]) -> Optional[str]:
@@ -55,7 +76,7 @@ Generate a comparison page structure. Return JSON exactly:
       "cons": ["<con1>", "<con2>"],
       "pricing": "<brief pricing summary>",
       "homepage": "<official homepage url>",
-      "winner": <true for the top recommendation, false for others>
+      "winner": <true for top recommendation, false for others>
     }}
   ],
   "comparison_features": [
@@ -71,12 +92,11 @@ Generate a comparison page structure. Return JSON exactly:
   "secondary_keywords": ["<kw2>", "<kw3>"]
 }}
 
-Include 2-4 real tools the community is discussing. Make it genuinely useful.
+Include 2-4 real tools. Make it genuinely useful.
 """
     result = complete_json(prompt)
     if not result:
         return None
-
     return _render_and_save(result, vertical)
 
 
@@ -105,6 +125,8 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
     data["updated_date"] = time.strftime("%B %d, %Y")
     data["site_domain"] = domain
     data["schema_json"] = _build_schema(data)
+    data["related_pages"] = _get_related_pages(vertical, slug)
+    data["brevo_form_id"] = get("BREVO_FORM_ID", "")
 
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
     tmpl = env.get_template("comparison_page.html.j2")
@@ -136,7 +158,7 @@ def _build_schema(data: dict) -> str:
             "@type": "Review",
             "itemReviewed": {"@type": "SoftwareApplication", "name": t.get("name", ""),
                              "applicationCategory": "BusinessApplication"},
-            "reviewRating": {"@type": "Rating", "ratingValue": 5 - i * 0.3, "bestRating": 5},
+            "reviewRating": {"@type": "Rating", "ratingValue": round(5 - i * 0.3, 1), "bestRating": 5},
             "author": {"@type": "Organization", "name": "SaaSpare"},
             "reviewBody": t.get("description", "")[:400],
         })
