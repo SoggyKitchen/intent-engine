@@ -23,13 +23,16 @@ def run():
         vertical = niche["vertical"]
         log.info(f"Processing vertical: {vertical}")
 
-        clusters = find_clusters(vertical, min_size=5)
+        clusters = find_clusters(vertical, min_size=3)
+        pages_today = _seo_count_today(vertical)
+        MAX_PAGES_PER_VERTICAL_PER_DAY = 4
         for cluster in clusters:
-            if _already_generated_seo_today(vertical):
-                continue
+            if pages_today >= MAX_PAGES_PER_VERTICAL_PER_DAY:
+                break
             page_path = generate_from_cluster(vertical, cluster)
             if page_path:
                 seo_pages_generated += 1
+                pages_today += 1
                 log.info(f"SEO page: {page_path}")
 
         if MONETIZATION_MODE in ("full", "parent_holds_account"):
@@ -59,14 +62,14 @@ def _load_active_niches() -> list[dict]:
     return [n for n in cfg.get("niches", []) if n.get("active", True)]
 
 
-def _already_generated_seo_today(vertical: str) -> bool:
+def _seo_count_today(vertical: str) -> int:
     today_start = int(time.time()) - 86400
     with db() as conn:
         row = conn.execute("""
             SELECT COUNT(*) FROM outputs
             WHERE vertical = ? AND type = 'seo_page' AND created_at >= ?
         """, (vertical, today_start)).fetchone()
-    return row[0] > 0
+    return row[0]
 
 
 def _enough_signals_for_pack(vertical: str) -> bool:

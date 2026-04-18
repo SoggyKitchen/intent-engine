@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_redirects
+
+Sitemap: https://saaspare.org/sitemap.xml

@@ -98,7 +98,7 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
         for tool in data.get("tools", []):
             tool["affiliate_url"] = _affiliate_url(tool["name"], tool.get("homepage", "#"), vertical)
 
-    data["canonical_url"] = f"https://yourdomain.com/{slug}"
+    data["canonical_url"] = f"{get('SITE_DOMAIN', 'https://saaspare.org')}/{slug}"
     data["updated_date"] = time.strftime("%B %d, %Y")
     data["schema_json"] = _build_schema(data)
 
@@ -124,14 +124,37 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
 
 
 def _build_schema(data: dict) -> str:
+    tools = data.get("tools", [])
+    reviews = []
+    for i, t in enumerate(tools):
+        reviews.append({
+            "@type": "Review",
+            "itemReviewed": {"@type": "SoftwareApplication", "name": t.get("name", ""),
+                             "applicationCategory": "BusinessApplication"},
+            "reviewRating": {"@type": "Rating", "ratingValue": 5 - i * 0.3, "bestRating": 5},
+            "author": {"@type": "Organization", "name": "SaaSpare"},
+            "reviewBody": t.get("description", "")[:400],
+        })
     schema = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": data.get("page_title", ""),
         "description": data.get("meta_description", ""),
+        "datePublished": time.strftime("%Y-%m-%d"),
         "dateModified": time.strftime("%Y-%m-%d"),
-        "author": {"@type": "Organization", "name": "IntentEngine"},
+        "author": {"@type": "Organization", "name": "SaaSpare",
+                   "url": get("SITE_DOMAIN", "https://saaspare.org")},
+        "publisher": {"@type": "Organization", "name": "SaaSpare",
+                      "logo": {"@type": "ImageObject",
+                               "url": f"{get('SITE_DOMAIN', 'https://saaspare.org')}/logo.png"}},
+        "review": reviews,
     }
+    if data.get("faqs"):
+        schema["mainEntity"] = [
+            {"@type": "Question", "name": f["question"],
+             "acceptedAnswer": {"@type": "Answer", "text": f["answer"]}}
+            for f in data["faqs"]
+        ]
     return json.dumps(schema)
 
 
@@ -145,7 +168,7 @@ def find_clusters(vertical: str, min_size: int = 5) -> list[list[dict]]:
             WHERE s.vertical = ?
               AND s.ts >= ?
               AND s.monetization_path IN ('affiliate', 'lead_pack')
-              AND s.intent >= 50
+              AND s.intent >= 35
             ORDER BY s.profit_score DESC
             LIMIT 100
         """, (vertical, since_ts)).fetchall()
@@ -153,5 +176,13 @@ def find_clusters(vertical: str, min_size: int = 5) -> list[list[dict]]:
     if len(rows) < min_size:
         return []
 
-    clusters = [list(map(dict, rows))]
+    rows_list = [dict(r) for r in rows]
+    clusters = []
+    chunk = max(min_size, 8)
+    for i in range(0, len(rows_list), chunk):
+        c = rows_list[i:i + chunk]
+        if len(c) >= min_size:
+            clusters.append(c)
+        if len(clusters) >= 4:
+            break
     return clusters
