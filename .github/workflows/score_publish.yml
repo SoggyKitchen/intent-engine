@@ -3,6 +3,7 @@ name: Score & Publish
 on:
   schedule:
     - cron: "30 8 * * *"    # Daily at 8:30 AM UTC
+    - cron: "30 20 * * *"   # Daily at 8:30 PM UTC (second run)
   workflow_dispatch:
 
 jobs:
