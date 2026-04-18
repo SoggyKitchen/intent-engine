@@ -149,6 +149,18 @@ def inject_forms():
 
 
 @cli.command()
+@click.option("--max-pages", default=500, help="Max pages to generate")
+def programmatic(max_pages: int):
+    """Generate SEO pages for ALL tool combinations (programmatic SEO)."""
+    from outputs.programmatic import run_programmatic
+    from publisher.pages_deploy import deploy_all
+    count = run_programmatic(max_pages=max_pages)
+    if count > 0:
+        deploy_all()
+    click.echo(f"OK  {count} programmatic pages generated and deployed")
+
+
+@cli.command()
 def revenue():
     """Show per-program affiliate revenue estimates."""
     from publisher.affiliate_registry import PROGRAMS, estimate_monthly_revenue
