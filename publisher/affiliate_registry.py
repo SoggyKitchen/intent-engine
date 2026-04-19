@@ -160,7 +160,7 @@ PROGRAMS = {
          "commission": "$500 per referral", "commission_pct": 0, "recurring": False, "avg_plan_usd": 500},
         {"name": "Expensify", "homepage": "https://www.expensify.com",
          "affiliate_url": "https://use.expensify.com/accountants", "network": "direct",
-         "commission": "0.5% of referred spend", "commission_pct": 0, "recurring": True, "avg_plan_usd": 36},
+         "commission": "0.5% of referred spend", "commission_pct": 1, "recurring": False, "avg_plan_usd": 5},
         {"name": "Xero", "homepage": "https://www.xero.com",
          "affiliate_url": "https://www.xero.com/partners/become-a-partner/", "network": "partnerstack",
          "commission": "30% recurring for 12 months", "commission_pct": 30, "recurring": True, "avg_plan_usd": 65},
@@ -242,18 +242,21 @@ PROGRAMS = {
     ],
 
     "video_conferencing": [
-        {"name": "Zoom", "homepage": "https://zoom.us",
-         "affiliate_url": "https://zoom.us/partners/affiliate", "network": "partnerstack",
-         "commission": "Referral credits", "commission_pct": 0, "recurring": False, "avg_plan_usd": 150},
+        {"name": "Whereby", "homepage": "https://whereby.com",
+         "affiliate_url": "https://whereby.com/partners/affiliates/", "network": "partnerstack",
+         "commission": "20% per upgrade", "commission_pct": 20, "recurring": False, "avg_plan_usd": 59},
+        {"name": "Riverside.fm", "homepage": "https://riverside.fm",
+         "affiliate_url": "https://riverside.fm/affiliates", "network": "partnerstack",
+         "commission": "20% recurring", "commission_pct": 20, "recurring": True, "avg_plan_usd": 24},
         {"name": "Loom", "homepage": "https://www.loom.com",
          "affiliate_url": "https://www.loom.com/affiliates", "network": "partnerstack",
          "commission": "15% recurring for 12 months", "commission_pct": 15, "recurring": True, "avg_plan_usd": 12.50},
         {"name": "Riverside.fm", "homepage": "https://riverside.fm",
          "affiliate_url": "https://riverside.fm/affiliates", "network": "partnerstack",
          "commission": "20% recurring", "commission_pct": 20, "recurring": True, "avg_plan_usd": 24},
-        {"name": "Whereby", "homepage": "https://whereby.com",
-         "affiliate_url": "https://whereby.com/partners/affiliates/", "network": "partnerstack",
-         "commission": "20% per upgrade", "commission_pct": 20, "recurring": False, "avg_plan_usd": 59},
+        {"name": "Zoom", "homepage": "https://zoom.us",
+         "affiliate_url": "https://zoom.us/partners/affiliate", "network": "partnerstack",
+         "commission": "Referral credits", "commission_pct": 0, "recurring": False, "avg_plan_usd": 0},
     ],
 
     "vpn_business": [
@@ -272,6 +275,9 @@ PROGRAMS = {
     ],
 
     "seo_tools": [
+        {"name": "Ahrefs", "homepage": "https://ahrefs.com",
+         "affiliate_url": "https://ahrefs.com/affiliates", "network": "direct",
+         "commission": "$20 per trial + recurring", "commission_pct": 20, "recurring": True, "avg_plan_usd": 99},
         {"name": "Semrush", "homepage": "https://www.semrush.com",
          "affiliate_url": "https://www.semrush.com/partner/", "network": "impact",
          "commission": "$200 per new subscription", "commission_pct": 0, "recurring": False, "avg_plan_usd": 200},

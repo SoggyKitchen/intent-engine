@@ -5,7 +5,7 @@ Uses ThreadPoolExecutor(5) to run 5 LLM providers in parallel.
 """
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from itertools import combinations, permutations
+from itertools import combinations
 from pathlib import Path
 
 from core.db import db
@@ -77,8 +77,8 @@ TOOLS_BY_VERTICAL = {
         "Twingate", "Cloudflare Access", "Tailscale", "WireGuard", "Zscaler", "OpenVPN",
     ],
     "seo_tools": [
-        "Semrush", "Moz Pro", "Surfer SEO", "SE Ranking", "Mangools",
-        "SpyFu", "Clearscope", "Screaming Frog", "Frase.io", "Rankmath Pro",
+        "Ahrefs", "Semrush", "Moz Pro", "Surfer SEO", "SE Ranking", "Mangools",
+        "SpyFu", "Clearscope", "Frase.io", "Rankmath Pro",
     ],
 }
 
@@ -96,7 +96,7 @@ ALTERNATIVE_TARGETS = {
     "password_managers": ["LastPass", "1Password", "Dashlane"],
     "video_conferencing": ["Zoom", "Microsoft Teams", "Google Meet"],
     "vpn_business": ["NordLayer", "Cisco AnyConnect", "Perimeter 81"],
-    "seo_tools": ["Semrush", "Ahrefs", "Moz Pro"],
+    "seo_tools": ["Semrush", "Ahrefs", "Moz Pro", "Surfer SEO"],
 }
 
 HIGH_VALUE_PRICING_TARGETS = [
@@ -131,6 +131,7 @@ HIGH_VALUE_PRICING_TARGETS = [
     ("NordLayer", "vpn_business"),
     ("Deel", "hr_recruiting"),
     ("Gusto", "hr_recruiting"),
+    ("Ahrefs", "seo_tools"),
     ("Semrush", "seo_tools"),
     ("Surfer SEO", "seo_tools"),
     ("Clearscope", "seo_tools"),
@@ -188,6 +189,7 @@ HIGH_VALUE_COUPON_TARGETS = [
     ("Zoom", "video_conferencing"),
     ("Deel", "hr_recruiting"),
     ("Rippling", "hr_recruiting"),
+    ("Ahrefs", "seo_tools"),
     ("Semrush", "seo_tools"),
     ("Surfer SEO", "seo_tools"),
 ]
@@ -213,6 +215,7 @@ HIGH_VALUE_REVIEW_TARGETS = [
     ("ActiveCampaign", "marketing_automation"),
     ("DocuSign", "legal_compliance"),
     ("Amplitude", "saas_analytics"),
+    ("Ahrefs", "seo_tools"),
     ("Semrush", "seo_tools"),
     ("Surfer SEO", "seo_tools"),
     ("Moz Pro", "seo_tools"),
@@ -727,7 +730,7 @@ def run_programmatic(max_pages: int = 500) -> int:
     tasks: list[tuple] = []
 
     for vertical, tools in TOOLS_BY_VERTICAL.items():
-        for tool_a, tool_b in permutations(tools, 2):
+        for tool_a, tool_b in combinations(tools, 2):
             tasks.append((_generate_comparison_page, (tool_a, tool_b, vertical)))
 
     for vertical, targets in ALTERNATIVE_TARGETS.items():
