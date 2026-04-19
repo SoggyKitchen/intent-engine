@@ -44,10 +44,18 @@ jobs:
           DRY_RUN: ${{ secrets.DRY_RUN }}
           LOG_LEVEL: INFO
 
+      - name: Submit backlinks + IndexNow
+        run: uv run engine backlinks
+        continue-on-error: true
+        env:
+          DB_PATH: data/intent.db
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+
       - name: Commit pages
         run: |
           git config user.email "bot@intentengine.local"
           git config user.name "IntentBot"
-          git add data/intent.db site/pages/ site/sitemap.xml || true
+          git add data/intent.db site/pages/ site/sitemap.xml site/_redirects || true
           git diff --staged --quiet || git commit -m "chore: programmatic SEO $(date -u +%Y-%m-%d) [skip ci]"
           git push

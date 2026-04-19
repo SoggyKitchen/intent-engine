@@ -152,10 +152,13 @@
   <div class="email-box">
     <h3>Get the Weekly SaaS Deal Digest</h3>
     <p>Free trials, discounts and new comparisons — straight to your inbox every Friday.</p>
-    <div class="email-row">
-      <input type="email" placeholder="your@email.com" id="sub-email">
-      <button onclick="subSubmit()">Subscribe Free</button>
-    </div>
+    <form action="https://formsubmit.co/smithelly30121@gmail.com" method="POST" class="email-row" id="sub-form">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <input type="hidden" name="_subject" value="New SaaSpare subscriber">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://saaspare.org/pages/thanks.html">
+      <button type="submit">Subscribe Free</button>
+    </form>
     <p class="email-msg">No spam. Unsubscribe anytime.</p>
   </div>
 
@@ -183,14 +186,9 @@
   </footer>
 </div>
 <script>
-function subSubmit(){
-  var e=document.getElementById('sub-email').value;
-  if(!e||!e.includes('@')){alert('Please enter a valid email.');return;}
-  document.querySelector('.email-row').innerHTML='<p style="color:#7ecf8a;font-weight:600">✓ You\'re in! Check your inbox Friday.</p>';
-  {% if brevo_form_id %}
-  fetch('https://api.brevo.com/v3/contacts',{method:'POST',headers:{'accept':'application/json','content-type':'application/json','api-key':'{{ brevo_form_id }}'},body:JSON.stringify({email:e,listIds:[2],updateEnabled:true})}).catch(function(){});
-  {% endif %}
-}
+document.getElementById('sub-form')&&document.getElementById('sub-form').addEventListener('submit',function(){
+  setTimeout(function(){document.getElementById('sub-form').innerHTML='<p style="color:#7ecf8a;font-weight:600">✓ You\'re in! Check your inbox Friday.</p>';},200);
+});
 </script>
 </body>
 </html>
