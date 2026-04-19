@@ -66,6 +66,8 @@
   @media(max-width:600px){.pros-cons{grid-template-columns:1fr}h1{font-size:1.5rem}nav a.hide-mobile{display:none}.email-row{flex-direction:column}.email-row input,.email-row button{width:100%}}
 </style>
 {% if schema_json %}<script type="application/ld+json">{{ schema_json }}</script>{% endif %}
+{% if ga_id %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>{% endif %}
 </head>
 <body>
 <nav>
@@ -128,8 +130,11 @@
     </div>
     <p><strong>Pricing:</strong> {{ tool.pricing }}</p>
     {% if tool.affiliate_url %}
-    <p style="margin-top:.75rem">
-      <a href="{{ tool.affiliate_url }}" rel="sponsored noopener" target="_blank" style="color:var(--accent);font-weight:600">Try {{ tool.name }} Free →</a>
+    <p style="margin-top:1rem">
+      <a href="{{ tool.affiliate_url }}" rel="sponsored noopener" target="_blank"
+         style="display:inline-block;background:{% if tool.winner %}var(--accent){% else %}var(--primary){% endif %};color:#fff;padding:.55rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem">
+        Try {{ tool.name }} Free →
+      </a>
     </p>
     {% endif %}
   </div>
@@ -147,6 +152,19 @@
       <p>{{ faq.answer }}</p>
     </div>
     {% endfor %}
+  </div>
+
+  <div style="text-align:center;margin:2rem 0">
+    <p style="color:#888;font-size:.85rem;margin-bottom:.75rem">Found this helpful? Share it:</p>
+    <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ canonical_url | urlencode }}"
+       target="_blank" rel="noopener"
+       style="display:inline-block;background:#000;color:#fff;padding:.5rem 1.1rem;border-radius:6px;text-decoration:none;font-size:.85rem;margin:.25rem">𝕏 Share</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ canonical_url | urlencode }}"
+       target="_blank" rel="noopener"
+       style="display:inline-block;background:#0077b5;color:#fff;padding:.5rem 1.1rem;border-radius:6px;text-decoration:none;font-size:.85rem;margin:.25rem">LinkedIn</a>
+    <a href="https://www.reddit.com/submit?url={{ canonical_url | urlencode }}&title={{ title | urlencode }}"
+       target="_blank" rel="noopener"
+       style="display:inline-block;background:#ff4500;color:#fff;padding:.5rem 1.1rem;border-radius:6px;text-decoration:none;font-size:.85rem;margin:.25rem">Reddit</a>
   </div>
 
   <div class="email-box">

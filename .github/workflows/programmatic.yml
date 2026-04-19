@@ -42,6 +42,7 @@ jobs:
           CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}
           GH_PAT: ${{ secrets.GH_PAT }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
           LOG_LEVEL: INFO
 
       - name: Submit backlinks + IndexNow
