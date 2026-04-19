@@ -296,6 +296,12 @@ PROGRAMS = {
         {"name": "Screaming Frog", "homepage": "https://www.screamingfrog.co.uk",
          "affiliate_url": "https://www.screamingfrog.co.uk/seo-spider/", "network": "direct",
          "commission": "direct traffic only", "commission_pct": 0, "recurring": False, "avg_plan_usd": 18},
+        {"name": "Frase.io", "homepage": "https://www.frase.io",
+         "affiliate_url": "https://www.frase.io/affiliates/", "network": "partnerstack",
+         "commission": "30% recurring", "commission_pct": 30, "recurring": True, "avg_plan_usd": 45},
+        {"name": "Rankmath Pro", "homepage": "https://rankmath.com",
+         "affiliate_url": "https://rankmath.com/affiliate/", "network": "shareasale",
+         "commission": "30% per sale", "commission_pct": 30, "recurring": False, "avg_plan_usd": 59},
     ],
 }
 

@@ -9,8 +9,8 @@ from core.logger import log
 from core.secrets import get
 
 _daily_tokens: dict[str, int] = defaultdict(int)
-_last_reset: dict[str, float] = defaultdict(float)
 _lock = threading.Lock()
+_db_loaded = False
 
 DAILY_LIMITS = {
     "groq_70b":   90_000,   # Free tier: 100k TPD hard limit, stop at 90k
@@ -20,21 +20,50 @@ DAILY_LIMITS = {
     "openrouter": 200_000,
 }
 
+_TODAY = time.strftime("%Y-%m-%d")
 
-def _reset_if_needed(provider: str):
-    now = time.time()
-    if now - _last_reset[provider] > 86400:
-        _daily_tokens[provider] = 0
-        _last_reset[provider] = now
+
+def _load_db_quota():
+    """Seed in-memory counters from DB so cross-run budget is respected."""
+    global _db_loaded
+    if _db_loaded:
+        return
+    _db_loaded = True
+    try:
+        from core.db import db as _get_db
+        with _get_db() as conn:
+            rows = conn.execute(
+                "SELECT provider, tokens_used FROM daily_quota WHERE date=?", (_TODAY,)
+            ).fetchall()
+        for row in rows:
+            _daily_tokens[row["provider"]] = row["tokens_used"]
+    except Exception:
+        pass
+
+
+def _persist_charge(provider: str, tokens: int):
+    try:
+        from core.db import db as _get_db
+        with _get_db() as conn:
+            conn.execute("""
+                INSERT INTO daily_quota (date, provider, tokens_used) VALUES (?, ?, ?)
+                ON CONFLICT(date, provider) DO UPDATE SET tokens_used = tokens_used + excluded.tokens_used
+            """, (_TODAY, provider, tokens))
+    except Exception:
+        pass
 
 
 def _try_charge(provider: str, estimated_tokens: int = 500) -> bool:
     with _lock:
-        _reset_if_needed(provider)
+        _load_db_quota()
         if _daily_tokens[provider] + estimated_tokens < DAILY_LIMITS[provider]:
             _daily_tokens[provider] += estimated_tokens
-            return True
-        return False
+            charged = True
+        else:
+            charged = False
+    if charged:
+        threading.Thread(target=_persist_charge, args=(provider, estimated_tokens), daemon=True).start()
+    return charged
 
 
 def _refund(provider: str, tokens: int):

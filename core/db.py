@@ -102,6 +102,13 @@ CREATE TABLE IF NOT EXISTS niche_perf (
     last_run        INTEGER
 );
 
+CREATE TABLE IF NOT EXISTS daily_quota (
+    date        TEXT NOT NULL,
+    provider    TEXT NOT NULL,
+    tokens_used INTEGER DEFAULT 0,
+    PRIMARY KEY (date, provider)
+);
+
 CREATE TABLE IF NOT EXISTS runs (
     id          TEXT PRIMARY KEY,
     job         TEXT NOT NULL,

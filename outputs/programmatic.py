@@ -78,7 +78,7 @@ TOOLS_BY_VERTICAL = {
     ],
     "seo_tools": [
         "Semrush", "Moz Pro", "Surfer SEO", "SE Ranking", "Mangools",
-        "SpyFu", "Clearscope", "Screaming Frog", "Ubersuggest", "Ahrefs",
+        "SpyFu", "Clearscope", "Screaming Frog", "Frase.io", "Rankmath Pro",
     ],
 }
 
@@ -160,9 +160,11 @@ BEST_OF_QUERIES = [
     ("password_managers", "business", ["1Password", "LastPass", "Bitwarden", "Dashlane", "Keeper"]),
     ("video_conferencing", "remote teams", ["Zoom", "Google Meet", "Microsoft Teams", "Whereby", "Loom"]),
     ("vpn_business", "startups", ["NordLayer", "Twingate", "Cloudflare Access", "Perimeter 81", "Tailscale"]),
-    ("seo_tools", "small business", ["Mangools", "SE Ranking", "Ubersuggest", "SpyFu", "Surfer SEO"]),
+    ("seo_tools", "small business", ["Mangools", "SE Ranking", "SpyFu", "Surfer SEO", "Frase.io"]),
     ("seo_tools", "enterprise", ["Semrush", "Moz Pro", "Clearscope", "Surfer SEO", "SE Ranking"]),
-    ("seo_tools", "content teams", ["Surfer SEO", "Clearscope", "Semrush", "Mangools", "SE Ranking"]),
+    ("seo_tools", "content teams", ["Surfer SEO", "Clearscope", "Frase.io", "Semrush", "Rankmath Pro"]),
+    ("seo_tools", "bloggers", ["Rankmath Pro", "Surfer SEO", "Frase.io", "Mangools", "SE Ranking"]),
+    ("seo_tools", "agencies", ["Semrush", "Moz Pro", "SE Ranking", "SpyFu", "Screaming Frog"]),
 ]
 
 HIGH_VALUE_COUPON_TARGETS = [
@@ -750,6 +752,8 @@ def run_programmatic(max_pages: int = 500) -> int:
     tasks.sort(key=_task_priority)
 
     generated = 0
+    consecutive_failures = 0
+    MAX_CONSECUTIVE_FAILURES = 5
 
     with ThreadPoolExecutor(max_workers=3) as executor:
         futures = {
@@ -757,17 +761,23 @@ def run_programmatic(max_pages: int = 500) -> int:
             for fn, args in tasks
         }
         for future in as_completed(futures):
-            if generated >= max_pages:
+            if generated >= max_pages or consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
                 for f in futures:
                     f.cancel()
+                if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
+                    log.warning("5 consecutive LLM failures — quota exhausted, stopping run early")
                 break
             args = futures[future]
             try:
                 ok = future.result()
                 if ok:
                     generated += 1
+                    consecutive_failures = 0
                     log.info(f"[{generated}/{max_pages}] Generated: {args}")
+                else:
+                    consecutive_failures += 1
             except Exception as e:
+                consecutive_failures += 1
                 log.warning(f"Page gen failed {args}: {e}")
 
     if generated > 0:
