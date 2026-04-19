@@ -13,11 +13,12 @@ _lock = threading.Lock()
 _db_loaded = False
 
 DAILY_LIMITS = {
-    "groq_70b":   90_000,   # Free tier: 100k TPD hard limit, stop at 90k
-    "groq_8b":    50_000,   # Free tier: 6k TPM; conservative daily cap
-    "groq_3b":    80_000,   # llama-3.2-3b — light model, generous cap
-    "cerebras":   300_000,
-    "openrouter": 200_000,
+    "cerebras_qwen": 900_000,  # qwen-3-235b: 1M TPD free tier, stop at 900k
+    "cerebras_8b":   900_000,  # llama3.1-8b: 1M TPD free tier, stop at 900k
+    "groq_70b":       90_000,
+    "groq_8b":        50_000,
+    "groq_3b":        80_000,
+    "openrouter":    200_000,
 }
 
 _TODAY = time.strftime("%Y-%m-%d")
@@ -90,14 +91,16 @@ def complete_json(prompt: str, system: str = "", estimated_tokens: int = 500) ->
 
 def _get_ordered_providers():
     providers = []
+    cerebras_key = get("CEREBRAS_API_KEY")
+    if cerebras_key:
+        # Cerebras first — 1M tokens/day each, 10x more than Groq free tier
+        providers.append(("cerebras_qwen", "qwen-3-235b-a22b-instruct-2507", _cerebras_client))
+        providers.append(("cerebras_8b",   "llama3.1-8b",                    _cerebras_client))
     groq_key = get("GROQ_API_KEY")
     if groq_key:
         providers.append(("groq_70b", "llama-3.3-70b-versatile", _groq_client))
         providers.append(("groq_8b",  "llama-3.1-8b-instant",    _groq_client))
         providers.append(("groq_3b",  "llama-3.2-3b-preview",    _groq_client))
-    cerebras_key = get("CEREBRAS_API_KEY")
-    if cerebras_key:
-        providers.append(("cerebras", "llama3.1-70b", _cerebras_client))
     openrouter_key = get("OPENROUTER_API_KEY")
     if openrouter_key:
         providers.append(("openrouter", "meta-llama/llama-3.3-70b-instruct:free", _openrouter_client))
@@ -165,14 +168,21 @@ def _cerebras_client(prompt: str, system: str, model: str) -> Optional[dict]:
     if system:
         messages.append({"role": "system", "content": system})
     messages.append({"role": "user", "content": prompt})
-    resp = httpx.post(
-        "https://api.cerebras.ai/v1/chat/completions",
-        json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 4000},
-        headers=headers,
-        timeout=60,
-    )
-    resp.raise_for_status()
-    return _parse_json_response(resp.json()["choices"][0]["message"]["content"])
+    for attempt in range(3):
+        resp = httpx.post(
+            "https://api.cerebras.ai/v1/chat/completions",
+            json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 4000},
+            headers=headers,
+            timeout=60,
+        )
+        if resp.status_code == 429:
+            retry_after = int(resp.headers.get("Retry-After", 15)) + 5
+            log.warning(f"Cerebras [{model}] rate limit — sleeping {retry_after}s (attempt {attempt+1}/3)")
+            time.sleep(retry_after)
+            continue
+        resp.raise_for_status()
+        return _parse_json_response(resp.json()["choices"][0]["message"]["content"])
+    raise Exception(f"Cerebras [{model}] rate limit exceeded after 3 retries")
 
 
 def _openrouter_client(prompt: str, system: str, model: str) -> Optional[dict]:
