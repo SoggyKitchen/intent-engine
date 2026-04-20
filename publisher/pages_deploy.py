@@ -15,6 +15,7 @@ PAGES_DIR = Path("site/pages")
 
 def deploy_all() -> bool:
     _rebuild_sitemap(SITE_DIR)
+    _rebuild_homepage(SITE_DIR)
 
     if DRY_RUN:
         log.info("[DRY RUN] Would deploy to Cloudflare Pages")
@@ -89,6 +90,37 @@ def _deploy_via_git(repo_url: str) -> bool:
 
 
 _SITEMAP_EXCLUDE = {"index", "thanks", "verification"}
+_PAGES_EXCLUDE = {"thanks", "verification"}
+
+def _page_label(stem: str) -> str:
+    import re as _re
+    label = stem.replace("-", " ").title()
+    label = _re.sub(r'\s+Pricing\s+\d{4}.*$', ' Pricing', label)
+    label = _re.sub(r'\s+\d{4}.*$', '', label)
+    label = _re.sub(r'\s+(Plans?|Costs?|What You Actually Pay)\b.*$', '', label, flags=_re.IGNORECASE)
+    return label.strip()
+
+def _rebuild_homepage(site_dir: Path):
+    index_path = site_dir / "index.html"
+    if not index_path.exists():
+        return
+    pages_dir = site_dir / "pages"
+    pages = [p for p in sorted(pages_dir.glob("*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
+             if p.stem not in _PAGES_EXCLUDE] if pages_dir.exists() else []
+    domain = get("SITE_DOMAIN", "https://saaspare.org")
+    pills = "\n".join(
+        f'    <a class="tool-pill" href="{domain}/pages/{p.stem}">{_page_label(p.stem)}</a>'
+        for p in pages[:24]
+    )
+    html = index_path.read_text(encoding="utf-8")
+    import re
+    html = re.sub(
+        r'(<div class="tools-grid"[^>]*>)(.*?)(</div>)',
+        lambda m: m.group(1) + "\n" + pills + "\n  " + m.group(3),
+        html, count=1, flags=re.DOTALL
+    )
+    index_path.write_text(html, encoding="utf-8")
+    log.info(f"Homepage updated with {len(pages[:24])} page links")
 
 def _rebuild_sitemap(site_repo: Path):
     pages_dir = site_repo / "pages"
