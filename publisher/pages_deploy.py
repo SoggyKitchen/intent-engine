@@ -14,6 +14,8 @@ PAGES_DIR = Path("site/pages")
 
 
 def deploy_all() -> bool:
+    _rebuild_sitemap(SITE_DIR)
+
     if DRY_RUN:
         log.info("[DRY RUN] Would deploy to Cloudflare Pages")
         return True
@@ -86,6 +88,8 @@ def _deploy_via_git(repo_url: str) -> bool:
         return False
 
 
+_SITEMAP_EXCLUDE = {"index", "thanks", "verification"}
+
 def _rebuild_sitemap(site_repo: Path):
     pages_dir = site_repo / "pages"
     pages = list(pages_dir.glob("*.html")) if pages_dir.exists() else []
@@ -96,12 +100,15 @@ def _rebuild_sitemap(site_repo: Path):
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
         f'  <url><loc>{domain}/</loc><lastmod>{today}</lastmod><priority>1.0</priority></url>',
     ]
+    for p in sorted(site_repo.glob("*.html")):
+        if p.stem not in _SITEMAP_EXCLUDE:
+            lines.append(f'  <url><loc>{domain}/{p.stem}</loc><lastmod>{today}</lastmod><priority>0.7</priority></url>')
     for p in sorted(pages):
-        slug = p.stem
-        lines.append(f'  <url><loc>{domain}/pages/{slug}</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>')
+        if p.stem not in _SITEMAP_EXCLUDE:
+            lines.append(f'  <url><loc>{domain}/pages/{p.stem}</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>')
     lines.append("</urlset>")
     (site_repo / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    log.info(f"Sitemap rebuilt with {len(pages)} pages")
+    log.info(f"Sitemap rebuilt: {len(pages)} comparison pages + static pages")
 
 
 def _ping_indexnow(site_repo: Path):
