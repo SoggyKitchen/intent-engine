@@ -323,6 +323,7 @@ Return JSON exactly:
     {{
       "name": "{tool_a}",
       "description": "<2-3 sentence accurate description>",
+      "score": <4.0-5.0>,
       "pros": ["<pro1>", "<pro2>", "<pro3>"],
       "cons": ["<con1>", "<con2>"],
       "pricing": "<real pricing tier summary>",
@@ -332,6 +333,7 @@ Return JSON exactly:
     {{
       "name": "{tool_b}",
       "description": "<2-3 sentence accurate description>",
+      "score": <3.0-4.5>,
       "pros": ["<pro1>", "<pro2>", "<pro3>"],
       "cons": ["<con1>", "<con2>"],
       "pricing": "<real pricing tier summary>",
@@ -387,6 +389,7 @@ Return JSON exactly:
     {{
       "name": "<alternative name>",
       "description": "<why it beats {target_tool} for certain buyers>",
+      "score": <4.0-5.0>,
       "pros": ["<pro1>", "<pro2>", "<pro3>"],
       "cons": ["<con1>", "<con2>"],
       "pricing": "<starting price>",
@@ -433,6 +436,7 @@ Return JSON:
     {{
       "name": "{tool}",
       "description": "<what {tool} does and who it's for>",
+      "score": <4.0-5.0>,
       "pros": ["<value pro1>", "<value pro2>", "<pricing pro>"],
       "cons": ["<pricing con1>", "<pricing con2>"],
       "pricing": "<detailed pricing with plan names and prices>",
@@ -442,6 +446,7 @@ Return JSON:
     {{
       "name": "Best {tool} Alternative",
       "description": "<cheaper or better-value alternative>",
+      "score": <3.5-4.5>,
       "pros": ["<cheaper>", "<comparable features>"],
       "cons": ["<less brand recognition>"],
       "pricing": "<starting price>",
@@ -494,6 +499,7 @@ Return JSON:
     {{
       "name": "<tool>",
       "description": "<why it's great for {audience}>",
+      "score": <3.8-5.0>,
       "pros": ["<pro1>", "<pro2>", "<pro3>"],
       "cons": ["<con1>"],
       "pricing": "<starting price or free tier>",
@@ -540,6 +546,7 @@ Return JSON:
     {{
       "name": "{tool}",
       "description": "<what {tool} does, who it's for, why buyers search for discounts>",
+      "score": <4.0-5.0>,
       "pros": ["<free trial available>", "<annual plan discount>", "<nonprofit/startup pricing>"],
       "cons": ["<no public promo codes>", "<limited discount windows>"],
       "pricing": "<starter plan price and annual savings>",
@@ -549,6 +556,7 @@ Return JSON:
     {{
       "name": "Best {tool} Alternative",
       "description": "<cheaper alternative if {tool} is over budget>",
+      "score": <3.5-4.5>,
       "pros": ["<lower price>", "<similar features>", "<free plan available>"],
       "cons": ["<smaller ecosystem>"],
       "pricing": "<starting price>",
@@ -596,6 +604,7 @@ Return JSON:
     {{
       "name": "{tool}",
       "description": "<comprehensive 2-3 sentence description of what it does and its market position>",
+      "score": <4.0-5.0>,
       "pros": ["<pro1>", "<pro2>", "<pro3>", "<pro4>"],
       "cons": ["<con1>", "<con2>", "<con3>"],
       "pricing": "<full pricing breakdown>",
@@ -605,6 +614,7 @@ Return JSON:
     {{
       "name": "Best {tool} Alternative",
       "description": "<main competitor and when to pick it instead>",
+      "score": <3.5-4.5>,
       "pros": ["<why it wins in some cases>", "<better price>"],
       "cons": ["<where it loses to {tool}>"],
       "pricing": "<starting price>",
@@ -653,6 +663,7 @@ Return JSON:
     {{
       "name": "{tool} Free",
       "description": "<exactly what is and isn't included in the free tier or trial>",
+      "score": <4.0-5.0>,
       "pros": ["<what you get free>", "<free trial length>", "<no credit card required or not>"],
       "cons": ["<limits of free plan>", "<what's locked behind paid>"],
       "pricing": "Free tier available — paid plans from <price>/mo",
@@ -662,6 +673,7 @@ Return JSON:
     {{
       "name": "Best Free {tool} Alternative",
       "description": "<a genuinely free alternative with a more generous free tier>",
+      "score": <3.5-4.5>,
       "pros": ["<more generous free plan>", "<no credit card>", "<open source if applicable>"],
       "cons": ["<fewer integrations>"],
       "pricing": "Free forever plan available",
