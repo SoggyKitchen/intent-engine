@@ -318,6 +318,15 @@ _ALL_AFFILIATE_URLS: dict[str, str] = {
 }
 
 
+_ALL_HOMEPAGES: dict[str, str] = {
+    slugify(p["name"]): p["homepage"]
+    for programs in PROGRAMS.values()
+    for p in programs
+}
+
+def get_homepage_for_tool(tool_name: str) -> str | None:
+    return _ALL_HOMEPAGES.get(slugify(tool_name))
+
 def get_go_url(tool_name: str) -> str | None:
     s = slugify(tool_name)
     if s in _ALL_AFFILIATE_URLS:

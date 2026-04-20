@@ -12,12 +12,34 @@ from core.db import db
 from core.logger import log
 from core.secrets import DRY_RUN, get
 from llm.router import complete_json
-from publisher.affiliate_registry import get_go_url, get_links_for_vertical, get_best_programs_for_vertical
+from publisher.affiliate_registry import get_go_url, get_links_for_vertical, get_best_programs_for_vertical, get_homepage_for_tool
 
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 SITE_DIR = Path("site/pages")
 AMAZON_TAG = get("AMAZON_ASSOCIATE_TAG", "yourtag-22")
 _JINJA_ENV = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
+
+
+def _safe_homepage(tool_name: str, llm_url: str) -> str:
+    """Return a guaranteed-working homepage URL.
+
+    Priority:
+    1. Registry lookup (verified correct URLs)
+    2. Strip any deep path from LLM URL — keep only scheme + domain root
+    3. Google search fallback
+    """
+    registry = get_homepage_for_tool(tool_name)
+    if registry:
+        return registry
+    if llm_url and llm_url not in ("#", ""):
+        from urllib.parse import urlparse
+        try:
+            p = urlparse(llm_url if llm_url.startswith("http") else f"https://{llm_url}")
+            if p.netloc:
+                return f"{p.scheme}://{p.netloc}"
+        except Exception:
+            pass
+    return f"https://www.google.com/search?q={slugify(tool_name)}+pricing"
 
 
 def _affiliate_url(tool_name: str, base_url: str, vertical: str = "", page_type: str = "comparison") -> str:
@@ -131,9 +153,11 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
     )
 
     if cta_tool:
-        data["cta_url"] = _affiliate_url(cta_tool["name"], cta_tool.get("homepage", "#"), vertical, page_type)
         for tool in data.get("tools", []):
-            tool["affiliate_url"] = _affiliate_url(tool["name"], tool.get("homepage", "#"), vertical, page_type)
+            tool["homepage"] = _safe_homepage(tool["name"], tool.get("homepage", ""))
+            tool["affiliate_url"] = _affiliate_url(tool["name"], tool["homepage"], vertical, page_type)
+        cta_tool["homepage"] = _safe_homepage(cta_tool["name"], cta_tool.get("homepage", ""))
+        data["cta_url"] = _affiliate_url(cta_tool["name"], cta_tool["homepage"], vertical, page_type)
 
     domain = get("SITE_DOMAIN", "https://saaspare.org")
     canonical = f"{domain}/pages/{slug}"
