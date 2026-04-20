@@ -758,7 +758,7 @@ def run_programmatic(max_pages: int = 500) -> int:
     consecutive_failures = 0
     MAX_CONSECUTIVE_FAILURES = 5
 
-    with ThreadPoolExecutor(max_workers=3) as executor:
+    with ThreadPoolExecutor(max_workers=1) as executor:
         futures = {
             executor.submit(fn, *args): args
             for fn, args in tasks

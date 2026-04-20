@@ -7,7 +7,7 @@ on:
         description: 'Max pages to generate'
         default: '50'
   schedule:
-    - cron: "0 0,6,12,18 * * *"   # 4x daily every 6h — spreads 100k daily token budget safely
+    - cron: "0 0,5,10,15,20 * * *"  # 5x daily every 5h (UTC) = 10am,3pm,8pm,1am,6am Brisbane
 
 jobs:
   programmatic:
