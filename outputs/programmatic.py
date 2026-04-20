@@ -324,6 +324,8 @@ Return JSON exactly:
       "name": "{tool_a}",
       "description": "<2-3 sentence accurate description>",
       "score": <4.0-5.0>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color e.g. #FF5500>",
       "pros": ["<pro1>", "<pro2>", "<pro3>"],
       "cons": ["<con1>", "<con2>"],
       "pricing": "<real pricing tier summary>",
@@ -334,6 +336,8 @@ Return JSON exactly:
       "name": "{tool_b}",
       "description": "<2-3 sentence accurate description>",
       "score": <3.0-4.5>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color>",
       "pros": ["<pro1>", "<pro2>", "<pro3>"],
       "cons": ["<con1>", "<con2>"],
       "pricing": "<real pricing tier summary>",
@@ -390,6 +394,8 @@ Return JSON exactly:
       "name": "<alternative name>",
       "description": "<why it beats {target_tool} for certain buyers>",
       "score": <4.0-5.0>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color e.g. #FF5500>",
       "pros": ["<pro1>", "<pro2>", "<pro3>"],
       "cons": ["<con1>", "<con2>"],
       "pricing": "<starting price>",
@@ -437,6 +443,8 @@ Return JSON:
       "name": "{tool}",
       "description": "<what {tool} does and who it's for>",
       "score": <4.0-5.0>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color e.g. #FF5500>",
       "pros": ["<value pro1>", "<value pro2>", "<pricing pro>"],
       "cons": ["<pricing con1>", "<pricing con2>"],
       "pricing": "<detailed pricing with plan names and prices>",
@@ -447,6 +455,8 @@ Return JSON:
       "name": "Best {tool} Alternative",
       "description": "<cheaper or better-value alternative>",
       "score": <3.5-4.5>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color>",
       "pros": ["<cheaper>", "<comparable features>"],
       "cons": ["<less brand recognition>"],
       "pricing": "<starting price>",
@@ -500,6 +510,8 @@ Return JSON:
       "name": "<tool>",
       "description": "<why it's great for {audience}>",
       "score": <3.8-5.0>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color>",
       "pros": ["<pro1>", "<pro2>", "<pro3>"],
       "cons": ["<con1>"],
       "pricing": "<starting price or free tier>",
@@ -547,6 +559,8 @@ Return JSON:
       "name": "{tool}",
       "description": "<what {tool} does, who it's for, why buyers search for discounts>",
       "score": <4.0-5.0>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color e.g. #FF5500>",
       "pros": ["<free trial available>", "<annual plan discount>", "<nonprofit/startup pricing>"],
       "cons": ["<no public promo codes>", "<limited discount windows>"],
       "pricing": "<starter plan price and annual savings>",
@@ -557,6 +571,8 @@ Return JSON:
       "name": "Best {tool} Alternative",
       "description": "<cheaper alternative if {tool} is over budget>",
       "score": <3.5-4.5>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color>",
       "pros": ["<lower price>", "<similar features>", "<free plan available>"],
       "cons": ["<smaller ecosystem>"],
       "pricing": "<starting price>",
@@ -605,6 +621,8 @@ Return JSON:
       "name": "{tool}",
       "description": "<comprehensive 2-3 sentence description of what it does and its market position>",
       "score": <4.0-5.0>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color e.g. #FF5500>",
       "pros": ["<pro1>", "<pro2>", "<pro3>", "<pro4>"],
       "cons": ["<con1>", "<con2>", "<con3>"],
       "pricing": "<full pricing breakdown>",
@@ -615,6 +633,8 @@ Return JSON:
       "name": "Best {tool} Alternative",
       "description": "<main competitor and when to pick it instead>",
       "score": <3.5-4.5>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color>",
       "pros": ["<why it wins in some cases>", "<better price>"],
       "cons": ["<where it loses to {tool}>"],
       "pricing": "<starting price>",
@@ -664,6 +684,8 @@ Return JSON:
       "name": "{tool} Free",
       "description": "<exactly what is and isn't included in the free tier or trial>",
       "score": <4.0-5.0>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color e.g. #FF5500>",
       "pros": ["<what you get free>", "<free trial length>", "<no credit card required or not>"],
       "cons": ["<limits of free plan>", "<what's locked behind paid>"],
       "pricing": "Free tier available — paid plans from <price>/mo",
@@ -674,6 +696,8 @@ Return JSON:
       "name": "Best Free {tool} Alternative",
       "description": "<a genuinely free alternative with a more generous free tier>",
       "score": <3.5-4.5>,
+      "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
+      "logo_bg": "<brand hex color>",
       "pros": ["<more generous free plan>", "<no credit card>", "<open source if applicable>"],
       "cons": ["<fewer integrations>"],
       "pricing": "Free forever plan available",
@@ -703,6 +727,29 @@ Return JSON:
     if not result:
         return False
     return bool(_render_and_save(result, vertical))
+
+
+def _write_sitemap():
+    try:
+        domain = get("SITE_DOMAIN", "https://saaspare.org")
+        site_dir = Path("site/pages")
+        pages_path = Path("site/sitemap.xml")
+        pages_path.parent.mkdir(parents=True, exist_ok=True)
+        urls = [f"{domain}/"]
+        if site_dir.exists():
+            for f in sorted(site_dir.glob("*.html")):
+                if f.stem not in ("thanks", "verification"):
+                    urls.append(f"{domain}/pages/{f.name}")
+        lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+        for url in urls:
+            priority = "1.0" if url == f"{domain}/" else "0.8"
+            lines.append(f'  <url><loc>{url}</loc><changefreq>weekly</changefreq><priority>{priority}</priority></url>')
+        lines.append('</urlset>')
+        pages_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        log.info(f"Sitemap updated: {len(urls)} URLs written")
+    except Exception as e:
+        log.warning(f"Sitemap write failed: {e}")
 
 
 def _ping_google_sitemap():
@@ -795,6 +842,7 @@ def run_programmatic(max_pages: int = 500) -> int:
                 consecutive_failures += 1
                 log.warning(f"Page gen failed {args}: {e}")
 
+    _write_sitemap()
     if generated > 0:
         _ping_google_sitemap()
 

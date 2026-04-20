@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.email "bot@intentengine.local"
           git config user.name "IntentBot"
+          git pull --rebase --autostash origin main
           git add data/intent.db site/pages/ site/sitemap.xml site/_redirects || true
           git diff --staged --quiet || git commit -m "chore: programmatic SEO $(date -u +%Y-%m-%d) [skip ci]"
-          git pull --rebase origin main || true
           git push
