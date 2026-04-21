@@ -13,12 +13,18 @@ _lock = threading.Lock()
 _db_loaded = False
 
 DAILY_LIMITS = {
-    "cerebras_qwen": 900_000,  # qwen-3-235b: 1M TPD free tier, stop at 900k
-    "cerebras_8b":   900_000,  # llama3.1-8b: 1M TPD free tier, stop at 900k
-    "groq_70b":       90_000,
-    "groq_8b":        50_000,
-    "groq_3b":        80_000,
-    "openrouter":    200_000,
+    "cerebras_qwen":   900_000,
+    "cerebras_8b":     900_000,
+    "cerebras_qwen_2": 900_000,
+    "cerebras_8b_2":   900_000,
+    "groq_70b":         90_000,
+    "groq_8b":          50_000,
+    "groq_3b":          80_000,
+    "groq_70b_2":       90_000,
+    "groq_8b_2":        50_000,
+    "groq_3b_2":        80_000,
+    "openrouter":      200_000,
+    "openrouter_2":    200_000,
 }
 
 _TODAY = time.strftime("%Y-%m-%d")
@@ -72,12 +78,24 @@ def _refund(provider: str, tokens: int):
         _daily_tokens[provider] = max(0, _daily_tokens[provider] - tokens)
 
 
+def budget_available() -> bool:
+    """True if at least one configured provider still has daily quota remaining."""
+    with _lock:
+        _load_db_quota()
+    for provider, _, _ in _get_ordered_providers():
+        if _daily_tokens.get(provider, 0) < DAILY_LIMITS.get(provider, 0):
+            return True
+    return False
+
+
 def complete_json(prompt: str, system: str = "", estimated_tokens: int = 500) -> Optional[dict]:
     providers = _get_ordered_providers()
+    any_budget = False
     for provider, model, client_fn in providers:
         if not _try_charge(provider, estimated_tokens):
             log.debug(f"Budget exhausted for {provider}, trying next")
             continue
+        any_budget = True
         try:
             result = client_fn(prompt, system, model)
             return result
@@ -85,25 +103,103 @@ def complete_json(prompt: str, system: str = "", estimated_tokens: int = 500) ->
             _refund(provider, estimated_tokens)
             log.warning(f"LLM {provider} failed: {e}")
             continue
-    log.error("All LLM providers exhausted or failed")
+    if not any_budget:
+        log.info("All LLM providers at daily quota limit — nothing to do until tomorrow")
+    else:
+        log.error("All LLM providers failed (API errors, not quota)")
     return None
+
+
+def _make_cerebras_client(api_key: str):
+    def _client(prompt: str, system: str, model: str) -> Optional[dict]:
+        import httpx
+        headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+        messages = []
+        if system:
+            messages.append({"role": "system", "content": system})
+        messages.append({"role": "user", "content": prompt})
+        for attempt in range(3):
+            resp = httpx.post(
+                "https://api.cerebras.ai/v1/chat/completions",
+                json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 4000},
+                headers=headers, timeout=60,
+            )
+            if resp.status_code == 429:
+                retry_after = int(resp.headers.get("Retry-After", 15)) + 5
+                log.warning(f"Cerebras [{model}] rate limit — sleeping {retry_after}s (attempt {attempt+1}/3)")
+                time.sleep(retry_after)
+                continue
+            resp.raise_for_status()
+            return _parse_json_response(resp.json()["choices"][0]["message"]["content"])
+        raise Exception(f"Cerebras [{model}] rate limit exceeded after 3 retries")
+    return _client
+
+
+def _make_groq_client(api_key: str):
+    def _client(prompt: str, system: str, model: str) -> Optional[dict]:
+        from groq import Groq, RateLimitError
+        client = Groq(api_key=api_key)
+        messages = []
+        if system:
+            messages.append({"role": "system", "content": system})
+        messages.append({"role": "user", "content": prompt})
+        for attempt in range(5):
+            try:
+                resp = client.chat.completions.create(
+                    model=model, messages=messages, temperature=0.1,
+                    max_tokens=4000, response_format={"type": "json_object"},
+                )
+                return json.loads(resp.choices[0].message.content)
+            except RateLimitError as e:
+                wait = _parse_groq_retry_seconds(str(e)) + 10.0
+                log.warning(f"Groq [{model}] rate limit — sleeping {wait:.1f}s (attempt {attempt+1}/5)")
+                time.sleep(wait)
+            except Exception:
+                raise
+        raise Exception(f"Groq [{model}] rate limit exceeded after 5 retries")
+    return _client
+
+
+def _make_openrouter_client(api_key: str):
+    def _client(prompt: str, system: str, model: str) -> Optional[dict]:
+        import httpx
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://saaspare.org",
+        }
+        messages = []
+        if system:
+            messages.append({"role": "system", "content": system})
+        messages.append({"role": "user", "content": prompt})
+        resp = httpx.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 4000},
+            headers=headers, timeout=60,
+        )
+        resp.raise_for_status()
+        return _parse_json_response(resp.json()["choices"][0]["message"]["content"])
+    return _client
 
 
 def _get_ordered_providers():
     providers = []
-    cerebras_key = get("CEREBRAS_API_KEY")
-    if cerebras_key:
-        # Cerebras first — 1M tokens/day each, 10x more than Groq free tier
-        providers.append(("cerebras_qwen", "qwen-3-235b-a22b-instruct-2507", _cerebras_client))
-        providers.append(("cerebras_8b",   "llama3.1-8b",                    _cerebras_client))
-    groq_key = get("GROQ_API_KEY")
-    if groq_key:
-        providers.append(("groq_70b", "llama-3.3-70b-versatile", _groq_client))
-        providers.append(("groq_8b",  "llama-3.1-8b-instant",    _groq_client))
-        providers.append(("groq_3b",  "llama-3.2-3b-preview",    _groq_client))
-    openrouter_key = get("OPENROUTER_API_KEY")
-    if openrouter_key:
-        providers.append(("openrouter", "meta-llama/llama-3.3-70b-instruct:free", _openrouter_client))
+    for suffix, env_suffix in [("", ""), ("_2", "_2")]:
+        cerebras_key = get(f"CEREBRAS_API_KEY{env_suffix}")
+        if cerebras_key:
+            client = _make_cerebras_client(cerebras_key)
+            providers.append((f"cerebras_qwen{suffix}", "llama3.3-70b", client))
+            providers.append((f"cerebras_8b{suffix}",   "llama3.1-8b",  client))
+        groq_key = get(f"GROQ_API_KEY{env_suffix}")
+        if groq_key:
+            client = _make_groq_client(groq_key)
+            providers.append((f"groq_70b{suffix}", "llama-3.3-70b-versatile", client))
+            providers.append((f"groq_8b{suffix}",  "llama-3.1-8b-instant",    client))
+            providers.append((f"groq_3b{suffix}",  "llama-3.2-3b-preview",    client))
+        openrouter_key = get(f"OPENROUTER_API_KEY{env_suffix}")
+        if openrouter_key:
+            client = _make_openrouter_client(openrouter_key)
+            providers.append((f"openrouter{suffix}", "meta-llama/llama-3.3-70b-instruct:free", client))
     return providers
 
 
@@ -132,75 +228,3 @@ def _parse_groq_retry_seconds(error_message: str) -> float:
     return 10.0
 
 
-def _groq_client(prompt: str, system: str, model: str) -> Optional[dict]:
-    from groq import Groq, RateLimitError
-    client = Groq(api_key=get("GROQ_API_KEY"))
-    messages = []
-    if system:
-        messages.append({"role": "system", "content": system})
-    messages.append({"role": "user", "content": prompt})
-    for attempt in range(5):
-        try:
-            resp = client.chat.completions.create(
-                model=model,
-                messages=messages,
-                temperature=0.1,
-                max_tokens=4000,
-                response_format={"type": "json_object"},
-            )
-            return json.loads(resp.choices[0].message.content)
-        except RateLimitError as e:
-            wait = _parse_groq_retry_seconds(str(e)) + 10.0
-            log.warning(f"Groq [{model}] rate limit — sleeping {wait:.1f}s (attempt {attempt+1}/5)")
-            time.sleep(wait)
-        except Exception:
-            raise
-    raise Exception(f"Groq [{model}] rate limit exceeded after 5 retries")
-
-
-def _cerebras_client(prompt: str, system: str, model: str) -> Optional[dict]:
-    import httpx
-    headers = {
-        "Authorization": f"Bearer {get('CEREBRAS_API_KEY')}",
-        "Content-Type": "application/json",
-    }
-    messages = []
-    if system:
-        messages.append({"role": "system", "content": system})
-    messages.append({"role": "user", "content": prompt})
-    for attempt in range(3):
-        resp = httpx.post(
-            "https://api.cerebras.ai/v1/chat/completions",
-            json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 4000},
-            headers=headers,
-            timeout=60,
-        )
-        if resp.status_code == 429:
-            retry_after = int(resp.headers.get("Retry-After", 15)) + 5
-            log.warning(f"Cerebras [{model}] rate limit — sleeping {retry_after}s (attempt {attempt+1}/3)")
-            time.sleep(retry_after)
-            continue
-        resp.raise_for_status()
-        return _parse_json_response(resp.json()["choices"][0]["message"]["content"])
-    raise Exception(f"Cerebras [{model}] rate limit exceeded after 3 retries")
-
-
-def _openrouter_client(prompt: str, system: str, model: str) -> Optional[dict]:
-    import httpx
-    headers = {
-        "Authorization": f"Bearer {get('OPENROUTER_API_KEY')}",
-        "Content-Type": "application/json",
-        "HTTP-Referer": "https://saaspare.org",
-    }
-    messages = []
-    if system:
-        messages.append({"role": "system", "content": system})
-    messages.append({"role": "user", "content": prompt})
-    resp = httpx.post(
-        "https://openrouter.ai/api/v1/chat/completions",
-        json={"model": model, "messages": messages, "temperature": 0.1, "max_tokens": 4000},
-        headers=headers,
-        timeout=60,
-    )
-    resp.raise_for_status()
-    return _parse_json_response(resp.json()["choices"][0]["message"]["content"])

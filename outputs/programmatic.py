@@ -10,7 +10,7 @@ from pathlib import Path
 
 from core.db import db
 from core.logger import log
-from llm.router import complete_json
+from llm.router import complete_json, budget_available
 from outputs.seo_page import _render_and_save
 from core.secrets import get
 from publisher.affiliate_registry import get_all_redirects
@@ -872,9 +872,17 @@ def run_programmatic(max_pages: int = 500) -> int:
 
     tasks.sort(key=_task_priority)
 
+    if not budget_available():
+        log.info("No LLM quota remaining for today — skipping page generation, resumes automatically tomorrow")
+        from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage, _rebuild_pages_index, _ping_indexnow
+        _rebuild_sitemap(Path("site"))
+        _rebuild_homepage(Path("site"))
+        _rebuild_pages_index(Path("site"))
+        return 0
+
     generated = 0
     consecutive_failures = 0
-    MAX_CONSECUTIVE_FAILURES = 5
+    MAX_CONSECUTIVE_FAILURES = 8
 
     with ThreadPoolExecutor(max_workers=1) as executor:
         futures = {
@@ -882,11 +890,17 @@ def run_programmatic(max_pages: int = 500) -> int:
             for fn, args in tasks
         }
         for future in as_completed(futures):
-            if generated >= max_pages or consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
+            if generated >= max_pages:
                 for f in futures:
                     f.cancel()
-                if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
-                    log.warning("5 consecutive LLM failures — quota exhausted, stopping run early")
+                break
+            if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
+                for f in futures:
+                    f.cancel()
+                if not budget_available():
+                    log.info("Daily LLM quota exhausted — stopping cleanly, resumes tomorrow")
+                else:
+                    log.warning(f"{MAX_CONSECUTIVE_FAILURES} consecutive API errors — stopping run early")
                 break
             args = futures[future]
             try:
@@ -895,6 +909,11 @@ def run_programmatic(max_pages: int = 500) -> int:
                     generated += 1
                     consecutive_failures = 0
                     log.info(f"[{generated}/{max_pages}] Generated: {args}")
+                elif not budget_available():
+                    log.info("Daily LLM quota exhausted mid-run — stopping cleanly")
+                    for f in futures:
+                        f.cancel()
+                    break
                 else:
                     consecutive_failures += 1
             except Exception as e:
