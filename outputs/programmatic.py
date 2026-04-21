@@ -842,7 +842,10 @@ def run_programmatic(max_pages: int = 500) -> int:
                 consecutive_failures += 1
                 log.warning(f"Page gen failed {args}: {e}")
 
-    _write_sitemap()
+    from pathlib import Path as _Path
+    from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage
+    _rebuild_sitemap(_Path("site"))
+    _rebuild_homepage(_Path("site"))
     if generated > 0:
         _ping_google_sitemap()
 

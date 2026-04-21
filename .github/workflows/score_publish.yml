@@ -23,6 +23,11 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
+      - name: Init database
+        run: uv run engine init
+        env:
+          DB_PATH: data/intent.db
+
       - name: Score signals
         run: uv run engine score
         continue-on-error: true
@@ -88,6 +93,7 @@ jobs:
         run: |
           git config user.email "bot@intentengine.local"
           git config user.name "IntentBot"
-          git add data/intent.db outputs/generated/ site/pages/ || true
+          git pull --rebase --autostash origin main
+          git add data/intent.db outputs/generated/ site/pages/ site/index.html site/sitemap.xml || true
           git diff --staged --quiet || git commit -m "chore: score+publish $(date -u +%Y-%m-%d) [skip ci]"
           git push
