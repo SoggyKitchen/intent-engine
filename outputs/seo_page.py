@@ -62,19 +62,36 @@ def _affiliate_url(tool_name: str, base_url: str, vertical: str = "", page_type:
     return base_url
 
 
-def _get_related_pages(vertical: str, current_slug: str, limit: int = 6) -> list[dict]:
+def _get_related_pages(vertical: str, current_slug: str, limit: int = 12) -> list[dict]:
     try:
         domain = get("SITE_DOMAIN", "https://saaspare.org")
         with db() as conn:
-            rows = conn.execute("""
+            same_vert = conn.execute("""
                 SELECT title FROM outputs
                 WHERE vertical = ? AND type = 'seo_page' AND title NOT LIKE ?
                 ORDER BY created_at DESC LIMIT ?
             """, (vertical, f"%{current_slug[:20]}%", limit)).fetchall()
-        result = []
-        for row in rows:
-            s = slugify(row[0])
-            result.append({"title": row[0], "url": f"{domain}/pages/{s}"})
+            result = []
+            seen: set[str] = set()
+            for row in same_vert:
+                s = slugify(row[0])
+                if s not in seen:
+                    seen.add(s)
+                    result.append({"title": row[0], "url": f"{domain}/pages/{s}"})
+            if len(result) < limit:
+                needed = limit - len(result)
+                other_vert = conn.execute("""
+                    SELECT title FROM outputs
+                    WHERE vertical != ? AND type = 'seo_page' AND title NOT LIKE ?
+                    ORDER BY created_at DESC LIMIT ?
+                """, (vertical, f"%{current_slug[:20]}%", needed * 3)).fetchall()
+                for row in other_vert:
+                    if len(result) >= limit:
+                        break
+                    s = slugify(row[0])
+                    if s not in seen:
+                        seen.add(s)
+                        result.append({"title": row[0], "url": f"{domain}/pages/{s}"})
         return result
     except Exception:
         return []

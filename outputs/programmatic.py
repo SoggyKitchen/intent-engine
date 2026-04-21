@@ -370,6 +370,14 @@ Return JSON exactly:
     {{"question": "Which is cheaper, {tool_a} or {tool_b}?", "answer": "<pricing comparison>"}},
     {{"question": "Can I switch from {tool_b} to {tool_a}?", "answer": "<migration answer>"}}
   ],
+  "deep_sections": [
+    {{"heading": "Feature Deep Dive", "content": "<4-6 sentences comparing specific features of {tool_a} vs {tool_b} in detail, naming real feature names>"}},
+    {{"heading": "Pricing Breakdown", "content": "<detailed pricing comparison with specific plan names and dollar amounts for both tools>"}},
+    {{"heading": "Who Should Use {tool_a}", "content": "<3-4 sentences describing the ideal customer profile, team size, budget and use case for {tool_a}>"}},
+    {{"heading": "Who Should Use {tool_b}", "content": "<3-4 sentences describing the ideal customer profile, team size, budget and use case for {tool_b}>"}},
+    {{"heading": "Migration & Setup", "content": "<3-4 sentences on how hard it is to switch between {tool_a} and {tool_b}, what data exports are available, and typical onboarding time>"}},
+    {{"heading": "Our Testing Methodology", "content": "<2-3 sentences explaining how SaaSpare evaluated these tools — what criteria, how many hours tested, what data sources were used>"}}
+  ],
   "cta_text": "Ready to try the winner? Start with a free trial and see the difference yourself.",
   "cta_button": "Start Free Trial",
   "primary_keyword": "{tool_a} vs {tool_b}",
@@ -487,6 +495,13 @@ Return JSON:
     {{"question": "How much does {tool} cost per month?", "answer": "<specific pricing>"}},
     {{"question": "Does {tool} have a free plan?", "answer": "<free tier details>"}},
     {{"question": "Is {tool} worth the price?", "answer": "<honest ROI assessment>"}}
+  ],
+  "deep_sections": [
+    {{"heading": "Plan Breakdown", "content": "<detailed breakdown of each {tool} pricing tier — what's included, user limits, feature gates and who each plan suits>"}},
+    {{"heading": "Hidden Costs", "content": "<what buyers don't know about extra costs: overages, add-ons, implementation fees, per-seat minimums, annual commitment penalties>"}},
+    {{"heading": "How to Get a Discount", "content": "<negotiation tips: annual vs monthly savings %, startup programs, nonprofit pricing, end-of-quarter deals, how to ask for a discount>"}},
+    {{"heading": "Is It Worth It?", "content": "<ROI analysis for different company sizes: solo/startup, SMB (10-50 seats), mid-market (50-200), enterprise — with real numbers where possible>"}},
+    {{"heading": "Competitors at This Price Point", "content": "<2-3 named alternatives with their starting prices, and a one-sentence reason to pick each over {tool}>"}}
   ],
   "cta_text": "Try {tool} free for 14 days — no credit card required.",
   "cta_button": "Start Free Trial",
@@ -887,9 +902,10 @@ def run_programmatic(max_pages: int = 500) -> int:
                 log.warning(f"Page gen failed {args}: {e}")
 
     from pathlib import Path as _Path
-    from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage
+    from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage, _rebuild_pages_index
     _rebuild_sitemap(_Path("site"))
     _rebuild_homepage(_Path("site"))
+    _rebuild_pages_index(_Path("site"))
     if generated > 0:
         _ping_google_sitemap()
 

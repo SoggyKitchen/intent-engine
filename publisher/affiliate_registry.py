@@ -352,6 +352,57 @@ def get_links_for_vertical(vertical: str, tool_names: list[str]) -> dict[str, st
     return result
 
 
+NETWORK_SIGNUPS = {
+    "impact": {
+        "name": "Impact.com Marketplace",
+        "signup_url": "https://impact.com/affiliates/",
+        "description": "Single signup — access HubSpot, Brevo, Shopify, Semrush, DocuSign, NordLayer, Monday.com, ExpressVPN and 2000+ others",
+        "link_format": "https://impact.sjv.io/[PROGRAM_ID]?irgwc=1",
+    },
+    "partnerstack": {
+        "name": "PartnerStack Marketplace",
+        "signup_url": "https://app.partnerstack.com/",
+        "description": "Single signup — access JetBrains, Retool, ActiveCampaign, Klaviyo, ClickUp, Notion, Pipedrive, 1Password, Jasper AI and most SaaS tools",
+        "link_format": "https://partnerstack.com/[PROGRAM_SLUG]?via=[YOUR_REF_CODE]",
+    },
+    "shareasale": {
+        "name": "ShareASale",
+        "signup_url": "https://www.shareasale.com/",
+        "description": "Easy approval — access FreshBooks, Moz Pro, SpyFu, Rankmath and many SaaS tools",
+        "link_format": "https://shareasale.com/r.cfm?b=[BANNER_ID]&u=[USER_ID]&m=[MERCHANT_ID]",
+    },
+}
+
+
+def get_network_signups() -> list[dict]:
+    networks_used: set[str] = set()
+    for programs in PROGRAMS.values():
+        for p in programs:
+            net = p.get("network", "direct")
+            if net in NETWORK_SIGNUPS:
+                networks_used.add(net)
+    result = []
+    for net_key in ("impact", "partnerstack", "shareasale"):
+        if net_key in networks_used:
+            entry = dict(NETWORK_SIGNUPS[net_key])
+            entry["key"] = net_key
+            tools_on_network = [
+                p["name"]
+                for programs in PROGRAMS.values()
+                for p in programs
+                if p.get("network") == net_key
+            ]
+            entry["tools"] = sorted(set(tools_on_network))
+            result.append(entry)
+    return result
+
+
+for _programs in PROGRAMS.values():
+    for _p in _programs:
+        _net = _p.get("network", "direct")
+        _p["network_signup"] = NETWORK_SIGNUPS[_net]["signup_url"] if _net in NETWORK_SIGNUPS else None
+
+
 def get_best_programs_for_vertical(vertical: str, top_n: int = 3) -> list[dict]:
     programs = PROGRAMS.get(vertical, [])
     def score(p):
