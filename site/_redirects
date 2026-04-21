@@ -83,3 +83,6 @@
 /go/screaming-frog https://www.screamingfrog.co.uk?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/frase-io https://www.frase.io?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/rankmath-pro https://rankmath.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+
+/pages/ /pages/index.html 200
+/pages /pages/index.html 200
