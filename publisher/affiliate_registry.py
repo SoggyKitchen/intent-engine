@@ -335,7 +335,7 @@ def get_go_url(tool_name: str) -> str | None:
 
 
 def get_all_redirects() -> dict[str, str]:
-    return dict(_ALL_AFFILIATE_URLS)
+    return dict(_ALL_HOMEPAGES)
 
 
 def get_links_for_vertical(vertical: str, tool_names: list[str]) -> dict[str, str]:

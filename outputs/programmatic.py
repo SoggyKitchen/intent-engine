@@ -300,9 +300,21 @@ def _already_generated(slug_hint: str) -> bool:
                 "SELECT COUNT(*) FROM outputs WHERE title LIKE ?",
                 (f"%{slug_hint}%",)
             ).fetchone()
-        return row[0] > 0
+        if row[0] > 0:
+            return True
     except Exception:
-        return False
+        pass
+    try:
+        pages_dir = Path("site/pages")
+        if pages_dir.exists():
+            words = [w.lower() for w in slug_hint.split() if len(w) > 1]
+            for f in pages_dir.glob("*.html"):
+                name = f.stem.lower()
+                if all(w in name for w in words):
+                    return True
+    except Exception:
+        pass
+    return False
 
 
 def _generate_comparison_page(tool_a: str, tool_b: str, vertical: str) -> bool:
@@ -768,7 +780,9 @@ def _write_redirects_file():
         redirects = get_all_redirects()
         lines = []
         for slug, url in redirects.items():
-            lines.append(f"/go/{slug} {url} 302")
+            sep = "&" if "?" in url else "?"
+            tracked_url = f"{url}{sep}utm_source=saaspare&utm_medium=affiliate&utm_campaign=go"
+            lines.append(f"/go/{slug} {tracked_url} 302")
         path = Path("site/_redirects")
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -777,10 +791,40 @@ def _write_redirects_file():
         log.warning(f"Failed to write _redirects: {e}")
 
 
+def _sync_db_from_filesystem():
+    try:
+        import re
+        pages_dir = Path("site/pages")
+        if not pages_dir.exists():
+            return
+        with db() as conn:
+            existing = {row[0] for row in conn.execute("SELECT title FROM outputs").fetchall()}
+            inserted = 0
+            for f in pages_dir.glob("*.html"):
+                html = f.read_text(encoding="utf-8", errors="ignore")
+                m = re.search(r"<title>([^<]+)</title>", html, re.IGNORECASE)
+                if not m:
+                    continue
+                title = m.group(1).strip()
+                if title and title not in existing:
+                    conn.execute(
+                        "INSERT OR IGNORE INTO outputs (id, type, vertical, title, file_path, created_at) VALUES (?, ?, ?, ?, ?, strftime('%s','now'))",
+                        (f.stem, "programmatic", "unknown", title, str(f))
+                    )
+                    existing.add(title)
+                    inserted += 1
+            conn.commit()
+        if inserted:
+            log.info(f"_sync_db_from_filesystem: synced {inserted} existing HTML pages into DB")
+    except Exception as e:
+        log.warning(f"_sync_db_from_filesystem failed: {e}")
+
+
 def run_programmatic(max_pages: int = 500) -> int:
     from core.db import migrate
     migrate()
 
+    _sync_db_from_filesystem()
     _write_redirects_file()
 
     domain = get("SITE_DOMAIN", "https://saaspare.org")

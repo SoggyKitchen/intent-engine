@@ -5,7 +5,7 @@ on:
     inputs:
       max_pages:
         description: 'Max pages to generate'
-        default: '50'
+        default: '200'
   schedule:
     - cron: "0 0,5,10,15,20 * * *"  # 5x daily every 5h (UTC) = 10am,3pm,8pm,1am,6am Brisbane
 
@@ -30,7 +30,7 @@ jobs:
           DB_PATH: data/intent.db
 
       - name: Run programmatic SEO
-        run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '50' }}
+        run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '200' }}
         continue-on-error: true
         env:
           DB_PATH: data/intent.db
