@@ -39,7 +39,6 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
-          CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}
           GH_PAT: ${{ secrets.GH_PAT }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
           GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
