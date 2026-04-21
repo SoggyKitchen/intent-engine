@@ -13,18 +13,14 @@ _lock = threading.Lock()
 _db_loaded = False
 _TODAY = time.strftime("%Y-%m-%d")
 
-_CEREBRAS_KEYS_ENV = [
-    "CEREBRAS_API_KEY",
-    "CEREBRAS_API_KEY_2",
-    "CEREBRAS_API_KEY_3",
-    "CEREBRAS_API_KEY_4",
-]
-_GROQ_KEYS_ENV = [
-    "GROQ_API_KEY",
-    "GROQ_API_KEY_2",
-    "GROQ_API_KEY_3",
-    "GROQ_API_KEY_4",
-]
+def _get_all_keys(base_name: str) -> list[tuple[str, str]]:
+    """Dynamically get all API keys (GROQ_API_KEY, GROQ_API_KEY_2, etc.)"""
+    keys = []
+    for suffix in ["", "_2", "_3", "_4", "_5", "_6", "_7", "_8"]:
+        key = get(f"{base_name}{suffix}")
+        if key:
+            keys.append((f"{base_name}{suffix}", key))
+    return keys
 
 _CEREBRAS_MODELS = [
     ("qwen-3-235b-a22b-instruct-2507", 950_000),
@@ -130,20 +126,16 @@ def complete_json(prompt: str, system: str = "", estimated_tokens: int = 4000) -
 
 def _get_ordered_providers():
     providers = []
-    for kidx, env_var in enumerate(_CEREBRAS_KEYS_ENV, 1):
-        key = get(env_var)
-        if not key:
-            continue
-        client = _make_cerebras_client(key)
+    cerebras_keys = _get_all_keys("CEREBRAS_API_KEY")
+    for kidx, (_, api_key) in enumerate(cerebras_keys, 1):
+        client = _make_cerebras_client(api_key)
         for model, limit in _CEREBRAS_MODELS:
             pid = _pid("cerebras", kidx, model)
             DAILY_LIMITS[pid] = limit
             providers.append((pid, model, client))
-    for kidx, env_var in enumerate(_GROQ_KEYS_ENV, 1):
-        key = get(env_var)
-        if not key:
-            continue
-        client = _make_groq_client(key)
+    groq_keys = _get_all_keys("GROQ_API_KEY")
+    for kidx, (_, api_key) in enumerate(groq_keys, 1):
+        client = _make_groq_client(api_key)
         for model, limit in _GROQ_MODELS:
             pid = _pid("groq", kidx, model)
             DAILY_LIMITS[pid] = limit
