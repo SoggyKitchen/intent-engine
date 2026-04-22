@@ -213,15 +213,18 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
 def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: str = "") -> str:
     tools = data.get("tools", [])
     reviews = []
+    rating_sum = 0
     for i, t in enumerate(tools):
+        rating = round(5 - i * 0.3, 1)
+        rating_sum += rating
         reviews.append({
             "@type": "Review",
-            "itemReviewed": {"@type": "SoftwareApplication", "name": t.get("name", ""),
-                             "applicationCategory": "BusinessApplication"},
-            "reviewRating": {"@type": "Rating", "ratingValue": round(5 - i * 0.3, 1), "bestRating": 5},
+            "name": f"Review of {t.get('name', '')}",
+            "reviewRating": {"@type": "Rating", "ratingValue": rating, "bestRating": 5},
             "author": {"@type": "Organization", "name": "SaaSpare"},
             "reviewBody": t.get("description", "")[:400],
         })
+    avg_rating = round(rating_sum / len(tools), 1) if tools else 5
     schema = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -234,6 +237,7 @@ def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: s
         "publisher": {"@type": "Organization", "name": "SaaSpare",
                       "logo": {"@type": "ImageObject",
                                "url": f"{get('SITE_DOMAIN', 'https://saaspare.org')}/logo.png"}},
+        "aggregateRating": {"@type": "AggregateRating", "ratingValue": avg_rating, "bestRating": 5, "ratingCount": len(tools)},
         "review": reviews,
     }
     if data.get("faqs"):
