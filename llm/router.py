@@ -86,6 +86,10 @@ def budget_available() -> bool:
 
 def complete_json(prompt: str, system: str = "", estimated_tokens: int = 4000) -> Optional[dict]:
     providers = _get_ordered_providers()
+    with _lock:
+        _load_db_quota()
+    quota_status = {p[0]: f"{_daily_tokens.get(p[0], 0)}/{DAILY_LIMITS.get(p[0], 0)}" for p in providers}
+    log.debug(f"Token usage: {quota_status}")
     any_budget = False
     for provider, model, client_fn in providers:
         if not _try_charge(provider, estimated_tokens):
@@ -120,6 +124,8 @@ def _get_ordered_providers():
             pid = _pid(kidx, model)
             DAILY_LIMITS[pid] = limit
             providers.append((pid, model, client))
+    if providers:
+        log.info(f"Discovered {len(providers)} providers: {[p[0] for p in providers]}")
     return providers
 
 

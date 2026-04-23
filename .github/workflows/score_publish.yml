@@ -39,7 +39,7 @@ jobs:
           CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
           CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          SCORE_BATCH_SIZE: "300"
+          SCORE_BATCH_SIZE: "50"
           LOG_LEVEL: INFO
           MONETIZATION_MODE: ${{ secrets.MONETIZATION_MODE }}
 
