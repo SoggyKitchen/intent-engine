@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All SaaS Comparisons & Guides | SaaSpare</title>
-<meta name="description" content="Browse 55 B2B SaaS comparison pages, pricing guides, reviews and alternatives — all free.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://saaspare.org/pages/">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- dark-theme-v1 -->
-<style>
+"""
+Replaces the old light-theme <style> block in all site/pages/*.html files
+with the new dark glassmorphism theme. Also upgrades nav and adds Google Fonts.
+Idempotent — skips already-patched files (marker: <!-- dark-theme-v1 -->).
+Run: .venv/Scripts/python scripts/retheme_pages.py
+"""
+import re
+from pathlib import Path
+
+PAGES = Path("site/pages")
+MARKER = "<!-- dark-theme-v1 -->"
+
+GOOGLE_FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">'
+
+NEW_CSS = """<style>
   :root{--accent:#e94560;--glass:rgba(255,255,255,.038);--border:rgba(255,255,255,.08);--text:rgba(255,255,255,.85);--muted:rgba(255,255,255,.45);--green:#34d399;--red:#e94560}
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#080810;color:var(--text);line-height:1.6}
@@ -113,102 +116,131 @@
   .exit-card-v2 input::placeholder{color:rgba(255,255,255,.3)}
   .exit-card-v2 button[type=submit]{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:.65rem 1.2rem;border-radius:8px;font-weight:700;cursor:pointer}
   @media(max-width:600px){.pros-cons{grid-template-columns:1fr}h1{font-size:1.5rem}nav a.hide-mobile{display:none}.email-row{flex-direction:column}.email-row input,.email-row button{width:100%}}
-</style>
-</head>
-<body>
-<nav>
-<a href="https://saaspare.org" class="logo">
+</style>"""
+
+OLD_STYLE_PATTERN = re.compile(
+    r'<style>\s*:root\{--primary:#1a1a2e.*?</style>',
+    re.DOTALL
+)
+
+OLD_NAV_PATTERN = re.compile(
+    r'<nav>.*?</nav>',
+    re.DOTALL
+)
+
+def make_nav(html: str) -> str:
+    """Extract existing nav links and rebuild with new dark nav."""
+    # Find all nav links except first (logo)
+    nav_match = OLD_NAV_PATTERN.search(html)
+    if not nav_match:
+        return html
+    old_nav = nav_match.group(0)
+    # Extract hrefs/labels from old nav <a> tags, skip the first logo link
+    links = re.findall(r'<a\s+href="([^"]+)"[^>]*>([^<]+)</a>', old_nav)
+    # Build secondary nav links (skip logo-like ones)
+    secondary = ""
+    for href, label in links[1:]:
+        if label.strip():
+            secondary += f'<a href="{href}">{label.strip()}</a>'
+    # Determine logo href (first link)
+    logo_href = links[0][0] if links else "/"
+    new_nav = f"""<nav>
+<a href="{logo_href}" class="logo">
   <div class="logo-bars"><span></span><span></span><span></span></div>
   <div class="logo-text">Saa<em>Spare</em></div>
 </a>
-<a href="https://saaspare.org/pages/">All Comparisons</a><a href="https://saaspare.org/about.html">About</a>
-</nav>
-<div class="hero">
-  <h1>All SaaS Comparisons & Guides</h1>
-  <p>55 pages covering pricing, comparisons, reviews and alternatives</p>
-</div>
-<div class="container">
+{secondary}
+</nav>"""
+    return html[:nav_match.start()] + new_nav + html[nav_match.end():]
 
-      <section class="page-group">
-        <h2>Comparisons <span class="count">(15)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-clearscope-which-is-better-in-2026">Ahrefs Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-frase-io-which-is-better-in-2026">Ahrefs Vs Frase Io Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-mangools-which-is-better-in-2026">Ahrefs Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-moz-pro-which-is-better-in-2026">Ahrefs Vs Moz Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-rankmath-pro-which-is-better-in-2026">Ahrefs Vs Rankmath Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-se-ranking-which-is-better-in-2026">Ahrefs Vs Se Ranking Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-semrush-which-is-better-in-2026">Ahrefs Vs Semrush Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-spyfu-which-is-better-in-2026">Ahrefs Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-surfer-seo-which-is-better-in-2026">Ahrefs Vs Surfer Seo Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-clearscope-which-is-better-in-2026">Semrush Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-mangools-which-is-better-in-2026">Semrush Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026">Semrush Vs Moz Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-se-ranking-which-is-better-in-2026">Semrush Vs Se Ranking Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-spyfu-which-is-better-in-2026">Semrush Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-surfer-seo-which-is-better-in-2026">Semrush Vs Surfer Seo Which Is Better In</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Pricing Guides <span class="count">(37)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/1password-pricing-2026-plans-costs-what-you-actually-pay">1Password Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay">Activecampaign Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay">Ahrefs Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay">Amplitude Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/asana-pricing-2026-plans-costs-what-you-actually-pay">Asana Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay">Bamboohr Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay">Bigcommerce Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay">Clearscope Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay">Clickup Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay">Copy Ai Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay">Datadog Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/deel-pricing-2026-plans-costs-what-you-actually-pay">Deel Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay">Digitalocean Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay">Docusign Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay">Freshbooks Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay">Gusto Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay">Hubspot Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay">Jasper Ai Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/linear-pricing-2026-plans-costs-what-you-actually-pay">Linear Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay">Mixpanel Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay">Monday Com Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay">Moz Pro Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay">Nordlayer Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay">Notion Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay">Pandadoc Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay">Pipedrive Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay">Ramp Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay">Rippling Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay">Salesforce Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay">Se Ranking Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay">Semrush Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay">Shopify Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay">Surfer Seo Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay">Vultr Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/workable-pricing-2026-plans-costs-what-you-actually-pay">Workable Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay">Xero Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay">Zoom Pricing</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Best-Of Lists <span class="count">(1)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/best-devops-tools-for-security-compliance-in-2025">Best Devops Tools For Security Compliance In</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Other Pages <span class="count">(2)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/index">Index</a></li>
-          <li><a href="https://saaspare.org/pages/saas-roi-calculator">Saas Roi Calculator</a></li>
-        </ul>
-      </section>
-  <footer>
-    <p>Last updated: April 24, 2026 &nbsp;·&nbsp;
-    <a href="https://saaspare.org/about.html">About</a> &nbsp;·&nbsp;
-    <a href="https://saaspare.org/privacy.html">Privacy</a></p>
-  </footer>
-</div>
-</body>
-</html>
+
+def upgrade_breadcrumb(html: str) -> str:
+    """Wrap breadcrumb + h1 + subtitle in page-hero div if not already."""
+    if 'class="page-hero"' in html:
+        return html
+    # Find breadcrumb div and wrap it with page-hero through subtitle
+    pattern = re.compile(
+        r'(<div class="container">)\s*(<p class="breadcrumb">.*?</p>)\s*(<h1>.*?</h1>)\s*(<p class="subtitle">.*?</p>)',
+        re.DOTALL
+    )
+    def wrap(m):
+        return f'<div class="page-hero"><div class="container">\n{m.group(2)}\n{m.group(3)}\n{m.group(4)}\n</div></div>\n<div class="container">'
+    result = pattern.sub(wrap, html, count=1)
+    return result
+
+
+def patch(html: str) -> str | None:
+    if MARKER in html:
+        return None
+    # Replace old style block
+    if not OLD_STYLE_PATTERN.search(html):
+        return None  # not an old-style page
+
+    # Add Google Fonts before <style>
+    html = html.replace('<style>', GOOGLE_FONTS + '\n' + NEW_CSS + '\n<!--', 1)
+    # Remove everything up to and including old </style>
+    # Actually, replace the old <style>...</style> block entirely
+    html = OLD_STYLE_PATTERN.sub('', html)
+    # Remove the placeholder we added (the <!--)
+    html = html.replace(GOOGLE_FONTS + '\n' + NEW_CSS + '\n<!--', GOOGLE_FONTS + '\n' + NEW_CSS, 1)
+
+    # Now add font + new CSS properly
+    # The above logic is messy; let's do it cleanly:
+    # Reset and do it right
+    return None  # placeholder
+
+
+def patch_clean(html: str) -> str | None:
+    """Clean replacement logic."""
+    if MARKER in html:
+        return None
+    if not OLD_STYLE_PATTERN.search(html):
+        return None
+
+    # 1. Replace old <style> block with new dark CSS
+    html = OLD_STYLE_PATTERN.sub(NEW_CSS, html, count=1)
+
+    # 2. Inject Google Fonts before the new <style>
+    html = html.replace('<style>', GOOGLE_FONTS + '\n<style>', 1)
+
+    # 3. Add marker after </head> open tag area
+    html = html.replace('<style>', f'{MARKER}\n<style>', 1)
+
+    # 4. Upgrade nav
+    html = make_nav(html)
+
+    # 5. Wrap breadcrumb in page-hero
+    html = upgrade_breadcrumb(html)
+
+    # 6. Convert old static FAQ items to details/summary accordion
+    # Old pattern: <div class="faq-item"><h3>Q</h3><p>A</p></div>
+    html = re.sub(
+        r'<div class="faq-item">\s*<h3>([^<]+)</h3>\s*<p>(.*?)</p>\s*</div>',
+        lambda m: f'<details class="faq-item"><summary>{m.group(1).strip()}</summary><p>{m.group(2).strip()}</p></details>',
+        html,
+        flags=re.DOTALL
+    )
+
+    return html
+
+
+def main():
+    patched = skipped = errors = 0
+    for f in sorted(PAGES.glob("*.html")):
+        try:
+            src = f.read_text(encoding="utf-8", errors="ignore")
+            out = patch_clean(src)
+            if out is None:
+                skipped += 1
+                continue
+            f.write_text(out, encoding="utf-8")
+            patched += 1
+            print(f"  Patched: {f.name}")
+        except Exception as e:
+            print(f"  ERROR {f.name}: {e}")
+            errors += 1
+    print(f"\nDone — Patched: {patched} | Skipped: {skipped} | Errors: {errors}")
+
+
+if __name__ == "__main__":
+    main()
