@@ -7,145 +7,295 @@
 <meta name="description" content="Free SaaS ROI calculator. Find out if your business software is worth the cost. Calculate payback period, annual savings and break-even point.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://saaspare.org/pages/saas-roi-calculator.html">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  :root{--primary:#1a1a2e;--accent:#e94560;--bg:#f8f9fa;--text:#333;--green:#28a745}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-  nav{background:var(--primary);padding:.8rem 1.5rem;display:flex;align-items:center;gap:1.5rem}
-  nav a{color:#ccc;text-decoration:none;font-size:.9rem}
-  nav a:first-child{color:#fff;font-weight:700;font-size:1.15rem;margin-right:auto}
-  .container{max-width:760px;margin:0 auto;padding:2.5rem 1.5rem}
-  h1{font-size:2rem;color:var(--primary);margin-bottom:.5rem}
-  .subtitle{color:#666;margin-bottom:2rem}
-  .card{background:#fff;border-radius:10px;padding:2rem;box-shadow:0 2px 8px rgba(0,0,0,.08);margin-bottom:1.5rem}
-  .card h2{color:var(--primary);font-size:1.15rem;margin-bottom:1.25rem;border-bottom:2px solid var(--accent);padding-bottom:.5rem}
-  .field{margin-bottom:1.25rem}
-  .field label{display:block;font-weight:600;font-size:.9rem;color:#444;margin-bottom:.35rem}
-  .field input,.field select{width:100%;padding:.7rem 1rem;border:1px solid #ddd;border-radius:6px;font-size:.95rem;color:var(--text)}
-  .field input:focus,.field select:focus{outline:none;border-color:var(--accent)}
-  .field small{color:#888;font-size:.8rem;margin-top:.2rem;display:block}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-  .btn{background:var(--accent);color:#fff;border:none;padding:.9rem 2rem;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer;width:100%;margin-top:.5rem}
-  .btn:hover{background:#c73652}
-  .results{display:none}
-  .results.show{display:block}
-  .result-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;margin-bottom:1.5rem}
-  .result-box{background:#fff;border-radius:8px;padding:1.25rem;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-  .result-box .val{font-size:1.8rem;font-weight:700;color:var(--accent)}
-  .result-box .lbl{font-size:.8rem;color:#888;margin-top:.25rem}
-  .verdict{padding:1.25rem 1.5rem;border-radius:8px;margin-bottom:1.5rem;font-size:1rem}
-  .verdict.good{background:#d4edda;border-left:4px solid var(--green)}
-  .verdict.bad{background:#f8d7da;border-left:4px solid #dc3545}
-  .verdict.ok{background:#fff3cd;border-left:4px solid #ffc107}
-  .cta-box{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:2rem;border-radius:10px;text-align:center}
-  .cta-box h3{margin-bottom:.5rem}
-  .cta-box p{color:#aaa;font-size:.9rem;margin-bottom:1.25rem}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1.75rem;border-radius:6px;text-decoration:none;font-weight:600}
-  footer{text-align:center;color:#999;font-size:.85rem;padding:2rem 1rem;border-top:1px solid #eee;margin-top:2rem}
-  @media(max-width:560px){.grid2{grid-template-columns:1fr}h1{font-size:1.5rem}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#080810;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
+::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
+
+@keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.9;transform:scale(1.08)}}
+@keyframes glow2{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:.45;transform:scale(1.15)}}
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes pulse{0%,100%{box-shadow:0 0 6px #e94560,0 0 0 0 rgba(233,69,96,.5)}50%{box-shadow:0 0 18px #e94560,0 0 0 10px rgba(233,69,96,0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes countUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
+.logo{display:flex;align-items:center;gap:9px;margin-right:auto}
+.logo-bars{display:flex;flex-direction:column;gap:3.5px}
+.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px;transition:width .3s}
+.logo-bars span:nth-child(1){width:16px}
+.logo-bars span:nth-child(2){width:11px;opacity:.6}
+.logo-bars span:nth-child(3){width:16px;opacity:.3}
+.logo:hover .logo-bars span:nth-child(2){width:16px;opacity:.8}
+.logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff}
+.logo-text em{color:#e94560;font-style:normal}
+.nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s}
+.nav-link:hover{color:#fff}
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 100% 70% at 50% -5%,#1a0d12 0%,#0d0008 40%,#080810 75%);padding:8rem 2rem 4rem;text-align:center;z-index:1}
+.orb{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px)}
+.orb1{width:600px;height:600px;background:radial-gradient(circle,rgba(233,69,96,.15) 0%,transparent 65%);top:-220px;left:50%;transform:translateX(-50%);animation:glow 9s ease-in-out infinite}
+.orb2{width:300px;height:300px;background:radial-gradient(circle,rgba(180,40,60,.1) 0%,transparent 70%);top:40px;right:-100px;animation:glow2 11s ease-in-out infinite 2s}
+
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.9);padding:6px 18px;border-radius:100px;font-size:.76rem;font-weight:700;letter-spacing:.4px;margin-bottom:1.8rem;animation:up .6s ease both}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:#e94560;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
+.hero h1{font-size:clamp(1.9rem,5.5vw,3.2rem);font-weight:900;color:#fff;line-height:1.08;letter-spacing:-1px;margin-bottom:1rem;animation:up .7s .1s ease both}
+.grad-text{background:linear-gradient(135deg,#ff6b85 0%,#e94560 50%,#e94060 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3.5s linear infinite}
+.hero-sub{color:rgba(255,255,255,.38);font-size:.98rem;line-height:1.8;max-width:430px;margin:0 auto 2.5rem;animation:up .7s .2s ease both}
+
+.container{max-width:700px;margin:0 auto;padding:0 1.5rem 5rem;position:relative;z-index:1}
+
+.card{background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1.75rem;margin-bottom:1rem;transition:border-color .3s;backdrop-filter:blur(8px)}
+.card:focus-within{border-color:rgba(233,69,96,.3)}
+.card-title{display:flex;align-items:center;gap:10px;margin-bottom:1.4rem}
+.card-icon{width:34px;height:34px;background:rgba(233,69,96,.12);border:1px solid rgba(233,69,96,.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card-icon svg{width:16px;height:16px;stroke:#e94560;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h2{font-size:1rem;font-weight:700;color:#fff;letter-spacing:-.2px}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field{margin-bottom:1rem}
+.field:last-child{margin-bottom:0}
+.field label{display:block;font-size:.8rem;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:.5rem;letter-spacing:.1px}
+.input-wrap{position:relative}
+.input-prefix{position:absolute;left:13px;top:50%;transform:translateY(-50%);font-size:.9rem;color:rgba(255,255,255,.28);pointer-events:none;font-weight:500}
+.field input,.field select{width:100%;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.72rem 1rem .72rem 2rem;font-size:.92rem;color:#fff;font-family:inherit;transition:border-color .2s,background .2s;-webkit-appearance:none}
+.field input::placeholder{color:rgba(255,255,255,.2)}
+.field input:focus,.field select:focus{outline:none;border-color:rgba(233,69,96,.5);background:rgba(255,255,255,.07)}
+.field small{font-size:.74rem;color:rgba(255,255,255,.25);margin-top:.4rem;display:block}
+
+.btn{width:100%;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:1rem 2rem;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;box-shadow:0 8px 28px rgba(233,69,96,.4);transition:transform .15s,box-shadow .15s;margin-top:.5rem;letter-spacing:-.1px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(233,69,96,.55)}
+.btn:active{transform:translateY(0)}
+
+.results{display:none}
+.results.show{display:block;animation:fadeUp .4s ease}
+
+.results-card{background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1.75rem;margin-top:1rem;margin-bottom:1rem}
+.results-card h2{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.8px;text-transform:uppercase;margin-bottom:1.4rem}
+
+.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:1.4rem}
+.result-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:1.25rem 1rem;text-align:center;transition:border-color .25s}
+.result-box.highlight{background:rgba(233,69,96,.1);border-color:rgba(233,69,96,.3)}
+.result-box .val{font-size:1.9rem;font-weight:900;color:#e94560;letter-spacing:-.5px;line-height:1;display:block;font-variant-numeric:tabular-nums;animation:countUp .35s ease both}
+.result-box.positive .val{color:#34d399}
+.result-box .lbl{font-size:.73rem;color:rgba(255,255,255,.32);margin-top:.4rem;display:block;font-weight:500;letter-spacing:.2px}
+
+.verdict{padding:1.1rem 1.4rem;border-radius:12px;margin-bottom:0;font-size:.9rem;line-height:1.65;border:1px solid transparent}
+.verdict.good{background:rgba(52,211,153,.08);border-color:rgba(52,211,153,.25);color:rgba(200,255,235,.85)}
+.verdict.good strong{color:#34d399}
+.verdict.bad{background:rgba(233,69,96,.08);border-color:rgba(233,69,96,.25);color:rgba(255,200,200,.85)}
+.verdict.bad strong{color:#e94560}
+.verdict.ok{background:rgba(251,191,36,.07);border-color:rgba(251,191,36,.22);color:rgba(255,240,180,.85)}
+.verdict.ok strong{color:#fbbf24}
+
+.cta-box{background:linear-gradient(135deg,rgba(233,69,96,.14),rgba(180,40,60,.1));border:1px solid rgba(233,69,96,.22);color:#fff;padding:2rem;border-radius:18px;text-align:center;margin-top:1rem}
+.cta-box h3{font-size:1.12rem;font-weight:800;letter-spacing:-.3px;margin-bottom:.5rem}
+.cta-box p{color:rgba(255,255,255,.35);font-size:.86rem;margin-bottom:1.4rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.72rem 1.75rem;border-radius:100px;font-weight:700;font-size:.88rem;box-shadow:0 6px 20px rgba(233,69,96,.4);transition:transform .15s,box-shadow .15s}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(233,69,96,.55)}
+
+.how-to{background:rgba(255,255,255,.028);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:1.6rem;margin-top:1rem}
+.how-to h3{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.1rem}
+.how-to ul{list-style:none;padding:0}
+.how-to li{padding:.5rem 0;font-size:.86rem;color:rgba(255,255,255,.42);border-bottom:1px solid rgba(255,255,255,.05);line-height:1.65;display:flex;gap:.75rem;align-items:flex-start}
+.how-to li:last-child{border-bottom:none}
+.how-to li::before{content:'';width:5px;height:5px;border-radius:50%;background:#e94560;flex-shrink:0;margin-top:.55rem}
+.how-to li strong{color:rgba(255,255,255,.7)}
+
+footer{text-align:center;color:rgba(255,255,255,.2);font-size:.8rem;padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);display:flex;gap:1.5rem;justify-content:center}
+footer a{color:rgba(255,255,255,.28);transition:color .2s}
+footer a:hover{color:rgba(255,255,255,.7)}
+
+@media(max-width:560px){
+  .grid2{grid-template-columns:1fr}
+  .result-grid{grid-template-columns:1fr 1fr}
+  .hero{padding:6.5rem 1.5rem 3rem}
+}
 </style>
 </head>
 <body>
+
 <nav>
-  <a href="https://saaspare.org">SaaSpare</a>
-  <a href="https://saaspare.org/pages/">All Comparisons</a>
-  <a href="https://saaspare.org/pages/saas-roi-calculator.html">ROI Calculator</a>
+  <a href="https://saaspare.org" class="logo">
+    <div class="logo-bars"><span></span><span></span><span></span></div>
+    <div class="logo-text">Saa<em>Spare</em></div>
+  </a>
+  <a href="https://saaspare.org/pages/" class="nav-link">Comparisons</a>
+  <a href="https://saaspare.org/pages/saas-roi-calculator.html" class="nav-link">ROI Calc</a>
+  <a href="https://saaspare.org/pages/" class="nav-cta">Browse Tools →</a>
 </nav>
 
+<div class="hero">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="badge"><span class="badge-dot"></span>Free Calculator</div>
+  <h1>Is Your SaaS <span class="grad-text">Worth the Cost?</span></h1>
+  <p class="hero-sub">Enter your numbers and find out exactly when your software pays for itself — and how much it returns annually.</p>
+</div>
+
 <div class="container">
-  <h1>SaaS ROI Calculator</h1>
-  <p class="subtitle">Find out if a software tool is worth the cost — and when it pays for itself.</p>
 
   <div class="card">
-    <h2>Tool Cost</h2>
+    <div class="card-title">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+      </div>
+      <h2>Tool Cost</h2>
+    </div>
     <div class="grid2">
       <div class="field">
-        <label>Monthly subscription cost (USD)</label>
-        <input type="number" id="monthly_cost" placeholder="e.g. 99" min="0">
+        <label>Monthly subscription (USD)</label>
+        <div class="input-wrap">
+          <span class="input-prefix">$</span>
+          <input type="number" id="monthly_cost" placeholder="99" min="0">
+        </div>
       </div>
       <div class="field">
         <label>Number of seats / users</label>
-        <input type="number" id="seats" placeholder="e.g. 5" min="1" value="1">
+        <div class="input-wrap">
+          <span class="input-prefix">#</span>
+          <input type="number" id="seats" placeholder="5" min="1" value="1">
+        </div>
       </div>
     </div>
     <div class="field">
-      <label>Implementation / setup cost (one-time)</label>
-      <input type="number" id="setup_cost" placeholder="e.g. 500" min="0" value="0">
-      <small>Include onboarding, migration, training costs if any</small>
+      <label>One-time setup cost (USD)</label>
+      <div class="input-wrap">
+        <span class="input-prefix">$</span>
+        <input type="number" id="setup_cost" placeholder="0" min="0" value="0">
+      </div>
+      <small>Onboarding, migration, training costs — leave 0 if none</small>
     </div>
   </div>
 
   <div class="card">
-    <h2>Time Savings</h2>
+    <div class="card-title">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h2>Time Savings</h2>
+    </div>
     <div class="grid2">
       <div class="field">
-        <label>Hours saved per employee per week</label>
-        <input type="number" id="hours_saved" placeholder="e.g. 3" min="0" step="0.5">
+        <label>Hours saved per employee / week</label>
+        <div class="input-wrap">
+          <span class="input-prefix">h</span>
+          <input type="number" id="hours_saved" placeholder="3" min="0" step="0.5">
+        </div>
       </div>
       <div class="field">
         <label>Average employee hourly rate (USD)</label>
-        <input type="number" id="hourly_rate" placeholder="e.g. 35" min="0">
+        <div class="input-wrap">
+          <span class="input-prefix">$</span>
+          <input type="number" id="hourly_rate" placeholder="35" min="0">
+        </div>
       </div>
     </div>
   </div>
 
   <div class="card">
-    <h2>Revenue Impact</h2>
+    <div class="card-title">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      </div>
+      <h2>Revenue &amp; Cost Impact</h2>
+    </div>
     <div class="grid2">
       <div class="field">
-        <label>Expected monthly revenue increase (USD)</label>
-        <input type="number" id="revenue_increase" placeholder="e.g. 500" min="0" value="0">
-        <small>From improved conversions, faster deals, etc.</small>
+        <label>Monthly revenue increase (USD)</label>
+        <div class="input-wrap">
+          <span class="input-prefix">$</span>
+          <input type="number" id="revenue_increase" placeholder="0" min="0" value="0">
+        </div>
+        <small>Better conversions, faster deals</small>
       </div>
       <div class="field">
-        <label>Expected monthly cost savings (USD)</label>
-        <input type="number" id="cost_savings" placeholder="e.g. 200" min="0" value="0">
-        <small>Replacing other tools, reducing errors, etc.</small>
+        <label>Monthly cost savings (USD)</label>
+        <div class="input-wrap">
+          <span class="input-prefix">$</span>
+          <input type="number" id="cost_savings" placeholder="0" min="0" value="0">
+        </div>
+        <small>Tools replaced, errors reduced</small>
       </div>
     </div>
   </div>
 
-  <button class="btn" onclick="calculate()">Calculate ROI →</button>
+  <button class="btn" onclick="calculate()">Calculate My ROI →</button>
 
   <div class="results" id="results">
-    <div style="height:1.5rem"></div>
-    <div class="card">
+
+    <div class="results-card">
       <h2>Your Results</h2>
       <div class="result-grid">
-        <div class="result-box"><div class="val" id="r-roi">—</div><div class="lbl">Annual ROI</div></div>
-        <div class="result-box"><div class="val" id="r-monthly-benefit">—</div><div class="lbl">Monthly net benefit</div></div>
-        <div class="result-box"><div class="val" id="r-payback">—</div><div class="lbl">Payback period</div></div>
-        <div class="result-box"><div class="val" id="r-annual-saving">—</div><div class="lbl">Annual net saving</div></div>
+        <div class="result-box highlight" id="box-roi">
+          <span class="val" id="r-roi">—</span>
+          <span class="lbl">Annual ROI</span>
+        </div>
+        <div class="result-box" id="box-payback">
+          <span class="val" id="r-payback">—</span>
+          <span class="lbl">Payback period</span>
+        </div>
+        <div class="result-box" id="box-monthly">
+          <span class="val" id="r-monthly-benefit">—</span>
+          <span class="lbl">Monthly net benefit</span>
+        </div>
+        <div class="result-box" id="box-annual">
+          <span class="val" id="r-annual-saving">—</span>
+          <span class="lbl">Annual net saving</span>
+        </div>
       </div>
       <div class="verdict" id="verdict"></div>
     </div>
 
     <div class="cta-box">
       <h3>Ready to buy? Compare top tools first.</h3>
-      <p>See side-by-side pricing, pros/cons and our top pick before you commit.</p>
+      <p>Side-by-side pricing, pros/cons and our top pick before you commit.</p>
       <a class="cta-btn" href="https://saaspare.org/pages/">Browse Comparisons →</a>
     </div>
+
   </div>
 
-  <div style="margin-top:2rem;padding:1.25rem;background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.07)">
-    <h3 style="color:var(--primary);margin-bottom:.75rem">How to use this calculator</h3>
-    <ul style="padding-left:1.2rem;color:#555;font-size:.9rem">
-      <li style="margin:.4rem 0"><strong>Tool Cost:</strong> Enter the per-seat monthly price from the tool's pricing page.</li>
-      <li style="margin:.4rem 0"><strong>Time Savings:</strong> Be conservative — even 1 hour/week saved per employee adds up fast.</li>
-      <li style="margin:.4rem 0"><strong>Revenue Impact:</strong> Hard to estimate, leave at 0 if unsure.</li>
-      <li style="margin:.4rem 0">A positive ROI with payback under 6 months = almost always worth it.</li>
+  <div class="how-to">
+    <h3>How to use this calculator</h3>
+    <ul>
+      <li><div><strong>Tool Cost:</strong> Enter the per-seat price from the tool's pricing page. Include setup only if there's real onboarding spend.</div></li>
+      <li><div><strong>Time Savings:</strong> Be conservative — even 1 saved hour/week per employee adds up fast at scale.</div></li>
+      <li><div><strong>Revenue Impact:</strong> Hard to estimate — leave at 0 if unsure. Don't inflate it.</div></li>
+      <li><div>A positive ROI with a payback period under 6 months is almost always a no-brainer.</div></li>
     </ul>
   </div>
+
 </div>
 
 <footer>
   <a href="https://saaspare.org">Home</a>
-  <a href="https://saaspare.org/pages/">All Comparisons</a>
+  <a href="https://saaspare.org/pages/">Comparisons</a>
   <a href="https://saaspare.org/privacy.html">Privacy</a>
 </footer>
 
 <script>
-function fmt(n){return n>=1000?'$'+(n/1000).toFixed(1)+'k':'$'+Math.round(n)}
+function fmt(n){
+  var abs=Math.abs(n);
+  var prefix=n<0?'-$':'$';
+  if(abs>=1000000)return prefix+(abs/1000000).toFixed(1)+'M';
+  if(abs>=1000)return prefix+(abs/1000).toFixed(1)+'k';
+  return prefix+Math.round(abs);
+}
+
+function animateVal(el,text){
+  el.style.animation='none';
+  el.offsetHeight;
+  el.style.animation='countUp .35s ease both';
+  el.textContent=text;
+}
+
 function calculate(){
   var mc=parseFloat(document.getElementById('monthly_cost').value)||0;
   var seats=parseInt(document.getElementById('seats').value)||1;
@@ -165,25 +315,38 @@ function calculate(){
   var roi=annualCost>0?((annualNet/annualCost)*100):0;
   var payback=monthlyNet>0?(setup+totalMonthlyCost)/monthlyNet:null;
 
-  document.getElementById('r-roi').textContent=Math.round(roi)+'%';
-  document.getElementById('r-monthly-benefit').textContent=fmt(monthlyNet);
-  document.getElementById('r-payback').textContent=payback?Math.ceil(payback)+'mo':'N/A';
-  document.getElementById('r-annual-saving').textContent=fmt(annualNet);
+  var roiEl=document.getElementById('r-roi');
+  var paybackEl=document.getElementById('r-payback');
+  var monthlyEl=document.getElementById('r-monthly-benefit');
+  var annualEl=document.getElementById('r-annual-saving');
+
+  animateVal(roiEl,Math.round(roi)+'%');
+  animateVal(paybackEl,payback?Math.ceil(payback)+'mo':'Never');
+  animateVal(monthlyEl,fmt(monthlyNet));
+  animateVal(annualEl,fmt(annualNet));
+
+  var positiveBoxes=[document.getElementById('box-monthly'),document.getElementById('box-annual')];
+  positiveBoxes.forEach(function(b){
+    b.classList.toggle('positive',monthlyNet>0);
+  });
 
   var v=document.getElementById('verdict');
-  if(roi>100&&(payback===null||payback<6)){
+  if(roi>100&&payback!==null&&payback<6){
     v.className='verdict good';
-    v.innerHTML='<strong>✓ Strong ROI.</strong> This tool pays for itself in under 6 months and returns over '+Math.round(roi)+'% annually. Almost certainly worth it.';
+    v.innerHTML='<strong>Strong ROI.</strong> This tool pays for itself in under 6 months and returns '+Math.round(roi)+'% annually. Almost certainly worth it.';
   } else if(roi>0){
     v.className='verdict ok';
-    v.innerHTML='<strong>~ Marginal ROI.</strong> The tool generates positive returns but the payback period is over 6 months. Consider negotiating annual pricing for a better deal.';
+    v.innerHTML='<strong>Marginal ROI.</strong> Positive returns, but the payback period exceeds 6 months. Consider negotiating an annual plan for a better deal.';
   } else {
     v.className='verdict bad';
-    v.innerHTML='<strong>✗ Negative ROI.</strong> Based on your inputs, this tool costs more than it saves. Try increasing your time-saving estimate, or look for a cheaper alternative.';
+    v.innerHTML='<strong>Negative ROI.</strong> Based on your inputs this tool costs more than it saves. Increase your time-saving estimate or look for a cheaper alternative.';
   }
 
-  document.getElementById('results').className='results show';
-  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'});
+  var resultsEl=document.getElementById('results');
+  resultsEl.className='results show';
+  setTimeout(function(){
+    resultsEl.scrollIntoView({behavior:'smooth',block:'nearest'});
+  },50);
 }
 </script>
 </body>
