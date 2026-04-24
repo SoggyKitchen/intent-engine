@@ -84,6 +84,8 @@ def budget_available() -> bool:
     return False
 
 
+_RETRY_DELAYS = (2, 5, 15)
+
 def complete_json(prompt: str, system: str = "", estimated_tokens: int = 4000) -> Optional[dict]:
     providers = _get_ordered_providers()
     with _lock:
@@ -96,19 +98,34 @@ def complete_json(prompt: str, system: str = "", estimated_tokens: int = 4000) -
             log.debug(f"Budget exhausted for {provider}")
             continue
         any_budget = True
-        try:
-            result = client_fn(prompt, system, model)
-            if result:
-                return result
-            _refund(provider, estimated_tokens)
-        except Exception as e:
-            _refund(provider, estimated_tokens)
-            log.warning(f"LLM {provider} failed: {e}")
-            continue
+        last_err = None
+        for attempt, delay in enumerate((*_RETRY_DELAYS, None), 1):
+            try:
+                result = client_fn(prompt, system, model)
+                if result:
+                    return result
+                _refund(provider, estimated_tokens)
+                last_err = "empty response"
+            except Exception as e:
+                last_err = e
+                _refund(provider, estimated_tokens)
+                if "429" in str(e) or "rate" in str(e).lower() or "capacity" in str(e).lower():
+                    if delay is not None:
+                        log.warning(f"LLM {provider} rate-limited (attempt {attempt}) — retrying in {delay}s")
+                        time.sleep(delay)
+                        if not _try_charge(provider, estimated_tokens):
+                            break
+                        continue
+                else:
+                    break
+            break
+        if last_err:
+            log.warning(f"LLM {provider} failed after retries: {last_err}")
+        continue
     if not any_budget:
         log.info("All Cerebras providers at daily quota — resumes tomorrow")
     else:
-        log.error("All Cerebras providers failed (API errors)")
+        log.error("All Cerebras providers failed (API errors, rate limits, or empty responses)")
     return None
 
 

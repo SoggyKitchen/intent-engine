@@ -908,7 +908,8 @@ def run_programmatic(max_pages: int = 500) -> int:
 
     generated = 0
     consecutive_failures = 0
-    MAX_CONSECUTIVE_FAILURES = 8
+    MAX_CONSECUTIVE_FAILURES = 25
+    transient_pause_threshold = 5
 
     with ThreadPoolExecutor(max_workers=1) as executor:
         futures = {
@@ -920,14 +921,6 @@ def run_programmatic(max_pages: int = 500) -> int:
                 for f in futures:
                     f.cancel()
                 break
-            if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
-                for f in futures:
-                    f.cancel()
-                if not budget_available():
-                    log.info("Daily LLM quota exhausted — stopping cleanly, resumes tomorrow")
-                else:
-                    log.warning(f"{MAX_CONSECUTIVE_FAILURES} consecutive API errors — stopping run early")
-                break
             args = futures[future]
             try:
                 ok = future.result()
@@ -936,15 +929,26 @@ def run_programmatic(max_pages: int = 500) -> int:
                     consecutive_failures = 0
                     log.info(f"[{generated}/{max_pages}] Generated: {args}")
                 elif not budget_available():
-                    log.info("Daily LLM quota exhausted mid-run — stopping cleanly")
+                    log.info("Daily LLM quota exhausted mid-run — stopping cleanly, resumes tomorrow")
                     for f in futures:
                         f.cancel()
                     break
                 else:
                     consecutive_failures += 1
+                    if consecutive_failures == transient_pause_threshold:
+                        log.warning(f"{transient_pause_threshold} consecutive failures — pausing 30s for API to recover")
+                        time.sleep(30)
+                    elif consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
+                        for f in futures:
+                            f.cancel()
+                        log.warning(f"{MAX_CONSECUTIVE_FAILURES} consecutive failures — quota exhausted or persistent API outage, stopping")
+                        break
             except Exception as e:
                 consecutive_failures += 1
                 log.warning(f"Page gen failed {args}: {e}")
+                if consecutive_failures == transient_pause_threshold:
+                    log.warning(f"Pausing 30s for API to recover ({consecutive_failures} failures in a row)")
+                    time.sleep(30)
 
     from pathlib import Path as _Path
     from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage, _rebuild_pages_index
