@@ -5,50 +5,204 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — SaaSpare</title>
 <meta name="description" content="SaaSpare privacy policy — how we collect, use and protect your data.">
+<link rel="canonical" href="https://saaspare.org/privacy.html">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8f9fa;color:#333;line-height:1.7}
-  nav{background:#1a1a2e;padding:.7rem 1rem;display:flex;gap:1.5rem;align-items:center}
-  nav a{color:#ccc;text-decoration:none;font-size:.9rem}nav a:first-child{color:#fff;font-weight:700;font-size:1.1rem;margin-right:auto}
-  .container{max-width:800px;margin:2rem auto;padding:0 1rem}
-  h1{color:#1a1a2e;margin-bottom:1rem}h2{color:#1a1a2e;margin:1.5rem 0 .5rem}
-  .card{background:#fff;border-radius:8px;padding:2rem;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-  footer{text-align:center;color:#999;font-size:.85rem;padding:2rem;border-top:1px solid #eee;margin-top:2rem}
-  footer a{color:#aaa}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#0a0a14;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:#e94560}
+a:hover{opacity:.8}
+::-webkit-scrollbar{width:5px;background:rgba(255,255,255,.03)}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:3px}
+@keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.85;transform:scale(1.1)}}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
+nav.scrolled{background:rgba(10,10,20,.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.07)}
+.logo{display:flex;align-items:center;gap:8px;margin-right:auto;text-decoration:none}
+.logo-bars{display:flex;flex-direction:column;gap:3px}
+.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px}
+.logo-bars span:nth-child(1){width:14px}
+.logo-bars span:nth-child(2){width:10px;opacity:.65}
+.logo-bars span:nth-child(3){width:14px;opacity:.35}
+.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.logo-text em{color:#e94560;font-style:normal}
+.nav-link{color:rgba(255,255,255,.5);font-size:.83rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s;text-decoration:none}
+.nav-link:hover{color:#fff}
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.42rem 1.1rem;border-radius:100px;font-weight:700;font-size:.82rem;box-shadow:0 4px 14px rgba(233,69,96,.35);margin-left:6px;transition:transform .15s;text-decoration:none}
+.nav-cta:hover{transform:translateY(-1px)}
+
+.page-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0f1729 0%,#0a0f2e 50%,#150a22 100%);padding:7rem 2rem 3.5rem;text-align:center}
+.orb{position:absolute;pointer-events:none;border-radius:50%}
+.page-hero .eyebrow{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.28);letter-spacing:.8px;text-transform:uppercase;margin-bottom:.75rem;animation:up .6s ease both}
+.page-hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.1;margin-bottom:.75rem;animation:up .7s .1s ease both}
+.page-hero p{color:rgba(255,255,255,.4);font-size:.9rem;animation:up .7s .2s ease both}
+
+.container{max-width:720px;margin:0 auto;padding:3.5rem 2rem 5rem}
+
+/* TOC */
+.toc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.5rem;margin-bottom:2.5rem}
+.toc h3{font-size:.78rem;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:.7px;text-transform:uppercase;margin-bottom:.85rem}
+.toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.45rem}
+.toc ol li a{font-size:.88rem;color:rgba(255,255,255,.5);transition:color .18s;text-decoration:none}
+.toc ol li a:hover{color:#e94560}
+
+/* Sections */
+.priv-section{margin-bottom:2.5rem;scroll-margin-top:80px}
+.priv-section h2{font-size:1.05rem;font-weight:800;color:#fff;letter-spacing:-.2px;margin-bottom:.85rem;padding-bottom:.6rem;border-bottom:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:8px}
+.priv-section h2::before{content:'';display:block;width:3px;height:16px;background:linear-gradient(#e94560,#c73652);border-radius:2px;flex-shrink:0}
+.priv-section p{color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.8;margin-bottom:.75rem}
+.priv-section p:last-child{margin-bottom:0}
+.priv-section ul{padding-left:1.1rem;color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.8}
+.priv-section ul li{margin-bottom:.35rem}
+.priv-section strong{color:rgba(255,255,255,.75);font-weight:600}
+
+.updated{font-size:.78rem;color:rgba(255,255,255,.25);margin-bottom:2.5rem}
+
+footer{border-top:1px solid rgba(255,255,255,.07)}
+.footer-inner{max-width:1040px;margin:0 auto;padding:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:rgba(255,255,255,.3)}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.35);transition:color .18s;text-decoration:none}
+.footer-links a:hover{color:#fff}
+
+@media(max-width:640px){
+  nav{padding:.75rem 1.25rem}
+  .nav-link{display:none}
+  .container{padding:2.5rem 1.25rem 4rem}
+}
 </style>
 </head>
 <body>
-<nav>
-  <a href="/">SaaSpare</a>
-  <a href="/pages/">Comparisons</a>
-  <a href="/about.html">About</a>
-  <a href="/contact.html">Contact</a>
+
+<nav id="nav">
+  <a href="/" class="logo">
+    <div class="logo-bars"><span></span><span></span><span></span></div>
+    <div class="logo-text">Saa<em>S</em>pare</div>
+  </a>
+  <a href="/pages/" class="nav-link">All Comparisons</a>
+  <a href="/about.html" class="nav-link">About</a>
+  <a href="/contact.html" class="nav-link">Contact</a>
+  <a href="/pages/" class="nav-cta">Compare Now →</a>
 </nav>
-<div class="container">
-  <div class="card">
+
+<div class="page-hero">
+  <div class="orb" style="top:-80px;left:50%;transform:translateX(-50%);width:500px;height:280px;background:radial-gradient(ellipse,rgba(233,69,96,.1) 0%,transparent 65%);animation:glow 5s ease-in-out infinite"></div>
+  <div style="position:relative">
+    <p class="eyebrow">Legal</p>
     <h1>Privacy Policy</h1>
-    <p><em>Last updated: 2026</em></p>
-
-    <h2>Information We Collect</h2>
-    <p>SaaSpare does not collect personal information from visitors. We do not require account creation or login to access any content on this site.</p>
-
-    <h2>Cookies</h2>
-    <p>We use minimal cookies necessary for site functionality. We do not use advertising cookies or sell data to third parties. Affiliate partners (such as HubSpot, Shopify, Amazon) may set their own cookies when you click affiliate links — please refer to their individual privacy policies.</p>
-
-    <h2>Affiliate Links</h2>
-    <p>This site contains affiliate links. When you click a link and make a purchase, we may receive a commission. Affiliate links are marked with "sponsored" or noted in the footer of each page. This does not affect the price you pay.</p>
-
-    <h2>Amazon Associates</h2>
-    <p>SaaSpare is a participant in the Amazon Associates Programme. As an Amazon Associate we earn from qualifying purchases. Amazon may collect data per their own privacy policy at amazon.com.au/privacy.</p>
-
-    <h2>Analytics</h2>
-    <p>We may use privacy-friendly analytics to understand which pages are most useful. No personally identifiable information is collected.</p>
-
-    <h2>Contact</h2>
-    <p>For privacy questions, please use the <a href="/contact.html">contact page</a>.</p>
+    <p>Last updated: April 2026</p>
   </div>
 </div>
+
+<div class="container">
+  <p class="updated">Effective date: 1 January 2026 · Last reviewed: April 2026</p>
+
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#s1">Information we collect</a></li>
+      <li><a href="#s2">How we use your information</a></li>
+      <li><a href="#s3">Cookies & tracking</a></li>
+      <li><a href="#s4">Affiliate links</a></li>
+      <li><a href="#s5">Third-party services</a></li>
+      <li><a href="#s6">Data retention</a></li>
+      <li><a href="#s7">Your rights</a></li>
+      <li><a href="#s8">Contact us</a></li>
+    </ol>
+  </div>
+
+  <div class="priv-section" id="s1">
+    <h2>1. Information We Collect</h2>
+    <p>We collect information you provide directly — for example, when you subscribe to our newsletter or submit a contact form. This may include your email address and name.</p>
+    <p>We also automatically collect certain technical data when you visit the site, including:</p>
+    <ul>
+      <li>IP address and approximate location (country/city level)</li>
+      <li>Browser type, device type and operating system</li>
+      <li>Pages visited and time spent on each page</li>
+      <li>Referral source (how you arrived at SaaSpare)</li>
+    </ul>
+  </div>
+
+  <div class="priv-section" id="s2">
+    <h2>2. How We Use Your Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Send the weekly SaaS Deal Digest newsletter (only if you subscribed)</li>
+      <li>Respond to contact form submissions and support requests</li>
+      <li>Analyse site traffic and improve our content</li>
+      <li>Detect and prevent fraudulent or abusive activity</li>
+    </ul>
+    <p>We <strong>do not</strong> sell your personal data to third parties.</p>
+  </div>
+
+  <div class="priv-section" id="s3">
+    <h2>3. Cookies & Tracking</h2>
+    <p>SaaSpare uses cookies and similar tracking technologies to measure site traffic and improve your experience. These include:</p>
+    <ul>
+      <li><strong>Analytics cookies</strong> — Google Analytics (anonymised IP) to understand traffic patterns</li>
+      <li><strong>Affiliate tracking cookies</strong> — set when you click an affiliate link to attribute referrals</li>
+      <li><strong>Functional cookies</strong> — to remember preferences like newsletter subscription state</li>
+    </ul>
+    <p>You can disable cookies in your browser settings. Some features may not work correctly if you do.</p>
+  </div>
+
+  <div class="priv-section" id="s4">
+    <h2>4. Affiliate Links</h2>
+    <p>SaaSpare contains affiliate links. When you click a link and make a purchase, we may earn a commission from the vendor at no extra cost to you.</p>
+    <p>Affiliate links are tracked using cookies set by third-party affiliate networks, including <strong>Impact</strong> and the <strong>Amazon Associates Programme</strong>. These networks may collect data about your clicks and purchases in accordance with their own privacy policies.</p>
+    <p>Affiliate relationships do not influence our editorial rankings or comparison outcomes.</p>
+  </div>
+
+  <div class="priv-section" id="s5">
+    <h2>5. Third-Party Services</h2>
+    <p>We use the following third-party services that may process your data:</p>
+    <ul>
+      <li><strong>Google Analytics</strong> — website traffic analysis</li>
+      <li><strong>FormSubmit</strong> — contact form and newsletter form processing</li>
+      <li><strong>Impact</strong> — affiliate link tracking</li>
+      <li><strong>Google Fonts</strong> — typography (loaded from Google's CDN)</li>
+    </ul>
+    <p>Each service operates under its own privacy policy. We encourage you to review them if you have concerns.</p>
+  </div>
+
+  <div class="priv-section" id="s6">
+    <h2>6. Data Retention</h2>
+    <p>Newsletter subscriber emails are retained until you unsubscribe. Contact form submissions are retained for up to 12 months. Analytics data is retained in aggregated, anonymised form indefinitely.</p>
+  </div>
+
+  <div class="priv-section" id="s7">
+    <h2>7. Your Rights</h2>
+    <p>Depending on your location, you may have rights to access, correct, delete or port your personal data. To exercise these rights, contact us at the address below.</p>
+    <p>If you are in the EEA, you also have the right to lodge a complaint with your local data protection authority.</p>
+  </div>
+
+  <div class="priv-section" id="s8">
+    <h2>8. Contact Us</h2>
+    <p>For privacy-related questions or requests, contact us via our <a href="/contact.html">contact page</a> or email <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a>.</p>
+  </div>
+</div>
+
 <footer>
-  <p><a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a></p>
+  <div class="footer-inner">
+    <a href="/" class="logo">
+      <div class="logo-bars"><span></span><span></span><span></span></div>
+      <div class="logo-text">Saa<em>S</em>pare</div>
+    </a>
+    <div class="footer-links">
+      <a href="/pages/">All Comparisons</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+    <span>© 2026 SaaSpare</span>
+  </div>
 </footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+},{passive:true});
+</script>
 </body>
 </html>

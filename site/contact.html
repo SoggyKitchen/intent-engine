@@ -4,37 +4,176 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact SaaSpare</title>
-<meta name="description" content="Contact the SaaSpare team for corrections, partnership enquiries or feedback.">
+<meta name="description" content="Get in touch with the SaaSpare team — feedback, corrections, partnership enquiries or press.">
+<link rel="canonical" href="https://saaspare.org/contact.html">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8f9fa;color:#333;line-height:1.7}
-  nav{background:#1a1a2e;padding:.7rem 1rem;display:flex;gap:1.5rem;align-items:center}
-  nav a{color:#ccc;text-decoration:none;font-size:.9rem}nav a:first-child{color:#fff;font-weight:700;font-size:1.1rem;margin-right:auto}
-  .container{max-width:700px;margin:2rem auto;padding:0 1rem}
-  h1{color:#1a1a2e;margin-bottom:1rem}
-  .card{background:#fff;border-radius:8px;padding:2rem;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-  .email{font-size:1.2rem;color:#0066cc;font-weight:600}
-  footer{text-align:center;color:#999;font-size:.85rem;padding:2rem;border-top:1px solid #eee;margin-top:2rem}
-  footer a{color:#aaa}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#0a0a14;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:5px;background:rgba(255,255,255,.03)}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:3px}
+@keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.85;transform:scale(1.1)}}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
+nav.scrolled{background:rgba(10,10,20,.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.07)}
+.logo{display:flex;align-items:center;gap:8px;margin-right:auto}
+.logo-bars{display:flex;flex-direction:column;gap:3px}
+.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px}
+.logo-bars span:nth-child(1){width:14px}
+.logo-bars span:nth-child(2){width:10px;opacity:.65}
+.logo-bars span:nth-child(3){width:14px;opacity:.35}
+.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.logo-text em{color:#e94560;font-style:normal}
+.nav-link{color:rgba(255,255,255,.5);font-size:.83rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s}
+.nav-link:hover{color:#fff}
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.42rem 1.1rem;border-radius:100px;font-weight:700;font-size:.82rem;box-shadow:0 4px 14px rgba(233,69,96,.35);margin-left:6px;transition:transform .15s}
+.nav-cta:hover{transform:translateY(-1px)}
+
+.page-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0f1729 0%,#0a0f2e 50%,#150a22 100%);padding:7rem 2rem 4rem;text-align:center}
+.orb{position:absolute;pointer-events:none;border-radius:50%}
+.eyebrow{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.28);letter-spacing:.8px;text-transform:uppercase;margin-bottom:.75rem;animation:up .6s ease both}
+.page-hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;color:#fff;letter-spacing:-.6px;line-height:1.1;margin-bottom:1rem;animation:up .7s .1s ease both}
+.page-hero p{color:rgba(255,255,255,.48);font-size:1rem;line-height:1.75;max-width:480px;margin:0 auto;animation:up .7s .2s ease both}
+
+.container{max-width:780px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
+.contact-options{display:flex;flex-direction:column;gap:12px}
+.contact-option{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.4rem 1.5rem;transition:all .22s cubic-bezier(.34,1.4,.64,1);opacity:0;animation:fadeUp .5s ease forwards}
+.contact-option:hover{background:rgba(233,69,96,.08);border-color:rgba(233,69,96,.25);transform:translateY(-2px);box-shadow:0 8px 24px rgba(233,69,96,.1)}
+.contact-option-icon{font-size:1.4rem;margin-bottom:.6rem}
+.contact-option h3{font-size:.94rem;font-weight:700;color:#fff;margin-bottom:.3rem;letter-spacing:-.2px}
+.contact-option p{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.6;margin-bottom:.75rem}
+.contact-option a.btn{display:inline-block;background:rgba(233,69,96,.15);border:1px solid rgba(233,69,96,.3);color:rgba(255,180,192,.9);padding:5px 14px;border-radius:100px;font-size:.78rem;font-weight:600;transition:all .18s}
+.contact-option a.btn:hover{background:rgba(233,69,96,.25)}
+
+.contact-form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:2rem;opacity:0;animation:fadeUp .6s .1s ease forwards}
+.contact-form h2{font-size:1.1rem;font-weight:800;color:#fff;letter-spacing:-.3px;margin-bottom:1.25rem;display:flex;align-items:center;gap:10px}
+.contact-form h2::before{content:'';display:block;width:3px;height:18px;background:linear-gradient(#e94560,#c73652);border-radius:2px;flex-shrink:0}
+.field{margin-bottom:1rem}
+.field label{display:block;font-size:.78rem;font-weight:600;color:rgba(255,255,255,.45);letter-spacing:.2px;margin-bottom:.4rem;text-transform:uppercase}
+.field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.75rem 1rem;font-size:.9rem;color:#fff;font-family:inherit;outline:none;transition:border-color .18s;resize:none}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.25)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(233,69,96,.45)}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(255,255,255,.3)' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;cursor:pointer}
+.field select option{background:#1a1a2e;color:#fff}
+.submit-btn{width:100%;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:.85rem;border-radius:10px;font-size:.95rem;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 4px 16px rgba(233,69,96,.35);transition:transform .15s,box-shadow .15s;margin-top:.5rem}
+.submit-btn:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(233,69,96,.5)}
+.success-msg{text-align:center;padding:2rem;color:#7ecf8a;font-weight:700;font-size:1rem}
+
+footer{border-top:1px solid rgba(255,255,255,.07)}
+.footer-inner{max-width:1040px;margin:0 auto;padding:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:rgba(255,255,255,.3)}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.35);transition:color .18s}
+.footer-links a:hover{color:#fff}
+
+@media(max-width:700px){
+  nav{padding:.75rem 1.25rem}
+  .nav-link{display:none}
+  .container{grid-template-columns:1fr;padding:2.5rem 1.25rem}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+}
 </style>
 </head>
 <body>
-<nav>
-  <a href="/">SaaSpare</a>
-  <a href="/pages/">Comparisons</a>
-  <a href="/about.html">About</a>
-  <a href="/contact.html">Contact</a>
+
+<nav id="nav">
+  <a href="/" class="logo">
+    <div class="logo-bars"><span></span><span></span><span></span></div>
+    <div class="logo-text">Saa<em>S</em>pare</div>
+  </a>
+  <a href="/pages/" class="nav-link">All Comparisons</a>
+  <a href="/about.html" class="nav-link">About</a>
+  <a href="/contact.html" class="nav-link" style="color:#fff">Contact</a>
+  <a href="/pages/" class="nav-cta">Compare Now →</a>
 </nav>
-<div class="container">
-  <div class="card">
-    <h1>Contact Us</h1>
-    <p>Have a correction, partnership enquiry, or feedback about a comparison? We'd love to hear from you.</p>
-    <p style="margin-top:1.5rem"><strong>Email:</strong><br>
-    <span class="email">hello@saaspare.org</span></p>
-    <p style="margin-top:1.5rem;color:#666;font-size:.9rem">We typically respond within 2 business days. For urgent corrections to pricing or product information, please include the page URL in your message.</p>
+
+<div class="page-hero">
+  <div class="orb" style="top:-100px;left:50%;transform:translateX(-50%);width:600px;height:320px;background:radial-gradient(ellipse,rgba(233,69,96,.13) 0%,transparent 65%);animation:glow 5s ease-in-out infinite"></div>
+  <div style="position:relative">
+    <p class="eyebrow">Get in touch</p>
+    <h1>We'd love to hear from you.</h1>
+    <p>Spotted outdated pricing? Want to suggest a comparison? Have a partnership idea? Drop us a message.</p>
   </div>
 </div>
+
+<div class="container">
+  <div class="contact-options">
+    <div class="contact-option" style="animation-delay:.05s">
+      <div class="contact-option-icon">🐛</div>
+      <h3>Report an error</h3>
+      <p>Found outdated pricing or an incorrect feature comparison? Let us know and we'll fix it within 48 hours.</p>
+      <a href="mailto:hello@saaspare.org?subject=Error report" class="btn">Report error →</a>
+    </div>
+    <div class="contact-option" style="animation-delay:.1s">
+      <div class="contact-option-icon">💡</div>
+      <h3>Suggest a comparison</h3>
+      <p>We're always expanding. If two tools aren't on SaaSpare yet, tell us and we'll prioritise them.</p>
+      <a href="mailto:hello@saaspare.org?subject=Comparison suggestion" class="btn">Suggest →</a>
+    </div>
+    <div class="contact-option" style="animation-delay:.15s">
+      <div class="contact-option-icon">🤝</div>
+      <h3>Partnership & press</h3>
+      <p>Affiliate programmes, co-marketing or media enquiries — reach out directly.</p>
+      <a href="mailto:hello@saaspare.org?subject=Partnership" class="btn">Get in touch →</a>
+    </div>
+  </div>
+
+  <div class="contact-form" id="form-wrap">
+    <h2>Send a message</h2>
+    <form id="contact-form" action="https://formsubmit.co/smithelly30121@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="SaaSpare contact form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://saaspare.org/contact.html">
+      <div class="field">
+        <label>Your name</label>
+        <input type="text" name="name" placeholder="Jane Smith" required>
+      </div>
+      <div class="field">
+        <label>Email address</label>
+        <input type="email" name="email" placeholder="jane@company.com" required>
+      </div>
+      <div class="field">
+        <label>Topic</label>
+        <select name="topic">
+          <option value="error">Error / outdated info</option>
+          <option value="suggestion">Comparison suggestion</option>
+          <option value="partnership">Partnership / affiliate</option>
+          <option value="press">Press enquiry</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Tell us what's on your mind..." required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message →</button>
+    </form>
+  </div>
+</div>
+
 <footer>
-  <p><a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a></p>
+  <div class="footer-inner">
+    <a href="/" class="logo">
+      <div class="logo-bars"><span></span><span></span><span></span></div>
+      <div class="logo-text">Saa<em>S</em>pare</div>
+    </a>
+    <div class="footer-links">
+      <a href="/pages/">All Comparisons</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+    <span>© 2026 SaaSpare</span>
+  </div>
 </footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+},{passive:true});
+</script>
 </body>
 </html>
