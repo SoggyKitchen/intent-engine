@@ -14,17 +14,11 @@
 <meta property="og:description" content="Compare B2B SaaS tools side by side. Unbiased reviews, real pricing and expert recommendations.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://saaspare.org">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:#07071a;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-@media(pointer:fine){body{cursor:none}}
-.cursor{position:fixed;width:10px;height:10px;background:#e94560;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s;display:none}
-.cursor-ring{position:fixed;width:36px;height:36px;border:1.5px solid rgba(233,69,96,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .2s,height .2s,border-color .2s;display:none}
-@media(pointer:fine){.cursor,.cursor-ring{display:block}}
-.cursor.clicking{transform:translate(-50%,-50%) scale(.6)}
-.cursor-ring.hovering{width:50px;height:50px;border-color:rgba(233,69,96,.65);background:rgba(233,69,96,.05)}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#080810;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 #particles-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.5}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
@@ -53,16 +47,16 @@ nav.scrolled{background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-back
 .nav-link:hover{color:#fff}
 .nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 120% 90% at 50% -10%,#131440 0%,#07071a 65%);padding:9rem 2rem 6.5rem;text-align:center;z-index:1}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 100% 70% at 50% -5%,#1a0d12 0%,#0d0008 40%,#080810 75%);padding:9rem 2rem 6.5rem;text-align:center;z-index:1}
 .orb{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px)}
-.orb1{width:650px;height:650px;background:radial-gradient(circle,rgba(233,69,96,.2) 0%,transparent 70%);top:-250px;left:50%;transform:translateX(-50%);animation:glow 9s ease-in-out infinite}
-.orb2{width:420px;height:420px;background:radial-gradient(circle,rgba(99,102,241,.16) 0%,transparent 70%);top:80px;right:-120px;animation:glow2 11s ease-in-out infinite 2s}
-.orb3{width:320px;height:320px;background:radial-gradient(circle,rgba(233,69,96,.1) 0%,transparent 70%);bottom:-60px;left:-60px;animation:glow2 8s ease-in-out infinite 4s}
+.orb1{width:700px;height:700px;background:radial-gradient(circle,rgba(233,69,96,.18) 0%,transparent 65%);top:-280px;left:50%;transform:translateX(-50%);animation:glow 9s ease-in-out infinite}
+.orb2{width:380px;height:380px;background:radial-gradient(circle,rgba(180,40,60,.12) 0%,transparent 70%);top:60px;right:-140px;animation:glow2 11s ease-in-out infinite 2s}
+.orb3{width:280px;height:280px;background:radial-gradient(circle,rgba(233,69,96,.08) 0%,transparent 70%);bottom:-40px;left:-60px;animation:glow2 8s ease-in-out infinite 4s}
 .hero::after{content:'';position:absolute;left:0;right:0;height:80px;background:linear-gradient(transparent,rgba(233,69,96,.025),transparent);animation:scanline 7s linear infinite;pointer-events:none}
 .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.9);padding:6px 18px;border-radius:100px;font-size:.76rem;font-weight:700;letter-spacing:.4px;margin-bottom:2.2rem;animation:up .6s ease both}
 .badge-dot{width:6px;height:6px;border-radius:50%;background:#e94560;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
 h1.hero-title{font-size:clamp(2.2rem,6.5vw,3.9rem);font-weight:900;color:#fff;line-height:1.07;letter-spacing:-1.2px;margin-bottom:1.5rem;animation:up .7s .1s ease both}
-.grad-text{background:linear-gradient(135deg,#ff8a9c 0%,#e94560 45%,#ff9570 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3.5s linear infinite}
+.grad-text{background:linear-gradient(135deg,#ff6b85 0%,#e94560 50%,#e94060 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3.5s linear infinite}
 .typewriter-wrap{display:inline-block}
 #typewriter::after{content:'|';color:#e94560;animation:blink 1s ease infinite;margin-left:2px;-webkit-text-fill-color:#e94560}
 .hero-sub{color:rgba(255,255,255,.4);font-size:1.06rem;line-height:1.82;max-width:470px;margin:0 auto 3rem;animation:up .7s .2s ease both}
@@ -163,8 +157,6 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
 </head>
 <body>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
 <canvas id="particles-canvas"></canvas>
 
 <nav id="nav">
@@ -296,17 +288,6 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
 </footer>
 
 <script>
-/* CURSOR */
-const cur=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
-(function animRing(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing)})();
-document.addEventListener('mousedown',()=>cur.classList.add('clicking'));
-document.addEventListener('mouseup',()=>cur.classList.remove('clicking'));
-document.querySelectorAll('a,button,input').forEach(el=>{
-  el.addEventListener('mouseenter',()=>ring.classList.add('hovering'));
-  el.addEventListener('mouseleave',()=>ring.classList.remove('hovering'));
-});
 
 /* PARTICLES */
 const canvas=document.getElementById('particles-canvas'),ctx=canvas.getContext('2d');
