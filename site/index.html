@@ -10,142 +10,372 @@
 <meta name="Impact-Site-Verification" content="630c59bd-7d94-4608-bf4d-7c9258a43362">
 <meta name="Impact-Site-Verification" content="a1bb8518-4dc8-412a-80a9-fb1009113071">
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<meta property="og:title" content="SaaSpare — Unbiased B2B Software Comparisons">
+<meta property="og:description" content="Compare B2B SaaS tools side by side. Unbiased reviews, real pricing and expert recommendations.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saaspare.org">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  :root{--primary:#1a1a2e;--accent:#e94560;--bg:#f8f9fa;--text:#333}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-  nav{background:var(--primary);padding:.8rem 1.5rem;display:flex;align-items:center;gap:1.5rem}
-  nav a{color:#ccc;text-decoration:none;font-size:.9rem}
-  nav a:first-child{color:#fff;font-weight:700;font-size:1.15rem;margin-right:auto}
-  nav a:hover{color:#fff}
-  .hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:4rem 1.5rem;text-align:center}
-  .hero h1{font-size:2.4rem;margin-bottom:1rem;line-height:1.2}
-  .hero p{color:#aaa;font-size:1.1rem;max-width:560px;margin:0 auto 2rem}
-  .search-bar{display:flex;max-width:480px;margin:0 auto;gap:.5rem;flex-wrap:wrap;justify-content:center}
-  .search-bar input{flex:1;min-width:240px;padding:.8rem 1.2rem;border:none;border-radius:6px;font-size:1rem}
-  .search-bar button{background:var(--accent);color:#fff;border:none;padding:.8rem 1.5rem;border-radius:6px;cursor:pointer;font-weight:600;font-size:1rem}
-  .container{max-width:960px;margin:0 auto;padding:3rem 1.5rem}
-  .section-title{font-size:1.5rem;color:var(--primary);margin-bottom:1.5rem;font-weight:700}
-  .categories{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:3rem}
-  .cat-card{background:#fff;border-radius:8px;padding:1.25rem;text-decoration:none;color:var(--text);box-shadow:0 1px 4px rgba(0,0,0,.08);transition:transform .15s,box-shadow .15s;border-left:3px solid var(--accent)}
-  .cat-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
-  .cat-card h3{font-size:1rem;margin-bottom:.25rem;color:var(--primary)}
-  .cat-card p{font-size:.82rem;color:#888}
-  .trust{background:#fff;border-radius:8px;padding:2rem;margin-bottom:3rem;box-shadow:0 1px 4px rgba(0,0,0,.06);display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;text-align:center}
-  .trust-item strong{display:block;font-size:1.6rem;color:var(--accent)}
-  .trust-item span{font-size:.85rem;color:#888}
-  .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.75rem;margin-bottom:3rem}
-  .tool-pill{background:#fff;border-radius:6px;padding:.75rem 1rem;text-decoration:none;color:var(--primary);font-size:.9rem;font-weight:500;box-shadow:0 1px 3px rgba(0,0,0,.07);text-align:center}
-  .tool-pill:hover{background:var(--primary);color:#fff}
-  .email-box{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:2.5rem;border-radius:10px;text-align:center;margin-bottom:3rem}
-  .email-box h2{margin-bottom:.5rem}
-  .email-box p{color:#aaa;margin-bottom:1.5rem}
-  .email-row{display:flex;gap:.5rem;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center}
-  .email-row input[type=email]{flex:1;min-width:220px;padding:.75rem 1rem;border:none;border-radius:6px;font-size:.95rem}
-  .email-row button{background:var(--accent);color:#fff;border:none;padding:.75rem 1.4rem;border-radius:6px;cursor:pointer;font-weight:600}
-  footer{text-align:center;color:#999;font-size:.85rem;padding:2rem 1rem;border-top:1px solid #e5e5e5}
-  footer a{color:#aaa;text-decoration:none;margin:0 .5rem}
-  @media(max-width:600px){.hero h1{font-size:1.7rem}.trust{gap:1rem}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#07071a;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@media(pointer:fine){body{cursor:none}}
+.cursor{position:fixed;width:10px;height:10px;background:#e94560;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s;display:none}
+.cursor-ring{position:fixed;width:36px;height:36px;border:1.5px solid rgba(233,69,96,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .2s,height .2s,border-color .2s;display:none}
+@media(pointer:fine){.cursor,.cursor-ring{display:block}}
+.cursor.clicking{transform:translate(-50%,-50%) scale(.6)}
+.cursor-ring.hovering{width:50px;height:50px;border-color:rgba(233,69,96,.65);background:rgba(233,69,96,.05)}
+#particles-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.5}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
+::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
+@keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.9;transform:scale(1.08)}}
+@keyframes glow2{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:.45;transform:scale(1.15)}}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes pulse{0%,100%{box-shadow:0 0 6px #e94560,0 0 0 0 rgba(233,69,96,.5)}50%{box-shadow:0 0 18px #e94560,0 0 0 10px rgba(233,69,96,0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes scanline{0%{top:-5%}100%{top:105%}}
+@keyframes borderPulse{0%,100%{border-color:rgba(233,69,96,.2)}50%{border-color:rgba(233,69,96,.55)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
+nav.scrolled{background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
+.logo{display:flex;align-items:center;gap:9px;margin-right:auto}
+.logo-bars{display:flex;flex-direction:column;gap:3.5px}
+.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px;transition:width .3s}
+.logo-bars span:nth-child(1){width:16px}
+.logo-bars span:nth-child(2){width:11px;opacity:.6}
+.logo-bars span:nth-child(3){width:16px;opacity:.3}
+.logo:hover .logo-bars span:nth-child(2){width:16px;opacity:.8}
+.logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff}
+.logo-text em{color:#e94560;font-style:normal}
+.nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s}
+.nav-link:hover{color:#fff}
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 120% 90% at 50% -10%,#131440 0%,#07071a 65%);padding:9rem 2rem 6.5rem;text-align:center;z-index:1}
+.orb{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px)}
+.orb1{width:650px;height:650px;background:radial-gradient(circle,rgba(233,69,96,.2) 0%,transparent 70%);top:-250px;left:50%;transform:translateX(-50%);animation:glow 9s ease-in-out infinite}
+.orb2{width:420px;height:420px;background:radial-gradient(circle,rgba(99,102,241,.16) 0%,transparent 70%);top:80px;right:-120px;animation:glow2 11s ease-in-out infinite 2s}
+.orb3{width:320px;height:320px;background:radial-gradient(circle,rgba(233,69,96,.1) 0%,transparent 70%);bottom:-60px;left:-60px;animation:glow2 8s ease-in-out infinite 4s}
+.hero::after{content:'';position:absolute;left:0;right:0;height:80px;background:linear-gradient(transparent,rgba(233,69,96,.025),transparent);animation:scanline 7s linear infinite;pointer-events:none}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.9);padding:6px 18px;border-radius:100px;font-size:.76rem;font-weight:700;letter-spacing:.4px;margin-bottom:2.2rem;animation:up .6s ease both}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:#e94560;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
+h1.hero-title{font-size:clamp(2.2rem,6.5vw,3.9rem);font-weight:900;color:#fff;line-height:1.07;letter-spacing:-1.2px;margin-bottom:1.5rem;animation:up .7s .1s ease both}
+.grad-text{background:linear-gradient(135deg,#ff8a9c 0%,#e94560 45%,#ff9570 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3.5s linear infinite}
+.typewriter-wrap{display:inline-block}
+#typewriter::after{content:'|';color:#e94560;animation:blink 1s ease infinite;margin-left:2px;-webkit-text-fill-color:#e94560}
+.hero-sub{color:rgba(255,255,255,.4);font-size:1.06rem;line-height:1.82;max-width:470px;margin:0 auto 3rem;animation:up .7s .2s ease both}
+.search-wrap{animation:up .7s .3s ease both;max-width:560px;margin:0 auto}
+.search-box{display:flex;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.12);border-radius:100px;padding:7px;gap:6px;box-shadow:0 16px 60px rgba(0,0,0,.4);backdrop-filter:blur(20px);transition:border-color .3s,box-shadow .3s;animation:borderPulse 4s ease-in-out infinite}
+.search-box:focus-within{border-color:rgba(233,69,96,.5);box-shadow:0 16px 60px rgba(0,0,0,.4),0 0 0 3px rgba(233,69,96,.12);animation:none}
+.search-box input{flex:1;background:none;border:none;outline:none;padding:.78rem 1.35rem;font-size:.92rem;color:#fff;font-family:inherit}
+.search-box input::placeholder{color:rgba(255,255,255,.22)}
+.search-box button{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:.78rem 1.8rem;border-radius:100px;cursor:pointer;font-weight:700;font-size:.86rem;font-family:inherit;box-shadow:0 4px 18px rgba(233,69,96,.45);white-space:nowrap;transition:transform .15s,box-shadow .15s}
+.search-box button:hover{transform:scale(1.04);box-shadow:0 6px 26px rgba(233,69,96,.62)}
+.popular{margin-top:1.6rem;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;animation:up .7s .4s ease both}
+.popular-label{font-size:.73rem;color:rgba(255,255,255,.24);align-self:center}
+.pop-chip{background:rgba(255,255,255,.052);border:1px solid rgba(255,255,255,.09);color:rgba(255,255,255,.46);padding:4px 13px;border-radius:100px;font-size:.74rem;font-weight:500;transition:all .22s;cursor:pointer}
+.pop-chip:hover{background:rgba(233,69,96,.14);border-color:rgba(233,69,96,.38);color:rgba(255,180,192,.92)}
+.stats{position:relative;z-index:1;background:rgba(255,255,255,.022);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:1.75rem 2rem;display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}
+.stat{text-align:center;padding:0 1.5rem}
+.stat-val{font-size:1.8rem;font-weight:900;color:#e94560;letter-spacing:-.5px;line-height:1;display:block;font-variant-numeric:tabular-nums}
+.stat-label{font-size:.75rem;color:rgba(255,255,255,.26);margin-top:5px;display:block;font-weight:500;letter-spacing:.2px}
+.glow-line{height:1px;background:linear-gradient(90deg,transparent,rgba(233,69,96,.35),rgba(99,102,241,.25),transparent);opacity:.55}
+.section{padding:4.5rem 2rem;max-width:1080px;margin:0 auto;position:relative;z-index:1}
+.eyebrow{font-size:.69rem;font-weight:700;color:rgba(233,69,96,.72);letter-spacing:1.1px;text-transform:uppercase;margin-bottom:8px}
+.section-heading{font-size:1.58rem;font-weight:800;color:#fff;letter-spacing:-.4px;margin-bottom:2rem}
+.section-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2rem;flex-wrap:wrap;gap:.75rem}
+.view-all{color:#e94560;font-size:.82rem;font-weight:600;transition:opacity .18s}
+.view-all:hover{opacity:.7}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(218px,1fr));gap:10px}
+.cat-card{background:rgba(255,255,255,.036);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.15rem 1.28rem;transition:all .25s cubic-bezier(.34,1.4,.64,1);display:block;position:relative;overflow:hidden;opacity:0;will-change:transform}
+.cat-card.visible{animation:fadeUp .5s ease forwards}
+.cat-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(233,69,96,.12),transparent 58%);opacity:0;transition:opacity .3s}
+.cat-card:hover::before{opacity:1}
+.cat-card:hover{background:rgba(233,69,96,.075);border-color:rgba(233,69,96,.3);transform:translateY(-4px) scale(1.015);box-shadow:0 18px 44px rgba(233,69,96,.13)}
+.cat-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.cat-tag{font-size:.67rem;font-weight:700;color:rgba(255,255,255,.24);letter-spacing:.5px;text-transform:uppercase;transition:color .2s}
+.cat-card:hover .cat-tag{color:#e94560}
+.cat-count{font-size:.65rem;color:rgba(255,255,255,.15);background:rgba(255,255,255,.05);padding:2px 7px;border-radius:100px}
+.cat-emoji{font-size:1.35rem;margin-bottom:8px;display:block}
+.cat-name{font-size:.95rem;font-weight:700;color:rgba(255,255,255,.88);margin-bottom:4px;letter-spacing:-.2px}
+.cat-desc{font-size:.74rem;color:rgba(255,255,255,.28);line-height:1.55}
+.filter-bar{display:flex;background:rgba(255,255,255,.048);border:1px solid rgba(255,255,255,.08);border-radius:100px;padding:5px;max-width:300px;margin-bottom:1.6rem;gap:5px}
+.filter-bar input{flex:1;background:none;border:none;outline:none;padding:.44rem 1rem;font-size:.83rem;color:#fff;font-family:inherit}
+.filter-bar input::placeholder{color:rgba(255,255,255,.2)}
+.filter-btn{background:rgba(233,69,96,.16);border:none;color:#e94560;padding:.44rem .9rem;border-radius:100px;cursor:pointer;font-size:.79rem;font-family:inherit;font-weight:600;transition:background .2s}
+.filter-btn:hover{background:rgba(233,69,96,.28)}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:10px}
+.comp-card{background:rgba(255,255,255,.036);border:1px solid rgba(255,255,255,.07);border-radius:13px;padding:1rem 1.2rem;display:flex;align-items:center;gap:12px;transition:all .22s cubic-bezier(.34,1.4,.64,1);opacity:0;will-change:transform}
+.comp-card.visible{animation:fadeUp .4s ease forwards}
+.comp-card:hover{background:rgba(255,255,255,.062);transform:translateY(-3px);box-shadow:0 12px 34px rgba(0,0,0,.28),0 0 0 1px rgba(255,255,255,.09)}
+.comp-icon{width:35px;height:35px;border-radius:9px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.18);display:flex;align-items:center;justify-content:center;font-size:.88rem;flex-shrink:0;transition:background .2s}
+.comp-card:hover .comp-icon{background:rgba(233,69,96,.2)}
+.comp-body{flex:1;min-width:0}
+.comp-title{font-size:.87rem;font-weight:700;color:rgba(255,255,255,.88);letter-spacing:-.1px;margin-bottom:4px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.comp-meta{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.comp-cat{font-size:.7rem;color:rgba(255,255,255,.22);background:rgba(255,255,255,.05);padding:2px 7px;border-radius:100px}
+.comp-hot{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:1px 7px;border-radius:100px;font-size:.6rem;font-weight:800;letter-spacing:.2px}
+.comp-arrow{color:rgba(255,255,255,.14);font-size:.82rem;flex-shrink:0;transition:all .22s;margin-left:auto}
+.comp-card:hover .comp-arrow{color:#e94560;transform:translateX(3px)}
+.comp-hidden{display:none!important}
+.email-wrap{padding:0 2rem 5.5rem;max-width:1080px;margin:0 auto;position:relative;z-index:1}
+.email-box{background:linear-gradient(135deg,rgba(233,69,96,.11) 0%,rgba(99,102,241,.08) 50%,rgba(233,69,96,.06) 100%);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:3.5rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+.email-box::before{content:'';position:absolute;width:450px;height:450px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.13),transparent 70%);top:-150px;right:-120px;pointer-events:none}
+.email-box::after{content:'';position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.1),transparent 70%);bottom:-100px;left:-100px;pointer-events:none}
+.email-box h2{font-size:1.9rem;font-weight:800;color:#fff;letter-spacing:-.5px;margin-bottom:.65rem;position:relative}
+.email-box p{color:rgba(255,255,255,.36);font-size:.94rem;line-height:1.78;max-width:400px;margin:0 auto 2rem;position:relative}
+.email-row{display:flex;gap:8px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center;position:relative}
+.email-row input{flex:1;min-width:200px;padding:.82rem 1.35rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:100px;font-size:.92rem;color:#fff;outline:none;font-family:inherit;transition:border-color .2s,box-shadow .2s}
+.email-row input:focus{border-color:rgba(233,69,96,.45);box-shadow:0 0 0 3px rgba(233,69,96,.1)}
+.email-row input::placeholder{color:rgba(255,255,255,.26)}
+.email-row button{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:.82rem 1.85rem;border-radius:100px;cursor:pointer;font-weight:700;font-size:.9rem;font-family:inherit;box-shadow:0 6px 22px rgba(233,69,96,.45);transition:transform .15s,box-shadow .15s}
+.email-row button:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(233,69,96,.56)}
+.email-note{font-size:.71rem;color:rgba(255,255,255,.17);margin-top:.9rem}
+footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
+.footer-inner{max-width:1080px;margin:0 auto;padding:3rem 2rem 2rem;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem}
+.footer-brand p{font-size:.82rem;color:rgba(255,255,255,.24);line-height:1.72;max-width:220px;margin-top:.75rem}
+.footer-col h4{font-size:.67rem;font-weight:700;color:rgba(255,255,255,.24);letter-spacing:.85px;text-transform:uppercase;margin-bottom:.9rem}
+.footer-col a{display:block;font-size:.83rem;color:rgba(255,255,255,.34);margin-bottom:.52rem;transition:color .18s}
+.footer-col a:hover{color:#fff}
+.footer-logo{display:flex;align-items:center;gap:8px;margin-bottom:.6rem}
+.footer-bottom{max-width:1080px;margin:0 auto;padding:1.25rem 2rem;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.74rem;color:rgba(255,255,255,.2)}
+.footer-bottom a{color:rgba(255,255,255,.26);transition:color .18s}
+.footer-bottom a:hover{color:rgba(255,255,255,.6)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){
+  nav{padding:.75rem 1.25rem}
+  .nav-link{display:none}
+  .hero{padding:7rem 1.25rem 4.5rem}
+  h1.hero-title{font-size:2rem;letter-spacing:-.6px}
+  .section{padding:3rem 1.25rem}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .comp-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:2rem}
+  .email-box{padding:2rem 1.5rem}
+  .email-box h2{font-size:1.45rem}
+}
+@media(max-width:480px){.cat-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
 </head>
 <body>
-<nav>
-  <a href="https://saaspare.org">SaaSpare</a>
-  <a href="https://saaspare.org/pages/">All Comparisons</a>
-  <a href="https://saaspare.org/pages/saas-roi-calculator.html">ROI Calculator</a>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="nav">
+  <a href="/" class="logo">
+    <div class="logo-bars"><span></span><span></span><span></span></div>
+    <span class="logo-text">Saas<em>Spare</em></span>
+  </a>
+  <a href="/pages/" class="nav-link">Comparisons</a>
+  <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
+  <a href="/about.html" class="nav-link">About</a>
+  <a href="/pages/" class="nav-cta">Browse Tools &#8594;</a>
 </nav>
 
-<div class="hero">
-  <h1>Find the Right B2B Software.<br>Without the Guesswork.</h1>
-  <p>Unbiased comparisons, real pricing and honest reviews for the tools your business actually needs.</p>
-  <div class="search-bar">
-    <input type="text" id="search-input" placeholder="Search tools (e.g. HubSpot, Notion, Semrush...)" onkeydown="if(event.key==='Enter')doSearch()">
-    <button onclick="doSearch()">Compare →</button>
+<section class="hero">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="badge"><span class="badge-dot"></span>1,300+ comparisons updated weekly</div>
+  <h1 class="hero-title">
+    Find the Best<br>
+    <span class="grad-text typewriter-wrap"><span id="typewriter">CRM Software</span></span><br>
+    Without the Guesswork
+  </h1>
+  <p class="hero-sub">Unbiased, data-driven comparisons of B2B SaaS tools. Real pricing, honest pros &amp; cons, clear recommendations.</p>
+  <div class="search-wrap">
+    <div class="search-box">
+      <input type="text" id="hero-search" placeholder="Search tools — HubSpot, Notion, Shopify..." autocomplete="off" onkeydown="if(event.key==='Enter')doHeroSearch()">
+      <button onclick="doHeroSearch()">Compare &#8594;</button>
+    </div>
+    <div class="popular">
+      <span class="popular-label">Popular:</span>
+      <a class="pop-chip" href="/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay.html">HubSpot</a>
+      <a class="pop-chip" href="/pages/notion-pricing-2026-plans-costs-what-you-actually-pay.html">Notion</a>
+      <a class="pop-chip" href="/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay.html">Shopify</a>
+      <a class="pop-chip" href="/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay.html">Salesforce</a>
+      <a class="pop-chip" href="/pages/ahrefs-vs-semrush-which-is-better-in-2026.html">Ahrefs vs SEMrush</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><span class="stat-val" data-count="1300">0</span><span class="stat-label">Tool comparisons</span></div>
+  <div class="stat"><span class="stat-val" data-count="16">0</span><span class="stat-label">SaaS categories</span></div>
+  <div class="stat"><span class="stat-val" data-count="40">0</span><span class="stat-label">New pages weekly</span></div>
+  <div class="stat"><span class="stat-val">Free</span><span class="stat-label">Always free to read</span></div>
+</div>
+<div class="glow-line"></div>
+
+<div class="section reveal">
+  <div class="section-header">
+    <div><p class="eyebrow">Browse by category</p><h2 class="section-heading">16 SaaS Verticals Covered</h2></div>
+    <a href="/pages/" class="view-all">View all &#8594;</a>
+  </div>
+  <div class="cat-grid">
+    <a class="cat-card" href="/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay.html"><span class="cat-emoji">&#128269;</span><div class="cat-header"><span class="cat-tag">SEO</span><span class="cat-count">28+</span></div><div class="cat-name">SEO Tools</div><div class="cat-desc">Ahrefs, Semrush, Moz, Surfer SEO, SE Ranking</div></a>
+    <a class="cat-card" href="/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay.html"><span class="cat-emoji">&#128202;</span><div class="cat-header"><span class="cat-tag">CRM</span><span class="cat-count">18+</span></div><div class="cat-name">CRM</div><div class="cat-desc">Salesforce, HubSpot, Pipedrive, Monday CRM</div></a>
+    <a class="cat-card" href="/pages/"><span class="cat-emoji">&#128227;</span><div class="cat-header"><span class="cat-tag">Marketing</span><span class="cat-count">24+</span></div><div class="cat-name">Marketing Automation</div><div class="cat-desc">HubSpot, ActiveCampaign, Mailchimp, Brevo</div></a>
+    <a class="cat-card" href="/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay.html"><span class="cat-emoji">&#128101;</span><div class="cat-header"><span class="cat-tag">HR</span><span class="cat-count">14+</span></div><div class="cat-name">HR &amp; Recruiting</div><div class="cat-desc">Rippling, Deel, BambooHR, Gusto, Workable</div></a>
+    <a class="cat-card" href="/pages/xero-pricing-2026-plans-costs-what-you-actually-pay.html"><span class="cat-emoji">&#128176;</span><div class="cat-header"><span class="cat-tag">Finance</span><span class="cat-count">16+</span></div><div class="cat-name">Finance Ops</div><div class="cat-desc">Ramp, Brex, Xero, FreshBooks, QuickBooks</div></a>
+    <a class="cat-card" href="/pages/"><span class="cat-emoji">&#128295;</span><div class="cat-header"><span class="cat-tag">Dev</span><span class="cat-count">20+</span></div><div class="cat-name">Dev Tools</div><div class="cat-desc">Datadog, Linear, GitHub Copilot, Sentry</div></a>
+    <a class="cat-card" href="/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay.html"><span class="cat-emoji">&#128722;</span><div class="cat-header"><span class="cat-tag">Ecommerce</span><span class="cat-count">12+</span></div><div class="cat-name">Ecommerce</div><div class="cat-desc">Shopify, BigCommerce, WooCommerce, Gumroad</div></a>
+    <a class="cat-card" href="/pages/"><span class="cat-emoji">&#128274;</span><div class="cat-header"><span class="cat-tag">Security</span><span class="cat-count">10+</span></div><div class="cat-name">Cybersecurity</div><div class="cat-desc">1Password, NordLayer, CrowdStrike, Okta</div></a>
+    <a class="cat-card" href="/pages/notion-pricing-2026-plans-costs-what-you-actually-pay.html"><span class="cat-emoji">&#128203;</span><div class="cat-header"><span class="cat-tag">PM</span><span class="cat-count">22+</span></div><div class="cat-name">Project Management</div><div class="cat-desc">Asana, ClickUp, Notion, Monday, Linear</div></a>
+    <a class="cat-card" href="/pages/"><span class="cat-emoji">&#9729;&#65039;</span><div class="cat-header"><span class="cat-tag">Cloud</span><span class="cat-count">14+</span></div><div class="cat-name">Cloud Infrastructure</div><div class="cat-desc">DigitalOcean, Render, Supabase, Vercel</div></a>
+    <a class="cat-card" href="/pages/"><span class="cat-emoji">&#9878;&#65039;</span><div class="cat-header"><span class="cat-tag">Legal</span><span class="cat-count">8+</span></div><div class="cat-name">Legal &amp; Contracts</div><div class="cat-desc">DocuSign, PandaDoc, Ironclad, SignNow</div></a>
+    <a class="cat-card" href="/pages/"><span class="cat-emoji">&#129302;</span><div class="cat-header"><span class="cat-tag">AI</span><span class="cat-count">18+</span></div><div class="cat-name">AI Writing Tools</div><div class="cat-desc">Jasper, Copy.ai, Writesonic, Claude, Perplexity</div></a>
   </div>
 </div>
+<div class="glow-line"></div>
 
-<div class="container">
-
-  <div class="trust">
-    <div class="trust-item"><strong>500+</strong><span>Tool comparisons</span></div>
-    <div class="trust-item"><strong>16</strong><span>SaaS categories</span></div>
-    <div class="trust-item"><strong>Free</strong><span>Always free to read</span></div>
-    <div class="trust-item"><strong>2026</strong><span>Updated weekly</span></div>
+<div class="section reveal">
+  <div class="section-header">
+    <div><p class="eyebrow">Hand-picked</p><h2 class="section-heading">Popular Comparisons</h2></div>
+    <a href="/pages/" class="view-all">View all &#8594;</a>
   </div>
-
-  <h2 class="section-title">Browse by Category</h2>
-  <div class="categories">
-    <a class="cat-card" href="https://saaspare.org/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay"><h3>🔍 SEO Tools</h3><p>Ahrefs, Semrush, Moz, Surfer SEO</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>📊 CRM</h3><p>Salesforce, HubSpot, Pipedrive</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>📣 Marketing</h3><p>HubSpot, ActiveCampaign, Mailchimp</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>👥 HR &amp; Recruiting</h3><p>Rippling, Deel, BambooHR, Gusto</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>💰 Finance Ops</h3><p>Ramp, Brex, Xero, FreshBooks</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>🛠 Devtools</h3><p>Datadog, Linear, GitHub Copilot</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>🛒 Ecommerce</h3><p>Shopify, BigCommerce, Gumroad</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>🔐 Cybersecurity</h3><p>1Password, NordLayer, CrowdStrike</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>📋 Project Mgmt</h3><p>Asana, ClickUp, Notion, Monday</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>☁️ Cloud Infra</h3><p>DigitalOcean, Render, Supabase</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>⚖️ Legal</h3><p>DocuSign, PandaDoc, Ironclad</p></a>
-    <a class="cat-card" href="https://saaspare.org/pages/"><h3>🤖 AI Tools</h3><p>Jasper, Copy.ai, Writesonic</p></a>
+  <div class="filter-bar">
+    <input type="text" id="comp-search" placeholder="Filter comparisons..." oninput="filterComps(this.value)" autocomplete="off">
+    <button class="filter-btn" onclick="filterComps(document.getElementById('comp-search').value)">Filter</button>
   </div>
-
-  <h2 class="section-title">Popular Comparisons</h2>
-  <div class="tools-grid" id="latest-pages">
-    <a class="tool-pill" href="https://saaspare.org/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay">Shopify Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay">Vultr Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay">Surfer Seo Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay">Zoom Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026">Semrush Vs Moz Pro Which Is Better In</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/semrush-vs-clearscope-which-is-better-in-2026">Semrush Vs Clearscope Which Is Better In</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay">Semrush Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/semrush-vs-surfer-seo-which-is-better-in-2026">Semrush Vs Surfer Seo Which Is Better In</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/workable-pricing-2026-plans-costs-what-you-actually-pay">Workable Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay">Xero Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/semrush-vs-se-ranking-which-is-better-in-2026">Semrush Vs Se Ranking Which Is Better In</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/semrush-vs-mangools-which-is-better-in-2026">Semrush Vs Mangools Which Is Better In</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/semrush-vs-spyfu-which-is-better-in-2026">Semrush Vs Spyfu Which Is Better In</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay">Jasper Ai Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/saas-roi-calculator">Saas Roi Calculator</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay">Nordlayer Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/index">Index</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay">Pandadoc Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay">Rippling Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay">Monday Com Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay">Pipedrive Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay">Salesforce Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay">Notion Pricing</a>
-    <a class="tool-pill" href="https://saaspare.org/pages/linear-pricing-2026-plans-costs-what-you-actually-pay">Linear Pricing</a>
+  <div class="comp-grid" id="comp-grid">
+    <a class="comp-card" href="/pages/ahrefs-vs-semrush-which-is-better-in-2026.html" data-title="ahrefs vs semrush seo"><div class="comp-icon">&#9876;</div><div class="comp-body"><div class="comp-title">Ahrefs vs SEMrush</div><div class="comp-meta"><span class="comp-cat">SEO</span><span class="comp-hot">Hot</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="shopify pricing ecommerce"><div class="comp-icon">&#128722;</div><div class="comp-body"><div class="comp-title">Shopify Pricing 2026</div><div class="comp-meta"><span class="comp-cat">Ecommerce</span><span class="comp-hot">Hot</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/notion-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="notion pricing plans pm"><div class="comp-icon">&#128211;</div><div class="comp-body"><div class="comp-title">Notion Pricing 2026</div><div class="comp-meta"><span class="comp-cat">PM</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="salesforce pricing crm enterprise"><div class="comp-icon">&#9729;</div><div class="comp-body"><div class="comp-title">Salesforce Pricing 2026</div><div class="comp-meta"><span class="comp-cat">CRM</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/semrush-vs-moz-pro-which-is-better-in-2026.html" data-title="semrush vs moz seo"><div class="comp-icon">&#128269;</div><div class="comp-body"><div class="comp-title">Semrush vs Moz Pro</div><div class="comp-meta"><span class="comp-cat">SEO</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="rippling pricing hr payroll"><div class="comp-icon">&#128101;</div><div class="comp-body"><div class="comp-title">Rippling Pricing 2026</div><div class="comp-meta"><span class="comp-cat">HR</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/linear-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="linear pricing dev tools"><div class="comp-icon">&#128311;</div><div class="comp-body"><div class="comp-title">Linear Pricing 2026</div><div class="comp-meta"><span class="comp-cat">Dev</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="monday pricing project management"><div class="comp-icon">&#128197;</div><div class="comp-body"><div class="comp-title">Monday.com Pricing 2026</div><div class="comp-meta"><span class="comp-cat">PM</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/xero-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="xero pricing accounting finance"><div class="comp-icon">&#128179;</div><div class="comp-body"><div class="comp-title">Xero Pricing 2026</div><div class="comp-meta"><span class="comp-cat">Finance</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="pipedrive pricing crm sales"><div class="comp-icon">&#128200;</div><div class="comp-body"><div class="comp-title">Pipedrive Pricing 2026</div><div class="comp-meta"><span class="comp-cat">CRM</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="semrush pricing seo tools"><div class="comp-icon">&#128269;</div><div class="comp-body"><div class="comp-title">Semrush Pricing 2026</div><div class="comp-meta"><span class="comp-cat">SEO</span><span class="comp-hot">Hot</span></div></div><div class="comp-arrow">&#8250;</div></a>
+    <a class="comp-card" href="/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="clickup pricing productivity pm"><div class="comp-icon">&#9989;</div><div class="comp-body"><div class="comp-title">ClickUp Pricing 2026</div><div class="comp-meta"><span class="comp-cat">PM</span></div></div><div class="comp-arrow">&#8250;</div></a>
   </div>
+</div>
+<div class="glow-line"></div>
 
+<div class="email-wrap reveal">
   <div class="email-box">
     <h2>Get the Weekly SaaS Deal Digest</h2>
-    <p>Free trials, discounts and new comparisons — straight to your inbox every Friday.</p>
+    <p>Free trials, pricing changes and new comparisons — straight to your inbox every Friday.</p>
     <form action="https://formsubmit.co/smithelly30121@gmail.com" method="POST" class="email-row">
       <input type="email" name="email" placeholder="your@email.com" required>
       <input type="hidden" name="_subject" value="New SaaSpare subscriber">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://saaspare.org/pages/thanks.html">
-      <button type="submit">Subscribe Free</button>
+      <button type="submit">Subscribe Free &#8594;</button>
     </form>
+    <p class="email-note">No spam. Unsubscribe any time.</p>
   </div>
-
 </div>
 
 <footer>
-  <p>
-    <a href="https://saaspare.org/pages/">All Comparisons</a>
-    <a href="https://saaspare.org/pages/saas-roi-calculator.html">ROI Calculator</a>
-    <a href="https://saaspare.org/about.html">About</a>
-    <a href="https://saaspare.org/privacy.html">Privacy</a>
-  </p>
-  <p style="margin-top:.5rem">© 2026 SaaSpare · This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-bars"><span></span><span></span><span></span></div>
+        <span style="font-weight:800;font-size:.95rem">Saas<em style="color:#e94560;font-style:normal">Spare</em></span>
+      </div>
+      <p>Unbiased B2B SaaS comparisons for founders, CTOs and operators making smart software decisions.</p>
+    </div>
+    <div class="footer-col"><h4>Compare</h4><a href="/pages/">All Comparisons</a><a href="/pages/">CRM Tools</a><a href="/pages/">SEO Software</a><a href="/pages/">HR Tools</a><a href="/pages/">Dev Tools</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="/pages/saas-roi-calculator.html">ROI Calculator</a><a href="/pages/">Pricing Guides</a><a href="/pages/">Tool Reviews</a><a href="/pages/">Alternatives</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy Policy</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&#169; 2026 SaaSpare &#183; <a href="/privacy.html">Affiliate Disclosure</a></span>
+    <span>This site contains affiliate links. We may earn a commission at no extra cost to you.</span>
+  </div>
 </footer>
 
 <script>
-function doSearch(){
-  var q=document.getElementById('search-input').value.trim();
-  if(q) window.location.href='https://saaspare.org/pages/';
+/* CURSOR */
+const cur=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function animRing(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing)})();
+document.addEventListener('mousedown',()=>cur.classList.add('clicking'));
+document.addEventListener('mouseup',()=>cur.classList.remove('clicking'));
+document.querySelectorAll('a,button,input').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('hovering'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('hovering'));
+});
+
+/* PARTICLES */
+const canvas=document.getElementById('particles-canvas'),ctx=canvas.getContext('2d');
+let W,H;
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight}resize();
+window.addEventListener('resize',resize);
+const pts=Array.from({length:80},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.32,vy:(Math.random()-.5)*.32,r:Math.random()*1.4+.4,a:Math.random()*.45+.08,c:Math.random()>.6?'233,69,96':'130,130,210'}));
+(function draw(){
+  ctx.clearRect(0,0,W,H);
+  pts.forEach(p=>{
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(${p.c},${p.a})`;ctx.fill();
+  });
+  pts.forEach((a,i)=>pts.slice(i+1).forEach(b=>{
+    const d=Math.hypot(a.x-b.x,a.y-b.y);
+    if(d<110){ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.strokeStyle=`rgba(233,69,96,${(1-d/110)*.07})`;ctx.lineWidth=.7;ctx.stroke()}
+  }));
+  requestAnimationFrame(draw);
+})();
+
+/* NAV SCROLL */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40),{passive:true});
+
+/* TYPEWRITER */
+const words=['CRM Software','HR Tools','Dev Tools','SEO Software','Finance Tools','Project Management','Marketing Automation','Cloud Infrastructure'];
+let wi=0,ci=0,del=false,tw=document.getElementById('typewriter');
+function type(){
+  const w=words[wi];
+  del?tw.textContent=w.slice(0,--ci):tw.textContent=w.slice(0,++ci);
+  if(!del&&ci===w.length){del=true;setTimeout(type,1800);return}
+  if(del&&ci===0){del=false;wi=(wi+1)%words.length}
+  setTimeout(type,del?52:82);
 }
+setTimeout(type,900);
+
+/* COUNTERS */
+function animCount(el){
+  const t=+el.dataset.count;let c=0;const s=t/55;
+  const iv=setInterval(()=>{c=Math.min(c+s,t);el.textContent=Math.floor(c).toLocaleString()+(t>=100?'+':'');if(c>=t)clearInterval(iv)},18);
+}
+const sObs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('[data-count]').forEach(animCount);sObs.disconnect()}})},{threshold:.5});
+const sEl=document.querySelector('.stats');if(sEl)sObs.observe(sEl);
+
+/* SCROLL REVEAL */
+const rObs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>rObs.observe(el));
+
+/* CARD STAGGER */
+const cObs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){
+  e.target.querySelectorAll('.cat-card,.comp-card').forEach((c,i)=>{c.style.animationDelay=i*.048+'s';c.classList.add('visible')});
+  cObs.unobserve(e.target);
+}})},{threshold:.08});
+document.querySelectorAll('.cat-grid,.comp-grid').forEach(g=>cObs.observe(g));
+
+/* CARD MOUSE GLOW */
+document.querySelectorAll('.cat-card').forEach(c=>c.addEventListener('mousemove',e=>{
+  const r=c.getBoundingClientRect();
+  c.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
+  c.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+}));
+
+/* FILTER */
+function filterComps(q){const lq=q.toLowerCase();document.querySelectorAll('#comp-grid .comp-card').forEach(c=>{c.classList.toggle('comp-hidden',q.length>0&&!c.dataset.title.includes(lq)&&!c.querySelector('.comp-title').textContent.toLowerCase().includes(lq))})}
+
+/* HERO SEARCH */
+function doHeroSearch(){const q=document.getElementById('hero-search').value.trim();if(q)window.location.href='/pages/'}
 </script>
 </body>
 </html>
