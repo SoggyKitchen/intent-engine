@@ -384,7 +384,12 @@ Return JSON exactly:
   "faqs": [
     {{"question": "Is {tool_a} better than {tool_b}?", "answer": "<balanced answer>"}},
     {{"question": "Which is cheaper, {tool_a} or {tool_b}?", "answer": "<pricing comparison>"}},
-    {{"question": "Can I switch from {tool_b} to {tool_a}?", "answer": "<migration answer>"}}
+    {{"question": "Can I switch from {tool_b} to {tool_a}?", "answer": "<migration answer>"}},
+    {{"question": "Does {tool_a} or {tool_b} have a free plan?", "answer": "<free tier comparison>"}},
+    {{"question": "Which has better customer support, {tool_a} or {tool_b}?", "answer": "<support comparison with response times>"}},
+    {{"question": "Is {tool_a} or {tool_b} better for small teams?", "answer": "<SMB-specific answer>"}},
+    {{"question": "Does {tool_a} integrate with {tool_b}?", "answer": "<integration/migration answer>"}},
+    {{"question": "Which tool has more features, {tool_a} or {tool_b}?", "answer": "<feature-count and depth answer>"}}
   ],
   "deep_sections": [
     {{"heading": "Feature Deep Dive", "content": "<4-6 sentences comparing specific features of {tool_a} vs {tool_b} in detail, naming real feature names>"}},
@@ -510,7 +515,12 @@ Return JSON:
   "faqs": [
     {{"question": "How much does {tool} cost per month?", "answer": "<specific pricing>"}},
     {{"question": "Does {tool} have a free plan?", "answer": "<free tier details>"}},
-    {{"question": "Is {tool} worth the price?", "answer": "<honest ROI assessment>"}}
+    {{"question": "Is {tool} worth the price?", "answer": "<honest ROI assessment>"}},
+    {{"question": "Can I get a {tool} discount?", "answer": "<annual savings %, startup/nonprofit programs, negotiation tips>"}},
+    {{"question": "What's the cheapest {tool} plan?", "answer": "<starter plan details, limitations, who it suits>"}},
+    {{"question": "Does {tool} charge per user?", "answer": "<per-seat pricing structure, minimums, team tier breakpoints>"}},
+    {{"question": "Are there hidden costs with {tool}?", "answer": "<overages, add-ons, implementation, commitment penalties>"}},
+    {{"question": "How does {tool} pricing compare to competitors?", "answer": "<2-3 named alternatives with price comparison>"}}
   ],
   "deep_sections": [
     {{"heading": "Plan Breakdown", "content": "<detailed breakdown of each {tool} pricing tier — what's included, user limits, feature gates and who each plan suits>"}},

@@ -3,118 +3,340 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All SaaS Comparisons & Guides | SaaSpare</title>
-<meta name="description" content="Browse 54 B2B SaaS comparison pages, pricing guides, reviews and alternatives — all free.">
-<meta name="robots" content="index, follow">
+<title>All B2B Software Comparisons — SaaSpare</title>
+<meta name="description" content="Browse 500+ unbiased B2B SaaS comparisons across 16 categories. Find the right tool for your team.">
 <link rel="canonical" href="https://saaspare.org/pages/">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--primary:#1a1a2e;--accent:#e94560;--bg:#f8f9fa;--text:#333}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-  nav{background:var(--primary);padding:.7rem 1rem;display:flex;align-items:center;gap:1.5rem}
-  nav a{color:#ccc;text-decoration:none;font-size:.9rem}
-  nav a:first-child{color:#fff;font-weight:700;font-size:1.1rem;margin-right:auto}
-  nav a:hover{color:#fff}
-  .hero{background:var(--primary);color:#fff;padding:3rem 1rem;text-align:center}
-  .hero h1{font-size:2rem;margin-bottom:.5rem}
-  .hero p{color:#aaa;font-size:1.1rem}
-  .container{max-width:960px;margin:0 auto;padding:2rem 1rem}
-  .page-group{background:#fff;border-radius:8px;padding:1.5rem 2rem;margin:1.5rem 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-  .page-group h2{color:var(--primary);font-size:1.25rem;margin-bottom:1rem;border-bottom:2px solid var(--accent);padding-bottom:.4rem;display:flex;align-items:center;gap:.5rem}
-  .count{font-size:.85rem;font-weight:400;color:#888}
-  .page-group ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.4rem}
-  .page-group li a{display:block;padding:.35rem .6rem;border-radius:4px;text-decoration:none;color:#333;font-size:.9rem;transition:background .15s}
-  .page-group li a:hover{background:#f0f0f0;color:var(--accent)}
-  footer{text-align:center;color:#999;font-size:.85rem;margin-top:3rem;padding-top:2rem;border-top:1px solid #eee}
-  footer a{color:#aaa;text-decoration:none}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#0a0a14;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:5px;background:rgba(255,255,255,.03)}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:3px}
+@keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.85;transform:scale(1.1)}}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
+nav.scrolled{background:rgba(10,10,20,.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.07)}
+.logo{display:flex;align-items:center;gap:8px;margin-right:auto}
+.logo-bars{display:flex;flex-direction:column;gap:3px}
+.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px}
+.logo-bars span:nth-child(1){width:14px}
+.logo-bars span:nth-child(2){width:10px;opacity:.65}
+.logo-bars span:nth-child(3){width:14px;opacity:.35}
+.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.logo-text em{color:#e94560;font-style:normal}
+.nav-link{color:rgba(255,255,255,.5);font-size:.83rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s}
+.nav-link:hover,.nav-link.active{color:#fff}
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.42rem 1.1rem;border-radius:100px;font-weight:700;font-size:.82rem;box-shadow:0 4px 14px rgba(233,69,96,.35);margin-left:6px;transition:transform .15s}
+.nav-cta:hover{transform:translateY(-1px)}
+
+.page-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0f1729 0%,#0a0f2e 50%,#150a22 100%);padding:7rem 2rem 3.5rem}
+.orb{position:absolute;pointer-events:none;border-radius:50%}
+.hero-inner{max-width:1040px;margin:0 auto;position:relative;display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.hero-text .eyebrow{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.28);letter-spacing:.8px;text-transform:uppercase;margin-bottom:.65rem;animation:up .6s ease both}
+.hero-text h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.1;margin-bottom:.6rem;animation:up .7s .1s ease both}
+.hero-text p{color:rgba(255,255,255,.42);font-size:.95rem;line-height:1.7;animation:up .7s .2s ease both}
+
+/* Search / filter bar */
+.filter-bar{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:100px;display:flex;align-items:center;padding:6px 6px 6px 1.2rem;gap:6px;max-width:340px;animation:up .7s .3s ease both}
+.filter-bar input{background:none;border:none;outline:none;font-size:.88rem;color:#fff;font-family:inherit;flex:1;min-width:0}
+.filter-bar input::placeholder{color:rgba(255,255,255,.28)}
+.filter-bar button{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:.5rem 1rem;border-radius:100px;font-size:.8rem;font-weight:700;font-family:inherit;cursor:pointer;white-space:nowrap}
+
+/* Layout */
+.page-body{max-width:1040px;margin:0 auto;padding:3rem 2rem 5rem;display:grid;grid-template-columns:220px 1fr;gap:2.5rem;align-items:start}
+
+/* Sidebar filters */
+.sidebar{position:sticky;top:80px}
+.sidebar-section{margin-bottom:1.5rem}
+.sidebar-section h3{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:.7px;text-transform:uppercase;margin-bottom:.75rem}
+.filter-chip{display:block;width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:.45rem .7rem;border-radius:8px;font-size:.84rem;color:rgba(255,255,255,.45);font-family:inherit;transition:all .18s;position:relative;padding-right:2.5rem}
+.filter-chip:hover{background:rgba(255,255,255,.06);color:rgba(255,255,255,.8)}
+.filter-chip.active{background:rgba(233,69,96,.12);color:rgba(255,180,192,.9);font-weight:600}
+.filter-chip .count{position:absolute;right:.7rem;top:50%;transform:translateY(-50%);font-size:.7rem;color:rgba(255,255,255,.2);background:rgba(255,255,255,.06);padding:1px 6px;border-radius:100px}
+.filter-chip.active .count{color:rgba(255,150,170,.7);background:rgba(233,69,96,.15)}
+
+/* Results */
+.results-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;flex-wrap:wrap;gap:.75rem}
+.results-count{font-size:.84rem;color:rgba(255,255,255,.35);font-weight:500}
+.sort-row{display:flex;gap:6px}
+.sort-btn{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.4);padding:4px 12px;border-radius:100px;font-size:.76rem;font-weight:500;cursor:pointer;font-family:inherit;transition:all .18s}
+.sort-btn.active,.sort-btn:hover{background:rgba(233,69,96,.12);border-color:rgba(233,69,96,.25);color:rgba(255,180,192,.9)}
+
+.comp-list{display:flex;flex-direction:column;gap:8px}
+.comp-row{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1rem 1.25rem;display:flex;align-items:center;gap:1rem;transition:all .2s cubic-bezier(.34,1.4,.64,1);cursor:pointer;opacity:0;animation:fadeUp .4s ease forwards}
+.comp-row:hover{background:rgba(255,255,255,.07);transform:translateX(3px);border-color:rgba(255,255,255,.12)}
+.comp-row-title{font-size:.92rem;font-weight:700;color:rgba(255,255,255,.88);letter-spacing:-.2px;margin-bottom:3px}
+.comp-row-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.tag{font-size:.7rem;color:rgba(255,255,255,.25);background:rgba(255,255,255,.05);padding:2px 8px;border-radius:100px}
+.winner-tag{font-size:.7rem;color:rgba(40,167,69,.7);font-weight:600}
+.hot-tag{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:1px 7px;border-radius:100px;font-size:.62rem;font-weight:800}
+.comp-row-right{margin-left:auto;display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.comp-arrow{color:rgba(255,255,255,.18);font-size:.85rem;transition:all .2s}
+.comp-row:hover .comp-arrow{color:#e94560;transform:translateX(4px)}
+
+/* Category dividers */
+.cat-divider{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.25);letter-spacing:.7px;text-transform:uppercase;padding:.6rem 0;margin-top:1rem;border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:.6rem}
+
+footer{border-top:1px solid rgba(255,255,255,.07)}
+.footer-inner-sm{max-width:1040px;margin:0 auto;padding:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:rgba(255,255,255,.3)}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.35);transition:color .18s}
+.footer-links a:hover{color:#fff}
+
+@media(max-width:800px){
+  nav{padding:.75rem 1.25rem}
+  .nav-link{display:none}
+  .page-body{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .filter-chips-row{display:flex;gap:6px;flex-wrap:wrap}
+  .filter-chip{display:inline-block;width:auto;padding:.4rem .85rem}
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .filter-bar{max-width:100%}
+}
+  .ad-slot-v2{margin:2rem 0;text-align:center;min-height:90px;background:#fafbfc;border-radius:6px;padding:1rem}
+  .ad-label-v2{font-size:.65rem;color:#bbb;letter-spacing:.5px;text-transform:uppercase;display:block;margin-bottom:.25rem}
+  .sticky-cta-v2{position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:.75rem 1rem;display:none;align-items:center;justify-content:space-between;gap:1rem;box-shadow:0 -4px 18px rgba(0,0,0,.15);z-index:100}
+  .sticky-cta-v2.show{display:flex}
+  .sticky-cta-v2 a{background:#e94560;color:#fff;padding:.5rem 1.1rem;border-radius:5px;text-decoration:none;font-weight:700;font-size:.85rem;white-space:nowrap}
+  .sticky-cta-v2 button{background:none;border:none;color:rgba(255,255,255,.5);font-size:1.1rem;cursor:pointer}
+  .exit-modal-v2{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:1rem}
+  .exit-modal-v2.show{display:flex}
+  .exit-card-v2{background:#fff;border-radius:12px;padding:2rem;max-width:440px;text-align:center;position:relative}
+  .exit-card-v2 h3{color:#1a1a2e;font-size:1.3rem;margin-bottom:.5rem}
+  .exit-card-v2 p{color:#666;font-size:.92rem;margin-bottom:1.25rem}
+  .exit-close-v2{position:absolute;top:.5rem;right:.75rem;background:none;border:none;font-size:1.5rem;color:#aaa;cursor:pointer}
+  .exit-card-v2 form{display:flex;gap:.5rem;flex-wrap:wrap}
+  .exit-card-v2 input{flex:1;min-width:180px;padding:.65rem .9rem;border:1px solid #ddd;border-radius:5px}
+  .exit-card-v2 button[type=submit]{background:#e94560;color:#fff;border:none;padding:.65rem 1.2rem;border-radius:5px;font-weight:700;cursor:pointer}
 </style>
+<meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
+<!-- saaspare-v2-patched -->
 </head>
 <body>
-<nav>
-  <a href="https://saaspare.org">SaaSpare</a>
-  <a href="https://saaspare.org/pages/">All Comparisons</a>
-  <a href="https://saaspare.org/about.html">About</a>
-</nav>
-<div class="hero">
-  <h1>All SaaS Comparisons & Guides</h1>
-  <p>54 pages covering pricing, comparisons, reviews and alternatives</p>
-</div>
-<div class="container">
 
-      <section class="page-group">
-        <h2>Comparisons <span class="count">(15)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-clearscope-which-is-better-in-2026">Ahrefs Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-frase-io-which-is-better-in-2026">Ahrefs Vs Frase Io Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-mangools-which-is-better-in-2026">Ahrefs Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-moz-pro-which-is-better-in-2026">Ahrefs Vs Moz Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-rankmath-pro-which-is-better-in-2026">Ahrefs Vs Rankmath Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-se-ranking-which-is-better-in-2026">Ahrefs Vs Se Ranking Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-semrush-which-is-better-in-2026">Ahrefs Vs Semrush Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-spyfu-which-is-better-in-2026">Ahrefs Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-surfer-seo-which-is-better-in-2026">Ahrefs Vs Surfer Seo Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-clearscope-which-is-better-in-2026">Semrush Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-mangools-which-is-better-in-2026">Semrush Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026">Semrush Vs Moz Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-se-ranking-which-is-better-in-2026">Semrush Vs Se Ranking Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-spyfu-which-is-better-in-2026">Semrush Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-surfer-seo-which-is-better-in-2026">Semrush Vs Surfer Seo Which Is Better In</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Pricing Guides <span class="count">(37)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/1password-pricing-2026-plans-costs-what-you-actually-pay">1Password Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay">Activecampaign Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay">Ahrefs Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay">Amplitude Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/asana-pricing-2026-plans-costs-what-you-actually-pay">Asana Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay">Bamboohr Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay">Bigcommerce Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay">Clearscope Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay">Clickup Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay">Copy Ai Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay">Datadog Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/deel-pricing-2026-plans-costs-what-you-actually-pay">Deel Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay">Digitalocean Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay">Docusign Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay">Freshbooks Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay">Gusto Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay">Hubspot Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay">Jasper Ai Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/linear-pricing-2026-plans-costs-what-you-actually-pay">Linear Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay">Mixpanel Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay">Monday Com Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay">Moz Pro Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay">Nordlayer Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay">Notion Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay">Pandadoc Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay">Pipedrive Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay">Ramp Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay">Rippling Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay">Salesforce Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay">Se Ranking Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay">Semrush Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay">Shopify Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay">Surfer Seo Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay">Vultr Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/workable-pricing-2026-plans-costs-what-you-actually-pay">Workable Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay">Xero Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay">Zoom Pricing</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Other Pages <span class="count">(2)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/index">Index</a></li>
-          <li><a href="https://saaspare.org/pages/saas-roi-calculator">Saas Roi Calculator</a></li>
-        </ul>
-      </section>
-  <footer>
-    <p>Last updated: April 24, 2026 &nbsp;·&nbsp;
-    <a href="https://saaspare.org/about.html">About</a> &nbsp;·&nbsp;
-    <a href="https://saaspare.org/privacy.html">Privacy</a></p>
-  </footer>
+<nav id="nav">
+  <a href="/" class="logo">
+    <div class="logo-bars"><span></span><span></span><span></span></div>
+    <div class="logo-text">Saa<em>S</em>pare</div>
+  </a>
+  <a href="/pages/" class="nav-link active">All Comparisons</a>
+  <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
+  <a href="/about.html" class="nav-link">About</a>
+  <a href="/contact.html" class="nav-link">Contact</a>
+  <a href="/pages/" class="nav-cta">Compare Now →</a>
+</nav>
+
+<div class="page-hero">
+  <div class="orb" style="top:-100px;left:50%;transform:translateX(-50%);width:600px;height:340px;background:radial-gradient(ellipse,rgba(233,69,96,.12) 0%,transparent 65%);animation:glow 5s ease-in-out infinite"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">All comparisons</p>
+      <h1>500+ Unbiased B2B<br>Software Comparisons</h1>
+      <p>Every comparison is free. No login, no paywall, no sponsored rankings.</p>
+    </div>
+    <div class="filter-bar">
+      <input type="text" id="search" placeholder="Search comparisons..." oninput="filterComps()">
+      <button>Search</button>
+    </div>
+  </div>
 </div>
+
+<div class="page-body">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <h3>Category</h3>
+      <div id="cat-filters">
+        <button class="filter-chip active" data-cat="all" onclick="setFilter(this,'all')">All categories<span class="count">500+</span></button>
+        <button class="filter-chip" data-cat="SEO" onclick="setFilter(this,'SEO')">SEO Tools<span class="count">38</span></button>
+        <button class="filter-chip" data-cat="CRM" onclick="setFilter(this,'CRM')">CRM<span class="count">24</span></button>
+        <button class="filter-chip" data-cat="Marketing" onclick="setFilter(this,'Marketing')">Marketing<span class="count">31</span></button>
+        <button class="filter-chip" data-cat="HR" onclick="setFilter(this,'HR')">HR & People<span class="count">22</span></button>
+        <button class="filter-chip" data-cat="Finance" onclick="setFilter(this,'Finance')">Finance Ops<span class="count">19</span></button>
+        <button class="filter-chip" data-cat="Devtools" onclick="setFilter(this,'Devtools')">Devtools<span class="count">27</span></button>
+        <button class="filter-chip" data-cat="Ecommerce" onclick="setFilter(this,'Ecommerce')">Ecommerce<span class="count">16</span></button>
+        <button class="filter-chip" data-cat="Security" onclick="setFilter(this,'Security')">Cybersecurity<span class="count">21</span></button>
+        <button class="filter-chip" data-cat="Projects" onclick="setFilter(this,'Projects')">Project Mgmt<span class="count">29</span></button>
+        <button class="filter-chip" data-cat="Cloud" onclick="setFilter(this,'Cloud')">Cloud Infra<span class="count">18</span></button>
+        <button class="filter-chip" data-cat="Legal" onclick="setFilter(this,'Legal')">Legal<span class="count">14</span></button>
+        <button class="filter-chip" data-cat="AI" onclick="setFilter(this,'AI')">AI Tools<span class="count">33</span></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- RESULTS -->
+  <main>
+    <div class="results-header">
+      <span class="results-count" id="results-count">Showing 500+ comparisons</span>
+      <div class="sort-row">
+        <button class="sort-btn active">Popular</button>
+        <button class="sort-btn">Newest</button>
+        <button class="sort-btn">A–Z</button>
+      </div>
+    </div>
+
+    <div class="comp-list" id="comp-list">
+      <!-- SEO -->
+      <div class="cat-divider">SEO Tools</div>
+      <a href="#" class="comp-row" style="animation-delay:.03s" data-cat="SEO" data-title="Ahrefs vs Semrush"><div style="flex:1;min-width:0"><div class="comp-row-title">Ahrefs vs Semrush</div><div class="comp-row-meta"><span class="tag">SEO</span><span class="winner-tag">✓ Ahrefs</span><span class="hot-tag">HOT</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.05s" data-cat="SEO" data-title="Ahrefs vs Moz"><div style="flex:1;min-width:0"><div class="comp-row-title">Ahrefs vs Moz</div><div class="comp-row-meta"><span class="tag">SEO</span><span class="winner-tag">✓ Ahrefs</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.07s" data-cat="SEO" data-title="Semrush vs SE Ranking"><div style="flex:1;min-width:0"><div class="comp-row-title">Semrush vs SE Ranking</div><div class="comp-row-meta"><span class="tag">SEO</span><span class="winner-tag">✓ Semrush</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.09s" data-cat="SEO" data-title="Surfer SEO vs Clearscope"><div style="flex:1;min-width:0"><div class="comp-row-title">Surfer SEO vs Clearscope</div><div class="comp-row-meta"><span class="tag">SEO</span><span class="winner-tag">✓ Surfer SEO</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- CRM -->
+      <div class="cat-divider" style="animation-delay:.11s">CRM</div>
+      <a href="#" class="comp-row" style="animation-delay:.12s" data-cat="CRM" data-title="Salesforce vs HubSpot CRM"><div style="flex:1;min-width:0"><div class="comp-row-title">Salesforce vs HubSpot CRM</div><div class="comp-row-meta"><span class="tag">CRM</span><span class="winner-tag">✓ HubSpot CRM</span><span class="hot-tag">HOT</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.14s" data-cat="CRM" data-title="Pipedrive vs HubSpot"><div style="flex:1;min-width:0"><div class="comp-row-title">Pipedrive vs HubSpot</div><div class="comp-row-meta"><span class="tag">CRM</span><span class="winner-tag">✓ HubSpot</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.16s" data-cat="CRM" data-title="Salesforce vs Zoho CRM"><div style="flex:1;min-width:0"><div class="comp-row-title">Salesforce vs Zoho CRM</div><div class="comp-row-meta"><span class="tag">CRM</span><span class="winner-tag">✓ Salesforce</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- Marketing -->
+      <div class="cat-divider">Marketing</div>
+      <a href="#" class="comp-row" style="animation-delay:.18s" data-cat="Marketing" data-title="HubSpot vs ActiveCampaign"><div style="flex:1;min-width:0"><div class="comp-row-title">HubSpot vs ActiveCampaign</div><div class="comp-row-meta"><span class="tag">Marketing</span><span class="winner-tag">✓ HubSpot</span><span class="hot-tag">HOT</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.20s" data-cat="Marketing" data-title="Mailchimp vs Klaviyo"><div style="flex:1;min-width:0"><div class="comp-row-title">Mailchimp vs Klaviyo</div><div class="comp-row-meta"><span class="tag">Marketing</span><span class="winner-tag">✓ Klaviyo</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.22s" data-cat="Marketing" data-title="ActiveCampaign vs Brevo"><div style="flex:1;min-width:0"><div class="comp-row-title">ActiveCampaign vs Brevo</div><div class="comp-row-meta"><span class="tag">Marketing</span><span class="winner-tag">✓ ActiveCampaign</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- Projects -->
+      <div class="cat-divider">Project Management</div>
+      <a href="#" class="comp-row" style="animation-delay:.24s" data-cat="Projects" data-title="Notion vs ClickUp"><div style="flex:1;min-width:0"><div class="comp-row-title">Notion vs ClickUp</div><div class="comp-row-meta"><span class="tag">Projects</span><span class="winner-tag">✓ Notion</span><span class="hot-tag">HOT</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.26s" data-cat="Projects" data-title="Monday vs Asana"><div style="flex:1;min-width:0"><div class="comp-row-title">Monday vs Asana</div><div class="comp-row-meta"><span class="tag">Projects</span><span class="winner-tag">✓ Monday</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.28s" data-cat="Projects" data-title="Jira vs Linear"><div style="flex:1;min-width:0"><div class="comp-row-title">Jira vs Linear</div><div class="comp-row-meta"><span class="tag">Projects</span><span class="winner-tag">✓ Linear</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- HR -->
+      <div class="cat-divider">HR & People</div>
+      <a href="#" class="comp-row" style="animation-delay:.30s" data-cat="HR" data-title="Deel vs Rippling"><div style="flex:1;min-width:0"><div class="comp-row-title">Deel vs Rippling</div><div class="comp-row-meta"><span class="tag">HR</span><span class="winner-tag">✓ Rippling</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.32s" data-cat="HR" data-title="BambooHR vs Gusto"><div style="flex:1;min-width:0"><div class="comp-row-title">BambooHR vs Gusto</div><div class="comp-row-meta"><span class="tag">HR</span><span class="winner-tag">✓ BambooHR</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- Finance -->
+      <div class="cat-divider">Finance Ops</div>
+      <a href="#" class="comp-row" style="animation-delay:.34s" data-cat="Finance" data-title="Ramp vs Brex"><div style="flex:1;min-width:0"><div class="comp-row-title">Ramp vs Brex</div><div class="comp-row-meta"><span class="tag">Finance</span><span class="winner-tag">✓ Ramp</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.36s" data-cat="Finance" data-title="Xero vs FreshBooks"><div style="flex:1;min-width:0"><div class="comp-row-title">Xero vs FreshBooks</div><div class="comp-row-meta"><span class="tag">Finance</span><span class="winner-tag">✓ Xero</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- Devtools -->
+      <div class="cat-divider">Devtools</div>
+      <a href="#" class="comp-row" style="animation-delay:.38s" data-cat="Devtools" data-title="Datadog vs Sentry"><div style="flex:1;min-width:0"><div class="comp-row-title">Datadog vs Sentry</div><div class="comp-row-meta"><span class="tag">Devtools</span><span class="winner-tag">✓ Datadog</span><span class="hot-tag">HOT</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.40s" data-cat="Devtools" data-title="GitHub Copilot vs Cursor"><div style="flex:1;min-width:0"><div class="comp-row-title">GitHub Copilot vs Cursor</div><div class="comp-row-meta"><span class="tag">Devtools</span><span class="winner-tag">✓ Cursor</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- Security -->
+      <div class="cat-divider">Cybersecurity</div>
+      <a href="#" class="comp-row" style="animation-delay:.42s" data-cat="Security" data-title="1Password vs Dashlane"><div style="flex:1;min-width:0"><div class="comp-row-title">1Password vs Dashlane</div><div class="comp-row-meta"><span class="tag">Security</span><span class="winner-tag">✓ 1Password</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.44s" data-cat="Security" data-title="Okta vs Duo Security"><div style="flex:1;min-width:0"><div class="comp-row-title">Okta vs Duo Security</div><div class="comp-row-meta"><span class="tag">Security</span><span class="winner-tag">✓ Okta</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- Ecommerce -->
+      <div class="cat-divider">Ecommerce</div>
+      <a href="#" class="comp-row" style="animation-delay:.46s" data-cat="Ecommerce" data-title="Shopify vs BigCommerce"><div style="flex:1;min-width:0"><div class="comp-row-title">Shopify vs BigCommerce</div><div class="comp-row-meta"><span class="tag">Ecommerce</span><span class="winner-tag">✓ Shopify</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.48s" data-cat="Ecommerce" data-title="Gumroad vs Paddle"><div style="flex:1;min-width:0"><div class="comp-row-title">Gumroad vs Paddle</div><div class="comp-row-meta"><span class="tag">Ecommerce</span><span class="winner-tag">✓ Paddle</span></div></div><span class="comp-arrow">→</span></a>
+
+      <!-- AI -->
+      <div class="cat-divider">AI Tools</div>
+      <a href="#" class="comp-row" style="animation-delay:.50s" data-cat="AI" data-title="Jasper vs Copy.ai"><div style="flex:1;min-width:0"><div class="comp-row-title">Jasper vs Copy.ai</div><div class="comp-row-meta"><span class="tag">AI Tools</span><span class="winner-tag">✓ Jasper</span><span class="hot-tag">HOT</span></div></div><span class="comp-arrow">→</span></a>
+      <a href="#" class="comp-row" style="animation-delay:.52s" data-cat="AI" data-title="ChatGPT vs Claude"><div style="flex:1;min-width:0"><div class="comp-row-title">ChatGPT vs Claude</div><div class="comp-row-meta"><span class="tag">AI Tools</span><span class="winner-tag">✓ Claude</span><span class="hot-tag">HOT</span></div></div><span class="comp-arrow">→</span></a>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <div class="footer-inner-sm">
+    <a href="/" class="logo">
+      <div class="logo-bars"><span></span><span></span><span></span></div>
+      <div class="logo-text">Saa<em>S</em>pare</div>
+    </a>
+    <div class="footer-links">
+      <a href="/pages/">All Comparisons</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+    <span>© 2026 SaaSpare · Affiliate links disclosure</span>
+  </div>
+</footer>
+
+<script>
+// Nav scroll
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+},{passive:true});
+
+let activeFilter='all';
+
+function setFilter(btn,cat){
+  document.querySelectorAll('.filter-chip').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  activeFilter=cat;
+  filterComps();
+}
+
+function filterComps(){
+  const q=document.getElementById('search').value.trim().toLowerCase();
+  let visible=0;
+  document.querySelectorAll('#comp-list .comp-row').forEach(row=>{
+    const cat=row.dataset.cat;
+    const title=row.dataset.title.toLowerCase();
+    const catMatch=activeFilter==='all'||cat===activeFilter;
+    const searchMatch=!q||title.includes(q);
+    const show=catMatch&&searchMatch;
+    row.style.display=show?'flex':'none';
+    if(show)visible++;
+  });
+  // Show/hide dividers
+  document.querySelectorAll('#comp-list .cat-divider').forEach(div=>{
+    const next=div.nextElementSibling;
+    let anyVisible=false;
+    let el=div.nextElementSibling;
+    while(el&&!el.classList.contains('cat-divider')){
+      if(el.style.display!=='none'&&el.classList.contains('comp-row'))anyVisible=true;
+      el=el.nextElementSibling;
+    }
+    div.style.display=anyVisible?'':'none';
+  });
+  document.getElementById('results-count').textContent=`Showing ${visible} comparison${visible!==1?'s':''}`;
+}
+
+// Sort buttons (visual only)
+document.querySelectorAll('.sort-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+<div class="sticky-cta-v2" id="sticky-cta-v2">
+<span style="font-size:.85rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Start your free trial today — no credit card required.</span>
+<a href="https://saaspare.org/pages/">See Top Picks →</a>
+<button onclick="document.getElementById('sticky-cta-v2').classList.remove('show');sessionStorage.setItem('scHidV2','1')">×</button>
+</div>
+<div class="exit-modal-v2" id="exit-modal-v2">
+<div class="exit-card-v2">
+<button class="exit-close-v2" onclick="closeExitV2()">×</button>
+<h3>Before you go — grab the weekly deal digest</h3>
+<p>Free trials, exclusive discounts &amp; new tool reviews. One short email every Friday.</p>
+<form action="https://formsubmit.co/smithelly30121@gmail.com" method="POST" id="exit-form-v2">
+<input type="email" name="email" placeholder="your@email.com" required>
+<input type="hidden" name="_subject" value="New SaaSpare subscriber (exit-intent)">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://saaspare.org/pages/thanks.html">
+<button type="submit">Get the List →</button>
+</form>
+<p style="color:#aaa;font-size:.75rem;margin-top:.75rem">Join 500+ founders already subscribed</p>
+</div>
+</div>
+<script>
+(adsbygoogle=window.adsbygoogle||[]).push({});(adsbygoogle=window.adsbygoogle||[]).push({});
+var scV2=document.getElementById('sticky-cta-v2');
+if(scV2&&!sessionStorage.getItem('scHidV2')){window.addEventListener('scroll',function(){if(window.scrollY>600)scV2.classList.add('show');},{passive:true});}
+var emV2=document.getElementById('exit-modal-v2'),shownV2=false;
+function closeExitV2(){emV2.classList.remove('show');localStorage.setItem('exHidV2',Date.now());}
+function maybeExitV2(){if(shownV2||localStorage.getItem('exHidV2'))return;shownV2=true;emV2.classList.add('show');}
+document.addEventListener('mouseout',function(e){if(e.clientY<=0&&!e.relatedTarget)maybeExitV2();});
+setTimeout(function(){if(!shownV2&&!localStorage.getItem('exHidV2'))maybeExitV2();},45000);
+document.getElementById('exit-form-v2')&&document.getElementById('exit-form-v2').addEventListener('submit',function(){setTimeout(closeExitV2,200);});
+emV2&&emV2.addEventListener('click',function(e){if(e.target===emV2)closeExitV2();});
+</script>
+
 </body>
 </html>

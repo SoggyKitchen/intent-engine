@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>You're Subscribed! | SaaSpare</title>
-<style>
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8f9fa;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}
-  .box{background:#fff;border-radius:12px;padding:3rem;text-align:center;max-width:480px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
-  h1{color:#1a1a2e;font-size:1.8rem;margin-bottom:.5rem}
-  p{color:#666;margin:.75rem 0}
-  .tick{font-size:3rem;margin-bottom:1rem}
-  a.btn{display:inline-block;background:#e94560;color:#fff;padding:.8rem 2rem;border-radius:6px;text-decoration:none;font-weight:600;margin-top:1.5rem}
-  .ad-slot-v2{margin:2rem 0;text-align:center;min-height:90px;background:#fafbfc;border-radius:6px;padding:1rem}
+"""Patches existing generated pages in site/pages/ with AdSense, exit-intent modal,
+sticky CTA, and table affiliate buttons. One-shot — safe to run multiple times
+(idempotent via marker comments)."""
+from pathlib import Path
+import re
+
+PAGES = Path("site/pages")
+MARKER = "<!-- saaspare-v2-patched -->"
+
+ADSENSE_HEAD = """<meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
+"""
+
+AD_SLOT_CSS = """  .ad-slot-v2{margin:2rem 0;text-align:center;min-height:90px;background:#fafbfc;border-radius:6px;padding:1rem}
   .ad-label-v2{font-size:.65rem;color:#bbb;letter-spacing:.5px;text-transform:uppercase;display:block;margin-bottom:.25rem}
   .sticky-cta-v2{position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:.75rem 1rem;display:none;align-items:center;justify-content:space-between;gap:1rem;box-shadow:0 -4px 18px rgba(0,0,0,.15);z-index:100}
   .sticky-cta-v2.show{display:flex}
@@ -26,21 +27,14 @@
   .exit-card-v2 form{display:flex;gap:.5rem;flex-wrap:wrap}
   .exit-card-v2 input{flex:1;min-width:180px;padding:.65rem .9rem;border:1px solid #ddd;border-radius:5px}
   .exit-card-v2 button[type=submit]{background:#e94560;color:#fff;border:none;padding:.65rem 1.2rem;border-radius:5px;font-weight:700;cursor:pointer}
-</style>
-<meta name="google-adsense-account" content="ca-pub-9433840442322701">
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
-<!-- saaspare-v2-patched -->
-</head>
-<body>
-<div class="box">
-  <div class="tick">✅</div>
-  <h1>You're subscribed!</h1>
-  <p>Every Friday you'll get the best SaaS deals, free trials and new comparisons straight to your inbox.</p>
-  <p style="font-size:.85rem;color:#999">Check your spam folder if you don't see our first email.</p>
-  <a class="btn" href="https://saaspare.org">Browse Comparisons →</a>
-</div>
-<div class="sticky-cta-v2" id="sticky-cta-v2">
+"""
+
+AD_SLOT_HTML = """<div class="ad-slot-v2">
+<span class="ad-label-v2">Advertisement</span>
+<ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9433840442322701" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</div>"""
+
+EXIT_MODAL = """<div class="sticky-cta-v2" id="sticky-cta-v2">
 <span style="font-size:.85rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Start your free trial today — no credit card required.</span>
 <a href="https://saaspare.org/pages/">See Top Picks →</a>
 <button onclick="document.getElementById('sticky-cta-v2').classList.remove('show');sessionStorage.setItem('scHidV2','1')">×</button>
@@ -72,6 +66,42 @@ setTimeout(function(){if(!shownV2&&!localStorage.getItem('exHidV2'))maybeExitV2(
 document.getElementById('exit-form-v2')&&document.getElementById('exit-form-v2').addEventListener('submit',function(){setTimeout(closeExitV2,200);});
 emV2&&emV2.addEventListener('click',function(e){if(e.target===emV2)closeExitV2();});
 </script>
+"""
 
-</body>
-</html>
+
+def patch(html: str) -> str | None:
+    if MARKER in html:
+        return None
+    if "</head>" not in html or "</body>" not in html:
+        return None
+    html = html.replace("</head>", f"{ADSENSE_HEAD}{MARKER}\n</head>", 1)
+    html = re.sub(r"(</style>)", AD_SLOT_CSS + r"\1", html, count=1)
+    html = re.sub(
+        r'(<div class="tldr-box">.*?</div>)',
+        lambda m: m.group(1) + "\n" + AD_SLOT_HTML,
+        html, count=1, flags=re.DOTALL,
+    )
+    html = re.sub(
+        r'(<h2[^>]*>\s*Frequently Asked Questions)',
+        AD_SLOT_HTML + r"\n\1",
+        html, count=1,
+    )
+    html = html.replace("</body>", f"{EXIT_MODAL}\n</body>", 1)
+    return html
+
+
+def main() -> None:
+    patched = skipped = 0
+    for f in sorted(PAGES.glob("*.html")):
+        src = f.read_text(encoding="utf-8", errors="ignore")
+        out = patch(src)
+        if out is None:
+            skipped += 1
+            continue
+        f.write_text(out, encoding="utf-8")
+        patched += 1
+    print(f"Patched: {patched} | Skipped (already patched or invalid): {skipped}")
+
+
+if __name__ == "__main__":
+    main()

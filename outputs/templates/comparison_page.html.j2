@@ -13,6 +13,10 @@
 <meta property="og:url" content="{{ canonical_url }}">
 <meta name="Impact-Site-Verification" content="630c59bd-7d94-4608-bf4d-7c9258a43362">
 <meta name="Impact-Site-Verification" content="a1bb8518-4dc8-412a-80a9-fb1009113071">
+<meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <style>
   :root{--primary:#1a1a2e;--accent:#e94560;--bg:#f8f9fa;--text:#333;--green:#28a745}
   *{box-sizing:border-box;margin:0;padding:0}
@@ -64,7 +68,29 @@
   .email-msg{font-size:.8rem;color:#888;margin-top:.5rem}
   footer{text-align:center;color:#999;font-size:.85rem;margin-top:3rem;padding-top:2rem;border-top:1px solid #eee}
   footer a{color:#aaa;text-decoration:none}
-  @media(max-width:600px){.pros-cons{grid-template-columns:1fr}h1{font-size:1.5rem}nav a.hide-mobile{display:none}.email-row{flex-direction:column}.email-row input,.email-row button{width:100%}}
+  .ad-slot{margin:2rem 0;text-align:center;min-height:90px;background:#fafbfc;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .ad-label{font-size:.65rem;color:#bbb;letter-spacing:.5px;text-transform:uppercase;margin-bottom:.25rem;display:block}
+  .tbl-cta{display:inline-block;background:var(--accent);color:#fff;padding:.4rem .9rem;border-radius:5px;text-decoration:none;font-weight:600;font-size:.82rem;white-space:nowrap}
+  .tbl-cta.alt{background:var(--primary)}
+  .tbl-cta:hover{filter:brightness(1.08)}
+  .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:var(--primary);color:#fff;padding:.75rem 1rem;display:none;align-items:center;justify-content:space-between;gap:1rem;box-shadow:0 -4px 18px rgba(0,0,0,.15);z-index:100}
+  .sticky-cta.show{display:flex}
+  .sticky-cta-text{font-size:.85rem;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sticky-cta a{background:var(--accent);color:#fff;padding:.5rem 1.1rem;border-radius:5px;text-decoration:none;font-weight:700;font-size:.85rem;white-space:nowrap}
+  .sticky-cta button{background:none;border:none;color:rgba(255,255,255,.5);font-size:1.1rem;cursor:pointer;padding:0 .25rem}
+  .exit-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:1rem}
+  .exit-modal.show{display:flex;animation:fadeIn .25s ease}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  .exit-card{background:#fff;border-radius:12px;padding:2rem;max-width:440px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+  .exit-card h3{color:var(--primary);font-size:1.3rem;margin-bottom:.5rem}
+  .exit-card p{color:#666;font-size:.92rem;margin-bottom:1.25rem}
+  .exit-close{position:absolute;top:.5rem;right:.75rem;background:none;border:none;font-size:1.5rem;color:#aaa;cursor:pointer}
+  .roi-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:1.25rem 1.5rem;border-radius:8px;margin:2rem 0;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+  .roi-cta div{flex:1;min-width:200px}
+  .roi-cta h4{margin-bottom:.25rem;font-size:1rem}
+  .roi-cta p{font-size:.82rem;opacity:.88}
+  .roi-cta a{background:#fff;color:var(--accent);padding:.55rem 1.2rem;border-radius:5px;text-decoration:none;font-weight:700;font-size:.88rem}
+  @media(max-width:600px){.pros-cons{grid-template-columns:1fr}h1{font-size:1.5rem}nav a.hide-mobile{display:none}.email-row{flex-direction:column}.email-row input,.email-row button{width:100%}.sticky-cta-text{font-size:.78rem}table{font-size:.85rem}td,th{padding:.55rem}}
 </style>
 {% if schema_json %}<script type="application/ld+json">{{ schema_json }}</script>{% endif %}
 {% if ga_id %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
@@ -97,6 +123,11 @@
     <strong>TL;DR:</strong> {{ tldr }}
   </div>
 
+  <div class="ad-slot">
+    <span class="ad-label">Advertisement</span>
+    <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9433840442322701" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
   <div class="section">
     <h2>Quick Comparison</h2>
     <table>
@@ -110,6 +141,12 @@
         {% for val in feature['values'] %}<td>{{ val }}</td>{% endfor %}
       </tr>
       {% endfor %}
+      <tr>
+        <td><strong>Try It</strong></td>
+        {% for tool in tools %}
+        <td>{% if tool.affiliate_url %}<a class="tbl-cta{% if not tool.winner %} alt{% endif %}" href="{{ tool.affiliate_url }}" rel="sponsored noopener" target="_blank">Start Free →</a>{% else %}—{% endif %}</td>
+        {% endfor %}
+      </tr>
     </table>
   </div>
 
@@ -143,6 +180,19 @@
 
   <div class="verdict-box section">
     <strong>Our Verdict:</strong> {{ verdict }}
+  </div>
+
+  <div class="roi-cta">
+    <div>
+      <h4>Not sure if it's worth it?</h4>
+      <p>Run the numbers — our free calculator shows payback period &amp; annual ROI in seconds.</p>
+    </div>
+    <a href="{{ site_domain | default('https://saaspare.org') }}/pages/saas-roi-calculator.html">Calculate ROI →</a>
+  </div>
+
+  <div class="ad-slot">
+    <span class="ad-label">Advertisement</span>
+    <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9433840442322701" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
   </div>
 
   <div class="section">
@@ -213,10 +263,48 @@
     <p style="margin-top:.5rem">This page contains affiliate links. We may earn a commission at no extra cost to you.</p>
   </footer>
 </div>
+
+{% if cta_url %}
+<div class="sticky-cta" id="sticky-cta">
+  <span class="sticky-cta-text">{{ cta_text }}</span>
+  <a href="{{ cta_url }}" rel="sponsored noopener" target="_blank">{{ cta_button }}</a>
+  <button onclick="document.getElementById('sticky-cta').classList.remove('show');sessionStorage.setItem('scHid','1')" aria-label="Dismiss">×</button>
+</div>
+{% endif %}
+
+<div class="exit-modal" id="exit-modal">
+  <div class="exit-card">
+    <button class="exit-close" onclick="closeExit()" aria-label="Close">×</button>
+    <h3>Before you go — grab the weekly deal digest</h3>
+    <p>Free trials, exclusive discounts &amp; new tool reviews. One short email every Friday. No spam.</p>
+    <form action="https://formsubmit.co/smithelly30121@gmail.com" method="POST" class="email-row" id="exit-form" style="max-width:100%">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <input type="hidden" name="_subject" value="New SaaSpare subscriber (exit-intent)">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="{{ site_domain | default('https://saaspare.org') }}/pages/thanks.html">
+      <button type="submit">Get the List →</button>
+    </form>
+    <p style="color:#aaa;font-size:.75rem;margin-top:.75rem">Join 500+ founders already subscribed</p>
+  </div>
+</div>
+
 <script>
+(adsbygoogle=window.adsbygoogle||[]).push({});(adsbygoogle=window.adsbygoogle||[]).push({});
 document.getElementById('sub-form')&&document.getElementById('sub-form').addEventListener('submit',function(){
   setTimeout(function(){document.getElementById('sub-form').innerHTML='<p style="color:#7ecf8a;font-weight:600">✓ You\'re in! Check your inbox Friday.</p>';},200);
 });
+var sc=document.getElementById('sticky-cta');
+if(sc&&!sessionStorage.getItem('scHid')){
+  var showSc=function(){if(window.scrollY>600)sc.classList.add('show');};
+  window.addEventListener('scroll',showSc,{passive:true});
+}
+var em=document.getElementById('exit-modal'),shown=false;
+function closeExit(){em.classList.remove('show');localStorage.setItem('exHid',Date.now());}
+function maybeExit(){if(shown||localStorage.getItem('exHid'))return;shown=true;em.classList.add('show');}
+document.addEventListener('mouseout',function(e){if(e.clientY<=0&&!e.relatedTarget)maybeExit();});
+setTimeout(function(){if(!shown&&!localStorage.getItem('exHid'))maybeExit();},45000);
+document.getElementById('exit-form')&&document.getElementById('exit-form').addEventListener('submit',function(){setTimeout(closeExit,200);});
+em.addEventListener('click',function(e){if(e.target===em)closeExit();});
 </script>
 </body>
 </html>
