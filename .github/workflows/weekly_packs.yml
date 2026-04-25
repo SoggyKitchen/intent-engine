@@ -1,9 +1,16 @@
 name: Weekly Lead Packs
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 9 * * 1"     # Every Monday 9 AM UTC
   workflow_dispatch:
+
+concurrency:
+  group: intent-engine-stateful
+  cancel-in-progress: false
 
 jobs:
   weekly-packs:
@@ -13,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0
 
       - uses: astral-sh/setup-uv@v3
 
@@ -24,7 +31,7 @@ jobs:
         run: |
           for vertical in devtools saas_analytics marketing_automation cloud_infra cybersecurity hr_recruiting ecommerce_tools ai_ml_tools; do
             echo "Generating pack for $vertical..."
-            uv run engine pack $vertical || echo "Skipped $vertical (not enough signals)"
+            uv run engine pack $vertical
           done
         env:
           DB_PATH: data/intent.db
@@ -39,6 +46,7 @@ jobs:
         run: |
           git config user.email "bot@intentengine.local"
           git config user.name "IntentBot"
+          git pull --rebase --autostash origin main
           git add data/intent.db outputs/generated/ || true
           git diff --staged --quiet || git commit -m "chore: weekly packs $(date -u +%Y-%m-%d) [skip ci]"
           git push

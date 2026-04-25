@@ -12,7 +12,13 @@ from core.db import db
 from core.logger import log
 from core.secrets import DRY_RUN, get
 from llm.router import complete_json
-from publisher.affiliate_registry import get_go_url, get_links_for_vertical, get_best_programs_for_vertical, get_homepage_for_tool
+from publisher.affiliate_registry import (
+    get_affiliate_url_for_tool,
+    get_go_url,
+    get_links_for_vertical,
+    get_best_programs_for_vertical,
+    get_homepage_for_tool,
+)
 
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 SITE_DIR = Path("site/pages")
@@ -47,12 +53,16 @@ def _affiliate_url(tool_name: str, base_url: str, vertical: str = "", page_type:
     if "amazon.com" in base_url:
         sep = "&" if "?" in base_url else "?"
         return f"{base_url}{sep}tag={AMAZON_TAG}&{utm}"
-    go = get_go_url(tool_name)
+    go = get_go_url(tool_name, page_type=page_type)
     if go:
         return f"{go}?{utm}"
+    direct_affiliate = get_affiliate_url_for_tool(tool_name, vertical=vertical, page_type=page_type)
+    if direct_affiliate and direct_affiliate != base_url:
+        sep = "&" if "?" in direct_affiliate else "?"
+        return f"{direct_affiliate}{sep}{utm}"
     if vertical:
         links = get_links_for_vertical(vertical, [tool_name])
-        if tool_name in links and links[tool_name] != base_url:
+        if tool_name in links and links[tool_name] not in (base_url, "#"):
             url = links[tool_name]
             sep = "&" if "?" in url else "?"
             return f"{url}{sep}{utm}"
@@ -140,7 +150,11 @@ Generate a comparison page structure. Return JSON exactly:
 
 Include 2-4 real tools. Make it genuinely useful.
 """
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=2600,
+        max_output_tokens=1800,
+    )
     if not result:
         return None
     return _render_and_save(result, vertical)
@@ -188,6 +202,10 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
     data["related_pages"] = _get_related_pages(vertical, slug)
     data["brevo_form_id"] = get("BREVO_FORM_ID", "")
     data["ga_id"] = get("GA_MEASUREMENT_ID", "")
+    data["newsletter_form_action"] = get(
+        "NEWSLETTER_FORM_ACTION",
+        "https://formsubmit.co/smithelly30121@gmail.com",
+    )
 
     tmpl = _JINJA_ENV.get_template("comparison_page.html.j2")
     html = tmpl.render(**data)
@@ -214,20 +232,6 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
 
 
 def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: str = "") -> str:
-    tools = data.get("tools", [])
-    reviews = []
-    rating_sum = 0
-    for i, t in enumerate(tools):
-        rating = round(5 - i * 0.3, 1)
-        rating_sum += rating
-        reviews.append({
-            "@type": "Review",
-            "name": f"Review of {t.get('name', '')}",
-            "reviewRating": {"@type": "Rating", "ratingValue": rating, "bestRating": 5},
-            "author": {"@type": "Organization", "name": "SaaSpare"},
-            "reviewBody": t.get("description", "")[:400],
-        })
-    avg_rating = round(rating_sum / len(tools), 1) if tools else 5
     schema = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -239,9 +243,8 @@ def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: s
                    "url": get("SITE_DOMAIN", "https://saaspare.org")},
         "publisher": {"@type": "Organization", "name": "SaaSpare",
                       "logo": {"@type": "ImageObject",
-                               "url": f"{get('SITE_DOMAIN', 'https://saaspare.org')}/logo.png"}},
-        "aggregateRating": {"@type": "AggregateRating", "ratingValue": avg_rating, "bestRating": 5, "ratingCount": len(tools)},
-        "review": reviews,
+                               "url": f"{get('SITE_DOMAIN', 'https://saaspare.org')}/og-default.png"}},
+        "mainEntityOfPage": canonical or domain,
     }
     if data.get("faqs"):
         schema["mainEntity"] = [

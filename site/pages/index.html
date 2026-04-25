@@ -4,30 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All SaaS Comparisons & Guides | SaaSpare</title>
-<meta name="description" content="Browse 162 B2B SaaS comparison pages, pricing guides, reviews and alternatives — all free.">
+<meta name="description" content="Browse 161 B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://saaspare.org/pages/">
+<meta property="og:title" content="All SaaS Comparisons & Guides | SaaSpare">
+<meta property="og:description" content="Browse 161 B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saaspare.org/pages/">
 <style>
-  :root{--primary:#1a1a2e;--accent:#e94560;--bg:#f8f9fa;--text:#333}
+  :root{--bg:#080810;--bg-soft:#11131a;--border:rgba(255,255,255,.08);--text:rgba(255,255,255,.84);--muted:rgba(255,255,255,.46);--accent:#e94560}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-  nav{background:var(--primary);padding:.7rem 1rem;display:flex;align-items:center;gap:1.5rem}
-  nav a{color:#ccc;text-decoration:none;font-size:.9rem}
-  nav a:first-child{color:#fff;font-weight:700;font-size:1.1rem;margin-right:auto}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(ellipse 120% 80% at 50% -10%,#1a0d12 0%,#0d0008 45%,#080810 80%);color:var(--text);line-height:1.6;min-height:100vh}
+  a{color:inherit;text-decoration:none}
+  nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+  nav a{color:var(--muted);font-size:.9rem}
+  nav a:first-child{color:#fff;font-weight:800;font-size:1.05rem;margin-right:auto}
   nav a:hover{color:#fff}
-  .hero{background:var(--primary);color:#fff;padding:3rem 1rem;text-align:center}
-  .hero h1{font-size:2rem;margin-bottom:.5rem}
-  .hero p{color:#aaa;font-size:1.1rem}
-  .container{max-width:960px;margin:0 auto;padding:2rem 1rem}
-  .page-group{background:#fff;border-radius:8px;padding:1.5rem 2rem;margin:1.5rem 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-  .page-group h2{color:var(--primary);font-size:1.25rem;margin-bottom:1rem;border-bottom:2px solid var(--accent);padding-bottom:.4rem;display:flex;align-items:center;gap:.5rem}
-  .count{font-size:.85rem;font-weight:400;color:#888}
-  .page-group ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.4rem}
-  .page-group li a{display:block;padding:.35rem .6rem;border-radius:4px;text-decoration:none;color:#333;font-size:.9rem;transition:background .15s}
-  .page-group li a:hover{background:#f0f0f0;color:var(--accent)}
-  footer{text-align:center;color:#999;font-size:.85rem;margin-top:3rem;padding-top:2rem;border-top:1px solid #eee}
-  footer a{color:#aaa;text-decoration:none}
+  .hero{max-width:1100px;margin:0 auto;padding:4rem 1.5rem 2rem;text-align:center}
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem);color:#fff;letter-spacing:-.04em;margin-bottom:.75rem}
+  .hero p{color:var(--muted);max-width:760px;margin:0 auto 1.5rem}
+  .search-shell{max-width:680px;margin:0 auto 1rem;padding:.5rem;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:999px;display:flex;gap:.5rem}
+  .search-shell input{flex:1;background:transparent;border:none;color:#fff;padding:.85rem 1rem;outline:none;font:inherit}
+  .search-shell button{border:none;border-radius:999px;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.85rem 1.25rem;font:inherit;font-weight:700;cursor:pointer}
+  .stats{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+  .stat{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:999px;padding:.5rem .9rem;color:var(--muted);font-size:.85rem}
+  .container{max-width:1100px;margin:0 auto;padding:1.5rem 1.5rem 4rem}
+  .filter-row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1.25rem}
+  .filter-chip{border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--muted);border-radius:999px;padding:.5rem .8rem;cursor:pointer;font:inherit}
+  .filter-chip.active,.filter-chip:hover{background:rgba(233,69,96,.14);border-color:rgba(233,69,96,.35);color:#fff}
+  .filter-chip span{opacity:.7;margin-left:.25rem}
+  .results{margin-left:auto;color:var(--muted);font-size:.85rem}
+  .pages-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.75rem}
+  .page-card{display:flex;flex-direction:column;gap:.5rem;padding:1rem 1.1rem;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--border);transition:transform .16s ease,border-color .16s ease,background .16s ease}
+  .page-card:hover{transform:translateY(-2px);background:rgba(255,255,255,.06);border-color:rgba(233,69,96,.35)}
+  .page-card.hidden{display:none}
+  .page-type{font-size:.72rem;color:#ffb5c0;text-transform:uppercase;letter-spacing:.08em}
+  .page-title{font-size:.95rem;color:#fff;font-weight:700;line-height:1.4}
+  .page-arrow{font-size:.8rem;color:var(--muted);margin-top:auto}
+  .empty{display:none;padding:2rem;text-align:center;color:var(--muted);border:1px dashed var(--border);border-radius:18px;background:rgba(255,255,255,.03)}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border)}
+  footer a{color:#fff}
+  @media (max-width: 720px) {
+    nav {padding:1rem}
+    .search-shell {border-radius:20px;flex-direction:column}
+    .search-shell button {width:100%}
+    .results {width:100%;margin-left:0}
+    .pages-grid {grid-template-columns:1fr}
+  }
 </style>
+
 </head>
 <body>
 <nav>
@@ -37,212 +62,248 @@
 </nav>
 <div class="hero">
   <h1>All SaaS Comparisons & Guides</h1>
-  <p>162 pages covering pricing, comparisons, reviews and alternatives</p>
+  <p>161 pages covering pricing, comparisons, reviews and alternatives.</p>
+  <div class="search-shell">
+    <input id="page-search" type="text" placeholder="Search any tool, brand, or page type">
+    <button type="button" id="search-button">Search</button>
+  </div>
+  <div class="stats">
+    <div class="stat">36 comparisons</div>
+    <div class="stat">37 pricing guides</div>
+    <div class="stat">21 reviews</div>
+    <div class="stat">Updated April 25, 2026</div>
+  </div>
 </div>
 <div class="container">
-
-      <section class="page-group">
-        <h2>Comparisons <span class="count">(36)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-clearscope-which-is-better-in-2026">Ahrefs Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-frase-io-which-is-better-in-2026">Ahrefs Vs Frase Io Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-mangools-which-is-better-in-2026">Ahrefs Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-moz-pro-which-is-better-in-2026">Ahrefs Vs Moz Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-rankmath-pro-which-is-better-in-2026">Ahrefs Vs Rankmath Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-se-ranking-which-is-better-in-2026">Ahrefs Vs Se Ranking Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-semrush-which-is-better-in-2026">Ahrefs Vs Semrush Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-spyfu-which-is-better-in-2026">Ahrefs Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-vs-surfer-seo-which-is-better-in-2026">Ahrefs Vs Surfer Seo Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/mangools-vs-spyfu-which-is-better-in-2026">Mangools Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-vs-clearscope-which-is-better-in-2026">Moz Pro Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-vs-frase-io-which-is-better-in-2026">Moz Pro Vs Frase Io Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-vs-mangools-which-is-better-in-2026">Moz Pro Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-vs-rankmath-pro-which-is-better-in-2026">Moz Pro Vs Rankmath Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-vs-se-ranking-which-is-better-in-2026">Moz Pro Vs Se Ranking Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-vs-spyfu-which-is-better-in-2026">Moz Pro Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-vs-surfer-seo-which-is-better-in-2026">Moz Pro Vs Surfer Seo Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/se-ranking-vs-clearscope-which-is-better-in-2026">Se Ranking Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/se-ranking-vs-frase-io-which-is-better-in-2026">Se Ranking Vs Frase Io Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/se-ranking-vs-mangools-which-is-better-in-2026">Se Ranking Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026">Se Ranking Vs Rankmath Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/se-ranking-vs-spyfu-which-is-better-in-2026">Se Ranking Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-clearscope-which-is-better-in-2026">Semrush Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-frase-io-which-is-better-in-2026">Semrush Vs Frase Io Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-mangools-which-is-better-in-2026">Semrush Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026">Semrush Vs Moz Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-rankmath-pro-which-is-better-in-2026">Semrush Vs Rankmath Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-se-ranking-which-is-better-in-2026">Semrush Vs Se Ranking Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-spyfu-which-is-better-in-2026">Semrush Vs Spyfu Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-vs-surfer-seo-which-is-better-in-2026">Semrush Vs Surfer Seo Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-vs-clearscope-which-is-better-in-2026">Surfer Seo Vs Clearscope Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-vs-frase-io-which-is-better-in-2026">Surfer Seo Vs Frase Io Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-vs-mangools-which-is-better-in-2026">Surfer Seo Vs Mangools Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-vs-rankmath-pro-which-is-better-in-2026">Surfer Seo Vs Rankmath Pro Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-vs-se-ranking-which-is-better-in-2026">Surfer Seo Vs Se Ranking Which Is Better In</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-vs-spyfu-which-is-better-in-2026">Surfer Seo Vs Spyfu Which Is Better In</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Pricing Guides <span class="count">(37)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/1password-pricing-2026-plans-costs-what-you-actually-pay">1Password Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay">Activecampaign Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay">Ahrefs Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay">Amplitude Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/asana-pricing-2026-plans-costs-what-you-actually-pay">Asana Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay">Bamboohr Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay">Bigcommerce Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay">Clearscope Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay">Clickup Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay">Copy Ai Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay">Datadog Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/deel-pricing-2026-plans-costs-what-you-actually-pay">Deel Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay">Digitalocean Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay">Docusign Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay">Freshbooks Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay">Gusto Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay">Hubspot Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay">Jasper Ai Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/linear-pricing-2026-plans-costs-what-you-actually-pay">Linear Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay">Mixpanel Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay">Monday Com Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay">Moz Pro Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay">Nordlayer Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay">Notion Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay">Pandadoc Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay">Pipedrive Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay">Ramp Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay">Rippling Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay">Salesforce Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay">Se Ranking Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay">Semrush Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay">Shopify Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay">Surfer Seo Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay">Vultr Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/workable-pricing-2026-plans-costs-what-you-actually-pay">Workable Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay">Xero Pricing</a></li>
-          <li><a href="https://saaspare.org/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay">Zoom Pricing</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Alternatives <span class="count">(20)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/best-1password-alternatives-in-2026-free-paid">Best 1Password Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-ahrefs-alternatives-in-2026-free-paid">Best Ahrefs Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-asana-alternatives-in-2026-free-paid">Best Asana Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-clickup-alternatives-in-2026-free-paid">Best Clickup Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-datadog-alternatives-in-2026-free-paid">Best Datadog Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-deel-alternatives-in-2026-free-paid">Best Deel Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-freshbooks-alternatives-in-2026-free-paid">Best Freshbooks Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-hubspot-alternatives-in-2026-free-paid">Best Hubspot Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-linear-alternatives-in-2026-free-paid">Best Linear Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-monday-com-alternatives-in-2026-free-paid">Best Monday Com Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid">Best Moz Pro Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-notion-alternatives-in-2026-free-paid">Best Notion Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-pipedrive-alternatives-in-2026-free-paid">Best Pipedrive Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-rippling-alternatives-in-2026-free-paid">Best Rippling Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-salesforce-alternatives-in-2026-free-paid">Best Salesforce Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-semrush-alternatives-in-2026-free-paid">Best Semrush Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-shopify-alternatives-in-2026-free-paid">Best Shopify Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-surfer-seo-alternatives-in-2026-free-paid">Best Surfer Seo Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-xero-alternatives-in-2026-free-paid">Best Xero Alternatives In</a></li>
-          <li><a href="https://saaspare.org/pages/best-zoom-alternatives-in-2026-free-paid">Best Zoom Alternatives In</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Reviews <span class="count">(21)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/1password-review-2026-is-it-worth-it-honest-verdict">1Password Review</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict">Ahrefs Review</a></li>
-          <li><a href="https://saaspare.org/pages/asana-review-2026-is-it-worth-it-honest-verdict">Asana Review</a></li>
-          <li><a href="https://saaspare.org/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed">Best Seo Tools For Small Business In</a></li>
-          <li><a href="https://saaspare.org/pages/clickup-review-2026-is-it-worth-it-honest-verdict">Clickup Review</a></li>
-          <li><a href="https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict">Datadog Review</a></li>
-          <li><a href="https://saaspare.org/pages/deel-review-2026-is-it-worth-it-honest-verdict">Deel Review</a></li>
-          <li><a href="https://saaspare.org/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict">Freshbooks Review</a></li>
-          <li><a href="https://saaspare.org/pages/hubspot-review-2026-is-it-worth-it-honest-verdict">Hubspot Review</a></li>
-          <li><a href="https://saaspare.org/pages/linear-review-2026-is-it-worth-it-honest-verdict">Linear Review</a></li>
-          <li><a href="https://saaspare.org/pages/monday-com-review-2026-is-it-worth-it-honest-verdict">Monday Com Review</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict">Moz Pro Review</a></li>
-          <li><a href="https://saaspare.org/pages/notion-review-2026-is-it-worth-it-honest-verdict">Notion Review</a></li>
-          <li><a href="https://saaspare.org/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict">Pipedrive Review</a></li>
-          <li><a href="https://saaspare.org/pages/rippling-review-2026-is-it-worth-it-honest-verdict">Rippling Review</a></li>
-          <li><a href="https://saaspare.org/pages/salesforce-review-2026-is-it-worth-it-honest-verdict">Salesforce Review</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-review-2026-is-it-worth-it-honest-verdict">Semrush Review</a></li>
-          <li><a href="https://saaspare.org/pages/shopify-review-2026-is-it-worth-it-honest-verdict">Shopify Review</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict">Surfer Seo Review</a></li>
-          <li><a href="https://saaspare.org/pages/xero-review-2026-is-it-worth-it-honest-verdict">Xero Review</a></li>
-          <li><a href="https://saaspare.org/pages/zoom-review-2026-is-it-worth-it-honest-verdict">Zoom Review</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Coupon & Promo Codes <span class="count">(20)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/1password-promo-code-2026-discounts-deals-that-actually-work">1Password Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work">Ahrefs Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/asana-promo-code-2026-discounts-deals-that-actually-work">Asana Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/clickup-promo-code-2026-discounts-deals-that-actually-work">Clickup Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/datadog-promo-code-2026-discounts-deals-that-actually-work">Datadog Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/deel-promo-code-2026-discounts-deals-that-actually-work">Deel Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work">Freshbooks Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work">Hubspot Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/linear-promo-code-2026-discounts-deals-that-actually-work">Linear Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work">Monday Com Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work">Moz Pro Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/notion-promo-code-2026-discounts-deals-that-actually-work">Notion Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work">Pipedrive Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/rippling-promo-code-2026-discounts-deals-that-actually-work">Rippling Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work">Salesforce Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-promo-code-2026-discounts-deals-that-actually-work">Semrush Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/shopify-promo-code-2026-discounts-deals-that-actually-work">Shopify Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work">Surfer Seo Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/xero-promo-code-2026-discounts-deals-that-actually-work">Xero Promo Code</a></li>
-          <li><a href="https://saaspare.org/pages/zoom-promo-code-2026-discounts-deals-that-actually-work">Zoom Promo Code</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Best-Of Lists <span class="count">(6)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/best-accounting-software-for-freelancers-in-2026">Best Accounting Software For Freelancers In</a></li>
-          <li><a href="https://saaspare.org/pages/best-crm-software-for-startups-in-2026-free-paid">Best Crm Software For Startups In</a></li>
-          <li><a href="https://saaspare.org/pages/best-devops-tools-for-security-compliance-in-2025">Best Devops Tools For Security Compliance In</a></li>
-          <li><a href="https://saaspare.org/pages/best-hr-software-for-small-business-in-2026">Best Hr Software For Small Business In</a></li>
-          <li><a href="https://saaspare.org/pages/best-project-management-software-in-2026-for-every-team-size">Best Project Management Software In</a></li>
-          <li><a href="https://saaspare.org/pages/best-seo-tools-for-agencies-in-2026-enterprise-grade">Best Seo Tools For Agencies In</a></li>
-        </ul>
-      </section>
-      <section class="page-group">
-        <h2>Other Pages <span class="count">(22)</span></h2>
-        <ul>
-          <li><a href="https://saaspare.org/pages/1password-free-trial-2026-how-to-get-it-step-by-step">1Password Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step">Ahrefs Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/asana-free-trial-2026-how-to-get-it-step-by-step">Asana Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/clickup-free-trial-2026-how-to-get-it-step-by-step">Clickup Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/datadog-free-trial-2026-how-to-get-it-step-by-step">Datadog Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/deel-free-trial-2026-how-to-get-it-step-by-step">Deel Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step">Freshbooks Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/hubspot-free-trial-2026-how-to-get-it-step-by-step">Hubspot Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/index">Index</a></li>
-          <li><a href="https://saaspare.org/pages/linear-free-trial-2026-how-to-get-it-step-by-step">Linear Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/monday-com-free-trial-2026-how-to-get-it-step-by-step">Monday Com Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/moz-pro-free-trial-2026-how-to-get-it-step-by-step">Moz Pro Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/notion-free-trial-2026-how-to-get-it-step-by-step">Notion Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/pipedrive-free-trial-2026-how-to-get-it-step-by-step">Pipedrive Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/rippling-free-trial-2026-how-to-get-it-step-by-step">Rippling Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/saas-roi-calculator">Saas Roi Calculator</a></li>
-          <li><a href="https://saaspare.org/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step">Salesforce Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/semrush-free-trial-2026-how-to-get-it-step-by-step">Semrush Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/shopify-free-trial-2026-how-to-get-it-step-by-step">Shopify Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/surfer-seo-free-trial-2026-how-to-get-it-step-by-step">Surfer Seo Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/xero-free-trial-2026-how-to-get-it-step-by-step">Xero Free Trial</a></li>
-          <li><a href="https://saaspare.org/pages/zoom-free-trial-2026-how-to-get-it-step-by-step">Zoom Free Trial</a></li>
-        </ul>
-      </section>
+  <div class="filter-row">
+    <button class="filter-chip active" data-type="all" type="button">All <span>161</span></button>
+    <button class="filter-chip" data-type="comparison" type="button">Comparisons <span>36</span></button>
+    <button class="filter-chip" data-type="pricing" type="button">Pricing Guides <span>37</span></button>
+    <button class="filter-chip" data-type="alternatives" type="button">Alternatives <span>20</span></button>
+    <button class="filter-chip" data-type="review" type="button">Reviews <span>21</span></button>
+    <button class="filter-chip" data-type="promo" type="button">Coupon & Promo Codes <span>20</span></button>
+    <button class="filter-chip" data-type="free-trial" type="button">Free Trials <span>20</span></button>
+    <button class="filter-chip" data-type="best-of" type="button">Best-Of Lists <span>6</span></button>
+    <button class="filter-chip" data-type="guide" type="button">Other Pages <span>1</span></button>
+    <div class="results" id="results-count"></div>
+  </div>
+  <div class="pages-grid" id="pages-grid">
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-clearscope-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs clearscope: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs Clearscope: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-frase-io-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs frase.io: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs Frase.io: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-mangools-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs mangools: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs Mangools: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-moz-pro-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs moz pro: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs Moz Pro: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-rankmath-pro-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs rankmath pro: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs Rankmath Pro: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-se-ranking-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs se ranking: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs SE Ranking: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-semrush-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs semrush: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs Semrush: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-spyfu-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs spyfu: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs SpyFu: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-vs-surfer-seo-which-is-better-in-2026" data-type="comparison" data-title="ahrefs vs surfer seo: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Ahrefs vs Surfer SEO: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/mangools-vs-spyfu-which-is-better-in-2026" data-type="comparison" data-title="mangools vs spyfu: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Mangools vs SpyFu: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-vs-clearscope-which-is-better-in-2026" data-type="comparison" data-title="moz pro vs clearscope: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Moz Pro vs Clearscope: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-vs-frase-io-which-is-better-in-2026" data-type="comparison" data-title="moz pro vs frase.io: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Moz Pro vs Frase.io: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-vs-mangools-which-is-better-in-2026" data-type="comparison" data-title="moz pro vs mangools: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Moz Pro vs Mangools: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-vs-rankmath-pro-which-is-better-in-2026" data-type="comparison" data-title="moz pro vs rankmath pro: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Moz Pro vs Rankmath Pro: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-vs-se-ranking-which-is-better-in-2026" data-type="comparison" data-title="moz pro vs se ranking: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Moz Pro vs SE Ranking: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-vs-spyfu-which-is-better-in-2026" data-type="comparison" data-title="moz pro vs spyfu: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Moz Pro vs SpyFu: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-vs-surfer-seo-which-is-better-in-2026" data-type="comparison" data-title="moz pro vs surfer seo: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Moz Pro vs Surfer SEO: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/se-ranking-vs-clearscope-which-is-better-in-2026" data-type="comparison" data-title="se ranking vs clearscope: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">SE Ranking vs Clearscope: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/se-ranking-vs-frase-io-which-is-better-in-2026" data-type="comparison" data-title="se ranking vs frase.io: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">SE Ranking vs Frase.io: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/se-ranking-vs-mangools-which-is-better-in-2026" data-type="comparison" data-title="se ranking vs mangools: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">SE Ranking vs Mangools: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026" data-type="comparison" data-title="se ranking vs rankmath pro: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">SE Ranking vs Rankmath Pro: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/se-ranking-vs-spyfu-which-is-better-in-2026" data-type="comparison" data-title="se ranking vs spyfu: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">SE Ranking vs SpyFu: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-vs-clearscope-which-is-better-in-2026" data-type="comparison" data-title="semrush vs clearscope: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Semrush vs Clearscope: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-vs-frase-io-which-is-better-in-2026" data-type="comparison" data-title="semrush vs frase.io: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Semrush vs Frase.io: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-vs-mangools-which-is-better-in-2026" data-type="comparison" data-title="semrush vs mangools: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Semrush vs Mangools: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026" data-type="comparison" data-title="semrush vs moz pro: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Semrush vs Moz Pro: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-vs-rankmath-pro-which-is-better-in-2026" data-type="comparison" data-title="semrush vs rankmath pro: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Semrush vs Rankmath Pro: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-vs-se-ranking-which-is-better-in-2026" data-type="comparison" data-title="semrush vs se ranking: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Semrush vs SE Ranking: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-vs-spyfu-which-is-better-in-2026" data-type="comparison" data-title="semrush vs spyfu: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Semrush vs SpyFu: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-vs-surfer-seo-which-is-better-in-2026" data-type="comparison" data-title="semrush vs surfer seo: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Semrush vs Surfer SEO: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-vs-clearscope-which-is-better-in-2026" data-type="comparison" data-title="surfer seo vs clearscope: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Surfer SEO vs Clearscope: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-vs-frase-io-which-is-better-in-2026" data-type="comparison" data-title="surfer seo vs frase.io: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Surfer SEO vs Frase.io: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-vs-mangools-which-is-better-in-2026" data-type="comparison" data-title="surfer seo vs mangools: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Surfer SEO vs Mangools: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-vs-rankmath-pro-which-is-better-in-2026" data-type="comparison" data-title="surfer seo vs rankmath pro: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Surfer SEO vs Rankmath Pro: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-vs-se-ranking-which-is-better-in-2026" data-type="comparison" data-title="surfer seo vs se ranking: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Surfer SEO vs SE Ranking: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-vs-spyfu-which-is-better-in-2026" data-type="comparison" data-title="surfer seo vs spyfu: which is better in 2026?"><span class="page-type">Comparisons</span><span class="page-title">Surfer SEO vs SpyFu: Which is Better in 2026?</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/1password-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="1password pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">1Password Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="activecampaign pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">ActiveCampaign Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="ahrefs pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Ahrefs Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="amplitude pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Amplitude Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/asana-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="asana pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Asana Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="bamboohr pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">BambooHR Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="bigcommerce pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">BigCommerce Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="clearscope pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Clearscope Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="clickup pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">ClickUp Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="copy.ai pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Copy.ai Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="datadog pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Datadog Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/deel-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="deel pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Deel Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="digitalocean pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">DigitalOcean Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="docusign pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">DocuSign Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="freshbooks pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">FreshBooks Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="gusto pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Gusto Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="hubspot pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">HubSpot Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="jasper ai pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Jasper AI Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/linear-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="linear pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Linear Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="mixpanel pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Mixpanel Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="monday.com pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Monday.com Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="moz pro pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Moz Pro Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="nordlayer pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">NordLayer Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="notion pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Notion Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="pandadoc pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">PandaDoc Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="pipedrive pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Pipedrive Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="ramp pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Ramp Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="rippling pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Rippling Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="salesforce pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Salesforce Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="se ranking pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">SE Ranking Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="semrush pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Semrush Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="shopify pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Shopify Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="surfer seo pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Surfer SEO Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="vultr pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Vultr Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/workable-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="workable pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Workable Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="xero pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Xero Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay" data-type="pricing" data-title="zoom pricing 2026: plans, costs & what you actually pay"><span class="page-type">Pricing Guides</span><span class="page-title">Zoom Pricing 2026: Plans, Costs & What You Actually Pay</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-1password-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best 1password alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best 1Password Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-ahrefs-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best ahrefs alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Ahrefs Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-asana-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best asana alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Asana Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-clickup-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best clickup alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best ClickUp Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-datadog-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best datadog alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Datadog Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-deel-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best deel alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Deel Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-freshbooks-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best freshbooks alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best FreshBooks Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-hubspot-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best hubspot alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best HubSpot Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-linear-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best linear alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Linear Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-monday-com-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best monday.com alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Monday.com Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best moz pro alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Moz Pro Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-notion-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best notion alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Notion Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-pipedrive-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best pipedrive alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Pipedrive Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-rippling-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best rippling alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Rippling Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-salesforce-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best salesforce alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Salesforce Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-semrush-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best semrush alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Semrush Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-shopify-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best shopify alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Shopify Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-surfer-seo-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best surfer seo alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Surfer SEO Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-xero-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best xero alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Xero Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-zoom-alternatives-in-2026-free-paid" data-type="alternatives" data-title="best zoom alternatives in 2026 (free & paid)"><span class="page-type">Alternatives</span><span class="page-title">Best Zoom Alternatives in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/1password-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="1password review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">1Password Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="ahrefs review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Ahrefs Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/asana-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="asana review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Asana Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed" data-type="review" data-title="best seo tools for small business in 2026 (ranked & reviewed)"><span class="page-type">Reviews</span><span class="page-title">Best SEO Tools for Small Business in 2026 (Ranked & Reviewed)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/clickup-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="clickup review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">ClickUp Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="datadog review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Datadog Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/deel-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="deel review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Deel Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="freshbooks review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">FreshBooks Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/hubspot-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="hubspot review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">HubSpot Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/linear-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="linear review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Linear Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/monday-com-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="monday.com review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Monday.com Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="moz pro review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Moz Pro Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/notion-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="notion review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Notion Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="pipedrive review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Pipedrive Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/rippling-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="rippling review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Rippling Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/salesforce-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="salesforce review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Salesforce Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="semrush review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Semrush Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/shopify-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="shopify review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Shopify Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="surfer seo review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Surfer SEO Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/xero-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="xero review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Xero Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/zoom-review-2026-is-it-worth-it-honest-verdict" data-type="review" data-title="zoom review 2026: is it worth it? (honest verdict)"><span class="page-type">Reviews</span><span class="page-title">Zoom Review 2026: Is It Worth It? (Honest Verdict)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/1password-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="1password promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">1Password Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="ahrefs promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Ahrefs Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/asana-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="asana promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Asana Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/clickup-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="clickup promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">ClickUp Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/datadog-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="datadog promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Datadog Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/deel-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="deel promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Deel Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="freshbooks promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">FreshBooks Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="hubspot promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">HubSpot Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/linear-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="linear promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Linear Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="monday.com promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Monday.com Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="moz pro promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Moz Pro Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/notion-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="notion promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Notion Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="pipedrive promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Pipedrive Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/rippling-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="rippling promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Rippling Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="salesforce promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Salesforce Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="semrush promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Semrush Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/shopify-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="shopify promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Shopify Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="surfer seo promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Surfer SEO Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/xero-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="xero promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Xero Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/zoom-promo-code-2026-discounts-deals-that-actually-work" data-type="promo" data-title="zoom promo code 2026 — discounts & deals that actually work"><span class="page-type">Coupon & Promo Codes</span><span class="page-title">Zoom Promo Code 2026 — Discounts & Deals That Actually Work</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/1password-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="1password free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">1Password Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="ahrefs free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Ahrefs Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/asana-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="asana free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Asana Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/clickup-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="clickup free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">ClickUp Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/datadog-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="datadog free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Datadog Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/deel-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="deel free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Deel Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="freshbooks free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">FreshBooks Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/hubspot-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="hubspot free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">HubSpot Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/linear-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="linear free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Linear Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/monday-com-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="monday.com free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Monday.com Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/moz-pro-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="moz pro free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Moz Pro Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/notion-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="notion free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Notion Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/pipedrive-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="pipedrive free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Pipedrive Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/rippling-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="rippling free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Rippling Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="salesforce free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Salesforce Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/semrush-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="semrush free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Semrush Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/shopify-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="shopify free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Shopify Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/surfer-seo-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="surfer seo free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Surfer SEO Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/xero-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="xero free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Xero Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/zoom-free-trial-2026-how-to-get-it-step-by-step" data-type="free-trial" data-title="zoom free trial 2026: how to get it (step-by-step)"><span class="page-type">Free Trials</span><span class="page-title">Zoom Free Trial 2026: How to Get It (Step-by-Step)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-accounting-software-for-freelancers-in-2026" data-type="best-of" data-title="best accounting software for freelancers in 2026"><span class="page-type">Best-Of Lists</span><span class="page-title">Best Accounting Software for Freelancers in 2026</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-crm-software-for-startups-in-2026-free-paid" data-type="best-of" data-title="best crm software for startups in 2026 (free & paid)"><span class="page-type">Best-Of Lists</span><span class="page-title">Best CRM Software for Startups in 2026 (Free & Paid)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-devops-tools-for-security-compliance-in-2025" data-type="best-of" data-title="best devops tools for security compliance in 2025"><span class="page-type">Best-Of Lists</span><span class="page-title">Best DevOps Tools for Security Compliance in 2025</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-hr-software-for-small-business-in-2026" data-type="best-of" data-title="best hr software for small business in 2026"><span class="page-type">Best-Of Lists</span><span class="page-title">Best HR Software for Small Business in 2026</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-project-management-software-in-2026-for-every-team-size" data-type="best-of" data-title="best project management software in 2026 (for every team size)"><span class="page-type">Best-Of Lists</span><span class="page-title">Best Project Management Software in 2026 (For Every Team Size)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/best-seo-tools-for-agencies-in-2026-enterprise-grade" data-type="best-of" data-title="best seo tools for agencies in 2026 (enterprise-grade)"><span class="page-type">Best-Of Lists</span><span class="page-title">Best SEO Tools for Agencies in 2026 (Enterprise-Grade)</span><span class="page-arrow">-></span></a>
+    <a class="page-card" href="https://saaspare.org/pages/saas-roi-calculator" data-type="guide" data-title="saas roi calculator 2026 — is your software worth it?"><span class="page-type">Other Pages</span><span class="page-title">SaaS ROI Calculator 2026 — Is Your Software Worth It?</span><span class="page-arrow">-></span></a>
+  </div>
+  <div class="empty" id="empty-state">No pages matched that search. Try a product name like HubSpot, Ahrefs, or ClickUp.</div>
   <footer>
-    <p>Last updated: April 25, 2026 &nbsp;·&nbsp;
-    <a href="https://saaspare.org/about.html">About</a> &nbsp;·&nbsp;
+    <p>Last updated: April 25, 2026 &nbsp;|&nbsp;
+    <a href="https://saaspare.org/about.html">About</a> &nbsp;|&nbsp;
     <a href="https://saaspare.org/privacy.html">Privacy</a></p>
   </footer>
 </div>
+<script>
+  const searchInput = document.getElementById('page-search');
+  const resultsCount = document.getElementById('results-count');
+  const emptyState = document.getElementById('empty-state');
+  const cards = [...document.querySelectorAll('.page-card')];
+  const chips = [...document.querySelectorAll('.filter-chip')];
+  let activeType = 'all';
+
+  function applyFilters() {
+    const query = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+    for (const card of cards) {
+      const matchesType = activeType === 'all' || card.dataset.type === activeType;
+      const matchesQuery = !query || card.dataset.title.includes(query) || card.dataset.type.includes(query);
+      const show = matchesType && matchesQuery;
+      card.classList.toggle('hidden', !show);
+      if (show) visible += 1;
+    }
+    resultsCount.textContent = visible ? `${visible} results` : '0 results';
+    emptyState.style.display = visible ? 'none' : 'block';
+
+    const params = new URLSearchParams(window.location.search);
+    if (query) params.set('q', query); else params.delete('q');
+    if (activeType && activeType !== 'all') params.set('type', activeType); else params.delete('type');
+    history.replaceState(null, '', `${window.location.pathname}?${params.toString()}`);
+  }
+
+  for (const chip of chips) {
+    chip.addEventListener('click', () => {
+      chips.forEach((item) => item.classList.remove('active'));
+      chip.classList.add('active');
+      activeType = chip.dataset.type;
+      applyFilters();
+    });
+  }
+  searchInput.addEventListener('input', applyFilters);
+  document.getElementById('search-button').addEventListener('click', applyFilters);
+
+  const params = new URLSearchParams(window.location.search);
+  const initialQuery = params.get('q');
+  const initialType = params.get('type');
+  if (initialQuery) searchInput.value = initialQuery;
+  if (initialType && chips.some((chip) => chip.dataset.type === initialType)) {
+    activeType = initialType;
+    chips.forEach((chip) => chip.classList.toggle('active', chip.dataset.type === initialType));
+  }
+  applyFilters();
+</script>
 </body>
 </html>

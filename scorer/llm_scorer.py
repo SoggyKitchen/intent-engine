@@ -27,7 +27,11 @@ def score(signal: RawSignal) -> Optional[ScoredSignal]:
         title=signal.title[:300],
         body=signal.body[:800],
     )
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=1200,
+        max_output_tokens=700,
+    )
     if not result:
         return None
 

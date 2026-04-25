@@ -9,6 +9,10 @@ on:
   schedule:
     - cron: "0 0,5,10,15,20 * * *"  # 5x daily every 5h (UTC) = 10am,3pm,8pm,1am,6am Brisbane
 
+concurrency:
+  group: intent-engine-stateful
+  cancel-in-progress: false
+
 jobs:
   programmatic:
     runs-on: ubuntu-latest
@@ -17,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0
 
       - uses: astral-sh/setup-uv@v3
 
@@ -31,17 +35,17 @@ jobs:
 
       - name: Run programmatic SEO
         run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '130' }}
-        continue-on-error: true
         env:
           DB_PATH: data/intent.db
+          CEREBRAS_API_KEYS: ${{ secrets.CEREBRAS_API_KEYS }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           CEREBRAS_API_KEY_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
           CEREBRAS_API_KEY_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
           CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
           CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
+          CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
           AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
-          GH_PAT: ${{ secrets.GH_PAT }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
           GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
           LOG_LEVEL: INFO

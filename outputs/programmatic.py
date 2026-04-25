@@ -1,35 +1,22 @@
 """
 Programmatic SEO — generates all page types for all known tool combinations.
-WITH OPTIMIZATIONS:
-  - Page variants: 2x pages from same cluster data
-  - Fallback templates: Save tokens on LLM failures
-  - Expanded networks: 20-50% higher commissions (Impact, Refersion, Tapfiliate)
-  - Cluster filtering: 5% waste reduction via quality scores
-  - Component caching: 5-10% faster generation via @lru_cache
-
-Expected output: 650 pages → 1,300+ pages/day with same token budget
-Revenue impact: 2x commission on top networks + 2x page count = 4x potential
 """
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from itertools import combinations
 from pathlib import Path
 
 from core.db import db
 from core.logger import log
-from llm.router import complete_json, budget_available
+from llm.router import complete_json, budget_available, configured_provider_count
 from outputs.seo_page import _render_and_save
 from core.secrets import get
-from publisher.affiliate_registry import get_all_redirects
+from publisher.affiliate_registry import write_redirects_file
 from outputs.programmatic_optimizations import (
-    filter_clusters_by_quality,
-    generate_page_variants_from_cluster,
-    get_fallback_page,
-    cached_tool_summary,
-    get_best_affiliate_network,
-    log_optimization,
     get_optimization_report,
 )
+
+PROGRAMMATIC_ESTIMATED_TOKENS = int(get("PROGRAMMATIC_ESTIMATED_TOKENS", "2800"))
+PROGRAMMATIC_MAX_OUTPUT_TOKENS = int(get("PROGRAMMATIC_MAX_OUTPUT_TOKENS", "2200"))
 
 TOOLS_BY_VERTICAL = {
     "devtools": [
@@ -333,9 +320,9 @@ def _already_generated(slug_hint: str) -> bool:
     return False
 
 
-def _generate_comparison_page(tool_a: str, tool_b: str, vertical: str) -> bool:
+def _generate_comparison_page(tool_a: str, tool_b: str, vertical: str) -> bool | None:
     if _already_generated(f"{tool_a} vs {tool_b}"):
-        return False
+        return None
 
     prompt = f"""You are an expert B2B software analyst writing for buyers.
 
@@ -405,15 +392,19 @@ Return JSON exactly:
   "secondary_keywords": ["{tool_a} alternative", "{tool_b} alternative", "best {vertical.replace('_',' ')} software"]
 }}"""
 
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=PROGRAMMATIC_ESTIMATED_TOKENS,
+        max_output_tokens=PROGRAMMATIC_MAX_OUTPUT_TOKENS,
+    )
     if not result:
         return False
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_alternatives_page(target_tool: str, vertical: str) -> bool:
+def _generate_alternatives_page(target_tool: str, vertical: str) -> bool | None:
     if _already_generated(f"alternatives to {target_tool}"):
-        return False
+        return None
 
     programs = TOOLS_BY_VERTICAL.get(vertical, [])
     alternatives = [t for t in programs if t != target_tool][:5]
@@ -461,15 +452,19 @@ Return JSON exactly:
   "secondary_keywords": ["best {target_tool} alternative", "{target_tool} competitors", "switch from {target_tool}"]
 }}"""
 
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=PROGRAMMATIC_ESTIMATED_TOKENS,
+        max_output_tokens=PROGRAMMATIC_MAX_OUTPUT_TOKENS,
+    )
     if not result:
         return False
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_pricing_page(tool: str, vertical: str) -> bool:
+def _generate_pricing_page(tool: str, vertical: str) -> bool | None:
     if _already_generated(f"{tool} pricing"):
-        return False
+        return None
 
     prompt = f"""Write a detailed "{tool} Pricing" page for B2B buyers evaluating {tool}.
 
@@ -535,16 +530,20 @@ Return JSON:
   "secondary_keywords": ["{tool} cost", "{tool} plans", "how much does {tool} cost"]
 }}"""
 
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=PROGRAMMATIC_ESTIMATED_TOKENS,
+        max_output_tokens=PROGRAMMATIC_MAX_OUTPUT_TOKENS,
+    )
     if not result:
         return False
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_bestof_page(vertical: str, audience: str, tools: list[str]) -> bool:
+def _generate_bestof_page(vertical: str, audience: str, tools: list[str]) -> bool | None:
     key = f"best {vertical.replace('_',' ')} {audience}"
     if _already_generated(key):
-        return False
+        return None
 
     tool_list = ", ".join(tools)
     prompt = f"""You are an expert B2B software analyst. Write a buyer guide for {vertical.replace('_',' ')} tools.
@@ -589,15 +588,19 @@ Return JSON:
   "secondary_keywords": ["top {vertical.replace('_',' ')} tools {audience}", "{vertical.replace('_',' ')} {audience} {time.strftime('%Y')}"]
 }}"""
 
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=PROGRAMMATIC_ESTIMATED_TOKENS,
+        max_output_tokens=PROGRAMMATIC_MAX_OUTPUT_TOKENS,
+    )
     if not result:
         return False
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_coupon_page(tool: str, vertical: str) -> bool:
+def _generate_coupon_page(tool: str, vertical: str) -> bool | None:
     if _already_generated(f"{tool} coupon"):
-        return False
+        return None
 
     prompt = f"""Write a "{tool} Coupon Codes" page for buyers about to purchase {tool}.
 
@@ -651,15 +654,19 @@ Return JSON:
   "secondary_keywords": ["{tool} promo code", "{tool} discount", "{tool} free trial"]
 }}"""
 
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=PROGRAMMATIC_ESTIMATED_TOKENS,
+        max_output_tokens=PROGRAMMATIC_MAX_OUTPUT_TOKENS,
+    )
     if not result:
         return False
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_review_page(tool: str, vertical: str) -> bool:
+def _generate_review_page(tool: str, vertical: str) -> bool | None:
     if _already_generated(f"{tool} review"):
-        return False
+        return None
 
     prompt = f"""Write an in-depth "{tool} Review" for B2B buyers evaluating {tool} for {vertical.replace('_',' ')}.
 
@@ -714,15 +721,19 @@ Return JSON:
   "secondary_keywords": ["{tool} review {time.strftime('%Y')}", "is {tool} worth it", "{tool} pros and cons"]
 }}"""
 
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=PROGRAMMATIC_ESTIMATED_TOKENS,
+        max_output_tokens=PROGRAMMATIC_MAX_OUTPUT_TOKENS,
+    )
     if not result:
         return False
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_free_plan_page(tool: str, vertical: str) -> bool:
+def _generate_free_plan_page(tool: str, vertical: str) -> bool | None:
     if _already_generated(f"{tool} free plan"):
-        return False
+        return None
 
     prompt = f"""Write a "Does {tool} Have a Free Plan?" page for buyers who want to try {tool} without paying.
 
@@ -776,7 +787,11 @@ Return JSON:
   "secondary_keywords": ["{tool} free plan", "{tool} free tier", "{tool} free trial"]
 }}"""
 
-    result = complete_json(prompt)
+    result = complete_json(
+        prompt,
+        estimated_tokens=PROGRAMMATIC_ESTIMATED_TOKENS,
+        max_output_tokens=PROGRAMMATIC_MAX_OUTPUT_TOKENS,
+    )
     if not result:
         return False
     return bool(_render_and_save(result, vertical))
@@ -818,16 +833,8 @@ def _ping_google_sitemap():
 
 def _write_redirects_file():
     try:
-        redirects = get_all_redirects()
-        lines = []
-        for slug, url in redirects.items():
-            sep = "&" if "?" in url else "?"
-            tracked_url = f"{url}{sep}utm_source=saaspare&utm_medium=affiliate&utm_campaign=go"
-            lines.append(f"/go/{slug} {tracked_url} 302")
-        path = Path("site/_redirects")
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-        log.info(f"Written {len(lines)} /go/ redirects to site/_redirects")
+        count = write_redirects_file("site/_redirects")
+        log.info(f"Written {count} /go/ redirects to site/_redirects")
     except Exception as e:
         log.warning(f"Failed to write _redirects: {e}")
 
@@ -838,25 +845,50 @@ def _sync_db_from_filesystem():
         pages_dir = Path("site/pages")
         if not pages_dir.exists():
             return
+        domain = get("SITE_DOMAIN", "https://saaspare.org")
         with db() as conn:
-            existing = {row[0] for row in conn.execute("SELECT title FROM outputs").fetchall()}
-            inserted = 0
+            synced = 0
             for f in pages_dir.glob("*.html"):
+                if f.stem in {"index", "thanks", "verification"}:
+                    continue
                 html = f.read_text(encoding="utf-8", errors="ignore")
                 m = re.search(r"<title>([^<]+)</title>", html, re.IGNORECASE)
                 if not m:
                     continue
                 title = m.group(1).strip()
-                if title and title not in existing:
+                if not title:
+                    continue
+                published_url = f"{domain}/pages/{f.stem}"
+                row = conn.execute(
+                    "SELECT id FROM outputs WHERE file_path = ? OR title = ? ORDER BY CASE WHEN type='seo_page' THEN 0 ELSE 1 END, created_at DESC LIMIT 1",
+                    (str(f), title),
+                ).fetchone()
+                if row:
                     conn.execute(
-                        "INSERT OR IGNORE INTO outputs (id, type, vertical, title, file_path, created_at) VALUES (?, ?, ?, ?, ?, strftime('%s','now'))",
-                        (f.stem, "programmatic", "unknown", title, str(f))
+                        """
+                        UPDATE outputs
+                        SET type = 'seo_page',
+                            title = ?,
+                            file_path = ?,
+                            published_url = COALESCE(NULLIF(published_url, ''), ?),
+                            vertical = COALESCE(NULLIF(vertical, ''), 'unknown')
+                        WHERE id = ?
+                        """,
+                        (title, str(f), published_url, row["id"]),
                     )
-                    existing.add(title)
-                    inserted += 1
+                else:
+                    conn.execute(
+                        """
+                        INSERT OR IGNORE INTO outputs
+                          (id, type, vertical, title, file_path, published_url, created_at)
+                        VALUES (?, 'seo_page', 'unknown', ?, ?, ?, strftime('%s','now'))
+                        """,
+                        (f"page-{f.stem}", title, str(f), published_url),
+                    )
+                synced += 1
             conn.commit()
-        if inserted:
-            log.info(f"_sync_db_from_filesystem: synced {inserted} existing HTML pages into DB")
+        if synced:
+            log.info(f"_sync_db_from_filesystem: reconciled {synced} HTML pages into outputs")
     except Exception as e:
         log.warning(f"_sync_db_from_filesystem failed: {e}")
 
@@ -898,6 +930,10 @@ def run_programmatic(max_pages: int = 500) -> int:
 
     tasks.sort(key=_task_priority)
 
+    if configured_provider_count() == 0:
+        log.error("No Cerebras API keys configured — skipping page generation")
+        return 0
+
     if not budget_available():
         log.info("No LLM quota remaining for today — skipping page generation, resumes automatically tomorrow")
         from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage, _rebuild_pages_index, _ping_indexnow
@@ -911,44 +947,34 @@ def run_programmatic(max_pages: int = 500) -> int:
     MAX_CONSECUTIVE_FAILURES = 25
     transient_pause_threshold = 5
 
-    with ThreadPoolExecutor(max_workers=1) as executor:
-        futures = {
-            executor.submit(fn, *args): args
-            for fn, args in tasks
-        }
-        for future in as_completed(futures):
-            if generated >= max_pages:
-                for f in futures:
-                    f.cancel()
+    for fn, args in tasks:
+        if generated >= max_pages:
+            break
+        try:
+            ok = fn(*args)
+            if ok:
+                generated += 1
+                consecutive_failures = 0
+                log.info(f"[{generated}/{max_pages}] Generated: {args}")
+            elif ok is None:
+                continue
+            elif not budget_available():
+                log.info("Daily LLM quota exhausted mid-run — stopping cleanly, resumes tomorrow")
                 break
-            args = futures[future]
-            try:
-                ok = future.result()
-                if ok:
-                    generated += 1
-                    consecutive_failures = 0
-                    log.info(f"[{generated}/{max_pages}] Generated: {args}")
-                elif not budget_available():
-                    log.info("Daily LLM quota exhausted mid-run — stopping cleanly, resumes tomorrow")
-                    for f in futures:
-                        f.cancel()
-                    break
-                else:
-                    consecutive_failures += 1
-                    if consecutive_failures == transient_pause_threshold:
-                        log.warning(f"{transient_pause_threshold} consecutive failures — pausing 30s for API to recover")
-                        time.sleep(30)
-                    elif consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
-                        for f in futures:
-                            f.cancel()
-                        log.warning(f"{MAX_CONSECUTIVE_FAILURES} consecutive failures — quota exhausted or persistent API outage, stopping")
-                        break
-            except Exception as e:
+            else:
                 consecutive_failures += 1
-                log.warning(f"Page gen failed {args}: {e}")
                 if consecutive_failures == transient_pause_threshold:
-                    log.warning(f"Pausing 30s for API to recover ({consecutive_failures} failures in a row)")
+                    log.warning(f"{transient_pause_threshold} consecutive failures — pausing 30s for API to recover")
                     time.sleep(30)
+                elif consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
+                    log.warning(f"{MAX_CONSECUTIVE_FAILURES} consecutive failures — quota exhausted or persistent API outage, stopping")
+                    break
+        except Exception as e:
+            consecutive_failures += 1
+            log.warning(f"Page gen failed {args}: {e}")
+            if consecutive_failures == transient_pause_threshold:
+                log.warning(f"Pausing 30s for API to recover ({consecutive_failures} failures in a row)")
+                time.sleep(30)
 
     from pathlib import Path as _Path
     from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage, _rebuild_pages_index

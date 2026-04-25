@@ -1,4 +1,5 @@
 import os
+import re
 import subprocess
 import time
 from pathlib import Path
@@ -92,15 +93,101 @@ def _deploy_via_git(repo_url: str) -> bool:
 
 
 _SITEMAP_EXCLUDE = {"index", "thanks", "verification"}
-_PAGES_EXCLUDE = {"thanks", "verification"}
+_PAGES_EXCLUDE = {"index", "thanks", "verification"}
 
 def _page_label(stem: str) -> str:
-    import re as _re
-    label = stem.replace("-", " ").title()
-    label = _re.sub(r'\s+Pricing\s+\d{4}.*$', ' Pricing', label)
-    label = _re.sub(r'\s+\d{4}.*$', '', label)
-    label = _re.sub(r'\s+(Plans?|Costs?|What You Actually Pay)\b.*$', '', label, flags=_re.IGNORECASE)
+    label = stem.replace("-vs-", " vs ")
+    label = label.replace("-io", ".io")
+    label = label.replace("-ai", " ai")
+    label = label.replace("-com", ".com")
+    label = re.sub(r"-\d{4}.*$", "", label)
+    label = " ".join(part for part in label.split("-") if part)
+    label = " ".join(word.capitalize() for word in label.split())
+    replacements = {
+        "Hubspot": "HubSpot",
+        "Clickup": "ClickUp",
+        "Freshbooks": "FreshBooks",
+        "Bigcommerce": "BigCommerce",
+        "Digitalocean": "DigitalOcean",
+        "Pandadoc": "PandaDoc",
+        "Nordlayer": "NordLayer",
+        "Bamboohr": "BambooHR",
+        "Docusign": "DocuSign",
+        "Activecampaign": "ActiveCampaign",
+        "Rankmath": "RankMath",
+        "Spyfu": "SpyFu",
+        "Frase Io": "Frase.io",
+        "Copy Ai": "Copy.ai",
+        "Monday Com": "Monday.com",
+        "Se Ranking": "SE Ranking",
+        "Seo": "SEO",
+        "Crm": "CRM",
+        "Pm": "PM",
+        "Saas": "SaaS",
+    }
+    for wrong, right in replacements.items():
+        label = re.sub(rf"\b{wrong}\b", right, label)
+    label = label.replace(" Vs ", " vs ")
     return label.strip()
+
+
+def _detect_page_type(stem: str) -> str:
+    lower = stem.lower()
+    if "-vs-" in lower:
+        return "comparison"
+    if "pricing" in lower or "-cost" in lower:
+        return "pricing"
+    if "alternatives" in lower or "alternative" in lower:
+        return "alternatives"
+    if "review" in lower:
+        return "review"
+    if "promo-code" in lower or "coupon" in lower or "discount" in lower:
+        return "promo"
+    if "free-trial" in lower or "free-plan" in lower or "free-tier" in lower or lower.startswith("does-"):
+        return "free-trial"
+    if lower.startswith("best-"):
+        return "best-of"
+    return "guide"
+
+
+def _page_title_from_html(path: Path) -> str:
+    try:
+        html = path.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return _page_label(path.stem)
+    match = re.search(r"<title>([^<]+)</title>", html, re.IGNORECASE)
+    if not match:
+        return _page_label(path.stem)
+    title = match.group(1).replace("| SaaSpare", "").strip()
+    return title or _page_label(path.stem)
+
+
+def _homepage_stats(site_dir: Path) -> tuple[int, int, int]:
+    pages_dir = site_dir / "pages"
+    pages = [p for p in pages_dir.glob("*.html") if p.stem not in _PAGES_EXCLUDE] if pages_dir.exists() else []
+    page_count = len(pages)
+    weekly_pages = sum(
+        1 for p in pages
+        if (time.time() - p.stat().st_mtime) <= 7 * 86400
+    )
+    categories = set()
+    for page in pages:
+        title = _page_title_from_html(page).lower()
+        if " vs " in title:
+            categories.add("comparisons")
+        elif "pricing" in title:
+            categories.add("pricing")
+        elif "review" in title:
+            categories.add("review")
+        elif "alternative" in title:
+            categories.add("alternatives")
+        elif "free plan" in title or "free trial" in title:
+            categories.add("free")
+        elif "best " in title:
+            categories.add("best")
+        else:
+            categories.add("other")
+    return page_count, max(len(categories), 1), weekly_pages
 
 def _rebuild_homepage(site_dir: Path):
     index_path = site_dir / "index.html"
@@ -109,20 +196,67 @@ def _rebuild_homepage(site_dir: Path):
     pages_dir = site_dir / "pages"
     pages = [p for p in sorted(pages_dir.glob("*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
              if p.stem not in _PAGES_EXCLUDE] if pages_dir.exists() else []
-    domain = get("SITE_DOMAIN", "https://saaspare.org")
-    pills = "\n".join(
-        f'    <a class="tool-pill" href="{domain}/pages/{p.stem}">{_page_label(p.stem)}</a>'
-        for p in pages[:24]
-    )
     html = index_path.read_text(encoding="utf-8")
-    import re
-    html = re.sub(
-        r'(<div class="tools-grid"[^>]*>)(.*?)(</div>)',
-        lambda m: m.group(1) + "\n" + pills + "\n  " + m.group(3),
-        html, count=1, flags=re.DOTALL
+    page_count, category_count, weekly_pages = _homepage_stats(site_dir)
+    replacements = [
+        ("Tool comparisons", page_count),
+        ("SaaS categories", category_count),
+        ("New pages weekly", weekly_pages),
+    ]
+    for label, count in replacements:
+        html = re.sub(
+            rf'(<span class="stat-val" data-count=")\d+(">)(?:\d+)(</span><span class="stat-label">{re.escape(label)}</span>)',
+            lambda m: f"{m.group(1)}{count}{m.group(2)}{count}{m.group(3)}",
+            html,
+        )
+    newsletter_form_action = get(
+        "NEWSLETTER_FORM_ACTION",
+        "https://formsubmit.co/smithelly30121@gmail.com",
     )
+    html = re.sub(
+        r'action="https://formsubmit\.co/[^"]+"',
+        f'action="{newsletter_form_action}"',
+        html,
+    )
+    html = re.sub(
+        r'(<div class="badge"><span class="badge-dot"></span>)(.*?)(</div>)',
+        rf'\g<1>{page_count} comparisons live | {weekly_pages} added in the last 7 days\g<3>',
+        html,
+        count=1,
+        flags=re.DOTALL,
+    )
+    html = re.sub(
+        r"function doHeroSearch\(\)\{const q=document\.getElementById\('hero-search'\)\.value\.trim\(\);if\(q\)window\.location\.href='/pages/'\}",
+        "function doHeroSearch(){const q=document.getElementById('hero-search').value.trim();window.location.href=q?'/pages/?q='+encodeURIComponent(q):'/pages/';}",
+        html,
+        count=1,
+    )
+    featured_pages = {
+        "Marketing Automation": ("hubspot", "pricing"),
+        "Dev Tools": ("datadog",),
+        "Cybersecurity": ("1password",),
+        "Cloud Infrastructure": ("digitalocean",),
+        "Legal &amp; Contracts": ("pandadoc",),
+        "AI Writing Tools": ("jasper",),
+    }
+    for label, keywords in featured_pages.items():
+        target = "/pages/"
+        for page in pages:
+            stem = page.stem.lower()
+            if all(keyword in stem for keyword in keywords):
+                target = f"/pages/{page.stem}"
+                break
+        html = re.sub(
+            rf'(<a class="cat-card" href=")/pages/("><span class="cat-emoji">.*?<div class="cat-name">{label}</div>)',
+            rf'\g<1>{target}\2',
+            html,
+            count=1,
+            flags=re.DOTALL,
+        )
     index_path.write_text(html, encoding="utf-8")
-    log.info(f"Homepage updated with {len(pages[:24])} page links")
+    log.info(
+        f"Homepage updated: {page_count} pages, {category_count} content groups, {weekly_pages} new this week"
+    )
 
 def _rebuild_sitemap(site_repo: Path):
     pages_dir = site_repo / "pages"
@@ -146,72 +280,54 @@ def _rebuild_sitemap(site_repo: Path):
 
 
 def _rebuild_pages_index(site_dir: Path = SITE_DIR):
-    import re as _re
     pages_dir = site_dir if site_dir.name == "pages" else site_dir / "pages"
     if not pages_dir.exists():
         log.warning("_rebuild_pages_index: pages dir not found")
         return
 
-    TYPE_ORDER = ["vs", "pricing", "alternatives", "review", "coupon", "free", "best"]
+    TYPE_ORDER = ["comparison", "pricing", "alternatives", "review", "promo", "free-trial", "best-of", "guide"]
     TYPE_LABELS = {
-        "vs": "Comparisons",
+        "comparison": "Comparisons",
         "pricing": "Pricing Guides",
         "alternatives": "Alternatives",
         "review": "Reviews",
-        "coupon": "Coupon & Promo Codes",
-        "free": "Free Plan Guides",
-        "best": "Best-Of Lists",
-        "other": "Other Pages",
+        "promo": "Coupon & Promo Codes",
+        "free-trial": "Free Trials",
+        "best-of": "Best-Of Lists",
+        "guide": "Other Pages",
     }
 
-    def _detect_type(stem: str) -> str:
-        s = stem.lower()
-        if "-vs-" in s:
-            return "vs"
-        if "pricing" in s or "-cost" in s:
-            return "pricing"
-        if "alternatives" in s or "alternative" in s:
-            return "alternatives"
-        if "review" in s:
-            return "review"
-        if "coupon" in s or "promo" in s or "discount" in s:
-            return "coupon"
-        if "free-plan" in s or "free-tier" in s or "does-" in s:
-            return "free"
-        if s.startswith("best-"):
-            return "best"
-        return "other"
-
-    grouped: dict[str, list[tuple[str, str]]] = {t: [] for t in TYPE_ORDER + ["other"]}
+    grouped: dict[str, list[tuple[str, str]]] = {t: [] for t in TYPE_ORDER}
     domain = get("SITE_DOMAIN", "https://saaspare.org")
+    ga_id = get("GA_MEASUREMENT_ID", "")
 
     for f in sorted(pages_dir.glob("*.html"), key=lambda p: p.stem):
         if f.stem in _PAGES_EXCLUDE:
             continue
-        ptype = _detect_type(f.stem)
-        label = _page_label(f.stem)
+        ptype = _detect_page_type(f.stem)
+        label = _page_title_from_html(f)
         url = f"{domain}/pages/{f.stem}"
         grouped[ptype].append((label, url))
 
     total = sum(len(v) for v in grouped.values())
-
-    sections_html = ""
-    for ptype in TYPE_ORDER + ["other"]:
-        pages = grouped.get(ptype, [])
-        if not pages:
-            continue
-        heading = TYPE_LABELS.get(ptype, ptype.title())
-        items = "\n".join(
-            f'          <li><a href="{url}">{label}</a></li>'
-            for label, url in pages
-        )
-        sections_html += f"""
-      <section class="page-group">
-        <h2>{heading} <span class="count">({len(pages)})</span></h2>
-        <ul>
-{items}
-        </ul>
-      </section>"""
+    filter_chip_parts = [
+        f'    <button class="filter-chip active" data-type="all" type="button">All <span>{total}</span></button>'
+    ]
+    filter_chip_parts.extend(
+        f'    <button class="filter-chip" data-type="{key}" type="button">{TYPE_LABELS[key]} <span>{len(grouped[key])}</span></button>'
+        for key in TYPE_ORDER
+        if grouped[key]
+    )
+    filter_chips = "\n".join(filter_chip_parts)
+    page_cards = "\n".join(
+        f'    <a class="page-card" href="{url}" data-type="{ptype}" data-title="{label.lower()}">'
+        f'<span class="page-type">{TYPE_LABELS[ptype]}</span>'
+        f'<span class="page-title">{label}</span>'
+        f'<span class="page-arrow">-></span>'
+        f'</a>'
+        for ptype in TYPE_ORDER
+        for label, url in grouped[ptype]
+    )
 
     today = time.strftime("%B %d, %Y")
     html = f"""<!DOCTYPE html>
@@ -220,30 +336,55 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All SaaS Comparisons & Guides | SaaSpare</title>
-<meta name="description" content="Browse {total} B2B SaaS comparison pages, pricing guides, reviews and alternatives — all free.">
+<meta name="description" content="Browse {total} B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{domain}/pages/">
+<meta property="og:title" content="All SaaS Comparisons & Guides | SaaSpare">
+<meta property="og:description" content="Browse {total} B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{domain}/pages/">
 <style>
-  :root{{--primary:#1a1a2e;--accent:#e94560;--bg:#f8f9fa;--text:#333}}
+  :root{{--bg:#080810;--bg-soft:#11131a;--border:rgba(255,255,255,.08);--text:rgba(255,255,255,.84);--muted:rgba(255,255,255,.46);--accent:#e94560}}
   *{{box-sizing:border-box;margin:0;padding:0}}
-  body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}}
-  nav{{background:var(--primary);padding:.7rem 1rem;display:flex;align-items:center;gap:1.5rem}}
-  nav a{{color:#ccc;text-decoration:none;font-size:.9rem}}
-  nav a:first-child{{color:#fff;font-weight:700;font-size:1.1rem;margin-right:auto}}
+  body{{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(ellipse 120% 80% at 50% -10%,#1a0d12 0%,#0d0008 45%,#080810 80%);color:var(--text);line-height:1.6;min-height:100vh}}
+  a{{color:inherit;text-decoration:none}}
+  nav{{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}}
+  nav a{{color:var(--muted);font-size:.9rem}}
+  nav a:first-child{{color:#fff;font-weight:800;font-size:1.05rem;margin-right:auto}}
   nav a:hover{{color:#fff}}
-  .hero{{background:var(--primary);color:#fff;padding:3rem 1rem;text-align:center}}
-  .hero h1{{font-size:2rem;margin-bottom:.5rem}}
-  .hero p{{color:#aaa;font-size:1.1rem}}
-  .container{{max-width:960px;margin:0 auto;padding:2rem 1rem}}
-  .page-group{{background:#fff;border-radius:8px;padding:1.5rem 2rem;margin:1.5rem 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}}
-  .page-group h2{{color:var(--primary);font-size:1.25rem;margin-bottom:1rem;border-bottom:2px solid var(--accent);padding-bottom:.4rem;display:flex;align-items:center;gap:.5rem}}
-  .count{{font-size:.85rem;font-weight:400;color:#888}}
-  .page-group ul{{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.4rem}}
-  .page-group li a{{display:block;padding:.35rem .6rem;border-radius:4px;text-decoration:none;color:#333;font-size:.9rem;transition:background .15s}}
-  .page-group li a:hover{{background:#f0f0f0;color:var(--accent)}}
-  footer{{text-align:center;color:#999;font-size:.85rem;margin-top:3rem;padding-top:2rem;border-top:1px solid #eee}}
-  footer a{{color:#aaa;text-decoration:none}}
+  .hero{{max-width:1100px;margin:0 auto;padding:4rem 1.5rem 2rem;text-align:center}}
+  .hero h1{{font-size:clamp(2rem,5vw,3.2rem);color:#fff;letter-spacing:-.04em;margin-bottom:.75rem}}
+  .hero p{{color:var(--muted);max-width:760px;margin:0 auto 1.5rem}}
+  .search-shell{{max-width:680px;margin:0 auto 1rem;padding:.5rem;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:999px;display:flex;gap:.5rem}}
+  .search-shell input{{flex:1;background:transparent;border:none;color:#fff;padding:.85rem 1rem;outline:none;font:inherit}}
+  .search-shell button{{border:none;border-radius:999px;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.85rem 1.25rem;font:inherit;font-weight:700;cursor:pointer}}
+  .stats{{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem}}
+  .stat{{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:999px;padding:.5rem .9rem;color:var(--muted);font-size:.85rem}}
+  .container{{max-width:1100px;margin:0 auto;padding:1.5rem 1.5rem 4rem}}
+  .filter-row{{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1.25rem}}
+  .filter-chip{{border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--muted);border-radius:999px;padding:.5rem .8rem;cursor:pointer;font:inherit}}
+  .filter-chip.active,.filter-chip:hover{{background:rgba(233,69,96,.14);border-color:rgba(233,69,96,.35);color:#fff}}
+  .filter-chip span{{opacity:.7;margin-left:.25rem}}
+  .results{{margin-left:auto;color:var(--muted);font-size:.85rem}}
+  .pages-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.75rem}}
+  .page-card{{display:flex;flex-direction:column;gap:.5rem;padding:1rem 1.1rem;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--border);transition:transform .16s ease,border-color .16s ease,background .16s ease}}
+  .page-card:hover{{transform:translateY(-2px);background:rgba(255,255,255,.06);border-color:rgba(233,69,96,.35)}}
+  .page-card.hidden{{display:none}}
+  .page-type{{font-size:.72rem;color:#ffb5c0;text-transform:uppercase;letter-spacing:.08em}}
+  .page-title{{font-size:.95rem;color:#fff;font-weight:700;line-height:1.4}}
+  .page-arrow{{font-size:.8rem;color:var(--muted);margin-top:auto}}
+  .empty{{display:none;padding:2rem;text-align:center;color:var(--muted);border:1px dashed var(--border);border-radius:18px;background:rgba(255,255,255,.03)}}
+  footer{{text-align:center;color:var(--muted);font-size:.85rem;margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border)}}
+  footer a{{color:#fff}}
+  @media (max-width: 720px) {{
+    nav {{padding:1rem}}
+    .search-shell {{border-radius:20px;flex-direction:column}}
+    .search-shell button {{width:100%}}
+    .results {{width:100%;margin-left:0}}
+    .pages-grid {{grid-template-columns:1fr}}
+  }}
 </style>
+{"<script async src=\"https://www.googletagmanager.com/gtag/js?id=" + ga_id + "\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','" + ga_id + "');</script>" if ga_id else ""}
 </head>
 <body>
 <nav>
@@ -253,22 +394,87 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 </nav>
 <div class="hero">
   <h1>All SaaS Comparisons & Guides</h1>
-  <p>{total} pages covering pricing, comparisons, reviews and alternatives</p>
+  <p>{total} pages covering pricing, comparisons, reviews and alternatives.</p>
+  <div class="search-shell">
+    <input id="page-search" type="text" placeholder="Search any tool, brand, or page type">
+    <button type="button" id="search-button">Search</button>
+  </div>
+  <div class="stats">
+    <div class="stat">{len(grouped['comparison'])} comparisons</div>
+    <div class="stat">{len(grouped['pricing'])} pricing guides</div>
+    <div class="stat">{len(grouped['review'])} reviews</div>
+    <div class="stat">Updated {today}</div>
+  </div>
 </div>
 <div class="container">
-{sections_html}
+  <div class="filter-row">
+{filter_chips}
+    <div class="results" id="results-count"></div>
+  </div>
+  <div class="pages-grid" id="pages-grid">
+{page_cards}
+  </div>
+  <div class="empty" id="empty-state">No pages matched that search. Try a product name like HubSpot, Ahrefs, or ClickUp.</div>
   <footer>
-    <p>Last updated: {today} &nbsp;·&nbsp;
-    <a href="{domain}/about.html">About</a> &nbsp;·&nbsp;
+    <p>Last updated: {today} &nbsp;|&nbsp;
+    <a href="{domain}/about.html">About</a> &nbsp;|&nbsp;
     <a href="{domain}/privacy.html">Privacy</a></p>
   </footer>
 </div>
+<script>
+  const searchInput = document.getElementById('page-search');
+  const resultsCount = document.getElementById('results-count');
+  const emptyState = document.getElementById('empty-state');
+  const cards = [...document.querySelectorAll('.page-card')];
+  const chips = [...document.querySelectorAll('.filter-chip')];
+  let activeType = 'all';
+
+  function applyFilters() {{
+    const query = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+    for (const card of cards) {{
+      const matchesType = activeType === 'all' || card.dataset.type === activeType;
+      const matchesQuery = !query || card.dataset.title.includes(query) || card.dataset.type.includes(query);
+      const show = matchesType && matchesQuery;
+      card.classList.toggle('hidden', !show);
+      if (show) visible += 1;
+    }}
+    resultsCount.textContent = visible ? `${{visible}} results` : '0 results';
+    emptyState.style.display = visible ? 'none' : 'block';
+
+    const params = new URLSearchParams(window.location.search);
+    if (query) params.set('q', query); else params.delete('q');
+    if (activeType && activeType !== 'all') params.set('type', activeType); else params.delete('type');
+    history.replaceState(null, '', `${{window.location.pathname}}?${{params.toString()}}`);
+  }}
+
+  for (const chip of chips) {{
+    chip.addEventListener('click', () => {{
+      chips.forEach((item) => item.classList.remove('active'));
+      chip.classList.add('active');
+      activeType = chip.dataset.type;
+      applyFilters();
+    }});
+  }}
+  searchInput.addEventListener('input', applyFilters);
+  document.getElementById('search-button').addEventListener('click', applyFilters);
+
+  const params = new URLSearchParams(window.location.search);
+  const initialQuery = params.get('q');
+  const initialType = params.get('type');
+  if (initialQuery) searchInput.value = initialQuery;
+  if (initialType && chips.some((chip) => chip.dataset.type === initialType)) {{
+    activeType = initialType;
+    chips.forEach((chip) => chip.classList.toggle('active', chip.dataset.type === initialType));
+  }}
+  applyFilters();
+</script>
 </body>
 </html>
 """
     out = pages_dir / "index.html"
     out.write_text(html, encoding="utf-8")
-    log.info(f"Pages index rebuilt: {total} pages across {sum(1 for v in grouped.values() if v)} categories -> {out}")
+    log.info(f"Pages index rebuilt: {total} pages across {sum(1 for v in grouped.values() if v)} groups -> {out}")
 
 
 def _ping_indexnow(site_repo: Path):

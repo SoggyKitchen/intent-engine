@@ -8,6 +8,10 @@ on:
     - cron: "30 23 * * *"   # 11:30 PM UTC
   workflow_dispatch:
 
+concurrency:
+  group: intent-engine-stateful
+  cancel-in-progress: false
+
 jobs:
   score-and-publish:
     runs-on: ubuntu-latest
@@ -16,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0
 
       - uses: astral-sh/setup-uv@v3
 
@@ -30,14 +34,15 @@ jobs:
 
       - name: Score signals
         run: uv run engine score
-        continue-on-error: true
         env:
           DB_PATH: data/intent.db
+          CEREBRAS_API_KEYS: ${{ secrets.CEREBRAS_API_KEYS }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           CEREBRAS_API_KEY_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
           CEREBRAS_API_KEY_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
           CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
           CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
+          CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SCORE_BATCH_SIZE: "40"
           LOG_LEVEL: INFO
@@ -45,14 +50,15 @@ jobs:
 
       - name: Generate & publish outputs
         run: uv run engine publish
-        continue-on-error: true
         env:
           DB_PATH: data/intent.db
+          CEREBRAS_API_KEYS: ${{ secrets.CEREBRAS_API_KEYS }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           CEREBRAS_API_KEY_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
           CEREBRAS_API_KEY_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
           CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
           CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
+          CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
           CF_PAGES_DEPLOY_HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}

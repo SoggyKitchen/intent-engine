@@ -42,27 +42,43 @@ def run():
     adapters.append(StackOverflowAdapter())
 
     total_new = 0
-    with ThreadPoolExecutor(max_workers=len(adapters)) as pool:
-        futures = {pool.submit(_run_adapter, adapter, since_ts): adapter.name
-                   for adapter in adapters}
-        for future in as_completed(futures):
-            name = futures[future]
-            try:
-                count = future.result()
-                total_new += count
-                log.info(f"{name}: {count} new signals")
-            except Exception as e:
-                log.error(f"Adapter {name} failed: {e}")
+    adapter_errors: list[str] = []
+    try:
+        with ThreadPoolExecutor(max_workers=len(adapters)) as pool:
+            futures = {pool.submit(_run_adapter, adapter, since_ts): adapter.name
+                       for adapter in adapters}
+            for future in as_completed(futures):
+                name = futures[future]
+                try:
+                    count = future.result()
+                    total_new += count
+                    log.info(f"{name}: {count} new signals")
+                except Exception as e:
+                    msg = f"{name} failed: {e}"
+                    adapter_errors.append(msg)
+                    log.error(f"Adapter {msg}")
 
-    with db() as conn:
-        conn.execute("""
-            UPDATE runs SET ended_at = ?, status = 'ok', signals_in = ?
-            WHERE id = ?
-        """, (int(time.time()), total_new, run_id))
+        status = "ok" if not adapter_errors else "error"
+        error_text = None if not adapter_errors else "; ".join(adapter_errors)[:1000]
+        with db() as conn:
+            conn.execute("""
+                UPDATE runs SET ended_at = ?, status = ?, signals_in = ?, error = ?
+                WHERE id = ?
+            """, (int(time.time()), status, total_new, error_text, run_id))
 
-    log.info(f"Harvest complete: {total_new} new signals stored")
-    _ping_health("harvest")
-    return total_new
+        if adapter_errors:
+            raise RuntimeError(error_text)
+
+        log.info(f"Harvest complete: {total_new} new signals stored")
+        _ping_health("harvest")
+        return total_new
+    except Exception as e:
+        with db() as conn:
+            conn.execute("""
+                UPDATE runs SET ended_at = ?, status = 'error', signals_in = ?, error = ?
+                WHERE id = ?
+            """, (int(time.time()), total_new, str(e)[:1000], run_id))
+        raise
 
 
 def _run_adapter(adapter, since_ts: int) -> int:

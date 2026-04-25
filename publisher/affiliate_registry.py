@@ -1,3 +1,7 @@
+import json
+from functools import lru_cache
+from pathlib import Path
+
 from slugify import slugify
 
 PROGRAMS = {
@@ -311,44 +315,231 @@ PROGRAMS = {
     ],
 }
 
+OVERRIDES_PATH = Path("data/affiliate_overrides.json")
+IMPORTED_AFFILIATE_PATH = Path("data/affiliate_links.json")
+
+
+def _normalize_aliases(value) -> list[str]:
+    if not value:
+        return []
+    if isinstance(value, str):
+        value = [value]
+    aliases = []
+    seen: set[str] = set()
+    for alias in value:
+        text = str(alias).strip()
+        if not text:
+            continue
+        slug = slugify(text)
+        if not slug or slug in seen:
+            continue
+        seen.add(slug)
+        aliases.append(text)
+    return aliases
+
+
+def _load_overrides() -> list[dict]:
+    if not OVERRIDES_PATH.exists():
+        return []
+    try:
+        raw = json.loads(OVERRIDES_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+
+    if not isinstance(raw, list):
+        return []
+
+    overrides: list[dict] = []
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        name = str(item.get("name", "")).strip()
+        affiliate_url = str(item.get("affiliate_url", "")).strip()
+        if not name or not affiliate_url:
+            continue
+        override = dict(item)
+        override["aliases"] = _normalize_aliases(item.get("aliases"))
+        overrides.append(override)
+    return overrides
+
+
+def _merge_program(base: dict, override: dict) -> dict:
+    merged = dict(base)
+    merged.update({k: v for k, v in override.items() if v not in (None, "")})
+    merged["aliases"] = _normalize_aliases(
+        [*base.get("aliases", []), *override.get("aliases", [])]
+    )
+    return merged
+
+
+def _build_programs() -> dict[str, list[dict]]:
+    programs = {vertical: [dict(p) for p in items] for vertical, items in PROGRAMS.items()}
+    overrides = _load_overrides()
+    if not overrides:
+        return programs
+
+    for override in overrides:
+        vertical = str(override.get("vertical", "imported_misc")).strip() or "imported_misc"
+        bucket = programs.setdefault(vertical, [])
+        target_slug = slugify(override["name"])
+        matched = False
+        for idx, program in enumerate(bucket):
+            if slugify(program.get("name", "")) == target_slug:
+                bucket[idx] = _merge_program(program, override)
+                matched = True
+                break
+        if not matched:
+            bucket.append(_merge_program({
+                "name": override["name"],
+                "homepage": override.get("homepage", ""),
+                "affiliate_url": override["affiliate_url"],
+                "network": override.get("network", "direct"),
+                "commission": override.get("commission", "Unknown"),
+                "commission_pct": override.get("commission_pct", 0),
+                "recurring": bool(override.get("recurring", False)),
+            }, override))
+    return programs
+
+
+PROGRAMS = _build_programs()
+
+def _program_alias_slugs(program: dict) -> list[str]:
+    slugs: list[str] = []
+    for candidate in [program.get("name"), *program.get("aliases", [])]:
+        slug = slugify(str(candidate or ""))
+        if slug and slug not in slugs:
+            slugs.append(slug)
+    return slugs
+
+
+def _build_program_index() -> dict[str, dict]:
+    index: dict[str, dict] = {}
+    for programs in PROGRAMS.values():
+        for program in programs:
+            for slug in _program_alias_slugs(program):
+                index.setdefault(slug, program)
+    return index
+
+
+_PROGRAM_INDEX = _build_program_index()
+
 _ALL_AFFILIATE_URLS: dict[str, str] = {
-    slugify(p["name"]): p["affiliate_url"]
-    for programs in PROGRAMS.values()
-    for p in programs
+    slug: program["affiliate_url"]
+    for slug, program in _PROGRAM_INDEX.items()
+    if program.get("affiliate_url")
 }
 
 
 _ALL_HOMEPAGES: dict[str, str] = {
-    slugify(p["name"]): p["homepage"]
-    for programs in PROGRAMS.values()
-    for p in programs
+    slug: program.get("homepage", "")
+    for slug, program in _PROGRAM_INDEX.items()
+    if program.get("homepage")
 }
 
-def get_homepage_for_tool(tool_name: str) -> str | None:
-    return _ALL_HOMEPAGES.get(slugify(tool_name))
 
-def get_go_url(tool_name: str) -> str | None:
-    s = slugify(tool_name)
-    if s in _ALL_AFFILIATE_URLS:
-        return f"/go/{s}"
+@lru_cache(maxsize=1)
+def _load_imported_affiliates() -> dict[str, dict]:
+    if not IMPORTED_AFFILIATE_PATH.exists():
+        return {}
+    try:
+        raw = json.loads(IMPORTED_AFFILIATE_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+    advertisers = raw.get("advertisers", {})
+    if not isinstance(advertisers, dict):
+        return {}
+    return advertisers
+
+
+def clear_imported_affiliate_cache():
+    _load_imported_affiliates.cache_clear()
+
+
+def _get_imported_affiliate(tool_name: str) -> dict | None:
+    return _load_imported_affiliates().get(slugify(tool_name))
+
+
+def get_affiliate_url_for_tool(tool_name: str, vertical: str = "", page_type: str = "comparison") -> str | None:
+    imported = _get_imported_affiliate(tool_name)
+    if imported:
+        if page_type == "coupon" and imported.get("coupon_click_url"):
+            return imported["coupon_click_url"]
+        if imported.get("default_click_url"):
+            return imported["default_click_url"]
+
+    slug = slugify(tool_name)
+    program = _PROGRAM_INDEX.get(slug)
+    if program and program.get("affiliate_url"):
+        return program["affiliate_url"]
+
+    if vertical:
+        for program in PROGRAMS.get(vertical, []):
+            if slug in _program_alias_slugs(program) and program.get("affiliate_url"):
+                return program["affiliate_url"]
+    return None
+
+
+def get_homepage_for_tool(tool_name: str) -> str | None:
+    imported = _get_imported_affiliate(tool_name)
+    if imported:
+        if imported.get("homepage_url"):
+            return imported.get("homepage_url")
+        if imported.get("homepage"):
+            return imported.get("homepage")
+    program = _PROGRAM_INDEX.get(slugify(tool_name))
+    if program:
+        return program.get("homepage")
+    return None
+
+
+def get_go_url(tool_name: str, page_type: str = "comparison") -> str | None:
+    slug = slugify(tool_name)
+    imported = _get_imported_affiliate(tool_name)
+    if page_type == "coupon" and imported and imported.get("coupon_click_url"):
+        return f"/go/{slug}-coupon"
+    if get_affiliate_url_for_tool(tool_name, page_type=page_type):
+        return f"/go/{slug}"
     return None
 
 
 def get_all_redirects() -> dict[str, str]:
-    return dict(_ALL_HOMEPAGES)
+    redirects = dict(_ALL_AFFILIATE_URLS)
+    for slug, item in _load_imported_affiliates().items():
+        default_url = item.get("default_click_url")
+        coupon_url = item.get("coupon_click_url")
+        if default_url:
+            redirects[slug] = default_url
+        if coupon_url:
+            redirects[f"{slug}-coupon"] = coupon_url
+    return redirects
+
+
+def write_redirects_file(path: str | Path = "site/_redirects") -> int:
+    lines = []
+    for slug, url in sorted(get_all_redirects().items()):
+        sep = "&" if "?" in url else "?"
+        tracked_url = f"{url}{sep}utm_source=saaspare&utm_medium=affiliate&utm_campaign=go"
+        lines.append(f"/go/{slug} {tracked_url} 302")
+
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return len(lines)
 
 
 def get_links_for_vertical(vertical: str, tool_names: list[str]) -> dict[str, str]:
-    programs = PROGRAMS.get(vertical, [])
     result = {}
     for tool in tool_names:
-        tool_lower = tool.lower()
-        for prog in programs:
-            if prog["name"].lower() in tool_lower or tool_lower in prog["name"].lower():
-                result[tool] = prog["affiliate_url"]
-                break
-        if tool not in result:
-            result[tool] = f"https://www.google.com/search?q={tool.replace(' ', '+')}+pricing"
+        affiliate_url = get_affiliate_url_for_tool(tool, vertical=vertical)
+        if affiliate_url:
+            result[tool] = affiliate_url
+        else:
+            result[tool] = (
+                _ALL_AFFILIATE_URLS.get(slugify(tool))
+                or _ALL_HOMEPAGES.get(slugify(tool))
+                or "#"
+            )
     return result
 
 
