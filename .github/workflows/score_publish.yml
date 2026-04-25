@@ -61,6 +61,7 @@ jobs:
           CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
           CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
           CF_PAGES_DEPLOY_HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
           CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}

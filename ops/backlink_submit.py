@@ -81,6 +81,31 @@ def submit_to_indexnow(urls: list[str]):
         log.warning(f"IndexNow submit failed: {e}")
 
 
+def ping_google_sitemap():
+    """Ping Google to re-crawl sitemap. No auth needed — public endpoint."""
+    domain = get("SITE_DOMAIN", "https://yourdomain.com").rstrip("/")
+    sitemap_url = f"{domain}/sitemap.xml"
+    try:
+        resp = httpx.get(
+            f"https://www.google.com/ping",
+            params={"sitemap": sitemap_url},
+            timeout=15,
+        )
+        log.info(f"Google sitemap ping: status={resp.status_code} for {sitemap_url}")
+    except Exception as e:
+        log.warning(f"Google sitemap ping failed: {e}")
+
+    try:
+        resp = httpx.get(
+            f"https://www.bing.com/ping",
+            params={"sitemap": sitemap_url},
+            timeout=15,
+        )
+        log.info(f"Bing sitemap ping: status={resp.status_code}")
+    except Exception as e:
+        log.warning(f"Bing sitemap ping failed: {e}")
+
+
 def run():
     """Submit recent pages to directories and IndexNow."""
     since_ts = int(time.time()) - 7 * 86400
@@ -100,6 +125,7 @@ def run():
     urls = [p["published_url"] for p in pages if p["published_url"]]
     if urls:
         submit_to_indexnow(urls)
+        ping_google_sitemap()
 
     manual_queue = []
     for page in pages:
