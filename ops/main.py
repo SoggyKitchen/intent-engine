@@ -203,7 +203,9 @@ def programmatic(max_pages: int):
     count = run_programmatic(max_pages=max_pages)
     if count > 0:
         deploy_all()
-    click.echo(f"OK  {count} programmatic pages generated and deployed")
+        click.echo(f"OK  {count} programmatic pages generated and deployed")
+    else:
+        click.echo("OK  No new programmatic pages generated; site artifacts refreshed")
 
 
 @cli.command()
@@ -220,6 +222,57 @@ def revenue():
             f"(${est.get('yearly_est',0):>8.0f}/yr)  "
             f"{programs[0]['commission'] if programs else ''}"
         )
+    click.echo("")
+
+
+@cli.command("profit-audit")
+@click.option("--limit", default=12, show_default=True, help="Max rows per section")
+def profit_audit(limit: int):
+    """Show monetization coverage, CTA leaks, and partner gaps."""
+    from ops.profit_audit import collect_profit_audit
+
+    audit = collect_profit_audit(max_gap_items=limit)
+
+    click.echo("\n=== Profit Audit ===")
+    click.echo(f"  SEO pages scanned:        {audit['page_count']}")
+    click.echo(f"  Pages with /go/ CTA:      {audit['pages_with_cta']}")
+    click.echo(f"  CTA coverage:             {audit['cta_coverage_pct']:.1f}%")
+    click.echo(f"  Redirects available:      {audit['redirect_count']}")
+    click.echo(f"  Imported CJ advertisers:  {audit['imported_affiliate_count']}")
+
+    click.echo("\n  Pages missing affiliate CTA:")
+    if audit["pages_without_go_cta"]:
+        for item in audit["pages_without_go_cta"]:
+            click.echo(f"    - {item['title']}  [{item['page_type']}]")
+        if audit["pages_without_go_cta_total"] > len(audit["pages_without_go_cta"]):
+            click.echo(f"    ... and {audit['pages_without_go_cta_total'] - len(audit['pages_without_go_cta'])} more")
+    else:
+        click.echo("    - none")
+
+    click.echo("\n  High-value tools with pages but no default redirect:")
+    if audit["missing_partner_targets"]:
+        for item in audit["missing_partner_targets"]:
+            suffix = f" ({item['page_count']} live pages)" if item["page_count"] else ""
+            click.echo(f"    - {item['tool']} [{item['vertical']}]{suffix}")
+        if audit["missing_partner_targets_total"] > len(audit["missing_partner_targets"]):
+            click.echo(f"    ... and {audit['missing_partner_targets_total'] - len(audit['missing_partner_targets'])} more")
+    else:
+        click.echo("    - none")
+
+    click.echo("\n  Coupon pages without coupon-specific redirect:")
+    if audit["missing_coupon_targets"]:
+        for item in audit["missing_coupon_targets"]:
+            suffix = f" ({item['page_count']} live pages)" if item["page_count"] else ""
+            click.echo(f"    - {item['tool']} [{item['vertical']}]{suffix}")
+        if audit["missing_coupon_targets_total"] > len(audit["missing_coupon_targets"]):
+            click.echo(f"    ... and {audit['missing_coupon_targets_total'] - len(audit['missing_coupon_targets'])} more")
+    else:
+        click.echo("    - none")
+
+    if audit["network_signups"]:
+        click.echo("\n  Networks to prioritize for missing coverage:")
+        for network in audit["network_signups"]:
+            click.echo(f"    - {network['name']}: {network['signup_url']}")
     click.echo("")
 
 
@@ -305,6 +358,10 @@ def health():
     def bad(value):
         return f"[red bold]{value}[/]"
 
+    from ops.profit_audit import collect_profit_audit
+
+    profit = collect_profit_audit(max_gap_items=5)
+
     score_pts = 0
     score_pts += 2 if raw_today > 0 else 0
     score_pts += 2 if pages_today > 0 else 0
@@ -327,6 +384,12 @@ def health():
     pipe_table.add_row("[cyan]Pages today[/]", ok(pages_today) if pages_today > 0 else warn("0  - check GitHub Actions"))
     pipe_table.add_row("[cyan]Pages this week[/]", ok(pages_week) if pages_week >= 5 else warn(str(pages_week)))
     pipe_table.add_row("[cyan]Pages total[/]", ok(pages_total) if pages_total > 0 else bad("0"))
+    pipe_table.add_row(
+        "[cyan]CTA coverage[/]",
+        ok(f"{profit['cta_coverage_pct']:.1f}%") if profit["pages_without_go_cta_total"] == 0 else warn(
+            f"{profit['cta_coverage_pct']:.1f}%  ({profit['pages_without_go_cta_total']} missing)"
+        ),
+    )
     pipe_table.add_row("[cyan]Run failures (3d)[/]", ok("0") if lf == 0 else bad(str(lf)))
     console.print(Panel(pipe_table, title="[bold]Pipeline[/]", border_style="cyan"))
 
@@ -416,6 +479,16 @@ def health():
         actions.append(("[yellow][WARN][/]", f"{pending} signals unscored - run: uv run engine score"))
     if lf > 0:
         actions.append(("[red][ERR][/]", f"{lf} pipeline failures in last 3 days - check runs table above for errors"))
+    if profit["pages_without_go_cta_total"] > 0:
+        actions.append((
+            "[yellow][WARN][/]",
+            f"{profit['pages_without_go_cta_total']} pages missing affiliate CTA - run: uv run engine profit-audit",
+        ))
+    if profit["missing_partner_targets_total"] > 0:
+        actions.append((
+            "[yellow][WARN][/]",
+            f"{profit['missing_partner_targets_total']} high-value tools still have no default redirect - prioritize partner coverage",
+        ))
     if provider_count == 0:
         actions.append(("[red][ERR][/]", "No Cerebras API keys configured - check CEREBRAS_API_KEY secrets/env vars"))
     elif total_quota_used == 0:

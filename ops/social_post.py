@@ -1,13 +1,16 @@
 """
 Social media auto-poster.
-- Twitter/X: v2 API free tier (1500 tweets/mo). Posts comparison page summaries.
-- Reddit: Posts genuine value-add answers in relevant subs when high-intent questions detected.
-
-Both drive FREE traffic to your SEO pages.
+- Twitter/X: publish or queue link-first distribution.
+- Reddit: stage helpful, non-spammy replies for high-intent threads.
+- Instagram/TikTok: generate post-ready weekly content kits.
 """
+import base64
 import hashlib
+import hmac
 import json
+import secrets as sec
 import time
+import urllib.parse
 from pathlib import Path
 from typing import Optional
 
@@ -15,7 +18,7 @@ import httpx
 
 from core.db import db
 from core.logger import log
-from core.secrets import get, DRY_RUN
+from core.secrets import DRY_RUN, get
 from llm.router import complete_json
 
 POSTED_FILE = Path("data/social_posted.txt")
@@ -33,12 +36,11 @@ def _already_posted(url: str) -> bool:
 
 def _mark_posted(url: str):
     uid = hashlib.sha256(url.encode()).hexdigest()[:12]
-    with open(POSTED_FILE, "a") as f:
+    with open(POSTED_FILE, "a", encoding="utf-8") as f:
         f.write(uid + "\n")
 
 
 def run_twitter():
-    bearer = get("TWITTER_BEARER_TOKEN")
     api_key = get("TWITTER_API_KEY")
     api_secret = get("TWITTER_API_SECRET")
     access_token = get("TWITTER_ACCESS_TOKEN")
@@ -47,7 +49,8 @@ def run_twitter():
     domain = get("SITE_DOMAIN", "https://yourdomain.com")
 
     with db() as conn:
-        pages = conn.execute("""
+        pages = conn.execute(
+            """
             SELECT title, published_url, vertical, created_at
             FROM outputs
             WHERE type = 'seo_page'
@@ -55,12 +58,14 @@ def run_twitter():
               AND created_at >= ?
             ORDER BY created_at DESC
             LIMIT 5
-        """, (int(time.time()) - 86400,)).fetchall()
+        """,
+            (int(time.time()) - 86400,),
+        ).fetchall()
 
     _write_social_queue(pages, domain)
 
     if not all([api_key, api_secret, access_token, access_secret]):
-        log.info("Twitter credentials not set — generated social queue only")
+        log.info("Twitter credentials not set - generated social queue only")
         return
 
     for page in pages:
@@ -91,13 +96,16 @@ def build_social_pack(limit: int = 5) -> Optional[str]:
     SOCIAL_PACK_DIR.mkdir(parents=True, exist_ok=True)
 
     with db() as conn:
-        pages = conn.execute("""
+        pages = conn.execute(
+            """
             SELECT title, COALESCE(published_url, '') AS published_url, vertical, created_at
             FROM outputs
             WHERE type = 'seo_page'
             ORDER BY created_at DESC
             LIMIT ?
-        """, (limit,)).fetchall()
+        """,
+            (limit,),
+        ).fetchall()
 
     if not pages:
         log.info("No SEO pages available for social pack generation")
@@ -107,31 +115,42 @@ def build_social_pack(limit: int = 5) -> Optional[str]:
     for page in pages:
         url = page["published_url"] or f"{domain}/pages/{slugify_title(page['title'])}.html"
         copy = _generate_social_copy(page["title"], page["vertical"], url)
-        payload.append({
-            "title": page["title"],
-            "vertical": page["vertical"],
-            "url": url,
-            **copy,
-        })
+        payload.append(
+            {
+                "title": page["title"],
+                "vertical": page["vertical"],
+                "url": url,
+                **copy,
+            }
+        )
 
     stamp = time.strftime("%Y-%m-%d")
     json_path = SOCIAL_PACK_DIR / f"social_pack_{stamp}.json"
     md_path = SOCIAL_PACK_DIR / f"social_pack_{stamp}.md"
+    calendar_path = SOCIAL_PACK_DIR / f"social_calendar_{stamp}.md"
     json_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     md_path.write_text(_render_social_pack_markdown(payload), encoding="utf-8")
+    calendar_path.write_text(
+        _render_social_calendar_markdown(_build_social_calendar(payload)),
+        encoding="utf-8",
+    )
     log.info(f"Social pack generated: {json_path}")
     return str(json_path)
 
 
 def _generate_tweet(title: str, vertical: str, url: str) -> Optional[str]:
-    result = complete_json(f"""
+    result = complete_json(
+        f"""
 Generate a concise, engaging tweet for this B2B software comparison page.
 Title: {title}
 Vertical: {vertical}
 URL: {url}
 
 Return JSON: {{"tweet": "<under 240 chars, no hashtag spam, sounds like a real person sharing a useful resource>"}}
-""", estimated_tokens=350, max_output_tokens=220)
+""",
+        estimated_tokens=350,
+        max_output_tokens=220,
+    )
     if not result:
         return None
     tweet = result.get("tweet", "")
@@ -142,14 +161,7 @@ Return JSON: {{"tweet": "<under 240 chars, no hashtag spam, sounds like a real p
     return tweet[:280]
 
 
-def _post_tweet(text: str, api_key: str, api_secret: str,
-                access_token: str, access_secret: str):
-    import hmac
-    import hashlib
-    import base64
-    import urllib.parse
-    import secrets as sec
-
+def _post_tweet(text: str, api_key: str, api_secret: str, access_token: str, access_secret: str):
     oauth_timestamp = str(int(time.time()))
     oauth_nonce = sec.token_hex(16)
 
@@ -163,13 +175,17 @@ def _post_tweet(text: str, api_key: str, api_secret: str,
     }
 
     base_params = dict(sorted(params.items()))
-    param_str = "&".join(f"{urllib.parse.quote(k, safe='')}={urllib.parse.quote(v, safe='')}"
-                         for k, v in base_params.items())
-    base_str = "&".join([
-        "POST",
-        urllib.parse.quote("https://api.twitter.com/2/tweets", safe=""),
-        urllib.parse.quote(param_str, safe=""),
-    ])
+    param_str = "&".join(
+        f"{urllib.parse.quote(k, safe='')}={urllib.parse.quote(v, safe='')}"
+        for k, v in base_params.items()
+    )
+    base_str = "&".join(
+        [
+            "POST",
+            urllib.parse.quote("https://api.twitter.com/2/tweets", safe=""),
+            urllib.parse.quote(param_str, safe=""),
+        ]
+    )
     signing_key = f"{urllib.parse.quote(api_secret, safe='')}&{urllib.parse.quote(access_secret, safe='')}"
     sig = base64.b64encode(
         hmac.new(signing_key.encode(), base_str.encode(), hashlib.sha1).digest()
@@ -198,7 +214,8 @@ def run_reddit_answers():
     domain = get("SITE_DOMAIN", "https://yourdomain.com")
 
     with db() as conn:
-        signals = conn.execute("""
+        signals = conn.execute(
+            """
             SELECT r.url, r.title, r.body, r.subreddit, s.vertical, s.intent
             FROM scored_signals s
             JOIN raw_signals r ON r.id = s.raw_id
@@ -207,13 +224,17 @@ def run_reddit_answers():
               AND s.ts >= ?
             ORDER BY s.profit_score DESC
             LIMIT 10
-        """, (int(time.time()) - 3600 * 12,)).fetchall()
+        """,
+            (int(time.time()) - 3600 * 12,),
+        ).fetchall()
 
-        site_pages = conn.execute("""
+        site_pages = conn.execute(
+            """
             SELECT title, published_url, vertical
             FROM outputs
             WHERE type = 'seo_page'
-        """).fetchall()
+        """
+        ).fetchall()
 
     page_index = {p["vertical"]: p for p in site_pages}
 
@@ -226,8 +247,10 @@ def run_reddit_answers():
 
         page = page_index[vertical]
         answer = _generate_reddit_answer(
-            signal["title"], signal["body"],
-            page["title"], page["published_url"] or domain
+            signal["title"],
+            signal["body"],
+            page["title"],
+            page["published_url"] or domain,
         )
         if not answer:
             continue
@@ -237,13 +260,14 @@ def run_reddit_answers():
             _mark_posted(signal["url"])
             continue
 
-        log.info(f"Reddit answer ready for r/{signal['subreddit']} — post manually or via PRAW")
+        log.info(f"Reddit answer ready for r/{signal['subreddit']} - post manually or via PRAW")
         _store_pending_reddit_post(signal, answer)
         _mark_posted(signal["url"])
 
 
 def _generate_social_copy(title: str, vertical: str, url: str) -> dict:
-    result = complete_json(f"""
+    result = complete_json(
+        f"""
 Create concise social copy variations for this B2B SaaS page.
 Title: {title}
 Vertical: {vertical}
@@ -254,33 +278,89 @@ Return JSON:
   "x_post": "<single X post under 260 chars including the URL>",
   "linkedin_post": "<2 short paragraphs for LinkedIn including the URL>",
   "reddit_angle": "<one-sentence hook for a relevant Reddit comment or post>",
+  "reddit_post": "<short Reddit post or comment body that is helpful first and includes the URL naturally>",
   "instagram_caption": "<short caption with CTA and 3-5 relevant hashtags>",
-  "tiktok_script": "<20-30 second spoken script with a hook and CTA>"
+  "instagram_carousel": ["<slide 1 hook>", "<slide 2 takeaway>", "<slide 3 takeaway>", "<slide 4 CTA>"],
+  "tiktok_script": "<20-30 second spoken script with a hook and CTA>",
+  "tiktok_shot_list": ["<shot 1 visual>", "<shot 2 visual>", "<shot 3 visual>"]
 }}
-""")
+"""
+    )
     if result:
         return {
             "x_post": _ensure_url(result.get("x_post", ""), url),
             "linkedin_post": _ensure_url(result.get("linkedin_post", ""), url),
             "reddit_angle": result.get("reddit_angle", "") or f"Useful breakdown for anyone comparing {title}: {url}",
+            "reddit_post": _ensure_url(result.get("reddit_post", ""), url)
+            if result.get("reddit_post")
+            else _fallback_reddit_post(title, vertical, url),
             "instagram_caption": _ensure_url(result.get("instagram_caption", ""), url),
+            "instagram_carousel": _ensure_list(
+                result.get("instagram_carousel"),
+                _fallback_instagram_carousel(title, url),
+            ),
             "tiktok_script": result.get("tiktok_script", "") or _fallback_tiktok_script(title, url),
+            "tiktok_shot_list": _ensure_list(
+                result.get("tiktok_shot_list"),
+                _fallback_tiktok_shot_list(title),
+            ),
         }
     return {
         "x_post": f"{title} is live. Quick breakdown, real pricing, and the best fit by use case: {url}",
-        "linkedin_post": f"{title} is now live on SaaSpare.\n\nIf you're comparing options in {vertical.replace('_', ' ')}, this gives you the pricing, tradeoffs, and best-fit summary without the fluff.\n\n{url}",
+        "linkedin_post": (
+            f"{title} is now live on SaaSpare.\n\n"
+            f"If you're comparing options in {vertical.replace('_', ' ')}, this gives you the pricing, "
+            f"tradeoffs, and best-fit summary without the fluff.\n\n{url}"
+        ),
         "reddit_angle": f"If anyone here is evaluating {title}, this breakdown covers pricing and tradeoffs in one place: {url}",
+        "reddit_post": _fallback_reddit_post(title, vertical, url),
         "instagram_caption": f"New SaaS breakdown: {title}. Pricing, pros, cons, and the best fit in one place. {url} #saas #software #b2b #startups",
+        "instagram_carousel": _fallback_instagram_carousel(title, url),
         "tiktok_script": _fallback_tiktok_script(title, url),
+        "tiktok_shot_list": _fallback_tiktok_shot_list(title),
     }
 
 
 def _fallback_tiktok_script(title: str, url: str) -> str:
     return (
-        f"Hook: If you're comparing tools right now, don't buy before reading this.\n"
+        "Hook: If you're comparing tools right now, don't buy before reading this.\n"
         f"Body: We just published {title} with pricing, pros, cons, and who each option is actually for.\n"
         f"CTA: Check the full breakdown at {url}"
     )
+
+
+def _fallback_tiktok_shot_list(title: str) -> list[str]:
+    return [
+        f"Hook frame: big on-screen text with '{title}'",
+        "Screen capture: pricing table or top comparison bullets",
+        "Voiceover: who each tool is actually for",
+        "CTA frame: point viewers to the full breakdown",
+    ]
+
+
+def _fallback_instagram_carousel(title: str, url: str) -> list[str]:
+    return [
+        f"{title}: the fast buyer summary",
+        "What you pay: the real pricing tiers and where costs jump",
+        "Best fit: who should buy, and who should skip it",
+        f"Read the full breakdown at {url}",
+    ]
+
+
+def _fallback_reddit_post(title: str, vertical: str, url: str) -> str:
+    return (
+        f"If you're comparing options in {vertical.replace('_', ' ')}, the main thing I would watch "
+        "is where pricing and onboarding complexity start to climb. "
+        f"I pulled the tradeoffs together here so you can skim it faster: {url}"
+    )
+
+
+def _ensure_list(value, fallback: list[str], limit: int = 5) -> list[str]:
+    if isinstance(value, list):
+        cleaned = [str(item).strip() for item in value if str(item).strip()]
+        if cleaned:
+            return cleaned[:limit]
+    return fallback[:limit]
 
 
 def _ensure_url(text: str, url: str) -> str:
@@ -290,40 +370,90 @@ def _ensure_url(text: str, url: str) -> str:
     return text if url in text else f"{text} {url}"
 
 
+def _build_social_calendar(payload: list[dict]) -> list[dict]:
+    slots = [
+        ("Monday", "X + LinkedIn", "Publish the strongest link-first launch post"),
+        ("Tuesday", "Reddit", "Use the long-form Reddit version only where the thread intent fits"),
+        ("Wednesday", "Instagram", "Turn the page into a 4-slide carousel"),
+        ("Thursday", "TikTok", "Record the short script with 3-4 fast cuts"),
+        ("Friday", "X repost", "Repackage the strongest point as a fresh hook"),
+    ]
+    calendar: list[dict] = []
+    for idx, item in enumerate(payload):
+        day, channel, instruction = slots[idx % len(slots)]
+        calendar.append(
+            {
+                "day": day,
+                "channel": channel,
+                "title": item["title"],
+                "url": item["url"],
+                "instruction": instruction,
+            }
+        )
+    return calendar
+
+
 def _render_social_pack_markdown(payload: list[dict]) -> str:
     lines = ["# Weekly Social Pack", ""]
     for item in payload:
-        lines.extend([
-            f"## {item['title']}",
-            f"URL: {item['url']}",
-            "",
-            "### X",
-            item["x_post"],
-            "",
-            "### LinkedIn",
-            item["linkedin_post"],
-            "",
-            "### Reddit Angle",
-            item["reddit_angle"],
-            "",
-            "### Instagram",
-            item["instagram_caption"],
-            "",
-            "### TikTok Script",
-            item["tiktok_script"],
-            "",
-        ])
+        lines.extend(
+            [
+                f"## {item['title']}",
+                f"URL: {item['url']}",
+                "",
+                "### X",
+                item["x_post"],
+                "",
+                "### LinkedIn",
+                item["linkedin_post"],
+                "",
+                "### Reddit Angle",
+                item["reddit_angle"],
+                "",
+                "### Reddit Post",
+                item.get("reddit_post", ""),
+                "",
+                "### Instagram",
+                item["instagram_caption"],
+                "",
+                "### Instagram Carousel",
+                *[f"- {slide}" for slide in item.get("instagram_carousel", [])],
+                "",
+                "### TikTok Script",
+                item["tiktok_script"],
+                "",
+                "### TikTok Shot List",
+                *[f"- {shot}" for shot in item.get("tiktok_shot_list", [])],
+                "",
+            ]
+        )
+    return "\n".join(lines)
+
+
+def _render_social_calendar_markdown(calendar: list[dict]) -> str:
+    lines = ["# Weekly Social Calendar", ""]
+    for item in calendar:
+        lines.extend(
+            [
+                f"## {item['day']} - {item['channel']}",
+                f"Page: {item['title']}",
+                f"URL: {item['url']}",
+                item["instruction"],
+                "",
+            ]
+        )
     return "\n".join(lines)
 
 
 def slugify_title(title: str) -> str:
     from slugify import slugify
+
     return slugify(title)
 
 
-def _generate_reddit_answer(question: str, context: str,
-                              page_title: str, page_url: str) -> Optional[str]:
-    result = complete_json(f"""
+def _generate_reddit_answer(question: str, context: str, page_title: str, page_url: str) -> Optional[str]:
+    result = complete_json(
+        f"""
 Write a helpful Reddit reply to this question. Sound genuine, give real value, then naturally mention the resource.
 
 Question: {question}
@@ -331,7 +461,10 @@ Context: {context[:300]}
 Resource to mention: {page_title} at {page_url}
 
 Return JSON: {{"reply": "<2-4 paragraphs, genuinely helpful, not spammy, mentions the link naturally at end>"}}
-""", estimated_tokens=900, max_output_tokens=700)
+""",
+        estimated_tokens=900,
+        max_output_tokens=700,
+    )
     return result.get("reply") if result else None
 
 
@@ -341,7 +474,7 @@ def _store_pending_reddit_post(signal, answer: str):
     fname = pending_dir / f"{int(time.time())}_{signal['subreddit']}.txt"
     fname.write_text(
         f"URL: {signal['url']}\nSubreddit: r/{signal['subreddit']}\n\n{answer}",
-        encoding="utf-8"
+        encoding="utf-8",
     )
 
 
@@ -374,6 +507,7 @@ def _write_social_queue(pages, domain: str):
                 "Short-form hook",
                 f"- Hook: '{title} in 30 seconds: who should actually buy it?'",
                 f"- CTA: 'Read the full breakdown at {url}'",
+                "- Repurpose: turn the key takeaway into a 4-slide Instagram carousel",
                 "",
             ]
         )
