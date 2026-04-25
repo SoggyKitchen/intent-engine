@@ -117,6 +117,15 @@ jobs:
         continue-on-error: true
         env:
           DB_PATH: data/intent.db
+          CEREBRAS_API_KEYS: ${{ secrets.CEREBRAS_API_KEYS }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          CEREBRAS_API_KEY_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
+          CEREBRAS_API_KEY_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
+          CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
+          CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
+          CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
