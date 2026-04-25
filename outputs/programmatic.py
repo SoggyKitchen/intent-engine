@@ -142,6 +142,35 @@ HIGH_VALUE_PRICING_TARGETS = [
     ("SE Ranking", "seo_tools"),
 ]
 
+HIGH_VALUE_COMPARISONS = [
+    ("HubSpot", "Salesforce", "crm"),
+    ("HubSpot", "ActiveCampaign", "marketing_automation"),
+    ("HubSpot", "Mailchimp", "marketing_automation"),
+    ("Asana", "Monday.com", "project_management"),
+    ("Asana", "ClickUp", "project_management"),
+    ("Notion", "ClickUp", "project_management"),
+    ("Monday.com", "ClickUp", "project_management"),
+    ("Notion", "Asana", "project_management"),
+    ("Salesforce", "Pipedrive", "crm"),
+    ("HubSpot CRM", "Pipedrive", "crm"),
+    ("Salesforce", "HubSpot CRM", "crm"),
+    ("Xero", "QuickBooks", "finance_ops"),
+    ("FreshBooks", "Xero", "finance_ops"),
+    ("Zoom", "Microsoft Teams", "video_conferencing"),
+    ("Zoom", "Google Meet", "video_conferencing"),
+    ("1Password", "LastPass", "password_managers"),
+    ("1Password", "Bitwarden", "password_managers"),
+    ("Rippling", "Gusto", "hr_recruiting"),
+    ("BambooHR", "Rippling", "hr_recruiting"),
+    ("Deel", "Remote.com", "hr_recruiting"),
+    ("Datadog", "New Relic", "devtools"),
+    ("Jasper AI", "Copy.ai", "ai_ml_tools"),
+    ("DigitalOcean", "Vultr", "cloud_infra"),
+    ("NordLayer", "Perimeter 81", "vpn_business"),
+    ("DocuSign", "PandaDoc", "legal_compliance"),
+    ("Amplitude", "Mixpanel", "saas_analytics"),
+]
+
 BEST_OF_QUERIES = [
     ("marketing_automation", "small business", ["HubSpot", "ActiveCampaign", "Brevo", "Mailchimp", "ConvertKit"]),
     ("marketing_automation", "ecommerce", ["Klaviyo", "Mailchimp", "ActiveCampaign", "Drip", "Brevo"]),
@@ -908,6 +937,9 @@ def run_programmatic(max_pages: int = 500) -> int:
     log.info(f"Starting programmatic SEO run — target {max_pages} pages for {domain}")
 
     tasks: list[tuple] = []
+
+    for tool_a, tool_b, vertical in HIGH_VALUE_COMPARISONS:
+        tasks.append((_generate_comparison_page, (tool_a, tool_b, vertical)))
 
     for vertical, tools in TOOLS_BY_VERTICAL.items():
         for tool_a, tool_b in combinations(tools, 2):
