@@ -128,6 +128,7 @@ jobs:
           REDDIT_USERNAME: ${{ secrets.REDDIT_USERNAME }}
           REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
           REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
+          REDDIT_ALLOWED_SUBREDDITS: ${{ secrets.REDDIT_ALLOWED_SUBREDDITS }}
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
 
