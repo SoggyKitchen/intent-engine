@@ -262,7 +262,11 @@ def _get_ordered_providers():
     gemini_key = os.getenv("GEMINI_API_KEY", "").strip()
     if gemini_key:
         DAILY_LIMITS.setdefault("gemini_flash", 0)
-        providers.append(("gemini_flash", os.getenv("GEMINI_MODEL", "gemini-1.5-flash"), _make_gemini_client(gemini_key)))
+        providers.append(("gemini_flash", os.getenv("GEMINI_MODEL", "gemini-2.0-flash"), _make_gemini_client(gemini_key)))
+    openrouter_key = os.getenv("OPENROUTER_API_KEY", "").strip()
+    if openrouter_key:
+        DAILY_LIMITS.setdefault("openrouter", 0)
+        providers.append(("openrouter", os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free"), _make_openrouter_client(openrouter_key)))
     if providers and not _providers_logged:
         log.info(f"Discovered {len(providers)} providers: {[p[0] for p in providers]}")
         _providers_logged = True
@@ -324,6 +328,27 @@ def _make_cerebras_client(api_key: str):
                 else:
                     raise
         raise Exception(f"Cerebras [{model}] failed after 4 attempts")
+
+    return _client
+
+
+def _make_openrouter_client(api_key: str):
+    def _client(prompt: str, system: str, model: str, max_output_tokens: int) -> Optional[dict]:
+        import httpx
+
+        messages = []
+        if system:
+            messages.append({"role": "system", "content": system})
+        messages.append({"role": "user", "content": prompt})
+        resp = httpx.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            json={"model": model, "messages": messages, "max_tokens": max_output_tokens, "temperature": 0.1},
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json",
+                     "HTTP-Referer": "https://saaspare.org", "X-Title": "SaaSpare"},
+            timeout=60,
+        )
+        resp.raise_for_status()
+        return _parse_json_response(resp.json()["choices"][0]["message"]["content"])
 
     return _client
 
