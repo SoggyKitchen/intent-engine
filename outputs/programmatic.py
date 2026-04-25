@@ -467,6 +467,7 @@ def _generate_pricing_page(tool: str, vertical: str) -> bool | None:
         return None
 
     prompt = f"""Write a detailed "{tool} Pricing" page for B2B buyers evaluating {tool}.
+Use a real named competing product for the alternative entry, not a placeholder label.
 
 Return JSON:
 {{
@@ -488,7 +489,7 @@ Return JSON:
       "winner": true
     }},
     {{
-      "name": "Best {tool} Alternative",
+      "name": "<real competing product name>",
       "description": "<cheaper or better-value alternative>",
       "score": <3.5-4.5>,
       "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
@@ -603,6 +604,7 @@ def _generate_coupon_page(tool: str, vertical: str) -> bool | None:
         return None
 
     prompt = f"""Write a "{tool} Coupon Codes" page for buyers about to purchase {tool}.
+Use a real named competing product for the alternative entry, not a placeholder label.
 
 Return JSON:
 {{
@@ -624,7 +626,7 @@ Return JSON:
       "winner": true
     }},
     {{
-      "name": "Best {tool} Alternative",
+      "name": "<real competing product name>",
       "description": "<cheaper alternative if {tool} is over budget>",
       "score": <3.5-4.5>,
       "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
@@ -669,6 +671,7 @@ def _generate_review_page(tool: str, vertical: str) -> bool | None:
         return None
 
     prompt = f"""Write an in-depth "{tool} Review" for B2B buyers evaluating {tool} for {vertical.replace('_',' ')}.
+Use a real named competing product for the alternative entry, not a placeholder label.
 
 Return JSON:
 {{
@@ -690,7 +693,7 @@ Return JSON:
       "winner": true
     }},
     {{
-      "name": "Best {tool} Alternative",
+      "name": "<real competing product name>",
       "description": "<main competitor and when to pick it instead>",
       "score": <3.5-4.5>,
       "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",
@@ -736,6 +739,7 @@ def _generate_free_plan_page(tool: str, vertical: str) -> bool | None:
         return None
 
     prompt = f"""Write a "Does {tool} Have a Free Plan?" page for buyers who want to try {tool} without paying.
+Use a real named competing product for the alternative entry, not a placeholder label.
 
 Return JSON:
 {{
@@ -757,7 +761,7 @@ Return JSON:
       "winner": true
     }},
     {{
-      "name": "Best Free {tool} Alternative",
+      "name": "<real competing product name>",
       "description": "<a genuinely free alternative with a more generous free tier>",
       "score": <3.5-4.5>,
       "logo_url": "https://saaspare.org/assets/logos/<tool-slug>.png",

@@ -12,6 +12,9 @@ concurrency:
   group: intent-engine-stateful
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   score-and-publish:
     runs-on: ubuntu-latest
@@ -101,6 +104,13 @@ jobs:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
+
+      - name: Refresh YouTube bridge manifest
+        run: uv run engine youtube-bridge
+        continue-on-error: true
+        env:
+          DB_PATH: data/intent.db
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
 
       - name: Post to social media
         run: uv run engine social

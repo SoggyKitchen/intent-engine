@@ -231,7 +231,7 @@ footer p+p{margin-top:.5rem}
       <tr>
         <td><strong>Try It Free</strong></td>
         {% for tool in tools %}
-        <td>{% if tool.affiliate_url %}<a class="tbl-cta{% if not tool.winner %} alt{% endif %}" href="{{ tool.affiliate_url }}" rel="sponsored noopener" target="_blank">Start Free -></a>{% else %}-{% endif %}</td>
+        <td>{% if tool.affiliate_url %}<a class="tbl-cta{% if not tool.winner %} alt{% endif %}" href="{{ tool.affiliate_url }}" rel="sponsored noopener" target="_blank" data-track="affiliate" data-slot="comparison_table" data-tool="{{ tool.name }}">Start Free -></a>{% else %}-{% endif %}</td>
         {% endfor %}
       </tr>
     </table>
@@ -241,7 +241,7 @@ footer p+p{margin-top:.5rem}
   <div class="cta-section">
     <h2>Our Top Pick</h2>
     <p>{{ cta_text }}</p>
-    <a class="cta-btn" href="{{ cta_url }}" rel="sponsored noopener" target="_blank">{{ cta_button }}</a>
+    <a class="cta-btn" href="{{ cta_url }}" rel="sponsored noopener" target="_blank" data-track="affiliate" data-slot="hero_cta" data-tool="{{ cta_tool_name }}">{{ cta_button }}</a>
   </div>
   {% endif %}
 
@@ -255,7 +255,7 @@ footer p+p{margin-top:.5rem}
     </div>
     <p class="pricing-line"><strong>Pricing:</strong> {{ tool.pricing }}</p>
     {% if tool.affiliate_url %}
-    <a href="{{ tool.affiliate_url }}" rel="sponsored noopener" target="_blank" class="tool-cta{% if not tool.winner %} secondary{% endif %}">
+    <a href="{{ tool.affiliate_url }}" rel="sponsored noopener" target="_blank" class="tool-cta{% if not tool.winner %} secondary{% endif %}" data-track="affiliate" data-slot="tool_card" data-tool="{{ tool.name }}">
       Try {{ tool.name }} Free ->
     </a>
     {% endif %}
@@ -300,9 +300,9 @@ footer p+p{margin-top:.5rem}
 
   <div class="share-row">
     <p>Found this helpful? Share it</p>
-    <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ canonical_url | urlencode }}" target="_blank" rel="noopener" class="share-btn" style="background:#000;color:#fff">X Share</a>
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ canonical_url | urlencode }}" target="_blank" rel="noopener" class="share-btn" style="background:#0077b5;color:#fff">LinkedIn</a>
-    <a href="https://www.reddit.com/submit?url={{ canonical_url | urlencode }}&title={{ title | urlencode }}" target="_blank" rel="noopener" class="share-btn" style="background:#ff4500;color:#fff">Reddit</a>
+    <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ canonical_url | urlencode }}" target="_blank" rel="noopener" class="share-btn" style="background:#000;color:#fff" data-track="share" data-channel="x">X Share</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ canonical_url | urlencode }}" target="_blank" rel="noopener" class="share-btn" style="background:#0077b5;color:#fff" data-track="share" data-channel="linkedin">LinkedIn</a>
+    <a href="https://www.reddit.com/submit?url={{ canonical_url | urlencode }}&title={{ title | urlencode }}" target="_blank" rel="noopener" class="share-btn" style="background:#ff4500;color:#fff" data-track="share" data-channel="reddit">Reddit</a>
   </div>
 
   <div class="email-box">
@@ -313,6 +313,10 @@ footer p+p{margin-top:.5rem}
       <input type="hidden" name="_subject" value="New SaaSpare subscriber">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="{{ site_domain | default('https://saaspare.org') }}/pages/thanks.html">
+      <input type="hidden" name="page_title" value="{{ title }}">
+      <input type="hidden" name="page_slug" value="{{ page_slug }}">
+      <input type="hidden" name="page_type" value="{{ page_type }}">
+      <input type="hidden" name="signup_surface" value="inline">
       <button type="submit">Subscribe Free</button>
     </form>
     <p class="email-msg">No spam. Unsubscribe anytime.</p>
@@ -330,7 +334,7 @@ footer p+p{margin-top:.5rem}
   <div class="cta-section" style="margin-top:2.5rem">
     <h2>Ready to decide?</h2>
     <p>Most tools offer 14-30 days free. Start your trial today - no credit card needed.</p>
-    {% if cta_url %}<a class="cta-btn" href="{{ cta_url }}" rel="sponsored noopener" target="_blank">{{ cta_button }}</a>{% endif %}
+    {% if cta_url %}<a class="cta-btn" href="{{ cta_url }}" rel="sponsored noopener" target="_blank" data-track="affiliate" data-slot="bottom_cta" data-tool="{{ cta_tool_name }}">{{ cta_button }}</a>{% endif %}
   </div>
 
   <footer>
@@ -345,7 +349,7 @@ footer p+p{margin-top:.5rem}
 {% if cta_url %}
 <div class="sticky-cta" id="sticky-cta">
   <span class="sticky-cta-text">{{ cta_text }}</span>
-  <a href="{{ cta_url }}" rel="sponsored noopener" target="_blank">{{ cta_button }}</a>
+  <a href="{{ cta_url }}" rel="sponsored noopener" target="_blank" data-track="affiliate" data-slot="sticky_cta" data-tool="{{ cta_tool_name }}">{{ cta_button }}</a>
   <button onclick="document.getElementById('sticky-cta').classList.remove('show');sessionStorage.setItem('scHid','1')" aria-label="Dismiss">x</button>
 </div>
 {% endif %}
@@ -360,6 +364,10 @@ footer p+p{margin-top:.5rem}
       <input type="hidden" name="_subject" value="New SaaSpare subscriber (exit-intent)">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="{{ site_domain | default('https://saaspare.org') }}/pages/thanks.html">
+      <input type="hidden" name="page_title" value="{{ title }}">
+      <input type="hidden" name="page_slug" value="{{ page_slug }}">
+      <input type="hidden" name="page_type" value="{{ page_type }}">
+      <input type="hidden" name="signup_surface" value="exit_intent">
       <button type="submit">Get It Free -></button>
     </form>
     <p style="color:rgba(255,255,255,.22);font-size:.72rem;margin-top:.75rem">Join 500+ founders. Unsubscribe anytime.</p>
@@ -369,8 +377,43 @@ footer p+p{margin-top:.5rem}
 <script>
 (adsbygoogle=window.adsbygoogle||[]).push({});
 (adsbygoogle=window.adsbygoogle||[]).push({});
-document.getElementById('sub-form')&&document.getElementById('sub-form').addEventListener('submit',function(){
-  setTimeout(function(){document.getElementById('sub-form').innerHTML='<p style="color:#34d399;font-weight:700">You\'re in! Check your inbox Friday.</p>';},200);
+var pageMeta={
+  page_title:{{ title | tojson }},
+  page_slug:{{ page_slug | tojson }},
+  page_type:{{ page_type | tojson }},
+  vertical:{{ vertical | tojson }}
+};
+function trackEvent(name, params){
+  if(typeof gtag==='function'){gtag('event',name,params||{});}
+}
+function targetHost(href){
+  try{return new URL(href, window.location.origin).hostname.replace(/^www\./,'');}
+  catch(e){return '';}
+}
+function trackAffiliateClick(el){
+  var href=el.getAttribute('href')||'';
+  trackEvent('affiliate_click',{
+    tool:el.dataset.tool||'',
+    slot:el.dataset.slot||'',
+    page_slug:pageMeta.page_slug,
+    page_type:pageMeta.page_type,
+    vertical:pageMeta.vertical,
+    target_host:targetHost(href),
+    monetized:href.indexOf('/go/')===0||href.indexOf('utm_medium=affiliate')!==-1||href.indexOf('utm_campaign=go')!==-1
+  });
+}
+document.querySelectorAll('[data-track="affiliate"]').forEach(function(el){
+  el.addEventListener('click',function(){trackAffiliateClick(el);});
+});
+document.querySelectorAll('[data-track="share"]').forEach(function(el){
+  el.addEventListener('click',function(){
+    trackEvent('share_click',{
+      channel:el.dataset.channel||'',
+      page_slug:pageMeta.page_slug,
+      page_type:pageMeta.page_type,
+      vertical:pageMeta.vertical
+    });
+  });
 });
 var sc=document.getElementById('sticky-cta');
 if(sc&&!sessionStorage.getItem('scHid')){
@@ -381,7 +424,13 @@ function closeExit(){em.classList.remove('show');localStorage.setItem('exHid',Da
 function maybeExit(){if(shown||localStorage.getItem('exHid'))return;shown=true;em.classList.add('show');}
 document.addEventListener('mouseout',function(e){if(e.clientY<=0&&!e.relatedTarget)maybeExit();});
 setTimeout(function(){if(!shown&&!localStorage.getItem('exHid'))maybeExit();},45000);
-document.getElementById('exit-form')&&document.getElementById('exit-form').addEventListener('submit',function(){setTimeout(closeExit,200);});
+document.getElementById('sub-form')&&document.getElementById('sub-form').addEventListener('submit',function(){
+  trackEvent('newsletter_submit',{surface:'inline',page_slug:pageMeta.page_slug,page_type:pageMeta.page_type,vertical:pageMeta.vertical});
+});
+document.getElementById('exit-form')&&document.getElementById('exit-form').addEventListener('submit',function(){
+  trackEvent('newsletter_submit',{surface:'exit_intent',page_slug:pageMeta.page_slug,page_type:pageMeta.page_type,vertical:pageMeta.vertical});
+  setTimeout(closeExit,200);
+});
 em&&em.addEventListener('click',function(e){if(e.target===em)closeExit();});
 </script>
 </body>

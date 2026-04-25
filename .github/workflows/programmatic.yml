@@ -13,6 +13,9 @@ concurrency:
   group: intent-engine-stateful
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   programmatic:
     runs-on: ubuntu-latest
@@ -57,6 +60,13 @@ jobs:
           DB_PATH: data/intent.db
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+
+      - name: Refresh YouTube bridge manifest
+        run: uv run engine youtube-bridge
+        continue-on-error: true
+        env:
+          DB_PATH: data/intent.db
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
 
       - name: Commit pages
         run: |

@@ -139,6 +139,15 @@ def backlinks():
     click.echo("OK  Backlink submission done")
 
 
+@cli.command("youtube-bridge")
+def youtube_bridge():
+    """Build the SaaSpare page manifest used by the YouTube content engine."""
+    from scripts.youtube_bridge import write_manifest
+
+    data = write_manifest()
+    click.echo(f"OK  YouTube bridge manifest refreshed ({data['total']} pages)")
+
+
 @cli.command("import-links")
 @click.option("--csv", "csv_path", required=True, help="Path to affiliate links CSV export")
 @click.option("--output", "output_path", default="", help="Optional output JSON path")

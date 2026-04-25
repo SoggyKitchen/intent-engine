@@ -451,13 +451,6 @@ def _build_program_index() -> dict[str, dict]:
 
 _PROGRAM_INDEX = _build_program_index()
 
-_ALL_AFFILIATE_URLS: dict[str, str] = {
-    slug: program["affiliate_url"]
-    for slug, program in _PROGRAM_INDEX.items()
-    if program.get("affiliate_url")
-}
-
-
 _ALL_HOMEPAGES: dict[str, str] = {
     slug: program.get("homepage", "")
     for slug, program in _PROGRAM_INDEX.items()
@@ -488,24 +481,83 @@ def _get_imported_affiliate(tool_name: str) -> dict | None:
     return _load_imported_affiliates().get(slugify(tool_name))
 
 
-def get_affiliate_url_for_tool(tool_name: str, vertical: str = "", page_type: str = "comparison") -> str | None:
+_PROGRAM_PAGE_PATTERNS = (
+    "affiliate",
+    "affiliates",
+    "affiliate-program",
+    "partner",
+    "partners",
+    "partner-program",
+    "referral",
+    "refer-a-business",
+    "become-an-affiliate",
+    "store/affiliate",
+    "promo/affiliate",
+)
+
+
+def _is_program_page(url: str) -> bool:
+    """True if URL points to an affiliate/partner program signup, not a product page."""
+    from urllib.parse import urlparse
+    if not url:
+        return False
+    parsed = urlparse(url if "://" in url else f"https://{url}")
+    path = (parsed.path or "").lower().rstrip("/")
+    host = (parsed.netloc or "").lower()
+    combined = f"{host}{path}"
+    return any(token in combined for token in _PROGRAM_PAGE_PATTERNS)
+
+
+def _find_program(tool_name: str, vertical: str = "") -> dict | None:
+    slug = slugify(tool_name)
+    program = _PROGRAM_INDEX.get(slug)
+    if program:
+        return program
+    if vertical:
+        for candidate in PROGRAMS.get(vertical, []):
+            if slug in _program_alias_slugs(candidate):
+                return candidate
+    return None
+
+
+def _best_url(program: dict, page_type: str) -> str | None:
+    """Return the best visitor-facing URL: real tracking link > product homepage."""
+    affiliate = program.get("affiliate_url", "")
+    homepage = program.get("homepage", "")
+    if affiliate and not _is_program_page(affiliate):
+        return affiliate
+    if homepage and not _is_program_page(homepage):
+        return homepage
+    return None
+
+
+def resolve_click_target(tool_name: str, vertical: str = "", page_type: str = "comparison") -> str | None:
     imported = _get_imported_affiliate(tool_name)
     if imported:
         if page_type == "coupon" and imported.get("coupon_click_url"):
             return imported["coupon_click_url"]
         if imported.get("default_click_url"):
             return imported["default_click_url"]
+        if imported.get("homepage_url"):
+            return imported["homepage_url"]
+        if imported.get("homepage"):
+            return imported["homepage"]
 
-    slug = slugify(tool_name)
-    program = _PROGRAM_INDEX.get(slug)
-    if program and program.get("affiliate_url"):
-        return program["affiliate_url"]
-
-    if vertical:
-        for program in PROGRAMS.get(vertical, []):
-            if slug in _program_alias_slugs(program) and program.get("affiliate_url"):
-                return program["affiliate_url"]
+    program = _find_program(tool_name, vertical=vertical)
+    if program:
+        return _best_url(program, page_type)
     return None
+
+
+_ALL_CLICK_TARGETS: dict[str, str] = {
+    slug: url
+    for slug, program in _PROGRAM_INDEX.items()
+    if (url := _best_url(program, "comparison"))
+}
+
+
+def get_affiliate_url_for_tool(tool_name: str, vertical: str = "", page_type: str = "comparison") -> str | None:
+    return resolve_click_target(tool_name, vertical=vertical, page_type=page_type)
 
 
 def get_homepage_for_tool(tool_name: str) -> str | None:
@@ -526,13 +578,13 @@ def get_go_url(tool_name: str, page_type: str = "comparison") -> str | None:
     imported = _get_imported_affiliate(tool_name)
     if page_type == "coupon" and imported and imported.get("coupon_click_url"):
         return f"/go/{slug}-coupon"
-    if get_affiliate_url_for_tool(tool_name, page_type=page_type):
+    if resolve_click_target(tool_name, page_type=page_type):
         return f"/go/{slug}"
     return None
 
 
 def get_all_redirects() -> dict[str, str]:
-    redirects = dict(_ALL_AFFILIATE_URLS)
+    redirects = dict(_ALL_CLICK_TARGETS)
     for slug, item in _load_imported_affiliates().items():
         default_url = item.get("default_click_url")
         coupon_url = item.get("coupon_click_url")
@@ -559,12 +611,12 @@ def write_redirects_file(path: str | Path = "site/_redirects") -> int:
 def get_links_for_vertical(vertical: str, tool_names: list[str]) -> dict[str, str]:
     result = {}
     for tool in tool_names:
-        affiliate_url = get_affiliate_url_for_tool(tool, vertical=vertical)
-        if affiliate_url:
-            result[tool] = affiliate_url
+        click_target = resolve_click_target(tool, vertical=vertical)
+        if click_target:
+            result[tool] = click_target
         else:
             result[tool] = (
-                _ALL_AFFILIATE_URLS.get(slugify(tool))
+                _ALL_CLICK_TARGETS.get(slugify(tool))
                 or _ALL_HOMEPAGES.get(slugify(tool))
                 or "#"
             )

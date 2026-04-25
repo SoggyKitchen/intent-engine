@@ -24,6 +24,7 @@ from llm.router import complete_json
 POSTED_FILE = Path("data/social_posted.txt")
 SOCIAL_QUEUE_DIR = Path("outputs/generated")
 SOCIAL_PACK_DIR = Path("outputs/generated/social")
+SOCIAL_RUN_REPORT = SOCIAL_PACK_DIR / "social_run_latest.json"
 
 
 def _already_posted(url: str) -> bool:
@@ -40,6 +41,77 @@ def _mark_posted(url: str):
         f.write(uid + "\n")
 
 
+def _allowed_subreddits() -> set[str]:
+    raw = get("REDDIT_ALLOWED_SUBREDDITS", "")
+    return {item.strip().lower() for item in raw.split(",") if item.strip()}
+
+
+def _normalize_linkedin_person_urn(value: str) -> str:
+    value = (value or "").strip()
+    if not value:
+        return ""
+    if value.startswith("urn:li:person:"):
+        return value
+    return f"urn:li:person:{value}"
+
+
+def _write_social_run_report(summary: dict):
+    SOCIAL_PACK_DIR.mkdir(parents=True, exist_ok=True)
+    SOCIAL_RUN_REPORT.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+
+
+def _select_social_pages(limit: int, fresh_window_seconds: int = 86400) -> list[dict]:
+    now = int(time.time())
+    with db() as conn:
+        rows = conn.execute(
+            """
+            SELECT title, COALESCE(published_url, '') AS published_url, vertical, created_at,
+                   COALESCE(views, 0) AS views, COALESCE(revenue, 0) AS revenue
+            FROM outputs
+            WHERE type = 'seo_page'
+              AND published_url IS NOT NULL
+              AND published_url != ''
+            ORDER BY created_at DESC
+        """
+        ).fetchall()
+
+    seen: set[str] = set()
+    fresh: list[dict] = []
+    evergreen: list[dict] = []
+    for row in rows:
+        page = dict(row)
+        url = page["published_url"]
+        if url in seen:
+            continue
+        seen.add(url)
+        is_fresh = page["created_at"] >= (now - fresh_window_seconds)
+        known_vertical = (page.get("vertical") or "unknown") != "unknown"
+        if is_fresh and known_vertical:
+            fresh.append(page)
+        else:
+            evergreen.append(page)
+
+    evergreen.sort(key=lambda item: (item["revenue"], item["views"], item["created_at"]), reverse=True)
+    return (fresh + evergreen)[:limit]
+
+
+def _match_page_for_signal(signal: dict, pages: list[dict], domain: str) -> dict | None:
+    signal_text = f"{signal.get('title', '')} {signal.get('body', '')}".lower()
+    best_page = None
+    best_score = -1
+    for page in pages:
+        score = 0
+        if page.get("vertical") == signal.get("vertical"):
+            score += 5
+        for token in slugify_title(page["title"]).split("-"):
+            if len(token) > 3 and token in signal_text:
+                score += 1
+        if score > best_score:
+            best_score = score
+            best_page = page
+    return best_page or (pages[0] if pages else None)
+
+
 def run_twitter():
     api_key = get("TWITTER_API_KEY")
     api_secret = get("TWITTER_API_SECRET")
@@ -48,19 +120,7 @@ def run_twitter():
 
     domain = get("SITE_DOMAIN", "https://yourdomain.com")
 
-    with db() as conn:
-        pages = conn.execute(
-            """
-            SELECT title, published_url, vertical, created_at
-            FROM outputs
-            WHERE type = 'seo_page'
-              AND published_url IS NOT NULL
-              AND created_at >= ?
-            ORDER BY created_at DESC
-            LIMIT 5
-        """,
-            (int(time.time()) - 86400,),
-        ).fetchall()
+    pages = _select_social_pages(limit=5, fresh_window_seconds=86400)
 
     _write_social_queue(pages, domain)
 
@@ -79,7 +139,6 @@ def run_twitter():
 
         if DRY_RUN:
             log.info(f"[DRY RUN] Would tweet: {tweet_text[:80]}...")
-            _mark_posted(url)
             continue
 
         try:
@@ -90,22 +149,14 @@ def run_twitter():
         except Exception as e:
             log.warning(f"Tweet failed: {e}")
 
+    _write_social_run_report({"twitter_candidates": len(pages)})
+
 
 def build_social_pack(limit: int = 5) -> Optional[str]:
     domain = get("SITE_DOMAIN", "https://yourdomain.com")
     SOCIAL_PACK_DIR.mkdir(parents=True, exist_ok=True)
 
-    with db() as conn:
-        pages = conn.execute(
-            """
-            SELECT title, COALESCE(published_url, '') AS published_url, vertical, created_at
-            FROM outputs
-            WHERE type = 'seo_page'
-            ORDER BY created_at DESC
-            LIMIT ?
-        """,
-            (limit,),
-        ).fetchall()
+    pages = _select_social_pages(limit=limit, fresh_window_seconds=7 * 86400)
 
     if not pages:
         log.info("No SEO pages available for social pack generation")
@@ -124,13 +175,22 @@ def build_social_pack(limit: int = 5) -> Optional[str]:
             }
         )
 
-    stamp = time.strftime("%Y-%m-%d")
+    stamp = time.strftime("%Y-%m-%d_%H%M%S")
     json_path = SOCIAL_PACK_DIR / f"social_pack_{stamp}.json"
     md_path = SOCIAL_PACK_DIR / f"social_pack_{stamp}.md"
     calendar_path = SOCIAL_PACK_DIR / f"social_calendar_{stamp}.md"
+    latest_json = SOCIAL_PACK_DIR / "social_pack_latest.json"
+    latest_md = SOCIAL_PACK_DIR / "social_pack_latest.md"
+    latest_calendar = SOCIAL_PACK_DIR / "social_calendar_latest.md"
     json_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     md_path.write_text(_render_social_pack_markdown(payload), encoding="utf-8")
     calendar_path.write_text(
+        _render_social_calendar_markdown(_build_social_calendar(payload)),
+        encoding="utf-8",
+    )
+    latest_json.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    latest_md.write_text(_render_social_pack_markdown(payload), encoding="utf-8")
+    latest_calendar.write_text(
         _render_social_calendar_markdown(_build_social_calendar(payload)),
         encoding="utf-8",
     )
@@ -249,15 +309,8 @@ def run_reddit_answers():
             (int(time.time()) - 3600 * 12,),
         ).fetchall()
 
-        site_pages = conn.execute(
-            """
-            SELECT title, published_url, vertical
-            FROM outputs
-            WHERE type = 'seo_page'
-        """
-        ).fetchall()
-
-    page_index = {p["vertical"]: p for p in site_pages}
+    site_pages = _select_social_pages(limit=50, fresh_window_seconds=30 * 86400)
+    allowed_subreddits = _allowed_subreddits()
 
     posted_count = 0
     for signal in signals:
@@ -265,11 +318,9 @@ def run_reddit_answers():
             break
         if _already_posted(signal["url"]):
             continue
-        vertical = signal["vertical"]
-        if vertical not in page_index:
+        page = _match_page_for_signal(dict(signal), site_pages, domain)
+        if not page:
             continue
-
-        page = page_index[vertical]
         answer = _generate_reddit_answer(
             signal["title"],
             signal["body"],
@@ -279,27 +330,33 @@ def run_reddit_answers():
         if not answer:
             continue
 
-        if DRY_RUN:
-            log.info(f"[DRY RUN] Reddit answer for r/{signal['subreddit']}: {answer[:80]}...")
-            _mark_posted(signal["url"])
+        subreddit = (signal["subreddit"] or "").lower()
+        autopost_allowed = bool(allowed_subreddits) and subreddit in allowed_subreddits
+        if DRY_RUN or not reddit or not autopost_allowed:
+            reason = "dry-run" if DRY_RUN else "no-creds" if not reddit else "subreddit-not-allowlisted"
+            log.info(f"Reddit staged for r/{signal['subreddit']} ({reason})")
+            _store_pending_reddit_post(signal, answer, reason=reason)
             continue
 
         _store_pending_reddit_post(signal, answer)
 
-        if reddit:
-            try:
-                submission = reddit.submission(url=signal["url"])
-                submission.reply(answer)
-                _mark_posted(signal["url"])
-                posted_count += 1
-                log.info(f"Posted Reddit reply to r/{signal['subreddit']}")
-                time.sleep(120)
-            except Exception as e:
-                log.warning(f"Reddit post failed for r/{signal['subreddit']}: {e}")
-                _mark_posted(signal["url"])
-        else:
-            log.info(f"Reddit staged (no creds) for r/{signal['subreddit']}")
+        try:
+            submission = reddit.submission(url=signal["url"])
+            submission.reply(answer)
             _mark_posted(signal["url"])
+            posted_count += 1
+            log.info(f"Posted Reddit reply to r/{signal['subreddit']}")
+            time.sleep(120)
+        except Exception as e:
+            log.warning(f"Reddit post failed for r/{signal['subreddit']}: {e}")
+
+    _write_social_run_report(
+        {
+            "reddit_candidates": len(signals),
+            "reddit_posted": posted_count,
+            "reddit_allowlist_size": len(allowed_subreddits),
+        }
+    )
 
 
 def _generate_social_copy(title: str, vertical: str, url: str) -> dict:
@@ -313,9 +370,9 @@ URL: {url}
 Return JSON:
 {{
   "x_post": "<single X post under 260 chars including the URL>",
-  "linkedin_post": "<2 short paragraphs for LinkedIn including the URL>",
+  "linkedin_post": "<2 short paragraphs for LinkedIn including the URL. No fabricated first-person claims or fake usage/testing>",
   "reddit_angle": "<one-sentence hook for a relevant Reddit comment or post>",
-  "reddit_post": "<short Reddit post or comment body that is helpful first and includes the URL naturally>",
+  "reddit_post": "<short Reddit post or comment body that is helpful first, includes the URL naturally, and does not claim personal use unless stated>",
   "instagram_caption": "<short caption with CTA and 3-5 relevant hashtags>",
   "instagram_carousel": ["<slide 1 hook>", "<slide 2 takeaway>", "<slide 3 takeaway>", "<slide 4 CTA>"],
   "tiktok_script": "<20-30 second spoken script with a hook and CTA>",
@@ -505,12 +562,12 @@ Return JSON: {{"reply": "<2-4 paragraphs, genuinely helpful, not spammy, mention
     return result.get("reply") if result else None
 
 
-def _store_pending_reddit_post(signal, answer: str):
+def _store_pending_reddit_post(signal, answer: str, reason: str = ""):
     pending_dir = Path("data/pending_reddit")
     pending_dir.mkdir(parents=True, exist_ok=True)
     fname = pending_dir / f"{int(time.time())}_{signal['subreddit']}.txt"
     fname.write_text(
-        f"URL: {signal['url']}\nSubreddit: r/{signal['subreddit']}\n\n{answer}",
+        f"URL: {signal['url']}\nSubreddit: r/{signal['subreddit']}\nReason: {reason or 'pending'}\n\n{answer}",
         encoding="utf-8",
     )
 
@@ -555,7 +612,7 @@ def _write_social_queue(pages, domain: str):
 def run_linkedin():
     """Post to LinkedIn via API. Requires LINKEDIN_ACCESS_TOKEN and LINKEDIN_PERSON_URN."""
     access_token = get("LINKEDIN_ACCESS_TOKEN")
-    person_urn = get("LINKEDIN_PERSON_URN")
+    person_urn = _normalize_linkedin_person_urn(get("LINKEDIN_PERSON_URN"))
 
     if not access_token or not person_urn:
         log.info("LinkedIn credentials not set — skipping auto-post")
@@ -563,19 +620,7 @@ def run_linkedin():
 
     domain = get("SITE_DOMAIN", "https://yourdomain.com")
 
-    with db() as conn:
-        pages = conn.execute(
-            """
-            SELECT title, published_url, vertical, created_at
-            FROM outputs
-            WHERE type = 'seo_page'
-              AND published_url IS NOT NULL
-              AND created_at >= ?
-            ORDER BY created_at DESC
-            LIMIT 3
-        """,
-            (int(time.time()) - 86400,),
-        ).fetchall()
+    pages = _select_social_pages(limit=3, fresh_window_seconds=86400)
 
     posted = 0
     for page in pages:
@@ -589,7 +634,6 @@ def run_linkedin():
 
         if DRY_RUN:
             log.info(f"[DRY RUN] LinkedIn: {post_text[:80]}...")
-            _mark_posted(f"li:{url}")
             continue
 
         try:
@@ -602,12 +646,13 @@ def run_linkedin():
             log.warning(f"LinkedIn post failed: {e}")
 
     log.info(f"LinkedIn: {posted} posts published")
+    _write_social_run_report({"linkedin_candidates": len(pages), "linkedin_posted": posted})
 
 
 def _generate_linkedin_post(title: str, vertical: str, url: str) -> Optional[str]:
     result = complete_json(
         f"""
-Write a LinkedIn post for a B2B SaaS comparison page. Sound like a knowledgeable practitioner, not a marketer.
+Write a LinkedIn post for a B2B SaaS comparison page. Sound like a knowledgeable analyst, not a marketer.
 Lead with a sharp insight or counterintuitive point about this software category, then share the resource.
 
 Title: {title}
@@ -615,7 +660,7 @@ Vertical: {vertical}
 URL: {url}
 
 Return JSON: {{
-  "post": "<3-5 short paragraphs. Hook first. No generic openers like 'Excited to share'. End with URL naturally.>"
+  "post": "<3-5 short paragraphs. Hook first. No generic openers like 'Excited to share'. No fabricated first-person usage claims. End with URL naturally.>"
 }}
 """,
         estimated_tokens=500,
@@ -633,7 +678,7 @@ Return JSON: {{
 
 def _post_linkedin(text: str, access_token: str, person_urn: str):
     payload = {
-        "author": f"urn:li:person:{person_urn}",
+        "author": person_urn,
         "lifecycleState": "PUBLISHED",
         "specificContent": {
             "com.linkedin.ugc.ShareContent": {

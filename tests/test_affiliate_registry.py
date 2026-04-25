@@ -3,10 +3,16 @@ import json
 from publisher import affiliate_registry as registry
 
 
-def test_static_redirects_use_affiliate_urls():
+def test_static_redirects_use_buyer_facing_urls():
     redirects = registry.get_all_redirects()
-    assert redirects["ahrefs"] == "https://ahrefs.com/affiliates"
-    assert redirects["1password"] == "https://1password.com/partners/"
+    assert redirects["ahrefs"] == "https://ahrefs.com"
+    assert redirects["1password"] == "https://1password.com"
+
+
+def test_program_pages_fall_back_to_homepage():
+    assert registry.resolve_click_target("Ahrefs") == "https://ahrefs.com"
+    assert registry.resolve_click_target("1Password") == "https://1password.com"
+    assert registry.resolve_click_target("SE Ranking") == "https://seranking.com"
 
 
 def test_imported_affiliates_override_and_add_coupon_redirects(tmp_path, monkeypatch):

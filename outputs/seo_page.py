@@ -32,7 +32,7 @@ def _safe_homepage(tool_name: str, llm_url: str) -> str:
     Priority:
     1. Registry lookup (verified correct URLs)
     2. Strip any deep path from LLM URL — keep only scheme + domain root
-    3. Google search fallback
+    3. No CTA if we still cannot verify a buyer-facing destination
     """
     registry = get_homepage_for_tool(tool_name)
     if registry:
@@ -45,7 +45,7 @@ def _safe_homepage(tool_name: str, llm_url: str) -> str:
                 return f"{p.scheme}://{p.netloc}"
         except Exception:
             pass
-    return f"https://www.google.com/search?q={slugify(tool_name)}+pricing"
+    return ""
 
 
 def _affiliate_url(tool_name: str, base_url: str, vertical: str = "", page_type: str = "comparison") -> str:
@@ -189,12 +189,17 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
             tool["affiliate_url"] = _affiliate_url(tool["name"], tool["homepage"], vertical, page_type)
         cta_tool["homepage"] = _safe_homepage(cta_tool["name"], cta_tool.get("homepage", ""))
         data["cta_url"] = _affiliate_url(cta_tool["name"], cta_tool["homepage"], vertical, page_type)
+        data["cta_tool_name"] = cta_tool["name"]
+    else:
+        data["cta_tool_name"] = ""
 
     domain = get("SITE_DOMAIN", "https://saaspare.org")
     canonical = f"{domain}/pages/{slug}"
     data["canonical_url"] = canonical
     data["title"] = title
+    data["page_slug"] = slug
     data["page_type"] = page_type
+    data["vertical"] = vertical
     data["updated_date"] = time.strftime("%B %d, %Y")
     data["updated_iso"] = time.strftime("%Y-%m-%d")
     data["site_domain"] = domain

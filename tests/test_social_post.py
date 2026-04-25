@@ -1,4 +1,8 @@
-from ops.social_post import _build_social_calendar, _render_social_pack_markdown
+from ops.social_post import (
+    _build_social_calendar,
+    _normalize_linkedin_person_urn,
+    _render_social_pack_markdown,
+)
 
 
 def test_render_social_pack_markdown_includes_carousel_and_shot_list():
@@ -39,3 +43,8 @@ def test_build_social_calendar_rotates_channels():
     assert calendar[0]["channel"] == "X + LinkedIn"
     assert calendar[1]["channel"] == "Reddit"
     assert calendar[2]["channel"] == "Instagram"
+
+
+def test_normalize_linkedin_person_urn_accepts_id_or_full_urn():
+    assert _normalize_linkedin_person_urn("abc123") == "urn:li:person:abc123"
+    assert _normalize_linkedin_person_urn("urn:li:person:abc123") == "urn:li:person:abc123"
