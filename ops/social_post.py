@@ -326,31 +326,87 @@ def send_tweet_email(tweets: list[dict]):
         log.info("GMAIL_APP_PASSWORD not set — skipping tweet email")
         return
 
-    stamp = time.strftime("%Y-%m-%d %H:%M UTC")
+    stamp = time.strftime("%B %d, %Y · %H:%M UTC")
+    day = time.strftime("%A")
+    count = len(tweets)
     cards = ""
-    for item in tweets:
+    for i, item in enumerate(tweets, 1):
         intent_url = "https://twitter.com/intent/tweet?text=" + urllib.parse.quote(item["text"], safe="")
         cards += f"""
-        <div style="background:#1a1a2e;border:1px solid #333;border-radius:12px;padding:20px;margin-bottom:16px">
-          <div style="font-size:11px;color:#666;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">{item['title']}</div>
-          <div style="font-size:15px;line-height:1.6;color:#e8e8e8;margin-bottom:16px">{item['text']}</div>
-          <a href="{intent_url}" style="display:inline-block;background:#1d9bf0;color:#fff;padding:10px 22px;border-radius:100px;text-decoration:none;font-weight:700;font-size:14px">Tap to Post on X ↗</a>
-        </div>"""
+  <tr><td style="padding:0 0 12px 0">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;border:1px solid #e8e8e8;border-radius:12px;overflow:hidden">
+      <tr><td style="padding:20px 24px 0 24px">
+        <span style="font-size:11px;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:0.8px">Tweet {i} of {count}</span>
+        <p style="margin:8px 0 16px 0;font-size:15px;line-height:1.65;color:#111827">{item['text']}</p>
+      </td></tr>
+      <tr><td style="padding:0 24px 20px 24px;border-top:1px solid #f3f4f6">
+        <table cellpadding="0" cellspacing="0" style="margin-top:16px">
+          <tr><td style="background:#000000;border-radius:100px;padding:11px 24px">
+            <a href="{intent_url}" style="color:#ffffff;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:0.2px">Post on X &rarr;</a>
+          </td></tr>
+        </table>
+      </td></tr>
+    </table>
+  </td></tr>"""
 
     html = f"""<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-<body style="font-family:system-ui,sans-serif;background:#0d0d0d;color:#e8e8e8;padding:24px;max-width:600px;margin:0 auto">
-  <h2 style="color:#1d9bf0;margin-bottom:4px">SaaSpare Tweet Queue</h2>
-  <p style="color:#555;font-size:13px;margin-bottom:24px">{stamp} — tap any button to open Twitter with the tweet pre-filled, then hit Post.</p>
-  {cards}
-  <p style="color:#444;font-size:11px;margin-top:24px">Sent by SaaSpare bot · saaspare.org</p>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SaaSpare Tweet Queue</title>
+</head>
+<body style="margin:0;padding:0;background:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f9fafb;padding:40px 16px">
+<tr><td align="center">
+<table width="100%" style="max-width:580px" cellpadding="0" cellspacing="0">
+
+  <!-- Header -->
+  <tr><td style="padding-bottom:24px">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background:#000000;border-radius:14px;padding:28px 32px">
+      <tr>
+        <td>
+          <span style="font-size:13px;font-weight:700;color:#9ca3af;letter-spacing:1px;text-transform:uppercase">SaaSpare</span>
+          <h1 style="margin:6px 0 4px 0;font-size:22px;font-weight:800;color:#ffffff;letter-spacing:-0.5px">Your {day} Tweet Queue</h1>
+          <p style="margin:0;font-size:13px;color:#6b7280">{stamp}</p>
+        </td>
+        <td align="right" style="vertical-align:top">
+          <span style="background:#1d9bf0;color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:100px">{count} ready</span>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <!-- Instruction -->
+  <tr><td style="padding:0 4px 20px 4px">
+    <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.6">
+      Tap <strong style="color:#111827">Post on X</strong> for each tweet below. Twitter opens with the text pre-filled — just hit <strong style="color:#111827">Post</strong>. Done in seconds.
+    </p>
+  </td></tr>
+
+  <!-- Tweet cards -->
+  <table width="100%" cellpadding="0" cellspacing="0">
+    {cards}
+  </table>
+
+  <!-- Footer -->
+  <tr><td style="padding-top:28px;text-align:center;border-top:1px solid #e5e7eb">
+    <p style="margin:0;font-size:12px;color:#9ca3af">
+      SaaSpare &mdash; B2B SaaS Comparisons &mdash;
+      <a href="https://saaspare.org" style="color:#9ca3af">saaspare.org</a>
+    </p>
+    <p style="margin:4px 0 0 0;font-size:11px;color:#d1d5db">This email is sent 4&times; daily by your automated content bot.</p>
+  </td></tr>
+
+</table>
+</td></tr>
+</table>
 </body>
 </html>"""
 
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"SaaSpare Tweets — tap to post ({time.strftime('%a %H:%M')})"
-    msg["From"] = gmail_user
+    msg["Subject"] = f"Your SaaSpare tweet queue is ready — {time.strftime('%a %d %b')}"
+    msg["From"] = f"SaaSpare Bot <{gmail_user}>"
     msg["To"] = "smithelly30121@gmail.com"
     msg.attach(MIMEText(html, "html"))
 
