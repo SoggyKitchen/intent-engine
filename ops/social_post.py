@@ -124,32 +124,76 @@ def run_twitter():
 
     _write_social_queue(pages, domain)
 
-    if not all([api_key, api_secret, access_token, access_secret]):
-        log.info("Twitter credentials not set - generated social queue only")
-        return
-
+    tweets: list[dict] = []
     for page in pages:
         url = page["published_url"] or f"{domain}/{page['title']}"
-        if _already_posted(url):
-            continue
-
         tweet_text = _generate_tweet(page["title"], page["vertical"], url)
-        if not tweet_text:
-            continue
+        if tweet_text:
+            tweets.append({"text": tweet_text, "url": url, "title": page["title"]})
 
+    _write_tweet_launchpad(tweets)
+
+    if not all([api_key, api_secret, access_token, access_secret]):
+        log.info("Twitter: launchpad written - open outputs/generated/tweet_launchpad.html to post")
+        return
+
+    for item in tweets:
+        if _already_posted(item["url"]):
+            continue
         if DRY_RUN:
-            log.info(f"[DRY RUN] Would tweet: {tweet_text[:80]}...")
+            log.info(f"[DRY RUN] Would tweet: {item['text'][:80]}...")
             continue
-
         try:
-            _post_tweet(tweet_text, api_key, api_secret, access_token, access_secret)
-            _mark_posted(url)
-            log.info(f"Tweeted: {tweet_text[:60]}...")
+            _post_tweet(item["text"], api_key, api_secret, access_token, access_secret)
+            _mark_posted(item["url"])
+            log.info(f"Tweeted: {item['text'][:60]}...")
             time.sleep(60)
         except Exception as e:
             log.warning(f"Tweet failed: {e}")
 
     _write_social_run_report({"twitter_candidates": len(pages)})
+
+
+def _write_tweet_launchpad(tweets: list[dict]):
+    if not tweets:
+        return
+    SOCIAL_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
+    stamp = time.strftime("%Y-%m-%d")
+    rows = ""
+    for item in tweets:
+        intent_url = "https://twitter.com/intent/tweet?text=" + urllib.parse.quote(item["text"], safe="")
+        rows += f"""
+        <div class="card">
+          <div class="title">{item['title']}</div>
+          <div class="tweet">{item['text']}</div>
+          <a class="btn" href="{intent_url}" target="_blank">Open in Twitter ↗</a>
+        </div>"""
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SaaSpare Tweet Launchpad — {stamp}</title>
+<style>
+body{{font-family:system-ui,sans-serif;background:#0a0a0a;color:#e8e8e8;padding:2rem;max-width:700px;margin:0 auto}}
+h1{{color:#1d9bf0;margin-bottom:.25rem}}
+.sub{{color:#666;font-size:.85rem;margin-bottom:2rem}}
+.card{{background:#111;border:1px solid #222;border-radius:12px;padding:1.25rem;margin-bottom:1rem}}
+.title{{font-size:.75rem;color:#555;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.5px}}
+.tweet{{font-size:.95rem;line-height:1.5;margin-bottom:1rem;white-space:pre-wrap}}
+.btn{{display:inline-block;background:#1d9bf0;color:#fff;padding:.5rem 1.25rem;border-radius:100px;text-decoration:none;font-weight:600;font-size:.875rem}}
+.btn:hover{{background:#1a8cd8}}
+</style>
+</head>
+<body>
+<h1>Tweet Launchpad</h1>
+<p class="sub">Generated {stamp} — click "Open in Twitter" for each tweet, then hit Post.</p>
+{rows}
+</body>
+</html>"""
+    out = SOCIAL_QUEUE_DIR / "tweet_launchpad.html"
+    out.write_text(html, encoding="utf-8")
+    log.info(f"Tweet launchpad written: {out}")
 
 
 def build_social_pack(limit: int = 5) -> Optional[str]:
