@@ -169,7 +169,7 @@ PROGRAMS = {
         {"name": "Expensify", "homepage": "https://www.expensify.com",
          "affiliate_url": "https://use.expensify.com/accountants", "network": "direct",
          "commission": "0.5% of referred spend", "commission_pct": 1, "recurring": False, "avg_plan_usd": 5},
-        {"name": "Xero", "homepage": "https://www.xero.com",
+        {"name": "Xero", "homepage": "https://www.xero.com/us/pricing-plans/",
          "affiliate_url": "https://www.xero.com/partners/become-a-partner/", "network": "partnerstack",
          "commission": "30% recurring for 12 months", "commission_pct": 30, "recurring": True, "avg_plan_usd": 65},
     ],
