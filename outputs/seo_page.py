@@ -50,6 +50,8 @@ def _safe_homepage(tool_name: str, llm_url: str) -> str:
 
 def _affiliate_url(tool_name: str, base_url: str, vertical: str = "", page_type: str = "comparison") -> str:
     utm = f"utm_source=saaspare&utm_medium=affiliate&utm_campaign={page_type}&utm_content={slugify(tool_name)}"
+    if base_url and "google.com" in base_url:
+        base_url = ""
     if "amazon.com" in base_url:
         sep = "&" if "?" in base_url else "?"
         return f"{base_url}{sep}tag={AMAZON_TAG}&{utm}"
@@ -251,12 +253,17 @@ def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: s
                                "url": f"{get('SITE_DOMAIN', 'https://saaspare.org')}/og-default.png"}},
         "mainEntityOfPage": canonical or domain,
     }
+    schemas = [schema]
     if data.get("faqs"):
-        schema["mainEntity"] = [
-            {"@type": "Question", "name": f["question"],
-             "acceptedAnswer": {"@type": "Answer", "text": f["answer"]}}
-            for f in data["faqs"]
-        ]
+        schemas.append({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": f["question"],
+                 "acceptedAnswer": {"@type": "Answer", "text": f["answer"]}}
+                for f in data["faqs"]
+            ]
+        })
     breadcrumb = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -266,7 +273,8 @@ def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: s
             {"@type": "ListItem", "position": 3, "name": data.get("page_title", ""), "item": canonical or domain},
         ]
     }
-    return json.dumps([schema, breadcrumb])
+    schemas.append(breadcrumb)
+    return json.dumps(schemas)
 
 
 def find_clusters(vertical: str, min_size: int = 5) -> list[list[dict]]:
