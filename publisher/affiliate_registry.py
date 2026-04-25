@@ -186,6 +186,10 @@ PROGRAMS = {
     ],
 
     "project_management": [
+        {"name": "Trello", "homepage": "https://trello.com",
+         "affiliate_url": "https://trello.com/pricing", "network": "direct",
+         "commission": "no affiliate — direct pricing link", "commission_pct": 0, "recurring": False, "avg_plan_usd": 0,
+         "aliases": ["trello boards", "atlassian trello"]},
         {"name": "Asana", "homepage": "https://asana.com",
          "affiliate_url": "https://asana.com/partners", "network": "partnerstack",
          "commission": "10% per referral", "commission_pct": 10, "recurring": False, "avg_plan_usd": 130},
@@ -207,6 +211,14 @@ PROGRAMS = {
     ],
 
     "crm": [
+        {"name": "HubSpot CRM", "homepage": "https://www.hubspot.com/products/crm",
+         "affiliate_url": "https://www.hubspot.com/partners/affiliates", "network": "impact",
+         "commission": "30% recurring for 12 months", "commission_pct": 30, "recurring": True, "avg_plan_usd": 50,
+         "aliases": ["HubSpot", "hubspot crm", "hubspot free crm"]},
+        {"name": "Salesforce", "homepage": "https://www.salesforce.com/crm/",
+         "affiliate_url": "https://www.salesforce.com/form/signup/freetrial-sales/", "network": "direct",
+         "commission": "no affiliate — direct trial link", "commission_pct": 0, "recurring": False, "avg_plan_usd": 0,
+         "aliases": ["Salesforce CRM", "salesforce sales cloud", "sfdc"]},
         {"name": "Pipedrive", "homepage": "https://www.pipedrive.com",
          "affiliate_url": "https://www.pipedrive.com/en/partners/affiliate", "network": "partnerstack",
          "commission": "20% recurring for 12 months", "commission_pct": 20, "recurring": True, "avg_plan_usd": 49},
@@ -228,6 +240,10 @@ PROGRAMS = {
     ],
 
     "password_managers": [
+        {"name": "Bitwarden", "homepage": "https://bitwarden.com",
+         "affiliate_url": "https://bitwarden.com/pricing/", "network": "direct",
+         "commission": "no affiliate — direct pricing link", "commission_pct": 0, "recurring": False, "avg_plan_usd": 0,
+         "aliases": ["bitwarden business", "bitwarden teams"]},
         {"name": "1Password", "homepage": "https://1password.com",
          "affiliate_url": "https://1password.com/partners/", "network": "partnerstack",
          "commission": "25% recurring", "commission_pct": 25, "recurring": True, "avg_plan_usd": 7.99},
@@ -264,6 +280,10 @@ PROGRAMS = {
     ],
 
     "vpn_business": [
+        {"name": "Cloudflare Access", "homepage": "https://www.cloudflare.com/products/zero-trust/",
+         "affiliate_url": "https://www.cloudflare.com/plans/zero-trust-services/", "network": "direct",
+         "commission": "no affiliate — direct pricing link", "commission_pct": 0, "recurring": False, "avg_plan_usd": 0,
+         "aliases": ["cloudflare zero trust", "cloudflare teams", "cloudflare ztna"]},
         {"name": "NordLayer", "homepage": "https://nordlayer.com",
          "affiliate_url": "https://nordlayer.com/affiliates/", "network": "impact",
          "commission": "30% per sale", "commission_pct": 30, "recurring": False, "avg_plan_usd": 99},
@@ -300,6 +320,10 @@ PROGRAMS = {
         {"name": "SpyFu", "homepage": "https://www.spyfu.com",
          "affiliate_url": "https://www.spyfu.com/affiliate", "network": "shareasale",
          "commission": "40% per sale", "commission_pct": 40, "recurring": False, "avg_plan_usd": 39},
+        {"name": "Ubersuggest", "homepage": "https://neilpatel.com/ubersuggest/",
+         "affiliate_url": "https://neilpatel.com/ubersuggest/", "network": "direct",
+         "commission": "30% recurring", "commission_pct": 30, "recurring": True, "avg_plan_usd": 29,
+         "aliases": ["ubersuggest neil patel", "neil patel seo"]},
         {"name": "Clearscope", "homepage": "https://www.clearscope.io",
          "affiliate_url": "https://www.clearscope.io/partners", "network": "direct",
          "commission": "20% recurring", "commission_pct": 20, "recurring": True, "avg_plan_usd": 189},

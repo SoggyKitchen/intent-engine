@@ -141,24 +141,29 @@ def build_social_pack(limit: int = 5) -> Optional[str]:
 def _generate_tweet(title: str, vertical: str, url: str) -> Optional[str]:
     result = complete_json(
         f"""
-Generate a concise, engaging tweet for this B2B software comparison page.
+Generate a high-engagement tweet for this B2B software comparison page.
 Title: {title}
 Vertical: {vertical}
 URL: {url}
 
-Return JSON: {{"tweet": "<under 240 chars, no hashtag spam, sounds like a real person sharing a useful resource>"}}
+Rules:
+- Open with a punchy hook (question, bold claim, or surprising stat) — NOT "New post:"
+- Sound like a practitioner who actually uses these tools
+- Max 2 relevant hashtags only (e.g. #SaaS #CRM)
+- Under 240 chars so the URL fits
+
+Return JSON: {{"tweet": "<tweet text WITHOUT the URL — URL appended automatically>"}}
 """,
         estimated_tokens=350,
         max_output_tokens=220,
     )
     if not result:
         return None
-    tweet = result.get("tweet", "")
+    tweet = result.get("tweet", "").strip()
     if not tweet:
         return None
-    if url not in tweet:
-        tweet = f"{tweet} {url}"
-    return tweet[:280]
+    full = f"{tweet} {url}"
+    return full[:280]
 
 
 def _post_tweet(text: str, api_key: str, api_secret: str, access_token: str, access_secret: str):
@@ -206,12 +211,28 @@ def _post_tweet(text: str, api_key: str, api_secret: str, access_token: str, acc
 
 
 def run_reddit_answers():
-    """Post genuine, value-adding answers to high-intent Reddit threads."""
-    reddit_key = get("REDDIT_CLIENT_ID")
-    if not reddit_key:
-        return
+    """Post genuine, value-adding answers to high-intent Reddit threads via PRAW."""
+    client_id = get("REDDIT_CLIENT_ID")
+    client_secret = get("REDDIT_CLIENT_SECRET")
+    reddit_username = get("REDDIT_USERNAME")
+    reddit_password = get("REDDIT_PASSWORD")
+    user_agent = get("REDDIT_USER_AGENT", "saaspare-bot/1.0")
 
     domain = get("SITE_DOMAIN", "https://yourdomain.com")
+
+    reddit = None
+    if all([client_id, client_secret, reddit_username, reddit_password]):
+        try:
+            import praw
+            reddit = praw.Reddit(
+                client_id=client_id,
+                client_secret=client_secret,
+                username=reddit_username,
+                password=reddit_password,
+                user_agent=user_agent,
+            )
+        except Exception as e:
+            log.warning(f"PRAW init failed: {e}")
 
     with db() as conn:
         signals = conn.execute(
@@ -223,7 +244,7 @@ def run_reddit_answers():
               AND s.intent >= 70
               AND s.ts >= ?
             ORDER BY s.profit_score DESC
-            LIMIT 10
+            LIMIT 5
         """,
             (int(time.time()) - 3600 * 12,),
         ).fetchall()
@@ -238,7 +259,10 @@ def run_reddit_answers():
 
     page_index = {p["vertical"]: p for p in site_pages}
 
+    posted_count = 0
     for signal in signals:
+        if posted_count >= 2:
+            break
         if _already_posted(signal["url"]):
             continue
         vertical = signal["vertical"]
@@ -260,9 +284,22 @@ def run_reddit_answers():
             _mark_posted(signal["url"])
             continue
 
-        log.info(f"Reddit answer ready for r/{signal['subreddit']} - post manually or via PRAW")
         _store_pending_reddit_post(signal, answer)
-        _mark_posted(signal["url"])
+
+        if reddit:
+            try:
+                submission = reddit.submission(url=signal["url"])
+                submission.reply(answer)
+                _mark_posted(signal["url"])
+                posted_count += 1
+                log.info(f"Posted Reddit reply to r/{signal['subreddit']}")
+                time.sleep(120)
+            except Exception as e:
+                log.warning(f"Reddit post failed for r/{signal['subreddit']}: {e}")
+                _mark_posted(signal["url"])
+        else:
+            log.info(f"Reddit staged (no creds) for r/{signal['subreddit']}")
+            _mark_posted(signal["url"])
 
 
 def _generate_social_copy(title: str, vertical: str, url: str) -> dict:
@@ -513,3 +550,107 @@ def _write_social_queue(pages, domain: str):
         )
     out_path.write_text("\n".join(lines), encoding="utf-8")
     log.info(f"Social queue written: {out_path}")
+
+
+def run_linkedin():
+    """Post to LinkedIn via API. Requires LINKEDIN_ACCESS_TOKEN and LINKEDIN_PERSON_URN."""
+    access_token = get("LINKEDIN_ACCESS_TOKEN")
+    person_urn = get("LINKEDIN_PERSON_URN")
+
+    if not access_token or not person_urn:
+        log.info("LinkedIn credentials not set — skipping auto-post")
+        return
+
+    domain = get("SITE_DOMAIN", "https://yourdomain.com")
+
+    with db() as conn:
+        pages = conn.execute(
+            """
+            SELECT title, published_url, vertical, created_at
+            FROM outputs
+            WHERE type = 'seo_page'
+              AND published_url IS NOT NULL
+              AND created_at >= ?
+            ORDER BY created_at DESC
+            LIMIT 3
+        """,
+            (int(time.time()) - 86400,),
+        ).fetchall()
+
+    posted = 0
+    for page in pages:
+        url = page["published_url"] or f"{domain}/{page['title']}"
+        if _already_posted(f"li:{url}"):
+            continue
+
+        post_text = _generate_linkedin_post(page["title"], page["vertical"], url)
+        if not post_text:
+            continue
+
+        if DRY_RUN:
+            log.info(f"[DRY RUN] LinkedIn: {post_text[:80]}...")
+            _mark_posted(f"li:{url}")
+            continue
+
+        try:
+            _post_linkedin(post_text, access_token, person_urn)
+            _mark_posted(f"li:{url}")
+            posted += 1
+            log.info(f"LinkedIn posted: {page['title'][:60]}")
+            time.sleep(30)
+        except Exception as e:
+            log.warning(f"LinkedIn post failed: {e}")
+
+    log.info(f"LinkedIn: {posted} posts published")
+
+
+def _generate_linkedin_post(title: str, vertical: str, url: str) -> Optional[str]:
+    result = complete_json(
+        f"""
+Write a LinkedIn post for a B2B SaaS comparison page. Sound like a knowledgeable practitioner, not a marketer.
+Lead with a sharp insight or counterintuitive point about this software category, then share the resource.
+
+Title: {title}
+Vertical: {vertical}
+URL: {url}
+
+Return JSON: {{
+  "post": "<3-5 short paragraphs. Hook first. No generic openers like 'Excited to share'. End with URL naturally.>"
+}}
+""",
+        estimated_tokens=500,
+        max_output_tokens=400,
+    )
+    if not result:
+        return None
+    post = result.get("post", "").strip()
+    if not post:
+        return None
+    if url not in post:
+        post = f"{post}\n\n{url}"
+    return post[:2900]
+
+
+def _post_linkedin(text: str, access_token: str, person_urn: str):
+    payload = {
+        "author": f"urn:li:person:{person_urn}",
+        "lifecycleState": "PUBLISHED",
+        "specificContent": {
+            "com.linkedin.ugc.ShareContent": {
+                "shareCommentary": {"text": text},
+                "shareMediaCategory": "NONE",
+            }
+        },
+        "visibility": {"com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"},
+    }
+    resp = httpx.post(
+        "https://api.linkedin.com/v2/ugcPosts",
+        json=payload,
+        headers={
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json",
+            "X-Restli-Protocol-Version": "2.0.0",
+        },
+        timeout=20,
+    )
+    resp.raise_for_status()

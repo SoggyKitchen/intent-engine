@@ -120,11 +120,12 @@ def pack(vertical: str):
 
 @cli.command()
 def social():
-    """Post comparison pages to Twitter/X and stage Reddit answers."""
-    from ops.social_post import build_social_pack, run_reddit_answers, run_twitter
+    """Post comparison pages to Twitter/X, LinkedIn, and Reddit."""
+    from ops.social_post import build_social_pack, run_linkedin, run_reddit_answers, run_twitter
 
     build_social_pack()
     run_twitter()
+    run_linkedin()
     run_reddit_answers()
     click.echo("OK  Social posting done")
 
