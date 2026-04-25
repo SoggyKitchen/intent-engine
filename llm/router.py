@@ -129,7 +129,10 @@ def complete_json(prompt: str, system: str = "", estimated_tokens: int = 4000) -
     return None
 
 
+_providers_logged = False
+
 def _get_ordered_providers():
+    global _providers_logged
     providers = []
     for kidx in range(1, 6):
         env_var = f"CEREBRAS_API_KEY{'' if kidx == 1 else f'_{kidx}'}"
@@ -141,8 +144,9 @@ def _get_ordered_providers():
             pid = _pid(kidx, model)
             DAILY_LIMITS[pid] = limit
             providers.append((pid, model, client))
-    if providers:
+    if providers and not _providers_logged:
         log.info(f"Discovered {len(providers)} providers: {[p[0] for p in providers]}")
+        _providers_logged = True
     return providers
 
 

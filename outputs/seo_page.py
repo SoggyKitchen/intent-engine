@@ -199,13 +199,16 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
     out_path.write_text(html, encoding="utf-8")
     log.info(f"SEO page written: {out_path}")
 
-    page_id = hashlib.sha256(slug.encode()).hexdigest()[:12]
-    with db() as conn:
-        conn.execute("""
-            INSERT OR REPLACE INTO outputs
-              (id, type, vertical, title, file_path, published_url, created_at)
-            VALUES (?, 'seo_page', ?, ?, ?, ?, ?)
-        """, (page_id, vertical, title, str(out_path), canonical, int(time.time())))
+    try:
+        page_id = hashlib.sha256(slug.encode()).hexdigest()[:12]
+        with db() as conn:
+            conn.execute("""
+                INSERT OR REPLACE INTO outputs
+                  (id, type, vertical, title, file_path, published_url, created_at)
+                VALUES (?, 'seo_page', ?, ?, ?, ?, ?)
+            """, (page_id, vertical, title, str(out_path), canonical, int(time.time())))
+    except Exception as e:
+        log.warning(f"DB insert failed for {slug} (page still written): {e}")
 
     return str(out_path)
 
