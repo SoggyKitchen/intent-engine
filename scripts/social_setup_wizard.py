@@ -32,10 +32,11 @@ def header(title, step, total):
 
 
 def ask(prompt, secret=False, allow_blank=False):
-    import getpass
     while True:
         try:
-            val = getpass.getpass(f"  {cyan('►')} {prompt}: ") if secret else input(f"  {cyan('►')} {prompt}: ")
+            if secret:
+                print(f"  {cyan('►')} {prompt}: ", end="", flush=True)
+            val = input(f"  {cyan('►')} {prompt}: " if not secret else "")
         except (KeyboardInterrupt, EOFError):
             print("\n\n  Wizard cancelled. Run again anytime.")
             sys.exit(0)

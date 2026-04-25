@@ -230,7 +230,7 @@ def _post_tweet(text: str, api_key: str, api_secret: str, access_token: str, acc
     oauth_timestamp = str(int(time.time()))
     oauth_nonce = sec.token_hex(16)
 
-    params = {
+    oauth_params = {
         "oauth_consumer_key": api_key,
         "oauth_nonce": oauth_nonce,
         "oauth_signature_method": "HMAC-SHA1",
@@ -239,15 +239,16 @@ def _post_tweet(text: str, api_key: str, api_secret: str, access_token: str, acc
         "oauth_version": "1.0",
     }
 
-    base_params = dict(sorted(params.items()))
+    all_params = {**oauth_params, "status": text}
+    sorted_params = dict(sorted(all_params.items()))
     param_str = "&".join(
         f"{urllib.parse.quote(k, safe='')}={urllib.parse.quote(v, safe='')}"
-        for k, v in base_params.items()
+        for k, v in sorted_params.items()
     )
     base_str = "&".join(
         [
             "POST",
-            urllib.parse.quote("https://api.twitter.com/2/tweets", safe=""),
+            urllib.parse.quote("https://api.twitter.com/1.1/statuses/update.json", safe=""),
             urllib.parse.quote(param_str, safe=""),
         ]
     )
@@ -255,16 +256,16 @@ def _post_tweet(text: str, api_key: str, api_secret: str, access_token: str, acc
     sig = base64.b64encode(
         hmac.new(signing_key.encode(), base_str.encode(), hashlib.sha1).digest()
     ).decode()
-    params["oauth_signature"] = sig
+    oauth_params["oauth_signature"] = sig
 
     auth_header = "OAuth " + ", ".join(
         f'{urllib.parse.quote(k, safe="")}="{urllib.parse.quote(v, safe="")}"'
-        for k, v in sorted(params.items())
+        for k, v in sorted(oauth_params.items())
     )
     resp = httpx.post(
-        "https://api.twitter.com/2/tweets",
-        json={"text": text},
-        headers={"Authorization": auth_header, "Content-Type": "application/json"},
+        "https://api.twitter.com/1.1/statuses/update.json",
+        data={"status": text},
+        headers={"Authorization": auth_header},
         timeout=20,
     )
     resp.raise_for_status()
