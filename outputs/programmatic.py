@@ -28,12 +28,12 @@ TOOLS_BY_VERTICAL = {
         "Power BI", "Heap", "FullStory", "Hotjar", "Segment",
     ],
     "marketing_automation": [
-        "HubSpot", "ActiveCampaign", "Mailchimp", "Lemlist", "Brevo",
+        "HubSpot", "ActiveCampaign", "Mailchimp", "GetResponse", "Brevo",
         "Klaviyo", "Marketo", "Pardot", "ConvertKit", "Drip",
     ],
     "cloud_infra": [
-        "AWS", "DigitalOcean", "Vultr", "Hetzner", "Render",
-        "Supabase", "Railway", "Fly.io", "Linode", "Google Cloud",
+        "AWS", "DigitalOcean", "Contabo", "Hetzner", "Render",
+        "Supabase", "Railway", "Vultr", "Linode", "Google Cloud",
     ],
     "cybersecurity": [
         "NordLayer", "1Password Business", "Okta", "CrowdStrike", "Snyk",
@@ -86,7 +86,7 @@ TOOLS_BY_VERTICAL = {
 }
 
 ALTERNATIVE_TARGETS = {
-    "marketing_automation": ["HubSpot", "Salesforce", "Marketo", "Mailchimp"],
+    "marketing_automation": ["HubSpot", "GetResponse", "Marketo", "Mailchimp"],
     "cloud_infra": ["AWS", "Heroku", "Google Cloud"],
     "hr_recruiting": ["BambooHR", "Workday", "ADP"],
     "ecommerce_tools": ["Shopify", "BigCommerce", "WooCommerce"],
@@ -106,6 +106,8 @@ HIGH_VALUE_PRICING_TARGETS = [
     ("HubSpot", "marketing_automation"),
     ("Salesforce", "crm"),
     ("ActiveCampaign", "marketing_automation"),
+    ("GetResponse", "marketing_automation"),
+    ("Contabo", "cloud_infra"),
     ("Shopify", "ecommerce_tools"),
     ("BigCommerce", "ecommerce_tools"),
     ("BambooHR", "hr_recruiting"),
@@ -169,6 +171,10 @@ HIGH_VALUE_COMPARISONS = [
     ("NordLayer", "Perimeter 81", "vpn_business"),
     ("DocuSign", "PandaDoc", "legal_compliance"),
     ("Amplitude", "Mixpanel", "saas_analytics"),
+    ("GetResponse", "Mailchimp", "marketing_automation"),
+    ("GetResponse", "ActiveCampaign", "marketing_automation"),
+    ("Contabo", "DigitalOcean", "cloud_infra"),
+    ("Contabo", "Vultr", "cloud_infra"),
 ]
 
 BEST_OF_QUERIES = [
@@ -245,6 +251,7 @@ HIGH_VALUE_REVIEW_TARGETS = [
     ("Ramp", "finance_ops"),
     ("Jasper AI", "ai_ml_tools"),
     ("ActiveCampaign", "marketing_automation"),
+    ("GetResponse", "marketing_automation"),
     ("DocuSign", "legal_compliance"),
     ("Amplitude", "saas_analytics"),
     ("Ahrefs", "seo_tools"),
