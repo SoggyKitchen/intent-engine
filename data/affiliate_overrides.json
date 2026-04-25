@@ -15,7 +15,7 @@
     "epc_3m": "$225.96 AUD",
     "epc_7d": "$444.81 AUD",
     "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
-    "imported_at": "2026-04-25T07:23:55Z"
+    "imported_at": "2026-04-25T15:38:31Z"
   },
   {
     "name": "Email Provider",
@@ -37,7 +37,7 @@
     "epc_3m": "$33.78 AUD",
     "epc_7d": "N/A",
     "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
-    "imported_at": "2026-04-25T07:23:56Z"
+    "imported_at": "2026-04-25T15:38:32Z"
   },
   {
     "name": "AOMEI Anyviewer",
@@ -60,7 +60,28 @@
     "epc_3m": "$177.27 AUD",
     "epc_7d": "N/A",
     "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
-    "imported_at": "2026-04-25T07:23:55Z"
+    "imported_at": "2026-04-25T15:38:31Z"
+  },
+  {
+    "name": "Shopify",
+    "aliases": [
+      "shopify plus",
+      "shopify store",
+      "shopify ecommerce"
+    ],
+    "advertiser": "Shopify",
+    "affiliate_url": "https://shopify.pxf.io/9VMZje",
+    "homepage": "https://www.shopify.com",
+    "network": "impact",
+    "vertical": "ecommerce_tools",
+    "commission": "$150 per merchant referral",
+    "commission_pct": 0,
+    "recurring": false,
+    "category": "Ecommerce Platform",
+    "description": "Shopify Partner Program - earn $150 per referred merchant",
+    "epc_3m": "N/A",
+    "epc_7d": "N/A",
+    "imported_at": "2026-04-26T00:00:00Z"
   },
   {
     "name": "Sucuri",
@@ -82,7 +103,7 @@
     "epc_3m": "$80.74 AUD",
     "epc_7d": "$0.00 AUD",
     "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
-    "imported_at": "2026-04-25T07:23:56Z"
+    "imported_at": "2026-04-25T15:38:32Z"
   },
   {
     "name": "GetResponse",
@@ -100,6 +121,6 @@
     "epc_3m": "$329.27 AUD",
     "epc_7d": "N/A",
     "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
-    "imported_at": "2026-04-25T07:23:55Z"
+    "imported_at": "2026-04-25T15:38:31Z"
   }
 ]
