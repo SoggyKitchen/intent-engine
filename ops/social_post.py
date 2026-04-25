@@ -9,8 +9,11 @@ import hashlib
 import hmac
 import json
 import secrets as sec
+import smtplib
 import time
 import urllib.parse
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from pathlib import Path
 from typing import Optional
 
@@ -132,6 +135,7 @@ def run_twitter():
             tweets.append({"text": tweet_text, "url": url, "title": page["title"]})
 
     _write_tweet_launchpad(tweets)
+    send_tweet_email(tweets)
 
     if not all([api_key, api_secret, access_token, access_secret]):
         log.info("Twitter: launchpad written - open outputs/generated/tweet_launchpad.html to post")
@@ -313,6 +317,50 @@ def _post_tweet(text: str, api_key: str, api_secret: str, access_token: str, acc
         timeout=20,
     )
     resp.raise_for_status()
+
+
+def send_tweet_email(tweets: list[dict]):
+    gmail_user = get("GMAIL_USER", "smithelly30121@gmail.com")
+    gmail_password = get("GMAIL_APP_PASSWORD")
+    if not gmail_password:
+        log.info("GMAIL_APP_PASSWORD not set — skipping tweet email")
+        return
+
+    stamp = time.strftime("%Y-%m-%d %H:%M UTC")
+    cards = ""
+    for item in tweets:
+        intent_url = "https://twitter.com/intent/tweet?text=" + urllib.parse.quote(item["text"], safe="")
+        cards += f"""
+        <div style="background:#1a1a2e;border:1px solid #333;border-radius:12px;padding:20px;margin-bottom:16px">
+          <div style="font-size:11px;color:#666;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">{item['title']}</div>
+          <div style="font-size:15px;line-height:1.6;color:#e8e8e8;margin-bottom:16px">{item['text']}</div>
+          <a href="{intent_url}" style="display:inline-block;background:#1d9bf0;color:#fff;padding:10px 22px;border-radius:100px;text-decoration:none;font-weight:700;font-size:14px">Tap to Post on X ↗</a>
+        </div>"""
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="font-family:system-ui,sans-serif;background:#0d0d0d;color:#e8e8e8;padding:24px;max-width:600px;margin:0 auto">
+  <h2 style="color:#1d9bf0;margin-bottom:4px">SaaSpare Tweet Queue</h2>
+  <p style="color:#555;font-size:13px;margin-bottom:24px">{stamp} — tap any button to open Twitter with the tweet pre-filled, then hit Post.</p>
+  {cards}
+  <p style="color:#444;font-size:11px;margin-top:24px">Sent by SaaSpare bot · saaspare.org</p>
+</body>
+</html>"""
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = f"SaaSpare Tweets — tap to post ({time.strftime('%a %H:%M')})"
+    msg["From"] = gmail_user
+    msg["To"] = "smithelly30121@gmail.com"
+    msg.attach(MIMEText(html, "html"))
+
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+            smtp.login(gmail_user, gmail_password)
+            smtp.sendmail(gmail_user, "smithelly30121@gmail.com", msg.as_string())
+        log.info("Tweet launchpad email sent to smithelly30121@gmail.com")
+    except Exception as e:
+        log.warning(f"Tweet email failed: {e}")
 
 
 def run_reddit_answers():

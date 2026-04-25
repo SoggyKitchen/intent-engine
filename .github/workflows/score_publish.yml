@@ -140,6 +140,8 @@ jobs:
           REDDIT_ALLOWED_SUBREDDITS: ${{ secrets.REDDIT_ALLOWED_SUBREDDITS }}
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
 
       - name: Print stats
         run: uv run engine stats
