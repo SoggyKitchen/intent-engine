@@ -12,11 +12,11 @@
 <link rel="apple-touch-icon" href="/favicon-192.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
 <meta name="theme-color" content="#080810">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:#0a0a14;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#0a0a14;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:#e94560}
 a:hover{opacity:.8}
 ::-webkit-scrollbar{width:5px;background:rgba(255,255,255,.03)}
@@ -26,10 +26,10 @@ a:hover{opacity:.8}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
 nav.scrolled{background:rgba(10,10,20,.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.07)}
-.logo-mark{height:24px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .4s cubic-bezier(.34,1.4,.64,1);transform-box:fill-box;transform-origin:center}@keyframes markDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(-1.2px,-1.2px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}50%{transform:translate(1.2px,1.2px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-3px,-3px)}.logo:hover .mark-bot{animation:none;transform:translate(3px,3px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 14px rgba(233,69,96,.65))}
+.logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;transition:filter .35s ease,transform .35s cubic-bezier(.34,1.56,.64,1);animation:markGlow 3.5s ease-in-out infinite}.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .42s cubic-bezier(.34,1.56,.64,1)}@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 14px rgba(233,69,96,.52))}}@keyframes floatTop{0%,100%{transform:translate(0,0) rotate(0deg)}28%{transform:translate(-2.2px,-2.8px) rotate(-2.2deg)}72%{transform:translate(1px,1.2px) rotate(1deg)}}@keyframes floatBot{0%,100%{transform:translate(0,0) rotate(0deg)}28%{transform:translate(2.2px,2.8px) rotate(2.2deg)}72%{transform:translate(-1px,-1.2px) rotate(-1deg)}}.mark-top{animation:floatTop 4.5s ease-in-out infinite}.mark-bot{animation:floatBot 4.5s ease-in-out infinite}.logo:hover .logo-mark{animation:none;filter:drop-shadow(0 0 22px rgba(233,69,96,.85)) drop-shadow(0 4px 32px rgba(233,69,96,.35));transform:scale(1.1)}.logo:hover .mark-top{animation:none;transform:translate(-5px,-5px) rotate(-4deg)}.logo:hover .mark-bot{animation:none;transform:translate(5px,5px) rotate(4deg)}
 .logo{display:flex;align-items:center;gap:8px;margin-right:auto;text-decoration:none}
 
-.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.5px;color:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
 .logo-text em{color:#e94560;font-style:normal}
 .nav-link{color:rgba(255,255,255,.5);font-size:.83rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s;text-decoration:none}
 .nav-link:hover{color:#fff}

@@ -123,7 +123,7 @@ def run_twitter():
 
     domain = get("SITE_DOMAIN", "https://yourdomain.com")
 
-    pages = _select_social_pages(limit=5, fresh_window_seconds=86400)
+    pages = _select_social_pages(limit=3, fresh_window_seconds=86400)
 
     _write_social_queue(pages, domain)
 
@@ -420,7 +420,7 @@ def send_tweet_email(tweets: list[dict]):
 
 
 def send_reddit_email(items: list[dict]):
-    """Email a 'one-tap to reply' launchpad for staged Reddit answers."""
+    """Email a one-tap Reddit launchpad — replies open thread, new posts autofill via submit URL."""
     gmail_user = get("GMAIL_USER", "smithelly30121@gmail.com")
     gmail_password = get("GMAIL_APP_PASSWORD")
     if not gmail_password or not items:
@@ -431,27 +431,45 @@ def send_reddit_email(items: list[dict]):
     count = len(items)
     cards = ""
     for i, it in enumerate(items, 1):
-        thread_url = it["thread_url"]
-        # Reddit doesn't accept a pre-filled comment via URL, but we open the thread
-        # and put the answer in the clipboard via a copy button (mailto fallback for plain).
+        subreddit = it.get("subreddit", "saas")
         answer = it["answer"].replace("<", "&lt;").replace(">", "&gt;")
-        subreddit = it["subreddit"]
-        title = it["thread_title"][:90]
+
+        # If it's a new post (has post_title key), use Reddit submit URL for autofill
+        if it.get("post_title"):
+            post_title = it["post_title"]
+            submit_url = (
+                "https://www.reddit.com/r/" + subreddit + "/submit?type=text"
+                + "&title=" + urllib.parse.quote(post_title, safe="")
+                + "&text=" + urllib.parse.quote(it["answer"], safe="")
+            )
+            label = f"New Post {i} of {count} &middot; r/{subreddit}"
+            btn_label = "Post on Reddit &rarr;"
+            btn_url = submit_url
+            instruction = "Tap button &rarr; Reddit opens with post pre-filled &rarr; hit <strong>Post</strong>. Done."
+            title_line = f'<p style="margin:8px 0 6px 0;font-size:13px;color:#6b7280;font-weight:600">Title: {post_title[:90]}</p>'
+        else:
+            thread_url = it.get("thread_url", "https://reddit.com")
+            label = f"Reply {i} of {count} &middot; r/{subreddit}"
+            btn_label = "Open Thread to Reply &rarr;"
+            btn_url = thread_url
+            instruction = "Copy the reply below, tap button &rarr; paste as comment."
+            title_line = f'<p style="margin:8px 0 6px 0;font-size:13px;color:#6b7280;font-weight:600">Thread: {it.get("thread_title","")[:90]}</p>'
+
         cards += f"""
-  <tr><td style="padding:0 0 12px 0">
+  <tr><td style="padding:0 0 14px 0">
     <table width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;border:1px solid #e8e8e8;border-radius:12px;overflow:hidden">
       <tr><td style="padding:20px 24px 0 24px">
-        <span style="font-size:11px;font-weight:600;color:#ff4500;text-transform:uppercase;letter-spacing:0.8px">Reply {i} of {count} &middot; r/{subreddit}</span>
-        <p style="margin:8px 0 6px 0;font-size:13px;color:#6b7280;font-weight:600">Thread: {title}</p>
-        <div style="margin:12px 0 16px 0;font-size:14px;line-height:1.6;color:#111827;background:#f9fafb;border-left:3px solid #ff4500;padding:14px 16px;border-radius:6px;white-space:pre-wrap">{answer}</div>
+        <span style="font-size:11px;font-weight:700;color:#ff4500;text-transform:uppercase;letter-spacing:0.8px">{label}</span>
+        {title_line}
+        <div style="margin:12px 0 16px 0;font-size:14px;line-height:1.65;color:#111827;background:#f9fafb;border-left:3px solid #ff4500;padding:14px 16px;border-radius:6px;white-space:pre-wrap">{answer}</div>
       </td></tr>
       <tr><td style="padding:0 24px 20px 24px;border-top:1px solid #f3f4f6">
         <table cellpadding="0" cellspacing="0" style="margin-top:16px"><tr>
-          <td style="background:#ff4500;border-radius:100px;padding:11px 24px">
-            <a href="{thread_url}" style="color:#ffffff;text-decoration:none;font-size:14px;font-weight:700">Open Reddit Thread &rarr;</a>
+          <td style="background:#ff4500;border-radius:100px;padding:11px 26px">
+            <a href="{btn_url}" style="color:#ffffff;text-decoration:none;font-size:14px;font-weight:700">{btn_label}</a>
           </td>
         </tr></table>
-        <p style="margin:14px 0 0 0;font-size:11px;color:#9ca3af">Triple-tap the reply box above to copy, then paste it as a comment on the thread.</p>
+        <p style="margin:12px 0 0 0;font-size:11px;color:#9ca3af">{instruction}</p>
       </td></tr>
     </table>
   </td></tr>"""
@@ -482,7 +500,7 @@ def send_reddit_email(items: list[dict]):
   <table width="100%" cellpadding="0" cellspacing="0">{cards}</table>
   <tr><td style="padding-top:28px;text-align:center;border-top:1px solid #e5e7eb">
     <p style="margin:0;font-size:12px;color:#9ca3af">SaaSpare &mdash; <a href="https://saaspare.org" style="color:#9ca3af">saaspare.org</a></p>
-    <p style="margin:4px 0 0 0;font-size:11px;color:#d1d5db">Sent 4&times; daily. Reply only in subreddits where you're an active member to avoid bans.</p>
+    <p style="margin:4px 0 0 0;font-size:11px;color:#d1d5db">Sent 4&times; daily. Only post in subreddits where you're an active member to avoid bans.</p>
   </td></tr>
 </table>
 </td></tr></table>
@@ -538,7 +556,7 @@ def run_reddit_answers():
               AND s.intent >= 70
               AND s.ts >= ?
             ORDER BY s.profit_score DESC
-            LIMIT 5
+            LIMIT 3
         """,
             (int(time.time()) - 3600 * 12,),
         ).fetchall()
@@ -592,18 +610,54 @@ def run_reddit_answers():
         except Exception as e:
             log.warning(f"Reddit post failed for r/{signal['subreddit']}: {e}")
 
-    # Email user the launchpad of staged replies (manual posting fallback)
-    if email_items:
-        send_reddit_email(email_items[:5])
+    # Generate new-post items alongside replies (autofill via Reddit submit URL)
+    post_items: list[dict] = []
+    post_pages = _select_social_pages(limit=3, fresh_window_seconds=7 * 86400)
+    for page in post_pages:
+        vertical = page.get("vertical", "saas")
+        subreddit_map = {
+            "crm": "CRM", "marketing": "marketing", "hr": "humanresources",
+            "finance": "financialindependence", "devtools": "devops",
+            "project_management": "projectmanagement", "analytics": "analytics",
+        }
+        sub = subreddit_map.get(vertical, "SaaS")
+        page_url = page.get("published_url") or domain
+        post_title, post_body = _generate_reddit_new_post(page["title"], vertical, page_url)
+        if post_title and post_body:
+            post_items.append({
+                "subreddit": sub,
+                "post_title": post_title,
+                "answer": post_body,
+            })
+
+    all_items = (email_items + post_items)[:3]
+
+    if all_items:
+        send_reddit_email(all_items)
 
     _write_social_run_report(
         {
             "reddit_candidates": len(signals),
             "reddit_posted": posted_count,
             "reddit_allowlist_size": len(allowed_subreddits),
-            "reddit_emailed": len(email_items[:5]),
+            "reddit_emailed": len(all_items),
         }
     )
+
+
+def _generate_reddit_new_post(page_title: str, vertical: str, url: str):
+    """Generate a genuine Reddit new-post (title + body) with a soft mention of SaaSpare."""
+    prompt = (
+        f"Write a Reddit post for the r/SaaS or r/{vertical} community.\n"
+        f"Topic: someone asking for advice or sharing a finding about '{page_title}'.\n"
+        f"Rules: genuine, helpful, conversational — NOT promotional. 1 sentence max mentioning "
+        f"you compared tools at {url}. Post title max 12 words. Body 3-5 sentences.\n"
+        f"Return JSON: {{\"title\": \"...\", \"body\": \"...\"}}"
+    )
+    result = complete_json(prompt)
+    if result and "title" in result and "body" in result:
+        return result["title"], result["body"]
+    return None, None
 
 
 def _generate_social_copy(title: str, vertical: str, url: str) -> dict:
