@@ -25,10 +25,15 @@
   nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:6px;padding:.9rem 2rem;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
   .logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
   .logo-bars{display:flex;flex-direction:column;gap:3.5px}
-  .logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px}
+  @keyframes barIdle{0%,100%{transform:scaleX(1);opacity:1}40%{transform:scaleX(.72);opacity:.7}70%{transform:scaleX(.88);opacity:.85}}
+  .logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px;transition:width .28s ease,opacity .28s ease;transform-origin:left}
   .logo-bars span:nth-child(1){width:16px}
-  .logo-bars span:nth-child(2){width:11px;opacity:.6}
+  .logo-bars span:nth-child(2){width:11px;opacity:.6;animation:barIdle 4s ease-in-out infinite}
   .logo-bars span:nth-child(3){width:16px;opacity:.3}
+  .logo:hover .logo-bars span{animation:none}
+  .logo:hover .logo-bars span:nth-child(1){width:11px;opacity:.5}
+  .logo:hover .logo-bars span:nth-child(2){width:16px;opacity:1}
+  .logo:hover .logo-bars span:nth-child(3){width:11px;opacity:.55}
   .logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff}
   .logo-text em{color:#e94560;font-style:normal}
   .nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s;text-decoration:none}
@@ -75,9 +80,10 @@
     <div class="logo-bars"><span></span><span></span><span></span></div>
     <div class="logo-text">Saa<em>Spare</em></div>
   </a>
-  <a href="https://saaspare.org/pages/" class="nav-link">Comparisons</a>
+  <a href="https://saaspare.org/pages/" class="nav-link" style="color:#fff">Comparisons</a>
   <a href="https://saaspare.org/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
   <a href="https://saaspare.org/about.html" class="nav-link">About</a>
+  <a href="https://saaspare.org/contact.html" class="nav-link">Contact</a>
   <a href="https://saaspare.org/pages/" class="nav-cta">Browse Tools &#8594;</a>
 </nav>
 <div class="hero">
