@@ -419,6 +419,91 @@ def send_tweet_email(tweets: list[dict]):
         log.warning(f"Tweet email failed: {e}")
 
 
+def send_reddit_email(items: list[dict]):
+    """Email a 'one-tap to reply' launchpad for staged Reddit answers."""
+    gmail_user = get("GMAIL_USER", "smithelly30121@gmail.com")
+    gmail_password = get("GMAIL_APP_PASSWORD")
+    if not gmail_password or not items:
+        return
+
+    stamp = time.strftime("%B %d, %Y · %H:%M UTC")
+    day = time.strftime("%A")
+    count = len(items)
+    cards = ""
+    for i, it in enumerate(items, 1):
+        thread_url = it["thread_url"]
+        # Reddit doesn't accept a pre-filled comment via URL, but we open the thread
+        # and put the answer in the clipboard via a copy button (mailto fallback for plain).
+        answer = it["answer"].replace("<", "&lt;").replace(">", "&gt;")
+        subreddit = it["subreddit"]
+        title = it["thread_title"][:90]
+        cards += f"""
+  <tr><td style="padding:0 0 12px 0">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;border:1px solid #e8e8e8;border-radius:12px;overflow:hidden">
+      <tr><td style="padding:20px 24px 0 24px">
+        <span style="font-size:11px;font-weight:600;color:#ff4500;text-transform:uppercase;letter-spacing:0.8px">Reply {i} of {count} &middot; r/{subreddit}</span>
+        <p style="margin:8px 0 6px 0;font-size:13px;color:#6b7280;font-weight:600">Thread: {title}</p>
+        <div style="margin:12px 0 16px 0;font-size:14px;line-height:1.6;color:#111827;background:#f9fafb;border-left:3px solid #ff4500;padding:14px 16px;border-radius:6px;white-space:pre-wrap">{answer}</div>
+      </td></tr>
+      <tr><td style="padding:0 24px 20px 24px;border-top:1px solid #f3f4f6">
+        <table cellpadding="0" cellspacing="0" style="margin-top:16px"><tr>
+          <td style="background:#ff4500;border-radius:100px;padding:11px 24px">
+            <a href="{thread_url}" style="color:#ffffff;text-decoration:none;font-size:14px;font-weight:700">Open Reddit Thread &rarr;</a>
+          </td>
+        </tr></table>
+        <p style="margin:14px 0 0 0;font-size:11px;color:#9ca3af">Triple-tap the reply box above to copy, then paste it as a comment on the thread.</p>
+      </td></tr>
+    </table>
+  </td></tr>"""
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SaaSpare Reddit Queue</title></head>
+<body style="margin:0;padding:0;background:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f9fafb;padding:40px 16px"><tr><td align="center">
+<table width="100%" style="max-width:600px" cellpadding="0" cellspacing="0">
+  <tr><td style="padding-bottom:24px">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background:#000000;border-radius:14px;padding:28px 32px"><tr>
+      <td>
+        <span style="font-size:13px;font-weight:700;color:#9ca3af;letter-spacing:1px;text-transform:uppercase">SaaSpare</span>
+        <h1 style="margin:6px 0 4px 0;font-size:22px;font-weight:800;color:#ffffff;letter-spacing:-0.5px">Your {day} Reddit Queue</h1>
+        <p style="margin:0;font-size:13px;color:#6b7280">{stamp}</p>
+      </td>
+      <td align="right" style="vertical-align:top">
+        <span style="background:#ff4500;color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:100px">{count} ready</span>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td style="padding:0 4px 20px 4px">
+    <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.6">
+      Each card has a high-intent Reddit thread + a genuinely helpful reply. <strong style="color:#111827">Copy the grey reply box</strong>, tap <strong style="color:#111827">Open Reddit Thread</strong>, then paste as a comment.
+    </p>
+  </td></tr>
+  <table width="100%" cellpadding="0" cellspacing="0">{cards}</table>
+  <tr><td style="padding-top:28px;text-align:center;border-top:1px solid #e5e7eb">
+    <p style="margin:0;font-size:12px;color:#9ca3af">SaaSpare &mdash; <a href="https://saaspare.org" style="color:#9ca3af">saaspare.org</a></p>
+    <p style="margin:4px 0 0 0;font-size:11px;color:#d1d5db">Sent 4&times; daily. Reply only in subreddits where you're an active member to avoid bans.</p>
+  </td></tr>
+</table>
+</td></tr></table>
+</body>
+</html>"""
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = f"Your SaaSpare Reddit replies are ready — {time.strftime('%a %d %b')}"
+    msg["From"] = f"SaaSpare Bot <{gmail_user}>"
+    msg["To"] = "smithelly30121@gmail.com"
+    msg.attach(MIMEText(html, "html"))
+
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+            smtp.login(gmail_user, gmail_password)
+            smtp.sendmail(gmail_user, "smithelly30121@gmail.com", msg.as_string())
+        log.info(f"Reddit launchpad email sent ({count} items)")
+    except Exception as e:
+        log.warning(f"Reddit email failed: {e}")
+
+
 def run_reddit_answers():
     """Post genuine, value-adding answers to high-intent Reddit threads via PRAW."""
     client_id = get("REDDIT_CLIENT_ID")
@@ -462,6 +547,7 @@ def run_reddit_answers():
     allowed_subreddits = _allowed_subreddits()
 
     posted_count = 0
+    email_items: list[dict] = []
     for signal in signals:
         if posted_count >= 2:
             break
@@ -478,6 +564,13 @@ def run_reddit_answers():
         )
         if not answer:
             continue
+
+        email_items.append({
+            "subreddit": signal["subreddit"] or "saas",
+            "thread_url": signal["url"],
+            "thread_title": signal["title"] or "Reddit thread",
+            "answer": answer,
+        })
 
         subreddit = (signal["subreddit"] or "").lower()
         autopost_allowed = bool(allowed_subreddits) and subreddit in allowed_subreddits
@@ -499,11 +592,16 @@ def run_reddit_answers():
         except Exception as e:
             log.warning(f"Reddit post failed for r/{signal['subreddit']}: {e}")
 
+    # Email user the launchpad of staged replies (manual posting fallback)
+    if email_items:
+        send_reddit_email(email_items[:5])
+
     _write_social_run_report(
         {
             "reddit_candidates": len(signals),
             "reddit_posted": posted_count,
             "reddit_allowlist_size": len(allowed_subreddits),
+            "reddit_emailed": len(email_items[:5]),
         }
     )
 
