@@ -79,7 +79,7 @@ a{text-decoration:none;color:inherit}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
 nav.scrolled{background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
-.logo-mark{height:22px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .35s cubic-bezier(.34,1.4,.64,1)}@keyframes markDrift{0%,100%{transform:translate(0,0)}40%{transform:translate(-.8px,-.8px)}70%{transform:translate(.35px,.35px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}40%{transform:translate(.8px,.8px)}70%{transform:translate(-.35px,-.35px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-2.5px,-2.5px)}.logo:hover .mark-bot{animation:none;transform:translate(2.5px,2.5px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 12px rgba(233,69,96,.6))}
+.logo-mark{height:24px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .4s cubic-bezier(.34,1.4,.64,1);transform-box:fill-box;transform-origin:center}@keyframes markDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(-1.2px,-1.2px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}50%{transform:translate(1.2px,1.2px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-3px,-3px)}.logo:hover .mark-bot{animation:none;transform:translate(3px,3px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 14px rgba(233,69,96,.65))}
 .logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff}
 .logo-text em{color:#e94560;font-style:normal}
 .nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s}
@@ -190,7 +190,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
   .email-box h2{font-size:1.45rem}
 
 @media(max-width:480px){.cat-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}}
-.logo-mark{height:22px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .35s cubic-bezier(.34,1.4,.64,1)}@keyframes markDrift{0%,100%{transform:translate(0,0)}40%{transform:translate(-.8px,-.8px)}70%{transform:translate(.35px,.35px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}40%{transform:translate(.8px,.8px)}70%{transform:translate(-.35px,-.35px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-2.5px,-2.5px)}.logo:hover .mark-bot{animation:none;transform:translate(2.5px,2.5px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 12px rgba(233,69,96,.6))}
+.logo-mark{height:24px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .4s cubic-bezier(.34,1.4,.64,1);transform-box:fill-box;transform-origin:center}@keyframes markDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(-1.2px,-1.2px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}50%{transform:translate(1.2px,1.2px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-3px,-3px)}.logo:hover .mark-bot{animation:none;transform:translate(3px,3px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 14px rgba(233,69,96,.65))}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
@@ -200,7 +200,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
 
 <nav id="nav">
   <a href="/" class="logo">
-    <svg class="logo-mark" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" d="M4,0 H22 Q26,0 26,4 V12 L12,21 H4 Q0,21 0,17 V4 Q0,0 4,0 Z" fill="#fff"/><path class="mark-bot" d="M14,23 H30 Q34,23 34,27 V40 Q34,44 30,44 H12 Q8,44 8,40 V31 L14,23 Z" fill="#e94560"/></svg>
+    <svg class="logo-mark" viewBox="0 0 40 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" fill="#fff" d="M4,0 H32 Q38,0 38,6 V18 L22,26 H4 Q0,26 0,20 V6 Q0,0 4,0 Z"/><path class="mark-bot" fill="#e94560" d="M18,18 L36,18 Q40,18 40,24 V38 Q40,44 36,44 H8 Q2,44 2,38 V26 Z"/></svg>
     <span class="logo-text">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="nav-link">Comparisons</a>
@@ -370,7 +370,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-logo">
-        <svg class="logo-mark" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" d="M4,0 H22 Q26,0 26,4 V12 L12,21 H4 Q0,21 0,17 V4 Q0,0 4,0 Z" fill="#fff"/><path class="mark-bot" d="M14,23 H30 Q34,23 34,27 V40 Q34,44 30,44 H12 Q8,44 8,40 V31 L14,23 Z" fill="#e94560"/></svg>
+        <svg class="logo-mark" viewBox="0 0 40 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" fill="#fff" d="M4,0 H32 Q38,0 38,6 V18 L22,26 H4 Q0,26 0,20 V6 Q0,0 4,0 Z"/><path class="mark-bot" fill="#e94560" d="M18,18 L36,18 Q40,18 40,24 V38 Q40,44 36,44 H8 Q2,44 2,38 V26 Z"/></svg>
         <span style="font-weight:800;font-size:.95rem">Saa<em style="color:#e94560;font-style:normal">Spare</em></span>
       </div>
       <p>Unbiased B2B SaaS comparisons for founders, CTOs and operators making smart software decisions.</p>
