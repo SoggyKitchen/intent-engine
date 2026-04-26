@@ -27,11 +27,16 @@ a{text-decoration:none;color:inherit}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
 nav.scrolled{background:rgba(10,10,20,.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.07)}
 .logo{display:flex;align-items:center;gap:8px;margin-right:auto}
+@keyframes barIdle{0%,100%{transform:scaleX(1);opacity:1}40%{transform:scaleX(.72);opacity:.7}70%{transform:scaleX(.88);opacity:.85}}
 .logo-bars{display:flex;flex-direction:column;gap:3.5px}
-.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px}
+.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px;transition:width .28s ease,opacity .28s ease,transform .28s ease;transform-origin:left}
 .logo-bars span:nth-child(1){width:16px}
-.logo-bars span:nth-child(2){width:11px;opacity:.6}
+.logo-bars span:nth-child(2){width:11px;opacity:.6;animation:barIdle 4s ease-in-out infinite}
 .logo-bars span:nth-child(3){width:16px;opacity:.3}
+.logo:hover .logo-bars span{animation:none}
+.logo:hover .logo-bars span:nth-child(1){width:11px;opacity:.5}
+.logo:hover .logo-bars span:nth-child(2){width:16px;opacity:1}
+.logo:hover .logo-bars span:nth-child(3){width:11px;opacity:.55}
 .logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
 .logo-text em{color:#e94560;font-style:normal}
 .nav-link{color:rgba(255,255,255,.5);font-size:.83rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s}

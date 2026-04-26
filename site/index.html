@@ -40,13 +40,17 @@ a{text-decoration:none;color:inherit}
 @keyframes borderPulse{0%,100%{border-color:rgba(233,69,96,.2)}50%{border-color:rgba(233,69,96,.55)}}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
 nav.scrolled{background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
+@keyframes barIdle{0%,100%{transform:scaleX(1);opacity:1}40%{transform:scaleX(.72);opacity:.7}70%{transform:scaleX(.88);opacity:.85}}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
 .logo-bars{display:flex;flex-direction:column;gap:3.5px}
-.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px;transition:width .3s}
+.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px;transition:width .28s ease,opacity .28s ease,transform .28s ease;transform-origin:left}
 .logo-bars span:nth-child(1){width:16px}
-.logo-bars span:nth-child(2){width:11px;opacity:.6}
+.logo-bars span:nth-child(2){width:11px;opacity:.6;animation:barIdle 4s ease-in-out infinite}
 .logo-bars span:nth-child(3){width:16px;opacity:.3}
-.logo:hover .logo-bars span:nth-child(2){width:16px;opacity:.8}
+.logo:hover .logo-bars span{animation:none}
+.logo:hover .logo-bars span:nth-child(1){width:11px;opacity:.5}
+.logo:hover .logo-bars span:nth-child(2){width:16px;opacity:1}
+.logo:hover .logo-bars span:nth-child(3){width:11px;opacity:.55}
 .logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff}
 .logo-text em{color:#e94560;font-style:normal}
 .nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s}
@@ -61,7 +65,7 @@ nav.scrolled{background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-back
 .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.9);padding:6px 18px;border-radius:100px;font-size:.76rem;font-weight:700;letter-spacing:.4px;margin-bottom:2.2rem;animation:up .6s ease both}
 .badge-dot{width:6px;height:6px;border-radius:50%;background:#e94560;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
 h1.hero-title{font-size:clamp(2.2rem,6.5vw,3.9rem);font-weight:900;color:#fff;line-height:1.2;letter-spacing:-1.2px;margin-bottom:1.5rem;animation:up .7s .1s ease both}
-.grad-text{background:linear-gradient(135deg,#ff6b85 0%,#e94560 50%,#e94060 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3.5s linear infinite}
+.grad-text{background:linear-gradient(135deg,#ff6b85 0%,#e94560 50%,#e94060 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3.5s linear infinite;padding-bottom:.22em;margin-bottom:-.22em}
 .typewriter-wrap{display:inline-block;overflow:visible}
 #typewriter::after{content:'|';color:#e94560;animation:blink 1s ease infinite;margin-left:2px;-webkit-text-fill-color:#e94560}
 .hero-sub{color:rgba(255,255,255,.4);font-size:1.06rem;line-height:1.82;max-width:470px;margin:0 auto 3rem;animation:up .7s .2s ease both}
@@ -167,7 +171,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
 <nav id="nav">
   <a href="/" class="logo">
     <div class="logo-bars"><span></span><span></span><span></span></div>
-    <span class="logo-text">Saas<em>Spare</em></span>
+    <span class="logo-text">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="nav-link">Comparisons</a>
   <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
@@ -337,7 +341,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
     <div class="footer-brand">
       <div class="footer-logo">
         <div class="logo-bars"><span></span><span></span><span></span></div>
-        <span style="font-weight:800;font-size:.95rem">Saas<em style="color:#e94560;font-style:normal">Spare</em></span>
+        <span style="font-weight:800;font-size:.95rem">Saa<em style="color:#e94560;font-style:normal">Spare</em></span>
       </div>
       <p>Unbiased B2B SaaS comparisons for founders, CTOs and operators making smart software decisions.</p>
     </div>
