@@ -78,17 +78,8 @@ a{text-decoration:none;color:inherit}
 @keyframes borderPulse{0%,100%{border-color:rgba(233,69,96,.2)}50%{border-color:rgba(233,69,96,.55)}}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
 nav.scrolled{background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
-@keyframes barIdle{0%,100%{transform:scaleX(1);opacity:1}40%{transform:scaleX(.72);opacity:.7}70%{transform:scaleX(.88);opacity:.85}}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
-.logo-bars{display:flex;flex-direction:column;gap:3.5px}
-.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px;transition:width .28s ease,opacity .28s ease,transform .28s ease;transform-origin:left}
-.logo-bars span:nth-child(1){width:16px}
-.logo-bars span:nth-child(2){width:11px;opacity:.6;animation:barIdle 4s ease-in-out infinite}
-.logo-bars span:nth-child(3){width:16px;opacity:.3}
-.logo:hover .logo-bars span{animation:none}
-.logo:hover .logo-bars span:nth-child(1){width:11px;opacity:.5}
-.logo:hover .logo-bars span:nth-child(2){width:16px;opacity:1}
-.logo:hover .logo-bars span:nth-child(3){width:11px;opacity:.55}
+.logo-mark{height:22px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .35s cubic-bezier(.34,1.4,.64,1)}@keyframes markDrift{0%,100%{transform:translate(0,0)}40%{transform:translate(-.8px,-.8px)}70%{transform:translate(.35px,.35px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}40%{transform:translate(.8px,.8px)}70%{transform:translate(-.35px,-.35px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-2.5px,-2.5px)}.logo:hover .mark-bot{animation:none;transform:translate(2.5px,2.5px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 12px rgba(233,69,96,.6))}
 .logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff}
 .logo-text em{color:#e94560;font-style:normal}
 .nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s}
@@ -197,8 +188,9 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
   .footer-inner{grid-template-columns:1fr 1fr;gap:2rem}
   .email-box{padding:2rem 1.5rem}
   .email-box h2{font-size:1.45rem}
-}
+
 @media(max-width:480px){.cat-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}}
+.logo-mark{height:22px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .35s cubic-bezier(.34,1.4,.64,1)}@keyframes markDrift{0%,100%{transform:translate(0,0)}40%{transform:translate(-.8px,-.8px)}70%{transform:translate(.35px,.35px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}40%{transform:translate(.8px,.8px)}70%{transform:translate(-.35px,-.35px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-2.5px,-2.5px)}.logo:hover .mark-bot{animation:none;transform:translate(2.5px,2.5px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 12px rgba(233,69,96,.6))}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
@@ -208,7 +200,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
 
 <nav id="nav">
   <a href="/" class="logo">
-    <div class="logo-bars"><span></span><span></span><span></span></div>
+    <svg class="logo-mark" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" d="M4,0 H22 Q26,0 26,4 V12 L12,21 H4 Q0,21 0,17 V4 Q0,0 4,0 Z" fill="#fff"/><path class="mark-bot" d="M14,23 H30 Q34,23 34,27 V40 Q34,44 30,44 H12 Q8,44 8,40 V31 L14,23 Z" fill="#e94560"/></svg>
     <span class="logo-text">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="nav-link">Comparisons</a>
@@ -378,7 +370,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-logo">
-        <div class="logo-bars"><span></span><span></span><span></span></div>
+        <svg class="logo-mark" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" d="M4,0 H22 Q26,0 26,4 V12 L12,21 H4 Q0,21 0,17 V4 Q0,0 4,0 Z" fill="#fff"/><path class="mark-bot" d="M14,23 H30 Q34,23 34,27 V40 Q34,44 30,44 H12 Q8,44 8,40 V31 L14,23 Z" fill="#e94560"/></svg>
         <span style="font-weight:800;font-size:.95rem">Saa<em style="color:#e94560;font-style:normal">Spare</em></span>
       </div>
       <p>Unbiased B2B SaaS comparisons for founders, CTOs and operators making smart software decisions.</p>
@@ -429,14 +421,14 @@ function type(){
   if(!del&&ci===w.length){del=true;setTimeout(type,1800);return}
   if(del&&ci===0){del=false;wi=(wi+1)%words.length}
   setTimeout(type,del?52:82);
-}
+
 setTimeout(type,900);
 
 /* COUNTERS */
 function animCount(el){
   const t=+el.dataset.count;let c=0;const s=t/55;
   const iv=setInterval(()=>{c=Math.min(c+s,t);el.textContent=Math.floor(c).toLocaleString()+(t>=100?'+':'');if(c>=t)clearInterval(iv)},18);
-}
+
 const sObs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('[data-count]').forEach(animCount);sObs.disconnect()}})},{threshold:.5});
 const sEl=document.querySelector('.stats');if(sEl)sObs.observe(sEl);
 

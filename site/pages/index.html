@@ -7,6 +7,12 @@
 <meta name="description" content="Browse 690 B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://saaspare.org/pages/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+<meta name="theme-color" content="#080810">
 <meta property="og:title" content="All SaaS Comparisons & Guides | SaaSpare">
 <meta property="og:description" content="Browse 690 B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
 <meta property="og:type" content="website">
@@ -16,10 +22,21 @@
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(ellipse 120% 80% at 50% -10%,#1a0d12 0%,#0d0008 45%,#080810 80%);color:var(--text);line-height:1.6;min-height:100vh}
   a{color:inherit;text-decoration:none}
-  nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
-  nav a{color:var(--muted);font-size:.9rem}
-  nav a:first-child{color:#fff;font-weight:800;font-size:1.05rem;margin-right:auto}
-  nav a:hover{color:#fff}
+  nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:6px;padding:.9rem 2rem;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+  .logo-mark{height:22px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .35s cubic-bezier(.34,1.4,.64,1)}@keyframes markDrift{0%,100%{transform:translate(0,0)}40%{transform:translate(-.8px,-.8px)}70%{transform:translate(.35px,.35px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}40%{transform:translate(.8px,.8px)}70%{transform:translate(-.35px,-.35px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-2.5px,-2.5px)}.logo:hover .mark-bot{animation:none;transform:translate(2.5px,2.5px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 12px rgba(233,69,96,.6))}
+.logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
+  
+  }
+  
+  
+  
+  
+          .logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff}
+  .logo-text em{color:#e94560;font-style:normal}
+  .nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s;text-decoration:none}
+  .nav-link:hover{color:#fff}
+  .nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;text-decoration:none}
+  .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
   .hero{max-width:1100px;margin:0 auto;padding:4rem 1.5rem 2rem;text-align:center}
   .hero h1{font-size:clamp(2rem,5vw,3.2rem);color:#fff;letter-spacing:-.04em;margin-bottom:.75rem}
   .hero p{color:var(--muted);max-width:760px;margin:0 auto 1.5rem}
@@ -56,9 +73,15 @@
 </head>
 <body>
 <nav>
-  <a href="https://saaspare.org">SaaSpare</a>
-  <a href="https://saaspare.org/pages/">All Comparisons</a>
-  <a href="https://saaspare.org/about.html">About</a>
+  <a href="https://saaspare.org" class="logo">
+    <svg class="logo-mark" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" d="M4,0 H22 Q26,0 26,4 V12 L12,21 H4 Q0,21 0,17 V4 Q0,0 4,0 Z" fill="#fff"/><path class="mark-bot" d="M14,23 H30 Q34,23 34,27 V40 Q34,44 30,44 H12 Q8,44 8,40 V31 L14,23 Z" fill="#e94560"/></svg>
+    <span class="logo-text">Saa<em>Spare</em></span>
+  </a>
+  <a href="https://saaspare.org/pages/" class="nav-link" style="color:#fff">Comparisons</a>
+  <a href="https://saaspare.org/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
+  <a href="https://saaspare.org/about.html" class="nav-link">About</a>
+  <a href="https://saaspare.org/contact.html" class="nav-link">Contact</a>
+  <a href="https://saaspare.org/pages/" class="nav-cta">Browse Tools &#8594;</a>
 </nav>
 <div class="hero">
   <h1>All SaaS Comparisons & Guides</h1>

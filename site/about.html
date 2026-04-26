@@ -26,17 +26,9 @@ a{text-decoration:none;color:inherit}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
 nav.scrolled{background:rgba(10,10,20,.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.07)}
+.logo-mark{height:22px;width:auto;flex-shrink:0;overflow:visible}.mark-top,.mark-bot{transition:transform .35s cubic-bezier(.34,1.4,.64,1)}@keyframes markDrift{0%,100%{transform:translate(0,0)}40%{transform:translate(-.8px,-.8px)}70%{transform:translate(.35px,.35px)}}@keyframes markDriftBot{0%,100%{transform:translate(0,0)}40%{transform:translate(.8px,.8px)}70%{transform:translate(-.35px,-.35px)}}.mark-top{animation:markDrift 5s ease-in-out infinite}.mark-bot{animation:markDriftBot 5s ease-in-out infinite}.logo:hover .mark-top{animation:none;transform:translate(-2.5px,-2.5px)}.logo:hover .mark-bot{animation:none;transform:translate(2.5px,2.5px)}.logo:hover .logo-mark{filter:drop-shadow(0 0 12px rgba(233,69,96,.6))}
 .logo{display:flex;align-items:center;gap:8px;margin-right:auto}
-@keyframes barIdle{0%,100%{transform:scaleX(1);opacity:1}40%{transform:scaleX(.72);opacity:.7}70%{transform:scaleX(.88);opacity:.85}}
-.logo-bars{display:flex;flex-direction:column;gap:3.5px}
-.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px;transition:width .28s ease,opacity .28s ease,transform .28s ease;transform-origin:left}
-.logo-bars span:nth-child(1){width:16px}
-.logo-bars span:nth-child(2){width:11px;opacity:.6;animation:barIdle 4s ease-in-out infinite}
-.logo-bars span:nth-child(3){width:16px;opacity:.3}
-.logo:hover .logo-bars span{animation:none}
-.logo:hover .logo-bars span:nth-child(1){width:11px;opacity:.5}
-.logo:hover .logo-bars span:nth-child(2){width:16px;opacity:1}
-.logo:hover .logo-bars span:nth-child(3){width:11px;opacity:.55}
+
 .logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
 .logo-text em{color:#e94560;font-style:normal}
 .nav-link{color:rgba(255,255,255,.5);font-size:.83rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s}
@@ -82,15 +74,15 @@ footer{border-top:1px solid rgba(255,255,255,.07)}
   .values-grid{grid-template-columns:1fr}
   .container{padding:3rem 1.25rem}
   .footer-inner{flex-direction:column;align-items:flex-start}
-}
+
 </style>
 </head>
 <body>
 
 <nav id="nav">
   <a href="/" class="logo">
-    <div class="logo-bars"><span></span><span></span><span></span></div>
-    <div class="logo-text">Saa<em>Spare</em></div>
+    <svg class="logo-mark" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" d="M4,0 H22 Q26,0 26,4 V12 L12,21 H4 Q0,21 0,17 V4 Q0,0 4,0 Z" fill="#fff"/><path class="mark-bot" d="M14,23 H30 Q34,23 34,27 V40 Q34,44 30,44 H12 Q8,44 8,40 V31 L14,23 Z" fill="#e94560"/></svg>
+    <span class="logo-text">Saa<em>Spare</em></span>
   </a>
     <a href="/pages/" class="nav-link">Comparisons</a>
   <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
@@ -184,8 +176,8 @@ footer{border-top:1px solid rgba(255,255,255,.07)}
 <footer>
   <div class="footer-inner">
     <a href="/" class="logo">
-      <div class="logo-bars"><span></span><span></span><span></span></div>
-      <div class="logo-text">Saa<em>Spare</em></div>
+      <svg class="logo-mark" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="mark-top" d="M4,0 H22 Q26,0 26,4 V12 L12,21 H4 Q0,21 0,17 V4 Q0,0 4,0 Z" fill="#fff"/><path class="mark-bot" d="M14,23 H30 Q34,23 34,27 V40 Q34,44 30,44 H12 Q8,44 8,40 V31 L14,23 Z" fill="#e94560"/></svg>
+      <span class="logo-text">Saa<em>Spare</em></span>
     </a>
     <div class="footer-links">
       <a href="/pages/">All Comparisons</a>
