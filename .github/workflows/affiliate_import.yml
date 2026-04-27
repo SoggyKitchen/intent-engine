@@ -1,0 +1,85 @@
+name: Affiliate Import
+
+on:
+  push:
+    paths:
+      - "data/affiliate-imports/*.csv"
+      - "data/affiliate-imports/*.CSV"
+  workflow_dispatch:
+
+concurrency:
+  group: intent-engine-stateful
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  import-and-inject:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Init database
+        run: uv run engine init
+        env:
+          DB_PATH: data/intent.db
+
+      - name: Process affiliate CSV drops
+        run: uv run python scripts/process_affiliate_drop.py
+        env:
+          DB_PATH: data/intent.db
+
+      - name: Inject affiliate links into pages
+        run: uv run engine publish
+        env:
+          DB_PATH: data/intent.db
+          CEREBRAS_API_KEYS: ${{ secrets.CEREBRAS_API_KEYS }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          CEREBRAS_API_KEY_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
+          CEREBRAS_API_KEY_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
+          CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
+          CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
+          CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          CF_PAGES_DEPLOY_HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+          CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}
+          AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          MONETIZATION_MODE: ${{ secrets.MONETIZATION_MODE }}
+          DRY_RUN: "false"
+          LOG_LEVEL: INFO
+
+      - name: Rebuild index pages
+        run: |
+          uv run python scripts/build_index_page.py
+          uv run engine programmatic --max-pages 0
+        env:
+          DB_PATH: data/intent.db
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          LOG_LEVEL: INFO
+
+      - name: Commit results
+        run: |
+          git config user.email "bot@intentengine.local"
+          git config user.name "IntentBot"
+          git pull --rebase --autostash origin main
+          git add data/affiliate-imports/processed/ \
+                  data/affiliate_links.json \
+                  data/affiliate_overrides.json \
+                  site/pages/ site/index.html site/pages/index.html || true
+          git diff --staged --quiet || git commit -m "chore: affiliate import $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+          git push
