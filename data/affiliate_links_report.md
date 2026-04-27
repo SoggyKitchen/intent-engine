@@ -1,31 +1,13 @@
 # Affiliate Import Report
 
-- **Abelssoft Int**
-  - Default: https://www.jdoqocy.com/click-101733230-15639151
 - **AOMEI**
   - Default: https://www.kqzyfj.com/click-101733230-17191598
-  - Coupon: https://www.jdoqocy.com/click-101733230-17152594 (AMAD30)
+  - Coupon: https://www.aomeitech.com/landing/24hour-flash-sale.html/ (AMAD30)
 - **Contabo**
   - Default: https://www.tkqlhce.com/click-101733230-14573803
-- **Gandi**
-  - Default: https://www.dpbolvw.net/click-101733230-17236097
 - **GetResponse**
-  - Default: https://www.dpbolvw.net/click-101733230-14331756
-- **Hostpapa**
-  - Default: https://www.kqzyfj.com/click-101733230-10513988
-- **Kings Camo**
-  - Default: https://www.jdoqocy.com/click-101733230-17068371
-- **NordPass**
-  - Default: https://www.jdoqocy.com/click-101733230-17262576
-- **NordVPN**
-  - Default: https://www.anrdoezrs.net/click-101733230-15646770
-- **O&O Software**
-  - Default: https://www.dpbolvw.net/click-101733230-12056856
-- **Restoro**
-  - Default: https://www.dpbolvw.net/click-101733230-14052228
+  - Default: https://www.getresponse.com/?a=-CJ&affpath=directbuy
 - **Sucuri**
-  - Default: https://www.tkqlhce.com/click-101733230-13942202
-- **Surfshark**
-  - Default: https://www.anrdoezrs.net/click-101733230-15449491
+  - Default: https://www.jdoqocy.com/click-101733230-13942202
 - **Turbify**
-  - Default: https://www.kqzyfj.com/click-101733230-17008695
+  - Default: https://www.tkqlhce.com/click-101733230-17008695

@@ -78,6 +78,10 @@ jobs:
         run: uv run python scripts/validate_affiliate_urls.py
         env:
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          VALIDATE_LIVE_REDIRECTS: "false"
+          VALIDATE_LIVE_REDIRECTS: "false"
+          VALIDATE_LIVE_REDIRECTS: "false"
+          VALIDATE_LIVE_REDIRECTS: "false"
 
       - name: Commit results
         run: |

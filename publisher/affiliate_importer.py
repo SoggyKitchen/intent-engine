@@ -2,6 +2,7 @@ import csv
 import json
 import re
 import time
+from functools import lru_cache
 from pathlib import Path
 from typing import Iterable
 
@@ -82,21 +83,107 @@ _RELEVANT_KEYWORDS = (
 _IRRELEVANT_KEYWORDS = (
     "ancestry",
     "cheating",
+    "clean up your pc",
+    "computer protection",
+    "computer repair",
     "criminal record",
+    "destroy spyware",
     "gift",
     "military ancestors",
+    "pc repair",
     "people search",
     "plasma tv",
     "public records",
+    "repair pc",
+    "repair solution",
     "reverse phone",
+    "restoro",
     "sweepstakes",
 )
+
+_COMPUTER_SW_REQUIRED_HINTS = (
+    "backup",
+    "business email",
+    "domain",
+    "email",
+    "hosting",
+    "malwarebytes",
+    "migration",
+    "password",
+    "pc transfer",
+    "remote access",
+    "remote desktop",
+    "remote support",
+    "security",
+    "server",
+    "ssl",
+    "transfer",
+    "vpn",
+    "website security",
+    "zero trust",
+)
+
+_US_FRIENDLY_TERMS = (
+    "english",
+    "global",
+    "homepage",
+    "united states",
+    "us homepage",
+    "us landing",
+)
+
+_NON_US_LOCALE_TERMS = (
+    "canada",
+    "germany",
+    "italy",
+    "korea",
+    "mexico",
+    "spain",
+    "pt-br",
+    "zh-hk",
+    " de ",
+    " fr ",
+    " es ",
+    " kr ",
+    " mx ",
+    " nl ",
+    " uk ",
+)
+
+_IRRELEVANT_ADVERTISER_SLUGS = {
+    "kings-camo",
+}
+
+_HOMEPAGE_FALLBACKS = {
+    "aomei": "https://www.aomeitech.com/landing/24hour-flash-sale.html/",
+    "contabo": "https://contabo.com/en/",
+    "getresponse": "https://www.getresponse.com/?a=-CJ&affpath=directbuy",
+    "gandi": "https://www.gandi.net/en",
+    "hostpapa": "https://www.hostpapa.com/",
+    "oo-software": "https://www.oo-software.com/en/products",
+    "restoro": "https://www.restoro.com/",
+    "sucuri": "https://sucuri.net/",
+    "turbify": "https://www.turbify.com/email",
+}
+
+_FORCE_HOMEPAGE_DEFAULTS = {
+    "getresponse",
+    "restoro",
+}
+
+_FORCE_HOMEPAGE_COUPON_DOMAINS = {
+    "aomei": "aomeitech.com",
+}
 
 _COMPANY_SUFFIX_RE = re.compile(r"\b(?:co|com|corp|inc|limited|llc|ltd|pty)\b\.?", re.IGNORECASE)
 _TRACKING_DOMAIN_RE = re.compile(
     r"(jdoqocy|anrdoezrs|dpbolvw|kqzyfj|tkqlhce|ftjcfx|awltovhc|lduhtrp|tqlkg)\.",
     re.IGNORECASE,
 )
+_SAFE_IMPORTED_ALIAS_SLUGS = {
+    "aomei-anyviewer": {"aomei", "pc-transfer", "todo-pctrans", "windows-migration"},
+    "shopify": {"shopify-plus", "shopify-store", "shopify-ecommerce"},
+}
 
 
 def _clean(value: str) -> str:
@@ -131,6 +218,9 @@ def _parse_date(value: str) -> int:
 
 
 def _is_relevant_offer(row: dict) -> bool:
+    advertiser_slug = slugify(_clean_advertiser_name(row.get("ADVERTISER", "")))
+    if advertiser_slug in _IRRELEVANT_ADVERTISER_SLUGS:
+        return False
     category = _clean(row.get("CATEGORY", "")).lower()
     text = " ".join(
         [
@@ -143,6 +233,8 @@ def _is_relevant_offer(row: dict) -> bool:
     ).lower()
     if any(keyword in text for keyword in _IRRELEVANT_KEYWORDS):
         return False
+    if category in {"computer sw", "computer software"}:
+        return any(keyword in text for keyword in _COMPUTER_SW_REQUIRED_HINTS)
     if category in _RELEVANT_CATEGORIES:
         return True
     return any(keyword in text for keyword in _RELEVANT_KEYWORDS)
@@ -223,34 +315,66 @@ def _candidate_aliases(row: dict) -> list[str]:
     return deduped[:6]
 
 
+def _safe_imported_aliases(advertiser: str, primary_name: str, aliases: list[str]) -> list[str]:
+    advertiser_slug = slugify(advertiser)
+    primary_slug = slugify(primary_name)
+    safe_allowlist = _SAFE_IMPORTED_ALIAS_SLUGS.get(advertiser_slug, set()) | _SAFE_IMPORTED_ALIAS_SLUGS.get(primary_slug, set())
+    brand_tokens = {
+        token
+        for slug in (advertiser_slug, primary_slug)
+        for token in slug.split("-")
+        if token and token not in _GENERIC_ALIAS_WORDS
+    }
+
+    filtered: list[str] = []
+    seen: set[str] = set()
+    for alias in aliases:
+        alias_slug = slugify(alias)
+        if not alias_slug or alias_slug in seen:
+            continue
+        alias_tokens = {token for token in alias_slug.split("-") if token}
+        if alias_slug in safe_allowlist or alias_tokens & brand_tokens:
+            filtered.append(alias)
+            seen.add(alias_slug)
+    return filtered
+
+
+@lru_cache(maxsize=1)
+def _known_program_alias_slugs() -> set[str]:
+    slugs: set[str] = set()
+    for programs in PROGRAMS.values():
+        for program in programs:
+            for name in [program.get("name", ""), *program.get("aliases", [])]:
+                slug = slugify(name or "")
+                if slug:
+                    slugs.add(slug)
+    return slugs
+
+
+def _homepage_fallback(advertiser: str) -> str:
+    return _HOMEPAGE_FALLBACKS.get(slugify(advertiser), "")
+
+
 def _choose_primary_name(advertiser: str, aliases: list[str]) -> str:
     advertiser = _clean_advertiser_name(advertiser)
     advertiser_slug = slugify(advertiser)
-    preferred_alias = ""
-    preferred_score = -1
 
     for alias in aliases:
         alias = _clean(alias)
         alias_slug = slugify(alias)
         if not alias or alias_slug == advertiser_slug:
             continue
-        score = 0
-        if len(alias.split()) == 1:
-            score += 3
-        if not any(char.isdigit() for char in alias):
-            score += 2
-        if alias != alias.lower():
-            score += 2
-        else:
-            score -= 4
-        if not re.search(r"\b(?:off|pricing|promo|sale|coupon|deal|black|friday)\b", alias, re.IGNORECASE):
-            score += 2
-        if score > preferred_score:
-            preferred_alias = alias
-            preferred_score = score
-
-    if preferred_alias and preferred_score >= 6:
-        return preferred_alias
+        if alias_slug in _known_program_alias_slugs():
+            return alias
+        if advertiser_slug and advertiser_slug in alias_slug and len(alias.split()) <= 4:
+            if not re.search(r"\b(?:off|pricing|promo|sale|coupon|deal|black|friday)\b", alias, re.IGNORECASE):
+                return alias
+        if (
+            len(alias.split()) <= 2
+            and alias != alias.lower()
+            and not re.search(r"\b(?:off|pricing|promo|sale|coupon|deal|black|friday)\b", alias, re.IGNORECASE)
+        ):
+            return alias
     return advertiser or (aliases[0] if aliases else "")
 
 
@@ -284,20 +408,43 @@ def _score_row(row: dict) -> float:
     link_type = _clean(row.get("LINK TYPE", "")).lower()
     promotion_type = _clean(row.get("PROMOTION TYPE", "")).lower()
     status = _clean(row.get("RELATIONSHIP STATUS", "")).lower()
+    language = _clean(row.get("LANGUAGE", "")).lower()
     click_url = _clean(row.get("CLICK URL", ""))
     coupon_code = _clean(row.get("COUPON CODE", ""))
     end_ts = _parse_date(row.get("PROMOTIONAL END DATE", ""))
+    landing_url = _extract_landing_url(row)
+    text = " ".join(
+        [
+            _clean(row.get("NAME", "")),
+            _clean(row.get("DESCRIPTION", "")),
+            _clean(row.get("KEYWORDS", "")),
+        ]
+    ).lower()
 
     if status == "active":
         score += 20
     if click_url:
         score += 30
-    if "evergreen" in link_type or "homepage" in _clean(row.get("NAME", "")).lower():
+    if "evergreen" in link_type or "homepage" in text:
         score += 25
     elif "text" in link_type:
         score += 18
     elif "banner" in link_type:
         score += 8
+    if landing_url:
+        score += 12
+    elif "banner" in link_type:
+        score -= 6
+    if language == "english":
+        score += 8
+    elif language:
+        score -= 10
+    if any(term in text for term in _US_FRIENDLY_TERMS):
+        score += 6
+    if any(term in text for term in _NON_US_LOCALE_TERMS):
+        score -= 20
+    if re.search(r"\b(?:badge|logo|\d{2,4}x\d{2,4})\b", text):
+        score -= 10
     if promotion_type == "coupon" and coupon_code:
         score += 8
         if end_ts and end_ts > int(time.time()):
@@ -355,10 +502,14 @@ def import_cj_csv(csv_path: str | Path, overrides_path: str | Path = OVERRIDES_P
             continue
         record = {
             "name": primary_name,
-            "aliases": [alias for alias in aliases if slugify(alias) != slugify(primary_name)],
+            "aliases": _safe_imported_aliases(
+                advertiser,
+                primary_name,
+                [alias for alias in aliases if slugify(alias) != slugify(primary_name)],
+            ),
             "advertiser": advertiser,
             "affiliate_url": click_url,
-            "homepage": _extract_landing_url(row),
+            "homepage": _extract_landing_url(row) or _homepage_fallback(advertiser),
             "network": "cj",
             "vertical": _infer_vertical(primary_name, row),
             "link_type": _clean(row.get("LINK TYPE", "")),
@@ -429,6 +580,7 @@ def import_affiliate_csv(
             continue
         offer_count += 1
         slug = slugify(advertiser)
+        fallback_homepage = _homepage_fallback(advertiser)
         entry = advertisers.setdefault(
             slug,
             {
@@ -453,6 +605,8 @@ def import_affiliate_csv(
         landing_url = _extract_landing_url(row)
         if landing_url and not entry["homepage_url"]:
             entry["homepage_url"] = landing_url
+        elif fallback_homepage and not entry["homepage_url"]:
+            entry["homepage_url"] = fallback_homepage
 
         if offer["promotion_type"].lower() == "coupon" and offer["coupon_code"]:
             entry["coupon_click_url"] = click_url
@@ -464,6 +618,20 @@ def import_affiliate_csv(
         ):
             entry["default_click_url"] = click_url
             default_scores[slug] = default_score
+
+    for slug, entry in advertisers.items():
+        if not entry["homepage_url"]:
+            entry["homepage_url"] = _homepage_fallback(entry["advertiser"])
+        if slug in _FORCE_HOMEPAGE_DEFAULTS and entry["homepage_url"]:
+            entry["default_click_url"] = entry["homepage_url"]
+        coupon_domain = _FORCE_HOMEPAGE_COUPON_DOMAINS.get(slug)
+        if (
+            coupon_domain
+            and entry["homepage_url"]
+            and entry["coupon_click_url"]
+            and coupon_domain in entry["homepage_url"]
+        ):
+            entry["coupon_click_url"] = entry["homepage_url"]
 
     payload = {"advertisers": advertisers}
     output_path.parent.mkdir(parents=True, exist_ok=True)

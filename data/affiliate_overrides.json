@@ -4,7 +4,7 @@
     "aliases": [],
     "advertiser": "Contabo",
     "affiliate_url": "https://www.tkqlhce.com/click-101733230-14573803",
-    "homepage": "",
+    "homepage": "https://contabo.com/en/",
     "network": "cj",
     "vertical": "cloud_infra",
     "link_type": "Banner",
@@ -14,32 +14,8 @@
     "description": "Advertise for our US Regions",
     "epc_3m": "$225.96 AUD",
     "epc_7d": "$444.81 AUD",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:43Z"
-  },
-  {
-    "name": "EN - Essential Pack",
-    "aliases": [
-      "Gandi",
-      "domain registration",
-      "web hosting",
-      "SSL certificates",
-      "email hosting"
-    ],
-    "advertiser": "Gandi",
-    "affiliate_url": "https://www.dpbolvw.net/click-101733230-17236097",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "cloud_infra",
-    "link_type": "Text Link",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Domain Registrations",
-    "description": "The essential pack is Gandi's affordable pack for online presence including 1 domain name (with a choice of 8 extensions), 1 mailbox, SSL/TLS security certificate, 20 GB storage, 1 website, Gandi's customer care and much more. Other affordables package are alos suitable for every case and every clients projects.",
-    "epc_3m": "N/A",
-    "epc_7d": "$13.90 AUD",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:43Z"
+    "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
+    "imported_at": "2026-04-27T14:06:03Z"
   },
   {
     "name": "Email Provider",
@@ -49,8 +25,8 @@
       "Email Hosting"
     ],
     "advertiser": "Turbify",
-    "affiliate_url": "https://www.kqzyfj.com/click-101733230-17008695",
-    "homepage": "",
+    "affiliate_url": "https://www.tkqlhce.com/click-101733230-17008695",
+    "homepage": "https://www.turbify.com/email",
     "network": "cj",
     "vertical": "cloud_infra",
     "link_type": "Text Link",
@@ -60,32 +36,8 @@
     "description": "Business Email for your domain address starting at. $1.19",
     "epc_3m": "$33.78 AUD",
     "epc_7d": "N/A",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:44Z"
-  },
-  {
-    "name": "Hostpapa",
-    "aliases": [
-      "host papa",
-      "web host",
-      "hosting provider",
-      "domain registration",
-      "green hosting"
-    ],
-    "advertiser": "Hostpapa",
-    "affiliate_url": "https://www.kqzyfj.com/click-101733230-10513988",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "cloud_infra",
-    "link_type": "Text Link",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Web Hosting/Servers",
-    "description": "HostPapa Landing Page - Canada",
-    "epc_3m": "$52.28 AUD",
-    "epc_7d": "$18.52 AUD",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:43Z"
+    "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
+    "imported_at": "2026-04-27T14:06:03Z"
   },
   {
     "name": "AOMEI Anyviewer",
@@ -96,8 +48,8 @@
       "Windows migration"
     ],
     "advertiser": "AOMEI",
-    "affiliate_url": "https://www.aomeitech.com/landing/24hour-flash-sale.html/",
-    "homepage": "https://www.aomeitech.com/landing/24hour-flash-sale.html/",
+    "affiliate_url": "https://www.kqzyfj.com/click-101733230-17191598",
+    "homepage": "https://www.aomeitech.com/landing/black-friday.html/",
     "network": "cj",
     "vertical": "devtools",
     "link_type": "Text Link",
@@ -107,118 +59,8 @@
     "description": "AOMEI Black Friday",
     "epc_3m": "$177.27 AUD",
     "epc_7d": "N/A",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:43Z"
-  },
-  {
-    "name": "Abelssoft Int",
-    "aliases": [
-      "abelssoft",
-      "programme",
-      "pc-programme",
-      "verkauf",
-      "fallsale"
-    ],
-    "advertiser": "Abelssoft Int",
-    "affiliate_url": "https://www.jdoqocy.com/click-101733230-15639151",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "devtools",
-    "link_type": "Banner",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Computer SW",
-    "description": "Banner f\u00fcr die Marke Abelssoft und den limitierten Fall Sale 2023.",
-    "epc_3m": "$38.49 AUD",
-    "epc_7d": "$38.17 AUD",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:43Z"
-  },
-  {
-    "name": "NordVPN - KR",
-    "aliases": [
-      "NordVPN"
-    ],
-    "advertiser": "NordVPN",
-    "affiliate_url": "https://www.anrdoezrs.net/click-101733230-15646770",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "devtools",
-    "link_type": "Text Link",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Computer SW",
-    "description": "NordVPN - KR Homepage",
-    "epc_3m": "$759.46 AUD",
-    "epc_7d": "$1,079.77 AUD",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:44Z"
-  },
-  {
-    "name": "O&O Software",
-    "aliases": [
-      "desaster",
-      "rettung",
-      "administrator",
-      "reparatur",
-      "wiederherstellung"
-    ],
-    "advertiser": "O&O Software",
-    "affiliate_url": "https://www.dpbolvw.net/click-101733230-12056856",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "devtools",
-    "link_type": "Text Link",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Computer SW",
-    "description": "Ein BlueScreen bedeutet in der Regel viel Arbeit f\u00fcr den Administrator. Im Ernstfall kommt er nicht darum herum, das System neu aufzusetzen. Unterst\u00fctzung bietet da O&O BlueCon. O&O BlueCon hilft dem Administrator sowohl bei t\u00e4glichen Routineaufgaben als auch im Havariefall. Basierend auf Windows PE erm\u00f6glicht es den Einsatz von zahlreichen Programmen, z.B. zur Systemreparatur, Fehlersuche und Beseitigung, Wiederherstellung verlorener Daten, Zur\u00fccksetzen von Kennw\u00f6rtern und vieles mehr. Sie starten alle integrierten Programme direkt von dem O&O BlueCon Bootmedium (CD/DVD oder USB-Stick).",
-    "epc_3m": "$68.67 AUD",
-    "epc_7d": "N/A",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:44Z"
-  },
-  {
-    "name": "Repair PC",
-    "aliases": [
-      "Restoro",
-      "repair solution",
-      "Computer repair",
-      "computer",
-      "computer protection"
-    ],
-    "advertiser": "Restoro",
-    "affiliate_url": "https://www.dpbolvw.net/click-101733230-14052228",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "devtools",
-    "link_type": "Text Link",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Computer SW",
-    "description": "PC Repair",
-    "epc_3m": "$0.00 AUD",
-    "epc_7d": "N/A",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:44Z"
-  },
-  {
-    "name": "Surfshark",
-    "aliases": [],
-    "advertiser": "Surfshark",
-    "affiliate_url": "https://www.anrdoezrs.net/click-101733230-15449491",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "devtools",
-    "link_type": "Banner",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Computer SW",
-    "description": "Alert (Short) - Original@2x",
-    "epc_3m": "$56.39 AUD",
-    "epc_7d": "$217.34 AUD",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:44Z"
+    "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
+    "imported_at": "2026-04-27T14:06:03Z"
   },
   {
     "name": "Shopify",
@@ -242,15 +84,13 @@
     "imported_at": "2026-04-26T00:00:00Z"
   },
   {
-    "name": "Sucuri",
+    "name": "Sucuri 728x80",
     "aliases": [
-      "Sucuri 728x80",
-      "website security",
-      "protect"
+      "Sucuri"
     ],
     "advertiser": "Sucuri",
-    "affiliate_url": "https://www.tkqlhce.com/click-101733230-13942202",
-    "homepage": "",
+    "affiliate_url": "https://www.jdoqocy.com/click-101733230-13942202",
+    "homepage": "https://sucuri.net/",
     "network": "cj",
     "vertical": "imported_misc",
     "link_type": "Banner",
@@ -260,14 +100,14 @@
     "description": "Sucuri 728x80 Banner",
     "epc_3m": "$80.74 AUD",
     "epc_7d": "$0.00 AUD",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:44Z"
+    "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
+    "imported_at": "2026-04-27T14:06:03Z"
   },
   {
     "name": "GetResponse",
     "aliases": [],
     "advertiser": "GetResponse",
-    "affiliate_url": "https://www.getresponse.com/?a=-CJ&affpath=directbuy",
+    "affiliate_url": "https://www.dpbolvw.net/click-101733230-14331756",
     "homepage": "https://www.getresponse.com/?a=-CJ&affpath=directbuy",
     "network": "cj",
     "vertical": "marketing_automation",
@@ -278,45 +118,7 @@
     "description": "Special discount for Affiliate shoppers, Save 10% off on Get Response plans. Use code GRSAVE10",
     "epc_3m": "$329.27 AUD",
     "epc_7d": "N/A",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:43Z"
-  },
-  {
-    "name": "Kings Newsletter Logo",
-    "aliases": [
-      "Kings Camo"
-    ],
-    "advertiser": "Kings Camo",
-    "affiliate_url": "https://www.jdoqocy.com/click-101733230-17068371",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "marketing_automation",
-    "link_type": "Banner",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Mens",
-    "description": "Newsletter Logo",
-    "epc_3m": "N/A",
-    "epc_7d": "N/A",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:43Z"
-  },
-  {
-    "name": "NordPass",
-    "aliases": [],
-    "advertiser": "NordPass",
-    "affiliate_url": "https://www.jdoqocy.com/click-101733230-17262576",
-    "homepage": "",
-    "network": "cj",
-    "vertical": "password_managers",
-    "link_type": "Text Link",
-    "promotion_type": "N/A",
-    "coupon_code": "",
-    "category": "Computer SW",
-    "description": "Standard Special Offer",
-    "epc_3m": "N/A",
-    "epc_7d": "$481.36 AUD",
-    "source_file": "data\\affiliate-imports\\links.csv",
-    "imported_at": "2026-04-27T12:22:43Z"
+    "source_file": "C:\\Users\\smith\\Downloads\\links.csv",
+    "imported_at": "2026-04-27T14:06:03Z"
   }
 ]

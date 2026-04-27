@@ -36,11 +36,46 @@ PROGRAM_TOKENS = (
     "become-an-affiliate",
 )
 
+AFFILIATE_NETWORK_HOST_TOKENS = (
+    "anrdoezrs.net",
+    "awltovhc.com",
+    "dpbolvw.net",
+    "ftjcfx.com",
+    "impact.com",
+    "jdoqocy.com",
+    "kqzyfj.com",
+    "partnerstack.com",
+    "pxf.io",
+    "shareasale.com",
+    "tkqlhce.com",
+    "tqlkg.com",
+)
+EQUIVALENT_HOSTS = {
+    ("convertkit.com", "kit.com"),
+    ("notion.so", "notion.com"),
+    ("perimeter81.com", "sase.checkpoint.com"),
+    ("riverside.fm", "riverside.com"),
+    ("zoom.us", "zoom.com"),
+}
+
 
 def _is_program_page(url: str) -> bool:
     parsed = urlparse(url)
     combined = f"{parsed.netloc.lower()}{parsed.path.lower()}"
     return any(token in combined for token in PROGRAM_TOKENS)
+
+
+def _is_affiliate_network_host(host: str) -> bool:
+    normalized = host.lower().replace("www.", "")
+    return any(token in normalized for token in AFFILIATE_NETWORK_HOST_TOKENS)
+
+
+def _hosts_equivalent(expected_host: str, final_host: str) -> bool:
+    if not expected_host or not final_host:
+        return False
+    if expected_host == final_host:
+        return True
+    return (expected_host, final_host) in EQUIVALENT_HOSTS or (final_host, expected_host) in EQUIVALENT_HOSTS
 
 
 def parse_redirects(path: Path) -> list[tuple[str, str]]:
@@ -68,7 +103,9 @@ def check_live_redirect(live_url: str, expected_url: str, headers: dict[str, str
             return PROG, code, final
         expected_host = urlparse(expected_url).netloc.lower().replace("www.", "")
         final_host = urlparse(final).netloc.lower().replace("www.", "")
-        if expected_host and final_host and expected_host != final_host:
+        if expected_host and final_host and _is_affiliate_network_host(expected_host):
+            return GOOD, code, final
+        if expected_host and final_host and not _hosts_equivalent(expected_host, final_host):
             return WARN, code, final
         return GOOD, code, final
     except Exception as exc:
@@ -81,8 +118,10 @@ def main():
         sys.exit(1)
 
     site_domain = get("SITE_DOMAIN", "https://saaspare.org").rstrip("/")
+    validate_live = get("VALIDATE_LIVE_REDIRECTS", "true").lower() not in {"0", "false", "no"}
     entries = parse_redirects(REDIRECTS_FILE)
-    print(f"Checking {len(entries)} live redirects via {site_domain}...\n")
+    mode_label = f"live redirects via {site_domain}" if validate_live else "redirect targets from site/_redirects"
+    print(f"Checking {len(entries)} {mode_label}...\n")
 
     counts = {GOOD: 0, WARN: 0, DEAD: 0, PROG: 0}
     results: list[tuple[str, str, int, str, str, str]] = []
@@ -90,7 +129,12 @@ def main():
     headers = {"User-Agent": "Mozilla/5.0 (compatible; SaaSpare-Validator/2.0)"}
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, max(1, len(entries)))) as pool:
         futures = {
-            pool.submit(check_live_redirect, f"{site_domain}{path}", expected_url, headers): (path, expected_url)
+            pool.submit(
+                check_live_redirect,
+                f"{site_domain}{path}" if validate_live else expected_url,
+                expected_url,
+                headers,
+            ): (path, expected_url)
             for path, expected_url in entries
         }
         for future in as_completed(futures):

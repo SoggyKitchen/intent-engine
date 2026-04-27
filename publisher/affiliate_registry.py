@@ -345,6 +345,9 @@ PROGRAMS = {
 
 OVERRIDES_PATH = Path("data/affiliate_overrides.json")
 IMPORTED_AFFILIATE_PATH = Path("data/affiliate_links.json")
+SAFE_IMPORTED_ALIAS_SLUGS = {
+    "aomei-anyviewer": {"aomei", "pc-transfer", "todo-pctrans", "windows-migration"},
+}
 
 
 def _normalize_aliases(value) -> list[str]:
@@ -386,7 +389,24 @@ def _load_overrides() -> list[dict]:
         if not name or not affiliate_url:
             continue
         override = dict(item)
-        override["aliases"] = _normalize_aliases(item.get("aliases"))
+        aliases = _normalize_aliases(item.get("aliases"))
+        if item.get("network") == "cj" and item.get("source_file"):
+            advertiser_slug = slugify(str(item.get("advertiser", "")).strip() or name)
+            name_slug = slugify(name)
+            safe_allowlist = SAFE_IMPORTED_ALIAS_SLUGS.get(advertiser_slug, set()) | SAFE_IMPORTED_ALIAS_SLUGS.get(name_slug, set())
+            brand_tokens = {
+                token
+                for slug in (advertiser_slug, name_slug)
+                for token in slug.split("-")
+                if token
+            }
+            aliases = [
+                alias
+                for alias in aliases
+                if slugify(alias) in safe_allowlist
+                or bool({token for token in slugify(alias).split("-") if token} & brand_tokens)
+            ]
+        override["aliases"] = aliases
         overrides.append(override)
     return overrides
 
@@ -431,9 +451,13 @@ def _build_programs() -> dict[str, list[dict]]:
 
 PROGRAMS = _build_programs()
 
-def _program_alias_slugs(program: dict) -> list[str]:
+
+def _program_alias_slugs(program: dict, redirect_only: bool = False) -> list[str]:
     slugs: list[str] = []
-    for candidate in [program.get("name"), *program.get("aliases", [])]:
+    candidates = [program.get("name")]
+    if not (redirect_only and program.get("source_file")):
+        candidates.extend(program.get("aliases", []))
+    for candidate in candidates:
         slug = slugify(str(candidate or ""))
         if slug and slug not in slugs:
             slugs.append(slug)
@@ -447,6 +471,18 @@ def _build_program_index() -> dict[str, dict]:
             for slug in _program_alias_slugs(program):
                 index.setdefault(slug, program)
     return index
+
+
+def _build_redirect_targets() -> dict[str, str]:
+    redirects: dict[str, str] = {}
+    for programs in PROGRAMS.values():
+        for program in programs:
+            url = _best_url(program, "comparison")
+            if not url:
+                continue
+            for slug in _program_alias_slugs(program, redirect_only=True):
+                redirects[slug] = url
+    return redirects
 
 
 _PROGRAM_INDEX = _build_program_index()
@@ -550,9 +586,7 @@ def resolve_click_target(tool_name: str, vertical: str = "", page_type: str = "c
 
 
 _ALL_CLICK_TARGETS: dict[str, str] = {
-    slug: url
-    for slug, program in _PROGRAM_INDEX.items()
-    if (url := _best_url(program, "comparison"))
+    **_build_redirect_targets()
 }
 
 
@@ -578,8 +612,16 @@ def get_go_url(tool_name: str, page_type: str = "comparison") -> str | None:
     imported = _get_imported_affiliate(tool_name)
     if page_type == "coupon" and imported and imported.get("coupon_click_url"):
         return f"/go/{slug}-coupon"
-    if resolve_click_target(tool_name, page_type=page_type):
+    if not resolve_click_target(tool_name, page_type=page_type):
+        return None
+    redirects = get_all_redirects()
+    if slug in redirects:
         return f"/go/{slug}"
+    program = _find_program(tool_name)
+    if program:
+        canonical_slug = slugify(program.get("name", ""))
+        if canonical_slug in redirects:
+            return f"/go/{canonical_slug}"
     return None
 
 

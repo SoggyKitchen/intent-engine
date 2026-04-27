@@ -43,3 +43,15 @@ def test_imported_affiliates_override_and_add_coupon_redirects(tmp_path, monkeyp
     redirects = registry.get_all_redirects()
     assert redirects["hubspot"] == "https://cj.example/hubspot"
     assert redirects["hubspot-coupon"] == "https://cj.example/hubspot-coupon"
+
+
+def test_get_go_url_uses_canonical_slug_when_alias_redirect_is_not_published(monkeypatch):
+    monkeypatch.setattr(registry, "resolve_click_target", lambda *args, **kwargs: "https://buyer.example")
+    monkeypatch.setattr(registry, "get_all_redirects", lambda: {"hostpapa": "https://buyer.example"})
+    monkeypatch.setattr(
+        registry,
+        "_find_program",
+        lambda *args, **kwargs: {"name": "Hostpapa", "source_file": "data/affiliate-imports/links.csv"},
+    )
+
+    assert registry.get_go_url("Business Email") == "/go/hostpapa"
