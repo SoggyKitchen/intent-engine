@@ -1,10 +1,10 @@
-# Affiliate URL Validation - 2026-04-28
+# Affiliate URL Validation - 2026-04-27
 
 Live domain: `https://saaspare.org`
 Checked 119 redirects
 
-- OK: 115
-- WARN: 4
+- OK: 113
+- WARN: 6
 - PROG: 0
 - DEAD: 0
 
@@ -32,14 +32,14 @@ Checked 119 redirects
 - Expected destination: `https://ahrefs.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://ahrefs.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
-## WARN `/go/akamai-cloud`
-- HTTP: `403`
+## OK `/go/akamai-cloud`
+- HTTP: `200`
 - Live URL: `https://saaspare.org/go/akamai-cloud`
 - Expected destination: `https://www.linode.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://www.linode.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
-## WARN `/go/akamai-linode`
-- HTTP: `403`
+## OK `/go/akamai-linode`
+- HTTP: `200`
 - Live URL: `https://saaspare.org/go/akamai-linode`
 - Expected destination: `https://www.linode.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://www.linode.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
@@ -53,14 +53,14 @@ Checked 119 redirects
 ## OK `/go/aomei`
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/aomei`
-- Expected destination: `https://www.aomeitech.com/landing/24hour-flash-sale.html/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.aomeitech.com/landing/24hour-flash-sale.html?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
+- Expected destination: `https://www.kqzyfj.com/click-101733230-17191598?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
+- Final destination: `https://www.aomeitech.com/landing/black-friday.html?cjdata=MXxOfDB8WXww&cjevent=bd3db47b424211f1825301900a1eba8e`
 
 ## OK `/go/aomei-anyviewer`
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/aomei-anyviewer`
 - Expected destination: `https://www.kqzyfj.com/click-101733230-17191598?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.aomeitech.com/landing/black-friday.html?cjdata=MXxOfDB8WXww&cjevent=3b01f283424211f180c301ab0a1eba22`
+- Final destination: `https://www.aomeitech.com/landing/black-friday.html?cjdata=MXxOfDB8WXww&cjevent=bd3db7c1424211f180d601f80a1ebaa1`
 
 ## OK `/go/aomei-coupon`
 - HTTP: `200`
@@ -170,11 +170,11 @@ Checked 119 redirects
 - Expected destination: `https://www.cloudflare.com/plans/zero-trust-services/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://www.cloudflare.com/plans/zero-trust-services/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
-## OK `/go/contabo`
-- HTTP: `200`
+## WARN `/go/contabo`
+- HTTP: `403`
 - Live URL: `https://saaspare.org/go/contabo`
 - Expected destination: `https://www.tkqlhce.com/click-101733230-14573803?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://contabo.com/en/locations/united-states/?cjdata=MXxOfDB8WXww&utm_source=cj&utm_medium=affiliate&utm_campaign=us_east_west&source=affiliate&AID=14573803&PID=101733230&SID=&CJEVENT=3c1f4d01424211f1837c021c0a1eba67`
+- Final destination: `https://contabo.com/en-us/locations/united-states/?cjdata=MXxOfDB8WXww&utm_source=cj&utm_medium=affiliate&utm_campaign=us_east_west&source=affiliate&AID=14573803&PID=101733230&SID=&CJEVENT=bd85b05c424211f182c401cd0a1eba24`
 
 ## OK `/go/contractbook`
 - HTTP: `200`
@@ -246,7 +246,7 @@ Checked 119 redirects
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/email-provider`
 - Expected destination: `https://www.tkqlhce.com/click-101733230-17008695?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.turbify.com/mail?cjdata=MXxOfDB8WXww&cjevent=3c73d6d9424211f181f201e40a1eba23&utm_source=cj&utm_medium=affiliate`
+- Final destination: `https://www.turbify.com/mail?cjdata=MXxOfDB8WXww&cjevent=bdb5a344424211f180c301ab0a1eba22&utm_source=cj&utm_medium=affiliate`
 
 ## OK `/go/expensify`
 - HTTP: `200`
@@ -372,7 +372,7 @@ Checked 119 redirects
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/klaviyo`
 - Expected destination: `https://www.klaviyo.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.klaviyo.com/au/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
+- Final destination: `https://www.klaviyo.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
 ## OK `/go/lastpass`
 - HTTP: `200`
@@ -392,8 +392,8 @@ Checked 119 redirects
 - Expected destination: `https://linear.app?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://linear.app?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
-## WARN `/go/linode`
-- HTTP: `403`
+## OK `/go/linode`
+- HTTP: `200`
 - Live URL: `https://saaspare.org/go/linode`
 - Expected destination: `https://www.linode.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://www.linode.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
@@ -440,8 +440,8 @@ Checked 119 redirects
 - Expected destination: `https://moz.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://moz.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
-## OK `/go/neil-patel-seo`
-- HTTP: `200`
+## WARN `/go/neil-patel-seo`
+- HTTP: `403`
 - Live URL: `https://saaspare.org/go/neil-patel-seo`
 - Expected destination: `https://neilpatel.com/ubersuggest/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://neilpatel.com/ubersuggest/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
@@ -486,7 +486,7 @@ Checked 119 redirects
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/pipedrive`
 - Expected destination: `https://www.pipedrive.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.pipedrive.com/en-gb?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
+- Final destination: `https://www.pipedrive.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
 ## OK `/go/ramp`
 - HTTP: `200`
@@ -576,25 +576,25 @@ Checked 119 redirects
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/shopify`
 - Expected destination: `https://shopify.pxf.io/9VMZje?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.shopify.com/free-trial?utm_source=7210293-impact&utm_medium=cpa&utm_campaign=go&irclickid=zaRUafwR2xyZRDSS4ORRB1AoUkuyl%3A1yTyq30s0&irgwc=1&afsrc=1&partner=7210293&affpt=excluded&utm_channel=affiliates&iradid=1061744`
+- Final destination: `https://www.shopify.com/free-trial?utm_source=7210293-impact&utm_medium=cpa&utm_campaign=go&irclickid=T7%3AVkZwR2xyZTJAQPlUaJQpOUkuyl72MMww7yM0&irgwc=1&afsrc=1&partner=7210293&affpt=excluded&utm_channel=affiliates&iradid=1061744`
 
 ## OK `/go/shopify-ecommerce`
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/shopify-ecommerce`
 - Expected destination: `https://shopify.pxf.io/9VMZje?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.shopify.com/free-trial?utm_source=7210293-impact&utm_medium=cpa&utm_campaign=go&irclickid=z8xz6XwR2xyZRDSS4ORRB1AoUkuyl%3A1TTyq30s0&irgwc=1&afsrc=1&partner=7210293&affpt=excluded&utm_channel=affiliates&iradid=1061744`
+- Final destination: `https://www.shopify.com/free-trial?utm_source=7210293-impact&utm_medium=cpa&utm_campaign=go&irclickid=T79TJuwR2xyZTJAQPlUaJQpOUkuyl72MMww7yM0&irgwc=1&afsrc=1&partner=7210293&affpt=excluded&utm_channel=affiliates&iradid=1061744`
 
 ## OK `/go/shopify-plus`
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/shopify-plus`
 - Expected destination: `https://shopify.pxf.io/9VMZje?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.shopify.com/free-trial?utm_source=7210293-impact&utm_medium=cpa&utm_campaign=go&irclickid=z8x3DCwR2xyZRDSS4ORRB1AoUkuyl%3A1TTyq30s0&irgwc=1&afsrc=1&partner=7210293&affpt=excluded&utm_channel=affiliates&iradid=1061744`
+- Final destination: `https://www.shopify.com/free-trial?utm_source=7210293-impact&utm_medium=cpa&utm_campaign=go&irclickid=T41V2YwR2xyZTJAQPlUaJQpOUkuyl72MMww7yM0&irgwc=1&afsrc=1&partner=7210293&affpt=excluded&utm_channel=affiliates&iradid=1061744`
 
 ## OK `/go/shopify-store`
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/shopify-store`
 - Expected destination: `https://shopify.pxf.io/9VMZje?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.shopify.com/free-trial?utm_source=7210293-impact&utm_medium=cpa&utm_campaign=go&irclickid=z8xxu9wR2xyZRDSS4ORRB1AoUkuyl%3A1TTyq30s0&irgwc=1&afsrc=1&partner=7210293&affpt=excluded&utm_channel=affiliates&iradid=1061744`
+- Final destination: `https://www.shopify.com/free-trial?utm_source=7210293-impact&utm_medium=cpa&utm_campaign=go&irclickid=T41SC1wR2xyZTJAQPlUaJQpOUkuyl72MMww7yM0&irgwc=1&afsrc=1&partner=7210293&affpt=excluded&utm_channel=affiliates&iradid=1061744`
 
 ## OK `/go/smartsheet`
 - HTTP: `200`
@@ -618,13 +618,13 @@ Checked 119 redirects
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/sucuri`
 - Expected destination: `https://www.jdoqocy.com/click-101733230-13942202?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://sucuri.net/?cjevent=3ffcfd07424211f1837c021c0a1eba67&cj_aid=13942202&cj_pid=101733230&cj_cid=7937557`
+- Final destination: `https://sucuri.net/?cjevent=bf10e470424211f182c401cd0a1eba24&cj_aid=13942202&cj_pid=101733230&cj_cid=7937557`
 
 ## OK `/go/sucuri-728x80`
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/sucuri-728x80`
 - Expected destination: `https://www.jdoqocy.com/click-101733230-13942202?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://sucuri.net/?cjevent=3f750b3a424211f180c801c20a1eba37&cj_aid=13942202&cj_pid=101733230&cj_cid=7937557`
+- Final destination: `https://sucuri.net/?cjevent=bf1e9b5c424211f183de02030a1eba9b&cj_aid=13942202&cj_pid=101733230&cj_cid=7937557`
 
 ## OK `/go/supabase`
 - HTTP: `200`
@@ -654,7 +654,7 @@ Checked 119 redirects
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/turbify`
 - Expected destination: `https://www.tkqlhce.com/click-101733230-17008695?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.turbify.com/mail?cjdata=MXxOfDB8WXww&cjevent=401c1a0e424211f1822201dd0a1ebadf&utm_source=cj&utm_medium=affiliate`
+- Final destination: `https://www.turbify.com/mail?cjdata=MXxOfDB8WXww&cjevent=bf3609f6424211f1837c021d0a1eba67&utm_source=cj&utm_medium=affiliate`
 
 ## OK `/go/twingate`
 - HTTP: `200`
@@ -662,20 +662,20 @@ Checked 119 redirects
 - Expected destination: `https://www.twingate.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://www.twingate.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
-## OK `/go/ubersuggest`
-- HTTP: `200`
+## WARN `/go/ubersuggest`
+- HTTP: `403`
 - Live URL: `https://saaspare.org/go/ubersuggest`
 - Expected destination: `https://neilpatel.com/ubersuggest/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://neilpatel.com/ubersuggest/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
-## OK `/go/ubersuggest-neil-patel`
-- HTTP: `200`
+## WARN `/go/ubersuggest-neil-patel`
+- HTTP: `403`
 - Live URL: `https://saaspare.org/go/ubersuggest-neil-patel`
 - Expected destination: `https://neilpatel.com/ubersuggest/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://neilpatel.com/ubersuggest/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
-## OK `/go/vultr`
-- HTTP: `200`
+## WARN `/go/vultr`
+- HTTP: `403`
 - Live URL: `https://saaspare.org/go/vultr`
 - Expected destination: `https://www.vultr.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 - Final destination: `https://www.vultr.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
@@ -714,7 +714,7 @@ Checked 119 redirects
 - HTTP: `200`
 - Live URL: `https://saaspare.org/go/zoho-crm`
 - Expected destination: `https://www.zoho.com/crm/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
-- Final destination: `https://www.zoho.com/en-au/crm/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
+- Final destination: `https://www.zoho.com/crm/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go`
 
 ## OK `/go/zoom`
 - HTTP: `200`
