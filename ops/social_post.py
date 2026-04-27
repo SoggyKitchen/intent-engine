@@ -30,6 +30,29 @@ SOCIAL_PACK_DIR = Path("outputs/generated/social")
 SOCIAL_RUN_REPORT = SOCIAL_PACK_DIR / "social_run_latest.json"
 
 
+def _page_url(page: dict, domain: str) -> str:
+    return page["published_url"] or f"{domain}/pages/{slugify_title(page['title'])}"
+
+
+def _social_url(url: str, source: str, campaign: str, content: str = "") -> str:
+    parsed = urllib.parse.urlsplit(url)
+    params = dict(urllib.parse.parse_qsl(parsed.query, keep_blank_values=True))
+    params["utm_source"] = source
+    params["utm_medium"] = "social"
+    params["utm_campaign"] = campaign
+    if content:
+        params["utm_content"] = content
+    return urllib.parse.urlunsplit(
+        (
+            parsed.scheme,
+            parsed.netloc,
+            parsed.path,
+            urllib.parse.urlencode(params),
+            parsed.fragment,
+        )
+    )
+
+
 def _already_posted(url: str) -> bool:
     POSTED_FILE.parent.mkdir(parents=True, exist_ok=True)
     if not POSTED_FILE.exists():
@@ -129,7 +152,12 @@ def run_twitter():
 
     tweets: list[dict] = []
     for page in pages:
-        url = page["published_url"] or f"{domain}/{page['title']}"
+        url = _social_url(
+            _page_url(page, domain),
+            source="x",
+            campaign="social_launch",
+            content=slugify_title(page["title"]),
+        )
         tweet_text = _generate_tweet(page["title"], page["vertical"], url)
         if tweet_text:
             tweets.append({"text": tweet_text, "url": url, "title": page["title"]})
@@ -212,8 +240,18 @@ def build_social_pack(limit: int = 5) -> Optional[str]:
 
     payload: list[dict] = []
     for page in pages:
-        url = page["published_url"] or f"{domain}/pages/{slugify_title(page['title'])}.html"
-        copy = _generate_social_copy(page["title"], page["vertical"], url)
+        url = _page_url(page, domain)
+        copy = _generate_social_copy(
+            page["title"],
+            page["vertical"],
+            {
+                "x": _social_url(url, "x", "social_pack", slugify_title(page["title"])),
+                "linkedin": _social_url(url, "linkedin", "social_pack", slugify_title(page["title"])),
+                "reddit": _social_url(url, "reddit", "social_pack", slugify_title(page["title"])),
+                "instagram": _social_url(url, "instagram", "social_pack", slugify_title(page["title"])),
+                "tiktok": _social_url(url, "tiktok", "social_pack", slugify_title(page["title"])),
+            },
+        )
         payload.append(
             {
                 "title": page["title"],
@@ -578,7 +616,12 @@ def run_reddit_answers():
             signal["title"],
             signal["body"],
             page["title"],
-            page["published_url"] or domain,
+            _social_url(
+                _page_url(page, domain),
+                source="reddit",
+                campaign="social_reply",
+                content=slugify_title(page["title"]),
+            ),
         )
         if not answer:
             continue
@@ -660,13 +703,14 @@ def _generate_reddit_new_post(page_title: str, vertical: str, url: str):
     return None, None
 
 
-def _generate_social_copy(title: str, vertical: str, url: str) -> dict:
+def _generate_social_copy(title: str, vertical: str, urls: dict[str, str]) -> dict:
+    canonical_url = urls["x"]
     result = complete_json(
         f"""
 Create concise social copy variations for this B2B SaaS page.
 Title: {title}
 Vertical: {vertical}
-URL: {url}
+Canonical URL: {canonical_url}
 
 Return JSON:
 {{
@@ -683,35 +727,35 @@ Return JSON:
     )
     if result:
         return {
-            "x_post": _ensure_url(result.get("x_post", ""), url),
-            "linkedin_post": _ensure_url(result.get("linkedin_post", ""), url),
-            "reddit_angle": result.get("reddit_angle", "") or f"Useful breakdown for anyone comparing {title}: {url}",
-            "reddit_post": _ensure_url(result.get("reddit_post", ""), url)
+            "x_post": _ensure_url(result.get("x_post", ""), urls["x"]),
+            "linkedin_post": _ensure_url(result.get("linkedin_post", ""), urls["linkedin"]),
+            "reddit_angle": result.get("reddit_angle", "") or f"Useful breakdown for anyone comparing {title}: {urls['reddit']}",
+            "reddit_post": _ensure_url(result.get("reddit_post", ""), urls["reddit"])
             if result.get("reddit_post")
-            else _fallback_reddit_post(title, vertical, url),
-            "instagram_caption": _ensure_url(result.get("instagram_caption", ""), url),
+            else _fallback_reddit_post(title, vertical, urls["reddit"]),
+            "instagram_caption": _ensure_url(result.get("instagram_caption", ""), urls["instagram"]),
             "instagram_carousel": _ensure_list(
                 result.get("instagram_carousel"),
-                _fallback_instagram_carousel(title, url),
+                _fallback_instagram_carousel(title, urls["instagram"]),
             ),
-            "tiktok_script": result.get("tiktok_script", "") or _fallback_tiktok_script(title, url),
+            "tiktok_script": result.get("tiktok_script", "") or _fallback_tiktok_script(title, urls["tiktok"]),
             "tiktok_shot_list": _ensure_list(
                 result.get("tiktok_shot_list"),
                 _fallback_tiktok_shot_list(title),
             ),
         }
     return {
-        "x_post": f"{title} is live. Quick breakdown, real pricing, and the best fit by use case: {url}",
+        "x_post": f"{title} is live. Quick breakdown, real pricing, and the best fit by use case: {urls['x']}",
         "linkedin_post": (
             f"{title} is now live on SaaSpare.\n\n"
             f"If you're comparing options in {vertical.replace('_', ' ')}, this gives you the pricing, "
-            f"tradeoffs, and best-fit summary without the fluff.\n\n{url}"
+            f"tradeoffs, and best-fit summary without the fluff.\n\n{urls['linkedin']}"
         ),
-        "reddit_angle": f"If anyone here is evaluating {title}, this breakdown covers pricing and tradeoffs in one place: {url}",
-        "reddit_post": _fallback_reddit_post(title, vertical, url),
-        "instagram_caption": f"New SaaS breakdown: {title}. Pricing, pros, cons, and the best fit in one place. {url} #saas #software #b2b #startups",
-        "instagram_carousel": _fallback_instagram_carousel(title, url),
-        "tiktok_script": _fallback_tiktok_script(title, url),
+        "reddit_angle": f"If anyone here is evaluating {title}, this breakdown covers pricing and tradeoffs in one place: {urls['reddit']}",
+        "reddit_post": _fallback_reddit_post(title, vertical, urls["reddit"]),
+        "instagram_caption": f"New SaaS breakdown: {title}. Pricing, pros, cons, and the best fit in one place. {urls['instagram']} #saas #software #b2b #startups",
+        "instagram_carousel": _fallback_instagram_carousel(title, urls["instagram"]),
+        "tiktok_script": _fallback_tiktok_script(title, urls["tiktok"]),
         "tiktok_shot_list": _fallback_tiktok_shot_list(title),
     }
 
@@ -881,7 +925,12 @@ def _write_social_queue(pages, domain: str):
     out_path = SOCIAL_QUEUE_DIR / f"social_queue_{time.strftime('%Y-%m-%d')}.md"
     lines = ["# Weekly Social Queue", ""]
     for page in pages:
-        url = page["published_url"] or domain
+        url = _social_url(
+            _page_url(page, domain),
+            source="x",
+            campaign="social_queue",
+            content=slugify_title(page["title"]),
+        )
         title = page["title"]
         vertical = page["vertical"] or "saas"
         lines.extend(
@@ -925,7 +974,12 @@ def run_linkedin():
 
     posted = 0
     for page in pages:
-        url = page["published_url"] or f"{domain}/{page['title']}"
+        url = _social_url(
+            _page_url(page, domain),
+            source="linkedin",
+            campaign="social_launch",
+            content=slugify_title(page["title"]),
+        )
         if _already_posted(f"li:{url}"):
             continue
 

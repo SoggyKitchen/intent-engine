@@ -95,6 +95,28 @@ def _deploy_via_git(repo_url: str) -> bool:
 _SITEMAP_EXCLUDE = {"index", "thanks", "verification"}
 _PAGES_EXCLUDE = {"index", "thanks", "verification"}
 
+_MOJIBAKE_REPLACEMENTS = {
+    "â€”": " - ",
+    "â€“": " - ",
+    "â†’": " -> ",
+    "Â·": " · ",
+    "Ã—": "x",
+}
+
+
+def _clean_display_text(text: str) -> str:
+    cleaned = (text or "").strip()
+    for bad, good in _MOJIBAKE_REPLACEMENTS.items():
+        cleaned = cleaned.replace(bad, good)
+    cleaned = cleaned.replace("| SaaSpare", "").strip()
+    cleaned = cleaned.replace(".io.io", ".io")
+    cleaned = re.sub(r"\b(SEO|CRM|SaaS|AI|PM) \1\b", r"\1", cleaned)
+    cleaned = re.sub(r"\b([A-Z][a-z0-9.+]+) \1\b", r"\1", cleaned)
+    cleaned = re.sub(r"\bWhich Is Better In\s*$", "Which Is Better", cleaned)
+    cleaned = re.sub(r"\s{2,}", " ", cleaned)
+    return cleaned.strip(" -")
+
+
 def _page_label(stem: str) -> str:
     label = stem.replace("-vs-", " vs ")
     label = label.replace("-io", ".io")
@@ -128,7 +150,7 @@ def _page_label(stem: str) -> str:
     for wrong, right in replacements.items():
         label = re.sub(rf"\b{wrong}\b", right, label)
     label = label.replace(" Vs ", " vs ")
-    return label.strip()
+    return _clean_display_text(label)
 
 
 def _detect_page_type(stem: str) -> str:
@@ -158,7 +180,7 @@ def _page_title_from_html(path: Path) -> str:
     match = re.search(r"<title>([^<]+)</title>", html, re.IGNORECASE)
     if not match:
         return _page_label(path.stem)
-    title = match.group(1).replace("| SaaSpare", "").strip()
+    title = _clean_display_text(match.group(1))
     return title or _page_label(path.stem)
 
 

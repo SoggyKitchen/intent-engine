@@ -22,6 +22,7 @@ def test_build_page_index_uses_clean_titles_and_strong_keys(monkeypatch):
     assert manifest["total"] == 1
     assert manifest["pages"]["ahrefs-pricing-2026-plans-costs-what-you-actually-pay"] == "https://saaspare.org/pages/ahrefs-pricing-2026"
     assert manifest["pages"]["ahrefs"] == "https://saaspare.org/pages/ahrefs-pricing-2026"
+    assert manifest["page_candidates"]["ahrefs"] == ["https://saaspare.org/pages/ahrefs-pricing-2026"]
     assert "2026" not in manifest["pages"]
 
 

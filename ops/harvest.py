@@ -89,6 +89,7 @@ def _run_adapter(adapter, since_ts: int) -> int:
                 count += 1
     except Exception as e:
         log.error(f"Adapter {adapter.name} error mid-run: {e}")
+        raise RuntimeError(f"{adapter.name}: {e}") from e
     return count
 
 

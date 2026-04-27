@@ -2,6 +2,7 @@ from ops.social_post import (
     _build_social_calendar,
     _normalize_linkedin_person_urn,
     _render_social_pack_markdown,
+    _social_url,
 )
 
 
@@ -48,3 +49,12 @@ def test_build_social_calendar_rotates_channels():
 def test_normalize_linkedin_person_urn_accepts_id_or_full_urn():
     assert _normalize_linkedin_person_urn("abc123") == "urn:li:person:abc123"
     assert _normalize_linkedin_person_urn("urn:li:person:abc123") == "urn:li:person:abc123"
+
+
+def test_social_url_adds_channel_specific_utm_tags():
+    url = _social_url("https://saaspare.org/pages/hubspot-vs-salesforce", "x", "social_pack", "hubspot-vs-salesforce")
+
+    assert "utm_source=x" in url
+    assert "utm_medium=social" in url
+    assert "utm_campaign=social_pack" in url
+    assert "utm_content=hubspot-vs-salesforce" in url

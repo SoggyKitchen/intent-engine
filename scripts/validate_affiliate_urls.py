@@ -7,6 +7,7 @@ Run:
 """
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -16,6 +17,7 @@ from core.secrets import get
 
 REDIRECTS_FILE = Path("site/_redirects")
 REPORT_FILE = Path("data/affiliate_url_report.md")
+MAX_WORKERS = 12
 
 GOOD = "OK"
 WARN = "WARN"
@@ -53,9 +55,9 @@ def parse_redirects(path: Path) -> list[tuple[str, str]]:
     return entries
 
 
-def check_live_redirect(live_url: str, expected_url: str, client: httpx.Client) -> tuple[str, int, str]:
+def check_live_redirect(live_url: str, expected_url: str, headers: dict[str, str]) -> tuple[str, int, str]:
     try:
-        response = client.get(live_url, follow_redirects=True, timeout=20)
+        response = httpx.get(live_url, follow_redirects=True, timeout=10, headers=headers)
         code = response.status_code
         final = str(response.url)
         if code == 403:
@@ -86,14 +88,20 @@ def main():
     results: list[tuple[str, str, int, str, str, str]] = []
 
     headers = {"User-Agent": "Mozilla/5.0 (compatible; SaaSpare-Validator/2.0)"}
-    with httpx.Client(headers=headers) as client:
-        for path, expected_url in entries:
+    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, max(1, len(entries)))) as pool:
+        futures = {
+            pool.submit(check_live_redirect, f"{site_domain}{path}", expected_url, headers): (path, expected_url)
+            for path, expected_url in entries
+        }
+        for future in as_completed(futures):
+            path, expected_url = futures[future]
             live_url = f"{site_domain}{path}"
-            status, code, final = check_live_redirect(live_url, expected_url, client)
+            status, code, final = future.result()
             counts[status] += 1
             results.append((status, path, code, live_url, expected_url, final))
             print(f"{status:4s} {path:40s} HTTP {code}")
-            time.sleep(0.15)
+
+    results.sort(key=lambda row: row[1])
 
     REPORT_FILE.parent.mkdir(parents=True, exist_ok=True)
     lines = [f"# Affiliate URL Validation - {time.strftime('%Y-%m-%d')}", ""]

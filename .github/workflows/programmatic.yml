@@ -47,11 +47,20 @@ jobs:
           CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
           CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
           CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
+          CF_PAGES_DEPLOY_HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+          CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
           GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
           LOG_LEVEL: INFO
+
+      - name: Validate affiliate redirects
+        run: uv run python scripts/validate_affiliate_urls.py
+        env:
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
 
       - name: Submit backlinks + IndexNow
         run: uv run engine backlinks
@@ -73,6 +82,6 @@ jobs:
           git config user.email "bot@intentengine.local"
           git config user.name "IntentBot"
           git pull --rebase --autostash origin main
-          git add data/intent.db site/pages/ site/sitemap.xml site/index.html site/_redirects || true
+          git add data/intent.db data/affiliate_url_report.md site/pages/ site/sitemap.xml site/index.html site/_redirects || true
           git diff --staged --quiet || git commit -m "chore: programmatic SEO $(date -u +%Y-%m-%d) [skip ci]"
           git push

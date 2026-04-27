@@ -211,9 +211,11 @@ def programmatic(max_pages: int):
     from publisher.pages_deploy import deploy_all
 
     count = run_programmatic(max_pages=max_pages)
+    deployed = deploy_all()
     if count > 0:
-        deploy_all()
         click.echo(f"OK  {count} programmatic pages generated and deployed")
+    elif deployed:
+        click.echo("OK  No new programmatic pages generated; site artifacts refreshed and deployed")
     else:
         click.echo("OK  No new programmatic pages generated; site artifacts refreshed")
 

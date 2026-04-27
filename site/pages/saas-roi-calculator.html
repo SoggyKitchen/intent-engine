@@ -100,6 +100,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:f
 .cta-box{background:linear-gradient(135deg,rgba(233,69,96,.14),rgba(180,40,60,.1));border:1px solid rgba(233,69,96,.22);color:#fff;padding:2rem;border-radius:18px;text-align:center;margin-top:1rem}
 .cta-box h3{font-size:1.12rem;font-weight:800;letter-spacing:-.3px;margin-bottom:.5rem}
 .cta-box p{color:rgba(255,255,255,.35);font-size:.86rem;margin-bottom:1.4rem;line-height:1.7}
+.cta-links{display:flex;gap:.65rem;justify-content:center;flex-wrap:wrap}
 .cta-btn{display:inline-block;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.72rem 1.75rem;border-radius:100px;font-weight:700;font-size:.88rem;box-shadow:0 6px 20px rgba(233,69,96,.4);transition:transform .15s,box-shadow .15s}
 .cta-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(233,69,96,.55)}
 
@@ -283,9 +284,13 @@ footer a:hover{color:rgba(255,255,255,.7)}
     </div>
 
     <div class="cta-box">
-      <h3>Ready to buy? Compare top tools first.</h3>
-      <p>Side-by-side pricing, pros/cons and our top pick before you commit.</p>
-      <a class="cta-btn" href="https://saaspare.org/pages/">Browse Comparisons →</a>
+      <h3>Turn that ROI into a shortlist.</h3>
+      <p>Start with proven buyer paths instead of going back to a generic archive.</p>
+      <div class="cta-links">
+        <a class="cta-btn" href="/go/hubspot">Try HubSpot</a>
+        <a class="cta-btn" href="/go/clickup">Try ClickUp</a>
+        <a class="cta-btn" href="/go/1password">Try 1Password</a>
+      </div>
     </div>
 
   </div>
@@ -315,13 +320,13 @@ function fmt(n){
   if(abs>=1000000)return prefix+(abs/1000000).toFixed(1)+'M';
   if(abs>=1000)return prefix+(abs/1000).toFixed(1)+'k';
   return prefix+Math.round(abs);
-
+}
 function animateVal(el,text){
   el.style.animation='none';
   el.offsetHeight;
   el.style.animation='countUp .35s ease both';
   el.textContent=text;
-
+}
 function calculate(){
   var mc=parseFloat(document.getElementById('monthly_cost').value)||0;
   var seats=parseInt(document.getElementById('seats').value)||1;
@@ -373,7 +378,7 @@ function calculate(){
   setTimeout(function(){
     resultsEl.scrollIntoView({behavior:'smooth',block:'nearest'});
   },50);
-
+}
 </script>
 <div class="sticky-cta-v2" id="sticky-cta-v2">
 <span style="font-size:.85rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Start your free trial today — no credit card required.</span>

@@ -105,22 +105,34 @@ def build_page_index() -> dict:
     domain = get("SITE_DOMAIN", "https://saaspare.org")
     pages = _load_pages()
     lookup: dict[str, str] = {}
+    candidates: dict[str, list[str]] = {}
+
+    def add_candidate(key: str, url: str):
+        if not key:
+            return
+        bucket = candidates.setdefault(key, [])
+        if url not in bucket:
+            bucket.append(url)
 
     for page in pages:
         url = page["url"]
         title_slug = slugify_simple(clean_title(page["title"]))
         if title_slug:
             lookup.setdefault(title_slug, url)
+            add_candidate(title_slug, url)
         if page["slug"]:
             lookup.setdefault(page["slug"], url)
+            add_candidate(page["slug"], url)
         for keyword in page["keywords"]:
             lookup.setdefault(keyword, url)
+            add_candidate(keyword, url)
 
     return {
         "site": domain,
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "total": len(pages),
         "pages": lookup,
+        "page_candidates": candidates,
         "records": pages,
     }
 
@@ -145,8 +157,6 @@ def write_manifest() -> dict:
 def _patch_affiliate_engine_descriptions():
     """Create the helper module consumed by the sibling content engine."""
     helper_path = AFFILIATE_ENGINE_DIR / "core" / "saaspare_helper.py"
-    if helper_path.exists():
-        return
 
     helper_path.write_text(
         '''"""
@@ -174,12 +184,15 @@ def _load():
 def get_comparison_link(topic: str) -> str | None:
     _load()
     pages = _data.get("pages", {})
+    candidates = _data.get("page_candidates", {})
     slug = topic.lower().strip().replace(" ", "-")
     if slug in pages:
         return pages[slug]
+    if slug in candidates and candidates[slug]:
+        return candidates[slug][0]
     for word in slug.split("-"):
-        if len(word) > 4 and word in pages:
-            return pages[word]
+        if len(word) > 4 and word in candidates and candidates[word]:
+            return candidates[word][0]
     return None
 
 
@@ -192,7 +205,7 @@ def description_footer(topic: str) -> str:
 ''',
         encoding="utf-8",
     )
-    print("Created saaspare_helper.py in affiliate-engine")
+    print("Updated saaspare_helper.py in affiliate-engine")
 
 
 def main():

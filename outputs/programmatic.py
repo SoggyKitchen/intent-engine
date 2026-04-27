@@ -316,6 +316,9 @@ PAGE_TYPE_PRIORITY = {
     "_generate_bestof_page": 7,
 }
 
+REFRESH_AGE_DAYS = int(get("MONEY_PAGE_REFRESH_DAYS", "21"))
+REFRESH_LIMIT = int(get("MONEY_PAGE_REFRESH_LIMIT", "24"))
+
 
 def _task_priority(task: tuple) -> tuple:
     fn, args = task
@@ -333,6 +336,10 @@ def _task_priority(task: tuple) -> tuple:
 
 
 def _already_generated(slug_hint: str) -> bool:
+    return _find_existing_page_path(slug_hint) is not None
+
+
+def _find_existing_page_path(slug_hint: str) -> Path | None:
     try:
         with db() as conn:
             row = conn.execute(
@@ -340,7 +347,13 @@ def _already_generated(slug_hint: str) -> bool:
                 (f"%{slug_hint}%",)
             ).fetchone()
         if row[0] > 0:
-            return True
+            slug_words = [w.lower() for w in slug_hint.split() if len(w) > 1]
+            pages_dir = Path("site/pages")
+            if pages_dir.exists():
+                for f in pages_dir.glob("*.html"):
+                    name = f.stem.lower()
+                    if all(w in name for w in slug_words):
+                        return f
     except Exception:
         pass
     try:
@@ -350,14 +363,38 @@ def _already_generated(slug_hint: str) -> bool:
             for f in pages_dir.glob("*.html"):
                 name = f.stem.lower()
                 if all(w in name for w in words):
-                    return True
+                    return f
     except Exception:
         pass
-    return False
+    return None
 
 
-def _generate_comparison_page(tool_a: str, tool_b: str, vertical: str) -> bool | None:
-    if _already_generated(f"{tool_a} vs {tool_b}"):
+def _page_is_stale(slug_hint: str, max_age_days: int = REFRESH_AGE_DAYS) -> bool:
+    page = _find_existing_page_path(slug_hint)
+    if not page or not page.exists():
+        return False
+    return (time.time() - page.stat().st_mtime) > (max_age_days * 86400)
+
+
+def _build_refresh_tasks() -> list[tuple]:
+    refresh_tasks: list[tuple] = []
+    for tool, vertical in HIGH_VALUE_PRICING_TARGETS:
+        if _page_is_stale(f"{tool} pricing"):
+            refresh_tasks.append((_generate_pricing_page, (tool, vertical, True)))
+    for tool_a, tool_b, vertical in HIGH_VALUE_COMPARISONS:
+        if _page_is_stale(f"{tool_a} vs {tool_b}"):
+            refresh_tasks.append((_generate_comparison_page, (tool_a, tool_b, vertical, True)))
+    for tool, vertical in HIGH_VALUE_REVIEW_TARGETS:
+        if _page_is_stale(f"{tool} review"):
+            refresh_tasks.append((_generate_review_page, (tool, vertical, True)))
+    for tool, vertical in FREE_PLAN_TARGETS:
+        if _page_is_stale(f"{tool} free plan"):
+            refresh_tasks.append((_generate_free_plan_page, (tool, vertical, True)))
+    return refresh_tasks[:REFRESH_LIMIT]
+
+
+def _generate_comparison_page(tool_a: str, tool_b: str, vertical: str, force: bool = False) -> bool | None:
+    if not force and _already_generated(f"{tool_a} vs {tool_b}"):
         return None
 
     prompt = f"""You are an expert B2B software analyst writing for buyers.
@@ -368,7 +405,7 @@ Return JSON exactly:
 {{
   "page_title": "{tool_a} vs {tool_b}: Which is Better in {time.strftime('%Y')}?",
   "meta_description": "Detailed {tool_a} vs {tool_b} comparison. Pricing, features, pros, cons and which to choose.",
-  "subtitle": "An unbiased, data-driven comparison for {vertical.replace('_',' ')} teams",
+  "subtitle": "A buyer-focused comparison for {vertical.replace('_',' ')} teams",
   "tldr": "<2 sentences: who should pick each tool>",
   "tools": [
     {{
@@ -420,7 +457,7 @@ Return JSON exactly:
     {{"heading": "Who Should Use {tool_a}", "content": "<3-4 sentences describing the ideal customer profile, team size, budget and use case for {tool_a}>"}},
     {{"heading": "Who Should Use {tool_b}", "content": "<3-4 sentences describing the ideal customer profile, team size, budget and use case for {tool_b}>"}},
     {{"heading": "Migration & Setup", "content": "<3-4 sentences on how hard it is to switch between {tool_a} and {tool_b}, what data exports are available, and typical onboarding time>"}},
-    {{"heading": "Our Testing Methodology", "content": "<2-3 sentences explaining how SaaSpare evaluated these tools — what criteria, how many hours tested, what data sources were used>"}}
+    {{"heading": "Evaluation Criteria", "content": "<2-3 sentences explaining what buying criteria matter most here: pricing structure, onboarding effort, integrations, support and team fit. Do not claim hands-on testing unless it is explicitly sourced>"}}
   ],
   "cta_text": "Ready to try the winner? Start with a free trial and see the difference yourself.",
   "cta_button": "Start Free Trial",
@@ -438,8 +475,8 @@ Return JSON exactly:
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_alternatives_page(target_tool: str, vertical: str) -> bool | None:
-    if _already_generated(f"alternatives to {target_tool}"):
+def _generate_alternatives_page(target_tool: str, vertical: str, force: bool = False) -> bool | None:
+    if not force and _already_generated(f"alternatives to {target_tool}"):
         return None
 
     programs = TOOLS_BY_VERTICAL.get(vertical, [])
@@ -498,8 +535,8 @@ Return JSON exactly:
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_pricing_page(tool: str, vertical: str) -> bool | None:
-    if _already_generated(f"{tool} pricing"):
+def _generate_pricing_page(tool: str, vertical: str, force: bool = False) -> bool | None:
+    if not force and _already_generated(f"{tool} pricing"):
         return None
 
     prompt = f"""Write a detailed "{tool} Pricing" page for B2B buyers evaluating {tool}.
@@ -577,9 +614,9 @@ Return JSON:
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_bestof_page(vertical: str, audience: str, tools: list[str]) -> bool | None:
+def _generate_bestof_page(vertical: str, audience: str, tools: list[str], force: bool = False) -> bool | None:
     key = f"best {vertical.replace('_',' ')} {audience}"
-    if _already_generated(key):
+    if not force and _already_generated(key):
         return None
 
     tool_list = ", ".join(tools)
@@ -635,8 +672,8 @@ Return JSON:
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_coupon_page(tool: str, vertical: str) -> bool | None:
-    if _already_generated(f"{tool} coupon"):
+def _generate_coupon_page(tool: str, vertical: str, force: bool = False) -> bool | None:
+    if not force and _already_generated(f"{tool} coupon"):
         return None
 
     prompt = f"""Write a "{tool} Coupon Codes" page for buyers about to purchase {tool}.
@@ -702,8 +739,8 @@ Return JSON:
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_review_page(tool: str, vertical: str) -> bool | None:
-    if _already_generated(f"{tool} review"):
+def _generate_review_page(tool: str, vertical: str, force: bool = False) -> bool | None:
+    if not force and _already_generated(f"{tool} review"):
         return None
 
     prompt = f"""Write an in-depth "{tool} Review" for B2B buyers evaluating {tool} for {vertical.replace('_',' ')}.
@@ -713,7 +750,7 @@ Return JSON:
 {{
   "page_title": "{tool} Review {time.strftime('%Y')}: Is It Worth It? (Honest Verdict)",
   "meta_description": "Honest {tool} review for {time.strftime('%Y')}. Real pricing, features, pros, cons and who it's actually best for.",
-  "subtitle": "An unbiased {tool} review based on real user feedback and hands-on testing",
+  "subtitle": "A buyer-focused {tool} review based on public pricing, product information and market feedback",
   "tldr": "{tool} is a strong choice for <specific use case> but overkill for <other use case>. Here's the full picture.",
   "tools": [
     {{
@@ -770,8 +807,8 @@ Return JSON:
     return bool(_render_and_save(result, vertical))
 
 
-def _generate_free_plan_page(tool: str, vertical: str) -> bool | None:
-    if _already_generated(f"{tool} free plan"):
+def _generate_free_plan_page(tool: str, vertical: str, force: bool = False) -> bool | None:
+    if not force and _already_generated(f"{tool} free plan"):
         return None
 
     prompt = f"""Write a "Does {tool} Have a Free Plan?" page for buyers who want to try {tool} without paying.
@@ -864,9 +901,11 @@ def _ping_google_sitemap():
     try:
         import httpx
         domain = get("SITE_DOMAIN", "https://saaspare.org")
-        httpx.get(f"https://www.google.com/ping?sitemap={domain}/sitemap.xml", timeout=10)
-        httpx.get(f"https://www.bing.com/ping?sitemap={domain}/sitemap.xml", timeout=10)
-        log.info("Pinged Google + Bing sitemap endpoints")
+        google = httpx.get(f"https://www.google.com/ping?sitemap={domain}/sitemap.xml", timeout=10)
+        bing = httpx.get(f"https://www.bing.com/ping?sitemap={domain}/sitemap.xml", timeout=10)
+        google.raise_for_status()
+        bing.raise_for_status()
+        log.info(f"Pinged Google + Bing sitemap endpoints ({google.status_code}/{bing.status_code})")
     except Exception as e:
         log.warning(f"Sitemap ping failed: {e}")
 
@@ -943,7 +982,9 @@ def run_programmatic(max_pages: int = 500) -> int:
     domain = get("SITE_DOMAIN", "https://saaspare.org")
     log.info(f"Starting programmatic SEO run — target {max_pages} pages for {domain}")
 
-    tasks: list[tuple] = []
+    tasks: list[tuple] = _build_refresh_tasks()
+    if tasks:
+        log.info(f"Queued {len(tasks)} stale high-value pages for refresh before net-new generation")
 
     for tool_a, tool_b, vertical in HIGH_VALUE_COMPARISONS:
         tasks.append((_generate_comparison_page, (tool_a, tool_b, vertical)))
@@ -974,7 +1015,11 @@ def run_programmatic(max_pages: int = 500) -> int:
     tasks.sort(key=_task_priority)
 
     if configured_provider_count() == 0:
-        log.error("No Cerebras API keys configured — skipping page generation")
+        log.error("No LLM providers configured — skipping page generation but still refreshing site artifacts")
+        from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage, _rebuild_pages_index
+        _rebuild_sitemap(Path("site"))
+        _rebuild_homepage(Path("site"))
+        _rebuild_pages_index(Path("site"))
         return 0
 
     if not budget_available():
