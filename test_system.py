@@ -6,6 +6,7 @@ import sys
 import time
 from datetime import UTC, datetime
 from pathlib import Path
+import re
 
 
 def collect_system_status() -> dict:
@@ -36,9 +37,14 @@ def collect_system_status() -> dict:
     score_yaml = Path(".github/workflows/score_publish.yml").read_text(encoding="utf-8")
     programmatic_yaml = Path(".github/workflows/programmatic.yml").read_text(encoding="utf-8")
 
-    score_tokens = 40 * 4000 * 4
+    score_batch_match = re.search(r'SCORE_BATCH_SIZE:\s*"(\d+)"', score_yaml)
+    score_batch_size = int(score_batch_match.group(1)) if score_batch_match else 40
+    max_pages_match = re.search(r"max_pages \|\| '(\d+)'", programmatic_yaml)
+    max_pages = int(max_pages_match.group(1)) if max_pages_match else 130
+
+    score_tokens = score_batch_size * 4000 * 4
     publish_tokens = 150_000
-    programmatic_tokens = 130 * 5000 * 5
+    programmatic_tokens = max_pages * 5000 * 5
     total_tokens = score_tokens + publish_tokens + programmatic_tokens
     capacity = 4_750_000
 
@@ -49,6 +55,8 @@ def collect_system_status() -> dict:
         "pages": pages,
         "score_yaml": score_yaml,
         "programmatic_yaml": programmatic_yaml,
+        "score_batch_size": score_batch_size,
+        "max_pages": max_pages,
         "score_tokens": score_tokens,
         "publish_tokens": publish_tokens,
         "programmatic_tokens": programmatic_tokens,
@@ -89,13 +97,13 @@ def render_status(status: dict):
     print("\n[4] CONFIGURATION CHECK")
     print(
         "    "
-        + ("OK" if 'SCORE_BATCH_SIZE: "40"' in status["score_yaml"] else "FAIL")
-        + " Score batch size = 40"
+        + ("OK" if status["score_batch_size"] == 80 else "FAIL")
+        + f" Score batch size = {status['score_batch_size']}"
     )
     print(
         "    "
-        + ("OK" if "max_pages || '130'" in status["programmatic_yaml"] else "FAIL")
-        + " Programmatic max = 130"
+        + ("OK" if status["max_pages"] == 110 else "FAIL")
+        + f" Programmatic max = {status['max_pages']}"
     )
 
     print("\n[5] BUDGET ALLOCATION")
@@ -108,8 +116,8 @@ def render_status(status: dict):
 
 def test_quota_and_clusters():
     status = collect_system_status()
-    assert 'SCORE_BATCH_SIZE: "40"' in status["score_yaml"]
-    assert "max_pages || '130'" in status["programmatic_yaml"]
+    assert status["score_batch_size"] == 80
+    assert status["max_pages"] == 110
     assert status["total_tokens"] < status["capacity"]
     assert (status["capacity"] - status["total_tokens"]) / status["capacity"] > 0.10
 

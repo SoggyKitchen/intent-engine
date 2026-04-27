@@ -48,7 +48,7 @@ jobs:
           CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          SCORE_BATCH_SIZE: "150"
+          SCORE_BATCH_SIZE: "80"
           LOG_LEVEL: INFO
           MONETIZATION_MODE: ${{ secrets.MONETIZATION_MODE }}
 
