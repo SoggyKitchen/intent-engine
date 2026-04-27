@@ -6,6 +6,12 @@ __pycache__/
 dist/
 *.egg-info/
 .pytest_cache/
+.pytest-run/
+.pytest-tmp/
+.tmp-run/
+.uv-cache/
+uv-cache-local/
+test-temp/
 data/*.db-shm
 data/*.db-wal
 outputs/generated/

@@ -321,7 +321,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 
     grouped: dict[str, list[tuple[str, str]]] = {t: [] for t in TYPE_ORDER}
     domain = get("SITE_DOMAIN", "https://saaspare.org")
-    ga_id = get("GA_MEASUREMENT_ID", "")
+    ga_id = get("GA_MEASUREMENT_ID", "G-RLYVYV8WQJ")
 
     for f in sorted(pages_dir.glob("*.html"), key=lambda p: p.stem):
         if f.stem in _PAGES_EXCLUDE:
@@ -412,6 +412,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <nav>
   <a href="{domain}">SaaSpare</a>
   <a href="{domain}/pages/">All Comparisons</a>
+  <a href="{domain}/shortlist.html">Shortlist Builder</a>
   <a href="{domain}/about.html">About</a>
 </nav>
 <div class="hero">
@@ -439,6 +440,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   <div class="empty" id="empty-state">No pages matched that search. Try a product name like HubSpot, Ahrefs, or ClickUp.</div>
   <footer>
     <p>Last updated: {today} &nbsp;|&nbsp;
+    <a href="{domain}/shortlist.html">Shortlist Builder</a> &nbsp;|&nbsp;
     <a href="{domain}/about.html">About</a> &nbsp;|&nbsp;
     <a href="{domain}/privacy.html">Privacy</a></p>
   </footer>

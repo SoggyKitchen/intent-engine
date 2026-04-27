@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaaSpare Shortlist Builder | Find the Right SaaS Stack</title>
+<meta name="description" content="Answer a few buyer-fit questions and get a ranked SaaS shortlist with pricing pages, alternatives and trial links.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://saaspare.org/shortlist.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="SaaSpare Shortlist Builder">
+<meta property="og:description" content="Get a ranked SaaS shortlist based on team size, budget, category and urgency.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saaspare.org/shortlist.html">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SaaSpare Shortlist Builder",
+  "url": "https://saaspare.org/shortlist.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "description": "Interactive B2B SaaS shortlist builder for buyers comparing software tools."
+}
+</script>
+<style>
+:root{--bg:#080810;--panel:#101017;--panel2:#151520;--border:rgba(255,255,255,.1);--text:#f8f7f4;--muted:rgba(248,247,244,.58);--soft:rgba(248,247,244,.08);--accent:#e94560;--accent2:#f6b35d;--good:#65d6a3}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:linear-gradient(180deg,#080810 0%,#0d0d14 42%,#101017 100%);color:var(--text);min-height:100vh;line-height:1.55}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;background:rgba(8,8,16,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.brand{font-weight:900;margin-right:auto;letter-spacing:-.02em}.brand em{font-style:normal;color:var(--accent)}
+nav a:not(.brand){font-size:.86rem;color:var(--muted);font-weight:650}nav a:hover{color:#fff}
+.shell{max-width:1120px;margin:0 auto;padding:4.5rem 1.5rem 5rem}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:2rem;align-items:end;margin-bottom:2rem}
+.eyebrow{color:var(--accent2);font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.7rem}
+h1{font-size:clamp(2.1rem,6vw,4.8rem);line-height:1.02;letter-spacing:-.055em;max-width:760px}
+.sub{color:var(--muted);font-size:1.02rem;max-width:650px;margin-top:1rem}
+.score-card{background:linear-gradient(145deg,rgba(233,69,96,.12),rgba(246,179,93,.08));border:1px solid rgba(246,179,93,.2);border-radius:8px;padding:1.25rem}
+.score-card strong{display:block;font-size:2rem;line-height:1;margin-bottom:.35rem}.score-card span{color:var(--muted);font-size:.9rem}
+.builder{display:grid;grid-template-columns:360px minmax(0,1fr);gap:1rem}
+.panel{background:rgba(255,255,255,.045);border:1px solid var(--border);border-radius:8px}
+.controls{padding:1.1rem;position:sticky;top:76px;align-self:start}
+.field{margin-bottom:1rem}.field label{display:block;font-size:.74rem;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.45rem}
+select,.field input{width:100%;background:#0c0c12;border:1px solid var(--border);color:#fff;border-radius:7px;padding:.78rem .85rem;font:inherit;outline:none}
+select:focus,.field input:focus{border-color:rgba(233,69,96,.55);box-shadow:0 0 0 3px rgba(233,69,96,.1)}
+.segments{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem}.seg{border:1px solid var(--border);background:var(--soft);color:var(--muted);border-radius:7px;padding:.72rem .4rem;font:inherit;font-size:.78rem;font-weight:800;cursor:pointer}.seg.active{background:rgba(233,69,96,.2);border-color:rgba(233,69,96,.5);color:#fff}
+.results{padding:1rem}.result-head{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;border-bottom:1px solid var(--border);padding:.25rem .25rem 1rem;margin-bottom:1rem}
+.result-head h2{font-size:1.25rem;letter-spacing:-.02em}.result-head p{color:var(--muted);font-size:.88rem;margin-top:.2rem}.fit{font-size:.78rem;color:var(--good);font-weight:900;background:rgba(101,214,163,.1);border:1px solid rgba(101,214,163,.25);border-radius:999px;padding:.35rem .65rem;white-space:nowrap}
+.cards{display:grid;gap:.75rem}.tool{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:.9rem;align-items:center;background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:8px;padding:1rem}
+.rank{width:34px;height:34px;border-radius:7px;background:rgba(233,69,96,.15);color:#ffb5c0;font-weight:900;display:flex;align-items:center;justify-content:center}
+.tool h3{font-size:1rem}.tool p{font-size:.84rem;color:var(--muted);margin-top:.2rem}.tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.55rem}.tag{font-size:.68rem;color:rgba(255,255,255,.7);background:rgba(255,255,255,.07);border:1px solid var(--border);border-radius:999px;padding:.18rem .48rem}
+.actions{display:flex;gap:.45rem;align-items:center}.btn{border:1px solid rgba(233,69,96,.55);background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border-radius:999px;padding:.65rem .9rem;font-size:.78rem;font-weight:900;white-space:nowrap}.ghost{background:transparent;border-color:var(--border);color:var(--muted)}
+.lead{margin-top:1rem;padding:1rem;background:rgba(246,179,93,.08);border:1px solid rgba(246,179,93,.18);border-radius:8px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.75rem;align-items:center}.lead p{color:var(--muted);font-size:.86rem}.lead input{background:#0c0c12;border:1px solid var(--border);border-radius:999px;color:#fff;padding:.72rem 1rem;min-width:230px}
+.lead button{border:none;background:#fff;color:#111;border-radius:999px;padding:.72rem 1rem;font-weight:900;cursor:pointer}
+.note{margin-top:1rem;color:rgba(255,255,255,.32);font-size:.78rem}
+@media(max-width:860px){.hero,.builder{grid-template-columns:1fr}.controls{position:static}.score-card{display:none}.tool{grid-template-columns:auto minmax(0,1fr)}.actions{grid-column:2;justify-content:flex-start}.lead{grid-template-columns:1fr}.lead input{min-width:0;width:100%}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
+</head>
+<body>
+<nav>
+  <a class="brand" href="/">Saa<em>Spare</em></a>
+  <a href="/pages/">Comparisons</a>
+  <a href="/pages/saas-roi-calculator.html">ROI Calculator</a>
+  <a href="/shortlist.html">Shortlist Builder</a>
+</nav>
+<main class="shell">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Buyer-fit recommender</div>
+      <h1>Build a SaaS shortlist in under a minute.</h1>
+      <p class="sub">Pick the category, team size and budget pressure. SaaSpare ranks the tools that are most likely to fit, then points you to pricing, alternatives and buyer pages.</p>
+    </div>
+    <div class="score-card"><strong id="fit-score">92%</strong><span>Current fit confidence based on your inputs and monetized buyer paths.</span></div>
+  </section>
+  <section class="builder">
+    <aside class="panel controls">
+      <div class="field"><label for="category">Category</label><select id="category"></select></div>
+      <div class="field"><label>Team size</label><div class="segments" data-name="team"><button class="seg active" data-value="small">Small</button><button class="seg" data-value="mid">Mid</button><button class="seg" data-value="large">Large</button></div></div>
+      <div class="field"><label>Budget pressure</label><div class="segments" data-name="budget"><button class="seg active" data-value="low">Low</button><button class="seg" data-value="medium">Medium</button><button class="seg" data-value="high">High</button></div></div>
+      <div class="field"><label>Buying stage</label><div class="segments" data-name="stage"><button class="seg active" data-value="research">Research</button><button class="seg" data-value="trial">Trial</button><button class="seg" data-value="buy">Buy</button></div></div>
+      <p class="note">The shortlist updates instantly and keeps every outbound click on SaaSpare's tracked `/go/` layer.</p>
+    </aside>
+    <section class="panel results">
+      <div class="result-head"><div><h2 id="result-title">Recommended shortlist</h2><p id="result-copy">Ranked for fit, budget and likelihood to convert.</p></div><span class="fit" id="result-fit">High intent</span></div>
+      <div class="cards" id="cards"></div>
+      <form class="lead" action="https://formsubmit.co/smithelly30121@gmail.com" method="POST">
+        <div><strong>Want the shortlist by email?</strong><p>Send yourself the current category and use it when you apply for partner programs or post on social.</p></div>
+        <input type="hidden" name="_subject" value="SaaSpare shortlist request">
+        <input type="hidden" name="_next" value="https://saaspare.org/pages/">
+        <input type="hidden" name="shortlist_category" id="lead-category">
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </section>
+</main>
+<script>
+const CATEGORIES = {
+  crm: {label:"CRM", copy:"Sales teams choosing between pipeline, automation and enterprise CRM.", tools:[
+    {name:"HubSpot CRM", slug:"hubspot-crm", page:"/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Small and mid-market teams that want CRM plus marketing in one system", tags:["free CRM","marketing fit","recurring upside"], small:3, mid:3, large:2, low:3, medium:3, high:2, research:3, trial:3, buy:3},
+    {name:"Pipedrive", slug:"pipedrive", page:"/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Pipeline-heavy sales teams that want a cleaner sales workflow", tags:["sales teams","simple setup","SMB"], small:3, mid:3, large:1, low:2, medium:3, high:3, research:2, trial:3, buy:3},
+    {name:"Salesforce", slug:"salesforce", page:"/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Larger teams that need admin depth, reporting and ecosystem breadth", tags:["enterprise","deep CRM","trial page"], small:1, mid:2, large:3, low:1, medium:2, high:3, research:3, trial:2, buy:2}
+  ]},
+  seo: {label:"SEO and content", copy:"Content teams comparing keyword research, rank tracking and optimization tools.", tools:[
+    {name:"Semrush", slug:"semrush", page:"/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Agencies and teams that want one broad SEO suite", tags:["high ticket","agency","all-in-one"], small:2, mid:3, large:3, low:1, medium:2, high:3, research:3, trial:3, buy:3},
+    {name:"Surfer SEO", slug:"surfer-seo", page:"/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Content teams that care most about on-page optimization", tags:["content ops","recurring","writer fit"], small:3, mid:3, large:2, low:2, medium:3, high:3, research:3, trial:3, buy:3},
+    {name:"Ahrefs", slug:"ahrefs", page:"/pages/ahrefs-vs-semrush-which-is-better-in-2026.html", best:"SEO operators prioritizing backlinks and competitive research", tags:["SEO suite","research","comparison"], small:2, mid:3, large:3, low:1, medium:2, high:3, research:3, trial:2, buy:2}
+  ]},
+  project: {label:"Project management", copy:"Operations teams choosing a work hub for projects, docs and execution.", tools:[
+    {name:"ClickUp", slug:"clickup", page:"/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Teams that want tasks, docs and dashboards in one lower-cost workspace", tags:["all-in-one","budget fit","recurring"], small:3, mid:3, large:2, low:3, medium:3, high:2, research:3, trial:3, buy:3},
+    {name:"Notion", slug:"notion", page:"/pages/notion-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Teams that want documentation, lightweight projects and flexible knowledge bases", tags:["docs","startups","high commission"], small:3, mid:2, large:2, low:3, medium:2, high:1, research:3, trial:3, buy:2},
+    {name:"Asana", slug:"asana", page:"/pages/asana-vs-clickup-which-is-better-in-2026.html", best:"Teams that need mature project tracking without building a custom workspace", tags:["workflows","mid-market","comparison"], small:2, mid:3, large:3, low:1, medium:3, high:3, research:3, trial:2, buy:2}
+  ]},
+  finance: {label:"Finance ops", copy:"Finance teams comparing accounting, cards, spend and expense workflows.", tools:[
+    {name:"Xero", slug:"xero", page:"/pages/xero-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Small businesses that want cloud accounting with a clear pricing page", tags:["accounting","US pricing","recurring"], small:3, mid:2, large:1, low:3, medium:3, high:2, research:3, trial:3, buy:3},
+    {name:"Ramp", slug:"ramp", page:"/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay.html", best:"US companies that want spend controls, cards and finance automation", tags:["spend ops","high value","finance"], small:2, mid:3, large:3, low:2, medium:3, high:3, research:3, trial:2, buy:3},
+    {name:"FreshBooks", slug:"freshbooks", page:"/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Service businesses and freelancers that want invoicing plus accounting basics", tags:["SMB","invoicing","trial"], small:3, mid:2, large:1, low:3, medium:2, high:1, research:2, trial:3, buy:3}
+  ]},
+  security: {label:"Security", copy:"Teams comparing password managers, ZTNA and business security tools.", tools:[
+    {name:"1Password", slug:"1password", page:"/pages/1password-vs-bitwarden-which-is-better-in-2026.html", best:"Teams that want a polished password manager and business rollout path", tags:["passwords","business","recurring"], small:3, mid:3, large:3, low:2, medium:3, high:3, research:3, trial:3, buy:3},
+    {name:"Bitwarden", slug:"bitwarden", page:"/pages/bitwarden-vs-dashlane-which-is-better-in-2026.html", best:"Cost-sensitive teams that still want strong password manager coverage", tags:["budget","open source","pricing"], small:3, mid:3, large:2, low:3, medium:3, high:1, research:3, trial:3, buy:2},
+    {name:"NordLayer", slug:"nordlayer", page:"/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Distributed teams looking for business VPN or simple ZTNA rollout", tags:["ZTNA","remote teams","security"], small:2, mid:3, large:3, low:1, medium:2, high:3, research:3, trial:2, buy:3}
+  ]}
+};
+const state = {category:"crm", team:"small", budget:"low", stage:"research"};
+const category = document.getElementById("category");
+Object.entries(CATEGORIES).forEach(([key,value])=>{const option=document.createElement("option");option.value=key;option.textContent=value.label;category.appendChild(option);});
+function scoreTool(tool){return (tool[state.team]||0)*3+(tool[state.budget]||0)*2+(tool[state.stage]||0)*2;}
+function track(name, params){if(window.gtag)gtag("event",name,params);}
+function render(){
+  const group = CATEGORIES[state.category];
+  document.getElementById("result-title").textContent = group.label + " shortlist";
+  document.getElementById("result-copy").textContent = group.copy;
+  document.getElementById("lead-category").value = group.label + " / " + state.team + " / " + state.budget + " / " + state.stage;
+  const ranked = [...group.tools].sort((a,b)=>scoreTool(b)-scoreTool(a));
+  const topScore = Math.min(98, 70 + scoreTool(ranked[0]));
+  document.getElementById("fit-score").textContent = topScore + "%";
+  document.getElementById("result-fit").textContent = state.stage === "buy" ? "Ready to compare offers" : "High intent";
+  const cards = ranked.map((tool,index)=>`
+    <article class="tool">
+      <div class="rank">${index+1}</div>
+      <div>
+        <h3>${tool.name}</h3>
+        <p>${tool.best}</p>
+        <div class="tags">${tool.tags.map(tag=>`<span class="tag">${tag}</span>`).join("")}</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/go/${tool.slug}" data-tool="${tool.name}" data-slot="${index+1}">Visit</a>
+        <a class="btn ghost" href="${tool.page}">Read</a>
+      </div>
+    </article>`).join("");
+  document.getElementById("cards").innerHTML = cards;
+  document.querySelectorAll(".btn[href^='/go/']").forEach(link=>link.addEventListener("click",()=>track("shortlist_click",{tool:link.dataset.tool,slot:link.dataset.slot,category:group.label,team_size:state.team,budget_pressure:state.budget,buying_stage:state.stage})));
+  track("shortlist_result",{category:group.label,team_size:state.team,budget_pressure:state.budget,buying_stage:state.stage,top_tool:ranked[0].name});
+}
+category.addEventListener("change",event=>{state.category=event.target.value;render();});
+document.querySelectorAll(".segments").forEach(group=>group.addEventListener("click",event=>{const button=event.target.closest(".seg");if(!button)return;group.querySelectorAll(".seg").forEach(item=>item.classList.remove("active"));button.classList.add("active");state[group.dataset.name]=button.dataset.value;render();}));
+render();
+</script>
+</body>
+</html>

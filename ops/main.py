@@ -139,6 +139,15 @@ def backlinks():
     click.echo("OK  Backlink submission done")
 
 
+@cli.command("growth-brief")
+def growth_brief():
+    """Generate the owner growth brief: partners, redirects, and posting queue."""
+    from ops.growth_brief import generate_growth_brief
+
+    path = generate_growth_brief()
+    click.echo(f"OK  Growth brief ready: {path}")
+
+
 @cli.command("youtube-bridge")
 def youtube_bridge():
     """Build the SaaSpare page manifest used by the YouTube content engine."""

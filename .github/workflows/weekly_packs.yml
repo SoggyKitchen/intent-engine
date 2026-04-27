@@ -33,11 +33,13 @@ jobs:
             echo "Generating pack for $vertical..."
             uv run engine pack $vertical
           done
+          uv run engine growth-brief
         env:
           DB_PATH: data/intent.db
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
           AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           MONETIZATION_MODE: ${{ secrets.MONETIZATION_MODE }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
           LOG_LEVEL: INFO
