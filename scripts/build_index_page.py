@@ -5,6 +5,7 @@ a card-grid layout matching the homepage design.
 Run: .venv/Scripts/python scripts/build_index_page.py
 """
 import re
+from datetime import date
 from pathlib import Path
 
 PAGES = Path("site/pages")
@@ -151,19 +152,24 @@ def build():
   *{{box-sizing:border-box;margin:0;padding:0}}
   body{{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#080810;color:rgba(255,255,255,.85);line-height:1.6}}
   /* NAV */
-  nav{{background:rgba(8,8,16,.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);padding:.75rem 1.5rem;display:flex;align-items:center;gap:1.5rem;position:sticky;top:0;z-index:50}}
-  .logo{{display:flex;align-items:center;gap:.6rem;text-decoration:none;margin-right:auto}}
-  .logo-bars{{display:flex;flex-direction:column;gap:3px}}
-  .logo-bars span{{display:block;height:2px;border-radius:2px;background:#e94560}}
-  .logo-bars span:nth-child(1){{width:18px}}
-  .logo-bars span:nth-child(2){{width:12px}}
-  .logo-bars span:nth-child(3){{width:15px}}
-  .logo-text{{font-weight:800;font-size:1.15rem;color:#fff;letter-spacing:-.02em}}
-  .logo-text em{{font-style:normal;color:#e94560}}
-  nav a{{color:rgba(255,255,255,.55);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .2s}}
-  nav a:hover{{color:#fff}}
+  nav{{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06)}}
+  .logo{{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}}
+  .logo-mark{{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}}
+  .mark-top,.mark-bot{{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}}
+  .wv{{pointer-events:none;transition:opacity .3s}}
+  @keyframes markGlow{{0%,100%{{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}}50%{{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}}}
+  .logo:hover .logo-mark{{animation:none}}
+  .logo:hover .mark-top{{transform:translateX(26px);filter:drop-shadow(-2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}}
+  .logo:hover .mark-bot{{transform:translateX(-26px);filter:drop-shadow(2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}}
+  .logo:hover .wv,.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{{opacity:0}}
+  .logo-text{{font-weight:800;font-size:1.05rem;letter-spacing:-.5px;color:#fff}}
+  .logo-text em{{color:#e94560;font-style:normal}}
+  .nav-link{{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s;text-decoration:none}}
+  .nav-link:hover{{color:#fff}}
+  .nav-cta{{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;margin-left:6px;transition:transform .15s,box-shadow .15s;text-decoration:none}}
+  .nav-cta:hover{{transform:translateY(-1px);box-shadow:0 6px 20px rgba(233,69,96,.45)}}
   /* HERO */
-  .hero{{background:radial-gradient(ellipse 120% 80% at 50% -10%,#1a0d12 0%,#0d0008 45%,#080810 80%);padding:3.5rem 1.5rem 2.5rem;text-align:center;border-bottom:1px solid rgba(255,255,255,.05)}}
+  .hero{{background:radial-gradient(ellipse 120% 80% at 50% -10%,#1a0d12 0%,#0d0008 45%,#080810 80%);padding:6rem 1.5rem 2.5rem;text-align:center;border-bottom:1px solid rgba(255,255,255,.05)}}
   .hero h1{{font-size:clamp(1.8rem,5vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;color:#fff;margin-bottom:.6rem}}
   .hero h1 em{{font-style:normal;color:#e94560}}
   .hero-sub{{color:rgba(255,255,255,.5);font-size:1.05rem;margin-bottom:1.5rem}}
@@ -197,17 +203,19 @@ def build():
   footer a:hover{{color:rgba(255,255,255,.7)}}
   /* HIDDEN search */
   .page-link.hidden{{display:none}}
-  @media(max-width:600px){{.page-grid{{grid-template-columns:1fr 1fr}}.hero h1{{font-size:1.8rem}}nav .hide-mobile{{display:none}}}}
+  @media(max-width:768px){{.nav-link,.nav-cta{{display:none}}.hero{{padding:5rem 1.25rem 2rem}}.page-grid{{grid-template-columns:1fr 1fr}}.hero h1{{font-size:1.8rem}}}}
 </style>
 </head>
 <body>
 <nav>
   <a href="{DOMAIN}" class="logo">
-    <div class="logo-bars"><span></span><span></span><span></span></div>
-    <div class="logo-text">Saa<em>Spare</em></div>
+    <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg>
+    <span class="logo-text">Saa<em>Spare</em></span>
   </a>
-  <a href="{DOMAIN}/pages/" class="hide-mobile">All Comparisons</a>
-  <a href="{DOMAIN}/about.html" class="hide-mobile">About</a>
+  <a href="{DOMAIN}/pages/" class="nav-link">Comparisons</a>
+  <a href="{DOMAIN}/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
+  <a href="{DOMAIN}/about.html" class="nav-link">About</a>
+  <a href="{DOMAIN}/pages/" class="nav-cta">Browse Tools &#8594;</a>
 </nav>
 
 <div class="hero">
@@ -231,7 +239,7 @@ def build():
 </div>
 
 <footer>
-  <p>Last updated: April 24, 2026 &nbsp;·&nbsp;
+  <p>Last updated: {date.today().strftime("%B %d, %Y").replace(" 0", " ")} &nbsp;·&nbsp;
   <a href="{DOMAIN}/about.html">About</a> &nbsp;·&nbsp;
   <a href="{DOMAIN}/privacy.html">Privacy</a></p>
 </footer>
