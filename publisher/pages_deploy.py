@@ -220,7 +220,7 @@ def _rebuild_homepage(site_dir: Path):
     )
     html = re.sub(
         r'(<div class="badge"><span class="badge-dot"></span>)(.*?)(</div>)',
-        rf'\g<1>{page_count} comparisons live | {weekly_pages} added in the last 7 days\g<3>',
+        rf'\g<1>{page_count} comparisons live\g<3>',
         html,
         count=1,
         flags=re.DOTALL,
