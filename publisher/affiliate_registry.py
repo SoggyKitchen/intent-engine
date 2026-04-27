@@ -167,7 +167,7 @@ PROGRAMS = {
          "affiliate_url": "https://ramp.com/partners", "network": "direct",
          "commission": "$500 per referral", "commission_pct": 0, "recurring": False, "avg_plan_usd": 500},
         {"name": "Expensify", "homepage": "https://www.expensify.com",
-         "affiliate_url": "https://use.expensify.com/accountants", "network": "direct",
+         "affiliate_url": "https://www.expensify.com", "network": "direct",
          "commission": "0.5% of referred spend", "commission_pct": 1, "recurring": False, "avg_plan_usd": 5},
         {"name": "Xero", "homepage": "https://www.xero.com/us/pricing-plans/",
          "affiliate_url": "https://www.xero.com/partners/become-a-partner/", "network": "partnerstack",
