@@ -79,9 +79,6 @@ jobs:
         env:
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           VALIDATE_LIVE_REDIRECTS: "false"
-          VALIDATE_LIVE_REDIRECTS: "false"
-          VALIDATE_LIVE_REDIRECTS: "false"
-          VALIDATE_LIVE_REDIRECTS: "false"
 
       - name: Commit results
         run: |

@@ -5,7 +5,7 @@ on:
     inputs:
       max_pages:
         description: 'Max pages to generate'
-        default: '200'
+        default: '110'
   schedule:
     - cron: "0 0,5,10,15,20 * * *"  # 5x daily every 5h (UTC) = 10am,3pm,8pm,1am,6am Brisbane
 
@@ -37,7 +37,7 @@ jobs:
           DB_PATH: data/intent.db
 
       - name: Run programmatic SEO
-        run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '130' }}
+        run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '110' }}
         env:
           DB_PATH: data/intent.db
           CEREBRAS_API_KEYS: ${{ secrets.CEREBRAS_API_KEYS }}
@@ -61,9 +61,6 @@ jobs:
         run: uv run python scripts/validate_affiliate_urls.py
         env:
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
-          VALIDATE_LIVE_REDIRECTS: "false"
-          VALIDATE_LIVE_REDIRECTS: "false"
-          VALIDATE_LIVE_REDIRECTS: "false"
           VALIDATE_LIVE_REDIRECTS: "false"
 
       - name: Submit backlinks + IndexNow
