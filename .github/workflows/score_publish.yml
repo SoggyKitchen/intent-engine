@@ -98,9 +98,6 @@ jobs:
         env:
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           VALIDATE_LIVE_REDIRECTS: "false"
-          VALIDATE_LIVE_REDIRECTS: "false"
-          VALIDATE_LIVE_REDIRECTS: "false"
-          VALIDATE_LIVE_REDIRECTS: "false"
 
       - name: Run optimizer
         run: uv run engine optimize
