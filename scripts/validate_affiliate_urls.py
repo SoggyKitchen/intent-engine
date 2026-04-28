@@ -107,18 +107,24 @@ def parse_redirects(path: Path) -> list[tuple[str, str]]:
 
 
 def check_live_redirect(live_url: str, expected_url: str, headers: dict[str, str]) -> tuple[str, int, str]:
-    try:
-        response = httpx.get(live_url, follow_redirects=True, timeout=10, headers=headers)
-        return _classify_response(response.status_code, str(response.url), expected_url)
-    except Exception as exc:
-        if "CERTIFICATE_VERIFY_FAILED" in str(exc):
+    last_error = ""
+    for attempt in range(3):
+        try:
+            response = httpx.get(live_url, follow_redirects=True, timeout=15, headers=headers)
+            return _classify_response(response.status_code, str(response.url), expected_url)
+        except Exception as exc:
+            last_error = str(exc)[:120]
+            if "CERTIFICATE_VERIFY_FAILED" not in str(exc) or attempt > 0:
+                time.sleep(0.5 * (attempt + 1))
+                continue
             try:
-                response = httpx.get(live_url, follow_redirects=True, timeout=10, headers=headers, verify=False)
+                response = httpx.get(live_url, follow_redirects=True, timeout=15, headers=headers, verify=False)
                 status, code, final = _classify_response(response.status_code, str(response.url), expected_url)
                 return WARN if status == GOOD else status, code, f"{final} (certificate chain warning)"
             except Exception as retry_exc:
-                return DEAD, 0, str(retry_exc)[:120]
-        return DEAD, 0, str(exc)[:120]
+                last_error = str(retry_exc)[:120]
+                time.sleep(0.5 * (attempt + 1))
+    return DEAD, 0, last_error
 
 
 def main():
