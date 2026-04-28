@@ -1,5 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <clipPath id="top-half">
+      <path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/>
+    </clipPath>
+    <clipPath id="bottom-half">
+      <path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/>
+    </clipPath>
+    <mask id="paint-top-red">
+      <rect x="-400" y="-50" width="400" height="300" fill="white">
+        <animate attributeName="x" values="-400;-400;0;0;180;180" keyTimes="0;0.06;0.23;0.46;0.50;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+    </mask>
+    <mask id="paint-bottom-white">
+      <rect x="180" y="-50" width="400" height="300" fill="white">
+        <animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.23;0.43;0.56;0.60;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+    </mask>
+    <mask id="paint-top-white">
+      <rect x="-400" y="-50" width="400" height="300" fill="white">
+        <animate attributeName="x" values="-400;-400;0;0;180;180" keyTimes="0;0.56;0.73;0.86;0.90;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+    </mask>
+    <mask id="paint-bottom-red">
+      <rect x="180" y="-50" width="400" height="300" fill="white">
+        <animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.73;0.94;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+    </mask>
+  </defs>
   <rect width="180" height="180" rx="36" fill="#04030c"/>
   <path fill="#ffffff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/>
   <path fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/>
+  <g clip-path="url(#top-half)" mask="url(#paint-top-red)"><rect width="180" height="180" fill="#e94560"/></g>
+  <g clip-path="url(#bottom-half)" mask="url(#paint-bottom-white)"><rect width="180" height="180" fill="#ffffff"/></g>
+  <g clip-path="url(#top-half)" mask="url(#paint-top-white)"><rect width="180" height="180" fill="#ffffff"/></g>
+  <g clip-path="url(#bottom-half)" mask="url(#paint-bottom-red)"><rect width="180" height="180" fill="#e94560"/></g>
 </svg>
