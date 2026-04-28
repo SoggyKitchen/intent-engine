@@ -116,6 +116,20 @@ footer{text-align:center;color:rgba(255,255,255,.2);font-size:.8rem;padding:2rem
 footer a{color:rgba(255,255,255,.28);transition:color .2s}
 footer a:hover{color:rgba(255,255,255,.7)}
 
+.sticky-cta-v2{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);width:min(720px,calc(100vw - 28px));background:rgba(11,11,19,.96);color:#fff;padding:.75rem .85rem;display:none;align-items:center;justify-content:space-between;gap:.8rem;box-shadow:0 18px 60px rgba(0,0,0,.42);border:1px solid rgba(233,69,96,.26);border-radius:999px;z-index:100;backdrop-filter:blur(18px)}
+.sticky-cta-v2.show{display:flex}
+.sticky-cta-v2 a{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.55rem 1rem;border-radius:999px;text-decoration:none;font-weight:800;font-size:.82rem;white-space:nowrap}
+.sticky-cta-v2 button{background:none;border:none;color:rgba(255,255,255,.55);font-size:1.1rem;cursor:pointer}
+.exit-modal-v2{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:center;justify-content:center;z-index:1000;padding:1rem;backdrop-filter:blur(10px)}
+.exit-modal-v2.show{display:flex}
+.exit-card-v2{background:#111119;border:1px solid rgba(255,255,255,.1);box-shadow:0 28px 90px rgba(0,0,0,.5);border-radius:20px;padding:2rem;max-width:460px;text-align:center;position:relative;color:#fff}
+.exit-card-v2 h3{color:#fff;font-size:1.35rem;margin-bottom:.5rem;letter-spacing:-.03em}
+.exit-card-v2 p{color:rgba(255,255,255,.55);font-size:.92rem;margin-bottom:1.25rem}
+.exit-close-v2{position:absolute;top:.65rem;right:.8rem;background:none;border:none;font-size:1.45rem;color:rgba(255,255,255,.42);cursor:pointer}
+.exit-card-v2 form{display:flex;gap:.5rem;flex-wrap:wrap}
+.exit-card-v2 input{flex:1;min-width:190px;padding:.72rem .95rem;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(255,255,255,.07);color:#fff}
+.exit-card-v2 button[type=submit]{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:.72rem 1.15rem;border-radius:999px;font-weight:800;cursor:pointer}
+
 @media(max-width:560px){
   .grid2{grid-template-columns:1fr}
   .result-grid{grid-template-columns:1fr 1fr}
@@ -123,19 +137,8 @@ footer a:hover{color:rgba(255,255,255,.7)}
 
   .ad-slot-v2{margin:2rem 0;text-align:center;min-height:90px;background:#fafbfc;border-radius:6px;padding:1rem}
   .ad-label-v2{font-size:.65rem;color:#bbb;letter-spacing:.5px;text-transform:uppercase;display:block;margin-bottom:.25rem}
-  .sticky-cta-v2{position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:.75rem 1rem;display:none;align-items:center;justify-content:space-between;gap:1rem;box-shadow:0 -4px 18px rgba(0,0,0,.15);z-index:100}
-  .sticky-cta-v2.show{display:flex}
-  .sticky-cta-v2 a{background:#e94560;color:#fff;padding:.5rem 1.1rem;border-radius:5px;text-decoration:none;font-weight:700;font-size:.85rem;white-space:nowrap}
-  .sticky-cta-v2 button{background:none;border:none;color:rgba(255,255,255,.5);font-size:1.1rem;cursor:pointer}
-  .exit-modal-v2{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1000;padding:1rem}
-  .exit-modal-v2.show{display:flex}
-  .exit-card-v2{background:#fff;border-radius:12px;padding:2rem;max-width:440px;text-align:center;position:relative}
-  .exit-card-v2 h3{color:#1a1a2e;font-size:1.3rem;margin-bottom:.5rem}
-  .exit-card-v2 p{color:#666;font-size:.92rem;margin-bottom:1.25rem}
-  .exit-close-v2{position:absolute;top:.5rem;right:.75rem;background:none;border:none;font-size:1.5rem;color:#aaa;cursor:pointer}
-  .exit-card-v2 form{display:flex;gap:.5rem;flex-wrap:wrap}
-  .exit-card-v2 input{flex:1;min-width:180px;padding:.65rem .9rem;border:1px solid #ddd;border-radius:5px}
-  .exit-card-v2 button[type=submit]{background:#e94560;color:#fff;border:none;padding:.65rem 1.2rem;border-radius:5px;font-weight:700;cursor:pointer}
+  .sticky-cta-v2{left:10px;right:10px;bottom:10px;transform:none;width:auto;border-radius:18px}
+}
 </style>
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>

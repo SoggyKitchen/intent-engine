@@ -24,18 +24,20 @@ a{text-decoration:none;color:inherit}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;background:rgba(7,7,26,.94);backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
 .nav-link{color:rgba(255,255,255,.48);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500}.nav-link:hover{color:#fff}
 .nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:800;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px}
-.hero{max-width:1440px;margin:0 auto;padding:8rem clamp(1.25rem,3vw,2.6rem) 3rem;display:grid;grid-template-columns:1fr;gap:clamp(1rem,3vw,2rem);justify-items:center;text-align:center;position:relative}
+.hero{max-width:1440px;margin:0 auto;padding:7.35rem clamp(1.25rem,3vw,2.6rem) 3rem;display:grid;grid-template-columns:1fr;gap:clamp(1rem,3vw,2rem);justify-items:center;text-align:center;position:relative}
 .hero::after{content:"";position:absolute;left:50%;top:-12%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.13),transparent 68%);filter:blur(28px);pointer-events:none;transform:translateX(-50%)}
 .hero>div:first-child{max-width:980px;margin:0 auto}
-.eyebrow{display:inline-flex;align-items:center;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.9);padding:6px 16px;border-radius:100px;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:900;margin-bottom:1rem}
-h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:1.04;letter-spacing:-.055em;max-width:1060px;margin:0 auto;background:linear-gradient(135deg,#e94560 0%,#ff7890 34%,#f4a0ad 52%,#c73652 76%,#e94560 100%);background-size:220% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:ssShimmer 4.8s linear infinite}.hero p{color:rgba(255,255,255,.42);font-size:1rem;max-width:760px;margin:1rem auto 0;line-height:1.82}
+.eyebrow{display:inline-flex;align-items:center;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.82);padding:5px 14px;border-radius:100px;font-size:.66rem;text-transform:uppercase;letter-spacing:.11em;font-weight:900;margin-bottom:1.35rem}
+h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:1.14;letter-spacing:-.055em;max-width:1060px;margin:0 auto;padding-bottom:.16em;background:linear-gradient(135deg,#e94560 0%,#ff7890 34%,#f4a0ad 52%,#c73652 76%,#e94560 100%);background-size:240% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:ssShimmer 8s linear infinite}.hero p{color:rgba(255,255,255,.42);font-size:1rem;max-width:760px;margin:1rem auto 0;line-height:1.82}
 .proof{width:min(100%,380px);background:linear-gradient(145deg,rgba(233,69,96,.12),rgba(255,255,255,.035));border:1px solid rgba(233,69,96,.2);border-radius:20px;padding:1.2rem;box-shadow:0 22px 70px rgba(0,0,0,.2)}.proof strong{display:block;font-size:2.2rem;line-height:1;color:#fff}.proof span{display:block;color:rgba(255,255,255,.48);font-size:.85rem;margin-top:.4rem}
 .shell{max-width:1440px;margin:0 auto;padding:0 clamp(1.25rem,3vw,2.6rem) 5rem}
-.radar{display:grid;grid-template-columns:minmax(300px,360px) minmax(0,1fr);gap:clamp(1rem,1.4vw,1.25rem)}
+.radar{display:grid;grid-template-columns:minmax(280px,340px) minmax(0,1fr);gap:clamp(1rem,1.4vw,1.25rem)}
 .panel{background:linear-gradient(145deg,rgba(255,255,255,.054),rgba(255,255,255,.028));border:1px solid rgba(255,255,255,.085);border-radius:20px;padding:1rem;box-shadow:0 22px 70px rgba(0,0,0,.18)}
 label{display:block;color:rgba(255,255,255,.48);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-bottom:.45rem}
 select{width:100%;background:#0c0c12;border:1px solid rgba(255,255,255,.11);color:#fff;border-radius:999px;padding:.85rem 1rem;font:inherit;outline:none;margin-bottom:1rem}
+.quick-pick{display:grid;gap:.5rem;margin:1rem 0}.quick-pick button{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.055);color:rgba(255,255,255,.78);border-radius:14px;padding:.72rem .85rem;text-align:left;font:inherit;font-size:.82rem;font-weight:800;cursor:pointer}.quick-pick button:hover,.quick-pick button.active{background:rgba(233,69,96,.14);border-color:rgba(233,69,96,.3);color:#fff}
 .checks{display:grid;gap:.5rem}.checks label{display:flex;align-items:center;gap:.55rem;text-transform:none;letter-spacing:0;font-size:.86rem;color:rgba(255,255,255,.68);font-weight:700}.checks input{accent-color:#e94560}
+.helper{margin-top:1rem;color:rgba(255,255,255,.38);font-size:.78rem;line-height:1.55}
 .deal-grid{display:grid;gap:.85rem}.deal{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:center;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1.08rem;transition:transform .22s,border-color .22s,background .22s}.deal:hover{transform:translateY(-3px);border-color:rgba(233,69,96,.32);background:rgba(233,69,96,.055)}.deal h3{font-size:1rem}.deal p{color:rgba(255,255,255,.5);font-size:.84rem;margin-top:.25rem}.badges{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.65rem}.badge{font-size:.68rem;color:#ffccd4;background:rgba(233,69,96,.13);border:1px solid rgba(233,69,96,.28);border-radius:999px;padding:.2rem .5rem}.deal a{display:inline-flex;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border-radius:999px;padding:.65rem 1rem;font-size:.78rem;font-weight:900;white-space:nowrap;margin:.12rem}.deal a.secondary{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);color:rgba(255,255,255,.72)}
 .why{margin-top:1rem;display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem}.why article{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:1rem;box-shadow:0 22px 70px rgba(0,0,0,.16)}.why h2{font-size:.95rem}.why p{color:rgba(255,255,255,.46);font-size:.82rem;margin-top:.35rem}
 @media(max-width:860px){nav{padding:.75rem 1.2rem}.nav-link{display:none}.hero{padding:7rem 1.2rem 2.5rem}.shell{padding:0 1.2rem 4rem}.hero,.radar,.why{grid-template-columns:1fr}.proof{display:none}.deal{grid-template-columns:1fr}.deal a{width:max-content}}
@@ -73,12 +75,19 @@ select{width:100%;background:#0c0c12;border:1px solid rgba(255,255,255,.11);colo
         <option value="security">Security</option>
         <option value="project">Project management</option>
       </select>
+      <label>Shortcut</label>
+      <div class="quick-pick">
+        <button type="button" data-cat="crm" data-copy="trial,pricing">I need a CRM trial today</button>
+        <button type="button" data-cat="seo" data-copy="pricing,compare">Compare SEO tools before paying</button>
+        <button type="button" data-cat="finance" data-copy="pricing">Check finance-tool costs</button>
+      </div>
       <label>Show me</label>
       <div class="checks">
         <label><input type="checkbox" value="trial" checked> Free trials</label>
         <label><input type="checkbox" value="pricing" checked> Pricing pages</label>
         <label><input type="checkbox" value="compare" checked> Comparison proof</label>
       </div>
+      <p class="helper">Pick a shortcut or filter manually. Every result keeps you one click from the offer and one click from the unbiased read-first page.</p>
     </aside>
     <section class="panel">
       <div class="deal-grid" id="deals"></div>
@@ -112,6 +121,14 @@ function render(){
 }
 document.getElementById("category").addEventListener("change",render);
 document.querySelectorAll(".checks input").forEach(input=>input.addEventListener("change",render));
+document.querySelectorAll(".quick-pick button").forEach(button=>button.addEventListener("click",()=>{
+  document.querySelectorAll(".quick-pick button").forEach(item=>item.classList.remove("active"));
+  button.classList.add("active");
+  document.getElementById("category").value=button.dataset.cat;
+  const wanted=button.dataset.copy.split(",");
+  document.querySelectorAll(".checks input").forEach(input=>{input.checked=wanted.includes(input.value);});
+  render();
+}));
 render();
 </script>
 <script defer src="/assets/saaspare-ui.js"></script>
