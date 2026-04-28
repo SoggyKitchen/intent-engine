@@ -6,7 +6,38 @@
   --ss-text:#fff;
   --ss-accent:#e94560;
   --ss-accent-2:#ffb5c0;
+  --ss-page-max:1280px;
 }
+
+html{background:#080810}
+body{
+  background:
+    radial-gradient(900px 520px at 8% 18%,rgba(233,69,96,.075),transparent 62%),
+    radial-gradient(760px 460px at 94% 34%,rgba(233,69,96,.055),transparent 64%),
+    radial-gradient(900px 560px at 50% -12%,rgba(26,13,18,.9),transparent 58%),
+    #080810 !important;
+}
+body::before,
+body::after{
+  content:"";
+  position:fixed;
+  top:64px;
+  bottom:0;
+  width:clamp(90px,12vw,210px);
+  pointer-events:none;
+  z-index:0;
+  opacity:.42;
+}
+body::before{
+  left:0;
+  background:linear-gradient(90deg,rgba(233,69,96,.09),transparent),radial-gradient(circle at 0 22%,rgba(233,69,96,.16),transparent 58%);
+}
+body::after{
+  right:0;
+  background:linear-gradient(270deg,rgba(233,69,96,.08),transparent),radial-gradient(circle at 100% 38%,rgba(255,255,255,.06),transparent 62%);
+}
+body > *{position:relative}
+body > nav{z-index:200}
 
 .ss-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none;color:var(--ss-text)}
 .ss-logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:ssMarkGlow 4s ease-in-out infinite}
@@ -36,7 +67,138 @@
 .ss-adblock-note button:first-child{background:linear-gradient(135deg,#e94560,#c73652);border-color:rgba(233,69,96,.45)}
 @keyframes ssFadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
+/* Sitewide desktop polish for older generated/static pages. */
+.container,
+.section,
+.email-wrap,
+.footer-inner,
+.footer-bottom,
+.main,
+.shell,
+.page-hero > *{
+  max-width:min(var(--ss-page-max),calc(100vw - 72px)) !important;
+  margin-left:auto;
+  margin-right:auto;
+}
+.container,
+.section,
+.email-wrap,
+.footer-inner,
+.footer-bottom,
+.main,
+.shell{
+  width:100%;
+}
+.container{
+  padding-left:clamp(1.25rem,3vw,2.6rem) !important;
+  padding-right:clamp(1.25rem,3vw,2.6rem) !important;
+}
+.page-hero{
+  position:relative;
+  overflow:hidden;
+}
+.page-hero::before,
+.ss-page-ambient::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  pointer-events:none;
+  background:
+    radial-gradient(520px 260px at 18% 18%,rgba(233,69,96,.12),transparent 68%),
+    radial-gradient(520px 260px at 82% 8%,rgba(255,255,255,.045),transparent 70%);
+  opacity:.72;
+}
+.page-hero > *,
+.ss-page-ambient > *{
+  position:relative;
+}
+h1,
+.hero-title{
+  text-wrap:balance;
+}
+h1:not(.hero-title){
+  letter-spacing:-.04em;
+}
+h1:not(.hero-title) em,
+h1:not(.hero-title) span.grad-text,
+.section-heading .grad-text{
+  background:linear-gradient(135deg,#fff 0%,#ffb5c0 38%,#e94560 72%,#fff 100%);
+  background-size:220% auto;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  animation:ssShimmer 4.8s linear infinite;
+}
+@keyframes ssShimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+.stat-grid,
+.info-grid,
+.cat-grid,
+.comp-grid,
+.pages-grid{
+  gap:clamp(.85rem,1.4vw,1.25rem) !important;
+}
+.stat-card,
+.info-card,
+.tool-card,
+.tldr-box,
+.cta-section,
+.related,
+.email-box,
+.faq-item,
+.panel,
+.deal,
+.why article{
+  border-radius:18px !important;
+  box-shadow:0 22px 70px rgba(0,0,0,.18);
+}
+.tool-card,
+.info-card,
+.stat-card,
+.deal,
+.panel{
+  background:linear-gradient(145deg,rgba(255,255,255,.054),rgba(255,255,255,.028)) !important;
+}
+@media(min-width:980px){
+  .container{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+  }
+  .container > .section,
+  .container > .cta-section,
+  .container > .related,
+  .container > .email-box,
+  .container > .trust-bar,
+  .container > .ad-slot-v2,
+  .container > footer{
+    max-width:100% !important;
+  }
+  .container > .section:nth-of-type(3n+2):not(.verdict-box){
+    margin-left:min(5vw,64px);
+  }
+  .container > .section:nth-of-type(3n):not(.verdict-box){
+    margin-right:min(5vw,64px);
+  }
+  .pros-cons,
+  .info-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+  .stat-grid{
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  }
+}
+
 @media(max-width:720px){
+  body::before,
+  body::after{display:none}
+  .container,
+  .section,
+  .email-wrap,
+  .footer-inner,
+  .footer-bottom,
+  .main,
+  .shell{
+    max-width:100% !important;
+  }
   .ss-click-rail{left:12px;right:12px;bottom:12px;max-width:none}
   .ss-adblock-note{left:12px;right:12px;bottom:12px;max-width:none}
   .ss-logo-text{font-size:1rem}

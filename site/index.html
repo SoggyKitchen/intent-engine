@@ -117,7 +117,7 @@ h1.hero-title{font-size:clamp(2.2rem,6.5vw,3.9rem);font-weight:900;color:#fff;li
 .stat-val{font-size:1.8rem;font-weight:900;color:#e94560;letter-spacing:-.5px;line-height:1;display:block;font-variant-numeric:tabular-nums}
 .stat-label{font-size:.75rem;color:rgba(255,255,255,.26);margin-top:5px;display:block;font-weight:500;letter-spacing:.2px}
 .glow-line{height:1px;background:linear-gradient(90deg,transparent,rgba(233,69,96,.35),rgba(99,102,241,.25),transparent);opacity:.55}
-.section{padding:4.5rem 2rem;max-width:1080px;margin:0 auto;position:relative;z-index:1}
+.section{padding:4.5rem clamp(1.25rem,3vw,2.6rem);max-width:1280px;margin:0 auto;position:relative;z-index:1}
 .eyebrow{font-size:.69rem;font-weight:700;color:rgba(233,69,96,.72);letter-spacing:1.1px;text-transform:uppercase;margin-bottom:8px}
 .section-heading{font-size:1.58rem;font-weight:800;color:#fff;letter-spacing:-.4px;margin-bottom:2rem}
 .section-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2rem;flex-wrap:wrap;gap:.75rem}
@@ -155,7 +155,7 @@ h1.hero-title{font-size:clamp(2.2rem,6.5vw,3.9rem);font-weight:900;color:#fff;li
 .comp-arrow{color:rgba(255,255,255,.14);font-size:.82rem;flex-shrink:0;transition:all .22s;margin-left:auto}
 .comp-card:hover .comp-arrow{color:#e94560;transform:translateX(3px)}
 .comp-hidden{display:none!important}
-.email-wrap{padding:0 2rem 5.5rem;max-width:1080px;margin:0 auto;position:relative;z-index:1}
+.email-wrap{padding:0 clamp(1.25rem,3vw,2.6rem) 5.5rem;max-width:1280px;margin:0 auto;position:relative;z-index:1}
 .email-box{background:linear-gradient(135deg,rgba(233,69,96,.11) 0%,rgba(99,102,241,.08) 50%,rgba(233,69,96,.06) 100%);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:3.5rem 2.5rem;text-align:center;position:relative;overflow:hidden}
 .email-box::before{content:'';position:absolute;width:450px;height:450px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.13),transparent 70%);top:-150px;right:-120px;pointer-events:none}
 .email-box::after{content:'';position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.1),transparent 70%);bottom:-100px;left:-100px;pointer-events:none}
@@ -169,13 +169,13 @@ h1.hero-title{font-size:clamp(2.2rem,6.5vw,3.9rem);font-weight:900;color:#fff;li
 .email-row button:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(233,69,96,.56)}
 .email-note{font-size:.71rem;color:rgba(255,255,255,.17);margin-top:.9rem}
 footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
-.footer-inner{max-width:1080px;margin:0 auto;padding:3rem 2rem 2rem;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem}
+.footer-inner{max-width:1280px;margin:0 auto;padding:3rem clamp(1.25rem,3vw,2.6rem) 2rem;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem}
 .footer-brand p{font-size:.82rem;color:rgba(255,255,255,.24);line-height:1.72;max-width:220px;margin-top:.75rem}
 .footer-col h4{font-size:.67rem;font-weight:700;color:rgba(255,255,255,.24);letter-spacing:.85px;text-transform:uppercase;margin-bottom:.9rem}
 .footer-col a{display:block;font-size:.83rem;color:rgba(255,255,255,.34);margin-bottom:.52rem;transition:color .18s}
 .footer-col a:hover{color:#fff}
 .footer-logo{display:flex;align-items:center;gap:8px;margin-bottom:.6rem}
-.footer-bottom{max-width:1080px;margin:0 auto;padding:1.25rem 2rem;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.74rem;color:rgba(255,255,255,.2)}
+.footer-bottom{max-width:1280px;margin:0 auto;padding:1.25rem clamp(1.25rem,3vw,2.6rem);border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.74rem;color:rgba(255,255,255,.2)}
 .footer-bottom a{color:rgba(255,255,255,.26);transition:color .18s}
 .footer-bottom a:hover{color:rgba(255,255,255,.6)}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
