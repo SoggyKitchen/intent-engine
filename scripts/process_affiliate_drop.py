@@ -4,7 +4,7 @@ This script detects the network format, normalises to CJ-style columns,
 runs the importer, then moves the file to data/affiliate-imports/processed/.
 
 Supported networks (auto-detected by header row):
-  - CJ Affiliate   : ADVERTISER, CATEGORY, LINK
+  - CJ Affiliate   : ADVERTISER, CATEGORY, CLICK URL
   - ShareASale     : Merchant, Category, Affiliate Link
   - Impact Radius  : Brand/Advertiser, Category, Tracking Link / Deep Link URL
   - Awin           : Advertiser Name, Category, Deep Link
@@ -31,7 +31,8 @@ from publisher.affiliate_registry import IMPORTED_AFFILIATE_PATH, OVERRIDES_PATH
 
 
 _NETWORK_SIGNATURES = {
-    "cj": {"ADVERTISER", "CATEGORY", "LINK"},
+    "cj": {"ADVERTISER", "CATEGORY", "CLICK URL"},
+    "cj_legacy": {"ADVERTISER", "CATEGORY", "LINK"},
     "shareasale": {"Merchant", "Category", "Affiliate Link"},
     "impact": {"Brand", "Tracking Link"},
     "impact_alt": {"Advertiser", "Deep Link URL"},
@@ -56,41 +57,88 @@ def normalise_row(row: dict, network: str) -> dict | None:
                 return v
         return ""
 
+    def canonical(
+        advertiser: str,
+        category: str,
+        click_url: str,
+        name: str,
+        description: str,
+        epc_7d: str = "0",
+        epc_3m: str = "0",
+        link_type: str = "Text Link",
+        relationship_status: str = "Active",
+        keywords: str = "",
+    ) -> dict:
+        return {
+            "ADVERTISER": advertiser,
+            "CATEGORY": category or "computer software",
+            "CLICK URL": click_url,
+            "NAME": name or advertiser,
+            "DESCRIPTION": description or name or advertiser,
+            "KEYWORDS": keywords,
+            "RELATIONSHIP STATUS": relationship_status or "Active",
+            "LINK TYPE": link_type or "Text Link",
+            "SEVEN DAY EPC": epc_7d or "0",
+            "THREE MONTH EPC": epc_3m or "0",
+        }
+
     if network == "cj":
+        if not g("RELATIONSHIP STATUS"):
+            row["RELATIONSHIP STATUS"] = "Active"
+        if not g("LINK TYPE"):
+            row["LINK TYPE"] = "Text Link"
         return row
 
+    if network == "cj_legacy":
+        return canonical(
+            g("ADVERTISER"),
+            g("CATEGORY"),
+            g("CLICK URL", "LINK"),
+            g("NAME", "LINK NAME", "ADVERTISER"),
+            g("DESCRIPTION", "ADVERTISER"),
+            g("SEVEN DAY EPC", "7-Day EPC", "7 Day EPC"),
+            g("THREE MONTH EPC", "3 Month EPC"),
+            g("LINK TYPE", "LINKTYPE"),
+            g("RELATIONSHIP STATUS"),
+            g("KEYWORDS"),
+        )
+
     if network == "shareasale":
-        return {
-            "ADVERTISER": g("Merchant"),
-            "CATEGORY": g("Category"),
-            "LINK": g("Affiliate Link"),
-            "NAME": g("Link Name", "Link Description", "Merchant"),
-            "DESCRIPTION": g("Description", "Merchant"),
-            "7-Day EPC": g("EPC (7 Day)", "7 Day EPC"),
-        }
+        return canonical(
+            g("Merchant"),
+            g("Category"),
+            g("Affiliate Link", "Tracking Link", "URL"),
+            g("Link Name", "Link Description", "Merchant"),
+            g("Description", "Merchant"),
+            g("EPC (7 Day)", "7 Day EPC"),
+        )
 
     if network == "impact":
-        return {
-            "ADVERTISER": g("Brand", "Advertiser"),
-            "CATEGORY": g("Category", "Vertical"),
-            "LINK": g("Tracking Link", "Deep Link URL"),
-            "NAME": g("Ad Name", "Campaign Name", "Brand"),
-            "DESCRIPTION": g("Description", "Brand"),
-            "7-Day EPC": "0",
-        }
+        return canonical(
+            g("Brand", "Advertiser"),
+            g("Category", "Vertical"),
+            g("Tracking Link", "Deep Link URL", "Landing Page URL"),
+            g("Ad Name", "Campaign Name", "Brand", "Advertiser"),
+            g("Description", "Brand", "Advertiser"),
+        )
 
     if network == "awin":
-        return {
-            "ADVERTISER": g("Advertiser Name"),
-            "CATEGORY": g("Category"),
-            "LINK": g("Deep Link"),
-            "NAME": g("Link Name", "Advertiser Name"),
-            "DESCRIPTION": g("Description", "Advertiser Name"),
-            "7-Day EPC": "0",
-        }
+        return canonical(
+            g("Advertiser Name"),
+            g("Category"),
+            g("Deep Link", "Tracking Link", "Click URL"),
+            g("Link Name", "Advertiser Name"),
+            g("Description", "Advertiser Name"),
+        )
 
     url_col = next(
-        (k for k in row if re.search(r"link|url|href|tracking|affiliate", k, re.I)), None
+        (
+            k for k in row
+            if re.search(r"link|url|href|tracking|affiliate", k, re.I)
+            and not re.search(r"\b(id|identifier|status|name|type)\b", k, re.I)
+            and re.search(r"https?://", row.get(k, ""), re.I)
+        ),
+        None,
     )
     name_col = next(
         (k for k in row if re.search(r"advertiser|merchant|brand|company|name", k, re.I)), None
@@ -100,14 +148,13 @@ def normalise_row(row: dict, network: str) -> dict | None:
     )
     if not url_col or not name_col:
         return None
-    return {
-        "ADVERTISER": (row.get(name_col) or "").strip(),
-        "CATEGORY": (row.get(cat_col) or "software").strip() if cat_col else "computer software",
-        "LINK": (row.get(url_col) or "").strip(),
-        "NAME": (row.get(name_col) or "").strip(),
-        "DESCRIPTION": "",
-        "7-Day EPC": "0",
-    }
+    return canonical(
+        (row.get(name_col) or "").strip(),
+        (row.get(cat_col) or "software").strip() if cat_col else "computer software",
+        (row.get(url_col) or "").strip(),
+        (row.get(name_col) or "").strip(),
+        "",
+    )
 
 
 def convert_to_cj(src: Path, tmp: Path, network: str) -> int:
@@ -115,10 +162,21 @@ def convert_to_cj(src: Path, tmp: Path, network: str) -> int:
     with src.open(newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         rows = [normalise_row(r, network) for r in reader]
-    rows = [r for r in rows if r and r.get("LINK")]
+    rows = [r for r in rows if r and r.get("CLICK URL")]
     if not rows:
         return 0
-    fieldnames = ["ADVERTISER", "CATEGORY", "LINK", "NAME", "DESCRIPTION", "7-Day EPC"]
+    fieldnames = [
+        "ADVERTISER",
+        "CATEGORY",
+        "CLICK URL",
+        "NAME",
+        "DESCRIPTION",
+        "KEYWORDS",
+        "RELATIONSHIP STATUS",
+        "LINK TYPE",
+        "SEVEN DAY EPC",
+        "THREE MONTH EPC",
+    ]
     with tmp.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()

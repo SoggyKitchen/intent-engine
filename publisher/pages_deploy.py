@@ -15,9 +15,11 @@ PAGES_DIR = Path("site/pages")
 
 
 def deploy_all() -> bool:
+    _enhance_site_html(SITE_DIR)
     _rebuild_sitemap(SITE_DIR)
     _rebuild_homepage(SITE_DIR)
     _rebuild_pages_index(SITE_DIR)
+    _enhance_site_html(SITE_DIR)
     _ping_indexnow(SITE_DIR)
 
     if DRY_RUN:
@@ -102,6 +104,48 @@ _MOJIBAKE_REPLACEMENTS = {
     "Â·": " · ",
     "Ã—": "x",
 }
+
+
+def _inject_once(html: str, marker: str, snippet: str, before: str) -> str:
+    if marker in html:
+        return html
+    return html.replace(before, snippet + before, 1)
+
+
+def _enhance_site_html(site_dir: Path = SITE_DIR) -> int:
+    """Attach shared SaaSpare UX assets to every public HTML page."""
+    paths = list(site_dir.glob("*.html"))
+    pages_dir = site_dir / "pages"
+    if pages_dir.exists():
+        paths.extend(pages_dir.glob("*.html"))
+
+    changed = 0
+    for path in paths:
+        if path.stem in {"thanks", "verification"}:
+            continue
+        try:
+            html = path.read_text(encoding="utf-8", errors="ignore")
+        except Exception:
+            continue
+        original = html
+        html = _inject_once(
+            html,
+            "saaspare-ui.css",
+            '<link rel="stylesheet" href="/assets/saaspare-ui.css">\n',
+            "</head>",
+        )
+        html = _inject_once(
+            html,
+            "saaspare-ui.js",
+            '<script defer src="/assets/saaspare-ui.js"></script>\n',
+            "</body>",
+        )
+        if html != original:
+            path.write_text(html, encoding="utf-8")
+            changed += 1
+    if changed:
+        log.info(f"Enhanced shared SaaSpare UX assets on {changed} HTML pages")
+    return changed
 
 
 def _clean_display_text(text: str) -> str:
@@ -361,6 +405,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <meta name="description" content="Browse {total} B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{domain}/pages/">
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
 <meta property="og:title" content="All SaaS Comparisons & Guides | SaaSpare">
 <meta property="og:description" content="Browse {total} B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
 <meta property="og:type" content="website">
@@ -372,7 +417,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   a{{color:inherit;text-decoration:none}}
   nav{{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}}
   nav a{{color:var(--muted);font-size:.9rem}}
-  nav a:first-child{{color:#fff;font-weight:800;font-size:1.05rem;margin-right:auto}}
+  nav a:first-child{{margin-right:auto}}
   nav a:hover{{color:#fff}}
   .hero{{max-width:1100px;margin:0 auto;padding:4rem 1.5rem 2rem;text-align:center}}
   .hero h1{{font-size:clamp(2rem,5vw,3.2rem);color:#fff;letter-spacing:-.04em;margin-bottom:.75rem}}
@@ -412,8 +457,10 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <nav>
   <a href="{domain}">SaaSpare</a>
   <a href="{domain}/pages/">All Comparisons</a>
+  <a href="{domain}/pages/saas-roi-calculator.html">ROI Calculator</a>
   <a href="{domain}/shortlist.html">Shortlist Builder</a>
   <a href="{domain}/about.html">About</a>
+  <a href="{domain}/shortlist.html">Build Shortlist -></a>
 </nav>
 <div class="hero">
   <h1>All SaaS Comparisons & Guides</h1>
@@ -493,6 +540,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   }}
   applyFilters();
 </script>
+<script defer src="/assets/saaspare-ui.js"></script>
 </body>
 </html>
 """

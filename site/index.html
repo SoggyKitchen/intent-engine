@@ -20,6 +20,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://saaspare.org">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
 <script type="application/ld+json">
 [
   {
@@ -54,8 +55,9 @@
       {"@type":"ListItem","position":1,"name":"All Comparisons","url":"https://saaspare.org/pages/"},
       {"@type":"ListItem","position":2,"name":"ROI Calculator","url":"https://saaspare.org/pages/saas-roi-calculator.html"},
       {"@type":"ListItem","position":3,"name":"Shortlist Builder","url":"https://saaspare.org/shortlist.html"},
-      {"@type":"ListItem","position":4,"name":"About SaaSpare","url":"https://saaspare.org/about.html"},
-      {"@type":"ListItem","position":5,"name":"Contact","url":"https://saaspare.org/contact.html"}
+      {"@type":"ListItem","position":4,"name":"Deal Radar","url":"https://saaspare.org/deal-radar.html"},
+      {"@type":"ListItem","position":5,"name":"About SaaSpare","url":"https://saaspare.org/about.html"},
+      {"@type":"ListItem","position":6,"name":"Contact","url":"https://saaspare.org/contact.html"}
     ]
   }
 ]
@@ -207,6 +209,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
   <a href="/pages/" class="nav-link">Comparisons</a>
   <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
   <a href="/shortlist.html" class="nav-link">Shortlist Builder</a>
+  <a href="/deal-radar.html" class="nav-link">Deal Radar</a>
   <a href="/about.html" class="nav-link">About</a>
   <a href="/shortlist.html" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>
@@ -290,6 +293,31 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
     <a class="comp-card" href="/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="pipedrive pricing crm sales"><div class="comp-icon">&#128200;</div><div class="comp-body"><div class="comp-title">Pipedrive Pricing 2026</div><div class="comp-meta"><span class="comp-cat">CRM</span></div></div><div class="comp-arrow">&#8250;</div></a>
     <a class="comp-card" href="/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="semrush pricing seo tools"><div class="comp-icon">&#128269;</div><div class="comp-body"><div class="comp-title">Semrush Pricing 2026</div><div class="comp-meta"><span class="comp-cat">SEO</span><span class="comp-hot">Hot</span></div></div><div class="comp-arrow">&#8250;</div></a>
     <a class="comp-card" href="/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html" data-title="clickup pricing productivity pm"><div class="comp-icon">&#9989;</div><div class="comp-body"><div class="comp-title">ClickUp Pricing 2026</div><div class="comp-meta"><span class="comp-cat">PM</span></div></div><div class="comp-arrow">&#8250;</div></a>
+  </div>
+</div>
+<div class="glow-line"></div>
+
+<div class="section reveal" style="padding-top:3rem">
+  <div class="section-header">
+    <div><p class="eyebrow">Buyer tools</p><h2 class="section-heading">Do more than read comparisons</h2></div>
+    <a href="/deal-radar.html" class="view-all">Open Deal Radar &#8594;</a>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem">
+    <a href="/shortlist.html" class="cat-card">
+      <div class="cat-header"><span class="cat-emoji">01</span><span class="cat-count">Interactive</span></div>
+      <div class="cat-name">Shortlist Builder</div>
+      <div class="cat-desc">Rank tools by team size, budget pressure and buying stage before you start a trial.</div>
+    </a>
+    <a href="/deal-radar.html" class="cat-card">
+      <div class="cat-header"><span class="cat-emoji">02</span><span class="cat-count">Offers</span></div>
+      <div class="cat-name">Deal Radar</div>
+      <div class="cat-desc">Find free trials, pricing pages and buyer traps across SaaS categories.</div>
+    </a>
+    <a href="/pages/saas-roi-calculator.html" class="cat-card">
+      <div class="cat-header"><span class="cat-emoji">03</span><span class="cat-count">Finance</span></div>
+      <div class="cat-name">ROI Calculator</div>
+      <div class="cat-desc">Estimate whether a new tool is worth the monthly subscription and switching cost.</div>
+    </a>
   </div>
 </div>
 <div class="glow-line"></div>
@@ -378,7 +406,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
       <p>Unbiased B2B SaaS comparisons for founders, CTOs and operators making smart software decisions.</p>
     </div>
     <div class="footer-col"><h4>Compare</h4><a href="/pages/">All Comparisons</a><a href="/pages/?q=crm">CRM Tools</a><a href="/pages/?q=seo">SEO Software</a><a href="/pages/?q=hr">HR Tools</a><a href="/pages/?q=dev">Dev Tools</a></div>
-    <div class="footer-col"><h4>Resources</h4><a href="/shortlist.html">Shortlist Builder</a><a href="/pages/saas-roi-calculator.html">ROI Calculator</a><a href="/pages/?type=pricing">Pricing Guides</a><a href="/pages/?type=review">Tool Reviews</a><a href="/pages/?type=alternatives">Alternatives</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="/shortlist.html">Shortlist Builder</a><a href="/deal-radar.html">Deal Radar</a><a href="/pages/saas-roi-calculator.html">ROI Calculator</a><a href="/pages/?type=pricing">Pricing Guides</a><a href="/pages/?type=review">Tool Reviews</a><a href="/pages/?type=alternatives">Alternatives</a></div>
     <div class="footer-col"><h4>Company</h4><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy Policy</a></div>
   </div>
   <div class="footer-bottom">
@@ -458,5 +486,6 @@ function filterComps(q){const lq=q.toLowerCase();document.querySelectorAll('#com
 /* HERO SEARCH */
 function doHeroSearch(){const q=document.getElementById('hero-search').value.trim();window.location.href=q?`/pages/?q=${encodeURIComponent(q)}`:'/pages/'}
 </script>
+<script defer src="/assets/saaspare-ui.js"></script>
 </body>
 </html>

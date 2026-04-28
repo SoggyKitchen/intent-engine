@@ -7,11 +7,12 @@
 <meta name="description" content="Browse 1,300+ unbiased B2B SaaS comparisons. Real pricing, honest reviews and expert recommendations across 16 categories.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://saaspare.org/pages/">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:#07071a;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#07071a;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
@@ -21,11 +22,6 @@ a{text-decoration:none;color:inherit}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s}
 nav.scrolled{background:rgba(7,7,26,.94);backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
-.logo-bars{display:flex;flex-direction:column;gap:3.5px}
-.logo-bars span{display:block;height:2.5px;background:#e94560;border-radius:2px}
-.logo-bars span:nth-child(1){width:16px}
-.logo-bars span:nth-child(2){width:11px;opacity:.6}
-.logo-bars span:nth-child(3){width:16px;opacity:.3}
 .logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff}
 .logo-text em{color:#e94560;font-style:normal}
 .nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s}
@@ -71,12 +67,12 @@ footer{border-top:1px solid rgba(255,255,255,.055)}
 <body>
 <nav id="nav">
   <a href="/" class="logo">
-    <div class="logo-bars"><span></span><span></span><span></span></div>
-    <span class="logo-text">Saas<em>Spare</em></span>
+    <span class="logo-text">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="nav-link">Comparisons</a>
   <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
   <a href="/shortlist.html" class="nav-link">Shortlist Builder</a>
+  <a href="/deal-radar.html" class="nav-link">Deal Radar</a>
   <a href="/about.html" class="nav-link">About</a>
   <a href="/shortlist.html" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>
@@ -147,5 +143,6 @@ function filterPages(q){
 /* stagger cards on load */
 document.querySelectorAll('#pages-grid .page-card').forEach((c,i)=>{c.style.animationDelay=i*.03+'s'});
 </script>
+<script defer src="/assets/saaspare-ui.js"></script>
 </body>
 </html>

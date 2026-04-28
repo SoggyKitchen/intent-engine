@@ -78,6 +78,22 @@ def _hosts_equivalent(expected_host: str, final_host: str) -> bool:
     return (expected_host, final_host) in EQUIVALENT_HOSTS or (final_host, expected_host) in EQUIVALENT_HOSTS
 
 
+def _classify_response(code: int, final: str, expected_url: str) -> tuple[str, int, str]:
+    if code == 403:
+        return WARN, code, final
+    if code >= 400:
+        return DEAD, code, final
+    if _is_program_page(final):
+        return PROG, code, final
+    expected_host = urlparse(expected_url).netloc.lower().replace("www.", "")
+    final_host = urlparse(final).netloc.lower().replace("www.", "")
+    if expected_host and final_host and _is_affiliate_network_host(expected_host):
+        return GOOD, code, final
+    if expected_host and final_host and not _hosts_equivalent(expected_host, final_host):
+        return WARN, code, final
+    return GOOD, code, final
+
+
 def parse_redirects(path: Path) -> list[tuple[str, str]]:
     entries: list[tuple[str, str]] = []
     for line in path.read_text(encoding="utf-8").splitlines():
@@ -93,22 +109,15 @@ def parse_redirects(path: Path) -> list[tuple[str, str]]:
 def check_live_redirect(live_url: str, expected_url: str, headers: dict[str, str]) -> tuple[str, int, str]:
     try:
         response = httpx.get(live_url, follow_redirects=True, timeout=10, headers=headers)
-        code = response.status_code
-        final = str(response.url)
-        if code == 403:
-            return WARN, code, final
-        if code >= 400:
-            return DEAD, code, final
-        if _is_program_page(final):
-            return PROG, code, final
-        expected_host = urlparse(expected_url).netloc.lower().replace("www.", "")
-        final_host = urlparse(final).netloc.lower().replace("www.", "")
-        if expected_host and final_host and _is_affiliate_network_host(expected_host):
-            return GOOD, code, final
-        if expected_host and final_host and not _hosts_equivalent(expected_host, final_host):
-            return WARN, code, final
-        return GOOD, code, final
+        return _classify_response(response.status_code, str(response.url), expected_url)
     except Exception as exc:
+        if "CERTIFICATE_VERIFY_FAILED" in str(exc):
+            try:
+                response = httpx.get(live_url, follow_redirects=True, timeout=10, headers=headers, verify=False)
+                status, code, final = _classify_response(response.status_code, str(response.url), expected_url)
+                return WARN if status == GOOD else status, code, f"{final} (certificate chain warning)"
+            except Exception as retry_exc:
+                return DEAD, 0, str(retry_exc)[:120]
         return DEAD, 0, str(exc)[:120]
 
 

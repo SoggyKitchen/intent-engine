@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -188,8 +189,10 @@ footer p+p{margin-top:.5rem}
     <span class="logo-text">Saa<em>Spare</em></span>
   </a>
   <a href="{{ site_domain | default('https://saaspare.org') }}/pages/" class="nav-link keep">Comparisons</a>
-  <a href="{{ site_domain | default('https://saaspare.org') }}/pages/saas-roi-calculator.html" class="nav-link">ROI Calc</a>
-  <a href="{{ site_domain | default('https://saaspare.org') }}/pages/" class="nav-cta">Browse Tools -></a>
+  <a href="{{ site_domain | default('https://saaspare.org') }}/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
+  <a href="{{ site_domain | default('https://saaspare.org') }}/shortlist.html" class="nav-link">Shortlist Builder</a>
+  <a href="{{ site_domain | default('https://saaspare.org') }}/about.html" class="nav-link">About</a>
+  <a href="{{ site_domain | default('https://saaspare.org') }}/shortlist.html" class="nav-cta">Build Shortlist -></a>
 </nav>
 
 <div class="page-hero">
@@ -496,5 +499,6 @@ if(em){
   });
 }
 </script>
+<script defer src="/assets/saaspare-ui.js"></script>
 </body>
 </html>
