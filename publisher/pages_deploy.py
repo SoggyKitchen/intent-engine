@@ -401,13 +401,13 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All SaaS Comparisons & Guides | SaaSpare</title>
-<meta name="description" content="Browse {total} B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
+<title>Compare {total} SaaS Tools: Find Your Perfect Match | SaaSpare</title>
+<meta name="description" content="Compare {total}+ SaaS products with real pricing data. Find unbiased reviews, alternatives, free trials, promo codes and buying guides.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{domain}/pages/">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
-<meta property="og:title" content="All SaaS Comparisons & Guides | SaaSpare">
-<meta property="og:description" content="Browse {total} B2B SaaS comparison pages, pricing guides, reviews and alternatives - all free.">
+<meta property="og:title" content="Compare {total} SaaS Tools: Find Your Perfect Match | SaaSpare">
+<meta property="og:description" content="Compare {total}+ SaaS products with real pricing data. Find unbiased reviews, alternatives, free trials, promo codes and buying guides.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{domain}/pages/">
 <style>
