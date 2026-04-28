@@ -19,6 +19,7 @@ from publisher.affiliate_registry import (
     get_best_programs_for_vertical,
     get_homepage_for_tool,
 )
+from publisher.seo_tags import apply_seo_tags
 
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 SITE_DIR = Path("site/pages")
@@ -171,6 +172,9 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
 
     slug = slugify(title)
     out_path = SITE_DIR / f"{slug}.html"
+    url_path = f"/pages/{slug}"
+    data = apply_seo_tags(data, url_path, vertical)
+    title = data.get("page_title", title)
 
     winner = next((t for t in data.get("tools", []) if t.get("winner")), None)
     cta_tool = winner or (data["tools"][0] if data.get("tools") else None)
@@ -196,7 +200,7 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
         data["cta_tool_name"] = ""
 
     domain = get("SITE_DOMAIN", "https://saaspare.org")
-    canonical = f"{domain}/pages/{slug}"
+    canonical = f"{domain}{url_path}"
     data["canonical_url"] = canonical
     data["title"] = title
     data["page_slug"] = slug

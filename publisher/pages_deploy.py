@@ -2,6 +2,7 @@ import os
 import re
 import subprocess
 import time
+from html import escape
 from pathlib import Path
 
 import httpx
@@ -9,6 +10,7 @@ import httpx
 from core.db import db
 from core.logger import log
 from core.secrets import DRY_RUN, get
+from publisher.seo_tags import get_seo_tags
 
 SITE_DIR = Path("site")
 PAGES_DIR = Path("site/pages")
@@ -396,18 +398,28 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
     )
 
     today = time.strftime("%B %d, %Y")
+    seo = get_seo_tags(
+        "/pages/",
+        fallback_title=f"Compare {total} SaaS Tools: Find Your Perfect Match | SaaSpare",
+        fallback_meta=(
+            f"Compare {total}+ SaaS products with real pricing data. Find unbiased "
+            "reviews, alternatives, free trials, promo codes and buying guides."
+        ),
+    )
+    seo_title = escape(seo["title"], quote=False)
+    seo_meta = escape(seo["meta_description"], quote=True)
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Compare {total} SaaS Tools: Find Your Perfect Match | SaaSpare</title>
-<meta name="description" content="Compare {total}+ SaaS products with real pricing data. Find unbiased reviews, alternatives, free trials, promo codes and buying guides.">
+<title>{seo_title}</title>
+<meta name="description" content="{seo_meta}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{domain}/pages/">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
-<meta property="og:title" content="Compare {total} SaaS Tools: Find Your Perfect Match | SaaSpare">
-<meta property="og:description" content="Compare {total}+ SaaS products with real pricing data. Find unbiased reviews, alternatives, free trials, promo codes and buying guides.">
+<meta property="og:title" content="{escape(seo['title'], quote=True)}">
+<meta property="og:description" content="{seo_meta}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{domain}/pages/">
 <style>

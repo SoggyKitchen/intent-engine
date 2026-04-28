@@ -3,7 +3,7 @@ Adds SEO/monetisation enhancements to all site/pages/*.html files:
   1. og:image meta tag (for Google Discover & social sharing)
   2. FAQPage JSON-LD structured data (for Google FAQ rich results)
   3. Internal cluster links in the .related section
-  4. OTTO pixel (Search Atlas dynamic optimization)
+  4. Removes the OTTO pixel so hard-coded SEO tags cannot be overridden
   5. Organization schema (SaaSpare entity for Knowledge Graph)
   6. Organization-only schema with no personal contact details
 Idempotent via marker: <!-- enhanced-v2 -->
@@ -16,7 +16,7 @@ PAGES = Path("site/pages")
 DOMAIN = "https://saaspare.org"
 MARKER = "<!-- enhanced-v2 -->"
 OG_IMAGE = f"{DOMAIN}/og-default.png"
-OTTO_PIXEL = '<script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="cc20042f-69ad-42f3-bdbc-db9fe92a73ce" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gImNjMjAwNDJmLTY5YWQtNDJmMy1iZGJjLWRiOWZlOTJhNzNjZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="></script>'
+OTTO_PIXEL_RE = re.compile(r'\s*<script[^>]*id="sa-dynamic-optimization"[^>]*></script>', re.IGNORECASE)
 
 ORG_SCHEMA = json.dumps({
     "@context": "https://schema.org",
@@ -135,8 +135,9 @@ def build_faq_schema(faqs: list[dict], page_url: str) -> str:
 # Patch one file
 # ---------------------------------------------------------------------------
 def patch(f: Path, html: str) -> str | None:
+    html = OTTO_PIXEL_RE.sub("", html)
     if MARKER in html:
-        return None
+        return html
 
     slug = f.stem
     page_url = f"{DOMAIN}/pages/{f.name}"
@@ -176,11 +177,7 @@ def patch(f: Path, html: str) -> str | None:
 </div>'''
             html = html.replace('</body>', f'{related_section}\n</body>', 1)
 
-    # 4. OTTO pixel (Search Atlas)
-    if 'sa-dynamic-optimization' not in html:
-        html = html.replace('</head>', f'{OTTO_PIXEL}\n</head>', 1)
-
-    # 5. Organization schema
+    # 4. Organization schema
     if '"@type":"Organization"' not in html and '"@type": "Organization"' not in html:
         org_script = f'<script type="application/ld+json">\n{ORG_SCHEMA}\n</script>'
         html = html.replace('</head>', f'{org_script}\n</head>', 1)
