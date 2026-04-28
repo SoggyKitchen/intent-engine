@@ -419,7 +419,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   nav a{{color:var(--muted);font-size:.9rem}}
   nav a:first-child{{margin-right:auto}}
   nav a:hover{{color:#fff}}
-  .hero{{max-width:1280px;margin:0 auto;padding:4rem clamp(1.25rem,3vw,2.6rem) 2rem;text-align:center}}
+  .hero{{max-width:1440px;margin:0 auto;padding:4rem clamp(1.25rem,3vw,2.6rem) 2rem;text-align:center}}
   .hero h1{{font-size:clamp(2rem,5vw,3.2rem);color:#fff;letter-spacing:-.04em;margin-bottom:.75rem}}
   .hero p{{color:var(--muted);max-width:760px;margin:0 auto 1.5rem}}
   .search-shell{{max-width:680px;margin:0 auto 1rem;padding:.5rem;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:999px;display:flex;gap:.5rem}}
@@ -427,7 +427,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   .search-shell button{{border:none;border-radius:999px;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.85rem 1.25rem;font:inherit;font-weight:700;cursor:pointer}}
   .stats{{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem}}
   .stat{{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:999px;padding:.5rem .9rem;color:var(--muted);font-size:.85rem}}
-  .container{{max-width:1280px;margin:0 auto;padding:1.5rem clamp(1.25rem,3vw,2.6rem) 4rem}}
+  .container{{max-width:1440px;margin:0 auto;padding:1.5rem clamp(1.25rem,3vw,2.6rem) 4rem}}
   .filter-row{{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1.25rem}}
   .filter-chip{{border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--muted);border-radius:999px;padding:.5rem .8rem;cursor:pointer;font:inherit}}
   .filter-chip.active,.filter-chip:hover{{background:rgba(233,69,96,.14);border-color:rgba(233,69,96,.35);color:#fff}}

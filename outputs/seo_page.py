@@ -246,11 +246,18 @@ def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: s
         "description": data.get("meta_description", ""),
         "datePublished": time.strftime("%Y-%m-%d"),
         "dateModified": time.strftime("%Y-%m-%d"),
-        "author": {"@type": "Organization", "name": "SaaSpare",
-                   "url": get("SITE_DOMAIN", "https://saaspare.org")},
-        "publisher": {"@type": "Organization", "name": "SaaSpare",
-                      "logo": {"@type": "ImageObject",
-                               "url": f"{get('SITE_DOMAIN', 'https://saaspare.org')}/og-default.png"}},
+        "author": {
+            "@type": "Organization",
+            "name": "SaaSpare",
+            "url": domain,
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SaaSpare",
+            "url": domain,
+            "logo": {"@type": "ImageObject",
+                     "url": f"{domain}/og-default.png"},
+        },
         "mainEntityOfPage": canonical or domain,
     }
     schemas = [schema]

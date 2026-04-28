@@ -6,35 +6,19 @@
   --ss-text:#fff;
   --ss-accent:#e94560;
   --ss-accent-2:#ffb5c0;
-  --ss-page-max:1280px;
+  --ss-page-max:1440px;
 }
 
 html{background:#080810}
 body{
   background:
-    radial-gradient(900px 520px at 8% 18%,rgba(233,69,96,.075),transparent 62%),
-    radial-gradient(760px 460px at 94% 34%,rgba(233,69,96,.055),transparent 64%),
-    radial-gradient(900px 560px at 50% -12%,rgba(26,13,18,.9),transparent 58%),
+    radial-gradient(900px 520px at 50% -12%,rgba(65,18,29,.55),transparent 62%),
+    radial-gradient(720px 420px at 50% 22%,rgba(233,69,96,.045),transparent 70%),
     #080810 !important;
 }
 body::before,
 body::after{
-  content:"";
-  position:fixed;
-  top:64px;
-  bottom:0;
-  width:clamp(90px,12vw,210px);
-  pointer-events:none;
-  z-index:0;
-  opacity:.42;
-}
-body::before{
-  left:0;
-  background:linear-gradient(90deg,rgba(233,69,96,.09),transparent),radial-gradient(circle at 0 22%,rgba(233,69,96,.16),transparent 58%);
-}
-body::after{
-  right:0;
-  background:linear-gradient(270deg,rgba(233,69,96,.08),transparent),radial-gradient(circle at 100% 38%,rgba(255,255,255,.06),transparent 62%);
+  display:none !important;
 }
 body > *{position:relative}
 body > nav{z-index:200}
@@ -122,7 +106,7 @@ h1:not(.hero-title){
 h1:not(.hero-title) em,
 h1:not(.hero-title) span.grad-text,
 .section-heading .grad-text{
-  background:linear-gradient(135deg,#fff 0%,#ffb5c0 38%,#e94560 72%,#fff 100%);
+  background:linear-gradient(135deg,#e94560 0%,#ff7890 34%,#f4a0ad 52%,#c73652 76%,#e94560 100%);
   background-size:220% auto;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;

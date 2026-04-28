@@ -1,9 +1,12 @@
 """
-Adds three SEO/monetisation enhancements to all site/pages/*.html files:
+Adds SEO/monetisation enhancements to all site/pages/*.html files:
   1. og:image meta tag (for Google Discover & social sharing)
   2. FAQPage JSON-LD structured data (for Google FAQ rich results)
   3. Internal cluster links in the .related section
-Idempotent via marker: <!-- enhanced-v1 -->
+  4. OTTO pixel (Search Atlas dynamic optimization)
+  5. Organization schema (SaaSpare entity for Knowledge Graph)
+  6. Organization-only schema with no personal contact details
+Idempotent via marker: <!-- enhanced-v2 -->
 Run: .venv/Scripts/python scripts/enhance_pages.py
 """
 import re, json
@@ -11,8 +14,19 @@ from pathlib import Path
 
 PAGES = Path("site/pages")
 DOMAIN = "https://saaspare.org"
-MARKER = "<!-- enhanced-v1 -->"
+MARKER = "<!-- enhanced-v2 -->"
 OG_IMAGE = f"{DOMAIN}/og-default.png"
+OTTO_PIXEL = '<script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="cc20042f-69ad-42f3-bdbc-db9fe92a73ce" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gImNjMjAwNDJmLTY5YWQtNDJmMy1iZGJjLWRiOWZlOTJhNzNjZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="></script>'
+
+ORG_SCHEMA = json.dumps({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SaaSpare",
+    "url": DOMAIN,
+    "logo": f"{DOMAIN}/og-default.png",
+    "description": "Unbiased B2B SaaS comparisons, real pricing, and expert recommendations.",
+    "sameAs": []
+}, ensure_ascii=False, indent=2)
 
 # ---------------------------------------------------------------------------
 # Cluster definitions for internal linking
@@ -162,7 +176,16 @@ def patch(f: Path, html: str) -> str | None:
 </div>'''
             html = html.replace('</body>', f'{related_section}\n</body>', 1)
 
-    # 4. Marker
+    # 4. OTTO pixel (Search Atlas)
+    if 'sa-dynamic-optimization' not in html:
+        html = html.replace('</head>', f'{OTTO_PIXEL}\n</head>', 1)
+
+    # 5. Organization schema
+    if '"@type":"Organization"' not in html and '"@type": "Organization"' not in html:
+        org_script = f'<script type="application/ld+json">\n{ORG_SCHEMA}\n</script>'
+        html = html.replace('</head>', f'{org_script}\n</head>', 1)
+
+    # 6. Marker
     html = html.replace('</head>', f'{MARKER}\n</head>', 1)
     return html
 
