@@ -10,33 +10,34 @@
     first.innerHTML = LOGO;
     first.setAttribute("href", href.includes("saaspare.org") ? href : "/");
   }
-  function ensureNavLinks(){
+  function normalizeNavLinks(){
     const nav = document.querySelector("nav");
     if(!nav) return;
-    const hasHref = (href) => [...nav.querySelectorAll("a")].some((a)=>((a.getAttribute("href") || "").replace("https://saaspare.org","")) === href);
-    const insertBefore = nav.querySelector(".nav-cta");
+    const logo = nav.querySelector(".ss-logo") || nav.querySelector("a");
+    if(!logo) return;
+    [...nav.querySelectorAll("a")].forEach((link)=>{
+      if(link !== logo) link.remove();
+    });
+    nav.classList.add("ss-nav-normalized");
     const links = [
       ["/pages/","Comparisons"],
       ["/pages/saas-roi-calculator.html","ROI Calculator"],
-      ["/deal-radar.html","Deal Radar"],
       ["/shortlist.html","Shortlist Builder"],
-      ["/about.html","About"]
+      ["/deal-radar.html","Deal Radar"],
+      ["/about.html","About"],
     ];
     links.forEach(([href,label])=>{
-      if(hasHref(href)) return;
       const a = document.createElement("a");
       a.href = href;
       a.textContent = label;
       a.className = "nav-link";
-      nav.insertBefore(a, insertBefore);
+      nav.appendChild(a);
     });
-    if(!nav.querySelector(".nav-cta")){
-      const cta = document.createElement("a");
-      cta.href = "/shortlist.html";
-      cta.textContent = "Build Shortlist";
-      cta.className = "nav-cta";
-      nav.appendChild(cta);
-    }
+    const cta = document.createElement("a");
+    cta.href = "/shortlist.html";
+    cta.textContent = "Build Shortlist ->";
+    cta.className = "nav-cta";
+    nav.appendChild(cta);
   }
   function track(name, params){ if(window.gtag) window.gtag("event", name, params || {}); }
   function addClickNudges(){
@@ -120,8 +121,8 @@
     });
   }
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();ensureNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();});
+    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();normalizeNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();});
   }else{
-    upgradeLogo();ensureNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();
+    upgradeLogo();normalizeNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();
   }
 })();

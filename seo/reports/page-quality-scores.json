@@ -5632,15 +5632,15 @@
     "trust": 20.0
   },
   {
-    "content": 13,
-    "conversionRevenue": 3,
-    "internalLinking": 12,
-    "overall": 60.0,
+    "content": 17,
+    "conversionRevenue": 6,
+    "internalLinking": 15,
+    "overall": 80.0,
     "path": "/pages",
     "performanceUx": 5,
     "schemaIndexability": 3,
     "technical": 19,
-    "trust": 5.0
+    "trust": 15.0
   },
   {
     "content": 20,

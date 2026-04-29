@@ -7,10 +7,9 @@ Pages scanned: 993
 
 ## Warning Counts
 - meta_length_outside_target: 21
-- missing_correction_cta: 96
-- missing_methodology: 97
-- missing_related_pages: 1
-- missing_trustbox: 97
+- missing_correction_cta: 95
+- missing_methodology: 96
+- missing_trustbox: 96
 - thin_buyer_page: 49
 - title_length_outside_target: 211
 
@@ -18,13 +17,13 @@ Pages scanned: 993
 - `/media-kit`: 54.46/100, issues=none
 - `/privacy`: 55.02/100, issues=none
 - `/contact`: 55.42/100, issues=none
-- `/pages`: 60.0/100, issues=none
 - `/about`: 61.84/100, issues=none
 - `/affiliate-disclosure`: 66.12/100, issues=none
 - `/methodology`: 66.43/100, issues=none
 - `/shortlist`: 68.4/100, issues=none
 - `/pages/saas-roi-calculator`: 74.43/100, issues=none
 - `/`: 77.28/100, issues=none
+- `/pages`: 80.0/100, issues=none
 - `/deal-radar`: 82.0/100, issues=none
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025`: 83.5/100, issues=broken_internal_link
 - `/pages/greenhouse-vs-remote-com-which-is-better-in-2026`: 83.5/100, issues=broken_internal_link

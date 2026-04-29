@@ -2,7 +2,6 @@
 
 These are not safe to fake or mass rewrite.
 
-- `/pages`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/deal-radar`: thin_buyer_page
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/greenhouse-vs-remote-com-which-is-better-in-2026`: missing_correction_cta, missing_methodology, missing_trustbox

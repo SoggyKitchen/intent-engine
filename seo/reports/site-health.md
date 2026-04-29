@@ -1,14 +1,14 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-04-29T13:34:41+00:00
+Generated: 2026-04-29T21:40:38+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **97.7/100**
+- Overall SaaSpare Health Score: **97.72/100**
 - Level: **Elite SEO/revenue engine**
 - Technical SEO: 19.48/20
-- Content usefulness: 19.91/20
-- Trust/E-E-A-T: 19.16/20
+- Content usefulness: 19.92/20
+- Trust/E-E-A-T: 19.17/20
 - Internal linking: 14.59/15
 - Schema/indexability: 9.93/10
 - Conversion/revenue: 9.63/10
@@ -40,7 +40,6 @@ Mode: `audit`
 - Manual review for pricing, coupon, review, rating and vendor claims.
 
 ## Top 25 Highest-Impact Fixes
-- `/pages` (60.0/100): missing_correction_cta, missing_methodology, missing_related_pages, missing_trustbox, title_length_outside_target
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
@@ -65,6 +64,7 @@ Mode: `audit`
 - `/pages/monday-com-vs-basecamp-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/monday-com-vs-clickup-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/monday-com-vs-jira-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-notion-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 
 ## Top 25 Revenue Opportunities
 - `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 85.19): CTA=True, affiliateLinks=2, disclosure=True

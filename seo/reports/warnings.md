@@ -206,7 +206,7 @@
 - `/pages/gusto-vs-remote-com-which-is-better-in-2026` (comparison, 86.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/hubspot-review-2026-is-it-worth-it-honest-verdict` (pricing, 99.0/100): title_length_outside_target
 - `/pages/hugging-face-vs-weights-biases-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
-- `/pages` (pricing, 60.0/100): missing_correction_cta, missing_methodology, missing_related_pages, missing_trustbox, title_length_outside_target
+- `/pages` (pricing, 80.0/100): title_length_outside_target
 - `/pages/jasper-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.0/100): title_length_outside_target
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.01/100): thin_buyer_page, title_length_outside_target
 - `/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict` (pricing, 99.0/100): title_length_outside_target

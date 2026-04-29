@@ -1,7 +1,7 @@
 # Link Cleanup
 
 - Pages with broken internal links: 96
-- Internal links still containing `.html`: 484
+- Internal links still containing `.html`: 490
 
 ## Broken Internal Links
 - `/pages/7-best-1password-alternatives-in-2026-free-paid`: https://saaspare.org/pages/1password-promo-codes-discounts-for-2026-save-on-software-saaspare, https://saaspare.org/pages/7-best-1password-alternatives-in-2026-free-paid-saaspare, https://saaspare.org/pages/7-best-dashlane-alternatives-in-2026-free-paid-saaspare, https://saaspare.org/pages/best-password-managers-software-for-business-in-2026-ranked-saaspare, https://saaspare.org/pages/does-bitwarden-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step-saaspare

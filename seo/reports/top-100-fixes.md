@@ -1,6 +1,5 @@
 # Top 100 Fixes
 
-- `/pages` (60.0/100): missing_correction_cta, missing_methodology, missing_related_pages, missing_trustbox, title_length_outside_target
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
@@ -97,6 +96,7 @@
 - `/pages/spyfu-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/surfer-seo-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/riverside-fm-vs-descript-which-is-better-in-2026` (88.0/100): broken_internal_link, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages` (80.0/100): title_length_outside_target
 - `/deal-radar` (82.0/100): thin_buyer_page
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (96.12/100): thin_buyer_page, title_length_outside_target
 - `/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay` (96.5/100): title_length_outside_target
