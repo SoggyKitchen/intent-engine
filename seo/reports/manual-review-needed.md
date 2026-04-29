@@ -1,0 +1,204 @@
+# Manual Review Needed
+
+These are not safe to fake or mass rewrite.
+
+- `/ph-preview-1`: missing_correction_cta, missing_last_verified, missing_methodology, missing_trustbox, thin_buyer_page
+- `/ph-preview-2`: missing_correction_cta, missing_last_verified, missing_methodology, missing_trustbox, thin_buyer_page
+- `/ph-preview-3`: missing_correction_cta, missing_last_verified, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/verification`: missing_correction_cta, missing_last_verified, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/saas-roi-calculator`: affiliate_cta_missing_visible_disclosure
+- `/pages`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/deal-radar`: missing_correction_cta, missing_last_verified, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/best-ai-tutor-tools-for-education-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-devops-configuration-drift-detection-tools-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/clickup-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/hubspot-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/notion-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/notion-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/anthropic-claude-vs-cohere-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/anthropic-claude-vs-hugging-face-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/openai-api-vs-anthropic-claude-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/openai-api-vs-hugging-face-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/openai-api-vs-weights-biases-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/weaviate-vs-anthropic-claude-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/weaviate-vs-weights-biases-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/asana-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-devtools-for-modern-full-stack-developers-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/contabo-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/aws-vs-google-cloud-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-railway-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-finance-ops-software-for-small-business-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-legal-compliance-software-for-startups-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-password-managers-software-for-business-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-project-management-software-for-startups-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/cohere-vs-hugging-face-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/openai-api-vs-cohere-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/weaviate-vs-cohere-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/weaviate-vs-hugging-face-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/1password-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/jasper-ai-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/pipedrive-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/amplitude-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-cloud-infra-software-for-startups-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-crm-software-for-b2b-saas-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-crm-software-for-small-business-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-cybersecurity-software-for-small-business-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-hr-recruiting-software-for-startups-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-marketing-automation-software-for-small-business-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-project-management-software-for-remote-teams-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-saas-analytics-software-for-small-business-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-seo-tools-software-for-bloggers-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-seo-tools-software-for-content-teams-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-vpn-business-software-for-startups-in-2026-ranked`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/docusign-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/freshbooks-vs-xero-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/getresponse-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/getresponse-vs-activecampaign-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/github-copilot-vs-jetbrains-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/github-copilot-vs-pagerduty-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/github-copilot-vs-terraform-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/xero-vs-expensify-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/notion-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/xero-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/asana-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/deel-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/shopify-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/zoom-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/semrush-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/workable-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/hubspot-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/asana-vs-basecamp-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/asana-vs-clickup-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/asana-vs-jira-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/asana-vs-smartsheet-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/asana-vs-todoist-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/asana-vs-trello-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/asana-vs-wrike-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-contabo-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-digitalocean-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-hetzner-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-linode-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-render-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-supabase-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-vultr-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bamboohr-vs-culture-amp-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bamboohr-vs-deel-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bamboohr-vs-greenhouse-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bamboohr-vs-gusto-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bamboohr-vs-lattice-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bamboohr-vs-lever-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bamboohr-vs-rippling-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bamboohr-vs-workable-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/bigcommerce-vs-gumroad-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/bigcommerce-vs-paddle-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/clickup-vs-basecamp-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/clickup-vs-jira-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/clickup-vs-smartsheet-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/clickup-vs-todoist-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/clickup-vs-trello-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/clickup-vs-wrike-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/close-vs-copper-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/close-vs-freshsales-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/close-vs-insightly-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/close-vs-keap-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/close-vs-nutshell-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/contabo-vs-digitalocean-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/contabo-vs-vultr-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/datadog-vs-new-relic-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/digitalocean-vs-vultr-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-vs-airbase-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-vs-brex-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-vs-divvy-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-vs-expensify-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-vs-netsuite-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-vs-quickbooks-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-vs-ramp-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/freshbooks-vs-sage-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/getresponse-vs-mailchimp-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/github-copilot-vs-datadog-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/github-copilot-vs-linear-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/github-copilot-vs-netlify-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/github-copilot-vs-retool-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/github-copilot-vs-vercel-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-crm-vs-pipedrive-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-crm-vs-zoho-crm-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-activecampaign-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-brevo-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-convertkit-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-drip-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-getresponse-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-klaviyo-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-mailchimp-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-marketo-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-pardot-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/hubspot-vs-salesforce-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/jetbrains-vs-linear-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/jetbrains-vs-retool-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/mangools-vs-clearscope-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/mangools-vs-rankmath-pro-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/notion-vs-asana-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/notion-vs-basecamp-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/notion-vs-clickup-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/notion-vs-jira-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/notion-vs-smartsheet-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/notion-vs-trello-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/notion-vs-wrike-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/pipedrive-vs-insightly-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/ramp-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/rippling-vs-greenhouse-which-is-better-in-2026`: missing_correction_cta, missing_trustbox
+- `/pages/rippling-vs-lever-which-is-better-in-2026`: missing_correction_cta, missing_trustbox

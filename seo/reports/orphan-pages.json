@@ -1,0 +1,41 @@
+[
+  {
+    "path": "/ph-preview-1",
+    "score": {
+      "inbound": [],
+      "outbound": []
+    }
+  },
+  {
+    "path": "/ph-preview-2",
+    "score": {
+      "inbound": [],
+      "outbound": []
+    }
+  },
+  {
+    "path": "/ph-preview-3",
+    "score": {
+      "inbound": [],
+      "outbound": []
+    }
+  },
+  {
+    "path": "/pages/thanks",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "https://saaspare.org/pages/"
+      ]
+    }
+  },
+  {
+    "path": "/pages/verification",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "https://saaspare.org/pages/"
+      ]
+    }
+  }
+]

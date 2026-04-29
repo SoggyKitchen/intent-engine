@@ -1,0 +1,22 @@
+{
+  "siteUrl": "https://saaspare.org",
+  "siteDir": "site",
+  "reportsDir": "seo/reports",
+  "snapshotsDir": "seo/snapshots",
+  "ottoImportsDir": "seo/otto-imports",
+  "moneyPageTypes": ["coupon", "pricing", "free_trial", "alternatives", "comparison", "review", "best_of"],
+  "safeApply": {
+    "metadata": true,
+    "canonical": true,
+    "socialTags": true,
+    "twitterCard": true,
+    "internalHtmlLinks": true
+  },
+  "thresholds": {
+    "thinWords": 800,
+    "titleMin": 30,
+    "titleMax": 70,
+    "metaMin": 90,
+    "metaMax": 170
+  }
+}

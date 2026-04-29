@@ -1,0 +1,102 @@
+# Top 100 Fixes
+
+- `/ph-preview-2` (39.0/100): no_h1, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/ph-preview-3` (42.48/100): no_h1, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/ph-preview-1` (37.75/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/thanks` (47.67/100): title_length_outside_target
+- `/pages/verification` (49.76/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/saas-roi-calculator` (59.84/100): affiliate_cta_missing_visible_disclosure
+- `/pages` (60.0/100): missing_correction_cta, missing_methodology, missing_related_pages, missing_trustbox, title_length_outside_target
+- `/deal-radar` (61.73/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025` (74.95/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster` (75.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025` (75.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay` (75.22/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/best-ai-tutor-tools-for-education-in-2025` (75.29/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/shortlist` (65.84/100): images_missing_alt
+- `/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025` (76.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-devops-configuration-drift-detection-tools-in-2025` (76.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay` (76.4/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay` (76.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` (76.73/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/clickup-review-2026-is-it-worth-it-honest-verdict` (77.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay` (77.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/hubspot-review-2026-is-it-worth-it-honest-verdict` (77.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/notion-review-2026-is-it-worth-it-honest-verdict` (77.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict` (77.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/notion-pricing-2026-plans-costs-what-you-actually-pay` (77.02/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/anthropic-claude-vs-cohere-which-is-better-in-2026` (77.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/anthropic-claude-vs-hugging-face-which-is-better-in-2026` (77.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026` (77.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (77.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/openai-api-vs-anthropic-claude-which-is-better-in-2026` (77.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/openai-api-vs-hugging-face-which-is-better-in-2026` (77.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/openai-api-vs-weights-biases-which-is-better-in-2026` (77.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/weaviate-vs-anthropic-claude-which-is-better-in-2026` (77.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/weaviate-vs-weights-biases-which-is-better-in-2026` (77.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/asana-review-2026-is-it-worth-it-honest-verdict` (78.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025` (78.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025` (78.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-devtools-for-modern-full-stack-developers-in-2025` (78.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/contabo-pricing-2026-plans-costs-what-you-actually-pay` (78.0/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/aws-vs-google-cloud-which-is-better-in-2026` (78.5/100): broken_internal_link, missing_correction_cta, missing_trustbox
+- `/pages/aws-vs-railway-which-is-better-in-2026` (78.5/100): broken_internal_link, missing_correction_cta, missing_trustbox
+- `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked` (78.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-finance-ops-software-for-small-business-in-2026-ranked` (78.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-legal-compliance-software-for-startups-in-2026-ranked` (78.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-password-managers-software-for-business-in-2026-ranked` (78.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-project-management-software-for-startups-in-2026-ranked` (78.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/cohere-vs-hugging-face-which-is-better-in-2026` (78.5/100): broken_internal_link, missing_correction_cta, missing_trustbox
+- `/pages/openai-api-vs-cohere-which-is-better-in-2026` (78.5/100): broken_internal_link, missing_correction_cta, missing_trustbox
+- `/pages/weaviate-vs-cohere-which-is-better-in-2026` (78.5/100): broken_internal_link, missing_correction_cta, missing_trustbox
+- `/pages/weaviate-vs-hugging-face-which-is-better-in-2026` (78.5/100): broken_internal_link, missing_correction_cta, missing_trustbox
+- `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts` (78.92/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (78.99/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/jasper-ai-coupon-code-promo-codes-2026-verified-discounts` (79.03/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts` (79.25/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/pipedrive-coupon-code-promo-codes-2026-verified-discounts` (79.44/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/amplitude-review-2026-is-it-worth-it-honest-verdict` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-cloud-infra-software-for-startups-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-crm-software-for-b2b-saas-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-crm-software-for-small-business-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-cybersecurity-software-for-small-business-in-2026-ranked` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-hr-recruiting-software-for-startups-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-marketing-automation-software-for-small-business-in-2026-ranked` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-project-management-software-for-remote-teams-in-2026-ranked` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-saas-analytics-software-for-small-business-in-2026-ranked` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-seo-tools-software-for-bloggers-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-seo-tools-software-for-content-teams-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/best-vpn-business-software-for-startups-in-2026-ranked` (79.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026` (79.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026` (79.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/docusign-review-2026-is-it-worth-it-honest-verdict` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/freshbooks-vs-xero-which-is-better-in-2026` (79.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/getresponse-review-2026-is-it-worth-it-honest-verdict` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/getresponse-vs-activecampaign-which-is-better-in-2026` (79.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/github-copilot-vs-jetbrains-which-is-better-in-2026` (79.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/github-copilot-vs-pagerduty-which-is-better-in-2026` (79.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/github-copilot-vs-terraform-which-is-better-in-2026` (79.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict` (79.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/xero-vs-expensify-which-is-better-in-2026` (79.5/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (79.75/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/xero-coupon-code-promo-codes-2026-verified-discounts` (79.77/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts` (79.84/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (79.87/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/asana-coupon-code-promo-codes-2026-verified-discounts` (79.88/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts` (79.88/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (79.89/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/deel-coupon-code-promo-codes-2026-verified-discounts` (79.91/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (79.91/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/shopify-coupon-code-promo-codes-2026-verified-discounts` (79.92/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/zoom-coupon-code-promo-codes-2026-verified-discounts` (79.96/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026` (80.0/100): broken_internal_link, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/semrush-coupon-code-promo-codes-2026-verified-discounts` (80.03/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts` (80.31/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/hubspot-coupon-code-promo-codes-2026-verified-discounts` (80.34/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
