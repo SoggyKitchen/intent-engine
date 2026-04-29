@@ -1,63 +1,67 @@
 # SEO Audit
 
-Pages scanned: 992
+Pages scanned: 993
 
 ## Severe Issue Counts
-No items.
+- broken_internal_link: 96
 
 ## Warning Counts
-- meta_length_outside_target: 19
-- thin_buyer_page: 40
-- title_length_outside_target: 186
+- meta_length_outside_target: 21
+- missing_correction_cta: 96
+- missing_methodology: 97
+- missing_related_pages: 1
+- missing_trustbox: 97
+- thin_buyer_page: 49
+- title_length_outside_target: 211
 
 ## Lowest Scoring Pages
 - `/media-kit`: 54.46/100, issues=none
-- `/privacy`: 54.8/100, issues=none
+- `/privacy`: 54.9/100, issues=none
 - `/contact`: 55.42/100, issues=none
+- `/pages`: 60.0/100, issues=none
 - `/about`: 61.84/100, issues=none
 - `/affiliate-disclosure`: 66.12/100, issues=none
 - `/methodology`: 66.43/100, issues=none
-- `/shortlist`: 67.84/100, issues=none
+- `/shortlist`: 68.4/100, issues=none
 - `/pages/saas-roi-calculator`: 74.43/100, issues=none
 - `/`: 77.28/100, issues=none
 - `/deal-radar`: 82.0/100, issues=none
-- `/pages`: 82.5/100, issues=none
-- `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: 96.12/100, issues=none
-- `/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay`: 96.5/100, issues=none
-- `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay`: 96.9/100, issues=none
-- `/pages/anthropic-claude-vs-cohere-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/anthropic-claude-vs-hugging-face-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster`: 97.0/100, issues=none
-- `/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025`: 97.0/100, issues=none
-- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025`: 97.0/100, issues=none
-- `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025`: 97.0/100, issues=none
-- `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked`: 97.0/100, issues=none
-- `/pages/cisco-anyconnect-vs-openvpn-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/cisco-anyconnect-vs-tailscale-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/cisco-anyconnect-vs-wireguard-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/cisco-anyconnect-vs-zscaler-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/cloudflare-vs-duo-security-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/does-amplitude-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-hotjar-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-loom-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-notion-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-sentry-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-snyk-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-supabase-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/does-zoom-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
-- `/pages/hugging-face-vs-weights-biases-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/microsoft-teams-vs-descript-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/openai-api-vs-anthropic-claude-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/openai-api-vs-hugging-face-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/openai-api-vs-weights-biases-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/roboform-vs-sticky-password-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/sentinelone-vs-duo-security-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/sticky-password-vs-password-boss-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/weaviate-vs-anthropic-claude-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/weaviate-vs-weights-biases-which-is-better-in-2026`: 97.0/100, issues=none
-- `/pages/woocommerce-vs-bold-commerce-which-is-better-in-2026`: 97.0/100, issues=none
+- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025`: 83.5/100, issues=broken_internal_link
+- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026`: 83.5/100, issues=broken_internal_link
+- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026`: 83.5/100, issues=broken_internal_link
+- `/pages/remote-com-vs-lattice-which-is-better-in-2026`: 83.5/100, issues=broken_internal_link
+- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown`: 84.5/100, issues=broken_internal_link
+- `/pages/lever-vs-remote-com-which-is-better-in-2026`: 84.5/100, issues=broken_internal_link
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay`: 84.5/100, issues=broken_internal_link
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts`: 85.19/100, issues=broken_internal_link
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts`: 85.34/100, issues=broken_internal_link
+- `/pages/7-best-adp-alternatives-in-2026-free-paid`: 85.5/100, issues=broken_internal_link
+- `/pages/7-best-aws-alternatives-in-2026-free-paid`: 85.5/100, issues=broken_internal_link
+- `/pages/around-vs-riverside-fm-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/asana-vs-monday-com-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/bamboohr-vs-remote-com-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/copy-ai-vs-hugging-face-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/copy-ai-vs-weights-biases-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/google-meet-vs-riverside-fm-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/loom-vs-riverside-fm-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-vs-basecamp-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-vs-clickup-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-vs-jira-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-vs-notion-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-vs-smartsheet-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-vs-todoist-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-vs-trello-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/monday-com-vs-wrike-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/rippling-vs-remote-com-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/riverside-fm-vs-streamyard-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/webex-vs-riverside-fm-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/whereby-vs-riverside-fm-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/workable-vs-remote-com-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/zoom-vs-riverside-fm-which-is-better-in-2026`: 85.5/100, issues=broken_internal_link
+- `/pages/7-best-quickbooks-alternatives-in-2026-free-paid`: 86.23/100, issues=broken_internal_link
+- `/pages/7-best-woocommerce-alternatives-in-2026-free-paid`: 86.23/100, issues=broken_internal_link
+- `/pages/7-best-zoho-crm-alternatives-in-2026-free-paid`: 86.41/100, issues=broken_internal_link
+- `/pages/7-best-tableau-alternatives-in-2026-free-paid`: 86.43/100, issues=broken_internal_link

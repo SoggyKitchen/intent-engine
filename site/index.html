@@ -207,7 +207,7 @@ footer{border-top:1px solid rgba(255,255,255,.055);position:relative;z-index:1}
 </section>
 
 <div class="stats">
-  <div class="stat"><span class="stat-val" data-count="982" id="stat-pages">982</span><span class="stat-label">Buyer pages live</span></div>
+  <div class="stat"><span class="stat-val" data-count="983" id="stat-pages">983</span><span class="stat-label">Buyer pages live</span></div>
   <div class="stat"><span class="stat-val" data-count="16">16</span><span class="stat-label">SaaS verticals</span></div>
   <div class="stat"><span class="stat-val" data-count="119">119</span><span class="stat-label">Offer paths tracked</span></div>
   <div class="stat"><span class="stat-val">Free</span><span class="stat-label">Always free to read</span></div>
@@ -432,7 +432,7 @@ function type(){
 setTimeout(type,900);
 
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
-  const pageCount=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||982;
+  const pageCount=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||983;
   document.querySelectorAll('#live-comparison-count,#stat-pages').forEach(el=>{el.textContent=pageCount.toLocaleString();el.dataset.count=String(pageCount);});
 }).catch(()=>{});
 

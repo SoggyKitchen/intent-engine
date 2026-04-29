@@ -899,17 +899,13 @@ def _write_sitemap():
         log.warning(f"Sitemap write failed: {e}")
 
 
-def _ping_google_sitemap():
-    try:
-        import httpx
-        domain = get("SITE_DOMAIN", "https://saaspare.org")
-        google = httpx.get(f"https://www.google.com/ping?sitemap={domain}/sitemap.xml", timeout=10)
-        bing = httpx.get(f"https://www.bing.com/ping?sitemap={domain}/sitemap.xml", timeout=10)
-        google.raise_for_status()
-        bing.raise_for_status()
-        log.info(f"Pinged Google + Bing sitemap endpoints ({google.status_code}/{bing.status_code})")
-    except Exception as e:
-        log.warning(f"Sitemap ping failed: {e}")
+def _log_sitemap_refresh():
+    domain = get("SITE_DOMAIN", "https://saaspare.org")
+    log.info(
+        f"Sitemap refreshed at {domain}/sitemap.xml. Google/Bing sitemap ping "
+        "endpoints are deprecated, so indexing is handled by sitemap discovery, "
+        "Search Console, and the existing IndexNow/backlink steps."
+    )
 
 
 def _write_redirects_file():
@@ -1072,7 +1068,7 @@ def run_programmatic(max_pages: int = 500) -> int:
     _rebuild_homepage(_Path("site"))
     _rebuild_pages_index(_Path("site"))
     if generated > 0:
-        _ping_google_sitemap()
+        _log_sitemap_refresh()
 
     # Log optimization report
     opt_report = get_optimization_report()

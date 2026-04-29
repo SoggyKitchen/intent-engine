@@ -269,12 +269,13 @@ def _rebuild_homepage(site_dir: Path):
     page_count, category_count, weekly_pages = _homepage_stats(site_dir)
     replacements = [
         ("Tool comparisons", page_count),
+        ("Buyer pages live", page_count),
         ("SaaS categories", category_count),
-        ("New pages weekly", weekly_pages),
+        ("Offer paths tracked", _count_offer_paths(site_dir)),
     ]
     for label, count in replacements:
         html = re.sub(
-            rf'(<span class="stat-val" data-count=")\d+(">)(?:\d+)(</span><span class="stat-label">{re.escape(label)}</span>)',
+            rf'(<span class="stat-val"[^>]*data-count=")\d+("[^>]*>)(?:\d+)(</span><span class="stat-label">{re.escape(label)}</span>)',
             lambda m: f"{m.group(1)}{count}{m.group(2)}{count}{m.group(3)}",
             html,
         )
@@ -293,6 +294,12 @@ def _rebuild_homepage(site_dir: Path):
         html,
         count=1,
         flags=re.DOTALL,
+    )
+    html = re.sub(
+        r"(\.length\|\|)\d+(;)",
+        lambda m: f"{m.group(1)}{page_count}{m.group(2)}",
+        html,
+        count=1,
     )
     html = re.sub(
         r"function doHeroSearch\(\)\{const q=document\.getElementById\('hero-search'\)\.value\.trim\(\);if\(q\)window\.location\.href='/pages/'\}",
@@ -326,6 +333,20 @@ def _rebuild_homepage(site_dir: Path):
     log.info(
         f"Homepage updated: {page_count} pages, {category_count} content groups, {weekly_pages} new this week"
     )
+
+
+def _count_offer_paths(site_dir: Path) -> int:
+    redirects = site_dir / "_redirects"
+    if not redirects.exists():
+        return 0
+    try:
+        return sum(
+            1
+            for line in redirects.read_text(encoding="utf-8", errors="ignore").splitlines()
+            if line.strip().startswith("/go/")
+        )
+    except Exception:
+        return 0
 
 def _rebuild_sitemap(site_repo: Path):
     pages_dir = site_repo / "pages"

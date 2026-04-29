@@ -1,22 +1,22 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-04-29T09:07:14+00:00
+Generated: 2026-04-29T13:13:34+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **99.06/100**
+- Overall SaaSpare Health Score: **97.7/100**
 - Level: **Elite SEO/revenue engine**
-- Technical SEO: 19.79/20
-- Content usefulness: 19.92/20
-- Trust/E-E-A-T: 19.9/20
-- Internal linking: 14.88/15
+- Technical SEO: 19.48/20
+- Content usefulness: 19.91/20
+- Trust/E-E-A-T: 19.16/20
+- Internal linking: 14.59/15
 - Schema/indexability: 9.93/10
 - Conversion/revenue: 9.63/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 992
-- Healthy pages (85+): 981
+- Pages scanned: 993
+- Healthy pages (85+): 975
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
@@ -40,33 +40,35 @@ Mode: `audit`
 - Manual review for pricing, coupon, review, rating and vendor claims.
 
 ## Top 25 Highest-Impact Fixes
-- `/deal-radar` (82.0/100): thin_buyer_page
-- `/pages` (82.5/100): title_length_outside_target
-- `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (96.12/100): thin_buyer_page, title_length_outside_target
-- `/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay` (96.5/100): title_length_outside_target
-- `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay` (96.9/100): thin_buyer_page, title_length_outside_target
-- `/pages/anthropic-claude-vs-cohere-which-is-better-in-2026` (97.0/100): title_length_outside_target
-- `/pages/anthropic-claude-vs-hugging-face-which-is-better-in-2026` (97.0/100): title_length_outside_target
-- `/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026` (97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster` (97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (97.0/100): meta_length_outside_target
-- `/pages/cisco-anyconnect-vs-openvpn-which-is-better-in-2026` (97.0/100): title_length_outside_target
-- `/pages/cisco-anyconnect-vs-tailscale-which-is-better-in-2026` (97.0/100): title_length_outside_target
-- `/pages/cisco-anyconnect-vs-wireguard-which-is-better-in-2026` (97.0/100): title_length_outside_target
-- `/pages/cisco-anyconnect-vs-zscaler-which-is-better-in-2026` (97.0/100): title_length_outside_target
-- `/pages/cloudflare-vs-duo-security-which-is-better-in-2026` (97.0/100): title_length_outside_target
-- `/pages/does-amplitude-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
-- `/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
-- `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
-- `/pages/does-hotjar-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
-- `/pages/does-loom-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
-- `/pages/does-notion-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
-- `/pages/does-sentry-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
+- `/pages` (60.0/100): missing_correction_cta, missing_methodology, missing_related_pages, missing_trustbox, title_length_outside_target
+- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (84.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/lever-vs-remote-com-which-is-better-in-2026` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (84.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (85.19/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/7-best-adp-alternatives-in-2026-free-paid` (85.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-aws-alternatives-in-2026-free-paid` (85.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/around-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/asana-vs-monday-com-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/copy-ai-vs-hugging-face-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/copy-ai-vs-weights-biases-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/google-meet-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/loom-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-basecamp-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-clickup-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-jira-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 
 ## Top 25 Revenue Opportunities
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 85.19): CTA=True, affiliateLinks=2, disclosure=True
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 85.34): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 98.74): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 98.97): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.0): CTA=True, affiliateLinks=2, disclosure=True
@@ -74,7 +76,6 @@ Mode: `audit`
 - `/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 99.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/jasper-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.0): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.0): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 99.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/pipedrive-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 99.0): CTA=True, affiliateLinks=1, disclosure=True
@@ -91,4 +92,3 @@ Mode: `audit`
 - `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.95): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/shopify-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.97): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True

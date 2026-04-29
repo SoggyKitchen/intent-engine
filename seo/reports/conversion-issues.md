@@ -1,3 +1,3 @@
 # Conversion Issues
 
-No major conversion issues detected.
+- `/pages`: CTA=True, sticky=False, email=False, disclosure=False

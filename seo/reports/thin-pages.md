@@ -2,6 +2,13 @@
 
 - `/deal-radar`: 331 words, score 82.0
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay`: 722 words, score 97.01
+- `/pages/7-best-bigcommerce-alternatives-in-2026-free-paid`: 797 words, score 86.48
+- `/pages/7-best-getresponse-alternatives-in-2026-free-paid`: 795 words, score 86.47
+- `/pages/7-best-quickbooks-alternatives-in-2026-free-paid`: 746 words, score 86.23
+- `/pages/7-best-tableau-alternatives-in-2026-free-paid`: 786 words, score 86.43
+- `/pages/7-best-woocommerce-alternatives-in-2026-free-paid`: 747 words, score 86.23
+- `/pages/7-best-xero-alternatives-in-2026-free-paid`: 791 words, score 86.45
+- `/pages/7-best-zoho-crm-alternatives-in-2026-free-paid`: 782 words, score 86.41
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: 724 words, score 96.12
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts`: 786 words, score 99.93
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay`: 795 words, score 99.72
@@ -14,6 +21,7 @@
 - `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay`: 699 words, score 96.9
 - `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts`: 783 words, score 99.91
 - `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay`: 793 words, score 99.97
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts`: 767 words, score 85.34
 - `/pages/deel-coupon-code-promo-codes-2026-verified-discounts`: 789 words, score 99.94
 - `/pages/deel-pricing-2026-plans-costs-what-you-actually-pay`: 723 words, score 98.02
 - `/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay`: 790 words, score 97.35
@@ -22,6 +30,7 @@
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: 721 words, score 97.46
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay`: 722 words, score 97.01
 - `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay`: 747 words, score 98.14
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts`: 737 words, score 85.19
 - `/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay`: 764 words, score 98.67
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts`: 748 words, score 98.74
 - `/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay`: 762 words, score 97.21
