@@ -1,6 +1,6 @@
 name: SaaSpare SEO Agent
 
-on:
+"on":
   push:
     branches:
       - main
