@@ -1,6 +1,11 @@
 name: SaaSpare SEO Agent
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/seo-agent.yml"
   workflow_dispatch:
     inputs:
       mode:
@@ -31,7 +36,6 @@ jobs:
       CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
       GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
       GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
-      SEO_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'audit' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -45,6 +49,14 @@ jobs:
 
       - name: Install Python package
         run: python -m pip install uv
+
+      - name: Select SEO mode
+        run: |
+          SEO_MODE="${{ github.event.inputs.mode }}"
+          if [ -z "$SEO_MODE" ]; then
+            SEO_MODE="audit"
+          fi
+          echo "SEO_MODE=$SEO_MODE" >> "$GITHUB_ENV"
 
       - name: Run SEO agent
         run: npm run seo:agent -- --mode="$SEO_MODE"
