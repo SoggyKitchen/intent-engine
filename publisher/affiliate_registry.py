@@ -79,7 +79,7 @@ PROGRAMS = {
          "affiliate_url": "https://www.hetzner.com/legal/affiliate/", "network": "direct",
          "commission": "20 EUR per referral", "commission_pct": 0, "recurring": False},
         {"name": "Linode", "homepage": "https://www.linode.com",
-         "affiliate_url": "https://www.linode.com/partners/", "network": "impact",
+         "affiliate_url": "/pages/linode-vs-google-cloud-which-is-better-in-2026", "network": "internal-fallback",
          "commission": "$100 per new customer", "commission_pct": 0, "recurring": False, "avg_plan_usd": 100,
          "aliases": ["akamai cloud", "akamai linode"]},
         {"name": "Render", "homepage": "https://render.com",
@@ -122,7 +122,7 @@ PROGRAMS = {
          "affiliate_url": "https://www.deel.com/partners", "network": "partnerstack",
          "commission": "$500 per customer", "commission_pct": 0, "recurring": False, "avg_plan_usd": 500},
         {"name": "Gusto", "homepage": "https://gusto.com",
-         "affiliate_url": "https://gusto.com/refer-a-business", "network": "direct",
+         "affiliate_url": "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay", "network": "internal-fallback",
          "commission": "$300 per referral", "commission_pct": 0, "recurring": False, "avg_plan_usd": 300},
     ],
 
@@ -638,16 +638,24 @@ def get_all_redirects() -> dict[str, str]:
 
 
 def write_redirects_file(path: str | Path = "site/_redirects") -> int:
-    lines = []
-    for slug, url in sorted(get_all_redirects().items()):
+    path = Path(path)
+    preserved = []
+    if path.exists():
+        preserved = [
+            line
+            for line in path.read_text(encoding="utf-8", errors="ignore").splitlines()
+            if line.strip() and not line.strip().startswith("/go/")
+        ]
+    lines = preserved + ([] if not preserved else [""])
+    redirects = get_all_redirects()
+    for slug, url in sorted(redirects.items()):
         sep = "&" if "?" in url else "?"
         tracked_url = f"{url}{sep}utm_source=saaspare&utm_medium=affiliate&utm_campaign=go"
         lines.append(f"/go/{slug} {tracked_url} 302")
 
-    path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    return len(lines)
+    return len(redirects)
 
 
 def get_links_for_vertical(vertical: str, tool_names: list[str]) -> dict[str, str]:

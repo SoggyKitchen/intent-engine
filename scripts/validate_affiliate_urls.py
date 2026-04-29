@@ -102,6 +102,8 @@ def parse_redirects(path: Path) -> list[tuple[str, str]]:
             continue
         parts = line.split()
         if len(parts) >= 2:
+            if not parts[0].startswith("/go/"):
+                continue
             entries.append((parts[0], parts[1]))
     return entries
 
@@ -146,7 +148,9 @@ def main():
         futures = {
             pool.submit(
                 check_live_redirect,
-                f"{site_domain}{path}" if validate_live else expected_url,
+                f"{site_domain}{path}"
+                if validate_live
+                else (expected_url if expected_url.startswith(("http://", "https://")) else f"{site_domain}{expected_url}"),
                 expected_url,
                 headers,
             ): (path, expected_url)

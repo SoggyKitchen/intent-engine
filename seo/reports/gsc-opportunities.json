@@ -1,0 +1,5 @@
+{
+  "opportunities": [],
+  "reason": "skipped; GSC_SERVICE_ACCOUNT_JSON or GOOGLE_APPLICATION_CREDENTIALS_JSON missing",
+  "skipped": true
+}

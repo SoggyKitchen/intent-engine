@@ -15,16 +15,20 @@ def get_all_urls():
     site_dir = pathlib.Path("site")
 
     skip = {"thanks", "verification", "index"}
+    skip_prefixes = ("ph-preview-",)
+
+    if (pages_dir / "index.html").exists():
+        urls.append(f"{DOMAIN}/pages")
 
     for f in sorted(pages_dir.glob("*.html")):
-        if f.stem in skip:
+        if f.stem in skip or f.stem.startswith(skip_prefixes):
             continue
-        urls.append(f"{DOMAIN}/pages/{f.name}")
+        urls.append(f"{DOMAIN}/pages/{f.stem}")
 
     for f in sorted(site_dir.glob("*.html")):
-        if f.stem in skip:
+        if f.stem in skip or f.stem.startswith(skip_prefixes):
             continue
-        urls.append(f"{DOMAIN}/{f.name}")
+        urls.append(f"{DOMAIN}/{f.stem}")
 
     urls.insert(0, DOMAIN + "/")
     return urls

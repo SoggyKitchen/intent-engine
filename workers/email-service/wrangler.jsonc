@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "saaspare-email-service",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-29",
+  "observability": {
+    "enabled": true
+  },
+  "send_email": [
+    {
+      "name": "SEND_EMAIL"
+    }
+  ],
+  "vars": {
+    "ALLOWED_ORIGINS": "https://saaspare.org,https://www.saaspare.org"
+  }
+}

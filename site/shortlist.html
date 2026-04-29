@@ -3,30 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SaaSpare Shortlist Builder: Find the Right SaaS for Your Needs | SaaSpare</title>
-<meta name="description" content="Use SaaSpare&#x27;s Shortlist Builder to compare and evaluate SaaS tools side-by-side. Build your perfect software stack.">
+<title>SaaSpare Shortlist Builder: Save a SaaS Buyer List Without Login</title>
+<meta name="description" content="Build and save a SaaS shortlist without creating an account. Compare pricing, trial paths and buyer-fit recommendations before you click a vendor.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://saaspare.org/shortlist.html">
+<link rel="canonical" href="https://saaspare.org/shortlist">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-<meta property="og:title" content="SaaSpare Shortlist Builder: Find the Right SaaS for Your Needs | SaaSpare">
-<meta property="og:description" content="Use SaaSpare&#x27;s Shortlist Builder to compare and evaluate SaaS tools side-by-side. Build your perfect software stack.">
+<meta property="og:title" content="SaaSpare Shortlist Builder: Save a SaaS Buyer List Without Login">
+<meta property="og:description" content="Build and save a SaaS shortlist without creating an account. Compare pricing, trial paths and buyer-fit recommendations before you click a vendor.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://saaspare.org/shortlist.html">
+<meta property="og:url" content="https://saaspare.org/shortlist">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "SaaSpare Shortlist Builder",
-  "url": "https://saaspare.org/shortlist.html",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Any",
-  "description": "Interactive B2B SaaS shortlist builder for buyers comparing software tools."
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "SaaSpare Shortlist Builder", "url": "https://saaspare.org/shortlist.html", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Interactive B2B SaaS shortlist builder for buyers comparing software tools."}</script>
 <style>
 :root{--bg:#080810;--panel:#101017;--panel2:#151520;--border:rgba(255,255,255,.1);--text:#f8f7f4;--muted:rgba(248,247,244,.58);--soft:rgba(248,247,244,.08);--accent:#e94560;--accent2:#ffb5c0;--good:#65d6a3}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -63,30 +53,37 @@ select:focus,.field input:focus{border-color:rgba(233,69,96,.55);box-shadow:0 0 
 .lead{margin-top:1rem;padding:1rem;background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.2);border-radius:16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.75rem;align-items:center}.lead p{color:var(--muted);font-size:.86rem}.lead input{background:#0c0c12;border:1px solid var(--border);border-radius:999px;color:#fff;padding:.72rem 1rem;min-width:230px}
 .lead button{border:none;background:#fff;color:#111;border-radius:999px;padding:.72rem 1rem;font-weight:900;cursor:pointer}
 .note{margin-top:1rem;color:rgba(255,255,255,.32);font-size:.78rem}
-@media(max-width:860px){nav{padding:.75rem 1.2rem}.nav-link{display:none}.shell{padding:7rem 1.2rem 4rem}.builder{grid-template-columns:1fr}.controls{position:static}.tool{grid-template-columns:36px minmax(0,1fr)}.actions{grid-column:2;justify-content:flex-start}.lead{grid-template-columns:1fr}.lead input{min-width:0;width:100%}}
+.save-layer{margin-top:1.25rem;padding:1.1rem;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:center}
+.save-layer h2{font-size:1.18rem;letter-spacing:-.025em;margin-bottom:.35rem}.save-layer p{color:var(--muted);font-size:.88rem;max-width:720px}.save-actions{display:flex;gap:.55rem;flex-wrap:wrap;justify-content:flex-end}.save-state{margin-top:.65rem;color:rgba(255,255,255,.34);font-size:.76rem}.save-pill{display:inline-flex;align-items:center;gap:.4rem;border:1px solid rgba(101,214,163,.25);background:rgba(101,214,163,.08);color:#b6f3d4;border-radius:999px;padding:.25rem .55rem;font-weight:800}.plain-btn{border:1px solid var(--border);background:rgba(255,255,255,.06);color:#fff;border-radius:999px;padding:.72rem 1rem;font:inherit;font-size:.8rem;font-weight:900;cursor:pointer}.plain-btn.primary{border-color:rgba(233,69,96,.45);background:linear-gradient(135deg,#e94560,#c73652);box-shadow:0 8px 26px rgba(233,69,96,.25)}
+.account-principles{margin-top:1rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}.principle{padding:.9rem;border:1px solid var(--border);border-radius:16px;background:rgba(255,255,255,.035)}.principle strong{display:block;color:#fff;font-size:.84rem;margin-bottom:.25rem}.principle span{display:block;color:var(--muted);font-size:.75rem;line-height:1.55}
+@media(max-width:860px){nav{padding:.75rem 1.2rem}.nav-link{display:none}.shell{padding:7rem 1.2rem 4rem}.builder{grid-template-columns:1fr}.controls{position:static}.tool{grid-template-columns:36px minmax(0,1fr)}.actions{grid-column:2;justify-content:flex-start}.lead,.save-layer{grid-template-columns:1fr}.lead input{min-width:0;width:100%}.save-actions{justify-content:flex-start}.account-principles{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.account-principles{grid-template-columns:1fr}}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SaaSpare Shortlist Builder: Save a SaaS Buyer List Without Login">
+<meta name="twitter:description" content="Build and save a SaaS shortlist without creating an account. Compare pricing, trial paths and buyer-fit recommendations before you click a vendor.">
 </head>
 <body>
 <nav>
   <a class="ss-logo" href="/">
-    <img class="ss-logo-mark" src="/favicon.svg?v=paint-flow-2" alt="" width="26" height="26">
+    <img class="ss-logo-mark" src="/favicon.svg?v=paint-flow-2" alt="SaaSpare logo" width="26" height="26">
     <span class="ss-logo-text">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="nav-link">Comparisons</a>
-  <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
-  <a href="/shortlist.html" class="nav-link">Shortlist Builder</a>
-  <a href="/deal-radar.html" class="nav-link">Deal Radar</a>
-  <a href="/about.html" class="nav-link">About</a>
-  <a href="/shortlist.html" class="nav-cta">Build Shortlist -></a>
+  <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
+  <a href="/shortlist" class="nav-link">Shortlist Builder</a>
+  <a href="/deal-radar" class="nav-link">Deal Radar</a>
+  <a href="/about" class="nav-link">About</a>
+  <a href="/shortlist" class="nav-cta">Build Shortlist -></a>
 </nav>
 <main class="shell">
   <section class="hero">
     <div>
       <div class="eyebrow">Buyer-fit recommender</div>
       <h1><span class="hero-accent">Build</span> a SaaS shortlist in under a minute.</h1>
-      <p class="sub">Pick the category, team size and budget pressure. SaaSpare ranks the tools that are most likely to fit, then points you to pricing, alternatives and buyer pages.</p>
+      <p class="sub">Pick the category, team size and budget pressure. SaaSpare ranks the tools that are most likely to fit, then lets you save the list without forcing an account.</p>
     </div>
     <div class="score-card"><strong id="fit-score">92%</strong><span>Current fit confidence based on your inputs and monetized buyer paths.</span></div>
   </section>
@@ -96,7 +93,7 @@ select:focus,.field input:focus{border-color:rgba(233,69,96,.55);box-shadow:0 0 
       <div class="field"><label>Team size</label><div class="segments" data-name="team"><button class="seg active" data-value="small">Small</button><button class="seg" data-value="mid">Mid</button><button class="seg" data-value="large">Large</button></div></div>
       <div class="field"><label>Budget pressure</label><div class="segments" data-name="budget"><button class="seg active" data-value="low">Low</button><button class="seg" data-value="medium">Medium</button><button class="seg" data-value="high">High</button></div></div>
       <div class="field"><label>Buying stage</label><div class="segments" data-name="stage"><button class="seg active" data-value="research">Research</button><button class="seg" data-value="trial">Trial</button><button class="seg" data-value="buy">Buy</button></div></div>
-      <p class="note">The shortlist updates instantly and keeps every outbound click on SaaSpare's tracked `/go/` layer.</p>
+      <p class="note">No login wall. Your saved shortlist stays in this browser unless you choose to email it to yourself.</p>
     </aside>
     <section class="panel results">
       <div class="result-head"><div><h2 id="result-title">Recommended shortlist</h2><p id="result-copy">Ranked for fit, budget and likelihood to convert.</p></div><span class="fit" id="result-fit">High intent</span></div>
@@ -106,10 +103,29 @@ select:focus,.field input:focus{border-color:rgba(233,69,96,.55);box-shadow:0 0 
         <input type="hidden" name="_subject" value="SaaSpare shortlist request">
         <input type="hidden" name="_next" value="https://saaspare.org/pages/">
         <input type="hidden" name="shortlist_category" id="lead-category">
+        <input type="hidden" name="shortlist_snapshot" id="lead-snapshot">
         <input type="email" name="email" placeholder="you@example.com" required>
         <button type="submit">Send</button>
       </form>
     </section>
+  </section>
+  <section class="panel save-layer" aria-labelledby="save-title">
+    <div>
+      <div class="eyebrow">Optional account layer</div>
+      <h2 id="save-title">Save the shortlist first. Sign-up can wait.</h2>
+      <p>For maximum SEO and affiliate revenue, SaaSpare stays open. Accounts should only unlock saved lists, renewal reminders and team notes later, never block the comparison pages.</p>
+      <div class="save-state" id="save-state">No shortlist saved yet.</div>
+    </div>
+    <div class="save-actions">
+      <button class="plain-btn primary" type="button" id="save-shortlist">Save in browser</button>
+      <a class="plain-btn" href="/deal-radar">Check offers</a>
+    </div>
+  </section>
+  <section class="account-principles" aria-label="SaaSpare account strategy">
+    <div class="principle"><strong>Public content</strong><span>Google and buyers can read every money page without signing in.</span></div>
+    <div class="principle"><strong>Zero-friction clicks</strong><span>Affiliate buttons remain one click away from pricing, trials and offers.</span></div>
+    <div class="principle"><strong>Personalized return path</strong><span>Visitors can save locally now and email themselves the list when useful.</span></div>
+    <div class="principle"><strong>Pro-ready later</strong><span>Real accounts only make sense once renewal alerts or team workspaces are worth logging in for.</span></div>
   </section>
 </main>
 <script>
@@ -142,15 +158,41 @@ const CATEGORIES = {
 };
 const state = {category:"crm", team:"small", budget:"low", stage:"research"};
 const category = document.getElementById("category");
+let currentRanked = [];
 Object.entries(CATEGORIES).forEach(([key,value])=>{const option=document.createElement("option");option.value=key;option.textContent=value.label;category.appendChild(option);});
 function scoreTool(tool){return (tool[state.team]||0)*3+(tool[state.budget]||0)*2+(tool[state.stage]||0)*2;}
 function track(name, params){if(window.gtag)gtag("event",name,params);}
+function savedLabel(saved){
+  if(!saved) return "No shortlist saved yet.";
+  const date = new Date(saved.savedAt).toLocaleDateString(undefined,{month:"short",day:"numeric"});
+  return `<span class="save-pill">Saved</span> ${saved.categoryLabel} list with ${saved.tools.map(tool=>tool.name).slice(0,3).join(", ")} on ${date}.`;
+}
+function readSaved(){
+  try{return JSON.parse(localStorage.getItem("saaspare_shortlist_v1")||"null");}catch(_){return null;}
+}
+function renderSavedState(){
+  const el = document.getElementById("save-state");
+  if(el) el.innerHTML = savedLabel(readSaved());
+}
+function snapshot(group, ranked){
+  return {
+    category: state.category,
+    categoryLabel: group.label,
+    team: state.team,
+    budget: state.budget,
+    stage: state.stage,
+    tools: ranked.map((tool,index)=>({rank:index+1,name:tool.name,slug:tool.slug,page:tool.page,best:tool.best})),
+    savedAt: new Date().toISOString()
+  };
+}
 function render(){
   const group = CATEGORIES[state.category];
   document.getElementById("result-title").textContent = group.label + " shortlist";
   document.getElementById("result-copy").textContent = group.copy;
   document.getElementById("lead-category").value = group.label + " / " + state.team + " / " + state.budget + " / " + state.stage;
   const ranked = [...group.tools].sort((a,b)=>scoreTool(b)-scoreTool(a));
+  currentRanked = ranked;
+  document.getElementById("lead-snapshot").value = JSON.stringify(snapshot(group, ranked));
   const topScore = Math.min(98, 70 + scoreTool(ranked[0]));
   document.getElementById("fit-score").textContent = topScore + "%";
   document.getElementById("result-fit").textContent = state.stage === "buy" ? "Ready to compare offers" : "High intent";
@@ -173,7 +215,15 @@ function render(){
 }
 category.addEventListener("change",event=>{state.category=event.target.value;render();});
 document.querySelectorAll(".segments").forEach(group=>group.addEventListener("click",event=>{const button=event.target.closest(".seg");if(!button)return;group.querySelectorAll(".seg").forEach(item=>item.classList.remove("active"));button.classList.add("active");state[group.dataset.name]=button.dataset.value;render();}));
+document.getElementById("save-shortlist").addEventListener("click",()=>{
+  const group = CATEGORIES[state.category];
+  const data = snapshot(group, currentRanked.length ? currentRanked : group.tools);
+  localStorage.setItem("saaspare_shortlist_v1", JSON.stringify(data));
+  renderSavedState();
+  track("shortlist_save",{category:group.label,team_size:state.team,budget_pressure:state.budget,buying_stage:state.stage,top_tool:data.tools[0]?.name});
+});
 render();
+renderSavedState();
 </script>
 <script defer src="/assets/saaspare-ui.js"></script>
 </body>

@@ -1,0 +1,102 @@
+# Top 100 Fixes
+
+- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (83.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (84.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/lever-vs-remote-com-which-is-better-in-2026` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (84.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (85.19/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/7-best-adp-alternatives-in-2026-free-paid` (85.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-aws-alternatives-in-2026-free-paid` (85.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/around-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/asana-vs-monday-com-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/copy-ai-vs-hugging-face-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/copy-ai-vs-weights-biases-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/google-meet-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/loom-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-basecamp-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-clickup-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-jira-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-notion-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-smartsheet-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-todoist-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-trello-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-vs-wrike-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/rippling-vs-remote-com-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/riverside-fm-vs-streamyard-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/webex-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/whereby-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/workable-vs-remote-com-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/zoom-vs-riverside-fm-which-is-better-in-2026` (85.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/7-best-quickbooks-alternatives-in-2026-free-paid` (86.23/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-woocommerce-alternatives-in-2026-free-paid` (86.23/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-zoho-crm-alternatives-in-2026-free-paid` (86.41/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-tableau-alternatives-in-2026-free-paid` (86.43/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-xero-alternatives-in-2026-free-paid` (86.45/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-getresponse-alternatives-in-2026-free-paid` (86.47/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-bigcommerce-alternatives-in-2026-free-paid` (86.48/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-1password-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-ahrefs-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-asana-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-bamboohr-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-clickup-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-crowdstrike-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-dashlane-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-datadog-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-freshbooks-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-github-copilot-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-google-analytics-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-google-cloud-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-google-meet-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-heroku-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-hubspot-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-hubspot-crm-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-jira-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-lastpass-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-mailchimp-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-monday-com-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-moz-pro-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-nordlayer-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-okta-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-perimeter-81-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-power-bi-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-salesforce-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-semrush-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-shopify-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-splunk-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-surfer-seo-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-workday-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/7-best-zoom-alternatives-in-2026-free-paid` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/ahrefs-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/clearscope-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/copy-ai-vs-cohere-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/copy-ai-vs-openai-api-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/copy-ai-vs-pinecone-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/copy-ai-vs-weaviate-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/copy-ai-vs-writesonic-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/deel-vs-remote-com-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/gusto-vs-remote-com-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/mangools-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/moz-pro-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/se-ranking-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/semrush-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/spyfu-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/surfer-seo-vs-frase-io-which-is-better-in-2026` (86.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/riverside-fm-vs-descript-which-is-better-in-2026` (88.0/100): broken_internal_link, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages` (80.0/100): title_length_outside_target
+- `/deal-radar` (82.0/100): thin_buyer_page
+- `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (96.12/100): thin_buyer_page, title_length_outside_target
+- `/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay` (96.5/100): title_length_outside_target

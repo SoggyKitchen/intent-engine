@@ -1,0 +1,24 @@
+{
+  "name": "saaspare-seo-helper",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Repo-native SaaSpare SEO Helper wrapper for the Python/static intent-engine project.",
+  "config": {
+    "mode": "audit"
+  },
+  "scripts": {
+    "seo:discover": "uv run python scripts/seo/seo_agent.py --mode=audit --only=discover",
+    "seo:import-otto": "uv run python scripts/seo/seo_agent.py --mode=audit --only=otto",
+    "seo:crawl": "uv run python scripts/seo/seo_agent.py --mode=audit --only=crawl",
+    "seo:audit": "uv run python scripts/seo/seo_agent.py --mode=audit --only=audit",
+    "seo:score": "uv run python scripts/seo/seo_agent.py --mode=audit --only=score",
+    "seo:apply-safe-fixes": "uv run python scripts/seo/seo_agent.py --mode=apply-safe",
+    "seo:internal-links": "uv run python scripts/seo/seo_agent.py --mode=audit --only=internal-links",
+    "seo:schema": "uv run python scripts/seo/seo_agent.py --mode=audit --only=schema",
+    "seo:gsc": "uv run python scripts/seo/seo_agent.py --mode=audit --only=gsc",
+    "seo:ai": "uv run python scripts/seo/seo_agent.py --mode=audit --only=ai",
+    "seo:revenue": "uv run python scripts/seo/seo_agent.py --mode=audit --only=revenue",
+    "seo:agent": "uv run python scripts/seo/seo_agent.py",
+    "seo:report": "uv run python scripts/seo/seo_agent.py --mode=audit --only=report"
+  }
+}

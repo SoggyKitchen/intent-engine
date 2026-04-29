@@ -1,0 +1,28 @@
+{
+  "missingJsonLd": [
+    "/about",
+    "/affiliate-disclosure",
+    "/contact",
+    "/deal-radar",
+    "/media-kit",
+    "/methodology",
+    "/privacy",
+    "/pages"
+  ],
+  "schemaTypes": {
+    "Answer": 982,
+    "Article": 982,
+    "BreadcrumbList": 982,
+    "EntryPoint": 1,
+    "FAQPage": 982,
+    "ImageObject": 982,
+    "ItemList": 1,
+    "ListItem": 983,
+    "Organization": 984,
+    "Question": 982,
+    "SearchAction": 1,
+    "SiteLinksSearchBox": 1,
+    "WebApplication": 1,
+    "WebSite": 1
+  }
+}

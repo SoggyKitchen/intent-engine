@@ -10,33 +10,34 @@
     first.innerHTML = LOGO;
     first.setAttribute("href", href.includes("saaspare.org") ? href : "/");
   }
-  function ensureNavLinks(){
+  function normalizeNavLinks(){
     const nav = document.querySelector("nav");
     if(!nav) return;
-    const hasHref = (href) => [...nav.querySelectorAll("a")].some((a)=>((a.getAttribute("href") || "").replace("https://saaspare.org","")) === href);
-    const insertBefore = nav.querySelector(".nav-cta");
+    const logo = nav.querySelector(".ss-logo") || nav.querySelector("a");
+    if(!logo) return;
+    [...nav.querySelectorAll("a")].forEach((link)=>{
+      if(link !== logo) link.remove();
+    });
+    nav.classList.add("ss-nav-normalized");
     const links = [
       ["/pages/","Comparisons"],
       ["/pages/saas-roi-calculator.html","ROI Calculator"],
-      ["/deal-radar.html","Deal Radar"],
       ["/shortlist.html","Shortlist Builder"],
-      ["/about.html","About"]
+      ["/deal-radar.html","Deal Radar"],
+      ["/about.html","About"],
     ];
     links.forEach(([href,label])=>{
-      if(hasHref(href)) return;
       const a = document.createElement("a");
       a.href = href;
       a.textContent = label;
       a.className = "nav-link";
-      nav.insertBefore(a, insertBefore);
+      nav.appendChild(a);
     });
-    if(!nav.querySelector(".nav-cta")){
-      const cta = document.createElement("a");
-      cta.href = "/shortlist.html";
-      cta.textContent = "Build Shortlist";
-      cta.className = "nav-cta";
-      nav.appendChild(cta);
-    }
+    const cta = document.createElement("a");
+    cta.href = "/shortlist.html";
+    cta.textContent = "Build Shortlist ->";
+    cta.className = "nav-cta";
+    nav.appendChild(cta);
   }
   function track(name, params){ if(window.gtag) window.gtag("event", name, params || {}); }
   function addClickNudges(){
@@ -82,9 +83,46 @@
       document.body.appendChild(box);
     },1200);
   }
+  function enhanceLeadForms(){
+    const forms = [...document.querySelectorAll("form")].filter((form)=>{
+      const action = form.getAttribute("action") || "";
+      return form.querySelector("input[type='email'][name='email']") && (action.includes("formsubmit.co") || form.dataset.leadForm === "true");
+    });
+    forms.forEach((form)=>{
+      if(form.dataset.saaspareLeadBound) return;
+      form.dataset.saaspareLeadBound = "true";
+      form.addEventListener("submit", async (event)=>{
+        if(form.dataset.cfFallback === "true") return;
+        event.preventDefault();
+        const button = form.querySelector("button[type='submit'],button:not([type])");
+        const originalText = button ? button.textContent : "";
+        if(button){ button.disabled = true; button.textContent = "Sending..."; }
+        try{
+          const response = await fetch(window.SAASPARE_LEAD_ENDPOINT || "/api/lead", {
+            method: "POST",
+            body: new FormData(form),
+            headers: { "Accept": "application/json" }
+          });
+          if(!response.ok) throw new Error(`Lead endpoint ${response.status}`);
+          track("email_capture_submit", {
+            page_slug: location.pathname,
+            source_component: form.id || form.className || "lead_form"
+          });
+          const next = form.querySelector("input[name='_next']")?.value;
+          if(next) location.href = next;
+          else form.insertAdjacentHTML("afterend", "<p class='email-msg'>Sent. Check your inbox soon.</p>");
+        }catch(error){
+          form.dataset.cfFallback = "true";
+          HTMLFormElement.prototype.submit.call(form);
+        }finally{
+          if(button){ button.disabled = false; button.textContent = originalText; }
+        }
+      });
+    });
+  }
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();ensureNavLinks();addClickNudges();adblockPrompt();});
+    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();normalizeNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();});
   }else{
-    upgradeLogo();ensureNavLinks();addClickNudges();adblockPrompt();
+    upgradeLogo();normalizeNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();
   }
 })();

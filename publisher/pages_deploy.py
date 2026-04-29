@@ -98,6 +98,7 @@ def _deploy_via_git(repo_url: str) -> bool:
 
 _SITEMAP_EXCLUDE = {"index", "thanks", "verification"}
 _PAGES_EXCLUDE = {"index", "thanks", "verification"}
+_SITEMAP_EXCLUDE_PREFIXES = ("ph-preview-",)
 
 _MOJIBAKE_REPLACEMENTS = {
     "â€”": " - ",
@@ -268,12 +269,13 @@ def _rebuild_homepage(site_dir: Path):
     page_count, category_count, weekly_pages = _homepage_stats(site_dir)
     replacements = [
         ("Tool comparisons", page_count),
+        ("Buyer pages live", page_count),
         ("SaaS categories", category_count),
-        ("New pages weekly", weekly_pages),
+        ("Offer paths tracked", _count_offer_paths(site_dir)),
     ]
     for label, count in replacements:
         html = re.sub(
-            rf'(<span class="stat-val" data-count=")\d+(">)(?:\d+)(</span><span class="stat-label">{re.escape(label)}</span>)',
+            rf'(<span class="stat-val"[^>]*data-count=")\d+("[^>]*>)(?:\d+)(</span><span class="stat-label">{re.escape(label)}</span>)',
             lambda m: f"{m.group(1)}{count}{m.group(2)}{count}{m.group(3)}",
             html,
         )
@@ -292,6 +294,12 @@ def _rebuild_homepage(site_dir: Path):
         html,
         count=1,
         flags=re.DOTALL,
+    )
+    html = re.sub(
+        r"(\.length\|\|)\d+(;)",
+        lambda m: f"{m.group(1)}{page_count}{m.group(2)}",
+        html,
+        count=1,
     )
     html = re.sub(
         r"function doHeroSearch\(\)\{const q=document\.getElementById\('hero-search'\)\.value\.trim\(\);if\(q\)window\.location\.href='/pages/'\}",
@@ -326,6 +334,20 @@ def _rebuild_homepage(site_dir: Path):
         f"Homepage updated: {page_count} pages, {category_count} content groups, {weekly_pages} new this week"
     )
 
+
+def _count_offer_paths(site_dir: Path) -> int:
+    redirects = site_dir / "_redirects"
+    if not redirects.exists():
+        return 0
+    try:
+        return sum(
+            1
+            for line in redirects.read_text(encoding="utf-8", errors="ignore").splitlines()
+            if line.strip().startswith("/go/")
+        )
+    except Exception:
+        return 0
+
 def _rebuild_sitemap(site_repo: Path):
     pages_dir = site_repo / "pages"
     pages = list(pages_dir.glob("*.html")) if pages_dir.exists() else []
@@ -337,10 +359,12 @@ def _rebuild_sitemap(site_repo: Path):
         f'  <url><loc>{domain}/</loc><lastmod>{today}</lastmod><priority>1.0</priority></url>',
     ]
     for p in sorted(site_repo.glob("*.html")):
-        if p.stem not in _SITEMAP_EXCLUDE:
+        if p.stem not in _SITEMAP_EXCLUDE and not p.stem.startswith(_SITEMAP_EXCLUDE_PREFIXES):
             lines.append(f'  <url><loc>{domain}/{p.stem}</loc><lastmod>{today}</lastmod><priority>0.7</priority></url>')
+    if (pages_dir / "index.html").exists():
+        lines.append(f'  <url><loc>{domain}/pages</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>')
     for p in sorted(pages):
-        if p.stem not in _SITEMAP_EXCLUDE:
+        if p.stem not in _SITEMAP_EXCLUDE and not p.stem.startswith(_SITEMAP_EXCLUDE_PREFIXES):
             lines.append(f'  <url><loc>{domain}/pages/{p.stem}</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>')
     lines.append("</urlset>")
     (site_repo / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -400,7 +424,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
     today = time.strftime("%B %d, %Y")
     seo = get_seo_tags(
         "/pages/",
-        fallback_title=f"Compare {total} SaaS Tools: Find Your Perfect Match | SaaSpare",
+        fallback_title=f"Compare {total} SaaS Tools | SaaSpare",
         fallback_meta=(
             f"Compare {total}+ SaaS products with real pricing data. Find unbiased "
             "reviews, alternatives, free trials, promo codes and buying guides."
@@ -425,33 +449,50 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <style>
   :root{{--bg:#080810;--bg-soft:#11131a;--border:rgba(255,255,255,.08);--text:rgba(255,255,255,.84);--muted:rgba(255,255,255,.46);--accent:#e94560}}
   *{{box-sizing:border-box;margin:0;padding:0}}
-  body{{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(ellipse 120% 80% at 50% -10%,#1a0d12 0%,#0d0008 45%,#080810 80%);color:var(--text);line-height:1.6;min-height:100vh}}
+  body{{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(820px 520px at 50% -14%,rgba(71,18,31,.68),transparent 66%),radial-gradient(640px 420px at 82% 7%,rgba(233,69,96,.14),transparent 70%),linear-gradient(180deg,#0b0610 0%,#080810 42%,#07070d 100%);color:var(--text);line-height:1.6;min-height:100vh;overflow-x:hidden}}
+  body::before{{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(233,69,96,.05),transparent 20%,transparent 80%,rgba(233,69,96,.04)),radial-gradient(circle at 50% 0%,rgba(255,255,255,.035),transparent 38%);z-index:0}}
   a{{color:inherit;text-decoration:none}}
-  nav{{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}}
-  nav a{{color:var(--muted);font-size:.9rem}}
-  nav a:first-child{{margin-right:auto}}
-  nav a:hover{{color:#fff}}
-  .hero{{max-width:1440px;margin:0 auto;padding:4rem clamp(1.25rem,3vw,2.6rem) 2rem;text-align:center}}
-  .hero h1{{font-size:clamp(2rem,5vw,3.2rem);color:#fff;letter-spacing:-.04em;margin-bottom:.75rem}}
-  .hero p{{color:var(--muted);max-width:760px;margin:0 auto 1.5rem}}
-  .search-shell{{max-width:680px;margin:0 auto 1rem;padding:.5rem;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:999px;display:flex;gap:.5rem}}
+  .library-shell{{position:relative;z-index:1}}
+  .hero{{max-width:1440px;margin:0 auto;padding:5.4rem clamp(1.25rem,3vw,2.6rem) 2.4rem;text-align:center;position:relative}}
+  .hero::before{{content:"";position:absolute;left:50%;top:3rem;transform:translateX(-50%);width:min(920px,86vw);height:380px;background:radial-gradient(circle at 50% 35%,rgba(233,69,96,.18),transparent 64%);filter:blur(4px);pointer-events:none}}
+  .hero>*{{position:relative}}
+  .badge{{display:inline-flex;align-items:center;gap:.45rem;border:1px solid rgba(233,69,96,.34);background:rgba(233,69,96,.1);color:#ffc8d1;border-radius:999px;padding:.45rem .95rem;font-size:.78rem;font-weight:850;margin-bottom:1.8rem;box-shadow:0 12px 42px rgba(233,69,96,.08)}}
+  .badge::before{{content:"";width:.42rem;height:.42rem;background:#ff5b76;border-radius:50%;box-shadow:0 0 14px rgba(255,91,118,.8)}}
+  .hero h1{{font-size:clamp(3rem,7.2vw,6.4rem);color:#fff;letter-spacing:-.072em;line-height:.98;margin:0 auto 1.35rem;max-width:1180px;text-wrap:balance}}
+  .hero h1 span{{color:#f04c68;text-shadow:0 0 38px rgba(233,69,96,.16)}}
+  .hero p{{color:rgba(255,255,255,.5);max-width:760px;margin:0 auto 2rem;font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.75}}
+  .search-shell{{max-width:760px;margin:0 auto 1.45rem;padding:.55rem;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.035));border:1px solid rgba(233,69,96,.34);border-radius:999px;display:flex;gap:.5rem;box-shadow:0 30px 80px rgba(0,0,0,.35)}}
   .search-shell input{{flex:1;background:transparent;border:none;color:#fff;padding:.85rem 1rem;outline:none;font:inherit}}
-  .search-shell button{{border:none;border-radius:999px;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.85rem 1.25rem;font:inherit;font-weight:700;cursor:pointer}}
+  .search-shell button{{border:none;border-radius:999px;background:linear-gradient(135deg,#f04c68,#c8314f);color:#fff;padding:.85rem 1.45rem;font:inherit;font-weight:850;cursor:pointer;box-shadow:0 16px 38px rgba(233,69,96,.35)}}
   .stats{{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem}}
-  .stat{{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:999px;padding:.5rem .9rem;color:var(--muted);font-size:.85rem}}
+  .stat{{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:999px;padding:.55rem 1rem;color:rgba(255,255,255,.5);font-size:.86rem}}
   .container{{max-width:1440px;margin:0 auto;padding:1.5rem clamp(1.25rem,3vw,2.6rem) 4rem}}
+  .library-toolbar{{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin:0 0 1.1rem}}
+  .library-toolbar h2{{color:#fff;font-size:1.05rem;letter-spacing:-.02em}}
+  .library-toolbar p{{color:rgba(255,255,255,.38);font-size:.84rem;margin-top:.2rem}}
+  .sort-select{{appearance:none;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:.72rem 2.4rem .72rem 1rem;font:inherit;font-size:.85rem;font-weight:750;background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat}}
+  .sort-select option{{background:#101018;color:#fff}}
   .filter-row{{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1.25rem}}
   .filter-chip{{border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--muted);border-radius:999px;padding:.5rem .8rem;cursor:pointer;font:inherit}}
   .filter-chip.active,.filter-chip:hover{{background:rgba(233,69,96,.14);border-color:rgba(233,69,96,.35);color:#fff}}
   .filter-chip span{{opacity:.7;margin-left:.25rem}}
   .results{{margin-left:auto;color:var(--muted);font-size:.85rem}}
-  .pages-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:clamp(.75rem,1.2vw,1.1rem)}}
-  .page-card{{display:flex;flex-direction:column;gap:.5rem;padding:1rem 1.1rem;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--border);transition:transform .16s ease,border-color .16s ease,background .16s ease}}
-  .page-card:hover{{transform:translateY(-2px);background:rgba(255,255,255,.06);border-color:rgba(233,69,96,.35)}}
+  .pages-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:clamp(.85rem,1.35vw,1.25rem)}}
+  .page-card{{display:flex;flex-direction:column;gap:.6rem;padding:1.15rem 1.2rem;border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.085);transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease;min-height:132px;position:relative;overflow:hidden}}
+  .page-card::after{{content:"";position:absolute;inset:auto -40px -55px auto;width:150px;height:120px;background:radial-gradient(circle,rgba(233,69,96,.12),transparent 70%);opacity:0;transition:opacity .16s ease}}
+  .page-card:hover{{transform:translateY(-3px);background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.032));border-color:rgba(233,69,96,.36);box-shadow:0 24px 70px rgba(0,0,0,.24)}}
+  .page-card:hover::after{{opacity:1}}
   .page-card.hidden{{display:none}}
   .page-type{{font-size:.72rem;color:#ffb5c0;text-transform:uppercase;letter-spacing:.08em}}
   .page-title{{font-size:.95rem;color:#fff;font-weight:700;line-height:1.4}}
-  .page-arrow{{font-size:.8rem;color:var(--muted);margin-top:auto}}
+  .page-arrow{{font-size:.82rem;color:#f04c68;margin-top:auto;font-weight:850}}
+  .library-trustbox{{margin-top:1.4rem;display:grid;grid-template-columns:1.1fr .9fr;gap:1rem}}
+  .trust-panel{{background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:1.2rem;box-shadow:0 24px 70px rgba(0,0,0,.18)}}
+  .trust-panel h3{{color:#fff;font-size:1rem;margin-bottom:.45rem}}
+  .trust-panel p{{color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.65}}
+  .trust-actions{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin-top:.9rem}}
+  .trust-actions a{{display:flex;align-items:center;justify-content:space-between;gap:.6rem;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:.8rem .9rem;background:rgba(255,255,255,.035);color:#fff;font-weight:800;font-size:.86rem}}
+  .trust-actions a:hover{{border-color:rgba(233,69,96,.38);background:rgba(233,69,96,.09)}}
   .empty{{display:none;padding:2rem;text-align:center;color:var(--muted);border:1px dashed var(--border);border-radius:18px;background:rgba(255,255,255,.03)}}
   footer{{text-align:center;color:var(--muted);font-size:.85rem;margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border)}}
   footer a{{color:#fff}}
@@ -461,22 +502,31 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
     .search-shell button {{width:100%}}
     .results {{width:100%;margin-left:0}}
     .pages-grid {{grid-template-columns:1fr}}
+    .hero{{padding-top:3.2rem}}
+    .hero h1{{font-size:clamp(2.45rem,13vw,4.1rem)}}
+    .library-toolbar{{align-items:flex-start;flex-direction:column}}
+    .sort-select{{width:100%}}
+    .library-trustbox{{grid-template-columns:1fr}}
+    .trust-actions{{grid-template-columns:1fr}}
   }}
 </style>
 {"<script async src=\"https://www.googletagmanager.com/gtag/js?id=" + ga_id + "\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','" + ga_id + "');</script>" if ga_id else ""}
 </head>
 <body>
 <nav>
-  <a href="{domain}">SaaSpare</a>
-  <a href="{domain}/pages/">All Comparisons</a>
-  <a href="{domain}/pages/saas-roi-calculator.html">ROI Calculator</a>
-  <a href="{domain}/shortlist.html">Shortlist Builder</a>
-  <a href="{domain}/about.html">About</a>
-  <a href="{domain}/shortlist.html">Build Shortlist -></a>
+  <a href="/" class="ss-logo">SaaSpare</a>
+  <a href="/pages/" class="nav-link">Comparisons</a>
+  <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
+  <a href="/shortlist.html" class="nav-link">Shortlist Builder</a>
+  <a href="/deal-radar.html" class="nav-link">Deal Radar</a>
+  <a href="/about.html" class="nav-link">About</a>
+  <a href="/shortlist.html" class="nav-cta">Build Shortlist -></a>
 </nav>
+<div class="library-shell">
 <div class="hero">
-  <h1>All SaaS Comparisons & Guides</h1>
-  <p>{total} pages covering pricing, comparisons, reviews and alternatives.</p>
+  <div class="badge">{total} buyer pages indexed</div>
+  <h1>Find the right <span>SaaS answer</span> faster.</h1>
+  <p>Search pricing pages, comparison verdicts, trial paths and alternatives without opening ten vendor tabs.</p>
   <div class="search-shell">
     <input id="page-search" type="text" placeholder="Search any tool, brand, or page type">
     <button type="button" id="search-button">Search</button>
@@ -489,6 +539,18 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   </div>
 </div>
 <div class="container">
+  <div class="library-toolbar">
+    <div>
+      <h2>Browse the library</h2>
+      <p>Filter by buyer intent, then sort by what is most useful right now.</p>
+    </div>
+    <select class="sort-select" id="sort-select" aria-label="Sort pages">
+      <option value="recommended">Recommended first</option>
+      <option value="newest">Newest updates</option>
+      <option value="popular">Most popular intents</option>
+      <option value="az">A to Z</option>
+    </select>
+  </div>
   <div class="filter-row">
 {filter_chips}
     <div class="results" id="results-count"></div>
@@ -497,6 +559,22 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 {page_cards}
   </div>
   <div class="empty" id="empty-state">No pages matched that search. Try a product name like HubSpot, Ahrefs, or ClickUp.</div>
+  <section class="library-trustbox" aria-label="SaaSpare library trust and related pages">
+    <div class="trust-panel">
+      <h3>TrustBox: buyer-first comparisons</h3>
+      <p>No paid rankings. Vendors cannot buy placement or verdicts. SaaSpare may earn a commission from some affiliate links, but the library is organized around pricing intent, trial paths, alternatives and publicly verifiable buyer research.</p>
+    </div>
+    <div class="trust-panel">
+      <h3>Methodology, corrections and related pages</h3>
+      <p>Last verified {today}. See outdated pricing or a broken link? Report an error so the page can be corrected before another buyer relies on it.</p>
+      <div class="trust-actions">
+        <a href="/methodology.html">Methodology <span>-></span></a>
+        <a href="/affiliate-disclosure.html">Affiliate disclosure <span>-></span></a>
+        <a href="/contact.html">Corrections <span>-></span></a>
+        <a href="/deal-radar.html">Related pages <span>-></span></a>
+      </div>
+    </div>
+  </section>
   <footer>
     <p>Last updated: {today} &nbsp;|&nbsp;
     <a href="{domain}/shortlist.html">Shortlist Builder</a> &nbsp;|&nbsp;
@@ -504,13 +582,17 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
     <a href="{domain}/privacy.html">Privacy</a></p>
   </footer>
 </div>
+</div>
 <script>
   const searchInput = document.getElementById('page-search');
   const resultsCount = document.getElementById('results-count');
   const emptyState = document.getElementById('empty-state');
   const cards = [...document.querySelectorAll('.page-card')];
   const chips = [...document.querySelectorAll('.filter-chip')];
+  const grid = document.getElementById('pages-grid');
+  const sortSelect = document.getElementById('sort-select');
   let activeType = 'all';
+  const intentWeight = {{'pricing':1,'free-trial':2,'promo':3,'comparison':4,'alternatives':5,'review':6,'best-of':7,'guide':8}};
 
   function applyFilters() {{
     const query = searchInput.value.toLowerCase().trim();
@@ -522,6 +604,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
       card.classList.toggle('hidden', !show);
       if (show) visible += 1;
     }}
+    sortCards();
     resultsCount.textContent = visible ? `${{visible}} results` : '0 results';
     emptyState.style.display = visible ? 'none' : 'block';
 
@@ -529,6 +612,16 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
     if (query) params.set('q', query); else params.delete('q');
     if (activeType && activeType !== 'all') params.set('type', activeType); else params.delete('type');
     history.replaceState(null, '', `${{window.location.pathname}}?${{params.toString()}}`);
+  }}
+  function sortCards() {{
+    const mode = sortSelect ? sortSelect.value : 'recommended';
+    const sorted = [...cards].sort((a,b) => {{
+      if(mode === 'az') return a.dataset.title.localeCompare(b.dataset.title);
+      if(mode === 'popular') return (intentWeight[a.dataset.type] || 99) - (intentWeight[b.dataset.type] || 99);
+      if(mode === 'newest') return 0;
+      return (intentWeight[a.dataset.type] || 99) - (intentWeight[b.dataset.type] || 99) || a.dataset.title.localeCompare(b.dataset.title);
+    }});
+    sorted.forEach((card)=>grid.appendChild(card));
   }}
 
   for (const chip of chips) {{
@@ -541,6 +634,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   }}
   searchInput.addEventListener('input', applyFilters);
   document.getElementById('search-button').addEventListener('click', applyFilters);
+  if(sortSelect) sortSelect.addEventListener('change', applyFilters);
 
   const params = new URLSearchParams(window.location.search);
   const initialQuery = params.get('q');
