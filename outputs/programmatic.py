@@ -881,10 +881,12 @@ def _write_sitemap():
         pages_path = Path("site/sitemap.xml")
         pages_path.parent.mkdir(parents=True, exist_ok=True)
         urls = [f"{domain}/"]
+        skip = {"index", "thanks", "verification"}
+        skip_prefixes = ("ph-preview-",)
         if site_dir.exists():
             for f in sorted(site_dir.glob("*.html")):
-                if f.stem not in ("thanks", "verification"):
-                    urls.append(f"{domain}/pages/{f.name}")
+                if f.stem not in skip and not f.stem.startswith(skip_prefixes):
+                    urls.append(f"{domain}/pages/{f.stem}")
         lines = ['<?xml version="1.0" encoding="UTF-8"?>',
                  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
         for url in urls:

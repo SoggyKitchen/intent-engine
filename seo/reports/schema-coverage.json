@@ -1,17 +1,15 @@
 {
   "missingJsonLd": [
     "/about",
+    "/affiliate-disclosure",
     "/contact",
     "/deal-radar",
     "/media-kit",
-    "/ph-preview-1",
-    "/ph-preview-2",
-    "/ph-preview-3",
+    "/methodology",
     "/privacy",
     "/pages"
   ],
   "schemaTypes": {
-    "AggregateRating": 102,
     "Answer": 981,
     "Article": 981,
     "BreadcrumbList": 981,
@@ -20,13 +18,10 @@
     "ImageObject": 981,
     "ItemList": 1,
     "ListItem": 982,
-    "Organization": 985,
+    "Organization": 983,
     "Question": 981,
-    "Rating": 151,
-    "Review": 151,
     "SearchAction": 1,
     "SiteLinksSearchBox": 1,
-    "SoftwareApplication": 49,
     "WebApplication": 1,
     "WebSite": 1
   }

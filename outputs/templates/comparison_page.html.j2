@@ -133,6 +133,10 @@ details[open] summary{border-bottom:1px solid rgba(255,255,255,.07)}
 .related h3{color:rgba(255,255,255,.5);font-size:.75rem;font-weight:700;letter-spacing:.7px;text-transform:uppercase;margin-bottom:.9rem}
 .related a{display:inline-block;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);color:rgba(255,255,255,.55);padding:4px 12px;border-radius:100px;font-size:.78rem;margin:3px;transition:all .2s}
 .related a:hover{background:rgba(233,69,96,.14);border-color:rgba(233,69,96,.35);color:rgba(255,180,192,.92)}
+.seo-trustbox{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.4rem;margin:2rem 0}
+.seo-trustbox p{color:rgba(255,255,255,.58);font-size:.88rem;margin:.65rem 0}
+.seo-trustbox strong{color:rgba(255,255,255,.86)}
+.seo-trustbox a{color:#ff8ca0;text-decoration:underline;text-decoration-color:rgba(233,69,96,.45)}
 
 .share-row{text-align:center;margin:2rem 0}
 .share-row p{font-size:.78rem;color:rgba(255,255,255,.25);margin-bottom:.75rem}
@@ -345,6 +349,23 @@ footer p+p{margin-top:.5rem}
     {% endfor %}
   </div>
   {% endif %}
+  {% if not related_pages %}
+  <section class="related section" data-seo-related>
+    <h3>Related Pages</h3>
+    <a href="{{ site_domain | default('https://saaspare.org') }}/pages/">Browse all SaaS comparisons</a>
+    <a href="{{ site_domain | default('https://saaspare.org') }}/deal-radar">Check current SaaS deals</a>
+    <a href="{{ site_domain | default('https://saaspare.org') }}/shortlist">Build a shortlist</a>
+    <a href="{{ site_domain | default('https://saaspare.org') }}/pages/saas-roi-calculator">Run the ROI calculator</a>
+  </section>
+  {% endif %}
+
+  <section class="seo-trustbox section" data-seo-trustbox>
+    <h2>How SaaSpare keeps this page useful</h2>
+    <p><strong>No paid rankings:</strong> Vendors cannot buy placement or verdicts. SaaSpare may earn a commission when readers click some affiliate links, but that does not change the comparison order.</p>
+    <p><strong>Last verified:</strong> Updated {{ updated_date }}. Pricing source: public vendor pages linked from this page where available; otherwise marked for verification.</p>
+    <p><strong>Methodology:</strong> We compare pricing signals, trial paths, buyer fit, alternatives, and visible vendor information. See <a href="{{ site_domain | default('https://saaspare.org') }}/methodology">our methodology</a> and <a href="{{ site_domain | default('https://saaspare.org') }}/affiliate-disclosure">affiliate disclosure</a>.</p>
+    <p><strong>Correction CTA:</strong> See outdated pricing or an incorrect trial detail? <a href="{{ site_domain | default('https://saaspare.org') }}/contact">Report an error</a> and include the vendor source.</p>
+  </section>
 
   <div class="cta-section" style="margin-top:2.5rem">
     <h2>Ready to decide?</h2>

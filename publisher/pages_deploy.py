@@ -98,6 +98,7 @@ def _deploy_via_git(repo_url: str) -> bool:
 
 _SITEMAP_EXCLUDE = {"index", "thanks", "verification"}
 _PAGES_EXCLUDE = {"index", "thanks", "verification"}
+_SITEMAP_EXCLUDE_PREFIXES = ("ph-preview-",)
 
 _MOJIBAKE_REPLACEMENTS = {
     "â€”": " - ",
@@ -337,10 +338,12 @@ def _rebuild_sitemap(site_repo: Path):
         f'  <url><loc>{domain}/</loc><lastmod>{today}</lastmod><priority>1.0</priority></url>',
     ]
     for p in sorted(site_repo.glob("*.html")):
-        if p.stem not in _SITEMAP_EXCLUDE:
+        if p.stem not in _SITEMAP_EXCLUDE and not p.stem.startswith(_SITEMAP_EXCLUDE_PREFIXES):
             lines.append(f'  <url><loc>{domain}/{p.stem}</loc><lastmod>{today}</lastmod><priority>0.7</priority></url>')
+    if (pages_dir / "index.html").exists():
+        lines.append(f'  <url><loc>{domain}/pages</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>')
     for p in sorted(pages):
-        if p.stem not in _SITEMAP_EXCLUDE:
+        if p.stem not in _SITEMAP_EXCLUDE and not p.stem.startswith(_SITEMAP_EXCLUDE_PREFIXES):
             lines.append(f'  <url><loc>{domain}/pages/{p.stem}</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>')
     lines.append("</urlset>")
     (site_repo / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")

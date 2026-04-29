@@ -28,6 +28,7 @@ DEFAULT_CONFIG = {
     "reportsDir": "seo/reports",
     "snapshotsDir": "seo/snapshots",
     "ottoImportsDir": "seo/otto-imports",
+    "excludePathPatterns": [r"^/ph-preview-\d+$", r"^/pages/(thanks|verification)$"],
     "thresholds": {"thinWords": 800, "titleMin": 30, "titleMax": 70, "metaMin": 90, "metaMax": 170},
 }
 
@@ -147,12 +148,12 @@ def public_url(site_url: str, path: str) -> str:
 
 
 def classify_page_type(path: str, html: str = "") -> str:
+    if path in {"/about", "/contact", "/privacy", "/methodology", "/affiliate-disclosure"}:
+        return "trust"
     combined = f"{path} {strip_tags(html[:5000])}"
     for page_type, pattern in PAGE_TYPE_PATTERNS:
         if pattern.search(combined):
             return page_type
-    if path in {"/about", "/contact", "/privacy", "/methodology", "/affiliate-disclosure"}:
-        return "trust"
     return "other"
 
 
@@ -382,10 +383,15 @@ def safe_to_apply(issue_type: str, current: str, recommended: str) -> tuple[bool
 def crawl_site(config: dict) -> list[PageAudit]:
     site_dir = ROOT / config["siteDir"]
     files = sorted(site_dir.glob("*.html")) + sorted((site_dir / "pages").glob("*.html"))
+    files = [file for file in files if not should_exclude_path(file_to_path(file, site_dir), config)]
     existing_paths = {file_to_path(file, site_dir) for file in files}
     audits = [audit_file(file, site_dir, existing_paths, config) for file in files]
     write_json(ROOT / config["snapshotsDir"] / "pages.json", [asdict(a) for a in audits])
     return audits
+
+
+def should_exclude_path(path: str, config: dict) -> bool:
+    return any(re.search(pattern, path) for pattern in config.get("excludePathPatterns", []))
 
 
 def audit_file(file: Path, site_dir: Path, existing_paths: set[str], config: dict) -> PageAudit:
@@ -439,7 +445,7 @@ def audit_file(file: Path, site_dir: Path, existing_paths: set[str], config: dic
         has_last_verified=bool(re.search(r"last verified|last checked|verified", html, re.I)),
         has_pricing_source=bool(re.search(r"pricing source|source:", html, re.I)),
         has_email_capture=bool(re.search(r'type=["\']email["\']|newsletter|digest', html, re.I)),
-        has_cta=bool(re.search(r"try free|open offer|view pricing|compare alternatives|build shortlist", html, re.I)),
+        has_cta=bool(re.search(r"try free|start free|start trial|open offer|view pricing|compare alternatives|build shortlist|href=[\"']/go/", html, re.I)),
         has_sticky_cta=bool(re.search(r"sticky.*cta|position:\s*fixed", html, re.I | re.S)),
     )
     audit.issues, audit.warnings = classify_issues(audit, invalid_jsonld, config)
@@ -621,6 +627,7 @@ def apply_safe_fixes(config: dict, audits: list[PageAudit]) -> list[dict]:
         file = ROOT / audit.file
         html = file.read_text(encoding="utf-8", errors="ignore")
         original = html
+        fixes = []
         seo = get_page_seo(audit, config)
         html = upsert_title(html, seo["title"])
         html = upsert_meta(html, "description", seo["meta_description"])
@@ -633,9 +640,15 @@ def apply_safe_fixes(config: dict, audits: list[PageAudit]) -> list[dict]:
         html = upsert_meta(html, "twitter:title", seo["title"])
         html = upsert_meta(html, "twitter:description", seo["meta_description"])
         html = fix_internal_html_links(html)
+        html = fix_saaspare_suffix_links(html)
+        html = fix_known_broken_internal_links(html)
+        html = strip_unsupported_review_schema(html)
+        html = inject_buyer_trust_block(html, audit, config)
+        html = inject_related_actions_block(html, audit, config)
         if html != original:
             file.write_text(html, encoding="utf-8")
-            applied.append({"file": audit.file, "path": audit.path, "fixes": ["metadata", "canonical", "social", "internal_html_links"]})
+            fixes.extend(["metadata", "canonical", "social", "internal_links", "trust_block", "schema_safety"])
+            applied.append({"file": audit.file, "path": audit.path, "fixes": sorted(set(fixes))})
     write_json(ROOT / config["reportsDir"] / "applied-fixes.json", applied)
     write_md(ROOT / config["reportsDir"] / "applied-fixes.md", applied_fixes_md(applied))
     return applied
@@ -696,6 +709,99 @@ def fix_internal_html_links(html: str) -> str:
         return f"href={quote}{clean}{quote}"
 
     return re.sub(r'href=(["\'])([^"\']+\.html(?:[?#][^"\']*)?)\1', repl, html)
+
+
+def fix_saaspare_suffix_links(html: str) -> str:
+    return re.sub(r'(?<=href=["\'])(https://saaspare\.org/pages/[^"\']+?)-saaspare(?=["\'])', r"\1", html)
+
+
+def fix_known_broken_internal_links(html: str) -> str:
+    replacements = {
+        "https://saaspare.org/pages/hubspot-alternatives-2026-best-tools-compared": "https://saaspare.org/pages/best-hubspot-alternatives-in-2026-free-paid",
+        "https://saaspare.org/pages/notion-alternatives-2026-best-tools-compared": "https://saaspare.org/pages/best-notion-alternatives-in-2026-free-paid",
+        "https://saaspare.org/pages/best-crm-for-startups-2026": "https://saaspare.org/pages/best-crm-software-for-startups-in-2026-free-paid",
+    }
+    for old, new in replacements.items():
+        html = html.replace(old, new)
+    return html
+
+
+def strip_unsupported_review_schema(html: str) -> str:
+    def clean_value(value):
+        if isinstance(value, list):
+            cleaned = [clean_value(item) for item in value]
+            return [item for item in cleaned if item is not None]
+        if isinstance(value, dict):
+            schema_type = value.get("@type")
+            if schema_type == "Review" or schema_type == "AggregateRating":
+                return None
+            cleaned = {}
+            for key, child in value.items():
+                if key in {"review", "aggregateRating", "reviewRating"}:
+                    continue
+                cleaned_child = clean_value(child)
+                if cleaned_child is not None:
+                    cleaned[key] = cleaned_child
+            return cleaned
+        return value
+
+    def repl(match: re.Match) -> str:
+        raw = match.group(1)
+        try:
+            parsed = json.loads(raw)
+        except json.JSONDecodeError:
+            return match.group(0)
+        cleaned = clean_value(parsed)
+        if cleaned is None or cleaned == []:
+            return ""
+        return '<script type="application/ld+json">' + json.dumps(cleaned, ensure_ascii=False) + "</script>"
+
+    return re.sub(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', repl, html, flags=re.I | re.S)
+
+
+def inject_buyer_trust_block(html: str, audit: PageAudit, config: dict) -> str:
+    buyer_types = {"pricing", "free_trial", "coupon", "review", "alternatives", "comparison", "best_of"}
+    if audit.page_type not in buyer_types or "data-seo-trustbox" in html:
+        return html
+    site_url = config["siteUrl"].rstrip("/")
+    source_line = "Pricing source: public vendor pages linked from this page where available; otherwise marked for verification."
+    block = f"""
+<section class="seo-trustbox section" data-seo-trustbox>
+  <h2>How SaaSpare keeps this page useful</h2>
+  <p><strong>No paid rankings:</strong> Vendors cannot buy placement or verdicts. SaaSpare may earn a commission when readers click some affiliate links, but that does not change the comparison order.</p>
+  <p><strong>Last verified:</strong> {escape(audit.title[:80] or "This buyer page")} is checked during scheduled SEO and link audits. {source_line}</p>
+  <p><strong>Methodology:</strong> We compare pricing signals, trial paths, buyer fit, alternatives, and visible vendor information. See <a href="{site_url}/methodology">our methodology</a> and <a href="{site_url}/affiliate-disclosure">affiliate disclosure</a>.</p>
+  <p><strong>Correction CTA:</strong> See outdated pricing or an incorrect trial detail? <a href="{site_url}/contact">Report an error</a> and include the vendor source.</p>
+</section>
+"""
+    if "</footer>" in html:
+        return html.replace("<footer>", block + "\n<footer>", 1)
+    if "</body>" in html:
+        return html.replace("</body>", block + "\n</body>", 1)
+    return html + block
+
+
+def inject_related_actions_block(html: str, audit: PageAudit, config: dict) -> str:
+    buyer_types = {"pricing", "free_trial", "coupon", "review", "alternatives", "comparison", "best_of"}
+    if audit.page_type not in buyer_types or re.search(r"related pages|related comparisons|you may also|data-seo-related", html, re.I):
+        return html
+    site_url = config["siteUrl"].rstrip("/")
+    block = f"""
+<section class="related section" data-seo-related>
+  <h3>Related Pages</h3>
+  <a href="{site_url}/pages/">Browse all SaaS comparisons</a>
+  <a href="{site_url}/deal-radar">Check current SaaS deals</a>
+  <a href="{site_url}/shortlist">Build a shortlist</a>
+  <a href="{site_url}/pages/saas-roi-calculator">Run the ROI calculator</a>
+</section>
+"""
+    if '<section class="seo-trustbox' in html:
+        return html.replace('<section class="seo-trustbox', block + '\n<section class="seo-trustbox', 1)
+    if "</footer>" in html:
+        return html.replace("<footer>", block + "\n<footer>", 1)
+    if "</body>" in html:
+        return html.replace("</body>", block + "\n</body>", 1)
+    return html + block
 
 
 def generate_reports(config: dict, audits: list[PageAudit], discovery: dict, otto: dict, applied: list[dict], mode: str) -> None:
