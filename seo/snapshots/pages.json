@@ -545,10 +545,10 @@
     "robots": "",
     "schema_types": [],
     "score": {
-      "content": 9.65,
+      "content": 9.77,
       "conversionRevenue": 5,
       "internalLinking": 7.25,
-      "overall": 54.9,
+      "overall": 55.02,
       "performanceUx": 5,
       "schemaIndexability": 3,
       "technical": 20,
@@ -558,7 +558,7 @@
     "title_length": 48,
     "url": "https://saaspare.org/privacy",
     "warnings": [],
-    "word_count": 530
+    "word_count": 553
   },
   {
     "affiliate_links": [

@@ -82,9 +82,46 @@
       document.body.appendChild(box);
     },1200);
   }
+  function enhanceLeadForms(){
+    const forms = [...document.querySelectorAll("form")].filter((form)=>{
+      const action = form.getAttribute("action") || "";
+      return form.querySelector("input[type='email'][name='email']") && (action.includes("formsubmit.co") || form.dataset.leadForm === "true");
+    });
+    forms.forEach((form)=>{
+      if(form.dataset.saaspareLeadBound) return;
+      form.dataset.saaspareLeadBound = "true";
+      form.addEventListener("submit", async (event)=>{
+        if(form.dataset.cfFallback === "true") return;
+        event.preventDefault();
+        const button = form.querySelector("button[type='submit'],button:not([type])");
+        const originalText = button ? button.textContent : "";
+        if(button){ button.disabled = true; button.textContent = "Sending..."; }
+        try{
+          const response = await fetch(window.SAASPARE_LEAD_ENDPOINT || "/api/lead", {
+            method: "POST",
+            body: new FormData(form),
+            headers: { "Accept": "application/json" }
+          });
+          if(!response.ok) throw new Error(`Lead endpoint ${response.status}`);
+          track("email_capture_submit", {
+            page_slug: location.pathname,
+            source_component: form.id || form.className || "lead_form"
+          });
+          const next = form.querySelector("input[name='_next']")?.value;
+          if(next) location.href = next;
+          else form.insertAdjacentHTML("afterend", "<p class='email-msg'>Sent. Check your inbox soon.</p>");
+        }catch(error){
+          form.dataset.cfFallback = "true";
+          HTMLFormElement.prototype.submit.call(form);
+        }finally{
+          if(button){ button.disabled = false; button.textContent = originalText; }
+        }
+      });
+    });
+  }
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();ensureNavLinks();addClickNudges();adblockPrompt();});
+    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();ensureNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();});
   }else{
-    upgradeLogo();ensureNavLinks();addClickNudges();adblockPrompt();
+    upgradeLogo();ensureNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();
   }
 })();

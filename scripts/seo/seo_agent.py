@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import csv
 import json
 import os
@@ -8,7 +9,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass, field
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from html import escape, unescape
 from pathlib import Path
 from urllib.parse import urlparse
@@ -806,6 +807,7 @@ def inject_related_actions_block(html: str, audit: PageAudit, config: dict) -> s
 
 def generate_reports(config: dict, audits: list[PageAudit], discovery: dict, otto: dict, applied: list[dict], mode: str) -> None:
     reports_dir = ROOT / config["reportsDir"]
+    gsc = load_gsc_opportunities(config)
     write_json(reports_dir / "audit.json", [asdict(a) for a in audits])
     write_md(reports_dir / "audit.md", audit_md(audits))
     write_md(reports_dir / "severe-issues.md", issue_md(audits, severe=True))
@@ -822,8 +824,8 @@ def generate_reports(config: dict, audits: list[PageAudit], discovery: dict, ott
     write_json(reports_dir / "schema-coverage.json", schema_coverage(audits))
     write_md(reports_dir / "sitemap-report.md", sitemap_report_md(config, audits))
     write_json(reports_dir / "indexability-report.json", indexability_report(audits))
-    write_md(reports_dir / "gsc-opportunities.md", gsc_report_md())
-    write_json(reports_dir / "gsc-opportunities.json", {"skipped": not has_gsc_credentials(), "reason": gsc_skip_reason()})
+    write_md(reports_dir / "gsc-opportunities.md", gsc_report_md(gsc))
+    write_json(reports_dir / "gsc-opportunities.json", gsc)
     write_md(reports_dir / "ai-suggestions.md", ai_suggestions_md(audits))
     write_json(reports_dir / "ai-suggestions.json", {"skipped": "CEREBRAS_API_KEY" not in os.environ, "suggestions": []})
     write_md(reports_dir / "conversion-issues.md", conversion_issues_md(audits))
@@ -1019,17 +1021,163 @@ def indexability_report(audits: list[PageAudit]) -> dict:
     return {"noindex": [a.path for a in audits if "noindex" in a.robots.lower()], "canonicalIssues": [a.path for a in audits if "canonical" in " ".join(a.issues + a.warnings)]}
 
 
-def gsc_report_md() -> str:
-    return f"""# GSC Opportunities
+def load_gsc_opportunities(config: dict) -> dict:
+    if not has_gsc_credentials():
+        return {"skipped": True, "reason": gsc_skip_reason(), "opportunities": []}
+    try:
+        from google.oauth2 import service_account
+        from googleapiclient.discovery import build
+    except Exception as exc:
+        return {"skipped": True, "reason": f"google api libraries unavailable: {exc}", "opportunities": []}
 
-Status: {gsc_skip_reason()}
+    site_url = os.environ.get("GSC_SITE_URL") or config.get("siteUrl") or "https://saaspare.org"
+    end_date = datetime.now(UTC).date() - timedelta(days=3)
+    start_date = end_date - timedelta(days=int(os.environ.get("GSC_LOOKBACK_DAYS", "28")))
+    scopes = ["https://www.googleapis.com/auth/webmasters.readonly"]
+    try:
+        credentials_source = os.environ.get("GSC_SERVICE_ACCOUNT_JSON") or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
+        credentials_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+        if credentials_source:
+            credentials_json = decode_possible_base64(credentials_source)
+            info = json.loads(credentials_json)
+            credentials = service_account.Credentials.from_service_account_info(info, scopes=scopes)
+        elif credentials_path:
+            credentials = service_account.Credentials.from_service_account_file(credentials_path, scopes=scopes)
+        else:
+            return {"skipped": True, "reason": gsc_skip_reason(), "opportunities": []}
 
-When credentials are available, this report should prioritize:
+        service = build("searchconsole", "v1", credentials=credentials, cache_discovery=False)
+        rows = []
+        for dimensions in (["page", "query"], ["page"]):
+            response = (
+                service.searchanalytics()
+                .query(
+                    siteUrl=site_url,
+                    body={
+                        "startDate": start_date.isoformat(),
+                        "endDate": end_date.isoformat(),
+                        "dimensions": dimensions,
+                        "rowLimit": 2500,
+                    },
+                )
+                .execute()
+            )
+            rows.extend(normalize_gsc_rows(response.get("rows", []), dimensions))
+        opportunities = rank_gsc_opportunities(rows)
+        return {
+            "skipped": False,
+            "siteUrl": site_url,
+            "startDate": start_date.isoformat(),
+            "endDate": end_date.isoformat(),
+            "rowsPulled": len(rows),
+            "opportunities": opportunities,
+        }
+    except Exception as exc:
+        return {"skipped": True, "reason": f"GSC API error: {exc}", "opportunities": []}
+
+
+def decode_possible_base64(value: str) -> str:
+    stripped = value.strip()
+    if stripped.startswith("{"):
+        return stripped
+    try:
+        decoded = base64.b64decode(stripped).decode("utf-8")
+        if decoded.strip().startswith("{"):
+            return decoded
+    except Exception:
+        pass
+    return stripped
+
+
+def normalize_gsc_rows(rows: list[dict], dimensions: list[str]) -> list[dict]:
+    normalized = []
+    for row in rows:
+        keys = row.get("keys", [])
+        data = {
+            "page": keys[0] if keys else "",
+            "query": keys[1] if len(keys) > 1 else "",
+            "clicks": float(row.get("clicks", 0) or 0),
+            "impressions": float(row.get("impressions", 0) or 0),
+            "ctr": float(row.get("ctr", 0) or 0),
+            "position": float(row.get("position", 0) or 0),
+            "dimensions": dimensions,
+        }
+        normalized.append(data)
+    return normalized
+
+
+def rank_gsc_opportunities(rows: list[dict]) -> list[dict]:
+    buyer_re = re.compile(r"\b(pricing|price|cost|free trial|trial|coupon|promo|discount|alternative|alternatives|vs|review|deal)\b", re.I)
+    opportunities = []
+    for row in rows:
+        impressions = row["impressions"]
+        ctr = row["ctr"]
+        position = row["position"]
+        query = row.get("query", "")
+        score = 0.0
+        if impressions >= 10:
+            score += min(impressions / 50, 25)
+        if 8 <= position <= 30:
+            score += 30 - abs(position - 12)
+        if ctr < 0.02 and impressions >= 20:
+            score += 20
+        if buyer_re.search(query) or buyer_re.search(row.get("page", "")):
+            score += 25
+        if score <= 0:
+            continue
+        opportunities.append(
+            {
+                "score": round(score, 2),
+                "page": row.get("page", ""),
+                "query": query,
+                "clicks": row["clicks"],
+                "impressions": row["impressions"],
+                "ctr": round(row["ctr"], 4),
+                "position": round(row["position"], 2),
+                "recommendedAction": recommend_gsc_action(row),
+            }
+        )
+    opportunities.sort(key=lambda item: item["score"], reverse=True)
+    return opportunities[:200]
+
+
+def recommend_gsc_action(row: dict) -> str:
+    if row["impressions"] >= 20 and row["ctr"] < 0.02:
+        return "Rewrite title/meta for stronger buyer-intent CTR; keep content factual."
+    if 8 <= row["position"] <= 20:
+        return "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10."
+    if 20 < row["position"] <= 30:
+        return "Add supporting links from category hubs and improve page-specific evidence."
+    return "Monitor and prioritize if impressions continue rising."
+
+
+def gsc_report_md(gsc: dict) -> str:
+    if gsc.get("skipped"):
+        return f"""# GSC Opportunities
+
+Status: {gsc.get('reason', gsc_skip_reason())}
+
+When credentials are available, this report prioritizes:
 - high impressions / low CTR pages
 - positions 8-30
 - buyer intent queries
 - pages losing clicks
 - indexing and canonical issues
+"""
+    rows = gsc.get("opportunities", [])
+    body = "\n".join(
+        f"- Score {row['score']}: `{row['page']}` query `{row.get('query') or '(page rollup)'}` - impressions {row['impressions']}, CTR {row['ctr']}, position {row['position']}. {row['recommendedAction']}"
+        for row in rows[:100]
+    )
+    return f"""# GSC Opportunities
+
+Status: connected
+Site: {gsc.get('siteUrl')}
+Range: {gsc.get('startDate')} to {gsc.get('endDate')}
+Rows pulled: {gsc.get('rowsPulled', 0)}
+
+## Top Opportunities
+{body if body else "No GSC opportunities found yet. This usually means the property is very new or has too few impressions."}
 """
 
 
@@ -1198,7 +1346,7 @@ def has_gsc_credentials() -> bool:
 
 def gsc_skip_reason() -> str:
     if has_gsc_credentials():
-        return "credentials detected; live API pull not enabled in this first-stage helper"
+        return "credentials detected; live API pull enabled"
     return "skipped; GSC_SERVICE_ACCOUNT_JSON or GOOGLE_APPLICATION_CREDENTIALS_JSON missing"
 
 

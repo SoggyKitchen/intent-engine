@@ -1,6 +1,6 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-04-29T13:13:34+00:00
+Generated: 2026-04-29T13:34:41+00:00
 Mode: `audit`
 
 ## Current Score
@@ -17,7 +17,7 @@ Mode: `audit`
 ## Dashboard Summary
 - Pages scanned: 993
 - Healthy pages (85+): 975
-- Unhealthy pages (<55): 2
+- Unhealthy pages (<55): 1
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
 - GSC: skipped; GSC_SERVICE_ACCOUNT_JSON or GOOGLE_APPLICATION_CREDENTIALS_JSON missing

@@ -16,7 +16,7 @@ Pages scanned: 993
 
 ## Lowest Scoring Pages
 - `/media-kit`: 54.46/100, issues=none
-- `/privacy`: 54.9/100, issues=none
+- `/privacy`: 55.02/100, issues=none
 - `/contact`: 55.42/100, issues=none
 - `/pages`: 60.0/100, issues=none
 - `/about`: 61.84/100, issues=none
