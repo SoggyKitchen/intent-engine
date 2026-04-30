@@ -1,18 +1,19 @@
 # Top 100 Fixes
 
+- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
 - `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
 - `/pages/lever-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
 - `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (92.0/100): broken_internal_link
 - `/pages/remote-com-vs-lattice-which-is-better-in-2026` (92.0/100): broken_internal_link
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (92.98/100): broken_internal_link, thin_buyer_page, title_length_outside_target
 - `/pages/7-best-adp-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, meta_length_outside_target
 - `/pages/7-best-aws-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, meta_length_outside_target
 - `/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/google-meet-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/riverside-fm-vs-streamyard-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
@@ -99,4 +100,3 @@
 - `/deal-radar` (87.5/100): thin_buyer_page
 - `/pages` (88.0/100): title_length_outside_target
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (96.12/100): thin_buyer_page, title_length_outside_target
-- `/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay` (96.5/100): title_length_outside_target

@@ -1,6 +1,6 @@
 # Revenue Priorities
 
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 93.0): CTA=True, affiliateLinks=2, disclosure=True
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.98): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 94.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 98.74): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 98.97): CTA=True, affiliateLinks=2, disclosure=True
@@ -45,7 +45,7 @@
 - `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/deal-radar` (pricing, score 87.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (free_trial, score 93.0): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 93.0): CTA=True, affiliateLinks=2, disclosure=True
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 93.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (pricing, score 93.0): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 94.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 96.12): CTA=True, affiliateLinks=2, disclosure=True

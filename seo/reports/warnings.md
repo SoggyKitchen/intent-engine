@@ -40,6 +40,7 @@
 - `/pages/best-ai-tutor-tools-for-education-in-2025` (best_of, 97.82/100): thin_buyer_page
 - `/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-cloud-infra-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
+- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (best_of, 90.0/100): meta_length_outside_target, title_length_outside_target
 - `/pages/best-crm-software-for-b2b-saas-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-crm-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-cybersecurity-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): title_length_outside_target
@@ -161,7 +162,7 @@
 - `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/microsoft-teams-vs-whereby-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, 93.0/100): title_length_outside_target
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.98/100): thin_buyer_page, title_length_outside_target
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): title_length_outside_target
 - `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, 99.0/100): title_length_outside_target
 - `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (pricing, 93.0/100): title_length_outside_target

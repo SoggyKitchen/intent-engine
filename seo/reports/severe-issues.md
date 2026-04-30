@@ -47,6 +47,7 @@
 - `/pages/around-vs-riverside-fm-which-is-better-in-2026` (comparison, 94.0/100): broken_internal_link
 - `/pages/asana-vs-monday-com-which-is-better-in-2026` (comparison, 94.0/100): broken_internal_link
 - `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (comparison, 94.0/100): broken_internal_link
+- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (best_of, 90.0/100): broken_internal_link
 - `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (best_of, 91.0/100): broken_internal_link
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (best_of, 91.0/100): broken_internal_link
 - `/pages/clearscope-vs-frase-io-which-is-better-in-2026` (comparison, 94.0/100): broken_internal_link
@@ -71,7 +72,7 @@
 - `/pages/loom-vs-riverside-fm-which-is-better-in-2026` (comparison, 94.0/100): broken_internal_link
 - `/pages/mangools-vs-frase-io-which-is-better-in-2026` (comparison, 94.0/100): broken_internal_link
 - `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): broken_internal_link
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, 93.0/100): broken_internal_link
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.98/100): broken_internal_link
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): broken_internal_link
 - `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (pricing, 93.0/100): broken_internal_link
 - `/pages/monday-com-vs-basecamp-which-is-better-in-2026` (comparison, 94.0/100): broken_internal_link
