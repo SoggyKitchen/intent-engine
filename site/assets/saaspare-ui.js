@@ -39,7 +39,25 @@
     cta.className = "nav-cta";
     nav.appendChild(cta);
   }
-  function track(name, params){ if(window.gtag) window.gtag("event", name, params || {}); }
+  function pageType(){
+    const path = location.pathname.toLowerCase();
+    const title = document.title.toLowerCase();
+    if(path.includes("/go/")) return "redirect";
+    if(path.includes("pricing") || title.includes("pricing")) return "pricing";
+    if(path.includes("free-trial") || title.includes("free trial")) return "free_trial";
+    if(path.includes("coupon") || path.includes("promo") || title.includes("coupon") || title.includes("promo")) return "coupon";
+    if(path.includes("alternative") || title.includes("alternative")) return "alternatives";
+    if(path.includes("-vs-") || title.includes(" vs ")) return "comparison";
+    if(path.includes("review") || title.includes("review")) return "review";
+    if(path.includes("shortlist")) return "shortlist";
+    if(path.includes("deal-radar")) return "deal_radar";
+    if(path.includes("roi-calculator")) return "roi_calculator";
+    return path === "/" ? "homepage" : "page";
+  }
+  function track(name, params){
+    if(!window.gtag) return;
+    window.gtag("event", name, Object.assign({ page_slug: location.pathname, page_type: pageType() }, params || {}));
+  }
   function enhanceHeader(){
     document.documentElement.removeAttribute("data-theme");
     localStorage.removeItem("ss_theme");
@@ -62,9 +80,15 @@
     if(document.querySelector(".ss-decision-dock")) return;
     const dock = document.createElement("aside");
     dock.className = "ss-decision-dock";
-    const list = items.length ? items.map((item)=>`<a class="ss-decision-item" href="${escapeHtml(item.path)}"><span>${escapeHtml(item.title.slice(0,70))}</span><small>${escapeHtml(item.type || "Saved")}</small></a>`).join("") : `<a class="ss-decision-item" href="/pages/?type=pricing"><span>Start with pricing guides buyers usually check first</span><small>Start</small></a>`;
-    dock.innerHTML = `<button type="button" class="ss-decision-toggle">Decision Trail</button><div class="ss-decision-panel"><h3>Your SaaS decision trail</h3><p>No login needed. SaaSpare remembers recent research on this device so you can compare, leave, and return fast.</p><div class="ss-decision-list">${list}</div><div class="ss-decision-actions"><a href="/shortlist">Build shortlist</a><a href="/deal-radar">Find offers</a><button type="button">Clear</button></div></div>`;
+    const list = items.length ? items.map((item)=>`<a class="ss-decision-item" data-decision-item href="${escapeHtml(item.path)}"><span><b>${escapeHtml(item.type || "Saved")}</b><br>${escapeHtml(item.title.slice(0,78))}</span><small>Continue</small></a>`).join("") : `<div class="ss-decision-empty">No saved research yet. Open a pricing, trial, or comparison page and SaaSpare will keep your path here on this device.</div>`;
+    dock.innerHTML = `<button type="button" class="ss-decision-toggle">Decision Trail <span class="ss-decision-count">${items.length || 0}</span></button><div class="ss-decision-panel"><h3>Your SaaS decision trail</h3><p>Pick up the exact buying path you were checking. No account, no gate, just faster decisions.</p><div class="ss-decision-list">${list}</div><div class="ss-decision-quick"><a href="/pages/">Browse comparisons</a><a href="/deal-radar">Find offers</a><a href="/shortlist">Build shortlist</a><a href="/pages/saas-roi-calculator">Check ROI</a></div><div class="ss-decision-actions"><a href="/shortlist">Rank my options</a><button type="button">Clear trail</button></div></div>`;
     dock.querySelector(".ss-decision-toggle").addEventListener("click",()=>{ dock.classList.toggle("open"); track("decision_trail_open", { page_slug: location.pathname }); });
+    dock.querySelectorAll("[data-decision-item],.ss-decision-quick a,.ss-decision-actions a").forEach((link)=>{
+      link.addEventListener("click",()=>track("decision_trail_click", {
+        destination_url: link.href,
+        link_text: link.textContent.trim().slice(0,80)
+      }));
+    });
     dock.querySelector(".ss-decision-actions button").addEventListener("click",()=>{ localStorage.removeItem("ss_decision_trail"); dock.remove(); });
     document.body.appendChild(dock);
   }
@@ -73,7 +97,6 @@
     affiliateLinks.forEach((link)=>{
       if(!link.getAttribute("rel")) link.setAttribute("rel","sponsored noopener");
       if(!link.textContent.match(/trial|pricing|visit|start|deal|demo/i)) return;
-      link.addEventListener("click",()=>track("affiliate_click",{href:link.href,text:link.textContent.trim().slice(0,80)}));
       const parent = link.closest("td,.cta-section,.tool-card,.actions,.lead") || link.parentElement;
       if(parent && !parent.querySelector(".ss-trial-nudge")){
         const note = document.createElement("p");
@@ -92,6 +115,61 @@
       rail.querySelector("button").addEventListener("click",()=>{sessionStorage.setItem("ss_click_rail_closed","1");rail.remove();});
       document.body.appendChild(rail);
     },16000);
+  }
+  function enhanceRevenueEvents(){
+    document.addEventListener("click",(event)=>{
+      const link = event.target.closest("a[href]");
+      if(!link) return;
+      const href = link.getAttribute("href") || "";
+      let url;
+      try{ url = new URL(href, location.href); }catch(error){ return; }
+      const text = link.textContent.trim().replace(/\s+/g," ").slice(0,90);
+      const base = {
+        destination_url: url.href,
+        link_text: text,
+        source_component: link.closest("nav") ? "navigation" : link.closest(".hero") ? "hero" : link.closest(".ss-decision-dock") ? "decision_trail" : "body",
+        position_on_page: Math.round(window.scrollY)
+      };
+      if(url.pathname.startsWith("/go/")){
+        track("affiliate_click", Object.assign({ link_type:"affiliate" }, base));
+      }
+      if(link.matches(".nav-cta,.cta,.btn,.button,.hero-path,.pop-chip") || /compare|trial|pricing|offer|shortlist|deal|coupon|demo|visit|start/i.test(text)){
+        track("cta_click", base);
+      }
+      if(url.pathname.includes("deal-radar")){
+        track("deal_radar_click", base);
+      }
+      if(url.pathname.includes("shortlist")){
+        track("shortlist_click", base);
+      }
+      if(url.pathname.includes("saas-roi-calculator")){
+        track("roi_calculator_start", base);
+      }
+      if(url.hostname !== location.hostname && !url.pathname.startsWith("/go/")){
+        track("outbound_link_click", base);
+      }
+    }, true);
+    document.addEventListener("submit",(event)=>{
+      const form = event.target;
+      if(!(form instanceof HTMLFormElement)) return;
+      if(form.querySelector("input[type='email']")){
+        track("email_capture_submit", {
+          source_component: form.id || form.className || "email_form"
+        });
+      }
+    }, true);
+    const heroSearch = document.getElementById("hero-search");
+    if(heroSearch && !heroSearch.dataset.gaBound){
+      heroSearch.dataset.gaBound = "true";
+      heroSearch.addEventListener("keydown",(event)=>{
+        if(event.key === "Enter"){
+          track("site_search", {
+            search_term: heroSearch.value.trim().slice(0,80),
+            source_component:"hero_search"
+          });
+        }
+      });
+    }
   }
   function adblockPrompt(){
     if(localStorage.getItem("ss_adblock_ok")) return;
@@ -149,8 +227,8 @@
     });
   }
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();normalizeNavLinks();enhanceHeader();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();});
+    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();normalizeNavLinks();enhanceHeader();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();enhanceRevenueEvents();});
   }else{
-    upgradeLogo();normalizeNavLinks();enhanceHeader();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();
+    upgradeLogo();normalizeNavLinks();enhanceHeader();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();enhanceRevenueEvents();
   }
 })();
