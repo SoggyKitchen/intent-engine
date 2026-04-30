@@ -1,237 +1,414 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SaaSpare Shortlist Builder: Find the Right SaaS for Your Needs</title>
-<meta name="description" content="Use SaaSpare&#x27;s Shortlist Builder to compare and evaluate SaaS tools side-by-side. Build your perfect software stack.">
+<title>Shortlist Builder: Find the Right SaaS for Your Needs | SaaSpare</title>
+<meta name="description" content="Use SaaSpare's Shortlist Builder to rank and evaluate SaaS tools side-by-side. Build your perfect software stack.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://saaspare.org/shortlist">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-<meta property="og:title" content="SaaSpare Shortlist Builder: Find the Right SaaS for Your Needs">
-<meta property="og:description" content="Use SaaSpare&#x27;s Shortlist Builder to compare and evaluate SaaS tools side-by-side. Build your perfect software stack.">
+<meta name="theme-color" content="#07070d">
+<meta property="og:title" content="Shortlist Builder: Find the Right SaaS | SaaSpare">
+<meta property="og:description" content="Rank SaaS tools by team size, budget and buying stage before you start a trial.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://saaspare.org/shortlist">
+<meta property="og:image" content="https://saaspare.org/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/saaspare-ui.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "SaaSpare Shortlist Builder", "url": "https://saaspare.org/shortlist.html", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Interactive B2B SaaS shortlist builder for buyers comparing software tools."}</script>
-<style>
-:root{--bg:#080810;--panel:#101017;--panel2:#151520;--border:rgba(255,255,255,.1);--text:#f8f7f4;--muted:rgba(248,247,244,.58);--soft:rgba(248,247,244,.08);--accent:#e94560;--accent2:#ffb5c0;--good:#65d6a3}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#080810;color:var(--text);min-height:100vh;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
-.nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:600;transition:color .18s}.nav-link:hover{color:#fff}
-.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:800;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s}.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.shell{max-width:1280px;margin:0 auto;padding:8.75rem clamp(1.25rem,3vw,2.6rem) 5rem}
-.hero{display:block;text-align:center;margin:0 auto 3.2rem;position:relative;max-width:1100px}
-.hero::before{content:"";position:absolute;left:50%;top:-220px;width:min(720px,80vw);height:520px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.18),rgba(84,18,32,.16) 38%,transparent 70%);filter:blur(58px);transform:translateX(-50%);pointer-events:none}
-.hero > div{position:relative}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.9);padding:6px 18px;border-radius:100px;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:none;margin-bottom:2rem}
-.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#e94560;box-shadow:0 0 12px rgba(233,69,96,.75)}
-h1{font-size:clamp(2.65rem,7vw,5.25rem);line-height:1.12;letter-spacing:-.065em;max-width:1040px;margin:0 auto;color:#fff;font-weight:900}
-h1 .hero-accent{display:inline-block;background:linear-gradient(135deg,#ff7890 0%,#e94560 52%,#c73652 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding-bottom:.08em}
-.sub{color:rgba(255,255,255,.4);font-size:1.06rem;max-width:630px;margin:1.45rem auto 0;line-height:1.82}
-.score-card{display:none}
-.score-card strong{display:block;font-size:2rem;line-height:1;margin-bottom:.35rem}.score-card span{color:var(--muted);font-size:.9rem}
-.builder{display:grid;grid-template-columns:minmax(300px,360px) minmax(0,1fr);gap:clamp(1rem,1.4vw,1.25rem)}
-.panel{background:linear-gradient(145deg,rgba(255,255,255,.054),rgba(255,255,255,.028));border:1px solid var(--border);border-radius:20px;box-shadow:0 22px 70px rgba(0,0,0,.18)}
-.controls{padding:1.1rem;position:sticky;top:76px;align-self:start}
-.field{margin-bottom:1rem}.field label{display:block;font-size:.74rem;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.45rem}
-select,.field input{width:100%;background:#0c0c12;border:1px solid var(--border);color:#fff;border-radius:7px;padding:.78rem .85rem;font:inherit;outline:none}
-select:focus,.field input:focus{border-color:rgba(233,69,96,.55);box-shadow:0 0 0 3px rgba(233,69,96,.1)}
-.segments{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem}.seg{border:1px solid var(--border);background:var(--soft);color:var(--muted);border-radius:999px;padding:.72rem .4rem;font:inherit;font-size:.78rem;font-weight:800;cursor:pointer;transition:all .2s}.seg.active{background:rgba(233,69,96,.2);border-color:rgba(233,69,96,.5);color:#fff;box-shadow:0 8px 24px rgba(233,69,96,.18)}
-.results{padding:1rem}.result-head{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;border-bottom:1px solid var(--border);padding:.25rem .25rem 1rem;margin-bottom:1rem}
-.result-head h2{font-size:1.25rem;letter-spacing:-.02em}.result-head p{color:var(--muted);font-size:.88rem;margin-top:.2rem}.fit{font-size:.78rem;color:var(--good);font-weight:900;background:rgba(101,214,163,.1);border:1px solid rgba(101,214,163,.25);border-radius:999px;padding:.35rem .65rem;white-space:nowrap}
-.cards{display:grid;gap:.85rem}.tool{display:grid;grid-template-columns:36px minmax(220px,1fr) max-content;gap:1rem;align-items:center;background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:16px;padding:1.1rem;transition:transform .22s,border-color .22s,background .22s}.tool:hover{transform:translateY(-3px);border-color:rgba(233,69,96,.32);background:rgba(233,69,96,.055)}
-.rank{width:36px;height:36px;border-radius:10px;background:rgba(233,69,96,.15);color:#ffb5c0;font-weight:900;display:flex;align-items:center;justify-content:center}
-.tool h3{font-size:1rem;line-height:1.35}.tool p{font-size:.84rem;color:var(--muted);margin-top:.2rem;max-width:620px}.tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.55rem}.tag{font-size:.68rem;color:rgba(255,255,255,.7);background:rgba(255,255,255,.07);border:1px solid var(--border);border-radius:999px;padding:.18rem .48rem}
-.actions{display:flex;gap:.45rem;align-items:center}.btn{border:1px solid rgba(233,69,96,.55);background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border-radius:999px;padding:.65rem .9rem;font-size:.78rem;font-weight:900;white-space:nowrap}.ghost{background:transparent;border-color:var(--border);color:var(--muted)}
-.lead{margin-top:1rem;padding:1rem;background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.2);border-radius:16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.75rem;align-items:center}.lead p{color:var(--muted);font-size:.86rem}.lead input{background:#0c0c12;border:1px solid var(--border);border-radius:999px;color:#fff;padding:.72rem 1rem;min-width:230px}
-.lead button{border:none;background:#fff;color:#111;border-radius:999px;padding:.72rem 1rem;font-weight:900;cursor:pointer}
-.note{margin-top:1rem;color:rgba(255,255,255,.32);font-size:.78rem}
-.save-layer{margin-top:1.25rem;padding:1.1rem;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:center}
-.save-layer h2{font-size:1.18rem;letter-spacing:-.025em;margin-bottom:.35rem}.save-layer p{color:var(--muted);font-size:.88rem;max-width:720px}.save-actions{display:flex;gap:.55rem;flex-wrap:wrap;justify-content:flex-end}.save-state{margin-top:.65rem;color:rgba(255,255,255,.34);font-size:.76rem}.save-pill{display:inline-flex;align-items:center;gap:.4rem;border:1px solid rgba(101,214,163,.25);background:rgba(101,214,163,.08);color:#b6f3d4;border-radius:999px;padding:.25rem .55rem;font-weight:800}.plain-btn{border:1px solid var(--border);background:rgba(255,255,255,.06);color:#fff;border-radius:999px;padding:.72rem 1rem;font:inherit;font-size:.8rem;font-weight:900;cursor:pointer}.plain-btn.primary{border-color:rgba(233,69,96,.45);background:linear-gradient(135deg,#e94560,#c73652);box-shadow:0 8px 26px rgba(233,69,96,.25)}
-.account-principles{margin-top:1rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}.principle{padding:.9rem;border:1px solid var(--border);border-radius:16px;background:rgba(255,255,255,.035)}.principle strong{display:block;color:#fff;font-size:.84rem;margin-bottom:.25rem}.principle span{display:block;color:var(--muted);font-size:.75rem;line-height:1.55}
-@media(max-width:860px){nav{padding:.75rem 1.2rem}.nav-link{display:none}.shell{padding:7rem 1.2rem 4rem}.builder{grid-template-columns:1fr}.controls{position:static}.tool{grid-template-columns:36px minmax(0,1fr)}.actions{grid-column:2;justify-content:flex-start}.lead,.save-layer{grid-template-columns:1fr}.lead input{min-width:0;width:100%}.save-actions{justify-content:flex-start}.account-principles{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.account-principles{grid-template-columns:1fr}}
-</style>
+<meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SaaSpare Shortlist Builder: Find the Right SaaS for Your Needs">
-<meta name="twitter:description" content="Use SaaSpare&#x27;s Shortlist Builder to compare and evaluate SaaS tools side-by-side. Build your perfect software stack.">
-<meta name="keywords" content="SaaSpare Shortlist Builder: Find the Right SaaS for Your Needs, other, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta name="twitter:site" content="@SaaSpare">
-<meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": []}</script>
-<meta name="google-adsense-account" content="ca-pub-9433840442322701">
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
+<style>
+:root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
+::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
+body::after{content:'';position:fixed;inset:-200%;width:400%;height:400%;pointer-events:none;z-index:9999;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain .5s steps(1) infinite}
+@keyframes grain{0%,100%{transform:translate(0,0)}10%{transform:translate(-5%,-5%)}20%{transform:translate(-10%,5%)}30%{transform:translate(5%,-10%)}40%{transform:translate(-5%,15%)}50%{transform:translate(-10%,5%)}60%{transform:translate(15%,0)}70%{transform:translate(0,10%)}80%{transform:translate(-15%,0)}90%{transform:translate(10%,5%)}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease}
+nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.logo{display:flex;align-items:center;gap:9px;margin-right:auto}
+.logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
+.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.wv{pointer-events:none;transition:opacity .3s}
+@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
+.logo:hover .logo-mark{animation:none}
+.logo:hover .mark-top{transform:translateX(26px);filter:drop-shadow(-2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}
+.logo:hover .mark-bot{transform:translateX(-26px);filter:drop-shadow(2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}
+.logo:hover .wv,.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{opacity:0}
+.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.logo-text em{color:var(--red);font-style:normal}
+.nav-link{color:var(--muted);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap}
+.nav-link:hover,.nav-link.active{color:#fff}
+.nav-cta{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+
+.page-hero{position:relative;overflow:hidden;padding:8.5rem 2rem 5.5rem;text-align:center;z-index:1}
+.page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 90% 60% at 50% -5%,rgba(90,16,28,.95) 0%,transparent 58%),radial-gradient(ellipse 55% 40% at 50% 35%,rgba(233,69,96,.055) 0%,transparent 70%),var(--bg)}
+.page-hero-grid{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.page-hero-grid canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.22;mask-image:linear-gradient(to bottom,black 20%,rgba(0,0,0,.4) 50%,transparent 70%);-webkit-mask-image:linear-gradient(to bottom,black 20%,rgba(0,0,0,.4) 50%,transparent 70%)}
+.page-hero-orb{position:absolute;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.13) 0%,transparent 65%);top:-300px;left:50%;transform:translateX(-50%);pointer-events:none;filter:blur(65px)}
+.page-hero-content{position:relative;z-index:1;max-width:640px;margin:0 auto}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.24);color:rgba(255,185,200,.9);padding:5px 14px;border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.5rem;animation:up .6s ease both}
+.page-hero h1{font-size:clamp(2.1rem,5.5vw,3.5rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.12;margin-bottom:1rem;animation:up .7s .1s ease both;text-wrap:balance}
+.page-hero h1 em{color:var(--red);font-style:normal}
+.page-sub{color:var(--muted);font-size:.98rem;line-height:1.8;animation:up .7s .2s ease both;text-wrap:pretty}
+/* floating cards */
+@keyframes cardFloat{
+  0%,100%{transform:translateY(0px)}
+  50%{transform:translateY(-8px)}
+}
+.tool-row{
+  animation:cardFloat 4.2s ease-in-out infinite;
+}
+.tool-row:nth-child(2){animation-delay:0.2s}
+.tool-row:nth-child(3){animation-delay:0.4s}
+
+.principle{
+  animation:cardFloat 4.2s ease-in-out infinite;
+}
+.principle:nth-child(2){animation-delay:0.2s}
+.principle:nth-child(3){animation-delay:0.4s}
+.principle:nth-child(4){animation-delay:0.6s}
+
+.shell{max-width:1280px;margin:0 auto;padding:3rem clamp(1.5rem,4vw,3rem) 7rem}
+.builder-layout{display:grid;grid-template-columns:minmax(280px,320px) minmax(0,1fr);gap:1.5rem;align-items:start}
+.panel{background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.025));border:1px solid var(--border);border-radius:20px;padding:1.2rem;box-shadow:0 20px 60px rgba(0,0,0,.18)}
+.panel-title{font-size:.62rem;font-weight:700;color:var(--dim);letter-spacing:.9px;text-transform:uppercase;margin-bottom:.5rem;display:block}
+.field{margin-bottom:1rem}
+select,.field input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);color:#fff;border-radius:10px;padding:.82rem 1rem;font:inherit;outline:none;transition:border-color .2s}
+select:focus,.field input:focus{border-color:rgba(233,69,96,.45)}
+.segments{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem}
+.seg{border:1px solid var(--border);background:var(--card);color:var(--muted);border-radius:100px;padding:.7rem .4rem;font:inherit;font-size:.76rem;font-weight:700;cursor:pointer;transition:all .2s;text-align:center}
+.seg.active{background:rgba(233,69,96,.18);border-color:rgba(233,69,96,.45);color:#fff;box-shadow:0 6px 20px rgba(233,69,96,.15)}
+
+.results-head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--border);padding:.25rem .25rem 1rem;margin-bottom:1rem;gap:1rem}
+.results-head h2{font-size:1.2rem;font-weight:800;color:#fff;letter-spacing:-.03em}
+.results-head p{color:var(--muted);font-size:.84rem;margin-top:.2rem}
+.fit-badge{font-size:.74rem;color:var(--good);font-weight:800;background:rgba(101,214,163,.1);border:1px solid rgba(101,214,163,.22);border-radius:100px;padding:.3rem .65rem;white-space:nowrap;flex-shrink:0}
+
+.cards{display:grid;gap:.85rem}
+.tool-row{display:grid;grid-template-columns:36px minmax(200px,1fr) max-content;gap:1rem;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.1rem;transition:all .22s}
+.tool-row:hover{transform:translateY(-2px);border-color:rgba(233,69,96,.28);background:rgba(233,69,96,.045)}
+.rank{width:34px;height:34px;border-radius:9px;background:rgba(233,69,96,.14);color:rgba(255,185,200,.9);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0}
+.tool-row h3{font-size:.96rem;font-weight:800;color:#fff;line-height:1.3}
+.tool-row p{font-size:.8rem;color:var(--muted);margin-top:.2rem;max-width:580px;line-height:1.5}
+.tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.5rem}
+.tag{font-size:.64rem;color:rgba(255,255,255,.65);background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:100px;padding:.16rem .45rem}
+.row-actions{display:flex;gap:.4rem;align-items:center;flex-shrink:0}
+.btn-p{border:none;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;border-radius:100px;padding:.6rem .9rem;font-size:.74rem;font-weight:800;white-space:nowrap;cursor:pointer;box-shadow:0 4px 14px rgba(233,69,96,.3);transition:transform .15s}
+.btn-p:hover{transform:scale(1.04)}
+.btn-g{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);border-radius:100px;padding:.6rem .9rem;font:inherit;font-size:.74rem;font-weight:700;cursor:pointer;transition:all .2s}
+.btn-g:hover{border-color:rgba(255,255,255,.2);color:#fff}
+
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-top:2rem}
+.principle{padding:.9rem;border:1px solid var(--border);border-radius:14px;background:var(--card)}
+.principle strong{display:block;color:#fff;font-size:.84rem;font-weight:700;margin-bottom:.25rem}
+.principle span{font-size:.74rem;color:var(--muted);line-height:1.5}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+footer{border-top:1px solid var(--border)}
+.footer-inner{max-width:1300px;margin:0 auto;padding:3.5rem clamp(1.5rem,4vw,3rem) 2.5rem;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem}
+.footer-brand p{font-size:.8rem;color:rgba(255,255,255,.24);line-height:1.75;max-width:220px;margin-top:.75rem}
+.footer-logo{display:flex;align-items:center;gap:8px;margin-bottom:.65rem}
+.footer-col h4{font-size:.62rem;font-weight:700;color:rgba(255,255,255,.22);letter-spacing:.9px;text-transform:uppercase;margin-bottom:.9rem}
+.footer-col a{display:block;font-size:.8rem;color:rgba(255,255,255,.32);margin-bottom:.5rem;transition:color .18s}
+.footer-col a:hover{color:#fff}
+.footer-bottom{max-width:1300px;margin:0 auto;padding:1.25rem clamp(1.5rem,4vw,3rem);border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.72rem;color:rgba(255,255,255,.18)}
+.footer-bottom a{color:rgba(255,255,255,.24);transition:color .18s}
+.footer-bottom a:hover{color:rgba(255,255,255,.6)}
+
+@media(max-width:860px){.builder-layout{grid-template-columns:1fr}.principles{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){nav{padding:.8rem 1.2rem}.nav-link{display:none}.page-hero{padding:6.5rem 1.25rem 3.5rem}.shell{padding:2rem 1.25rem 5rem}.tool-row{grid-template-columns:36px minmax(0,1fr)}.row-actions{grid-column:2;justify-content:flex-start}.principles{grid-template-columns:1fr 1fr}.footer-inner{grid-template-columns:1fr 1fr;gap:2rem}}
+@media(max-width:480px){.principles{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-<nav>
-  <a class="ss-logo" href="/">
-    <img class="ss-logo-mark" src="/favicon.svg?v=paint-flow-2" alt="SaaSpare logo" width="26" height="26">
-    <span class="ss-logo-text">Saa<em>Spare</em></span>
+<nav id="nav">
+  <a href="/" class="logo">
+    <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg>
+    <span class="logo-text">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="nav-link">Comparisons</a>
   <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
-  <a href="/shortlist" class="nav-link">Shortlist Builder</a>
+  <a href="/shortlist" class="nav-link active">Shortlist Builder</a>
   <a href="/deal-radar" class="nav-link">Deal Radar</a>
   <a href="/about" class="nav-link">About</a>
-  <a href="/shortlist" class="nav-cta">Build Shortlist -></a>
+  <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>
-<main class="shell">
-  <section class="hero">
-    <div>
-      <div class="eyebrow">Buyer-fit recommender</div>
-      <h1><span class="hero-accent">Build</span> a SaaS shortlist in under a minute.</h1>
-      <p class="sub">Pick the category, team size and budget pressure. SaaSpare ranks the tools that are most likely to fit, then lets you save the list without forcing an account.</p>
-    </div>
-    <div class="score-card"><strong id="fit-score">92%</strong><span>Current fit confidence based on your inputs and monetized buyer paths.</span></div>
-  </section>
-  <section class="builder">
-    <aside class="panel controls">
-      <div class="field"><label for="category">Category</label><select id="category"></select></div>
-      <div class="field"><label>Team size</label><div class="segments" data-name="team"><button class="seg active" data-value="small">Small</button><button class="seg" data-value="mid">Mid</button><button class="seg" data-value="large">Large</button></div></div>
-      <div class="field"><label>Budget pressure</label><div class="segments" data-name="budget"><button class="seg active" data-value="low">Low</button><button class="seg" data-value="medium">Medium</button><button class="seg" data-value="high">High</button></div></div>
-      <div class="field"><label>Buying stage</label><div class="segments" data-name="stage"><button class="seg active" data-value="research">Research</button><button class="seg" data-value="trial">Trial</button><button class="seg" data-value="buy">Buy</button></div></div>
-      <p class="note">No login wall. Your saved shortlist stays in this browser unless you choose to email it to yourself.</p>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"><canvas id="page-wave-dots"></canvas></div>
+  <div class="page-hero-orb"></div>
+  <div class="page-hero-content">
+    <div class="page-eyebrow">Interactive tool</div>
+    <h1>Rank your <em>shortlist</em> before you trial anything.</h1>
+    <p class="page-sub">Tell SaaSpare your category, team size and budget. Get a ranked list of tools with honest verdicts — before you hand anyone your card details.</p>
+  </div>
+</section>
+
+<div class="shell">
+  <div class="builder-layout reveal">
+    <aside class="panel" style="position:sticky;top:76px">
+      <div class="field">
+        <span class="panel-title">Category</span>
+        <select id="sl-cat">
+          <option value="crm">CRM &amp; Sales</option>
+          <option value="seo">SEO Tools</option>
+          <option value="pm">Project Management</option>
+          <option value="hr">HR &amp; Payroll</option>
+          <option value="dev">Dev Tools</option>
+          <option value="finance">Finance Ops</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="panel-title">Team size</span>
+        <div class="segments">
+          <button class="seg active" data-size="solo">Solo</button>
+          <button class="seg" data-size="smb">2–50</button>
+          <button class="seg" data-size="mid">50–500</button>
+        </div>
+      </div>
+      <div class="field" style="margin-top:.9rem">
+        <span class="panel-title">Monthly budget</span>
+        <select id="sl-budget">
+          <option value="free">Free only</option>
+          <option value="low" selected>Under $50/mo</option>
+          <option value="mid">$50–$200/mo</option>
+          <option value="high">$200+/mo</option>
+        </select>
+      </div>
+      <div class="field">
+        <span class="panel-title">Buying stage</span>
+        <select id="sl-stage">
+          <option value="research">Researching options</option>
+          <option value="trial">Ready to trial</option>
+          <option value="switch">Switching from another tool</option>
+          <option value="approve">Need finance approval</option>
+        </select>
+      </div>
+      <button onclick="buildShortlist()" style="width:100%;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;border:none;border-radius:100px;padding:.88rem;font:inherit;font-size:.88rem;font-weight:800;cursor:pointer;box-shadow:0 6px 20px rgba(233,69,96,.35);margin-top:.5rem;transition:transform .15s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">Build my shortlist &#8594;</button>
     </aside>
-    <section class="panel results">
-      <div class="result-head"><div><h2 id="result-title">Recommended shortlist</h2><p id="result-copy">Ranked for fit, budget and likelihood to convert.</p></div><span class="fit" id="result-fit">High intent</span></div>
-      <div class="cards" id="cards"></div>
-      <form class="lead" action="https://formsubmit.co/hello@saaspare.org" method="POST">
-        <div><strong>Want the shortlist by email?</strong><p>Send yourself the current category and use it when you apply for partner programs or post on social.</p></div>
-        <input type="hidden" name="_subject" value="SaaSpare shortlist request">
-        <input type="hidden" name="_next" value="https://saaspare.org/pages/">
-        <input type="hidden" name="shortlist_category" id="lead-category">
-        <input type="hidden" name="shortlist_snapshot" id="lead-snapshot">
-        <input type="email" name="email" placeholder="you@example.com" required>
-        <button type="submit">Send</button>
-      </form>
+
+    <section class="panel">
+      <div class="results-head">
+        <div>
+          <h2 id="results-title">CRM &amp; Sales — Solo</h2>
+          <p id="results-sub">Ranked by fit for your stage and budget</p>
+        </div>
+        <span class="fit-badge" id="fit-count">3 strong fits</span>
+      </div>
+      <div class="cards" id="results"></div>
     </section>
-  </section>
-  <section class="panel save-layer" aria-labelledby="save-title">
-    <div>
-      <div class="eyebrow">Optional account layer</div>
-      <h2 id="save-title">Save the shortlist first. Sign-up can wait.</h2>
-      <p>For maximum SEO and affiliate revenue, SaaSpare stays open. Accounts should only unlock saved lists, renewal reminders and team notes later, never block the comparison pages.</p>
-      <div class="save-state" id="save-state">No shortlist saved yet.</div>
+  </div>
+
+  <div class="principles reveal">
+    <div class="principle"><strong>No account needed</strong><span>Your shortlist is saved to this device automatically. Leave and come back any time.</span></div>
+    <div class="principle"><strong>Unbiased ranking</strong><span>Tools are ranked by fit, not by which ones pay us. Affiliate links are labelled.</span></div>
+    <div class="principle"><strong>One-click to compare</strong><span>Every result links directly to the full SaaSpare comparison page for that tool.</span></div>
+    <div class="principle"><strong>Free trial paths</strong><span>Where a free trial exists, we link directly to it — no sales call required.</span></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg style="height:22px;width:auto;flex-shrink:0" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></svg>
+        <span style="font-weight:800;font-size:.92rem;color:#fff">Saa<em style="color:#e94560;font-style:normal">Spare</em></span>
+      </div>
+      <p>Unbiased B2B SaaS comparisons for founders, CTOs and operators making smart software decisions.</p>
     </div>
-    <div class="save-actions">
-      <button class="plain-btn primary" type="button" id="save-shortlist">Save in browser</button>
-      <a class="plain-btn" href="/deal-radar">Check offers</a>
-    </div>
-  </section>
-  <section class="account-principles" aria-label="SaaSpare account strategy">
-    <div class="principle"><strong>Public content</strong><span>Google and buyers can read every money page without signing in.</span></div>
-    <div class="principle"><strong>Zero-friction clicks</strong><span>Affiliate buttons remain one click away from pricing, trials and offers.</span></div>
-    <div class="principle"><strong>Personalized return path</strong><span>Visitors can save locally now and email themselves the list when useful.</span></div>
-    <div class="principle"><strong>Pro-ready later</strong><span>Real accounts only make sense once renewal alerts or team workspaces are worth logging in for.</span></div>
-  </section>
-</main>
+    <div class="footer-col"><h4>Compare</h4><a href="/pages/">All Comparisons</a><a href="/pages/?q=crm">CRM Tools</a><a href="/pages/?q=seo">SEO Software</a><a href="/pages/?q=hr">HR Tools</a><a href="/pages/?q=dev">Dev Tools</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="/shortlist">Shortlist Builder</a><a href="/deal-radar">Deal Radar</a><a href="/pages/saas-roi-calculator">ROI Calculator</a><a href="/pages/?type=pricing">Pricing Guides</a><a href="/pages/?type=alternatives">Alternatives</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/affiliate-disclosure">Disclosure</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 SaaSpare &middot; <a href="/affiliate-disclosure">Affiliate Disclosure</a></span>
+    <span>This site contains affiliate links. We may earn a commission at no extra cost to you.</span>
+  </div>
+</footer>
+
 <script>
-const CATEGORIES = {
-  crm: {label:"CRM", copy:"Sales teams choosing between pipeline, automation and enterprise CRM.", tools:[
-    {name:"HubSpot CRM", slug:"hubspot-crm", page:"/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Small and mid-market teams that want CRM plus marketing in one system", tags:["free CRM","marketing fit","recurring upside"], small:3, mid:3, large:2, low:3, medium:3, high:2, research:3, trial:3, buy:3},
-    {name:"Pipedrive", slug:"pipedrive", page:"/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Pipeline-heavy sales teams that want a cleaner sales workflow", tags:["sales teams","simple setup","SMB"], small:3, mid:3, large:1, low:2, medium:3, high:3, research:2, trial:3, buy:3},
-    {name:"Salesforce", slug:"salesforce", page:"/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Larger teams that need admin depth, reporting and ecosystem breadth", tags:["enterprise","deep CRM","trial page"], small:1, mid:2, large:3, low:1, medium:2, high:3, research:3, trial:2, buy:2}
-  ]},
-  seo: {label:"SEO and content", copy:"Content teams comparing keyword research, rank tracking and optimization tools.", tools:[
-    {name:"Semrush", slug:"semrush", page:"/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Agencies and teams that want one broad SEO suite", tags:["high ticket","agency","all-in-one"], small:2, mid:3, large:3, low:1, medium:2, high:3, research:3, trial:3, buy:3},
-    {name:"Surfer SEO", slug:"surfer-seo", page:"/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Content teams that care most about on-page optimization", tags:["content ops","recurring","writer fit"], small:3, mid:3, large:2, low:2, medium:3, high:3, research:3, trial:3, buy:3},
-    {name:"Ahrefs", slug:"ahrefs", page:"/pages/ahrefs-vs-semrush-which-is-better-in-2026.html", best:"SEO operators prioritizing backlinks and competitive research", tags:["SEO suite","research","comparison"], small:2, mid:3, large:3, low:1, medium:2, high:3, research:3, trial:2, buy:2}
-  ]},
-  project: {label:"Project management", copy:"Operations teams choosing a work hub for projects, docs and execution.", tools:[
-    {name:"ClickUp", slug:"clickup", page:"/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Teams that want tasks, docs and dashboards in one lower-cost workspace", tags:["all-in-one","budget fit","recurring"], small:3, mid:3, large:2, low:3, medium:3, high:2, research:3, trial:3, buy:3},
-    {name:"Notion", slug:"notion", page:"/pages/notion-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Teams that want documentation, lightweight projects and flexible knowledge bases", tags:["docs","startups","high commission"], small:3, mid:2, large:2, low:3, medium:2, high:1, research:3, trial:3, buy:2},
-    {name:"Asana", slug:"asana", page:"/pages/asana-vs-clickup-which-is-better-in-2026.html", best:"Teams that need mature project tracking without building a custom workspace", tags:["workflows","mid-market","comparison"], small:2, mid:3, large:3, low:1, medium:3, high:3, research:3, trial:2, buy:2}
-  ]},
-  finance: {label:"Finance ops", copy:"Finance teams comparing accounting, cards, spend and expense workflows.", tools:[
-    {name:"Xero", slug:"xero", page:"/pages/xero-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Small businesses that want cloud accounting with a clear pricing page", tags:["accounting","US pricing","recurring"], small:3, mid:2, large:1, low:3, medium:3, high:2, research:3, trial:3, buy:3},
-    {name:"Ramp", slug:"ramp", page:"/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay.html", best:"US companies that want spend controls, cards and finance automation", tags:["spend ops","high value","finance"], small:2, mid:3, large:3, low:2, medium:3, high:3, research:3, trial:2, buy:3},
-    {name:"FreshBooks", slug:"freshbooks", page:"/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Service businesses and freelancers that want invoicing plus accounting basics", tags:["SMB","invoicing","trial"], small:3, mid:2, large:1, low:3, medium:2, high:1, research:2, trial:3, buy:3}
-  ]},
-  security: {label:"Security", copy:"Teams comparing password managers, ZTNA and business security tools.", tools:[
-    {name:"1Password", slug:"1password", page:"/pages/1password-vs-bitwarden-which-is-better-in-2026.html", best:"Teams that want a polished password manager and business rollout path", tags:["passwords","business","recurring"], small:3, mid:3, large:3, low:2, medium:3, high:3, research:3, trial:3, buy:3},
-    {name:"Bitwarden", slug:"bitwarden", page:"/pages/bitwarden-vs-dashlane-which-is-better-in-2026.html", best:"Cost-sensitive teams that still want strong password manager coverage", tags:["budget","open source","pricing"], small:3, mid:3, large:2, low:3, medium:3, high:1, research:3, trial:3, buy:2},
-    {name:"NordLayer", slug:"nordlayer", page:"/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html", best:"Distributed teams looking for business VPN or simple ZTNA rollout", tags:["ZTNA","remote teams","security"], small:2, mid:3, large:3, low:1, medium:2, high:3, research:3, trial:2, buy:3}
-  ]}
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40),{passive:true});
+const rObs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.07});
+document.querySelectorAll('.reveal').forEach(el=>rObs.observe(el));
+
+/* page hero wave dots */
+(function(){
+  const canvas=document.getElementById('page-wave-dots');
+  if(!canvas)return;
+  const ctx=canvas.getContext('2d');
+  let W,H,t=0,scrollY=0;
+  function resize(){W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight}
+  resize();
+  window.addEventListener('resize',resize,{passive:true});
+  window.addEventListener('scroll',()=>{scrollY=window.scrollY},{passive:true});
+  const SPACING=28,BASE_R=1.3;
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const maxScrollFade=window.innerHeight*2;
+    const opacityFade=Math.max(0.12,0.22-scrollY/maxScrollFade*0.08);
+    const cols=Math.ceil(W/SPACING)+4,rows=Math.ceil(H/SPACING)+2;
+    for(let r=0;r<rows;r++){
+      for(let c=0;c<cols;c++){
+        const bx=c*SPACING-SPACING,by=r*SPACING-SPACING;
+        const scrollPhase=scrollY*0.003;
+        const diagPhase1=(bx/W-by/H)*Math.PI*5.5-(t*0.42+scrollPhase);
+        const diagPhase2=(bx/W-by/H)*Math.PI*9-(t*0.26+scrollPhase*0.6);
+        const compression=(Math.sin(diagPhase1)*0.7)+(Math.sin(diagPhase2)*0.3);
+        const disp=compression*9;
+        const dx=disp*0.71,dy=-disp*0.71;
+        const x=bx+dx,y=by+dy;
+        const cx=W*0.5,cy=H*0.38;
+        const dist=Math.hypot((x-cx)/(W*0.85),(y-cy)/(H*0.72));
+        const fade=Math.max(0,(1-dist)*0.9);
+        if(fade<0.01)continue;
+        const norm=(compression+1)*0.5;
+        const alpha=fade*(0.16+norm*0.18)*opacityFade;
+        const r_dot=BASE_R*(0.62+norm*0.75);
+        ctx.beginPath();ctx.arc(x,y,r_dot,0,Math.PI*2);
+        ctx.fillStyle=`rgba(255,255,255,${alpha})`;ctx.fill();
+      }
+    }
+    t+=0.004;
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+let activeSize='solo';
+document.querySelectorAll('.seg').forEach(btn=>btn.addEventListener('click',function(){
+  document.querySelectorAll('.seg').forEach(b=>b.classList.remove('active'));
+  this.classList.add('active');
+  activeSize=this.dataset.size;
+}));
+
+const DB={
+  crm:{
+    solo:[
+      {name:'HubSpot CRM',desc:'Free plan is genuinely useful solo. Upgrade only when you need sequences or reporting.',tags:['Free plan','Email tracking','Pipeline'],url:'/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://app.hubspot.com/signup'},
+      {name:'Pipedrive',desc:'Best pipeline UX for solo sellers. 14-day trial, no card. $14/mo after that.',tags:['14-day trial','Visual pipeline','Mobile app'],url:'/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://pipedrive.com'},
+      {name:'Notion CRM',desc:'Free with Notion. Build your own CRM on the free plan — works well for simple pipelines.',tags:['Free','Flexible','No vendor lock-in'],url:'/pages/notion-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://notion.so'},
+    ],
+    smb:[
+      {name:'HubSpot Starter',desc:'$20/seat/mo. Best all-in-one for teams under 50. Watch the per-seat cost on Growth Suite.',tags:['Email automation','Deals','Reporting'],url:'/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://app.hubspot.com/signup'},
+      {name:'Pipedrive',desc:'Simple, fast, loved by sales teams. Business plan at $49/seat/mo is the sweet spot.',tags:['Pipeline','Automation','Forecasting'],url:'/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://pipedrive.com'},
+      {name:'Monday CRM',desc:'Great for teams already on Monday.com. CRM layer adds minimal cost if you have Base.',tags:['Visual','No-code','Integrations'],url:'/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://monday.com'},
+    ],
+    mid:[
+      {name:'Salesforce Essentials',desc:'Worth it above 50 seats. Steep learning curve, but the automation depth pays off.',tags:['Enterprise-ready','Deep automation','API'],url:'/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://salesforce.com'},
+      {name:'HubSpot Professional',desc:'$450/mo for 5 seats. Best reporting in class, great mid-market fit.',tags:['Custom reporting','Sequences','Forecasting'],url:'/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://app.hubspot.com/signup'},
+      {name:'Pipedrive Advanced',desc:'$49/seat/mo. Scales cleanly to 500-person teams without the Salesforce complexity tax.',tags:['Smart contact data','Email sync','Workflows'],url:'/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://pipedrive.com'},
+    ]
+  },
+  seo:{
+    solo:[
+      {name:'Ahrefs Lite',desc:'$29/mo (annual). Best backlink data. Keyword Explorer is class-leading for solo bloggers.',tags:['Backlinks','Keywords','Site audit'],url:'/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://ahrefs.com'},
+      {name:'Semrush Free',desc:'Free plan with 10 daily requests. Enough for solo keyword research without paying.',tags:['Free plan','Keyword magic','Position tracking'],url:'/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://semrush.com'},
+      {name:'SE Ranking',desc:'$65/mo. Underrated. Daily rank tracking and white-label reports at half the Ahrefs price.',tags:['Rank tracking','Affordable','White-label'],url:'/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://seranking.com'},
+    ],
+    smb:[
+      {name:'Ahrefs Standard',desc:'$179/mo. Best for 2–10 person SEO teams. Site Explorer and Content Explorer justify the cost.',tags:['Team access','Batch analysis','API'],url:'/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://ahrefs.com'},
+      {name:'Semrush Pro',desc:'$139.95/mo. Strong for content + PPC teams. Position tracking and content audit are excellent.',tags:['Content audit','PPC research','Reporting'],url:'/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://semrush.com'},
+      {name:'Moz Pro',desc:'$99/mo. Best DA metric, good local SEO. Weaker backlink index than Ahrefs.',tags:['DA metric','Local SEO','Crawl'],url:'/pages/semrush-vs-moz-pro-which-is-better-in-2026',trial:'https://moz.com'},
+    ],
+    mid:[
+      {name:'Ahrefs Agency',desc:'$999/mo. Unlimited crawl credits, team seats, API. Best for in-house SEO at scale.',tags:['API','Unlimited crawl','Agency features'],url:'/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://ahrefs.com'},
+      {name:'Semrush Business',desc:'$374.95/mo. White-label, API, 40+ projects. Best for agencies managing multiple clients.',tags:['White-label','API','Client reports'],url:'/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://semrush.com'},
+    ]
+  },
+  pm:{
+    solo:[
+      {name:'Notion',desc:'Free plan is exceptional solo. Databases, docs, tasks in one place with no seat cost.',tags:['Free','All-in-one','Flexible'],url:'/pages/notion-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://notion.so'},
+      {name:'Linear',desc:'Free for solo. Best issue tracker UX available. Fast, keyboard-driven, minimal.',tags:['Free solo','Dev-friendly','Fast'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
+      {name:'ClickUp Free',desc:'100MB storage but unlimited tasks. Most features free. Steep learning curve.',tags:['Free plan','Feature-rich','Automation'],url:'/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://clickup.com'},
+    ],
+    smb:[
+      {name:'Linear',desc:'$8/seat/mo. Best for engineering teams. Clean, fast, loved by developers.',tags:['Dev-focused','Cycles','Roadmaps'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
+      {name:'Asana',desc:'$13.49/seat/mo. Best for mixed teams. Timeline view and workload management are excellent.',tags:['Timeline','Workload','Automations'],url:'/pages/notion-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://asana.com'},
+      {name:'Monday.com',desc:'$12/seat/mo (3-seat min). Visual, flexible. Better for ops than engineering.',tags:['Visual','No-code','Dashboards'],url:'/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://monday.com'},
+    ],
+    mid:[
+      {name:'Linear',desc:'$16/seat/mo on Business. Best for scaling eng teams. Jira-killer at a fraction of the price.',tags:['Roadmaps','API','Git sync'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
+      {name:'Monday Work Management',desc:'$26/seat/mo. Cross-functional at scale. Strong dashboards and integrations.',tags:['Enterprise','Dashboards','Automations'],url:'/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://monday.com'},
+    ]
+  },
+  hr:{
+    solo:[{name:'Gusto',desc:'$40/mo + $6/person. Best simple payroll for solo founders with one or two employees.',tags:['Payroll','Simple','US-focused'],url:'/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://gusto.com'}],
+    smb:[
+      {name:'Gusto',desc:'$80/mo + $12/person. Full HR, payroll, benefits. Best value for sub-50 teams in the US.',tags:['Payroll','Benefits','Onboarding'],url:'/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://gusto.com'},
+      {name:'BambooHR',desc:'Quote-based. Best HRIS for SMBs. Performance reviews, onboarding, time-off management.',tags:['HRIS','Performance','Time-off'],url:'/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://bamboohr.com'},
+    ],
+    mid:[
+      {name:'Rippling',desc:'Quote-based. Best all-in-one HR + IT + payroll at scale. Steep but worth it above 100 employees.',tags:['HR+IT','Global payroll','Automation'],url:'/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://rippling.com'},
+      {name:'Deel',desc:'From $49/contractor/mo. Best for global teams and contractor compliance.',tags:['Global','Contractor','Compliance'],url:'/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://deel.com'},
+    ]
+  },
+  dev:{
+    solo:[
+      {name:'Linear Free',desc:'Free forever solo. Best issue tracker built. Keyboard-first, instant, no bloat.',tags:['Free','Fast','Git sync'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
+      {name:'GitHub Copilot',desc:'$10/mo. Essential for solo devs. Saves 2–4 hours/week minimum.',tags:['AI coding','$10/mo','VS Code'],url:'/pages/datadog-review-2026-is-it-worth-it-honest-verdict',trial:'https://github.com/features/copilot'},
+    ],
+    smb:[
+      {name:'Linear',desc:'$8/seat/mo. Best sprint + issue tracking for engineering teams. Jira without the pain.',tags:['Sprints','Cycles','Roadmaps'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
+      {name:'Datadog',desc:'Usage-based. Best observability platform. Start with APM, expand as you scale.',tags:['Monitoring','APM','Logs'],url:'/pages/datadog-review-2026-is-it-worth-it-honest-verdict',trial:'https://datadoghq.com'},
+    ],
+    mid:[
+      {name:'Datadog',desc:'Full observability stack. Expensive at scale — audit your metric count quarterly.',tags:['Monitoring','Security','Dashboards'],url:'/pages/datadog-review-2026-is-it-worth-it-honest-verdict',trial:'https://datadoghq.com'},
+      {name:'Linear Business',desc:'$16/seat/mo. Roadmaps, API, analytics. Best for 50–500 person eng orgs.',tags:['Roadmaps','API','SLA'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
+    ]
+  },
+  finance:{
+    solo:[
+      {name:'Xero Starter',desc:'$29/mo. 20 invoices, 5 bills. Best accounting for solo freelancers in the UK/AU/NZ.',tags:['Invoicing','Bank feeds','Tax'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://xero.com'},
+      {name:'FreshBooks',desc:'$19/mo. Best invoicing UX for freelancers. Time tracking built in.',tags:['Invoicing','Time tracking','Proposals'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://freshbooks.com'},
+    ],
+    smb:[
+      {name:'Xero',desc:'$78/mo for Growing plan. Unlimited invoices, multicurrency, payroll integration.',tags:['Multicurrency','Payroll','Reporting'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://xero.com'},
+      {name:'Ramp',desc:'Free corporate cards + expense management. Best cost control tool for SMBs.',tags:['Free','Corporate cards','Expense'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://ramp.com'},
+    ],
+    mid:[
+      {name:'Brex',desc:'Free with minimum spend. Best for venture-backed companies. Travel + expenses + cards.',tags:['Cards','Travel','Integrations'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://brex.com'},
+      {name:'Xero Premium',desc:'$70/mo. Best for 50–500 person finance teams. Strong analytics and multi-entity support.',tags:['Multi-entity','Analytics','API'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://xero.com'},
+    ]
+  }
 };
-const state = {category:"crm", team:"small", budget:"low", stage:"research"};
-const category = document.getElementById("category");
-let currentRanked = [];
-Object.entries(CATEGORIES).forEach(([key,value])=>{const option=document.createElement("option");option.value=key;option.textContent=value.label;category.appendChild(option);});
-function scoreTool(tool){return (tool[state.team]||0)*3+(tool[state.budget]||0)*2+(tool[state.stage]||0)*2;}
-function track(name, params){if(window.gtag)gtag("event",name,params);}
-function savedLabel(saved){
-  if(!saved) return "No shortlist saved yet.";
-  const date = new Date(saved.savedAt).toLocaleDateString(undefined,{month:"short",day:"numeric"});
-  return `<span class="save-pill">Saved</span> ${saved.categoryLabel} list with ${saved.tools.map(tool=>tool.name).slice(0,3).join(", ")} on ${date}.`;
-}
-function readSaved(){
-  try{return JSON.parse(localStorage.getItem("saaspare_shortlist_v1")||"null");}catch(_){return null;}
-}
-function renderSavedState(){
-  const el = document.getElementById("save-state");
-  if(el) el.innerHTML = savedLabel(readSaved());
-}
-function snapshot(group, ranked){
-  return {
-    category: state.category,
-    categoryLabel: group.label,
-    team: state.team,
-    budget: state.budget,
-    stage: state.stage,
-    tools: ranked.map((tool,index)=>({rank:index+1,name:tool.name,slug:tool.slug,page:tool.page,best:tool.best})),
-    savedAt: new Date().toISOString()
-  };
-}
-function render(){
-  const group = CATEGORIES[state.category];
-  document.getElementById("result-title").textContent = group.label + " shortlist";
-  document.getElementById("result-copy").textContent = group.copy;
-  document.getElementById("lead-category").value = group.label + " / " + state.team + " / " + state.budget + " / " + state.stage;
-  const ranked = [...group.tools].sort((a,b)=>scoreTool(b)-scoreTool(a));
-  currentRanked = ranked;
-  document.getElementById("lead-snapshot").value = JSON.stringify(snapshot(group, ranked));
-  const topScore = Math.min(98, 70 + scoreTool(ranked[0]));
-  document.getElementById("fit-score").textContent = topScore + "%";
-  document.getElementById("result-fit").textContent = state.stage === "buy" ? "Ready to compare offers" : "High intent";
-  const cards = ranked.map((tool,index)=>`
-    <article class="tool">
-      <div class="rank">${index+1}</div>
+
+function buildShortlist(){
+  const cat=document.getElementById('sl-cat').value;
+  const budget=document.getElementById('sl-budget').value;
+  const catName=document.getElementById('sl-cat').options[document.getElementById('sl-cat').selectedIndex].text;
+  const sizeLabel={'solo':'Solo','smb':'2–50 seats','mid':'50–500 seats'}[activeSize];
+  const tools=(DB[cat]||{})[activeSize]||DB[cat]?.smb||[];
+  document.getElementById('results-title').textContent=`${catName} — ${sizeLabel}`;
+  document.getElementById('fit-count').textContent=`${tools.length} strong fit${tools.length!==1?'s':''}`;
+  document.getElementById('results').innerHTML=tools.map((t,i)=>`
+    <div class="tool-row">
+      <div class="rank">${i+1}</div>
       <div>
-        <h3>${tool.name}</h3>
-        <p>${tool.best}</p>
-        <div class="tags">${tool.tags.map(tag=>`<span class="tag">${tag}</span>`).join("")}</div>
+        <h3>${t.name}</h3>
+        <p>${t.desc}</p>
+        <div class="tags">${t.tags.map(tg=>`<span class="tag">${tg}</span>`).join('')}</div>
       </div>
-      <div class="actions">
-        <a class="btn" href="/go/${tool.slug}" data-tool="${tool.name}" data-slot="${index+1}">Visit</a>
-        <a class="btn ghost" href="${tool.page}">Read</a>
+      <div class="row-actions">
+        <a class="btn-p" href="${t.trial}" target="_blank" rel="noopener">Try free</a>
+        <a class="btn-g" href="${t.url}">Compare</a>
       </div>
-    </article>`).join("");
-  document.getElementById("cards").innerHTML = cards;
-  document.querySelectorAll(".btn[href^='/go/']").forEach(link=>link.addEventListener("click",()=>track("shortlist_click",{tool:link.dataset.tool,slot:link.dataset.slot,category:group.label,team_size:state.team,budget_pressure:state.budget,buying_stage:state.stage})));
-  track("shortlist_result",{category:group.label,team_size:state.team,budget_pressure:state.budget,buying_stage:state.stage,top_tool:ranked[0].name});
+    </div>`).join('');
+  localStorage.setItem('ss-shortlist',JSON.stringify({cat,size:activeSize,budget,ts:Date.now()}));
 }
-category.addEventListener("change",event=>{state.category=event.target.value;render();});
-document.querySelectorAll(".segments").forEach(group=>group.addEventListener("click",event=>{const button=event.target.closest(".seg");if(!button)return;group.querySelectorAll(".seg").forEach(item=>item.classList.remove("active"));button.classList.add("active");state[group.dataset.name]=button.dataset.value;render();}));
-document.getElementById("save-shortlist").addEventListener("click",()=>{
-  const group = CATEGORIES[state.category];
-  const data = snapshot(group, currentRanked.length ? currentRanked : group.tools);
-  localStorage.setItem("saaspare_shortlist_v1", JSON.stringify(data));
-  renderSavedState();
-  track("shortlist_save",{category:group.label,team_size:state.team,budget_pressure:state.budget,buying_stage:state.stage,top_tool:data.tools[0]?.name});
-});
-render();
-renderSavedState();
+buildShortlist();
 </script>
 <script defer src="/assets/saaspare-ui.js"></script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>

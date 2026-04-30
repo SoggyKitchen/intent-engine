@@ -1,22 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact SaaSpare: Get in Touch for Feedback, Partnerships, or Support</title>
-<meta name="description" content="Have questions or feedback? Contact SaaSpare directly. We&#x27;d love to hear from you about partnerships and support.">
-<link rel="canonical" href="https://saaspare.org/contact">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-<link rel="apple-touch-icon" href="/favicon-192.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.svg">
-<meta name="theme-color" content="#080810">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>Contact SaaSpare</title>
+<meta name="description" content="Get in touch with the SaaSpare team — feedback, corrections, partnership enquiries or press.">
+<link rel="canonical" href="https://saaspare.org/contact.html">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#0a0a14;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',system-ui,sans-serif;background:#0a0a14;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:5px;background:rgba(255,255,255,.03)}
 ::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:3px}
@@ -26,23 +20,23 @@ a{text-decoration:none;color:inherit}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
 nav.scrolled{background:rgba(10,10,20,.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.07)}
-.logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}.wv{pointer-events:none;transition:opacity .3s}@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}.logo:hover .logo-mark{animation:none}.logo:hover .mark-top{transform:translateX(26px);filter:drop-shadow(-2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}.logo:hover .mark-bot{transform:translateX(-26px);filter:drop-shadow(2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}.logo:hover .wv,.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{opacity:0}
 .logo{display:flex;align-items:center;gap:8px;margin-right:auto}
-
-.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.5px;color:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
-.logo-text em{color:#e94560;font-style:normal}
+/* ── SaaSpare Logo ── */
+.saas-logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;user-select:none;cursor:pointer}
+.saas-logo-text{font-family:'Inter','Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:17px;letter-spacing:-.5px;color:#fff;line-height:1;white-space:nowrap}
+.saas-logo-text .s-bridge{color:#e94560}
 .nav-link{color:rgba(255,255,255,.5);font-size:.83rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s}
 .nav-link:hover{color:#fff}
 .nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.42rem 1.1rem;border-radius:100px;font-weight:700;font-size:.82rem;box-shadow:0 4px 14px rgba(233,69,96,.35);margin-left:6px;transition:transform .15s}
 .nav-cta:hover{transform:translateY(-1px)}
 
-.page-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0f1729 0%,#0a0f2e 50%,#150a22 100%);padding:6.2rem 2rem 3.4rem;text-align:center;min-height:0}
+.page-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0f1729 0%,#0a0f2e 50%,#150a22 100%);padding:7rem 2rem 4rem;text-align:center}
 .orb{position:absolute;pointer-events:none;border-radius:50%}
 .eyebrow{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.28);letter-spacing:.8px;text-transform:uppercase;margin-bottom:.75rem;animation:up .6s ease both}
-.page-hero h1{font-size:clamp(2.2rem,5.8vw,3.6rem);font-weight:900;color:#fff;letter-spacing:-.055em;line-height:1.08;margin-bottom:1rem;animation:up .7s .1s ease both}
+.page-hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;color:#fff;letter-spacing:-.6px;line-height:1.1;margin-bottom:1rem;animation:up .7s .1s ease both}
 .page-hero p{color:rgba(255,255,255,.48);font-size:1rem;line-height:1.75;max-width:480px;margin:0 auto;animation:up .7s .2s ease both}
 
-.container{max-width:1040px;margin:0 auto;padding:3rem 2rem;display:grid;grid-template-columns:.9fr 1.1fr;gap:2rem;align-items:start}
+.container{max-width:780px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
 .contact-options{display:flex;flex-direction:column;gap:12px}
 .contact-option{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.4rem 1.5rem;transition:all .22s cubic-bezier(.34,1.4,.64,1);opacity:0;animation:fadeUp .5s ease forwards}
 .contact-option:hover{background:rgba(233,69,96,.08);border-color:rgba(233,69,96,.25);transform:translateY(-2px);box-shadow:0 8px 24px rgba(233,69,96,.1)}
@@ -77,37 +71,20 @@ footer{border-top:1px solid rgba(255,255,255,.07)}
   .nav-link{display:none}
   .container{grid-template-columns:1fr;padding:2.5rem 1.25rem}
   .footer-inner{flex-direction:column;align-items:flex-start}
-
+}
 </style>
-<link rel="stylesheet" href="/assets/saaspare-ui.css">
-<meta property="og:title" content="Contact SaaSpare: Get in Touch for Feedback, Partnerships, or Support">
-<meta property="og:description" content="Have questions or feedback? Contact SaaSpare directly. We&#x27;d love to hear from you about partnerships and support.">
-<meta property="og:url" content="https://saaspare.org/contact">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Contact SaaSpare: Get in Touch for Feedback, Partnerships, or Support">
-<meta name="twitter:description" content="Have questions or feedback? Contact SaaSpare directly. We&#x27;d love to hear from you about partnerships and support.">
-<meta name="keywords" content="Contact SaaSpare: Get in Touch for Feedback, Partnerships, or Support, trust, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta name="twitter:site" content="@SaaSpare">
-<meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": []}</script>
-<meta name="google-adsense-account" content="ca-pub-9433840442322701">
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <nav id="nav">
-  <a href="/" class="logo">
-    <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg>
-    <span class="logo-text">Saa<em>Spare</em></span>
+  <a href="/" class="saas-logo logo-md">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="0" y="0" width="8" height="20" rx="2" fill="#ffffff"/><rect x="12" y="6" width="8" height="14" rx="2" fill="#e94560"/></svg>
+    <span class="saas-logo-text">Saa<span class="s-bridge">S</span>pare</span>
   </a>
-    <a href="/pages/" class="nav-link">Comparisons</a>
-  <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
-  <a href="/about" class="nav-link">About</a>
-  <a href="/contact" class="nav-link" style="color:#fff">Contact</a>
-  <a href="/pages/" class="nav-cta">Browse Tools &#8594;</a>
+  <a href="/pages/" class="nav-link">All Comparisons</a>
+  <a href="/about.html" class="nav-link">About</a>
+  <a href="/contact.html" class="nav-link" style="color:#fff">Contact</a>
+  <a href="/pages/" class="nav-cta">Compare Now →</a>
 </nav>
 
 <div class="page-hero">
@@ -125,26 +102,26 @@ footer{border-top:1px solid rgba(255,255,255,.07)}
       <div class="contact-option-icon">🐛</div>
       <h3>Report an error</h3>
       <p>Found outdated pricing or an incorrect feature comparison? Let us know and we'll fix it within 48 hours.</p>
-      <a href="mailto:hello@saaspare.org?subject=[SaaSpare Contact] Error Report" class="btn">Report error →</a>
+      <a href="mailto:hello@saaspare.org?subject=Error report" class="btn">Report error →</a>
     </div>
     <div class="contact-option" style="animation-delay:.1s">
       <div class="contact-option-icon">💡</div>
       <h3>Suggest a comparison</h3>
       <p>We're always expanding. If two tools aren't on SaaSpare yet, tell us and we'll prioritise them.</p>
-      <a href="mailto:hello@saaspare.org?subject=[SaaSpare Contact] Comparison Suggestion" class="btn">Suggest →</a>
+      <a href="mailto:hello@saaspare.org?subject=Comparison suggestion" class="btn">Suggest →</a>
     </div>
     <div class="contact-option" style="animation-delay:.15s">
       <div class="contact-option-icon">🤝</div>
       <h3>Partnership & press</h3>
       <p>Affiliate programmes, co-marketing or media enquiries — reach out directly.</p>
-      <a href="mailto:partnerships@saaspare.org?subject=[SaaSpare Contact] Partnership Enquiry" class="btn">Get in touch →</a>
+      <a href="mailto:hello@saaspare.org?subject=Partnership" class="btn">Get in touch →</a>
     </div>
   </div>
 
   <div class="contact-form" id="form-wrap">
-    <h2>Send a Message: Report Errors, Suggest Comparisons & Partnerships</h2>
-    <form id="contact-form" action="https://formsubmit.co/hello@saaspare.org" method="POST">
-      <input type="hidden" name="_subject" value="[SaaSpare] Contact Form Message">
+    <h2>Send a message</h2>
+    <form id="contact-form" action="https://formsubmit.co/smithelly30121@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="SaaSpare contact form">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://saaspare.org/contact.html">
       <div class="field">
@@ -176,15 +153,15 @@ footer{border-top:1px solid rgba(255,255,255,.07)}
 
 <footer>
   <div class="footer-inner">
-    <a href="/" class="logo">
-      <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ctb"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cbb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1b"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2b"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3b"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4b"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ctb)" mask="url(#sm1b)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ctb)" mask="url(#sm3b)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cbb)" mask="url(#sm2b)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cbb)" mask="url(#sm4b)"><rect width="180" height="180" fill="#e94560"/></g></svg>
-      <span class="logo-text">Saa<em>Spare</em></span>
+    <a href="/" class="saas-logo logo-md">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="0" y="0" width="8" height="20" rx="2" fill="#ffffff"/><rect x="12" y="6" width="8" height="14" rx="2" fill="#e94560"/></svg>
+    <span class="saas-logo-text">Saa<span class="s-bridge">S</span>pare</span>
     </a>
     <div class="footer-links">
       <a href="/pages/">All Comparisons</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-      <a href="/privacy">Privacy</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
     </div>
     <span>© 2026 SaaSpare</span>
   </div>
@@ -195,7 +172,5 @@ window.addEventListener('scroll',()=>{
   document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
 },{passive:true});
 </script>
-<script defer src="/assets/saaspare-ui.js"></script>
-<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 </body>
 </html>
