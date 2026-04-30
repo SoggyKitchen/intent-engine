@@ -3,7 +3,9 @@
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
 - `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/best-saas-analytics-tools-for-business-in-2025` (92.0/100): broken_internal_link
 - `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
+- `/pages` (82.0/100): title_length_outside_target
 - `/pages/lever-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
 - `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (92.0/100): broken_internal_link
 - `/pages/remote-com-vs-lattice-which-is-better-in-2026` (92.0/100): broken_internal_link
@@ -98,5 +100,3 @@
 - `/pages/workable-vs-remote-com-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/zoom-vs-riverside-fm-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/deal-radar` (87.5/100): thin_buyer_page
-- `/pages` (88.0/100): title_length_outside_target
-- `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (96.12/100): thin_buyer_page, title_length_outside_target

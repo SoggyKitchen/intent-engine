@@ -359,10 +359,10 @@
       "WebSite"
     ],
     "score": {
-      "content": 16.27,
+      "content": 16.59,
       "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 77.28,
+      "overall": 77.59,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 20,
@@ -372,7 +372,7 @@
     "title_length": 57,
     "url": "https://saaspare.org/",
     "warnings": [],
-    "word_count": 655
+    "word_count": 718
   },
   {
     "affiliate_links": [],
@@ -21964,6 +21964,117 @@
     "url": "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
     "warnings": [],
     "word_count": 986
+  },
+  {
+    "affiliate_links": [],
+    "broken_internal_links": [
+      "https://saaspare.org/pages/amplitude-review-2026-is-it-worth-it-honest-verdict-pricing-saaspare",
+      "https://saaspare.org/pages/best-saas-analytics-software-for-small-business-in-2026-ranked-saaspare",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025-saaspare",
+      "https://saaspare.org/pages/does-amplitude-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step-saaspare",
+      "https://saaspare.org/pages/does-hotjar-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step-saaspare",
+      "https://saaspare.org/pages/fullstory-vs-hotjar-which-software-is-best-in-2026-saaspare",
+      "https://saaspare.org/pages/fullstory-vs-segment-which-software-is-best-in-2026-saaspare",
+      "https://saaspare.org/pages/heap-vs-segment-which-software-is-best-in-2026-saaspare",
+      "https://saaspare.org/pages/hotjar-vs-segment-which-software-is-best-in-2026-saaspare"
+    ],
+    "canonical": "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
+    "external_links": [
+      "https://aegismark.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=aegismark",
+      "https://forecastdatasystem.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=forecast-data-system",
+      "https://octowatch.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=octowatch",
+      "https://twitter.com/intent/tweet?text=Best%20SaaS%20Analytics%20Tools%20for%20Business%20in%202025&url=https%3A//saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A//saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
+      "https://www.reddit.com/submit?url=https%3A//saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025&title=Best%20SaaS%20Analytics%20Tools%20for%20Business%20in%202025"
+    ],
+    "file": "site/pages/best-saas-analytics-tools-for-business-in-2025.html",
+    "h1": [
+      "Best SaaS Analytics Tools for Business in 2025"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Our Top Pick",
+      "OctoWatch <span class=\"winner-badge\">Top Pick</span>",
+      "AegisMark",
+      "Forecast Data System",
+      "Frequently Asked Questions",
+      "How SaaSpare keeps this page useful",
+      "Ready to decide?"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "https://saaspare.org",
+      "https://saaspare.org/about.html",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/contact.html",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/7-best-google-analytics-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/7-best-power-bi-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/7-best-tableau-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/amplitude-review-2026-is-it-worth-it-honest-verdict-pricing-saaspare",
+      "https://saaspare.org/pages/best-saas-analytics-software-for-small-business-in-2026-ranked-saaspare",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025-saaspare",
+      "https://saaspare.org/pages/does-amplitude-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step-saaspare",
+      "https://saaspare.org/pages/does-hotjar-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step-saaspare",
+      "https://saaspare.org/pages/fullstory-vs-hotjar-which-software-is-best-in-2026-saaspare",
+      "https://saaspare.org/pages/fullstory-vs-segment-which-software-is-best-in-2026-saaspare",
+      "https://saaspare.org/pages/heap-vs-segment-which-software-is-best-in-2026-saaspare",
+      "https://saaspare.org/pages/hotjar-vs-segment-which-software-is-best-in-2026-saaspare",
+      "https://saaspare.org/pages/saas-roi-calculator.html",
+      "https://saaspare.org/privacy.html",
+      "https://saaspare.org/shortlist.html"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 1,
+    "meta_description": "Compare top SaaS analytics tools for business, including OctoWatch, AegisMark, and others, to find the best fit for your needs.",
+    "meta_length": 127,
+    "page_type": "best_of",
+    "path": "/pages/best-saas-analytics-tools-for-business-in-2025",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "FAQPage",
+      "ImageObject",
+      "ListItem",
+      "Organization",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 8,
+      "internalLinking": 12,
+      "overall": 92.0,
+      "performanceUx": 5,
+      "schemaIndexability": 10,
+      "technical": 17,
+      "trust": 20.0
+    },
+    "title": "Best SaaS Analytics Tools for Business in 2025 | SaaSpare",
+    "title_length": 57,
+    "url": "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
+    "warnings": [],
+    "word_count": 816
   },
   {
     "affiliate_links": [
@@ -53446,26 +53557,25 @@
   {
     "affiliate_links": [],
     "broken_internal_links": [],
-    "canonical": "https://saaspare.org/pages",
+    "canonical": "https://saaspare.org/pages/",
     "external_links": [],
     "file": "site/pages/index.html",
     "h1": [
       "Find the right <span>SaaS answer</span> faster."
     ],
     "h2": [
-      "Browse the library",
-      "How SaaSpare keeps this page useful"
+      "Browse the library"
     ],
     "has_affiliate_disclosure": true,
     "has_comparison_table": true,
     "has_correction": true,
     "has_cta": true,
-    "has_email_capture": false,
+    "has_email_capture": true,
     "has_faq": false,
     "has_faq_schema": false,
     "has_last_verified": true,
     "has_methodology": true,
-    "has_pricing_source": true,
+    "has_pricing_source": false,
     "has_pricing_table": true,
     "has_related_pages": true,
     "has_sticky_cta": true,
@@ -53474,18 +53584,15 @@
     "images_missing_alt": 0,
     "internal_links": [
       "/",
-      "/about",
-      "/affiliate-disclosure",
-      "/contact",
-      "/deal-radar",
-      "/methodology",
+      "/about.html",
+      "/affiliate-disclosure.html",
+      "/contact.html",
+      "/deal-radar.html",
+      "/methodology.html",
       "/pages/",
-      "/pages/saas-roi-calculator",
-      "/shortlist",
-      "https://saaspare.org/about",
-      "https://saaspare.org/affiliate-disclosure",
-      "https://saaspare.org/contact",
-      "https://saaspare.org/methodology",
+      "/pages/saas-roi-calculator.html",
+      "/shortlist.html",
+      "https://saaspare.org/about.html",
       "https://saaspare.org/pages/1password-business-vs-cloudflare-which-is-better-in-2026",
       "https://saaspare.org/pages/1password-business-vs-crowdstrike-which-is-better-in-2026",
       "https://saaspare.org/pages/1password-business-vs-duo-security-which-is-better-in-2026",
@@ -53686,6 +53793,7 @@
       "https://saaspare.org/pages/best-rippling-alternatives-in-2026-free-paid",
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
       "https://saaspare.org/pages/best-salesforce-alternatives-in-2026-free-paid",
       "https://saaspare.org/pages/best-semrush-alternatives-in-2026-free-paid",
       "https://saaspare.org/pages/best-seo-tools-for-agencies-in-2026-enterprise-grade",
@@ -54471,28 +54579,26 @@
       "https://saaspare.org/pages/zoom-vs-webex-which-is-better-in-2026",
       "https://saaspare.org/pages/zoom-vs-whereby-which-is-better-in-2026",
       "https://saaspare.org/pages/zscaler-vs-openvpn-which-is-better-in-2026",
-      "https://saaspare.org/privacy",
-      "https://saaspare.org/shortlist"
+      "https://saaspare.org/privacy.html",
+      "https://saaspare.org/shortlist.html"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
+    "jsonld_blocks": 0,
     "meta_description": "Browse SaaSpare's full SaaS comparison library with pricing guides, reviews, free trials, promo codes and alternatives for B2B software buyers.",
     "meta_length": 143,
     "page_type": "pricing",
     "path": "/pages",
     "robots": "index, follow",
-    "schema_types": [
-      "Organization"
-    ],
+    "schema_types": [],
     "score": {
       "content": 17,
-      "conversionRevenue": 6,
+      "conversionRevenue": 8,
       "internalLinking": 15,
-      "overall": 88.0,
+      "overall": 82.0,
       "performanceUx": 5,
-      "schemaIndexability": 6,
+      "schemaIndexability": 3,
       "technical": 19,
-      "trust": 20.0
+      "trust": 15.0
     },
     "title": "SaaS Comparison Library: Pricing, Reviews, Free Trials & Alternatives | SaaSpare",
     "title_length": 80,
@@ -54500,7 +54606,7 @@
     "warnings": [
       "title_length_outside_target"
     ],
-    "word_count": 11069
+    "word_count": 10986
   },
   {
     "affiliate_links": [

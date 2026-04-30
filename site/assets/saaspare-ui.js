@@ -38,8 +38,58 @@
     cta.textContent = "Build Shortlist ->";
     cta.className = "nav-cta";
     nav.appendChild(cta);
+    const theme = document.createElement("button");
+    theme.type = "button";
+    theme.className = "ss-theme-toggle";
+    theme.setAttribute("aria-label", "Toggle light and dark mode");
+    theme.textContent = document.documentElement.dataset.theme === "light" ? "☾" : "◐";
+    nav.appendChild(theme);
   }
   function track(name, params){ if(window.gtag) window.gtag("event", name, params || {}); }
+  function enhanceTheme(){
+    const saved = localStorage.getItem("ss_theme");
+    if(saved) document.documentElement.dataset.theme = saved;
+    const nav = document.querySelector("nav");
+    const onScroll = ()=>nav && nav.classList.toggle("ss-nav-scrolled", window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive:true });
+    document.querySelectorAll(".ss-theme-toggle").forEach((button)=>{
+      button.textContent = document.documentElement.dataset.theme === "light" ? "☾" : "◐";
+      button.addEventListener("click",(event)=>{
+        const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem("ss_theme", next);
+        button.textContent = next === "light" ? "☾" : "◐";
+        const flash = document.createElement("span");
+        flash.className = "ss-theme-flash";
+        flash.style.setProperty("--ss-theme-x", `${event.clientX || window.innerWidth - 60}px`);
+        flash.style.setProperty("--ss-theme-y", `${event.clientY || 40}px`);
+        document.body.appendChild(flash);
+        setTimeout(()=>flash.remove(), 700);
+        track("theme_toggle", { theme: next, page_slug: location.pathname });
+      });
+    });
+  }
+  function enhanceDecisionTrail(){
+    const escapeHtml = (value)=>String(value).replace(/[&<>"']/g,(char)=>({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[char]));
+    const isContentPage = location.pathname.includes("/pages/") && !location.pathname.endsWith("/pages/");
+    const title = (document.querySelector("h1")?.textContent || document.title || "SaaSpare page").trim().replace(/\s+/g," ");
+    const path = location.pathname + location.search;
+    let items = [];
+    try{ items = JSON.parse(localStorage.getItem("ss_decision_trail") || "[]"); }catch(error){ items = []; }
+    if(isContentPage){
+      items = [{ title, path, type: title.match(/pricing/i) ? "Pricing" : title.match(/trial/i) ? "Trial" : title.match(/coupon|promo/i) ? "Deal" : title.match(/alternative/i) ? "Alt" : "Compare" }, ...items.filter((item)=>item.path !== path)].slice(0,5);
+      localStorage.setItem("ss_decision_trail", JSON.stringify(items));
+    }
+    if(document.querySelector(".ss-decision-dock")) return;
+    const dock = document.createElement("aside");
+    dock.className = "ss-decision-dock";
+    const list = items.length ? items.map((item)=>`<a class="ss-decision-item" href="${escapeHtml(item.path)}"><span>${escapeHtml(item.title.slice(0,70))}</span><small>${escapeHtml(item.type || "Saved")}</small></a>`).join("") : `<a class="ss-decision-item" href="/pages/?type=pricing"><span>Start with pricing guides buyers usually check first</span><small>Start</small></a>`;
+    dock.innerHTML = `<button type="button" class="ss-decision-toggle">Decision Trail</button><div class="ss-decision-panel"><h3>Your SaaS decision trail</h3><p>No login needed. SaaSpare remembers recent research on this device so you can compare, leave, and return fast.</p><div class="ss-decision-list">${list}</div><div class="ss-decision-actions"><a href="/shortlist">Build shortlist</a><a href="/deal-radar">Find offers</a><button type="button">Clear</button></div></div>`;
+    dock.querySelector(".ss-decision-toggle").addEventListener("click",()=>{ dock.classList.toggle("open"); track("decision_trail_open", { page_slug: location.pathname }); });
+    dock.querySelector(".ss-decision-actions button").addEventListener("click",()=>{ localStorage.removeItem("ss_decision_trail"); dock.remove(); });
+    document.body.appendChild(dock);
+  }
   function addClickNudges(){
     const affiliateLinks = [...document.querySelectorAll("a[href^='/go/'],a[href*='saaspare.org/go/']")];
     affiliateLinks.forEach((link)=>{
@@ -121,8 +171,8 @@
     });
   }
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();normalizeNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();});
+    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();normalizeNavLinks();enhanceTheme();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();});
   }else{
-    upgradeLogo();normalizeNavLinks();addClickNudges();adblockPrompt();enhanceLeadForms();
+    upgradeLogo();normalizeNavLinks();enhanceTheme();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();
   }
 })();

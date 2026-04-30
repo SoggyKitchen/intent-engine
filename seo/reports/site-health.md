@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-04-30T07:36:57+00:00
-Mode: `apply-safe`
+Generated: 2026-04-30T08:41:03+00:00
+Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **98.52/100**
+- Overall SaaSpare Health Score: **98.5/100**
 - Level: **Elite SEO/revenue engine**
-- Technical SEO: 19.5/20
+- Technical SEO: 19.49/20
 - Content usefulness: 19.92/20
 - Trust/E-E-A-T: 19.92/20
 - Internal linking: 14.59/15
-- Schema/indexability: 9.96/10
+- Schema/indexability: 9.95/10
 - Conversion/revenue: 9.63/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 995
+- Pages scanned: 996
 - Healthy pages (85+): 986
 - Unhealthy pages (<55): 0
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 95
+- Safe fixes applied this run: 0
 - GSC: skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -43,7 +43,9 @@ Mode: `apply-safe`
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
 - `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/best-saas-analytics-tools-for-business-in-2025` (92.0/100): broken_internal_link
 - `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
+- `/pages` (82.0/100): title_length_outside_target
 - `/pages/lever-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
 - `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (92.0/100): broken_internal_link
 - `/pages/remote-com-vs-lattice-which-is-better-in-2026` (92.0/100): broken_internal_link
@@ -63,8 +65,6 @@ Mode: `apply-safe`
 - `/pages/7-best-bamboohr-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 - `/pages/7-best-bigcommerce-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 - `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-clickup-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-crowdstrike-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 
 ## Top 25 Revenue Opportunities
 - `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.98): CTA=True, affiliateLinks=1, disclosure=True

@@ -1,16 +1,18 @@
 {
-  "missingJsonLd": [],
+  "missingJsonLd": [
+    "/pages"
+  ],
   "schemaTypes": {
-    "Answer": 984,
-    "Article": 984,
-    "BreadcrumbList": 984,
+    "Answer": 985,
+    "Article": 985,
+    "BreadcrumbList": 985,
     "EntryPoint": 1,
-    "FAQPage": 984,
-    "ImageObject": 984,
+    "FAQPage": 985,
+    "ImageObject": 985,
     "ItemList": 1,
-    "ListItem": 985,
+    "ListItem": 986,
     "Organization": 995,
-    "Question": 984,
+    "Question": 985,
     "SearchAction": 1,
     "SiteLinksSearchBox": 1,
     "WebApplication": 1,

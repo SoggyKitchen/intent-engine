@@ -44,10 +44,10 @@
     "trust": 20.0
   },
   {
-    "content": 16.27,
+    "content": 16.59,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 77.28,
+    "overall": 77.59,
     "path": "/",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -2296,6 +2296,17 @@
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 92.0,
+    "path": "/pages/best-saas-analytics-tools-for-business-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
     "trust": 20.0
   },
   {
@@ -5655,14 +5666,14 @@
   },
   {
     "content": 17,
-    "conversionRevenue": 6,
+    "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 88.0,
+    "overall": 82.0,
     "path": "/pages",
     "performanceUx": 5,
-    "schemaIndexability": 6,
+    "schemaIndexability": 3,
     "technical": 19,
-    "trust": 20.0
+    "trust": 15.0
   },
   {
     "content": 20,

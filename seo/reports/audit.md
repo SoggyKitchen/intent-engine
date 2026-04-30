@@ -1,9 +1,9 @@
 # SEO Audit
 
-Pages scanned: 995
+Pages scanned: 996
 
 ## Severe Issue Counts
-- broken_internal_link: 97
+- broken_internal_link: 98
 
 ## Warning Counts
 - meta_length_outside_target: 20
@@ -19,12 +19,13 @@ Pages scanned: 995
 - `/affiliate-disclosure`: 71.62/100, issues=none
 - `/methodology`: 71.93/100, issues=none
 - `/pages/saas-roi-calculator`: 74.43/100, issues=none
-- `/`: 77.28/100, issues=none
+- `/`: 77.59/100, issues=none
+- `/pages`: 82.0/100, issues=none
 - `/deal-radar`: 87.5/100, issues=none
-- `/pages`: 88.0/100, issues=none
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025`: 90.0/100, issues=broken_internal_link
 - `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025`: 91.0/100, issues=broken_internal_link
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025`: 91.0/100, issues=broken_internal_link
+- `/pages/best-saas-analytics-tools-for-business-in-2025`: 92.0/100, issues=broken_internal_link
 - `/pages/greenhouse-vs-remote-com-which-is-better-in-2026`: 92.0/100, issues=broken_internal_link
 - `/pages/lever-vs-remote-com-which-is-better-in-2026`: 92.0/100, issues=broken_internal_link
 - `/pages/remote-com-vs-culture-amp-which-is-better-in-2026`: 92.0/100, issues=broken_internal_link
@@ -60,4 +61,3 @@ Pages scanned: 995
 - `/pages/7-best-hubspot-crm-alternatives-in-2026-free-paid`: 94.0/100, issues=broken_internal_link
 - `/pages/7-best-jira-alternatives-in-2026-free-paid`: 94.0/100, issues=broken_internal_link
 - `/pages/7-best-lastpass-alternatives-in-2026-free-paid`: 94.0/100, issues=broken_internal_link
-- `/pages/7-best-mailchimp-alternatives-in-2026-free-paid`: 94.0/100, issues=broken_internal_link

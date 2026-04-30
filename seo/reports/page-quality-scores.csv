@@ -3,7 +3,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /affiliate-disclosure,trust,20,11.03,20.0,8.6,6,1,5,71.62
 /contact,trust,20,10.71,7.5,7.7,6,4,5,60.92
 /deal-radar,pricing,20,14.66,20.0,13.85,6,8,5,87.5
-/,other,20,16.27,10.0,12,6,8,5,77.28
+/,other,20,16.59,10.0,12,6,8,5,77.59
 /media-kit,other,20,12.11,7.5,6.35,6,3,5,59.96
 /methodology,trust,20,11.32,20.0,8.6,6,1,5,71.93
 /privacy,trust,20,12.77,7.5,7.25,6,5,5,63.52
@@ -208,6 +208,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/best-rippling-alternatives-in-2026-free-paid,alternatives,20,20,20.0,15,10,10,5,100
 /pages/best-saas-analytics-software-for-small-business-in-2026-ranked,best_of,19,20,20.0,15,10,10,5,99.0
 /pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025,best_of,20,20,20.0,15,10,10,5,100
+/pages/best-saas-analytics-tools-for-business-in-2025,best_of,17,20,20.0,12,10,8,5,92.0
 /pages/best-salesforce-alternatives-in-2026-free-paid,alternatives,20,20,20.0,15,10,10,5,100
 /pages/best-semrush-alternatives-in-2026-free-paid,pricing,19,20,20.0,15,10,10,5,99.0
 /pages/best-seo-tools-for-agencies-in-2026-enterprise-grade,best_of,20,20,20.0,15,10,10,5,100
@@ -513,7 +514,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/hubspot-vs-pardot-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/hubspot-vs-salesforce-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/hugging-face-vs-weights-biases-which-is-better-in-2026,comparison,19,20,20.0,15,10,8,5,97.0
-/pages,pricing,19,17,20.0,15,6,6,5,88.0
+/pages,pricing,19,17,15.0,15,3,8,5,82.0
 /pages/ironclad-vs-agiloft-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/ironclad-vs-concord-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/ironclad-vs-conga-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100

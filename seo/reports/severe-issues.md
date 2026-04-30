@@ -50,6 +50,7 @@
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (best_of, 90.0/100): broken_internal_link
 - `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (best_of, 91.0/100): broken_internal_link
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (best_of, 91.0/100): broken_internal_link
+- `/pages/best-saas-analytics-tools-for-business-in-2025` (best_of, 92.0/100): broken_internal_link
 - `/pages/clearscope-vs-frase-io-which-is-better-in-2026` (comparison, 94.0/100): broken_internal_link
 - `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, 94.0/100): broken_internal_link
 - `/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 94.0/100): broken_internal_link
