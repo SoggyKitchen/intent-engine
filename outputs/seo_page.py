@@ -203,6 +203,19 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
     canonical = f"{domain}{url_path}"
     data["canonical_url"] = canonical
     data["title"] = title
+    data["meta_keywords"] = ", ".join(
+        keyword
+        for keyword in [
+            title.replace("| SaaSpare", "").strip(),
+            page_type.replace("_", " "),
+            "SaaS pricing",
+            "software comparison",
+            "free trial",
+            "alternatives",
+            "SaaSpare",
+        ]
+        if keyword
+    )
     data["page_slug"] = slug
     data["page_type"] = page_type
     data["vertical"] = vertical

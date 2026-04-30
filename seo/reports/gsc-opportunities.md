@@ -1,6 +1,6 @@
 # GSC Opportunities
 
-Status: skipped; GSC_SERVICE_ACCOUNT_JSON or GOOGLE_APPLICATION_CREDENTIALS_JSON missing
+Status: skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls
 
 When credentials are available, this report prioritizes:
 - high impressions / low CTR pages

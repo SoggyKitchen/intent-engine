@@ -54,6 +54,18 @@ SEVERE_ISSUES = {
     "broken_internal_link",
 }
 
+DEFAULT_OG_IMAGE = "https://saaspare.org/og-default.png"
+TWITTER_SITE = "@SaaSpare"
+ORG_SCHEMA = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SaaSpare",
+    "url": "https://saaspare.org/",
+    "logo": DEFAULT_OG_IMAGE,
+    "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.",
+    "sameAs": [],
+}
+
 
 @dataclass
 class PageAudit:
@@ -632,23 +644,29 @@ def apply_safe_fixes(config: dict, audits: list[PageAudit]) -> list[dict]:
         seo = get_page_seo(audit, config)
         html = upsert_title(html, seo["title"])
         html = upsert_meta(html, "description", seo["meta_description"])
+        html = upsert_meta(html, "keywords", build_meta_keywords(audit, seo))
         html = upsert_link_rel(html, "canonical", audit.url)
         html = upsert_property(html, "og:title", seo["title"])
         html = upsert_property(html, "og:description", seo["meta_description"])
         html = upsert_property(html, "og:url", audit.url)
         html = upsert_property(html, "og:type", "website" if audit.page_type in {"other", "trust"} else "article")
+        html = upsert_property(html, "og:image", DEFAULT_OG_IMAGE)
         html = upsert_meta(html, "twitter:card", "summary_large_image")
+        html = upsert_meta(html, "twitter:site", TWITTER_SITE)
         html = upsert_meta(html, "twitter:title", seo["title"])
         html = upsert_meta(html, "twitter:description", seo["meta_description"])
+        html = upsert_meta(html, "twitter:image", DEFAULT_OG_IMAGE)
         html = fix_internal_html_links(html)
         html = fix_saaspare_suffix_links(html)
         html = fix_known_broken_internal_links(html)
+        html = add_missing_image_alt(html, audit)
+        html = ensure_organization_schema(html)
         html = strip_unsupported_review_schema(html)
         html = inject_buyer_trust_block(html, audit, config)
         html = inject_related_actions_block(html, audit, config)
         if html != original:
             file.write_text(html, encoding="utf-8")
-            fixes.extend(["metadata", "canonical", "social", "internal_links", "trust_block", "schema_safety"])
+            fixes.extend(["metadata", "canonical", "social", "internal_links", "image_alt", "organization_schema", "trust_block", "schema_safety"])
             applied.append({"file": audit.file, "path": audit.path, "fixes": sorted(set(fixes))})
     write_json(ROOT / config["reportsDir"] / "applied-fixes.json", applied)
     write_md(ROOT / config["reportsDir"] / "applied-fixes.md", applied_fixes_md(applied))
@@ -661,6 +679,26 @@ def get_page_seo(audit: PageAudit, config: dict) -> dict[str, str]:
     title = audit.title or f"{audit.path.strip('/').replace('-', ' ').title()} | SaaSpare"
     meta = audit.meta_description or f"Compare software pricing, trials and alternatives for {title.replace(' | SaaSpare', '')} on SaaSpare."
     return {"title": title, "meta_description": meta}
+
+
+def build_meta_keywords(audit: PageAudit, seo: dict[str, str]) -> str:
+    """Meta keywords are ignored by Google, but some SEO tools still audit them."""
+    title = seo.get("title") or audit.title or ""
+    base = [
+        title.replace("| SaaSpare", "").strip(),
+        audit.page_type.replace("_", " "),
+        "SaaS pricing",
+        "software comparison",
+        "free trial",
+        "alternatives",
+        "SaaSpare",
+    ]
+    words = []
+    for item in base:
+        item = re.sub(r"\s+", " ", item).strip(" ,-|")
+        if item and item.lower() not in {w.lower() for w in words}:
+            words.append(item)
+    return ", ".join(words[:10])
 
 
 def upsert_title(html: str, value: str) -> str:
@@ -695,6 +733,30 @@ def upsert_link_rel(html: str, rel_name: str, href: str) -> str:
     if re.search(pattern, html, re.I):
         return re.sub(pattern, tag, html, count=1, flags=re.I)
     return html.replace("</head>", f"{tag}\n</head>", 1)
+
+
+def add_missing_image_alt(html: str, audit: PageAudit) -> str:
+    default_alt = escape(f"SaaSpare {audit.page_type.replace('_', ' ')} page visual", quote=True)
+
+    def repl(match: re.Match) -> str:
+        tag = match.group(0)
+        if attr_value(tag, "alt"):
+            return tag
+        insert_at = tag.rfind(">")
+        if insert_at == -1:
+            return tag
+        slash = " /" if tag[:insert_at].rstrip().endswith("/") else ""
+        body = tag[:insert_at].rstrip().rstrip("/")
+        return f'{body} alt="{default_alt}"{slash}>'
+
+    return re.sub(r"<img\b[^>]*>", repl, html, flags=re.I)
+
+
+def ensure_organization_schema(html: str) -> str:
+    if re.search(r'"@type"\s*:\s*"Organization"', html):
+        return html
+    script = '<script type="application/ld+json">' + json.dumps(ORG_SCHEMA, ensure_ascii=False) + "</script>"
+    return html.replace("</head>", f"{script}\n</head>", 1)
 
 
 def fix_internal_html_links(html: str) -> str:
@@ -1025,6 +1087,7 @@ def load_gsc_opportunities(config: dict) -> dict:
     if not has_gsc_credentials():
         return {"skipped": True, "reason": gsc_skip_reason(), "opportunities": []}
     try:
+        from google.oauth2.credentials import Credentials as OAuthCredentials
         from google.oauth2 import service_account
         from googleapiclient.discovery import build
     except Exception as exc:
@@ -1035,9 +1098,21 @@ def load_gsc_opportunities(config: dict) -> dict:
     start_date = end_date - timedelta(days=int(os.environ.get("GSC_LOOKBACK_DAYS", "28")))
     scopes = ["https://www.googleapis.com/auth/webmasters.readonly"]
     try:
+        oauth_refresh = os.environ.get("GSC_OAUTH_REFRESH_TOKEN")
+        oauth_client_id = os.environ.get("GSC_OAUTH_CLIENT_ID")
+        oauth_client_secret = os.environ.get("GSC_OAUTH_CLIENT_SECRET")
         credentials_source = os.environ.get("GSC_SERVICE_ACCOUNT_JSON") or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
         credentials_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
-        if credentials_source:
+        if oauth_refresh and oauth_client_id and oauth_client_secret:
+            credentials = OAuthCredentials(
+                token=None,
+                refresh_token=oauth_refresh,
+                token_uri="https://oauth2.googleapis.com/token",
+                client_id=oauth_client_id,
+                client_secret=oauth_client_secret,
+                scopes=scopes,
+            )
+        elif credentials_source:
             credentials_json = decode_possible_base64(credentials_source)
             info = json.loads(credentials_json)
             credentials = service_account.Credentials.from_service_account_info(info, scopes=scopes)
@@ -1341,13 +1416,18 @@ def clamp(value: float, low: float, high: float) -> float:
 
 
 def has_gsc_credentials() -> bool:
-    return bool(os.environ.get("GSC_SERVICE_ACCOUNT_JSON") or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON"))
+    has_oauth = bool(
+        os.environ.get("GSC_OAUTH_REFRESH_TOKEN")
+        and os.environ.get("GSC_OAUTH_CLIENT_ID")
+        and os.environ.get("GSC_OAUTH_CLIENT_SECRET")
+    )
+    return has_oauth or bool(os.environ.get("GSC_SERVICE_ACCOUNT_JSON") or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON"))
 
 
 def gsc_skip_reason() -> str:
     if has_gsc_credentials():
         return "credentials detected; live API pull enabled"
-    return "skipped; GSC_SERVICE_ACCOUNT_JSON or GOOGLE_APPLICATION_CREDENTIALS_JSON missing"
+    return "skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls"
 
 
 def run(mode: str, only: str | None) -> int:

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ title }} | SaaSpare</title>
 <meta name="description" content="{{ meta_description }}">
+<meta name="keywords" content="{{ meta_keywords | default('SaaS pricing, software comparison, free trial, alternatives, SaaSpare') }}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{{ canonical_url }}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -19,6 +20,9 @@
 <meta property="og:url" content="{{ canonical_url }}">
 <meta property="og:image" content="{{ site_domain | default('https://saaspare.org') }}/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SaaSpare">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ meta_description }}">
 <meta name="twitter:image" content="{{ site_domain | default('https://saaspare.org') }}/og-default.png">
 <meta name="Impact-Site-Verification" content="630c59bd-7d94-4608-bf4d-7c9258a43362">
 <meta name="Impact-Site-Verification" content="a1bb8518-4dc8-412a-80a9-fb1009113071">

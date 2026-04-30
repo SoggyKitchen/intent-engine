@@ -3,45 +3,45 @@
     "content": 12.7,
     "conversionRevenue": 3,
     "internalLinking": 8.15,
-    "overall": 61.84,
+    "overall": 67.34,
     "path": "/about",
     "performanceUx": 5,
-    "schemaIndexability": 3,
+    "schemaIndexability": 6,
     "technical": 20,
-    "trust": 10.0
+    "trust": 12.5
   },
   {
     "content": 11.03,
     "conversionRevenue": 1,
     "internalLinking": 8.6,
-    "overall": 66.12,
+    "overall": 71.62,
     "path": "/affiliate-disclosure",
     "performanceUx": 5,
-    "schemaIndexability": 3,
+    "schemaIndexability": 6,
     "technical": 20,
-    "trust": 17.5
+    "trust": 20.0
   },
   {
     "content": 10.71,
     "conversionRevenue": 4,
     "internalLinking": 7.7,
-    "overall": 55.42,
+    "overall": 60.92,
     "path": "/contact",
     "performanceUx": 5,
-    "schemaIndexability": 3,
+    "schemaIndexability": 6,
     "technical": 20,
-    "trust": 5.0
+    "trust": 7.5
   },
   {
     "content": 14.66,
     "conversionRevenue": 8,
     "internalLinking": 13.85,
-    "overall": 82.0,
+    "overall": 87.5,
     "path": "/deal-radar",
     "performanceUx": 5,
-    "schemaIndexability": 3,
+    "schemaIndexability": 6,
     "technical": 20,
-    "trust": 17.5
+    "trust": 20.0
   },
   {
     "content": 16.27,
@@ -58,45 +58,45 @@
     "content": 12.11,
     "conversionRevenue": 3,
     "internalLinking": 6.35,
-    "overall": 54.46,
+    "overall": 59.96,
     "path": "/media-kit",
     "performanceUx": 5,
-    "schemaIndexability": 3,
+    "schemaIndexability": 6,
     "technical": 20,
-    "trust": 5.0
+    "trust": 7.5
   },
   {
     "content": 11.32,
     "conversionRevenue": 1,
     "internalLinking": 8.6,
-    "overall": 66.43,
+    "overall": 71.93,
     "path": "/methodology",
     "performanceUx": 5,
-    "schemaIndexability": 3,
+    "schemaIndexability": 6,
     "technical": 20,
-    "trust": 17.5
+    "trust": 20.0
   },
   {
-    "content": 9.77,
+    "content": 12.77,
     "conversionRevenue": 5,
     "internalLinking": 7.25,
-    "overall": 55.02,
+    "overall": 63.52,
     "path": "/privacy",
     "performanceUx": 5,
-    "schemaIndexability": 3,
+    "schemaIndexability": 6,
     "technical": 20,
-    "trust": 5.0
+    "trust": 7.5
   },
   {
     "content": 14.25,
     "conversionRevenue": 10,
     "internalLinking": 8.15,
-    "overall": 68.4,
+    "overall": 70.9,
     "path": "/shortlist",
     "performanceUx": 5,
     "schemaIndexability": 6,
     "technical": 20,
-    "trust": 5.0
+    "trust": 7.5
   },
   {
     "content": 20,
@@ -344,265 +344,265 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-1password-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 93.0,
     "path": "/pages/7-best-adp-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-ahrefs-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-asana-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 93.0,
     "path": "/pages/7-best-aws-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-bamboohr-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
-    "content": 19.98,
+    "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.48,
+    "overall": 94.0,
     "path": "/pages/7-best-bigcommerce-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-clickup-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-crowdstrike-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-dashlane-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-datadog-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-freshbooks-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
-    "content": 19.98,
+    "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.47,
+    "overall": 94.0,
     "path": "/pages/7-best-getresponse-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-google-analytics-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-google-cloud-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-google-meet-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-heroku-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-hubspot-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-hubspot-crm-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-jira-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-lastpass-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-mailchimp-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -619,210 +619,210 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-monday-com-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-moz-pro-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-nordlayer-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-okta-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-perimeter-81-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-power-bi-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
-    "content": 19.73,
+    "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.23,
+    "overall": 94.0,
     "path": "/pages/7-best-quickbooks-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-salesforce-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-semrush-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-shopify-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-splunk-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-surfer-seo-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
-    "content": 19.93,
+    "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.43,
+    "overall": 94.0,
     "path": "/pages/7-best-tableau-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
-    "content": 19.73,
+    "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.23,
+    "overall": 94.0,
     "path": "/pages/7-best-woocommerce-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/7-best-workday-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
-  },
-  {
-    "content": 19.95,
-    "conversionRevenue": 10,
-    "internalLinking": 12,
-    "overall": 86.45,
-    "path": "/pages/7-best-xero-alternatives-in-2026-free-paid",
-    "performanceUx": 5,
-    "schemaIndexability": 10,
-    "technical": 17,
-    "trust": 12.5
-  },
-  {
-    "content": 19.91,
-    "conversionRevenue": 10,
-    "internalLinking": 12,
-    "overall": 86.41,
-    "path": "/pages/7-best-zoho-crm-alternatives-in-2026-free-paid",
-    "performanceUx": 5,
-    "schemaIndexability": 10,
-    "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
+    "path": "/pages/7-best-xero-alternatives-in-2026-free-paid",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 10,
+    "internalLinking": 12,
+    "overall": 94.0,
+    "path": "/pages/7-best-zoho-crm-alternatives-in-2026-free-paid",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 10,
+    "internalLinking": 12,
+    "overall": 94.0,
     "path": "/pages/7-best-zoom-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -1015,12 +1015,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/ahrefs-vs-frase-io-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 19.84,
@@ -1290,12 +1290,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/around-vs-riverside-fm-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -1400,12 +1400,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/asana-vs-monday-com-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -1653,12 +1653,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/bamboohr-vs-remote-com-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -1905,6 +1905,17 @@
   {
     "content": 20,
     "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 91.0,
+    "path": "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 16,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
     "internalLinking": 15,
     "overall": 98.0,
     "path": "/pages/best-devops-configuration-drift-detection-tools-in-2025",
@@ -1983,12 +1994,12 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 83.5,
+    "overall": 91.0,
     "path": "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -2268,13 +2279,13 @@
   {
     "content": 20,
     "conversionRevenue": 10,
-    "internalLinking": 12,
-    "overall": 86.5,
+    "internalLinking": 15,
+    "overall": 100,
     "path": "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 17,
-    "trust": 12.5
+    "technical": 20,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -2819,12 +2830,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/clearscope-vs-frase-io-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -3388,114 +3399,114 @@
     "trust": 20.0
   },
   {
-    "content": 19.84,
+    "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.34,
+    "overall": 94.0,
     "path": "/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 93.0,
     "path": "/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/copy-ai-vs-cohere-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/copy-ai-vs-hugging-face-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/copy-ai-vs-openai-api-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/copy-ai-vs-pinecone-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/copy-ai-vs-weaviate-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/copy-ai-vs-weights-biases-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/copy-ai-vs-writesonic-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -3875,12 +3886,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/deel-vs-remote-com-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 19.95,
@@ -4304,12 +4315,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 84.5,
+    "overall": 93.0,
     "path": "/pages/does-monday-com-have-a-free-plan-2026-full-breakdown",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 15,
-    "trust": 12.5
+    "technical": 16,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -4568,12 +4579,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -5030,12 +5041,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 93.0,
     "path": "/pages/google-meet-vs-riverside-fm-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -5129,12 +5140,12 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 83.5,
+    "overall": 92.0,
     "path": "/pages/greenhouse-vs-remote-com-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -5250,12 +5261,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/gusto-vs-remote-com-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -5635,12 +5646,12 @@
     "content": 17,
     "conversionRevenue": 6,
     "internalLinking": 15,
-    "overall": 80.0,
+    "overall": 88.0,
     "path": "/pages",
     "performanceUx": 5,
-    "schemaIndexability": 3,
+    "schemaIndexability": 6,
     "technical": 19,
-    "trust": 15.0
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -5778,12 +5789,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -6306,12 +6317,12 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 84.5,
+    "overall": 92.0,
     "path": "/pages/lever-vs-remote-com-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -6515,12 +6526,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/loom-vs-riverside-fm-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -6614,12 +6625,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/mangools-vs-frase-io-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -6724,12 +6735,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 93.0,
     "path": "/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -6864,15 +6875,15 @@
     "trust": 20.0
   },
   {
-    "content": 19.69,
+    "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.19,
+    "overall": 93.0,
     "path": "/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -6889,12 +6900,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 84.5,
+    "overall": 93.0,
     "path": "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 15,
-    "trust": 12.5
+    "technical": 16,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -6911,100 +6922,100 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 93.0,
     "path": "/pages/monday-com-review-2026-is-it-worth-it-honest-verdict",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/monday-com-vs-basecamp-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/monday-com-vs-clickup-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/monday-com-vs-jira-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/monday-com-vs-notion-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/monday-com-vs-smartsheet-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/monday-com-vs-todoist-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/monday-com-vs-trello-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/monday-com-vs-wrike-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -7065,12 +7076,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/moz-pro-vs-frase-io-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -8517,23 +8528,23 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 83.5,
+    "overall": 92.0,
     "path": "/pages/remote-com-vs-culture-amp-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 83.5,
+    "overall": 92.0,
     "path": "/pages/remote-com-vs-lattice-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -8781,12 +8792,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/rippling-vs-remote-com-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -8803,23 +8814,23 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 88.0,
+    "overall": 94.0,
     "path": "/pages/riverside-fm-vs-descript-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 15.0
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 93.0,
     "path": "/pages/riverside-fm-vs-streamyard-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -9056,12 +9067,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/se-ranking-vs-frase-io-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -9166,12 +9177,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/semrush-vs-frase-io-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -9518,12 +9529,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/spyfu-vs-frase-io-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -9727,12 +9738,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.5,
+    "overall": 94.0,
     "path": "/pages/surfer-seo-vs-frase-io-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -10178,12 +10189,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/webex-vs-riverside-fm-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -10244,12 +10255,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/whereby-vs-riverside-fm-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -10442,12 +10453,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/workable-vs-remote-com-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -10871,12 +10882,12 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 85.5,
+    "overall": 94.0,
     "path": "/pages/zoom-vs-riverside-fm-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 12.5
+    "technical": 17,
+    "trust": 20.0
   },
   {
     "content": 20,

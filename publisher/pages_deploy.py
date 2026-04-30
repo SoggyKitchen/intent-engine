@@ -432,6 +432,10 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
     )
     seo_title = escape(seo["title"], quote=False)
     seo_meta = escape(seo["meta_description"], quote=True)
+    seo_keywords = escape(
+        "SaaS comparisons, SaaS pricing, software reviews, free trials, promo codes, alternatives, SaaSpare",
+        quote=True,
+    )
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -439,6 +443,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{seo_title}</title>
 <meta name="description" content="{seo_meta}">
+<meta name="keywords" content="{seo_keywords}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{domain}/pages/">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
@@ -446,6 +451,12 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <meta property="og:description" content="{seo_meta}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{domain}/pages/">
+<meta property="og:image" content="{domain}/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SaaSpare">
+<meta name="twitter:title" content="{escape(seo['title'], quote=True)}">
+<meta name="twitter:description" content="{seo_meta}">
+<meta name="twitter:image" content="{domain}/og-default.png">
 <style>
   :root{{--bg:#080810;--bg-soft:#11131a;--border:rgba(255,255,255,.08);--text:rgba(255,255,255,.84);--muted:rgba(255,255,255,.46);--accent:#e94560}}
   *{{box-sizing:border-box;margin:0;padding:0}}
