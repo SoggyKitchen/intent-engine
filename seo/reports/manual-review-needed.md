@@ -3,7 +3,6 @@
 These are not safe to fake or mass rewrite.
 
 - `/deal-radar`: thin_buyer_page
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts`: thin_buyer_page
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
 - `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page

@@ -22,7 +22,6 @@
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: 721 words, score 97.46
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay`: 722 words, score 97.01
 - `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay`: 747 words, score 98.14
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts`: 797 words, score 92.98
 - `/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay`: 764 words, score 98.67
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts`: 748 words, score 98.74
 - `/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay`: 762 words, score 97.21

@@ -1,12 +1,12 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-04-30T12:37:06+00:00
+Generated: 2026-04-30T13:13:10+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **98.5/100**
+- Overall SaaSpare Health Score: **98.47/100**
 - Level: **Elite SEO/revenue engine**
-- Technical SEO: 19.49/20
+- Technical SEO: 19.47/20
 - Content usefulness: 19.92/20
 - Trust/E-E-A-T: 19.92/20
 - Internal linking: 14.59/15
@@ -41,34 +41,34 @@ Mode: `audit`
 
 ## Top 25 Highest-Impact Fixes
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
+- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
+- `/pages` (80.0/100): title_length_outside_target
 - `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/best-saas-analytics-tools-for-business-in-2025` (92.0/100): broken_internal_link
-- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages` (82.0/100): title_length_outside_target
 - `/pages/lever-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (92.98/100): broken_internal_link, thin_buyer_page, title_length_outside_target
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (92.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
 - `/pages/7-best-adp-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, meta_length_outside_target
 - `/pages/7-best-aws-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, meta_length_outside_target
+- `/pages/around-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/asana-vs-monday-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/copy-ai-vs-hugging-face-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/copy-ai-vs-weights-biases-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/google-meet-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/loom-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/riverside-fm-vs-streamyard-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/7-best-1password-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-ahrefs-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-asana-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-bamboohr-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-bigcommerce-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 
 ## Top 25 Revenue Opportunities
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.98): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 94.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 93.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 93.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 98.74): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 98.97): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.0): CTA=True, affiliateLinks=2, disclosure=True

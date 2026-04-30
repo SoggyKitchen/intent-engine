@@ -27,7 +27,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#080810;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(900px 520px at 50% -8%,rgba(65,18,29,.68),transparent 62%),radial-gradient(720px 420px at 50% 22%,rgba(233,69,96,.055),transparent 70%),#080810;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 #particles-canvas{display:none}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
@@ -35,6 +35,7 @@ a{text-decoration:none;color:inherit}
 @keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.9;transform:scale(1.08)}}
 @keyframes glow2{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:.45;transform:scale(1.15)}}
 @keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroStageIn{0%{opacity:0;transform:scale(.985);filter:blur(10px)}100%{opacity:1;transform:scale(1);filter:blur(0)}}
 @keyframes pulse{0%,100%{box-shadow:0 0 6px #e94560,0 0 0 0 rgba(233,69,96,.5)}50%{box-shadow:0 0 18px #e94560,0 0 0 10px rgba(233,69,96,0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
@@ -50,10 +51,10 @@ nav.scrolled{background:transparent;border-bottom:0;box-shadow:none;backdrop-fil
 .nav-link:hover{color:#fff}
 .nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 100% 70% at 50% -5%,#1a0d12 0%,#0d0008 40%,#080810 75%);padding:9rem 2rem 6.5rem;text-align:center;z-index:1}
-.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.09) 1px,transparent 0);background-size:34px 34px;mask-image:radial-gradient(ellipse at 50% 22%,#000 0%,rgba(0,0,0,.58) 42%,transparent 78%);animation:heroDotDrift 26s linear infinite;opacity:.16}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 0%,rgba(233,69,96,.035) 42%,transparent 72%);opacity:.8}
-@keyframes heroDotDrift{from{background-position:0 0}to{background-position:34px 34px}}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 100% 70% at 50% -5%,#1a0d12 0%,#0d0008 42%,#080810 78%);padding:9rem 2rem 6.5rem;text-align:center;z-index:1;animation:heroStageIn .8s cubic-bezier(.2,.7,.2,1) both}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px),radial-gradient(circle at 1px 1px,rgba(255,255,255,.18) 1px,transparent 0);background-size:58px 58px,58px 58px,29px 29px;mask-image:radial-gradient(ellipse at 50% 24%,#000 0%,rgba(0,0,0,.78) 42%,transparent 82%);animation:heroDotDrift 34s linear infinite;opacity:.32}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px 260px at 50% 25%,rgba(233,69,96,.14),transparent 70%),linear-gradient(180deg,transparent 0%,rgba(233,69,96,.035) 42%,transparent 72%);opacity:.9}
+@keyframes heroDotDrift{from{background-position:0 0,0 0,0 0}to{background-position:58px 58px,58px 58px,29px 29px}}
 .orb{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px)}
 .orb1{width:700px;height:700px;background:radial-gradient(circle,rgba(233,69,96,.18) 0%,transparent 65%);top:-280px;left:50%;transform:translateX(-50%);animation:glow 9s ease-in-out infinite}
 .orb2{width:380px;height:380px;background:radial-gradient(circle,rgba(180,40,60,.12) 0%,transparent 70%);top:60px;right:-140px;animation:glow2 11s ease-in-out infinite 2s}
@@ -502,5 +503,6 @@ function filterComps(q){const lq=q.toLowerCase();document.querySelectorAll('#com
 function doHeroSearch(){const q=document.getElementById('hero-search').value.trim();window.location.href=q?`/pages/?q=${encodeURIComponent(q)}`:'/pages/'}
 </script>
 <script defer src="/assets/saaspare-ui.js"></script>
+<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 </body>
 </html>

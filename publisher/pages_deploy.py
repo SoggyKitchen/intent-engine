@@ -143,6 +143,12 @@ def _enhance_site_html(site_dir: Path = SITE_DIR) -> int:
             '<script defer src="/assets/saaspare-ui.js"></script>\n',
             "</body>",
         )
+        html = _inject_once(
+            html,
+            "anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js",
+            '<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>\n',
+            "</body>",
+        )
         if html != original:
             path.write_text(html, encoding="utf-8")
             changed += 1

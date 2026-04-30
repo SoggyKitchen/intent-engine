@@ -7,7 +7,6 @@
 - Duplicate title: `Datadog Promo Codes & Discounts for 2026: Save on Software | SaaSpare` -> /pages/datadog-coupon-code-promo-codes-2026-verified-discounts, /pages/datadog-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate title: `Deel Promo Codes & Discounts for 2026: Save on Software | SaaSpare` -> /pages/deel-coupon-code-promo-codes-2026-verified-discounts, /pages/deel-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate title: `HubSpot Promo Codes & Discounts for 2026: Save on Software | SaaSpare` -> /pages/hubspot-coupon-code-promo-codes-2026-verified-discounts, /pages/hubspot-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate title: `Monday.com Promo Codes & Discounts for 2026: Save on Software | SaaSpare` -> /pages/monday-com-coupon-code-promo-codes-2026-verified-discounts, /pages/monday-com-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate title: `Notion Promo Codes & Discounts for 2026: Save on Software | SaaSpare` -> /pages/notion-coupon-code-promo-codes-2026-verified-discounts, /pages/notion-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate title: `Pipedrive Promo Codes & Discounts for 2026: Save on Software | SaaSpare` -> /pages/pipedrive-coupon-code-promo-codes-2026-verified-discounts, /pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate title: `Rippling Promo Codes & Discounts for 2026: Save on Software | SaaSpare` -> /pages/rippling-coupon-code-promo-codes-2026-verified-discounts, /pages/rippling-promo-code-2026-discounts-deals-that-actually-work

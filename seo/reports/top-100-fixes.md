@@ -1,24 +1,45 @@
 # Top 100 Fixes
 
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
+- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
+- `/pages` (80.0/100): title_length_outside_target
 - `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/best-saas-analytics-tools-for-business-in-2025` (92.0/100): broken_internal_link
-- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages` (82.0/100): title_length_outside_target
 - `/pages/lever-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (92.98/100): broken_internal_link, thin_buyer_page, title_length_outside_target
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (92.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
 - `/pages/7-best-adp-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, meta_length_outside_target
 - `/pages/7-best-aws-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, meta_length_outside_target
+- `/pages/around-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/asana-vs-monday-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/copy-ai-vs-hugging-face-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/copy-ai-vs-weights-biases-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/google-meet-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/loom-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-vs-basecamp-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-vs-clickup-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-vs-jira-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-vs-notion-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-vs-smartsheet-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-vs-todoist-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-vs-trello-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-vs-wrike-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/rippling-vs-remote-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/riverside-fm-vs-descript-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/riverside-fm-vs-streamyard-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/webex-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/whereby-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/workable-vs-remote-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/zoom-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
 - `/pages/7-best-1password-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 - `/pages/7-best-ahrefs-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 - `/pages/7-best-asana-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
@@ -61,42 +82,21 @@
 - `/pages/7-best-zoho-crm-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 - `/pages/7-best-zoom-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 - `/pages/ahrefs-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/around-vs-riverside-fm-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/asana-vs-monday-com-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/clearscope-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (94.0/100): broken_internal_link
 - `/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay` (94.0/100): broken_internal_link
 - `/pages/copy-ai-vs-cohere-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/copy-ai-vs-hugging-face-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/copy-ai-vs-openai-api-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/copy-ai-vs-pinecone-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/copy-ai-vs-weaviate-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/copy-ai-vs-weights-biases-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/copy-ai-vs-writesonic-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/deel-vs-remote-com-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/gusto-vs-remote-com-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/loom-vs-riverside-fm-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/mangools-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/monday-com-vs-basecamp-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/monday-com-vs-clickup-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/monday-com-vs-jira-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/monday-com-vs-notion-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/monday-com-vs-smartsheet-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/monday-com-vs-todoist-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/monday-com-vs-trello-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/monday-com-vs-wrike-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/moz-pro-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/rippling-vs-remote-com-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/riverside-fm-vs-descript-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/se-ranking-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/semrush-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/spyfu-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/pages/surfer-seo-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/webex-vs-riverside-fm-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/whereby-vs-riverside-fm-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/workable-vs-remote-com-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/zoom-vs-riverside-fm-which-is-better-in-2026` (94.0/100): broken_internal_link
 - `/deal-radar` (87.5/100): thin_buyer_page
