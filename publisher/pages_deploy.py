@@ -281,7 +281,7 @@ def _rebuild_homepage(site_dir: Path):
         )
     newsletter_form_action = get(
         "NEWSLETTER_FORM_ACTION",
-        "https://formsubmit.co/smithelly30121@gmail.com",
+        "https://formsubmit.co/hello@saaspare.org",
     )
     html = re.sub(
         r'action="https://formsubmit\.co/[^"]+"',

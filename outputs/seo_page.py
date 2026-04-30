@@ -228,7 +228,7 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
     data["ga_id"] = get("GA_MEASUREMENT_ID", "")
     data["newsletter_form_action"] = get(
         "NEWSLETTER_FORM_ACTION",
-        "https://formsubmit.co/smithelly30121@gmail.com",
+        "https://formsubmit.co/hello@saaspare.org",
     )
 
     tmpl = _JINJA_ENV.get_template("comparison_page.html.j2")
