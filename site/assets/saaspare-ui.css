@@ -40,10 +40,11 @@ body > nav.ss-nav-normalized{
   scrollbar-width:none;
 }
 body > nav.ss-nav-scrolled{
-  background:linear-gradient(180deg,rgba(var(--ss-bg-rgb),.48),rgba(var(--ss-bg-rgb),0)) !important;
+  background:transparent !important;
   border-bottom:0 !important;
   box-shadow:none !important;
-  backdrop-filter:blur(8px) saturate(1.05);
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
 }
 body > nav::-webkit-scrollbar{display:none}
 body > nav a.nav-link{
@@ -169,14 +170,11 @@ h1:not(.hero-title){
 h1:not(.hero-title) em,
 h1:not(.hero-title) span.grad-text,
 .section-heading .grad-text{
-  background:linear-gradient(135deg,#e94560 0%,#ff7890 34%,#f4a0ad 52%,#c73652 76%,#e94560 100%);
-  background-size:220% auto;
+  background:linear-gradient(135deg,#ff7890 0%,#e94560 52%,#c73652 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
-  animation:ssShimmer 4.8s linear infinite;
 }
-@keyframes ssShimmer{0%{background-position:200% center}100%{background-position:-200% center}}
 .stat-grid,
 .info-grid,
 .cat-grid,
