@@ -30,7 +30,8 @@ a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
 body::after{content:'';position:fixed;inset:-200%;width:400%;height:400%;pointer-events:none;z-index:9999;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain .5s steps(1) infinite}
-@keyframes grain{0%,100%{transform:translate(0,0)}10%{transform:translate(-5%,-5%)}20%{transform:translate(-10%,5%)}30%{transform:translate(5%,-10%)}40%{transform:translate(-5%,15%)}50%{transform:translate(-10%,5%)}60%{transform:translate(15%,0)}70%{transform:translate(0,10%)}80%{transform:translate(-15%,0)}90%{transform:translate(10%,5%)}}
+body::after{display:none}
+@keyframes grain{display:none}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease}
 nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
@@ -53,7 +54,7 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .page-hero{position:relative;overflow:hidden;padding:8.5rem 2rem 5.5rem;text-align:center;z-index:1}
 .page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 90% 60% at 50% -5%,rgba(90,16,28,.95) 0%,transparent 58%),radial-gradient(ellipse 55% 40% at 50% 35%,rgba(233,69,96,.055) 0%,transparent 70%),var(--bg)}
 .page-hero-grid{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
-.page-hero-grid canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.22;mask-image:linear-gradient(to bottom,black 20%,rgba(0,0,0,.4) 50%,transparent 70%);-webkit-mask-image:linear-gradient(to bottom,black 20%,rgba(0,0,0,.4) 50%,transparent 70%)}
+.page-hero-grid canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.22}
 .page-hero-orb{position:absolute;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.13) 0%,transparent 65%);top:-300px;left:50%;transform:translateX(-50%);pointer-events:none;filter:blur(65px)}
 .page-hero-rings{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);pointer-events:none;width:1px;height:1px}
 .page-hero-ring{position:absolute;border-radius:50%;border:1px solid rgba(233,69,96,.12);transform:translate(-50%,-50%);animation:ringExpand 5s ease-out infinite}
@@ -64,7 +65,20 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .page-hero-content{position:relative;z-index:1;max-width:640px;margin:0 auto}
 .page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.24);color:rgba(255,185,200,.9);padding:5px 14px;border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.5rem;animation:up .6s ease both}
 .page-hero h1{font-size:clamp(2.1rem,5.5vw,3.5rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.12;margin-bottom:1rem;animation:up .7s .1s ease both;text-wrap:balance}
-.page-hero h1 em{color:var(--red);font-style:normal}
+.page-hero h1 em{
+  background:linear-gradient(110deg,#ff8fa3 0%,var(--red) 30%,#ff6080 50%,var(--red2) 70%,#ff8fa3 100%);
+  background-size:200% auto;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  font-style:normal;
+  animation:textGlint 4s linear infinite;
+}
+
+@keyframes textGlint{
+  0%{background-position:200% center}
+  100%{background-position:-200% center}
+}
 .page-sub{color:var(--muted);font-size:.98rem;line-height:1.8;animation:up .7s .2s ease both;text-wrap:pretty}
 /* floating cards */
 @keyframes cardFloat{
