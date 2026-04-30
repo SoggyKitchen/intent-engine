@@ -19,7 +19,7 @@ Pages scanned: 996
 - `/affiliate-disclosure`: 71.62/100, issues=none
 - `/methodology`: 71.93/100, issues=none
 - `/pages/saas-roi-calculator`: 74.43/100, issues=none
-- `/`: 77.59/100, issues=none
+- `/`: 77.61/100, issues=none
 - `/pages`: 82.0/100, issues=none
 - `/deal-radar`: 87.5/100, issues=none
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025`: 90.0/100, issues=broken_internal_link

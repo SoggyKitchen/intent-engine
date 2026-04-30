@@ -38,37 +38,15 @@
     cta.textContent = "Build Shortlist ->";
     cta.className = "nav-cta";
     nav.appendChild(cta);
-    const theme = document.createElement("button");
-    theme.type = "button";
-    theme.className = "ss-theme-toggle";
-    theme.setAttribute("aria-label", "Toggle light and dark mode");
-    theme.textContent = document.documentElement.dataset.theme === "light" ? "☾" : "◐";
-    nav.appendChild(theme);
   }
   function track(name, params){ if(window.gtag) window.gtag("event", name, params || {}); }
-  function enhanceTheme(){
-    const saved = localStorage.getItem("ss_theme");
-    if(saved) document.documentElement.dataset.theme = saved;
+  function enhanceHeader(){
+    document.documentElement.removeAttribute("data-theme");
+    localStorage.removeItem("ss_theme");
     const nav = document.querySelector("nav");
     const onScroll = ()=>nav && nav.classList.toggle("ss-nav-scrolled", window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive:true });
-    document.querySelectorAll(".ss-theme-toggle").forEach((button)=>{
-      button.textContent = document.documentElement.dataset.theme === "light" ? "☾" : "◐";
-      button.addEventListener("click",(event)=>{
-        const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
-        document.documentElement.dataset.theme = next;
-        localStorage.setItem("ss_theme", next);
-        button.textContent = next === "light" ? "☾" : "◐";
-        const flash = document.createElement("span");
-        flash.className = "ss-theme-flash";
-        flash.style.setProperty("--ss-theme-x", `${event.clientX || window.innerWidth - 60}px`);
-        flash.style.setProperty("--ss-theme-y", `${event.clientY || 40}px`);
-        document.body.appendChild(flash);
-        setTimeout(()=>flash.remove(), 700);
-        track("theme_toggle", { theme: next, page_slug: location.pathname });
-      });
-    });
   }
   function enhanceDecisionTrail(){
     const escapeHtml = (value)=>String(value).replace(/[&<>"']/g,(char)=>({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[char]));
@@ -171,8 +149,8 @@
     });
   }
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();normalizeNavLinks();enhanceTheme();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();});
+    document.addEventListener("DOMContentLoaded",()=>{upgradeLogo();normalizeNavLinks();enhanceHeader();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();});
   }else{
-    upgradeLogo();normalizeNavLinks();enhanceTheme();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();
+    upgradeLogo();normalizeNavLinks();enhanceHeader();enhanceDecisionTrail();addClickNudges();adblockPrompt();enhanceLeadForms();
   }
 })();
