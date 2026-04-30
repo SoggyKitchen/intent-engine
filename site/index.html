@@ -371,6 +371,7 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
 </head>
 <body>
 
@@ -408,7 +409,7 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1}
     <div class="vf vf-4"><span class="vf-dot green"></span><span class="vf-label">Linear</span>&nbsp;→&nbsp;Best dev UX, hands down</div>
   </div>
 
-  <div class="badge"><span class="badge-dot"></span><span id="live-count">986</span> comparisons live</div>
+  <div class="badge"><span class="badge-dot"></span>987 comparisons live</div>
 
   <h1 class="hero-title">
     The honest guide to<br>
@@ -811,7 +812,7 @@ setTimeout(type,800);
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
-  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||986;
+  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||987;
   ['live-count','stat-pages'].forEach(id=>{const el=document.getElementById(id);if(el){el.dataset.count=n;el.textContent=n.toLocaleString()+(id==='stat-pages'?'+':'')}});
 }).catch(()=>{});
 
@@ -902,5 +903,6 @@ window.addEventListener('scroll',()=>{
 
 </script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
+<script defer src="/assets/saaspare-ui.js"></script>
 </body>
 </html>
