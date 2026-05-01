@@ -1,7 +1,7 @@
 # Top 100 Fixes
 
 - `/deal-radar` (87.0/100): thin_buyer_page
-- `/pages` (88.0/100): title_length_outside_target
+- `/pages` (90.0/100): title_length_outside_target
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (96.0/100): meta_length_outside_target, title_length_outside_target
 - `/pages/best-agentic-development-tools-for-engineering-teams-in-2025` (97.0/100): title_length_outside_target
 - `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions` (97.0/100): title_length_outside_target
@@ -13,6 +13,7 @@
 - `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025` (97.0/100): title_length_outside_target
 - `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025` (97.0/100): title_length_outside_target
 - `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (97.0/100): meta_length_outside_target
+- `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026` (97.0/100): title_length_outside_target
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (97.11/100): thin_buyer_page
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay` (97.3/100): thin_buyer_page
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (97.46/100): thin_buyer_page, title_length_outside_target

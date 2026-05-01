@@ -1,13 +1,56 @@
 # Affiliate Import Report
 
+- **123 Reg**
+  - Default: https://www.kqzyfj.com/click-101733230-10465385
+- **Abelssoft Int**
+  - Default: https://www.dpbolvw.net/click-101733230-15402321
+- **Adblockultimate.net**
+  - Default: https://www.kqzyfj.com/click-101733230-17094336
+  - Coupon: https://www.tkqlhce.com/click-101733230-17162086 (SPECIAL20)
 - **AOMEI**
   - Default: https://www.kqzyfj.com/click-101733230-17191598
-  - Coupon: https://www.aomeitech.com/landing/24hour-flash-sale.html/ (AMAD30)
+  - Coupon: https://www.aomeitech.com/landing/aomei-store.html?select=lfe&discode=24H25OFF&disnum=25 (AMAD30)
+- **Bluetti Global**
+  - Default: https://www.anrdoezrs.net/click-101733230-17258105
+  - Coupon: https://www.kqzyfj.com/click-101733230-17258122 (AFFELITE300)
 - **Contabo**
-  - Default: https://www.tkqlhce.com/click-101733230-14573803
+  - Default: https://www.dpbolvw.net/click-101733230-14573803
+- **ESET North America**
+  - Default: https://www.dpbolvw.net/click-101733230-12520843
+- **Gandi**
+  - Default: https://www.kqzyfj.com/click-101733230-17236097
 - **GetResponse**
   - Default: https://www.getresponse.com/?a=-CJ&affpath=directbuy
+- **Hostpapa**
+  - Default: https://www.jdoqocy.com/click-101733230-10513988
+- **Intego Antivirus Security**
+  - Default: https://www.jdoqocy.com/click-101733230-15733644
+- **Mr Key Shop**
+  - Default: https://www.tkqlhce.com/click-101733230-15054954
+- **NCH Software**
+  - Default: https://www.anrdoezrs.net/click-101733230-12501052
+- **Netart Australia**
+  - Default: https://www.anrdoezrs.net/click-101733230-15900340
+  - Coupon: https://www.tkqlhce.com/click-101733230-17095481 (cm47-7749-3897)
+- **Netart Europe**
+  - Default: https://www.jdoqocy.com/click-101733230-15905038
+  - Coupon: https://www.kqzyfj.com/click-101733230-17095732 (cm47-7749-3897)
+- **Netart US/CA**
+  - Default: https://www.tkqlhce.com/click-101733230-15853311
+  - Coupon: https://www.dpbolvw.net/click-101733230-15862220 (cm47-7749-3897)
+- **NordPass**
+  - Default: https://www.tkqlhce.com/click-101733230-15663831
+- **NordVPN**
+  - Default: https://www.kqzyfj.com/click-101733230-15646770
+- **O&O Software**
+  - Default: https://www.tkqlhce.com/click-101733230-11999729
+- **Panda Office**
+  - Default: https://www.kqzyfj.com/click-101733230-17174485
+- **Paragon Software Group**
+  - Default: https://www.anrdoezrs.net/click-101733230-13984368
 - **Sucuri**
-  - Default: https://www.jdoqocy.com/click-101733230-13942202
+  - Default: https://www.anrdoezrs.net/click-101733230-13942202
+- **Surfshark**
+  - Default: https://www.jdoqocy.com/click-101733230-15438544
 - **Turbify**
-  - Default: https://www.tkqlhce.com/click-101733230-17008695
+  - Default: https://www.kqzyfj.com/click-101733230-17052851

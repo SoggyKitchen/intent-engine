@@ -8,7 +8,7 @@ No items.
 ## Warning Counts
 - meta_length_outside_target: 18
 - thin_buyer_page: 42
-- title_length_outside_target: 37
+- title_length_outside_target: 38
 
 ## Lowest Scoring Pages
 - `/media-kit`: 59.96/100, issues=none
@@ -16,12 +16,12 @@ No items.
 - `/privacy`: 63.25/100, issues=none
 - `/affiliate-disclosure`: 71.62/100, issues=none
 - `/shortlist`: 73.28/100, issues=none
-- `/pages/saas-roi-calculator`: 74.43/100, issues=none
+- `/pages/saas-roi-calculator`: 74.5/100, issues=none
 - `/about`: 77.19/100, issues=none
 - `/`: 80.33/100, issues=none
 - `/methodology`: 82.25/100, issues=none
 - `/deal-radar`: 87.0/100, issues=none
-- `/pages`: 88.0/100, issues=none
+- `/pages`: 90.0/100, issues=none
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025`: 96.0/100, issues=none
 - `/pages/best-agentic-development-tools-for-engineering-teams-in-2025`: 97.0/100, issues=none
 - `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions`: 97.0/100, issues=none
@@ -33,6 +33,7 @@ No items.
 - `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025`: 97.0/100, issues=none
 - `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025`: 97.0/100, issues=none
 - `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked`: 97.0/100, issues=none
+- `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026`: 97.0/100, issues=none
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: 97.11/100, issues=none
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay`: 97.3/100, issues=none
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: 97.46/100, issues=none
@@ -60,4 +61,3 @@ No items.
 - `/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025`: 98.0/100, issues=none
 - `/pages/best-devops-configuration-drift-detection-tools-in-2025`: 98.0/100, issues=none
 - `/pages/best-devtools-for-developer-workflow-automation-in-2025`: 98.0/100, issues=none
-- `/pages/best-finance-ops-software-for-small-business-in-2026-ranked`: 98.0/100, issues=none

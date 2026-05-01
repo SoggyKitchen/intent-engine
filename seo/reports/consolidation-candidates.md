@@ -5,7 +5,7 @@
 - Duplicate title: `Best Asana Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-asana-alternatives-in-2026-free-paid, /pages/best-asana-alternatives-in-2026-free-paid
 - Duplicate title: `Best ClickUp Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-clickup-alternatives-in-2026-free-paid, /pages/best-clickup-alternatives-in-2026-free-paid
 - Duplicate title: `Best Datadog Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-datadog-alternatives-in-2026-free-paid, /pages/best-datadog-alternatives-in-2026-free-paid
-- Duplicate title: `Best Freshbooks Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-freshbooks-alternatives-in-2026-free-paid, /pages/best-freshbooks-alternatives-in-2026-free-paid
+- Duplicate title: `Best FreshBooks Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-freshbooks-alternatives-in-2026-free-paid, /pages/best-freshbooks-alternatives-in-2026-free-paid
 - Duplicate title: `Best HubSpot Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-hubspot-alternatives-in-2026-free-paid, /pages/best-hubspot-alternatives-in-2026-free-paid
 - Duplicate title: `Best Monday.com Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-monday-com-alternatives-in-2026-free-paid, /pages/best-monday-com-alternatives-in-2026-free-paid
 - Duplicate title: `Best Moz Pro Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-moz-pro-alternatives-in-2026-free-paid, /pages/best-moz-pro-alternatives-in-2026-free-paid
@@ -34,7 +34,7 @@
 - Duplicate meta: `Find the best Asana alternatives in 2026. We compare pricing and free plans to find the ri` -> /pages/7-best-asana-alternatives-in-2026-free-paid, /pages/best-asana-alternatives-in-2026-free-paid
 - Duplicate meta: `Find the best ClickUp alternatives in 2026. We compare pricing and free plans to find the ` -> /pages/7-best-clickup-alternatives-in-2026-free-paid, /pages/best-clickup-alternatives-in-2026-free-paid
 - Duplicate meta: `Find the best Datadog alternatives in 2026. We compare pricing and free plans to find the ` -> /pages/7-best-datadog-alternatives-in-2026-free-paid, /pages/best-datadog-alternatives-in-2026-free-paid
-- Duplicate meta: `Find the best Freshbooks alternatives in 2026. We compare pricing and free plans to find t` -> /pages/7-best-freshbooks-alternatives-in-2026-free-paid, /pages/best-freshbooks-alternatives-in-2026-free-paid
+- Duplicate meta: `Find the best FreshBooks alternatives in 2026. We compare pricing and free plans to find t` -> /pages/7-best-freshbooks-alternatives-in-2026-free-paid, /pages/best-freshbooks-alternatives-in-2026-free-paid
 - Duplicate meta: `Find the best HubSpot alternatives in 2026. We compare pricing and free plans to find the ` -> /pages/7-best-hubspot-alternatives-in-2026-free-paid, /pages/best-hubspot-alternatives-in-2026-free-paid
 - Duplicate meta: `Find the best Monday.com alternatives in 2026. We compare pricing and free plans to find t` -> /pages/7-best-monday-com-alternatives-in-2026-free-paid, /pages/best-monday-com-alternatives-in-2026-free-paid
 - Duplicate meta: `Find the best Moz Pro alternatives in 2026. We compare pricing and free plans to find the ` -> /pages/7-best-moz-pro-alternatives-in-2026-free-paid, /pages/best-moz-pro-alternatives-in-2026-free-paid

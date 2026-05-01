@@ -1,17 +1,17 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-05-01T13:01:32+00:00
+Generated: 2026-05-01T13:22:10+00:00
 Mode: `apply-safe`
 
 ## Current Score
 - Overall SaaSpare Health Score: **99.28/100**
 - Level: **Elite SEO/revenue engine**
-- Technical SEO: 19.95/20
+- Technical SEO: 19.94/20
 - Content usefulness: 19.93/20
 - Trust/E-E-A-T: 19.93/20
 - Internal linking: 14.9/15
 - Schema/indexability: 9.96/10
-- Conversion/revenue: 9.62/10
+- Conversion/revenue: 9.63/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
@@ -19,7 +19,7 @@ Mode: `apply-safe`
 - Healthy pages (85+): 991
 - Unhealthy pages (<55): 0
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 929
+- Safe fixes applied this run: 120
 - GSC: skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -41,7 +41,7 @@ Mode: `apply-safe`
 
 ## Top 25 Highest-Impact Fixes
 - `/deal-radar` (87.0/100): thin_buyer_page
-- `/pages` (88.0/100): title_length_outside_target
+- `/pages` (90.0/100): title_length_outside_target
 - `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (96.0/100): meta_length_outside_target, title_length_outside_target
 - `/pages/best-agentic-development-tools-for-engineering-teams-in-2025` (97.0/100): title_length_outside_target
 - `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions` (97.0/100): title_length_outside_target
@@ -53,6 +53,7 @@ Mode: `apply-safe`
 - `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025` (97.0/100): title_length_outside_target
 - `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025` (97.0/100): title_length_outside_target
 - `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (97.0/100): meta_length_outside_target
+- `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026` (97.0/100): title_length_outside_target
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (97.11/100): thin_buyer_page
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay` (97.3/100): thin_buyer_page
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (97.46/100): thin_buyer_page, title_length_outside_target
@@ -64,7 +65,6 @@ Mode: `apply-safe`
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
 - `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
 - `/pages/best-finance-ops-software-for-small-business-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/best-legal-compliance-software-for-startups-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
 
 ## Top 25 Revenue Opportunities
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.72): CTA=True, affiliateLinks=1, disclosure=True

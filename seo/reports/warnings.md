@@ -64,9 +64,10 @@
 - `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.46/100): thin_buyer_page, title_length_outside_target
 - `/pages/freshbooks-vs-xero-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages` (pricing, 88.0/100): title_length_outside_target
+- `/pages` (pricing, 90.0/100): title_length_outside_target
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page
 - `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.12/100): thin_buyer_page
+- `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.98/100): thin_buyer_page
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.0/100): title_length_outside_target
 - `/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.66/100): thin_buyer_page
