@@ -48,7 +48,7 @@ a{text-decoration:none;color:inherit}
 
 
 /* ── NAV ─────────────────────────────────────── */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease;background:transparent;border-bottom:none}
 nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
 .logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
@@ -67,7 +67,8 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 
 /* ── HERO ─────────────────────────────────────── */
-.hero{position:relative;overflow:hidden;padding:10.5rem 2rem 8rem;text-align:center;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.hero{position:relative;overflow:hidden;padding:10.5rem 2rem 8rem;text-align:center;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;animation:heroEnter 1.2s cubic-bezier(.34,1.56,.64,1) forwards}
+@keyframes heroEnter{0%{opacity:0}100%{opacity:1}}
 
 /* deep layered background */
 .hero-bg{position:absolute;inset:0;pointer-events:none;background:
@@ -112,7 +113,8 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 @keyframes shimmer{0%{background-position:0% center}100%{background-position:200% center}}
 
 /* live activity strip */
-.hero-activity{display:flex;align-items:center;gap:.7rem;justify-content:center;margin-bottom:1.6rem;animation:up .7s .15s ease both;position:relative;z-index:1}
+.hero-activity{display:flex;align-items:center;gap:.7rem;justify-content:center;margin-bottom:1.6rem;animation:slideUp .8s .3s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:1}
+@keyframes slideUp{0%{opacity:0;transform:translateY(20px) scale(.95)}100%{opacity:1;transform:translateY(0) scale(1)}}
 .activity-pill{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:.32rem .8rem;font-size:.68rem;color:var(--muted);font-weight:600}
 .activity-sep{color:var(--dim);font-size:.55rem}
 
@@ -132,18 +134,22 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .vf-4{animation:vfFloat 3.6s ease-in-out infinite 0.6s}
 @media(max-width:1000px){.verdict-floats{display:none}}
 
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.26);color:rgba(255,185,200,.9);padding:6px 16px;border-radius:100px;font-size:.72rem;font-weight:700;letter-spacing:.4px;margin-bottom:2.4rem;animation:up .6s ease both;position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.26);color:rgba(255,185,200,.9);padding:6px 16px;border-radius:100px;font-size:.72rem;font-weight:700;letter-spacing:.4px;margin-bottom:2.4rem;animation:badgeEnter .7s .2s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:1}
+@keyframes badgeEnter{from{opacity:0;transform:translateY(16px) scale(.92)}to{opacity:1;transform:translateY(0) scale(1)}}
 .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--red);box-shadow:0 0 8px var(--red);flex-shrink:0;animation:dotPulse 2s ease-in-out infinite}
 @keyframes dotPulse{0%,100%{box-shadow:0 0 4px var(--red)}50%{box-shadow:0 0 12px var(--red),0 0 0 4px rgba(233,69,96,.12)}}
 
-h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;line-height:1.1;letter-spacing:-.05em;margin-bottom:1.6rem;animation:up .7s .1s ease both;position:relative;z-index:2;text-wrap:balance}
+h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;line-height:1.1;letter-spacing:-.05em;margin-bottom:1.6rem;animation:titleEnter .9s .4s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:2;text-wrap:balance}
+@keyframes titleEnter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .grad-text{background:linear-gradient(135deg,#ff8fa3 0%,var(--red) 45%,var(--red2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding-bottom:.15em}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 #typewriter::after{content:'|';color:var(--red);animation:blink 1s ease infinite;margin-left:1px;-webkit-text-fill-color:var(--red)}
 
-.hero-sub{color:var(--muted);font-size:1.06rem;line-height:1.82;max-width:480px;margin:0 auto 3.2rem;animation:up .7s .2s ease both;position:relative;z-index:2;text-wrap:pretty}
+.hero-sub{color:var(--muted);font-size:1.06rem;line-height:1.82;max-width:480px;margin:0 auto 3.2rem;animation:subEnter .8s .5s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:2;text-wrap:pretty}
+@keyframes subEnter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 
-.search-wrap{animation:up .7s .3s ease both;max-width:560px;margin:0 auto;position:relative;z-index:2}
+.search-wrap{animation:searchEnter .85s .65s cubic-bezier(.34,1.56,.64,1) both;max-width:560px;margin:0 auto;position:relative;z-index:2}
+@keyframes searchEnter{from{opacity:0;transform:translateY(20px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
 .search-box{display:flex;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);border-radius:100px;padding:6px;gap:6px;box-shadow:0 20px 60px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.06);backdrop-filter:blur(20px);transition:border-color .3s,box-shadow .3s;animation:borderBreath 4s ease-in-out infinite}
 @keyframes borderBreath{0%,100%{border-color:rgba(255,255,255,.11)}50%{border-color:rgba(233,69,96,.3)}}
 .search-box:focus-within{border-color:rgba(233,69,96,.5);box-shadow:0 20px 60px rgba(0,0,0,.4),0 0 0 4px rgba(233,69,96,.1);animation:none}
@@ -152,12 +158,14 @@ h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;li
 .search-box button{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;border:none;padding:.8rem 1.9rem;border-radius:100px;cursor:pointer;font-weight:700;font-size:.84rem;font-family:inherit;box-shadow:0 4px 18px rgba(233,69,96,.45);white-space:nowrap;transition:transform .15s,box-shadow .15s}
 .search-box button:hover{transform:scale(1.04);box-shadow:0 6px 26px rgba(233,69,96,.65)}
 
-.popular{margin-top:1.4rem;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;position:relative;z-index:2}
+.popular{margin-top:1.4rem;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;position:relative;z-index:2;animation:popularEnter .8s .7s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes popularEnter{from{opacity:0}to{opacity:1}}
 .popular-label{font-size:.7rem;color:var(--dim);align-self:center}
 .pop-chip{background:rgba(255,255,255,.05);border:1px solid var(--border);color:rgba(255,255,255,.44);padding:4px 12px;border-radius:100px;font-size:.72rem;font-weight:500;transition:all .2s;cursor:pointer}
 .pop-chip:hover{background:rgba(233,69,96,.12);border-color:rgba(233,69,96,.36);color:rgba(255,185,200,.9)}
 
-.hero-paths{margin:1.6rem auto 0;max-width:700px;display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;animation:up .7s .5s ease both;position:relative;z-index:2}
+.hero-paths{margin:1.6rem auto 0;max-width:700px;display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;animation:pathsEnter .9s .85s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:2}
+@keyframes pathsEnter{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .hero-path{text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:16px;padding:.85rem .95rem;transition:all .22s;position:relative;overflow:hidden}
 .hero-path::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(233,69,96,.12),transparent 70%);opacity:0;transition:opacity .3s}
 .hero-path:hover{transform:translateY(-3px);border-color:rgba(233,69,96,.32)}
