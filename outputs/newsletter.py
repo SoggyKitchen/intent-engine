@@ -107,7 +107,7 @@ Return JSON:
   "intro": "<2-3 sentences warm intro>",
   "signal_summaries": ["<1-sentence insight per top signal, 3-5 total>"],
   "cta": "<closing line with link to best new page>",
-  "sponsor_slot": "<placeholder: [SPONSOR SLOT — $300 to reach {{}}} subscribers]>"
+  "sponsor_slot": "<placeholder: [SPONSOR SLOT — $300 to reach {{}} subscribers]>"
 }}
 """)
     if not result:
