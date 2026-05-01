@@ -96,12 +96,15 @@ def _infer_parts(url_path: str, product_name: str | None) -> tuple[str, str | No
     else:
         product = stem
         product = re.sub(r"-?which-is-better-in-20\d{2}$", "", product)
+        product = re.sub(r"^\d+-best-", "", product)
         product = re.sub(r"^best-", "", product)
         product = re.sub(r"-alternatives-in-20\d{2}.*$", "", product)
         product = re.sub(r"-pricing-20\d{2}.*$", "", product)
         product = re.sub(r"-free-trial-20\d{2}.*$", "", product)
         product = re.sub(r"-review-20\d{2}.*$", "", product)
         product = re.sub(r"-(promo-code|coupon-code|promo-codes|discounts).*20\d{2}.*$", "", product)
+        product = re.sub(r"^does-", "", product)
+        product = re.sub(r"-have-a-free-plan.*$", "", product)
         product = _title_case_slug(product)
 
     comparison = None
@@ -118,11 +121,13 @@ def _match_pattern(stem: str, pattern: str) -> bool:
     if "x-vs-y" in p:
         return "-vs-" in s and "which-is-better" in s
     if "best-x-alternatives" in p:
-        return s.startswith("best-") and "alternatives" in s
+        return ("best-" in s) and "alternatives" in s
     if "x-pricing" in p:
         return "pricing" in s or "cost" in s
     if "x-free-trial" in p:
-        return "free-trial" in s or "free-plan" in s or "free-tier" in s
+        return ("free-trial" in s or "free-tier" in s) and "free-plan" not in s
+    if "does-x-have-a-free-plan" in p:
+        return s.startswith("does-") and "free-plan" in s
     if "x-review" in p:
         return "review" in s
     if "x-promo-code" in p:

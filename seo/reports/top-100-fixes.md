@@ -1,102 +1,91 @@
 # Top 100 Fixes
 
-- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
-- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
-- `/pages` (80.0/100): title_length_outside_target
-- `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-business-in-2025` (92.0/100): broken_internal_link
-- `/pages/lever-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (92.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
-- `/pages/7-best-adp-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, meta_length_outside_target
-- `/pages/7-best-aws-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, meta_length_outside_target
-- `/pages/around-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/asana-vs-monday-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/copy-ai-vs-hugging-face-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/copy-ai-vs-weights-biases-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/google-meet-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/loom-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-vs-basecamp-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-vs-clickup-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-vs-jira-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-vs-notion-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-vs-smartsheet-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-vs-todoist-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-vs-trello-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/monday-com-vs-wrike-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/rippling-vs-remote-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/riverside-fm-vs-descript-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/riverside-fm-vs-streamyard-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/webex-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/whereby-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/workable-vs-remote-com-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/zoom-vs-riverside-fm-which-is-better-in-2026` (93.0/100): broken_internal_link, title_length_outside_target
-- `/pages/7-best-1password-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-ahrefs-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-asana-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-bamboohr-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-bigcommerce-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-clickup-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-crowdstrike-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-dashlane-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-datadog-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-freshbooks-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-getresponse-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-github-copilot-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-google-analytics-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-google-cloud-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-google-meet-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-heroku-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-hubspot-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-hubspot-crm-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-jira-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-lastpass-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-mailchimp-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-monday-com-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-moz-pro-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-nordlayer-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-okta-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-perimeter-81-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-power-bi-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-quickbooks-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-salesforce-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-semrush-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-shopify-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-splunk-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-surfer-seo-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-tableau-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-woocommerce-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-workday-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-xero-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-zoho-crm-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/7-best-zoom-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
-- `/pages/ahrefs-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/clearscope-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay` (94.0/100): broken_internal_link
-- `/pages/copy-ai-vs-cohere-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/copy-ai-vs-openai-api-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/copy-ai-vs-pinecone-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/copy-ai-vs-weaviate-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/copy-ai-vs-writesonic-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/deel-vs-remote-com-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/gusto-vs-remote-com-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/mangools-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/moz-pro-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/se-ranking-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/semrush-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/spyfu-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/pages/surfer-seo-vs-frase-io-which-is-better-in-2026` (94.0/100): broken_internal_link
-- `/deal-radar` (87.5/100): thin_buyer_page
+- `/deal-radar` (87.0/100): thin_buyer_page
+- `/pages` (88.0/100): title_length_outside_target
+- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (96.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-agentic-development-tools-for-engineering-teams-in-2025` (97.0/100): title_length_outside_target
+- `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions` (97.0/100): title_length_outside_target
+- `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (97.0/100): title_length_outside_target
+- `/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025` (97.0/100): title_length_outside_target
+- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster` (97.0/100): title_length_outside_target
+- `/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025` (97.0/100): title_length_outside_target
+- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (97.0/100): title_length_outside_target
+- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025` (97.0/100): title_length_outside_target
+- `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025` (97.0/100): title_length_outside_target
+- `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (97.0/100): meta_length_outside_target
+- `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (97.11/100): thin_buyer_page
+- `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay` (97.3/100): thin_buyer_page
+- `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (97.46/100): thin_buyer_page, title_length_outside_target
+- `/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay` (97.48/100): thin_buyer_page
+- `/pages/workable-pricing-2026-plans-costs-what-you-actually-pay` (97.67/100): thin_buyer_page
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (97.78/100): thin_buyer_page
+- `/pages/best-ai-tutor-tools-for-education-in-2025` (97.82/100): thin_buyer_page
+- `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay` (97.88/100): thin_buyer_page
+- `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
+- `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-finance-ops-software-for-small-business-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-legal-compliance-software-for-startups-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-password-managers-software-for-business-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-project-management-software-for-startups-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-project-management-software-in-2026-for-every-team-size` (98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/deel-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
+- `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
+- `/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
+- `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay` (98.12/100): thin_buyer_page
+- `/pages/best-devops-tools-for-security-compliance-in-2025` (98.16/100): thin_buyer_page
+- `/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay` (98.2/100): thin_buyer_page
+- `/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay` (98.22/100): thin_buyer_page
+- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (98.31/100): thin_buyer_page
+- `/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay` (98.34/100): thin_buyer_page
+- `/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay` (98.66/100): thin_buyer_page
+- `/pages/1password-vs-bitwarden-which-is-better-in-2026` (99.0/100): title_length_outside_target
+- `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (99.0/100): title_length_outside_target
+- `/pages/7-best-google-analytics-alternatives-in-2026-free-paid` (99.0/100): title_length_outside_target
+- `/pages/best-ahrefs-alternatives-in-2026-free-paid` (99.0/100): title_length_outside_target
+- `/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-cloud-infra-software-for-startups-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-crm-software-for-b2b-saas-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-crm-software-for-small-business-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-cybersecurity-software-for-small-business-in-2026-ranked` (99.0/100): title_length_outside_target
+- `/pages/best-devtools-software-for-startups-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked` (99.0/100): title_length_outside_target
+- `/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-hr-recruiting-software-for-startups-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked` (99.0/100): title_length_outside_target
+- `/pages/best-marketing-automation-software-for-small-business-in-2026-ranked` (99.0/100): title_length_outside_target
+- `/pages/best-project-management-software-for-remote-teams-in-2026-ranked` (99.0/100): title_length_outside_target
+- `/pages/best-saas-analytics-software-for-small-business-in-2026-ranked` (99.0/100): title_length_outside_target
+- `/pages/best-semrush-alternatives-in-2026-free-paid` (99.0/100): title_length_outside_target
+- `/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed` (99.0/100): title_length_outside_target
+- `/pages/best-seo-tools-software-for-bloggers-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-seo-tools-software-for-content-teams-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked` (99.0/100): title_length_outside_target
+- `/pages/best-vpn-business-software-for-startups-in-2026-ranked` (99.0/100): meta_length_outside_target
+- `/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026` (99.0/100): title_length_outside_target
+- `/pages/cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026` (99.0/100): title_length_outside_target
+- `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026` (99.0/100): title_length_outside_target
+- `/pages/freshbooks-vs-xero-which-is-better-in-2026` (99.0/100): title_length_outside_target
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (99.0/100): title_length_outside_target
+- `/pages/xero-vs-quickbooks-which-is-better-in-2026` (99.0/100): title_length_outside_target
+- `/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay` (99.06/100): thin_buyer_page
+- `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay` (99.5/100): thin_buyer_page
+- `/pages/ahrefs-vs-mangools-which-is-better-in-2026` (99.59/100): thin_buyer_page
+- `/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay` (99.63/100): thin_buyer_page
+- `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (99.72/100): thin_buyer_page
+- `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (99.72/100): thin_buyer_page
+- `/pages/semrush-vs-clearscope-which-is-better-in-2026` (99.73/100): thin_buyer_page
+- `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (99.77/100): thin_buyer_page
+- `/pages/xero-coupon-code-promo-codes-2026-verified-discounts` (99.78/100): thin_buyer_page
+- `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts` (99.87/100): thin_buyer_page
+- `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (99.89/100): thin_buyer_page
+- `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts` (99.89/100): thin_buyer_page
+- `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (99.91/100): thin_buyer_page
+- `/pages/asana-coupon-code-promo-codes-2026-verified-discounts` (99.91/100): thin_buyer_page
+- `/pages/does-hubspot-have-a-free-plan-2026-full-breakdown` (99.91/100): thin_buyer_page
+- `/pages/deel-coupon-code-promo-codes-2026-verified-discounts` (99.92/100): thin_buyer_page
+- `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (99.93/100): thin_buyer_page
+- `/pages/shopify-coupon-code-promo-codes-2026-verified-discounts` (99.94/100): thin_buyer_page
+- `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` (99.95/100): thin_buyer_page
+- `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts` (99.95/100): thin_buyer_page
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (99.98/100): thin_buyer_page
+- `/pages/zoom-coupon-code-promo-codes-2026-verified-discounts` (99.98/100): thin_buyer_page
