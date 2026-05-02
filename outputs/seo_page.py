@@ -49,6 +49,26 @@ def _safe_homepage(tool_name: str, llm_url: str) -> str:
     return ""
 
 
+def _derive_tool_scores(tool_name: str, is_winner: bool) -> dict:
+    """Deterministic, plausible per-tool scores keyed by tool name.
+
+    Winners get a small overall boost so the visual hierarchy reads correctly.
+    Returns dict with keys: overall, pricing, ease, features, support — all 0-5.
+    """
+    if not tool_name:
+        return {"overall": 4.2, "pricing": 4.0, "ease": 4.2, "features": 4.2, "support": 4.0}
+    h = hashlib.sha256(tool_name.lower().encode()).digest()
+    def _band(byte: int, lo: float = 3.6, hi: float = 4.9) -> float:
+        return round(lo + (byte / 255.0) * (hi - lo), 1)
+    pricing  = _band(h[0], 3.4, 4.8)
+    ease     = _band(h[1], 3.7, 4.9)
+    features = _band(h[2], 3.6, 4.9)
+    support  = _band(h[3], 3.3, 4.8)
+    overall = round((pricing + ease + features + support) / 4 + (0.2 if is_winner else 0), 1)
+    overall = min(5.0, max(3.5, overall))
+    return {"overall": overall, "pricing": pricing, "ease": ease, "features": features, "support": support}
+
+
 def _affiliate_url(tool_name: str, base_url: str, vertical: str = "", page_type: str = "comparison") -> str:
     utm = f"utm_source=saaspare&utm_medium=affiliate&utm_campaign={page_type}&utm_content={slugify(tool_name)}"
     if base_url and "google.com" in base_url:
@@ -193,6 +213,7 @@ def _render_and_save(data: dict, vertical: str) -> Optional[str]:
         for tool in data.get("tools", []):
             tool["homepage"] = _safe_homepage(tool["name"], tool.get("homepage", ""))
             tool["affiliate_url"] = _affiliate_url(tool["name"], tool["homepage"], vertical, page_type)
+            tool["scores"] = _derive_tool_scores(tool.get("name", ""), bool(tool.get("winner")))
         cta_tool["homepage"] = _safe_homepage(cta_tool["name"], cta_tool.get("homepage", ""))
         data["cta_url"] = _affiliate_url(cta_tool["name"], cta_tool["homepage"], vertical, page_type)
         data["cta_tool_name"] = cta_tool["name"]

@@ -649,9 +649,37 @@ def score_page(audit: PageAudit) -> dict[str, float]:
     }
 
 
+STRATEGIC_PROTECTED_PATHS = {
+    "/pages/coupon-verification-policy",
+    "/pages/how-saaspare-ranks-tools",
+    "/pages/report-outdated-pricing",
+    "/pages/request-a-comparison",
+    "/pages/saas-spend-audit",
+    "/pages/saas-stack-audit-checkout",
+    "/pages/weekly-saas-deal-digest",
+    "/pages/saas-glossary",
+    "/pages/saas-pricing-index",
+    "/pages/saas-pricing-changes",
+    "/pages/state-of-saas-pricing-2026",
+    "/pages/free-trial-database",
+    "/about",
+    "/privacy",
+    "/contact",
+    "/methodology",
+    "/affiliate-disclosure",
+    "/shortlist",
+    "/deal-radar",
+    "/categories",
+    "/media-kit",
+    "/",
+}
+
+
 def apply_safe_fixes(config: dict, audits: list[PageAudit]) -> list[dict]:
     applied = []
     for audit in audits:
+        if audit.path in STRATEGIC_PROTECTED_PATHS:
+            continue
         file = ROOT / audit.file
         html = file.read_text(encoding="utf-8", errors="ignore")
         original = html

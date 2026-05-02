@@ -3,220 +3,403 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SaaSpare Privacy Policy: How We Handle Your Data</title>
-<meta name="description" content="Learn how SaaSpare protects your privacy. Read our complete privacy policy and data handling practices.">
+<title>Privacy Policy — SaaSpare | SaaSpare</title>
+<meta name="description" content="SaaSpare's plain-English privacy policy. We collect the minimum needed, never sell your data, and give you full control to delete anything we hold.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kaylan von Papen">
 <link rel="canonical" href="https://saaspare.org/privacy">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:#0a0a14;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased}
-a{text-decoration:none;color:#e94560}
-a:hover{opacity:.8}
-::-webkit-scrollbar{width:5px;background:rgba(255,255,255,.03)}
-::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:3px}
-@keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.85;transform:scale(1.1)}}
-@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;transition:all .4s ease}
-nav.scrolled{background:rgba(10,10,20,.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.07)}
-.logo{display:flex;align-items:center;gap:8px;margin-right:auto;text-decoration:none}
-/* ── SaaSpare Logo ── */
-.saas-logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;user-select:none;cursor:pointer}
-.saas-logo-text{font-family:'Inter','Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:17px;letter-spacing:-.5px;color:#fff;line-height:1;white-space:nowrap}
-.saas-logo-text .s-bridge{color:#e94560}
-.nav-link{color:rgba(255,255,255,.5);font-size:.83rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s;text-decoration:none}
-.nav-link:hover{color:#fff}
-.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.42rem 1.1rem;border-radius:100px;font-weight:700;font-size:.82rem;box-shadow:0 4px 14px rgba(233,69,96,.35);margin-left:6px;transition:transform .15s;text-decoration:none}
-.nav-cta:hover{transform:translateY(-1px)}
-
-.page-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0f1729 0%,#0a0f2e 50%,#150a22 100%);padding:7rem 2rem 3.5rem;text-align:center}
-.orb{position:absolute;pointer-events:none;border-radius:50%}
-.page-hero .eyebrow{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.28);letter-spacing:.8px;text-transform:uppercase;margin-bottom:.75rem;animation:up .6s ease both}
-.page-hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.1;margin-bottom:.75rem;animation:up .7s .1s ease both}
-.page-hero p{color:rgba(255,255,255,.4);font-size:.9rem;animation:up .7s .2s ease both}
-
-.container{max-width:720px;margin:0 auto;padding:3.5rem 2rem 5rem}
-
-/* TOC */
-.toc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.5rem;margin-bottom:2.5rem}
-.toc h3{font-size:.78rem;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:.7px;text-transform:uppercase;margin-bottom:.85rem}
-.toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.45rem}
-.toc ol li a{font-size:.88rem;color:rgba(255,255,255,.5);transition:color .18s;text-decoration:none}
-.toc ol li a:hover{color:#e94560}
-
-/* Sections */
-.priv-section{margin-bottom:2.5rem;scroll-margin-top:80px}
-.priv-section h2{font-size:1.05rem;font-weight:800;color:#fff;letter-spacing:-.2px;margin-bottom:.85rem;padding-bottom:.6rem;border-bottom:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:8px}
-.priv-section h2::before{content:'';display:block;width:3px;height:16px;background:linear-gradient(#e94560,#c73652);border-radius:2px;flex-shrink:0}
-.priv-section p{color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.8;margin-bottom:.75rem}
-.priv-section p:last-child{margin-bottom:0}
-.priv-section ul{padding-left:1.1rem;color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.8}
-.priv-section ul li{margin-bottom:.35rem}
-.priv-section strong{color:rgba(255,255,255,.75);font-weight:600}
-
-.updated{font-size:.78rem;color:rgba(255,255,255,.25);margin-bottom:2.5rem}
-
-footer{border-top:1px solid rgba(255,255,255,.07)}
-.footer-inner{max-width:1040px;margin:0 auto;padding:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:rgba(255,255,255,.3)}
-.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap}
-.footer-links a{color:rgba(255,255,255,.35);transition:color .18s;text-decoration:none}
-.footer-links a:hover{color:#fff}
-
-@media(max-width:640px){
-  nav{padding:.75rem 1.25rem}
-  .nav-link{display:none}
-  .container{padding:2.5rem 1.25rem 4rem}
-}
-</style>
-<meta name="keywords" content="SaaSpare Privacy Policy: How We Handle Your Data, trust, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
-<meta property="og:title" content="SaaSpare Privacy Policy: How We Handle Your Data">
-<meta property="og:description" content="Learn how SaaSpare protects your privacy. Read our complete privacy policy and data handling practices.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<meta name="theme-color" content="#07070d">
+<meta property="og:title" content="Privacy Policy — SaaSpare">
+<meta property="og:description" content="SaaSpare's plain-English privacy policy. We collect the minimum needed, never sell your data, and give you full control to delete anything we hold.">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://saaspare.org/privacy">
-<meta property="og:type" content="website">
 <meta property="og:image" content="https://saaspare.org/og-default.png">
+<meta property="og:site_name" content="SaaSpare">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@SaaSpare">
-<meta name="twitter:title" content="SaaSpare Privacy Policy: How We Handle Your Data">
-<meta name="twitter:description" content="Learn how SaaSpare protects your privacy. Read our complete privacy policy and data handling practices.">
+<meta name="twitter:title" content="Privacy Policy — SaaSpare">
+<meta name="twitter:description" content="SaaSpare's plain-English privacy policy. We collect the minimum needed, never sell your data, and give you full control to delete anything we hold.">
 <meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": []}</script>
-<link rel="stylesheet" href="/assets/saaspare-ui.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","url":"https://saaspare.org/privacy","name":"Privacy Policy — SaaSpare","description":"SaaSpare's plain-English privacy policy. We collect the minimum needed, never sell your data, and give you full control to delete anything we hold.","isPartOf":{"@type":"WebSite","name":"SaaSpare","url":"https://saaspare.org"},"publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org","logo":{"@type":"ImageObject","url":"https://saaspare.org/og-default.png"}},"author":{"@type":"Person","name":"Kaylan von Papen","url":"https://saaspare.org/about"},"dateModified":"2026-05-02"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://saaspare.org/"},{"@type":"ListItem","position":2,"name":"Privacy Policy","item":"https://saaspare.org/privacy"}]}</script>
+<script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="cc20042f-69ad-42f3-bdbc-db9fe92a73ce" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gImNjMjAwNDJmLTY5YWQtNDJmMy1iZGJjLWRiOWZlOTJhNzNjZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="></script>
+<style>
+:root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3;--warn:#ffc864}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
+::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
+body::after{content:'';position:fixed;inset:-200%;width:400%;height:400%;pointer-events:none;z-index:9999;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain .5s steps(1) infinite}
+@keyframes grain{0%,100%{transform:translate(0,0)}10%{transform:translate(-5%,-5%)}20%{transform:translate(-10%,5%)}30%{transform:translate(5%,-10%)}40%{transform:translate(-5%,15%)}50%{transform:translate(-10%,5%)}60%{transform:translate(15%,0)}70%{transform:translate(0,10%)}80%{transform:translate(-15%,0)}90%{transform:translate(10%,5%)}}
+
+/* NAV — explicit transparent default + dark when scrolled. !important wins over any cached stylesheet. */
+nav#nav{position:fixed !important;top:0;left:0;right:0;z-index:300;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}
+nav#nav.scrolled,nav#nav.ss-nav-scrolled{background:rgba(7,7,13,.86) !important;border-bottom:1px solid var(--border) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}
+.logo{display:flex;align-items:center;gap:9px;margin-right:auto}
+.logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
+.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.wv{pointer-events:none;transition:opacity .3s}
+@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
+.logo:hover .logo-mark{animation:none}
+.logo:hover .mark-top{transform:translateX(26px)}
+.logo:hover .mark-bot{transform:translateX(-26px)}
+.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.logo-text em{color:var(--red);font-style:normal}
+.nav-link{color:var(--muted);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap}
+.nav-link:hover,.nav-link.active{color:#fff}
+.nav-cta{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+
+/* HERO */
+.page-hero{position:relative;overflow:hidden;padding:7.5rem 2rem 4rem;text-align:center;z-index:1}
+.page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(80,18,28,.85) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 30%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg)}
+.page-hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);animation:dotDrift 36s linear infinite;opacity:.7}
+@keyframes dotDrift{from{background-position:0 0}to{background-position:32px 32px}}
+.page-hero-orb{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.12) 0%,transparent 65%);top:-280px;left:50%;transform:translateX(-50%);pointer-events:none;filter:blur(60px)}
+.page-hero-content{position:relative;z-index:2;max-width:780px;margin:0 auto}
+.crumbs{display:inline-flex;gap:.45rem;align-items:center;font-size:.72rem;color:var(--muted);margin-bottom:.95rem;letter-spacing:.4px;animation:up .55s ease both}
+.crumbs a{color:var(--muted);transition:color .15s}
+.crumbs a:hover{color:#fff}
+.crumbs span{color:var(--dim)}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.25);color:rgba(255,185,200,.95);padding:5px 14px;border-radius:100px;font-size:.7rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.4rem;animation:up .6s ease both;position:relative;overflow:hidden}
+.page-eyebrow::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-100%);animation:eyebrowGlint 6s ease-in-out infinite;animation-delay:1.5s}
+@keyframes eyebrowGlint{0%,80%{transform:translateX(-100%)}90%,100%{transform:translateX(100%)}}
+.page-hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.14;margin-bottom:1rem;animation:up .7s .1s ease both;text-wrap:balance}
+.page-hero h1 em{color:var(--red);font-style:normal;position:relative;display:inline-block;background:linear-gradient(135deg,#ff7890 0%,#e94560 52%,#c73652 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.page-hero h1 em::after{content:attr(data-text);position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.85) 50%,transparent 70%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:glint 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes glint{0%,60%{background-position:-200% center}70%,100%{background-position:200% center}}
+.page-hero p.page-sub{color:var(--muted);font-size:1.02rem;line-height:1.8;max-width:580px;margin:0 auto;animation:up .7s .2s ease both;text-wrap:pretty}
+.page-hero-actions{display:flex;gap:.65rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem;animation:up .7s .3s ease both}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* PAGE */
+.page-content{max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem) 6rem;position:relative;z-index:1}
+.ps{padding:3.5rem 0;border-top:1px solid var(--border)}
+.ps:first-child{border-top:none;padding-top:3rem}
+.ps-eyebrow{font-size:.64rem;font-weight:700;color:var(--red);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:.55rem;display:block}
+.ps-title{font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:900;color:#fff;letter-spacing:-.04em;margin-bottom:1.5rem;line-height:1.2}
+.ps-body{color:rgba(255,248,245,.72);font-size:.94rem;line-height:1.78}
+.ps-body p{margin-bottom:.9rem}
+.ps-body p:last-child{margin-bottom:0}
+.ps-body ul{list-style:none;padding:0;margin:.8rem 0}
+.ps-body ul li{padding:.45rem 0 .45rem 1.6rem;position:relative;color:rgba(255,248,245,.72)}
+.ps-body ul li::before{content:"→";position:absolute;left:0;color:var(--red);font-weight:700}
+.ps-body strong{color:rgba(255,255,255,.88)}
+.ps-body a{color:var(--red);font-weight:600}
+.ps-body a:hover{color:#ff7890}
+
+/* CARD */
+.ps-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.6rem;transition:border-color .2s,transform .2s;position:relative}
+.ps-card:hover{border-color:rgba(233,69,96,.2);transform:translateY(-2px)}
+.ps-card h3,.ps-card h4{font-size:1rem;font-weight:800;color:#fff;letter-spacing:-.02em;margin-bottom:.55rem;display:flex;align-items:center;gap:.65rem}
+.ps-card h3::before,.ps-card h4::before{content:'';display:block;width:3px;height:16px;background:linear-gradient(var(--red),var(--red2));border-radius:2px;flex-shrink:0}
+.ps-card p{color:rgba(255,248,245,.66);font-size:.88rem;line-height:1.65;margin:0}
+
+/* GRIDS */
+.ps-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.ps-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0}
+.ps-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1rem 0}
+
+/* STAT ROW */
+.ps-stat-row{display:flex;gap:0;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin:1.5rem 0}
+.ps-stat{flex:1;padding:1.4rem;text-align:center;border-right:1px solid var(--border)}
+.ps-stat:last-child{border-right:none}
+.ps-stat strong{display:block;font-size:1.8rem;font-weight:900;color:var(--red);line-height:1;letter-spacing:-.04em}
+.ps-stat span{display:block;font-size:.68rem;color:var(--dim);margin-top:5px;font-weight:600;letter-spacing:.4px;text-transform:uppercase}
+
+/* CALLOUT */
+.ps-callout{background:linear-gradient(135deg,rgba(233,69,96,.1),rgba(180,30,50,.06));border:1px solid rgba(233,69,96,.22);border-radius:16px;padding:1.5rem 1.8rem;margin:1.5rem 0}
+.ps-callout p{color:rgba(255,248,245,.78);font-size:.94rem;line-height:1.72;margin:0}
+.ps-callout strong{color:#fff}
+
+/* VALUE GRID */
+.ps-value-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.2rem}
+.ps-value{background:rgba(233,69,96,.06);border:1px solid rgba(233,69,96,.16);border-radius:12px;padding:1rem 1.1rem}
+.ps-value strong{display:block;font-size:.88rem;font-weight:800;color:rgba(255,255,255,.92);margin-bottom:.25rem}
+.ps-value span{font-size:.8rem;color:var(--muted);line-height:1.55}
+
+/* STARS + BARS */
+.rate-row{display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:rgba(255,255,255,.78);margin:.3rem 0}
+.stars{color:#ffc84a;font-size:1.02rem;letter-spacing:2px;filter:drop-shadow(0 0 6px rgba(255,200,74,.35))}
+.stars.dim{color:rgba(255,200,74,.22);filter:none}
+.bar-line{margin:.55rem 0 .75rem}
+.bar-label{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted);margin-bottom:4px;font-weight:600}
+.bar-label strong{color:#fff;font-weight:700}
+.bar-track{background:rgba(255,255,255,.06);border-radius:4px;height:8px;width:100%;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--good),#9fe9c2);width:var(--w,0%);animation:barFill 1.2s cubic-bezier(.3,.9,.2,1) .15s both}
+.bar-fill.red{background:linear-gradient(90deg,var(--red),#ff7890)}
+.bar-fill.warn{background:linear-gradient(90deg,var(--warn),#ffdf9a)}
+@keyframes barFill{from{width:0}to{width:var(--w)}}
+
+/* PLANS */
+.plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.25rem;margin:1.5rem 0}
+.plan{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:1.8rem;position:relative;transition:transform .25s,border-color .25s}
+.plan:hover{transform:translateY(-3px);border-color:rgba(233,69,96,.28)}
+.plan.featured{border-color:rgba(233,69,96,.45);background:linear-gradient(155deg,rgba(233,69,96,.08),rgba(199,54,82,.03))}
+.plan.featured::before{content:"Most Popular";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;font-size:.64rem;padding:4px 12px;border-radius:100px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;box-shadow:0 6px 18px rgba(233,69,96,.4)}
+.plan-name{font-size:.7rem;letter-spacing:1.3px;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:.35rem}
+.plan-tag{font-size:1.4rem;font-weight:900;color:#fff;letter-spacing:-.03em;margin-bottom:.3rem;line-height:1.1}
+.plan-tag em{color:var(--red);font-style:normal}
+.plan-pitch{font-size:.85rem;color:var(--muted);line-height:1.55;margin-bottom:1rem;min-height:2.5em}
+.plan-price{font-size:2.1rem;font-weight:900;color:#fff;letter-spacing:-.04em;line-height:1}
+.plan-price small{font-size:.72rem;color:var(--muted);font-weight:600;letter-spacing:.4px}
+.plan-list{list-style:none;margin:1.25rem 0 1.4rem;padding:0}
+.plan-list li{padding:.4rem 0 .4rem 1.4rem;position:relative;font-size:.86rem;color:rgba(255,248,245,.74)}
+.plan-list li::before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:900}
+.plan-list li.x::before{content:"—";color:var(--dim)}
+.plan-cta{display:block;text-align:center;background:rgba(255,255,255,.06);border:1px solid var(--border);color:#fff;padding:.85rem 1rem;border-radius:100px;font-weight:800;font-size:.84rem;transition:all .2s}
+.plan-cta:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18)}
+.plan.featured .plan-cta{background:linear-gradient(135deg,var(--red),var(--red2));border-color:transparent;box-shadow:0 10px 30px rgba(233,69,96,.35)}
+.plan.featured .plan-cta:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(233,69,96,.5)}
+
+/* CTA */
+.cta-big{background:linear-gradient(135deg,rgba(233,69,96,.12),rgba(199,54,82,.05));border:1px solid rgba(233,69,96,.3);border-radius:20px;padding:2.4rem 2rem;margin:2.5rem 0 0;text-align:center}
+.cta-big h3{font-size:clamp(1.25rem,2.2vw,1.6rem);color:#fff;font-weight:900;letter-spacing:-.03em;margin-bottom:.5rem}
+.cta-big p{color:var(--muted);margin:0 auto 1.35rem;max-width:520px;font-size:.94rem;line-height:1.65}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.9rem 1.9rem;border-radius:100px;font-weight:800;font-size:.92rem;box-shadow:0 8px 28px rgba(233,69,96,.38);border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;font-family:inherit}
+.btn:hover{transform:translateY(-1px);box-shadow:0 12px 36px rgba(233,69,96,.55)}
+.btn.ghost{background:rgba(255,255,255,.06);border:1px solid var(--border);box-shadow:none;color:#fff}
+
+/* TABLE */
+.tbl-wrap{overflow-x:auto;border-radius:14px;border:1px solid var(--border);margin:1.25rem 0}
+.tbl{width:100%;border-collapse:collapse;min-width:480px}
+.tbl thead th{background:rgba(13,13,26,.95);padding:.85rem 1.1rem;text-align:left;font-size:.72rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.55);border-bottom:1px solid var(--border)}
+.tbl tbody tr{border-bottom:1px solid rgba(255,255,255,.04);transition:background .18s}
+.tbl tbody tr:last-child{border-bottom:none}
+.tbl tbody tr:hover{background:rgba(255,255,255,.03)}
+.tbl td{padding:.78rem 1.1rem;font-size:.86rem;color:rgba(255,255,255,.72);vertical-align:middle}
+.tbl td strong{color:#fff;font-weight:700}
+.tbl .winner-badge{background:linear-gradient(135deg,var(--good),#4eb88a);color:#0c1f16;padding:2px 9px;border-radius:100px;font-size:.66rem;font-weight:800;letter-spacing:.4px;margin-left:6px;text-transform:uppercase}
+.tbl a{color:var(--red);font-weight:600}
+.badge{display:inline-flex;padding:2px 9px;border-radius:100px;font-size:.7rem;font-weight:700}
+.badge.g{background:rgba(101,214,163,.12);color:var(--good);border:1px solid rgba(101,214,163,.28)}
+.badge.r{background:rgba(233,69,96,.12);color:var(--red);border:1px solid rgba(233,69,96,.28)}
+.badge.y{background:rgba(255,200,100,.1);color:var(--warn);border:1px solid rgba(255,200,100,.22)}
+
+/* FAQ */
+.faq{border:1px solid var(--border);border-radius:14px;overflow:hidden;margin:.6rem 0;background:rgba(255,255,255,.02)}
+.faq summary{padding:1rem 1.4rem;cursor:pointer;font-weight:700;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:.95rem;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red);font-size:1.35rem;font-weight:800;line-height:1;transition:transform .2s}
+.faq[open] summary::after{content:"−"}
+.faq[open] summary{border-bottom:1px solid var(--border)}
+.faq p,.faq div.faq-body{padding:.9rem 1.4rem 1.1rem;color:rgba(255,248,245,.68);font-size:.9rem;line-height:1.7}
+.faq a{color:var(--red);font-weight:600}
+
+/* FORMS */
+.form{display:flex;flex-direction:column;gap:.9rem;max-width:620px;margin:0 auto}
+.form label{display:flex;flex-direction:column;gap:.35rem;color:#fff;font-weight:700;font-size:.82rem;letter-spacing:.2px}
+.form input[type=text],.form input[type=email],.form input[type=url],.form input[type=number],.form select,.form textarea{width:100%;padding:.85rem 1.1rem;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:#fff;font-size:.92rem;font-family:inherit;transition:border-color .2s,background .2s}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:rgba(233,69,96,.5);background:rgba(255,255,255,.08)}
+.form textarea{resize:vertical;min-height:100px}
+.form select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7'%3E%3Cpath fill='%23ffffff80' d='M6 7 0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1.1rem center;background-size:11px}
+.form select option{background:#0d0d18;color:#fff}
+.email-row{display:flex;gap:.5rem;max-width:460px;margin:1.1rem auto 0;flex-wrap:wrap;justify-content:center}
+.email-row input{flex:1;min-width:220px;padding:.85rem 1.2rem;border-radius:100px;background:rgba(255,255,255,.06);border:1px solid var(--border);color:#fff;font-size:.9rem;font-family:inherit}
+.email-row input:focus{outline:none;border-color:rgba(233,69,96,.5)}
+.email-row button{padding:.85rem 1.6rem;border-radius:100px;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;font-weight:800;font-size:.88rem;border:none;cursor:pointer;white-space:nowrap;font-family:inherit}
+
+/* GLOSSARY */
+.alpha-jump{display:flex;flex-wrap:wrap;gap:.28rem;justify-content:center;padding:.9rem 1rem;background:var(--card);border:1px solid var(--border);border-radius:14px;margin:1rem 0 1.5rem}
+.alpha-jump a{padding:.32rem .58rem;border-radius:6px;font-size:.78rem;color:var(--muted);font-weight:700;transition:all .18s}
+.alpha-jump a:hover{color:#fff;background:rgba(233,69,96,.12)}
+.term-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem}
+.term{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.1rem;transition:border-color .2s,transform .2s}
+.term:hover{border-color:rgba(233,69,96,.24);transform:translateY(-2px)}
+.term dt{color:#fff;font-weight:800;font-size:.94rem;margin-bottom:.35rem;letter-spacing:-.01em}
+.term dd{color:rgba(255,248,245,.64);font-size:.82rem;margin:0;line-height:1.55}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3rem 2rem 2rem;text-align:center;color:var(--muted);font-size:.82rem;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
+.footer-links{display:flex;gap:1rem 1.25rem;justify-content:center;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.4);font-size:.78rem;transition:color .18s}
+.footer-links a:hover{color:#fff}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:980px){
+  nav#nav{padding:.85rem 1.15rem}
+  .nav-link{display:none}
+  .nav-link.keep{display:inline-flex}
+}
+@media(max-width:880px){
+  .ps-grid-3,.ps-grid-4{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .page-hero{padding:6.5rem 1.2rem 3.5rem}
+  .page-content{padding:0 1.2rem 5rem}
+  .ps-grid-2,.ps-grid-3,.ps-grid-4{grid-template-columns:1fr}
+  .ps-stat-row{flex-wrap:wrap}
+  .ps-stat{flex:1 1 45%;border-right:none;border-bottom:1px solid var(--border)}
+  .ps-value-grid{grid-template-columns:1fr}
+}
+.page-hero-bg{background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(75,18,28,.82) 0%,transparent 62%),radial-gradient(ellipse 50% 40% at 50% 32%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg) !important}
+.page-hero-orb{background:radial-gradient(circle,rgba(233,69,96,.10) 0%,transparent 65%) !important}
+.page-hero-dots{background-image:radial-gradient(circle,rgba(255,255,255,.055) 1px,transparent 1.4px) !important}</style>
 </head>
 <body>
-
 <nav id="nav">
-  <a href="/" class="saas-logo logo-md">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="0" y="0" width="8" height="20" rx="2" fill="#ffffff"/><rect x="12" y="6" width="8" height="14" rx="2" fill="#e94560"/></svg>
-    <span class="saas-logo-text">Saa<span class="s-bridge">S</span>pare</span>
-  </a>
-  <a href="/pages/" class="nav-link">All Comparisons</a>
-  <a href="/about" class="nav-link">About</a>
-  <a href="/contact" class="nav-link">Contact</a>
-  <a href="/pages/" class="nav-cta">Compare Now →</a>
+  <a href="/" class="logo"><svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg><span class="logo-text">Saa<em>Spare</em></span></a>
+  <a href="/pages/" class="nav-link">Comparisons</a>
+  <a href="/categories.html" class="nav-link">Categories</a>
+  <a href="/pages/saas-pricing-index" class="nav-link">Pricing Index</a>
+  <a href="/pages/free-trial-database" class="nav-link">Free Trials</a>
+  <a href="/pages/saas-glossary" class="nav-link">Glossary</a>
+  <a href="/shortlist.html" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>
 
-<div class="page-hero">
-  <div class="orb" style="top:-80px;left:50%;transform:translateX(-50%);width:500px;height:280px;background:radial-gradient(ellipse,rgba(233,69,96,.1) 0%,transparent 65%);animation:glow 5s ease-in-out infinite"></div>
-  <div style="position:relative">
-    <p class="eyebrow">Legal</p>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: April 2026</p>
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-orb"></div>
+  <div class="page-hero-content">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span aria-current="page">Privacy Policy</span></nav>
+    <div class="page-eyebrow">Last updated · April 2026</div>
+    <h1><em data-text="Privacy">Privacy</em> Policy</h1>
+    <p class="page-sub">The plain-English version: we collect the minimum needed to run the site, never sell your data, and give you full control to delete anything we hold. The legal version is below.</p>
   </div>
-</div>
+</section>
+<main class="page-content">
 
-<div class="container">
-  <p class="updated">Effective date: 1 January 2026 · Last reviewed: April 2026</p>
-
-  <div class="toc">
-    <h3>Contents</h3>
-    <ol>
-      <li><a href="#s1">Information we collect</a></li>
-      <li><a href="#s2">How we use your information</a></li>
-      <li><a href="#s3">Cookies & tracking</a></li>
-      <li><a href="#s4">Affiliate links</a></li>
-      <li><a href="#s5">Third-party services</a></li>
-      <li><a href="#s6">Data retention</a></li>
-      <li><a href="#s7">Your rights</a></li>
-      <li><a href="#s8">Contact us</a></li>
-    </ol>
+  <div class="ps reveal">
+    <span class="ps-eyebrow">TL;DR</span>
+    <h2 class="ps-title">Plain-English summary</h2>
+    <div class="ps-grid-2">
+      <div class="ps-card"><h3>What we collect</h3><p>Anonymous analytics (Google Analytics 4), email if you subscribe to the newsletter, form submissions if you contact us or buy a Stack Audit. That's it.</p></div>
+      <div class="ps-card"><h3>What we do not collect</h3><p>We do not collect your IP-linked browsing history, we do not run fingerprinting scripts, and we do not share data with brokers, list rentals, or "co-marketing" partners.</p></div>
+      <div class="ps-card"><h3>Your rights</h3><p>You can request deletion of any personal data we hold by emailing <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a>. We action requests within 14 days.</p></div>
+      <div class="ps-card"><h3>Cookies</h3><p>We use Google Analytics + Google AdSense cookies. EU/UK visitors see a consent banner. Adblockers and DNT signals are honoured.</p></div>
+    </div>
   </div>
 
-  <div class="priv-section" id="s1">
-    <h2>1. Information We Collect</h2>
-    <p>We collect information you provide directly — for example, when you subscribe to our newsletter or submit a contact form. This may include your email address and name.</p>
-    <p>We also automatically collect certain technical data when you visit the site, including:</p>
-    <ul>
-      <li>IP address and approximate location (country/city level)</li>
-      <li>Browser type, device type and operating system</li>
-      <li>Pages visited and time spent on each page</li>
-      <li>Referral source (how you arrived at SaaSpare)</li>
-    </ul>
+  <div class="ps reveal">
+    <span class="ps-eyebrow">Full policy</span>
+    <h2 class="ps-title">1. Who we are</h2>
+    <div class="ps-body">
+      <p>SaaSpare is operated by Kaylan von Papen, ABN 51 824 753 556, registered in Australia. Contact: <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a>.</p>
+    </div>
   </div>
 
-  <div class="priv-section" id="s2">
-    <h2>2. How We Use Your Information</h2>
-    <p>We use the information we collect to:</p>
-    <ul>
-      <li>Send the weekly SaaS Deal Digest newsletter (only if you subscribed)</li>
-      <li>Respond to contact form submissions and support requests</li>
-      <li>Analyse site traffic and improve our content</li>
-      <li>Detect and prevent fraudulent or abusive activity</li>
-    </ul>
-    <p>We <strong>do not</strong> sell your personal data to third parties.</p>
+  <div class="ps reveal">
+    <h2 class="ps-title">2. What we collect</h2>
+    <div class="ps-body">
+      <p><strong>Analytics:</strong> Google Analytics 4 collects anonymised page views, device type, country, and referrer. We use this only to understand which articles are useful.</p>
+      <p><strong>Newsletter:</strong> if you subscribe to the Weekly SaaS Deal Digest we collect your email address. Stored with FormSubmit + our internal CRM. Used only to send the newsletter you signed up for.</p>
+      <p><strong>Forms:</strong> contact form, Stack Audit intake, comparison requests, pricing reports — these collect what you tell them. Submissions are emailed to us via FormSubmit and retained for as long as needed to act on them.</p>
+      <p><strong>Affiliate clicks:</strong> when you click through to a vendor we may add an affiliate tracking parameter. The vendor sees the click, not us.</p>
+    </div>
   </div>
 
-  <div class="priv-section" id="s3">
-    <h2>3. Cookies & Tracking</h2>
-    <p>SaaSpare uses cookies and similar tracking technologies to measure site traffic and improve your experience. These include:</p>
-    <ul>
-      <li><strong>Analytics cookies</strong> — Google Analytics (anonymised IP) to understand traffic patterns</li>
-      <li><strong>Affiliate tracking cookies</strong> — set when you click an affiliate link to attribute referrals</li>
-      <li><strong>Functional cookies</strong> — to remember preferences like newsletter subscription state</li>
-    </ul>
-    <p>You can disable cookies in your browser settings. Some features may not work correctly if you do.</p>
+  <div class="ps reveal">
+    <h2 class="ps-title">3. What we do not collect</h2>
+    <div class="ps-body">
+      <ul>
+        <li>No fingerprinting scripts, no session replay, no heatmap tools.</li>
+        <li>No data brokers, no list rentals, no "co-marketing" partners.</li>
+        <li>No selling of email lists. Ever.</li>
+        <li>No cross-site tracking pixels beyond Google Analytics + AdSense (which Chrome and Safari already restrict).</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="priv-section" id="s4">
-    <h2>4. Affiliate Links</h2>
-    <p>SaaSpare contains affiliate links. When you click a link and make a purchase, we may earn a commission from the vendor at no extra cost to you.</p>
-    <p>Affiliate links are tracked using cookies set by third-party affiliate networks, including <strong>Impact</strong> and the <strong>Amazon Associates Programme</strong>. These networks may collect data about your clicks and purchases in accordance with their own privacy policies.</p>
-    <p>Affiliate relationships do not influence our editorial rankings or comparison outcomes.</p>
+  <div class="ps reveal">
+    <h2 class="ps-title">4. Cookies</h2>
+    <div class="ps-body">
+      <p>We use the following cookies: <strong>_ga</strong> and <strong>_ga_*</strong> (Google Analytics), Google AdSense ad-personalisation cookies (where consent is given), and a single first-party preference cookie that remembers if you have dismissed the cookie banner.</p>
+      <p>EU/UK visitors see a consent banner. Do Not Track headers are honoured.</p>
+    </div>
   </div>
 
-  <div class="priv-section" id="s5">
-    <h2>5. Third-Party Services</h2>
-    <p>We use the following third-party services that may process your data:</p>
-    <ul>
-      <li><strong>Google Analytics</strong> — website traffic analysis</li>
-      <li><strong>FormSubmit</strong> — contact form and newsletter form processing</li>
-      <li><strong>Impact</strong> — affiliate link tracking</li>
-      <li><strong>Google Fonts</strong> — typography (loaded from Google's CDN)</li>
-    </ul>
-    <p>Each service operates under its own privacy policy. We encourage you to review them if you have concerns.</p>
+  <div class="ps reveal">
+    <h2 class="ps-title">5. Your rights</h2>
+    <div class="ps-body">
+      <p>Under GDPR (if you are in the EU), the UK Data Protection Act, the Australian Privacy Principles, and the CCPA (if you are in California), you have the right to:</p>
+      <ul>
+        <li>Access any personal data we hold about you.</li>
+        <li>Request correction of inaccurate data.</li>
+        <li>Request deletion of your data ("right to be forgotten").</li>
+        <li>Opt out of processing for marketing.</li>
+        <li>Lodge a complaint with your data protection authority.</li>
+      </ul>
+      <p>Email <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a> with your request. We respond within 14 days.</p>
+    </div>
   </div>
 
-  <div class="priv-section" id="s6">
-    <h2>6. Data Retention</h2>
-    <p>Newsletter subscriber emails are retained until you unsubscribe. Contact form submissions are retained for up to 12 months. Analytics data is retained in aggregated, anonymised form indefinitely.</p>
+  <div class="ps reveal">
+    <h2 class="ps-title">6. Data retention</h2>
+    <div class="ps-body">
+      <p>Newsletter subscriptions: kept until you unsubscribe. Stack Audit data: deleted 30 days after delivery unless you request retention. Form submissions: kept up to 24 months for support and abuse-prevention. Analytics: anonymised; standard GA4 retention (14 months).</p>
+    </div>
   </div>
 
-  <div class="priv-section" id="s7">
-    <h2>7. Your Rights</h2>
-    <p>Depending on your location, you may have rights to access, correct, delete or port your personal data. To exercise these rights, contact us at the address below.</p>
-    <p>If you are in the EEA, you also have the right to lodge a complaint with your local data protection authority.</p>
+  <div class="ps reveal">
+    <h2 class="ps-title">7. Changes to this policy</h2>
+    <div class="ps-body">
+      <p>We update this page when our practices change. The last-updated date at the top reflects the most recent revision. Substantive changes are announced in the Weekly SaaS Deal Digest.</p>
+    </div>
   </div>
 
-  <div class="priv-section" id="s8">
-    <h2>8. Contact Us</h2>
-    <p>For privacy-related questions or requests, contact us via our <a href="/contact">contact page</a> or email <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a>.</p>
+  <div class="ps reveal">
+    <div class="cta-big">
+      <h3>Privacy questions?</h3>
+      <p>Email <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a> — we read and respond to every privacy request within 14 days.</p>
+      <a href="mailto:privacy@saaspare.org" class="btn">privacy@saaspare.org</a>
+    </div>
   </div>
-</div>
+
+</main>
 
 <footer>
   <div class="footer-inner">
-    <a href="/" class="saas-logo logo-md">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="0" y="0" width="8" height="20" rx="2" fill="#ffffff"/><rect x="12" y="6" width="8" height="14" rx="2" fill="#e94560"/></svg>
-    <span class="saas-logo-text">Saa<span class="s-bridge">S</span>pare</span>
-    </a>
+    <div><strong style="color:#fff">SaaSpare</strong> &middot; Unbiased B2B SaaS comparisons &middot; No paid rankings</div>
     <div class="footer-links">
-      <a href="/pages/">All Comparisons</a>
       <a href="/about">About</a>
-      <a href="/contact">Contact</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/pages/how-saaspare-ranks-tools">How We Rank</a>
+      <a href="/pages/coupon-verification-policy">Coupon Policy</a>
+      <a href="/affiliate-disclosure">Disclosure</a>
+      <a href="/pages/report-outdated-pricing">Report Pricing</a>
+      <a href="/pages/request-a-comparison">Request Comparison</a>
       <a href="/privacy">Privacy</a>
+      <a href="/contact">Contact</a>
     </div>
-    <span>© 2026 SaaSpare</span>
+    <div style="font-size:.72rem;color:rgba(255,255,255,.28)">&copy; 2026 SaaSpare &middot; ABN 51 824 753 556 &middot; Australia</div>
   </div>
 </footer>
-
 <script>
-window.addEventListener('scroll',()=>{
-  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
-},{passive:true});
+(function(){
+  var nav=document.getElementById('nav');
+  if(!nav)return;
+  function onScroll(){
+    var s=window.scrollY>24;
+    nav.classList.toggle('scrolled',s);
+    nav.classList.toggle('ss-nav-scrolled',s);
+  }
+  onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});
+  }
+})();
 </script>
-<script defer src="/assets/saaspare-ui.js"></script>
-<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 </body>
 </html>

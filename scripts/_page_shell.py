@@ -1,18 +1,24 @@
 """Shared shell/CSS/nav/footer for SaaSpare strategic pages.
-Uses the _template.html aesthetic (hero glint, grid drift, orb, grain, reveal).
-Each page picks an accent variant so they feel distinct instead of 1:1.
+
+Goals:
+  * Match the _template.html aesthetic exactly (hero glint on red `<em>`, grid drift, orb, grain, reveal-on-scroll)
+  * Add a dot-grid hero background (slightly dimmer than the homepage canvas wave grid)
+  * Bullet-proof nav: transparent at top, dark on scroll. Belt-and-suspenders rules so CDN/cache cannot reverse it.
+  * Per-page accent variants so pages feel distinct
+  * Breadcrumb schema + Article/Service/Dataset schema slot
 """
 from datetime import datetime
 from pathlib import Path
 
 DOMAIN = "https://saaspare.org"
 TODAY = datetime.utcnow().strftime("%Y-%m-%d")
+ISO_NOW = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 LOGO_SVG = (Path(__file__).parent / "_logo_svg.txt").read_text(encoding="utf-8")
 
 OTTO_PIXEL = '<script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="cc20042f-69ad-42f3-bdbc-db9fe92a73ce" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gImNjMjAwNDJmLTY5YWQtNDJmMy1iZGJjLWRiOWZlOTJhNzNjZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="></script>'
 
-# Core CSS from _template.html + extras for bars/stars/plans/forms
+# Core CSS — mirrors _template.html with additions for bars/stars/plans/dots
 BASE_CSS = r"""
 :root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3;--warn:#ffc864}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -21,12 +27,12 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
-body::after{content:'';position:fixed;inset:-200%;width:400%;height:400%;pointer-events:none;z-index:9999;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain .5s steps(1) infinite}
+body::after{content:'';position:fixed;inset:-200%;width:400%;height:400%;pointer-events:none;z-index:9999;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain .5s steps(1) infinite}
 @keyframes grain{0%,100%{transform:translate(0,0)}10%{transform:translate(-5%,-5%)}20%{transform:translate(-10%,5%)}30%{transform:translate(5%,-10%)}40%{transform:translate(-5%,15%)}50%{transform:translate(-10%,5%)}60%{transform:translate(15%,0)}70%{transform:translate(0,10%)}80%{transform:translate(-15%,0)}90%{transform:translate(10%,5%)}}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease;background:transparent;border-bottom:none}
-nav.scrolled,nav.ss-nav-scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+/* NAV — explicit transparent default + dark when scrolled. !important wins over any cached stylesheet. */
+nav#nav{position:fixed !important;top:0;left:0;right:0;z-index:300;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}
+nav#nav.scrolled,nav#nav.ss-nav-scrolled{background:rgba(7,7,13,.86) !important;border-bottom:1px solid var(--border) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
 .logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
 .mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
@@ -43,24 +49,31 @@ nav.scrolled,nav.ss-nav-scrolled{background:rgba(7,7,13,.82);border-bottom:1px s
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 
 /* HERO */
-.page-hero{position:relative;overflow:hidden;padding:9rem 2rem 5rem;text-align:center;z-index:1}
-.page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(80,18,28,.9) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 30%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg)}
-.page-hero-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 70% at 50% 20%,black 20%,transparent 80%);animation:gridDrift 30s linear infinite}
-@keyframes gridDrift{from{background-position:0 0,0 0}to{background-position:60px 60px,60px 60px}}
+.page-hero{position:relative;overflow:hidden;padding:7.5rem 2rem 4rem;text-align:center;z-index:1}
+.page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(80,18,28,.85) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 30%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg)}
+.page-hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);animation:dotDrift 36s linear infinite;opacity:.7}
+@keyframes dotDrift{from{background-position:0 0}to{background-position:32px 32px}}
 .page-hero-orb{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.12) 0%,transparent 65%);top:-280px;left:50%;transform:translateX(-50%);pointer-events:none;filter:blur(60px)}
-.page-hero-content{position:relative;z-index:1;max-width:780px;margin:0 auto}
-.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.25);color:rgba(255,185,200,.9);padding:5px 14px;border-radius:100px;font-size:.7rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.6rem;animation:up .6s ease both}
+.page-hero-content{position:relative;z-index:2;max-width:780px;margin:0 auto}
+.crumbs{display:inline-flex;gap:.45rem;align-items:center;font-size:.72rem;color:var(--muted);margin-bottom:.95rem;letter-spacing:.4px;animation:up .55s ease both}
+.crumbs a{color:var(--muted);transition:color .15s}
+.crumbs a:hover{color:#fff}
+.crumbs span{color:var(--dim)}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.25);color:rgba(255,185,200,.95);padding:5px 14px;border-radius:100px;font-size:.7rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.4rem;animation:up .6s ease both;position:relative;overflow:hidden}
+.page-eyebrow::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-100%);animation:eyebrowGlint 6s ease-in-out infinite;animation-delay:1.5s}
+@keyframes eyebrowGlint{0%,80%{transform:translateX(-100%)}90%,100%{transform:translateX(100%)}}
 .page-hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.14;margin-bottom:1rem;animation:up .7s .1s ease both;text-wrap:balance}
 .page-hero h1 em{color:var(--red);font-style:normal;position:relative;display:inline-block;background:linear-gradient(135deg,#ff7890 0%,#e94560 52%,#c73652 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.page-hero h1 em::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.85) 50%,transparent 70%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:glint 3.5s ease-in-out infinite;pointer-events:none}
+.page-hero h1 em::after{content:attr(data-text);position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.85) 50%,transparent 70%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:glint 3.5s ease-in-out infinite;pointer-events:none}
 @keyframes glint{0%,60%{background-position:-200% center}70%,100%{background-position:200% center}}
 .page-hero p.page-sub{color:var(--muted);font-size:1.02rem;line-height:1.8;max-width:580px;margin:0 auto;animation:up .7s .2s ease both;text-wrap:pretty}
+.page-hero-actions{display:flex;gap:.65rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem;animation:up .7s .3s ease both}
 @keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 
 /* PAGE */
-.page-content{max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem) 6rem}
+.page-content{max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem) 6rem;position:relative;z-index:1}
 .ps{padding:3.5rem 0;border-top:1px solid var(--border)}
-.ps:first-child{border-top:none;padding-top:4rem}
+.ps:first-child{border-top:none;padding-top:3rem}
 .ps-eyebrow{font-size:.64rem;font-weight:700;color:var(--red);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:.55rem;display:block}
 .ps-title{font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:900;color:#fff;letter-spacing:-.04em;margin-bottom:1.5rem;line-height:1.2}
 .ps-body{color:rgba(255,248,245,.72);font-size:.94rem;line-height:1.78}
@@ -74,8 +87,8 @@ nav.scrolled,nav.ss-nav-scrolled{background:rgba(7,7,13,.82);border-bottom:1px s
 .ps-body a:hover{color:#ff7890}
 
 /* CARD */
-.ps-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.6rem;transition:border-color .2s;position:relative}
-.ps-card:hover{border-color:rgba(233,69,96,.2)}
+.ps-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.6rem;transition:border-color .2s,transform .2s;position:relative}
+.ps-card:hover{border-color:rgba(233,69,96,.2);transform:translateY(-2px)}
 .ps-card h3,.ps-card h4{font-size:1rem;font-weight:800;color:#fff;letter-spacing:-.02em;margin-bottom:.55rem;display:flex;align-items:center;gap:.65rem}
 .ps-card h3::before,.ps-card h4::before{content:'';display:block;width:3px;height:16px;background:linear-gradient(var(--red),var(--red2));border-radius:2px;flex-shrink:0}
 .ps-card p{color:rgba(255,248,245,.66);font-size:.88rem;line-height:1.65;margin:0}
@@ -103,10 +116,10 @@ nav.scrolled,nav.ss-nav-scrolled{background:rgba(7,7,13,.82);border-bottom:1px s
 .ps-value strong{display:block;font-size:.88rem;font-weight:800;color:rgba(255,255,255,.92);margin-bottom:.25rem}
 .ps-value span{font-size:.8rem;color:var(--muted);line-height:1.55}
 
-/* STARS + BARS (from comparison template) */
+/* STARS + BARS */
 .rate-row{display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:rgba(255,255,255,.78);margin:.3rem 0}
 .stars{color:#ffc84a;font-size:1.02rem;letter-spacing:2px;filter:drop-shadow(0 0 6px rgba(255,200,74,.35))}
-.stars.dim{color:rgba(255,200,74,.25);filter:none}
+.stars.dim{color:rgba(255,200,74,.22);filter:none}
 .bar-line{margin:.55rem 0 .75rem}
 .bar-label{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted);margin-bottom:4px;font-weight:600}
 .bar-label strong{color:#fff;font-weight:700}
@@ -123,7 +136,7 @@ nav.scrolled,nav.ss-nav-scrolled{background:rgba(7,7,13,.82);border-bottom:1px s
 .plan.featured{border-color:rgba(233,69,96,.45);background:linear-gradient(155deg,rgba(233,69,96,.08),rgba(199,54,82,.03))}
 .plan.featured::before{content:"Most Popular";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;font-size:.64rem;padding:4px 12px;border-radius:100px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;box-shadow:0 6px 18px rgba(233,69,96,.4)}
 .plan-name{font-size:.7rem;letter-spacing:1.3px;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:.35rem}
-.plan-tag{font-size:1.35rem;font-weight:900;color:#fff;letter-spacing:-.03em;margin-bottom:.25rem}
+.plan-tag{font-size:1.4rem;font-weight:900;color:#fff;letter-spacing:-.03em;margin-bottom:.3rem;line-height:1.1}
 .plan-tag em{color:var(--red);font-style:normal}
 .plan-pitch{font-size:.85rem;color:var(--muted);line-height:1.55;margin-bottom:1rem;min-height:2.5em}
 .plan-price{font-size:2.1rem;font-weight:900;color:#fff;letter-spacing:-.04em;line-height:1}
@@ -174,9 +187,11 @@ nav.scrolled,nav.ss-nav-scrolled{background:rgba(7,7,13,.82);border-bottom:1px s
 /* FORMS */
 .form{display:flex;flex-direction:column;gap:.9rem;max-width:620px;margin:0 auto}
 .form label{display:flex;flex-direction:column;gap:.35rem;color:#fff;font-weight:700;font-size:.82rem;letter-spacing:.2px}
-.form input[type=text],.form input[type=email],.form input[type=url],.form textarea{width:100%;padding:.85rem 1.1rem;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:#fff;font-size:.92rem;font-family:inherit;transition:border-color .2s,background .2s}
-.form input:focus,.form textarea:focus{outline:none;border-color:rgba(233,69,96,.5);background:rgba(255,255,255,.08)}
+.form input[type=text],.form input[type=email],.form input[type=url],.form input[type=number],.form select,.form textarea{width:100%;padding:.85rem 1.1rem;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:#fff;font-size:.92rem;font-family:inherit;transition:border-color .2s,background .2s}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:rgba(233,69,96,.5);background:rgba(255,255,255,.08)}
 .form textarea{resize:vertical;min-height:100px}
+.form select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7'%3E%3Cpath fill='%23ffffff80' d='M6 7 0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1.1rem center;background-size:11px}
+.form select option{background:#0d0d18;color:#fff}
 .email-row{display:flex;gap:.5rem;max-width:460px;margin:1.1rem auto 0;flex-wrap:wrap;justify-content:center}
 .email-row input{flex:1;min-width:220px;padding:.85rem 1.2rem;border-radius:100px;background:rgba(255,255,255,.06);border:1px solid var(--border);color:#fff;font-size:.9rem;font-family:inherit}
 .email-row input:focus{outline:none;border-color:rgba(233,69,96,.5)}
@@ -204,13 +219,16 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3r
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* RESPONSIVE */
+@media(max-width:980px){
+  nav#nav{padding:.85rem 1.15rem}
+  .nav-link{display:none}
+  .nav-link.keep{display:inline-flex}
+}
 @media(max-width:880px){
   .ps-grid-3,.ps-grid-4{grid-template-columns:1fr 1fr}
-  .nav-link{display:none}
 }
 @media(max-width:640px){
-  nav{padding:.85rem 1.15rem}
-  .page-hero{padding:7rem 1.2rem 3.5rem}
+  .page-hero{padding:6.5rem 1.2rem 3.5rem}
   .page-content{padding:0 1.2rem 5rem}
   .ps-grid-2,.ps-grid-3,.ps-grid-4{grid-template-columns:1fr}
   .ps-stat-row{flex-wrap:wrap}
@@ -219,31 +237,40 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3r
 }
 """
 
-# Per-page accent variants so pages feel distinct
+# Per-page accent variants so pages feel distinct (different hero hue, dot opacity, orb)
 ACCENTS = {
-    "spend":    {"hue": "rgba(120,22,40,.9)",  "orb": "rgba(255,120,144,.14)", "grid_opacity": ".03"},
-    "digest":   {"hue": "rgba(100,14,32,.85)", "orb": "rgba(233,69,96,.16)",   "grid_opacity": ".025"},
-    "tracker":  {"hue": "rgba(80,18,28,.9)",   "orb": "rgba(233,69,96,.10)",   "grid_opacity": ".028"},
-    "report":   {"hue": "rgba(90,20,30,.92)",  "orb": "rgba(255,145,170,.12)", "grid_opacity": ".022"},
-    "glossary": {"hue": "rgba(70,14,24,.88)",  "orb": "rgba(233,69,96,.08)",   "grid_opacity": ".03"},
-    "policy":   {"hue": "rgba(85,18,28,.9)",   "orb": "rgba(233,69,96,.12)",   "grid_opacity": ".024"},
-    "rank":     {"hue": "rgba(95,24,34,.9)",   "orb": "rgba(255,120,144,.13)", "grid_opacity": ".03"},
-    "request":  {"hue": "rgba(75,16,26,.88)",  "orb": "rgba(233,69,96,.09)",   "grid_opacity": ".025"},
-    "report2":  {"hue": "rgba(100,22,34,.9)",  "orb": "rgba(255,120,144,.14)", "grid_opacity": ".028"},
+    "spend":    {"hue": "rgba(120,22,40,.85)",  "orb": "rgba(255,120,144,.14)", "dot_opacity": ".07"},
+    "checkout": {"hue": "rgba(95,18,30,.85)",   "orb": "rgba(255,140,160,.16)", "dot_opacity": ".08"},
+    "digest":   {"hue": "rgba(100,14,32,.82)",  "orb": "rgba(233,69,96,.16)",   "dot_opacity": ".065"},
+    "tracker":  {"hue": "rgba(80,18,28,.85)",   "orb": "rgba(233,69,96,.10)",   "dot_opacity": ".055"},
+    "report":   {"hue": "rgba(90,20,30,.88)",   "orb": "rgba(255,145,170,.12)", "dot_opacity": ".06"},
+    "glossary": {"hue": "rgba(70,14,24,.82)",   "orb": "rgba(233,69,96,.08)",   "dot_opacity": ".07"},
+    "policy":   {"hue": "rgba(85,18,28,.85)",   "orb": "rgba(233,69,96,.12)",   "dot_opacity": ".055"},
+    "rank":     {"hue": "rgba(95,24,34,.85)",   "orb": "rgba(255,120,144,.13)", "dot_opacity": ".07"},
+    "request":  {"hue": "rgba(75,16,26,.82)",   "orb": "rgba(233,69,96,.09)",   "dot_opacity": ".06"},
+    "report2":  {"hue": "rgba(100,22,34,.85)",  "orb": "rgba(255,120,144,.14)", "dot_opacity": ".065"},
+    "trust":    {"hue": "rgba(75,18,28,.82)",   "orb": "rgba(233,69,96,.10)",   "dot_opacity": ".055"},
+    "about":    {"hue": "rgba(95,22,34,.85)",   "orb": "rgba(255,140,160,.14)", "dot_opacity": ".07"},
 }
+
+NAV_ITEMS = [
+    ("/pages/", "Comparisons", "compare"),
+    ("/categories.html", "Categories", "cat"),
+    ("/pages/saas-pricing-index", "Pricing Index", "idx"),
+    ("/pages/free-trial-database", "Free Trials", "trials"),
+    ("/pages/saas-glossary", "Glossary", "gloss"),
+]
 
 
 def nav(active=""):
-    def link(href, label, key):
+    parts = []
+    for href, label, key in NAV_ITEMS:
         cls = "nav-link active" if active == key else "nav-link"
-        return f'<a href="{href}" class="{cls}">{label}</a>'
+        parts.append(f'<a href="{href}" class="{cls}">{label}</a>')
+    links = "\n  ".join(parts)
     return f"""<nav id="nav">
   <a href="/" class="logo">{LOGO_SVG}<span class="logo-text">Saa<em>Spare</em></span></a>
-  {link("/pages/", "Comparisons", "compare")}
-  {link("/categories.html", "Categories", "cat")}
-  {link("/pages/saas-pricing-index", "Pricing Index", "idx")}
-  {link("/pages/free-trial-database", "Free Trials", "trials")}
-  {link("/pages/saas-glossary", "Glossary", "gloss")}
+  {links}
   <a href="/shortlist.html" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>"""
 
@@ -253,32 +280,83 @@ def footer():
   <div class="footer-inner">
     <div><strong style="color:#fff">SaaSpare</strong> &middot; Unbiased B2B SaaS comparisons &middot; No paid rankings</div>
     <div class="footer-links">
-      <a href="/about.html">About</a>
-      <a href="/methodology.html">Methodology</a>
+      <a href="/about">About</a>
+      <a href="/methodology">Methodology</a>
       <a href="/pages/how-saaspare-ranks-tools">How We Rank</a>
       <a href="/pages/coupon-verification-policy">Coupon Policy</a>
-      <a href="/affiliate-disclosure.html">Disclosure</a>
+      <a href="/affiliate-disclosure">Disclosure</a>
       <a href="/pages/report-outdated-pricing">Report Pricing</a>
-      <a href="/pages/request-a-comparison">Request Compare</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/pages/request-a-comparison">Request Comparison</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/contact">Contact</a>
     </div>
+    <div style="font-size:.72rem;color:rgba(255,255,255,.28)">&copy; 2026 SaaSpare &middot; ABN 51 824 753 556 &middot; Australia</div>
   </div>
 </footer>"""
 
 
+def breadcrumb_html(items: list[tuple[str, str]]) -> str:
+    """items: list of (href, label). Last item is the current page (no link)."""
+    if not items:
+        return ""
+    parts = []
+    for i, (href, label) in enumerate(items):
+        if i == len(items) - 1:
+            parts.append(f'<span aria-current="page">{label}</span>')
+        else:
+            parts.append(f'<a href="{href}">{label}</a><span>›</span>')
+    return f'<nav class="crumbs" aria-label="Breadcrumb">{"".join(parts)}</nav>'
+
+
+def breadcrumb_schema(items: list[tuple[str, str]]) -> str:
+    item_list = []
+    for i, (href, label) in enumerate(items, start=1):
+        url = href if href.startswith("http") else f"{DOMAIN}{href}"
+        item_list.append(f'{{"@type":"ListItem","position":{i},"name":"{label}","item":"{url}"}}')
+    return f'{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{",".join(item_list)}]}}'
+
+
+def hero_h1_with_glint(plain_text: str, glint_word: str) -> str:
+    """Wrap glint_word in <em data-text="..."> so the ::after layer can mirror text via attr()."""
+    if glint_word and glint_word in plain_text:
+        wrapped = plain_text.replace(glint_word, f'<em data-text="{glint_word}">{glint_word}</em>', 1)
+        return wrapped
+    return plain_text
+
+
 def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
-               schema_extra="", page_type="WebPage"):
+               schema_extra="", page_type="WebPage", crumbs=None,
+               canonical_path=None):
     a = ACCENTS.get(accent, ACCENTS["policy"])
-    canonical = f"{DOMAIN}/pages/{slug}"
-    schema = f'{{"@context":"https://schema.org","@type":"{page_type}","url":"{canonical}","name":"{title}","description":"{desc}","isPartOf":{{"@type":"WebSite","name":"SaaSpare","url":"{DOMAIN}"}},"publisher":{{"@type":"Organization","name":"SaaSpare","url":"{DOMAIN}","logo":"{DOMAIN}/og-default.png"}},"dateModified":"{TODAY}"}}'
+    canonical = f"{DOMAIN}{canonical_path}" if canonical_path else f"{DOMAIN}/pages/{slug}"
+    crumbs = crumbs or [("/", "SaaSpare"), (canonical, title)]
+
+    base_schema = (
+        f'{{"@context":"https://schema.org","@type":"{page_type}","url":"{canonical}",'
+        f'"name":"{title}","description":"{desc}",'
+        f'"isPartOf":{{"@type":"WebSite","name":"SaaSpare","url":"{DOMAIN}"}},'
+        f'"publisher":{{"@type":"Organization","name":"SaaSpare","url":"{DOMAIN}",'
+        f'"logo":{{"@type":"ImageObject","url":"{DOMAIN}/og-default.png"}}}},'
+        f'"author":{{"@type":"Person","name":"Kaylan von Papen","url":"{DOMAIN}/about"}},'
+        f'"dateModified":"{TODAY}"}}'
+    )
+    schemas = [base_schema, breadcrumb_schema(crumbs)]
     if schema_extra:
-        schema = f"[{schema},{schema_extra}]"
-    accent_css = f"""
-.page-hero-bg{{background:radial-gradient(ellipse 80% 60% at 50% -10%,{a['hue']} 0%,transparent 62%),radial-gradient(ellipse 50% 40% at 50% 32%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg) !important}}
-.page-hero-orb{{background:radial-gradient(circle,{a['orb']} 0%,transparent 65%) !important}}
-.page-hero-grid{{background-image:linear-gradient(rgba(255,255,255,{a['grid_opacity']}) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,{a['grid_opacity']}) 1px,transparent 1px) !important}}
-"""
+        schemas.append(schema_extra)
+    schema_block = "\n".join(
+        f'<script type="application/ld+json">{s}</script>' for s in schemas
+    )
+
+    accent_css = (
+        ".page-hero-bg{background:radial-gradient(ellipse 80% 60% at 50% -10%,"
+        f"{a['hue']} 0%,transparent 62%),"
+        "radial-gradient(ellipse 50% 40% at 50% 32%,rgba(233,69,96,.06) 0%,transparent 70%),"
+        "var(--bg) !important}\n"
+        f".page-hero-orb{{background:radial-gradient(circle,{a['orb']} 0%,transparent 65%) !important}}\n"
+        ".page-hero-dots{background-image:radial-gradient(circle,"
+        f"rgba(255,255,255,{a['dot_opacity']}) 1px,transparent 1.4px) !important}}"
+    )
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -286,7 +364,8 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title} | SaaSpare</title>
 <meta name="description" content="{desc}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kaylan von Papen">
 <link rel="canonical" href="{canonical}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -297,15 +376,20 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
 <meta property="og:type" content="article">
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="{DOMAIN}/og-default.png">
+<meta property="og:site_name" content="SaaSpare">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SaaSpare">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
 <meta name="twitter:image" content="{DOMAIN}/og-default.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
-<script type="application/ld+json">{schema}</script>
+{schema_block}
 {OTTO_PIXEL}
 <style>{BASE_CSS}{accent_css}</style>
 </head>
@@ -315,11 +399,21 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
 {footer()}
 <script>
 (function(){{
-  const nav=document.getElementById('nav');
-  const onScroll=()=>{{const s=window.scrollY>24;nav.classList.toggle('scrolled',s);nav.classList.toggle('ss-nav-scrolled',s);}};
-  onScroll();window.addEventListener('scroll',onScroll,{{passive:true}});
-  const io=new IntersectionObserver(en=>en.forEach(e=>{{if(e.isIntersecting){{e.target.classList.add('visible');io.unobserve(e.target)}}}}),{{threshold:.08}});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  var nav=document.getElementById('nav');
+  if(!nav)return;
+  function onScroll(){{
+    var s=window.scrollY>24;
+    nav.classList.toggle('scrolled',s);
+    nav.classList.toggle('ss-nav-scrolled',s);
+  }}
+  onScroll();
+  window.addEventListener('scroll',onScroll,{{passive:true}});
+  if('IntersectionObserver' in window){{
+    var io=new IntersectionObserver(function(en){{en.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add('visible');io.unobserve(e.target);}}}});}},{{threshold:.08}});
+    document.querySelectorAll('.reveal').forEach(function(el){{io.observe(el);}});
+  }}else{{
+    document.querySelectorAll('.reveal').forEach(function(el){{el.classList.add('visible');}});
+  }}
 }})();
 </script>
 </body>
