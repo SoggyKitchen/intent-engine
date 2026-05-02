@@ -62,7 +62,7 @@ def build_request():
 
       <label>Email (so we can credit you)<input type="email" name="email" placeholder="you@company.com"></label>
 
-      <button type="submit" class="btn" style="align-self:flex-start;margin-top:.4rem">Submit request â†’</button>
+      <button type="submit" class="btn" style="align-self:flex-start;margin-top:.4rem">Submit request →</button>
       <p style="font-size:.74rem;color:var(--dim);margin:0">By submitting you agree to our <a href="/privacy">privacy policy</a>.</p>
     </form>
   </div>
@@ -150,7 +150,7 @@ def build_report_pricing():
 
       <label>Your email (so we can credit you)<input type="email" name="email" placeholder="you@company.com"></label>
 
-      <button type="submit" class="btn" style="align-self:flex-start;margin-top:.4rem">Submit report â†’</button>
+      <button type="submit" class="btn" style="align-self:flex-start;margin-top:.4rem">Submit report →</button>
       <p style="font-size:.74rem;color:var(--dim);margin:0">We verify every report. Verified reporters get credited on the updated page (or stay anonymous, your call).</p>
     </form>
   </div>

@@ -37,7 +37,7 @@ def build():
   <div class="ps reveal" id="tiers">
     <span class="ps-eyebrow">Three tiers · One-off pricing</span>
     <h2 class="ps-title">Pick the depth that fits your stack</h2>
-    <p class="ps-body" style="margin-bottom:1rem">Flat fee, no retainer, no "book a call" gate. If we cannot identify at least 3Ã— the audit cost in recoverable annual savings we refund in full.</p>
+    <p class="ps-body" style="margin-bottom:1rem">Flat fee, no retainer, no "book a call" gate. If we cannot identify at least 3× the audit cost in recoverable annual savings we refund in full.</p>
     <div class="plan-grid">
 
       <div class="plan">
@@ -53,7 +53,7 @@ def build():
           <li>Pricing database (1,017 tools)</li>
           <li class="x">No human review</li>
         </ul>
-        <a href="/pages/saas-stack-audit-checkout?tier=brief" class="plan-cta" data-tier="brief">Get the toolkit â†’</a>
+        <a href="/pages/saas-stack-audit-checkout?tier=brief" class="plan-cta" data-tier="brief">Get the toolkit →</a>
       </div>
 
       <div class="plan featured">
@@ -70,7 +70,7 @@ def build():
           <li>20-min strategy call</li>
           <li>14-day email follow-up</li>
         </ul>
-        <a href="/pages/saas-stack-audit-checkout?tier=audit" class="plan-cta" data-tier="audit">Start the Stack Audit â†’</a>
+        <a href="/pages/saas-stack-audit-checkout?tier=audit" class="plan-cta" data-tier="audit">Start the Stack Audit →</a>
       </div>
 
       <div class="plan">
@@ -87,7 +87,7 @@ def build():
           <li>Guaranteed savings or full refund</li>
           <li>Mutual NDA available</li>
         </ul>
-        <a href="/pages/saas-stack-audit-checkout?tier=concierge" class="plan-cta" data-tier="concierge">Request Concierge â†’</a>
+        <a href="/pages/saas-stack-audit-checkout?tier=concierge" class="plan-cta" data-tier="concierge">Request Concierge →</a>
       </div>
 
     </div>
@@ -140,7 +140,7 @@ def build():
     <details class="faq"><summary>Do I have to actually cancel anything?</summary><p>No. Most savings come from (1) dropping unused seats, (2) renegotiating renewals, (3) downgrading plans you have outgrown. Switching tools is a last resort — the first year of switching cost usually outweighs the savings.</p></details>
     <details class="faq"><summary>Is the A$29 Stack Brief enough on its own?</summary><p>For founders with 5–15 tools and under 10 people, yes. For larger stacks the A$99 Stack Audit pays for itself in the first renewal you touch.</p></details>
     <details class="faq"><summary>Will you sign an NDA?</summary><p>Yes — standard mutual NDA available on Stack Audit and Stack Concierge. Email <a href="mailto:audit@saaspare.org">audit@saaspare.org</a>.</p></details>
-    <details class="faq"><summary>What if you find nothing?</summary><p>Stack Audit and Stack Concierge come with a 30-day money-back guarantee. If we cannot identify at least 3Ã— your audit fee in recoverable annual savings, full refund.</p></details>
+    <details class="faq"><summary>What if you find nothing?</summary><p>Stack Audit and Stack Concierge come with a 30-day money-back guarantee. If we cannot identify at least 3× your audit fee in recoverable annual savings, full refund.</p></details>
     <details class="faq"><summary>How is this different from Vendr, Tropic or Sastrify?</summary><p>Those are enterprise procurement platforms charging A$10k+/year to manage your stack ongoing. The Stack Audit is a one-off audit for founders and ops leads who want the savings without the platform contract.</p></details>
     <details class="faq"><summary>Is my data safe?</summary><p>All audit data is processed in the EU/AU and deleted 30 days after delivery unless you request retention. NDA available on request.</p></details>
   </div>
@@ -244,7 +244,7 @@ def build_checkout():
         <input type="checkbox" name="nda" value="yes" style="margin-top:4px;width:auto;flex:0 0 auto"> I would like a mutual NDA before sharing my stack list (no extra cost).
       </label>
 
-      <button type="submit" class="btn" style="align-self:flex-start;margin-top:.4rem">Submit intake â†’</button>
+      <button type="submit" class="btn" style="align-self:flex-start;margin-top:.4rem">Submit intake →</button>
       <p style="font-size:.74rem;color:var(--dim);margin:0">By submitting you agree to our <a href="/privacy">privacy policy</a>. We confirm fit before charging anything.</p>
     </form>
   </div>
@@ -262,7 +262,7 @@ def build_checkout():
 
   <div class="ps reveal">
     <div class="ps-callout">
-      <p><strong>30-day money-back guarantee.</strong> Stack Audit and Stack Concierge: if we cannot identify at least 3Ã— your audit fee in recoverable annual savings, full refund — no questions, no fine print.</p>
+      <p><strong>30-day money-back guarantee.</strong> Stack Audit and Stack Concierge: if we cannot identify at least 3× your audit fee in recoverable annual savings, full refund — no questions, no fine print.</p>
     </div>
   </div>
 

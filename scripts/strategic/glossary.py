@@ -18,9 +18,9 @@ TERMS = [
     ("Expansion revenue", "New ARR from existing customers via upsells, cross-sells, or seat expansion. Key to high NDR."),
     ("Freemium", "A pricing model with a free tier alongside paid plans. Common in developer and productivity SaaS."),
     ("Gross margin", "Revenue minus COGS (hosting, support, payment fees) divided by revenue. SaaS benchmark: 70–85%."),
-    ("LTV", "Customer Lifetime Value — average revenue per customer over their entire relationship. Should exceed 3Ã— CAC."),
+    ("LTV", "Customer Lifetime Value — average revenue per customer over their entire relationship. Should exceed 3× CAC."),
     ("MQL", "Marketing Qualified Lead — a lead that is engaged enough with marketing content to be handed to sales."),
-    ("MRR", "Monthly Recurring Revenue — normalised monthly subscription revenue. ARR Ã· 12."),
+    ("MRR", "Monthly Recurring Revenue — normalised monthly subscription revenue. ARR ÷ 12."),
     ("NPS", "Net Promoter Score — a customer satisfaction metric measuring likelihood to recommend. SaaS benchmark: 30+."),
     ("PLG", "Product-Led Growth — acquisition model where the product drives sign-ups (vs. sales-led). Examples: Slack, Notion, Figma."),
     ("POC", "Proof of Concept — a limited-scope trial to validate technical fit. Usually required for enterprise SaaS."),
@@ -88,7 +88,7 @@ def build():
     <div class="cta-big">
       <h3>Want new terms in your inbox?</h3>
       <p>Every Friday the Weekly SaaS Deal Digest adds new terms as SaaS contracts get weirder.</p>
-      <a href="/pages/weekly-saas-deal-digest" class="btn">Subscribe free â†’</a>
+      <a href="/pages/weekly-saas-deal-digest" class="btn">Subscribe free →</a>
     </div>
   </div>
 </main>

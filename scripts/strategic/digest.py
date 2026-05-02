@@ -22,7 +22,7 @@ def build():
       <input type="hidden" name="_subject" value="Newsletter signup: Weekly SaaS Deal Digest">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://saaspare.org/pages/weekly-saas-deal-digest?ok=1">
-      <button type="submit">Join 2,000+ buyers â†’</button>
+      <button type="submit">Join 2,000+ buyers →</button>
     </form>
     <p style="font-size:.76rem;margin-top:.8rem;color:var(--dim)">One-click unsubscribe. Zero affiliate spam disguised as deals.</p>
   </div>
@@ -66,7 +66,7 @@ def build():
         <input type="email" name="email" placeholder="you@company.com" required>
         <input type="hidden" name="_subject" value="Newsletter signup (CTA): Weekly SaaS Deal Digest">
         <input type="hidden" name="_captcha" value="false">
-        <button type="submit">Subscribe free â†’</button>
+        <button type="submit">Subscribe free →</button>
       </form>
     </div>
   </div>

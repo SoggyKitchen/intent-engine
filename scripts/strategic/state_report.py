@@ -77,7 +77,7 @@ def build():
 
   <div class="ps reveal">
     <div class="ps-callout">
-      <p><strong>The hidden seat minimum problem:</strong> 28% of SaaS vendors hide a seat minimum that is not mentioned on the pricing page. Worst offenders in our dataset: <strong>Monday.com</strong> (3â†’5 seat min), <strong>Atlassian Jira</strong> (10-seat min on Premium), <strong>Figma Organization</strong> (25-seat min for governance).</p>
+      <p><strong>The hidden seat minimum problem:</strong> 28% of SaaS vendors hide a seat minimum that is not mentioned on the pricing page. Worst offenders in our dataset: <strong>Monday.com</strong> (3→5 seat min), <strong>Atlassian Jira</strong> (10-seat min on Premium), <strong>Figma Organization</strong> (25-seat min for governance).</p>
     </div>
   </div>
 
@@ -85,7 +85,7 @@ def build():
     <div class="cta-big">
       <h3>Embed this data</h3>
       <p>Publishers and analysts: you are welcome to cite or embed these stats. Please credit saaspare.org and link to this page.</p>
-      <a href="/pages/saas-pricing-index" class="btn">Get full dataset â†’</a>
+      <a href="/pages/saas-pricing-index" class="btn">Get full dataset →</a>
     </div>
   </div>
 

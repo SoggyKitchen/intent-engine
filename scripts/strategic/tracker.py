@@ -37,13 +37,13 @@ def build():
       <table class="tbl">
         <thead><tr><th>Vendor</th><th>Change</th><th>Effective</th><th>Impact</th><th>Cheaper alternative</th></tr></thead>
         <tbody>
-          <tr><td><strong>Salesforce</strong></td><td><span class="badge r">+9% starter</span></td><td>Feb 2026</td><td>$25 â†’ $27.50/user</td><td><a href="/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay">HubSpot CRM</a></td></tr>
-          <tr><td><strong>HubSpot Marketing Pro</strong></td><td><span class="badge r">+15% tier jump</span></td><td>Jan 2026</td><td>$890 â†’ $1,020/mo</td><td><a href="/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay">ActiveCampaign</a></td></tr>
+          <tr><td><strong>Salesforce</strong></td><td><span class="badge r">+9% starter</span></td><td>Feb 2026</td><td>$25 → $27.50/user</td><td><a href="/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay">HubSpot CRM</a></td></tr>
+          <tr><td><strong>HubSpot Marketing Pro</strong></td><td><span class="badge r">+15% tier jump</span></td><td>Jan 2026</td><td>$890 → $1,020/mo</td><td><a href="/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay">ActiveCampaign</a></td></tr>
           <tr><td><strong>Monday.com Pro</strong></td><td><span class="badge r">+12% seat min</span></td><td>Mar 2026</td><td>3-seat min raised to 5</td><td><a href="/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay">ClickUp</a></td></tr>
-          <tr><td><strong>Datadog</strong></td><td><span class="badge r">+22% log retention</span></td><td>Apr 2026</td><td>30â†’14 day default</td><td><a href="/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay">Sentry</a></td></tr>
-          <tr><td><strong>Atlassian Jira</strong></td><td><span class="badge r">+20% Cloud Premium</span></td><td>Feb 2026</td><td>$17.50 â†’ $21/user</td><td><a href="/pages/linear-pricing-2026-plans-costs-what-you-actually-pay">Linear</a></td></tr>
-          <tr><td><strong>Adobe Creative Cloud</strong></td><td><span class="badge r">+11% all plans</span></td><td>Jan 2026</td><td>$59.99 â†’ $66.99/mo</td><td>Figma + Canva combo</td></tr>
-          <tr><td><strong>1Password Business</strong></td><td><span class="badge r">+14% per seat</span></td><td>Mar 2026</td><td>$7.99 â†’ $9.11/user</td><td><a href="/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay">Bitwarden</a></td></tr>
+          <tr><td><strong>Datadog</strong></td><td><span class="badge r">+22% log retention</span></td><td>Apr 2026</td><td>30→14 day default</td><td><a href="/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay">Sentry</a></td></tr>
+          <tr><td><strong>Atlassian Jira</strong></td><td><span class="badge r">+20% Cloud Premium</span></td><td>Feb 2026</td><td>$17.50 → $21/user</td><td><a href="/pages/linear-pricing-2026-plans-costs-what-you-actually-pay">Linear</a></td></tr>
+          <tr><td><strong>Adobe Creative Cloud</strong></td><td><span class="badge r">+11% all plans</span></td><td>Jan 2026</td><td>$59.99 → $66.99/mo</td><td>Figma + Canva combo</td></tr>
+          <tr><td><strong>1Password Business</strong></td><td><span class="badge r">+14% per seat</span></td><td>Mar 2026</td><td>$7.99 → $9.11/user</td><td><a href="/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay">Bitwarden</a></td></tr>
         </tbody>
       </table>
     </div>
@@ -56,10 +56,10 @@ def build():
       <table class="tbl">
         <thead><tr><th>Vendor</th><th>Change</th><th>Effective</th><th>Savings</th></tr></thead>
         <tbody>
-          <tr><td><strong>Notion Plus</strong></td><td><span class="badge g">âˆ’12%</span></td><td>Jan 2026</td><td>$10 â†’ $8.80/user</td></tr>
+          <tr><td><strong>Notion Plus</strong></td><td><span class="badge g">âˆ’12%</span></td><td>Jan 2026</td><td>$10 → $8.80/user</td></tr>
           <tr><td><strong>Airtable Team</strong></td><td><span class="badge g">âˆ’20% annual</span></td><td>Feb 2026</td><td>New annual discount</td></tr>
-          <tr><td><strong>Vercel Pro</strong></td><td><span class="badge g">âˆ’25% build minutes</span></td><td>Mar 2026</td><td>6k â†’ 8k minutes included</td></tr>
-          <tr><td><strong>Claude Pro</strong></td><td><span class="badge g">Free tier 2Ã—</span></td><td>Apr 2026</td><td>Double free usage</td></tr>
+          <tr><td><strong>Vercel Pro</strong></td><td><span class="badge g">âˆ’25% build minutes</span></td><td>Mar 2026</td><td>6k → 8k minutes included</td></tr>
+          <tr><td><strong>Claude Pro</strong></td><td><span class="badge g">Free tier 2×</span></td><td>Apr 2026</td><td>Double free usage</td></tr>
         </tbody>
       </table>
     </div>
@@ -69,9 +69,9 @@ def build():
     <span class="ps-eyebrow">Plan restructures</span>
     <h2 class="ps-title">The "technically not a hike" moves to watch</h2>
     <div class="ps-grid-2">
-      <div class="ps-card"><h4>Slack Pro â†’ Business+</h4><p>Free plan now limits to 90-day message history (was unlimited). Many teams being pushed to upgrade.</p></div>
-      <div class="ps-card"><h4>Zoom One â†’ Zoom Workplace</h4><p>AI Companion moved out of free. Clip storage reduced for free users. Watch for hidden enterprise minimums.</p></div>
-      <div class="ps-card"><h4>Figma Starter â†’ Free</h4><p>Renamed free tier. Now limits editors to 3 (was unlimited for Starter). Upgrade path is steeper than before.</p></div>
+      <div class="ps-card"><h4>Slack Pro → Business+</h4><p>Free plan now limits to 90-day message history (was unlimited). Many teams being pushed to upgrade.</p></div>
+      <div class="ps-card"><h4>Zoom One → Zoom Workplace</h4><p>AI Companion moved out of free. Clip storage reduced for free users. Watch for hidden enterprise minimums.</p></div>
+      <div class="ps-card"><h4>Figma Starter → Free</h4><p>Renamed free tier. Now limits editors to 3 (was unlimited for Starter). Upgrade path is steeper than before.</p></div>
       <div class="ps-card"><h4>GitHub Copilot Business</h4><p>New "Enterprise" tier at $39/user. Business unchanged but governance moved behind the new tier.</p></div>
     </div>
   </div>
@@ -80,7 +80,7 @@ def build():
     <div class="cta-big">
       <h3>Never get surprised by a SaaS price hike again</h3>
       <p>Subscribe to the Weekly SaaS Deal Digest and we flag every tracked change — and the cheaper alternative — every Friday.</p>
-      <a href="/pages/weekly-saas-deal-digest" class="btn">Subscribe free â†’</a>
+      <a href="/pages/weekly-saas-deal-digest" class="btn">Subscribe free →</a>
     </div>
   </div>
 
@@ -89,7 +89,7 @@ def build():
     <h2 class="ps-title">Methodology</h2>
     <div class="ps-body">
       <p>Price changes are captured from public vendor pricing pages (archived via Wayback Machine), company announcements, customer emails forwarded by our community, and internal verification. Every change is logged with a timestamp and source URL. See the full <a href="/methodology">methodology</a>.</p>
-      <p>Spot a change we missed? <a href="/pages/report-outdated-pricing">Tell us â†’</a></p>
+      <p>Spot a change we missed? <a href="/pages/report-outdated-pricing">Tell us →</a></p>
     </div>
   </div>
 

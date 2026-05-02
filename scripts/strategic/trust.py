@@ -37,9 +37,9 @@ def build_coupon_policy():
     <span class="ps-eyebrow">What "verified" means</span>
     <h2 class="ps-title">The badges, decoded</h2>
     <div class="ps-value-grid">
-      <div class="ps-value"><strong><span class="badge g">âœ“ Verified</span></strong><span>We personally entered it at checkout in the last 30 days and the discount applied. Terms are published on the page.</span></div>
+      <div class="ps-value"><strong><span class="badge g">✓ Verified</span></strong><span>We personally entered it at checkout in the last 30 days and the discount applied. Terms are published on the page.</span></div>
       <div class="ps-value"><strong><span class="badge y">âš  May be expired</span></strong><span>We have not re-verified in 30+ days but have no evidence it is broken. Worth trying but not guaranteed.</span></div>
-      <div class="ps-value"><strong><span class="badge r">âœ— Broken</span></strong><span>Re-verification failed or a reader flagged it. We remove within 24h.</span></div>
+      <div class="ps-value"><strong><span class="badge r">✗ Broken</span></strong><span>Re-verification failed or a reader flagged it. We remove within 24h.</span></div>
       <div class="ps-value"><strong>ðŸ”’ Affiliate disclosed</strong><span>Some coupons are tracked through affiliate links that earn us a commission. Earnings never affect which codes we list.</span></div>
     </div>
   </div>
@@ -54,7 +54,7 @@ def build_coupon_policy():
     <div class="cta-big">
       <h3>Spot a broken coupon?</h3>
       <p>Tell us. We verify and remove broken codes within 24 hours, and replace them with a working one if we can find one.</p>
-      <a href="mailto:coupons@saaspare.org?subject=Broken%20Coupon" class="btn">Report a coupon â†’</a>
+      <a href="mailto:coupons@saaspare.org?subject=Broken%20Coupon" class="btn">Report a coupon →</a>
     </div>
   </div>
 
@@ -139,7 +139,7 @@ def build_rank_methodology():
     <div class="cta-big">
       <h3>Spot a comparison that needs updating?</h3>
       <p>If a vendor changed pricing or shipped a major feature, we want to know — and re-score within 14 days.</p>
-      <a href="/pages/report-outdated-pricing" class="btn">Report it â†’</a>
+      <a href="/pages/report-outdated-pricing" class="btn">Report it →</a>
     </div>
   </div>
 
