@@ -239,13 +239,17 @@ def get_seo_tags(
         if not _match_pattern(stem, pattern["url_pattern"]):
             continue
         x_value = comparison or product or fallback_title or "Product"
-        title = pattern["title_template"].replace("X vs. Y", comparison or x_value)
-        title = title.replace("X", x_value)
-        title = title.replace("Y", category_title)
+        # Replace "X vs. Y" first; if that consumed the placeholder, skip X/Y replacements
+        # to avoid corrupting brands that contain "X" (e.g. "Xero" → "Xeroero vs. Brand")
+        title_tpl = pattern["title_template"]
+        meta_tpl = pattern["meta_template"]
+        if comparison and "X vs. Y" in title_tpl:
+            title = title_tpl.replace("X vs. Y", comparison)
+            meta = meta_tpl.replace("X vs. Y", comparison)
+        else:
+            title = title_tpl.replace("X vs. Y", x_value).replace("X", x_value).replace("Y", category_title)
+            meta = meta_tpl.replace("X vs. Y", x_value).replace("X", x_value).replace("Y", category_meta)
         title = title.replace("[Category]", category_title)
-        meta = pattern["meta_template"].replace("X vs. Y", comparison or x_value)
-        meta = meta.replace("X", x_value)
-        meta = meta.replace("Y", category_meta)
         meta = meta.replace("[Category]", category_title)
         meta = meta.replace("[category]", category_meta)
         return {"title": _clean(title), "meta_description": _clean(meta)}

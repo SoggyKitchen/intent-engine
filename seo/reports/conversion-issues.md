@@ -1,3 +1,3 @@
 # Conversion Issues
 
-No major conversion issues detected.
+- `/categories`: CTA=False, sticky=True, email=False, disclosure=True

@@ -2,6 +2,7 @@
 
 These are not safe to fake or mass rewrite.
 
+- `/categories`: thin_buyer_page
 - `/deal-radar`: thin_buyer_page
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page

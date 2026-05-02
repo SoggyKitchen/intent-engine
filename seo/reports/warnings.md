@@ -1,5 +1,6 @@
 # Warnings
 
+- `/categories` (pricing, 82.29/100): thin_buyer_page
 - `/deal-radar` (pricing, 87.0/100): thin_buyer_page
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
@@ -12,44 +13,29 @@
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.31/100): thin_buyer_page
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.91/100): thin_buyer_page
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.89/100): thin_buyer_page
-- `/pages/best-agentic-development-tools-for-engineering-teams-in-2025` (best_of, 97.0/100): title_length_outside_target
 - `/pages/best-ahrefs-alternatives-in-2026-free-paid` (alternatives, 99.0/100): title_length_outside_target
-- `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked` (best_of, 98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-ai-tutor-tools-for-education-in-2025` (best_of, 97.82/100): thin_buyer_page
 - `/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-cloud-infra-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions` (best_of, 97.0/100): title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (best_of, 96.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (best_of, 97.0/100): meta_length_outside_target
 - `/pages/best-crm-software-for-b2b-saas-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-crm-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-cybersecurity-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): title_length_outside_target
-- `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (best_of, 97.0/100): title_length_outside_target
 - `/pages/best-devops-tools-for-security-compliance-in-2025` (best_of, 98.16/100): thin_buyer_page
-- `/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025` (best_of, 97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster` (best_of, 97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025` (best_of, 97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (best_of, 97.0/100): title_length_outside_target
 - `/pages/best-devtools-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): title_length_outside_target
-- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025` (best_of, 97.0/100): title_length_outside_target
-- `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025` (best_of, 97.0/100): title_length_outside_target
 - `/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-finance-ops-software-for-small-business-in-2026-ranked` (best_of, 98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-finance-ops-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (best_of, 97.0/100): meta_length_outside_target
 - `/pages/best-hr-recruiting-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-legal-compliance-software-for-startups-in-2026-ranked` (best_of, 98.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked` (best_of, 99.0/100): title_length_outside_target
-- `/pages/best-marketing-automation-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): title_length_outside_target
-- `/pages/best-password-managers-software-for-business-in-2026-ranked` (best_of, 98.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/best-project-management-software-for-remote-teams-in-2026-ranked` (best_of, 99.0/100): title_length_outside_target
-- `/pages/best-project-management-software-for-startups-in-2026-ranked` (best_of, 98.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/best-project-management-software-in-2026-for-every-team-size` (best_of, 98.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/best-saas-analytics-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): title_length_outside_target
+- `/pages/best-legal-compliance-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
+- `/pages/best-password-managers-software-for-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
+- `/pages/best-project-management-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
+- `/pages/best-project-management-software-in-2026-for-every-team-size` (best_of, 99.0/100): meta_length_outside_target
+- `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025` (best_of, 91.0/100): meta_length_outside_target
 - `/pages/best-semrush-alternatives-in-2026-free-paid` (pricing, 99.0/100): title_length_outside_target
 - `/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed` (review, 99.0/100): title_length_outside_target
 - `/pages/best-seo-tools-software-for-bloggers-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-seo-tools-software-for-content-teams-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked` (best_of, 99.0/100): title_length_outside_target
 - `/pages/best-vpn-business-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
@@ -60,14 +46,13 @@
 - `/pages/deel-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page
 - `/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.34/100): thin_buyer_page
 - `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.87/100): thin_buyer_page
+- `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown` (free_trial, 97.0/100): title_length_outside_target
 - `/pages/does-hubspot-have-a-free-plan-2026-full-breakdown` (free_trial, 99.91/100): thin_buyer_page
 - `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.46/100): thin_buyer_page, title_length_outside_target
-- `/pages/freshbooks-vs-xero-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages` (pricing, 90.0/100): title_length_outside_target
+- `/pages` (pricing, 88.0/100): title_length_outside_target
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page
 - `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.12/100): thin_buyer_page
-- `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.98/100): thin_buyer_page
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.0/100): title_length_outside_target
 - `/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.66/100): thin_buyer_page
@@ -88,5 +73,4 @@
 - `/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.48/100): thin_buyer_page
 - `/pages/workable-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.67/100): thin_buyer_page
 - `/pages/xero-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.78/100): thin_buyer_page
-- `/pages/xero-vs-quickbooks-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/zoom-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.98/100): thin_buyer_page

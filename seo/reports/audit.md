@@ -1,14 +1,14 @@
 # SEO Audit
 
-Pages scanned: 1000
+Pages scanned: 1001
 
 ## Severe Issue Counts
-No items.
+- broken_internal_link: 1
 
 ## Warning Counts
-- meta_length_outside_target: 18
-- thin_buyer_page: 42
-- title_length_outside_target: 38
+- meta_length_outside_target: 19
+- thin_buyer_page: 43
+- title_length_outside_target: 13
 
 ## Lowest Scoring Pages
 - `/media-kit`: 59.96/100, issues=none
@@ -20,20 +20,13 @@ No items.
 - `/about`: 77.19/100, issues=none
 - `/`: 80.33/100, issues=none
 - `/methodology`: 82.25/100, issues=none
+- `/categories`: 82.29/100, issues=none
 - `/deal-radar`: 87.0/100, issues=none
-- `/pages`: 90.0/100, issues=none
-- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025`: 96.0/100, issues=none
-- `/pages/best-agentic-development-tools-for-engineering-teams-in-2025`: 97.0/100, issues=none
-- `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions`: 97.0/100, issues=none
-- `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025`: 97.0/100, issues=none
-- `/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025`: 97.0/100, issues=none
-- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster`: 97.0/100, issues=none
-- `/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025`: 97.0/100, issues=none
-- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025`: 97.0/100, issues=none
-- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025`: 97.0/100, issues=none
-- `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025`: 97.0/100, issues=none
+- `/pages`: 88.0/100, issues=none
+- `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025`: 91.0/100, issues=broken_internal_link
+- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025`: 97.0/100, issues=none
 - `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked`: 97.0/100, issues=none
-- `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026`: 97.0/100, issues=none
+- `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown`: 97.0/100, issues=none
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: 97.11/100, issues=none
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay`: 97.3/100, issues=none
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: 97.46/100, issues=none
@@ -57,7 +50,14 @@ No items.
 - `/pages/aws-vs-google-cloud-which-is-better-in-2026`: 98.0/100, issues=none
 - `/pages/aws-vs-railway-which-is-better-in-2026`: 98.0/100, issues=none
 - `/pages/basecamp-vs-todoist-which-is-better-in-2026`: 98.0/100, issues=none
-- `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked`: 98.0/100, issues=none
+- `/pages/best-agentic-development-tools-for-engineering-teams-in-2025`: 98.0/100, issues=none
 - `/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025`: 98.0/100, issues=none
+- `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions`: 98.0/100, issues=none
+- `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025`: 98.0/100, issues=none
 - `/pages/best-devops-configuration-drift-detection-tools-in-2025`: 98.0/100, issues=none
+- `/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025`: 98.0/100, issues=none
+- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster`: 98.0/100, issues=none
 - `/pages/best-devtools-for-developer-workflow-automation-in-2025`: 98.0/100, issues=none
+- `/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025`: 98.0/100, issues=none
+- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025`: 98.0/100, issues=none
+- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025`: 98.0/100, issues=none

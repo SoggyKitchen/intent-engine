@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-05-01T13:22:10+00:00
+Generated: 2026-05-02T03:36:08+00:00
 Mode: `apply-safe`
 
 ## Current Score
-- Overall SaaSpare Health Score: **99.28/100**
+- Overall SaaSpare Health Score: **99.27/100**
 - Level: **Elite SEO/revenue engine**
-- Technical SEO: 19.94/20
-- Content usefulness: 19.93/20
+- Technical SEO: 19.97/20
+- Content usefulness: 19.92/20
 - Trust/E-E-A-T: 19.93/20
-- Internal linking: 14.9/15
-- Schema/indexability: 9.96/10
-- Conversion/revenue: 9.63/10
+- Internal linking: 14.89/15
+- Schema/indexability: 9.95/10
+- Conversion/revenue: 9.62/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1000
+- Pages scanned: 1001
 - Healthy pages (85+): 991
 - Unhealthy pages (<55): 0
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 120
+- Safe fixes applied this run: 977
 - GSC: skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -40,20 +40,13 @@ Mode: `apply-safe`
 - Manual review for pricing, coupon, review, rating and vendor claims.
 
 ## Top 25 Highest-Impact Fixes
+- `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025` (91.0/100): broken_internal_link, meta_length_outside_target
+- `/categories` (82.29/100): thin_buyer_page
 - `/deal-radar` (87.0/100): thin_buyer_page
-- `/pages` (90.0/100): title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (96.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/best-agentic-development-tools-for-engineering-teams-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions` (97.0/100): title_length_outside_target
-- `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster` (97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-devtools-for-secure-autonomous-agent-development-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025` (97.0/100): title_length_outside_target
-- `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025` (97.0/100): title_length_outside_target
+- `/pages` (88.0/100): title_length_outside_target
+- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (97.0/100): meta_length_outside_target
 - `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (97.0/100): meta_length_outside_target
-- `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026` (97.0/100): title_length_outside_target
+- `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (97.11/100): thin_buyer_page
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay` (97.3/100): thin_buyer_page
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (97.46/100): thin_buyer_page, title_length_outside_target
@@ -63,8 +56,15 @@ Mode: `apply-safe`
 - `/pages/best-ai-tutor-tools-for-education-in-2025` (97.82/100): thin_buyer_page
 - `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay` (97.88/100): thin_buyer_page
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
-- `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/best-finance-ops-software-for-small-business-in-2026-ranked` (98.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/deel-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
+- `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
+- `/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay` (98.0/100): thin_buyer_page
+- `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay` (98.12/100): thin_buyer_page
+- `/pages/best-devops-tools-for-security-compliance-in-2025` (98.16/100): thin_buyer_page
+- `/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay` (98.2/100): thin_buyer_page
+- `/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay` (98.22/100): thin_buyer_page
+- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (98.31/100): thin_buyer_page
+- `/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay` (98.34/100): thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.72): CTA=True, affiliateLinks=1, disclosure=True

@@ -1,5 +1,6 @@
 # Thin Pages
 
+- `/categories`: 658 words, score 82.29
 - `/deal-radar`: 399 words, score 87.0
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay`: 719 words, score 98.0
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: 721 words, score 97.11
@@ -18,7 +19,7 @@
 - `/pages/deel-pricing-2026-plans-costs-what-you-actually-pay`: 720 words, score 98.0
 - `/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay`: 787 words, score 98.34
 - `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts`: 773 words, score 99.87
-- `/pages/does-hubspot-have-a-free-plan-2026-full-breakdown`: 781 words, score 99.91
+- `/pages/does-hubspot-have-a-free-plan-2026-full-breakdown`: 782 words, score 99.91
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: 721 words, score 97.46
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay`: 719 words, score 98.0
 - `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay`: 744 words, score 98.12

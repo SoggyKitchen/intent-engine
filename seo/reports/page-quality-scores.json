@@ -22,6 +22,17 @@
     "trust": 20.0
   },
   {
+    "content": 13.29,
+    "conversionRevenue": 3,
+    "internalLinking": 15,
+    "overall": 82.29,
+    "path": "/categories",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 20,
+    "trust": 20.0
+  },
+  {
     "content": 10.69,
     "conversionRevenue": 4,
     "internalLinking": 7.25,
@@ -44,7 +55,7 @@
     "trust": 20.0
   },
   {
-    "content": 16.82,
+    "content": 16.83,
     "conversionRevenue": 8,
     "internalLinking": 12,
     "overall": 80.33,
@@ -1741,11 +1752,11 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -1763,11 +1774,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 98.0,
+    "overall": 99.0,
     "path": "/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 18,
+    "technical": 19,
     "trust": 20.0
   },
   {
@@ -1862,22 +1873,22 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 96.0,
+    "overall": 97.0,
     "path": "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 18,
+    "technical": 19,
     "trust": 20.0
   },
   {
@@ -1917,11 +1928,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -1950,11 +1961,11 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -1983,22 +1994,22 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -2038,22 +2049,22 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -2071,33 +2082,33 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-error-handling-and-devtools-libraries-for-go-and-python-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -2115,11 +2126,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 98.0,
+    "overall": 99.0,
     "path": "/pages/best-finance-ops-software-for-small-business-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 18,
+    "technical": 19,
     "trust": 20.0
   },
   {
@@ -2181,11 +2192,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 98.0,
+    "overall": 99.0,
     "path": "/pages/best-legal-compliance-software-for-startups-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 18,
+    "technical": 19,
     "trust": 20.0
   },
   {
@@ -2203,22 +2214,22 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/best-marketing-automation-software-for-small-business-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -2258,11 +2269,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 98.0,
+    "overall": 99.0,
     "path": "/pages/best-password-managers-software-for-business-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 18,
+    "technical": 19,
     "trust": 20.0
   },
   {
@@ -2280,8 +2291,19 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 10,
+    "internalLinking": 15,
+    "overall": 99.0,
+    "path": "/pages/best-project-management-software-for-startups-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 19,
@@ -2291,22 +2313,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 98.0,
-    "path": "/pages/best-project-management-software-for-startups-in-2026-ranked",
-    "performanceUx": 5,
-    "schemaIndexability": 10,
-    "technical": 18,
-    "trust": 20.0
-  },
-  {
-    "content": 20,
-    "conversionRevenue": 10,
-    "internalLinking": 15,
-    "overall": 98.0,
+    "overall": 99.0,
     "path": "/pages/best-project-management-software-in-2026-for-every-team-size",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 18,
+    "technical": 19,
     "trust": 20.0
   },
   {
@@ -2324,22 +2335,22 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
     "content": 20,
-    "conversionRevenue": 10,
-    "internalLinking": 15,
-    "overall": 100,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 91.0,
     "path": "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 20,
+    "technical": 16,
     "trust": 20.0
   },
   {
@@ -2445,11 +2456,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -4293,11 +4304,11 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 98.0,
+    "overall": 97.0,
     "path": "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 20,
+    "technical": 19,
     "trust": 20.0
   },
   {
@@ -4788,11 +4799,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/freshbooks-vs-xero-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -5710,9 +5721,9 @@
   },
   {
     "content": 17,
-    "conversionRevenue": 8,
+    "conversionRevenue": 6,
     "internalLinking": 15,
-    "overall": 90.0,
+    "overall": 88.0,
     "path": "/pages",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -6812,11 +6823,11 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -10739,11 +10750,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/xero-vs-quickbooks-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {

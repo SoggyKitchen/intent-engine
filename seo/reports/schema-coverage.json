@@ -4,11 +4,12 @@
     "Answer": 989,
     "Article": 989,
     "BreadcrumbList": 989,
+    "CollectionPage": 1,
     "EntryPoint": 1,
     "FAQPage": 989,
     "ImageObject": 989,
     "ListItem": 989,
-    "Organization": 1000,
+    "Organization": 1001,
     "Question": 989,
     "SearchAction": 1,
     "WebSite": 1
