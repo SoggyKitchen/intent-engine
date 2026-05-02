@@ -1,32 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coupon Verification Policy Promo Codes &amp; Discounts 2026 | SaaSpare</title>
-<meta name="description" content="Find working Coupon Verification Policy promo codes and discounts for 2026. Verified deals, annual plan savings, and the best ways to reduce your Coupon Verification Policy bill.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://saaspare.org/pages/coupon-verification-policy">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-<meta name="theme-color" content="#07070d">
-<meta property="og:title" content="Coupon Verification Policy Promo Codes &amp; Discounts 2026 | SaaSpare">
-<meta property="og:description" content="Find working Coupon Verification Policy promo codes and discounts for 2026. Verified deals, annual plan savings, and the best ways to reduce your Coupon Verification Policy bill.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://saaspare.org/pages/coupon-verification-policy">
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<meta name="google-adsense-account" content="ca-pub-9433840442322701">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://saaspare.org/pages/coupon-verification-policy", "name": "Coupon Verification Policy — How SaaSpare Verifies Every Promo Code", "description": "SaaSpare's coupon verification policy: 5-step process, live testing, 30-day re-verification, and what 'verified' actually means.", "isPartOf": {"@type": "WebSite", "name": "SaaSpare", "url": "https://saaspare.org"}, "publisher": {"@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org", "logo": "https://saaspare.org/og-default.png"}, "dateModified": "2026-05-02"}</script>
-<script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="cc20042f-69ad-42f3-bdbc-db9fe92a73ce" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gImNjMjAwNDJmLTY5YWQtNDJmMy1iZGJjLWRiOWZlOTJhNzNjZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="></script>
-<style>
+"""Shared shell/CSS/nav/footer for SaaSpare strategic pages.
+Uses the _template.html aesthetic (hero glint, grid drift, orb, grain, reveal).
+Each page picks an accent variant so they feel distinct instead of 1:1.
+"""
+from datetime import datetime
+from pathlib import Path
+
+DOMAIN = "https://saaspare.org"
+TODAY = datetime.utcnow().strftime("%Y-%m-%d")
+
+LOGO_SVG = (Path(__file__).parent / "_logo_svg.txt").read_text(encoding="utf-8")
+
+OTTO_PIXEL = '<script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="cc20042f-69ad-42f3-bdbc-db9fe92a73ce" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gImNjMjAwNDJmLTY5YWQtNDJmMy1iZGJjLWRiOWZlOTJhNzNjZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="></script>'
+
+# Core CSS from _template.html + extras for bars/stars/plans/forms
+BASE_CSS = r"""
 :root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3;--warn:#ffc864}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -230,109 +217,111 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3r
   .ps-stat{flex:1 1 45%;border-right:none;border-bottom:1px solid var(--border)}
   .ps-value-grid{grid-template-columns:1fr}
 }
+"""
 
-.page-hero-bg{background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(85,18,28,.9) 0%,transparent 62%),radial-gradient(ellipse 50% 40% at 50% 32%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg) !important}
-.page-hero-orb{background:radial-gradient(circle,rgba(233,69,96,.12) 0%,transparent 65%) !important}
-.page-hero-grid{background-image:linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.024) 1px,transparent 1px) !important}
-</style>
-<meta name="keywords" content="Coupon Verification Policy Promo Codes &amp; Discounts 2026, trust, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
-<meta name="twitter:site" content="@SaaSpare">
-<meta name="twitter:title" content="Coupon Verification Policy Promo Codes &amp; Discounts 2026 | SaaSpare">
-<meta name="twitter:description" content="Find working Coupon Verification Policy promo codes and discounts for 2026. Verified deals, annual plan savings, and the best ways to reduce your Coupon Verification Policy bill.">
-<link rel="stylesheet" href="/assets/saaspare-ui.css">
-</head>
-<body>
-<nav id="nav">
-  <a href="/" class="logo"><svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg><span class="logo-text">Saa<em>Spare</em></span></a>
-  <a href="/pages/" class="nav-link">Comparisons</a>
-  <a href="/categories" class="nav-link">Categories</a>
-  <a href="/pages/saas-pricing-index" class="nav-link">Pricing Index</a>
-  <a href="/pages/free-trial-database" class="nav-link">Free Trials</a>
-  <a href="/pages/saas-glossary" class="nav-link">Glossary</a>
-  <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
-</nav>
+# Per-page accent variants so pages feel distinct
+ACCENTS = {
+    "spend":    {"hue": "rgba(120,22,40,.9)",  "orb": "rgba(255,120,144,.14)", "grid_opacity": ".03"},
+    "digest":   {"hue": "rgba(100,14,32,.85)", "orb": "rgba(233,69,96,.16)",   "grid_opacity": ".025"},
+    "tracker":  {"hue": "rgba(80,18,28,.9)",   "orb": "rgba(233,69,96,.10)",   "grid_opacity": ".028"},
+    "report":   {"hue": "rgba(90,20,30,.92)",  "orb": "rgba(255,145,170,.12)", "grid_opacity": ".022"},
+    "glossary": {"hue": "rgba(70,14,24,.88)",  "orb": "rgba(233,69,96,.08)",   "grid_opacity": ".03"},
+    "policy":   {"hue": "rgba(85,18,28,.9)",   "orb": "rgba(233,69,96,.12)",   "grid_opacity": ".024"},
+    "rank":     {"hue": "rgba(95,24,34,.9)",   "orb": "rgba(255,120,144,.13)", "grid_opacity": ".03"},
+    "request":  {"hue": "rgba(75,16,26,.88)",  "orb": "rgba(233,69,96,.09)",   "grid_opacity": ".025"},
+    "report2":  {"hue": "rgba(100,22,34,.9)",  "orb": "rgba(255,120,144,.14)", "grid_opacity": ".028"},
+}
 
-<section class="page-hero">
-  <div class="page-hero-bg"></div>
-  <div class="page-hero-grid"></div>
-  <div class="page-hero-orb"></div>
-  <div class="page-hero-content">
-    <div class="page-eyebrow">✅ Trust Page</div>
-    <h1>Our <em>Coupon Verification</em> Policy</h1>
-    <p class="page-sub">How we verify every discount, promo code, and deal listed on SaaSpare — and exactly what happens when a coupon breaks or expires.</p>
-  </div>
-</section>
-<main class="page-content">
 
-  <div class="ps reveal">
-    <span class="ps-eyebrow">The process</span>
-    <h2 class="ps-title">Our 5-step coupon verification</h2>
-    <div class="ps-grid-2">
-      <div class="ps-card"><h3>1. Source check</h3><p>Coupons must come from the vendor directly, the vendor's official affiliate program, or a publicly announced campaign. No scraped codes from coupon aggregators.</p></div>
-      <div class="ps-card"><h3>2. Live test</h3><p>We type the code into the vendor's actual checkout to confirm it applies. No untested codes make the site.</p></div>
-      <div class="ps-card"><h3>3. Terms review</h3><p>We read the fine print. Min spend, new-customer-only, regional restrictions, and expiration dates are documented on the page.</p></div>
-      <div class="ps-card"><h3>4. Timestamped</h3><p>Every coupon page shows a "last verified" date. If we haven't re-checked in 30+ days, the coupon is flagged "may be expired".</p></div>
-    </div>
-    <div class="ps-card" style="margin-top:1rem"><h3>5. Active monitoring</h3><p>Our bot re-tests every coupon weekly. Broken codes are removed within 24 hours. If something slips through, <a href="mailto:coupons@saaspare.org">tell us</a> and we fix it same-day.</p></div>
-  </div>
+def nav(active=""):
+    def link(href, label, key):
+        cls = "nav-link active" if active == key else "nav-link"
+        return f'<a href="{href}" class="{cls}">{label}</a>'
+    return f"""<nav id="nav">
+  <a href="/" class="logo">{LOGO_SVG}<span class="logo-text">Saa<em>Spare</em></span></a>
+  {link("/pages/", "Comparisons", "compare")}
+  {link("/categories.html", "Categories", "cat")}
+  {link("/pages/saas-pricing-index", "Pricing Index", "idx")}
+  {link("/pages/free-trial-database", "Free Trials", "trials")}
+  {link("/pages/saas-glossary", "Glossary", "gloss")}
+  <a href="/shortlist.html" class="nav-cta">Build Shortlist &#8594;</a>
+</nav>"""
 
-  <div class="ps reveal">
-    <span class="ps-eyebrow">What "verified" means</span>
-    <h2 class="ps-title">The badges, decoded</h2>
-    <div class="ps-value-grid">
-      <div class="ps-value"><strong><span class="badge g">✓ Verified</span></strong><span>We personally entered it at checkout in the last 30 days and the discount applied. Terms are published on the page.</span></div>
-      <div class="ps-value"><strong><span class="badge y">⚠ May be expired</span></strong><span>We haven't re-verified in 30+ days but have no evidence it's broken. Worth trying but not guaranteed.</span></div>
-      <div class="ps-value"><strong><span class="badge r">✗ Broken</span></strong><span>Re-verification failed or a reader flagged it. We remove within 24h.</span></div>
-      <div class="ps-value"><strong>🔒 Affiliate disclosed</strong><span>Some coupons are tracked through affiliate links that earn us a commission. Earnings never affect which codes we list.</span></div>
-    </div>
-  </div>
 
-  <div class="ps reveal">
-    <div class="ps-callout">
-      <p><strong>What we will never do:</strong> list fake codes to inflate click-through, keep expired codes live after verification fails, obscure the terms to make a coupon look better, or rank vendors higher because they offered us a bigger coupon share.</p>
-    </div>
-  </div>
-
-  <div class="ps reveal">
-    <div class="cta-big">
-      <h3>Spot a broken coupon?</h3>
-      <p>Tell us. We'll verify and remove it within 24 hours if it's broken, and replace it with a working one if we can find one.</p>
-      <a href="mailto:coupons@saaspare.org?subject=Broken%20Coupon" class="btn">Report a coupon →</a>
-    </div>
-  </div>
-
-</main>
-
-<footer>
+def footer():
+    return """<footer>
   <div class="footer-inner">
     <div><strong style="color:#fff">SaaSpare</strong> &middot; Unbiased B2B SaaS comparisons &middot; No paid rankings</div>
     <div class="footer-links">
-      <a href="/about">About</a>
-      <a href="/methodology">Methodology</a>
+      <a href="/about.html">About</a>
+      <a href="/methodology.html">Methodology</a>
       <a href="/pages/how-saaspare-ranks-tools">How We Rank</a>
       <a href="/pages/coupon-verification-policy">Coupon Policy</a>
-      <a href="/affiliate-disclosure">Disclosure</a>
+      <a href="/affiliate-disclosure.html">Disclosure</a>
       <a href="/pages/report-outdated-pricing">Report Pricing</a>
       <a href="/pages/request-a-comparison">Request Compare</a>
-      <a href="/privacy">Privacy</a>
-      <a href="/contact">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/contact.html">Contact</a>
     </div>
   </div>
-</footer>
-<<<<<<< Updated upstream
-<script>window.addEventListener("scroll",()=>document.getElementById("nav").classList.toggle("scrolled",window.scrollY>40),{passive:true});</script>
-=======
+</footer>"""
+
+
+def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
+               schema_extra="", page_type="WebPage"):
+    a = ACCENTS.get(accent, ACCENTS["policy"])
+    canonical = f"{DOMAIN}/pages/{slug}"
+    schema = f'{{"@context":"https://schema.org","@type":"{page_type}","url":"{canonical}","name":"{title}","description":"{desc}","isPartOf":{{"@type":"WebSite","name":"SaaSpare","url":"{DOMAIN}"}},"publisher":{{"@type":"Organization","name":"SaaSpare","url":"{DOMAIN}","logo":"{DOMAIN}/og-default.png"}},"dateModified":"{TODAY}"}}'
+    if schema_extra:
+        schema = f"[{schema},{schema_extra}]"
+    accent_css = f"""
+.page-hero-bg{{background:radial-gradient(ellipse 80% 60% at 50% -10%,{a['hue']} 0%,transparent 62%),radial-gradient(ellipse 50% 40% at 50% 32%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg) !important}}
+.page-hero-orb{{background:radial-gradient(circle,{a['orb']} 0%,transparent 65%) !important}}
+.page-hero-grid{{background-image:linear-gradient(rgba(255,255,255,{a['grid_opacity']}) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,{a['grid_opacity']}) 1px,transparent 1px) !important}}
+"""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title} | SaaSpare</title>
+<meta name="description" content="{desc}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{canonical}">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<meta name="theme-color" content="#07070d">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{canonical}">
+<meta property="og:image" content="{DOMAIN}/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{DOMAIN}/og-default.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
+<script type="application/ld+json">{schema}</script>
+{OTTO_PIXEL}
+<style>{BASE_CSS}{accent_css}</style>
+</head>
+<body>
+{nav(nav_active)}
+{body}
+{footer()}
 <script>
-(function(){
+(function(){{
   const nav=document.getElementById('nav');
-  const onScroll=()=>{const s=window.scrollY>24;nav.classList.toggle('scrolled',s);nav.classList.toggle('ss-nav-scrolled',s);};
-  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
-  const io=new IntersectionObserver(en=>en.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+  const onScroll=()=>{{const s=window.scrollY>24;nav.classList.toggle('scrolled',s);nav.classList.toggle('ss-nav-scrolled',s);}};
+  onScroll();window.addEventListener('scroll',onScroll,{{passive:true}});
+  const io=new IntersectionObserver(en=>en.forEach(e=>{{if(e.isIntersecting){{e.target.classList.add('visible');io.unobserve(e.target)}}}}),{{threshold:.08}});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-})();
+}})();
 </script>
->>>>>>> Stashed changes
-<script defer src="/assets/saaspare-ui.js"></script>
-<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 </body>
 </html>
+"""

@@ -22,68 +22,45 @@ body::after{
   display:none !important;
 }
 body > *{position:relative}
-body > nav{z-index:200}
-body > nav,
-body > nav.ss-nav-normalized{
-  position:sticky !important;
-  top:0;
-  z-index:220;
-  display:flex !important;
-  align-items:center !important;
-  gap:clamp(.75rem,1.8vw,1.8rem) !important;
-  padding:.92rem clamp(1.25rem,3vw,2.6rem) !important;
-  background:transparent !important;
-  border-bottom:0 !important;
-  box-shadow:none !important;
-  backdrop-filter:none;
-  overflow-x:auto;
-  scrollbar-width:none;
-}
-body > nav.ss-nav-scrolled{
-  background:transparent !important;
-  border-bottom:0 !important;
-  box-shadow:none !important;
-  backdrop-filter:none !important;
-  -webkit-backdrop-filter:none !important;
-}
-body.home-page > nav,
-body.home-page > nav.ss-nav-normalized{
-  position:fixed !important;
-  background:transparent !important;
-  border-bottom:0 !important;
-  box-shadow:none !important;
-  backdrop-filter:none !important;
-  -webkit-backdrop-filter:none !important;
-}
-body.home-page > nav.ss-nav-scrolled{
-  background:linear-gradient(180deg,rgba(8,8,16,.66),rgba(8,8,16,.2) 68%,transparent) !important;
-  border-bottom:1px solid rgba(255,255,255,.055) !important;
-  box-shadow:0 16px 46px rgba(0,0,0,.14) !important;
-  backdrop-filter:blur(16px) saturate(1.05) !important;
-  -webkit-backdrop-filter:blur(16px) saturate(1.05) !important;
-}
+/* Nav styling is owned by each page. We only ensure z-index and hide scrollbars. */
+body > nav{z-index:220}
 body > nav::-webkit-scrollbar{display:none}
-body > nav a.nav-link{
-  color:rgba(255,255,255,.48) !important;
+
+/* Shared styling for auto-injected trust/related blocks (scoped so they do not
+   fight page-level trust UI that already exists). */
+section[data-seo-trustbox],
+section[data-seo-related]{
+  max-width:min(1100px,calc(100vw - 48px));
+  margin:2.5rem auto;
+  padding:1.8rem 2rem;
+  background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.018));
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:18px;
   font-family:'Plus Jakarta Sans',system-ui,sans-serif;
-  font-size:.88rem !important;
-  font-weight:750 !important;
-  white-space:nowrap;
-  transition:color .18s ease,transform .18s ease;
 }
-body > nav a.nav-link:hover{color:#fff !important;transform:translateY(-1px)}
-body > nav .nav-cta{
-  margin-left:clamp(.25rem,1vw,.8rem);
-  color:#fff !important;
-  white-space:nowrap;
-  background:linear-gradient(135deg,#f04c68,#c8314f) !important;
-  border:1px solid rgba(255,255,255,.08) !important;
-  border-radius:999px !important;
-  padding:.62rem 1rem !important;
-  box-shadow:0 12px 34px rgba(233,69,96,.34) !important;
-  font-size:.84rem !important;
-  font-weight:850 !important;
+section[data-seo-trustbox] h2,
+section[data-seo-related] h3{
+  font-size:1rem;
+  font-weight:800;
+  color:#fff;
+  letter-spacing:-.02em;
+  margin:0 0 .9rem;
 }
+section[data-seo-trustbox] p{
+  color:rgba(255,255,255,.62);
+  font-size:.86rem;
+  line-height:1.7;
+  margin:0 0 .65rem;
+}
+section[data-seo-trustbox] p:last-child{margin-bottom:0}
+section[data-seo-trustbox] strong{color:rgba(255,255,255,.88)}
+section[data-seo-trustbox] a,
+section[data-seo-related] a{color:#ff8899;font-weight:600}
+section[data-seo-trustbox] a:hover,
+section[data-seo-related] a:hover{color:#fff}
+section[data-seo-related]{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;padding:1.4rem 2rem}
+section[data-seo-related] h3{flex-basis:100%;margin:0 0 .3rem}
+section[data-seo-related] a{font-size:.88rem}
 
 .ss-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none;color:var(--ss-text)}
 .ss-logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:ssMarkGlow 4s ease-in-out infinite}
@@ -272,7 +249,4 @@ h1:not(.hero-title) span.grad-text,
   .ss-decision-dock{left:12px;right:12px;bottom:12px;max-width:none}
   .ss-adblock-note{left:12px;right:12px;bottom:12px;max-width:none}
   .ss-logo-text{font-size:1rem}
-  body > nav{gap:.85rem !important;padding:.85rem 1rem !important}
-  body > nav a.nav-link{font-size:.8rem !important}
-  body > nav .nav-cta{padding:.55rem .8rem !important}
 }

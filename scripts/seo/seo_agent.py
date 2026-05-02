@@ -163,6 +163,21 @@ def public_url(site_url: str, path: str) -> str:
 def classify_page_type(path: str, html: str = "") -> str:
     if path in {"/about", "/contact", "/privacy", "/methodology", "/affiliate-disclosure"}:
         return "trust"
+    strategic_trust_slugs = {
+        "/pages/coupon-verification-policy",
+        "/pages/how-saaspare-ranks-tools",
+        "/pages/report-outdated-pricing",
+        "/pages/request-a-comparison",
+        "/pages/saas-spend-audit",
+        "/pages/weekly-saas-deal-digest",
+        "/pages/saas-glossary",
+        "/pages/saas-pricing-index",
+        "/pages/saas-pricing-changes",
+        "/pages/state-of-saas-pricing-2026",
+        "/pages/free-trial-database",
+    }
+    if path in strategic_trust_slugs:
+        return "trust"
     combined = f"{path} {strip_tags(html[:5000])}"
     for page_type, pattern in PAGE_TYPE_PATTERNS:
         if pattern.search(combined):

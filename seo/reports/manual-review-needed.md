@@ -3,18 +3,14 @@
 These are not safe to fake or mass rewrite.
 
 - `/categories`: thin_buyer_page
-- `/pages/free-trial-database`: thin_buyer_page
-- `/pages/saas-pricing-changes`: thin_buyer_page
-- `/pages/coupon-verification-policy`: thin_buyer_page
 - `/deal-radar`: thin_buyer_page
-- `/pages/state-of-saas-pricing-2026`: thin_buyer_page
-- `/pages/report-outdated-pricing`: thin_buyer_page
-- `/pages/saas-spend-audit`: thin_buyer_page
-- `/pages/weekly-saas-deal-digest`: thin_buyer_page
 - `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025`: thin_buyer_page
 - `/pages/best-devtools-for-multi-agent-workflows-in-2025`: thin_buyer_page
 - `/pages/best-devops-tools-for-agile-workflows-in-2026`: thin_buyer_page
 - `/pages/best-cybersecurity-tools-for-b2b-software-in-2025`: thin_buyer_page
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts`: thin_buyer_page
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts`: thin_buyer_page
+- `/pages/7-best-getresponse-alternatives-in-2026-free-paid`: thin_buyer_page
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
@@ -54,5 +50,4 @@ These are not safe to fake or mass rewrite.
 - `/pages/shopify-coupon-code-promo-codes-2026-verified-discounts`: thin_buyer_page
 - `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
 - `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts`: thin_buyer_page
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts`: thin_buyer_page
 - `/pages/zoom-coupon-code-promo-codes-2026-verified-discounts`: thin_buyer_page

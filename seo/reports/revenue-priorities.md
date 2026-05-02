@@ -1,5 +1,7 @@
 # Revenue Priorities
 
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 93.74): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 93.84): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.72): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.77): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/xero-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.78): CTA=True, affiliateLinks=1, disclosure=True
@@ -12,7 +14,6 @@
 - `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.93): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/shopify-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.94): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.95): CTA=True, affiliateLinks=2, disclosure=True
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.98): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/zoom-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.98): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 100): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
@@ -20,7 +21,6 @@
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
@@ -43,10 +43,9 @@
 - `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/coupon-verification-policy` (coupon, score 86.2): CTA=True, affiliateLinks=0, disclosure=True
-- `/pages/weekly-saas-deal-digest` (coupon, score 89.83): CTA=True, affiliateLinks=0, disclosure=True
-- `/pages/free-trial-database` (free_trial, score 83.56): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/saas-pricing-index` (pricing, score 85.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 93.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 94.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict` (pricing, score 94.0): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 97.11): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 97.3): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 97.46): CTA=True, affiliateLinks=2, disclosure=True
@@ -74,7 +73,6 @@
 - `/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 98.85): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/xero-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 98.85): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/best-semrush-alternatives-in-2026-free-paid` (pricing, score 99.0): CTA=True, affiliateLinks=4, disclosure=True
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 99.0): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 99.06): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 99.3): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 99.5): CTA=True, affiliateLinks=2, disclosure=True
@@ -96,7 +94,9 @@
 - `/pages/clickup-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/clickup-review-2026-is-it-worth-it-honest-verdict` (pricing, score 100): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/contabo-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 100): CTA=True, affiliateLinks=2, disclosure=True
-- `/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-review-2026-is-it-worth-it-honest-verdict` (pricing, score 100): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/deel-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 100): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/deel-review-2026-is-it-worth-it-honest-verdict` (pricing, score 100): CTA=True, affiliateLinks=2, disclosure=True
+- `/pages/docusign-review-2026-is-it-worth-it-honest-verdict` (pricing, score 100): CTA=True, affiliateLinks=2, disclosure=True
+- `/pages/does-asana-have-a-free-plan-2026-full-breakdown` (free_trial, score 100): CTA=True, affiliateLinks=1, disclosure=True

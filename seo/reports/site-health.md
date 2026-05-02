@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-05-02T05:59:42+00:00
+Generated: 2026-05-02T07:57:33+00:00
 Mode: `apply-safe`
 
 ## Current Score
-- Overall SaaSpare Health Score: **99.08/100**
+- Overall SaaSpare Health Score: **98.45/100**
 - Level: **Elite SEO/revenue engine**
-- Technical SEO: 19.94/20
-- Content usefulness: 19.88/20
-- Trust/E-E-A-T: 19.9/20
-- Internal linking: 14.87/15
+- Technical SEO: 19.66/20
+- Content usefulness: 19.87/20
+- Trust/E-E-A-T: 19.85/20
+- Internal linking: 14.57/15
 - Schema/indexability: 9.91/10
-- Conversion/revenue: 9.59/10
+- Conversion/revenue: 9.58/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
 - Pages scanned: 1016
-- Healthy pages (85+): 1001
+- Healthy pages (85+): 996
 - Unhealthy pages (<55): 0
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 11
+- Safe fixes applied this run: 106
 - GSC: skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -40,33 +40,35 @@ Mode: `apply-safe`
 - Manual review for pricing, coupon, review, rating and vendor claims.
 
 ## Top 25 Highest-Impact Fixes
-- `/pages/request-a-comparison` (71.88/100): meta_length_outside_target, title_length_outside_target
-- `/pages/free-trial-database` (83.56/100): broken_internal_link, thin_buyer_page, title_length_outside_target
-- `/pages/saas-pricing-changes` (83.65/100): broken_internal_link, thin_buyer_page
+- `/pages/saas-pricing-changes` (69.16/100): broken_internal_link
+- `/pages/request-a-comparison` (71.91/100): meta_length_outside_target, title_length_outside_target
+- `/pages/free-trial-database` (83.56/100): broken_internal_link, title_length_outside_target
 - `/pages/saas-pricing-index` (85.0/100): broken_internal_link
+- `/pages/coupon-verification-policy` (77.84/100): meta_length_outside_target
 - `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025` (90.55/100): broken_internal_link, thin_buyer_page, title_length_outside_target
 - `/pages/best-devtools-for-multi-agent-workflows-in-2025` (90.61/100): broken_internal_link, meta_length_outside_target, thin_buyer_page
 - `/pages/best-devops-tools-for-agile-workflows-in-2026` (91.97/100): broken_internal_link, thin_buyer_page
 - `/pages/best-cybersecurity-tools-for-b2b-software-in-2025` (92.0/100): broken_internal_link, thin_buyer_page
 - `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025` (92.0/100): broken_internal_link
+- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (92.0/100): broken_internal_link
+- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
+- `/pages/lever-vs-remote-com-which-is-better-in-2026` (92.0/100): broken_internal_link
+- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (92.0/100): broken_internal_link
+- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (92.0/100): broken_internal_link
 - `/categories` (82.29/100): thin_buyer_page
-- `/pages/coupon-verification-policy` (86.2/100): meta_length_outside_target, thin_buyer_page
-- `/deal-radar` (87.0/100): thin_buyer_page
-- `/pages` (88.0/100): title_length_outside_target
-- `/pages/state-of-saas-pricing-2026` (88.2/100): thin_buyer_page
-- `/pages/report-outdated-pricing` (88.36/100): thin_buyer_page
-- `/pages/saas-spend-audit` (88.58/100): thin_buyer_page
-- `/pages/weekly-saas-deal-digest` (89.83/100): thin_buyer_page
-- `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (97.0/100): meta_length_outside_target
-- `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
-- `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (97.11/100): thin_buyer_page
-- `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay` (97.3/100): thin_buyer_page
-- `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (97.46/100): thin_buyer_page, title_length_outside_target
-- `/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay` (97.48/100): thin_buyer_page
-- `/pages/workable-pricing-2026-plans-costs-what-you-actually-pay` (97.67/100): thin_buyer_page
-- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (97.78/100): thin_buyer_page
+- `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/7-best-google-analytics-alternatives-in-2026-free-paid` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (93.0/100): broken_internal_link, title_length_outside_target
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (93.74/100): broken_internal_link, thin_buyer_page
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (93.84/100): broken_internal_link, thin_buyer_page
+- `/pages/7-best-getresponse-alternatives-in-2026-free-paid` (93.97/100): broken_internal_link, thin_buyer_page
+- `/pages/7-best-1password-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
+- `/pages/7-best-adp-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
+- `/pages/7-best-ahrefs-alternatives-in-2026-free-paid` (94.0/100): broken_internal_link
 
 ## Top 25 Revenue Opportunities
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 93.74): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 93.84): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.72): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.77): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/xero-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.78): CTA=True, affiliateLinks=1, disclosure=True
@@ -79,7 +81,6 @@ Mode: `apply-safe`
 - `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.93): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/shopify-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.94): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.95): CTA=True, affiliateLinks=2, disclosure=True
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.98): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/zoom-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 99.98): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 100): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
@@ -87,7 +88,6 @@ Mode: `apply-safe`
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True

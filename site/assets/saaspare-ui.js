@@ -2,43 +2,16 @@
   const LOGO = `<svg class="ss-logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ss-ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="ss-cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="ss-sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite"/></rect></mask><mask id="ss-sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ss-ct)" mask="url(#ss-sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-bot" clip-path="url(#ss-cb)" mask="url(#ss-sm2)"><rect width="180" height="180" fill="#fff"/></g></svg><span class="ss-logo-text">Saa<em>Spare</em></span>`;
   function upgradeLogo(){
     const nav = document.querySelector("nav");
+    if(!nav) return;
     const first = nav.querySelector("a");
     if(!first) return;
-    if(first.querySelector(".ss-logo-mark")) return;
+    if(first.querySelector(".ss-logo-mark") || first.querySelector(".logo-mark") || first.querySelector("svg")) return;
     const href = first.getAttribute("href") || "/";
     first.className = `${first.className || ""} ss-logo`.trim();
     first.innerHTML = LOGO;
     first.setAttribute("href", href.includes("saaspare.org") ? href : "/");
   }
-  function normalizeNavLinks(){
-    const nav = document.querySelector("nav");
-    if(!nav) return;
-    const logo = nav.querySelector(".ss-logo") || nav.querySelector("a");
-    if(!logo) return;
-    [...nav.querySelectorAll("a")].forEach((link)=>{
-      if(link !== logo) link.remove();
-    });
-    nav.classList.add("ss-nav-normalized");
-    const links = [
-      ["/pages/","Comparisons"],
-      ["/pages/saas-roi-calculator.html","ROI Calculator"],
-      ["/shortlist.html","Shortlist Builder"],
-      ["/deal-radar.html","Deal Radar"],
-      ["/about.html","About"],
-    ];
-    links.forEach(([href,label])=>{
-      const a = document.createElement("a");
-      a.href = href;
-      a.textContent = label;
-      a.className = "nav-link";
-      nav.appendChild(a);
-    });
-    const cta = document.createElement("a");
-    cta.href = "/shortlist.html";
-    cta.textContent = "Build Shortlist ->";
-    cta.className = "nav-cta";
-    nav.appendChild(cta);
-  }
+  function normalizeNavLinks(){ /* disabled: each page controls its own nav. */ }
   function pageType(){
     const path = location.pathname.toLowerCase();
     const title = document.title.toLowerCase();
@@ -62,7 +35,12 @@
     document.documentElement.removeAttribute("data-theme");
     localStorage.removeItem("ss_theme");
     const nav = document.querySelector("nav");
-    const onScroll = ()=>nav && nav.classList.toggle("ss-nav-scrolled", window.scrollY > 24);
+    if(!nav) return;
+    const onScroll = ()=>{
+      const scrolled = window.scrollY > 24;
+      nav.classList.toggle("ss-nav-scrolled", scrolled);
+      nav.classList.toggle("scrolled", scrolled);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive:true });
   }

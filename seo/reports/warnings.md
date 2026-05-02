@@ -4,8 +4,9 @@
 - `/deal-radar` (pricing, 87.0/100): thin_buyer_page
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (alternatives, 99.0/100): title_length_outside_target
-- `/pages/7-best-google-analytics-alternatives-in-2026-free-paid` (alternatives, 99.0/100): title_length_outside_target
+- `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (alternatives, 93.0/100): title_length_outside_target
+- `/pages/7-best-getresponse-alternatives-in-2026-free-paid` (alternatives, 93.97/100): thin_buyer_page
+- `/pages/7-best-google-analytics-alternatives-in-2026-free-paid` (alternatives, 93.0/100): title_length_outside_target
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.11/100): thin_buyer_page
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.91/100): thin_buyer_page
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.72/100): thin_buyer_page
@@ -44,7 +45,8 @@
 - `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.88/100): thin_buyer_page
 - `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.89/100): thin_buyer_page
 - `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.95/100): thin_buyer_page
-- `/pages/coupon-verification-policy` (coupon, 86.2/100): meta_length_outside_target, thin_buyer_page
+- `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, 93.74/100): thin_buyer_page
+- `/pages/coupon-verification-policy` (trust, 77.84/100): meta_length_outside_target
 - `/pages/deel-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.92/100): thin_buyer_page
 - `/pages/deel-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page
 - `/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.34/100): thin_buyer_page
@@ -52,13 +54,13 @@
 - `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown` (free_trial, 97.0/100): title_length_outside_target
 - `/pages/does-hubspot-have-a-free-plan-2026-full-breakdown` (free_trial, 99.91/100): thin_buyer_page
 - `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/free-trial-database` (free_trial, 83.56/100): thin_buyer_page, title_length_outside_target
+- `/pages/free-trial-database` (trust, 83.56/100): title_length_outside_target
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.46/100): thin_buyer_page, title_length_outside_target
 - `/pages` (pricing, 88.0/100): title_length_outside_target
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page
 - `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.12/100): thin_buyer_page
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.98/100): thin_buyer_page
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.0/100): title_length_outside_target
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, 93.84/100): thin_buyer_page
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): title_length_outside_target
 - `/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.66/100): thin_buyer_page
 - `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.72/100): thin_buyer_page
 - `/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.2/100): thin_buyer_page
@@ -66,21 +68,16 @@
 - `/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page
 - `/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.63/100): thin_buyer_page
 - `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.78/100): thin_buyer_page
-- `/pages/report-outdated-pricing` (pricing, 88.36/100): thin_buyer_page
-- `/pages/request-a-comparison` (other, 71.88/100): meta_length_outside_target, title_length_outside_target
+- `/pages/request-a-comparison` (trust, 71.91/100): meta_length_outside_target, title_length_outside_target
 - `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.93/100): thin_buyer_page
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.3/100): thin_buyer_page
-- `/pages/saas-pricing-changes` (pricing, 83.65/100): thin_buyer_page
-- `/pages/saas-spend-audit` (pricing, 88.58/100): thin_buyer_page
 - `/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.06/100): thin_buyer_page
 - `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.5/100): thin_buyer_page
 - `/pages/semrush-vs-clearscope-which-is-better-in-2026` (comparison, 99.73/100): thin_buyer_page
 - `/pages/shopify-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.94/100): thin_buyer_page
 - `/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.22/100): thin_buyer_page
-- `/pages/state-of-saas-pricing-2026` (pricing, 88.2/100): thin_buyer_page
 - `/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.95/100): thin_buyer_page
 - `/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.48/100): thin_buyer_page
-- `/pages/weekly-saas-deal-digest` (coupon, 89.83/100): thin_buyer_page
 - `/pages/workable-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.67/100): thin_buyer_page
 - `/pages/xero-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.78/100): thin_buyer_page
 - `/pages/zoom-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.98/100): thin_buyer_page
