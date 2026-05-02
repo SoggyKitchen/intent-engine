@@ -1,0 +1,11 @@
+/* TEAM */
+Editor & Founder: Kaylan von Papen
+Location: Australia
+Contact: hello [at] saaspare.org
+
+/* SITE */
+Last update: 2026-05
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, JSON-LD
+Software: Custom Python static generator

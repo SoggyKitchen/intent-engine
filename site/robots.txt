@@ -28,3 +28,4 @@ Allow: /
 
 Sitemap: https://saaspare.org/sitemap.xml
 LLM-Content: https://saaspare.org/llms.txt
+# RSS: https://saaspare.org/feed.xml
