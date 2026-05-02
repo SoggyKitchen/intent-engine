@@ -1,6 +1,6 @@
 # Link Cleanup
 
-- Pages with broken internal links: 7
+- Pages with broken internal links: 8
 - Internal links still containing `.html`: 0
 
 ## Broken Internal Links
@@ -10,4 +10,5 @@
 - `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025`: https://saaspare.org/pages/amplitude-review-2026-is-it-worth-it-honest-verdict-pricing, https://saaspare.org/pages/does-amplitude-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step, https://saaspare.org/pages/does-hotjar-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step, https://saaspare.org/pages/fullstory-vs-hotjar-which-software-is-best-in-2026, https://saaspare.org/pages/fullstory-vs-segment-which-software-is-best-in-2026
 - `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025`: https://saaspare.org/pages/amplitude-review-2026-is-it-worth-it-honest-verdict-pricing, https://saaspare.org/pages/does-amplitude-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step, https://saaspare.org/pages/does-hotjar-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step, https://saaspare.org/pages/fullstory-vs-hotjar-which-software-is-best-in-2026, https://saaspare.org/pages/fullstory-vs-segment-which-software-is-best-in-2026
 - `/pages/free-trial-database`: /pages/activecampaign-free-trial-2026-how-to-get-it-step-by-step, /pages/bamboohr-free-trial-2026-how-to-get-it-step-by-step, /pages/docusign-free-trial-2026-how-to-get-it-step-by-step, /pages/gusto-free-trial-2026-how-to-get-it-step-by-step, /pages/jasper-ai-free-trial-2026-how-to-get-it-step-by-step
+- `/pages/saas-pricing-changes`: /pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay, /pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay, /pages/sentry-pricing-2026-plans-costs-what-you-actually-pay
 - `/pages/saas-pricing-index`: /pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay, /pages/brex-pricing-2026-plans-costs-what-you-actually-pay, /pages/cloudflare-pricing-2026-plans-costs-what-you-actually-pay, /pages/hotjar-pricing-2026-plans-costs-what-you-actually-pay, /pages/klaviyo-pricing-2026-plans-costs-what-you-actually-pay

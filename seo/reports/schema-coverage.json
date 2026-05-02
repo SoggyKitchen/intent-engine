@@ -6,17 +6,20 @@
     "BreadcrumbList": 993,
     "CollectionPage": 1,
     "ContactPoint": 1,
-    "Dataset": 2,
+    "Dataset": 3,
+    "DefinedTermSet": 1,
     "EntryPoint": 1,
     "FAQPage": 993,
     "ImageObject": 993,
     "ListItem": 993,
-    "Offer": 39,
-    "Organization": 1007,
+    "Offer": 40,
+    "Organization": 1016,
     "Question": 993,
+    "Report": 1,
     "SearchAction": 1,
+    "Service": 1,
     "SoftwareApplication": 39,
-    "WebPage": 1,
-    "WebSite": 1
+    "WebPage": 8,
+    "WebSite": 10
   }
 }

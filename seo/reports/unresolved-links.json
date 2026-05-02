@@ -66,6 +66,14 @@
   {
     "broken": [
       "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay"
+    ],
+    "path": "/pages/saas-pricing-changes"
+  },
+  {
+    "broken": [
+      "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/brex-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/cloudflare-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/hotjar-pricing-2026-plans-costs-what-you-actually-pay",

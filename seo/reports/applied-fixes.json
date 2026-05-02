@@ -1,19 +1,5 @@
 [
   {
-    "file": "site/affiliate-disclosure.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/affiliate-disclosure"
-  },
-  {
     "file": "site/index.html",
     "fixes": [
       "canonical",
@@ -28,7 +14,7 @@
     "path": "/"
   },
   {
-    "file": "site/pages/1password-review-2026-is-it-worth-it-honest-verdict.html",
+    "file": "site/pages/coupon-verification-policy.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -39,10 +25,10 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/1password-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/coupon-verification-policy"
   },
   {
-    "file": "site/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict.html",
+    "file": "site/pages/how-saaspare-ranks-tools.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -53,371 +39,7 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/amplitude-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/amplitude-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/asana-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/asana-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025"
-  },
-  {
-    "file": "site/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025"
-  },
-  {
-    "file": "site/pages/best-cybersecurity-tools-for-b2b-software-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-cybersecurity-tools-for-b2b-software-in-2025"
-  },
-  {
-    "file": "site/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025"
-  },
-  {
-    "file": "site/pages/best-devops-tools-for-agile-workflows-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-devops-tools-for-agile-workflows-in-2026"
-  },
-  {
-    "file": "site/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025"
-  },
-  {
-    "file": "site/pages/best-devtools-for-multi-agent-workflows-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-devtools-for-multi-agent-workflows-in-2025"
-  },
-  {
-    "file": "site/pages/best-devtools-for-secure-autonomous-agent-development-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025"
-  },
-  {
-    "file": "site/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025"
-  },
-  {
-    "file": "site/pages/best-saas-analytics-tools-for-business-decision-making-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025"
-  },
-  {
-    "file": "site/pages/best-semrush-alternatives-in-2026-free-paid.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/best-semrush-alternatives-in-2026-free-paid"
-  },
-  {
-    "file": "site/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026"
-  },
-  {
-    "file": "site/pages/cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026"
-  },
-  {
-    "file": "site/pages/clickup-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/clickup-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/datadog-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/datadog-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/deel-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/deel-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/docusign-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/docusign-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026"
-  },
-  {
-    "file": "site/pages/free-trial-database.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/free-trial-database"
-  },
-  {
-    "file": "site/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/getresponse-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/hubspot-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/how-saaspare-ranks-tools"
   },
   {
     "file": "site/pages/index.html",
@@ -434,7 +56,7 @@
     "path": "/pages"
   },
   {
-    "file": "site/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict.html",
+    "file": "site/pages/report-outdated-pricing.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -445,10 +67,10 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/report-outdated-pricing"
   },
   {
-    "file": "site/pages/linear-review-2026-is-it-worth-it-honest-verdict.html",
+    "file": "site/pages/request-a-comparison.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -459,10 +81,10 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/linear-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/request-a-comparison"
   },
   {
-    "file": "site/pages/monday-com-review-2026-is-it-worth-it-honest-verdict.html",
+    "file": "site/pages/saas-glossary.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -473,10 +95,10 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/monday-com-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/saas-glossary"
   },
   {
-    "file": "site/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict.html",
+    "file": "site/pages/saas-pricing-changes.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -487,10 +109,10 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/saas-pricing-changes"
   },
   {
-    "file": "site/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict.html",
+    "file": "site/pages/saas-spend-audit.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -501,10 +123,10 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/saas-spend-audit"
   },
   {
-    "file": "site/pages/notion-review-2026-is-it-worth-it-honest-verdict.html",
+    "file": "site/pages/state-of-saas-pricing-2026.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -515,10 +137,10 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/notion-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/state-of-saas-pricing-2026"
   },
   {
-    "file": "site/pages/perimeter-81-vs-expressvpn-business-which-is-better-in-2026.html",
+    "file": "site/pages/weekly-saas-deal-digest.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -529,146 +151,6 @@
       "social",
       "trust_block"
     ],
-    "path": "/pages/perimeter-81-vs-expressvpn-business-which-is-better-in-2026"
-  },
-  {
-    "file": "site/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/ramp-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/ramp-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/rippling-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/rippling-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/saas-pricing-index.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/saas-pricing-index"
-  },
-  {
-    "file": "site/pages/salesforce-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/salesforce-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/semrush-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/semrush-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/shopify-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/shopify-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/xero-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/xero-review-2026-is-it-worth-it-honest-verdict"
-  },
-  {
-    "file": "site/pages/zoom-review-2026-is-it-worth-it-honest-verdict.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "metadata",
-      "organization_schema",
-      "schema_safety",
-      "social",
-      "trust_block"
-    ],
-    "path": "/pages/zoom-review-2026-is-it-worth-it-honest-verdict"
+    "path": "/pages/weekly-saas-deal-digest"
   }
 ]

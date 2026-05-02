@@ -1,30 +1,39 @@
 # SEO Audit
 
-Pages scanned: 1007
+Pages scanned: 1016
 
 ## Severe Issue Counts
-- broken_internal_link: 7
+- broken_internal_link: 8
 
 ## Warning Counts
-- meta_length_outside_target: 18
-- thin_buyer_page: 48
-- title_length_outside_target: 15
+- meta_length_outside_target: 20
+- thin_buyer_page: 54
+- title_length_outside_target: 16
 
 ## Lowest Scoring Pages
 - `/media-kit`: 59.96/100, issues=none
 - `/contact`: 60.44/100, issues=none
 - `/privacy`: 63.25/100, issues=none
+- `/pages/request-a-comparison`: 71.88/100, issues=none
+- `/pages/saas-glossary`: 73.0/100, issues=none
 - `/shortlist`: 73.28/100, issues=none
 - `/pages/saas-roi-calculator`: 74.5/100, issues=none
 - `/about`: 77.19/100, issues=none
+- `/pages/how-saaspare-ranks-tools`: 78.72/100, issues=none
 - `/affiliate-disclosure`: 79.94/100, issues=none
-- `/`: 80.34/100, issues=none
-- `/pages/free-trial-database`: 81.42/100, issues=broken_internal_link
+- `/`: 80.47/100, issues=none
 - `/methodology`: 82.25/100, issues=none
 - `/categories`: 82.29/100, issues=none
-- `/pages/saas-pricing-index`: 83.0/100, issues=broken_internal_link
+- `/pages/free-trial-database`: 83.56/100, issues=broken_internal_link
+- `/pages/saas-pricing-changes`: 83.65/100, issues=broken_internal_link
+- `/pages/saas-pricing-index`: 85.0/100, issues=broken_internal_link
+- `/pages/coupon-verification-policy`: 86.2/100, issues=none
 - `/deal-radar`: 87.0/100, issues=none
 - `/pages`: 88.0/100, issues=none
+- `/pages/state-of-saas-pricing-2026`: 88.2/100, issues=none
+- `/pages/report-outdated-pricing`: 88.36/100, issues=none
+- `/pages/saas-spend-audit`: 88.58/100, issues=none
+- `/pages/weekly-saas-deal-digest`: 89.83/100, issues=none
 - `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025`: 90.55/100, issues=broken_internal_link
 - `/pages/best-devtools-for-multi-agent-workflows-in-2025`: 90.61/100, issues=broken_internal_link
 - `/pages/best-devops-tools-for-agile-workflows-in-2026`: 91.97/100, issues=broken_internal_link
@@ -52,12 +61,3 @@ Pages scanned: 1007
 - `/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026`: 98.0/100, issues=none
 - `/pages/around-vs-descript-which-is-better-in-2026`: 98.0/100, issues=none
 - `/pages/around-vs-streamyard-which-is-better-in-2026`: 98.0/100, issues=none
-- `/pages/aws-vs-google-cloud-which-is-better-in-2026`: 98.0/100, issues=none
-- `/pages/aws-vs-railway-which-is-better-in-2026`: 98.0/100, issues=none
-- `/pages/basecamp-vs-todoist-which-is-better-in-2026`: 98.0/100, issues=none
-- `/pages/best-agentic-development-tools-for-engineering-teams-in-2025`: 98.0/100, issues=none
-- `/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025`: 98.0/100, issues=none
-- `/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions`: 98.0/100, issues=none
-- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025`: 98.0/100, issues=none
-- `/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025`: 98.0/100, issues=none
-- `/pages/best-devops-configuration-drift-detection-tools-in-2025`: 98.0/100, issues=none

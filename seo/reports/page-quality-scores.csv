@@ -4,7 +4,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /categories,pricing,20,13.29,20.0,15,6,3,5,82.29
 /contact,trust,20,10.69,7.5,7.25,6,4,5,60.44
 /deal-radar,pricing,20,15.0,20.0,15,6,6,5,87.0
-/,other,20,16.84,12.5,12,6,8,5,80.34
+/,other,20,16.97,12.5,12,6,8,5,80.47
 /media-kit,other,20,12.11,7.5,6.35,6,3,5,59.96
 /methodology,trust,20,15.75,17.5,12,6,6,5,82.25
 /privacy,trust,20,12.5,7.5,7.25,6,5,5,63.25
@@ -329,6 +329,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/copy-ai-vs-weaviate-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/copy-ai-vs-weights-biases-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/copy-ai-vs-writesonic-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
+/pages/coupon-verification-policy,coupon,19,15.21,20.0,15,6,6,5,86.2
 /pages/crowdstrike-vs-cloudflare-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/crowdstrike-vs-duo-security-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/crowdstrike-vs-qualys-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
@@ -427,7 +428,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/expressvpn-business-vs-wireguard-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/expressvpn-business-vs-zscaler-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/frase-io-vs-rankmath-pro-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
-/pages/free-trial-database,free_trial,16,16.42,20.0,12,6,6,5,81.42
+/pages/free-trial-database,free_trial,16,16.55,20.0,12,6,8,5,83.56
 /pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step,free_trial,20,20,20.0,15,10,10,5,100
 /pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay,pricing,19,19.61,20.0,13.85,10,10,5,97.46
 /pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work,coupon,20,20,20.0,15,10,10,5,100
@@ -500,6 +501,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/hetzner-vs-supabase-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/hetzner-vs-vultr-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/hotjar-vs-segment-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
+/pages/how-saaspare-ranks-tools,other,20,14.72,15.0,12,6,6,5,78.72
 /pages/hubspot-coupon-code-promo-codes-2026-verified-discounts,coupon,20,20,20.0,15,10,10,5,100
 /pages/hubspot-crm-vs-close-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/hubspot-crm-vs-copper-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
@@ -793,6 +795,8 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/render-vs-railway-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/render-vs-supabase-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/render-vs-vultr-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
+/pages/report-outdated-pricing,pricing,20,14.36,20.0,15,6,8,5,88.36
+/pages/request-a-comparison,other,18,13.88,10.0,12,6,7,5,71.88
 /pages/retool-vs-datadog-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/retool-vs-netlify-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/retool-vs-pagerduty-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
@@ -817,8 +821,11 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/roboform-vs-enpass-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
 /pages/roboform-vs-password-boss-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
 /pages/roboform-vs-sticky-password-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
-/pages/saas-pricing-index,pricing,17,17,20.0,12,6,6,5,83.0
+/pages/saas-glossary,other,20,13,10.0,12,6,7,5,73.0
+/pages/saas-pricing-changes,pricing,17,15.65,20.0,12,6,8,5,83.65
+/pages/saas-pricing-index,pricing,17,17,20.0,12,6,8,5,85.0
 /pages/saas-roi-calculator,other,20,14.46,10.0,9.05,6,10,5,74.5
+/pages/saas-spend-audit,pricing,20,16.58,20.0,15,6,6,5,88.58
 /pages/sage-vs-airbase-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
 /pages/sage-vs-divvy-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
 /pages/salesforce-free-trial-2026-how-to-get-it-step-by-step,free_trial,20,20,20.0,15,10,10,5,100
@@ -880,6 +887,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/spyfu-vs-clearscope-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/spyfu-vs-frase-io-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/spyfu-vs-rankmath-pro-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
+/pages/state-of-saas-pricing-2026,pricing,20,16.2,20.0,15,6,6,5,88.2
 /pages/sticky-password-vs-enpass-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
 /pages/sticky-password-vs-password-boss-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
 /pages/streamyard-vs-descript-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
@@ -941,6 +949,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/webex-vs-riverside-fm-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/webex-vs-streamyard-which-is-better-in-2026,comparison,20,20,20.0,15,10,8,5,98.0
 /pages/webex-vs-whereby-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
+/pages/weekly-saas-deal-digest,coupon,20,15.83,20.0,15,6,8,5,89.83
 /pages/whereby-vs-around-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/whereby-vs-descript-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100
 /pages/whereby-vs-loom-which-is-better-in-2026,comparison,20,20,20.0,15,10,10,5,100

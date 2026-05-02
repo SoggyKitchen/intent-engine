@@ -2,9 +2,15 @@
 
 These are not safe to fake or mass rewrite.
 
-- `/pages/free-trial-database`: thin_buyer_page
 - `/categories`: thin_buyer_page
+- `/pages/free-trial-database`: thin_buyer_page
+- `/pages/saas-pricing-changes`: thin_buyer_page
+- `/pages/coupon-verification-policy`: thin_buyer_page
 - `/deal-radar`: thin_buyer_page
+- `/pages/state-of-saas-pricing-2026`: thin_buyer_page
+- `/pages/report-outdated-pricing`: thin_buyer_page
+- `/pages/saas-spend-audit`: thin_buyer_page
+- `/pages/weekly-saas-deal-digest`: thin_buyer_page
 - `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025`: thin_buyer_page
 - `/pages/best-devtools-for-multi-agent-workflows-in-2025`: thin_buyer_page
 - `/pages/best-devops-tools-for-agile-workflows-in-2026`: thin_buyer_page

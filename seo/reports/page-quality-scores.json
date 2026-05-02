@@ -55,10 +55,10 @@
     "trust": 20.0
   },
   {
-    "content": 16.84,
+    "content": 16.97,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 80.34,
+    "overall": 80.47,
     "path": "/",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -3630,6 +3630,17 @@
     "trust": 20.0
   },
   {
+    "content": 15.21,
+    "conversionRevenue": 6,
+    "internalLinking": 15,
+    "overall": 86.2,
+    "path": "/pages/coupon-verification-policy",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 19,
+    "trust": 20.0
+  },
+  {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
@@ -4708,10 +4719,10 @@
     "trust": 20.0
   },
   {
-    "content": 16.42,
-    "conversionRevenue": 6,
+    "content": 16.55,
+    "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 81.42,
+    "overall": 83.56,
     "path": "/pages/free-trial-database",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -5509,6 +5520,17 @@
     "schemaIndexability": 10,
     "technical": 20,
     "trust": 20.0
+  },
+  {
+    "content": 14.72,
+    "conversionRevenue": 6,
+    "internalLinking": 12,
+    "overall": 78.72,
+    "path": "/pages/how-saaspare-ranks-tools",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 20,
+    "trust": 15.0
   },
   {
     "content": 20,
@@ -8734,6 +8756,28 @@
     "trust": 20.0
   },
   {
+    "content": 14.36,
+    "conversionRevenue": 8,
+    "internalLinking": 15,
+    "overall": 88.36,
+    "path": "/pages/report-outdated-pricing",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 13.88,
+    "conversionRevenue": 7,
+    "internalLinking": 12,
+    "overall": 71.88,
+    "path": "/pages/request-a-comparison",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 18,
+    "trust": 10.0
+  },
+  {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
@@ -8998,10 +9042,32 @@
     "trust": 20.0
   },
   {
-    "content": 17,
-    "conversionRevenue": 6,
+    "content": 13,
+    "conversionRevenue": 7,
     "internalLinking": 12,
-    "overall": 83.0,
+    "overall": 73.0,
+    "path": "/pages/saas-glossary",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 20,
+    "trust": 10.0
+  },
+  {
+    "content": 15.65,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 83.65,
+    "path": "/pages/saas-pricing-changes",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 17,
+    "trust": 20.0
+  },
+  {
+    "content": 17,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 85.0,
     "path": "/pages/saas-pricing-index",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -9018,6 +9084,17 @@
     "schemaIndexability": 6,
     "technical": 20,
     "trust": 10.0
+  },
+  {
+    "content": 16.58,
+    "conversionRevenue": 6,
+    "internalLinking": 15,
+    "overall": 88.58,
+    "path": "/pages/saas-spend-audit",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 20,
+    "trust": 20.0
   },
   {
     "content": 20,
@@ -9691,6 +9768,17 @@
     "trust": 20.0
   },
   {
+    "content": 16.2,
+    "conversionRevenue": 6,
+    "internalLinking": 15,
+    "overall": 88.2,
+    "path": "/pages/state-of-saas-pricing-2026",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 20,
+    "trust": 20.0
+  },
+  {
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
@@ -10358,6 +10446,17 @@
     "path": "/pages/webex-vs-whereby-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
+    "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 15.83,
+    "conversionRevenue": 8,
+    "internalLinking": 15,
+    "overall": 89.83,
+    "path": "/pages/weekly-saas-deal-digest",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
     "technical": 20,
     "trust": 20.0
   },

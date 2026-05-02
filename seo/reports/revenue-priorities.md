@@ -43,6 +43,10 @@
 - `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 100): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/coupon-verification-policy` (coupon, score 86.2): CTA=True, affiliateLinks=0, disclosure=True
+- `/pages/weekly-saas-deal-digest` (coupon, score 89.83): CTA=True, affiliateLinks=0, disclosure=True
+- `/pages/free-trial-database` (free_trial, score 83.56): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/saas-pricing-index` (pricing, score 85.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 97.11): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 97.3): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 97.46): CTA=True, affiliateLinks=2, disclosure=True
@@ -96,7 +100,3 @@
 - `/pages/datadog-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 100): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-review-2026-is-it-worth-it-honest-verdict` (pricing, score 100): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/deel-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 100): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/deel-review-2026-is-it-worth-it-honest-verdict` (pricing, score 100): CTA=True, affiliateLinks=2, disclosure=True
-- `/pages/docusign-review-2026-is-it-worth-it-honest-verdict` (pricing, score 100): CTA=True, affiliateLinks=2, disclosure=True
-- `/pages/does-asana-have-a-free-plan-2026-full-breakdown` (free_trial, score 100): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/does-brevo-have-a-free-plan-2026-full-breakdown` (free_trial, score 100): CTA=True, affiliateLinks=1, disclosure=True

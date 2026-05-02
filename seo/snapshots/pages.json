@@ -678,14 +678,15 @@
       "/pages/?q=dev",
       "/pages/?q=hr",
       "/pages/?q=seo",
-      "/pages/?type=alternatives",
-      "/pages/?type=pricing",
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-vs-semrush-which-is-better-in-2026",
       "/pages/best-1password-alternatives-in-2026-free-paid",
       "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/coupon-verification-policy",
       "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
       "/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
       "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
@@ -693,12 +694,20 @@
       "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
       "/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-changes",
+      "/pages/saas-pricing-index",
       "/pages/saas-roi-calculator",
+      "/pages/saas-spend-audit",
       "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/semrush-vs-moz-pro-which-is-better-in-2026",
       "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/state-of-saas-pricing-2026",
+      "/pages/weekly-saas-deal-digest",
       "/pages/xero-pricing-2026-plans-costs-what-you-actually-pay",
       "/privacy",
       "/shortlist"
@@ -718,10 +727,10 @@
       "WebSite"
     ],
     "score": {
-      "content": 16.84,
+      "content": 16.97,
       "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 80.34,
+      "overall": 80.47,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 20,
@@ -731,7 +740,7 @@
     "title_length": 57,
     "url": "https://saaspare.org/",
     "warnings": [],
-    "word_count": 767
+    "word_count": 794
   },
   {
     "affiliate_links": [],
@@ -34078,6 +34087,93 @@
     "word_count": 1282
   },
   {
+    "affiliate_links": [],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/coupon-verification-policy",
+    "external_links": [],
+    "file": "site/pages/coupon-verification-policy.html",
+    "h1": [
+      "Coupon Verification Policy"
+    ],
+    "h2": [
+      "Our 5-Step Coupon Verification Process",
+      "What \"Verified\" Actually Means",
+      "What We Won't Do",
+      "How SaaSpare keeps this page useful"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-index",
+      "/privacy",
+      "/shortlist",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/deal-radar",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 1,
+    "meta_description": "Find working Coupon Verification Policy promo codes and discounts for 2026. Verified deals, annual plan savings, and the best ways to reduce your Coupon Verification Policy bill.",
+    "meta_length": 178,
+    "page_type": "coupon",
+    "path": "/pages/coupon-verification-policy",
+    "robots": "index, follow",
+    "schema_types": [
+      "Organization",
+      "WebPage",
+      "WebSite"
+    ],
+    "score": {
+      "content": 15.21,
+      "conversionRevenue": 6,
+      "internalLinking": 15,
+      "overall": 86.2,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 19,
+      "trust": 20.0
+    },
+    "title": "Coupon Verification Policy Promo Codes & Discounts 2026 | SaaSpare",
+    "title_length": 66,
+    "url": "https://saaspare.org/pages/coupon-verification-policy",
+    "warnings": [
+      "meta_length_outside_target",
+      "thin_buyer_page"
+    ],
+    "word_count": 441
+  },
+  {
     "affiliate_links": [
       "/go/crowdstrike?utm_source=saaspare&utm_medium=affiliate&utm_campaign=comparison&utm_content=crowdstrike"
     ],
@@ -43935,7 +44031,9 @@
     "word_count": 1244
   },
   {
-    "affiliate_links": [],
+    "affiliate_links": [
+      "/go/notion?utm_source=saaspare&utm_medium=affiliate&utm_campaign=database&utm_content=notion"
+    ],
     "broken_internal_links": [
       "/pages/activecampaign-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/bamboohr-free-trial-2026-how-to-get-it-step-by-step",
@@ -43956,6 +44054,7 @@
     ],
     "h2": [
       "Step-by-step trial guides",
+      "Ready to try a SaaS tool?",
       "How SaaSpare keeps this page useful"
     ],
     "has_affiliate_disclosure": true,
@@ -43981,6 +44080,7 @@
       "/categories",
       "/contact",
       "/deal-radar",
+      "/go/notion?utm_source=saaspare&utm_medium=affiliate&utm_campaign=database&utm_content=notion",
       "/methodology",
       "/pages/",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
@@ -44035,10 +44135,10 @@
       "Organization"
     ],
     "score": {
-      "content": 16.42,
-      "conversionRevenue": 6,
+      "content": 16.55,
+      "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 81.42,
+      "overall": 83.56,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 16,
@@ -44051,7 +44151,7 @@
       "thin_buyer_page",
       "title_length_outside_target"
     ],
-    "word_count": 684
+    "word_count": 711
   },
   {
     "affiliate_links": [
@@ -51432,6 +51532,84 @@
     "word_count": 1213
   },
   {
+    "affiliate_links": [],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/how-saaspare-ranks-tools",
+    "external_links": [],
+    "file": "site/pages/how-saaspare-ranks-tools.html",
+    "h1": [
+      "How SaaSpare Ranks Tools: Our Methodology for Comparison Rankings"
+    ],
+    "h2": [
+      "The SaaSpare Ranking Rubric",
+      "What We Do NOT Factor In",
+      "Who Verifies Each Ranking",
+      "When We Change a Ranking"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": false,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-changes",
+      "/pages/saas-pricing-index",
+      "/privacy",
+      "/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 1,
+    "meta_description": "The exact ranking methodology SaaSpare uses: 6-factor weighted rubric, independent verification, and what we deliberately exclude (affiliate rates, paid placement).",
+    "meta_length": 164,
+    "page_type": "other",
+    "path": "/pages/how-saaspare-ranks-tools",
+    "robots": "index, follow",
+    "schema_types": [
+      "Organization",
+      "WebPage",
+      "WebSite"
+    ],
+    "score": {
+      "content": 14.72,
+      "conversionRevenue": 6,
+      "internalLinking": 12,
+      "overall": 78.72,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 20,
+      "trust": 15.0
+    },
+    "title": "How SaaSpare Ranks Tools \u2014 Our Comparison Methodology | SaaSpare",
+    "title_length": 64,
+    "url": "https://saaspare.org/pages/how-saaspare-ranks-tools",
+    "warnings": [],
+    "word_count": 345
+  },
+  {
     "affiliate_links": [
       "/go/hubspot?utm_source=saaspare&utm_medium=affiliate&utm_campaign=coupon&utm_content=hubspot",
       "/go/zoho-crm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=coupon&utm_content=zoho-crm"
@@ -54960,7 +55138,7 @@
     "warnings": [
       "title_length_outside_target"
     ],
-    "word_count": 9017
+    "word_count": 9014
   },
   {
     "affiliate_links": [
@@ -82349,6 +82527,170 @@
     "word_count": 1156
   },
   {
+    "affiliate_links": [],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/report-outdated-pricing",
+    "external_links": [],
+    "file": "site/pages/report-outdated-pricing.html",
+    "h1": [
+      "Report Outdated Pricing: Help Us Keep SaaSpare Accurate"
+    ],
+    "h2": [
+      "Report a Pricing Error",
+      "Our Correction Commitment",
+      "How SaaSpare keeps this page useful"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-changes",
+      "/pages/saas-pricing-index",
+      "/privacy",
+      "/shortlist",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/deal-radar",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 1,
+    "meta_description": "Explore Report Outdated Pricing pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
+    "meta_length": 145,
+    "page_type": "pricing",
+    "path": "/pages/report-outdated-pricing",
+    "robots": "index, follow",
+    "schema_types": [
+      "Organization",
+      "WebPage",
+      "WebSite"
+    ],
+    "score": {
+      "content": 14.36,
+      "conversionRevenue": 8,
+      "internalLinking": 15,
+      "overall": 88.36,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 20,
+      "trust": 20.0
+    },
+    "title": "Report Outdated Pricing Pricing 2026: Plans & Costs | SaaSpare",
+    "title_length": 62,
+    "url": "https://saaspare.org/pages/report-outdated-pricing",
+    "warnings": [
+      "thin_buyer_page"
+    ],
+    "word_count": 272
+  },
+  {
+    "affiliate_links": [],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/request-a-comparison",
+    "external_links": [],
+    "file": "site/pages/request-a-comparison.html",
+    "h1": [
+      "Request a Comparison: Can't Find the Tools You Need to Compare?"
+    ],
+    "h2": [
+      "What to Include",
+      "What Happens Next"
+    ],
+    "has_affiliate_disclosure": false,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": false,
+    "has_methodology": true,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": false,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-index",
+      "/privacy",
+      "/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 1,
+    "meta_description": "Can",
+    "meta_length": 3,
+    "page_type": "other",
+    "path": "/pages/request-a-comparison",
+    "robots": "index, follow",
+    "schema_types": [
+      "Organization",
+      "WebPage",
+      "WebSite"
+    ],
+    "score": {
+      "content": 13.88,
+      "conversionRevenue": 7,
+      "internalLinking": 12,
+      "overall": 71.88,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 18,
+      "trust": 10.0
+    },
+    "title": "Request a Comparison \u2014 Tell SaaSpare Which B2B SaaS Tools to Compare | SaaSpare",
+    "title_length": 79,
+    "url": "https://saaspare.org/pages/request-a-comparison",
+    "warnings": [
+      "meta_length_outside_target",
+      "title_length_outside_target"
+    ],
+    "word_count": 177
+  },
+  {
     "affiliate_links": [
       "/go/datadog?utm_source=saaspare&utm_medium=affiliate&utm_campaign=comparison&utm_content=datadog",
       "/go/retool?utm_source=saaspare&utm_medium=affiliate&utm_campaign=comparison&utm_content=retool"
@@ -84797,6 +85139,182 @@
   },
   {
     "affiliate_links": [],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/saas-glossary",
+    "external_links": [],
+    "file": "site/pages/saas-glossary.html",
+    "h1": [
+      "The SaaS Glossary: 50+ B2B SaaS Terms Every Buyer Should Know"
+    ],
+    "h2": [],
+    "has_affiliate_disclosure": false,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": false,
+    "has_methodology": true,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": false,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-index",
+      "/pages/weekly-saas-deal-digest",
+      "/privacy",
+      "/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 1,
+    "meta_description": "The complete B2B SaaS vocabulary: ACV, ARR, CAC, NDR, PLG, SSO tax, seat minimums, and 50+ more terms explained simply.",
+    "meta_length": 119,
+    "page_type": "other",
+    "path": "/pages/saas-glossary",
+    "robots": "index, follow",
+    "schema_types": [
+      "DefinedTermSet",
+      "Organization",
+      "WebSite"
+    ],
+    "score": {
+      "content": 13,
+      "conversionRevenue": 7,
+      "internalLinking": 12,
+      "overall": 73.0,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 20,
+      "trust": 10.0
+    },
+    "title": "SaaS Glossary: 50+ B2B SaaS Terms Every Buyer Should Know | SaaSpare",
+    "title_length": 68,
+    "url": "https://saaspare.org/pages/saas-glossary",
+    "warnings": [],
+    "word_count": 994
+  },
+  {
+    "affiliate_links": [],
+    "broken_internal_links": [
+      "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay"
+    ],
+    "canonical": "https://saaspare.org/pages/saas-pricing-changes",
+    "external_links": [],
+    "file": "site/pages/saas-pricing-changes.html",
+    "h1": [
+      "SaaS Pricing Changes Tracker: Which B2B SaaS Vendors Changed Prices in 2026"
+    ],
+    "h2": [
+      "2026 Biggest Price Hikes",
+      "2026 Rare Price Drops",
+      "Plan Restructures Worth Watching",
+      "Methodology",
+      "How SaaSpare keeps this page useful"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-index",
+      "/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/weekly-saas-deal-digest",
+      "/privacy",
+      "/shortlist",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/deal-radar",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 1,
+    "meta_description": "Explore SaaS Pricing Changes pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
+    "meta_length": 142,
+    "page_type": "pricing",
+    "path": "/pages/saas-pricing-changes",
+    "robots": "index, follow",
+    "schema_types": [
+      "Dataset",
+      "Organization",
+      "WebPage",
+      "WebSite"
+    ],
+    "score": {
+      "content": 15.65,
+      "conversionRevenue": 8,
+      "internalLinking": 12,
+      "overall": 83.65,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 17,
+      "trust": 20.0
+    },
+    "title": "SaaS Pricing Changes Pricing 2026: Plans & Costs | SaaSpare",
+    "title_length": 59,
+    "url": "https://saaspare.org/pages/saas-pricing-changes",
+    "warnings": [
+      "thin_buyer_page"
+    ],
+    "word_count": 530
+  },
+  {
+    "affiliate_links": [
+      "/go/hubspot?utm_source=saaspare&utm_medium=affiliate&utm_campaign=index&utm_content=hubspot"
+    ],
     "broken_internal_links": [
       "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/brex-pricing-2026-plans-costs-what-you-actually-pay",
@@ -84819,6 +85337,7 @@
     ],
     "h2": [
       "Explore individual tool pricing",
+      "Compare SaaS pricing in detail",
       "How SaaSpare keeps this page useful"
     ],
     "has_affiliate_disclosure": true,
@@ -84844,6 +85363,7 @@
       "/categories",
       "/contact",
       "/deal-radar",
+      "/go/hubspot?utm_source=saaspare&utm_medium=affiliate&utm_campaign=index&utm_content=hubspot",
       "/methodology",
       "/pages/",
       "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
@@ -84919,9 +85439,9 @@
     ],
     "score": {
       "content": 17,
-      "conversionRevenue": 6,
+      "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 83.0,
+      "overall": 85.0,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 17,
@@ -84931,7 +85451,7 @@
     "title_length": 57,
     "url": "https://saaspare.org/pages/saas-pricing-index",
     "warnings": [],
-    "word_count": 1060
+    "word_count": 1084
   },
   {
     "affiliate_links": [
@@ -85004,6 +85524,94 @@
     "url": "https://saaspare.org/pages/saas-roi-calculator",
     "warnings": [],
     "word_count": 291
+  },
+  {
+    "affiliate_links": [],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/saas-spend-audit",
+    "external_links": [],
+    "file": "site/pages/saas-spend-audit.html",
+    "h1": [
+      "SaaS Spend Audit: Find A$1,000s of Hidden SaaS Costs in Under 7 Days"
+    ],
+    "h2": [
+      "What You Get",
+      "Pricing",
+      "How It Works",
+      "FAQs",
+      "How SaaSpare keeps this page useful"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-index",
+      "/privacy",
+      "/shortlist",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/deal-radar",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 1,
+    "meta_description": "Get a full SaaS stack audit in 7 days. Find duplicate tools, unused seats, and 20-40% savings. From A$149 DIY to full consulting.",
+    "meta_length": 129,
+    "page_type": "pricing",
+    "path": "/pages/saas-spend-audit",
+    "robots": "index, follow",
+    "schema_types": [
+      "Offer",
+      "Organization",
+      "Service",
+      "WebSite"
+    ],
+    "score": {
+      "content": 16.58,
+      "conversionRevenue": 6,
+      "internalLinking": 15,
+      "overall": 88.58,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 20,
+      "trust": 20.0
+    },
+    "title": "SaaS Spend Audit Service \u2014 Find Hidden SaaS Costs | SaaSpare",
+    "title_length": 60,
+    "url": "https://saaspare.org/pages/saas-spend-audit",
+    "warnings": [
+      "thin_buyer_page"
+    ],
+    "word_count": 716
   },
   {
     "affiliate_links": [],
@@ -91162,6 +91770,96 @@
     "url": "https://saaspare.org/pages/spyfu-vs-rankmath-pro-which-is-better-in-2026",
     "warnings": [],
     "word_count": 1289
+  },
+  {
+    "affiliate_links": [],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/state-of-saas-pricing-2026",
+    "external_links": [],
+    "file": "site/pages/state-of-saas-pricing-2026.html",
+    "h1": [
+      "The State of SaaS Pricing Transparency: 2026 Report"
+    ],
+    "h2": [
+      "Key Findings",
+      "Transparency by Category",
+      "The 5 Worst Transparency Offenders of 2026",
+      "The 5 Best Transparency Leaders",
+      "The Hidden Seat Minimum Problem",
+      "Methodology",
+      "How SaaSpare keeps this page useful"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-index",
+      "/privacy",
+      "/shortlist",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/deal-radar",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 1,
+    "meta_description": "Explore State Of SaaS pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
+    "meta_length": 135,
+    "page_type": "pricing",
+    "path": "/pages/state-of-saas-pricing-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Organization",
+      "Report",
+      "WebPage",
+      "WebSite"
+    ],
+    "score": {
+      "content": 16.2,
+      "conversionRevenue": 6,
+      "internalLinking": 15,
+      "overall": 88.2,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 20,
+      "trust": 20.0
+    },
+    "title": "State Of SaaS Pricing 2026: Plans & Costs | SaaSpare",
+    "title_length": 52,
+    "url": "https://saaspare.org/pages/state-of-saas-pricing-2026",
+    "warnings": [
+      "thin_buyer_page"
+    ],
+    "word_count": 640
   },
   {
     "affiliate_links": [],
@@ -97373,6 +98071,92 @@
     "url": "https://saaspare.org/pages/webex-vs-whereby-which-is-better-in-2026",
     "warnings": [],
     "word_count": 1169
+  },
+  {
+    "affiliate_links": [],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/weekly-saas-deal-digest",
+    "external_links": [],
+    "file": "site/pages/weekly-saas-deal-digest.html",
+    "h1": [
+      "Weekly SaaS Deal Digest: The 7 Best B2B SaaS Deals of the Week, in Your Inbox"
+    ],
+    "h2": [
+      "What's Inside Every Issue",
+      "Sample Recent Issues",
+      "FAQs",
+      "How SaaSpare keeps this page useful"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-index",
+      "/privacy",
+      "/shortlist",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/deal-radar",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 1,
+    "meta_description": "Join 2,000+ founders getting the best verified B2B SaaS deals, price changes, and free trials every Friday. Free, one email per week.",
+    "meta_length": 133,
+    "page_type": "coupon",
+    "path": "/pages/weekly-saas-deal-digest",
+    "robots": "index, follow",
+    "schema_types": [
+      "Organization",
+      "WebPage",
+      "WebSite"
+    ],
+    "score": {
+      "content": 15.83,
+      "conversionRevenue": 8,
+      "internalLinking": 15,
+      "overall": 89.83,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 20,
+      "trust": 20.0
+    },
+    "title": "Weekly SaaS Deal Digest \u2014 Best B2B SaaS Deals Every Friday | SaaSpare",
+    "title_length": 69,
+    "url": "https://saaspare.org/pages/weekly-saas-deal-digest",
+    "warnings": [
+      "thin_buyer_page"
+    ],
+    "word_count": 566
   },
   {
     "affiliate_links": [
