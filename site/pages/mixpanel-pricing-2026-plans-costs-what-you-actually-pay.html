@@ -144,6 +144,8 @@
 <meta name="keywords" content="Mixpanel Pricing 2026: Plans &amp; Costs, pricing, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
 <meta name="twitter:site" content="@SaaSpare">
 <meta name="twitter:image" content="https://saaspare.org/og-default.png">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mixpanel", "applicationCategory": "BusinessApplication", "offers": {"@type": "Offer", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly"}, "publisher": {"@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org"}}</script>
 </head>
 <body>
 <nav>
@@ -372,5 +374,15 @@ emV2&&emV2.addEventListener('click',function(e){if(e.target===emV2)closeExitV2()
 
 <script defer src="/assets/saaspare-ui.js"></script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
+<script>
+document.addEventListener("click",function(e){
+  var a=e.target.closest("a");
+  if(!a||typeof gtag!=="function")return;
+  var h=a.href||"";
+  if(h.includes("/go/")||h.includes("utm_source=saaspare")){
+    gtag("event","affiliate_click",{"link_url":h,"page_location":window.location.href});
+  }
+});
+</script>
 </body>
 </html>

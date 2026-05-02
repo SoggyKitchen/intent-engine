@@ -21,10 +21,8 @@
 <meta name="twitter:image" content="https://saaspare.org/og-default.png">
 <meta name="Impact-Site-Verification" content="630c59bd-7d94-4608-bf4d-7c9258a43362">
 <meta name="Impact-Site-Verification" content="a1bb8518-4dc8-412a-80a9-fb1009113071">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "SaaSpare", "url": "https://saaspare.org", "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://saaspare.org/pages/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "SaaSpare", "url": "https://saaspare.org", "description": "Unbiased B2B SaaS comparisons with real pricing, honest verdicts, free trial guides, and coupon codes.", "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://saaspare.org/pages/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}, {"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools for founders, CTOs and operators.", "sameAs": ["https://x.com/SaaSpare", "https://twitter.com/SaaSpare"], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "partnerships@saaspare.org", "url": "https://saaspare.org/contact"}}]</script>
 <style>
 /* ── TOKENS ─────────────────────────────────── */
 :root{
@@ -70,7 +68,10 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 
 /* ── HERO ─────────────────────────────────────── */
 .hero{position:relative;overflow:hidden;padding:10.5rem 2rem 8rem;text-align:center;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;animation:heroEnter 1.2s cubic-bezier(.34,1.56,.64,1) forwards}
-@keyframes heroEnter{0%{opacity:0}100%{opacity:1}}
+@keyframes heroEnter{
+  0%{opacity:0}
+  100%{opacity:1}
+}
 
 /* deep layered background */
 .hero-bg{position:absolute;inset:0;pointer-events:none;background:
@@ -116,7 +117,6 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 
 /* live activity strip */
 .hero-activity{display:flex;align-items:center;gap:.7rem;justify-content:center;margin-bottom:1.6rem;animation:slideUp .8s .3s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:1}
-@keyframes slideUp{0%{opacity:0;transform:translateY(20px) scale(.95)}100%{opacity:1;transform:translateY(0) scale(1)}}
 .activity-pill{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:.32rem .8rem;font-size:.68rem;color:var(--muted);font-weight:600}
 .activity-sep{color:var(--dim);font-size:.55rem}
 
@@ -386,9 +386,6 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1}
 <meta name="twitter:site" content="@SaaSpare">
 <meta name="twitter:title" content="Unbiased B2B Software Comparisons for Confident Decisions">
 <meta name="twitter:description" content="SaaSpare: Unbiased B2B software comparisons. Find real pricing, expert reviews, and recommendations for your business needs.">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": []}</script>
-<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
-<link rel="dns-prefetch" href="//www.googletagmanager.com">
 </head>
 <body>
 
@@ -427,7 +424,7 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1}
     <div class="vf vf-4"><span class="vf-dot green"></span><span class="vf-label">Linear</span>&nbsp;→&nbsp;Best dev UX, hands down</div>
   </div>
 
-  <div class="badge"><span class="badge-dot"></span>990 comparisons live</div>
+  <div class="badge"><span class="badge-dot"></span>996 comparisons live</div>
 
   <h1 class="hero-title">
     The honest guide to<br>
@@ -711,6 +708,7 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1}
     </div>
     <div class="footer-col">
       <h4>Resources</h4>
+      <a href="/categories">Categories</a>
       <a href="/shortlist">Shortlist Builder</a>
       <a href="/deal-radar">Deal Radar</a>
       <a href="/pages/saas-roi-calculator">ROI Calculator</a>
@@ -830,7 +828,7 @@ setTimeout(type,800);
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
-  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||990;
+  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||996;
   ['live-count','stat-pages'].forEach(id=>{const el=document.getElementById(id);if(el){el.dataset.count=n;el.textContent=n.toLocaleString()+(id==='stat-pages'?'+':'')}});
 }).catch(()=>{});
 
@@ -919,6 +917,25 @@ window.addEventListener('scroll',()=>{
   document.querySelectorAll('.vf').forEach(el=>{el.style.opacity=fade;});
 },{passive:true});
 
+</script>
+
+<script>
+/* GA4 affiliate event tracking */
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a');
+  if(!a)return;
+  var href=a.href||'';
+  if(href.includes('/go/')||href.includes('utm_source=saaspare')){
+    if(typeof gtag==='function'){
+      gtag('event','affiliate_click',{link_url:href,page_location:window.location.href});
+    }
+  }
+  if(a.classList.contains('nav-cta')||a.classList.contains('pop-chip')){
+    if(typeof gtag==='function'){
+      gtag('event','cta_click',{cta_text:a.textContent.trim(),page_location:window.location.href});
+    }
+  }
+});
 </script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 <script defer src="/assets/saaspare-ui.js"></script>

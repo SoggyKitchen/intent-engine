@@ -34,6 +34,7 @@
       "/",
       "/about",
       "/affiliate-disclosure",
+      "/categories",
       "/contact",
       "/deal-radar",
       "/media-kit",
@@ -73,7 +74,7 @@
     "title_length": 50,
     "url": "https://saaspare.org/about",
     "warnings": [],
-    "word_count": 537
+    "word_count": 538
   },
   {
     "affiliate_links": [],
@@ -82,65 +83,74 @@
     "external_links": [],
     "file": "site/affiliate-disclosure.html",
     "h1": [
-      "How SaaSpare earns money"
+      "How SaaSpare earns money<br>and stays <em>unbiased</em>"
     ],
     "h2": [
-      "Editorial independence",
-      "Tracked links",
-      "Accuracy",
-      "How SaaSpare keeps this page useful"
+      "Material relationship disclosure",
+      "What vendors can and cannot do",
+      "How to spot a monetised link",
+      "Keeping information accurate",
+      "Affiliate networks and direct programmes",
+      "Questions about this disclosure"
     ],
     "has_affiliate_disclosure": true,
     "has_comparison_table": true,
     "has_correction": true,
-    "has_cta": false,
+    "has_cta": true,
     "has_email_capture": false,
     "has_faq": false,
     "has_faq_schema": false,
     "has_last_verified": true,
     "has_methodology": true,
-    "has_pricing_source": true,
+    "has_pricing_source": false,
     "has_pricing_table": true,
     "has_related_pages": false,
-    "has_sticky_cta": false,
-    "has_trust_box": true,
-    "images": 1,
+    "has_sticky_cta": true,
+    "has_trust_box": false,
+    "images": 0,
     "images_missing_alt": 0,
     "internal_links": [
       "/",
       "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
       "/deal-radar",
+      "/methodology",
       "/pages/",
-      "/shortlist",
-      "https://saaspare.org/affiliate-disclosure",
-      "https://saaspare.org/contact",
-      "https://saaspare.org/methodology"
+      "/pages/?q=crm",
+      "/pages/?q=hr",
+      "/pages/?q=seo",
+      "/pages/saas-roi-calculator",
+      "/privacy",
+      "/shortlist"
     ],
     "issues": [],
     "jsonld_blocks": 1,
-    "meta_description": "SaaSpare may earn commissions from some links, but vendors cannot buy rankings, verdicts, or editorial placement.",
-    "meta_length": 113,
+    "meta_description": "SaaSpare earns commissions from some affiliate links. Learn exactly how this works, what it means for our verdicts, and how editorial independence is protected.",
+    "meta_length": 160,
     "page_type": "trust",
     "path": "/affiliate-disclosure",
     "robots": "index, follow",
     "schema_types": [
-      "Organization"
+      "Organization",
+      "WebPage"
     ],
     "score": {
-      "content": 11.03,
-      "conversionRevenue": 1,
-      "internalLinking": 8.6,
-      "overall": 71.62,
+      "content": 16.64,
+      "conversionRevenue": 6,
+      "internalLinking": 11.3,
+      "overall": 79.94,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 20,
-      "trust": 20.0
+      "trust": 15.0
     },
-    "title": "SaaSpare Affiliate Disclosure: How Commissions Work",
-    "title_length": 51,
+    "title": "Affiliate Disclosure: How SaaSpare Earns & Stays Unbiased | SaaSpare",
+    "title_length": 68,
     "url": "https://saaspare.org/affiliate-disclosure",
     "warnings": [],
-    "word_count": 205
+    "word_count": 728
   },
   {
     "affiliate_links": [],
@@ -694,23 +704,24 @@
       "/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 1,
     "meta_description": "SaaSpare: Unbiased B2B software comparisons. Find real pricing, expert reviews, and recommendations for your business needs.",
     "meta_length": 124,
     "page_type": "other",
     "path": "/",
     "robots": "index, follow",
     "schema_types": [
+      "ContactPoint",
       "EntryPoint",
       "Organization",
       "SearchAction",
       "WebSite"
     ],
     "score": {
-      "content": 16.83,
+      "content": 16.84,
       "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 80.33,
+      "overall": 80.34,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 20,
@@ -720,7 +731,7 @@
     "title_length": 57,
     "url": "https://saaspare.org/",
     "warnings": [],
-    "word_count": 766
+    "word_count": 767
   },
   {
     "affiliate_links": [],
@@ -821,6 +832,7 @@
       "/",
       "/about",
       "/affiliate-disclosure",
+      "/categories",
       "/contact",
       "/deal-radar",
       "/methodology",
@@ -859,7 +871,7 @@
     "title_length": 44,
     "url": "https://saaspare.org/methodology",
     "warnings": [],
-    "word_count": 550
+    "word_count": 551
   },
   {
     "affiliate_links": [],
@@ -961,6 +973,7 @@
       "/",
       "/about",
       "/affiliate-disclosure",
+      "/categories",
       "/contact",
       "/deal-radar",
       "/methodology",
@@ -999,7 +1012,7 @@
     "title_length": 62,
     "url": "https://saaspare.org/shortlist",
     "warnings": [],
-    "word_count": 255
+    "word_count": 256
   },
   {
     "affiliate_links": [
@@ -2082,7 +2095,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore 1Password pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 131,
     "page_type": "pricing",
@@ -2095,8 +2108,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.59,
@@ -8132,7 +8147,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore ActiveCampaign pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 136,
     "page_type": "pricing",
@@ -8145,8 +8160,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.61,
@@ -9353,7 +9370,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Ahrefs pricing in 2026: explore all plans, costs, and hidden fees. SaaSpare breaks down what you actually pay and if it's worth it.",
     "meta_length": 131,
     "page_type": "pricing",
@@ -9366,8 +9383,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.98,
@@ -10588,7 +10607,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Amplitude pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 131,
     "page_type": "pricing",
@@ -10601,8 +10620,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.91,
@@ -12621,7 +12642,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Asana pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 127,
     "page_type": "pricing",
@@ -12634,8 +12655,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -14763,7 +14786,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore BambooHR pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 130,
     "page_type": "pricing",
@@ -14776,8 +14799,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -16732,8 +16757,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 1,
-    "meta_description": "Compare top AI coding assistants for secure B2B development. See how GitHub Copilot, Cursor, Claude Code, and Tabnine handle secrets, agent switching, and code privacy.",
-    "meta_length": 168,
+    "meta_description": "Compare top AI coding assistants for secure B2B development. See how GitHub Copilot, Cursor, Claude Code, and Tabnine handle secrets, agent switching, and co...",
+    "meta_length": 160,
     "page_type": "best_of",
     "path": "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
     "robots": "index, follow",
@@ -17656,8 +17681,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 1,
-    "meta_description": "Compare top cloud infra tools like HashiCorp Vault, Azure Event Hubs, and Google Cloud Storage for secure K8s secrets, Kafka-compatible messaging, and low-latency data workflows.",
-    "meta_length": 178,
+    "meta_description": "Compare top cloud infra tools like HashiCorp Vault, Azure Event Hubs, and Google Cloud Storage for secure K8s secrets, Kafka-compatible messaging, and low-la...",
+    "meta_length": 160,
     "page_type": "best_of",
     "path": "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
     "robots": "index, follow",
@@ -17675,18 +17700,16 @@
       "content": 20,
       "conversionRevenue": 8,
       "internalLinking": 15,
-      "overall": 97.0,
+      "overall": 98.0,
       "performanceUx": 5,
       "schemaIndexability": 10,
-      "technical": 19,
+      "technical": 20,
       "trust": 20.0
     },
     "title": "Best Cloud Infrastructure Tools for Secure, Scalable | SaaSpare",
     "title_length": 63,
     "url": "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
-    "warnings": [
-      "meta_length_outside_target"
-    ],
+    "warnings": [],
     "word_count": 1044
   },
   {
@@ -18120,6 +18143,116 @@
     "word_count": 1042
   },
   {
+    "affiliate_links": [],
+    "broken_internal_links": [
+      "https://saaspare.org/pages/does-snyk-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/qualys-vs-duo-security-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/qualys-vs-sentinelone-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/qualys-vs-tenable-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/sentinelone-vs-duo-security-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/tenable-vs-duo-security-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/tenable-vs-sentinelone-which-software-is-best-in-2026"
+    ],
+    "canonical": "https://saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
+    "external_links": [
+      "https://github.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=xray-core-xhttp",
+      "https://twitter.com/intent/tweet?text=Best%20Cybersecurity%20Tools%20for%20B2B%20Software%20in%202025&url=https%3A//saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
+      "https://www.ai-tool.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=ai-tool",
+      "https://www.copilot.chat?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=copilot-chat",
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A//saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
+      "https://www.reddit.com/submit?url=https%3A//saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025&title=Best%20Cybersecurity%20Tools%20for%20B2B%20Software%20in%202025"
+    ],
+    "file": "site/pages/best-cybersecurity-tools-for-b2b-software-in-2025.html",
+    "h1": [
+      "Best Cybersecurity Tools for B2B Software in 2025"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Our Top Pick",
+      "AI-Tool <span class=\"winner-badge\">Top Pick</span>",
+      "Xray-core/xhttp",
+      "Copilot Chat",
+      "Frequently Asked Questions",
+      "How SaaSpare keeps this page useful",
+      "Ready to decide?"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "https://saaspare.org",
+      "https://saaspare.org/about",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/7-best-crowdstrike-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/7-best-okta-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/7-best-splunk-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
+      "https://saaspare.org/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
+      "https://saaspare.org/pages/does-snyk-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/qualys-vs-duo-security-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/qualys-vs-sentinelone-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/qualys-vs-tenable-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/pages/sentinelone-vs-duo-security-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/tenable-vs-duo-security-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/tenable-vs-sentinelone-which-software-is-best-in-2026",
+      "https://saaspare.org/privacy",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 1,
+    "meta_description": "Compare top cybersecurity tools for B2B software, including AI-powered security, DPI evasion, and payload entropy defense.",
+    "meta_length": 122,
+    "page_type": "best_of",
+    "path": "/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "FAQPage",
+      "ImageObject",
+      "ListItem",
+      "Organization",
+      "Question"
+    ],
+    "score": {
+      "content": 20.0,
+      "conversionRevenue": 8,
+      "internalLinking": 12,
+      "overall": 92.0,
+      "performanceUx": 5,
+      "schemaIndexability": 10,
+      "technical": 17,
+      "trust": 20.0
+    },
+    "title": "Best Cybersecurity Tools for B2B Software in 2025 | SaaSpare",
+    "title_length": 60,
+    "url": "https://saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
+    "warnings": [
+      "thin_buyer_page"
+    ],
+    "word_count": 799
+  },
+  {
     "affiliate_links": [
       "/go/datadog?utm_source=saaspare&utm_medium=affiliate&utm_campaign=bestof&utm_content=datadog",
       "/go/dynatrace-pricing?utm_source=saaspare&utm_medium=affiliate&utm_campaign=comparison&utm_content=dynatrace-pricing",
@@ -18402,8 +18535,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 1,
-    "meta_description": "Compare top devtools for measuring engineering velocity, shipping safety, and team productivity. Data-driven insights for tech leads and CTOs evaluating devops platforms.",
-    "meta_length": 170,
+    "meta_description": "Compare top devtools for measuring engineering velocity, shipping safety, and team productivity. Data-driven insights for tech leads and CTOs evaluating devo...",
+    "meta_length": 160,
     "page_type": "best_of",
     "path": "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
     "robots": "index, follow",
@@ -18529,6 +18662,112 @@
     "url": "https://saaspare.org/pages/best-devops-configuration-drift-detection-tools-in-2025",
     "warnings": [],
     "word_count": 969
+  },
+  {
+    "affiliate_links": [],
+    "broken_internal_links": [
+      "https://saaspare.org/pages/datadog-promo-codes-discounts-for-2026-save-on-software",
+      "https://saaspare.org/pages/does-linear-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/does-sentry-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step"
+    ],
+    "canonical": "https://saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
+    "external_links": [
+      "https://github.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=github-actions",
+      "https://glimmung.io?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=glimmung",
+      "https://octowatch.io?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=octowatch",
+      "https://twitter.com/intent/tweet?text=Best%20DevOps%20Tools%20for%20Agile%20Workflows%20in%202026&url=https%3A//saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A//saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
+      "https://www.reddit.com/submit?url=https%3A//saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026&title=Best%20DevOps%20Tools%20for%20Agile%20Workflows%20in%202026"
+    ],
+    "file": "site/pages/best-devops-tools-for-agile-workflows-in-2026.html",
+    "h1": [
+      "Best DevOps Tools for Agile Workflows in 2026"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Our Top Pick",
+      "Glimmung <span class=\"winner-badge\">Top Pick</span>",
+      "OctoWatch",
+      "GitHub Actions",
+      "Frequently Asked Questions",
+      "How SaaSpare keeps this page useful",
+      "Ready to decide?"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "https://saaspare.org",
+      "https://saaspare.org/about",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/7-best-datadog-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
+      "https://saaspare.org/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
+      "https://saaspare.org/pages/best-devtools-software-for-startups-in-2026-ranked",
+      "https://saaspare.org/pages/datadog-promo-codes-discounts-for-2026-save-on-software",
+      "https://saaspare.org/pages/does-linear-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/does-sentry-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/privacy",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 1,
+    "meta_description": "Compare Glimmung, OctoWatch, and GitHub Actions for agile workflow management, orchestration, and control plane functionality.",
+    "meta_length": 126,
+    "page_type": "best_of",
+    "path": "/pages/best-devops-tools-for-agile-workflows-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "FAQPage",
+      "ImageObject",
+      "ListItem",
+      "Organization",
+      "Question"
+    ],
+    "score": {
+      "content": 19.96,
+      "conversionRevenue": 8,
+      "internalLinking": 12,
+      "overall": 91.97,
+      "performanceUx": 5,
+      "schemaIndexability": 10,
+      "technical": 17,
+      "trust": 20.0
+    },
+    "title": "Best DevOps Tools for Agile Workflows in 2026 | SaaSpare",
+    "title_length": 56,
+    "url": "https://saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
+    "warnings": [
+      "thin_buyer_page"
+    ],
+    "word_count": 793
   },
   {
     "affiliate_links": [
@@ -18690,8 +18929,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 1,
-    "meta_description": "Compare top devtools like Glimmung, OctoWatch, and MUGA for agentic workflows, engineering velocity, and privacy-safe automation. Make data-driven tooling decisions.",
-    "meta_length": 165,
+    "meta_description": "Compare top devtools like Glimmung, OctoWatch, and MUGA for agentic workflows, engineering velocity, and privacy-safe automation. Make data-driven tooling de...",
+    "meta_length": 160,
     "page_type": "best_of",
     "path": "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
     "robots": "index, follow",
@@ -19122,6 +19361,112 @@
   },
   {
     "affiliate_links": [],
+    "broken_internal_links": [
+      "https://saaspare.org/pages/does-linear-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/does-sentry-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step"
+    ],
+    "canonical": "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
+    "external_links": [
+      "https://ballast.io?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=ballast",
+      "https://hermes-orchestrator.io?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=hermes-orchestrator",
+      "https://paseo.io?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=paseo",
+      "https://twitter.com/intent/tweet?text=Best%20Devtools%20for%20Multi-Agent%20Workflows%20in%202025&url=https%3A//saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A//saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
+      "https://www.reddit.com/submit?url=https%3A//saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025&title=Best%20Devtools%20for%20Multi-Agent%20Workflows%20in%202025"
+    ],
+    "file": "site/pages/best-devtools-for-multi-agent-workflows-in-2025.html",
+    "h1": [
+      "Best Devtools for Multi-Agent Workflows in 2025"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Our Top Pick",
+      "Paseo <span class=\"winner-badge\">Top Pick</span>",
+      "Hermes Orchestrator",
+      "Ballast",
+      "Frequently Asked Questions",
+      "How SaaSpare keeps this page useful",
+      "Ready to decide?"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "https://saaspare.org",
+      "https://saaspare.org/about",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/7-best-datadog-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
+      "https://saaspare.org/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
+      "https://saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
+      "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
+      "https://saaspare.org/pages/best-devtools-software-for-startups-in-2026-ranked",
+      "https://saaspare.org/pages/does-linear-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/does-sentry-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/privacy",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 1,
+    "meta_description": "Compare Paseo, Hermes Orchestrator, and Ballast for efficient multi-agent workflows",
+    "meta_length": 83,
+    "page_type": "best_of",
+    "path": "/pages/best-devtools-for-multi-agent-workflows-in-2025",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "FAQPage",
+      "ImageObject",
+      "ListItem",
+      "Organization",
+      "Question"
+    ],
+    "score": {
+      "content": 19.61,
+      "conversionRevenue": 8,
+      "internalLinking": 12,
+      "overall": 90.61,
+      "performanceUx": 5,
+      "schemaIndexability": 10,
+      "technical": 16,
+      "trust": 20.0
+    },
+    "title": "Best Devtools for Multi-Agent Workflows in 2025 | SaaSpare",
+    "title_length": 58,
+    "url": "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
+    "warnings": [
+      "meta_length_outside_target",
+      "thin_buyer_page"
+    ],
+    "word_count": 722
+  },
+  {
+    "affiliate_links": [],
     "broken_internal_links": [],
     "canonical": "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
     "external_links": [
@@ -19287,8 +19632,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 1,
-    "meta_description": "Compare top devtools for secure agent workflows: OpenHands, Nexus, YieldFarm Framework, and AgentKit. See how they handle confirmation policies, security, and automation.",
-    "meta_length": 170,
+    "meta_description": "Compare top devtools for secure agent workflows: OpenHands, Nexus, YieldFarm Framework, and AgentKit. See how they handle confirmation policies, security, an...",
+    "meta_length": 160,
     "page_type": "best_of",
     "path": "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
     "robots": "index, follow",
@@ -22049,8 +22394,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 1,
-    "meta_description": "Compare top SaaS analytics platforms for B2B product teams\u2014featuring forecast integration, custom reporting, curriculum alignment, and multi-dimensional data visualization.",
-    "meta_length": 172,
+    "meta_description": "Compare top SaaS analytics platforms for B2B product teams\u2014featuring forecast integration, custom reporting, curriculum alignment, and multi-dimensional data...",
+    "meta_length": 160,
     "page_type": "best_of",
     "path": "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
     "robots": "index, follow",
@@ -22068,19 +22413,127 @@
       "content": 20,
       "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 91.0,
+      "overall": 92.0,
       "performanceUx": 5,
       "schemaIndexability": 10,
-      "technical": 16,
+      "technical": 17,
       "trust": 20.0
     },
     "title": "Best SaaS Analytics Tools for B2B Product Teams | SaaSpare",
     "title_length": 58,
     "url": "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
-    "warnings": [
-      "meta_length_outside_target"
-    ],
+    "warnings": [],
     "word_count": 958
+  },
+  {
+    "affiliate_links": [],
+    "broken_internal_links": [
+      "https://saaspare.org/pages/amplitude-review-2026-is-it-worth-it-honest-verdict-pricing",
+      "https://saaspare.org/pages/does-amplitude-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/does-hotjar-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/fullstory-vs-hotjar-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/fullstory-vs-segment-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/hotjar-vs-segment-which-software-is-best-in-2026"
+    ],
+    "canonical": "https://saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
+    "external_links": [
+      "https://aegismark.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=aegismark",
+      "https://octowatch.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=octowatch",
+      "https://other-tool.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=other-tool",
+      "https://twitter.com/intent/tweet?text=Best%20SaaS%20Analytics%20Tools%20for%20Business%20Decision-Making%20in%202025&url=https%3A//saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A//saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
+      "https://www.reddit.com/submit?url=https%3A//saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025&title=Best%20SaaS%20Analytics%20Tools%20for%20Business%20Decision-Making%20in%202025"
+    ],
+    "file": "site/pages/best-saas-analytics-tools-for-business-decision-making-in-2025.html",
+    "h1": [
+      "Best SaaS Analytics Tools for Business Decision-Making in 2025"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Our Top Pick",
+      "OctoWatch <span class=\"winner-badge\">Top Pick</span>",
+      "AegisMark",
+      "Other Tool",
+      "Frequently Asked Questions",
+      "How SaaSpare keeps this page useful",
+      "Ready to decide?"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "https://saaspare.org",
+      "https://saaspare.org/about",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/7-best-google-analytics-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/7-best-power-bi-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/7-best-tableau-alternatives-in-2026-free-paid",
+      "https://saaspare.org/pages/amplitude-review-2026-is-it-worth-it-honest-verdict-pricing",
+      "https://saaspare.org/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
+      "https://saaspare.org/pages/does-amplitude-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/does-hotjar-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/fullstory-vs-hotjar-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/fullstory-vs-segment-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/hotjar-vs-segment-which-software-is-best-in-2026",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/privacy",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 1,
+    "meta_description": "Compare top SaaS analytics tools for business decision-making, including OctoWatch, AegisMark, and others.",
+    "meta_length": 106,
+    "page_type": "best_of",
+    "path": "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "FAQPage",
+      "ImageObject",
+      "ListItem",
+      "Organization",
+      "Question"
+    ],
+    "score": {
+      "content": 19.55,
+      "conversionRevenue": 8,
+      "internalLinking": 12,
+      "overall": 90.55,
+      "performanceUx": 5,
+      "schemaIndexability": 10,
+      "technical": 16,
+      "trust": 20.0
+    },
+    "title": "Best SaaS Analytics Tools for Business Decision-Making in 2025 | SaaSpare",
+    "title_length": 73,
+    "url": "https://saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
+    "warnings": [
+      "thin_buyer_page",
+      "title_length_outside_target"
+    ],
+    "word_count": 709
   },
   {
     "affiliate_links": [],
@@ -23528,7 +23981,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore BigCommerce pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 133,
     "page_type": "pricing",
@@ -23541,8 +23994,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -27224,7 +27679,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Clearscope pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 132,
     "page_type": "pricing",
@@ -27237,8 +27692,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.48,
@@ -27726,7 +28183,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore ClickUp pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 129,
     "page_type": "pricing",
@@ -27739,8 +28196,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.95,
@@ -30697,7 +31156,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
+    "jsonld_blocks": 2,
     "meta_description": "Explore Contabo pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 129,
     "page_type": "pricing",
@@ -30710,8 +31169,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -32756,7 +33217,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
+    "jsonld_blocks": 2,
     "meta_description": "Explore Copy.ai pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 129,
     "page_type": "pricing",
@@ -32769,8 +33230,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -35826,7 +36289,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Datadog pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 129,
     "page_type": "pricing",
@@ -35839,8 +36302,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -36621,7 +37086,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Deel pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 126,
     "page_type": "pricing",
@@ -36634,8 +37099,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.6,
@@ -37221,7 +37688,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore DigitalOcean pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 134,
     "page_type": "pricing",
@@ -37234,8 +37701,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.94,
@@ -38638,7 +39107,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore DocuSign pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 130,
     "page_type": "pricing",
@@ -38651,8 +39120,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -43464,6 +43935,125 @@
     "word_count": 1244
   },
   {
+    "affiliate_links": [],
+    "broken_internal_links": [
+      "/pages/activecampaign-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/bamboohr-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/docusign-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/gusto-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/jasper-ai-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/moz-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/nordlayer-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/okta-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/pandadoc-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/quickbooks-free-trial-2026-how-to-get-it-step-by-step"
+    ],
+    "canonical": "https://saaspare.org/pages/free-trial-database",
+    "external_links": [],
+    "file": "site/pages/free-trial-database.html",
+    "h1": [
+      "SaaS Free Trial Database 2026"
+    ],
+    "h2": [
+      "Step-by-step trial guides",
+      "How SaaSpare keeps this page useful"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/deal-radar",
+      "/methodology",
+      "/pages/",
+      "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/?q=crm",
+      "/pages/?q=seo",
+      "/pages/?type=alternatives",
+      "/pages/?type=pricing",
+      "/pages/activecampaign-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/bamboohr-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/datadog-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/docusign-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/free-trial-database",
+      "/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/gusto-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/hubspot-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/jasper-ai-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/monday-com-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/moz-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/nordlayer-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/okta-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/pandadoc-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/pipedrive-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/quickbooks-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/saas-pricing-index",
+      "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/semrush-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/shopify-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/surfer-seo-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/xero-free-trial-2026-how-to-get-it-step-by-step",
+      "/shortlist",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/deal-radar",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/free-trial-database",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 1,
+    "meta_description": "Get the Free Trial Database free trial in 2026. We break down trial length, card requirements, and what you can do before paying \u2014 all verified.",
+    "meta_length": 144,
+    "page_type": "free_trial",
+    "path": "/pages/free-trial-database",
+    "robots": "index, follow",
+    "schema_types": [
+      "Dataset",
+      "Organization"
+    ],
+    "score": {
+      "content": 16.42,
+      "conversionRevenue": 6,
+      "internalLinking": 12,
+      "overall": 81.42,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 16,
+      "trust": 20.0
+    },
+    "title": "Free Trial Database Free Trial 2026: Length, Limits & Credit Card? | SaaSpare",
+    "title_length": 77,
+    "url": "https://saaspare.org/pages/free-trial-database",
+    "warnings": [
+      "thin_buyer_page",
+      "title_length_outside_target"
+    ],
+    "word_count": 684
+  },
+  {
     "affiliate_links": [
       "/go/freshbooks?utm_source=saaspare&utm_medium=affiliate&utm_campaign=page&utm_content=freshbooks"
     ],
@@ -43621,7 +44211,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "FreshBooks pricing in 2026: compare all plans and costs. SaaSpare reveals hidden fees and helps you find the right accounting solution.",
     "meta_length": 135,
     "page_type": "pricing",
@@ -43634,8 +44224,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.61,
@@ -45480,7 +46072,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
+    "jsonld_blocks": 2,
     "meta_description": "Explore Getresponse pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 133,
     "page_type": "pricing",
@@ -45493,8 +46085,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -49358,7 +49952,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Gusto pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 127,
     "page_type": "pricing",
@@ -49371,8 +49965,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -51920,7 +52516,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore HubSpot pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 129,
     "page_type": "pricing",
@@ -51933,8 +52529,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -53503,16 +54101,19 @@
       "https://saaspare.org/pages/best-crm-software-for-small-business-in-2026-ranked",
       "https://saaspare.org/pages/best-crm-software-for-startups-in-2026-free-paid",
       "https://saaspare.org/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
+      "https://saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
       "https://saaspare.org/pages/best-datadog-alternatives-in-2026-free-paid",
       "https://saaspare.org/pages/best-deel-alternatives-in-2026-free-paid",
       "https://saaspare.org/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
       "https://saaspare.org/pages/best-devops-configuration-drift-detection-tools-in-2025",
+      "https://saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
       "https://saaspare.org/pages/best-devops-tools-for-security-compliance-in-2025",
       "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "https://saaspare.org/pages/best-devtools-for-b2b-saas-teams-in-2025-debug-monitor-scale-faster",
       "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "https://saaspare.org/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "https://saaspare.org/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
       "https://saaspare.org/pages/best-devtools-software-for-startups-in-2026-ranked",
@@ -53541,6 +54142,7 @@
       "https://saaspare.org/pages/best-rippling-alternatives-in-2026-free-paid",
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
       "https://saaspare.org/pages/best-salesforce-alternatives-in-2026-free-paid",
       "https://saaspare.org/pages/best-semrush-alternatives-in-2026-free-paid",
@@ -53751,6 +54353,7 @@
       "https://saaspare.org/pages/expressvpn-business-vs-wireguard-which-is-better-in-2026",
       "https://saaspare.org/pages/expressvpn-business-vs-zscaler-which-is-better-in-2026",
       "https://saaspare.org/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026",
+      "https://saaspare.org/pages/free-trial-database",
       "https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
       "https://saaspare.org/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay",
       "https://saaspare.org/pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work",
@@ -54139,6 +54742,7 @@
       "https://saaspare.org/pages/roboform-vs-enpass-which-is-better-in-2026",
       "https://saaspare.org/pages/roboform-vs-password-boss-which-is-better-in-2026",
       "https://saaspare.org/pages/roboform-vs-sticky-password-which-is-better-in-2026",
+      "https://saaspare.org/pages/saas-pricing-index",
       "https://saaspare.org/pages/saas-roi-calculator",
       "https://saaspare.org/pages/sage-vs-airbase-which-is-better-in-2026",
       "https://saaspare.org/pages/sage-vs-divvy-which-is-better-in-2026",
@@ -54356,7 +54960,7 @@
     "warnings": [
       "title_length_outside_target"
     ],
-    "word_count": 9021
+    "word_count": 9017
   },
   {
     "affiliate_links": [
@@ -55233,7 +55837,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Jasper AI pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 131,
     "page_type": "pricing",
@@ -55246,8 +55850,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.59,
@@ -60767,7 +61373,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Linear pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 128,
     "page_type": "pricing",
@@ -60780,8 +61386,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.72,
@@ -64858,7 +65466,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Mixpanel pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 130,
     "page_type": "pricing",
@@ -64871,8 +65479,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -65988,7 +66598,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
+    "jsonld_blocks": 2,
     "meta_description": "Monday.com pricing in 2026: explore plans, costs, and hidden fees. SaaSpare's breakdown helps you budget and choose the right plan.",
     "meta_length": 131,
     "page_type": "pricing",
@@ -66001,8 +66611,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -67212,7 +67824,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Moz Pro pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 129,
     "page_type": "pricing",
@@ -67225,8 +67837,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.8,
@@ -69041,7 +69655,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore NordLayer pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 131,
     "page_type": "pricing",
@@ -69054,8 +69668,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.8,
@@ -71703,7 +72319,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Notion pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 128,
     "page_type": "pricing",
@@ -71716,8 +72332,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -74745,7 +75363,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore PandaDoc pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 130,
     "page_type": "pricing",
@@ -74758,8 +75376,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.59,
@@ -77509,7 +78129,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Pipedrive pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 131,
     "page_type": "pricing",
@@ -77522,8 +78142,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.88,
@@ -79949,7 +80571,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Ramp pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 126,
     "page_type": "pricing",
@@ -79962,8 +80584,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.84,
@@ -82596,7 +83220,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Rippling pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 130,
     "page_type": "pricing",
@@ -82609,8 +83233,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.8,
@@ -84170,6 +84796,144 @@
     "word_count": 1279
   },
   {
+    "affiliate_links": [],
+    "broken_internal_links": [
+      "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/brex-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/cloudflare-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/hotjar-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/klaviyo-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/mailchimp-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/moz-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/okta-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/quickbooks-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/supabase-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/vercel-pricing-2026-plans-costs-what-you-actually-pay"
+    ],
+    "canonical": "https://saaspare.org/pages/saas-pricing-index",
+    "external_links": [],
+    "file": "site/pages/saas-pricing-index.html",
+    "h1": [
+      "SaaS Pricing Index 2026"
+    ],
+    "h2": [
+      "Explore individual tool pricing",
+      "How SaaSpare keeps this page useful"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": false,
+    "has_faq_schema": false,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/deal-radar",
+      "/methodology",
+      "/pages/",
+      "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/?q=crm",
+      "/pages/?q=seo",
+      "/pages/?type=alternatives",
+      "/pages/?type=pricing",
+      "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/brex-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/cloudflare-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/deel-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/free-trial-database",
+      "/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/hotjar-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/klaviyo-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/mailchimp-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/moz-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/okta-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/quickbooks-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/saas-pricing-index",
+      "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/supabase-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/vercel-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/xero-pricing-2026-plans-costs-what-you-actually-pay",
+      "/shortlist",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/deal-radar",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/saas-pricing-index",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/shortlist"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 1,
+    "meta_description": "Explore SaaS Pricing Index pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
+    "meta_length": 140,
+    "page_type": "pricing",
+    "path": "/pages/saas-pricing-index",
+    "robots": "index, follow",
+    "schema_types": [
+      "Dataset",
+      "Organization"
+    ],
+    "score": {
+      "content": 17,
+      "conversionRevenue": 6,
+      "internalLinking": 12,
+      "overall": 83.0,
+      "performanceUx": 5,
+      "schemaIndexability": 6,
+      "technical": 17,
+      "trust": 20.0
+    },
+    "title": "SaaS Pricing Index Pricing 2026: Plans & Costs | SaaSpare",
+    "title_length": 57,
+    "url": "https://saaspare.org/pages/saas-pricing-index",
+    "warnings": [],
+    "word_count": 1060
+  },
+  {
     "affiliate_links": [
       "/go/1password",
       "/go/clickup",
@@ -84598,7 +85362,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Salesforce pricing in 2026: explore plans, costs, and alternatives. SaaSpare helps you understand what you'll actually pay.",
     "meta_length": 123,
     "page_type": "pricing",
@@ -84611,8 +85375,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -85822,7 +86588,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore SE Ranking pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 132,
     "page_type": "pricing",
@@ -85835,8 +86601,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.77,
@@ -86633,7 +87401,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Semrush pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 129,
     "page_type": "pricing",
@@ -86646,8 +87414,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.75,
@@ -88294,7 +89064,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Shopify pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 129,
     "page_type": "pricing",
@@ -88307,8 +89077,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.82,
@@ -91771,7 +92543,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Surfer SEO pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 132,
     "page_type": "pricing",
@@ -91784,8 +92556,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -95240,7 +96014,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Vultr pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 127,
     "page_type": "pricing",
@@ -95253,8 +96027,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.98,
@@ -98084,7 +98860,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Workable pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 130,
     "page_type": "pricing",
@@ -98097,8 +98873,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 19.73,
@@ -100026,7 +100804,7 @@
       "https://saaspare.org/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Xero pricing in 2026: compare plans and costs. SaaSpare reveals hidden fees and helps you choose the right accounting software.",
     "meta_length": 127,
     "page_type": "pricing",
@@ -100039,8 +100817,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,
@@ -101962,7 +102742,7 @@
       "https://saaspare.org/shortlist"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Explore Zoom pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.",
     "meta_length": 126,
     "page_type": "pricing",
@@ -101975,8 +102755,10 @@
       "FAQPage",
       "ImageObject",
       "ListItem",
+      "Offer",
       "Organization",
-      "Question"
+      "Question",
+      "SoftwareApplication"
     ],
     "score": {
       "content": 20,

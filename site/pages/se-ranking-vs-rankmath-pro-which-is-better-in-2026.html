@@ -530,5 +530,15 @@ em&&em.addEventListener('click',function(e){if(e.target===em)closeExit();});
 </script>
 <script defer src="/assets/saaspare-ui.js"></script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
+<script>
+document.addEventListener("click",function(e){
+  var a=e.target.closest("a");
+  if(!a||typeof gtag!=="function")return;
+  var h=a.href||"";
+  if(h.includes("/go/")||h.includes("utm_source=saaspare")){
+    gtag("event","affiliate_click",{"link_url":h,"page_location":window.location.href});
+  }
+});
+</script>
 </body>
 </html>

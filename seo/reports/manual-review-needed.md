@@ -2,8 +2,13 @@
 
 These are not safe to fake or mass rewrite.
 
+- `/pages/free-trial-database`: thin_buyer_page
 - `/categories`: thin_buyer_page
 - `/deal-radar`: thin_buyer_page
+- `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025`: thin_buyer_page
+- `/pages/best-devtools-for-multi-agent-workflows-in-2025`: thin_buyer_page
+- `/pages/best-devops-tools-for-agile-workflows-in-2026`: thin_buyer_page
+- `/pages/best-cybersecurity-tools-for-b2b-software-in-2025`: thin_buyer_page
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
 - `/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: thin_buyer_page

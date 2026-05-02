@@ -11,15 +11,15 @@
     "trust": 12.5
   },
   {
-    "content": 11.03,
-    "conversionRevenue": 1,
-    "internalLinking": 8.6,
-    "overall": 71.62,
+    "content": 16.64,
+    "conversionRevenue": 6,
+    "internalLinking": 11.3,
+    "overall": 79.94,
     "path": "/affiliate-disclosure",
     "performanceUx": 5,
     "schemaIndexability": 6,
     "technical": 20,
-    "trust": 20.0
+    "trust": 15.0
   },
   {
     "content": 13.29,
@@ -55,10 +55,10 @@
     "trust": 20.0
   },
   {
-    "content": 16.83,
+    "content": 16.84,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 80.33,
+    "overall": 80.34,
     "path": "/",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -1884,11 +1884,11 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 97.0,
+    "overall": 98.0,
     "path": "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -1936,6 +1936,17 @@
     "trust": 20.0
   },
   {
+    "content": 20.0,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 92.0,
+    "path": "/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
+    "trust": 20.0
+  },
+  {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
@@ -1977,6 +1988,17 @@
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 19.96,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 91.97,
+    "path": "/pages/best-devops-tools-for-agile-workflows-in-2026",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
     "trust": 20.0
   },
   {
@@ -2043,6 +2065,17 @@
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 19.61,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 90.61,
+    "path": "/pages/best-devtools-for-multi-agent-workflows-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 16,
     "trust": 20.0
   },
   {
@@ -2346,8 +2379,19 @@
     "content": 20,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 91.0,
+    "overall": 92.0,
     "path": "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
+    "trust": 20.0
+  },
+  {
+    "content": 19.55,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 90.55,
+    "path": "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
@@ -4661,6 +4705,17 @@
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 16.42,
+    "conversionRevenue": 6,
+    "internalLinking": 12,
+    "overall": 81.42,
+    "path": "/pages/free-trial-database",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 16,
     "trust": 20.0
   },
   {
@@ -8940,6 +8995,17 @@
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 17,
+    "conversionRevenue": 6,
+    "internalLinking": 12,
+    "overall": 83.0,
+    "path": "/pages/saas-pricing-index",
+    "performanceUx": 5,
+    "schemaIndexability": 6,
+    "technical": 17,
     "trust": 20.0
   },
   {

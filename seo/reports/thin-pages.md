@@ -11,7 +11,11 @@
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts`: 781 words, score 99.91
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts`: 778 words, score 99.89
 - `/pages/best-ai-tutor-tools-for-education-in-2025`: 764 words, score 97.82
+- `/pages/best-cybersecurity-tools-for-b2b-software-in-2025`: 799 words, score 92.0
+- `/pages/best-devops-tools-for-agile-workflows-in-2026`: 793 words, score 91.97
 - `/pages/best-devops-tools-for-security-compliance-in-2025`: 663 words, score 98.16
+- `/pages/best-devtools-for-multi-agent-workflows-in-2025`: 722 words, score 90.61
+- `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025`: 709 words, score 90.55
 - `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay`: 696 words, score 97.88
 - `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts`: 779 words, score 99.89
 - `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay`: 790 words, score 99.95
@@ -20,6 +24,7 @@
 - `/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay`: 787 words, score 98.34
 - `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts`: 773 words, score 99.87
 - `/pages/does-hubspot-have-a-free-plan-2026-full-breakdown`: 782 words, score 99.91
+- `/pages/free-trial-database`: 684 words, score 81.42
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: 721 words, score 97.46
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay`: 719 words, score 98.0
 - `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay`: 744 words, score 98.12

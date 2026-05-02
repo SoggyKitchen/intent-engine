@@ -18,10 +18,12 @@
 - `/pages/best-ai-tutor-tools-for-education-in-2025` (best_of, 97.82/100): thin_buyer_page
 - `/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-cloud-infra-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (best_of, 97.0/100): meta_length_outside_target
 - `/pages/best-crm-software-for-b2b-saas-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-crm-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
+- `/pages/best-cybersecurity-tools-for-b2b-software-in-2025` (best_of, 92.0/100): thin_buyer_page
+- `/pages/best-devops-tools-for-agile-workflows-in-2026` (best_of, 91.97/100): thin_buyer_page
 - `/pages/best-devops-tools-for-security-compliance-in-2025` (best_of, 98.16/100): thin_buyer_page
+- `/pages/best-devtools-for-multi-agent-workflows-in-2025` (best_of, 90.61/100): meta_length_outside_target, thin_buyer_page
 - `/pages/best-devtools-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-finance-ops-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
@@ -31,7 +33,7 @@
 - `/pages/best-password-managers-software-for-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-project-management-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
 - `/pages/best-project-management-software-in-2026-for-every-team-size` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025` (best_of, 91.0/100): meta_length_outside_target
+- `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025` (best_of, 90.55/100): thin_buyer_page, title_length_outside_target
 - `/pages/best-semrush-alternatives-in-2026-free-paid` (pricing, 99.0/100): title_length_outside_target
 - `/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed` (review, 99.0/100): title_length_outside_target
 - `/pages/best-seo-tools-software-for-bloggers-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
@@ -49,6 +51,7 @@
 - `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown` (free_trial, 97.0/100): title_length_outside_target
 - `/pages/does-hubspot-have-a-free-plan-2026-full-breakdown` (free_trial, 99.91/100): thin_buyer_page
 - `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/free-trial-database` (free_trial, 81.42/100): thin_buyer_page, title_length_outside_target
 - `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.46/100): thin_buyer_page, title_length_outside_target
 - `/pages` (pricing, 88.0/100): title_length_outside_target
 - `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.0/100): thin_buyer_page

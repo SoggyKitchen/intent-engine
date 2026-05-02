@@ -1,10 +1,15 @@
 # Top 100 Fixes
 
-- `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025` (91.0/100): broken_internal_link, meta_length_outside_target
+- `/pages/free-trial-database` (81.42/100): broken_internal_link, thin_buyer_page, title_length_outside_target
+- `/pages/saas-pricing-index` (83.0/100): broken_internal_link
+- `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025` (90.55/100): broken_internal_link, thin_buyer_page, title_length_outside_target
+- `/pages/best-devtools-for-multi-agent-workflows-in-2025` (90.61/100): broken_internal_link, meta_length_outside_target, thin_buyer_page
+- `/pages/best-devops-tools-for-agile-workflows-in-2026` (91.97/100): broken_internal_link, thin_buyer_page
+- `/pages/best-cybersecurity-tools-for-b2b-software-in-2025` (92.0/100): broken_internal_link, thin_buyer_page
+- `/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025` (92.0/100): broken_internal_link
 - `/categories` (82.29/100): thin_buyer_page
 - `/deal-radar` (87.0/100): thin_buyer_page
 - `/pages` (88.0/100): title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025` (97.0/100): meta_length_outside_target
 - `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (97.0/100): meta_length_outside_target
 - `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown` (97.0/100): title_length_outside_target
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (97.11/100): thin_buyer_page
