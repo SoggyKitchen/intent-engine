@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
@@ -27,7 +27,7 @@
 :root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
@@ -53,7 +53,7 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .nav-cta{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 
-.page-hero{position:relative;overflow:hidden;padding:8.5rem 2rem 5.5rem;text-align:center;z-index:1}
+.page-hero{position:relative;overflow:hidden;padding:6.5rem 2rem 3.5rem;text-align:center;z-index:1}
 .page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 90% 60% at 50% -5%,rgba(90,16,28,.95) 0%,transparent 58%),radial-gradient(ellipse 55% 40% at 50% 35%,rgba(233,69,96,.055) 0%,transparent 70%),var(--bg)}
 .page-hero-grid{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
 .page-hero-grid canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.22}
@@ -146,7 +146,7 @@ footer{border-top:1px solid var(--border)}
 @media(max-width:860px){.builder-layout{grid-template-columns:1fr}.principles{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){nav{padding:.8rem 1.2rem}.nav-link{display:none}.page-hero{padding:6.5rem 1.25rem 3.5rem}.shell{padding:2rem 1.25rem 5rem}.tool-row{grid-template-columns:36px minmax(0,1fr)}.row-actions{grid-column:2;justify-content:flex-start}.principles{grid-template-columns:1fr 1fr}.footer-inner{grid-template-columns:1fr 1fr;gap:2rem}}
 @media(max-width:480px){.principles{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}}
-</style>
+nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}nav#nav.scrolled,nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}</style>
 <meta name="keywords" content="SaaSpare Shortlist Builder: Find the Right SaaS for Your Needs, other, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
 <meta name="twitter:site" content="@SaaSpare">
 <meta name="twitter:title" content="SaaSpare Shortlist Builder: Find the Right SaaS for Your Needs">
@@ -156,6 +156,7 @@ footer{border-top:1px solid var(--border)}
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
+<!-- unified-v2 -->
 </head>
 <body>
 <nav id="nav">
@@ -166,7 +167,6 @@ footer{border-top:1px solid var(--border)}
   <a href="/pages/" class="nav-link">Comparisons</a>
   <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
   <a href="/shortlist" class="nav-link active">Shortlist Builder</a>
-  <a href="/categories" class="nav-link">Categories</a>
   <a href="/deal-radar" class="nav-link">Deal Radar</a>
   <a href="/about" class="nav-link">About</a>
   <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
@@ -179,7 +179,7 @@ footer{border-top:1px solid var(--border)}
   <div class="page-hero-content">
     <div class="page-eyebrow">Interactive tool</div>
     <h1>Rank your <em>shortlist</em> before you trial anything.</h1>
-    <p class="page-sub">Tell SaaSpare your category, team size and budget. Get a ranked list of tools with honest verdicts — before you hand anyone your card details.</p>
+    <p class="page-sub">Tell SaaSpare your category, team size and budget. Get a ranked list of tools with honest verdicts â€” before you hand anyone your card details.</p>
   </div>
 </section>
 
@@ -201,8 +201,8 @@ footer{border-top:1px solid var(--border)}
         <span class="panel-title">Team size</span>
         <div class="segments">
           <button class="seg active" data-size="solo">Solo</button>
-          <button class="seg" data-size="smb">2–50</button>
-          <button class="seg" data-size="mid">50–500</button>
+          <button class="seg" data-size="smb">2â€“50</button>
+          <button class="seg" data-size="mid">50â€“500</button>
         </div>
       </div>
       <div class="field" style="margin-top:.9rem">
@@ -210,7 +210,7 @@ footer{border-top:1px solid var(--border)}
         <select id="sl-budget">
           <option value="free">Free only</option>
           <option value="low" selected>Under $50/mo</option>
-          <option value="mid">$50–$200/mo</option>
+          <option value="mid">$50â€“$200/mo</option>
           <option value="high">$200+/mo</option>
         </select>
       </div>
@@ -229,7 +229,7 @@ footer{border-top:1px solid var(--border)}
     <section class="panel">
       <div class="results-head">
         <div>
-          <h2 id="results-title">CRM &amp; Sales — Solo</h2>
+          <h2 id="results-title">CRM &amp; Sales â€” Solo</h2>
           <p id="results-sub">Ranked by fit for your stage and budget</p>
         </div>
         <span class="fit-badge" id="fit-count">3 strong fits</span>
@@ -242,7 +242,7 @@ footer{border-top:1px solid var(--border)}
     <div class="principle"><strong>No account needed</strong><span>Your shortlist is saved to this device automatically. Leave and come back any time.</span></div>
     <div class="principle"><strong>Unbiased ranking</strong><span>Tools are ranked by fit, not by which ones pay us. Affiliate links are labelled.</span></div>
     <div class="principle"><strong>One-click to compare</strong><span>Every result links directly to the full SaaSpare comparison page for that tool.</span></div>
-    <div class="principle"><strong>Free trial paths</strong><span>Where a free trial exists, we link directly to it — no sales call required.</span></div>
+    <div class="principle"><strong>Free trial paths</strong><span>Where a free trial exists, we link directly to it â€” no sales call required.</span></div>
   </div>
 </div>
 
@@ -325,7 +325,7 @@ const DB={
     solo:[
       {name:'HubSpot CRM',desc:'Free plan is genuinely useful solo. Upgrade only when you need sequences or reporting.',tags:['Free plan','Email tracking','Pipeline'],url:'/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://app.hubspot.com/signup'},
       {name:'Pipedrive',desc:'Best pipeline UX for solo sellers. 14-day trial, no card. $14/mo after that.',tags:['14-day trial','Visual pipeline','Mobile app'],url:'/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://pipedrive.com'},
-      {name:'Notion CRM',desc:'Free with Notion. Build your own CRM on the free plan — works well for simple pipelines.',tags:['Free','Flexible','No vendor lock-in'],url:'/pages/notion-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://notion.so'},
+      {name:'Notion CRM',desc:'Free with Notion. Build your own CRM on the free plan â€” works well for simple pipelines.',tags:['Free','Flexible','No vendor lock-in'],url:'/pages/notion-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://notion.so'},
     ],
     smb:[
       {name:'HubSpot Starter',desc:'$20/seat/mo. Best all-in-one for teams under 50. Watch the per-seat cost on Growth Suite.',tags:['Email automation','Deals','Reporting'],url:'/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://app.hubspot.com/signup'},
@@ -345,7 +345,7 @@ const DB={
       {name:'SE Ranking',desc:'$65/mo. Underrated. Daily rank tracking and white-label reports at half the Ahrefs price.',tags:['Rank tracking','Affordable','White-label'],url:'/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://seranking.com'},
     ],
     smb:[
-      {name:'Ahrefs Standard',desc:'$179/mo. Best for 2–10 person SEO teams. Site Explorer and Content Explorer justify the cost.',tags:['Team access','Batch analysis','API'],url:'/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://ahrefs.com'},
+      {name:'Ahrefs Standard',desc:'$179/mo. Best for 2â€“10 person SEO teams. Site Explorer and Content Explorer justify the cost.',tags:['Team access','Batch analysis','API'],url:'/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://ahrefs.com'},
       {name:'Semrush Pro',desc:'$139.95/mo. Strong for content + PPC teams. Position tracking and content audit are excellent.',tags:['Content audit','PPC research','Reporting'],url:'/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://semrush.com'},
       {name:'Moz Pro',desc:'$99/mo. Best DA metric, good local SEO. Weaker backlink index than Ahrefs.',tags:['DA metric','Local SEO','Crawl'],url:'/pages/semrush-vs-moz-pro-which-is-better-in-2026',trial:'https://moz.com'},
     ],
@@ -384,15 +384,15 @@ const DB={
   dev:{
     solo:[
       {name:'Linear Free',desc:'Free forever solo. Best issue tracker built. Keyboard-first, instant, no bloat.',tags:['Free','Fast','Git sync'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
-      {name:'GitHub Copilot',desc:'$10/mo. Essential for solo devs. Saves 2–4 hours/week minimum.',tags:['AI coding','$10/mo','VS Code'],url:'/pages/datadog-review-2026-is-it-worth-it-honest-verdict',trial:'https://github.com/features/copilot'},
+      {name:'GitHub Copilot',desc:'$10/mo. Essential for solo devs. Saves 2â€“4 hours/week minimum.',tags:['AI coding','$10/mo','VS Code'],url:'/pages/datadog-review-2026-is-it-worth-it-honest-verdict',trial:'https://github.com/features/copilot'},
     ],
     smb:[
       {name:'Linear',desc:'$8/seat/mo. Best sprint + issue tracking for engineering teams. Jira without the pain.',tags:['Sprints','Cycles','Roadmaps'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
       {name:'Datadog',desc:'Usage-based. Best observability platform. Start with APM, expand as you scale.',tags:['Monitoring','APM','Logs'],url:'/pages/datadog-review-2026-is-it-worth-it-honest-verdict',trial:'https://datadoghq.com'},
     ],
     mid:[
-      {name:'Datadog',desc:'Full observability stack. Expensive at scale — audit your metric count quarterly.',tags:['Monitoring','Security','Dashboards'],url:'/pages/datadog-review-2026-is-it-worth-it-honest-verdict',trial:'https://datadoghq.com'},
-      {name:'Linear Business',desc:'$16/seat/mo. Roadmaps, API, analytics. Best for 50–500 person eng orgs.',tags:['Roadmaps','API','SLA'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
+      {name:'Datadog',desc:'Full observability stack. Expensive at scale â€” audit your metric count quarterly.',tags:['Monitoring','Security','Dashboards'],url:'/pages/datadog-review-2026-is-it-worth-it-honest-verdict',trial:'https://datadoghq.com'},
+      {name:'Linear Business',desc:'$16/seat/mo. Roadmaps, API, analytics. Best for 50â€“500 person eng orgs.',tags:['Roadmaps','API','SLA'],url:'/pages/linear-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://linear.app'},
     ]
   },
   finance:{
@@ -406,7 +406,7 @@ const DB={
     ],
     mid:[
       {name:'Brex',desc:'Free with minimum spend. Best for venture-backed companies. Travel + expenses + cards.',tags:['Cards','Travel','Integrations'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://brex.com'},
-      {name:'Xero Premium',desc:'$70/mo. Best for 50–500 person finance teams. Strong analytics and multi-entity support.',tags:['Multi-entity','Analytics','API'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://xero.com'},
+      {name:'Xero Premium',desc:'$70/mo. Best for 50â€“500 person finance teams. Strong analytics and multi-entity support.',tags:['Multi-entity','Analytics','API'],url:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay',trial:'https://xero.com'},
     ]
   }
 };
@@ -415,9 +415,9 @@ function buildShortlist(){
   const cat=document.getElementById('sl-cat').value;
   const budget=document.getElementById('sl-budget').value;
   const catName=document.getElementById('sl-cat').options[document.getElementById('sl-cat').selectedIndex].text;
-  const sizeLabel={'solo':'Solo','smb':'2–50 seats','mid':'50–500 seats'}[activeSize];
+  const sizeLabel={'solo':'Solo','smb':'2â€“50 seats','mid':'50â€“500 seats'}[activeSize];
   const tools=(DB[cat]||{})[activeSize]||DB[cat]?.smb||[];
-  document.getElementById('results-title').textContent=`${catName} — ${sizeLabel}`;
+  document.getElementById('results-title').textContent=`${catName} â€” ${sizeLabel}`;
   document.getElementById('fit-count').textContent=`${tools.length} strong fit${tools.length!==1?'s':''}`;
   document.getElementById('results').innerHTML=tools.map((t,i)=>`
     <div class="tool-row">
@@ -438,5 +438,7 @@ buildShortlist();
 </script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 <script defer src="/assets/saaspare-ui.js"></script>
+<script>(function(){var n=document.getElementById('nav');if(!n)return;function s(){n.classList.toggle('scrolled',window.scrollY>32);}s();window.addEventListener('scroll',s,{passive:true});})();</script>
 </body>
 </html>
+

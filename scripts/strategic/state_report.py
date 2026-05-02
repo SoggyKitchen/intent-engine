@@ -1,4 +1,4 @@
-"""State of SaaS Pricing Transparency 2026 (annual report)."""
+﻿"""State of SaaS Pricing Transparency 2026 (annual report)."""
 from ._helpers import (
     page_shell, hero_h1_with_glint, breadcrumb_html,
     bar, star_row, write_page, CRUMB_HOME,
@@ -11,12 +11,12 @@ def build():
 <section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="page-hero-dots"></div>
-  <div class="page-hero-orb"></div>
+  <div class="page-hero-orb"></div><div class="page-hero-orb2"></div>
   <div class="page-hero-content">
     {breadcrumb_html([CRUMB_HOME, ("/pages/state-of-saas-pricing-2026", "State Report 2026")])}
-    <div class="page-eyebrow">Annual Report · April 2026</div>
+    <div class="page-eyebrow">Annual Report Â· April 2026</div>
     <h1>{h1}</h1>
-    <p class="page-sub">We analysed pricing pages, free trial rules and seat minimums across 986 B2B SaaS vendors. Here is what we found about transparency in 2026 — which categories hide prices, which force sales calls, and which still let buyers self-serve.</p>
+    <p class="page-sub">We analysed pricing pages, free trial rules and seat minimums across 986 B2B SaaS vendors. Here is what we found about transparency in 2026 â€” which categories hide prices, which force sales calls, and which still let buyers self-serve.</p>
   </div>
 </section>
 <main class="page-content">
@@ -57,7 +57,7 @@ def build():
     <div class="ps-grid-2">
       <div class="ps-card"><h4>Salesforce</h4><p>Starter visible, but real Enterprise costs require a multi-step sales process. Average time to quote: <strong>11 days</strong>.</p></div>
       <div class="ps-card"><h4>Workday</h4><p>No public pricing. Minimum contract values of <strong>A$150k+</strong> not disclosed until legal review stage.</p></div>
-      <div class="ps-card"><h4>Palo Alto Networks</h4><p>Prisma Cloud tier pricing hidden. Reseller-only quote model adds 2–4 weeks to procurement timelines.</p></div>
+      <div class="ps-card"><h4>Palo Alto Networks</h4><p>Prisma Cloud tier pricing hidden. Reseller-only quote model adds 2â€“4 weeks to procurement timelines.</p></div>
       <div class="ps-card"><h4>SAP</h4><p>Pricing varies by country, module, and integration depth. Not self-serviceable at any tier for most products.</p></div>
       <div class="ps-card"><h4>Oracle</h4><p>Cloud pricing calculator exists but is intentionally incomplete. Support and licensing costs added opaquely at quote stage.</p></div>
     </div>
@@ -77,7 +77,7 @@ def build():
 
   <div class="ps reveal">
     <div class="ps-callout">
-      <p><strong>The hidden seat minimum problem:</strong> 28% of SaaS vendors hide a seat minimum that is not mentioned on the pricing page. Worst offenders in our dataset: <strong>Monday.com</strong> (3→5 seat min), <strong>Atlassian Jira</strong> (10-seat min on Premium), <strong>Figma Organization</strong> (25-seat min for governance).</p>
+      <p><strong>The hidden seat minimum problem:</strong> 28% of SaaS vendors hide a seat minimum that is not mentioned on the pricing page. Worst offenders in our dataset: <strong>Monday.com</strong> (3â†’5 seat min), <strong>Atlassian Jira</strong> (10-seat min on Premium), <strong>Figma Organization</strong> (25-seat min for governance).</p>
     </div>
   </div>
 
@@ -85,7 +85,7 @@ def build():
     <div class="cta-big">
       <h3>Embed this data</h3>
       <p>Publishers and analysts: you are welcome to cite or embed these stats. Please credit saaspare.org and link to this page.</p>
-      <a href="/pages/saas-pricing-index" class="btn">Get full dataset →</a>
+      <a href="/pages/saas-pricing-index" class="btn">Get full dataset â†’</a>
     </div>
   </div>
 
@@ -100,10 +100,11 @@ def build():
     )
     html = page_shell(
         slug="state-of-saas-pricing-2026",
-        title="State of SaaS Pricing Transparency 2026 — Annual Report",
+        title="State of SaaS Pricing Transparency 2026 â€” Annual Report",
         desc="Annual report analysing pricing transparency across 986 B2B SaaS vendors. Which categories hide prices. Which force sales calls. Best and worst of 2026.",
         body=body, accent="report", nav_active="idx",
         crumbs=[CRUMB_HOME, ("/pages/state-of-saas-pricing-2026", "State Report 2026")],
         schema_extra=schema,
     )
     write_page("state-of-saas-pricing-2026", html)
+

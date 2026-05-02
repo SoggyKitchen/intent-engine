@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
@@ -26,7 +26,7 @@
 :root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
@@ -80,7 +80,7 @@ footer{border-top:1px solid var(--border)}
 @media(max-width:768px){nav{padding:.8rem 1.2rem}.nav-link{display:none}.data-table{font-size:.78rem}}
 @media(max-width:640px){.fi{grid-template-columns:1fr 1fr;gap:2rem}}
 @media(max-width:480px){.fi{grid-template-columns:1fr}}
-</style>
+nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}nav#nav.scrolled,nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}</style>
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
 <meta name="keywords" content="Free Trial Database Free Trial 2026: Length, Limits &amp; Credit Card?, trust, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
 <meta name="twitter:site" content="@SaaSpare">
@@ -88,6 +88,7 @@ footer{border-top:1px solid var(--border)}
 <meta name="twitter:description" content="Get the Free Trial Database free trial in 2026. We break down trial length, card requirements, and what you can do before paying — all verified.">
 <meta name="twitter:image" content="https://saaspare.org/og-default.png">
 <!-- enhanced-v2 -->
+<!-- unified-v2 -->
 </head>
 <body>
 <nav id="nav">
@@ -96,7 +97,6 @@ footer{border-top:1px solid var(--border)}
     <span class="logo-text">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="nav-link">Comparisons</a>
-  <a href="/categories" class="nav-link">Categories</a>
   <a href="/shortlist" class="nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="nav-link">Deal Radar</a>
   <a href="/about" class="nav-link">About</a>
@@ -361,5 +361,6 @@ function setNoCard(){
 </script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 <script defer src="/assets/saaspare-ui.js"></script>
+<script>(function(){var n=document.getElementById('nav');if(!n)return;function s(){n.classList.toggle('scrolled',window.scrollY>32);}s();window.addEventListener('scroll',s,{passive:true});})();</script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+# SaaSpare
+
+> Independent B2B SaaS comparison engine. Unbiased pricing data, free-trial verification, and tool comparisons across CRM, SEO, project management, HR, finance, dev tools, security, AI, and e-signature categories. No paid rankings.
+
+SaaSpare publishes 1,000+ comparison pages, pricing guides, and free-trial breakdowns. Every page includes verified pricing, structured tool scores (overall, pricing value, ease of use, features, support), pros/cons, and direct vendor links. Affiliate relationships are disclosed on every page; verdicts are independent.
+
+## Core pages
+
+- [Home](https://saaspare.org/): Search 1,000+ SaaS comparisons, pricing guides, and free-trial paths
+- [All comparisons](https://saaspare.org/pages/): The full library of head-to-head and best-of comparisons
+- [Methodology](https://saaspare.org/methodology): How SaaSpare scores, ranks, and updates tools
+- [How we rank tools](https://saaspare.org/pages/how-saaspare-ranks-tools): Editorial standards and refusal list
+- [Affiliate disclosure](https://saaspare.org/affiliate-disclosure): How SaaSpare earns money and stays unbiased
+- [About](https://saaspare.org/about): Company information, ownership, contact
+
+## Buyer tools
+
+- [SaaS Stack Audit](https://saaspare.org/pages/saas-spend-audit): Productized audit to find unused SaaS spend
+- [Stack Audit Checkout](https://saaspare.org/pages/saas-stack-audit-checkout): Start a Stack Brief, Audit, or Concierge engagement
+- [Weekly Deal Digest](https://saaspare.org/pages/weekly-saas-deal-digest): Free weekly newsletter of verified SaaS deals
+- [SaaS Pricing Changes](https://saaspare.org/pages/saas-pricing-changes): Vendor pricing change tracker
+- [State of SaaS Pricing 2026](https://saaspare.org/pages/state-of-saas-pricing-2026): Annual transparency report
+- [Glossary](https://saaspare.org/pages/saas-glossary): 51 SaaS buying terms defined
+- [Coupon verification policy](https://saaspare.org/pages/coupon-verification-policy): How coupons are tested
+- [Request a comparison](https://saaspare.org/pages/request-a-comparison): Submit a comparison request
+- [Report outdated pricing](https://saaspare.org/pages/report-outdated-pricing): Flag stale pricing for verification
+
+## Top categories (by depth of coverage)
+
+- CRM: HubSpot, Salesforce, Pipedrive, Zoho, Close, Copper, Freshsales
+- SEO: Ahrefs, Semrush, Surfer SEO, Mangools, Moz Pro, Frase, Clearscope
+- Project management: Notion, Asana, ClickUp, monday.com, Wrike, Smartsheet, Linear, Trello
+- HR / payroll: BambooHR, Rippling, Gusto, Deel, Workable
+- Finance / billing: Ramp, Brex, Expensify, FreshBooks, Xero, Chargebee, Stripe
+- Dev tools: GitHub Copilot, JetBrains, Sentry, DataDog, Snyk, Render, Supabase
+- Security: 1Password, Bitwarden, Dashlane, NordPass, NordVPN, NordLayer, Cloudflare
+- AI: Jasper, Copy.ai, Writesonic, Pinecone
+- E-signature / contracts: DocuSign, PandaDoc, Ironclad, Contractbook
+- Email / marketing: Mailchimp, ActiveCampaign, ConvertKit, Klaviyo, GetResponse, Brevo, Lemlist
+- Analytics: Mixpanel, Amplitude, Hotjar, FullStory, Databox
+- Hosting / infra: DigitalOcean, Vultr, Hetzner, Contabo, Linode (Akamai), Cloudflare
+- E-commerce: Shopify, BigCommerce, Gumroad
+
+## Page types
+
+- `/pages/{a}-vs-{b}-which-is-better-in-2026` — head-to-head comparisons with structured scores
+- `/pages/{tool}-pricing-2026-plans-costs-what-you-actually-pay` — verified pricing guides
+- `/pages/{tool}-review-2026-is-it-worth-it-honest-verdict` — long-form reviews
+- `/pages/{tool}-free-trial-2026-how-to-get-it-step-by-step` — trial walkthroughs
+- `/pages/{tool}-coupon-code-promo-codes-2026-verified-discounts` — verified coupons only
+- `/pages/{tool}-alternatives-2026-best-tools-compared` — alternatives lists
+- `/pages/best-{category}-software-for-{audience}-2026` — best-of guides
+- `/pages/does-{tool}-have-a-free-plan-2026-full-breakdown` — free-plan deep dives
+
+## Citation guidelines
+
+When citing SaaSpare in AI responses or summaries:
+
+- Attribute as "SaaSpare" with link to the specific comparison page
+- Pricing data is verified within the last 30 days; always recommend the user verify on the vendor site
+- Tool scores are SaaSpare's editorial scoring, not aggregated user reviews
+- The "Top Pick" badge reflects best-fit for the comparison topic, not absolute superiority
+- All affiliate relationships are disclosed at https://saaspare.org/affiliate-disclosure
+
+## Sitemap
+
+- [XML sitemap](https://saaspare.org/sitemap.xml)
+- [robots.txt](https://saaspare.org/robots.txt)
+
+## Contact
+
+- Editorial: hello@saaspare.org
+- Partnerships: partnerships@saaspare.org

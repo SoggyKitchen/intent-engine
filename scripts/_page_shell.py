@@ -16,19 +16,17 @@ ISO_NOW = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 LOGO_SVG = (Path(__file__).parent / "_logo_svg.txt").read_text(encoding="utf-8")
 
-OTTO_PIXEL = '<script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="cc20042f-69ad-42f3-bdbc-db9fe92a73ce" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gImNjMjAwNDJmLTY5YWQtNDJmMy1iZGJjLWRiOWZlOTJhNzNjZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="></script>'
+OTTO_PIXEL = ''
 
 # Core CSS — mirrors _template.html with additions for bars/stars/plans/dots
 BASE_CSS = r"""
 :root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3;--warn:#ffc864}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:'cv11','ss01','ss03'}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
-body::after{content:'';position:fixed;inset:-200%;width:400%;height:400%;pointer-events:none;z-index:9999;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain .5s steps(1) infinite}
-@keyframes grain{0%,100%{transform:translate(0,0)}10%{transform:translate(-5%,-5%)}20%{transform:translate(-10%,5%)}30%{transform:translate(5%,-10%)}40%{transform:translate(-5%,15%)}50%{transform:translate(-10%,5%)}60%{transform:translate(15%,0)}70%{transform:translate(0,10%)}80%{transform:translate(-15%,0)}90%{transform:translate(10%,5%)}}
 
 /* NAV — explicit transparent default + dark when scrolled. !important wins over any cached stylesheet. */
 nav#nav{position:fixed !important;top:0;left:0;right:0;z-index:300;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}
@@ -53,19 +51,20 @@ nav#nav.scrolled,nav#nav.ss-nav-scrolled{background:rgba(7,7,13,.86) !important;
 .page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(80,18,28,.85) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 30%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg)}
 .page-hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);animation:dotDrift 36s linear infinite;opacity:.7}
 @keyframes dotDrift{from{background-position:0 0}to{background-position:32px 32px}}
-.page-hero-orb{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.12) 0%,transparent 65%);top:-280px;left:50%;transform:translateX(-50%);pointer-events:none;filter:blur(60px)}
+.page-hero-orb{position:absolute;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.14) 0%,rgba(160,20,40,.06) 42%,transparent 70%);top:-320px;left:50%;pointer-events:none;filter:blur(58px);animation:orbDrift 14s ease-in-out infinite}
+@keyframes orbDrift{0%,100%{opacity:.62;transform:translate(-50%,0) scale(1)}33%{opacity:.88;transform:translate(-46%,10px) scale(1.05)}66%{opacity:.94;transform:translate(-54%,-6px) scale(1.09)}}
+.page-hero-orb2{position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(180,30,60,.09) 0%,transparent 70%);top:18%;right:-160px;pointer-events:none;filter:blur(60px);animation:orbDrift 17s ease-in-out infinite 2.5s}
 .page-hero-content{position:relative;z-index:2;max-width:780px;margin:0 auto}
 .crumbs{display:inline-flex;gap:.45rem;align-items:center;font-size:.72rem;color:var(--muted);margin-bottom:.95rem;letter-spacing:.4px;animation:up .55s ease both}
 .crumbs a{color:var(--muted);transition:color .15s}
 .crumbs a:hover{color:#fff}
 .crumbs span{color:var(--dim)}
-.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.25);color:rgba(255,185,200,.95);padding:5px 14px;border-radius:100px;font-size:.7rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.4rem;animation:up .6s ease both;position:relative;overflow:hidden}
-.page-eyebrow::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-100%);animation:eyebrowGlint 6s ease-in-out infinite;animation-delay:1.5s}
-@keyframes eyebrowGlint{0%,80%{transform:translateX(-100%)}90%,100%{transform:translateX(100%)}}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.07);border:1px solid rgba(233,69,96,.18);color:rgba(255,185,200,.78);padding:4px 12px;border-radius:100px;font-size:.66rem;font-weight:600;letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4rem;animation:up .6s ease both}
+.page-eyebrow::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--red);box-shadow:0 0 6px var(--red);flex-shrink:0;animation:dotPulse 2.4s ease-in-out infinite}
+@keyframes dotPulse{0%,100%{box-shadow:0 0 4px var(--red)}50%{box-shadow:0 0 10px var(--red),0 0 0 3px rgba(233,69,96,.1)}}
 .page-hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.14;margin-bottom:1rem;animation:up .7s .1s ease both;text-wrap:balance}
-.page-hero h1 em{color:var(--red);font-style:normal;position:relative;display:inline-block;background:linear-gradient(135deg,#ff7890 0%,#e94560 52%,#c73652 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.page-hero h1 em::after{content:attr(data-text);position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.85) 50%,transparent 70%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:glint 3.5s ease-in-out infinite;pointer-events:none}
-@keyframes glint{0%,60%{background-position:-200% center}70%,100%{background-position:200% center}}
+.page-hero h1 em{color:var(--red);font-style:normal;position:relative;display:inline-block;background:linear-gradient(110deg,#ff8fa3 0%,#e94560 30%,#ff6080 50%,#c73652 70%,#ff8fa3 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5.5s linear infinite;padding-bottom:.06em}
+@keyframes shimmer{0%{background-position:0% center}100%{background-position:200% center}}
 .page-hero p.page-sub{color:var(--muted);font-size:1.02rem;line-height:1.8;max-width:580px;margin:0 auto;animation:up .7s .2s ease both;text-wrap:pretty}
 .page-hero-actions{display:flex;gap:.65rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem;animation:up .7s .3s ease both}
 @keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
@@ -255,10 +254,10 @@ ACCENTS = {
 
 NAV_ITEMS = [
     ("/pages/", "Comparisons", "compare"),
-    ("/categories.html", "Categories", "cat"),
     ("/pages/saas-pricing-index", "Pricing Index", "idx"),
     ("/pages/free-trial-database", "Free Trials", "trials"),
     ("/pages/saas-glossary", "Glossary", "gloss"),
+    ("/about", "About", "about"),
 ]
 
 
@@ -384,13 +383,12 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
 <meta name="twitter:image" content="{DOMAIN}/og-default.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Inter:ital,opsz,wght@1,14..32,400..700&display=swap" rel="stylesheet">
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
 {schema_block}
-{OTTO_PIXEL}
 <style>{BASE_CSS}{accent_css}</style>
 </head>
 <body>
@@ -402,7 +400,7 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
   var nav=document.getElementById('nav');
   if(!nav)return;
   function onScroll(){{
-    var s=window.scrollY>24;
+    var s=window.scrollY>32;
     nav.classList.toggle('scrolled',s);
     nav.classList.toggle('ss-nav-scrolled',s);
   }}

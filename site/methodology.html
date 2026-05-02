@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
@@ -27,7 +27,7 @@
 :root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
@@ -53,7 +53,7 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .nav-cta{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 
-.page-hero{position:relative;overflow:hidden;padding:8.5rem 2rem 5.5rem;text-align:center;z-index:1}
+.page-hero{position:relative;overflow:hidden;padding:6.5rem 2rem 3.5rem;text-align:center;z-index:1}
 .page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 90% 60% at 50% -5%,rgba(90,16,28,.95) 0%,transparent 58%),radial-gradient(ellipse 55% 40% at 50% 35%,rgba(233,69,96,.055) 0%,transparent 70%),var(--bg)}
 .page-hero-grid{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
 .page-hero-grid canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.22}
@@ -150,7 +150,7 @@ footer{border-top:1px solid var(--border)}
   .footer-inner{grid-template-columns:1fr 1fr;gap:2rem}
 }
 @media(max-width:480px){.footer-inner{grid-template-columns:1fr}}
-</style>
+nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}nav#nav.scrolled,nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}</style>
 <meta name="keywords" content="How SaaSpare Compares Software | Methodology, trust, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
 <meta name="twitter:site" content="@SaaSpare">
 <meta name="twitter:title" content="How SaaSpare Compares Software | Methodology">
@@ -160,6 +160,7 @@ footer{border-top:1px solid var(--border)}
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
+<!-- unified-v2 -->
 </head>
 <body>
 <nav id="nav">
@@ -170,7 +171,6 @@ footer{border-top:1px solid var(--border)}
   <a href="/pages/" class="nav-link">Comparisons</a>
   <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
   <a href="/shortlist" class="nav-link">Shortlist Builder</a>
-  <a href="/categories" class="nav-link">Categories</a>
   <a href="/deal-radar" class="nav-link">Deal Radar</a>
   <a href="/about" class="nav-link">About</a>
   <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
@@ -193,8 +193,8 @@ footer{border-top:1px solid var(--border)}
     <span class="ps-eyebrow">Core principle</span>
     <h2 class="ps-title">No vendor has ever paid to change a verdict.</h2>
     <div class="ps-body">
-      <p>Vendors cannot buy a higher ranking or change a comparison verdict on SaaSpare. Some links may earn SaaSpare a commission — those are disclosed on every page — but affiliate availability does not determine page order, tool recommendation, or our written verdict.</p>
-      <p>If a tool is genuinely better for a specific use case, it wins — regardless of whether it pays us anything.</p>
+      <p>Vendors cannot buy a higher ranking or change a comparison verdict on SaaSpare. Some links may earn SaaSpare a commission â€” those are disclosed on every page â€” but affiliate availability does not determine page order, tool recommendation, or our written verdict.</p>
+      <p>If a tool is genuinely better for a specific use case, it wins â€” regardless of whether it pays us anything.</p>
     </div>
     <div class="principle-grid">
       <div class="principle-card"><h4>No paid placements</h4><p>Tool rankings reflect buyer fit, not commercial relationships. This is non-negotiable.</p></div>
@@ -218,7 +218,7 @@ footer{border-top:1px solid var(--border)}
       </div>
       <div class="step-item">
         <div class="step-num">03</div>
-        <div><h4>Plan limits and feature gates</h4><p>We document what is genuinely included on each plan and what is paywalled — especially features marketed as standard but locked to higher tiers.</p></div>
+        <div><h4>Plan limits and feature gates</h4><p>We document what is genuinely included on each plan and what is paywalled â€” especially features marketed as standard but locked to higher tiers.</p></div>
       </div>
       <div class="step-item">
         <div class="step-num">04</div>
@@ -230,7 +230,7 @@ footer{border-top:1px solid var(--border)}
       </div>
       <div class="step-item">
         <div class="step-num">06</div>
-        <div><h4>Buyer fit verdict</h4><p>We give an explicit "best for" conclusion — not vague "it depends" language — so buyers can act on the comparison immediately.</p></div>
+        <div><h4>Buyer fit verdict</h4><p>We give an explicit "best for" conclusion â€” not vague "it depends" language â€” so buyers can act on the comparison immediately.</p></div>
       </div>
     </div>
   </div>
@@ -250,8 +250,8 @@ footer{border-top:1px solid var(--border)}
     <span class="ps-eyebrow">Signal sources</span>
     <h2 class="ps-title">Buyer intent, not vendor marketing.</h2>
     <div class="ps-body">
-      <p>Comparison topics and tool selection are driven by real buyer discussions from public communities — Reddit, Hacker News, GitHub Issues, Stack Overflow, and similar sources. We analyse what buyers actually ask, what problems they report, and what tools they evaluate before writing a word.</p>
-      <p>This means SaaSpare covers the tools that buyers are genuinely considering — not the tools with the biggest marketing budgets.</p>
+      <p>Comparison topics and tool selection are driven by real buyer discussions from public communities â€” Reddit, Hacker News, GitHub Issues, Stack Overflow, and similar sources. We analyse what buyers actually ask, what problems they report, and what tools they evaluate before writing a word.</p>
+      <p>This means SaaSpare covers the tools that buyers are genuinely considering â€” not the tools with the biggest marketing budgets.</p>
     </div>
   </div>
 
@@ -326,5 +326,7 @@ document.querySelectorAll('.reveal').forEach(el=>rObs.observe(el));
 </script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 <script defer src="/assets/saaspare-ui.js"></script>
+<script>(function(){var n=document.getElementById('nav');if(!n)return;function s(){n.classList.toggle('scrolled',window.scrollY>32);}s();window.addEventListener('scroll',s,{passive:true});})();</script>
 </body>
 </html>
+

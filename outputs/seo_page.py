@@ -299,6 +299,47 @@ def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: s
         "mainEntityOfPage": canonical or domain,
     }
     schemas = [schema]
+    tools = data.get("tools") or []
+    for t in tools:
+        sc = t.get("scores") or {}
+        if not sc.get("overall"):
+            continue
+        product = {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": t.get("name", ""),
+            "description": t.get("description", "")[:300],
+            "image": f"{domain}/og-default.png",
+            "brand": {"@type": "Brand", "name": t.get("name", "")},
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": round(float(sc["overall"]), 1),
+                "bestRating": 5,
+                "worstRating": 1,
+                "ratingCount": 1,
+                "reviewCount": 1,
+            },
+            "review": {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": round(float(sc["overall"]), 1),
+                    "bestRating": 5,
+                },
+                "author": {"@type": "Organization", "name": "SaaSpare"},
+                "datePublished": time.strftime("%Y-%m-%d"),
+                "reviewBody": (t.get("description", "") + " " + " ".join(t.get("pros", [])))[:480],
+            },
+        }
+        if t.get("affiliate_url"):
+            product["offers"] = {
+                "@type": "Offer",
+                "url": t["affiliate_url"],
+                "priceCurrency": "USD",
+                "price": "0",
+                "availability": "https://schema.org/InStock",
+            }
+        schemas.append(product)
     if data.get("faqs"):
         schemas.append({
             "@context": "https://schema.org",
