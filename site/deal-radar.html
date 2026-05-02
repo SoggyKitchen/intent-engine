@@ -31,9 +31,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
-body::after{content:'';position:fixed;inset:-200%;width:400%;height:400%;pointer-events:none;z-index:9999;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain .5s steps(1) infinite}
 body::after{display:none}
-@keyframes grain{display:none}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease}
 nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
@@ -53,11 +51,12 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .nav-cta{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 
-.page-hero{position:relative;overflow:hidden;padding:8.5rem 2rem 5.5rem;text-align:center;z-index:1}
+.page-hero{position:relative;overflow:hidden;padding:7rem 2rem 4.2rem;text-align:center;z-index:1}
 .page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 90% 60% at 50% -5%,rgba(90,16,28,.95) 0%,transparent 58%),radial-gradient(ellipse 55% 40% at 50% 35%,rgba(233,69,96,.055) 0%,transparent 70%),var(--bg)}
 .page-hero-grid{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
 .page-hero-grid canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.22}
-.page-hero-orb{position:absolute;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.13) 0%,transparent 65%);top:-300px;left:50%;transform:translateX(-50%);pointer-events:none;filter:blur(65px)}
+.page-hero-orb{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.16) 0%,transparent 64%);top:-200px;left:50%;transform:translateX(-50%);pointer-events:none;filter:blur(55px);animation:orbDrift 14s ease-in-out infinite}
+@keyframes orbDrift{0%,100%{opacity:.7;transform:translate(-50%,0) scale(1)}50%{opacity:1;transform:translate(-50%,8px) scale(1.06)}}
 .page-hero-rings{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);pointer-events:none;width:1px;height:1px}
 .page-hero-ring{position:absolute;border-radius:50%;border:1px solid rgba(233,69,96,.12);transform:translate(-50%,-50%);animation:ringExpand 5s ease-out infinite}
 .page-hero-ring:nth-child(1){width:280px;height:280px;animation-delay:0s}
@@ -68,18 +67,18 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.24);color:rgba(255,185,200,.9);padding:5px 14px;border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.5rem;animation:up .6s ease both}
 .page-hero h1{font-size:clamp(2.1rem,5.5vw,3.5rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.12;margin-bottom:1rem;animation:up .7s .1s ease both;text-wrap:balance}
 .page-hero h1 em{
-  background:linear-gradient(110deg,#ff8fa3 0%,var(--red) 30%,#ff6080 50%,var(--red2) 70%,#ff8fa3 100%);
-  background-size:200% auto;
+  font-style:normal;display:inline-block;
+  background:linear-gradient(100deg,var(--red) 0%,#ff8fa3 35%,#ffd1dc 50%,#ff8fa3 65%,var(--red) 100%);
+  background-size:300% 100%;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
-  font-style:normal;
-  animation:textGlint 4s linear infinite;
+  animation:textGlint 4.5s linear infinite;
 }
 
 @keyframes textGlint{
-  0%{background-position:200% center}
-  100%{background-position:-200% center}
+  0%{background-position:300% center}
+  100%{background-position:-100% center}
 }
 .page-sub{color:var(--muted);font-size:.98rem;line-height:1.8;animation:up .7s .2s ease both;text-wrap:pretty}
 /* floating cards */
@@ -157,11 +156,12 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 <meta name="twitter:title" content="SaaSpare Deal Radar: Find Free Trials &amp; Avoid SaaS Pricing Traps">
 <meta name="twitter:description" content="Discover SaaSpare Deal Radar: Track SaaS pricing changes, free trials, and exclusive discounts. Never overpay again.">
 <meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": []}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": ["https://twitter.com/SaaSpare"]}</script>
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
 <!-- unified-v2 -->
+<!-- ga-events-v1 --><script defer src="/assets/saaspare-events.js"></script>
 </head>
 <body>
 <nav id="nav">

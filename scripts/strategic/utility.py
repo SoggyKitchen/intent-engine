@@ -16,7 +16,7 @@ def build_request():
     {breadcrumb_html([CRUMB_HOME, ("/pages/request-a-comparison", "Request a comparison")])}
     <div class="page-eyebrow">Tell us what to compare next</div>
     <h1>{h1}</h1>
-    <p class="page-sub">Stuck choosing between two SaaS tools and cannot find an honest, side-by-side, deeply-researched comparison? Tell us. The most-requested comparisons jump the queue and we publish them in 7â€“14 days.</p>
+    <p class="page-sub">Stuck choosing between two SaaS tools and cannot find an honest, side-by-side, deeply-researched comparison? Tell us. The most-requested comparisons jump the queue and we publish them in 7–14 days.</p>
   </div>
 </section>
 <main class="page-content">
@@ -36,7 +36,7 @@ def build_request():
 
       <label>Your role
         <select name="role">
-          <option value="">â€”</option>
+          <option value="">—</option>
           <option>Founder / CEO</option>
           <option>Engineering / Dev</option>
           <option>Product</option>
@@ -49,11 +49,11 @@ def build_request():
 
       <label>Team size
         <select name="team_size">
-          <option value="">â€”</option>
-          <option>1â€“5</option>
-          <option>6â€“25</option>
-          <option>26â€“100</option>
-          <option>101â€“500</option>
+          <option value="">—</option>
+          <option>1–5</option>
+          <option>6–25</option>
+          <option>26–100</option>
+          <option>101–500</option>
           <option>500+</option>
         </select>
       </label>
@@ -71,10 +71,10 @@ def build_request():
     <span class="ps-eyebrow">What happens next</span>
     <h2 class="ps-title">The 14-day path from request to publish</h2>
     <div class="ps-grid-2">
-      <div class="ps-card"><h3>Day 0 Â· Logged</h3><p>We log your request and add a vote. Identical pairs aggregate so popular requests jump the queue.</p></div>
-      <div class="ps-card"><h3>Day 1â€“3 Â· Hands-on test</h3><p>We sign up for both tools and complete the core workflow. We document friction points with screenshots.</p></div>
-      <div class="ps-card"><h3>Day 3â€“10 Â· Synthesis</h3><p>Pricing modelled, support tested, status page reviewed, dissent recorded. Then drafted.</p></div>
-      <div class="ps-card"><h3>Day 10â€“14 Â· Publish</h3><p>Comparison published, you receive an email with the link, and you are credited as the requester (or anonymous if preferred).</p></div>
+      <div class="ps-card"><h3>Day 0 · Logged</h3><p>We log your request and add a vote. Identical pairs aggregate so popular requests jump the queue.</p></div>
+      <div class="ps-card"><h3>Day 1–3 · Hands-on test</h3><p>We sign up for both tools and complete the core workflow. We document friction points with screenshots.</p></div>
+      <div class="ps-card"><h3>Day 3–10 · Synthesis</h3><p>Pricing modelled, support tested, status page reviewed, dissent recorded. Then drafted.</p></div>
+      <div class="ps-card"><h3>Day 10–14 · Publish</h3><p>Comparison published, you receive an email with the link, and you are credited as the requester (or anonymous if preferred).</p></div>
     </div>
   </div>
 
@@ -94,8 +94,8 @@ def build_request():
 """
     html = page_shell(
         slug="request-a-comparison",
-        title="Request a SaaS Comparison â€” Tell SaaSpare What to Compare Next",
-        desc="Stuck choosing between two SaaS tools? Submit a comparison request. We publish requested comparisons in 7â€“14 days, free and unbiased.",
+        title="Request a SaaS Comparison — Tell SaaSpare What to Compare Next",
+        desc="Stuck choosing between two SaaS tools? Submit a comparison request. We publish requested comparisons in 7–14 days, free and unbiased.",
         body=body, accent="request",
         crumbs=[CRUMB_HOME, ("/pages/request-a-comparison", "Request a comparison")],
     )
@@ -130,7 +130,7 @@ def build_report_pricing():
 
       <label>Type of change
         <select name="change_type" required>
-          <option value="">â€”</option>
+          <option value="">—</option>
           <option>Price hike</option>
           <option>Price drop</option>
           <option>Plan restructure / renamed</option>
@@ -188,7 +188,7 @@ def build_report_pricing():
 """
     html = page_shell(
         slug="report-outdated-pricing",
-        title="Report Outdated SaaS Pricing â€” Help Keep SaaSpare Accurate",
+        title="Report Outdated SaaS Pricing — Help Keep SaaSpare Accurate",
         desc="Spotted a vendor that changed pricing? Tell us. We re-verify within 24 hours and update the live page within 48.",
         body=body, accent="report2",
         crumbs=[CRUMB_HOME, ("/pages/report-outdated-pricing", "Report pricing")],

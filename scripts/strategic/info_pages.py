@@ -14,7 +14,7 @@ def build_about():
   <div class="page-hero-orb"></div><div class="page-hero-orb2"></div>
   <div class="page-hero-content">
     {breadcrumb_html([CRUMB_HOME, ("/about", "About")])}
-    <div class="page-eyebrow">Independent Â· Australian-owned Â· Built since 2024</div>
+    <div class="page-eyebrow">Independent · Australian-owned · Built since 2024</div>
     <h1>{h1}</h1>
     <p class="page-sub">Honest, hands-on B2B SaaS comparisons with one rule we will not break: we do not sell rankings. Started in 2024 because every "Top 10 SaaS Tools" list on Google was secretly an affiliate ad in disguise.</p>
   </div>
@@ -25,7 +25,7 @@ def build_about():
     <span class="ps-eyebrow">The team</span>
     <h2 class="ps-title">Built by Kaylan von Papen</h2>
     <div class="ps-card">
-      <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7">Hi, I'm Kaylan â€” founder and lead reviewer at SaaSpare. I built this after spending six years in B2B SaaS ops and getting tired of "review" sites that were really paid placement schemes. SaaSpare is the comparison resource I wish existed when I was making procurement decisions: hands-on tested, transparently scored, fully disclosed.</p>
+      <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7">Hi, I'm Kaylan — founder and lead reviewer at SaaSpare. I built this after spending six years in B2B SaaS ops and getting tired of "review" sites that were really paid placement schemes. SaaSpare is the comparison resource I wish existed when I was making procurement decisions: hands-on tested, transparently scored, fully disclosed.</p>
       <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7;margin-top:1rem">Based in Australia. Reachable at <a href="mailto:hello@saaspare.org">hello@saaspare.org</a>.</p>
     </div>
   </div>
@@ -38,7 +38,7 @@ def build_about():
       <div class="ps-card"><h3>Pricing pages</h3><p>Plain-English breakdowns of each vendor's pricing, including the seat minimums and gotchas they bury in the fine print.</p></div>
       <div class="ps-card"><h3>Best-of roundups</h3><p>Category roundups for buyers researching their first or fifth tool in a category.</p></div>
       <div class="ps-card"><h3>The pricing tracker</h3><p>Live data on which SaaS vendors hiked, dropped, or restructured prices each month.</p></div>
-      <div class="ps-card"><h3>The Stack Audit</h3><p>Our paid productised service: a full audit of your SaaS stack, delivered in 5â€“7 days, with savings receipts.</p></div>
+      <div class="ps-card"><h3>The Stack Audit</h3><p>Our paid productised service: a full audit of your SaaS stack, delivered in 5–7 days, with savings receipts.</p></div>
       <div class="ps-card"><h3>The Weekly Digest</h3><p>One email each Friday with the best verified deals, expiring trials, and price changes of the week.</p></div>
     </div>
   </div>
@@ -54,14 +54,14 @@ def build_about():
 
   <div class="ps reveal">
     <div class="ps-callout">
-      <p><strong>How we make money:</strong> a small fraction of comparisons earn affiliate commissions when readers click through and sign up. The Stack Audit is a paid service. We are exploring sponsored content with a clear "Sponsored" tag â€” but only for vendors we already independently rated above 4/5. See our <a href="/affiliate-disclosure">affiliate disclosure</a>.</p>
+      <p><strong>How we make money:</strong> a small fraction of comparisons earn affiliate commissions when readers click through and sign up. The Stack Audit is a paid service. We are exploring sponsored content with a clear "Sponsored" tag — but only for vendors we already independently rated above 4/5. See our <a href="/affiliate-disclosure">affiliate disclosure</a>.</p>
     </div>
   </div>
 
   <div class="ps reveal">
     <div class="cta-big">
       <h3>Got a question?</h3>
-      <p>Editorial questions, partnership requests, or just want to say hi â€” we read every email.</p>
+      <p>Editorial questions, partnership requests, or just want to say hi — we read every email.</p>
       <a href="mailto:hello@saaspare.org" class="btn">hello@saaspare.org</a>
       <a href="/contact" class="btn ghost" style="margin-left:.6rem">Contact form</a>
     </div>
@@ -77,7 +77,7 @@ def build_about():
     )
     html = page_shell(
         slug="about",
-        title="About SaaSpare â€” Independent B2B SaaS Comparisons",
+        title="About SaaSpare — Independent B2B SaaS Comparisons",
         desc="SaaSpare is independent, hands-on B2B SaaS comparison platform. Founded by Kaylan von Papen in 2024. We do not sell rankings.",
         body=body, accent="about",
         crumbs=[CRUMB_HOME, ("/about", "About")],
@@ -96,7 +96,7 @@ def build_privacy():
   <div class="page-hero-orb"></div><div class="page-hero-orb2"></div>
   <div class="page-hero-content">
     {breadcrumb_html([CRUMB_HOME, ("/privacy", "Privacy Policy")])}
-    <div class="page-eyebrow">Last updated Â· April 2026</div>
+    <div class="page-eyebrow">Last updated · April 2026</div>
     <h1>{h1}</h1>
     <p class="page-sub">The plain-English version: we collect the minimum needed to run the site, never sell your data, and give you full control to delete anything we hold. The legal version is below.</p>
   </div>
@@ -127,7 +127,7 @@ def build_privacy():
     <div class="ps-body">
       <p><strong>Analytics:</strong> Google Analytics 4 collects anonymised page views, device type, country, and referrer. We use this only to understand which articles are useful.</p>
       <p><strong>Newsletter:</strong> if you subscribe to the Weekly SaaS Deal Digest we collect your email address. Stored with FormSubmit + our internal CRM. Used only to send the newsletter you signed up for.</p>
-      <p><strong>Forms:</strong> contact form, Stack Audit intake, comparison requests, pricing reports â€” these collect what you tell them. Submissions are emailed to us via FormSubmit and retained for as long as needed to act on them.</p>
+      <p><strong>Forms:</strong> contact form, Stack Audit intake, comparison requests, pricing reports — these collect what you tell them. Submissions are emailed to us via FormSubmit and retained for as long as needed to act on them.</p>
       <p><strong>Affiliate clicks:</strong> when you click through to a vendor we may add an affiliate tracking parameter. The vendor sees the click, not us.</p>
     </div>
   </div>
@@ -184,7 +184,7 @@ def build_privacy():
   <div class="ps reveal">
     <div class="cta-big">
       <h3>Privacy questions?</h3>
-      <p>Email <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a> â€” we read and respond to every privacy request within 14 days.</p>
+      <p>Email <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a> — we read and respond to every privacy request within 14 days.</p>
       <a href="mailto:privacy@saaspare.org" class="btn">privacy@saaspare.org</a>
     </div>
   </div>
@@ -193,7 +193,7 @@ def build_privacy():
 """
     html = page_shell(
         slug="privacy",
-        title="Privacy Policy â€” SaaSpare",
+        title="Privacy Policy — SaaSpare",
         desc="SaaSpare's plain-English privacy policy. We collect the minimum needed, never sell your data, and give you full control to delete anything we hold.",
         body=body, accent="trust",
         crumbs=[CRUMB_HOME, ("/privacy", "Privacy Policy")],

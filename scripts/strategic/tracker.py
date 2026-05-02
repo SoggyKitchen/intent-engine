@@ -14,7 +14,7 @@ def build():
   <div class="page-hero-orb"></div><div class="page-hero-orb2"></div>
   <div class="page-hero-content">
     {breadcrumb_html([CRUMB_HOME, ("/pages/saas-pricing-changes", "Pricing Changes")])}
-    <div class="page-eyebrow">Live data asset Â· Updated weekly</div>
+    <div class="page-eyebrow">Live data asset · Updated weekly</div>
     <h1>{h1}</h1>
     <p class="page-sub">The most aggressive SaaS pricing moves of 2026, tracked across 1,017+ B2B tools. Who hiked, who dropped, who introduced a hidden seat minimum, and who quietly got pricier per-seat without telling anyone.</p>
   </div>
@@ -79,7 +79,7 @@ def build():
   <div class="ps reveal">
     <div class="cta-big">
       <h3>Never get surprised by a SaaS price hike again</h3>
-      <p>Subscribe to the Weekly SaaS Deal Digest and we flag every tracked change â€” and the cheaper alternative â€” every Friday.</p>
+      <p>Subscribe to the Weekly SaaS Deal Digest and we flag every tracked change — and the cheaper alternative — every Friday.</p>
       <a href="/pages/weekly-saas-deal-digest" class="btn">Subscribe free â†’</a>
     </div>
   </div>
@@ -106,7 +106,7 @@ def build():
     )
     html = page_shell(
         slug="saas-pricing-changes",
-        title="SaaS Pricing Changes Tracker 2026 â€” Which Vendors Hiked Prices",
+        title="SaaS Pricing Changes Tracker 2026 — Which Vendors Hiked Prices",
         desc="Live tracker of 2026 SaaS price changes across 1,017+ B2B tools. See who hiked, who dropped, plus a cheaper alternative for each.",
         body=body, accent="tracker", nav_active="idx",
         crumbs=[CRUMB_HOME, ("/pages/saas-pricing-changes", "Pricing Changes")],

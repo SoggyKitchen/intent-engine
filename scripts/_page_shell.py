@@ -254,9 +254,9 @@ ACCENTS = {
 
 NAV_ITEMS = [
     ("/pages/", "Comparisons", "compare"),
-    ("/pages/saas-pricing-index", "Pricing Index", "idx"),
-    ("/pages/free-trial-database", "Free Trials", "trials"),
-    ("/pages/saas-glossary", "Glossary", "gloss"),
+    ("/pages/saas-roi-calculator", "ROI Calculator", "roi"),
+    ("/shortlist", "Shortlist Builder", "shortlist"),
+    ("/deal-radar", "Deal Radar", "radar"),
     ("/about", "About", "about"),
 ]
 
@@ -390,6 +390,7 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
 {schema_block}
 <style>{BASE_CSS}{accent_css}</style>
+<!-- ga-events-v1 --><script defer src="/assets/saaspare-events.js"></script>
 </head>
 <body>
 {nav(nav_active)}

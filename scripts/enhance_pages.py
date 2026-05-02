@@ -25,7 +25,7 @@ ORG_SCHEMA = json.dumps({
     "url": DOMAIN,
     "logo": f"{DOMAIN}/og-default.png",
     "description": "Unbiased B2B SaaS comparisons, real pricing, and expert recommendations.",
-    "sameAs": []
+    "sameAs": ["https://twitter.com/SaaSpare"]
 }, ensure_ascii=False, indent=2)
 
 # ---------------------------------------------------------------------------

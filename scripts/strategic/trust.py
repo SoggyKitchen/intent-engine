@@ -16,7 +16,7 @@ def build_coupon_policy():
     {breadcrumb_html([CRUMB_HOME, ("/pages/coupon-verification-policy", "Coupon Policy")])}
     <div class="page-eyebrow">Trust Page</div>
     <h1>{h1}</h1>
-    <p class="page-sub">How we verify every discount, promo code, and deal listed on SaaSpare â€” and exactly what happens when a coupon breaks or expires.</p>
+    <p class="page-sub">How we verify every discount, promo code, and deal listed on SaaSpare — and exactly what happens when a coupon breaks or expires.</p>
   </div>
 </section>
 <main class="page-content">
@@ -62,7 +62,7 @@ def build_coupon_policy():
 """
     html = page_shell(
         slug="coupon-verification-policy",
-        title="Coupon Verification Policy â€” How SaaSpare Verifies Every Promo Code",
+        title="Coupon Verification Policy — How SaaSpare Verifies Every Promo Code",
         desc="SaaSpare's coupon verification policy: 5-step process, live testing, 30-day re-verification, and what 'verified' actually means.",
         body=body, accent="policy",
         crumbs=[CRUMB_HOME, ("/pages/coupon-verification-policy", "Coupon Policy")],
@@ -81,7 +81,7 @@ def build_rank_methodology():
     {breadcrumb_html([CRUMB_HOME, ("/pages/how-saaspare-ranks-tools", "How We Rank")])}
     <div class="page-eyebrow">Editorial Standards</div>
     <h1>{h1}</h1>
-    <p class="page-sub">We do not sell rankings. We do not take payment for placement. Here is the exact 6-factor rubric we use to decide which tool wins each comparison â€” and what we deliberately exclude.</p>
+    <p class="page-sub">We do not sell rankings. We do not take payment for placement. Here is the exact 6-factor rubric we use to decide which tool wins each comparison — and what we deliberately exclude.</p>
   </div>
 </section>
 <main class="page-content">
@@ -107,12 +107,12 @@ def build_rank_methodology():
     <span class="ps-eyebrow">In detail</span>
     <h2 class="ps-title">What each factor covers</h2>
     <div class="ps-grid-2">
-      <div class="ps-card"><h3>Pricing value Â· 25%</h3><p>Plan value vs. direct competitors. Presence of hidden fees, seat minimums, annual-only discounts, or tiered traps. Lower total first-year cost scores higher.</p></div>
-      <div class="ps-card"><h3>Feature fit Â· 20%</h3><p>Core features present vs. category standard. Weighted by buyer role â€” what a 10-person startup needs differs from what a 500-person enterprise needs.</p></div>
-      <div class="ps-card"><h3>Onboarding & UX Â· 15%</h3><p>Time to first value. Learning curve. Mobile + desktop experience. Clean UI scores higher than "enterprisey" UI.</p></div>
-      <div class="ps-card"><h3>Reliability Â· 15%</h3><p>Published SLAs, status page incident history, how transparent the vendor is about outages. We pull 12 months of status data.</p></div>
-      <div class="ps-card"><h3>Support Â· 15%</h3><p>Response time, channels (chat / email / phone), documentation depth, community activity, and how quickly critical bugs get fixed.</p></div>
-      <div class="ps-card"><h3>Free tier / trial Â· 10%</h3><p>Real free plans beat fake ones. No-card trials beat card-required trials. 30-day trials beat 7-day trials. Generous limits beat starter straitjackets.</p></div>
+      <div class="ps-card"><h3>Pricing value · 25%</h3><p>Plan value vs. direct competitors. Presence of hidden fees, seat minimums, annual-only discounts, or tiered traps. Lower total first-year cost scores higher.</p></div>
+      <div class="ps-card"><h3>Feature fit · 20%</h3><p>Core features present vs. category standard. Weighted by buyer role — what a 10-person startup needs differs from what a 500-person enterprise needs.</p></div>
+      <div class="ps-card"><h3>Onboarding & UX · 15%</h3><p>Time to first value. Learning curve. Mobile + desktop experience. Clean UI scores higher than "enterprisey" UI.</p></div>
+      <div class="ps-card"><h3>Reliability · 15%</h3><p>Published SLAs, status page incident history, how transparent the vendor is about outages. We pull 12 months of status data.</p></div>
+      <div class="ps-card"><h3>Support · 15%</h3><p>Response time, channels (chat / email / phone), documentation depth, community activity, and how quickly critical bugs get fixed.</p></div>
+      <div class="ps-card"><h3>Free tier / trial · 10%</h3><p>Real free plans beat fake ones. No-card trials beat card-required trials. 30-day trials beat 7-day trials. Generous limits beat starter straitjackets.</p></div>
     </div>
   </div>
 
@@ -138,7 +138,7 @@ def build_rank_methodology():
   <div class="ps reveal">
     <div class="cta-big">
       <h3>Spot a comparison that needs updating?</h3>
-      <p>If a vendor changed pricing or shipped a major feature, we want to know â€” and re-score within 14 days.</p>
+      <p>If a vendor changed pricing or shipped a major feature, we want to know — and re-score within 14 days.</p>
       <a href="/pages/report-outdated-pricing" class="btn">Report it â†’</a>
     </div>
   </div>
@@ -147,7 +147,7 @@ def build_rank_methodology():
 """
     html = page_shell(
         slug="how-saaspare-ranks-tools",
-        title="How SaaSpare Ranks Tools â€” Editorial Standards & Methodology",
+        title="How SaaSpare Ranks Tools — Editorial Standards & Methodology",
         desc="Our 6-factor ranking rubric, hands-on test process, and what we deliberately do NOT score on. Editorial independence at SaaSpare.",
         body=body, accent="rank",
         crumbs=[CRUMB_HOME, ("/pages/how-saaspare-ranks-tools", "How We Rank")],
