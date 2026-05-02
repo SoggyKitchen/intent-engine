@@ -424,7 +424,7 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1}
     <div class="vf vf-4"><span class="vf-dot green"></span><span class="vf-label">Linear</span>&nbsp;→&nbsp;Best dev UX, hands down</div>
   </div>
 
-  <div class="badge"><span class="badge-dot"></span>996 comparisons live</div>
+  <div class="badge"><span class="badge-dot"></span>1005 comparisons live</div>
 
   <h1 class="hero-title">
     The honest guide to<br>
@@ -837,7 +837,7 @@ setTimeout(type,800);
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
-  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||996;
+  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1005;
   ['live-count','stat-pages'].forEach(id=>{const el=document.getElementById(id);if(el){el.dataset.count=n;el.textContent=n.toLocaleString()+(id==='stat-pages'?'+':'')}});
 }).catch(()=>{});
 
