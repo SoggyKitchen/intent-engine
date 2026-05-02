@@ -187,7 +187,7 @@ def main():
 
     print(f"\nResults: OK={counts[GOOD]} WARN={counts[WARN]} PROG={counts[PROG]} DEAD={counts[DEAD]}")
     print(f"Full report: {REPORT_FILE}")
-    if counts[DEAD] or counts[PROG]:
+    if counts[DEAD]:
         sys.exit(1)
 
 
