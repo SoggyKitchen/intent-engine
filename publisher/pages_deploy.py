@@ -459,6 +459,9 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <meta name="keywords" content="{seo_keywords}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{domain}/pages/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
 <meta property="og:title" content="{escape(seo['title'], quote=True)}">
 <meta property="og:description" content="{seo_meta}">
@@ -476,14 +479,21 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   body{{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(820px 520px at 50% -14%,rgba(71,18,31,.68),transparent 66%),radial-gradient(640px 420px at 82% 7%,rgba(233,69,96,.14),transparent 70%),linear-gradient(180deg,#0b0610 0%,#080810 42%,#07070d 100%);color:var(--text);line-height:1.6;min-height:100vh;overflow-x:hidden}}
   body::before{{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(233,69,96,.05),transparent 20%,transparent 80%,rgba(233,69,96,.04)),radial-gradient(circle at 50% 0%,rgba(255,255,255,.035),transparent 38%);z-index:0}}
   a{{color:inherit;text-decoration:none}}
+  nav#nav{{position:fixed;top:0;left:0;right:0;z-index:260;padding:1rem 2rem;display:flex;align-items:center;gap:.28rem;background:transparent;border-bottom:1px solid transparent;transition:background .28s ease,border-color .28s ease,backdrop-filter .28s ease}}
+  nav#nav.scrolled,nav#nav.ss-nav-scrolled{{background:rgba(7,7,13,.84);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}}
+  nav#nav .ss-logo{{display:flex;align-items:center;gap:9px;margin-right:auto;color:#fff;font-weight:850;letter-spacing:-.04em}}
+  nav#nav .nav-link{{color:rgba(255,255,255,.5);font-size:.82rem;font-weight:700;padding:.45rem .78rem;border-radius:999px;white-space:nowrap;transition:color .18s,background .18s}}
+  nav#nav .nav-link:hover,nav#nav .nav-link.active{{color:#fff;background:rgba(255,255,255,.045)}}
+  nav#nav .nav-cta{{background:linear-gradient(135deg,#f04c68,#c8314f);color:#fff;padding:.55rem 1.08rem;border-radius:999px;font-size:.82rem;font-weight:850;box-shadow:0 12px 38px rgba(233,69,96,.28);margin-left:.4rem;white-space:nowrap}}
   .library-shell{{position:relative;z-index:1}}
   .hero{{max-width:1440px;margin:0 auto;padding:5.4rem clamp(1.25rem,3vw,2.6rem) 2.4rem;text-align:center;position:relative}}
   .hero::before{{content:"";position:absolute;left:50%;top:3rem;transform:translateX(-50%);width:min(920px,86vw);height:380px;background:radial-gradient(circle at 50% 35%,rgba(233,69,96,.18),transparent 64%);filter:blur(4px);pointer-events:none}}
   .hero>*{{position:relative}}
   .badge{{display:inline-flex;align-items:center;gap:.45rem;border:1px solid rgba(233,69,96,.34);background:rgba(233,69,96,.1);color:#ffc8d1;border-radius:999px;padding:.45rem .95rem;font-size:.78rem;font-weight:850;margin-bottom:1.8rem;box-shadow:0 12px 42px rgba(233,69,96,.08)}}
   .badge::before{{content:"";width:.42rem;height:.42rem;background:#ff5b76;border-radius:50%;box-shadow:0 0 14px rgba(255,91,118,.8)}}
-  .hero h1{{font-size:clamp(3rem,7.2vw,6.4rem);color:#fff;letter-spacing:-.072em;line-height:.98;margin:0 auto 1.35rem;max-width:1180px;text-wrap:balance}}
-  .hero h1 span{{color:#f04c68;text-shadow:0 0 38px rgba(233,69,96,.16)}}
+  .hero h1{{font-size:clamp(3rem,7.2vw,6.4rem);color:#fff;letter-spacing:-.052em;line-height:1.02;margin:0 auto 1.35rem;max-width:1180px;text-wrap:balance}}
+  .hero h1 span{{display:inline-block;color:#f04c68;background:linear-gradient(105deg,#ef4763 0%,#ef4763 35%,#ff91a4 48%,#ffd0d9 52%,#ef4763 66%,#c8314f 100%);background-size:240% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 38px rgba(233,69,96,.12);animation:libraryGlint 5.4s cubic-bezier(.45,0,.25,1) infinite}}
+  @keyframes libraryGlint{{0%,18%{{background-position:120% 50%}}48%,100%{{background-position:-120% 50%}}}}
   .hero p{{color:rgba(255,255,255,.5);max-width:760px;margin:0 auto 2rem;font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.75}}
   .search-shell{{max-width:760px;margin:0 auto 1.45rem;padding:.55rem;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.035));border:1px solid rgba(233,69,96,.34);border-radius:999px;display:flex;gap:.5rem;box-shadow:0 30px 80px rgba(0,0,0,.35)}}
   .search-shell input{{flex:1;background:transparent;border:none;color:#fff;padding:.85rem 1rem;outline:none;font:inherit}}
@@ -537,14 +547,14 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 {"<script async src=\"https://www.googletagmanager.com/gtag/js?id=" + ga_id + "\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','" + ga_id + "');</script>" if ga_id else ""}
 </head>
 <body>
-<nav>
+<nav id="nav">
   <a href="/" class="ss-logo">SaaSpare</a>
   <a href="/pages/" class="nav-link">Comparisons</a>
-  <a href="/pages/saas-roi-calculator.html" class="nav-link">ROI Calculator</a>
-  <a href="/shortlist.html" class="nav-link">Shortlist Builder</a>
-  <a href="/deal-radar.html" class="nav-link">Deal Radar</a>
-  <a href="/about.html" class="nav-link">About</a>
-  <a href="/shortlist.html" class="nav-cta">Build Shortlist -></a>
+  <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
+  <a href="/shortlist" class="nav-link">Shortlist Builder</a>
+  <a href="/deal-radar" class="nav-link">Deal Radar</a>
+  <a href="/about" class="nav-link">About</a>
+  <a href="/shortlist" class="nav-cta">Build Shortlist -></a>
 </nav>
 <div class="library-shell">
 <div class="hero">

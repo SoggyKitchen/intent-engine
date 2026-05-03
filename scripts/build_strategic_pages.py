@@ -27,6 +27,7 @@ BUILDERS = [
     ("Request a Comparison", utility.build_request),
     ("Report Outdated Pricing", utility.build_report_pricing),
     ("About SaaSpare", info_pages.build_about),
+    ("Contact SaaSpare", info_pages.build_contact),
     ("Privacy Policy", info_pages.build_privacy),
 ]
 

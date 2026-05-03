@@ -23,7 +23,7 @@ BASE_CSS = r"""
 :root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3;--warn:#ffc864}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:'cv11','ss01','ss03'}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:'cv11','ss01','ss03'}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
@@ -47,7 +47,7 @@ nav#nav.scrolled,nav#nav.ss-nav-scrolled{background:rgba(7,7,13,.86) !important;
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 
 /* HERO */
-.page-hero{position:relative;overflow:hidden;padding:7.5rem 2rem 4rem;text-align:center;z-index:1}
+.page-hero{position:relative;overflow:hidden;padding:5.8rem 2rem 2.8rem;text-align:center;z-index:1}
 .page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(80,18,28,.85) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 30%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg)}
 .page-hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);animation:dotDrift 36s linear infinite;opacity:.7}
 @keyframes dotDrift{from{background-position:0 0}to{background-position:32px 32px}}
@@ -72,7 +72,7 @@ nav#nav.scrolled,nav#nav.ss-nav-scrolled{background:rgba(7,7,13,.86) !important;
 /* PAGE */
 .page-content{max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem) 6rem;position:relative;z-index:1}
 .ps{padding:3.5rem 0;border-top:1px solid var(--border)}
-.ps:first-child{border-top:none;padding-top:3rem}
+.ps:first-child{border-top:none;padding-top:1.6rem}
 .ps-eyebrow{font-size:.64rem;font-weight:700;color:var(--red);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:.55rem;display:block}
 .ps-title{font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:900;color:#fff;letter-spacing:-.04em;margin-bottom:1.5rem;line-height:1.2}
 .ps-body{color:rgba(255,248,245,.72);font-size:.94rem;line-height:1.78}
@@ -227,7 +227,7 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3r
   .ps-grid-3,.ps-grid-4{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  .page-hero{padding:6.5rem 1.2rem 3.5rem}
+  .page-hero{padding:5.25rem 1.2rem 2.4rem}
   .page-content{padding:0 1.2rem 5rem}
   .ps-grid-2,.ps-grid-3,.ps-grid-4{grid-template-columns:1fr}
   .ps-stat-row{flex-wrap:wrap}
@@ -383,7 +383,7 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
 <meta name="twitter:image" content="{DOMAIN}/og-default.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Inter:ital,opsz,wght@1,14..32,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>

@@ -201,3 +201,108 @@ def build_privacy():
     )
     (SITE / "privacy.html").write_text(html, encoding="utf-8")
 
+
+def build_contact():
+    h1 = hero_h1_with_glint("Contact SaaSpare", "SaaSpare")
+    body = f"""
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-orb"></div><div class="page-hero-orb2"></div>
+  <div class="page-hero-content">
+    {breadcrumb_html([CRUMB_HOME, ("/contact", "Contact")])}
+    <div class="page-eyebrow">Corrections · partnerships · requests</div>
+    <h1>{h1}</h1>
+    <p class="page-sub">Use the fastest path below so the right SaaSpare workflow gets your message: pricing corrections, comparison requests, partnership enquiries, or editorial questions.</p>
+  </div>
+</section>
+<main class="page-content">
+
+  <div class="ps reveal">
+    <span class="ps-eyebrow">Fast routes</span>
+    <h2 class="ps-title">What do you need?</h2>
+    <div class="ps-grid-2">
+      <a class="ps-card" href="/pages/report-outdated-pricing">
+        <h3>Report outdated pricing</h3>
+        <p>Send a vendor source and we will verify pricing, free-trial, coupon, or plan changes before updating affected pages.</p>
+      </a>
+      <a class="ps-card" href="/pages/request-a-comparison">
+        <h3>Request a comparison</h3>
+        <p>Ask for a tool-vs-tool, pricing, alternative, or free-trial guide. High-demand requests move up the queue.</p>
+      </a>
+      <a class="ps-card" href="mailto:partnerships@saaspare.org">
+        <h3>Partnerships</h3>
+        <p>For affiliate managers, SaaS vendors, networks, PR teams, and collaboration requests. Email partnerships@saaspare.org.</p>
+      </a>
+      <a class="ps-card" href="mailto:hello@saaspare.org">
+        <h3>General editorial</h3>
+        <p>Questions about methodology, page accuracy, research, or SaaSpare's buyer-first comparison policy.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="ps reveal">
+    <span class="ps-eyebrow">Contact form</span>
+    <h2 class="ps-title">Send a message</h2>
+    <form class="form" action="https://formsubmit.co/hello@saaspare.org" method="POST">
+      <input type="hidden" name="_subject" value="SaaSpare contact form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://saaspare.org/contact?ok=1">
+      <label>Your email<input type="email" name="email" required placeholder="you@company.com"></label>
+      <label>Topic
+        <select name="topic" required>
+          <option value="">Choose one</option>
+          <option>Pricing correction</option>
+          <option>Comparison request</option>
+          <option>Partnership / affiliate program</option>
+          <option>Press / research</option>
+          <option>General question</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" rows="5" required placeholder="Tell us what changed, what you need compared, or which partnership program you want SaaSpare to review."></textarea></label>
+      <button type="submit" class="btn" style="align-self:flex-start">Send message -></button>
+      <p style="font-size:.74rem;color:var(--dim);margin:0">No spam. Your message is only used to reply or update SaaSpare content.</p>
+    </form>
+  </div>
+
+  <div class="ps reveal">
+    <div class="ps-callout">
+      <p><strong>Important:</strong> partnerships@saaspare.org and hello@saaspare.org must exist in your email provider or Cloudflare Email Routing. The site can display them now, but inbox delivery depends on DNS/email routing being configured.</p>
+    </div>
+  </div>
+
+</main>
+<script>
+(function(){{
+  var p=new URLSearchParams(location.search);
+  if(p.get('ok')==='1'){{
+    var box=document.createElement('div');
+    box.style.cssText='position:fixed;top:90px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#65d6a3,#4eb88a);color:#0c1f16;padding:.85rem 1.4rem;border-radius:100px;font-weight:800;z-index:300;box-shadow:0 10px 36px rgba(0,0,0,.3);font-size:.88rem';
+    box.textContent='Message sent.';
+    document.body.appendChild(box);
+    setTimeout(function(){{box.style.transition='opacity .4s';box.style.opacity='0';}},6000);
+  }}
+}})();
+</script>
+"""
+    schema = (
+        '{"@context":"https://schema.org","@type":"ContactPage",'
+        '"name":"Contact SaaSpare",'
+        '"url":"https://saaspare.org/contact",'
+        '"description":"Contact SaaSpare for pricing corrections, comparison requests, partnerships, and editorial questions.",'
+        '"publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org"}}'
+    )
+    html = page_shell(
+        slug="contact",
+        title="Contact SaaSpare — Corrections, Partnerships & Requests",
+        desc="Contact SaaSpare for pricing corrections, comparison requests, partnership enquiries, and editorial questions.",
+        body=body,
+        accent="about",
+        nav_active="",
+        crumbs=[CRUMB_HOME, ("/contact", "Contact")],
+        canonical_path="/contact",
+        schema_extra=schema,
+        page_type="ContactPage",
+    )
+    (SITE / "contact.html").write_text(html, encoding="utf-8")
+
