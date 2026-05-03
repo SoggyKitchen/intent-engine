@@ -68,7 +68,7 @@ path = ROOT / "site" / "index.html"
 c = path.read_text(encoding="utf-8")
 
 # Fix font
-c = fix_inter_font(c)
+# font kept as Inter per user preference
 
 # Fix nav — replace the mismatched nav links from SEO sprint
 # The SEO sprint replaced standard links with: Pricing Index, Free Trials, Glossary, Spend Audit
@@ -138,7 +138,7 @@ for rel in static:
         continue
     c = p.read_text(encoding="utf-8")
     orig = c
-    c = fix_inter_font(c)
+    # font kept as Inter per user preference
     c = add_categories(c)
     c = fix_shortlist_link(c)
     if c != orig:
@@ -161,7 +161,7 @@ for fn in strategic:
         continue
     c = p.read_text(encoding="utf-8")
     orig = c
-    c = fix_inter_font(c)
+    # font kept as Inter per user preference
     c = add_categories(c)
     c = fix_shortlist_link(c)
     if c != orig:

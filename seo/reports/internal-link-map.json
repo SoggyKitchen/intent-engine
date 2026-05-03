@@ -3,7 +3,6 @@
     "inbound": [
       "/about",
       "/affiliate-disclosure",
-      "/categories",
       "/contact",
       "/deal-radar",
       "/",
@@ -172,6 +171,7 @@
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -189,6 +189,7 @@
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -217,6 +218,7 @@
       "/pages/best-project-management-software-in-2026-for-every-team-size",
       "/pages/best-rippling-alternatives-in-2026-free-paid",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -828,6 +830,7 @@
       "/pages/saas-pricing-index",
       "/pages/saas-roi-calculator",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
       "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -1043,10 +1046,12 @@
       "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
       "/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay",
@@ -1237,6 +1242,7 @@
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -1254,6 +1260,7 @@
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -1282,6 +1289,7 @@
       "/pages/best-project-management-software-in-2026-for-every-team-size",
       "/pages/best-rippling-alternatives-in-2026-free-paid",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -1894,6 +1902,7 @@
       "/pages/saas-pricing-index",
       "/pages/saas-roi-calculator",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
       "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -2091,15 +2100,12 @@
       "/categories",
       "/contact",
       "/deal-radar",
-      "/media-kit",
       "/methodology",
       "/pages/",
-      "/pages/?q=crm",
-      "/pages/?q=dev",
-      "/pages/?q=hr",
-      "/pages/?q=seo",
-      "/pages/?type=alternatives",
-      "/pages/?type=pricing",
+      "/pages/coupon-verification-policy",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
       "/pages/saas-roi-calculator",
       "/privacy",
       "/shortlist"
@@ -2109,12 +2115,12 @@
     "inbound": [
       "/about",
       "/affiliate-disclosure",
-      "/categories",
-      "/categories",
+      "/contact",
       "/deal-radar",
       "/deal-radar",
       "/",
       "/methodology",
+      "/privacy",
       "/shortlist",
       "/pages/1password-business-vs-cloudflare-which-is-better-in-2026",
       "/pages/1password-business-vs-crowdstrike-which-is-better-in-2026",
@@ -2277,6 +2283,7 @@
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -2294,6 +2301,7 @@
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -2322,6 +2330,7 @@
       "/pages/best-project-management-software-in-2026-for-every-team-size",
       "/pages/best-rippling-alternatives-in-2026-free-paid",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -2935,6 +2944,7 @@
       "/pages/saas-pricing-index",
       "/pages/saas-pricing-index",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
       "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -3142,299 +3152,10 @@
       "/shortlist"
     ]
   },
-  "/categories": {
-    "inbound": [
-      "/about",
-      "/affiliate-disclosure",
-      "/categories",
-      "/",
-      "/methodology",
-      "/shortlist",
-      "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
-      "/pages/how-saaspare-ranks-tools",
-      "/pages/report-outdated-pricing",
-      "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-changes",
-      "/pages/saas-pricing-index",
-      "/pages/saas-spend-audit",
-      "/pages/state-of-saas-pricing-2026",
-      "/pages/weekly-saas-deal-digest"
-    ],
-    "outbound": [
-      "/",
-      "/affiliate-disclosure",
-      "/categories",
-      "/deal-radar",
-      "/methodology",
-      "/pages",
-      "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/1password-vs-bitwarden-which-is-better-in-2026",
-      "/pages/7-best-adp-alternatives-in-2026-free-paid",
-      "/pages/7-best-ahrefs-alternatives-in-2026-free-paid",
-      "/pages/7-best-aws-alternatives-in-2026-free-paid",
-      "/pages/7-best-bamboohr-alternatives-in-2026-free-paid",
-      "/pages/7-best-clickup-alternatives-in-2026-free-paid",
-      "/pages/7-best-crowdstrike-alternatives-in-2026-free-paid",
-      "/pages/7-best-freshbooks-alternatives-in-2026-free-paid",
-      "/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
-      "/pages/7-best-google-meet-alternatives-in-2026-free-paid",
-      "/pages/7-best-hubspot-alternatives-in-2026-free-paid",
-      "/pages/7-best-jira-alternatives-in-2026-free-paid",
-      "/pages/7-best-mailchimp-alternatives-in-2026-free-paid",
-      "/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid",
-      "/pages/7-best-monday-com-alternatives-in-2026-free-paid",
-      "/pages/7-best-nordlayer-alternatives-in-2026-free-paid",
-      "/pages/7-best-okta-alternatives-in-2026-free-paid",
-      "/pages/7-best-quickbooks-alternatives-in-2026-free-paid",
-      "/pages/7-best-salesforce-alternatives-in-2026-free-paid",
-      "/pages/7-best-surfer-seo-alternatives-in-2026-free-paid",
-      "/pages/7-best-xero-alternatives-in-2026-free-paid",
-      "/pages/7-best-zoho-crm-alternatives-in-2026-free-paid",
-      "/pages/7-best-zoom-alternatives-in-2026-free-paid",
-      "/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/activecampaign-vs-drip-which-is-better-in-2026",
-      "/pages/agiloft-vs-icertis-which-is-better-in-2026",
-      "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/ahrefs-vs-spyfu-which-is-better-in-2026",
-      "/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/amplitude-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/amplitude-vs-hotjar-which-is-better-in-2026",
-      "/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026",
-      "/pages/around-vs-streamyard-which-is-better-in-2026",
-      "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/asana-vs-jira-which-is-better-in-2026",
-      "/pages/aws-vs-render-which-is-better-in-2026",
-      "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/bamboohr-vs-lattice-which-is-better-in-2026",
-      "/pages/basecamp-vs-todoist-which-is-better-in-2026",
-      "/pages/best-1password-alternatives-in-2026-free-paid",
-      "/pages/best-asana-alternatives-in-2026-free-paid",
-      "/pages/best-datadog-alternatives-in-2026-free-paid",
-      "/pages/best-deel-alternatives-in-2026-free-paid",
-      "/pages/best-linear-alternatives-in-2026-free-paid",
-      "/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "/pages/best-notion-alternatives-in-2026-free-paid",
-      "/pages/best-pipedrive-alternatives-in-2026-free-paid",
-      "/pages/best-rippling-alternatives-in-2026-free-paid",
-      "/pages/best-semrush-alternatives-in-2026-free-paid",
-      "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
-      "/pages/brevo-vs-marketo-which-is-better-in-2026",
-      "/pages/brex-vs-airbase-which-is-better-in-2026",
-      "/pages/chargebee-vs-recurly-which-is-better-in-2026",
-      "/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026",
-      "/pages/clickup-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/clickup-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/clickup-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/clickup-vs-smartsheet-which-is-better-in-2026",
-      "/pages/close-vs-keap-which-is-better-in-2026",
-      "/pages/cloudflare-vs-qualys-which-is-better-in-2026",
-      "/pages/concord-vs-agiloft-which-is-better-in-2026",
-      "/pages/contractbook-vs-juro-which-is-better-in-2026",
-      "/pages/convertkit-vs-drip-which-is-better-in-2026",
-      "/pages/copper-vs-insightly-which-is-better-in-2026",
-      "/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/copy-ai-vs-hugging-face-which-is-better-in-2026",
-      "/pages/crowdstrike-vs-cloudflare-which-is-better-in-2026",
-      "/pages/datadog-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/datadog-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/datadog-vs-terraform-which-is-better-in-2026",
-      "/pages/deel-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/deel-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/deel-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/deel-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/deel-vs-culture-amp-which-is-better-in-2026",
-      "/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/digitalocean-vs-vultr-which-is-better-in-2026",
-      "/pages/docusign-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/docusign-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/docusign-vs-docusign-clm-which-is-better-in-2026",
-      "/pages/does-amplitude-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-asana-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-brevo-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-clickup-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-hotjar-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-hubspot-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-linear-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-mangools-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-monday-com-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-pipedrive-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-se-ranking-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-snyk-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-supabase-have-a-free-plan-2026-full-breakdown",
-      "/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
-      "/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026",
-      "/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/freshbooks-vs-ramp-which-is-better-in-2026",
-      "/pages/freshsales-vs-nutshell-which-is-better-in-2026",
-      "/pages/fullstory-vs-hotjar-which-is-better-in-2026",
-      "/pages/github-copilot-vs-terraform-which-is-better-in-2026",
-      "/pages/google-meet-vs-streamyard-which-is-better-in-2026",
-      "/pages/greenhouse-vs-gusto-which-is-better-in-2026",
-      "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/gusto-vs-lattice-which-is-better-in-2026",
-      "/pages/heap-vs-fullstory-which-is-better-in-2026",
-      "/pages/hotjar-vs-segment-which-is-better-in-2026",
-      "/pages/hubspot-crm-vs-insightly-which-is-better-in-2026",
-      "/pages/hubspot-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/ironclad-vs-concord-which-is-better-in-2026",
-      "/pages/jasper-ai-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/jasper-ai-vs-weaviate-which-is-better-in-2026",
-      "/pages/jira-vs-wrike-which-is-better-in-2026",
-      "/pages/juro-vs-concord-which-is-better-in-2026",
-      "/pages/keap-vs-insightly-which-is-better-in-2026",
-      "/pages/klaviyo-vs-convertkit-which-is-better-in-2026",
-      "/pages/lattice-vs-culture-amp-which-is-better-in-2026",
-      "/pages/lever-vs-culture-amp-which-is-better-in-2026",
-      "/pages/linear-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/linear-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/linear-vs-sentry-which-is-better-in-2026",
-      "/pages/loom-vs-riverside-fm-which-is-better-in-2026",
-      "/pages/mailchimp-vs-marketo-which-is-better-in-2026",
-      "/pages/mangools-vs-rankmath-pro-which-is-better-in-2026",
-      "/pages/microsoft-teams-vs-descript-which-is-better-in-2026",
-      "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/mixpanel-vs-hotjar-which-is-better-in-2026",
-      "/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/monday-com-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/monday-com-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/monday-com-vs-todoist-which-is-better-in-2026",
-      "/pages/moz-pro-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/moz-pro-vs-spyfu-which-is-better-in-2026",
-      "/pages/netlify-vs-sentry-which-is-better-in-2026",
-      "/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/nordlayer-vs-tenable-which-is-better-in-2026",
-      "/pages/nordpass-vs-sticky-password-which-is-better-in-2026",
-      "/pages/notion-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/notion-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/notion-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/notion-vs-jira-which-is-better-in-2026",
-      "/pages/nutshell-vs-insightly-which-is-better-in-2026",
-      "/pages/okta-vs-qualys-which-is-better-in-2026",
-      "/pages/paddle-vs-chargebee-which-is-better-in-2026",
-      "/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/pandadoc-vs-concord-which-is-better-in-2026",
-      "/pages/pipedrive-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/pipedrive-vs-close-which-is-better-in-2026",
-      "/pages/quickbooks-vs-airbase-which-is-better-in-2026",
-      "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/ramp-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/ramp-vs-divvy-which-is-better-in-2026",
-      "/pages/recurly-vs-recharge-which-is-better-in-2026",
-      "/pages/remote-com-vs-lattice-which-is-better-in-2026",
-      "/pages/rippling-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/rippling-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/rippling-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/rippling-vs-lattice-which-is-better-in-2026",
-      "/pages/riverside-fm-vs-streamyard-which-is-better-in-2026",
-      "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/salesforce-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/salesforce-vs-pipedrive-which-is-better-in-2026",
-      "/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/se-ranking-vs-clearscope-which-is-better-in-2026",
-      "/pages/semrush-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/semrush-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/semrush-vs-moz-pro-which-is-better-in-2026",
-      "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
-      "/pages/sentry-vs-datadog-which-is-better-in-2026",
-      "/pages/smartsheet-vs-todoist-which-is-better-in-2026",
-      "/pages/snyk-vs-duo-security-which-is-better-in-2026",
-      "/pages/spyfu-vs-rankmath-pro-which-is-better-in-2026",
-      "/pages/streamyard-vs-descript-which-is-better-in-2026",
-      "/pages/stripe-vs-recharge-which-is-better-in-2026",
-      "/pages/supabase-vs-vultr-which-is-better-in-2026",
-      "/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts",
-      "/pages/surfer-seo-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/surfer-seo-vs-spyfu-which-is-better-in-2026",
-      "/pages/vercel-vs-netlify-which-is-better-in-2026",
-      "/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/vultr-vs-linode-which-is-better-in-2026",
-      "/pages/workable-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/workable-vs-remote-com-which-is-better-in-2026",
-      "/pages/wrike-vs-smartsheet-which-is-better-in-2026",
-      "/pages/writesonic-vs-pinecone-which-is-better-in-2026",
-      "/pages/xero-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/xero-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/xero-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/xero-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/xero-vs-quickbooks-which-is-better-in-2026",
-      "/pages/zoho-crm-vs-nutshell-which-is-better-in-2026",
-      "/pages/zoom-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/zoom-promo-code-2026-discounts-deals-that-actually-work",
-      "/pages/zoom-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/zoom-vs-whereby-which-is-better-in-2026",
-      "/pages/zscaler-vs-openvpn-which-is-better-in-2026",
-      "/privacy",
-      "/shortlist",
-      "https://saaspare.org/affiliate-disclosure",
-      "https://saaspare.org/contact",
-      "https://saaspare.org/deal-radar",
-      "https://saaspare.org/methodology",
-      "https://saaspare.org/pages/",
-      "https://saaspare.org/pages/saas-roi-calculator",
-      "https://saaspare.org/shortlist"
-    ]
-  },
   "/contact": {
     "inbound": [
       "/about",
       "/affiliate-disclosure",
-      "/categories",
       "/contact",
       "/deal-radar",
       "/deal-radar",
@@ -3603,6 +3324,7 @@
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -3620,6 +3342,7 @@
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -3648,6 +3371,7 @@
       "/pages/best-project-management-software-in-2026-for-every-team-size",
       "/pages/best-rippling-alternatives-in-2026-free-paid",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -4262,6 +3986,7 @@
       "/pages/saas-pricing-index",
       "/pages/saas-roi-calculator",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
       "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -4455,41 +4180,62 @@
     "outbound": [
       "/",
       "/about",
+      "/affiliate-disclosure",
+      "/categories",
       "/contact",
+      "/deal-radar",
+      "/methodology",
       "/pages/",
-      "/privacy"
+      "/pages/coupon-verification-policy",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-roi-calculator",
+      "/privacy",
+      "/shortlist"
     ]
   },
   "/deal-radar": {
     "inbound": [
       "/about",
       "/affiliate-disclosure",
-      "/categories",
-      "/categories",
+      "/contact",
       "/deal-radar",
       "/deal-radar",
       "/",
       "/methodology",
+      "/privacy",
       "/shortlist",
       "/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/coupon-verification-policy",
       "/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/free-trial-database",
       "/pages/free-trial-database",
+      "/pages/how-saaspare-ranks-tools",
       "/pages",
       "/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-changes",
       "/pages/saas-pricing-index",
       "/pages/saas-pricing-index",
+      "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/state-of-saas-pricing-2026",
+      "/pages/weekly-saas-deal-digest",
       "/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay"
     ],
     "outbound": [
       "/",
       "/about",
       "/affiliate-disclosure",
+      "/categories",
       "/contact",
       "/deal-radar",
       "/methodology",
@@ -4513,9 +4259,7 @@
     ]
   },
   "/media-kit": {
-    "inbound": [
-      "/about"
-    ],
+    "inbound": [],
     "outbound": [
       "https://saaspare.org",
       "https://saaspare.org/pages/",
@@ -4526,12 +4270,12 @@
     "inbound": [
       "/about",
       "/affiliate-disclosure",
-      "/categories",
-      "/categories",
+      "/contact",
       "/deal-radar",
       "/deal-radar",
       "/",
       "/methodology",
+      "/privacy",
       "/shortlist",
       "/pages/1password-business-vs-cloudflare-which-is-better-in-2026",
       "/pages/1password-business-vs-crowdstrike-which-is-better-in-2026",
@@ -4694,6 +4438,7 @@
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -4711,6 +4456,7 @@
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -4739,6 +4485,7 @@
       "/pages/best-project-management-software-in-2026-for-every-team-size",
       "/pages/best-rippling-alternatives-in-2026-free-paid",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -5352,6 +5099,7 @@
       "/pages/saas-pricing-index",
       "/pages/saas-pricing-index",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
       "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -5565,18 +5313,10 @@
   "/pages": {
     "inbound": [
       "/about",
-      "/about",
-      "/about",
-      "/about",
-      "/about",
-      "/about",
-      "/about",
       "/affiliate-disclosure",
       "/affiliate-disclosure",
       "/affiliate-disclosure",
       "/affiliate-disclosure",
-      "/categories",
-      "/categories",
       "/contact",
       "/deal-radar",
       "/deal-radar",
@@ -5768,6 +5508,7 @@
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -5785,6 +5526,7 @@
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -5813,6 +5555,7 @@
       "/pages/best-project-management-software-in-2026-for-every-team-size",
       "/pages/best-rippling-alternatives-in-2026-free-paid",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -6434,6 +6177,7 @@
       "/pages/saas-pricing-index",
       "/pages/saas-roi-calculator",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
       "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -6628,6 +6372,7 @@
       "/",
       "/about",
       "/affiliate-disclosure",
+      "/categories",
       "/contact",
       "/deal-radar",
       "/methodology",
@@ -6799,6 +6544,7 @@
       "https://saaspare.org/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "https://saaspare.org/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "https://saaspare.org/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "https://saaspare.org/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -6816,6 +6562,7 @@
       "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "https://saaspare.org/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "https://saaspare.org/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-modern-web-development-in-2025",
       "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -6844,6 +6591,7 @@
       "https://saaspare.org/pages/best-project-management-software-in-2026-for-every-team-size",
       "https://saaspare.org/pages/best-rippling-alternatives-in-2026-free-paid",
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -6958,6 +6706,7 @@
       "https://saaspare.org/pages/copy-ai-vs-weaviate-which-is-better-in-2026",
       "https://saaspare.org/pages/copy-ai-vs-weights-biases-which-is-better-in-2026",
       "https://saaspare.org/pages/copy-ai-vs-writesonic-which-is-better-in-2026",
+      "https://saaspare.org/pages/coupon-verification-policy",
       "https://saaspare.org/pages/crowdstrike-vs-cloudflare-which-is-better-in-2026",
       "https://saaspare.org/pages/crowdstrike-vs-duo-security-which-is-better-in-2026",
       "https://saaspare.org/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
@@ -7129,6 +6878,7 @@
       "https://saaspare.org/pages/hetzner-vs-supabase-which-is-better-in-2026",
       "https://saaspare.org/pages/hetzner-vs-vultr-which-is-better-in-2026",
       "https://saaspare.org/pages/hotjar-vs-segment-which-is-better-in-2026",
+      "https://saaspare.org/pages/how-saaspare-ranks-tools",
       "https://saaspare.org/pages/hubspot-coupon-code-promo-codes-2026-verified-discounts",
       "https://saaspare.org/pages/hubspot-crm-vs-close-which-is-better-in-2026",
       "https://saaspare.org/pages/hubspot-crm-vs-copper-which-is-better-in-2026",
@@ -7421,6 +7171,8 @@
       "https://saaspare.org/pages/render-vs-railway-which-is-better-in-2026",
       "https://saaspare.org/pages/render-vs-supabase-which-is-better-in-2026",
       "https://saaspare.org/pages/render-vs-vultr-which-is-better-in-2026",
+      "https://saaspare.org/pages/report-outdated-pricing",
+      "https://saaspare.org/pages/request-a-comparison",
       "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
       "https://saaspare.org/pages/retool-vs-netlify-which-is-better-in-2026",
       "https://saaspare.org/pages/retool-vs-pagerduty-which-is-better-in-2026",
@@ -7445,8 +7197,12 @@
       "https://saaspare.org/pages/roboform-vs-enpass-which-is-better-in-2026",
       "https://saaspare.org/pages/roboform-vs-password-boss-which-is-better-in-2026",
       "https://saaspare.org/pages/roboform-vs-sticky-password-which-is-better-in-2026",
+      "https://saaspare.org/pages/saas-glossary",
+      "https://saaspare.org/pages/saas-pricing-changes",
       "https://saaspare.org/pages/saas-pricing-index",
       "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/pages/saas-spend-audit",
+      "https://saaspare.org/pages/saas-stack-audit-checkout",
       "https://saaspare.org/pages/sage-vs-airbase-which-is-better-in-2026",
       "https://saaspare.org/pages/sage-vs-divvy-which-is-better-in-2026",
       "https://saaspare.org/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -7508,6 +7264,7 @@
       "https://saaspare.org/pages/spyfu-vs-clearscope-which-is-better-in-2026",
       "https://saaspare.org/pages/spyfu-vs-frase-io-which-is-better-in-2026",
       "https://saaspare.org/pages/spyfu-vs-rankmath-pro-which-is-better-in-2026",
+      "https://saaspare.org/pages/state-of-saas-pricing-2026",
       "https://saaspare.org/pages/sticky-password-vs-enpass-which-is-better-in-2026",
       "https://saaspare.org/pages/sticky-password-vs-password-boss-which-is-better-in-2026",
       "https://saaspare.org/pages/streamyard-vs-descript-which-is-better-in-2026",
@@ -7569,6 +7326,7 @@
       "https://saaspare.org/pages/webex-vs-riverside-fm-which-is-better-in-2026",
       "https://saaspare.org/pages/webex-vs-streamyard-which-is-better-in-2026",
       "https://saaspare.org/pages/webex-vs-whereby-which-is-better-in-2026",
+      "https://saaspare.org/pages/weekly-saas-deal-digest",
       "https://saaspare.org/pages/whereby-vs-around-which-is-better-in-2026",
       "https://saaspare.org/pages/whereby-vs-descript-which-is-better-in-2026",
       "https://saaspare.org/pages/whereby-vs-loom-which-is-better-in-2026",
@@ -7993,7 +7751,6 @@
   },
   "/pages/1password-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
@@ -8040,7 +7797,6 @@
   },
   "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
       "/pages/best-devops-tools-for-security-compliance-in-2025",
@@ -8064,7 +7820,6 @@
   },
   "/pages/1password-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
@@ -8120,7 +7875,6 @@
   },
   "/pages/1password-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
@@ -8172,7 +7926,6 @@
   },
   "/pages/1password-vs-bitwarden-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/1password-vs-dashlane-which-is-better-in-2026",
       "/pages/1password-vs-enpass-which-is-better-in-2026",
       "/pages/1password-vs-keeper-which-is-better-in-2026",
@@ -8574,7 +8327,6 @@
   },
   "/pages/7-best-adp-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked",
       "/pages/best-hr-recruiting-software-for-startups-in-2026-ranked",
@@ -8611,7 +8363,6 @@
   },
   "/pages/7-best-ahrefs-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
       "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
@@ -8676,7 +8427,7 @@
       "https://saaspare.org/methodology",
       "https://saaspare.org/pages/",
       "https://saaspare.org/pages/asana-vs-monday-com-2026-which-is-better",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -8694,7 +8445,6 @@
   },
   "/pages/7-best-aws-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
@@ -8718,11 +8468,11 @@
       "https://saaspare.org/pages/best-cloud-infra-software-for-enterprise",
       "https://saaspare.org/pages/best-cloud-infra-software-for-startups",
       "https://saaspare.org/pages/best-cloud-infrastructure-tools-for",
+      "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-secure-scalable",
       "https://saaspare.org/pages/best-google-cloud-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-heroku-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/linode-vs-google-cloud-2026-which-is-better",
-      "https://saaspare.org/pages/railway-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
       "https://saaspare.org/pages/supabase-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/vultr-vs-google-cloud-2026-which-is-better",
@@ -8733,7 +8483,6 @@
   },
   "/pages/7-best-bamboohr-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked",
       "/pages/best-hr-recruiting-software-for-startups-in-2026-ranked",
@@ -8838,7 +8587,6 @@
   },
   "/pages/7-best-clickup-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/best-project-management-software-for-startups-in-2026-ranked",
@@ -8880,8 +8628,6 @@
   },
   "/pages/7-best-crowdstrike-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
       "/pages/does-snyk-have-a-free-plan-2026-full-breakdown",
@@ -8897,7 +8643,7 @@
       "https://saaspare.org/contact",
       "https://saaspare.org/methodology",
       "https://saaspare.org/pages/",
-      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants",
+      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "https://saaspare.org/pages/best-crowdstrike-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-cybersecurity-software-for-small-business",
       "https://saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
@@ -8954,7 +8700,6 @@
     "inbound": [
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
-      "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
@@ -8983,10 +8728,10 @@
       "https://saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
       "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering",
       "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation",
+      "https://saaspare.org/pages/best-devtools-for-modern-web-development-in-2025",
       "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent",
       "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development",
-      "https://saaspare.org/pages/best-devtools-software-for-startups-in-2026-ranked",
       "https://saaspare.org/pages/best-github-copilot-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/saas-roi-calculator",
@@ -8996,7 +8741,6 @@
   },
   "/pages/7-best-freshbooks-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-finance-ops-software-for-small-business-in-2026-ranked",
       "/pages",
@@ -9072,10 +8816,8 @@
   },
   "/pages/7-best-github-copilot-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
-      "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
@@ -9103,12 +8845,12 @@
       "https://saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
       "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering",
       "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation",
+      "https://saaspare.org/pages/best-devtools-for-modern-web-development-in-2025",
       "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent",
       "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development",
       "https://saaspare.org/pages/best-devtools-software-for-startups-in-2026-ranked",
       "https://saaspare.org/pages/best-github-copilot-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/linear-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/saas-roi-calculator",
       "https://saaspare.org/privacy",
       "https://saaspare.org/shortlist"
@@ -9139,11 +8881,11 @@
       "https://saaspare.org/pages/best-google-analytics-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-power-bi-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
       "https://saaspare.org/pages/best-tableau-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/fullstory-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/hotjar-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/hotjar-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
@@ -9175,11 +8917,11 @@
       "https://saaspare.org/pages/best-cloud-infra-software-for-enterprise",
       "https://saaspare.org/pages/best-cloud-infra-software-for-startups",
       "https://saaspare.org/pages/best-cloud-infrastructure-tools-for",
+      "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-secure-scalable",
       "https://saaspare.org/pages/best-google-cloud-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-heroku-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/linode-vs-google-cloud-2026-which-is-better",
-      "https://saaspare.org/pages/railway-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
       "https://saaspare.org/pages/supabase-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/vultr-vs-google-cloud-2026-which-is-better",
@@ -9190,7 +8932,6 @@
   },
   "/pages/7-best-google-meet-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
       "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
       "/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
@@ -9247,11 +8988,11 @@
       "https://saaspare.org/pages/best-cloud-infra-software-for-enterprise",
       "https://saaspare.org/pages/best-cloud-infra-software-for-startups",
       "https://saaspare.org/pages/best-cloud-infrastructure-tools-for",
+      "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-secure-scalable",
       "https://saaspare.org/pages/best-google-cloud-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-heroku-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/linode-vs-google-cloud-2026-which-is-better",
-      "https://saaspare.org/pages/railway-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
       "https://saaspare.org/pages/supabase-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/vultr-vs-google-cloud-2026-which-is-better",
@@ -9262,7 +9003,6 @@
   },
   "/pages/7-best-hubspot-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/7-best-marketo-alternatives-in-2026-free-paid",
       "/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked",
@@ -9342,7 +9082,6 @@
   },
   "/pages/7-best-jira-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/best-project-management-software-for-startups-in-2026-ranked",
@@ -9421,7 +9160,6 @@
   },
   "/pages/7-best-mailchimp-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked",
       "/pages/best-marketing-automation-software-for-small-business-in-2026-ranked",
@@ -9499,7 +9237,6 @@
   },
   "/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
       "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
       "/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
@@ -9534,7 +9271,6 @@
   },
   "/pages/7-best-monday-com-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/best-project-management-software-for-startups-in-2026-ranked",
@@ -9617,7 +9353,6 @@
   },
   "/pages/7-best-nordlayer-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
       "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
       "/pages",
@@ -9653,8 +9388,6 @@
   },
   "/pages/7-best-okta-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
       "/pages/does-snyk-have-a-free-plan-2026-full-breakdown",
@@ -9671,7 +9404,7 @@
       "https://saaspare.org/contact",
       "https://saaspare.org/methodology",
       "https://saaspare.org/pages/",
-      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants",
+      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "https://saaspare.org/pages/best-crowdstrike-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-cybersecurity-software-for-small-business",
       "https://saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
@@ -9748,11 +9481,11 @@
       "https://saaspare.org/pages/best-google-analytics-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-power-bi-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
       "https://saaspare.org/pages/best-tableau-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/fullstory-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/hotjar-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/hotjar-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
@@ -9762,7 +9495,6 @@
   },
   "/pages/7-best-quickbooks-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-finance-ops-software-for-small-business-in-2026-ranked",
       "/pages",
@@ -9799,7 +9531,6 @@
   },
   "/pages/7-best-salesforce-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
       "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown",
@@ -9862,8 +9593,8 @@
       "https://saaspare.org/methodology",
       "https://saaspare.org/pages/",
       "https://saaspare.org/pages/ahrefs-vs-frase-io-2026-which-is-better",
-      "https://saaspare.org/pages/best-ahrefs-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-moz-pro-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-semrush-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-surfer-seo-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/clearscope-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/frase-io-vs-rankmath-pro-2026-which-is-better",
@@ -9887,6 +9618,7 @@
     "outbound": [
       "/go/bigcommerce?utm_source=saaspare&utm_medium=affiliate&utm_campaign=alternatives&utm_content=bigcommerce",
       "/go/gumroad?utm_source=saaspare&utm_medium=affiliate&utm_campaign=alternatives&utm_content=gumroad",
+      "/go/shopify?utm_source=saaspare&utm_medium=affiliate&utm_campaign=alternatives&utm_content=shopify",
       "https://saaspare.org",
       "https://saaspare.org/about",
       "https://saaspare.org/affiliate-disclosure",
@@ -9912,7 +9644,6 @@
   },
   "/pages/7-best-splunk-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
       "/pages/does-snyk-have-a-free-plan-2026-full-breakdown",
@@ -9929,7 +9660,7 @@
       "https://saaspare.org/contact",
       "https://saaspare.org/methodology",
       "https://saaspare.org/pages/",
-      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants",
+      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "https://saaspare.org/pages/best-crowdstrike-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-cybersecurity-software-for-small-business",
       "https://saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
@@ -9948,7 +9679,6 @@
   },
   "/pages/7-best-surfer-seo-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
       "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
@@ -10013,11 +9743,11 @@
       "https://saaspare.org/pages/best-google-analytics-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-power-bi-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
       "https://saaspare.org/pages/best-tableau-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/fullstory-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/hotjar-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/hotjar-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
@@ -10096,7 +9826,6 @@
   },
   "/pages/7-best-xero-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-finance-ops-software-for-small-business-in-2026-ranked",
       "/pages",
@@ -10132,7 +9861,6 @@
   },
   "/pages/7-best-zoho-crm-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
       "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown",
@@ -10172,7 +9900,6 @@
   },
   "/pages/7-best-zoom-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
       "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
       "/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
@@ -10206,7 +9933,6 @@
   },
   "/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked",
       "/pages/best-marketing-automation-software-for-small-business-in-2026-ranked",
       "/pages/does-brevo-have-a-free-plan-2026-full-breakdown",
@@ -10239,7 +9965,6 @@
   },
   "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/saas-pricing-changes",
       "/pages/saas-pricing-index"
@@ -10259,7 +9984,6 @@
   },
   "/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/7-best-marketo-alternatives-in-2026-free-paid",
       "/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked",
@@ -10379,7 +10103,6 @@
   },
   "/pages/activecampaign-vs-drip-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/getresponse-vs-brevo-which-is-better-in-2026",
       "/pages/getresponse-vs-convertkit-which-is-better-in-2026",
       "/pages/getresponse-vs-drip-which-is-better-in-2026",
@@ -10582,7 +10305,6 @@
   },
   "/pages/agiloft-vs-icertis-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-legal-compliance-software-for-startups-in-2026-ranked",
       "/pages/docusign-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/docusign-review-2026-is-it-worth-it-honest-verdict",
@@ -10621,7 +10343,6 @@
   },
   "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
       "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
       "/pages/does-mangools-have-a-free-plan-2026-full-breakdown",
@@ -10658,7 +10379,6 @@
   },
   "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
       "/pages/ahrefs-vs-semrush-which-is-better-in-2026",
@@ -10709,7 +10429,6 @@
   },
   "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
@@ -10790,7 +10509,6 @@
   },
   "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work",
@@ -11058,7 +10776,6 @@
   },
   "/pages/ahrefs-vs-spyfu-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-vs-clearscope-which-is-better-in-2026",
       "/pages/ahrefs-vs-rankmath-pro-which-is-better-in-2026",
       "/pages",
@@ -11147,7 +10864,6 @@
   },
   "/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/saas-pricing-index"
@@ -11169,7 +10885,6 @@
   },
   "/pages/amplitude-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
       "/pages/does-amplitude-have-a-free-plan-2026-full-breakdown",
@@ -11325,7 +11040,6 @@
   },
   "/pages/amplitude-vs-hotjar-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/amplitude-vs-segment-which-is-better-in-2026",
       "/pages/databox-vs-looker-which-is-better-in-2026",
       "/pages/databox-vs-power-bi-which-is-better-in-2026",
@@ -11652,7 +11366,6 @@
   },
   "/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked",
       "/pages/cohere-vs-hugging-face-which-is-better-in-2026",
       "/pages/cohere-vs-weights-biases-which-is-better-in-2026",
@@ -11812,7 +11525,6 @@
   },
   "/pages/around-vs-streamyard-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/around-vs-descript-which-is-better-in-2026",
       "/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
       "/pages",
@@ -11851,7 +11563,6 @@
   },
   "/pages/asana-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/best-project-management-software-for-startups-in-2026-ranked",
       "/pages/clickup-coupon-code-promo-codes-2026-verified-discounts",
@@ -11889,7 +11600,6 @@
   },
   "/pages/asana-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/asana-vs-basecamp-which-is-better-in-2026",
       "/pages/asana-vs-clickup-which-is-better-in-2026",
       "/pages/asana-vs-jira-which-is-better-in-2026",
@@ -11948,7 +11658,6 @@
   },
   "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
       "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/clickup-review-2026-is-it-worth-it-honest-verdict",
@@ -12012,7 +11721,6 @@
   },
   "/pages/asana-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/best-monday-com-alternatives-in-2026-free-paid",
@@ -12125,7 +11833,6 @@
   },
   "/pages/asana-vs-jira-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/asana-vs-basecamp-which-is-better-in-2026",
       "/pages/asana-vs-smartsheet-which-is-better-in-2026",
       "/pages/asana-vs-todoist-which-is-better-in-2026",
@@ -12184,7 +11891,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -12572,7 +12279,6 @@
   },
   "/pages/aws-vs-render-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/aws-vs-google-cloud-which-is-better-in-2026",
       "/pages/aws-vs-linode-which-is-better-in-2026",
       "/pages/aws-vs-railway-which-is-better-in-2026",
@@ -12692,7 +12398,6 @@
   },
   "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked",
       "/pages/best-hr-recruiting-software-for-startups-in-2026-ranked",
       "/pages/deel-coupon-code-promo-codes-2026-verified-discounts",
@@ -12725,7 +12430,6 @@
   },
   "/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/deel-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages",
@@ -12750,7 +12454,6 @@
   },
   "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked",
       "/pages/best-hr-recruiting-software-for-startups-in-2026-ranked",
@@ -12939,7 +12642,6 @@
   },
   "/pages/bamboohr-vs-lattice-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-culture-amp-which-is-better-in-2026",
       "/pages",
       "/pages/rippling-vs-culture-amp-which-is-better-in-2026",
@@ -13176,7 +12878,6 @@
   },
   "/pages/basecamp-vs-todoist-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/clickup-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
@@ -13254,7 +12955,6 @@
   },
   "/pages/best-1password-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
@@ -13367,7 +13067,6 @@
   },
   "/pages/best-agentic-development-tools-for-engineering-teams-in-2025": {
     "inbound": [
-      "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages"
@@ -13477,6 +13176,9 @@
   },
   "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025": {
     "inbound": [
+      "/pages/7-best-crowdstrike-alternatives-in-2026-free-paid",
+      "/pages/7-best-okta-alternatives-in-2026-free-paid",
+      "/pages/7-best-splunk-alternatives-in-2026-free-paid",
       "/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
       "/pages"
     ],
@@ -13488,19 +13190,19 @@
       "https://saaspare.org/contact",
       "https://saaspare.org/methodology",
       "https://saaspare.org/pages/",
-      "https://saaspare.org/pages/7-best-crowdstrike-alternatives-in-2026-free-paid",
-      "https://saaspare.org/pages/7-best-okta-alternatives-in-2026-free-paid",
-      "https://saaspare.org/pages/7-best-splunk-alternatives-in-2026-free-paid",
-      "https://saaspare.org/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
-      "https://saaspare.org/pages/cloudflare-vs-duo-security-which-is-better-in-2026",
-      "https://saaspare.org/pages/does-snyk-have-a-free-plan-2026-full-breakdown",
-      "https://saaspare.org/pages/qualys-vs-duo-security-which-is-better-in-2026",
-      "https://saaspare.org/pages/qualys-vs-sentinelone-which-is-better-in-2026",
-      "https://saaspare.org/pages/qualys-vs-tenable-which-is-better-in-2026",
+      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants",
+      "https://saaspare.org/pages/best-crowdstrike-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-cybersecurity-software-for-small-business",
+      "https://saaspare.org/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
+      "https://saaspare.org/pages/best-okta-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-splunk-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/qualys-vs-duo-security-2026-which-is-better",
+      "https://saaspare.org/pages/qualys-vs-sentinelone-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
-      "https://saaspare.org/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
-      "https://saaspare.org/pages/tenable-vs-duo-security-which-is-better-in-2026",
-      "https://saaspare.org/pages/tenable-vs-sentinelone-which-is-better-in-2026",
+      "https://saaspare.org/pages/sentinelone-vs-duo-security-2026-which-is-better",
+      "https://saaspare.org/pages/snyk-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/tenable-vs-duo-security-2026-which-is-better",
+      "https://saaspare.org/pages/tenable-vs-sentinelone-2026-which-is-better",
       "https://saaspare.org/privacy",
       "https://saaspare.org/shortlist"
     ]
@@ -13533,7 +13235,6 @@
   },
   "/pages/best-asana-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
@@ -13782,6 +13483,37 @@
       "https://saaspare.org/shortlist"
     ]
   },
+  "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more": {
+    "inbound": [
+      "/pages/7-best-aws-alternatives-in-2026-free-paid",
+      "/pages/7-best-google-cloud-alternatives-in-2026-free-paid",
+      "/pages/7-best-heroku-alternatives-in-2026-free-paid",
+      "/pages"
+    ],
+    "outbound": [
+      "https://saaspare.org",
+      "https://saaspare.org/about",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/best-aws-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-cloud-infra-software-for-enterprise",
+      "https://saaspare.org/pages/best-cloud-infra-software-for-startups",
+      "https://saaspare.org/pages/best-cloud-infrastructure-tools-for",
+      "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-secure-scalable",
+      "https://saaspare.org/pages/best-google-cloud-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-heroku-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/linode-vs-google-cloud-2026-which-is-better",
+      "https://saaspare.org/pages/railway-vs-google-cloud-2026-which-is-better",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/pages/supabase-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/vultr-vs-google-cloud-2026-which-is-better",
+      "https://saaspare.org/pages/vultr-vs-linode-2026-which-is-better",
+      "https://saaspare.org/privacy",
+      "https://saaspare.org/shortlist"
+    ]
+  },
   "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025": {
     "inbound": [
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
@@ -13939,7 +13671,6 @@
   },
   "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked": {
     "inbound": [
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
       "/pages"
     ],
@@ -13974,6 +13705,7 @@
       "/pages/7-best-crowdstrike-alternatives-in-2026-free-paid",
       "/pages/7-best-okta-alternatives-in-2026-free-paid",
       "/pages/7-best-splunk-alternatives-in-2026-free-paid",
+      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages"
     ],
     "outbound": [
@@ -14002,7 +13734,6 @@
   },
   "/pages/best-datadog-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025",
       "/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025",
       "/pages/best-datadog-alternatives-in-2026-free-paid",
@@ -14054,7 +13785,6 @@
   },
   "/pages/best-deel-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-deel-which-is-better-in-2026",
       "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
       "/pages/bamboohr-vs-gusto-which-is-better-in-2026",
@@ -14102,7 +13832,6 @@
   "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025": {
     "inbound": [
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
-      "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages"
@@ -14176,6 +13905,8 @@
     "inbound": [
       "/pages/7-best-datadog-alternatives-in-2026-free-paid",
       "/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
+      "/pages/best-devops-tools-for-agile-workflows-in-2026",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages"
     ],
@@ -14186,18 +13917,18 @@
       "https://saaspare.org/contact",
       "https://saaspare.org/methodology",
       "https://saaspare.org/pages/",
-      "https://saaspare.org/pages/7-best-datadog-alternatives-in-2026-free-paid",
-      "https://saaspare.org/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
-      "https://saaspare.org/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
-      "https://saaspare.org/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
-      "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
-      "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation-in-2025",
-      "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
-      "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
+      "https://saaspare.org/pages/best-agentic-development-tools-for-engineering-teams",
+      "https://saaspare.org/pages/best-datadog-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-developer-velocity-tools-for-engineering-leaders",
+      "https://saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
+      "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering",
+      "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation",
+      "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent",
+      "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development",
       "https://saaspare.org/pages/best-devtools-software-for-startups-in-2026-ranked",
-      "https://saaspare.org/pages/datadog-promo-codes-discounts-for-2026-save-on-software",
-      "https://saaspare.org/pages/does-linear-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
-      "https://saaspare.org/pages/does-sentry-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
+      "https://saaspare.org/pages/best-github-copilot-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/linear-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/saas-roi-calculator",
       "https://saaspare.org/privacy",
       "https://saaspare.org/shortlist"
@@ -14228,7 +13959,6 @@
   },
   "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025": {
     "inbound": [
-      "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages"
     ],
@@ -14301,7 +14031,6 @@
     "inbound": [
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
-      "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
@@ -14408,10 +14137,42 @@
       "https://saaspare.org/privacy"
     ]
   },
+  "/pages/best-devtools-for-modern-web-development-in-2025": {
+    "inbound": [
+      "/pages/7-best-datadog-alternatives-in-2026-free-paid",
+      "/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
+      "/pages"
+    ],
+    "outbound": [
+      "https://saaspare.org",
+      "https://saaspare.org/about",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/best-agentic-development-tools-for-engineering-teams",
+      "https://saaspare.org/pages/best-datadog-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-developer-velocity-tools-for-engineering-leaders",
+      "https://saaspare.org/pages/best-devops-tools-for-agile-workflows-in-2026",
+      "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering",
+      "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation",
+      "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025",
+      "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent",
+      "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development",
+      "https://saaspare.org/pages/best-devtools-software-for-startups-in-2026-ranked",
+      "https://saaspare.org/pages/best-github-copilot-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/linear-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/privacy",
+      "https://saaspare.org/shortlist"
+    ]
+  },
   "/pages/best-devtools-for-multi-agent-workflows-in-2025": {
     "inbound": [
       "/pages/7-best-datadog-alternatives-in-2026-free-paid",
       "/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
+      "/pages/best-devops-tools-for-agile-workflows-in-2026",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages"
     ],
     "outbound": [
@@ -14442,7 +14203,6 @@
     "inbound": [
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
-      "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -14476,7 +14236,6 @@
     "inbound": [
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
-      "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -14508,13 +14267,13 @@
   },
   "/pages/best-devtools-software-for-startups-in-2026-ranked": {
     "inbound": [
-      "/pages/7-best-datadog-alternatives-in-2026-free-paid",
       "/pages/7-best-github-copilot-alternatives-in-2026-free-paid",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
       "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -14960,7 +14719,6 @@
   },
   "/pages/best-linear-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025",
       "/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025",
       "/pages/best-datadog-alternatives-in-2026-free-paid",
@@ -15139,7 +14897,6 @@
   },
   "/pages/best-moz-pro-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-hubspot-alternatives-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
       "/pages/best-salesforce-alternatives-in-2026-free-paid",
@@ -15199,7 +14956,6 @@
   },
   "/pages/best-notion-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
@@ -15287,7 +15043,6 @@
   },
   "/pages/best-pipedrive-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-startups-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
       "/pages/best-salesforce-alternatives-in-2026-free-paid",
@@ -15451,7 +15206,6 @@
   },
   "/pages/best-rippling-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-culture-amp-which-is-better-in-2026",
       "/pages/bamboohr-vs-deel-which-is-better-in-2026",
       "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
@@ -15539,6 +15293,37 @@
       "https://saaspare.org/privacy"
     ]
   },
+  "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025": {
+    "inbound": [
+      "/pages/7-best-google-analytics-alternatives-in-2026-free-paid",
+      "/pages/7-best-power-bi-alternatives-in-2026-free-paid",
+      "/pages/7-best-tableau-alternatives-in-2026-free-paid",
+      "/pages"
+    ],
+    "outbound": [
+      "https://saaspare.org",
+      "https://saaspare.org/about",
+      "https://saaspare.org/affiliate-disclosure",
+      "https://saaspare.org/contact",
+      "https://saaspare.org/methodology",
+      "https://saaspare.org/pages/",
+      "https://saaspare.org/pages/amplitude-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/amplitude-review-2026-honest-pricing-verdict",
+      "https://saaspare.org/pages/best-google-analytics-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-power-bi-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-saas-analytics-software-for-small-business",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-business-in-2025",
+      "https://saaspare.org/pages/best-tableau-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/fullstory-vs-segment-2026-which-is-better",
+      "https://saaspare.org/pages/hotjar-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/hotjar-vs-segment-2026-which-is-better",
+      "https://saaspare.org/pages/saas-roi-calculator",
+      "https://saaspare.org/privacy",
+      "https://saaspare.org/shortlist"
+    ]
+  },
   "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025": {
     "inbound": [
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
@@ -15575,6 +15360,7 @@
       "/pages/7-best-google-analytics-alternatives-in-2026-free-paid",
       "/pages/7-best-power-bi-alternatives-in-2026-free-paid",
       "/pages/7-best-tableau-alternatives-in-2026-free-paid",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages"
     ],
     "outbound": [
@@ -15606,6 +15392,7 @@
       "/pages/7-best-google-analytics-alternatives-in-2026-free-paid",
       "/pages/7-best-power-bi-alternatives-in-2026-free-paid",
       "/pages/7-best-tableau-alternatives-in-2026-free-paid",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages"
@@ -15681,7 +15468,6 @@
   },
   "/pages/best-semrush-alternatives-in-2026-free-paid": {
     "inbound": [
-      "/categories",
       "/pages/best-moz-pro-alternatives-in-2026-free-paid",
       "/pages/best-surfer-seo-alternatives-in-2026-free-paid",
       "/pages",
@@ -16653,7 +16439,6 @@
   },
   "/pages/bitwarden-vs-password-boss-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/dashlane-vs-enpass-which-is-better-in-2026",
       "/pages/dashlane-vs-keeper-which-is-better-in-2026",
       "/pages/dashlane-vs-nordpass-which-is-better-in-2026",
@@ -16896,7 +16681,6 @@
   },
   "/pages/brevo-vs-marketo-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/brevo-vs-convertkit-which-is-better-in-2026",
       "/pages/brevo-vs-drip-which-is-better-in-2026",
       "/pages/brevo-vs-pardot-which-is-better-in-2026",
@@ -16977,7 +16761,6 @@
   },
   "/pages/brex-vs-airbase-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/airbase-vs-divvy-which-is-better-in-2026",
       "/pages/brex-vs-divvy-which-is-better-in-2026",
       "/pages",
@@ -17261,7 +17044,6 @@
   },
   "/pages/chargebee-vs-recurly-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked",
       "/pages/chargebee-vs-bold-commerce-which-is-better-in-2026",
       "/pages/chargebee-vs-recharge-which-is-better-in-2026",
@@ -17581,7 +17363,6 @@
   },
   "/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-vs-moz-pro-which-is-better-in-2026",
       "/pages/ahrefs-vs-se-ranking-which-is-better-in-2026",
       "/pages/ahrefs-vs-semrush-which-is-better-in-2026",
@@ -17647,7 +17428,6 @@
   },
   "/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/does-mangools-have-a-free-plan-2026-full-breakdown",
       "/pages/does-se-ranking-have-a-free-plan-2026-full-breakdown",
@@ -17684,7 +17464,6 @@
   },
   "/pages/clickup-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/does-asana-have-a-free-plan-2026-full-breakdown",
       "/pages/does-clickup-have-a-free-plan-2026-full-breakdown",
@@ -17720,7 +17499,6 @@
   },
   "/pages/clickup-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
@@ -17764,7 +17542,6 @@
   },
   "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
@@ -17840,7 +17617,6 @@
   },
   "/pages/clickup-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
@@ -17973,7 +17749,6 @@
   },
   "/pages/clickup-vs-smartsheet-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/clickup-vs-todoist-which-is-better-in-2026",
       "/pages",
       "/pages/jira-vs-basecamp-which-is-better-in-2026",
@@ -18257,7 +18032,6 @@
   },
   "/pages/close-vs-keap-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/close-vs-insightly-which-is-better-in-2026",
       "/pages/close-vs-nutshell-which-is-better-in-2026",
       "/pages/copper-vs-insightly-which-is-better-in-2026",
@@ -18489,7 +18263,6 @@
     "inbound": [
       "/pages/aws-vs-contabo-which-is-better-in-2026",
       "/pages/aws-vs-digitalocean-which-is-better-in-2026",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/contabo-vs-digitalocean-which-is-better-in-2026",
       "/pages/contabo-vs-vultr-which-is-better-in-2026",
@@ -18528,7 +18301,6 @@
   },
   "/pages/cloudflare-vs-qualys-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/cloudflare-vs-duo-security-which-is-better-in-2026",
       "/pages/cloudflare-vs-sentinelone-which-is-better-in-2026",
       "/pages/cloudflare-vs-tenable-which-is-better-in-2026",
@@ -18729,7 +18501,6 @@
   },
   "/pages/concord-vs-agiloft-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/agiloft-vs-icertis-which-is-better-in-2026",
       "/pages/best-legal-compliance-software-for-startups-in-2026-ranked",
       "/pages/concord-vs-icertis-which-is-better-in-2026",
@@ -19487,7 +19258,6 @@
   },
   "/pages/contractbook-vs-juro-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/contractbook-vs-agiloft-which-is-better-in-2026",
       "/pages/contractbook-vs-concord-which-is-better-in-2026",
       "/pages/contractbook-vs-conga-which-is-better-in-2026",
@@ -19528,7 +19298,6 @@
   },
   "/pages/convertkit-vs-drip-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/7-best-marketo-alternatives-in-2026-free-paid",
       "/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict",
@@ -19569,7 +19338,6 @@
   },
   "/pages/copper-vs-insightly-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
       "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown",
@@ -19681,7 +19449,6 @@
   },
   "/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked",
       "/pages"
     ],
@@ -19712,7 +19479,6 @@
   },
   "/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/saas-pricing-index"
     ],
@@ -19820,7 +19586,6 @@
   },
   "/pages/copy-ai-vs-hugging-face-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/pinecone-vs-anthropic-claude-which-is-better-in-2026",
       "/pages/pinecone-vs-cohere-which-is-better-in-2026",
@@ -20046,14 +19811,19 @@
   },
   "/pages/coupon-verification-policy": {
     "inbound": [
+      "/about",
+      "/contact",
       "/",
+      "/privacy",
       "/pages/coupon-verification-policy",
       "/pages/how-saaspare-ranks-tools",
+      "/pages",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
       "/pages/saas-glossary",
       "/pages/saas-pricing-changes",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/state-of-saas-pricing-2026",
       "/pages/weekly-saas-deal-digest"
     ],
@@ -20063,22 +19833,20 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
       "/privacy",
       "/shortlist"
     ]
   },
   "/pages/crowdstrike-vs-cloudflare-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/cloudflare-vs-qualys-which-is-better-in-2026",
       "/pages/cloudflare-vs-sentinelone-which-is-better-in-2026",
       "/pages/cloudflare-vs-tenable-which-is-better-in-2026",
@@ -20844,7 +20612,6 @@
   },
   "/pages/datadog-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
@@ -20880,7 +20647,6 @@
   },
   "/pages/datadog-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025",
       "/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025",
       "/pages/best-datadog-alternatives-in-2026-free-paid",
@@ -20927,7 +20693,6 @@
   },
   "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/saas-pricing-index"
     ],
@@ -20995,7 +20760,6 @@
   },
   "/pages/datadog-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025",
       "/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025",
@@ -21132,7 +20896,6 @@
   },
   "/pages/datadog-vs-terraform-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/amplitude-vs-databox-which-is-better-in-2026",
       "/pages/amplitude-vs-fullstory-which-is-better-in-2026",
       "/pages/amplitude-vs-heap-which-is-better-in-2026",
@@ -21213,7 +20976,6 @@
   },
   "/pages/deel-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
       "/pages/bamboohr-vs-lever-which-is-better-in-2026",
       "/pages/bamboohr-vs-rippling-which-is-better-in-2026",
@@ -21255,7 +21017,6 @@
   },
   "/pages/deel-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages",
       "/pages/saas-pricing-index"
@@ -21277,7 +21038,6 @@
   },
   "/pages/deel-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-deel-which-is-better-in-2026",
       "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
       "/pages/bamboohr-vs-gusto-which-is-better-in-2026",
@@ -21321,7 +21081,6 @@
   },
   "/pages/deel-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
       "/pages/bamboohr-vs-gusto-which-is-better-in-2026",
       "/pages/bamboohr-vs-lever-which-is-better-in-2026",
@@ -21365,7 +21124,6 @@
   },
   "/pages/deel-vs-culture-amp-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
       "/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked",
@@ -21493,7 +21251,6 @@
   },
   "/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages",
       "/pages/saas-pricing-index",
@@ -21760,7 +21517,6 @@
   },
   "/pages/digitalocean-vs-vultr-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/aws-vs-contabo-which-is-better-in-2026",
       "/pages/aws-vs-digitalocean-which-is-better-in-2026",
       "/pages/aws-vs-google-cloud-which-is-better-in-2026",
@@ -21997,7 +21753,6 @@
   },
   "/pages/docusign-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-legal-compliance-software-for-startups-in-2026-ranked",
       "/pages",
       "/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts"
@@ -22028,7 +21783,6 @@
   },
   "/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/saas-pricing-index"
     ],
@@ -22047,7 +21801,6 @@
   },
   "/pages/docusign-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-legal-compliance-software-for-startups-in-2026-ranked",
       "/pages/docusign-coupon-code-promo-codes-2026-verified-discounts",
       "/pages",
@@ -22241,7 +21994,6 @@
   },
   "/pages/docusign-vs-docusign-clm-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/docusign-vs-agiloft-which-is-better-in-2026",
       "/pages/docusign-vs-concord-which-is-better-in-2026",
       "/pages/docusign-vs-conga-which-is-better-in-2026",
@@ -22444,7 +22196,6 @@
   },
   "/pages/does-amplitude-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
       "/pages"
@@ -22474,7 +22225,6 @@
   },
   "/pages/does-asana-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/best-project-management-software-for-startups-in-2026-ranked",
       "/pages"
@@ -22505,7 +22255,6 @@
   },
   "/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-password-managers-software-for-business-in-2026-ranked",
       "/pages"
     ],
@@ -22534,7 +22283,6 @@
   },
   "/pages/does-brevo-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked",
       "/pages/best-marketing-automation-software-for-small-business-in-2026-ranked",
       "/pages"
@@ -22565,7 +22313,6 @@
   },
   "/pages/does-clickup-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/best-project-management-software-for-startups-in-2026-ranked",
       "/pages/does-asana-have-a-free-plan-2026-full-breakdown",
@@ -22598,7 +22345,6 @@
   },
   "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
       "/pages"
     ],
@@ -22627,7 +22373,6 @@
   },
   "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
       "/pages"
@@ -22658,7 +22403,6 @@
   },
   "/pages/does-hotjar-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
       "/pages/does-amplitude-have-a-free-plan-2026-full-breakdown",
@@ -22720,7 +22464,6 @@
   },
   "/pages/does-hubspot-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked",
       "/pages/best-marketing-automation-software-for-small-business-in-2026-ranked",
       "/pages/does-brevo-have-a-free-plan-2026-full-breakdown",
@@ -22752,7 +22495,6 @@
   },
   "/pages/does-linear-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
@@ -22788,7 +22530,6 @@
   },
   "/pages/does-loom-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
       "/pages"
     ],
@@ -22817,7 +22558,6 @@
   },
   "/pages/does-mangools-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
       "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
       "/pages"
@@ -22848,7 +22588,6 @@
   },
   "/pages/does-monday-com-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/best-project-management-software-for-startups-in-2026-ranked",
       "/pages"
@@ -22879,7 +22618,6 @@
   },
   "/pages/does-notion-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
       "/pages/best-project-management-software-for-startups-in-2026-ranked",
       "/pages/does-asana-have-a-free-plan-2026-full-breakdown",
@@ -22912,7 +22650,6 @@
   },
   "/pages/does-pipedrive-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
       "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown",
@@ -22945,7 +22682,6 @@
   },
   "/pages/does-se-ranking-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
       "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
       "/pages/does-mangools-have-a-free-plan-2026-full-breakdown",
@@ -22977,7 +22713,6 @@
   },
   "/pages/does-sentry-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
@@ -23013,8 +22748,6 @@
   },
   "/pages/does-snyk-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages"
     ],
@@ -23043,7 +22776,6 @@
   },
   "/pages/does-supabase-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
@@ -23138,7 +22870,6 @@
   },
   "/pages/does-zoom-have-a-free-plan-2026-full-breakdown": {
     "inbound": [
-      "/categories",
       "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
       "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
       "/pages"
@@ -23728,7 +23459,6 @@
   },
   "/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
       "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
@@ -23771,19 +23501,10 @@
   "/pages/free-trial-database": {
     "inbound": [
       "/",
-      "/pages/coupon-verification-policy",
       "/pages/free-trial-database",
       "/pages/free-trial-database",
-      "/pages/how-saaspare-ranks-tools",
       "/pages",
-      "/pages/report-outdated-pricing",
-      "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-changes",
-      "/pages/saas-pricing-index",
-      "/pages/saas-spend-audit",
-      "/pages/state-of-saas-pricing-2026",
-      "/pages/weekly-saas-deal-digest"
+      "/pages/saas-pricing-index"
     ],
     "outbound": [
       "/",
@@ -23836,7 +23557,6 @@
   },
   "/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
@@ -23895,7 +23615,6 @@
   },
   "/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict",
       "/pages",
@@ -23922,7 +23641,6 @@
   },
   "/pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
@@ -23978,7 +23696,6 @@
   },
   "/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
@@ -24280,7 +23997,6 @@
   },
   "/pages/freshbooks-vs-ramp-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/freshbooks-vs-airbase-which-is-better-in-2026",
       "/pages/freshbooks-vs-brex-which-is-better-in-2026",
       "/pages/freshbooks-vs-divvy-which-is-better-in-2026",
@@ -24517,7 +24233,6 @@
   },
   "/pages/freshsales-vs-nutshell-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/copper-vs-insightly-which-is-better-in-2026",
       "/pages/copper-vs-keap-which-is-better-in-2026",
       "/pages/copper-vs-nutshell-which-is-better-in-2026",
@@ -24555,7 +24270,6 @@
   },
   "/pages/fullstory-vs-hotjar-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/amplitude-review-2026-is-it-worth-it-honest-verdict",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -25314,7 +25028,6 @@
   },
   "/pages/github-copilot-vs-terraform-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/jetbrains-vs-datadog-which-is-better-in-2026",
       "/pages/jetbrains-vs-linear-which-is-better-in-2026",
@@ -25546,7 +25259,6 @@
   },
   "/pages/google-meet-vs-streamyard-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/google-meet-vs-descript-which-is-better-in-2026",
       "/pages",
       "/pages/webex-vs-around-which-is-better-in-2026",
@@ -25732,7 +25444,6 @@
   },
   "/pages/greenhouse-vs-gusto-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/greenhouse-vs-culture-amp-which-is-better-in-2026",
       "/pages/greenhouse-vs-deel-which-is-better-in-2026",
       "/pages/greenhouse-vs-lattice-which-is-better-in-2026",
@@ -26120,7 +25831,6 @@
   },
   "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/saas-pricing-index"
     ],
@@ -26218,7 +25928,6 @@
   },
   "/pages/gusto-vs-lattice-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
       "/pages/deel-vs-culture-amp-which-is-better-in-2026",
@@ -26295,7 +26004,6 @@
   },
   "/pages/heap-vs-fullstory-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/amplitude-review-2026-is-it-worth-it-honest-verdict",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
       "/pages/does-amplitude-have-a-free-plan-2026-full-breakdown",
@@ -26647,7 +26355,6 @@
   },
   "/pages/hotjar-vs-segment-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/amplitude-review-2026-is-it-worth-it-honest-verdict",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -26681,14 +26388,19 @@
   },
   "/pages/how-saaspare-ranks-tools": {
     "inbound": [
+      "/about",
+      "/contact",
       "/",
+      "/privacy",
       "/pages/coupon-verification-policy",
       "/pages/how-saaspare-ranks-tools",
+      "/pages",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
       "/pages/saas-glossary",
       "/pages/saas-pricing-changes",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/state-of-saas-pricing-2026",
       "/pages/weekly-saas-deal-digest"
     ],
@@ -26698,15 +26410,14 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
       "/privacy",
       "/shortlist"
     ]
@@ -26870,7 +26581,6 @@
   },
   "/pages/hubspot-crm-vs-insightly-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/pipedrive-vs-close-which-is-better-in-2026",
       "/pages/pipedrive-vs-copper-which-is-better-in-2026",
@@ -27074,7 +26784,6 @@
   },
   "/pages/hubspot-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/best-hubspot-alternatives-in-2026-free-paid",
       "/pages/free-trial-database",
       "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
@@ -27117,7 +26826,6 @@
   },
   "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
@@ -27145,7 +26853,6 @@
   },
   "/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/best-hubspot-alternatives-in-2026-free-paid",
       "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
@@ -27189,7 +26896,6 @@
   },
   "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-hubspot-alternatives-in-2026-free-paid",
       "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
@@ -27728,7 +27434,6 @@
   },
   "/pages/ironclad-vs-concord-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/contractbook-vs-agiloft-which-is-better-in-2026",
       "/pages/contractbook-vs-concord-which-is-better-in-2026",
       "/pages/contractbook-vs-conga-which-is-better-in-2026",
@@ -27970,7 +27675,6 @@
   },
   "/pages/jasper-ai-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked",
       "/pages"
     ],
@@ -28000,7 +27704,6 @@
   },
   "/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages",
       "/pages/saas-pricing-index"
@@ -28022,7 +27725,6 @@
   },
   "/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked",
       "/pages",
       "/pages/jasper-ai-coupon-code-promo-codes-2026-verified-discounts"
@@ -28255,7 +27957,6 @@
   },
   "/pages/jasper-ai-vs-weaviate-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/jasper-ai-vs-anthropic-claude-which-is-better-in-2026",
       "/pages/jasper-ai-vs-cohere-which-is-better-in-2026",
@@ -28835,7 +28536,6 @@
   },
   "/pages/jira-vs-wrike-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/basecamp-vs-smartsheet-which-is-better-in-2026",
       "/pages/basecamp-vs-todoist-which-is-better-in-2026",
       "/pages/basecamp-vs-wrike-which-is-better-in-2026",
@@ -28914,7 +28614,6 @@
   },
   "/pages/juro-vs-concord-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/agiloft-vs-icertis-which-is-better-in-2026",
       "/pages/concord-vs-agiloft-which-is-better-in-2026",
       "/pages/concord-vs-conga-which-is-better-in-2026",
@@ -29032,7 +28731,6 @@
   },
   "/pages/keap-vs-insightly-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
       "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown",
@@ -29302,7 +29000,6 @@
   },
   "/pages/klaviyo-vs-convertkit-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict",
       "/pages/convertkit-vs-drip-which-is-better-in-2026",
       "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
@@ -29780,7 +29477,6 @@
   },
   "/pages/lattice-vs-culture-amp-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
       "/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked",
@@ -29822,7 +29518,6 @@
   },
   "/pages/lever-vs-culture-amp-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
       "/pages/deel-vs-culture-amp-which-is-better-in-2026",
       "/pages/deel-vs-lattice-which-is-better-in-2026",
@@ -30000,7 +29695,6 @@
   },
   "/pages/linear-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025",
       "/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025",
       "/pages/best-datadog-alternatives-in-2026-free-paid",
@@ -30050,7 +29744,6 @@
   },
   "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages",
@@ -30074,7 +29767,6 @@
   },
   "/pages/linear-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025",
       "/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025",
       "/pages/best-datadog-alternatives-in-2026-free-paid",
@@ -30127,7 +29819,6 @@
   },
   "/pages/linear-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025",
       "/pages/best-backend-development-tools-for-modern-b2b-saas-in-2025",
       "/pages/best-datadog-alternatives-in-2026-free-paid",
@@ -30341,7 +30032,6 @@
   },
   "/pages/linear-vs-sentry-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/linear-vs-datadog-which-is-better-in-2026",
       "/pages/linear-vs-pagerduty-which-is-better-in-2026",
@@ -30742,7 +30432,6 @@
   },
   "/pages/loom-vs-riverside-fm-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
       "/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
       "/pages",
@@ -30991,7 +30680,6 @@
   },
   "/pages/mailchimp-vs-marketo-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/brevo-vs-klaviyo-which-is-better-in-2026",
       "/pages/brevo-vs-marketo-which-is-better-in-2026",
       "/pages/getresponse-vs-brevo-which-is-better-in-2026",
@@ -31139,7 +30827,6 @@
   },
   "/pages/mangools-vs-rankmath-pro-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026",
       "/pages",
@@ -31350,7 +31037,6 @@
   },
   "/pages/microsoft-teams-vs-descript-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/google-meet-vs-around-which-is-better-in-2026",
       "/pages/google-meet-vs-descript-which-is-better-in-2026",
       "/pages/google-meet-vs-loom-which-is-better-in-2026",
@@ -31615,7 +31301,7 @@
   },
   "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
+      "/",
       "/pages",
       "/pages/saas-pricing-index"
     ],
@@ -31756,7 +31442,6 @@
   },
   "/pages/mixpanel-vs-hotjar-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/databox-vs-fullstory-which-is-better-in-2026",
       "/pages/databox-vs-heap-which-is-better-in-2026",
       "/pages/databox-vs-hotjar-which-is-better-in-2026",
@@ -31958,7 +31643,6 @@
   },
   "/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/clickup-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/does-asana-have-a-free-plan-2026-full-breakdown",
@@ -31969,6 +31653,7 @@
       "/pages/notion-coupon-code-promo-codes-2026-verified-discounts"
     ],
     "outbound": [
+      "/go/asana?utm_source=saaspare&utm_medium=affiliate&utm_campaign=coupon&utm_content=asana",
       "/go/monday-com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=coupon&utm_content=monday-com",
       "https://saaspare.org",
       "https://saaspare.org/about",
@@ -31995,7 +31680,6 @@
   },
   "/pages/monday-com-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
@@ -32049,7 +31733,6 @@
   },
   "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages",
@@ -32068,7 +31751,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -32136,7 +31819,6 @@
   },
   "/pages/monday-com-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
@@ -32175,7 +31857,7 @@
       "https://saaspare.org/methodology",
       "https://saaspare.org/pages/",
       "https://saaspare.org/pages/asana-vs-monday-com-2026-which-is-better",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -32218,7 +31900,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-clickup-2026-which-is-better",
@@ -32255,7 +31937,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -32291,7 +31973,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -32327,7 +32009,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -32365,8 +32047,8 @@
       "https://saaspare.org/pages/",
       "https://saaspare.org/pages/asana-vs-monday-com-2026-which-is-better",
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -32382,7 +32064,6 @@
   },
   "/pages/monday-com-vs-todoist-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/clickup-vs-basecamp-which-is-better-in-2026",
       "/pages/clickup-vs-jira-which-is-better-in-2026",
       "/pages/clickup-vs-smartsheet-which-is-better-in-2026",
@@ -32407,7 +32088,7 @@
       "https://saaspare.org/pages/",
       "https://saaspare.org/pages/asana-vs-monday-com-2026-which-is-better",
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -32448,7 +32129,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -32486,7 +32167,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -32501,7 +32182,6 @@
   },
   "/pages/moz-pro-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
@@ -32553,7 +32233,6 @@
   },
   "/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-vs-mangools-which-is-better-in-2026",
       "/pages/ahrefs-vs-moz-pro-which-is-better-in-2026",
       "/pages/ahrefs-vs-se-ranking-which-is-better-in-2026",
@@ -32580,7 +32259,6 @@
   },
   "/pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
@@ -32645,7 +32323,6 @@
   },
   "/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
@@ -32768,11 +32445,11 @@
       "https://saaspare.org/pages/clearscope-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/frase-io-vs-rankmath-pro-2026-which-is-better",
       "https://saaspare.org/pages/mangools-vs-frase-io-2026-which-is-better",
+      "https://saaspare.org/pages/moz-pro-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
       "https://saaspare.org/pages/se-ranking-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/semrush-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/spyfu-vs-frase-io-2026-which-is-better",
-      "https://saaspare.org/pages/surfer-seo-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/privacy",
       "https://saaspare.org/shortlist"
     ]
@@ -32897,7 +32574,6 @@
   },
   "/pages/moz-pro-vs-spyfu-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/moz-pro-vs-clearscope-which-is-better-in-2026",
       "/pages/moz-pro-vs-rankmath-pro-which-is-better-in-2026",
@@ -33060,7 +32736,6 @@
   },
   "/pages/netlify-vs-sentry-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/amplitude-vs-databox-which-is-better-in-2026",
       "/pages/amplitude-vs-mixpanel-which-is-better-in-2026",
       "/pages/amplitude-vs-tableau-which-is-better-in-2026",
@@ -33250,7 +32925,6 @@
   },
   "/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
       "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
       "/pages"
@@ -33281,7 +32955,6 @@
   },
   "/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/saas-pricing-index"
     ],
@@ -33302,7 +32975,6 @@
   },
   "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
       "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
       "/pages",
@@ -33900,7 +33572,6 @@
   },
   "/pages/nordlayer-vs-tenable-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/1password-business-vs-cloudflare-which-is-better-in-2026",
       "/pages/1password-business-vs-crowdstrike-which-is-better-in-2026",
       "/pages/1password-business-vs-duo-security-which-is-better-in-2026",
@@ -34174,7 +33845,6 @@
   },
   "/pages/nordpass-vs-sticky-password-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/1password-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown",
       "/pages/enpass-vs-password-boss-which-is-better-in-2026",
@@ -34248,7 +33918,6 @@
   },
   "/pages/notion-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/asana-vs-clickup-which-is-better-in-2026",
       "/pages/best-asana-alternatives-in-2026-free-paid",
@@ -34286,7 +33955,6 @@
   },
   "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
@@ -34317,7 +33985,6 @@
   },
   "/pages/notion-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/asana-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
@@ -34364,7 +34031,6 @@
   },
   "/pages/notion-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/asana-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
@@ -34528,7 +34194,6 @@
   },
   "/pages/notion-vs-jira-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/jira-vs-basecamp-which-is-better-in-2026",
       "/pages/jira-vs-smartsheet-which-is-better-in-2026",
@@ -34731,7 +34396,6 @@
   },
   "/pages/nutshell-vs-insightly-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
       "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown",
@@ -34883,7 +34547,6 @@
   },
   "/pages/okta-vs-qualys-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/crowdstrike-vs-cloudflare-which-is-better-in-2026",
       "/pages/crowdstrike-vs-duo-security-which-is-better-in-2026",
       "/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
@@ -35247,7 +34910,6 @@
   },
   "/pages/paddle-vs-chargebee-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/chargebee-vs-bold-commerce-which-is-better-in-2026",
       "/pages/chargebee-vs-recharge-which-is-better-in-2026",
       "/pages/chargebee-vs-recurly-which-is-better-in-2026",
@@ -35454,7 +35116,6 @@
   },
   "/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-legal-compliance-software-for-startups-in-2026-ranked",
       "/pages"
     ],
@@ -35484,7 +35145,6 @@
   },
   "/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages",
@@ -35547,7 +35207,6 @@
   },
   "/pages/pandadoc-vs-concord-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/contractbook-vs-concord-which-is-better-in-2026",
       "/pages/contractbook-vs-docusign-clm-which-is-better-in-2026",
       "/pages/contractbook-vs-juro-which-is-better-in-2026",
@@ -36515,7 +36174,6 @@
   },
   "/pages/pipedrive-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-startups-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
       "/pages/best-salesforce-alternatives-in-2026-free-paid",
@@ -36560,7 +36218,6 @@
   },
   "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
@@ -36588,7 +36245,6 @@
   },
   "/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-startups-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
       "/pages/best-salesforce-alternatives-in-2026-free-paid",
@@ -36634,7 +36290,6 @@
   },
   "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-startups-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
       "/pages/best-salesforce-alternatives-in-2026-free-paid",
@@ -36687,7 +36342,6 @@
   },
   "/pages/pipedrive-vs-close-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/close-vs-freshsales-which-is-better-in-2026",
       "/pages",
       "/pages/pipedrive-vs-copper-which-is-better-in-2026",
@@ -37125,7 +36779,6 @@
       "/pages/aws-vs-hetzner-which-is-better-in-2026",
       "/pages/aws-vs-render-which-is-better-in-2026",
       "/pages/aws-vs-supabase-which-is-better-in-2026",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/contabo-vs-digitalocean-which-is-better-in-2026",
       "/pages/contabo-vs-vultr-which-is-better-in-2026",
@@ -37165,7 +36818,6 @@
       "/pages/aws-vs-digitalocean-which-is-better-in-2026",
       "/pages/aws-vs-hetzner-which-is-better-in-2026",
       "/pages/aws-vs-render-which-is-better-in-2026",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/contabo-vs-digitalocean-which-is-better-in-2026",
       "/pages/contabo-vs-vultr-which-is-better-in-2026",
@@ -37205,7 +36857,6 @@
       "/pages/aws-vs-contabo-which-is-better-in-2026",
       "/pages/aws-vs-digitalocean-which-is-better-in-2026",
       "/pages/aws-vs-hetzner-which-is-better-in-2026",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/contabo-vs-digitalocean-which-is-better-in-2026",
       "/pages/contabo-vs-vultr-which-is-better-in-2026",
@@ -37243,7 +36894,6 @@
   },
   "/pages/quickbooks-vs-airbase-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/airbase-vs-divvy-which-is-better-in-2026",
       "/pages",
       "/pages/netsuite-vs-airbase-which-is-better-in-2026",
@@ -37510,7 +37160,7 @@
   },
   "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
+      "/",
       "/pages",
       "/pages/saas-pricing-index"
     ],
@@ -37530,7 +37180,6 @@
   },
   "/pages/ramp-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-finance-ops-software-for-small-business-in-2026-ranked",
       "/pages",
@@ -37644,7 +37293,6 @@
   },
   "/pages/ramp-vs-divvy-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/brex-vs-airbase-which-is-better-in-2026",
       "/pages/brex-vs-divvy-which-is-better-in-2026",
       "/pages/brex-vs-netsuite-which-is-better-in-2026",
@@ -37887,7 +37535,6 @@
   },
   "/pages/recurly-vs-recharge-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/1password-business-vs-okta-which-is-better-in-2026",
       "/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked",
       "/pages",
@@ -37972,7 +37619,6 @@
   },
   "/pages/remote-com-vs-lattice-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
       "/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked",
@@ -38216,14 +37862,19 @@
   },
   "/pages/report-outdated-pricing": {
     "inbound": [
+      "/about",
+      "/contact",
       "/",
+      "/privacy",
       "/pages/coupon-verification-policy",
       "/pages/how-saaspare-ranks-tools",
+      "/pages",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
       "/pages/saas-glossary",
       "/pages/saas-pricing-changes",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/state-of-saas-pricing-2026",
       "/pages/weekly-saas-deal-digest"
     ],
@@ -38233,30 +37884,34 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
       "/pages/saas-pricing-changes",
-      "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
       "/privacy",
       "/shortlist"
     ]
   },
   "/pages/request-a-comparison": {
     "inbound": [
+      "/about",
+      "/contact",
       "/",
+      "/privacy",
       "/pages/coupon-verification-policy",
       "/pages/how-saaspare-ranks-tools",
+      "/pages",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
       "/pages/saas-glossary",
       "/pages/saas-pricing-changes",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/state-of-saas-pricing-2026",
       "/pages/weekly-saas-deal-digest"
     ],
@@ -38266,15 +37921,14 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
       "/privacy",
       "/shortlist"
     ]
@@ -38553,7 +38207,6 @@
   },
   "/pages/rippling-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-deel-which-is-better-in-2026",
       "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
       "/pages/bamboohr-vs-gusto-which-is-better-in-2026",
@@ -38602,7 +38255,6 @@
   },
   "/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/deel-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay",
@@ -38625,7 +38277,6 @@
   },
   "/pages/rippling-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-culture-amp-which-is-better-in-2026",
       "/pages/bamboohr-vs-deel-which-is-better-in-2026",
       "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
@@ -38678,7 +38329,6 @@
   },
   "/pages/rippling-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/bamboohr-vs-culture-amp-which-is-better-in-2026",
       "/pages/bamboohr-vs-deel-which-is-better-in-2026",
       "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
@@ -38885,7 +38535,6 @@
   },
   "/pages/rippling-vs-lattice-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/greenhouse-vs-deel-which-is-better-in-2026",
       "/pages/greenhouse-vs-gusto-which-is-better-in-2026",
       "/pages/greenhouse-vs-lever-which-is-better-in-2026",
@@ -39086,7 +38735,6 @@
   },
   "/pages/riverside-fm-vs-streamyard-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
       "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
       "/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
@@ -39246,15 +38894,7 @@
   "/pages/saas-glossary": {
     "inbound": [
       "/",
-      "/pages/coupon-verification-policy",
-      "/pages/how-saaspare-ranks-tools",
-      "/pages/report-outdated-pricing",
-      "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-changes",
-      "/pages/saas-spend-audit",
-      "/pages/state-of-saas-pricing-2026",
-      "/pages/weekly-saas-deal-digest"
+      "/pages"
     ],
     "outbound": [
       "/",
@@ -39262,15 +38902,14 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
       "/pages/weekly-saas-deal-digest",
       "/privacy",
       "/shortlist"
@@ -39279,6 +38918,7 @@
   "/pages/saas-pricing-changes": {
     "inbound": [
       "/",
+      "/pages",
       "/pages/report-outdated-pricing"
     ],
     "outbound": [
@@ -39287,20 +38927,19 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
       "/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/weekly-saas-deal-digest",
       "/privacy",
@@ -39310,19 +38949,11 @@
   "/pages/saas-pricing-index": {
     "inbound": [
       "/",
-      "/pages/coupon-verification-policy",
       "/pages/free-trial-database",
-      "/pages/how-saaspare-ranks-tools",
       "/pages",
-      "/pages/report-outdated-pricing",
-      "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-changes",
       "/pages/saas-pricing-index",
       "/pages/saas-pricing-index",
-      "/pages/saas-spend-audit",
-      "/pages/state-of-saas-pricing-2026",
-      "/pages/weekly-saas-deal-digest"
+      "/pages/state-of-saas-pricing-2026"
     ],
     "outbound": [
       "/",
@@ -39397,11 +39028,12 @@
     "inbound": [
       "/about",
       "/affiliate-disclosure",
-      "/categories",
+      "/contact",
       "/deal-radar",
       "/deal-radar",
       "/",
       "/methodology",
+      "/privacy",
       "/shortlist",
       "/pages/1password-business-vs-cloudflare-which-is-better-in-2026",
       "/pages/1password-business-vs-crowdstrike-which-is-better-in-2026",
@@ -39552,6 +39184,7 @@
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -39568,6 +39201,7 @@
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -39596,6 +39230,7 @@
       "/pages/best-project-management-software-in-2026-for-every-team-size",
       "/pages/best-rippling-alternatives-in-2026-free-paid",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -39707,6 +39342,7 @@
       "/pages/copy-ai-vs-weaviate-which-is-better-in-2026",
       "/pages/copy-ai-vs-weights-biases-which-is-better-in-2026",
       "/pages/copy-ai-vs-writesonic-which-is-better-in-2026",
+      "/pages/coupon-verification-policy",
       "/pages/crowdstrike-vs-cloudflare-which-is-better-in-2026",
       "/pages/crowdstrike-vs-duo-security-which-is-better-in-2026",
       "/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
@@ -39873,6 +39509,7 @@
       "/pages/hetzner-vs-supabase-which-is-better-in-2026",
       "/pages/hetzner-vs-vultr-which-is-better-in-2026",
       "/pages/hotjar-vs-segment-which-is-better-in-2026",
+      "/pages/how-saaspare-ranks-tools",
       "/pages/hubspot-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/hubspot-crm-vs-close-which-is-better-in-2026",
       "/pages/hubspot-crm-vs-copper-which-is-better-in-2026",
@@ -40161,6 +39798,8 @@
       "/pages/render-vs-railway-which-is-better-in-2026",
       "/pages/render-vs-supabase-which-is-better-in-2026",
       "/pages/render-vs-vultr-which-is-better-in-2026",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
       "/pages/retool-vs-datadog-which-is-better-in-2026",
       "/pages/retool-vs-netlify-which-is-better-in-2026",
       "/pages/retool-vs-pagerduty-which-is-better-in-2026",
@@ -40184,8 +39823,12 @@
       "/pages/roboform-vs-enpass-which-is-better-in-2026",
       "/pages/roboform-vs-password-boss-which-is-better-in-2026",
       "/pages/roboform-vs-sticky-password-which-is-better-in-2026",
+      "/pages/saas-glossary",
+      "/pages/saas-pricing-changes",
       "/pages/saas-pricing-index",
       "/pages/saas-roi-calculator",
+      "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
       "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -40238,6 +39881,7 @@
       "/pages/spyfu-vs-clearscope-which-is-better-in-2026",
       "/pages/spyfu-vs-frase-io-which-is-better-in-2026",
       "/pages/spyfu-vs-rankmath-pro-which-is-better-in-2026",
+      "/pages/state-of-saas-pricing-2026",
       "/pages/sticky-password-vs-enpass-which-is-better-in-2026",
       "/pages/sticky-password-vs-password-boss-which-is-better-in-2026",
       "/pages/streamyard-vs-descript-which-is-better-in-2026",
@@ -40297,6 +39941,7 @@
       "/pages/webex-vs-riverside-fm-which-is-better-in-2026",
       "/pages/webex-vs-streamyard-which-is-better-in-2026",
       "/pages/webex-vs-whereby-which-is-better-in-2026",
+      "/pages/weekly-saas-deal-digest",
       "/pages/whereby-vs-around-which-is-better-in-2026",
       "/pages/whereby-vs-descript-which-is-better-in-2026",
       "/pages/whereby-vs-loom-which-is-better-in-2026",
@@ -40375,7 +40020,9 @@
   },
   "/pages/saas-spend-audit": {
     "inbound": [
-      "/"
+      "/",
+      "/pages",
+      "/pages/saas-stack-audit-checkout"
     ],
     "outbound": [
       "/",
@@ -40383,15 +40030,43 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
+      "/pages/saas-stack-audit-checkout?tier=audit",
+      "/pages/saas-stack-audit-checkout?tier=brief",
+      "/pages/saas-stack-audit-checkout?tier=concierge",
+      "/privacy",
+      "/shortlist"
+    ]
+  },
+  "/pages/saas-stack-audit-checkout": {
+    "inbound": [
+      "/pages",
+      "/pages/saas-spend-audit",
+      "/pages/saas-spend-audit",
+      "/pages/saas-spend-audit"
+    ],
+    "outbound": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/categories",
+      "/contact",
+      "/deal-radar",
+      "/methodology",
+      "/pages/",
+      "/pages/coupon-verification-policy",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-roi-calculator",
+      "/pages/saas-spend-audit",
       "/privacy",
       "/shortlist"
     ]
@@ -40466,7 +40141,6 @@
   },
   "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-startups-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
       "/pages/best-salesforce-alternatives-in-2026-free-paid",
@@ -40515,7 +40189,6 @@
   },
   "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages",
       "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
@@ -40538,7 +40211,6 @@
   },
   "/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-startups-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
       "/pages/best-salesforce-alternatives-in-2026-free-paid",
@@ -40580,7 +40252,6 @@
   },
   "/pages/salesforce-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-crm-software-for-startups-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
       "/pages/best-salesforce-alternatives-in-2026-free-paid",
@@ -40915,7 +40586,6 @@
   },
   "/pages/salesforce-vs-pipedrive-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/hubspot-crm-vs-close-which-is-better-in-2026",
       "/pages/hubspot-crm-vs-freshsales-which-is-better-in-2026",
       "/pages/hubspot-crm-vs-pipedrive-which-is-better-in-2026",
@@ -40998,7 +40668,6 @@
   },
   "/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-vs-mangools-which-is-better-in-2026",
       "/pages/ahrefs-vs-moz-pro-which-is-better-in-2026",
       "/pages/ahrefs-vs-se-ranking-which-is-better-in-2026",
@@ -41026,7 +40695,6 @@
   },
   "/pages/se-ranking-vs-clearscope-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-ai-tutor-tools-for-education-in-2025",
       "/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026",
       "/pages",
@@ -41090,9 +40758,9 @@
       "https://saaspare.org/pages/best-surfer-seo-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/clearscope-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/frase-io-vs-rankmath-pro-2026-which-is-better",
+      "https://saaspare.org/pages/mangools-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/moz-pro-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/saas-roi-calculator",
-      "https://saaspare.org/pages/se-ranking-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/semrush-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/spyfu-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/surfer-seo-vs-frase-io-2026-which-is-better",
@@ -41215,7 +40883,6 @@
   },
   "/pages/semrush-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
       "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
       "/pages/does-mangools-have-a-free-plan-2026-full-breakdown",
@@ -41251,7 +40918,6 @@
   },
   "/pages/semrush-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/best-hubspot-alternatives-in-2026-free-paid",
       "/pages/best-moz-pro-alternatives-in-2026-free-paid",
       "/pages/best-pipedrive-alternatives-in-2026-free-paid",
@@ -41311,7 +40977,6 @@
   },
   "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
@@ -41383,7 +41048,6 @@
   },
   "/pages/semrush-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
@@ -41517,7 +41181,6 @@
   },
   "/pages/semrush-vs-moz-pro-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/",
       "/pages",
       "/pages/semrush-vs-clearscope-which-is-better-in-2026",
@@ -41659,7 +41322,6 @@
   },
   "/pages/sentinelone-vs-duo-security-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/aws-vs-contabo-which-is-better-in-2026",
       "/pages/aws-vs-digitalocean-which-is-better-in-2026",
       "/pages/aws-vs-hetzner-which-is-better-in-2026",
@@ -41667,7 +41329,6 @@
       "/pages/aws-vs-render-which-is-better-in-2026",
       "/pages/aws-vs-supabase-which-is-better-in-2026",
       "/pages/aws-vs-vultr-which-is-better-in-2026",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/contabo-vs-digitalocean-which-is-better-in-2026",
       "/pages/contabo-vs-vultr-which-is-better-in-2026",
@@ -41700,7 +41361,6 @@
   },
   "/pages/sentry-vs-datadog-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/amplitude-vs-databox-which-is-better-in-2026",
       "/pages/amplitude-vs-fullstory-which-is-better-in-2026",
       "/pages/amplitude-vs-heap-which-is-better-in-2026",
@@ -42389,7 +42049,6 @@
   },
   "/pages/smartsheet-vs-todoist-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/clickup-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/does-asana-have-a-free-plan-2026-full-breakdown",
@@ -42473,7 +42132,6 @@
   },
   "/pages/snyk-vs-duo-security-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/cloudflare-vs-duo-security-which-is-better-in-2026",
       "/pages/cloudflare-vs-qualys-which-is-better-in-2026",
       "/pages/cloudflare-vs-sentinelone-which-is-better-in-2026",
@@ -42702,7 +42360,6 @@
   },
   "/pages/spyfu-vs-rankmath-pro-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026",
       "/pages/does-se-ranking-have-a-free-plan-2026-full-breakdown",
@@ -42738,7 +42395,8 @@
   },
   "/pages/state-of-saas-pricing-2026": {
     "inbound": [
-      "/"
+      "/",
+      "/pages"
     ],
     "outbound": [
       "/",
@@ -42746,15 +42404,15 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
       "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
       "/privacy",
       "/shortlist"
     ]
@@ -42836,7 +42494,6 @@
   },
   "/pages/streamyard-vs-descript-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
       "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
       "/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
@@ -42961,7 +42618,6 @@
   },
   "/pages/stripe-vs-recharge-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked",
       "/pages/chargebee-vs-bold-commerce-which-is-better-in-2026",
       "/pages/chargebee-vs-recharge-which-is-better-in-2026",
@@ -43158,7 +42814,6 @@
   },
   "/pages/supabase-vs-vultr-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/does-supabase-have-a-free-plan-2026-full-breakdown",
       "/pages",
       "/pages/linode-vs-google-cloud-which-is-better-in-2026",
@@ -43197,7 +42852,6 @@
   },
   "/pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/categories",
       "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
       "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
       "/pages/does-mangools-have-a-free-plan-2026-full-breakdown",
@@ -43232,7 +42886,6 @@
   },
   "/pages/surfer-seo-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
@@ -43269,7 +42922,6 @@
   },
   "/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
@@ -43349,7 +43001,6 @@
   },
   "/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
@@ -43594,7 +43245,6 @@
   },
   "/pages/surfer-seo-vs-spyfu-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/mangools-vs-clearscope-which-is-better-in-2026",
       "/pages/mangools-vs-rankmath-pro-which-is-better-in-2026",
@@ -43983,7 +43633,6 @@
       "/pages/aws-vs-render-which-is-better-in-2026",
       "/pages/aws-vs-supabase-which-is-better-in-2026",
       "/pages/aws-vs-vultr-which-is-better-in-2026",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/contabo-vs-digitalocean-which-is-better-in-2026",
       "/pages/contabo-vs-vultr-which-is-better-in-2026",
@@ -44023,7 +43672,6 @@
       "/pages/aws-vs-railway-which-is-better-in-2026",
       "/pages/aws-vs-render-which-is-better-in-2026",
       "/pages/aws-vs-supabase-which-is-better-in-2026",
-      "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
       "/pages/contabo-vs-digitalocean-which-is-better-in-2026",
       "/pages/contabo-vs-vultr-which-is-better-in-2026",
@@ -44446,7 +44094,6 @@
   },
   "/pages/vercel-vs-netlify-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/datadog-vs-pagerduty-which-is-better-in-2026",
       "/pages",
       "/pages/netlify-vs-datadog-which-is-better-in-2026",
@@ -44604,7 +44251,6 @@
   },
   "/pages/vultr-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages"
     ],
     "outbound": [
@@ -44663,7 +44309,6 @@
   },
   "/pages/vultr-vs-linode-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/1password-vs-bitwarden-which-is-better-in-2026",
       "/pages/1password-vs-dashlane-which-is-better-in-2026",
       "/pages/1password-vs-keeper-which-is-better-in-2026",
@@ -45132,6 +44777,7 @@
   "/pages/weekly-saas-deal-digest": {
     "inbound": [
       "/",
+      "/pages",
       "/pages/saas-glossary",
       "/pages/saas-pricing-changes"
     ],
@@ -45141,15 +44787,14 @@
       "/affiliate-disclosure",
       "/categories",
       "/contact",
+      "/deal-radar",
       "/methodology",
       "/pages/",
       "/pages/coupon-verification-policy",
-      "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/report-outdated-pricing",
       "/pages/request-a-comparison",
-      "/pages/saas-glossary",
-      "/pages/saas-pricing-index",
+      "/pages/saas-roi-calculator",
       "/privacy",
       "/shortlist"
     ]
@@ -45678,7 +45323,6 @@
   },
   "/pages/workable-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages/deel-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages"
@@ -45928,7 +45572,6 @@
   },
   "/pages/workable-vs-remote-com-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/greenhouse-vs-culture-amp-which-is-better-in-2026",
       "/pages/greenhouse-vs-deel-which-is-better-in-2026",
       "/pages/greenhouse-vs-gusto-which-is-better-in-2026",
@@ -45968,7 +45611,6 @@
   },
   "/pages/wrike-vs-smartsheet-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/clickup-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/does-clickup-have-a-free-plan-2026-full-breakdown",
@@ -46213,7 +45855,6 @@
   },
   "/pages/writesonic-vs-pinecone-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/pinecone-vs-anthropic-claude-which-is-better-in-2026",
       "/pages/pinecone-vs-cohere-which-is-better-in-2026",
@@ -46365,7 +46006,6 @@
   },
   "/pages/xero-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/best-accounting-software-for-freelancers-in-2026",
       "/pages/best-freshbooks-alternatives-in-2026-free-paid",
       "/pages/best-xero-alternatives-in-2026-free-paid",
@@ -46412,7 +46052,6 @@
   },
   "/pages/xero-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/",
       "/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay",
@@ -46440,7 +46079,6 @@
   },
   "/pages/xero-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
@@ -46492,7 +46130,6 @@
   },
   "/pages/xero-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
@@ -46750,7 +46387,6 @@
   },
   "/pages/xero-vs-quickbooks-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/expensify-vs-airbase-which-is-better-in-2026",
       "/pages/expensify-vs-brex-which-is-better-in-2026",
       "/pages/expensify-vs-divvy-which-is-better-in-2026",
@@ -47076,7 +46712,6 @@
   },
   "/pages/zoho-crm-vs-nutshell-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/close-vs-copper-which-is-better-in-2026",
       "/pages/close-vs-freshsales-which-is-better-in-2026",
       "/pages/close-vs-insightly-which-is-better-in-2026",
@@ -47148,7 +46783,6 @@
   },
   "/pages/zoom-free-trial-2026-how-to-get-it-step-by-step": {
     "inbound": [
-      "/categories",
       "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/1password-promo-code-2026-discounts-deals-that-actually-work",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
@@ -47208,7 +46842,6 @@
   },
   "/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/categories",
       "/pages"
     ],
     "outbound": [
@@ -47228,7 +46861,6 @@
   },
   "/pages/zoom-promo-code-2026-discounts-deals-that-actually-work": {
     "inbound": [
-      "/categories",
       "/pages/best-zoom-alternatives-in-2026-free-paid",
       "/pages",
       "/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026",
@@ -47270,7 +46902,6 @@
   },
   "/pages/zoom-review-2026-is-it-worth-it-honest-verdict": {
     "inbound": [
-      "/categories",
       "/pages/best-zoom-alternatives-in-2026-free-paid",
       "/pages",
       "/pages/zoom-free-trial-2026-how-to-get-it-step-by-step",
@@ -47624,7 +47255,6 @@
   },
   "/pages/zoom-vs-whereby-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages",
       "/pages/microsoft-teams-vs-around-which-is-better-in-2026",
       "/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026",
@@ -47664,7 +47294,6 @@
   },
   "/pages/zscaler-vs-openvpn-which-is-better-in-2026": {
     "inbound": [
-      "/categories",
       "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
       "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
       "/pages",
@@ -47698,7 +47327,6 @@
     "inbound": [
       "/about",
       "/affiliate-disclosure",
-      "/categories",
       "/contact",
       "/deal-radar",
       "/",
@@ -47867,6 +47495,7 @@
       "/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked",
       "/pages/best-cloud-infra-software-for-startups-in-2026-ranked",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
       "/pages/best-crm-software-for-small-business-in-2026-ranked",
@@ -47884,6 +47513,7 @@
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
       "/pages/best-devtools-for-modern-b2b-engineering-teams-in-2025",
       "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
@@ -47912,6 +47542,7 @@
       "/pages/best-project-management-software-in-2026-for-every-team-size",
       "/pages/best-rippling-alternatives-in-2026-free-paid",
       "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -48521,6 +48152,7 @@
       "/pages/saas-pricing-changes",
       "/pages/saas-roi-calculator",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
       "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
@@ -48714,21 +48346,31 @@
     "outbound": [
       "/",
       "/about",
+      "/affiliate-disclosure",
+      "/categories",
       "/contact",
+      "/deal-radar",
+      "/methodology",
       "/pages/",
-      "/privacy"
+      "/pages/coupon-verification-policy",
+      "/pages/how-saaspare-ranks-tools",
+      "/pages/report-outdated-pricing",
+      "/pages/request-a-comparison",
+      "/pages/saas-roi-calculator",
+      "/privacy",
+      "/shortlist"
     ]
   },
   "/shortlist": {
     "inbound": [
       "/about",
       "/affiliate-disclosure",
-      "/categories",
-      "/categories",
+      "/contact",
       "/deal-radar",
       "/deal-radar",
       "/",
       "/methodology",
+      "/privacy",
       "/shortlist",
       "/pages/7-best-1password-alternatives-in-2026-free-paid",
       "/pages/7-best-adp-alternatives-in-2026-free-paid",
@@ -48782,15 +48424,18 @@
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
       "/pages/best-cloud-infrastructure-tools-for-2025-comparison-of-cloud-native-solutions",
+      "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more",
       "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
       "/pages/best-cybersecurity-tools-for-b2b-software-in-2025",
       "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
       "/pages/best-devops-tools-for-agile-workflows-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/best-devtools-for-developer-workflow-automation-in-2025",
+      "/pages/best-devtools-for-modern-web-development-in-2025",
       "/pages/best-devtools-for-multi-agent-workflows-in-2025",
       "/pages/best-devtools-for-secure-and-scalable-ai-agent-development-in-2025",
       "/pages/best-devtools-for-secure-autonomous-agent-development-in-2025",
+      "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025",
       "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
       "/pages/best-saas-analytics-tools-for-business-decision-making-in-2025",
       "/pages/best-saas-analytics-tools-for-business-in-2025",
@@ -48851,6 +48496,7 @@
       "/pages/saas-pricing-index",
       "/pages/saas-pricing-index",
       "/pages/saas-spend-audit",
+      "/pages/saas-stack-audit-checkout",
       "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/se-ranking-vs-frase-io-which-is-better-in-2026",
       "/pages/semrush-vs-frase-io-which-is-better-in-2026",

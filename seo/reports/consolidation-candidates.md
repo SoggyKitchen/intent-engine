@@ -29,6 +29,7 @@
 - Duplicate title: `Surfer SEO Promo Codes & Discounts 2026 | SaaSpare` -> /pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts, /pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate title: `Xero Promo Codes & Discounts 2026 | SaaSpare` -> /pages/xero-coupon-code-promo-codes-2026-verified-discounts, /pages/xero-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate title: `Zoom Promo Codes & Discounts 2026 | SaaSpare` -> /pages/zoom-coupon-code-promo-codes-2026-verified-discounts, /pages/zoom-promo-code-2026-discounts-deals-that-actually-work
+- Duplicate meta: `SaaSpare` -> /privacy, /pages/coupon-verification-policy
 - Duplicate meta: `Find working 1Password promo codes and discounts for 2026. Verified deals, annual plan sav` -> /pages/1password-coupon-code-promo-codes-2026-verified-discounts, /pages/1password-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate meta: `Find the best 1Password alternatives in 2026. We compare pricing, free plans, and key feat` -> /pages/7-best-1password-alternatives-in-2026-free-paid, /pages/best-1password-alternatives-in-2026-free-paid
 - Duplicate meta: `Find the best Asana alternatives in 2026. We compare pricing, free plans, and key features` -> /pages/7-best-asana-alternatives-in-2026-free-paid, /pages/best-asana-alternatives-in-2026-free-paid

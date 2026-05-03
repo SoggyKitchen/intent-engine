@@ -1,6 +1,54 @@
 [
   {
     "broken": [
+      "/categories"
+    ],
+    "path": "/about"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/affiliate-disclosure"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/contact"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/deal-radar"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/methodology"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/privacy"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/shortlist"
+  },
+  {
+    "broken": [
       "https://saaspare.org/pages/1password-promo-codes-discounts-2026",
       "https://saaspare.org/pages/best-1password-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-dashlane-alternatives-2026-free-paid-options",
@@ -53,7 +101,7 @@
   {
     "broken": [
       "https://saaspare.org/pages/asana-vs-monday-com-2026-which-is-better",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -77,7 +125,6 @@
       "https://saaspare.org/pages/best-google-cloud-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-heroku-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/linode-vs-google-cloud-2026-which-is-better",
-      "https://saaspare.org/pages/railway-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/supabase-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/vultr-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/vultr-vs-linode-2026-which-is-better"
@@ -154,7 +201,6 @@
   },
   {
     "broken": [
-      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants",
       "https://saaspare.org/pages/best-crowdstrike-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-cybersecurity-software-for-small-business",
       "https://saaspare.org/pages/best-okta-alternatives-2026-free-paid-options",
@@ -242,8 +288,7 @@
       "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation",
       "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent",
       "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development",
-      "https://saaspare.org/pages/best-github-copilot-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/linear-free-plan-2026-limits-what-softwareou-get"
+      "https://saaspare.org/pages/best-github-copilot-alternatives-2026-free-paid-options"
     ],
     "path": "/pages/7-best-github-copilot-alternatives-in-2026-free-paid"
   },
@@ -256,7 +301,6 @@
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams",
       "https://saaspare.org/pages/best-tableau-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/fullstory-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/hotjar-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/hotjar-vs-segment-2026-which-is-better"
     ],
@@ -272,7 +316,6 @@
       "https://saaspare.org/pages/best-google-cloud-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-heroku-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/linode-vs-google-cloud-2026-which-is-better",
-      "https://saaspare.org/pages/railway-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/supabase-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/vultr-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/vultr-vs-linode-2026-which-is-better"
@@ -306,7 +349,6 @@
       "https://saaspare.org/pages/best-google-cloud-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-heroku-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/linode-vs-google-cloud-2026-which-is-better",
-      "https://saaspare.org/pages/railway-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/supabase-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/vultr-vs-google-cloud-2026-which-is-better",
       "https://saaspare.org/pages/vultr-vs-linode-2026-which-is-better"
@@ -466,7 +508,6 @@
   },
   {
     "broken": [
-      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants",
       "https://saaspare.org/pages/best-crowdstrike-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-cybersecurity-software-for-small-business",
       "https://saaspare.org/pages/best-okta-alternatives-2026-free-paid-options",
@@ -506,7 +547,6 @@
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams",
       "https://saaspare.org/pages/best-tableau-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/fullstory-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/hotjar-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/hotjar-vs-segment-2026-which-is-better"
     ],
@@ -547,8 +587,8 @@
   {
     "broken": [
       "https://saaspare.org/pages/ahrefs-vs-frase-io-2026-which-is-better",
-      "https://saaspare.org/pages/best-ahrefs-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-moz-pro-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-semrush-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-surfer-seo-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/clearscope-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/frase-io-vs-rankmath-pro-2026-which-is-better",
@@ -580,7 +620,6 @@
   },
   {
     "broken": [
-      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants",
       "https://saaspare.org/pages/best-crowdstrike-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-cybersecurity-software-for-small-business",
       "https://saaspare.org/pages/best-okta-alternatives-2026-free-paid-options",
@@ -620,7 +659,6 @@
       "https://saaspare.org/pages/best-saas-analytics-software-for-small-business",
       "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams",
       "https://saaspare.org/pages/best-tableau-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/fullstory-vs-segment-2026-which-is-better",
       "https://saaspare.org/pages/hotjar-free-plan-2026-limits-what-softwareou-get",
       "https://saaspare.org/pages/hotjar-vs-segment-2026-which-is-better"
     ],
@@ -750,7 +788,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -779,6 +817,39 @@
   },
   {
     "broken": [
+      "https://saaspare.org/pages/best-ai-powered-cybersecurity-coding-assistants",
+      "https://saaspare.org/pages/best-crowdstrike-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-cybersecurity-software-for-small-business",
+      "https://saaspare.org/pages/best-okta-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-splunk-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/qualys-vs-duo-security-2026-which-is-better",
+      "https://saaspare.org/pages/qualys-vs-sentinelone-2026-which-is-better",
+      "https://saaspare.org/pages/sentinelone-vs-duo-security-2026-which-is-better",
+      "https://saaspare.org/pages/snyk-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/tenable-vs-duo-security-2026-which-is-better",
+      "https://saaspare.org/pages/tenable-vs-sentinelone-2026-which-is-better"
+    ],
+    "path": "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025"
+  },
+  {
+    "broken": [
+      "https://saaspare.org/pages/best-aws-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-cloud-infra-software-for-enterprise",
+      "https://saaspare.org/pages/best-cloud-infra-software-for-startups",
+      "https://saaspare.org/pages/best-cloud-infrastructure-tools-for",
+      "https://saaspare.org/pages/best-cloud-infrastructure-tools-for-secure-scalable",
+      "https://saaspare.org/pages/best-google-cloud-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-heroku-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/linode-vs-google-cloud-2026-which-is-better",
+      "https://saaspare.org/pages/railway-vs-google-cloud-2026-which-is-better",
+      "https://saaspare.org/pages/supabase-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/vultr-vs-google-cloud-2026-which-is-better",
+      "https://saaspare.org/pages/vultr-vs-linode-2026-which-is-better"
+    ],
+    "path": "/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more"
+  },
+  {
+    "broken": [
       "https://saaspare.org/pages/does-snyk-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
       "https://saaspare.org/pages/qualys-vs-duo-security-which-software-is-best-in-2026",
       "https://saaspare.org/pages/qualys-vs-sentinelone-which-software-is-best-in-2026",
@@ -791,11 +862,31 @@
   },
   {
     "broken": [
-      "https://saaspare.org/pages/datadog-promo-codes-discounts-for-2026-save-on-software",
-      "https://saaspare.org/pages/does-linear-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step",
-      "https://saaspare.org/pages/does-sentry-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step"
+      "https://saaspare.org/pages/best-agentic-development-tools-for-engineering-teams",
+      "https://saaspare.org/pages/best-datadog-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-developer-velocity-tools-for-engineering-leaders",
+      "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering",
+      "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation",
+      "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent",
+      "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development",
+      "https://saaspare.org/pages/best-github-copilot-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/linear-free-plan-2026-limits-what-softwareou-get"
     ],
     "path": "/pages/best-devops-tools-for-agile-workflows-in-2026"
+  },
+  {
+    "broken": [
+      "https://saaspare.org/pages/best-agentic-development-tools-for-engineering-teams",
+      "https://saaspare.org/pages/best-datadog-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-developer-velocity-tools-for-engineering-leaders",
+      "https://saaspare.org/pages/best-devtools-for-agentic-workflows-and-engineering",
+      "https://saaspare.org/pages/best-devtools-for-developer-workflow-automation",
+      "https://saaspare.org/pages/best-devtools-for-secure-and-scalable-ai-agent",
+      "https://saaspare.org/pages/best-devtools-for-secure-autonomous-agent-development",
+      "https://saaspare.org/pages/best-github-copilot-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/linear-free-plan-2026-limits-what-softwareou-get"
+    ],
+    "path": "/pages/best-devtools-for-modern-web-development-in-2025"
   },
   {
     "broken": [
@@ -803,6 +894,21 @@
       "https://saaspare.org/pages/does-sentry-have-a-free-plan-full-breakdown-free-trial-2026-get-started-step-by-step"
     ],
     "path": "/pages/best-devtools-for-multi-agent-workflows-in-2025"
+  },
+  {
+    "broken": [
+      "https://saaspare.org/pages/amplitude-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/amplitude-review-2026-honest-pricing-verdict",
+      "https://saaspare.org/pages/best-google-analytics-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-power-bi-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/best-saas-analytics-software-for-small-business",
+      "https://saaspare.org/pages/best-saas-analytics-tools-for-b2b-product-teams",
+      "https://saaspare.org/pages/best-tableau-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/fullstory-vs-segment-2026-which-is-better",
+      "https://saaspare.org/pages/hotjar-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/hotjar-vs-segment-2026-which-is-better"
+    ],
+    "path": "/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025"
   },
   {
     "broken": [
@@ -1015,6 +1121,12 @@
   },
   {
     "broken": [
+      "/categories"
+    ],
+    "path": "/pages/coupon-verification-policy"
+  },
+  {
+    "broken": [
       "https://saaspare.org/pages/bamboohr-vs-remote-com-2026-which-is-better",
       "https://saaspare.org/pages/best-adp-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-bamboohr-alternatives-2026-free-paid-options",
@@ -1066,6 +1178,7 @@
   },
   {
     "broken": [
+      "/categories",
       "/pages/activecampaign-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/bamboohr-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/docusign-free-trial-2026-how-to-get-it-step-by-step",
@@ -1129,6 +1242,18 @@
       "https://saaspare.org/pages/workable-vs-remote-com-2026-which-is-better"
     ],
     "path": "/pages/gusto-vs-remote-com-which-is-better-in-2026"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/pages/how-saaspare-ranks-tools"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/pages"
   },
   {
     "broken": [
@@ -1238,7 +1363,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -1252,7 +1377,7 @@
   {
     "broken": [
       "https://saaspare.org/pages/asana-vs-monday-com-2026-which-is-better",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -1273,7 +1398,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-clickup-2026-which-is-better",
@@ -1290,7 +1415,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -1307,7 +1432,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -1324,7 +1449,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -1338,8 +1463,8 @@
     "broken": [
       "https://saaspare.org/pages/asana-vs-monday-com-2026-which-is-better",
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -1355,7 +1480,7 @@
     "broken": [
       "https://saaspare.org/pages/asana-vs-monday-com-2026-which-is-better",
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -1375,7 +1500,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-review-2026-honest-pricing-verdict",
@@ -1391,7 +1516,7 @@
       "https://saaspare.org/pages/best-clickup-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-jira-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-monday-com-alternatives-2026-free-paid-options",
-      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-softwareou-get",
+      "https://saaspare.org/pages/monday-com-free-plan-2026-limits-what-project-managementou-get",
       "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-hidden-fees-explained",
       "https://saaspare.org/pages/monday-com-promo-codes-discounts-2026",
       "https://saaspare.org/pages/monday-com-vs-basecamp-2026-which-is-better",
@@ -1412,10 +1537,10 @@
       "https://saaspare.org/pages/clearscope-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/frase-io-vs-rankmath-pro-2026-which-is-better",
       "https://saaspare.org/pages/mangools-vs-frase-io-2026-which-is-better",
+      "https://saaspare.org/pages/moz-pro-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/se-ranking-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/semrush-vs-frase-io-2026-which-is-better",
-      "https://saaspare.org/pages/spyfu-vs-frase-io-2026-which-is-better",
-      "https://saaspare.org/pages/surfer-seo-vs-frase-io-2026-which-is-better"
+      "https://saaspare.org/pages/spyfu-vs-frase-io-2026-which-is-better"
     ],
     "path": "/pages/moz-pro-vs-frase-io-which-is-better-in-2026"
   },
@@ -1452,6 +1577,18 @@
       "https://saaspare.org/pages/workable-vs-remote-com-2026-which-is-better"
     ],
     "path": "/pages/remote-com-vs-lattice-which-is-better-in-2026"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/pages/report-outdated-pricing"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/pages/request-a-comparison"
   },
   {
     "broken": [
@@ -1506,6 +1643,13 @@
   },
   {
     "broken": [
+      "/categories"
+    ],
+    "path": "/pages/saas-glossary"
+  },
+  {
+    "broken": [
+      "/categories",
       "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/sentry-pricing-2026-plans-costs-what-you-actually-pay"
@@ -1514,6 +1658,7 @@
   },
   {
     "broken": [
+      "/categories",
       "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/brex-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/cloudflare-pricing-2026-plans-costs-what-you-actually-pay",
@@ -1531,6 +1676,18 @@
   },
   {
     "broken": [
+      "/categories"
+    ],
+    "path": "/pages/saas-spend-audit"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/pages/saas-stack-audit-checkout"
+  },
+  {
+    "broken": [
       "https://saaspare.org/pages/ahrefs-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/best-ahrefs-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-moz-pro-alternatives-2026-free-paid-options",
@@ -1538,8 +1695,8 @@
       "https://saaspare.org/pages/best-surfer-seo-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/clearscope-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/frase-io-vs-rankmath-pro-2026-which-is-better",
+      "https://saaspare.org/pages/mangools-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/moz-pro-vs-frase-io-2026-which-is-better",
-      "https://saaspare.org/pages/se-ranking-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/semrush-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/spyfu-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/surfer-seo-vs-frase-io-2026-which-is-better"
@@ -1582,6 +1739,12 @@
   },
   {
     "broken": [
+      "/categories"
+    ],
+    "path": "/pages/state-of-saas-pricing-2026"
+  },
+  {
+    "broken": [
       "https://saaspare.org/pages/ahrefs-vs-frase-io-2026-which-is-better",
       "https://saaspare.org/pages/best-ahrefs-alternatives-2026-free-paid-options",
       "https://saaspare.org/pages/best-moz-pro-alternatives-2026-free-paid-options",
@@ -1613,6 +1776,12 @@
       "https://saaspare.org/pages/zoom-vs-riverside-fm-2026-which-is-better"
     ],
     "path": "/pages/webex-vs-riverside-fm-which-is-better-in-2026"
+  },
+  {
+    "broken": [
+      "/categories"
+    ],
+    "path": "/pages/weekly-saas-deal-digest"
   },
   {
     "broken": [

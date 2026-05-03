@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "path": "/media-kit",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "https://saaspare.org",
+        "https://saaspare.org/pages/",
+        "https://saaspare.org/privacy"
+      ]
+    }
+  }
+]
