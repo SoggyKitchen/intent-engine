@@ -157,9 +157,13 @@ section[data-seo-related] a{font-size:.88rem}
     radial-gradient(520px 260px at 82% 8%,rgba(255,255,255,.045),transparent 70%);
   opacity:.72;
 }
-.page-hero > *,
-.ss-page-ambient > *{
+.page-hero-content,
+.ss-page-ambient > .page-hero-content{
   position:relative;
+}
+.page-hero-bg,.page-hero-dots,.page-hero-orb,.page-hero-orb2,
+.hero-bg,.hero-orb,.hero-orb2,.hero-floor,.hero-streak,.hero-grid{
+  position:absolute !important;
 }
 h1,
 .hero-title{
