@@ -29,23 +29,24 @@
 <meta name="google-adsense-account" content="ca-pub-9433840442322701">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#080810;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;line-height:1.7;overflow-x:hidden}
+body{font-family:'Inter',system-ui,sans-serif;background:#080810;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;line-height:1.7;overflow-x:hidden;font-feature-settings:'cv11','ss01','ss03'}
 a{color:inherit;text-decoration:none}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.85rem 2rem;display:flex;align-items:center;gap:6px;background:rgba(8,8,16,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06)}
+nav#nav{position:fixed !important;top:0;left:0;right:0;z-index:300;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}
+nav#nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}
 .logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}.wv{pointer-events:none;transition:opacity .3s}@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}.logo:hover .logo-mark{animation:none}.logo:hover .mark-top{transform:translateX(26px);filter:drop-shadow(-2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}.logo:hover .mark-bot{transform:translateX(-26px);filter:drop-shadow(2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}.logo:hover .wv,.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{opacity:0}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
 
-.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.5px;color:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.5px;color:#fff;font-family:'Inter',system-ui,sans-serif}
 .logo-text em{color:#e94560;font-style:normal}
 .nav-link{color:rgba(255,255,255,.42);font-size:.82rem;padding:.38rem .8rem;border-radius:8px;font-weight:500;transition:color .18s}
 .nav-link:hover{color:#fff}
@@ -88,6 +89,22 @@ tr:hover td{background:rgba(255,255,255,.03)}
 .tool-card:hover{border-color:rgba(233,69,96,.3)}
 .tool-card h2{border:none;padding:0;margin-bottom:.75rem}
 .tool-card p{color:rgba(255,255,255,.6);font-size:.9rem;margin-bottom:1rem}
+/* Review bars + stars (non-destructive, sit above pros/cons) */
+.score-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1rem;padding:.6rem .9rem;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:10px}
+.score-stars{color:#ffc84a;font-size:1.05rem;letter-spacing:2px;filter:drop-shadow(0 0 6px rgba(255,200,74,.32))}
+.score-stars .dim{color:rgba(255,200,74,.22);filter:none}
+.score-label{font-size:.78rem;color:rgba(255,255,255,.55);font-weight:600}
+.score-label strong{color:#fff;font-weight:800;font-size:.92rem;margin-right:.3rem}
+.bars-grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.2rem;margin:.6rem 0 1rem}
+.bar-row{display:flex;flex-direction:column;gap:3px}
+.bar-row .bar-meta{display:flex;justify-content:space-between;font-size:.72rem;color:rgba(255,255,255,.45);font-weight:600}
+.bar-row .bar-meta strong{color:#fff;font-weight:700}
+.bar-row .bar-track{background:rgba(255,255,255,.05);border-radius:4px;height:6px;overflow:hidden;position:relative}
+.bar-row .bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#34d399,#10b981);width:var(--w,0%);animation:cmpBarFill 1.1s cubic-bezier(.3,.9,.2,1) .15s both}
+.bar-row .bar-fill.warn{background:linear-gradient(90deg,#ffc864,#f5a623)}
+.bar-row .bar-fill.red{background:linear-gradient(90deg,#e94560,#c73652)}
+@keyframes cmpBarFill{from{width:0}to{width:var(--w)}}
+@media(max-width:520px){.bars-grid{grid-template-columns:1fr}}
 .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
 .pros{background:rgba(52,211,153,.07);border:1px solid rgba(52,211,153,.2);padding:1rem;border-radius:10px}
 .cons{background:rgba(233,69,96,.07);border:1px solid rgba(233,69,96,.18);padding:1rem;border-radius:10px}
@@ -184,34 +201,15 @@ footer p+p{margin-top:.5rem}
   .roi-cta{flex-direction:column;text-align:center}
   .page-hero{padding:6rem 1.25rem 2.5rem}
 
-
-.score-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 1rem;padding:.6rem .9rem;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:10px}
-.score-stars{color:#ffc84a;font-size:1.05rem;letter-spacing:2px;filter:drop-shadow(0 0 6px rgba(255,200,74,.32))}
-.score-stars .dim{color:rgba(255,200,74,.22);filter:none}
-.score-label{font-size:.78rem;color:rgba(255,255,255,.55);font-weight:600}
-.score-label strong{color:#fff;font-weight:800;font-size:.92rem;margin-right:.3rem}
-.bars-grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.2rem;margin:.6rem 0 1rem}
-.bar-row{display:flex;flex-direction:column;gap:3px}
-.bar-row .bar-meta{display:flex;justify-content:space-between;font-size:.72rem;color:rgba(255,255,255,.45);font-weight:600}
-.bar-row .bar-meta strong{color:#fff;font-weight:700}
-.bar-row .bar-track{background:rgba(255,255,255,.05);border-radius:4px;height:6px;overflow:hidden;position:relative}
-.bar-row .bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#34d399,#10b981);width:var(--w,0%);animation:cmpBarFill 1.1s cubic-bezier(.3,.9,.2,1) .15s both}
-.bar-row .bar-fill.warn{background:linear-gradient(90deg,#ffc864,#f5a623)}
-.bar-row .bar-fill.red{background:linear-gradient(90deg,#e94560,#c73652)}
-@keyframes cmpBarFill{from{width:0}to{width:var(--w)}}
-@media(max-width:520px){.bars-grid{grid-template-columns:1fr}}
 </style>
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Copy.ai Pricing 2026: Plans & Costs", "description": "Explore Copy.ai pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.", "datePublished": "2026-05-02", "dateModified": "2026-05-02", "author": {"@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org"}, "publisher": {"@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org", "logo": {"@type": "ImageObject", "url": "https://saaspare.org/og-default.png"}}, "mainEntityOfPage": "https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does Copy.ai cost per month?", "acceptedAnswer": {"@type": "Answer", "text": "The Pro plan costs $59/month if billed monthly, or $49/month when billed annually. Team plans start at $299/month for up to 5 users and scale with seat count and usage."}}, {"@type": "Question", "name": "Does Copy.ai have a free plan?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The free plan includes 2,000 words per month, access to core templates, and one brand voice profile \u2014 ideal for solopreneurs or testing the platform."}}, {"@type": "Question", "name": "Is Copy.ai worth the price?", "acceptedAnswer": {"@type": "Answer", "text": "For marketing teams producing 10+ pieces of content weekly, Copy.ai saves 10\u201315 hours/month per user. At $49/user/month, the ROI is strong for SMBs and agencies scaling content output."}}, {"@type": "Question", "name": "Can I get a Copy.ai discount?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Annual billing saves 17%. Startups in Y Combinator or Techstars get 50% off for 12 months. Nonprofits qualify for 25% off. Enterprise buyers can negotiate 10\u201320% off for 1-year commitments, especially at quarter-end."}}, {"@type": "Question", "name": "What's the cheapest Copy.ai plan?", "acceptedAnswer": {"@type": "Answer", "text": "The Free plan is the cheapest \u2014 $0 with 2,000 words/month. The paid Starter plan was retired in 2025; Pro is now the entry paid tier at $49/month (annual billing)."}}, {"@type": "Question", "name": "Does Copy.ai charge per user?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Pro plan is $49/user/month (annual) or $59/user/month (monthly). Team plans start at $299/month for 5 users ($59.80/user) and decrease per-seat cost at scale (e.g., 20 users at ~$45/user)."}}, {"@type": "Question", "name": "Are there hidden costs with Copy.ai?", "acceptedAnswer": {"@type": "Answer", "text": "No mandatory hidden fees. However, exceeding word limits costs $0.01 per additional word. API access and advanced SSO are only in Enterprise plans, which may require setup fees. No implementation costs for standard onboarding."}}, {"@type": "Question", "name": "How does Copy.ai pricing compare to competitors?", "acceptedAnswer": {"@type": "Answer", "text": "Copy.ai ($49/user) is priced similarly to Jasper ($49/user) and slightly below Copymatic ($39/user) but offers better UX and template depth. It\u2019s more affordable than enterprise tools like Anyword (from $199/user)."}}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://saaspare.org"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://saaspare.org/pages/"}, {"@type": "ListItem", "position": 3, "name": "Copy.ai Pricing 2026: Plans & Costs", "item": "https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay"}]}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Copy.ai Pricing 2026: Plans & Costs", "description": "Explore Copy.ai pricing in 2026: every plan, hidden fees, and true costs for teams. Find the best way to start and where to save.", "datePublished": "2026-05-03", "dateModified": "2026-05-03", "author": {"@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org"}, "publisher": {"@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org", "logo": {"@type": "ImageObject", "url": "https://saaspare.org/og-default.png"}}, "mainEntityOfPage": "https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay"}, {"@context": "https://schema.org", "@type": "Product", "name": "Copy.ai", "description": "AI-powered content generation platform designed for marketing teams, agencies, and content creators to scale copywriting, social media, SEO, and email campaigns with minimal effort.", "image": "https://saaspare.org/og-default.png", "brand": {"@type": "Brand", "name": "Copy.ai"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.5, "bestRating": 5, "worstRating": 1, "ratingCount": 1, "reviewCount": 1}, "review": {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": 4.5, "bestRating": 5}, "author": {"@type": "Organization", "name": "SaaSpare"}, "datePublished": "2026-05-03", "reviewBody": "AI-powered content generation platform designed for marketing teams, agencies, and content creators to scale copywriting, social media, SEO, and email campaigns with minimal effort. Intuitive interface with fast content generation Extensive template library for marketing use cases Volume-based pricing scales well for growing teams"}, "offers": {"@type": "Offer", "url": "/go/copy-ai?utm_source=saaspare&utm_medium=affiliate&utm_campaign=pricing&utm_content=copy-ai", "priceCurrency": "USD", "price": "0", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "Product", "name": "Jasper", "description": "A leading AI copywriting tool popular with enterprise marketing teams and agencies, offering advanced workflows, brand voice customization, and team collaboration features.", "image": "https://saaspare.org/og-default.png", "brand": {"@type": "Brand", "name": "Jasper"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.2, "bestRating": 5, "worstRating": 1, "ratingCount": 1, "reviewCount": 1}, "review": {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": 4.2, "bestRating": 5}, "author": {"@type": "Organization", "name": "SaaSpare"}, "datePublished": "2026-05-03", "reviewBody": "A leading AI copywriting tool popular with enterprise marketing teams and agencies, offering advanced workflows, brand voice customization, and team collaboration features. Cheaper for large teams with annual commitments Comparable features including brand voice and team permissions"}, "offers": {"@type": "Offer", "url": "https://www.jasper.ai?utm_source=saaspare&utm_medium=affiliate&utm_campaign=pricing&utm_content=jasper", "priceCurrency": "USD", "price": "0", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does Copy.ai cost per month?", "acceptedAnswer": {"@type": "Answer", "text": "The Pro plan is $49/month when billed annually, or $59/month monthly. The Team plan starts at $299/month for 5 users ($59.80 per user). Enterprise pricing is custom and based on usage and features."}}, {"@type": "Question", "name": "Does Copy.ai have a free plan?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The free plan includes 2,000 words per month, access to core templates, and one brand voice. No credit card required."}}, {"@type": "Question", "name": "Is Copy.ai worth the price?", "acceptedAnswer": {"@type": "Answer", "text": "For marketing teams producing 10+ pieces of content weekly, Copy.ai pays for itself in time saved. At $49/month, it replaces hours of drafting and ideation, especially for SMBs and agencies."}}, {"@type": "Question", "name": "Can I get a Copy.ai discount?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Annual billing saves 17% on the Pro plan. Startups in Y Combinator or Techstars can apply for a 50% discount for 12 months. Nonprofits qualify for 20% off. Negotiate custom discounts on Team and Enterprise plans, especially at renewal or end-of-quarter."}}, {"@type": "Question", "name": "What's the cheapest Copy.ai plan?", "acceptedAnswer": {"@type": "Answer", "text": "The free plan is the cheapest \u2014 $0 with 2,000 words/month. The Pro plan at $49/month is best for solopreneurs or freelancers needing unlimited words and advanced templates."}}, {"@type": "Question", "name": "Does Copy.ai charge per user?", "acceptedAnswer": {"@type": "Answer", "text": "The Pro plan is single-user only. The Team plan starts at 5 seats ($299/month) and scales incrementally. Enterprise plans offer flexible per-user pricing with volume discounts at 20+ seats."}}, {"@type": "Question", "name": "Are there hidden costs with Copy.ai?", "acceptedAnswer": {"@type": "Answer", "text": "No hidden fees for standard use. However, exceeding word limits on custom plans may incur overage charges. Implementation or onboarding fees apply only to Enterprise plans with SSO, API access, or dedicated support."}}, {"@type": "Question", "name": "How does Copy.ai pricing compare to competitors?", "acceptedAnswer": {"@type": "Answer", "text": "Copy.ai is competitively priced: Jasper starts at $49/month but charges $90/user on its Business plan. Copy.ai offers better per-user pricing at scale. Rytr starts at $29/month but lacks team collaboration tools."}}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://saaspare.org"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://saaspare.org/pages/"}, {"@type": "ListItem", "position": 3, "name": "Copy.ai Pricing 2026: Plans & Costs", "item": "https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay"}]}]</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
-<!-- backfilled-bars-v1 -->
-<!-- enhanced-v2 -->
 <!-- ga-events-v1 --><script defer src="/assets/saaspare-events.js"></script>
-<!-- rss-autodiscovery --><link rel="alternate" type="application/rss+xml" title="SaaSpare" href="/feed.xml">
 </head>
 <body>
 
-<nav>
+<nav id="nav">
   <a href="https://saaspare.org" class="logo">
     <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg>
     <span class="logo-text">Saa<em>Spare</em></span>
@@ -234,7 +232,7 @@ footer p+p{margin-top:.5rem}
   <h1>Copy.ai Pricing 2026: Plans & Costs</h1>
   <p class="subtitle">Every Copy.ai plan explained — plus what buyers actually pay after negotiation</p>
   <div class="trust-bar">
-    <span>Updated May 02, 2026</span>
+    <span>Updated May 03, 2026</span>
     <span>Pricing and feature research</span>
     <span>Buyer-focused summary</span>
     <span>Free to read</span>
@@ -262,7 +260,7 @@ footer p+p{margin-top:.5rem}
       
       <tr>
         <td><strong>Starter Plan</strong></td>
-        <td>Free</td><td>$39/month</td>
+        <td>Free (2,000 words/month)</td><td>$49/month</td>
       </tr>
       
       <tr>
@@ -277,7 +275,7 @@ footer p+p{margin-top:.5rem}
       
       <tr>
         <td><strong>Free Trial</strong></td>
-        <td>14 days (no credit card)</td><td>7 days (credit card required)</td>
+        <td>14 days full access</td><td>7 days</td>
       </tr>
       
       <tr>
@@ -303,11 +301,23 @@ footer p+p{margin-top:.5rem}
   <div class="tool-card section">
     <h2>Copy.ai <span class="winner-badge">Top Pick</span></h2>
     <p>AI-powered content generation platform designed for marketing teams, agencies, and content creators to scale copywriting, social media, SEO, and email campaigns with minimal effort.</p>
-    <div class="score-row"><span class="score-label"><strong>4.5</strong>/ 5 overall</span><span class="score-stars" aria-label="4.5 out of 5 stars">★★★★<span style="opacity:.55">★</span><span class="dim"></span></span></div><div class="bars-grid"><div class="bar-row"><div class="bar-meta"><span>Pricing value</span><strong>4.3</strong></div><div class="bar-track"><div class="bar-fill" style="--w:86%"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Ease of use</span><strong>4.4</strong></div><div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Features</span><strong>4.7</strong></div><div class="bar-track"><div class="bar-fill" style="--w:94%"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Support</span><strong>3.9</strong></div><div class="bar-track"><div class="bar-fill warn" style="--w:78%"></div></div></div></div><div class="pros-cons">
-      <div class="pros"><h4>Pros</h4><ul><li>Intuitive interface with fast content generation</li><li>Strong template library for marketing use cases</li><li>Transparent pricing with generous free tier</li></ul></div>
-      <div class="cons"><h4>Cons</h4><ul><li>Higher per-seat cost at scale</li><li>Limited customization in lower tiers</li></ul></div>
+    
+    <div class="score-row">
+      <span class="score-label"><strong>4.5</strong>/ 5 overall</span>
+      <span class="score-stars" aria-label="4.5 out of 5 stars">★★★★<span style="opacity:.55">★</span><span class="dim"></span></span>
     </div>
-    <p class="pricing-line"><strong>Pricing:</strong> Free plan available; Pro plan at $49/month (billed annually) or $59/month (monthly); Team and Enterprise plans custom-priced starting at $299/month.</p>
+    <div class="bars-grid">
+      <div class="bar-row"><div class="bar-meta"><span>Pricing value</span><strong>4.3</strong></div><div class="bar-track"><div class="bar-fill" style="--w:86%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Ease of use</span><strong>4.4</strong></div><div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Features</span><strong>4.7</strong></div><div class="bar-track"><div class="bar-fill" style="--w:94%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Support</span><strong>3.9</strong></div><div class="bar-track"><div class="bar-fill warn" style="--w:78%"></div></div></div>
+    </div>
+    
+    <div class="pros-cons">
+      <div class="pros"><h4>Pros</h4><ul><li>Intuitive interface with fast content generation</li><li>Extensive template library for marketing use cases</li><li>Volume-based pricing scales well for growing teams</li></ul></div>
+      <div class="cons"><h4>Cons</h4><ul><li>Higher per-seat cost at scale compared to some competitors</li><li>Limited customization in lower tiers</li></ul></div>
+    </div>
+    <p class="pricing-line"><strong>Pricing:</strong> Free plan available; Pro plan at $49/month (billed annually) or $59/month (monthly); Team plan starts at $299/month for 5 seats ($59.80 per user). Enterprise plans are custom.</p>
     
     <a href="/go/copy-ai?utm_source=saaspare&utm_medium=affiliate&utm_campaign=pricing&utm_content=copy-ai" rel="sponsored noopener" target="_blank" class="tool-cta" data-track="affiliate" data-slot="tool_card" data-tool="Copy.ai">
       Try Copy.ai Free ->
@@ -317,12 +327,24 @@ footer p+p{margin-top:.5rem}
   
   <div class="tool-card section">
     <h2>Jasper</h2>
-    <p>A leading AI copywriting tool focused on enterprise-grade content creation, ideal for marketing teams needing brand voice consistency and workflow integrations.</p>
-    <div class="score-row"><span class="score-label"><strong>4.2</strong>/ 5 overall</span><span class="score-stars" aria-label="4.2 out of 5 stars">★★★★<span class="dim">★</span></span></div><div class="bars-grid"><div class="bar-row"><div class="bar-meta"><span>Pricing value</span><strong>3.7</strong></div><div class="bar-track"><div class="bar-fill warn" style="--w:74%"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Ease of use</span><strong>3.9</strong></div><div class="bar-track"><div class="bar-fill warn" style="--w:78%"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Features</span><strong>4.7</strong></div><div class="bar-track"><div class="bar-fill" style="--w:94%"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Support</span><strong>4.3</strong></div><div class="bar-track"><div class="bar-fill" style="--w:86%"></div></div></div></div><div class="pros-cons">
-      <div class="pros"><h4>Pros</h4><ul><li>Cheaper for large teams with bulk seats</li><li>Comparable features with advanced brand voice controls</li></ul></div>
+    <p>A leading AI copywriting tool popular with enterprise marketing teams and agencies, offering advanced workflows, brand voice customization, and team collaboration features.</p>
+    
+    <div class="score-row">
+      <span class="score-label"><strong>4.2</strong>/ 5 overall</span>
+      <span class="score-stars" aria-label="4.2 out of 5 stars">★★★★<span class="dim">★</span></span>
+    </div>
+    <div class="bars-grid">
+      <div class="bar-row"><div class="bar-meta"><span>Pricing value</span><strong>3.7</strong></div><div class="bar-track"><div class="bar-fill warn" style="--w:74%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Ease of use</span><strong>3.9</strong></div><div class="bar-track"><div class="bar-fill warn" style="--w:78%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Features</span><strong>4.7</strong></div><div class="bar-track"><div class="bar-fill" style="--w:94%"></div></div></div>
+      <div class="bar-row"><div class="bar-meta"><span>Support</span><strong>4.3</strong></div><div class="bar-track"><div class="bar-fill" style="--w:86%"></div></div></div>
+    </div>
+    
+    <div class="pros-cons">
+      <div class="pros"><h4>Pros</h4><ul><li>Cheaper for large teams with annual commitments</li><li>Comparable features including brand voice and team permissions</li></ul></div>
       <div class="cons"><h4>Cons</h4><ul><li>Less intuitive onboarding for new users</li></ul></div>
     </div>
-    <p class="pricing-line"><strong>Pricing:</strong> From $49/month (billed annually) for the Creator plan.</p>
+    <p class="pricing-line"><strong>Pricing:</strong> From $49/month (billed annually) for the Creator plan; Business plan starts at $450/month for 5 users ($90/user).</p>
     
     <a href="https://www.jasper.ai?utm_source=saaspare&utm_medium=affiliate&utm_campaign=pricing&utm_content=jasper" rel="sponsored noopener" target="_blank" class="tool-cta secondary" data-track="affiliate" data-slot="tool_card" data-tool="Jasper">
       Try Jasper Free ->
@@ -332,7 +354,7 @@ footer p+p{margin-top:.5rem}
   
 
   <div class="verdict-box">
-    <strong>Our Verdict:</strong> Copy.ai is worth it for teams that need fast, reliable AI copy for marketing and content workflows. If budget is tight, try Jasper first for similar features at scale.
+    <strong>Our Verdict:</strong> Copy.ai is worth it for teams that need fast, scalable content creation with minimal learning curve. If budget is tight, try Jasper first for better volume pricing at scale.
   </div>
 
   <div class="roi-cta">
@@ -353,42 +375,42 @@ footer p+p{margin-top:.5rem}
     
     <details class="faq-item">
       <summary>How much does Copy.ai cost per month?</summary>
-      <p>The Pro plan costs $59/month if billed monthly, or $49/month when billed annually. Team plans start at $299/month for up to 5 users and scale with seat count and usage.</p>
+      <p>The Pro plan is $49/month when billed annually, or $59/month monthly. The Team plan starts at $299/month for 5 users ($59.80 per user). Enterprise pricing is custom and based on usage and features.</p>
     </details>
     
     <details class="faq-item">
       <summary>Does Copy.ai have a free plan?</summary>
-      <p>Yes. The free plan includes 2,000 words per month, access to core templates, and one brand voice profile — ideal for solopreneurs or testing the platform.</p>
+      <p>Yes. The free plan includes 2,000 words per month, access to core templates, and one brand voice. No credit card required.</p>
     </details>
     
     <details class="faq-item">
       <summary>Is Copy.ai worth the price?</summary>
-      <p>For marketing teams producing 10+ pieces of content weekly, Copy.ai saves 10–15 hours/month per user. At $49/user/month, the ROI is strong for SMBs and agencies scaling content output.</p>
+      <p>For marketing teams producing 10+ pieces of content weekly, Copy.ai pays for itself in time saved. At $49/month, it replaces hours of drafting and ideation, especially for SMBs and agencies.</p>
     </details>
     
     <details class="faq-item">
       <summary>Can I get a Copy.ai discount?</summary>
-      <p>Yes. Annual billing saves 17%. Startups in Y Combinator or Techstars get 50% off for 12 months. Nonprofits qualify for 25% off. Enterprise buyers can negotiate 10–20% off for 1-year commitments, especially at quarter-end.</p>
+      <p>Yes. Annual billing saves 17% on the Pro plan. Startups in Y Combinator or Techstars can apply for a 50% discount for 12 months. Nonprofits qualify for 20% off. Negotiate custom discounts on Team and Enterprise plans, especially at renewal or end-of-quarter.</p>
     </details>
     
     <details class="faq-item">
       <summary>What's the cheapest Copy.ai plan?</summary>
-      <p>The Free plan is the cheapest — $0 with 2,000 words/month. The paid Starter plan was retired in 2025; Pro is now the entry paid tier at $49/month (annual billing).</p>
+      <p>The free plan is the cheapest — $0 with 2,000 words/month. The Pro plan at $49/month is best for solopreneurs or freelancers needing unlimited words and advanced templates.</p>
     </details>
     
     <details class="faq-item">
       <summary>Does Copy.ai charge per user?</summary>
-      <p>Yes. The Pro plan is $49/user/month (annual) or $59/user/month (monthly). Team plans start at $299/month for 5 users ($59.80/user) and decrease per-seat cost at scale (e.g., 20 users at ~$45/user).</p>
+      <p>The Pro plan is single-user only. The Team plan starts at 5 seats ($299/month) and scales incrementally. Enterprise plans offer flexible per-user pricing with volume discounts at 20+ seats.</p>
     </details>
     
     <details class="faq-item">
       <summary>Are there hidden costs with Copy.ai?</summary>
-      <p>No mandatory hidden fees. However, exceeding word limits costs $0.01 per additional word. API access and advanced SSO are only in Enterprise plans, which may require setup fees. No implementation costs for standard onboarding.</p>
+      <p>No hidden fees for standard use. However, exceeding word limits on custom plans may incur overage charges. Implementation or onboarding fees apply only to Enterprise plans with SSO, API access, or dedicated support.</p>
     </details>
     
     <details class="faq-item">
       <summary>How does Copy.ai pricing compare to competitors?</summary>
-      <p>Copy.ai ($49/user) is priced similarly to Jasper ($49/user) and slightly below Copymatic ($39/user) but offers better UX and template depth. It’s more affordable than enterprise tools like Anyword (from $199/user).</p>
+      <p>Copy.ai is competitively priced: Jasper starts at $49/month but charges $90/user on its Business plan. Copy.ai offers better per-user pricing at scale. Rytr starts at $29/month but lacks team collaboration tools.</p>
     </details>
     
   </div>
@@ -397,27 +419,27 @@ footer p+p{margin-top:.5rem}
   
   <div class="section">
     <h2>Plan Breakdown</h2>
-    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">Copy.ai offers three main tiers: Free, Pro, and Team/Enterprise. The Free plan includes 2,000 words/month, basic templates, and one brand voice — suitable for individuals. The Pro plan ($49/user/month annually) unlocks 100,000 words, multi-brand voices, AI image generation, and priority support. It’s ideal for freelancers and small teams. The Team plan starts at $299/month for 5 users and includes workspace collaboration, admin controls, and usage analytics. Enterprise plans offer SSO, API access, custom AI training, and SLAs, with pricing based on volume and integration needs.</p>
+    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">Copy.ai offers four tiers: Free, Pro, Team, and Enterprise. The Free plan includes 2,000 words/month, basic templates, and one brand voice — ideal for solopreneurs testing the tool. The Pro plan ($49/month) unlocks unlimited words, 30+ content types, AI image generation, and priority support. Best for freelancers or small teams. The Team plan ($299/month for 5 users) adds multi-user collaboration, shared workspaces, admin controls, and SSO. Suits agencies and growing marketing teams. Enterprise plans include custom word limits, API access, dedicated onboarding, SLAs, and advanced security — tailored for companies with 50+ users and strict compliance needs.</p>
   </div>
   
   <div class="section">
     <h2>Hidden Costs</h2>
-    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">While Copy.ai advertises transparent pricing, buyers should watch for overages: $0.01 per word beyond monthly limits. API access and custom AI model training are only in Enterprise and may incur setup fees. Team plans have a 5-user minimum. Annual contracts include a 10% early termination fee. No cost for standard onboarding, but dedicated training sessions cost extra ($1,500+).</p>
+    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">While Copy.ai advertises transparent pricing, B2B buyers should watch for potential extras. Enterprise plans may include onboarding fees ($2,000–$5,000) for training and integration. Overages on word count are billed at $0.01 per word beyond allocated limits. Annual contracts include early termination fees (20% of remaining term). Team plans require a 5-user minimum, making it less flexible for small teams. SSO and audit logs are free on Enterprise but cost extra on some competitors.</p>
   </div>
   
   <div class="section">
     <h2>How to Get a Discount</h2>
-    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">Save 17% by choosing annual billing. Startups in accelerators like YC or Techstars get 50% off for 12 months. Nonprofits receive 25% off. For Team and Enterprise plans, negotiate at quarter-end when sales targets are due — discounts of 10–20% are common. Ask for extended free trials (up to 30 days) and bundled training. Resellers and MSPs may offer volume discounts.</p>
+    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">Save 17% by choosing annual billing on the Pro plan. Startups in recognized accelerators (YC, Techstars) can get 50% off for 12 months. Nonprofits receive 20% off all plans. For Team and Enterprise plans, negotiate: ask for 10–15% off for 2-year commitments, or request added seats at no cost. The best time to negotiate is at renewal or end-of-quarter when sales quotas are pending. Mention competitor pricing (e.g., Jasper’s $90/user) to leverage better terms.</p>
   </div>
   
   <div class="section">
     <h2>Is It Worth It?</h2>
-    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">For solopreneurs, Copy.ai saves ~8 hours/month — worth it at $49. For SMBs (10–50 users), the ROI is clear: 10 users save 150 hours/month, equivalent to ~$7,500 in labor (at $50/hour), far exceeding the $490–$700 monthly cost. Mid-market teams (50–200 users) see even greater efficiency, especially with Team plan discounts. Enterprise buyers should calculate cost per generated asset — at scale, Copy.ai reduces content production costs by 40–60%.</p>
+    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">For solopreneurs, Copy.ai saves 5–10 hours/month — a clear ROI at $49. For SMBs (10–50 users), the Team plan averages $60/user/month, reducing content production time by 40%. A 10-person marketing team saves ~$12,000/year in labor. Mid-market companies (50–200 users) see the biggest savings with custom Enterprise deals — negotiated rates as low as $45/user/month with volume discounts. At scale, ROI comes from faster campaign launches and consistent brand voice. However, teams needing deep workflow automation may find Jasper or Copy.ai’s API limitations a constraint.</p>
   </div>
   
   <div class="section">
     <h2>Competitors at This Price Point</h2>
-    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">Jasper starts at $49/month with strong workflow automation — choose it for enterprise integrations. Copymatic ($39/month) is cheaper with solid templates — ideal for budget-focused teams. Anyword ($199/month) offers predictive performance scoring — pick it for data-driven copy optimization, though it’s significantly more expensive.</p>
+    <p style="color:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8">Jasper starts at $49/month but charges $90/user on its Business plan — better for brand voice control but pricier at scale. Rytr offers a $29/month plan with unlimited characters but lacks team features and advanced workflows. Anyword ($119/month) focuses on performance-driven copy with analytics, ideal for data-heavy marketing teams but overkill for general use. Each offers a niche edge, but Copy.ai balances ease of use, pricing, and scalability best for most B2B teams.</p>
   </div>
   
   
@@ -456,7 +478,7 @@ footer p+p{margin-top:.5rem}
   <div class="related">
     <h3>Related Comparisons</h3>
     
-    <a href="https://saaspare.org/pages/copy-ai-promo-codes-discounts-2026-saaspare">Copy.ai Promo Codes &amp; Discounts 2026 | SaaSpare</a>
+    <a href="https://saaspare.org/pages/copy-ai-promo-codes-discounts-2026-saaspare">Copy.ai Promo Codes & Discounts 2026 | SaaSpare</a>
     
     <a href="https://saaspare.org/pages/copy-ai-vs-weights-biases-2026-which-is-better-saaspare">Copy.ai vs. Weights Biases 2026: Which Is Better? | SaaSpare</a>
     
@@ -468,15 +490,15 @@ footer p+p{margin-top:.5rem}
     
     <a href="https://saaspare.org/pages/copy-ai-vs-openai-api-2026-which-is-better-saaspare">Copy.ai vs. Openai API 2026: Which Is Better? | SaaSpare</a>
     
-    <a href="https://saaspare.org/pages/copy-ai-vs-pinecone-2026-which-is-better-saaspare">Copy.ai vs. Pinecone 2026: Which Is Better? | SaaSpare</a>
-    
     <a href="https://saaspare.org/pages/copy-ai-vs-weaviate-2026-which-is-better-saaspare">Copy.ai vs. Weaviate 2026: Which Is Better? | SaaSpare</a>
+    
+    <a href="https://saaspare.org/pages/copy-ai-vs-pinecone-2026-which-is-better-saaspare">Copy.ai vs. Pinecone 2026: Which Is Better? | SaaSpare</a>
     
     <a href="https://saaspare.org/pages/copy-ai-vs-writesonic-2026-which-is-better-saaspare">Copy.ai vs. Writesonic 2026: Which Is Better? | SaaSpare</a>
     
     <a href="https://saaspare.org/pages/jasper-ai-vs-copy-ai-2026-which-is-better-saaspare">Jasper AI vs. Copy.ai 2026: Which Is Better? | SaaSpare</a>
     
-    <a href="https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-saaspare">Copy.ai Pricing 2026: Plans &amp; Costs | SaaSpare</a>
+    <a href="https://saaspare.org/pages/copy-ai-pricing-2026-plans-costs-saaspare">Copy.ai Pricing 2026: Plans & Costs | SaaSpare</a>
     
     <a href="https://saaspare.org/pages/best-ai-ml-tools-software-for-content-teams-saaspare">Best Ai Ml Tools Software for Content Teams | SaaSpare</a>
     
@@ -487,7 +509,7 @@ footer p+p{margin-top:.5rem}
   <section class="seo-trustbox section" data-seo-trustbox>
     <h2>How SaaSpare keeps this page useful</h2>
     <p><strong>No paid rankings:</strong> Vendors cannot buy placement or verdicts. SaaSpare may earn a commission when readers click some affiliate links, but that does not change the comparison order.</p>
-    <p><strong>Last verified:</strong> Updated May 02, 2026. Pricing source: public vendor pages linked from this page where available; otherwise marked for verification.</p>
+    <p><strong>Last verified:</strong> Updated May 03, 2026. Pricing source: public vendor pages linked from this page where available; otherwise marked for verification.</p>
     <p><strong>Methodology:</strong> We compare pricing signals, trial paths, buyer fit, alternatives, and visible vendor information. See <a href="https://saaspare.org/methodology">our methodology</a> and <a href="https://saaspare.org/affiliate-disclosure">affiliate disclosure</a>.</p>
     <p><strong>Correction CTA:</strong> See outdated pricing or an incorrect trial detail? <a href="https://saaspare.org/contact">Report an error</a> and include the vendor source.</p>
   </section>
@@ -499,7 +521,7 @@ footer p+p{margin-top:.5rem}
   </div>
 
   <footer>
-    <p>Last verified: May 02, 2026 &nbsp;|&nbsp;
+    <p>Last verified: May 03, 2026 &nbsp;|&nbsp;
     <a href="https://saaspare.org/about.html">About</a> &nbsp;|&nbsp;
     <a href="https://saaspare.org/privacy.html">Privacy</a> &nbsp;|&nbsp;
     <a href="https://saaspare.org/contact.html">Contact</a></p>
@@ -647,5 +669,6 @@ if(em){
 </script>
 <script defer src="/assets/saaspare-ui.js"></script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
+<script>(function(){var n=document.getElementById('nav');if(!n)return;function s(){n.classList.toggle('scrolled',window.scrollY>32);}s();window.addEventListener('scroll',s,{passive:true});})();</script>
 </body>
 </html>
