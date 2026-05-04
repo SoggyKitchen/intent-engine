@@ -23,6 +23,18 @@ _CEREBRAS_MODELS = [
     ("llama3.1-8b", 950_000),
 ]
 
+# OpenRouter free-tier models tried in order; all :free tier = no credit needed.
+# owl-alpha has 1M context but rate-limits quickly on free tier — kept as fallback.
+_OPENROUTER_FREE_MODELS = [
+    "nvidia/nemotron-3-super-120b-a12b:free",    # 120B, 256k ctx, reliable
+    "meta-llama/llama-3.3-70b-instruct:free",    # 70B, fast JSON
+    "google/gemma-4-31b-it:free",                # 31B, 262k ctx
+    "nousresearch/hermes-3-llama-3.1-405b:free", # 405B, best quality
+    "nvidia/nemotron-3-nano-30b-a3b:free",       # 30B nano, 256k ctx
+    "meta-llama/llama-3.2-3b-instruct:free",     # 3B, fastest fallback
+    "openrouter/owl-alpha",                      # 1M ctx, may rate-limit
+]
+
 DAILY_LIMITS: dict[str, int] = {}
 
 
@@ -265,8 +277,15 @@ def _get_ordered_providers():
         providers.append(("gemini_flash", os.getenv("GEMINI_MODEL", "gemini-2.0-flash"), _make_gemini_client(gemini_key)))
     openrouter_key = os.getenv("OPENROUTER_API_KEY", "").strip()
     if openrouter_key:
-        DAILY_LIMITS.setdefault("openrouter", 0)
-        providers.append(("openrouter", os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free"), _make_openrouter_client(openrouter_key)))
+        or_client = _make_openrouter_client(openrouter_key)
+        # Allow override via env var for a single model; otherwise use full rotation list
+        override_model = os.getenv("OPENROUTER_MODEL", "").strip()
+        or_models = [override_model] if override_model else _OPENROUTER_FREE_MODELS
+        for or_model in or_models:
+            # Use model slug as provider id so each has its own cooldown/quota bucket
+            or_pid = "openrouter/" + or_model.replace("/", "__").replace(":", "_")
+            DAILY_LIMITS.setdefault(or_pid, 0)
+            providers.append((or_pid, or_model, or_client))
     if providers and not _providers_logged:
         log.info(f"Discovered {len(providers)} providers: {[p[0] for p in providers]}")
         _providers_logged = True
@@ -343,15 +362,32 @@ def _make_openrouter_client(api_key: str):
         resp = httpx.post(
             "https://openrouter.ai/api/v1/chat/completions",
             json={"model": model, "messages": messages, "max_tokens": max_output_tokens, "temperature": 0.1},
-            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json",
-                     "HTTP-Referer": "https://saaspare.org", "X-Title": "SaaSpare"},
-            timeout=60,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+                "HTTP-Referer": "https://saaspare.org",
+                "X-Title": "SaaSpare",
+            },
+            timeout=90,
         )
+        if resp.status_code == 429:
+            retry_after = int(resp.headers.get("Retry-After", 30)) + 5
+            raise RuntimeError(f"OpenRouter [{model}] 429 retry_after={retry_after}")
+        if resp.status_code in (502, 503, 529):
+            raise RuntimeError(f"OpenRouter [{model}] {resp.status_code} provider overloaded retry_after=20")
         resp.raise_for_status()
-        return _parse_json_response(resp.json()["choices"][0]["message"]["content"])
+        data = resp.json()
+        # OpenRouter surfaces upstream errors in data["error"]
+        if "error" in data:
+            code = data["error"].get("code", 0)
+            msg = data["error"].get("message", "unknown")
+            if code == 429:
+                raise RuntimeError(f"OpenRouter [{model}] 429 retry_after=30")
+            raise RuntimeError(f"OpenRouter [{model}] error {code}: {msg}")
+        content = data["choices"][0]["message"]["content"]
+        return _parse_json_response(content)
 
     return _client
-
 
 def _make_gemini_client(api_key: str):
     def _client(prompt: str, system: str, model: str, max_output_tokens: int) -> Optional[dict]:
