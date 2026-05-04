@@ -841,7 +841,7 @@ setTimeout(type,800);
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
-  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1011;
+  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1009;
   ['live-count','stat-pages'].forEach(id=>{const el=document.getElementById(id);if(el){el.dataset.count=n;el.textContent=n.toLocaleString()+(id==='stat-pages'?'+':'')}});
 }).catch(()=>{});
 
