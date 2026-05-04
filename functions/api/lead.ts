@@ -9,7 +9,7 @@
  *   LEAD_NOTIFY_TO   — inbox that receives every submission
  *
  * Optional:
- *   LEAD_FROM        — sender address (default: onboarding@resend.dev)
+ *   LEAD_FROM        — sender address (default: hello@saaspare.org)
  *   ALLOWED_ORIGINS  — comma-separated origins (default: saaspare.org)
  */
 
@@ -65,7 +65,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   try {
     if (env.RESEND_API_KEY) {
       await sendViaResend(env.RESEND_API_KEY, {
-        from: env.LEAD_FROM || "SaaSpare <onboarding@resend.dev>",
+        from: env.LEAD_FROM || "SaaSpare <hello@saaspare.org>",
         to: env.LEAD_NOTIFY_TO,
         reply_to: email,
         subject,
