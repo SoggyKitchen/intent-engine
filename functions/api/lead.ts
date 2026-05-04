@@ -81,6 +81,12 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     return json({ ok: true, _warn: "delivery_issue" }, 200, headers);
   }
 
+    // Non-JS fallback: redirect to thanks page instead of showing raw JSON
+  const isFormPost = !(request.headers.get("Content-Type") || "").includes("application/json");
+  if (isFormPost) {
+    return Response.redirect("https://saaspare.org/pages/thanks.html", 303);
+  }
+
   return json({ ok: true }, 200, headers);
 };
 

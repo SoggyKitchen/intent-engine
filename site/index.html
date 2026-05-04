@@ -681,9 +681,9 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
   <div class="cta-box">
     <h2>Get the Weekly SaaS Deal Digest</h2>
     <p>Free trials, pricing changes and new comparisons — straight to your inbox every Friday.</p>
-    <form method="POST" class="email-row">
+    <form method="POST" action="/api/lead" class="email-row">
       <input type="email" name="email" placeholder="your@email.com" required>
-      <input type="hidden" name="_subject" value="New SaaSpare subscriber">
+      <input type="hidden" name="signup_surface" value="inline_newsletter">
       <button type="submit">Subscribe Free &#8594;</button>
     </form>
     <p class="email-note">No spam. Unsubscribe any time.</p>
