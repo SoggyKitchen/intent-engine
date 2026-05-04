@@ -73,18 +73,22 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         html,
         text,
       });
-      // 2. User confirmation (fire-and-forget)
-      const confSubject = buildUserConfirmSubject(surface);
-      const confHtml    = buildUserConfirmHtml(data, email, surface);
-      const confText    = buildUserConfirmText(surface);
-      sendViaResend(env.RESEND_API_KEY, {
-        from: env.LEAD_FROM || "SaaSpare <hello@saaspare.org>",
-        to: email,
-        reply_to: env.LEAD_NOTIFY_TO || "hello@saaspare.org",
-        subject: confSubject,
-        html: confHtml,
-        text: confText,
-      }).catch((e: unknown) => console.error("user confirm error:", e));
+      // 2. User confirmation — awaited with own try/catch so errors never break owner notify
+      try {
+        const confSubject = buildUserConfirmSubject(surface);
+        const confHtml    = buildUserConfirmHtml(data, email, surface);
+        const confText    = buildUserConfirmText(surface);
+        await sendViaResend(env.RESEND_API_KEY, {
+          from: env.LEAD_FROM || "SaaSpare <hello@saaspare.org>",
+          to: email,
+          reply_to: env.LEAD_NOTIFY_TO || "hello@saaspare.org",
+          subject: confSubject,
+          html: confHtml,
+          text: confText,
+        });
+      } catch (ce: unknown) {
+        console.error("user confirm error:", ce instanceof Error ? ce.message : String(ce));
+      }
     } else if (env.SEND_EMAIL) {
       await env.SEND_EMAIL.send({ from: env.LEAD_FROM || "hello@saaspare.org", to: env.LEAD_NOTIFY_TO, subject, text, html });
     }
@@ -416,11 +420,6 @@ function buildUserConfirmHtml(data: Record<string, string>, email: string, surfa
 }
 
 function userNewsletterConfirmEmail(email: string): string {
-  const cards =
-    featureCard("&#128202;", "1,000+ Comparisons", "Every major SaaS tool head-to-head", "https://saaspare.org/pages/") +
-    featureCard("&#128178;", "Pricing Index", "Real pricing across 16 verticals", "https://saaspare.org/pages/saas-pricing-index.html") +
-    featureCard("&#9989;", "Free Trials", "No-card trials worth grabbing now", "https://saaspare.org/pages/free-trial-database.html");
-
   const body =
     sectionHeading("The Weekly SaaS Deal Digest") +
     `<p style="margin:0 0 20px;font-size:15px;color:${TEXT};line-height:1.7">` +
@@ -435,7 +434,7 @@ function userNewsletterConfirmEmail(email: string): string {
     ctaButton("Browse all comparisons &rarr;", "https://saaspare.org/pages/") +
     `<p style="margin:20px 0 0;font-size:12px;color:${MUTED};text-align:center">` +
       `You subscribed as ${h(email)}. ` +
-      `Not you? <a href="mailto:hello@saaspare.org?subject=Unsubscribe" style="color:${MUTED}">Unsubscribe</a>.` +
+      `Not you? <a href="mailto:hello@saaspare.org" style="color:${MUTED}">Unsubscribe</a>.` +
     `</p>`;
 
   return emailShell("You’re subscribed · SaaSpare", "Newsletter confirmed",
