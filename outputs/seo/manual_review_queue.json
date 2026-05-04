@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-04T07:47:06+00:00",
+  "generated_at_utc": "2026-05-04T11:36:26+00:00",
   "mode": "apply",
-  "pages_flagged": 38,
+  "pages_flagged": 39,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -83,12 +83,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ble to switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the tool and see if it's a good fit for your team.</p>"
+          "context": "amp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp.</p> </details> <details c"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "re some effort to set up and migrate data. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the tool and see if it's a good fit for your team. Base"
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp. The onboarding process typically takes"
         }
       ],
       "trust_state_bumped": true
@@ -483,22 +483,17 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-notion-which-is-better-in-2026.html",
+      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "sible to switch from Notion to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
+          "snippet": "30-day money-back guarantee",
+          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 30-day money-back guarantee, making it easy to try out their features and support before committing to a pu"
         },
         {
           "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "lexibility and affordability. However, Monday.com also offers a free plan and a 14-day money-back guarantee, making it a good choice for small teams as well.</p> </details> <"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "to set up and configure the new platform. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
+          "snippet": "30-day money-back guarantee",
+          "context": "ase.io to SE Ranking is relatively easy, as both tools offer a free trial and a 30-day money-back guarantee. SE Ranking's onboarding process typically takes 1-2 weeks, while Frase.io's on"
         }
       ],
       "trust_state_bumped": true
@@ -575,6 +570,32 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "s easy to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free.</p> </details> <details class=\"f"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "hile Wrike's free plan is limited to 2 users. Additionally, Monday.com offers a 14-day money-back guarantee, while Wrike does not.</p> </div> <div class=\"section\"> <h2>Who Shou"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "itching from Wrike to Monday.com is easy, thanks to Monday.com's free trial and 14-day money-back guarantee. Monday.com also offers a range of resources and support to help with the migra"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "the migration process. Wrike, on the other hand, does not offer a free trial or money-back guarantee, but does offer a range of resources and support to help with the migration pro"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",

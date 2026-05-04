@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-04T07:47:01+00:00",
-  "html_files_scanned": 1028,
-  "files_changed": 93,
+  "generated_at": "2026-05-04T11:36:22+00:00",
+  "html_files_scanned": 1031,
+  "files_changed": 99,
   "changes": [
     {
       "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
@@ -74,6 +74,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-open-source-object-storage-alternatives-to-minio-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-adp-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -89,12 +94,22 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-devops-tools-for-agile-workflows-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/remote-com-vs-lattice-which-is-better-in-2026.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
     {
       "path": "site/pages/7-best-tableau-alternatives-in-2026-free-paid.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-b2b-software-development-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -130,6 +145,11 @@
     },
     {
       "path": "site/pages/7-best-shopify-alternatives-in-2026-free-paid.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-saas-analytics-tools-for-b2b-financial-research-platforms-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -289,6 +309,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/monday-com-review-2026-is-it-worth-it-honest-verdict.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-power-bi-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -400,6 +425,11 @@
     },
     {
       "path": "site/pages/clearscope-vs-frase-io-which-is-better-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cybersecurity-tools-for-b2b-software-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
