@@ -282,11 +282,8 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3r
     <span class="ps-eyebrow">Submit a request</span>
     <h2 class="ps-title">What should we compare?</h2>
     <p class="ps-body" style="margin-bottom:1.4rem">Free, unbiased, and we credit you when the comparison ships. Most-requested pairs jump the queue.</p>
-    <form class="form" action="https://formsubmit.co/requests@saaspare.org" method="POST">
+    <form class="form" method="POST">
       <input type="hidden" name="_subject" value="New comparison request">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://saaspare.org/pages/request-a-comparison?ok=1">
-
       <label>Tool A<input type="text" name="tool_a" required placeholder="e.g. Linear"></label>
       <label>Tool B<input type="text" name="tool_b" required placeholder="e.g. Jira"></label>
       <label>Or 3+ tools (optional)<input type="text" name="more_tools" placeholder="e.g. ClickUp, Monday, Asana"></label>
@@ -387,5 +384,69 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3r
 </script>
 <script defer src="/assets/saaspare-ui.js"></script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
+<script>
+(function(){
+  var SUCCESS_INLINE = '<div class="subscribe-success" style="text-align:center;padding:1rem 0">'
+    + '<div style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;'
+    + 'border-radius:50%;background:rgba(52,211,153,.18);border:1px solid rgba(52,211,153,.35);'
+    + 'color:#34d399;font-size:1.3rem;margin-bottom:.5rem">&#10003;</div>'
+    + '<p style="color:#34d399;font-weight:700;margin-bottom:.25rem">You're in!</p>'
+    + '<p style="color:rgba(255,255,255,.5);font-size:.83rem">Check your inbox — welcome email on its way.</p></div>';
+  var SUCCESS_EXIT = '<div style="text-align:center;padding:.5rem 0">'
+    + '<p style="color:#34d399;font-weight:700;font-size:1rem">&#10003; You're subscribed!</p>'
+    + '<p style="color:rgba(255,255,255,.45);font-size:.8rem;margin-top:.25rem">Check your inbox in a moment.</p></div>';
+
+  function bind(form, successHtml, formType) {
+    if (form.dataset.ajaxBound) return;
+    form.dataset.ajaxBound = '1';
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type=submit]');
+      var orig = btn ? btn.textContent : '';
+      if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
+      var data = { landing_url: window.location.href };
+      form.querySelectorAll('input,select,textarea').forEach(function(el) {
+        if (el.name) data[el.name] = el.type === 'checkbox' ? (el.checked ? el.value : '') : el.value;
+      });
+      if (!data['page_title']) data['page_title'] = document.title;
+      if (!data['signup_surface']) data['signup_surface'] = formType;
+      fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(res) {
+        if (res.ok || res.ignored) {
+          form.style.transition = 'opacity .3s';
+          form.style.opacity = '0';
+          setTimeout(function() {
+            form.outerHTML = successHtml;
+            if (typeof gtag === 'function') {
+              gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
+            }
+          }, 300);
+        } else {
+          if (btn) { btn.textContent = orig; btn.disabled = false; }
+          alert('Something went wrong. Try again or email hello@saaspare.org');
+        }
+      })
+      .catch(function() {
+        if (btn) { btn.textContent = orig; btn.disabled = false; }
+        alert('Network error. Please try again.');
+      });
+    });
+  }
+
+  document.querySelectorAll('.email-row, #sub-form').forEach(function(el) {
+    var f = el.tagName === 'FORM' ? el : el.querySelector('form');
+    if (f) bind(f, SUCCESS_INLINE, 'inline_newsletter');
+  });
+  document.querySelectorAll('.exit-form, #exit-form').forEach(function(el) {
+    var f = el.tagName === 'FORM' ? el : el.querySelector('form');
+    if (f) bind(f, SUCCESS_EXIT, 'exit_intent');
+  });
+})();
+</script>
 </body>
 </html>

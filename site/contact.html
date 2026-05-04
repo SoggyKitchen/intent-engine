@@ -303,10 +303,8 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3r
   <div class="ps reveal">
     <span class="ps-eyebrow">Contact form</span>
     <h2 class="ps-title">Send a message</h2>
-    <form class="form" action="https://formsubmit.co/hello@saaspare.org" method="POST">
+    <form class="form" method="POST">
       <input type="hidden" name="_subject" value="SaaSpare contact form">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://saaspare.org/contact?ok=1">
       <label>Your email<input type="email" name="email" required placeholder="you@company.com"></label>
       <label>Topic
         <select name="topic" required>
@@ -378,6 +376,46 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3r
   }else{
     document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});
   }
+})();
+</script>
+<script>
+(function(){
+  var form = document.querySelector('form.form');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type=submit]');
+    var orig = btn ? btn.textContent : '';
+    if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
+    var data = { landing_url: window.location.href, _subject: 'SaaSpare contact form' };
+    form.querySelectorAll('input,select,textarea').forEach(function(el) {
+      if (el.name) data[el.name] = el.value;
+    });
+    fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(res) {
+      if (res.ok || res.ignored) {
+        form.innerHTML = '<div style="text-align:center;padding:2.5rem 1rem">'
+          + '<div style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;'
+          + 'border-radius:50%;background:rgba(52,211,153,.15);border:1px solid rgba(52,211,153,.3);'
+          + 'color:#34d399;font-size:1.6rem;margin-bottom:1rem">&#10003;</div>'
+          + '<h3 style="color:#fff;margin-bottom:.5rem">Message sent!</h3>'
+          + '<p style="color:rgba(255,255,255,.55)">We'll get back to you within 1 business day.</p></div>';
+        if (typeof gtag === 'function') gtag('event', 'contact_form_submit', { page_location: window.location.href });
+      } else {
+        if (btn) { btn.textContent = orig; btn.disabled = false; }
+        alert('Something went wrong. Please email hello@saaspare.org directly.');
+      }
+    })
+    .catch(function() {
+      if (btn) { btn.textContent = orig; btn.disabled = false; }
+      alert('Network error. Please try again.');
+    });
+  });
 })();
 </script>
 </body>
