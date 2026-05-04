@@ -17,3 +17,4 @@ data/*.db-wal
 outputs/generated/
 site/_site/
 node_modules/
+.claude/
