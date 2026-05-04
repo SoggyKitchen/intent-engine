@@ -1,0 +1,84 @@
+name: Nightly site integrity audit
+
+on:
+  # Run every night at 03:17 UTC (~1pm AEST) so reports are ready before
+  # the author starts the day.
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "site/**/*.html"
+      - "scripts/**/*.py"
+      - "publisher/**/*.py"
+      - "tests/test_normalise.py"
+      - "tests/test_seo_integrity.py"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Install dependencies
+        run: uv sync
+
+      # 1. Self-healing: remove any "Xero vs. Sageero" style corruption
+      # and any "Last verified: <title> is checked..." trust-box bug
+      # that sneaks in from content refreshes. Produces a report JSON.
+      - name: Repair known corruption patterns
+        run: uv run python scripts/fix_corrupted_titles.py
+
+      # 2. Normalise public KPI counts so homepage/about/library/media-kit
+      # don't drift out of sync again.
+      - name: Sync public KPI counters
+        run: uv run python scripts/sync_public_kpis.py
+
+      # 3. Re-apply journey-link block to any new page.
+      - name: Inject intent-weighted journey links
+        run: uv run python scripts/inject_journey_links.py
+
+      # 4. Flag risky factual claims so the editor has a queue.
+      - name: Flag risky factual claims
+        run: uv run python scripts/flag_risky_claims.py
+
+      # 5. Fail the build if any corruption or schema issue remains.
+      - name: CI gate - title / trust-box corruption
+        run: uv run pytest tests/test_normalise.py -v
+
+      - name: CI gate - SEO integrity (canonical, sitemap, schema)
+        run: uv run pytest tests/test_seo_integrity.py -v
+
+      - name: Run full test suite (best-effort)
+        run: uv run pytest -q --ignore=tests/test_seo_integrity.py --ignore=tests/test_normalise.py || true
+
+      # 6. If repairs made changes, open a PR instead of pushing to main.
+      - name: Create pull request with safe auto-fixes
+        if: success()
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/nightly-site-integrity
+          title: "chore: nightly site integrity auto-fixes"
+          commit-message: |
+            chore: nightly safe auto-fixes
+
+            - repaired any new title/trust-box corruption
+            - resynced public KPI counters
+            - re-injected intent-weighted journey links
+            - refreshed manual-review queue for risky factual claims
+          body: |
+            Safe automated fixes only. Human review required for any
+            factual/pricing change. Reports live in `outputs/seo/`.
+
+            - outputs/seo/corruption-report.json
+            - outputs/seo/methodology-normalisation.json
+            - outputs/seo/journey-links.json
+            - outputs/seo/manual_review_queue.json
+          delete-branch: true

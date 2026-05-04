@@ -80,6 +80,33 @@ jobs:
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           VALIDATE_LIVE_REDIRECTS: "false"
 
+      # --- repo-native self-healing cascade --------------------------------
+      # Run on every affiliate drop so pages produced by programmatic SEO
+      # automatically inherit the site-wide quality guarantees (no title
+      # corruption, unified KPIs + methodology, journey links, risky-claim
+      # flagging, schema validity).
+
+      - name: Repair any corrupted titles / trust-box sentences
+        run: uv run python scripts/fix_corrupted_titles.py
+
+      - name: Normalise per-page methodology copy
+        run: uv run python scripts/normalise_methodology_copy.py
+
+      - name: Sync public KPI counters (home, about, library, media-kit)
+        run: uv run python scripts/sync_public_kpis.py
+
+      - name: Inject intent-weighted journey links on new pages
+        run: uv run python scripts/inject_journey_links.py
+
+      - name: Flag any risky factual claims on new pages
+        run: uv run python scripts/flag_risky_claims.py
+
+      - name: CI gate - title / trust-box corruption
+        run: uv run pytest tests/test_normalise.py -v
+
+      - name: CI gate - SEO integrity (canonical, sitemap, schema)
+        run: uv run pytest tests/test_seo_integrity.py -v
+
       - name: Commit results
         run: |
           git config user.email "bot@intentengine.local"
@@ -89,6 +116,8 @@ jobs:
                   data/affiliate_links.json \
                   data/affiliate_overrides.json \
                   data/affiliate_url_report.md \
-                  site/pages/ site/index.html site/pages/index.html site/_redirects site/sitemap.xml || true
-          git diff --staged --quiet || git commit -m "chore: affiliate import $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+                  data/public_kpis.json \
+                  outputs/seo/ \
+                  site/pages/ site/index.html site/pages/index.html site/_redirects site/sitemap.xml site/assets/ site/feed.xml site/about.html site/media-kit.html || true
+          git diff --staged --quiet || git commit -m "chore: affiliate import + self-heal $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
           git push

@@ -78,11 +78,33 @@ jobs:
           DB_PATH: data/intent.db
           SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
 
+      # --- repo-native self-healing cascade --------------------------------
+      - name: Repair any corrupted titles / trust-box sentences
+        run: uv run python scripts/fix_corrupted_titles.py
+
+      - name: Normalise per-page methodology copy
+        run: uv run python scripts/normalise_methodology_copy.py
+
+      - name: Sync public KPI counters
+        run: uv run python scripts/sync_public_kpis.py
+
+      - name: Inject intent-weighted journey links
+        run: uv run python scripts/inject_journey_links.py
+
+      - name: Flag any risky factual claims
+        run: uv run python scripts/flag_risky_claims.py
+
+      - name: CI gate - title / trust-box corruption
+        run: uv run pytest tests/test_normalise.py -v
+
+      - name: CI gate - SEO integrity
+        run: uv run pytest tests/test_seo_integrity.py -v
+
       - name: Commit pages
         run: |
           git config user.email "bot@intentengine.local"
           git config user.name "IntentBot"
           git pull --rebase --autostash origin main
-          git add data/intent.db data/affiliate_url_report.md site/pages/ site/sitemap.xml site/index.html site/_redirects || true
-          git diff --staged --quiet || git commit -m "chore: programmatic SEO $(date -u +%Y-%m-%d) [skip ci]"
+          git add data/intent.db data/affiliate_url_report.md data/public_kpis.json outputs/seo/ site/pages/ site/sitemap.xml site/index.html site/_redirects site/feed.xml site/about.html site/media-kit.html site/assets/ || true
+          git diff --staged --quiet || git commit -m "chore: programmatic SEO + self-heal $(date -u +%Y-%m-%d) [skip ci]"
           git push

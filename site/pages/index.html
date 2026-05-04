@@ -92,6 +92,25 @@
     .library-trustbox{grid-template-columns:1fr}
     .trust-actions{grid-template-columns:1fr}
   }
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease;background:transparent;border-bottom:none}
+nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
+.logo-mark{height:26px!important;width:26px!important;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
+.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
+.logo:hover .logo-mark{animation:none}
+.logo:hover .mark-top{transform:translateX(26px);filter:drop-shadow(-2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}
+.logo:hover .mark-bot{transform:translateX(-26px);filter:drop-shadow(2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}
+.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{opacity:0}
+.logo-text{font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.logo-text em{color:#e94560;font-style:normal}
+.nav-link{color:rgba(255,255,255,.46);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
+.nav-link:hover,.nav-link.active{color:#fff}
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+/* Push page content below the fixed nav */
+body{padding-top:68px}
+@media (max-width:760px){body{padding-top:60px}nav{padding:.85rem 1.1rem}.nav-link{display:none}}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
 </head>
@@ -107,7 +126,7 @@
 </nav>
 <div class="library-shell">
 <div class="hero">
-  <div class="badge">1009 buyer pages indexed</div>
+  <div class="badge">1,011 buyer pages indexed</div>
   <h1>Find the right <span>SaaS answer</span> faster.</h1>
   <p>Search pricing pages, comparison verdicts, trial paths and alternatives without opening ten vendor tabs.</p>
   <div class="search-shell">
@@ -1174,11 +1193,21 @@
       </div>
     </div>
   </section>
-  <footer>
-    <p>Last updated: May 04, 2026 &nbsp;|&nbsp;
-    <a href="https://saaspare.org/shortlist.html">Shortlist Builder</a> &nbsp;|&nbsp;
-    <a href="https://saaspare.org/about.html">About</a> &nbsp;|&nbsp;
-    <a href="https://saaspare.org/privacy.html">Privacy</a></p>
+  
+<section class="seo-trustbox section" data-seo-trustbox data-verification-state="needs_manual_review">
+  <h2>How SaaSpare keeps this page useful</h2>
+  <p><strong>No paid rankings:</strong> Vendors cannot buy placement or verdicts. SaaSpare may earn a commission when readers click some affiliate links, but that does not change the comparison order.</p>
+    <p><strong>Last verified:</strong> This page was last checked on <time datetime="2026-05-04">May 4, 2026</time> as part of our scheduled SEO and link audits. Pricing source: public vendor pages linked from this page where available; otherwise marked for verification.</p>
+  <p><strong>Verification state:</strong> <span data-verification-label>Awaiting manual vendor-source verification</span>. Pricing, trial terms, coupon validity and refund policy may change on the vendor&#x27;s official site at any time &mdash; always confirm on the vendor page linked above before you buy.</p>
+  <p><strong>Methodology:</strong> We compare pricing signals, trial paths, buyer fit, alternatives, and visible vendor information. See <a href="https://saaspare.org/methodology">our methodology</a> and <a href="https://saaspare.org/affiliate-disclosure">affiliate disclosure</a>.</p>
+  <p><strong>Correction CTA:</strong> See outdated pricing or an incorrect trial detail? <a href="https://saaspare.org/contact">Report an error</a> and include the vendor source.</p>
+</section>
+
+<footer>
+    <p>Last updated: May 03, 2026 &nbsp;|&nbsp;
+    <a href="https://saaspare.org/shortlist">Shortlist Builder</a> &nbsp;|&nbsp;
+    <a href="https://saaspare.org/about">About</a> &nbsp;|&nbsp;
+    <a href="https://saaspare.org/privacy">Privacy</a></p>
   </footer>
 </div>
 </div>
@@ -1247,5 +1276,6 @@
 </script>
 <script defer src="/assets/saaspare-ui.js"></script>
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
+<script>(function(){var n=document.querySelector('nav');if(!n)return;function s(){n.classList.toggle('scrolled',(window.scrollY||0)>12);}s();window.addEventListener('scroll',s,{passive:true});})();</script>
 </body>
 </html>

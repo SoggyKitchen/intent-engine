@@ -870,12 +870,19 @@ def inject_buyer_trust_block(html: str, audit: PageAudit, config: dict) -> str:
     if audit.page_type not in buyer_types or "data-seo-trustbox" in html:
         return html
     site_url = config["siteUrl"].rstrip("/")
+    _now_utc = datetime.now(UTC)
+    _verified_on_iso = _now_utc.date().isoformat()
+    try:
+        _verified_on_label = _now_utc.strftime("%B %-d, %Y")
+    except ValueError:
+        _verified_on_label = _now_utc.strftime("%B %d, %Y").replace(" 0", " ")
     source_line = "Pricing source: public vendor pages linked from this page where available; otherwise marked for verification."
     block = f"""
-<section class="seo-trustbox section" data-seo-trustbox>
+<section class="seo-trustbox section" data-seo-trustbox data-verification-state="needs_manual_review">
   <h2>How SaaSpare keeps this page useful</h2>
   <p><strong>No paid rankings:</strong> Vendors cannot buy placement or verdicts. SaaSpare may earn a commission when readers click some affiliate links, but that does not change the comparison order.</p>
-  <p><strong>Last verified:</strong> {escape(audit.title[:80] or "This buyer page")} is checked during scheduled SEO and link audits. {source_line}</p>
+  <p><strong>Last verified:</strong> This page was last checked on <time datetime="{_verified_on_iso}">{escape(_verified_on_label)}</time> as part of our scheduled SEO and link audits. {source_line}</p>
+  <p><strong>Verification state:</strong> <span data-verification-label>Awaiting manual vendor-source verification</span>. Pricing, trial terms, coupon validity and refund policy may change on the vendor&#x27;s official site at any time &mdash; always confirm on the vendor page linked above before you buy.</p>
   <p><strong>Methodology:</strong> We compare pricing signals, trial paths, buyer fit, alternatives, and visible vendor information. See <a href="{site_url}/methodology">our methodology</a> and <a href="{site_url}/affiliate-disclosure">affiliate disclosure</a>.</p>
   <p><strong>Correction CTA:</strong> See outdated pricing or an incorrect trial detail? <a href="{site_url}/contact">Report an error</a> and include the vendor source.</p>
 </section>
