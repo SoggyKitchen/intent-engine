@@ -64,6 +64,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
 
   try {
     if (env.RESEND_API_KEY) {
+      // 1. Owner notification
       await sendViaResend(env.RESEND_API_KEY, {
         from: env.LEAD_FROM || "SaaSpare <hello@saaspare.org>",
         to: env.LEAD_NOTIFY_TO,
@@ -72,6 +73,18 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         html,
         text,
       });
+      // 2. User confirmation (fire-and-forget)
+      const confSubject = buildUserConfirmSubject(surface);
+      const confHtml    = buildUserConfirmHtml(data, email, surface);
+      const confText    = buildUserConfirmText(surface);
+      sendViaResend(env.RESEND_API_KEY, {
+        from: env.LEAD_FROM || "SaaSpare <hello@saaspare.org>",
+        to: email,
+        reply_to: env.LEAD_NOTIFY_TO || "hello@saaspare.org",
+        subject: confSubject,
+        html: confHtml,
+        text: confText,
+      }).catch((e: unknown) => console.error("user confirm error:", e));
     } else if (env.SEND_EMAIL) {
       await env.SEND_EMAIL.send({ from: env.LEAD_FROM || "hello@saaspare.org", to: env.LEAD_NOTIFY_TO, subject, text, html });
     }
@@ -359,6 +372,135 @@ function auditIntakeEmail(data: Record<string, string>, email: string): string {
   return emailShell("Stack Audit intake · SaaSpare", `New intake — ${tierLabel}`, typeBadge(tierLabel, color), body, email);
 }
 
+// ─── User confirmation emails ──────────────────────────────────────────────────────────────────────────────
+
+function buildUserConfirmSubject(surface: string): string {
+  if (surface.includes("audit") || surface.includes("intake")) return "Your SaaSpare Stack Audit request — we have it";
+  if (surface === "contact" || surface.includes("contact"))    return "Got your message — SaaSpare";
+  return "You’re subscribed to the Weekly SaaS Deal Digest";
+}
+
+function buildUserConfirmText(surface: string): string {
+  if (surface.includes("audit") || surface.includes("intake")) {
+    return [
+      "Hi,", "",
+      "Your Stack Audit request has been received. We’ll review your details and reply within one business day.", "",
+      "Browse our comparisons: https://saaspare.org/pages/", "",
+      "— The SaaSpare team", "https://saaspare.org",
+    ].join("\n");
+  }
+  if (surface === "contact" || surface.includes("contact")) {
+    return [
+      "Hi,", "",
+      "Thanks for reaching out — we got your message and will reply within one business day.", "",
+      "— The SaaSpare team", "https://saaspare.org",
+    ].join("\n");
+  }
+  return [
+    "Hi,", "",
+    "You’re now subscribed to the Weekly SaaS Deal Digest — every Friday: verified discounts, expiring free trials,", "",
+    "quiet price hikes, and the one swap worth making this week.", "",
+    "• Browse 1,000+ comparisons: https://saaspare.org/pages/",
+    "• SaaS Pricing Index: https://saaspare.org/pages/saas-pricing-index.html",
+    "• Free Trial Database: https://saaspare.org/pages/free-trial-database.html",
+    "", "— The SaaSpare team", "https://saaspare.org",
+  ].join("\n");
+}
+
+function buildUserConfirmHtml(data: Record<string, string>, email: string, surface: string): string {
+  const isAudit   = surface.includes("audit") || surface.includes("intake") || !!data.tier;
+  const isContact = surface === "contact" || surface.includes("contact");
+  if (isAudit)   return userAuditConfirmEmail(data, email);
+  if (isContact) return userContactConfirmEmail(email);
+  return userNewsletterConfirmEmail(email);
+}
+
+function userNewsletterConfirmEmail(email: string): string {
+  const cards =
+    featureCard("&#128202;", "1,000+ Comparisons", "Every major SaaS tool head-to-head", "https://saaspare.org/pages/") +
+    featureCard("&#128178;", "Pricing Index", "Real pricing across 16 verticals", "https://saaspare.org/pages/saas-pricing-index.html") +
+    featureCard("&#9989;", "Free Trials", "No-card trials worth grabbing now", "https://saaspare.org/pages/free-trial-database.html");
+
+  const body =
+    sectionHeading("The Weekly SaaS Deal Digest") +
+    `<p style="margin:0 0 20px;font-size:15px;color:${TEXT};line-height:1.7">` +
+      "Every Friday: verified discounts, expiring free trials, quiet price hikes, " +
+      "and the one tool swap worth making this week. No fluff, no paid placements." +
+    `</p>` +
+    `<table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:24px"><tr>` +
+      `<td width="33%" style="padding-right:8px;vertical-align:top">${featureCard("&#128202;", "1,000+ Comparisons", "Every major SaaS tool head-to-head", "https://saaspare.org/pages/")}</td>` +
+      `<td width="33%" style="padding-right:8px;vertical-align:top">${featureCard("&#128178;", "Pricing Index", "Real pricing across 16 verticals", "https://saaspare.org/pages/saas-pricing-index.html")}</td>` +
+      `<td width="34%" style="vertical-align:top">${featureCard("&#9989;", "Free Trials", "No-card trials worth grabbing now", "https://saaspare.org/pages/free-trial-database.html")}</td>` +
+    `</tr></table>` +
+    ctaButton("Browse all comparisons &rarr;", "https://saaspare.org/pages/") +
+    `<p style="margin:20px 0 0;font-size:12px;color:${MUTED};text-align:center">` +
+      `You subscribed as ${h(email)}. ` +
+      `Not you? <a href="mailto:hello@saaspare.org?subject=Unsubscribe" style="color:${MUTED}">Unsubscribe</a>.` +
+    `</p>`;
+
+  return emailShell("You’re subscribed · SaaSpare", "Newsletter confirmed",
+    typeBadge("Weekly SaaS Deal Digest", GREEN), body);
+}
+
+function userContactConfirmEmail(email: string): string {
+  const PURPLE = "#a78bfa";
+  const body =
+    sectionHeading("We got your message") +
+    `<p style="margin:0 0 20px;font-size:15px;color:${TEXT};line-height:1.7">` +
+      `Thanks for reaching out. We’ll get back to you within one business day at ` +
+      `<strong style="color:${TEXT}">${h(email)}</strong>.` +
+    `</p>` +
+    `<p style="margin:0 0 24px;font-size:14px;color:${MUTED};line-height:1.6">` +
+      "Our comparisons and pricing guides are free to browse — no sign-in required." +
+    `</p>` +
+    ctaButton("Browse comparisons &rarr;", "https://saaspare.org/pages/");
+  return emailShell("Got your message · SaaSpare", "Message received",
+    typeBadge("Contact", PURPLE), body);
+}
+
+function userAuditConfirmEmail(data: Record<string, string>, email: string): string {
+  const tier = data.tier || "audit";
+  const tierLabels: Record<string, string> = {
+    brief:     "Stack Brief — A$29",
+    audit:     "Stack Audit — A$99",
+    concierge: "Stack Concierge — A$299",
+  };
+  const tierColors: Record<string, string> = { brief: GREEN, audit: RED, concierge: "#a78bfa" };
+  const tierLabel = tierLabels[tier] || tier;
+  const color     = tierColors[tier] || RED;
+  const name      = (data.name || "").split(" ")[0] || "there";
+
+  const body =
+    sectionHeading("Your request is in") +
+    `<p style="margin:0 0 16px;font-size:15px;color:${TEXT};line-height:1.7">` +
+      `Hi ${h(name)}, your <strong style="color:${TEXT}">${h(tierLabel)}</strong> intake is received. ` +
+      "We’ll review your stack and reply within one business day to confirm fit and next steps." +
+    `</p>` +
+    nextStepBanner(
+      `<span style="color:${AMBER};font-weight:700">&#9656; What happens next:</span> ` +
+      `We’ll email <strong>${h(email)}</strong> to confirm the engagement and walk you through getting started.`
+    ) +
+    `<p style="margin:20px 0 8px;font-size:13px;color:${MUTED}">In the meantime:</p>` +
+    ctaButton("Browse all comparisons &rarr;", "https://saaspare.org/pages/");
+
+  return emailShell(`Audit request received · SaaSpare`, `Intake — ${tierLabel}`,
+    typeBadge(tierLabel, color), body);
+}
+
+function featureCard(icon: string, title: string, desc: string, url: string): string {
+  return `<a href="${h(url)}" style="display:block;text-decoration:none;background:${CARD_EDGE};border:1px solid ${DIM};border-radius:10px;padding:14px 12px;text-align:center">` +
+    `<div style="font-size:22px;margin-bottom:6px">${icon}</div>` +
+    `<div style="font-size:12px;font-weight:800;color:${TEXT};margin-bottom:3px">${h(title)}</div>` +
+    `<div style="font-size:11px;color:${MUTED};line-height:1.4">${h(desc)}</div>` +
+  `</a>`;
+}
+
+function ctaButton(label: string, url: string): string {
+  return `<table cellpadding="0" cellspacing="0" role="presentation" style="margin:0 auto">` +
+    `<tr><td style="background:linear-gradient(135deg,${RED},${RED_DARK});border-radius:100px;padding:0">` +
+    `<a href="${h(url)}" style="display:inline-block;padding:13px 28px;font-size:14px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.02em">${label}</a>` +
+    `</td></tr></table>`;
+}
 // ─── Utilities ────────────────────────────────────────────────────────────────
 
 function h(value: string): string {
