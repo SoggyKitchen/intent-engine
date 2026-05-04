@@ -189,19 +189,15 @@ function emailShell(title: string, label: string, badgeHtml: string, body: strin
     <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
       <tr><td height="1" style="background:linear-gradient(90deg,transparent,rgba(255,255,255,.22) 35%,rgba(255,255,255,.32) 50%,rgba(255,255,255,.22) 65%,transparent);font-size:0;line-height:0">&nbsp;</td></tr>
       <tr><td style="padding:28px 32px 26px;text-align:center">
-        <!-- logo mark + wordmark -->
+        <!-- logo -->
         <table cellpadding="0" cellspacing="0" role="presentation" style="margin:0 auto 12px">
           <tr>
-            <td style="vertical-align:middle;padding-right:8px">
-              <!-- S-mark approximated with two stacked bars -->
-              <table cellpadding="0" cellspacing="0" role="presentation">
-                <tr><td width="18" height="8" style="background:rgba(255,255,255,.9);border-radius:4px 4px 0 4px;font-size:0">&nbsp;</td></tr>
-                <tr><td height="3" style="font-size:0">&nbsp;</td></tr>
-                <tr><td width="18" height="8" style="background:rgba(255,255,255,.55);border-radius:0 4px 4px 4px;font-size:0">&nbsp;</td></tr>
-              </table>
+            <td style="vertical-align:middle;padding-right:10px">
+              <img src="https://saaspare.org/favicon-512.png" alt="SaaSpare" width="40" height="40"
+                style="display:block;border-radius:10px;border:0;width:40px;height:40px">
             </td>
             <td style="vertical-align:middle">
-              <span style="font-size:20px;font-weight:800;color:#ffffff;letter-spacing:-.5px;line-height:1">Saa<span style="color:rgba(255,255,255,.55)">Spare</span></span>
+              <span style="font-size:20px;font-weight:800;color:#ffffff;letter-spacing:-.5px;line-height:1">Saa<span style="color:rgba(255,255,255,.65)">Spare</span></span>
             </td>
           </tr>
         </table>
