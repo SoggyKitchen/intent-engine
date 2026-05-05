@@ -16,16 +16,17 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   integrity:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v5
 
       - name: Install dependencies
         run: uv sync
@@ -49,6 +50,10 @@ jobs:
       - name: Flag risky factual claims
         run: uv run python scripts/flag_risky_claims.py
 
+      # 4b. Keep Amazon Associates links correct (idempotent, safe to re-run).
+      - name: Fix Amazon Associates links
+        run: uv run python scripts/fix_amazon_links.py
+
       # 5. Fail the build if any corruption or schema issue remains.
       - name: CI gate - title / trust-box corruption
         run: uv run pytest tests/test_normalise.py -v
@@ -59,26 +64,27 @@ jobs:
       - name: Run full test suite (best-effort)
         run: uv run pytest -q --ignore=tests/test_seo_integrity.py --ignore=tests/test_normalise.py || true
 
-      # 6. If repairs made changes, open a PR instead of pushing to main.
-      - name: Create pull request with safe auto-fixes
+      # 6. Commit any auto-fixes directly to main.
+      # [skip ci] prevents this commit from re-triggering the workflow.
+      - name: Commit and push safe auto-fixes
         if: success()
-        uses: peter-evans/create-pull-request@v7
-        with:
-          branch: chore/nightly-site-integrity
-          title: "chore: nightly site integrity auto-fixes"
-          commit-message: |
-            chore: nightly safe auto-fixes
+        run: |
+          git config user.email "bot@intentengine.local"
+          git config user.name "IntentBot"
+          git add \
+            outputs/seo/ \
+            site/pages/ \
+            site/index.html \
+            site/about.html \
+            site/media-kit.html \
+            data/public_kpis.json \
+            || true
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: nightly site integrity auto-fixes [skip ci]
 
-            - repaired any new title/trust-box corruption
-            - resynced public KPI counters
-            - re-injected intent-weighted journey links
-            - refreshed manual-review queue for risky factual claims
-          body: |
-            Safe automated fixes only. Human review required for any
-            factual/pricing change. Reports live in `outputs/seo/`.
-
-            - outputs/seo/corruption-report.json
-            - outputs/seo/methodology-normalisation.json
-            - outputs/seo/journey-links.json
-            - outputs/seo/manual_review_queue.json
-          delete-branch: true
+          - repaired any new title/trust-box corruption
+          - resynced public KPI counters
+          - re-injected intent-weighted journey links
+          - refreshed manual-review queue for risky factual claims"
+          git pull --rebase --autostash origin main
+          git push

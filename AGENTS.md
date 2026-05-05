@@ -13,6 +13,7 @@
 | Flag risky factual claims + update verification state | `uv run python scripts/flag_risky_claims.py` |
 | Run the affiliate-network trust pass (Impact / PartnerStack readiness) | `uv run python scripts/trust_pass.py` (use `--check` to dry-run) |
 | Unify nav logo across all buyer pages | `uv run python scripts/nav_unify.py` (use `--check` to dry-run) |
+| Fix Amazon Associates links (remove non-earning AWS tags, add MS365 pill) | `uv run python scripts/fix_amazon_links.py` (use `--check` to dry-run) |
 | Run the existing weekly SEO agent (uses OpenAI/GSC) | `npm run seo:agent` |
 
 ## Source-of-truth files
