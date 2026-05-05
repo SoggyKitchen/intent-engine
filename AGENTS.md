@@ -11,6 +11,7 @@
 | Normalise per-page methodology paragraphs | `uv run python scripts/normalise_methodology_copy.py` |
 | Inject intent-weighted journey links on buyer pages | `uv run python scripts/inject_journey_links.py` (use `--check` to dry-run) |
 | Flag risky factual claims + update verification state | `uv run python scripts/flag_risky_claims.py` |
+| Run the affiliate-network trust pass (Impact / PartnerStack readiness) | `uv run python scripts/trust_pass.py` (use `--check` to dry-run) |
 | Run the existing weekly SEO agent (uses OpenAI/GSC) | `npm run seo:agent` |
 
 ## Source-of-truth files
