@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-05T01:37:48+00:00",
+  "generated_at_utc": "2026-05-05T07:17:17+00:00",
   "mode": "apply",
-  "pages_flagged": 40,
+  "pages_flagged": 41,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -22,6 +22,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ible to switch from ClickUp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out before committing to a paid plan.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out before committing to a paid plan. The migration process"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -76,22 +92,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ou can switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ecamp to Monday.com is relatively easy, as Monday.com offers a free trial and a 14-day money-back guarantee. However, setting up Monday.com can take some time, especially for large teams"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -207,12 +207,17 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "eet to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch.</p> </details> <details class=\"faq-item"
+          "context": "eet to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet.</p> </details> <details"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
           "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet. Smartsheet also offers a free trial"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ng it easy to switch from Smartsheet. Smartsheet also offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
         }
       ],
       "trust_state_bumped": true
@@ -282,7 +287,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "odoist to Monday.com is relatively easy, as both tools offer a free trial and a 14-day money-back guarantee. Monday.com also offers a comprehensive onboarding process to help teams get st"
+          "context": "ine-height:1.8\">Switching from Todoist to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial. However, setting up Monday.com may require some time and effo"
         }
       ],
       "trust_state_bumped": true
@@ -397,6 +402,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-trello-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "you can switch from Trello to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a purchase.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "plan, while Monday.com does not. However, Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "rello to Monday.com is relatively easy, as Monday.com offers a free trial and a 14-day money-back guarantee. However, migrating data from Trello to Monday.com may require some effort, as"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
@@ -515,6 +541,27 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-notion-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "sible to switch from Notion to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan. Notio"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "latform before committing to a paid plan. Notion also offers a free trial and a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
       "claims": [
         {
@@ -586,27 +633,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. Wrike also offers a free"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "switch to their platform. Wrike also offers a free trial, but does not offer a money-back guarantee. Both platforms offer a range of integrations and APIs, making it easy to migra"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
