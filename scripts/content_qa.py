@@ -38,6 +38,8 @@ OUTPUTS = ROOT / 'outputs' / 'seo'
 EXEMPT_PAGES = {
     'site/ph-preview-1.html', 'site/ph-preview-2.html', 'site/ph-preview-3.html',
     'site/_redirects', 'site/sitemap.xml', 'site/robots.txt',
+    # Third-party verification files
+    'site/fo-verify.html', 'site/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f.html',
 }
 
 
@@ -144,7 +146,7 @@ def check_pages(rep: Report) -> None:
 
     for fp in all_pages:
         rel = fp.relative_to(ROOT).as_posix()
-        if rel in EXEMPT_PAGES:
+        if rel in EXEMPT_PAGES or fp.name.startswith('fo-verify'):
             continue
         try:
             raw = fp.read_bytes()
