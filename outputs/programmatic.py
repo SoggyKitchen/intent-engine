@@ -38,6 +38,7 @@ TOOLS_BY_VERTICAL = {
     "cybersecurity": [
         "NordLayer", "1Password Business", "Okta", "CrowdStrike", "Snyk",
         "Cloudflare", "Qualys", "Tenable", "SentinelOne", "Duo Security",
+        "Tresorit",
     ],
     "hr_recruiting": [
         "BambooHR", "Rippling", "Workable", "Greenhouse", "Lever",
@@ -93,7 +94,7 @@ ALTERNATIVE_TARGETS = {
     "finance_ops": ["QuickBooks", "Xero", "FreshBooks"],
     "devtools": ["GitHub Copilot", "Jira", "Datadog"],
     "saas_analytics": ["Tableau", "Power BI", "Google Analytics"],
-    "cybersecurity": ["Okta", "CrowdStrike", "Splunk"],
+    "cybersecurity": ["Okta", "CrowdStrike", "Splunk", "Tresorit"],
     "project_management": ["Asana", "Monday.com", "Jira", "ClickUp"],
     "crm": ["Salesforce", "HubSpot CRM", "Zoho CRM"],
     "password_managers": ["LastPass", "1Password", "Dashlane"],
@@ -189,6 +190,7 @@ BEST_OF_QUERIES = [
     ("finance_ops", "small business", ["FreshBooks", "Xero", "QuickBooks", "Wave", "Zoho Books"]),
     ("ecommerce_tools", "small business", ["Shopify", "WooCommerce", "Gumroad", "Paddle", "Stripe"]),
     ("cybersecurity", "small business", ["1Password Business", "NordLayer", "Cloudflare", "Snyk", "Duo Security"]),
+    ("cybersecurity", "remote teams", ["Tresorit", "1Password Business", "NordLayer", "Cloudflare", "Snyk"]),
     ("ai_ml_tools", "content teams", ["Jasper AI", "Copy.ai", "Writesonic", "Notion AI", "Grammarly"]),
     ("legal_compliance", "startups", ["PandaDoc", "DocuSign", "Contractbook", "Juro", "HelloSign"]),
     ("finance_ops", "B2B SaaS", ["Ramp", "Brex", "Airbase", "Divvy", "Expensify"]),
@@ -279,6 +281,7 @@ FREE_PLAN_TARGETS = [
     ("Monday.com", "project_management"),
     ("Loom", "video_conferencing"),
     ("Cloudflare Access", "vpn_business"),
+    ("Tresorit", "cybersecurity"),
     ("Snyk", "cybersecurity"),
     ("Linear", "devtools"),
     ("Ubersuggest", "seo_tools"),
