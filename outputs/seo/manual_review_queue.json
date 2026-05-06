@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-06T06:12:36+00:00",
+  "generated_at_utc": "2026-05-06T07:36:33+00:00",
   "mode": "apply",
-  "pages_flagged": 38,
+  "pages_flagged": 42,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -19,22 +19,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "guarantee, making it a low-risk option. Databox also offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Our Testing Methodology</h2>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "kUp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from ClickUp.</p> </details> <details cl"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ine-height:1.8\">Switching from ClickUp to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial available. However, setting up Monday.com's workflow builder a"
         }
       ],
       "trust_state_bumped": false
@@ -92,6 +76,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to try out their tool before committing to a purchase.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "ng from Frase.io to Ahrefs is relatively easy, thanks to Ahrefs' free trial and 7-day money-back guarantee. However, migrating data from Frase.io to Ahrefs may require some technical exp"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -254,6 +254,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ible to switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and transition to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and transition to their platform. Todoist also offers a"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "o test and transition to their platform. Todoist also offers a free trial and a 14-day money-back guarantee. In terms of migration, both platforms offer data export options, making it eas"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
@@ -446,6 +467,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-jira-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "s, you can switch from Jira to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "Jira to Monday.com is relatively easy, as Monday.com offers a free trial and a 14-day money-back guarantee. Monday.com's customizable workspace and drag-and-drop builder make it easy to"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/google-meet-vs-webex-which-is-better-in-2026.html",
       "claims": [
         {
@@ -478,22 +515,6 @@
           "label": "money_back_guarantee",
           "snippet": "7-day money-back guarantee",
           "context": "l gives full access to all features \u2014 including features on the paid plan \u2014 for 7-day money-back guarantee. This is your chance to test the tool with real data, not a demo.</p> </div>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-notion-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "sible to switch from Notion to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out before committing to a paid plan.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out before committing to a paid plan. Notion also offers a f"
         }
       ],
       "trust_state_bumped": false
@@ -572,6 +593,33 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/7-best-nordlayer-alternatives-in-2026-free-paid.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "te offers a free trial, but no free plan. However, ExpressVPN Business offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Why are"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "is possible, but may require some effort. Monday.com offers a free trial and a 14-day money-back guarantee. The onboarding process typically takes 1-2 weeks, depending on the complexity"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -586,6 +634,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/deel-vs-remote-com-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "from Remote.com to Deel?</summary> <p>Yes, Deel offers a free trial and a 30-day money-back guarantee, making it easy to switch.</p> </details> <details class=\"faq-item"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "5,255,255,.65);font-size:.92rem;line-height:1.8\">Deel offers a free trial and a 30-day money-back guarantee, making it easy to switch from Remote.com. Remote.com also offers a free trial,"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/freshsales-vs-keap-which-is-better-in-2026.html",
