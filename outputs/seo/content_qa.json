@@ -6,17 +6,17 @@
     "total_pages": 1038,
     "indexable_pages": 1001,
     "title_over_70": 140,
-    "desc_over_165": 7,
     "money_pages": 891,
+    "desc_over_165": 7,
     "soft": 5
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/research/saas-pricing-2026.html: money page missing affiliate disclosure mention",
+    "site/pages/best-crm-software-for-b2b-saas-in-2026-ranked.html: meta desc <80 chars (74)",
     "site/pages/best-devtools-software-for-startups-in-2026-ranked.html: meta desc <80 chars (79)",
-    "site/pages/verification.html: title <30 chars (23)",
     "site/pages/best-saas-analytics-tools-for-2025.html: meta desc <80 chars (69)",
-    "site/pages/best-crm-software-for-b2b-saas-in-2026-ranked.html: meta desc <80 chars (74)"
+    "site/pages/verification.html: title <30 chars (23)",
+    "site/research/saas-pricing-2026.html: money page missing affiliate disclosure mention"
   ],
   "soft_issues_total": 5
 }

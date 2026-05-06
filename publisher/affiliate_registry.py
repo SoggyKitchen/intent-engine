@@ -91,6 +91,16 @@ PROGRAMS = {
     ],
 
     "cybersecurity": [
+        {"name": "Tresorit", "homepage": "https://tresorit.com",
+         "affiliate_url": "https://click.linksynergy.com/fs-bin/click?id=BkjK9id55Qs&offerid=1878376.9&type=3&subid=0",
+         "network": "rakuten", "commission": "up to 40% per sale", "commission_pct": 40,
+         "recurring": False, "avg_plan_usd": 24,
+         "go_slug": "tresorit",
+         "offers": [
+             {"name": "Tresorit Personal", "click_url": "https://click.linksynergy.com/fs-bin/click?id=BkjK9id55Qs&offerid=1878376.9&type=3&subid=0"},
+             {"name": "Tresorit Individual (DE)", "click_url": "https://click.linksynergy.com/fs-bin/click?id=BkjK9id55Qs&offerid=1878376.21&type=3&subid=0"},
+             {"name": "Tresorit DE", "click_url": "https://click.linksynergy.com/fs-bin/click?id=BkjK9id55Qs&offerid=1878376.11&type=3&subid=0"},
+         ]},
         {"name": "NordLayer", "homepage": "https://nordlayer.com",
          "affiliate_url": "https://nordlayer.com/affiliates/", "network": "impact",
          "commission": "30% per sale", "commission_pct": 30, "recurring": False, "avg_plan_usd": 99},
