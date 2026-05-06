@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-06T16:31:15+00:00",
+  "generated_at_utc": "2026-05-06T21:35:26+00:00",
   "mode": "apply",
-  "pages_flagged": 42,
+  "pages_flagged": 41,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -22,6 +22,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "kUp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from ClickUp.</p> </details> <details cl"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from ClickUp. ClickUp also offers a free trial, but w"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ng it easy to switch from ClickUp. ClickUp also offers a free trial, but with a 30-day money-back guarantee. The migration process typically takes 1-2 weeks, depending on the complexity o"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -76,22 +97,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ou can switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ne-height:1.8\">Switching from Basecamp to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial available. However, setting up Monday.com may require some tim"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -202,27 +207,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-smartsheet-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "eet to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet.</p> </details> <details"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet. Smartsheet also offers a free trial"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ng it easy to switch from Smartsheet. Smartsheet also offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/mailchimp-vs-brevo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -256,6 +240,27 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "nge of pricing plans, starting at $49/year for a single site. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "e plan. However, Frase.io offers a 14-day free trial, and Rankmath Pro offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "plans, starting at $49/year for a single site. Both tools offer a free trial or money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Frase.io</h2>"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/clickup-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
@@ -287,7 +292,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "odoist to Monday.com is relatively easy, as both tools offer a free trial and a 14-day money-back guarantee. However, it's recommended to plan and execute the migration carefully to avoid"
+          "context": "Todoist to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, it may take some time to set up and configure Monday.com's advanced f"
         }
       ],
       "trust_state_bumped": true
@@ -425,6 +430,27 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/loom-vs-riverside-fm-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "an switch from Riverside.fm to Loom at any time. Loom offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Loo"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "Switching from Riverside.fm to Loom is easy, and Loom offers a free trial and a 30-day money-back guarantee. Riverside.fm also offers a free trial and a 30-day money-back guarantee.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "and a 30-day money-back guarantee. Riverside.fm also offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/pipedrive-vs-zoho-crm-which-is-better-in-2026.html",
       "claims": [
         {
@@ -520,22 +546,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-notion-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "sible to switch from Notion to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
       "claims": [
         {
@@ -546,12 +556,27 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "ng nor Frase.io offers a free plan. However, both tools offer free trials and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+          "context": "er a free trial, but neither tool has a free plan. However, SE Ranking offers a 30-day money-back guarantee, while Frase.io offers a 14-day money-back guarantee.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "wever, SE Ranking offers a 30-day money-back guarantee, while Frase.io offers a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "e:.92rem;line-height:1.8\">SE Ranking and Frase.io both offer a free trial and a 30-day money-back guarantee, making it easy to try out their features and support before committing to a pu"
+          "context": "h tools offer a free trial, neither tool has a free plan. However, SE Ranking's 30-day money-back guarantee and Frase.io's 14-day money-back guarantee provide some flexibility for users w"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "s a free plan. However, SE Ranking's 30-day money-back guarantee and Frase.io's 14-day money-back guarantee provide some flexibility for users who want to try out the tools before committ"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "rase.io to SE Ranking is relatively easy, thanks to SE Ranking's free trial and 30-day money-back guarantee. Users can try out SE Ranking's features and support before committing to a pur"
         }
       ],
       "trust_state_bumped": true
@@ -581,27 +606,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/clearscope-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "lso offers a 14-day free trial, while Frase.io offers a 14-day free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Clearscope</h2>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "-importing it into Clearscope. Clearscope also offers a 14-day free trial and a 30-day money-back guarantee, while Frase.io offers a 14-day free trial and a 30-day money-back guarantee.</"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "a 30-day money-back guarantee, while Frase.io offers a 14-day free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/notion-vs-basecamp-which-is-better-in-2026.html",
