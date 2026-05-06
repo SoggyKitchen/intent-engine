@@ -311,25 +311,8 @@ def _build_schema(data: dict, domain: str = "https://saaspare.org", canonical: s
             "description": t.get("description", "")[:300],
             "image": f"{domain}/og-default.png",
             "brand": {"@type": "Brand", "name": t.get("name", "")},
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": round(float(sc["overall"]), 1),
-                "bestRating": 5,
-                "worstRating": 1,
-                "ratingCount": 1,
-                "reviewCount": 1,
-            },
-            "review": {
-                "@type": "Review",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": round(float(sc["overall"]), 1),
-                    "bestRating": 5,
-                },
-                "author": {"@type": "Organization", "name": "SaaSpare"},
-                "datePublished": time.strftime("%Y-%m-%d"),
-                "reviewBody": (t.get("description", "") + " " + " ".join(t.get("pros", [])))[:480],
-            },
+            # aggregateRating + review removed: synthetic single-editor scores
+            # are not aggregated reviews and violate Phase 2 schema rules.
         }
         if t.get("affiliate_url"):
             product["offers"] = {

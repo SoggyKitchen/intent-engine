@@ -125,20 +125,9 @@ def transform(html: str, file_path: str) -> tuple[str, int]:
             "name": name,
             "image": f"{DOMAIN}/og-default.png",
             "brand": {"@type": "Brand", "name": name},
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": sc["overall"],
-                "bestRating": 5,
-                "worstRating": 1,
-                "ratingCount": 1,
-                "reviewCount": 1,
-            },
-            "review": {
-                "@type": "Review",
-                "reviewRating": {"@type": "Rating", "ratingValue": sc["overall"], "bestRating": 5},
-                "author": {"@type": "Organization", "name": "SaaSpare"},
-            },
-        })
+            # aggregateRating + review removed: synthetic single-editor
+            # scores are not aggregated reviews (Phase 2 rule).
+            })
         inserted += 1
         return head + block + cons_open
 
