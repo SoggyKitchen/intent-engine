@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-06T01:29:42+00:00",
+  "generated_at_utc": "2026-05-06T06:12:36+00:00",
   "mode": "apply",
   "pages_flagged": 38,
   "claim_labels_seen": [
@@ -37,7 +37,7 @@
           "context": "ine-height:1.8\">Switching from ClickUp to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial available. However, setting up Monday.com's workflow builder a"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -496,7 +496,7 @@
           "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out before committing to a paid plan. Notion also offers a f"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
