@@ -28,6 +28,9 @@ SITEMAP = SITE / "sitemap.xml"
 # Pages we allow without canonical (tooling / non-indexable)
 ALLOW_NO_CANONICAL = {
     SITE / "_redirects",
+    # Third-party site-verification files
+    SITE / "fo-verify.html",
+    SITE / "fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f.html",
 }
 # Pages that are intentionally not in sitemap (preview, utility)
 ALLOW_NOT_IN_SITEMAP = {
@@ -86,7 +89,7 @@ def _sitemap_urls() -> set[str]:
 def test_every_html_page_has_canonical():
     missing: list[str] = []
     for path in _iter_html():
-        if path in ALLOW_NO_CANONICAL:
+        if path in ALLOW_NO_CANONICAL or path.name.startswith("fo-verify"):
             continue
         try:
             raw = path.read_text(encoding="utf-8")
