@@ -54,6 +54,17 @@ jobs:
       - name: Fix Amazon Associates links
         run: uv run python scripts/fix_amazon_links.py
 
+      # 4c. Strip fake aggregateRating, consolidate duplicate canonicals,
+      # ensure ph-preview pages stay noindex'd (idempotent).
+      - name: SEO consolidation pass
+        run: uv run python scripts/seo_consolidate.py
+
+      # 5. Comprehensive content QA gate (titles, descs, canonicals, JSON-LD,
+      # sitemap, robots, money-page disclosure + sponsored attrs).
+      # Hard failures fail the build; soft issues logged to outputs/seo/content_qa.json.
+      - name: CI gate - content QA
+        run: uv run python scripts/content_qa.py
+
       # 5. Fail the build if any corruption or schema issue remains.
       - name: CI gate - title / trust-box corruption
         run: uv run pytest tests/test_normalise.py -v

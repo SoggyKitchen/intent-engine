@@ -14,6 +14,8 @@
 | Run the affiliate-network trust pass (Impact / PartnerStack readiness) | `uv run python scripts/trust_pass.py` (use `--check` to dry-run) |
 | Unify nav logo across all buyer pages | `uv run python scripts/nav_unify.py` (use `--check` to dry-run) |
 | Fix Amazon Associates links (remove non-earning AWS tags, add MS365 pill) | `uv run python scripts/fix_amazon_links.py` (use `--check` to dry-run) |
+| SEO consolidation: strip fake aggregateRating, fix duplicate canonicals, noindex previews | `uv run python scripts/seo_consolidate.py` (use `--check` to dry-run) |
+| Comprehensive content QA gate (CI; reports to outputs/seo/content_qa.json) | `uv run python scripts/content_qa.py` |
 | Run the existing weekly SEO agent (uses OpenAI/GSC) | `npm run seo:agent` |
 
 ## Source-of-truth files

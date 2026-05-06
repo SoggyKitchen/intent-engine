@@ -1,11 +1,32 @@
 User-agent: *
 Allow: /
 Disallow: /_redirects
+Disallow: /go/
 
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI / LLM crawlers — explicitly allowed
 User-agent: GPTBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: anthropic-ai
@@ -14,10 +35,10 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Perplexity-User
 Allow: /
 
-User-agent: Bingbot
+User-agent: Google-Extended
 Allow: /
 
 User-agent: Applebot-Extended
@@ -26,6 +47,18 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Sitemaps + LLM index
 Sitemap: https://saaspare.org/sitemap.xml
 LLM-Content: https://saaspare.org/llms.txt
-# RSS: https://saaspare.org/feed.xml

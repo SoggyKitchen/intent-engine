@@ -149,3 +149,36 @@
 /go/xero https://www.xero.com/us/pricing-plans/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/zoho-crm https://www.zoho.com/crm/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/zoom https://zoom.us?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+
+# === seo_consolidate.py duplicates -> canonical 301s ===
+/pages/1password-promo-code-2026-discounts-deals-that-actually-work /pages/1password-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work /pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/asana-promo-code-2026-discounts-deals-that-actually-work /pages/asana-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/clickup-promo-code-2026-discounts-deals-that-actually-work /pages/clickup-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/datadog-promo-code-2026-discounts-deals-that-actually-work /pages/datadog-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/deel-promo-code-2026-discounts-deals-that-actually-work /pages/deel-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work /pages/hubspot-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work /pages/monday-com-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/notion-promo-code-2026-discounts-deals-that-actually-work /pages/notion-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work /pages/pipedrive-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/rippling-promo-code-2026-discounts-deals-that-actually-work /pages/rippling-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/semrush-promo-code-2026-discounts-deals-that-actually-work /pages/semrush-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/shopify-promo-code-2026-discounts-deals-that-actually-work /pages/shopify-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work /pages/surfer-seo-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/xero-promo-code-2026-discounts-deals-that-actually-work /pages/xero-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/zoom-promo-code-2026-discounts-deals-that-actually-work /pages/zoom-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/7-best-1password-alternatives-in-2026-free-paid /pages/best-1password-alternatives-in-2026-free-paid 301
+/pages/7-best-ahrefs-alternatives-in-2026-free-paid /pages/best-ahrefs-alternatives-in-2026-free-paid 301
+/pages/7-best-asana-alternatives-in-2026-free-paid /pages/best-asana-alternatives-in-2026-free-paid 301
+/pages/7-best-clickup-alternatives-in-2026-free-paid /pages/best-clickup-alternatives-in-2026-free-paid 301
+/pages/7-best-datadog-alternatives-in-2026-free-paid /pages/best-datadog-alternatives-in-2026-free-paid 301
+/pages/7-best-freshbooks-alternatives-in-2026-free-paid /pages/best-freshbooks-alternatives-in-2026-free-paid 301
+/pages/7-best-hubspot-alternatives-in-2026-free-paid /pages/best-hubspot-alternatives-in-2026-free-paid 301
+/pages/7-best-monday-com-alternatives-in-2026-free-paid /pages/best-monday-com-alternatives-in-2026-free-paid 301
+/pages/7-best-moz-pro-alternatives-in-2026-free-paid /pages/best-moz-pro-alternatives-in-2026-free-paid 301
+/pages/7-best-salesforce-alternatives-in-2026-free-paid /pages/best-salesforce-alternatives-in-2026-free-paid 301
+/pages/7-best-semrush-alternatives-in-2026-free-paid /pages/best-semrush-alternatives-in-2026-free-paid 301
+/pages/7-best-shopify-alternatives-in-2026-free-paid /pages/best-shopify-alternatives-in-2026-free-paid 301
+/pages/7-best-surfer-seo-alternatives-in-2026-free-paid /pages/best-surfer-seo-alternatives-in-2026-free-paid 301
+/pages/7-best-xero-alternatives-in-2026-free-paid /pages/best-xero-alternatives-in-2026-free-paid 301
+/pages/7-best-zoom-alternatives-in-2026-free-paid /pages/best-zoom-alternatives-in-2026-free-paid 301
