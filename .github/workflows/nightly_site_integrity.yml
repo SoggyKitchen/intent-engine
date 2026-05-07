@@ -65,6 +65,20 @@ jobs:
       - name: Blast off (CTR + AEO)
         run: uv run python scripts/blast_off.py
 
+      # 4e. Kill orphan pages — every money page gets 5 contextually
+      # relevant internal links (same tool, same vertical, same page kind).
+      - name: Internal links pass
+        run: uv run python scripts/internal_links.py --seed 42
+
+      # 4f. Site-wide upgrade: sitemap changefreq, homepage mega-schema,
+      # manifest, Clarity, exit-intent newsletter, lazy-loading, OG preload.
+      - name: Site upgrade pass
+        run: uv run python scripts/site_upgrade.py
+
+      # 4g. Rebuild /llms-full.txt — dense LLM-readable index.
+      - name: Build llms-full.txt
+        run: uv run python scripts/build_llms_full.py
+
       # 5. Comprehensive content QA gate (titles, descs, canonicals, JSON-LD,
       # sitemap, robots, money-page disclosure + sponsored attrs).
       # Hard failures fail the build; soft issues logged to outputs/seo/content_qa.json.

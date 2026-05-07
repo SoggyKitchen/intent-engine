@@ -1,0 +1,46 @@
+# Cloudflare Pages headers — applies site-wide.
+# Docs: https://developers.cloudflare.com/pages/configuration/headers/
+
+# Long-cache static assets (everything under /assets/ is fingerprintable or cheap to refresh)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Favicons, icons, OG image — long cache
+/favicon-*.png
+  Cache-Control: public, max-age=31536000, immutable
+/favicon.svg
+  Cache-Control: public, max-age=31536000, immutable
+/apple-touch-icon.png
+  Cache-Control: public, max-age=31536000, immutable
+/og-default.png
+  Cache-Control: public, max-age=604800
+
+# HTML — short cache, stale-while-revalidate for fast subsequent loads
+/*.html
+  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+
+# Site root index — short cache so edits propagate fast
+/
+  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+
+# Security + SEO headers — global
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+
+# /go/ affiliate redirects — do not index, do not cache
+/go/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+
+# llms.txt / llms-full.txt — short cache so LLM crawlers see fresh data
+/llms.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+/llms-full.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8

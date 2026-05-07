@@ -1,1 +1,7 @@
 google.com, pub-9433840442322701, DIRECT, f08c47fec0942fa0
+
+# Managed affiliate networks
+# Sovrn Commerce (managed affiliate — authorized seller relationship)
+# sovrn.com is not a display-ad network so does not require an ads.txt entry.
+# If we add Sovrn onboarding to display inventory later, add:
+# sovrn.com, <publisher-id>, DIRECT, fafdf38b16bf6b2b

@@ -16,6 +16,9 @@
 | Fix Amazon Associates links (remove non-earning AWS tags, add MS365 pill) | `uv run python scripts/fix_amazon_links.py` (use `--check` to dry-run) |
 | SEO consolidation: strip fake aggregateRating, fix duplicate canonicals, noindex previews | `uv run python scripts/seo_consolidate.py` (use `--check` to dry-run) |
 | CTR + AEO blast (rewrite titles/descs, refresh dateModified, add featured-answer boxes, ping IndexNow) | `uv run python scripts/blast_off.py` (use `--check` to dry-run, `--no-indexnow` to skip ping) |
+| Kill orphan pages: inject "Related comparisons" block on every money page | `uv run python scripts/internal_links.py --seed 42` (use `--check` to dry-run) |
+| Site upgrade: sitemap changefreq, homepage mega-schema, manifest, Clarity, exit-intent, lazy-loading | `uv run python scripts/site_upgrade.py` (use `--check` to dry-run) |
+| Rebuild /llms-full.txt dense LLM content index | `uv run python scripts/build_llms_full.py` |
 | Comprehensive content QA gate (CI; reports to outputs/seo/content_qa.json) | `uv run python scripts/content_qa.py` |
 | Run the existing weekly SEO agent (uses OpenAI/GSC) | `npm run seo:agent` |
 

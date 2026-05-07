@@ -391,6 +391,117 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 <!-- ga-events-v1 --><script defer src="/assets/saaspare-events.js"></script>
 <!-- speakable-v1 --><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"SaaSpare","url":"https://saaspare.org","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".page-sub",".page-eyebrow"]}}</script>
 <!-- rss-autodiscovery --><link rel="alternate" type="application/rss+xml" title="SaaSpare" href="/feed.xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" as="image" href="/og-default.png" fetchpriority="high">
+<script type="application/ld+json" id="schema-website-search">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://saaspare.org/#website",
+      "url": "https://saaspare.org/",
+      "name": "SaaSpare",
+      "description": "Independent B2B SaaS comparison platform with real pricing data and honest verdicts.",
+      "publisher": { "@id": "https://saaspare.org/#organization" },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://saaspare.org/pages/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://saaspare.org/#organization",
+      "name": "SaaSpare",
+      "url": "https://saaspare.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://saaspare.org/favicon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Independent editorial platform comparing 1,000+ B2B SaaS tools with real pricing, hidden-fee analysis, and honest verdicts.",
+      "foundingDate": "2026",
+      "areaServed": "Worldwide",
+      "knowsAbout": ["B2B SaaS", "Software Pricing", "CRM", "SEO Tools", "Dev Tools", "HR Software", "Finance Operations"],
+      "sameAs": [
+        "https://www.linkedin.com/company/saaspare",
+        "https://twitter.com/saaspare",
+        "https://x.com/saaspare",
+        "https://www.producthunt.com/@saaspare",
+        "https://www.crunchbase.com/organization/saaspare"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Editorial",
+        "email": "hello@saaspare.org",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English"]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://saaspare.org/#faq-homepage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is SaaSpare free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, every comparison, pricing page and guide on SaaSpare is free to read. We earn commissions on some affiliate links (clearly disclosed) but our verdicts are editorial and cannot be paid for."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often is SaaSpare updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing data is refreshed weekly. Comparisons and best-of rankings are updated monthly. Our full site is re-audited every night and the dateModified schema is refreshed so readers always see the latest verdict."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can vendors pay to rank higher on SaaSpare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Vendors cannot pay to change verdicts or rankings on SaaSpare. Some pages include affiliate links so we earn a commission if you sign up, but the ranking order is determined by our editorial methodology, not by who pays us."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does SaaSpare get its pricing data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We pull pricing directly from the vendor's public pricing pages, verify it manually, and call out hidden fees (setup costs, per-seat traps, annual-only discounts). Every money page links to the vendor source so you can confirm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many SaaS tools does SaaSpare compare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SaaSpare currently covers 1,000+ B2B SaaS tools across 16 verticals including CRM, SEO, HR, finance operations, dev tools, project management, marketing automation, security, AI, analytics, e-commerce and more."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Microsoft Clarity (heatmaps + session replay, cookieless by default) -->
+<script id="clarity-ms">
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window,document,"clarity","script","CLARITY_PROJECT_ID_REPLACE_ME");
+</script>
 </head>
 <body>
 
@@ -1014,6 +1125,45 @@ document.addEventListener('click',function(e){
     var f = el.tagName === 'FORM' ? el : el.querySelector('form');
     if (f) bind(f, SUCCESS_EXIT, 'exit_intent');
   });
+})();
+</script>
+
+<!-- Exit-intent newsletter modal (desktop only, one-time per session) -->
+<style>
+#ss-exit-modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9999}
+#ss-exit-modal[data-open="1"]{display:flex}
+#ss-exit-card{max-width:440px;background:#0d0d16;padding:2rem;border-radius:16px;border:1px solid #1a1a28;color:#f4f4f8;text-align:center;font-family:inherit;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+#ss-exit-card h3{margin:0 0 .5rem 0;font-size:1.4rem;color:#e94560}
+#ss-exit-card p{margin:0 0 1.2rem 0;opacity:.82;line-height:1.5}
+#ss-exit-card form{display:flex;gap:.5rem}
+#ss-exit-card input{flex:1;padding:.75rem 1rem;background:#07070d;border:1px solid #222;border-radius:8px;color:inherit;font-size:1rem}
+#ss-exit-card button{padding:.75rem 1.2rem;background:#e94560;color:#fff;border:0;border-radius:8px;font-weight:700;cursor:pointer}
+#ss-exit-close{position:absolute;top:18px;right:22px;background:transparent;border:0;color:#777;font-size:1.3rem;cursor:pointer}
+</style>
+<script id="exit-intent-newsletter">
+(function(){
+  if(sessionStorage.getItem('ssExitShown'))return;
+  if(window.innerWidth<768)return; // desktop only
+  var shown=false;
+  function show(){
+    if(shown)return; shown=true;
+    sessionStorage.setItem('ssExitShown','1');
+    var m=document.createElement('div'); m.id='ss-exit-modal'; m.setAttribute('data-open','1');
+    m.innerHTML='<div id="ss-exit-card"><button id="ss-exit-close" aria-label="Close">&times;</button>'
+      +'<h3>Before you go &mdash; the honest SaaS deals weekly</h3>'
+      +'<p>Every Friday we email 1 verified deal, 1 pricing change and 1 tool to avoid. Free, no spam.</p>'
+      +'<form action="https://formsubmit.co/ajax/hellothere@saaspare.org" method="POST" id="ss-exit-form">'
+      +'<input type="email" name="email" placeholder="you@company.com" required><button type="submit">Get it</button>'
+      +'</form></div>';
+    document.body.appendChild(m);
+    m.addEventListener('click',function(e){if(e.target===m)m.remove();});
+    document.getElementById('ss-exit-close').onclick=function(){m.remove();};
+    document.getElementById('ss-exit-form').addEventListener('submit',function(e){
+      if(window.gtag)gtag('event','newsletter_signup',{source:'exit_intent'});
+    });
+  }
+  document.addEventListener('mouseleave',function(e){if(e.clientY<=0)show();});
+  setTimeout(show,120000); // also show after 2 min if user stays
 })();
 </script>
 </body>

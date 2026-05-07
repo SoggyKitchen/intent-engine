@@ -1,530 +1,1118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SaaS ROI Calculator 2026 — Is Your Software Worth It? | SaaSpare</title>
-<meta name="description" content="Updated May 2026. Free SaaS ROI calculator. Find out if your business software is worth the cost. Calculate payback period, annual savings and break-even point…">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://saaspare.org/pages/saas-roi-calculator">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-<link rel="apple-touch-icon" href="/favicon-192.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.svg">
-<meta name="theme-color" content="#080810">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:#080810;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
-a{text-decoration:none;color:inherit}
-::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
-::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
-
-@keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.9;transform:scale(1.08)}}
-@keyframes glow2{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:.45;transform:scale(1.15)}}
-@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
-@keyframes pulse{0%,100%{box-shadow:0 0 6px #e94560,0 0 0 0 rgba(233,69,96,.5)}50%{box-shadow:0 0 18px #e94560,0 0 0 10px rgba(233,69,96,0)}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-@keyframes countUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
-.logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}.wv{pointer-events:none;transition:opacity .3s}@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}.logo:hover .logo-mark{animation:none}.logo:hover .mark-top{transform:translateX(26px);filter:drop-shadow(-2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}.logo:hover .mark-bot{transform:translateX(-26px);filter:drop-shadow(2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}.logo:hover .wv,.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{opacity:0}
-.logo{display:flex;align-items:center;gap:9px;margin-right:auto}
-
-.logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff;font-family:'Inter',system-ui,sans-serif}
-.logo-text em{color:#e94560;font-style:normal}
-.nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s}
-.nav-link:hover{color:#fff}
-.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s}
-.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-
-.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 100% 70% at 50% -5%,#1a0d12 0%,#0d0008 40%,#080810 75%);padding:8rem 2rem 4rem;text-align:center;z-index:1}
-.orb{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px)}
-.orb1{width:600px;height:600px;background:radial-gradient(circle,rgba(233,69,96,.15) 0%,transparent 65%);top:-220px;left:50%;transform:translateX(-50%);animation:glow 9s ease-in-out infinite}
-.orb2{width:300px;height:300px;background:radial-gradient(circle,rgba(180,40,60,.1) 0%,transparent 70%);top:40px;right:-100px;animation:glow2 11s ease-in-out infinite 2s}
-
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.9);padding:6px 18px;border-radius:100px;font-size:.76rem;font-weight:700;letter-spacing:.4px;margin-bottom:1.8rem;animation:up .6s ease both}
-.badge-dot{width:6px;height:6px;border-radius:50%;background:#e94560;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
-.hero h1{font-size:clamp(1.9rem,5.5vw,3.2rem);font-weight:900;color:#fff;line-height:1.08;letter-spacing:-1px;margin-bottom:1rem;animation:up .7s .1s ease both}
-.grad-text{background:linear-gradient(135deg,#ff6b85 0%,#e94560 50%,#e94060 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3.5s linear infinite}
-.hero-sub{color:rgba(255,255,255,.38);font-size:.98rem;line-height:1.8;max-width:430px;margin:0 auto 2.5rem;animation:up .7s .2s ease both}
-
-.container{max-width:700px;margin:0 auto;padding:0 1.5rem 5rem;position:relative;z-index:1}
-
-.card{background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1.75rem;margin-bottom:1rem;transition:border-color .3s;backdrop-filter:blur(8px)}
-.card:focus-within{border-color:rgba(233,69,96,.3)}
-.card-title{display:flex;align-items:center;gap:10px;margin-bottom:1.4rem}
-.card-icon{width:34px;height:34px;background:rgba(233,69,96,.12);border:1px solid rgba(233,69,96,.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.card-icon svg{width:16px;height:16px;stroke:#e94560;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.card h2{font-size:1rem;font-weight:700;color:#fff;letter-spacing:-.2px}
-
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.field{margin-bottom:1rem}
-.field:last-child{margin-bottom:0}
-.field label{display:block;font-size:.8rem;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:.5rem;letter-spacing:.1px}
-.input-wrap{position:relative}
-.input-prefix{position:absolute;left:13px;top:50%;transform:translateY(-50%);font-size:.9rem;color:rgba(255,255,255,.28);pointer-events:none;font-weight:500}
-.field input,.field select{width:100%;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.72rem 1rem .72rem 2rem;font-size:.92rem;color:#fff;font-family:inherit;transition:border-color .2s,background .2s;-webkit-appearance:none}
-.field input::placeholder{color:rgba(255,255,255,.2)}
-.field input:focus,.field select:focus{outline:none;border-color:rgba(233,69,96,.5);background:rgba(255,255,255,.07)}
-.field small{font-size:.74rem;color:rgba(255,255,255,.25);margin-top:.4rem;display:block}
-
-.btn{width:100%;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:1rem 2rem;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;box-shadow:0 8px 28px rgba(233,69,96,.4);transition:transform .15s,box-shadow .15s;margin-top:.5rem;letter-spacing:-.1px}
-.btn:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(233,69,96,.55)}
-.btn:active{transform:translateY(0)}
-
-.results{display:none}
-.results.show{display:block;animation:fadeUp .4s ease}
-
-.results-card{background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1.75rem;margin-top:1rem;margin-bottom:1rem}
-.results-card h2{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.8px;text-transform:uppercase;margin-bottom:1.4rem}
-
-.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:1.4rem}
-.result-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:1.25rem 1rem;text-align:center;transition:border-color .25s}
-.result-box.highlight{background:rgba(233,69,96,.1);border-color:rgba(233,69,96,.3)}
-.result-box .val{font-size:1.9rem;font-weight:900;color:#e94560;letter-spacing:-.5px;line-height:1;display:block;font-variant-numeric:tabular-nums;animation:countUp .35s ease both}
-.result-box.positive .val{color:#34d399}
-.result-box .lbl{font-size:.73rem;color:rgba(255,255,255,.32);margin-top:.4rem;display:block;font-weight:500;letter-spacing:.2px}
-
-.verdict{padding:1.1rem 1.4rem;border-radius:12px;margin-bottom:0;font-size:.9rem;line-height:1.65;border:1px solid transparent}
-.verdict.good{background:rgba(52,211,153,.08);border-color:rgba(52,211,153,.25);color:rgba(200,255,235,.85)}
-.verdict.good strong{color:#34d399}
-.verdict.bad{background:rgba(233,69,96,.08);border-color:rgba(233,69,96,.25);color:rgba(255,200,200,.85)}
-.verdict.bad strong{color:#e94560}
-.verdict.ok{background:rgba(251,191,36,.07);border-color:rgba(251,191,36,.22);color:rgba(255,240,180,.85)}
-.verdict.ok strong{color:#fbbf24}
-
-.cta-box{background:linear-gradient(135deg,rgba(233,69,96,.14),rgba(180,40,60,.1));border:1px solid rgba(233,69,96,.22);color:#fff;padding:2rem;border-radius:18px;text-align:center;margin-top:1rem}
-.cta-box h3{font-size:1.12rem;font-weight:800;letter-spacing:-.3px;margin-bottom:.5rem}
-.cta-box p{color:rgba(255,255,255,.35);font-size:.86rem;margin-bottom:1.4rem;line-height:1.7}
-.cta-links{display:flex;gap:.65rem;justify-content:center;flex-wrap:wrap}
-.cta-btn{display:inline-block;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.72rem 1.75rem;border-radius:100px;font-weight:700;font-size:.88rem;box-shadow:0 6px 20px rgba(233,69,96,.4);transition:transform .15s,box-shadow .15s}
-.cta-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(233,69,96,.55)}
-.cta-box .affiliate-note{max-width:620px;margin:.9rem auto 0;color:rgba(255,255,255,.5);font-size:.78rem}
-
-.how-to{background:rgba(255,255,255,.028);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:1.6rem;margin-top:1rem}
-.how-to h3{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.1rem}
-.how-to ul{list-style:none;padding:0}
-.how-to li{padding:.5rem 0;font-size:.86rem;color:rgba(255,255,255,.42);border-bottom:1px solid rgba(255,255,255,.05);line-height:1.65;display:flex;gap:.75rem;align-items:flex-start}
-.how-to li:last-child{border-bottom:none}
-.how-to li::before{content:'';width:5px;height:5px;border-radius:50%;background:#e94560;flex-shrink:0;margin-top:.55rem}
-.how-to li strong{color:rgba(255,255,255,.7)}
-
-footer{text-align:center;color:rgba(255,255,255,.2);font-size:.8rem;padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);display:flex;gap:1.5rem;justify-content:center}
-footer a{color:rgba(255,255,255,.28);transition:color .2s}
-footer a:hover{color:rgba(255,255,255,.7)}
-
-.sticky-cta-v2{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);width:min(720px,calc(100vw - 28px));background:rgba(11,11,19,.96);color:#fff;padding:.75rem .85rem;display:none;align-items:center;justify-content:space-between;gap:.8rem;box-shadow:0 18px 60px rgba(0,0,0,.42);border:1px solid rgba(233,69,96,.26);border-radius:999px;z-index:100;backdrop-filter:blur(18px)}
-.sticky-cta-v2.show{display:flex}
-.sticky-cta-v2 a{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.55rem 1rem;border-radius:999px;text-decoration:none;font-weight:800;font-size:.82rem;white-space:nowrap}
-.sticky-cta-v2 button{background:none;border:none;color:rgba(255,255,255,.55);font-size:1.1rem;cursor:pointer}
-.exit-modal-v2{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:center;justify-content:center;z-index:1000;padding:1rem;backdrop-filter:blur(10px)}
-.exit-modal-v2.show{display:flex}
-.exit-card-v2{background:#111119;border:1px solid rgba(255,255,255,.1);box-shadow:0 28px 90px rgba(0,0,0,.5);border-radius:20px;padding:2rem;max-width:460px;text-align:center;position:relative;color:#fff}
-.exit-card-v2 h3{color:#fff;font-size:1.35rem;margin-bottom:.5rem;letter-spacing:-.03em}
-.exit-card-v2 p{color:rgba(255,255,255,.55);font-size:.92rem;margin-bottom:1.25rem}
-.exit-close-v2{position:absolute;top:.65rem;right:.8rem;background:none;border:none;font-size:1.45rem;color:rgba(255,255,255,.42);cursor:pointer}
-.exit-card-v2 form{display:flex;gap:.5rem;flex-wrap:wrap}
-.exit-card-v2 input{flex:1;min-width:190px;padding:.72rem .95rem;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(255,255,255,.07);color:#fff}
-.exit-card-v2 button[type=submit]{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:.72rem 1.15rem;border-radius:999px;font-weight:800;cursor:pointer}
-
-@media(max-width:560px){
-  .grid2{grid-template-columns:1fr}
-  .result-grid{grid-template-columns:1fr 1fr}
-  .hero{padding:6.5rem 1.5rem 3rem}
-
-  .ad-slot-v2{margin:2rem 0;text-align:center;min-height:90px;background:#fafbfc;border-radius:6px;padding:1rem}
-  .ad-label-v2{font-size:.65rem;color:#bbb;letter-spacing:.5px;text-transform:uppercase;display:block;margin-bottom:.25rem}
-  .sticky-cta-v2{left:10px;right:10px;bottom:10px;transform:none;width:auto;border-radius:18px}
-}
-nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}nav#nav.scrolled,nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}</style>
-<meta name="google-adsense-account" content="ca-pub-9433840442322701">
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
-<!-- saaspare-v2-patched -->
-<!-- enhanced-v1 -->
-
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<link rel="stylesheet" href="/assets/saaspare-ui.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org", "logo": "https://saaspare.org/og-default.png", "description": "Unbiased B2B SaaS comparisons, real pricing, and expert recommendations.", "sameAs": ["https://twitter.com/SaaSpare"]}</script>
-<!-- enhanced-v2 -->
-<meta property="og:title" content="SaaS ROI Calculator 2026 — Is Your Software Worth It? | SaaSpare">
-<meta property="og:description" content="Free SaaS ROI calculator. Find out if your business software is worth the cost. Calculate payback period, annual savings and break-even point.">
-<meta property="og:url" content="https://saaspare.org/pages/saas-roi-calculator">
-<meta property="og:type" content="website">
-<meta name="twitter:title" content="SaaS ROI Calculator 2026 — Is Your Software Worth It? | SaaSpare">
-<meta name="twitter:description" content="Free SaaS ROI calculator. Find out if your business software is worth the cost. Calculate payback period, annual savings and break-even point.">
-<meta name="keywords" content="SaaS ROI Calculator 2026 — Is Your Software Worth It?, other, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
-<meta name="twitter:site" content="@SaaSpare">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
-<!-- unified-v2 -->
-<!-- ga-events-v1 --><script defer src="/assets/saaspare-events.js"></script>
-<!-- rss-autodiscovery --><link rel="alternate" type="application/rss+xml" title="SaaSpare" href="/feed.xml">
-</head>
-<body>
-
-<nav id="nav">
-  <a href="https://saaspare.org" class="logo">
-    <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg>
-    <span class="logo-text">Saa<em>Spare</em></span>
-  </a>
-  <a href="https://saaspare.org/pages/" class="nav-link">Comparisons</a>
-  <a href="https://saaspare.org/pages/saas-roi-calculator" class="nav-link" style="color:#fff">ROI Calculator</a>
-  <a href="https://saaspare.org/about" class="nav-link">About</a>
-  <a href="https://saaspare.org/contact" class="nav-link">Contact</a>
-  <a href="https://saaspare.org/pages/" class="nav-cta">Browse Tools &#8594;</a>
-</nav>
-
-<div class="hero">
-  <div class="orb orb1"></div>
-  <div class="orb orb2"></div>
-  <div class="badge"><span class="badge-dot"></span>Free Calculator</div>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SaaS ROI Calculator 2026 — Is Your Software Worth It? | SaaSpare</title>
+
+<meta name="description" content="Updated May 2026. Free SaaS ROI calculator. Find out if your business software is worth the cost. Calculate payback period, annual savings and break-even point…">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://saaspare.org/pages/saas-roi-calculator">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+
+<link rel="apple-touch-icon" href="/favicon-192.png">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+
+<meta name="theme-color" content="#080810">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{font-family:'Inter',system-ui,sans-serif;background:#080810;color:rgba(255,255,255,.85);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+
+a{text-decoration:none;color:inherit}
+
+::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
+
+::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
+
+
+
+@keyframes glow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.9;transform:scale(1.08)}}
+
+@keyframes glow2{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:.45;transform:scale(1.15)}}
+
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+
+@keyframes pulse{0%,100%{box-shadow:0 0 6px #e94560,0 0 0 0 rgba(233,69,96,.5)}50%{box-shadow:0 0 18px #e94560,0 0 0 10px rgba(233,69,96,0)}}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+@keyframes countUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;background:rgba(7,7,26,.94);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.06)}
+
+.logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}.wv{pointer-events:none;transition:opacity .3s}@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}.logo:hover .logo-mark{animation:none}.logo:hover .mark-top{transform:translateX(26px);filter:drop-shadow(-2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}.logo:hover .mark-bot{transform:translateX(-26px);filter:drop-shadow(2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}.logo:hover .wv,.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{opacity:0}
+
+.logo{display:flex;align-items:center;gap:9px;margin-right:auto}
+
+
+
+.logo-text{font-weight:800;font-size:1.08rem;letter-spacing:-.5px;color:#fff;font-family:'Inter',system-ui,sans-serif}
+
+.logo-text em{color:#e94560;font-style:normal}
+
+.nav-link{color:rgba(255,255,255,.45);font-size:.82rem;padding:.4rem .85rem;border-radius:8px;font-weight:500;transition:color .18s}
+
+.nav-link:hover{color:#fff}
+
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s}
+
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+
+
+
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 100% 70% at 50% -5%,#1a0d12 0%,#0d0008 40%,#080810 75%);padding:8rem 2rem 4rem;text-align:center;z-index:1}
+
+.orb{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px)}
+
+.orb1{width:600px;height:600px;background:radial-gradient(circle,rgba(233,69,96,.15) 0%,transparent 65%);top:-220px;left:50%;transform:translateX(-50%);animation:glow 9s ease-in-out infinite}
+
+.orb2{width:300px;height:300px;background:radial-gradient(circle,rgba(180,40,60,.1) 0%,transparent 70%);top:40px;right:-100px;animation:glow2 11s ease-in-out infinite 2s}
+
+
+
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.28);color:rgba(255,180,192,.9);padding:6px 18px;border-radius:100px;font-size:.76rem;font-weight:700;letter-spacing:.4px;margin-bottom:1.8rem;animation:up .6s ease both}
+
+.badge-dot{width:6px;height:6px;border-radius:50%;background:#e94560;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
+
+.hero h1{font-size:clamp(1.9rem,5.5vw,3.2rem);font-weight:900;color:#fff;line-height:1.08;letter-spacing:-1px;margin-bottom:1rem;animation:up .7s .1s ease both}
+
+.grad-text{background:linear-gradient(135deg,#ff6b85 0%,#e94560 50%,#e94060 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3.5s linear infinite}
+
+.hero-sub{color:rgba(255,255,255,.38);font-size:.98rem;line-height:1.8;max-width:430px;margin:0 auto 2.5rem;animation:up .7s .2s ease both}
+
+
+
+.container{max-width:700px;margin:0 auto;padding:0 1.5rem 5rem;position:relative;z-index:1}
+
+
+
+.card{background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1.75rem;margin-bottom:1rem;transition:border-color .3s;backdrop-filter:blur(8px)}
+
+.card:focus-within{border-color:rgba(233,69,96,.3)}
+
+.card-title{display:flex;align-items:center;gap:10px;margin-bottom:1.4rem}
+
+.card-icon{width:34px;height:34px;background:rgba(233,69,96,.12);border:1px solid rgba(233,69,96,.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+
+.card-icon svg{width:16px;height:16px;stroke:#e94560;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.card h2{font-size:1rem;font-weight:700;color:#fff;letter-spacing:-.2px}
+
+
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+
+.field{margin-bottom:1rem}
+
+.field:last-child{margin-bottom:0}
+
+.field label{display:block;font-size:.8rem;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:.5rem;letter-spacing:.1px}
+
+.input-wrap{position:relative}
+
+.input-prefix{position:absolute;left:13px;top:50%;transform:translateY(-50%);font-size:.9rem;color:rgba(255,255,255,.28);pointer-events:none;font-weight:500}
+
+.field input,.field select{width:100%;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.72rem 1rem .72rem 2rem;font-size:.92rem;color:#fff;font-family:inherit;transition:border-color .2s,background .2s;-webkit-appearance:none}
+
+.field input::placeholder{color:rgba(255,255,255,.2)}
+
+.field input:focus,.field select:focus{outline:none;border-color:rgba(233,69,96,.5);background:rgba(255,255,255,.07)}
+
+.field small{font-size:.74rem;color:rgba(255,255,255,.25);margin-top:.4rem;display:block}
+
+
+
+.btn{width:100%;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:1rem 2rem;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;box-shadow:0 8px 28px rgba(233,69,96,.4);transition:transform .15s,box-shadow .15s;margin-top:.5rem;letter-spacing:-.1px}
+
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(233,69,96,.55)}
+
+.btn:active{transform:translateY(0)}
+
+
+
+.results{display:none}
+
+.results.show{display:block;animation:fadeUp .4s ease}
+
+
+
+.results-card{background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1.75rem;margin-top:1rem;margin-bottom:1rem}
+
+.results-card h2{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:.8px;text-transform:uppercase;margin-bottom:1.4rem}
+
+
+
+.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:1.4rem}
+
+.result-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:1.25rem 1rem;text-align:center;transition:border-color .25s}
+
+.result-box.highlight{background:rgba(233,69,96,.1);border-color:rgba(233,69,96,.3)}
+
+.result-box .val{font-size:1.9rem;font-weight:900;color:#e94560;letter-spacing:-.5px;line-height:1;display:block;font-variant-numeric:tabular-nums;animation:countUp .35s ease both}
+
+.result-box.positive .val{color:#34d399}
+
+.result-box .lbl{font-size:.73rem;color:rgba(255,255,255,.32);margin-top:.4rem;display:block;font-weight:500;letter-spacing:.2px}
+
+
+
+.verdict{padding:1.1rem 1.4rem;border-radius:12px;margin-bottom:0;font-size:.9rem;line-height:1.65;border:1px solid transparent}
+
+.verdict.good{background:rgba(52,211,153,.08);border-color:rgba(52,211,153,.25);color:rgba(200,255,235,.85)}
+
+.verdict.good strong{color:#34d399}
+
+.verdict.bad{background:rgba(233,69,96,.08);border-color:rgba(233,69,96,.25);color:rgba(255,200,200,.85)}
+
+.verdict.bad strong{color:#e94560}
+
+.verdict.ok{background:rgba(251,191,36,.07);border-color:rgba(251,191,36,.22);color:rgba(255,240,180,.85)}
+
+.verdict.ok strong{color:#fbbf24}
+
+
+
+.cta-box{background:linear-gradient(135deg,rgba(233,69,96,.14),rgba(180,40,60,.1));border:1px solid rgba(233,69,96,.22);color:#fff;padding:2rem;border-radius:18px;text-align:center;margin-top:1rem}
+
+.cta-box h3{font-size:1.12rem;font-weight:800;letter-spacing:-.3px;margin-bottom:.5rem}
+
+.cta-box p{color:rgba(255,255,255,.35);font-size:.86rem;margin-bottom:1.4rem;line-height:1.7}
+
+.cta-links{display:flex;gap:.65rem;justify-content:center;flex-wrap:wrap}
+
+.cta-btn{display:inline-block;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.72rem 1.75rem;border-radius:100px;font-weight:700;font-size:.88rem;box-shadow:0 6px 20px rgba(233,69,96,.4);transition:transform .15s,box-shadow .15s}
+
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(233,69,96,.55)}
+
+.cta-box .affiliate-note{max-width:620px;margin:.9rem auto 0;color:rgba(255,255,255,.5);font-size:.78rem}
+
+
+
+.how-to{background:rgba(255,255,255,.028);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:1.6rem;margin-top:1rem}
+
+.how-to h3{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.1rem}
+
+.how-to ul{list-style:none;padding:0}
+
+.how-to li{padding:.5rem 0;font-size:.86rem;color:rgba(255,255,255,.42);border-bottom:1px solid rgba(255,255,255,.05);line-height:1.65;display:flex;gap:.75rem;align-items:flex-start}
+
+.how-to li:last-child{border-bottom:none}
+
+.how-to li::before{content:'';width:5px;height:5px;border-radius:50%;background:#e94560;flex-shrink:0;margin-top:.55rem}
+
+.how-to li strong{color:rgba(255,255,255,.7)}
+
+
+
+footer{text-align:center;color:rgba(255,255,255,.2);font-size:.8rem;padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);display:flex;gap:1.5rem;justify-content:center}
+
+footer a{color:rgba(255,255,255,.28);transition:color .2s}
+
+footer a:hover{color:rgba(255,255,255,.7)}
+
+
+
+.sticky-cta-v2{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);width:min(720px,calc(100vw - 28px));background:rgba(11,11,19,.96);color:#fff;padding:.75rem .85rem;display:none;align-items:center;justify-content:space-between;gap:.8rem;box-shadow:0 18px 60px rgba(0,0,0,.42);border:1px solid rgba(233,69,96,.26);border-radius:999px;z-index:100;backdrop-filter:blur(18px)}
+
+.sticky-cta-v2.show{display:flex}
+
+.sticky-cta-v2 a{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.55rem 1rem;border-radius:999px;text-decoration:none;font-weight:800;font-size:.82rem;white-space:nowrap}
+
+.sticky-cta-v2 button{background:none;border:none;color:rgba(255,255,255,.55);font-size:1.1rem;cursor:pointer}
+
+.exit-modal-v2{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:center;justify-content:center;z-index:1000;padding:1rem;backdrop-filter:blur(10px)}
+
+.exit-modal-v2.show{display:flex}
+
+.exit-card-v2{background:#111119;border:1px solid rgba(255,255,255,.1);box-shadow:0 28px 90px rgba(0,0,0,.5);border-radius:20px;padding:2rem;max-width:460px;text-align:center;position:relative;color:#fff}
+
+.exit-card-v2 h3{color:#fff;font-size:1.35rem;margin-bottom:.5rem;letter-spacing:-.03em}
+
+.exit-card-v2 p{color:rgba(255,255,255,.55);font-size:.92rem;margin-bottom:1.25rem}
+
+.exit-close-v2{position:absolute;top:.65rem;right:.8rem;background:none;border:none;font-size:1.45rem;color:rgba(255,255,255,.42);cursor:pointer}
+
+.exit-card-v2 form{display:flex;gap:.5rem;flex-wrap:wrap}
+
+.exit-card-v2 input{flex:1;min-width:190px;padding:.72rem .95rem;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(255,255,255,.07);color:#fff}
+
+.exit-card-v2 button[type=submit]{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border:none;padding:.72rem 1.15rem;border-radius:999px;font-weight:800;cursor:pointer}
+
+
+
+@media(max-width:560px){
+
+  .grid2{grid-template-columns:1fr}
+
+  .result-grid{grid-template-columns:1fr 1fr}
+
+  .hero{padding:6.5rem 1.5rem 3rem}
+
+
+
+  .ad-slot-v2{margin:2rem 0;text-align:center;min-height:90px;background:#fafbfc;border-radius:6px;padding:1rem}
+
+  .ad-label-v2{font-size:.65rem;color:#bbb;letter-spacing:.5px;text-transform:uppercase;display:block;margin-bottom:.25rem}
+
+  .sticky-cta-v2{left:10px;right:10px;bottom:10px;transform:none;width:auto;border-radius:18px}
+
+}
+
+nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}nav#nav.scrolled,nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}</style>
+
+<meta name="google-adsense-account" content="ca-pub-9433840442322701">
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9433840442322701" crossorigin="anonymous"></script>
+
+<!-- saaspare-v2-patched -->
+
+<!-- enhanced-v1 -->
+
+
+
+<meta property="og:image" content="https://saaspare.org/og-default.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:image" content="https://saaspare.org/og-default.png">
+
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org", "logo": "https://saaspare.org/og-default.png", "description": "Unbiased B2B SaaS comparisons, real pricing, and expert recommendations.", "sameAs": ["https://twitter.com/SaaSpare"]}</script>
+
+<!-- enhanced-v2 -->
+
+<meta property="og:title" content="SaaS ROI Calculator 2026 — Is Your Software Worth It? | SaaSpare">
+
+<meta property="og:description" content="Free SaaS ROI calculator. Find out if your business software is worth the cost. Calculate payback period, annual savings and break-even point.">
+
+<meta property="og:url" content="https://saaspare.org/pages/saas-roi-calculator">
+
+<meta property="og:type" content="website">
+
+<meta name="twitter:title" content="SaaS ROI Calculator 2026 — Is Your Software Worth It? | SaaSpare">
+
+<meta name="twitter:description" content="Free SaaS ROI calculator. Find out if your business software is worth the cost. Calculate payback period, annual savings and break-even point.">
+
+<meta name="keywords" content="SaaS ROI Calculator 2026 — Is Your Software Worth It?, other, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
+
+<meta name="twitter:site" content="@SaaSpare">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
+
+<!-- unified-v2 -->
+
+<!-- ga-events-v1 --><script defer src="/assets/saaspare-events.js"></script>
+
+<!-- rss-autodiscovery --><link rel="alternate" type="application/rss+xml" title="SaaSpare" href="/feed.xml">
+
+<link rel="manifest" href="/manifest.webmanifest">
+
+<!-- Microsoft Clarity (heatmaps + session replay, cookieless by default) -->
+<script id="clarity-ms">
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window,document,"clarity","script","CLARITY_PROJECT_ID_REPLACE_ME");
+</script>
+</head>
+
+<body>
+
+
+
+<nav id="nav">
+
+  <a href="https://saaspare.org" class="logo">
+
+    <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg>
+
+    <span class="logo-text">Saa<em>Spare</em></span>
+
+  </a>
+
+  <a href="https://saaspare.org/pages/" class="nav-link">Comparisons</a>
+
+  <a href="https://saaspare.org/pages/saas-roi-calculator" class="nav-link" style="color:#fff">ROI Calculator</a>
+
+  <a href="https://saaspare.org/about" class="nav-link">About</a>
+
+  <a href="https://saaspare.org/contact" class="nav-link">Contact</a>
+
+  <a href="https://saaspare.org/pages/" class="nav-cta">Browse Tools &#8594;</a>
+
+</nav>
+
+
+
+<div class="hero">
+
+  <div class="orb orb1"></div>
+
+  <div class="orb orb2"></div>
+
+  <div class="badge"><span class="badge-dot"></span>Free Calculator</div>
+
   <h1>Is Your SaaS <span class="grad-text">Worth the Cost?</span></h1>
 <div class="featured-answer" data-aeo-answer>
   <p><strong>Quick answer (May 2026):</strong> Independent verdict on Is Your SaaS Worth the Cost?, updated May 2026. Real pricing pulled from vendor pages, honest pros and cons, and no paid placements.</p>
 </div>
-
-  <p class="hero-sub">Enter your numbers and find out exactly when your software pays for itself — and how much it returns annually.</p>
-</div>
-
-<div class="container">
-
-  <div class="card">
-    <div class="card-title">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-      </div>
-      <h2>Tool Cost</h2>
-    </div>
-    <div class="grid2">
-      <div class="field">
-        <label>Monthly subscription (USD)</label>
-        <div class="input-wrap">
-          <span class="input-prefix">$</span>
-          <input type="number" id="monthly_cost" placeholder="99" min="0">
-        </div>
-      </div>
-      <div class="field">
-        <label>Number of seats / users</label>
-        <div class="input-wrap">
-          <span class="input-prefix">#</span>
-          <input type="number" id="seats" placeholder="5" min="1" value="1">
-        </div>
-      </div>
-    </div>
-    <div class="field">
-      <label>One-time setup cost (USD)</label>
-      <div class="input-wrap">
-        <span class="input-prefix">$</span>
-        <input type="number" id="setup_cost" placeholder="0" min="0" value="0">
-      </div>
-      <small>Onboarding, migration, training costs — leave 0 if none</small>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-title">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-      </div>
-      <h2>Time Savings</h2>
-    </div>
-    <div class="grid2">
-      <div class="field">
-        <label>Hours saved per employee / week</label>
-        <div class="input-wrap">
-          <span class="input-prefix">h</span>
-          <input type="number" id="hours_saved" placeholder="3" min="0" step="0.5">
-        </div>
-      </div>
-      <div class="field">
-        <label>Average employee hourly rate (USD)</label>
-        <div class="input-wrap">
-          <span class="input-prefix">$</span>
-          <input type="number" id="hourly_rate" placeholder="35" min="0">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-title">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-      </div>
-      <h2>Revenue &amp; Cost Impact</h2>
-    </div>
-    <div class="grid2">
-      <div class="field">
-        <label>Monthly revenue increase (USD)</label>
-        <div class="input-wrap">
-          <span class="input-prefix">$</span>
-          <input type="number" id="revenue_increase" placeholder="0" min="0" value="0">
-        </div>
-        <small>Better conversions, faster deals</small>
-      </div>
-      <div class="field">
-        <label>Monthly cost savings (USD)</label>
-        <div class="input-wrap">
-          <span class="input-prefix">$</span>
-          <input type="number" id="cost_savings" placeholder="0" min="0" value="0">
-        </div>
-        <small>Tools replaced, errors reduced</small>
-      </div>
-    </div>
-  </div>
-
-  <button class="btn" onclick="calculate()">Calculate My ROI →</button>
-
-  <div class="results" id="results">
-
-    <div class="results-card">
-      <h2>Your Results</h2>
-      <div class="result-grid">
-        <div class="result-box highlight" id="box-roi">
-          <span class="val" id="r-roi">—</span>
-          <span class="lbl">Annual ROI</span>
-        </div>
-        <div class="result-box" id="box-payback">
-          <span class="val" id="r-payback">—</span>
-          <span class="lbl">Payback period</span>
-        </div>
-        <div class="result-box" id="box-monthly">
-          <span class="val" id="r-monthly-benefit">—</span>
-          <span class="lbl">Monthly net benefit</span>
-        </div>
-        <div class="result-box" id="box-annual">
-          <span class="val" id="r-annual-saving">—</span>
-          <span class="lbl">Annual net saving</span>
-        </div>
-      </div>
-      <div class="verdict" id="verdict"></div>
-    </div>
-
-    <div class="cta-box">
-      <h3>Turn that ROI into a shortlist.</h3>
-      <p>Start with proven buyer paths instead of going back to a generic archive.</p>
-      <div class="cta-links">
-        <a class="cta-btn" href="/go/hubspot">Try HubSpot</a>
-        <a class="cta-btn" href="/go/clickup">Try ClickUp</a>
-        <a class="cta-btn" href="/go/1password">Try 1Password</a>
-      </div>
-      <p class="affiliate-note">SaaSpare may earn a commission from some trial links, but vendors cannot buy calculator placement or recommendations.</p>
-    </div>
-
-  </div>
-
-  <div class="how-to">
-    <h3>How to use this calculator</h3>
-    <ul>
-      <li><div><strong>Tool Cost:</strong> Enter the per-seat price from the tool's pricing page. Include setup only if there's real onboarding spend.</div></li>
-      <li><div><strong>Time Savings:</strong> Be conservative — even 1 saved hour/week per employee adds up fast at scale.</div></li>
-      <li><div><strong>Revenue Impact:</strong> Hard to estimate — leave at 0 if unsure. Don't inflate it.</div></li>
-      <li><div>A positive ROI with a payback period under 6 months is almost always a no-brainer.</div></li>
-    </ul>
-  </div>
-
-</div>
-
-
-<div style="background:#1a1a2e;color:#fff;padding:1.5rem 2rem;border-radius:8px;margin:2rem 0;text-align:center;">
-  <h3 style="margin:0 0 0.5rem;font-size:1.2rem;">Get weekly B2B software insights</h3>
-  <p style="margin:0 0 1rem;color:#aaa;font-size:0.9rem;">Join 0+ founders and engineers. Free, weekly, no spam.</p>
-  <form action="" method="POST" style="display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap;">
-    <input type="email" name="email" placeholder="your@email.com" required
-           style="padding:0.6rem 1rem;border:none;border-radius:4px;font-size:1rem;min-width:220px;">
-    <button type="submit"
-            style="padding:0.6rem 1.5rem;background:#e94560;color:#fff;border:none;border-radius:4px;font-size:1rem;cursor:pointer;font-weight:600;">
-      Subscribe
-    </button>
-  </form>
-</div>
-<footer>
-  <a href="https://saaspare.org">Home</a>
-  <a href="https://saaspare.org/pages/">Comparisons</a>
-  <a href="https://saaspare.org/privacy">Privacy</a>
-</footer>
-
-<script>
-function fmt(n){
-  var abs=Math.abs(n);
-  var prefix=n<0?'-$':'$';
-  if(abs>=1000000)return prefix+(abs/1000000).toFixed(1)+'M';
-  if(abs>=1000)return prefix+(abs/1000).toFixed(1)+'k';
-  return prefix+Math.round(abs);
-}
-function animateVal(el,text){
-  el.style.animation='none';
-  el.offsetHeight;
-  el.style.animation='countUp .35s ease both';
-  el.textContent=text;
-}
-function calculate(){
-  var mc=parseFloat(document.getElementById('monthly_cost').value)||0;
-  var seats=parseInt(document.getElementById('seats').value)||1;
-  var setup=parseFloat(document.getElementById('setup_cost').value)||0;
-  var hrs=parseFloat(document.getElementById('hours_saved').value)||0;
-  var rate=parseFloat(document.getElementById('hourly_rate').value)||0;
-  var rev=parseFloat(document.getElementById('revenue_increase').value)||0;
-  var sav=parseFloat(document.getElementById('cost_savings').value)||0;
-
-  var totalMonthlyCost=mc*seats;
-  var monthlyTimeSaving=hrs*seats*4.33*rate;
-  var monthlyBenefit=monthlyTimeSaving+rev+sav;
-  var monthlyNet=monthlyBenefit-totalMonthlyCost;
-  var annualCost=totalMonthlyCost*12+setup;
-  var annualBenefit=monthlyBenefit*12;
-  var annualNet=annualBenefit-annualCost;
-  var roi=annualCost>0?((annualNet/annualCost)*100):0;
-  var payback=monthlyNet>0?(setup+totalMonthlyCost)/monthlyNet:null;
-
-  var roiEl=document.getElementById('r-roi');
-  var paybackEl=document.getElementById('r-payback');
-  var monthlyEl=document.getElementById('r-monthly-benefit');
-  var annualEl=document.getElementById('r-annual-saving');
-
-  animateVal(roiEl,Math.round(roi)+'%');
-  animateVal(paybackEl,payback?Math.ceil(payback)+'mo':'Never');
-  animateVal(monthlyEl,fmt(monthlyNet));
-  animateVal(annualEl,fmt(annualNet));
-
-  var positiveBoxes=[document.getElementById('box-monthly'),document.getElementById('box-annual')];
-  positiveBoxes.forEach(function(b){
-    b.classList.toggle('positive',monthlyNet>0);
-  });
-
-  var v=document.getElementById('verdict');
-  if(roi>100&&payback!==null&&payback<6){
-    v.className='verdict good';
-    v.innerHTML='<strong>Strong ROI.</strong> This tool pays for itself in under 6 months and returns '+Math.round(roi)+'% annually. Almost certainly worth it.';
-  } else if(roi>0){
-    v.className='verdict ok';
-    v.innerHTML='<strong>Marginal ROI.</strong> Positive returns, but the payback period exceeds 6 months. Consider negotiating an annual plan for a better deal.';
-  } else {
-    v.className='verdict bad';
-    v.innerHTML='<strong>Negative ROI.</strong> Based on your inputs this tool costs more than it saves. Increase your time-saving estimate or look for a cheaper alternative.';
-  }
-
-  var resultsEl=document.getElementById('results');
-  resultsEl.className='results show';
-  setTimeout(function(){
-    resultsEl.scrollIntoView({behavior:'smooth',block:'nearest'});
-  },50);
-}
-</script>
-<div class="sticky-cta-v2" id="sticky-cta-v2">
-<span style="font-size:.85rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Start your free trial today — no credit card required.</span>
-<a href="https://saaspare.org/pages/">See Top Picks →</a>
-<button onclick="document.getElementById('sticky-cta-v2').classList.remove('show');sessionStorage.setItem('scHidV2','1')">×</button>
-</div>
-<div class="exit-modal-v2" id="exit-modal-v2">
-<div class="exit-card-v2">
-<button class="exit-close-v2" onclick="closeExitV2()">×</button>
-<h3>Before you go — grab the weekly deal digest</h3>
-<p>Free trials, exclusive discounts &amp; new tool reviews. One short email every Friday.</p>
-<form method="POST" id="exit-form-v2">
-<input type="email" name="email" placeholder="your@email.com" required>
-<input type="hidden" name="_subject" value="New SaaSpare subscriber (exit-intent)">
-<button type="submit">Get the List →</button>
-</form>
-<p style="color:#aaa;font-size:.75rem;margin-top:.75rem">Join 500+ founders already subscribed</p>
-</div>
-</div>
-<script>
-(adsbygoogle=window.adsbygoogle||[]).push({});(adsbygoogle=window.adsbygoogle||[]).push({});
-var scV2=document.getElementById('sticky-cta-v2');
-if(scV2&&!sessionStorage.getItem('scHidV2')){window.addEventListener('scroll',function(){if(window.scrollY>600)scV2.classList.add('show');},{passive:true});}
-var emV2=document.getElementById('exit-modal-v2'),shownV2=false;
-function closeExitV2(){emV2.classList.remove('show');localStorage.setItem('exHidV2',Date.now());}
-function maybeExitV2(){if(shownV2||localStorage.getItem('exHidV2'))return;shownV2=true;emV2.classList.add('show');}
-document.addEventListener('mouseout',function(e){if(e.clientY<=0&&!e.relatedTarget)maybeExitV2();});
-setTimeout(function(){if(!shownV2&&!localStorage.getItem('exHidV2'))maybeExitV2();},45000);
-document.getElementById('exit-form-v2')&&document.getElementById('exit-form-v2').addEventListener('submit',function(){setTimeout(closeExitV2,200);});
-emV2&&emV2.addEventListener('click',function(e){if(e.target===emV2)closeExitV2();});
-</script>
-
-<script defer src="/assets/saaspare-ui.js"></script>
-<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
-<script>
-document.addEventListener("click",function(e){
-  var a=e.target.closest("a");
-  if(!a||typeof gtag!=="function")return;
-  var h=a.href||"";
-  if(h.includes("/go/")||h.includes("utm_source=saaspare")){
-    gtag("event","affiliate_click",{"link_url":h,"page_location":window.location.href});
-  }
-});
-</script>
-<script>(function(){var n=document.getElementById('nav');if(!n)return;function s(){n.classList.toggle('scrolled',window.scrollY>32);}s();window.addEventListener('scroll',s,{passive:true});})();</script>
-<script>
-(function(){
-  var SUCCESS_INLINE = '<div class="subscribe-success" style="text-align:center;padding:1rem 0">'
-    + '<div style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;'
-    + 'border-radius:50%;background:rgba(52,211,153,.18);border:1px solid rgba(52,211,153,.35);'
-    + 'color:#34d399;font-size:1.3rem;margin-bottom:.5rem">&#10003;</div>'
-    + '<p style="color:#34d399;font-weight:700;margin-bottom:.25rem">You're in!</p>'
-    + '<p style="color:rgba(255,255,255,.5);font-size:.83rem">Check your inbox — welcome email on its way.</p></div>';
-  var SUCCESS_EXIT = '<div style="text-align:center;padding:.5rem 0">'
-    + '<p style="color:#34d399;font-weight:700;font-size:1rem">&#10003; You're subscribed!</p>'
-    + '<p style="color:rgba(255,255,255,.45);font-size:.8rem;margin-top:.25rem">Check your inbox in a moment.</p></div>';
-
-  function bind(form, successHtml, formType) {
-    if (form.dataset.ajaxBound) return;
-    form.dataset.ajaxBound = '1';
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var btn = form.querySelector('button[type=submit]');
-      var orig = btn ? btn.textContent : '';
-      if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
-      var data = { landing_url: window.location.href };
-      form.querySelectorAll('input,select,textarea').forEach(function(el) {
-        if (el.name) data[el.name] = el.type === 'checkbox' ? (el.checked ? el.value : '') : el.value;
-      });
-      if (!data['page_title']) data['page_title'] = document.title;
-      if (!data['signup_surface']) data['signup_surface'] = formType;
-      fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
-      .then(function(r) { return r.json(); })
-      .then(function(res) {
-        if (res.ok || res.ignored) {
-          form.style.transition = 'opacity .3s';
-          form.style.opacity = '0';
-          setTimeout(function() {
-            form.outerHTML = successHtml;
-            if (typeof gtag === 'function') {
-              gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
-            }
-          }, 300);
-        } else {
-          if (btn) { btn.textContent = orig; btn.disabled = false; }
-          alert('Something went wrong. Try again or email hello@saaspare.org');
-        }
-      })
-      .catch(function() {
-        if (btn) { btn.textContent = orig; btn.disabled = false; }
-        alert('Network error. Please try again.');
-      });
-    });
-  }
-
-  document.querySelectorAll('.email-row, #sub-form').forEach(function(el) {
-    var f = el.tagName === 'FORM' ? el : el.querySelector('form');
-    if (f) bind(f, SUCCESS_INLINE, 'inline_newsletter');
-  });
-  document.querySelectorAll('.exit-form, #exit-form').forEach(function(el) {
-    var f = el.tagName === 'FORM' ? el : el.querySelector('form');
-    if (f) bind(f, SUCCESS_EXIT, 'exit_intent');
-  });
-})();
-</script>
-</body>
-</html>
+
+
+  <p class="hero-sub">Enter your numbers and find out exactly when your software pays for itself — and how much it returns annually.</p>
+
+</div>
+
+
+
+<div class="container">
+
+
+
+  <div class="card">
+
+    <div class="card-title">
+
+      <div class="card-icon">
+
+        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+
+      </div>
+
+      <h2>Tool Cost</h2>
+
+    </div>
+
+    <div class="grid2">
+
+      <div class="field">
+
+        <label>Monthly subscription (USD)</label>
+
+        <div class="input-wrap">
+
+          <span class="input-prefix">$</span>
+
+          <input type="number" id="monthly_cost" placeholder="99" min="0">
+
+        </div>
+
+      </div>
+
+      <div class="field">
+
+        <label>Number of seats / users</label>
+
+        <div class="input-wrap">
+
+          <span class="input-prefix">#</span>
+
+          <input type="number" id="seats" placeholder="5" min="1" value="1">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="field">
+
+      <label>One-time setup cost (USD)</label>
+
+      <div class="input-wrap">
+
+        <span class="input-prefix">$</span>
+
+        <input type="number" id="setup_cost" placeholder="0" min="0" value="0">
+
+      </div>
+
+      <small>Onboarding, migration, training costs — leave 0 if none</small>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="card">
+
+    <div class="card-title">
+
+      <div class="card-icon">
+
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+
+      </div>
+
+      <h2>Time Savings</h2>
+
+    </div>
+
+    <div class="grid2">
+
+      <div class="field">
+
+        <label>Hours saved per employee / week</label>
+
+        <div class="input-wrap">
+
+          <span class="input-prefix">h</span>
+
+          <input type="number" id="hours_saved" placeholder="3" min="0" step="0.5">
+
+        </div>
+
+      </div>
+
+      <div class="field">
+
+        <label>Average employee hourly rate (USD)</label>
+
+        <div class="input-wrap">
+
+          <span class="input-prefix">$</span>
+
+          <input type="number" id="hourly_rate" placeholder="35" min="0">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="card">
+
+    <div class="card-title">
+
+      <div class="card-icon">
+
+        <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+
+      </div>
+
+      <h2>Revenue &amp; Cost Impact</h2>
+
+    </div>
+
+    <div class="grid2">
+
+      <div class="field">
+
+        <label>Monthly revenue increase (USD)</label>
+
+        <div class="input-wrap">
+
+          <span class="input-prefix">$</span>
+
+          <input type="number" id="revenue_increase" placeholder="0" min="0" value="0">
+
+        </div>
+
+        <small>Better conversions, faster deals</small>
+
+      </div>
+
+      <div class="field">
+
+        <label>Monthly cost savings (USD)</label>
+
+        <div class="input-wrap">
+
+          <span class="input-prefix">$</span>
+
+          <input type="number" id="cost_savings" placeholder="0" min="0" value="0">
+
+        </div>
+
+        <small>Tools replaced, errors reduced</small>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <button class="btn" onclick="calculate()">Calculate My ROI →</button>
+
+
+
+  <div class="results" id="results">
+
+
+
+    <div class="results-card">
+
+      <h2>Your Results</h2>
+
+      <div class="result-grid">
+
+        <div class="result-box highlight" id="box-roi">
+
+          <span class="val" id="r-roi">—</span>
+
+          <span class="lbl">Annual ROI</span>
+
+        </div>
+
+        <div class="result-box" id="box-payback">
+
+          <span class="val" id="r-payback">—</span>
+
+          <span class="lbl">Payback period</span>
+
+        </div>
+
+        <div class="result-box" id="box-monthly">
+
+          <span class="val" id="r-monthly-benefit">—</span>
+
+          <span class="lbl">Monthly net benefit</span>
+
+        </div>
+
+        <div class="result-box" id="box-annual">
+
+          <span class="val" id="r-annual-saving">—</span>
+
+          <span class="lbl">Annual net saving</span>
+
+        </div>
+
+      </div>
+
+      <div class="verdict" id="verdict"></div>
+
+    </div>
+
+
+
+    <div class="cta-box">
+
+      <h3>Turn that ROI into a shortlist.</h3>
+
+      <p>Start with proven buyer paths instead of going back to a generic archive.</p>
+
+      <div class="cta-links">
+
+        <a class="cta-btn" href="/go/hubspot">Try HubSpot</a>
+
+        <a class="cta-btn" href="/go/clickup">Try ClickUp</a>
+
+        <a class="cta-btn" href="/go/1password">Try 1Password</a>
+
+      </div>
+
+      <p class="affiliate-note">SaaSpare may earn a commission from some trial links, but vendors cannot buy calculator placement or recommendations.</p>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="how-to">
+
+    <h3>How to use this calculator</h3>
+
+    <ul>
+
+      <li><div><strong>Tool Cost:</strong> Enter the per-seat price from the tool's pricing page. Include setup only if there's real onboarding spend.</div></li>
+
+      <li><div><strong>Time Savings:</strong> Be conservative — even 1 saved hour/week per employee adds up fast at scale.</div></li>
+
+      <li><div><strong>Revenue Impact:</strong> Hard to estimate — leave at 0 if unsure. Don't inflate it.</div></li>
+
+      <li><div>A positive ROI with a payback period under 6 months is almost always a no-brainer.</div></li>
+
+    </ul>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+<div style="background:#1a1a2e;color:#fff;padding:1.5rem 2rem;border-radius:8px;margin:2rem 0;text-align:center;">
+
+  <h3 style="margin:0 0 0.5rem;font-size:1.2rem;">Get weekly B2B software insights</h3>
+
+  <p style="margin:0 0 1rem;color:#aaa;font-size:0.9rem;">Join 0+ founders and engineers. Free, weekly, no spam.</p>
+
+  <form action="" method="POST" style="display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap;">
+
+    <input type="email" name="email" placeholder="your@email.com" required
+
+           style="padding:0.6rem 1rem;border:none;border-radius:4px;font-size:1rem;min-width:220px;">
+
+    <button type="submit"
+
+            style="padding:0.6rem 1.5rem;background:#e94560;color:#fff;border:none;border-radius:4px;font-size:1rem;cursor:pointer;font-weight:600;">
+
+      Subscribe
+
+    </button>
+
+  </form>
+
+</div>
+
+
+<!-- related-links-start (do not edit: managed by internal_links.py) -->
+<aside class="related-links" aria-label="Related comparisons" style="max-width:920px;margin:3rem auto;padding:1.5rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:14px">
+  <h2 style="font-size:1.1rem;margin:0 0 1rem 0;color:#e94560">Related comparisons you should also see</h2>
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.7rem">
+    <li><a href="/pages/ahrefs-vs-rankmath-pro-which-is-better-in-2026">Ahrefs vs Rankmath Pro: Which is Better in 2026?</a></li>
+    <li><a href="/pages/activecampaign-vs-pardot-which-is-better-in-2026">ActiveCampaign vs Pardot: Which is Better in 2026?</a></li>
+    <li><a href="/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026">Cloudflare Access vs Zscaler: Which is Better in 2026?</a></li>
+    <li><a href="/pages/juro-vs-conga-which-is-better-in-2026">Juro vs Conga: Which is Better in 2026?</a></li>
+    <li><a href="/pages/trello-vs-wrike-which-is-better-in-2026">Trello vs Wrike: Which is Better in 2026?</a></li>
+  </ul>
+</aside>
+<!-- related-links-end -->
+<footer>
+
+  <a href="https://saaspare.org">Home</a>
+
+  <a href="https://saaspare.org/pages/">Comparisons</a>
+
+  <a href="https://saaspare.org/privacy">Privacy</a>
+
+</footer>
+
+
+
+<script>
+
+function fmt(n){
+
+  var abs=Math.abs(n);
+
+  var prefix=n<0?'-$':'$';
+
+  if(abs>=1000000)return prefix+(abs/1000000).toFixed(1)+'M';
+
+  if(abs>=1000)return prefix+(abs/1000).toFixed(1)+'k';
+
+  return prefix+Math.round(abs);
+
+}
+
+function animateVal(el,text){
+
+  el.style.animation='none';
+
+  el.offsetHeight;
+
+  el.style.animation='countUp .35s ease both';
+
+  el.textContent=text;
+
+}
+
+function calculate(){
+
+  var mc=parseFloat(document.getElementById('monthly_cost').value)||0;
+
+  var seats=parseInt(document.getElementById('seats').value)||1;
+
+  var setup=parseFloat(document.getElementById('setup_cost').value)||0;
+
+  var hrs=parseFloat(document.getElementById('hours_saved').value)||0;
+
+  var rate=parseFloat(document.getElementById('hourly_rate').value)||0;
+
+  var rev=parseFloat(document.getElementById('revenue_increase').value)||0;
+
+  var sav=parseFloat(document.getElementById('cost_savings').value)||0;
+
+
+
+  var totalMonthlyCost=mc*seats;
+
+  var monthlyTimeSaving=hrs*seats*4.33*rate;
+
+  var monthlyBenefit=monthlyTimeSaving+rev+sav;
+
+  var monthlyNet=monthlyBenefit-totalMonthlyCost;
+
+  var annualCost=totalMonthlyCost*12+setup;
+
+  var annualBenefit=monthlyBenefit*12;
+
+  var annualNet=annualBenefit-annualCost;
+
+  var roi=annualCost>0?((annualNet/annualCost)*100):0;
+
+  var payback=monthlyNet>0?(setup+totalMonthlyCost)/monthlyNet:null;
+
+
+
+  var roiEl=document.getElementById('r-roi');
+
+  var paybackEl=document.getElementById('r-payback');
+
+  var monthlyEl=document.getElementById('r-monthly-benefit');
+
+  var annualEl=document.getElementById('r-annual-saving');
+
+
+
+  animateVal(roiEl,Math.round(roi)+'%');
+
+  animateVal(paybackEl,payback?Math.ceil(payback)+'mo':'Never');
+
+  animateVal(monthlyEl,fmt(monthlyNet));
+
+  animateVal(annualEl,fmt(annualNet));
+
+
+
+  var positiveBoxes=[document.getElementById('box-monthly'),document.getElementById('box-annual')];
+
+  positiveBoxes.forEach(function(b){
+
+    b.classList.toggle('positive',monthlyNet>0);
+
+  });
+
+
+
+  var v=document.getElementById('verdict');
+
+  if(roi>100&&payback!==null&&payback<6){
+
+    v.className='verdict good';
+
+    v.innerHTML='<strong>Strong ROI.</strong> This tool pays for itself in under 6 months and returns '+Math.round(roi)+'% annually. Almost certainly worth it.';
+
+  } else if(roi>0){
+
+    v.className='verdict ok';
+
+    v.innerHTML='<strong>Marginal ROI.</strong> Positive returns, but the payback period exceeds 6 months. Consider negotiating an annual plan for a better deal.';
+
+  } else {
+
+    v.className='verdict bad';
+
+    v.innerHTML='<strong>Negative ROI.</strong> Based on your inputs this tool costs more than it saves. Increase your time-saving estimate or look for a cheaper alternative.';
+
+  }
+
+
+
+  var resultsEl=document.getElementById('results');
+
+  resultsEl.className='results show';
+
+  setTimeout(function(){
+
+    resultsEl.scrollIntoView({behavior:'smooth',block:'nearest'});
+
+  },50);
+
+}
+
+</script>
+
+<div class="sticky-cta-v2" id="sticky-cta-v2">
+
+<span style="font-size:.85rem;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Start your free trial today — no credit card required.</span>
+
+<a href="https://saaspare.org/pages/">See Top Picks →</a>
+
+<button onclick="document.getElementById('sticky-cta-v2').classList.remove('show');sessionStorage.setItem('scHidV2','1')">×</button>
+
+</div>
+
+<div class="exit-modal-v2" id="exit-modal-v2">
+
+<div class="exit-card-v2">
+
+<button class="exit-close-v2" onclick="closeExitV2()">×</button>
+
+<h3>Before you go — grab the weekly deal digest</h3>
+
+<p>Free trials, exclusive discounts &amp; new tool reviews. One short email every Friday.</p>
+
+<form method="POST" id="exit-form-v2">
+
+<input type="email" name="email" placeholder="your@email.com" required>
+
+<input type="hidden" name="_subject" value="New SaaSpare subscriber (exit-intent)">
+
+<button type="submit">Get the List →</button>
+
+</form>
+
+<p style="color:#aaa;font-size:.75rem;margin-top:.75rem">Join 500+ founders already subscribed</p>
+
+</div>
+
+</div>
+
+<script>
+
+(adsbygoogle=window.adsbygoogle||[]).push({});(adsbygoogle=window.adsbygoogle||[]).push({});
+
+var scV2=document.getElementById('sticky-cta-v2');
+
+if(scV2&&!sessionStorage.getItem('scHidV2')){window.addEventListener('scroll',function(){if(window.scrollY>600)scV2.classList.add('show');},{passive:true});}
+
+var emV2=document.getElementById('exit-modal-v2'),shownV2=false;
+
+function closeExitV2(){emV2.classList.remove('show');localStorage.setItem('exHidV2',Date.now());}
+
+function maybeExitV2(){if(shownV2||localStorage.getItem('exHidV2'))return;shownV2=true;emV2.classList.add('show');}
+
+document.addEventListener('mouseout',function(e){if(e.clientY<=0&&!e.relatedTarget)maybeExitV2();});
+
+setTimeout(function(){if(!shownV2&&!localStorage.getItem('exHidV2'))maybeExitV2();},45000);
+
+document.getElementById('exit-form-v2')&&document.getElementById('exit-form-v2').addEventListener('submit',function(){setTimeout(closeExitV2,200);});
+
+emV2&&emV2.addEventListener('click',function(e){if(e.target===emV2)closeExitV2();});
+
+</script>
+
+
+
+<script defer src="/assets/saaspare-ui.js"></script>
+
+<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
+
+<script>
+
+document.addEventListener("click",function(e){
+
+  var a=e.target.closest("a");
+
+  if(!a||typeof gtag!=="function")return;
+
+  var h=a.href||"";
+
+  if(h.includes("/go/")||h.includes("utm_source=saaspare")){
+
+    gtag("event","affiliate_click",{"link_url":h,"page_location":window.location.href});
+
+  }
+
+});
+
+</script>
+
+<script>(function(){var n=document.getElementById('nav');if(!n)return;function s(){n.classList.toggle('scrolled',window.scrollY>32);}s();window.addEventListener('scroll',s,{passive:true});})();</script>
+
+<script>
+
+(function(){
+
+  var SUCCESS_INLINE = '<div class="subscribe-success" style="text-align:center;padding:1rem 0">'
+
+    + '<div style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;'
+
+    + 'border-radius:50%;background:rgba(52,211,153,.18);border:1px solid rgba(52,211,153,.35);'
+
+    + 'color:#34d399;font-size:1.3rem;margin-bottom:.5rem">&#10003;</div>'
+
+    + '<p style="color:#34d399;font-weight:700;margin-bottom:.25rem">You're in!</p>'
+
+    + '<p style="color:rgba(255,255,255,.5);font-size:.83rem">Check your inbox — welcome email on its way.</p></div>';
+
+  var SUCCESS_EXIT = '<div style="text-align:center;padding:.5rem 0">'
+
+    + '<p style="color:#34d399;font-weight:700;font-size:1rem">&#10003; You're subscribed!</p>'
+
+    + '<p style="color:rgba(255,255,255,.45);font-size:.8rem;margin-top:.25rem">Check your inbox in a moment.</p></div>';
+
+
+
+  function bind(form, successHtml, formType) {
+
+    if (form.dataset.ajaxBound) return;
+
+    form.dataset.ajaxBound = '1';
+
+    form.addEventListener('submit', function(e) {
+
+      e.preventDefault();
+
+      var btn = form.querySelector('button[type=submit]');
+
+      var orig = btn ? btn.textContent : '';
+
+      if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
+
+      var data = { landing_url: window.location.href };
+
+      form.querySelectorAll('input,select,textarea').forEach(function(el) {
+
+        if (el.name) data[el.name] = el.type === 'checkbox' ? (el.checked ? el.value : '') : el.value;
+
+      });
+
+      if (!data['page_title']) data['page_title'] = document.title;
+
+      if (!data['signup_surface']) data['signup_surface'] = formType;
+
+      fetch('/api/lead', {
+
+        method: 'POST',
+
+        headers: { 'Content-Type': 'application/json' },
+
+        body: JSON.stringify(data)
+
+      })
+
+      .then(function(r) { return r.json(); })
+
+      .then(function(res) {
+
+        if (res.ok || res.ignored) {
+
+          form.style.transition = 'opacity .3s';
+
+          form.style.opacity = '0';
+
+          setTimeout(function() {
+
+            form.outerHTML = successHtml;
+
+            if (typeof gtag === 'function') {
+
+              gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
+
+            }
+
+          }, 300);
+
+        } else {
+
+          if (btn) { btn.textContent = orig; btn.disabled = false; }
+
+          alert('Something went wrong. Try again or email hello@saaspare.org');
+
+        }
+
+      })
+
+      .catch(function() {
+
+        if (btn) { btn.textContent = orig; btn.disabled = false; }
+
+        alert('Network error. Please try again.');
+
+      });
+
+    });
+
+  }
+
+
+
+  document.querySelectorAll('.email-row, #sub-form').forEach(function(el) {
+
+    var f = el.tagName === 'FORM' ? el : el.querySelector('form');
+
+    if (f) bind(f, SUCCESS_INLINE, 'inline_newsletter');
+
+  });
+
+  document.querySelectorAll('.exit-form, #exit-form').forEach(function(el) {
+
+    var f = el.tagName === 'FORM' ? el : el.querySelector('form');
+
+    if (f) bind(f, SUCCESS_EXIT, 'exit_intent');
+
+  });
+
+})();
+
+</script>
+
+
+<!-- Exit-intent newsletter modal (desktop only, one-time per session) -->
+<style>
+#ss-exit-modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9999}
+#ss-exit-modal[data-open="1"]{display:flex}
+#ss-exit-card{max-width:440px;background:#0d0d16;padding:2rem;border-radius:16px;border:1px solid #1a1a28;color:#f4f4f8;text-align:center;font-family:inherit;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+#ss-exit-card h3{margin:0 0 .5rem 0;font-size:1.4rem;color:#e94560}
+#ss-exit-card p{margin:0 0 1.2rem 0;opacity:.82;line-height:1.5}
+#ss-exit-card form{display:flex;gap:.5rem}
+#ss-exit-card input{flex:1;padding:.75rem 1rem;background:#07070d;border:1px solid #222;border-radius:8px;color:inherit;font-size:1rem}
+#ss-exit-card button{padding:.75rem 1.2rem;background:#e94560;color:#fff;border:0;border-radius:8px;font-weight:700;cursor:pointer}
+#ss-exit-close{position:absolute;top:18px;right:22px;background:transparent;border:0;color:#777;font-size:1.3rem;cursor:pointer}
+</style>
+<script id="exit-intent-newsletter">
+(function(){
+  if(sessionStorage.getItem('ssExitShown'))return;
+  if(window.innerWidth<768)return; // desktop only
+  var shown=false;
+  function show(){
+    if(shown)return; shown=true;
+    sessionStorage.setItem('ssExitShown','1');
+    var m=document.createElement('div'); m.id='ss-exit-modal'; m.setAttribute('data-open','1');
+    m.innerHTML='<div id="ss-exit-card"><button id="ss-exit-close" aria-label="Close">&times;</button>'
+      +'<h3>Before you go &mdash; the honest SaaS deals weekly</h3>'
+      +'<p>Every Friday we email 1 verified deal, 1 pricing change and 1 tool to avoid. Free, no spam.</p>'
+      +'<form action="https://formsubmit.co/ajax/hellothere@saaspare.org" method="POST" id="ss-exit-form">'
+      +'<input type="email" name="email" placeholder="you@company.com" required><button type="submit">Get it</button>'
+      +'</form></div>';
+    document.body.appendChild(m);
+    m.addEventListener('click',function(e){if(e.target===m)m.remove();});
+    document.getElementById('ss-exit-close').onclick=function(){m.remove();};
+    document.getElementById('ss-exit-form').addEventListener('submit',function(e){
+      if(window.gtag)gtag('event','newsletter_signup',{source:'exit_intent'});
+    });
+  }
+  document.addEventListener('mouseleave',function(e){if(e.clientY<=0)show();});
+  setTimeout(show,120000); // also show after 2 min if user stays
+})();
+</script>
+</body>
+
+</html>
+
