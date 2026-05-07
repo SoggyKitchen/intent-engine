@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-07T11:23:35+00:00",
+  "generated_at_utc": "2026-05-07T11:47:51+00:00",
   "mode": "apply",
-  "pages_flagged": 38,
+  "pages_flagged": 41,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -76,6 +76,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "ching from Frase.io to Ahrefs is relatively easy, with a 7-day free trial and a 7-day money-back guarantee. Ahrefs offers a comprehensive onboarding process, including video tutorials an"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -335,6 +351,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/around-vs-riverside-fm-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "s, you can switch from Riverside.fm to Around. Around offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Aro"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "Riverside.fm to Around is relatively easy, as Around offers a free trial and a 30-day money-back guarantee. The onboarding process typically takes a few days, and Around's support team i"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/gumroad-vs-stripe-which-is-better-in-2026.html",
       "claims": [
         {
@@ -467,35 +499,20 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/lever-vs-remote-com-which-is-better-in-2026.html",
+      "path": "site/pages/semrush-vs-frase-io-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "to $5,000 per month for mid-sized companies. They also offer a free trial and a 14-day money-back guarantee.</p> <a href=\"https://www.lever.co?utm_source=saaspare&utm_medium=af"
+          "snippet": "30-day money-back guarantee",
+          "context": "Yes, you can switch from Frase.io to Semrush. Semrush offers a free trial and a 30-day money-back guarantee, making it easy to test and transition to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": ">Can I switch from Remote.com to Lever?</summary> <p>Yes, Lever offers a 14-day money-back guarantee and a free trial, making it easy to test and switch to their platform.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ers a free plan, while Lever does not. However, Lever offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Whic"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "h discounts available for larger teams. Both platforms offer a free trial and a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Lever</h2>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": ";line-height:1.8\">Switching from Remote.com to Lever is relatively easy, with a 14-day money-back guarantee and a free trial available. However, migrating data from Remote.com to Lever ma"
+          "snippet": "30-day money-back guarantee",
+          "context": ";line-height:1.8\">Switching from Frase.io to Semrush is relatively easy, with a 30-day money-back guarantee and a free trial. However, migrating data and setting up Semrush may require so"
         }
       ],
-      "trust_state_bumped": false
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
@@ -571,6 +588,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it an excellent choice for teams looking to try out a new platform.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "set up custom workflows and integrations. Monday.com offers a free trial and a 14-day money-back guarantee, making it an excellent choice for teams looking to try out a new platform. Wri"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -603,15 +636,15 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": ", it's easy to switch from Monday.com to Asana. Asana offers a free trial and a 30-day money-back guarantee, so you can try it out risk-free.</p> </details> <details class"
+          "context": "'s possible to switch from Monday.com to Asana. Asana offers a free trial and a 30-day money-back guarantee, making it easy to try out the platform before committing.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "nt-size:.92rem;line-height:1.8\">Asana and Monday.com both offer free trials and 30-day money-back guarantees, making it easy to try out both tools and see which one is best for your team."
+          "context": "nt-size:.92rem;line-height:1.8\">Asana and Monday.com both offer free trials and 30-day money-back guarantees, making it easy to try out the platform before committing. Asana offers a more"
         }
       ],
-      "trust_state_bumped": false
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026.html",
