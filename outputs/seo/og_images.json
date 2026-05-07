@@ -1,22 +1,20 @@
 {
   "svg_files": 16,
-  "pages_updated": 1000,
+  "pages_updated": 80,
   "by_vertical": {
-    "security": 99,
-    "dev-tools": 70,
-    "default": 153,
-    "cloud": 32,
-    "hr": 61,
-    "ecommerce": 35,
-    "marketing": 41,
-    "video": 44,
-    "crm": 78,
-    "vpn": 19,
-    "finance": 72,
-    "seo": 70,
-    "analytics": 47,
-    "ai": 47,
-    "project-mgmt": 85,
-    "legal": 47
+    "default": 14,
+    "cloud": 2,
+    "hr": 10,
+    "ecommerce": 2,
+    "security": 5,
+    "marketing": 2,
+    "dev-tools": 1,
+    "video": 7,
+    "crm": 2,
+    "vpn": 1,
+    "finance": 1,
+    "seo": 9,
+    "project-mgmt": 13,
+    "ai": 11
   }
 }
