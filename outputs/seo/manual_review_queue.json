@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-07T01:35:03+00:00",
+  "generated_at_utc": "2026-05-07T06:18:01+00:00",
   "mode": "apply",
   "pages_flagged": 39,
   "claim_labels_seen": [
@@ -43,7 +43,7 @@
           "context": "a more affordable alternative. Additionally, Copy.ai offers a free trial and a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Competitors at This Price Poin"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/retool-vs-pagerduty-which-is-better-in-2026.html",
@@ -564,7 +564,7 @@
           "context": "om Wrike to Monday.com is relatively easy. Monday.com offers a free trial and a 14-day money-back guarantee, making it a low-risk choice. The onboarding process typically takes 1-2 weeks,"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
@@ -602,7 +602,7 @@
           "context": "y require some data migration and setup effort. Asana offers a free trial and a 30-day money-back guarantee, making it a low-risk option for teams that want to try out the platform.</p>"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026.html",
