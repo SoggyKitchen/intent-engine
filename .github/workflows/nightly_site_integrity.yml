@@ -59,6 +59,12 @@ jobs:
       - name: SEO consolidation pass
         run: uv run python scripts/seo_consolidate.py
 
+      # 4d. CTR + position blast: rewrite stale titles/descs, refresh
+      # dateModified, add featured-answer boxes for AI-Overview / snippet
+      # capture, then ping IndexNow so changes get re-crawled within hours.
+      - name: Blast off (CTR + AEO)
+        run: uv run python scripts/blast_off.py
+
       # 5. Comprehensive content QA gate (titles, descs, canonicals, JSON-LD,
       # sitemap, robots, money-page disclosure + sponsored attrs).
       # Hard failures fail the build; soft issues logged to outputs/seo/content_qa.json.
