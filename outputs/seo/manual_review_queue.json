@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-07T06:18:01+00:00",
+  "generated_at_utc": "2026-05-07T07:43:48+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 38,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -30,17 +30,6 @@
           "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
           "context": "rial</strong></td> <td>14-day free trial</td><td>7-day free trial (with money-back guarantee)</td> </tr> <tr> <td><strong>Best For</strong></td>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "a more affordable alternative. Additionally, Copy.ai offers a free trial and a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Competitors at This Price Poin"
         }
       ],
       "trust_state_bumped": false
@@ -478,6 +467,37 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/lever-vs-remote-com-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "to $5,000 per month for mid-sized companies. They also offer a free trial and a 14-day money-back guarantee.</p> <a href=\"https://www.lever.co?utm_source=saaspare&utm_medium=affi"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "y>Can I switch from Remote.com to Lever?</summary> <p>Yes, Lever offers a 14-day money-back guarantee and a free trial, making it easy to test and switch to their platform.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ers a free plan, while Lever does not. However, Lever offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "h discounts available for larger teams. Both platforms offer a free trial and a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Lever</h2>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": ";line-height:1.8\">Switching from Remote.com to Lever is relatively easy, with a 14-day money-back guarantee and a free trial available. However, migrating data from Remote.com to Lever ma"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
       "claims": [
         {
@@ -551,22 +571,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": ", you can switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "om Wrike to Monday.com is relatively easy. Monday.com offers a free trial and a 14-day money-back guarantee, making it a low-risk choice. The onboarding process typically takes 1-2 weeks,"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -599,10 +603,15 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "y require some data migration and setup effort. Asana offers a free trial and a 30-day money-back guarantee, making it a low-risk option for teams that want to try out the platform.</p>"
+          "context": ", it's easy to switch from Monday.com to Asana. Asana offers a free trial and a 30-day money-back guarantee, so you can try it out risk-free.</p> </details> <details class=\"f"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "nt-size:.92rem;line-height:1.8\">Asana and Monday.com both offer free trials and 30-day money-back guarantees, making it easy to try out both tools and see which one is best for your team."
         }
       ],
-      "trust_state_bumped": false
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026.html",
