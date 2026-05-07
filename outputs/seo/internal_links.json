@@ -2,7 +2,7 @@
   "total_pages": 1000,
   "updated": 1000,
   "skipped": 0,
-  "orphans_before": 40,
+  "orphans_before": 34,
   "orphans_after": 34,
   "samples": [
     {
