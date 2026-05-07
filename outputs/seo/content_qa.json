@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-05-07T11:23:39.555710+00:00",
+  "generated_at": "2026-05-07T12:42:18.905691+00:00",
   "stats": {
     "sitemap_urls": 1044,
     "sitemap_with_lastmod": 1044,
     "total_pages": 1053,
     "indexable_pages": 1016,
     "title_over_70": 135,
-    "desc_over_165": 1,
     "money_pages": 902,
-    "soft": 2
+    "soft": 2,
+    "desc_over_165": 1
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/research/saas-pricing-2026.html: money page missing affiliate disclosure mention",
-    "site/pages/verification.html: title <30 chars (23)"
+    "site/pages/verification.html: title <30 chars (23)",
+    "site/research/saas-pricing-2026.html: money page missing affiliate disclosure mention"
   ],
   "soft_issues_total": 2
 }

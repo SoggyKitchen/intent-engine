@@ -79,6 +79,15 @@ jobs:
       - name: Build llms-full.txt
         run: uv run python scripts/build_llms_full.py
 
+      # 4h. Schema pro pass — add SoftwareApplication, Review, HowTo,
+      # ItemList schemas + visible affiliate disclosure pill above-fold.
+      - name: Schema pro pass
+        run: uv run python scripts/schema_pro.py
+
+      # 4i. Per-vertical OG images for proper social-share previews.
+      - name: OG images per vertical
+        run: uv run python scripts/og_images.py
+
       # 5. Comprehensive content QA gate (titles, descs, canonicals, JSON-LD,
       # sitemap, robots, money-page disclosure + sponsored attrs).
       # Hard failures fail the build; soft issues logged to outputs/seo/content_qa.json.

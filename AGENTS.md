@@ -19,6 +19,8 @@
 | Kill orphan pages: inject "Related comparisons" block on every money page | `uv run python scripts/internal_links.py --seed 42` (use `--check` to dry-run) |
 | Site upgrade: sitemap changefreq, homepage mega-schema, manifest, Clarity, exit-intent, lazy-loading | `uv run python scripts/site_upgrade.py` (use `--check` to dry-run) |
 | Rebuild /llms-full.txt dense LLM content index | `uv run python scripts/build_llms_full.py` |
+| Schema pro: SoftwareApplication, Review, HowTo, ItemList + above-fold disclosure pill | `uv run python scripts/schema_pro.py` (use `--check` to dry-run) |
+| OG images per vertical (16 SVG + meta updates on all pages) | `uv run python scripts/og_images.py` (use `--check` to dry-run) |
 | Comprehensive content QA gate (CI; reports to outputs/seo/content_qa.json) | `uv run python scripts/content_qa.py` |
 | Run the existing weekly SEO agent (uses OpenAI/GSC) | `npm run seo:agent` |
 
