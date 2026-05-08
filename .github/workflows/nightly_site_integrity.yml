@@ -105,6 +105,10 @@ jobs:
       - name: AEO pass — pricing history quick answers
         run: uv run python scripts/fix_pricing_history_aeo.py
 
+      # 4h-7. Build any missing tool clusters (pricing/review/trial/vs pages).
+      - name: Build missing tool clusters
+        run: uv run python scripts/build_missing_clusters.py
+
       # 4i. Per-vertical OG images for proper social-share previews.
       - name: OG images per vertical
         run: uv run python scripts/og_images.py
