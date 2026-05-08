@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-05-08T08:56:14+00:00",
+  "generated_at": "2026-05-08T09:52:46+00:00",
   "html_files_scanned": 1071,
-  "files_changed": 2,
-  "changes": [
-    {
-      "path": "site/pages/best-saas-analytics-tools-for-b2b-software-teams-in-2025.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-open-source-iac-and-cloud-storage-tools-in-2025-opentofu-vs-terraform-minio-alternatives.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    }
-  ]
+  "files_changed": 0,
+  "changes": []
 }
