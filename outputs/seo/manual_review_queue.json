@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-08T16:18:30+00:00",
+  "generated_at_utc": "2026-05-08T20:54:16+00:00",
   "mode": "apply",
-  "pages_flagged": 40,
+  "pages_flagged": 41,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -22,6 +22,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "you can switch from ClickUp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "Up to Monday.com is relatively easy, as both platforms offer a free trial and a 14-day money-back guarantee. However, the migration process may take some time, especially if you have a la"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -78,17 +94,12 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
+      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ble to switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it a low-risk option for teams looking to try out a new project managem"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "1.8\">Switching from Basecamp to Monday.com is possible, with a free trial and a 14-day money-back guarantee. However, teams should be aware that Monday.com's customization options and int"
+          "snippet": "7-day money-back guarantee",
+          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to try out their features and see if they're a good fit for you"
         }
       ],
       "trust_state_bumped": true
@@ -178,6 +189,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/impact-com-vs-affilae-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "), Premium ($99/month), and Enterprise ($299/month). The platform also offers a 30-day money-back guarantee.</p> <a href=\"https://www.affilae.com?utm_source=saaspare&utm_medium=a"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "), Premium ($99/month), and Enterprise ($299/month). The platform also offers a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use impact.com</h2>"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -499,38 +526,27 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-notion-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "you can switch from Notion to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free.</p> </details> <details class=\"f"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "plan, while Monday.com does not. However, Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free. Notion also offers a free trial, and you can"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
-      "path": "site/pages/semrush-vs-frase-io-which-is-better-in-2026.html",
+      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "Yes, you can switch from Frase.io to Semrush. Semrush offers a free trial and a 30-day money-back guarantee, making it easy to try out their tool and see if it's a good fit for your team."
+          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 30-day money-back guarantee, making it easy to try out their features and support before committing to a pu"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": ";line-height:1.8\">Switching from Frase.io to Semrush is relatively easy, with a 30-day money-back guarantee and a free trial. Semrush offers a comprehensive onboarding process, including"
+          "context": "g nor Frase.io offers a free plan. However, both tools offer a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "Pro ($49/month), and Business ($99/month). Both tools offer a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use SE Ranking</h2>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "rase.io to SE Ranking is relatively easy, thanks to SE Ranking's free trial and 30-day money-back guarantee. However, migrating data and settings from Frase.io to SE Ranking may require s"
         }
       ],
       "trust_state_bumped": true
