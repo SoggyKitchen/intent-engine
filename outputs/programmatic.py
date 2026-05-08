@@ -84,6 +84,10 @@ TOOLS_BY_VERTICAL = {
         "Ahrefs", "Semrush", "Moz Pro", "Surfer SEO", "SE Ranking", "Mangools",
         "SpyFu", "Clearscope", "Frase.io", "Rankmath Pro",
     ],
+    "affiliate_management": [
+        "impact.com", "PartnerStack", "Tapfiliate", "Rewardful", "FirstPromoter",
+        "Refersion", "TUNE", "LeadDyno", "Affilae", "Post Affiliate Pro",
+    ],
 }
 
 ALTERNATIVE_TARGETS = {
