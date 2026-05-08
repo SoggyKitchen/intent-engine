@@ -84,6 +84,22 @@ jobs:
       - name: Schema pro pass
         run: uv run python scripts/schema_pro.py
 
+      # 4h-2. AggregateRating on review pages → star ratings in SERPs.
+      - name: Add AggregateRating to review pages
+        run: uv run python scripts/fix_aggregate_rating.py
+
+      # 4h-3. ItemList schema on alternatives/best pages → list rich results.
+      - name: Add ItemList schema to list pages
+        run: uv run python scripts/fix_itemlist_schema.py
+
+      # 4h-4. Ensure blog posts exist for all blog index links.
+      - name: Create any missing blog posts
+        run: uv run python scripts/create_missing_blog_posts.py
+
+      # 4h-5. Sync sitemap with category hubs and new blog posts.
+      - name: Update sitemap with new pages
+        run: uv run python scripts/update_sitemap_hubs.py
+
       # 4i. Per-vertical OG images for proper social-share previews.
       - name: OG images per vertical
         run: uv run python scripts/og_images.py
@@ -128,6 +144,9 @@ jobs:
             site/index.html \
             site/about.html \
             site/media-kit.html \
+            site/blog/ \
+            site/best-*.html \
+            site/sitemap.xml \
             data/public_kpis.json \
             || true
           git diff --staged --quiet && echo "No changes to commit" && exit 0

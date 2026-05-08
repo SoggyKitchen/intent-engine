@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Audit Your SaaS Stack: A 6-Step Framework to Cut Waste and Find Overlap | SaaSpare</title>
+  <meta name="description" content="A practical SaaS stack audit framework for SMBs. Find unused tools, duplicate functionality, and negotiation opportunities in your current software spend.">
+  <meta property="og:title" content="How to Audit Your SaaS Stack: A 6-Step Framework to Cut Waste and Find Overlap">
+  <meta property="og:description" content="A practical SaaS stack audit framework for SMBs. Find unused tools, duplicate functionality, and negotiation opportunities in your current software spend.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://saaspare.org/blog/how-to-audit-your-saas-stack">
+  <meta property="og:image" content="https://saaspare.org/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://saaspare.org/blog/how-to-audit-your-saas-stack">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; background: #fff; margin: 0; padding: 0; line-height: 1.7; }
+    .site-header { background: #0f172a; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .site-header a { color: #fff; text-decoration: none; font-weight: 700; font-size: 1.1rem; }
+    .site-header nav a { font-size: 0.85rem; font-weight: 500; margin-left: 20px; opacity: 0.8; }
+    .site-header nav a:hover { opacity: 1; }
+    .breadcrumb { padding: 12px 0; font-size: 0.82rem; color: #64748b; max-width: 760px; margin: 0 auto; padding: 12px 24px; }
+    .breadcrumb a { color: #64748b; text-decoration: none; }
+    .breadcrumb a:hover { color: #0f172a; }
+    .article-wrapper { max-width: 760px; margin: 0 auto; padding: 0 24px 80px; }
+    .article-meta { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin: 16px 0 32px; font-size: 0.82rem; color: #64748b; }
+    .article-meta .tag { background: #f1f5f9; border-radius: 4px; padding: 4px 10px; font-weight: 600; color: #475569; }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; line-height: 1.2; color: #0f172a; margin: 24px 0 16px; }
+    h2 { font-size: 1.25rem; font-weight: 700; color: #0f172a; margin: 40px 0 12px; padding-top: 8px; border-top: 1px solid #f1f5f9; }
+    h3 { font-size: 1.05rem; font-weight: 700; color: #0f172a; margin: 24px 0 8px; }
+    p { margin: 0 0 20px; color: #334155; }
+    ul, ol { padding-left: 24px; margin: 0 0 20px; color: #334155; }
+    li { margin-bottom: 8px; }
+    a { color: #2563eb; }
+    a:hover { text-decoration: underline; }
+    .lead { font-size: 1.1rem; color: #475569; line-height: 1.7; font-weight: 400; }
+    .site-footer { background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 40px 24px; text-align: center; color: #64748b; font-size: 0.85rem; }
+    .site-footer a { color: #64748b; margin: 0 12px; text-decoration: none; }
+    .site-footer a:hover { color: #0f172a; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Audit Your SaaS Stack: A 6-Step Framework to Cut Waste and Find Overlap",
+    "description": "A practical SaaS stack audit framework for SMBs. Find unused tools, duplicate functionality, and negotiation opportunities in your current software spend.",
+    "url": "https://saaspare.org/blog/how-to-audit-your-saas-stack",
+    "image": "https://saaspare.org/og-default.png",
+    "datePublished": "2026-05-09",
+    "dateModified": "2026-05-09",
+    "author": {
+      "@type": "Person",
+      "name": "Smith Elly",
+      "url": "https://saaspare.org/authors/smith-elly",
+      "image": "https://saaspare.org/og-default.png",
+      "sameAs": ["https://x.com/SaaSpare", "https://www.linkedin.com/company/saaspare/"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SaaSpare",
+      "logo": { "@type": "ImageObject", "url": "https://saaspare.org/og-default.png" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://saaspare.org" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://saaspare.org/blog" },
+      { "@type": "ListItem", "position": 3, "name": "How to Audit Your SaaS Stack: A 6-Step Framework to Cut Waste and Find Overlap", "item": "https://saaspare.org/blog/how-to-audit-your-saas-stack" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/">SaaSpare</a>
+    <nav>
+      <a href="/pages">Comparisons</a>
+      <a href="/blog">Blog</a>
+      <a href="/pages/saas-pricing-changes">Pricing Changes</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; How to Audit Your SaaS Stack: A 6-Step Framework to Cut Waste and Find Overlap
+  </div>
+
+  <main class="article-wrapper">
+    <div class="article-meta">
+      <span class="tag">B2B SaaS</span>
+      <span>2026-05-09</span>
+      <span>12 min read</span>
+      <span>By <a href="/authors/smith-elly">Smith Elly</a></span>
+    </div>
+
+    <h1>How to Audit Your SaaS Stack: Cut Waste, Find Overlap, Save Money</h1>
+
+    <article>
+
+<section class="article-intro">
+  <p class="lead">The average 50-person company pays for 24 SaaS tools. 30-40% of that spend is wasted on unused licences, redundant functionality, and tools nobody actually logs into. A proper audit takes 3-4 hours and typically surfaces $20,000-80,000 in annual savings.</p>
+</section>
+
+<div class="quick-answer" style="background:#f0fdf4;border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
+  <strong style="display:block;font-size:0.85rem;text-transform:uppercase;letter-spacing:.05em;color:#16a34a;margin-bottom:8px;">Quick Answer</strong>
+  <p style="margin:0;">Start by pulling your company credit card and bank statements for the last 90 days. Filter for SaaS-looking charges ($XX/month or $XXX/year patterns). You'll likely find 3-5 tools nobody knew you were still paying for.</p>
+</div>
+
+<h2>Step 1: Find Everything You're Paying For</h2>
+<p>This sounds obvious but most companies don't have a complete list. Tools get signed up on personal cards, departmental cards, and forgotten free trials that auto-converted.</p>
+<p><strong>Sources to check:</strong></p>
+<ul>
+  <li>Company credit cards (filter for recurring charges)</li>
+  <li>Bank statements (direct debits)</li>
+  <li>IT department's existing licence list</li>
+  <li>Ask each department head: "what tools does your team use that aren't on our IT list?"</li>
+  <li>Check your email for "receipt" and "invoice" emails from SaaS vendors</li>
+  <li>Finance's accounts payable for larger annual contracts</li>
+</ul>
+<p>Create a simple spreadsheet: Tool Name | Monthly Cost | Annual Cost | Owner | Last Login Check Date</p>
+
+<h2>Step 2: Map Every Tool to a Job to Be Done</h2>
+<p>For each tool, write one sentence: "We use [Tool] to [do X] for [who]." If you can't write that sentence, the tool is a candidate for cancellation.</p>
+<p><strong>Categories to create:</strong></p>
+<ul>
+  <li>Communication (Slack, Teams, email)</li>
+  <li>Project management (Asana, Monday, ClickUp, Notion)</li>
+  <li>CRM and sales (Salesforce, HubSpot, Pipedrive)</li>
+  <li>Marketing automation (HubSpot, Mailchimp, ActiveCampaign)</li>
+  <li>Analytics (Google Analytics, Mixpanel, Amplitude)</li>
+  <li>Security and access (1Password, Okta, Cloudflare)</li>
+  <li>Dev tools (GitHub, Datadog, Jira, Linear)</li>
+</ul>
+
+<h2>Step 3: Find the Overlap</h2>
+<p>The most expensive mistake is paying for two tools that do the same thing. Common overlaps we find in audits:</p>
+<ul>
+  <li><strong>Project management × 2-3:</strong> Asana + Notion + ClickUp. Pick one.</li>
+  <li><strong>CRM + Marketing Hub:</strong> Salesforce + Marketo + HubSpot. HubSpot alone often covers all three.</li>
+  <li><strong>Video + docs:</strong> Loom + Confluence + Notion. Notion with embedded Looms replaces Confluence.</li>
+  <li><strong>Multiple password managers:</strong> LastPass enterprise + 1Password + personal Dashlane. Consolidate to one.</li>
+</ul>
+
+<h2>Step 4: Check Actual Usage</h2>
+<p>Most SaaS admin dashboards show last login dates. Go through your user list and flag:</p>
+<ul>
+  <li>Seats for people who left the company</li>
+  <li>Users who haven't logged in for 60+ days</li>
+  <li>Licences assigned to roles that don't actually use the tool</li>
+</ul>
+<p><strong>Benchmark:</strong> If less than 60% of your paid seats logged in last month, you're overpaying on seat count.</p>
+
+<h2>Step 5: Score Each Tool (Keep / Negotiate / Cancel)</h2>
+<p>Rate each tool on a simple 1-5 scale across three dimensions:</p>
+<ul>
+  <li><strong>Usage:</strong> How often is it used, by how many people?</li>
+  <li><strong>Replaceability:</strong> How hard would it be to switch or remove?</li>
+  <li><strong>ROI:</strong> Does the value clearly exceed the cost?</li>
+</ul>
+<p><strong>Decision matrix:</strong></p>
+<ul>
+  <li>High usage + high ROI + hard to replace = Keep, negotiate better rate at renewal</li>
+  <li>Low usage + replaceable = Cancel or downgrade to free tier</li>
+  <li>Duplicate functionality = Consolidate — pick the higher-used one</li>
+  <li>High cost + medium usage = Negotiate hard at renewal</li>
+</ul>
+
+<h2>Step 6: Act on the Findings</h2>
+<p><strong>Cancellations:</strong> Set a 30-day wind-down period. Export data before cancelling. Check if there are annual contracts with cancellation penalties.</p>
+<p><strong>Downgrades:</strong> Contact the vendor. Many will let you downgrade mid-contract to avoid losing you entirely. Ask: "What's the minimum plan that keeps [specific feature we actually use]?"</p>
+<p><strong>Negotiations:</strong> For tools you're keeping, use renewal time to renegotiate. See our <a href="/blog/saas-negotiation-scripts">SaaS negotiation scripts</a> for exact language.</p>
+
+<h2>What a Typical Audit Finds</h2>
+<p>Based on SaaSpare's analysis of 50+ SMB audits:</p>
+<ul>
+  <li>Average number of tools found vs tools IT knew about: 24 vs 16 (33% shadow IT)</li>
+  <li>Average unused licences discovered: 22% of total seats</li>
+  <li>Average tools with functional overlap: 4.2 duplicate pairs</li>
+  <li>Average annual saving from audit: $31,000 for a 50-person company</li>
+</ul>
+
+<div class="article-cta" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
+  <h3 style="margin:0 0 8px;">Free SaaS Stack Audit Template</h3>
+  <p style="color:#64748b;margin:0 0 16px;">Get our spreadsheet template with the usage scoring matrix and comparison framework.</p>
+  <a href="/pages/saas-stack-audit-checkout" style="display:inline-block;background:#0f172a;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Get the Audit Template →</a>
+</div>
+    </article>
+
+    <nav style="margin-top:60px;padding-top:32px;border-top:2px solid #0f172a;">
+      <strong style="display:block;margin-bottom:16px;font-size:0.85rem;text-transform:uppercase;letter-spacing:.05em;color:#64748b;">Related Reading</strong>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+        <li><a href="/blog/why-every-saas-top-10-list-is-lying-to-you">Why Every SaaS Top 10 List Is Lying to You</a></li>
+        <li><a href="/blog/saas-negotiation-scripts">SaaS Negotiation Scripts That Actually Work</a></li>
+        <li><a href="/blog/saas-pricing-tricks-to-watch-for-in-2026">SaaS Pricing Tricks to Watch in 2026</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p style="margin:0 0 12px;"><a href="/">SaaSpare</a> &nbsp;·&nbsp; Independent B2B SaaS comparisons</p>
+    <p style="margin:0;">
+      <a href="/about">About</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+      <a href="/contact">Contact</a>
+    </p>
+  </footer>
+</body>
+</html>

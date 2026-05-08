@@ -1,0 +1,12 @@
+{
+  "domains": [
+    "creatio.com",
+    "gartner.com",
+    "technologyadvice.com"
+  ],
+  "bad_emails": [
+    "o.ovcharenko@creatio.com",
+    "trenton.hayden@gartner.com",
+    "kayla.murphy@technologyadvice.com"
+  ]
+}
