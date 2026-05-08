@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-07T21:05:23+00:00",
+  "generated_at_utc": "2026-05-08T01:51:48+00:00",
   "mode": "apply",
   "pages_flagged": 40,
   "claim_labels_seen": [
@@ -78,17 +78,17 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
+      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test their features and pricing plans before committing.</p>"
+          "snippet": "14-day money-back guarantee",
+          "context": "ou can switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
         },
         {
           "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "ching from Frase.io to Ahrefs is relatively easy, with a 7-day free trial and a 7-day money-back guarantee. However, migrating data from Frase.io to Ahrefs may require some technical exp"
+          "snippet": "14-day money-back guarantee",
+          "context": "ne-height:1.8\">Switching from Basecamp to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial available. However, setting up Monday.com can take some time,"
         }
       ],
       "trust_state_bumped": true
@@ -202,22 +202,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-smartsheet-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "e to switch from Smartsheet to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan. Smartshe"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/mailchimp-vs-brevo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -272,27 +256,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/mangools-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s, you can switch from Frase.io to Mangools. Mangools offers a free trial and a 30-day money-back guarantee, making it easy to test and transition to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ls nor Frase.io offers a free plan. However, both tools offer free trials and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "rom Frase.io to Mangools is relatively straightforward, with a free trial and a 30-day money-back guarantee. However, setting up Mangools may require some technical expertise, especially"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
@@ -303,7 +266,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ine-height:1.8\">Switching from Todoist to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial. However, setting up Monday.com can take some time, especially"
+          "context": "st to Monday.com is relatively easy, as both platforms offer a free trial and a 14-day money-back guarantee. However, migrating data from Todoist to Monday.com may require some manual eff"
         }
       ],
       "trust_state_bumped": true
@@ -562,6 +525,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/clearscope-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": ".io to Clearscope?</summary> <p>Yes, Clearscope offers a free trial and a 14-day money-back guarantee, making it easy to switch from Frase.io.</p> </details> <details c"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Clearscope offers a free trial and a 14-day money-back guarantee, making it easy to switch from Frase.io. Frase.io also offers a free trial, but"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/notion-vs-basecamp-which-is-better-in-2026.html",
       "claims": [
         {
@@ -623,6 +602,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/deel-vs-remote-com-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "minimum of $500 per month for 10 employees. They also offer a free trial and a 14-day money-back guarantee.</p> <a href=\"/go/deel?utm_source=saaspare&utm_medium=affiliate&utm_ca"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "?</summary> <p>Yes, you can switch from Remote.com to Deel. Deel offers a 14-day money-back guarantee, and their onboarding process is designed to be seamless.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "up to 5 employees. Both platforms offer a 14-day free trial, and Deel offers a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Deel</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/freshsales-vs-keap-which-is-better-in-2026.html",
