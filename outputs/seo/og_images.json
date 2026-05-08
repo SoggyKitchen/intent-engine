@@ -1,6 +1,6 @@
 {
   "svg_files": 16,
-  "pages_updated": 82,
+  "pages_updated": 83,
   "by_vertical": {
     "default": 16,
     "cloud": 2,
@@ -14,7 +14,7 @@
     "vpn": 1,
     "finance": 1,
     "seo": 9,
-    "project-mgmt": 13,
+    "project-mgmt": 14,
     "ai": 11
   }
 }

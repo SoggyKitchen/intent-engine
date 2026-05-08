@@ -3,10 +3,10 @@
   "today": "2026-05-08",
   "titles_rewritten": 4,
   "descs_rewritten": 82,
-  "dates_refreshed": 920,
+  "dates_refreshed": 0,
   "answers_added": 82,
-  "files_changed": 1000,
-  "files_scanned": 1033,
+  "files_changed": 82,
+  "files_scanned": 1050,
   "title_examples": [
     {
       "file": "copy-ai-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -62,7 +62,7 @@
     }
   ],
   "indexnow": {
-    "submitted": 200,
+    "submitted": 82,
     "status": 200
   }
 }
