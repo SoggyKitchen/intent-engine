@@ -88,6 +88,17 @@ jobs:
       - name: OG images per vertical
         run: uv run python scripts/og_images.py
 
+      # 4j. Price Intelligence: snapshot 15 tracked vendors and detect diffs.
+      - name: Price intelligence track
+        run: uv run python scripts/track_pricing.py
+
+      # 4k. Render /pages/[tool]-pricing-history-2026 + buyer-signals roll-up.
+      - name: Render pricing history pages
+        run: uv run python scripts/render_pricing_history.py
+
+      - name: Render buyer-intel pages
+        run: uv run python scripts/render_buyer_intel.py
+
       # 5. Comprehensive content QA gate (titles, descs, canonicals, JSON-LD,
       # sitemap, robots, money-page disclosure + sponsored attrs).
       # Hard failures fail the build; soft issues logged to outputs/seo/content_qa.json.

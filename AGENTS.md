@@ -21,6 +21,9 @@
 | Rebuild /llms-full.txt dense LLM content index | `uv run python scripts/build_llms_full.py` |
 | Schema pro: SoftwareApplication, Review, HowTo, ItemList + above-fold disclosure pill | `uv run python scripts/schema_pro.py` (use `--check` to dry-run) |
 | OG images per vertical (16 SVG + meta updates on all pages) | `uv run python scripts/og_images.py` (use `--check` to dry-run) |
+| Price Intelligence: snapshot tracked vendors and detect diffs | `uv run python scripts/track_pricing.py` (use `--check` to dry-run) |
+| Render /pages/[tool]-pricing-history-2026 from snapshots | `uv run python scripts/render_pricing_history.py` |
+| Render /pages/saas-buyer-signals-2026 + rebuild /pages/saas-pricing-changes | `uv run python scripts/render_buyer_intel.py` |
 | Comprehensive content QA gate (CI; reports to outputs/seo/content_qa.json) | `uv run python scripts/content_qa.py` |
 | Run the existing weekly SEO agent (uses OpenAI/GSC) | `npm run seo:agent` |
 
