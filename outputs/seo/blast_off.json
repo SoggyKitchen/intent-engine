@@ -1,58 +1,16 @@
 {
   "current_month": "May 2026",
   "today": "2026-05-08",
-  "titles_rewritten": 2,
-  "descs_rewritten": 99,
+  "titles_rewritten": 0,
+  "descs_rewritten": 0,
   "dates_refreshed": 0,
-  "answers_added": 99,
-  "files_changed": 99,
+  "answers_added": 0,
+  "files_changed": 0,
   "files_scanned": 1095,
-  "title_examples": [
-    {
-      "file": "copy-ai-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Copy.ai Pricing 2026: Plans & Costs | SaaSpare",
-      "after": "Copy.ai Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Monday.com Pricing 2026: Plans, Costs, & Hidden Fees Explained | SaaSpare",
-      "after": "Monday.com Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
-    }
-  ],
-  "desc_examples": [
-    {
-      "file": "7-best-adp-alternatives-in-2026-free-paid.html",
-      "before": "Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested alternatives\u2026"
-    },
-    {
-      "file": "7-best-bamboohr-alternatives-in-2026-free-paid.html",
-      "before": "Find the best BambooHR alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best BambooHR alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    },
-    {
-      "file": "7-best-getresponse-alternatives-in-2026-free-paid.html",
-      "before": "Find the best Getresponse alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best Getresponse alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    },
-    {
-      "file": "7-best-mailchimp-alternatives-in-2026-free-paid.html",
-      "before": "Find the best Mailchimp alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best Mailchimp alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    },
-    {
-      "file": "7-best-quickbooks-alternatives-in-2026-free-paid.html",
-      "before": "Find the best QuickBooks alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best QuickBooks alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    },
-    {
-      "file": "7-best-workday-alternatives-in-2026-free-paid.html",
-      "before": "Find the best Workday alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best Workday alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    }
-  ],
+  "title_examples": [],
+  "desc_examples": [],
   "indexnow": {
-    "submitted": 99,
-    "status": 200
+    "submitted": 0,
+    "skipped_reason": "no urls"
   }
 }
