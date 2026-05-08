@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-08T09:54:44+00:00",
+  "generated_at_utc": "2026-05-08T11:26:53+00:00",
   "mode": "apply",
-  "pages_flagged": 42,
+  "pages_flagged": 38,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -240,27 +240,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ible to switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. Todoist also offers a fr"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "y to test and migrate to their platform. Todoist also offers a free trial and a 30-day money-back guarantee. Both platforms have a comprehensive knowledge base and community forums to hel"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
       "claims": [
         {
@@ -377,10 +356,10 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ay.com to meet your team's needs. However, Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it risk-free.</p> </div> <div class=\"section\"> <h2>E"
+          "context": "it's generally a straightforward process. Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it risk-free.</p> </div> <div class=\"section\"> <h2>E"
         }
       ],
-      "trust_state_bumped": false
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
@@ -402,6 +381,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/rewardful-vs-post-affiliate-pro-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "witch from Post Affiliate Pro to Rewardful. Rewardful offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Rew"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": ",255,.65);font-size:.92rem;line-height:1.8\">Rewardful offers a free trial and a 30-day money-back guarantee, making it easy to switch from Post Affiliate Pro. Post Affiliate Pro also offe"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pipedrive-vs-zoho-crm-which-is-better-in-2026.html",
@@ -462,17 +457,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/copy-ai-vs-writesonic-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "the new platform and migrating your content. Copy.ai offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free.</p> </div> <div class=\"section\"> <"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/google-meet-vs-webex-which-is-better-in-2026.html",
       "claims": [
         {
@@ -505,38 +489,6 @@
           "label": "money_back_guarantee",
           "snippet": "7-day money-back guarantee",
           "context": "l gives full access to all features \u2014 including features on the paid plan \u2014 for 7-day money-back guarantee. This is your chance to test the tool with real data, not a demo.</p> </div>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-notion-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "sible to switch from Notion to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan. Notio"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/semrush-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "Yes, you can switch from Frase.io to Semrush. Semrush offers a free trial and a 30-day money-back guarantee, making it easy to try out their tool and see if it's a good fit for your team."
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ing from Frase.io to Semrush is relatively easy, with a 30-day free trial and a 30-day money-back guarantee. However, migrating data from Frase.io to Semrush may require some technical ex"
         }
       ],
       "trust_state_bumped": false
@@ -637,27 +589,6 @@
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
           "context": "grate your data and set up the new system. Freshsales offers a free trial and a 14-day money-back guarantee, so you can try it risk-free.</p> </div> <div class=\"section\"> <h2"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/asana-vs-monday-com-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": ", it's easy to switch from Monday.com to Asana. Asana offers a free trial and a 30-day money-back guarantee, so you can try it out risk-free.</p> </details> <details class=\"f"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "both offer easy migration and setup processes. Asana offers a free trial and a 30-day money-back guarantee, so you can try it out risk-free. Monday.com also offers a free trial and a 14-"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "tee, so you can try it out risk-free. Monday.com also offers a free trial and a 14-day money-back guarantee. Both tools offer data exports and imports, making it easy to switch between to"
         }
       ],
       "trust_state_bumped": false
