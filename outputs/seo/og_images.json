@@ -1,7 +1,14 @@
 {
   "svg_files": 16,
-  "pages_updated": 1,
+  "pages_updated": 100,
   "by_vertical": {
-    "project-mgmt": 1
+    "default": 51,
+    "hr": 10,
+    "marketing": 2,
+    "finance": 1,
+    "seo": 9,
+    "project-mgmt": 12,
+    "ai": 10,
+    "video": 5
   }
 }

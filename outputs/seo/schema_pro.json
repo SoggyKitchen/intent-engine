@@ -1,9 +1,9 @@
 {
-  "files_scanned": 1049,
-  "software_added": 0,
-  "review_added": 0,
+  "files_scanned": 1094,
+  "software_added": 3,
+  "review_added": 1,
   "howto_added": 0,
   "itemlist_added": 0,
-  "disclosure_added": 0,
-  "skipped_already_present": 1018
+  "disclosure_added": 99,
+  "skipped_already_present": 964
 }
