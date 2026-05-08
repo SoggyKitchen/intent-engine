@@ -1,0 +1,58 @@
+
+═══════════════════════════════════════════════════════════
+  SEMRUSH AFFILIATE APPLICATION PACKET — saaspare.org
+  Generated: 2026-05-08
+═══════════════════════════════════════════════════════════
+
+Apply at: https://www.semrush.com/affiliates/
+Contact backup: affiliates@semrush.com
+
+── FORM FIELDS ────────────────────────────────────────────
+
+First name:         Smith
+Last name:          Elly
+Email:              hello@saaspare.org
+Website URL:        https://saaspare.org
+Website name:       SaaSpare
+Country:            Australia
+
+Website description (copy-paste):
+  SaaSpare is an independent B2B SaaS comparison and pricing platform.
+  We publish 1,034 buyer-intent pages across 16 verticals including CRM,
+  SEO tools, project management, and security software. We run a Price
+  Intelligence Engine that tracks weekly pricing changes for 15+ SaaS tools
+  and publishes timestamped diff logs — original data not available on
+  G2, Capterra, or GetApp.
+
+How will you promote Semrush? (copy-paste):
+  Via two channels:
+  1. Our dedicated Semrush pages: /pages/semrush-pricing-2026-plans-costs-what-you-actually-pay,
+     /pages/semrush-review-2026-is-it-worth-it-honest-verdict, and
+     /pages/ahrefs-vs-semrush-which-is-better-in-2026 — these rank for
+     commercial-intent queries from buyers actively comparing SEO tools.
+  2. Our SaaS Pricing Changes page (/pages/saas-pricing-changes) which
+     tracks Semrush pricing history and routes high-intent readers directly
+     to Semrush's trial page.
+
+Monthly visitors:   Ramping — launched April 2026. 6,500+ GSC impressions in first 17 days.
+Traffic source:     Organic search (primary), editorial referrals
+Audience:           B2B operators and marketers evaluating SEO tools
+
+Promotional methods (tick these):
+  ✅ Blog / content marketing
+  ✅ SEO / organic search
+  ✅ Product comparison / review sites
+  ❌ Paid advertising
+  ❌ Email marketing
+  ❌ Social media only
+
+── STRONGEST PAGES TO MENTION ─────────────────────────────
+  https://saaspare.org/pages/semrush-review-2026-is-it-worth-it-honest-verdict
+  https://saaspare.org/pages/ahrefs-vs-semrush-which-is-better-in-2026
+  https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay
+  https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026
+
+── WHY THIS SHOULD GET APPROVED ───────────────────────────
+  Semrush's affiliate team specifically targets SEO/comparison sites. SaaSpare
+  is exactly that. The pricing pages include real plan breakdowns that convert
+  readers who are in the final evaluation stage. Commission: $200/sale + $10/trial.

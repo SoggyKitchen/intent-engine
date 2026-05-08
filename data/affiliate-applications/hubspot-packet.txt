@@ -1,0 +1,38 @@
+
+═══════════════════════════════════════════════════════════
+  HUBSPOT AFFILIATE APPLICATION PACKET — saaspare.org
+  Generated: 2026-05-08
+═══════════════════════════════════════════════════════════
+
+Apply at: https://www.hubspot.com/partners/affiliates
+(NOT the Solutions Partner Program — that's for agencies)
+
+── FORM FIELDS ────────────────────────────────────────────
+
+Name:               Smith Elly
+Email:              hello@saaspare.org
+Website:            https://saaspare.org
+Company size:       Solo founder
+Country:            Australia
+
+Website type: Review / comparison / pricing intelligence
+
+How will you promote HubSpot?
+  SaaSpare tracks HubSpot's pricing weekly via our Price Intelligence Engine.
+  We publish /pages/hubspot-pricing-history-2026 — a timestamped log of every
+  HubSpot pricing change we've detected, with source URLs to HubSpot's official
+  pricing pages. This page ranks for "HubSpot pricing history" and "HubSpot
+  price increase" queries from buyers in the final evaluation stage.
+
+  We also publish:
+  - /pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay
+  - /pages/7-best-hubspot-alternatives-in-2026-free-paid
+  - /pages/hubspot-review-2026-is-it-worth-it-honest-verdict
+  - Multiple CRM comparison pages featuring HubSpot
+
+Target audience:    SMB founders and sales leaders evaluating CRM tools.
+
+── KEY DIFFERENTIATOR TO MENTION ──────────────────────────
+  The pricing history page is what makes this application stand out. No other
+  comparison site has timestamped pricing diff data. HubSpot's affiliate team
+  will recognise this is a bottom-of-funnel page with high purchase intent.

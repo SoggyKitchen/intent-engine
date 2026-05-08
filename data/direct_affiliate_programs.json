@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "updated": "2026-05-08",
+    "note": "Direct affiliate programs for SaaSpare's 15 tracked tools. 'direct' = apply without going through a network. Verify URLs before applying — programs change frequently.",
+    "priority_order": "Apply to direct programs first (no traffic minimums), then network programs once DR hits 15+"
+  },
+  "programs": [
+    {
+      "tool": "Semrush",
+      "has_direct": true,
+      "priority": 1,
+      "apply_url": "https://www.semrush.com/affiliates/",
+      "network": "Impact Radius (but also has a direct application path)",
+      "commission": "$200 per new subscription sale + $10 per free trial activation",
+      "cookie_days": 120,
+      "traffic_minimum": "None stated — content-focused sites accepted",
+      "notes": "PERFECT FIT. Semrush's affiliate team actively recruits SEO/comparison sites. Your saas-pricing-index and semrush-review pages are exactly what they want. Apply with the pricing intelligence angle.",
+      "contact_email": "affiliates@semrush.com",
+      "our_coverage": "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay.html | /pages/semrush-review-2026-is-it-worth-it-honest-verdict.html | /pages/ahrefs-vs-semrush-which-is-better-in-2026.html"
+    },
+    {
+      "tool": "Shopify",
+      "has_direct": true,
+      "priority": 1,
+      "apply_url": "https://www.shopify.com/affiliates",
+      "network": "Impact (but Shopify also accepts direct via their own portal)",
+      "commission": "$150 per referred merchant who signs up for a paid plan",
+      "cookie_days": 30,
+      "traffic_minimum": "None — very accessible, one of the lowest-barrier programs",
+      "notes": "Very accessible program. Your shopify-alternatives, shopify-vs-woocommerce, and shopify-pricing pages all qualify. Apply via the direct Shopify form, not Impact.",
+      "contact_email": "affiliates@shopify.com",
+      "our_coverage": "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay.html | /pages/7-best-shopify-alternatives-in-2026-free-paid.html | /pages/shopify-review-2026-is-it-worth-it-honest-verdict.html"
+    },
+    {
+      "tool": "Pipedrive",
+      "has_direct": true,
+      "priority": 1,
+      "apply_url": "https://www.pipedrive.com/en/partners/affiliates",
+      "network": "Direct (Pipedrive runs its own program, not via a network)",
+      "commission": "33% recurring commission for first 12 months",
+      "cookie_days": 90,
+      "traffic_minimum": "None — accepts new sites with relevant content",
+      "notes": "One of the best recurring commissions in CRM. Direct program means no network gatekeeping. Your pipedrive-pricing and multiple CRM comparison pages make this easy to justify.",
+      "contact_email": "partnerships@pipedrive.com",
+      "our_coverage": "/pages/pipedrive-pricing-history-2026.html | 7 Salesforce-vs pages where Pipedrive is recommended"
+    },
+    {
+      "tool": "HubSpot",
+      "has_direct": true,
+      "priority": 2,
+      "apply_url": "https://www.hubspot.com/partners/affiliates",
+      "network": "HubSpot direct (separate from Solutions Partner Program)",
+      "commission": "30% recurring for up to 1 year on new customers",
+      "cookie_days": 90,
+      "traffic_minimum": "No hard minimum but they review content quality",
+      "notes": "Apply via the affiliate-specific URL above, NOT the Solutions Partner Program (that's for agencies). Mention your pricing-history page as a differentiator. Your hubspot-pricing-history-2026 page with real diff data is your strongest asset here.",
+      "contact_email": "affiliate-program@hubspot.com",
+      "our_coverage": "/pages/hubspot-pricing-history-2026.html | /pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay.html | /pages/7-best-hubspot-alternatives-in-2026-free-paid.html"
+    },
+    {
+      "tool": "Tresorit",
+      "has_direct": true,
+      "priority": 2,
+      "apply_url": "https://tresorit.com/affiliate-program",
+      "network": "Direct (managed in-house)",
+      "commission": "Up to 50% of the customer's first payment",
+      "cookie_days": 60,
+      "traffic_minimum": "None — small to mid-size content sites accepted",
+      "notes": "Low competition, high commission. Very accessible direct program. Your security vertical pages (1password-vs-tresorit, tresorit-pricing) are exactly their target audience.",
+      "contact_email": "affiliates@tresorit.com",
+      "our_coverage": "/pages/tresorit-pricing-history-2026.html | 1Password comparison pages"
+    },
+    {
+      "tool": "1Password",
+      "has_direct": true,
+      "priority": 2,
+      "apply_url": "https://1password.com/partners/",
+      "network": "Direct + CJ (you're already in CJ)",
+      "commission": "25% per new subscription",
+      "cookie_days": 45,
+      "notes": "Already have CJ link. Direct program may offer better rates. Worth applying via direct route as well.",
+      "contact_email": "partners@1password.com",
+      "our_coverage": "Multiple 1Password vs. pages already tracked"
+    },
+    {
+      "tool": "ClickUp",
+      "has_direct": true,
+      "priority": 2,
+      "apply_url": "https://clickup.com/affiliate-program",
+      "network": "PartnerStack (rejected) + direct application via their site",
+      "commission": "15% recurring for 12 months",
+      "cookie_days": 30,
+      "notes": "ClickUp's own affiliate page is separate from PartnerStack. Try the direct URL — it goes to a different review team than PartnerStack.",
+      "contact_email": "affiliates@clickup.com",
+      "our_coverage": "/pages/7-best-clickup-alternatives-in-2026-free-paid.html | /pages/clickup-pricing-history-2026.html"
+    },
+    {
+      "tool": "Datadog",
+      "has_direct": true,
+      "priority": 3,
+      "apply_url": "https://www.datadoghq.com/partner/",
+      "network": "Direct (technology partner program — has affiliate component)",
+      "commission": "Varies — typically 20% of first year contract",
+      "cookie_days": 30,
+      "notes": "More enterprise-focused. Apply once you have more dev-tools traffic. Your datadog-pricing-history page is the right asset to reference.",
+      "contact_email": "partners@datadoghq.com",
+      "our_coverage": "/pages/datadog-pricing-history-2026.html"
+    },
+    {
+      "tool": "Notion",
+      "has_direct": false,
+      "priority": 3,
+      "apply_url": "https://www.notion.com/affiliates",
+      "network": "PartnerStack only — need PartnerStack approval first",
+      "commission": "50% of first payment from new paid users for 12 months",
+      "cookie_days": 90,
+      "notes": "Requires PartnerStack. Focus on the appeal (see appeal letter). This is the most valuable program once PartnerStack unlocks.",
+      "our_coverage": "/pages/notion-pricing-history-2026.html | Multiple alternatives pages"
+    },
+    {
+      "tool": "Asana",
+      "has_direct": false,
+      "priority": 3,
+      "apply_url": "https://asana.com/partners",
+      "network": "Impact Radius — reapply when traffic hits 2K/month",
+      "commission": "$160 per qualified lead (free trial sign-up)",
+      "cookie_days": 30,
+      "notes": "Impact rejected you as a network. Try reapplying to just Asana's program directly via their partner page — sometimes individual programs review separately.",
+      "our_coverage": "/pages/asana-pricing-history-2026.html | /pages/7-best-asana-alternatives-in-2026-free-paid.html"
+    },
+    {
+      "tool": "Monday.com",
+      "has_direct": false,
+      "priority": 3,
+      "apply_url": "https://monday.com/partner",
+      "network": "PartnerStack — need approval first",
+      "commission": "$50-200 per converted subscription",
+      "notes": "PartnerStack gated. Focus on appeal.",
+      "our_coverage": "/pages/monday-com-pricing-history-2026.html"
+    },
+    {
+      "tool": "Ahrefs",
+      "has_direct": false,
+      "priority": 0,
+      "apply_url": null,
+      "network": "None — Ahrefs has no affiliate program by policy",
+      "commission": "N/A",
+      "notes": "Ahrefs explicitly does not have an affiliate program and has stated they never will. Do not waste time applying. Cover them editorially (they send traffic via search) but no monetization possible.",
+      "our_coverage": "/pages/ahrefs-pricing-history-2026.html — keep for SEO, not affiliate revenue"
+    },
+    {
+      "tool": "Linear",
+      "has_direct": false,
+      "priority": 0,
+      "apply_url": null,
+      "network": "None — no affiliate program",
+      "commission": "N/A",
+      "notes": "No affiliate program. Cover for SEO/traffic only.",
+      "our_coverage": "/pages/linear-pricing-history-2026.html"
+    },
+    {
+      "tool": "Stripe",
+      "has_direct": false,
+      "priority": 0,
+      "apply_url": null,
+      "network": "None — no traditional affiliate program",
+      "commission": "N/A",
+      "notes": "Stripe has a user referral credit ($1000 in fee waiver) but no publisher affiliate program. No revenue possible from affiliate links.",
+      "our_coverage": "Cover for SEO only"
+    },
+    {
+      "tool": "Salesforce",
+      "has_direct": false,
+      "priority": 0,
+      "apply_url": "https://www.salesforce.com/partners/",
+      "network": "Salesforce ISV/Consulting partner — not a traditional affiliate",
+      "commission": "Referral fees exist but require formal partner agreement",
+      "notes": "Not a viable affiliate play for a comparison site. Enterprise reseller territory. Skip.",
+      "our_coverage": "Cover for SEO only — very high traffic keyword volume"
+    }
+  ],
+  "untried_networks": [
+    {
+      "network": "ShareASale",
+      "url": "https://account.shareasale.com/shareasale.cfm",
+      "barrier": "Low — accepts new sites with quality content",
+      "relevant_merchants": "Many B2B SaaS tools including backup software, security tools",
+      "notes": "Much lower barrier than Awin/Impact. Apply now."
+    },
+    {
+      "network": "Commission Factory",
+      "url": "https://www.commissionfactory.com",
+      "barrier": "Low — Australian network, very accessible",
+      "relevant_merchants": "Australian/APAC focus — Contabo AU, hosting providers",
+      "notes": "Australian base is an advantage here. Apply immediately."
+    },
+    {
+      "network": "Rakuten Advertising",
+      "url": "https://rakutenadvertising.com/affiliate-network/",
+      "barrier": "Medium",
+      "notes": "More accessible than Impact. Worth trying once traffic hits 500/month."
+    },
+    {
+      "network": "Partnerize",
+      "url": "https://partnerize.com",
+      "barrier": "Medium-High",
+      "notes": "Enterprise-focused but some SaaS tools use it."
+    }
+  ]
+}

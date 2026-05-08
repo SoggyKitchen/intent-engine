@@ -3,7 +3,11 @@
     "allow": [
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "WebSearch",
+      "WebFetch(domain:moneyassetlifestyle.com)",
+      "WebFetch(domain:flatlogic.com)",
+      "WebFetch(domain:www.vendr.com)"
     ]
   }
 }

@@ -1,0 +1,27 @@
+
+═══════════════════════════════════════════════════════════
+  TRESORIT AFFILIATE APPLICATION PACKET — saaspare.org
+  Generated: 2026-05-08
+═══════════════════════════════════════════════════════════
+
+Apply at: https://tresorit.com/affiliate-program
+Contact: affiliates@tresorit.com
+
+── FORM FIELDS ────────────────────────────────────────────
+
+Name:               Smith Elly
+Email:              hello@saaspare.org
+Website:            https://saaspare.org
+Country:            Australia
+
+Description:
+  SaaSpare is a B2B software comparison platform focused on security and
+  privacy tools among other verticals. We publish a dedicated Tresorit
+  pricing history tracker and comparison pages against 1Password and other
+  enterprise security tools.
+
+Promotional approach:
+  Editorial — Tresorit is featured in our security vertical comparisons
+  as the top pick for teams with strict data compliance requirements.
+  Our pricing history page gives buyers confidence that Tresorit's pricing
+  is stable (an important factor for compliance-sensitive procurement).
