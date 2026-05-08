@@ -100,6 +100,11 @@ jobs:
       - name: Update sitemap with new pages
         run: uv run python scripts/update_sitemap_hubs.py
 
+      # 4h-6. Quick Answer blocks + Speakable schema + author bylines on
+      # pricing history pages (AEO — makes these pages citable by AI search).
+      - name: AEO pass — pricing history quick answers
+        run: uv run python scripts/fix_pricing_history_aeo.py
+
       # 4i. Per-vertical OG images for proper social-share previews.
       - name: OG images per vertical
         run: uv run python scripts/og_images.py
