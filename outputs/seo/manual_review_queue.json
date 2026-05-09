@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-08T20:54:16+00:00",
+  "generated_at_utc": "2026-05-09T01:36:06+00:00",
   "mode": "apply",
-  "pages_flagged": 41,
+  "pages_flagged": 37,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -22,22 +22,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "you can switch from ClickUp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "Up to Monday.com is relatively easy, as both platforms offer a free trial and a 14-day money-back guarantee. However, the migration process may take some time, especially if you have a la"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -92,17 +76,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to try out their features and see if they're a good fit for you"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -189,22 +162,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/impact-com-vs-affilae-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "), Premium ($99/month), and Enterprise ($299/month). The platform also offers a 30-day money-back guarantee.</p> <a href=\"https://www.affilae.com?utm_source=saaspare&utm_medium=a"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "), Premium ($99/month), and Enterprise ($299/month). The platform also offers a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use impact.com</h2>"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -524,32 +481,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 30-day money-back guarantee, making it easy to try out their features and support before committing to a pu"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "g nor Frase.io offers a free plan. However, both tools offer a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "Pro ($49/month), and Business ($99/month). Both tools offer a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use SE Ranking</h2>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "rase.io to SE Ranking is relatively easy, thanks to SE Ranking's free trial and 30-day money-back guarantee. However, migrating data and settings from Frase.io to SE Ranking may require s"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
