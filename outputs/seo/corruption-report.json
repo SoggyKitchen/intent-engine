@@ -1,15 +1,10 @@
 {
-  "generated_at": "2026-05-09T10:49:46+00:00",
+  "generated_at": "2026-05-09T20:39:26+00:00",
   "html_files_scanned": 1187,
-  "files_changed": 106,
+  "files_changed": 104,
   "changes": [
     {
       "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-saas-analytics-tools-for-b2b-software-teams-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -510,11 +505,6 @@
     },
     {
       "path": "site/pages/asana-vs-monday-com-which-is-better-in-2026.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-open-source-iac-and-observability-tools-for-secure-cloud-infrastructure-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },

@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-09T10:49:53+00:00",
+  "generated_at_utc": "2026-05-09T20:39:33+00:00",
   "mode": "apply",
-  "pages_flagged": 40,
+  "pages_flagged": 39,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -22,22 +22,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "you can switch from ClickUp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out its features and support.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "witching from ClickUp to Monday.com is relatively easy, with a free trial and a 14-day money-back guarantee. Monday.com also offers a range of resources, including tutorials and support,"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -235,17 +219,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "nge of pricing plans, starting at $49/year for a single site. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/clickup-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
@@ -265,6 +238,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out and switch to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "plan, while Monday.com does not. However, Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "st to Monday.com is relatively easy, as both platforms offer a free trial and a 14-day money-back guarantee. However, the migration process may take some time, and it's recommended to pla"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
@@ -510,6 +504,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/lever-vs-remote-com-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ome time and effort to set up the new platform. Lever offers a free trial and a 14-day money-back guarantee, while Remote.com offers a free plan and a 30-day money-back guarantee.</p> <"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "al and a 14-day money-back guarantee, while Remote.com offers a free plan and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
       "claims": [
         {
@@ -581,22 +591,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike. Wrike also offers a free trial, but the m"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
