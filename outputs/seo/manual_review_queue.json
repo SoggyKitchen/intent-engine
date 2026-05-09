@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-09T06:00:08+00:00",
+  "generated_at_utc": "2026-05-09T07:07:31+00:00",
   "mode": "apply",
-  "pages_flagged": 37,
+  "pages_flagged": 41,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -186,6 +186,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-smartsheet-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "eet to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet.</p> </details> <details"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet. Smartsheet also offers a free trial,"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/mailchimp-vs-brevo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -238,6 +254,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/riverside-fm-vs-descript-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "to switch from Descript to Riverside.fm. Riverside.fm offers a free trial and a 14-day money-back guarantee, so you can try out the platform risk-free.</p> </details> <detail"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "or Descript offers a free plan. However, both platforms offer free trials and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "de.fm is relatively straightforward, as both platforms offer a free trial and a 14-day money-back guarantee. However, it's worth noting that Riverside.fm has a steeper learning curve due"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
@@ -556,6 +593,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "teams migrate and set up their platforms. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan. Wrike al"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -581,6 +634,17 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/asana-vs-monday-com-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "porting your data and setting up new workflows. Asana offers a free trial and a 30-day money-back guarantee, making it a low-risk option for teams looking to switch.</p> </div> <di"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026.html",
