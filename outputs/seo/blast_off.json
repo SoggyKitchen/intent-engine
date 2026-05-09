@@ -1,78 +1,16 @@
 {
   "current_month": "May 2026",
   "today": "2026-05-09",
-  "titles_rewritten": 54,
-  "descs_rewritten": 150,
-  "dates_refreshed": 1030,
-  "answers_added": 146,
-  "files_changed": 1119,
+  "titles_rewritten": 0,
+  "descs_rewritten": 0,
+  "dates_refreshed": 0,
+  "answers_added": 0,
+  "files_changed": 0,
   "files_scanned": 1152,
-  "title_examples": [
-    {
-      "file": "7-best-canva-alternatives-in-2026-free-paid.html",
-      "before": "7 Best Canva Alternatives in 2026 (Free & Paid) | SaaSpare",
-      "after": "Canva Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "7-best-miro-alternatives-in-2026-free-paid.html",
-      "before": "7 Best Miro Alternatives in 2026 (Free & Paid) | SaaSpare",
-      "after": "Miro Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "7-best-slack-alternatives-in-2026-free-paid.html",
-      "before": "7 Best Slack Alternatives in 2026 (Free & Paid) | SaaSpare",
-      "after": "Slack Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "7-best-zendesk-alternatives-in-2026-free-paid.html",
-      "before": "7 Best Zendesk Alternatives in 2026 (Free & Paid) | SaaSpare",
-      "after": "Zendesk Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "canva-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "Canva Coupon Code & Promo Codes 2026: Verified Discounts | SaaSpare",
-      "after": "Canva Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "canva-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Canva Free Trial 2026: How to Get It (Step by Step) | SaaSpare",
-      "after": "Canva Free Trial 2026: How to Get the Full May 2026 Offer"
-    }
-  ],
-  "desc_examples": [
-    {
-      "file": "7-best-adp-alternatives-in-2026-free-paid.html",
-      "before": "Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested alternatives\u2026"
-    },
-    {
-      "file": "7-best-aws-alternatives-in-2026-free-paid.html",
-      "before": "Find the best AWS alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best AWS alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested alternatives\u2026"
-    },
-    {
-      "file": "7-best-bamboohr-alternatives-in-2026-free-paid.html",
-      "before": "Find the best BambooHR alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best BambooHR alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    },
-    {
-      "file": "7-best-bigcommerce-alternatives-in-2026-free-paid.html",
-      "before": "Find the best BigCommerce alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best BigCommerce alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    },
-    {
-      "file": "7-best-canva-alternatives-in-2026-free-paid.html",
-      "before": "The best Canva alternatives in 2026, ranked by value. Includes free options and paid tools that beat Canva on price, features, or ease of use.",
-      "after": "Updated May 2026. The best Canva alternatives in 2026, ranked by value. Includes free options and paid tools that beat Canva on price, features, or ease of use\u2026"
-    },
-    {
-      "file": "7-best-cisco-anyconnect-alternatives-in-2026-free-paid.html",
-      "before": "Find the best Cisco Anyconnect alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best Cisco Anyconnect alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    }
-  ],
+  "title_examples": [],
+  "desc_examples": [],
   "indexnow": {
-    "submitted": 200,
-    "status": 200
+    "submitted": 0,
+    "skipped_reason": "no urls"
   }
 }
