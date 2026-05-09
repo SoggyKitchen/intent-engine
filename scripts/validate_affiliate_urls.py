@@ -183,7 +183,9 @@ def main():
         lines.append(f"- Expected destination: `{expected_url}`")
         lines.append(f"- Final destination: `{final}`")
         lines.append("")
-    REPORT_FILE.write_text("\n".join(lines), encoding="utf-8")
+    tmp = REPORT_FILE.with_name(f"{REPORT_FILE.name}.tmp")
+    tmp.write_text("\n".join(lines), encoding="utf-8")
+    tmp.replace(REPORT_FILE)
 
     print(f"\nResults: OK={counts[GOOD]} WARN={counts[WARN]} PROG={counts[PROG]} DEAD={counts[DEAD]}")
     print(f"Full report: {REPORT_FILE}")

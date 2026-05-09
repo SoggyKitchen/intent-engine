@@ -1438,12 +1438,16 @@ def dict_table(counter) -> str:
 
 def write_json(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, indent=2, sort_keys=True, default=str), encoding="utf-8")
+    tmp = path.with_name(f"{path.name}.tmp")
+    tmp.write_text(json.dumps(data, indent=2, sort_keys=True, default=str), encoding="utf-8")
+    tmp.replace(path)
 
 
 def write_md(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text.rstrip() + "\n", encoding="utf-8")
+    tmp = path.with_name(f"{path.name}.tmp")
+    tmp.write_text(text.rstrip() + "\n", encoding="utf-8")
+    tmp.replace(path)
 
 
 def write_csv(path: Path, rows: list[dict]) -> None:

@@ -23,9 +23,9 @@ def build_about():
 
   <div class="ps reveal">
     <span class="ps-eyebrow">The team</span>
-    <h2 class="ps-title">Built by Kaylan von Papen</h2>
+    <h2 class="ps-title">Built by the SaaSpare editorial team</h2>
     <div class="ps-card">
-      <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7">Hi, I'm Kaylan — founder and lead reviewer at SaaSpare. I built this after spending six years in B2B SaaS ops and getting tired of "review" sites that were really paid placement schemes. SaaSpare is the comparison resource I wish existed when I was making procurement decisions: hands-on tested, transparently scored, fully disclosed.</p>
+      <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7">SaaSpare is built around a simple editorial rule: buyers should see pricing context, tradeoffs, and affiliate disclosures before they click into a vendor funnel. We research public vendor pages, flag source gaps, and keep paid placements out of rankings.</p>
       <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7;margin-top:1rem">Based in Australia. Reachable at <a href="mailto:hello@saaspare.org">hello@saaspare.org</a>.</p>
     </div>
   </div>
@@ -72,13 +72,13 @@ def build_about():
     schema = (
         '{"@context":"https://schema.org","@type":"AboutPage",'
         '"name":"About SaaSpare",'
-        '"description":"Independent, hands-on B2B SaaS comparisons. Founded by Kaylan von Papen in 2024.",'
-        '"mainEntity":{"@type":"Person","name":"Kaylan von Papen","url":"https://saaspare.org/about","jobTitle":"Founder","worksFor":{"@type":"Organization","name":"SaaSpare"}}}'
+        '"description":"Independent B2B SaaS comparisons built for buyers, not vendors.",'
+        '"mainEntity":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org","foundingDate":"2024"}}'
     )
     html = page_shell(
         slug="about",
         title="About SaaSpare — Independent B2B SaaS Comparisons",
-        desc="SaaSpare is independent, hands-on B2B SaaS comparison platform. Founded by Kaylan von Papen in 2024. We do not sell rankings.",
+        desc="SaaSpare is an independent B2B SaaS comparison platform built for buyers, not vendors. We do not sell rankings.",
         body=body, accent="about",
         crumbs=[CRUMB_HOME, ("/about", "About")],
         canonical_path="/about",
@@ -118,7 +118,7 @@ def build_privacy():
     <span class="ps-eyebrow">Full policy</span>
     <h2 class="ps-title">1. Who we are</h2>
     <div class="ps-body">
-      <p>SaaSpare is operated by Kaylan von Papen, ABN 51 824 753 556, registered in Australia. Contact: <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a>.</p>
+      <p>SaaSpare is operated by SaaSpare in Australia. Contact: <a href="mailto:privacy@saaspare.org">privacy@saaspare.org</a>.</p>
     </div>
   </div>
 

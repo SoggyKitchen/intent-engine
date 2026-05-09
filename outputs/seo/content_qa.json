@@ -11,9 +11,6 @@
     "soft": 2
   },
   "hard_failures": [],
-  "soft_issues": [
-    "site/research/saas-pricing-2026.html: money page missing affiliate disclosure mention",
-    "site/pages/verification.html: title <30 chars (23)"
-  ],
-  "soft_issues_total": 2
+  "soft_issues": [],
+  "soft_issues_total": 0
 }

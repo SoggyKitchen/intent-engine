@@ -302,7 +302,7 @@ def generate_terms_html() -> bool:
     <span class="ps-eyebrow">Full terms</span>
     <h2 class="ps-title">1. Who we are</h2>
     <div class="ps-body">
-      <p>SaaSpare (\u201cwe\u201d, \u201cus\u201d, \u201cSaaSpare\u201d) is operated by Kaylan von Papen, ABN 51 824 753 556, registered in Australia. Contact: <a href="mailto:hello@saaspare.org">hello@saaspare.org</a>.</p>
+      <p>SaaSpare (\u201cwe\u201d, \u201cus\u201d, \u201cSaaSpare\u201d) is operated by SaaSpare in Australia. Contact: <a href="mailto:hello@saaspare.org">hello@saaspare.org</a>.</p>
       <p>By accessing or using saaspare.org you agree to these Terms of Use and our <a href="/privacy">Privacy Policy</a>. If you don\u2019t agree, please don\u2019t use the site.</p>
     </div>
   </div>
@@ -350,7 +350,7 @@ def generate_terms_html() -> bool:
   <div class="ps reveal">
     <h2 class="ps-title">6. Liability</h2>
     <div class="ps-body">
-      <p>To the maximum extent permitted by law, SaaSpare and Kaylan von Papen are not liable for any indirect, incidental, consequential, or special damages arising from your use of the site or any tool decision you make based on SaaSpare content.</p>
+      <p>To the maximum extent permitted by law, SaaSpare is not liable for any indirect, incidental, consequential, or special damages arising from your use of the site or any tool decision you make based on SaaSpare content.</p>
       <p>Where liability cannot be excluded under Australian consumer law, our liability is limited to providing the content again or refunding any direct payment made to SaaSpare for paid services (e.g. Stack Audits).</p>
     </div>
   </div>

@@ -336,7 +336,7 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
         f'"isPartOf":{{"@type":"WebSite","name":"SaaSpare","url":"{DOMAIN}"}},'
         f'"publisher":{{"@type":"Organization","name":"SaaSpare","url":"{DOMAIN}",'
         f'"logo":{{"@type":"ImageObject","url":"{DOMAIN}/og-default.png"}}}},'
-        f'"author":{{"@type":"Person","name":"Kaylan von Papen","url":"{DOMAIN}/about"}},'
+        f'"author":{{"@type":"Organization","name":"SaaSpare","url":"{DOMAIN}/about"}},'
         f'"dateModified":"{TODAY}"}}'
     )
     schemas = [base_schema, breadcrumb_schema(crumbs)]
@@ -364,7 +364,7 @@ def page_shell(*, slug, title, desc, body, accent="policy", nav_active="",
 <title>{title} | SaaSpare</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="author" content="Kaylan von Papen">
+<meta name="author" content="SaaSpare Editorial Team">
 <link rel="canonical" href="{canonical}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">

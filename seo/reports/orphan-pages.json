@@ -1,13 +1,161 @@
 [
   {
-    "path": "/media-kit",
+    "path": "/best-crm-software-2026",
     "score": {
       "inbound": [],
       "outbound": [
-        "https://saaspare.org",
-        "https://saaspare.org/pages/",
-        "https://saaspare.org/privacy"
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/methodology",
+        "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/close-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/zoho-crm-pricing-2026-plans-costs-what-you-actually-pay.html"
       ]
+    }
+  },
+  {
+    "path": "/best-hr-software-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/methodology",
+        "/pages/adp-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/workday-pricing-2026-plans-costs-what-you-actually-pay.html"
+      ]
+    }
+  },
+  {
+    "path": "/best-marketing-automation-software-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/methodology",
+        "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/brevo-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/klaviyo-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/mailchimp-pricing-2026-plans-costs-what-you-actually-pay.html"
+      ]
+    }
+  },
+  {
+    "path": "/best-password-manager-business-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/methodology",
+        "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/dashlane-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/keeper-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/lastpass-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay.html"
+      ]
+    }
+  },
+  {
+    "path": "/best-project-management-software-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/methodology",
+        "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/jira-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/trello-pricing-2026-plans-costs-what-you-actually-pay.html"
+      ]
+    }
+  },
+  {
+    "path": "/best-seo-tools-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/methodology",
+        "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/mangools-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/spyfu-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay.html"
+      ]
+    }
+  },
+  {
+    "path": "/best-video-conferencing-software-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/methodology",
+        "/pages/google-meet-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/loom-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/microsoft-teams-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/webex-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/whereby-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay.html"
+      ]
+    }
+  },
+  {
+    "path": "/best-vpn-for-business-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/methodology",
+        "/pages/cisco-anyconnect-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/perimeter-81-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay.html"
+      ]
+    }
+  },
+  {
+    "path": "/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f",
+    "score": {
+      "inbound": [],
+      "outbound": []
+    }
+  },
+  {
+    "path": "/fo-verify",
+    "score": {
+      "inbound": [],
+      "outbound": []
     }
   }
 ]

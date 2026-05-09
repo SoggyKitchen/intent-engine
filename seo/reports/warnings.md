@@ -1,7 +1,16 @@
 # Warnings
 
-- `/deal-radar` (pricing, 81.0/100): thin_buyer_page
-- `/privacy` (trust, 73.34/100): meta_length_outside_target
+- `/best-crm-software-2026` (best_of, 66.22/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/best-hr-software-2026` (best_of, 65.86/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/best-marketing-automation-software-2026` (best_of, 65.34/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/best-password-manager-business-2026` (best_of, 65.54/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/best-project-management-software-2026` (best_of, 72.94/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/best-seo-tools-2026` (pricing, 66.0/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/best-video-conferencing-software-2026` (best_of, 65.34/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/best-vpn-for-business-2026` (pricing, 64.81/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/deal-radar` (pricing, 87.19/100): thin_buyer_page
+- `/` (pricing, 79.5/100): missing_correction_cta, missing_related_pages
+- `/privacy` (trust, 79.56/100): meta_length_outside_target
 - `/pages/1password-business-vs-cloudflare-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/1password-business-vs-crowdstrike-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/1password-business-vs-duo-security-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
@@ -10,47 +19,52 @@
 - `/pages/1password-business-vs-sentinelone-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/1password-business-vs-snyk-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/1password-business-vs-tenable-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.23/100): thin_buyer_page
+- `/pages/1password-business-vs-tresorit-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/1password-pricing-history-2026` (pricing, 75.08/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/1password-vs-password-boss-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/1password-vs-sticky-password-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/7-best-canva-alternatives-in-2026-free-paid` (alternatives, 68.97/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
 - `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (alternatives, 93.0/100): title_length_outside_target
 - `/pages/7-best-google-analytics-alternatives-in-2026-free-paid` (alternatives, 93.0/100): title_length_outside_target
-- `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.34/100): thin_buyer_page
+- `/pages/7-best-miro-alternatives-in-2026-free-paid` (alternatives, 68.96/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/7-best-slack-alternatives-in-2026-free-paid` (alternatives, 68.99/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (alternatives, 69.0/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
 - `/pages/activecampaign-vs-convertkit-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/activecampaign-vs-mailchimp-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/affilae-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/ahrefs-pricing-history-2026` (pricing, 75.06/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
 - `/pages/anthropic-claude-vs-cohere-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/anthropic-claude-vs-hugging-face-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
-- `/pages/best-ahrefs-alternatives-in-2026-free-paid` (alternatives, 99.0/100): title_length_outside_target
-- `/pages/best-ai-ml-tools-software-for-content-teams-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-cloud-infra-software-for-enterprise-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-cloud-infra-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
+- `/pages/around-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/asana-pricing-history-2026` (pricing, 74.75/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
+- `/pages/asana-vs-monday-com-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more` (best_of, 91.0/100): title_length_outside_target
-- `/pages/best-crm-software-for-b2b-saas-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-crm-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-devops-tools-for-security-compliance-in-2025` (best_of, 98.45/100): thin_buyer_page
-- `/pages/best-devtools-for-multi-agent-workflows-in-2025` (best_of, 90.89/100): meta_length_outside_target, thin_buyer_page
-- `/pages/best-devtools-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-finance-ops-software-for-b2b-saas-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-finance-ops-software-for-small-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-hr-recruiting-software-for-enterprise-in-2026-ranked` (best_of, 97.0/100): meta_length_outside_target
-- `/pages/best-hr-recruiting-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-legal-compliance-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-password-managers-software-for-business-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-project-management-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-project-management-software-in-2026-for-every-team-size` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025` (best_of, 90.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025` (best_of, 90.83/100): thin_buyer_page, title_length_outside_target
-- `/pages/best-semrush-alternatives-in-2026-free-paid` (pricing, 99.0/100): title_length_outside_target
-- `/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed` (review, 99.0/100): title_length_outside_target
-- `/pages/best-seo-tools-software-for-bloggers-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-seo-tools-software-for-content-teams-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
-- `/pages/best-vpn-business-software-for-startups-in-2026-ranked` (best_of, 99.0/100): meta_length_outside_target
+- `/pages/best-cybersecurity-software-for-remote-teams-in-2026-ranked` (best_of, 93.0/100): title_length_outside_target
+- `/pages/best-devops-tools-for-2025-glimmung-octowatch-twelve-data-and-muga-compared` (best_of, 91.0/100): title_length_outside_target
+- `/pages/best-open-source-object-storage-alternatives-to-minio-in-2025` (alternatives, 91.0/100): title_length_outside_target
+- `/pages/best-open-source-object-storage-solutions-in-2025-minio-alternatives-compared` (alternatives, 91.0/100): title_length_outside_target
+- `/pages/best-saas-analytics-tools-for-b2b-financial-research-platforms-in-2025` (best_of, 91.0/100): title_length_outside_target
+- `/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025` (best_of, 91.0/100): title_length_outside_target
+- `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025` (best_of, 91.0/100): title_length_outside_target
 - `/pages/bigcommerce-vs-bold-commerce-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/bitwarden-vs-password-boss-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/bitwarden-vs-sticky-password-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/canva-coupon-code-promo-codes-2026-verified-discounts` (coupon, 68.47/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/canva-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 72.14/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/canva-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 76.88/100): missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/canva-review-2026-is-it-worth-it-honest-verdict` (review, 67.11/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/canva-vs-adobe-express-which-is-better-in-2026` (comparison, 66.68/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/canva-vs-figma-which-is-better-in-2026` (comparison, 66.62/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/canva-vs-microsoft-designer-which-is-better-in-2026` (comparison, 66.68/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/canva-vs-piktochart-which-is-better-in-2026` (comparison, 66.62/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/canva-vs-visme-which-is-better-in-2026` (comparison, 66.62/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
 - `/pages/chargebee-vs-bold-commerce-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
@@ -59,78 +73,206 @@
 - `/pages/cisco-anyconnect-vs-twingate-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/cisco-anyconnect-vs-wireguard-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/cisco-anyconnect-vs-zscaler-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
-- `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.12/100): thin_buyer_page
 - `/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/clickup-pricing-history-2026` (pricing, 75.09/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
 - `/pages/cloudflare-access-vs-openvpn-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/cloudflare-access-vs-tailscale-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/cloudflare-vs-duo-security-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
+- `/pages/cloudflare-vs-tresorit-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/contractbook-vs-docusign-clm-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/copy-ai-vs-anthropic-claude-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
-- `/pages/coupon-verification-policy` (trust, 72.66/100): meta_length_outside_target, title_length_outside_target
+- `/pages/copy-ai-vs-hugging-face-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/copy-ai-vs-weights-biases-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/coupon-verification-policy` (trust, 87.08/100): meta_length_outside_target, title_length_outside_target
 - `/pages/crowdstrike-vs-duo-security-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/crowdstrike-vs-sentinelone-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/crowdstrike-vs-tresorit-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/dashlane-vs-sticky-password-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/deel-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.23/100): thin_buyer_page
+- `/pages/datadog-pricing-history-2026` (pricing, 74.85/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
+- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
 - `/pages/digitalocean-vs-google-cloud-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown` (free_trial, 97.0/100): title_length_outside_target
+- `/pages/does-monday-com-have-a-free-plan-2026-full-breakdown` (free_trial, 93.0/100): title_length_outside_target
+- `/pages/duo-security-vs-tresorit-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/expressvpn-business-vs-openvpn-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/expressvpn-business-vs-tailscale-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/expressvpn-business-vs-twingate-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/expressvpn-business-vs-wireguard-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/expressvpn-business-vs-zscaler-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/free-trial-database` (trust, 83.59/100): title_length_outside_target
-- `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.69/100): thin_buyer_page, title_length_outside_target
+- `/pages/firstpromoter-vs-affilae-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/firstpromoter-vs-leaddyno-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/firstpromoter-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/firstpromoter-vs-refersion-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/firstpromoter-vs-tune-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/getresponse-vs-activecampaign-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/github-copilot-vs-jetbrains-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/github-copilot-vs-pagerduty-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/github-copilot-vs-terraform-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/google-meet-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
-- `/pages/how-saaspare-ranks-tools` (trust, 68.34/100): title_length_outside_target
+- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/how-saaspare-ranks-tools` (trust, 88.7/100): title_length_outside_target
+- `/pages/hubspot-pricing-history-2026` (pricing, 75.38/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
 - `/pages/hugging-face-vs-weights-biases-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
-- `/pages` (pricing, 84.0/100): title_length_outside_target
-- `/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.23/100): thin_buyer_page
+- `/pages/impact-com-vs-affilae-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/impact-com-vs-firstpromoter-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/impact-com-vs-leaddyno-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/impact-com-vs-partnerstack-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/impact-com-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/impact-com-vs-refersion-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/impact-com-vs-rewardful-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/impact-com-vs-tapfiliate-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/impact-com-vs-tune-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages` (pricing, 82.0/100): title_length_outside_target
 - `/pages/jasper-ai-vs-anthropic-claude-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/jasper-ai-vs-weights-biases-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/lastpass-vs-sticky-password-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/linear-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.36/100): thin_buyer_page
+- `/pages/leaddyno-vs-affilae-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/leaddyno-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/linear-pricing-history-2026` (pricing, 74.74/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-asana-which-is-better-in-2026` (comparison, 66.5/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/linear-vs-clickup-which-is-better-in-2026` (comparison, 66.51/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/linear-vs-github-issues-which-is-better-in-2026` (comparison, 66.56/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/linear-vs-jira-which-is-better-in-2026` (comparison, 66.55/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/linear-vs-shortcut-which-is-better-in-2026` (comparison, 66.58/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/loom-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/microsoft-teams-vs-descript-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/microsoft-teams-vs-streamyard-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/microsoft-teams-vs-whereby-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): title_length_outside_target
-- `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, 99.95/100): thin_buyer_page
+- `/pages/miro-coupon-code-promo-codes-2026-verified-discounts` (coupon, 68.21/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/miro-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 74.12/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/miro-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 76.82/100): missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/miro-review-2026-is-it-worth-it-honest-verdict` (review, 69.09/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/miro-vs-figma-figjam-which-is-better-in-2026` (comparison, 68.59/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/miro-vs-google-jamboard-which-is-better-in-2026` (comparison, 68.65/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/miro-vs-lucidspark-which-is-better-in-2026` (comparison, 68.59/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/miro-vs-microsoft-whiteboard-which-is-better-in-2026` (comparison, 68.65/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/miro-vs-mural-which-is-better-in-2026` (comparison, 68.59/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.0/100): meta_length_outside_target
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 92.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/monday-com-pricing-history-2026` (pricing, 74.97/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
+- `/pages/monday-com-vs-basecamp-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/monday-com-vs-clickup-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/monday-com-vs-jira-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/monday-com-vs-notion-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/monday-com-vs-smartsheet-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/monday-com-vs-todoist-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/monday-com-vs-trello-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/monday-com-vs-wrike-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/nordlayer-vs-1password-business-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/nordlayer-vs-cisco-anyconnect-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/nordlayer-vs-tresorit-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/nordpass-vs-sticky-password-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/notion-pricing-history-2026` (pricing, 75.04/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
 - `/pages/openai-api-vs-anthropic-claude-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/openai-api-vs-hugging-face-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/openai-api-vs-weights-biases-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
-- `/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 98.23/100): thin_buyer_page
+- `/pages/partnerstack-vs-affilae-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/partnerstack-vs-firstpromoter-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/partnerstack-vs-leaddyno-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/partnerstack-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/partnerstack-vs-refersion-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/partnerstack-vs-rewardful-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/partnerstack-vs-tapfiliate-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/partnerstack-vs-tune-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
 - `/pages/perimeter-81-vs-cisco-anyconnect-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/perimeter-81-vs-expressvpn-business-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/pinecone-vs-anthropic-claude-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/pinecone-vs-weights-biases-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/request-a-comparison` (trust, 69.14/100): title_length_outside_target
+- `/pages/pipedrive-pricing-history-2026` (pricing, 75.12/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.0/100): meta_length_outside_target
+- `/pages/ramp-pricing-history-2026` (pricing, 73.0/100): meta_length_outside_target, missing_correction_cta, missing_related_pages
+- `/pages/refersion-vs-affilae-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/refersion-vs-leaddyno-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/refersion-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/refersion-vs-tune-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/remote-com-vs-culture-amp-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/remote-com-vs-lattice-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/request-a-comparison` (trust, 87.5/100): title_length_outside_target
+- `/pages/rewardful-vs-affilae-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/rewardful-vs-firstpromoter-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/rewardful-vs-leaddyno-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/rewardful-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/rewardful-vs-refersion-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/rewardful-vs-tune-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
+- `/pages/rippling-vs-remote-com-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/riverside-fm-vs-descript-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/riverside-fm-vs-streamyard-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/roboform-vs-sticky-password-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
-- `/pages/saas-pricing-changes` (trust, 70.26/100): title_length_outside_target
+- `/pages/saas-pricing-index` (trust, 86.0/100): title_length_outside_target
+- `/pages/salesforce-pricing-history-2026` (pricing, 75.12/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
-- `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 99.73/100): thin_buyer_page
+- `/pages/semrush-pricing-history-2026` (pricing, 74.81/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
 - `/pages/sentinelone-vs-duo-security-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
+- `/pages/sentinelone-vs-tresorit-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/shopify-pricing-history-2026` (pricing, 74.79/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/shopify-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
+- `/pages/slack-coupon-code-promo-codes-2026-verified-discounts` (coupon, 68.39/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/slack-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 72.13/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/slack-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 76.9/100): missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/slack-review-2026-is-it-worth-it-honest-verdict` (review, 67.07/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/slack-vs-discord-which-is-better-in-2026` (comparison, 66.56/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/slack-vs-google-chat-which-is-better-in-2026` (comparison, 66.62/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/slack-vs-mattermost-which-is-better-in-2026` (comparison, 66.56/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/slack-vs-microsoft-teams-which-is-better-in-2026` (comparison, 66.62/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/slack-vs-zoom-which-is-better-in-2026` (comparison, 66.56/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
 - `/pages/sticky-password-vs-password-boss-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
+- `/pages/stripe-pricing-history-2026` (pricing, 68.44/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
 - `/pages/surfer-seo-vs-rankmath-pro-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/tapfiliate-vs-affilae-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/tapfiliate-vs-firstpromoter-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/tapfiliate-vs-leaddyno-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/tapfiliate-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/tapfiliate-vs-refersion-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/tapfiliate-vs-rewardful-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/tapfiliate-vs-tune-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/tresorit-coupon-code-promo-codes-2026-verified-discounts` (coupon, 68.26/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/tresorit-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 72.06/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 76.87/100): missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/tresorit-pricing-history-2026` (pricing, 74.87/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/tresorit-review-2026-is-it-worth-it-honest-verdict` (review, 66.99/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/tresorit-vs-1password-business-which-is-better-in-2026` (comparison, 66.58/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/tresorit-vs-box-which-is-better-in-2026` (comparison, 66.52/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/tresorit-vs-dropbox-which-is-better-in-2026` (comparison, 66.52/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/tresorit-vs-google-drive-which-is-better-in-2026` (comparison, 66.58/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/tresorit-vs-onedrive-which-is-better-in-2026` (comparison, 66.52/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/tune-vs-affilae-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/tune-vs-leaddyno-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
+- `/pages/tune-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 91.0/100): title_length_outside_target
 - `/pages/twingate-vs-cloudflare-access-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/weaviate-vs-anthropic-claude-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/weaviate-vs-weights-biases-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
+- `/pages/webex-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
+- `/pages/whereby-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/woocommerce-vs-bold-commerce-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
-- `/pages/workable-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.91/100): thin_buyer_page
+- `/pages/workable-vs-remote-com-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target
 - `/pages/writesonic-vs-anthropic-claude-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/writesonic-vs-hugging-face-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
 - `/pages/writesonic-vs-weights-biases-which-is-better-in-2026` (comparison, 99.0/100): title_length_outside_target
+- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
+- `/pages/zendesk-coupon-code-promo-codes-2026-verified-discounts` (coupon, 68.31/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/zendesk-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 72.11/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 76.92/100): missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/zendesk-review-2026-is-it-worth-it-honest-verdict` (review, 67.0/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/zendesk-vs-freshdesk-which-is-better-in-2026` (comparison, 66.56/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/zendesk-vs-gorgias-which-is-better-in-2026` (comparison, 66.56/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/zendesk-vs-help-scout-which-is-better-in-2026` (comparison, 66.62/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026` (comparison, 66.67/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/zendesk-vs-intercom-which-is-better-in-2026` (comparison, 66.56/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, 98.0/100): canonical_mismatch
+- `/pages/zoom-vs-riverside-fm-which-is-better-in-2026` (comparison, 93.0/100): title_length_outside_target

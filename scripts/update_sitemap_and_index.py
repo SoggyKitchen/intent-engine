@@ -14,7 +14,7 @@ def get_all_urls():
     pages_dir = pathlib.Path("site/pages")
     site_dir = pathlib.Path("site")
 
-    skip = {"thanks", "verification", "index"}
+    skip = {"thanks", "verification", "index", "fo-verify", "fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f"}
     skip_prefixes = ("ph-preview-",)
 
     if (pages_dir / "index.html").exists():

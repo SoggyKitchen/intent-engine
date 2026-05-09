@@ -254,3 +254,150 @@ h1:not(.hero-title) span.grad-text,
   .ss-adblock-note{left:12px;right:12px;bottom:12px;max-width:none}
   .ss-logo-text{font-size:1rem}
 }
+
+/* SaaSpare 2026 consistency pass: keep old/static surfaces aligned with the
+   homepage without forcing every page to duplicate header and hero CSS. */
+body > nav#nav,
+body > nav.ss-nav-normalized{
+  position:fixed !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  z-index:320 !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:.35rem !important;
+  padding:clamp(.78rem,1.1vw,1rem) clamp(1.15rem,2.8vw,2rem) !important;
+  font-family:'Plus Jakarta Sans',Inter,system-ui,sans-serif !important;
+  background:transparent !important;
+  border-bottom:1px solid transparent !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  transition:background .28s ease,border-color .28s ease,backdrop-filter .28s ease,box-shadow .28s ease !important;
+}
+body > nav#nav.scrolled,
+body > nav#nav.ss-nav-scrolled,
+body > nav.ss-nav-normalized.scrolled,
+body > nav.ss-nav-normalized.ss-nav-scrolled{
+  background:rgba(8,8,15,.78) !important;
+  border-bottom-color:rgba(255,255,255,.07) !important;
+  box-shadow:0 12px 44px rgba(0,0,0,.18) !important;
+  backdrop-filter:blur(18px) saturate(1.05) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(1.05) !important;
+}
+body > nav#nav .ss-logo,
+body > nav.ss-nav-normalized .ss-logo,
+body > nav#nav .logo,
+body > nav.ss-nav-normalized .logo{
+  display:flex !important;
+  align-items:center !important;
+  gap:9px !important;
+  margin-right:auto !important;
+  color:#fff !important;
+  font-weight:850 !important;
+  letter-spacing:-.04em !important;
+  text-decoration:none !important;
+}
+body > nav#nav .nav-link,
+body > nav.ss-nav-normalized .nav-link{
+  color:rgba(255,255,255,.55) !important;
+  font-size:.82rem !important;
+  font-weight:750 !important;
+  line-height:1 !important;
+  padding:.5rem .78rem !important;
+  border-radius:999px !important;
+  white-space:nowrap !important;
+  text-decoration:none !important;
+  transition:color .18s ease,background .18s ease !important;
+}
+body > nav#nav .nav-link:hover,
+body > nav#nav .nav-link.active,
+body > nav.ss-nav-normalized .nav-link:hover,
+body > nav.ss-nav-normalized .nav-link.active{
+  color:#fff !important;
+  background:rgba(255,255,255,.045) !important;
+}
+body > nav#nav .nav-cta,
+body > nav.ss-nav-normalized .nav-cta{
+  background:linear-gradient(135deg,#f04c68,#c8314f) !important;
+  color:#fff !important;
+  padding:.62rem 1.18rem !important;
+  border-radius:999px !important;
+  font-size:.82rem !important;
+  font-weight:850 !important;
+  line-height:1 !important;
+  box-shadow:0 12px 38px rgba(233,69,96,.3) !important;
+  margin-left:.45rem !important;
+  white-space:nowrap !important;
+  text-decoration:none !important;
+}
+
+body:not(.home-page) .page-hero{
+  min-height:0 !important;
+  padding-top:clamp(5.15rem,8vw,6.75rem) !important;
+  padding-bottom:clamp(2.15rem,4.4vw,3.25rem) !important;
+}
+body:not(.home-page) .page-hero-content{
+  transform:none !important;
+}
+body:not(.home-page) main,
+body:not(.home-page) .page-content,
+body:not(.home-page) .shell,
+body:not(.home-page) .container{
+  margin-top:0 !important;
+}
+.library-shell > .hero{
+  min-height:0 !important;
+  padding-top:clamp(6rem,8vw,7.4rem) !important;
+  padding-bottom:clamp(2.25rem,4.6vw,3.5rem) !important;
+}
+.library-shell .hero h1{
+  letter-spacing:clamp(-.055em,-.5vw,-.035em) !important;
+}
+.library-shell .hero h1 span{
+  background:linear-gradient(105deg,#f04c68 0%,#f04c68 34%,#ff92a5 48%,#ffd1dc 52%,#f04c68 66%,#c8314f 100%) !important;
+  background-size:260% 100% !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  animation:ssTextGlint 5.8s cubic-bezier(.45,0,.2,1) infinite !important;
+}
+@keyframes ssTextGlint{
+  0%,22%{background-position:130% 50%}
+  52%,100%{background-position:-130% 50%}
+}
+.sort-select,
+select.sort-select{
+  color:#fff !important;
+  background-color:rgba(255,255,255,.06) !important;
+  border-color:rgba(255,255,255,.12) !important;
+}
+.sort-select option,
+select.sort-select option{
+  color:#fff !important;
+  background:#11111a !important;
+}
+@media(max-width:760px){
+  body > nav#nav,
+  body > nav.ss-nav-normalized{
+    padding:.85rem 1rem !important;
+  }
+  body > nav#nav .nav-link,
+  body > nav.ss-nav-normalized .nav-link{
+    display:none !important;
+  }
+  body > nav#nav .nav-cta,
+  body > nav.ss-nav-normalized .nav-cta{
+    padding:.58rem .9rem !important;
+    font-size:.76rem !important;
+  }
+  .library-shell > .hero{
+    padding-top:5rem !important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .library-shell .hero h1 span{
+    animation:none !important;
+  }
+}
