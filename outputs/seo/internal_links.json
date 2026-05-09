@@ -1,38 +1,38 @@
 {
-  "total_pages": 1063,
-  "updated": 1063,
+  "total_pages": 1120,
+  "updated": 1120,
   "skipped": 0,
-  "orphans_before": 48,
-  "orphans_after": 44,
+  "orphans_before": 81,
+  "orphans_after": 36,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/okta-vs-tenable-which-is-better-in-2026",
-        "/pages/nordlayer-vs-cisco-anyconnect-which-is-better-in-2026",
-        "/pages/nordlayer-vs-crowdstrike-which-is-better-in-2026",
-        "/pages/mailchimp-vs-drip-which-is-better-in-2026",
-        "/pages/brevo-vs-pardot-which-is-better-in-2026"
+        "/pages/nordlayer-vs-okta-which-is-better-in-2026",
+        "/pages/dashlane-vs-keeper-which-is-better-in-2026",
+        "/pages/7-best-okta-alternatives-in-2026-free-paid",
+        "/pages/amplitude-vs-databox-which-is-better-in-2026",
+        "/pages/sticky-password-vs-password-boss-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/dashlane-vs-roboform-which-is-better-in-2026",
-        "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
-        "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/weaviate-vs-cohere-which-is-better-in-2026",
-        "/pages/cisco-anyconnect-vs-openvpn-which-is-better-in-2026"
+        "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
+        "/pages/tresorit-vs-box-which-is-better-in-2026",
+        "/pages/okta-vs-duo-security-which-is-better-in-2026",
+        "/pages/1password-vs-bitwarden-which-is-better-in-2026",
+        "/pages/cloudflare-vs-tenable-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-vs-qualys-which-is-better-in-2026",
-        "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/1password-vs-bitwarden-which-is-better-in-2026",
-        "/pages/pipedrive-vs-freshsales-which-is-better-in-2026",
-        "/pages/firstpromoter-vs-refersion-which-is-better-in-2026"
+        "/pages/sentinelone-vs-tresorit-which-is-better-in-2026",
+        "/pages/dashlane-vs-nordpass-which-is-better-in-2026",
+        "/pages/nordlayer-vs-tenable-which-is-better-in-2026",
+        "/pages/lever-vs-remote-com-which-is-better-in-2026",
+        "/pages/slack-vs-mattermost-which-is-better-in-2026"
       ]
     }
   ]
