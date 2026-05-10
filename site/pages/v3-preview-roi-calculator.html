@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculate the real ROI of any SaaS tool | SaaSpare</title>
-<meta name="description" content="Model total costs, quantify savings, and see the true return before you commit. Free SaaS ROI calculator.">
+<meta name="description" content="Model total costs, quantify savings and see the true return before you commit to any vendor.">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://saaspare.org/pages/v3-preview-roi-calculator">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <meta name="theme-color" content="#07070d">
 <meta property="og:title" content="Calculate the real ROI of any SaaS tool">
-<meta property="og:description" content="Model total costs, quantify savings, and see the true return before you commit. Free SaaS ROI calculator.">
+<meta property="og:description" content="Model total costs, quantify savings and see the true return before you commit to any vendor.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://saaspare.org/pages/v3-preview-roi-calculator">
 <meta property="og:image" content="https://saaspare.org/og-default.png">
@@ -23,17 +23,6 @@
 <link rel="stylesheet" href="/assets/saaspare-v3.css">
 <script src="/assets/saaspare-v3.js" defer></script>
 
-<link rel="manifest" href="/manifest.webmanifest">
-
-<!-- Microsoft Clarity (heatmaps + session replay, cookieless by default) -->
-<script id="clarity-ms">
-(function(c,l,a,r,i,t,y){
-  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window,document,"clarity","script","wne1kku7w1");
-</script>
-<link rel="stylesheet" href="/assets/saaspare-ui.css">
 </head>
 <body class="v3">
 
@@ -52,142 +41,182 @@
 
 <section class="v3-hero">
   <div class="v3-hero-inner">
-    <span class="v3-eyebrow">ROI Calculator</span>
-    <h1>Calculate the real <em>ROI.</em><br>Justify every <em>SaaS decision.</em></h1>
+    <div class="v3-section-eyebrow"><span class="v3-eyebrow">ROI Calculator</span></div>
+    <h1 style="margin:1rem 0 1rem">Calculate the real <em>ROI.</em><br>Justify every <em>SaaS decision.</em></h1>
     <p class="v3-sub">Model total costs, quantify savings and see the true return before you commit to any vendor.</p>
   </div>
 </section>
 
 <div class="v3-container">
-  <div class="v3-feature-grid">
-    <div class="v3-feature">
-      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-      <h4>All-in cost modelling</h4>
-      <p>Include subscription, fees, implementation and switching.</p>
-    </div>
-    <div class="v3-feature">
-      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-      <h4>Time &amp; efficiency value</h4>
-      <p>Convert hours saved into real dollar impact.</p>
-    </div>
-    <div class="v3-feature">
-      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-      <h4>Instant ROI view</h4>
-      <p>See payback period and annual savings instantly.</p>
-    </div>
-    <div class="v3-feature">
-      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <h4>Benchmark &amp; trust</h4>
-      <p>Compare against market data and real buyer benchmarks.</p>
-    </div>
-  </div>
+  <div class="v3-grid-4" style="gap:.85rem;margin-bottom:1.6rem"><div class="v3-card" style="padding:1.1rem 1.25rem">
+      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11h6l-3-7-3 7zM9 11l-2 7h10l-2-7"/></svg></div>
+      <h4 style="margin:.6rem 0 .2rem;font-size:.9rem">All-in cost modeling</h4>
+      <p style="font-size:.76rem;color:var(--v3-text-4);margin:0;line-height:1.5">Include subscription, fees, implementation & switching.</p>
+    </div><div class="v3-card" style="padding:1.1rem 1.25rem">
+      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6v6l4 2 M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/></svg></div>
+      <h4 style="margin:.6rem 0 .2rem;font-size:.9rem">Time & efficiency value</h4>
+      <p style="font-size:.76rem;color:var(--v3-text-4);margin:0;line-height:1.5">Convert hours saved into real dollar impact.</p>
+    </div><div class="v3-card" style="padding:1.1rem 1.25rem">
+      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+      <h4 style="margin:.6rem 0 .2rem;font-size:.9rem">Instant ROI view</h4>
+      <p style="font-size:.76rem;color:var(--v3-text-4);margin:0;line-height:1.5">See payback period and annual savings instantly.</p>
+    </div><div class="v3-card" style="padding:1.1rem 1.25rem">
+      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zm-2-12 2 2 4-4"/></svg></div>
+      <h4 style="margin:.6rem 0 .2rem;font-size:.9rem">Benchmark & trust</h4>
+      <p style="font-size:.76rem;color:var(--v3-text-4);margin:0;line-height:1.5">Compare against market data and real buyer benchmarks.</p>
+    </div></div>
 
-  <div class="v3-grid-2" style="margin-top:1.5rem">
+  <div class="v3-grid-2" style="gap:1.5rem;align-items:flex-start;grid-template-columns:1fr 1.1fr">
     <div class="v3-card v3-card-padded">
-      <h2 style="font-size:1.2rem">Your inputs</h2>
-      <p class="v3-muted" style="margin:0 0 1.4rem;font-size:.86rem">Enter your numbers to see your potential return.</p>
+    <h2 style="font-size:1.05rem;margin:0 0 .35rem">Your inputs</h2>
+    <p class="v3-muted" style="font-size:.78rem;margin:0 0 1.1rem">Enter your numbers to see your potential return.</p>
 
-      <h4 style="font-size:.7rem;color:var(--v3-text-4);text-transform:uppercase;letter-spacing:.6px;margin:1rem 0 .55rem">Costs</h4>
-      <label class="v3-label">Annual subscription cost</label>
-      <div class="v3-row tight" style="gap:.5rem"><input type="number" class="v3-input" value="24000" style="flex:1"><select class="v3-select" style="max-width:120px"><option>per year</option></select></div>
+    <div style="font-size:.68rem;color:var(--v3-text-4);text-transform:uppercase;letter-spacing:.5px;font-weight:700;margin:.85rem 0 .55rem">Costs</div>
+    <div class="v3-form-row"><label>Annual subscription cost <span style="opacity:.6">&#9432;</span></label><div class="v3-input-grp"><input class="v3-input" value="$ 24,000"><select class="v3-select"><option>per year</option><option>per month</option></select></div></div>
+    <div class="v3-form-row"><label>Number of users <span style="opacity:.6">&#9432;</span></label><div class="v3-input-grp"><input class="v3-input" value="25"><select class="v3-select"><option>users</option><option>seats</option></select></div></div>
+    <div class="v3-form-row"><label>One-time implementation cost <span style="opacity:.6">&#9432;</span></label><input class="v3-input" value="$ 8,000"></div>
+    <div class="v3-form-row"><label>Switching &amp; migration cost <span style="opacity:.6">&#9432;</span></label><input class="v3-input" value="$ 3,000"></div>
 
-      <label class="v3-label" style="margin-top:.85rem">Number of users</label>
-      <div class="v3-row tight" style="gap:.5rem"><input type="number" class="v3-input" value="25" style="flex:1"><select class="v3-select" style="max-width:120px"><option>users</option></select></div>
+    <div style="font-size:.68rem;color:var(--v3-text-4);text-transform:uppercase;letter-spacing:.5px;font-weight:700;margin:1.2rem 0 .55rem">Benefits</div>
+    <div class="v3-form-row"><label>Average fully loaded cost per user <span style="opacity:.6">&#9432;</span></label><div class="v3-input-grp"><input class="v3-input" value="$ 85"><select class="v3-select"><option>per hour</option><option>per year</option></select></div></div>
+    <div class="v3-form-row"><label>Hours saved per user per week <span style="opacity:.6">&#9432;</span></label><div class="v3-input-grp"><input class="v3-input" value="2.5"><select class="v3-select"><option>hours</option></select></div></div>
+    <div class="v3-form-row"><label>Efficiency improvement (non-time savings) <span style="opacity:.6">&#9432;</span></label><div class="v3-input-grp"><input class="v3-input" value="10"><select class="v3-select"><option>%</option></select></div></div>
 
-      <label class="v3-label" style="margin-top:.85rem">One-time implementation cost</label>
-      <input type="number" class="v3-input" value="8000">
-
-      <label class="v3-label" style="margin-top:.85rem">Switching &amp; migration cost</label>
-      <input type="number" class="v3-input" value="3000">
-
-      <h4 style="font-size:.7rem;color:var(--v3-text-4);text-transform:uppercase;letter-spacing:.6px;margin:1.4rem 0 .55rem">Benefits</h4>
-      <label class="v3-label">Average fully-loaded cost per user</label>
-      <div class="v3-row tight" style="gap:.5rem"><input type="number" class="v3-input" value="85" style="flex:1"><select class="v3-select" style="max-width:120px"><option>per hour</option></select></div>
-
-      <label class="v3-label" style="margin-top:.85rem">Hours saved per user per week</label>
-      <div class="v3-row tight" style="gap:.5rem"><input type="number" class="v3-input" value="2.5" step="0.1" style="flex:1"><select class="v3-select" style="max-width:120px"><option>hours</option></select></div>
-
-      <label class="v3-label" style="margin-top:.85rem">Efficiency improvement (non-time savings)</label>
-      <div class="v3-row tight" style="gap:.5rem"><input type="number" class="v3-input" value="10" style="flex:1"><select class="v3-select" style="max-width:120px"><option>%</option></select></div>
-
-      <div class="v3-callout v3-callout-pro" style="margin:1.4rem 0 1.2rem">
-        <div class="v3-callout-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-        <div class="v3-callout-body"><h4>Pro tip</h4><p>Include both time savings and non-time efficiency gains for a more accurate ROI.</p></div>
-      </div>
-
-      <div class="v3-row" style="gap:.6rem"><button class="v3-btn v3-btn-primary v3-btn-lg" style="flex:1">Calculate ROI</button><button class="v3-btn v3-btn-secondary">Reset</button></div>
+    <div class="v3-callout v3-callout-pro" style="margin:1.2rem 0">
+      <div class="v3-callout-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+      <div class="v3-callout-body"><h4>Pro tip</h4><p style="font-size:.82rem">Include both time savings and non-time efficiency gains for a more accurate ROI.</p></div>
     </div>
 
+    <div class="v3-row tight" style="margin-top:1rem;gap:.6rem">
+      <button class="v3-btn v3-btn-primary" style="flex:1">Calculate ROI</button>
+      <button class="v3-btn v3-btn-secondary" style="flex:0 0 auto">Reset</button>
+    </div>
+  </div>
     <div class="v3-card v3-card-padded">
-      <div class="v3-row between" style="margin-bottom:1rem"><h2 style="font-size:1.2rem;margin:0">Your ROI results</h2><select class="v3-select" style="max-width:170px"><option>Conservative</option></select></div>
-      <h4 style="font-size:.7rem;color:var(--v3-text-4);text-transform:uppercase;letter-spacing:.6px;margin:0 0 .85rem">Key outcomes</h4>
+    <div class="v3-row between" style="margin-bottom:1rem">
+      <h2 style="font-size:1.05rem;margin:0">Your ROI results</h2>
+      <select class="v3-select" style="width:auto;font-weight:700;color:#fff;font-size:.82rem"><option>Conservative</option><option>Balanced</option><option>Aggressive</option></select>
+    </div>
 
-      <div class="v3-grid-2">
-        <div class="v3-card-flat" style="padding:1.05rem 1.2rem">
-          <div style="font-size:.78rem;color:var(--v3-text-4);margin-bottom:.45rem">Monthly ROI</div>
-          <div style="font-family:var(--v3-ff-display);font-size:2rem;font-weight:850;color:var(--v3-good);line-height:1">312%</div>
-          <div style="font-size:.78rem;color:var(--v3-text-4);margin-top:.35rem">$6,240 net benefit / month</div>
-          <div style="margin-top:.55rem"><span class="v3-tag green">Excellent</span></div>
-        </div>
-        <div class="v3-card-flat" style="padding:1.05rem 1.2rem">
-          <div style="font-size:.78rem;color:var(--v3-text-4);margin-bottom:.45rem">Annual net savings</div>
-          <div style="font-family:var(--v3-ff-display);font-size:2rem;font-weight:850;color:var(--v3-good);line-height:1">$74,880</div>
-          <div style="font-size:.78rem;color:var(--v3-text-4);margin-top:.35rem">Total after all costs</div>
-          <div style="margin-top:.55rem"><span class="v3-tag green">Excellent</span></div>
-        </div>
-        <div class="v3-card-flat" style="padding:1.05rem 1.2rem">
-          <div style="font-size:.78rem;color:var(--v3-text-4);margin-bottom:.45rem">Payback period</div>
-          <div style="font-family:var(--v3-ff-display);font-size:2rem;font-weight:850;color:#74a9ff;line-height:1">1.7 months</div>
-          <div style="font-size:.78rem;color:var(--v3-text-4);margin-top:.35rem">Time to break even</div>
-          <div style="margin-top:.55rem"><span class="v3-tag blue">Excellent</span></div>
-        </div>
-        <div class="v3-card-flat" style="padding:1.05rem 1.2rem">
-          <div style="font-size:.78rem;color:var(--v3-text-4);margin-bottom:.45rem">3-year ROI</div>
-          <div style="font-family:var(--v3-ff-display);font-size:2rem;font-weight:850;color:#74a9ff;line-height:1">412%</div>
-          <div style="font-size:.78rem;color:var(--v3-text-4);margin-top:.35rem">Total return over 3 years</div>
-          <div style="margin-top:.55rem"><span class="v3-tag blue">Excellent</span></div>
-        </div>
+    <div style="font-size:.68rem;color:var(--v3-text-4);text-transform:uppercase;letter-spacing:.5px;font-weight:700;margin:0 0 .55rem">Key outcomes</div>
+    <div class="v3-grid-2" style="gap:.7rem">
+      <div class="v3-stat-tile">
+        <h5>Monthly ROI</h5>
+        <div class="v3-stat-num green">312%</div>
+        <p class="v3-stat-help">$6,240 net benefit / month</p>
+        <span class="v3-stat-rating good">Excellent</span>
       </div>
+      <div class="v3-stat-tile">
+        <h5>Annual net savings</h5>
+        <div class="v3-stat-num green">$74,880</div>
+        <p class="v3-stat-help">Total after all costs</p>
+        <span class="v3-stat-rating good">Excellent</span>
+      </div>
+      <div class="v3-stat-tile">
+        <h5>Payback period</h5>
+        <div class="v3-stat-num purple">1.7 months</div>
+        <p class="v3-stat-help">Time to break even</p>
+        <span class="v3-stat-rating good">Excellent</span>
+      </div>
+      <div class="v3-stat-tile">
+        <h5>3-year ROI</h5>
+        <div class="v3-stat-num blue">412%</div>
+        <p class="v3-stat-help">Total return over 3 years</p>
+        <span class="v3-stat-rating good">Excellent</span>
+      </div>
+    </div>
 
-      <div class="v3-verdict-box" style="margin:1.4rem 0">
-        <div class="crown"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg></div>
-        <div>
-          <h4>Our verdict</h4>
-          <p class="verdict-line" style="color:var(--v3-good)">Strong Buy</p>
-          <p class="verdict-sub">This investment delivers exceptional value and pays for itself in under 2 months.</p>
-        </div>
+    <div class="v3-verdict" style="margin-top:1rem">
+      <div class="v3-verdict-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20l3-12 5 4 4-7 5 5 3-3 1 13z M2 20h20"/></svg></div>
+      <div class="v3-verdict-body">
+        <h4>Our verdict</h4>
+        <div class="v3-verdict-name">Strong Buy</div>
+        <p>This investment delivers exceptional value and pays for itself in under 2 months.</p>
       </div>
+    </div>
 
-      <div class="v3-card-flat" style="padding:1.2rem">
-        <div style="font-size:.74rem;color:var(--v3-text-4);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.6rem;font-weight:800">Cash flow overview</div>
-        <div style="display:flex;gap:1.2rem;font-size:.74rem;color:var(--v3-text-4);margin-bottom:.85rem"><span style="display:inline-flex;align-items:center;gap:5px">●&nbsp;Total Costs</span><span style="display:inline-flex;align-items:center;gap:5px;color:var(--v3-good)">●&nbsp;Total Benefits</span><span style="display:inline-flex;align-items:center;gap:5px;color:#74a9ff">●&nbsp;Net Benefit</span></div>
-        <svg viewBox="0 0 600 200" style="width:100%;height:auto" aria-label="Cash flow chart">
-          <polyline points="0,170 120,150 240,110 360,80 480,55 600,30" fill="none" stroke="#74a9ff" stroke-width="2.5"/>
-          <g fill="#34d399" opacity=".7"><rect x="20" y="120" width="20" height="60"/><rect x="120" y="100" width="20" height="80"/><rect x="240" y="60" width="20" height="120"/><rect x="360" y="35" width="20" height="145"/><rect x="480" y="20" width="20" height="160"/></g>
-          <g fill="#f97070" opacity=".7"><rect x="50" y="135" width="20" height="45"/><rect x="150" y="142" width="20" height="38"/><rect x="270" y="148" width="20" height="32"/><rect x="390" y="151" width="20" height="29"/><rect x="510" y="153" width="20" height="27"/></g>
-          <g fill="#fff" font-size="11" font-family="Inter"><text x="20" y="195">Month 1</text><text x="120" y="195">Month 6</text><text x="240" y="195">Month 12</text><text x="360" y="195">Year 2</text><text x="480" y="195">Year 3</text></g>
-          <g fill="rgba(255,255,255,.4)" font-size="10" font-family="Inter" text-anchor="end"><text x="595" y="35">$100k</text><text x="595" y="80">$50k</text><text x="595" y="125">$0</text><text x="595" y="170">-$50k</text></g>
-        </svg>
+    <div class="v3-chart">
+      <div class="v3-chart-head">
+        <span>Cash flow overview</span>
+        <span class="v3-chart-legend">
+          <span style="--c:#f97070">Total Costs</span>
+          <span style="--c:#34d399">Total Benefits</span>
+          <span style="--c:#c084fc">Net Benefit</span>
+        </span>
       </div>
+      <svg viewBox="0 0 480 200" style="width:100%;height:auto" aria-hidden="true">
+        <defs>
+          <linearGradient id="rcLine" x1="0" x2="1"><stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+        </defs>
+        <line x1="40" y1="20"  x2="460" y2="20"  stroke="rgba(255,255,255,.05)"/>
+        <line x1="40" y1="60"  x2="460" y2="60"  stroke="rgba(255,255,255,.05)"/>
+        <line x1="40" y1="100" x2="460" y2="100" stroke="rgba(255,255,255,.18)"/>
+        <line x1="40" y1="140" x2="460" y2="140" stroke="rgba(255,255,255,.05)"/>
+        <line x1="40" y1="180" x2="460" y2="180" stroke="rgba(255,255,255,.05)"/>
+        <text x="6"  y="24"  fill="rgba(255,255,255,.32)" font-size="9">$100k</text>
+        <text x="6"  y="64"  fill="rgba(255,255,255,.32)" font-size="9">$50k</text>
+        <text x="20" y="104" fill="rgba(255,255,255,.32)" font-size="9">$0</text>
+        <text x="0"  y="144" fill="rgba(255,255,255,.32)" font-size="9">-$50k</text>
+        <g>
+          <rect x="60"  y="115" width="14" height="20"  fill="#f97070" rx="2"/><rect x="76"  y="92"  width="14" height="8"   fill="#34d399" rx="2"/>
+          <rect x="140" y="100" width="14" height="35"  fill="#f97070" rx="2"/><rect x="156" y="68"  width="14" height="32"  fill="#34d399" rx="2"/>
+          <rect x="220" y="85"  width="14" height="50"  fill="#f97070" rx="2"/><rect x="236" y="40"  width="14" height="60"  fill="#34d399" rx="2"/>
+          <rect x="300" y="70"  width="14" height="65"  fill="#f97070" rx="2"/><rect x="316" y="22"  width="14" height="78"  fill="#34d399" rx="2"/>
+          <rect x="380" y="55"  width="14" height="80"  fill="#f97070" rx="2"/><rect x="396" y="6"   width="14" height="94"  fill="#34d399" rx="2"/>
+        </g>
+        <polyline points="73,128 153,108 233,82 313,55 393,28" stroke="url(#rcLine)" stroke-width="2.5" fill="none"/>
+        <circle cx="73"  cy="128" r="4" fill="#c084fc"/>
+        <circle cx="153" cy="108" r="4" fill="#c084fc"/>
+        <circle cx="233" cy="82"  r="4" fill="#c084fc"/>
+        <circle cx="313" cy="55"  r="4" fill="#c084fc"/>
+        <circle cx="393" cy="28"  r="4" fill="#c084fc"/>
+        <text x="60"  y="195" fill="rgba(255,255,255,.42)" font-size="9">Month 1</text>
+        <text x="140" y="195" fill="rgba(255,255,255,.42)" font-size="9">Month 6</text>
+        <text x="218" y="195" fill="rgba(255,255,255,.42)" font-size="9">Month 12</text>
+        <text x="300" y="195" fill="rgba(255,255,255,.42)" font-size="9">Year 2</text>
+        <text x="380" y="195" fill="rgba(255,255,255,.42)" font-size="9">Year 3</text>
+      </svg>
+    </div>
+  </div>
+  </div>
+
+  <details class="v3-accordion" style="margin-top:1.4rem">
+    <summary><span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--v3-red-light)" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Assumptions &amp; details</span><small style="color:var(--v3-text-4);font-weight:500">See key assumptions, formulas and how results are calculated.</small></summary>
+    <div class="v3-accordion-body">
+      <p>ROI is calculated as <code>(annual benefit − annual cost) ÷ annual cost</code>. Benefit includes time-savings (hours × loaded cost) plus non-time efficiency gains. Costs include subscription, fees, implementation and switching, amortised over year 1.</p>
+      <p>Conservative scenario assumes 70% of benefits land in year 1; aggressive assumes 100%; balanced assumes 85%. Switch with the dropdown above the results panel.</p>
+    </div>
+  </details>
+
+  <div class="v3-card v3-card-padded" style="margin-top:1.6rem">
+    <p class="v3-muted" style="text-align:center;font-size:.78rem;text-transform:uppercase;letter-spacing:.5px;font-weight:700;margin:0 0 1.1rem">Trusted by buyers who do their homework</p>
+    <div class="v3-grid-4" style="gap:1rem">
+      <div class="v3-row tight" style="align-items:flex-start;gap:.6rem">
+      <div class="v3-card-icon" style="flex-shrink:0;margin-top:2px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div><b style="color:#fff;font-size:.82rem;display:block">Independent &amp; unbiased</b><small style="color:var(--v3-text-4);font-size:.72rem;line-height:1.45;display:block">We don&rsquo;t sell software.</small></div>
+    </div>
+      <div class="v3-row tight" style="align-items:flex-start;gap:.6rem">
+      <div class="v3-card-icon" style="flex-shrink:0;margin-top:2px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+      <div><b style="color:#fff;font-size:.82rem;display:block">Real buyer benchmarks</b><small style="color:var(--v3-text-4);font-size:.72rem;line-height:1.45;display:block">Based on 1,000+ pricing pages and buyer insights.</small></div>
+    </div>
+      <div class="v3-row tight" style="align-items:flex-start;gap:.6rem">
+      <div class="v3-card-icon" style="flex-shrink:0;margin-top:2px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8a4 4 0 0 1 4 4M22 12a10 10 0 1 1-10-10 M16 8 22 2 m-2 0h2v2"/></svg></div>
+      <div><b style="color:#fff;font-size:.82rem;display:block">Updated monthly</b><small style="color:var(--v3-text-4);font-size:.72rem;line-height:1.45;display:block">Our data is refreshed to stay current.</small></div>
+    </div>
+      <div class="v3-row tight" style="align-items:flex-start;gap:.6rem">
+      <div class="v3-card-icon" style="flex-shrink:0;margin-top:2px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 11a3 3 0 0 0-3 3v4h6v-4a3 3 0 0 0-3-3z M5 9V7a7 7 0 0 1 14 0v2"/></svg></div>
+      <div><b style="color:#fff;font-size:.82rem;display:block">Privacy first</b><small style="color:var(--v3-text-4);font-size:.72rem;line-height:1.45;display:block">Your inputs are private and never shared.</small></div>
+    </div>
     </div>
   </div>
 
-  <details class="v3-card v3-card-flat" style="margin-top:1.5rem"><summary style="cursor:pointer;display:flex;align-items:center;gap:.6rem;font-weight:700;color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Assumptions &amp; details</summary><p class="v3-muted" style="margin:.85rem 0 0;font-size:.86rem">Calculations assume annual billing. Time savings valued at fully-loaded cost. Adjust efficiency % to fit your team's reality.</p></details>
-
-  <div class="v3-card v3-card-padded" style="margin-top:1.5rem;text-align:center">
-    <p style="font-size:.78rem;color:var(--v3-text-4);margin:0 0 .85rem">Trusted by buyers who do their homework</p>
-    <div class="v3-grid-4">
-      <div><div class="v3-card-icon" style="margin:0 auto .55rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><b style="font-size:.85rem">Independent &amp; unbiased</b><p style="font-size:.76rem;color:var(--v3-text-4);margin:.25rem 0 0">We don't sell software.</p></div>
-      <div><div class="v3-card-icon" style="margin:0 auto .55rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2"/></svg></div><b style="font-size:.85rem">Real buyer benchmarks</b><p style="font-size:.76rem;color:var(--v3-text-4);margin:.25rem 0 0">Based on 1,000+ pricing pages and buyer insights.</p></div>
-      <div><div class="v3-card-icon" style="margin:0 auto .55rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div><b style="font-size:.85rem">Updated monthly</b><p style="font-size:.76rem;color:var(--v3-text-4);margin:.25rem 0 0">Our data is refreshed to stay current.</p></div>
-      <div><div class="v3-card-icon" style="margin:0 auto .55rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><b style="font-size:.85rem">Privacy first</b><p style="font-size:.76rem;color:var(--v3-text-4);margin:.25rem 0 0">Your inputs are private and never shared.</p></div>
+  <div class="v3-card v3-card-emph v3-card-padded" style="margin:1.6rem 0 4rem;text-align:center">
+    <h3 style="margin:0 0 .35rem;font-size:1.25rem">Make confident decisions, faster.</h3>
+    <p class="v3-muted" style="font-size:.92rem;margin:0 0 1.1rem">Compare alternatives side by side or build a ranked shortlist for your team.</p>
+    <div class="v3-row center" style="gap:.6rem;flex-wrap:wrap;justify-content:center">
+      <a href="/pages/" class="v3-btn v3-btn-primary">Compare alternatives &#8594;</a>
+      <a href="/shortlist" class="v3-btn v3-btn-secondary">Build shortlist &#8594;</a>
     </div>
-  </div>
-
-  <div class="v3-card v3-card-padded v3-card-emph" style="margin-top:1.5rem;text-align:center">
-    <h2 style="font-size:1.2rem;margin:0 0 .35rem">Make confident decisions, faster.</h2>
-    <p class="v3-muted" style="margin:0 0 1rem;font-size:.86rem">Compare alternatives side-by-side or build a ranked shortlist for your team.</p>
-    <div class="v3-row center" style="gap:.6rem"><a href="/pages/" class="v3-btn v3-btn-primary">Compare alternatives &#8594;</a><a href="/shortlist" class="v3-btn v3-btn-secondary">Build shortlist &#8594;</a></div>
   </div>
 </div>
 
@@ -247,45 +276,4 @@
   </div>
 </footer>
 <a class="v3-fab" href="#decision-trail">Decision Trail <b>5</b></a>
-
-<!-- Exit-intent newsletter modal (desktop only, one-time per session) -->
-<style>
-#ss-exit-modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9999}
-#ss-exit-modal[data-open="1"]{display:flex}
-#ss-exit-card{max-width:440px;background:#0d0d16;padding:2rem;border-radius:16px;border:1px solid #1a1a28;color:#f4f4f8;text-align:center;font-family:inherit;box-shadow:0 30px 80px rgba(0,0,0,.5)}
-#ss-exit-card h3{margin:0 0 .5rem 0;font-size:1.4rem;color:#e94560}
-#ss-exit-card p{margin:0 0 1.2rem 0;opacity:.82;line-height:1.5}
-#ss-exit-card form{display:flex;gap:.5rem}
-#ss-exit-card input{flex:1;padding:.75rem 1rem;background:#07070d;border:1px solid #222;border-radius:8px;color:inherit;font-size:1rem}
-#ss-exit-card button{padding:.75rem 1.2rem;background:#e94560;color:#fff;border:0;border-radius:8px;font-weight:700;cursor:pointer}
-#ss-exit-close{position:absolute;top:18px;right:22px;background:transparent;border:0;color:#777;font-size:1.3rem;cursor:pointer}
-</style>
-<script id="exit-intent-newsletter">
-(function(){
-  if(sessionStorage.getItem('ssExitShown'))return;
-  if(window.innerWidth<768)return; // desktop only
-  var shown=false;
-  function show(){
-    if(shown)return; shown=true;
-    sessionStorage.setItem('ssExitShown','1');
-    var m=document.createElement('div'); m.id='ss-exit-modal'; m.setAttribute('data-open','1');
-    m.innerHTML='<div id="ss-exit-card"><button id="ss-exit-close" aria-label="Close">&times;</button>'
-      +'<h3>Before you go &mdash; the honest SaaS deals weekly</h3>'
-      +'<p>Every Friday we email 1 verified deal, 1 pricing change and 1 tool to avoid. Free, no spam.</p>'
-      +'<form action="https://formsubmit.co/ajax/hellothere@saaspare.org" method="POST" id="ss-exit-form">'
-      +'<input type="email" name="email" placeholder="you@company.com" required><button type="submit">Get it</button>'
-      +'</form></div>';
-    document.body.appendChild(m);
-    m.addEventListener('click',function(e){if(e.target===m)m.remove();});
-    document.getElementById('ss-exit-close').onclick=function(){m.remove();};
-    document.getElementById('ss-exit-form').addEventListener('submit',function(e){
-      if(window.gtag)gtag('event','newsletter_signup',{source:'exit_intent'});
-    });
-  }
-  document.addEventListener('mouseleave',function(e){if(e.clientY<=0)show();});
-  setTimeout(show,120000); // also show after 2 min if user stays
-})();
-</script>
-<script defer src="/assets/saaspare-ui.js"></script>
-<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 </body></html>
