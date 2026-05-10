@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-10T15:45:45+00:00",
+  "generated_at_utc": "2026-05-10T20:40:53+00:00",
   "mode": "apply",
-  "pages_flagged": 43,
+  "pages_flagged": 38,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -22,22 +22,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "kUp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from ClickUp.</p> </details> <details cl"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from ClickUp. The onboarding process typically takes"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -256,38 +240,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/mangools-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s, you can switch from Frase.io to Mangools. Mangools offers a free trial and a 30-day money-back guarantee, making it easy to try out the tool and see if it's a good fit for your team.</"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ize:.92rem;line-height:1.8\">Mangools and Frase.io both offer a free trial and a 30-day money-back guarantee, making it easy to try out the tool and see if it's a good fit for your team. H"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
-      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ible to switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "fort to migrate data and set up workflows. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. The onboarding process t"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
       "claims": [
         {
@@ -397,17 +349,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-trello-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "p and configure the new platform. However, Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free.</p> </div> <div class=\"section\"> <"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
@@ -542,22 +483,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/semrush-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "Yes, you can switch from Frase.io to Semrush. Semrush offers a free trial and a 30-day money-back guarantee, so you can try it out risk-free.</p> </details> <details class=\"f"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "t:1.8\">Switching from Frase.io to Semrush is relatively straightforward, with a 30-day money-back guarantee and a comprehensive knowledge base to help you get started. However, migrating"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
       "claims": [
         {
@@ -636,12 +561,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ike to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike.</p> </details> <details clas"
+          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan.</p>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike. Wrike also offers a free trial, but its o"
+          "context": "m Wrike to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. Monday.com also offers a range of resources and support to help with the migra"
         }
       ],
       "trust_state_bumped": true
