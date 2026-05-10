@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-10T10:13:29+00:00",
+  "generated_at_utc": "2026-05-10T10:56:03+00:00",
   "mode": "apply",
   "pages_flagged": 41,
   "claim_labels_seen": [
@@ -22,6 +22,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "kUp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from ClickUp.</p> </details> <details cl"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from ClickUp. The onboarding process typically takes"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
@@ -76,6 +92,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "ching from Frase.io to Ahrefs is relatively easy, with a 7-day free trial and a 7-day money-back guarantee. Ahrefs offers a comprehensive onboarding process, including video tutorials an"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -240,41 +272,20 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/riverside-fm-vs-descript-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "an switch from Descript to Riverside.fm. Riverside.fm offers a free trial and a 14-day money-back guarantee, making it easy to try out their platform before committing.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "-height:1.8\">Switching from Descript to Riverside.fm is relatively easy, with a 14-day money-back guarantee and a free trial. However, migrating your existing data and settings may requir"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 30-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
+          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 30-day money-back guarantee, making it easy to test and migrate to their platform. Todoist also offers a fr"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "y to test and migrate to their platform. Todoist also offers a free trial and a 30-day money-back guarantee. However, the migration process may require some setup and configuration, espec"
+          "context": "odoist to Monday.com is relatively easy, as both tools offer a free trial and a 30-day money-back guarantee. However, migrating data from Todoist to Monday.com may require some manual eff"
         }
       ],
-      "trust_state_bumped": false
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
@@ -367,22 +378,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "<td><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</strong></td>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/around-vs-riverside-fm-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "can easily switch from Riverside.fm to Around. Around offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Aro"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "side.fm to Around is easy and straightforward. Around offers a free trial and a 14-day money-back guarantee, allowing you to test its features and ensure a smooth transition. Riverside.fm"
         }
       ],
       "trust_state_bumped": false
@@ -536,22 +531,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 14-day money-back guarantee, making it easy to try out their features and support before committing to a pu"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ase.io to SE Ranking is relatively easy, as both tools offer a free trial and a 14-day money-back guarantee. SE Ranking's onboarding process is more comprehensive, with a dedicated suppor"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
       "claims": [
         {
@@ -576,6 +555,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/clearscope-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ou can switch from Frase.io to Clearscope. Clearscope offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Cle"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ase.io to Clearscope is relatively easy, as both tools offer a free trial and a 14-day money-back guarantee. Clearscope's onboarding process typically takes 1-2 weeks, while Frase.io's on"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/notion-vs-basecamp-which-is-better-in-2026.html",
