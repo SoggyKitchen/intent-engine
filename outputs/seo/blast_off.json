@@ -2,26 +2,15 @@
   "current_month": "May 2026",
   "today": "2026-05-10",
   "titles_rewritten": 0,
-  "descs_rewritten": 2,
+  "descs_rewritten": 0,
   "dates_refreshed": 0,
-  "answers_added": 2,
-  "files_changed": 2,
+  "answers_added": 0,
+  "files_changed": 0,
   "files_scanned": 1157,
   "title_examples": [],
-  "desc_examples": [
-    {
-      "file": "best-cloud-infrastructure-tools-for-secure-compliant-devops-in-2025.html",
-      "before": "Compare OpenTofu, Terraform, AWS Pricing Calculator, and drift detection tools for secure IaC, cost estimation, and compliance. Top picks for B2B engineering teams.",
-      "after": "Updated May 2026. Compare OpenTofu, Terraform, AWS Pricing Calculator, and drift detection tools for secure IaC, cost estimation, and compliance. Top picks for\u2026"
-    },
-    {
-      "file": "best-coi-verification-tools-for-compliance-in-2025.html",
-      "before": "Compare top COI verification platforms for accuracy, cost, and integration model to make an informed decision for your business",
-      "after": "Updated May 2026. Compare top COI verification platforms for accuracy, cost, and integration model to make an informed decision for your business Real tests,\u2026"
-    }
-  ],
+  "desc_examples": [],
   "indexnow": {
-    "submitted": 2,
-    "status": 200
+    "submitted": 0,
+    "skipped_reason": "no urls"
   }
 }

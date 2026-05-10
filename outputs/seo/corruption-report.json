@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-05-10T09:38:33+00:00",
+  "generated_at": "2026-05-10T09:42:35+00:00",
   "html_files_scanned": 1191,
-  "files_changed": 2,
-  "changes": [
-    {
-      "path": "site/pages/best-cloud-infrastructure-tools-for-secure-compliant-devops-in-2025.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-coi-verification-tools-for-compliance-in-2025.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    }
-  ]
+  "files_changed": 0,
+  "changes": []
 }
