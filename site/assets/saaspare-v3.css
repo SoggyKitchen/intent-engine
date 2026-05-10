@@ -849,3 +849,224 @@ body.v3 .v3-grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0,1f
   body.v3 .v3-verdict-box { flex-wrap: wrap; }
   body.v3 .v3-footer-grid { grid-template-columns: 1fr; }
 }
+
+/* ────────────────────────────────────────────────────────────────────
+ *  v3.1 ADDITIONS — matrix bg, typewriter, nav glow, score circles
+ * ──────────────────────────────────────────────────────────────────── */
+
+/* Matrix dot background — for homepage hero */
+body.v3 .v3-matrix-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(233,69,96,.28) 0%, rgba(233,69,96,.08) 30%, transparent 60%),
+    radial-gradient(circle, rgba(233,69,96,.45) 1.1px, transparent 1.4px);
+  background-size: 100% 100%, 28px 28px;
+  background-repeat: no-repeat, repeat;
+  -webkit-mask-image: radial-gradient(ellipse 78% 70% at 50% 38%, #000 0%, #000 35%, transparent 80%);
+  mask-image: radial-gradient(ellipse 78% 70% at 50% 38%, #000 0%, #000 35%, transparent 80%);
+  animation: v3MatrixDrift 40s linear infinite;
+  opacity: .85;
+  z-index: 0;
+}
+body.v3 .v3-matrix-glow {
+  position: absolute;
+  width: 800px; height: 600px;
+  left: 50%; top: -120px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(233,69,96,.35) 0%, rgba(233,69,96,.10) 30%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 1;
+  animation: v3GlowPulse 6s ease-in-out infinite;
+}
+@keyframes v3MatrixDrift {
+  from { background-position: 0% 0%, 0 0; }
+  to   { background-position: 0% 0%, 28px 28px; }
+}
+@keyframes v3GlowPulse {
+  0%,100% { opacity: .9; }
+  50%     { opacity: 1; }
+}
+
+/* Typewriter — cycling word with caret */
+body.v3 .v3-typewriter {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+body.v3 .v3-typewriter::after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: .85em;
+  background: var(--v3-red);
+  vertical-align: -2px;
+  margin-left: 6px;
+  border-radius: 2px;
+  box-shadow: 0 0 12px var(--v3-red);
+  animation: v3Caret 1s steps(2, end) infinite;
+}
+@keyframes v3Caret {
+  50% { opacity: 0; }
+}
+
+/* NAV ACTIVE/HOVER red-glow underline (Image 16) */
+body.v3 > nav.v3-nav .nav-link {
+  position: relative;
+  transition: color var(--v3-fast);
+}
+body.v3 > nav.v3-nav .nav-link:hover,
+body.v3 > nav.v3-nav .nav-link.active {
+  color: #fff !important;
+  background: transparent !important;
+}
+body.v3 > nav.v3-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 50%; bottom: -6px;
+  transform: translateX(-50%);
+  width: 36px; height: 3px;
+  background: var(--v3-red);
+  border-radius: 2px;
+  margin: 0 !important;
+  box-shadow:
+    0 0 12px rgba(233,69,96,.95),
+    0 0 24px rgba(233,69,96,.7),
+    0 -2px 12px rgba(233,69,96,.55),
+    0 0 4px #fff inset;
+}
+body.v3 > nav.v3-nav .nav-link:hover::after {
+  content: '';
+  position: absolute;
+  left: 50%; bottom: -6px;
+  transform: translateX(-50%);
+  width: 28px; height: 2px;
+  background: rgba(233,69,96,.7);
+  border-radius: 2px;
+  margin: 0 !important;
+  box-shadow: 0 0 10px rgba(233,69,96,.6), 0 0 18px rgba(233,69,96,.35);
+  animation: v3NavHoverIn .25s ease forwards;
+}
+@keyframes v3NavHoverIn {
+  from { opacity: 0; width: 0; }
+  to   { opacity: 1; width: 28px; }
+}
+
+/* Score circle (used on shortlist + comparison) */
+body.v3 .v3-score-circle {
+  display: grid; place-items: center;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  border: 3px solid var(--v3-good);
+  color: #fff;
+  font-family: var(--v3-ff-display);
+  font-size: 1.05rem;
+  font-weight: 850;
+  position: relative;
+}
+body.v3 .v3-score-circle::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: conic-gradient(var(--v3-good) 0% var(--score, 90%), transparent var(--score, 90%) 100%);
+  z-index: -1;
+  filter: blur(8px);
+  opacity: .35;
+}
+
+/* Countdown timer chips (deal radar) */
+body.v3 .v3-countdown {
+  display: inline-flex; gap: 6px;
+  font-family: var(--v3-ff-display);
+}
+body.v3 .v3-countdown span {
+  background: rgba(255,255,255,.06);
+  border: 1px solid var(--v3-border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  min-width: 36px;
+  text-align: center;
+  font-weight: 800;
+  font-size: .9rem;
+  color: #fff;
+}
+body.v3 .v3-countdown small {
+  display: block;
+  font-size: .55rem;
+  font-weight: 600;
+  color: var(--v3-text-5);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Multi-column container (used by privacy, contact) */
+body.v3 .v3-toc.left-rail { width: 240px; }
+body.v3 .v3-rail-card.compact { padding: .85rem 1rem; }
+body.v3 .v3-rail-card.compact h3 { font-size: .85rem; margin-bottom: .55rem; }
+
+/* Telescope 404 */
+body.v3 .v3-404-num {
+  font-family: var(--v3-ff-display);
+  font-size: clamp(7rem, 13vw, 11rem);
+  font-weight: 950;
+  line-height: 1;
+  background: linear-gradient(135deg, #ff7890 0%, #e94560 50%, #c73652 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 80px rgba(233,69,96,.35);
+  letter-spacing: -.04em;
+  animation: v3Glint 7s linear infinite;
+  background-size: 220% 100%;
+  margin-bottom: 1rem;
+}
+
+/* For the ROI 3-column layout */
+body.v3 .v3-roi-cols {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 1024px) {
+  body.v3 .v3-roi-cols { grid-template-columns: 1fr; }
+}
+
+/* Discount strikethrough price */
+body.v3 .v3-price-strike { color: var(--v3-text-5); text-decoration: line-through; font-size: .9rem; }
+
+/* Active row highlight */
+body.v3 .v3-row-active {
+  background: rgba(233,69,96,.06);
+  border-color: rgba(233,69,96,.32);
+}
+
+/* Tab pill row (deal radar) */
+body.v3 .v3-tabs-bar {
+  display: flex; flex-wrap: wrap; gap: .55rem;
+  margin: 1rem 0;
+}
+body.v3 .v3-tabs-bar a, body.v3 .v3-tabs-bar button {
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--v3-border);
+  color: var(--v3-text-3);
+  border-radius: var(--v3-radius-pill);
+  padding: .5rem 1.05rem;
+  font: inherit; font-size: .82rem; font-weight: 700;
+  cursor: pointer;
+  transition: color var(--v3-fast), background var(--v3-fast), border-color var(--v3-fast);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+body.v3 .v3-tabs-bar a:hover, body.v3 .v3-tabs-bar button:hover {
+  color: #fff; border-color: var(--v3-border-red); background: rgba(255,255,255,.07);
+}
+body.v3 .v3-tabs-bar a.active, body.v3 .v3-tabs-bar button.active {
+  background: linear-gradient(135deg, #f04c68, #c8314f);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 22px rgba(233,69,96,.32);
+}

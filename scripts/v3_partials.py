@@ -109,6 +109,7 @@ def head_html(title: str, description: str, canonical: str, *, extra_meta: str =
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;850;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/saaspare-v3.css">
+<script src="/assets/saaspare-v3.js" defer></script>
 {extra_meta}
 </head>
 <body class="v3">

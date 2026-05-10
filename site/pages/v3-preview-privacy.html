@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | SaaSpare</title>
-<meta name="description" content="SaaSpare's privacy policy explains what information we collect, how we use it, and the choices you have.">
+<meta name="description" content="How SaaSpare collects, uses, and safeguards your information.">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://saaspare.org/pages/v3-preview-privacy">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <meta name="theme-color" content="#07070d">
 <meta property="og:title" content="Privacy Policy">
-<meta property="og:description" content="SaaSpare's privacy policy explains what information we collect, how we use it, and the choices you have.">
+<meta property="og:description" content="How SaaSpare collects, uses, and safeguards your information.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://saaspare.org/pages/v3-preview-privacy">
 <meta property="og:image" content="https://saaspare.org/og-default.png">
@@ -21,6 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;850;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/saaspare-v3.css">
+<script src="/assets/saaspare-v3.js" defer></script>
 
 </head>
 <body class="v3">
@@ -40,7 +41,7 @@
 
 <div class="v3-container" style="padding-top:5.5rem"><div class="v3-crumbs"><a href="/">Home</a><span>/</span><span>Privacy Policy</span></div></div>
 
-<div class="v3-layout-filters" style="grid-template-columns:240px minmax(0,1fr)">
+<div style="max-width:var(--v3-page-max);margin:0 auto;padding:1rem var(--v3-page-pad);display:grid;grid-template-columns:240px minmax(0,1fr);gap:3rem;align-items:flex-start">
   <aside>
     <div class="v3-toc">
       <h4>On this page</h4>
@@ -61,43 +62,42 @@
     </div>
   </aside>
 
-  <main>
-    <div style="text-align:center;margin-bottom:1.5rem"><span class="v3-eyebrow">Privacy Policy</span></div>
+  <main style="max-width:760px">
+    <div style="text-align:center;margin-bottom:1.2rem"><span class="v3-eyebrow">Privacy Policy</span></div>
     <h1 style="text-align:center">Privacy <em>Policy</em></h1>
-    <p class="v3-help" style="text-align:center;margin:.4rem 0 1.5rem">Last updated: May 10, 2026</p>
-    <p class="v3-lede" style="text-align:center;max-width:600px;margin:0 auto 2.5rem">At SaaSpare, your privacy matters. This policy explains what information we collect, how we use it, and the choices you have.</p>
+    <p class="v3-help" style="text-align:center;margin:.4rem 0 1rem">Last updated: May 10, 2026</p>
+    <p class="v3-lede" style="text-align:center;max-width:580px;margin:0 auto 2.5rem">At SaaSpare, your privacy matters. This policy explains what information we collect, how we use it, and the choices you have.</p>
 
     <h2 id="intro">1. Introduction</h2>
     <p>SaaSpare ("we", "our", or "us") operates the website saaspare.org (the "Site"). This Privacy Policy describes how we collect, use, disclose, and safeguard your information when you visit our Site.</p>
-    <div class="v3-grid-3" style="margin:1.4rem 0 2rem">
-      <div class="v3-card">
-        <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-        <p style="font-size:.85rem;margin:.65rem 0 0;color:var(--v3-text-3);line-height:1.55"><b style="color:#fff">We don't sell your personal information.</b></p>
-      </div>
-      <div class="v3-card">
-        <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-        <p style="font-size:.85rem;margin:.65rem 0 0;color:var(--v3-text-3);line-height:1.55"><b style="color:#fff">We use data to improve content and user experience.</b></p>
-      </div>
-      <div class="v3-card">
-        <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-        <p style="font-size:.85rem;margin:.65rem 0 0;color:var(--v3-text-3);line-height:1.55"><b style="color:#fff">You're in control of your privacy choices.</b></p>
+
+    <div class="v3-card v3-card-emph" style="padding:1.2rem 1.4rem;margin:1.4rem 0 2rem">
+      <h4 style="font-size:.78rem;color:var(--v3-red-light);margin:0 0 .85rem;text-transform:uppercase;letter-spacing:.5px;font-weight:850">Key points</h4>
+      <div class="v3-grid-3" style="gap:.7rem">
+        <div style="background:rgba(255,255,255,.025);border:1px solid var(--v3-border);border-radius:12px;padding:.85rem 1rem">
+          <div class="v3-card-icon" style="margin-bottom:.55rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg></div>
+          <p style="font-size:.82rem;color:var(--v3-text-2);margin:0;line-height:1.5"><b>We don't sell your personal information.</b></p>
+        </div>
+        <div style="background:rgba(255,255,255,.025);border:1px solid var(--v3-border);border-radius:12px;padding:.85rem 1rem">
+          <div class="v3-card-icon" style="margin-bottom:.55rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <p style="font-size:.82rem;color:var(--v3-text-2);margin:0;line-height:1.5"><b>We use data to improve content and user experience.</b></p>
+        </div>
+        <div style="background:rgba(255,255,255,.025);border:1px solid var(--v3-border);border-radius:12px;padding:.85rem 1rem">
+          <div class="v3-card-icon" style="margin-bottom:.55rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <p style="font-size:.82rem;color:var(--v3-text-2);margin:0;line-height:1.5"><b>You're in control of your privacy choices.</b></p>
+        </div>
       </div>
     </div>
 
     <h2 id="info-collect">2. Information We Collect</h2>
     <p>We collect information you provide directly, information automatically collected, and information from third parties.</p>
-    <h3>a) Information you provide</h3>
+    <h3 style="color:var(--v3-red-light);margin-top:1.2rem">a) Information you provide</h3>
     <p>When you sign up for our newsletter, contact us, or submit a comparison request, we collect your name, email address, and any details you choose to share.</p>
-    <h3>b) Information collected automatically</h3>
+    <h3 style="color:var(--v3-red-light);margin-top:1.2rem">b) Information collected automatically</h3>
     <p>We collect device, browser, IP address, referrer, and pages visited via cookies and similar technologies — used to improve site performance and personalise content.</p>
 
     <h2 id="how-we-use">3. How We Use Information</h2>
-    <ul>
-      <li>To provide and improve our services</li>
-      <li>To communicate with you</li>
-      <li>To analyse site usage</li>
-      <li>To prevent fraud and abuse</li>
-    </ul>
+    <ul><li>To provide and improve our services</li><li>To communicate with you</li><li>To analyse site usage</li><li>To prevent fraud and abuse</li></ul>
 
     <h2 id="cookies">4. Cookies &amp; Tracking</h2>
     <p>We use cookies and similar technologies to remember your preferences, measure traffic, and improve content. You can control cookies in your browser settings.</p>

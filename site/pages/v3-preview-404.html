@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page not found | SaaSpare</title>
-<meta name="description" content="The page you're looking for doesn't exist or may have been moved. Let's get you back on track.">
+<meta name="description" content="The page you're looking for doesn't exist or may have been moved.">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://saaspare.org/pages/v3-preview-404">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <meta name="theme-color" content="#07070d">
 <meta property="og:title" content="Page not found">
-<meta property="og:description" content="The page you're looking for doesn't exist or may have been moved. Let's get you back on track.">
+<meta property="og:description" content="The page you're looking for doesn't exist or may have been moved.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://saaspare.org/pages/v3-preview-404">
 <meta property="og:image" content="https://saaspare.org/og-default.png">
@@ -21,6 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;850;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/saaspare-v3.css">
+<script src="/assets/saaspare-v3.js" defer></script>
 
 </head>
 <body class="v3">
@@ -38,35 +39,61 @@
   <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>
 
-<section class="v3-hero">
-  <div class="v3-hero-inner" style="max-width:720px">
-    <span class="v3-eyebrow">Page not found</span>
-    <div style="font-family:var(--v3-ff-display);font-size:clamp(6rem,15vw,9rem);font-weight:900;background:linear-gradient(135deg,#ff7890 0%,#e94560 50%,#c73652 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin:1rem 0;animation:v3Glint 7s linear infinite;background-size:220% 100%">404</div>
-    <h1 style="font-size:clamp(1.5rem,3.4vw,2.2rem);margin:0 0 .85rem">Looks like this page took a detour.</h1>
-    <p class="v3-sub">The page you're looking for doesn't exist or may have been moved. Let's get you back on track.</p>
-    <div class="v3-grid-3" style="margin-top:2rem">
-      <div class="v3-card">
-        <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <h4 style="margin:.7rem 0 .3rem">Return Home</h4>
-        <p style="font-size:.82rem;color:var(--v3-text-4);margin:0 0 .85rem;line-height:1.5">Go back to the homepage and start fresh.</p>
-        <a href="/" class="v3-btn v3-btn-primary v3-btn-sm">Go Home →</a>
-      </div>
-      <div class="v3-card">
-        <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <h4 style="margin:.7rem 0 .3rem">Browse Comparisons</h4>
-        <p style="font-size:.82rem;color:var(--v3-text-4);margin:0 0 .85rem;line-height:1.5">Explore 1,000+ comparisons across top SaaS tools.</p>
-        <a href="/pages/" class="v3-btn v3-btn-secondary v3-btn-sm">Browse Library →</a>
-      </div>
-      <div class="v3-card">
-        <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <h4 style="margin:.7rem 0 .3rem">See Top Picks</h4>
-        <p style="font-size:.82rem;color:var(--v3-text-4);margin:0 0 .85rem;line-height:1.5">Check out our expert-recommended tools.</p>
-        <a href="/shortlist" class="v3-btn v3-btn-secondary v3-btn-sm">View Top Picks →</a>
-      </div>
+<section class="v3-hero" style="position:relative;overflow:hidden;padding-bottom:2rem">
+  <div class="v3-matrix-bg" style="opacity:.5"></div>
+  <div class="v3-container" style="position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;min-height:480px">
+    <div>
+      <span class="v3-eyebrow">Page not found</span>
+      <div class="v3-404-num">404</div>
+      <h1 style="font-size:clamp(1.6rem,3.2vw,2.4rem);margin:0 0 .85rem">Looks like this page<br>took a detour.</h1>
+      <p class="v3-sub" style="margin:0 auto 0 0;text-align:left">The page you're looking for doesn't exist or may have been moved. Let's get you back on track.</p>
     </div>
-    <p class="v3-help" style="margin-top:2rem">Still stuck? <a href="/contact" class="v3-link-cta" style="display:inline">Contact us</a> and we'll help.</p>
+    <div style="position:relative;text-align:center">
+      <svg viewBox="0 0 320 320" style="width:100%;max-width:320px;margin:0 auto" aria-hidden="true">
+        <defs><radialGradient id="g404" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e94560" stop-opacity="0.4"/><stop offset="60%" stop-color="#e94560" stop-opacity="0.1"/><stop offset="100%" stop-color="#e94560" stop-opacity="0"/></radialGradient></defs>
+        <circle cx="220" cy="170" r="85" fill="url(#g404)"/>
+        <circle cx="220" cy="170" r="78" fill="none" stroke="#e94560" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="220" cy="170" r="45" fill="#1a0508" stroke="#e94560" stroke-width="1.5"/>
+        <g transform="translate(60,140) rotate(-25 60 50)">
+          <rect x="0" y="40" width="120" height="22" rx="4" fill="#1f1f2a" stroke="rgba(255,255,255,.18)" stroke-width="1"/>
+          <rect x="-8" y="32" width="16" height="38" rx="3" fill="#0f0f18" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+          <rect x="116" y="28" width="22" height="46" rx="3" fill="#0f0f18" stroke="#e94560" stroke-width="1.5"/>
+          <circle cx="127" cy="51" r="6" fill="#e94560"/>
+          <line x1="60" y1="62" x2="60" y2="115" stroke="rgba(255,255,255,.4)" stroke-width="2"/>
+          <polygon points="40,140 80,140 60,115" fill="#1f1f2a" stroke="rgba(255,255,255,.18)" stroke-width="1"/>
+        </g>
+        <circle cx="50" cy="60" r="2" fill="#e94560" opacity="0.7"/>
+        <circle cx="280" cy="80" r="1.5" fill="#fff" opacity="0.6"/>
+        <circle cx="290" cy="240" r="2" fill="#e94560" opacity="0.5"/>
+        <circle cx="80" cy="270" r="1.5" fill="#fff" opacity="0.5"/>
+      </svg>
+    </div>
   </div>
 </section>
+
+<div class="v3-container">
+  <div class="v3-grid-3">
+    <div class="v3-card">
+      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <h4 style="margin:.7rem 0 .3rem">Return Home</h4>
+      <p style="font-size:.82rem;color:var(--v3-text-4);margin:0 0 .85rem;line-height:1.5">Go back to the homepage and start fresh.</p>
+      <a href="/" class="v3-btn v3-btn-primary v3-btn-sm">Go Home →</a>
+    </div>
+    <div class="v3-card">
+      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+      <h4 style="margin:.7rem 0 .3rem">Browse Comparisons</h4>
+      <p style="font-size:.82rem;color:var(--v3-text-4);margin:0 0 .85rem;line-height:1.5">Explore 1,000+ comparisons across top SaaS tools.</p>
+      <a href="/pages/" class="v3-btn v3-btn-primary v3-btn-sm">Browse Library →</a>
+    </div>
+    <div class="v3-card">
+      <div class="v3-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+      <h4 style="margin:.7rem 0 .3rem">See Top Picks</h4>
+      <p style="font-size:.82rem;color:var(--v3-text-4);margin:0 0 .85rem;line-height:1.5">Check out our expert-recommended tools.</p>
+      <a href="/shortlist" class="v3-btn v3-btn-primary v3-btn-sm">View Top Picks →</a>
+    </div>
+  </div>
+  <p class="v3-help" style="text-align:center;margin-top:2rem">Still stuck? <a href="/contact" class="v3-link-cta" style="display:inline">Contact us</a> and we'll help.</p>
+</div>
 
 <footer class="v3-footer">
   <div class="v3-container">
