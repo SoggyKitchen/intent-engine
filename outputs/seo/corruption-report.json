@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-09T20:39:26+00:00",
-  "html_files_scanned": 1187,
-  "files_changed": 104,
+  "generated_at": "2026-05-10T01:35:44+00:00",
+  "html_files_scanned": 1189,
+  "files_changed": 106,
   "changes": [
     {
       "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
@@ -45,6 +45,11 @@
     },
     {
       "path": "site/pages/copy-ai-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-developer-tools-for-b2b-saas-engineering-teams-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -95,6 +100,11 @@
     },
     {
       "path": "site/pages/remote-com-vs-lattice-which-is-better-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-configuration-drift-detection-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
