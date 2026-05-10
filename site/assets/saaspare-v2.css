@@ -1,0 +1,228 @@
+/* SaaSpare v2 design system — applied via <body class="v2">.
+ * Pilot rollout: only pages with body.v2 see these rules.
+ *
+ * Concerns addressed:
+ *   1. Edge-to-edge background (no vertical seams from too-narrow radial gradients)
+ *   2. Wider content (1200px max instead of 860px)
+ *   3. Pills/badges removed (page-eyebrow, badge-dot, ss-fresh)
+ *   4. Duplicate affiliate disclosures collapsed to one
+ *   5. Trust bar with green "OK" prefix removed
+ *   6. Glint animation rewritten as smooth left-to-right (no 2-sec pause)
+ *   7. No idle/bobbing hovers on cards or table rows
+ *   8. Button hovers preserved (nav-cta, cta-btn)
+ *   9. Nav unified by aggressive overrides
+ */
+
+/* ── BACKDROP — full viewport, no seams ──────────────────────────── */
+body.v2 {
+  background:
+    radial-gradient(ellipse 140vw 60vh at 50% -10vh, rgba(65,18,29,.5) 0%, rgba(65,18,29,.18) 35%, transparent 70%),
+    radial-gradient(ellipse 100vw 50vh at 50% 25vh, rgba(233,69,96,.04) 0%, transparent 70%),
+    #07070d !important;
+  background-attachment: fixed !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+}
+body.v2::before, body.v2::after { display: none !important; }
+body.v2 .page-hero { background: transparent !important; border-bottom: none !important; }
+body.v2 .page-hero::before { display: none !important; }
+body.v2 .hero-bg, body.v2 .page-hero-bg, body.v2 .hero-floor { display: none !important; }
+
+/* ── WIDTH — 1200px content, more breathing room left/right ─────── */
+body.v2 .container,
+body.v2 main > .container,
+body.v2 .page-content,
+body.v2 .shell,
+body.v2 .page-hero-content,
+body.v2 .hero-content,
+body.v2 .footer-inner {
+  max-width: min(1200px, calc(100vw - 48px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: clamp(1.25rem, 3vw, 2rem) !important;
+  padding-right: clamp(1.25rem, 3vw, 2rem) !important;
+}
+
+/* ── PILLS REMOVED — no more red dot eyebrows ────────────────────── */
+body.v2 .page-eyebrow,
+body.v2 .hero-eyebrow,
+body.v2 .badge:not(.winner-badge):not(.tag),
+body.v2 .ss-fresh,
+body.v2 .badge-dot {
+  display: none !important;
+}
+
+/* ── DUPLICATE DISCLOSURE — keep footer ss-disclose, drop inline pill ── */
+body.v2 .aff-disclosure-pill { display: none !important; }
+
+/* ── TRUST BAR — kill the green "OK" version (redundant with verdict) ── */
+body.v2 .trust-bar { display: none !important; }
+
+/* ── FEATURED ANSWER / TLDR — calm them down (no red glow box) ───── */
+body.v2 .featured-answer,
+body.v2 [data-aeo-answer] {
+  background: rgba(255,255,255,.025) !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
+  border-radius: 14px !important;
+  padding: 1rem 1.4rem !important;
+  margin: 1.25rem 0 !important;
+}
+body.v2 .featured-answer p,
+body.v2 [data-aeo-answer] p {
+  color: rgba(255,255,255,.78) !important;
+  margin: 0 !important;
+}
+body.v2 .tldr-box {
+  background: rgba(255,255,255,.025) !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
+  color: rgba(255,255,255,.78) !important;
+}
+body.v2 .tldr-box strong { color: #fff !important; }
+
+/* ── HOVERS — keep button micro-lift, kill card/row idle motion ─── */
+body.v2 .tool-card,
+body.v2 .info-card,
+body.v2 .stat-card,
+body.v2 .deal,
+body.v2 .panel,
+body.v2 .why article,
+body.v2 .pages-grid > a,
+body.v2 .comp-grid > a,
+body.v2 .cat-grid > a {
+  transition: border-color .25s ease, background .25s ease !important;
+  transform: none !important;
+}
+body.v2 .tool-card:hover,
+body.v2 .info-card:hover,
+body.v2 .stat-card:hover,
+body.v2 .deal:hover,
+body.v2 .panel:hover,
+body.v2 .why article:hover,
+body.v2 .pages-grid > a:hover,
+body.v2 .comp-grid > a:hover,
+body.v2 .cat-grid > a:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: rgba(233,69,96,.32) !important;
+}
+
+/* table rows: no movement, no jumpy bg */
+body.v2 tr:hover,
+body.v2 tr:hover td {
+  background: transparent !important;
+  transform: none !important;
+}
+
+/* prevent any "idle" up/down keyframes on tile-style components */
+body.v2 .tool-card,
+body.v2 .info-card,
+body.v2 .deal,
+body.v2 .stat-card,
+body.v2 .panel { animation: none !important; }
+
+/* ── BUTTON HOVERS — keep micro-lift on the few that should have it ── */
+body.v2 .nav-cta,
+body.v2 .cta-btn,
+body.v2 .button-primary,
+body.v2 a.btn-primary,
+body.v2 .deal-cta,
+body.v2 a.btn {
+  transition: transform .15s ease, box-shadow .15s ease !important;
+}
+body.v2 .nav-cta:hover,
+body.v2 .cta-btn:hover,
+body.v2 .button-primary:hover,
+body.v2 a.btn-primary:hover,
+body.v2 .deal-cta:hover,
+body.v2 a.btn:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 12px 28px rgba(233,69,96,.45) !important;
+}
+
+/* ── GLINT — smooth, continuous, no pause ───────────────────────── */
+body.v2 .page-hero h1 em,
+body.v2 .page-hero h1 span.grad-text,
+body.v2 .hero h1 em,
+body.v2 .hero h1 span.grad-text,
+body.v2 h1 em,
+body.v2 h1 span.grad-text,
+body.v2 main h2 em,
+body.v2 main h2 span.grad-text {
+  background: linear-gradient(105deg,
+    #ff7890 0%,
+    #ff7890 38%,
+    #ffd1dc 50%,
+    #ff7890 62%,
+    #ff7890 100%) !important;
+  background-size: 220% 100% !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-style: normal !important;
+  animation: ssV2Glint 7s linear infinite !important;
+}
+@keyframes ssV2Glint {
+  from { background-position: 200% 50%; }
+  to   { background-position: -200% 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.v2 h1 em,
+  body.v2 h1 span.grad-text { animation: none !important; }
+}
+
+/* ── NAV — bullet-proof unified navbar (homepage spec) ───────────── */
+body.v2 > nav#nav {
+  position: fixed !important;
+  top: 0; left: 0; right: 0;
+  z-index: 320 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .35rem !important;
+  padding: clamp(.78rem, 1.1vw, 1rem) clamp(1.15rem, 2.8vw, 2rem) !important;
+  background: transparent !important;
+  border-bottom: 1px solid transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  transition: background .28s ease, border-color .28s ease, backdrop-filter .28s ease, box-shadow .28s ease !important;
+}
+body.v2 > nav#nav.scrolled,
+body.v2 > nav#nav.ss-nav-scrolled {
+  background: rgba(8,8,15,.78) !important;
+  border-bottom-color: rgba(255,255,255,.07) !important;
+  box-shadow: 0 12px 44px rgba(0,0,0,.18) !important;
+  backdrop-filter: blur(18px) saturate(1.05) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(1.05) !important;
+}
+body.v2 > nav#nav .nav-link {
+  color: rgba(255,255,255,.55) !important;
+  font-size: .82rem !important;
+  font-weight: 600 !important;
+  padding: .5rem .78rem !important;
+  border-radius: 999px !important;
+  white-space: nowrap !important;
+  transition: color .18s ease, background .18s ease !important;
+}
+body.v2 > nav#nav .nav-link:hover,
+body.v2 > nav#nav .nav-link.active {
+  color: #fff !important;
+  background: rgba(255,255,255,.045) !important;
+}
+
+/* ── BREADCRUMB — tighter, no centring (looks better at 1200px) ──── */
+body.v2 .breadcrumb {
+  font-size: .76rem !important;
+  color: rgba(255,255,255,.32) !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ── HEADINGS — slightly tighter, no excessive caps tracking ─── */
+body.v2 h1 { letter-spacing: -.04em !important; }
+body.v2 h2 { letter-spacing: -.02em !important; }
+
+/* ── MOBILE — keep nav working ──────────────────────────────────── */
+@media (max-width: 760px) {
+  body.v2 > nav#nav .nav-link { display: none !important; }
+  body.v2 .container { max-width: 100% !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+}
