@@ -1,26 +1,26 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-05-09T06:13:37+00:00
+Generated: 2026-05-11T14:17:15+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **95.94/100**
+- Overall SaaSpare Health Score: **96.21/100**
 - Level: **Elite SEO/revenue engine**
-- Technical SEO: 19.11/20
-- Content usefulness: 19.55/20
-- Trust/E-E-A-T: 19.44/20
-- Internal linking: 13.88/15
-- Schema/indexability: 9.85/10
-- Conversion/revenue: 9.1/10
+- Technical SEO: 19.1/20
+- Content usefulness: 19.5/20
+- Trust/E-E-A-T: 19.54/20
+- Internal linking: 14.07/15
+- Schema/indexability: 9.76/10
+- Conversion/revenue: 9.23/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1172
-- Healthy pages (85+): 1081
+- Pages scanned: 1194
+- Healthy pages (85+): 1098
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
-- GSC: skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls
+- GSC: service account detected, but Search Console returned `403 insufficient permission`. Add `saaspare@saaspare.iam.gserviceaccount.com` to the `sc-domain:saaspare.org` property with Full permission.
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
 ## Fastest Path To 70
@@ -42,6 +42,7 @@ Mode: `audit`
 ## Top 25 Highest-Impact Fixes
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f` (21.52/100): invalid_canonical, missing_meta, no_h1
 - `/fo-verify` (25.56/100): invalid_canonical, missing_meta, no_h1
+- `/pages/v3-preview-index` (64.09/100): missing_meta, missing_correction_cta, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/best-vpn-for-business-2026` (64.81/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/best-marketing-automation-software-2026` (65.34/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/best-video-conferencing-software-2026` (65.34/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
@@ -49,26 +50,25 @@ Mode: `audit`
 - `/best-hr-software-2026` (65.86/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/best-seo-tools-2026` (66.0/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/best-crm-software-2026` (66.22/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/linear-vs-asana-which-is-better-in-2026` (66.5/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/linear-vs-clickup-which-is-better-in-2026` (66.51/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-box-which-is-better-in-2026` (66.52/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-dropbox-which-is-better-in-2026` (66.52/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-onedrive-which-is-better-in-2026` (66.52/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/linear-vs-jira-which-is-better-in-2026` (66.55/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/linear-vs-github-issues-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-vs-discord-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-vs-mattermost-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-vs-zoom-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-vs-freshdesk-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-vs-gorgias-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-vs-intercom-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/linear-vs-shortcut-which-is-better-in-2026` (66.58/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-1password-business-which-is-better-in-2026` (66.58/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-google-drive-which-is-better-in-2026` (66.58/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/v3-preview-homepage` (66.98/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/stripe-pricing-history-2026` (68.44/100): broken_internal_link, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-contact` (61.8/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-newsletter` (62.8/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/best-project-management-software-2026` (72.94/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-about` (63.61/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/affiliate-disclosure` (73.94/100): broken_internal_link
+- `/pages/v3-preview-shortlist` (63.97/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-roi-calculator` (65.75/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-404` (66.26/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-deal-radar` (66.48/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/buyer-type-alternatives` (68.61/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/` (79.5/100): broken_internal_link, missing_correction_cta, missing_related_pages
+- `/pages/slack-coupon-code-promo-codes-2026-verified-discounts` (80.59/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-vs-box-which-is-better-in-2026` (80.8/100): broken_internal_link, missing_correction_cta, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 94.0): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 94.0): CTA=True, affiliateLinks=2, disclosure=True
+- `/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 94.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 98.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 98.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 98.0): CTA=True, affiliateLinks=1, disclosure=True

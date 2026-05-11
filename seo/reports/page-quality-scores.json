@@ -121,10 +121,10 @@
     "trust": 12.5
   },
   {
-    "content": 15.19,
+    "content": 15.15,
     "conversionRevenue": 6,
     "internalLinking": 15,
-    "overall": 87.19,
+    "overall": 87.15,
     "path": "/deal-radar",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -561,15 +561,15 @@
     "trust": 20.0
   },
   {
-    "content": 15.16,
-    "conversionRevenue": 1,
-    "internalLinking": 8.3,
-    "overall": 68.97,
+    "content": 15.55,
+    "conversionRevenue": 5,
+    "internalLinking": 12,
+    "overall": 82.05,
     "path": "/pages/7-best-canva-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -781,15 +781,15 @@
     "trust": 20.0
   },
   {
-    "content": 15.16,
-    "conversionRevenue": 1,
-    "internalLinking": 8.3,
-    "overall": 68.96,
+    "content": 15.54,
+    "conversionRevenue": 5,
+    "internalLinking": 12,
+    "overall": 82.04,
     "path": "/pages/7-best-miro-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -902,15 +902,15 @@
     "trust": 20.0
   },
   {
-    "content": 15.19,
-    "conversionRevenue": 1,
-    "internalLinking": 8.3,
-    "overall": 68.99,
+    "content": 15.59,
+    "conversionRevenue": 5,
+    "internalLinking": 12,
+    "overall": 82.09,
     "path": "/pages/7-best-slack-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -990,15 +990,15 @@
     "trust": 20.0
   },
   {
-    "content": 15.2,
-    "conversionRevenue": 1,
-    "internalLinking": 8.3,
-    "overall": 69.0,
+    "content": 15.59,
+    "conversionRevenue": 5,
+    "internalLinking": 12,
+    "overall": 82.09,
     "path": "/pages/7-best-zendesk-alternatives-in-2026-free-paid",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -2114,12 +2114,34 @@
   {
     "content": 20,
     "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 91.0,
+    "path": "/pages/best-cloud-infrastructure-tools-for-secure-compliant-devops-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 16,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
     "internalLinking": 15,
     "overall": 98.0,
     "path": "/pages/best-cloud-infrastructure-tools-for-secure-scalable-kubernetes-workloads-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 20,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 92.0,
+    "path": "/pages/best-coi-verification-tools-for-compliance-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
     "trust": 20.0
   },
   {
@@ -2213,6 +2235,17 @@
   {
     "content": 20,
     "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 92.0,
+    "path": "/pages/best-developer-tools-for-b2b-saas-engineering-teams-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
     "internalLinking": 15,
     "overall": 98.0,
     "path": "/pages/best-developer-velocity-tools-for-engineering-leaders-in-2025",
@@ -2278,9 +2311,9 @@
   },
   {
     "content": 20,
-    "conversionRevenue": 8,
+    "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 92.0,
+    "overall": 94.0,
     "path": "/pages/best-devtools-for-b2b-engineering-teams-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
@@ -2315,6 +2348,17 @@
     "internalLinking": 12,
     "overall": 92.0,
     "path": "/pages/best-devtools-for-b2b-software-development-in-2026",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 17,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 92.0,
+    "path": "/pages/best-devtools-for-configuration-drift-detection-in-2025",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
@@ -2373,6 +2417,17 @@
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 91.0,
+    "path": "/pages/best-devtools-for-modernizing-legacy-apps-and-api-drift-detection-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 16,
     "trust": 20.0
   },
   {
@@ -2553,6 +2608,17 @@
   },
   {
     "content": 20,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 90.0,
+    "path": "/pages/best-infrastructure-as-code-and-cloud-cost-tools-for-aws-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 15,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
     "overall": 100,
@@ -2637,6 +2703,17 @@
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
+    "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 91.0,
+    "path": "/pages/best-open-source-iac-and-observability-tools-for-secure-cloud-infrastructure-in-2025",
+    "performanceUx": 5,
+    "schemaIndexability": 10,
+    "technical": 16,
     "trust": 20.0
   },
   {
@@ -3234,103 +3311,114 @@
     "trust": 20.0
   },
   {
-    "content": 14.97,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 68.47,
+    "content": 9.61,
+    "conversionRevenue": 5,
+    "internalLinking": 12,
+    "overall": 68.61,
+    "path": "/pages/buyer-type-alternatives",
+    "performanceUx": 4,
+    "schemaIndexability": 8,
+    "technical": 20,
+    "trust": 10.0
+  },
+  {
+    "content": 15.4,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.66,
     "path": "/pages/canva-coupon-code-promo-codes-2026-verified-discounts",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 15.0
+    "technical": 17,
+    "trust": 17.5
   },
   {
-    "content": 18.14,
-    "conversionRevenue": 4,
-    "internalLinking": 6.5,
-    "overall": 72.14,
+    "content": 18.63,
+    "conversionRevenue": 8,
+    "internalLinking": 11.75,
+    "overall": 86.88,
     "path": "/pages/canva-free-trial-2026-how-to-get-it-step-by-step",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 17.58,
-    "conversionRevenue": 4,
-    "internalLinking": 8.3,
-    "overall": 76.88,
+    "content": 18.96,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 90.97,
     "path": "/pages/canva-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 15.0
+    "trust": 20.0
   },
   {
-    "content": 15.11,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 67.11,
+    "content": 15.59,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.84,
     "path": "/pages/canva-review-2026-is-it-worth-it-honest-verdict",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.68,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.68,
+    "content": 15.2,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.45,
     "path": "/pages/canva-vs-adobe-express-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.62,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.62,
+    "content": 15.1,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.9,
     "path": "/pages/canva-vs-figma-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.68,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.68,
+    "content": 15.15,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.95,
     "path": "/pages/canva-vs-microsoft-designer-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.62,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.62,
+    "content": 15.14,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.39,
     "path": "/pages/canva-vs-piktochart-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.62,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.62,
+    "content": 15.11,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.36,
     "path": "/pages/canva-vs-visme-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -4158,10 +4246,10 @@
     "trust": 20.0
   },
   {
-    "content": 15.58,
+    "content": 15.54,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 87.08,
+    "overall": 87.04,
     "path": "/pages/coupon-verification-policy",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -6138,6 +6226,17 @@
     "trust": 20.0
   },
   {
+    "content": 13.91,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 73.66,
+    "path": "/pages/hidden-fee-detector",
+    "performanceUx": 5,
+    "schemaIndexability": 8,
+    "technical": 20,
+    "trust": 10.0
+  },
+  {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
@@ -6149,10 +6248,10 @@
     "trust": 20.0
   },
   {
-    "content": 16.2,
+    "content": 16.21,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 88.7,
+    "overall": 88.71,
     "path": "/pages/how-saaspare-ranks-tools",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -7293,26 +7392,26 @@
     "trust": 20.0
   },
   {
-    "content": 14.5,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.5,
+    "content": 15.0,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.25,
     "path": "/pages/linear-vs-asana-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.51,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.51,
+    "content": 15.01,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.26,
     "path": "/pages/linear-vs-clickup-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -7326,26 +7425,26 @@
     "trust": 20.0
   },
   {
-    "content": 14.56,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.56,
+    "content": 15.06,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.31,
     "path": "/pages/linear-vs-github-issues-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.55,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.55,
+    "content": 15.06,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.31,
     "path": "/pages/linear-vs-jira-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -7392,15 +7491,15 @@
     "trust": 20.0
   },
   {
-    "content": 14.57,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.58,
+    "content": 15.06,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.86,
     "path": "/pages/linear-vs-shortcut-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -7755,113 +7854,113 @@
     "trust": 20.0
   },
   {
-    "content": 14.71,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 68.21,
+    "content": 15.15,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.4,
     "path": "/pages/miro-coupon-code-promo-codes-2026-verified-discounts",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 15.0
+    "technical": 17,
+    "trust": 17.5
   },
   {
-    "content": 18.12,
-    "conversionRevenue": 6,
-    "internalLinking": 6.5,
-    "overall": 74.12,
+    "content": 18.61,
+    "conversionRevenue": 8,
+    "internalLinking": 11.3,
+    "overall": 86.41,
     "path": "/pages/miro-free-trial-2026-how-to-get-it-step-by-step",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 17.52,
-    "conversionRevenue": 4,
-    "internalLinking": 8.3,
-    "overall": 76.82,
+    "content": 18.91,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 90.91,
     "path": "/pages/miro-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 15.0
+    "trust": 20.0
   },
   {
-    "content": 15.1,
-    "conversionRevenue": 3,
-    "internalLinking": 6.5,
-    "overall": 69.09,
+    "content": 15.58,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.83,
     "path": "/pages/miro-review-2026-is-it-worth-it-honest-verdict",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.59,
-    "conversionRevenue": 3,
-    "internalLinking": 6.5,
-    "overall": 68.59,
+    "content": 15.08,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.33,
     "path": "/pages/miro-vs-figma-figjam-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.65,
-    "conversionRevenue": 3,
-    "internalLinking": 6.5,
-    "overall": 68.65,
+    "content": 15.12,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.92,
     "path": "/pages/miro-vs-google-jamboard-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.59,
-    "conversionRevenue": 3,
-    "internalLinking": 6.5,
-    "overall": 68.59,
+    "content": 15.07,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.88,
     "path": "/pages/miro-vs-lucidspark-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.65,
-    "conversionRevenue": 3,
-    "internalLinking": 6.5,
-    "overall": 68.65,
+    "content": 15.13,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.38,
     "path": "/pages/miro-vs-microsoft-whiteboard-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.59,
-    "conversionRevenue": 3,
-    "internalLinking": 6.5,
-    "overall": 68.59,
+    "content": 15.06,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.86,
     "path": "/pages/miro-vs-mural-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
@@ -7978,11 +8077,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 92.0,
+    "overall": 93.0,
     "path": "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 15,
+    "technical": 16,
     "trust": 20.0
   },
   {
@@ -9639,22 +9738,22 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 99.0,
+    "overall": 100,
     "path": "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 19,
+    "technical": 20,
     "trust": 20.0
   },
   {
     "content": 17,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 73.0,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 83.25,
     "path": "/pages/ramp-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
+    "technical": 17,
     "trust": 17.5
   },
   {
@@ -9889,10 +9988,10 @@
     "trust": 20.0
   },
   {
-    "content": 15.27,
+    "content": 15.26,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 91.27,
+    "overall": 91.26,
     "path": "/pages/report-outdated-pricing",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -9900,10 +9999,10 @@
     "trust": 20.0
   },
   {
-    "content": 15.0,
+    "content": 14.99,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 87.5,
+    "overall": 87.49,
     "path": "/pages/request-a-comparison",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -10285,10 +10384,10 @@
     "trust": 20.0
   },
   {
-    "content": 15.0,
+    "content": 14.97,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 85.75,
+    "internalLinking": 15,
+    "overall": 85.97,
     "path": "/pages/saas-roi-calculator",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -10307,7 +10406,7 @@
     "trust": 17.5
   },
   {
-    "content": 15.6,
+    "content": 15.59,
     "conversionRevenue": 8,
     "internalLinking": 15,
     "overall": 89.09,
@@ -10934,103 +11033,103 @@
     "trust": 20.0
   },
   {
-    "content": 14.89,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 68.39,
+    "content": 15.34,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 80.59,
     "path": "/pages/slack-coupon-code-promo-codes-2026-verified-discounts",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 15.0
+    "trust": 17.5
   },
   {
-    "content": 18.13,
-    "conversionRevenue": 4,
-    "internalLinking": 6.5,
-    "overall": 72.13,
+    "content": 18.62,
+    "conversionRevenue": 8,
+    "internalLinking": 11.75,
+    "overall": 86.87,
     "path": "/pages/slack-free-trial-2026-how-to-get-it-step-by-step",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 17.6,
-    "conversionRevenue": 4,
-    "internalLinking": 8.3,
-    "overall": 76.9,
+    "content": 19.0,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 91.0,
     "path": "/pages/slack-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 15.0
+    "trust": 20.0
   },
   {
-    "content": 15.07,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 67.07,
+    "content": 15.56,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.81,
     "path": "/pages/slack-review-2026-is-it-worth-it-honest-verdict",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.56,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.56,
+    "content": 15.03,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.83,
     "path": "/pages/slack-vs-discord-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.62,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.62,
+    "content": 15.12,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.37,
     "path": "/pages/slack-vs-google-chat-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.56,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.56,
+    "content": 15.06,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.31,
     "path": "/pages/slack-vs-mattermost-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.62,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.62,
+    "content": 15.18,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.43,
     "path": "/pages/slack-vs-microsoft-teams-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.56,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.56,
+    "content": 15.04,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.84,
     "path": "/pages/slack-vs-zoom-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -11143,10 +11242,10 @@
     "trust": 20.0
   },
   {
-    "content": 16.02,
+    "content": 16.0,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 89.52,
+    "overall": 89.5,
     "path": "/pages/state-of-saas-pricing-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -11660,37 +11759,37 @@
     "trust": 20.0
   },
   {
-    "content": 14.76,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 68.26,
+    "content": 15.21,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.46,
     "path": "/pages/tresorit-coupon-code-promo-codes-2026-verified-discounts",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 15.0
+    "technical": 17,
+    "trust": 17.5
   },
   {
-    "content": 18.05,
-    "conversionRevenue": 4,
-    "internalLinking": 6.5,
-    "overall": 72.06,
+    "content": 18.52,
+    "conversionRevenue": 8,
+    "internalLinking": 11.75,
+    "overall": 86.78,
     "path": "/pages/tresorit-free-trial-2026-how-to-get-it-step-by-step",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 17.57,
-    "conversionRevenue": 4,
-    "internalLinking": 8.3,
-    "overall": 76.87,
+    "content": 18.96,
+    "conversionRevenue": 10,
+    "internalLinking": 12,
+    "overall": 92.96,
     "path": "/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 15.0
+    "trust": 20.0
   },
   {
     "content": 14.71,
@@ -11704,70 +11803,70 @@
     "trust": 15.0
   },
   {
-    "content": 14.99,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.99,
+    "content": 15.46,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.71,
     "path": "/pages/tresorit-review-2026-is-it-worth-it-honest-verdict",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.57,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.58,
+    "content": 15.04,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.84,
     "path": "/pages/tresorit-vs-1password-business-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.52,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.52,
+    "content": 15.0,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.8,
     "path": "/pages/tresorit-vs-box-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.52,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.52,
+    "content": 15.0,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.8,
     "path": "/pages/tresorit-vs-dropbox-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.57,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.58,
+    "content": 15.06,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.86,
     "path": "/pages/tresorit-vs-google-drive-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.52,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.52,
+    "content": 15.02,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.27,
     "path": "/pages/tresorit-vs-onedrive-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,
@@ -11856,6 +11955,149 @@
     "schemaIndexability": 10,
     "technical": 20,
     "trust": 20.0
+  },
+  {
+    "content": 9.76,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 66.26,
+    "path": "/pages/v3-preview-404",
+    "performanceUx": 4,
+    "schemaIndexability": 2,
+    "technical": 18,
+    "trust": 12.5
+  },
+  {
+    "content": 14.11,
+    "conversionRevenue": 4,
+    "internalLinking": 12,
+    "overall": 63.61,
+    "path": "/pages/v3-preview-about",
+    "performanceUx": 4,
+    "schemaIndexability": 2,
+    "technical": 20,
+    "trust": 7.5
+  },
+  {
+    "content": 14.56,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 73.06,
+    "path": "/pages/v3-preview-affiliate-disclosure",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 19,
+    "trust": 12.5
+  },
+  {
+    "content": 16.72,
+    "conversionRevenue": 6,
+    "internalLinking": 15,
+    "overall": 75.22,
+    "path": "/pages/v3-preview-comparison",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 18,
+    "trust": 12.5
+  },
+  {
+    "content": 10.3,
+    "conversionRevenue": 6,
+    "internalLinking": 12,
+    "overall": 61.8,
+    "path": "/pages/v3-preview-contact",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 19,
+    "trust": 7.5
+  },
+  {
+    "content": 11.48,
+    "conversionRevenue": 6,
+    "internalLinking": 12,
+    "overall": 66.48,
+    "path": "/pages/v3-preview-deal-radar",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 20,
+    "trust": 10.0
+  },
+  {
+    "content": 14.48,
+    "conversionRevenue": 8,
+    "internalLinking": 9,
+    "overall": 66.98,
+    "path": "/pages/v3-preview-homepage",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 16,
+    "trust": 12.5
+  },
+  {
+    "content": 14.7,
+    "conversionRevenue": 5,
+    "internalLinking": 10.4,
+    "overall": 64.09,
+    "path": "/pages/v3-preview-index",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 17,
+    "trust": 10.0
+  },
+  {
+    "content": 14.39,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 72.89,
+    "path": "/pages/v3-preview-library",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 19,
+    "trust": 12.5
+  },
+  {
+    "content": 10.3,
+    "conversionRevenue": 6,
+    "internalLinking": 12,
+    "overall": 62.8,
+    "path": "/pages/v3-preview-newsletter",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 20,
+    "trust": 7.5
+  },
+  {
+    "content": 15.19,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 75.19,
+    "path": "/pages/v3-preview-privacy",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 18,
+    "trust": 15.0
+  },
+  {
+    "content": 15.25,
+    "conversionRevenue": 4,
+    "internalLinking": 12,
+    "overall": 65.75,
+    "path": "/pages/v3-preview-roi-calculator",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 20,
+    "trust": 7.5
+  },
+  {
+    "content": 11.96,
+    "conversionRevenue": 4,
+    "internalLinking": 12,
+    "overall": 63.97,
+    "path": "/pages/v3-preview-shortlist",
+    "performanceUx": 5,
+    "schemaIndexability": 2,
+    "technical": 19,
+    "trust": 10.0
   },
   {
     "content": 20,
@@ -12562,103 +12804,103 @@
     "trust": 20.0
   },
   {
-    "content": 14.8,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 68.31,
+    "content": 15.27,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.52,
     "path": "/pages/zendesk-coupon-code-promo-codes-2026-verified-discounts",
     "performanceUx": 5,
     "schemaIndexability": 10,
-    "technical": 16,
-    "trust": 15.0
+    "technical": 17,
+    "trust": 17.5
   },
   {
-    "content": 18.11,
-    "conversionRevenue": 4,
-    "internalLinking": 6.5,
-    "overall": 72.11,
+    "content": 18.6,
+    "conversionRevenue": 8,
+    "internalLinking": 11.75,
+    "overall": 86.85,
     "path": "/pages/zendesk-free-trial-2026-how-to-get-it-step-by-step",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 16,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 17.62,
-    "conversionRevenue": 4,
-    "internalLinking": 8.3,
-    "overall": 76.92,
+    "content": 19.0,
+    "conversionRevenue": 8,
+    "internalLinking": 12,
+    "overall": 91.0,
     "path": "/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 15.0
+    "trust": 20.0
   },
   {
-    "content": 15.0,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 67.0,
+    "content": 15.47,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 81.27,
     "path": "/pages/zendesk-review-2026-is-it-worth-it-honest-verdict",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.56,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.56,
+    "content": 15.03,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.83,
     "path": "/pages/zendesk-vs-freshdesk-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.56,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.56,
+    "content": 15.06,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.31,
     "path": "/pages/zendesk-vs-gorgias-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.62,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.62,
+    "content": 15.11,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.91,
     "path": "/pages/zendesk-vs-help-scout-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.68,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.67,
+    "content": 15.15,
+    "conversionRevenue": 5,
+    "internalLinking": 11.3,
+    "overall": 80.95,
     "path": "/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
-    "content": 14.56,
-    "conversionRevenue": 1,
-    "internalLinking": 6.5,
-    "overall": 66.56,
+    "content": 15.06,
+    "conversionRevenue": 5,
+    "internalLinking": 11.75,
+    "overall": 81.31,
     "path": "/pages/zendesk-vs-intercom-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 10,
     "technical": 17,
-    "trust": 12.5
+    "trust": 17.5
   },
   {
     "content": 20,

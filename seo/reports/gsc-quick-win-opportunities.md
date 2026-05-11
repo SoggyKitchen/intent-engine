@@ -2,7 +2,7 @@
 
 Baseline used: GA4 Apr 21-May 11 = 247 active users / 100 key events; GSC last 28 days = 36 clicks / 8.45K impressions / 0.4% CTR / 19.1 avg position.
 
-Live GSC credentials were not present in the local run, so this report combines the latest user-provided baseline, previously exported Windsor/GSC opportunities, and a local buyer-intent priority scan. When `GSC_SERVICE_ACCOUNT_JSON` is available, `npm run seo:agent -- --mode=audit --only=gsc` should replace the proxy rows with live API data.
+Live GSC data is not available in this run, so this report combines the latest user-provided baseline, previously exported Windsor/GSC opportunities, and a local buyer-intent priority scan. When `GSC_SERVICE_ACCOUNT_JSON` or `GOOGLE_APPLICATION_CREDENTIALS` is available, `npm run seo:agent -- --mode=audit --only=gsc` should replace the proxy rows with live API data.
 
 | Priority | Page | Query / intent | Impressions | CTR | Position | Action |
 | --- | --- | --- | ---: | --- | --- | --- |

@@ -926,7 +926,7 @@ def generate_reports(config: dict, audits: list[PageAudit], discovery: dict, ott
     write_md(reports_dir / "warnings.md", issue_md(audits, severe=False))
     write_json(reports_dir / "page-quality-scores.json", [{"path": a.path, **a.score} for a in audits])
     write_csv(reports_dir / "page-quality-scores.csv", [{"path": a.path, "page_type": a.page_type, **a.score} for a in audits])
-    write_md(reports_dir / "site-health.md", site_health_md(audits, discovery, otto, applied, mode))
+    write_md(reports_dir / "site-health.md", site_health_md(audits, discovery, otto, applied, mode, gsc))
     write_md(reports_dir / "top-100-fixes.md", top_fixes_md(audits))
     write_md(reports_dir / "manual-review-needed.md", manual_review_md(audits))
     write_md(reports_dir / "revenue-priorities.md", revenue_priorities_md(audits))
@@ -1010,11 +1010,12 @@ def issue_md(audits: list[PageAudit], severe: bool) -> str:
     return f"# {title}\n\n" + ("\n".join(rows[:300]) if rows else "No issues found.\n")
 
 
-def site_health_md(audits: list[PageAudit], discovery: dict, otto: dict, applied: list[dict], mode: str) -> str:
+def site_health_md(audits: list[PageAudit], discovery: dict, otto: dict, applied: list[dict], mode: str, gsc: dict | None = None) -> str:
     avg = average_scores(audits)
     level = health_level(avg["overall"])
     healthy = sum(1 for a in audits if a.score["overall"] >= 85)
     unhealthy = sum(1 for a in audits if a.score["overall"] < 55)
+    gsc_status = "connected" if gsc and not gsc.get("skipped") else (gsc or {}).get("reason", gsc_skip_reason())
     return f"""# SaaSpare SEO Helper Health Dashboard
 
 Generated: {now_iso()}
@@ -1037,7 +1038,7 @@ Mode: `{mode}`
 - Unhealthy pages (<55): {unhealthy}
 - OTTO import rows normalized: {otto.get('count', 0)}
 - Safe fixes applied this run: {len(applied)}
-- GSC: {gsc_skip_reason()}
+- GSC: {gsc_status}
 - Cerebras AI suggestions: {"enabled" if "CEREBRAS_API_KEY" in os.environ else "skipped; CEREBRAS_API_KEY missing"}
 
 ## Fastest Path To 70
@@ -1475,13 +1476,17 @@ def has_gsc_credentials() -> bool:
         and os.environ.get("GSC_OAUTH_CLIENT_ID")
         and os.environ.get("GSC_OAUTH_CLIENT_SECRET")
     )
-    return has_oauth or bool(os.environ.get("GSC_SERVICE_ACCOUNT_JSON") or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON"))
+    return has_oauth or bool(
+        os.environ.get("GSC_SERVICE_ACCOUNT_JSON")
+        or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
+        or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+    )
 
 
 def gsc_skip_reason() -> str:
     if has_gsc_credentials():
         return "credentials detected; live API pull enabled"
-    return "skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls"
+    return "skipped; add GSC OAuth secrets, service account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls"
 
 
 def run(mode: str, only: str | None) -> int:

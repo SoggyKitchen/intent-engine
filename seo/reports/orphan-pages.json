@@ -157,5 +157,32 @@
       "inbound": [],
       "outbound": []
     }
+  },
+  {
+    "path": "/pages/buyer-type-alternatives",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/contact",
+        "/deal-radar",
+        "/deal-radar?intent=trial",
+        "/methodology",
+        "/pages/",
+        "/pages/coupon-verification-policy",
+        "/pages/how-saaspare-ranks-tools",
+        "/pages/report-outdated-pricing",
+        "/pages/request-a-comparison",
+        "/pages/saas-roi-calculator",
+        "/privacy",
+        "/shortlist",
+        "/shortlist.html",
+        "/shortlist?team=agency",
+        "/shortlist?team=enterprise",
+        "/shortlist?team=startup"
+      ]
+    }
   }
 ]

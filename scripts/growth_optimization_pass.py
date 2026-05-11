@@ -6,6 +6,7 @@ import re
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -169,6 +170,58 @@ def path_url(path: Path) -> str:
     if rel == "index":
         rel = ""
     return "/" + rel
+
+
+def local_page_from_url(url_or_path: str) -> Path | None:
+    value = (url_or_path or "").strip()
+    if not value:
+        return None
+    if value.startswith("http"):
+        parsed = urlparse(value)
+        value = parsed.path or "/"
+    if not value.startswith("/"):
+        value = "/" + value
+    value = value.split("?", 1)[0].split("#", 1)[0]
+    candidates: list[Path] = []
+    if value in {"/", "/index", "/index.html"}:
+        candidates.append(SITE / "index.html")
+    elif value.startswith("/pages/"):
+        stem = value.removeprefix("/pages/")
+        candidates.append(PAGES / (stem if stem.endswith(".html") else f"{stem}.html"))
+    else:
+        stem = value.strip("/")
+        candidates.extend([
+            SITE / (stem if stem.endswith(".html") else f"{stem}.html"),
+            PAGES / (stem if stem.endswith(".html") else f"{stem}.html"),
+        ])
+    for candidate in candidates:
+        if candidate.exists() and candidate.suffix == ".html":
+            return candidate
+    return None
+
+
+def live_gsc_opportunities() -> list[dict]:
+    report = REPORTS / "gsc-opportunities.json"
+    if not report.exists():
+        return []
+    try:
+        data = json.loads(read(report))
+    except json.JSONDecodeError:
+        return []
+    if data.get("skipped"):
+        return []
+    rows = data.get("opportunities", [])
+    if not isinstance(rows, list):
+        return []
+    enriched = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        page = local_page_from_url(str(row.get("page", "")))
+        if page is None:
+            continue
+        enriched.append({**row, "localPath": str(page)})
+    return enriched
 
 
 def build_title_meta(path: Path) -> tuple[str, str]:
@@ -382,6 +435,23 @@ def insert_pricing_module(html_text: str, tool: str, slug: str, can_affiliate: b
 
 def candidate_pages() -> list[Path]:
     pages = [p for p in PAGES.glob("*.html") if p.name != "index.html"]
+    selected: list[Path] = []
+    seen: set[Path] = set()
+    for row in live_gsc_opportunities():
+        path = Path(row["localPath"])
+        if path in seen:
+            continue
+        position = float(row.get("position", 0) or 0)
+        impressions = float(row.get("impressions", 0) or 0)
+        ctr = float(row.get("ctr", 1) or 0)
+        query = str(row.get("query", ""))
+        buyer_intent = re.search(r"\b(pricing|price|cost|free trial|trial|coupon|promo|discount|alternative|alternatives|vs|review|deal)\b", query + " " + path.stem, re.I)
+        if buyer_intent and impressions >= 10 and (8 <= position <= 30 or ctr < 0.02):
+            selected.append(path)
+            seen.add(path)
+        if len(selected) >= 50:
+            return selected
+
     priority = {
         "pricing": 0,
         "free_trial": 1,
@@ -403,7 +473,13 @@ def candidate_pages() -> list[Path]:
         pref = next((i for i, name in enumerate(preferred) if stem.startswith(name)), 99)
         return (priority.get(page_type(p), 9), pref, stem)
 
-    return sorted(pages, key=score)[:50]
+    for path in sorted(pages, key=score):
+        if path not in seen:
+            selected.append(path)
+            seen.add(path)
+        if len(selected) >= 50:
+            break
+    return selected
 
 
 def create_hidden_fee_detector() -> bool:
@@ -486,7 +562,22 @@ def write_reports(actions: dict) -> None:
     metadata_count = max(actions.get("metadata_pages", 0), len(actions.get("top50", [])))
     native_blocks = sum(read(p).count("data-native-intent") for p in PAGES.glob("*pricing-2026-plans-costs-what-you-actually-pay.html"))
     native_count = max(actions.get("ad_slots_removed", 0), native_blocks)
+    live_rows = live_gsc_opportunities()
     quickwins = []
+    for row in live_rows[:50]:
+        page = Path(row["localPath"])
+        title, desc = build_title_meta(page)
+        quickwins.append({
+            "path": path_url(page),
+            "query": row.get("query") or "(page rollup)",
+            "impressions": row.get("impressions", "?"),
+            "clicks": row.get("clicks", "?"),
+            "ctr": f"{float(row.get('ctr', 0) or 0) * 100:.1f}%",
+            "position": row.get("position", "?"),
+            "recommended_title": title,
+            "recommended_meta": desc,
+            "reason": row.get("recommendedAction", "Live GSC buyer-intent opportunity."),
+        })
     for item in KNOWN_GSC_OPPORTUNITIES:
         quickwins.append(item)
     for p in actions["top50"]:
@@ -509,7 +600,7 @@ def write_reports(actions: dict) -> None:
         "",
         "Baseline used: GA4 Apr 21-May 11 = 247 active users / 100 key events; GSC last 28 days = 36 clicks / 8.45K impressions / 0.4% CTR / 19.1 avg position.",
         "",
-        "Live GSC credentials were not present in the local run, so this report combines the latest user-provided baseline, previously exported Windsor/GSC opportunities, and a local buyer-intent priority scan. When `GSC_SERVICE_ACCOUNT_JSON` is available, `npm run seo:agent -- --mode=audit --only=gsc` should replace the proxy rows with live API data.",
+        ("Live GSC API data is connected and is being used first." if live_rows else "Live GSC data is not available in this run, so this report combines the latest user-provided baseline, previously exported Windsor/GSC opportunities, and a local buyer-intent priority scan. When `GSC_SERVICE_ACCOUNT_JSON` or `GOOGLE_APPLICATION_CREDENTIALS` is available, `npm run seo:agent -- --mode=audit --only=gsc` should replace the proxy rows with live API data."),
         "",
         "| Priority | Page | Query / intent | Impressions | CTR | Position | Action |",
         "| --- | --- | --- | ---: | --- | --- | --- |",

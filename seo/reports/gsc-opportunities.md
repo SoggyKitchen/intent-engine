@@ -1,6 +1,6 @@
 # GSC Opportunities
 
-Status: skipped; add GSC OAuth secrets or GSC service account JSON to enable live Search Console pulls
+Status: service account detected, but Search Console returned `403 insufficient permission`. Add `saaspare@saaspare.iam.gserviceaccount.com` to the `sc-domain:saaspare.org` property with Full permission.
 
 When credentials are available, this report prioritizes:
 - high impressions / low CTR pages

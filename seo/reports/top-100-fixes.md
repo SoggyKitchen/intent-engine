@@ -2,6 +2,7 @@
 
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f` (21.52/100): invalid_canonical, missing_meta, no_h1
 - `/fo-verify` (25.56/100): invalid_canonical, missing_meta, no_h1
+- `/pages/v3-preview-index` (64.09/100): missing_meta, missing_correction_cta, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/best-vpn-for-business-2026` (64.81/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/best-marketing-automation-software-2026` (65.34/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/best-video-conferencing-software-2026` (65.34/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
@@ -9,65 +10,66 @@
 - `/best-hr-software-2026` (65.86/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/best-seo-tools-2026` (66.0/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/best-crm-software-2026` (66.22/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/linear-vs-asana-which-is-better-in-2026` (66.5/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/linear-vs-clickup-which-is-better-in-2026` (66.51/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-box-which-is-better-in-2026` (66.52/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-dropbox-which-is-better-in-2026` (66.52/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-onedrive-which-is-better-in-2026` (66.52/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/linear-vs-jira-which-is-better-in-2026` (66.55/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/linear-vs-github-issues-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-vs-discord-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-vs-mattermost-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-vs-zoom-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-vs-freshdesk-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-vs-gorgias-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-vs-intercom-which-is-better-in-2026` (66.56/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/linear-vs-shortcut-which-is-better-in-2026` (66.58/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-1password-business-which-is-better-in-2026` (66.58/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-vs-google-drive-which-is-better-in-2026` (66.58/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/canva-vs-figma-which-is-better-in-2026` (66.62/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/canva-vs-piktochart-which-is-better-in-2026` (66.62/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/canva-vs-visme-which-is-better-in-2026` (66.62/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-vs-google-chat-which-is-better-in-2026` (66.62/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-vs-microsoft-teams-which-is-better-in-2026` (66.62/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-vs-help-scout-which-is-better-in-2026` (66.62/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026` (66.67/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/canva-vs-adobe-express-which-is-better-in-2026` (66.68/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/canva-vs-microsoft-designer-which-is-better-in-2026` (66.68/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-review-2026-is-it-worth-it-honest-verdict` (66.99/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-review-2026-is-it-worth-it-honest-verdict` (67.0/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-review-2026-is-it-worth-it-honest-verdict` (67.07/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/canva-review-2026-is-it-worth-it-honest-verdict` (67.11/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/miro-coupon-code-promo-codes-2026-verified-discounts` (68.21/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-coupon-code-promo-codes-2026-verified-discounts` (68.26/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-coupon-code-promo-codes-2026-verified-discounts` (68.31/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
-- `/pages/slack-coupon-code-promo-codes-2026-verified-discounts` (68.39/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/v3-preview-homepage` (66.98/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/stripe-pricing-history-2026` (68.44/100): broken_internal_link, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/canva-coupon-code-promo-codes-2026-verified-discounts` (68.47/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, thin_buyer_page
-- `/pages/miro-vs-figma-figjam-which-is-better-in-2026` (68.59/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/miro-vs-lucidspark-which-is-better-in-2026` (68.59/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/miro-vs-mural-which-is-better-in-2026` (68.59/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/miro-vs-google-jamboard-which-is-better-in-2026` (68.65/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/miro-vs-microsoft-whiteboard-which-is-better-in-2026` (68.65/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/7-best-miro-alternatives-in-2026-free-paid` (68.96/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/7-best-canva-alternatives-in-2026-free-paid` (68.97/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/7-best-slack-alternatives-in-2026-free-paid` (68.99/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (69.0/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/miro-review-2026-is-it-worth-it-honest-verdict` (69.09/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-free-trial-2026-how-to-get-it-step-by-step` (72.06/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-free-trial-2026-how-to-get-it-step-by-step` (72.11/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/slack-free-trial-2026-how-to-get-it-step-by-step` (72.13/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/canva-free-trial-2026-how-to-get-it-step-by-step` (72.14/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/v3-preview-contact` (61.8/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-newsletter` (62.8/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/best-project-management-software-2026` (72.94/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/ramp-pricing-history-2026` (73.0/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages
+- `/pages/v3-preview-about` (63.61/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/affiliate-disclosure` (73.94/100): broken_internal_link
-- `/pages/miro-free-trial-2026-how-to-get-it-step-by-step` (74.12/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
-- `/pages/miro-pricing-2026-plans-costs-what-you-actually-pay` (76.82/100): broken_internal_link, missing_correction_cta, missing_related_pages, thin_buyer_page
-- `/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay` (76.87/100): broken_internal_link, missing_correction_cta, missing_related_pages, thin_buyer_page
-- `/pages/canva-pricing-2026-plans-costs-what-you-actually-pay` (76.88/100): broken_internal_link, missing_correction_cta, missing_related_pages, thin_buyer_page
-- `/pages/slack-pricing-2026-plans-costs-what-you-actually-pay` (76.9/100): broken_internal_link, missing_correction_cta, missing_related_pages, thin_buyer_page
-- `/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay` (76.92/100): broken_internal_link, missing_correction_cta, missing_related_pages, thin_buyer_page
+- `/pages/v3-preview-shortlist` (63.97/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-roi-calculator` (65.75/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-404` (66.26/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-deal-radar` (66.48/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/buyer-type-alternatives` (68.61/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
 - `/` (79.5/100): broken_internal_link, missing_correction_cta, missing_related_pages
+- `/pages/slack-coupon-code-promo-codes-2026-verified-discounts` (80.59/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-vs-box-which-is-better-in-2026` (80.8/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-vs-dropbox-which-is-better-in-2026` (80.8/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/slack-vs-discord-which-is-better-in-2026` (80.83/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-vs-freshdesk-which-is-better-in-2026` (80.83/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/slack-vs-zoom-which-is-better-in-2026` (80.84/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-vs-1password-business-which-is-better-in-2026` (80.84/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/linear-vs-shortcut-which-is-better-in-2026` (80.86/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/miro-vs-mural-which-is-better-in-2026` (80.86/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-vs-google-drive-which-is-better-in-2026` (80.86/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/miro-vs-lucidspark-which-is-better-in-2026` (80.88/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/canva-vs-figma-which-is-better-in-2026` (80.9/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-vs-help-scout-which-is-better-in-2026` (80.91/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/miro-vs-google-jamboard-which-is-better-in-2026` (80.92/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/canva-vs-microsoft-designer-which-is-better-in-2026` (80.95/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026` (80.95/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/linear-vs-asana-which-is-better-in-2026` (81.25/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/linear-vs-clickup-which-is-better-in-2026` (81.26/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-vs-onedrive-which-is-better-in-2026` (81.27/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-review-2026-is-it-worth-it-honest-verdict` (81.27/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/linear-vs-github-issues-which-is-better-in-2026` (81.31/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/linear-vs-jira-which-is-better-in-2026` (81.31/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/slack-vs-mattermost-which-is-better-in-2026` (81.31/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-vs-gorgias-which-is-better-in-2026` (81.31/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-vs-intercom-which-is-better-in-2026` (81.31/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/miro-vs-figma-figjam-which-is-better-in-2026` (81.33/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/canva-vs-visme-which-is-better-in-2026` (81.36/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/slack-vs-google-chat-which-is-better-in-2026` (81.37/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/miro-vs-microsoft-whiteboard-which-is-better-in-2026` (81.38/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/canva-vs-piktochart-which-is-better-in-2026` (81.39/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/miro-coupon-code-promo-codes-2026-verified-discounts` (81.4/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/slack-vs-microsoft-teams-which-is-better-in-2026` (81.43/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/canva-vs-adobe-express-which-is-better-in-2026` (81.45/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-coupon-code-promo-codes-2026-verified-discounts` (81.46/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-coupon-code-promo-codes-2026-verified-discounts` (81.52/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/canva-coupon-code-promo-codes-2026-verified-discounts` (81.66/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-review-2026-is-it-worth-it-honest-verdict` (81.71/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/slack-review-2026-is-it-worth-it-honest-verdict` (81.81/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/miro-review-2026-is-it-worth-it-honest-verdict` (81.83/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/canva-review-2026-is-it-worth-it-honest-verdict` (81.84/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/7-best-miro-alternatives-in-2026-free-paid` (82.04/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/7-best-canva-alternatives-in-2026-free-paid` (82.05/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/7-best-slack-alternatives-in-2026-free-paid` (82.09/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (82.09/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/v3-preview-library` (72.89/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-affiliate-disclosure` (73.06/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/ramp-pricing-history-2026` (83.25/100): broken_internal_link, missing_correction_cta
 - `/pages/linear-pricing-history-2026` (74.74/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/asana-pricing-history-2026` (74.75/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/shopify-pricing-history-2026` (74.79/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
@@ -81,22 +83,20 @@
 - `/pages/clickup-pricing-history-2026` (75.09/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/pipedrive-pricing-history-2026` (75.12/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/salesforce-pricing-history-2026` (75.12/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-privacy` (75.19/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-comparison` (75.22/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/hubspot-pricing-history-2026` (75.38/100): missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/saas-pricing-index` (86.0/100): broken_internal_link, title_length_outside_target
+- `/pages/miro-free-trial-2026-how-to-get-it-step-by-step` (86.41/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-free-trial-2026-how-to-get-it-step-by-step` (86.78/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-free-trial-2026-how-to-get-it-step-by-step` (86.85/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, thin_buyer_page
+- `/pages/slack-free-trial-2026-how-to-get-it-step-by-step` (86.87/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, thin_buyer_page
+- `/pages/canva-free-trial-2026-how-to-get-it-step-by-step` (86.88/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, thin_buyer_page
 - `/pages/free-trial-database` (87.0/100): broken_internal_link
 - `/privacy` (79.56/100): meta_length_outside_target
+- `/pages/best-infrastructure-as-code-and-cloud-cost-tools-for-aws-in-2025` (90.0/100): broken_internal_link, meta_length_outside_target, title_length_outside_target
+- `/pages/miro-pricing-2026-plans-costs-what-you-actually-pay` (90.91/100): broken_internal_link, thin_buyer_page
+- `/pages/canva-pricing-2026-plans-costs-what-you-actually-pay` (90.97/100): broken_internal_link, thin_buyer_page
 - `/pages/affilae-vs-post-affiliate-pro-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
 - `/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devops-tools-for-2025-glimmung-octowatch-twelve-data-and-muga-compared` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-open-source-object-storage-alternatives-to-minio-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-open-source-object-storage-solutions-in-2025-minio-alternatives-compared` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-b2b-financial-research-platforms-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/greenhouse-vs-remote-com-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/leaddyno-vs-affilae-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/leaddyno-vs-post-affiliate-pro-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/partnerstack-vs-affilae-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/partnerstack-vs-leaddyno-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/partnerstack-vs-post-affiliate-pro-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
-- `/pages/partnerstack-vs-tune-which-is-better-in-2026` (91.0/100): broken_internal_link, title_length_outside_target
+- `/pages/best-cloud-infrastructure-tools-for-secure-compliant-devops-in-2025` (91.0/100): broken_internal_link, title_length_outside_target
