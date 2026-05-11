@@ -1153,6 +1153,7 @@ def load_gsc_opportunities(config: dict) -> dict:
         oauth_client_id = os.environ.get("GSC_OAUTH_CLIENT_ID")
         oauth_client_secret = os.environ.get("GSC_OAUTH_CLIENT_SECRET")
         credentials_source = os.environ.get("GSC_SERVICE_ACCOUNT_JSON") or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
+        authorized_user_source = os.environ.get("GSC_AUTHORIZED_USER_JSON")
         credentials_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
         if oauth_refresh and oauth_client_id and oauth_client_secret:
             credentials = OAuthCredentials(
@@ -1166,9 +1167,20 @@ def load_gsc_opportunities(config: dict) -> dict:
         elif credentials_source:
             credentials_json = decode_possible_base64(credentials_source)
             info = json.loads(credentials_json)
-            credentials = service_account.Credentials.from_service_account_info(info, scopes=scopes)
+            if info.get("type") == "authorized_user":
+                credentials = OAuthCredentials.from_authorized_user_info(info, scopes=scopes)
+            else:
+                credentials = service_account.Credentials.from_service_account_info(info, scopes=scopes)
+        elif authorized_user_source:
+            credentials_json = decode_possible_base64(authorized_user_source)
+            info = json.loads(credentials_json)
+            credentials = OAuthCredentials.from_authorized_user_info(info, scopes=scopes)
         elif credentials_path:
-            credentials = service_account.Credentials.from_service_account_file(credentials_path, scopes=scopes)
+            info = json.loads(Path(credentials_path).read_text(encoding="utf-8"))
+            if info.get("type") == "authorized_user":
+                credentials = OAuthCredentials.from_authorized_user_info(info, scopes=scopes)
+            else:
+                credentials = service_account.Credentials.from_service_account_info(info, scopes=scopes)
         else:
             return {"skipped": True, "reason": gsc_skip_reason(), "opportunities": []}
 
@@ -1479,6 +1491,7 @@ def has_gsc_credentials() -> bool:
     return has_oauth or bool(
         os.environ.get("GSC_SERVICE_ACCOUNT_JSON")
         or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
+        or os.environ.get("GSC_AUTHORIZED_USER_JSON")
         or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
     )
 
@@ -1486,7 +1499,7 @@ def has_gsc_credentials() -> bool:
 def gsc_skip_reason() -> str:
     if has_gsc_credentials():
         return "credentials detected; live API pull enabled"
-    return "skipped; add GSC OAuth secrets, service account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls"
+    return "skipped; add GSC OAuth secrets, authorized-user JSON, service-account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls"
 
 
 def run(mode: str, only: str | None) -> int:
