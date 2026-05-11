@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-10T20:40:46+00:00",
-  "html_files_scanned": 1204,
-  "files_changed": 104,
+  "generated_at": "2026-05-11T01:55:38+00:00",
+  "html_files_scanned": 1205,
+  "files_changed": 106,
   "changes": [
     {
       "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
@@ -269,6 +269,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-devtools-for-b2b-engineering-teams-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -280,6 +285,11 @@
     },
     {
       "path": "site/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-modernizing-legacy-apps-and-api-drift-detection-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
