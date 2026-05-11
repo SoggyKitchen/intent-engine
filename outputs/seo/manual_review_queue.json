@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-11T12:51:22+00:00",
+  "generated_at_utc": "2026-05-11T13:59:17+00:00",
   "mode": "apply",
   "pages_flagged": 38,
   "claim_labels_seen": [
@@ -91,7 +91,7 @@
           "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp. The migration process typically takes"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
