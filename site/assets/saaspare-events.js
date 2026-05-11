@@ -25,9 +25,21 @@
 if(window.__saaspareEv)return;
 window.__saaspareEv=1;
 
+var aliases={
+  affiliate_click:['affiliate_outbound_click'],
+  try_free_click:['pricing_cta_click'],
+  coupon_claim_click:['pricing_cta_click'],
+  compare_click:['compare_alternative_click'],
+  shortlist_start:['shortlist_builder_start'],
+  shortlist_complete:['shortlist_builder_complete']
+};
+
 function fire(name, params){
   if(typeof gtag==='function'){
     try{ gtag('event', name, params||{}); }catch(e){}
+    (aliases[name]||[]).forEach(function(alias){
+      try{ gtag('event', alias, params||{}); }catch(e){}
+    });
   }
 }
 
@@ -62,7 +74,8 @@ function linkIntent(a){
   var text=((a.textContent||'')+' '+(a.getAttribute('data-cta')||'')).toLowerCase();
   if(/start free|free trial|claim trial|try free|try for free/.test(text))return 'try_free';
   if(/verify coupon|get coupon|claim code|verify code|get discount|claim offer/.test(text))return 'coupon_claim';
-  if(/compare now|see comparison|view comparison|compare plans|side-by-side/.test(text))return 'compare';
+  if(/compare now|see comparison|view comparison|compare plans|side-by-side|alternative/.test(text))return 'compare';
+  if(/deal radar|find deal|find offer/.test(text))return 'deal_radar';
   if(/book demo|contact sales|request demo/.test(text))return 'book_demo';
   if(/build shortlist|save shortlist|add to shortlist/.test(text))return 'shortlist';
   if(/calculate roi|run roi|start roi/.test(text))return 'roi_calc';
@@ -81,6 +94,7 @@ document.addEventListener('click',function(e){
   var host='';
   try{host=new URL(a.href,location.href).hostname;}catch(e){}
   var intent=linkIntent(a);
+  var track=(a.getAttribute('data-track')||'').toLowerCase();
   var affiliate=isAff(a);
   var inRelated=!!(a.closest('[data-seo-related]'));
   var base={
@@ -99,10 +113,16 @@ document.addEventListener('click',function(e){
   if(intent==='try_free')  fire('try_free_click',  Object.assign({value:2,currency:'USD'}, base));
   if(intent==='coupon_claim') fire('coupon_claim_click', Object.assign({value:1,currency:'USD'}, base));
   if(intent==='compare') fire('compare_click', base);
+  if(intent==='deal_radar') fire('deal_radar_click', base);
   if(intent==='book_demo') fire('demo_click', Object.assign({value:5,currency:'USD'}, base));
   if(intent==='shortlist') fire('shortlist_start', Object.assign({value:2,currency:'USD'}, base));
   if(intent==='roi_calc') fire('roi_calc_start', base);
   if(inRelated) fire('related_next_step_click', base);
+  if(track==='pricing_cta') fire('pricing_cta_click', Object.assign({value:2,currency:'USD'}, base));
+  if(track==='compare_alternative') fire('compare_alternative_click', base);
+  if(track==='deal_radar_click') fire('deal_radar_click', base);
+  if(track==='shortlist_builder_start') fire('shortlist_builder_start', base);
+  if(track==='shortlist_builder_complete') fire('shortlist_builder_complete', base);
 
   if(a.classList&&(a.classList.contains('nav-cta')||a.classList.contains('btn')||a.classList.contains('btn-primary')||a.classList.contains('cta-big'))){
     fire('cta_click', {cta_text:(a.textContent||'').trim().slice(0,80), page_path:location.pathname});
