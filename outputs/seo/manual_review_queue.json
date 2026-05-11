@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-11T08:24:32+00:00",
+  "generated_at_utc": "2026-05-11T12:51:22+00:00",
   "mode": "apply",
-  "pages_flagged": 40,
+  "pages_flagged": 38,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -76,6 +76,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "amp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp.</p> </details> <details c"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp. The migration process typically takes"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -186,22 +202,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-smartsheet-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "fort to set up and configure the new tool. Monday.com offers a free trial and a 14-day money-back guarantee, making it a low-risk option to try out.</p> </details> <details c"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "fort to set up and configure the new tool. Monday.com offers a free trial and a 14-day money-back guarantee, making it a low-risk option to try out. However, the migration process may sti"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/mailchimp-vs-brevo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -254,22 +254,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ine-height:1.8\">Switching from Todoist to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial. However, setting up Monday.com may require some time and effo"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
@@ -613,17 +597,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/asana-vs-monday-com-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "export your data and set up a new account. Asana also offers a free trial and a 30-day money-back guarantee, making it a low-risk choice for teams looking to switch.</p> </div> <di"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026.html",
