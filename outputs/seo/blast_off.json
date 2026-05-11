@@ -1,78 +1,16 @@
 {
   "current_month": "May 2026",
   "today": "2026-05-11",
-  "titles_rewritten": 52,
-  "descs_rewritten": 139,
-  "dates_refreshed": 2,
-  "answers_added": 92,
-  "files_changed": 140,
+  "titles_rewritten": 0,
+  "descs_rewritten": 0,
+  "dates_refreshed": 0,
+  "answers_added": 0,
+  "files_changed": 0,
   "files_scanned": 1174,
-  "title_examples": [
-    {
-      "file": "1password-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "1password Pricing 2026: Hidden Fees, Plans &amp; True Cost",
-      "after": "1password Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "activecampaign-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Activecampaign Pricing 2026: Hidden Fees, Plans &amp; True Cost",
-      "after": "Activecampaign Pricing 2026 (Tested May) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "ahrefs-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Ahrefs Pricing 2026: Hidden Fees, Plans &amp; True Cost",
-      "after": "Ahrefs Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "amplitude-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Amplitude Pricing 2026: Hidden Fees, Plans &amp; True Cost",
-      "after": "Amplitude Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "asana-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Asana Free Trial 2026: Length, Limits &amp; Card Rules",
-      "after": "Asana Free Trial 2026: How to Get the Full May 2026 Offer"
-    },
-    {
-      "file": "asana-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Asana Pricing 2026: Hidden Fees, Plans &amp; True Cost",
-      "after": "Asana Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
-    }
-  ],
-  "desc_examples": [
-    {
-      "file": "1password-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "1password pricing in 2026: compare advertised plan prices, likely hidden costs, trial limits and cheaper alternatives before you buy.",
-      "after": "Updated May 2026. 1password pricing in 2026: compare advertised plan prices, likely hidden costs, trial limits and cheaper alternatives before you buy Real\u2026"
-    },
-    {
-      "file": "7-best-adp-alternatives-in-2026-free-paid.html",
-      "before": "Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested alternatives\u2026"
-    },
-    {
-      "file": "7-best-aws-alternatives-in-2026-free-paid.html",
-      "before": "Find the best AWS alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best AWS alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested alternatives\u2026"
-    },
-    {
-      "file": "7-best-bamboohr-alternatives-in-2026-free-paid.html",
-      "before": "Find the best BambooHR alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best BambooHR alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    },
-    {
-      "file": "7-best-bigcommerce-alternatives-in-2026-free-paid.html",
-      "before": "Find the best BigCommerce alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best BigCommerce alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    },
-    {
-      "file": "7-best-cisco-anyconnect-alternatives-in-2026-free-paid.html",
-      "before": "Find the best Cisco Anyconnect alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
-      "after": "Updated May 2026. Find the best Cisco Anyconnect alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
-    }
-  ],
+  "title_examples": [],
+  "desc_examples": [],
   "indexnow": {
-    "submitted": 140,
-    "status": 200
+    "submitted": 0,
+    "skipped_reason": "no urls"
   }
 }
