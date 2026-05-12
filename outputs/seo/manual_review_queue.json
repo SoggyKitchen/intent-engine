@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-12T11:53:51+00:00",
+  "generated_at_utc": "2026-05-12T17:07:36+00:00",
   "mode": "apply",
-  "pages_flagged": 42,
+  "pages_flagged": 45,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -76,6 +76,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ou can switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "asecamp to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, migrating data from Basecamp to Monday.com may require some manual ef"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -191,12 +207,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "can switch from Smartsheet to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the tool before committing.</p> </details>"
+          "context": "eet to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "rtsheet to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, migrating data from Smartsheet to Monday.com may require some effort,"
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. Smartsheet also offers a"
         }
       ],
       "trust_state_bumped": true
@@ -240,17 +256,17 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "nge of pricing plans, starting at $49/year for a single site. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
+          "context": "ricing:</strong> Rankmath Pro offers a basic plan starting at $49/month, with a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a free plan. However, they do offer a 14-day free trial. Rankmath Pro offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+          "context": "plan. However, Frase.io offers a 14-day free trial, while Rankmath Pro offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "nge of pricing plans, starting at $49/year for a single site. They also offer a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Frase.io</h2>"
+          "context": "g at $299/month. Rankmath Pro offers a basic plan starting at $49/month, with a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Frase.io</h2>"
         }
       ],
       "trust_state_bumped": true
@@ -277,17 +293,17 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/riverside-fm-vs-descript-which-is-better-in-2026.html",
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ript to Riverside.fm is relatively easy. Riverside.fm offers a free trial and a 14-day money-back guarantee, making it a low-risk choice for teams that want to try out the platform.</p>"
+          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ript to Riverside.fm is relatively easy. Riverside.fm offers a free trial and a 14-day money-back guarantee, making it a low-risk choice for teams that want to try out the platform. The o"
+          "context": "Todoist to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, migrating data from Todoist to Monday.com may require some setup and"
         }
       ],
       "trust_state_bumped": true
@@ -386,6 +402,28 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/webex-vs-riverside-fm-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "w platform and potentially migrating your data. Webex offers a free trial and a 30-day money-back guarantee, making it easy to try out the platform before committing to a purchase.</p>"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
+      "path": "site/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ng content and re-import it into Jasper AI. Jasper AI offers a free trial and a 14-day money-back guarantee, making it a low-risk choice for businesses that want to try out its features.<"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/gumroad-vs-stripe-which-is-better-in-2026.html",
@@ -499,17 +537,12 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-jira-which-is-better-in-2026.html",
+      "path": "site/pages/copy-ai-vs-writesonic-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ossible to switch from Jira to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "some effort to migrate data and workflows. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. Additionally, Monday.com"
+          "context": "the new platform and migrating your content. Copy.ai offers a free trial and a 14-day money-back guarantee, making it easier to try out the platform before committing to a purchase.</p>"
         }
       ],
       "trust_state_bumped": true
@@ -630,12 +663,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": ", you can switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
+          "context": "ike to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "m Wrike to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, you may need to export data from Wrike and import it into Monday.com,"
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. Wrike also offers a free"
         }
       ],
       "trust_state_bumped": true
