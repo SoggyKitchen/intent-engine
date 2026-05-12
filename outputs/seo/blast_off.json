@@ -1,16 +1,68 @@
 {
   "current_month": "May 2026",
   "today": "2026-05-12",
-  "titles_rewritten": 0,
-  "descs_rewritten": 0,
+  "titles_rewritten": 4,
+  "descs_rewritten": 91,
   "dates_refreshed": 0,
-  "answers_added": 0,
-  "files_changed": 0,
-  "files_scanned": 1174,
-  "title_examples": [],
-  "desc_examples": [],
+  "answers_added": 91,
+  "files_changed": 91,
+  "files_scanned": 1175,
+  "title_examples": [
+    {
+      "file": "copy-ai-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Copy.ai Promo Codes & Discounts 2026 | SaaSpare",
+      "after": "Copy.ai Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "copy-ai-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Copy.ai Pricing 2026: Plans & Costs | SaaSpare",
+      "after": "Copy.ai Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "monday-com-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Monday.com Promo Codes & Discounts 2026 | SaaSpare",
+      "after": "Monday.com Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Monday.com Pricing 2026: Plans, Costs, & Hidden Fees Explained | SaaSpare",
+      "after": "Monday.com Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
+    }
+  ],
+  "desc_examples": [
+    {
+      "file": "7-best-adp-alternatives-in-2026-free-paid.html",
+      "before": "Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
+      "after": "Updated May 2026. Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested alternatives\u2026"
+    },
+    {
+      "file": "7-best-aws-alternatives-in-2026-free-paid.html",
+      "before": "Find the best AWS alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
+      "after": "Updated May 2026. Find the best AWS alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested alternatives\u2026"
+    },
+    {
+      "file": "7-best-bamboohr-alternatives-in-2026-free-paid.html",
+      "before": "Find the best BambooHR alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
+      "after": "Updated May 2026. Find the best BambooHR alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
+    },
+    {
+      "file": "7-best-bigcommerce-alternatives-in-2026-free-paid.html",
+      "before": "Find the best BigCommerce alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
+      "after": "Updated May 2026. Find the best BigCommerce alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
+    },
+    {
+      "file": "7-best-cisco-anyconnect-alternatives-in-2026-free-paid.html",
+      "before": "Find the best Cisco Anyconnect alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
+      "after": "Updated May 2026. Find the best Cisco Anyconnect alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
+    },
+    {
+      "file": "7-best-crowdstrike-alternatives-in-2026-free-paid.html",
+      "before": "Find the best Crowdstrike alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence.",
+      "after": "Updated May 2026. Find the best Crowdstrike alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence Tested\u2026"
+    }
+  ],
   "indexnow": {
-    "submitted": 0,
-    "skipped_reason": "no urls"
+    "submitted": 91,
+    "status": 200
   }
 }
