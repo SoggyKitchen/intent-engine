@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-12T09:50:23+00:00",
+  "generated_at_utc": "2026-05-12T10:10:34+00:00",
   "mode": "apply",
   "pages_flagged": 40,
   "claim_labels_seen": [
@@ -73,22 +73,6 @@
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
           "context": ",255,.65);font-size:.92rem;line-height:1.8\">Pipedrive offers a free trial and a 14-day money-back guarantee, making it easy to try out their CRM software. Close also offers a free trial a"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test and transition to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "ching from Frase.io to Ahrefs is relatively easy, with a 7-day free trial and a 7-day money-back guarantee. However, setting up Ahrefs can take some time, especially for those without pr"
         }
       ],
       "trust_state_bumped": false
@@ -235,32 +219,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "nge of pricing plans, starting at $59/year for a single site. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "e plan. However, Frase.io offers a 14-day free trial, and Rankmath Pro offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "$59/year. Frase.io also offers a 14-day free trial, while Rankmath Pro offers a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Frase.io</h2>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "offers a 14-day free trial to help you get started, while Rankmath Pro offers a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/clickup-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
@@ -280,6 +238,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "Todoist to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, migrating data and setting up workflows may require some time and eff"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
@@ -393,6 +367,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-trello-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "llo to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 30-day money-back guarantee, so you can try it out and see if it's a good fit for your team.</p> </deta"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 30-day money-back guarantee, so you can try it out and see if it's a good fit for your team. Trello also of"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
       "claims": [
         {
@@ -483,17 +473,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "it easy to switch from ClickUp to Asana. ClickUp also offers a free trial and a 30-day money-back guarantee, making it easy to switch from Asana to ClickUp. However, Asana's onboarding pr"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/surfer-seo-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ys, depending on the size of your dataset. Surfer SEO offers a free trial and a 30-day money-back guarantee, so you can try it risk-free before committing to a purchase.</p> </div>"
         }
       ],
       "trust_state_bumped": false
@@ -607,6 +586,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": ", you can switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": ";line-height:1.8\">Switching from Wrike to Monday.com is relatively easy, with a 14-day money-back guarantee and robust integrations through Zapier. Onboarding time is typically 1-2 weeks,"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",

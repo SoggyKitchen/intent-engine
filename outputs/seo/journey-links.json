@@ -1,9 +1,22 @@
 {
-  "generated_at_utc": "2026-05-12T09:50:17+00:00",
+  "generated_at_utc": "2026-05-12T10:10:29+00:00",
   "pages_scanned": 1177,
   "index_size": 188,
   "brands_covered": 69,
-  "pages_updated": 0,
+  "pages_updated": 103,
   "mode": "apply",
-  "sample_change": null
+  "sample_change": {
+    "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
+    "page_type": "comparison",
+    "brands": [
+      "copy-ai",
+      "openai-api"
+    ],
+    "links_added": [
+      "Copy.ai pricing breakdown",
+      "Copy.ai coupons &amp; deals",
+      "Build a free shortlist",
+      "Run the SaaS ROI calculator"
+    ]
+  }
 }
