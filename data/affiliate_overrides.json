@@ -509,5 +509,26 @@
       "ElevenLabs products"
     ],
     "imported_at": "2026-05-12T00:00:00Z"
+  },
+  {
+    "name": "Semrush",
+    "aliases": [
+      "Semrush SEO",
+      "Semrush One",
+      "Semrush Trial"
+    ],
+    "advertiser": "Semrush",
+    "affiliate_url": "https://semrush.sjv.io/c/7269601/3367878/13053",
+    "homepage": "https://www.semrush.com",
+    "network": "impact",
+    "vertical": "seo_tools",
+    "commission": "$300 per sale + $10 per qualified trial",
+    "commission_pct": 0,
+    "recurring": false,
+    "category": "SEO Software",
+    "description": "Semrush One 7-day trial tracking link from Impact. Use for organic content, email, and site CTAs; avoid self-referrals or non-compliant promotion.",
+    "trial_bounty_usd": 10,
+    "sale_commission_usd": 300,
+    "imported_at": "2026-05-12T00:00:00Z"
   }
 ]

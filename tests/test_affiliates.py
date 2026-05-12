@@ -6,7 +6,7 @@ from publisher.affiliate_registry import get_all_redirects, get_go_url
 
 def test_go_redirects_use_affiliate_urls():
     redirects = get_all_redirects()
-    assert redirects["semrush"] == "https://www.semrush.com"
+    assert redirects["semrush"] == "https://semrush.sjv.io/c/7269601/3367878/13053"
     assert get_go_url("Semrush") == "/go/semrush"
 
 
