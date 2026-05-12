@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-12T17:07:31+00:00",
+  "generated_at": "2026-05-12T21:14:48+00:00",
   "html_files_scanned": 1209,
-  "files_changed": 105,
+  "files_changed": 104,
   "changes": [
     {
       "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
@@ -480,11 +480,6 @@
     },
     {
       "path": "site/pages/7-best-zoom-alternatives-in-2026-free-paid.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-infrastructure-as-code-and-cloud-cost-tools-for-aws-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
