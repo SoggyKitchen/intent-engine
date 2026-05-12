@@ -484,5 +484,30 @@
     "epc_7d": "N/A",
     "source_file": "data\\affiliate-imports\\links (5).csv",
     "imported_at": "2026-05-01T13:20:37Z"
+  },
+  {
+    "name": "ElevenLabs",
+    "aliases": [
+      "Eleven Labs",
+      "ElevenLabs AI",
+      "ElevenLabs Voice"
+    ],
+    "advertiser": "ElevenLabs",
+    "affiliate_url": "https://try.elevenlabs.io/i2it5u0kkasf",
+    "homepage": "https://elevenlabs.io",
+    "network": "partnerstack",
+    "vertical": "ai_ml_tools",
+    "commission": "PartnerStack affiliate program",
+    "commission_pct": 0,
+    "recurring": false,
+    "category": "AI Voice Generator",
+    "description": "ElevenLabs PartnerStack affiliate tracking link. Paid search on ElevenLabs product terms is restricted by the program terms.",
+    "paid_search_restricted": true,
+    "restricted_terms": [
+      "ElevenLabs",
+      "Eleven Labs",
+      "ElevenLabs products"
+    ],
+    "imported_at": "2026-05-12T00:00:00Z"
   }
 ]
