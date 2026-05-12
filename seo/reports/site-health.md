@@ -1,17 +1,17 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-05-11T14:17:15+00:00
+Generated: 2026-05-12T09:06:28+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **96.21/100**
+- Overall SaaSpare Health Score: **96.24/100**
 - Level: **Elite SEO/revenue engine**
-- Technical SEO: 19.1/20
+- Technical SEO: 19.09/20
 - Content usefulness: 19.5/20
-- Trust/E-E-A-T: 19.54/20
-- Internal linking: 14.07/15
-- Schema/indexability: 9.76/10
-- Conversion/revenue: 9.23/10
+- Trust/E-E-A-T: 19.57/20
+- Internal linking: 14.08/15
+- Schema/indexability: 9.75/10
+- Conversion/revenue: 9.25/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
@@ -20,7 +20,7 @@ Mode: `audit`
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
-- GSC: service account detected, but Search Console returned `403 insufficient permission`. Add `saaspare@saaspare.iam.gserviceaccount.com` to the `sc-domain:saaspare.org` property with Full permission.
+- GSC: skipped; add GSC OAuth secrets, authorized-user JSON, service-account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
 ## Fastest Path To 70
@@ -52,19 +52,19 @@ Mode: `audit`
 - `/best-crm-software-2026` (66.22/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/v3-preview-homepage` (66.98/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/stripe-pricing-history-2026` (68.44/100): broken_internal_link, missing_methodology, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-contact` (61.8/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-newsletter` (62.8/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/best-project-management-software-2026` (72.94/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-about` (63.61/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/affiliate-disclosure` (73.94/100): broken_internal_link
-- `/pages/v3-preview-shortlist` (63.97/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-roi-calculator` (65.75/100): missing_correction_cta, missing_last_verified, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/v3-preview-404` (66.26/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-deal-radar` (66.48/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/buyer-type-alternatives` (68.61/100): missing_correction_cta, missing_last_verified, missing_related_pages, thin_buyer_page
+- `/pages/v3-preview-contact` (68.8/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/` (79.5/100): broken_internal_link, missing_correction_cta, missing_related_pages
+- `/pages/v3-preview-newsletter` (69.81/100): missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-shortlist` (70.47/100): meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/slack-coupon-code-promo-codes-2026-verified-discounts` (80.59/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, thin_buyer_page
-- `/pages/tresorit-vs-box-which-is-better-in-2026` (80.8/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/slack-vs-mattermost-which-is-better-in-2026` (80.83/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/linear-vs-shortcut-which-is-better-in-2026` (80.86/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/tresorit-vs-google-drive-which-is-better-in-2026` (80.86/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-vs-gorgias-which-is-better-in-2026` (80.86/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/zendesk-vs-intercom-which-is-better-in-2026` (80.86/100): broken_internal_link, missing_correction_cta, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 94.0): CTA=True, affiliateLinks=1, disclosure=True

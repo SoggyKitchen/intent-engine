@@ -14,5 +14,3 @@
 - Duplicate title: `Best Surfer SEO Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-surfer-seo-alternatives-in-2026-free-paid, /pages/best-surfer-seo-alternatives-in-2026-free-paid
 - Duplicate title: `Best Xero Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-xero-alternatives-in-2026-free-paid, /pages/best-xero-alternatives-in-2026-free-paid
 - Duplicate title: `Best Zoom Alternatives 2026: Free & Paid Options | SaaSpare` -> /pages/7-best-zoom-alternatives-in-2026-free-paid, /pages/best-zoom-alternatives-in-2026-free-paid
-- Duplicate title: `Monday.com Promo Codes & Discounts 2026 | SaaSpare` -> /pages/monday-com-coupon-code-promo-codes-2026-verified-discounts, /pages/monday-com-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate meta: `Find working Monday.com promo codes and discounts for 2026. Verified deals, annual plan sa` -> /pages/monday-com-coupon-code-promo-codes-2026-verified-discounts, /pages/monday-com-promo-code-2026-discounts-deals-that-actually-work

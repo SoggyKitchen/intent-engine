@@ -1,5 +1,5 @@
 {
   "opportunities": [],
-  "reason": "service account detected, but Search Console returned 403 insufficient permission. Add saaspare@saaspare.iam.gserviceaccount.com to the sc-domain:saaspare.org property with Full permission.",
+  "reason": "skipped; add GSC OAuth secrets, authorized-user JSON, service-account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls",
   "skipped": true
 }

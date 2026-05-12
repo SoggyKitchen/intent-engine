@@ -6,7 +6,7 @@
 - `/pages/7-best-miro-alternatives-in-2026-free-paid`: CTA=False, sticky=True, email=True, disclosure=True
 - `/pages/7-best-slack-alternatives-in-2026-free-paid`: CTA=False, sticky=True, email=True, disclosure=True
 - `/pages/7-best-zendesk-alternatives-in-2026-free-paid`: CTA=False, sticky=True, email=True, disclosure=True
-- `/pages/buyer-type-alternatives`: CTA=True, sticky=True, email=False, disclosure=False
+- `/pages/buyer-type-alternatives`: CTA=True, sticky=True, email=True, disclosure=False
 - `/pages/canva-coupon-code-promo-codes-2026-verified-discounts`: CTA=False, sticky=True, email=True, disclosure=True
 - `/pages/canva-review-2026-is-it-worth-it-honest-verdict`: CTA=False, sticky=True, email=True, disclosure=True
 - `/pages/canva-vs-adobe-express-which-is-better-in-2026`: CTA=False, sticky=True, email=True, disclosure=True
