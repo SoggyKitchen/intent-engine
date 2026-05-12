@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-12T10:10:34+00:00",
+  "generated_at_utc": "2026-05-12T11:53:51+00:00",
   "mode": "apply",
-  "pages_flagged": 40,
+  "pages_flagged": 42,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -186,6 +186,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-smartsheet-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "can switch from Smartsheet to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the tool before committing.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "rtsheet to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, migrating data from Smartsheet to Monday.com may require some effort,"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/mailchimp-vs-brevo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -219,6 +235,27 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "nge of pricing plans, starting at $49/year for a single site. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "a free plan. However, they do offer a 14-day free trial. Rankmath Pro offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "nge of pricing plans, starting at $49/year for a single site. They also offer a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Frase.io</h2>"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/clickup-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
@@ -240,17 +277,17 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "path": "site/pages/riverside-fm-vs-descript-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
+          "context": "ript to Riverside.fm is relatively easy. Riverside.fm offers a free trial and a 14-day money-back guarantee, making it a low-risk choice for teams that want to try out the platform.</p>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "Todoist to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, migrating data and setting up workflows may require some time and eff"
+          "context": "ript to Riverside.fm is relatively easy. Riverside.fm offers a free trial and a 14-day money-back guarantee, making it a low-risk choice for teams that want to try out the platform. The o"
         }
       ],
       "trust_state_bumped": true
@@ -367,22 +404,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-trello-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "llo to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 30-day money-back guarantee, so you can try it out and see if it's a good fit for your team.</p> </deta"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 30-day money-back guarantee, so you can try it out and see if it's a good fit for your team. Trello also of"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
       "claims": [
         {
@@ -476,6 +497,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-jira-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ossible to switch from Jira to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "some effort to migrate data and workflows. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. Additionally, Monday.com"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/google-meet-vs-webex-which-is-better-in-2026.html",
@@ -598,7 +635,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": ";line-height:1.8\">Switching from Wrike to Monday.com is relatively easy, with a 14-day money-back guarantee and robust integrations through Zapier. Onboarding time is typically 1-2 weeks,"
+          "context": "m Wrike to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, you may need to export data from Wrike and import it into Monday.com,"
         }
       ],
       "trust_state_bumped": true
