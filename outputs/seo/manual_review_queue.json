@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-13T06:32:48+00:00",
+  "generated_at_utc": "2026-05-13T07:52:28+00:00",
   "mode": "apply",
-  "pages_flagged": 40,
+  "pages_flagged": 39,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -83,15 +83,46 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "amp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp.</p> </details> <details c"
+          "context": "ble to switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp. The migration process typically takes"
+          "context": "eams due to its simplicity and ease of use. However, Monday.com's free plan and 14-day money-back guarantee make it a great option for small teams to test and switch to their platform.</p"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ion, reporting, and integration with other tools. Monday.com's 24/7 support and 14-day money-back guarantee make it a great option for teams that need a reliable and flexible platform.</p"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "possible, but it may require some effort. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. However, it's recommended"
         }
       ],
-      "trust_state_bumped": false
+      "trust_state_bumped": true
+    },
+    {
+      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test their features and pricing plans.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "offers a free plan. However, Frase.io offers a free trial, and Ahrefs offers a 7-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": ".8\">Switching from Frase.io to Ahrefs is relatively easy, with a free trial and 7-day money-back guarantee. However, migrating data and setting up Ahrefs may take some time and effort, e"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -230,17 +261,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "<td><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</strong></td>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "and effort to set up and migrate your data. Frase.io offers a free trial and a 14-day money-back guarantee, making it a low-risk option for teams looking to upgrade their SEO tools.</p>"
         }
       ],
       "trust_state_bumped": false
@@ -578,22 +598,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "infrastructure and may incur additional costs. However, both solutions offer a 30-day money-back guarantee, so you can try them out risk-free before committing to a purchase.</p> </di"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ike to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike.</p> </details> <details clas"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike. The onboarding process typically takes 1-"
         }
       ],
       "trust_state_bumped": false
