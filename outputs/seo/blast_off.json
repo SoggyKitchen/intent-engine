@@ -1,11 +1,11 @@
 {
   "current_month": "May 2026",
-  "today": "2026-05-12",
+  "today": "2026-05-13",
   "titles_rewritten": 4,
-  "descs_rewritten": 91,
-  "dates_refreshed": 0,
-  "answers_added": 91,
-  "files_changed": 91,
+  "descs_rewritten": 90,
+  "dates_refreshed": 1041,
+  "answers_added": 90,
+  "files_changed": 1129,
   "files_scanned": 1175,
   "title_examples": [
     {
@@ -62,7 +62,7 @@
     }
   ],
   "indexnow": {
-    "submitted": 91,
+    "submitted": 200,
     "status": 200
   }
 }
