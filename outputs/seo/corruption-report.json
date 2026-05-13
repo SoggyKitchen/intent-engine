@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-12T21:14:48+00:00",
+  "generated_at": "2026-05-13T01:58:23+00:00",
   "html_files_scanned": 1209,
-  "files_changed": 104,
+  "files_changed": 103,
   "changes": [
     {
       "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
@@ -320,11 +320,6 @@
     },
     {
       "path": "site/pages/greenhouse-vs-remote-com-which-is-better-in-2026.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/monday-com-review-2026-is-it-worth-it-honest-verdict.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
