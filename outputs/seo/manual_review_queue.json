@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-13T07:52:28+00:00",
+  "generated_at_utc": "2026-05-13T11:59:50+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 43,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -88,38 +88,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "eams due to its simplicity and ease of use. However, Monday.com's free plan and 14-day money-back guarantee make it a great option for small teams to test and switch to their platform.</p"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ion, reporting, and integration with other tools. Monday.com's 24/7 support and 14-day money-back guarantee make it a great option for teams that need a reliable and flexible platform.</p"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "possible, but it may require some effort. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. However, it's recommended"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
-      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test their features and pricing plans.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "offers a free plan. However, Frase.io offers a free trial, and Ahrefs offers a 7-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": ".8\">Switching from Frase.io to Ahrefs is relatively easy, with a free trial and 7-day money-back guarantee. However, migrating data and setting up Ahrefs may take some time and effort, e"
+          "context": "asecamp to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, migrating data from Basecamp to Monday.com may require some effort an"
         }
       ],
       "trust_state_bumped": true
@@ -242,6 +211,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/impact-com-vs-rewardful-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "/tr> <tr> <td><strong>Free Trial</strong></td> <td>14-day money-back guarantee</td><td>14-day free trial</td> </tr> <tr> <td><stron"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ffiliate programs, starting at $1,000/month. They also offer a free trial and a 14-day money-back guarantee.</p> <a href=\"/go/impact-com?utm_source=saaspare&utm_medium=affiliate&"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/twingate-vs-zscaler-which-is-better-in-2026.html",
@@ -398,6 +383,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-trello-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "to set up and migrate your data. However, Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free.</p> </div> <div class=\"section\"> <"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
       "claims": [
         {
@@ -472,6 +468,27 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/impact-com-vs-post-affiliate-pro-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "om also offers a free trial, while Post Affiliate Pro offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use impact.com</h2>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "and re-importing it into the new platform. impact.com offers a free trial and a 30-day money-back guarantee, while Post Affiliate Pro offers a free trial and a 30-day money-back guarantee"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "30-day money-back guarantee, while Post Affiliate Pro offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
       "claims": [
         {
@@ -528,6 +545,17 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-notion-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "of your workflows and databases. However, Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free.</p> </div> <div class=\"section\"> <"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
@@ -601,6 +629,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan. Wrike"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
