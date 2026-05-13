@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-13T17:12:32+00:00",
+  "generated_at": "2026-05-13T21:20:48+00:00",
   "html_files_scanned": 1212,
-  "files_changed": 106,
+  "files_changed": 104,
   "changes": [
     {
       "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
@@ -80,11 +80,6 @@
     },
     {
       "path": "site/pages/7-best-adp-alternatives-in-2026-free-paid.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-cloud-infrastructure-tools-for-2025-terraform-opentofu-and-more.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -385,11 +380,6 @@
     },
     {
       "path": "site/pages/7-best-lastpass-alternatives-in-2026-free-paid.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-saas-analytics-tools-for-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },

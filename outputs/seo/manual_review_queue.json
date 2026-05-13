@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-13T17:12:39+00:00",
+  "generated_at_utc": "2026-05-13T21:20:55+00:00",
   "mode": "apply",
-  "pages_flagged": 41,
+  "pages_flagged": 44,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -78,22 +78,17 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
+      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ble to switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
+          "snippet": "7-day money-back guarantee",
+          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "e of use and comprehensive set of features. However, Monday.com's free plan and 14-day money-back guarantee make it a good option for small teams to test and switch to their platform.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. Data export options are a"
+          "snippet": "7-day money-back guarantee",
+          "context": "ching from Frase.io to Ahrefs is relatively easy, with a 7-day free trial and a 7-day money-back guarantee. However, migrating data from Frase.io to Ahrefs may require some manual effort"
         }
       ],
       "trust_state_bumped": true
@@ -240,6 +235,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "and effort to set up and migrate your data. Frase.io offers a free trial and a 14-day money-back guarantee, so you can try it risk-free.</p> </div> <div class=\"section\"> <h2>E"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/clickup-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
@@ -266,12 +272,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
+          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ine-height:1.8\">Switching from Todoist to Monday.com is relatively easy, with a 14-day money-back guarantee and a comprehensive knowledge base. Monday.com offers a free trial and a dedica"
+          "context": "odoist to Monday.com is relatively easy, as both tools offer a free trial and a 14-day money-back guarantee. Monday.com's onboarding process typically takes 1-2 weeks, while Todoist's onb"
         }
       ],
       "trust_state_bumped": true
@@ -393,7 +399,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ay.com to meet your team's needs. However, Monday.com offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free.</p> </div> <div class=\"section\"> <"
+          "context": "nd effort to set up and migrate your data. Monday.com offers a free trial and a 14-day money-back guarantee, making it a risk-free option for teams that want to try it out.</p> </div>"
         }
       ],
       "trust_state_bumped": true
@@ -473,6 +479,47 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/impact-com-vs-post-affiliate-pro-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "prises, with a minimum of $10,000 per month. They also offer a free trial and a 30-day money-back guarantee.</p> <a href=\"/go/impact-com?utm_source=saaspare&utm_medium=affiliate&"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "pricing plans, starting at $97 per month for the Basic plan. They also offer a 30-day money-back guarantee.</p> <a href=\"https://www.postaffiliatepro.com?utm_source=saaspare&utm"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "m Post Affiliate Pro to impact.com?</summary> <p>Yes, impact.com offers a 30-day money-back guarantee and a free trial, making it easy to switch from Post Affiliate Pro.</p> </d"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "Affiliate Pro's pricing plans start at $97 per month. impact.com also offers a 30-day money-back guarantee and a free trial, while Post Affiliate Pro offers a 30-day money-back guarantee"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "30-day money-back guarantee and a free trial, while Post Affiliate Pro offers a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use impact.com</h2>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "lor:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8\">impact.com offers a 30-day money-back guarantee and a free trial, making it easy to switch from Post Affiliate Pro. Post Affili"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ing it easy to switch from Post Affiliate Pro. Post Affiliate Pro also offers a 30-day money-back guarantee, but the migration process may take longer due to the complexity of impact.com'"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
       "claims": [
         {
@@ -535,13 +582,18 @@
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does SE"
+          "snippet": "14-day money-back guarantee",
+          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 14-day money-back guarantee, making it easy to test the tool and see if it's a good fit for your team.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">SE Ranking offers a free trial and a 14-day money-back guarantee, making it easy to test the tool and see if it's a good fit for your team. Fras"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "e:.92rem;line-height:1.8\">SE Ranking and Frase.io both offer a free trial and a 30-day money-back guarantee. This makes it easy to switch between the two tools and test their features bef"
+          "context": "if it's a good fit for your team. Frase.io also offers a free trial, but with a 30-day money-back guarantee. Migration from Frase.io to SE Ranking is relatively easy, with data exports av"
         }
       ],
       "trust_state_bumped": true
@@ -618,6 +670,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the tool and see if it's a good fit for your team.</"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the tool and see if it's a good fit for your team. T"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
