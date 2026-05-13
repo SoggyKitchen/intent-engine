@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T11:59:43+00:00",
-  "html_files_scanned": 1211,
+  "generated_at": "2026-05-13T17:12:32+00:00",
+  "html_files_scanned": 1212,
   "files_changed": 106,
   "changes": [
     {
@@ -49,11 +49,6 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
-      "path": "site/pages/best-devtools-for-oss-library-management-in-2025.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
       "path": "site/pages/7-best-freshbooks-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -85,6 +80,11 @@
     },
     {
       "path": "site/pages/7-best-adp-alternatives-in-2026-free-paid.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cloud-infrastructure-tools-for-2025-terraform-opentofu-and-more.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -389,6 +389,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-saas-analytics-tools-for-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/copy-ai-vs-hugging-face-which-is-better-in-2026.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -475,11 +480,6 @@
     },
     {
       "path": "site/pages/7-best-bigcommerce-alternatives-in-2026-free-paid.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-devtools-for-ai-agent-development-in-2025-ollama-vs-openclaw-vs-omlx.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
