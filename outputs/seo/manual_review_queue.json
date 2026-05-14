@@ -1,10 +1,11 @@
 {
-  "generated_at_utc": "2026-05-14T07:40:45+00:00",
+  "generated_at_utc": "2026-05-14T11:36:36+00:00",
   "mode": "apply",
   "pages_flagged": 41,
   "claim_labels_seen": [
     "money_back_guarantee",
-    "refund_policy_numeric"
+    "refund_policy_numeric",
+    "sla_guarantee"
   ],
   "pages": [
     {
@@ -62,6 +63,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/zoom-vs-riverside-fm-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "sla_guarantee",
+          "snippet": "99.9% uptime SLA",
+          "context": "<div class=\"pros\"><h4>Pros</h4><ul><li>Enterprise-grade reliability with 99.9% uptime SLA</li><li>Extensive integrations with CRM, calendar, and productivity tools</li><"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/pipedrive-vs-close-which-is-better-in-2026.html",
       "claims": [
         {
@@ -76,22 +88,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ble to switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. Basecamp also offers a f"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -351,17 +347,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "otentially migrating your existing content. Jasper AI offers a free trial and a 14-day money-back guarantee, making it a low-risk choice for teams that want to try it out.</p> </div>"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/gumroad-vs-stripe-which-is-better-in-2026.html",
       "claims": [
         {
@@ -376,6 +361,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-trello-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "llo to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Trello.</p> </details> <details cla"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Trello. The onboarding process typically takes 1"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
@@ -510,22 +511,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/lever-vs-remote-com-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "om Remote.com to Lever?</summary> <p>Yes, Lever offers a free trial and a 14-day money-back guarantee, making it easy to switch.</p> </details> <details class=\"faq-item"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": ",255,255,.65);font-size:.92rem;line-height:1.8\">Lever offers a free trial and a 14-day money-back guarantee, making it easy to switch from Remote.com. Remote.com also offers a free trial,"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
       "claims": [
         {
@@ -550,6 +535,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/clearscope-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ou can switch from Frase.io to Clearscope. Clearscope offers a free trial and a 14-day money-back guarantee, making it easy to try out their features and see if they're a good fit for you"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Clearscope offers a free trial and a 14-day money-back guarantee, making it easy to try out their features and see if they're a good fit for you"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/notion-vs-basecamp-which-is-better-in-2026.html",
@@ -604,12 +605,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ike to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike.</p> </details> <details clas"
+          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike. Wrike also offers a free trial, but the m"
+          "context": "ke to Monday.com is relatively easy, as both platforms offer a free trial and a 14-day money-back guarantee. Monday.com also offers a robust onboarding process and dedicated support resou"
         }
       ],
       "trust_state_bumped": true
