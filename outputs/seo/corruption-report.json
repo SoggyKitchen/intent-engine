@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-15T16:39:17+00:00",
-  "html_files_scanned": 1215,
-  "files_changed": 104,
+  "generated_at": "2026-05-15T20:56:17+00:00",
+  "html_files_scanned": 1216,
+  "files_changed": 106,
   "changes": [
     {
       "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
@@ -224,6 +224,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-devtools-for-chrome-extension-developers-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/impact-com-vs-leaddyno-which-is-better-in-2026.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -430,6 +435,11 @@
     },
     {
       "path": "site/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-b2b-engineering-teams-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
