@@ -1,20 +1,17 @@
 {
-  "generated_at_utc": "2026-05-15T11:55:38+00:00",
+  "generated_at_utc": "2026-05-15T16:39:18+00:00",
   "pages_scanned": 1183,
   "index_size": 188,
   "brands_covered": 69,
   "pages_updated": 103,
   "mode": "apply",
   "sample_change": {
-    "path": "site/pages/copy-ai-vs-openai-api-which-is-better-in-2026.html",
-    "page_type": "comparison",
+    "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
+    "page_type": "alternatives",
     "brands": [
-      "copy-ai",
-      "openai-api"
+      "heroku"
     ],
     "links_added": [
-      "Copy.ai pricing breakdown",
-      "Copy.ai coupons &amp; deals",
       "Build a free shortlist",
       "Run the SaaS ROI calculator"
     ]
