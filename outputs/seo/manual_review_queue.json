@@ -1,11 +1,10 @@
 {
-  "generated_at_utc": "2026-05-14T21:14:15+00:00",
+  "generated_at_utc": "2026-05-15T01:59:04+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 41,
   "claim_labels_seen": [
     "money_back_guarantee",
-    "refund_policy_numeric",
-    "sla_guarantee"
+    "refund_policy_numeric"
   ],
   "pages": [
     {
@@ -61,17 +60,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/zoom-vs-riverside-fm-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "sla_guarantee",
-          "snippet": "99.9% uptime SLA",
-          "context": "<div class=\"pros\"><h4>Pros</h4><ul><li>Enterprise-grade reliability with 99.9% uptime SLA</li><li>Extensive integrations with CRM, calendar, and productivity tools</li><"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pipedrive-vs-close-which-is-better-in-2026.html",
@@ -231,17 +219,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "nge of pricing plans, starting at $59/year for a single site. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/clickup-vs-todoist-which-is-better-in-2026.html",
       "claims": [
         {
@@ -358,6 +335,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "otentially migrating your existing content. Jasper AI offers a free trial and a 14-day money-back guarantee, making it easier to try out the platform before committing.</p> </div>"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/gumroad-vs-stripe-which-is-better-in-2026.html",
       "claims": [
         {
@@ -372,6 +360,17 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "<td><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</strong></td"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
@@ -506,6 +505,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ing offers a 14-day free trial, while Frase.io offers a 14-day free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
       "claims": [
         {
@@ -577,6 +587,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ike to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike.</p> </details> <details clas"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "ke's paid plans start at $9.80/user/month. Both platforms offer free trials and money-back guarantees.</p> </div> <div class=\"section\"> <h2>Who Should Use Monday.com</h2"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": ";line-height:1.8\">Switching from Wrike to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial available. However, setting up Monday.com can take some time,"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
