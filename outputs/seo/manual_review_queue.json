@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-15T06:40:57+00:00",
+  "generated_at_utc": "2026-05-15T07:58:42+00:00",
   "mode": "apply",
-  "pages_flagged": 41,
+  "pages_flagged": 40,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -348,17 +348,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ing offers a 14-day free trial, while Frase.io offers a 14-day free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
       "claims": [
         {
@@ -375,17 +364,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "it easy to switch from ClickUp to Asana. ClickUp also offers a free trial and a 30-day money-back guarantee, making it easy to switch from Asana to ClickUp. However, Asana's onboarding pr"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "otentially migrating your existing content. Jasper AI offers a free trial and a 14-day money-back guarantee, making it easier to try out the platform before committing.</p> </div>"
         }
       ],
       "trust_state_bumped": false
@@ -418,27 +396,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "Drip offers a 14-day free trial, while Pardot offers a 14-day free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ike to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike.</p> </details> <details clas"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "ke's paid plans start at $9.80/user/month. Both platforms offer free trials and money-back guarantees.</p> </div> <div class=\"section\"> <h2>Who Should Use Monday.com</h2"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": ";line-height:1.8\">Switching from Wrike to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial available. However, setting up Monday.com can take some time,"
         }
       ],
       "trust_state_bumped": false
@@ -508,10 +465,10 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "<td><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</strong></td"
+          "context": "<td><strong>Money-Back</strong></td> <td>None, but free trial</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</strong></td"
         }
       ],
-      "trust_state_bumped": false
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pipedrive-vs-close-which-is-better-in-2026.html",
@@ -605,6 +562,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ible to switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "may require some setup and configuration. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. The onboarding process t"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
       "claims": [
         {
@@ -677,6 +650,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/around-vs-riverside-fm-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "can easily switch from Riverside.fm to Around. Around offers a free trial and a 14-day money-back guarantee, making it a low-risk choice.</p> </details> <details class=\"faq-i"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "side.fm to Around is easy and straightforward. Around offers a free trial and a 14-day money-back guarantee, making it a low-risk choice. Riverside.fm also offers a free trial and a 14-da"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "antee, making it a low-risk choice. Riverside.fm also offers a free trial and a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
     }
   ]
 }
