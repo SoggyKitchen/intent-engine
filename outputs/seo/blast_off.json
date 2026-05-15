@@ -1,12 +1,12 @@
 {
   "current_month": "May 2026",
-  "today": "2026-05-14",
+  "today": "2026-05-15",
   "titles_rewritten": 4,
   "descs_rewritten": 93,
-  "dates_refreshed": 1043,
+  "dates_refreshed": 1046,
   "answers_added": 93,
-  "files_changed": 1132,
-  "files_scanned": 1178,
+  "files_changed": 1135,
+  "files_scanned": 1181,
   "title_examples": [
     {
       "file": "copy-ai-coupon-code-promo-codes-2026-verified-discounts.html",
@@ -62,7 +62,7 @@
     }
   ],
   "indexnow": {
-    "submitted": 200,
-    "status": 200
+    "submitted": 0,
+    "error": "HTTP Error 403: Forbidden"
   }
 }
