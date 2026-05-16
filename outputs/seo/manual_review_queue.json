@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-16T10:59:45+00:00",
+  "generated_at_utc": "2026-05-16T15:53:28+00:00",
   "mode": "apply",
-  "pages_flagged": 37,
+  "pages_flagged": 40,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -401,6 +401,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a purchase.</p> <"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "m Wrike to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, teams may need to invest time in setting up custom workflows and inte"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
       "claims": [
         {
@@ -458,6 +474,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-smartsheet-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "eet to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet.</p> </details> <details"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet. The onboarding process typically tak"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pipedrive-vs-close-which-is-better-in-2026.html",
@@ -549,6 +581,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ible to switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing to a paid plan.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "witching from Todoist to Monday.com is relatively easy, with a free trial and a 14-day money-back guarantee. However, migrating data from Todoist to Monday.com may require some manual eff"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
