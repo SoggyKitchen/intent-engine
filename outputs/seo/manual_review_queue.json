@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-16T06:07:26+00:00",
+  "generated_at_utc": "2026-05-16T07:16:08+00:00",
   "mode": "apply",
-  "pages_flagged": 37,
+  "pages_flagged": 38,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -97,6 +97,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "kUp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from ClickUp.</p> </details> <details cl"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "witching from ClickUp to Monday.com is relatively easy, with a free trial and a 14-day money-back guarantee. However, migrating data from ClickUp to Monday.com may require some manual eff"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/saas-spend-audit.html",
