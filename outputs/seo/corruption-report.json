@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-17T15:55:29+00:00",
-  "html_files_scanned": 1221,
-  "files_changed": 104,
+  "generated_at": "2026-05-17T20:45:12+00:00",
+  "html_files_scanned": 1222,
+  "files_changed": 105,
   "changes": [
     {
       "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
@@ -315,6 +315,11 @@
     },
     {
       "path": "site/pages/7-best-jira-alternatives-in-2026-free-paid.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-ecommerce-optimization-tools-for-shopify-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },

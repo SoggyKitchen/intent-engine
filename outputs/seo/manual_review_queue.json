@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-17T15:55:35+00:00",
+  "generated_at_utc": "2026-05-17T20:45:19+00:00",
   "mode": "apply",
-  "pages_flagged": 41,
+  "pages_flagged": 40,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -113,6 +113,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/clearscope-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ou can switch from Frase.io to Clearscope. Clearscope offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Cle"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "es and pricing plans before committing to a paid plan. Clearscope also offers a 14-day money-back guarantee, while Frase.io does not offer a free plan or a money-back guarantee.</p> </d"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "s a 14-day money-back guarantee, while Frase.io does not offer a free plan or a money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/pipedrive-vs-zoho-crm-which-is-better-in-2026.html",
@@ -236,7 +257,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "you can export your data from Frase.io to import into Semrush. Semrush offers a 30-day money-back guarantee, and you can expect to spend around 1-2 hours setting up the tool.</p> </div>"
+          "context": "99/month, and a Business plan at $199/month. Both tools offer free trials and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Semrush</h2>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "s onboarding process is more comprehensive, with a dedicated support team and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
         }
       ],
       "trust_state_bumped": true
@@ -363,17 +389,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-trello-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "it's a relatively straightforward process. Monday.com offers a free trial and a 14-day money-back guarantee, so teams can try it out before committing to a purchase.</p> </div> <di"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -388,17 +403,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/impact-com-vs-post-affiliate-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "plan. However, impact.com offers a free trial, and Post Affiliate Pro offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
@@ -452,22 +456,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ike to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike.</p> </details> <details clas"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike. Wrike also offers a free trial, but the m"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
@@ -618,6 +606,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ible to switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and transition to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and transition to their platform. Todoist also offers a"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "o test and transition to their platform. Todoist also offers a free trial and a 30-day money-back guarantee. Both platforms offer comprehensive knowledge bases and community forums to hel"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
