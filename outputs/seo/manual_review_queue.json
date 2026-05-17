@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-17T07:38:02+00:00",
+  "generated_at_utc": "2026-05-17T11:05:24+00:00",
   "mode": "apply",
-  "pages_flagged": 37,
+  "pages_flagged": 38,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -399,6 +399,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-jira-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "it's generally a straightforward process. Monday.com offers a free trial and a 14-day money-back guarantee, while Jira offers a free trial and a 30-day money-back guarantee.</p> </div>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "e trial and a 14-day money-back guarantee, while Jira offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
