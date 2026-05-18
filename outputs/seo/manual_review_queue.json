@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-18T08:48:29+00:00",
+  "generated_at_utc": "2026-05-18T13:07:17+00:00",
   "mode": "apply",
-  "pages_flagged": 41,
+  "pages_flagged": 40,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -70,42 +70,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/impact-com-vs-refersion-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "large enterprises, starting at $1,500/month. They also offer a free trial and a 30-day money-back guarantee.</p> <a href=\"/go/impact-com?utm_source=saaspare&utm_medium=affiliate&"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "starting at $99/month for small businesses. They also offer a free trial and a 30-day money-back guarantee.</p> <a href=\"/go/refersion?utm_source=saaspare&utm_medium=affiliate&u"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<p>Yes, you can switch from Refersion to impact.com. Impact.com offers a 30-day money-back guarantee and a free trial to help you get started.</p> </details> <details"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "Refersion offers a free plan. However, both platforms offer a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "mall business plan starts at $99/month. Both platforms offer a free trial and a 30-day money-back guarantee. Impact.com's pricing plan is more expensive, but it offers more advanced featu"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "on to impact.com is relatively easy, as both platforms offer a free trial and a 30-day money-back guarantee. Impact.com also offers a dedicated onboarding team to help you get started. Re"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/notion-vs-basecamp-which-is-better-in-2026.html",
@@ -247,6 +211,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/rewardful-vs-post-affiliate-pro-which-is-better-in-2026.html",
       "claims": [
         {
@@ -368,6 +343,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "nge of pricing plans, starting at $49/year for a single site. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "a free plan, but Frase.io offers a 14-day free trial and Rankmath Pro offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -382,22 +373,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ou can switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "asecamp to Monday.com is relatively easy, thanks to Monday.com's free trial and 14-day money-back guarantee. However, migrating data from Basecamp to Monday.com may require some effort. T"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
@@ -451,48 +426,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-jira-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ossible to switch from Jira to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "migrate data and set up the new platform. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. Jira also offers a free"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "easy to test and migrate to their platform. Jira also offers a free trial and a 30-day money-back guarantee, making it easy to test and migrate to their platform.</p> </div> <div c"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
-      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "to set up and configure the new platform. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan. Wrike al"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "platform before committing to a paid plan. Wrike also offers a free trial and a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
@@ -643,6 +576,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ine-height:1.8\">Switching from Todoist to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial available. However, the migration process may take some time,"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
