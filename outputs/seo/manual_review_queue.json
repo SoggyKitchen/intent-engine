@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-18T13:07:17+00:00",
+  "generated_at_utc": "2026-05-18T17:30:28+00:00",
   "mode": "apply",
-  "pages_flagged": 40,
+  "pages_flagged": 37,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -211,17 +211,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/rewardful-vs-post-affiliate-pro-which-is-better-in-2026.html",
       "claims": [
         {
@@ -341,22 +330,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/frase-io-vs-rankmath-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "nge of pricing plans, starting at $49/year for a single site. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/rankmath-pro?utm_source=saaspare&utm_medium=affiliat"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "a free plan, but Frase.io offers a 14-day free trial and Rankmath Pro offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
@@ -576,22 +549,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ine-height:1.8\">Switching from Todoist to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial available. However, the migration process may take some time,"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
