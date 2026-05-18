@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-17T20:45:12+00:00",
-  "html_files_scanned": 1222,
-  "files_changed": 105,
+  "generated_at": "2026-05-18T02:07:01+00:00",
+  "html_files_scanned": 1224,
+  "files_changed": 108,
   "changes": [
     {
       "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
@@ -214,6 +214,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-ai-powered-analytics-tools-for-saas-teams-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-shopify-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -315,11 +320,6 @@
     },
     {
       "path": "site/pages/7-best-jira-alternatives-in-2026-free-paid.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-ecommerce-optimization-tools-for-shopify-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -434,6 +434,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -469,6 +474,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-devtools-for-b2b-software-development-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-mailchimp-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -495,6 +505,11 @@
     },
     {
       "path": "site/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cloud-infrastructure-tools-for-enterprise-grade-deployments-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
