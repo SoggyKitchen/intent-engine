@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-18T21:08:46+00:00",
-  "html_files_scanned": 1224,
-  "files_changed": 104,
+  "generated_at": "2026-05-19T02:14:56+00:00",
+  "html_files_scanned": 1227,
+  "files_changed": 108,
   "changes": [
     {
       "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
@@ -99,6 +99,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-saas-analytics-tools-for-2025-comparison-of-cohort-analysis-financial-insights-and-health-reporting.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-workday-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -130,6 +135,11 @@
     },
     {
       "path": "site/pages/clearscope-vs-frase-io-which-is-better-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devops-tooling-solutions-for-modern-b2b-software-teams-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -434,6 +444,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-devtools-for-frontend-developers-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-lastpass-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -490,6 +505,11 @@
     },
     {
       "path": "site/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cloud-infrastructure-tools-for-enterprise-grade-deployments-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },

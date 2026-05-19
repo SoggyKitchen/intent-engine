@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-18T21:08:53+00:00",
+  "generated_at_utc": "2026-05-19T02:15:02+00:00",
   "mode": "apply",
-  "pages_flagged": 41,
+  "pages_flagged": 39,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -348,43 +348,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does SE"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ase.io to SE Ranking is relatively easy, as both tools offer a free trial and a 30-day money-back guarantee. However, migrating data from Frase.io to SE Ranking may require some technical"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
-      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ble to switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the platform before committing to a paid plan. Basecamp"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "ting to a paid plan. Basecamp also offers a free trial, but it does not offer a money-back guarantee. In terms of migration and setup, Monday.com offers a range of resources and su"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
       "claims": [
         {
@@ -427,6 +390,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/riverside-fm-vs-descript-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ngs and re-setting up your integrations. Riverside.fm offers a free trial and a 14-day money-back guarantee, making it easy to try out the tool and see if it's a good fit for your team.</"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/pardot-vs-drip-which-is-better-in-2026.html",
       "claims": [
         {
@@ -443,17 +417,22 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ssible to switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
+          "context": "ike to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee. Wrike also offers a free trial and a 14-day money-back guarantee.</p> </de"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. Wrike also offers a free"
+          "context": "e trial and a 14-day money-back guarantee. Wrike also offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "test and switch to their platform. Wrike also offers a free trial, as well as a 14-day money-back guarantee. Both platforms offer robust integrations with popular tools, making it easy to"
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Wrike. Wrike also offers a free trial and a 14-d"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ntee, making it easy to switch from Wrike. Wrike also offers a free trial and a 14-day money-back guarantee. Additionally, both tools offer data exports and onboarding support to make the"
         }
       ],
       "trust_state_bumped": true
@@ -607,22 +586,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "Todoist to Monday.com is relatively easy, as both tools offer free trials and a 14-day money-back guarantee. However, it's worth noting that Monday.com has a steeper learning curve than T"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
