@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-19T12:40:42+00:00",
+  "generated_at_utc": "2026-05-19T17:42:50+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 37,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -460,22 +460,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/monday-com-vs-smartsheet-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "eet to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet.</p> </details> <details"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Smartsheet. The migration process typically take"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/pipedrive-vs-close-which-is-better-in-2026.html",
       "claims": [
         {
@@ -565,27 +549,6 @@
         }
       ],
       "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out their platform before committing to a paid plan.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out their platform before committing to a paid plan. Tod"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "atform before committing to a paid plan. Todoist also offers a free trial and a 30-day money-back guarantee. Migration from Todoist to Monday.com is relatively straightforward, but may re"
-        }
-      ],
-      "trust_state_bumped": true
     },
     {
       "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
