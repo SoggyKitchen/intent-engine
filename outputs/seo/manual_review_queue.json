@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-19T02:15:02+00:00",
+  "generated_at_utc": "2026-05-19T06:56:47+00:00",
   "mode": "apply",
   "pages_flagged": 39,
   "claim_labels_seen": [
@@ -398,7 +398,7 @@
           "context": "ngs and re-setting up your integrations. Riverside.fm offers a free trial and a 14-day money-back guarantee, making it easy to try out the tool and see if it's a good fit for your team.</"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/pardot-vs-drip-which-is-better-in-2026.html",
@@ -435,7 +435,7 @@
           "context": "ntee, making it easy to switch from Wrike. Wrike also offers a free trial and a 14-day money-back guarantee. Additionally, both tools offer data exports and onboarding support to make the"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
