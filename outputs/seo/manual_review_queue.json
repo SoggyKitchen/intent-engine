@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-19T17:42:50+00:00",
+  "generated_at_utc": "2026-05-19T21:18:31+00:00",
   "mode": "apply",
-  "pages_flagged": 37,
+  "pages_flagged": 39,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -348,6 +348,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 30-day money-back guarantee, making it easy to try out their features and support.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ng from Frase.io to SE Ranking is easy, as SE Ranking offers a free trial and a 30-day money-back guarantee. However, migrating data from Frase.io to SE Ranking may require some technical"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
       "claims": [
         {
@@ -367,6 +383,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/jasper-ai-vs-copy-ai-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "atform and migrating your existing content. Jasper AI offers a free trial and a 14-day money-back guarantee, while Copy.ai offers a free trial and a 30-day money-back guarantee.</p> </d"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "rial and a 14-day money-back guarantee, while Copy.ai offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Evaluation Criteria</h2> <"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/clickup-vs-todoist-which-is-better-in-2026.html",
