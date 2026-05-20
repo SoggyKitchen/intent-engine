@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-19T21:18:26+00:00",
-  "html_files_scanned": 1227,
-  "files_changed": 104,
+  "generated_at": "2026-05-20T02:04:48+00:00",
+  "html_files_scanned": 1230,
+  "files_changed": 108,
   "changes": [
     {
       "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
@@ -214,6 +214,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-ai-powered-analytics-tools-for-saas-teams-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-shopify-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -225,6 +230,11 @@
     },
     {
       "path": "site/pages/impact-com-vs-leaddyno-which-is-better-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cloud-infrastructure-tools-for-b2b-saas-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -324,6 +334,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-chrome-devtools-alternatives-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/7-best-zoom-alternatives-in-2026-free-paid.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -395,6 +410,11 @@
     },
     {
       "path": "site/pages/7-best-hubspot-alternatives-in-2026-free-paid.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-remote-development-automation-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
