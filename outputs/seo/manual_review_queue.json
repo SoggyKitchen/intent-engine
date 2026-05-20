@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-20T02:04:55+00:00",
+  "generated_at_utc": "2026-05-20T06:56:48+00:00",
   "mode": "apply",
   "pages_flagged": 39,
   "claim_labels_seen": [
@@ -441,7 +441,7 @@
           "context": "seamless import process. Some options, like LastPass, offer a free trial and a 30-day money-back guarantee to make the transition smoother.</p> </details> </div> <div c"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/amplitude-vs-databox-which-is-better-in-2026.html",
@@ -479,7 +479,7 @@
           "context": "potentially migrating your existing content. Copy.ai offers a free trial and a 14-day money-back guarantee, making it easier to try out the platform and see if it's a good fit for your b"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/pipedrive-vs-close-which-is-better-in-2026.html",
