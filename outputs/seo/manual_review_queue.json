@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-20T06:56:48+00:00",
+  "generated_at_utc": "2026-05-20T08:27:36+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 37,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -433,17 +433,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/7-best-1password-alternatives-in-2026-free-paid.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "seamless import process. Some options, like LastPass, offer a free trial and a 30-day money-back guarantee to make the transition smoother.</p> </details> </div> <div c"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/amplitude-vs-databox-which-is-better-in-2026.html",
       "claims": [
         {
@@ -466,17 +455,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "export process and minimal setup required. Mailchimp offers a free trial and a 30-day money-back guarantee, making it an excellent choice for businesses looking to try before they buy.</"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/copy-ai-vs-writesonic-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "potentially migrating your existing content. Copy.ai offers a free trial and a 14-day money-back guarantee, making it easier to try out the platform and see if it's a good fit for your b"
         }
       ],
       "trust_state_bumped": false
