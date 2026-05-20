@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-20T17:57:22+00:00",
+  "generated_at_utc": "2026-05-20T21:37:21+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 40,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -348,6 +348,22 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "amp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. Basecamp also offers a fr"
+        }
+      ],
+      "trust_state_bumped": true
+    },
+    {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
       "claims": [
         {
@@ -401,17 +417,17 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/mangools-vs-frase-io-which-is-better-in-2026.html",
+      "path": "site/pages/monday-com-vs-wrike-which-is-better-in-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s, you can switch from Frase.io to Mangools. Mangools offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Man"
+          "snippet": "14-day money-back guarantee",
+          "context": ", you can switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
         },
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "Frase.io to Mangools is relatively easy, as both tools offer a free trial and a 30-day money-back guarantee. However, setting up Mangools may require more time and effort due to its compr"
+          "snippet": "14-day money-back guarantee",
+          "context": ";line-height:1.8\">Switching from Wrike to Monday.com is relatively easy, with a 14-day money-back guarantee and a free trial. The onboarding process typically takes 1-2 weeks, depending o"
         }
       ],
       "trust_state_bumped": true
@@ -514,17 +530,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/asana-vs-monday-com-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s, but it's possible to do so with some effort. Asana offers a free trial and a 30-day money-back guarantee, making it a low-risk option for teams looking to switch.</p> </div> <di"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/pipedrive-coupon-code-promo-codes-2026-verified-discounts.html",
       "claims": [
         {
@@ -576,6 +581,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-todoist-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "you can switch from Todoist to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "Monday.com is relatively straightforward. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test the tool and see if it's a good fit for your team.</p>"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
