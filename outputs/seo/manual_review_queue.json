@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T02:05:15+00:00",
+  "generated_at_utc": "2026-05-21T07:01:05+00:00",
   "mode": "apply",
   "pages_flagged": 38,
   "claim_labels_seen": [
@@ -468,7 +468,7 @@
           "context": "<td><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</strong></td"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/pipedrive-vs-close-which-is-better-in-2026.html",
