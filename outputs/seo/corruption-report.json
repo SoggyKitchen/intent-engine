@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-20T21:37:14+00:00",
-  "html_files_scanned": 1230,
-  "files_changed": 104,
+  "generated_at": "2026-05-21T02:05:10+00:00",
+  "html_files_scanned": 1232,
+  "files_changed": 108,
   "changes": [
     {
       "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
@@ -20,6 +20,11 @@
     },
     {
       "path": "site/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cloud-infrastructure-tools-for-b2b-software-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -224,6 +229,11 @@
       "stale_trustbox_sentences_rewritten": 0
     },
     {
+      "path": "site/pages/best-devtools-for-chrome-extension-developers-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
       "path": "site/pages/impact-com-vs-leaddyno-which-is-better-in-2026.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
@@ -255,6 +265,11 @@
     },
     {
       "path": "site/pages/7-best-datadog-alternatives-in-2026-free-paid.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-database-and-infrastructure-management-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
@@ -490,6 +505,11 @@
     },
     {
       "path": "site/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025.html",
       "duplicate_brand_fragments": [],
       "stale_trustbox_sentences_rewritten": 0
     },
