@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1080" height="510" rx="20" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+  <text x="100" y="160" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="38" fill="#ffffff" opacity="0.85">SaaSpare</text>
+  <text x="100" y="200" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="20" fill="#ffffff" opacity="0.6">Design & Collaboration</text>
+  <text x="100" y="370" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="56" fill="#ffffff">Design & Collaboration</text>
+  <text x="100" y="430" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="24" fill="#ffffff" opacity="0.75">Real pricing. Honest comparisons. 2026 data.</text>
+  <text x="100" y="520" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="18" fill="#ffffff" opacity="0.5">Independent B2B SaaS Comparisons . No paid rankings</text>
+  <circle cx="1080" cy="100" r="30" fill="#ffffff" opacity="0.1"/>
+  <text x="1080" y="108" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="24" fill="#ffffff" text-anchor="middle">2026</text>
+</svg>

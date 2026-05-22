@@ -1,40 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#07070d"/>
-      <stop offset="100%" stop-color="#11111b"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#feca57"/>
-      <stop offset="100%" stop-color="#feca57" stop-opacity="0.6"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0f766e"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- subtle grid -->
-  <g opacity="0.04" stroke="#fff" stroke-width="1">
-    <path d="M0 100 L1200 100 M0 200 L1200 200 M0 300 L1200 300 M0 400 L1200 400 M0 500 L1200 500"/>
-    <path d="M100 0 L100 630 M300 0 L300 630 M500 0 L500 630 M700 0 L700 630 M900 0 L900 630 M1100 0 L1100 630"/>
-  </g>
-  <!-- accent stripe -->
-  <rect x="0" y="0" width="14" height="630" fill="url(#accent)"/>
-  <!-- label badge -->
-  <g transform="translate(80, 130)">
-    <rect width="200" height="40" rx="20" fill="#feca57" fill-opacity="0.16" stroke="#feca57" stroke-opacity="0.4"/>
-    <text x="100" y="26" text-anchor="middle" fill="#feca57" font-family="-apple-system,Segoe UI,sans-serif" font-size="16" font-weight="700" letter-spacing="2">SAASPARE.ORG</text>
-  </g>
-  <!-- main title -->
-  <text x="80" y="290" fill="#f4f4f8" font-family="-apple-system,Segoe UI,sans-serif" font-size="86" font-weight="800" letter-spacing="-2">Finance Operations</text>
-  <text x="80" y="380" fill="#888896" font-family="-apple-system,Segoe UI,sans-serif" font-size="44" font-weight="500">Real pricing. Honest verdict.</text>
-  <!-- footer -->
-  <g transform="translate(80, 500)">
-    <text x="0" y="40" fill="rgba(255,255,255,0.65)" font-family="-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="600">Independent B2B SaaS comparisons</text>
-    <text x="0" y="74" fill="rgba(255,255,255,0.4)" font-family="-apple-system,Segoe UI,sans-serif" font-size="18">1,000+ tools — no paid placements</text>
-  </g>
-  <!-- right side: accent shape -->
-  <g transform="translate(900, 220)">
-    <circle cx="100" cy="100" r="120" fill="#feca57" fill-opacity="0.08"/>
-    <circle cx="100" cy="100" r="80" fill="#feca57" fill-opacity="0.12"/>
-    <circle cx="100" cy="100" r="40" fill="#feca57" fill-opacity="0.2"/>
-  </g>
+  <rect x="60" y="60" width="1080" height="510" rx="20" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+  <text x="100" y="160" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="38" fill="#ffffff" opacity="0.85">SaaSpare</text>
+  <text x="100" y="200" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="20" fill="#ffffff" opacity="0.6">Finance & Spend</text>
+  <text x="100" y="370" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="56" fill="#ffffff">Finance & Spend</text>
+  <text x="100" y="430" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="24" fill="#ffffff" opacity="0.75">Real pricing. Honest comparisons. 2026 data.</text>
+  <text x="100" y="520" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="18" fill="#ffffff" opacity="0.5">Independent B2B SaaS Comparisons . No paid rankings</text>
+  <circle cx="1080" cy="100" r="30" fill="#ffffff" opacity="0.1"/>
+  <text x="1080" y="108" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="24" fill="#ffffff" text-anchor="middle">2026</text>
 </svg>
