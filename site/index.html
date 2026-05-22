@@ -544,7 +544,7 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
     <div class="vf vf-4"><span class="vf-dot green"></span><span class="vf-label">Linear</span>&nbsp;→&nbsp;Best dev UX, hands down</div>
   </div>
 
-  <div class="badge"><span class="badge-dot"></span>1215 comparisons live</div>
+  <div class="badge"><span class="badge-dot"></span>1233 comparisons live</div>
 
   <h1 class="hero-title">
     The honest guide to<br>
@@ -958,7 +958,7 @@ setTimeout(type,800);
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
-  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1215;
+  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1233;
   ['live-count','stat-pages'].forEach(id=>{const el=document.getElementById(id);if(el){el.dataset.count=n;el.textContent=n.toLocaleString()+(id==='stat-pages'?'+':'')}});
 }).catch(()=>{});
 
