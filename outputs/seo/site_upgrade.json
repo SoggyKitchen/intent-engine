@@ -1,10 +1,10 @@
 {
   "sitemap": {
-    "added_changefreq": 0
+    "added_changefreq": 1331
   },
   "homepage_changes": {},
-  "pages_processed": 1306,
+  "pages_processed": 1307,
   "pages_lazy_images_added": 0,
-  "pages_head_upgraded": 0,
-  "pages_exit_intent_added": 17
+  "pages_head_upgraded": 3,
+  "pages_exit_intent_added": 20
 }
