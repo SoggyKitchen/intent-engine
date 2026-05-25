@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-05-25T13:16:34+00:00",
+  "generated_at": "2026-05-25T13:19:32+00:00",
   "html_files_scanned": 1351,
-  "files_changed": 3,
-  "changes": [
-    {
-      "path": "site/pages/best-cybersecurity-tools-for-b2b-software-teams-in-2025.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-cloud-infrastructure-tools-for-b2b-saas-in-2025.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    },
-    {
-      "path": "site/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025.html",
-      "duplicate_brand_fragments": [],
-      "stale_trustbox_sentences_rewritten": 0
-    }
-  ]
+  "files_changed": 0,
+  "changes": []
 }
