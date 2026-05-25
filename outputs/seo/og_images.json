@@ -1,7 +1,10 @@
 {
   "svg_files": 16,
-  "pages_updated": 1,
+  "pages_updated": 42,
   "by_vertical": {
-    "project-mgmt": 1
+    "default": 34,
+    "dev-tools": 2,
+    "project-mgmt": 5,
+    "cloud": 1
   }
 }
