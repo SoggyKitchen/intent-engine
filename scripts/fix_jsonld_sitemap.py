@@ -136,7 +136,7 @@ def verify_jsonld():
             except json.JSONDecodeError as e:
                 bad.append((p.name, str(e)))
     if bad:
-        print(f"\n⚠  Still {len(bad)} invalid JSON-LD blocks:")
+        print(f"\nWARN: Still {len(bad)} invalid JSON-LD blocks:")
         for f, e in bad:
             print(f"  {f}: {e}")
     else:

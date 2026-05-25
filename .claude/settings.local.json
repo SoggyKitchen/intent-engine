@@ -42,7 +42,10 @@
       "WebFetch(domain:saasconsult.co)",
       "WebFetch(domain:bountyhunter.agency)",
       "WebFetch(domain:blastra.io)",
-      "WebFetch(domain:saasdatabase.net)"
+      "WebFetch(domain:saasdatabase.net)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\smith\\\\intent-engine\" -Recurse -Directory)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)"
     ]
   }
 }
