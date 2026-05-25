@@ -1,20 +1,9 @@
 {
-  "generated_at_utc": "2026-05-25T10:28:03+00:00",
+  "generated_at_utc": "2026-05-25T10:31:49+00:00",
   "pages_scanned": 1309,
   "index_size": 206,
   "brands_covered": 73,
-  "pages_updated": 14,
+  "pages_updated": 0,
   "mode": "apply",
-  "sample_change": {
-    "path": "site/pages/workable-review-2026-is-it-worth-it-honest-verdict.html",
-    "page_type": "review",
-    "brands": [
-      "workable"
-    ],
-    "links_added": [
-      "Workable pricing breakdown",
-      "Build a free shortlist",
-      "Run the SaaS ROI calculator"
-    ]
-  }
+  "sample_change": null
 }

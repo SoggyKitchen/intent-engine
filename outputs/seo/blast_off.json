@@ -1,78 +1,16 @@
 {
   "current_month": "May 2026",
   "today": "2026-05-25",
-  "titles_rewritten": 51,
-  "descs_rewritten": 52,
-  "dates_refreshed": 52,
-  "answers_added": 52,
-  "files_changed": 52,
+  "titles_rewritten": 0,
+  "descs_rewritten": 0,
+  "dates_refreshed": 0,
+  "answers_added": 0,
+  "files_changed": 0,
   "files_scanned": 1307,
-  "title_examples": [
-    {
-      "file": "activecampaign-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "ActiveCampaign Free Trial 2026: How to Start + What You Get | SaaSpare",
-      "after": "ActiveCampaign Free Trial 2026: How to Get the Full May 2026 Offer"
-    },
-    {
-      "file": "amplitude-coupon-2026-discount-codes-promo.html",
-      "before": "Amplitude Coupon Code 2026: Working Discounts &amp; Promo Codes | SaaSpare",
-      "after": "Amplitude Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "amplitude-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "Amplitude Free Trial 2026: How to Start + What You Get | SaaSpare",
-      "after": "Amplitude Free Trial 2026: How to Get the Full May 2026 Offer"
-    },
-    {
-      "file": "bamboohr-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "BambooHR Free Trial 2026: How to Start + What You Get | SaaSpare",
-      "after": "BambooHR Free Trial 2026: How to Get the Full May 2026 Offer"
-    },
-    {
-      "file": "bigcommerce-coupon-2026-discount-codes-promo.html",
-      "before": "BigCommerce Coupon Code 2026: Working Discounts &amp; Promo Codes | SaaSpare",
-      "after": "BigCommerce Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "bigcommerce-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "BigCommerce Free Trial 2026: How to Start + What You Get | SaaSpare",
-      "after": "BigCommerce Free Trial 2026: How to Get the Full May 2026 Offer"
-    }
-  ],
-  "desc_examples": [
-    {
-      "file": "activecampaign-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "ActiveCampaign free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff.",
-      "after": "Updated May 2026. ActiveCampaign free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff Step-by-step: get the\u2026"
-    },
-    {
-      "file": "amplitude-coupon-2026-discount-codes-promo.html",
-      "before": "Verified Amplitude discount codes and promo offers for 2026. Save on plans starting at $0/mo. Updated 2026-05-25.",
-      "after": "Updated May 2026. Verified Amplitude discount codes and promo offers for 2026. Save on plans starting at $0/mo. Updated 2026-05-25 Verified codes only \u2014 we test\u2026"
-    },
-    {
-      "file": "amplitude-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "Amplitude free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff.",
-      "after": "Updated May 2026. Amplitude free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff Step-by-step: get the full\u2026"
-    },
-    {
-      "file": "bamboohr-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "BambooHR free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff.",
-      "after": "Updated May 2026. BambooHR free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff Step-by-step: get the full\u2026"
-    },
-    {
-      "file": "bigcommerce-coupon-2026-discount-codes-promo.html",
-      "before": "Verified BigCommerce discount codes and promo offers for 2026. Save on plans starting at $39/mo. Updated 2026-05-25.",
-      "after": "Updated May 2026. Verified BigCommerce discount codes and promo offers for 2026. Save on plans starting at $39/mo. Updated 2026-05-25 Verified codes only \u2014 we\u2026"
-    },
-    {
-      "file": "bigcommerce-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "BigCommerce free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff.",
-      "after": "Updated May 2026. BigCommerce free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff Step-by-step: get the full\u2026"
-    }
-  ],
+  "title_examples": [],
+  "desc_examples": [],
   "indexnow": {
     "submitted": 0,
-    "error": "HTTP Error 403: Forbidden"
+    "skipped_reason": "no urls"
   }
 }

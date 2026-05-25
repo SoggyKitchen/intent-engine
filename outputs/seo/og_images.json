@@ -1,12 +1,7 @@
 {
   "svg_files": 16,
-  "pages_updated": 26,
+  "pages_updated": 1,
   "by_vertical": {
-    "analytics": 5,
-    "cloud": 11,
-    "legal": 4,
-    "project-mgmt": 2,
-    "security": 1,
-    "dev-tools": 3
+    "project-mgmt": 1
   }
 }
