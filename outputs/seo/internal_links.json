@@ -1,16 +1,16 @@
 {
-  "total_pages": 1210,
-  "updated": 1210,
+  "total_pages": 1262,
+  "updated": 1262,
   "skipped": 0,
-  "orphans_before": 96,
-  "orphans_after": 57,
+  "orphans_before": 99,
+  "orphans_after": 50,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-vs-openvpn-which-is-better-in-2026",
-        "/pages/nordlayer-vs-perimeter-81-which-is-better-in-2026",
-        "/pages/7-best-okta-alternatives-in-2026-free-paid",
+        "/pages/nordlayer-vs-1password-business-which-is-better-in-2026",
+        "/pages/1password-vs-password-boss-which-is-better-in-2026",
+        "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
         "/pages/freshbooks-vs-divvy-which-is-better-in-2026",
         "/pages/keeper-vs-nordpass-which-is-better-in-2026"
       ]
@@ -20,7 +20,7 @@
       "picks": [
         "/pages/1password-vs-enpass-which-is-better-in-2026",
         "/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
+        "/pages/qualys-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-sync-com-which-is-better-in-2026",
         "/pages/freshbooks-vs-netsuite-which-is-better-in-2026"
       ]
@@ -28,11 +28,11 @@
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/1password-vs-dashlane-which-is-better-in-2026",
         "/pages/qualys-vs-tenable-which-is-better-in-2026",
-        "/pages/nordpass-vs-enpass-which-is-better-in-2026",
-        "/pages/rippling-vs-workable-which-is-better-in-2026",
-        "/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026"
+        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
+        "/pages/lastpass-vs-dashlane-which-is-better-in-2026",
+        "/pages/lattice-vs-culture-amp-which-is-better-in-2026",
+        "/pages/workable-vs-greenhouse-which-is-better-in-2026"
       ]
     }
   ]

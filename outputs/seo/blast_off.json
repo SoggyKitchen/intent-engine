@@ -1,59 +1,74 @@
 {
   "current_month": "May 2026",
   "today": "2026-05-25",
-  "titles_rewritten": 3,
-  "descs_rewritten": 60,
-  "dates_refreshed": 1206,
-  "answers_added": 60,
-  "files_changed": 1209,
-  "files_scanned": 1255,
+  "titles_rewritten": 51,
+  "descs_rewritten": 52,
+  "dates_refreshed": 52,
+  "answers_added": 52,
+  "files_changed": 52,
+  "files_scanned": 1307,
   "title_examples": [
     {
-      "file": "7-best-ramp-alternatives-in-2026-free-paid.html",
-      "before": "7 Best Ramp Alternatives in 2026 (Free &amp; Paid) | SaaSpare",
-      "after": "Ramp Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
+      "file": "activecampaign-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "ActiveCampaign Free Trial 2026: How to Start + What You Get | SaaSpare",
+      "after": "ActiveCampaign Free Trial 2026: How to Get the Full May 2026 Offer"
     },
     {
-      "file": "hetzner-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Hetzner Pricing 2026: Plans, Costs &amp; What You Actually Pay | SaaSpare",
-      "after": "Hetzner Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
+      "file": "amplitude-coupon-2026-discount-codes-promo.html",
+      "before": "Amplitude Coupon Code 2026: Working Discounts &amp; Promo Codes | SaaSpare",
+      "after": "Amplitude Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
     },
     {
-      "file": "supabase-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Supabase Pricing 2026: Plans, Costs &amp; What You Actually Pay | SaaSpare",
-      "after": "Supabase Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
+      "file": "amplitude-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "Amplitude Free Trial 2026: How to Start + What You Get | SaaSpare",
+      "after": "Amplitude Free Trial 2026: How to Get the Full May 2026 Offer"
+    },
+    {
+      "file": "bamboohr-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "BambooHR Free Trial 2026: How to Start + What You Get | SaaSpare",
+      "after": "BambooHR Free Trial 2026: How to Get the Full May 2026 Offer"
+    },
+    {
+      "file": "bigcommerce-coupon-2026-discount-codes-promo.html",
+      "before": "BigCommerce Coupon Code 2026: Working Discounts &amp; Promo Codes | SaaSpare",
+      "after": "BigCommerce Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "bigcommerce-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "BigCommerce Free Trial 2026: How to Start + What You Get | SaaSpare",
+      "after": "BigCommerce Free Trial 2026: How to Get the Full May 2026 Offer"
     }
   ],
   "desc_examples": [
     {
-      "file": "7-best-ramp-alternatives-in-2026-free-paid.html",
-      "before": "The best Ramp alternatives in 2026: Brex, Mercury, Divvy, Airbase, Expensify, Pleo, Spendesk. Real pricing, who each is best for, and how to choose.",
-      "after": "Updated May 2026. The best Ramp alternatives in 2026: Brex, Mercury, Divvy, Airbase, Expensify, Pleo, Spendesk. Real pricing, who each is best for, and how to\u2026"
+      "file": "activecampaign-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "ActiveCampaign free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff.",
+      "after": "Updated May 2026. ActiveCampaign free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff Step-by-step: get the\u2026"
     },
     {
-      "file": "ai-tools-pricing-changes-2026.html",
-      "before": "Every AI/LLM tool pricing change in 2026: OpenAI, Anthropic, Cohere, Jasper, Copy.ai. Timestamped log of every detected change.",
-      "after": "Updated May 2026. Every AI/LLM tool pricing change in 2026: OpenAI, Anthropic, Cohere, Jasper, Copy.ai. Timestamped log of every detected change Real plans,\u2026"
+      "file": "amplitude-coupon-2026-discount-codes-promo.html",
+      "before": "Verified Amplitude discount codes and promo offers for 2026. Save on plans starting at $0/mo. Updated 2026-05-25.",
+      "after": "Updated May 2026. Verified Amplitude discount codes and promo offers for 2026. Save on plans starting at $0/mo. Updated 2026-05-25 Verified codes only \u2014 we test\u2026"
     },
     {
-      "file": "best-ai-agent-tools-for-enterprise-workflows-in-2025.html",
-      "before": "Compare top AI agent tools like OpenClaw, MTClaw, and Claude.ai for enterprise automation. Discover speed, HITL support, and integration advantages.",
-      "after": "Updated May 2026. Compare top AI agent tools like OpenClaw, MTClaw, and Claude.ai for enterprise automation. Discover speed, HITL support, and integration\u2026"
+      "file": "amplitude-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "Amplitude free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff.",
+      "after": "Updated May 2026. Amplitude free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff Step-by-step: get the full\u2026"
     },
     {
-      "file": "best-ai-code-assistant-tools-in-2025-deepseek-github-copilot-more-compared.html",
-      "before": "Compare top AI code assistant tools like GitHub Copilot, DeepSeek, and Tabnine. See which delivers the best accuracy, speed, and value for developers in 2025.",
-      "after": "Updated May 2026. Compare top AI code assistant tools like GitHub Copilot, DeepSeek, and Tabnine. See which delivers the best accuracy, speed, and value for\u2026"
+      "file": "bamboohr-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "BambooHR free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff.",
+      "after": "Updated May 2026. BambooHR free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff Step-by-step: get the full\u2026"
     },
     {
-      "file": "best-ai-memory-workflow-optimization-tools-for-b2b-teams-in-2025.html",
-      "before": "Compare top AI tools with memory management, tool-calling, and workflow evaluation for enterprise B2B teams. Discover which platforms reduce token costs and prevent scope leakage.",
-      "after": "Updated May 2026. Compare top AI tools with memory management, tool-calling, and workflow evaluation for enterprise B2B teams. Discover which platforms reduce\u2026"
+      "file": "bigcommerce-coupon-2026-discount-codes-promo.html",
+      "before": "Verified BigCommerce discount codes and promo offers for 2026. Save on plans starting at $39/mo. Updated 2026-05-25.",
+      "after": "Updated May 2026. Verified BigCommerce discount codes and promo offers for 2026. Save on plans starting at $39/mo. Updated 2026-05-25 Verified codes only \u2014 we\u2026"
     },
     {
-      "file": "best-ai-ml-code-assistant-tools-for-developers-in-2026.html",
-      "before": "Compare top AI code assistants like OpenCode Go, GitHub Copilot, and Tabnine. See how they stack up in pricing, accuracy, and integration for B2B development teams.",
-      "after": "Updated May 2026. Compare top AI code assistants like OpenCode Go, GitHub Copilot, and Tabnine. See how they stack up in pricing, accuracy, and integration for\u2026"
+      "file": "bigcommerce-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "BigCommerce free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff.",
+      "after": "Updated May 2026. BigCommerce free trial 2026: exactly what's included, how long it lasts, and how to get the most out of it. No fluff Step-by-step: get the full\u2026"
     }
   ],
   "indexnow": {

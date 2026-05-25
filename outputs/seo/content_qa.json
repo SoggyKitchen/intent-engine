@@ -1,21 +1,28 @@
 {
-  "generated_at": "2026-05-25T10:17:14.207331+00:00",
+  "generated_at": "2026-05-25T10:28:17.924154+00:00",
   "stats": {
-    "sitemap_urls": 1281,
-    "sitemap_with_lastmod": 1281,
-    "total_pages": 1289,
-    "indexable_pages": 1239,
-    "title_over_70": 94,
+    "sitemap_urls": 1294,
+    "sitemap_with_lastmod": 1294,
+    "total_pages": 1346,
+    "indexable_pages": 1296,
+    "title_over_70": 98,
     "desc_over_165": 5,
-    "money_pages": 1037,
-    "soft": 2,
-    "duplicate_titles": 1,
+    "money_pages": 1090,
+    "soft": 9,
+    "duplicate_titles": 7,
     "duplicate_descs": 1
   },
   "hard_failures": [],
   "soft_issues": [
+    "site/blog/saas-pricing-models-explained-2026.html: money page missing affiliate disclosure mention",
+    "duplicate title (2 pages): \"Salesforce Coupon 2026 (Verified May 2026) — Real Working Co\" — ['site/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work.html', 'site/pages/salesforce-coupon-2026-discount-codes-promo.html']",
+    "duplicate title (2 pages): \"PandaDoc Coupon 2026 (Verified May 2026) — Real Working Code\" — ['site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html', 'site/pages/pandadoc-coupon-2026-discount-codes-promo.html']",
+    "duplicate title (2 pages): \"FreshBooks Coupon 2026 (Verified May 2026) — Real Working Co\" — ['site/pages/freshbooks-coupon-2026-discount-codes-promo.html', 'site/pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work.html']",
+    "duplicate title (2 pages): \"Moz Pro Coupon 2026 (Verified May 2026) — Real Working Codes\" — ['site/pages/moz-pro-coupon-2026-discount-codes-promo.html', 'site/pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work.html']",
+    "duplicate title (2 pages): \"Linear Coupon 2026 (Verified May 2026) — Real Working Codes\" — ['site/pages/linear-coupon-2026-discount-codes-promo.html', 'site/pages/linear-promo-code-2026-discounts-deals-that-actually-work.html']",
     "duplicate title (2 pages): \"Best Chrome Devtools Alternatives 2026: Free & Paid Options \" — ['site/pages/best-chrome-devtools-alternatives-in-2026.html', 'site/pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison.html']",
+    "duplicate title (2 pages): \"Copy.ai Coupon 2026 (Verified May 2026) — Real Working Codes\" — ['site/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts.html', 'site/pages/copy-ai-coupon-2026-discount-codes-promo.html']",
     "duplicate description (2 pages): \"Updated May 2026. Find the best Chrome Devtools alternatives\" — ['site/pages/best-chrome-devtools-alternatives-in-2026.html', 'site/pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison.html']"
   ],
-  "soft_issues_total": 2
+  "soft_issues_total": 9
 }
