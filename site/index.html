@@ -21,7 +21,11 @@
 <meta name="twitter:image" content="https://saaspare.org/og-default.png">
 <meta name="Impact-Site-Verification" content="630c59bd-7d94-4608-bf4d-7c9258a43362">
 <meta name="Impact-Site-Verification" content="a1bb8518-4dc8-412a-80a9-fb1009113071">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "SaaSpare", "url": "https://saaspare.org", "description": "Unbiased B2B SaaS comparisons with real pricing, honest verdicts, free trial guides, and coupon codes.", "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://saaspare.org/pages/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}, {"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools for founders, CTOs and operators.", "sameAs": ["https://x.com/SaaSpare", "https://twitter.com/SaaSpare"], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "partnerships@saaspare.org", "url": "https://saaspare.org/contact"}}]</script>
 <style>
 /* ── TOKENS ─────────────────────────────────── */
@@ -143,9 +147,19 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 
 h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;line-height:1.1;letter-spacing:-.05em;margin-bottom:1.6rem;animation:titleEnter .9s .4s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:2;text-wrap:balance}
 @keyframes titleEnter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-.grad-text{background:linear-gradient(135deg,#ff8fa3 0%,var(--red) 45%,var(--red2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding-bottom:.15em}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-#typewriter::after{content:'|';color:var(--red);animation:blink 1s ease infinite;margin-left:1px;-webkit-text-fill-color:var(--red)}
+@keyframes tw-glint{0%{background-position:100% 50%}100%{background-position:-200% 50%}}
+#tw-word{
+  display:inline-block;
+  background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);
+  background-size:300% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  color:transparent;
+  animation:tw-glint 3.6s linear infinite;
+  will-change:background-position;
+}
+.sp-tw-cursor{display:inline-block;width:.06em;background:#ff416d;height:.82em;vertical-align:-.08em;margin-left:.06em;animation:spBlink 1s steps(2,end) infinite;box-shadow:0 0 12px #ff416d}
+@keyframes spBlink{0%,50%{opacity:1}50.01%,100%{opacity:0}}
 
 .hero-sub{color:var(--muted);font-size:1.06rem;line-height:1.82;max-width:480px;margin:0 auto 3.2rem;animation:subEnter .8s .5s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:2;text-wrap:pretty}
 @keyframes subEnter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
@@ -430,7 +444,7 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 
   <h1 class="hero-title">
     The honest guide to<br>
-    <span class="grad-text"><span id="typewriter">CRM Software</span></span><br>
+    <span id="tw-word">CRM Software</span><span class="sp-tw-cursor"></span><br>
     for teams that care about ROI
   </h1>
 
@@ -681,14 +695,54 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
   <div class="cta-box">
     <h2>Get the Weekly SaaS Deal Digest</h2>
     <p>Free trials, pricing changes and new comparisons — straight to your inbox every Friday.</p>
-    <form action="https://formsubmit.co/hello@saaspare.org" method="POST" class="email-row">
-      <input type="email" name="email" placeholder="your@email.com" required>
+    <form id="subscribe-form" class="email-row" novalidate>
+      <input type="email" id="subscribe-email" name="email" placeholder="your@email.com" required autocomplete="email">
       <input type="hidden" name="_subject" value="New SaaSpare subscriber">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://saaspare.org/pages/thanks.html">
-      <button type="submit">Subscribe Free &#8594;</button>
+      <input type="hidden" name="page_slug" value="home">
+      <button type="submit" id="subscribe-btn">Subscribe Free &#8594;</button>
     </form>
+    <div id="subscribe-success" style="display:none;align-items:center;gap:.6rem;justify-content:center;padding:.9rem 1.4rem;background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);border-radius:12px;color:#34d399;font-weight:700;font-size:.92rem">
+      <span style="font-size:1.1rem">✓</span> You're in! Check your inbox in the next few minutes.
+    </div>
+    <div id="subscribe-error" style="display:none;padding:.75rem 1rem;background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.25);border-radius:10px;color:#f87171;font-size:.84rem;text-align:center"></div>
     <p class="email-note">No spam. Unsubscribe any time.</p>
+    <script>
+    (function(){
+      var form=document.getElementById('subscribe-form');
+      var btn=document.getElementById('subscribe-btn');
+      var successEl=document.getElementById('subscribe-success');
+      var errorEl=document.getElementById('subscribe-error');
+      if(!form)return;
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        var email=document.getElementById('subscribe-email').value.trim();
+        if(!email)return;
+        btn.disabled=true;btn.textContent='Sending…';
+        errorEl.style.display='none';
+        fetch('/api/lead',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({email:email,_subject:'New SaaSpare subscriber',page_slug:'home',source:'homepage-cta'})
+        })
+        .then(function(r){return r.json()})
+        .then(function(d){
+          if(d.ok){
+            form.style.display='none';
+            successEl.style.display='flex';
+          } else {
+            btn.disabled=false;btn.textContent='Subscribe Free →';
+            errorEl.textContent='Something went wrong — please try again or email hello@saaspare.org';
+            errorEl.style.display='block';
+          }
+        })
+        .catch(function(){
+          btn.disabled=false;btn.textContent='Subscribe Free →';
+          errorEl.textContent='Could not connect — please try again shortly.';
+          errorEl.style.display='block';
+        });
+      });
+    })();
+    </script>
   </div>
 </div>
 
@@ -829,7 +883,7 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
 
 /* TYPEWRITER */
 const words=['CRM Software','HR Tools','Dev Tools','SEO Software','Finance Tools','Project Management','Marketing Automation','Cloud Infrastructure'];
-let wi=0,ci=0,del=false,tw=document.getElementById('typewriter');
+let wi=0,ci=0,del=false,tw=document.getElementById('tw-word');
 function type(){
   const w=words[wi];
   del?tw.textContent=w.slice(0,--ci):tw.textContent=w.slice(0,++ci);
