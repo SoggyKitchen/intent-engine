@@ -182,37 +182,37 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg>
         Saved
       </span>
-      <button class="sp-btn sp-btn-ghost sp-btn-sm">Share Shortlist</button>
-      <button class="sp-btn sp-btn-ghost sp-btn-sm">Export PDF</button>
-      <button class="sp-btn sp-btn-ghost sp-btn-sm">Clear All</button>
+      <button class="sp-btn sp-btn-ghost sp-btn-sm" onclick="slShare(this)">Share Shortlist</button>
+      <button class="sp-btn sp-btn-ghost sp-btn-sm" onclick="window.print()">Export PDF</button>
+      <button class="sp-btn sp-btn-ghost sp-btn-sm" onclick="slClearAll()">Clear All</button>
     </div>
 
     <!-- Add another tool -->
-    <form class="sl-add" onsubmit="event.preventDefault()">
+    <form class="sl-add" id="sl-add-form" onsubmit="slAddFromSearch(event)">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input type="text" placeholder="Search and add tools to your shortlist…">
-      <button class="sp-btn sp-btn-primary sp-btn-sm">Add Tool</button>
+      <input type="text" id="sl-search" placeholder="Search and add tools to your shortlist…" autocomplete="off">
+      <button class="sp-btn sp-btn-primary sp-btn-sm" type="submit">Add Tool</button>
     </form>
 
     <!-- Tool cards -->
-    <h3 style="font-size:.96rem;color:var(--ink-3);font-weight:600;margin-bottom:10px">Your shortlist (4)</h3>
-    <div class="sl-cards">
+    <h3 id="sl-count-label" style="font-size:.96rem;color:var(--ink-3);font-weight:600;margin-bottom:10px">Your shortlist (4)</h3>
+    <div class="sl-cards" id="sl-cards">
       <article class="sl-card premium-card">
         <span class="sl-rank">1</span>
-        <button class="sl-close"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+        <button class="sl-close" onclick="slRemove(this)" title="Remove"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
         <div class="sl-card-head">
-          <span class="sp-logo"><img src="https://cdn.simpleicons.org/hubspot/ff7a59"></span>
+          <span class="sp-logo"><img src="https://cdn.simpleicons.org/hubspot/ff7a59" alt="HubSpot"></span>
           <div><div class="sl-card-name">HubSpot</div><div class="sl-card-cat">CRM</div></div>
         </div>
         <div class="sl-price">$20<em>/seat/mo</em></div>
         <div class="sl-stars"><span>★</span> 4.5 (2,312)</div>
         <div class="sl-trial"><em>14-day</em> free trial</div>
-        <a class="sl-details">View Details →</a>
+        <a class="sl-details" href="/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay" target="_blank" rel="noopener">View Details →</a>
       </article>
 
       <article class="sl-card premium-card">
         <span class="sl-rank">2</span>
-        <button class="sl-close"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+        <button class="sl-close" onclick="slRemove(this)" title="Remove"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
         <div class="sl-card-head">
           <span class="sp-logo"><span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a,#0a0a0a);color:#19be46;font-weight:900;font-size:.62em;letter-spacing:-.02em;border-radius:inherit">PD</span></span>
           <div><div class="sl-card-name">Pipedrive</div><div class="sl-card-cat">CRM</div></div>
@@ -220,37 +220,37 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
         <div class="sl-price">$14<em>/seat/mo</em></div>
         <div class="sl-stars"><span>★</span> 4.3 (1,842)</div>
         <div class="sl-trial"><em>14-day</em> free trial</div>
-        <a class="sl-details">View Details →</a>
+        <a class="sl-details" href="/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay" target="_blank" rel="noopener">View Details →</a>
       </article>
 
       <article class="sl-card premium-card">
         <span class="sl-rank">3</span>
-        <button class="sl-close"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+        <button class="sl-close" onclick="slRemove(this)" title="Remove"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
         <div class="sl-card-head">
-          <span class="sp-logo"><img src="https://cdn.simpleicons.org/zoho/c8202d"></span>
+          <span class="sp-logo"><img src="https://cdn.simpleicons.org/zoho/c8202d" alt="Zoho"></span>
           <div><div class="sl-card-name">Zoho CRM</div><div class="sl-card-cat">CRM</div></div>
         </div>
         <div class="sl-price">$14<em>/seat/mo</em></div>
         <div class="sl-stars"><span>★</span> 4.2 (1,231)</div>
         <div class="sl-trial"><em>15-day</em> free trial</div>
-        <a class="sl-details">View Details →</a>
+        <a class="sl-details" href="/pages/zoho-crm-pricing-2026" target="_blank" rel="noopener">View Details →</a>
       </article>
 
       <article class="sl-card premium-card">
         <span class="sl-rank">4</span>
-        <button class="sl-close"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+        <button class="sl-close" onclick="slRemove(this)" title="Remove"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
         <div class="sl-card-head">
-          <span class="sp-logo"><span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.62em;letter-spacing:-.02em;border-radius:inherit">SF</span></span>
+          <span class="sp-logo"><span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.62em;letter-spacing:-.02em;border-radius:inherit">CL</span></span>
           <div><div class="sl-card-name">Close</div><div class="sl-card-cat">CRM</div></div>
         </div>
         <div class="sl-price">$29<em>/seat/mo</em></div>
         <div class="sl-stars"><span>★</span> 4.6 (1,105)</div>
         <div class="sl-trial"><em>14-day</em> free trial</div>
-        <a class="sl-details">View Details →</a>
+        <a class="sl-details" href="/pages/close-pricing-2026" target="_blank" rel="noopener">View Details →</a>
       </article>
     </div>
 
-    <button class="sl-card sl-card-empty premium-card" style="margin-bottom:16px">
+    <button class="sl-card sl-card-empty premium-card" style="margin-bottom:16px" onclick="document.querySelector('.sl-add input').focus();document.querySelector('.sl-add input').scrollIntoView({behavior:'smooth',block:'center'})">
       <div class="sl-card-empty-plus">+</div>
       Add Another Tool
     </button>
@@ -319,7 +319,7 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
             <strong>Need help deciding?</strong>
             <span>Our experts can help you pick the right tool for your team.</span>
           </div>
-          <a class="sp-btn sp-btn-primary">Talk to an Expert</a>
+          <a class="sp-btn sp-btn-primary" href="/contact">Talk to an Expert</a>
         </div>
       </div>
 
@@ -348,28 +348,28 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
             </label>
           </div>
 
-          <button class="sp-btn sp-btn-primary" style="width:100%;margin-top:16px">Compare Side-by-Side →</button>
+          <button class="sp-btn sp-btn-primary" onclick="document.querySelector('.matrix').scrollIntoView({behavior:'smooth'})" style="width:100%;margin-top:16px">Compare Side-by-Side →</button>
         </div>
 
         <div class="sp-glass actions">
           <h3>Actions</h3>
-          <button class="action-btn">
+          <button class="action-btn" onclick="document.querySelector('.matrix').scrollIntoView({behavior:'smooth'})">
             <span class="sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></span>
             Compare side-by-side
           </button>
-          <button class="action-btn">
+          <button class="action-btn" onclick="window.location.href='/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay'">
             <span class="sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
             View pricing details
           </button>
-          <button class="action-btn">
+          <button class="action-btn" onclick="slShare(this)">
             <span class="sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></span>
             Share shortlist
           </button>
-          <button class="action-btn">
+          <button class="action-btn" onclick="window.print()">
             <span class="sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg></span>
             Export as PDF
           </button>
-          <button class="action-btn" style="color:var(--ink-4)">
+          <button class="action-btn" onclick="slClearAll()" style="color:var(--ink-4)">
             <span class="sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M5 6v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6"/></svg></span>
             Clear shortlist
           </button>
@@ -428,214 +428,156 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
 </script>
 
 <script>
-/* ── SaaSpare Shortlist — interactive wiring ── */
-(function(){
+/* ── Shortlist global helpers (called by inline onclick attributes) ── */
 
-  /* Tool database: name → { slug, cat, price, rating, reviews, trial, logoUrl?, logoText?, logoColor? } */
-  var TOOLS = {
-    'HubSpot':      {slug:'hubspot-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:20,rating:4.5,reviews:2312,trial:14,logoUrl:'https://cdn.simpleicons.org/hubspot/ff7a59'},
-    'Pipedrive':    {slug:'pipedrive-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:14,rating:4.3,reviews:1842,trial:14,logoText:'PD',logoColor:'#19be46'},
-    'Zoho CRM':     {slug:'zoho-crm-pricing-2026',cat:'CRM',price:14,rating:4.2,reviews:1231,trial:15,logoUrl:'https://cdn.simpleicons.org/zoho/c8202d'},
-    'Close':        {slug:'close-pricing-2026',cat:'CRM',price:29,rating:4.6,reviews:1105,trial:14,logoText:'CL',logoColor:'#00a1e0'},
-    'Salesforce':   {slug:'salesforce-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:25,rating:4.2,reviews:5823,trial:30,logoUrl:'https://cdn.simpleicons.org/salesforce/00a1e0'},
-    'Monday':       {slug:'monday-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:9,rating:4.4,reviews:3211,trial:14,logoUrl:'https://cdn.simpleicons.org/mondaydotcom/f62b54'},
-    'Asana':        {slug:'asana-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:10,rating:4.3,reviews:2782,trial:30,logoUrl:'https://cdn.simpleicons.org/asana/f06a6a'},
-    'ClickUp':      {slug:'clickup-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:7,rating:4.5,reviews:4123,trial:14,logoUrl:'https://cdn.simpleicons.org/clickup/7b68ee'},
-    'Notion':       {slug:'notion-pricing-2026-plans-costs-what-you-actually-pay',cat:'Productivity',price:8,rating:4.4,reviews:3892,trial:0,logoUrl:'https://cdn.simpleicons.org/notion/ffffff'},
-    'Ahrefs':       {slug:'ahrefs-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:99,rating:4.6,reviews:1834,trial:7,logoUrl:'https://cdn.simpleicons.org/ahrefs/ff8c00'},
-    'Semrush':      {slug:'semrush-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:129,rating:4.5,reviews:2943,trial:7,logoText:'SM',logoColor:'#ff642d'},
-    '1Password':    {slug:'1password-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:3,rating:4.7,reviews:4523,trial:14,logoUrl:'https://cdn.simpleicons.org/1password/0094f5'},
-    'Bitwarden':    {slug:'1password-vs-bitwarden-which-is-better-in-2026',cat:'Security',price:1,rating:4.6,reviews:3219,trial:7,logoUrl:'https://cdn.simpleicons.org/bitwarden/175DDC'},
-    'NordVPN':      {slug:'nordvpn-pricing-2026',cat:'Security',price:4,rating:4.5,reviews:8234,trial:30,logoUrl:'https://cdn.simpleicons.org/nordvpn/4687FF'},
-    'Slack':        {slug:'slack-pricing-2026-plans-costs-what-you-actually-pay',cat:'Comms',price:7,rating:4.5,reviews:5673,trial:0,logoUrl:'https://cdn.simpleicons.org/slack/4A154B'},
-    'Shopify':      {slug:'shopify-pricing-2026-plans-costs-what-you-actually-pay',cat:'E-commerce',price:29,rating:4.4,reviews:9234,trial:3,logoUrl:'https://cdn.simpleicons.org/shopify/96BF48'},
-    'Freshdesk':    {slug:'freshdesk-pricing-2026',cat:'Help Desk',price:15,rating:4.4,reviews:2341,trial:21,logoText:'FD',logoColor:'#3fad46'},
-    'Intercom':     {slug:'intercom-pricing-2026',cat:'Help Desk',price:39,rating:4.3,reviews:1987,trial:14,logoUrl:'https://cdn.simpleicons.org/intercom/6efac8'},
-    'Zendesk':      {slug:'zendesk-pricing-2026',cat:'Help Desk',price:19,rating:4.2,reviews:4312,trial:14,logoUrl:'https://cdn.simpleicons.org/zendesk/03363d'},
-    'Contabo':      {slug:'contabo-pricing-2026',cat:'Cloud',price:5,rating:4.1,reviews:892,trial:0,logoText:'CO',logoColor:'#e74c3c'},
-    'Sucuri':       {slug:'sucuri-pricing-2026',cat:'Security',price:10,rating:4.3,reviews:743,trial:0,logoText:'SC',logoColor:'#219653'}
-  };
+function slRemove(btn) {
+  var card = btn.parentElement;
+  card.style.transition = 'opacity .2s, transform .2s';
+  card.style.opacity = '0';
+  card.style.transform = 'scale(.88)';
+  setTimeout(function() {
+    card.parentElement.removeChild(card);
+    slRenumber();
+    slUpdateCount();
+  }, 220);
+}
 
-  /* ── helpers ── */
-  function renumber() {
-    document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').forEach(function(c,i){
-      var r = c.querySelector('.sl-rank'); if(r) r.textContent = i+1;
+function slRenumber() {
+  var cards = document.querySelectorAll('#sl-cards .sl-card:not(.sl-card-empty)');
+  for (var i = 0; i < cards.length; i++) {
+    var r = cards[i].querySelector('.sl-rank');
+    if (r) r.textContent = i + 1;
+  }
+}
+
+function slUpdateCount() {
+  var n = document.querySelectorAll('#sl-cards .sl-card:not(.sl-card-empty)').length;
+  var lbl = document.getElementById('sl-count-label');
+  if (lbl) lbl.textContent = 'Your shortlist (' + n + ')';
+}
+
+function slShare(btn) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      var orig = btn.textContent;
+      btn.textContent = '✓ Link copied!';
+      setTimeout(function() { btn.textContent = orig; }, 2200);
     });
+  } else {
+    prompt('Copy this link:', window.location.href);
   }
-  function updateCount() {
-    var n = document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').length;
-    var h = document.querySelector('h3[style*="margin-bottom:10px"]') || document.querySelector('.sl-cards')?.previousElementSibling;
-    if(h) h.textContent = 'Your shortlist (' + n + ')';
+}
+
+function slClearAll() {
+  if (!confirm('Remove all tools from your shortlist?')) return;
+  var cards = document.querySelectorAll('#sl-cards .sl-card:not(.sl-card-empty)');
+  for (var i = 0; i < cards.length; i++) cards[i].parentElement.removeChild(cards[i]);
+  slUpdateCount();
+}
+
+function slAddFromSearch(e) {
+  e.preventDefault();
+  var inp = document.getElementById('sl-search');
+  if (!inp) return;
+  var q = inp.value.trim().toLowerCase();
+  if (!q) return;
+  var keys = Object.keys(SL_TOOLS);
+  var match = null;
+  for (var i = 0; i < keys.length; i++) {
+    if (keys[i].toLowerCase() === q) { match = keys[i]; break; }
   }
-  function wireClose(btn) {
-    btn.addEventListener('click', function(){
-      var card = btn.closest('.sl-card');
-      card.style.cssText += ';transition:opacity .22s,transform .22s;opacity:0;transform:scale(.88)';
-      setTimeout(function(){ card.remove(); renumber(); updateCount(); }, 230);
+  if (!match) {
+    for (var i = 0; i < keys.length; i++) {
+      if (keys[i].toLowerCase().indexOf(q) !== -1) { match = keys[i]; break; }
+    }
+  }
+  if (match) { slAddCard(match); inp.value = ''; slHideDrop(); }
+  else { inp.style.borderColor = 'rgba(233,69,96,.7)'; setTimeout(function(){ inp.style.borderColor=''; }, 1200); }
+}
+
+var SL_TOOLS = {
+  'HubSpot':    {slug:'hubspot-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:20,rating:4.5,reviews:2312,trial:14,logo:'<img src="https://cdn.simpleicons.org/hubspot/ff7a59" alt="HubSpot">'},
+  'Pipedrive':  {slug:'pipedrive-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:14,rating:4.3,reviews:1842,trial:14,logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#0a0a0a;color:#19be46;font-weight:900;font-size:.62em">PD</span>'},
+  'Zoho CRM':   {slug:'zoho-crm-pricing-2026',cat:'CRM',price:14,rating:4.2,reviews:1231,trial:15,logo:'<img src="https://cdn.simpleicons.org/zoho/c8202d" alt="Zoho">'},
+  'Close':      {slug:'close-pricing-2026',cat:'CRM',price:29,rating:4.6,reviews:1105,trial:14,logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.62em">CL</span>'},
+  'Salesforce': {slug:'salesforce-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:25,rating:4.2,reviews:5823,trial:30,logo:'<img src="https://cdn.simpleicons.org/salesforce/00a1e0" alt="Salesforce">'},
+  'Monday':     {slug:'monday-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:9,rating:4.4,reviews:3211,trial:14,logo:'<img src="https://cdn.simpleicons.org/mondaydotcom/f62b54" alt="Monday">'},
+  'Asana':      {slug:'asana-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:10,rating:4.3,reviews:2782,trial:30,logo:'<img src="https://cdn.simpleicons.org/asana/f06a6a" alt="Asana">'},
+  'ClickUp':    {slug:'clickup-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:7,rating:4.5,reviews:4123,trial:14,logo:'<img src="https://cdn.simpleicons.org/clickup/7b68ee" alt="ClickUp">'},
+  'Notion':     {slug:'notion-pricing-2026-plans-costs-what-you-actually-pay',cat:'Productivity',price:8,rating:4.4,reviews:3892,trial:0,logo:'<img src="https://cdn.simpleicons.org/notion/ffffff" alt="Notion">'},
+  'Ahrefs':     {slug:'ahrefs-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:99,rating:4.6,reviews:1834,trial:7,logo:'<img src="https://cdn.simpleicons.org/ahrefs/ff8c00" alt="Ahrefs">'},
+  'Semrush':    {slug:'semrush-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:129,rating:4.5,reviews:2943,trial:7,logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#ff642d;color:#fff;font-weight:900;font-size:.62em">SM</span>'},
+  '1Password':  {slug:'1password-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:3,rating:4.7,reviews:4523,trial:14,logo:'<img src="https://cdn.simpleicons.org/1password/0094f5" alt="1Password">'},
+  'Bitwarden':  {slug:'1password-vs-bitwarden-which-is-better-in-2026',cat:'Security',price:1,rating:4.6,reviews:3219,trial:7,logo:'<img src="https://cdn.simpleicons.org/bitwarden/175DDC" alt="Bitwarden">'},
+  'NordVPN':    {slug:'nordvpn-pricing-2026',cat:'Security',price:4,rating:4.5,reviews:8234,trial:30,logo:'<img src="https://cdn.simpleicons.org/nordvpn/4687FF" alt="NordVPN">'},
+  'Slack':      {slug:'slack-pricing-2026-plans-costs-what-you-actually-pay',cat:'Comms',price:7,rating:4.5,reviews:5673,trial:0,logo:'<img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack">'},
+  'Shopify':    {slug:'shopify-pricing-2026-plans-costs-what-you-actually-pay',cat:'E-commerce',price:29,rating:4.4,reviews:9234,trial:3,logo:'<img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify">'},
+  'Zendesk':    {slug:'zendesk-pricing-2026',cat:'Help Desk',price:19,rating:4.2,reviews:4312,trial:14,logo:'<img src="https://cdn.simpleicons.org/zendesk/03363d" alt="Zendesk">'},
+  'Intercom':   {slug:'intercom-pricing-2026',cat:'Help Desk',price:39,rating:4.3,reviews:1987,trial:14,logo:'<img src="https://cdn.simpleicons.org/intercom/6efac8" alt="Intercom">'}
+};
+
+function slAddCard(name) {
+  var t = SL_TOOLS[name];
+  if (!t) return;
+  var container = document.getElementById('sl-cards');
+  var existing = container.querySelectorAll('.sl-card-name');
+  for (var i = 0; i < existing.length; i++) {
+    if (existing[i].textContent.trim() === name) return;
+  }
+  var n = container.querySelectorAll('.sl-card:not(.sl-card-empty)').length + 1;
+  var trial = t.trial ? '<div class="sl-trial"><em>'+t.trial+'-day</em> free trial</div>' : '<div class="sl-trial" style="opacity:.4">No free trial</div>';
+  var art = document.createElement('article');
+  art.className = 'sl-card premium-card';
+  art.innerHTML =
+    '<span class="sl-rank">'+n+'</span>'+
+    '<button class="sl-close" onclick="slRemove(this)" title="Remove"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>'+
+    '<div class="sl-card-head"><span class="sp-logo">'+t.logo+'</span>'+
+    '<div><div class="sl-card-name">'+name+'</div><div class="sl-card-cat">'+t.cat+'</div></div></div>'+
+    '<div class="sl-price">$'+t.price+'<em>/seat/mo</em></div>'+
+    '<div class="sl-stars"><span>★</span> '+t.rating+' ('+t.reviews.toLocaleString()+')</div>'+
+    trial+
+    '<a class="sl-details" href="/pages/'+t.slug+'" target="_blank" rel="noopener">View Details →</a>';
+  var empty = container.querySelector('.sl-card-empty');
+  if (empty) container.insertBefore(art, empty);
+  else container.appendChild(art);
+  slUpdateCount();
+}
+
+/* Search dropdown */
+function slHideDrop() {
+  var d = document.getElementById('sl-drop');
+  if (d) d.style.display = 'none';
+}
+
+(function initDrop(){
+  var inp = document.getElementById('sl-search');
+  if (!inp) return;
+  var wrap = inp.parentElement;
+  wrap.style.position = 'relative';
+  var dd = document.createElement('div');
+  dd.id = 'sl-drop';
+  dd.style.cssText = 'position:absolute;top:100%;left:0;right:0;background:#130b10;border:1px solid rgba(255,255,255,.1);border-radius:12px;margin-top:4px;z-index:200;display:none;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.6)';
+  wrap.appendChild(dd);
+
+  inp.addEventListener('input', function() {
+    var q = inp.value.trim().toLowerCase();
+    if (!q) { dd.style.display = 'none'; return; }
+    var hits = Object.keys(SL_TOOLS).filter(function(n){ return n.toLowerCase().indexOf(q) !== -1; }).slice(0,7);
+    if (!hits.length) { dd.style.display = 'none'; return; }
+    dd.innerHTML = hits.map(function(n) {
+      var t = SL_TOOLS[n];
+      return '<div data-name="'+n+'" style="padding:10px 15px;cursor:pointer;font-size:.87rem;color:rgba(255,248,245,.85);font-weight:600;border-bottom:1px solid rgba(255,255,255,.05)">'+n+'<span style="font-size:.73rem;color:rgba(255,255,255,.35);margin-left:8px">'+t.cat+' · $'+t.price+'/mo</span></div>';
+    }).join('');
+    dd.querySelectorAll('[data-name]').forEach(function(item) {
+      item.addEventListener('mouseenter', function(){ item.style.background='rgba(233,69,96,.12)'; });
+      item.addEventListener('mouseleave', function(){ item.style.background=''; });
+      item.addEventListener('click', function() { slAddCard(item.getAttribute('data-name')); inp.value=''; dd.style.display='none'; });
     });
-  }
-
-  /* ── wire existing X buttons ── */
-  document.querySelectorAll('.sl-close').forEach(wireClose);
-
-  /* ── wire existing View Details links ── */
-  document.querySelectorAll('.sl-details').forEach(function(a){
-    var card = a.closest('.sl-card');
-    var name = card ? (card.querySelector('.sl-card-name')||{}).textContent?.trim() : null;
-    var key = name && (TOOLS[name] ? name : Object.keys(TOOLS).find(function(k){ return k.toLowerCase()===name.toLowerCase(); }));
-    a.href = key ? '/pages/' + TOOLS[key].slug : '/pages/';
-    a.target = '_blank'; a.rel = 'noopener';
+    dd.style.display = 'block';
   });
-
-  /* ── toolbar buttons ── */
-  document.querySelectorAll('.sp-btn').forEach(function(btn){
-    var t = btn.textContent.trim();
-    if(t === 'Share Shortlist') {
-      btn.addEventListener('click', function(){
-        navigator.clipboard && navigator.clipboard.writeText(window.location.href).then(function(){
-          btn.textContent = '✓ Copied!';
-          setTimeout(function(){ btn.textContent = 'Share Shortlist'; }, 2200);
-        });
-      });
-    }
-    if(t === 'Export PDF') {
-      btn.addEventListener('click', function(){ window.print(); });
-    }
-    if(t === 'Clear All') {
-      btn.addEventListener('click', function(){
-        if(!confirm('Remove all tools from shortlist?')) return;
-        document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').forEach(function(c){ c.remove(); });
-        updateCount();
-      });
-    }
-  });
-
-  /* ── sidebar action-btn ── */
-  document.querySelectorAll('.action-btn').forEach(function(btn){
-    var t = btn.textContent.trim();
-    if(t.includes('Compare side-by-side') || t.includes('side-by-side')) {
-      btn.addEventListener('click', function(){
-        var m = document.querySelector('.matrix'); if(m) m.scrollIntoView({behavior:'smooth'});
-      });
-    }
-    if(t.includes('Share shortlist')) {
-      btn.addEventListener('click', function(){
-        navigator.clipboard && navigator.clipboard.writeText(window.location.href).then(function(){
-          btn.textContent = btn.textContent.replace('Share shortlist','✓ Copied!');
-          setTimeout(function(){ btn.textContent = btn.textContent.replace('✓ Copied!','Share shortlist'); },2200);
-        });
-      });
-    }
-    if(t.includes('Export as PDF')) {
-      btn.addEventListener('click', function(){ window.print(); });
-    }
-    if(t.includes('Clear shortlist')) {
-      btn.addEventListener('click', function(){
-        if(!confirm('Remove all tools from shortlist?')) return;
-        document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').forEach(function(c){ c.remove(); });
-        updateCount();
-      });
-    }
-    if(t.includes('pricing details')) {
-      btn.addEventListener('click', function(){
-        var first = document.querySelector('.sl-details'); if(first) first.click();
-      });
-    }
-  });
-
-  /* ── sidebar "Compare Side-by-Side →" btn ── */
-  document.querySelectorAll('button').forEach(function(btn){
-    if(btn.textContent.includes('Compare Side-by-Side')) {
-      btn.addEventListener('click', function(){
-        var m = document.querySelector('.matrix'); if(m) m.scrollIntoView({behavior:'smooth'});
-      });
-    }
-    if(btn.textContent.trim() === 'Add Another Tool') {
-      btn.addEventListener('click', function(){
-        var inp = document.querySelector('.sl-add input'); if(inp){ inp.focus(); inp.scrollIntoView({behavior:'smooth',block:'center'}); }
-      });
-    }
-  });
-
-  /* ── "Talk to an Expert" → contact ── */
-  document.querySelectorAll('.sp-btn-primary').forEach(function(a){
-    if(a.textContent.includes('Talk to an Expert')) { a.href = '/contact'; }
-  });
-
-  /* ── Add Tool search ── */
-  var searchInput = document.querySelector('.sl-add input');
-  var addBtn      = document.querySelector('.sl-add .sp-btn-primary');
-  if(searchInput) {
-    var dd = document.createElement('div');
-    dd.id = 'sl-drop';
-    dd.style.cssText = 'position:absolute;top:100%;left:0;right:0;background:#130b10;border:1px solid rgba(255,255,255,.09);border-radius:12px;margin-top:5px;z-index:60;overflow:hidden;display:none;box-shadow:0 16px 40px rgba(0,0,0,.5)';
-    searchInput.parentElement.style.position = 'relative';
-    searchInput.parentElement.appendChild(dd);
-
-    function showDrop(q) {
-      q = q.toLowerCase();
-      if(!q){ dd.style.display='none'; return; }
-      var hits = Object.keys(TOOLS).filter(function(n){ return n.toLowerCase().includes(q); }).slice(0,7);
-      if(!hits.length){ dd.style.display='none'; return; }
-      dd.innerHTML = hits.map(function(n){
-        var t = TOOLS[n];
-        return '<div style="padding:11px 15px;cursor:pointer;font-size:.87rem;color:rgba(255,248,245,.85);font-weight:600;border-bottom:1px solid rgba(255,255,255,.05)" data-name="'+n+'">' +
-          n + '<span style="font-size:.74rem;color:rgba(255,255,255,.38);font-weight:400;margin-left:8px">'+t.cat+' · $'+t.price+'/mo</span></div>';
-      }).join('');
-      dd.querySelectorAll('[data-name]').forEach(function(item){
-        item.addEventListener('mouseover',function(){ item.style.background='rgba(233,69,96,.12)'; });
-        item.addEventListener('mouseout',function(){ item.style.background=''; });
-        item.addEventListener('click',function(){ addTool(item.dataset.name); searchInput.value=''; dd.style.display='none'; });
-      });
-      dd.style.display = 'block';
-    }
-    searchInput.addEventListener('input', function(){ showDrop(searchInput.value.trim()); });
-    searchInput.addEventListener('keydown', function(e){ if(e.key==='Escape') dd.style.display='none'; });
-    document.addEventListener('click', function(e){ if(!searchInput.parentElement.contains(e.target)) dd.style.display='none'; });
-
-    if(addBtn) {
-      addBtn.addEventListener('click', function(){
-        var q = searchInput.value.trim();
-        var match = Object.keys(TOOLS).find(function(k){ return k.toLowerCase()===q.toLowerCase() || k.toLowerCase().includes(q.toLowerCase()); });
-        if(match){ addTool(match); searchInput.value=''; dd.style.display='none'; }
-        else if(q){ searchInput.style.borderColor='rgba(233,69,96,.6)'; setTimeout(function(){ searchInput.style.borderColor=''; },1200); }
-      });
-    }
-  }
-
-  function addTool(name) {
-    var tool = TOOLS[name]; if(!tool) return;
-    var existing = Array.from(document.querySelectorAll('.sl-card-name')).some(function(el){ return el.textContent.trim()===name; });
-    if(existing){ return; }
-    var count = document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').length;
-    var logoHtml = tool.logoUrl
-      ? '<img src="'+tool.logoUrl+'" alt="'+name+'" style="width:100%;height:100%;object-fit:contain">'
-      : '<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a,#0a0a0a);color:'+(tool.logoColor||'#fff')+';font-weight:900;font-size:.62em;border-radius:inherit">'+(tool.logoText||name.slice(0,2).toUpperCase())+'</span>';
-    var trialHtml = tool.trial
-      ? '<div class="sl-trial"><em>'+tool.trial+'-day</em> free trial</div>'
-      : '<div class="sl-trial" style="color:rgba(255,255,255,.3)">No free trial</div>';
-    var art = document.createElement('article');
-    art.className = 'sl-card premium-card';
-    art.style.animation = 'none';
-    art.innerHTML =
-      '<span class="sl-rank">'+(count+1)+'</span>'+
-      '<button class="sl-close"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>'+
-      '<div class="sl-card-head"><span class="sp-logo">'+logoHtml+'</span>'+
-      '<div><div class="sl-card-name">'+name+'</div><div class="sl-card-cat">'+tool.cat+'</div></div></div>'+
-      '<div class="sl-price">$'+tool.price+'<em>/seat/mo</em></div>'+
-      '<div class="sl-stars"><span>★</span> '+tool.rating+' ('+tool.reviews.toLocaleString()+')</div>'+
-      trialHtml+
-      '<a class="sl-details" href="/pages/'+tool.slug+'" target="_blank" rel="noopener">View Details →</a>';
-    wireClose(art.querySelector('.sl-close'));
-    var empty = document.querySelector('.sl-card-empty');
-    var container = document.querySelector('.sl-cards');
-    if(empty) container.insertBefore(art, empty); else container.appendChild(art);
-    updateCount();
-  }
-
-  window.__slAddTool = addTool;
-
+  inp.addEventListener('keydown', function(e){ if(e.key==='Escape') dd.style.display='none'; });
+  document.addEventListener('click', function(e){ if(!wrap.contains(e.target)) dd.style.display='none'; });
 })();
+
 </script>
 </body>
-</html>
