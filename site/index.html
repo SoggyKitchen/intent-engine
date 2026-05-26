@@ -151,7 +151,7 @@ h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;li
 @keyframes titleEnter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .grad-text{background:linear-gradient(135deg,#ff8fa3 0%,var(--red) 45%,var(--red2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding-bottom:.15em}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-#typewriter::after{content:'|';color:var(--red);animation:blink 1s ease infinite;margin-left:1px;-webkit-text-fill-color:var(--red)}
+
 
 .hero-sub{color:var(--muted);font-size:1.06rem;line-height:1.82;max-width:480px;margin:0 auto 3.2rem;animation:subEnter .8s .5s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:2;text-wrap:pretty}
 @keyframes subEnter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
@@ -388,6 +388,19 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 .floating-chip{position:absolute;display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);border-radius:9999px;font-size:.78rem;font-weight:600;color:rgba(255,248,245,.42);backdrop-filter:blur(12px);pointer-events:none;white-space:nowrap;animation:chipFloat var(--chip-dur,8s) ease-in-out infinite alternate;animation-delay:var(--chip-delay,0s)}
 @keyframes chipFloat{from{transform:translateY(0) translateX(0)}to{transform:translateY(-12px) translateX(4px)}}
 
+
+/* ── NEW TYPEWRITER (design system) ───────────────────────────────── */
+.sp-accent{
+  background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);
+  background-size:300% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 0 32px rgba(255,65,109,.30);
+  animation:spGlint 3.6s linear infinite;
+  padding-right:.05em;display:inline;
+}
+.sp-tw-cursor{display:inline-block;width:.05em;background:#ff416d;height:.85em;vertical-align:-.05em;margin-left:.05em;animation:spBlink 1s steps(2,end) infinite;box-shadow:0 0 14px #ff416d}
+@keyframes spBlink{0%,50%{opacity:1}50.01%,100%{opacity:0}}
+
 </style>
 <script>(function(){function loadAd(){var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0';s.setAttribute('data-deferred-adsense','1');document.head.appendChild(s);}if('requestIdleCallback' in window){requestIdleCallback(loadAd,{timeout:3000});}else{setTimeout(loadAd,1500);}})();</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
@@ -553,7 +566,7 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 
   <h1 class="hero-title">
     The honest guide to<br>
-    <span class="grad-text"><span id="typewriter">CRM Software</span></span><br>
+    <span class="sp-accent sp-tw-outer"><span id="tw-word">CRM Software</span><span class="sp-tw-cursor"></span></span><br>
     for teams that care about ROI
   </h1>
 <p style="font-size:0.82rem;color:#64748b;margin:8px 0 24px;">By <a href="/authors/smith-elly" style="color:#475569;font-weight:600;">Smith Elly</a> &middot; Updated 2026-05-21 &middot; <a href="/methodology" style="color:#64748b;">Methodology</a></p>
@@ -1055,17 +1068,28 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
   draw();
 })();
 
-/* TYPEWRITER */
-const words=['CRM Software','HR Tools','Dev Tools','SEO Software','Finance Tools','Project Management','Marketing Automation','Cloud Infrastructure'];
-let wi=0,ci=0,del=false,tw=document.getElementById('typewriter');
-function type(){
-  const w=words[wi];
-  del?tw.textContent=w.slice(0,--ci):tw.textContent=w.slice(0,++ci);
-  if(!del&&ci===w.length){del=true;setTimeout(type,1800);return}
-  if(del&&ci===0){del=false;wi=(wi+1)%words.length}
-  setTimeout(type,del?50:78);
-}
-setTimeout(type,800);
+/* ── NEW TYPEWRITER (design system) ── */
+(function(){
+  var WORDS = ["CRM Software","Project Management","Password Managers","Marketing Tools","SEO Software","Email Platforms","Help Desk Tools","Analytics Stacks","Finance Tools","Dev Tools"];
+  var tw = document.getElementById('tw-word');
+  if(!tw) return;
+  var wIdx=0, cIdx=0, deleting=false;
+  function spType(){
+    var word = WORDS[wIdx];
+    if(!deleting){
+      cIdx++;
+      tw.textContent = word.slice(0, cIdx);
+      if(cIdx >= word.length){ deleting=true; setTimeout(spType, 1800); return; }
+      setTimeout(spType, 70 + Math.random()*40);
+    } else {
+      cIdx--;
+      tw.textContent = word.slice(0, cIdx);
+      if(cIdx <= 0){ deleting=false; wIdx=(wIdx+1)%WORDS.length; setTimeout(spType, 350); return; }
+      setTimeout(spType, 35);
+    }
+  }
+  setTimeout(spType, 800);
+})();
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
