@@ -1,16 +1,78 @@
 {
   "current_month": "May 2026",
-  "today": "2026-05-25",
-  "titles_rewritten": 0,
-  "descs_rewritten": 0,
-  "dates_refreshed": 0,
-  "answers_added": 0,
-  "files_changed": 0,
-  "files_scanned": 1308,
-  "title_examples": [],
-  "desc_examples": [],
+  "today": "2026-05-26",
+  "titles_rewritten": 146,
+  "descs_rewritten": 1081,
+  "dates_refreshed": 907,
+  "answers_added": 14,
+  "files_changed": 1172,
+  "files_scanned": 1317,
+  "title_examples": [
+    {
+      "file": "1password-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "1Password Coupon Code 2026: Working Discounts Right Now | SaaSpare",
+      "after": "1Password Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "1password-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "1Password Free Trial 2026: What's Included + How to Start | SaaSpare",
+      "after": "1Password Free Trial 2026: How to Get the Full May 2026 Offer"
+    },
+    {
+      "file": "1password-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "1Password Pricing 2026: Plans from $2.99/mo \u2014 Every Fee Exposed | SaaSpare",
+      "after": "1Password Pricing 2026 (Tested May 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "activecampaign-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "ActiveCampaign Coupon Code 2026: Working Discounts Right Now | SaaSpare",
+      "after": "ActiveCampaign Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "activecampaign-free-trial-2026-how-to-start-what-you-get.html",
+      "before": "ActiveCampaign Free Trial 2026: What's Included + How to Start | SaaSpare",
+      "after": "ActiveCampaign Free Trial 2026: How to Get the Full May 2026 Offer"
+    },
+    {
+      "file": "activecampaign-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "ActiveCampaign Pricing 2026: Plans from $29/mo \u2014 Every Fee\u2026 | SaaSpare",
+      "after": "ActiveCampaign Pricing 2026 (Tested May) \u2014 Real Costs + Hidden Fees"
+    }
+  ],
+  "desc_examples": [
+    {
+      "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
+      "before": "1Password Business vs Cloudflare in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most businesses. No\u2026",
+      "after": "Updated May 2026. 1Password Business vs Cloudflare in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most\u2026"
+    },
+    {
+      "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
+      "before": "1Password Business vs Crowdstrike in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most businesses. No\u2026",
+      "after": "Updated May 2026. 1Password Business vs Crowdstrike in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most\u2026"
+    },
+    {
+      "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
+      "before": "1Password Business vs Duo Security in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most businesses. No\u2026",
+      "after": "Updated May 2026. 1Password Business vs Duo Security in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most\u2026"
+    },
+    {
+      "file": "1password-business-vs-okta-which-is-better-in-2026.html",
+      "before": "1Password Business vs Okta in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most businesses. No\u2026",
+      "after": "Updated May 2026. 1Password Business vs Okta in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most businesses. No\u2026\u2026"
+    },
+    {
+      "file": "1password-business-vs-qualys-which-is-better-in-2026.html",
+      "before": "1Password Business vs Qualys in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most businesses. No\u2026",
+      "after": "Updated May 2026. 1Password Business vs Qualys in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most businesses.\u2026"
+    },
+    {
+      "file": "1password-business-vs-sentinelone-which-is-better-in-2026.html",
+      "before": "1Password Business vs Sentinelone in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most businesses. No\u2026",
+      "after": "Updated May 2026. 1Password Business vs Sentinelone in 2026: head-to-head on pricing, features, and value. We ran both to find the clear winner for most\u2026"
+    }
+  ],
   "indexnow": {
     "submitted": 0,
-    "skipped_reason": "no urls"
+    "error": "HTTP Error 403: Forbidden"
   }
 }

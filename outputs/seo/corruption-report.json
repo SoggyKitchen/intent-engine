@@ -1,6 +1,77 @@
 {
-  "generated_at": "2026-05-25T13:19:32+00:00",
-  "html_files_scanned": 1351,
-  "files_changed": 0,
-  "changes": []
+  "generated_at": "2026-05-26T05:46:21+00:00",
+  "html_files_scanned": 1360,
+  "files_changed": 14,
+  "changes": [
+    {
+      "path": "site/pages/best-devtools-for-b2b-saas-debugging-analytics-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cloud-infrastructure-tools-for-b2b-saas-teams-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cloud-infrastructure-management-tools-for-b2b-saas-teams-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-ai-ml-tools-for-b2b-data-driven-decision-making-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-ai-ml-tools-for-enterprise-data-intelligence-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-ai-agent-tools-for-developers-in-2026.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cybersecurity-tools-for-b2b-software-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-secure-and-efficient-developer-workflows-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-secure-scalable-b2b-software-integrations-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-saas-analytics-tools-for-product-led-growth-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-ai-ml-tools-for-cost-effective-compression-and-analysis-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-cybersecurity-tools-for-b2b-saas-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    },
+    {
+      "path": "site/pages/best-devtools-for-code-security-logging-developer-productivity-in-2025.html",
+      "duplicate_brand_fragments": [],
+      "stale_trustbox_sentences_rewritten": 0
+    }
+  ]
 }
