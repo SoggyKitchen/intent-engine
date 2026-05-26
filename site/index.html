@@ -179,14 +179,14 @@ h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;li
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 /* ── Typewriter glint ── */
 .tw-line{display:block;min-height:1em}
-@keyframes tw-glint{0%{background-position:100% 50%}100%{background-position:-200% 50%}}
+@keyframes tw-glint{0%{background-position:0% center}100%{background-position:100% center}}
 #tw-word{
   display:inline-block;
-  background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);
+  background:linear-gradient(90deg,#e94560 0%,#ff8fa3 30%,#ffd0dc 48%,#fff5f7 52%,#ffd0dc 56%,#ff8fa3 70%,#e94560 100%);
   background-size:300% 100%;
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;
-  animation:tw-glint 3.6s linear infinite;
+  animation:tw-glint 2.8s ease-in-out infinite alternate;
   will-change:background-position;
 }
 .sp-tw-cursor{display:inline-block;width:.06em;background:#ff416d;height:.82em;vertical-align:-.08em;margin-left:.06em;animation:spBlink 1s steps(2,end) infinite;box-shadow:0 0 12px #ff416d}
