@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-26T18:06:05+00:00",
+  "generated_at_utc": "2026-05-26T21:35:44+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 40,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -70,6 +70,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/deel-vs-remote-com-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "from Remote.com to Deel?</summary> <p>Yes, Deel offers a free trial and a 14-day money-back guarantee, making it easy to switch.</p> </details> <details class=\"faq-item"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "5,255,255,.65);font-size:.92rem;line-height:1.8\">Deel offers a free trial and a 14-day money-back guarantee, making it easy to switch from Remote.com. Remote.com also offers a free trial"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ng it easy to switch from Remote.com. Remote.com also offers a free trial and a 14-day money-back guarantee, making it easy to switch from Deel. The migration process typically takes 1-2"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/notion-vs-basecamp-which-is-better-in-2026.html",
@@ -332,22 +353,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/7-best-nordlayer-alternatives-in-2026-free-paid.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "te offers a free trial, but no free plan. However, ExpressVPN Business offers a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Why are"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "mited customization options. However, most alternatives offer a free trial or a 30-day money-back guarantee to help with the migration process.</p> </details> </div> <di"
-        }
-      ],
-      "trust_state_bumped": true
-    },
-    {
       "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
       "claims": [
         {
@@ -362,6 +367,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/se-ranking-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ou can switch from Frase.io to SE Ranking. SE Ranking offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does SE"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "ase.io to SE Ranking is relatively easy, as both tools offer a free trial and a 14-day money-back guarantee. However, it may take some time to set up and configure SE Ranking's advanced f"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
@@ -422,12 +443,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": ", you can switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Mon"
+          "context": ", you can switch from Wrike to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "ke to Monday.com is relatively easy, as both platforms offer a free trial and a 14-day money-back guarantee. Monday.com's onboarding process is user-friendly and accessible, while Wrike's"
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. Wrike also offers a free"
         }
       ],
       "trust_state_bumped": true
