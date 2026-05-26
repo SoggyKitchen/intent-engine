@@ -92,6 +92,11 @@ jobs:
       - name: Add ItemList schema to list pages
         run: uv run python scripts/fix_itemlist_schema.py
 
+      # 4h-3b. Re-apply design fixes (footer logo, real data) after nightly mutations.
+      - name: Re-apply design page fixes
+        run: uv run python scripts/fix_design_pages.py
+        continue-on-error: true
+
       # 4h-4. Ensure blog posts exist for all blog index links.
       - name: Create any missing blog posts
         run: uv run python scripts/create_missing_blog_posts.py
