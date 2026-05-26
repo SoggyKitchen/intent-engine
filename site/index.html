@@ -581,7 +581,6 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
   <a href="/about" class="nav-link">About</a>
   <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -634,6 +633,43 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
   </div>
 </section>
 
+
+<!-- ═══ BRAND MARQUEE (new design) ═══ -->
+<div class="brand-marquee" style="padding:1.5rem 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);background:rgba(0,0,0,.2);overflow:hidden;position:relative">
+  <div style="position:absolute;top:0;bottom:0;left:0;width:140px;z-index:2;pointer-events:none;background:linear-gradient(90deg,#07070d,transparent)"></div>
+  <div style="position:absolute;top:0;bottom:0;right:0;width:140px;z-index:2;pointer-events:none;background:linear-gradient(-90deg,#07070d,transparent)"></div>
+  <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,248,245,.22);text-align:center;margin-bottom:.75rem">Tools covered include</div>
+  <div class="brand-track" style="display:flex;gap:0;width:max-content;animation:bm 40s linear infinite">
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/hubspot/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> HubSpot</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Notion</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.55rem;letter-spacing:-.02em">SF</span> Salesforce</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/shopify/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Shopify</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/asana/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Asana</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/clickup/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> ClickUp</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/dropbox/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Dropbox</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/zoom/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Zoom</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/1password/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> 1Password</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/bitwarden/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Bitwarden</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/figma/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Figma</span>
+    <!-- duplicate for seamless loop -->
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/hubspot/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> HubSpot</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Notion</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.55rem;letter-spacing:-.02em">SF</span> Salesforce</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/shopify/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Shopify</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/asana/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Asana</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/clickup/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> ClickUp</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/dropbox/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Dropbox</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/zoom/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Zoom</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/1password/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> 1Password</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/bitwarden/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Bitwarden</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/figma/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Figma</span>
+  </div>
+</div>
+<style>@keyframes bm{from{transform:translateX(0)}to{transform:translateX(-50%)}}</style>
+
+
+<style>@keyframes bm{from{transform:translateX(0)}to{transform:translateX(-50%)}}</style>
+
 <!-- STATS -->
 <div class="stats">
   <div class="stat"><span class="stat-val" data-count="1318" id="stat-pages">1,318<span>+</span></span><span class="stat-label">Buyer pages live</span></div>
@@ -643,57 +679,6 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 </div>
 <div class="divider"></div>
 
-<!-- CATEGORIES -->
-<div class="section reveal">
-  <div class="section-header">
-    <div>
-      <span class="section-eyebrow">Browse by category</span>
-      <h2 class="section-title">16 SaaS Verticals Covered</h2>
-    </div>
-    <a href="/pages/" class="view-all">View all &#8594;</a>
-  </div>
-  <div class="cat-grid">
-    <a class="cat-card" href="/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">⌁</div><div class="cat-header"><span class="cat-tag">SEO</span><span class="cat-count">28+</span></div><div class="cat-name">SEO Tools</div><div class="cat-desc">Ahrefs, Semrush, Moz, Surfer SEO</div></a>
-    <a class="cat-card" href="/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">▣</div><div class="cat-header"><span class="cat-tag">CRM</span><span class="cat-count">18+</span></div><div class="cat-name">CRM</div><div class="cat-desc">Salesforce, HubSpot, Pipedrive, Monday</div></a>
-    <a class="cat-card" href="/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">↗</div><div class="cat-header"><span class="cat-tag">Marketing</span><span class="cat-count">24+</span></div><div class="cat-name">Marketing Automation</div><div class="cat-desc">HubSpot, ActiveCampaign, Mailchimp</div></a>
-    <a class="cat-card" href="/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">○</div><div class="cat-header"><span class="cat-tag">HR</span><span class="cat-count">14+</span></div><div class="cat-name">HR &amp; Recruiting</div><div class="cat-desc">Rippling, Deel, BambooHR, Gusto</div></a>
-    <a class="cat-card" href="/pages/xero-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">$</div><div class="cat-header"><span class="cat-tag">Finance</span><span class="cat-count">16+</span></div><div class="cat-name">Finance Ops</div><div class="cat-desc">Ramp, Brex, Xero, QuickBooks</div></a>
-    <a class="cat-card" href="/pages/datadog-review-2026-is-it-worth-it-honest-verdict"><div class="cat-emoji">{}</div><div class="cat-header"><span class="cat-tag">Dev</span><span class="cat-count">20+</span></div><div class="cat-name">Dev Tools</div><div class="cat-desc">Datadog, Linear, GitHub Copilot, Sentry</div></a>
-    <a class="cat-card" href="/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">◆</div><div class="cat-header"><span class="cat-tag">Ecommerce</span><span class="cat-count">12+</span></div><div class="cat-name">Ecommerce</div><div class="cat-desc">Shopify, BigCommerce, WooCommerce</div></a>
-    <a class="cat-card" href="/pages/best-1password-alternatives-in-2026-free-paid"><div class="cat-emoji">●</div><div class="cat-header"><span class="cat-tag">Security</span><span class="cat-count">10+</span></div><div class="cat-name">Cybersecurity</div><div class="cat-desc">1Password, NordLayer, Okta</div></a>
-    <a class="cat-card" href="/pages/notion-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">▪</div><div class="cat-header"><span class="cat-tag">PM</span><span class="cat-count">22+</span></div><div class="cat-name">Project Management</div><div class="cat-desc">Asana, ClickUp, Notion, Monday</div></a>
-    <a class="cat-card" href="/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">☁</div><div class="cat-header"><span class="cat-tag">Cloud</span><span class="cat-count">14+</span></div><div class="cat-name">Cloud Infrastructure</div><div class="cat-desc">DigitalOcean, Render, Supabase, Vercel</div></a>
-    <a class="cat-card" href="/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">§</div><div class="cat-header"><span class="cat-tag">Legal</span><span class="cat-count">8+</span></div><div class="cat-name">Legal &amp; Contracts</div><div class="cat-desc">DocuSign, PandaDoc, Ironclad</div></a>
-    <a class="cat-card" href="/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">⌘</div><div class="cat-header"><span class="cat-tag">AI</span><span class="cat-count">18+</span></div><div class="cat-name">AI Writing Tools</div><div class="cat-desc">Jasper, Copy.ai, Claude, Perplexity</div></a>
-  </div>
-</div>
-<div class="divider"></div>
-
-<!-- VERDICT -->
-<section class="verdict-section reveal">
-  <div class="verdict-inner">
-    <div>
-      <span class="section-eyebrow">Why SaaSpare</span>
-      <h2 class="verdict-statement">No vendor has <em>ever</em> paid to change a verdict.</h2>
-      <p style="color:var(--muted);font-size:.92rem;line-height:1.75;margin-top:1.2rem;max-width:380px">G2 sells "review campaigns". Capterra charges for top placement. SaaSpare doesn't. The ranking you see is the one you deserve.</p>
-    </div>
-    <div class="verdict-right">
-      <div class="verdict-item">
-        <div class="verdict-icon">✗</div>
-        <div><h4>No paid placements</h4><p>Vendors can't buy rank. Commission links are disclosed on every page — they never move the verdict.</p></div>
-      </div>
-      <div class="verdict-item">
-        <div class="verdict-icon">↓</div>
-        <div><h4>Real pricing pulled from source</h4><p>Hidden fees, per-seat traps, and annual-discount gotchas called out explicitly.</p></div>
-      </div>
-      <div class="verdict-item">
-        <div class="verdict-icon">↺</div>
-        <div><h4>Updated every week</h4><p>Pricing changes, new releases, and feature shifts tracked automatically.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="divider"></div>
 
 <!-- COMPARISONS -->
 <div class="section reveal">
@@ -726,6 +711,7 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
   </div>
 </div>
 <div class="divider"></div>
+
 
 <!-- BUYER TOOLS -->
 <div class="section reveal">
@@ -764,55 +750,6 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
   </div>
 </div>
 <div class="divider"></div>
-
-<!-- TRUST -->
-<div class="section reveal">
-  <div style="text-align:center;max-width:480px;margin:0 auto">
-    <span class="section-eyebrow">Why teams trust us</span>
-    <h2 class="section-title" style="margin-bottom:0">Built for buyers, not vendors</h2>
-  </div>
-  <div class="trust-grid">
-    <div class="trust-item"><h4>No paid rankings</h4><p>Vendors can't pay to appear higher or change verdicts. Period.</p></div>
-    <div class="trust-item"><h4>Real pricing data</h4><p>Pulled directly from vendor sites. Hidden fees and per-seat traps called out.</p></div>
-    <div class="trust-item"><h4>Affiliate disclosure</h4><p>Some links earn us a commission. It never costs you more, and never sways our verdict.</p></div>
-    <div class="trust-item"><h4>Updated weekly</h4><p>Pricing changes, new releases and feature updates tracked continuously.</p></div>
-  </div>
-</div>
-
-<!-- FOOTER -->
-
-<!-- ═══ BRAND MARQUEE (new design) ═══ -->
-<div class="brand-marquee" style="padding:1.5rem 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);background:rgba(0,0,0,.2);overflow:hidden;position:relative">
-  <div style="position:absolute;top:0;bottom:0;left:0;width:140px;z-index:2;pointer-events:none;background:linear-gradient(90deg,#07070d,transparent)"></div>
-  <div style="position:absolute;top:0;bottom:0;right:0;width:140px;z-index:2;pointer-events:none;background:linear-gradient(-90deg,#07070d,transparent)"></div>
-  <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,248,245,.22);text-align:center;margin-bottom:.75rem">Tools covered include</div>
-  <div class="brand-track" style="display:flex;gap:0;width:max-content;animation:bm 40s linear infinite">
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/hubspot/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> HubSpot</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Notion</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.55rem;letter-spacing:-.02em">SF</span> Salesforce</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/shopify/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Shopify</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/asana/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Asana</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/clickup/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> ClickUp</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/dropbox/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Dropbox</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/zoom/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Zoom</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/1password/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> 1Password</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/bitwarden/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Bitwarden</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/figma/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Figma</span>
-    <!-- duplicate for seamless loop -->
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/hubspot/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> HubSpot</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Notion</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.55rem;letter-spacing:-.02em">SF</span> Salesforce</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/shopify/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Shopify</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/asana/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Asana</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/clickup/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> ClickUp</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/dropbox/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Dropbox</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/zoom/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Zoom</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/1password/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> 1Password</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/bitwarden/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Bitwarden</span>
-    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/figma/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Figma</span>
-  </div>
-</div>
-<style>@keyframes bm{from{transform:translateX(0)}to{transform:translateX(-50%)}}</style>
 
 
 <!-- ═══ LIBRARY PREVIEW (new design) ═══ -->
@@ -868,6 +805,76 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 @media(max-width:900px){.lib-preview-grid{grid-template-columns:1fr 1fr!important}}
 @media(max-width:600px){.lib-preview-grid{grid-template-columns:1fr!important}}
 </style>
+
+
+
+<!-- CATEGORIES -->
+<div class="section reveal">
+  <div class="section-header">
+    <div>
+      <span class="section-eyebrow">Browse by category</span>
+      <h2 class="section-title">16 SaaS Verticals Covered</h2>
+    </div>
+    <a href="/pages/" class="view-all">View all &#8594;</a>
+  </div>
+  <div class="cat-grid">
+    <a class="cat-card" href="/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">⌁</div><div class="cat-header"><span class="cat-tag">SEO</span><span class="cat-count">28+</span></div><div class="cat-name">SEO Tools</div><div class="cat-desc">Ahrefs, Semrush, Moz, Surfer SEO</div></a>
+    <a class="cat-card" href="/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">▣</div><div class="cat-header"><span class="cat-tag">CRM</span><span class="cat-count">18+</span></div><div class="cat-name">CRM</div><div class="cat-desc">Salesforce, HubSpot, Pipedrive, Monday</div></a>
+    <a class="cat-card" href="/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">↗</div><div class="cat-header"><span class="cat-tag">Marketing</span><span class="cat-count">24+</span></div><div class="cat-name">Marketing Automation</div><div class="cat-desc">HubSpot, ActiveCampaign, Mailchimp</div></a>
+    <a class="cat-card" href="/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">○</div><div class="cat-header"><span class="cat-tag">HR</span><span class="cat-count">14+</span></div><div class="cat-name">HR &amp; Recruiting</div><div class="cat-desc">Rippling, Deel, BambooHR, Gusto</div></a>
+    <a class="cat-card" href="/pages/xero-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">$</div><div class="cat-header"><span class="cat-tag">Finance</span><span class="cat-count">16+</span></div><div class="cat-name">Finance Ops</div><div class="cat-desc">Ramp, Brex, Xero, QuickBooks</div></a>
+    <a class="cat-card" href="/pages/datadog-review-2026-is-it-worth-it-honest-verdict"><div class="cat-emoji">{}</div><div class="cat-header"><span class="cat-tag">Dev</span><span class="cat-count">20+</span></div><div class="cat-name">Dev Tools</div><div class="cat-desc">Datadog, Linear, GitHub Copilot, Sentry</div></a>
+    <a class="cat-card" href="/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">◆</div><div class="cat-header"><span class="cat-tag">Ecommerce</span><span class="cat-count">12+</span></div><div class="cat-name">Ecommerce</div><div class="cat-desc">Shopify, BigCommerce, WooCommerce</div></a>
+    <a class="cat-card" href="/pages/best-1password-alternatives-in-2026-free-paid"><div class="cat-emoji">●</div><div class="cat-header"><span class="cat-tag">Security</span><span class="cat-count">10+</span></div><div class="cat-name">Cybersecurity</div><div class="cat-desc">1Password, NordLayer, Okta</div></a>
+    <a class="cat-card" href="/pages/notion-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">▪</div><div class="cat-header"><span class="cat-tag">PM</span><span class="cat-count">22+</span></div><div class="cat-name">Project Management</div><div class="cat-desc">Asana, ClickUp, Notion, Monday</div></a>
+    <a class="cat-card" href="/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">☁</div><div class="cat-header"><span class="cat-tag">Cloud</span><span class="cat-count">14+</span></div><div class="cat-name">Cloud Infrastructure</div><div class="cat-desc">DigitalOcean, Render, Supabase, Vercel</div></a>
+    <a class="cat-card" href="/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">§</div><div class="cat-header"><span class="cat-tag">Legal</span><span class="cat-count">8+</span></div><div class="cat-name">Legal &amp; Contracts</div><div class="cat-desc">DocuSign, PandaDoc, Ironclad</div></a>
+    <a class="cat-card" href="/pages/jasper-ai-pricing-2026-plans-costs-what-you-actually-pay"><div class="cat-emoji">⌘</div><div class="cat-header"><span class="cat-tag">AI</span><span class="cat-count">18+</span></div><div class="cat-name">AI Writing Tools</div><div class="cat-desc">Jasper, Copy.ai, Claude, Perplexity</div></a>
+  </div>
+</div>
+<div class="divider"></div>
+
+
+<!-- VERDICT -->
+<section class="verdict-section reveal">
+  <div class="verdict-inner">
+    <div>
+      <span class="section-eyebrow">Why SaaSpare</span>
+      <h2 class="verdict-statement">No vendor has <em>ever</em> paid to change a verdict.</h2>
+      <p style="color:var(--muted);font-size:.92rem;line-height:1.75;margin-top:1.2rem;max-width:380px">G2 sells "review campaigns". Capterra charges for top placement. SaaSpare doesn't. The ranking you see is the one you deserve.</p>
+    </div>
+    <div class="verdict-right">
+      <div class="verdict-item">
+        <div class="verdict-icon">✗</div>
+        <div><h4>No paid placements</h4><p>Vendors can't buy rank. Commission links are disclosed on every page — they never move the verdict.</p></div>
+      </div>
+      <div class="verdict-item">
+        <div class="verdict-icon">↓</div>
+        <div><h4>Real pricing pulled from source</h4><p>Hidden fees, per-seat traps, and annual-discount gotchas called out explicitly.</p></div>
+      </div>
+      <div class="verdict-item">
+        <div class="verdict-icon">↺</div>
+        <div><h4>Updated every week</h4><p>Pricing changes, new releases, and feature shifts tracked automatically.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+
+<!-- TRUST -->
+<div class="section reveal">
+  <div style="text-align:center;max-width:480px;margin:0 auto">
+    <span class="section-eyebrow">Why teams trust us</span>
+    <h2 class="section-title" style="margin-bottom:0">Built for buyers, not vendors</h2>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-item"><h4>No paid rankings</h4><p>Vendors can't pay to appear higher or change verdicts. Period.</p></div>
+    <div class="trust-item"><h4>Real pricing data</h4><p>Pulled directly from vendor sites. Hidden fees and per-seat traps called out.</p></div>
+    <div class="trust-item"><h4>Affiliate disclosure</h4><p>Some links earn us a commission. It never costs you more, and never sways our verdict.</p></div>
+    <div class="trust-item"><h4>Updated weekly</h4><p>Pricing changes, new releases and feature updates tracked continuously.</p></div>
+  </div>
+</div>
 
 
 <!-- ═══ NEWSLETTER (new design) ═══ -->
