@@ -37,6 +37,7 @@ jobs:
           DB_PATH: data/intent.db
 
       - name: Run programmatic SEO
+        continue-on-error: true
         run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '110' }}
         env:
           DB_PATH: data/intent.db
@@ -93,6 +94,9 @@ jobs:
 
       - name: Flag any risky factual claims
         run: uv run python scripts/flag_risky_claims.py
+
+      - name: Rebuild sitemap after new pages
+        run: uv run python scripts/fix_jsonld_sitemap.py
 
       - name: CI gate - title / trust-box corruption
         run: uv run pytest tests/test_normalise.py -v
