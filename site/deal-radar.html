@@ -3,162 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SaaSpare Deal Radar: Find Free Trials &amp; Avoid SaaS Pricing Traps</title>
-<meta name="description" content="Discover SaaSpare Deal Radar: Track SaaS pricing changes, free trials, and exclusive discounts. Never overpay again.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://saaspare.org/deal-radar">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<meta name="theme-color" content="#07070d">
-<meta property="og:title" content="SaaSpare Deal Radar: Find Free Trials &amp; Avoid SaaS Pricing Traps">
-<meta property="og:description" content="Discover SaaSpare Deal Radar: Track SaaS pricing changes, free trials, and exclusive discounts. Never overpay again.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://saaspare.org/deal-radar">
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
-<meta name="google-adsense-account" content="ca-pub-9433840442322701">
-<script>(function(){function loadAd(){var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0';s.setAttribute('data-deferred-adsense','1');document.head.appendChild(s);}if('requestIdleCallback' in window){requestIdleCallback(loadAd,{timeout:3000});}else{setTimeout(loadAd,1500);}})();</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
+<title>Deal Radar — Live SaaS Deals | SaaSpare</title>
+<link rel="stylesheet" href="/assets/sp-shared.css">
+<link rel="stylesheet" href="/assets/sp-motion.css">
 <style>
-:root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{text-decoration:none;color:inherit}
-::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
-::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
-body::after{display:none}
+/* Deal Radar layout: left filter sidebar + main area */
+.dr-layout{display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:start}
+.dr-side{position:sticky;top:90px;padding:20px;max-height:calc(100vh - 110px);overflow-y:auto}
+.dr-side::-webkit-scrollbar{width:4px}
+.dr-side-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.dr-side-head h4{font-size:.95rem;font-weight:700;color:var(--ink)}
+.dr-clear{font-size:.74rem;color:var(--ink-4);cursor:pointer}
+.dr-clear:hover{color:var(--pink-light)}
+.dr-group{margin-top:16px;padding-top:16px;border-top:1px solid var(--line-soft)}
+.dr-group:first-of-type{border:0;padding-top:0;margin-top:14px}
+.dr-group h5{font-size:.7rem;font-weight:700;color:var(--ink-4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.dr-opt{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;font-size:.84rem;color:var(--ink-3);cursor:pointer;transition:all .15s;margin-bottom:2px}
+.dr-opt:hover{background:rgba(255,255,255,.04);color:var(--ink)}
+.dr-opt.active{background:linear-gradient(135deg, rgba(255,65,109,.18), rgba(201,41,80,.08));color:var(--pink-light);font-weight:600}
+.dr-opt-count{font-size:.72rem;color:var(--ink-5);font-weight:500}
+.dr-opt.active .dr-opt-count{color:var(--pink-light)}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease}
-nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.dr-side .sp-btn{margin-top:16px;width:100%}
+
+/* Hero */
+.dr-hero{text-align:center;padding:4rem 1.5rem 1rem;display:flex;flex-direction:column;align-items:center;gap:1rem;position:relative;isolation:isolate}
+.dr-hero > *:not(.dr-radar-bg){position:relative;z-index:2}
+
+/* Radar visual baked-in (compact, behind hero) */
+.dr-radar-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:0;opacity:.45}
+.dr-radar-bg .sp-radar{width:520px;max-width:80vw}
+
+/* Stats below search */
+.dr-hero-stats{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+
+/* Search */
+.dr-search{display:flex;align-items:center;gap:8px;width:100%;max-width:600px;padding:6px 6px 6px 20px;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:var(--r-full);backdrop-filter:blur(20px);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.dr-search > svg{color:var(--ink-4)}
+.dr-search input{flex:1;background:none;border:none;outline:none;padding:.9rem 0;font-size:.95rem;color:var(--ink)}
+.dr-search input::placeholder{color:var(--ink-5)}
+
+/* Tab strip */
+.dr-tabs{display:flex;gap:6px;margin:1.75rem 0 1.25rem;flex-wrap:wrap}
+.dr-tab{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:var(--r-full);font-size:.82rem;color:var(--ink-3);font-weight:600;background:rgba(255,255,255,.04);border:1px solid var(--line);cursor:pointer;transition:all .15s}
+.dr-tab:hover{color:var(--ink)}
+.dr-tab.active{background:linear-gradient(135deg, var(--pink), var(--pink-deep));color:#fff;border-color:transparent;box-shadow:0 8px 24px rgba(255,65,109,.4)}
+.dr-tab svg{width:13px;height:13px}
+
+/* Deal row */
+.dr-deals{display:flex;flex-direction:column;gap:12px}
+.dr-deal{
+  display:grid;
+  grid-template-columns:auto 1fr auto auto auto;
+  gap:24px;align-items:center;
+  padding:18px 22px;
+  background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);
+  transition:all .25s;
+}
+.dr-deal:hover{border-color:var(--line-pink);transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,65,109,.10), 0 0 0 1px rgba(255,75,115,.2)}
+.dr-deal .sp-logo-lg{flex-shrink:0}
+
+.dr-deal-body{min-width:0}
+.dr-deal-head{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.dr-deal-name{font-size:1.05rem;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.dr-deal-desc{font-size:.84rem;color:var(--ink-3);margin-bottom:6px;line-height:1.4}
+.dr-deal-tags{display:flex;gap:6px;flex-wrap:wrap}
+
+.dr-deal-disc-col{text-align:right;min-width:140px}
+.dr-deal-best{display:inline-block;font-size:.66rem;font-weight:800;color:var(--ink);background:linear-gradient(135deg, var(--pink), var(--pink-deep));padding:3px 9px;border-radius:var(--r-full);margin-bottom:6px;letter-spacing:.04em}
+.dr-deal-exc{display:block;font-size:.7rem;color:var(--ink-4);margin-bottom:6px}
+.dr-deal-disc{font-size:1.9rem;font-weight:900;letter-spacing:-.04em;line-height:1;background:linear-gradient(135deg, var(--pink), var(--pink-light));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 24px rgba(255,65,109,.3);text-shadow:none}
+.dr-deal-price{display:block;font-size:.92rem;color:var(--ink);font-weight:700;margin-top:6px}
+.dr-deal-price em{font-style:normal;font-size:.74rem;color:var(--ink-4);font-weight:500}
+.dr-deal-billing{display:block;font-size:.72rem;color:var(--ink-4);margin-top:2px}
+
+.dr-deal-cd-col{display:flex;flex-direction:column;align-items:center;gap:6px}
+.dr-deal-cd-lbl{font-size:.66rem;color:var(--ink-4);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.dr-deal-cd{display:flex;gap:4px;align-items:center}
+.dr-cd-unit{min-width:38px;text-align:center;padding:6px 6px;background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:8px}
+.dr-cd-num{font-size:1rem;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.02em}
+.dr-cd-sub{font-size:.55rem;color:var(--ink-5);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.dr-cd-sep{color:var(--ink-5);font-weight:700;font-size:.9rem}
+
+.dr-deal-actions{display:flex;align-items:center;gap:8px}
+.dr-deal-save{
+  width:42px;height:42px;border-radius:11px;
+  background:rgba(255,255,255,.05);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--ink-3);transition:all .2s;
+}
+.dr-deal-save:hover{background:rgba(255,65,109,.12);color:var(--pink-light);border-color:var(--line-pink)}
+
+/* Trust strip below list */
+.dr-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:1.5rem;padding:18px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md)}
+.dr-trust-item{display:flex;align-items:flex-start;gap:12px}
+.dr-trust-item strong{display:block;color:var(--ink);font-size:.92rem;font-weight:700;margin-bottom:4px}
+.dr-trust-item span{font-size:.78rem;color:var(--ink-4);line-height:1.45}
+
+@media (max-width: 1100px){
+  .dr-layout{grid-template-columns:1fr}
+  .dr-side{position:static;max-height:none}
+}
+@media (max-width: 900px){
+  .dr-deal{grid-template-columns:auto 1fr;gap:14px}
+  .dr-deal-disc-col,.dr-deal-cd-col{grid-column:1 / -1;text-align:left;align-items:flex-start}
+  .dr-deal-actions{grid-column:1 / -1}
+}
+@media (max-width: 600px){.dr-trust{grid-template-columns:1fr}}
+
+/* ── EXISTING NAV (preserved) ─────────────────────────────────────────── */
+:root{--border:rgba(255,255,255,.07);--red:#e94560;--red2:#c73652;--muted:rgba(255,248,245,.42)}
+nav#nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease;background:transparent;border-bottom:none}
+nav#nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
 .logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
 .mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
 .wv{pointer-events:none;transition:opacity .3s}
 @keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
-.logo:hover .logo-mark{animation:none}
-.logo:hover .mark-top{transform:translateX(26px);filter:drop-shadow(-2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}
-.logo:hover .mark-bot{transform:translateX(-26px);filter:drop-shadow(2px 0 6px rgba(0,0,0,.9)) drop-shadow(0 0 14px rgba(233,69,96,.5))}
+.logo:hover .mark-top{transform:translateX(26px)}.logo:hover .mark-bot{transform:translateX(-26px)}
 .logo:hover .wv,.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{opacity:0}
 .logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
-.logo-text em{color:var(--red);font-style:normal}
-.nav-link{color:var(--muted);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap}
-.nav-link:hover,.nav-link.active{color:#fff}
-.nav-cta{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.logo-text em{color:#e94560;font-style:normal}
+nav#nav .nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
+nav#nav .nav-link:hover{color:#fff}
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+/* Push content below fixed nav */
+body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
 
-/* HERO */
-.page-hero{position:relative;overflow:hidden;padding:5.6rem 2rem 2.6rem;text-align:center;z-index:1}
-.page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(80,18,28,.85) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 30%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg)}
-.page-hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);animation:dotDrift 36s linear infinite;opacity:.7}
-@keyframes dotDrift{from{background-position:0 0}to{background-position:32px 32px}}
-.page-hero-orb{position:absolute;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.14) 0%,rgba(160,20,40,.06) 42%,transparent 70%);top:-320px;left:50%;pointer-events:none;filter:blur(58px);animation:orbDrift 14s ease-in-out infinite}
-@keyframes orbDrift{0%,100%{opacity:.62;transform:translate(-50%,0) scale(1)}33%{opacity:.88;transform:translate(-46%,10px) scale(1.05)}66%{opacity:.94;transform:translate(-54%,-6px) scale(1.09)}}
-.page-hero-orb2{position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(180,30,60,.09) 0%,transparent 70%);top:18%;right:-160px;pointer-events:none;filter:blur(60px);animation:orbDrift 17s ease-in-out infinite 2.5s}
-.page-hero-content{position:relative;z-index:2;max-width:780px;margin:0 auto}
-.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.07);border:1px solid rgba(233,69,96,.18);color:rgba(255,185,200,.78);padding:4px 12px;border-radius:100px;font-size:.66rem;font-weight:600;letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4rem;animation:up .6s ease both}
-.page-eyebrow::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--red);box-shadow:0 0 6px var(--red);flex-shrink:0;animation:dotPulse 2.4s ease-in-out infinite}
-@keyframes dotPulse{0%,100%{box-shadow:0 0 4px var(--red)}50%{box-shadow:0 0 10px var(--red),0 0 0 3px rgba(233,69,96,.1)}}
-.page-hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.14;margin-bottom:1rem;animation:up .7s .1s ease both;text-wrap:balance}
-.page-hero h1 em{color:var(--red);font-style:normal;position:relative;display:inline-block;background:linear-gradient(100deg,var(--red) 0%,#ff8fa3 35%,#ffd1dc 50%,#ff8fa3 65%,var(--red) 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4.5s linear infinite;padding-bottom:.06em}
-@keyframes shimmer{0%{background-position:300% center}100%{background-position:-100% center}}
-.page-hero p.page-sub,.page-hero .page-sub{color:var(--muted);font-size:1.02rem;line-height:1.8;max-width:580px;margin:0 auto;animation:up .7s .2s ease both;text-wrap:pretty}
-@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-/* floating cards */
-@keyframes cardFloat{
-  0%,100%{transform:translateY(0px)}
-  50%{transform:translateY(-8px)}
-}
-.deal{
-  animation:cardFloat 4.2s ease-in-out infinite;
-}
-.deal:nth-child(2){animation-delay:0.2s}
-.deal:nth-child(3){animation-delay:0.4s}
-.deal:nth-child(4){animation-delay:0.6s}
-.deal:nth-child(5){animation-delay:0.8s}
-.deal:nth-child(6){animation-delay:1s}
-
-.why-card{
-  animation:cardFloat 4.2s ease-in-out infinite;
-}
-.why-card:nth-child(2){animation-delay:0.3s}
-.why-card:nth-child(3){animation-delay:0.6s}
-
-.shell{max-width:1280px;margin:0 auto;padding:1.6rem clamp(1.5rem,4vw,3rem) 7rem}
-.radar-layout{display:grid;grid-template-columns:minmax(280px,320px) minmax(0,1fr);gap:1.5rem;align-items:start}
-.panel{background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.025));border:1px solid var(--border);border-radius:20px;padding:1.2rem;box-shadow:0 20px 60px rgba(0,0,0,.18)}
-.panel-title{font-size:.62rem;font-weight:700;color:var(--dim);letter-spacing:.9px;text-transform:uppercase;margin-bottom:.5rem;display:block}
-select{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);color:#fff;border-radius:10px;padding:.82rem 1rem;font:inherit;outline:none;margin-bottom:1rem;transition:border-color .2s}
-select:focus{border-color:rgba(233,69,96,.45)}
-.quick-pick{display:grid;gap:.5rem;margin:1rem 0}
-.quick-pick button{border:1px solid var(--border);background:var(--card);color:rgba(255,255,255,.72);border-radius:12px;padding:.7rem .85rem;text-align:left;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;transition:all .2s}
-.quick-pick button:hover,.quick-pick button.active{background:rgba(233,69,96,.12);border-color:rgba(233,69,96,.3);color:#fff}
-.checks{display:grid;gap:.5rem}
-.check-label{display:flex;align-items:center;gap:.55rem;font-size:.84rem;color:rgba(255,255,255,.65);font-weight:600;cursor:pointer}
-.check-label input{accent-color:var(--red)}
-.helper{margin-top:1rem;color:var(--dim);font-size:.76rem;line-height:1.55}
-
-.deal-grid{display:grid;gap:.85rem}
-.deal{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.2rem;transition:all .22s;display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:start}
-.deal:hover{transform:translateY(-3px);border-color:rgba(233,69,96,.28);background:rgba(233,69,96,.048)}
-.deal h3{font-size:1rem;font-weight:800;color:#fff;letter-spacing:-.02em}
-.deal p{color:var(--muted);font-size:.82rem;margin-top:.28rem;line-height:1.55}
-.deal-badges{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.65rem}
-.deal-badge{font-size:.65rem;color:rgba(255,210,220,.88);background:rgba(233,69,96,.12);border:1px solid rgba(233,69,96,.25);border-radius:100px;padding:.18rem .5rem;font-weight:700}
-.deal-actions{display:flex;flex-direction:column;gap:.45rem;align-items:flex-end;flex-shrink:0}
-.btn-primary{display:inline-flex;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;border-radius:100px;padding:.6rem 1rem;font-size:.76rem;font-weight:800;white-space:nowrap;box-shadow:0 4px 14px rgba(233,69,96,.35);transition:transform .15s}
-.btn-primary:hover{transform:scale(1.04)}
-.btn-ghost{display:inline-flex;background:rgba(255,255,255,.06);border:1px solid var(--border);color:rgba(255,255,255,.6);border-radius:100px;padding:.6rem 1rem;font-size:.76rem;font-weight:700;white-space:nowrap;transition:all .2s}
-.btn-ghost:hover{border-color:rgba(255,255,255,.2);color:#fff}
-
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}
-.why-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:1.3rem}
-.why-card h4{font-size:.95rem;font-weight:800;color:#fff;margin-bottom:.35rem}
-.why-card p{color:var(--muted);font-size:.8rem;line-height:1.55}
-
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-
-footer{border-top:1px solid var(--border);position:relative;z-index:1}
-.footer-inner{max-width:1300px;margin:0 auto;padding:3.5rem clamp(1.5rem,4vw,3rem) 2.5rem;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem}
-.footer-brand p{font-size:.8rem;color:rgba(255,255,255,.24);line-height:1.75;max-width:220px;margin-top:.75rem}
-.footer-logo{display:flex;align-items:center;gap:8px;margin-bottom:.65rem}
-.footer-col h4{font-size:.62rem;font-weight:700;color:rgba(255,255,255,.22);letter-spacing:.9px;text-transform:uppercase;margin-bottom:.9rem}
-.footer-col a{display:block;font-size:.8rem;color:rgba(255,255,255,.32);margin-bottom:.5rem;transition:color .18s}
-.footer-col a:hover{color:#fff}
-.footer-bottom{max-width:1300px;margin:0 auto;padding:1.25rem clamp(1.5rem,4vw,3rem);border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.72rem;color:rgba(255,255,255,.18)}
-.footer-bottom a{color:rgba(255,255,255,.24)}
-.footer-bottom a:hover{color:rgba(255,255,255,.6)}
-
-@media(max-width:860px){.radar-layout{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){nav{padding:.8rem 1.2rem}.nav-link{display:none}.page-hero{padding:5.25rem 1.25rem 2.4rem}.shell{padding:1.4rem 1.25rem 5rem}.deal{grid-template-columns:1fr}.deal-actions{flex-direction:row;flex-wrap:wrap}.why-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr;gap:2rem}}
-@media(max-width:480px){.footer-inner{grid-template-columns:1fr}}
-nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}nav#nav.scrolled,nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}</style>
-<meta name="twitter:site" content="@SaaSpare">
-<meta name="twitter:title" content="SaaSpare Deal Radar: Find Free Trials &amp; Avoid SaaS Pricing Traps">
-<meta name="twitter:description" content="Discover SaaSpare Deal Radar: Track SaaS pricing changes, free trials, and exclusive discounts. Never overpay again.">
-<meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": ["https://twitter.com/SaaSpare"]}</script>
-<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
-<link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="stylesheet" href="/assets/saaspare-ui.css">
-<link rel="stylesheet" href="/assets/saaspare-v2.css">
-<!-- unified-v2 -->
-<!-- ga-events-v1 --><script defer src="/assets/saaspare-events.js"></script>
-<!-- howto-v1 --><script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to find the right SaaS free trial or deal","description":"Use Deal Radar to discover the cheapest, safest onramp for any B2B SaaS tool.","url":"https://saaspare.org/deal-radar","totalTime":"PT5M","step":[{"@type":"HowToStep","position":1,"name":"Search for a tool or category","text":"Type the vendor name or category into Deal Radar."},{"@type":"HowToStep","position":2,"name":"Check the trial terms","text":"Review how long the trial is, whether it needs a credit card, and whether it converts to a paid plan automatically."},{"@type":"HowToStep","position":3,"name":"Compare to alternatives","text":"SaaSpare surfaces 2-3 alternatives with better trial terms where applicable."},{"@type":"HowToStep","position":4,"name":"Start the trial via a vendor-direct link","text":"We link straight to the vendor's signup, not a paid review page."}]}</script>
-<!-- speakable-v1 --><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"SaaSpare Deal Radar","url":"https://saaspare.org/deal-radar","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".page-sub",".page-eyebrow"]}}</script>
-<!-- rss-autodiscovery --><link rel="alternate" type="application/rss+xml" title="SaaSpare" href="/feed.xml">
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RLYVYV8WQJ');
+</script>
+  <link rel="canonical" href="https://saaspare.org/deal-radar">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#050407">
+  <meta name="robots" content="index,follow">
 </head>
-<body class="v2">
-<!-- NAV (canonical, v2) -->
+<body>
+<div class="sp-bg"></div>
+
 <nav id="nav">
   <a href="/" class="logo">
     <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg>
@@ -171,211 +160,353 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
   <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>
 
-<section class="page-hero">
-  <div class="page-hero-bg"></div>
-  <div class="page-hero-dots"></div>
-  <div class="page-hero-orb"></div>
-  <div class="page-hero-orb2"></div>
-  <div class="page-hero-content">
-    
-    <h1>Check the offer before you give SaaS <em>your card.</em></h1>
-<p style="font-size:0.82rem;color:#64748b;margin:8px 0 24px;">By <a href="/authors/smith-elly" style="color:#475569;font-weight:600;">Smith Elly</a> &middot; Updated 2026-05-21 &middot; <a href="/methodology" style="color:#64748b;">Methodology</a></p>
-    <p class="page-sub">Deal Radar points buyers to free trials, live pricing pages and comparison paths with the highest chance of saving money or avoiding the wrong subscription.</p>
+<!-- HERO with radar visual behind -->
+<section class="dr-hero" data-screen-label="01 Deal Radar Hero">
+  <!-- Radar background -->
+  <div class="dr-radar-bg" aria-hidden="true">
+    <div class="sp-radar">
+      <div class="sp-radar-ring" style="inset:0"></div>
+      <div class="sp-radar-ring" style="inset:14%"></div>
+      <div class="sp-radar-ring" style="inset:28%"></div>
+      <div class="sp-radar-ring" style="inset:42%"></div>
+      <div class="sp-radar-cross"></div>
+      <div class="sp-radar-sweep-wrap"><div class="sp-radar-sweep"></div></div>
+      <div class="sp-radar-blip" style="top:30%;left:38%;animation-delay:0s"></div>
+      <div class="sp-radar-blip" style="top:62%;left:68%;animation-delay:.7s"></div>
+      <div class="sp-radar-blip" style="top:72%;left:30%;animation-delay:1.4s"></div>
+      <div class="sp-radar-blip" style="top:38%;left:68%;animation-delay:.3s"></div>
+      <div class="sp-radar-blip" style="top:50%;left:20%;animation-delay:1.9s"></div>
+      <div class="sp-radar-center"></div>
+    </div>
+  </div>
+
+  <div class="sp-up" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center">
+    <span class="sp-eyebrow hero-badge-animated"><span class="live-pulse"><span class="live-pulse-dot"></span></span>Live deals — updated daily</span>
+    <span class="trust-chip hero-badge-animated" style="animation-delay:.1s"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Verified &amp; tested</span>
+    <span class="trust-chip hero-badge-animated" style="animation-delay:.2s">Avg. 42% savings</span>
+  </div>
+  <h1 class="sp-h1 sp-up sp-up-1"><span class="sp-accent">Deal</span> Radar</h1>
+  <p class="sp-lead sp-up sp-up-2" style="max-width:580px">Handpicked SaaS deals. Real discounts. No fluff.</p>
+
+  <form class="dr-search search-glow sp-up sp-up-3" onsubmit="event.preventDefault()">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input type="text" placeholder="Search products or categories…">
+    <button class="sp-btn sp-btn-primary glint-button">Search</button>
+  </form>
+
+  <div class="dr-hero-stats sp-up sp-up-4">
+    <span class="sp-badge sp-badge-pink">126 live deals</span>
+    <span class="sp-badge sp-badge-amber">Best deals ending soon</span>
   </div>
 </section>
 
-<div class="shell">
-  <div class="radar-layout reveal">
-    <aside class="panel" style="position:sticky;top:76px">
-      <span class="panel-title">I am shopping for</span>
-      <select id="category">
-        <option value="all">Any SaaS category</option>
-        <option value="crm">CRM and sales</option>
-        <option value="seo">SEO and content</option>
-        <option value="finance">Finance ops</option>
-        <option value="security">Security</option>
-        <option value="project">Project management</option>
-      </select>
-      <span class="panel-title">Shortcuts</span>
-      <div class="quick-pick">
-        <button type="button" data-cat="crm" data-copy="trial,pricing">I need a CRM trial today</button>
-        <button type="button" data-cat="seo" data-copy="pricing,compare">Compare SEO tools before paying</button>
-        <button type="button" data-cat="finance" data-copy="pricing">Check finance-tool costs</button>
+<!-- MAIN LAYOUT -->
+<section class="sp-section" style="padding-top:0">
+  <div class="sp-container">
+    <div class="dr-layout">
+      <!-- LEFT FILTER SIDEBAR -->
+      <aside class="sp-glass dr-side">
+        <div class="dr-side-head">
+          <h4>Filters</h4>
+          <span class="dr-clear">Clear all</span>
+        </div>
+
+        <div class="dr-group">
+          <h5>Categories</h5>
+          <div class="dr-opt active"><span>All Categories</span><span class="dr-opt-count">126</span></div>
+          <div class="dr-opt"><span>CRM</span><span class="dr-opt-count">18</span></div>
+          <div class="dr-opt"><span>Project Mgmt</span><span class="dr-opt-count">16</span></div>
+          <div class="dr-opt"><span>Marketing</span><span class="dr-opt-count">22</span></div>
+          <div class="dr-opt"><span>Sales</span><span class="dr-opt-count">14</span></div>
+          <div class="dr-opt"><span>Dev Tools</span><span class="dr-opt-count">18</span></div>
+          <div class="dr-opt"><span>Finance</span><span class="dr-opt-count">8</span></div>
+          <div class="dr-opt" style="color:var(--ink-4)"><span>More ↓</span></div>
+        </div>
+
+        <div class="dr-group">
+          <h5>Deal Type</h5>
+          <div class="dr-opt active"><span>All Deals</span><span class="dr-opt-count">126</span></div>
+          <div class="dr-opt"><span>Percentage Off</span><span class="dr-opt-count">73</span></div>
+          <div class="dr-opt"><span>Flat Discount</span><span class="dr-opt-count">31</span></div>
+          <div class="dr-opt"><span>Free Trial</span><span class="dr-opt-count">22</span></div>
+        </div>
+
+        <div class="dr-group">
+          <h5>Discount</h5>
+          <div class="dr-opt"><span>Any Discount</span></div>
+          <div class="dr-opt"><span>10% or more</span></div>
+          <div class="dr-opt"><span>25% or more</span></div>
+          <div class="dr-opt"><span>50% or more</span></div>
+        </div>
+
+        <div class="dr-group">
+          <h5>Billing</h5>
+          <div class="dr-opt"><span>Any Billing</span></div>
+          <div class="dr-opt"><span>Monthly</span></div>
+          <div class="dr-opt"><span>Annual</span></div>
+        </div>
+
+        <a href="/shortlist" class="sp-btn sp-btn-ghost sp-btn-sm" style="justify-content:space-between">
+          <span style="display:flex;align-items:center;gap:6px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg> My Shortlist</span>
+          <span class="sp-badge sp-badge-pink" style="font-size:.66rem">7</span>
+        </a>
+      </aside>
+
+      <!-- MAIN -->
+      <div>
+        <!-- Tab strip -->
+        <div class="dr-tabs">
+          <button class="dr-tab active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 7c0-3.5-3-6-6-6-1 2.5 1.5 4.5 1.5 7 0 2-2.5 3-2.5 6 0 4 3 7 7 7s7-3 7-7c0-3-2.5-4-2.5-7 0-1.5-1-2.5-2-2.5"/></svg>
+            Hot Deals
+          </button>
+          <button class="dr-tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg>
+            Highest Savings
+          </button>
+          <button class="dr-tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+            New Deals
+          </button>
+          <button class="dr-tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Ending Soon
+          </button>
+        </div>
+
+        <!-- DEAL ROWS -->
+        <div class="dr-deals">
+          <article class="dr-deal premium-card">
+            <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/1password/0094f5"></span>
+            <div class="dr-deal-body">
+              <div class="dr-deal-head">
+                <span class="dr-deal-name">1Password</span>
+                <span class="sp-badge sp-badge-green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Verified</span>
+              </div>
+              <p class="dr-deal-desc">Secure password manager for teams &amp; families.</p>
+              <div class="dr-deal-tags">
+                <span class="sp-badge sp-badge-ghost">Security</span>
+                <span class="sp-badge sp-badge-ghost">SSO</span>
+                <span class="sp-badge sp-badge-ghost">Vault</span>
+              </div>
+            </div>
+            <div class="dr-deal-disc-col">
+              <span class="dr-deal-best">Best Deal</span>
+              <div class="dr-deal-disc">50% OFF</div>
+              <span class="dr-deal-price">$2.99<em>/user/month</em></span>
+              <span class="dr-deal-billing">Billed annually</span>
+            </div>
+            <div class="dr-deal-cd-col">
+              <span class="dr-deal-exc">Exclusive on SaaSpare</span>
+              <span class="dr-deal-cd-lbl">Ends in</span>
+              <div class="dr-deal-cd"><span class="deal-timer sp-badge sp-badge-amber" data-secs="468000" style="font-size:.85rem;font-weight:800;letter-spacing:.02em;padding:6px 12px">05:14:32</span></div>
+            </div>
+            <div class="dr-deal-actions">
+              <button class="sp-btn sp-btn-primary glint-button">View Deal →</button>
+              <button class="dr-deal-save" aria-label="Save to shortlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="dr-deal premium-card">
+            <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/clickup/7b68ee"></span>
+            <div class="dr-deal-body">
+              <div class="dr-deal-head">
+                <span class="dr-deal-name">ClickUp</span>
+                <span class="sp-badge sp-badge-green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Verified</span>
+              </div>
+              <p class="dr-deal-desc">The everything app for work.</p>
+              <div class="dr-deal-tags">
+                <span class="sp-badge sp-badge-ghost">Project Mgmt</span>
+                <span class="sp-badge sp-badge-ghost">AI</span>
+                <span class="sp-badge sp-badge-ghost">Collaboration</span>
+              </div>
+            </div>
+            <div class="dr-deal-disc-col">
+              <div class="dr-deal-disc">45% OFF</div>
+              <span class="dr-deal-price">$7.50<em>/user/month</em></span>
+              <span class="dr-deal-billing">Billed annually</span>
+            </div>
+            <div class="dr-deal-cd-col">
+              <span class="dr-deal-exc">Exclusive on SaaSpare</span>
+              <span class="dr-deal-cd-lbl">Ends in</span>
+              <div class="dr-deal-cd"><span class="deal-timer sp-badge sp-badge-amber" data-secs="277260" style="font-size:.85rem;font-weight:800;letter-spacing:.02em;padding:6px 12px">03:07:21</span></div>
+            </div>
+            <div class="dr-deal-actions">
+              <button class="sp-btn sp-btn-primary glint-button">View Deal →</button>
+              <button class="dr-deal-save" aria-label="Save to shortlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="dr-deal premium-card">
+            <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/notion/ffffff"></span>
+            <div class="dr-deal-body">
+              <div class="dr-deal-head">
+                <span class="dr-deal-name">Notion</span>
+                <span class="sp-badge sp-badge-green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Verified</span>
+              </div>
+              <p class="dr-deal-desc">Notes, docs, wikis, projects. All in one.</p>
+              <div class="dr-deal-tags">
+                <span class="sp-badge sp-badge-ghost">Productivity</span>
+                <span class="sp-badge sp-badge-ghost">Docs</span>
+                <span class="sp-badge sp-badge-ghost">AI</span>
+              </div>
+            </div>
+            <div class="dr-deal-disc-col">
+              <div class="dr-deal-disc">20% OFF</div>
+              <span class="dr-deal-price">$8.00<em>/user/month</em></span>
+              <span class="dr-deal-billing">Billed annually</span>
+            </div>
+            <div class="dr-deal-cd-col">
+              <span class="dr-deal-exc">Exclusive on SaaSpare</span>
+              <span class="dr-deal-cd-lbl">Ends in</span>
+              <div class="dr-deal-cd">
+                <div class="dr-cd-unit"><div class="dr-cd-num">03</div><div class="dr-cd-sub">Days</div></div>
+                <span class="dr-cd-sep">:</span>
+                <div class="dr-cd-unit"><div class="dr-cd-num">07</div><div class="dr-cd-sub">Hrs</div></div>
+                <span class="dr-cd-sep">:</span>
+                <div class="dr-cd-unit"><div class="dr-cd-num">44</div><div class="dr-cd-sub">Mins</div></div>
+              </div>
+            </div>
+            <div class="dr-deal-actions">
+              <button class="sp-btn sp-btn-primary glint-button">View Deal →</button>
+              <button class="dr-deal-save" aria-label="Save to shortlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="dr-deal premium-card">
+            <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/hubspot/ff7a59"></span>
+            <div class="dr-deal-body">
+              <div class="dr-deal-head">
+                <span class="dr-deal-name">HubSpot</span>
+                <span class="sp-badge sp-badge-green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Verified</span>
+              </div>
+              <p class="dr-deal-desc">CRM, marketing, sales &amp; service platform.</p>
+              <div class="dr-deal-tags">
+                <span class="sp-badge sp-badge-ghost">CRM</span>
+                <span class="sp-badge sp-badge-ghost">Marketing</span>
+                <span class="sp-badge sp-badge-ghost">Sales</span>
+              </div>
+            </div>
+            <div class="dr-deal-disc-col">
+              <div class="dr-deal-disc">25% OFF</div>
+              <span class="dr-deal-price">$44.25<em>/mo</em></span>
+              <span class="dr-deal-billing">Billed annually</span>
+            </div>
+            <div class="dr-deal-cd-col">
+              <span class="dr-deal-exc">Exclusive on SaaSpare</span>
+              <span class="dr-deal-cd-lbl">Ends in</span>
+              <div class="dr-deal-cd">
+                <div class="dr-cd-unit"><div class="dr-cd-num">02</div><div class="dr-cd-sub">Days</div></div>
+                <span class="dr-cd-sep">:</span>
+                <div class="dr-cd-unit"><div class="dr-cd-num">18</div><div class="dr-cd-sub">Hrs</div></div>
+                <span class="dr-cd-sep">:</span>
+                <div class="dr-cd-unit"><div class="dr-cd-num">40</div><div class="dr-cd-sub">Mins</div></div>
+              </div>
+            </div>
+            <div class="dr-deal-actions">
+              <button class="sp-btn sp-btn-primary glint-button">View Deal →</button>
+              <button class="dr-deal-save" aria-label="Save to shortlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="dr-deal premium-card">
+            <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/figma/a259ff"></span>
+            <div class="dr-deal-body">
+              <div class="dr-deal-head">
+                <span class="dr-deal-name">Figma</span>
+                <span class="sp-badge sp-badge-green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Verified</span>
+              </div>
+              <p class="dr-deal-desc">Collaborative design platform for product teams.</p>
+              <div class="dr-deal-tags">
+                <span class="sp-badge sp-badge-ghost">Design</span>
+                <span class="sp-badge sp-badge-ghost">Prototyping</span>
+              </div>
+            </div>
+            <div class="dr-deal-disc-col">
+              <div class="dr-deal-disc">30% OFF</div>
+              <span class="dr-deal-price">$10.50<em>/editor/mo</em></span>
+              <span class="dr-deal-billing">Billed annually</span>
+            </div>
+            <div class="dr-deal-cd-col">
+              <span class="dr-deal-exc">Exclusive on SaaSpare</span>
+              <span class="dr-deal-cd-lbl">Ends in</span>
+              <div class="dr-deal-cd">
+                <div class="dr-cd-unit"><div class="dr-cd-num">06</div><div class="dr-cd-sub">Days</div></div>
+                <span class="dr-cd-sep">:</span>
+                <div class="dr-cd-unit"><div class="dr-cd-num">02</div><div class="dr-cd-sub">Hrs</div></div>
+                <span class="dr-cd-sep">:</span>
+                <div class="dr-cd-unit"><div class="dr-cd-num">11</div><div class="dr-cd-sub">Mins</div></div>
+              </div>
+            </div>
+            <div class="dr-deal-actions">
+              <button class="sp-btn sp-btn-primary glint-button">View Deal →</button>
+              <button class="dr-deal-save" aria-label="Save to shortlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Trust strip -->
+        <div class="dr-trust">
+          <div class="dr-trust-item">
+            <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div><strong>Deals you can trust</strong><span>Every offer is verified and tested by our team.</span></div>
+          </div>
+          <div class="dr-trust-item">
+            <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+            <div><strong>Real savings only</strong><span>We list genuine discounts — no marketing fluff.</span></div>
+          </div>
+          <div class="dr-trust-item">
+            <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+            <div><strong>Always up to date</strong><span>Our deals are monitored daily so you don&rsquo;t miss out.</span></div>
+          </div>
+        </div>
       </div>
-      <span class="panel-title">Show me</span>
-      <div class="checks">
-        <label class="check-label"><input type="checkbox" value="trial" checked> Free trials</label>
-        <label class="check-label"><input type="checkbox" value="pricing" checked> Pricing pages</label>
-        <label class="check-label"><input type="checkbox" value="compare" checked> Comparison proof</label>
-      </div>
-      <p class="helper">Pick a shortcut or filter manually. Every result keeps you one click from the offer and one click from the unbiased read-first page.</p>
-    </aside>
-
-    <section class="panel">
-      <div class="deal-grid" id="deals"></div>
-    </section>
-  </div>
-
-  <div class="why-grid reveal">
-    <div class="why-card">
-      <h4>Why check before you sign up</h4>
-      <p>Most SaaS vendors hide their real pricing behind a sales call. Deal Radar surfaces the shortest path to the actual offer page.</p>
-    </div>
-    <div class="why-card">
-      <h4>Free trials vs freemium</h4>
-      <p>Free trials expire. Freemium plans cap features. Deal Radar tells you which is which before you hand over your card details.</p>
-    </div>
-    <div class="why-card">
-      <h4>Pricing traps to watch for</h4>
-      <p>Per-seat minimums, annual-only discounts, and add-on fees that double your bill. We call them out on every deal listed here.</p>
     </div>
   </div>
-</div>
-
-
-
-<section class="related section" data-seo-related>
-  <h3>Related Pages</h3>
-  <a href="https://saaspare.org/pages/">Browse all SaaS comparisons</a>
-  <a href="https://saaspare.org/deal-radar">Check current SaaS deals</a>
-  <a href="https://saaspare.org/shortlist">Build a shortlist</a>
-  <a href="https://saaspare.org/pages/saas-roi-calculator">Run the ROI calculator</a>
 </section>
 
-<section class="seo-trustbox section" data-seo-trustbox data-verification-state="needs_manual_review">
-  <h2>How SaaSpare keeps this page useful</h2>
-  <p><strong>No paid rankings:</strong> Vendors cannot buy placement or verdicts. SaaSpare may earn a commission when readers click some affiliate links, but that does not change the comparison order.</p>
-    <p><strong>Last verified:</strong> This page was last checked on <time datetime="2026-05-04">May 4, 2026</time> as part of our scheduled SEO and link audits. Pricing source: public vendor pages linked from this page where available; otherwise marked for verification.</p>
-  <p><strong>Verification state:</strong> <span data-verification-label>Awaiting manual vendor-source verification</span>. Pricing, trial terms, coupon validity and refund policy may change on the vendor&#x27;s official site at any time &mdash; always confirm on the vendor page linked above before you buy.</p>
-  <p><strong>Methodology:</strong> We compare pricing signals, trial paths, buyer fit, alternatives, and visible vendor information. See <a href="https://saaspare.org/methodology">our methodology</a> and <a href="https://saaspare.org/affiliate-disclosure">affiliate disclosure</a>.</p>
-  <p><strong>Correction CTA:</strong> See outdated pricing or an incorrect trial detail? <a href="https://saaspare.org/contact">Report an error</a> and include the vendor source.</p>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="footer-logo">
-        <svg style="height:22px;width:auto;flex-shrink:0" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></svg>
-        <span style="font-weight:800;font-size:.92rem;color:#fff">Saa<em style="color:#e94560;font-style:normal">Spare</em></span>
-      </div>
-      <p>Unbiased B2B SaaS comparisons for founders, CTOs and operators making smart software decisions.</p>
+<!-- FOOTER -->
+<footer class="sp-footer">
+  <div class="sp-footer-inner">
+    <div class="sp-footer-brand">
+      <div class="sp-nav-logo"><span class="sp-nav-logo-mark">S</span>Saa<em>Spare</em></div>
+      <p>The honest guide to SaaS. Independent research, weekly pricing verification, no paid rankings.</p>
     </div>
-    <div class="footer-col"><h4>Compare</h4><a href="/pages/">All Comparisons</a><a href="/pages/?q=crm">CRM Tools</a><a href="/pages/?q=seo">SEO Software</a><a href="/pages/?q=hr">HR Tools</a><a href="/pages/?q=dev">Dev Tools</a></div>
-    <div class="footer-col"><h4>Resources</h4><a href="/shortlist">Shortlist Builder</a><a href="/deal-radar">Deal Radar</a><a href="/pages/saas-roi-calculator">ROI Calculator</a><a href="/pages/?type=pricing">Pricing Guides</a><a href="/pages/?type=alternatives">Alternatives</a></div>
-    <div class="footer-col"><h4>Company</h4><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/affiliate-disclosure">Disclosure</a></div>
+    <div class="sp-footer-col"><h4>Product</h4>
+      <a href="/pages/">Comparisons</a><a href="/shortlist">Shortlist Builder</a><a href="/roi">ROI Calculator</a><a href="/deal-radar">Deal Radar</a><a href="/newsletter">Newsletter</a>
+    </div>
+    <div class="sp-footer-col"><h4>Company</h4>
+      <a href="/about">About</a><a href="/affiliate-disclosure">Editorial Standards</a><a href="/contact">Contact</a>
+    </div>
+    <div class="sp-footer-col"><h4>Legal</h4>
+      <a href="/privacy">Privacy</a><a href="/privacy">Terms</a><a href="/affiliate-disclosure">Affiliate Disclosure</a>
+    </div>
   </div>
-  <div class="footer-bottom">
-    <span>&copy; 2026 SaaSpare &middot; <a href="/affiliate-disclosure">Affiliate Disclosure</a></span>
-    <span>This site contains affiliate links. We may earn a commission at no extra cost to you.</span>
+  <div class="sp-footer-bottom">
+    <span>© 2026 SaaSpare. All rights reserved.</span>
+    <span>Made for buyers. Not vendors.</span>
   </div>
 </footer>
+<script src="/assets/sp-motion.js" defer></script>
 
 <script>
-window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40),{passive:true});
-const rObs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.07});
-document.querySelectorAll('.reveal').forEach(el=>rObs.observe(el));
-
-/* page hero wave dots */
 (function(){
-  const canvas=document.getElementById('page-wave-dots');
-  if(!canvas)return;
-  const ctx=canvas.getContext('2d');
-  let W,H,t=0,scrollY=0;
-  function resize(){W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight}
-  resize();
-  window.addEventListener('resize',resize,{passive:true});
-  window.addEventListener('scroll',()=>{scrollY=window.scrollY},{passive:true});
-  const SPACING=28,BASE_R=1.3;
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    const maxScrollFade=window.innerHeight*2;
-    const opacityFade=Math.max(0.12,0.22-scrollY/maxScrollFade*0.08);
-    const cols=Math.ceil(W/SPACING)+4,rows=Math.ceil(H/SPACING)+2;
-    for(let r=0;r<rows;r++){
-      for(let c=0;c<cols;c++){
-        const bx=c*SPACING-SPACING,by=r*SPACING-SPACING;
-        const scrollPhase=scrollY*0.003;
-        const diagPhase1=(bx/W-by/H)*Math.PI*5.5-(t*0.42+scrollPhase);
-        const diagPhase2=(bx/W-by/H)*Math.PI*9-(t*0.26+scrollPhase*0.6);
-        const compression=(Math.sin(diagPhase1)*0.7)+(Math.sin(diagPhase2)*0.3);
-        const disp=compression*9;
-        const dx=disp*0.71,dy=-disp*0.71;
-        const x=bx+dx,y=by+dy;
-        const cx=W*0.5,cy=H*0.38;
-        const dist=Math.hypot((x-cx)/(W*0.85),(y-cy)/(H*0.72));
-        const fade=Math.max(0,(1-dist)*0.9);
-        if(fade<0.01)continue;
-        const norm=(compression+1)*0.5;
-        const alpha=fade*(0.16+norm*0.18)*opacityFade;
-        const r_dot=BASE_R*(0.62+norm*0.75);
-        ctx.beginPath();ctx.arc(x,y,r_dot,0,Math.PI*2);
-        ctx.fillStyle=`rgba(255,255,255,${alpha})`;ctx.fill();
-      }
-    }
-    t+=0.004;
-    requestAnimationFrame(draw);
-  }
-  draw();
+  var nav = document.getElementById('nav');
+  if(!nav) return;
+  function chk(){nav.classList.toggle('scrolled', window.scrollY > 50);}
+  window.addEventListener('scroll', chk, {passive:true});
+  chk();
 })();
-
-const DEALS=[
-  {cat:'crm',types:['trial','pricing'],name:'HubSpot CRM',desc:'Free CRM forever plan available. Paid tiers start at $20/seat/mo — watch the per-seat minimum on Sales Hub.',badges:['Free trial','14-day pro trial'],trial:'/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay',compare:'/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay'},
-  {cat:'crm',types:['trial','pricing'],name:'Pipedrive',desc:'14-day free trial, no card required. Annual billing saves ~30% vs monthly. CRM trap: add-ons stack fast.',badges:['14-day trial','No card needed'],trial:'https://www.pipedrive.com',compare:'/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay'},
-  {cat:'seo',types:['trial','pricing'],name:'Ahrefs',desc:'No free trial — $7 trial for 7 days. Full plans from $129/mo. Generous data limits at entry tier.',badges:['$7 trial','Annual discount'],trial:'https://ahrefs.com',compare:'/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay'},
-  {cat:'seo',types:['trial','pricing','compare'],name:'Semrush',desc:'Free plan available (limited data). Pro trial 7 days free. $139.95/mo on monthly billing — annual saves 16%.',badges:['Free plan','7-day trial'],trial:'https://semrush.com',compare:'/pages/ahrefs-vs-semrush-which-is-better-in-2026'},
-  {cat:'project',types:['trial','pricing'],name:'Notion',desc:'Free plan is generous. Plus plan $12/seat/mo. Trap: AI add-on is $10/seat/mo extra — always opt out first.',badges:['Free plan','AI add-on trap'],trial:'https://notion.so',compare:'/pages/notion-pricing-2026-plans-costs-what-you-actually-pay'},
-  {cat:'project',types:['trial','pricing'],name:'ClickUp',desc:'Free plan with 100MB storage. Business plan $12/seat/mo. Annual saves 45%. Unlimited guests are free.',badges:['Free plan','45% annual saving'],trial:'https://clickup.com',compare:'/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay'},
-  {cat:'finance',types:['trial','pricing'],name:'Xero',desc:'30-day free trial, no card needed. Plans from $29/mo. Per-transaction fees apply on lower tiers — read the small print.',badges:['30-day trial','No card'],trial:'https://xero.com',compare:'/pages/xero-pricing-2026-plans-costs-what-you-actually-pay'},
-  {cat:'security',types:['trial','pricing'],name:'1Password',desc:'14-day free trial for teams. $7.99/user/mo. Annual billing only on Business plan. Guest accounts free.',badges:['14-day trial','Guest accounts free'],trial:'https://1password.com',compare:'/pages/best-1password-alternatives-in-2026-free-paid'},
-];
-
-const DEAL_TRACKING=[
-  {name:"HubSpot CRM",page:"/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay.html",slug:"hubspot"},
-  {name:"Pipedrive",page:"/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay.html",slug:"pipedrive"},
-  {name:"Ahrefs",page:"/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay.html",slug:"ahrefs"},
-  {name:"Semrush",page:"/pages/ahrefs-vs-semrush-which-is-better-in-2026.html",slug:"semrush"},
-  {name:"Notion",page:"/pages/notion-pricing-2026-plans-costs-what-you-actually-pay.html",slug:"notion"},
-  {name:"ClickUp",page:"/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html",slug:"clickup"},
-  {name:"Xero",page:"/pages/xero-pricing-2026-plans-costs-what-you-actually-pay.html",slug:"xero"},
-  {name:"1Password",page:"/pages/best-1password-alternatives-in-2026-free-paid.html",slug:"1password"},
-];
-function dealHref(deal){
-  const match=DEAL_TRACKING.find(item=>item.name===deal.name);
-  return match?`/go/${match.slug}`:deal.trial;
-}
-
-function renderDeals(){
-  const cat=document.getElementById('category').value;
-  const checked=[...document.querySelectorAll('.checks input:checked')].map(i=>i.value);
-  const filtered=DEALS.filter(d=>(cat==='all'||d.cat===cat)&&d.types.some(t=>checked.includes(t)));
-  const grid=document.getElementById('deals');
-  if(!filtered.length){grid.innerHTML='<p style="color:var(--muted);padding:2rem;text-align:center;font-size:.88rem">No deals match your filters. Try adjusting the category or checkboxes.</p>';return}
-  grid.innerHTML=filtered.map(d=>`
-    <div class="deal">
-      <div>
-        <h3>${d.name}</h3>
-        <p>${d.desc}</p>
-        <div class="deal-badges">${d.badges.map(b=>`<span class="deal-badge">${b}</span>`).join('')}</div>
-      </div>
-      <div class="deal-actions">
-        <a class="btn-primary" href="${dealHref(d)}" target="_blank" rel="noopener">Try free &#8594;</a>
-        <a class="btn-ghost" href="${d.compare}">Read comparison</a>
-      </div>
-    </div>`).join('');
-}
-document.getElementById('category').addEventListener('change',renderDeals);
-document.querySelectorAll('.checks input').forEach(i=>i.addEventListener('change',renderDeals));
-document.querySelectorAll('.quick-pick button').forEach(btn=>btn.addEventListener('click',function(){
-  document.querySelectorAll('.quick-pick button').forEach(b=>b.classList.remove('active'));
-  this.classList.add('active');
-  document.getElementById('category').value=this.dataset.cat;
-  this.dataset.copy.split(',').forEach(v=>{const el=document.querySelector(`.checks input[value="${v}"]`);if(el)el.checked=true});
-  renderDeals();
-}));
-renderDeals();
 </script>
-<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
-<script defer src="/assets/saaspare-ui.js"></script>
-<script>(function(){var n=document.getElementById('nav');if(!n)return;function s(){n.classList.toggle('scrolled',window.scrollY>32);}s();window.addEventListener('scroll',s,{passive:true});})();</script>
 </body>
 </html>

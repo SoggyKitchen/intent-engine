@@ -383,7 +383,12 @@ footer{border-top:1px solid var(--border);position:relative;z-index:1}
   .footer-inner{grid-template-columns:1fr}
   .stat{padding:0 1.2rem}
 }
-nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}nav#nav.scrolled,nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}</style>
+nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}nav#nav.scrolled,nav.scrolled{background:rgba(8,8,16,.86) !important;border-bottom:1px solid rgba(255,255,255,.07) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}
+/* Floating chips for homepage hero */
+.floating-chip{position:absolute;display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);border-radius:9999px;font-size:.78rem;font-weight:600;color:rgba(255,248,245,.42);backdrop-filter:blur(12px);pointer-events:none;white-space:nowrap;animation:chipFloat var(--chip-dur,8s) ease-in-out infinite alternate;animation-delay:var(--chip-delay,0s)}
+@keyframes chipFloat{from{transform:translateY(0) translateX(0)}to{transform:translateY(-12px) translateX(4px)}}
+
+</style>
 <script>(function(){function loadAd(){var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0';s.setAttribute('data-deferred-adsense','1');document.head.appendChild(s);}if('requestIdleCallback' in window){requestIdleCallback(loadAd,{timeout:3000});}else{setTimeout(loadAd,1500);}})();</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
@@ -810,6 +815,112 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 </div>
 
 <!-- FOOTER -->
+
+<!-- ═══ BRAND MARQUEE (new design) ═══ -->
+<div class="brand-marquee" style="padding:1.5rem 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);background:rgba(0,0,0,.2);overflow:hidden;position:relative">
+  <div style="position:absolute;top:0;bottom:0;left:0;width:140px;z-index:2;pointer-events:none;background:linear-gradient(90deg,#07070d,transparent)"></div>
+  <div style="position:absolute;top:0;bottom:0;right:0;width:140px;z-index:2;pointer-events:none;background:linear-gradient(-90deg,#07070d,transparent)"></div>
+  <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,248,245,.22);text-align:center;margin-bottom:.75rem">Tools covered include</div>
+  <div class="brand-track" style="display:flex;gap:0;width:max-content;animation:bm 40s linear infinite">
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/hubspot/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> HubSpot</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Notion</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.55rem;letter-spacing:-.02em">SF</span> Salesforce</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/shopify/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Shopify</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/asana/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Asana</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/clickup/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> ClickUp</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/dropbox/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Dropbox</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/zoom/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Zoom</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/1password/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> 1Password</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/bitwarden/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Bitwarden</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/figma/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Figma</span>
+    <!-- duplicate for seamless loop -->
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/hubspot/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> HubSpot</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Notion</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.55rem;letter-spacing:-.02em">SF</span> Salesforce</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/shopify/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Shopify</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/asana/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Asana</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/clickup/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> ClickUp</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/dropbox/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Dropbox</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/zoom/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Zoom</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/1password/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> 1Password</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/bitwarden/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Bitwarden</span>
+    <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/figma/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)"> Figma</span>
+  </div>
+</div>
+<style>@keyframes bm{from{transform:translateX(0)}to{transform:translateX(-50%)}}</style>
+
+
+<!-- ═══ LIBRARY PREVIEW (new design) ═══ -->
+<section style="padding:4.5rem clamp(1.25rem,4vw,3rem);position:relative">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="text-align:center;margin-bottom:2.75rem;display:flex;flex-direction:column;align-items:center;gap:.85rem">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ff7a9a;padding:6px 14px;border-radius:9999px;background:rgba(255,65,109,.10);border:1px solid rgba(255,75,115,.25)"><span style="width:6px;height:6px;border-radius:50%;background:#ff416d;animation:dotPulse 2.4s ease-in-out infinite"></span>Browse the library</span>
+      <h2 style="font-size:clamp(32px,4vw,56px);line-height:1.02;font-weight:900;letter-spacing:-.035em;color:#fff7f8;text-wrap:balance">Find the right <span style="background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:spGlint 3.6s linear infinite">SaaS answer</span> faster.</h2>
+      <p style="font-size:1.05rem;line-height:1.65;color:rgba(255,247,248,.64);max-width:640px">1,200+ tools, pricing guides, side-by-side breakdowns. No vendor fluff.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
+      <a href="/pages/1password-pricing-2026-plans-costs-what-you-actually-pay" style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:14px;display:flex;flex-direction:column;gap:10px;transition:all .2s;text-decoration:none;position:relative;overflow:hidden" onmouseover="this.style.borderColor='rgba(255,75,115,.38)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.transform='translateY(0)'">
+        <div style="display:flex;align-items:center;gap:10px"><span style="width:44px;height:44px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="https://cdn.simpleicons.org/1password/0094f5" style="width:55%;height:55%;object-fit:contain;filter:brightness(1.15)"></span><div><div style="font-size:.95rem;font-weight:700;color:#fff7f8;letter-spacing:-.01em">1Password</div><div style="font-size:.72rem;color:rgba(255,247,248,.42)">Security &amp; PWD Mgmt</div></div></div>
+        <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Secure passwords, SSO, secrets management — for teams up to enterprise.</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+          <div style="font-size:.95rem;color:#fff7f8;font-weight:700">$2.99<span style="font-style:normal;font-size:.74rem;color:rgba(255,247,248,.42);font-weight:500">/user/mo</span></div>
+          <div style="font-size:.78rem;color:rgba(255,247,248,.64)"><span style="color:#f5b942">&#9733;</span> 4.9 (312)</div>
+        </div>
+      </a>
+      <a href="/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay" style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:14px;display:flex;flex-direction:column;gap:10px;transition:all .2s;text-decoration:none;position:relative;overflow:hidden" onmouseover="this.style.borderColor='rgba(255,75,115,.38)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.transform='translateY(0)'">
+        <div style="display:flex;align-items:center;gap:10px"><span style="width:44px;height:44px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="https://cdn.simpleicons.org/bitwarden/175ddc" style="width:55%;height:55%;object-fit:contain;filter:brightness(1.15)"></span><div><div style="font-size:.95rem;font-weight:700;color:#fff7f8;letter-spacing:-.01em">Bitwarden</div><div style="font-size:.72rem;color:rgba(255,247,248,.42)">Security &amp; PWD Mgmt</div></div></div>
+        <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Open-source password manager for teams &amp; enterprises with self-host options.</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+          <div style="font-size:.95rem;color:#fff7f8;font-weight:700">$4.00<span style="font-style:normal;font-size:.74rem;color:rgba(255,247,248,.42);font-weight:500">/user/mo</span></div>
+          <div style="font-size:.78rem;color:rgba(255,247,248,.64)"><span style="color:#f5b942">&#9733;</span> 4.6 (289)</div>
+        </div>
+      </a>
+      <a href="/pages/notion-pricing-2026-plans-costs-what-you-actually-pay" style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:14px;display:flex;flex-direction:column;gap:10px;transition:all .2s;text-decoration:none;position:relative;overflow:hidden" onmouseover="this.style.borderColor='rgba(255,75,115,.38)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.transform='translateY(0)'">
+        <div style="display:flex;align-items:center;gap:10px"><span style="width:44px;height:44px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:55%;height:55%;object-fit:contain;filter:brightness(1.15)"></span><div><div style="font-size:.95rem;font-weight:700;color:#fff7f8;letter-spacing:-.01em">Notion</div><div style="font-size:.72rem;color:rgba(255,247,248,.42)">Docs &amp; Productivity</div></div></div>
+        <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Docs, wikis, projects — all-in-one workspace for fast-moving teams.</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+          <div style="font-size:.95rem;color:#fff7f8;font-weight:700">$8.00<span style="font-style:normal;font-size:.74rem;color:rgba(255,247,248,.42);font-weight:500">/user/mo</span></div>
+          <div style="font-size:.78rem;color:rgba(255,247,248,.64)"><span style="color:#f5b942">&#9733;</span> 4.7 (201)</div>
+        </div>
+      </a>
+      <a href="/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay" style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:14px;display:flex;flex-direction:column;gap:10px;transition:all .2s;text-decoration:none;position:relative;overflow:hidden" onmouseover="this.style.borderColor='rgba(255,75,115,.38)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.transform='translateY(0)'">
+        <div style="display:flex;align-items:center;gap:10px"><span style="width:44px;height:44px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="https://cdn.simpleicons.org/clickup/7b68ee" style="width:55%;height:55%;object-fit:contain;filter:brightness(1.15)"></span><div><div style="font-size:.95rem;font-weight:700;color:#fff7f8;letter-spacing:-.01em">ClickUp</div><div style="font-size:.72rem;color:rgba(255,247,248,.42)">Project Management</div></div></div>
+        <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Project management with AI, dashboards, and granular permissions.</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+          <div style="font-size:.95rem;color:#fff7f8;font-weight:700">$7.00<span style="font-style:normal;font-size:.74rem;color:rgba(255,247,248,.42);font-weight:500">/user/mo</span></div>
+          <div style="font-size:.78rem;color:rgba(255,247,248,.64)"><span style="color:#f5b942">&#9733;</span> 4.4 (178)</div>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="/pages/" style="display:inline-flex;align-items:center;gap:8px;padding:.85rem 1.5rem;border-radius:9999px;font-weight:700;font-size:.92rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);color:#fff7f8;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.10)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">View all 1,200+ tools &#8594;</a>
+    </div>
+  </div>
+</section>
+<style>
+@keyframes spGlint{0%{background-position:100% 50%}100%{background-position:-200% 50%}}
+@keyframes dotPulse{0%,100%{box-shadow:0 0 4px #ff416d}50%{box-shadow:0 0 14px #ff416d,0 0 0 5px rgba(255,65,109,.12)}}
+@media(max-width:900px){.lib-preview-grid{grid-template-columns:1fr 1fr!important}}
+@media(max-width:600px){.lib-preview-grid{grid-template-columns:1fr!important}}
+</style>
+
+
+<!-- ═══ NEWSLETTER (new design) ═══ -->
+<section style="padding:1rem clamp(1.25rem,4vw,3rem) 6rem">
+  <div style="max-width:880px;margin:0 auto">
+    <div style="padding:3.5rem 2.5rem;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(255,70,111,.20),transparent 55%),linear-gradient(180deg,rgba(60,9,24,.82),rgba(22,9,15,.92));border:1px solid rgba(255,75,115,.25);border-radius:28px;box-shadow:0 30px 90px rgba(255,45,92,.14),inset 0 1px 0 rgba(255,255,255,.06)">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ff7a9a;padding:6px 14px;border-radius:9999px;background:rgba(255,65,109,.10);border:1px solid rgba(255,75,115,.25)"><span style="width:6px;height:6px;border-radius:50%;background:#ff416d;box-shadow:0 0 10px #ff416d;animation:dotPulse 2.4s ease-in-out infinite"></span>Newsletter</span>
+      <h2 style="font-size:clamp(32px,4vw,52px);line-height:1.02;font-weight:900;letter-spacing:-.035em;color:#fff7f8;margin:1rem 0;text-wrap:balance">Insider insights. <span style="background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:spGlint 3.6s linear infinite">Smarter SaaS decisions.</span></h2>
+      <p style="font-size:1.05rem;line-height:1.65;color:rgba(255,247,248,.64);max-width:480px;margin:0 auto">Pricing changes, hidden fees, tool comparisons, and verified deal alerts &mdash; every Wednesday.</p>
+      <form style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:1.75rem;max-width:480px;margin-left:auto;margin-right:auto" onsubmit="event.preventDefault()">
+        <input type="email" placeholder="Enter your work email" required style="flex:1;min-width:220px;padding:.85rem 1.1rem;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.09);border-radius:9999px;color:#fff7f8;font-size:.95rem;outline:none;font-family:inherit">
+        <button type="submit" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:.85rem 1.5rem;border-radius:9999px;font-weight:700;font-size:.92rem;background:linear-gradient(135deg,#ff416d,#c92950);color:#fff;box-shadow:0 10px 30px rgba(255,65,109,.45);border:none;cursor:pointer;font-family:inherit;position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='translateY(0)'">Subscribe Free</button>
+      </form>
+      <p style="font-size:.82rem;color:rgba(255,247,248,.42);margin-top:1rem">No spam. Unsubscribe anytime. Written by real buyers.</p>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -1173,5 +1284,6 @@ document.addEventListener('click',function(e){
   setTimeout(show,120000); // also show after 2 min if user stays
 })();
 </script>
+<script src="/assets/sp-motion.js" defer></script>
 </body>
 </html>

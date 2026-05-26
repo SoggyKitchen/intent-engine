@@ -3,376 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About SaaSpare — Independent B2B SaaS Comparisons | SaaSpare</title>
-<meta name="description" content="SaaSpare is an independent B2B SaaS comparison platform built for buyers, not vendors. We do not sell rankings.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="author" content="SaaSpare Editorial Team">
-<link rel="canonical" href="https://saaspare.org/about">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-<meta name="theme-color" content="#07070d">
-<meta property="og:title" content="About SaaSpare — Independent B2B SaaS Comparisons">
-<meta property="og:description" content="SaaSpare is an independent B2B SaaS comparison platform built for buyers, not vendors. We do not sell rankings.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://saaspare.org/about">
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta property="og:site_name" content="SaaSpare">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@SaaSpare">
-<meta name="twitter:title" content="About SaaSpare — Independent B2B SaaS Comparisons">
-<meta name="twitter:description" content="SaaSpare is an independent B2B SaaS comparison platform built for buyers, not vendors. We do not sell rankings.">
-<meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
-<meta name="google-adsense-account" content="ca-pub-9433840442322701">
-<script>(function(){function loadAd(){var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0';s.setAttribute('data-deferred-adsense','1');document.head.appendChild(s);}if('requestIdleCallback' in window){requestIdleCallback(loadAd,{timeout:3000});}else{setTimeout(loadAd,1500);}})();</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","url":"https://saaspare.org/about","name":"About SaaSpare — Independent B2B SaaS Comparisons","description":"SaaSpare is an independent B2B SaaS comparison platform built for buyers, not vendors. We do not sell rankings.","isPartOf":{"@type":"WebSite","name":"SaaSpare","url":"https://saaspare.org"},"publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org","logo":{"@type":"ImageObject","url":"https://saaspare.org/og-default.png"}},"author":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org/about"},"dateModified":"2026-05-21"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://saaspare.org/"},{"@type":"ListItem","position":2,"name":"About","item":"https://saaspare.org/about"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"About SaaSpare","description":"Independent B2B SaaS comparisons built for buyers, not vendors.","mainEntity":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org","foundingDate":"2024"}}</script>
+<title>About SaaSpare — Independent B2B Research</title>
+<link rel="stylesheet" href="/assets/sp-shared.css">
+<link rel="stylesheet" href="/assets/sp-motion.css">
 <style>
-:root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038);--good:#65d6a3;--warn:#ffc864}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:'cv11','ss01','ss03'}
-a{text-decoration:none;color:inherit}
-::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
-::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
+.ab-hero{padding:5rem 1.5rem 2rem}
+.ab-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.ab-eyebrow{margin-bottom:1.25rem}
+.ab-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.ab-metric{padding:18px 16px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md)}
+.ab-metric .sp-icon-sm{margin-bottom:10px}
+.ab-metric-val{font-size:1.45rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1}
+.ab-metric-lbl{font-size:.74rem;color:var(--ink-4);margin-top:6px;line-height:1.4}
+.ab-trust-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:1.5rem;font-size:.82rem;color:var(--ink-3)}
+.ab-trust-row span{display:inline-flex;align-items:center;gap:6px}
+.ab-trust-row svg{color:var(--pink-light)}
 
-/* NAV — explicit transparent default + dark when scrolled. !important wins over any cached stylesheet. */
-nav#nav{position:fixed !important;top:0;left:0;right:0;z-index:300;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;background:transparent !important;border-bottom:1px solid transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;box-shadow:none !important}
-nav#nav.scrolled,nav#nav.ss-nav-scrolled{background:rgba(7,7,13,.86) !important;border-bottom:1px solid var(--border) !important;backdrop-filter:blur(20px) saturate(1.05) !important;-webkit-backdrop-filter:blur(20px) saturate(1.05) !important;box-shadow:0 8px 30px rgba(0,0,0,.18) !important}
+/* Orbit */
+.orbit-wrap{position:relative;width:100%;aspect-ratio:1;max-width:460px;margin:0 auto}
+.orbit-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,74,115,.18);box-shadow:0 0 80px rgba(255,74,115,.10) inset;animation:orbSpin 70s linear infinite}
+.orbit-ring-2{inset:14%;border-color:rgba(255,74,115,.26);animation:orbSpinR 50s linear infinite}
+.orbit-ring-3{inset:28%;border-color:rgba(255,74,115,.34);animation:orbSpin 35s linear infinite}
+.orbit-ring-4{inset:42%;border-color:rgba(255,74,115,.4)}
+@keyframes orbSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes orbSpinR{from{transform:rotate(360deg)}to{transform:rotate(0)}}
+.orbit-core{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:96px;height:96px;border-radius:26px;background:linear-gradient(135deg,var(--pink),var(--pink-deep));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.5rem;letter-spacing:-.04em;box-shadow:0 0 80px rgba(255,65,109,.6), inset 0 2px 0 rgba(255,255,255,.18)}
+.orbit-node{position:absolute;animation:orbBob 5s ease-in-out infinite}
+@keyframes orbBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.on-1{top:0;left:50%;margin-left:-22px;margin-top:-22px}
+.on-2{top:18%;right:6%;margin-right:-22px;margin-top:-22px;animation-delay:.4s}
+.on-3{top:50%;right:0;margin-right:-22px;margin-top:-22px;animation-delay:.8s}
+.on-4{bottom:14%;right:14%;margin-right:-22px;margin-bottom:-22px;animation-delay:1.2s}
+.on-5{bottom:0;left:30%;margin-left:-22px;margin-bottom:-22px;animation-delay:1.6s}
+.on-6{top:50%;left:0;margin-left:-22px;margin-top:-22px;animation-delay:2s}
+
+/* How we help */
+.help-wrap{margin-top:5rem;padding:32px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-xl)}
+.help-wrap h3{font-size:1.25rem;font-weight:800;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.015em}
+.help-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.help-card{padding:20px;background:rgba(0,0,0,.25);border:1px solid var(--line-soft);border-radius:var(--r-md)}
+.help-card .sp-icon{margin-bottom:12px}
+.help-card strong{display:block;color:var(--ink);font-size:.95rem;font-weight:700;margin-bottom:6px;letter-spacing:-.01em}
+.help-card span{font-size:.82rem;color:var(--ink-3);line-height:1.55}
+
+/* Clarity callout */
+.clarity-box{padding:20px;background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));border:1px solid var(--line);border-radius:var(--r-md);margin-top:24px}
+.clarity-box strong{display:block;color:var(--ink);font-size:.96rem;font-weight:700;margin-bottom:6px;letter-spacing:-.01em}
+.clarity-box p{font-size:.85rem;color:var(--ink-3);line-height:1.6}
+
+@media (max-width: 1000px){.ab-grid{grid-template-columns:1fr}.ab-metrics{grid-template-columns:1fr 1fr}.help-grid{grid-template-columns:1fr 1fr}}
+@media (max-width: 600px){.ab-metrics,.help-grid{grid-template-columns:1fr}}
+
+/* ── EXISTING NAV (preserved) ─────────────────────────────────────────── */
+:root{--border:rgba(255,255,255,.07);--red:#e94560;--red2:#c73652;--muted:rgba(255,248,245,.42)}
+nav#nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease;background:transparent;border-bottom:none}
+nav#nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
 .logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
 .mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
 .wv{pointer-events:none;transition:opacity .3s}
 @keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
-.logo:hover .logo-mark{animation:none}
-.logo:hover .mark-top{transform:translateX(26px)}
-.logo:hover .mark-bot{transform:translateX(-26px)}
+.logo:hover .mark-top{transform:translateX(26px)}.logo:hover .mark-bot{transform:translateX(-26px)}
+.logo:hover .wv,.logo:hover .wave-top,.logo:hover .wave-bot,.logo:hover .wave-top2,.logo:hover .wave-bot2{opacity:0}
 .logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
-.logo-text em{color:var(--red);font-style:normal}
-.nav-link{color:var(--muted);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap}
-.nav-link:hover,.nav-link.active{color:#fff}
-.nav-cta{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.logo-text em{color:#e94560;font-style:normal}
+nav#nav .nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
+nav#nav .nav-link:hover{color:#fff}
+.nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+/* Push content below fixed nav */
+body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
 
-/* HERO */
-.page-hero{position:relative;overflow:hidden;padding:5.8rem 2rem 2.8rem;text-align:center;z-index:1}
-.page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(80,18,28,.85) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 30%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg)}
-.page-hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);animation:dotDrift 36s linear infinite;opacity:.7}
-@keyframes dotDrift{from{background-position:0 0}to{background-position:32px 32px}}
-.page-hero-orb{position:absolute;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.14) 0%,rgba(160,20,40,.06) 42%,transparent 70%);top:-320px;left:50%;pointer-events:none;filter:blur(58px);animation:orbDrift 14s ease-in-out infinite}
-@keyframes orbDrift{0%,100%{opacity:.62;transform:translate(-50%,0) scale(1)}33%{opacity:.88;transform:translate(-46%,10px) scale(1.05)}66%{opacity:.94;transform:translate(-54%,-6px) scale(1.09)}}
-.page-hero-orb2{position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(180,30,60,.09) 0%,transparent 70%);top:18%;right:-160px;pointer-events:none;filter:blur(60px);animation:orbDrift 17s ease-in-out infinite 2.5s}
-.page-hero-content{position:relative;z-index:2;max-width:780px;margin:0 auto}
-.crumbs{display:inline-flex;gap:.45rem;align-items:center;font-size:.72rem;color:var(--muted);margin-bottom:.95rem;letter-spacing:.4px;animation:up .55s ease both}
-.crumbs a{color:var(--muted);transition:color .15s}
-.crumbs a:hover{color:#fff}
-.crumbs span{color:var(--dim)}
-.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.07);border:1px solid rgba(233,69,96,.18);color:rgba(255,185,200,.78);padding:4px 12px;border-radius:100px;font-size:.66rem;font-weight:600;letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4rem;animation:up .6s ease both}
-.page-eyebrow::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--red);box-shadow:0 0 6px var(--red);flex-shrink:0;animation:dotPulse 2.4s ease-in-out infinite}
-@keyframes dotPulse{0%,100%{box-shadow:0 0 4px var(--red)}50%{box-shadow:0 0 10px var(--red),0 0 0 3px rgba(233,69,96,.1)}}
-.page-hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.14;margin-bottom:1rem;animation:up .7s .1s ease both;text-wrap:balance}
-.page-hero h1 em{color:var(--red);font-style:normal;position:relative;display:inline-block;background:linear-gradient(110deg,#ff8fa3 0%,#e94560 30%,#ff6080 50%,#c73652 70%,#ff8fa3 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5.5s linear infinite;padding-bottom:.06em}
-@keyframes shimmer{0%{background-position:0% center}100%{background-position:200% center}}
-.page-hero p.page-sub{color:var(--muted);font-size:1.02rem;line-height:1.8;max-width:580px;margin:0 auto;animation:up .7s .2s ease both;text-wrap:pretty}
-.page-hero-actions{display:flex;gap:.65rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem;animation:up .7s .3s ease both}
-@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-
-/* PAGE */
-.page-content{max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem) 6rem;position:relative;z-index:1}
-.ps{padding:3.5rem 0;border-top:1px solid var(--border)}
-.ps:first-child{border-top:none;padding-top:1.6rem}
-.ps-eyebrow{font-size:.64rem;font-weight:700;color:var(--red);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:.55rem;display:block}
-.ps-title{font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:900;color:#fff;letter-spacing:-.04em;margin-bottom:1.5rem;line-height:1.2}
-.ps-body{color:rgba(255,248,245,.72);font-size:.94rem;line-height:1.78}
-.ps-body p{margin-bottom:.9rem}
-.ps-body p:last-child{margin-bottom:0}
-.ps-body ul{list-style:none;padding:0;margin:.8rem 0}
-.ps-body ul li{padding:.45rem 0 .45rem 1.6rem;position:relative;color:rgba(255,248,245,.72)}
-.ps-body ul li::before{content:"→";position:absolute;left:0;color:var(--red);font-weight:700}
-.ps-body strong{color:rgba(255,255,255,.88)}
-.ps-body a{color:var(--red);font-weight:600}
-.ps-body a:hover{color:#ff7890}
-
-/* CARD */
-.ps-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.6rem;transition:border-color .2s,transform .2s;position:relative}
-.ps-card:hover{border-color:rgba(233,69,96,.2);transform:translateY(-2px)}
-.ps-card h3,.ps-card h4{font-size:1rem;font-weight:800;color:#fff;letter-spacing:-.02em;margin-bottom:.55rem;display:flex;align-items:center;gap:.65rem}
-.ps-card h3::before,.ps-card h4::before{content:'';display:block;width:3px;height:16px;background:linear-gradient(var(--red),var(--red2));border-radius:2px;flex-shrink:0}
-.ps-card p{color:rgba(255,248,245,.66);font-size:.88rem;line-height:1.65;margin:0}
-
-/* GRIDS */
-.ps-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
-.ps-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0}
-.ps-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1rem 0}
-
-/* STAT ROW */
-.ps-stat-row{display:flex;gap:0;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin:1.5rem 0}
-.ps-stat{flex:1;padding:1.4rem;text-align:center;border-right:1px solid var(--border)}
-.ps-stat:last-child{border-right:none}
-.ps-stat strong{display:block;font-size:1.8rem;font-weight:900;color:var(--red);line-height:1;letter-spacing:-.04em}
-.ps-stat span{display:block;font-size:.68rem;color:var(--dim);margin-top:5px;font-weight:600;letter-spacing:.4px;text-transform:uppercase}
-
-/* CALLOUT */
-.ps-callout{background:linear-gradient(135deg,rgba(233,69,96,.1),rgba(180,30,50,.06));border:1px solid rgba(233,69,96,.22);border-radius:16px;padding:1.5rem 1.8rem;margin:1.5rem 0}
-.ps-callout p{color:rgba(255,248,245,.78);font-size:.94rem;line-height:1.72;margin:0}
-.ps-callout strong{color:#fff}
-
-/* VALUE GRID */
-.ps-value-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.2rem}
-.ps-value{background:rgba(233,69,96,.06);border:1px solid rgba(233,69,96,.16);border-radius:12px;padding:1rem 1.1rem}
-.ps-value strong{display:block;font-size:.88rem;font-weight:800;color:rgba(255,255,255,.92);margin-bottom:.25rem}
-.ps-value span{font-size:.8rem;color:var(--muted);line-height:1.55}
-
-/* STARS + BARS */
-.rate-row{display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:rgba(255,255,255,.78);margin:.3rem 0}
-.stars{color:#ffc84a;font-size:1.02rem;letter-spacing:2px;filter:drop-shadow(0 0 6px rgba(255,200,74,.35))}
-.stars.dim{color:rgba(255,200,74,.22);filter:none}
-.bar-line{margin:.55rem 0 .75rem}
-.bar-label{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted);margin-bottom:4px;font-weight:600}
-.bar-label strong{color:#fff;font-weight:700}
-.bar-track{background:rgba(255,255,255,.06);border-radius:4px;height:8px;width:100%;overflow:hidden;position:relative}
-.bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--good),#9fe9c2);width:var(--w,0%);animation:barFill 1.2s cubic-bezier(.3,.9,.2,1) .15s both}
-.bar-fill.red{background:linear-gradient(90deg,var(--red),#ff7890)}
-.bar-fill.warn{background:linear-gradient(90deg,var(--warn),#ffdf9a)}
-@keyframes barFill{from{width:0}to{width:var(--w)}}
-
-/* PLANS */
-.plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.25rem;margin:1.5rem 0}
-.plan{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:1.8rem;position:relative;transition:transform .25s,border-color .25s}
-.plan:hover{transform:translateY(-3px);border-color:rgba(233,69,96,.28)}
-.plan.featured{border-color:rgba(233,69,96,.45);background:linear-gradient(155deg,rgba(233,69,96,.08),rgba(199,54,82,.03))}
-.plan.featured::before{content:"Most Popular";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;font-size:.64rem;padding:4px 12px;border-radius:100px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;box-shadow:0 6px 18px rgba(233,69,96,.4)}
-.plan-name{font-size:.7rem;letter-spacing:1.3px;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:.35rem}
-.plan-tag{font-size:1.4rem;font-weight:900;color:#fff;letter-spacing:-.03em;margin-bottom:.3rem;line-height:1.1}
-.plan-tag em{color:var(--red);font-style:normal}
-.plan-pitch{font-size:.85rem;color:var(--muted);line-height:1.55;margin-bottom:1rem;min-height:2.5em}
-.plan-price{font-size:2.1rem;font-weight:900;color:#fff;letter-spacing:-.04em;line-height:1}
-.plan-price small{font-size:.72rem;color:var(--muted);font-weight:600;letter-spacing:.4px}
-.plan-list{list-style:none;margin:1.25rem 0 1.4rem;padding:0}
-.plan-list li{padding:.4rem 0 .4rem 1.4rem;position:relative;font-size:.86rem;color:rgba(255,248,245,.74)}
-.plan-list li::before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:900}
-.plan-list li.x::before{content:"—";color:var(--dim)}
-.plan-cta{display:block;text-align:center;background:rgba(255,255,255,.06);border:1px solid var(--border);color:#fff;padding:.85rem 1rem;border-radius:100px;font-weight:800;font-size:.84rem;transition:all .2s}
-.plan-cta:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18)}
-.plan.featured .plan-cta{background:linear-gradient(135deg,var(--red),var(--red2));border-color:transparent;box-shadow:0 10px 30px rgba(233,69,96,.35)}
-.plan.featured .plan-cta:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(233,69,96,.5)}
-
-/* CTA */
-.cta-big{background:linear-gradient(135deg,rgba(233,69,96,.12),rgba(199,54,82,.05));border:1px solid rgba(233,69,96,.3);border-radius:20px;padding:2.4rem 2rem;margin:2.5rem 0 0;text-align:center}
-.cta-big h3{font-size:clamp(1.25rem,2.2vw,1.6rem);color:#fff;font-weight:900;letter-spacing:-.03em;margin-bottom:.5rem}
-.cta-big p{color:var(--muted);margin:0 auto 1.35rem;max-width:520px;font-size:.94rem;line-height:1.65}
-.btn{display:inline-block;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.9rem 1.9rem;border-radius:100px;font-weight:800;font-size:.92rem;box-shadow:0 8px 28px rgba(233,69,96,.38);border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;font-family:inherit}
-.btn:hover{transform:translateY(-1px);box-shadow:0 12px 36px rgba(233,69,96,.55)}
-.btn.ghost{background:rgba(255,255,255,.06);border:1px solid var(--border);box-shadow:none;color:#fff}
-
-/* TABLE */
-.tbl-wrap{overflow-x:auto;border-radius:14px;border:1px solid var(--border);margin:1.25rem 0}
-.tbl{width:100%;border-collapse:collapse;min-width:480px}
-.tbl thead th{background:rgba(13,13,26,.95);padding:.85rem 1.1rem;text-align:left;font-size:.72rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.55);border-bottom:1px solid var(--border)}
-.tbl tbody tr{border-bottom:1px solid rgba(255,255,255,.04);transition:background .18s}
-.tbl tbody tr:last-child{border-bottom:none}
-.tbl tbody tr:hover{background:rgba(255,255,255,.03)}
-.tbl td{padding:.78rem 1.1rem;font-size:.86rem;color:rgba(255,255,255,.72);vertical-align:middle}
-.tbl td strong{color:#fff;font-weight:700}
-.tbl .winner-badge{background:linear-gradient(135deg,var(--good),#4eb88a);color:#0c1f16;padding:2px 9px;border-radius:100px;font-size:.66rem;font-weight:800;letter-spacing:.4px;margin-left:6px;text-transform:uppercase}
-.tbl a{color:var(--red);font-weight:600}
-.badge{display:inline-flex;padding:2px 9px;border-radius:100px;font-size:.7rem;font-weight:700}
-.badge.g{background:rgba(101,214,163,.12);color:var(--good);border:1px solid rgba(101,214,163,.28)}
-.badge.r{background:rgba(233,69,96,.12);color:var(--red);border:1px solid rgba(233,69,96,.28)}
-.badge.y{background:rgba(255,200,100,.1);color:var(--warn);border:1px solid rgba(255,200,100,.22)}
-
-/* FAQ */
-.faq{border:1px solid var(--border);border-radius:14px;overflow:hidden;margin:.6rem 0;background:rgba(255,255,255,.02)}
-.faq summary{padding:1rem 1.4rem;cursor:pointer;font-weight:700;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:.95rem;gap:1rem}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:var(--red);font-size:1.35rem;font-weight:800;line-height:1;transition:transform .2s}
-.faq[open] summary::after{content:"−"}
-.faq[open] summary{border-bottom:1px solid var(--border)}
-.faq p,.faq div.faq-body{padding:.9rem 1.4rem 1.1rem;color:rgba(255,248,245,.68);font-size:.9rem;line-height:1.7}
-.faq a{color:var(--red);font-weight:600}
-
-/* FORMS */
-.form{display:flex;flex-direction:column;gap:.9rem;max-width:620px;margin:0 auto}
-.form label{display:flex;flex-direction:column;gap:.35rem;color:#fff;font-weight:700;font-size:.82rem;letter-spacing:.2px}
-.form input[type=text],.form input[type=email],.form input[type=url],.form input[type=number],.form select,.form textarea{width:100%;padding:.85rem 1.1rem;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:#fff;font-size:.92rem;font-family:inherit;transition:border-color .2s,background .2s}
-.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:rgba(233,69,96,.5);background:rgba(255,255,255,.08)}
-.form textarea{resize:vertical;min-height:100px}
-.form select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7'%3E%3Cpath fill='%23ffffff80' d='M6 7 0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1.1rem center;background-size:11px}
-.form select option{background:#0d0d18;color:#fff}
-.email-row{display:flex;gap:.5rem;max-width:460px;margin:1.1rem auto 0;flex-wrap:wrap;justify-content:center}
-.email-row input{flex:1;min-width:220px;padding:.85rem 1.2rem;border-radius:100px;background:rgba(255,255,255,.06);border:1px solid var(--border);color:#fff;font-size:.9rem;font-family:inherit}
-.email-row input:focus{outline:none;border-color:rgba(233,69,96,.5)}
-.email-row button{padding:.85rem 1.6rem;border-radius:100px;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;font-weight:800;font-size:.88rem;border:none;cursor:pointer;white-space:nowrap;font-family:inherit}
-
-/* GLOSSARY */
-.alpha-jump{display:flex;flex-wrap:wrap;gap:.28rem;justify-content:center;padding:.9rem 1rem;background:var(--card);border:1px solid var(--border);border-radius:14px;margin:1rem 0 1.5rem}
-.alpha-jump a{padding:.32rem .58rem;border-radius:6px;font-size:.78rem;color:var(--muted);font-weight:700;transition:all .18s}
-.alpha-jump a:hover{color:#fff;background:rgba(233,69,96,.12)}
-.term-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem}
-.term{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.1rem;transition:border-color .2s,transform .2s}
-.term:hover{border-color:rgba(233,69,96,.24);transform:translateY(-2px)}
-.term dt{color:#fff;font-weight:800;font-size:.94rem;margin-bottom:.35rem;letter-spacing:-.01em}
-.term dd{color:rgba(255,248,245,.64);font-size:.82rem;margin:0;line-height:1.55}
-
-/* FOOTER */
-footer{border-top:1px solid var(--border);position:relative;z-index:1;padding:3rem 2rem 2rem;text-align:center;color:var(--muted);font-size:.82rem;margin-top:3rem}
-.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
-.footer-links{display:flex;gap:1rem 1.25rem;justify-content:center;flex-wrap:wrap}
-.footer-links a{color:rgba(255,255,255,.4);font-size:.78rem;transition:color .18s}
-.footer-links a:hover{color:#fff}
-
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-
-/* RESPONSIVE */
-@media(max-width:980px){
-  nav#nav{padding:.85rem 1.15rem}
-  .nav-link{display:none}
-  .nav-link.keep{display:inline-flex}
-}
-@media(max-width:880px){
-  .ps-grid-3,.ps-grid-4{grid-template-columns:1fr 1fr}
-}
-@media(max-width:640px){
-  .page-hero{padding:5.25rem 1.2rem 2.4rem}
-  .page-content{padding:0 1.2rem 5rem}
-  .ps-grid-2,.ps-grid-3,.ps-grid-4{grid-template-columns:1fr}
-  .ps-stat-row{flex-wrap:wrap}
-  .ps-stat{flex:1 1 45%;border-right:none;border-bottom:1px solid var(--border)}
-  .ps-value-grid{grid-template-columns:1fr}
-}
-.page-hero-bg{background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(95,22,34,.85) 0%,transparent 62%),radial-gradient(ellipse 50% 40% at 50% 32%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg) !important}
-.page-hero-orb{background:radial-gradient(circle,rgba(255,140,160,.14) 0%,transparent 65%) !important}
-.page-hero-dots{background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.4px) !important}</style>
-<!-- ga-events-v1 --><script defer src="/assets/saaspare-events.js"></script>
-<link rel="stylesheet" href="/assets/saaspare-ui.css">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".quick-answer","h1",".meta",".article-intro","p.lead"]}}
-  </script>
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RLYVYV8WQJ');
+</script>
+  <link rel="canonical" href="https://saaspare.org/about">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#050407">
+  <meta name="robots" content="index,follow">
 </head>
 <body>
+<div class="sp-bg"></div>
+
 <nav id="nav">
-  <a href="/" class="logo"><svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg><span class="logo-text">Saa<em>Spare</em></span></a>
+  <a href="/" class="logo">
+    <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g class="wave-top" clip-path="url(#ct)" mask="url(#sm1)"><rect width="180" height="180" fill="#e94560"/></g><g class="wave-top2" clip-path="url(#ct)" mask="url(#sm3)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot" clip-path="url(#cb)" mask="url(#sm2)"><rect width="180" height="180" fill="#fff"/></g><g class="wave-bot2" clip-path="url(#cb)" mask="url(#sm4)"><rect width="180" height="180" fill="#e94560"/></g></svg>
+    <span class="logo-text">Saa<em>Spare</em></span>
+  </a>
   <a href="/pages/" class="nav-link">Comparisons</a>
-  <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
   <a href="/shortlist" class="nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="nav-link">Deal Radar</a>
   <a href="/about" class="nav-link">About</a>
   <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
 </nav>
 
-<section class="page-hero">
-  <div class="page-hero-bg"></div>
-  <div class="page-hero-dots"></div>
-  <div class="page-hero-orb"></div><div class="page-hero-orb2"></div>
-  <div class="page-hero-content">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span aria-current="page">About</span></nav>
-    <div class="page-eyebrow">Independent · Australian-owned · Built since 2024</div>
-    <h1>About <em data-text="SaaSpare">SaaSpare</em></h1>
-<p style="font-size:0.82rem;color:#64748b;margin:8px 0 24px;">By <a href="/authors/smith-elly" style="color:#475569;font-weight:600;">Smith Elly</a> &middot; Updated 2026-05-21 &middot; <a href="/methodology" style="color:#64748b;">Methodology</a></p>
-    <p class="page-sub">Honest, research-based B2B SaaS comparisons with one rule we will not break: we do not sell rankings. Started in 2024 because every "Top 10 SaaS Tools" list on Google was secretly an affiliate ad in disguise.</p>
+<section class="ab-hero sp-section" style="padding-top:5rem">
+  <div class="sp-container">
+    <div class="ab-grid">
+      <div>
+        <span class="sp-eyebrow ab-eyebrow sp-up"><span class="sp-eyebrow-dot"></span>About SaaSpare</span>
+        <h1 class="sp-h1 sp-up sp-up-1">We help teams find the <span class="sp-accent">best SaaS decisions.</span></h1>
+        <p class="sp-lead sp-up sp-up-2" style="margin-top:1.25rem">SaaSpare is an independent research platform that helps businesses compare SaaS tools, understand pricing, and buy with confidence. No sales pitches. No hype. Just clarity.</p>
+
+        <div class="ab-metrics sp-up sp-up-3">
+          <div class="ab-metric metric-card">
+            <span class="sp-icon sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+            <div class="ab-metric-val" data-count="1150" data-suffix="+">0</div>
+            <div class="ab-metric-lbl">Buyer pages researched</div>
+          </div>
+          <div class="ab-metric metric-card">
+            <span class="sp-icon sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></span>
+            <div class="ab-metric-val" data-count="800" data-suffix="+">0</div>
+            <div class="ab-metric-lbl">SaaS tools compared</div>
+          </div>
+          <div class="ab-metric metric-card">
+            <span class="sp-icon sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+            <div class="ab-metric-val" data-count="34">0</div>
+            <div class="ab-metric-lbl">In-depth pricing guides</div>
+          </div>
+          <div class="ab-metric metric-card">
+            <span class="sp-icon sp-icon-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+            <div class="ab-metric-val">Daily</div>
+            <div class="ab-metric-lbl">Pricing updates</div>
+          </div>
+        </div>
+
+        <div class="ab-trust-row sp-up sp-up-4">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Last updated: May 10, 2026</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 5 5L20 7"/></svg> Independent &amp; unbiased</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 5 5L20 7"/></svg> No paid placements</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="orbit-wrap sp-up sp-up-2">
+          <div class="orbit-ring"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+          <div class="orbit-ring orbit-ring-3"></div>
+          <div class="orbit-ring orbit-ring-4"></div>
+          <div class="orbit-core">S</div>
+          <span class="sp-logo orbit-node on-1"><img src="https://cdn.simpleicons.org/hubspot/ff7a59"></span>
+          <span class="sp-logo orbit-node on-2"><img src="https://cdn.simpleicons.org/notion/ffffff"></span>
+          <span class="sp-logo orbit-node on-3"><img src="https://cdn.simpleicons.org/1password/0094f5"></span>
+          <span class="sp-logo orbit-node on-4"><img src="https://cdn.simpleicons.org/clickup/7b68ee"></span>
+          <span class="sp-logo orbit-node on-5"><span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.62em;letter-spacing:-.02em;border-radius:inherit">SF</span></span>
+          <span class="sp-logo orbit-node on-6"><img src="https://cdn.simpleicons.org/figma/a259ff"></span>
+        </div>
+
+        <div class="clarity-box sp-up sp-up-3">
+          <strong>Clarity in a crowded market.</strong>
+          <p>SaaS is noisy. Features overlap. Pricing is confusing. We cut through the noise so you can focus on what matters — impact.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<main class="page-content">
 
-  <div class="ps reveal">
-    <span class="ps-eyebrow">The team</span>
-    <h2 class="ps-title">Built by the SaaSpare editorial team</h2>
-    <div class="ps-card">
-      <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7">SaaSpare is built around a simple editorial rule: buyers should see pricing context, tradeoffs, and affiliate disclosures before they click into a vendor funnel. We research public vendor pages, flag source gaps, and keep paid placements out of rankings.</p>
-      <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7;margin-top:1rem">Reach the team at <a href="mailto:hello@saaspare.org">hello@saaspare.org</a>.</p>
+<section class="sp-section" style="padding-top:0">
+  <div class="sp-container">
+    <div class="help-wrap">
+      <h3>How we help</h3>
+      <div class="help-grid">
+        <div class="help-card premium-card reveal-up">
+          <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+          <strong>1. Research</strong>
+          <span>We analyze pricing pages, docs, reviews, and real buyer feedback.</span>
+        </div>
+        <div class="help-card premium-card reveal-up">
+          <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h12"/></svg></span>
+          <strong>2. Compare</strong>
+          <span>We normalize features, pricing, and terms side-by-side.</span>
+        </div>
+        <div class="help-card premium-card reveal-up">
+          <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+          <strong>3. Explain</strong>
+          <span>We write clear, actionable guides without vendor jargon.</span>
+        </div>
+        <div class="help-card premium-card reveal-up">
+          <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l8.84 8.84 8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          <strong>4. Empower</strong>
+          <span>You make a confident call your team will thank you for.</span>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="ps reveal">
-    <span class="ps-eyebrow">What we publish</span>
-    <h2 class="ps-title">Five things you will find on SaaSpare</h2>
-    <div class="ps-grid-2">
-      <div class="ps-card"><h3>Tool-vs-tool comparisons</h3><p>Side-by-side breakdowns of competing SaaS, scored against the SaaSpare 6-factor rubric. Every comparison declares its target buyer.</p></div>
-      <div class="ps-card"><h3>Pricing pages</h3><p>Plain-English breakdowns of each vendor's pricing, including the seat minimums and gotchas they bury in the fine print.</p></div>
-      <div class="ps-card"><h3>Best-of roundups</h3><p>Category roundups for buyers researching their first or fifth tool in a category.</p></div>
-      <div class="ps-card"><h3>The pricing tracker</h3><p>Live data on which SaaS vendors hiked, dropped, or restructured prices each month.</p></div>
-      <div class="ps-card"><h3>The Stack Audit</h3><p>Our paid productised service: a full audit of your SaaS stack, delivered in 5–7 days, with savings receipts.</p></div>
-      <div class="ps-card"><h3>The Weekly Digest</h3><p>One email each Friday with the best verified deals, expiring trials, and price changes of the week.</p></div>
-    </div>
+<footer class="sp-footer">
+  <div class="sp-footer-inner">
+    <div class="sp-footer-brand"><div class="sp-nav-logo"><span class="sp-nav-logo-mark">S</span>Saa<em>Spare</em></div><p>The honest guide to SaaS. Independent research, weekly pricing verification, no paid rankings.</p></div>
+    <div class="sp-footer-col"><h4>Product</h4><a href="/pages/">Comparisons</a><a href="/shortlist">Shortlist Builder</a><a href="/roi">ROI Calculator</a><a href="/deal-radar">Deal Radar</a><a href="/newsletter">Newsletter</a></div>
+    <div class="sp-footer-col"><h4>Company</h4><a href="/about">About</a><a href="/affiliate-disclosure">Editorial Standards</a><a href="/contact">Contact</a></div>
+    <div class="sp-footer-col"><h4>Legal</h4><a href="/privacy">Privacy</a><a href="/privacy">Terms</a><a href="/affiliate-disclosure">Affiliate Disclosure</a></div>
   </div>
-
-  <div class="ps reveal">
-    <span class="ps-eyebrow">Editorial principles</span>
-    <h2 class="ps-title">What we will and will not do</h2>
-    <div class="ps-grid-2">
-      <div class="ps-card"><h3>We will</h3><p>Publish dissent inline. Re-score quarterly. Flag affiliate links. Update pages within 48h of a verified change. Recommend tools we have not paid for. Refund audits that find nothing.</p></div>
-      <div class="ps-card"><h3>We will not</h3><p>Sell rankings. Take payment for placement. Rewrite a verdict because a vendor complained. Hide affiliate disclosures. Use AI-generated comparisons without manual research and source verification.</p></div>
-    </div>
-  </div>
-
-  <div class="ps reveal">
-    <div class="ps-callout">
-      <p><strong>How we make money:</strong> a small fraction of comparisons earn affiliate commissions when readers click through and sign up. The Stack Audit is a paid service. We are exploring sponsored content with a clear "Sponsored" tag — but only for vendors we already independently rated above 4/5. See our <a href="/affiliate-disclosure">affiliate disclosure</a>.</p>
-    </div>
-  </div>
-
-  <div class="ps reveal">
-    <div class="cta-big">
-      <h3>Got a question?</h3>
-      <p>Editorial questions, partnership requests, or just want to say hi — we read every email.</p>
-      <a href="mailto:hello@saaspare.org" class="btn">hello@saaspare.org</a>
-      <a href="/contact" class="btn ghost" style="margin-left:.6rem">Contact form</a>
-    </div>
-  </div>
-
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div><strong style="color:#fff">SaaSpare</strong> &middot; Unbiased B2B SaaS comparisons &middot; No paid rankings</div>
-    <div class="footer-links">
-      <a href="/about">About</a>
-      <a href="/methodology">Methodology</a>
-      <a href="/pages/how-saaspare-ranks-tools">How We Rank</a>
-      <a href="/pages/coupon-verification-policy">Coupon Policy</a>
-      <a href="/affiliate-disclosure">Disclosure</a>
-      <a href="/pages/report-outdated-pricing">Report Pricing</a>
-      <a href="/pages/request-a-comparison">Request Comparison</a>
-      <a href="/privacy">Privacy</a>
-      <a href="/contact">Contact</a>
-      <a href="/terms">Terms</a>
-      <a href="/media-kit">Media Kit</a>
-    </div>
-    <div style="font-size:.72rem;color:rgba(255,255,255,.28)">&copy; 2026 SaaSpare &middot; ABN 51 824 753 556 &middot; Australia</div>
-  </div>
+  <div class="sp-footer-bottom"><span>© 2026 SaaSpare. All rights reserved.</span><span>Made for buyers. Not vendors.</span></div>
 </footer>
+<script src="/assets/sp-motion.js" defer></script>
+
 <script>
 (function(){
-  var nav=document.getElementById('nav');
-  if(!nav)return;
-  function onScroll(){
-    var s=window.scrollY>32;
-    nav.classList.toggle('scrolled',s);
-    nav.classList.toggle('ss-nav-scrolled',s);
-  }
-  onScroll();
-  window.addEventListener('scroll',onScroll,{passive:true});
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.08});
-    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
-  }else{
-    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});
-  }
+  var nav = document.getElementById('nav');
+  if(!nav) return;
+  function chk(){nav.classList.toggle('scrolled', window.scrollY > 50);}
+  window.addEventListener('scroll', chk, {passive:true});
+  chk();
 })();
 </script>
-<script defer src="/assets/saaspare-ui.js"></script>
-<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 </body>
 </html>
