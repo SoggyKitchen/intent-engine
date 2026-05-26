@@ -28,6 +28,9 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+<!-- Design system — provides sp-* classes for marquee, library, newsletter sections -->
+<link rel="stylesheet" href="/assets/sp-shared.css">
+<link rel="stylesheet" href="/assets/sp-motion.css">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "SaaSpare", "url": "https://saaspare.org", "description": "Unbiased B2B SaaS comparisons with real pricing, honest verdicts, free trial guides, and coupon codes.", "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://saaspare.org/pages/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}, {"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools for founders, CTOs and operators.", "sameAs": ["https://x.com/SaaSpare", "https://twitter.com/SaaSpare"], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "partnerships@saaspare.org", "url": "https://saaspare.org/contact"}}]</script>
 <style>
 /* ── TOKENS ─────────────────────────────────── */
@@ -41,6 +44,29 @@
   --dim:rgba(255,248,245,.16);
   --border:rgba(255,255,255,.07);
   --card:rgba(255,255,255,.038);
+  /* ── sp-shared.css bridge vars (for injected design sections) ── */
+  --bg-deep:#07070d;
+  --pink:#e94560;
+  --pink-soft:#ff557c;
+  --pink-light:#ff7a9a;
+  --pink-deep:#c73652;
+  --wine:rgba(120,0,32,.55);
+  --ink:#fff7f8;
+  --ink-2:rgba(255,247,248,.82);
+  --ink-3:rgba(255,247,248,.64);
+  --ink-4:rgba(255,247,248,.42);
+  --ink-5:rgba(255,247,248,.22);
+  --line:rgba(255,255,255,.09);
+  --line-soft:rgba(255,255,255,.05);
+  --line-pink:rgba(255,75,115,.25);
+  --glass:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));
+  --glass-pink:linear-gradient(180deg,rgba(60,9,24,.82),rgba(22,9,15,.92));
+  --amber:#f5b942;
+  --green:#36e6a1;
+  --green-soft:rgba(54,230,161,.14);
+  --r-sm:10px;--r-md:14px;--r-lg:20px;--r-xl:28px;--r-full:9999px;
+  --shadow-card:0 24px 80px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08);
+  --shadow-cta:0 10px 30px rgba(255,65,109,.45),inset 0 0 0 1px rgba(255,255,255,.05);
 }
 
 /* ── BASE ────────────────────────────────────── */
@@ -566,7 +592,7 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 
   <h1 class="hero-title">
     The honest guide to<br>
-    <span class="sp-accent sp-tw-outer"><span id="tw-word">CRM Software</span><span class="sp-tw-cursor"></span></span><br>
+    <span id="tw-word" class="sp-accent">CRM Software</span><span class="sp-tw-cursor"></span><br>
     for teams that care about ROI
   </h1>
 <p style="font-size:0.82rem;color:#64748b;margin:8px 0 24px;">By <a href="/authors/smith-elly" style="color:#475569;font-weight:600;">Smith Elly</a> &middot; Updated 2026-05-21 &middot; <a href="/methodology" style="color:#64748b;">Methodology</a></p>
