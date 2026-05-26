@@ -1,9 +1,19 @@
 {
-  "generated_at_utc": "2026-05-26T05:46:21+00:00",
+  "generated_at_utc": "2026-05-26T08:35:56+00:00",
   "pages_scanned": 1319,
   "index_size": 206,
   "brands_covered": 73,
-  "pages_updated": 0,
+  "pages_updated": 103,
   "mode": "apply",
-  "sample_change": null
+  "sample_change": {
+    "path": "site/pages/7-best-heroku-alternatives-in-2026-free-paid.html",
+    "page_type": "alternatives",
+    "brands": [
+      "heroku"
+    ],
+    "links_added": [
+      "Build a free shortlist",
+      "Run the SaaS ROI calculator"
+    ]
+  }
 }

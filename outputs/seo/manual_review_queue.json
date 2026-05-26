@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-26T05:46:28+00:00",
+  "generated_at_utc": "2026-05-26T08:36:03+00:00",
   "mode": "apply",
-  "pages_flagged": 38,
+  "pages_flagged": 39,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -97,6 +97,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/monday-com-vs-clickup-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "you can switch from ClickUp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to try out the platform before committing.</p> </details>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "witching from ClickUp to Monday.com is relatively easy, with a free trial and a 14-day money-back guarantee. However, migrating data from ClickUp to Monday.com may require some effort, es"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/saas-spend-audit.html",
@@ -209,6 +225,27 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/ahrefs-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "p>Yes, you can switch from Frase.io to Ahrefs. Ahrefs offers a free trial and a 7-day money-back guarantee, making it easy to test the tool and see if it's a good fit for your team.</p>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "fs nor Frase.io offers a free plan. However, both tools offer free trials and a 7-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Which ha"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "7-day money-back guarantee",
+          "context": "\">Switching from Frase.io to Ahrefs is relatively easy, with a free trial and a 7-day money-back guarantee. However, migrating data from Frase.io to Ahrefs may require some manual effort"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/rewardful-vs-post-affiliate-pro-which-is-better-in-2026.html",
@@ -455,17 +492,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "export process and minimal setup required. Mailchimp offers a free trial and a 30-day money-back guarantee, making it an excellent choice for businesses looking to try before they buy.</"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-coupon-code-promo-codes-2026-verified-discounts.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</strong></td"
         }
       ],
       "trust_state_bumped": false
