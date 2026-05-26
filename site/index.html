@@ -177,9 +177,20 @@ h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;li
 @keyframes titleEnter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .grad-text{background:linear-gradient(135deg,#ff8fa3 0%,var(--red) 45%,var(--red2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding-bottom:.15em}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-/* ── Typewriter glint (exact from design) ── */
+/* ── Typewriter glint ── */
 .tw-line{display:block;min-height:1em}
-#tw-word{display:inline}
+@keyframes tw-glint{0%{background-position:100% 50%}100%{background-position:-200% 50%}}
+#tw-word{
+  display:inline-block;
+  background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);
+  background-size:300% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:tw-glint 3.6s linear infinite;
+  will-change:background-position;
+}
+.sp-tw-cursor{display:inline-block;width:.06em;background:#ff416d;height:.82em;vertical-align:-.08em;margin-left:.06em;animation:spBlink 1s steps(2,end) infinite;box-shadow:0 0 12px #ff416d}
+@keyframes spBlink{0%,50%{opacity:1}50.01%,100%{opacity:0}}
 
 
 .hero-sub{color:var(--muted);font-size:1.06rem;line-height:1.82;max-width:480px;margin:0 auto 3.2rem;animation:subEnter .8s .5s cubic-bezier(.34,1.56,.64,1) both;position:relative;z-index:2;text-wrap:pretty}

@@ -157,25 +157,28 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
       </div>
 
       <!-- CENTER FORM -->
-      <form class="sp-glass ct-form sp-up sp-up-2" onsubmit="event.preventDefault()">
+      <form class="sp-glass ct-form sp-up sp-up-2" id="ct-form" onsubmit="ctSubmit(event)">
         <h3>Send us a message</h3>
         <p>Fill out the form and we&rsquo;ll get back to you soon.</p>
-        <div class="ct-field"><label>Full name</label><input class="sp-input" type="text" placeholder="Jane Doe"></div>
-        <div class="ct-field"><label>Work email</label><input class="sp-input" type="email" placeholder="jane@acme.com"></div>
-        <div class="ct-field"><label>Company (optional)</label><input class="sp-input" type="text" placeholder="Acme Inc."></div>
+        <div class="ct-field"><label>Full name</label><input class="sp-input" id="ct-name" type="text" placeholder="Jane Doe"></div>
+        <div class="ct-field"><label>Work email</label><input class="sp-input" id="ct-email" type="email" placeholder="jane@acme.com" required></div>
+        <div class="ct-field"><label>Company (optional)</label><input class="sp-input" id="ct-company" type="text" placeholder="Acme Inc."></div>
         <div class="ct-field"><label>Subject</label>
-          <select class="sp-input sp-select">
+          <select class="sp-input sp-select" id="ct-subject">
             <option>General Inquiry</option>
             <option>Pricing correction</option>
             <option>Partnership</option>
             <option>Press</option>
           </select>
         </div>
-        <div class="ct-field"><label>How can we help?</label><textarea class="sp-input" placeholder="Tell us more about your question or request…"></textarea></div>
-        <button class="sp-btn sp-btn-primary" style="width:100%;margin-top:6px">
+        <div class="ct-field"><label>How can we help?</label><textarea class="sp-input" id="ct-message" placeholder="Tell us more about your question or request…"></textarea></div>
+        <button class="sp-btn sp-btn-primary" id="ct-submit" style="width:100%;margin-top:6px">
           Send Message
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </button>
+        <div id="ct-success" style="display:none;padding:.9rem;background:rgba(101,214,163,.1);border:1px solid rgba(101,214,163,.3);border-radius:10px;color:#65d6a3;font-size:.88rem;font-weight:600;text-align:center">
+          ✓ Message sent — we'll reply within 1 business day.
+        </div>
         <div class="ct-priv">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           We respect your privacy. See our <a href="/privacy">Privacy Policy</a>.
@@ -221,7 +224,7 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
         <strong>Partner with SaaSpare</strong>
         <span>Join leading tools and platforms collaborating to help teams make confident SaaS buying decisions.</span>
       </div>
-      <a class="sp-btn sp-btn-primary">Explore Partnerships →</a>
+      <a class="sp-btn sp-btn-primary" href="mailto:partnerships@saaspare.org">Explore Partnerships →</a>
     </div>
   </div>
 </section>
@@ -248,6 +251,31 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
   window.addEventListener('scroll', chk, {passive:true});
   chk();
 })();
+</script>
+<script>
+function ctSubmit(e) {
+  e.preventDefault();
+  var name    = (document.getElementById('ct-name')||{}).value||'';
+  var email   = (document.getElementById('ct-email')||{}).value||'';
+  var company = (document.getElementById('ct-company')||{}).value||'';
+  var subject = (document.getElementById('ct-subject')||{}).value||'General Inquiry';
+  var message = (document.getElementById('ct-message')||{}).value||'';
+  if(!email){ document.getElementById('ct-email').focus(); return; }
+
+  var body = 'Name: '+name+'\nEmail: '+email+(company?'\nCompany: '+company:'')+'\nSubject: '+subject+'\n\n'+message;
+  var mailto = 'mailto:hello@saaspare.org?subject='+encodeURIComponent('[SaaSpare] '+subject+(name?' from '+name:''))+'&body='+encodeURIComponent(body);
+
+  var btn = document.getElementById('ct-submit');
+  btn.disabled = true; btn.textContent = 'Opening email…';
+  window.location.href = mailto;
+
+  setTimeout(function(){
+    document.getElementById('ct-success').style.display = 'block';
+    document.getElementById('ct-form').querySelectorAll('input,textarea,select').forEach(function(el){ el.value=''; });
+    btn.disabled = false;
+    btn.innerHTML = 'Send Another Message <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  }, 1200);
+}
 </script>
 </body>
 </html>

@@ -426,5 +426,216 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
   chk();
 })();
 </script>
+
+<script>
+/* ── SaaSpare Shortlist — interactive wiring ── */
+(function(){
+
+  /* Tool database: name → { slug, cat, price, rating, reviews, trial, logoUrl?, logoText?, logoColor? } */
+  var TOOLS = {
+    'HubSpot':      {slug:'hubspot-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:20,rating:4.5,reviews:2312,trial:14,logoUrl:'https://cdn.simpleicons.org/hubspot/ff7a59'},
+    'Pipedrive':    {slug:'pipedrive-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:14,rating:4.3,reviews:1842,trial:14,logoText:'PD',logoColor:'#19be46'},
+    'Zoho CRM':     {slug:'zoho-crm-pricing-2026',cat:'CRM',price:14,rating:4.2,reviews:1231,trial:15,logoUrl:'https://cdn.simpleicons.org/zoho/c8202d'},
+    'Close':        {slug:'close-pricing-2026',cat:'CRM',price:29,rating:4.6,reviews:1105,trial:14,logoText:'CL',logoColor:'#00a1e0'},
+    'Salesforce':   {slug:'salesforce-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:25,rating:4.2,reviews:5823,trial:30,logoUrl:'https://cdn.simpleicons.org/salesforce/00a1e0'},
+    'Monday':       {slug:'monday-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:9,rating:4.4,reviews:3211,trial:14,logoUrl:'https://cdn.simpleicons.org/mondaydotcom/f62b54'},
+    'Asana':        {slug:'asana-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:10,rating:4.3,reviews:2782,trial:30,logoUrl:'https://cdn.simpleicons.org/asana/f06a6a'},
+    'ClickUp':      {slug:'clickup-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:7,rating:4.5,reviews:4123,trial:14,logoUrl:'https://cdn.simpleicons.org/clickup/7b68ee'},
+    'Notion':       {slug:'notion-pricing-2026-plans-costs-what-you-actually-pay',cat:'Productivity',price:8,rating:4.4,reviews:3892,trial:0,logoUrl:'https://cdn.simpleicons.org/notion/ffffff'},
+    'Ahrefs':       {slug:'ahrefs-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:99,rating:4.6,reviews:1834,trial:7,logoUrl:'https://cdn.simpleicons.org/ahrefs/ff8c00'},
+    'Semrush':      {slug:'semrush-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:129,rating:4.5,reviews:2943,trial:7,logoText:'SM',logoColor:'#ff642d'},
+    '1Password':    {slug:'1password-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:3,rating:4.7,reviews:4523,trial:14,logoUrl:'https://cdn.simpleicons.org/1password/0094f5'},
+    'Bitwarden':    {slug:'1password-vs-bitwarden-which-is-better-in-2026',cat:'Security',price:1,rating:4.6,reviews:3219,trial:7,logoUrl:'https://cdn.simpleicons.org/bitwarden/175DDC'},
+    'NordVPN':      {slug:'nordvpn-pricing-2026',cat:'Security',price:4,rating:4.5,reviews:8234,trial:30,logoUrl:'https://cdn.simpleicons.org/nordvpn/4687FF'},
+    'Slack':        {slug:'slack-pricing-2026-plans-costs-what-you-actually-pay',cat:'Comms',price:7,rating:4.5,reviews:5673,trial:0,logoUrl:'https://cdn.simpleicons.org/slack/4A154B'},
+    'Shopify':      {slug:'shopify-pricing-2026-plans-costs-what-you-actually-pay',cat:'E-commerce',price:29,rating:4.4,reviews:9234,trial:3,logoUrl:'https://cdn.simpleicons.org/shopify/96BF48'},
+    'Freshdesk':    {slug:'freshdesk-pricing-2026',cat:'Help Desk',price:15,rating:4.4,reviews:2341,trial:21,logoText:'FD',logoColor:'#3fad46'},
+    'Intercom':     {slug:'intercom-pricing-2026',cat:'Help Desk',price:39,rating:4.3,reviews:1987,trial:14,logoUrl:'https://cdn.simpleicons.org/intercom/6efac8'},
+    'Zendesk':      {slug:'zendesk-pricing-2026',cat:'Help Desk',price:19,rating:4.2,reviews:4312,trial:14,logoUrl:'https://cdn.simpleicons.org/zendesk/03363d'},
+    'Contabo':      {slug:'contabo-pricing-2026',cat:'Cloud',price:5,rating:4.1,reviews:892,trial:0,logoText:'CO',logoColor:'#e74c3c'},
+    'Sucuri':       {slug:'sucuri-pricing-2026',cat:'Security',price:10,rating:4.3,reviews:743,trial:0,logoText:'SC',logoColor:'#219653'}
+  };
+
+  /* ── helpers ── */
+  function renumber() {
+    document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').forEach(function(c,i){
+      var r = c.querySelector('.sl-rank'); if(r) r.textContent = i+1;
+    });
+  }
+  function updateCount() {
+    var n = document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').length;
+    var h = document.querySelector('h3[style*="margin-bottom:10px"]') || document.querySelector('.sl-cards')?.previousElementSibling;
+    if(h) h.textContent = 'Your shortlist (' + n + ')';
+  }
+  function wireClose(btn) {
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.sl-card');
+      card.style.cssText += ';transition:opacity .22s,transform .22s;opacity:0;transform:scale(.88)';
+      setTimeout(function(){ card.remove(); renumber(); updateCount(); }, 230);
+    });
+  }
+
+  /* ── wire existing X buttons ── */
+  document.querySelectorAll('.sl-close').forEach(wireClose);
+
+  /* ── wire existing View Details links ── */
+  document.querySelectorAll('.sl-details').forEach(function(a){
+    var card = a.closest('.sl-card');
+    var name = card ? (card.querySelector('.sl-card-name')||{}).textContent?.trim() : null;
+    var key = name && (TOOLS[name] ? name : Object.keys(TOOLS).find(function(k){ return k.toLowerCase()===name.toLowerCase(); }));
+    a.href = key ? '/pages/' + TOOLS[key].slug : '/pages/';
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+
+  /* ── toolbar buttons ── */
+  document.querySelectorAll('.sp-btn').forEach(function(btn){
+    var t = btn.textContent.trim();
+    if(t === 'Share Shortlist') {
+      btn.addEventListener('click', function(){
+        navigator.clipboard && navigator.clipboard.writeText(window.location.href).then(function(){
+          btn.textContent = '✓ Copied!';
+          setTimeout(function(){ btn.textContent = 'Share Shortlist'; }, 2200);
+        });
+      });
+    }
+    if(t === 'Export PDF') {
+      btn.addEventListener('click', function(){ window.print(); });
+    }
+    if(t === 'Clear All') {
+      btn.addEventListener('click', function(){
+        if(!confirm('Remove all tools from shortlist?')) return;
+        document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').forEach(function(c){ c.remove(); });
+        updateCount();
+      });
+    }
+  });
+
+  /* ── sidebar action-btn ── */
+  document.querySelectorAll('.action-btn').forEach(function(btn){
+    var t = btn.textContent.trim();
+    if(t.includes('Compare side-by-side') || t.includes('side-by-side')) {
+      btn.addEventListener('click', function(){
+        var m = document.querySelector('.matrix'); if(m) m.scrollIntoView({behavior:'smooth'});
+      });
+    }
+    if(t.includes('Share shortlist')) {
+      btn.addEventListener('click', function(){
+        navigator.clipboard && navigator.clipboard.writeText(window.location.href).then(function(){
+          btn.textContent = btn.textContent.replace('Share shortlist','✓ Copied!');
+          setTimeout(function(){ btn.textContent = btn.textContent.replace('✓ Copied!','Share shortlist'); },2200);
+        });
+      });
+    }
+    if(t.includes('Export as PDF')) {
+      btn.addEventListener('click', function(){ window.print(); });
+    }
+    if(t.includes('Clear shortlist')) {
+      btn.addEventListener('click', function(){
+        if(!confirm('Remove all tools from shortlist?')) return;
+        document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').forEach(function(c){ c.remove(); });
+        updateCount();
+      });
+    }
+    if(t.includes('pricing details')) {
+      btn.addEventListener('click', function(){
+        var first = document.querySelector('.sl-details'); if(first) first.click();
+      });
+    }
+  });
+
+  /* ── sidebar "Compare Side-by-Side →" btn ── */
+  document.querySelectorAll('button').forEach(function(btn){
+    if(btn.textContent.includes('Compare Side-by-Side')) {
+      btn.addEventListener('click', function(){
+        var m = document.querySelector('.matrix'); if(m) m.scrollIntoView({behavior:'smooth'});
+      });
+    }
+    if(btn.textContent.trim() === 'Add Another Tool') {
+      btn.addEventListener('click', function(){
+        var inp = document.querySelector('.sl-add input'); if(inp){ inp.focus(); inp.scrollIntoView({behavior:'smooth',block:'center'}); }
+      });
+    }
+  });
+
+  /* ── "Talk to an Expert" → contact ── */
+  document.querySelectorAll('.sp-btn-primary').forEach(function(a){
+    if(a.textContent.includes('Talk to an Expert')) { a.href = '/contact'; }
+  });
+
+  /* ── Add Tool search ── */
+  var searchInput = document.querySelector('.sl-add input');
+  var addBtn      = document.querySelector('.sl-add .sp-btn-primary');
+  if(searchInput) {
+    var dd = document.createElement('div');
+    dd.id = 'sl-drop';
+    dd.style.cssText = 'position:absolute;top:100%;left:0;right:0;background:#130b10;border:1px solid rgba(255,255,255,.09);border-radius:12px;margin-top:5px;z-index:60;overflow:hidden;display:none;box-shadow:0 16px 40px rgba(0,0,0,.5)';
+    searchInput.parentElement.style.position = 'relative';
+    searchInput.parentElement.appendChild(dd);
+
+    function showDrop(q) {
+      q = q.toLowerCase();
+      if(!q){ dd.style.display='none'; return; }
+      var hits = Object.keys(TOOLS).filter(function(n){ return n.toLowerCase().includes(q); }).slice(0,7);
+      if(!hits.length){ dd.style.display='none'; return; }
+      dd.innerHTML = hits.map(function(n){
+        var t = TOOLS[n];
+        return '<div style="padding:11px 15px;cursor:pointer;font-size:.87rem;color:rgba(255,248,245,.85);font-weight:600;border-bottom:1px solid rgba(255,255,255,.05)" data-name="'+n+'">' +
+          n + '<span style="font-size:.74rem;color:rgba(255,255,255,.38);font-weight:400;margin-left:8px">'+t.cat+' · $'+t.price+'/mo</span></div>';
+      }).join('');
+      dd.querySelectorAll('[data-name]').forEach(function(item){
+        item.addEventListener('mouseover',function(){ item.style.background='rgba(233,69,96,.12)'; });
+        item.addEventListener('mouseout',function(){ item.style.background=''; });
+        item.addEventListener('click',function(){ addTool(item.dataset.name); searchInput.value=''; dd.style.display='none'; });
+      });
+      dd.style.display = 'block';
+    }
+    searchInput.addEventListener('input', function(){ showDrop(searchInput.value.trim()); });
+    searchInput.addEventListener('keydown', function(e){ if(e.key==='Escape') dd.style.display='none'; });
+    document.addEventListener('click', function(e){ if(!searchInput.parentElement.contains(e.target)) dd.style.display='none'; });
+
+    if(addBtn) {
+      addBtn.addEventListener('click', function(){
+        var q = searchInput.value.trim();
+        var match = Object.keys(TOOLS).find(function(k){ return k.toLowerCase()===q.toLowerCase() || k.toLowerCase().includes(q.toLowerCase()); });
+        if(match){ addTool(match); searchInput.value=''; dd.style.display='none'; }
+        else if(q){ searchInput.style.borderColor='rgba(233,69,96,.6)'; setTimeout(function(){ searchInput.style.borderColor=''; },1200); }
+      });
+    }
+  }
+
+  function addTool(name) {
+    var tool = TOOLS[name]; if(!tool) return;
+    var existing = Array.from(document.querySelectorAll('.sl-card-name')).some(function(el){ return el.textContent.trim()===name; });
+    if(existing){ return; }
+    var count = document.querySelectorAll('.sl-cards .sl-card:not(.sl-card-empty)').length;
+    var logoHtml = tool.logoUrl
+      ? '<img src="'+tool.logoUrl+'" alt="'+name+'" style="width:100%;height:100%;object-fit:contain">'
+      : '<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a,#0a0a0a);color:'+(tool.logoColor||'#fff')+';font-weight:900;font-size:.62em;border-radius:inherit">'+(tool.logoText||name.slice(0,2).toUpperCase())+'</span>';
+    var trialHtml = tool.trial
+      ? '<div class="sl-trial"><em>'+tool.trial+'-day</em> free trial</div>'
+      : '<div class="sl-trial" style="color:rgba(255,255,255,.3)">No free trial</div>';
+    var art = document.createElement('article');
+    art.className = 'sl-card premium-card';
+    art.style.animation = 'none';
+    art.innerHTML =
+      '<span class="sl-rank">'+(count+1)+'</span>'+
+      '<button class="sl-close"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>'+
+      '<div class="sl-card-head"><span class="sp-logo">'+logoHtml+'</span>'+
+      '<div><div class="sl-card-name">'+name+'</div><div class="sl-card-cat">'+tool.cat+'</div></div></div>'+
+      '<div class="sl-price">$'+tool.price+'<em>/seat/mo</em></div>'+
+      '<div class="sl-stars"><span>★</span> '+tool.rating+' ('+tool.reviews.toLocaleString()+')</div>'+
+      trialHtml+
+      '<a class="sl-details" href="/pages/'+tool.slug+'" target="_blank" rel="noopener">View Details →</a>';
+    wireClose(art.querySelector('.sl-close'));
+    var empty = document.querySelector('.sl-card-empty');
+    var container = document.querySelector('.sl-cards');
+    if(empty) container.insertBefore(art, empty); else container.appendChild(art);
+    updateCount();
+  }
+
+  window.__slAddTool = addTool;
+
+})();
+</script>
 </body>
 </html>
