@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-27T08:45:56+00:00",
+  "generated_at_utc": "2026-05-27T12:59:09+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 40,
   "claim_labels_seen": [
     "money_back_guarantee",
     "refund_policy_numeric"
@@ -76,13 +76,13 @@
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "from Remote.com to Deel?</summary> <p>Yes, Deel offers a free trial and a 30-day money-back guarantee, so you can try it risk-free.</p> </details> <details class=\"faq-i"
+          "snippet": "14-day money-back guarantee",
+          "context": "from Remote.com to Deel?</summary> <p>Yes, Deel offers a free trial and a 14-day money-back guarantee, making it easy to switch.</p> </details> <details class=\"faq-item"
         },
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "g from Remote.com to Deel is relatively easy, as Deel offers a free trial and a 30-day money-back guarantee. However, migrating data from Remote.com to Deel may require some manual effort"
+          "snippet": "14-day money-back guarantee",
+          "context": "5,255,255,.65);font-size:.92rem;line-height:1.8\">Deel offers a free trial and a 14-day money-back guarantee, making it easy to switch from Remote.com. Remote.com also offers a free trial,"
         }
       ],
       "trust_state_bumped": true
@@ -369,12 +369,22 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "amp to Monday.com?</summary> <p>Yes, Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp.</p> </details> <details c"
+          "context": "ble to switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to switch from Basecamp. The onboarding process typically takes"
+          "context": "eams due to its simplicity and ease of use. However, Monday.com's free plan and 14-day money-back guarantee make it a great option for small teams to test and switch to their platform.</p"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. Basecamp also offers a fr"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "h to their platform. Basecamp also offers a free trial, but it does not offer a money-back guarantee. The migration process from Basecamp to Monday.com can take several days to a w"
         }
       ],
       "trust_state_bumped": true
@@ -431,6 +441,22 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/mangools-vs-frase-io-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "s, you can switch from Frase.io to Mangools. Mangools offers a free trial and a 30-day money-back guarantee, making it easy to try out their tool and see if it's a good fit for your team."
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "line-height:1.8\">Migrating from Frase.io to Mangools is relatively easy, with a 30-day money-back guarantee and a free trial. However, setting up Mangools can take some time, especially f"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
