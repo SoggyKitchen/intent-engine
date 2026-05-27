@@ -1,6 +1,6 @@
 {
   "_comment": "Single source of truth for public-facing KPI counts. Regenerate via scripts/sync_public_kpis.py.",
-  "generated_at_utc": "2026-05-26T21:35:37+00:00",
+  "generated_at_utc": "2026-05-27T02:15:57+00:00",
   "page_counts": {
     "total_buyer_pages": 1319,
     "comparison_pages": 815,
