@@ -884,11 +884,30 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
       <span style="display:inline-flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ff7a9a;padding:6px 14px;border-radius:9999px;background:rgba(255,65,109,.10);border:1px solid rgba(255,75,115,.25)"><span style="width:6px;height:6px;border-radius:50%;background:#ff416d;box-shadow:0 0 10px #ff416d;animation:dotPulse 2.4s ease-in-out infinite"></span>Newsletter</span>
       <h2 style="font-size:clamp(32px,4vw,52px);line-height:1.02;font-weight:900;letter-spacing:-.035em;color:#fff7f8;margin:1rem 0;text-wrap:balance">Insider insights. <span style="background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:spGlint 3.6s linear infinite">Smarter SaaS decisions.</span></h2>
       <p style="font-size:1.05rem;line-height:1.65;color:rgba(255,247,248,.64);max-width:480px;margin:0 auto">Pricing changes, hidden fees, tool comparisons, and verified deal alerts &mdash; every Wednesday.</p>
-      <form style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:1.75rem;max-width:480px;margin-left:auto;margin-right:auto" onsubmit="event.preventDefault()">
-        <input type="email" placeholder="Enter your work email" required style="flex:1;min-width:220px;padding:.85rem 1.1rem;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.09);border-radius:9999px;color:#fff7f8;font-size:.95rem;outline:none;font-family:inherit">
+      <form id="hp-news-form" action="https://formsubmit.co/hello@saaspare.org" method="POST" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:1.75rem;max-width:480px;margin-left:auto;margin-right:auto" onsubmit="return hpNewsSubmit(this)">
+        <input type="hidden" name="_subject" value="New SaaSpare newsletter signup (homepage)">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="source" value="homepage-newsletter">
+        <input type="email" name="email" placeholder="Enter your work email" required style="flex:1;min-width:220px;padding:.85rem 1.1rem;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.09);border-radius:9999px;color:#fff7f8;font-size:.95rem;outline:none;font-family:inherit">
         <button type="submit" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:.85rem 1.5rem;border-radius:9999px;font-weight:700;font-size:.92rem;background:linear-gradient(135deg,#ff416d,#c92950);color:#fff;box-shadow:0 10px 30px rgba(255,65,109,.45);border:none;cursor:pointer;font-family:inherit;position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='translateY(0)'">Subscribe Free</button>
       </form>
+      <p id="hp-news-success" style="display:none;font-size:.95rem;color:#65d6a3;font-weight:700;margin-top:1.25rem">✓ You're in! Check your inbox to confirm — first issue lands Wednesday.</p>
       <p style="font-size:.82rem;color:rgba(255,247,248,.42);margin-top:1rem">No spam. Unsubscribe anytime. Written by real buyers.</p>
+      <script>
+      function hpNewsSubmit(form){
+        try{
+          var email=(form.querySelector('input[type=email]')||{}).value||'';
+          if(window.gtag){gtag('event','newsletter_signup',{location:'homepage',email_domain:(email.split('@')[1]||'')});}
+          // Fire-and-forget POST so the user isn't redirected off-site
+          fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+          form.style.display='none';
+          var ok=document.getElementById('hp-news-success');
+          if(ok) ok.style.display='block';
+          return false;
+        }catch(e){ return true; } // fall back to native POST if anything fails
+      }
+      </script>
     </div>
   </div>
 </section>

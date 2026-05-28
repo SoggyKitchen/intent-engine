@@ -1,13 +1,26 @@
 """
-Rebuilds sitemap.xml from all pages in site/pages/ and site/,
-then submits all new URLs to IndexNow for fast Google indexing.
+Rebuilds sitemap.xml from all indexable pages in site/pages/, site/,
+and content subdirectories (blog/, authors/), then submits new URLs to
+IndexNow for fast Google indexing.
 Run: .venv/Scripts/python scripts/update_sitemap_and_index.py
 """
-import pathlib, time, urllib.request, urllib.parse, json, sys
+import pathlib, time, urllib.request, urllib.parse, json, sys, re
 
 DOMAIN = "https://saaspare.org"
 INDEXNOW_KEY = "f8fe5282236748eda9fa6a1f13d1afe8"
 TODAY = time.strftime("%Y-%m-%d")
+
+# Content subdirectories whose pages should be indexed (E-E-A-T + content depth)
+CONTENT_SUBDIRS = ("blog", "authors")
+NOINDEX_RE = re.compile(r'<meta[^>]+name=["\']robots["\'][^>]*noindex', re.IGNORECASE)
+
+
+def _is_noindex(path: pathlib.Path) -> bool:
+    try:
+        return bool(NOINDEX_RE.search(path.read_text(encoding="utf-8", errors="replace")))
+    except OSError:
+        return False
+
 
 def get_all_urls():
     urls = []
@@ -23,12 +36,29 @@ def get_all_urls():
     for f in sorted(pages_dir.glob("*.html")):
         if f.stem in skip or f.stem.startswith(skip_prefixes):
             continue
+        if _is_noindex(f):
+            continue
         urls.append(f"{DOMAIN}/pages/{f.stem}")
 
     for f in sorted(site_dir.glob("*.html")):
         if f.stem in skip or f.stem.startswith(skip_prefixes):
             continue
+        if _is_noindex(f):
+            continue
         urls.append(f"{DOMAIN}/{f.stem}")
+
+    # Content subdirectories (blog posts, author bio pages) — these carry the
+    # E-E-A-T and topical-depth signals Google rewards, so they MUST be indexed.
+    for sub in CONTENT_SUBDIRS:
+        sub_dir = site_dir / sub
+        if not sub_dir.is_dir():
+            continue
+        for f in sorted(sub_dir.glob("*.html")):
+            if f.stem in skip or f.stem.startswith(skip_prefixes):
+                continue
+            if _is_noindex(f):
+                continue
+            urls.append(f"{DOMAIN}/{sub}/{f.stem}")
 
     urls.insert(0, DOMAIN + "/")
     return urls
