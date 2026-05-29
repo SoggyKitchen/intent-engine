@@ -48,8 +48,13 @@ def page(slug: str, title: str, description: str, h1: str,
 <meta name="description" content="{description}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://saaspare.org/pages/{slug}">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#07070d">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://saaspare.org/pages/{slug}">
