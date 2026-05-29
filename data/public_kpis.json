@@ -1,24 +1,24 @@
 {
   "_comment": "Single source of truth for public-facing KPI counts. Regenerate via scripts/sync_public_kpis.py.",
-  "generated_at_utc": "2026-05-27T12:59:01+00:00",
+  "generated_at_utc": "2026-05-29T08:05:42+00:00",
   "page_counts": {
-    "total_buyer_pages": 1319,
+    "total_buyer_pages": 1325,
     "comparison_pages": 815,
-    "pricing_pages": 48,
+    "pricing_pages": 51,
     "free_trial_pages": 42,
     "alternatives_pages": 71,
     "coupon_pages": 70,
-    "review_pages": 47,
+    "review_pages": 50,
     "verticals": 16
   },
   "display_strings": {
-    "badge_live": "1,319 buyer pages live",
-    "stat_buyer_pages": "1,319+",
+    "badge_live": "1,325 buyer pages live",
+    "stat_buyer_pages": "1,325+",
     "stat_verticals": "16",
-    "hero_headline_pages": "1,319 comparison, pricing, review, trial, and coupon pages across 16 verticals",
-    "library_stat_pages": "1,319 buyer pages",
-    "media_kit_indexed": "1,319+ indexed pages",
-    "about_stat_pages": "1,319+ comparison, pricing, review, trial, alternatives, and coupon pages",
+    "hero_headline_pages": "1,325 comparison, pricing, review, trial, and coupon pages across 16 verticals",
+    "library_stat_pages": "1,325 buyer pages",
+    "media_kit_indexed": "1,325+ indexed pages",
+    "about_stat_pages": "1,325+ comparison, pricing, review, trial, alternatives, and coupon pages",
     "comparison_count": "815+ side-by-side comparisons"
   }
 }
