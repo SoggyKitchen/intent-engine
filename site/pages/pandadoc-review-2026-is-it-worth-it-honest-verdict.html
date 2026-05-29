@@ -67,8 +67,12 @@
 }
 </script>
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
+<style id="sp-progress">
+#sp-read-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,#ff416d,#ff8fa3);z-index:9999;transition:width .1s linear;pointer-events:none}
+</style>
 </head>
 <body>
+<div id="sp-read-progress" aria-hidden="true"></div>
   <header>
     <nav><a href="/">SaaSpare</a> &rsaquo; <a href="/pages/">Reviews</a> &rsaquo; PandaDoc Review 2026</nav>
   </header>
@@ -233,6 +237,20 @@
     var a = e.target.closest('a[href*="/go/"]');
     if(a){ fireAffClick(a.getAttribute('href')); }
   }, {capture: true, passive: true});
+})();
+</script>
+<script>
+(function(){
+  var bar=document.getElementById('sp-read-progress');
+  if(!bar)return;
+  function upd(){
+    var h=document.documentElement,b=document.body;
+    var st=h.scrollTop||b.scrollTop;
+    var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+    bar.style.width=(sh>0?Math.round(st/sh*100):0)+'%';
+  }
+  window.addEventListener('scroll',upd,{passive:true});
+  upd();
 })();
 </script>
 </body>

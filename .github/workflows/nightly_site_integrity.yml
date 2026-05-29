@@ -105,6 +105,45 @@ jobs:
       - name: Update sitemap with new pages
         run: uv run python scripts/update_sitemap_hubs.py
 
+      # 4h-5b. Full sitemap rebuild including blog/ and authors/ subdirs.
+      # This is the permanent fix for the recurring sitemap blindspot that was
+      # leaving 15+ E-E-A-T pages invisible to Google (blog posts, author page).
+      # Also submits to IndexNow so Google recrawls within hours.
+      - name: Rebuild full sitemap (blog + authors) + IndexNow
+        run: uv run python scripts/update_sitemap_and_index.py
+        continue-on-error: true
+
+      # 4h-5c. SEO consolidation — noindex duplicate coupon/promo pairs,
+      # fix canonical conflicts from 2025/2026 page duplication.
+      - name: SEO consolidation (deduplicate canonicals)
+        run: uv run python scripts/seo_consolidate.py
+        continue-on-error: true
+
+      # 4h-5d. Re-apply GA4 affiliate_click tracking to any new pages that
+      # don't already have it. Ensures every /go/ link fires an analytics event.
+      - name: Re-apply affiliate click tracking
+        run: |
+          python3 << 'PYEOF'
+          import pathlib, re
+          SITE = pathlib.Path('site')
+          MARKER = 'affiliate_click_tracking_v1'
+          JS = '''<script>/* ''' + MARKER + ''' */
+          (function(){function fireAffClick(h){var s=(h.match(/\\/go\\/([^?#]+)/)||[])[1]||'unknown';if(window.gtag){gtag('event','affiliate_click',{tool_slug:s,page_path:window.location.pathname,link_href:h});}}
+          document.addEventListener('click',function(e){var a=e.target.closest('a[href*="/go/"]');if(a){fireAffClick(a.getAttribute('href'));}},{capture:true,passive:true});})();
+          </script>'''
+          n = 0
+          for base in [SITE/'pages', SITE/'blog', SITE]:
+            glob = '*.html' if base != SITE else '*.html'
+            for p in base.glob(glob):
+              try: html = p.read_text(encoding='utf-8', errors='replace')
+              except: continue
+              if '/go/' not in html or MARKER in html: continue
+              p.write_text(html.replace('</body>', JS + '\n</body>', 1), encoding='utf-8')
+              n += 1
+          print(f'Affiliate tracking applied to {n} new pages')
+          PYEOF
+        continue-on-error: true
+
       # 4h-6. Quick Answer blocks + Speakable schema + author bylines on
       # pricing history pages (AEO — makes these pages citable by AI search).
       - name: AEO pass — pricing history quick answers
@@ -157,18 +196,27 @@ jobs:
             site/pages/ \
             site/index.html \
             site/about.html \
+            site/contact.html \
+            site/deal-radar.html \
+            site/shortlist.html \
+            site/newsletter.html \
+            site/404.html \
             site/media-kit.html \
             site/blog/ \
+            site/authors/ \
             site/best-*.html \
             site/sitemap.xml \
+            site/_redirects \
             data/public_kpis.json \
             || true
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: nightly site integrity auto-fixes [skip ci]
 
           - repaired any new title/trust-box corruption
-          - resynced public KPI counters
+          - resynced public KPI counters (sitemap includes blog/ and authors/)
           - re-injected intent-weighted journey links
-          - refreshed manual-review queue for risky factual claims"
+          - refreshed manual-review queue for risky factual claims
+          - re-applied GA4 affiliate_click tracking to new pages
+          - SEO consolidation (canonical dedup)"
           git pull --rebase -X ours --autostash origin main
           git push

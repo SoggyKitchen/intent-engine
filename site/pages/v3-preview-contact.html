@@ -44,8 +44,12 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".quick-answer","h1",".meta",".article-intro","p.lead"]}}
   </script>
+<style id="sp-progress">
+#sp-read-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,#ff416d,#ff8fa3);z-index:9999;transition:width .1s linear;pointer-events:none}
+</style>
 </head>
 <body class="v3">
+<div id="sp-read-progress" aria-hidden="true"></div>
 
 <nav id="nav" class="v3-nav">
   <a href="/" class="v3-logo">
@@ -246,4 +250,18 @@
 <script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 
 <aside style="margin:24px 0;padding:14px 18px;background:#fef2f2;border-left:4px solid #dc2626;border-radius:0 6px 6px 0;font-size:.88rem;">⚡ <strong>Did this tool raise prices in 2026?</strong> See our <a href="/pages/saas-price-hike-watch-may-2026" style="color:#991b1b;font-weight:700;">SaaS Price Hike Watch</a> for every confirmed 2026 price increase.</aside>
+<script>
+(function(){
+  var bar=document.getElementById('sp-read-progress');
+  if(!bar)return;
+  function upd(){
+    var h=document.documentElement,b=document.body;
+    var st=h.scrollTop||b.scrollTop;
+    var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+    bar.style.width=(sh>0?Math.round(st/sh*100):0)+'%';
+  }
+  window.addEventListener('scroll',upd,{passive:true});
+  upd();
+})();
+</script>
 </body></html>

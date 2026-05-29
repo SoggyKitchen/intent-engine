@@ -223,8 +223,12 @@ footer p+p{margin-top:.5rem}
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".quick-answer","h1",".meta",".article-intro","p.lead"]}}
   </script>
+<style id="sp-progress">
+#sp-read-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,#ff416d,#ff8fa3);z-index:9999;transition:width .1s linear;pointer-events:none}
+</style>
 </head>
 <body class="v2">
+<div id="sp-read-progress" aria-hidden="true"></div>
 
 <!-- NAV (canonical, v2) -->
 <nav id="nav">
@@ -810,6 +814,20 @@ if(em){
     var a = e.target.closest('a[href*="/go/"]');
     if(a){ fireAffClick(a.getAttribute('href')); }
   }, {capture: true, passive: true});
+})();
+</script>
+<script>
+(function(){
+  var bar=document.getElementById('sp-read-progress');
+  if(!bar)return;
+  function upd(){
+    var h=document.documentElement,b=document.body;
+    var st=h.scrollTop||b.scrollTop;
+    var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+    bar.style.width=(sh>0?Math.round(st/sh*100):0)+'%';
+  }
+  window.addEventListener('scroll',upd,{passive:true});
+  upd();
 })();
 </script>
 </body>
