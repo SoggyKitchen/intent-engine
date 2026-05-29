@@ -2,46 +2,15 @@
   "current_month": "May 2026",
   "today": "2026-05-29",
   "titles_rewritten": 0,
-  "descs_rewritten": 6,
+  "descs_rewritten": 0,
   "dates_refreshed": 0,
-  "answers_added": 6,
-  "files_changed": 6,
+  "answers_added": 0,
+  "files_changed": 0,
   "files_scanned": 1324,
   "title_examples": [],
-  "desc_examples": [
-    {
-      "file": "nordvpn-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Updated 2026-05-29. NordVPN pricing plans: what you actually pay, hidden fees, and the best plan for your needs. Starting from $3.39/month (2-year plan).",
-      "after": "Updated May 2026. Updated 2026-05-29. NordVPN pricing plans: what you actually pay, hidden fees, and the best plan for your needs. Starting from $3.39/month\u2026"
-    },
-    {
-      "file": "nordvpn-review-2026-is-it-worth-it-honest-verdict.html",
-      "before": "Independent NordVPN review 2026. Score: 9.2/10. We tested every feature, pricing, and support. Straight verdict: is NordVPN worth it for your team?",
-      "after": "Updated May 2026. Independent NordVPN review 2026. Score: 9.2/10. We tested every feature, pricing, and support. Straight verdict: is NordVPN worth it for your team?"
-    },
-    {
-      "file": "sucuri-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Updated 2026-05-29. Sucuri pricing plans: what you actually pay, hidden fees, and the best plan for your needs. Starting from $199.99/year (Basic Platform).",
-      "after": "Updated May 2026. Updated 2026-05-29. Sucuri pricing plans: what you actually pay, hidden fees, and the best plan for your needs. Starting from $199.99/year\u2026"
-    },
-    {
-      "file": "sucuri-review-2026-is-it-worth-it-honest-verdict.html",
-      "before": "Independent Sucuri review 2026. Score: 9.1/10. We tested every feature, pricing, and support. Straight verdict: is Sucuri worth it for your team?",
-      "after": "Updated May 2026. Independent Sucuri review 2026. Score: 9.1/10. We tested every feature, pricing, and support. Straight verdict: is Sucuri worth it for your team?"
-    },
-    {
-      "file": "surfshark-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Updated 2026-05-29. Surfshark pricing plans: what you actually pay, hidden fees, and the best plan for your needs. Starting from $2.19/month (2-year plan).",
-      "after": "Updated May 2026. Updated 2026-05-29. Surfshark pricing plans: what you actually pay, hidden fees, and the best plan for your needs. Starting from $2.19/month\u2026"
-    },
-    {
-      "file": "surfshark-review-2026-is-it-worth-it-honest-verdict.html",
-      "before": "Independent Surfshark review 2026. Score: 9.0/10. We tested every feature, pricing, and support. Straight verdict: is Surfshark worth it for your team?",
-      "after": "Updated May 2026. Independent Surfshark review 2026. Score: 9.0/10. We tested every feature, pricing, and support. Straight verdict: is Surfshark worth it for\u2026"
-    }
-  ],
+  "desc_examples": [],
   "indexnow": {
     "submitted": 0,
-    "error": "HTTP Error 403: Forbidden"
+    "skipped_reason": "no urls"
   }
 }
