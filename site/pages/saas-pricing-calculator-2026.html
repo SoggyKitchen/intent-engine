@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saas Pricing 2026 (Tested May 2026) — Real Costs + Hidden Fees</title>
+  <title>SaaS Pricing Calculator 2026 — Estimate Your Total SaaS Cost | SaaSpare</title>
   <meta name="description" content="Updated May 2026. What does Saas actually cost in 2026? Starting at $500/month. We compared every plan, uncovered hidden fees, and show you the cheapest way to pay.…">
   <meta property="og:title" content="Saas Pricing 2026: Plans from $500/mo — Every Fee Exposed | SaaSpare">
   <meta property="og:description" content="What does Saas actually cost in 2026? Starting at $500/month. We compared every plan, uncovered hidden fees, and show you the cheapest way to pay.…">
@@ -241,4 +241,22 @@
   <a href="/go/saas" rel="nofollow sponsored" target="_blank" style="background:#0ea5e9;color:#fff;padding:.6rem 1.4rem;border-radius:6px;font-weight:700;font-size:.9rem;white-space:nowrap;text-decoration:none;flex-shrink:0;">Try SaaS Free &rarr;</a>
 </div>
 <style>#sticky-cta{display:none}@media(min-width:640px){#sticky-cta{display:flex}}</style>
+<script>/* affiliate_click_tracking_v1 */
+(function(){
+  function fireAffClick(href){
+    var slug = (href.match(/\/go\/([^?#]+)/) || [])[1] || 'unknown';
+    if(window.gtag){
+      gtag('event','affiliate_click',{
+        tool_slug: slug,
+        page_path: window.location.pathname,
+        link_href: href
+      });
+    }
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href*="/go/"]');
+    if(a){ fireAffClick(a.getAttribute('href')); }
+  }, {capture: true, passive: true});
+})();
+</script>
 </body></html>

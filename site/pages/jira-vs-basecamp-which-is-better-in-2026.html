@@ -1507,6 +1507,24 @@ em&&em.addEventListener('click',function(e){if(e.target===em)closeExit();});
   setTimeout(show,120000); // also show after 2 min if user stays
 })();
 </script>
+<script>/* affiliate_click_tracking_v1 */
+(function(){
+  function fireAffClick(href){
+    var slug = (href.match(/\/go\/([^?#]+)/) || [])[1] || 'unknown';
+    if(window.gtag){
+      gtag('event','affiliate_click',{
+        tool_slug: slug,
+        page_path: window.location.pathname,
+        link_href: href
+      });
+    }
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href*="/go/"]');
+    if(a){ fireAffClick(a.getAttribute('href')); }
+  }, {capture: true, passive: true});
+})();
+</script>
 </body>
 
 </html>
