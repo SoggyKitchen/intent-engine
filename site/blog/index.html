@@ -1,99 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SaaSpare Blog — SaaS Pricing Insights & Buyer Guides</title>
-<meta name="description" content="Independent analysis of SaaS pricing trends, vendor tactics, and how to buy B2B software without overpaying. No sponsored rankings.">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://saaspare.org/blog/">
-<meta property="og:title" content="SaaSpare Blog — SaaS Pricing Insights">
-<meta property="og:description" content="Independent SaaS pricing analysis and buyer guides.">
-<meta property="og:url" content="https://saaspare.org/blog/">
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
-<link rel="alternate" type="application/rss+xml" title="SaaSpare" href="/feed.xml">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"SaaSpare Blog","url":"https://saaspare.org/blog/","description":"Independent SaaS pricing insights and buyer guides.","publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org","logo":"https://saaspare.org/og-default.png","sameAs":["https://twitter.com/SaaSpare"]}}</script>
-<style>
-:root{--bg:#07070d;--red:#e94560;--red2:#c73652;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.42);--dim:rgba(255,248,245,.16);--border:rgba(255,255,255,.07);--card:rgba(255,255,255,.038)}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{text-decoration:none;color:inherit}
-::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
-::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease}
-nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.logo{display:flex;align-items:center;gap:9px;margin-right:auto}
-.logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
-.mark-top,.mark-bot{transform-box:fill-box;transform-origin:center;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
-.wv{pointer-events:none;transition:opacity .3s}
-@keyframes markGlow{0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
-.logo:hover .mark-top{transform:translateX(26px)}.logo:hover .mark-bot{transform:translateX(-26px)}.logo:hover .wv{opacity:0}
-.logo-text{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
-.logo-text em{color:var(--red);font-style:normal}
-.nav-link{color:var(--muted);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap}
-.nav-link:hover,.nav-link.active{color:#fff}
-.nav-cta{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
-.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.page-hero{position:relative;overflow:hidden;padding:7rem 2rem 3.5rem;text-align:center;z-index:1}
-.page-hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(80,18,28,.85) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 30%,rgba(233,69,96,.06) 0%,transparent 70%),var(--bg)}
-.page-hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,black 25%,transparent 78%);animation:dotDrift 36s linear infinite;opacity:.7}
-@keyframes dotDrift{from{background-position:0 0}to{background-position:32px 32px}}
-.page-hero-orb{position:absolute;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(233,69,96,.14) 0%,rgba(160,20,40,.06) 42%,transparent 70%);top:-320px;left:50%;pointer-events:none;filter:blur(58px);animation:orbDrift 14s ease-in-out infinite}
-@keyframes orbDrift{0%,100%{opacity:.62;transform:translate(-50%,0) scale(1)}33%{opacity:.88;transform:translate(-46%,10px) scale(1.05)}66%{opacity:.94;transform:translate(-54%,-6px) scale(1.09)}}
-.page-hero-content{position:relative;z-index:2;max-width:720px;margin:0 auto}
-.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.07);border:1px solid rgba(233,69,96,.18);color:rgba(255,185,200,.78);padding:4px 12px;border-radius:100px;font-size:.66rem;font-weight:600;letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4rem;animation:up .6s ease both}
-.page-eyebrow::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--red);box-shadow:0 0 6px var(--red);flex-shrink:0;animation:dotPulse 2.4s ease-in-out infinite}
-@keyframes dotPulse{0%,100%{box-shadow:0 0 4px var(--red)}50%{box-shadow:0 0 10px var(--red),0 0 0 3px rgba(233,69,96,.1)}}
-.page-hero h1{font-size:clamp(2rem,5.5vw,3.2rem);font-weight:900;color:#fff;letter-spacing:-.05em;line-height:1.14;margin-bottom:1rem;animation:up .7s .1s ease both}
-.page-hero h1 em{color:var(--red);font-style:normal;display:inline-block;background:linear-gradient(100deg,var(--red) 0%,#ff8fa3 35%,#ffd1dc 50%,#ff8fa3 65%,var(--red) 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4.5s linear infinite}
-@keyframes shimmer{0%{background-position:300% center}100%{background-position:-100% center}}
-.page-sub{color:var(--muted);font-size:1rem;line-height:1.8;max-width:560px;margin:0 auto;animation:up .7s .2s ease both}
-@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-.shell{max-width:1100px;margin:0 auto;padding:3.5rem clamp(1.5rem,4vw,3rem) 7rem}
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
-.blog-card{background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.025));border:1px solid var(--border);border-radius:20px;padding:1.6rem;transition:all .22s;display:flex;flex-direction:column;gap:.75rem}
-.blog-card:hover{transform:translateY(-3px);border-color:rgba(233,69,96,.28);background:rgba(233,69,96,.04)}
-.blog-tag{font-size:.62rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:rgba(255,185,200,.7);background:rgba(233,69,96,.1);border:1px solid rgba(233,69,96,.2);padding:3px 10px;border-radius:100px;width:fit-content}
-.blog-card h2{font-size:1.05rem;font-weight:800;color:#fff;line-height:1.35;letter-spacing:-.02em}
-.blog-card p{font-size:.84rem;color:var(--muted);line-height:1.65;flex:1}
-.blog-meta{font-size:.72rem;color:var(--dim);display:flex;gap:.6rem;align-items:center}
-.blog-meta::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--red);flex-shrink:0}
-.read-more{font-size:.78rem;font-weight:700;color:var(--red);display:inline-flex;align-items:center;gap:4px;transition:gap .15s}
-.blog-card:hover .read-more{gap:8px}
-footer{border-top:1px solid var(--border);padding:2.5rem 2rem;text-align:center;color:var(--dim);font-size:.78rem}
-footer a{color:var(--muted);margin:0 .5rem;transition:color .15s}
-footer a:hover{color:#fff}
-@media(max-width:640px){.blog-grid{grid-template-columns:1fr}.page-hero{padding:6rem 1.2rem 2.5rem}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaSpare Blog — SaaS Pricing Insights & Buyer Guides</title>
+  <meta name="description" content="Independent analysis of SaaS pricing trends, vendor tactics, and how to buy B2B software without overpaying. No sponsored rankings.">
+  <link rel="canonical" href="https://saaspare.org/blog/">
+  <meta property="og:title" content="SaaSpare Blog — SaaS Pricing Insights">
+  <meta property="og:description" content="Independent SaaS pricing analysis and buyer guides.">
+  <meta property="og:url" content="https://saaspare.org/blog/">
+  <meta property="og:image" content="https://saaspare.org/og/default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"SaaSpare Blog","url":"https://saaspare.org/blog/","description":"Independent SaaS pricing insights and buyer guides.","publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org","logo":"https://saaspare.org/og-default.png","sameAs":["https://twitter.com/SaaSpare"]}}</script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".quick-answer","h1",".meta",".article-intro","p.lead"]}}
   </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RLYVYV8WQJ');
+  </script>
+  <link rel="stylesheet" href="/assets/saaspare-v2.css">
+  <link rel="stylesheet" href="/assets/motion.css">
 </head>
-<body>
-<nav id="nav">
-  <a href="/" class="logo">
-    <svg class="logo-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath><mask id="sm1"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;0;0;180;180" keyTimes="0;0.20;0.61;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm2"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220;180;180" keyTimes="0;0.21;0.41;0.82;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm3"><rect x="-400" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="-400;-400;0;0" keyTimes="0;0.42;0.62;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask><mask id="sm4"><rect x="180" y="-50" width="400" height="300" fill="white"><animate attributeName="x" values="180;180;-220;-220" keyTimes="0;0.63;0.83;1" dur="12s" repeatCount="indefinite" calcMode="linear"/></rect></mask></defs><path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path class="mark-top" fill="#e94560" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/><g clip-path="url(#ct)"><path fill="rgba(0,0,0,.55)" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 Z" mask="url(#sm1)"/><path fill="rgba(255,255,255,.18)" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 Z" mask="url(#sm2)"/></g><g clip-path="url(#cb)"><path fill="rgba(0,0,0,.55)" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 Z" mask="url(#sm3)"/><path fill="rgba(255,255,255,.18)" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 Z" mask="url(#sm4)"/></g></svg>
-    <span class="logo-text">Saa<em>Spare</em></span>
-  </a>
-  <a href="/pages/" class="nav-link">Comparisons</a>
-  <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
-  <a href="/shortlist" class="nav-link">Shortlist Builder</a>
-  <a href="/deal-radar" class="nav-link">Deal Radar</a>
-  <a href="/about" class="nav-link">About</a>
-  <a href="/shortlist" class="nav-cta">Build Shortlist &#8594;</a>
-</nav>
+<body class="sp-bg">
 
+  <nav class="sp-nav" id="sp-nav">
+    <a href="/" class="sp-logo">SaaSpare</a>
+    <div class="sp-nav-links">
+      <a href="/pages/">Compare</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about">About</a>
+    </div>
+  </nav>
+
+  <div style="max-width:900px;margin:0 auto;padding:5rem 1.5rem 4rem;">
 <section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="page-hero-dots"></div>
@@ -200,17 +144,7 @@ footer a:hover{color:#fff}
   </div>
 </div>
 
-<footer>
-  <div>
-    <a href="/">Home</a>
-    <a href="/pages/">Comparisons</a>
-    <a href="/blog/">Blog</a>
-    <a href="/about">About</a>
-    <a href="/privacy">Privacy</a>
-    <a href="/affiliate-disclosure">Disclosure</a>
-  </div>
-  <p style="margin-top:1rem">&copy; 2026 SaaSpare &mdash; Independent B2B SaaS comparisons. No rankings sold.</p>
-</footer>
+
 
 <script>
 (function(){
@@ -221,5 +155,44 @@ footer a:hover{color:#fff}
 })();
 </script>
 <script defer src="/assets/saaspare-events.js"></script>
+  </div>
+
+  <footer class="sp-footer">
+    <div style="max-width:1100px;margin:0 auto;padding:3rem 1.5rem 2rem;text-align:center;">
+      <p style="color:var(--ink-4);font-size:.85rem;margin-bottom:.75rem;">
+        &copy; 2026 SaaSpare.org &mdash; Independent B2B SaaS research
+      </p>
+      <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;font-size:.82rem;">
+        <a href="/" style="color:var(--ink-4);">Home</a>
+        <a href="/blog/" style="color:var(--ink-4);">Blog</a>
+        <a href="/about" style="color:var(--ink-4);">About</a>
+        <a href="/affiliate-disclosure" style="color:var(--ink-4);">Affiliate Disclosure</a>
+        <a href="/privacy" style="color:var(--ink-4);">Privacy</a>
+        <a href="/editorial-policy" style="color:var(--ink-4);">Editorial Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/motion.js"></script>
+
+  <!-- Sticky Bottom CTA (v2) -->
+  <div id="sticky-cta" style="position:fixed;bottom:0;left:0;right:0;z-index:999;background:rgba(5,4,7,0.97);backdrop-filter:blur(12px);border-top:1px solid rgba(255,65,109,0.25);padding:14px 20px;display:flex;align-items:center;justify-content:center;gap:16px;transform:translateY(100%);transition:transform 0.4s ease;">
+    <span style="color:#a0a0b8;font-size:.88rem;">Ready to start?</span>
+    <a href="/go/semrush" target="_blank" rel="noopener sponsored"
+       onclick="if(window.gtag){gtag('event','affiliate_click',{tool:'index',placement:'sticky_cta',page:window.location.pathname});}"
+       style="display:inline-flex;align-items:center;padding:10px 22px;background:linear-gradient(135deg,#ff416d,#ff6b35);color:#fff;font-weight:700;font-size:.92rem;border-radius:9999px;text-decoration:none;box-shadow:0 4px 20px rgba(255,65,109,0.35);">
+      Compare Top Tools →
+    </a>
+    <button onclick="document.getElementById('sticky-cta').style.display='none'" style="background:none;border:none;color:#666;cursor:pointer;font-size:1.2rem;padding:4px 8px;">&times;</button>
+  </div>
+  <script>
+    (function(){
+      var bar=document.getElementById('sticky-cta');
+      if(!bar) return;
+      var shown=false;
+      window.addEventListener('scroll',function(){
+        if(!shown&&window.scrollY>300){bar.style.transform='translateY(0)';shown=true;}
+      },{passive:true});
+    })();
+  </script>
 </body>
 </html>
