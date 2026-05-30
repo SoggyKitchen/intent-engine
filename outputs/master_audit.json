@@ -1,0 +1,604 @@
+{
+  "date": "2026-05-31",
+  "revenue_leaks": [
+    {
+      "slug": "clickup",
+      "name": "ClickUp",
+      "pages": 27,
+      "commission": "$15-30/sale",
+      "network": "Direct",
+      "priority": 3,
+      "monthly_est": 16,
+      "fixable_now": false,
+      "top_pages": [
+        "clickup-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "clickup-pricing-history-2026.html",
+        "clickup-review-2026-is-it-worth-it-honest-verdict.html",
+        "monday-com-review-2026-is-it-worth-it-honest-verdict.html",
+        "7-best-jira-alternatives-in-2026-free-paid.html"
+      ]
+    },
+    {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "pages": 24,
+      "commission": "$250-1000/sale",
+      "network": "Impact.com",
+      "priority": 2,
+      "monthly_est": 240,
+      "fixable_now": false,
+      "top_pages": [
+        "activecampaign-review-2026-is-it-worth-it-honest-verdict.html",
+        "hubspot-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "hubspot-pricing-history-2026.html",
+        "hubspot-review-2026-is-it-worth-it-honest-verdict.html",
+        "saas-pricing-index.html"
+      ]
+    },
+    {
+      "slug": "1password",
+      "name": "1Password",
+      "pages": 21,
+      "commission": "$5-30/ref",
+      "network": "ShareASale",
+      "priority": 4,
+      "monthly_est": 7,
+      "fixable_now": false,
+      "top_pages": [
+        "1password-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "1password-pricing-history-2026.html",
+        "1password-review-2026-is-it-worth-it-honest-verdict.html",
+        "1password-coupon-code-promo-codes-2026-verified-discounts.html",
+        "1password-free-trial-2026-how-to-get-it-step-by-step.html"
+      ]
+    },
+    {
+      "slug": "activecampaign",
+      "name": "ActiveCampaign",
+      "pages": 20,
+      "commission": "$100/ref",
+      "network": "Impact.com",
+      "priority": 5,
+      "monthly_est": 50,
+      "fixable_now": false,
+      "top_pages": [
+        "activecampaign-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "activecampaign-review-2026-is-it-worth-it-honest-verdict.html",
+        "getresponse-review-2026-is-it-worth-it-honest-verdict.html",
+        "7-best-getresponse-alternatives-in-2026-free-paid.html",
+        "7-best-mailchimp-alternatives-in-2026-free-paid.html"
+      ]
+    },
+    {
+      "slug": "monday-com",
+      "name": "Monday.com",
+      "pages": 20,
+      "commission": "$20-50/conv",
+      "network": "Impact.com",
+      "priority": 12,
+      "monthly_est": 17,
+      "fixable_now": false,
+      "top_pages": [
+        "monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "monday-com-pricing-history-2026.html",
+        "monday-com-review-2026-is-it-worth-it-honest-verdict.html",
+        "7-best-jira-alternatives-in-2026-free-paid.html",
+        "asana-vs-monday-com-which-is-better-in-2026.html"
+      ]
+    },
+    {
+      "slug": "freshbooks",
+      "name": "FreshBooks",
+      "pages": 19,
+      "commission": "$200/sale",
+      "network": "CJ \u2014 already approved",
+      "priority": 1,
+      "monthly_est": 95,
+      "fixable_now": false,
+      "top_pages": [
+        "freshbooks-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "freshbooks-review-2026-is-it-worth-it-honest-verdict.html",
+        "7-best-quickbooks-alternatives-in-2026-free-paid.html",
+        "best-accounting-software-for-freelancers-in-2026.html",
+        "best-accounting-software-for-small-business-2026.html"
+      ]
+    },
+    {
+      "slug": "xero",
+      "name": "Xero",
+      "pages": 18,
+      "commission": "$40/signup",
+      "network": "CJ",
+      "priority": 10,
+      "monthly_est": 18,
+      "fixable_now": false,
+      "top_pages": [
+        "xero-pricing-2026-plans-costs-what-you-actually-pay.html",
+        "xero-review-2026-is-it-worth-it-honest-verdict.html",
+        "7-best-quickbooks-alternatives-in-2026-free-paid.html",
+        "best-accounting-software-for-freelancers-in-2026.html",
+        "best-finance-ops-software-for-small-business-in-2026-ranked.html"
+      ]
+    },
+    {
+      "slug": "1password-business",
+      "name": "1Password Biz",
+      "pages": 16,
+      "commission": "$5-30/ref",
+      "network": "ShareASale",
+      "priority": 4,
+      "monthly_est": 6,
+      "fixable_now": false,
+      "top_pages": [
+        "1password-business-vs-cloudflare-which-is-better-in-2026.html",
+        "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
+        "1password-business-vs-duo-security-which-is-better-in-2026.html",
+        "1password-business-vs-okta-which-is-better-in-2026.html",
+        "1password-business-vs-qualys-which-is-better-in-2026.html"
+      ]
+    },
+    {
+      "slug": "hubspot-crm",
+      "name": "HubSpot CRM",
+      "pages": 15,
+      "commission": "$250-1000/sale",
+      "network": "Impact.com",
+      "priority": 2,
+      "monthly_est": 150,
+      "fixable_now": false,
+      "top_pages": [
+        "7-best-zoho-crm-alternatives-in-2026-free-paid.html",
+        "best-crm-software-2026.html",
+        "best-crm-software-for-b2b-saas-in-2026-ranked.html",
+        "best-crm-software-for-small-business-in-2026-ranked.html",
+        "does-freshsales-have-a-free-plan-2026-full-breakdown.html"
+      ]
+    },
+    {
+      "slug": "dashlane",
+      "name": "Dashlane",
+      "pages": 14,
+      "commission": "$5-10/sale",
+      "network": "CJ",
+      "priority": 11,
+      "monthly_est": 2,
+      "fixable_now": false,
+      "top_pages": [
+        "1password-vs-dashlane-which-is-better-in-2026.html",
+        "7-best-lastpass-alternatives-in-2026-free-paid.html",
+        "best-1password-alternatives-in-2026-free-paid.html",
+        "best-nordpass-alternatives-in-2026-free-paid.html",
+        "best-password-manager-2026.html"
+      ]
+    },
+    {
+      "slug": "expressvpn-business",
+      "name": "ExpressVPN Biz",
+      "pages": 12,
+      "commission": "$13/signup",
+      "network": "CJ",
+      "priority": 6,
+      "monthly_est": 3,
+      "fixable_now": false,
+      "top_pages": [
+        "7-best-cisco-anyconnect-alternatives-in-2026-free-paid.html",
+        "7-best-nordlayer-alternatives-in-2026-free-paid.html",
+        "7-best-perimeter-81-alternatives-in-2026-free-paid.html",
+        "cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026.html",
+        "expressvpn-business-vs-cloudflare-access-which-is-better-in-2026.html"
+      ]
+    },
+    {
+      "slug": "protonvpn",
+      "name": "ProtonVPN",
+      "pages": 2,
+      "commission": "$10/sale",
+      "network": "Direct",
+      "priority": 8,
+      "monthly_est": 0,
+      "fixable_now": false,
+      "top_pages": [
+        "best-free-vpn-2026.html",
+        "best-vpn-for-streaming-2026.html"
+      ]
+    },
+    {
+      "slug": "expressvpn",
+      "name": "ExpressVPN",
+      "pages": 1,
+      "commission": "$13/signup",
+      "network": "CJ",
+      "priority": 6,
+      "monthly_est": 0,
+      "fixable_now": false,
+      "top_pages": [
+        "best-vpn-for-streaming-2026.html"
+      ]
+    },
+    {
+      "slug": "cyberghost",
+      "name": "CyberGhost",
+      "pages": 1,
+      "commission": "$10/signup",
+      "network": "CJ",
+      "priority": 7,
+      "monthly_est": 0,
+      "fixable_now": false,
+      "top_pages": [
+        "best-vpn-for-streaming-2026.html"
+      ]
+    }
+  ],
+  "schema_gaps": [
+    [
+      "ai-tools-pricing-changes-2026.html",
+      "needs Product+Offer"
+    ],
+    [
+      "best-devtools-for-secure-code-review-in-2025.html",
+      "needs SoftwareApplication+AggregateRating"
+    ],
+    [
+      "best-seo-tools-for-small-business-in-2026-ranked-reviewed.html",
+      "needs SoftwareApplication+AggregateRating"
+    ],
+    [
+      "grandfathered-saas-pricing-2026.html",
+      "needs Product+Offer"
+    ],
+    [
+      "hetzner-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "needs Product+Offer"
+    ],
+    [
+      "saas-pricing-calculator-2026.html",
+      "needs Product+Offer"
+    ],
+    [
+      "saas-pricing-index.html",
+      "needs Product+Offer"
+    ],
+    [
+      "state-of-saas-pricing-2026.html",
+      "needs Product+Offer"
+    ],
+    [
+      "supabase-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "needs Product+Offer"
+    ]
+  ],
+  "cta_gaps": [
+    [
+      "1password-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "ahrefs-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "asana-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "clickup-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "datadog-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "free-trial-database.html",
+      "free-trial",
+      1
+    ],
+    [
+      "hubspot-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "linear-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "monday-com-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "notion-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "pipedrive-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "salesforce-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "stripe-pricing-history-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "tresorit-pricing-history-2026.html",
+      "pricing",
+      1
+    ]
+  ],
+  "faq_gaps": [
+    [
+      "ai-tools-pricing-changes-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "free-trial-database.html",
+      "free-trial",
+      1
+    ],
+    [
+      "nordpass-coupon-code-promo-codes-2026-verified-discounts.html",
+      "coupon",
+      4
+    ],
+    [
+      "saas-pricing-calculator-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "saas-pricing-index.html",
+      "pricing",
+      2
+    ],
+    [
+      "semrush-pricing-history-2026.html",
+      "pricing",
+      2
+    ],
+    [
+      "shopify-pricing-history-2026.html",
+      "pricing",
+      2
+    ],
+    [
+      "state-of-saas-pricing-2026.html",
+      "pricing",
+      1
+    ],
+    [
+      "stripe-pricing-history-2026.html",
+      "pricing",
+      1
+    ]
+  ],
+  "conversion_chain_gaps": [
+    [
+      "best-devtools-for-secure-code-review-in-2025.html",
+      "missing pricing or VS link"
+    ],
+    [
+      "best-seo-tools-for-small-business-in-2026-ranked-reviewed.html",
+      "missing pricing or VS link"
+    ]
+  ],
+  "no_aff_pages": [
+    [
+      "activecampaign-free-trial-2026-how-to-start-what-you-get.html",
+      "free-trial"
+    ],
+    [
+      "affilae-vs-post-affiliate-pro-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "agiloft-vs-icertis-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "airbase-vs-divvy-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "amplitude-coupon-2026-discount-codes-promo.html",
+      "coupon"
+    ],
+    [
+      "amplitude-free-trial-2026-how-to-start-what-you-get.html",
+      "free-trial"
+    ],
+    [
+      "anthropic-claude-vs-cohere-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "anthropic-claude-vs-hugging-face-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "anthropic-claude-vs-weights-biases-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "around-vs-descript-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "around-vs-streamyard-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "aws-vs-google-cloud-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "aws-vs-railway-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "bamboohr-free-trial-2026-how-to-start-what-you-get.html",
+      "free-trial"
+    ],
+    [
+      "basecamp-vs-todoist-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "best-devtools-for-ai-agent-development-in-2025-ollama-vs-openclaw-vs-omlx.html",
+      "vs"
+    ],
+    [
+      "best-open-source-iac-and-cloud-storage-tools-in-2025-opentofu-vs-terraform-minio-alternatives.html",
+      "vs"
+    ],
+    [
+      "bigcommerce-coupon-2026-discount-codes-promo.html",
+      "coupon"
+    ],
+    [
+      "bigcommerce-free-trial-2026-how-to-start-what-you-get.html",
+      "free-trial"
+    ],
+    [
+      "canva-coupon-code-promo-codes-2026-verified-discounts.html",
+      "coupon"
+    ],
+    [
+      "canva-free-trial-2026-how-to-get-it-step-by-step.html",
+      "free-trial"
+    ],
+    [
+      "canva-vs-adobe-express-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "canva-vs-figma-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "canva-vs-microsoft-designer-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "canva-vs-piktochart-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "canva-vs-visme-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "cisco-anyconnect-vs-openvpn-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "cisco-anyconnect-vs-tailscale-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "cisco-anyconnect-vs-wireguard-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "cisco-anyconnect-vs-zscaler-which-is-better-in-2026.html",
+      "vs"
+    ]
+  ],
+  "trust_gaps": [
+    [
+      "1password-pricing-history-2026.html",
+      "pricing"
+    ],
+    [
+      "ahrefs-pricing-history-2026.html",
+      "pricing"
+    ],
+    [
+      "ahrefs-vs-frase-io-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "around-vs-riverside-fm-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "asana-pricing-history-2026.html",
+      "pricing"
+    ],
+    [
+      "asana-vs-monday-com-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "bamboohr-vs-remote-com-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "clearscope-vs-frase-io-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "clickup-pricing-history-2026.html",
+      "pricing"
+    ],
+    [
+      "copy-ai-coupon-code-promo-codes-2026-verified-discounts.html",
+      "coupon"
+    ],
+    [
+      "copy-ai-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "pricing"
+    ],
+    [
+      "copy-ai-vs-anthropic-claude-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "copy-ai-vs-cohere-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "copy-ai-vs-hugging-face-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "copy-ai-vs-openai-api-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "copy-ai-vs-pinecone-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "copy-ai-vs-weaviate-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "copy-ai-vs-weights-biases-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "copy-ai-vs-writesonic-which-is-better-in-2026.html",
+      "vs"
+    ],
+    [
+      "datadog-pricing-history-2026.html",
+      "pricing"
+    ]
+  ],
+  "thin_pages": []
+}

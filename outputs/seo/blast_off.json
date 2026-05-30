@@ -1,16 +1,16 @@
 {
   "current_month": "May 2026",
-  "today": "2026-05-29",
+  "today": "2026-05-30",
   "titles_rewritten": 0,
   "descs_rewritten": 0,
-  "dates_refreshed": 0,
+  "dates_refreshed": 1311,
   "answers_added": 0,
-  "files_changed": 0,
-  "files_scanned": 1324,
+  "files_changed": 1311,
+  "files_scanned": 1365,
   "title_examples": [],
   "desc_examples": [],
   "indexnow": {
     "submitted": 0,
-    "skipped_reason": "no urls"
+    "error": "HTTP Error 403: Forbidden"
   }
 }

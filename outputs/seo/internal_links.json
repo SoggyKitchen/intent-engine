@@ -1,38 +1,38 @@
 {
-  "total_pages": 1274,
-  "updated": 1274,
+  "total_pages": 1315,
+  "updated": 1315,
   "skipped": 0,
   "orphans_before": 58,
-  "orphans_after": 53,
+  "orphans_after": 56,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-vs-1password-business-which-is-better-in-2026",
-        "/pages/1password-vs-password-boss-which-is-better-in-2026",
-        "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/freshbooks-vs-divvy-which-is-better-in-2026",
-        "/pages/keeper-vs-nordpass-which-is-better-in-2026"
+        "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026",
+        "/pages/7-best-okta-alternatives-in-2026-free-paid",
+        "/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026",
+        "/pages/keeper-vs-enpass-which-is-better-in-2026",
+        "/pages/bitwarden-vs-nordpass-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/1password-vs-enpass-which-is-better-in-2026",
-        "/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/qualys-vs-duo-security-which-is-better-in-2026",
-        "/pages/tresorit-vs-sync-com-which-is-better-in-2026",
-        "/pages/freshbooks-vs-netsuite-which-is-better-in-2026"
+        "/pages/nordpass-vs-password-boss-which-is-better-in-2026",
+        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
+        "/pages/qualys-vs-tresorit-which-is-better-in-2026",
+        "/pages/keap-vs-insightly-which-is-better-in-2026",
+        "/pages/1password-vs-bitwarden-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/qualys-vs-tenable-which-is-better-in-2026",
-        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
-        "/pages/lastpass-vs-dashlane-which-is-better-in-2026",
-        "/pages/lattice-vs-culture-amp-which-is-better-in-2026",
-        "/pages/workable-vs-greenhouse-which-is-better-in-2026"
+        "/pages/okta-vs-qualys-which-is-better-in-2026",
+        "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
+        "/pages/1password-vs-nordpass-which-is-better-in-2026",
+        "/pages/github-copilot-vs-datadog-which-is-better-in-2026",
+        "/pages/netsuite-vs-airbase-which-is-better-in-2026"
       ]
     }
   ]
