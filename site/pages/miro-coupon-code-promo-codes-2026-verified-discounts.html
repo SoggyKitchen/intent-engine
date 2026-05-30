@@ -249,4 +249,28 @@
   setTimeout(show,120000); // also show after 2 min if user stays
 })();
 </script>
+
+  <!-- Sticky Bottom CTA -->
+  <div id="sticky-cta" style="position:fixed;bottom:0;left:0;right:0;z-index:999;background:rgba(5,4,7,0.97);backdrop-filter:blur(12px);border-top:1px solid rgba(255,65,109,0.25);padding:14px 20px;display:flex;align-items:center;justify-content:center;gap:16px;transform:translateY(100%);transition:transform 0.4s ease;" aria-label="Sticky offer bar">
+    <span style="color:#a0a0b8;font-size:0.88rem;">Ready to try it?</span>
+    <a href="/go/miro" target="_blank" rel="noopener sponsored"
+       onclick="if(window.gtag){gtag('event','affiliate_click',{tool:'miro',placement:'sticky_cta',page:window.location.pathname});}"
+       style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:linear-gradient(135deg,#ff416d,#ff6b35);color:#fff;font-weight:700;font-size:0.92rem;border-radius:9999px;text-decoration:none;box-shadow:0 4px 20px rgba(255,65,109,0.35);">
+      Try Miro Free →
+    </a>
+    <button onclick="document.getElementById('sticky-cta').style.display='none'" style="background:none;border:none;color:#666;cursor:pointer;font-size:1.2rem;padding:4px 8px;" aria-label="Close">&times;</button>
+  </div>
+  <script>
+    (function(){
+      var bar = document.getElementById('sticky-cta');
+      if(!bar) return;
+      var shown = false;
+      window.addEventListener('scroll', function(){
+        if(!shown && window.scrollY > 300){
+          bar.style.transform = 'translateY(0)';
+          shown = true;
+        }
+      }, {passive:true});
+    })();
+  </script>
 </body></html>
