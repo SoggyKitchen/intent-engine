@@ -1,76 +1,14 @@
 {
   "current_month": "May 2026",
-  "today": "2026-05-29",
-  "titles_rewritten": 13,
-  "descs_rewritten": 41,
-  "dates_refreshed": 41,
-  "answers_added": 41,
-  "files_changed": 41,
+  "today": "2026-05-30",
+  "titles_rewritten": 0,
+  "descs_rewritten": 0,
+  "dates_refreshed": 1311,
+  "answers_added": 0,
+  "files_changed": 1311,
   "files_scanned": 1365,
-  "title_examples": [
-    {
-      "file": "best-elevenlabs-alternatives-in-2026-free-paid.html",
-      "before": "7 Best ElevenLabs Alternatives in 2026 (Free &amp; Paid)",
-      "after": "ElevenLabs Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "best-nordpass-alternatives-in-2026-free-paid.html",
-      "before": "7 Best NordPass Alternatives in 2026 (Free &amp; Paid)",
-      "after": "NordPass Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "best-nordvpn-alternatives-in-2026-free-paid.html",
-      "before": "7 Best NordVPN Alternatives in 2026 (Free &amp; Paid)",
-      "after": "NordVPN Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "best-sucuri-alternatives-in-2026-free-paid.html",
-      "before": "7 Best Sucuri Alternatives in 2026 (Free &amp; Paid)",
-      "after": "Sucuri Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "best-surfshark-alternatives-in-2026-free-paid.html",
-      "before": "7 Best Surfshark Alternatives in 2026 (Free &amp; Paid)",
-      "after": "Surfshark Alternatives 2026 (Tested May 2026) \u2014 7 Honest Picks"
-    },
-    {
-      "file": "elevenlabs-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "ElevenLabs Free Trial 2026 \u2014 How to Get It (Step-by-Step)",
-      "after": "ElevenLabs Free Trial 2026: How to Get the Full May 2026 Offer"
-    }
-  ],
-  "desc_examples": [
-    {
-      "file": "best-accounting-software-for-small-business-2026.html",
-      "before": "Updated 2026-05-30. Best accounting software for small businesses in 2026 \u2014 tested for ease of use, pricing, invoicing, and tax features. Top picks: FreshBooks, QuickBooks, Xero, Wave.",
-      "after": "Updated May 2026. Updated 2026-05-30. Best accounting software for small businesses in 2026 \u2014 tested for ease of use, pricing, invoicing, and tax features. Top\u2026"
-    },
-    {
-      "file": "best-ai-voice-generator-2026.html",
-      "before": "Updated 2026-05-30. Best AI voice generators in 2026 \u2014 tested for voice quality, cloning accuracy, pricing, and commercial licensing. Top pick: ElevenLabs.",
-      "after": "Updated May 2026. Updated 2026-05-30. Best AI voice generators in 2026 \u2014 tested for voice quality, cloning accuracy, pricing, and commercial licensing. Top pick:\u2026"
-    },
-    {
-      "file": "best-cheap-vps-hosting-2026.html",
-      "before": "Updated 2026-05-30. Best cheap VPS hosting in 2026 \u2014 tested for CPU performance, RAM, storage, and true pricing. Contabo, Hetzner, Vultr, and more.",
-      "after": "Updated May 2026. Updated 2026-05-30. Best cheap VPS hosting in 2026 \u2014 tested for CPU performance, RAM, storage, and true pricing. Contabo, Hetzner, Vultr, and\u2026"
-    },
-    {
-      "file": "best-crm-software-2026.html",
-      "before": "Updated 2026-05-30. Best CRM software in 2026 \u2014 tested for sales pipeline management, automation, and pricing. Top picks: HubSpot, Salesforce, Pipedrive, Zoho, Close.",
-      "after": "Updated May 2026. Updated 2026-05-30. Best CRM software in 2026 \u2014 tested for sales pipeline management, automation, and pricing. Top picks: HubSpot, Salesforce,\u2026"
-    },
-    {
-      "file": "best-ecommerce-platform-2026.html",
-      "before": "Updated 2026-05-30. Best ecommerce platforms in 2026 \u2014 tested for ease of use, fees, features, and scalability. Top picks: Shopify, WooCommerce, BigCommerce, Wix, Squarespace.",
-      "after": "Updated May 2026. Updated 2026-05-30. Best ecommerce platforms in 2026 \u2014 tested for ease of use, fees, features, and scalability. Top picks: Shopify,\u2026"
-    },
-    {
-      "file": "best-elevenlabs-alternatives-in-2026-free-paid.html",
-      "before": "Updated 2026-05-30. Best ElevenLabs alternatives tested \u2014 Murf AI, Play.ht, Speechify, Resemble AI, Azure, Google TTS. Ranked by use case and budget.",
-      "after": "Updated May 2026. Updated 2026-05-30. Best ElevenLabs alternatives tested \u2014 Murf AI, Play.ht, Speechify, Resemble AI, Azure, Google TTS. Ranked by use case and\u2026"
-    }
-  ],
+  "title_examples": [],
+  "desc_examples": [],
   "indexnow": {
     "submitted": 0,
     "error": "HTTP Error 403: Forbidden"
