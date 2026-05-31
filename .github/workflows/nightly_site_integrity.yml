@@ -97,6 +97,52 @@ jobs:
         run: uv run python scripts/fix_design_pages.py
         continue-on-error: true
 
+      # 4h-3c. Fix body.sp-bg scroll/click freeze + wrap bare JSON-LD in script tags.
+      # The engine regenerates pages with class="sp-bg" on <body> which applies
+      # position:fixed + pointer-events:none from saaspare-v2.css, freezing all
+      # scrolling and clicks. Also wraps any bare JSON objects in proper script tags.
+      - name: Fix body scroll freeze and bare JSON-LD
+        run: |
+          python3 << 'PYEOF'
+          import re
+          from pathlib import Path
+          SITE = Path('site')
+          fixed_body = 0
+          fixed_json = 0
+          for fp in list(SITE.glob('pages/*.html')) + list(SITE.glob('blog/*.html')) + list(SITE.glob('authors/*.html')):
+              try:
+                  content = fp.read_text(encoding='utf-8', errors='replace')
+                  original = content
+                  # Remove class="sp-bg" from body (causes position:fixed + pointer-events:none)
+                  content = re.sub(r'(<body[^>]*)\s+class="sp-bg"([^>]*>)', r'\1\2', content)
+                  content = re.sub(r'<body\s+class="sp-bg"(\s+style="[^"]*")?', lambda m: f'<body{m.group(1) or ""}', content)
+                  # Wrap bare JSON-LD in proper script tags
+                  lines = content.split('\n')
+                  new_lines = []
+                  in_head = False
+                  in_script = False
+                  for line in lines:
+                      if '<head' in line.lower(): in_head = True
+                      if '</head>' in line.lower(): in_head = False
+                      if '<script' in line.lower(): in_script = True
+                      if '</script>' in line.lower(): in_script = False
+                      stripped = line.strip()
+                      if in_head and not in_script and stripped.startswith('{"@context":"https://schema.org"') and not stripped.startswith('<'):
+                          pad = ' ' * (len(line) - len(line.lstrip()))
+                          new_lines.append(f'{pad}<script type="application/ld+json">{stripped}</script>')
+                          fixed_json += 1
+                      else:
+                          new_lines.append(line)
+                  content = '\n'.join(new_lines)
+                  if content != original:
+                      fp.write_text(content, encoding='utf-8')
+                      fixed_body += 1
+              except Exception as e:
+                  pass
+          print(f'Fixed scroll/click freeze + JSON-LD on {fixed_body} pages ({fixed_json} bare JSON blocks wrapped)')
+          PYEOF
+        continue-on-error: true
+
       # 4h-4. Ensure blog posts exist for all blog index links.
       - name: Create any missing blog posts
         run: uv run python scripts/create_missing_blog_posts.py

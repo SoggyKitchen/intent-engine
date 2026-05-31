@@ -66,6 +66,9 @@ input,textarea,select{font-family:inherit;color:inherit}
 ::-webkit-scrollbar{width:6px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(255,65,109,.4);border-radius:3px}
 
+/* ── SAFETY: when sp-bg is on <body> itself, neutralise the overlay props ── */
+body.sp-bg{position:static!important;inset:auto!important;pointer-events:auto!important;z-index:auto!important;overflow-x:hidden}
+
 /* ── LAYERED BACKGROUND ──────────────────────────────────────────── */
 .sp-bg{
   position:fixed;inset:0;z-index:-1;pointer-events:none;
