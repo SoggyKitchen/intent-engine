@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "site": "saaspare.org",
+  "initialized": "2026-05-31",
+  "log": [
+    {
+      "date": "2026-05-31",
+      "session": "founding-ceo-session",
+      "built": [
+        "831 VS pages rebuilt to v2 design system",
+        "536 non-VS pages upgraded to v2 (review/pricing/coupon/hub/blog)",
+        "4 wave-20 high-traffic pages: monday-vs-asana (22K/mo), clickup-vs-asana (18K/mo), cheapest-vpn (14K/mo), notion-vs-obsidian (9K/mo)",
+        "Author page: kaylan-von-papen.html (professional, scrollable, stats)",
+        "Commission Factory verification file"
+      ],
+      "fixed": [
+        "body.sp-bg scroll/click freeze — CSS override + nightly CI auto-heal added",
+        "468 bare JSON-LD blocks wrapped in proper script tags",
+        "4 direct vendor URL leaks fixed to /go/ tracked routes",
+        "Smith Elly replaced with Kaylan von Papen across 1,385 files",
+        "Dark background inline style on 1,377 pages",
+        "Real SaaSpare SVG nav deployed to 1,372 inner pages",
+        "154 pages missing Article schema — injected",
+        "Author page fixed: scrollable, clickable, professional design"
+      ],
+      "affiliate_status": {
+        "earning": ["NordVPN", "Surfshark", "Sucuri", "NordPass", "Contabo", "HostPapa", "Semrush", "Shopify", "ElevenLabs"],
+        "pending_approval": {
+          "HubSpot": {"pages": 39, "commission": "$250-1000/sale", "network": "Impact.com", "status": "account PENDING activation (created 2026-05-30)", "account_sid": "IRBMm2caU6247359133kQhTFKSNLy2QEa1"},
+          "ClickUp": {"pages": 27, "commission": "$36-150/sale", "network": "Direct", "status": "Applied 2026-05-31", "url": "clickup.com/affiliates"},
+          "ActiveCampaign": {"pages": 20, "commission": "$85/sale", "network": "Direct", "status": "Applied 2026-05-31 with ABN 20602197525"},
+          "1Password": {"pages": 37, "commission": "$30-60/sale", "network": "PartnerStack", "status": "support ticket sent - email confirmation stuck"},
+          "Monday.com": {"pages": 20, "commission": "$150/sale", "network": "Impact.com", "status": "pending Impact account activation"},
+          "FreshBooks": {"pages": 19, "commission": "$200/sale", "network": "CJ/Direct", "status": "Applied 2026-05-31"},
+          "Xero": {"pages": 18, "commission": "varies", "network": "Direct", "status": "TODO"},
+          "Dashlane": {"pages": 14, "commission": "$25-50/sale", "network": "CJ", "status": "TODO"}
+        },
+        "networks": {
+          "CJ_Affiliate": {"publisher_id": "101733230", "status": "approved"},
+          "Impact_com": {"publisher_id": "7269601", "account_sid": "IRBMm2caU6247359133kQhTFKSNLy2QEa1", "status": "PENDING_ACTIVATION"},
+          "PartnerStack": {"email": "partnerships@saaspare.org", "status": "support_ticket_open"},
+          "CommissionFactory": {"status": "verification_in_progress", "abn": "20602197525", "meta_tag": "a61c4c0d2e804b62b51e14733a52571a"}
+        }
+      },
+      "site_stats": {
+        "total_pages": 1363,
+        "vs_pages": 831,
+        "review_pages": 56,
+        "pricing_pages": 73,
+        "coupon_pages": 54,
+        "blog_pages": 12,
+        "hub_pages": 149,
+        "sitemap_urls": 1363,
+        "go_routes": 185,
+        "tests": "57/57 passing"
+      },
+      "routines_live": [
+        "SaaSpare Daily CEO Review — 7am Brisbane daily (trig_01FCDNuqeXEivnZ1LJvTyugK)",
+        "SaaSpare Revenue Hunter — 7:30am Brisbane daily (trig_01U3FBGZ1hcxNegCd5wiFZhU)",
+        "SaaSpare Sunday Profit Maximizer — 9am Brisbane Sundays (trig_01Ag9J9J4uq5pgLqKqfYTyPL)"
+      ],
+      "key_decisions": [
+        "Forex bot archived — 100% focus on SaaSpare",
+        "ABN registered: 20 602 197 525 (sole trader, website design)",
+        "No push-to-main gate — full CEO operational authority",
+        "3 autonomous Claude Code routines deployed"
+      ],
+      "estimated_monthly_revenue_lost": "$2700-$6600/month from untracked programs",
+      "total_estimated_lost_to_date": "$7000-$18000",
+      "next_human_actions": [
+        "Connect GitHub at https://claude.ai/code/onboarding?magic=github-app-setup (BLOCKS ROUTINES)",
+        "Commission Factory: try meta tag verification (a61c4c0d2e804b62b51e14733a52571a)",
+        "Check CJ dashboard for existing NordVPN/Surfshark/Semrush earnings",
+        "Resubmit ActiveCampaign with ABN 20602197525",
+        "Apply to Xero direct affiliate program",
+        "Apply to Dashlane on CJ Affiliate"
+      ]
+    }
+  ]
+}
