@@ -3,14 +3,14 @@
   "today": "2026-05-31",
   "titles_rewritten": 0,
   "descs_rewritten": 0,
-  "dates_refreshed": 17,
+  "dates_refreshed": 0,
   "answers_added": 0,
-  "files_changed": 17,
+  "files_changed": 0,
   "files_scanned": 1376,
   "title_examples": [],
   "desc_examples": [],
   "indexnow": {
     "submitted": 0,
-    "error": "HTTP Error 403: Forbidden"
+    "skipped_reason": "no urls"
   }
 }

@@ -1,16 +1,15 @@
 {
-  "generated_at": "2026-05-31T03:46:16.568710+00:00",
+  "generated_at": "2026-05-31T05:49:16.140335+00:00",
   "stats": {
     "sitemap_urls": 1363,
     "sitemap_with_lastmod": 1363,
     "total_pages": 1425,
     "indexable_pages": 1367,
     "title_over_70": 121,
-    "soft": 6,
+    "soft": 5,
     "money_pages": 1128,
-    "desc_over_165": 7,
-    "duplicate_titles": 2,
-    "duplicate_descs": 1
+    "desc_over_165": 6,
+    "duplicate_titles": 2
   },
   "hard_failures": [],
   "soft_issues": [
@@ -18,8 +17,7 @@
     "site/corrections.html: meta desc <80 chars (78)",
     "site/editorial-policy.html: title <30 chars (27)",
     "duplicate title (2 pages): \"Shopify Coupon 2026 (Verified May 2026) — Real Working Codes\" — ['site/pages/shopify-discount-code-promo-codes-2026-verified-deals.html', 'site/pages/shopify-coupon-code-promo-codes-2026-verified-discounts.html']",
-    "duplicate title (2 pages): \"Copy.ai Coupon 2026 (Verified May 2026) — Real Working Codes\" — ['site/pages/copy-ai-coupon-2026-discount-codes-promo.html', 'site/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts.html']",
-    "duplicate description (2 pages): \"Kaylan von Papen is the founder of SaaSpare.org, an independ\" — ['site/authors/smith-elly.html', 'site/authors/kaylan-von-papen.html']"
+    "duplicate title (2 pages): \"Copy.ai Coupon 2026 (Verified May 2026) — Real Working Codes\" — ['site/pages/copy-ai-coupon-2026-discount-codes-promo.html', 'site/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts.html']"
   ],
-  "soft_issues_total": 6
+  "soft_issues_total": 5
 }
