@@ -1,0 +1,419 @@
+{
+  "date": "2026-05-31",
+  "updated": 59,
+  "fixes": [
+    {
+      "slug": "does-notion-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 9.42,
+      "impr": 557,
+      "new_title": "Does Notion Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "does-sentry-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 7.51,
+      "impr": 528,
+      "new_title": "Does Sentry Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "tailscale-vs-zscaler-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 8.78,
+      "impr": 251,
+      "new_title": "Tailscale vs Zscaler (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "does-linear-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 8.98,
+      "impr": 247,
+      "new_title": "Does Linear Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "docusign-clm-vs-icertis-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 8.84,
+      "impr": 237,
+      "new_title": "Docusign Clm vs Icertis (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 9.99,
+      "impr": 219,
+      "new_title": "Does Cloudflare Access Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "aws-vs-render-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 9.08,
+      "impr": 155,
+      "new_title": "Aws vs Render (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "about",
+      "type": "generic",
+      "pos": 4.33,
+      "impr": 153,
+      "new_title": "About SaaSpare \u2014 Independent B2B SaaS Comparisons, Real Pricing (2026)"
+    },
+    {
+      "slug": "shortlist",
+      "type": "generic",
+      "pos": 4.44,
+      "impr": 135,
+      "new_title": "Shortlist Builder \u2014 Compare SaaS Tools Side-by-Side | SaaSpare (2026) \u2014 Expert Analysis"
+    },
+    {
+      "slug": "shopify-vs-recurly-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 7.49,
+      "impr": 134,
+      "new_title": "Shopify vs Recurly (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "datadog-coupon-code-promo-codes-2026-verified-discounts",
+      "type": "coupon",
+      "pos": 7.37,
+      "impr": 131,
+      "new_title": "Datadog Coupon Codes (2026): Verified Discounts That Actually Work"
+    },
+    {
+      "slug": "linear-free-trial-2026-how-to-get-it-step-by-step",
+      "type": "free_trial",
+      "pos": 6.81,
+      "impr": 129,
+      "new_title": "Does Linear How To Get It Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "ramp-review-2026-is-it-worth-it-honest-verdict",
+      "type": "review",
+      "pos": 7.81,
+      "impr": 127,
+      "new_title": "Ramp Review (2026): Is It Worth It? Honest Verdict"
+    },
+    {
+      "slug": "twingate-vs-zscaler-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 7.2,
+      "impr": 126,
+      "new_title": "Twingate vs Zscaler (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "does-clickup-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 7.72,
+      "impr": 119,
+      "new_title": "Does Clickup Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "contact",
+      "type": "generic",
+      "pos": 6.2,
+      "impr": 114,
+      "new_title": "Contact SaaSpare \u2014 Pricing Corrections, Partnerships & Press (2026) \u2014 Expert Analysis"
+    },
+    {
+      "slug": "perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 9.8,
+      "impr": 114,
+      "new_title": "Perimeter 81 vs Cloudflare Access (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "does-bitwarden-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 7.27,
+      "impr": 110,
+      "new_title": "Does Bitwarden Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "cloudflare-access-vs-tailscale-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 9.01,
+      "impr": 110,
+      "new_title": "Cloudflare Access vs Tailscale (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "deal-radar",
+      "type": "generic",
+      "pos": 8.26,
+      "impr": 105,
+      "new_title": "SaaS Deal Radar \u2014 Verified Discounts & Free Trials (2026) | SaaSpare"
+    },
+    {
+      "slug": "openai-api-vs-cohere-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 7.72,
+      "impr": 103,
+      "new_title": "Openai Api vs Cohere (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "methodology",
+      "type": "generic",
+      "pos": 5.53,
+      "impr": 101,
+      "new_title": "How SaaSpare Compares Software | Methodology (2026) \u2014 Expert Analysis"
+    },
+    {
+      "slug": "hetzner-vs-supabase-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 7.58,
+      "impr": 101,
+      "new_title": "Hetzner vs Supabase (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "wireguard-vs-zscaler-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 6.95,
+      "impr": 97,
+      "new_title": "Wireguard vs Zscaler (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "hetzner-vs-railway-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 8.58,
+      "impr": 97,
+      "new_title": "Hetzner vs Railway (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "twingate-vs-cloudflare-access-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 9.11,
+      "impr": 97,
+      "new_title": "Twingate vs Cloudflare Access (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "digitalocean-vs-supabase-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 9.46,
+      "impr": 89,
+      "new_title": "Digitalocean vs Supabase (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "ramp-pricing-history-2026",
+      "type": "pricing",
+      "pos": 9.13,
+      "impr": 89,
+      "new_title": "Ramp History Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "rippling-free-trial-2026-how-to-get-it-step-by-step",
+      "type": "free_trial",
+      "pos": 7.59,
+      "impr": 80,
+      "new_title": "Does Rippling How To Get It Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "saas-pricing-changes",
+      "type": "pricing",
+      "pos": 7.32,
+      "impr": 78,
+      "new_title": "Saas Changes Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "ramp-pricing-2026-plans-costs-what-you-actually-pay",
+      "type": "pricing",
+      "pos": 10.22,
+      "impr": 1687,
+      "new_title": "Ramp Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
+      "type": "pricing",
+      "pos": 13.73,
+      "impr": 742,
+      "new_title": "Mixpanel Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "best-devops-configuration-drift-detection-tools-in-2025",
+      "type": "best",
+      "pos": 18.11,
+      "impr": 380,
+      "new_title": "Best DevOps Configuration Drift Detection Tools | SaaSpare (2026) \u2014 Ranked & Reviewed by Experts [Expert Picks]"
+    },
+    {
+      "slug": "aws-vs-supabase-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 10.09,
+      "impr": 286,
+      "new_title": "Aws vs Supabase (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
+      "type": "pricing",
+      "pos": 18.97,
+      "impr": 270,
+      "new_title": "Nordlayer Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "does-loom-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 10.93,
+      "impr": 255,
+      "new_title": "Does Loom Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "notion-pricing-2026-plans-costs-what-you-actually-pay",
+      "type": "pricing",
+      "pos": 17.42,
+      "impr": 214,
+      "new_title": "Notion Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "twingate-vs-tailscale-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 13.79,
+      "impr": 168,
+      "new_title": "Twingate vs Tailscale (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "hetzner-vs-vultr-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 10.75,
+      "impr": 108,
+      "new_title": "Hetzner vs Vultr (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "datadog-review-2026-is-it-worth-it-honest-verdict",
+      "type": "review",
+      "pos": 11.4,
+      "impr": 78,
+      "new_title": "Datadog Review (2026): Is It Worth It? Honest Verdict"
+    },
+    {
+      "slug": "workable-vs-culture-amp-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 11.05,
+      "impr": 76,
+      "new_title": "Workable vs Culture Amp (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "expressvpn-business-vs-tailscale-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 10.7,
+      "impr": 73,
+      "new_title": "Expressvpn Business vs Tailscale (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "notion-coupon-code-promo-codes-2026-verified-discounts",
+      "type": "coupon",
+      "pos": 18.48,
+      "impr": 63,
+      "new_title": "Notion Coupon Codes (2026): Verified Discounts That Actually Work"
+    },
+    {
+      "slug": "google-meet-vs-webex-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 11.35,
+      "impr": 60,
+      "new_title": "Google Meet vs Webex (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "best-error-handling-developer-tooling-libraries-for-go-in-2025",
+      "type": "best",
+      "pos": 11.53,
+      "impr": 59,
+      "new_title": "Best Error Handling &amp; Developer Tooling Libraries | SaaSpare (2026) \u2014 Ranked & Reviewed by Experts [Expert Picks]"
+    },
+    {
+      "slug": "does-brevo-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 13.68,
+      "impr": 56,
+      "new_title": "Does Brevo Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "saas-glossary",
+      "type": "generic",
+      "pos": 19.51,
+      "impr": 55,
+      "new_title": "SaaS Glossary: 51+ B2B SaaS Terms Every Buyer Should Know | SaaSpare (2026) \u2014 Expert Analysis"
+    },
+    {
+      "slug": "crowdstrike-vs-qualys-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 14.58,
+      "impr": 50,
+      "new_title": "Crowdstrike vs Qualys (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "contractbook-vs-juro-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 11.04,
+      "impr": 48,
+      "new_title": "Contractbook vs Juro (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "zoom-vs-around-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 17.21,
+      "impr": 48,
+      "new_title": "Zoom vs Around (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "supabase-vs-google-cloud-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 10.47,
+      "impr": 47,
+      "new_title": "Supabase vs Google Cloud (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "state-of-saas-pricing-2026",
+      "type": "pricing",
+      "pos": 11.11,
+      "impr": 47,
+      "new_title": "State Of Saas Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "wireguard-vs-openvpn-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 15.83,
+      "impr": 46,
+      "new_title": "Wireguard vs Openvpn (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "does-monday-com-have-a-free-plan-2026-full-breakdown",
+      "type": "free_plan",
+      "pos": 13.81,
+      "impr": 43,
+      "new_title": "Does Monday Com Have a Free Plan in 2026? Full Breakdown"
+    },
+    {
+      "slug": "docusign-review-2026-is-it-worth-it-honest-verdict",
+      "type": "review",
+      "pos": 10.97,
+      "impr": 40,
+      "new_title": "Docusign Review (2026): Is It Worth It? Honest Verdict"
+    },
+    {
+      "slug": "zoom-vs-riverside-fm-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 11.92,
+      "impr": 36,
+      "new_title": "Zoom vs Riverside Fm (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "7-best-microsoft-teams-alternatives-in-2026-free-paid",
+      "type": "alternative",
+      "pos": 16.69,
+      "impr": 36,
+      "new_title": "Best 7 Best Microsoft Teams Alternatives (2026) \u2014 Cheaper Options Ranked"
+    },
+    {
+      "slug": "xero-vs-brex-which-is-better-in-2026",
+      "type": "vs",
+      "pos": 10.18,
+      "impr": 33,
+      "new_title": "Xero vs Brex (2026): Honest Head-to-Head Verdict"
+    },
+    {
+      "slug": "monday-com-pricing-2026-plans-costs-what-you-actually-pay",
+      "type": "pricing",
+      "pos": 15.63,
+      "impr": 30,
+      "new_title": "Monday Com Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    }
+  ]
+}

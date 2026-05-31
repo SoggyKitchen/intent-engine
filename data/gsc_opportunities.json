@@ -1,0 +1,960 @@
+{
+  "generated": "2026-05-31",
+  "summary": {
+    "total_pages": 608,
+    "total_queries": 1000,
+    "total_impressions": 22919,
+    "total_clicks": 79,
+    "overall_ctr_pct": 0.34,
+    "pages_pos_1_3": 7,
+    "pages_pos_4_10": 44,
+    "pages_pos_11_20": 31,
+    "zero_click_queries_100plus_impr": 10
+  },
+  "page1_opportunities": [
+    {
+      "url": "https://saaspare.org/pages/does-notion-have-a-free-plan-2026-full-breakdown",
+      "pos": 9.42,
+      "impr": 557,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
+      "pos": 7.51,
+      "impr": 528,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/tailscale-vs-zscaler-which-is-better-in-2026",
+      "pos": 8.78,
+      "impr": 251,
+      "ctr": 0.012,
+      "clicks": 3
+    },
+    {
+      "url": "https://saaspare.org/pages/does-linear-have-a-free-plan-2026-full-breakdown",
+      "pos": 8.98,
+      "impr": 247,
+      "ctr": 0.008100000000000001,
+      "clicks": 2
+    },
+    {
+      "url": "https://saaspare.org/pages/docusign-clm-vs-icertis-which-is-better-in-2026",
+      "pos": 8.84,
+      "impr": 237,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
+      "pos": 9.99,
+      "impr": 219,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/aws-vs-render-which-is-better-in-2026",
+      "pos": 9.08,
+      "impr": 155,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/about",
+      "pos": 4.33,
+      "impr": 153,
+      "ctr": 0.026099999999999998,
+      "clicks": 4
+    },
+    {
+      "url": "https://saaspare.org/shortlist",
+      "pos": 4.44,
+      "impr": 135,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/shopify-vs-recurly-which-is-better-in-2026",
+      "pos": 7.49,
+      "impr": 134,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/datadog-coupon-code-promo-codes-2026-verified-discounts",
+      "pos": 7.37,
+      "impr": 131,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/linear-free-trial-2026-how-to-get-it-step-by-step",
+      "pos": 6.81,
+      "impr": 129,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/ramp-review-2026-is-it-worth-it-honest-verdict",
+      "pos": 7.81,
+      "impr": 127,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/twingate-vs-zscaler-which-is-better-in-2026",
+      "pos": 7.2,
+      "impr": 126,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/does-clickup-have-a-free-plan-2026-full-breakdown",
+      "pos": 7.72,
+      "impr": 119,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/contact",
+      "pos": 6.2,
+      "impr": 114,
+      "ctr": 0.0088,
+      "clicks": 1
+    },
+    {
+      "url": "https://saaspare.org/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
+      "pos": 9.8,
+      "impr": 114,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown",
+      "pos": 7.27,
+      "impr": 110,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/cloudflare-access-vs-tailscale-which-is-better-in-2026",
+      "pos": 9.01,
+      "impr": 110,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/deal-radar",
+      "pos": 8.26,
+      "impr": 105,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/openai-api-vs-cohere-which-is-better-in-2026",
+      "pos": 7.72,
+      "impr": 103,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/methodology",
+      "pos": 5.53,
+      "impr": 101,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/hetzner-vs-supabase-which-is-better-in-2026",
+      "pos": 7.58,
+      "impr": 101,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/wireguard-vs-zscaler-which-is-better-in-2026",
+      "pos": 6.95,
+      "impr": 97,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/hetzner-vs-railway-which-is-better-in-2026",
+      "pos": 8.58,
+      "impr": 97,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/twingate-vs-cloudflare-access-which-is-better-in-2026",
+      "pos": 9.11,
+      "impr": 97,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/digitalocean-vs-supabase-which-is-better-in-2026",
+      "pos": 9.46,
+      "impr": 89,
+      "ctr": 0.0449,
+      "clicks": 4
+    },
+    {
+      "url": "https://saaspare.org/pages/ramp-pricing-history-2026",
+      "pos": 9.13,
+      "impr": 89,
+      "ctr": 0.011200000000000002,
+      "clicks": 1
+    },
+    {
+      "url": "https://saaspare.org/pages/rippling-free-trial-2026-how-to-get-it-step-by-step",
+      "pos": 7.59,
+      "impr": 80,
+      "ctr": 0.0,
+      "clicks": 0
+    },
+    {
+      "url": "https://saaspare.org/pages/saas-pricing-changes",
+      "pos": 7.32,
+      "impr": 78,
+      "ctr": 0.0,
+      "clicks": 0
+    }
+  ],
+  "page2_quickwins": [
+    {
+      "url": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
+      "pos": 10.22,
+      "impr": 1687,
+      "ctr": 0.0059
+    },
+    {
+      "url": "https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
+      "pos": 13.73,
+      "impr": 742,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/",
+      "pos": 10.6,
+      "impr": 708,
+      "ctr": 0.0085
+    },
+    {
+      "url": "https://saaspare.org/pages/best-devops-configuration-drift-detection-tools-in-2025",
+      "pos": 18.11,
+      "impr": 380,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/aws-vs-supabase-which-is-better-in-2026",
+      "pos": 10.09,
+      "impr": 286,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
+      "pos": 18.97,
+      "impr": 270,
+      "ctr": 0.0037
+    },
+    {
+      "url": "https://saaspare.org/pages/does-loom-have-a-free-plan-2026-full-breakdown",
+      "pos": 10.93,
+      "impr": 255,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
+      "pos": 17.42,
+      "impr": 214,
+      "ctr": 0.009300000000000001
+    },
+    {
+      "url": "https://saaspare.org/pages/twingate-vs-tailscale-which-is-better-in-2026",
+      "pos": 13.79,
+      "impr": 168,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/hetzner-vs-vultr-which-is-better-in-2026",
+      "pos": 10.75,
+      "impr": 108,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
+      "pos": 11.4,
+      "impr": 78,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/workable-vs-culture-amp-which-is-better-in-2026",
+      "pos": 11.05,
+      "impr": 76,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/expressvpn-business-vs-tailscale-which-is-better-in-2026",
+      "pos": 10.7,
+      "impr": 73,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/notion-coupon-code-promo-codes-2026-verified-discounts",
+      "pos": 18.48,
+      "impr": 63,
+      "ctr": 0.0159
+    },
+    {
+      "url": "https://saaspare.org/pages/google-meet-vs-webex-which-is-better-in-2026",
+      "pos": 11.35,
+      "impr": 60,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025",
+      "pos": 11.53,
+      "impr": 59,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/does-brevo-have-a-free-plan-2026-full-breakdown",
+      "pos": 13.68,
+      "impr": 56,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/saas-glossary",
+      "pos": 19.51,
+      "impr": 55,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
+      "pos": 14.58,
+      "impr": 50,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/contractbook-vs-juro-which-is-better-in-2026",
+      "pos": 11.04,
+      "impr": 48,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/zoom-vs-around-which-is-better-in-2026",
+      "pos": 17.21,
+      "impr": 48,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/supabase-vs-google-cloud-which-is-better-in-2026",
+      "pos": 10.47,
+      "impr": 47,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/state-of-saas-pricing-2026",
+      "pos": 11.11,
+      "impr": 47,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/wireguard-vs-openvpn-which-is-better-in-2026",
+      "pos": 15.83,
+      "impr": 46,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/does-monday-com-have-a-free-plan-2026-full-breakdown",
+      "pos": 13.81,
+      "impr": 43,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/docusign-review-2026-is-it-worth-it-honest-verdict",
+      "pos": 10.97,
+      "impr": 40,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/zoom-vs-riverside-fm-which-is-better-in-2026",
+      "pos": 11.92,
+      "impr": 36,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid",
+      "pos": 16.69,
+      "impr": 36,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/xero-vs-brex-which-is-better-in-2026",
+      "pos": 10.18,
+      "impr": 33,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
+      "pos": 15.63,
+      "impr": 30,
+      "ctr": 0.0
+    }
+  ],
+  "zero_click_queries": [
+    {
+      "kw": "semrush vs moz",
+      "impr": 278,
+      "pos": 67.74
+    },
+    {
+      "kw": "moz pro vs semrush",
+      "impr": 269,
+      "pos": 66.31
+    },
+    {
+      "kw": "moz semrush",
+      "impr": 223,
+      "pos": 73.66
+    },
+    {
+      "kw": "moz or semrush",
+      "impr": 200,
+      "pos": 71.94
+    },
+    {
+      "kw": "semrush pricing",
+      "impr": 195,
+      "pos": 82.32
+    },
+    {
+      "kw": "seo moz vs semrush",
+      "impr": 172,
+      "pos": 75.08
+    },
+    {
+      "kw": "ramp pricing",
+      "impr": 133,
+      "pos": 33.17
+    },
+    {
+      "kw": "se ranking vs surfer",
+      "impr": 131,
+      "pos": 53.94
+    },
+    {
+      "kw": "ramp pricing change june 2026",
+      "impr": 121,
+      "pos": 3.69
+    },
+    {
+      "kw": "semrush promo code",
+      "impr": 115,
+      "pos": 73.78
+    }
+  ],
+  "ctr_fixes_applied": [
+    {
+      "slug": "does-notion-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 9.4,
+      "impressions": 557,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "does-sentry-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 7.5,
+      "impressions": 528,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "does-linear-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 9.0,
+      "impressions": 247,
+      "clicks": 2,
+      "old_ctr_pct": "0.8%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "docusign-clm-vs-icertis-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 8.8,
+      "impressions": 237,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Docusign Clm vs Icertis (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 10.0,
+      "impressions": 219,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "aws-vs-render-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 9.1,
+      "impressions": 155,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "AWS vs Render (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "shortlist",
+      "keyword": "shortlist",
+      "position": 4.4,
+      "impressions": 135,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Shortlist Builder \u2014 Compare SaaS Tools Side-by-Side | SaaSpare (2026) \u2014 Expert Analysis"
+    },
+    {
+      "slug": "shopify-vs-recurly-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 7.5,
+      "impressions": 134,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Shopify vs Recurly (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "datadog-coupon-code-promo-codes-2026-verified-discounts",
+      "keyword": "semrush promo code",
+      "position": 7.4,
+      "impressions": 131,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Semrush Coupon Codes (2026): Verified Discounts That Actually Work"
+    },
+    {
+      "slug": "linear-free-trial-2026-how-to-get-it-step-by-step",
+      "keyword": "sentry free plan 2026",
+      "position": 6.8,
+      "impressions": 129,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "ramp-review-2026-is-it-worth-it-honest-verdict",
+      "keyword": "ramp pricing change may 2026",
+      "position": 7.8,
+      "impressions": 127,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Ramp  Change May Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "twingate-vs-zscaler-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 7.2,
+      "impressions": 126,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Twingate vs Zscaler (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "does-clickup-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 7.7,
+      "impressions": 119,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "contact",
+      "keyword": "contact",
+      "position": 6.2,
+      "impressions": 114,
+      "clicks": 1,
+      "old_ctr_pct": "0.9%",
+      "new_title": "Contact SaaSpare \u2014 Pricing Corrections, Partnerships & Press (2026) \u2014 Expert Analysis"
+    },
+    {
+      "slug": "perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 9.8,
+      "impressions": 114,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Perimeter 81 vs Cloudflare Access (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "does-bitwarden-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 7.3,
+      "impressions": 110,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "cloudflare-access-vs-tailscale-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 9.0,
+      "impressions": 110,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Cloudflare Access vs Tailscale (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "deal-radar",
+      "keyword": "deal radar",
+      "position": 8.3,
+      "impressions": 105,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "SaaS Deal Radar \u2014 Verified Discounts & Free Trials (2026) | SaaSpare"
+    },
+    {
+      "slug": "openai-api-vs-cohere-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 7.7,
+      "impressions": 103,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Openai Api vs Cohere (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "methodology",
+      "keyword": "methodology",
+      "position": 5.5,
+      "impressions": 101,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "How SaaSpare Compares Software | Methodology (2026) \u2014 Expert Analysis"
+    },
+    {
+      "slug": "hetzner-vs-supabase-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 7.6,
+      "impressions": 101,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Hetzner vs Supabase (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "wireguard-vs-zscaler-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 7.0,
+      "impressions": 97,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Wireguard vs Zscaler (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "hetzner-vs-railway-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 8.6,
+      "impressions": 97,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Hetzner vs Railway (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "twingate-vs-cloudflare-access-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 9.1,
+      "impressions": 97,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Twingate vs Cloudflare Access (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "rippling-free-trial-2026-how-to-get-it-step-by-step",
+      "keyword": "sentry free plan 2026",
+      "position": 7.6,
+      "impressions": 80,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "saas-pricing-changes",
+      "keyword": "saas pricing changes",
+      "position": 7.3,
+      "impressions": 78,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Saas  Changes Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "ramp-pricing-2026-plans-costs-what-you-actually-pay",
+      "keyword": "ramp pricing change may 2026",
+      "position": 10.2,
+      "impressions": 1687,
+      "clicks": 10,
+      "old_ctr_pct": "0.6%",
+      "new_title": "Ramp  Change May Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
+      "keyword": "ramp pricing change may 2026",
+      "position": 13.7,
+      "impressions": 742,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Ramp  Change May Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "best-devops-configuration-drift-detection-tools-in-2025",
+      "keyword": "best canva alternatives in 2026",
+      "position": 18.1,
+      "impressions": 380,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Best DevOps Configuration Drift Detection Tools | SaaSpare (2026) \u2014 Ranked & Reviewed by Experts"
+    },
+    {
+      "slug": "aws-vs-supabase-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 10.1,
+      "impressions": 286,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "AWS vs Supabase (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
+      "keyword": "ramp pricing change may 2026",
+      "position": 19.0,
+      "impressions": 270,
+      "clicks": 1,
+      "old_ctr_pct": "0.4%",
+      "new_title": "Ramp  Change May Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "does-loom-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 10.9,
+      "impressions": 255,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "notion-pricing-2026-plans-costs-what-you-actually-pay",
+      "keyword": "ramp pricing change may 2026",
+      "position": 17.4,
+      "impressions": 214,
+      "clicks": 2,
+      "old_ctr_pct": "0.9%",
+      "new_title": "Ramp  Change May Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "twingate-vs-tailscale-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 13.8,
+      "impressions": 168,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Twingate vs Tailscale (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "hetzner-vs-vultr-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 10.8,
+      "impressions": 108,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Hetzner vs Vultr (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "datadog-review-2026-is-it-worth-it-honest-verdict",
+      "keyword": "datadog review is it worth it honest verdict",
+      "position": 11.4,
+      "impressions": 78,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Datadog Review (2026): Is It Worth It? Honest Verdict"
+    },
+    {
+      "slug": "workable-vs-culture-amp-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 11.1,
+      "impressions": 76,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Workable vs Culture Amp (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "expressvpn-business-vs-tailscale-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 10.7,
+      "impressions": 73,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Expressvpn Business vs Tailscale (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "notion-coupon-code-promo-codes-2026-verified-discounts",
+      "keyword": "semrush promo code",
+      "position": 18.5,
+      "impressions": 63,
+      "clicks": 1,
+      "old_ctr_pct": "1.6%",
+      "new_title": "Semrush Coupon Codes (2026): Verified Discounts That Actually Work"
+    },
+    {
+      "slug": "google-meet-vs-webex-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 11.3,
+      "impressions": 60,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Google Meet vs Webex (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "best-error-handling-developer-tooling-libraries-for-go-in-2025",
+      "keyword": "best canva alternatives in 2026",
+      "position": 11.5,
+      "impressions": 59,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Best Error Handling &amp; Developer Tooling Libraries | SaaSpare (2026) \u2014 Ranked & Reviewed by Experts"
+    },
+    {
+      "slug": "does-brevo-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 13.7,
+      "impressions": 56,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "saas-glossary",
+      "keyword": "saas glossary",
+      "position": 19.5,
+      "impressions": 55,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "SaaS Glossary: 51+ B2B SaaS Terms Every Buyer Should Know | SaaSpare (2026) \u2014 Expert Analysis"
+    },
+    {
+      "slug": "crowdstrike-vs-qualys-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 14.6,
+      "impressions": 50,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Crowdstrike vs Qualys (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "contractbook-vs-juro-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 11.0,
+      "impressions": 48,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Contractbook vs Juro (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "zoom-vs-around-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 17.2,
+      "impressions": 48,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Zoom vs Around (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "supabase-vs-google-cloud-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 10.5,
+      "impressions": 47,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Supabase vs Google Cloud (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "state-of-saas-pricing-2026",
+      "keyword": "ramp pricing change may 2026",
+      "position": 11.1,
+      "impressions": 47,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Ramp  Change May Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    },
+    {
+      "slug": "wireguard-vs-openvpn-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 15.8,
+      "impressions": 46,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Wireguard vs Openvpn (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "does-monday-com-have-a-free-plan-2026-full-breakdown",
+      "keyword": "sentry free plan 2026",
+      "position": 13.8,
+      "impressions": 43,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Sentry  2026 Free Trial (2026): How to Get It & What's Included"
+    },
+    {
+      "slug": "docusign-review-2026-is-it-worth-it-honest-verdict",
+      "keyword": "which is better: docusign clm vs icertis contract intelligence (ici)",
+      "position": 11.0,
+      "impressions": 40,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Which Is Better: Docusign Clm vs Icertis Contract Intelligence (Ici) (2026): Honest Verdict \u2014 Which Is Actually Better?"
+    },
+    {
+      "slug": "zoom-vs-riverside-fm-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 11.9,
+      "impressions": 36,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Zoom vs Riverside Fm (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "7-best-microsoft-teams-alternatives-in-2026-free-paid",
+      "keyword": "best canva alternatives in 2026",
+      "position": 16.7,
+      "impressions": 36,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Best Microsoft Teams Alternatives 2026: Free & Paid Options | SaaSpare [Expert Picks]"
+    },
+    {
+      "slug": "xero-vs-brex-which-is-better-in-2026",
+      "keyword": "best canva alternatives in 2026",
+      "position": 10.2,
+      "impressions": 33,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Xero vs Brex (2026): Which Is Better? Full Comparison"
+    },
+    {
+      "slug": "monday-com-pricing-2026-plans-costs-what-you-actually-pay",
+      "keyword": "ramp pricing change may 2026",
+      "position": 15.6,
+      "impressions": 30,
+      "clicks": 0,
+      "old_ctr_pct": "0.0%",
+      "new_title": "Ramp  Change May Pricing (2026): All Plans, Hidden Fees & What You Actually Pay"
+    }
+  ],
+  "skipped_no_file": [
+    ""
+  ]
+}
