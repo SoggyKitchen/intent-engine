@@ -1,17 +1,17 @@
 {
-  "total_pages": 1326,
-  "updated": 1326,
+  "total_pages": 1331,
+  "updated": 1331,
   "skipped": 0,
-  "orphans_before": 59,
-  "orphans_after": 52,
+  "orphans_before": 63,
+  "orphans_after": 50,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-vs-perimeter-81-which-is-better-in-2026",
-        "/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/cloudflare-vs-tenable-which-is-better-in-2026",
-        "/pages/firstpromoter-vs-leaddyno-which-is-better-in-2026",
+        "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
+        "/pages/tresorit-vs-box-which-is-better-in-2026",
+        "/pages/twingate-vs-cloudflare-access-which-is-better-in-2026",
+        "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
         "/pages/aws-vs-digitalocean-which-is-better-in-2026"
       ]
     },
@@ -21,18 +21,18 @@
         "/pages/bitwarden-vs-roboform-which-is-better-in-2026",
         "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
         "/pages/tenable-vs-sentinelone-which-is-better-in-2026",
-        "/pages/monday-com-vs-jira-which-is-better-in-2026",
-        "/pages/recurly-vs-recharge-which-is-better-in-2026"
+        "/pages/webex-vs-around-which-is-better-in-2026",
+        "/pages/google-meet-vs-loom-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
         "/pages/nordpass-vs-roboform-which-is-better-in-2026",
-        "/pages/qualys-vs-tenable-which-is-better-in-2026",
-        "/pages/sentinelone-vs-tresorit-which-is-better-in-2026",
-        "/pages/juro-vs-agiloft-which-is-better-in-2026",
-        "/pages/ironclad-vs-concord-which-is-better-in-2026"
+        "/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026",
+        "/pages/tresorit-vs-dropbox-which-is-better-in-2026",
+        "/pages/woocommerce-vs-paddle-which-is-better-in-2026",
+        "/pages/woocommerce-vs-chargebee-which-is-better-in-2026"
       ]
     }
   ]
