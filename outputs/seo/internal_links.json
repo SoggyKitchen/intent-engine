@@ -1,9 +1,9 @@
 {
-  "total_pages": 1315,
-  "updated": 1315,
+  "total_pages": 1323,
+  "updated": 1323,
   "skipped": 0,
-  "orphans_before": 58,
-  "orphans_after": 56,
+  "orphans_before": 219,
+  "orphans_after": 55,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,17 +11,17 @@
         "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/7-best-okta-alternatives-in-2026-free-paid",
         "/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026",
-        "/pages/keeper-vs-enpass-which-is-better-in-2026",
-        "/pages/bitwarden-vs-nordpass-which-is-better-in-2026"
+        "/pages/databox-vs-heap-which-is-better-in-2026",
+        "/pages/microsoft-teams-vs-whereby-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordpass-vs-password-boss-which-is-better-in-2026",
         "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
-        "/pages/qualys-vs-tresorit-which-is-better-in-2026",
-        "/pages/keap-vs-insightly-which-is-better-in-2026",
+        "/pages/nordpass-vs-enpass-which-is-better-in-2026",
+        "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",
+        "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
         "/pages/1password-vs-bitwarden-which-is-better-in-2026"
       ]
     },
@@ -31,8 +31,8 @@
         "/pages/okta-vs-qualys-which-is-better-in-2026",
         "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/1password-vs-nordpass-which-is-better-in-2026",
-        "/pages/github-copilot-vs-datadog-which-is-better-in-2026",
-        "/pages/netsuite-vs-airbase-which-is-better-in-2026"
+        "/pages/ironclad-vs-concord-which-is-better-in-2026",
+        "/pages/github-copilot-vs-retool-which-is-better-in-2026"
       ]
     }
   ]
