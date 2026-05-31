@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-31T12:39:04+00:00",
+  "generated_at_utc": "2026-05-31T13:19:27+00:00",
   "mode": "apply",
-  "pages_flagged": 31,
+  "pages_flagged": 33,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -41,6 +41,17 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0;line-height:1.5\">30-day money-back guarantee. No questions asked.</p><p style=\"font-size:.72rem;color:rgba(255,248,245,.28);"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-vpn-for-gaming-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "h3> <p style=\"color:rgba(255,248,245,.64);\">Both NordVPN and Surfshark have 30-day money-back guarantees. Try and return if gaming speed isn't better.</p> <div class=\"cta-btns\">"
         }
       ],
       "trust_state_bumped": false
@@ -559,6 +570,17 @@
           "label": "money_back_guarantee",
           "snippet": "7-day money-back guarantee",
           "context": "etails class=\"faq-item\"><summary>Does Surfer SEO have a free trial?</summary><p>7-day money-back guarantee. We recommend using the full trial period to test your actual workflow, not a d"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-vpn-australia-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "y</h3> <p style=\"color:rgba(255,248,245,.64);\">NordVPN has AU servers and a 30-day money-back guarantee. No risk.</p> <div class=\"cta-btns\"> <a href=\"/go/nordvpn\" target=\"_b"
         }
       ],
       "trust_state_bumped": false

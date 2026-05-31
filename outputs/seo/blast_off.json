@@ -2,15 +2,41 @@
   "current_month": "May 2026",
   "today": "2026-05-31",
   "titles_rewritten": 0,
-  "descs_rewritten": 0,
-  "dates_refreshed": 0,
-  "answers_added": 0,
-  "files_changed": 0,
-  "files_scanned": 1379,
+  "descs_rewritten": 5,
+  "dates_refreshed": 5,
+  "answers_added": 5,
+  "files_changed": 5,
+  "files_scanned": 1384,
   "title_examples": [],
-  "desc_examples": [],
+  "desc_examples": [
+    {
+      "file": "best-ecommerce-platforms-2026.html",
+      "before": "Best ecommerce platforms in 2026 ranked \u2014 Shopify, WooCommerce, BigCommerce, Squarespace compared by pricing, features, and ease of use.",
+      "after": "Updated May 2026. Best ecommerce platforms in 2026 ranked \u2014 Shopify, WooCommerce, BigCommerce, Squarespace compared by pricing, features, and ease of use Real\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "Best VPNs in Australia 2026 \u2014 tested for speed, privacy, Netflix unblocking, and price. NordVPN, Surfshark, and more ranked honestly.",
+      "after": "Updated May 2026. Best VPNs in Australia 2026 \u2014 tested for speed, privacy, Netflix unblocking, and price. NordVPN, Surfshark, and more ranked honestly."
+    },
+    {
+      "file": "best-vpn-for-gaming-2026.html",
+      "before": "Best VPNs for gaming in 2026 \u2014 tested for ping, speed, and DDoS protection. NordVPN, Surfshark ranked for PC, console, and mobile gaming.",
+      "after": "Updated May 2026. Best VPNs for gaming in 2026 \u2014 tested for ping, speed, and DDoS protection. NordVPN, Surfshark ranked for PC, console, and mobile gaming."
+    },
+    {
+      "file": "nordpass-vs-bitwarden-which-is-better-in-2026.html",
+      "before": "NordPass vs Bitwarden compared \u2014 features, pricing, security, and which password manager delivers more value in 2026. Honest verdict.",
+      "after": "Updated May 2026. NordPass vs Bitwarden compared \u2014 features, pricing, security, and which password manager delivers more value in 2026. Honest verdict."
+    },
+    {
+      "file": "semrush-vs-similarweb-which-is-better-in-2026.html",
+      "before": "Semrush vs SimilarWeb compared \u2014 features, pricing, and which tool gives you better competitive intelligence and traffic data in 2026.",
+      "after": "Updated May 2026. Semrush vs SimilarWeb compared \u2014 features, pricing, and which tool gives you better competitive intelligence and traffic data in 2026 Honest\u2026"
+    }
+  ],
   "indexnow": {
     "submitted": 0,
-    "skipped_reason": "no urls"
+    "error": "HTTP Error 403: Forbidden"
   }
 }

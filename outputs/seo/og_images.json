@@ -1,7 +1,9 @@
 {
   "svg_files": 16,
-  "pages_updated": 1,
+  "pages_updated": 3,
   "by_vertical": {
-    "project-mgmt": 1
+    "project-mgmt": 1,
+    "security": 1,
+    "seo": 1
   }
 }
