@@ -1,38 +1,38 @@
 {
-  "total_pages": 1323,
-  "updated": 1323,
+  "total_pages": 1326,
+  "updated": 1326,
   "skipped": 0,
-  "orphans_before": 58,
-  "orphans_after": 54,
+  "orphans_before": 61,
+  "orphans_after": 52,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/7-best-okta-alternatives-in-2026-free-paid",
-        "/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026",
-        "/pages/databox-vs-heap-which-is-better-in-2026",
-        "/pages/microsoft-teams-vs-whereby-which-is-better-in-2026"
+        "/pages/nordlayer-vs-perimeter-81-which-is-better-in-2026",
+        "/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/cloudflare-vs-tenable-which-is-better-in-2026",
+        "/pages/firstpromoter-vs-leaddyno-which-is-better-in-2026",
+        "/pages/aws-vs-digitalocean-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
-        "/pages/nordpass-vs-enpass-which-is-better-in-2026",
-        "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",
-        "/pages/bamboohr-vs-greenhouse-which-is-better-in-2026",
-        "/pages/1password-vs-bitwarden-which-is-better-in-2026"
+        "/pages/bitwarden-vs-roboform-which-is-better-in-2026",
+        "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/tenable-vs-sentinelone-which-is-better-in-2026",
+        "/pages/monday-com-vs-jira-which-is-better-in-2026",
+        "/pages/recurly-vs-recharge-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/okta-vs-qualys-which-is-better-in-2026",
-        "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/1password-vs-nordpass-which-is-better-in-2026",
-        "/pages/ironclad-vs-concord-which-is-better-in-2026",
-        "/pages/github-copilot-vs-retool-which-is-better-in-2026"
+        "/pages/nordpass-vs-roboform-which-is-better-in-2026",
+        "/pages/qualys-vs-tenable-which-is-better-in-2026",
+        "/pages/sentinelone-vs-tresorit-which-is-better-in-2026",
+        "/pages/juro-vs-agiloft-which-is-better-in-2026",
+        "/pages/ironclad-vs-concord-which-is-better-in-2026"
       ]
     }
   ]
