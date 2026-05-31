@@ -2,31 +2,15 @@
   "current_month": "May 2026",
   "today": "2026-05-31",
   "titles_rewritten": 0,
-  "descs_rewritten": 3,
-  "dates_refreshed": 3,
-  "answers_added": 3,
-  "files_changed": 3,
+  "descs_rewritten": 0,
+  "dates_refreshed": 0,
+  "answers_added": 0,
+  "files_changed": 0,
   "files_scanned": 1379,
   "title_examples": [],
-  "desc_examples": [
-    {
-      "file": "clickup-vs-monday-com-which-is-better-in-2026.html",
-      "before": "ClickUp vs Monday.com compared \u2014 pricing, features, and which PM tool delivers more value in 2026. Honest verdict with real pricing data.",
-      "after": "Updated May 2026. ClickUp vs Monday.com compared \u2014 pricing, features, and which PM tool delivers more value in 2026. Honest verdict with real pricing data."
-    },
-    {
-      "file": "dashlane-vs-1password-which-is-better-in-2026.html",
-      "before": "Dashlane vs 1Password compared \u2014 pricing, security features, and which password manager is worth paying for in 2026. Real verdict, no sponsored rankings.",
-      "after": "Updated May 2026. Dashlane vs 1Password compared \u2014 pricing, security features, and which password manager is worth paying for in 2026. Real verdict, no sponsored\u2026"
-    },
-    {
-      "file": "xero-vs-freshbooks-which-is-better-in-2026.html",
-      "before": "Xero vs FreshBooks compared \u2014 pricing, features, invoicing, and which accounting tool is right for freelancers vs growing businesses in 2026.",
-      "after": "Updated May 2026. Xero vs FreshBooks compared \u2014 pricing, features, invoicing, and which accounting tool is right for freelancers vs growing businesses in 2026\u2026"
-    }
-  ],
+  "desc_examples": [],
   "indexnow": {
     "submitted": 0,
-    "error": "HTTP Error 403: Forbidden"
+    "skipped_reason": "no urls"
   }
 }
