@@ -1,38 +1,59 @@
 {
   "current_month": "May 2026",
   "today": "2026-05-31",
-  "titles_rewritten": 0,
-  "descs_rewritten": 5,
-  "dates_refreshed": 5,
-  "answers_added": 5,
-  "files_changed": 5,
+  "titles_rewritten": 3,
+  "descs_rewritten": 59,
+  "dates_refreshed": 4,
+  "answers_added": 4,
+  "files_changed": 59,
   "files_scanned": 1384,
-  "title_examples": [],
+  "title_examples": [
+    {
+      "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
+      "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
+      "after": "1Password vs Bitwarden in 2026: Honest Verdict After We Tested Both"
+    },
+    {
+      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Datadog Coupon Codes (2026): Verified Discounts That Actually Work",
+      "after": "Datadog Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "notion-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Notion Coupon Codes (2026): Verified Discounts That Actually Work",
+      "after": "Notion Coupon 2026 (Verified May 2026) \u2014 Real Working Codes"
+    }
+  ],
   "desc_examples": [
     {
+      "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
+      "before": "We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+      "after": "Updated May 2026. We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
+    },
+    {
+      "file": "7-best-microsoft-teams-alternatives-in-2026-free-paid.html",
+      "before": "The best 7 Best Microsoft Teams alternatives in 2026 \u2014 ranked by price, features & ease of use. Find a cheaper or better option for your team.",
+      "after": "Updated May 2026. The best 7 Best Microsoft Teams alternatives in 2026 \u2014 ranked by price, features & ease of use. Find a cheaper or better option for your team\u2026"
+    },
+    {
+      "file": "aws-vs-render-which-is-better-in-2026.html",
+      "before": "We compared Aws vs Render in 2026 \u2014 pricing, features, integrations, and a clear winner. Updated monthly with real pricing data.",
+      "after": "Updated May 2026. We compared Aws vs Render in 2026 \u2014 pricing, features, integrations, and a clear winner. Updated monthly with real pricing data Honest verdict\u2026"
+    },
+    {
+      "file": "aws-vs-supabase-which-is-better-in-2026.html",
+      "before": "We compared Aws vs Supabase in 2026 \u2014 pricing, features, integrations, and a clear winner. Updated monthly with real pricing data.",
+      "after": "Updated May 2026. We compared Aws vs Supabase in 2026 \u2014 pricing, features, integrations, and a clear winner. Updated monthly with real pricing data Honest\u2026"
+    },
+    {
+      "file": "best-devops-configuration-drift-detection-tools-in-2025.html",
+      "before": "The best tools ranked for 2026. We compared pricing, features & support \u2014 here's what's actually worth paying for.",
+      "after": "Updated May 2026. The best tools ranked for 2026. We compared pricing, features & support \u2014 here's what's actually worth paying for Real tests, real pricing \u2014\u2026"
+    },
+    {
       "file": "best-ecommerce-platforms-2026.html",
-      "before": "Best ecommerce platforms in 2026 ranked \u2014 Shopify, WooCommerce, BigCommerce, Squarespace compared by pricing, features, and ease of use.",
-      "after": "Updated May 2026. Best ecommerce platforms in 2026 ranked \u2014 Shopify, WooCommerce, BigCommerce, Squarespace compared by pricing, features, and ease of use Real\u2026"
-    },
-    {
-      "file": "best-vpn-australia-2026.html",
-      "before": "Best VPNs in Australia 2026 \u2014 tested for speed, privacy, Netflix unblocking, and price. NordVPN, Surfshark, and more ranked honestly.",
-      "after": "Updated May 2026. Best VPNs in Australia 2026 \u2014 tested for speed, privacy, Netflix unblocking, and price. NordVPN, Surfshark, and more ranked honestly."
-    },
-    {
-      "file": "best-vpn-for-gaming-2026.html",
-      "before": "Best VPNs for gaming in 2026 \u2014 tested for ping, speed, and DDoS protection. NordVPN, Surfshark ranked for PC, console, and mobile gaming.",
-      "after": "Updated May 2026. Best VPNs for gaming in 2026 \u2014 tested for ping, speed, and DDoS protection. NordVPN, Surfshark ranked for PC, console, and mobile gaming."
-    },
-    {
-      "file": "nordpass-vs-bitwarden-which-is-better-in-2026.html",
-      "before": "NordPass vs Bitwarden compared \u2014 features, pricing, security, and which password manager delivers more value in 2026. Honest verdict.",
-      "after": "Updated May 2026. NordPass vs Bitwarden compared \u2014 features, pricing, security, and which password manager delivers more value in 2026. Honest verdict."
-    },
-    {
-      "file": "semrush-vs-similarweb-which-is-better-in-2026.html",
-      "before": "Semrush vs SimilarWeb compared \u2014 features, pricing, and which tool gives you better competitive intelligence and traffic data in 2026.",
-      "after": "Updated May 2026. Semrush vs SimilarWeb compared \u2014 features, pricing, and which tool gives you better competitive intelligence and traffic data in 2026 Honest\u2026"
+      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated May 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
     }
   ],
   "indexnow": {
