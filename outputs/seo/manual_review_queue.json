@@ -1,71 +1,12 @@
 {
-  "generated_at_utc": "2026-05-30T06:30:47+00:00",
+  "generated_at_utc": "2026-05-31T03:16:18+00:00",
   "mode": "apply",
-  "pages_flagged": 62,
+  "pages_flagged": 31,
   "claim_labels_seen": [
     "money_back_guarantee",
-    "refund_policy_numeric",
     "sla_guarantee"
   ],
   "pages": [
-    {
-      "path": "site/pages/nordvpn-vs-surfshark-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.\"}}, {\"@type\": \"Question\", \"name\": \"Is N"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"display:flex;gap:.7"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee</td> <td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee + 7-day free trial on iOS and Android</td> </tr><tr style=\"border-bottom:1px so"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "n><span style=\"color:rgba(255,248,245,.78);font-size:.93rem\">No free tier (only 30-day money-back guarantee)</span></li> <li style=\"display:flex;gap:.5rem;margin-bottom:.4rem\"><span style"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/retool-vs-pagerduty-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "es, you can switch from PagerDuty to Retool. Retool provides a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "5,255,.65);font-size:.92rem;line-height:1.8\">Retool provides a free trial and a 14-day money-back guarantee, making it easy to test and migrate to their platform. Retool also offers a com"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/google-meet-vs-webex-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r team on the new interface and features. Google Meet offers a free trial and a 30-day money-back guarantee, making it a low-risk choice for businesses.</p> </div> <div clas"
-        }
-      ],
-      "trust_state_bumped": false
-    },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
       "claims": [
@@ -89,6 +30,17 @@
           "label": "money_back_guarantee",
           "snippet": "7-day money-back guarantee",
           "context": "</div> <div class=\"section\"> <h2>Surfer SEO Free Trial Guide</h2> <p>7-day money-back guarantee. During your trial, test the features your team will use daily. Most teams need"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-vpn-for-streaming-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0;line-height:1.5\">30-day money-back guarantee. No questions asked.</p><p style=\"font-size:.72rem;color:rgba(255,248,245,.28);"
         }
       ],
       "trust_state_bumped": false
@@ -122,22 +74,6 @@
           "label": "money_back_guarantee",
           "snippet": "45-day money-back guarantee",
           "context": "<p style=\"color:rgba(255,248,245,.65);font-size:.9rem;line-height:1.6;margin:0\">45-day money-back guarantee \u2014 the longest in the industry. 10,000+ servers. Cheaper at $2.03/month.</p>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/hubspot-vs-marketo-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ration and setup, but it's possible to do so. HubSpot offers a free trial and a 14-day money-back guarantee, while Marketo offers a free trial and a 30-day money-back guarantee.</p>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "rial and a 14-day money-back guarantee, while Marketo offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Our Testing Methodol"
         }
       ],
       "trust_state_bumped": false
@@ -180,28 +116,17 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/hubspot-vs-drip-which-is-better-in-2026.html",
+      "path": "site/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "HubSpot offers a 14-day free trial, while Drip offers a 14-day free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/surfshark-vs-expressvpn-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee + 7-day free trial on iOS and Android</td> <td style=\"padding:.7rem .5rem;col"
+          "context": "fshark</a> ($2.19/month) is best for households (unlimited devices). Both offer 30-day money-back guarantees.</p> <div style=\"background:rgba(255,255,255,.04);border:1px solid rgba(255,"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee</td> </tr><tr style=\"border-bottom:1px solid rgba(255,255,255,.06)\"> <td styl"
+          "context": "arr;</a><p style=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0\">30-day money-back guarantee \u2014 full refund if not satisfied</p><p style=\"font-size:.72rem;color:rgba(255,248"
         }
       ],
       "trust_state_bumped": false
@@ -261,58 +186,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/ramp-vs-quickbooks-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ng price of $25 per user per month. The platform also offers a free trial and a 14-day money-back guarantee.</p> <a href=\"/go/ramp?utm_source=saaspare&utm_medium=affiliate&utm_"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ium plan starting at $30 per month. The platform also offers a free trial and a 30-day money-back guarantee.</p> <a href=\"https://quickbooks.intuit.com?utm_source=saaspare&utm_"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "m QuickBooks to Ramp?</summary> <p>Yes, Ramp offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to the platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "5,255,255,.65);font-size:.92rem;line-height:1.8\">Ramp offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to the platform. QuickBooks also offers a fr"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "y to test and switch to the platform. QuickBooks also offers a free trial and a 30-day money-back guarantee. The migration process typically takes 1-3 days, depending on the complexity of"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/digitalocean-vs-hetzner-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "rial</strong></td> <td>Yes, $200 credit over 60 days</td><td>No, but 14-day money-back guarantee</td> </tr> <tr> <td><strong>Best For</strong><"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": ".51/month (2 vCPU, 2GB RAM). Dedicated servers from \u20ac39/month. No free tier but 14-day money-back guarantee.</p> <a href=\"/go/hetzner?utm_source=saaspare&utm_medium=affiliate&u"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "rs, effectively a free trial. Hetzner does not offer a free plan but provides a 14-day money-back guarantee on all services, allowing risk-free testing.</p> </details> <"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/nordvpn-free-trial-2026-how-to-get-it-step-by-step.html",
       "claims": [
         {
@@ -364,17 +237,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "your data and set up Clearscope. However, Clearscope offers a free trial and a 14-day money-back guarantee, so you can try it out risk-free. Onboarding with Clearscope typically takes 1-"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay.html",
       "claims": [
         {
@@ -407,54 +269,27 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/freshsales-vs-keap-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "grate your data and set up the new system. Freshsales offers a free trial and a 14-day money-back guarantee, so you can try it risk-free.</p> </div> <div class=\"section\">"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/vercel-vs-netlify-which-is-better-in-2026.html",
+      "path": "site/pages/best-free-vpn-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "me settings and re-deploying your application. Vercel offers a free trial and a 30-day money-back guarantee, making it a low-risk choice for teams that want to try it out.</p> </div>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "t offers features such as unlimited data transfer, 24/7 customer support, and a 30-day money-back guarantee.</p> <div class=\"score-row\"><span class=\"score-label\"><strong>4.2</stron"
+          "context": ".92rem;line-height:1.65;margin:0 0 .5rem\">NordVPN has no free plan but offers a 30-day money-back guarantee on all plans. In practice: sign up, use it for up to 30 days, request a refund."
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "interface</li><li>Unlimited data transfer</li><li>24/7 customer support</li><li>30-day money-back guarantee</li></ul></div> <div class=\"cons\"><h4>Cons</h4><ul><li>Limited advance"
+          "context": "in:0 0 .5rem\">Like NordVPN, Surfshark has no permanent free plan but includes a 30-day money-back guarantee. At $2.19/month it's the cheapest premium VPN, and the unlimited device policy"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "pressVPN Business offers a free plan. However, ExpressVPN Business does offer a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>"
+          "context": "0;font-size:.92rem\">NordVPN and Surfshark don't have truly free plans but offer 30-day money-back guarantees \u2014 effectively a free trial. ProtonVPN free doesn't unblock Netflix. The honest"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": ", offers features such as unlimited data transfer, 24/7 customer support, and a 30-day money-back guarantee. While both solutions have their strengths and weaknesses, Cisco AnyConnect is"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "infrastructure and may incur additional costs. However, both solutions offer a 30-day money-back guarantee, so you can try them out risk-free before committing to a purchase.</p> </"
+          "context": "ly a free trial. ProtonVPN free doesn't unblock Netflix. The honest answer: the 30-day money-back guarantee on NordVPN ($3.39/month) is the best way to access Netflix free legally.</p></d"
         }
       ],
       "trust_state_bumped": false
@@ -492,33 +327,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "d><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</stron"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/pipedrive-vs-zoho-crm-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "you can switch from Zoho CRM to Pipedrive. Pipedrive offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ine-height:1.8\">Switching from Zoho CRM to Pipedrive is relatively easy, with a 30-day money-back guarantee and a free trial. Pipedrive also offers a comprehensive onboarding process to h"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/mailchimp-vs-brevo-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "export process and minimal setup required. Mailchimp offers a free trial and a 30-day money-back guarantee, making it an excellent choice for businesses looking to try before they buy.</"
         }
       ],
       "trust_state_bumped": false
@@ -570,38 +378,12 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/perimeter-81-vs-expressvpn-business-which-is-better-in-2026.html",
+      "path": "site/pages/clickup-vs-asana-which-is-better-in-2026.html",
       "claims": [
         {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "><strong>Free Trial</strong></td> <td>Yes, 14-day trial</td><td>Yes, 30-day money-back guarantee</td> </tr> <tr> <td><strong>Best For</strong><"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "1 provides a 14-day free trial with full features. ExpressVPN Business offers a 30-day money-back guarantee, effectively serving as a trial period.</p> </details> <detai"
-        },
-        {
-          "label": "refund_policy_numeric",
-          "snippet": "30-day refund policy",
-          "context": "t quotes typically range from $15\u2013$20/user/month depending on team size, with a 30-day refund policy. While ExpressVPN appears slightly cheaper upfront, Perimeter 81 delivers great"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/deel-vs-remote-com-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "rom Remote.com to Deel?</summary> <p>Yes, Deel offers a free trial and a 14-day money-back guarantee, making it easy to switch.</p> </details> <details class=\"faq-i"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "5,255,255,.65);font-size:.92rem;line-height:1.8\">Deel offers a free trial and a 14-day money-back guarantee, making it easy to switch from Remote.com. Remote.com also offers a free trial,"
+          "label": "sla_guarantee",
+          "snippet": "99.9% uptime SLA",
+          "context": "\u2014 ClickUp has SOC 2 Type II certification, SSO, SAML, advanced permissions, and 99.9% uptime SLA on Business+ plans. It's used by enterprise teams at IBM, Booking.com, and Netf"
         }
       ],
       "trust_state_bumped": false
@@ -613,22 +395,6 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime SLA",
           "context": "nt-size:.92rem;line-height:1.65;margin:0 0 .5rem\">Enterprise-grade Shopify with 99.99% uptime SLA, dedicated account management, unlimited staff accounts, customisable checkout,"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/mangools-vs-frase-io-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s, you can switch from Frase.io to Mangools. Mangools offers a free trial and a 30-day money-back guarantee, making it easy to try out their tool and see if it's a good fit for your team."
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "line-height:1.8\">Migrating from Frase.io to Mangools is relatively easy, with a 30-day money-back guarantee and a free trial. However, setting up Mangools can take some time, especially f"
         }
       ],
       "trust_state_bumped": false
@@ -670,100 +436,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/asana-vs-clickup-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<p>Yes, you can switch from ClickUp to Asana. Asana offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": ",255,255,.65);font-size:.92rem;line-height:1.8\">Asana offers a free trial and a 30-day money-back guarantee, making it easy to switch from ClickUp to Asana. ClickUp also offers a free tri"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "it easy to switch from ClickUp to Asana. ClickUp also offers a free trial and a 30-day money-back guarantee, making it easy to switch from Asana to ClickUp. However, Asana's onboarding pr"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/surfshark-vs-nordvpn-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.\"}}, {\"@type\": \"Question\", \"name\": \"Is S"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"display:flex;gap:.7"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee + 7-day free trial on iOS and Android</td> <td style=\"padding:.7rem .5rem;col"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee</td> </tr><tr style=\"border-bottom:1px solid rgba(255,255,255,.06)\"> <td styl"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "n><span style=\"color:rgba(255,248,245,.78);font-size:.93rem\">No free tier (only 30-day money-back guarantee)</span></li> <li style=\"display:flex;gap:.5rem;margin-bottom:.4rem\"><span style"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/perimeter-81-vs-twingate-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "o set up and configure the new solution. Perimeter 81 offers a free trial and a 30-day money-back guarantee, so you can try it out before committing to a purchase.</p> </div>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordvpn-vs-expressvpn-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.\"}}, {\"@type\": \"Question\", \"name\": \"Is N"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"display:flex;gap:.7"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee</td> <td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee</td> </tr><tr style=\"border-bottom:1px solid rgba(255,255,255,.06)\"> <td styl"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "n><span style=\"color:rgba(255,248,245,.78);font-size:.93rem\">No free tier (only 30-day money-back guarantee)</span></li> <li style=\"display:flex;gap:.5rem;margin-bottom:.4rem\"><span style"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay.html",
       "claims": [
         {
@@ -796,149 +468,12 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/notion-vs-basecamp-which-is-better-in-2026.html",
+      "path": "site/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "Basecamp to Notion?</summary> <p>Yes, Notion offers a free trial and a 30-day money-back guarantee, making it easy to switch from Basecamp.</p> </details> <deta"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "255,255,.65);font-size:.92rem;line-height:1.8\">Notion offers a free trial and a 30-day money-back guarantee, making it easy to switch from Basecamp. Notion's setup process is relatively s"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/twingate-vs-zscaler-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "potentially some additional costs. However, Twingate offers a free trial and a 30-day money-back guarantee, making it a low-risk option for businesses looking to switch.</p> </div>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/gumroad-vs-stripe-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "it may require some setup and configuration. Gumroad offers a free trial and a 30-day money-back guarantee, so you can try it out risk-free.</p> </details> <details cla"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "oad may require some setup and configuration. Gumroad offers a free trial and a 30-day money-back guarantee, so you can try it out risk-free. Stripe's migration process is more complex an"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/clickup-vs-todoist-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s possible to switch from Todoist to ClickUp. ClickUp offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "55,255,.65);font-size:.92rem;line-height:1.8\">ClickUp offers a free trial and a 30-day money-back guarantee, making it easy to switch from Todoist. ClickUp also offers a range of integrat"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "import data from Todoist. Todoist, on the other hand, offers a free trial and a 30-day money-back guarantee, but it's not as easy to switch from ClickUp.</p> </div> <div cla"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/rewardful-vs-post-affiliate-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "witch from Post Affiliate Pro to Rewardful. Rewardful offers a free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>Does Rew"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": ",255,.65);font-size:.92rem;line-height:1.8\">Rewardful offers a free trial and a 30-day money-back guarantee, making it easy to switch from Post Affiliate Pro. Post Affiliate Pro also offe"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/monday-com-vs-basecamp-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ble to switch from Basecamp to Monday.com. Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "eams due to its simplicity and ease of use. However, Monday.com's free plan and 14-day money-back guarantee make it a great option for small teams to test and switch to their platform.</p"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "255,.65);font-size:.92rem;line-height:1.8\">Monday.com offers a free trial and a 14-day money-back guarantee, making it easy to test and switch to their platform. Basecamp also offers a fr"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "h to their platform. Basecamp also offers a free trial, but it does not offer a money-back guarantee. The migration process from Basecamp to Monday.com can take several days to a w"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "sinesses, starting at $3 per user per month. They also offer a free trial and a 30-day money-back guarantee.</p> <a href=\"/go/nordlayer?utm_source=saaspare&utm_medium=affiliate"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "range of pricing plans, starting at $6.67 per user per month. They also offer a 30-day money-back guarantee.</p> <a href=\"/go/expressvpn-business?utm_source=saaspare&utm_medium"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ExpressVPN Business to NordLayer?</summary> <p>Yes, NordLayer offers a 30-day money-back guarantee and a free trial, making it easy to switch.</p> </details> <d"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "pricing plans, starting at $6.67 per user per month. Both VPN solutions offer a 30-day money-back guarantee and a free trial.</p> </div> <div class=\"section\"> <h2>Who"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "olor:rgba(255,255,255,.65);font-size:.92rem;line-height:1.8\">NordLayer offers a 30-day money-back guarantee and a free trial, making it easy to switch from ExpressVPN Business. The migrat"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "l</strong></td> <td>14-day free trial</td><td>7-day free trial (with money-back guarantee)</td> </tr> <tr> <td><strong>Best For</strong>"
+          "context": "urfshark's 2-year deal works out to $2.19/mo. NordVPN is $3.09/mo. Both include 30-day money-back guarantees.</p> <div class=\"cta-btns\"> <a href=\"/go/surfshark\" target=\"_blank\""
         }
       ],
       "trust_state_bumped": false
@@ -950,70 +485,6 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime guarantee",
           "context": "cher, built-in CDN, daily backups, and the best support team in shared hosting. 99.99% uptime guarantee.</p> <p style=\"color:rgba(255,248,245,.42);font-size:.8rem;margin:0 0 .5r"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/semrush-vs-rankmath-pro-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "<td><strong>Free Trial</strong></td> <td>7-day free trial</td><td>14-day money-back guarantee</td> </tr> <tr> <td><strong>Best For</strong><"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/rippling-vs-culture-amp-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "rises, starting at $8 per employee per month. It also offers a free trial and a 14-day money-back guarantee.</p> <a href=\"/go/rippling?utm_source=saaspare&utm_medium=affiliate&"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "zed teams, starting at $9 per user per month. It also offers a free trial and a 14-day money-back guarantee.</p> <a href=\"https://www.cultureamp.com?utm_source=saaspare&utm_med"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ry> <p>Neither tool offers a free plan, but both offer free trials and 14-day money-back guarantees.</p> </details> <details class=\"faq-item\"> <summary"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ized teams, starting at $9 per user per month. Both tools offer free trials and 14-day money-back guarantees.</p> </div> <div class=\"section\"> <h2>Who Should Use Ripp"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/amplitude-vs-databox-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "may require some data migration and setup. Amplitude offers a free trial and a 14-day money-back guarantee, making it a low-risk option. Databox also offers a free trial and a 30-day mon"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "guarantee, making it a low-risk option. Databox also offers a free trial and a 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Our Testing Methodol"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/woocommerce-vs-chargebee-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ce offers a 30-day free trial, while Chargebee offers a 30-day free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>"
         }
       ],
       "trust_state_bumped": false
@@ -1035,74 +506,12 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/pardot-vs-drip-which-is-better-in-2026.html",
+      "path": "site/pages/teachable-review-2026-is-it-worth-it-honest-verdict.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "Drip offers a 14-day free trial, while Pardot offers a 14-day free trial and a 30-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordvpn-vs-cyberghost-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.\"}}, {\"@type\": \"Question\", \"name\": \"Is N"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"display:flex;gap:.7"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">30-day money-back guarantee</td> <td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "45-day money-back guarantee",
-          "context": "<td style=\"padding:.7rem .5rem;color:rgba(255,248,245,.78);font-size:.88rem\">45-day money-back guarantee (longest in industry)</td> </tr><tr style=\"border-bottom:1px solid rgba(255,255"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "n><span style=\"color:rgba(255,248,245,.78);font-size:.93rem\">No free tier (only 30-day money-back guarantee)</span></li> <li style=\"display:flex;gap:.5rem;margin-bottom:.4rem\"><span style"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "45-day money-back guarantee",
-          "context": "ex-shrink:0\">\u2713</span><span style=\"color:rgba(255,248,245,.78);font-size:.93rem\">45-day money-back guarantee \u2014 longest trial available</span></li> <li style=\"display:flex;gap:.5rem;margin-"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/rippling-vs-greenhouse-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "rises, starting at $8 per employee per month. It also offers a free trial and a 14-day money-back guarantee.</p> <a href=\"/go/rippling?utm_source=saaspare&utm_medium=affiliate&"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ed teams, starting at $15 per user per month. It also offers a free trial and a 14-day money-back guarantee.</p> <a href=\"https://www.greenhouse.io?utm_source=saaspare&utm_medi"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "Greenhouse offers a free plan. However, both platforms offer a free trial and a 14-day money-back guarantee.</p> </details> <details class=\"faq-item\"> <summary>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "ms, starting at $15 per user per month. Both platforms offer a free trial and a 14-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>Who Should Use Rippl"
+          "context": "nk:0\">&#10003;</span><span style=\"color:rgba(255,248,245,.78);font-size:.92rem\">30-day money-back guarantee on all paid plans</span></li><li style=\"display:flex;gap:.5rem;margin-bottom:.4"
         }
       ],
       "trust_state_bumped": false
@@ -1150,27 +559,6 @@
           "label": "money_back_guarantee",
           "snippet": "7-day money-back guarantee",
           "context": "etails class=\"faq-item\"><summary>Does Surfer SEO have a free trial?</summary><p>7-day money-back guarantee. We recommend using the full trial period to test your actual workflow, not a d"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "-cta\" id=\"sticky-cta\"> <span class=\"sticky-cta-text\">Try Surfer SEO free \u2014 7-day money-back guarantee.</span> <a href=\"/go/surfer-seo?utm_source=saaspare&utm_medium=affiliate&u"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/pipedrive-vs-close-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "es, you can switch from Close to Pipedrive. Pipedrive offers a free trial and a 14-day money-back guarantee, making it easy to try out their CRM software.</p> </details>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": ",255,.65);font-size:.92rem;line-height:1.8\">Pipedrive offers a free trial and a 14-day money-back guarantee, making it easy to try out their CRM software. Close also offers a free trial a"
         }
       ],
       "trust_state_bumped": false
