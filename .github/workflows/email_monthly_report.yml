@@ -1,0 +1,27 @@
+name: Monthly CEO Email Report
+
+on:
+  # 1st of month, 7am Brisbane (UTC+10) = last day of prev month 9pm UTC
+  # Using 1st at 9pm UTC which fires on 2nd at 7am Brisbane — close enough
+  schedule:
+    - cron: "0 21 1 * *"
+  workflow_dispatch:
+
+jobs:
+  send-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+
+      - name: Generate and send monthly email report
+        env:
+          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+          REPORT_TO:      ${{ secrets.REPORT_TO }}
+        run: |
+          python scripts/generate_email_report.py --mode monthly | python scripts/send_email_report.py

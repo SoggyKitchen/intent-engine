@@ -1,0 +1,26 @@
+name: Daily CEO Email Report
+
+on:
+  # 7am Brisbane (UTC+10) = 9pm UTC previous day
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+jobs:
+  send-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+
+      - name: Generate and send daily email report
+        env:
+          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+          REPORT_TO:      ${{ secrets.REPORT_TO }}
+        run: |
+          python scripts/generate_email_report.py --mode daily | python scripts/send_email_report.py
