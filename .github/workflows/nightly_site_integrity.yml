@@ -203,6 +203,13 @@ jobs:
       - name: OG images per vertical
         run: uv run python scripts/og_images.py
 
+      # 4i-ctr. CTR Optimizer — find pages ranking 8-20 with low CTR,
+      # rewrite <title> and <meta description> with power words + year + brackets.
+      # Uses data/gsc_export.csv if present, otherwise applies to known opportunity pages.
+      - name: CTR optimizer — rewrite weak titles and meta descriptions
+        run: uv run python scripts/wave23_ctr_optimizer.py
+        continue-on-error: true
+
       # 4j. Price Intelligence: snapshot 15 tracked vendors and detect diffs.
       - name: Price intelligence track
         run: uv run python scripts/track_pricing.py
@@ -254,6 +261,7 @@ jobs:
             site/sitemap.xml \
             site/_redirects \
             data/public_kpis.json \
+            data/ctr_optimizer_report.json \
             || true
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: nightly site integrity auto-fixes [skip ci]
@@ -263,6 +271,7 @@ jobs:
           - re-injected intent-weighted journey links
           - refreshed manual-review queue for risky factual claims
           - re-applied GA4 affiliate_click tracking to new pages
-          - SEO consolidation (canonical dedup)"
+          - SEO consolidation (canonical dedup)
+          - CTR optimizer: rewrote weak titles/metas on position 8-20 pages"
           git pull --rebase -X ours --autostash origin main
           git push
