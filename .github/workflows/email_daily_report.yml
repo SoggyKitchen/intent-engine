@@ -20,7 +20,7 @@ jobs:
       - name: Generate and send daily email report
         env:
           GMAIL_USER:     ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASSWORD }}
           REPORT_TO:      ${{ secrets.REPORT_TO }}
         run: |
           python scripts/generate_email_report.py --mode daily | python scripts/send_email_report.py
