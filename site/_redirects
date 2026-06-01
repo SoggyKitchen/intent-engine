@@ -250,3 +250,27 @@
 # Kajabi CJ: 30% commission, ~$100/sale
 /go/kajabi https://kajabi.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 
+
+
+# Wave 24 — CJ Hidden Gems (added 2026-06-01)
+# Proton — CJ Advertiser ID: 5227916
+# GET YOUR LINK: app.cj.com -> Links -> Get Links -> search "Proton"
+/go/protonvpn PLACEHOLDER_PROTON_CJ_LINK 302
+/go/protonmail PLACEHOLDER_PROTON_CJ_LINK 302
+/go/proton PLACEHOLDER_PROTON_CJ_LINK 302
+
+# GetResponse — CJ Advertiser ID: 3142111  ($100/lead EPC $31.63!)
+# GET YOUR LINK: app.cj.com -> Links -> search "GetResponse"
+/go/getresponse PLACEHOLDER_GETRESPONSE_CJ_LINK 302
+
+# Elementor — CJ Advertiser ID: 6798066 (45% commission!)
+# GET YOUR LINK: app.cj.com -> Links -> search "Elementor"
+/go/elementor PLACEHOLDER_ELEMENTOR_CJ_LINK 302
+
+# AWeber — CJ Advertiser ID: 5111249
+# GET YOUR LINK: app.cj.com -> Links -> search "AWeber"
+/go/aweber PLACEHOLDER_AWEBER_CJ_LINK 302
+
+# Parallels — CJ Advertiser ID: 2005415 (EPC $31.65)
+# GET YOUR LINK: app.cj.com -> Links -> search "Parallels"
+/go/parallels PLACEHOLDER_PARALLELS_CJ_LINK 302
