@@ -1,11 +1,11 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-01",
-  "titles_rewritten": 5,
-  "descs_rewritten": 11,
-  "dates_refreshed": 0,
+  "titles_rewritten": 2,
+  "descs_rewritten": 6,
+  "dates_refreshed": 1,
   "answers_added": 0,
-  "files_changed": 11,
+  "files_changed": 6,
   "files_scanned": 1403,
   "title_examples": [
     {
@@ -14,24 +14,9 @@
       "after": "1Password vs Bitwarden in 2026: Honest Verdict After We Tested Both"
     },
     {
-      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "Datadog Coupon Codes June 2026: Verified Discounts [15-30% Off]",
-      "after": "Datadog Coupon 2026 (Verified June 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "linear-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Linear Free Trial 2026: How to Get It [Step-by-Step Guide]",
-      "after": "Linear Free Trial 2026: How to Get the Full June 2026 Offer"
-    },
-    {
       "file": "protonvpn-coupon-code-promo-codes-2026-verified-discounts.html",
       "before": "ProtonVPN Coupon Codes June 2026: Verified Discounts [Up to 60% Off]",
       "after": "ProtonVPN Coupon 2026 (Verified June 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Ramp Pricing 2026: Every Plan Compared [Real Costs + Hidden Fees]",
-      "after": "Ramp Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
@@ -51,19 +36,19 @@
       "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     },
     {
-      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "Working Datadog coupon codes for June 2026. Annual plan savings, free trial extensions \u2014 all verified. No expired codes listed.",
-      "after": "Updated June 2026. Working Datadog coupon codes for June 2026. Annual plan savings, free trial extensions \u2014 all verified. No expired codes listed."
+      "file": "nordpass-vs-bitwarden-which-is-better-in-2026.html",
+      "before": "We tested Nordpass and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+      "after": "Updated June 2026. We tested Nordpass and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
     },
     {
-      "file": "does-notion-have-a-free-plan-2026-full-breakdown.html",
-      "before": "Yes \u2014 Notion's free plan in 2026 gives you unlimited pages but locks guests, API & history. Full breakdown: free vs Plus vs Business \u2014 updated June 2026.",
-      "after": "Updated June 2026. Yes \u2014 Notion's free plan in 2026 gives you unlimited pages but locks guests, API & history. Full breakdown: free vs Plus vs Business \u2014 updated\u2026"
+      "file": "protonvpn-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Working ProtonVPN coupon codes for June 2026. Annual plan saves up to 60% \u2014 verified and updated. No expired codes. Best deal: 2-year plan from $3.59/mo.",
+      "after": "Updated June 2026. Working ProtonVPN coupon codes for June 2026. Annual plan saves up to 60% \u2014 verified and updated. No expired codes. Best deal: 2-year plan\u2026"
     },
     {
-      "file": "does-sentry-have-a-free-plan-2026-full-breakdown.html",
-      "before": "Yes \u2014 Sentry free in 2026: 5K errors/month, 50 session replays. Full breakdown of limits, what triggers paid upgrades, and who should stay free forever.",
-      "after": "Updated June 2026. Yes \u2014 Sentry free in 2026: 5K errors/month, 50 session replays. Full breakdown of limits, what triggers paid upgrades, and who should stay\u2026"
+      "file": "semrush-vs-similarweb-which-is-better-in-2026.html",
+      "before": "We tested Semrush and Similarweb side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+      "after": "Updated June 2026. We tested Semrush and Similarweb side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
     }
   ],
   "indexnow": {
