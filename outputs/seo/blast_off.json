@@ -1,17 +1,32 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-01",
-  "titles_rewritten": 1,
-  "descs_rewritten": 10,
-  "dates_refreshed": 5,
-  "answers_added": 5,
-  "files_changed": 10,
-  "files_scanned": 1400,
+  "titles_rewritten": 4,
+  "descs_rewritten": 11,
+  "dates_refreshed": 1,
+  "answers_added": 0,
+  "files_changed": 11,
+  "files_scanned": 1401,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict After We Tested Both"
+    },
+    {
+      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Mixpanel Pricing 2026: Free vs Paid Plans [What You Actually Pay]",
+      "after": "Mixpanel Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "NordLayer Pricing 2026: Team & Business Plan Costs [Full Breakdown]",
+      "after": "NordLayer Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Ramp Pricing 2026: Plans, True Costs & Hidden Fees [Detailed Breakdown]",
+      "after": "Ramp Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
@@ -21,14 +36,14 @@
       "after": "Updated June 2026. We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
     },
     {
+      "file": "aws-vs-supabase-which-is-better-in-2026.html",
+      "before": "AWS vs Supabase compared in 2026: pricing, scalability, DX, and a clear winner for your stack. Real developer verdict \u2014 updated June 2026.",
+      "after": "Updated June 2026. AWS vs Supabase compared in 2026: pricing, scalability, DX, and a clear winner for your stack. Real developer verdict \u2014 updated June 2026\u2026"
+    },
+    {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated June 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
-    },
-    {
-      "file": "best-fiverr-alternatives-2026.html",
-      "before": "The best Fiverr alternatives in 2026 ranked \u2014 Upwork, Toptal, PeoplePerHour, 99designs, and more. Find a cheaper or better freelance marketplace.",
-      "after": "Updated June 2026. The best Fiverr alternatives in 2026 ranked \u2014 Upwork, Toptal, PeoplePerHour, 99designs, and more. Find a cheaper or better freelance\u2026"
     },
     {
       "file": "best-vpn-australia-2026.html",
@@ -36,14 +51,14 @@
       "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     },
     {
-      "file": "does-fiverr-have-a-free-plan-2026-full-breakdown.html",
-      "before": "Yes \u2014 Fiverr is free to join and browse. Here is exactly what is free, what costs money, and how buyer fees work on Fiverr in 2026.",
-      "after": "Updated June 2026. Yes \u2014 Fiverr is free to join and browse. Here is exactly what is free, what costs money, and how buyer fees work on Fiverr in 2026 Independent\u2026"
+      "file": "does-loom-have-a-free-plan-2026-full-breakdown.html",
+      "before": "Yes, Loom has a free plan in 2026 \u2014 but capped at 5 videos and 5-min clips. Here's exactly what you get free vs what requires a paid plan. Updated June 2026.",
+      "after": "Updated June 2026. Yes, Loom has a free plan in 2026 \u2014 but capped at 5 videos and 5-min clips. Here's exactly what you get free vs what requires a paid plan.\u2026"
     },
     {
-      "file": "fiverr-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Fiverr pricing in 2026: gig costs, service fees, Fiverr Pro prices, and Fiverr Business plan explained. No hidden costs.",
-      "after": "Updated June 2026. Fiverr pricing in 2026: gig costs, service fees, Fiverr Pro prices, and Fiverr Business plan explained. No hidden costs Real plans, hidden\u2026"
+      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Mixpanel pricing plans 2026: free tier limits, Growth vs Enterprise costs, hidden fees exposed. Real numbers from verified sources \u2014 updated June 2026.",
+      "after": "Updated June 2026. Mixpanel pricing plans 2026: free tier limits, Growth vs Enterprise costs, hidden fees exposed. Real numbers from verified sources \u2014 updated\u2026"
     }
   ],
   "indexnow": {
