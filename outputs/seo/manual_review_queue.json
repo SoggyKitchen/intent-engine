@@ -1,12 +1,23 @@
 {
-  "generated_at_utc": "2026-06-01T09:14:53+00:00",
+  "generated_at_utc": "2026-06-01T10:41:04+00:00",
   "mode": "apply",
-  "pages_flagged": 33,
+  "pages_flagged": 35,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
   ],
   "pages": [
+    {
+      "path": "site/pages/fiverr-vs-upwork-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "tted pros available</td><td>&#10003; Expert-vetted tier</td></tr> <tr><td>Money-back guarantee</td><td>&#10003; Yes</td><td>&#10003; Yes (disputes)</td></tr> </tbody> <"
+        }
+      ],
+      "trust_state_bumped": false
+    },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
       "claims": [
@@ -474,6 +485,17 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "<div class=\"ps reveal\"> <div class=\"ps-callout\"> <p><strong>30-day money-back guarantee.</strong> Stack Audit and Stack Concierge: if we cannot identify at least 3\u00d7 yo"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/fiverr-review-2026-is-it-worth-it-honest-verdict.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "gories</li> <li>Fiverr Pro for vetted top-tier freelancers</li> <li>Money-back guarantee on disputes</li> <li>Fiverr Business for team accounts</li> <li>AI-"
         }
       ],
       "trust_state_bumped": false
