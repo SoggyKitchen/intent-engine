@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-01T11:08:19+00:00",
+  "generated_at_utc": "2026-06-01T21:16:38+00:00",
   "mode": "apply",
-  "pages_flagged": 35,
+  "pages_flagged": 36,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -149,6 +149,17 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "arr;</a><p style=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0\">30-day money-back guarantee \u2014 full refund if not satisfied</p><p style=\"font-size:.72rem;color:rgba(255,248"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "tely and lets you test the core editor before upgrading. Paid plans come with a 30-day money-back guarantee.</p> </div> </details> <details class=\"faq-item\" ite"
         }
       ],
       "trust_state_bumped": false

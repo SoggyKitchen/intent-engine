@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-01T11:08:27.901218+00:00",
+  "generated_at": "2026-06-01T21:16:47.134810+00:00",
   "stats": {
-    "sitemap_urls": 1388,
-    "sitemap_with_lastmod": 1388,
-    "total_pages": 1451,
-    "indexable_pages": 1392,
+    "sitemap_urls": 1389,
+    "sitemap_with_lastmod": 1389,
+    "total_pages": 1452,
+    "indexable_pages": 1393,
     "title_over_70": 127,
-    "soft": 7,
-    "money_pages": 1147,
+    "soft": 6,
+    "money_pages": 1148,
     "desc_over_165": 6,
     "duplicate_titles": 2,
-    "duplicate_descs": 2
+    "duplicate_descs": 1
   },
   "hard_failures": [],
   "soft_issues": [
@@ -19,8 +19,7 @@
     "site/editorial-policy.html: title <30 chars (27)",
     "duplicate title (2 pages): \"Shopify Coupon 2026 (Verified June 2026) — Real Working Code\" — ['site/pages/shopify-discount-code-promo-codes-2026-verified-deals.html', 'site/pages/shopify-coupon-code-promo-codes-2026-verified-discounts.html']",
     "duplicate title (2 pages): \"Copy.ai Coupon 2026 (Verified June 2026) — Real Working Code\" — ['site/pages/copy-ai-coupon-2026-discount-codes-promo.html', 'site/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts.html']",
-    "duplicate description (5 pages): \"Updated 2026 guide from SaaSpare — expert analysis, real pri\" — ['site/contact.html', 'site/about.html', 'site/shortlist.html']",
-    "duplicate description (2 pages): \"Updated June 2026. Updated May 2026. The best tools ranked f\" — ['site/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025.html', 'site/pages/best-devops-configuration-drift-detection-tools-in-2025.html']"
+    "duplicate description (5 pages): \"Updated 2026 guide from SaaSpare — expert analysis, real pri\" — ['site/contact.html', 'site/about.html', 'site/shortlist.html']"
   ],
-  "soft_issues_total": 7
+  "soft_issues_total": 6
 }
