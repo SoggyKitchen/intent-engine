@@ -1,9 +1,9 @@
 {
-  "total_pages": 1335,
-  "updated": 1335,
+  "total_pages": 1342,
+  "updated": 1342,
   "skipped": 0,
-  "orphans_before": 65,
-  "orphans_after": 62,
+  "orphans_before": 71,
+  "orphans_after": 56,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/twingate-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/aws-vs-linode-which-is-better-in-2026",
-        "/pages/spyfu-vs-frase-io-which-is-better-in-2026"
+        "/pages/nordlayer-vs-tenable-which-is-better-in-2026",
+        "/pages/pinecone-vs-weaviate-which-is-better-in-2026"
       ]
     },
     {
@@ -21,18 +21,18 @@
         "/pages/okta-vs-tenable-which-is-better-in-2026",
         "/pages/nordpass-vs-sticky-password-which-is-better-in-2026",
         "/pages/crowdstrike-vs-tenable-which-is-better-in-2026",
-        "/pages/moz-pro-vs-clearscope-which-is-better-in-2026",
-        "/pages/zoho-crm-vs-close-which-is-better-in-2026"
+        "/pages/chargebee-vs-bold-commerce-which-is-better-in-2026",
+        "/pages/mixpanel-vs-power-bi-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordpass-vs-roboform-which-is-better-in-2026",
-        "/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026",
-        "/pages/tresorit-vs-dropbox-which-is-better-in-2026",
-        "/pages/impact-com-vs-refersion-which-is-better-in-2026",
-        "/pages/twingate-vs-zscaler-which-is-better-in-2026"
+        "/pages/nordlayer-vs-qualys-which-is-better-in-2026",
+        "/pages/bitwarden-vs-sticky-password-which-is-better-in-2026",
+        "/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/cisco-anyconnect-vs-wireguard-which-is-better-in-2026",
+        "/pages/pinecone-vs-openai-api-which-is-better-in-2026"
       ]
     }
   ]
