@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-31T22:05:11.723112+00:00",
+  "generated_at": "2026-06-01T08:44:35.997420+00:00",
   "stats": {
-    "sitemap_urls": 1371,
-    "sitemap_with_lastmod": 1371,
-    "total_pages": 1433,
-    "indexable_pages": 1375,
+    "sitemap_urls": 1375,
+    "sitemap_with_lastmod": 1375,
+    "total_pages": 1437,
+    "indexable_pages": 1379,
     "title_over_70": 129,
     "soft": 7,
-    "money_pages": 1133,
+    "money_pages": 1137,
     "desc_over_165": 6,
     "duplicate_titles": 2,
     "duplicate_descs": 2
@@ -17,10 +17,10 @@
     "site/corrections.html: title <30 chars (29)",
     "site/corrections.html: meta desc <80 chars (78)",
     "site/editorial-policy.html: title <30 chars (27)",
-    "duplicate title (2 pages): \"Shopify Coupon 2026 (Verified May 2026) — Real Working Codes\" — ['site/pages/shopify-discount-code-promo-codes-2026-verified-deals.html', 'site/pages/shopify-coupon-code-promo-codes-2026-verified-discounts.html']",
-    "duplicate title (2 pages): \"Copy.ai Coupon 2026 (Verified May 2026) — Real Working Codes\" — ['site/pages/copy-ai-coupon-2026-discount-codes-promo.html', 'site/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts.html']",
+    "duplicate title (2 pages): \"Shopify Coupon 2026 (Verified June 2026) — Real Working Code\" — ['site/pages/shopify-discount-code-promo-codes-2026-verified-deals.html', 'site/pages/shopify-coupon-code-promo-codes-2026-verified-discounts.html']",
+    "duplicate title (2 pages): \"Copy.ai Coupon 2026 (Verified June 2026) — Real Working Code\" — ['site/pages/copy-ai-coupon-2026-discount-codes-promo.html', 'site/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts.html']",
     "duplicate description (5 pages): \"Updated 2026 guide from SaaSpare — expert analysis, real pri\" — ['site/contact.html', 'site/about.html', 'site/shortlist.html']",
-    "duplicate description (2 pages): \"Updated May 2026. The best tools ranked for 2026. We compare\" — ['site/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025.html', 'site/pages/best-devops-configuration-drift-detection-tools-in-2025.html']"
+    "duplicate description (2 pages): \"Updated June 2026. Updated May 2026. The best tools ranked f\" — ['site/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025.html', 'site/pages/best-devops-configuration-drift-detection-tools-in-2025.html']"
   ],
   "soft_issues_total": 7
 }
