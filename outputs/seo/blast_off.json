@@ -1,12 +1,12 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-01",
-  "titles_rewritten": 4,
-  "descs_rewritten": 10,
-  "dates_refreshed": 1,
-  "answers_added": 1,
+  "titles_rewritten": 5,
+  "descs_rewritten": 11,
+  "dates_refreshed": 0,
+  "answers_added": 0,
   "files_changed": 11,
-  "files_scanned": 1402,
+  "files_scanned": 1403,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
@@ -14,18 +14,23 @@
       "after": "1Password vs Bitwarden in 2026: Honest Verdict After We Tested Both"
     },
     {
-      "file": "elementor-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Elementor Pricing 2026: Essential vs Advanced vs Expert \u2014 What You Actually Pay",
-      "after": "Elementor Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
+      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Datadog Coupon Codes June 2026: Verified Discounts [15-30% Off]",
+      "after": "Datadog Coupon 2026 (Verified June 2026) \u2014 Real Working Codes"
     },
     {
-      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free vs Growth vs Enterprise \u2014 What You Actually Pay",
-      "after": "Mixpanel Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
+      "file": "linear-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Linear Free Trial 2026: How to Get It [Step-by-Step Guide]",
+      "after": "Linear Free Trial 2026: How to Get the Full June 2026 Offer"
+    },
+    {
+      "file": "protonvpn-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "ProtonVPN Coupon Codes June 2026: Verified Discounts [Up to 60% Off]",
+      "after": "ProtonVPN Coupon 2026 (Verified June 2026) \u2014 Real Working Codes"
     },
     {
       "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Ramp Pricing 2026: All Plans & June Costs \u2014 What You Actually Pay",
+      "before": "Ramp Pricing 2026: Every Plan Compared [Real Costs + Hidden Fees]",
       "after": "Ramp Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
@@ -34,11 +39,6 @@
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
       "after": "Updated June 2026. We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
-    },
-    {
-      "file": "best-devops-configuration-drift-detection-tools-in-2025.html",
-      "before": "8 configuration drift detection tools ranked for 2026: Puppet, Chef, Ansible, Terraform & more. Pricing, agent support, and cloud-native integrations compared.",
-      "after": "Updated June 2026. 8 configuration drift detection tools ranked for 2026: Puppet, Chef, Ansible, Terraform & more. Pricing, agent support, and cloud-native\u2026"
     },
     {
       "file": "best-ecommerce-platforms-2026.html",
@@ -51,14 +51,19 @@
       "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     },
     {
+      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Working Datadog coupon codes for June 2026. Annual plan savings, free trial extensions \u2014 all verified. No expired codes listed.",
+      "after": "Updated June 2026. Working Datadog coupon codes for June 2026. Annual plan savings, free trial extensions \u2014 all verified. No expired codes listed."
+    },
+    {
       "file": "does-notion-have-a-free-plan-2026-full-breakdown.html",
-      "before": "Yes \u2014 Notion's free plan in 2026 gives you unlimited pages but blocks guests, API, and version history. Full breakdown of free vs Plus vs Business with an honest verdict.",
-      "after": "Updated June 2026. Yes \u2014 Notion's free plan in 2026 gives you unlimited pages but blocks guests, API, and version history. Full breakdown of free vs Plus vs\u2026"
+      "before": "Yes \u2014 Notion's free plan in 2026 gives you unlimited pages but locks guests, API & history. Full breakdown: free vs Plus vs Business \u2014 updated June 2026.",
+      "after": "Updated June 2026. Yes \u2014 Notion's free plan in 2026 gives you unlimited pages but locks guests, API & history. Full breakdown: free vs Plus vs Business \u2014 updated\u2026"
     },
     {
       "file": "does-sentry-have-a-free-plan-2026-full-breakdown.html",
-      "before": "Yes \u2014 Sentry's free plan in 2026 includes 5K errors/month and 50 session replays. Full breakdown: free limits, what triggers upgrades, and cheaper alternatives.",
-      "after": "Updated June 2026. Yes \u2014 Sentry's free plan in 2026 includes 5K errors/month and 50 session replays. Full breakdown: free limits, what triggers upgrades, and\u2026"
+      "before": "Yes \u2014 Sentry free in 2026: 5K errors/month, 50 session replays. Full breakdown of limits, what triggers paid upgrades, and who should stay free forever.",
+      "after": "Updated June 2026. Yes \u2014 Sentry free in 2026: 5K errors/month, 50 session replays. Full breakdown of limits, what triggers paid upgrades, and who should stay\u2026"
     }
   ],
   "indexnow": {

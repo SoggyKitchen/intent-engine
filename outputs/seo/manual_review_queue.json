@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-01T21:16:38+00:00",
+  "generated_at_utc": "2026-06-01T21:43:27+00:00",
   "mode": "apply",
-  "pages_flagged": 36,
+  "pages_flagged": 37,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -548,6 +548,42 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/protonvpn-coupon-code-promo-codes-2026-verified-discounts.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "Pick</h2> <p>Get ProtonVPN's best 2026 price \u2014 2-year plan, up to 60% off, 30-day money-back guarantee.</p> <a class=\"cta-btn\" href=\"/go/protonvpn?utm_source=saaspare&utm_medium="
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "s\"><h4>Pros</h4><ul><li>Up to 60% off with 2-year plan \u2014 no code needed</li><li>30-day money-back guarantee on all paid plans</li><li>Free forever plan (unlimited data, 1 device)</li><li>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ghtly lower 2-year price</li><li>Larger server network (6,300+ servers)</li><li>30-day money-back guarantee</li></ul></div> <div class=\"cons\"><h4>Cons</h4><ul><li>No free plan \u2014 pai"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "iscount in 2026 is committing to the 2-year plan \u2014 you save up to 60% and get a 30-day money-back guarantee as a safety net. Any website claiming a working \"promo code\" or \"coupon code\" f"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "r-free plan with unlimited data and 1 device connection. Paid plans come with a 30-day money-back guarantee, which effectively functions as a risk-free trial.</p> </details> <det"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "\"> <h2>Ready to get the best deal?</h2> <p>2-year plan \u2014 up to 60% off, 30-day money-back guarantee, no promo code needed.</p> <a class=\"cta-btn\" href=\"/go/protonvpn?utm_sourc"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/teachable-review-2026-is-it-worth-it-honest-verdict.html",
