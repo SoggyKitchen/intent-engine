@@ -449,6 +449,11 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
         "SaaS comparisons, SaaS pricing, software reviews, free trials, promo codes, alternatives, SaaSpare",
         quote=True,
     )
+    ga_script = (
+        f'<script async src="https://www.googletagmanager.com/gtag/js?id={ga_id}"></script>'
+        f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}"
+        f"gtag('js',new Date());gtag('config','{ga_id}');</script>"
+    ) if ga_id else ""
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -544,7 +549,7 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
     .trust-actions{{grid-template-columns:1fr}}
   }}
 </style>
-{"<script async src=\"https://www.googletagmanager.com/gtag/js?id=" + ga_id + "\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','" + ga_id + "');</script>" if ga_id else ""}
+{ga_script}
 </head>
 <body>
 <nav id="nav">
