@@ -5,7 +5,7 @@ SaaSpare.org is an independent B2B SaaS comparison and affiliate site.
 - **Owner:** Kaylan von Papen
 - **Repo:** SoggyKitchen/intent-engine
 - **Deploy:** Cloudflare Pages (auto-deploys on push to main)
-- **GA4:** G-RLYVYV8WQJ | **CJ Publisher ID:** 101733230 | **Impact Publisher ID:** 7269601
+- **GA4:** G-RLYVYV8WQJ | **CJ Publisher ID:** 101733230 | **Impact Publisher ID:** 7269601 | **Awin:** PENDING (applied 2026-06-01)
 - **ABN:** 20 602 197 525
 
 ## KPI Priority
@@ -26,17 +26,26 @@ NordVPN `/go/nordvpn` | Surfshark `/go/surfshark` | Sucuri `/go/sucuri` |
 NordPass `/go/nordpass` | Contabo `/go/contabo` | HostPapa `/go/hostpapa` |
 Semrush `/go/semrush` | Shopify `/go/shopify` | ElevenLabs `/go/elevenlabs`
 
-### Pending approval (pages live, $0 earned)
-| Program | Route | Pages | Commission |
-|---------|-------|-------|-----------|
-| HubSpot | /go/hubspot-crm | 39 | $250-1000/sale |
-| 1Password | /go/1password-trial | 37 | $30-60/sale |
-| ClickUp | /go/clickup-trial | 27 | $36-150/sale |
-| ActiveCampaign | /go/activecampaign-trial | 20 | $85/sale |
-| Monday.com | /go/monday | 20 | $150/sale |
-| FreshBooks | /go/freshbooks-trial | 19 | $200/sale |
-| Xero | /go/xero-trial | 18 | varies |
-| Dashlane | /go/dashlane-trial | 14 | $25-50/sale |
+### CJ active — need deep links (get from app.cj.com → Links → Get Links)
+| Program | CJ Advertiser ID | Commission | EPC | Status |
+|---------|-----------------|------------|-----|--------|
+| GetResponse | 3142111 | $100/lead | $31.63 | NEED CJ LINK |
+| Proton/ProtonVPN | 5227916 | 30-100% | $29.91 | NEED CJ LINK |
+| Elementor | 6798066 | 45% | $7.55 | NEED CJ LINK |
+| AWeber | 5111249 | $10-15/sale | - | NEED CJ LINK |
+| Parallels | 2005415 | 10% | $31.65 | NEED CJ LINK |
+
+### Pending network approval (pages live, $0 earned)
+| Program | Route | Pages | Commission | Network |
+|---------|-------|-------|-----------|---------|
+| HubSpot | /go/hubspot-crm | 39 | $250-1000/sale | Impact.com PENDING |
+| 1Password | /go/1password-trial | 37 | $30-60/sale | Impact.com PENDING |
+| ClickUp | /go/clickup-trial | 27 | $36-150/sale | PartnerStack LOCKED |
+| ActiveCampaign | /go/activecampaign-trial | 20 | $85/sale | PartnerStack LOCKED |
+| Monday.com | /go/monday | 20 | $150/sale | PartnerStack LOCKED |
+| FreshBooks | /go/freshbooks-trial | 19 | $200/sale | Awin PENDING (applied 2026-06-01) |
+| Xero | /go/xero-trial | 18 | varies | Direct (applied 2026-06-01) |
+| Dashlane | /go/dashlane-trial | 14 | $25-50/sale | PartnerStack LOCKED |
 
 ## Commit Message Prefixes
 `ceo-daily:` | `revenue-hunter:` | `sunday-maximizer:` | `wave-N:` | `fix:` | `feat:`
