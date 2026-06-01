@@ -14,32 +14,98 @@
         "Commission Factory verification file"
       ],
       "fixed": [
-        "body.sp-bg scroll/click freeze — CSS override + nightly CI auto-heal added",
+        "body.sp-bg scroll/click freeze \u2014 CSS override + nightly CI auto-heal added",
         "468 bare JSON-LD blocks wrapped in proper script tags",
         "4 direct vendor URL leaks fixed to /go/ tracked routes",
         "Smith Elly replaced with Kaylan von Papen across 1,385 files",
         "Dark background inline style on 1,377 pages",
         "Real SaaSpare SVG nav deployed to 1,372 inner pages",
-        "154 pages missing Article schema — injected",
+        "154 pages missing Article schema \u2014 injected",
         "Author page fixed: scrollable, clickable, professional design"
       ],
       "affiliate_status": {
-        "earning": ["NordVPN", "Surfshark", "Sucuri", "NordPass", "Contabo", "HostPapa", "Semrush", "Shopify", "ElevenLabs"],
+        "earning": [
+          "NordVPN",
+          "Surfshark",
+          "Sucuri",
+          "NordPass",
+          "Contabo",
+          "HostPapa",
+          "Semrush",
+          "Shopify",
+          "ElevenLabs"
+        ],
         "pending_approval": {
-          "HubSpot": {"pages": 39, "commission": "$250-1000/sale", "network": "Impact.com", "status": "account PENDING activation (created 2026-05-30)", "account_sid": "IRBMm2caU6247359133kQhTFKSNLy2QEa1"},
-          "ClickUp": {"pages": 27, "commission": "$36-150/sale", "network": "Direct", "status": "Applied 2026-05-31", "url": "clickup.com/affiliates"},
-          "ActiveCampaign": {"pages": 20, "commission": "$85/sale", "network": "Direct", "status": "Applied 2026-05-31 with ABN 20602197525"},
-          "1Password": {"pages": 37, "commission": "$30-60/sale", "network": "PartnerStack", "status": "support ticket sent - email confirmation stuck"},
-          "Monday.com": {"pages": 20, "commission": "$150/sale", "network": "Impact.com", "status": "pending Impact account activation"},
-          "FreshBooks": {"pages": 19, "commission": "$200/sale", "network": "CJ/Direct", "status": "Applied 2026-05-31"},
-          "Xero": {"pages": 18, "commission": "varies", "network": "Direct", "status": "TODO"},
-          "Dashlane": {"pages": 14, "commission": "$25-50/sale", "network": "CJ", "status": "TODO"}
+          "HubSpot": {
+            "pages": 39,
+            "commission": "$250-1000/sale",
+            "network": "Impact.com",
+            "status": "account PENDING activation (created 2026-05-30)",
+            "account_sid": "IRBMm2caU6247359133kQhTFKSNLy2QEa1"
+          },
+          "ClickUp": {
+            "pages": 27,
+            "commission": "$36-150/sale",
+            "network": "Direct",
+            "status": "Applied 2026-05-31",
+            "url": "clickup.com/affiliates"
+          },
+          "ActiveCampaign": {
+            "pages": 20,
+            "commission": "$85/sale",
+            "network": "Direct",
+            "status": "Applied 2026-05-31 with ABN 20602197525"
+          },
+          "1Password": {
+            "pages": 37,
+            "commission": "$30-60/sale",
+            "network": "PartnerStack",
+            "status": "support ticket sent - email confirmation stuck"
+          },
+          "Monday.com": {
+            "pages": 20,
+            "commission": "$150/sale",
+            "network": "Impact.com",
+            "status": "pending Impact account activation"
+          },
+          "FreshBooks": {
+            "pages": 19,
+            "commission": "$200/sale",
+            "network": "CJ/Direct",
+            "status": "Applied 2026-05-31"
+          },
+          "Xero": {
+            "pages": 18,
+            "commission": "varies",
+            "network": "Direct",
+            "status": "TODO"
+          },
+          "Dashlane": {
+            "pages": 14,
+            "commission": "$25-50/sale",
+            "network": "CJ",
+            "status": "TODO"
+          }
         },
         "networks": {
-          "CJ_Affiliate": {"publisher_id": "101733230", "status": "approved"},
-          "Impact_com": {"publisher_id": "7269601", "account_sid": "IRBMm2caU6247359133kQhTFKSNLy2QEa1", "status": "PENDING_ACTIVATION"},
-          "PartnerStack": {"email": "partnerships@saaspare.org", "status": "support_ticket_open"},
-          "CommissionFactory": {"status": "verification_in_progress", "abn": "20602197525", "meta_tag": "a61c4c0d2e804b62b51e14733a52571a"}
+          "CJ_Affiliate": {
+            "publisher_id": "101733230",
+            "status": "approved"
+          },
+          "Impact_com": {
+            "publisher_id": "7269601",
+            "account_sid": "IRBMm2caU6247359133kQhTFKSNLy2QEa1",
+            "status": "PENDING_ACTIVATION"
+          },
+          "PartnerStack": {
+            "email": "partnerships@saaspare.org",
+            "status": "support_ticket_open"
+          },
+          "CommissionFactory": {
+            "status": "verification_in_progress",
+            "abn": "20602197525",
+            "meta_tag": "a61c4c0d2e804b62b51e14733a52571a"
+          }
         }
       },
       "site_stats": {
@@ -55,14 +121,14 @@
         "tests": "57/57 passing"
       },
       "routines_live": [
-        "SaaSpare Daily CEO Review — 7am Brisbane daily (trig_01FCDNuqeXEivnZ1LJvTyugK)",
-        "SaaSpare Revenue Hunter — 7:30am Brisbane daily (trig_01U3FBGZ1hcxNegCd5wiFZhU)",
-        "SaaSpare Sunday Profit Maximizer — 9am Brisbane Sundays (trig_01Ag9J9J4uq5pgLqKqfYTyPL)"
+        "SaaSpare Daily CEO Review \u2014 7am Brisbane daily (trig_01FCDNuqeXEivnZ1LJvTyugK)",
+        "SaaSpare Revenue Hunter \u2014 7:30am Brisbane daily (trig_01U3FBGZ1hcxNegCd5wiFZhU)",
+        "SaaSpare Sunday Profit Maximizer \u2014 9am Brisbane Sundays (trig_01Ag9J9J4uq5pgLqKqfYTyPL)"
       ],
       "key_decisions": [
-        "Forex bot archived — 100% focus on SaaSpare",
+        "Forex bot archived \u2014 100% focus on SaaSpare",
         "ABN registered: 20 602 197 525 (sole trader, website design)",
-        "No push-to-main gate — full CEO operational authority",
+        "No push-to-main gate \u2014 full CEO operational authority",
         "3 autonomous Claude Code routines deployed"
       ],
       "estimated_monthly_revenue_lost": "$2700-$6600/month from untracked programs",
@@ -75,6 +141,18 @@
         "Apply to Xero direct affiliate program",
         "Apply to Dashlane on CJ Affiliate"
       ]
+    }
+  ],
+  "affiliate_approvals": [
+    {
+      "program": "AWeber",
+      "network": "CJ",
+      "advertiser_id": "5111249",
+      "date": "2026-05-13",
+      "commission": "up to $300/referred account (base $10)",
+      "cookie": "90 days",
+      "status": "APPROVED \u2014 need CJ deep link from app.cj.com",
+      "note": "Existing /go/aweber route uses kqzyfj.com CJ link (may be valid)"
     }
   ]
 }
