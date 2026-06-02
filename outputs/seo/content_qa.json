@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-02T21:20:22.672185+00:00",
+  "generated_at": "2026-06-02T21:45:47.196655+00:00",
   "stats": {
-    "sitemap_urls": 1393,
-    "sitemap_with_lastmod": 1393,
-    "total_pages": 1456,
-    "indexable_pages": 1397,
-    "title_over_70": 128,
+    "sitemap_urls": 1394,
+    "sitemap_with_lastmod": 1394,
+    "total_pages": 1457,
+    "indexable_pages": 1398,
+    "title_over_70": 133,
     "soft": 6,
-    "money_pages": 1152,
-    "desc_over_165": 6,
+    "money_pages": 1153,
+    "desc_over_165": 8,
     "duplicate_titles": 2,
     "duplicate_descs": 1
   },
