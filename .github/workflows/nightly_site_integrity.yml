@@ -203,6 +203,18 @@ jobs:
       - name: OG images per vertical
         run: uv run python scripts/og_images.py
 
+      # 4i-nav. Universal nav — ensure ALL pages have the correct animated SVG nav.
+      # Fixes the bracket/black-bar glitch, removes sp-bg divs.
+      - name: Universal nav consistency
+        run: uv run python scripts/fix_universal_nav.py
+        continue-on-error: true
+
+      # 4i-ui. Inject saaspare-ui.css into any pages missing it.
+      # Without this, engine-generated pages show as plain text (no card styles).
+      - name: Inject saaspare-ui.css into pages missing it
+        run: uv run python scripts/fix_inject_ui_css.py
+        continue-on-error: true
+
       # 4i-ctr. CTR Optimizer — find pages ranking 8-20 with low CTR,
       # rewrite <title> and <meta description> with power words + year + brackets.
       # Uses data/gsc_export.csv if present, otherwise applies to known opportunity pages.

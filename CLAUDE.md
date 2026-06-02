@@ -12,12 +12,16 @@ SaaSpare.org is an independent B2B SaaS comparison and affiliate site.
 Revenue → Traffic → Rankings → Conversion → Trust → Technical → Polish
 
 ## Design Rules (Critical — violations break the site)
-1. `<body style="background:#050407;color:rgba(255,248,245,.88)">` — NO `class="sp-bg"` on body (causes scroll/click freeze)
+1. `<body style="background:#050407;color:rgba(255,248,245,.88)">` — NO `class="sp-bg"` on body
 2. JSON-LD must be in `<script type="application/ld+json">` tags — bare JSON renders as visible text
-3. Nav must use the real SVG logo (red/white S mark), not `class="sp-nav"` placeholder
+3. Nav: use `<nav id="sp-nav">` with the animated SVG logo from fix_universal_nav.py — NEVER use `class="sp-nav"` or `class="sp-topnav"`
 4. Always run `uv run pytest -q` before pushing — must show 57 passed
-5. CSS: `/assets/saaspare-v2.css` + `/assets/motion.css` + `/assets/motion.js`
+5. CSS on every page (ALL THREE required):
+   - `/assets/saaspare-v2.css`
+   - `/assets/saaspare-ui.css`  ← REQUIRED — without this cards/pricing/scores show as plain text
+   - `/assets/motion.css`
 6. Author on all pages: Kaylan von Papen — `/authors/kaylan-von-papen`
+7. After building pages, run: `uv run python scripts/fix_universal_nav.py` + `uv run python scripts/fix_inject_ui_css.py`
 
 ## Affiliate Programs
 
