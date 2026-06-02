@@ -2,10 +2,10 @@
   "current_month": "June 2026",
   "today": "2026-06-02",
   "titles_rewritten": 1,
-  "descs_rewritten": 8,
-  "dates_refreshed": 1273,
-  "answers_added": 2,
-  "files_changed": 1273,
+  "descs_rewritten": 5,
+  "dates_refreshed": 0,
+  "answers_added": 0,
+  "files_changed": 5,
   "files_scanned": 1405,
   "title_examples": [
     {
@@ -26,24 +26,19 @@
       "after": "Updated June 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
     },
     {
-      "file": "best-hubspot-alternatives-in-2026-free-paid.html",
-      "before": "The best HubSpot alternatives in 2026 \u2014 ranked by price, features, and who they suit. Includes free options, CRM-only tools, and platforms that beat HubSpot on specific use cases. Updated June 2026.",
-      "after": "Updated June 2026. The best HubSpot alternatives in 2026 \u2014 ranked by price, features, and who they suit. Includes free options, CRM-only tools, and platforms\u2026"
-    },
-    {
       "file": "best-vpn-australia-2026.html",
       "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     },
     {
-      "file": "crm-vs-marketing-automation-tools-buyer-guide-2026.html",
-      "before": "CRM vs marketing automation \u2014 what's the real difference, do you need both, and which tools do each job best in 2026? Honest buyer's guide with pricing comparisons.",
-      "after": "Updated June 2026. CRM vs marketing automation \u2014 what's the real difference, do you need both, and which tools do each job best in 2026? Honest buyer's guide\u2026"
+      "file": "nordpass-vs-bitwarden-which-is-better-in-2026.html",
+      "before": "We tested Nordpass and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+      "after": "Updated June 2026. We tested Nordpass and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
     },
     {
-      "file": "how-to-evaluate-hubspot-alternatives-for-saas-teams-2026.html",
-      "before": "A practical framework for evaluating HubSpot alternatives in 2026: 7 criteria that matter, how to score each tool, and which alternatives win on price, features, and fit for SaaS teams.",
-      "after": "Updated June 2026. A practical framework for evaluating HubSpot alternatives in 2026: 7 criteria that matter, how to score each tool, and which alternatives win\u2026"
+      "file": "semrush-vs-similarweb-which-is-better-in-2026.html",
+      "before": "We tested Semrush and Similarweb side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+      "after": "Updated June 2026. We tested Semrush and Similarweb side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
     }
   ],
   "indexnow": {
