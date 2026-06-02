@@ -1,12 +1,23 @@
 {
-  "generated_at_utc": "2026-06-01T09:14:53+00:00",
+  "generated_at_utc": "2026-06-02T08:05:21+00:00",
   "mode": "apply",
-  "pages_flagged": 33,
+  "pages_flagged": 37,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
   ],
   "pages": [
+    {
+      "path": "site/pages/fiverr-vs-upwork-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "tted pros available</td><td>&#10003; Expert-vetted tier</td></tr> <tr><td>Money-back guarantee</td><td>&#10003; Yes</td><td>&#10003; Yes (disputes)</td></tr> </tbody> <"
+        }
+      ],
+      "trust_state_bumped": false
+    },
     {
       "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
       "claims": [
@@ -138,6 +149,17 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "arr;</a><p style=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0\">30-day money-back guarantee \u2014 full refund if not satisfied</p><p style=\"font-size:.72rem;color:rgba(255,248"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "tely and lets you test the core editor before upgrading. Paid plans come with a 30-day money-back guarantee.</p> </div> </details> <details class=\"faq-item\" ite"
         }
       ],
       "trust_state_bumped": false
@@ -479,6 +501,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/fiverr-review-2026-is-it-worth-it-honest-verdict.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "gories</li> <li>Fiverr Pro for vetted top-tier freelancers</li> <li>Money-back guarantee on disputes</li> <li>Fiverr Business for team accounts</li> <li>AI-"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
       "path": "site/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work.html",
       "claims": [
         {
@@ -512,6 +545,42 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "<p style=\"color:rgba(255,248,245,.58);font-size:.9rem;margin-bottom:1.25rem\">30-day money-back guarantee + 7-day free trial on iOS and Android</p> <a href=\"/go/surfshark\" target=\"_"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/protonvpn-coupon-code-promo-codes-2026-verified-discounts.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "(255,255,255,.6)\">Get ProtonVPN's best 2026 price \u2014 2-year plan, up to 60% off, 30-day money-back guarantee. No code needed.</p> <a class=\"cta-btn\" href=\"/go/protonvpn?utm_source=saas"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "s\"><h4>Pros</h4><ul><li>Up to 60% off with 2-year plan \u2014 no code needed</li><li>30-day money-back guarantee on all paid plans</li><li>Free forever plan (unlimited data, 1 device)</li><li>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "y lower 2-year price ($3.09/mo)</li><li>6,300+ servers in 111 countries</li><li>30-day money-back guarantee</li></ul></div> <div class=\"cons\"><h4>Cons</h4><ul><li>No free plan \u2014 p"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "iscount in 2026 is committing to the 2-year plan \u2014 you save up to 60% and get a 30-day money-back guarantee as a safety net. Any website claiming a working \"promo code\" for ProtonVPN is r"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "r-free plan with unlimited data and 1 device connection. Paid plans come with a 30-day money-back guarantee, which effectively functions as a risk-free trial.</p> </details> <deta"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "al?</h2> <p style=\"color:rgba(255,255,255,.6)\">2-year plan \u2014 up to 60% off, 30-day money-back guarantee, no promo code needed.</p> <a class=\"cta-btn\" href=\"/go/protonvpn?utm_sourc"
         }
       ],
       "trust_state_bumped": false
