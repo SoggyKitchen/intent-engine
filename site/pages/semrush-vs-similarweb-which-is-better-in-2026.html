@@ -111,6 +111,118 @@ nav.sp-topnav{display:none!important}
   },{passive:true});
 })();
 </script>
+<style id="sp-page-upgrade">
+/* ── Page upgrade: better visual design for all pages ───────────────────── */
+.sp-main,.main-content,main{max-width:860px;margin:0 auto;padding:0 1.5rem 4rem}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;letter-spacing:-.03em;
+   line-height:1.15;margin:1.5rem 0 1rem;color:rgba(255,248,245,.95)}
+h2{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;margin:2rem 0 .75rem;
+   color:rgba(255,248,245,.9);border-bottom:1px solid rgba(255,255,255,.06);
+   padding-bottom:.5rem}
+h3{font-size:1.05rem;font-weight:700;margin:1.5rem 0 .5rem;color:rgba(255,248,245,.85)}
+p,li{line-height:1.75;color:rgba(255,248,245,.78);font-size:.96rem}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:.75rem 0 1.5rem;font-size:.8rem;
+      color:rgba(255,248,245,.45)}
+.meta a{color:rgba(255,248,245,.55);text-decoration:none}
+/* Score cards */
+.score-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+             gap:14px;margin:1.5rem 0}
+.score-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+            border-radius:14px;padding:18px;position:relative}
+.score-card.winner{border-color:rgba(255,65,109,.4);
+                   background:linear-gradient(135deg,rgba(255,65,109,.08),rgba(200,41,80,.05))}
+.score-card-badge{position:absolute;top:-10px;right:14px;background:#ff416d;color:#fff;
+                  font-size:.68rem;font-weight:800;padding:3px 10px;border-radius:100px;
+                  letter-spacing:.04em;text-transform:uppercase}
+.score-card-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.score-card-name{font-weight:800;font-size:1rem;color:rgba(255,248,245,.9)}
+.score-card-desc{font-size:.8rem;color:rgba(255,248,245,.5);margin-bottom:12px;line-height:1.5}
+.score-card-score{font-size:1.8rem;font-weight:900;color:#ff416d;letter-spacing:-.04em}
+.score-card-score em{font-style:normal;font-size:.9rem;color:rgba(255,248,245,.4);
+                      font-weight:500;margin-left:2px}
+/* VS table */
+.vs-table-wrap{overflow-x:auto;margin:1.5rem 0;border-radius:12px;
+               border:1px solid rgba(255,255,255,.07)}
+.vs-table{width:100%;border-collapse:collapse;font-size:.88rem}
+.vs-table th{background:rgba(255,255,255,.05);color:rgba(255,248,245,.5);
+             font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;
+             padding:10px 14px;text-align:left;border-bottom:1px solid rgba(255,255,255,.07)}
+.vs-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.04);
+             color:rgba(255,248,245,.78);vertical-align:top}
+.vs-table tr:last-child td{border:0}
+.vs-table tr:hover td{background:rgba(255,255,255,.02)}
+.vs-table td:first-child{color:rgba(255,248,245,.5);font-size:.82rem;font-weight:600}
+/* Quick answer box */
+.qa{background:rgba(255,65,109,.06);border:1px solid rgba(255,65,109,.2);
+    border-radius:12px;padding:1.25rem 1.5rem;margin:1.25rem 0}
+.qa h3{margin:0 0 .5rem;font-size:.88rem;text-transform:uppercase;letter-spacing:.08em;
+       color:#ff416d;font-weight:800}
+.qa p{margin:0;font-size:.92rem;color:rgba(255,248,245,.85)}
+/* CTA card */
+.cta-card{background:linear-gradient(135deg,rgba(255,65,109,.1),rgba(120,20,40,.07));
+          border:1px solid rgba(255,65,109,.3);border-radius:14px;
+          padding:1.5rem;margin:1.5rem 0;display:flex;align-items:center;
+          gap:1rem;flex-wrap:wrap}
+.cta-card strong{font-size:1rem;color:rgba(255,248,245,.95);flex:1;min-width:200px}
+.btn-primary{background:linear-gradient(135deg,#ff416d,#c9294f);color:#fff;
+             padding:.55rem 1.4rem;border-radius:100px;font-weight:700;
+             font-size:.85rem;text-decoration:none;display:inline-block;
+             box-shadow:0 4px 16px rgba(255,65,109,.35);
+             transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,65,109,.5)}
+.btn-secondary{background:rgba(255,255,255,.07);color:rgba(255,248,245,.85);
+               padding:.55rem 1.4rem;border-radius:100px;font-weight:600;
+               font-size:.85rem;text-decoration:none;display:inline-block;
+               border:1px solid rgba(255,255,255,.12);
+               transition:all .15s;white-space:nowrap}
+.btn-secondary:hover{background:rgba(255,255,255,.11);color:#fff}
+/* Verdict card */
+.verdict-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+              border-radius:14px;padding:1.5rem;margin:1rem 0}
+.verdict-winner{font-weight:800;font-size:1rem;color:#ff416d;margin-bottom:.5rem}
+/* Pricing grid */
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+              gap:14px;margin:1.5rem 0}
+.price-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+            border-radius:14px;padding:1.5rem}
+.price-tool{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;
+            color:rgba(255,248,245,.45);font-weight:700;margin-bottom:.5rem}
+.price-amount{font-size:2rem;font-weight:900;color:rgba(255,248,245,.95);
+              letter-spacing:-.04em;line-height:1}
+.price-period{font-size:.78rem;color:rgba(255,248,245,.4);margin-top:.25rem}
+/* Rank list */
+.rank-list{display:flex;flex-direction:column;gap:12px;margin:1.5rem 0}
+.rank-item{display:flex;gap:14px;background:rgba(255,255,255,.04);
+           border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1rem 1.25rem}
+.rank-num{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#ff416d,#c9294f);
+          color:#fff;font-weight:900;font-size:.82rem;display:flex;align-items:center;
+          justify-content:center;flex-shrink:0;box-shadow:0 4px 12px rgba(255,65,109,.35)}
+.rank-name{font-weight:800;font-size:.95rem;color:rgba(255,248,245,.9);margin-bottom:.25rem}
+.rank-desc{font-size:.83rem;color:rgba(255,248,245,.55);line-height:1.5}
+/* Pros/cons */
+.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:1.5rem 0}
+.pros,.cons{background:rgba(255,255,255,.04);border-radius:12px;padding:1.25rem;
+            border:1px solid rgba(255,255,255,.07)}
+.pros{border-top:3px solid #22c55e}.cons{border-top:3px solid #ef4444}
+.pros h3,.cons h3{margin:0 0 .75rem;font-size:.88rem;font-weight:800;
+                  text-transform:uppercase;letter-spacing:.06em}
+.pros h3{color:#22c55e}.cons h3{color:#ef4444}
+.pros ul,.cons ul{margin:0;padding-left:1.2rem}
+.pros li,.cons li{font-size:.83rem;margin-bottom:.4rem;color:rgba(255,248,245,.75)}
+/* Breadcrumbs */
+.crumbs{font-size:.78rem;color:rgba(255,248,245,.4);margin-bottom:1rem}
+.crumbs a{color:rgba(255,248,245,.4);text-decoration:none}
+.crumbs a:hover{color:rgba(255,248,245,.7)}
+.crumbs span{margin:0 .4rem}
+/* Disclosure */
+.disclosure{font-size:.75rem;color:rgba(255,248,245,.35);margin-top:2rem;
+            padding-top:1rem;border-top:1px solid rgba(255,255,255,.06)}
+@media(max-width:600px){
+  .pros-cons{grid-template-columns:1fr}
+  .score-cards{grid-template-columns:1fr}
+  .pricing-grid{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body style="background:#050407;color:rgba(255,248,245,.88)">
 <nav id="sp-nav" style="position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;background:transparent;transition:all .3s ease;">
@@ -147,7 +259,7 @@ nav.sp-topnav{display:none!important}
   </div>
   <h2 class="sec-h">Feature Comparison</h2>
   <table class="table">
-    <thead><tr><th>Feature</th><th>Semrush</th><th>SimilarWeb</th></tr></thead>
+    <thead><tr><th>Feature</th><th><img src="https://cdn.simpleicons.org/semrush/ff642d" width="18" height="18" style="vertical-align:middle;margin-right:5px;border-radius:4px;background:#fff;padding:1px;" loading="lazy" onerror="this.style.display='none'">Semrush</th><th>SimilarWeb</th></tr></thead>
     <tbody>
       <tr><td>Keyword Research</td><td class="green">Industry-leading (25B+ keywords)</td><td>Basic</td></tr>
       <tr><td>Backlink Analysis</td><td class="green">43B+ link database</td><td>Limited</td></tr>
