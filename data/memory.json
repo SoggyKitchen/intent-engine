@@ -151,8 +151,56 @@
       "date": "2026-05-13",
       "commission": "up to $300/referred account (base $10)",
       "cookie": "90 days",
-      "status": "APPROVED \u2014 need CJ deep link from app.cj.com",
-      "note": "Existing /go/aweber route uses kqzyfj.com CJ link (may be valid)"
+      "status": "APPROVED \u2014 /go/aweber CJ tracking link active",
+      "note": "AWeber review page built 2026-06-02: aweber-review-2026-is-it-worth-it-honest-verdict.html"
+    },
+    {
+      "program": "Awin Network",
+      "network": "Awin",
+      "publisher_id": "2917137",
+      "date": "2026-06-01",
+      "status": "APPROVED \u2014 account active, publisher ID 2917137",
+      "note": "FreshBooks REJECTED by Awin (aid:56787). Need to find other Awin programs to apply for."
+    }
+  ],
+  "ceo_daily_log": [
+    {
+      "date": "2026-06-02",
+      "session": "ceo-daily-routine",
+      "gmail_findings": {
+        "awin": "APPROVED \u2014 publisher ID 2917137 active since June 1",
+        "freshbooks_awin": "REJECTED by Awin \u2014 need alternative network",
+        "aweber_cj": "Already approved May 13, /go/aweber link active",
+        "impact_com": "Still only Semrush partnered; Wix contract application sent June 1; ticket #831603 following up",
+        "partnerstack_marketplace": "BLOCKED June 2 \u2014 reason: 'association with potentially fraudulent accounts' \u2014 can reapply via dashboard",
+        "partnerstack_email": "Nina R cleared domain from blocklist June 2 \u2014 verification emails should now work for partnerships@saaspare.org",
+        "xero": "No email \u2014 still TODO"
+      },
+      "revenue_leaks_fixed": [
+        "1password-pricing-history-2026.html: /go/1password",
+        "clickup-pricing-history-2026.html: /go/clickup-trial",
+        "hubspot-pricing-history-2026.html: /go/hubspot-crm",
+        "monday-com-pricing-history-2026.html: /go/monday"
+      ],
+      "ctr_fixes": [
+        "ramp-pricing: fixed duplicate description",
+        "does-notion-have-a-free-plan: improved description with specific limits",
+        "does-sentry-have-a-free-plan: improved description with specific numbers",
+        "does-cloudflare-access-have-a-free-plan: removed stale May 2026 text",
+        "does-clickup-have-a-free-plan: fixed ClickUp capitalization + removed stale text",
+        "datadog-coupon: improved description with 25% annual savings",
+        "linear-free-trial: improved title + description with 14-day detail",
+        "twingate-vs-tailscale: removed stale May 2026 text"
+      ],
+      "built": [
+        "aweber-review-2026-is-it-worth-it-honest-verdict.html \u2014 CJ program, $10-300/referred account"
+      ],
+      "next_human_actions": [
+        "ACTION REQUIRED: Go to PartnerStack dashboard and reapply to Network (Nina R cleared email blocklist \u2014 verification emails will now arrive at partnerships@saaspare.org)",
+        "ACTION REQUIRED: Log into Awin (publisher ID 2917137) and apply to programs: GetResponse, Elementor, AWeber, ProtonVPN",
+        "ACTION REQUIRED: Check CJ dashboard (app.cj.com) for AWeber, GetResponse, ProtonVPN, Elementor deep links",
+        "Monitor Impact.com ticket #831603 \u2014 Wix contract pending approval"
+      ]
     }
   ]
 }
