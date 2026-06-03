@@ -265,10 +265,19 @@ jobs:
               html = html.replace('\n]\n</script>\n<style>', '\n<style>')
               html = html.replace(']</script>\n<style>', '<style>')
 
-              # 2. Use !important visibility:hidden — bulletproof, overrides everything
-              HIDE_CSS = '\nnav#sp-nav:not(.scrolled){opacity:0!important;pointer-events:none!important;visibility:hidden!important}\nnav#sp-nav.scrolled{opacity:1!important;pointer-events:auto!important;visibility:visible!important}\n'
-              if 'visibility:hidden!important' not in html:
-                  html = html.replace('</style>\n<script>\n(function(){', HIDE_CSS + '</style>\n<script>\n(function(){', 1)
+              # 2. Ensure nav is always visible (transparent at top, frosted on scroll)
+              # Remove any old hide-until-scroll rules if CI ever re-introduces them
+              html = re.sub(
+                  r'/\*[^*]*Nav hidden until scroll[^*]*\*/\s*nav#sp-nav:not\(\.scrolled\)\{[^}]+\}\s*nav#sp-nav\.scrolled\{[^}]+\}',
+                  '/* nav always visible */',
+                  html
+              )
+              SHOW_CSS = 'nav#sp-nav{opacity:1!important;pointer-events:auto!important;visibility:visible!important}'
+              if 'visibility:visible!important' not in html and 'visibility:hidden!important' not in html:
+                  pass  # already clean
+              if 'visibility:hidden!important' in html:
+                  html = re.sub(r'nav#sp-nav:not\(\.scrolled\)\{[^}]+\}', '', html)
+                  html = re.sub(r'nav#sp-nav\.scrolled\{opacity:1!important[^}]+\}', SHOW_CSS, html)
 
               # 3. Spacer must be 0
               html = html.replace('.sp-nav-spacer{height:72px}', '.sp-nav-spacer{height:0}')

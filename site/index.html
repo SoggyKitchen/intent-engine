@@ -603,9 +603,8 @@ nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
 
-/* ── Nav hidden until scroll ── */
-nav#sp-nav:not(.scrolled){opacity:0!important;pointer-events:none!important;visibility:hidden!important}
-nav#sp-nav.scrolled{opacity:1!important;pointer-events:auto!important;visibility:visible!important}
+/* ── Nav always visible — transparent at top, frosted glass on scroll ── */
+nav#sp-nav{opacity:1!important;pointer-events:auto!important;visibility:visible!important}
 </style>
 <script>
 (function(){
