@@ -274,6 +274,16 @@ jobs:
               html = html.replace('.sp-nav-spacer{height:72px}', '.sp-nav-spacer{height:0}')
               html = html.replace('.sp-nav-spacer{height: 72px}', '.sp-nav-spacer{height:0}')
 
+              # 4. Fix near-black gradient — old rgba(90,16,28,...) looks black, replace with true red
+              html = html.replace(
+                  'radial-gradient(ellipse 160% 55% at 50% 0%,rgba(90,16,28,.98) 0%,transparent 42%)',
+                  'radial-gradient(ellipse 160% 60% at 50% 0%,rgba(220,45,72,0.82) 0%,rgba(140,20,42,0.55) 20%,rgba(60,8,18,0.3) 35%,transparent 52%)'
+              )
+              html = html.replace(
+                  'radial-gradient(ellipse 140% 70% at 50% 0%,rgba(90,16,28,1) 0%,transparent 55%)',
+                  'radial-gradient(ellipse 140% 70% at 50% 0%,rgba(220,45,72,0.92) 0%,rgba(120,18,36,0.7) 25%,transparent 58%)'
+              )
+
               idx.write_text(html, encoding='utf-8')
               print('Homepage hardening applied')
           PYEOF
