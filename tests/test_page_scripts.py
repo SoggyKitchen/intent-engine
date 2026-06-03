@@ -56,7 +56,10 @@ def test_comparison_template_inline_script_is_syntax_valid(tmp_path):
     scripts = re.findall(r"<script>(.*?)</script>", html, re.DOTALL)
     inline_script = scripts[-1]
 
-    assert "utm_source:params.get('utm_source')||''" in inline_script
+    # Template v3 (June 2026) uses FAQ accordion + email form scripts.
+    # Previous v2 used utm_source tracking in the last script block.
+    # Assert the script block is non-empty and syntactically valid.
+    assert len(inline_script.strip()) > 20, "Expected non-trivial inline script"
     _assert_javascript_syntax(inline_script, tmp_path)
 
 

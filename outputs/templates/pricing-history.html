@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TOOL_NAME}} Pricing History 2026: Every Price Change Tracked — SaaSpare</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<link rel="canonical" href="https://saaspare.org/{{CANONICAL_URL}}">
+  <link rel="stylesheet" href="/assets/saaspare-v2.css">
+  <link rel="stylesheet" href="/assets/saaspare-ui.css">
+  <link rel="stylesheet" href="/assets/motion.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"{{FAQ_1_Q}}","acceptedAnswer":{"@type":"Answer","text":"{{FAQ_1_A}}"}},
+    {"@type":"Question","name":"{{FAQ_2_Q}}","acceptedAnswer":{"@type":"Answer","text":"{{FAQ_2_A}}"}},
+    {"@type":"Question","name":"{{FAQ_3_Q}}","acceptedAnswer":{"@type":"Answer","text":"{{FAQ_3_A}}"}},
+    {"@type":"Question","name":"{{FAQ_4_Q}}","acceptedAnswer":{"@type":"Answer","text":"{{FAQ_4_A}}"}},
+    {"@type":"Question","name":"{{FAQ_5_Q}}","acceptedAnswer":{"@type":"Answer","text":"{{FAQ_5_A}}"}}
+  ]
+}
+</script>
+<style>
+/* ── HERO ─────────────────────────── */
+.ph-hero{padding:4.5rem 1.5rem 2.5rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.25rem;position:relative;isolation:isolate;overflow:hidden;}
+.ph-hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:1.25rem;max-width:820px;}
+/* ── SCORECARD GRID ──────────────── */
+.scorecard-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:1rem;}
+.scorecard{padding:22px 18px;text-align:center;}
+.scorecard-label{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-5);margin-bottom:10px;}
+.scorecard-value{font-size:1.5rem;font-weight:900;letter-spacing:-.05em;color:var(--ink);line-height:1;}
+.scorecard-sub{font-size:.75rem;color:var(--ink-4);margin-top:6px;line-height:1.4;}
+.scorecard.risk-low .scorecard-value{color:var(--green);}
+.scorecard.risk-med .scorecard-value{color:var(--amber);}
+.scorecard.risk-high .scorecard-value{color:var(--pink-light);}
+/* ── JUMP BAR ─────────────────────── */
+.jump-bar{position:sticky;top:58px;z-index:30;background:rgba(5,4,7,.9);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--line-soft);padding:0 1.5rem;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none;}
+.jump-bar::-webkit-scrollbar{display:none;}
+.jchip{display:inline-flex;align-items:center;gap:6px;padding:14px 16px;font-size:.8rem;font-weight:700;color:var(--ink-4);white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;text-decoration:none;flex-shrink:0;}
+.jchip:hover{color:var(--ink);}
+.jchip.active{color:var(--pink-light);border-bottom-color:var(--pink);}
+.jchip-cta{margin-left:auto;padding:8px 16px;border-radius:var(--r-full);background:rgba(255,65,109,.12);border:1px solid var(--line-pink);color:var(--pink-light);font-size:.78rem;font-weight:700;white-space:nowrap;transition:all .15s;text-decoration:none;}
+.jchip-cta:hover{background:rgba(255,65,109,.2);}
+/* ── TIMELINE ─────────────────────── */
+.timeline{display:flex;flex-direction:column;gap:0;position:relative;}
+.timeline::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:2px;background:linear-gradient(180deg,var(--pink),rgba(255,65,109,.1));z-index:0;}
+.tl-entry{display:flex;gap:20px;padding-bottom:24px;position:relative;z-index:1;}
+.tl-entry:last-child{padding-bottom:0;}
+.tl-dot{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,rgba(14,8,16,.98),rgba(5,4,7,.98));border:2px solid var(--line-pink);display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(255,65,109,.2);z-index:1;}
+.tl-dot.tl-dot-increase{border-color:rgba(255,65,109,.5);background:rgba(255,65,109,.08);}
+.tl-dot.tl-dot-decrease{border-color:rgba(54,230,161,.5);background:rgba(54,230,161,.06);}
+.tl-dot.tl-dot-neutral{border-color:var(--line);}
+.tl-dot-icon{font-size:.78rem;}
+.tl-body{flex:1;padding-top:8px;}
+.tl-card{border-radius:var(--r-xl);background:var(--glass);border:1px solid var(--line);box-shadow:var(--shadow-card);padding:18px 20px;transition:all .2s;}
+.tl-card:hover{border-color:rgba(255,75,115,.3);transform:translateX(4px);}
+.tl-header{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;}
+.tl-date-chip{display:inline-flex;align-items:center;padding:3px 10px;border-radius:var(--r-full);background:rgba(255,255,255,.06);border:1px solid var(--line);font-size:.72rem;font-weight:700;color:var(--ink-4);font-variant-numeric:tabular-nums;}
+.tl-change-badge{font-size:.7rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:var(--r-full);}
+.tl-change-increase{background:rgba(255,65,109,.14);color:var(--pink-light);border:1px solid rgba(255,65,109,.25);}
+.tl-change-decrease{background:var(--green-soft);color:var(--green);border:1px solid rgba(54,230,161,.25);}
+.tl-change-neutral{background:rgba(255,255,255,.06);color:var(--ink-4);border:1px solid var(--line);}
+.tl-headline{font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:5px;}
+.tl-detail{font-size:.83rem;color:var(--ink-3);line-height:1.55;}
+.tl-source{font-size:.74rem;color:var(--ink-5);margin-top:8px;display:flex;align-items:center;gap:6px;}
+/* ── BUYER TABLE ─────────────────── */
+.buyer-table-wrap{overflow-x:auto;border-radius:var(--r-xl);border:1px solid var(--line);}
+.buyer-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.84rem;min-width:520px;}
+.buyer-table thead th{padding:14px 16px;font-size:.68rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-4);border-bottom:1px solid var(--line);text-align:left;background:rgba(14,8,16,.92);position:sticky;top:108px;z-index:5;}
+.buyer-table tbody tr:hover{background:rgba(255,255,255,.02);}
+.buyer-table tbody td{padding:14px 16px;border-bottom:1px solid var(--line-soft);color:var(--ink-3);vertical-align:top;}
+.buyer-table tbody tr:last-child td{border-bottom:none;}
+.buyer-table tbody td:first-child{font-weight:700;color:var(--ink-2);}
+.buyer-type-chip{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:var(--r-full);font-size:.72rem;font-weight:700;}
+/* ── RELATED PAGES ───────────────── */
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.related-card{padding:18px;border-radius:var(--r-lg);background:var(--glass);border:1px solid var(--line);text-decoration:none;transition:all .2s;display:flex;flex-direction:column;gap:6px;}
+.related-card:hover{border-color:rgba(255,75,115,.3);transform:translateY(-3px);}
+.related-card-type{font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-5);}
+.related-card-title{font-size:.9rem;font-weight:700;color:var(--ink);line-height:1.35;}
+.related-card-arrow{font-size:.8rem;color:var(--pink-light);margin-top:auto;}
+/* ── SEC HEAD ────────────────────── */
+.sec-hd{text-align:center;display:flex;flex-direction:column;align-items:center;gap:.85rem;margin-bottom:2rem;}
+/* ── RESPONSIVE ───────────────────── */
+@media(max-width:860px){.scorecard-grid{grid-template-columns:1fr 1fr}.related-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.scorecard-grid{grid-template-columns:1fr 1fr}.timeline::before{display:none}}
+
+.pg-crumbs{display:flex;align-items:center;gap:6px;font-size:.8rem;color:var(--ink-4);}
+.pg-crumbs a{color:var(--ink-4);transition:color .15s;}.pg-crumbs a:hover{color:var(--pink-light);}
+.pg-crumbs .sep{color:var(--ink-5);}
+.jump-bar{position:sticky;top:58px;z-index:30;background:rgba(5,4,7,.9);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--line-soft);padding:0 1.5rem;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none;}
+.jump-bar::-webkit-scrollbar{display:none;}
+.jchip{display:inline-flex;align-items:center;gap:6px;padding:14px 16px;font-size:.8rem;font-weight:700;color:var(--ink-4);white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;text-decoration:none;flex-shrink:0;}
+.jchip:hover{color:var(--ink);}
+.jchip.active{color:var(--pink-light);border-bottom-color:var(--pink);}
+.jchip-cta{margin-left:auto;padding:8px 16px;border-radius:var(--r-full);background:rgba(255,65,109,.12);border:1px solid var(--line-pink);color:var(--pink-light);font-size:.78rem;font-weight:700;white-space:nowrap;transition:all .15s;text-decoration:none;}
+.jchip-cta:hover{background:rgba(255,65,109,.2);}
+.sec-hd{text-align:center;display:flex;flex-direction:column;align-items:center;gap:.85rem;margin-bottom:2rem;}
+.cmp-wrap{overflow-x:auto;border-radius:var(--r-xl);border:1px solid var(--line);}
+.cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:.83rem;min-width:500px;}
+.cmp thead th{padding:13px 14px;font-size:.67rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-4);border-bottom:1px solid var(--line);text-align:left;background:rgba(14,8,16,.92);position:sticky;top:108px;z-index:5;}
+.cmp thead th.hl{color:rgba(255,185,0,.9);}
+.cmp tbody tr:hover{background:rgba(255,255,255,.02);}
+.cmp tbody td{padding:12px 14px;border-bottom:1px solid var(--line-soft);color:var(--ink-3);vertical-align:middle;}
+.cmp tbody tr:last-child td{border-bottom:none;}
+.cmp tbody td:first-child{color:var(--ink-2);font-weight:600;}
+.cmp td.cw{color:var(--green)!important;font-weight:700;}
+.cmp td.cl{color:rgba(255,255,255,.2);}
+.cmp td.cm{color:var(--amber);font-weight:600;}
+</style>
+</head>
+<body style="background:#050407;color:rgba(255,248,245,.88)">
+
+<svg width="0" height="0" style="position:absolute;pointer-events:none" aria-hidden="true">
+  <defs>
+    <linearGradient id="ringGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb800"/>
+      <stop offset="100%" stop-color="#ff6b00"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<nav id="sp-nav" style="position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;background:transparent;border-bottom:none;transition:all .3s ease;">
+  <a href="/" style="display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none;"><svg style="height:26px;width:auto;flex-shrink:0;overflow:visible" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath></defs><path fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></svg>
+    <span style="font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff">Saa<em style="color:#e94560;font-style:normal">Spare</em></span>
+  </a>
+  <a href="/pages/" style="color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;text-decoration:none;white-space:nowrap;">Comparisons</a>
+  <a href="/deal-radar" style="color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;text-decoration:none;white-space:nowrap;">Deal Radar</a>
+  <a href="/about" style="color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;text-decoration:none;white-space:nowrap;">About</a>
+  <a href="/shortlist" style="background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;text-decoration:none;white-space:nowrap;">Shortlist Builder &#8594;</a>
+</nav>
+<script>
+(function(){var n=document.getElementById('sp-nav');if(!n)return;window.addEventListener('scroll',function(){if(window.scrollY>40){n.style.background='rgba(7,7,13,.85)';n.style.borderBottom='1px solid rgba(255,255,255,.07)';n.style.backdropFilter='blur(20px)';}else{n.style.background='transparent';n.style.borderBottom='none';n.style.backdropFilter='none';}},{passive:true});})();
+</script>
+
+<!-- ═══ HERO + SCORECARD ═══ -->
+<section class="ph-hero">
+  <div class="bg-radial-field"></div>
+  <div class="bg-dot-wave"></div>
+  <div class="ph-hero-inner">
+    <nav class="pg-crumbs sp-up" aria-label="Breadcrumb">
+      <a href="/">Home</a><span class="sep">›</span>
+      <a href="/pages/">Comparisons</a><span class="sep">›</span>
+      <a href="{{TOOL_PAGE_URL}}">{{TOOL_NAME}}</a><span class="sep">›</span>
+      <span style="color:var(--ink-3);font-weight:600">Pricing History 2026</span>
+    </nav>
+    <div class="sp-up" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+      <span class="sp-eyebrow"><span class="sp-eyebrow-dot"></span>Price Tracker · Updated {{VERIFIED_DATE}}</span>
+      <span class="trust-chip"><span class="live-pulse-dot" style="width:7px;height:7px;flex-shrink:0"></span>Live pricing data</span>
+    </div>
+    <div class="sp-up sp-up-1" style="display:flex;align-items:center;gap:14px;justify-content:center;flex-wrap:wrap">
+      <span class="sp-logo sp-logo-lg"><img src="{{TOOL_LOGO_URL}}" alt="{{TOOL_NAME}}"></span>
+      <h1 class="sp-h1" style="max-width:680px;text-align:left">
+        {{TOOL_NAME}} <span class="sp-accent">Pricing History</span> 2026
+      </h1>
+    </div>
+    <p class="sp-lead sp-up sp-up-2" style="max-width:540px">{{HERO_LEAD}}</p>
+    <div class="scorecard-grid sp-up sp-up-3">
+      <div class="sp-glass scorecard premium-card reveal-up">
+        <div class="scorecard-label">Advertised Price</div>
+        <div class="scorecard-value">{{SCORECARD_ADVERTISED}}</div>
+        <div class="scorecard-sub">{{SCORECARD_ADVERTISED_SUB}}</div>
+      </div>
+      <div class="sp-glass scorecard premium-card reveal-up">
+        <div class="scorecard-label">Est. True Cost</div>
+        <div class="scorecard-value">{{SCORECARD_TRUE_COST}}</div>
+        <div class="scorecard-sub">{{SCORECARD_TRUE_COST_SUB}}</div>
+      </div>
+      <div class="sp-glass scorecard premium-card reveal-up {{SCORECARD_RISK_CLASS}}">
+        <div class="scorecard-label">Hidden Fee Risk</div>
+        <div class="scorecard-value">{{SCORECARD_RISK_LEVEL}}</div>
+        <div class="scorecard-sub">{{SCORECARD_RISK_SUB}}</div>
+      </div>
+      <div class="sp-glass scorecard premium-card reveal-up">
+        <div class="scorecard-label">Last Verified</div>
+        <div class="scorecard-value" style="font-size:1.1rem">{{VERIFIED_DATE}}</div>
+        <div class="scorecard-sub">{{SCORECARD_VERIFIED_SUB}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ JUMP BAR ═══ -->
+<div class="jump-bar" id="jump-bar">
+  <a class="jchip" href="#timeline">Price Timeline</a>
+  <a class="jchip" href="#buyer-guide">Buyer Guide</a>
+  <a class="jchip" href="#related">Related Pages</a>
+  <a class="jchip" href="#faq">FAQ</a>
+  <a class="jchip-cta" href="{{TOOL_PRICING_URL}}">Current Pricing →</a>
+</div>
+
+<!-- ═══ MAIN ═══ -->
+<section class="sp-section" style="padding-top:2rem">
+  <div class="sp-container-narrow">
+
+    <!-- TIMELINE -->
+    <div id="timeline" style="margin-bottom:4rem">
+      <div class="sec-hd" style="text-align:left;align-items:flex-start;margin-bottom:2rem">
+        <span class="sp-eyebrow"><span class="sp-eyebrow-dot"></span>Every change tracked</span>
+        <h2 class="sp-h2" style="text-align:left">{{TOOL_NAME}} <span class="sp-accent">price timeline</span></h2>
+        <p class="sp-lead" style="max-width:540px;text-align:left">Every verified pricing change since we started tracking. Sources documented.</p>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-entry reveal-up">
+          <div class="tl-dot {{TL_1_DOT_CLASS}}"><span class="tl-dot-icon">{{TL_1_ICON}}</span></div>
+          <div class="tl-body">
+            <div class="tl-card">
+              <div class="tl-header">
+                <span class="tl-date-chip">{{TL_1_DATE}}</span>
+                <span class="tl-change-badge {{TL_1_BADGE_CLASS}}">{{TL_1_CHANGE_LABEL}}</span>
+              </div>
+              <div class="tl-headline">{{TL_1_HEADLINE}}</div>
+              <div class="tl-detail">{{TL_1_DETAIL}}</div>
+              <div class="tl-source"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Source: {{TL_1_SOURCE}}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-entry reveal-up">
+          <div class="tl-dot {{TL_2_DOT_CLASS}}"><span class="tl-dot-icon">{{TL_2_ICON}}</span></div>
+          <div class="tl-body">
+            <div class="tl-card">
+              <div class="tl-header">
+                <span class="tl-date-chip">{{TL_2_DATE}}</span>
+                <span class="tl-change-badge {{TL_2_BADGE_CLASS}}">{{TL_2_CHANGE_LABEL}}</span>
+              </div>
+              <div class="tl-headline">{{TL_2_HEADLINE}}</div>
+              <div class="tl-detail">{{TL_2_DETAIL}}</div>
+              <div class="tl-source"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Source: {{TL_2_SOURCE}}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-entry reveal-up">
+          <div class="tl-dot {{TL_3_DOT_CLASS}}"><span class="tl-dot-icon">{{TL_3_ICON}}</span></div>
+          <div class="tl-body">
+            <div class="tl-card">
+              <div class="tl-header">
+                <span class="tl-date-chip">{{TL_3_DATE}}</span>
+                <span class="tl-change-badge {{TL_3_BADGE_CLASS}}">{{TL_3_CHANGE_LABEL}}</span>
+              </div>
+              <div class="tl-headline">{{TL_3_HEADLINE}}</div>
+              <div class="tl-detail">{{TL_3_DETAIL}}</div>
+              <div class="tl-source"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Source: {{TL_3_SOURCE}}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-entry reveal-up">
+          <div class="tl-dot {{TL_4_DOT_CLASS}}"><span class="tl-dot-icon">{{TL_4_ICON}}</span></div>
+          <div class="tl-body">
+            <div class="tl-card">
+              <div class="tl-header">
+                <span class="tl-date-chip">{{TL_4_DATE}}</span>
+                <span class="tl-change-badge {{TL_4_BADGE_CLASS}}">{{TL_4_CHANGE_LABEL}}</span>
+              </div>
+              <div class="tl-headline">{{TL_4_HEADLINE}}</div>
+              <div class="tl-detail">{{TL_4_DETAIL}}</div>
+              <div class="tl-source"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Source: {{TL_4_SOURCE}}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-entry reveal-up">
+          <div class="tl-dot {{TL_5_DOT_CLASS}}"><span class="tl-dot-icon">{{TL_5_ICON}}</span></div>
+          <div class="tl-body">
+            <div class="tl-card">
+              <div class="tl-header">
+                <span class="tl-date-chip">{{TL_5_DATE}}</span>
+                <span class="tl-change-badge {{TL_5_BADGE_CLASS}}">{{TL_5_CHANGE_LABEL}}</span>
+              </div>
+              <div class="tl-headline">{{TL_5_HEADLINE}}</div>
+              <div class="tl-detail">{{TL_5_DETAIL}}</div>
+              <div class="tl-source"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Source: {{TL_5_SOURCE}}</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BUYER GUIDE TABLE -->
+    <div id="buyer-guide" style="margin-bottom:4rem">
+      <div class="sec-hd" style="text-align:left;align-items:flex-start;margin-bottom:1.5rem">
+        <span class="sp-eyebrow"><span class="sp-eyebrow-dot"></span>Who should buy now</span>
+        <h2 class="sp-h2" style="text-align:left">Buyer <span class="sp-accent">situation guide</span></h2>
+      </div>
+      <div class="buyer-table-wrap reveal-up">
+        <table class="buyer-table">
+          <thead>
+            <tr>
+              <th>Buyer Type</th>
+              <th>Recommendation</th>
+              <th>Why</th>
+              <th>Next Step</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="buyer-type-chip sp-badge sp-badge-pink">Startup</span></td>
+              <td>{{BUYER_STARTUP_REC}}</td>
+              <td>{{BUYER_STARTUP_WHY}}</td>
+              <td><a href="{{BUYER_STARTUP_LINK}}" style="color:var(--pink-light);text-decoration:none;font-weight:600">{{BUYER_STARTUP_CTA}} →</a></td>
+            </tr>
+            <tr>
+              <td><span class="buyer-type-chip sp-badge sp-badge-amber">SMB</span></td>
+              <td>{{BUYER_SMB_REC}}</td>
+              <td>{{BUYER_SMB_WHY}}</td>
+              <td><a href="{{BUYER_SMB_LINK}}" style="color:var(--pink-light);text-decoration:none;font-weight:600">{{BUYER_SMB_CTA}} →</a></td>
+            </tr>
+            <tr>
+              <td><span class="buyer-type-chip sp-badge sp-badge-ghost">Enterprise</span></td>
+              <td>{{BUYER_ENT_REC}}</td>
+              <td>{{BUYER_ENT_WHY}}</td>
+              <td><a href="{{BUYER_ENT_LINK}}" style="color:var(--pink-light);text-decoration:none;font-weight:600">{{BUYER_ENT_CTA}} →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- RELATED PAGES -->
+    <div id="related" style="margin-bottom:4rem">
+      <div class="sec-hd" style="text-align:left;align-items:flex-start;margin-bottom:1.5rem">
+        <span class="sp-eyebrow"><span class="sp-eyebrow-dot"></span>More on {{TOOL_NAME}}</span>
+        <h2 class="sp-h2" style="text-align:left">Related <span class="sp-accent">pages</span></h2>
+      </div>
+      <div class="related-grid">
+        <a href="{{TOOL_REVIEW_URL}}" class="related-card reveal-up">
+          <div class="related-card-type">Review</div>
+          <div class="related-card-title">{{TOOL_NAME}} Review 2026: Is It Worth It?</div>
+          <div class="related-card-arrow">→</div>
+        </a>
+        <a href="{{TOOL_PRICING_URL}}" class="related-card reveal-up">
+          <div class="related-card-type">Pricing</div>
+          <div class="related-card-title">{{TOOL_NAME}} Pricing 2026: What You Actually Pay</div>
+          <div class="related-card-arrow">→</div>
+        </a>
+        <a href="{{TOOL_COUPON_URL}}" class="related-card reveal-up">
+          <div class="related-card-type">Discount</div>
+          <div class="related-card-title">{{TOOL_NAME}} Coupon &amp; Discount Codes 2026</div>
+          <div class="related-card-arrow">→</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq" style="margin-bottom:4rem">
+      <div class="sec-hd" style="text-align:left;align-items:flex-start;margin-bottom:1.5rem">
+        <span class="sp-eyebrow"><span class="sp-eyebrow-dot"></span>Common questions</span>
+        <h2 class="sp-h2" style="text-align:left">{{TOOL_NAME}} pricing history FAQ</h2>
+      </div>
+      <div class="sp-glass reveal-up" style="padding:8px 24px">
+        <div class="faq-item"><div class="faq-q">{{FAQ_1_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_1_A}}</div></div>
+        <div class="faq-item"><div class="faq-q">{{FAQ_2_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_2_A}}</div></div>
+        <div class="faq-item"><div class="faq-q">{{FAQ_3_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_3_A}}</div></div>
+        <div class="faq-item"><div class="faq-q">{{FAQ_4_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_4_A}}</div></div>
+        <div class="faq-item"><div class="faq-q">{{FAQ_5_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_5_A}}</div></div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="sp-glass-pink reveal-up" style="padding:3rem 2rem;text-align:center;border-radius:var(--r-xl)">
+      <span class="sp-eyebrow" style="margin-bottom:1rem;display:inline-flex"><span class="sp-eyebrow-dot"></span>Lock in today's price</span>
+      <h2 class="sp-h3" style="font-size:1.5rem;margin-bottom:.75rem">Get {{TOOL_NAME}} before the <span class="sp-accent">next price change</span></h2>
+      <p style="font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem;max-width:400px;margin-left:auto;margin-right:auto;">{{PRICE_CHANGE_NOTE}}</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+        <a href="{{TOOL_GO_LINK}}" class="sp-btn sp-btn-primary glint-button">Get Current Price →</a>
+        <a href="{{TOOL_TRIAL_LINK}}" class="sp-btn sp-btn-ghost">Start Free Trial</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="sp-footer">
+  <div class="sp-footer-inner">
+    <div class="sp-footer-brand">
+      <div style="font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:rgba(255,248,245,.88)">Saa<em style="color:#e94560;font-style:normal">Spare</em></div>
+      <p>The honest guide to SaaS. Independent research, weekly pricing verification, no paid rankings.</p>
+    </div>
+    <div class="sp-footer-col"><h4>Product</h4>
+      <a href="/pages/">Comparisons</a><a href="/shortlist">Shortlist Builder</a><a href="/deal-radar">Deal Radar</a><a href="/newsletter">Newsletter</a>
+    </div>
+    <div class="sp-footer-col"><h4>Company</h4>
+      <a href="/about">About</a><a href="/editorial">Editorial Standards</a><a href="/contact">Contact</a>
+    </div>
+    <div class="sp-footer-col"><h4>Legal</h4>
+      <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/affiliate-disclosure">Affiliate Disclosure</a>
+    </div>
+  </div>
+  <div class="sp-footer-bottom">
+    <span>© 2026 SaaSpare. All rights reserved.</span>
+    <span>Made for buyers. Not vendors.</span>
+  </div>
+</footer>
+
+<div class="sticky-bottom-cta" id="sticky-cta">
+  <div class="sticky-bottom-cta-text">
+    <strong>{{TOOL_NAME}} Pricing History</strong> — {{PRICE_CHANGES_COUNT}} changes tracked · Last updated {{VERIFIED_DATE}}
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;flex-shrink:0">
+    <a href="{{TOOL_PRICING_URL}}" class="sp-btn sp-btn-primary sp-btn-sm glint-button">Current Pricing →</a>
+    <button class="sp-btn sp-btn-ghost sp-btn-sm" onclick="document.getElementById('sticky-cta').style.display='none'">✕</button>
+  </div>
+</div>
+
+<script>
+(function(){
+
+  var cta=document.getElementById('sticky-cta');
+  if(cta){window.addEventListener('scroll',function(){cta.classList.toggle('visible',window.scrollY>600);},{passive:true});}
+})();
+</script>
+<script src="/assets/motion.js" defer></script>
+</body>
+</html>
