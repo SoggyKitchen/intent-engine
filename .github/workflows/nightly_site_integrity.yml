@@ -233,6 +233,45 @@ jobs:
       - name: Render buyer-intel pages
         run: uv run python scripts/render_buyer_intel.py
 
+      # 4z-1. PREMIUM TEMPLATE ENFORCEMENT — run last so these always win over
+      # any earlier CI step that generates plain/old-format pages.
+      # Best-of pages: ranked tool cards, score rings, jump bar, sidebar.
+      - name: Enforce premium best-of template
+        run: uv run python scripts/generate_best_of_v3.py
+        continue-on-error: true
+
+      # 4z-2. Pricing pages: plan table, hidden costs, true-cost scenarios.
+      - name: Enforce premium pricing template
+        run: uv run python scripts/generate_pricing_pages_v3.py
+        continue-on-error: true
+
+      # 4z-3. Homepage hardening — ensure nav opacity:0 at top and spacer height:0
+      # survive any earlier CI step that may have touched index.html.
+      - name: Harden homepage nav
+        run: |
+          python3 << 'PYEOF'
+          from pathlib import Path
+          idx = Path('site/index.html')
+          if idx.exists():
+              html = idx.read_text(encoding='utf-8', errors='replace')
+              # Ensure nav is hidden at top
+              html = html.replace(
+                  'background:transparent;border-bottom:none}',
+                  'background:transparent;border-bottom:none;opacity:0;pointer-events:none}'
+              )
+              # Ensure spacer is 0 height
+              html = html.replace('.sp-nav-spacer{height:72px}', '.sp-nav-spacer{height:0}')
+              # Ensure hero-bg extends above hero
+              if 'top:-80px' not in html and 'position:absolute;inset:0' in html:
+                  html = html.replace(
+                      '.hero-bg{position:absolute;inset:0;',
+                      '.hero-bg{position:absolute;top:-80px;left:0;right:0;bottom:0;'
+                  )
+              idx.write_text(html, encoding='utf-8')
+              print('Homepage nav hardening applied')
+          PYEOF
+        continue-on-error: true
+
       # 5. Comprehensive content QA gate (titles, descs, canonicals, JSON-LD,
       # sitemap, robots, money-page disclosure + sponsored attrs).
       # Hard failures fail the build; soft issues logged to outputs/seo/content_qa.json.

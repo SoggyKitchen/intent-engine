@@ -48,7 +48,7 @@ nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
   box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.sp-nav-spacer{height:72px}
+.sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
 /* Remove old nav styles that cause bracket/black-bar glitches */
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
