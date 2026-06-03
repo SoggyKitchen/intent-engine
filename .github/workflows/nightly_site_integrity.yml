@@ -252,6 +252,12 @@ jobs:
         run: uv run python scripts/upgrade_old_pages.py
         continue-on-error: true
 
+      # 4z-3c. Ensure every page has the correct animated SVG logo mark.
+      # Fixes pages with old text-only logo and injects nav into pages missing it.
+      - name: Fix logo and nav consistency across all pages
+        run: uv run python scripts/fix_logo_nav.py
+        continue-on-error: true
+
       # 4z-3. Homepage hardening — ensure nav opacity:0 at top and spacer height:0
       # survive any earlier CI step that may have touched index.html.
       - name: Harden homepage nav
