@@ -182,21 +182,20 @@ h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;li
 @keyframes titleEnter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .grad-text{background:linear-gradient(135deg,#ff8fa3 0%,var(--red) 45%,var(--red2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding-bottom:.15em}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-/* ── Typewriter glint ── */
+/* ── Typewriter glint — identical to .sp-accent in saaspare-v2.css ── */
 .tw-line{display:block;min-height:1em}
-/* L→R sweep only — no alternate so it never reverses direction */
-@keyframes tw-glint{0%{background-position:-50% center}100%{background-position:250% center}}
+@keyframes spGlint{0%{background-position:100% 50%}100%{background-position:-200% 50%}}
 #tw-word{
   display:inline-block;
-  /* base red, glint peaks at bright-pink (not white) */
-  background:linear-gradient(90deg,#c73652 0%,#e94560 20%,#ff6b87 38%,#ffaabb 50%,#ff6b87 62%,#e94560 80%,#c73652 100%);
+  background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);
   background-size:300% 100%;
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;
-  animation:tw-glint 2.2s linear infinite;
-  will-change:background-position;
+  text-shadow:0 0 32px rgba(255,65,109,.30);
+  animation:spGlint 3.6s linear infinite;
+  padding-right:.05em;
 }
-.sp-tw-cursor{display:inline-block;width:.06em;background:#ff416d;height:.82em;vertical-align:-.08em;margin-left:.06em;animation:spBlink 1s steps(2,end) infinite;box-shadow:0 0 12px #ff416d}
+.sp-tw-cursor{display:inline-block;width:.05em;background:#ff416d;height:.85em;vertical-align:-.05em;margin-left:.05em;animation:spBlink 1s steps(2,end) infinite;box-shadow:0 0 14px #ff416d}
 @keyframes spBlink{0%,50%{opacity:1}50.01%,100%{opacity:0}}
 
 
