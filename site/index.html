@@ -84,7 +84,7 @@ a{text-decoration:none;color:inherit}
 
 
 /* ── NAV ─────────────────────────────────────── */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease;background:transparent;border-bottom:none;opacity:0;pointer-events:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease;background:transparent;border-bottom:none}
 nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);opacity:1;pointer-events:auto}
 .logo{display:flex;align-items:center;gap:9px;margin-right:auto}
 .logo-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;animation:markGlow 4s ease-in-out infinite}
@@ -574,8 +574,7 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 :root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
 nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
   display:flex;align-items:center;gap:4px;transition:all .4s ease;
-  background:transparent;border-bottom:none;
-  opacity:0;pointer-events:none}
+  background:transparent;border-bottom:none}
 nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
   opacity:1;pointer-events:auto}
@@ -603,13 +602,19 @@ nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
 /* Remove old nav styles that cause bracket/black-bar glitches */
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
+
+/* ── Nav hidden until scroll ── */
+nav#sp-nav:not(.scrolled){opacity:0!important;pointer-events:none!important;visibility:hidden!important}
+nav#sp-nav.scrolled{opacity:1!important;pointer-events:auto!important;visibility:visible!important}
 </style>
 <script>
 (function(){
-  window.addEventListener('scroll',function(){
+  function updateNav(){
     var nav=document.getElementById('sp-nav');
-    if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
-  },{passive:true});
+    if(nav){nav.classList.toggle('scrolled',window.scrollY>40);}
+  }
+  window.addEventListener('scroll',updateNav,{passive:true});
+  // Do NOT call on load — nav stays hidden until user scrolls
 })();
 </script>
 </head>

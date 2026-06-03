@@ -265,27 +265,14 @@ jobs:
               html = html.replace('\n]\n</script>\n<style>', '\n<style>')
               html = html.replace(']</script>\n<style>', '<style>')
 
-              # 2. Add opacity:0 to ALL plain nav{} rules (the old homepage nav CSS)
-              old_nav = re.compile(r'(nav\{position:fixed;[^}]*background:transparent;border-bottom:none)(\})', re.DOTALL)
-              if old_nav.search(html) and 'opacity:0' not in old_nav.search(html).group(0):
-                  html = old_nav.sub(r'\1;opacity:0;pointer-events:none\2', html, count=1)
+              # 2. Use !important visibility:hidden — bulletproof, overrides everything
+              HIDE_CSS = '\nnav#sp-nav:not(.scrolled){opacity:0!important;pointer-events:none!important;visibility:hidden!important}\nnav#sp-nav.scrolled{opacity:1!important;pointer-events:auto!important;visibility:visible!important}\n'
+              if 'visibility:hidden!important' not in html:
+                  html = html.replace('</style>\n<script>\n(function(){', HIDE_CSS + '</style>\n<script>\n(function(){', 1)
 
-              # 3. Add opacity:1 to all nav.scrolled{} rules
-              def add_scrolled_opacity(m):
-                  return m.group(0) if 'opacity:1' in m.group(0) else m.group(1) + ';opacity:1;pointer-events:auto' + m.group(2)
-              html = re.sub(r'(nav\.scrolled\{[^}]*)(\})', add_scrolled_opacity, html)
-
-              # 4. Ensure sp-nav-css block hides nav at top
-              html = html.replace(
-                  'background:transparent;border-bottom:none}\nnav#sp-nav.scrolled',
-                  'background:transparent;border-bottom:none;opacity:0;pointer-events:none}\nnav#sp-nav.scrolled'
-              )
+              # 3. Spacer must be 0
               html = html.replace('.sp-nav-spacer{height:72px}', '.sp-nav-spacer{height:0}')
               html = html.replace('.sp-nav-spacer{height: 72px}', '.sp-nav-spacer{height:0}')
-
-              # 5. Extend hero-bg to cover viewport top
-              if 'top:-80px' not in html:
-                  html = html.replace('.hero-bg{position:absolute;inset:0;', '.hero-bg{position:absolute;top:-80px;left:0;right:0;bottom:0;')
 
               idx.write_text(html, encoding='utf-8')
               print('Homepage hardening applied')
