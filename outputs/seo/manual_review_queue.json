@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-03T08:28:27+00:00",
+  "generated_at_utc": "2026-06-03T08:32:34+00:00",
   "mode": "apply",
-  "pages_flagged": 38,
+  "pages_flagged": 37,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -105,6 +105,11 @@
       "claims": [
         {
           "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "5\"><path d=\"M6 9l6 6 6-6\"/></svg></div><div class=\"faq-a\">No free trial \u2014 but a 30-day money-back guarantee applies to all plans. Buy, test fully, and get a full refund within 30 days.</d"
+        },
+        {
+          "label": "money_back_guarantee",
           "snippet": "Money-Back Guarantee",
           "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
         },
@@ -160,17 +165,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "arr;</a><p style=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0\">30-day money-back guarantee \u2014 full refund if not satisfied</p><p style=\"font-size:.72rem;color:rgba(255,248"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "tely and lets you test the core editor before upgrading. Paid plans come with a 30-day money-back guarantee.</p> </div> </details> <details class=\"faq-item\" ite"
         }
       ],
       "trust_state_bumped": false
