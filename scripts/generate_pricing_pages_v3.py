@@ -474,7 +474,7 @@ def build_tokens(data):
                 mo_float   = float(mo_val)
                 if mo_float > 0 and annual_val > 0:
                     save_pct = round((1 - annual_val/mo_float)*100)
-                    t["PLAN_2_ANNUAL_SAVE"] = f"Save {save_pct}% annually"
+                    t["PLAN_2_ANNUAL_SAVE"] = f"Save {save_pct}% billed annually"
                 else:
                     t["PLAN_2_ANNUAL_SAVE"] = ""
             except Exception:
@@ -563,7 +563,7 @@ def main():
     for path in pages:
         # Already has premium template?
         html = path.read_text(encoding="utf-8", errors="replace")
-        if "pr-layout" in html and "price-at-glance" in html:
+        if "pr-layout" in html and "price-at-glance" in html and "feat-col" in html:
             skip += 1
             continue
 
