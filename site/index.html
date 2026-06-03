@@ -110,9 +110,9 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
   100%{opacity:1}
 }
 
-/* deep layered background */
-.hero-bg{position:absolute;inset:0;pointer-events:none;background:
-  radial-gradient(ellipse 100% 55% at 50% -5%,rgba(90,16,28,1) 0%,transparent 55%),
+/* deep layered background — extends above hero so no black gap at top */
+.hero-bg{position:absolute;top:-80px;left:0;right:0;bottom:0;pointer-events:none;background:
+  radial-gradient(ellipse 140% 70% at 50% 0%,rgba(90,16,28,1) 0%,transparent 55%),
   radial-gradient(ellipse 70% 40% at 20% 60%,rgba(130,20,40,.22) 0%,transparent 60%),
   radial-gradient(ellipse 70% 40% at 80% 70%,rgba(80,10,30,.18) 0%,transparent 60%),
   radial-gradient(ellipse 60% 50% at 50% 40%,rgba(233,69,96,.055) 0%,transparent 70%),
@@ -600,7 +600,7 @@ nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
   box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.sp-nav-spacer{height:72px}
+.sp-nav-spacer{height:0}
 /* Remove old nav styles that cause bracket/black-bar glitches */
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
