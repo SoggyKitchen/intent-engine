@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-03T07:23:48+00:00",
+  "generated_at_utc": "2026-06-03T07:50:47+00:00",
   "mode": "apply",
-  "pages_flagged": 37,
+  "pages_flagged": 38,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -125,6 +125,17 @@
         }
       ],
       "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-shopify-alternatives-in-2026-free-paid.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a href=\"/go/wix\" class=\"sp-btn sp-btn-primary g"
+        }
+      ],
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/best-cheap-vps-hosting-2026.html",
@@ -424,6 +435,11 @@
     {
       "path": "site/pages/best-ecommerce-platform-2026.html",
       "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "14-day money-back guarantee",
+          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a href=\"/go/wix\" class=\"sp-btn sp-btn-primary g"
+        },
         {
           "label": "sla_guarantee",
           "snippet": "99.99% uptime SLA",
