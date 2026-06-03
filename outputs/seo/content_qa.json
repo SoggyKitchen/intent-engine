@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-02T21:45:47.196655+00:00",
+  "generated_at": "2026-06-03T07:23:57.830112+00:00",
   "stats": {
-    "sitemap_urls": 1394,
-    "sitemap_with_lastmod": 1394,
-    "total_pages": 1457,
-    "indexable_pages": 1398,
+    "sitemap_urls": 1398,
+    "sitemap_with_lastmod": 1398,
+    "total_pages": 1467,
+    "indexable_pages": 1402,
     "title_over_70": 133,
-    "soft": 6,
+    "soft": 7,
     "money_pages": 1153,
     "desc_over_165": 8,
     "duplicate_titles": 2,
@@ -16,10 +16,11 @@
   "soft_issues": [
     "site/corrections.html: title <30 chars (29)",
     "site/corrections.html: meta desc <80 chars (78)",
+    "site/cookie-policy.html: title <30 chars (24)",
     "site/editorial-policy.html: title <30 chars (27)",
     "duplicate title (2 pages): \"Shopify Coupon 2026 (Verified June 2026) — Real Working Code\" — ['site/pages/shopify-discount-code-promo-codes-2026-verified-deals.html', 'site/pages/shopify-coupon-code-promo-codes-2026-verified-discounts.html']",
     "duplicate title (2 pages): \"Copy.ai Coupon 2026 (Verified June 2026) — Real Working Code\" — ['site/pages/copy-ai-coupon-2026-discount-codes-promo.html', 'site/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts.html']",
     "duplicate description (5 pages): \"Updated 2026 guide from SaaSpare — expert analysis, real pri\" — ['site/contact.html', 'site/about.html', 'site/shortlist.html']"
   ],
-  "soft_issues_total": 6
+  "soft_issues_total": 7
 }
