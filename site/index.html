@@ -183,14 +183,16 @@ h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;li
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 /* ── Typewriter glint ── */
 .tw-line{display:block;min-height:1em}
-@keyframes tw-glint{0%{background-position:0% center}100%{background-position:100% center}}
+/* L→R sweep only — no alternate so it never reverses direction */
+@keyframes tw-glint{0%{background-position:-50% center}100%{background-position:250% center}}
 #tw-word{
   display:inline-block;
-  background:linear-gradient(90deg,#e94560 0%,#ff8fa3 30%,#ffd0dc 48%,#fff5f7 52%,#ffd0dc 56%,#ff8fa3 70%,#e94560 100%);
+  /* base red, glint peaks at bright-pink (not white) */
+  background:linear-gradient(90deg,#c73652 0%,#e94560 20%,#ff6b87 38%,#ffaabb 50%,#ff6b87 62%,#e94560 80%,#c73652 100%);
   background-size:300% 100%;
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;
-  animation:tw-glint 2.8s ease-in-out infinite alternate;
+  animation:tw-glint 2.2s linear infinite;
   will-change:background-position;
 }
 .sp-tw-cursor{display:inline-block;width:.06em;background:#ff416d;height:.82em;vertical-align:-.08em;margin-left:.06em;animation:spBlink 1s steps(2,end) infinite;box-shadow:0 0 12px #ff416d}
@@ -1115,16 +1117,16 @@ function spType(){
   if(!deleting){
     cIdx++;
     tw.textContent = word.slice(0, cIdx);
-    if(cIdx >= word.length){ deleting = true; setTimeout(spType, 1800); return; }
-    setTimeout(spType, 70 + Math.random()*40);
+    if(cIdx >= word.length){ deleting = true; setTimeout(spType, 1400); return; }
+    setTimeout(spType, 48 + Math.random()*18);
   } else {
     cIdx--;
     tw.textContent = word.slice(0, cIdx);
-    if(cIdx <= 0){ deleting = false; wIdx = (wIdx+1) % WORDS.length; setTimeout(spType, 350); return; }
-    setTimeout(spType, 35);
+    if(cIdx <= 0){ deleting = false; wIdx = (wIdx+1) % WORDS.length; setTimeout(spType, 280); return; }
+    setTimeout(spType, 22);
   }
 }
-setTimeout(spType, 800);
+setTimeout(spType, 600);
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
