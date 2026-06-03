@@ -245,6 +245,13 @@ jobs:
         run: uv run python scripts/generate_pricing_pages_v3.py
         continue-on-error: true
 
+      # 4z-3b. Upgrade all remaining old-template pages (vs, alternatives,
+      # reviews, free-trial, coupons) with premium CSS shell.
+      # Also fixes noindex→index,follow and removes stray "Advertisement" text.
+      - name: Upgrade old-template pages to premium design
+        run: uv run python scripts/upgrade_old_pages.py
+        continue-on-error: true
+
       # 4z-3. Homepage hardening — ensure nav opacity:0 at top and spacer height:0
       # survive any earlier CI step that may have touched index.html.
       - name: Harden homepage nav
