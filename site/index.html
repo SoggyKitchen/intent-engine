@@ -156,8 +156,9 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .activity-pill{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:.32rem .8rem;font-size:.68rem;color:var(--muted);font-weight:600}
 .activity-sep{color:var(--dim);font-size:.55rem}
 
-/* floating verdict chips */
-.verdict-floats{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:2}
+/* floating verdict chips — only visible while hero is in view */
+.verdict-floats{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:2;transition:opacity .4s ease}
+.verdict-floats.hidden{opacity:0;pointer-events:none}
 .vf{position:fixed;display:flex;align-items:center;gap:.5rem;background:rgba(10,10,18,.82);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(12px);border-radius:100px;padding:.45rem .85rem;font-size:.72rem;font-weight:700;color:rgba(255,255,255,.7);white-space:nowrap;cursor:pointer;pointer-events:auto;transition:opacity .4s ease, top .5s ease, left .5s ease, right .5s ease;text-decoration:none}
 .vf:hover{border-color:rgba(233,69,96,.4);background:rgba(10,10,18,.95);color:#fff;box-shadow:0 8px 24px rgba(233,69,96,.2)}
 @keyframes vfFloat{0%,100%{transform:translateY(0px)}50%{transform:translateY(-6px)}}
@@ -613,9 +614,15 @@ nav#sp-nav{opacity:1!important;pointer-events:auto!important;visibility:visible!
   function updateNav(){
     var nav=document.getElementById('sp-nav');
     if(nav){nav.classList.toggle('scrolled',window.scrollY>40);}
+    // Hide verdict chips once user scrolls past the hero section
+    var vf=document.querySelector('.verdict-floats');
+    if(vf){
+      var hero=document.querySelector('.hero');
+      var heroBottom=hero?hero.getBoundingClientRect().bottom:0;
+      vf.classList.toggle('hidden',heroBottom<80);
+    }
   }
   window.addEventListener('scroll',updateNav,{passive:true});
-  // Do NOT call on load — nav stays hidden until user scrolls
 })();
 </script>
 </head>
