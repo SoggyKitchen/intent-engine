@@ -11,8 +11,9 @@ INDEXNOW_KEY = "f8fe5282236748eda9fa6a1f13d1afe8"
 TODAY = time.strftime("%Y-%m-%d")
 
 # Content subdirectories whose pages should be indexed (E-E-A-T + content depth)
-CONTENT_SUBDIRS = ("blog", "authors")
+CONTENT_SUBDIRS = ("blog", "authors", "research")
 NOINDEX_RE = re.compile(r'<meta[^>]+name=["\']robots["\'][^>]*noindex', re.IGNORECASE)
+CANONICAL_RE = re.compile(r'<link\s+rel=["\']canonical["\']\s+href=["\']([^"\']+)["\']', re.IGNORECASE)
 
 
 def _is_noindex(path: pathlib.Path) -> bool:
@@ -20,6 +21,17 @@ def _is_noindex(path: pathlib.Path) -> bool:
         return bool(NOINDEX_RE.search(path.read_text(encoding="utf-8", errors="replace")))
     except OSError:
         return False
+
+
+def _canonical_url(path: pathlib.Path, fallback: str) -> str:
+    try:
+        raw = path.read_text(encoding="utf-8", errors="replace")
+        m = CANONICAL_RE.search(raw)
+        if m:
+            return m.group(1).split("#")[0].rstrip("/")
+    except OSError:
+        pass
+    return fallback
 
 
 def get_all_urls():
@@ -33,19 +45,27 @@ def get_all_urls():
     if (pages_dir / "index.html").exists():
         urls.append(f"{DOMAIN}/pages")
 
+    seen = set()
+
     for f in sorted(pages_dir.glob("*.html")):
         if f.stem in skip or f.stem.startswith(skip_prefixes):
             continue
         if _is_noindex(f):
             continue
-        urls.append(f"{DOMAIN}/pages/{f.stem}")
+        url = _canonical_url(f, f"{DOMAIN}/pages/{f.stem}")
+        if url not in seen:
+            seen.add(url)
+            urls.append(url)
 
     for f in sorted(site_dir.glob("*.html")):
         if f.stem in skip or f.stem.startswith(skip_prefixes):
             continue
         if _is_noindex(f):
             continue
-        urls.append(f"{DOMAIN}/{f.stem}")
+        url = _canonical_url(f, f"{DOMAIN}/{f.stem}")
+        if url not in seen:
+            seen.add(url)
+            urls.append(url)
 
     # Content subdirectories (blog posts, author bio pages) — these carry the
     # E-E-A-T and topical-depth signals Google rewards, so they MUST be indexed.
@@ -58,7 +78,10 @@ def get_all_urls():
                 continue
             if _is_noindex(f):
                 continue
-            urls.append(f"{DOMAIN}/{sub}/{f.stem}")
+            url = _canonical_url(f, f"{DOMAIN}/{sub}/{f.stem}")
+            if url not in seen:
+                seen.add(url)
+                urls.append(url)
 
     urls.insert(0, DOMAIN + "/")
     return urls
