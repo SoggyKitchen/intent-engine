@@ -258,8 +258,12 @@ jobs:
           else:
               html = idx.read_text(encoding='utf-8', errors='replace')
 
-              # 1. Remove stray ] from body start (JSON-LD corruption)
+              # 1. Remove stray ] from body start AND stale </script> tag in head
+              # that browsers move to <body> as a text node
               html = re.sub(r'(<body[^>]*>)\s*\]', r'\1', html)
+              html = html.replace('\n]</script>\n<style>', '\n<style>')
+              html = html.replace('\n]\n</script>\n<style>', '\n<style>')
+              html = html.replace(']</script>\n<style>', '<style>')
 
               # 2. Add opacity:0 to ALL plain nav{} rules (the old homepage nav CSS)
               old_nav = re.compile(r'(nav\{position:fixed;[^}]*background:transparent;border-bottom:none)(\})', re.DOTALL)

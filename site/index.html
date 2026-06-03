@@ -36,7 +36,6 @@
 <!-- Design system — provides sp-* classes for marquee, library, newsletter sections -->
 <link rel="stylesheet" href="/assets/sp-shared.css">
 <link rel="stylesheet" href="/assets/sp-motion.css">
-]</script>
 <style>
 /* ── TOKENS ─────────────────────────────────── */
 :root{
@@ -77,7 +76,7 @@
 /* ── BASE ────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Inter',system-ui,sans-serif;background:radial-gradient(ellipse 160% 55% at 50% 0%,rgba(90,16,28,.98) 0%,transparent 42%),var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:4px;background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar-thumb{background:rgba(233,69,96,.4);border-radius:2px}
@@ -104,14 +103,14 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 
 /* ── HERO ─────────────────────────────────────── */
-.hero{position:relative;overflow:hidden;padding:10.5rem 2rem 8rem;text-align:center;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;animation:heroEnter 1.2s cubic-bezier(.34,1.56,.64,1) forwards}
+.hero{position:relative;overflow:clip;padding:10.5rem 2rem 8rem;text-align:center;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;animation:heroEnter 1.2s cubic-bezier(.34,1.56,.64,1) forwards}
 @keyframes heroEnter{
   0%{opacity:0}
   100%{opacity:1}
 }
 
 /* deep layered background — extends above hero so no black gap at top */
-.hero-bg{position:absolute;top:-80px;left:0;right:0;bottom:0;pointer-events:none;background:
+.hero-bg{position:absolute;inset:0;pointer-events:none;background:
   radial-gradient(ellipse 140% 70% at 50% 0%,rgba(90,16,28,1) 0%,transparent 55%),
   radial-gradient(ellipse 70% 40% at 20% 60%,rgba(130,20,40,.22) 0%,transparent 60%),
   radial-gradient(ellipse 70% 40% at 80% 70%,rgba(80,10,30,.18) 0%,transparent 60%),
