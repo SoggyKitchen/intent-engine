@@ -1,23 +1,9 @@
 {
-  "generated_at_utc": "2026-06-03T08:32:27+00:00",
+  "generated_at_utc": "2026-06-03T08:55:08+00:00",
   "pages_scanned": 1409,
   "index_size": 240,
   "brands_covered": 85,
-  "pages_updated": 1,
+  "pages_updated": 0,
   "mode": "apply",
-  "sample_change": {
-    "path": "site/pages/1password-pricing-2026-plans-costs-what-you-actually-pay.html",
-    "page_type": "pricing",
-    "brands": [
-      "1password"
-    ],
-    "links_added": [
-      "1Password free trial guide",
-      "1Password coupons &amp; deals",
-      "1Password alternatives",
-      "1Password full review",
-      "Build a free shortlist",
-      "Run the SaaS ROI calculator"
-    ]
-  }
+  "sample_change": null
 }
