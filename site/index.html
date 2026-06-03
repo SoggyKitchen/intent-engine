@@ -575,9 +575,11 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 :root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
 nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
   display:flex;align-items:center;gap:4px;transition:all .4s ease;
-  background:transparent;border-bottom:none}
+  background:transparent;border-bottom:none;
+  opacity:0;pointer-events:none}
 nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  opacity:1;pointer-events:auto}
 .sp-nav-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
 .sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
   animation:spMarkGlow 4s ease-in-out infinite}
