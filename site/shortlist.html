@@ -498,25 +498,119 @@ function slAddFromSearch(e) {
 }
 
 var SL_TOOLS = {
-  'HubSpot':    {slug:'hubspot-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:20,rating:4.5,reviews:2312,trial:14,logo:'<img src="https://cdn.simpleicons.org/hubspot/ff7a59" alt="HubSpot">'},
-  'Pipedrive':  {slug:'pipedrive-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:14,rating:4.3,reviews:1842,trial:14,logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#0a0a0a;color:#19be46;font-weight:900;font-size:.62em">PD</span>'},
-  'Zoho CRM':   {slug:'zoho-crm-pricing-2026',cat:'CRM',price:14,rating:4.2,reviews:1231,trial:15,logo:'<img src="https://cdn.simpleicons.org/zoho/c8202d" alt="Zoho">'},
-  'Close':      {slug:'close-pricing-2026',cat:'CRM',price:29,rating:4.6,reviews:1105,trial:14,logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.62em">CL</span>'},
-  'Salesforce': {slug:'salesforce-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:25,rating:4.2,reviews:5823,trial:30,logo:'<img src="https://cdn.simpleicons.org/salesforce/00a1e0" alt="Salesforce">'},
-  'Monday':     {slug:'monday-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:9,rating:4.4,reviews:3211,trial:14,logo:'<img src="https://cdn.simpleicons.org/mondaydotcom/f62b54" alt="Monday">'},
-  'Asana':      {slug:'asana-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:10,rating:4.3,reviews:2782,trial:30,logo:'<img src="https://cdn.simpleicons.org/asana/f06a6a" alt="Asana">'},
-  'ClickUp':    {slug:'clickup-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:7,rating:4.5,reviews:4123,trial:14,logo:'<img src="https://cdn.simpleicons.org/clickup/7b68ee" alt="ClickUp">'},
-  'Notion':     {slug:'notion-pricing-2026-plans-costs-what-you-actually-pay',cat:'Productivity',price:8,rating:4.4,reviews:3892,trial:0,logo:'<img src="https://cdn.simpleicons.org/notion/ffffff" alt="Notion">'},
-  'Ahrefs':     {slug:'ahrefs-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:99,rating:4.6,reviews:1834,trial:7,logo:'<img src="https://cdn.simpleicons.org/ahrefs/ff8c00" alt="Ahrefs">'},
-  'Semrush':    {slug:'semrush-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:129,rating:4.5,reviews:2943,trial:7,logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#ff642d;color:#fff;font-weight:900;font-size:.62em">SM</span>'},
-  '1Password':  {slug:'1password-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:3,rating:4.7,reviews:4523,trial:14,logo:'<img src="https://cdn.simpleicons.org/1password/0094f5" alt="1Password">'},
-  'Bitwarden':  {slug:'1password-vs-bitwarden-which-is-better-in-2026',cat:'Security',price:1,rating:4.6,reviews:3219,trial:7,logo:'<img src="https://cdn.simpleicons.org/bitwarden/175DDC" alt="Bitwarden">'},
-  'NordVPN':    {slug:'nordvpn-pricing-2026',cat:'Security',price:4,rating:4.5,reviews:8234,trial:30,logo:'<img src="https://cdn.simpleicons.org/nordvpn/4687FF" alt="NordVPN">'},
-  'Slack':      {slug:'slack-pricing-2026-plans-costs-what-you-actually-pay',cat:'Comms',price:7,rating:4.5,reviews:5673,trial:0,logo:'<img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack">'},
-  'Shopify':    {slug:'shopify-pricing-2026-plans-costs-what-you-actually-pay',cat:'E-commerce',price:29,rating:4.4,reviews:9234,trial:3,logo:'<img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify">'},
-  'Zendesk':    {slug:'zendesk-pricing-2026',cat:'Help Desk',price:19,rating:4.2,reviews:4312,trial:14,logo:'<img src="https://cdn.simpleicons.org/zendesk/03363d" alt="Zendesk">'},
-  'Intercom':   {slug:'intercom-pricing-2026',cat:'Help Desk',price:39,rating:4.3,reviews:1987,trial:14,logo:'<img src="https://cdn.simpleicons.org/intercom/6efac8" alt="Intercom">'}
+  /* ── CRM ── */
+  'HubSpot':        {slug:'hubspot-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:20,rating:4.5,reviews:2312,trial:14,go:'hubspot',logo:'<img src="https://cdn.simpleicons.org/hubspot/ff7a59" alt="HubSpot">'},
+  'Salesforce':     {slug:'salesforce-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:25,rating:4.2,reviews:5823,trial:30,go:'salesforce',logo:'<img src="https://cdn.simpleicons.org/salesforce/00a1e0" alt="Salesforce">'},
+  'Pipedrive':      {slug:'pipedrive-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:14,rating:4.3,reviews:1842,trial:14,go:'pipedrive',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#0a0a0a;color:#19be46;font-weight:900;font-size:.62em">PD</span>'},
+  'Zoho CRM':       {slug:'zoho-crm-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:14,rating:4.2,reviews:1231,trial:15,go:'zoho',logo:'<img src="https://cdn.simpleicons.org/zoho/c8202d" alt="Zoho">'},
+  'Close':          {slug:'close-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:29,rating:4.6,reviews:1105,trial:14,go:'close',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.62em">CL</span>'},
+  'Copper CRM':     {slug:'copper-crm-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:23,rating:4.3,reviews:892,trial:14,go:'copper',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#e8622a;color:#fff;font-weight:900;font-size:.62em">Cu</span>'},
+  'Keap':           {slug:'keap-pricing-2026-plans-costs-what-you-actually-pay',cat:'CRM',price:89,rating:4.1,reviews:1203,trial:14,go:'keap',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#2b9348;color:#fff;font-weight:900;font-size:.62em">Kp</span>'},
+  /* ── PROJECT MGMT ── */
+  'Asana':          {slug:'asana-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:10,rating:4.3,reviews:2782,trial:30,go:'asana',logo:'<img src="https://cdn.simpleicons.org/asana/f06a6a" alt="Asana">'},
+  'ClickUp':        {slug:'clickup-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:7,rating:4.5,reviews:4123,trial:14,go:'clickup',logo:'<img src="https://cdn.simpleicons.org/clickup/7b68ee" alt="ClickUp">'},
+  'Monday.com':     {slug:'monday-com-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:9,rating:4.4,reviews:3211,trial:14,go:'monday',logo:'<img src="https://cdn.simpleicons.org/mondaydotcom/f62b54" alt="Monday">'},
+  'Linear':         {slug:'linear-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:8,rating:4.7,reviews:921,trial:0,go:'linear',logo:'<img src="https://cdn.simpleicons.org/linear/5e6ad2" alt="Linear">'},
+  'Jira':           {slug:'jira-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:7,rating:4.1,reviews:5124,trial:0,go:'jira',logo:'<img src="https://cdn.simpleicons.org/jira/0052cc" alt="Jira">'},
+  'Trello':         {slug:'trello-pricing-2026-plans-costs-what-you-actually-pay',cat:'Project',price:5,rating:4.4,reviews:4231,trial:0,go:'atlassian-trello',logo:'<img src="https://cdn.simpleicons.org/trello/0052cc" alt="Trello">'},
+  /* ── PRODUCTIVITY ── */
+  'Notion':         {slug:'notion-pricing-2026-plans-costs-what-you-actually-pay',cat:'Productivity',price:8,rating:4.4,reviews:3892,trial:0,go:'notion',logo:'<img src="https://cdn.simpleicons.org/notion/ffffff" alt="Notion">'},
+  'Coda':           {slug:'coda-pricing-2026-plans-costs-what-you-actually-pay',cat:'Productivity',price:10,rating:4.3,reviews:892,trial:0,go:'coda',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#3b3b3b;color:#fff;font-weight:900;font-size:.62em">Cd</span>'},
+  'Airtable':       {slug:'airtable-pricing-2026-plans-costs-what-you-actually-pay',cat:'Productivity',price:10,rating:4.4,reviews:2341,trial:0,go:'airtable',logo:'<img src="https://cdn.simpleicons.org/airtable/18bfff" alt="Airtable">'},
+  /* ── SEO ── */
+  'Ahrefs':         {slug:'ahrefs-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:99,rating:4.6,reviews:1834,trial:7,go:'ahrefs',logo:'<img src="https://cdn.simpleicons.org/ahrefs/ff8c00" alt="Ahrefs">'},
+  'Semrush':        {slug:'semrush-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:129,rating:4.5,reviews:2943,trial:7,go:'semrush',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#ff642d;color:#fff;font-weight:900;font-size:.62em">SM</span>'},
+  'Moz Pro':        {slug:'moz-pro-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:99,rating:4.2,reviews:1234,trial:30,go:'moz',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#2d4ebd;color:#fff;font-weight:900;font-size:.62em">Mz</span>'},
+  'Surfer SEO':     {slug:'surfer-seo-pricing-2026-plans-costs-what-you-actually-pay',cat:'SEO',price:89,rating:4.5,reviews:892,trial:7,go:'surfer-seo',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#ff6b2b;color:#fff;font-weight:900;font-size:.62em">Su</span>'},
+  /* ── SECURITY ── */
+  '1Password':      {slug:'1password-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:3,rating:4.7,reviews:4523,trial:14,go:'1password',logo:'<img src="https://cdn.simpleicons.org/1password/0094f5" alt="1Password">'},
+  'Bitwarden':      {slug:'bitwarden-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:1,rating:4.6,reviews:3219,trial:7,go:'bitwarden',logo:'<img src="https://cdn.simpleicons.org/bitwarden/175DDC" alt="Bitwarden">'},
+  'Dashlane':       {slug:'dashlane-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:4,rating:4.4,reviews:1892,trial:30,go:'dashlane',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#00b88a;color:#fff;font-weight:900;font-size:.62em">Da</span>'},
+  'LastPass':       {slug:'lastpass-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:3,rating:4.1,reviews:5621,trial:30,go:'lastpass',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#d32d27;color:#fff;font-weight:900;font-size:.62em">LP</span>'},
+  'NordVPN':        {slug:'nordvpn-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:4,rating:4.5,reviews:8234,trial:30,go:'nordvpn',logo:'<img src="https://cdn.simpleicons.org/nordvpn/4687FF" alt="NordVPN">'},
+  'ProtonVPN':      {slug:'protonvpn-pricing-2026-plans-costs-what-you-actually-pay',cat:'Security',price:5,rating:4.6,reviews:3421,trial:0,go:'protonvpn',logo:'<img src="https://cdn.simpleicons.org/protonvpn/6d4aff" alt="ProtonVPN">'},
+  /* ── MARKETING ── */
+  'ActiveCampaign': {slug:'activecampaign-pricing-2026-plans-costs-what-you-actually-pay',cat:'Marketing',price:15,rating:4.5,reviews:2341,trial:14,go:'activecampaign',logo:'<img src="https://cdn.simpleicons.org/activecampaign/356ae3" alt="ActiveCampaign">'},
+  'Mailchimp':      {slug:'mailchimp-pricing-2026-plans-costs-what-you-actually-pay',cat:'Marketing',price:13,rating:4.2,reviews:7823,trial:0,go:'mailchimp',logo:'<img src="https://cdn.simpleicons.org/mailchimp/ffe01b" alt="Mailchimp">'},
+  'Klaviyo':        {slug:'klaviyo-pricing-2026-plans-costs-what-you-actually-pay',cat:'Marketing',price:20,rating:4.4,reviews:1923,trial:0,go:'klaviyo',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#000;color:#fff;font-weight:900;font-size:.62em">Kv</span>'},
+  'Brevo':          {slug:'brevo-pricing-2026-plans-costs-what-you-actually-pay',cat:'Marketing',price:9,rating:4.4,reviews:1623,trial:0,go:'brevo',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#0092ff;color:#fff;font-weight:900;font-size:.62em">Br</span>'},
+  'ConvertKit':     {slug:'convertkit-pricing-2026-plans-costs-what-you-actually-pay',cat:'Marketing',price:9,rating:4.4,reviews:892,trial:0,go:'convertkit',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#fb6970;color:#fff;font-weight:900;font-size:.62em">CK</span>'},
+  'GetResponse':    {slug:'getresponse-pricing-2026-plans-costs-what-you-actually-pay',cat:'Marketing',price:15,rating:4.2,reviews:1234,trial:30,go:'getresponse',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#00baff;color:#fff;font-weight:900;font-size:.62em">GR</span>'},
+  /* ── COMMS ── */
+  'Slack':          {slug:'slack-pricing-2026-plans-costs-what-you-actually-pay',cat:'Comms',price:7,rating:4.5,reviews:5673,trial:0,go:'slack',logo:'<img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack">'},
+  'Zoom':           {slug:'zoom-pricing-2026-plans-costs-what-you-actually-pay',cat:'Comms',price:15,rating:4.4,reviews:6234,trial:0,go:'zoom',logo:'<img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Zoom">'},
+  'Microsoft Teams':{slug:'microsoft-teams-pricing-2026-plans-costs-what-you-actually-pay',cat:'Comms',price:4,rating:4.3,reviews:8921,trial:30,go:'microsoft-teams',logo:'<img src="https://cdn.simpleicons.org/microsoftteams/6264a7" alt="Teams">'},
+  'Loom':           {slug:'loom-pricing-2026-plans-costs-what-you-actually-pay',cat:'Comms',price:8,rating:4.6,reviews:2341,trial:0,go:'loom',logo:'<img src="https://cdn.simpleicons.org/loom/625df5" alt="Loom">'},
+  /* ── HELP DESK ── */
+  'Zendesk':        {slug:'zendesk-pricing-2026-plans-costs-what-you-actually-pay',cat:'Help Desk',price:19,rating:4.2,reviews:4312,trial:14,go:'zendesk',logo:'<img src="https://cdn.simpleicons.org/zendesk/03363d" alt="Zendesk">'},
+  'Intercom':       {slug:'intercom-pricing-2026-plans-costs-what-you-actually-pay',cat:'Help Desk',price:39,rating:4.3,reviews:1987,trial:14,go:'intercom',logo:'<img src="https://cdn.simpleicons.org/intercom/6efac8" alt="Intercom">'},
+  'Freshdesk':      {slug:'freshdesk-pricing-2026-plans-costs-what-you-actually-pay',cat:'Help Desk',price:15,rating:4.3,reviews:3421,trial:21,go:'freshdesk',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#25c16f;color:#fff;font-weight:900;font-size:.62em">Fd</span>'},
+  'HelpScout':      {slug:'helpscout-pricing-2026-plans-costs-what-you-actually-pay',cat:'Help Desk',price:20,rating:4.4,reviews:892,trial:15,go:'helpscout',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#1292ee;color:#fff;font-weight:900;font-size:.62em">HS</span>'},
+  /* ── E-COMMERCE ── */
+  'Shopify':        {slug:'shopify-pricing-2026-plans-costs-what-you-actually-pay',cat:'E-commerce',price:29,rating:4.4,reviews:9234,trial:3,go:'shopify',logo:'<img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify">'},
+  'BigCommerce':    {slug:'bigcommerce-pricing-2026-plans-costs-what-you-actually-pay',cat:'E-commerce',price:29,rating:4.2,reviews:1892,trial:15,go:'bigcommerce',logo:'<img src="https://cdn.simpleicons.org/bigcommerce/121118" alt="BigCommerce">'},
+  'WooCommerce':    {slug:'woocommerce-pricing-2026-plans-costs-what-you-actually-pay',cat:'E-commerce',price:0,rating:4.3,reviews:6821,trial:0,go:'woocommerce',logo:'<img src="https://cdn.simpleicons.org/woocommerce/96588a" alt="WooCommerce">'},
+  'Wix':            {slug:'wix-pricing-2026-plans-costs-what-you-actually-pay',cat:'E-commerce',price:17,rating:4.2,reviews:5234,trial:0,go:'wix',logo:'<img src="https://cdn.simpleicons.org/wix/0c6efc" alt="Wix">'},
+  /* ── FINANCE ── */
+  'Xero':           {slug:'xero-pricing-2026-plans-costs-what-you-actually-pay',cat:'Finance',price:15,rating:4.4,reviews:3421,trial:30,go:'xero',logo:'<img src="https://cdn.simpleicons.org/xero/13b5ea" alt="Xero">'},
+  'QuickBooks':     {slug:'quickbooks-pricing-2026-plans-costs-what-you-actually-pay',cat:'Finance',price:30,rating:4.2,reviews:8923,trial:30,go:'quickbooks',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#2ca01c;color:#fff;font-weight:900;font-size:.62em">QB</span>'},
+  'FreshBooks':     {slug:'freshbooks-pricing-2026-plans-costs-what-you-actually-pay',cat:'Finance',price:17,rating:4.4,reviews:4231,trial:30,go:'freshbooks',logo:'<img src="https://cdn.simpleicons.org/freshworks/4285f4" alt="FreshBooks">'},
+  'Ramp':           {slug:'ramp-pricing-2026-plans-costs-what-you-actually-pay',cat:'Finance',price:0,rating:4.7,reviews:1234,trial:0,go:'ramp',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#fd7e14;color:#fff;font-weight:900;font-size:.62em">Rp</span>'},
+  /* ── HR ── */
+  'BambooHR':       {slug:'bamboohr-pricing-2026-plans-costs-what-you-actually-pay',cat:'HR',price:6,rating:4.4,reviews:2341,trial:7,go:'bamboohr',logo:'<img src="https://cdn.simpleicons.org/bamboo/97c234" alt="BambooHR">'},
+  'Rippling':       {slug:'rippling-pricing-2026-plans-costs-what-you-actually-pay',cat:'HR',price:8,rating:4.6,reviews:1823,trial:0,go:'rippling',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#ff3a1f;color:#fff;font-weight:900;font-size:.62em">Rp</span>'},
+  'Deel':           {slug:'deel-pricing-2026-plans-costs-what-you-actually-pay',cat:'HR',price:49,rating:4.5,reviews:1234,trial:0,go:'deel',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#1a1a2e;color:#fff;font-weight:900;font-size:.62em">De</span>'},
+  /* ── ANALYTICS ── */
+  'Mixpanel':       {slug:'mixpanel-pricing-2026-plans-costs-what-you-actually-pay',cat:'Analytics',price:20,rating:4.4,reviews:1234,trial:0,go:'mixpanel',logo:'<img src="https://cdn.simpleicons.org/mixpanel/7856ff" alt="Mixpanel">'},
+  'Amplitude':      {slug:'amplitude-pricing-2026-plans-costs-what-you-actually-pay',cat:'Analytics',price:49,rating:4.4,reviews:892,trial:0,go:'amplitude',logo:'<img src="https://cdn.simpleicons.org/amplitude/1d64fa" alt="Amplitude">'},
+  'Hotjar':         {slug:'hotjar-pricing-2026-plans-costs-what-you-actually-pay',cat:'Analytics',price:32,rating:4.4,reviews:2341,trial:0,go:'hotjar',logo:'<img src="https://cdn.simpleicons.org/hotjar/fd3a5c" alt="Hotjar">'},
+  'Datadog':        {slug:'datadog-pricing-2026-plans-costs-what-you-actually-pay',cat:'Analytics',price:15,rating:4.3,reviews:892,trial:14,go:'datadog',logo:'<img src="https://cdn.simpleicons.org/datadog/632ca6" alt="Datadog">'},
+  /* ── DESIGN ── */
+  'Figma':          {slug:'figma-pricing-2026-plans-costs-what-you-actually-pay',cat:'Design',price:12,rating:4.7,reviews:5234,trial:0,go:'figma',logo:'<img src="https://cdn.simpleicons.org/figma/f24e1e" alt="Figma">'},
+  'Canva':          {slug:'canva-pricing-2026-plans-costs-what-you-actually-pay',cat:'Design',price:13,rating:4.6,reviews:8921,trial:0,go:'canva',logo:'<img src="https://cdn.simpleicons.org/canva/00c4cc" alt="Canva">'},
+  'Adobe Creative': {slug:'adobe-creative-cloud-pricing-2026-plans-costs-what-you-actually-pay',cat:'Design',price:55,rating:4.3,reviews:6234,trial:7,go:'adobe',logo:'<img src="https://cdn.simpleicons.org/adobe/ff0000" alt="Adobe">'},
+  /* ── DEV TOOLS ── */
+  'GitHub':         {slug:'github-pricing-2026-plans-costs-what-you-actually-pay',cat:'Dev',price:4,rating:4.7,reviews:9234,trial:0,go:'github',logo:'<img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">'},
+  'Cloudflare':     {slug:'cloudflare-pricing-2026-plans-costs-what-you-actually-pay',cat:'Dev',price:0,rating:4.6,reviews:3421,trial:0,go:'cloudflare-zero-trust',logo:'<img src="https://cdn.simpleicons.org/cloudflare/f48120" alt="Cloudflare">'},
+  'Vercel':         {slug:'vercel-pricing-2026-plans-costs-what-you-actually-pay',cat:'Dev',price:20,rating:4.7,reviews:1892,trial:0,go:'vercel',logo:'<img src="https://cdn.simpleicons.org/vercel/ffffff" alt="Vercel">'},
+  'Webflow':        {slug:'webflow-pricing-2026-plans-costs-what-you-actually-pay',cat:'Dev',price:14,rating:4.5,reviews:2341,trial:0,go:'webflow',logo:'<img src="https://cdn.simpleicons.org/webflow/4353ff" alt="Webflow">'},
+  /* ── AI ── */
+  'Jasper':         {slug:'jasper-pricing-2026-plans-costs-what-you-actually-pay',cat:'AI',price:39,rating:4.3,reviews:1234,trial:7,go:'jasper',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#ff7b00;color:#fff;font-weight:900;font-size:.62em">Ja</span>'},
+  'Copy.ai':        {slug:'copy-ai-pricing-2026-plans-costs-what-you-actually-pay',cat:'AI',price:36,rating:4.2,reviews:892,trial:0,go:'copy-ai',logo:'<span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#7d2ae8;color:#fff;font-weight:900;font-size:.62em">Cp</span>'},
+  /* ── FREELANCE ── */
+  'Fiverr':         {slug:'fiverr-pricing-2026-plans-costs-what-you-actually-pay',cat:'Freelance',price:0,rating:4.3,reviews:12341,trial:0,go:'fiverr',logo:'<img src="https://cdn.simpleicons.org/fiverr/1dbf73" alt="Fiverr">'},
+  'Upwork':         {slug:'upwork-pricing-2026-plans-costs-what-you-actually-pay',cat:'Freelance',price:0,rating:4.2,reviews:8923,trial:0,go:'upwork',logo:'<img src="https://cdn.simpleicons.org/upwork/6fda44" alt="Upwork">'},
 };
+
+/* ── localStorage persistence ── */
+(function(){
+  var STORAGE_KEY = 'ss_shortlist_v2';
+  function slSave(){
+    var names = [];
+    document.querySelectorAll('.sl-card-name').forEach(function(el){ names.push(el.textContent.trim()); });
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(names)); }catch(e){}
+  }
+  function slLoad(){
+    try{
+      var saved = JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');
+      saved.forEach(function(name){ if(SL_TOOLS[name]) slAddCard(name); });
+    }catch(e){}
+  }
+  /* Patch slAddCard to auto-save */
+  var origAdd = slAddCard;
+  window.slAddCard = function(name){
+    origAdd(name);
+    slSave();
+  };
+  /* Patch slRemove to auto-save */
+  var origRemove = window.slRemove;
+  if(origRemove){
+    window.slRemove = function(btn){ origRemove(btn); setTimeout(slSave, 100); };
+  }
+  /* Load on page ready */
+  if(document.readyState !== 'loading') slLoad();
+  else document.addEventListener('DOMContentLoaded', slLoad);
+})();
 
 function slAddCard(name) {
   var t = SL_TOOLS[name];
@@ -538,7 +632,10 @@ function slAddCard(name) {
     '<div class="sl-price">$'+t.price+'<em>/seat/mo</em></div>'+
     '<div class="sl-stars"><span>★</span> '+t.rating+' ('+t.reviews.toLocaleString()+')</div>'+
     trial+
-    '<a class="sl-details" href="/pages/'+t.slug+'" target="_blank" rel="noopener">View Details →</a>';
+    '<div style="display:flex;gap:8px;margin-top:auto">' +
+    '<a class="sl-details" href="/pages/'+t.slug+'" style="flex:1" target="_blank" rel="noopener">View Details</a>' +
+    (t.go ? '<a href="/go/'+t.go+'" class="sl-details" style="flex:1;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border-color:transparent;text-align:center" target="_blank" rel="sponsored noopener" data-track="affiliate" data-tool="'+name+'">Try Free →</a>' : '') +
+    '</div>';
   var empty = container.querySelector('.sl-card-empty');
   if (empty) container.insertBefore(art, empty);
   else container.appendChild(art);
