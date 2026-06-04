@@ -17,6 +17,10 @@ on:
 permissions:
   contents: write
 
+env:
+  # Use Node.js 24 for all actions (required before June 16 2026 deadline)
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   integrity:
     runs-on: ubuntu-latest
