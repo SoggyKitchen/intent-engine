@@ -377,6 +377,43 @@ PRICING = {
             ("What is Ramp Plus?","Ramp Plus ($12–15/user/mo) adds custom approval workflows, advanced analytics, enhanced ERP integrations (NetSuite, Sage Intacct), and priority support."),
         ]
     ),
+    "aweber": dict(
+        name="AWeber", logo="https://cdn.simpleicons.org/aweber/2575be",
+        go="/go/aweber", history="/pages/aweber-pricing-history-2026",
+        page="/pages/getresponse-vs-aweber-which-is-better-in-2026",
+        sticky="AWeber's free plan covers 500 subscribers — start free and upgrade when you need automation.",
+        hidden_risk="Low", hidden_note="Pricing scales with subscriber count — re-check costs as your list grows",
+        meta_desc="AWeber pricing 2026: Free up to 500 subscribers, Lite from $12.50/mo, Plus from $20/mo (annual, 500 subs). Pricing scales with list size — full cost breakdown at every list tier.",
+        plans=[
+            dict(name="Free",  mo="$0",       annual="$0",       best="Up to 500 subscribers", users="1",   storage="500 subs",    support="Email only",   f=["3,000 emails/month","Basic templates","Sign-up forms"],          fc=["cm","cw","cw"]),
+            dict(name="Lite",  mo="$15",       annual="$12.50",   best="Solopreneurs & bloggers",users="1",  storage="500+ subs",   support="Email + chat", f=["Unlimited emails","Landing pages","Basic automations"],           fc=["cw","cm","cw"]),
+            dict(name="Plus",  mo="$25",       annual="$20",      best="Growing lists",          users="3",  storage="500+ subs",   support="Priority 24/7",f=["Full automations","Split testing","Sales tracking"],              fc=["cw","cw","cw"]),
+            dict(name="Unlimited", mo="Custom", annual="$899",   best="High-volume senders",   users="Unlimited", storage="Unlimited", support="Priority 24/7",f=["Unlimited subscribers","Advanced analytics","Custom branding"],fc=["cw","cw","cw"]),
+        ],
+        hidden=[
+            dict(name="Subscriber-based pricing", desc="Lite and Plus pricing shown is for 500 subscribers. At 2,500 subs: ~$25–45/mo. At 10,000 subs: ~$50–80/mo. Costs climb fast with list growth."),
+            dict(name="Monthly vs annual billing", desc="Monthly billing costs ~20% more than annual. Annual billing commits you for 12 months."),
+            dict(name="Landing page limits on Free", desc="Free plan limits landing pages and advanced form features — you'll need Lite or Plus for serious lead capture."),
+        ],
+        scenarios=[
+            dict(users="Blogger, 200 subscribers", cost="$0/mo", plan="Free", plan_cls="v-value", breakdown="Free plan — 3k emails/month, basic templates, adequate for starting out"),
+            dict(users="Consultant, 1,500 subscribers", cost="~$25/mo", plan="Lite", plan_cls="v-smb", breakdown="Lite annual at 1,500 subscribers tier — unlimited sends, basic automations"),
+            dict(users="SMB, 5,000 subscribers", cost="~$50/mo", plan="Plus", plan_cls="v-visual", breakdown="Plus annual at 5,000 subscribers tier — full automation, split testing, sales tracking"),
+        ],
+        alts=[
+            dict(name="GetResponse",    url="/pages/getresponse-vs-aweber-which-is-better-in-2026", price="From $19/mo",   logo="https://cdn.simpleicons.org/getresponse/00baff"),
+            dict(name="Mailchimp",      url="/pages/mailchimp-vs-activecampaign-which-is-better-in-2026", price="Free/$13+/mo", logo="https://cdn.simpleicons.org/mailchimp/ffe01b"),
+            dict(name="ActiveCampaign", url="/pages/activecampaign-vs-brevo-which-is-better-in-2026",   price="From $15/mo",  logo="https://cdn.simpleicons.org/activecampaign/356ae4"),
+            dict(name="Brevo",          url="/pages/brevo-vs-convertkit-which-is-better-in-2026",       price="Free/$25+/mo", logo="https://cdn.simpleicons.org/brevo/0b996e"),
+        ],
+        faqs=[
+            ("How much does AWeber cost per month?","AWeber starts free for up to 500 subscribers. Lite starts at $12.50/mo (annual) for 500 subscribers. Plus starts at $20/mo (annual). Pricing scales with your subscriber count — expect to pay more as your list grows."),
+            ("Does AWeber have a free plan?","Yes — AWeber Free covers up to 500 subscribers and 3,000 emails/month. You get basic templates and sign-up forms. Automations and advanced features require a paid plan."),
+            ("How does AWeber pricing compare to Mailchimp?","AWeber Free covers 500 subs vs Mailchimp's 500 subs with a 1,000 emails/month limit. At 2,500 subscribers, AWeber Lite is typically cheaper than Mailchimp's Essentials plan."),
+            ("Does AWeber charge per email sent?","No — AWeber's paid plans include unlimited emails. Only the Free plan limits sends to 3,000/month."),
+            ("Is AWeber worth it in 2026?","AWeber is a solid choice for bloggers, consultants, and small businesses that want reliable email delivery and simple automations without complexity. For advanced segmentation or CRM-level automation, consider ActiveCampaign or GetResponse."),
+        ]
+    ),
 }
 
 # Generic fallback for tools not in the database
