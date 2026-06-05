@@ -288,35 +288,43 @@ def main() -> int:
 
 def _write_md(opps: list[dict], acquire: list[dict], gsc_live: bool) -> None:
     note = ("Live GSC data." if gsc_live else
-            "GSC offline (no local creds) — revenue model needs the CI-committed "
-            "gsc-opportunities.json. Traffic-blind run: ranks by program value only.")
-    lines = [
-        "# Revenue Opportunities",
-        "",
-        f"Status: {note}",
-        "",
-        "Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live "
-        "earnings. Connect IMPACT_API_TOKEN to replace with real EPC + conversions.",
-        "",
-        "## Top revenue-weighted pages",
-        "",
+            "GSC offline (no creds / pull failed) — revenue model needs live "
+            "gsc-opportunities.json. Traffic-blind run: program map only, no $ ranking.")
+    disclaimer = ("Dollar values are MODELLED from network benchmarks (see CLAUDE.md), "
+                  "not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.")
+
+    # File 1 — revenue-opportunities.md (pages ranked by $ uplift)
+    rev = [
+        "# Revenue Opportunities", "", f"Status: {note}", "", disclaimer, "",
+        "## Top revenue-weighted pages", "",
     ]
-    for o in opps[:50]:
-        lines.append(
-            f"- **${o['estMonthlyUpliftUsd']:,.0f}/mo** (score {o['score']}) "
-            f"`{o['page']}` → {o['program']} [{o['status']}/{o['linkState']}] "
-            f"· impr {o['impressions']}, pos {o['position']}, "
-            f"+{o['estExtraClicksMo']} clicks/mo @ ${o['valuePerConvUsd']}/conv"
-        )
-    lines += ["", "## Programs to acquire (ranked by traffic already on their pages)", "",
-              "Apply to / unlock these first — the pages already rank, they just don't earn yet.", ""]
-    for v in acquire[:25]:
-        lines.append(
+    if opps:
+        for o in opps[:50]:
+            rev.append(
+                f"- **${o['estMonthlyUpliftUsd']:,.0f}/mo** (score {o['score']}) "
+                f"`{o['page']}` -> {o['program']} [{o['status']}/{o['linkState']}] "
+                f"· impr {o['impressions']}, pos {o['position']}, "
+                f"+{o['estExtraClicksMo']} clicks/mo @ ${o['valuePerConvUsd']}/conv"
+            )
+    else:
+        rev.append("_No traffic-scored opportunities (GSC offline). See program-acquisition.md._")
+    (REPORTS / "revenue-opportunities.md").write_text("\n".join(rev) + "\n", encoding="utf-8")
+
+    # File 2 — program-acquisition.md (programs to apply to, ranked by page traffic)
+    acq = [
+        "# Program Acquisition Priority", "", f"Status: {note}", "",
+        "Unapproved / locked / placeholder programs ranked by traffic already on their "
+        "pages. Apply to / unlock these first — the pages already rank, they just don't earn.",
+        "", f"({disclaimer})", "",
+    ]
+    sort_key = "impressions" if gsc_live else "pages"
+    for v in sorted(acquire, key=lambda x: x[sort_key], reverse=True)[:25]:
+        acq.append(
             f"- **{v['program']}** [{v['status']}, {v['network']}] — "
             f"{v['pages']} pages, {round(v['impressions']):,} impressions, "
             f"${v['valuePerConvUsd']}/conv"
         )
-    (REPORTS / "program-acquisition.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (REPORTS / "program-acquisition.md").write_text("\n".join(acq) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

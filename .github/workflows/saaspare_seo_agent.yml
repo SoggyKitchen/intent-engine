@@ -23,7 +23,9 @@ jobs:
 
       - name: Run SEO audit
         env:
-          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL || 'sc-domain:saaspare.org' }}
+          # Force domain-property format. The OAuth user has access to the
+          # sc-domain property, NOT the https:// URL-prefix property (that 403s).
+          GSC_SITE_URL: 'sc-domain:saaspare.org'
           GSC_OAUTH_CLIENT_ID: ${{ secrets.GSC_OAUTH_CLIENT_ID }}
           GSC_OAUTH_CLIENT_SECRET: ${{ secrets.GSC_OAUTH_CLIENT_SECRET }}
           GSC_OAUTH_REFRESH_TOKEN: ${{ secrets.GSC_OAUTH_REFRESH_TOKEN }}
