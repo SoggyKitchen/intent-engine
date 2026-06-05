@@ -28,6 +28,7 @@ PRICING = {
         go="/go/shopify", history="/pages/shopify-pricing-history-2026",
         page="/pages/best-shopify-alternatives-2026", sticky="Shopify's Basic plan is the best entry point for most stores.",
         hidden_risk="Medium", hidden_note="Transaction fees add up unless you use Shopify Payments",
+        meta_desc="Shopify raised Basic from $25 to $29/mo — we track every pricing change. June 2026: Basic $29, Shopify $79, Advanced $299 (all annual). Transaction fee trap + hidden app costs exposed.",
         plans=[
             dict(name="Starter",   mo="$5",    annual="$5",    best="Social selling only", users="1",    storage="Unlimited", support="Email",          f=["Buy Button only","No storefront","Checkout links"],      fc=["cl","cl","cm"]),
             dict(name="Basic",     mo="$39",   annual="$29",   best="New stores",          users="2",    storage="Unlimited", support="24/7 chat",      f=["2% transaction fee","10 inventory locations","Basic reports"], fc=["cm","cw","cm"]),
@@ -65,6 +66,7 @@ PRICING = {
         go="/go/hubspot-crm", history="/pages/hubspot-pricing-history-2026",
         page="/pages/best-hubspot-alternatives-2026", sticky="HubSpot's free CRM is genuinely unlimited — start there before paying.",
         hidden_risk="High", hidden_note="Mandatory onboarding fees and Hub add-ons can triple year-one cost",
+        meta_desc="HubSpot overhauled pricing in 2024 — we track every update. June 2026: Starter $15/user/mo, Professional $890/5 seats, mandatory $3,000+ onboarding fee exposed. Real cost by team size.",
         plans=[
             dict(name="Free",         mo="$0",    annual="$0",    best="Solo / exploring",  users="Unlimited", storage="Unlimited contacts", support="Community",    f=["Contact management","Deal pipeline","Basic email"],     fc=["cw","cw","cm"]),
             dict(name="Starter",      mo="$20/user", annual="$15/user", best="Small teams", users="Unlimited", storage="Unlimited contacts", support="Email only",   f=["Email sequences (5)","Simple automation","Custom props"],fc=["cm","cw","cw"]),
@@ -136,6 +138,7 @@ PRICING = {
         go="/go/clickup", history="/pages/clickup-pricing-history-2026",
         page="/pages/best-clickup-alternatives-in-2026-free-paid", sticky="ClickUp's free plan is one of the most generous in project management.",
         hidden_risk="Low", hidden_note="Storage limits and guest seat caps can surprise growing teams",
+        meta_desc="ClickUp restructured pricing with their 3.0 relaunch — we track every change. June 2026: Free forever, Unlimited $7/user, Business $12/user. Storage limits, AI add-on costs & hidden fees exposed.",
         plans=[
             dict(name="Free",      mo="$0",    annual="$0",   best="Solo / small teams", users="Unlimited", storage="100MB",     support="24/7 chat", f=["Unlimited tasks","Unlimited members","100 automation/mo"],    fc=["cw","cw","cm"]),
             dict(name="Unlimited", mo="$10",   annual="$7",   best="Small teams",        users="Unlimited", storage="Unlimited", support="24/7 chat", f=["Unlimited storage","Unlimited integrations","1,000 auto/mo"], fc=["cw","cw","cw"]),
@@ -171,6 +174,7 @@ PRICING = {
         go="/go/semrush", history="/pages/semrush-pricing-history-2026",
         page="/pages/best-semrush-alternatives-2026", sticky="Semrush Pro at $139.95/mo is the industry standard for SEO professionals.",
         hidden_risk="Medium", hidden_note="Multi-user access and historical data cost extra on all tiers",
+        meta_desc="Semrush raised Pro to $139.95/mo — we track every pricing change. June 2026: Pro $117/mo (annual), Guru $208/mo, Business $375/mo. Extra user seats $45/mo each. Full cost breakdown.",
         plans=[
             dict(name="Pro",     mo="$139.95", annual="$117.33", best="Freelancers / startups", users="1",  storage="10K results/report", support="Email+chat", f=["5 projects","500 tracked keywords","100K pages/crawl"],     fc=["cm","cm","cw"]),
             dict(name="Guru",    mo="$249.95", annual="$208.33", best="SMBs / agencies",        users="1",  storage="30K results/report", support="Priority",   f=["15 projects","1,500 tracked keywords","Content Marketing"],  fc=["cw","cw","cw"]),
