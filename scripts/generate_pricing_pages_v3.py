@@ -342,6 +342,7 @@ PRICING = {
         go="/go/ramp", history="/pages/ramp-pricing-history-2026",
         page="/pages/best-ramp-alternatives-2026", sticky="Ramp is free for most businesses — it earns revenue from interchange fees.",
         hidden_risk="Low", hidden_note="Ramp is free but requires a US business entity and minimum revenue",
+        meta_desc=f"Ramp pricing 2026 — core card is free, Ramp Plus $15/user/mo. We track every Ramp pricing change (April, May, June 2026) and expose the 3 hidden costs teams miss.",
         plans=[
             dict(name="Ramp Free",      mo="$0",    annual="$0",    best="Most businesses",   users="Unlimited", storage="Unlimited cards",   support="Email+chat", f=["Unlimited virtual + physical cards","Expense management","Bill pay free"],         fc=["cw","cw","cw"]),
             dict(name="Ramp Plus",      mo="$15/user",annual="$12/user",best="Power users",   users="Unlimited", storage="Unlimited cards",   support="Priority",   f=["Custom approval chains","Advanced analytics","ERP integrations"],                  fc=["cw","cw","cw"]),
@@ -365,11 +366,11 @@ PRICING = {
             dict(name="Spendesk",url="/pages/spendesk-pricing-2026-plans-costs-what-you-actually-pay", price="From $9/user", logo="https://cdn.simpleicons.org/spendesk/5200ff"),
         ],
         faqs=[
+            ("Did Ramp change pricing in 2026?","Yes. Ramp adjusted Ramp Plus pricing in early 2026 to a $12–15/user/mo range based on contract length (annual vs monthly). The core Ramp card product remained free throughout. We track every pricing change on the Ramp pricing history page with sources."),
+            ("What is Ramp's pricing in June 2026?","As of June 2026: Ramp Free ($0 forever), Ramp Plus ($15/user/mo monthly or $12/user/mo annual), Ramp Enterprise (custom). Verified directly from Ramp's pricing page on 4 June 2026."),
             ("Is Ramp really free?","Yes — Ramp's core product (cards, expense management, bill pay) is free. Ramp earns revenue from interchange fees paid by merchants, not from customers."),
             ("Who is Ramp for?","Ramp is for US-registered businesses with at least $25,000 in a business bank account. Not available for personal use, non-US companies, or pre-revenue startups."),
             ("What is Ramp Plus?","Ramp Plus ($12–15/user/mo) adds custom approval workflows, advanced analytics, enhanced ERP integrations (NetSuite, Sage Intacct), and priority support."),
-            ("How does Ramp make money?","Ramp earns interchange fees — a percentage of each transaction charged to the merchant. This is how Visa/Mastercard card products generate revenue, making the card 'free' to the business."),
-            ("Ramp vs Brex — which is better?","Both are free corporate card platforms for US businesses. Ramp focuses on cost savings and expense controls; Brex is better for startups and venture-backed companies. Ramp requires $25K in bank; Brex has fewer restrictions."),
         ]
     ),
 }
@@ -524,7 +525,7 @@ def build_tokens(data):
     for i in range(len(faqs)+1, 6):
         t[f"FAQ_{i}_Q"] = ""; t[f"FAQ_{i}_A"] = ""
 
-    t["META_DESCRIPTION"] = f"{data['name']} pricing 2026: all plans compared, hidden fees exposed, and real cost by team size. Verified {TODAY}."
+    t["META_DESCRIPTION"] = data.get("meta_desc") or f"{data['name']} pricing 2026: all plans compared, hidden fees exposed, and real cost by team size. Verified {TODAY}."
     return t
 
 def generate_pricing_page(path, template_html, tool_data):
