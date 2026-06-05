@@ -29,6 +29,20 @@ Long-term log of what works on SaaSpare. Append at the end of every session.
   Done for shopify/hubspot/clickup/semrush (commit d31e4a62e). Notion/Monday rely on the
   premium-template skip-condition instead.
 
+## BLOCKER: GSC 403 (owner must fix — 2 min) — discovered 2026-06-06
+- The daily agent now correctly requests `sc-domain:saaspare.org` (format fixed) but the
+  Google account behind the `GSC_OAUTH_REFRESH_TOKEN` GitHub secret is NOT authorized on
+  the property. Error: "User does not have sufficient permission for site 'sc-domain:saaspare.org'".
+- This is the ONLY thing stopping the revenue engine from producing live dollar rankings.
+  Everything else (audit, revenue join, program map, daily commit) works.
+- FIX (one of):
+  (a) In Search Console → Settings → Users and permissions → add the OAuth account
+      (the Google account used to mint the refresh token) as Full/Owner on the
+      saaspare.org domain property; OR
+  (b) Regenerate GSC_OAUTH_REFRESH_TOKEN using the Google account that already owns the
+      GSC property, and update the GitHub secret.
+- Once fixed, the next daily run auto-populates revenue-opportunities.md with real $ ranking.
+
 ## Known issues / pending (owner actions)
 - PartnerStack ban appeal pending (ClickUp, ActiveCampaign, Monday, Dashlane locked).
 - Impact.com applications pending: HubSpot (39 pages), 1Password (37 pages).
