@@ -1,71 +1,74 @@
 # SEO Audit
 
-Pages scanned: 1194
+Pages scanned: 1443
 
 ## Severe Issue Counts
-- broken_internal_link: 277
+- broken_internal_link: 1427
+- duplicate_h1: 35
 - invalid_canonical: 2
-- missing_meta: 3
+- missing_meta: 2
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 31
-- meta_length_outside_target: 14
-- missing_correction_cta: 72
-- missing_methodology: 16
-- missing_related_pages: 36
-- missing_trustbox: 36
-- thin_buyer_page: 92
-- title_length_outside_target: 191
+- canonical_mismatch: 2
+- images_missing_alt: 553
+- meta_length_outside_target: 45
+- missing_correction_cta: 1151
+- missing_last_verified: 1
+- missing_methodology: 1110
+- missing_related_pages: 209
+- missing_trustbox: 901
+- thin_buyer_page: 1125
+- title_length_outside_target: 122
 
 ## Lowest Scoring Pages
-- `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f`: 21.52/100, issues=invalid_canonical, missing_meta, no_h1
-- `/fo-verify`: 25.56/100, issues=invalid_canonical, missing_meta, no_h1
-- `/media-kit`: 59.97/100, issues=none
-- `/pages/v3-preview-index`: 64.09/100, issues=missing_meta
-- `/best-vpn-for-business-2026`: 64.81/100, issues=broken_internal_link
-- `/pages/saas-buyer-signals-2026`: 65.25/100, issues=none
-- `/best-marketing-automation-software-2026`: 65.34/100, issues=broken_internal_link
-- `/best-video-conferencing-software-2026`: 65.34/100, issues=broken_internal_link
-- `/best-password-manager-business-2026`: 65.54/100, issues=broken_internal_link
-- `/best-hr-software-2026`: 65.86/100, issues=broken_internal_link
-- `/pages/saas-pricing-changes`: 65.94/100, issues=none
-- `/best-seo-tools-2026`: 66.0/100, issues=broken_internal_link
-- `/best-crm-software-2026`: 66.22/100, issues=broken_internal_link
-- `/pages/v3-preview-404`: 66.26/100, issues=none
-- `/pages/v3-preview-homepage`: 66.98/100, issues=broken_internal_link
-- `/pages/stripe-pricing-history-2026`: 68.44/100, issues=broken_internal_link
-- `/pages/v3-preview-contact`: 68.8/100, issues=none
-- `/pages/v3-preview-newsletter`: 69.81/100, issues=none
-- `/pages/v3-preview-shortlist`: 70.47/100, issues=none
-- `/pages/v3-preview-deal-radar`: 70.98/100, issues=none
-- `/pages/v3-preview-about`: 72.61/100, issues=none
-- `/pages/v3-preview-library`: 72.89/100, issues=none
-- `/best-project-management-software-2026`: 72.94/100, issues=broken_internal_link
-- `/pages/v3-preview-affiliate-disclosure`: 73.06/100, issues=none
-- `/shortlist`: 73.28/100, issues=none
-- `/affiliate-disclosure`: 73.94/100, issues=broken_internal_link
-- `/pages/linear-pricing-history-2026`: 74.74/100, issues=none
-- `/pages/asana-pricing-history-2026`: 74.75/100, issues=none
-- `/pages/v3-preview-roi-calculator`: 74.75/100, issues=none
-- `/pages/shopify-pricing-history-2026`: 74.79/100, issues=none
-- `/pages/semrush-pricing-history-2026`: 74.81/100, issues=none
-- `/pages/datadog-pricing-history-2026`: 74.85/100, issues=none
-- `/pages/tresorit-pricing-history-2026`: 74.87/100, issues=none
-- `/pages/monday-com-pricing-history-2026`: 74.97/100, issues=none
-- `/pages/notion-pricing-history-2026`: 75.04/100, issues=none
-- `/pages/ahrefs-pricing-history-2026`: 75.06/100, issues=none
-- `/pages/1password-pricing-history-2026`: 75.08/100, issues=none
-- `/pages/clickup-pricing-history-2026`: 75.09/100, issues=none
-- `/pages/pipedrive-pricing-history-2026`: 75.12/100, issues=none
-- `/pages/salesforce-pricing-history-2026`: 75.12/100, issues=none
-- `/pages/v3-preview-privacy`: 75.19/100, issues=none
-- `/pages/hubspot-pricing-history-2026`: 75.38/100, issues=none
-- `/pages/v3-preview-comparison`: 77.22/100, issues=none
-- `/contact`: 78.69/100, issues=none
-- `/`: 79.5/100, issues=broken_internal_link
-- `/privacy`: 79.56/100, issues=none
-- `/pages/slack-coupon-code-promo-codes-2026-verified-discounts`: 80.59/100, issues=broken_internal_link
-- `/pages/slack-vs-mattermost-which-is-better-in-2026`: 80.83/100, issues=broken_internal_link
-- `/pages/linear-vs-shortcut-which-is-better-in-2026`: 80.86/100, issues=broken_internal_link
-- `/pages/tresorit-vs-google-drive-which-is-better-in-2026`: 80.86/100, issues=broken_internal_link
+- `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f`: 24.52/100, issues=invalid_canonical, missing_meta, no_h1
+- `/fo-verify`: 28.56/100, issues=invalid_canonical, missing_meta, no_h1
+- `/shortlist`: 60.92/100, issues=broken_internal_link
+- `/about`: 61.02/100, issues=none
+- `/404`: 62.72/100, issues=none
+- `/newsletter`: 62.74/100, issues=none
+- `/contact`: 62.75/100, issues=none
+- `/corrections`: 64.41/100, issues=none
+- `/media-kit`: 65.26/100, issues=broken_internal_link
+- `/pages/v3-preview-404`: 66.97/100, issues=broken_internal_link
+- `/roi`: 67.33/100, issues=none
+- `/deal-radar`: 68.44/100, issues=none
+- `/editorial-policy`: 68.53/100, issues=none
+- `/pages/v3-preview-contact`: 69.52/100, issues=broken_internal_link
+- `/pages/v3-preview-newsletter`: 70.44/100, issues=broken_internal_link
+- `/pages/v3-preview-shortlist`: 71.18/100, issues=broken_internal_link
+- `/pages/v3-preview-deal-radar`: 71.62/100, issues=broken_internal_link
+- `/pages/aws-vs-render-which-is-better-in-2026`: 71.91/100, issues=broken_internal_link
+- `/cookie-policy`: 71.96/100, issues=none
+- `/pages/aws-vs-supabase-which-is-better-in-2026`: 72.94/100, issues=broken_internal_link
+- `/pages/1password-business-vs-cloudflare-which-is-better-in-2026`: 73.06/100, issues=broken_internal_link
+- `/pages/expressvpn-business-vs-wireguard-which-is-better-in-2026`: 73.13/100, issues=broken_internal_link
+- `/pages/1password-business-vs-crowdstrike-which-is-better-in-2026`: 73.17/100, issues=broken_internal_link
+- `/pages/docusign-clm-vs-icertis-which-is-better-in-2026`: 73.17/100, issues=broken_internal_link
+- `/pages/expressvpn-business-vs-openvpn-which-is-better-in-2026`: 73.17/100, issues=broken_internal_link
+- `/pages/1password-business-vs-sentinelone-which-is-better-in-2026`: 73.19/100, issues=broken_internal_link
+- `/pages/1password-business-vs-tresorit-which-is-better-in-2026`: 73.19/100, issues=broken_internal_link
+- `/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026`: 73.19/100, issues=broken_internal_link
+- `/pages/expressvpn-business-vs-twingate-which-is-better-in-2026`: 73.19/100, issues=broken_internal_link
+- `/pages/expressvpn-business-vs-zscaler-which-is-better-in-2026`: 73.2/100, issues=broken_internal_link
+- `/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026`: 73.29/100, issues=broken_internal_link
+- `/pages/1password-business-vs-duo-security-which-is-better-in-2026`: 73.31/100, issues=broken_internal_link
+- `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026`: 73.37/100, issues=broken_internal_link
+- `/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026`: 73.42/100, issues=broken_internal_link
+- `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026`: 73.42/100, issues=broken_internal_link
+- `/privacy`: 73.61/100, issues=broken_internal_link
+- `/pages/v3-preview-library`: 73.61/100, issues=broken_internal_link
+- `/pages/v3-preview-homepage`: 73.7/100, issues=broken_internal_link
+- `/pages/notion-vs-wrike-which-is-better-in-2026`: 73.78/100, issues=broken_internal_link
+- `/pages/v3-preview-affiliate-disclosure`: 73.78/100, issues=broken_internal_link
+- `/pages/notion-vs-jira-which-is-better-in-2026`: 73.79/100, issues=broken_internal_link
+- `/pages/stripe-vs-recurly-which-is-better-in-2026`: 73.8/100, issues=broken_internal_link
+- `/pages/trello-vs-wrike-which-is-better-in-2026`: 73.8/100, issues=broken_internal_link
+- `/pages/woocommerce-vs-stripe-which-is-better-in-2026`: 73.8/100, issues=broken_internal_link
+- `/pages/jira-vs-wrike-which-is-better-in-2026`: 73.81/100, issues=broken_internal_link
+- `/pages/notion-vs-trello-which-is-better-in-2026`: 73.81/100, issues=broken_internal_link
+- `/pages/woocommerce-vs-recurly-which-is-better-in-2026`: 73.81/100, issues=broken_internal_link
+- `/pages/paddle-vs-recurly-which-is-better-in-2026`: 73.82/100, issues=broken_internal_link
+- `/pages/digitalocean-vs-render-which-is-better-in-2026`: 73.83/100, issues=broken_internal_link
+- `/pages/jira-vs-trello-which-is-better-in-2026`: 73.83/100, issues=broken_internal_link

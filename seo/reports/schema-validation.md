@@ -1,7 +1,7 @@
 # Schema Validation
 
-- Pages with JSON-LD: 1178
-- Pages missing JSON-LD: 16
+- Pages with JSON-LD: 1434
+- Pages missing JSON-LD: 9
 - Pages with invalid JSON-LD: 0
 
 ## Invalid JSON-LD

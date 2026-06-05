@@ -1,5 +1,5 @@
 {
   "opportunities": [],
-  "reason": "skipped; add GSC OAuth secrets, authorized-user JSON, service-account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls",
+  "reason": "GSC API error: <HttpError 403 when requesting https://searchconsole.googleapis.com/webmasters/v3/sites/https%3A%2F%2Fsaaspare.org/searchAnalytics/query?alt=json returned \"User does not have sufficient permission for site 'https://saaspare.org'. See also: https://support.google.com/webmasters/answer/2451999.\". Details: \"[{'message': \"User does not have sufficient permission for site 'https://saaspare.org'. See also: https://support.google.com/webmasters/answer/2451999.\", 'domain': 'global', 'reason': 'forbidden'}]\">",
   "skipped": true
 }

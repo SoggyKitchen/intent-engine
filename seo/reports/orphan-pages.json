@@ -1,146 +1,94 @@
 [
   {
-    "path": "/best-crm-software-2026",
+    "path": "/404",
     "score": {
       "inbound": [],
       "outbound": [
         "/",
         "/about",
         "/affiliate-disclosure",
-        "/methodology",
-        "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/close-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/hubspot-crm-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/zoho-crm-pricing-2026-plans-costs-what-you-actually-pay.html"
+        "/contact",
+        "/deal-radar",
+        "/newsletter",
+        "/pages/",
+        "/privacy",
+        "/roi",
+        "/shortlist"
       ]
     }
   },
   {
-    "path": "/best-hr-software-2026",
+    "path": "/best-cloud-hosting-2026",
     "score": {
       "inbound": [],
       "outbound": [
         "/",
         "/about",
         "/affiliate-disclosure",
-        "/methodology",
-        "/pages/adp-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/workday-pricing-2026-plans-costs-what-you-actually-pay.html"
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/datadog",
+        "/go/option-#4",
+        "/go/option-#5",
+        "/go/option-#6",
+        "/go/render",
+        "/go/vercel",
+        "/newsletter",
+        "/pages/",
+        "/privacy",
+        "/shortlist",
+        "/terms"
       ]
     }
   },
   {
-    "path": "/best-marketing-automation-software-2026",
+    "path": "/best-ecommerce-platform-2026",
     "score": {
       "inbound": [],
       "outbound": [
         "/",
         "/about",
         "/affiliate-disclosure",
-        "/methodology",
-        "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/brevo-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/klaviyo-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/mailchimp-pricing-2026-plans-costs-what-you-actually-pay.html"
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/bigcommerce",
+        "/go/option-#5",
+        "/go/option-#6",
+        "/go/shopify",
+        "/go/wix",
+        "/go/woocommerce",
+        "/newsletter",
+        "/pages/",
+        "/privacy",
+        "/shortlist",
+        "/terms"
       ]
     }
   },
   {
-    "path": "/best-password-manager-business-2026",
+    "path": "/best-finance-software-2026",
     "score": {
       "inbound": [],
       "outbound": [
         "/",
         "/about",
         "/affiliate-disclosure",
-        "/methodology",
-        "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/dashlane-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/keeper-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/lastpass-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay.html"
-      ]
-    }
-  },
-  {
-    "path": "/best-project-management-software-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/methodology",
-        "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/jira-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/trello-pricing-2026-plans-costs-what-you-actually-pay.html"
-      ]
-    }
-  },
-  {
-    "path": "/best-seo-tools-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/methodology",
-        "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/mangools-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/spyfu-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay.html"
-      ]
-    }
-  },
-  {
-    "path": "/best-video-conferencing-software-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/methodology",
-        "/pages/google-meet-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/loom-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/microsoft-teams-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/webex-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/whereby-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/zoom-pricing-2026-plans-costs-what-you-actually-pay.html"
-      ]
-    }
-  },
-  {
-    "path": "/best-vpn-for-business-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/methodology",
-        "/pages/cisco-anyconnect-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/perimeter-81-pricing-2026-plans-costs-what-you-actually-pay.html",
-        "/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay.html"
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/freshbooks",
+        "/go/option-#4",
+        "/go/option-#5",
+        "/go/option-#6",
+        "/go/wave",
+        "/go/xero",
+        "/newsletter",
+        "/pages/",
+        "/privacy",
+        "/shortlist",
+        "/terms"
       ]
     }
   },
@@ -156,6 +104,213 @@
     "score": {
       "inbound": [],
       "outbound": []
+    }
+  },
+  {
+    "path": "/pages/best-surfshark-alternatives-in-2026-free-paid",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/blog/",
+        "/contact",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/nordvpn",
+        "/go/semrush",
+        "/go/surfshark",
+        "/pages/",
+        "/pages/7-best-jira-alternatives-in-2026-free-paid",
+        "/pages/7-best-lastpass-alternatives-in-2026-free-paid",
+        "/pages/?q=accounting",
+        "/pages/?q=crm",
+        "/pages/?q=seo",
+        "/pages/?q=vpn",
+        "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/best-password-manager-2026",
+        "/pages/best-vpn-for-streaming-2026",
+        "/pages/saas-pricing-changes",
+        "/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/surfshark-vs-expressvpn-which-is-better-in-2026",
+        "/privacy",
+        "/shortlist"
+      ]
+    }
+  },
+  {
+    "path": "/pages/constant-contact-pricing-2026-plans-costs-what-you-actually-pay",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/constant-contact-trial",
+        "/newsletter",
+        "/pages/",
+        "/pages/7-best-getresponse-alternatives-in-2026-free-paid",
+        "/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/getresponse-free-trial-2026-how-to-get-it-step-by-step",
+        "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
+        "/pages/getresponse-vs-brevo-which-is-better-in-2026",
+        "/pages/getresponse-vs-mailchimp-which-is-better-in-2026",
+        "/privacy",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/elementor",
+        "/newsletter",
+        "/pages/",
+        "/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
+        "/privacy",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/elevenlabs-coupon-code-promo-codes-2026-verified-discounts",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/elevenlabs",
+        "/newsletter",
+        "/pages/",
+        "/pages/elevenlabs-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
+        "/privacy",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/kajabi-review-2026-is-it-worth-it-honest-verdict",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/kajabi",
+        "/newsletter",
+        "/pages/",
+        "/pages/kajabi-pricing-2026-plans-costs-what-you-actually-pay",
+        "/privacy",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/nordpass-coupon-code-promo-codes-2026-verified-discounts",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/nordpass",
+        "/newsletter",
+        "/pages/",
+        "/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
+        "/privacy",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/protonvpn-free-trial-2026-how-to-get-it-step-by-step",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/protonvpn",
+        "/newsletter",
+        "/pages/",
+        "/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict",
+        "/privacy",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/shopify-discount-code-promo-codes-2026-verified-deals",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/blog/",
+        "/contact",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/shopify",
+        "/pages/",
+        "/pages/?q=accounting",
+        "/pages/?q=crm",
+        "/pages/?q=seo",
+        "/pages/?q=vpn",
+        "/pages/best-cybersecurity-tools-for-2025-protect-your-business-from-threats",
+        "/pages/best-ecommerce-platform-2026",
+        "/pages/best-password-manager-2026",
+        "/pages/best-vpn-for-streaming-2026",
+        "/pages/canva-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
+        "/pages/gusto-free-trial-2026-how-to-start-what-you-get",
+        "/pages/saas-pricing-changes",
+        "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/shopify-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/shopify-vs-etsy-which-is-better-in-2026",
+        "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
+        "/pages/sucuri-review-2026-is-it-worth-it-honest-verdict",
+        "/privacy",
+        "/shortlist"
+      ]
     }
   }
 ]
