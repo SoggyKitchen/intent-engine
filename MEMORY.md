@@ -36,6 +36,21 @@ Long-term log of what works on SaaSpare. Append at the end of every session.
 - Newsletter form has no backend (Beehiiv pending).
 - Ahrefs/Semrush MCPs gated behind API-plan upgrades — GSC engine is sufficient meanwhile.
 
+## Revenue Intelligence (the dollars-not-rankings layer)
+- `revenue_intelligence.py` joins GSC × program-promoted-per-page × commission value →
+  `revenue-opportunities.md` (pages ranked by $ uplift) + `program-acquisition.md`
+  (which programs to apply to, ranked by traffic already on their pages).
+- Latent map at build time (traffic-blind, no GSC locally): HubSpot 32 pages @ $400/conv
+  PENDING · FreshBooks 18 @ $200 PENDING · Ahrefs 26 @ $100 PLACEHOLDER (no program!) ·
+  Salesforce 13 @ $120 PLACEHOLDER · Rippling 15 @ $120 · Deel 17 @ $100.
+- **Biggest untapped levers:** (1) get HubSpot Impact approval — 32 pages, highest $/conv.
+  (2) Ahrefs has 26 pages and NO affiliate program yet — apply to Ahrefs affiliate program.
+  (3) PartnerStack appeal unlocks ClickUp(18)+ActiveCampaign(18)+Monday(14)+Dashlane(9).
+- Dollar values are MODELLED benchmarks; connect IMPACT_API_TOKEN for real EPC/conversions.
+
 ## Tasks Completed (archive)
 - 2026-06-05: Scaled pricing-change pattern to 6 tools + baked generator overrides.
 - 2026-06-05: Wrote CLAUDE.md operating manual + this MEMORY.md.
+- 2026-06-06: Built revenue_intelligence.py (revenue layer) + wired into daily CI agent.
+  Drafted PartnerStack ban appeal (Nina R ticket #115498 = evidence the dup account was
+  caused by their email-bounce blocklist, not fraud).

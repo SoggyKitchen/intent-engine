@@ -29,9 +29,26 @@ GSC is already authed via GitHub secrets. **siteUrl is `sc-domain:saaspare.org`*
 never `https://www.saaspare.org` (that returns 403). `apply-safe` refuses to touch
 coupons, ratings, pricing numbers, review claims, noindex, or `STRATEGIC_PROTECTED_PATHS`.
 
+## Revenue Intelligence (optimise for DOLLARS, not rankings)
+`scripts/seo/revenue_intelligence.py` joins GSC traffic × which affiliate program each
+page promotes × what that program pays. Run it after the audit:
+```bash
+uv run python scripts/seo/revenue_intelligence.py
+```
+Outputs in `seo/reports/`:
+- `revenue-opportunities.json/.md` — pages ranked by **estimated monthly $ uplift** if
+  they climb to the top of page (not by raw impressions). A HubSpot page at $400/conv
+  outranks a Loom page at $5/conv even with fewer impressions. THIS is your real to-do list.
+- `program-acquisition.md` — unapproved/locked/placeholder programs ranked by the traffic
+  already landing on their pages. **This tells the owner which programs to apply to first.**
+Dollar figures are MODELLED from network benchmarks in `PROGRAM_VALUE` (this is honest
+estimation, not live earnings). When the owner supplies `IMPACT_API_TOKEN`, replace the
+modelled EPC/conversion values with real Impact.com data. Runs daily in CI with live GSC.
+
 ## Daily Loop (what to actually do each session)
-1. Run `--mode audit`. Read `gsc-opportunities.json`.
-2. Take the top 3–5 buyer pages with `impressions > 100` and `position` 8–30 (the climb zone).
+1. Run `--mode audit`, then `revenue_intelligence.py`. Read `revenue-opportunities.md`
+   FIRST (dollars), then `gsc-opportunities.json` (the SEO mechanics behind them).
+2. Take the top 3–5 pages by **estimated $ uplift** where `position` is 8–30 (climb zone).
 3. Per page: stronger buyer-intent title (+ year + specificity), meta with the answer +
    CTA, upgrade FAQPage schema, add pricing-change tracker block (pricing pages),
    strengthen above-fold verdict, add internal links from category hubs.
