@@ -1,6 +1,6 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-05T14:26:11+00:00
+Generated: 2026-06-05T14:28:56+00:00
 Mode: `audit`
 
 ## Current Score
@@ -20,7 +20,7 @@ Mode: `audit`
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
-- GSC: GSC API error: <HttpError 403 when requesting https://searchconsole.googleapis.com/webmasters/v3/sites/https%3A%2F%2Fsaaspare.org/searchAnalytics/query?alt=json returned "User does not have sufficient permission for site 'https://saaspare.org'. See also: https://support.google.com/webmasters/answer/2451999.". Details: "[{'message': "User does not have sufficient permission for site 'https://saaspare.org'. See also: https://support.google.com/webmasters/answer/2451999.", 'domain': 'global', 'reason': 'forbidden'}]">
+- GSC: GSC API error: <HttpError 403 when requesting https://searchconsole.googleapis.com/webmasters/v3/sites/sc-domain%3Asaaspare.org/searchAnalytics/query?alt=json returned "User does not have sufficient permission for site 'sc-domain:saaspare.org'. See also: https://support.google.com/webmasters/answer/2451999.". Details: "[{'message': "User does not have sufficient permission for site 'sc-domain:saaspare.org'. See also: https://support.google.com/webmasters/answer/2451999.", 'domain': 'global', 'reason': 'forbidden'}]">
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
 ## Fastest Path To 70
