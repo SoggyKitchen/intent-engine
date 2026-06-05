@@ -11,6 +11,69 @@ SaaSpare.org is an independent B2B SaaS comparison and affiliate site.
 ## KPI Priority
 Revenue → Traffic → Rankings → Conversion → Trust → Technical → Polish
 
+## The SEO Engine (your daily spine — USE IT, don't rebuild it)
+`scripts/seo/seo_agent.py` is a ~1,500-line autonomous engine. Run with `uv`:
+```bash
+uv run python scripts/seo/seo_agent.py --mode audit       # read-only: crawl + live GSC + 25 reports
+uv run python scripts/seo/seo_agent.py --mode apply-safe  # also applies guardrailed metadata/schema fixes
+```
+Read these reports before deciding anything (in `seo/reports/`):
+- `gsc-opportunities.json/.md` — **LIVE Search Console data**, ranked by buyer-intent
+  opportunity score (impressions, low CTR, position 8–30, buyer keywords). Your daily to-do list.
+- `revenue-priorities.md` — pages ranked by monetisation potential.
+- `site-health.md` — health score + fastest path to next tier.
+- `top-100-fixes.md`, `thin-pages.md`, `conversion-issues.md`, `link-cleanup.md`,
+  `schema-validation.md`, `orphan-pages.json`, `duplicate-intent.md`.
+
+GSC is already authed via GitHub secrets. **siteUrl is `sc-domain:saaspare.org`** —
+never `https://www.saaspare.org` (that returns 403). `apply-safe` refuses to touch
+coupons, ratings, pricing numbers, review claims, noindex, or `STRATEGIC_PROTECTED_PATHS`.
+
+## Daily Loop (what to actually do each session)
+1. Run `--mode audit`. Read `gsc-opportunities.json`.
+2. Take the top 3–5 buyer pages with `impressions > 100` and `position` 8–30 (the climb zone).
+3. Per page: stronger buyer-intent title (+ year + specificity), meta with the answer +
+   CTA, upgrade FAQPage schema, add pricing-change tracker block (pricing pages),
+   strengthen above-fold verdict, add internal links from category hubs.
+4. **Bake durable parts into the generator** (see Hard Rules), verify, commit.
+5. Append learnings to `MEMORY.md`.
+
+## Hard Rules (violating these is failure even if metrics improve)
+1. **Never fabricate** pricing, plan limits, coupon codes, ratings, or "we tested" claims.
+   Unverified → label it or omit it. An empty section beats a fake one.
+2. **Affiliate disclosure stays visible** on every monetised page. Never strip it.
+3. **Bake durable changes into the generator, not just HTML.** `generate_*_v3.py`
+   regenerates pages nightly; an HTML-only edit can be overwritten. Add titles/metas/FAQs/
+   data to the generator's data dict (e.g. `meta_desc=` overrides) AND confirm the
+   skip-condition protects already-premium pages. Proven on Ramp/Shopify/HubSpot/Notion/
+   ClickUp/Semrush/Monday pricing pages.
+4. **Never break canonical URLs or the sitemap.** Canonical must match the real filename
+   incl. any `7-` prefix. `content_qa.py` fails the nightly build (exit 1) on HARD issues.
+5. **Off-limits:** `STRATEGIC_PROTECTED_PATHS`, `.github/workflows/*` (change only with
+   reason + test), this file, `MEMORY.md`, `seo/config.json`, secrets. Never `rm -rf`,
+   force-push, or `--no-verify`.
+
+## Proven Plays (ranked by ROI — do these first)
+1. **Title/meta CTR rewrites on climb-zone pages.** Pattern: `[Tool] Pricing 2026: Every
+   Change, Real Cost & [Month] Update`. Highest ROI, lowest risk.
+2. **Pricing-change tracker + FAQ schema** for `did [tool] change pricing` / `[tool]
+   pricing [month] 2026`. Proven on Ramp (279 impr @ pos 4.3) → now 6 more tools.
+3. **Replace placeholder/generic FAQ answers with real data** (some pages still ship
+   "check the pricing page" boilerplate — dead weight).
+4. **Fix thin pages + broken internal links** (protect existing rankings).
+5. **CTA/disclosure coverage** on monetised pages missing them.
+6. **Internal links from category hubs** to push pos-8–20 pages into the top 10.
+
+## Experiments (operate like a CEO, not a content mill)
+Hypothesis with a number → deploy to ~10 pages → baseline in MEMORY.md → measure GSC at
+~21 days → expand if it beats control, **revert if it underperforms by >10%**. Pages with
+<~100 clicks/variant are inconclusive.
+
+## Escalate to owner ONLY when
+Money > $50 · affiliate-program application/approval · legal/compliance/trust wording ·
+destructive infra (DNS, Cloudflare, deleting pages) · genuinely expensive ambiguity.
+Otherwise: act, verify, commit, log. No permission needed for routine optimisation.
+
 ## Design Rules (Critical — violations break the site)
 1. `<body style="background:#050407;color:rgba(255,248,245,.88)">` — NO `class="sp-bg"` on body
 2. JSON-LD must be in `<script type="application/ld+json">` tags — bare JSON renders as visible text

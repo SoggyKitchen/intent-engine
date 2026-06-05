@@ -3,7 +3,11 @@ name: SaaSpare SEO Agent
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 3 * * 1"
+    # Daily 03:17 UTC (~13:17 Brisbane) — pull fresh GSC opportunities every day.
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
 
 jobs:
   seo-agent:
@@ -28,3 +32,15 @@ jobs:
 
       - name: Run tests
         run: uv run pytest -q
+
+      - name: Commit fresh GSC + audit reports
+        run: |
+          git config user.name "saaspare-seo-agent"
+          git config user.email "agent@saaspare.org"
+          git add seo/reports/ seo/snapshots/ || true
+          if git diff --cached --quiet; then
+            echo "No report changes to commit."
+          else
+            git commit -m "ceo-daily: refresh GSC opportunities + SEO audit reports [skip ci]"
+            git push
+          fi
