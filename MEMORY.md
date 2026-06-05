@@ -92,3 +92,36 @@ Long-term log of what works on SaaSpare. Append at the end of every session.
   Drafted PartnerStack ban appeal (Nina R ticket #115498 = evidence the dup account was
   caused by their email-bounce blocklist, not fraud).
 - 2026-06-05: CEO Daily — CTR rewrites on 4 climb-zone pages, new Parallels pricing page.
+
+## Revenue Hunter Session 2026-06-05 (Evening)
+
+### Gmail Affiliate Status Update
+- **Fiverr (Awin ID 6288)**: Approved 2026-06-03. `/go/fiverr` tracking links already correct in _redirects (awinmid=6288, awinaffid=2917137). No action needed.
+- **AWeber (CJ 5111249)**: Approved 2026-05-13. `/go/aweber` with real CJ link (kqzyfj.com) already in _redirects. No action needed.
+- **FreshBooks Awin**: REJECTED — program was "FreshBooks_Closing 06.01.2026". Dead end. Explore FreshBooks via ShareASale instead.
+- **Impact.com**: Login alerts show active access. Support ticket #831603 confirmed only Semrush is partnered on account 7269601. HubSpot + 1Password still PENDING approval.
+- **PartnerStack LOCKED**: Network profile limitation since 2026-06-04 due to "association with potentially fraudulent accounts". Appeal filed 2026-06-05 to networkquality@partnerstack.com (Ticket 115928). ClickUp DECLINED by ClickUp specifically. ActiveCampaign is sending onboarding emails (portal access exists) but the account lock may prevent tracking. Check PartnerStack portal directly.
+- **HubSpot direct affiliate**: Rejected May 2026 via affiliates@hubspot.com — insufficient traffic. Re-apply at ~10K monthly clicks.
+- **Wix via Impact**: Application sent 2026-06-01 to Wix (5514169). Still pending.
+
+### CTR Fixes Applied (Revenue Hunter 2026-06-05 evening)
+Targeted 1,800+ impressions/month that were generating near-zero clicks:
+- `ramp-pricing-history-2026`: "April, May & June Updates" → pos 3.7, 121 impr, 0 clicks for "ramp pricing change june 2026"
+- `does-notion-have-free-plan`: "[Yes] — 4 Limits, Restrictions & Workarounds (June)" → 557 impr, 0 clicks
+- `does-sentry-have-free-plan`: "[Yes] — 5K Event Cap & All Free Tier Limits Explained" → 528 impr, 0 clicks
+- `does-bitwarden-have-free-plan`: "Limitations 2026" pattern → pos 4-7
+- `mixpanel-pricing`: "Pricing Changes 2026" → 742 impr @ pos 13.7, 0 clicks
+- `nordlayer-pricing`: "Price 2026" → 97 impr @ pos 11.2, 0 clicks
+Measure GSC CTR in 14-21 days. Target: Ramp history >1%, Notion/Sentry >0.5%.
+
+### New Page Built
+- `aweber-pricing-2026-plans-costs-what-you-actually-pay.html` (AWeber CJ active, $10-$300/conversion)
+  - Plans: Free (500 subs), Lite $12.50/mo, Plus $20/mo, Unlimited $899/mo (all annual base rates)
+  - Subscriber-count scaling clearly disclosed in hidden costs section
+  - Baked into `generate_pricing_pages_v3.py` PRICING dict — durable across nightly runs
+  - CTA: `/go/aweber`
+
+### Duplicate Intent Alert (Not Fixed — Monitor)
+- Two competing pages for "semrush vs moz": `semrush-vs-moz-which-is-better-in-2026.html` AND `semrush-vs-moz-pro-which-is-better-in-2026.html`
+- Both ranking pos 66-68 with ~550 combined impressions/month and 0 clicks
+- Fix: consolidate to one page + 301 redirect. Discuss with owner before doing — destructive action.
