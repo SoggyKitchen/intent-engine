@@ -62,9 +62,33 @@ Long-term log of what works on SaaSpare. Append at the end of every session.
   (3) PartnerStack appeal unlocks ClickUp(18)+ActiveCampaign(18)+Monday(14)+Dashlane(9).
 - Dollar values are MODELLED benchmarks; connect IMPACT_API_TOKEN for real EPC/conversions.
 
+## Affiliate Status (last verified 2026-06-05)
+- **Fiverr via Awin**: APPROVED 2026-06-03. Tracking link `/go/fiverr` already in _redirects (awinmid=6288, awinaffid=2917137). ✅
+- **AWeber via CJ**: APPROVED 2026-05-13. `/go/aweber` with CJ link already in _redirects. ✅
+- **FreshBooks Awin**: REJECTED 2026-06-01 (program FreshBooks_Closing was already closing). Needs replacement — apply to FreshBooks direct or ShareASale.
+- **PartnerStack**: NETWORK-LOCKED 2026-06-04. Appeal filed 2026-06-05 (Ticket 115928). ClickUp, ActiveCampaign, Monday, Dashlane all blocked until resolved.
+- **Impact.com (ID 7269601)**: Only Semrush active. Wix application PENDING. HubSpot PENDING.
+- **HubSpot direct**: DECLINED via affiliates@hubspot.com (May 2026) — insufficient site traffic at time of application. Re-apply in 60 days when GSC clicks improve.
+- **Unidata via CJ**: Approved (May 2026) — niche, low EPC, deprioritize.
+
+## CTR Experiments (2026-06-05 baseline)
+- 4 pages updated with revised titles/metas:
+  - Ramp pricing: new title targets "pricing changes" query directly (was 0.59% CTR, 1687 impr @ pos 10)
+  - Mixpanel pricing: "June 2026" specificity added (was 0% CTR, 742 impr @ pos 13.7)
+  - Notion free plan: meta rewritten to drive through-clicks past featured snippet (0% CTR, 557 impr @ pos 9.4)
+  - Sentry free plan: reframed around "when you'll outgrow it" (0% CTR, 528 impr @ pos 7.5)
+- Check GSC ~21 days for CTR movement. Target: Ramp > 2%, Mixpanel > 1%.
+
+## New Pages (2026-06-05)
+- Built: `parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay.html`
+  CJ Advertiser 2005415, EPC $31.65 (highest of all CJ programs), `/go/parallels` already live.
+  No competing pages existed. Covers Standard ($99.99/yr), Pro ($119.99/yr), Business ($149.99/user/yr).
+  Key angle: subscription-only trap + Windows license sold separately.
+
 ## Tasks Completed (archive)
 - 2026-06-05: Scaled pricing-change pattern to 6 tools + baked generator overrides.
 - 2026-06-05: Wrote CLAUDE.md operating manual + this MEMORY.md.
 - 2026-06-06: Built revenue_intelligence.py (revenue layer) + wired into daily CI agent.
   Drafted PartnerStack ban appeal (Nina R ticket #115498 = evidence the dup account was
   caused by their email-bounce blocklist, not fraud).
+- 2026-06-05: CEO Daily — CTR rewrites on 4 climb-zone pages, new Parallels pricing page.
