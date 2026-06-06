@@ -251,6 +251,63 @@
         "ACTION: Check Impact.com (account 7269601) for Wix approval and to apply for HubSpot/1Password manually",
         "MONITOR: Semrush-vs-Moz canonical consolidation \u2014 check GSC in 3 weeks"
       ]
+    },
+    {
+      "date": "2026-06-06",
+      "session": "sunday-profit-maximizer",
+      "built": [
+        "hubspot-vs-monday-com-which-is-better-in-2026.html \u2014 HubSpot ($250-1000 PENDING) vs Monday.com ($150 LOCKED), dual high-commission VS page",
+        "salesforce-vs-monday-com-which-is-better-in-2026.html \u2014 enterprise CRM vs Work OS, Monday.com /go/monday primary CTA",
+        "freshbooks-vs-wave-which-is-better-in-2026.html \u2014 FreshBooks ($200/sale Awin PENDING) vs Wave (free), FreshBooks /go/freshbooks-trial primary CTA"
+      ],
+      "ctr_fixes": [
+        "twingate-vs-tailscale: 'Zero-Trust' specificity (124 impr, pos 14.0)",
+        "cloudflare-access-vs-tailscale: 'Free Zero-Trust Showdown' (105 impr, pos 8.9)",
+        "hetzner-vs-vultr: 'Cheapest VPS Cloud Winner' (78 impr, pos 9.6)",
+        "hetzner-vs-railway: 'Bare-Metal vs PaaS' (68 impr, pos 9.0)",
+        "perimeter-81-vs-cloudflare-access: 'VPN vs ZTNA' (65 impr, pos 9.9)",
+        "wireguard-vs-openvpn: 'Faster Protocol Wins' (40 impr, pos 17.4)",
+        "bitwarden-vs-nordpass: 'Free vs $2.99/mo' (25 impr, pos 21.5)",
+        "stripe-vs-recurly: 'Payments vs Subscription Billing' (41 impr, pos 21.6)",
+        "zoom-vs-around: 'Full-Feature vs Async-First' (30 impr, pos 22.3)",
+        "hetzner-vs-supabase: 'VPS vs Managed Postgres' (64 impr, pos 8.3)",
+        "zoom-vs-streamyard: 'Video Calls vs Live Streaming' (27 impr, pos 9.3)",
+        "google-meet-vs-webex: 'Free vs Enterprise Video' (45 impr, pos 12.7)",
+        "firstpromoter-vs-leaddyno: 'Affiliate Tracking Showdown' (24 impr, pos 19.8)",
+        "digitalocean-vs-linode: 'Cloud VPS Verdict' (industry coverage)",
+        "looker-vs-power-bi: 'Enterprise BI Showdown' (BI category)",
+        "contabo-vs-hetzner: 'Cheapest VPS Showdown' (Contabo affiliate coverage)",
+        "zoom-vs-riverside-fm: 'Meetings vs Studio-Quality Recording'",
+        "openai-api-vs-cohere: 'GPT-4 vs Enterprise LLM'",
+        "anthropic-claude-vs-cohere: 'Safety vs Enterprise LLM'",
+        "zoom-vs-descript, google-meet-vs-streamyard, whereby-vs-around, zoom-vs-whereby (batch 5)"
+      ],
+      "schema_added": [
+        "FAQPage schema: monday-com-vs-asana, getresponse-vs-aweber, clickup-vs-asana, notion-vs-obsidian"
+      ],
+      "internal_links_upgraded": [
+        "hubspot-pricing \u2192 crm-vs-pipedrive, vs-salesforce, vs-monday-com",
+        "monday-com-pricing \u2192 vs-asana, vs-clickup, vs-hubspot, vs-salesforce",
+        "salesforce-pricing \u2192 vs-hubspot, vs-pipedrive, vs-monday, vs-zoho",
+        "freshbooks-vs-quickbooks \u2192 vs-xero, vs-wave, pricing",
+        "does-notion-have-a-free-plan \u2192 pricing, coupon, vs-clickup, vs-monday"
+      ],
+      "design_fixes": [
+        "saas-pricing-changes + saas-buyer-signals-2026: added missing saaspare-ui.css"
+      ],
+      "measure_at_21days": {
+        "twingate-vs-tailscale-ctr": "baseline pos 14.0 \u2014 target >1%",
+        "cloudflare-access-vs-tailscale-ctr": "baseline pos 8.9 CTR 0% \u2014 target >1.5%",
+        "hetzner-vs-vultr-ctr": "baseline pos 9.6 CTR 0% \u2014 target >1.5%",
+        "hubspot-vs-monday-impressions": "new page \u2014 baseline TBD at 21 days",
+        "freshbooks-vs-wave-impressions": "new page \u2014 baseline TBD at 21 days"
+      },
+      "next_human_actions": [
+        "URGENT: PartnerStack appeal Ticket 115928 \u2014 check for approval (affects Monday.com $150, ClickUp $36-150, ActiveCampaign $85, Dashlane $25-50)",
+        "ACTION: Log into Awin (publisher 2917137) \u2014 apply to GetResponse (3142111), Elementor (6798066), ProtonVPN (5227916), Parallels (2005415)",
+        "ACTION: Check Impact.com (account 7269601) for HubSpot, 1Password, Wix status",
+        "MONITOR: Check GSC in 21 days for CTR improvements on twingate/cloudflare/hetzner pages"
+      ]
     }
   ]
 }
