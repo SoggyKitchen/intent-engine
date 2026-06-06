@@ -1,22 +1,17 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-06",
-  "titles_rewritten": 2,
-  "descs_rewritten": 31,
-  "dates_refreshed": 0,
-  "answers_added": 16,
-  "files_changed": 31,
-  "files_scanned": 1415,
+  "titles_rewritten": 1,
+  "descs_rewritten": 20,
+  "dates_refreshed": 3,
+  "answers_added": 15,
+  "files_changed": 23,
+  "files_scanned": 1418,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict After We Tested Both"
-    },
-    {
-      "file": "fiverr-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "Fiverr Coupon Code 2026 (Verified June) \u2014 Every Deal That Works",
-      "after": "Fiverr Coupon 2026 (Verified June 2026) \u2014 Real Working Codes"
     }
   ],
   "desc_examples": [
@@ -41,14 +36,14 @@
       "after": "Updated June 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "aws-vs-supabase-which-is-better-in-2026.html",
-      "before": "AWS wins at scale; Supabase wins on developer experience and cost for startups. Full 2026 comparison: database, auth, storage, pricing and when to switch.",
-      "after": "Updated June 2026. AWS wins at scale; Supabase wins on developer experience and cost for startups. Full 2026 comparison: database, auth, storage, pricing and\u2026"
+      "file": "best-ecommerce-platforms-2026.html",
+      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated June 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
     },
     {
-      "file": "best-devops-configuration-drift-detection-tools-in-2025.html",
-      "before": "8 configuration drift detection tools ranked for DevOps teams in 2026: Puppet, Chef, Ansible, Terraform and more. Pricing, agent support, cloud-native options and honest comparison.",
-      "after": "Updated June 2026. 8 configuration drift detection tools ranked for DevOps teams in 2026: Puppet, Chef, Ansible, Terraform and more. Pricing, agent support,\u2026"
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {
