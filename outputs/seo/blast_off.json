@@ -1,74 +1,59 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-06",
-  "titles_rewritten": 172,
-  "descs_rewritten": 1330,
-  "dates_refreshed": 1155,
-  "answers_added": 198,
-  "files_changed": 1354,
-  "files_scanned": 1413,
+  "titles_rewritten": 3,
+  "descs_rewritten": 24,
+  "dates_refreshed": 0,
+  "answers_added": 16,
+  "files_changed": 24,
+  "files_scanned": 1414,
   "title_examples": [
-    {
-      "file": "1password-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "1Password Coupon &amp; Discount 2026: Best Deals Right Now \u2014 SaaSpare",
-      "after": "1Password Coupon 2026 (Verified June 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "1password-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "1Password Free Trial 2026: How to Get It \u2014 SaaSpare",
-      "after": "1Password Free Trial 2026: How to Get the Full June 2026 Offer"
-    },
-    {
-      "file": "1password-review-2026-is-it-worth-it-honest-verdict.html",
-      "before": "1Password Review 2026: Is It Worth It? \u2014 SaaSpare",
-      "after": "1Password Review 2026: Is It Worth It? Honest Verdict + Real Pricing"
-    },
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict After We Tested Both"
     },
     {
-      "file": "activecampaign-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "ActiveCampaign Coupon &amp; Discount 2026: Best Deals Right Now \u2014 SaaSpare",
-      "after": "ActiveCampaign Coupon 2026 (Verified June 2026) \u2014 Real Working Codes"
+      "file": "aweber-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "AWeber Free Trial 2026: How to Get It \u2014 SaaSpare",
+      "after": "AWeber Free Trial 2026: How to Get the Full June 2026 Offer"
     },
     {
-      "file": "activecampaign-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "ActiveCampaign Free Trial 2026: How to Get It \u2014 SaaSpare",
-      "after": "ActiveCampaign Free Trial 2026: How to Get the Full June 2026 Offer"
+      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Mixpanel Pricing 2026: Free Plan (1M Events), Growth Cost &amp; Every Plan Compared",
+      "after": "Mixpanel Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
     {
-      "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
-      "before": "Updated 2026-05-31. 1Password Business vs Cloudflare \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026",
-      "after": "Updated June 2026. Updated 2026-05-31. 1Password Business vs Cloudflare \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026 Honest verdict\u2026"
+      "file": "1password-pricing-history-2026.html",
+      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 June 2026.",
+      "after": "Updated June 2026. 1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
-      "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
-      "before": "Updated 2026-05-31. 1Password Business vs Crowdstrike \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026",
-      "after": "Updated June 2026. Updated 2026-05-31. 1Password Business vs Crowdstrike \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026 Honest verdict\u2026"
+      "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
+      "before": "We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+      "after": "Updated June 2026. We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
     },
     {
-      "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
-      "before": "Updated 2026-05-31. 1Password Business vs Duo Security \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026",
-      "after": "Updated June 2026. Updated 2026-05-31. 1Password Business vs Duo Security \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026 Honest verdict\u2026"
+      "file": "ahrefs-pricing-history-2026.html",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 June 2026.",
+      "after": "Updated June 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "1password-business-vs-okta-which-is-better-in-2026.html",
-      "before": "Updated 2026-05-31. 1Password Business vs Okta \u2014 full comparison of features, pricing, and use cases in 2026. Honest verdict\u2026",
-      "after": "Updated June 2026. Updated 2026-05-31. 1Password Business vs Okta \u2014 full comparison of features, pricing, and use cases in 2026. Honest verdict\u2026 Honest verdict\u2026"
+      "file": "asana-pricing-history-2026.html",
+      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 June 2026.",
+      "after": "Updated June 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "1password-business-vs-qualys-which-is-better-in-2026.html",
-      "before": "Updated 2026-05-31. 1Password Business vs Qualys \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026",
-      "after": "Updated June 2026. Updated 2026-05-31. 1Password Business vs Qualys \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026 Honest verdict after\u2026"
+      "file": "aweber-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Everything in the AWeber free trial 2026: length, credit card requirements, feature access, and pro tips. Verified 6 June 2026.",
+      "after": "Updated June 2026. Everything in the AWeber free trial 2026: length, credit card requirements, feature access, and pro tips. Verified 6 June 2026."
     },
     {
-      "file": "1password-business-vs-sentinelone-which-is-better-in-2026.html",
-      "before": "Updated 2026-05-31. 1Password Business vs Sentinelone \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026",
-      "after": "Updated June 2026. Updated 2026-05-31. 1Password Business vs Sentinelone \u2014 full comparison of features, pricing, and use cases in 2026. Honest\u2026 Honest verdict\u2026"
+      "file": "best-ecommerce-platforms-2026.html",
+      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated June 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
     }
   ],
   "indexnow": {
