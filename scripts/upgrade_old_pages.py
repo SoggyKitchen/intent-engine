@@ -264,15 +264,22 @@ def inject_premium_css(html: str) -> str:
     return html.replace("</head>", PREMIUM_CSS + "\n</head>", 1)
 
 def fix_canonical(html: str, path: Path) -> str:
-    """Fix canonical URLs — remove numeric prefix (7-best → best)."""
-    # If canonical has the filename with numeric prefix, fix it
+    """Ensure the canonical is SELF-REFERENTIAL (points to this file's own URL).
+
+    Previously this stripped the numeric prefix (7-best-X -> best-X). That was
+    wrong: the files are named 7-best-X and there is no best-X twin, so the
+    rewritten canonical pointed at a non-existent page. That single line broke
+    the nightly integrity + content-QA gates for days (38 pages canonicalised to
+    ghosts) AND risked Google dropping real ranking pages. A page's canonical
+    must match its own served URL — enforce exactly that.
+    """
     filename_stem = path.stem
-    # e.g. "7-best-1password-alternatives-in-2026-free-paid"
-    clean_stem = re.sub(r'^\d+-', '', filename_stem)
-    if clean_stem != filename_stem:
-        canonical_old = f"https://saaspare.org/pages/{filename_stem}"
-        canonical_new = f"https://saaspare.org/pages/{clean_stem}"
-        html = html.replace(canonical_old, canonical_new)
+    correct = f"https://saaspare.org/pages/{filename_stem}"
+    html = re.sub(
+        r'(<link\s+rel=["\']canonical["\']\s+href=["\'])[^"\']*(["\']\s*/?>)',
+        lambda m: f"{m.group(1)}{correct}{m.group(2)}",
+        html, count=1, flags=re.I,
+    )
     return html
 
 def upgrade_page(path: Path) -> bool:
