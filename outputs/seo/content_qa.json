@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-06T21:15:36.973104+00:00",
+  "generated_at": "2026-06-06T21:47:16.116787+00:00",
   "stats": {
-    "sitemap_urls": 1457,
-    "sitemap_with_lastmod": 1457,
-    "total_pages": 1474,
-    "indexable_pages": 1462,
-    "title_over_70": 129,
-    "soft": 1243,
-    "money_pages": 1197,
+    "sitemap_urls": 1458,
+    "sitemap_with_lastmod": 1458,
+    "total_pages": 1475,
+    "indexable_pages": 1463,
+    "title_over_70": 126,
+    "soft": 1257,
+    "money_pages": 1198,
     "desc_over_165": 8,
     "duplicate_titles": 12,
     "duplicate_descs": 8
@@ -215,5 +215,5 @@
     "site/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay.html: 2 <h1> tags (should be 1)",
     "site/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay.html: /go/ link without rel attribute: /go/nordvpn"
   ],
-  "soft_issues_total": 1243
+  "soft_issues_total": 1257
 }
