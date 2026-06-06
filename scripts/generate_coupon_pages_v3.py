@@ -244,6 +244,33 @@ COUPONS = {
             ("Is Shopify free?", "3-day free trial with no card required. The $1/month promotion gives 3 months of cheap access. No permanent free plan exists — Basic annual at $29/mo is the entry-level paid plan."),
         ]
     ),
+    "fiverr": dict(
+        name="Fiverr", logo="https://cdn.simpleicons.org/fiverr/1dbf73",
+        go="/go/fiverr",
+        pricing_url="/pages/fiverr-pricing-2026-plans-costs-what-you-actually-pay",
+        page_url="/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
+        top_pct="10%", top_label="New buyer offer", top_meta="Check via our link for current availability",
+        hero_lead="Fiverr doesn't release traditional coupon codes — the best deals come through new buyer promotions and Fiverr Pro access. Here's every verified saving available right now.",
+        deals=[
+            dict(pct="10%", name="New Buyer Offer — First Order", desc="Fiverr occasionally offers first-time buyers a discount on their first order via affiliate links. Click our link to see if the current offer is active — availability changes based on promotions.", code="Check via link", expiry="Check availability", verified=TODAY),
+            dict(pct="Free", name="Free Fiverr Account — No Credit Card", desc="Create a free Fiverr buyer account with no credit card required. Browse all gigs, message sellers, and request custom quotes before committing to any purchase.", code="NO CODE NEEDED", expiry="Free forever", verified=TODAY),
+            dict(pct="Pro", name="Fiverr Pro — Vetted Top-1% Sellers", desc="Fiverr Pro gives access to hand-vetted freelancers (top 1% of sellers) with verified credentials. Pro sellers charge premium rates but come with quality guarantees and faster turnaround.", code="NO CODE NEEDED", expiry="Ongoing", verified=TODAY),
+        ],
+        howto=[
+            ("Create a free Fiverr account", "Click our link to sign up — no credit card required. Check for any active new buyer promotion on the signup page."),
+            ("Browse and compare gigs", "Search for your service. Filter by delivery time, seller level, and budget. Fiverr Pro badge = vetted professionals."),
+            ("Check for a first-order discount", "After login, check your Promotions tab or the checkout screen for any active discount on your first purchase."),
+            ("Complete your purchase", "Add your chosen gig to cart. Any active new buyer discount applies automatically at checkout — no manual code entry needed."),
+        ],
+        no_code_text="Fiverr rarely publishes standalone promo codes. The best savings come through the first-order offer (when active) or by comparing seller packages. Our link above will show any current promotions.",
+        faqs=[
+            ("Is there a Fiverr coupon code?", "Fiverr rarely issues public coupon codes. First-time buyer discounts appear periodically via affiliate links — click our link to see if one is currently active. The Promotions tab in your account shows any available deals."),
+            ("How do I get a Fiverr discount?", "The main ways to save on Fiverr: (1) Check for a first-order promotion via our link, (2) use Fiverr's built-in package comparison to find the best value gig, (3) message sellers directly to negotiate for larger projects."),
+            ("Does Fiverr have a free trial?", "Fiverr doesn't offer a free trial — it's a marketplace where you pay per project. Creating a buyer account is free with no credit card required, so you can browse all services before committing."),
+            ("Is Fiverr Pro worth it?", "Fiverr Pro vets sellers through a strict application process — only the top 1% are accepted. Pro gigs cost more, but quality and delivery are substantially more consistent. For business-critical work, Pro is usually worth the premium."),
+            ("How does Fiverr pricing work?", "Fiverr charges buyers a service fee on top of the gig price: typically 5.5% of the order amount (minimum $2.75 for orders under $50). Sellers pay a 20% commission to Fiverr. The displayed price at checkout includes buyer fees."),
+        ]
+    ),
     "freshbooks": dict(
         name="FreshBooks", logo="https://cdn.simpleicons.org/freshbooks/0075dd",
         go="/go/freshbooks", pricing_url="/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay",
