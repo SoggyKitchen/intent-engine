@@ -43,6 +43,23 @@ Long-term log of what works on SaaSpare. Append at the end of every session.
       GSC property, and update the GitHub secret.
 - Once fixed, the next daily run auto-populates revenue-opportunities.md with real $ ranking.
 
+## RESOLVED 2026-06-06: Nightly CI failing 8+ days — root cause was canonical de-prefixing
+- Symptom: nightly_site_integrity failed every run; two gates contradicted each other.
+- TRUE root cause: `upgrade_old_pages.py:fix_canonical` stripped the numeric prefix
+  (`7-best-X` → `best-X`) on every alternatives page, re-pointing 38 real canonicals at
+  `best-X` pages that don't exist. Integrity test trusted the canonical and demanded the
+  ghost in the sitemap; content_qa rejected the ghost when the sitemap echoed it.
+- Contributing: `seo_consolidate.py` did the same 7-best→best consolidation (also disabled).
+- FIXES (all on main, nightly now GREEN — run 27050636891):
+  1. `upgrade_old_pages.fix_canonical` → self-referential canonical (matches own filename).
+  2. `seo_consolidate.py` → disabled 7-best-X alternatives consolidation (was noindexing
+     real ranking pages = revenue leak).
+  3. `update_sitemap_and_index.py` → builder rejects any URL with no backing file.
+  4. `nightly_site_integrity.yml` → rebuild sitemap AFTER all generators, before gates.
+- LESSON: the `7-best-X` alternatives pages are the REAL, self-canonical, indexed revenue
+  pages (Ramp/Notion/etc. have GSC impressions). Any script that tries to collapse them to
+  a `best-X` twin is both an SEO/revenue mistake and a CI break. Do not re-introduce.
+
 ## Known issues / pending (owner actions)
 - PartnerStack ban appeal pending (ClickUp, ActiveCampaign, Monday, Dashlane locked).
 - Impact.com applications pending: HubSpot (39 pages), 1Password (37 pages).
