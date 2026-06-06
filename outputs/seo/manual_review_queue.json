@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-03T14:50:00+00:00",
+  "generated_at_utc": "2026-06-06T02:56:13+00:00",
   "mode": "apply",
-  "pages_flagged": 37,
+  "pages_flagged": 25,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -14,33 +14,6 @@
           "label": "money_back_guarantee",
           "snippet": "Money-back guarantee",
           "context": "tted pros available</td><td>&#10003; Expert-vetted tier</td></tr> <tr><td>Money-back guarantee</td><td>&#10003; Yes</td><td>&#10003; Yes (disputes)</td></tr> </tbody> <"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "d><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</stron"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "</tr> <tr> <td><strong>Free Trial</strong></td> <td>7-day money-back guarantee</td> </tr> <tr> <td><strong>Annual Discount</strong></td>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "</div> <div class=\"section\"> <h2>Surfer SEO Free Trial Guide</h2> <p>7-day money-back guarantee. During your trial, test the features your team will use daily. Most teams need"
         }
       ],
       "trust_state_bumped": false
@@ -154,55 +127,12 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "fshark</a> ($2.19/month) is best for households (unlimited devices). Both offer 30-day money-back guarantees.</p> <div style=\"background:rgba(255,255,255,.04);border:1px solid rgba(255,"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "arr;</a><p style=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0\">30-day money-back guarantee \u2014 full refund if not satisfied</p><p style=\"font-size:.72rem;color:rgba(255,248"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/datadog-coupon-code-promo-codes-2026-verified-discounts.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "d><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</stron"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/sucuri-pricing-2026-plans-costs-what-you-actually-pay.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "Money-Back Guarantee",
           "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordpass-review-2026-is-it-worth-it-honest-verdict.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "8,245,.72);line-height:1.7;margin-bottom:2rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans. See: <a href=\"/pages/nordpass-free-trial-2026-how-to-get-it-"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "45,.58);font-size:.9rem;margin-bottom:1.25rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans</p> <a href=\"/go/nordpass\" target=\"_blank\" rel=\"noopener sp"
         }
       ],
       "trust_state_bumped": false
@@ -228,48 +158,48 @@
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "\"Choose your plan\", \"text\": \"Select any NordVPN plan \\u2014 all qualify for the money-back guarantee.\"}, {\"@type\": \"HowToStep\", \"name\": \"Create your account\", \"text\": \"Enter your e"
+          "snippet": "30-day money-back guarantee",
+          "context": "yle=\"max-width:520px\">NordVPN doesn't offer a traditional free trial, but their 30-day money-back guarantee is effectively risk-free. Here's how to test and claim if needed.</p> <div"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "oes NordVPN have a free trial?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"30-day money-back guarantee \\u2014 no questions asked, full refund\"}}, {\"@type\": \"Question\", \"name\": \"How l"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "N free trial?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"NordVPN offers a 30-day money-back guarantee \\u2014 no questions asked, full refund. This is effectively a risk-free trial p"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "{\"@type\": \"Answer\", \"text\": \"NordVPN requires a payment method upfront, but the 30-day money-back guarantee means you can get a full refund if you cancel within 30 days.\"}}, {\"@type\": \"Qu"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "85);font-size:1rem;margin:0 0 1rem;line-height:1.55\"><strong style=\"color:#fff\">30-day money-back guarantee \u2014 no questions asked, full refund</strong></p> <a href=\"/go/nordvpn\" target"
+          "context": "l VPN access \u2014 all features</div> <span class=\"chip-cc-req chip-cc-yes\">30-day money-back guarantee</span> </div> </div> </div> </section> <!-- \u2550\u2550\u2550 JUMP BAR \u2550\u2550\u2550 --> <"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
-          "context": "lled $81.36 every 2 years)</strong> gives the best value. All plans include the money-back guarantee.</p> </div> </div><div style=\"display:flex;gap:1.25rem;margin-bottom:1.5rem\">"
+          "context": "tep-tip\">\u2192 The 2-year plan is the best per-month value. You can still claim the money-back guarantee within 30 days</div> </div> <div class=\"sp-glass step-card prem"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "style=\"color:rgba(255,248,245,.65);line-height:1.65;margin:0;font-size:.95rem\">30-day money-back guarantee \u2014 no questions asked, full refund. Use every feature, test speeds on multiple s"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "026?</div> <p style=\"color:rgba(255,248,245,.65);line-height:1.65;margin:0\">30-day money-back guarantee \u2014 no questions asked, full refund.</p> </div> <div style=\"margin-bottom:1.2"
+          "context": "M6 9l6 6 6-6\"/></svg></div><div class=\"faq-a\">Not a traditional free trial. The 30-day money-back guarantee is effectively risk-free \u2014 get full access for 30 days and claim a full refund"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
-          "context": "\"font-weight:700;color:rgba(255,248,245,.9);margin-bottom:.4rem\">Is the NordVPN money-back guarantee actually honoured?</div> <p style=\"color:rgba(255,248,245,.65);line-height:"
+          "context": "iv> <div class=\"faq-item\"><div class=\"faq-q\">How do I claim the NordVPN money-back guarantee?<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColo"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "NordVPN support via live chat within 30 days. State you want a refund under the money-back guarantee. No reason required. Refund processes in 5-7 days.</div></div> <div cla"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "ys.</div></div> <div class=\"faq-item\"><div class=\"faq-q\">Is the NordVPN money-back guarantee reliable?<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"cu"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "?</h2> <p style=\"font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem\">30-day money-back guarantee. Full access from day one. Risk-free evaluation.</p> <a href=\"https://nor"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "s=\"sticky-bottom-cta-text\"> <strong>NordVPN Free Trial</strong> \u2014 30 days \u00b7 30-day money-back guarantee </div> <div style=\"display:flex;gap:8px;align-items:center;flex-shrink:0\">"
         }
       ],
       "trust_state_bumped": false
@@ -333,89 +263,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/surfer-seo-free-trial-2026-how-to-get-it-step-by-step.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "<div class=\"tldr-box\"> <strong>TL;DR:</strong> Surfer SEO offers: 7-day money-back guarantee. Here's exactly what you get and how to make the most of it. </div> <di"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "<tr> <td><strong>Free Trial</strong></td> <td>7-day money-back guarantee</td> </tr> <tr> <td><strong>Free Plan After Tr"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "class=\"faq-item\"><summary>Does Surfer SEO have a free trial?</summary><p>Yes \u2014 7-day money-back guarantee. No free plan.</p></details> <details class=\"faq-item\"><summary>Is a"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "l gives full access to all features \u2014 including features on the paid plan \u2014 for 7-day money-back guarantee. This is your chance to test the tool with real data, not a demo.</p> </di"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/pipedrive-coupon-code-promo-codes-2026-verified-discounts.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "d><strong>Money-Back</strong></td> <td>None (but free trial)</td><td>30-day money-back guarantee</td> </tr> <tr> <td><strong>Try It Free</stron"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/surfshark-free-trial-2026-how-to-get-it-step-by-step.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "hoose your plan\", \"text\": \"Select any Surfshark plan \\u2014 all qualify for the money-back guarantee.\"}, {\"@type\": \"HowToStep\", \"name\": \"Create your account\", \"text\": \"Enter your e"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s Surfshark have a free trial?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"30-day money-back guarantee + 7-day free trial on iOS and Android\"}}, {\"@type\": \"Question\", \"name\": \"How lo"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "free trial?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Surfshark offers a 30-day money-back guarantee + 7-day free trial on iOS and Android. This is effectively a risk-free trial pe"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "85);font-size:1rem;margin:0 0 1rem;line-height:1.55\"><strong style=\"color:#fff\">30-day money-back guarantee + 7-day free trial on iOS and Android</strong></p> <a href=\"/go/surfshark\""
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "lled $52.56 every 2 years)</strong> gives the best value. All plans include the money-back guarantee.</p> </div> </div><div style=\"display:flex;gap:1.25rem;margin-bottom:1.5rem\">"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "style=\"color:rgba(255,248,245,.65);line-height:1.65;margin:0;font-size:.95rem\">30-day money-back guarantee + 7-day free trial on iOS and Android. Use every feature, test speeds on multip"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "026?</div> <p style=\"color:rgba(255,248,245,.65);line-height:1.65;margin:0\">30-day money-back guarantee + 7-day free trial on iOS and Android.</p> </div> <div style=\"margin-bottom"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "ont-weight:700;color:rgba(255,248,245,.9);margin-bottom:.4rem\">Is the Surfshark money-back guarantee actually honoured?</div> <p style=\"color:rgba(255,248,245,.65);line-height:"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/clickup-vs-asana-which-is-better-in-2026.html",
       "claims": [
         {
@@ -438,42 +285,6 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime SLA",
           "context": "nt-size:.92rem;line-height:1.65;margin:0 0 .5rem\">Enterprise-grade Shopify with 99.99% uptime SLA, dedicated account management, unlimited staff accounts, customisable checkout,"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ect the NordPass Free plan for 1-device access, or start a paid plan to get the 30-day money-back guarantee.\"}, {\"@type\": \"HowToStep\", \"name\": \"Create your account\", \"text\": \"Enter your e"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "\"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Free plan available (1 device) + 30-day money-back guarantee on all paid plans\"}}, {\"@type\": \"Question\", \"name\": \"Is NordPass free forever?\""
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "line-height:1.75;margin-bottom:2rem\">NordPass has a permanently free plan AND a 30-day money-back guarantee on all paid plans. Here's exactly how to start.</p> <div style=\"background:r"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "eds no payment. For Premium ($1.99/month) or Business, all paid plans include a 30-day money-back guarantee.</p></div> </div><div style=\"display:flex;gap:1.25rem;margin-bottom:1.5rem\">"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "45,.58);font-size:.9rem;margin-bottom:1.25rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans</p> <a href=\"/go/nordpass\" target=\"_blank\" rel=\"noopener sp"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ont-weight:700;color:rgba(255,248,245,.9);margin-bottom:.4rem\">How do I get the 30-day money-back guarantee?</div> <p style=\"color:rgba(255,248,245,.65);line-height:1.65;margin:0\">Sta"
         }
       ],
       "trust_state_bumped": false
@@ -511,17 +322,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/fiverr-review-2026-is-it-worth-it-honest-verdict.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "gories</li> <li>Fiverr Pro for vetted top-tier freelancers</li> <li>Money-back guarantee on disputes</li> <li>Fiverr Business for team accounts</li> <li>AI-"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work.html",
       "claims": [
         {
@@ -544,64 +344,28 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/surfshark-review-2026-is-it-worth-it-honest-verdict.html",
+      "path": "site/pages/nordvpn-coupon-code-promo-codes-2026-verified-discounts.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem\">30-day money-back guarantee + 7-day free trial on iOS and Android.</p> <h2 style=\"font-size:1.4rem;font-"
+          "snippet": "30-Day Money-Back Guarantee",
+          "context": "</div> <div class=\"deal-info\"> <div class=\"deal-name\">30-Day Money-Back Guarantee</div> <div class=\"deal-desc\">Not a discount \u2014 but risk-free: try"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "<p style=\"color:rgba(255,248,245,.58);font-size:.9rem;margin-bottom:1.25rem\">30-day money-back guarantee + 7-day free trial on iOS and Android</p> <a href=\"/go/surfshark\" target=\"_"
+          "context": "stroke-width=\"2.5\"><path d=\"M6 9l6 6 6-6\"/></svg></div><div class=\"faq-a\">Yes \u2014 30-day money-back guarantee on all plans. Request via the app's in-app support or live chat. Processed with"
         }
       ],
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/protonvpn-coupon-code-promo-codes-2026-verified-discounts.html",
+      "path": "site/pages/shopify-review-2026-is-it-worth-it-honest-verdict.html",
       "claims": [
         {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "(255,255,255,.6)\">Get ProtonVPN's best 2026 price \u2014 2-year plan, up to 60% off, 30-day money-back guarantee. No code needed.</p> <a class=\"cta-btn\" href=\"/go/protonvpn?utm_source=saas"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s\"><h4>Pros</h4><ul><li>Up to 60% off with 2-year plan \u2014 no code needed</li><li>30-day money-back guarantee on all paid plans</li><li>Free forever plan (unlimited data, 1 device)</li><li>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "y lower 2-year price ($3.09/mo)</li><li>6,300+ servers in 111 countries</li><li>30-day money-back guarantee</li></ul></div> <div class=\"cons\"><h4>Cons</h4><ul><li>No free plan \u2014 p"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "iscount in 2026 is committing to the 2-year plan \u2014 you save up to 60% and get a 30-day money-back guarantee as a safety net. Any website claiming a working \"promo code\" for ProtonVPN is r"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r-free plan with unlimited data and 1 device connection. Paid plans come with a 30-day money-back guarantee, which effectively functions as a risk-free trial.</p> </details> <deta"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "al?</h2> <p style=\"color:rgba(255,255,255,.6)\">2-year plan \u2014 up to 60% off, 30-day money-back guarantee, no promo code needed.</p> <a class=\"cta-btn\" href=\"/go/protonvpn?utm_sourc"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/teachable-review-2026-is-it-worth-it-honest-verdict.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "nk:0\">&#10003;</span><span style=\"color:rgba(255,248,245,.78);font-size:.92rem\">30-day money-back guarantee on all paid plans</span></li><li style=\"display:flex;gap:.5rem;margin-bottom:.4"
+          "label": "sla_guarantee",
+          "snippet": "99.99% uptime guarantee",
+          "context": "class=\"pc-item\"><span class=\"pc-dot\"></span>Best-in-class checkout conversion (99.99% uptime guaranteed)</div> <div class=\"pc-item\"><span class=\"pc-dot\"></span>POS hard"
         }
       ],
       "trust_state_bumped": false
@@ -612,43 +376,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "rink:0\">&#10003;</span><span style=\"color:rgba(255,248,245,.8);line-height:1.5\">30-day money-back guarantee \u2014 completely risk-free</span></li></ul> </div> <div style=\"background:r"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "pan><span style=\"color:rgba(255,248,245,.8);line-height:1.5\">No free tier (only 30-day money-back guarantee)</span></li><li style=\"display:flex;gap:.5rem;margin-bottom:.5rem\"><span style="
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem\">30-day money-back guarantee \u2014 no questions asked.</p> <h2 style=\"font-size:1.4rem;font-weight:800;color:"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<p style=\"color:rgba(255,248,245,.58);font-size:.9rem;margin-bottom:1.25rem\">30-day money-back guarantee \u2014 no questions asked</p> <a href=\"/go/nordvpn\" target=\"_blank\" rel=\"noopene"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "tr> <tr> <td><strong>Trial</strong></td> <td>7-day money-back guarantee</td><td>Available</td> </tr> <tr> <td><strong>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "ass=\"cta-section\"> <h2>Our Top Pick</h2> <p>Try Surfer SEO free \u2014 7-day money-back guarantee.</p> <a class=\"cta-btn\" href=\"/go/surfer-seo?utm_source=saaspare&utm_med"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "7-day money-back guarantee",
-          "context": "etails class=\"faq-item\"><summary>Does Surfer SEO have a free trial?</summary><p>7-day money-back guarantee. We recommend using the full trial period to test your actual workflow, not a d"
+          "context": "or:var(--ink-4)\">Free plan</span><span style=\"color:var(--ink);font-weight:700\">30-day money-back guarantee</span></div> <div style=\"height:1px;background:var(--line-soft)\"></"
         }
       ],
       "trust_state_bumped": false
