@@ -335,6 +335,14 @@ jobs:
           PYEOF
         continue-on-error: true
 
+      # 4z-FINAL. Rebuild the sitemap AFTER all page generators have run.
+      # The earlier sitemap build (update_sitemap_hubs + update_sitemap_and_index)
+      # happens before the best-of/pricing/review/etc. generators create new pages,
+      # so freshly generated pages were missing from the sitemap and failing the
+      # integrity gate every night. This final rebuild closes that gap.
+      - name: Rebuild sitemap after all generators (pre-gate)
+        run: uv run python scripts/update_sitemap_and_index.py
+
       # 5. Comprehensive content QA gate (titles, descs, canonicals, JSON-LD,
       # sitemap, robots, money-page disclosure + sponsored attrs).
       # Hard failures fail the build; soft issues logged to outputs/seo/content_qa.json.
