@@ -202,5 +202,55 @@
         "Monitor Impact.com ticket #831603 \u2014 Wix contract pending approval"
       ]
     }
+  ],
+  "sessions": [
+    {
+      "date": "2026-06-06",
+      "session": "revenue-hunter",
+      "affiliate_status": {
+        "fiverr": "APPROVED Awin awinmid=6288 awinaffid=2917137 \u2014 live since 2026-06-03",
+        "freshbooks_awin": "REJECTED \u2014 program closing 2026-06-01. Redirect unchanged (still placeholder).",
+        "partnerstack": "BLOCKED 2026-06-04 (suspicious accounts). Appeal filed 2026-06-05 Ticket 115928. Affects ClickUp/Monday/ActiveCampaign/Dashlane.",
+        "clickup_partnerstack": "DECLINED independently by ClickUp on PartnerStack 2026-06-03",
+        "impact_7269601": "ACTIVE \u2014 only Semrush partnered. Wix contract application sent 2026-06-01.",
+        "xero": "No approval email yet",
+        "wix": "Application sent Impact.com 2026-06-01 \u2014 pending"
+      },
+      "url_leaks_fixed": [
+        "semrush-free-trial: 4x https://www.semrush.com/ \u2192 /go/semrush",
+        "aweber-free-trial: 4x https://www.aweber.com/pricing.htm \u2192 /go/aweber + typo fix"
+      ],
+      "ctr_fixes": [
+        "ramp-pricing: Bill Pay change alert block + sharpened title (1,687 impr, pos 10.2, 0.59% CTR)",
+        "mixpanel-pricing: \"Pricing Changes 2026\" title (742 impr, pos 13.7, 0% CTR)",
+        "nordlayer-pricing: \"Price 2026\" intent match (270 impr, pos 19.0)",
+        "does-notion-free-plan: \"Yes \u2014 4 Limits\" title (557 impr, pos 9.4, 0% CTR)",
+        "does-sentry-free-plan: \"Yes \u2014 5,000 Errors/Month Free\" title (528 impr, pos 7.5, 0% CTR)",
+        "best-devops-drift-tools: \"8 DevOps Tools Ranked\" title (380 impr, pos 18.1, 0% CTR)",
+        "aws-vs-supabase: \"[Startup vs Scale]\" title (286 impr, pos 10.1, 0% CTR)",
+        "does-bitwarden-free-plan: \"Limitations 2026\" title"
+      ],
+      "semrush_fixes": [
+        "semrush-vs-moz: title now targets plain \"semrush vs moz\" \u2014 1,237 impr at pos 67-80",
+        "semrush-vs-moz-pro: canonical \u2192 /pages/semrush-vs-moz-which-is-better-in-2026 (consolidates link equity)",
+        "semrush-pricing/coupon/promo: added dateModified WebPage schema (pages ranking pos 73-82)"
+      ],
+      "built": [
+        "fiverr-coupon-code-promo-codes-2026-verified-discounts.html \u2014 Awin approved, 5 FAQs, /go/fiverr x6",
+        "Added Fiverr entry to generate_coupon_pages_v3.py COUPONS dict"
+      ],
+      "measure_at_21days": {
+        "ramp-pricing-ctr": "baseline 0.59% @ pos 10.2 \u2014 target >1.5%",
+        "mixpanel-pricing-ctr": "baseline 0% @ pos 13.7 \u2014 target >0.5%",
+        "notion-sentry-ctr": "baseline 0% @ pos 7-9 \u2014 target >0.5%",
+        "semrush-vs-moz-pos": "baseline pos 67-80 \u2014 target <30 after canonical consolidation"
+      },
+      "next_human_actions": [
+        "URGENT: PartnerStack appeal \u2014 check for response to Ticket 115928 (filed 2026-06-05)",
+        "ACTION: Log into Awin (publisher 2917137) and apply to programs not yet joined: GetResponse (3142111), Elementor (6798066), AWeber (5111249), ProtonVPN (5227916), Parallels (2005415)",
+        "ACTION: Check Impact.com (account 7269601) for Wix approval and to apply for HubSpot/1Password manually",
+        "MONITOR: Semrush-vs-Moz canonical consolidation \u2014 check GSC in 3 weeks"
+      ]
+    }
   ]
 }
