@@ -35,10 +35,20 @@ def discover_dupes() -> None:
         if winner.exists():
             COUPON_PAIRS.append((fp.name, winner.name))
 
-    for fp in sorted(PAGES.glob('7-best-*-alternatives-in-2026-free-paid.html')):
-        winner = PAGES / fp.name[2:]  # strip "7-"
-        if winner.exists():
-            ALT_PAIRS.append((fp.name, winner.name))
+    # NOTE: Alternatives-page consolidation is intentionally DISABLED.
+    # The `7-best-X-alternatives` pages are self-canonical revenue pages with real
+    # GSC impressions (Ramp, Notion, etc.). Consolidating them to `best-X` twins
+    # (a) noindexed pages that actually rank — a direct revenue loss, and
+    # (b) re-pointed canonicals at slugs with no backing file when the `best-X`
+    #     winner didn't exist, which broke the nightly integrity + content-QA
+    #     gates every run (sitemap referenced / demanded non-existent pages).
+    # Leave each alternatives page self-canonical and indexed. The minor cost of
+    # not deduping the ~25 genuine twins is far smaller than noindexing rankers.
+    #
+    # for fp in sorted(PAGES.glob('7-best-*-alternatives-in-2026-free-paid.html')):
+    #     winner = PAGES / fp.name[2:]  # strip "7-"
+    #     if winner.exists():
+    #         ALT_PAIRS.append((fp.name, winner.name))
 
 
 # ── helpers ──────────────────────────────────────────────────────────────────
