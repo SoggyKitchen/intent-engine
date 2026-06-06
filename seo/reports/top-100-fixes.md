@@ -4,13 +4,7 @@
 - `/fo-verify` (28.56/100): invalid_canonical, missing_meta, no_h1
 - `/shortlist` (60.92/100): broken_internal_link, title_length_outside_target
 - `/media-kit` (65.26/100): broken_internal_link
-- `/pages/v3-preview-404` (66.97/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-contact` (69.52/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-newsletter` (70.44/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/about` (61.02/100): images_missing_alt
-- `/pages/v3-preview-shortlist` (71.18/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-deal-radar` (71.62/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/aws-vs-render-which-is-better-in-2026` (71.91/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/canva-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/miro-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/slack-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
@@ -18,85 +12,91 @@
 - `/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/newsletter` (62.74/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/contact` (62.75/100): images_missing_alt, title_length_outside_target
-- `/pages/aws-vs-supabase-which-is-better-in-2026` (72.94/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/1password-business-vs-cloudflare-which-is-better-in-2026` (73.06/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-wireguard-which-is-better-in-2026` (73.13/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/aws-vs-render-which-is-better-in-2026` (72.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/aws-vs-supabase-which-is-better-in-2026` (72.95/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/1password-business-vs-cloudflare-which-is-better-in-2026` (73.05/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/1password-business-vs-crowdstrike-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/1password-business-vs-sentinelone-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/1password-business-vs-tresorit-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/docusign-clm-vs-icertis-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-openvpn-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/1password-business-vs-sentinelone-which-is-better-in-2026` (73.19/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/1password-business-vs-tresorit-which-is-better-in-2026` (73.19/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026` (73.19/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-twingate-which-is-better-in-2026` (73.19/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-zscaler-which-is-better-in-2026` (73.2/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026` (73.29/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/1password-business-vs-duo-security-which-is-better-in-2026` (73.31/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026` (73.37/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026` (73.42/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (73.42/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/expressvpn-business-vs-twingate-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/expressvpn-business-vs-wireguard-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/expressvpn-business-vs-zscaler-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/expressvpn-business-vs-openvpn-which-is-better-in-2026` (73.18/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026` (73.2/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026` (73.25/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/1password-business-vs-duo-security-which-is-better-in-2026` (73.34/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026` (73.34/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/microsoft-teams-vs-google-meet-which-is-better-in-2026` (73.41/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/microsoft-teams-vs-riverside-fm-which-is-better-in-2026` (73.41/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/privacy` (73.61/100): broken_internal_link, meta_length_outside_target
-- `/pages/v3-preview-library` (73.61/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-homepage` (73.7/100): broken_internal_link, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/notion-vs-wrike-which-is-better-in-2026` (73.78/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-affiliate-disclosure` (73.78/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/notion-vs-jira-which-is-better-in-2026` (73.79/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-jira-which-is-better-in-2026` (73.78/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/notion-vs-jira-which-is-better-in-2026` (73.78/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/stripe-vs-recharge-which-is-better-in-2026` (73.78/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/trello-vs-wrike-which-is-better-in-2026` (73.78/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/digitalocean-vs-render-which-is-better-in-2026` (73.8/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/stripe-vs-recurly-which-is-better-in-2026` (73.8/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/trello-vs-wrike-which-is-better-in-2026` (73.8/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/woocommerce-vs-stripe-which-is-better-in-2026` (73.8/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/woocommerce-vs-recurly-which-is-better-in-2026` (73.8/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/digitalocean-vs-linode-which-is-better-in-2026` (73.81/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/gusto-vs-deel-which-is-better-in-2026` (73.81/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/jira-vs-trello-which-is-better-in-2026` (73.81/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/jira-vs-wrike-which-is-better-in-2026` (73.81/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/notion-vs-trello-which-is-better-in-2026` (73.81/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/woocommerce-vs-recurly-which-is-better-in-2026` (73.81/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/paddle-vs-recurly-which-is-better-in-2026` (73.82/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/digitalocean-vs-render-which-is-better-in-2026` (73.83/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/jira-vs-trello-which-is-better-in-2026` (73.83/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/woocommerce-vs-recharge-which-is-better-in-2026` (73.83/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/woocommerce-vs-recharge-which-is-better-in-2026` (73.81/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/digitalocean-vs-supabase-which-is-better-in-2026` (73.82/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/mailchimp-vs-klaviyo-which-is-better-in-2026` (73.82/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/notion-vs-wrike-which-is-better-in-2026` (73.82/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/deel-vs-lattice-which-is-better-in-2026` (73.83/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/woocommerce-vs-gumroad-which-is-better-in-2026` (73.83/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/woocommerce-vs-stripe-which-is-better-in-2026` (73.83/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bigcommerce-vs-recurly-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/chargebee-vs-recurly-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/linear-vs-datadog-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/linear-vs-jira-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/mailchimp-vs-klaviyo-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/paddle-vs-stripe-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/stripe-vs-recharge-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/bigcommerce-vs-gumroad-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/chargebee-vs-recharge-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/paddle-vs-recharge-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/woocommerce-vs-gumroad-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/notion-vs-trello-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/paddle-vs-recharge-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/paddle-vs-recurly-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/rippling-vs-deel-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/stripe-vs-chargebee-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/woocommerce-vs-chargebee-which-is-better-in-2026` (73.84/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bamboohr-vs-deel-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/cloudflare-vs-tenable-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/digitalocean-vs-railway-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/digitalocean-vs-vultr-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-netlify-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-vercel-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/paddle-vs-chargebee-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/paddle-vs-stripe-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/woocommerce-vs-paddle-which-is-better-in-2026` (73.86/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/chargebee-vs-recurly-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/deel-vs-lattice-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/digitalocean-vs-supabase-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/linear-vs-netlify-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/stripe-vs-chargebee-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/woocommerce-vs-chargebee-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/chargebee-vs-recharge-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/digitalocean-vs-hetzner-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-pagerduty-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/notion-vs-smartsheet-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/pipedrive-vs-nutshell-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/salesforce-vs-pipedrive-which-is-better-in-2026` (73.87/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bigcommerce-vs-gumroad-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bigcommerce-vs-paddle-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/bigcommerce-vs-stripe-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/cloudflare-vs-sentinelone-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/cloudflare-vs-tresorit-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/jira-vs-basecamp-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/klaviyo-vs-marketo-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/linear-vs-retool-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/linear-vs-sentry-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/linear-vs-terraform-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/linear-vs-vercel-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/lastpass-vs-enpass-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/mailchimp-vs-drip-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/paddle-vs-chargebee-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/salesforce-vs-pipedrive-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/cloudflare-vs-sentinelone-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/cloudflare-vs-tenable-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/cloudflare-vs-tresorit-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/digitalocean-vs-linode-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/gusto-vs-deel-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/notion-vs-basecamp-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/trello-vs-basecamp-which-is-better-in-2026` (73.88/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/aws-vs-digitalocean-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bigcommerce-vs-recharge-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/klaviyo-vs-marketo-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/klaviyo-vs-pardot-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/mailchimp-vs-marketo-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/notion-vs-basecamp-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/trello-vs-smartsheet-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/bamboohr-vs-deel-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/cloudflare-vs-qualys-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/lastpass-vs-enpass-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/linear-vs-pagerduty-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/bigcommerce-vs-recharge-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/bigcommerce-vs-recurly-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/datadog-vs-pagerduty-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/digitalocean-vs-vultr-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/jira-vs-smartsheet-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/jira-vs-todoist-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/lastpass-vs-roboform-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/mailchimp-vs-pardot-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/notion-vs-smartsheet-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/notion-vs-todoist-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-shortcut-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/pipedrive-vs-freshsales-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/pipedrive-vs-keap-which-is-better-in-2026` (73.89/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/klaviyo-vs-drip-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-retool-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-sentry-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-vs-terraform-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/pipedrive-vs-insightly-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/salesforce-vs-insightly-which-is-better-in-2026` (73.9/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/amplitude-vs-heap-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/amplitude-vs-looker-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/aws-vs-linode-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/bamboohr-vs-rippling-which-is-better-in-2026` (73.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page

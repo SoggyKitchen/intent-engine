@@ -1,6 +1,6 @@
 # Link Cleanup
 
-- Pages with broken internal links: 1427
+- Pages with broken internal links: 1429
 - Internal links still containing `.html`: 326
 
 ## Broken Internal Links
@@ -36,7 +36,7 @@
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay`: /pages/best-1password-alternatives-2026
 - `/pages/1password-pricing-history-2026`: /editorial
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work`: /editorial
-- `/pages/1password-review-2026-is-it-worth-it-honest-verdict`: /editorial
+- `/pages/1password-review-2026-is-it-worth-it-honest-verdict`: /authors/smith-elly, /editorial
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
 - `/pages/1password-vs-dashlane-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
 - `/pages/1password-vs-enpass-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
@@ -99,7 +99,7 @@
 - `/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts`: /editorial
 - `/pages/activecampaign-free-trial-2026-how-to-start-what-you-get`: /editorial
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: /editorial, /pages/activecampaign-pricing-history-2026, /pages/best-activecampaign-alternatives-2026
-- `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict`: /editorial
+- `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict`: /authors/smith-elly, /editorial
 - `/pages/activecampaign-vs-brevo-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
 - `/pages/activecampaign-vs-convertkit-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
 - `/pages/activecampaign-vs-drip-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/

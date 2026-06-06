@@ -2,12 +2,10 @@
   "canonicalIssues": [
     "/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f",
     "/fo-verify",
-    "/pages/best-devtools-for-b2b-engineering-teams-in-2025",
-    "/pages/best-devtools-for-b2b-software-development-in-2025"
+    "/pages"
   ],
   "noindex": [
     "/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f",
-    "/fo-verify",
-    "/pages/v3-preview-index"
+    "/fo-verify"
   ]
 }
