@@ -23,12 +23,36 @@ def _is_noindex(path: pathlib.Path) -> bool:
         return False
 
 
+def _url_has_backing_file(url: str) -> bool:
+    """True if a sitemap URL maps to a real HTML file on disk.
+
+    Guards against phantom entries: a page may declare a canonical that points to
+    a slug with no corresponding file (e.g. `best-adp-...` when only
+    `7-best-adp-...html` exists). Such URLs must NOT enter the sitemap, or the
+    content-QA HARD gate ('sitemap references non-existent pages') fails the build.
+    """
+    path = url[len(DOMAIN):] if url.startswith(DOMAIN) else url
+    path = path.split("#")[0].split("?")[0].rstrip("/")
+    if path in ("", "/"):
+        return True  # homepage
+    if path == "/pages":
+        return (pathlib.Path("site/pages") / "index.html").exists()
+    slug = path.lstrip("/")
+    site = pathlib.Path("site")
+    return (site / f"{slug}.html").exists() or (site / slug / "index.html").exists()
+
+
 def _canonical_url(path: pathlib.Path, fallback: str) -> str:
     try:
         raw = path.read_text(encoding="utf-8", errors="replace")
         m = CANONICAL_RE.search(raw)
         if m:
-            return m.group(1).split("#")[0].rstrip("/")
+            canonical = m.group(1).split("#")[0].rstrip("/")
+            # Only trust the canonical if it resolves to a real file. If a page
+            # canonicalises to a slug with no backing file, fall back to this
+            # file's own path — which exists by construction (we are iterating it).
+            if _url_has_backing_file(canonical):
+                return canonical
     except OSError:
         pass
     return fallback
