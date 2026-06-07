@@ -277,39 +277,28 @@ nav.sp-topnav{display:none!important}
           <span class="dr-clear">Clear all</span>
         </div>
 
-        <div class="dr-group">
+        <div class="dr-group" data-filter-group="category">
           <h5>Categories</h5>
-          <div class="dr-opt active"><span>All Categories</span><span class="dr-opt-count">126</span></div>
-          <div class="dr-opt"><span>CRM</span><span class="dr-opt-count">18</span></div>
-          <div class="dr-opt"><span>Project Mgmt</span><span class="dr-opt-count">16</span></div>
-          <div class="dr-opt"><span>Marketing</span><span class="dr-opt-count">22</span></div>
-          <div class="dr-opt"><span>Sales</span><span class="dr-opt-count">14</span></div>
-          <div class="dr-opt"><span>Dev Tools</span><span class="dr-opt-count">18</span></div>
-          <div class="dr-opt"><span>Finance</span><span class="dr-opt-count">8</span></div>
-          <div class="dr-opt" style="color:var(--ink-4)"><span>More ↓</span></div>
+          <div class="dr-opt active" data-filter-value="all"><span>All Categories</span><span class="dr-opt-count">5</span></div>
+          <div class="dr-opt" data-filter-value="VPN"><span>VPN</span><span class="dr-opt-count">2</span></div>
+          <div class="dr-opt" data-filter-value="Password Mgmt"><span>Password Mgmt</span><span class="dr-opt-count">1</span></div>
+          <div class="dr-opt" data-filter-value="Website Security"><span>Website Security</span><span class="dr-opt-count">1</span></div>
+          <div class="dr-opt" data-filter-value="Cloud Hosting"><span>Cloud Hosting</span><span class="dr-opt-count">1</span></div>
         </div>
 
-        <div class="dr-group">
+        <div class="dr-group" data-filter-group="type">
           <h5>Deal Type</h5>
-          <div class="dr-opt active"><span>All Deals</span><span class="dr-opt-count">126</span></div>
-          <div class="dr-opt"><span>Percentage Off</span><span class="dr-opt-count">73</span></div>
-          <div class="dr-opt"><span>Flat Discount</span><span class="dr-opt-count">31</span></div>
-          <div class="dr-opt"><span>Free Trial</span><span class="dr-opt-count">22</span></div>
+          <div class="dr-opt active" data-filter-value="all"><span>All Deals</span><span class="dr-opt-count">5</span></div>
+          <div class="dr-opt" data-filter-value="percent"><span>Percentage Off</span><span class="dr-opt-count">3</span></div>
+          <div class="dr-opt" data-filter-value="flat"><span>Flat / Best Value</span><span class="dr-opt-count">2</span></div>
         </div>
 
-        <div class="dr-group">
+        <div class="dr-group" data-filter-group="discount">
           <h5>Discount</h5>
-          <div class="dr-opt"><span>Any Discount</span></div>
-          <div class="dr-opt"><span>10% or more</span></div>
-          <div class="dr-opt"><span>25% or more</span></div>
-          <div class="dr-opt"><span>50% or more</span></div>
-        </div>
-
-        <div class="dr-group">
-          <h5>Billing</h5>
-          <div class="dr-opt"><span>Any Billing</span></div>
-          <div class="dr-opt"><span>Monthly</span></div>
-          <div class="dr-opt"><span>Annual</span></div>
+          <div class="dr-opt active" data-filter-value="0"><span>Any Discount</span></div>
+          <div class="dr-opt" data-filter-value="10"><span>10% or more</span></div>
+          <div class="dr-opt" data-filter-value="25"><span>25% or more</span></div>
+          <div class="dr-opt" data-filter-value="50"><span>50% or more</span></div>
         </div>
 
         <a href="/shortlist" class="sp-btn sp-btn-ghost sp-btn-sm" style="justify-content:space-between">
@@ -322,19 +311,19 @@ nav.sp-topnav{display:none!important}
       <div>
         <!-- Tab strip -->
         <div class="dr-tabs">
-          <button class="dr-tab active">
+          <button class="dr-tab active" data-tab="hot">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 7c0-3.5-3-6-6-6-1 2.5 1.5 4.5 1.5 7 0 2-2.5 3-2.5 6 0 4 3 7 7 7s7-3 7-7c0-3-2.5-4-2.5-7 0-1.5-1-2.5-2-2.5"/></svg>
             Hot Deals
           </button>
-          <button class="dr-tab">
+          <button class="dr-tab" data-tab="savings">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg>
             Highest Savings
           </button>
-          <button class="dr-tab">
+          <button class="dr-tab" data-tab="new">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
             New Deals
           </button>
-          <button class="dr-tab">
+          <button class="dr-tab" data-tab="ending">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             Ending Soon
           </button>
@@ -342,7 +331,7 @@ nav.sp-topnav{display:none!important}
 
         <!-- DEAL ROWS -->
         <div class="dr-deals">
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="VPN" data-type="percent" data-discount="72" data-added="2026-05-26" data-billing-months="24">
             <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/nordvpn/4687ff"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -363,7 +352,7 @@ nav.sp-topnav{display:none!important}
               <button class="dr-deal-save" aria-label="Save to shortlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg></button>
             </div>
           </article>
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="Password Mgmt" data-type="percent" data-discount="55" data-added="2026-05-26" data-billing-months="12">
             <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/nordpass/4687ff"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -384,7 +373,7 @@ nav.sp-topnav{display:none!important}
               <button class="dr-deal-save" aria-label="Save to shortlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg></button>
             </div>
           </article>
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="VPN" data-type="percent" data-discount="80" data-added="2026-05-26" data-billing-months="24">
             <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/surfshark/1abcfe"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -405,7 +394,7 @@ nav.sp-topnav{display:none!important}
               <button class="dr-deal-save" aria-label="Save to shortlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg></button>
             </div>
           </article>
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="Cloud Hosting" data-type="flat" data-discount="0" data-added="2026-05-26" data-billing-months="1">
             <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/linux/ffffff"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -426,7 +415,7 @@ nav.sp-topnav{display:none!important}
               <button class="dr-deal-save" aria-label="Save to shortlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg></button>
             </div>
           </article>
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="Website Security" data-type="flat" data-discount="0" data-added="2026-05-26" data-billing-months="12">
             <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/sucuri/4a9e4b"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -510,13 +499,103 @@ nav.sp-topnav{display:none!important}
 /* ── Deal Radar — interactive wiring ── */
 (function(){
 
-  /* Tab switching — visual active state */
+  /* ── Filters + sort tabs — all driven by real data attributes baked into each
+     deal card (data-category, data-type, data-discount, data-added,
+     data-billing-months). Nothing here is fabricated: discount %, category and
+     billing cadence all match the verified figures shown on the card. ── */
+  var dealsList = document.querySelector('.dr-deals');
+  var dealCards = Array.prototype.slice.call(document.querySelectorAll('.dr-deal'));
+  var state = { category: 'all', type: 'all', discount: 0, tab: 'hot' };
+
+  function applyFilters() {
+    var visible = [];
+    dealCards.forEach(function(card){
+      var cat  = card.getAttribute('data-category') || '';
+      var typ  = card.getAttribute('data-type') || '';
+      var disc = parseInt(card.getAttribute('data-discount') || '0', 10);
+      var q = state.query || '';
+      var match = (state.category === 'all' || cat === state.category)
+               && (state.type === 'all' || typ === state.type)
+               && (disc >= state.discount)
+               && (!q || card.textContent.toLowerCase().indexOf(q) !== -1);
+      card.style.display = match ? '' : 'none';
+      if (match) visible.push(card);
+    });
+
+    // Sort the visible cards according to the active tab — using only real,
+    // already-displayed data (discount %, verified-added date, billing cadence).
+    var sorted = visible.slice();
+    if (state.tab === 'savings') {
+      sorted.sort(function(a, b){
+        return (parseInt(b.getAttribute('data-discount')||'0',10)) - (parseInt(a.getAttribute('data-discount')||'0',10));
+      });
+    } else if (state.tab === 'new') {
+      sorted.sort(function(a, b){
+        var da = a.getAttribute('data-added') || '';
+        var db = b.getAttribute('data-added') || '';
+        return db.localeCompare(da); // most recently verified/added first
+      });
+    } else if (state.tab === 'ending') {
+      sorted.sort(function(a, b){
+        var ma = parseInt(a.getAttribute('data-billing-months')||'999',10);
+        var mb = parseInt(b.getAttribute('data-billing-months')||'999',10);
+        return ma - mb; // shortest billing cycle = soonest renewal decision first
+      });
+    }
+    // 'hot' = curated default order (no resort)
+
+    sorted.forEach(function(card){ dealsList.appendChild(card); });
+
+    // Empty state
+    var existingEmpty = dealsList.querySelector('.dr-empty');
+    if (visible.length === 0) {
+      if (!existingEmpty) {
+        var empty = document.createElement('div');
+        empty.className = 'dr-empty';
+        empty.style.cssText = 'padding:2.5rem 1rem;text-align:center;color:var(--ink-4);font-size:.9rem';
+        empty.textContent = 'No verified deals match these filters right now — check back soon, new deals are added as we verify them.';
+        dealsList.appendChild(empty);
+      }
+    } else if (existingEmpty) {
+      existingEmpty.remove();
+    }
+  }
+
+  /* Tab switching — sorts by real data, no fabricated freshness/expiry numbers */
   document.querySelectorAll('.dr-tab').forEach(function(tab) {
     tab.addEventListener('click', function() {
       document.querySelectorAll('.dr-tab').forEach(function(t){ t.classList.remove('active'); });
       tab.classList.add('active');
+      state.tab = tab.getAttribute('data-tab') || 'hot';
+      applyFilters();
     });
   });
+
+  /* Sidebar filter chips — Categories / Deal Type / Discount */
+  document.querySelectorAll('.dr-group[data-filter-group]').forEach(function(group){
+    var key = group.getAttribute('data-filter-group');
+    group.querySelectorAll('.dr-opt[data-filter-value]').forEach(function(opt){
+      opt.addEventListener('click', function(){
+        group.querySelectorAll('.dr-opt').forEach(function(o){ o.classList.remove('active'); });
+        opt.classList.add('active');
+        var val = opt.getAttribute('data-filter-value');
+        state[key] = (key === 'discount') ? parseInt(val, 10) : val;
+        applyFilters();
+      });
+    });
+  });
+
+  /* Clear all — resets every filter group back to "All" */
+  var clearBtn = document.querySelector('.dr-clear');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function(){
+      state.category = 'all'; state.type = 'all'; state.discount = 0;
+      document.querySelectorAll('.dr-group[data-filter-group]').forEach(function(group){
+        group.querySelectorAll('.dr-opt').forEach(function(o, i){ o.classList.toggle('active', i === 0); });
+      });
+      applyFilters();
+    });
+  }
 
   /* Save to shortlist — star bookmark toggle with toast */
   var toast = document.createElement('div');
@@ -549,16 +628,14 @@ nav.sp-topnav{display:none!important}
     });
   });
 
-  /* Search / filter bar */
+  /* Search bar — combines with the category/type/discount/tab state above
+     instead of fighting it for display:none control */
   var searchInput = document.querySelector('.dr-search input, .dr-sidebar input[type="text"]');
   var searchBtn   = document.querySelector('.dr-search .sp-btn, button.glint-button:not(.sp-btn-primary ~ *)');
   if(searchInput) {
     function filterDeals() {
-      var q = searchInput.value.trim().toLowerCase();
-      document.querySelectorAll('.dr-deal').forEach(function(deal) {
-        var text = deal.textContent.toLowerCase();
-        deal.style.display = (!q || text.includes(q)) ? '' : 'none';
-      });
+      state.query = searchInput.value.trim().toLowerCase();
+      applyFilters();
     }
     searchInput.addEventListener('input', filterDeals);
     if(searchBtn) searchBtn.addEventListener('click', filterDeals);
