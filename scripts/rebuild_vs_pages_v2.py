@@ -289,16 +289,6 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 <body>
 <div class="sp-bg"></div>
 
-<nav class="sp-nav">
-  <a href="/" class="sp-nav-logo">
-    <span class="sp-nav-logo-mark">S</span>Saa<em>Spare</em>
-  </a>
-  <a href="/pages/" class="sp-nav-link active">Comparisons</a>
-  <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
-  <a href="/about" class="sp-nav-link">About</a>
-  {cta_btn(winner_url, f"Get {winner}", "sp-btn sp-btn-primary sp-btn-sm")}
-</nav>
-
 <section class="ar-hero">
   <span class="bg-orb bg-orb-pink" style="width:380px;height:380px;top:-140px;right:-90px"></span>
   <span class="bg-orb bg-orb-wine" style="width:300px;height:300px;bottom:-150px;left:-70px"></span>

@@ -115,7 +115,9 @@ nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp
 .sp-nav-wordmark em{color:#e94560;font-style:normal}
 nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
   border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
-nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
+nav#sp-nav .sp-nav-link:hover{color:#fff}
+nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
+nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
 .sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
   padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
   box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
@@ -132,6 +134,19 @@ nav.sp-topnav{display:none!important}
     var nav=document.getElementById('sp-nav');
     if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
   },{passive:true});
+
+  // Highlight the nav link matching the current page (red underglow)
+  var path=window.location.pathname;
+  var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
+  var best=null,bestLen=0;
+  links.forEach(function(a){
+    var href=a.getAttribute('href');
+    if(!href||href==='/') return;
+    if(path===href||path.indexOf(href)===0){
+      if(href.length>bestLen){best=a;bestLen=href.length;}
+    }
+  });
+  if(best){best.classList.add('active');}
 })();
 </script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -363,17 +378,6 @@ nav.sp-topnav{display:none!important}
   <a href="/shortlist" class="sp-nav-cta">Build Shortlist &#8594;</a>
 </nav>
 <div class="sp-nav-spacer"></div>
-
-
-<nav class="sp-nav">
-  <a href="/" class="sp-nav-logo">
-    <span class="sp-nav-logo-mark">S</span>Saa<em>Spare</em>
-  </a>
-  <a href="/pages/" class="sp-nav-link active">Comparisons</a>
-  <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
-  <a href="/about" class="sp-nav-link">About</a>
-  <span class="sp-btn sp-btn-ghost" style="opacity:.5;cursor:default">Get Fullstory</span>
-</nav>
 
 <section class="ar-hero">
   <span class="bg-orb bg-orb-pink" style="width:380px;height:380px;top:-140px;right:-90px"></span>
