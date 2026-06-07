@@ -1,21 +1,21 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-06T06:37:35+00:00
+Generated: 2026-06-07T07:13:54+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **80.09/100**
+- Overall SaaSpare Health Score: **80.08/100**
 - Level: **Competitive**
-- Technical SEO: 16.46/20
-- Content usefulness: 17.97/20
+- Technical SEO: 16.45/20
+- Content usefulness: 17.98/20
 - Trust/E-E-A-T: 13.82/20
-- Internal linking: 11.89/15
+- Internal linking: 11.88/15
 - Schema/indexability: 7.62/10
-- Conversion/revenue: 7.71/10
+- Conversion/revenue: 7.72/10
 - Performance/UX: 4.62/5
 
 ## Dashboard Summary
-- Pages scanned: 1445
+- Pages scanned: 1450
 - Healthy pages (85+): 290
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
@@ -44,31 +44,31 @@ Mode: `audit`
 - `/fo-verify` (28.56/100): invalid_canonical, missing_meta, no_h1
 - `/shortlist` (60.92/100): broken_internal_link, title_length_outside_target
 - `/media-kit` (65.26/100): broken_internal_link
+- `/pages` (65.5/100): broken_internal_link, canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/about` (61.02/100): images_missing_alt
 - `/pages/canva-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/miro-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/slack-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
+- `/pages/zoom-vs-riverside-fm-which-is-better-in-2026` (72.12/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/newsletter` (62.74/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/contact` (62.75/100): images_missing_alt, title_length_outside_target
+- `/pages/stripe-vs-recurly-which-is-better-in-2026` (72.78/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/digitalocean-vs-linode-which-is-better-in-2026` (72.83/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/aws-vs-render-which-is-better-in-2026` (72.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/aws-vs-supabase-which-is-better-in-2026` (72.95/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/zoom-vs-whereby-which-is-better-in-2026` (72.96/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/zoom-vs-descript-which-is-better-in-2026` (72.97/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/zoom-vs-streamyard-which-is-better-in-2026` (72.98/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/zoom-vs-around-which-is-better-in-2026` (73.0/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/1password-business-vs-cloudflare-which-is-better-in-2026` (73.05/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/1password-business-vs-crowdstrike-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/expressvpn-business-vs-wireguard-which-is-better-in-2026` (73.16/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/1password-business-vs-sentinelone-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/1password-business-vs-tresorit-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/docusign-clm-vs-icertis-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-twingate-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-wireguard-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-zscaler-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-openvpn-which-is-better-in-2026` (73.18/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026` (73.2/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/zendesk-vs-hubspot-service-hub-which-is-better-in-2026` (73.25/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/expressvpn-business-vs-openvpn-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.44): CTA=True, affiliateLinks=5, disclosure=True
-- `/pages/best-saas-deals-this-week-2026` (coupon, score 77.71): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/best-saas-deals-this-week-2026` (coupon, score 77.72): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
@@ -85,10 +85,10 @@ Mode: `audit`
 - `/pages/shopify-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.74): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.77): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.83): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/miro-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.48): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/mixpanel-coupon-2026-discount-codes-promo` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/contabo-coupon-2026-discount-codes-promo` (coupon, score 83.51): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/gusto-coupon-2026-discount-codes-promo` (coupon, score 83.51): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/linear-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/miro-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/ramp-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/pandadoc-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/vultr-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/bigcommerce-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True

@@ -1,7 +1,7 @@
 # Link Cleanup
 
-- Pages with broken internal links: 1429
-- Internal links still containing `.html`: 326
+- Pages with broken internal links: 1434
+- Internal links still containing `.html`: 322
 
 ## Broken Internal Links
 - `/affiliate-disclosure`: /authors/kaylan-von-papen

@@ -1,25 +1,25 @@
 {
-  "endDate": "2026-06-03",
+  "endDate": "2026-06-04",
   "opportunities": [
     {
       "clicks": 6.0,
-      "ctr": 0.0066,
-      "impressions": 916.0,
+      "ctr": 0.007,
+      "impressions": 855.0,
       "page": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 9.79,
+      "position": 9.52,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 91.11
+      "score": 89.62
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 397.0,
+      "impressions": 395.0,
       "page": "https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 15.36,
+      "position": 15.38,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 79.58
+      "score": 79.52
     },
     {
       "clicks": 3.0,
@@ -34,99 +34,79 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 160.0,
+      "impressions": 147.0,
       "page": "https://saaspare.org/pages/aws-vs-supabase-which-is-better-in-2026",
-      "position": 10.37,
+      "position": 10.53,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 76.57
+      "score": 76.47
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 78.0,
+      "impressions": 79.0,
       "page": "https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
-      "position": 11.4,
+      "position": 11.28,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 75.96
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 124.0,
-      "page": "https://saaspare.org/pages/twingate-vs-tailscale-which-is-better-in-2026",
-      "position": 13.98,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 75.5
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 32.0,
-      "page": "https://saaspare.org/pages/docusign-review-2026-is-it-worth-it-honest-verdict",
-      "position": 11.78,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 75.42
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 22.0,
-      "page": "https://saaspare.org/pages/xero-vs-brex-which-is-better-in-2026",
-      "position": 11.91,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 75.35
+      "score": 75.86
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 31.0,
-      "page": "https://saaspare.org/pages/zoom-vs-riverside-fm-which-is-better-in-2026",
-      "position": 12.32,
+      "page": "https://saaspare.org/pages/docusign-review-2026-is-it-worth-it-honest-verdict",
+      "position": 11.94,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 75.3
+      "score": 75.56
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 118.0,
+      "impressions": 107.0,
       "page": "https://saaspare.org/pages/aws-vs-render-which-is-better-in-2026",
-      "position": 9.9,
+      "position": 10.23,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 75.26
+      "score": 75.37
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 45.0,
-      "page": "https://saaspare.org/pages/google-meet-vs-webex-which-is-better-in-2026",
-      "position": 12.73,
+      "impressions": 119.0,
+      "page": "https://saaspare.org/pages/twingate-vs-tailscale-which-is-better-in-2026",
+      "position": 14.04,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 75.17
+      "score": 75.34
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 72.0,
+      "impressions": 21.0,
+      "page": "https://saaspare.org/pages/xero-vs-brex-which-is-better-in-2026",
+      "position": 12.14,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 75.28
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 71.0,
       "page": "https://saaspare.org/pages/expressvpn-business-vs-tailscale-which-is-better-in-2026",
-      "position": 10.69,
+      "position": 10.76,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 75.13
+      "score": 75.18
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 55.0,
+      "impressions": 49.0,
       "page": "https://saaspare.org/pages/twingate-vs-cloudflare-access-which-is-better-in-2026",
-      "position": 10.96,
+      "position": 11.08,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 75.06
@@ -154,32 +134,32 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 30.0,
-      "page": "https://saaspare.org/pages/contractbook-vs-juro-which-is-better-in-2026",
-      "position": 12.73,
+      "impressions": 28.0,
+      "page": "https://saaspare.org/pages/zoom-vs-riverside-fm-which-is-better-in-2026",
+      "position": 12.68,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 74.87
+      "score": 74.88
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 30.0,
-      "page": "https://saaspare.org/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid",
-      "position": 12.83,
-      "query": "best free alternatives to microsoft teams 2025 2026",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 74.77
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 112.0,
+      "impressions": 100.0,
       "page": "https://saaspare.org/pages/docusign-clm-vs-icertis-which-is-better-in-2026",
-      "position": 9.5,
+      "position": 9.82,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 74.74
+      "score": 74.82
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 29.0,
+      "page": "https://saaspare.org/pages/contractbook-vs-juro-which-is-better-in-2026",
+      "position": 12.79,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 74.79
     },
     {
       "clicks": 0.0,
@@ -204,52 +184,32 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 78.0,
+      "impressions": 75.0,
       "page": "https://saaspare.org/pages/hetzner-vs-vultr-which-is-better-in-2026",
-      "position": 9.59,
+      "position": 9.71,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 74.15
+      "score": 74.21
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 65.0,
-      "page": "https://saaspare.org/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
-      "position": 9.85,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 74.15
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 20.0,
-      "page": "https://saaspare.org/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 10.7,
-      "query": "gusto core plan",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 74.1
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 105.0,
-      "page": "https://saaspare.org/pages/cloudflare-access-vs-tailscale-which-is-better-in-2026",
-      "position": 8.93,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 74.03
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 22.0,
+      "impressions": 21.0,
       "page": "https://saaspare.org/pages/weekly-saas-deal-digest",
-      "position": 10.59,
+      "position": 10.62,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 74.03
+      "score": 74.04
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 96.0,
+      "page": "https://saaspare.org/pages/cloudflare-access-vs-tailscale-which-is-better-in-2026",
+      "position": 9.0,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 73.92
     },
     {
       "clicks": 1.0,
@@ -264,9 +224,29 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 29.0,
+      "impressions": 59.0,
+      "page": "https://saaspare.org/pages/hetzner-vs-railway-which-is-better-in-2026",
+      "position": 9.71,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 73.89
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 49.0,
+      "page": "https://saaspare.org/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
+      "position": 9.71,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 73.69
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 27.0,
       "page": "https://saaspare.org/pages/whereby-vs-around-which-is-better-in-2026",
-      "position": 10.07,
+      "position": 10.11,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 73.65
@@ -284,39 +264,29 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 51.0,
+      "impressions": 47.0,
       "page": "https://saaspare.org/pages/rippling-coupon-code-promo-codes-2026-verified-discounts",
-      "position": 9.41,
+      "position": 9.55,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 73.43
+      "score": 73.49
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 68.0,
-      "page": "https://saaspare.org/pages/hetzner-vs-railway-which-is-better-in-2026",
-      "position": 8.96,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 73.32
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 67.0,
+      "impressions": 20.0,
       "page": "https://saaspare.org/deal-radar",
-      "position": 8.82,
-      "query": "",
+      "position": 9.75,
+      "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 73.16
+      "score": 73.15
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 52.0,
-      "page": "https://saaspare.org/pages/webex-vs-around-which-is-better-in-2026",
-      "position": 9.02,
+      "impressions": 26.0,
+      "page": "https://saaspare.org/pages/bigcommerce-vs-recharge-which-is-better-in-2026",
+      "position": 9.54,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 73.06
@@ -324,59 +294,59 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 51.0,
-      "page": "https://saaspare.org/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 8.98,
+      "impressions": 65.0,
+      "page": "https://saaspare.org/deal-radar",
+      "position": 8.71,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 73.0
+      "score": 73.01
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 32.0,
+      "impressions": 45.0,
+      "page": "https://saaspare.org/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 9.09,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 72.99
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 30.0,
       "page": "https://saaspare.org/pages/aws-vs-supabase-which-is-better-in-2026",
-      "position": 9.34,
+      "position": 9.33,
       "query": "aws vs supabase",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 72.98
+      "score": 72.93
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 28.0,
-      "page": "https://saaspare.org/pages/bigcommerce-vs-recharge-which-is-better-in-2026",
-      "position": 9.36,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 72.92
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 27.0,
+      "impressions": 24.0,
       "page": "https://saaspare.org/pages/google-meet-vs-streamyard-which-is-better-in-2026",
-      "position": 9.33,
+      "position": 9.42,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 72.87
+      "score": 72.9
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 49.0,
+      "impressions": 46.0,
       "page": "https://saaspare.org/pages/openai-api-vs-cohere-which-is-better-in-2026",
-      "position": 8.88,
+      "position": 8.93,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 72.86
+      "score": 72.85
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 72.0,
-      "page": "https://saaspare.org/pages/ramp-review-2026-is-it-worth-it-honest-verdict",
-      "position": 8.33,
+      "impressions": 44.0,
+      "page": "https://saaspare.org/pages/webex-vs-around-which-is-better-in-2026",
+      "position": 8.89,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 72.77
@@ -404,9 +374,19 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 49.0,
-      "page": "https://saaspare.org/pages/tresorit-pricing-history-2026",
-      "position": 8.61,
+      "impressions": 70.0,
+      "page": "https://saaspare.org/pages/ramp-review-2026-is-it-worth-it-honest-verdict",
+      "position": 8.2,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 72.6
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 62.0,
+      "page": "https://saaspare.org/pages/hetzner-vs-supabase-which-is-better-in-2026",
+      "position": 8.35,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 72.59
@@ -414,12 +394,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 64.0,
-      "page": "https://saaspare.org/pages/hetzner-vs-supabase-which-is-better-in-2026",
-      "position": 8.25,
+      "impressions": 49.0,
+      "page": "https://saaspare.org/pages/tresorit-pricing-history-2026",
+      "position": 8.61,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 72.53
+      "score": 72.59
     },
     {
       "clicks": 0.0,
@@ -434,6 +414,36 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
+      "impressions": 31.0,
+      "page": "https://saaspare.org/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
+      "position": 15.23,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 72.39
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 31.0,
+      "page": "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 15.23,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 72.39
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 39.0,
+      "page": "https://saaspare.org/pages/zoom-vs-descript-which-is-better-in-2026",
+      "position": 8.46,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 72.24
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
       "impressions": 20.0,
       "page": "https://saaspare.org/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026",
       "position": 8.8,
@@ -444,39 +454,19 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 46.0,
-      "page": "https://saaspare.org/pages/notion-coupon-code-promo-codes-2026-verified-discounts",
-      "position": 15.72,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 72.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 46.0,
+      "impressions": 44.0,
       "page": "https://saaspare.org/pages/twingate-vs-wireguard-which-is-better-in-2026",
-      "position": 8.2,
+      "position": 8.3,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 72.12
+      "score": 72.18
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 33.0,
+      "impressions": 30.0,
       "page": "https://saaspare.org/pages/anthropic-claude-vs-cohere-which-is-better-in-2026",
-      "position": 8.45,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 72.11
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 42.0,
-      "page": "https://saaspare.org/pages/zoom-vs-descript-which-is-better-in-2026",
-      "position": 8.26,
+      "position": 8.5,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 72.1
@@ -494,16 +484,6 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 30.0,
-      "page": "https://saaspare.org/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 15.63,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 71.97
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
       "impressions": 33.0,
       "page": "https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
       "position": 8.27,
@@ -514,22 +494,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 40.0,
+      "impressions": 39.0,
       "page": "https://saaspare.org/pages/rippling-free-trial-2026-how-to-get-it-step-by-step",
-      "position": 8.03,
+      "position": 8.1,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 71.83
+      "score": 71.88
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 32.0,
-      "page": "https://saaspare.org/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
-      "position": 15.91,
+      "impressions": 31.0,
+      "page": "https://saaspare.org/pages/google-meet-vs-webex-which-is-better-in-2026",
+      "position": 15.87,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 71.73
+      "score": 71.75
     },
     {
       "clicks": 0.0,
@@ -544,22 +524,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 21.0,
+      "impressions": 20.0,
       "page": "https://saaspare.org/pages/docusign-clm-vs-icertis-which-is-better-in-2026",
-      "position": 8.24,
-      "query": "which is better: docusign clm vs icertis contract intelligence (ici)",
+      "position": 8.1,
+      "query": "based on reviews docusign clm vs icertis contract intelligence (ici)",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 71.66
+      "score": 71.5
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 22.0,
-      "page": "https://saaspare.org/pages/docusign-clm-vs-icertis-which-is-better-in-2026",
-      "position": 8.0,
-      "query": "based on reviews docusign clm vs icertis contract intelligence (ici)",
+      "impressions": 41.0,
+      "page": "https://saaspare.org/pages/notion-coupon-code-promo-codes-2026-verified-discounts",
+      "position": 16.85,
+      "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 71.44
+      "score": 70.97
     },
     {
       "clicks": 0.0,
@@ -574,12 +554,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 32.0,
-      "page": "https://saaspare.org/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid",
-      "position": 17.44,
+      "impressions": 20.0,
+      "page": "https://saaspare.org/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 17.05,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 70.2
+      "score": 70.35
     },
     {
       "clicks": 0.0,
@@ -594,12 +574,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 26.0,
-      "page": "https://saaspare.org/pages/woocommerce-vs-chargebee-which-is-better-in-2026",
-      "position": 18.96,
+      "impressions": 78.0,
+      "page": "https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 19.17,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 68.56
+      "score": 69.39
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 25.0,
+      "page": "https://saaspare.org/pages/woocommerce-vs-chargebee-which-is-better-in-2026",
+      "position": 19.08,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 68.42
     },
     {
       "clicks": 0.0,
@@ -614,12 +604,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 96.0,
-      "page": "https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 21.3,
+      "impressions": 24.0,
+      "page": "https://saaspare.org/pages/bitwarden-vs-nordpass-which-is-better-in-2026",
+      "position": 19.83,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 67.62
+      "score": 67.65
     },
     {
       "clicks": 0.0,
@@ -640,26 +630,6 @@
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 66.23
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 25.0,
-      "page": "https://saaspare.org/pages/bitwarden-vs-nordpass-which-is-better-in-2026",
-      "position": 21.48,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 66.02
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 30.0,
-      "page": "https://saaspare.org/pages/zoom-vs-around-which-is-better-in-2026",
-      "position": 22.27,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 65.33
     },
     {
       "clicks": 0.0,
@@ -694,12 +664,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 41.0,
-      "page": "https://saaspare.org/pages/bitwarden-vs-dashlane-which-is-better-in-2026.html",
-      "position": 25.76,
+      "impressions": 28.0,
+      "page": "https://saaspare.org/pages/zoom-vs-around-which-is-better-in-2026",
+      "position": 23.25,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 62.06
+      "score": 64.31
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 37.0,
+      "page": "https://saaspare.org/pages/bitwarden-vs-dashlane-which-is-better-in-2026.html",
+      "position": 24.51,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 63.23
     },
     {
       "clicks": 0.0,
@@ -714,30 +694,20 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 22.0,
-      "page": "https://saaspare.org/pages/zoom-coupon-code-promo-codes-2026-verified-discounts",
-      "position": 29.32,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 58.12
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 405.0,
-      "page": "https://saaspare.org/pages/does-notion-have-a-free-plan-2026-full-breakdown",
-      "position": 9.52,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 55.62
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
       "impressions": 16.0,
       "page": "https://saaspare.org/pages/state-of-saas-pricing-2026",
       "position": 12.19,
       "query": "saaspare.org",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 55.13
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 11.0,
+      "page": "https://saaspare.org/pages/pandadoc-vs-ironclad-which-is-better-in-2026",
+      "position": 12.09,
+      "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 55.13
     },
@@ -750,6 +720,16 @@
       "query": "saaspare.org",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 55.03
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 1.0,
+      "page": "https://saaspare.org/pages/docusign-clm-vs-icertis-which-is-better-in-2026",
+      "position": 12.0,
+      "query": "is it which is better: docusign clm vs icertis contract intelligence (ici)",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 55.0
     },
     {
       "clicks": 0.0,
@@ -858,16 +838,6 @@
       "page": "https://saaspare.org/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
       "position": 12.0,
       "query": "cloudflare access pricing free plan 2026",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 55.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
-      "position": 12.0,
-      "query": "cloudflare zero trust access pricing 2026",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 55.0
     },
@@ -994,6 +964,16 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
+      "impressions": 1.0,
+      "page": "https://saaspare.org/pages/freshbooks-vs-brex-which-is-better-in-2026",
+      "position": 12.0,
+      "query": "",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 55.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
       "impressions": 5.0,
       "page": "https://saaspare.org/pages/mixpanel-vs-hotjar-which-is-better-in-2026",
       "position": 12.0,
@@ -1034,12 +1014,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
-      "page": "https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 12.25,
-      "query": "xero pricing plans 2026 early growing established",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.75
+      "impressions": 490.0,
+      "page": "https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 78.53,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 54.8
     },
     {
       "clicks": 0.0,
@@ -1064,6 +1044,16 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
+      "impressions": 349.0,
+      "page": "https://saaspare.org/pages/does-notion-have-a-free-plan-2026-full-breakdown",
+      "position": 9.69,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 54.67
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
       "impressions": 3.0,
       "page": "https://saaspare.org/pages/getresponse-vs-convertkit-which-is-better-in-2026",
       "position": 11.67,
@@ -1080,16 +1070,6 @@
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.67
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 483.0,
-      "page": "https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 78.99,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 54.66
     },
     {
       "clicks": 0.0,
@@ -1118,16 +1098,6 @@
       "page": "https://saaspare.org/pages/shopify-vs-recurly-which-is-better-in-2026",
       "position": 11.27,
       "query": "recurly shopify subscriptions evaluation",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.57
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 13.0,
-      "page": "https://saaspare.org/pages/pandadoc-vs-ironclad-which-is-better-in-2026",
-      "position": 11.31,
-      "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.57
     },
@@ -1195,6 +1165,16 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 2.0,
+      "page": "https://saaspare.org/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
+      "position": 11.5,
+      "query": "cloudflare zero trust access pricing free users 2026",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 54.5
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 2.0,
       "page": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
       "position": 12.5,
       "query": "ramp pricing plans 2026",
@@ -1218,6 +1198,16 @@
       "page": "https://saaspare.org/pages/ramp-review-2026-is-it-worth-it-honest-verdict",
       "position": 12.5,
       "query": "ramp fintech review pros cons 2026",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 54.5
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 2.0,
+      "page": "https://saaspare.org/pages/retool-vs-terraform-which-is-better-in-2026",
+      "position": 11.5,
+      "query": "retool terraform",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.5
     },
@@ -1252,6 +1242,26 @@
       "score": 54.5
     },
     {
+      "clicks": 4.0,
+      "ctr": 0.0506,
+      "impressions": 79.0,
+      "page": "https://saaspare.org/pages/digitalocean-vs-supabase-which-is-better-in-2026",
+      "position": 9.85,
+      "query": "",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 54.43
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 14.0,
+      "page": "https://saaspare.org/pages/weekly-saas-deal-digest",
+      "position": 11.14,
+      "query": "saaspare.org",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 54.42
+    },
+    {
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 5.0,
@@ -1274,12 +1284,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 8.0,
-      "page": "https://saaspare.org/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
-      "position": 11.38,
-      "query": "sentry pricing free tier 2026",
+      "impressions": 11.0,
+      "page": "https://saaspare.org/pages/coupon-verification-policy",
+      "position": 12.82,
+      "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.38
+      "score": 54.4
     },
     {
       "clicks": 0.0,
@@ -1290,16 +1300,6 @@
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.38
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 15.0,
-      "page": "https://saaspare.org/pages/weekly-saas-deal-digest",
-      "position": 11.07,
-      "query": "saaspare.org",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.37
     },
     {
       "clicks": 0.0,
@@ -1332,16 +1332,6 @@
       "score": 54.33
     },
     {
-      "clicks": 4.0,
-      "ctr": 0.0455,
-      "impressions": 88.0,
-      "page": "https://saaspare.org/pages/digitalocean-vs-supabase-which-is-better-in-2026",
-      "position": 9.55,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.31
-    },
-    {
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 4.0,
@@ -1364,32 +1354,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
-      "page": "https://saaspare.org/pages/copy-ai-vs-openai-api-which-is-better-in-2026",
-      "position": 12.75,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.25
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
       "impressions": 8.0,
       "page": "https://saaspare.org/pages/linear-vs-github-issues-which-is-better-in-2026",
       "position": 11.25,
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.25
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/pages/aws-vs-supabase-which-is-better-in-2026",
-      "position": 11.0,
-      "query": "dynamodb vs supabase",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.2
     },
     {
       "clicks": 0.0,
@@ -1410,6 +1380,16 @@
       "query": "cloudflare tunnel pricing free plan 2026",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.17
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 8.0,
+      "page": "https://saaspare.org/pages/rippling-coupon-code-promo-codes-2026-verified-discounts",
+      "position": 11.12,
+      "query": "rippling discount code",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 54.12
     },
     {
       "clicks": 0.0,
@@ -1614,16 +1594,6 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 3.0,
-      "page": "https://saaspare.org/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
-      "position": 11.0,
-      "query": "cloudflare zero trust access pricing free users 2026",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
       "impressions": 1.0,
       "page": "https://saaspare.org/pages/perimeter-81-vs-zscaler-which-is-better-in-2026",
       "position": 13.0,
@@ -1698,16 +1668,6 @@
       "page": "https://saaspare.org/pages/rippling-coupon-code-promo-codes-2026-verified-discounts",
       "position": 13.2,
       "query": "rippling coupon",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 9.0,
-      "page": "https://saaspare.org/pages/rippling-coupon-code-promo-codes-2026-verified-discounts",
-      "position": 11.0,
-      "query": "rippling discount code",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.0
     },
@@ -1805,16 +1765,6 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 1.0,
-      "page": "https://saaspare.org/pages/twingate-vs-tailscale-which-is-better-in-2026",
-      "position": 11.0,
-      "query": "tailscale vs twingate 2026",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 54.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
       "page": "https://saaspare.org/pages/twingate-vs-wireguard-which-is-better-in-2026",
       "position": 11.0,
       "query": "twingate wireguard",
@@ -1838,6 +1788,16 @@
       "page": "https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay",
       "position": 13.0,
       "query": "xero plans pricing 2026 sole proprietor",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 54.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 3.0,
+      "page": "https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 13.0,
+      "query": "xero pricing plans 2026 early growing established",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.0
     },
@@ -1887,6 +1847,16 @@
       "impressions": 1.0,
       "page": "https://saaspare.org/pages/7-best-woocommerce-alternatives-in-2026-free-paid",
       "position": 13.0,
+      "query": "",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 54.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 4.0,
+      "page": "https://saaspare.org/pages/best-xero-alternatives-in-2026-free-paid",
+      "position": 11.0,
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.0
@@ -2000,10 +1970,40 @@
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 54.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 1.0,
+      "page": "https://saaspare.org/pages/zoom-review-2026-is-it-worth-it-honest-verdict",
+      "position": 11.0,
+      "query": "",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 54.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 15.0,
+      "page": "https://saaspare.org/pages/free-trial-database",
+      "position": 13.33,
+      "query": "saaspare.org",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 53.97
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 16.0,
+      "page": "https://saaspare.org/pages/gusto-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 10.62,
+      "query": "gusto core plan",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 53.95
     }
   ],
-  "rowsPulled": 2121,
+  "rowsPulled": 2094,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-05-06"
+  "startDate": "2026-05-07"
 }

@@ -1594,6 +1594,12 @@
   },
   {
     "broken": [
+      "/editorial"
+    ],
+    "path": "/pages/aweber-free-trial-2026-how-to-get-it-step-by-step"
+  },
+  {
+    "broken": [
       "/editorial",
       "/pages/aweber-pricing-history-2026",
       "/pages/mailchimp-vs-activecampaign-which-is-better-in-2026"
@@ -5609,6 +5615,12 @@
   },
   {
     "broken": [
+      "/editorial"
+    ],
+    "path": "/pages/fiverr-coupon-code-promo-codes-2026-verified-discounts"
+  },
+  {
+    "broken": [
       "/editorial",
       "/pages/fiverr-pricing-history-2026"
     ],
@@ -5729,6 +5741,14 @@
       "/blog/"
     ],
     "path": "/pages/freshbooks-vs-sage-which-is-better-in-2026"
+  },
+  {
+    "broken": [
+      "/authors/kaylan-von-papen",
+      "/blog/",
+      "/pages/best-accounting-software-2026"
+    ],
+    "path": "/pages/freshbooks-vs-wave-which-is-better-in-2026"
   },
   {
     "broken": [
@@ -6407,6 +6427,13 @@
       "/authors/kaylan-von-papen",
       "/blog/"
     ],
+    "path": "/pages/hubspot-vs-monday-com-which-is-better-in-2026"
+  },
+  {
+    "broken": [
+      "/authors/kaylan-von-papen",
+      "/blog/"
+    ],
     "path": "/pages/hubspot-vs-pardot-which-is-better-in-2026"
   },
   {
@@ -6495,8 +6522,7 @@
   },
   {
     "broken": [
-      "/authors/kaylan-von-papen",
-      "/blog/"
+      "/authors/smith-elly"
     ],
     "path": "/pages"
   },
@@ -9260,6 +9286,13 @@
       "/blog/"
     ],
     "path": "/pages/salesforce-vs-keap-which-is-better-in-2026"
+  },
+  {
+    "broken": [
+      "/authors/kaylan-von-papen",
+      "/blog/"
+    ],
+    "path": "/pages/salesforce-vs-monday-com-which-is-better-in-2026"
   },
   {
     "broken": [
