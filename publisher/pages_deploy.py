@@ -424,23 +424,86 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
     )
     cat_chips = "\n".join(cat_chip_parts)
 
-    # Deterministic monogram avatars (no external logos = no broken/ fabricated brand marks)
+    # Real brand logos via Simple Icons CDN, with deterministic monogram fallback
+    # (graceful onerror swap — never fabricates a logo, just falls back to the
+    # same monogram avatar style used before if the brand isn't on Simple Icons)
     _palette = ["#e94560", "#3460e6", "#7b68ee", "#0e7490", "#16a34a", "#d97706",
                 "#0070ad", "#c2410c", "#9333ea", "#0891b2", "#be123c", "#1d4ed8"]
+
+    # Known slug overrides where the tool's URL-stem name doesn't match its
+    # Simple Icons slug (verified against simpleicons.org)
+    _SLUG_MAP = {
+        "1password-business": "1password", "1password": "1password",
+        "monday-com": "monday", "monday": "monday",
+        "surfer-seo": "surferseo", "surfer": "surferseo",
+        "duo-security": "duo", "duo": "duo",
+        "sentinel-one": "sentinelone", "sentinelone": "sentinelone",
+        "post-affiliate-pro": "postaffiliatepro",
+        "google-ads": "googleads", "google-analytics": "googleanalytics",
+        "microsoft-teams": "microsoftteams", "microsoft-365": "microsoft365",
+        "adobe-acrobat": "adobeacrobat", "adobe-photoshop": "adobephotoshop",
+        "salesforce": "salesforce", "hubspot": "hubspot", "zoho": "zoho",
+        "activecampaign": "activecampaign", "mailchimp": "mailchimp",
+        "semrush": "semrush", "ahrefs": "ahrefs", "moz": "moz",
+        "clickup": "clickup", "asana": "asana", "notion": "notion",
+        "trello": "trello", "monday-com-work-os": "monday",
+        "shopify": "shopify", "bigcommerce": "bigcommerce", "wix": "wix",
+        "squarespace": "squarespace", "webflow": "webflow",
+        "slack": "slack", "zoom": "zoom", "loom": "loom",
+        "figma": "figma", "canva": "canva", "airtable": "airtable",
+        "zendesk": "zendesk", "intercom": "intercom", "freshdesk": "freshdesk",
+        "stripe": "stripe", "paypal": "paypal", "quickbooks": "quickbooks",
+        "freshbooks": "freshbooks", "xero": "xero", "wave": "wave",
+        "nordvpn": "nordvpn", "surfshark": "surfshark", "expressvpn": "expressvpn",
+        "bitwarden": "bitwarden", "dashlane": "dashlane", "lastpass": "lastpass",
+        "okta": "okta", "auth0": "auth0", "onelogin": "onelogin",
+        "cloudflare": "cloudflare", "contabo": "contabo",
+        "google-workspace": "googleworkspace", "dropbox": "dropbox",
+        "docusign": "docusign", "calendly": "calendly", "typeform": "typeform",
+        "convertkit": "convertkit", "getresponse": "getresponse",
+        "constant-contact": "constantcontact", "brevo": "brevo",
+        "pipedrive": "pipedrive", "keap": "keap", "close": "close",
+        "gusto": "gusto", "rippling": "rippling", "deel": "deel", "remote": "remote",
+        "ramp": "ramp", "brex": "brex", "divvy": "divvy",
+        "grammarly": "grammarly", "jasper": "jasper", "copy-ai": "copyai",
+        "wordpress": "wordpress", "ghost": "ghost",
+    }
 
     def _mono(seed: str) -> str:
         s = re.sub(r'[^a-z0-9]', '', seed.lower())
         return (s[:2].upper() or "SP")
 
+    def _to_slug(name: str) -> str:
+        key = name.lower().strip('-')
+        if key in _SLUG_MAP:
+            return _SLUG_MAP[key]
+        return re.sub(r'[^a-z0-9]', '', key) or "sp"
+
     def _logo_chip(seed: str) -> str:
+        """Real brand logo (Simple Icons CDN) with monogram-avatar fallback on error."""
         color = _palette[sum(ord(c) for c in seed) % len(_palette)] if seed else _palette[0]
-        return (f'<span class="sp-logo" style="background:{color}">{_mono(seed)}</span>')
+        slug = _to_slug(seed)
+        letter = _mono(seed)
+        return (
+            f'<span class="sp-logo lib-logo" style="background:{color}">'
+            f'<img src="https://cdn.simpleicons.org/{slug}/ffffff" loading="lazy" alt="" '
+            f'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'inline\'">'
+            f'<em style="display:none">{letter}</em></span>'
+        )
+
+    def _split_stem(stem: str) -> tuple[str, str | None]:
+        """Strip the trailing '-which-is-better-in-2026' suffix and split on '-vs-'."""
+        s = re.sub(r'-which-is-better-in-\d{4}$', '', stem)
+        if '-vs-' in s:
+            a, b = s.split('-vs-', 1)
+            return a, b
+        return s, None
 
     def _row_logos(stem: str) -> str:
-        if '-vs-' in stem:
-            a, b = stem.split('-vs-', 1)
-            return _logo_chip(a.split('-')[0] or stem) + _logo_chip(b.split('-')[0] or 'x')
-        return _logo_chip(stem.split('-')[0] or 'sp')
+        a, b = _split_stem(stem)
+        if b is not None:
+            return _logo_chip(a or stem) + _logo_chip(b or 'x')
+        return _logo_chip(a or 'sp')
 
     def _row(label: str, url: str, ptype: str) -> str:
         stem = url.rsplit('/', 1)[-1]
@@ -537,11 +600,18 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <meta name="twitter:image" content="{domain}/og-default.png">
 <style>
   /* SaaSpare library — layered on sp-shared.css design system */
-  .lib-hero{{text-align:center;padding:5rem 1.5rem 1rem;display:flex;flex-direction:column;align-items:center;gap:1.4rem}}
-  .lib-stats{{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:.25rem}}
-  .lib-stat{{display:inline-flex;align-items:baseline;gap:6px;padding:8px 18px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--r-full)}}
-  .lib-stat strong{{color:var(--ink);font-size:1.05rem;font-weight:800;letter-spacing:-.02em}}
-  .lib-stat span{{font-size:.78rem;color:var(--ink-4)}}
+  .lib-hero{{text-align:center;padding:6.5rem 1.5rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:1.4rem;position:relative;isolation:isolate;overflow:hidden}}
+  .lib-hero > *{{position:relative;z-index:2}}
+  .lib-hero > .bg-orb,.lib-hero > .lib-hero-grid{{position:absolute!important;z-index:0}}
+  .lib-hero-grid{{position:absolute;inset:-10% -5%;z-index:0;opacity:.35;pointer-events:none;
+    background-image:linear-gradient(rgba(255,65,109,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,65,109,.07) 1px,transparent 1px);
+    background-size:64px 64px;mask-image:radial-gradient(ellipse 60% 70% at 50% 30%,#000 30%,transparent 75%)}}
+  .lib-hero h1{{font-size:clamp(2.4rem,5.5vw,3.6rem)}}
+  .lib-stats{{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:.4rem}}
+  .lib-stat{{display:inline-flex;align-items:baseline;gap:7px;padding:10px 20px;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:var(--r-full);transition:all .25s cubic-bezier(.34,1.56,.64,1);backdrop-filter:blur(12px)}}
+  .lib-stat:hover{{transform:translateY(-3px);border-color:var(--line-pink);box-shadow:0 12px 32px rgba(255,65,109,.18);background:rgba(255,65,109,.06)}}
+  .lib-stat strong{{background:linear-gradient(135deg,var(--pink),var(--pink-light));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:1.2rem;font-weight:900;letter-spacing:-.03em}}
+  .lib-stat span{{font-size:.78rem;color:var(--ink-4);font-weight:600}}
   .lib-search{{display:flex;align-items:center;gap:8px;width:100%;max-width:620px;padding:6px 6px 6px 20px;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:var(--r-full);backdrop-filter:blur(20px);box-shadow:0 30px 80px rgba(0,0,0,.5)}}
   .lib-search > svg{{color:var(--ink-4);flex-shrink:0}}
   .lib-search input{{flex:1;background:none;border:none;outline:none;padding:.9rem 0;font-size:.95rem;color:var(--ink)}}
@@ -562,23 +632,30 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
   .lib-row.hidden{{display:none}}
   .lib-row:hover{{border-color:var(--line-pink);transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,65,109,.08)}}
   .lib-row-logos{{display:flex;align-items:center}}
-  .lib-row-logos .sp-logo{{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.8rem;letter-spacing:-.02em;border:1px solid rgba(255,255,255,.14);position:relative}}
+  .lib-row-logos .sp-logo{{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.8rem;letter-spacing:-.02em;border:1px solid rgba(255,255,255,.14);position:relative;transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s}}
   .lib-row-logos .sp-logo:nth-child(2){{margin-left:-12px;z-index:1}}
+  .lib-row-logos .sp-logo img{{width:20px;height:20px;object-fit:contain;filter:drop-shadow(0 1px 3px rgba(0,0,0,.35))}}
+  .lib-row:hover .lib-row-logos .sp-logo{{transform:translateY(-3px) scale(1.06);box-shadow:0 10px 24px rgba(0,0,0,.4)}}
+  .lib-row:hover .lib-row-logos .sp-logo:nth-child(2){{transform:translateY(-3px) translateX(2px) scale(1.06)}}
   .lib-row-title{{font-size:1.02rem;font-weight:700;color:var(--ink);letter-spacing:-.01em;margin-bottom:5px;line-height:1.35}}
   .lib-row-meta{{display:flex;gap:8px;flex-wrap:wrap;align-items:center}}
   .lib-row-arrow{{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink-3);transition:all .2s}}
   .lib-row:hover .lib-row-arrow{{background:linear-gradient(135deg,var(--pink),var(--pink-deep));color:#fff;border-color:transparent}}
   .lib-side{{position:sticky;top:90px;display:flex;flex-direction:column;gap:16px}}
-  .intent-card{{padding:22px}}
+  .intent-card{{padding:22px;position:relative;overflow:hidden}}
   .intent-card h4{{font-size:.96rem;font-weight:700;color:var(--ink);margin-bottom:14px;letter-spacing:-.01em}}
-  .intent-item{{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;transition:opacity .15s}}
-  .intent-item:hover{{opacity:.85}}
-  .intent-item:last-of-type{{border:0}}
+  .intent-item{{display:flex;align-items:flex-start;gap:14px;padding:12px 10px;margin:0 -10px;border-radius:12px;cursor:pointer;transition:all .22s cubic-bezier(.34,1.56,.64,1)}}
+  .intent-item:hover{{background:linear-gradient(135deg,rgba(255,65,109,.1),rgba(201,41,80,.04));transform:translateX(4px)}}
+  .intent-item.active{{background:linear-gradient(135deg,rgba(255,65,109,.16),rgba(201,41,80,.06))}}
   .intent-item.active strong{{color:var(--pink-light)}}
-  .intent-item .sp-icon{{width:30px;height:30px;border-radius:9px;flex-shrink:0}}
-  .intent-item .sp-icon svg{{width:13px;height:13px}}
-  .intent-item strong{{display:block;font-size:.88rem;color:var(--ink);font-weight:700;margin-bottom:2px}}
-  .intent-item span{{font-size:.74rem;color:var(--ink-4);line-height:1.4}}
+  .intent-item .sp-icon{{width:38px;height:38px;border-radius:11px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,rgba(255,65,109,.22),rgba(201,41,80,.1));border:1px solid rgba(255,65,109,.18);
+    color:var(--pink-light);transition:all .25s cubic-bezier(.34,1.56,.64,1)}}
+  .intent-item:hover .sp-icon,.intent-item.active .sp-icon{{transform:scale(1.12) rotate(-6deg);box-shadow:0 8px 22px rgba(255,65,109,.35);
+    background:linear-gradient(135deg,var(--pink),var(--pink-deep));color:#fff;border-color:transparent}}
+  .intent-item .sp-icon svg{{width:16px;height:16px}}
+  .intent-item strong{{display:block;font-size:.88rem;color:var(--ink);font-weight:700;margin-bottom:2px;letter-spacing:-.01em}}
+  .intent-item span{{font-size:.76rem;color:var(--ink-4);line-height:1.4}}
   .intent-clear{{display:block;width:100%;margin-top:14px;text-align:center;padding:.6rem;background:rgba(255,255,255,.04);border:none;border-radius:10px;color:var(--ink-3);font-size:.8rem;font-weight:600;cursor:pointer;transition:all .15s;font-family:inherit}}
   .intent-clear:hover{{background:rgba(255,65,109,.08);color:var(--pink-light)}}
   .empty{{display:none;padding:2.5rem 2rem;text-align:center;color:var(--ink-4);border:1px dashed var(--line);border-radius:var(--r-md);background:rgba(255,255,255,.03);margin-top:12px}}
@@ -605,6 +682,9 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 </nav>
 
 <section class="lib-hero">
+  <div class="lib-hero-grid" aria-hidden="true"></div>
+  <span class="bg-orb bg-orb-pink" style="width:420px;height:420px;top:-180px;left:-120px" aria-hidden="true"></span>
+  <span class="bg-orb bg-orb-wine" style="width:340px;height:340px;top:-80px;right:-110px" aria-hidden="true"></span>
   <span class="sp-eyebrow sp-up"><span class="sp-eyebrow-dot"></span>Browse all comparisons</span>
   <h1 class="sp-h1 sp-up sp-up-1" style="max-width:880px">Find the right <span class="sp-accent">SaaS answer</span> faster.</h1>
   <p class="sp-lead sp-up sp-up-2" style="max-width:580px">Search pricing pages, comparison verdicts, trial paths, and alternatives without opening ten vendor tabs.</p>
