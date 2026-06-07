@@ -415,23 +415,55 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
         grouped[ptype].append((label, url))
 
     total = sum(len(v) for v in grouped.values())
-    filter_chip_parts = [
-        f'    <button class="filter-chip active" data-type="all" type="button">All <span>{total}</span></button>'
-    ]
-    filter_chip_parts.extend(
-        f'    <button class="filter-chip" data-type="{key}" type="button">{TYPE_LABELS[key]} <span>{len(grouped[key])}</span></button>'
+    # Category filter chips (label-only, matching the SaaSpare library design)
+    cat_chip_parts = ['    <button class="cat-chip active" data-type="all" type="button">All</button>']
+    cat_chip_parts.extend(
+        f'    <button class="cat-chip" data-type="{key}" type="button">{TYPE_LABELS[key]}</button>'
         for key in TYPE_ORDER
         if grouped[key]
     )
-    filter_chips = "\n".join(filter_chip_parts)
-    page_cards = "\n".join(
-        f'    <a class="page-card" href="{url}" data-type="{ptype}" data-title="{label.lower()}">'
-        f'<span class="page-type">{TYPE_LABELS[ptype]}</span>'
-        f'<span class="page-title">{label}</span>'
-        f'<span class="page-arrow">-></span>'
-        f'</a>'
+    cat_chips = "\n".join(cat_chip_parts)
+
+    # Deterministic monogram avatars (no external logos = no broken/ fabricated brand marks)
+    _palette = ["#e94560", "#3460e6", "#7b68ee", "#0e7490", "#16a34a", "#d97706",
+                "#0070ad", "#c2410c", "#9333ea", "#0891b2", "#be123c", "#1d4ed8"]
+
+    def _mono(seed: str) -> str:
+        s = re.sub(r'[^a-z0-9]', '', seed.lower())
+        return (s[:2].upper() or "SP")
+
+    def _logo_chip(seed: str) -> str:
+        color = _palette[sum(ord(c) for c in seed) % len(_palette)] if seed else _palette[0]
+        return (f'<span class="sp-logo" style="background:{color}">{_mono(seed)}</span>')
+
+    def _row_logos(stem: str) -> str:
+        if '-vs-' in stem:
+            a, b = stem.split('-vs-', 1)
+            return _logo_chip(a.split('-')[0] or stem) + _logo_chip(b.split('-')[0] or 'x')
+        return _logo_chip(stem.split('-')[0] or 'sp')
+
+    def _row(label: str, url: str, ptype: str) -> str:
+        stem = url.rsplit('/', 1)[-1]
+        return (
+            f'        <a href="{url}" class="lib-row premium-card" data-type="{ptype}" data-title="{escape(label.lower(), quote=True)}">'
+            f'<div class="lib-row-logos">{_row_logos(stem)}</div>'
+            f'<div><div class="lib-row-title">{escape(label, quote=False)}</div>'
+            f'<div class="lib-row-meta"><span class="sp-badge sp-badge-ghost">{TYPE_LABELS[ptype]}</span></div></div>'
+            f'<div class="lib-row-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>'
+            f'</a>'
+        )
+
+    lib_rows = "\n".join(
+        _row(label, url, ptype)
         for ptype in TYPE_ORDER
         for label, url in grouped[ptype]
+    )
+
+    # "Popular right now" — real comparison pages (fallback to pricing)
+    popular = (grouped['comparison'][:4] or grouped['pricing'][:4])
+    pop_chips = "\n".join(
+        f'        <a class="cat-chip" href="{url}">{escape(label, quote=False)}</a>'
+        for label, url in popular
     )
 
     today = time.strftime("%B %d, %Y")
@@ -449,11 +481,30 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
         "SaaS comparisons, SaaS pricing, software reviews, free trials, promo codes, alternatives, SaaSpare",
         quote=True,
     )
-    ga_script = (
-        f'<script async src="https://www.googletagmanager.com/gtag/js?id={ga_id}"></script>'
-        f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}"
-        f"gtag('js',new Date());gtag('config','{ga_id}');</script>"
-    ) if ga_id else ""
+    # Sidebar buyer-intent quick filters → map each to a real page type we actually have.
+    intent_rail = [
+        ("comparison", "Compare top tools", "Side-by-side verdicts", '<path d="M3 12h18M3 6h18M3 18h18"/>'),
+        ("pricing", "Find best value", "Real pricing &amp; lowest cost", '<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>'),
+        ("free-trial", "Free trial available", "Try before you buy", '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>'),
+        ("promo", "Coupons &amp; deals", "Verified working discounts", '<path d="M4 7h16v5H4z"/><path d="M12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>'),
+        ("best-of", "Best-of shortlists", "Top picks by use case", '<path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/>'),
+    ]
+    intent_items = "\n".join(
+        f'          <div class="intent-item" data-filter="{key}"><span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">{svg}</svg></span>'
+        f'<div><strong>{t}</strong><span>{s}</span></div></div>'
+        for key, t, s, svg in intent_rail
+        if grouped.get(key)
+    )
+
+    if ga_id:
+        ga_snippet = (
+            f'<script async src="https://www.googletagmanager.com/gtag/js?id={ga_id}"></script>'
+            "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+            f"gtag('js',new Date());gtag('config','{ga_id}');</script>"
+        )
+    else:
+        ga_snippet = ""
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -464,9 +515,15 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <meta name="keywords" content="{seo_keywords}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{domain}/pages/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="theme-color" content="#07070d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="/assets/sp-shared.css">
+<link rel="stylesheet" href="/assets/sp-motion.css">
 <link rel="stylesheet" href="/assets/saaspare-ui.css">
 <meta property="og:title" content="{escape(seo['title'], quote=True)}">
 <meta property="og:description" content="{seo_meta}">
@@ -479,213 +536,252 @@ def _rebuild_pages_index(site_dir: Path = SITE_DIR):
 <meta name="twitter:description" content="{seo_meta}">
 <meta name="twitter:image" content="{domain}/og-default.png">
 <style>
-  :root{{--bg:#080810;--bg-soft:#11131a;--border:rgba(255,255,255,.08);--text:rgba(255,255,255,.84);--muted:rgba(255,255,255,.46);--accent:#e94560}}
-  *{{box-sizing:border-box;margin:0;padding:0}}
-  body{{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:radial-gradient(820px 520px at 50% -14%,rgba(71,18,31,.68),transparent 66%),radial-gradient(640px 420px at 82% 7%,rgba(233,69,96,.14),transparent 70%),linear-gradient(180deg,#0b0610 0%,#080810 42%,#07070d 100%);color:var(--text);line-height:1.6;min-height:100vh;overflow-x:hidden}}
-  body::before{{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(233,69,96,.05),transparent 20%,transparent 80%,rgba(233,69,96,.04)),radial-gradient(circle at 50% 0%,rgba(255,255,255,.035),transparent 38%);z-index:0}}
-  a{{color:inherit;text-decoration:none}}
-  nav#nav{{position:fixed;top:0;left:0;right:0;z-index:260;padding:1rem 2rem;display:flex;align-items:center;gap:.28rem;background:transparent;border-bottom:1px solid transparent;transition:background .28s ease,border-color .28s ease,backdrop-filter .28s ease}}
-  nav#nav.scrolled,nav#nav.ss-nav-scrolled{{background:rgba(7,7,13,.84);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}}
-  nav#nav .ss-logo{{display:flex;align-items:center;gap:9px;margin-right:auto;color:#fff;font-weight:850;letter-spacing:-.04em}}
-  nav#nav .nav-link{{color:rgba(255,255,255,.5);font-size:.82rem;font-weight:700;padding:.45rem .78rem;border-radius:999px;white-space:nowrap;transition:color .18s,background .18s}}
-  nav#nav .nav-link:hover,nav#nav .nav-link.active{{color:#fff;background:rgba(255,255,255,.045)}}
-  nav#nav .nav-cta{{background:linear-gradient(135deg,#f04c68,#c8314f);color:#fff;padding:.55rem 1.08rem;border-radius:999px;font-size:.82rem;font-weight:850;box-shadow:0 12px 38px rgba(233,69,96,.28);margin-left:.4rem;white-space:nowrap}}
-  .library-shell{{position:relative;z-index:1}}
-  .hero{{max-width:1440px;margin:0 auto;padding:5.4rem clamp(1.25rem,3vw,2.6rem) 2.4rem;text-align:center;position:relative}}
-  .hero::before{{content:"";position:absolute;left:50%;top:3rem;transform:translateX(-50%);width:min(920px,86vw);height:380px;background:radial-gradient(circle at 50% 35%,rgba(233,69,96,.18),transparent 64%);filter:blur(4px);pointer-events:none}}
-  .hero>*{{position:relative}}
-  .badge{{display:inline-flex;align-items:center;gap:.45rem;border:1px solid rgba(233,69,96,.34);background:rgba(233,69,96,.1);color:#ffc8d1;border-radius:999px;padding:.45rem .95rem;font-size:.78rem;font-weight:850;margin-bottom:1.8rem;box-shadow:0 12px 42px rgba(233,69,96,.08)}}
-  .badge::before{{content:"";width:.42rem;height:.42rem;background:#ff5b76;border-radius:50%;box-shadow:0 0 14px rgba(255,91,118,.8)}}
-  .hero h1{{font-size:clamp(3rem,7.2vw,6.4rem);color:#fff;letter-spacing:-.052em;line-height:1.02;margin:0 auto 1.35rem;max-width:1180px;text-wrap:balance}}
-  .hero h1 span{{display:inline-block;color:#f04c68;background:linear-gradient(105deg,#ef4763 0%,#ef4763 35%,#ff91a4 48%,#ffd0d9 52%,#ef4763 66%,#c8314f 100%);background-size:240% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 38px rgba(233,69,96,.12);animation:libraryGlint 5.4s cubic-bezier(.45,0,.25,1) infinite}}
-  @keyframes libraryGlint{{0%,18%{{background-position:120% 50%}}48%,100%{{background-position:-120% 50%}}}}
-  .hero p{{color:rgba(255,255,255,.5);max-width:760px;margin:0 auto 2rem;font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.75}}
-  .search-shell{{max-width:760px;margin:0 auto 1.45rem;padding:.55rem;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.035));border:1px solid rgba(233,69,96,.34);border-radius:999px;display:flex;gap:.5rem;box-shadow:0 30px 80px rgba(0,0,0,.35)}}
-  .search-shell input{{flex:1;background:transparent;border:none;color:#fff;padding:.85rem 1rem;outline:none;font:inherit}}
-  .search-shell button{{border:none;border-radius:999px;background:linear-gradient(135deg,#f04c68,#c8314f);color:#fff;padding:.85rem 1.45rem;font:inherit;font-weight:850;cursor:pointer;box-shadow:0 16px 38px rgba(233,69,96,.35)}}
-  .stats{{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem}}
-  .stat{{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:999px;padding:.55rem 1rem;color:rgba(255,255,255,.5);font-size:.86rem}}
-  .container{{max-width:1440px;margin:0 auto;padding:1.5rem clamp(1.25rem,3vw,2.6rem) 4rem}}
-  .library-toolbar{{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin:0 0 1.1rem}}
-  .library-toolbar h2{{color:#fff;font-size:1.05rem;letter-spacing:-.02em}}
-  .library-toolbar p{{color:rgba(255,255,255,.38);font-size:.84rem;margin-top:.2rem}}
-  .sort-select{{appearance:none;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:.72rem 2.4rem .72rem 1rem;font:inherit;font-size:.85rem;font-weight:750;background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat}}
-  .sort-select option{{background:#101018;color:#fff}}
-  .filter-row{{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1.25rem}}
-  .filter-chip{{border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--muted);border-radius:999px;padding:.5rem .8rem;cursor:pointer;font:inherit}}
-  .filter-chip.active,.filter-chip:hover{{background:rgba(233,69,96,.14);border-color:rgba(233,69,96,.35);color:#fff}}
-  .filter-chip span{{opacity:.7;margin-left:.25rem}}
-  .results{{margin-left:auto;color:var(--muted);font-size:.85rem}}
-  .pages-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:clamp(.85rem,1.35vw,1.25rem)}}
-  .page-card{{display:flex;flex-direction:column;gap:.6rem;padding:1.15rem 1.2rem;border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.085);transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease;min-height:132px;position:relative;overflow:hidden}}
-  .page-card::after{{content:"";position:absolute;inset:auto -40px -55px auto;width:150px;height:120px;background:radial-gradient(circle,rgba(233,69,96,.12),transparent 70%);opacity:0;transition:opacity .16s ease}}
-  .page-card:hover{{transform:translateY(-3px);background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.032));border-color:rgba(233,69,96,.36);box-shadow:0 24px 70px rgba(0,0,0,.24)}}
-  .page-card:hover::after{{opacity:1}}
-  .page-card.hidden{{display:none}}
-  .page-type{{font-size:.72rem;color:#ffb5c0;text-transform:uppercase;letter-spacing:.08em}}
-  .page-title{{font-size:.95rem;color:#fff;font-weight:700;line-height:1.4}}
-  .page-arrow{{font-size:.82rem;color:#f04c68;margin-top:auto;font-weight:850}}
-  .library-trustbox{{margin-top:1.4rem;display:grid;grid-template-columns:1.1fr .9fr;gap:1rem}}
-  .trust-panel{{background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:1.2rem;box-shadow:0 24px 70px rgba(0,0,0,.18)}}
-  .trust-panel h3{{color:#fff;font-size:1rem;margin-bottom:.45rem}}
-  .trust-panel p{{color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.65}}
-  .trust-actions{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin-top:.9rem}}
-  .trust-actions a{{display:flex;align-items:center;justify-content:space-between;gap:.6rem;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:.8rem .9rem;background:rgba(255,255,255,.035);color:#fff;font-weight:800;font-size:.86rem}}
-  .trust-actions a:hover{{border-color:rgba(233,69,96,.38);background:rgba(233,69,96,.09)}}
-  .empty{{display:none;padding:2rem;text-align:center;color:var(--muted);border:1px dashed var(--border);border-radius:18px;background:rgba(255,255,255,.03)}}
-  footer{{text-align:center;color:var(--muted);font-size:.85rem;margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border)}}
-  footer a{{color:#fff}}
-  @media (max-width: 720px) {{
-    nav {{padding:1rem}}
-    .search-shell {{border-radius:20px;flex-direction:column}}
-    .search-shell button {{width:100%}}
-    .results {{width:100%;margin-left:0}}
-    .pages-grid {{grid-template-columns:1fr}}
-    .hero{{padding-top:3.2rem}}
-    .hero h1{{font-size:clamp(2.45rem,13vw,4.1rem)}}
-    .library-toolbar{{align-items:flex-start;flex-direction:column}}
-    .sort-select{{width:100%}}
-    .library-trustbox{{grid-template-columns:1fr}}
-    .trust-actions{{grid-template-columns:1fr}}
-  }}
+  /* SaaSpare library — layered on sp-shared.css design system */
+  .lib-hero{{text-align:center;padding:5rem 1.5rem 1rem;display:flex;flex-direction:column;align-items:center;gap:1.4rem}}
+  .lib-stats{{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:.25rem}}
+  .lib-stat{{display:inline-flex;align-items:baseline;gap:6px;padding:8px 18px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--r-full)}}
+  .lib-stat strong{{color:var(--ink);font-size:1.05rem;font-weight:800;letter-spacing:-.02em}}
+  .lib-stat span{{font-size:.78rem;color:var(--ink-4)}}
+  .lib-search{{display:flex;align-items:center;gap:8px;width:100%;max-width:620px;padding:6px 6px 6px 20px;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:var(--r-full);backdrop-filter:blur(20px);box-shadow:0 30px 80px rgba(0,0,0,.5)}}
+  .lib-search > svg{{color:var(--ink-4);flex-shrink:0}}
+  .lib-search input{{flex:1;background:none;border:none;outline:none;padding:.9rem 0;font-size:.95rem;color:var(--ink)}}
+  .lib-search input::placeholder{{color:var(--ink-5)}}
+  .pop-now{{margin:2.5rem 0 1rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}}
+  .pop-now strong{{color:var(--ink);font-weight:700;font-size:.95rem;letter-spacing:-.01em}}
+  .pop-now span{{color:var(--ink-4);font-size:.82rem;margin-left:8px}}
+  .pop-row{{display:flex;gap:8px;flex-wrap:wrap}}
+  .lib-toolbar{{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:1.5rem 0}}
+  .lib-toolbar .sp-select{{min-width:160px;padding:.65rem 38px .65rem 14px;font-size:.85rem;border-radius:var(--r-md)}}
+  .cat-chip{{padding:6px 14px;border-radius:var(--r-full);background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--ink-3);font-size:.82rem;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap;font-family:inherit}}
+  .cat-chip:hover{{color:var(--ink)}}
+  .cat-chip.active{{background:linear-gradient(135deg,rgba(255,65,109,.22),rgba(201,41,80,.18));border-color:var(--line-pink);color:var(--ink)}}
+  .results{{margin-left:auto;color:var(--ink-4);font-size:.84rem;font-weight:600}}
+  .lib-main{{display:grid;grid-template-columns:1.1fr 280px;gap:24px;align-items:start}}
+  .lib-list{{display:flex;flex-direction:column;gap:10px}}
+  .lib-row{{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:16px 20px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);transition:all .2s;text-decoration:none}}
+  .lib-row.hidden{{display:none}}
+  .lib-row:hover{{border-color:var(--line-pink);transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,65,109,.08)}}
+  .lib-row-logos{{display:flex;align-items:center}}
+  .lib-row-logos .sp-logo{{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.8rem;letter-spacing:-.02em;border:1px solid rgba(255,255,255,.14);position:relative}}
+  .lib-row-logos .sp-logo:nth-child(2){{margin-left:-12px;z-index:1}}
+  .lib-row-title{{font-size:1.02rem;font-weight:700;color:var(--ink);letter-spacing:-.01em;margin-bottom:5px;line-height:1.35}}
+  .lib-row-meta{{display:flex;gap:8px;flex-wrap:wrap;align-items:center}}
+  .lib-row-arrow{{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink-3);transition:all .2s}}
+  .lib-row:hover .lib-row-arrow{{background:linear-gradient(135deg,var(--pink),var(--pink-deep));color:#fff;border-color:transparent}}
+  .lib-side{{position:sticky;top:90px;display:flex;flex-direction:column;gap:16px}}
+  .intent-card{{padding:22px}}
+  .intent-card h4{{font-size:.96rem;font-weight:700;color:var(--ink);margin-bottom:14px;letter-spacing:-.01em}}
+  .intent-item{{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;transition:opacity .15s}}
+  .intent-item:hover{{opacity:.85}}
+  .intent-item:last-of-type{{border:0}}
+  .intent-item.active strong{{color:var(--pink-light)}}
+  .intent-item .sp-icon{{width:30px;height:30px;border-radius:9px;flex-shrink:0}}
+  .intent-item .sp-icon svg{{width:13px;height:13px}}
+  .intent-item strong{{display:block;font-size:.88rem;color:var(--ink);font-weight:700;margin-bottom:2px}}
+  .intent-item span{{font-size:.74rem;color:var(--ink-4);line-height:1.4}}
+  .intent-clear{{display:block;width:100%;margin-top:14px;text-align:center;padding:.6rem;background:rgba(255,255,255,.04);border:none;border-radius:10px;color:var(--ink-3);font-size:.8rem;font-weight:600;cursor:pointer;transition:all .15s;font-family:inherit}}
+  .intent-clear:hover{{background:rgba(255,65,109,.08);color:var(--pink-light)}}
+  .empty{{display:none;padding:2.5rem 2rem;text-align:center;color:var(--ink-4);border:1px dashed var(--line);border-radius:var(--r-md);background:rgba(255,255,255,.03);margin-top:12px}}
+  .lib-pagination{{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:2rem;flex-wrap:wrap}}
+  .lib-pg-btn{{min-width:36px;height:36px;padding:0 10px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--ink-3);font-size:.85rem;font-weight:600;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;font-family:inherit}}
+  .lib-pg-btn:hover:not(:disabled){{color:var(--ink);border-color:var(--line-pink)}}
+  .lib-pg-btn:disabled{{opacity:.35;cursor:default}}
+  .lib-pg-btn.active{{background:linear-gradient(135deg,var(--pink),var(--pink-deep));color:#fff;border-color:transparent}}
+  @media (max-width:900px){{.lib-main{{grid-template-columns:1fr}}.lib-side{{position:static}}}}
+  @media (max-width:600px){{.lib-row{{grid-template-columns:auto 1fr;gap:12px}}.lib-row-arrow{{display:none}}.lib-hero{{padding-top:3.5rem}}}}
 </style>
-{ga_script}
+{ga_snippet}
 </head>
 <body>
-<nav id="nav">
-  <a href="/" class="ss-logo">SaaSpare</a>
-  <a href="/pages/" class="nav-link">Comparisons</a>
-  <a href="/pages/saas-roi-calculator" class="nav-link">ROI Calculator</a>
-  <a href="/shortlist" class="nav-link">Shortlist Builder</a>
-  <a href="/deal-radar" class="nav-link">Deal Radar</a>
-  <a href="/about" class="nav-link">About</a>
-  <a href="/shortlist" class="nav-cta">Build Shortlist -></a>
+<div class="sp-bg"></div>
+<nav class="sp-nav">
+  <a href="/" class="sp-nav-logo"><span class="sp-nav-logo-mark">S</span>Saa<em>Spare</em></a>
+  <a href="/pages/" class="sp-nav-link active">Comparisons</a>
+  <a href="/pages/saas-roi-calculator" class="sp-nav-link">ROI Calculator</a>
+  <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
+  <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
+  <a href="/about" class="sp-nav-link">About</a>
+  <a href="/shortlist" class="sp-btn sp-btn-primary sp-btn-sm glint-button" style="margin-left:8px">Build Shortlist &#8594;</a>
 </nav>
-<div class="library-shell">
-<div class="hero">
-  <div class="badge">{total} buyer pages indexed</div>
-  <h1>Find the right <span>SaaS answer</span> faster.</h1>
-  <p>Search pricing pages, comparison verdicts, trial paths and alternatives without opening ten vendor tabs.</p>
-  <div class="search-shell">
-    <input id="page-search" type="text" placeholder="Search any tool, brand, or page type">
-    <button type="button" id="search-button">Search</button>
+
+<section class="lib-hero">
+  <span class="sp-eyebrow sp-up"><span class="sp-eyebrow-dot"></span>Browse all comparisons</span>
+  <h1 class="sp-h1 sp-up sp-up-1" style="max-width:880px">Find the right <span class="sp-accent">SaaS answer</span> faster.</h1>
+  <p class="sp-lead sp-up sp-up-2" style="max-width:580px">Search pricing pages, comparison verdicts, trial paths, and alternatives without opening ten vendor tabs.</p>
+  <div class="sp-up sp-up-3" style="width:100%;max-width:640px;display:flex;flex-direction:column;align-items:center;gap:10px">
+    <form class="lib-search search-glow" onsubmit="event.preventDefault()" style="width:100%">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="page-search" type="text" placeholder="Search tools, use cases, categories…">
+      <button type="button" id="search-button" class="sp-btn sp-btn-primary glint-button">Search</button>
+    </form>
   </div>
-  <div class="stats">
-    <div class="stat">{len(grouped['comparison'])} comparisons</div>
-    <div class="stat">{len(grouped['pricing'])} pricing guides</div>
-    <div class="stat">{len(grouped['review'])} reviews</div>
-    <div class="stat">Updated {today}</div>
+  <div class="lib-stats sp-up sp-up-4">
+    <div class="lib-stat"><strong>{len(grouped['comparison'])}</strong><span>Comparisons</span></div>
+    <div class="lib-stat"><strong>{len(grouped['pricing'])}</strong><span>Pricing Guides</span></div>
+    <div class="lib-stat"><strong>{len(grouped['review'])}</strong><span>Reviews</span></div>
+    <div class="lib-stat"><strong>{total}</strong><span>Buyer Pages Indexed</span></div>
   </div>
-</div>
-<div class="container">
-  <div class="library-toolbar">
-    <div>
-      <h2>Browse the library</h2>
-      <p>Filter by buyer intent, then sort by what is most useful right now.</p>
-    </div>
-    <select class="sort-select" id="sort-select" aria-label="Sort pages">
-      <option value="recommended">Recommended first</option>
-      <option value="newest">Newest updates</option>
-      <option value="popular">Most popular intents</option>
-      <option value="az">A to Z</option>
-    </select>
-  </div>
-  <div class="filter-row">
-{filter_chips}
-    <div class="results" id="results-count"></div>
-  </div>
-  <div class="pages-grid" id="pages-grid">
-{page_cards}
-  </div>
-  <div class="empty" id="empty-state">No pages matched that search. Try a product name like HubSpot, Ahrefs, or ClickUp.</div>
-  <section class="library-trustbox" aria-label="SaaSpare library trust and related pages">
-    <div class="trust-panel">
-      <h3>TrustBox: buyer-first comparisons</h3>
-      <p>No paid rankings. Vendors cannot buy placement or verdicts. SaaSpare may earn a commission from some affiliate links, but the library is organized around pricing intent, trial paths, alternatives and publicly verifiable buyer research.</p>
-    </div>
-    <div class="trust-panel">
-      <h3>Methodology, corrections and related pages</h3>
-      <p>Last verified {today}. See outdated pricing or a broken link? Report an error so the page can be corrected before another buyer relies on it.</p>
-      <div class="trust-actions">
-        <a href="/methodology.html">Methodology <span>-></span></a>
-        <a href="/affiliate-disclosure.html">Affiliate disclosure <span>-></span></a>
-        <a href="/contact.html">Corrections <span>-></span></a>
-        <a href="/deal-radar.html">Related pages <span>-></span></a>
+  <p style="font-size:.8rem;color:var(--ink-5);margin-top:2px">By <a href="/authors/smith-elly" style="color:var(--ink-4);font-weight:600">Smith Elly</a> &middot; Updated {today} &middot; <a href="/methodology" style="color:var(--ink-4)">Methodology</a></p>
+</section>
+
+<section class="sp-section" style="padding-top:1rem;padding-bottom:1rem">
+  <div class="sp-container">
+    <div class="pop-now">
+      <div><strong>Popular right now</strong><span>&middot; updated hourly</span></div>
+      <div class="pop-row">
+{pop_chips}
       </div>
     </div>
-  </section>
-  <footer>
-    <p>Last updated: {today} &nbsp;|&nbsp;
-    <a href="{domain}/shortlist.html">Shortlist Builder</a> &nbsp;|&nbsp;
-    <a href="{domain}/about.html">About</a> &nbsp;|&nbsp;
-    <a href="{domain}/privacy.html">Privacy</a></p>
-  </footer>
-</div>
-</div>
+  </div>
+</section>
+
+<section class="sp-section" style="padding-top:1rem">
+  <div class="sp-container">
+    <div class="lib-toolbar">
+{cat_chips}
+      <select class="sp-input sp-select" id="sort-select" style="margin-left:auto;width:auto" aria-label="Sort pages">
+        <option value="recommended">Sort: Recommended</option>
+        <option value="az">Sort: A &#8594; Z</option>
+        <option value="popular">Sort: Most useful</option>
+      </select>
+      <div class="results" id="results-count"></div>
+    </div>
+
+    <div class="lib-main">
+      <div class="lib-list stagger">
+        <div id="pages-grid">
+{lib_rows}
+        </div>
+        <div class="empty" id="empty-state">No pages matched that search. Try a product name like HubSpot, Ahrefs, or ClickUp.</div>
+        <div class="lib-pagination" id="pagination"></div>
+      </div>
+
+      <aside class="lib-side">
+        <div class="sp-glass intent-card">
+          <h4>Buyer intent filters</h4>
+{intent_items}
+          <button type="button" class="intent-clear" id="intent-clear">Clear all filters</button>
+        </div>
+        <div class="sp-glass-pink intent-card">
+          <h4 style="margin-bottom:8px">Need help deciding?</h4>
+          <p class="sp-small" style="margin-bottom:14px;color:var(--ink-3)">Use Shortlist Builder to compare your top picks side-by-side.</p>
+          <a href="/shortlist" class="sp-btn sp-btn-primary sp-btn-sm glint-button" style="width:100%">Open Shortlist Builder &#8594;</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="sp-footer">
+  <div class="sp-footer-inner">
+    <div class="sp-footer-brand">
+      <div class="sp-nav-logo"><span class="sp-nav-logo-mark">S</span>Saa<em>Spare</em></div>
+      <p>The honest guide to SaaS. Independent research, weekly pricing verification, no paid rankings.</p>
+    </div>
+    <div class="sp-footer-col"><h4>Product</h4>
+      <a href="/pages/">Comparisons</a><a href="/shortlist">Shortlist Builder</a><a href="/pages/saas-roi-calculator">ROI Calculator</a><a href="/deal-radar">Deal Radar</a>
+    </div>
+    <div class="sp-footer-col"><h4>Company</h4>
+      <a href="/about">About</a><a href="/methodology">Methodology</a><a href="/contact">Contact</a>
+    </div>
+    <div class="sp-footer-col"><h4>Legal</h4>
+      <a href="/affiliate-disclosure">Affiliate Disclosure</a><a href="/privacy">Privacy</a>
+    </div>
+  </div>
+  <div class="sp-footer-bottom">
+    <span>&copy; 2026 SaaSpare. All rights reserved.</span>
+    <span>Made for buyers. Not vendors. &middot; Updated {today}</span>
+  </div>
+</footer>
+
 <script>
+  const PAGE_SIZE = 24;
   const searchInput = document.getElementById('page-search');
   const resultsCount = document.getElementById('results-count');
   const emptyState = document.getElementById('empty-state');
-  const cards = [...document.querySelectorAll('.page-card')];
-  const chips = [...document.querySelectorAll('.filter-chip')];
   const grid = document.getElementById('pages-grid');
+  const pager = document.getElementById('pagination');
+  const cards = [...document.querySelectorAll('.lib-row')];
+  const chips = [...document.querySelectorAll('.cat-chip[data-type]')];
+  const intents = [...document.querySelectorAll('.intent-item')];
   const sortSelect = document.getElementById('sort-select');
   let activeType = 'all';
-  const intentWeight = {{'pricing':1,'free-trial':2,'promo':3,'comparison':4,'alternatives':5,'review':6,'best-of':7,'guide':8}};
+  let currentPage = 1;
+  const weight = {{'pricing':1,'free-trial':2,'promo':3,'comparison':4,'alternatives':5,'review':6,'best-of':7,'guide':8}};
 
-  function applyFilters() {{
-    const query = searchInput.value.toLowerCase().trim();
-    let visible = 0;
-    for (const card of cards) {{
-      const matchesType = activeType === 'all' || card.dataset.type === activeType;
-      const matchesQuery = !query || card.dataset.title.includes(query) || card.dataset.type.includes(query);
-      const show = matchesType && matchesQuery;
-      card.classList.toggle('hidden', !show);
-      if (show) visible += 1;
-    }}
-    sortCards();
-    resultsCount.textContent = visible ? `${{visible}} results` : '0 results';
-    emptyState.style.display = visible ? 'none' : 'block';
-
+  function matched() {{
+    const q = searchInput.value.toLowerCase().trim();
+    return cards.filter((c) => (activeType === 'all' || c.dataset.type === activeType) && (!q || c.dataset.title.includes(q) || c.dataset.type.includes(q)));
+  }}
+  function sortList(list) {{
+    const mode = sortSelect ? sortSelect.value : 'recommended';
+    return list.sort((a,b) => {{
+      if(mode === 'az') return a.dataset.title.localeCompare(b.dataset.title);
+      if(mode === 'popular') return (weight[a.dataset.type]||99) - (weight[b.dataset.type]||99);
+      return (weight[a.dataset.type]||99) - (weight[b.dataset.type]||99) || a.dataset.title.localeCompare(b.dataset.title);
+    }});
+  }}
+  function render() {{
+    const list = sortList(matched());
+    cards.forEach((c) => c.classList.add('hidden'));
+    const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+    if(currentPage > pages) currentPage = pages;
+    const start = (currentPage - 1) * PAGE_SIZE;
+    list.slice(start, start + PAGE_SIZE).forEach((c) => {{ c.classList.remove('hidden'); grid.appendChild(c); }});
+    resultsCount.textContent = list.length ? `${{list.length}} results` : '0 results';
+    emptyState.style.display = list.length ? 'none' : 'block';
+    renderPager(pages);
     const params = new URLSearchParams(window.location.search);
-    if (query) params.set('q', query); else params.delete('q');
-    if (activeType && activeType !== 'all') params.set('type', activeType); else params.delete('type');
+    const q = searchInput.value.trim();
+    if(q) params.set('q', q); else params.delete('q');
+    if(activeType !== 'all') params.set('type', activeType); else params.delete('type');
     history.replaceState(null, '', `${{window.location.pathname}}?${{params.toString()}}`);
   }}
-  function sortCards() {{
-    const mode = sortSelect ? sortSelect.value : 'recommended';
-    const sorted = [...cards].sort((a,b) => {{
-      if(mode === 'az') return a.dataset.title.localeCompare(b.dataset.title);
-      if(mode === 'popular') return (intentWeight[a.dataset.type] || 99) - (intentWeight[b.dataset.type] || 99);
-      if(mode === 'newest') return 0;
-      return (intentWeight[a.dataset.type] || 99) - (intentWeight[b.dataset.type] || 99) || a.dataset.title.localeCompare(b.dataset.title);
+  function renderPager(pages) {{
+    pager.innerHTML = '';
+    if(pages <= 1) return;
+    const mk = (label, page, opts) => {{
+      opts = opts || {{}};
+      const b = document.createElement('button');
+      b.className = 'lib-pg-btn' + (opts.active ? ' active' : '');
+      b.textContent = label;
+      if(opts.disabled) b.disabled = true;
+      if(!opts.disabled && !opts.active) b.onclick = () => {{ currentPage = page; render(); window.scrollTo({{top:0,behavior:'smooth'}}); }};
+      return b;
+    }};
+    pager.appendChild(mk('‹', currentPage - 1, {{disabled: currentPage === 1}}));
+    const win = [];
+    [1, 2, pages - 1, pages, currentPage - 1, currentPage, currentPage + 1].forEach((p) => {{ if(p >= 1 && p <= pages && !win.includes(p)) win.push(p); }});
+    win.sort((a,b) => a - b);
+    let prev = 0;
+    win.forEach((p) => {{
+      if(p - prev > 1) {{ const s = document.createElement('span'); s.className = 'lib-pg-btn'; s.style.border = 'none'; s.style.background = 'none'; s.textContent = '…'; pager.appendChild(s); }}
+      pager.appendChild(mk(String(p), p, {{active: p === currentPage}}));
+      prev = p;
     }});
-    sorted.forEach((card)=>grid.appendChild(card));
+    pager.appendChild(mk('›', currentPage + 1, {{disabled: currentPage === pages}}));
   }}
-
-  for (const chip of chips) {{
-    chip.addEventListener('click', () => {{
-      chips.forEach((item) => item.classList.remove('active'));
-      chip.classList.add('active');
-      activeType = chip.dataset.type;
-      applyFilters();
-    }});
+  function setType(t) {{
+    activeType = t; currentPage = 1;
+    chips.forEach((c) => c.classList.toggle('active', c.dataset.type === t));
+    intents.forEach((i) => i.classList.toggle('active', i.dataset.filter === t));
+    render();
   }}
-  searchInput.addEventListener('input', applyFilters);
-  document.getElementById('search-button').addEventListener('click', applyFilters);
-  if(sortSelect) sortSelect.addEventListener('change', applyFilters);
-
+  chips.forEach((c) => c.addEventListener('click', () => setType(c.dataset.type)));
+  intents.forEach((i) => i.addEventListener('click', () => {{ setType(i.dataset.filter); const tb = document.querySelector('.lib-toolbar'); if(tb) window.scrollTo({{top: tb.offsetTop - 80, behavior:'smooth'}}); }}));
+  document.getElementById('intent-clear').addEventListener('click', () => {{ searchInput.value = ''; setType('all'); }});
+  searchInput.addEventListener('input', () => {{ currentPage = 1; render(); }});
+  document.getElementById('search-button').addEventListener('click', () => {{ currentPage = 1; render(); }});
+  if(sortSelect) sortSelect.addEventListener('change', () => {{ currentPage = 1; render(); }});
   const params = new URLSearchParams(window.location.search);
-  const initialQuery = params.get('q');
-  const initialType = params.get('type');
-  if (initialQuery) searchInput.value = initialQuery;
-  if (initialType && chips.some((chip) => chip.dataset.type === initialType)) {{
-    activeType = initialType;
-    chips.forEach((chip) => chip.classList.toggle('active', chip.dataset.type === initialType));
-  }}
-  applyFilters();
+  if(params.get('q')) searchInput.value = params.get('q');
+  const it = params.get('type');
+  if(it && chips.some((c) => c.dataset.type === it)) activeType = it;
+  setType(activeType);
 </script>
+<script defer src="/assets/sp-motion.js"></script>
 <script defer src="/assets/saaspare-ui.js"></script>
+<script src="https://www.anrdoezrs.net/am/101733230/include/allCj/impressions/page/am.js"></script>
 </body>
 </html>
 """
