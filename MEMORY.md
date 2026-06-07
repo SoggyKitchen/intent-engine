@@ -188,3 +188,45 @@ Measure GSC CTR in 14-21 days. Target: Ramp history >1%, Notion/Sentry >0.5%.
 - Two competing pages for "semrush vs moz": `semrush-vs-moz-which-is-better-in-2026.html` AND `semrush-vs-moz-pro-which-is-better-in-2026.html`
 - Both ranking pos 66-68 with ~550 combined impressions/month and 0 clicks
 - Fix: consolidate to one page + 301 redirect. Discuss with owner before doing — destructive action.
+
+## Revenue Hunter Session 2026-06-07 (Evening) — BIG FIND: 645 dead-end comparison pages
+
+### Gmail scan
+No new affiliate approvals. Fiverr + AWeber already activated in earlier sessions
+(verified _redirects has real awin1.com / kqzyfj.com links — no action needed).
+PartnerStack still network-limited (appeal pending, ticket 115928), ClickUp + FreshBooks
+both formally rejected, Impact.com still only partnered with Semrush (HubSpot/1Password/
+Monday still PENDING). Nothing actionable on the affiliate-approval front today.
+
+### THE BIG ONE: 645 of 852 VS comparison pages had ZERO clickable monetization path
+`rebuild_vs_pages_v2.py`'s `cta_btn()`/`winner_cta()` rendered a disabled `<span class="sp-btn-ghost"
+style="opacity:.5;cursor:default">` whenever neither compared tool had an affiliate program
+(`url=None` in TOOLS dict — true for AWS, Render, Recurly, Docusign CLM, Icertis, Zscaler,
+Tailscale, Twingate, etc — ~90 of the ~200 tools in the DB have no program). Audit showed:
+- 645 pages: 100% dead — not a single live CTA anywhere on the page
+- 204 pages: partial (one side monetized, one dead)
+- 0 pages: fully live
+These pages are real traffic (e.g. aws-vs-render 155 impr/mo pos 9, docusign-clm-vs-icertis
+237 impr/mo pos 8.8, twingate-vs-zscaler 126 impr/mo pos 7.2) — visitors land, find nothing
+to click, and bounce. Pure lost funnel.
+
+**Fix (baked into the generator, not just HTML):** when `url` is falsy, `cta_btn()`/`winner_cta()`
+now render a real link to `/shortlist` (the internal Shortlist Builder tool) instead of a
+disabled span — "Compare in Shortlist Builder →" / "Build Your Shortlist →". Keeps every
+visitor in an on-site funnel (email capture + internal links to monetized pages) instead of
+a dead end. Regenerated all 852 VS pages; reran internal_links/nav/CSS fixers + sitemap.
+Verify in ~21 days: are `/shortlist` referrals from VS pages up, and do internal-link
+clickthroughs to monetized comparison pages increase?
+
+### Also fixed: frozen triple-stamped "Updated X. Updated Y. Updated Z." artifacts
+65 best-of/alternatives pages had body lead-paragraphs + Article-schema descriptions frozen
+mid-bug with 2-3 stacked "Updated {month}." prefixes (a snapshot of the meta-description
+stacking bug fixed in the `<meta>` tag by the d6d336b3 commit, but never cleaned from the
+static body copy that had been generated from the broken value). One-off regex collapse to
+a single "Updated June 2026." — not a generator fix since these are frozen artifacts, not
+actively regenerated. Also fixed `saas-glossary.html`'s broken/truncated meta description
+("Updated June 2026. Updated 2026 guide from SaaSpare — expert analysis…") with real content.
+
+### Direct URL leak scan: clean
+grep for hubspot/clickup/1password/etc direct hrefs in site/pages/ → 0 matches. All routed
+through /go/.
