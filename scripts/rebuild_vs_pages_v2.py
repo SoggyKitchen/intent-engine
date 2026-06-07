@@ -180,16 +180,18 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
     ]
     faq_s = json.dumps({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faq_pairs]})
 
-    # Affiliate CTA helpers
+    # Affiliate CTA helpers — fall back to the internal Shortlist Builder
+    # instead of a dead disabled button when a tool has no affiliate program,
+    # so every page keeps a live on-site conversion path.
     def cta_btn(url, label, cls="sp-btn sp-btn-primary"):
         if url:
             return f'<a href="{url}" target="_blank" rel="noopener sponsored" class="{cls} glint-button">{label} →</a>'
-        return f'<span class="sp-btn sp-btn-ghost" style="opacity:.5;cursor:default">{label}</span>'
+        return f'<a href="/shortlist" class="{cls.replace("sp-btn-primary","sp-btn-secondary")} glint-button">Compare in Shortlist Builder →</a>'
 
     def winner_cta():
         if winner_url:
             return f'<a href="{winner_url}" target="_blank" rel="noopener sponsored" class="sp-btn sp-btn-primary glint-button">Get {winner} →</a>'
-        return ""
+        return f'<a href="/shortlist" class="sp-btn sp-btn-primary glint-button">Build Your Shortlist →</a>'
 
     return f"""<!DOCTYPE html>
 <html lang="en">
