@@ -102,6 +102,52 @@ Long-term log of what works on SaaSpare. Append at the end of every session.
   No competing pages existed. Covers Standard ($99.99/yr), Pro ($119.99/yr), Business ($149.99/user/yr).
   Key angle: subscription-only trap + Windows license sold separately.
 
+## CEO Daily — 2026-06-07
+
+### Gmail Check (no new affiliate approvals)
+- Awin account itself is APPROVED (publisher 2917137, activated 2026-06-01) but the
+  FreshBooks_Closing program application via Awin was REJECTED same day — dead end there.
+- Fiverr (Awin 6288) approval from 2026-06-03 already fully wired: `/go/fiverr`,
+  `/go/fiverr-pro`, `/go/fiverr-business` live with correct tracking params, and all 6
+  Fiverr pages already link through them. No action needed (done in a prior session).
+- Impact.com (7269601): still only Semrush partnered; HubSpot/Monday/Wix pending.
+- PartnerStack: still network-limited, ClickUp declined, appeal pending. No change.
+
+### Durable Fix: VS-page CTR template (highest-leverage find of the day)
+All 849 `*-vs-*` comparison pages shared one bland templated title —
+"`X vs Y (2026): Which Is Better? Full Comparison`" — and every single one of the
+0%-CTR climb-zone pages in `gsc-opportunities` (docusign-clm-vs-icertis 237 impr,
+aws-vs-render 155 impr, tailscale-vs-zscaler 251 impr, etc.) used it verbatim.
+Rewrote the template in `rebuild_vs_pages_v2.py` to "`X vs Y (2026): Honest Verdict
+& Who Wins`" + a sharper meta, regenerated all 852 pages, restored the internal-links
+sections that the regen briefly wiped (re-ran `internal_links.py`), reran nav/CSS
+fixers, rebuilt sitemap. This is the single biggest CTR lever pulled this month —
+measure GSC in ~21 days.
+
+### Bug Fix: duplicated "Updated X. Updated Y." meta descriptions (869 pages)
+`blast_off.py`'s `rewrite_desc()` only recognised its own `"Updated {Month Year}"`
+stamp, not the generators' `"Updated {ISO date}"` stamp — so it kept stacking a
+second prefix on top every run, corrupting 869 pages into descriptions like
+"Updated June 2026. Updated 2026-06-07. Docusign Clm vs Icertis…". Hardened the
+regex to strip ANY existing "Updated X." prefix(es) before re-stamping (idempotent).
+The 852 VS pages were fixed by regeneration; the remaining ~20 non-VS pages will
+self-heal on tonight's nightly `blast_off.py` run.
+
+### Also fixed: latent Python 3.11 SyntaxError in rebuild_vs_pages_v2.py
+An f-string with an escaped quote inside `{}` (`\'{t}\'`) is invalid on Python <3.12
+and was silently blocking this generator from ever running in this environment.
+Rewrote it as string concatenation with `&quot;` HTML entities — same rendered output.
+
+### New page: skipped (judgment call)
+Step 4 asked for a new page for an earning-now program with a coverage gap —
+HostPapa has zero pages. hostpapa.com returned 403 to WebFetch (couldn't verify
+live pricing/plans from the source; only got third-party-aggregated estimates).
+Per Hard Rule 1 ("never fabricate pricing — an empty section beats a fake one"),
+skipped building a numbers-heavy review/pricing page rather than guess. Flagging
+for the owner: verify HostPapa's current Essentials/Growth/Premium pricing
+(~$2.95/$5.95/$6.95/mo per third-party aggregators, NOT independently confirmed)
+before a future session builds that page.
+
 ## Tasks Completed (archive)
 - 2026-06-05: Scaled pricing-change pattern to 6 tools + baked generator overrides.
 - 2026-06-05: Wrote CLAUDE.md operating manual + this MEMORY.md.
