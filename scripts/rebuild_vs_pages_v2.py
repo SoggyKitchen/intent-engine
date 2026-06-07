@@ -158,8 +158,8 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
     name_b, tag_b, cat_b, price_b, url_b, col_b, icon_b, score_b, free_b = db
 
     canonical = f"/pages/{canonical_slug}"
-    title     = f"{name_a} vs {name_b} ({YEAR}): Which Is Better? Full Comparison"
-    desc      = f"Updated {TODAY}. {name_a} vs {name_b} — full comparison of features, pricing, and use cases in {YEAR}. Honest verdict with no paid placements."
+    title     = f"{name_a} vs {name_b} ({YEAR}): Honest Verdict & Who Wins"
+    desc      = f"{name_a} vs {name_b} compared for {YEAR} — pricing, features, and which one wins for your use case. Score-based verdict, no paid placements."
     winner    = name_a if score_a >= score_b else name_b
     winner_url = url_a if score_a >= score_b else url_b
     winner_icon = icon_a if score_a >= score_b else icon_b
@@ -499,7 +499,7 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 
         <div class="sp-glass sp-glass-sm" style="padding:20px">
           <h4 style="color:var(--ink);font-size:.9rem;font-weight:800;margin-bottom:10px">On this page</h4>
-          {''.join(f'<a href="#tab-{t}" onclick="switchTabByAnchor(\'{t}\');return false" style="display:block;padding:6px 10px;border-radius:8px;font-size:.8rem;color:var(--ink-3);font-weight:600;margin-bottom:2px;transition:color .15s" class="sp-toc-link">{l}</a>' for t,l in [("overview","Overview"),("pricing","Pricing"),("features","Features"),("verdict","Final Verdict"),("faq","FAQs")])}
+          {''.join('<a href="#tab-' + t + '" onclick="switchTabByAnchor(&quot;' + t + '&quot;);return false" style="display:block;padding:6px 10px;border-radius:8px;font-size:.8rem;color:var(--ink-3);font-weight:600;margin-bottom:2px;transition:color .15s" class="sp-toc-link">' + l + '</a>' for t,l in [("overview","Overview"),("pricing","Pricing"),("features","Features"),("verdict","Final Verdict"),("faq","FAQs")])}
         </div>
       </aside>
     </div>

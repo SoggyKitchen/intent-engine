@@ -122,19 +122,25 @@ DESC_POWER_PHRASES = [
 ]
 
 
+UPDATED_PREFIX_RE = re.compile(r"^(?:Updated\s+[^.]+\.\s*)+", re.I)
+
+
 def rewrite_desc(current: str, page_kind: str) -> str | None:
     """Tighten meta description for CTR. Returns new desc or None."""
     if not current:
         return None
     cur = current.strip()
-    if cur.startswith(f"Updated {CURRENT_MONTH}"):
-        return None  # already today's update
+    # Strip ANY existing "Updated X." prefix(es) first — generators stamp their own
+    # "Updated {date}." and stacking another one on top produces "Updated X. Updated Y."
+    base = UPDATED_PREFIX_RE.sub("", cur).strip()
+    if cur.startswith(f"Updated {CURRENT_MONTH}") and base == cur[len(f"Updated {CURRENT_MONTH}."):].strip():
+        return None  # already today's update, no stacked prefix to clean up
     # If already strong (mentions "tested" / "real pricing" / "verdict") just refresh date.
-    has_power = any(p in cur.lower() for p in DESC_POWER_PHRASES)
-    if has_power and "Updated" not in cur:
-        new = f"Updated {CURRENT_MONTH}. " + cur
+    has_power = any(p in base.lower() for p in DESC_POWER_PHRASES)
+    if has_power:
+        new = f"Updated {CURRENT_MONTH}. " + base
     else:
-        cleaned = DESC_STALE_OPENERS.sub("", cur)
+        cleaned = DESC_STALE_OPENERS.sub("", base)
         suffix_by_kind = {
             "pricing":   " Real plans, hidden fees, and what you actually pay.",
             "comparison":" Honest verdict after we tested both — no paid placements.",
