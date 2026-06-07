@@ -1,38 +1,38 @@
 {
-  "total_pages": 1417,
-  "updated": 1416,
+  "total_pages": 1401,
+  "updated": 1400,
   "skipped": 1,
-  "orphans_before": 221,
-  "orphans_after": 58,
+  "orphans_before": 56,
+  "orphans_after": 71,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-vs-1password-business-which-is-better-in-2026",
-        "/pages/dashlane-vs-nordpass-which-is-better-in-2026",
-        "/pages/1password-vs-nordpass-which-is-better-in-2026",
-        "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
-        "/pages/xero-vs-netsuite-which-is-better-in-2026"
+        "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
+        "/pages/tresorit-vs-box-which-is-better-in-2026",
+        "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/monday-com-vs-jira-which-is-better-in-2026",
+        "/pages/notion-vs-basecamp-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/keeper-vs-nordpass-which-is-better-in-2026",
-        "/pages/bitwarden-vs-keeper-which-is-better-in-2026",
-        "/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown",
-        "/pages/tableau-vs-looker-which-is-better-in-2026",
-        "/pages/partnerstack-vs-tune-which-is-better-in-2026"
+        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
+        "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
+        "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
+        "/pages/partnerstack-vs-firstpromoter-which-is-better-in-2026",
+        "/pages/monday-com-vs-basecamp-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/7-best-dashlane-alternatives-in-2026-free-paid",
-        "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/okta-vs-cloudflare-which-is-better-in-2026",
-        "/pages/bitwarden-vs-nordpass-which-is-better-in-2026",
-        "/pages/lastpass-vs-dashlane-which-is-better-in-2026"
+        "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/tenable-vs-tresorit-which-is-better-in-2026",
+        "/pages/1password-vs-password-boss-which-is-better-in-2026",
+        "/pages/asana-vs-monday-com-which-is-better-in-2026",
+        "/pages/activecampaign-vs-convertkit-which-is-better-in-2026"
       ]
     }
   ]
