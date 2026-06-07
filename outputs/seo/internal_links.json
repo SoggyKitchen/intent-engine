@@ -1,38 +1,38 @@
 {
-  "total_pages": 1417,
-  "updated": 1416,
+  "total_pages": 1401,
+  "updated": 1400,
   "skipped": 1,
-  "orphans_before": 211,
-  "orphans_after": 60,
+  "orphans_before": 56,
+  "orphans_after": 70,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/tresorit-vs-dropbox-which-is-better-in-2026",
+        "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
-        "/pages/bitwarden-vs-keeper-which-is-better-in-2026",
-        "/pages/activecampaign-vs-pardot-which-is-better-in-2026",
-        "/pages/pinecone-vs-anthropic-claude-which-is-better-in-2026"
+        "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/monday-com-vs-jira-which-is-better-in-2026",
+        "/pages/notion-vs-basecamp-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026",
-        "/pages/cloudflare-vs-tenable-which-is-better-in-2026",
-        "/pages/1password-vs-sticky-password-which-is-better-in-2026",
-        "/pages/paddle-vs-stripe-which-is-better-in-2026",
-        "/pages/semrush-vs-moz-pro-which-is-better-in-2026"
+        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
+        "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
+        "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
+        "/pages/partnerstack-vs-firstpromoter-which-is-better-in-2026",
+        "/pages/monday-com-vs-basecamp-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/cloudflare-access-vs-openvpn-which-is-better-in-2026",
-        "/pages/cloudflare-vs-duo-security-which-is-better-in-2026",
-        "/pages/qualys-vs-tenable-which-is-better-in-2026",
-        "/pages/linear-vs-retool-which-is-better-in-2026",
-        "/pages/heap-vs-fullstory-which-is-better-in-2026"
+        "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/tenable-vs-tresorit-which-is-better-in-2026",
+        "/pages/1password-vs-password-boss-which-is-better-in-2026",
+        "/pages/asana-vs-monday-com-which-is-better-in-2026",
+        "/pages/activecampaign-vs-convertkit-which-is-better-in-2026"
       ]
     }
   ]
