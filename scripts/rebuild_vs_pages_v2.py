@@ -216,7 +216,11 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 <link rel="stylesheet" href="/assets/motion.css">
 <style>
 /* ── Article-specific layout ── */
-.ar-hero{{padding:5.5rem 0 1.5rem}}
+.ar-hero{{padding:5.5rem 0 1.5rem;position:relative;overflow:hidden}}
+.ar-hero .sp-container{{position:relative;z-index:1}}
+.vs-scorebar{{padding:20px 24px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);margin-bottom:1.75rem;backdrop-filter:blur(12px)}}
+.vs-scorebar h3{{font-size:.86rem;font-weight:800;color:var(--ink);letter-spacing:-.01em;margin-bottom:14px;display:flex;align-items:center;gap:7px}}
+.vs-scorebar h3 .dot{{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--pink-deep));box-shadow:0 0 8px rgba(255,65,109,.6);display:inline-block}}
 .ar-grid{{display:grid;grid-template-columns:1.45fr .8fr;gap:32px;align-items:start}}
 .crumbs{{display:flex;align-items:center;gap:6px;font-size:.82rem;color:var(--ink-4);margin-bottom:1.25rem;flex-wrap:wrap}}
 .crumbs a{{color:var(--ink-4);transition:color .15s}}.crumbs a:hover{{color:var(--pink-light)}}
@@ -230,7 +234,8 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 .qa-block h3{{font-size:1rem;font-weight:800;color:var(--ink);letter-spacing:-.015em;margin-bottom:9px;display:flex;align-items:center;gap:8px}}
 .qa-block p{{font-size:.96rem;color:var(--ink-2);line-height:1.7;text-wrap:pretty}}
 .vd-row{{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem}}
-.vd-card{{padding:18px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);position:relative;backdrop-filter:blur(12px)}}
+.vd-card{{padding:18px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);position:relative;backdrop-filter:blur(12px);transition:transform .28s var(--ease-out,cubic-bezier(.16,1,.3,1)),box-shadow .28s ease,border-color .28s ease}}
+.vd-card:hover{{transform:translateY(-4px);border-color:rgba(255,75,115,.3);box-shadow:0 18px 44px rgba(0,0,0,.32)}}
 .vd-card.our-pick{{background:linear-gradient(180deg,rgba(255,65,109,.11),rgba(255,65,109,.04));border-color:var(--line-pink);box-shadow:0 16px 40px rgba(255,65,109,.10)}}
 .vd-tag{{font-size:.64rem;font-weight:800;color:var(--pink-light);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;display:block}}
 .vd-name{{display:flex;align-items:center;gap:9px;margin-bottom:7px}}
@@ -255,7 +260,8 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 .ar-table td.win{{color:var(--green);font-weight:700}}
 .ar-table tr:last-child td{{border:0}}
 .ov-cards{{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem}}
-.ov-card{{padding:18px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);backdrop-filter:blur(12px)}}
+.ov-card{{padding:18px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);backdrop-filter:blur(12px);transition:transform .28s var(--ease-out,cubic-bezier(.16,1,.3,1)),box-shadow .28s ease,border-color .28s ease}}
+.ov-card:hover{{transform:translateY(-3px);border-color:rgba(255,75,115,.26);box-shadow:0 14px 36px rgba(0,0,0,.28)}}
 .ov-card-head{{display:flex;align-items:center;gap:11px;margin-bottom:12px}}
 .ov-card-head strong{{color:var(--ink);font-size:1rem;font-weight:800;letter-spacing:-.015em}}
 .ov-sub{{font-size:.74rem;color:var(--ink-4);margin-top:1px}}
@@ -294,6 +300,8 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 </nav>
 
 <section class="ar-hero">
+  <span class="bg-orb bg-orb-pink" style="width:380px;height:380px;top:-140px;right:-90px"></span>
+  <span class="bg-orb bg-orb-wine" style="width:300px;height:300px;bottom:-150px;left:-70px"></span>
   <div class="sp-container">
     <nav class="crumbs">
       <a href="/">Home</a><span class="sep">›</span>
@@ -320,6 +328,23 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
         <div class="qa-block reveal-up">
           <h3><span class="sp-badge sp-badge-pink">TL;DR</span> Quick Answer</h3>
           <p><strong>{winner}</strong> wins overall — scoring {max(score_a, score_b)}/10 in our testing. Choose <strong>{name_a}</strong> for {tag_a.split(',')[0].strip()}. Choose <strong>{name_b}</strong> for {tag_b.split(',')[0].strip()}. Both offer risk-free trials.</p>
+        </div>
+
+        <!-- HEAD-TO-HEAD SCORE BARS -->
+        <div class="vs-scorebar reveal-up">
+          <h3><span class="dot"></span>Head-to-head score</h3>
+          <div class="score-bar-wrap">
+            <div class="score-bar-row">
+              <span class="score-bar-label">{name_a}</span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:{score_a*10:.0f}%"></div></div>
+              <span class="score-bar-pct">{score_a}</span>
+            </div>
+            <div class="score-bar-row">
+              <span class="score-bar-label">{name_b}</span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:{score_b*10:.0f}%"></div></div>
+              <span class="score-bar-pct">{score_b}</span>
+            </div>
+          </div>
         </div>
 
         <!-- 3 VERDICT CARDS -->
