@@ -7,7 +7,6 @@
 <meta name="description" content="Calculate your ROI before switching SaaS tools. Compare total cost of ownership, savings, and payback period with real pricing data.">
 <link rel="stylesheet" href="/assets/sp-shared.css">
 <link rel="stylesheet" href="/assets/sp-motion.css">
-<link rel="stylesheet" href="/assets/motion.css">
 <style>
 .roi-hero{text-align:center;padding:5rem 1.5rem 3rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem}
 
@@ -92,6 +91,28 @@
 
 @media (max-width: 1100px){.roi-grid{grid-template-columns:1fr}}
 
+/* ── Recalculate button + dirty state ─────────────────────────────────── */
+.roi-calc-btn{
+  display:none;align-items:center;justify-content:center;gap:8px;
+  width:100%;padding:.7rem 1.2rem;margin:12px 0 0;
+  background:linear-gradient(135deg,var(--pink),var(--pink-deep));
+  border:none;border-radius:var(--r-full);color:#fff;font-size:.88rem;font-weight:800;
+  cursor:pointer;transition:transform .15s,box-shadow .15s;
+}
+.roi-calc-btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,65,109,.5)}
+.roi-calc-btn.visible{display:flex}
+@keyframes roiPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,65,109,.5)}60%{box-shadow:0 0 0 8px rgba(255,65,109,0)}}
+.roi-calc-btn.pulse{animation:roiPulse 1.4s infinite}
+.roi-panel.dirty{outline:2px solid rgba(255,65,109,.35);outline-offset:2px}
+.roi-panel.dirty h3::after{content:'· edited';font-size:.68rem;color:var(--pink-light);font-weight:600;margin-left:8px;opacity:.8}
+
+/* Number flash on update */
+@keyframes numFlash{0%{opacity:.3;transform:translateY(4px)}100%{opacity:1;transform:none}}
+.roi-flash{animation:numFlash .4s cubic-bezier(.22,1,.36,1) both}
+
+/* Bar transition */
+.cost-row-fill{transition:width .6s cubic-bezier(.22,1,.36,1)}
+
 /* ── EXISTING NAV (preserved) ─────────────────────────────────────────── */
 :root{--border:rgba(255,255,255,.07);--red:#e94560;--red2:#c73652;--muted:rgba(255,248,245,.42)}
 nav#nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:flex;align-items:center;gap:4px;transition:all .4s ease;background:transparent;border-bottom:none}
@@ -111,6 +132,16 @@ nav#nav .nav-link:hover{color:#fff}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 /* Push content below fixed nav */
 body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
+@media (max-width:860px){
+  nav#nav .nav-link{display:none}
+  nav#nav{padding:.85rem 1.25rem}
+  .nav-cta{font-size:.72rem;padding:.42rem .9rem;margin-left:auto}
+}
+@media (max-width:480px){
+  .logo-text{font-size:.92rem}
+  .logo-mark{height:22px}
+  .nav-cta{font-size:.68rem;padding:.38rem .75rem}
+}
 
 </style>
 <!-- Google tag (gtag.js) -->
@@ -125,67 +156,8 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="theme-color" content="#050407">
   <meta name="robots" content="index,follow">
-<style id="sp-nav-css">
-/* ── SaaSpare Universal Nav ───────────────────────────────────────────────── */
-:root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
-nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
-  display:flex;align-items:center;gap:4px;transition:all .4s ease;
-  background:transparent;border-bottom:none}
-nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.sp-nav-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
-.sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
-  animation:spMarkGlow 4s ease-in-out infinite}
-.sp-nav-mark .mark-top,.sp-nav-mark .mark-bot{transform-box:fill-box;transform-origin:center;
-  transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
-.sp-nav-logo:hover .mark-top{transform:translateX(26px)}
-.sp-nav-logo:hover .mark-bot{transform:translateX(-26px)}
-@keyframes spMarkGlow{
-  0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}
-  50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
-.sp-nav-wordmark{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
-.sp-nav-wordmark em{color:#e94560;font-style:normal}
-nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
-  border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
-nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
-.sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
-  padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
-  box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
-  transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
-.sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.sp-nav-spacer{height:72px}
-.sp-bg{display:none!important}
-nav.sp-topnav{display:none!important}
-</style>
-<script>
-(function(){
-  window.addEventListener('scroll',function(){
-    var nav=document.getElementById('sp-nav');
-    if(nav){nav.classList.toggle('scrolled',window.scrollY>40);}
-  },{passive:true});
-})();
-</script>
 </head>
 <body>
-<nav id="sp-nav">
-  <a href="/" class="sp-nav-logo" aria-label="SaaSpare home">
-    <svg class="sp-nav-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <defs>
-        <clipPath id="sp-ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath>
-        <clipPath id="sp-cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath>
-      </defs>
-      <path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/>
-      <path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/>
-    </svg>
-    <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
-  </a>
-  <a href="/pages/" class="sp-nav-link">Comparisons</a>
-  <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
-  <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
-  <a href="/about" class="sp-nav-link">About</a>
-  <a href="/shortlist" class="sp-nav-cta">Build Shortlist &#8594;</a>
-</nav>
-<div class="sp-nav-spacer"></div>
 <div class="sp-bg"></div>
 
 <nav id="nav">
@@ -248,9 +220,13 @@ nav.sp-topnav{display:none!important}
             <span class="roi-suffix">% off</span>
           </div>
         </div>
+        <button class="roi-calc-btn" id="roi-calc-btn" type="button">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.86.95 6.6 2.5"/><path d="M21 3v6h-6"/></svg>
+          Recalculate ROI
+        </button>
         <div class="roi-pay">
           <span class="roi-pay-lbl">You pay:</span>
-          <span class="roi-pay-val">$448.50<em>/year</em></span>
+          <span class="roi-pay-val" id="roi-pay-val">$448.50<em>/year</em></span>
         </div>
       </div>
 
@@ -270,7 +246,7 @@ nav.sp-topnav{display:none!important}
             <div class="roi-mini-lbl">ROI (1 Year)</div>
           </div>
           <div class="roi-mini-cell">
-            <div class="roi-mini-val">2.8<span style="font-size:.85rem;font-weight:600;color:var(--ink-4);margin-left:3px">mo</span></div>
+            <div class="roi-mini-val" id="roi-payback-val">2.8<span style="font-size:.85rem;font-weight:600;color:var(--ink-4);margin-left:3px">mo</span></div>
             <div class="roi-mini-lbl">Payback Period</div>
           </div>
           <div class="roi-mini-cell">
@@ -281,16 +257,16 @@ nav.sp-topnav{display:none!important}
 
         <div class="cost-bar-block">
           <div class="cost-row">
-            <span class="cost-row-lbl">Without Discount</span>
-            <div class="cost-row-bar"><div class="cost-row-fill" style="width:100%"></div></div>
-            <span class="cost-row-val">$897.00<em>/yr</em></span>
+            <span class="cost-row-lbl" id="roi-bar-full-lbl">Without Discount</span>
+            <div class="cost-row-bar"><div class="cost-row-fill" id="roi-bar-full" style="width:100%"></div></div>
+            <span class="cost-row-val" id="roi-bar-full-val">$897.00<em>/yr</em></span>
           </div>
           <div class="cost-row">
-            <span class="cost-row-lbl">With 50% Discount</span>
-            <div class="cost-row-bar"><div class="cost-row-fill pink roi-bar-animated" id="roi-bar-current" style="--bar-width:80%" style="width:50%"></div></div>
-            <span class="cost-row-val">$448.50<em>/yr</em></span>
+            <span class="cost-row-lbl" id="roi-bar-disc-lbl">With 50% Discount</span>
+            <div class="cost-row-bar"><div class="cost-row-fill pink" id="roi-bar-current" style="width:50%"></div></div>
+            <span class="cost-row-val" id="roi-bar-disc-val">$448.50<em>/yr</em></span>
           </div>
-          <div class="cost-note">Based on annual billing. Actual savings may vary.</div>
+          <div class="cost-note" id="roi-bar-note">Based on annual billing. Actual savings may vary.</div>
         </div>
       </div>
 
@@ -300,14 +276,14 @@ nav.sp-topnav{display:none!important}
         <div class="tm-row">
           <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.86.95 6.6 2.5"/><path d="M21 3v6h-6"/></svg></span>
           <div>
-            <strong>Recover your investment in just 2.8 months.</strong>
+            <strong id="roi-means-payback">Recover your investment in just 2.8 months.</strong>
             <span>Light switching effort means productivity loss is minimal.</span>
           </div>
         </div>
         <div class="tm-row">
           <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
           <div>
-            <strong>Save $298.50 in the first year</strong>
+            <strong id="roi-means-savings">Save $298.50 in the first year</strong>
             <span>compared to regular pricing.</span>
           </div>
         </div>
@@ -375,12 +351,226 @@ nav.sp-topnav{display:none!important}
 <script src="/assets/sp-motion.js" defer></script>
 
 <script>
+/* ── Nav scroll ─────────────────────────────────────────────────────────── */
 (function(){
-  var nav = document.getElementById('nav');
-  if(!nav) return;
-  function chk(){nav.classList.toggle('scrolled', window.scrollY > 50);}
-  window.addEventListener('scroll', chk, {passive:true});
-  chk();
+  var nav=document.getElementById('nav');
+  if(!nav)return;
+  function chk(){nav.classList.toggle('scrolled',window.scrollY>50);}
+  window.addEventListener('scroll',chk,{passive:true});chk();
+})();
+
+/* ── ROI Calculator engine ──────────────────────────────────────────────── */
+(function(){
+  /* Tool price lookup — drives auto-fill when tool is changed */
+  var TOOLS={
+    '1Password':{price:2.99},'Bitwarden':{price:3.00},'HubSpot':{price:20},
+    'NordVPN':{price:4.49},'Semrush':{price:129},'ClickUp':{price:7},
+    'Notion':{price:8},'Shopify':{price:29}
+  };
+
+  var state={tool:'1Password',billing:'annual',teamSize:25,pricePerUser:2.99,discount:50};
+  var dirty=false;
+
+  /* ── Calculate ─────────────────────────────────────────────────────────── */
+  function calc(){
+    var p=state.pricePerUser, t=state.teamSize, d=state.discount/100;
+    var annMult=state.billing==='annual'?10:12; // annual = 2 months free
+    var fullMonthly=p*t;
+    var fullAnnual=fullMonthly*12;
+    var youPay=fullMonthly*(1-d)*annMult;
+    var savings=fullAnnual-youPay;
+    var roi=youPay>0?Math.round(savings/youPay*100):0;
+    var payback=savings>0?(youPay/savings*12):99;
+    return{fullAnnual:fullAnnual,youPay:youPay,savings:savings,roi:roi,payback:payback,discPct:Math.round(d*100)};
+  }
+
+  /* ── Format helpers ─────────────────────────────────────────────────────── */
+  function fmt(n){
+    if(n>=10000) return '$'+(n/1000).toFixed(1)+'k';
+    if(n>=1000)  return '$'+(n/1000).toFixed(1)+'k';
+    return '$'+n.toFixed(2).replace(/\.00$/,'');
+  }
+  function fmtSm(n){return '$'+n.toFixed(2).replace(/\.00$/,'');}
+
+  /* ── Smooth counter animation ───────────────────────────────────────────── */
+  function animTo(el,from,to,renderFn,ms){
+    if(!el)return;
+    ms=ms||500;
+    var start=performance.now();
+    function tick(now){
+      var p=Math.min((now-start)/ms,1);
+      var ease=1-Math.pow(1-p,3);
+      renderFn(el,from+(to-from)*ease);
+      if(p<1)requestAnimationFrame(tick);
+      else{renderFn(el,to);el.classList.remove('roi-flash');void el.offsetWidth;el.classList.add('roi-flash');}
+    }
+    requestAnimationFrame(tick);
+  }
+  function flashEl(el){if(!el)return;el.classList.remove('roi-flash');void el.offsetWidth;el.classList.add('roi-flash');}
+
+  /* ── Render results ─────────────────────────────────────────────────────── */
+  var prevR={youPay:448.50,savings:448.50,roi:100,payback:12,fullAnnual:897};
+
+  function render(animate){
+    var r=calc();
+
+    /* You pay */
+    var payEl=document.getElementById('roi-pay-val');
+    if(payEl){payEl.innerHTML=fmtSm(r.youPay)+'<em>/year</em>';flashEl(payEl);}
+
+    if(animate){
+      /* Savings big number */
+      var svEl=document.getElementById('roi-saving-val');
+      animTo(svEl,prevR.savings,r.savings,function(el,v){el.innerHTML=fmt(v)+'<em>/year</em>';},600);
+
+      /* ROI */
+      var roiEl=document.getElementById('roi-roi-val');
+      animTo(roiEl,prevR.roi,r.roi,function(el,v){el.textContent=Math.round(v)+'%';},550);
+
+      /* Payback */
+      var pbEl=document.getElementById('roi-payback-val');
+      animTo(pbEl,prevR.payback,r.payback,function(el,v){
+        el.innerHTML=v.toFixed(1)+'<span style="font-size:.85rem;font-weight:600;color:var(--ink-4);margin-left:3px">mo</span>';
+      },500);
+
+      /* Net savings */
+      var nsEl=document.getElementById('roi-annual-val');
+      animTo(nsEl,prevR.savings,r.savings,function(el,v){el.textContent=fmt(Math.max(v,0));},600);
+
+      /* Bars */
+      var barFull=document.getElementById('roi-bar-full');
+      var barCur=document.getElementById('roi-bar-current');
+      if(barFull)barFull.style.width='100%';
+      if(barCur){
+        var pct=r.fullAnnual>0?(r.youPay/r.fullAnnual*100):50;
+        setTimeout(function(){barCur.style.width=Math.max(pct,8)+'%';},60);
+      }
+
+      /* Flash the savings panel */
+      var savPanel=document.querySelector('.roi-savings');
+      if(savPanel){
+        savPanel.style.transition='box-shadow .25s';
+        savPanel.style.boxShadow='0 0 0 2px var(--green),0 0 40px rgba(54,230,161,.22)';
+        setTimeout(function(){savPanel.style.boxShadow='';},900);
+      }
+    } else {
+      /* Static — no animation */
+      var sv=document.getElementById('roi-saving-val');
+      if(sv)sv.innerHTML=fmt(r.savings)+'<em>/year</em>';
+      var rv=document.getElementById('roi-roi-val');
+      if(rv)rv.textContent=r.roi+'%';
+      var pv=document.getElementById('roi-payback-val');
+      if(pv)pv.innerHTML=r.payback.toFixed(1)+'<span style="font-size:.85rem;font-weight:600;color:var(--ink-4);margin-left:3px">mo</span>';
+      var nv=document.getElementById('roi-annual-val');
+      if(nv)nv.textContent=fmt(r.savings);
+      var bc=document.getElementById('roi-bar-current');
+      if(bc)bc.style.width=(r.fullAnnual>0?Math.max(r.youPay/r.fullAnnual*100,8):50)+'%';
+    }
+
+    /* Bar labels + values */
+    var bfl=document.getElementById('roi-bar-full-val');
+    if(bfl)bfl.innerHTML=fmt(r.fullAnnual)+'<em>/yr</em>';
+    var bdl=document.getElementById('roi-bar-disc-lbl');
+    if(bdl)bdl.textContent='With '+r.discPct+'% Discount';
+    var bdv=document.getElementById('roi-bar-disc-val');
+    if(bdv)bdv.innerHTML=fmt(r.youPay)+'<em>/yr</em>';
+    var note=document.getElementById('roi-bar-note');
+    if(note)note.textContent='Based on '+state.billing+' billing. Actual savings may vary.';
+
+    /* "What this means" copy */
+    var mpb=document.getElementById('roi-means-payback');
+    if(mpb)mpb.textContent='Recover your investment in just '+r.payback.toFixed(1)+' months.';
+    var msv=document.getElementById('roi-means-savings');
+    if(msv)msv.textContent='Save '+fmt(Math.max(r.savings,0))+' in the first year';
+
+    /* Save & share tool name */
+    var toolName=document.querySelector('.roi-save-tool strong');
+    if(toolName)toolName.textContent=state.tool;
+
+    prevR=r;
+  }
+
+  /* ── Dirty state ────────────────────────────────────────────────────────── */
+  function setDirty(yes){
+    dirty=yes;
+    var btn=document.getElementById('roi-calc-btn');
+    var panel=document.querySelector('.roi-panel');
+    if(btn){
+      btn.classList.toggle('visible',yes);
+      btn.classList.toggle('pulse',yes);
+    }
+    if(panel)panel.classList.toggle('dirty',yes);
+  }
+
+  /* ── Trigger recalculate ────────────────────────────────────────────────── */
+  function doCalc(){
+    setDirty(false);
+    render(true);
+  }
+
+  /* ── Parse helpers ──────────────────────────────────────────────────────── */
+  function parseNum(s){return parseFloat(String(s).replace(/[^0-9.]/g,''))||0;}
+
+  /* ── Init ───────────────────────────────────────────────────────────────── */
+  function init(){
+    /* Billing toggle */
+    document.querySelectorAll('.roi-toggle-opt').forEach(function(opt){
+      opt.addEventListener('click',function(){
+        document.querySelectorAll('.roi-toggle-opt').forEach(function(o){o.classList.remove('active');});
+        opt.classList.add('active');
+        state.billing=opt.textContent.trim().toLowerCase().startsWith('annual')?'annual':'monthly';
+        setDirty(true);
+      });
+    });
+
+    /* Tool select → auto-fill price */
+    var toolSel=document.querySelectorAll('.roi-input.sp-select')[0];
+    if(toolSel){
+      toolSel.addEventListener('change',function(){
+        state.tool=toolSel.value;
+        var t=TOOLS[state.tool];
+        if(t){
+          var pi=document.querySelectorAll('input.roi-input')[0];
+          if(pi){pi.value='$'+t.price;state.pricePerUser=t.price;}
+        }
+        setDirty(true);
+      });
+    }
+
+    /* Team size */
+    var teamInp=document.querySelectorAll('input.roi-input')[1]; // second input = team size
+    /* Actually identify by placeholder proximity — grab text inputs */
+    var numInputs=Array.from(document.querySelectorAll('.roi-input-sm'));
+    /* numInputs[0]=team size, numInputs[1]=price, numInputs[2]=discount */
+    if(numInputs[0]){
+      numInputs[0].addEventListener('input',function(){
+        state.teamSize=Math.max(parseInt(numInputs[0].value)||1,1);
+        setDirty(true);
+      });
+    }
+    if(numInputs[1]){
+      numInputs[1].addEventListener('input',function(){
+        state.pricePerUser=parseNum(numInputs[1].value);
+        setDirty(true);
+      });
+    }
+    if(numInputs[2]){
+      numInputs[2].addEventListener('input',function(){
+        state.discount=Math.min(Math.max(parseNum(numInputs[2].value),0),100);
+        setDirty(true);
+      });
+    }
+
+    /* Calculate button */
+    var btn=document.getElementById('roi-calc-btn');
+    if(btn)btn.addEventListener('click',doCalc);
+
+    /* Initial render */
+    render(false);
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
+  else init();
 })();
 </script>
 </body>
