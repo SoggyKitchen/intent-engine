@@ -1,23 +1,12 @@
 {
-  "generated_at_utc": "2026-06-07T11:57:55+00:00",
+  "generated_at_utc": "2026-06-07T12:54:18+00:00",
   "mode": "apply",
-  "pages_flagged": 25,
+  "pages_flagged": 23,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
   ],
   "pages": [
-    {
-      "path": "site/pages/fiverr-vs-upwork-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "tted pros available</td><td>&#10003; Expert-vetted tier</td></tr> <tr><td>Money-back guarantee</td><td>&#10003; Yes</td><td>&#10003; Yes (disputes)</td></tr> </tbody> <"
-        }
-      ],
-      "trust_state_bumped": false
-    },
     {
       "path": "site/pages/best-vpn-for-streaming-2026.html",
       "claims": [
@@ -258,17 +247,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "ly a free trial. ProtonVPN free doesn't unblock Netflix. The honest answer: the 30-day money-back guarantee on NordVPN ($3.39/month) is the best way to access Netflix free legally.</p></d"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/clickup-vs-asana-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "sla_guarantee",
-          "snippet": "99.9% uptime SLA",
-          "context": "\u2014 ClickUp has SOC 2 Type II certification, SSO, SAML, advanced permissions, and 99.9% uptime SLA on Business+ plans. It's used by enterprise teams at IBM, Booking.com, and Netf"
         }
       ],
       "trust_state_bumped": false
