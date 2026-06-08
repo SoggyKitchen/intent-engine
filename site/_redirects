@@ -282,3 +282,7 @@
 # Constant Contact — CJ $105/sale (GET CJ DEEP LINK: app.cj.com -> Links -> search "Constant Contact")
 /go/constant-contact https://www.constantcontact.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/constant-contact-trial https://www.constantcontact.com/signup?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+
+# Incogni — CJ APPROVED 2026-06-08 (data removal by Surfshark) — GET CJ DEEP LINK: app.cj.com -> Links -> search "Incogni"
+# TODO: Replace placeholder with real CJ tracking link from app.cj.com dashboard
+/go/incogni https://incogni.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
