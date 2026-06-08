@@ -1,6 +1,6 @@
 # Link Cleanup
 
-- Pages with broken internal links: 1434
+- Pages with broken internal links: 1433
 - Internal links still containing `.html`: 322
 
 ## Broken Internal Links
@@ -20,32 +20,31 @@
 - `/media-kit`: /authors/kaylan-von-papen
 - `/methodology`: /authors/kaylan-von-papen
 - `/privacy`: /authors/kaylan-von-papen
-- `/shortlist`: /go/, /pages/close-pricing-2026, /pages/zoho-crm-pricing-2026
 - `/terms`: /authors/kaylan-von-papen
-- `/pages/1password-business-vs-cloudflare-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-business-vs-crowdstrike-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-business-vs-duo-security-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-business-vs-okta-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-business-vs-qualys-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-business-vs-sentinelone-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-business-vs-snyk-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-business-vs-tenable-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-business-vs-tresorit-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
+- `/pages/1password-business-vs-cloudflare-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-business-vs-crowdstrike-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-business-vs-duo-security-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-business-vs-okta-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-business-vs-qualys-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-business-vs-sentinelone-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-business-vs-snyk-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-business-vs-tenable-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-business-vs-tresorit-which-is-better-in-2026`: /authors/kaylan-von-papen
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts`: /editorial
 - `/pages/1password-free-trial-2026-how-to-get-it-step-by-step`: /editorial
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay`: /pages/best-1password-alternatives-2026
 - `/pages/1password-pricing-history-2026`: /editorial
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work`: /editorial
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict`: /authors/smith-elly, /editorial
-- `/pages/1password-vs-bitwarden-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-vs-dashlane-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-vs-enpass-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-vs-keeper-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-vs-lastpass-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-vs-nordpass-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-vs-password-boss-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-vs-roboform-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/1password-vs-sticky-password-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
+- `/pages/1password-vs-bitwarden-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-vs-dashlane-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-vs-enpass-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-vs-keeper-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-vs-lastpass-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-vs-nordpass-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-vs-password-boss-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-vs-roboform-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/1password-vs-sticky-password-which-is-better-in-2026`: /authors/kaylan-von-papen
 - `/pages/7-best-1password-alternatives-in-2026-free-paid`: /authors/kaylan-von-papen, /blog/, https://saaspare.org/pages/1password-promo-codes-discounts-2026-saaspare, https://saaspare.org/pages/best-1password-alternatives-2026-free-paid-options-saaspare, https://saaspare.org/pages/best-dashlane-alternatives-2026-free-paid-options-saaspare
 - `/pages/7-best-adp-alternatives-in-2026-free-paid`: /authors/kaylan-von-papen, /blog/, https://saaspare.org/pages/bamboohr-vs-remote-com-which-hr-recruiting-is-best-in-2026, https://saaspare.org/pages/best-adp-alternatives-2026-free-paid-options-saaspare, https://saaspare.org/pages/best-bamboohr-alternatives-2026-free-paid-options
 - `/pages/7-best-ahrefs-alternatives-in-2026-free-paid`: /authors/kaylan-von-papen, /blog/, https://saaspare.org/pages/ahrefs-vs-frase-io-which-seo-tools-is-best-in-2026, https://saaspare.org/pages/best-moz-pro-alternatives-2026-free-paid-options-saaspare, https://saaspare.org/pages/best-semrush-alternatives-2026-free-paid-options
@@ -100,7 +99,8 @@
 - `/pages/activecampaign-free-trial-2026-how-to-start-what-you-get`: /editorial
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay`: /editorial, /pages/activecampaign-pricing-history-2026, /pages/best-activecampaign-alternatives-2026
 - `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict`: /authors/smith-elly, /editorial
-- `/pages/activecampaign-vs-brevo-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/activecampaign-vs-convertkit-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/activecampaign-vs-drip-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
-- `/pages/activecampaign-vs-klaviyo-which-is-better-in-2026`: /authors/kaylan-von-papen, /blog/
+- `/pages/activecampaign-vs-brevo-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/activecampaign-vs-convertkit-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/activecampaign-vs-drip-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/activecampaign-vs-klaviyo-which-is-better-in-2026`: /authors/kaylan-von-papen
+- `/pages/activecampaign-vs-mailchimp-which-is-better-in-2026`: /authors/kaylan-von-papen

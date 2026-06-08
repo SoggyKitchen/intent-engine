@@ -13,8 +13,9 @@
 - Duplicate title: `Pandadoc Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/pandadoc-coupon-2026-discount-codes-promo, /pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts
 - Duplicate title: `Salesforce Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/salesforce-coupon-2026-discount-codes-promo, /pages/salesforce-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate title: `Shopify Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/shopify-coupon-code-promo-codes-2026-verified-discounts, /pages/shopify-discount-code-promo-codes-2026-verified-deals
-- Duplicate meta: `Updated 2026 guide from SaaSpare — expert analysis, real pricing data, and a clear recomme` -> /about, /contact, /deal-radar, /methodology, /shortlist
+- Duplicate meta: `Updated 2026 guide from SaaSpare — expert analysis, real pricing data, and a clear recomme` -> /about, /contact, /deal-radar, /methodology
 - Duplicate meta: `SaaSpare` -> /accessibility, /cookie-policy, /dmca, /editorial-policy, /privacy
+- Duplicate meta: `Updated June 2026. The best Chrome Devtools alternatives in 2026 — ranked by price, featur` -> /pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison, /pages/best-chrome-devtools-alternatives-in-2026
 - Duplicate meta: `Updated June 2026. Best Copy.ai discount codes and promo offers verified 4 June 2026. Annu` -> /pages/copy-ai-coupon-2026-discount-codes-promo, /pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts
 - Duplicate meta: `Updated June 2026. Best FreshBooks discount codes and promo offers verified 4 June 2026. A` -> /pages/freshbooks-coupon-2026-discount-codes-promo, /pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate meta: `Updated June 2026. Everything in the GetResponse free trial 2026: length, credit card requ` -> /pages/getresponse-free-trial-2026-how-to-get-it-step-by-step, /pages/getresponse-free-trial-2026-how-to-start-what-you-get

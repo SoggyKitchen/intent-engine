@@ -1,22 +1,22 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-07T07:13:54+00:00
+Generated: 2026-06-08T08:22:20+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **80.08/100**
-- Level: **Competitive**
-- Technical SEO: 16.45/20
-- Content usefulness: 17.98/20
-- Trust/E-E-A-T: 13.82/20
-- Internal linking: 11.88/15
-- Schema/indexability: 7.62/10
-- Conversion/revenue: 7.72/10
-- Performance/UX: 4.62/5
+- Overall SaaSpare Health Score: **87.8/100**
+- Level: **Strong authority-ready**
+- Technical SEO: 16.79/20
+- Content usefulness: 19.3/20
+- Trust/E-E-A-T: 18.2/20
+- Internal linking: 11.93/15
+- Schema/indexability: 7.64/10
+- Conversion/revenue: 9.03/10
+- Performance/UX: 4.91/5
 
 ## Dashboard Summary
 - Pages scanned: 1450
-- Healthy pages (85+): 290
+- Healthy pages (85+): 1141
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
@@ -42,53 +42,53 @@ Mode: `audit`
 ## Top 25 Highest-Impact Fixes
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f` (24.52/100): invalid_canonical, missing_meta, no_h1
 - `/fo-verify` (28.56/100): invalid_canonical, missing_meta, no_h1
-- `/shortlist` (60.92/100): broken_internal_link, title_length_outside_target
+- `/pages` (63.5/100): broken_internal_link, canonical_mismatch, images_missing_alt, missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/media-kit` (65.26/100): broken_internal_link
-- `/pages` (65.5/100): broken_internal_link, canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/about` (61.02/100): images_missing_alt
 - `/pages/canva-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/miro-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/slack-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
 - `/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay` (82.0/100): broken_internal_link, duplicate_h1, images_missing_alt, missing_methodology
-- `/pages/zoom-vs-riverside-fm-which-is-better-in-2026` (72.12/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/newsletter` (62.74/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/contact` (62.75/100): images_missing_alt, title_length_outside_target
-- `/pages/stripe-vs-recurly-which-is-better-in-2026` (72.78/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/digitalocean-vs-linode-which-is-better-in-2026` (72.83/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/aws-vs-render-which-is-better-in-2026` (72.91/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/zoom-vs-whereby-which-is-better-in-2026` (72.96/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/zoom-vs-descript-which-is-better-in-2026` (72.97/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/zoom-vs-streamyard-which-is-better-in-2026` (72.98/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/zoom-vs-around-which-is-better-in-2026` (73.0/100): broken_internal_link, images_missing_alt, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/1password-business-vs-cloudflare-which-is-better-in-2026` (73.05/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-wireguard-which-is-better-in-2026` (73.16/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/1password-business-vs-sentinelone-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/expressvpn-business-vs-openvpn-which-is-better-in-2026` (73.17/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/privacy` (73.61/100): broken_internal_link, meta_length_outside_target
+- `/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay` (84.0/100): broken_internal_link, duplicate_h1, missing_correction_cta
+- `/affiliate-disclosure` (74.04/100): broken_internal_link
+- `/corrections` (64.41/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-1password-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
+- `/pages/best-ahrefs-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
+- `/pages/best-asana-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
+- `/pages/best-clickup-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
+- `/pages/best-datadog-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
+- `/pages/best-deel-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
+- `/pages/best-freshbooks-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
+- `/pages/best-hubspot-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
+- `/pages/best-linear-alternatives-in-2026-free-paid` (84.5/100): broken_internal_link, duplicate_h1, images_missing_alt
 
 ## Top 25 Revenue Opportunities
-- `/deal-radar` (coupon, score 68.44): CTA=True, affiliateLinks=5, disclosure=True
+- `/deal-radar` (coupon, score 68.38): CTA=True, affiliateLinks=5, disclosure=True
 - `/pages/best-saas-deals-this-week-2026` (coupon, score 77.72): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.31): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.44): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.44): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.58): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.63): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.64): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.65): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/shopify-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.74): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.77): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 79.83): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.19): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.2): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.21): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.23): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.24): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.24): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.25): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.36): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.36): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.47): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/miro-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.48): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/mixpanel-coupon-2026-discount-codes-promo` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/pandadoc-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/vultr-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/bigcommerce-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/contabo-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/deel-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/getresponse-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/gusto-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True

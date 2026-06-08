@@ -6,14 +6,14 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 
 (Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.)
 
-- **Ramp** [PLACEHOLDER, none] — 6 pages, 1,014 impressions, $100/conv
-- **HubSpot** [PENDING, Impact] — 39 pages, 198 impressions, $400/conv
-- **Notion** [PLACEHOLDER, none] — 9 pages, 119 impressions, $15/conv
-- **Rippling** [PLACEHOLDER, none] — 8 pages, 86 impressions, $120/conv
-- **Datadog** [PLACEHOLDER, none] — 11 pages, 79 impressions, $80/conv
-- **Salesforce** [PLACEHOLDER, none] — 8 pages, 46 impressions, $120/conv
+- **Ramp** [PLACEHOLDER, none] — 6 pages, 935 impressions, $100/conv
+- **HubSpot** [PENDING, Impact] — 39 pages, 190 impressions, $400/conv
+- **Notion** [PLACEHOLDER, none] — 8 pages, 116 impressions, $15/conv
+- **Rippling** [PLACEHOLDER, none] — 8 pages, 82 impressions, $120/conv
+- **Datadog** [PLACEHOLDER, none] — 11 pages, 80 impressions, $80/conv
+- **Salesforce** [PLACEHOLDER, none] — 8 pages, 44 impressions, $120/conv
 - **Monday.com** [LOCKED, PartnerStack] — 17 pages, 35 impressions, $150/conv
-- **Xero** [PENDING, Direct] — 15 pages, 29 impressions, $80/conv
+- **Xero** [PENDING, Direct] — 15 pages, 23 impressions, $80/conv
 - **1Password** [PENDING, Impact] — 28 pages, 5 impressions, $45/conv
 - **Linear** [PLACEHOLDER, none] — 9 pages, 5 impressions, $20/conv
 - **Zoom** [PLACEHOLDER, none] — 7 pages, 2 impressions, $12/conv
