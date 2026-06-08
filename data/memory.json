@@ -141,6 +141,31 @@
         "Apply to Xero direct affiliate program",
         "Apply to Dashlane on CJ Affiliate"
       ]
+    },
+    {
+      "date": "2026-06-08",
+      "session": "ceo-daily",
+      "findings": [
+        "CRITICAL BUG: wave23_ctr_optimizer generates truncated metas ending in ... for 4 top-impression pages (Ramp 1687 impr, Mixpanel 742, Notion 557, Sentry 528)",
+        "Mixpanel meta had factual error: said 1M events/month free but correct is 20M events/month",
+        "Fiverr affiliate (Awin) was already configured in _redirects \u2014 Awin approval email 2026-06-03",
+        "FreshBooks rejected by Awin. PartnerStack account locked (appeal #115928 filed 2026-06-05)",
+        "Impact.com account: only Semrush active. Wix contract application pending",
+        "Parallels Desktop review page built \u2014 1.65 EPC CJ program, only had pricing page before",
+        "No actual <a href> revenue leaks found in pages \u2014 grep hits were text mentions in FAQ/steps"
+      ],
+      "actions": [
+        "Fixed truncated metas: fix_ctr_opportunities.py now has complete sentences for all 4 pages",
+        "Mixpanel title improved: now shows specific prices (8/mo, 20M events)",
+        "Added fix_notion_free_plan() and fix_sentry_free_plan() to fix_ctr_opportunities.py",
+        "Built parallels-desktop-review-2026 page via generate_review_pages_v3.py (baked in)",
+        "Pushed to main: d4b8251f"
+      ],
+      "watch": [
+        "wave23_ctr_optimizer uses hardcoded estimated pages (not real GSC) \u2014 will NOT overwrite our fixes",
+        "generate_pricing_pages_v3.py SKIPS pages that already have premium template (pr-layout/price-at-glance/feat-col)",
+        "PartnerStack appeal still pending \u2014 check #115928 status in 7-10 days"
+      ]
     }
   ],
   "affiliate_approvals": [
