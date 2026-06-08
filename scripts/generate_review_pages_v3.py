@@ -584,6 +584,41 @@ REVIEWS = {
             ("Is Xero secure?", "Xero uses TLS encryption, two-factor authentication, and 256-bit AES encryption for data at rest. Data is backed up across multiple data centres. SOC 2 Type II certified."),
         ]
     ),
+    "parallels-desktop": dict(
+        name="Parallels Desktop", logo="https://cdn.simpleicons.org/virtualbox/183a61",
+        score=8.7, ring="sr-gold",
+        verdict_oneliner="The best way to run Windows on a Mac — no rebooting required",
+        best_for="Mac users who need Windows apps for work, gaming, or software testing",
+        not_for="Users who rarely need Windows and can use web alternatives",
+        hero_lead="Parallels Desktop lets Mac users run Windows, Linux, and legacy software without rebooting. After testing it across M1/M2/M3 Macs and Intel, it delivers the best virtualization performance available in 2026.",
+        pros=[
+            "Coherence mode makes Windows apps appear natively in macOS Dock",
+            "Copy/paste, drag-and-drop, and file sharing work seamlessly between OSes",
+            "Optimised for Apple Silicon (M1/M2/M3/M4) — faster than Boot Camp ever was",
+            "Runs Windows 11 ARM, Windows 10, Ubuntu, and other Linux distros",
+            "14-day free trial — no credit card required to test it fully",
+        ],
+        cons=[
+            "Annual subscription model — $99.99/yr Standard, no one-time purchase",
+            "Needs 16GB RAM minimum for smooth dual-OS performance",
+            "Pro features (more vCPUs, RAM) require $129.99/yr Pro plan",
+        ],
+        scores=dict(value=78, ease=92, features=88, int=84, support=80),
+        verdict_icon="💻", verdict_headline="Parallels Desktop is the fastest way to run Windows on a Mac",
+        verdict_body="For Mac users who need Windows, Parallels Desktop is the clear winner. Boot Camp is discontinued on M-chip Macs. VMware Fusion is free but lags behind on usability. Parallels' Coherence mode is genuinely impressive — Windows apps appear in your macOS Dock like native apps. The $99.99/yr Standard plan covers most users. Power users needing more RAM allocation or vCPUs should consider Pro ($129.99/yr). Start with the 14-day free trial — it's the full product, no limitations.",
+        verdict_cta="Try Parallels Free 14 Days",
+        price_from="$99.99/yr", price_summary="Standard $99.99/yr · Pro $129.99/yr · Business $149.99/user/yr",
+        free_plan="14-day free trial", best_for_short="Mac users needing Windows",
+        go="/go/parallels", pricing_url="/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay",
+        review_count="2,341",
+        faqs=[
+            ("Does Parallels Desktop work on Apple Silicon (M1/M2/M3/M4)?", "Yes — Parallels Desktop is fully optimised for Apple Silicon. It runs Windows 11 ARM natively, which Microsoft provides free to Parallels users. Performance on M-chip Macs matches or beats Intel Boot Camp for most workloads."),
+            ("Is Parallels Desktop better than VMware Fusion?", "For most users: yes. Parallels has better Coherence mode, smoother drag-and-drop, and more polished macOS integration. VMware Fusion Pro is now free for personal use, making it a budget option — but Parallels is faster for heavy workloads and has better support."),
+            ("What Windows licence do I need for Parallels?", "Parallels Desktop requires a separate Windows licence. Windows 11 ARM is provided free to Parallels users through Microsoft's program. For Intel Macs, you need a Windows 10/11 licence (~$139 one-time or use an existing licence)."),
+            ("Can I run Parallels Desktop on multiple Macs?", "A Standard licence covers one Mac. Pro and Business plans allow more activations. Business plan ($149.99/user/yr) includes central management and volume licensing."),
+            ("Is Parallels Desktop worth the annual subscription?", "If you need Windows regularly: yes. $99.99/yr is about $8.30/mo — less than most SaaS subscriptions. If you use Windows only a few times a year, consider VMware Fusion (now free) or Boot Camp (Intel Macs only). The 14-day trial lets you decide before paying."),
+        ]
+    ),
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -596,7 +631,7 @@ SLUG_MAP = {
     "nordvpn": "nordvpn", "semrush": "semrush", "pipedrive": "pipedrive",
     "freshbooks": "freshbooks", "canva": "canva", "mailchimp": "mailchimp",
     "slack": "slack", "zoom": "zoom", "salesforce": "salesforce",
-    "xero": "xero",
+    "xero": "xero", "parallels-desktop": "parallels-desktop",
 }
 
 DISPLAY_NAMES = {
@@ -620,6 +655,7 @@ DISPLAY_NAMES = {
     "trello":"Trello","webflow":"Webflow","wix":"Wix","woocommerce":"WooCommerce",
     "xero":"Xero","zapier":"Zapier","zendesk":"Zendesk","zoho":"Zoho CRM",
     "zoho-crm":"Zoho CRM","zoom":"Zoom","datadog":"Datadog",
+    "parallels-desktop":"Parallels Desktop",
 }
 
 LOGO_MAP = {
@@ -667,6 +703,7 @@ LOGO_MAP = {
     "zapier":"https://cdn.simpleicons.org/zapier/ff4a00",
     "zendesk":"https://cdn.simpleicons.org/zendesk/03363d",
     "zoho-crm":"https://cdn.simpleicons.org/zoho/e42527",
+    "parallels-desktop":"https://cdn.simpleicons.org/vmware/607078",
 }
 
 # ─────────────────────────────────────────────────────────────────────────────

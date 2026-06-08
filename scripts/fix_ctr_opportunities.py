@@ -56,10 +56,10 @@ def fix_ramp_page():
         r'\g<1>Ramp Pricing Changes 2026: Bill Pay Fees, Plans & What Changed\2',
         html
     )
-    # Update meta description
+    # Update meta description — complete sentence, no ellipsis, 155 chars
     html = re.sub(
         r'<meta name="description" content="[^"]*[Rr]amp[^"]*">',
-        '<meta name="description" content="Ramp pricing changes in 2026: Bill Pay fees introduced for free plan users in April-June 2026. Current plan costs, what changed, and whether Ramp Plus is worth upgrading for your team.">',
+        '<meta name="description" content="Ramp pricing changes June 2026: Bill Pay fee added for free plan users. Core card free, Ramp Plus $15/user/mo. Every change tracked with dates — updated weekly.">',
         html
     )
     # Update H1 if generic
@@ -176,17 +176,18 @@ def fix_mixpanel_page():
 
     html = re.sub(
         r'<title>[^<]*[Mm]ixpanel[^<]*</title>',
-        '<title>Mixpanel Pricing Changes 2026: Plans, Costs &amp; What Changed</title>',
+        '<title>Mixpanel Pricing 2026: Free (20M Events/mo), Growth $28/mo — Every Change</title>',
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Mm]ixpanel[^"]*(")',
-        r'\g<1>Mixpanel Pricing Changes 2026: Plans, Costs & What Changed\2',
+        r'\g<1>Mixpanel Pricing 2026: Free (20M Events/mo), Growth $28/mo — Every Change\2',
         html
     )
+    # Corrected: free plan is 20M events/month (not 1M) — complete sentence, no ellipsis
     html = re.sub(
         r'<meta name="description" content="[^"]*[Mm]ixpanel[^"]*">',
-        '<meta name="description" content="Mixpanel pricing changes in 2026: free plan now includes 1M events/month. Starter, Growth and Enterprise plan costs, what changed from 2025, and which plan fits your analytics budget.">',
+        '<meta name="description" content="Mixpanel pricing 2026: Free plan gives 20M events/month forever. Growth from $28/mo. Enterprise custom. Event-volume scaling trap and hidden costs exposed.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -278,6 +279,40 @@ def refresh_top_pages():
     print(f"  REFRESHED: dateModified on {count} top-impression pages")
 
 
+def fix_notion_free_plan():
+    p = PAGES / "does-notion-have-a-free-plan-2026-full-breakdown.html"
+    if not p.exists():
+        print("  SKIP: Notion free plan page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Nn]otion[^"]*">',
+        '<meta name="description" content="Yes, Notion has a free plan in 2026. 4 limits catch teams: 10-guest cap, 7-day page history, no automations, no API access. Full breakdown verified June 2026.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: does-notion-have-a-free-plan — complete meta, no ellipsis")
+    return True
+
+
+def fix_sentry_free_plan():
+    p = PAGES / "does-sentry-have-a-free-plan-2026-full-breakdown.html"
+    if not p.exists():
+        print("  SKIP: Sentry free plan page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Ss]entry[^"]*">',
+        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month, session replay, and performance monitoring free forever. Team plan from $26/mo. Full limit breakdown verified.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: does-sentry-have-a-free-plan — complete meta, no ellipsis")
+    return True
+
+
 def main():
     print(f"Fixing CTR opportunities ({TODAY})...")
     print()
@@ -286,10 +321,12 @@ def main():
     fix_nordlayer_page()
     fix_bitwarden_free_plan()
     fix_mixpanel_page()
+    fix_notion_free_plan()
+    fix_sentry_free_plan()
     refresh_top_pages()
     print()
-    print("Done. These fixes target ~374 Ramp impressions + 200 NordLayer/Bitwarden impressions")
-    print("Expected: 20-40 more clicks/month once Google recrawls (usually 3-7 days).")
+    print("Done. Fixes target Ramp 1687 impr + Mixpanel 742 + Notion 557 + Sentry 528 impressions")
+    print("Expected: 30-60 more clicks/month once Google recrawls (usually 3-7 days).")
 
 
 if __name__ == "__main__":
