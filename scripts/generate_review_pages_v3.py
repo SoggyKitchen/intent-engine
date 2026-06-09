@@ -762,6 +762,7 @@ def build_tokens(data, slug):
     score = data["score"]
     t = {}
     t["TOOL_NAME"] = data["name"]
+    t["TOOL_NAME_INITIAL"] = data["name"][0].upper()
     t["TOOL_LOGO_URL"] = data["logo"]
     t["TOOL_GO_LINK"] = data.get("go", f"/go/{slug}")
     t["TOOL_PRICING_URL"] = data.get("pricing_url", f"/pages/{slug}-pricing-2026-plans-costs-what-you-actually-pay")

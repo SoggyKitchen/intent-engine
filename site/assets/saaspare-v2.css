@@ -272,7 +272,7 @@ body.sp-bg{position:static!important;inset:auto!important;pointer-events:auto!im
 /* ── SECTION ─────────────────────────────────────────────────────── */
 .sp-section{padding:5.5rem clamp(1.25rem, 4vw, 3rem);position:relative}
 .sp-section-sm{padding:3rem clamp(1.25rem, 4vw, 3rem)}
-.sp-container{max-width:1280px;margin:0 auto;position:relative}
+.sp-container{max-width:1400px;margin:0 auto;position:relative}
 .sp-container-narrow{max-width:880px;margin:0 auto}
 .sp-divider{height:1px;background:linear-gradient(90deg, transparent, var(--line-pink), transparent);margin:3rem 0}
 
