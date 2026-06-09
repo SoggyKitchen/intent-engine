@@ -46,8 +46,8 @@ def fix_ramp_page():
 
     # 1. Update title to include "Pricing Changes"
     html = re.sub(
-        r'<title>Ramp Pricing 2026: Plans, Costs[^<]*</title>',
-        '<title>Ramp Pricing Changes 2026: Bill Pay Fees, Plans &amp; What Changed</title>',
+        r'<title>Ramp Pricing 2026[^<]*</title>',
+        '<title>Ramp Pricing Changes 2026: Bill Pay Fees, Plans &amp; What Changed (June 2026)</title>',
         html
     )
     # Update og:title
