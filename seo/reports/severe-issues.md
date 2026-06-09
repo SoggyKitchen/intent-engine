@@ -50,7 +50,7 @@
 - `/pages/7-best-aws-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
 - `/pages/7-best-bamboohr-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
 - `/pages/7-best-bigcommerce-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
-- `/pages/7-best-canva-alternatives-in-2026-free-paid` (alternatives, 81.59/100): broken_internal_link
+- `/pages/7-best-canva-alternatives-in-2026-free-paid` (alternatives, 81.61/100): broken_internal_link
 - `/pages/7-best-cisco-anyconnect-alternatives-in-2026-free-paid` (alternatives, 86.5/100): broken_internal_link
 - `/pages/7-best-clickup-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
 - `/pages/7-best-crowdstrike-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
@@ -90,7 +90,7 @@
 - `/pages/7-best-woocommerce-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
 - `/pages/7-best-workday-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
 - `/pages/7-best-xero-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
-- `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (alternatives, 81.63/100): broken_internal_link
+- `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (alternatives, 81.62/100): broken_internal_link
 - `/pages/7-best-zoho-crm-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
 - `/pages/7-best-zoom-alternatives-in-2026-free-paid` (alternatives, 87.5/100): broken_internal_link
 - `/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts` (coupon, 83.91/100): broken_internal_link
@@ -105,8 +105,8 @@
 - `/pages/activecampaign-vs-marketo-which-is-better-in-2026` (comparison, 91.34/100): broken_internal_link
 - `/pages/activecampaign-vs-pardot-which-is-better-in-2026` (comparison, 91.35/100): broken_internal_link
 - `/pages/affilae-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 89.72/100): broken_internal_link
-- `/pages/agiloft-vs-icertis-which-is-better-in-2026` (comparison, 89.43/100): broken_internal_link
-- `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 83.88/100): broken_internal_link
+- `/pages/agiloft-vs-icertis-which-is-better-in-2026` (comparison, 89.41/100): broken_internal_link
+- `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 83.89/100): broken_internal_link
 - `/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 84.09/100): broken_internal_link
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 84.18/100): broken_internal_link
 - `/pages/ahrefs-pricing-history-2026` (pricing, 84.14/100): broken_internal_link
@@ -121,7 +121,7 @@
 - `/pages/ahrefs-vs-semrush-which-is-better-in-2026` (comparison, 91.38/100): broken_internal_link
 - `/pages/ahrefs-vs-spyfu-which-is-better-in-2026` (comparison, 91.34/100): broken_internal_link
 - `/pages/ahrefs-vs-surfer-seo-which-is-better-in-2026` (comparison, 91.51/100): broken_internal_link
-- `/pages/ai-tools-pricing-changes-2026` (pricing, 80.53/100): broken_internal_link
+- `/pages/ai-tools-pricing-changes-2026` (pricing, 80.52/100): broken_internal_link
 - `/pages/airbase-vs-divvy-which-is-better-in-2026` (comparison, 89.17/100): broken_internal_link
 - `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, 83.53/100): broken_internal_link
 - `/pages/amplitude-free-trial-2026-how-to-start-what-you-get` (free_trial, 84.08/100): broken_internal_link
@@ -139,10 +139,10 @@
 - `/pages/anthropic-claude-vs-cohere-which-is-better-in-2026` (comparison, 89.62/100): broken_internal_link
 - `/pages/anthropic-claude-vs-hugging-face-which-is-better-in-2026` (comparison, 89.75/100): broken_internal_link
 - `/pages/anthropic-claude-vs-weights-biases-which-is-better-in-2026` (comparison, 89.75/100): broken_internal_link
-- `/pages/around-vs-descript-which-is-better-in-2026` (comparison, 89.42/100): broken_internal_link
+- `/pages/around-vs-descript-which-is-better-in-2026` (comparison, 89.44/100): broken_internal_link
 - `/pages/around-vs-loom-which-is-better-in-2026` (comparison, 89.42/100): broken_internal_link
 - `/pages/around-vs-riverside-fm-which-is-better-in-2026` (comparison, 89.57/100): broken_internal_link
-- `/pages/around-vs-streamyard-which-is-better-in-2026` (comparison, 89.39/100): broken_internal_link
+- `/pages/around-vs-streamyard-which-is-better-in-2026` (comparison, 89.38/100): broken_internal_link
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts` (coupon, 83.87/100): broken_internal_link
 - `/pages/asana-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 82.04/100): broken_internal_link
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 84.54/100): broken_internal_link
@@ -208,7 +208,7 @@
 - `/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025` (best_of, 90.0/100): broken_internal_link
 - `/pages/best-ai-powered-recommendation-intelligence-tools-for-b2b-saas-in-2025` (best_of, 89.0/100): broken_internal_link
 - `/pages/best-ai-tutor-tools-for-education-in-2025` (best_of, 87.5/100): broken_internal_link
-- `/pages/best-ai-voice-generator-2026` (best_of, 86.87/100): broken_internal_link
+- `/pages/best-ai-voice-generator-2026` (best_of, 86.86/100): broken_internal_link
 - `/pages/best-ai-workflow-tools-for-b2b-software-teams-in-2025` (best_of, 90.0/100): broken_internal_link
 - `/pages/best-asana-alternatives-in-2026-free-paid` (alternatives, 84.5/100): broken_internal_link, duplicate_h1
 - `/pages/best-backend-development-tools-for-b2b-saas-teams-in-2025` (best_of, 87.5/100): broken_internal_link
@@ -299,4 +299,4 @@
 - `/pages/best-ecommerce-platform-2026` (best_of, 86.5/100): broken_internal_link, duplicate_h1
 - `/pages/best-ecommerce-platforms-2026` (best_of, 79.67/100): broken_internal_link
 - `/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked` (best_of, 87.5/100): broken_internal_link
-- `/pages/best-elevenlabs-alternatives-in-2026-free-paid` (alternatives, 80.69/100): broken_internal_link
+- `/pages/best-elevenlabs-alternatives-in-2026-free-paid` (alternatives, 80.71/100): broken_internal_link

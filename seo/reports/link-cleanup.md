@@ -1,6 +1,6 @@
 # Link Cleanup
 
-- Pages with broken internal links: 1433
+- Pages with broken internal links: 1434
 - Internal links still containing `.html`: 322
 
 ## Broken Internal Links

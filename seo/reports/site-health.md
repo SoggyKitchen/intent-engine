@@ -1,6 +1,6 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-08T08:22:20+00:00
+Generated: 2026-06-09T06:58:11+00:00
 Mode: `audit`
 
 ## Current Score
@@ -15,8 +15,8 @@ Mode: `audit`
 - Performance/UX: 4.91/5
 
 ## Dashboard Summary
-- Pages scanned: 1450
-- Healthy pages (85+): 1141
+- Pages scanned: 1451
+- Healthy pages (85+): 1142
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
@@ -68,7 +68,7 @@ Mode: `audit`
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.38): CTA=True, affiliateLinks=5, disclosure=True
-- `/pages/best-saas-deals-this-week-2026` (coupon, score 77.72): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/best-saas-deals-this-week-2026` (coupon, score 77.74): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.19): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.2): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.21): CTA=True, affiliateLinks=1, disclosure=True
@@ -79,16 +79,16 @@ Mode: `audit`
 - `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.36): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.36): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.47): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/miro-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.48): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/mixpanel-coupon-2026-discount-codes-promo` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/pandadoc-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/vultr-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/bigcommerce-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/contabo-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/deel-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/getresponse-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/gusto-coupon-2026-discount-codes-promo` (coupon, score 83.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/contabo-coupon-2026-discount-codes-promo` (coupon, score 83.48): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/bigcommerce-coupon-2026-discount-codes-promo` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/deel-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/hetzner-coupon-2026-discount-codes-promo` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/surfshark-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.5): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/getresponse-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/ramp-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/stripe-coupon-2026-discount-codes-promo` (coupon, score 83.52): CTA=True, affiliateLinks=1, disclosure=True

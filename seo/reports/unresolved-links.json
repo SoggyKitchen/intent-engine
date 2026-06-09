@@ -7749,6 +7749,14 @@
   },
   {
     "broken": [
+      "/authors/kaylan-von-papen",
+      "/authors/smith-elly",
+      "/editorial"
+    ],
+    "path": "/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict"
+  },
+  {
+    "broken": [
       "/authors/kaylan-von-papen"
     ],
     "path": "/pages/pardot-vs-convertkit-which-is-better-in-2026"
