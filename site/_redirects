@@ -50,7 +50,8 @@
 /go/asana https://asana.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/atlassian-trello https://trello.com/pricing?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/bamboohr https://www.bamboohr.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/bigcommerce https://www.bigcommerce.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+# BigCommerce affiliate program ended May 2025 — redirecting to Shopify (tracked, $150/sale)
+/go/bigcommerce https://shopify.pxf.io/9VMZje?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/wix https://www.wix.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/bitwarden https://bitwarden.com/pricing/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/bitwarden-business https://bitwarden.com/pricing/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
