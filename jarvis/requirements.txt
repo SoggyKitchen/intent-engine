@@ -1,0 +1,15 @@
+# Jarvis voice stack — install with: pip install -r jarvis/requirements.txt
+
+# Wake word detection (free key at console.picovoice.ai)
+pvporcupine
+pvrecorder
+
+# Speech-to-text (local, offline, private)
+openai-whisper
+
+# Audio recording
+sounddevice
+numpy
+
+# Text-to-speech (fallback to Windows SAPI if not installed)
+pyttsx3
