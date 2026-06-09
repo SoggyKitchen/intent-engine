@@ -1,32 +1,17 @@
 {
   "current_month": "June 2026",
-  "today": "2026-06-08",
-  "titles_rewritten": 4,
-  "descs_rewritten": 25,
-  "dates_refreshed": 0,
+  "today": "2026-06-09",
+  "titles_rewritten": 1,
+  "descs_rewritten": 20,
+  "dates_refreshed": 1161,
   "answers_added": 15,
-  "files_changed": 25,
+  "files_changed": 1176,
   "files_scanned": 1419,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict After We Tested Both"
-    },
-    {
-      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free Plan (20M Events), $28/mo Growth \u2014 Scaling Trap Explained",
-      "after": "Mixpanel Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "NordLayer Pricing 2026: $9\u2013$14/User/Month \u2014 All Plans Compared [Honest Verdict]",
-      "after": "NordLayer Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Ramp Pricing 2026: Every Change Tracked \u2014 Core Free, Plus $15/User [June Update]",
-      "after": "Ramp Pricing 2026 (Tested June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
