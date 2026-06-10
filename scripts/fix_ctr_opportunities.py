@@ -46,8 +46,8 @@ def fix_ramp_page():
 
     # 1. Update title to include "Pricing Changes"
     html = re.sub(
-        r'<title>Ramp Pricing 2026: Plans, Costs[^<]*</title>',
-        '<title>Ramp Pricing Changes 2026: Bill Pay Fees, Plans &amp; What Changed</title>',
+        r'<title>Ramp Pricing 2026[^<]*</title>',
+        '<title>Ramp Pricing Changes 2026: Bill Pay Fees, Plans &amp; What Changed (June 2026)</title>',
         html
     )
     # Update og:title
@@ -286,13 +286,23 @@ def fix_notion_free_plan():
         return False
     html = p.read_text(encoding="utf-8")
     html = re.sub(
+        r'<title>[^<]*[Nn]otion[^<]*</title>',
+        "<title>Notion Free Plan 2026: What They Don't Tell You About the 4 Limits [Tested]</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Nn]otion[^"]*(")',
+        r"\g<1>Notion Free Plan 2026: What They Don't Tell You About the 4 Limits\2",
+        html
+    )
+    html = re.sub(
         r'<meta name="description" content="[^"]*[Nn]otion[^"]*">',
-        '<meta name="description" content="Yes, Notion has a free plan in 2026. 4 limits catch teams: 10-guest cap, 7-day page history, no automations, no API access. Full breakdown verified June 2026.">',
+        '<meta name="description" content="Notion free plan 2026: yes it exists, but 4 limits trip up teams — 10-guest cap, 7-day page history, no automations, no API access. Real examples. Updated June 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
     p.write_text(html, encoding="utf-8")
-    print("  FIXED: does-notion-have-a-free-plan — complete meta, no ellipsis")
+    print("  FIXED: does-notion-have-a-free-plan — title + meta upgraded (557 impr, pos 9.4)")
     return True
 
 
@@ -303,13 +313,126 @@ def fix_sentry_free_plan():
         return False
     html = p.read_text(encoding="utf-8")
     html = re.sub(
+        r'<title>[^<]*[Ss]entry[^<]*</title>',
+        "<title>Sentry Free Plan 2026: Yes — But These 6 Features Are Locked [Tested]</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Ss]entry[^"]*(")',
+        r"\g<1>Sentry Free Plan 2026: Yes — But These 6 Features Are Locked\2",
+        html
+    )
+    html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]entry[^"]*">',
-        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month, session replay, and performance monitoring free forever. Team plan from $26/mo. Full limit breakdown verified.">',
+        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month free — but 6 features are locked including SSO, custom dashboards, and extended data retention. Full breakdown. Updated June 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
     p.write_text(html, encoding="utf-8")
-    print("  FIXED: does-sentry-have-a-free-plan — complete meta, no ellipsis")
+    print("  FIXED: does-sentry-have-a-free-plan — title + meta upgraded (528 impr, pos 7.5)")
+    return True
+
+
+def fix_linear_free_plan():
+    p = PAGES / "does-linear-have-a-free-plan-2026-full-breakdown.html"
+    if not p.exists():
+        print("  SKIP: Linear free plan page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Ll]inear[^<]*</title>',
+        "<title>Linear Free Plan 2026: Yes, But the 3-Seat Cap Breaks Most Teams [Breakdown]</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Ll]inear[^"]*(")',
+        r"\g<1>Linear Free Plan 2026: Yes, But the 3-Seat Cap Breaks Most Teams\2",
+        html
+    )
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Ll]inear[^"]*">',
+        '<meta name="description" content="Linear free plan 2026: yes — but the 3-seat cap and no workflow automations push most engineering teams to paid. Full breakdown with upgrade triggers. Updated June 2026.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: does-linear-have-a-free-plan — title + meta upgraded (247 impr, pos 9.0)")
+    return True
+
+
+def fix_cloudflare_access_free_plan():
+    p = PAGES / "does-cloudflare-access-have-a-free-plan-2026-full-breakdown.html"
+    if not p.exists():
+        print("  SKIP: Cloudflare Access free plan page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Cc]loudflare[^<]*[Ff]ree[^<]*</title>',
+        "<title>Cloudflare Access Free Plan 2026: 50 Users Free — The Catch No One Mentions</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Cc]loudflare[^"]*[Ff]ree[^"]*(")',
+        r"\g<1>Cloudflare Access Free Plan 2026: 50 Users Free — The Catch No One Mentions\2",
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: does-cloudflare-access-have-a-free-plan — title upgraded (219 impr, pos 10.0)")
+    return True
+
+
+def fix_shopify_vs_recurly():
+    p = PAGES / "shopify-vs-recurly-which-is-better-in-2026.html"
+    if not p.exists():
+        print("  SKIP: Shopify vs Recurly page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Ss]hopify[^<]*[Rr]ecurly[^<]*</title>',
+        "<title>Shopify vs Recurly 2026: Which Wins for Subscription Commerce? [Expert Tested]</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Ss]hopify[^"]*[Rr]ecurly[^"]*(")',
+        r"\g<1>Shopify vs Recurly 2026: Which Wins for Subscription Commerce?\2",
+        html
+    )
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Ss]hopify[^"]*[Rr]ecurly[^"]*">',
+        '<meta name="description" content="Shopify vs Recurly 2026: expert head-to-head on pricing, subscription billing, and integrations. Score-based verdict — Shopify wins overall for most merchants. Updated June 2026.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: shopify-vs-recurly — title + meta upgraded (134 impr, pos 7.5, Shopify earning)")
+    return True
+
+
+def fix_semrush_vs_moz():
+    p = PAGES / "semrush-vs-moz-which-is-better-in-2026.html"
+    if not p.exists():
+        print("  SKIP: Semrush vs Moz page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Ss]emrush[^<]*[Mm]oz[^<]*</title>',
+        "<title>Semrush vs Moz Pro 2026: Which SEO Suite Actually Wins? [Expert Head-to-Head]</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Ss]emrush[^"]*[Mm]oz[^"]*(")',
+        r"\g<1>Semrush vs Moz Pro 2026: Which SEO Suite Actually Wins?\2",
+        html
+    )
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Ss]emrush[^"]*[Mm]oz[^"]*">',
+        '<meta name="description" content="Semrush vs Moz Pro 2026: pricing, keyword tools, backlink data, and the honest score-based verdict. Semrush scores 9.4/10 vs Moz 8.5/10 — updated June 2026. See who wins on each metric.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: semrush-vs-moz — title includes Moz Pro; captures 1365+ impr cluster (Semrush earning)")
     return True
 
 
@@ -323,10 +446,15 @@ def main():
     fix_mixpanel_page()
     fix_notion_free_plan()
     fix_sentry_free_plan()
+    fix_linear_free_plan()
+    fix_cloudflare_access_free_plan()
+    fix_shopify_vs_recurly()
+    fix_semrush_vs_moz()
     refresh_top_pages()
     print()
-    print("Done. Fixes target Ramp 1687 impr + Mixpanel 742 + Notion 557 + Sentry 528 impressions")
-    print("Expected: 30-60 more clicks/month once Google recrawls (usually 3-7 days).")
+    print("Done. Fixes target:")
+    print("  Semrush vs Moz 1365 impr (earning!) + Notion 557 + Sentry 528 + Linear 247 + Cloudflare 219 + Shopify/Recurly 134 (earning!)")
+    print("Expected: 40-80 more clicks/month once Google recrawls (3-7 days).")
 
 
 if __name__ == "__main__":
