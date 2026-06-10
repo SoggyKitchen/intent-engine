@@ -53,7 +53,7 @@ TOOL_SCORES = {
 
 # HTML badge injected before </article> or before <section id="verdict"
 SCORE_BADGE_TPL = '''
-<div class="editorial-score" style="background:#f8fafc;border:2px solid #0f172a;border-radius:12px;padding:20px 24px;margin:32px 0;display:flex;align-items:center;gap:20px;max-width:480px;">
+<div class="editorial-score" style="background:rgba(255,255,255,.05);border:2px solid #0f172a;border-radius:12px;padding:20px 24px;margin:32px 0;display:flex;align-items:center;gap:20px;max-width:480px;">
   <div style="text-align:center;min-width:72px;">
     <div style="font-size:2.4rem;font-weight:800;color:#0f172a;line-height:1;">{score}</div>
     <div style="font-size:0.75rem;color:#64748b;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">out of 10</div>

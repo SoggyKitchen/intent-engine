@@ -124,7 +124,8 @@ def _extract_h1(fp: pathlib.Path) -> str | None:
     m = H1_RE.search(html)
     if not m:
         return None
-    return re.sub(r"<[^>]+>", "", m.group(1)).strip()
+    # Tags become a space so a <br> inside the h1 can't glue words together
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(1))).strip()
 
 
 def pick_related(rec: dict, lookup: dict, records: list[dict], n: int = 5) -> list[dict]:

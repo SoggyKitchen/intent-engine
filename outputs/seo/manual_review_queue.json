@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-09T09:11:27+00:00",
+  "generated_at_utc": "2026-06-10T04:49:02+00:00",
   "mode": "apply",
   "pages_flagged": 23,
   "claim_labels_seen": [
@@ -99,7 +99,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a href=\"/go/wix\" class=\"sp-btn sp-btn-primary g"
+          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a rel=\"sponsored nofollow\" href=\"/go/wix\" class"
         }
       ],
       "trust_state_bumped": false
@@ -183,7 +183,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "?</h2> <p style=\"font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem\">30-day money-back guarantee. Full access from day one. Risk-free evaluation.</p> <a href=\"https://nor"
+          "context": "?</h2> <p style=\"font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem\">30-day money-back guarantee. Full access from day one. Risk-free evaluation.</p> <a href=\"/go/nordvpn"
         },
         {
           "label": "money_back_guarantee",
@@ -257,7 +257,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a href=\"/go/wix\" class=\"sp-btn sp-btn-primary g"
+          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a rel=\"sponsored nofollow\" href=\"/go/wix\" class"
         },
         {
           "label": "sla_guarantee",

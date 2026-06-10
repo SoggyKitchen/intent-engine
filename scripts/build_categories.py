@@ -200,7 +200,7 @@ def build_categories_html():
 </script>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{font-family:system-ui,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}}
+body{{font-family:system-ui,sans-serif;background:rgba(255,255,255,.05);color:#1e293b;line-height:1.6}}
 a{{color:inherit;text-decoration:none}}
 header{{background:#fff;border-bottom:1px solid #e2e8f0;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between}}
 .logo{{font-weight:800;font-size:1.25rem;color:#1e293b}}.logo span{{color:#6366f1}}
@@ -212,7 +212,7 @@ nav a:hover{{color:#6366f1}}
 .stats{{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}}
 .stat{{background:rgba(255,255,255,.15);border-radius:8px;padding:.5rem 1.25rem;font-weight:700}}
 .cat-nav{{background:#fff;border-bottom:1px solid #e2e8f0;padding:1rem 2rem;display:flex;gap:1rem;flex-wrap:wrap;position:sticky;top:0;z-index:100}}
-.cat-nav a{{background:#f1f5f9;border-radius:20px;padding:.35rem .85rem;font-size:.85rem;color:#475569;transition:all .2s}}
+.cat-nav a{{background:rgba(255,255,255,.06);border-radius:20px;padding:.35rem .85rem;font-size:.85rem;color:#475569;transition:all .2s}}
 .cat-nav a:hover{{background:#6366f1;color:#fff}}
 main{{max-width:1400px;margin:0 auto;padding:2rem}}
 .category-section{{margin-bottom:3rem}}
@@ -222,13 +222,13 @@ main{{max-width:1400px;margin:0 auto;padding:2rem}}
 .tool-card:hover{{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}}
 .tool-name{{font-weight:700;font-size:.95rem;margin-bottom:.6rem;color:#1e293b}}
 .tags{{display:flex;flex-wrap:wrap;gap:.35rem}}
-.tag{{display:inline-block;background:#f1f5f9;border-radius:12px;padding:.2rem .6rem;font-size:.75rem;color:#475569;transition:background .15s}}
+.tag{{display:inline-block;background:rgba(255,255,255,.06);border-radius:12px;padding:.2rem .6rem;font-size:.75rem;color:#475569;transition:background .15s}}
 .tag:hover{{background:#6366f1;color:#fff}}
-.tag-placeholder{{display:inline-block;background:#f1f5f9;border-radius:12px;padding:.2rem .6rem;font-size:.75rem;color:#94a3b8}}
+.tag-placeholder{{display:inline-block;background:rgba(255,255,255,.06);border-radius:12px;padding:.2rem .6rem;font-size:.75rem;color:#94a3b8}}
 .az-section{{background:#fff;border-radius:12px;padding:2rem;margin-top:2rem;box-shadow:0 1px 3px rgba(0,0,0,.08)}}
 .az-section h2{{font-size:1.25rem;font-weight:700;margin-bottom:1rem;color:#1e293b}}
 .az-links{{display:flex;flex-wrap:wrap;gap:.5rem}}
-.az-link{{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:.35rem .75rem;font-size:.85rem;color:#475569;transition:all .15s}}
+.az-link{{background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:8px;padding:.35rem .75rem;font-size:.85rem;color:#475569;transition:all .15s}}
 .az-link:hover{{background:#6366f1;color:#fff;border-color:#6366f1}}
 footer{{background:#1e293b;color:#94a3b8;text-align:center;padding:2rem;margin-top:2rem;font-size:.875rem}}
 footer a{{color:#cbd5e1}}

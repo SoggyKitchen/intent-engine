@@ -160,10 +160,10 @@ HEAD = """<!DOCTYPE html>
     table{{width:100%;border-collapse:collapse;margin:20px 0;font-size:.9rem}}
     th{{background:#0f172a;color:#fff;padding:12px 14px;text-align:left}}
     td{{padding:12px 14px;border-bottom:1px solid #e2e8f0;vertical-align:top}}
-    tr:nth-child(even){{background:#f8fafc}}
-    .alert-red{{background:#fef2f2;border-left:4px solid #dc2626;padding:18px 22px;margin:24px 0;border-radius:0 8px 8px 0}}
-    .alert-orange{{background:#fff7ed;border-left:4px solid #ea580c;padding:18px 22px;margin:24px 0;border-radius:0 8px 8px 0}}
-    .alert-green{{background:#f0fdf4;border-left:4px solid #16a34a;padding:18px 22px;margin:24px 0;border-radius:0 8px 8px 0}}
+    tr:nth-child(even){{background:rgba(255,255,255,.05)}}
+    .alert-red{{background:rgba(220,38,38,.12);border-left:4px solid #dc2626;padding:18px 22px;margin:24px 0;border-radius:0 8px 8px 0}}
+    .alert-orange{{background:rgba(234,88,12,.12);border-left:4px solid #ea580c;padding:18px 22px;margin:24px 0;border-radius:0 8px 8px 0}}
+    .alert-green{{background:rgba(34,197,94,.10);border-left:4px solid #16a34a;padding:18px 22px;margin:24px 0;border-radius:0 8px 8px 0}}
     .alert-label{{font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700;margin-bottom:8px}}
     .change-card{{border:1px solid #e2e8f0;border-left:4px solid #dc2626;border-radius:8px;padding:20px 22px;margin:18px 0;background:#fff}}
     .change-card .head{{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:10px}}
@@ -171,11 +171,11 @@ HEAD = """<!DOCTYPE html>
     .change-card .pct{{background:#dc2626;color:#fff;font-weight:700;padding:4px 10px;border-radius:4px;font-size:.85rem}}
     .change-card .when{{font-size:.82rem;color:#64748b;margin-top:-4px}}
     .change-card .delta{{font-size:.92rem;margin:8px 0;color:#475569}}
-    .change-card .alt{{background:#f0fdf4;border-radius:6px;padding:10px 14px;margin-top:10px;font-size:.9rem;color:#166534}}
+    .change-card .alt{{background:rgba(34,197,94,.10);border-radius:6px;padding:10px 14px;margin-top:10px;font-size:.9rem;color:#86efac}}
     .cta-box{{background:#0f172a;color:#fff;border-radius:12px;padding:24px;margin:36px 0;text-align:center}}
     .cta-box h3{{color:#fff;margin:0 0 8px}}
     .cta-btn{{display:inline-block;background:#fff;color:#0f172a;padding:11px 22px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:12px}}
-    .site-footer{{background:#f8fafc;border-top:1px solid #e2e8f0;padding:36px 24px;text-align:center;color:#64748b;font-size:.85rem}}
+    .site-footer{{background:rgba(255,255,255,.05);border-top:1px solid #e2e8f0;padding:36px 24px;text-align:center;color:#64748b;font-size:.85rem}}
     .site-footer a{{color:#64748b;margin:0 10px;text-decoration:none}}
   </style>
 {extra_schema}
@@ -218,7 +218,7 @@ def build_price_hike_watch():
       <div class="when"><strong>{h['month']}</strong> &middot; {h['category']}</div>
       <div class="delta"><strong>Before:</strong> {h['old']}<br><strong>After:</strong> {h['new']}</div>
       <p style="margin:8px 0 0;color:#475569;font-size:.9rem;">{h['reason']}</p>
-      <div class="alt">💡 <strong>Cheaper alternative:</strong> {h['alternative']} &middot; {h['alt_savings']} &middot; <a href="/pages/cheaper-alternative-to-{h['key']}-after-price-hike-2026" style="color:#166534;font-weight:600;">See full comparison →</a></div>
+      <div class="alt">💡 <strong>Cheaper alternative:</strong> {h['alternative']} &middot; {h['alt_savings']} &middot; <a href="/pages/cheaper-alternative-to-{h['key']}-after-price-hike-2026" style="color:#86efac;font-weight:600;">See full comparison →</a></div>
     </div>"""
 
     schema = f"""
@@ -342,7 +342,7 @@ def build_grandfathered_page():
   </script>"""
 
     body = f"""
-    <div class="meta"><span class="tag" style="background:#f1f5f9;color:#475569;">Pricing Intelligence</span><span>Updated {TODAY}</span><span>By <a href="/authors/smith-elly">Smith Elly</a></span></div>
+    <div class="meta"><span class="tag" style="background:rgba(255,255,255,.06);color:#475569;">Pricing Intelligence</span><span>Updated {TODAY}</span><span>By <a href="/authors/smith-elly">Smith Elly</a></span></div>
     <h1>Grandfathered SaaS Pricing 2026: Which Tools Honor Old Plans</h1>
 
     <div class="alert-green">

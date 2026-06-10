@@ -31,7 +31,7 @@ ANSWER_RE = re.compile(
 
 
 def strip(s: str) -> str:
-    s = re.sub(r"<[^>]+>", "", s or "")
+    s = re.sub(r"<[^>]+>", " ", s or "")
     s = re.sub(r"\s+", " ", s).strip()
     # Decode common HTML entities
     s = s.replace("&amp;", "&").replace("&#x27;", "'").replace("&quot;", '"')

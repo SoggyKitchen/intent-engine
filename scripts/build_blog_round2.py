@@ -255,7 +255,7 @@ def render_post(post: dict) -> str:
       <div class="faq-block">
 {faq_html}      </div>
 
-      <aside style="background:#f8fafc;border:1px solid #e2e8f0;padding:1rem 1.25rem;border-radius:8px;margin-top:2rem;">
+      <aside style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;padding:1rem 1.25rem;border-radius:8px;margin-top:2rem;">
         <strong>Related reading:</strong> {links_html}
       </aside>
     </article>

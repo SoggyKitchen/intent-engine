@@ -735,11 +735,13 @@ def build_comparison_tokens(tools_data):
 
 def generate_faqs(title, tools_list, category):
     """Generate contextual FAQs based on page content."""
-    top = tools_list[0] if tools_list else category
-    second = tools_list[1] if len(tools_list) > 1 else "Alternatives"
+    # Never name a padded "Option #N" placeholder in FAQ copy
+    real = [t for t in tools_list if not t.startswith("Option #")]
+    top = real[0] if real else category
+    second = real[1] if len(real) > 1 else ""
     return {
         "FAQ_1_Q": f"What is the best {category} in 2026?",
-        "FAQ_1_A": f"Based on our testing, {top} is the top-rated {category} in 2026 — best combination of features, pricing, and ease of use. {second} is a strong alternative if you need different strengths.",
+        "FAQ_1_A": f"Based on our research, {top} is the top-rated {category} in 2026 — best combination of features, pricing, and ease of use." + (f" {second} is a strong alternative if you need different strengths." if second else ""),
         "FAQ_2_Q": f"Which {category} has the best free plan?",
         "FAQ_2_A": f"Several {category} tools offer free plans. Check each tool's pricing page — we verify pricing weekly and note exactly what's included in the free tier and what requires a paid upgrade.",
         "FAQ_3_Q": f"How do we score and rank these tools?",
@@ -775,7 +777,9 @@ def generate_page(input_path, output_path, template_html):
     # Sort by score descending
     resolved.sort(key=lambda x: -x[1]["score"])
 
-    # Pad to 6 tools if needed (repeat last or add generics)
+    # Pad to 6 token slots so the template fills, but placeholder "Option #N"
+    # cards are stripped from the final HTML below (anti-fabrication rule:
+    # never ship invented tools/scores).
     while len(resolved) < 6:
         idx = len(resolved) + 1
         generic_name = f"Option #{idx}"
@@ -793,11 +797,13 @@ def generate_page(input_path, output_path, template_html):
     tokens["HERO_LEAD"] = description
     tokens["STICKY_CTA_TEXT"] = f"{title} — Compare your top picks and choose with confidence."
     tokens["STAT_1_NUM"] = str(len(tool_names)) if tool_names else "6"
-    tokens["STAT_1_LABEL"] = f"{category}s tested"
-    tokens["STAT_2_NUM"] = "47"
-    tokens["STAT_2_LABEL"] = "Data points"
-    tokens["STAT_3_NUM"] = "200+"
-    tokens["STAT_3_LABEL"] = "Buyers surveyed"
+    tokens["STAT_1_LABEL"] = f"{category}s compared"
+    # Honest trust stats only — never ship invented survey/data-point numbers
+    # (anti-fabrication rule: unverified = label it or omit it)
+    tokens["STAT_2_NUM"] = "100%"
+    tokens["STAT_2_LABEL"] = "Independent research"
+    tokens["STAT_3_NUM"] = "0"
+    tokens["STAT_3_LABEL"] = "Paid placements"
     tokens["STAT_4_NUM"] = str(min(6, len(resolved)))
     tokens["STAT_4_LABEL"] = "Final picks"
 
@@ -835,6 +841,10 @@ def generate_page(input_path, output_path, template_html):
         # Fill any remaining with empty string
         for r in set(remaining):
             out = out.replace(r, "")
+
+    # Strip fabricated "Option #N" placeholder cards before writing
+    from strip_placeholder_cards import strip_placeholder_html
+    out = strip_placeholder_html(out)
 
     output_path.write_text(out, encoding="utf-8")
     return True, f"{len(resolved)} tools, {len(remaining)} tokens cleaned"

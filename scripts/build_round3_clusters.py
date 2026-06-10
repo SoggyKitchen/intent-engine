@@ -544,7 +544,7 @@ def make_review_page(slug: str, d: dict) -> str:
       <h1>{d['display']} Review {YEAR}: Is It Worth It? (Honest Verdict)</h1>
       <p class="byline">By Smith Elly &middot; Updated {TODAY} &middot; <a href="/about#methodology">Methodology</a></p>
 
-      <div class="quick-verdict" style="background:#f0fdf4;border-left:4px solid #16a34a;padding:1rem 1.25rem;margin:1.5rem 0;border-radius:4px;">
+      <div class="quick-verdict" style="background:rgba(34,197,94,.10);border-left:4px solid #16a34a;padding:1rem 1.25rem;margin:1.5rem 0;border-radius:4px;">
         <strong>Quick verdict:</strong> {d['verdict']}
         <br><span style="font-size:1.5rem;color:#f59e0b;">{stars_html}</span> <strong>{d['rating']}/5</strong> &mdash; based on {d['rating_count']:,} reviews
       </div>
@@ -586,7 +586,7 @@ def make_review_page(slug: str, d: dict) -> str:
         {faq_items_html}
       </div>
 
-      <aside style="background:#f8fafc;border:1px solid #e2e8f0;padding:1rem;border-radius:8px;margin-top:2rem;">
+      <aside style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;padding:1rem;border-radius:8px;margin-top:2rem;">
         <strong>See also:</strong>
         <a href="/pages/{slug}-pricing-{YEAR}-plans-costs-what-you-actually-pay">{d['display']} Pricing {YEAR}</a> &middot;
         <a href="/pages/{slugify(d['alt_tool'])}-review-{YEAR}-is-it-worth-it-honest-verdict">{d['alt_tool']} Review {YEAR}</a> &middot;
@@ -644,7 +644,7 @@ def make_free_trial_page(slug: str, d: dict) -> str:
       <h1>{d['display']} Free Trial {YEAR}: What You Get &amp; How to Start</h1>
       <p class="byline">By Smith Elly &middot; Updated {TODAY} &middot; <a href="/about#methodology">Methodology</a></p>
 
-      <div class="quick-answer" style="background:#eff6ff;border-left:4px solid #3b82f6;padding:1rem 1.25rem;margin:1.5rem 0;">
+      <div class="quick-answer" style="background:rgba(59,130,246,.10);border-left:4px solid #3b82f6;padding:1rem 1.25rem;margin:1.5rem 0;">
         <strong>Quick answer:</strong> {d['what_you_get']}
       </div>
 
@@ -673,7 +673,7 @@ def make_free_trial_page(slug: str, d: dict) -> str:
         <span style="font-size:.85rem;color:#666;margin-left:.75rem;">* Affiliate link.</span>
       </p>
 
-      <aside style="margin-top:2rem;padding:1rem;background:#f8fafc;border-radius:8px;">
+      <aside style="margin-top:2rem;padding:1rem;background:rgba(255,255,255,.05);border-radius:8px;">
         <strong>Related:</strong>
         <a href="/pages/{slug}-pricing-{YEAR}-plans-costs-what-you-actually-pay">{d['display']} Pricing {YEAR}</a> &middot;
         <a href="/pages/{slug}-review-{YEAR}-is-it-worth-it-honest-verdict">{d['display']} Review {YEAR}</a>
@@ -728,7 +728,7 @@ def make_coupon_page(slug: str, d: dict) -> str:
       <h1>{d['display']} Coupon Code {YEAR}: Working Discounts &amp; Promo Codes</h1>
       <p class="byline">By Smith Elly &middot; Verified {TODAY} &middot; <a href="/about#methodology">Methodology</a></p>
 
-      <div class="quick-answer" style="background:#fefce8;border-left:4px solid #f59e0b;padding:1rem 1.25rem;margin:1.5rem 0;">
+      <div class="quick-answer" style="background:rgba(250,204,21,.10);border-left:4px solid #f59e0b;padding:1rem 1.25rem;margin:1.5rem 0;">
         <strong>Current best deal:</strong> {d['tip']}
       </div>
 
@@ -754,7 +754,7 @@ def make_coupon_page(slug: str, d: dict) -> str:
         <span style="font-size:.85rem;color:#666;margin-left:.75rem;">* Affiliate link.</span>
       </p>
 
-      <aside style="margin-top:2rem;padding:1rem;background:#f8fafc;border-radius:8px;">
+      <aside style="margin-top:2rem;padding:1rem;background:rgba(255,255,255,.05);border-radius:8px;">
         <strong>Related:</strong>
         <a href="/pages/{slug}-pricing-{YEAR}-plans-costs-what-you-actually-pay">{d['display']} Pricing {YEAR}</a> &middot;
         <a href="/pages/{slug}-review-{YEAR}-is-it-worth-it-honest-verdict">{d['display']} Review {YEAR}</a>
