@@ -219,6 +219,12 @@ jobs:
         run: uv run python scripts/fix_inject_ui_css.py
         continue-on-error: true
 
+      # 4i-logos. Replace broken SimpleIcons slugs with real brand logos
+      # (Google favicon service). ~200 brands were removed from SimpleIcons.
+      - name: Fix broken logo URLs with real brand logos
+        run: uv run python scripts/fix_logo_urls.py
+        continue-on-error: true
+
       # 4i-ctr. CTR Optimizer — find pages ranking 8-20 with low CTR,
       # rewrite <title> and <meta description> with power words + year + brackets.
       # Uses data/gsc_export.csv if present, otherwise applies to known opportunity pages.
