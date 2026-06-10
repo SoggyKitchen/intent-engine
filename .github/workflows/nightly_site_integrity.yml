@@ -231,6 +231,12 @@ jobs:
         run: uv run python scripts/fix_light_theme_blocks.py
         continue-on-error: true
 
+      # 4i-orphan. Remove orphaned </script> tails (leftover JSON-LD fragments)
+      # that browsers relocate into <body> as visible stray "]" characters.
+      - name: Remove orphaned script tails
+        run: uv run python scripts/fix_orphan_script_tails.py
+        continue-on-error: true
+
       # 4i-ctr. CTR Optimizer — find pages ranking 8-20 with low CTR,
       # rewrite <title> and <meta description> with power words + year + brackets.
       # Uses data/gsc_export.csv if present, otherwise applies to known opportunity pages.
