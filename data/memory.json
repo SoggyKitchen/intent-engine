@@ -333,6 +333,31 @@
         "ACTION: Check Impact.com (account 7269601) for HubSpot, 1Password, Wix status",
         "MONITOR: Check GSC in 21 days for CTR improvements on twingate/cloudflare/hetzner pages"
       ]
+    },
+    {
+      "date": "2026-06-10",
+      "session": "ceo-daily",
+      "gmail_findings": {
+        "awin": "Fiverr already activated in prior session (awinmid=6288, awinaffid=2917137, /go/fiverr live)",
+        "freshbooks_awin": "REJECTED (2026-06-01). PartnerStack application submitted 2026-06-09 via partnerships@saaspare.org",
+        "impact": "Still only partnered with Semrush \u2014 HubSpot/1Password/Monday still PENDING",
+        "wix": "Contract application sent via Impact.com (pending approval)",
+        "xero": "No email response yet"
+      },
+      "ctr_fixes": [
+        "ramp-pricing: title + meta updated to target ramp pricing change june 2026 (pos 3.7, 121 impr, 0 clicks)",
+        "mixpanel-pricing: title + meta updated to surface 20M events free (742 impr, pos 13.7, 0 CTR)",
+        "does-notion-have-free-plan: meta sharpened \u2014 4 limits angle + june freshness (557 impr, pos 9.4)",
+        "does-sentry-have-free-plan: title + meta \u2014 5K errors specific, june freshness (528 impr, pos 7.5)"
+      ],
+      "new_page": "does-elevenlabs-have-a-free-plan-2026-full-breakdown.html \u2014 ElevenLabs active affiliate, free plan breakdown, 6 locked features, full FAQ schema",
+      "revenue_leaks": "Clean \u2014 no direct vendor hrefs found",
+      "tests": "57/57 passed",
+      "notes": [
+        "ramp pricing change june 2026 at pos 3.7 with 121 impr and 0 clicks is the biggest immediate CTR fix \u2014 title now explicitly includes june",
+        "Semrush vs Moz queries ranking 60-82 with 278-269 impressions \u2014 deep work needed but long-term play",
+        "ElevenLabs does-have-free-plan format mirrors proven Notion/Sentry traffic pattern"
+      ]
     }
   ]
 }
