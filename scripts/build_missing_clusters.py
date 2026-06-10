@@ -424,7 +424,7 @@ def build_review_page(key, data):
     extra = schema_article(title, desc, slug, TODAY) + schema_product(data["display"], score, count, slug) + faq_schema(faqs)
     body = f"""
     <div class="meta"><span class="tag">{data['category']}</span><span>Updated {TODAY}</span><span>By <a href="/authors/smith-elly">Smith Elly</a></span></div>
-    <h1>{data['display']} Review {YEAR}: Honest Verdict After Real-World Testing</h1>
+    <h1>{data['display']} Review {YEAR}: Honest Verdict & Real Pricing</h1>
     <div class="score-badge"><div><div class="score-num">{score}</div><div class="score-label">out of 10</div></div>
     <div><strong style="display:block">SaaSpare Editorial Score</strong><small style="color:#64748b">Based on pricing, features, support, and value. {count} user reviews considered. Updated {TODAY}.</small></div></div>
     <div class="quick-answer"><div class="qa-label">Quick Answer</div>
