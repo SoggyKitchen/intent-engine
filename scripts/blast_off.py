@@ -215,7 +215,8 @@ def add_featured_answer(html: str, page_kind: str) -> str:
     h1_match = H1_RE.search(html)
     if not h1_match:
         return html
-    topic = re.sub(r"<[^>]+>", "", h1_match.group(1)).strip()
+    # Replace tags with a space (a <br> inside the h1 must not glue words together)
+    topic = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h1_match.group(1))).strip()
     # Strip trailing parens like "(Updated May 2026)" from the topic
     topic = re.sub(r"\s*\([^)]*\)\s*$", "", topic).strip()
     note = "the published Pro/Standard plan"  # generic; real pricing data lives in body

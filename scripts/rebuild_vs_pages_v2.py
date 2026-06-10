@@ -161,9 +161,22 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
     title     = f"{name_a} vs {name_b} ({YEAR}): Honest Verdict & Who Wins"
     winner    = name_a if score_a >= score_b else name_b
     winner_score = max(score_a, score_b)
+    tie       = score_a == score_b
+    # Fallback tool entries carry a "{Name} — B2B SaaS tool" tag; that reads as
+    # placeholder copy inside "Choose X for ..." sentences, so swap in an
+    # honest generic fit phrase instead.
+    fit_a = tag_a.split(',')[0].strip()
+    fit_b = tag_b.split(',')[0].strip()
+    if fit_a.endswith("— B2B SaaS tool"):
+        fit_a = "teams already invested in its ecosystem"
+    if fit_b.endswith("— B2B SaaS tool"):
+        fit_b = "teams already invested in its ecosystem"
     # AEO: lead the meta with the answer (winner + real score) — AI engines and
     # SERP scanners pull the first direct answer, boilerplate metas get skipped.
-    desc      = f"Bottom line: {winner} wins ({winner_score}/10). {name_a} vs {name_b} compared on pricing and features — score-based verdict, no paid placements. {YEAR}."
+    if tie:
+        desc = f"Bottom line: it's a tie ({winner_score}/10 each). {name_a} vs {name_b} compared on pricing and features — score-based verdict, no paid placements. {YEAR}."
+    else:
+        desc = f"Bottom line: {winner} wins ({winner_score}/10). {name_a} vs {name_b} compared on pricing and features — score-based verdict, no paid placements. {YEAR}."
     winner_url = url_a if score_a >= score_b else url_b
     winner_icon = icon_a if score_a >= score_b else icon_b
     winner_col  = col_a  if score_a >= score_b else col_b
@@ -173,7 +186,7 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 
     faq_pairs = [
         (f"Is {name_a} better than {name_b}?",
-         f"{'Yes' if score_a >= score_b else 'It depends'} — {name_a} scores {score_a}/10 vs {name_b}'s {score_b}/10 in our testing. {name_a} is better for {tag_a.split(',')[0].strip()}. {name_b} is the better choice if {tag_b.split(',')[0].strip()}."),
+         f"{'It is close' if tie else ('Yes' if score_a > score_b else 'It depends')} — {name_a} scores {score_a}/10 vs {name_b}'s {score_b}/10 in our editorial scoring. {name_a} is better for {fit_a}. {name_b} is the better choice if {fit_b}."),
         (f"How much does {name_a} cost vs {name_b}?",
          f"{name_a} starts at {price_a}. {name_b} starts at {price_b}. Both offer trial periods: {name_a} ({free_a}), {name_b} ({free_b})."),
         (f"Can I try {name_a} and {name_b} for free?",
@@ -190,6 +203,13 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
         if url:
             return f'<a href="{url}" target="_blank" rel="noopener sponsored" class="{cls} glint-button">{label} →</a>'
         return f'<a href="/shortlist" class="{cls.replace("sp-btn-primary","sp-btn-secondary")} glint-button">Compare in Shortlist Builder →</a>'
+
+    def cta_pair(u_a, u_b, label_a, label_b):
+        # If neither tool has an affiliate URL, both buttons collapse to the
+        # same Shortlist fallback — render it once instead of twice.
+        if not u_a and not u_b:
+            return cta_btn(None, "")
+        return cta_btn(u_a, label_a) + "\n              " + cta_btn(u_b, label_b, "sp-btn sp-btn-ghost")
 
     def winner_cta():
         if winner_url:
@@ -322,7 +342,7 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
         <!-- QUICK ANSWER -->
         <div class="qa-block reveal-up">
           <h3><span class="sp-badge sp-badge-pink">TL;DR</span> Quick Answer</h3>
-          <p><strong>{winner}</strong> wins overall — scoring {max(score_a, score_b)}/10 in our testing. Choose <strong>{name_a}</strong> for {tag_a.split(',')[0].strip()}. Choose <strong>{name_b}</strong> for {tag_b.split(',')[0].strip()}. Both offer risk-free trials.</p>
+          <p>{f"It's a tie — both score {score_a}/10 in our editorial scoring." if tie else f"<strong>{winner}</strong> wins overall — scoring {winner_score}/10 in our editorial scoring."} Choose <strong>{name_a}</strong> for {fit_a}. Choose <strong>{name_b}</strong> for {fit_b}. Both offer risk-free trials.</p>
         </div>
 
         <!-- HEAD-TO-HEAD SCORE BARS -->
@@ -464,8 +484,7 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
               <li><strong>Choose {name_b}</strong> if you need {tag_b.split(',')[0].strip()}. Starting at {price_b}, with {free_b}.</li>
             </ul>
             <div class="cta-stack" style="margin-top:1.5rem">
-              {cta_btn(url_a, f"Try {name_a}")}
-              {cta_btn(url_b, f"Try {name_b}", "sp-btn sp-btn-ghost")}
+              {cta_pair(url_a, url_b, f"Try {name_a}", f"Try {name_b}")}
             </div>
           </div>
 
@@ -491,8 +510,7 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
             </tbody>
           </table>
           <div class="cta-stack">
-            {cta_btn(url_a, f"Get {name_a}")}
-            {cta_btn(url_b, f"Get {name_b}", "sp-btn sp-btn-ghost")}
+            {cta_pair(url_a, url_b, f"Get {name_a}", f"Get {name_b}")}
           </div>
         </div>
 
