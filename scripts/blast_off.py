@@ -197,10 +197,10 @@ def refresh_dates(html: str) -> str:
 FEATURED_ANSWER_MARKER = '<div class="featured-answer" data-aeo-answer>'
 ANSWER_TEMPLATES = {
     "pricing":      "{topic} pricing in {month}: plans start at the entry tier with the most-quoted real-world cost being {note}. Hidden fees apply on per-seat add-ons and annual contracts. We track every pricing change and call out the traps below.",
-    "comparison":   "After testing both in {month}: pick {topic} if you prioritise depth and integrations; pick the alternative if you prioritise speed and lower seat cost. Full side-by-side breakdown — pricing, features, real-world fit — is below.",
+    "comparison":   "Compared in {month}: pick {topic} if you prioritise depth and integrations; pick the alternative if you prioritise speed and lower seat cost. Full side-by-side breakdown — pricing, features, real-world fit — is below.",
     "bestof":       "Every {topic} below was verified in {month} on real pricing, real free-trial paths, and real customer fit. No paid placements; rankings are editorial.",
-    "alternatives": "If you're leaving {topic}, the strongest 2026 alternatives are below — ranked on real pricing, ease of switch, and feature parity. Updated {month}.",
-    "review":       "Verdict after testing in {month}: {topic} is worth it if your team needs the specific features below — otherwise a cheaper alternative covers the same ground. Real pricing, real pros and cons, no fluff.",
+    "alternatives": "Switching away? The strongest 2026 alternatives are below — ranked on real pricing, ease of switch, and feature parity. Updated {month}.",
+    "review":       "Verdict as of {month}: {topic} is worth it if your team needs the specific features below — otherwise a cheaper alternative covers the same ground. Real pricing, real pros and cons, no fluff.",
     "freetrial":    "Yes, {topic} offers a real free trial in {month}. Here's the exact step-by-step to start without giving them your card up front, plus the trial terms most articles get wrong.",
     "coupon":       "{topic} coupon codes for {month}, all manually verified by us before listing. Expired codes are removed within 24 hours; vendors do not pay us to list codes.",
     "default":      "Independent verdict on {topic}, updated {month}. Real pricing pulled from vendor pages, honest pros and cons, and no paid placements.",

@@ -793,11 +793,13 @@ def generate_page(input_path, output_path, template_html):
     tokens["HERO_LEAD"] = description
     tokens["STICKY_CTA_TEXT"] = f"{title} — Compare your top picks and choose with confidence."
     tokens["STAT_1_NUM"] = str(len(tool_names)) if tool_names else "6"
-    tokens["STAT_1_LABEL"] = f"{category}s tested"
-    tokens["STAT_2_NUM"] = "47"
-    tokens["STAT_2_LABEL"] = "Data points"
-    tokens["STAT_3_NUM"] = "200+"
-    tokens["STAT_3_LABEL"] = "Buyers surveyed"
+    tokens["STAT_1_LABEL"] = f"{category}s compared"
+    # Honest trust stats only — never ship invented survey/data-point numbers
+    # (anti-fabrication rule: unverified = label it or omit it)
+    tokens["STAT_2_NUM"] = "100%"
+    tokens["STAT_2_LABEL"] = "Independent research"
+    tokens["STAT_3_NUM"] = "0"
+    tokens["STAT_3_LABEL"] = "Paid placements"
     tokens["STAT_4_NUM"] = str(min(6, len(resolved)))
     tokens["STAT_4_LABEL"] = "Final picks"
 

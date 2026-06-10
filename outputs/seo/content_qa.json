@@ -1,29 +1,19 @@
 {
-  "generated_at": "2026-06-10T01:14:50.506659+00:00",
+  "generated_at": "2026-06-10T01:19:17.671143+00:00",
   "stats": {
     "sitemap_urls": 1462,
     "sitemap_with_lastmod": 1462,
     "total_pages": 1479,
     "indexable_pages": 1467,
     "title_over_70": 97,
-    "soft": 64,
     "desc_over_165": 8,
     "money_pages": 1202,
+    "soft": 54,
     "duplicate_titles": 12,
     "duplicate_descs": 9
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/cookie-policy.html: title <30 chars (24)",
-    "site/corrections.html: title <30 chars (29)",
-    "site/corrections.html: meta desc <80 chars (78)",
-    "site/editorial-policy.html: title <30 chars (27)",
-    "site/pages/best-1password-alternatives-in-2026-free-paid.html: 2 <h1> tags (should be 1)",
-    "site/pages/best-accounting-software-for-small-business-2026.html: 2 <h1> tags (should be 1)",
-    "site/pages/best-ahrefs-alternatives-in-2026-free-paid.html: 2 <h1> tags (should be 1)",
-    "site/pages/best-asana-alternatives-in-2026-free-paid.html: 2 <h1> tags (should be 1)",
-    "site/pages/best-clickup-alternatives-in-2026-free-paid.html: 2 <h1> tags (should be 1)",
-    "site/pages/best-crm-software-2026.html: 2 <h1> tags (should be 1)",
     "site/pages/best-datadog-alternatives-in-2026-free-paid.html: 2 <h1> tags (should be 1)",
     "site/pages/best-deel-alternatives-in-2026-free-paid.html: 2 <h1> tags (should be 1)",
     "site/pages/best-ecommerce-platform-2026.html: 2 <h1> tags (should be 1)",
@@ -79,5 +69,5 @@
     "duplicate description (2 pages): \"Updated June 2026. Best Pandadoc discount codes and promo of\" — ['site/pages/pandadoc-coupon-2026-discount-codes-promo.html', 'site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html']",
     "duplicate description (2 pages): \"Updated June 2026. Best Salesforce discount codes and promo \" — ['site/pages/salesforce-coupon-2026-discount-codes-promo.html', 'site/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work.html']"
   ],
-  "soft_issues_total": 64
+  "soft_issues_total": 54
 }
