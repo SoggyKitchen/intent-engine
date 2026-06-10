@@ -1327,10 +1327,7 @@
     "broken": [
       "/editorial",
       "/pages/amplitude-pricing-history-2026",
-      "/pages/best-amplitude-alternatives-2026",
-      "/pages/heap-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/pendo-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/posthog-pricing-2026-plans-costs-what-you-actually-pay"
+      "/pages/best-amplitude-alternatives-2026"
     ],
     "path": "/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay"
   },
@@ -1532,8 +1529,7 @@
   {
     "broken": [
       "/editorial",
-      "/pages/aweber-pricing-history-2026",
-      "/pages/mailchimp-vs-activecampaign-which-is-better-in-2026"
+      "/pages/aweber-pricing-history-2026"
     ],
     "path": "/pages/aweber-pricing-2026-plans-costs-what-you-actually-pay"
   },
@@ -1543,6 +1539,12 @@
       "/editorial"
     ],
     "path": "/pages/aweber-review-2026-is-it-worth-it-honest-verdict"
+  },
+  {
+    "broken": [
+      "/authors/kaylan-von-papen"
+    ],
+    "path": "/pages/aweber-vs-mailchimp-which-is-better-in-2026"
   },
   {
     "broken": [
@@ -4120,8 +4122,7 @@
   },
   {
     "broken": [
-      "/editorial",
-      "/pages/mondaycom-pricing-2026-plans-costs-what-you-actually-pay"
+      "/editorial"
     ],
     "path": "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay"
   },
@@ -5001,6 +5002,13 @@
       "/blog/"
     ],
     "path": "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown"
+  },
+  {
+    "broken": [
+      "/authors/kaylan-von-papen",
+      "/blog/"
+    ],
+    "path": "/pages/does-elementor-have-a-free-plan-2026-full-breakdown"
   },
   {
     "broken": [
@@ -6003,11 +6011,7 @@
   {
     "broken": [
       "/editorial",
-      "/pages/best-hubspot-alternatives-2026",
-      "/pages/monday-vs-hubspot",
-      "/pages/pipedrive-vs-hubspot",
-      "/pages/salesforce-vs-hubspot",
-      "/pages/zoho-vs-hubspot"
+      "/pages/best-hubspot-alternatives-2026"
     ],
     "path": "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay"
   },
@@ -6932,10 +6936,7 @@
     "broken": [
       "/editorial",
       "/pages/best-mixpanel-alternatives-2026",
-      "/pages/heap-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/mixpanel-pricing-history-2026",
-      "/pages/pendo-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/posthog-pricing-2026-plans-costs-what-you-actually-pay"
+      "/pages/mixpanel-pricing-history-2026"
     ],
     "path": "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay"
   },
@@ -7421,8 +7422,6 @@
       "/blog/",
       "/editorial",
       "/pages/best-nordvpn-alternatives-2026",
-      "/pages/cyberghost-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/expressvpn-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/nordvpn-pricing-history-2026"
     ],
     "path": "/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay"
@@ -7742,8 +7741,7 @@
   {
     "broken": [
       "/authors/kaylan-von-papen",
-      "/editorial",
-      "/pages/vmware-fusion-pricing-2026-plans-costs-what-you-actually-pay"
+      "/editorial"
     ],
     "path": "/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay"
   },
@@ -8019,8 +8017,6 @@
     "broken": [
       "/editorial",
       "/pages/best-protonvpn-alternatives-2026",
-      "/pages/expressvpn-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/mullvad-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/protonvpn-pricing-history-2026"
     ],
     "path": "/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay"
@@ -8143,11 +8139,7 @@
   {
     "broken": [
       "/editorial",
-      "/pages/best-ramp-alternatives-2026",
-      "/pages/brex-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/divvy-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/expensify-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/spendesk-pricing-2026-plans-costs-what-you-actually-pay"
+      "/pages/best-ramp-alternatives-2026"
     ],
     "path": "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay"
   },
@@ -8883,10 +8875,7 @@
   {
     "broken": [
       "/editorial",
-      "/pages/best-shopify-alternatives-2026",
-      "/pages/squarespace-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/wix-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/woocommerce-pricing-2026-plans-costs-what-you-actually-pay"
+      "/pages/best-shopify-alternatives-2026"
     ],
     "path": "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay"
   },
