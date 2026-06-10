@@ -2,10 +2,10 @@
   "current_month": "June 2026",
   "today": "2026-06-10",
   "titles_rewritten": 1,
-  "descs_rewritten": 23,
-  "dates_refreshed": 1162,
+  "descs_rewritten": 20,
+  "dates_refreshed": 0,
   "answers_added": 15,
-  "files_changed": 1177,
+  "files_changed": 20,
   "files_scanned": 1421,
   "title_examples": [
     {
@@ -17,7 +17,7 @@
   "desc_examples": [
     {
       "file": "1password-pricing-history-2026.html",
-      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 June 2026.",
+      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 June 2026.",
       "after": "Updated June 2026. 1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
@@ -27,23 +27,23 @@
     },
     {
       "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 June 2026.",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 June 2026.",
       "after": "Updated June 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
       "file": "asana-pricing-history-2026.html",
-      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 June 2026.",
+      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 June 2026.",
       "after": "Updated June 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
-    },
-    {
-      "file": "aws-vs-supabase-which-is-better-in-2026.html",
-      "before": "Bottom line: Supabase wins (8.8/10). AWS vs Supabase compared on pricing and features \u2014 score-based verdict, no paid placements. 2026.",
-      "after": "Updated June 2026. Bottom line: Supabase wins (8.8/10). AWS vs Supabase compared on pricing and features \u2014 score-based verdict, no paid placements. 2026."
     },
     {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated June 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {
