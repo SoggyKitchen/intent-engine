@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-10T21:16:10+00:00",
+  "generated_at_utc": "2026-06-10T21:49:40+00:00",
   "mode": "apply",
   "pages_flagged": 23,
   "claim_labels_seen": [
@@ -8,34 +8,45 @@
   ],
   "pages": [
     {
-      "path": "site/pages/sucuri-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-Back Guarantee",
-          "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work.html",
+      "path": "site/pages/best-vpn-for-streaming-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "urfshark's 2-year deal works out to $2.19/mo. NordVPN is $3.09/mo. Both include 30-day money-back guarantees.</p> <div class=\"cta-btns\"> <a href=\"/go/surfshark\" target=\"_blank\""
+          "context": "=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0;line-height:1.5\">30-day money-back guarantee. No questions asked.</p><p style=\"font-size:.72rem;color:rgba(255,248,245,.28);"
         }
       ],
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/best-shopify-alternatives-in-2026-free-paid.html",
+      "path": "site/pages/best-vpn-for-gaming-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "14-day money-back guarantee",
-          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a rel=\"sponsored nofollow\" href=\"/go/wix\" class"
+          "snippet": "30-day money-back guarantee",
+          "context": "h3> <p style=\"color:rgba(255,248,245,.64);\">Both NordVPN and Surfshark have 30-day money-back guarantees. Try and return if gaming speed isn't better.</p> <div class=\"cta-btns\">"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-nordvpn-alternatives-in-2026-free-paid.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"background:rgba(255,2"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-nordpass-alternatives-in-2026-free-paid.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "45,.58);font-size:.9rem;margin-bottom:1.25rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans</p> <a href=\"/go/nordpass\" target=\"_blank\" rel=\"noopener sp"
         }
       ],
       "trust_state_bumped": false
@@ -47,22 +58,6 @@
           "label": "money_back_guarantee",
           "snippet": "45-day money-back guarantee",
           "context": "<p style=\"color:rgba(255,248,245,.65);font-size:.9rem;line-height:1.6;margin:0\">45-day money-back guarantee \u2014 the longest in the industry. 10,000+ servers. Cheaper at $2.03/month.</p>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/saas-spend-audit.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "tracked</span></div> <div class=\"ps-stat\"><strong>30 day</strong><span>Money-back guarantee</span></div> </div> </div> <div class=\"ps reveal\" id=\"tier"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "at if you find nothing?</summary><p>Stack Audit and Stack Concierge come with a 30-day money-back guarantee. If we cannot identify at least 3\u00d7 your audit fee in recoverable annual savings"
         }
       ],
       "trust_state_bumped": false
@@ -99,103 +94,12 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/best-nordpass-alternatives-in-2026-free-paid.html",
+      "path": "site/pages/best-shopify-alternatives-in-2026-free-paid.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "45,.58);font-size:.9rem;margin-bottom:1.25rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans</p> <a href=\"/go/nordpass\" target=\"_blank\" rel=\"noopener sp"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/best-vpn-for-gaming-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "h3> <p style=\"color:rgba(255,248,245,.64);\">Both NordVPN and Surfshark have 30-day money-back guarantees. Try and return if gaming speed isn't better.</p> <div class=\"cta-btns\">"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordvpn-coupon-code-promo-codes-2026-verified-discounts.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-Day Money-Back Guarantee",
-          "context": "</div> <div class=\"deal-info\"> <div class=\"deal-name\">30-Day Money-Back Guarantee</div> <div class=\"deal-desc\">Not a discount \u2014 but risk-free: try"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "stroke-width=\"2.5\"><path d=\"M6 9l6 6 6-6\"/></svg></div><div class=\"faq-a\">Yes \u2014 30-day money-back guarantee on all plans. Request via the app's in-app support or live chat. Processed with"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-Back Guarantee",
-          "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "8,245,.72);line-height:1.7;margin-bottom:2rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans. For full details: <a href=\"/pages/nordpass-free-trial-2026-h"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "45,.58);font-size:.9rem;margin-bottom:1.25rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans</p> <a href=\"/go/nordpass\" target=\"_blank\" rel=\"noopener sp"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-Back Guarantee",
-          "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem\">30-day money-back guarantee + 7-day free trial on iOS and Android.</p> <h2 style=\"font-size:1.4rem;font-"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/saas-stack-audit-checkout.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<div class=\"ps reveal\"> <div class=\"ps-callout\"> <p><strong>30-day money-back guarantee.</strong> Stack Audit and Stack Concierge: if we cannot identify at least 3\u00d7 yo"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/best-vpn-for-privacy-and-security-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ed no-logs, 6,400+ servers in 111 countries, NordLynx (WireGuard) speeds, and a 30-day money-back guarantee. Our top pick for most users.</p> <p style=\"color:rgba(255,248,245,.45);f"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "45-day money-back guarantee",
-          "context": ",245,.65);font-size:.9rem;line-height:1.6;margin:0 0 .4rem\">10,000+ servers and 45-day money-back guarantee \u2014 the longest trial in the industry. Good for streaming but privacy policy is l"
+          "snippet": "14-day money-back guarantee",
+          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a rel=\"sponsored nofollow\" href=\"/go/wix\" class"
         }
       ],
       "trust_state_bumped": false
@@ -212,60 +116,28 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict.html",
+      "path": "site/pages/sucuri-pricing-2026-plans-costs-what-you-actually-pay.html",
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "or:var(--ink-4)\">Free plan</span><span style=\"color:var(--ink);font-weight:700\">30-day money-back guarantee</span></div> <div style=\"height:1px;background:var(--line-soft)\"></"
+          "snippet": "Money-Back Guarantee",
+          "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
         }
       ],
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/best-free-vpn-2026.html",
+      "path": "site/pages/best-vpn-for-privacy-and-security-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": ".92rem;line-height:1.65;margin:0 0 .5rem\">NordVPN has no free plan but offers a 30-day money-back guarantee on all plans. In practice: sign up, use it for up to 30 days, request a refund."
+          "context": "ed no-logs, 6,400+ servers in 111 countries, NordLynx (WireGuard) speeds, and a 30-day money-back guarantee. Our top pick for most users.</p> <p style=\"color:rgba(255,248,245,.45);f"
         },
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "in:0 0 .5rem\">Like NordVPN, Surfshark has no permanent free plan but includes a 30-day money-back guarantee. At $2.19/month it's the cheapest premium VPN, and the unlimited device policy"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "0;font-size:.92rem\">NordVPN and Surfshark don't have truly free plans but offer 30-day money-back guarantees \u2014 effectively a free trial. ProtonVPN free doesn't unblock Netflix. The honest"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ly a free trial. ProtonVPN free doesn't unblock Netflix. The honest answer: the 30-day money-back guarantee on NordVPN ($3.39/month) is the best way to access Netflix free legally.</p></d"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/best-vpn-australia-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "y</h3> <p style=\"color:rgba(255,248,245,.64);\">NordVPN has AU servers and a 30-day money-back guarantee. No risk.</p> <div class=\"cta-btns\"> <a href=\"/go/nordvpn\" target=\"_b"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/shopify-review-2026-is-it-worth-it-honest-verdict.html",
-      "claims": [
-        {
-          "label": "sla_guarantee",
-          "snippet": "99.99% uptime guarantee",
-          "context": "class=\"pc-item\"><span class=\"pc-dot\"></span>Best-in-class checkout conversion (99.99% uptime guaranteed)</div> <div class=\"pc-item\"><span class=\"pc-dot\"></span>POS hard"
+          "snippet": "45-day money-back guarantee",
+          "context": ",245,.65);font-size:.9rem;line-height:1.6;margin:0 0 .4rem\">10,000+ servers and 45-day money-back guarantee \u2014 the longest trial in the industry. Good for streaming but privacy policy is l"
         }
       ],
       "trust_state_bumped": false
@@ -322,34 +194,59 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/best-nordvpn-alternatives-in-2026-free-paid.html",
+      "path": "site/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay.html",
       "claims": [
         {
           "label": "money_back_guarantee",
+          "snippet": "Money-Back Guarantee",
+          "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
+        },
+        {
+          "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"background:rgba(255,2"
+          "context": "h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem\">30-day money-back guarantee + 7-day free trial on iOS and Android.</p> <h2 style=\"font-size:1.4rem;font-"
         }
       ],
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/best-web-hosting-2026.html",
+      "path": "site/pages/saas-spend-audit.html",
       "claims": [
         {
-          "label": "sla_guarantee",
-          "snippet": "99.99% uptime guarantee",
-          "context": "cher, built-in CDN, daily backups, and the best support team in shared hosting. 99.99% uptime guarantee.</p> <p style=\"color:rgba(255,248,245,.42);font-size:.8rem;margin:0 0 .5r"
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "tracked</span></div> <div class=\"ps-stat\"><strong>30 day</strong><span>Money-back guarantee</span></div> </div> </div> <div class=\"ps reveal\" id=\"tier"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "at if you find nothing?</summary><p>Stack Audit and Stack Concierge come with a 30-day money-back guarantee. If we cannot identify at least 3\u00d7 your audit fee in recoverable annual savings"
         }
       ],
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/best-vpn-for-streaming-2026.html",
+      "path": "site/pages/best-free-vpn-2026.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "=\"font-size:.85rem;color:rgba(255,248,245,.5);margin:.9rem 0 0;line-height:1.5\">30-day money-back guarantee. No questions asked.</p><p style=\"font-size:.72rem;color:rgba(255,248,245,.28);"
+          "context": ".92rem;line-height:1.65;margin:0 0 .5rem\">NordVPN has no free plan but offers a 30-day money-back guarantee on all plans. In practice: sign up, use it for up to 30 days, request a refund."
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "in:0 0 .5rem\">Like NordVPN, Surfshark has no permanent free plan but includes a 30-day money-back guarantee. At $2.19/month it's the cheapest premium VPN, and the unlimited device policy"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "0;font-size:.92rem\">NordVPN and Surfshark don't have truly free plans but offer 30-day money-back guarantees \u2014 effectively a free trial. ProtonVPN free doesn't unblock Netflix. The honest"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ly a free trial. ProtonVPN free doesn't unblock Netflix. The honest answer: the 30-day money-back guarantee on NordVPN ($3.39/month) is the best way to access Netflix free legally.</p></d"
         }
       ],
       "trust_state_bumped": false
@@ -366,6 +263,109 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime SLA",
           "context": "nt-size:.92rem;line-height:1.65;margin:0 0 .5rem\">Enterprise-grade Shopify with 99.99% uptime SLA, dedicated account management, unlimited staff accounts, customisable checkout,"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-Back Guarantee",
+          "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "8,245,.72);line-height:1.7;margin-bottom:2rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans. For full details: <a href=\"/pages/nordpass-free-trial-2026-h"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "45,.58);font-size:.9rem;margin-bottom:1.25rem\">Free plan available (1 device) + 30-day money-back guarantee on all paid plans</p> <a href=\"/go/nordpass\" target=\"_blank\" rel=\"noopener sp"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/saas-stack-audit-checkout.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "<div class=\"ps reveal\"> <div class=\"ps-callout\"> <p><strong>30-day money-back guarantee.</strong> Stack Audit and Stack Concierge: if we cannot identify at least 3\u00d7 yo"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "urfshark's 2-year deal works out to $2.19/mo. NordVPN is $3.09/mo. Both include 30-day money-back guarantees.</p> <div class=\"cta-btns\"> <a href=\"/go/surfshark\" target=\"_blank\""
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-web-hosting-2026.html",
+      "claims": [
+        {
+          "label": "sla_guarantee",
+          "snippet": "99.99% uptime guarantee",
+          "context": "cher, built-in CDN, daily backups, and the best support team in shared hosting. 99.99% uptime guarantee.</p> <p style=\"color:rgba(255,248,245,.42);font-size:.8rem;margin:0 0 .5r"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordvpn-coupon-code-promo-codes-2026-verified-discounts.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-Day Money-Back Guarantee",
+          "context": "</div> <div class=\"deal-info\"> <div class=\"deal-name\">30-Day Money-Back Guarantee</div> <div class=\"deal-desc\">Not a discount \u2014 but risk-free: try"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "stroke-width=\"2.5\"><path d=\"M6 9l6 6 6-6\"/></svg></div><div class=\"faq-a\">Yes \u2014 30-day money-back guarantee on all plans. Request via the app's in-app support or live chat. Processed with"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/shopify-review-2026-is-it-worth-it-honest-verdict.html",
+      "claims": [
+        {
+          "label": "sla_guarantee",
+          "snippet": "99.99% uptime guarantee",
+          "context": "class=\"pc-item\"><span class=\"pc-dot\"></span>Best-in-class checkout conversion (99.99% uptime guaranteed)</div> <div class=\"pc-item\"><span class=\"pc-dot\"></span>POS hard"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "or:var(--ink-4)\">Free plan</span><span style=\"color:var(--ink);font-weight:700\">30-day money-back guarantee</span></div> <div style=\"height:1px;background:var(--line-soft)\"></"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-vpn-australia-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "y</h3> <p style=\"color:rgba(255,248,245,.64);\">NordVPN has AU servers and a 30-day money-back guarantee. No risk.</p> <div class=\"cta-btns\"> <a href=\"/go/nordvpn\" target=\"_b"
         }
       ],
       "trust_state_bumped": false
