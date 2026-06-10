@@ -30,7 +30,7 @@ TRIALS = {
     "1password": dict(
         name="1Password", logo="https://cdn.simpleicons.org/1password/0094f5",
         go="/go/1password", page_url="/pages/1password-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://1password.com/sign-up/",
+        trial_url="/go/1password-trial",
         days="14", plan_access="Full Business plan features", cc_class="chip-cc-no", cc_label="No credit card required",
         hero_lead="Start a 14-day 1Password Business trial with no credit card. Get full access to admin console, SSO, and all security features from day one.",
         steps=[("Go to 1Password's signup","Visit our link to the 1Password signup page — it takes you directly to the Business trial.","Use a business email for the best experience"),
@@ -65,7 +65,7 @@ TRIALS = {
     "aweber": dict(
         name="AWeber", logo="https://cdn.simpleicons.org/aweber/77b800",
         go="/go/aweber", page_url="/pages/aweber-pricing-2026-plans-costs-what-you-actually-pay",
-        trial_url="https://www.aweber.com/pricing.htm",
+        trial_url="/go/aweber",
         days="Free", plan_access="Up to 500 subscribers, 3,000 emails/month", cc_class="chip-cc-no", cc_label="No credit card required",
         hero_lead="AWeber offers a permanent free plan — not a timed trial. Get up to 500 subscribers and 3,000 emails/month free forever. Here's what's included and how to start.",
         steps=[("Sign up for AWeber Free","Click our link and choose 'Get Started Free'. Enter your name and email — no credit card required.", "Use a business email for the best deliverability"),
@@ -100,7 +100,7 @@ TRIALS = {
     "activecampaign": dict(
         name="ActiveCampaign", logo="https://cdn.simpleicons.org/activecampaign/356ae7",
         go="/go/activecampaign", page_url="/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://www.activecampaign.com/free-trial/",
+        trial_url="/go/activecampaign-trial",
         days="14", plan_access="Full plan features up to 100 contacts", cc_class="chip-cc-no", cc_label="No credit card required",
         hero_lead="ActiveCampaign's 14-day trial gives you the full automation builder, CRM, and SMS — up to 100 contacts, no card required. Here's how to get the most from it.",
         steps=[("Go to ActiveCampaign's free trial page","Visit our link to start the trial. Enter your work email.","Use a business email — trial account quality is higher"),
@@ -134,7 +134,7 @@ TRIALS = {
     "asana": dict(
         name="Asana", logo="https://cdn.simpleicons.org/asana/f06a6a",
         go="/go/asana", page_url="/pages/asana-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://asana.com/",
+        trial_url="/go/asana",
         days="30", plan_access="Asana Premium — full feature set", cc_class="chip-cc-no", cc_label="No credit card required",
         hero_lead="Asana's 30-day Premium trial gives full access to Timeline, workflow rules, and dashboards. No card required — start your workspace in minutes.",
         steps=[("Go to asana.com and sign up","Use your work email. Free account starts immediately — upgrade to trial from the dashboard.","Your free account is already useful — trial Premium for Timeline and rules"),
@@ -168,7 +168,7 @@ TRIALS = {
     "clickup": dict(
         name="ClickUp", logo="https://cdn.simpleicons.org/clickup/7b68ee",
         go="/go/clickup", page_url="/pages/clickup-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://clickup.com/signup",
+        trial_url="/go/clickup-trial",
         days="Free", plan_access="Free Forever — genuinely unlimited tasks", cc_class="chip-cc-no", cc_label="No credit card required",
         hero_lead="ClickUp Free Forever is the most generous free plan in project management. No trial expiry, no credit card. Here's how to get started and what you get.",
         steps=[("Go to clickup.com/signup","Enter your email and create a password. No credit card needed.","Use your work email — it makes team invites easier"),
@@ -202,7 +202,7 @@ TRIALS = {
     "hubspot": dict(
         name="HubSpot", logo="https://cdn.simpleicons.org/hubspot/ff7a59",
         go="/go/hubspot-crm", page_url="/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://app.hubspot.com/signup/",
+        trial_url="/go/hubspot-crm",
         days="Free", plan_access="Free CRM — unlimited contacts, no seat limit", cc_class="chip-cc-no", cc_label="No credit card required",
         hero_lead="HubSpot's free CRM is not a trial — it's free forever with unlimited contacts and users. Here's how to get started and what you actually get.",
         steps=[("Go to HubSpot's signup page","Use our link and click 'Get started free'. Enter your work email.","Work email gets you better default settings and tracking capabilities"),
@@ -236,7 +236,7 @@ TRIALS = {
     "shopify": dict(
         name="Shopify", logo="https://cdn.simpleicons.org/shopify/96bf48",
         go="/go/shopify", page_url="/pages/shopify-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://www.shopify.com/free-trial",
+        trial_url="/go/shopify",
         days="3", plan_access="Full store — all plans, unlimited products", cc_class="chip-cc-no", cc_label="No credit card for trial",
         hero_lead="Shopify's 3-day free trial (plus $1/month for 3 months) gives you enough time to build a real store and test checkout. No card required to start.",
         steps=[("Click our Shopify trial link","Our link activates the current best offer — typically $1/month for 3 months after the free trial.","Use a business email you'll keep long-term — it becomes your store admin email"),
@@ -270,7 +270,7 @@ TRIALS = {
     "freshbooks": dict(
         name="FreshBooks", logo="https://cdn.simpleicons.org/freshbooks/0075dd",
         go="/go/freshbooks", page_url="/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://www.freshbooks.com/",
+        trial_url="/go/freshbooks-trial",
         days="30", plan_access="Full feature access — all plans", cc_class="chip-cc-no", cc_label="No credit card required",
         hero_lead="FreshBooks' 30-day trial gives full access to invoicing, time tracking, and expense management — no credit card and no client limit during the trial.",
         steps=[("Go to freshbooks.com","Click 'Try FreshBooks Free'. Enter your name and email.","Work email gives better default settings and makes client communication more professional"),
@@ -304,7 +304,7 @@ TRIALS = {
     "semrush": dict(
         name="Semrush", logo="https://cdn.simpleicons.org/semrush/ff642d",
         go="/go/semrush", page_url="/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://www.semrush.com/",
+        trial_url="/go/semrush-trial",
         days="7", plan_access="Full Pro or Guru access", cc_class="chip-cc-yes", cc_label="Credit card required",
         hero_lead="Semrush's 7-day free trial gives full access to all 55+ tools. Credit card required but not charged during the trial period.",
         steps=[("Click our Semrush trial link","Our link activates the 7-day Pro or Guru trial.","Choose Guru if you want to test historical data and Content Marketing Toolkit"),
@@ -338,7 +338,7 @@ TRIALS = {
     "nordvpn": dict(
         name="NordVPN", logo="https://cdn.simpleicons.org/nordvpn/4687ff",
         go="/go/nordvpn", page_url="/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict",
-        trial_url="https://nordvpn.com/",
+        trial_url="/go/nordvpn",
         days="30", plan_access="Full VPN access — all features", cc_class="chip-cc-yes", cc_label="30-day money-back guarantee",
         hero_lead="NordVPN doesn't offer a traditional free trial, but their 30-day money-back guarantee is effectively risk-free. Here's how to test and claim if needed.",
         steps=[("Click our NordVPN link","Our link activates the current best promotion — typically 70%+ off 2-year plan.","The 2-year plan is the best per-month value. You can still claim the money-back guarantee within 30 days"),
