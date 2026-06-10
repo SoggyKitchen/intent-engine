@@ -33,7 +33,7 @@
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 87.5/100): broken_internal_link
 - `/pages/1password-pricing-history-2026` (pricing, 83.57/100): broken_internal_link
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, 83.75/100): broken_internal_link
-- `/pages/1password-review-2026-is-it-worth-it-honest-verdict` (pricing, 89.41/100): broken_internal_link
+- `/pages/1password-review-2026-is-it-worth-it-honest-verdict` (pricing, 89.42/100): broken_internal_link
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 91.33/100): broken_internal_link
 - `/pages/1password-vs-dashlane-which-is-better-in-2026` (comparison, 91.41/100): broken_internal_link
 - `/pages/1password-vs-enpass-which-is-better-in-2026` (comparison, 91.41/100): broken_internal_link
@@ -96,7 +96,7 @@
 - `/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts` (coupon, 83.91/100): broken_internal_link
 - `/pages/activecampaign-free-trial-2026-how-to-start-what-you-get` (free_trial, 84.13/100): broken_internal_link
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 84.56/100): broken_internal_link
-- `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict` (review, 89.14/100): broken_internal_link
+- `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict` (review, 89.15/100): broken_internal_link
 - `/pages/activecampaign-vs-brevo-which-is-better-in-2026` (comparison, 91.28/100): broken_internal_link
 - `/pages/activecampaign-vs-convertkit-which-is-better-in-2026` (comparison, 91.29/100): broken_internal_link
 - `/pages/activecampaign-vs-drip-which-is-better-in-2026` (comparison, 91.36/100): broken_internal_link
@@ -148,7 +148,7 @@
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 84.54/100): broken_internal_link
 - `/pages/asana-pricing-history-2026` (pricing, 84.05/100): broken_internal_link
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, 83.53/100): broken_internal_link
-- `/pages/asana-review-2026-is-it-worth-it-honest-verdict` (pricing, 89.27/100): broken_internal_link
+- `/pages/asana-review-2026-is-it-worth-it-honest-verdict` (pricing, 89.28/100): broken_internal_link
 - `/pages/asana-vs-basecamp-which-is-better-in-2026` (comparison, 91.33/100): broken_internal_link
 - `/pages/asana-vs-clickup-which-is-better-in-2026` (comparison, 91.27/100): broken_internal_link
 - `/pages/asana-vs-jira-which-is-better-in-2026` (comparison, 91.27/100): broken_internal_link
@@ -172,7 +172,7 @@
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (coupon, 83.58/100): broken_internal_link
 - `/pages/bamboohr-free-trial-2026-how-to-start-what-you-get` (free_trial, 84.06/100): broken_internal_link
 - `/pages/bamboohr-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 84.56/100): broken_internal_link
-- `/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict` (pricing, 88.73/100): broken_internal_link
+- `/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict` (pricing, 88.74/100): broken_internal_link
 - `/pages/bamboohr-vs-culture-amp-which-is-better-in-2026` (comparison, 89.56/100): broken_internal_link
 - `/pages/bamboohr-vs-deel-which-is-better-in-2026` (comparison, 89.29/100): broken_internal_link
 - `/pages/bamboohr-vs-greenhouse-which-is-better-in-2026` (comparison, 89.42/100): broken_internal_link
