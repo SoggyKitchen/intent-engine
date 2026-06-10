@@ -1,7 +1,7 @@
 # Duplicate Intent
 
 - Duplicate title: `Partner Verification | SaaSpare` -> /fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f, /fo-verify
-- Duplicate title: `1Password Pricing 2026 (Tested June 2026) — Real Costs + Hidden Fees` -> /pages/1password-pricing-2026-plans-costs-what-you-actually-pay, /pages/v3-preview-comparison
+- Duplicate title: `1Password Pricing 2026 (Verified June 2026) — Real Costs + Hidden Fees` -> /pages/1password-pricing-2026-plans-costs-what-you-actually-pay, /pages/v3-preview-comparison
 - Duplicate title: `Best Chrome Devtools Alternatives 2026: Cheaper & Better Options | SaaSpare` -> /pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison, /pages/best-chrome-devtools-alternatives-in-2026
 - Duplicate title: `Best DevTools for B2B Engineering Teams in 2026 | SaaSpare` -> /pages/best-devtools-for-b2b-engineering-teams-in-2025, /pages/best-devtools-for-b2b-engineering-teams-in-2026
 - Duplicate title: `Best DevTools for B2B Software Development in 2026 | SaaSpare` -> /pages/best-devtools-for-b2b-software-development-in-2025, /pages/best-devtools-for-b2b-software-development-in-2026
@@ -23,3 +23,4 @@
 - Duplicate meta: `Updated June 2026. Best Moz Pro discount codes and promo offers verified 4 June 2026. Annu` -> /pages/moz-pro-coupon-2026-discount-codes-promo, /pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work
 - Duplicate meta: `Updated June 2026. Best Pandadoc discount codes and promo offers verified 4 June 2026. Ann` -> /pages/pandadoc-coupon-2026-discount-codes-promo, /pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts
 - Duplicate meta: `Updated June 2026. Best Salesforce discount codes and promo offers verified 4 June 2026. A` -> /pages/salesforce-coupon-2026-discount-codes-promo, /pages/salesforce-promo-code-2026-discounts-deals-that-actually-work
+- Duplicate meta: `Updated June 2026. Bottom line: it` -> /pages/tailscale-vs-zscaler-which-is-better-in-2026, /pages/twingate-vs-tailscale-which-is-better-in-2026
