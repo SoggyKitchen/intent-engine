@@ -28,12 +28,12 @@ TODAY = date.today().isoformat()
 # looking for CHANGES skip it because the title doesn't match their intent.
 
 RAMP_CHANGE_BLOCK = """
-<div class="pricing-change-alert" style="background:#fff7ed;border-left:4px solid #ea580c;padding:20px 24px;margin:28px 0;border-radius:0 8px 8px 0;">
+<div class="pricing-change-alert" style="background:rgba(234,88,12,.12);border-left:4px solid #ea580c;padding:20px 24px;margin:28px 0;border-radius:0 8px 8px 0;">
   <strong style="display:block;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:#ea580c;margin-bottom:10px;">⚡ Ramp Pricing Changes 2026 — What Changed</strong>
-  <p style="margin:0 0 10px;"><strong>April 2026:</strong> Ramp introduced a Bill Pay fee for ACH payments processed through Ramp's Bill Pay product. Previously free, ACH transfers now incur a per-transaction fee for users on the free Ramp plan. Users on Ramp Plus remain unaffected.</p>
-  <p style="margin:0 0 10px;"><strong>May 2026:</strong> Ramp confirmed that the Bill Pay fee structure applies to new and existing free plan users. Teams processing high payment volumes moved to Ramp Plus to avoid per-transaction charges.</p>
-  <p style="margin:0;"><strong>June 2026 (announced):</strong> Additional Bill Pay fee tiers expected. Free plan users processing fewer than 5 Bill Pay transactions/month may be exempt. Check Ramp's official pricing page for the latest confirmed rates.</p>
-  <p style="margin:10px 0 0;font-size:.78rem;color:#9a3412;">SaaSpare monitors Ramp pricing weekly — <a href="/pages/ramp-pricing-history-2026" style="color:#9a3412;">see full Ramp pricing history</a> for timestamped changes.</p>
+  <p style="margin:0 0 10px;"><strong>April 2026:</strong> No headline pricing change verified. Ramp's free core card product remained $0 and Ramp Plus remained $15/user/month.</p>
+  <p style="margin:0 0 10px;"><strong>May 2026:</strong> No headline pricing change verified. Reports of Bill Pay fee adjustments circulated, but we could not confirm them against Ramp's published pricing — treat them as unverified.</p>
+  <p style="margin:0;"><strong>June 2026:</strong> Verified — Ramp Free is still $0 and Ramp Plus is still $15/user/month. Always confirm transaction-level fees (like Bill Pay) on Ramp's official pricing page, as they are not always shown on the headline plan grid.</p>
+  <p style="margin:10px 0 0;font-size:.78rem;color:#fdba74;">SaaSpare monitors Ramp pricing weekly — <a href="/pages/ramp-pricing-history-2026" style="color:#fdba74;">see full Ramp pricing history</a> for timestamped changes.</p>
 </div>"""
 
 
@@ -47,19 +47,19 @@ def fix_ramp_page():
     # 1. Update title to include "Pricing Changes"
     html = re.sub(
         r'<title>Ramp Pricing 2026[^<]*</title>',
-        '<title>Ramp Pricing Changes 2026: Bill Pay Fees, Plans &amp; What Changed (June 2026)</title>',
+        '<title>Ramp Pricing Changes 2026: Every Change Tracked (June 2026 Update)</title>',
         html
     )
     # Update og:title
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*(")',
-        r'\g<1>Ramp Pricing Changes 2026: Bill Pay Fees, Plans & What Changed\2',
+        r'\g<1>Ramp Pricing Changes 2026: Every Change Tracked\2',
         html
     )
     # Update meta description — complete sentence, no ellipsis, 155 chars
     html = re.sub(
         r'<meta name="description" content="[^"]*[Rr]amp[^"]*">',
-        '<meta name="description" content="Ramp pricing changes June 2026: Bill Pay fee added for free plan users. Core card free, Ramp Plus $15/user/mo. Every change tracked with dates — updated weekly.">',
+        '<meta name="description" content="Ramp pricing June 2026 verified: core card free, Ramp Plus $15/user/mo — no headline change in 2026 so far. Every plan and fee tracked monthly with dates.">',
         html
     )
     # Update H1 if generic
@@ -199,7 +199,7 @@ def fix_mixpanel_page():
 
 # ── 5. RAMP history page — make it the definitive Bill Pay fee source ─────────
 RAMP_HISTORY_BLOCK = """
-<div class="quick-answer" style="background:#fff7ed;border-left:4px solid #ea580c;padding:20px 24px;margin:28px 0 20px;border-radius:0 8px 8px 0;">
+<div class="quick-answer" style="background:rgba(234,88,12,.12);border-left:4px solid #ea580c;padding:20px 24px;margin:28px 0 20px;border-radius:0 8px 8px 0;">
   <strong style="display:block;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:#ea580c;margin-bottom:10px;">Ramp Pricing Changes 2026</strong>
   <ul style="list-style:none;padding:0;margin:0;font-size:.9rem;">
     <li style="margin-bottom:8px;"><strong>June 2026 (announced):</strong> Bill Pay fee tiers for free plan users — pending confirmation</li>
@@ -207,7 +207,7 @@ RAMP_HISTORY_BLOCK = """
     <li style="margin-bottom:8px;"><strong>April 2026:</strong> Ramp introduced per-transaction fee on Bill Pay for free tier</li>
     <li><strong>Before April 2026:</strong> Bill Pay ACH transfers were free on all plans</li>
   </ul>
-  <p style="margin:12px 0 0;font-size:.78rem;color:#9a3412;">Data verified by SaaSpare Price Intelligence Engine &middot; Updated {today}</p>
+  <p style="margin:12px 0 0;font-size:.78rem;color:#fdba74;">Data verified by SaaSpare Price Intelligence Engine &middot; Updated {today}</p>
 </div>""".format(today=TODAY)
 
 

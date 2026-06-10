@@ -250,7 +250,7 @@ HEAD_TPL = """<!DOCTYPE html>
     .breadcrumb{{font-size:.82rem;color:#64748b;padding:12px 24px;max-width:840px;margin:0 auto}}
     .breadcrumb a{{color:#64748b;text-decoration:none}}
     .meta{{display:flex;gap:16px;flex-wrap:wrap;font-size:.82rem;color:#64748b;margin:14px 0 28px}}
-    .meta .tag{{background:#f1f5f9;color:#475569;border-radius:4px;padding:4px 10px;font-weight:600}}
+    .meta .tag{{background:rgba(255,255,255,.06);color:#475569;border-radius:4px;padding:4px 10px;font-weight:600}}
     h1{{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;line-height:1.2;color:#0f172a;margin:24px 0 8px}}
     h2{{font-size:1.25rem;font-weight:700;color:#0f172a;margin:40px 0 12px;padding-top:8px;border-top:1px solid #f1f5f9}}
     h3{{font-size:1.02rem;font-weight:700;color:#0f172a;margin:22px 0 8px}}
@@ -262,21 +262,21 @@ HEAD_TPL = """<!DOCTYPE html>
     table{{width:100%;border-collapse:collapse;margin:20px 0;font-size:.9rem}}
     th{{background:#0f172a;color:#fff;padding:11px 14px;text-align:left}}
     td{{padding:11px 14px;border-bottom:1px solid #e2e8f0;vertical-align:top}}
-    tr:nth-child(even){{background:#f8fafc}}
-    .quick-answer{{background:#f0fdf4;border-left:4px solid #16a34a;padding:18px 22px;margin:28px 0 20px;border-radius:0 8px 8px 0}}
+    tr:nth-child(even){{background:rgba(255,255,255,.05)}}
+    .quick-answer{{background:rgba(34,197,94,.10);border-left:4px solid #16a34a;padding:18px 22px;margin:28px 0 20px;border-radius:0 8px 8px 0}}
     .qa-label{{font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:#16a34a;font-weight:700;margin-bottom:8px}}
-    .score-badge{{background:#f8fafc;border:2px solid #0f172a;border-radius:12px;padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:18px;max-width:460px}}
+    .score-badge{{background:rgba(255,255,255,.05);border:2px solid #0f172a;border-radius:12px;padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:18px;max-width:460px}}
     .score-num{{font-size:2.2rem;font-weight:800;color:#0f172a;line-height:1;min-width:64px;text-align:center}}
     .pros-cons{{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0}}
     @media(max-width:600px){{.pros-cons{{grid-template-columns:1fr}}}}
-    .pros{{background:#f0fdf4;border-radius:8px;padding:16px 18px}}
+    .pros{{background:rgba(34,197,94,.10);border-radius:8px;padding:16px 18px}}
     .cons{{background:#fff7f7;border-radius:8px;padding:16px 18px}}
     .pros h3,.cons h3{{margin-top:0;font-size:.92rem;border:none;padding:0}}
     .pros h3{{color:#16a34a}}
     .cons h3{{color:#dc2626}}
-    .cta-box{{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:22px;margin:36px 0;text-align:center}}
+    .cta-box{{background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:12px;padding:22px;margin:36px 0;text-align:center}}
     .cta-btn{{display:inline-block;background:#0f172a;color:#fff;padding:11px 22px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:12px}}
-    .site-footer{{background:#f8fafc;border-top:1px solid #e2e8f0;padding:36px 24px;text-align:center;color:#64748b;font-size:.85rem}}
+    .site-footer{{background:rgba(255,255,255,.05);border-top:1px solid #e2e8f0;padding:36px 24px;text-align:center;color:#64748b;font-size:.85rem}}
     .site-footer a{{color:#64748b;margin:0 10px;text-decoration:none}}
   </style>
 {extra_schema}

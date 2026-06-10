@@ -139,7 +139,7 @@ def inject_hub_link(html: str, hub_slug: str, current_slug: str) -> tuple[str, b
         return html, False
 
     hub_label = HUB_DISPLAY.get(hub_slug, hub_slug.replace("-", " ").title())
-    link_block = f'\n<aside style="margin:32px 0;padding:18px 22px;background:#f1f5f9;border-radius:8px;font-size:.92rem;"><strong>Category guide:</strong> See our editorial roundup → <a href="/{hub_slug}">{hub_label}</a></aside>\n'
+    link_block = f'\n<aside style="margin:32px 0;padding:18px 22px;background:rgba(255,255,255,.06);border-radius:8px;font-size:.92rem;"><strong>Category guide:</strong> See our editorial roundup → <a href="/{hub_slug}">{hub_label}</a></aside>\n'
 
     # Inject before <main> closing tag, or before </article>, or before footer
     for marker in ["</main>", "</article>", '<footer'.lower(), "</body>"]:
@@ -163,7 +163,7 @@ def inject_history_link(html: str, current_slug: str) -> tuple[str, bool]:
     if f"/{history_slug}" in html:
         return html, False
 
-    link_block = f'\n<aside style="margin:24px 0;padding:16px 20px;background:#fff7ed;border-left:4px solid #ea580c;border-radius:0 8px 8px 0;font-size:.92rem;"><strong>📊 See pricing history:</strong> Every change to {tool.replace("-", " ").title()} pricing in {year}, timestamped → <a href="/pages/{history_slug}" style="color:#9a3412;font-weight:700;">{tool.replace("-", " ").title()} Pricing History {year}</a></aside>\n'
+    link_block = f'\n<aside style="margin:24px 0;padding:16px 20px;background:rgba(234,88,12,.12);border-left:4px solid #ea580c;border-radius:0 8px 8px 0;font-size:.92rem;"><strong>📊 See pricing history:</strong> Every change to {tool.replace("-", " ").title()} pricing in {year}, timestamped → <a href="/pages/{history_slug}" style="color:#fdba74;font-weight:700;">{tool.replace("-", " ").title()} Pricing History {year}</a></aside>\n'
     for marker in ["</main>", "</article>", "</body>"]:
         if marker in html:
             html = html.replace(marker, link_block + marker, 1)
@@ -182,7 +182,7 @@ def inject_moat_link(html: str, current_slug: str) -> tuple[str, bool]:
     if "pricing" not in current_slug and "review" not in current_slug:
         return html, False
 
-    link_block = '\n<aside style="margin:24px 0;padding:14px 18px;background:#fef2f2;border-left:4px solid #dc2626;border-radius:0 6px 6px 0;font-size:.88rem;">⚡ <strong>Did this tool raise prices in 2026?</strong> See our <a href="/pages/saas-price-hike-watch-may-2026" style="color:#991b1b;font-weight:700;">SaaS Price Hike Watch</a> for every confirmed 2026 price increase.</aside>\n'
+    link_block = '\n<aside style="margin:24px 0;padding:14px 18px;background:rgba(220,38,38,.12);border-left:4px solid #dc2626;border-radius:0 6px 6px 0;font-size:.88rem;">⚡ <strong>Did this tool raise prices in 2026?</strong> See our <a href="/pages/saas-price-hike-watch-may-2026" style="color:#fca5a5;font-weight:700;">SaaS Price Hike Watch</a> for every confirmed 2026 price increase.</aside>\n'
     for marker in ["</main>", "</article>", "</body>"]:
         if marker in html:
             html = html.replace(marker, link_block + marker, 1)

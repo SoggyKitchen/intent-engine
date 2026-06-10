@@ -232,7 +232,7 @@ def render_hub(hub: dict) -> str:
       <h1>{hub['h1']}</h1>
       <p class="byline">By Smith Elly &middot; Updated {TODAY} &middot; <a href="/about#methodology">Methodology</a></p>
 
-      <div class="quick-answer" style="background:#eff6ff;border-left:4px solid #3b82f6;padding:1rem 1.25rem;margin:1.5rem 0;border-radius:4px;">
+      <div class="quick-answer" style="background:rgba(59,130,246,.10);border-left:4px solid #3b82f6;padding:1rem 1.25rem;margin:1.5rem 0;border-radius:4px;">
         <strong>Quick answer:</strong> {hub['featured_answer']}
       </div>
 
@@ -245,7 +245,7 @@ def render_hub(hub: dict) -> str:
       <div class="faq-block">
 {faq_html}      </div>
 
-      <aside style="background:#f8fafc;border:1px solid #e2e8f0;padding:1rem 1.25rem;border-radius:8px;margin-top:2rem;">
+      <aside style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;padding:1rem 1.25rem;border-radius:8px;margin-top:2rem;">
         <strong>All {hub['h1'].split(':')[0].replace('Best ','').replace(' '+YEAR,'')} pages:</strong><br>
         <div style="margin-top:.5rem;line-height:2;">
         {cluster_links_html}

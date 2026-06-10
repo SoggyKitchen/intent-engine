@@ -225,6 +225,12 @@ jobs:
         run: uv run python scripts/fix_logo_urls.py
         continue-on-error: true
 
+      # 4i-theme. Convert light-theme inline blocks (white asides/alerts) emitted
+      # by legacy generators to dark-theme equivalents matching the dark site.
+      - name: Fix light-theme blocks on dark pages
+        run: uv run python scripts/fix_light_theme_blocks.py
+        continue-on-error: true
+
       # 4i-ctr. CTR Optimizer — find pages ranking 8-20 with low CTR,
       # rewrite <title> and <meta description> with power words + year + brackets.
       # Uses data/gsc_export.csv if present, otherwise applies to known opportunity pages.

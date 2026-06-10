@@ -26,7 +26,7 @@ ARTICLES = {
   <p class="lead">Most SaaS vendors have unpublished discount authority of 15-40%. They just don't give it unless you ask with the right framing. These scripts are based on 200+ procurement conversations tracked across SaaSpare's B2B buyer network.</p>
 </section>
 
-<div class="quick-answer" style="background:#f0fdf4;border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
+<div class="quick-answer" style="background:rgba(34,197,94,.10);border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
   <strong style="display:block;font-size:0.85rem;text-transform:uppercase;letter-spacing:.05em;color:#16a34a;margin-bottom:8px;">Quick Answer</strong>
   <p style="margin:0;">The single most effective line: <em>"We're evaluating [Competitor] alongside you. Before we make a final decision, what's the best price you can offer for an annual commitment?"</em> This phrase triggers the competitive discount at most SaaS vendors.</p>
 </div>
@@ -43,21 +43,21 @@ ARTICLES = {
 
 <h2>Script #1: The Competitor Comparison Opening</h2>
 <p><strong>Use for:</strong> Any tool where you have a realistic alternative (HubSpot vs Pipedrive, Monday vs Asana, Salesforce vs HubSpot)</p>
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin:16px 0;font-style:italic;">
+<div style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin:16px 0;font-style:italic;">
   <p>"Hi [Name], I wanted to chat before we finalize our decision. We've narrowed it down to [Your Tool] and [Competitor]. The functionality is honestly very similar for our use case. The deciding factor at this point is going to be commercial terms. What's the best price you can put together for [X seats / annual]?"</p>
 </div>
 <p><strong>Why it works:</strong> Reps are trained to save deals from competitors. This triggers their "save" playbook which almost always includes pricing flexibility.</p>
 
 <h2>Script #2: The Budget Constraint</h2>
 <p><strong>Use for:</strong> When you have a real budget ceiling or want to anchor low</p>
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin:16px 0;font-style:italic;">
+<div style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin:16px 0;font-style:italic;">
   <p>"We really want to go with [Tool] — the team loves the product. The challenge is our IT budget for this category is [X] for the year. Is there any way to make the numbers work? We're flexible on contract length if that helps."</p>
 </div>
 <p><strong>Expected outcome:</strong> 15-25% discount in exchange for annual commitment. Many vendors will also offer to start billing in month 2 to help with budget timing.</p>
 
 <h2>Script #3: The End-of-Quarter Push</h2>
 <p><strong>Use for:</strong> Last 2 weeks of March, June, September, December</p>
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin:16px 0;font-style:italic;">
+<div style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin:16px 0;font-style:italic;">
   <p>"I know you're pushing to close before quarter end. We're genuinely interested but I need to get this past my finance team. If you can put something together with [X% discount / extra months free / waived onboarding fee], I can push internally to get this signed this week."</p>
 </div>
 <p><strong>Why it works:</strong> Reps have more authority at quarter end and their managers are actively pushing them to close. This is when you get the biggest discounts.</p>
@@ -105,13 +105,13 @@ ARTICLES = {
 </ol>
 
 <h2>The "Going with Competitor" Save Email</h2>
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin:16px 0;font-style:italic;">
+<div style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin:16px 0;font-style:italic;">
   <p>Subject: Going in a different direction — [Your Tool]</p>
   <p>Hi [Name],<br><br>Just wanted to let you know we've decided to move forward with [Competitor]. The team was split but ultimately the pricing was the deciding factor for us at this stage.<br><br>We really liked [Your Tool] and may revisit down the road. Thanks for your time.<br><br>[Your name]</p>
 </div>
 <p>This email gets a response with a better offer 60-70% of the time. The "save" team has more authority than the original rep.</p>
 
-<div class="article-cta" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
+<div class="article-cta" style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
   <h3 style="margin:0 0 8px;">Know the real price before you negotiate</h3>
   <p style="color:#64748b;margin:0 0 16px;">SaaSpare tracks weekly pricing changes for 15+ SaaS tools. See current plans, pricing history, and the gap between list and negotiated prices.</p>
   <a href="/pages/saas-pricing-changes" style="display:inline-block;background:#0f172a;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">See Pricing Intelligence →</a>
@@ -128,7 +128,7 @@ ARTICLES = {
   <p class="lead">SaaS free trials are designed by conversion optimisation teams whose one job is to turn evaluators into paying customers. That's not inherently wrong — but knowing the playbook means you evaluate tools on your terms, not theirs.</p>
 </section>
 
-<div class="quick-answer" style="background:#f0fdf4;border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
+<div class="quick-answer" style="background:rgba(34,197,94,.10);border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
   <strong style="display:block;font-size:0.85rem;text-transform:uppercase;letter-spacing:.05em;color:#16a34a;margin-bottom:8px;">Quick Answer</strong>
   <p style="margin:0;">The biggest trap: importing your data during a trial. Once your CRM data, project history, or content is inside a platform, switching cost skyrockets. Import only what you need to evaluate core functionality.</p>
 </div>
@@ -171,7 +171,7 @@ ARTICLES = {
   <li>Start monthly if you convert; switch to annual after 60 days</li>
 </ol>
 
-<div class="article-cta" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
+<div class="article-cta" style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
   <h3 style="margin:0 0 8px;">Free trial guides for 21 major SaaS tools</h3>
   <p style="color:#64748b;margin:0 0 16px;">Step-by-step guides on how to get the most out of each vendor's free trial without the traps.</p>
   <a href="/pages" style="display:inline-block;background:#0f172a;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Browse Free Trial Guides →</a>
@@ -188,7 +188,7 @@ ARTICLES = {
   <p class="lead">The average 50-person company pays for 24 SaaS tools. 30-40% of that spend is wasted on unused licences, redundant functionality, and tools nobody actually logs into. A proper audit takes 3-4 hours and typically surfaces $20,000-80,000 in annual savings.</p>
 </section>
 
-<div class="quick-answer" style="background:#f0fdf4;border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
+<div class="quick-answer" style="background:rgba(34,197,94,.10);border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
   <strong style="display:block;font-size:0.85rem;text-transform:uppercase;letter-spacing:.05em;color:#16a34a;margin-bottom:8px;">Quick Answer</strong>
   <p style="margin:0;">Start by pulling your company credit card and bank statements for the last 90 days. Filter for SaaS-looking charges ($XX/month or $XXX/year patterns). You'll likely find 3-5 tools nobody knew you were still paying for.</p>
 </div>
@@ -266,7 +266,7 @@ ARTICLES = {
   <li>Average annual saving from audit: $31,000 for a 50-person company</li>
 </ul>
 
-<div class="article-cta" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
+<div class="article-cta" style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
   <h3 style="margin:0 0 8px;">Free SaaS Stack Audit Template</h3>
   <p style="color:#64748b;margin:0 0 16px;">Get our spreadsheet template with the usage scoring matrix and comparison framework.</p>
   <a href="/pages/saas-stack-audit-checkout" style="display:inline-block;background:#0f172a;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Get the Audit Template →</a>
@@ -283,7 +283,7 @@ ARTICLES = {
   <p class="lead">SaaS pricing has gotten more sophisticated — and more aggressive. Vendors are using AI tiers, usage-based traps, and bundle lock-ins that were rare two years ago. Here's what's happening in 2026 and how to protect your budget.</p>
 </section>
 
-<div class="quick-answer" style="background:#f0fdf4;border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
+<div class="quick-answer" style="background:rgba(34,197,94,.10);border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
   <strong style="display:block;font-size:0.85rem;text-transform:uppercase;letter-spacing:.05em;color:#16a34a;margin-bottom:8px;">Quick Answer</strong>
   <p style="margin:0;">The #1 pricing trick in 2026: "AI" add-ons that bundle features you already paid for in your current plan, repackaged as a premium AI tier. Always ask: "Was this feature available before the AI plan launched? Why does it require an upgrade now?"</p>
 </div>
@@ -330,7 +330,7 @@ ARTICLES = {
 <p>SSO (Single Sign-On) is a basic security requirement for most companies with 20+ employees. Many SaaS vendors lock SSO behind their enterprise tier, which can be 3-4x the standard price. This is called the "SSO tax" and it's a significant hidden cost.</p>
 <p><strong>How to fight back:</strong> Ask if SSO is included in your target plan before you get deep into the evaluation. For security tools especially, refusing to provide SSO at mid-market prices is a red flag about the vendor's security posture.</p>
 
-<div class="article-cta" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
+<div class="article-cta" style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
   <h3 style="margin:0 0 8px;">Track SaaS price changes as they happen</h3>
   <p style="color:#64748b;margin:0 0 16px;">SaaSpare monitors weekly pricing for 15+ SaaS tools and publishes every change with timestamps. Know before your renewal.</p>
   <a href="/pages/saas-pricing-changes" style="display:inline-block;background:#0f172a;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">See Pricing Changes →</a>
@@ -347,7 +347,7 @@ ARTICLES = {
   <p class="lead">We spent 6 weeks running the same sales process through Salesforce, HubSpot, Pipedrive, and Monday CRM with a test team of 8 sales reps. Here's what we found — including the parts the vendor comparison pages never tell you.</p>
 </section>
 
-<div class="quick-answer" style="background:#f0fdf4;border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
+<div class="quick-answer" style="background:rgba(34,197,94,.10);border-left:4px solid #16a34a;padding:20px 24px;margin:32px 0;border-radius:0 8px 8px 0;">
   <strong style="display:block;font-size:0.85rem;text-transform:uppercase;letter-spacing:.05em;color:#16a34a;margin-bottom:8px;">Quick Answer</strong>
   <p style="margin:0;"><strong>Best overall:</strong> HubSpot for teams under 200 that want marketing + CRM unified. <strong>Best value:</strong> Pipedrive for pure-play sales teams under 50 people. <strong>Best enterprise:</strong> Salesforce (but you need a dedicated admin). <strong>Best UX:</strong> Monday CRM by a wide margin.</p>
 </div>
@@ -370,7 +370,7 @@ ARTICLES = {
       <td style="padding:12px;text-align:center;">Enterprise (200+ users)</td>
       <td style="padding:12px;text-align:center;">8.4/10</td>
     </tr>
-    <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;">
+    <tr style="border-bottom:1px solid #e2e8f0;background:rgba(255,255,255,.05);">
       <td style="padding:12px;font-weight:600;">HubSpot</td>
       <td style="padding:12px;text-align:center;">Free / $45/month</td>
       <td style="padding:12px;text-align:center;">SMB with marketing team</td>
@@ -382,7 +382,7 @@ ARTICLES = {
       <td style="padding:12px;text-align:center;">Sales-first SMBs</td>
       <td style="padding:12px;text-align:center;">8.9/10</td>
     </tr>
-    <tr style="background:#f8fafc;">
+    <tr style="background:rgba(255,255,255,.05);">
       <td style="padding:12px;font-weight:600;">Monday CRM</td>
       <td style="padding:12px;text-align:center;">$12/user/month</td>
       <td style="padding:12px;text-align:center;">Visual pipeline teams</td>
@@ -445,7 +445,7 @@ ARTICLES = {
   <li><strong>Team already on Monday for project management:</strong> Monday CRM</li>
 </ul>
 
-<div class="article-cta" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
+<div class="article-cta" style="background:rgba(255,255,255,.05);border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;text-align:center;">
   <h3 style="margin:0 0 8px;">Compare detailed CRM pricing</h3>
   <p style="color:#64748b;margin:0 0 16px;">See verified current pricing for all four CRMs, including hidden costs and annual vs monthly breakdown.</p>
   <a href="/best-crm-software-2026" style="display:inline-block;background:#0f172a;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Compare CRM Pricing →</a>
