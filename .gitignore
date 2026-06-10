@@ -18,3 +18,4 @@ outputs/generated/
 site/_site/
 node_modules/
 .claude/
+jarvis/.gsc_snapshot.json

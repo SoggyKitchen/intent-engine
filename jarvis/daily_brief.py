@@ -68,6 +68,33 @@ def count_redirects():
             bare += 1
     return live, bare, recent_wins
 
+def check_traffic_alarm():
+    """Proactive watchdog: compare today's total tracked impressions against
+    the last run's snapshot. A >20% drop is spoken FIRST in the brief —
+    the June 2026 indexing cliff sat unnoticed for 9 days; never again."""
+    opps = load_revenue_opps()
+    total = sum(o["impr"] for o in opps)
+    snap_file = Path(__file__).parent / ".gsc_snapshot.json"
+    alert = None
+    try:
+        prev = json.loads(snap_file.read_text(encoding="utf-8"))
+        prev_total = float(prev.get("total_impressions", 0))
+        if prev_total > 100 and total < prev_total * 0.8:
+            pct = (1 - total / prev_total) * 100
+            alert = (f"ALERT, sir: tracked impressions dropped {pct:.0f} percent "
+                     f"since the last brief — {prev_total:.0f} down to {total:.0f}. "
+                     "Recommend checking Search Console indexing immediately.")
+    except Exception:
+        pass
+    if total > 0:
+        try:
+            snap_file.write_text(json.dumps(
+                {"total_impressions": total, "date": date.today().isoformat()}),
+                encoding="utf-8")
+        except Exception:
+            pass
+    return alert
+
 def get_recent_git_log():
     try:
         result = subprocess.run(
@@ -89,6 +116,10 @@ def build_brief():
 
     lines = []
     lines.append(f"Good morning, sir. SaaSpare status briefing for {today}.\n")
+
+    alarm = check_traffic_alarm()
+    if alarm:
+        lines.insert(0, alarm + "\n")
 
     # Revenue headline
     if opps:
