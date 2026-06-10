@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-09T21:46:46+00:00",
+  "generated_at_utc": "2026-06-10T01:29:35+00:00",
   "mode": "apply",
   "pages_flagged": 23,
   "claim_labels_seen": [
@@ -99,7 +99,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a href=\"/go/wix\" class=\"sp-btn sp-btn-primary g"
+          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a rel=\"sponsored nofollow\" href=\"/go/wix\" class"
         }
       ],
       "trust_state_bumped": false
@@ -257,7 +257,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "14-day money-back guarantee",
-          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a href=\"/go/wix\" class=\"sp-btn sp-btn-primary g"
+          "context": "<div> <div class=\"tc-price\">$27/mo</div> 14-day money-back guarantee </div> <a rel=\"sponsored nofollow\" href=\"/go/wix\" class"
         },
         {
           "label": "sla_guarantee",
