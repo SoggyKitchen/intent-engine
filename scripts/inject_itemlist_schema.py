@@ -30,7 +30,7 @@ for html in sorted(PAGES.glob("7-best-*-alternatives-*.html")):
     # Extract tool names
     names = []
     for m in TOOL_NAME_RE.finditer(text):
-        raw = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+        raw = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(1))).strip()
         if raw and raw not in names:
             names.append(raw)
 
