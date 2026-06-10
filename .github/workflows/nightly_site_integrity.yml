@@ -237,6 +237,12 @@ jobs:
         run: uv run python scripts/fix_orphan_script_tails.py
         continue-on-error: true
 
+      # 4i-hero. Move blocks injected inside the hero H1 flex row (squashed
+      # skinny column) out to full width below the H1.
+      - name: Relocate hero-injected blocks
+        run: uv run python scripts/fix_hero_injection_layout.py
+        continue-on-error: true
+
       # 4i-ctr. CTR Optimizer — find pages ranking 8-20 with low CTR,
       # rewrite <title> and <meta description> with power words + year + brackets.
       # Uses data/gsc_export.csv if present, otherwise applies to known opportunity pages.
