@@ -447,6 +447,64 @@ nav#nav,nav{position:fixed !important;top:0;left:0;right:0;z-index:300;transitio
 .sp-tw-cursor{display:inline-block;width:.05em;background:#ff416d;height:.85em;vertical-align:-.05em;margin-left:.05em;animation:spBlink 1s steps(2,end) infinite;box-shadow:0 0 14px #ff416d}
 @keyframes spBlink{0%,50%{opacity:1}50.01%,100%{opacity:0}}
 
+/* ── STUNNING UPGRADE v1 ─────────────────────── */
+/* aurora sweep behind hero */
+.hero-aurora{position:absolute;top:-30%;left:50%;width:1400px;height:1400px;margin-left:-700px;pointer-events:none;opacity:.5;filter:blur(80px);background:conic-gradient(from 0deg at 50% 50%,transparent 0deg,rgba(233,69,96,.12) 60deg,transparent 130deg,rgba(255,122,154,.07) 200deg,transparent 270deg,rgba(180,30,60,.1) 320deg,transparent 360deg);border-radius:50%;animation:auroraSpin 26s linear infinite;z-index:0}
+@keyframes auroraSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* scroll progress bar */
+#sp-progress{position:fixed;top:0;left:0;height:2px;width:100%;z-index:500;background:linear-gradient(90deg,var(--red),#ff7a9a);transform-origin:0 50%;transform:scaleX(0);pointer-events:none;box-shadow:0 0 12px rgba(233,69,96,.55)}
+
+/* glint sweep on primary buttons */
+.search-box button,.nav-cta,.email-row button{position:relative;overflow:hidden}
+.search-box button::after,.nav-cta::after,.email-row button::after{content:'';position:absolute;top:0;bottom:0;left:-80%;width:50%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:btnGlint 4.5s ease-in-out infinite}
+@keyframes btnGlint{0%,70%{left:-80%}85%,100%{left:140%}}
+
+/* richer scroll reveal: rise + de-blur */
+.reveal{opacity:0;transform:translateY(28px) scale(.985);filter:blur(6px);transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1),filter .85s ease}
+.reveal.visible{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+/* staggered children inside revealed sections */
+.reveal .tool-card,.reveal .trust-item,.reveal .verdict-item,.reveal .step{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1),border-color .2s,box-shadow .28s}
+.reveal.visible .tool-card,.reveal.visible .trust-item,.reveal.visible .verdict-item,.reveal.visible .step{opacity:1;transform:translateY(0)}
+.reveal.visible > * > .tool-card:nth-child(1),.reveal.visible .verdict-item:nth-child(1){transition-delay:.05s}
+.reveal.visible .tool-card:nth-child(2),.reveal.visible .trust-item:nth-child(2),.reveal.visible .verdict-item:nth-child(2),.reveal.visible .step:nth-child(2){transition-delay:.1s}
+.reveal.visible .tool-card:nth-child(3),.reveal.visible .trust-item:nth-child(3),.reveal.visible .verdict-item:nth-child(3),.reveal.visible .step:nth-child(3){transition-delay:.18s}
+.reveal.visible .tool-card:nth-child(4),.reveal.visible .trust-item:nth-child(4){transition-delay:.26s}
+
+/* gradient stat numbers + underline draw on section titles */
+.stat-val{background:linear-gradient(135deg,#fff 30%,#ffb9c8 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat-val span{-webkit-text-fill-color:var(--red)}
+.section-title{position:relative;display:inline-block}
+.section-title::after{content:'';position:absolute;left:0;bottom:-8px;height:3px;width:100%;border-radius:3px;background:linear-gradient(90deg,var(--red),rgba(233,69,96,0));transform:scaleX(0);transform-origin:0 50%;transition:transform .9s cubic-bezier(.22,1,.36,1) .25s}
+.reveal.visible .section-title::after{transform:scaleX(1)}
+
+/* spotlight cursor glow on all card types */
+.comp-card,.tool-card,.hero-path,.trust-item{position:relative;overflow:hidden}
+.comp-card::before,.tool-card::before,.trust-item::before{content:'';position:absolute;inset:0;background:radial-gradient(220px circle at var(--mx,50%) var(--my,50%),rgba(233,69,96,.13),transparent 65%);opacity:0;transition:opacity .3s;pointer-events:none}
+.comp-card:hover::before,.tool-card:hover::before,.trust-item:hover::before{opacity:1}
+
+/* newsletter card breathing glow */
+@keyframes boxGlow{0%,100%{box-shadow:0 30px 90px rgba(255,45,92,.12),inset 0 1px 0 rgba(255,255,255,.06)}50%{box-shadow:0 30px 110px rgba(255,45,92,.26),inset 0 1px 0 rgba(255,255,255,.09)}}
+.news-glow{animation:boxGlow 5s ease-in-out infinite}
+
+/* marquee items get a lift */
+.brand-item{transition:opacity .25s,transform .25s}
+.brand-item:hover{opacity:1!important;transform:translateY(-2px)}
+
+/* mobile fixes: nav link collision + search overflow */
+@media(max-width:600px){
+  nav .sp-nav-link,#sp-nav .sp-nav-link{display:none!important}
+  .search-wrap{width:100%}
+  .search-box input{min-width:0;width:0}
+  .search-box button{padding:.8rem 1.2rem}
+}
+
+/* accessibility: kill decorative motion for reduced-motion users */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal,.reveal .tool-card,.reveal .trust-item,.reveal .verdict-item,.reveal .step{opacity:1;transform:none;filter:none}
+  .hero-grid{display:none}
+}
 </style>
 <script>(function(){function loadAd(){var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0';s.setAttribute('data-deferred-adsense','1');document.head.appendChild(s);}if('requestIdleCallback' in window){requestIdleCallback(loadAd,{timeout:3000});}else{setTimeout(loadAd,1500);}})();</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
@@ -654,6 +712,7 @@ nav.sp-topnav{display:none!important}
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
+  <div class="hero-aurora"></div>
   <div class="hero-grid"><canvas id="wave-dots"></canvas></div>
   <div class="hero-floor"></div>
   <div class="hero-streak"></div>
@@ -678,7 +737,7 @@ nav.sp-topnav{display:none!important}
     <span class="tw-line sp-accent"><span id="tw-word">CRM Software</span><span class="sp-tw-cursor"></span></span><br>
     for teams that care about ROI
   </h1>
-<p style="font-size:0.82rem;color:#64748b;margin:8px 0 24px;">By <a href="/authors/kaylan-von-papen" style="color:#475569;font-weight:600;">Kaylan von Papen</a> &middot; Updated 2026-05-21 &middot; <a href="/methodology" style="color:#64748b;">Methodology</a></p>
+<p style="font-size:0.82rem;color:rgba(255,248,245,.38);margin:8px 0 24px;position:relative;z-index:2;animation:subEnter .8s .45s cubic-bezier(.34,1.56,.64,1) both">By <a href="/authors/kaylan-von-papen" style="color:rgba(255,248,245,.6);font-weight:600;">Kaylan von Papen</a> &middot; Updated 2026-05-21 &middot; <a href="/methodology" style="color:rgba(255,248,245,.38);text-decoration:underline;text-underline-offset:3px;">Methodology</a></p>
 
   <p class="hero-sub">We dig through pricing pages, call out hidden fees, and give you a straight verdict — so your team picks the right tool without the regret.</p>
 
@@ -950,7 +1009,7 @@ nav.sp-topnav{display:none!important}
 <!-- ═══ NEWSLETTER (new design) ═══ -->
 <section style="padding:1rem clamp(1.25rem,4vw,3rem) 6rem">
   <div style="max-width:880px;margin:0 auto">
-    <div style="padding:3.5rem 2.5rem;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(255,70,111,.20),transparent 55%),linear-gradient(180deg,rgba(60,9,24,.82),rgba(22,9,15,.92));border:1px solid rgba(255,75,115,.25);border-radius:28px;box-shadow:0 30px 90px rgba(255,45,92,.14),inset 0 1px 0 rgba(255,255,255,.06)">
+    <div class="news-glow" style="padding:3.5rem 2.5rem;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(255,70,111,.20),transparent 55%),linear-gradient(180deg,rgba(60,9,24,.82),rgba(22,9,15,.92));border:1px solid rgba(255,75,115,.25);border-radius:28px;box-shadow:0 30px 90px rgba(255,45,92,.14),inset 0 1px 0 rgba(255,255,255,.06)">
       <span style="display:inline-flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ff7a9a;padding:6px 14px;border-radius:9999px;background:rgba(255,65,109,.10);border:1px solid rgba(255,75,115,.25)"><span style="width:6px;height:6px;border-radius:50%;background:#ff416d;box-shadow:0 0 10px #ff416d;animation:dotPulse 2.4s ease-in-out infinite"></span>Newsletter</span>
       <h2 style="font-size:clamp(32px,4vw,52px);line-height:1.02;font-weight:900;letter-spacing:-.035em;color:#fff7f8;margin:1rem 0;text-wrap:balance">Insider insights. <span style="background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:spGlint 3.6s linear infinite">Smarter SaaS decisions.</span></h2>
       <p style="font-size:1.05rem;line-height:1.65;color:rgba(255,247,248,.64);max-width:480px;margin:0 auto">Pricing changes, hidden fees, tool comparisons, and verified deal alerts &mdash; every Wednesday.</p>
@@ -1162,12 +1221,22 @@ const cObs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){
 }})},{threshold:.06});
 document.querySelectorAll('.cat-grid,.comp-grid').forEach(g=>cObs.observe(g));
 
-/* CARD MOUSE GLOW */
-document.querySelectorAll('.cat-card').forEach(c=>c.addEventListener('mousemove',e=>{
+/* CARD MOUSE GLOW — spotlight follows cursor on every card type */
+document.querySelectorAll('.cat-card,.comp-card,.tool-card,.trust-item,.hero-path').forEach(c=>c.addEventListener('mousemove',e=>{
   const r=c.getBoundingClientRect();
   c.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
   c.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
 }));
+
+/* SCROLL PROGRESS BAR */
+(function(){
+  const bar=document.createElement('div');bar.id='sp-progress';document.body.appendChild(bar);
+  function upd(){
+    const max=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.transform='scaleX('+(max>0?window.scrollY/max:0)+')';
+  }
+  window.addEventListener('scroll',upd,{passive:true});upd();
+})();
 
 /* FILTER */
 function filterComps(q){const lq=q.toLowerCase();document.querySelectorAll('#comp-grid .comp-card').forEach(c=>{c.classList.toggle('comp-hidden',q.length>0&&!c.dataset.title.includes(lq)&&!c.querySelector('.comp-title').textContent.toLowerCase().includes(lq))})}
