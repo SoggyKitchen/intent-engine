@@ -125,7 +125,7 @@ TOOLS = {
 
 def make_pricing_page(tool_slug: str, data: dict) -> str:
     d = data["display"]
-    title = f'{d} Pricing {YEAR} (Tested {TODAY}) — Real Costs & Every Plan'
+    title = f'{d} Pricing {YEAR} (Verified {TODAY}) — Real Costs & Every Plan'
     desc = f'Updated {TODAY}. {d} pricing plans: what you actually pay, hidden fees, and the best plan for your needs. Starting from {data["pricing_start"]}.'
 
     pricing_rows = "".join(
@@ -347,7 +347,7 @@ nav.scrolled{{background:rgba(7,7,13,.9);border-bottom:1px solid rgba(255,255,25
     <a href="/pages/" style="color:rgba(255,248,245,.4)">Reviews</a> / {d} Review {YEAR}
   </nav>
 
-  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.18);padding:5px 14px;border-radius:100px;font-size:.7rem;font-weight:700;color:rgba(233,69,96,.85);margin-bottom:1rem;text-transform:uppercase;letter-spacing:.08em">Independent Review &middot; Tested {TODAY}</div>
+  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.18);padding:5px 14px;border-radius:100px;font-size:.7rem;font-weight:700;color:rgba(233,69,96,.85);margin-bottom:1rem;text-transform:uppercase;letter-spacing:.08em">Independent Review &middot; Verified {TODAY}</div>
 
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">{d} Review {YEAR}: Is It Worth It? Honest Verdict</h1>
 

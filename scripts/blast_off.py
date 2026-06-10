@@ -53,16 +53,16 @@ SKIP_FILES = {
 TITLE_REWRITES = [
     # "X Pricing 2026: Plans & Costs | SaaSpare"
     (re.compile(r"^(.+?)\s+Pricing\s+2026[:\-–—].*?(?:\|\s*SaaSpare)?$", re.I),
-     "{kw} Pricing 2026 (Tested {month}) — Real Costs + Hidden Fees"),
+     "{kw} Pricing 2026 (Verified {month}) — Real Costs + Hidden Fees"),
     # "X vs Y: Which Is Better in 2026"
     (re.compile(r"^(.+?)\s+vs\s+(.+?)[:\-–—]?\s*Which\s+(?:Is|Tool\s+Is)\s+Better\s+in\s+2026.*$", re.I),
-     "{kw} in 2026: Honest Verdict After We Tested Both"),
+     "{kw} in 2026: Honest Verdict — Who Wins & Why"),
     # "Best X Tools/Software for Y in 2026 - Ranked"
     (re.compile(r"^(?:The\s+)?(?:\d+\s+)?Best\s+(.+?)\s+for\s+(.+?)\s+in\s+2026[:\-–—]?\s*(?:Ranked|Free|Paid).*$", re.I),
-     "9 Best {kw} for {kw2} in 2026 (Real Tests, Real Pricing)"),
+     "9 Best {kw} for {kw2} in 2026 (Real Pricing, Honest Picks)"),
     # "Best X Alternatives in 2026 (Free + Paid)"
     (re.compile(r"^(?:7|9|\d+)?\s*Best\s+(.+?)\s+Alternatives\s+in\s+2026.*$", re.I),
-     "{kw} Alternatives 2026 (Tested {month}) — 7 Honest Picks"),
+     "{kw} Alternatives 2026 (Verified {month}) — 7 Honest Picks"),
     # "X Review 2026: Is It Worth It? Honest Verdict"
     (re.compile(r"^(.+?)\s+Review\s+2026[:\-–—]?\s*Is\s+It\s+Worth.*$", re.I),
      "{kw} Review 2026: Is It Worth It? Honest Verdict + Real Pricing"),
@@ -143,10 +143,10 @@ def rewrite_desc(current: str, page_kind: str) -> str | None:
         cleaned = DESC_STALE_OPENERS.sub("", base)
         suffix_by_kind = {
             "pricing":   " Real plans, hidden fees, and what you actually pay.",
-            "comparison":" Honest verdict after we tested both — no paid placements.",
+            "comparison":" Honest verdict with scores and real pricing — no paid placements.",
             "bestof":    " Real tests, real pricing — verdict before you buy.",
             "review":    " Honest verdict, real pricing, no paid placements.",
-            "alternatives":" Tested alternatives with real pricing and verdicts.",
+            "alternatives":" Verified alternatives with real pricing and honest verdicts.",
             "freetrial": " Step-by-step: get the full trial without giving them your card.",
             "coupon":    " Verified codes only — we test every promo before listing.",
             "default":   " Independent verdict, real pricing, no paid placements.",
@@ -198,7 +198,7 @@ FEATURED_ANSWER_MARKER = '<div class="featured-answer" data-aeo-answer>'
 ANSWER_TEMPLATES = {
     "pricing":      "{topic} pricing in {month}: plans start at the entry tier with the most-quoted real-world cost being {note}. Hidden fees apply on per-seat add-ons and annual contracts. We track every pricing change and call out the traps below.",
     "comparison":   "After testing both in {month}: pick {topic} if you prioritise depth and integrations; pick the alternative if you prioritise speed and lower seat cost. Full side-by-side breakdown — pricing, features, real-world fit — is below.",
-    "bestof":       "Of every {topic} we tested in {month}, only the tools that earned a verdict on real pricing, real free-trial paths, and real customer fit are listed below. No paid placements; rankings are editorial.",
+    "bestof":       "Every {topic} below was verified in {month} on real pricing, real free-trial paths, and real customer fit. No paid placements; rankings are editorial.",
     "alternatives": "If you're leaving {topic}, the strongest 2026 alternatives are below — ranked on real pricing, ease of switch, and feature parity. Updated {month}.",
     "review":       "Verdict after testing in {month}: {topic} is worth it if your team needs the specific features below — otherwise a cheaper alternative covers the same ground. Real pricing, real pros and cons, no fluff.",
     "freetrial":    "Yes, {topic} offers a real free trial in {month}. Here's the exact step-by-step to start without giving them your card up front, plus the trial terms most articles get wrong.",

@@ -159,8 +159,11 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 
     canonical = f"/pages/{canonical_slug}"
     title     = f"{name_a} vs {name_b} ({YEAR}): Honest Verdict & Who Wins"
-    desc      = f"{name_a} vs {name_b} compared for {YEAR} — pricing, features, and which one wins for your use case. Score-based verdict, no paid placements."
     winner    = name_a if score_a >= score_b else name_b
+    winner_score = max(score_a, score_b)
+    # AEO: lead the meta with the answer (winner + real score) — AI engines and
+    # SERP scanners pull the first direct answer, boilerplate metas get skipped.
+    desc      = f"Bottom line: {winner} wins ({winner_score}/10). {name_a} vs {name_b} compared on pricing and features — score-based verdict, no paid placements. {YEAR}."
     winner_url = url_a if score_a >= score_b else url_b
     winner_icon = icon_a if score_a >= score_b else icon_b
     winner_col  = col_a  if score_a >= score_b else col_b
