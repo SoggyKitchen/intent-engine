@@ -59,20 +59,28 @@ def upgrade_title(old_title: str, keyword: str, position: float) -> str:
         if not has_bracket:
             return f"{t} [Expert Picks]"
 
-    # Pricing pages
+    # Pricing pages — skip if title already has year AND brackets (already optimized)
     if "pricing" in kw_lower or "price" in kw_lower or "cost" in kw_lower:
+        if has_year and has_bracket:
+            return t
         return f"{t.rstrip('.')} — What You Actually Pay in {year}"
 
-    # Review pages
+    # Review pages — skip if already optimized
     if "review" in kw_lower:
+        if has_year and has_bracket:
+            return t
         return f"{t.rstrip('.')} — Is It Worth It? [{year} Verdict]"
 
-    # Free trial pages
+    # Free trial / free plan pages — skip if already optimized
     if "free trial" in kw_lower or "free plan" in kw_lower:
+        if has_year and has_bracket:
+            return t
         return f"{t.rstrip('.')} — How to Get It (Step-by-Step)"
 
-    # Alternative pages
+    # Alternative pages — skip if already optimized
     if "alternative" in kw_lower:
+        if has_year and has_bracket:
+            return t
         return f"{t.rstrip('.')} in {year} [Cheaper Options Ranked]"
 
     # Generic fallback — add year + bracket
