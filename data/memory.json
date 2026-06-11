@@ -385,6 +385,50 @@
         "ctr": "0.34%",
         "clicks": 79
       }
+    },
+    {
+      "date": "2026-06-11",
+      "session": "revenue-hunter",
+      "affiliate_status": {
+        "fiverr_awin": "APPROVED 2026-06-03, awinmid=6288, awinaffid=2917137, /go/fiverr LIVE and earning",
+        "freshbooks_awin": "REJECTED 2026-06-01. FreshBooks_Closing 06.01.2026 (aid:56787) - program closed",
+        "freshbooks_partnerstack": "Application submitted 2026-06-09 via partnerships@saaspare.org - PENDING",
+        "impact_com": "Ticket #831603 resolved. Only Semrush active. Wix pending. HubSpot/1Password still PENDING",
+        "wix_impact": "Contract application sent 2026-06-01 - still pending review",
+        "partnerstack": "Support ticket 115928 open (ClickUp/Monday/ActiveCampaign/Dashlane blocked)"
+      },
+      "gmail_findings": [
+        "Fiverr Awin approval confirmed June 3 2026 - tracking link awinmid=6288&awinaffid=2917137",
+        "FreshBooks Awin REJECTED June 1 2026 - program closing",
+        "Impact.com: resolved ticket #831603 - still only Semrush partnered",
+        "PartnerStack: FreshBooks application received June 9 (partnerships@saaspare.org)",
+        "No new approvals this session"
+      ],
+      "direct_url_leaks_fixed": "None found - previous grep false positives were canonical tag matches, not actual external hrefs",
+      "ctr_fixes": [
+        "Mixpanel pricing: meta_desc added to generate_pricing_pages_v3.py (event-volume trap angle, 742 impr, pos 13.7)",
+        "Mixpanel pricing HTML: meta updated directly to match (premium template, generator skips)"
+      ],
+      "content_fixes": [
+        "fiverr-vs-upwork: FULL REWRITE - removed all broken template placeholders, added real content",
+        "fiverr-vs-upwork: title/meta updated to buyer-intent 'fees + B2B fit' angle",
+        "fiverr-vs-upwork: FAQ schema (JSON-LD) rewritten with real Fiverr/Upwork fee data",
+        "fiverr-vs-upwork: FAQ tab answers rewritten - real fees, use cases, B2B verdict",
+        "fiverr-vs-upwork: ZERO /go/fiverr links -> 4x /go/fiverr CTAs added (overview, verdict, sidebar)"
+      ],
+      "new_page": "fiverr-vs-toptal-which-is-better-in-2026.html - Fiverr (8.5/10) wins vs Toptal (7.5/10) for B2B SaaS, targets 'fiverr vs toptal' keyword gap, 3x /go/fiverr CTAs, real pricing comparison ($15-300/gig vs $60-200+/hr), FAQPage schema",
+      "tests": "57/57 passed",
+      "measure_at_21days": {
+        "fiverr-vs-toptal-impressions": "new page - baseline TBD",
+        "fiverr-vs-upwork-ctr": "was 0 affiliate clicks - expect improvement with /go/fiverr CTAs",
+        "mixpanel-pricing-ctr": "was 0%, pos 13.7, 742 impr - target >0.5% with new meta"
+      },
+      "next_human_actions": [
+        "URGENT: PartnerStack Ticket 115928 - check for approval (ClickUp $36-150, Monday $150, ActiveCampaign $85, Dashlane $25-50)",
+        "ACTION: Log into Awin (publisher 2917137) - apply to GetResponse (3142111), Elementor (6798066), ProtonVPN (5227916), Parallels (2005415)",
+        "ACTION: Check Impact.com (account 7269601) - apply for HubSpot, 1Password, Monday manually",
+        "MONITOR: FreshBooks PartnerStack application (sent 2026-06-09)"
+      ]
     }
   ]
 }
