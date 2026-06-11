@@ -1,9 +1,9 @@
 {
-  "total_pages": 1405,
-  "updated": 1404,
+  "total_pages": 1406,
+  "updated": 1405,
   "skipped": 1,
-  "orphans_before": 55,
-  "orphans_after": 52,
+  "orphans_before": 56,
+  "orphans_after": 57,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/monday-com-vs-clickup-which-is-better-in-2026",
-        "/pages/notion-vs-asana-which-is-better-in-2026"
+        "/pages/monday-com-vs-jira-which-is-better-in-2026",
+        "/pages/notion-vs-basecamp-which-is-better-in-2026"
       ]
     },
     {
@@ -21,8 +21,8 @@
         "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
         "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
         "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
-        "/pages/partnerstack-vs-firstpromoter-which-is-better-in-2026",
-        "/pages/monday-com-vs-asana-which-is-better-in-2026"
+        "/pages/tresorit-vs-sync-com-which-is-better-in-2026",
+        "/pages/mixpanel-vs-tableau-which-is-better-in-2026"
       ]
     },
     {
@@ -31,8 +31,8 @@
         "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
         "/pages/tenable-vs-tresorit-which-is-better-in-2026",
         "/pages/1password-vs-password-boss-which-is-better-in-2026",
-        "/pages/asana-vs-monday-com-which-is-better-in-2026",
-        "/pages/activecampaign-vs-convertkit-which-is-better-in-2026"
+        "/pages/bitwarden-vs-dashlane-which-is-better-in-2026",
+        "/pages/zoho-crm-vs-insightly-which-is-better-in-2026"
       ]
     }
   ]
