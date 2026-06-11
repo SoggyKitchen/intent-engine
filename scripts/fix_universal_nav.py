@@ -91,6 +91,7 @@ NAV_HTML = """<nav id="sp-nav">
     <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="sp-nav-link">Comparisons</a>
+  <a href="/roi" class="sp-nav-link">ROI Calculator</a>
   <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
   <a href="/about" class="sp-nav-link">About</a>
@@ -142,6 +143,13 @@ def fix_page(path: Path) -> bool:
         if CSS_MARKER in html and 'sp-nav-link.active::after' not in html:
             if old_css_pat.search(html):
                 html = old_css_pat.sub(NAV_CSS, html, count=1)
+
+        # Upgrade navs missing the ROI Calculator link (June 2026 redesign)
+        if NAV_MARKER in html and '"/roi" class="sp-nav-link"' not in html:
+            html = html.replace(
+                '<a href="/pages/" class="sp-nav-link">Comparisons</a>',
+                '<a href="/pages/" class="sp-nav-link">Comparisons</a>\n'
+                '  <a href="/roi" class="sp-nav-link">ROI Calculator</a>', 1)
 
         # Skip if already has new nav, current CSS, and no duplicate (idempotent)
         if NAV_MARKER in html and CSS_MARKER in html and 'sp-nav-link.active::after' in html:
