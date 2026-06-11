@@ -58,10 +58,29 @@ def _canonical_url(path: pathlib.Path, fallback: str) -> str:
     return fallback
 
 
+def _redirect_source_urls() -> set:
+    """URLs that 301 away via site/_redirects — a sitemap must never list a
+    redirect source (Google reports them as 'Page with redirect' and they
+    dilute the crawl budget of pages that should be indexed)."""
+    sources = set()
+    try:
+        for line in pathlib.Path("site/_redirects").read_text(encoding="utf-8-sig").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            parts = line.split()
+            if len(parts) >= 2 and parts[0].startswith("/"):
+                sources.add(DOMAIN + parts[0].rstrip("/"))
+    except OSError:
+        pass
+    return sources
+
+
 def get_all_urls():
     urls = []
     pages_dir = pathlib.Path("site/pages")
     site_dir = pathlib.Path("site")
+    redirected = _redirect_source_urls()
 
     skip = {"thanks", "verification", "index", "fo-verify", "fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f"}
     skip_prefixes = ("ph-preview-",)
@@ -77,6 +96,8 @@ def get_all_urls():
         if _is_noindex(f):
             continue
         url = _canonical_url(f, f"{DOMAIN}/pages/{f.stem}")
+        if url in redirected or f"{DOMAIN}/pages/{f.stem}" in redirected:
+            continue
         if url not in seen:
             seen.add(url)
             urls.append(url)
@@ -87,6 +108,8 @@ def get_all_urls():
         if _is_noindex(f):
             continue
         url = _canonical_url(f, f"{DOMAIN}/{f.stem}")
+        if url in redirected or f"{DOMAIN}/{f.stem}" in redirected:
+            continue
         if url not in seen:
             seen.add(url)
             urls.append(url)
@@ -103,6 +126,8 @@ def get_all_urls():
             if _is_noindex(f):
                 continue
             url = _canonical_url(f, f"{DOMAIN}/{sub}/{f.stem}")
+            if url in redirected or f"{DOMAIN}/{sub}/{f.stem}" in redirected:
+                continue
             if url not in seen:
                 seen.add(url)
                 urls.append(url)

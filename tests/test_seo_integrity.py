@@ -77,6 +77,21 @@ def _is_money_page(path: Path) -> bool:
     )
 
 
+
+def _redirect_sources() -> set[str]:
+    """Canonical URLs that 301 away via _redirects — correctly excluded from
+    the sitemap, so the inclusion test must skip them too."""
+    out = set()
+    try:
+        for line in (SITE / "_redirects").read_text(encoding="utf-8-sig").splitlines():
+            parts = line.strip().split()
+            if len(parts) >= 2 and parts[0].startswith("/") and not line.strip().startswith("#"):
+                out.add("https://saaspare.org" + parts[0].rstrip("/"))
+    except OSError:
+        pass
+    return out
+
+
 def _sitemap_urls() -> set[str]:
     if not SITEMAP.exists():
         return set()
@@ -106,6 +121,7 @@ def test_every_html_page_has_canonical():
 
 def test_every_indexable_page_in_sitemap():
     urls = _sitemap_urls()
+    redirected = _redirect_sources()
     missing: list[str] = []
     for path in _iter_html():
         if path in ALLOW_NOT_IN_SITEMAP:
@@ -123,6 +139,8 @@ def test_every_indexable_page_in_sitemap():
         # Compare by normalised canonical URL
         # sitemap entries may or may not include trailing slash. Accept
         # either shape.
+        if canonical in redirected:
+            continue
         if canonical not in urls and (canonical + "/") not in urls:
             missing.append(canonical)
     # Allow a small tolerance: sometimes sitemap lags slightly after a
