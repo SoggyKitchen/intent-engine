@@ -359,5 +359,32 @@
         "ElevenLabs does-have-free-plan format mirrors proven Notion/Sentry traffic pattern"
       ]
     }
+  ],
+  "entries": [
+    {
+      "date": "2026-06-11",
+      "session": "ceo-daily",
+      "affiliate_status": {
+        "fiverr_awin": "APPROVED 2026-06-03, awinmid=6288, already in _redirects",
+        "freshbooks_awin": "REJECTED 2026-06-01",
+        "freshbooks_partnerstack": "Application received 2026-06-09, pending",
+        "impact_wix": "Contract application sent 2026-06-01, pending",
+        "activecampaign": "APPROVED in _redirects (try.activecampaign.com/xc2j6av0g2wz)"
+      },
+      "ctr_fixes": [
+        "ramp-pricing: 1687 impr pos 10.2 - title now includes price anchor 5/mo",
+        "mixpanel-pricing: 742 impr pos 13.7 - title now includes plan prices",
+        "nordlayer-pricing: 270 impr pos 19.0 - title now includes per-user range"
+      ],
+      "new_page": "getresponse-vs-constant-contact-which-is-better-in-2026 (GetResponse wins 8.4 vs 8.0, earns $100/lead via CJ)",
+      "revenue_leaks": "ZERO - all vendor domain refs are Google Favicon API image sources, not href links",
+      "tests": "57/57 passed",
+      "site_stats": {
+        "pages": 1422,
+        "impressions": 22919,
+        "ctr": "0.34%",
+        "clicks": 79
+      }
+    }
   ]
 }
