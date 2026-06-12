@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-12T21:15:48.501602+00:00",
+  "generated_at": "2026-06-12T21:47:46.265284+00:00",
   "stats": {
-    "sitemap_urls": 1424,
-    "sitemap_with_lastmod": 1424,
-    "total_pages": 1485,
-    "indexable_pages": 1473,
+    "sitemap_urls": 1425,
+    "sitemap_with_lastmod": 1425,
+    "total_pages": 1486,
+    "indexable_pages": 1474,
     "title_over_70": 110,
-    "desc_over_165": 14,
-    "money_pages": 1206,
-    "soft": 100,
+    "desc_over_165": 13,
+    "money_pages": 1207,
+    "soft": 102,
     "duplicate_titles": 12,
     "duplicate_descs": 9
   },
@@ -56,6 +56,8 @@
     "site/pages/shopify-pricing-history-2026.html: /go/ link without rel attribute: /go/shopify",
     "site/pages/shopify-pricing-history-2026.html: /go/ link without rel attribute: /go/shopify",
     "site/pages/shopify-pricing-history-2026.html: /go/ link without rel attribute: /go/shopify",
+    "site/pages/partnerstack-pricing-2026-plans-costs-what-you-actually-pay.html: /go/ link without rel attribute: /go/partnerstack",
+    "site/pages/partnerstack-pricing-2026-plans-costs-what-you-actually-pay.html: /go/ link without rel attribute: /go/partnerstack",
     "site/pages/asana-pricing-history-2026.html: /go/ link without rel attribute: /go/asana",
     "site/pages/asana-pricing-history-2026.html: /go/ link without rel attribute: /go/asana",
     "site/pages/asana-pricing-history-2026.html: /go/ link without rel attribute: /go/asana",
@@ -115,5 +117,5 @@
     "duplicate description (2 pages): \"Updated June 2026. Best Pandadoc discount codes and promo of\" — ['site/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts.html', 'site/pages/pandadoc-coupon-2026-discount-codes-promo.html']",
     "duplicate description (2 pages): \"Updated June 2026. Best Salesforce discount codes and promo \" — ['site/pages/salesforce-coupon-2026-discount-codes-promo.html', 'site/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work.html']"
   ],
-  "soft_issues_total": 100
+  "soft_issues_total": 102
 }
