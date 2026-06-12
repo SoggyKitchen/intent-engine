@@ -166,6 +166,32 @@
         "generate_pricing_pages_v3.py SKIPS pages that already have premium template (pr-layout/price-at-glance/feat-col)",
         "PartnerStack appeal still pending \u2014 check #115928 status in 7-10 days"
       ]
+    },
+    {
+      "date": "2026-06-12",
+      "session": "revenue-hunter-2026-06-12",
+      "gmail_scan": {
+        "awin": "Fiverr APPROVED (already activated in prior session). FreshBooks REJECTED by Awin.",
+        "impact": "Account 7269601 active but ONLY Semrush partnered. Wix contract pending. HubSpot/Shopify not yet approved.",
+        "partnerstack": "APPROVED for PartnerStack own affiliate program (promoting PartnerStack.com). Separate program DECLINED (reason: approved other account). /go/partnerstack needs real tracking link from PS dashboard \u2014 ESCALATE TO OWNER.",
+        "freshbooks": "PartnerStack application submitted 2026-06-09, pending.",
+        "hubspot_direct": "REJECTED by HubSpot direct affiliate program (website quality requirement)."
+      },
+      "ctr_fixes": [
+        "ramp-pricing: title changed to emphasize No Change June 2026 (pos 3.7, 121 impr, ~0 clicks for change queries)",
+        "mixpanel-pricing: title updated with [Verified June] (pos 13.7, 742 impr)",
+        "nordlayer-pricing: meta expanded to full sentence, no truncation (pos 19.0, 270 impr)"
+      ],
+      "new_pages": [
+        "partnerstack-pricing-2026-plans-costs-what-you-actually-pay \u2014 full pricing breakdown, FAQ schema, alternatives table, /go/partnerstack CTAs"
+      ],
+      "leaks_fixed": 0,
+      "action_required_from_owner": [
+        "PartnerStack own affiliate: log into PartnerStack dashboard, get real tracking link for promoting PartnerStack.com, update /go/partnerstack in site/_redirects",
+        "Impact.com: apply to Shopify and other programs directly from impact.com dashboard (currently only Semrush is connected)",
+        "CJ deep links needed for: GetResponse (3142111), Elementor (6798066), Proton (5227916), AWeber (5111249), Parallels (2005415) \u2014 get from app.cj.com -> Links -> Get Links"
+      ],
+      "tests": "57/57 passed"
     }
   ],
   "affiliate_approvals": [
