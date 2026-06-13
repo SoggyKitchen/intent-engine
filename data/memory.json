@@ -455,6 +455,38 @@
         "ACTION: Check Impact.com (account 7269601) - apply for HubSpot, 1Password, Monday manually",
         "MONITOR: FreshBooks PartnerStack application (sent 2026-06-09)"
       ]
+    },
+    {
+      "date": "2026-06-13",
+      "session": "revenue-hunter-2026-06-13",
+      "gmail_scan": {
+        "awin": "Fiverr APPROVED 2026-06-03 - already activated in _redirects with correct Awin link (awinmid=6288&awinaffid=2917137). FreshBooks REJECTED by Awin.",
+        "impact": "Account 7269601 ACTIVE - only Semrush partnered. Wix contract pending. HubSpot still pending. Support ticket #831603 marked resolved.",
+        "partnerstack": "PartnerStack OWN affiliate program APPROVED 2026-06-12 (for promoting PartnerStack.com itself). One unnamed program DECLINED (reason: 'approved the other account' - duplicate account issue). FreshBooks application submitted to PartnerStack 2026-06-09, pending. /go/partnerstack still needs real tracking link - ESCALATE TO OWNER.",
+        "freshbooks_awin": "REJECTED (program closing). Now applied via PartnerStack (pending).",
+        "xero": "No approval email",
+        "wix": "Application pending on Impact.com"
+      },
+      "page_upgrades": [
+        "semrush-vs-moz-which-is-better-in-2026: FULL content upgrade from auto-gen boilerplate to real comparison. Fixed 'From $0/mo' wrong Moz pricing -> $49/mo Starter. Added real feature table (25B keywords, 43T backlinks, local SEO, PPC tools), proper Where Semrush/Moz Wins sections, 5 quality FAQs. Target: 1,142 impressions at pos 65-82 -> top 10. Semrush active /go/semrush link, /go/moz-pro added.",
+        "semrush-vs-moz: title upgraded to '$139/mo vs $49/mo' price anchor (most compelling differentiator in SERP)"
+      ],
+      "ctr_fixes": [
+        "mixpanel-pricing: title -> 'Is the Free Plan Enough? [$28/mo Growth Reality Check]' (742 impr, pos 13.7, 0% CTR)"
+      ],
+      "leaks_fixed": 0,
+      "tests": "57/57 passed",
+      "measure_at_21days": {
+        "semrush-vs-moz-position": "baseline pos 65-82 -> target <20",
+        "mixpanel-pricing-ctr": "baseline 0% @ pos 13.7, 742 impr -> target >0.5%"
+      },
+      "next_human_actions": [
+        "URGENT: Log into PartnerStack dashboard and get real tracking link for PartnerStack's own affiliate program -> update /go/partnerstack in site/_redirects",
+        "URGENT: Log into Impact.com (account 7269601) - apply for HubSpot, 1Password, Monday manually from dashboard",
+        "ACTION: Log into Awin (publisher 2917137) - apply to GetResponse (3142111), Elementor (6798066), ProtonVPN (5227916), Parallels (2005415)",
+        "MONITOR: FreshBooks PartnerStack application (sent 2026-06-09) - expect decision within 7-14 days",
+        "MONITOR: Semrush vs Moz page content upgrade - check GSC position in 21 days (target: climb from pos 68 to <30)"
+      ]
     }
   ]
 }
