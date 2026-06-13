@@ -293,17 +293,30 @@ def render_pricing_changes(con: sqlite3.Connection) -> str:
             "automatically as soon as any of our tracked tools changes.</p>"
         )
 
+    # Map vendor source URLs to /go/ affiliate routes where tracked
+    _GO_ROUTES = {
+        "https://www.hubspot.com/pricing/sales": "/go/hubspot-crm",
+        "https://clickup.com/pricing": "/go/clickup-trial",
+        "https://monday.com/pricing/": "/go/monday",
+        "https://1password.com/pricing": "/go/1password-trial",
+        "https://www.shopify.com/pricing": "/go/shopify",
+        "https://www.semrush.com/pricing/": "/go/semrush",
+    }
+
     # Tracked-tools list
     tracked_rows = []
     for tool in seed["tools"]:
         slug = tool["tool"]
         ftrials = sum(1 for p in tool["plans"] if p.get("free_trial"))
         cc_req = sum(1 for p in tool["plans"] if p.get("cc_required"))
+        src = tool["source_url"]
+        go_href = _GO_ROUTES.get(src, src)
+        link_attrs = "" if go_href.startswith("/") else " rel='nofollow noopener'"
         tracked_rows.append(
             f"<tr><td><a href='/pages/{slug}-pricing-history-2026'><strong>{tool['vendor_name']}</strong></a></td>"
             f"<td>{tool['category']}</td><td>{len(tool['plans'])}</td>"
             f"<td>{ftrials}/{len(tool['plans'])}</td><td>{cc_req}/{len(tool['plans'])}</td>"
-            f"<td><a href='{tool['source_url']}' rel='nofollow noopener'>vendor page</a></td></tr>"
+            f"<td><a href='{go_href}'{link_attrs}>vendor page</a></td></tr>"
         )
     tracked_html = (
         f"<h2>Tools currently tracked ({len(seed['tools'])})</h2>"
