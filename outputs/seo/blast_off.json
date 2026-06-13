@@ -1,11 +1,11 @@
 {
   "current_month": "June 2026",
-  "today": "2026-06-12",
+  "today": "2026-06-13",
   "titles_rewritten": 2,
-  "descs_rewritten": 24,
-  "dates_refreshed": 0,
+  "descs_rewritten": 21,
+  "dates_refreshed": 1165,
   "answers_added": 16,
-  "files_changed": 24,
+  "files_changed": 1181,
   "files_scanned": 1426,
   "title_examples": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "file": "partnerstack-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "PartnerStack Pricing 2026: Custom Quote \u2014 What SaaS Companies Actually Pay",
-      "after": "PartnerStack Pricing 2026 (Verified June) \u2014 Real Costs + Hidden Fees"
+      "before": "Partnerstack Pricing 2026: What You Actually Pay \u2014 SaaSpare",
+      "after": "Partnerstack Pricing 2026 (Verified June) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
