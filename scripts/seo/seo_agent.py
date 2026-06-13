@@ -412,7 +412,15 @@ def crawl_site(config: dict) -> list[PageAudit]:
     site_dir = ROOT / config["siteDir"]
     files = sorted(site_dir.glob("*.html")) + sorted((site_dir / "pages").glob("*.html"))
     files = [file for file in files if not should_exclude_path(file_to_path(file, site_dir), config)]
-    existing_paths = {file_to_path(file, site_dir) for file in files}
+    existing_paths = {file_to_path(f, site_dir) for f in site_dir.rglob("*.html")}
+    redirects_file = site_dir / "_redirects"
+    if redirects_file.exists():
+        for line in redirects_file.read_text(encoding="utf-8", errors="ignore").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#"):
+                parts = line.split()
+                if parts:
+                    existing_paths.add(normalize_path(parts[0]))
     audits = [audit_file(file, site_dir, existing_paths, config) for file in files]
     write_json(ROOT / config["snapshotsDir"] / "pages.json", [asdict(a) for a in audits])
     return audits

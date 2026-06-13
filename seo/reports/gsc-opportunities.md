@@ -1,6 +1,6 @@
 # GSC Opportunities
 
-Status: GSC API error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+Status: skipped; add GSC OAuth secrets, authorized-user JSON, service-account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls
 
 When credentials are available, this report prioritizes:
 - high impressions / low CTR pages
