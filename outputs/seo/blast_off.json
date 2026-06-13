@@ -1,17 +1,22 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-13",
-  "titles_rewritten": 1,
+  "titles_rewritten": 2,
   "descs_rewritten": 20,
   "dates_refreshed": 0,
-  "answers_added": 15,
-  "files_changed": 20,
-  "files_scanned": 1426,
+  "answers_added": 16,
+  "files_changed": 22,
+  "files_scanned": 1427,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
+    },
+    {
+      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Ramp Pricing 2026: Change Log \u2014 Free Core Forever, Plus $15/User/Mo (June Update)",
+      "after": "Ramp Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
