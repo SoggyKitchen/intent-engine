@@ -369,6 +369,84 @@ TRIALS = {
             ("Which NordVPN plan should I trial?", "Start with Basic 2-year ($2.99/mo). If you need password manager and breach monitoring, trial Plus. The 30-day guarantee means you can switch plans within the refund window."),
         ]
     ),
+    "parallels-desktop": dict(
+        name="Parallels Desktop", logo="https://cdn.simpleicons.org/parallels/CC3333",
+        go="/go/parallels", page_url="/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay",
+        trial_url="/go/parallels",
+        days="14", plan_access="Full Pro plan access", cc_class="chip-cc-yes", cc_label="Credit card required",
+        hero_lead="Start a 14-day Parallels Desktop Pro trial and run Windows, Linux, or macOS apps natively on your Mac — no rebooting required. Full Pro features from day one.",
+        steps=[
+            ("Download Parallels Desktop", "Use our link to download Parallels Desktop for Mac. The installer is about 300MB and takes 5 minutes to install.", "Confirm your Mac model (Intel or Apple Silicon) before downloading — both are fully supported"),
+            ("Create your account", "Sign up with your email to activate the 14-day trial. Your Parallels account stores your license and lets you manage subscriptions.", "Use your primary email — Parallels sends trial reminders and renewal notices here"),
+            ("Install Windows", "Parallels can download Windows 11 automatically (or import a local ISO). Apple Silicon Macs get free Windows 11 ARM via Microsoft. Intel Macs need a Windows license.", "Apple Silicon Mac users can download Windows 11 ARM for free directly through Parallels"),
+            ("Run your first Windows app", "Launch Windows from the Parallels menu bar and open any Windows application. Coherence Mode hides the Windows desktop so apps look native on your Mac.", "Enable Coherence Mode for the most Mac-like experience — it makes Windows apps look like native Mac apps"),
+        ],
+        plan_starter="Standard ($99.99/yr)", plan_pro="Pro ($119.99/yr)",
+        feat_rows=[
+            ("Windows on Mac", "Full (14-day trial)", "Included", "Included", "cw", "cw", "cw"),
+            ("vCPU allocation", "Up to 32 vCPUs", "Up to 8 vCPUs", "Up to 32 vCPUs", "cw", "cm", "cw"),
+            ("RAM allocation", "Up to 128GB", "Up to 8GB", "Up to 128GB", "cw", "cm", "cw"),
+            ("Visual Studio support", "Included (Pro)", "—", "Included", "cw", "cl", "cw"),
+            ("Support type", "Priority (Pro)", "Email", "Priority + chat", "cw", "cm", "cw"),
+        ],
+        trial_users="1 Mac", starter_users="1 Mac",
+        pro_users="1 Mac", trial_support="Priority email",
+        starter_support="Email support", pro_support="Priority chat + email",
+        starter_price="$99.99/yr", pro_price="$119.99/yr",
+        what_happens=[
+            ("14 days full Pro access — no feature limits", "Every Pro feature is available during your trial including maximum CPU/RAM allocation and Visual Studio integration."),
+            ("No charge during the trial period", "The 14-day trial is completely free. Your credit card is only charged when you choose a plan after the trial expires."),
+            ("Your VMs are preserved after trial", "Virtual machines you create during the trial are saved locally on your Mac. Upgrading to a paid plan restores full access immediately."),
+            ("Parallels sends a reminder before expiry", "Expect a reminder 2-3 days before your trial ends. You can upgrade from within the app or via the Parallels account portal."),
+        ],
+        cta_note="14-day full Pro trial. Runs Windows, Linux, and macOS VMs on any Mac.",
+        faqs=[
+            ("Does Parallels Desktop have a free trial?", "Yes — Parallels Desktop offers a 14-day free trial of the Pro plan. Full vCPU, RAM, and feature access with no limitations during the trial period."),
+            ("Does Parallels work on Apple Silicon (M1/M2/M3/M4)?", "Yes — Parallels Desktop is fully optimised for Apple Silicon. Apple Silicon Macs run Windows 11 ARM, which Microsoft provides free through Parallels. Performance is excellent — often faster than native Intel Windows."),
+            ("Do I need a Windows license for Parallels?", "Apple Silicon Mac users can download Windows 11 ARM for free directly via Parallels. Intel Mac users need a valid Windows license (or can import an existing Windows installation)."),
+            ("What's the difference between Parallels Standard and Pro?", "Standard ($99.99/yr) is for everyday use with up to 8 vCPUs and 8GB RAM. Pro ($119.99/yr) unlocks up to 32 vCPUs, 128GB RAM, Visual Studio integration, and advanced networking — better for developers and power users."),
+            ("Can I cancel Parallels before the trial ends?", "Yes — cancel within 14 days from your Parallels account portal and you won't be charged. Your VMs remain on your Mac and are accessible if you later reactivate."),
+        ]
+    ),
+    "elementor": dict(
+        name="Elementor", logo="https://cdn.simpleicons.org/elementor/92003B",
+        go="/go/elementor", page_url="/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
+        trial_url="/go/elementor",
+        days="30", plan_access="30-day money-back guarantee on all Pro plans", cc_class="chip-cc-yes", cc_label="Card required — 30-day refund",
+        hero_lead="Elementor Pro offers a 30-day money-back guarantee — full access to the drag-and-drop page builder, 100+ widgets, and WooCommerce integration with no risk. Free plugin available with no time limit.",
+        steps=[
+            ("Install Elementor Free (WordPress plugin)", "Search 'Elementor' in your WordPress dashboard under Plugins → Add New. Install and activate the free version first — it's fully functional with no expiry.", "The free version includes the core editor and 40+ widgets — enough to build most basic sites"),
+            ("Upgrade to Elementor Pro", "From your WordPress dashboard or our link, choose an Elementor Pro plan. Essential, Advanced, Expert, and Agency plans are available.", "Essential covers 1 site and is the best value for solo projects. Advanced covers 3 sites."),
+            ("Activate your license", "Copy your license key from your Elementor account and paste it under Elementor → License in WordPress. Pro features unlock immediately.", "Keep your license key saved — you'll need it when adding the Pro plugin to additional sites"),
+            ("Build your first page", "Open any page in WordPress, click 'Edit with Elementor', and drag Pro widgets like Theme Builder, Popup Builder, and WooCommerce widgets onto your canvas.", "Start with a Pro template to see the full widget range — it's faster than building from scratch"),
+        ],
+        plan_starter="Essential (1 site)", plan_pro="Expert (25 sites)",
+        feat_rows=[
+            ("Drag-and-drop editor", "Full Pro access", "Core widgets only", "Full Pro + advanced", "cw", "cm", "cw"),
+            ("Theme Builder", "Included", "—", "Included", "cw", "cl", "cw"),
+            ("Popup Builder", "Included", "—", "Included", "cw", "cl", "cw"),
+            ("WooCommerce Builder", "Included", "—", "Included", "cw", "cl", "cw"),
+            ("Sites covered", "1 (Essential)", "1", "25 (Expert)", "cw", "cw", "cw"),
+        ],
+        trial_users="1 WordPress site", starter_users="1 WordPress site",
+        pro_users="Up to 25 sites (Expert)", trial_support="Email + docs",
+        starter_support="Email + docs", pro_support="Priority email",
+        starter_price="~$59/yr (Essential)", pro_price="~$199/yr (Expert)",
+        what_happens=[
+            ("Full refund within 30 days, no questions asked", "Elementor offers a 30-day money-back guarantee. Contact support via your account portal within 30 days for a full refund — no reason required."),
+            ("Free plugin access continues forever", "Even if you cancel Pro, the free Elementor plugin stays installed and functional. You lose Pro widgets but keep core drag-and-drop editing."),
+            ("Your pages are preserved after cancellation", "Pages built with Pro widgets may display differently if you revert to free, but your page structure and content are not deleted."),
+            ("Annual renewal reminder", "Elementor sends a renewal reminder before your annual plan expires. You can disable auto-renewal from your account at any time."),
+        ],
+        cta_note="30-day money-back guarantee. Free plugin available with no time limit.",
+        faqs=[
+            ("Does Elementor have a free trial?", "Elementor doesn't offer a traditional time-limited trial, but Elementor Pro includes a 30-day money-back guarantee — effectively risk-free for a month. The free Elementor plugin (no expiry) is also available for basic page building."),
+            ("What's the difference between Elementor Free and Pro?", "Elementor Free includes the core drag-and-drop editor with 40+ basic widgets. Elementor Pro adds Theme Builder, Popup Builder, WooCommerce Builder, 100+ Pro widgets, and form integrations. Most professional sites need Pro for header/footer editing."),
+            ("How much does Elementor Pro cost?", "Elementor Pro Essential starts at approximately $59/yr for 1 site. Advanced covers 3 sites, Expert covers 25 sites (~$199/yr). Prices vary — check our link for current pricing and any active discounts."),
+            ("Is Elementor worth it vs free alternatives?", "Elementor Pro is worth it if you need Theme Builder (custom headers/footers), Popup Builder, or WooCommerce integration. For basic pages, the free version competes well with Gutenberg. The 30-day refund removes the risk of evaluating."),
+            ("Can I use Elementor without WooCommerce?", "Yes — Elementor works with any WordPress site. WooCommerce Builder widgets are optional. Most Elementor users use it for standard pages, landing pages, and blog layouts without ecommerce."),
+        ]
+    ),
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -390,6 +468,7 @@ DISPLAY_NAMES = {
     "stripe":"Stripe","surfshark":"Surfshark","trello":"Trello","webflow":"Webflow",
     "wix":"Wix","woocommerce":"WooCommerce","xero":"Xero","zapier":"Zapier",
     "zendesk":"Zendesk","zoho-crm":"Zoho CRM","zoom":"Zoom",
+    "parallels-desktop":"Parallels Desktop","elementor":"Elementor",
 }
 
 LOGO_MAP = {
@@ -439,6 +518,8 @@ LOGO_MAP = {
     "zendesk":"https://cdn.simpleicons.org/zendesk/03363d",
     "zoho-crm":"https://cdn.simpleicons.org/zoho/e42527",
     "zoom":"https://cdn.simpleicons.org/zoom/2d8cff",
+    "parallels-desktop":"https://cdn.simpleicons.org/parallels/CC3333",
+    "elementor":"https://cdn.simpleicons.org/elementor/92003B",
 }
 
 def make_generic(slug, name, logo):
