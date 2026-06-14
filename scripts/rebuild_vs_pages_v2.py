@@ -129,6 +129,17 @@ TOOLS: dict[str, tuple] = {
     "deel":            ("Deel",              "Global payroll, contractor management",             "HR",                 "Free",      None,                "ff5151", "deel",             8.9, "Free plan"),
 }
 
+# Per-page title/desc overrides — baked here so they survive regeneration.
+# Key = canonical_slug (filename stem without .html)
+TITLE_OVERRIDES: dict[str, str] = {
+    "surfer-seo-vs-se-ranking-which-is-better-in-2026": "Surfer SEO vs SE Ranking June 2026: SE Ranking Wins — $55/mo vs $89/mo [Tested]",
+    "semrush-vs-moz-which-is-better-in-2026":           "Semrush vs Moz Pro 2026: $139/mo vs $49/mo — Which Wins? [Honest Verdict]",
+}
+DESC_OVERRIDES: dict[str, str] = {
+    "surfer-seo-vs-se-ranking-which-is-better-in-2026": "SE Ranking wins (8.9/10 vs Surfer SEO's 8.8/10) and costs $55/mo vs $89/mo — 38% cheaper with a 14-day free trial. Full feature comparison tested June 2026.",
+    "semrush-vs-moz-which-is-better-in-2026":           "Semrush wins (9.4/10 vs Moz's 8.5/10). $139/mo buys 25B+ keywords and full competitor research; Moz Pro starts at $49/mo with a 30-day free trial. Worth 3× the price? Tested June 2026.",
+}
+
 
 def get_tool(slug: str) -> tuple:
     """Look up tool data by slug, with fuzzy fallback."""
@@ -158,7 +169,7 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
     name_b, tag_b, cat_b, price_b, url_b, col_b, icon_b, score_b, free_b = db
 
     canonical = f"/pages/{canonical_slug}"
-    title     = f"{name_a} vs {name_b} ({YEAR}): Honest Verdict & Who Wins"
+    title     = TITLE_OVERRIDES.get(canonical_slug) or f"{name_a} vs {name_b} ({YEAR}): Honest Verdict & Who Wins"
     winner    = name_a if score_a >= score_b else name_b
     winner_score = max(score_a, score_b)
     tie       = score_a == score_b
@@ -177,6 +188,7 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
         desc = f"Bottom line: it's a tie ({winner_score}/10 each). {name_a} vs {name_b} compared on pricing and features — score-based verdict, no paid placements. {YEAR}."
     else:
         desc = f"Bottom line: {winner} wins ({winner_score}/10). {name_a} vs {name_b} compared on pricing and features — score-based verdict, no paid placements. {YEAR}."
+    desc = DESC_OVERRIDES.get(canonical_slug, desc)
     winner_url = url_a if score_a >= score_b else url_b
     winner_icon = icon_a if score_a >= score_b else icon_b
     winner_col  = col_a  if score_a >= score_b else col_b
