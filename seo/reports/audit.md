@@ -1,24 +1,24 @@
 # SEO Audit
 
-Pages scanned: 1453
+Pages scanned: 1462
 
 ## Severe Issue Counts
-- broken_internal_link: 1436
+- broken_internal_link: 192
 - invalid_canonical: 2
 - missing_meta: 2
 - no_h1: 2
 
 ## Warning Counts
 - canonical_mismatch: 1
-- images_missing_alt: 127
-- meta_length_outside_target: 25
-- missing_correction_cta: 300
+- images_missing_alt: 128
+- meta_length_outside_target: 31
+- missing_correction_cta: 303
 - missing_last_verified: 1
-- missing_methodology: 210
+- missing_methodology: 212
 - missing_related_pages: 18
-- missing_trustbox: 46
+- missing_trustbox: 49
 - thin_buyer_page: 1118
-- title_length_outside_target: 91
+- title_length_outside_target: 98
 
 ## Lowest Scoring Pages
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f`: 24.52/100, issues=invalid_canonical, missing_meta, no_h1
@@ -27,47 +27,47 @@ Pages scanned: 1453
 - `/404`: 62.72/100, issues=none
 - `/newsletter`: 62.74/100, issues=none
 - `/contact`: 62.75/100, issues=none
-- `/pages`: 63.5/100, issues=broken_internal_link
 - `/shortlist`: 64.83/100, issues=none
-- `/media-kit`: 65.26/100, issues=broken_internal_link
 - `/corrections`: 66.42/100, issues=none
 - `/roi`: 67.28/100, issues=none
 - `/deal-radar`: 68.38/100, issues=none
+- `/pages`: 69.5/100, issues=none
 - `/editorial-policy`: 69.55/100, issues=none
-- `/pages/best-encrypted-cloud-storage-2026-business`: 69.78/100, issues=broken_internal_link
-- `/pages/which-saas-has-the-best-free-plan-2026`: 70.27/100, issues=broken_internal_link
+- `/media-kit`: 71.26/100, issues=none
 - `/cookie-policy`: 72.98/100, issues=none
-- `/pages/request-a-comparison`: 73.34/100, issues=broken_internal_link
-- `/privacy`: 73.61/100, issues=broken_internal_link
-- `/pages/saas-pricing-changes`: 73.99/100, issues=none
-- `/affiliate-disclosure`: 74.04/100, issues=broken_internal_link
-- `/pages/how-saaspare-ranks-tools`: 74.56/100, issues=broken_internal_link
 - `/pages/saas-buyer-signals-2026`: 74.6/100, issues=none
-- `/pages/saas-stack-audit-checkout`: 74.96/100, issues=broken_internal_link
-- `/pages/saas-glossary`: 75.0/100, issues=broken_internal_link
-- `/pages/v3-preview-404`: 75.38/100, issues=broken_internal_link
 - `/accessibility`: 75.67/100, issues=none
+- `/pages/best-encrypted-cloud-storage-2026-business`: 75.81/100, issues=none
 - `/dmca`: 75.92/100, issues=none
-- `/pages/saas-spend-audit`: 76.0/100, issues=broken_internal_link
-- `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 76.28/100, issues=broken_internal_link
-- `/methodology`: 76.31/100, issues=broken_internal_link
-- `/pages/v3-preview-contact`: 76.92/100, issues=broken_internal_link
-- `/pages/saas-price-hike-watch-may-2026`: 77.0/100, issues=broken_internal_link
-- `/pages/v3-preview-homepage`: 77.14/100, issues=broken_internal_link
-- `/pages/v3-preview-affiliate-disclosure`: 77.24/100, issues=broken_internal_link
+- `/pages/saas-pricing-changes`: 75.99/100, issues=none
+- `/pages/which-saas-has-the-best-free-plan-2026`: 76.25/100, issues=none
 - `/`: 77.5/100, issues=broken_internal_link
-- `/pages/best-saas-deals-this-week-2026`: 77.72/100, issues=broken_internal_link
-- `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 77.73/100, issues=broken_internal_link
-- `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 77.75/100, issues=broken_internal_link
-- `/pages/v3-preview-about`: 77.75/100, issues=broken_internal_link
-- `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 77.76/100, issues=broken_internal_link
-- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 77.77/100, issues=broken_internal_link
-- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 77.78/100, issues=broken_internal_link
-- `/best-cloud-hosting-2026`: 77.8/100, issues=broken_internal_link
-- `/best-finance-software-2026`: 77.8/100, issues=broken_internal_link
-- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 77.81/100, issues=broken_internal_link
-- `/pages/v3-preview-newsletter`: 77.87/100, issues=broken_internal_link
-- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 77.88/100, issues=broken_internal_link
-- `/pages/v3-preview-library`: 78.04/100, issues=broken_internal_link
-- `/pages/v3-preview-index`: 78.17/100, issues=broken_internal_link
-- `/best-ecommerce-platform-2026`: 78.25/100, issues=broken_internal_link
+- `/advertise`: 79.32/100, issues=none
+- `/pages/request-a-comparison`: 79.37/100, issues=none
+- `/privacy`: 79.61/100, issues=none
+- `/affiliate-disclosure`: 80.04/100, issues=none
+- `/pages/how-saaspare-ranks-tools`: 80.57/100, issues=none
+- `/pages/best-privacy-vpn-2026`: 80.77/100, issues=broken_internal_link
+- `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown`: 80.83/100, issues=broken_internal_link
+- `/pages/saas-stack-audit-checkout`: 80.95/100, issues=none
+- `/pages/saas-glossary`: 81.0/100, issues=none
+- `/pages/v3-preview-404`: 81.41/100, issues=none
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay`: 81.5/100, issues=broken_internal_link
+- `/pages/saas-spend-audit`: 82.0/100, issues=none
+- `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 82.29/100, issues=none
+- `/methodology`: 82.31/100, issues=none
+- `/pages/v3-preview-contact`: 82.95/100, issues=none
+- `/pages/saas-price-hike-watch-may-2026`: 83.0/100, issues=none
+- `/pages/v3-preview-homepage`: 83.12/100, issues=none
+- `/pages/v3-preview-affiliate-disclosure`: 83.19/100, issues=none
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay`: 83.5/100, issues=broken_internal_link
+- `/pages/ramp-pricing-history-2026`: 83.5/100, issues=broken_internal_link
+- `/pages/stripe-coupon-2026-discount-codes-promo`: 83.55/100, issues=broken_internal_link
+- `/pages/linear-pricing-history-2026`: 83.57/100, issues=broken_internal_link
+- `/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay`: 83.62/100, issues=broken_internal_link
+- `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay`: 83.62/100, issues=broken_internal_link
+- `/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay`: 83.62/100, issues=broken_internal_link
+- `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay`: 83.63/100, issues=broken_internal_link
+- `/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay`: 83.63/100, issues=broken_internal_link
+- `/pages/best-saas-deals-this-week-2026`: 83.64/100, issues=none
+- `/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay`: 83.66/100, issues=broken_internal_link
