@@ -1,23 +1,43 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-14",
-  "titles_rewritten": 1,
-  "descs_rewritten": 20,
-  "dates_refreshed": 1168,
-  "answers_added": 15,
-  "files_changed": 1183,
-  "files_scanned": 1430,
+  "titles_rewritten": 5,
+  "descs_rewritten": 24,
+  "dates_refreshed": 0,
+  "answers_added": 17,
+  "files_changed": 24,
+  "files_scanned": 1432,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
+    },
+    {
+      "file": "elementor-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Elementor Free Trial 2026: How to Get It \u2014 SaaSpare",
+      "after": "Elementor Free Trial 2026: How to Get the Full June 2026 Offer"
+    },
+    {
+      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Mixpanel Pricing 2026: Free Plan (20M Events), Real Cost & June Update",
+      "after": "Mixpanel Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "parallels-desktop-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Parallels Desktop Free Trial 2026: How to Get It \u2014 SaaSpare",
+      "after": "Parallels Desktop Free Trial 2026: How to Get the Full June 2026 Offer"
+    },
+    {
+      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Ramp Pricing 2026: Every Change, Real Cost & June 2026 Update",
+      "after": "Ramp Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
     {
       "file": "1password-pricing-history-2026.html",
-      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 13 June 2026.",
+      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 14 June 2026.",
       "after": "Updated June 2026. 1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
@@ -27,12 +47,12 @@
     },
     {
       "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 13 June 2026.",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 14 June 2026.",
       "after": "Updated June 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
       "file": "asana-pricing-history-2026.html",
-      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 13 June 2026.",
+      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 14 June 2026.",
       "after": "Updated June 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {

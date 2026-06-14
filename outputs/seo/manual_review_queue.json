@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-14T07:57:06+00:00",
+  "generated_at_utc": "2026-06-14T21:13:35+00:00",
   "mode": "apply",
-  "pages_flagged": 23,
+  "pages_flagged": 24,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -63,6 +63,37 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "at if you find nothing?</summary><p>Stack Audit and Stack Concierge come with a 30-day money-back guarantee. If we cannot identify at least 3\u00d7 your audit fee in recoverable annual savings"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/elementor-free-trial-2026-how-to-get-it-step-by-step.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "<p class=\"sp-lead sp-up sp-up-2\" style=\"max-width:520px\">Elementor Pro offers a 30-day money-back guarantee \u2014 full access to the drag-and-drop page builder, 100+ widgets, and WooCommerce"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "er\"></div> <div class=\"trial-meta\"> <div class=\"trial-free-label\">30-day money-back guarantee on all Pro plans</div> <span class=\"chip-cc-req chip-cc-yes\">Card requi"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "within 30 days, no questions asked</div><div class=\"wh-desc\">Elementor offers a 30-day money-back guarantee. Contact support via your account portal within 30 days for a full refund \u2014 no"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "or doesn't offer a traditional time-limited trial, but Elementor Pro includes a 30-day money-back guarantee \u2014 effectively risk-free for a month. The free Elementor plugin (no expiry) is a"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "?</h2> <p style=\"font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem\">30-day money-back guarantee. Free plugin available with no time limit.</p> <a href=\"/go/elementor\" re"
         }
       ],
       "trust_state_bumped": false
