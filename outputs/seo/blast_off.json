@@ -1,22 +1,17 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-15",
-  "titles_rewritten": 3,
-  "descs_rewritten": 31,
+  "titles_rewritten": 2,
+  "descs_rewritten": 36,
   "dates_refreshed": 0,
   "answers_added": 15,
-  "files_changed": 31,
+  "files_changed": 36,
   "files_scanned": 1432,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
-    },
-    {
-      "file": "getresponse-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "GetResponse Pricing 2026: Every Change Tracked \u2014 Free Plan, Real Costs &amp; June Update",
-      "after": "GetResponse Pricing 2026 (Verified June) \u2014 Real Costs + Hidden Fees"
     },
     {
       "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
@@ -46,14 +41,14 @@
       "after": "Updated June 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-ecommerce-platforms-2026.html",
-      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated June 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+      "file": "aws-vs-render-which-is-better-in-2026.html",
+      "before": "Render wins for simplicity \u2014 zero-config Git deploys, free static hosting, no DevOps overhead. AWS wins at enterprise scale. Not using Kubernetes yet? Start with Render. June 2026.",
+      "after": "Updated June 2026. Render wins for simplicity \u2014 zero-config Git deploys, free static hosting, no DevOps overhead. AWS wins at enterprise scale. Not using\u2026"
     },
     {
-      "file": "best-vpn-australia-2026.html",
-      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
+      "file": "aws-vs-supabase-which-is-better-in-2026.html",
+      "before": "AWS wins overall (9.0/10 vs Supabase 8.8/10), but Supabase wins on developer speed and its generous free tier. AWS dominates at scale; Supabase ships faster. Score-based verdict, June 2026.",
+      "after": "Updated June 2026. AWS wins overall (9.0/10 vs Supabase 8.8/10), but Supabase wins on developer speed and its generous free tier. AWS dominates at scale;\u2026"
     }
   ],
   "indexnow": {
