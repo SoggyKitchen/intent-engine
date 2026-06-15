@@ -1,17 +1,27 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-15",
-  "titles_rewritten": 1,
-  "descs_rewritten": 20,
+  "titles_rewritten": 3,
+  "descs_rewritten": 31,
   "dates_refreshed": 0,
   "answers_added": 15,
-  "files_changed": 20,
+  "files_changed": 31,
   "files_scanned": 1432,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
+    },
+    {
+      "file": "getresponse-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "GetResponse Pricing 2026: Every Change Tracked \u2014 Free Plan, Real Costs &amp; June Update",
+      "after": "GetResponse Pricing 2026 (Verified June) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Mixpanel Pricing 2026: Free (20M Events/mo), Growth $28/mo \u2014 Every Change",
+      "after": "Mixpanel Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
