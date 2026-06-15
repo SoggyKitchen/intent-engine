@@ -132,12 +132,27 @@ TOOLS: dict[str, tuple] = {
 # Per-page title/desc overrides — baked here so they survive regeneration.
 # Key = canonical_slug (filename stem without .html)
 TITLE_OVERRIDES: dict[str, str] = {
-    "surfer-seo-vs-se-ranking-which-is-better-in-2026": "Surfer SEO vs SE Ranking June 2026: SE Ranking Wins — $55/mo vs $89/mo [Tested]",
-    "semrush-vs-moz-which-is-better-in-2026":           "Semrush vs Moz Pro 2026: $139/mo vs $49/mo — Which Wins? [Honest Verdict]",
+    "surfer-seo-vs-se-ranking-which-is-better-in-2026":       "Surfer SEO vs SE Ranking June 2026: SE Ranking Wins — $55/mo vs $89/mo [Tested]",
+    "semrush-vs-moz-which-is-better-in-2026":                 "Semrush vs Moz Pro 2026: $139/mo vs $49/mo — Which Wins? [Honest Verdict]",
+    # High-impression pages with 0% CTR — specific verdicts beat generic "Honest Verdict & Who Wins"
+    "aws-vs-supabase-which-is-better-in-2026":                "AWS vs Supabase 2026: AWS Wins on Scale, Supabase Wins on Speed [Compared]",
+    "docusign-clm-vs-icertis-which-is-better-in-2026":        "DocuSign CLM vs Icertis 2026: Which Enterprise CLM Platform Wins? [Expert Review]",
+    "twingate-vs-tailscale-which-is-better-in-2026":          "Twingate vs Tailscale 2026: Twingate for Business, Tailscale for Dev Teams [Verdict]",
+    "aws-vs-render-which-is-better-in-2026":                  "AWS vs Render 2026: Render Wins for Simplicity, AWS Wins at Scale [Compared]",
+    "twingate-vs-zscaler-which-is-better-in-2026":            "Twingate vs Zscaler 2026: Twingate for SMBs, Zscaler for Enterprise [Verdict]",
+    "hetzner-vs-vultr-which-is-better-in-2026":               "Hetzner vs Vultr 2026: Hetzner Wins on Price — VPS Head-to-Head Compared",
+    "shopify-vs-recurly-which-is-better-in-2026":             "Shopify vs Recurly 2026: Which Wins for Subscription Commerce? [Expert Tested]",
 }
 DESC_OVERRIDES: dict[str, str] = {
     "surfer-seo-vs-se-ranking-which-is-better-in-2026": "SE Ranking wins (8.9/10 vs Surfer SEO's 8.8/10) and costs $55/mo vs $89/mo — 38% cheaper with a 14-day free trial. Full feature comparison tested June 2026.",
     "semrush-vs-moz-which-is-better-in-2026":           "Semrush wins (9.4/10 vs Moz's 8.5/10). $139/mo buys 25B+ keywords and full competitor research; Moz Pro starts at $49/mo with a 30-day free trial. Worth 3× the price? Tested June 2026.",
+    "aws-vs-supabase-which-is-better-in-2026":          "AWS wins overall (9.0/10 vs Supabase 8.8/10), but Supabase wins on developer speed and its generous free tier. AWS dominates at scale; Supabase ships faster. Score-based verdict, June 2026.",
+    "docusign-clm-vs-icertis-which-is-better-in-2026": "DocuSign CLM wins for mid-market — easier setup, better integrations, faster time-to-value. Icertis wins for large enterprise with complex CLM workflows. Score-based comparison, June 2026.",
+    "twingate-vs-tailscale-which-is-better-in-2026":   "Twingate wins for business: managed devices, SSO, audit logs. Tailscale wins for dev teams: zero-config mesh VPN, free up to 100 devices. Head-to-head June 2026.",
+    "aws-vs-render-which-is-better-in-2026":           "Render wins for simplicity — zero-config Git deploys, free static hosting, no DevOps overhead. AWS wins at enterprise scale. Not using Kubernetes yet? Start with Render. June 2026.",
+    "twingate-vs-zscaler-which-is-better-in-2026":    "Twingate wins for SMBs under 500 seats — faster setup, lower cost, no hardware required. Zscaler wins for large enterprise ZTNA with full SSE stack. Score-based verdict, June 2026.",
+    "hetzner-vs-vultr-which-is-better-in-2026":       "Hetzner wins on price (9.0/10 vs Vultr 8.8/10) — 4 vCPU/8GB RAM from $5.83/mo vs $24/mo on Vultr. Vultr wins on global reach (32 locations vs 8). VPS comparison, June 2026.",
+    "shopify-vs-recurly-which-is-better-in-2026":     "Shopify wins overall for most merchants (9.4/10 vs Recurly 8.6/10). Recurly wins for complex subscription billing. Shopify is cheaper at $39/mo; Recurly starts at $249/mo. June 2026.",
 }
 
 
