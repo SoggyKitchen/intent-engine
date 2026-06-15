@@ -1,0 +1,74 @@
+name: SaaSpare Autonomous Operator
+
+# Full-operator mode: runs the guarded apply-safe engine and ships safe on-page
+# fixes to the live site WITHOUT a human in the loop — but only behind four
+# gates: only-improve guards (in apply-safe), a metadata circuit breaker,
+# content_qa HARD checks, and the full test suite. Any gate failing aborts the
+# push. Runs on GitHub's servers, so the owner's PC does not need to be on.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_meta_changes:
+        description: "Abort push if title+meta changes exceed this"
+        required: false
+        default: "60"
+  schedule:
+    # Daily 04:00 UTC (~14:00 Brisbane) — runs AFTER saaspare_seo_agent (03:17)
+    # has refreshed GSC reports, so fixes act on fresh data.
+    - cron: "0 4 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: saaspare-operator
+  cancel-in-progress: false
+
+jobs:
+  operate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Apply guarded safe fixes
+        env:
+          GSC_SITE_URL: 'sc-domain:saaspare.org'
+          GSC_OAUTH_CLIENT_ID: ${{ secrets.GSC_OAUTH_CLIENT_ID }}
+          GSC_OAUTH_CLIENT_SECRET: ${{ secrets.GSC_OAUTH_CLIENT_SECRET }}
+          GSC_OAUTH_REFRESH_TOKEN: ${{ secrets.GSC_OAUTH_REFRESH_TOKEN }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: uv run python scripts/seo/seo_agent.py --mode apply-safe
+
+      - name: Circuit breaker — abort on metadata-change spike
+        run: |
+          uv run python scripts/seo/operator_circuit_breaker.py \
+            --max-meta-changes "${{ github.event.inputs.max_meta_changes || '60' }}"
+
+      - name: Content QA hard checks (gate)
+        run: uv run python scripts/content_qa.py
+
+      - name: Test suite (gate)
+        run: uv run pytest -q
+
+      - name: Rebuild sitemap + IndexNow
+        run: uv run python scripts/update_sitemap_and_index.py || true
+
+      - name: Commit + push (auto-deploy to live site)
+        run: |
+          git config user.name "saaspare-operator"
+          git config user.email "operator@saaspare.org"
+          git add site/ seo/ outputs/ || true
+          if git diff --cached --quiet; then
+            echo "No changes to ship today."
+          else
+            git commit -m "ceo-daily: autonomous guarded apply-safe fixes [skip ci]"
+            git push
+            echo "Shipped — Cloudflare Pages will auto-deploy."
+          fi

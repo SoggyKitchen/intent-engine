@@ -247,8 +247,14 @@ def get_seo_tags(
             title = title_tpl.replace("X vs. Y", comparison)
             meta = meta_tpl.replace("X vs. Y", comparison)
         else:
-            title = title_tpl.replace("X vs. Y", x_value).replace("X", x_value).replace("Y", category_title)
-            meta = meta_tpl.replace("X vs. Y", x_value).replace("X", x_value).replace("Y", category_meta)
+            # Replace X/Y as WHOLE WORDS only. A naive .replace("Y", ...) rewrites
+            # the "Y" inside ordinary words ("What You Get" -> "What Softwareou
+            # Get") and "X" inside brands ("Xero" -> "Xeroero"). Word-boundary
+            # substitution targets only the standalone placeholders.
+            title = re.sub(r"\bX\b", x_value, title_tpl.replace("X vs. Y", x_value))
+            title = re.sub(r"\bY\b", category_title, title)
+            meta = re.sub(r"\bX\b", x_value, meta_tpl.replace("X vs. Y", x_value))
+            meta = re.sub(r"\bY\b", category_meta, meta)
         title = title.replace("[Category]", category_title)
         meta = meta.replace("[Category]", category_title)
         meta = meta.replace("[category]", category_meta)
