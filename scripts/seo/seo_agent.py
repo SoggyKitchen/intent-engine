@@ -989,6 +989,13 @@ def generate_reports(config: dict, audits: list[PageAudit], discovery: dict, ott
     write_json(reports_dir / "indexability-report.json", indexability_report(audits))
     write_md(reports_dir / "gsc-opportunities.md", gsc_report_md(gsc))
     write_json(reports_dir / "gsc-opportunities.json", gsc)
+    # Clean per-page click totals for the autonomous-operator auto-revert system.
+    # (gsc-opportunities is query-level and truncated; this is page-dimension only.)
+    write_json(reports_dir / "gsc-page-clicks.json", {
+        "skipped": gsc.get("skipped", True),
+        "endDate": gsc.get("endDate"),
+        "pageClicks": gsc.get("pageClicks", {}),
+    })
     write_md(reports_dir / "ai-suggestions.md", ai_suggestions_md(audits))
     write_json(reports_dir / "ai-suggestions.json", {"skipped": "CEREBRAS_API_KEY" not in os.environ, "suggestions": []})
     write_md(reports_dir / "conversion-issues.md", conversion_issues_md(audits))
@@ -1253,6 +1260,11 @@ def load_gsc_opportunities(config: dict) -> dict:
             )
             rows.extend(normalize_gsc_rows(response.get("rows", []), dimensions))
         opportunities = rank_gsc_opportunities(rows)
+        page_clicks = {
+            r["page"]: r["clicks"]
+            for r in rows
+            if r.get("dimensions") == ["page"] and r.get("page")
+        }
         return {
             "skipped": False,
             "siteUrl": site_url,
@@ -1260,6 +1272,7 @@ def load_gsc_opportunities(config: dict) -> dict:
             "endDate": end_date.isoformat(),
             "rowsPulled": len(rows),
             "opportunities": opportunities,
+            "pageClicks": page_clicks,
         }
     except Exception as exc:
         return {"skipped": True, "reason": f"GSC API error: {exc}", "opportunities": []}

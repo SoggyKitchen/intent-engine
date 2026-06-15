@@ -51,6 +51,13 @@ jobs:
           uv run python scripts/seo/operator_circuit_breaker.py \
             --max-meta-changes "${{ github.event.inputs.max_meta_changes || '60' }}"
 
+      - name: Auto-revert — record baselines for pages changed today
+        run: uv run python scripts/seo/operator_autorevert.py record
+
+      - name: Auto-revert — roll back changes that lost clicks (21d window)
+        # Exit 2 = circuit breaker tripped (mass-revert); fail the run for review.
+        run: uv run python scripts/seo/operator_autorevert.py evaluate
+
       - name: Content QA hard checks (gate)
         run: uv run python scripts/content_qa.py
 
