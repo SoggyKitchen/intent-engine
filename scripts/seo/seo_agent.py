@@ -23,6 +23,10 @@ try:
 except Exception:  # pragma: no cover - script should still report if import is broken.
     get_seo_tags = None
 
+# Only-improve guards — make autonomous metadata changes never downgrade a page.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import guards  # noqa: E402
+
 DEFAULT_CONFIG = {
     "siteUrl": "https://saaspare.org",
     "siteDir": "site",
@@ -693,20 +697,40 @@ def apply_safe_fixes(config: dict, audits: list[PageAudit]) -> list[dict]:
         original = html
         fixes = []
         seo = get_page_seo(audit, config)
-        html = upsert_title(html, seo["title"])
-        html = upsert_meta(html, "description", seo["meta_description"])
-        html = upsert_meta(html, "keywords", build_meta_keywords(audit, seo))
+
+        # Premium pages (already well-optimized, hand-tuned) get structural fixes
+        # ONLY — never metadata churn. Protects money pages from homogenization.
+        premium = guards.is_premium_page(
+            title=audit.title,
+            meta=audit.meta_description,
+            word_count=audit.word_count,
+            has_faq_schema=audit.has_faq_schema,
+        )
+
+        if not premium:
+            # Only-improve gate: never downgrade a tuned title/meta to a
+            # generic templated one. should_replace returns True only when the
+            # candidate is a genuine improvement.
+            if guards.should_replace(audit.title, seo["title"], "title"):
+                html = upsert_title(html, seo["title"])
+                html = upsert_property(html, "og:title", seo["title"])
+                html = upsert_meta(html, "twitter:title", seo["title"])
+                fixes.append("title")
+            if guards.should_replace(audit.meta_description, seo["meta_description"], "meta"):
+                html = upsert_meta(html, "description", seo["meta_description"])
+                html = upsert_property(html, "og:description", seo["meta_description"])
+                html = upsert_meta(html, "twitter:description", seo["meta_description"])
+                fixes.append("meta")
+            html = upsert_meta(html, "keywords", build_meta_keywords(audit, seo))
+
+        # Structural fixes — safe for every page, premium or not.
         html = upsert_link_rel(html, "canonical", audit.url)
-        html = upsert_property(html, "og:title", seo["title"])
-        html = upsert_property(html, "og:description", seo["meta_description"])
         html = upsert_property(html, "og:url", audit.url)
         html = upsert_property(html, "og:type", "website" if audit.page_type in {"other", "trust"} else "article")
-        html = upsert_property(html, "og:image", DEFAULT_OG_IMAGE)
+        html = upsert_property_if_missing(html, "og:image", DEFAULT_OG_IMAGE)
         html = upsert_meta(html, "twitter:card", "summary_large_image")
         html = upsert_meta(html, "twitter:site", TWITTER_SITE)
-        html = upsert_meta(html, "twitter:title", seo["title"])
-        html = upsert_meta(html, "twitter:description", seo["meta_description"])
-        html = upsert_meta(html, "twitter:image", DEFAULT_OG_IMAGE)
+        html = upsert_meta_if_missing(html, "twitter:image", DEFAULT_OG_IMAGE)
         html = fix_internal_html_links(html)
         html = fix_saaspare_suffix_links(html)
         html = fix_known_broken_internal_links(html)
@@ -717,8 +741,8 @@ def apply_safe_fixes(config: dict, audits: list[PageAudit]) -> list[dict]:
         html = inject_related_actions_block(html, audit, config)
         if html != original:
             file.write_text(html, encoding="utf-8")
-            fixes.extend(["metadata", "canonical", "social", "internal_links", "image_alt", "organization_schema", "trust_block", "schema_safety"])
-            applied.append({"file": audit.file, "path": audit.path, "fixes": sorted(set(fixes))})
+            fixes.extend(["canonical", "internal_links", "image_alt", "organization_schema", "trust_block", "schema_safety"])
+            applied.append({"file": audit.file, "path": audit.path, "premium": premium, "fixes": sorted(set(fixes))})
     write_json(ROOT / config["reportsDir"] / "applied-fixes.json", applied)
     write_md(ROOT / config["reportsDir"] / "applied-fixes.md", applied_fixes_md(applied))
     return applied
@@ -775,6 +799,25 @@ def upsert_property(html: str, prop: str, value: str) -> str:
     if re.search(pattern, html, re.I):
         return re.sub(pattern, tag, html, count=1, flags=re.I)
     return html.replace("</head>", f"{tag}\n</head>", 1)
+
+
+def upsert_property_if_missing(html: str, prop: str, value: str) -> str:
+    """Set an OG property only if it is absent or empty. Never overwrites an
+    existing curated value (e.g. a category-specific og:image)."""
+    pattern = rf'<meta[^>]+property=["\']{re.escape(prop)}["\'][^>]*>'
+    existing = re.search(pattern, html, re.I)
+    if existing and attr_value(existing.group(0), "content"):
+        return html
+    return upsert_property(html, prop, value)
+
+
+def upsert_meta_if_missing(html: str, name: str, value: str) -> str:
+    """Set a meta tag only if it is absent or empty. Preserves curated values."""
+    pattern = rf'<meta[^>]+name=["\']{re.escape(name)}["\'][^>]*>'
+    existing = re.search(pattern, html, re.I)
+    if existing and attr_value(existing.group(0), "content"):
+        return html
+    return upsert_meta(html, name, value)
 
 
 def upsert_link_rel(html: str, rel_name: str, href: str) -> str:
