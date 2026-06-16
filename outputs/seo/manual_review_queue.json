@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-16T11:28:11+00:00",
+  "generated_at_utc": "2026-06-16T21:46:28+00:00",
   "mode": "apply",
-  "pages_flagged": 24,
+  "pages_flagged": 25,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -25,6 +25,27 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "urfshark's 2-year deal works out to $2.19/mo. NordVPN is $3.09/mo. Both include 30-day money-back guarantees.</p> <div class=\"cta-btns\"> <a href=\"/go/surfshark\" target=\"_blank\""
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/elementor-vs-divi-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "d class=\"win\">$249 one-time (unlimited sites)</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td>30 days</td></tr> </tbody> </"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "and the core drag-and-drop editor. Divi does not have a free plan but offers a 30-day money-back guarantee.</div> </div> <div class=\"faq-item reveal-up\">"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "45-day money-back guarantee",
+          "context": "<p>Free plan available. Pro from $59/yr for 1 site. 10,000+ templates, 45-day money-back guarantee.</p> <a href=\"/go/elementor\" class=\"sp-btn sp-btn-primary glint-butto"
         }
       ],
       "trust_state_bumped": false
