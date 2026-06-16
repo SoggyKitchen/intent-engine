@@ -1,26 +1,5 @@
 # Duplicate Intent
 
 - Duplicate title: `Partner Verification | SaaSpare` -> /fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f, /fo-verify
-- Duplicate title: `1Password Pricing 2026 (Verified June 2026) — Real Costs + Hidden Fees` -> /pages/1password-pricing-2026-plans-costs-what-you-actually-pay, /pages/v3-preview-comparison
-- Duplicate title: `Best Chrome Devtools Alternatives 2026: Cheaper & Better Options | SaaSpare` -> /pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison, /pages/best-chrome-devtools-alternatives-in-2026
-- Duplicate title: `Best DevTools for B2B Engineering Teams in 2026 | SaaSpare` -> /pages/best-devtools-for-b2b-engineering-teams-in-2025, /pages/best-devtools-for-b2b-engineering-teams-in-2026
-- Duplicate title: `Best DevTools for B2B Software Development in 2026 | SaaSpare` -> /pages/best-devtools-for-b2b-software-development-in-2025, /pages/best-devtools-for-b2b-software-development-in-2026
-- Duplicate title: `Copy.ai Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/copy-ai-coupon-2026-discount-codes-promo, /pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts
-- Duplicate title: `FreshBooks Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/freshbooks-coupon-2026-discount-codes-promo, /pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate title: `GetResponse Free Trial 2026: How to Get the Full June 2026 Offer` -> /pages/getresponse-free-trial-2026-how-to-get-it-step-by-step, /pages/getresponse-free-trial-2026-how-to-start-what-you-get
-- Duplicate title: `Linear Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/linear-coupon-2026-discount-codes-promo, /pages/linear-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate title: `Moz Pro Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/moz-pro-coupon-2026-discount-codes-promo, /pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate title: `Pandadoc Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/pandadoc-coupon-2026-discount-codes-promo, /pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts
-- Duplicate title: `Salesforce Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/salesforce-coupon-2026-discount-codes-promo, /pages/salesforce-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate title: `Shopify Coupon 2026 (Verified June 2026) — Real Working Codes` -> /pages/shopify-coupon-code-promo-codes-2026-verified-discounts, /pages/shopify-discount-code-promo-codes-2026-verified-deals
 - Duplicate meta: `Updated 2026 guide from SaaSpare — expert analysis, real pricing data, and a clear recomme` -> /about, /contact, /deal-radar, /methodology
 - Duplicate meta: `SaaSpare` -> /accessibility, /cookie-policy, /dmca, /editorial-policy, /privacy
-- Duplicate meta: `Updated June 2026. The best Chrome Devtools alternatives in 2026 — ranked by price, featur` -> /pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison, /pages/best-chrome-devtools-alternatives-in-2026
-- Duplicate meta: `Updated June 2026. Best Copy.ai discount codes and promo offers verified 4 June 2026. Annu` -> /pages/copy-ai-coupon-2026-discount-codes-promo, /pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts
-- Duplicate meta: `Updated June 2026. Best FreshBooks discount codes and promo offers verified 4 June 2026. A` -> /pages/freshbooks-coupon-2026-discount-codes-promo, /pages/freshbooks-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate meta: `Updated June 2026. Everything in the GetResponse free trial 2026: length, credit card requ` -> /pages/getresponse-free-trial-2026-how-to-get-it-step-by-step, /pages/getresponse-free-trial-2026-how-to-start-what-you-get
-- Duplicate meta: `Updated June 2026. Best Linear discount codes and promo offers verified 4 June 2026. Annua` -> /pages/linear-coupon-2026-discount-codes-promo, /pages/linear-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate meta: `Updated June 2026. Best Moz Pro discount codes and promo offers verified 4 June 2026. Annu` -> /pages/moz-pro-coupon-2026-discount-codes-promo, /pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate meta: `Updated June 2026. Best Pandadoc discount codes and promo offers verified 4 June 2026. Ann` -> /pages/pandadoc-coupon-2026-discount-codes-promo, /pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts
-- Duplicate meta: `Updated June 2026. Best Salesforce discount codes and promo offers verified 4 June 2026. A` -> /pages/salesforce-coupon-2026-discount-codes-promo, /pages/salesforce-promo-code-2026-discounts-deals-that-actually-work
-- Duplicate meta: `Updated June 2026. Bottom line: it` -> /pages/tailscale-vs-zscaler-which-is-better-in-2026, /pages/twingate-vs-tailscale-which-is-better-in-2026

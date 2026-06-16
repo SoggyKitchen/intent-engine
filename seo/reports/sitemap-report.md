@@ -2,8 +2,8 @@
 
 - Sitemap exists: True
 - Sitemap URL count: 1431
-- Scanned HTML pages: 1464
-- Scanned pages missing from sitemap: 46
+- Scanned HTML pages: 1452
+- Scanned pages missing from sitemap: 34
 
 ## Missing Examples
 - https://saaspare.org/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f
@@ -26,29 +26,17 @@
 - https://saaspare.org/pages/7-best-zoom-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/asana-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison
-- https://saaspare.org/pages/best-devtools-for-b2b-engineering-teams-in-2025
-- https://saaspare.org/pages/best-devtools-for-b2b-software-development-in-2025
 - https://saaspare.org/pages/clickup-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/copy-ai-coupon-2026-discount-codes-promo
 - https://saaspare.org/pages/datadog-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/deel-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/freshbooks-coupon-2026-discount-codes-promo
-- https://saaspare.org/pages/getresponse-free-trial-2026-how-to-start-what-you-get
 - https://saaspare.org/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/linear-coupon-2026-discount-codes-promo
 - https://saaspare.org/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/moz-pro-coupon-2026-discount-codes-promo
 - https://saaspare.org/pages/notion-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/pandadoc-coupon-2026-discount-codes-promo
 - https://saaspare.org/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/rippling-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/salesforce-coupon-2026-discount-codes-promo
 - https://saaspare.org/pages/semrush-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026
-- https://saaspare.org/pages/shopify-discount-code-promo-codes-2026-verified-deals
 - https://saaspare.org/pages/shopify-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/v3-preview-comparison
 - https://saaspare.org/pages/xero-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/zoom-promo-code-2026-discounts-deals-that-actually-work
