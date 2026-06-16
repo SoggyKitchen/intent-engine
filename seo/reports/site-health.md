@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-16T09:03:46+00:00
-Mode: `audit`
+Generated: 2026-06-16T09:30:19+00:00
+Mode: `apply-safe`
 
 ## Current Score
-- Overall SaaSpare Health Score: **92.98/100**
+- Overall SaaSpare Health Score: **93.71/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.42/20
-- Content usefulness: 19.39/20
-- Trust/E-E-A-T: 18.21/20
+- Technical SEO: 19.51/20
+- Content usefulness: 19.4/20
+- Trust/E-E-A-T: 18.73/20
 - Internal linking: 14.5/15
-- Schema/indexability: 7.65/10
+- Schema/indexability: 7.66/10
 - Conversion/revenue: 8.9/10
-- Performance/UX: 4.91/5
+- Performance/UX: 5.0/5
 
 ## Dashboard Summary
 - Pages scanned: 1452
-- Healthy pages (85+): 1343
+- Healthy pages (85+): 1401
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 1431
 - GSC: GSC API error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -40,55 +40,55 @@ Mode: `audit`
 - Manual review for pricing, coupon, review, rating and vendor claims.
 
 ## Top 25 Highest-Impact Fixes
-- `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f` (24.52/100): invalid_canonical, missing_meta, no_h1
-- `/fo-verify` (28.56/100): invalid_canonical, missing_meta, no_h1
+- `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f` (41.02/100): no_h1
+- `/fo-verify` (45.06/100): no_h1
 - `/about` (61.02/100): images_missing_alt
-- `/newsletter` (62.74/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/contact` (62.75/100): images_missing_alt, title_length_outside_target
-- `/roi` (67.28/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
 - `/` (77.5/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_related_pages
 - `/deal-radar` (68.38/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages` (69.5/100): canonical_mismatch, images_missing_alt, missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/editorial-policy` (69.55/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/newsletter` (70.24/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/pages/best-privacy-vpn-2026` (80.75/100): broken_internal_link, missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown` (80.8/100): broken_internal_link, missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (81.5/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_methodology, title_length_outside_target
-- `/cookie-policy` (72.98/100): meta_length_outside_target
-- `/pages/ramp-pricing-history-2026` (83.49/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/stripe-coupon-2026-discount-codes-promo` (83.54/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/linear-pricing-history-2026` (83.57/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay` (83.62/100): broken_internal_link, images_missing_alt, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/freshbooks-pricing-2026-plans-costs-what-you-actually-pay` (83.62/100): broken_internal_link, images_missing_alt, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay` (83.64/100): broken_internal_link, images_missing_alt, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay` (83.64/100): broken_internal_link, images_missing_alt, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay` (83.66/100): broken_internal_link, images_missing_alt, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/se-ranking-pricing-2026-plans-costs-what-you-actually-pay` (83.71/100): broken_internal_link, images_missing_alt, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/surfer-seo-pricing-2026-plans-costs-what-you-actually-pay` (83.75/100): broken_internal_link, images_missing_alt, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (84.09/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/roi` (72.78/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
+- `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/accessibility` (75.67/100): meta_length_outside_target
+- `/pages/best-encrypted-cloud-storage-2026-business` (75.81/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/dmca` (75.92/100): meta_length_outside_target
+- `/cookie-policy` (75.98/100): meta_length_outside_target
+- `/pages/ramp-pricing-history-2026` (85.99/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (86.0/100): broken_internal_link, missing_correction_cta, missing_methodology, title_length_outside_target
+- `/pages/stripe-coupon-2026-discount-codes-promo` (86.04/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/kajabi-review-2026-is-it-worth-it-honest-verdict` (86.22/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/teachable-review-2026-is-it-worth-it-honest-verdict` (86.22/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict` (86.23/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/stripe-review-2026-is-it-worth-it-honest-verdict` (86.23/100): broken_internal_link, missing_correction_cta, thin_buyer_page
+- `/pages/which-saas-has-the-best-free-plan-2026` (76.3/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.38): CTA=True, affiliateLinks=5, disclosure=True
-- `/pages/stripe-coupon-2026-discount-codes-promo` (coupon, score 83.54): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/best-saas-deals-this-week-2026` (coupon, score 83.67): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.19): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.21): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.21): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.23): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.24): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.24): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.25): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.36): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.36): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.47): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/contabo-coupon-2026-discount-codes-promo` (coupon, score 89.48): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, score 89.5): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 89.5): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/zendesk-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 89.5): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/deel-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 89.51): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/getresponse-coupon-2026-discount-codes-promo` (coupon, score 89.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/gusto-coupon-2026-discount-codes-promo` (coupon, score 89.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/hetzner-coupon-2026-discount-codes-promo` (coupon, score 89.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/protonvpn-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 89.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/ramp-coupon-2026-discount-codes-promo` (coupon, score 89.52): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 89.53): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/clearscope-coupon-2026-discount-codes-promo` (coupon, score 89.53): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/stripe-coupon-2026-discount-codes-promo` (coupon, score 86.04): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.69): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.71): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.71): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.73): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.74): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.74): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.75): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.86): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.86): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.97): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/contabo-coupon-2026-discount-codes-promo` (coupon, score 91.98): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/zendesk-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/deel-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.01): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/getresponse-coupon-2026-discount-codes-promo` (coupon, score 92.02): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/gusto-coupon-2026-discount-codes-promo` (coupon, score 92.02): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/hetzner-coupon-2026-discount-codes-promo` (coupon, score 92.02): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/protonvpn-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.02): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/ramp-coupon-2026-discount-codes-promo` (coupon, score 92.02): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.03): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/clearscope-coupon-2026-discount-codes-promo` (coupon, score 92.03): CTA=True, affiliateLinks=1, disclosure=True

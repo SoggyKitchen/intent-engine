@@ -1,9 +1,5 @@
 {
-  "canonicalIssues": [
-    "/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f",
-    "/fo-verify",
-    "/pages"
-  ],
+  "canonicalIssues": [],
   "noindex": [
     "/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f",
     "/fo-verify"
