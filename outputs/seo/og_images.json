@@ -1,5 +1,22 @@
 {
   "svg_files": 16,
-  "pages_updated": 0,
-  "by_vertical": {}
+  "pages_updated": 1388,
+  "by_vertical": {
+    "security": 116,
+    "dev-tools": 77,
+    "default": 395,
+    "seo": 88,
+    "project-mgmt": 106,
+    "cloud": 45,
+    "hr": 68,
+    "ecommerce": 45,
+    "finance": 86,
+    "marketing": 48,
+    "video": 47,
+    "crm": 95,
+    "vpn": 19,
+    "analytics": 54,
+    "ai": 49,
+    "legal": 50
+  }
 }
