@@ -4,8 +4,13 @@ permissions:
   contents: write
 
 on:
-  schedule:
-    - cron: "0 */2 * * *"   # Every 2 hours
+  # PAUSED 2026-06-16 — indexing-cliff recovery. Harvest only updates the
+  # signal DB (data/intent.db, a ~96MB binary committed every 2h) and feeds the
+  # paused programmatic generator, so it has no SEO value while generation is
+  # off, and the constant binary commits bloat the repo. Re-enable alongside
+  # programmatic.yml once recovery is confirmed (target review ~2026-07-07).
+  # schedule:
+  #   - cron: "0 */2 * * *"   # Every 2 hours
   workflow_dispatch:          # Allow manual trigger
 
 concurrency:

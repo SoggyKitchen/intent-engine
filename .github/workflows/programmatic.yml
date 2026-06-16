@@ -6,8 +6,14 @@ on:
       max_pages:
         description: 'Max pages to generate'
         default: '110'
-  schedule:
-    - cron: "0 0,5,10,15,20 * * *"  # 5x daily every 5h (UTC) = 10am,3pm,8pm,1am,6am Brisbane
+  # PAUSED 2026-06-16 — indexing-cliff recovery. Generating up to 550 thin
+  # programmatic pages/day (5x110) while Google had deindexed ~975 pages was
+  # the root cause of the June-1 impressions cliff AND of non-recovery
+  # (consolidation > expansion until the GSC "indexed" count climbs back).
+  # Re-enable by uncommenting the schedule below once recovery is confirmed
+  # (target review ~2026-07-07). Manual runs still available via workflow_dispatch.
+  # schedule:
+  #   - cron: "0 0,5,10,15,20 * * *"  # 5x daily every 5h (UTC) = 10am,3pm,8pm,1am,6am Brisbane
 
 concurrency:
   group: intent-engine-stateful
