@@ -143,19 +143,6 @@
     "premium": false
   },
   {
-    "file": "site/pages/best-project-management-software-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-project-management-software-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -323,19 +310,6 @@
     ],
     "path": "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/elementor-vs-divi-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/elementor-vs-divi-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
