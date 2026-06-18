@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-18T21:10:08+00:00",
+  "generated_at_utc": "2026-06-18T22:04:16+00:00",
   "mode": "apply",
-  "pages_flagged": 25,
+  "pages_flagged": 26,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -369,6 +369,22 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "s=\"sticky-bottom-cta-text\"> <strong>NordVPN Free Trial</strong> \u2014 30 days \u00b7 30-day money-back guarantee </div> <div style=\"display:flex;gap:8px;align-items:center;flex-shrink:0\">"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/elementor-vs-wix-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "class=\"win\">\u2713 (first year free on paid plans)</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td>14 days</td></tr> </tbody> </"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "<p>Free plan available. Pro from $59/yr for 1 site. 10,000+ templates, 30-day money-back guarantee.</p> <a href=\"/go/elementor\" class=\"sp-btn sp-btn-primary glint-butto"
         }
       ],
       "trust_state_bumped": false

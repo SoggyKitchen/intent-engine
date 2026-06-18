@@ -1,9 +1,9 @@
 {
-  "total_pages": 1404,
-  "updated": 1403,
+  "total_pages": 1405,
+  "updated": 1404,
   "skipped": 1,
   "orphans_before": 54,
-  "orphans_after": 53,
+  "orphans_after": 54,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -21,17 +21,17 @@
         "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
         "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
         "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
-        "/pages/chargebee-vs-recharge-which-is-better-in-2026",
-        "/pages/lastpass-vs-roboform-which-is-better-in-2026"
+        "/pages/bamboohr-vs-remote-com-which-is-better-in-2026",
+        "/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/crowdstrike-vs-tenable-which-is-better-in-2026",
-        "/pages/1password-vs-password-boss-which-is-better-in-2026",
-        "/pages/twingate-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/tapfiliate-vs-refersion-which-is-better-in-2026",
+        "/pages/1password-vs-bitwarden-which-is-better-in-2026",
+        "/pages/tresorit-vs-sync-com-which-is-better-in-2026",
+        "/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026",
+        "/pages/salesforce-vs-copper-which-is-better-in-2026",
         "/pages/1password-vs-dashlane-which-is-better-in-2026"
       ]
     }
