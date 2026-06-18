@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-17T09:05:22+00:00
-Mode: `apply-safe`
+Generated: 2026-06-18T08:19:33+00:00
+Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **93.7/100**
+- Overall SaaSpare Health Score: **93.79/100**
 - Level: **Strong authority-ready**
 - Technical SEO: 19.51/20
 - Content usefulness: 19.4/20
-- Trust/E-E-A-T: 18.73/20
+- Trust/E-E-A-T: 18.81/20
 - Internal linking: 14.5/15
 - Schema/indexability: 7.66/10
-- Conversion/revenue: 8.9/10
+- Conversion/revenue: 8.92/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
 - Pages scanned: 1453
-- Healthy pages (85+): 1402
+- Healthy pages (85+): 1399
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 81
+- Safe fixes applied this run: 0
 - GSC: GSC API error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -50,21 +50,21 @@ Mode: `apply-safe`
 - `/pages/best-privacy-vpn-2026` (80.75/100): broken_internal_link, missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown` (80.82/100): broken_internal_link, missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/roi` (72.78/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (83.57/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (84.09/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (84.41/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/accessibility` (75.67/100): meta_length_outside_target
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (85.71/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay` (85.76/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/best-encrypted-cloud-storage-2026-business` (75.78/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (86.0/100): broken_internal_link, missing_correction_cta, missing_methodology, title_length_outside_target
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (86.0/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology
 - `/pages/ramp-pricing-history-2026` (86.0/100): broken_internal_link, missing_correction_cta, missing_methodology, title_length_outside_target
 - `/pages/stripe-coupon-2026-discount-codes-promo` (86.03/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/stripe-review-2026-is-it-worth-it-honest-verdict` (86.22/100): broken_internal_link, missing_correction_cta, thin_buyer_page
-- `/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict` (86.23/100): broken_internal_link, missing_correction_cta, thin_buyer_page
-- `/pages/teachable-review-2026-is-it-worth-it-honest-verdict` (86.24/100): broken_internal_link, missing_correction_cta, thin_buyer_page
-- `/pages/kajabi-review-2026-is-it-worth-it-honest-verdict` (86.25/100): broken_internal_link, missing_correction_cta, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.3/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.38): CTA=True, affiliateLinks=5, disclosure=True
