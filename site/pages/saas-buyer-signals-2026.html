@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon" sizes="512x512" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#07070d">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://saaspare.org/pages/saas-buyer-signals-2026">
 <meta property="og:title" content="SaaS Buyer Signals June 2026 — Real Public-Discussion Intent Data">
 <meta property="og:description" content="Updated June 2026. 500 public B2B-buyer signals analysed across 10 verticals. Source citations on every row. Original SaaSpare data — updated nightly.">
@@ -24,7 +24,29 @@
 <meta name="twitter:title" content="SaaS Buyer Signals June 2026 — Real Public-Discussion Intent Data">
 <meta name="twitter:description" content="Updated June 2026. 500 public B2B-buyer signals analysed across 10 verticals. Source citations on every row. Original SaaSpare data — updated nightly.">
 <meta name="twitter:image" content="https://saaspare.org/og/default.svg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "SaaS Buyer Signal Index — June 2026", "description": "Aggregated public buyer-intent signals across B2B SaaS verticals. Updated weekly. Each signal is sourced from public discussion (Reddit, HN, GitHub, forums) and scored by SaaSpare's intent classifier. We summarise themes; we do not republish user content.", "url": "https://saaspare.org/pages/saas-buyer-signals-2026", "creator": {"@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org"}, "license": "https://creativecommons.org/licenses/by/4.0/", "keywords": ["B2B buyer intent", "SaaS buyer signals", "SaaS purchase intent", "software buying signals"], "dateModified": "2026-06-19", "isAccessibleForFree": true}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "SaaS Buyer Signal Index \u2014 June 2026",
+  "description": "Aggregated public buyer-intent signals across B2B SaaS verticals. Updated weekly. Each signal is sourced from public discussion (Reddit, HN, GitHub, forums) and scored by SaaSpare's intent classifier. We summarise themes; we do not republish user content.",
+  "url": "https://saaspare.org/pages/saas-buyer-signals-2026",
+  "creator": {
+    "@type": "Organization",
+    "name": "SaaSpare",
+    "url": "https://saaspare.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": [
+    "B2B buyer intent",
+    "SaaS buyer signals",
+    "SaaS purchase intent",
+    "software buying signals"
+  ],
+  "dateModified": "2026-06-19",
+  "isAccessibleForFree": true
+}
+</script>
 <style>
   body{background:#07070d;color:#f4f4f8;font-family:-apple-system,Segoe UI,system-ui,sans-serif;margin:0;line-height:1.6}
   main{max-width:920px;margin:0 auto;padding:2rem 1.5rem}
@@ -274,16 +296,13 @@ nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp
 .sp-nav-wordmark em{color:#e94560;font-style:normal}
 nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
   border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
-nav#sp-nav .sp-nav-link:hover{color:#fff}
-nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
-nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
+nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
 .sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
   padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
   box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
-/* Remove old nav styles that cause bracket/black-bar glitches */
+.sp-nav-spacer{height:72px}
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
 </style>
@@ -291,26 +310,10 @@ nav.sp-topnav{display:none!important}
 (function(){
   window.addEventListener('scroll',function(){
     var nav=document.getElementById('sp-nav');
-    if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
+    if(nav){nav.classList.toggle('scrolled',window.scrollY>40);}
   },{passive:true});
-
-  // Highlight the nav link matching the current page (red underglow)
-  var path=window.location.pathname;
-  var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
-  var best=null,bestLen=0;
-  links.forEach(function(a){
-    var href=a.getAttribute('href');
-    if(!href||href==='/') return;
-    if(path===href||path.indexOf(href)===0){
-      if(href.length>bestLen){best=a;bestLen=href.length;}
-    }
-  });
-  if(best){best.classList.add('active');}
 })();
 </script>
-<meta name="keywords" content="SaaS Buyer Signals June 2026 — Real Public-Discussion Intent Data, other, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
-<meta name="twitter:site" content="@SaaSpare">
-  <link rel="stylesheet" href="/assets/saaspare-ui.css">
 </head>
 <body>
 <nav id="sp-nav">
