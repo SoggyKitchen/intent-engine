@@ -7,96 +7,96 @@
 - `/` (77.5/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_related_pages
 - `/deal-radar` (68.38/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/newsletter` (70.24/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/best-privacy-vpn-2026` (80.75/100): broken_internal_link, missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown` (80.82/100): broken_internal_link, missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/roi` (72.78/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (83.57/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (84.09/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (84.41/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/accessibility` (75.67/100): meta_length_outside_target
-- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (85.71/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay` (85.76/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/best-encrypted-cloud-storage-2026-business` (75.78/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
-- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (86.0/100): broken_internal_link, missing_correction_cta, missing_methodology, title_length_outside_target
-- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (86.0/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology
-- `/pages/ramp-pricing-history-2026` (86.0/100): broken_internal_link, missing_correction_cta, missing_methodology, title_length_outside_target
-- `/pages/stripe-coupon-2026-discount-codes-promo` (86.03/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/stripe-review-2026-is-it-worth-it-honest-verdict` (86.22/100): broken_internal_link, missing_correction_cta, thin_buyer_page
-- `/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict` (86.23/100): broken_internal_link, missing_correction_cta, thin_buyer_page
-- `/pages/teachable-review-2026-is-it-worth-it-honest-verdict` (86.24/100): broken_internal_link, missing_correction_cta, thin_buyer_page
-- `/pages/kajabi-review-2026-is-it-worth-it-honest-verdict` (86.25/100): broken_internal_link, missing_correction_cta, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.3/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (86.7/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (86.91/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/aweber-pricing-2026-plans-costs-what-you-actually-pay` (87.0/100): broken_internal_link, missing_correction_cta, missing_methodology
-- `/pages/best-ai-memory-workflow-optimization-tools-for-b2b-teams-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-ai-ml-providers-for-cost-effective-b2b-automation-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-ai-ml-tools-for-b2b-data-driven-decision-making-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-ai-ml-tools-for-cost-effective-compression-and-analysis-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-ai-powered-b2b-tools-for-operational-intelligence-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-cloud-infrastructure-drift-detection-redis-management-tools-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-cloud-infrastructure-management-tools-for-b2b-saas-teams-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-2025-minio-azure-event-hub-and-more` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-2025-terraform-opentofu-and-more` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-enterprise-grade-deployments-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-enterprise-kubernetes-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-secure-compliant-devops-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-cloud-infrastructure-tools-for-zero-downtime-deployments-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-developer-productivity-tools-for-engineering-teams-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devops-tooling-solutions-for-modern-b2b-software-teams-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devops-tools-for-2025-glimmung-octowatch-twelve-data-and-muga-compared` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devtools-for-code-security-logging-developer-productivity-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devtools-for-modernizing-legacy-apps-and-api-drift-detection-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devtools-for-secure-and-efficient-developer-workflows-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devtools-for-secure-offline-capable-ai-development-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-devtools-for-secure-scalable-b2b-software-integrations-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-infrastructure-as-code-and-cloud-cost-tools-for-aws-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-open-source-iac-and-observability-tools-for-secure-cloud-infrastructure-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-2025-comparison-of-cohort-analysis-financial-insights-and-health-reporting` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-b2b-financial-research-platforms-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-b2b-forecasting-reporting-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/best-saas-analytics-tools-for-business-decision-making-in-2025` (87.0/100): broken_internal_link, title_length_outside_target
-- `/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay` (87.0/100): broken_internal_link, missing_correction_cta, missing_methodology
-- `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay` (87.0/100): broken_internal_link, missing_correction_cta, missing_methodology
-- `/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay` (87.0/100): broken_internal_link, missing_correction_cta, missing_methodology
-- `/pages/best-saas-analytics-tools-for-2025` (87.97/100): broken_internal_link, thin_buyer_page
-- `/pages/best-ai-agent-tools-for-developers-in-2026` (88.0/100): broken_internal_link
-- `/pages/best-ai-agent-tools-for-enterprise-workflows-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-ai-ml-tools-for-b2b-automation-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-ai-ml-tools-for-b2b-software-teams-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-ai-ml-tools-for-enterprise-data-intelligence-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-ai-ml-tools-for-smbs-and-developers-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-ai-workflow-tools-for-b2b-software-teams-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-cloud-infrastructure-backup-management-tools-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-cloud-infrastructure-tools-for-b-g-deployments-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-cloud-infrastructure-tools-for-b2b-saas-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-cloud-infrastructure-tools-for-b2b-saas-teams-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-coi-verification-tools-for-compliance-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-cybersecurity-tools-for-b2b-software-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-developer-tools-for-b2b-saas-engineering-teams-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devops-tools-for-agile-workflows-in-2026` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-b2b-engineering-teams-in-2026` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-b2b-software-development-in-2026` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-b2b-software-teams-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-chrome-extension-developers-in-2026` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-configuration-drift-detection-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-developer-productivity-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-efficient-coding-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-frontend-developers-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-modern-b2b-software-teams-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-modern-net-and-ai-development-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-modern-web-development-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-multi-agent-workflows-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-oss-library-management-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-remote-development-automation-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-secure-scalable-b2b-automation-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-software-development-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-devtools-for-software-engineers-in-2026` (88.0/100): broken_internal_link
-- `/pages/best-load-balancers-for-zero-downtime-deployments-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-open-source-devtools-for-b2b-software-teams-in-2025` (88.0/100): broken_internal_link
-- `/pages/best-secrets-detection-tools-for-b2b-saas-in-2025` (88.0/100): broken_internal_link
-- `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/clearscope-pricing-2026-plans-costs-what-you-actually-pay` (88.1/100): broken_internal_link, missing_methodology, thin_buyer_page, title_length_outside_target
+- `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/request-a-comparison` (79.33/100): title_length_outside_target
+- `/privacy` (79.61/100): meta_length_outside_target
+- `/pages/how-saaspare-ranks-tools` (80.56/100): title_length_outside_target
+- `/pages/saas-glossary` (81.0/100): title_length_outside_target
+- `/pages/v3-preview-404` (81.44/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-contact` (82.95/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-homepage` (83.15/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-affiliate-disclosure` (83.21/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-saas-deals-this-week-2026` (83.61/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026` (83.73/100): meta_length_outside_target
+- `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026` (83.73/100): meta_length_outside_target
+- `/pages/cheaper-alternative-to-notion-after-price-hike-2026` (83.74/100): meta_length_outside_target
+- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026` (83.75/100): meta_length_outside_target
+- `/pages/v3-preview-about` (83.75/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/cheaper-alternative-to-asana-after-price-hike-2026` (83.77/100): meta_length_outside_target
+- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026` (83.84/100): meta_length_outside_target
+- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026` (83.87/100): meta_length_outside_target
+- `/pages/v3-preview-newsletter` (83.88/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-library` (84.04/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-shortlist` (84.59/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/7-best-ramp-alternatives-in-2026-free-paid` (84.79/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-roi-calculator` (84.91/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-deal-radar` (85.02/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work` (85.5/100): missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/best-ecommerce-platforms-2026` (85.68/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown` (85.92/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/saas-pricing-calculator-2026` (86.09/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-privacy` (86.32/100): missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/best-fiverr-alternatives-2026` (86.34/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-vpn-australia-2026` (86.38/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/best-nordpass-alternatives-in-2026-free-paid` (86.45/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/ai-tools-pricing-changes-2026` (86.55/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/best-sucuri-alternatives-in-2026-free-paid` (86.58/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-surfshark-alternatives-in-2026-free-paid` (86.59/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-elevenlabs-alternatives-in-2026-free-paid` (86.65/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-nordvpn-alternatives-in-2026-free-paid` (86.74/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-privacy-vpn-2026` (86.75/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown` (86.82/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-vpn-for-gaming-2026` (86.88/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/coupon-verification-policy` (87.06/100): meta_length_outside_target, title_length_outside_target
+- `/pages/buyer-type-alternatives` (87.41/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/7-best-canva-alternatives-in-2026-free-paid` (87.53/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-miro-alternatives-in-2026-free-paid` (87.54/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-slack-alternatives-in-2026-free-paid` (87.57/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (87.58/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/best-cloud-hosting-2026` (88.3/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/best-finance-software-2026` (88.3/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/state-of-saas-pricing-2026` (88.42/100): title_length_outside_target
+- `/best-ecommerce-platform-2026` (88.75/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/best-marketing-automation-software-2026` (88.75/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/best-video-conferencing-software-2026` (88.75/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/best-crm-software-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/best-password-manager-business-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/best-seo-tools-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/best-vpn-for-business-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/best-vpn-for-privacy-and-security-2026` (89.26/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/1password-pricing-history-2026` (89.57/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/datadog-pricing-history-2026` (89.57/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/pipedrive-pricing-history-2026` (89.57/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/tresorit-pricing-history-2026` (89.57/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/best-hr-software-2026` (89.75/100): missing_correction_cta, missing_related_pages
+- `/best-project-management-software-2026` (90.0/100): missing_correction_cta, missing_related_pages
+- `/pages/asana-pricing-history-2026` (90.05/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/notion-pricing-history-2026` (90.07/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/semrush-pricing-history-2026` (90.1/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/shopify-pricing-history-2026` (90.12/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ahrefs-pricing-history-2026` (90.14/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/clickup-pricing-history-2026` (90.19/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/hubspot-pricing-history-2026` (90.22/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/monday-com-pricing-history-2026` (90.25/100): missing_correction_cta, missing_methodology
+- `/pages/does-getresponse-have-a-free-plan-2026-full-breakdown` (91.0/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/fiverr-vs-toptal-which-is-better-in-2026` (91.0/100): meta_length_outside_target, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/grandfathered-saas-pricing-2026` (91.0/100): missing_correction_cta, missing_methodology
+- `/pages/partnerstack-review-2026-is-it-worth-it-honest-verdict` (91.0/100): meta_length_outside_target, missing_correction_cta, title_length_outside_target
+- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (91.69/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/linear-free-trial-2026-how-to-get-it-step-by-step` (91.7/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (91.71/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (91.71/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (91.73/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (91.74/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (91.74/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (91.75/100): missing_correction_cta, missing_methodology, thin_buyer_page
