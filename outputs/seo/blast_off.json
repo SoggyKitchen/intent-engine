@@ -1,11 +1,11 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-19",
-  "titles_rewritten": 3,
-  "descs_rewritten": 22,
+  "titles_rewritten": 2,
+  "descs_rewritten": 33,
   "dates_refreshed": 0,
   "answers_added": 15,
-  "files_changed": 22,
+  "files_changed": 33,
   "files_scanned": 1422,
   "title_examples": [
     {
@@ -15,13 +15,8 @@
     },
     {
       "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free = 20M Events, Growth from $28/mo \u2014 Is It Enough?",
+      "before": "Mixpanel Pricing 2026: Free (20M Events/mo), Growth $28/mo \u2014 Every Change",
       "after": "Mixpanel Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "protonmail-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "ProtonMail Pricing 2026: Free Plan, Mail Plus & Proton Unlimited \u2014 Real Costs",
-      "after": "ProtonMail Pricing 2026 (Verified June) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
@@ -46,14 +41,14 @@
       "after": "Updated June 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-ecommerce-platforms-2026.html",
-      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated June 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+      "file": "aws-vs-supabase-which-is-better-in-2026.html",
+      "before": "AWS vs Supabase 2026: AWS wins overall (9.0/10 vs 8.8/10) but Supabase wins on developer speed and free tier generosity. Expert head-to-head on pricing, features, and real use cases.",
+      "after": "Updated June 2026. AWS vs Supabase 2026: AWS wins overall (9.0/10 vs 8.8/10) but Supabase wins on developer speed and free tier generosity. Expert head-to-head\u2026"
     },
     {
-      "file": "best-vpn-australia-2026.html",
-      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
+      "file": "best-devops-configuration-drift-detection-tools-in-2025.html",
+      "before": "8 configuration drift detection tools compared for DevOps teams in 2026: Puppet, Chef, Ansible, Terraform Cloud, Pulumi and more. Pricing, agent support, and which to pick. Expert-tested.",
+      "after": "Updated June 2026. 8 configuration drift detection tools compared for DevOps teams in 2026: Puppet, Chef, Ansible, Terraform Cloud, Pulumi and more. Pricing,\u2026"
     }
   ],
   "indexnow": {
