@@ -384,6 +384,29 @@
         "Semrush vs Moz queries ranking 60-82 with 278-269 impressions \u2014 deep work needed but long-term play",
         "ElevenLabs does-have-free-plan format mirrors proven Notion/Sentry traffic pattern"
       ]
+    },
+    {
+      "date": "2026-06-19",
+      "session": "ceo-daily",
+      "actions": [
+        "NEW PAGE: protonmail-pricing-2026-plans-costs-what-you-actually-pay.html \u2014 biggest content gap filled (10 ProtonVPN pages existed, zero ProtonMail). CJ route /go/protonmail live (advertiser 5227916, dpbolvw.net). Covers Free/Mail Plus/Unlimited/Business. All prices approximate per Hard Rule #1.",
+        "CTR FIX: Mixpanel pricing title again updated to data-specific version (pos 13.7, 742 impr, 0% CTR). Previous session improvement was overwritten by nightly IntentBot AGAIN. Title: Mixpanel Pricing 2026: Free = 20M Events, Growth from $28/mo \u2014 Is It Enough?",
+        "CONFIRMED: PartnerStack still locked as of June 19. Owner filed another appeal June 19 citing account consolidation complete. Blocks ClickUp/ActiveCampaign/Monday/Dashlane (~$400+/mo potential).",
+        "CONFIRMED: Impact.com own program approved 2026-06-16 (/go/impact live). HubSpot/1Password/Monday still pending on Impact.com.",
+        "CONFIRMED: FreshBooks Awin REJECTED (program closed). FreshBooks PartnerStack pending but account locked.",
+        "NOTE: Nightly IntentBot CTR optimizer continues to overwrite manual title improvements. Known regression \u2014 consider adding mixpanel/protonmail pages to STRATEGIC_PROTECTED_PATHS or adding override logic."
+      ],
+      "learnings": [
+        "IntentBot overwrites improved titles on pos 8-20 pages every night. Need to protect high-value manual titles or bake improvements into the bot logic.",
+        "Local git main branch pointer gets stale in ephemeral containers \u2014 remote main advances via CI but local clone is not updated. cherry-pick workflow is the correct approach.",
+        "ProtonMail page gap: CJ route was live but zero pages existed. Page created covers the /protonmail affiliate link."
+      ],
+      "owner_actions_needed": [
+        "PartnerStack appeal: follow up if not reinstated within 48h of June 19 appeal",
+        "Apply HubSpot on Impact.com from dashboard (publisher 7269601)",
+        "Apply GetResponse/Elementor/ProtonVPN/Parallels on Awin (publisher 2917137)",
+        "Get CJ deep links for GetResponse/Proton/Elementor/AWeber/Parallels (app.cj.com \u2192 Links \u2192 Get Links)"
+      ]
     }
   ],
   "entries": [
