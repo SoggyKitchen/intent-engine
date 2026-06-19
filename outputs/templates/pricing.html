@@ -41,6 +41,7 @@
 /* ── LAYOUT ───────────────────────── */
 .pr-layout{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:start;}
 .pr-main{display:flex;flex-direction:column;gap:40px;}
+.pr-bottom-line{font-size:1.05rem;line-height:1.75;color:var(--ink-2);padding:1rem 1.25rem;background:rgba(255,255,255,.04);border-left:3px solid var(--pink-light);border-radius:0 var(--r) var(--r) 0;margin:0;}
 /* ── SIDEBAR ──────────────────────── */
 .pr-side{position:sticky;top:106px;display:flex;flex-direction:column;gap:16px;}
 .side-panel{padding:24px;}
@@ -183,6 +184,9 @@
 
       <!-- ── MAIN CONTENT ── -->
       <div class="pr-main">
+
+        <!-- BOTTOM LINE — AEO anchor: first paragraph AI models extract -->
+        <p class="pr-bottom-line"><strong>Bottom line:</strong> {{STICKY_CTA_TEXT}}</p>
 
         <!-- PLANS TABLE -->
         <div id="plans">
