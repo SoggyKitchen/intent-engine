@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-18T21:10:08+00:00",
+  "generated_at_utc": "2026-06-19T02:47:48+00:00",
   "mode": "apply",
   "pages_flagged": 25,
   "claim_labels_seen": [
@@ -125,7 +125,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "5\"><path d=\"M6 9l6 6 6-6\"/></svg></div><div class=\"faq-a\">No free trial \u2014 but a 30-day money-back guarantee applies to all plans. Buy, test fully, and get a full refund within 30 days.</d"
+          "context": ".5\"><path d=\"M6 9l6 6 6-6\"/></svg></h3><div class=\"faq-a\">No free trial \u2014 but a 30-day money-back guarantee applies to all plans. Buy, test fully, and get a full refund within 30 days.</d"
         },
         {
           "label": "money_back_guarantee",
@@ -183,7 +183,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "stroke-width=\"2.5\"><path d=\"M6 9l6 6 6-6\"/></svg></div><div class=\"faq-a\">Yes \u2014 30-day money-back guarantee on all plans. Request via the app's in-app support or live chat. Processed with"
+          "context": "stroke-width=\"2.5\"><path d=\"M6 9l6 6 6-6\"/></svg></h3><div class=\"faq-a\">Yes \u2014 30-day money-back guarantee on all plans. Request via the app's in-app support or live chat. Processed with"
         }
       ],
       "trust_state_bumped": false
@@ -343,12 +343,12 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "M6 9l6 6 6-6\"/></svg></div><div class=\"faq-a\">Not a traditional free trial. The 30-day money-back guarantee is effectively risk-free \u2014 get full access for 30 days and claim a full refund"
+          "context": "\"M6 9l6 6 6-6\"/></svg></h3><div class=\"faq-a\">Not a traditional free trial. The 30-day money-back guarantee is effectively risk-free \u2014 get full access for 30 days and claim a full refund"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
-          "context": "iv> <div class=\"faq-item\"><div class=\"faq-q\">How do I claim the NordVPN money-back guarantee?<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColo"
+          "context": "div> <div class=\"faq-item\"><h3 class=\"faq-q\">How do I claim the NordVPN money-back guarantee?<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColo"
         },
         {
           "label": "money_back_guarantee",
@@ -358,7 +358,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
-          "context": "ys.</div></div> <div class=\"faq-item\"><div class=\"faq-q\">Is the NordVPN money-back guarantee reliable?<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"cu"
+          "context": "ays.</div></div> <div class=\"faq-item\"><h3 class=\"faq-q\">Is the NordVPN money-back guarantee reliable?<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"cu"
         },
         {
           "label": "money_back_guarantee",
