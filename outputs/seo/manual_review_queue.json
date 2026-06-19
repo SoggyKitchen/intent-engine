@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-19T02:55:23+00:00",
+  "generated_at_utc": "2026-06-19T05:02:26+00:00",
   "mode": "apply",
   "pages_flagged": 25,
   "claim_labels_seen": [
@@ -337,6 +337,11 @@
         },
         {
           "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "s=\"pr-bottom-line\"><strong>Bottom line:</strong> NordVPN Free Trial \u2014 30 days \u00b7 30-day money-back guarantee</p> <div id=\"how-to-start\" style=\"margin-bottom:4rem\"> <div class=\"s"
+        },
+        {
+          "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
           "context": "tep-tip\">\u2192 The 2-year plan is the best per-month value. You can still claim the money-back guarantee within 30 days</div> </div> <div class=\"sp-glass step-card prem"
         },
@@ -364,11 +369,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "?</h2> <p style=\"font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem\">30-day money-back guarantee. Full access from day one. Risk-free evaluation.</p> <a href=\"/go/nordvpn"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "s=\"sticky-bottom-cta-text\"> <strong>NordVPN Free Trial</strong> \u2014 30 days \u00b7 30-day money-back guarantee </div> <div style=\"display:flex;gap:8px;align-items:center;flex-shrink:0\">"
         }
       ],
       "trust_state_bumped": false
