@@ -1,6 +1,6 @@
 # SEO Audit
 
-Pages scanned: 1452
+Pages scanned: 1453
 
 ## Severe Issue Counts
 - broken_internal_link: 189
@@ -8,13 +8,13 @@ Pages scanned: 1452
 
 ## Warning Counts
 - images_missing_alt: 4
-- meta_length_outside_target: 27
+- meta_length_outside_target: 30
 - missing_correction_cta: 295
 - missing_last_verified: 1
-- missing_methodology: 207
+- missing_methodology: 208
 - missing_related_pages: 17
-- missing_trustbox: 46
-- thin_buyer_page: 1107
+- missing_trustbox: 47
+- thin_buyer_page: 1108
 - title_length_outside_target: 102
 
 ## Lowest Scoring Pages
@@ -32,7 +32,7 @@ Pages scanned: 1452
 - `/pages/saas-buyer-signals-2026`: 74.6/100, issues=none
 - `/editorial-policy`: 75.05/100, issues=none
 - `/accessibility`: 75.67/100, issues=none
-- `/pages/best-encrypted-cloud-storage-2026-business`: 75.81/100, issues=none
+- `/pages/best-encrypted-cloud-storage-2026-business`: 75.78/100, issues=none
 - `/dmca`: 75.92/100, issues=none
 - `/cookie-policy`: 75.98/100, issues=none
 - `/pages/saas-pricing-changes`: 75.99/100, issues=none
@@ -40,31 +40,31 @@ Pages scanned: 1452
 - `/`: 77.5/100, issues=broken_internal_link
 - `/pages`: 78.0/100, issues=none
 - `/advertise`: 79.32/100, issues=none
-- `/pages/request-a-comparison`: 79.36/100, issues=none
+- `/pages/request-a-comparison`: 79.33/100, issues=none
 - `/privacy`: 79.61/100, issues=none
 - `/affiliate-disclosure`: 80.04/100, issues=none
-- `/pages/how-saaspare-ranks-tools`: 80.55/100, issues=none
+- `/pages/how-saaspare-ranks-tools`: 80.56/100, issues=none
 - `/pages/best-privacy-vpn-2026`: 80.75/100, issues=broken_internal_link
-- `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown`: 80.8/100, issues=broken_internal_link
-- `/pages/saas-stack-audit-checkout`: 80.94/100, issues=none
+- `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown`: 80.82/100, issues=broken_internal_link
+- `/pages/saas-stack-audit-checkout`: 80.92/100, issues=none
 - `/pages/saas-glossary`: 81.0/100, issues=none
-- `/pages/v3-preview-404`: 81.4/100, issues=none
+- `/pages/v3-preview-404`: 81.44/100, issues=none
 - `/pages/saas-spend-audit`: 82.0/100, issues=none
 - `/methodology`: 82.31/100, issues=none
 - `/pages/v3-preview-contact`: 82.95/100, issues=none
 - `/pages/saas-price-hike-watch-may-2026`: 83.0/100, issues=none
-- `/pages/v3-preview-homepage`: 83.16/100, issues=none
-- `/pages/v3-preview-affiliate-disclosure`: 83.2/100, issues=none
-- `/pages/best-saas-deals-this-week-2026`: 83.67/100, issues=none
-- `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 83.73/100, issues=none
-- `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 83.75/100, issues=none
+- `/pages/v3-preview-homepage`: 83.15/100, issues=none
+- `/pages/v3-preview-affiliate-disclosure`: 83.21/100, issues=none
+- `/pages/best-saas-deals-this-week-2026`: 83.61/100, issues=none
+- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 83.73/100, issues=none
+- `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 83.73/100, issues=none
+- `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 83.74/100, issues=none
+- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 83.75/100, issues=none
 - `/pages/v3-preview-about`: 83.75/100, issues=none
-- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 83.76/100, issues=none
-- `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 83.78/100, issues=none
-- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 83.78/100, issues=none
-- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 83.83/100, issues=none
-- `/pages/v3-preview-newsletter`: 83.84/100, issues=none
-- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 83.9/100, issues=none
-- `/pages/v3-preview-library`: 84.05/100, issues=none
-- `/pages/v3-preview-shortlist`: 84.57/100, issues=none
-- `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.8/100, issues=none
+- `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 83.77/100, issues=none
+- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 83.84/100, issues=none
+- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 83.87/100, issues=none
+- `/pages/v3-preview-newsletter`: 83.88/100, issues=none
+- `/pages/v3-preview-library`: 84.04/100, issues=none
+- `/pages/v3-preview-shortlist`: 84.59/100, issues=none
+- `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.79/100, issues=none
