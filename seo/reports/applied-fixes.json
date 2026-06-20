@@ -130,6 +130,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/best-devops-configuration-drift-detection-tools-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-devops-configuration-drift-detection-tools-in-2025",
+    "premium": false
+  },
+  {
     "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
     "fixes": [
       "canonical",
@@ -687,6 +700,19 @@
     ],
     "path": "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
   },
   {
     "file": "site/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict.html",
