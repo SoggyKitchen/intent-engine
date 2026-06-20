@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-20T07:08:25+00:00",
+  "generated_at_utc": "2026-06-20T21:46:59+00:00",
   "mode": "apply",
-  "pages_flagged": 25,
+  "pages_flagged": 26,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -380,6 +380,22 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"background:rgba(255,2"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/elementor-coupon-code-promo-codes-2026-verified-discounts.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ever, the free plugin is unlimited (no time limit) and Elementor Pro includes a 30-day money-back guarantee so you can try Pro risk-free.</div></div> <div class=\"faq-item\"><h3 cla"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "d=\"M6 9l6 6 6-6\"/></svg></h3><div class=\"faq-a\">Yes \u2014 Elementor Pro includes a 30-day money-back guarantee. Contact Elementor's support team within 30 days of purchase to request a refun"
         }
       ],
       "trust_state_bumped": false

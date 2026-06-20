@@ -1,9 +1,22 @@
 {
-  "generated_at_utc": "2026-06-20T07:08:21+00:00",
-  "pages_scanned": 1424,
-  "index_size": 254,
+  "generated_at_utc": "2026-06-20T21:46:52+00:00",
+  "pages_scanned": 1425,
+  "index_size": 255,
   "brands_covered": 89,
-  "pages_updated": 0,
+  "pages_updated": 1,
   "mode": "apply",
-  "sample_change": null
+  "sample_change": {
+    "path": "site/pages/elementor-coupon-code-promo-codes-2026-verified-discounts.html",
+    "page_type": "coupon",
+    "brands": [
+      "elementor"
+    ],
+    "links_added": [
+      "Elementor pricing breakdown",
+      "Elementor free trial guide",
+      "Elementor full review",
+      "Build a free shortlist",
+      "Run the SaaS ROI calculator"
+    ]
+  }
 }

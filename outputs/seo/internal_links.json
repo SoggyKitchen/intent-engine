@@ -1,9 +1,9 @@
 {
-  "total_pages": 1405,
+  "total_pages": 1406,
   "updated": 1404,
-  "skipped": 1,
-  "orphans_before": 56,
-  "orphans_after": 55,
+  "skipped": 2,
+  "orphans_before": 57,
+  "orphans_after": 63,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
