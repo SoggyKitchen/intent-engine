@@ -1,42 +1,17 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-20",
-  "titles_rewritten": 6,
-  "descs_rewritten": 35,
-  "dates_refreshed": 0,
+  "titles_rewritten": 1,
+  "descs_rewritten": 23,
+  "dates_refreshed": 3,
   "answers_added": 15,
-  "files_changed": 36,
-  "files_scanned": 1423,
+  "files_changed": 23,
+  "files_scanned": 1426,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
-    },
-    {
-      "file": "elementor-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "Elementor Coupon Codes 2026 (June) \u2014 Pro Discounts & Free Plugin Verified",
-      "after": "Elementor Coupon 2026 (Verified June 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "linear-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Linear Free Trial 2026: No Trial Period \u2014 Free Plan Has 250 Issues & Unlimited Projects",
-      "after": "Linear Free Trial 2026: How to Get the Full June 2026 Offer"
-    },
-    {
-      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free 20M Events/Mo vs Growth $28/mo \u2014 Full Plan Breakdown [June]",
-      "after": "Mixpanel Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "NordLayer Pricing 2026: Is $9/User Worth It? Lite vs Core vs Business \u2014 Honest Verdict [June]",
-      "after": "NordLayer Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "notion-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Notion Pricing 2026: Free vs Plus $10 vs Business $15/User \u2014 Every Plan Compared [June]",
-      "after": "Notion Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
@@ -61,14 +36,14 @@
       "after": "Updated June 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "aws-vs-render-which-is-better-in-2026.html",
-      "before": "Render wins for simplicity \u2014 zero-config Git deploys, free static hosting, pricing from $7/mo. AWS wins at enterprise scale. Side-by-side 2026 comparison of cost, DevOps & features.",
-      "after": "Updated June 2026. Render wins for simplicity \u2014 zero-config Git deploys, free static hosting, pricing from $7/mo. AWS wins at enterprise scale. Side-by-side 2026\u2026"
-    },
-    {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated June 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated June 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {

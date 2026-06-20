@@ -1,9 +1,9 @@
 {
-  "total_pages": 1406,
-  "updated": 1404,
+  "total_pages": 1409,
+  "updated": 1407,
   "skipped": 2,
-  "orphans_before": 57,
-  "orphans_after": 63,
+  "orphans_before": 68,
+  "orphans_after": 55,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/woocommerce-vs-chargebee-which-is-better-in-2026",
-        "/pages/cisco-anyconnect-vs-zscaler-which-is-better-in-2026"
+        "/pages/zoho-crm-vs-nutshell-which-is-better-in-2026",
+        "/pages/nordlayer-vs-tresorit-which-is-better-in-2026"
       ]
     },
     {
@@ -21,17 +21,17 @@
         "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
         "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
         "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
-        "/pages/chargebee-vs-recharge-which-is-better-in-2026",
-        "/pages/lastpass-vs-roboform-which-is-better-in-2026"
+        "/pages/bamboohr-vs-remote-com-which-is-better-in-2026",
+        "/pages/partnerstack-vs-tune-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/crowdstrike-vs-tenable-which-is-better-in-2026",
-        "/pages/1password-vs-password-boss-which-is-better-in-2026",
-        "/pages/twingate-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/tapfiliate-vs-refersion-which-is-better-in-2026",
+        "/pages/1password-vs-bitwarden-which-is-better-in-2026",
+        "/pages/tresorit-vs-sync-com-which-is-better-in-2026",
+        "/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026",
+        "/pages/perimeter-81-vs-cisco-anyconnect-which-is-better-in-2026",
         "/pages/1password-vs-dashlane-which-is-better-in-2026"
       ]
     }
