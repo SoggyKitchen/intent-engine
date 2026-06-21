@@ -1,11 +1,11 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-21",
-  "titles_rewritten": 2,
-  "descs_rewritten": 24,
+  "titles_rewritten": 4,
+  "descs_rewritten": 25,
   "dates_refreshed": 0,
   "answers_added": 15,
-  "files_changed": 24,
+  "files_changed": 25,
   "files_scanned": 1426,
   "title_examples": [
     {
@@ -15,8 +15,18 @@
     },
     {
       "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free Forever (20M Events) + Every Paid Plan \u2014 Full Cost Breakdown",
+      "before": "Mixpanel Pricing 2026: Free to $28+/Month \u2014 3 Hidden Costs Explained [June]",
       "after": "Mixpanel Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "NordLayer Pricing 2026: $9\u2013$14/User/Month \u2014 Full Plan Breakdown [June]",
+      "after": "NordLayer Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Ramp Pricing 2026: $0 Free Card Confirmed \u2014 Every Change Tracked [June Update]",
+      "after": "Ramp Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
