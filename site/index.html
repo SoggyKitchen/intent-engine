@@ -1113,83 +1113,86 @@ nav.sp-topnav{display:none!important}
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40),{passive:true});
 
-/* SOUND WAVE DOT GRID — longitudinal compression wave */
+/* PLEXUS SPHERE — rigid node sphere, camera rotates; edges precomputed once */
 (function(){
   const canvas=document.getElementById('wave-dots');
   if(!canvas)return;
   const ctx=canvas.getContext('2d');
-  let W,H,t=0;
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DPR=Math.min(window.devicePixelRatio||1,2);
+  let W,H;
   function resize(){
-    W=canvas.width=canvas.offsetWidth;
-    H=canvas.height=canvas.offsetHeight;
+    W=canvas.offsetWidth;H=canvas.offsetHeight;
+    canvas.width=W*DPR;canvas.height=H*DPR;
+    ctx.setTransform(DPR,0,0,DPR,0,0);
   }
   resize();
   window.addEventListener('resize',resize,{passive:true});
 
-  const SPACING=24;
-  const BASE_R=1.4;
-
-  let mouseX=W/2,mouseY=H/2,smoothX=W/2,smoothY=H/2;
-  let scrollY=0;
-  window.addEventListener('mousemove',e=>{mouseX=e.clientX;mouseY=e.clientY},{passive:true});
-  window.addEventListener('scroll',()=>{
-    scrollY=window.scrollY;
-  },{passive:true});
-
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    smoothX+=(mouseX-smoothX)*0.04;
-    smoothY+=(mouseY-smoothY)*0.04;
-
-    // Fade opacity as you scroll deeper (more noticeable at top, dimmer in content)
-    const maxScrollFade=window.innerHeight*3;
-    const opacityFade=Math.max(0.15,0.6-scrollY/maxScrollFade*0.3);
-
-    const cols=Math.ceil(W/SPACING)+4;
-    const rows=Math.ceil(H/SPACING)+2;
-
-    for(let r=0;r<rows;r++){
-      for(let c=0;c<cols;c++){
-        const bx=c*SPACING-SPACING;
-        const by=r*SPACING-SPACING;
-
-        // Scroll is baked into the wave phase for infinite effect
-        const scrollPhase=scrollY*0.005;
-        const diagPhase1=(bx/W - by/H)*Math.PI*7 - (t*0.65 + scrollPhase);
-        const diagPhase2=(bx/W - by/H)*Math.PI*11.2 - (t*0.38 + scrollPhase*0.6);
-        const compression=(Math.sin(diagPhase1)*0.68)+(Math.sin(diagPhase2)*0.32);
-        const disp=compression*13;
-        const dx=disp*0.71;
-        const dy=-disp*0.71;
-
-        const mdx=bx-smoothX,mdy=by-smoothY;
-        const mdist=Math.hypot(mdx,mdy);
-        const ps=Math.max(0,1-mdist/400)*4;
-        const px=mdist>0?(mdx/mdist)*ps:0;
-        const py=mdist>0?(mdy/mdist)*ps:0;
-
-        const x=bx+dx+px;
-        const y=by+dy+py;
-
-        const cx=W*0.5,cy=H*0.4;
-        const dist=Math.hypot((x-cx)/(W*0.8),(y-cy)/(H*0.75));
-        const fade=Math.max(0,1-dist*0.8);
-        if(fade<0.02)continue;
-
-        const norm=(compression+1)*0.5;
-        const alpha=fade*(0.42+norm*0.32)*opacityFade;
-        const r_dot=BASE_R*(0.65+norm*0.85);
-
-        ctx.beginPath();
-        ctx.arc(x,y,r_dot,0,Math.PI*2);
-        ctx.fillStyle=`rgba(255,255,255,${alpha})`;
-        ctx.fill();
-      }
-    }
-    t+=0.007;
-    requestAnimationFrame(draw);
+  const N=window.innerWidth<700?90:150;
+  const GOLDEN=Math.PI*(3-Math.sqrt(5));
+  const nodes=[];
+  for(let i=0;i<N;i++){
+    const y=1-(i/(N-1))*2;
+    const rad=Math.sqrt(Math.max(0,1-y*y));
+    const th=i*GOLDEN;
+    nodes.push({x:Math.cos(th)*rad,y,z:Math.sin(th)*rad,pulse:Math.random()*6.283});
   }
-  draw();
+
+  const LINK=0.62;
+  const edges=[];
+  for(let i=0;i<N;i++)for(let j=i+1;j<N;j++){
+    const dx=nodes[i].x-nodes[j].x,dy=nodes[i].y-nodes[j].y,dz=nodes[i].z-nodes[j].z;
+    const d=Math.sqrt(dx*dx+dy*dy+dz*dz);
+    if(d<LINK)edges.push([i,j,1-d/LINK]);
+  }
+
+  let rotY=0,rotX=-0.22,t=0,mx=0,my=0,smx=0,smy=0,scrollY=0;
+  window.addEventListener('mousemove',e=>{
+    mx=e.clientX/window.innerWidth-0.5;my=e.clientY/window.innerHeight-0.5;
+  },{passive:true});
+  window.addEventListener('scroll',()=>{scrollY=window.scrollY},{passive:true});
+
+  const proj=new Array(N);
+  function frame(){
+    smx+=(mx-smx)*0.05;smy+=(my-smy)*0.05;
+    ctx.clearRect(0,0,W,H);
+    const op=Math.max(0,0.95-scrollY/(window.innerHeight*2.2));
+    if(op<=0.01){if(!reduce)requestAnimationFrame(frame);return;}
+
+    const cx=W*0.5,cy=H*0.43,R=Math.min(W,H)*(window.innerWidth<700?0.4:0.33);
+    const ay=rotY+smx*0.55,ax=rotX+smy*0.4;
+    const cY=Math.cos(ay),sY=Math.sin(ay),cX=Math.cos(ax),sX=Math.sin(ax);
+
+    for(let i=0;i<N;i++){
+      const n=nodes[i];
+      const x1=n.x*cY-n.z*sY,z1=n.x*sY+n.z*cY;
+      const y2=n.y*cX-z1*sX,z2=n.y*sX+z1*cX;
+      const persp=1/(2.2-z2);
+      proj[i]={sx:cx+x1*R*persp*1.45,sy:cy+y2*R*persp*1.45,z:z2};
+    }
+
+    for(let e=0;e<edges.length;e++){
+      const a=proj[edges[e][0]],b=proj[edges[e][1]];
+      const depth=(a.z+b.z)*0.5;
+      const la=edges[e][2]*0.5*((depth+1)*0.5)*op;
+      if(la<0.015)continue;
+      ctx.strokeStyle=`rgba(255,92,122,${la})`;
+      ctx.lineWidth=0.7;
+      ctx.beginPath();ctx.moveTo(a.sx,a.sy);ctx.lineTo(b.sx,b.sy);ctx.stroke();
+    }
+    for(let i=0;i<N;i++){
+      const p=proj[i],depth=(p.z+1)*0.5;
+      const pr=0.85+0.15*Math.sin(t*1.4+nodes[i].pulse);
+      const r=(0.8+depth*1.9)*pr;
+      const a=(0.22+depth*0.62)*op;
+      ctx.beginPath();ctx.arc(p.sx,p.sy,r,0,6.283);
+      ctx.fillStyle=depth>0.6?`rgba(255,198,208,${a})`:`rgba(255,255,255,${a*0.78})`;
+      ctx.fill();
+    }
+    if(!reduce){rotY+=0.0015;t+=0.016;requestAnimationFrame(frame);}
+  }
+  frame();
 })();
 
 /* ─── TYPEWRITER (exact from design) ─── */
