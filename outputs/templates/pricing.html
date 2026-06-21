@@ -41,6 +41,7 @@
 /* ── LAYOUT ───────────────────────── */
 .pr-layout{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:start;}
 .pr-main{display:flex;flex-direction:column;gap:40px;}
+.pr-bottom-line{font-size:1.05rem;line-height:1.75;color:var(--ink-2);padding:1rem 1.25rem;background:rgba(255,255,255,.04);border-left:3px solid var(--pink-light);border-radius:0 var(--r) var(--r) 0;margin:0;}
 /* ── SIDEBAR ──────────────────────── */
 .pr-side{position:sticky;top:106px;display:flex;flex-direction:column;gap:16px;}
 .side-panel{padding:24px;}
@@ -183,6 +184,9 @@
 
       <!-- ── MAIN CONTENT ── -->
       <div class="pr-main">
+
+        <!-- BOTTOM LINE — AEO anchor: first paragraph AI models extract -->
+        <p class="pr-bottom-line"><strong>Bottom line:</strong> {{STICKY_CTA_TEXT}}</p>
 
         <!-- PLANS TABLE -->
         <div id="plans">
@@ -358,11 +362,11 @@
             <h2 class="sp-h2" style="text-align:left">{{TOOL_NAME}} pricing FAQ</h2>
           </div>
           <div class="sp-glass reveal-up" style="padding:8px 24px">
-            <div class="faq-item"><div class="faq-q">{{FAQ_1_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_1_A}}</div></div>
-            <div class="faq-item"><div class="faq-q">{{FAQ_2_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_2_A}}</div></div>
-            <div class="faq-item"><div class="faq-q">{{FAQ_3_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_3_A}}</div></div>
-            <div class="faq-item"><div class="faq-q">{{FAQ_4_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_4_A}}</div></div>
-            <div class="faq-item"><div class="faq-q">{{FAQ_5_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">{{FAQ_5_A}}</div></div>
+            <div class="faq-item"><h3 class="faq-q">{{FAQ_1_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">{{FAQ_1_A}}</div></div>
+            <div class="faq-item"><h3 class="faq-q">{{FAQ_2_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">{{FAQ_2_A}}</div></div>
+            <div class="faq-item"><h3 class="faq-q">{{FAQ_3_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">{{FAQ_3_A}}</div></div>
+            <div class="faq-item"><h3 class="faq-q">{{FAQ_4_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">{{FAQ_4_A}}</div></div>
+            <div class="faq-item"><h3 class="faq-q">{{FAQ_5_Q}}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">{{FAQ_5_A}}</div></div>
           </div>
         </div>
       </div><!-- /pr-main -->

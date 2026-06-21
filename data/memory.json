@@ -166,6 +166,32 @@
         "generate_pricing_pages_v3.py SKIPS pages that already have premium template (pr-layout/price-at-glance/feat-col)",
         "PartnerStack appeal still pending \u2014 check #115928 status in 7-10 days"
       ]
+    },
+    {
+      "date": "2026-06-12",
+      "session": "revenue-hunter-2026-06-12",
+      "gmail_scan": {
+        "awin": "Fiverr APPROVED (already activated in prior session). FreshBooks REJECTED by Awin.",
+        "impact": "Account 7269601 active but ONLY Semrush partnered. Wix contract pending. HubSpot/Shopify not yet approved.",
+        "partnerstack": "APPROVED for PartnerStack own affiliate program (promoting PartnerStack.com). Separate program DECLINED (reason: approved other account). /go/partnerstack needs real tracking link from PS dashboard \u2014 ESCALATE TO OWNER.",
+        "freshbooks": "PartnerStack application submitted 2026-06-09, pending.",
+        "hubspot_direct": "REJECTED by HubSpot direct affiliate program (website quality requirement)."
+      },
+      "ctr_fixes": [
+        "ramp-pricing: title changed to emphasize No Change June 2026 (pos 3.7, 121 impr, ~0 clicks for change queries)",
+        "mixpanel-pricing: title updated with [Verified June] (pos 13.7, 742 impr)",
+        "nordlayer-pricing: meta expanded to full sentence, no truncation (pos 19.0, 270 impr)"
+      ],
+      "new_pages": [
+        "partnerstack-pricing-2026-plans-costs-what-you-actually-pay \u2014 full pricing breakdown, FAQ schema, alternatives table, /go/partnerstack CTAs"
+      ],
+      "leaks_fixed": 0,
+      "action_required_from_owner": [
+        "PartnerStack own affiliate: log into PartnerStack dashboard, get real tracking link for promoting PartnerStack.com, update /go/partnerstack in site/_redirects",
+        "Impact.com: apply to Shopify and other programs directly from impact.com dashboard (currently only Semrush is connected)",
+        "CJ deep links needed for: GetResponse (3142111), Elementor (6798066), Proton (5227916), AWeber (5111249), Parallels (2005415) \u2014 get from app.cj.com -> Links -> Get Links"
+      ],
+      "tests": "57/57 passed"
     }
   ],
   "affiliate_approvals": [
@@ -332,6 +358,191 @@
         "ACTION: Log into Awin (publisher 2917137) \u2014 apply to GetResponse (3142111), Elementor (6798066), ProtonVPN (5227916), Parallels (2005415)",
         "ACTION: Check Impact.com (account 7269601) for HubSpot, 1Password, Wix status",
         "MONITOR: Check GSC in 21 days for CTR improvements on twingate/cloudflare/hetzner pages"
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "session": "ceo-daily",
+      "gmail_findings": {
+        "awin": "Fiverr already activated in prior session (awinmid=6288, awinaffid=2917137, /go/fiverr live)",
+        "freshbooks_awin": "REJECTED (2026-06-01). PartnerStack application submitted 2026-06-09 via partnerships@saaspare.org",
+        "impact": "Still only partnered with Semrush \u2014 HubSpot/1Password/Monday still PENDING",
+        "wix": "Contract application sent via Impact.com (pending approval)",
+        "xero": "No email response yet"
+      },
+      "ctr_fixes": [
+        "ramp-pricing: title + meta updated to target ramp pricing change june 2026 (pos 3.7, 121 impr, 0 clicks)",
+        "mixpanel-pricing: title + meta updated to surface 20M events free (742 impr, pos 13.7, 0 CTR)",
+        "does-notion-have-free-plan: meta sharpened \u2014 4 limits angle + june freshness (557 impr, pos 9.4)",
+        "does-sentry-have-free-plan: title + meta \u2014 5K errors specific, june freshness (528 impr, pos 7.5)"
+      ],
+      "new_page": "does-elevenlabs-have-a-free-plan-2026-full-breakdown.html \u2014 ElevenLabs active affiliate, free plan breakdown, 6 locked features, full FAQ schema",
+      "revenue_leaks": "Clean \u2014 no direct vendor hrefs found",
+      "tests": "57/57 passed",
+      "notes": [
+        "ramp pricing change june 2026 at pos 3.7 with 121 impr and 0 clicks is the biggest immediate CTR fix \u2014 title now explicitly includes june",
+        "Semrush vs Moz queries ranking 60-82 with 278-269 impressions \u2014 deep work needed but long-term play",
+        "ElevenLabs does-have-free-plan format mirrors proven Notion/Sentry traffic pattern"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "session": "ceo-daily",
+      "actions": [
+        "NEW PAGE: protonmail-pricing-2026-plans-costs-what-you-actually-pay.html \u2014 biggest content gap filled (10 ProtonVPN pages existed, zero ProtonMail). CJ route /go/protonmail live (advertiser 5227916, dpbolvw.net). Covers Free/Mail Plus/Unlimited/Business. All prices approximate per Hard Rule #1.",
+        "CTR FIX: Mixpanel pricing title again updated to data-specific version (pos 13.7, 742 impr, 0% CTR). Previous session improvement was overwritten by nightly IntentBot AGAIN. Title: Mixpanel Pricing 2026: Free = 20M Events, Growth from $28/mo \u2014 Is It Enough?",
+        "CONFIRMED: PartnerStack still locked as of June 19. Owner filed another appeal June 19 citing account consolidation complete. Blocks ClickUp/ActiveCampaign/Monday/Dashlane (~$400+/mo potential).",
+        "CONFIRMED: Impact.com own program approved 2026-06-16 (/go/impact live). HubSpot/1Password/Monday still pending on Impact.com.",
+        "CONFIRMED: FreshBooks Awin REJECTED (program closed). FreshBooks PartnerStack pending but account locked.",
+        "NOTE: Nightly IntentBot CTR optimizer continues to overwrite manual title improvements. Known regression \u2014 consider adding mixpanel/protonmail pages to STRATEGIC_PROTECTED_PATHS or adding override logic."
+      ],
+      "learnings": [
+        "IntentBot overwrites improved titles on pos 8-20 pages every night. Need to protect high-value manual titles or bake improvements into the bot logic.",
+        "Local git main branch pointer gets stale in ephemeral containers \u2014 remote main advances via CI but local clone is not updated. cherry-pick workflow is the correct approach.",
+        "ProtonMail page gap: CJ route was live but zero pages existed. Page created covers the /protonmail affiliate link."
+      ],
+      "owner_actions_needed": [
+        "PartnerStack appeal: follow up if not reinstated within 48h of June 19 appeal",
+        "Apply HubSpot on Impact.com from dashboard (publisher 7269601)",
+        "Apply GetResponse/Elementor/ProtonVPN/Parallels on Awin (publisher 2917137)",
+        "Get CJ deep links for GetResponse/Proton/Elementor/AWeber/Parallels (app.cj.com \u2192 Links \u2192 Get Links)"
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "session": "sunday-maximizer",
+      "commit": "0e552082",
+      "summary": "Built 3 new VS comparison pages, fixed broken internal links, cleaned meta descriptions",
+      "new_pages": [
+        "monday-vs-trello-which-is-better-in-2026 (Monday 9.1 wins, /go/monday CTA, 50/sale pending)",
+        "monday-vs-jira-which-is-better-in-2026 (Monday 9.1 for general teams, Jira 9.0 for dev, /go/monday CTA)",
+        "notion-vs-confluence-which-is-better-in-2026 (Notion 9.0 wins, /go/notion CTA)"
+      ],
+      "fixes": [
+        "stripe-pricing-history: 5 broken links to non-existent stripe-pricing-2026-plans page -> redirected to stripe-review",
+        "linear-pricing-history: broken link to non-existent coupon page -> redirected to linear-review",
+        "salesforce-pricing-history: broken link to non-existent coupon page -> redirected to salesforce-review",
+        "7 cheaper-alternative meta descriptions: removed truncation artifacts (now 130-159 chars)",
+        "about.html + contact.html: added alt text to 10 images"
+      ],
+      "tests": "93/93 passed",
+      "sitemap": "1437 URLs",
+      "site_health": "94.49/100",
+      "gsc_status": "expired credentials (invalid_grant) - needs re-auth",
+      "ahrefs_status": "Insufficient plan - no data available",
+      "next_watch": {
+        "monday-vs-trello": "New page - watch for indexing in 7-14 days",
+        "monday-vs-jira": "New page - watch for indexing in 7-14 days",
+        "notion-vs-confluence": "New page - watch for indexing in 7-14 days"
+      },
+      "next_human_actions": [
+        "URGENT: Re-auth GSC credentials (invalid_grant) so seo_agent.py can pull live data",
+        "URGENT: Log into PartnerStack - get real /go/partnerstack tracking link",
+        "URGENT: Log into Impact.com (account 7269601) - apply for HubSpot, 1Password, Monday",
+        "ACTION: Log into Awin (publisher 2917137) - apply to GetResponse, Elementor, ProtonVPN, Parallels"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "date": "2026-06-11",
+      "session": "ceo-daily",
+      "affiliate_status": {
+        "fiverr_awin": "APPROVED 2026-06-03, awinmid=6288, already in _redirects",
+        "freshbooks_awin": "REJECTED 2026-06-01",
+        "freshbooks_partnerstack": "Application received 2026-06-09, pending",
+        "impact_wix": "Contract application sent 2026-06-01, pending",
+        "activecampaign": "APPROVED in _redirects (try.activecampaign.com/xc2j6av0g2wz)"
+      },
+      "ctr_fixes": [
+        "ramp-pricing: 1687 impr pos 10.2 - title now includes price anchor 5/mo",
+        "mixpanel-pricing: 742 impr pos 13.7 - title now includes plan prices",
+        "nordlayer-pricing: 270 impr pos 19.0 - title now includes per-user range"
+      ],
+      "new_page": "getresponse-vs-constant-contact-which-is-better-in-2026 (GetResponse wins 8.4 vs 8.0, earns $100/lead via CJ)",
+      "revenue_leaks": "ZERO - all vendor domain refs are Google Favicon API image sources, not href links",
+      "tests": "57/57 passed",
+      "site_stats": {
+        "pages": 1422,
+        "impressions": 22919,
+        "ctr": "0.34%",
+        "clicks": 79
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "session": "revenue-hunter",
+      "affiliate_status": {
+        "fiverr_awin": "APPROVED 2026-06-03, awinmid=6288, awinaffid=2917137, /go/fiverr LIVE and earning",
+        "freshbooks_awin": "REJECTED 2026-06-01. FreshBooks_Closing 06.01.2026 (aid:56787) - program closed",
+        "freshbooks_partnerstack": "Application submitted 2026-06-09 via partnerships@saaspare.org - PENDING",
+        "impact_com": "Ticket #831603 resolved. Only Semrush active. Wix pending. HubSpot/1Password still PENDING",
+        "wix_impact": "Contract application sent 2026-06-01 - still pending review",
+        "partnerstack": "Support ticket 115928 open (ClickUp/Monday/ActiveCampaign/Dashlane blocked)"
+      },
+      "gmail_findings": [
+        "Fiverr Awin approval confirmed June 3 2026 - tracking link awinmid=6288&awinaffid=2917137",
+        "FreshBooks Awin REJECTED June 1 2026 - program closing",
+        "Impact.com: resolved ticket #831603 - still only Semrush partnered",
+        "PartnerStack: FreshBooks application received June 9 (partnerships@saaspare.org)",
+        "No new approvals this session"
+      ],
+      "direct_url_leaks_fixed": "None found - previous grep false positives were canonical tag matches, not actual external hrefs",
+      "ctr_fixes": [
+        "Mixpanel pricing: meta_desc added to generate_pricing_pages_v3.py (event-volume trap angle, 742 impr, pos 13.7)",
+        "Mixpanel pricing HTML: meta updated directly to match (premium template, generator skips)"
+      ],
+      "content_fixes": [
+        "fiverr-vs-upwork: FULL REWRITE - removed all broken template placeholders, added real content",
+        "fiverr-vs-upwork: title/meta updated to buyer-intent 'fees + B2B fit' angle",
+        "fiverr-vs-upwork: FAQ schema (JSON-LD) rewritten with real Fiverr/Upwork fee data",
+        "fiverr-vs-upwork: FAQ tab answers rewritten - real fees, use cases, B2B verdict",
+        "fiverr-vs-upwork: ZERO /go/fiverr links -> 4x /go/fiverr CTAs added (overview, verdict, sidebar)"
+      ],
+      "new_page": "fiverr-vs-toptal-which-is-better-in-2026.html - Fiverr (8.5/10) wins vs Toptal (7.5/10) for B2B SaaS, targets 'fiverr vs toptal' keyword gap, 3x /go/fiverr CTAs, real pricing comparison ($15-300/gig vs $60-200+/hr), FAQPage schema",
+      "tests": "57/57 passed",
+      "measure_at_21days": {
+        "fiverr-vs-toptal-impressions": "new page - baseline TBD",
+        "fiverr-vs-upwork-ctr": "was 0 affiliate clicks - expect improvement with /go/fiverr CTAs",
+        "mixpanel-pricing-ctr": "was 0%, pos 13.7, 742 impr - target >0.5% with new meta"
+      },
+      "next_human_actions": [
+        "URGENT: PartnerStack Ticket 115928 - check for approval (ClickUp $36-150, Monday $150, ActiveCampaign $85, Dashlane $25-50)",
+        "ACTION: Log into Awin (publisher 2917137) - apply to GetResponse (3142111), Elementor (6798066), ProtonVPN (5227916), Parallels (2005415)",
+        "ACTION: Check Impact.com (account 7269601) - apply for HubSpot, 1Password, Monday manually",
+        "MONITOR: FreshBooks PartnerStack application (sent 2026-06-09)"
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "session": "revenue-hunter-2026-06-13",
+      "gmail_scan": {
+        "awin": "Fiverr APPROVED 2026-06-03 - already activated in _redirects with correct Awin link (awinmid=6288&awinaffid=2917137). FreshBooks REJECTED by Awin.",
+        "impact": "Account 7269601 ACTIVE - only Semrush partnered. Wix contract pending. HubSpot still pending. Support ticket #831603 marked resolved.",
+        "partnerstack": "PartnerStack OWN affiliate program APPROVED 2026-06-12 (for promoting PartnerStack.com itself). One unnamed program DECLINED (reason: 'approved the other account' - duplicate account issue). FreshBooks application submitted to PartnerStack 2026-06-09, pending. /go/partnerstack still needs real tracking link - ESCALATE TO OWNER.",
+        "freshbooks_awin": "REJECTED (program closing). Now applied via PartnerStack (pending).",
+        "xero": "No approval email",
+        "wix": "Application pending on Impact.com"
+      },
+      "page_upgrades": [
+        "semrush-vs-moz-which-is-better-in-2026: FULL content upgrade from auto-gen boilerplate to real comparison. Fixed 'From $0/mo' wrong Moz pricing -> $49/mo Starter. Added real feature table (25B keywords, 43T backlinks, local SEO, PPC tools), proper Where Semrush/Moz Wins sections, 5 quality FAQs. Target: 1,142 impressions at pos 65-82 -> top 10. Semrush active /go/semrush link, /go/moz-pro added.",
+        "semrush-vs-moz: title upgraded to '$139/mo vs $49/mo' price anchor (most compelling differentiator in SERP)"
+      ],
+      "ctr_fixes": [
+        "mixpanel-pricing: title -> 'Is the Free Plan Enough? [$28/mo Growth Reality Check]' (742 impr, pos 13.7, 0% CTR)"
+      ],
+      "leaks_fixed": 0,
+      "tests": "57/57 passed",
+      "measure_at_21days": {
+        "semrush-vs-moz-position": "baseline pos 65-82 -> target <20",
+        "mixpanel-pricing-ctr": "baseline 0% @ pos 13.7, 742 impr -> target >0.5%"
+      },
+      "next_human_actions": [
+        "URGENT: Log into PartnerStack dashboard and get real tracking link for PartnerStack's own affiliate program -> update /go/partnerstack in site/_redirects",
+        "URGENT: Log into Impact.com (account 7269601) - apply for HubSpot, 1Password, Monday manually from dashboard",
+        "ACTION: Log into Awin (publisher 2917137) - apply to GetResponse (3142111), Elementor (6798066), ProtonVPN (5227916), Parallels (2005415)",
+        "MONITOR: FreshBooks PartnerStack application (sent 2026-06-09) - expect decision within 7-14 days",
+        "MONITOR: Semrush vs Moz page content upgrade - check GSC position in 21 days (target: climb from pos 68 to <30)"
       ]
     }
   ]

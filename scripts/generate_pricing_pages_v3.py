@@ -277,6 +277,7 @@ PRICING = {
         name="Mixpanel", logo="https://cdn.simpleicons.org/mixpanel/7856ff",
         go="/go/mixpanel", history="/pages/mixpanel-pricing-history-2026",
         page="/pages/best-mixpanel-alternatives-2026", sticky="Mixpanel's free plan supports 20M events/mo — the most generous in analytics.",
+        meta_desc="Mixpanel pricing June 2026: Free = 20M events/month forever. Growth from $28/mo. Costs spike fast past 100M events — every plan change tracked.",
         hidden_risk="Low", hidden_note="Pricing scales with event volume, which can surprise fast-growing products",
         plans=[
             dict(name="Free",    mo="$0",    annual="$0",    best="Early-stage products", users="Unlimited", storage="90-day retention", support="Community", f=["20M events/mo","Unlimited reports","Core analytics"],         fc=["cw","cw","cw"]),
@@ -346,7 +347,7 @@ PRICING = {
         go="/go/ramp", history="/pages/ramp-pricing-history-2026",
         page="/pages/best-ramp-alternatives-2026", sticky="Ramp is free for most businesses — it earns revenue from interchange fees.",
         hidden_risk="Low", hidden_note="Ramp is free but requires a US business entity and minimum revenue",
-        meta_desc=f"Ramp pricing 2026 — core card is free, Ramp Plus $15/user/mo. We track every Ramp pricing change (April, May, June 2026) and expose the 3 hidden costs teams miss.",
+        meta_desc="Ramp pricing June 2026: Core card is $0 forever (free). Ramp Plus $15/user/mo ($12 annual). No hidden fees — every pricing change tracked with dates and sources.",
         plans=[
             dict(name="Ramp Free",      mo="$0",    annual="$0",    best="Most businesses",   users="Unlimited", storage="Unlimited cards",   support="Email+chat", f=["Unlimited virtual + physical cards","Expense management","Bill pay free"],         fc=["cw","cw","cw"]),
             dict(name="Ramp Plus",      mo="$15/user",annual="$12/user",best="Power users",   users="Unlimited", storage="Unlimited cards",   support="Priority",   f=["Custom approval chains","Advanced analytics","ERP integrations"],                  fc=["cw","cw","cw"]),

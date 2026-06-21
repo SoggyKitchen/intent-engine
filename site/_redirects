@@ -1,4 +1,5 @@
 ﻿/authors/smith-elly /authors/kaylan-von-papen 301
+/editorial /editorial-policy 301
 # === Semrush vs Moz consolidation — eliminate cannibalization (2026-06-09) ===
 /pages/semrush-vs-moz-pro-which-is-better-in-2026 /pages/semrush-vs-moz-which-is-better-in-2026 301
 # === seo_consolidate.py duplicates -> canonical 301s ===
@@ -106,11 +107,12 @@
 /go/hubspot https://www.hubspot.com/products/crm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/hubspot-crm https://www.hubspot.com/products/crm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/hubspot-free-crm https://www.hubspot.com/products/crm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact-affiliate https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact-com https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact-com-platform https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact-radius https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+# impact.com Partner Program — APPROVED 2026-06-16 (publisher 7359133, advertiser 24933)
+/go/impact https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-affiliate https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-com https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-com-platform https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-radius https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/intego-antivirus-security https://www.jdoqocy.com/click-101733230-15733644?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/ironclad https://ironcladapp.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/jasper-ai https://www.jasper.ai?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
@@ -282,6 +284,9 @@
 /go/fiverr-pro https://www.awin1.com/cread.php?awinmid=6288&awinaffid=2917137&clickref=&p=https%3A%2F%2Fwww.fiverr.com%2Fpro 302
 /go/fiverr-business https://www.awin1.com/cread.php?awinmid=6288&awinaffid=2917137&clickref=&p=https%3A%2F%2Fwww.fiverr.com%2Fbusiness 302
 
+# PartnerStack — APPROVED 2026-06-12 (login to PartnerStack dashboard to get real referral link, replace URL below)
+/go/partnerstack https://partnerstack.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+
 # Constant Contact — CJ $105/sale (GET CJ DEEP LINK: app.cj.com -> Links -> search "Constant Contact")
 /go/constant-contact https://www.constantcontact.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/constant-contact-trial https://www.constantcontact.com/signup?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
@@ -301,3 +306,8 @@
 /pages/best-devtools-for-b2b-engineering-teams-in-2025 /pages/best-devtools-for-b2b-engineering-teams-in-2026 301
 /pages/best-devtools-for-b2b-software-development-in-2025 /pages/best-devtools-for-b2b-software-development-in-2026 301
 /pages/v3-preview-comparison /pages/1password-pricing-2026-plans-costs-what-you-actually-pay 301
+# Signal consolidation — reverse-query slugs → canonical
+/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026 /pages/surfer-seo-vs-se-ranking-which-is-better-in-2026 301
+/pages/surfer-seo-vs-semrush-which-is-better-in-2026 /pages/semrush-vs-surfer-seo-which-is-better-in-2026 301
+/pages/moz-vs-semrush-which-is-better-in-2026 /pages/semrush-vs-moz-which-is-better-in-2026 301
+/pages/moz-pro-vs-semrush-which-is-better-in-2026 /pages/semrush-vs-moz-which-is-better-in-2026 301

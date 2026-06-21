@@ -1,10 +1,42 @@
 # Sitemap Report
 
 - Sitemap exists: True
-- Sitemap URL count: 1464
-- Scanned HTML pages: 1453
-- Scanned pages missing from sitemap: 2
+- Sitemap URL count: 1433
+- Scanned HTML pages: 1454
+- Scanned pages missing from sitemap: 34
 
 ## Missing Examples
 - https://saaspare.org/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f
 - https://saaspare.org/fo-verify
+- https://saaspare.org/pages/1password-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/7-best-1password-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-ahrefs-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-asana-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-clickup-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-datadog-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-freshbooks-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-hubspot-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-monday-com-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-moz-pro-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-salesforce-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-semrush-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-shopify-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-surfer-seo-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-xero-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-zoom-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/asana-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/clickup-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/datadog-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/deel-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/notion-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/rippling-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/semrush-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026
+- https://saaspare.org/pages/shopify-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/xero-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/zoom-promo-code-2026-discounts-deals-that-actually-work

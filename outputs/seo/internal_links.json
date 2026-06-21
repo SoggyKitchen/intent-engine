@@ -1,9 +1,9 @@
 {
-  "total_pages": 1404,
-  "updated": 1403,
-  "skipped": 1,
-  "orphans_before": 61,
-  "orphans_after": 57,
+  "total_pages": 1409,
+  "updated": 1407,
+  "skipped": 2,
+  "orphans_before": 68,
+  "orphans_after": 55,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/monday-com-vs-clickup-which-is-better-in-2026",
-        "/pages/notion-vs-asana-which-is-better-in-2026"
+        "/pages/zoho-crm-vs-nutshell-which-is-better-in-2026",
+        "/pages/nordlayer-vs-tresorit-which-is-better-in-2026"
       ]
     },
     {
@@ -21,18 +21,18 @@
         "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
         "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
         "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
-        "/pages/partnerstack-vs-firstpromoter-which-is-better-in-2026",
-        "/pages/monday-com-vs-asana-which-is-better-in-2026"
+        "/pages/bamboohr-vs-remote-com-which-is-better-in-2026",
+        "/pages/partnerstack-vs-tune-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/tenable-vs-tresorit-which-is-better-in-2026",
-        "/pages/1password-vs-password-boss-which-is-better-in-2026",
-        "/pages/asana-vs-monday-com-which-is-better-in-2026",
-        "/pages/activecampaign-vs-convertkit-which-is-better-in-2026"
+        "/pages/1password-vs-bitwarden-which-is-better-in-2026",
+        "/pages/tresorit-vs-sync-com-which-is-better-in-2026",
+        "/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026",
+        "/pages/perimeter-81-vs-cisco-anyconnect-which-is-better-in-2026",
+        "/pages/1password-vs-dashlane-which-is-better-in-2026"
       ]
     }
   ]

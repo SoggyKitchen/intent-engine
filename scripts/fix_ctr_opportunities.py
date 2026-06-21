@@ -145,12 +145,12 @@ def fix_bitwarden_free_plan():
 
     html = re.sub(
         r'<title>[^<]*[Bb]itwarden[^<]*</title>',
-        '<title>Bitwarden Free Plan Limitations 2026: What\'s Included &amp; What\'s Missing</title>',
+        "<title>Bitwarden Free Plan 2026: Yes — Unlimited Passwords + What's Actually Missing</title>",
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Bb]itwarden[^"]*(")',
-        r'\g<1>Bitwarden Free Plan Limitations 2026: What\'s Included & What\'s Missing\2',
+        r"\g<1>Bitwarden Free Plan 2026: Yes — Unlimited Passwords + What's Missing\2",
         html
     )
     html = re.sub(
@@ -287,12 +287,12 @@ def fix_notion_free_plan():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Nn]otion[^<]*</title>',
-        "<title>Notion Free Plan 2026: What They Don't Tell You About the 4 Limits [Tested]</title>",
+        "<title>Notion Free Plan 2026: Yes — 4 Hidden Limits Teams Hit (June 2026)</title>",
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Nn]otion[^"]*(")',
-        r"\g<1>Notion Free Plan 2026: What They Don't Tell You About the 4 Limits\2",
+        r"\g<1>Notion Free Plan 2026: Yes — 4 Hidden Limits Teams Hit\2",
         html
     )
     html = re.sub(
