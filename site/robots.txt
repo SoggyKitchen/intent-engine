@@ -61,4 +61,4 @@ Allow: /
 
 # Sitemaps + LLM index
 Sitemap: https://saaspare.org/sitemap.xml
-LLM-Content: https://saaspare.org/llms.txt
+# LLM content index available at https://saaspare.org/llms.txt (non-standard directive removed — Google flagged it as a syntax error)
