@@ -168,20 +168,30 @@ def build():
   .nav-link:hover{{color:#fff}}
   .nav-cta{{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.8rem;margin-left:6px;transition:transform .15s,box-shadow .15s;text-decoration:none}}
   .nav-cta:hover{{transform:translateY(-1px);box-shadow:0 6px 20px rgba(233,69,96,.45)}}
-  /* HERO */
-  .hero{{background:radial-gradient(ellipse 120% 80% at 50% -10%,#1a0d12 0%,#0d0008 45%,#080810 80%);padding:6rem 1.5rem 2.5rem;text-align:center;border-bottom:1px solid rgba(255,255,255,.05)}}
-  .hero h1{{font-size:clamp(1.8rem,5vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;color:#fff;margin-bottom:.6rem}}
+  /* HERO — plexus orb with centered search */
+  .hero{{position:relative;overflow:hidden;min-height:76vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 1.5rem 3rem;background:radial-gradient(ellipse 120% 80% at 50% -10%,#1a0d12 0%,#0d0008 45%,#080810 80%);border-bottom:1px solid rgba(255,255,255,.05)}}
+  .ai-orb{{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}}
+  .hero-inner{{position:relative;z-index:2;width:100%;max-width:680px;margin:0 auto;display:flex;flex-direction:column;align-items:center}}
+  .hero-badge{{display:inline-flex;align-items:center;gap:.5rem;font-size:.74rem;font-weight:600;letter-spacing:.02em;color:rgba(255,255,255,.62);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:.34rem .8rem;border-radius:50px;margin-bottom:1.4rem;opacity:0;animation:orbUp .7s .15s cubic-bezier(.22,1,.36,1) forwards}}
+  .hero-badge .pulse{{width:6px;height:6px;border-radius:50%;background:#36e6a1;box-shadow:0 0 8px #36e6a1}}
+  .hero h1{{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.08;color:#fff;margin-bottom:.7rem;text-wrap:balance;opacity:0;animation:orbUp .8s .25s cubic-bezier(.22,1,.36,1) forwards}}
   .hero h1 em{{font-style:normal;color:#e94560}}
-  .hero-sub{{color:rgba(255,255,255,.5);font-size:1.05rem;margin-bottom:1.5rem}}
-  .stat-pills{{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}}
-  .stat-pill{{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:50px;padding:.35rem .9rem;font-size:.82rem;color:rgba(255,255,255,.65);font-weight:500}}
+  .hero-sub{{color:rgba(255,255,255,.55);font-size:1.06rem;max-width:520px;margin-bottom:2rem;text-wrap:pretty;opacity:0;animation:orbUp .8s .35s cubic-bezier(.22,1,.36,1) forwards}}
+  /* SEARCH — glowing, centered in the orb */
+  .search-bar{{position:relative;width:100%;max-width:540px;margin:0 auto;opacity:0;animation:orbScale .9s .45s cubic-bezier(.22,1,.36,1) forwards}}
+  .search-bar::before{{content:'';position:absolute;inset:-14px;border-radius:24px;background:radial-gradient(ellipse at center,rgba(233,69,96,.24),transparent 70%);filter:blur(16px);z-index:-1;animation:orbGlow 4.5s ease-in-out infinite}}
+  .search-bar input{{width:100%;padding:1.05rem 1.2rem 1.05rem 3.2rem;background:rgba(16,12,20,.74);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(233,69,96,.35);border-radius:16px;color:#fff;font-size:1.02rem;font-family:inherit;outline:none;box-shadow:0 18px 50px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.06);transition:border-color .25s,box-shadow .25s}}
+  .search-bar input::placeholder{{color:rgba(255,255,255,.42)}}
+  .search-bar input:focus{{border-color:rgba(233,69,96,.72);box-shadow:0 22px 60px rgba(233,69,96,.28),inset 0 1px 0 rgba(255,255,255,.08)}}
+  .search-bar svg{{position:absolute;left:1.15rem;top:50%;transform:translateY(-50%);color:rgba(233,69,96,.85);width:18px;height:18px}}
+  .search-hint{{margin-top:.9rem;font-size:.78rem;color:rgba(255,255,255,.34);opacity:0;animation:orbUp .8s .6s cubic-bezier(.22,1,.36,1) forwards}}
+  .stat-pills{{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem;opacity:0;animation:orbUp .8s .7s cubic-bezier(.22,1,.36,1) forwards}}
+  .stat-pill{{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:50px;padding:.34rem .85rem;font-size:.8rem;color:rgba(255,255,255,.6);font-weight:500}}
   .stat-pill strong{{color:#fff}}
-  /* SEARCH */
-  .search-bar{{max-width:500px;margin:1.5rem auto 0;position:relative}}
-  .search-bar input{{width:100%;padding:.75rem 1rem .75rem 2.75rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;font-size:.95rem;font-family:inherit;outline:none;transition:border-color .2s}}
-  .search-bar input::placeholder{{color:rgba(255,255,255,.3)}}
-  .search-bar input:focus{{border-color:rgba(233,69,96,.4)}}
-  .search-bar svg{{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.3)}}
+  @keyframes orbUp{{from{{opacity:0;transform:translateY(16px)}}to{{opacity:1;transform:translateY(0)}}}}
+  @keyframes orbScale{{from{{opacity:0;transform:scale(.94)}}to{{opacity:1;transform:scale(1)}}}}
+  @keyframes orbGlow{{0%,100%{{opacity:.6}}50%{{opacity:1}}}}
+  @media(prefers-reduced-motion:reduce){{.hero-badge,.hero h1,.hero-sub,.search-bar,.search-hint,.stat-pills{{animation:none!important;opacity:1;transform:none}}.search-bar::before{{animation:none}}}}
   /* CONTAINER */
   .container{{max-width:980px;margin:0 auto;padding:2rem 1rem 4rem}}
   /* CATEGORY SECTIONS */
@@ -219,18 +229,23 @@ def build():
 </nav>
 
 <div class="hero">
-  <h1>All SaaS <em>Comparisons</em> & Guides</h1>
-  <p class="hero-sub">{total} pages covering pricing, comparisons, reviews and alternatives</p>
-  <div class="stat-pills">
-    <span class="stat-pill"><strong>{len(cats['Comparisons'])}</strong> Comparisons</span>
-    <span class="stat-pill"><strong>{len(cats['Pricing Guides'])}</strong> Pricing Guides</span>
-    <span class="stat-pill"><strong>{len(cats['Reviews'])}</strong> Reviews</span>
-    <span class="stat-pill"><strong>{len(cats['Alternatives'])}</strong> Alternatives</span>
-    <span class="stat-pill"><strong>{len(cats['Free Trials'])}</strong> Free Trials</span>
-  </div>
-  <div class="search-bar">
-    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-    <input type="text" id="search" placeholder="Search tools, categories…" autocomplete="off">
+  <canvas class="ai-orb" id="ai-orb" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <span class="hero-badge"><span class="pulse"></span>{total} buyer pages indexed</span>
+    <h1>Find the right <em>SaaS</em>, fast</h1>
+    <p class="hero-sub">Search every comparison, pricing guide and review in one place — no paid rankings, no fluff.</p>
+    <div class="search-bar">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="search" placeholder="Search tools, pricing, comparisons…" autocomplete="off">
+    </div>
+    <p class="search-hint">Try “HubSpot pricing”, “Ahrefs vs Semrush”, or “best CRM”.</p>
+    <div class="stat-pills">
+      <span class="stat-pill"><strong>{len(cats['Comparisons'])}</strong> Comparisons</span>
+      <span class="stat-pill"><strong>{len(cats['Pricing Guides'])}</strong> Pricing Guides</span>
+      <span class="stat-pill"><strong>{len(cats['Reviews'])}</strong> Reviews</span>
+      <span class="stat-pill"><strong>{len(cats['Alternatives'])}</strong> Alternatives</span>
+      <span class="stat-pill"><strong>{len(cats['Free Trials'])}</strong> Free Trials</span>
+    </div>
   </div>
 </div>
 
@@ -245,6 +260,71 @@ def build():
 </footer>
 
 <script>
+(function(){{
+  var canvas=document.getElementById('ai-orb');
+  if(!canvas)return;
+  var ctx=canvas.getContext('2d');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var DPR=Math.min(window.devicePixelRatio||1,2),W,H;
+  function resize(){{
+    var p=canvas.parentElement;W=p.offsetWidth;H=p.offsetHeight;
+    canvas.width=W*DPR;canvas.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);
+  }}
+  resize();window.addEventListener('resize',resize,{{passive:true}});
+  var N=window.innerWidth<700?130:220,GOLDEN=Math.PI*(3-Math.sqrt(5)),nodes=[];
+  for(var i=0;i<N;i++){{
+    var y=1-(i/(N-1))*2,rad=Math.sqrt(Math.max(0,1-y*y)),th=i*GOLDEN;
+    nodes.push({{x:Math.cos(th)*rad,y:y,z:Math.sin(th)*rad,pulse:Math.random()*6.283}});
+  }}
+  var LINK=0.55,edges=[];
+  for(var a=0;a<N;a++)for(var b=a+1;b<N;b++){{
+    var dx=nodes[a].x-nodes[b].x,dy=nodes[a].y-nodes[b].y,dz=nodes[a].z-nodes[b].z;
+    var d=Math.sqrt(dx*dx+dy*dy+dz*dz);
+    if(d<LINK)edges.push([a,b,1-d/LINK]);
+  }}
+  var rotY=0,rotX=-0.18,t=0,mx=0,my=0,smx=0,smy=0,start=performance.now(),proj=new Array(N);
+  window.addEventListener('mousemove',function(e){{
+    var r=canvas.getBoundingClientRect();
+    mx=(e.clientX-r.left)/r.width-0.5;my=(e.clientY-r.top)/r.height-0.5;
+  }},{{passive:true}});
+  function frame(now){{
+    smx+=(mx-smx)*0.05;smy+=(my-smy)*0.05;
+    var intro=Math.min(1,(now-start)/1300),ease=reduce?1:1-Math.pow(1-intro,3);
+    ctx.clearRect(0,0,W,H);
+    var cx=W*0.5,cy=H*0.5,R=Math.min(W,H)*(window.innerWidth<700?0.46:0.4)*ease,op=0.55+0.45*ease;
+    var ay=rotY+smx*0.5,ax=rotX+smy*0.35;
+    var cY=Math.cos(ay),sY=Math.sin(ay),cX=Math.cos(ax),sX=Math.sin(ax);
+    for(var i=0;i<N;i++){{
+      var n=nodes[i],x1=n.x*cY-n.z*sY,z1=n.x*sY+n.z*cY;
+      var y2=n.y*cX-z1*sX,z2=n.y*sX+z1*cX,persp=1/(2.1-z2);
+      proj[i]={{sx:cx+x1*R*persp*1.5,sy:cy+y2*R*persp*1.5,z:z2}};
+    }}
+    ctx.lineWidth=0.8;
+    for(var e2=0;e2<edges.length;e2++){{
+      var p1=proj[edges[e2][0]],p2=proj[edges[e2][1]],depth=(p1.z+p2.z)*0.5;
+      var la=edges[e2][2]*0.6*((depth+1)*0.5)*op;
+      if(la<0.02)continue;
+      ctx.strokeStyle='rgba(255,90,120,'+la+')';
+      ctx.beginPath();ctx.moveTo(p1.sx,p1.sy);ctx.lineTo(p2.sx,p2.sy);ctx.stroke();
+    }}
+    for(var k=0;k<N;k++){{
+      var p=proj[k],dp=(p.z+1)*0.5,pr=0.82+0.18*Math.sin(t*1.5+nodes[k].pulse);
+      var rr=(1+dp*2.4)*pr,al=(0.32+dp*0.62)*op;
+      ctx.beginPath();ctx.arc(p.sx,p.sy,rr,0,6.283);
+      ctx.fillStyle=dp>0.55?'rgba(255,150,170,'+al+')':'rgba(255,255,255,'+al*0.8+')';
+      ctx.fill();
+    }}
+  }}
+  var raf=0;
+  function loop(){{
+    frame(performance.now());
+    if(reduce)return;
+    rotY+=0.0014;t+=0.016;
+    raf=requestAnimationFrame(loop);
+  }}
+  loop();
+  document.addEventListener('visibilitychange',function(){{if(!document.hidden&&!reduce){{cancelAnimationFrame(raf);raf=requestAnimationFrame(loop);}}}},{{passive:true}});
+}})();
 var inp=document.getElementById('search');
 var links=document.querySelectorAll('.page-link');
 inp.addEventListener('input',function(){{
