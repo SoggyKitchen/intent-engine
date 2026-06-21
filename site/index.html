@@ -119,8 +119,7 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 
 /* flowing wave dot grid — full page with parallax scroll */
 .hero-grid{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0;top:0;left:0;width:100%;height:500vh}
-.hero-grid canvas{position:fixed;inset:0;width:100%;height:100vh;opacity:.6;transition:opacity .45s ease}
-#sp-fly-curtain{position:fixed;inset:0;z-index:99998;background:#050407;pointer-events:none;transition:opacity .55s ease}
+.hero-grid canvas{position:fixed;inset:0;width:100%;height:100vh;opacity:.6}
 
 /* 3D perspective floor grid */
 .hero-floor{position:absolute;bottom:-10%;left:50%;transform:translateX(-50%) perspective(500px) rotateX(65deg);width:160%;height:420px;pointer-events:none;
@@ -688,6 +687,24 @@ nav.sp-topnav{display:none!important}
 </script>
 </head>
 <body class="v2">
+<style>
+#sp-intro{position:fixed;inset:0;z-index:99999;background:radial-gradient(ellipse 120% 90% at 50% 50%,#1a0810,#040207 72%);display:flex;align-items:center;justify-content:center;overflow:hidden;transition:opacity .8s ease,transform .8s ease}
+#sp-intro.done{opacity:0;transform:scale(1.09);pointer-events:none}
+#sp-intro-orb{position:absolute;inset:0;width:100%;height:100%}
+.sp-intro-center{position:relative;z-index:2;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 1.5rem}
+.sp-intro-word{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:900;font-size:clamp(2.4rem,8vw,5rem);letter-spacing:-.045em;color:#fff;opacity:0;animation:spIntroWord 1s .55s cubic-bezier(.22,1,.36,1) forwards;text-shadow:0 0 50px rgba(233,69,96,.55)}
+.sp-intro-word em{font-style:normal;color:#e94560}
+.sp-intro-tag{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(.78rem,2.4vw,1rem);color:rgba(255,248,245,.62);letter-spacing:.22em;text-transform:uppercase;opacity:0;animation:spIntroFade 1s 1.35s ease forwards}
+.sp-intro-bar{position:absolute;bottom:15%;left:50%;transform:translateX(-50%);width:170px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;opacity:0;animation:spIntroFade .6s 1.55s ease forwards}
+.sp-intro-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#e94560,#ffb9c8);animation:spIntroBar 1.5s 1.65s cubic-bezier(.6,0,.2,1) forwards}
+.sp-intro-skip{position:absolute;bottom:7%;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,248,245,.32);cursor:pointer;opacity:0;animation:spIntroFade .6s 2.1s ease forwards;background:none;border:none;font-family:inherit}
+.sp-intro-skip:hover{color:rgba(255,248,245,.75)}
+@keyframes spIntroWord{from{opacity:0;transform:translateY(22px) scale(.95);filter:blur(10px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes spIntroFade{from{opacity:0}to{opacity:1}}
+@keyframes spIntroBar{to{width:100%}}
+@media(prefers-reduced-motion:reduce){#sp-intro{display:none!important}}
+</style>
+<script></script>
 
 <!-- NAV -->
 <!-- NAV (canonical, v2) -->
@@ -732,7 +749,7 @@ nav.sp-topnav{display:none!important}
     <div class="vf vf-4"><span class="vf-dot green"></span><span class="vf-label">Linear</span>&nbsp;→&nbsp;Best dev UX, hands down</div>
   </div>
 
-  <div class="badge"><span class="badge-dot"></span>1,439 buyer pages live</div>
+  <div class="badge"><span class="badge-dot"></span>1,427 buyer pages live</div>
 
   <h1 class="hero-title">
     The honest guide to<br>
@@ -805,7 +822,7 @@ nav.sp-topnav{display:none!important}
 
 <!-- STATS -->
 <div class="stats">
-  <div class="stat"><span class="stat-val" data-count="1439" id="stat-pages">1,439<span>+</span></span><span class="stat-label">Buyer pages live</span></div>
+  <div class="stat"><span class="stat-val" data-count="1427" id="stat-pages">1,427<span>+</span></span><span class="stat-label">Buyer pages live</span></div>
   <div class="stat"><span class="stat-val" data-count="16">16</span><span class="stat-label">SaaS verticals</span></div>
   <div class="stat"><span class="stat-val" data-count="168">168</span><span class="stat-label">Offer paths tracked</span></div>
   <div class="stat"><span class="stat-val" style="color:var(--red)">$0</span><span class="stat-label">Always free to read</span></div>
@@ -902,7 +919,7 @@ nav.sp-topnav{display:none!important}
           <div style="font-size:.78rem;color:rgba(255,247,248,.64)"><span style="color:#f5b942">&#9733;</span> 4.9 (312)</div>
         </div>
       </a>
-      <a href="/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown" style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:14px;display:flex;flex-direction:column;gap:10px;transition:all .2s;text-decoration:none;position:relative;overflow:hidden" onmouseover="this.style.borderColor='rgba(255,75,115,.38)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.transform='translateY(0)'">
+      <a href="/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay" style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:14px;display:flex;flex-direction:column;gap:10px;transition:all .2s;text-decoration:none;position:relative;overflow:hidden" onmouseover="this.style.borderColor='rgba(255,75,115,.38)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.transform='translateY(0)'">
         <div style="display:flex;align-items:center;gap:10px"><span style="width:44px;height:44px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="https://cdn.simpleicons.org/bitwarden/175ddc" style="width:55%;height:55%;object-fit:contain;filter:brightness(1.15)" onerror="var e=document.createElement('em');e.textContent='S';e.style.cssText='font-style:normal;font-weight:900;color:#fff;font-size:1.1em;line-height:1';this.replaceWith(e)"></span><div><div style="font-size:.95rem;font-weight:700;color:#fff7f8;letter-spacing:-.01em">Bitwarden</div><div style="font-size:.72rem;color:rgba(255,247,248,.42)">Security &amp; PWD Mgmt</div></div></div>
         <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Open-source password manager for teams &amp; enterprises with self-host options.</p>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
@@ -1125,26 +1142,16 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
 
   const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let flewIn=false;try{flewIn=sessionStorage.getItem('hp-fly')==='1'}catch(e){}
-  const FLY_MS=1600;
+  const FLY_MS=2200;
   const flyStart=performance.now();
   const doFly=!reduceMotion&&!flewIn;
-  if(doFly){
-    try{sessionStorage.setItem('hp-fly','1')}catch(e){}
-    var _fc=document.createElement('div');
-    _fc.id='sp-fly-curtain';
-    document.body.appendChild(_fc);
-    canvas.style.zIndex='99999';
-    canvas.style.opacity='1';
-    setTimeout(function(){
-      _fc.style.opacity='0';
-      canvas.style.zIndex='';
-      canvas.style.opacity='';
-      setTimeout(function(){if(_fc.parentNode)_fc.remove();},600);
-    },FLY_MS);
-  }
+  if(doFly){try{sessionStorage.setItem('hp-fly','1')}catch(e){}}
 
   function draw(){
     ctx.clearRect(0,0,W,H);
+    smoothX+=(mouseX-smoothX)*0.04;
+    smoothY+=(mouseY-smoothY)*0.04;
+
     let camScale=1,flyAlpha=1,flyBoost=0;
     if(doFly){
       const fp=Math.min(1,(performance.now()-flyStart)/FLY_MS);
@@ -1153,8 +1160,6 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
       flyAlpha=0.25+0.75*fe;
       flyBoost=(1-fe)*0.09;
     }
-    smoothX+=(mouseX-smoothX)*0.04;
-    smoothY+=(mouseY-smoothY)*0.04;
 
     // Fade opacity as you scroll deeper (more noticeable at top, dimmer in content)
     const maxScrollFade=window.innerHeight*3;
@@ -1186,6 +1191,7 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
         const cx=W*0.5,cy=H*0.4;
         const x=cx+(bx+dx+px-cx)*camScale;
         const y=cy+(by+dy+py-cy)*camScale;
+
         const dist=Math.hypot((x-cx)/(W*0.8),(y-cy)/(H*0.75));
         const fade=Math.max(0,1-dist*0.8);
         if(fade<0.02)continue;
@@ -1229,7 +1235,7 @@ setTimeout(spType, 600);
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
-  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1420;
+  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1317;
   ['live-count','stat-pages'].forEach(id=>{const el=document.getElementById(id);if(el){el.dataset.count=n;el.textContent=n.toLocaleString()+(id==='stat-pages'?'+':'')}});
 }).catch(()=>{});
 
