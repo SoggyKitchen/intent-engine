@@ -1122,8 +1122,23 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
     scrollY=window.scrollY;
   },{passive:true});
 
+  const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let flewIn=false;try{flewIn=sessionStorage.getItem('hp-fly')==='1'}catch(e){}
+  const FLY_MS=2200;
+  const flyStart=performance.now();
+  const doFly=!reduceMotion&&!flewIn;
+  if(doFly){try{sessionStorage.setItem('hp-fly','1')}catch(e){}}
+
   function draw(){
     ctx.clearRect(0,0,W,H);
+    let camScale=1,flyAlpha=1,flyBoost=0;
+    if(doFly){
+      const fp=Math.min(1,(performance.now()-flyStart)/FLY_MS);
+      const fe=1-Math.pow(1-fp,4);
+      camScale=1+(1-fe)*3.4;
+      flyAlpha=0.25+0.75*fe;
+      flyBoost=(1-fe)*0.09;
+    }
     smoothX+=(mouseX-smoothX)*0.04;
     smoothY+=(mouseY-smoothY)*0.04;
 
@@ -1154,17 +1169,16 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
         const px=mdist>0?(mdx/mdist)*ps:0;
         const py=mdist>0?(mdy/mdist)*ps:0;
 
-        const x=bx+dx+px;
-        const y=by+dy+py;
-
         const cx=W*0.5,cy=H*0.4;
+        const x=cx+(bx+dx+px-cx)*camScale;
+        const y=cy+(by+dy+py-cy)*camScale;
         const dist=Math.hypot((x-cx)/(W*0.8),(y-cy)/(H*0.75));
         const fade=Math.max(0,1-dist*0.8);
         if(fade<0.02)continue;
 
         const norm=(compression+1)*0.5;
-        const alpha=fade*(0.42+norm*0.32)*opacityFade;
-        const r_dot=BASE_R*(0.65+norm*0.85);
+        const alpha=fade*(0.42+norm*0.32)*opacityFade*flyAlpha;
+        const r_dot=BASE_R*(0.65+norm*0.85)*(camScale>1?Math.min(camScale*0.7,2.2):1);
 
         ctx.beginPath();
         ctx.arc(x,y,r_dot,0,Math.PI*2);
@@ -1172,7 +1186,7 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
         ctx.fill();
       }
     }
-    t+=0.007;
+    t+=0.007+flyBoost;
     requestAnimationFrame(draw);
   }
   draw();
