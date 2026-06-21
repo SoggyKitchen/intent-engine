@@ -6,8 +6,10 @@ function spPlexus(canvas){
   var SCALE=parseFloat(cfg.scale)||0.42;
   var DENSITY=parseFloat(cfg.density)||1;
   var DPR=Math.min(window.devicePixelRatio||1,2),W,H;
-  function resize(){var p=canvas.parentElement;W=p.offsetWidth;H=p.offsetHeight;canvas.width=W*DPR;canvas.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);}
+  function resize(){var p=canvas.parentElement;var w=p.offsetWidth,h=p.offsetHeight;if(!w||!h)return;W=w;H=h;canvas.width=W*DPR;canvas.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);}
   resize();window.addEventListener('resize',resize,{passive:true});
+  if(window.ResizeObserver){var ro=new ResizeObserver(function(){resize();});ro.observe(canvas.parentElement);}
+  window.addEventListener('load',resize,{passive:true});
   var N=Math.round((window.innerWidth<700?130:220)*DENSITY),GOLDEN=Math.PI*(3-Math.sqrt(5)),nodes=[];
   for(var i=0;i<N;i++){var y=1-(i/(N-1))*2,rad=Math.sqrt(Math.max(0,1-y*y)),th=i*GOLDEN;nodes.push({x:Math.cos(th)*rad,y:y,z:Math.sin(th)*rad,pulse:Math.random()*6.283});}
   var LINK=0.52,edges=[];
@@ -15,6 +17,7 @@ function spPlexus(canvas){
   var rotY=0,rotX=-0.16,t=0,mx=0,my=0,smx=0,smy=0,start=performance.now(),proj=new Array(N);
   window.addEventListener('mousemove',function(e){var r=canvas.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-0.5;my=(e.clientY-r.top)/r.height-0.5;},{passive:true});
   function frame(now){
+    if(!W||!H)return;
     smx+=(mx-smx)*0.05;smy+=(my-smy)*0.05;
     var intro=Math.min(1,(now-start)/2000),ease=reduce?1:1-Math.pow(1-intro,4);
     ctx.clearRect(0,0,W,H);
