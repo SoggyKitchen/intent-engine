@@ -312,6 +312,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/elementor-coupon-code-promo-codes-2026-verified-discounts.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elementor-coupon-code-promo-codes-2026-verified-discounts",
+    "premium": false
+  },
+  {
     "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -559,6 +572,32 @@
     "premium": true
   },
   {
+    "file": "site/pages/monday-vs-jira-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/monday-vs-jira-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/monday-vs-trello-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/monday-vs-trello-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -637,6 +676,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/notion-vs-confluence-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/notion-vs-confluence-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/pandadoc-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -700,19 +752,6 @@
     ],
     "path": "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay",
-    "premium": false
   },
   {
     "file": "site/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict.html",
