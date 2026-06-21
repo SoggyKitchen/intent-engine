@@ -31,7 +31,7 @@
 /* Hero */
 .dr-hero{text-align:center;padding:4rem 1.5rem 1rem;display:flex;flex-direction:column;align-items:center;gap:1rem;position:relative;isolation:isolate}
 .dr-hero > *:not(.dr-radar-bg):not(.ai-orb){position:relative;z-index:2}
-.dr-hero > .ai-orb{position:absolute;z-index:1;opacity:.32}
+.dr-hero > .ai-orb{position:absolute;inset:0;width:100%;height:100%;z-index:1;opacity:.4}
 
 /* Radar visual baked-in (compact, behind hero) */
 .dr-radar-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:0;opacity:.45}
@@ -230,7 +230,7 @@ nav.sp-topnav{display:none!important}
 
 <!-- HERO with radar visual behind -->
 <section class="dr-hero" data-screen-label="01 Deal Radar Hero">
-  <canvas class="ai-orb" id="ai-orb" data-scale="0.4" aria-hidden="true"></canvas>
+  <canvas class="ai-orb" id="ai-orb" data-scale="0.62" aria-hidden="true"></canvas>
   <!-- Radar background -->
   <div class="dr-radar-bg" aria-hidden="true">
     <div class="sp-radar">
@@ -334,7 +334,7 @@ nav.sp-topnav{display:none!important}
 
         <!-- DEAL ROWS -->
         <div class="dr-deals">
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="VPN" data-type="percent" data-discount="72" data-billing-months="24" data-order="1">
             <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/nordvpn/4687ff"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -355,7 +355,7 @@ nav.sp-topnav{display:none!important}
               <button class="dr-deal-save" aria-label="Save to shortlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg></button>
             </div>
           </article>
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="Password Mgmt" data-type="percent" data-discount="55" data-billing-months="12" data-order="2">
             <span class="sp-logo sp-logo-lg"><img src="https://www.google.com/s2/favicons?domain=nordpass.com&sz=128"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -376,7 +376,7 @@ nav.sp-topnav{display:none!important}
               <button class="dr-deal-save" aria-label="Save to shortlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg></button>
             </div>
           </article>
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="VPN" data-type="percent" data-discount="80" data-billing-months="24" data-order="3">
             <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/surfshark/1abcfe"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -397,7 +397,7 @@ nav.sp-topnav{display:none!important}
               <button class="dr-deal-save" aria-label="Save to shortlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg></button>
             </div>
           </article>
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="Cloud Hosting" data-type="flat" data-discount="0" data-billing-months="1" data-order="4">
             <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/linux/ffffff"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -418,7 +418,7 @@ nav.sp-topnav{display:none!important}
               <button class="dr-deal-save" aria-label="Save to shortlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7 7 .5-5.5 4.5L18 22l-6-4-6 4 1.5-8L2 9.5 9 9z"/></svg></button>
             </div>
           </article>
-          <article class="dr-deal premium-card">
+          <article class="dr-deal premium-card" data-category="Website Security" data-type="flat" data-discount="0" data-billing-months="12" data-order="5">
             <span class="sp-logo sp-logo-lg"><img src="https://www.google.com/s2/favicons?domain=sucuri.net&sz=128"></span>
             <div class="dr-deal-body">
               <div class="dr-deal-head">
@@ -536,9 +536,9 @@ nav.sp-topnav{display:none!important}
       });
     } else if (state.tab === 'new') {
       sorted.sort(function(a, b){
-        var da = a.getAttribute('data-added') || '';
-        var db = b.getAttribute('data-added') || '';
-        return db.localeCompare(da); // most recently verified/added first
+        var oa = parseInt(a.getAttribute('data-order')||'0',10);
+        var ob = parseInt(b.getAttribute('data-order')||'0',10);
+        return ob - oa; // most recently added to the radar first
       });
     } else if (state.tab === 'ending') {
       sorted.sort(function(a, b){
