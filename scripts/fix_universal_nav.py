@@ -62,18 +62,22 @@ nav.sp-topnav{display:none!important}
     if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
   },{passive:true});
 
-  // Highlight the nav link matching the current page (red underglow)
-  var path=window.location.pathname;
-  var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
-  var best=null,bestLen=0;
-  links.forEach(function(a){
-    var href=a.getAttribute('href');
-    if(!href||href==='/') return;
-    if(path===href||path.indexOf(href)===0){
-      if(href.length>bestLen){best=a;bestLen=href.length;}
-    }
-  });
-  if(best){best.classList.add('active');}
+  function highlightNav(){
+    var path=window.location.pathname;
+    var override=document.body.getAttribute('data-nav');
+    var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
+    var best=null,bestLen=0;
+    links.forEach(function(a){
+      var href=a.getAttribute('href');
+      if(!href||href==='/') return;
+      if(override){if(href===override){best=a;}return;}
+      if(path===href||path.indexOf(href.replace(/\/$/,'')+'/')===0){
+        if(href.length>bestLen){best=a;bestLen=href.length;}
+      }
+    });
+    if(best){best.classList.add('active');}
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',highlightNav);}else{highlightNav();}
 })();
 </script>"""
 
