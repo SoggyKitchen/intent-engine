@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-21T14:18:51+00:00",
+  "generated_at_utc": "2026-06-21T21:16:39+00:00",
   "mode": "apply",
   "pages_flagged": 26,
   "claim_labels_seen": [
@@ -398,7 +398,7 @@
           "context": "d=\"M6 9l6 6 6-6\"/></svg></h3><div class=\"faq-a\">Yes \u2014 Elementor Pro includes a 30-day money-back guarantee. Contact Elementor's support team within 30 days of purchase to request a refun"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/best-web-hosting-2026.html",
