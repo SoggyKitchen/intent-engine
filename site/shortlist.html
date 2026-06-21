@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="/assets/saaspare-ui.css">
 <link rel="stylesheet" href="/assets/sp-motion.css">
 <style>
-.sl-hero{text-align:center;padding:5rem 1.5rem 3rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem}
+.sl-hero{text-align:center;padding:5rem 1.5rem 3rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;position:relative;isolation:isolate;overflow:hidden}
+.sl-hero>*{position:relative;z-index:2}
+.sl-hero>.ai-orb{position:absolute;z-index:0;opacity:.55}
 
 /* Toolbar */
 .sl-tools{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);margin-bottom:16px}
@@ -196,7 +198,7 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
   <meta name="theme-color" content="#050407">
   <meta name="robots" content="index,follow">
 </head>
-<body>
+<body data-intro-eyebrow="Shortlist Builder" data-intro-title="Build your <em>shortlist</em>">
 <div class="sp-bg"></div>
 
 <nav id="nav">
@@ -213,6 +215,7 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
 
 <!-- HERO -->
 <section class="sl-hero" data-screen-label="01 Shortlist Hero">
+  <canvas class="ai-orb" id="ai-orb" data-scale="0.46" aria-hidden="true"></canvas>
   <span class="sp-eyebrow sp-up"><span class="sp-eyebrow-dot"></span>Free, private &amp; shareable</span>
   <h1 class="sp-h1 sp-up sp-up-1" style="max-width:900px">Your <span class="sp-accent">Shortlist.</span> Your Decision.</h1>
   <p class="sp-lead sp-up sp-up-2" style="max-width:580px">Compare tools side-by-side, see total cost, and pick the one that actually fits your team.</p>
@@ -504,6 +507,8 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
   </div>
 </footer>
 <script src="/assets/sp-motion.js" defer></script>
+<script src="/assets/sp-plexus.js" defer></script>
+<script src="/assets/sp-intro.js" defer></script>
 
 <script>
 /* ── Nav scroll ─────────────────────────────────────────────────────────── */

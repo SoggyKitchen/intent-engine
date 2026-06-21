@@ -346,3 +346,21 @@ input,textarea,select{font-family:inherit;color:inherit}
 @media (max-width: 600px){
   .sp-footer-inner{grid-template-columns:1fr}
 }
+
+/* ── PLEXUS ORB MOTIF (shared) ────────────────────────────────────── */
+.ai-orb{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.9}
+
+/* ── PAGE INTRO OVERLAY (shared, lightweight) ─────────────────────── */
+.sp-pintro{position:fixed;inset:0;z-index:9998;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse 120% 90% at 50% 45%,#180810,#050308 72%);transition:opacity .7s ease,transform .7s ease}
+.sp-pintro.done{opacity:0;transform:scale(1.06);pointer-events:none}
+.sp-pintro-orb{position:absolute;inset:0;width:100%;height:100%}
+.sp-pintro-c{position:relative;z-index:2;text-align:center;padding:1rem}
+.sp-pintro-eyebrow{font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;color:var(--pink-light);opacity:0;animation:spPin .8s .15s ease forwards}
+.sp-pintro-title{font-weight:900;font-size:clamp(2rem,7vw,3.4rem);line-height:1.05;color:#fff;margin:.5rem 0;opacity:0;animation:spPinUp .9s .35s cubic-bezier(.22,1,.36,1) forwards;text-shadow:0 0 44px rgba(255,65,109,.5)}
+.sp-pintro-title em{font-style:normal;color:var(--pink)}
+.sp-pintro-bar{position:relative;width:160px;height:2px;margin:1.2rem auto 0;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;opacity:0;animation:spPin .5s .9s ease forwards}
+.sp-pintro-bar i{position:absolute;inset:0;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--pink),var(--pink-light));animation:spPinBar 1s 1s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes spPin{to{opacity:1}}
+@keyframes spPinUp{from{opacity:0;transform:translateY(20px);filter:blur(8px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes spPinBar{to{transform:scaleX(1)}}
+@media (prefers-reduced-motion: reduce){.sp-pintro{display:none!important}}

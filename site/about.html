@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="/assets/sp-motion.css">
 <link rel="stylesheet" href="/assets/motion.css">
 <style>
-.ab-hero{padding:5rem 1.5rem 2rem}
+.ab-hero{padding:5rem 1.5rem 2rem;position:relative;isolation:isolate;overflow:hidden}
+.ab-hero>.sp-container{position:relative;z-index:2}
+.ab-hero>.ai-orb{z-index:0;opacity:.42}
 .ab-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
 .ab-eyebrow{margin-bottom:1.25rem}
 .ab-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
@@ -147,7 +149,7 @@ nav.sp-topnav{display:none!important}
 })();
 </script>
 </head>
-<body>
+<body data-intro-eyebrow="About SaaSpare" data-intro-title="Honest by <em>design</em>">
 
 
 <nav id="sp-nav">
@@ -172,6 +174,7 @@ nav.sp-topnav{display:none!important}
 <div class="sp-nav-spacer"></div>
 
 <section class="ab-hero sp-section" style="padding-top:5rem">
+  <canvas class="ai-orb" id="ai-orb" data-scale="0.34" aria-hidden="true"></canvas>
   <div class="sp-container">
     <div class="ab-grid">
       <div>
@@ -280,6 +283,8 @@ nav.sp-topnav{display:none!important}
   <div class="sp-footer-bottom"><span>© 2026 SaaSpare. All rights reserved.</span><span>Made for buyers. Not vendors.</span></div>
 </footer>
 <script src="/assets/sp-motion.js" defer></script>
+<script src="/assets/sp-plexus.js" defer></script>
+<script src="/assets/sp-intro.js" defer></script>
 
 <script>
 (function(){

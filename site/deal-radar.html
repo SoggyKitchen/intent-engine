@@ -30,7 +30,8 @@
 
 /* Hero */
 .dr-hero{text-align:center;padding:4rem 1.5rem 1rem;display:flex;flex-direction:column;align-items:center;gap:1rem;position:relative;isolation:isolate}
-.dr-hero > *:not(.dr-radar-bg){position:relative;z-index:2}
+.dr-hero > *:not(.dr-radar-bg):not(.ai-orb){position:relative;z-index:2}
+.dr-hero > .ai-orb{position:absolute;z-index:1;opacity:.32}
 
 /* Radar visual baked-in (compact, behind hero) */
 .dr-radar-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:0;opacity:.45}
@@ -203,7 +204,7 @@ nav.sp-topnav{display:none!important}
 })();
 </script>
 </head>
-<body>
+<body data-intro-eyebrow="Deal Radar" data-intro-title="Live SaaS <em>deals</em>">
 
 
 <nav id="sp-nav">
@@ -229,6 +230,7 @@ nav.sp-topnav{display:none!important}
 
 <!-- HERO with radar visual behind -->
 <section class="dr-hero" data-screen-label="01 Deal Radar Hero">
+  <canvas class="ai-orb" id="ai-orb" data-scale="0.4" aria-hidden="true"></canvas>
   <!-- Radar background -->
   <div class="dr-radar-bg" aria-hidden="true">
     <div class="sp-radar">
@@ -485,6 +487,8 @@ nav.sp-topnav{display:none!important}
   </div>
 </footer>
 <script src="/assets/sp-motion.js" defer></script>
+<script src="/assets/sp-plexus.js" defer></script>
+<script src="/assets/sp-intro.js" defer></script>
 
 <script>
 (function(){
