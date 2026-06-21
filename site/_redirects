@@ -66,11 +66,15 @@
 # Kajabi CJ: 30% commission, ~$100/sale
 # Wave 24 — CJ Hidden Gems (added 2026-06-01)
 # Proton — CJ Advertiser ID: 5227916
-# GET YOUR LINK: app.cj.com -> Links -> Get Links -> search "Proton"
+# TODO: Replace below with CJ deep link from app.cj.com -> Links -> search "Proton"
+/go/protonvpn https://proton.me/vpn?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/proton https://proton.me?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/proton-vpn https://proton.me/vpn?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 # GetResponse — CJ Advertiser ID: 3142111  ($100/lead EPC $31.63!)
 # CJ link active (deduped — canonical entry at /go/getresponse above)
 # Elementor — CJ Advertiser ID: 6798066 (45% commission!)
-# GET YOUR LINK: app.cj.com -> Links -> search "Elementor"
+# TODO: Replace below with CJ deep link from app.cj.com -> Links -> search "Elementor"
+/go/elementor https://elementor.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 # AWeber — CJ Advertiser ID: 5111249
 # GET YOUR LINK: app.cj.com -> Links -> search "AWeber"
 # Parallels — CJ Advertiser ID: 2005415 (EPC $31.65)
@@ -166,11 +170,13 @@
 /go/hubspot https://www.hubspot.com/products/crm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/hubspot-crm https://www.hubspot.com/products/crm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/hubspot-free-crm https://www.hubspot.com/products/crm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact-affiliate https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact-com https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact-com-platform https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/impact-radius https://goto.impact.com/c/7250237/2014517/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-affiliate https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-com https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-com-platform https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-radius https://goto.impact.com/c/7359133/2016445/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-demo https://goto.impact.com/c/7359133/2022835/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/impact-brands https://goto.impact.com/c/7359133/2022838/24933?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/intego-antivirus-security https://www.jdoqocy.com/click-101733230-15733644?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/ironclad https://ironcladapp.com?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/jasper-ai https://www.jasper.ai?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
