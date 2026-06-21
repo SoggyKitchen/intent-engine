@@ -1,0 +1,530 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - button "Skip to content" [ref=e4]
+    - link "TRY SEMRUSH ONE FOR FREE" [ref=e6] [cursor=pointer]:
+      - /url: https://www.semrush.com/signup/?src=main_banner&custom=ai-seo&redirect_to=%2Fseo%2F&trial=force
+      - generic [ref=e8]: TRY SEMRUSH ONE FOR FREE
+    - banner "Top menu" [ref=e11]:
+      - link "Semrush homepage" [ref=e12] [cursor=pointer]:
+        - /url: /
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - button "Products" [ref=e17] [cursor=pointer]
+        - listitem [ref=e18]:
+          - link "Pricing" [ref=e19] [cursor=pointer]:
+            - /url: /pricing/
+        - listitem [ref=e20]:
+          - button "Resources" [ref=e21] [cursor=pointer]
+        - listitem [ref=e22]:
+          - link "Enterprise" [ref=e23] [cursor=pointer]:
+            - /url: https://enterprise.semrush.com/
+      - generic [ref=e25]:
+        - link "Log In" [ref=e26] [cursor=pointer]:
+          - /url: /login/?src=header
+        - link "Sign Up" [ref=e27] [cursor=pointer]:
+          - /url: /signup/?src=header
+    - generic [ref=e28]:
+      - main [ref=e29]:
+        - generic [ref=e30]:
+          - region "Be found everywhere search happens" [ref=e31]:
+            - generic [ref=e32]:
+              - heading "Be found everywhere search happens" [level=1] [ref=e33]
+              - paragraph [ref=e34]: The leading platform to grow and measure brand visibility across virtually every digital channel.
+              - form "Project setup" [ref=e36]:
+                - generic [ref=e37]:
+                  - generic [ref=e38]:
+                    - combobox "Enter your website" [ref=e39]
+                    - generic: Enter y
+                  - button "Filter by country" [ref=e42] [cursor=pointer]:
+                    - generic [ref=e43]: us
+                - button "Get insights" [ref=e45] [cursor=pointer]
+            - region "Company logos" [ref=e48]:
+              - generic [ref=e50]:
+                - list [ref=e51]:
+                  - listitem [ref=e52]:
+                    - img "Shopify" [ref=e54]
+                  - listitem [ref=e55]:
+                    - img "Decathlon" [ref=e57]
+                  - listitem [ref=e58]:
+                    - img "Booking.com" [ref=e60]
+                  - listitem [ref=e61]:
+                    - img "P&G" [ref=e63]
+                  - listitem [ref=e64]:
+                    - img "Samsung" [ref=e66]
+                  - listitem [ref=e67]:
+                    - img "FedEx" [ref=e69]
+                  - listitem [ref=e70]:
+                    - img "Amazon" [ref=e72]
+                  - listitem [ref=e73]:
+                    - img "General Electric" [ref=e75]
+                  - listitem [ref=e76]:
+                    - img "Airbnb" [ref=e78]
+                  - listitem [ref=e79]:
+                    - img "Netflix" [ref=e81]
+                  - listitem [ref=e82]:
+                    - img "TikTok" [ref=e84]
+                  - listitem [ref=e85]:
+                    - img "Dropbox" [ref=e87]
+                - list [ref=e88]:
+                  - listitem [ref=e89]:
+                    - img [ref=e91]
+                  - listitem [ref=e92]:
+                    - img [ref=e94]
+                  - listitem [ref=e95]:
+                    - img [ref=e97]
+                  - listitem [ref=e98]:
+                    - img [ref=e100]
+                  - listitem [ref=e101]:
+                    - img [ref=e103]
+                  - listitem [ref=e104]:
+                    - img [ref=e106]
+                  - listitem [ref=e107]:
+                    - img [ref=e109]
+                  - listitem [ref=e110]:
+                    - img [ref=e112]
+                  - listitem [ref=e113]:
+                    - img [ref=e115]
+                  - listitem [ref=e116]:
+                    - img [ref=e118]
+                  - listitem [ref=e119]:
+                    - img [ref=e121]
+                  - listitem [ref=e122]:
+                    - img [ref=e124]
+          - generic [ref=e125]:
+            - region "Your edge to win every search" [ref=e126]:
+              - generic [ref=e127]:
+                - heading "Your edge to win every search" [level=2] [ref=e128]:
+                  - text: Your edge to win
+                  - text: every search
+                - generic [ref=e129]:
+                  - paragraph [ref=e130]: Semrush One unites SEO and AI visibility in one place — built on 17 years of search intelligence.
+                  - link "Try for free" [ref=e131] [cursor=pointer]:
+                    - /url: /signup/?src=main_promo&custom=ai-seo&redirect_to=%2Fseo%2F&trial=force
+            - region "Bigger scale. Bigger advantage." [ref=e134]:
+              - generic [ref=e135]:
+                - heading "Bigger scale. Bigger advantage." [level=2] [ref=e136]:
+                  - text: Bigger scale.
+                  - text: Bigger advantage.
+                - generic [ref=e137]:
+                  - paragraph [ref=e138]: Semrush for Enterprise means brand visibility dominance. Win more customers across markets and domains. Everywhere they search.
+                  - link "Book a demo" [ref=e139] [cursor=pointer]:
+                    - /url: /enterprise/seo/?utm_source=semrush&utm_medium=main_block
+          - region "Solutions ( 9 )" [ref=e142]:
+            - generic [ref=e143]:
+              - heading "Solutions ( 9 )" [level=2] [ref=e144]:
+                - text: Solutions
+                - generic [ref=e145]: ( 9 )
+              - heading "Get seen. Get cited. Be the answer." [level=3] [ref=e146]
+              - generic [ref=e147]:
+                - generic [ref=e148]:
+                  - group "1 / 9" [ref=e149] [cursor=pointer]:
+                    - generic [ref=e150]:
+                      - heading "Semrush one" [level=3] [ref=e151]
+                      - heading "Grow your digital brand visibility" [level=4] [ref=e152]:
+                        - text: Grow your digital
+                        - text: brand visibility
+                      - button "Expand" [ref=e153]:
+                        - generic [ref=e154]: Expand
+                    - img "Example of AI visibility across time graph." [ref=e156]
+                  - group "2 / 9" [ref=e157] [cursor=pointer]:
+                    - generic [ref=e158]:
+                      - heading "SEO" [level=3] [ref=e159]
+                      - heading "Outrank the rest with better SEO" [level=4] [ref=e160]:
+                        - text: Outrank the rest
+                        - text: with better SEO
+                      - button "Expand" [ref=e161]:
+                        - generic [ref=e162]: Expand
+                    - img "Example of Site Audit insights." [ref=e164]
+                  - group "3 / 9" [ref=e165] [cursor=pointer]:
+                    - generic [ref=e166]:
+                      - heading "AI Visibility" [level=3] [ref=e167]
+                      - heading "Get LLMs to cite your brand" [level=4] [ref=e168]:
+                        - text: Get LLMs to
+                        - text: cite your brand
+                      - button "Expand" [ref=e169]:
+                        - generic [ref=e170]: Expand
+                    - img "Example of a graph comparing competitors’ market share and sentiment score." [ref=e172]
+                  - group "4 / 9" [ref=e173] [cursor=pointer]:
+                    - generic [ref=e174]:
+                      - heading "Traffic and Market" [level=3] [ref=e175]
+                      - heading "Analyze traffic on any website" [level=4] [ref=e176]:
+                        - text: Analyze traffic on
+                        - text: any website
+                      - button "Expand" [ref=e177]:
+                        - generic [ref=e178]: Expand
+                    - img "Example of a traffic distribution graph." [ref=e180]
+                  - group "5 / 9" [ref=e181] [cursor=pointer]:
+                    - generic [ref=e182]:
+                      - heading "Content" [level=3] [ref=e183]
+                      - heading "Craft SEO and AI-ready content in minutes" [level=4] [ref=e184]:
+                        - text: Craft SEO and AI-ready
+                        - text: content in minutes
+                      - button "Expand" [ref=e185]:
+                        - generic [ref=e186]: Expand
+                    - img "Example of articles and ideas generated with Content Toolkit." [ref=e188]
+                  - group "6 / 9" [ref=e189] [cursor=pointer]:
+                    - generic [ref=e190]:
+                      - heading "Local" [level=3] [ref=e191]
+                      - heading "Own your local presence" [level=4] [ref=e192]:
+                        - text: Own your
+                        - text: local presence
+                      - button "Expand" [ref=e193]:
+                        - generic [ref=e194]: Expand
+                    - img "Example of Google Business Profile Performance data." [ref=e196]
+                  - group "7 / 9" [ref=e197] [cursor=pointer]:
+                    - generic [ref=e198]:
+                      - heading "Advertising" [level=3] [ref=e199]
+                      - heading "Make every ad dollar work harder" [level=4] [ref=e200]:
+                        - text: Make every ad dollar
+                        - text: work harder
+                      - button "Expand" [ref=e201]:
+                        - generic [ref=e202]: Expand
+                    - img "Example of an ad campaign launched with the toolkit." [ref=e204]
+                  - group "8 / 9" [ref=e205] [cursor=pointer]:
+                    - generic [ref=e206]:
+                      - heading "AI PR" [level=3] [ref=e207]
+                      - heading "Build AI trust through earned press" [level=4] [ref=e208]:
+                        - text: Build AI trust through
+                        - text: earned press
+                      - button "Expand" [ref=e209]:
+                        - generic [ref=e210]: Expand
+                    - img "Example of search results with available experts." [ref=e212]
+                  - group "9 / 9" [ref=e213] [cursor=pointer]:
+                    - generic [ref=e214]:
+                      - heading "Social" [level=3] [ref=e215]
+                      - heading "Manage social all in one place" [level=4] [ref=e216]:
+                        - text: Manage social all
+                        - text: in one place
+                      - button "Expand" [ref=e217]:
+                        - generic [ref=e218]: Expand
+                    - img "Example of scheduled posts across different platforms." [ref=e220]
+                - generic [ref=e221]:
+                  - button "Previous slide" [disabled] [ref=e222]
+                  - button "Next slide" [ref=e223] [cursor=pointer]
+          - region "Stats and facts" [ref=e224]:
+            - generic [ref=e225]:
+              - heading "Stats and facts" [level=2] [ref=e226]
+              - heading "The data you need to outrank the competition" [level=3] [ref=e227]:
+                - text: The data you need
+                - text: to outrank the competition
+              - list [ref=e228]:
+                - listitem [ref=e229]:
+                  - generic [ref=e230]:
+                    - img "Arrow pointing up" [ref=e231]
+                    - generic [ref=e233]: 28B
+                    - paragraph [ref=e234]: Keywords
+                  - paragraph [ref=e235]: More keywords means more ways to win.
+                - listitem [ref=e236]:
+                  - generic [ref=e237]:
+                    - img "Arrow pointing up" [ref=e238]
+                    - generic [ref=e240]: 43T
+                    - paragraph: Backlinks
+                  - paragraph [ref=e241]: Build credibility with the largest database on the market.
+                - listitem [ref=e242]:
+                  - generic [ref=e243]:
+                    - img "Arrow pointing up" [ref=e244]
+                    - generic [ref=e246]: 808M
+                    - paragraph: Domain profiles
+                  - paragraph [ref=e247]: Your (secret) market insights superpower.
+                - listitem [ref=e248]:
+                  - generic [ref=e249]:
+                    - img "Arrow pointing up" [ref=e250]
+                    - generic [ref=e252]: "142"
+                    - paragraph: Geo databases
+                  - paragraph [ref=e253]: You’re covered all around the world.
+                - listitem [ref=e254]:
+                  - generic [ref=e255]:
+                    - img "Arrow pointing up" [ref=e256]
+                    - generic [ref=e258]: 261M+
+                    - paragraph: LLM prompts
+                  - paragraph [ref=e259]: Monitor more prompts. Grow your visibility faster.
+              - link "Learn more" [ref=e260] [cursor=pointer]:
+                - /url: /stats/
+          - region "AI Visibility Index" [ref=e261]:
+            - generic [ref=e262]:
+              - heading "AI Visibility Index" [level=2] [ref=e263]
+              - paragraph [ref=e264]: Explore the strategies powering today's AI search leaders and get clear steps to build your own.
+              - link "Explore the index" [ref=e265] [cursor=pointer]:
+                - /url: https://ai-visibility-index.semrush.com/
+              - generic [ref=e266]:
+                - generic [ref=e267]:
+                  - generic [ref=e268]: "% Share of Voice"
+                  - generic [ref=e269]: "AI Platform: ChatGPT, April 2026"
+                - table [ref=e270]:
+                  - rowgroup [ref=e271]:
+                    - row "Brand % Share of Voice" [ref=e272]:
+                      - columnheader "Brand" [ref=e273]
+                      - columnheader "% Share of Voice" [ref=e274]
+                  - rowgroup [ref=e275]:
+                    - row "Google 4.5" [ref=e276]:
+                      - cell "Google" [ref=e277]
+                      - cell "4.5" [ref=e278]:
+                        - generic [ref=e280]: "4.5"
+                    - row "Zoho 4.1" [ref=e283]:
+                      - cell "Zoho" [ref=e284]
+                      - cell "4.1" [ref=e285]:
+                        - generic [ref=e287]: "4.1"
+                    - row "HubSpot 3.8" [ref=e290]:
+                      - cell "HubSpot" [ref=e291]
+                      - cell "3.8" [ref=e292]:
+                        - generic [ref=e294]: "3.8"
+                    - row "FedEx 3.5" [ref=e297]:
+                      - cell "FedEx" [ref=e298]
+                      - cell "3.5" [ref=e299]:
+                        - generic [ref=e301]: "3.5"
+                    - row "Microsoft 3" [ref=e304]:
+                      - cell "Microsoft" [ref=e305]
+                      - cell "3" [ref=e306]:
+                        - generic [ref=e308]: "3"
+                    - row "Square 2.1" [ref=e311]:
+                      - cell "Square" [ref=e312]
+                      - cell "2.1" [ref=e313]:
+                        - generic [ref=e315]: "2.1"
+                    - row "UPS 1.9" [ref=e318]:
+                      - cell "UPS" [ref=e319]
+                      - cell "1.9" [ref=e320]:
+                        - generic [ref=e322]: "1.9"
+                    - row "Amazon 1.8" [ref=e325]:
+                      - cell "Amazon" [ref=e326]
+                      - cell "1.8" [ref=e327]:
+                        - generic [ref=e329]: "1.8"
+                    - row "QuickBooks 1.7" [ref=e332]:
+                      - cell "QuickBooks" [ref=e333]
+                      - cell "1.7" [ref=e334]:
+                        - generic [ref=e336]: "1.7"
+                    - row "Latham & Watkins 1.6" [ref=e339]:
+                      - cell "Latham & Watkins" [ref=e340]
+                      - cell "1.6" [ref=e341]:
+                        - generic [ref=e343]: "1.6"
+          - region "Our customers" [ref=e346]:
+            - generic [ref=e347]:
+              - heading "Our customers" [level=2] [ref=e348]
+              - heading "How we help marketers win" [level=3] [ref=e349]:
+                - text: How we help
+                - text: marketers win
+              - generic [ref=e350]:
+                - figure "James Roth CRO at ZoomInfo" [ref=e351]:
+                  - img "Zoominfo" [ref=e352]
+                  - blockquote [ref=e353]: Semrush for Enterprise has been a game-changer for our marketing teams. It’s helped us work more efficiently, cutting down on manual tasks so we can focus on what really matters—engaging with our audience and driving growth.
+                  - generic [ref=e356]:
+                    - generic [ref=e357]: James Roth
+                    - generic [ref=e358]: CRO at ZoomInfo
+                - generic [ref=e359]:
+                  - paragraph [ref=e360]: +373%
+                  - paragraph [ref=e361]: Increase in share of voice
+          - region "Resources ( 7 )" [ref=e362]:
+            - generic [ref=e363]:
+              - heading "Resources ( 7 )" [level=2] [ref=e364]:
+                - text: Resources
+                - generic [ref=e365]: ( 7 )
+              - heading "Stay ahead of what’s next" [level=3] [ref=e366]
+              - generic [ref=e367]:
+                - generic [ref=e368]:
+                  - article "1 / 7" [ref=e369]:
+                    - heading "Semrush Announces Partnership with Lovable" [level=3] [ref=e371]:
+                      - link "Semrush Announces Partnership with Lovable" [ref=e372] [cursor=pointer]:
+                        - /url: /news/457747-semrush-announces-partnership-with-lovable-bringing-search-intelligence-into-the-building-experience/
+                    - paragraph [ref=e373]: Semrush integrates its search data directly into Lovable, the AI software creation platform, giving all Lovable users access to SEO and AI visibility tools natively inside the builder.
+                    - generic [ref=e374]:
+                      - generic [ref=e375]: News
+                      - generic [ref=e376]: Product Update
+                  - article "2 / 7" [ref=e377]:
+                    - heading "Adobe Completes Semrush Acquisition" [level=3] [ref=e379]:
+                      - link "Adobe Completes Semrush Acquisition" [ref=e380] [cursor=pointer]:
+                        - /url: /news/455953-adobe-completes-semrush-acquisition-strengthening-cx-enterprise-with-enhanced-brand-visibility-capabilities/
+                    - paragraph [ref=e381]: Adobe acquires Semrush to unify brand visibility, SEO, and AI-driven customer experience — helping businesses stay discoverable and drive engagement in an agent-led digital landscape.
+                    - generic [ref=e383]: News
+                  - article "3 / 7" [ref=e384]:
+                    - 'heading "FAQ for Customers: Adobe Acquires Semrush" [level=3] [ref=e386]':
+                      - 'link "FAQ for Customers: Adobe Acquires Semrush" [ref=e387] [cursor=pointer]':
+                        - /url: /news/455963-faq-for-customers-adobe-acquires-semrush/
+                    - paragraph [ref=e388]: Answers to the most important customer questions — covering what changes, what stays the same, and what to expect next from Adobe and Semrush.
+                    - generic [ref=e390]: News
+                  - article "4 / 7" [ref=e391]:
+                    - heading "Direct Access to Semrush Data in ChatGPT" [level=3] [ref=e393]:
+                      - link "Direct Access to Semrush Data in ChatGPT" [ref=e394] [cursor=pointer]:
+                        - /url: /news/439260-semrush-launches-official-app-in-chatgpt-offering-users-direct-access-to-semrush-data/
+                    - paragraph [ref=e395]: The go-to integration to streamline daily tasks and centralize your data. Faster insights, smarter workflows, and visibility built right in to where you work.
+                    - generic [ref=e396]:
+                      - generic [ref=e397]: News
+                      - generic [ref=e398]: Product Update
+                  - article "5 / 7" [ref=e399]:
+                    - heading "How We’re Driving LLM Visibility at Semrush" [level=3] [ref=e401]:
+                      - link "How We’re Driving LLM Visibility at Semrush" [ref=e402] [cursor=pointer]:
+                        - /url: /blog/how-we-are-using-semrush-to-drive-llm-visibility/
+                    - paragraph [ref=e403]: How we nearly tripled our AI share of voice and boosted our AI visibility with Enterprise AIO and the AI Visibility Toolkit. A systematic approach with real data.
+                    - generic [ref=e404]:
+                      - generic [ref=e405]: Blog
+                      - generic [ref=e406]: Article
+                  - article "6 / 7" [ref=e407]:
+                    - heading "Sharpen Your Digital Marketing Skills with Our Free Webinars" [level=3] [ref=e409]:
+                      - link "Sharpen Your Digital Marketing Skills with Our Free Webinars" [ref=e410] [cursor=pointer]:
+                        - /url: /academy/courses/ai-visibility-essentials-with-semrush/
+                    - paragraph [ref=e411]: A free certification course on how AI is changing search. Track prompts, optimize for LLMs, and grow your brand’s visibility in AI search.
+                    - generic [ref=e413]: Academy Course
+                  - article "7 / 7" [ref=e414]:
+                    - heading "Where Ambitious Marketers Take Center Stage" [level=3] [ref=e416]:
+                      - link "Where Ambitious Marketers Take Center Stage" [ref=e417] [cursor=pointer]:
+                        - /url: https://www.spotlightconf.com/
+                    - paragraph [ref=e418]: Join us at Spotlight for practical strategies, expert feedback, and a community that has your back. It’s one day that makes the next 365 work smarter.
+                    - generic [ref=e420]: Spotlight
+                - generic [ref=e421]:
+                  - button "Previous slide" [disabled] [ref=e422]
+                  - button "Next slide" [ref=e423] [cursor=pointer]
+      - generic [ref=e424]:
+        - contentinfo [ref=e425]:
+          - generic [ref=e426]:
+            - generic [ref=e427]:
+              - heading "Get started with Semrush today" [level=2] [ref=e428]
+              - paragraph [ref=e429]: Try Semrush free for seven days. Cancel anytime.
+              - link "Start free trial" [ref=e430] [cursor=pointer]:
+                - /url: /signup/?src=footer
+            - generic [ref=e431]:
+              - generic [ref=e432]:
+                - paragraph [ref=e433]: Semrush
+                - list [ref=e434]:
+                  - listitem [ref=e435]:
+                    - link "Semrush One" [ref=e436] [cursor=pointer]:
+                      - /url: /one/
+                  - listitem [ref=e437]:
+                    - link "Features" [ref=e438] [cursor=pointer]:
+                      - /url: /features/
+                  - listitem [ref=e439]:
+                    - link "Pricing" [ref=e440] [cursor=pointer]:
+                      - /url: /pricing/
+                  - listitem [ref=e441]:
+                    - link "Free Trial" [ref=e442] [cursor=pointer]:
+                      - /url: /semrush-free-trial/
+                  - listitem [ref=e443]:
+                    - link "Compare Semrush" [ref=e444] [cursor=pointer]:
+                      - /url: /vs/
+                  - listitem [ref=e445]:
+                    - link "Success Stories" [ref=e446] [cursor=pointer]:
+                      - /url: /company/stories/
+                  - listitem [ref=e447]:
+                    - link "Stats and Facts" [ref=e448] [cursor=pointer]:
+                      - /url: /stats/
+                  - listitem [ref=e449]:
+                    - link "Affiliate Program" [ref=e450] [cursor=pointer]:
+                      - /url: /lp/affiliate-program/en/?utm_source=semrush&utm_medium=footer
+              - generic [ref=e451]:
+                - paragraph [ref=e452]: More tools
+                - list [ref=e453]:
+                  - listitem [ref=e454]:
+                    - link "Enterprise SEO" [ref=e455] [cursor=pointer]:
+                      - /url: https://enterprise.semrush.com/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e456]:
+                    - link "Enterprise AIO" [ref=e457] [cursor=pointer]:
+                      - /url: /lp/enterprise-aio/en/
+                  - listitem [ref=e458]:
+                    - link "Enterprise SI" [ref=e459] [cursor=pointer]:
+                      - /url: /lp/site-intelligence/en/
+                  - listitem [ref=e460]:
+                    - link "Insights24" [ref=e461] [cursor=pointer]:
+                      - /url: /lp/insights/en/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e462]:
+                    - link "Mfour" [ref=e463] [cursor=pointer]:
+                      - /url: /lp/mfour/en/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e464]:
+                    - link "App Center" [ref=e465] [cursor=pointer]:
+                      - /url: /apps/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e466]:
+                    - link "Top Websites" [ref=e467] [cursor=pointer]:
+                      - /url: /website/top/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e468]:
+                    - link "Free Tools" [ref=e469] [cursor=pointer]:
+                      - /url: /free-tools/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e470]:
+                    - link "Sensor" [ref=e471] [cursor=pointer]:
+                      - /url: /sensor/?utm_source=semrush&utm_medium=footer
+              - generic [ref=e472]:
+                - paragraph [ref=e473]: Company
+                - list [ref=e474]:
+                  - listitem [ref=e475]:
+                    - link "About Us" [ref=e476] [cursor=pointer]:
+                      - /url: /company/
+                  - listitem [ref=e477]:
+                    - link "News" [ref=e478] [cursor=pointer]:
+                      - /url: /news/
+                  - listitem [ref=e479]:
+                    - link "Careers" [ref=e480] [cursor=pointer]:
+                      - /url: https://careers.semrush.com/
+                  - listitem [ref=e481]:
+                    - link "Partners" [ref=e482] [cursor=pointer]:
+                      - /url: /company/partners/
+                  - listitem [ref=e483]:
+                    - link "Semrush Select" [ref=e484] [cursor=pointer]:
+                      - /url: /company/semrush-select/
+                  - listitem [ref=e485]:
+                    - link "Global Issues Index" [ref=e486] [cursor=pointer]:
+                      - /url: /company/global-issues/
+                  - listitem [ref=e487]:
+                    - link "Do not sell my personal info" [ref=e488] [cursor=pointer]:
+                      - /url: javascript:window.showDontSellMyDataSettings();
+                  - listitem [ref=e489]:
+                    - link "Contact Us" [ref=e490] [cursor=pointer]:
+                      - /url: /company/contacts/
+              - generic [ref=e491]:
+                - generic [ref=e492]:
+                  - paragraph [ref=e493]: Support
+                  - list [ref=e494]:
+                    - listitem [ref=e495]:
+                      - link "Knowledge Base" [ref=e496] [cursor=pointer]:
+                        - /url: /kb/
+                    - listitem [ref=e497]:
+                      - link "Academy" [ref=e498] [cursor=pointer]:
+                        - /url: /academy/
+                    - listitem [ref=e499]:
+                      - link "Semrush API" [ref=e500] [cursor=pointer]:
+                        - /url: /api-documentation/
+                - generic [ref=e501]:
+                  - paragraph [ref=e502]: Community
+                  - list [ref=e503]:
+                    - listitem [ref=e504]:
+                      - link "Semrush Blog" [ref=e505] [cursor=pointer]:
+                        - /url: /blog/
+                    - listitem [ref=e506]:
+                      - link "Webinars" [ref=e507] [cursor=pointer]:
+                        - /url: /academy/webinars/
+                    - listitem [ref=e508]:
+                      - link "Ambassador Program" [ref=e509] [cursor=pointer]:
+                        - /url: /lp/semrush-circle/en/?utm_source=semrush&utm_medium=footer
+            - generic [ref=e510]:
+              - list [ref=e511]:
+                - listitem [ref=e512]:
+                  - link "Semrush linkedin" [ref=e513] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/semrush
+                - listitem [ref=e514]:
+                  - link "Semrush instagram" [ref=e515] [cursor=pointer]:
+                    - /url: https://instagram.com/semrush/
+                - listitem [ref=e516]:
+                  - link "Semrush tiktok" [ref=e517] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@semrush
+                - listitem [ref=e518]:
+                  - link "Semrush youtube" [ref=e519] [cursor=pointer]:
+                    - /url: https://www.youtube.com/user/SemrushHQ
+                - listitem [ref=e520]:
+                  - link "Semrush facebook" [ref=e521] [cursor=pointer]:
+                    - /url: https://www.facebook.com/Semrush
+                - listitem [ref=e522]:
+                  - link "Semrush twitter" [ref=e523] [cursor=pointer]:
+                    - /url: https://x.com/semrush
+              - paragraph [ref=e524]:
+                - link "Adobe" [ref=e525] [cursor=pointer]:
+                  - /url: https://business.adobe.com/
+                - generic [ref=e526]: © 2026 Semrush Holdings. All rights reserved.
+            - list [ref=e528]:
+              - listitem [ref=e529]:
+                - link "Privacy Policy" [ref=e530] [cursor=pointer]:
+                  - /url: /company/legal/privacy-policy/
+              - listitem [ref=e531]:
+                - link "Terms of Service" [ref=e532] [cursor=pointer]:
+                  - /url: /company/legal/
+              - listitem [ref=e533]:
+                - link "Cookies Settings" [ref=e534] [cursor=pointer]:
+                  - /url: javascript:window.showConsentSettings();
+            - button "English" [ref=e536] [cursor=pointer]
+        - img [ref=e538]
+  - region "Notifications"
+  - iframe [ref=e540]:
+    

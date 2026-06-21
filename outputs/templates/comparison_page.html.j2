@@ -647,22 +647,32 @@ footer a:hover{color:rgba(255,255,255,.6)}
 </div><!-- /container -->
 
 <script>
-// FAQ: first item open by default on desktop, all closed on mobile
 (function(){
+  // FAQ: first item open by default on desktop, all closed on mobile
   if(window.innerWidth < 640){
     document.querySelectorAll('.faq-item').forEach(function(d){d.removeAttribute('open');});
   }
-})();
 
-// Email form — inline success message
-var sf=document.getElementById('sub-form');
-if(sf){
-  sf.addEventListener('submit',function(e){
-    setTimeout(function(){
-      sf.innerHTML='<p class="email-success">✓ You\'re in! Check your inbox Friday.</p>';
-    },200);
-  });
-}
+  // Email form — inline success message
+  var sf=document.getElementById('sub-form');
+  if(sf){
+    sf.addEventListener('submit',function(e){
+      setTimeout(function(){
+        sf.innerHTML='<p class="email-success">✓ You\'re in! Check your inbox Friday.</p>';
+      },200);
+    });
+  }
+
+  // Scroll-spy CTA button: hide when user scrolls past affordance zone
+  var cta_primary = document.querySelector('[data-cta="primary"]');
+  var comparison_section = document.querySelector('.comparison-features');
+  if(cta_primary && comparison_section){
+    window.addEventListener('scroll', function(){
+      var rect = comparison_section.getBoundingClientRect();
+      cta_primary.style.display = rect.top < window.innerHeight ? 'none' : 'block';
+    });
+  }
+})();
 </script>
 
 </body>

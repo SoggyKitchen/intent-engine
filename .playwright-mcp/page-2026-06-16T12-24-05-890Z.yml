@@ -1,0 +1,245 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - button "Skip to content" [ref=e4]
+    - banner "Top menu" [ref=e7]:
+      - link "Semrush homepage" [ref=e8] [cursor=pointer]:
+        - /url: /
+      - button "Open menu" [ref=e9] [cursor=pointer]
+    - generic [ref=e10]:
+      - main [ref=e11]:
+        - generic [ref=e12]:
+          - heading "404" [level=1] [ref=e13]
+          - heading "This page doesn't exist." [level=2] [ref=e14]
+          - paragraph [ref=e15]: The page you're looking for isn't here, but we'll help you find what you need.
+          - generic [ref=e16]:
+            - link "Marketing Toolkits" [ref=e17] [cursor=pointer]:
+              - /url: https://www.semrush.com/toolkits/
+            - link "Features" [ref=e18] [cursor=pointer]:
+              - /url: https://www.semrush.com/features/
+            - link "Pricing" [ref=e19] [cursor=pointer]:
+              - /url: https://www.semrush.com/pricing/
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - heading "Useful Tools" [level=2] [ref=e22]
+            - generic [ref=e23]:
+              - 'link "AI Visibility Increase your visibility in AI search engines: ChatGPT, Google AI Mode, etc. Learn more" [ref=e24] [cursor=pointer]':
+                - /url: https://www.semrush.com/ai-seo/overview/
+                - heading "AI Visibility" [level=3] [ref=e25]
+                - paragraph [ref=e26]: "Increase your visibility in AI search engines: ChatGPT, Google AI Mode, etc."
+                - generic [ref=e28]: Learn more
+              - link "Keyword Research Bring traffic to your site by finding the best keywords Learn more 6 tools" [ref=e29] [cursor=pointer]:
+                - /url: https://www.semrush.com/features/keyword-research-toolkit/
+                - heading "Keyword Research" [level=3] [ref=e30]
+                - paragraph [ref=e31]: Bring traffic to your site by finding the best keywords
+                - generic [ref=e32]:
+                  - generic [ref=e33]: Learn more
+                  - generic [ref=e34]: 6 tools
+              - link "On-page SEO Get new ideas to improve your site's health and SEO performance Learn more 3 tools" [ref=e35] [cursor=pointer]:
+                - /url: https://www.semrush.com/features/technical-seo-tools/
+                - heading "On-page SEO" [level=3] [ref=e36]
+                - paragraph [ref=e37]: Get new ideas to improve your site's health and SEO performance
+                - generic [ref=e38]:
+                  - generic [ref=e39]: Learn more
+                  - generic [ref=e40]: 3 tools
+              - link "Competitor Analysis Boost your performance by unpacking competitor strategies with daily and weekly traffic data. Learn more 5 tools" [ref=e41] [cursor=pointer]:
+                - /url: https://www.semrush.com/features/competitor-website-analysis-tools/
+                - heading "Competitor Analysis" [level=3] [ref=e42]
+                - paragraph [ref=e43]: Boost your performance by unpacking competitor strategies with daily and weekly traffic data.
+                - generic [ref=e44]:
+                  - generic [ref=e45]: Learn more
+                  - generic [ref=e46]: 5 tools
+          - generic [ref=e47]:
+            - heading "Helpful Articles" [level=2] [ref=e48]
+            - generic [ref=e49]:
+              - link "How to Optimize for AI Search Results in 2025 Learn AI search optimization tactics to get cited by ChatGPT, Perplexity, and Google AI Overviews. Start capturing high-intent traffic. General SEO Jul 18, 2025" [ref=e50] [cursor=pointer]:
+                - /url: https://www.semrush.com/blog/ai-search-optimization/
+                - heading "How to Optimize for AI Search Results in 2025" [level=3] [ref=e51]
+                - paragraph [ref=e52]: Learn AI search optimization tactics to get cited by ChatGPT, Perplexity, and Google AI Overviews. Start capturing high-intent traffic.
+                - generic [ref=e53]:
+                  - generic [ref=e54]: General SEO
+                  - generic [ref=e55]: Jul 18, 2025
+              - link "What Is Keyword Search Volume? (& How to Check It) Keyword search volume is the average number of monthly searches for a search term in a particular location. Keyword Research Jan 10, 2025" [ref=e56] [cursor=pointer]:
+                - /url: https://www.semrush.com/blog/keyword-search-volume/
+                - heading "What Is Keyword Search Volume? (& How to Check It)" [level=3] [ref=e57]
+                - paragraph [ref=e58]: Keyword search volume is the average number of monthly searches for a search term in a particular location.
+                - generic [ref=e59]:
+                  - generic [ref=e60]: Keyword Research
+                  - generic [ref=e61]: Jan 10, 2025
+              - 'link "How to Get Backlinks: 10 Realistic Methods Learn how to get backlinks by responding to media requests, creating link bait, finding broken links, & more. Link Building Oct 17, 2024" [ref=e62] [cursor=pointer]':
+                - /url: https://www.semrush.com/blog/how-to-get-backlinks/
+                - 'heading "How to Get Backlinks: 10 Realistic Methods" [level=3] [ref=e63]'
+                - paragraph [ref=e64]: Learn how to get backlinks by responding to media requests, creating link bait, finding broken links, & more.
+                - generic [ref=e65]:
+                  - generic [ref=e66]: Link Building
+                  - generic [ref=e67]: Oct 17, 2024
+              - link "How to Perform a Complete SEO Audit in 14 Steps Learn how to do a comprehensive SEO audit step by step and identify errors on your site or a client's. Technical SEO Apr 17, 2025" [ref=e68] [cursor=pointer]:
+                - /url: https://www.semrush.com/blog/seo-audit/
+                - heading "How to Perform a Complete SEO Audit in 14 Steps" [level=3] [ref=e69]
+                - paragraph [ref=e70]: Learn how to do a comprehensive SEO audit step by step and identify errors on your site or a client's.
+                - generic [ref=e71]:
+                  - generic [ref=e72]: Technical SEO
+                  - generic [ref=e73]: Apr 17, 2025
+              - link "10 Ways to Use AI for SEO to Streamline Your Work Learn how to use AI for keyword research, SERP analyses, content optimization, and more. General SEO Jul 04, 2025" [ref=e74] [cursor=pointer]:
+                - /url: https://www.semrush.com/blog/ai-seo/
+                - heading "10 Ways to Use AI for SEO to Streamline Your Work" [level=3] [ref=e75]
+                - paragraph [ref=e76]: Learn how to use AI for keyword research, SERP analyses, content optimization, and more.
+                - generic [ref=e77]:
+                  - generic [ref=e78]: General SEO
+                  - generic [ref=e79]: Jul 04, 2025
+            - link "View more articles" [ref=e81] [cursor=pointer]:
+              - /url: https://www.semrush.com/blog/
+      - generic [ref=e82]:
+        - contentinfo [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - heading "Get started with Semrush today" [level=2] [ref=e86]
+              - paragraph [ref=e87]: Try Semrush free for seven days. Cancel anytime.
+              - link "Start free trial" [ref=e88] [cursor=pointer]:
+                - /url: /signup/?src=footer
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - paragraph [ref=e91]: Semrush
+                - list [ref=e92]:
+                  - listitem [ref=e93]:
+                    - link "Semrush One" [ref=e94] [cursor=pointer]:
+                      - /url: /one/
+                  - listitem [ref=e95]:
+                    - link "Features" [ref=e96] [cursor=pointer]:
+                      - /url: /features/
+                  - listitem [ref=e97]:
+                    - link "Pricing" [ref=e98] [cursor=pointer]:
+                      - /url: /pricing/
+                  - listitem [ref=e99]:
+                    - link "Free Trial" [ref=e100] [cursor=pointer]:
+                      - /url: /semrush-free-trial/
+                  - listitem [ref=e101]:
+                    - link "Compare Semrush" [ref=e102] [cursor=pointer]:
+                      - /url: /vs/
+                  - listitem [ref=e103]:
+                    - link "Success Stories" [ref=e104] [cursor=pointer]:
+                      - /url: /company/stories/
+                  - listitem [ref=e105]:
+                    - link "Stats and Facts" [ref=e106] [cursor=pointer]:
+                      - /url: /stats/
+                  - listitem [ref=e107]:
+                    - link "Affiliate Program" [ref=e108] [cursor=pointer]:
+                      - /url: /lp/affiliate-program/en/?utm_source=semrush&utm_medium=footer
+              - generic [ref=e109]:
+                - paragraph [ref=e110]: More tools
+                - list [ref=e111]:
+                  - listitem [ref=e112]:
+                    - link "Enterprise SEO" [ref=e113] [cursor=pointer]:
+                      - /url: https://enterprise.semrush.com/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e114]:
+                    - link "Enterprise AIO" [ref=e115] [cursor=pointer]:
+                      - /url: /lp/enterprise-aio/en/
+                  - listitem [ref=e116]:
+                    - link "Enterprise SI" [ref=e117] [cursor=pointer]:
+                      - /url: /lp/site-intelligence/en/
+                  - listitem [ref=e118]:
+                    - link "Insights24" [ref=e119] [cursor=pointer]:
+                      - /url: /lp/insights/en/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e120]:
+                    - link "Mfour" [ref=e121] [cursor=pointer]:
+                      - /url: /lp/mfour/en/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e122]:
+                    - link "App Center" [ref=e123] [cursor=pointer]:
+                      - /url: /apps/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e124]:
+                    - link "Top Websites" [ref=e125] [cursor=pointer]:
+                      - /url: /website/top/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e126]:
+                    - link "Free Tools" [ref=e127] [cursor=pointer]:
+                      - /url: /free-tools/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e128]:
+                    - link "Sensor" [ref=e129] [cursor=pointer]:
+                      - /url: /sensor/?utm_source=semrush&utm_medium=footer
+              - generic [ref=e130]:
+                - paragraph [ref=e131]: Company
+                - list [ref=e132]:
+                  - listitem [ref=e133]:
+                    - link "About Us" [ref=e134] [cursor=pointer]:
+                      - /url: /company/
+                  - listitem [ref=e135]:
+                    - link "News" [ref=e136] [cursor=pointer]:
+                      - /url: /news/
+                  - listitem [ref=e137]:
+                    - link "Careers" [ref=e138] [cursor=pointer]:
+                      - /url: https://careers.semrush.com/
+                  - listitem [ref=e139]:
+                    - link "Partners" [ref=e140] [cursor=pointer]:
+                      - /url: /company/partners/
+                  - listitem [ref=e141]:
+                    - link "Semrush Select" [ref=e142] [cursor=pointer]:
+                      - /url: /company/semrush-select/
+                  - listitem [ref=e143]:
+                    - link "Global Issues Index" [ref=e144] [cursor=pointer]:
+                      - /url: /company/global-issues/
+                  - listitem [ref=e145]:
+                    - link "Do not sell my personal info" [ref=e146] [cursor=pointer]:
+                      - /url: javascript:window.showDontSellMyDataSettings();
+                  - listitem [ref=e147]:
+                    - link "Contact Us" [ref=e148] [cursor=pointer]:
+                      - /url: /company/contacts/
+              - generic [ref=e149]:
+                - generic [ref=e150]:
+                  - paragraph [ref=e151]: Support
+                  - list [ref=e152]:
+                    - listitem [ref=e153]:
+                      - link "Knowledge Base" [ref=e154] [cursor=pointer]:
+                        - /url: /kb/
+                    - listitem [ref=e155]:
+                      - link "Academy" [ref=e156] [cursor=pointer]:
+                        - /url: /academy/
+                    - listitem [ref=e157]:
+                      - link "Semrush API" [ref=e158] [cursor=pointer]:
+                        - /url: /api-documentation/
+                - generic [ref=e159]:
+                  - paragraph [ref=e160]: Community
+                  - list [ref=e161]:
+                    - listitem [ref=e162]:
+                      - link "Semrush Blog" [ref=e163] [cursor=pointer]:
+                        - /url: /blog/
+                    - listitem [ref=e164]:
+                      - link "Webinars" [ref=e165] [cursor=pointer]:
+                        - /url: /academy/webinars/
+                    - listitem [ref=e166]:
+                      - link "Ambassador Program" [ref=e167] [cursor=pointer]:
+                        - /url: /lp/semrush-circle/en/?utm_source=semrush&utm_medium=footer
+            - generic [ref=e168]:
+              - list [ref=e169]:
+                - listitem [ref=e170]:
+                  - link "Semrush linkedin" [ref=e171] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/semrush
+                - listitem [ref=e172]:
+                  - link "Semrush instagram" [ref=e173] [cursor=pointer]:
+                    - /url: https://instagram.com/semrush/
+                - listitem [ref=e174]:
+                  - link "Semrush tiktok" [ref=e175] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@semrush
+                - listitem [ref=e176]:
+                  - link "Semrush youtube" [ref=e177] [cursor=pointer]:
+                    - /url: https://www.youtube.com/user/SemrushHQ
+                - listitem [ref=e178]:
+                  - link "Semrush facebook" [ref=e179] [cursor=pointer]:
+                    - /url: https://www.facebook.com/Semrush
+                - listitem [ref=e180]:
+                  - link "Semrush twitter" [ref=e181] [cursor=pointer]:
+                    - /url: https://x.com/semrush
+              - paragraph [ref=e182]:
+                - link "Adobe" [ref=e183] [cursor=pointer]:
+                  - /url: https://business.adobe.com/
+                - generic [ref=e184]: © 2026 Semrush Holdings. All rights reserved.
+            - list [ref=e186]:
+              - listitem [ref=e187]:
+                - link "Privacy Policy" [ref=e188] [cursor=pointer]:
+                  - /url: /company/legal/privacy-policy/
+              - listitem [ref=e189]:
+                - link "Terms of Service" [ref=e190] [cursor=pointer]:
+                  - /url: /company/legal/
+              - listitem [ref=e191]:
+                - link "Cookies Settings" [ref=e192] [cursor=pointer]:
+                  - /url: javascript:window.showConsentSettings();
+            - button "English" [ref=e194] [cursor=pointer]
+        - img [ref=e196]
+  - region "Notifications"

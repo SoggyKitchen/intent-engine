@@ -1,0 +1,609 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e9] [cursor=pointer]:
+          - paragraph [ref=e12]: Add a top 1% marketer to your team
+          - generic [ref=e14]:
+            - paragraph [ref=e17]: Every Sunda
+            - button [ref=e20]:
+              - img [ref=e21]
+          - img "Agent A" [ref=e27]
+        - banner [ref=e28]:
+          - generic [ref=e29]:
+            - link "Ahrefs" [ref=e33] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e34]: Ahrefs
+            - menubar "Navigation Menu" [ref=e35]:
+              - menuitem "Product" [ref=e36]:
+                - generic [ref=e37] [cursor=pointer]:
+                  - text: Product
+                  - img [ref=e39]
+              - link "Our data" [ref=e42] [cursor=pointer]:
+                - /url: /big-data
+              - menuitem "Resources" [ref=e43]:
+                - generic [ref=e44] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e46]
+              - link "Pricing" [ref=e49] [cursor=pointer]:
+                - /url: /pricing
+              - link "Enterprise" [ref=e51] [cursor=pointer]:
+                - /url: /enterprise
+            - generic [ref=e52]:
+              - button "Search Ahrefs" [ref=e57] [cursor=pointer]:
+                - img [ref=e58]
+              - img [ref=e64] [cursor=pointer]
+              - link "Sign in" [ref=e68] [cursor=pointer]:
+                - /url: //app.ahrefs.com/user/login
+              - link "Sign up" [ref=e69] [cursor=pointer]:
+                - /url: /pricing?utm_source=site-explorer
+                - generic [ref=e72]: Sign up
+            - generic [ref=e76]: Ahrefs
+      - link "Sign up" [ref=e79] [cursor=pointer]:
+        - /url: /pricing?utm_source=site-explorer
+        - generic [ref=e82]: Sign up
+      - generic [ref=e86]:
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - heading "Site Explorer" [level=1] [ref=e91]:
+              - generic [ref=e92]: Site Explorer
+            - paragraph [ref=e93]: Study what’s working for ANY website
+          - generic [ref=e94]:
+            - paragraph [ref=e95]: See where their traffic comes from, which pages perform, and how competitors get discovered—across search, AI, links, and ads.
+            - generic [ref=e97]:
+              - link "Sign up for Ahrefs" [ref=e98] [cursor=pointer]:
+                - /url: /pricing?utm_source=se_landing
+                - generic [ref=e101]: Sign up for Ahrefs
+              - paragraph [ref=e103]: Site Explorer is part of Ahrefs’ marketing platform.
+        - generic [ref=e107] [cursor=pointer]:
+          - img [ref=e109]
+          - generic [ref=e112]: Watch demo
+      - generic [ref=e119]:
+        - heading "Analyze websites across 3 major areas" [level=2] [ref=e121]
+        - generic [ref=e123]:
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - heading "Organic & AI search traffic" [level=3] [ref=e129]:
+                - link "Organic & AI search traffic" [ref=e130] [cursor=pointer]:
+                  - /url: "#organic-ai-search-traffic"
+              - generic [ref=e131]: Uncover your competitors’ top pages, keywords, and where they surface in AI answers.
+            - img [ref=e133]
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - heading "Backlink profile" [level=3] [ref=e139]:
+                - link "Backlink profile" [ref=e140] [cursor=pointer]:
+                  - /url: "#backlink-profile"
+              - generic [ref=e141]: See which websites link to competitors and gauge the quality of their backlinks.
+            - img [ref=e143]
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - heading "Paid traffic" [level=3] [ref=e149]:
+                - link "Paid traffic" [ref=e150] [cursor=pointer]:
+                  - /url: "#paid-traffic"
+              - generic [ref=e151]: Reveal your competitors’ PPC strategy and where they’re funneling paid traffic.
+            - img [ref=e153]
+      - generic [ref=e159]:
+        - generic [ref=e162]:
+          - generic [ref=e164]: Search & Backlink Index
+          - heading "Sift through trillions of data insights about websites in any industry." [level=2] [ref=e165]:
+            - generic [ref=e166]: Sift through trillions of data insights about websites in any industry.
+        - generic [ref=e167]:
+          - generic [ref=e170]:
+            - generic [ref=e172]:
+              - generic [ref=e175]:
+                - generic [ref=e177]: "19.9"
+                - generic [ref=e179]: B
+              - generic [ref=e180]: Pages
+            - generic [ref=e182]:
+              - generic [ref=e185]:
+                - generic [ref=e187]: "35"
+                - generic [ref=e189]: T
+              - generic [ref=e190]: Live backlinks
+            - generic [ref=e192]:
+              - generic [ref=e197]: "186"
+              - generic [ref=e198]: Locations
+            - link "Ahrefs by the numbers →" [ref=e202] [cursor=pointer]:
+              - /url: /big-data
+          - generic [ref=e204]:
+            - generic [ref=e208]:
+              - img [ref=e210]
+              - generic [ref=e211]:
+                - generic [ref=e216]: "77"
+                - generic [ref=e217]: Backlink-related API points
+            - generic [ref=e221]:
+              - img [ref=e223]
+              - generic [ref=e224]:
+                - generic [ref=e229]: 10+
+                - generic [ref=e230]: Years of historical data
+            - generic [ref=e234]:
+              - generic [ref=e235]:
+                - paragraph [ref=e236]: The largest AI visibility database
+                - generic [ref=e237]:
+                  - img [ref=e239]
+                  - img [ref=e246]
+                  - img [ref=e249]
+                  - img [ref=e257]
+                  - img [ref=e261]
+              - generic [ref=e263]:
+                - generic [ref=e266]:
+                  - generic [ref=e268]: 100+
+                  - generic [ref=e270]: M
+                - generic [ref=e271]: Total prompts
+      - generic [ref=e277]:
+        - generic [ref=e280]:
+          - generic [ref=e282]: Organic & AI search performance
+          - heading "Reverse-engineer any website’s traffic, keywords, and site structure." [level=2] [ref=e283]
+        - button "Pause" [ref=e289] [cursor=pointer]:
+          - generic [ref=e291]:
+            - img [ref=e292]
+            - paragraph [ref=e295]: Pause
+        - img [ref=e299]
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - generic [ref=e304]: "1"
+            - heading "Track competitor growth trends" [level=3] [ref=e305]
+          - generic [ref=e307]:
+            - generic [ref=e308]:
+              - img [ref=e310]
+              - paragraph [ref=e312]: Get an overview of your rivals’ organic & AI search performance.
+            - generic [ref=e313]:
+              - generic [ref=e317]:
+                - img [ref=e319]
+                - paragraph [ref=e320]: Monitor competitor website growth across 10+ key metrics.
+              - generic [ref=e321]:
+                - img [ref=e323]
+                - paragraph [ref=e324]: Track keyword, traffic, and backlink changes daily to spot early trends.
+        - generic [ref=e326]:
+          - generic [ref=e327]:
+            - generic [ref=e329]: "2"
+            - heading "Understand what drives competitor success" [level=3] [ref=e330]
+          - generic [ref=e337]:
+            - generic [ref=e340]:
+              - generic [ref=e342]:
+                - heading "Uncover high-traffic site areas" [level=4] [ref=e343]
+                - paragraph [ref=e345]: See which competing site sections drive the most traffic, links, and ads.
+              - img [ref=e350]
+            - separator [ref=e351]
+            - generic [ref=e354]:
+              - generic [ref=e356]:
+                - heading "Replicate top pages" [level=4] [ref=e357]
+                - paragraph [ref=e359]: Spot top-performing pages and replicate what drives your competitor’s organic traffic.
+              - img [ref=e364]
+            - separator [ref=e365]
+            - generic [ref=e368]:
+              - generic [ref=e370]:
+                - heading "Discover the brands, products, and topics fueling traffic" [level=4] [ref=e371]
+                - paragraph [ref=e373]: Reveal what drives traffic — from trending brands to high-interest products and themes.
+              - img [ref=e378]
+            - separator [ref=e379]
+            - generic [ref=e382]:
+              - generic [ref=e384]:
+                - heading "Spot AI-written content" [level=4] [ref=e385]
+                - paragraph [ref=e387]: Reveal what drives traffic — from trending brands to high-interest products and themes.
+              - img [ref=e392]
+        - generic [ref=e394]:
+          - generic [ref=e395]:
+            - generic [ref=e397]: "3"
+            - heading "Analyze changes and their impact" [level=3] [ref=e398]
+          - generic [ref=e400]:
+            - button "Pause" [ref=e405] [cursor=pointer]:
+              - generic [ref=e407]:
+                - img [ref=e408]
+                - paragraph [ref=e411]: Pause
+            - paragraph [ref=e413]: See how Google updates and content changes affect organic traffic.
+      - generic [ref=e419]:
+        - generic [ref=e422]:
+          - generic [ref=e424]: Backlink profile
+          - heading "Master link building and boost your domain authority like a pro." [level=2] [ref=e425]
+        - generic [ref=e427]:
+          - generic [ref=e431]:
+            - heading "Track backlink spikes in real time as soon as they happen." [level=3] [ref=e432]:
+              - generic [ref=e433]: Track backlink spikes in real time as soon as they happen.
+            - img [ref=e435]
+          - generic [ref=e439]:
+            - heading "Find valuable links in seconds by cutting through backlink noise." [level=3] [ref=e440]:
+              - generic [ref=e441]: Find valuable links in seconds by cutting through backlink noise.
+            - img [ref=e443]
+          - generic [ref=e447]:
+            - heading "Get link-worthy content ideas by studying your competitor’s most linked to pages." [level=3] [ref=e448]:
+              - generic [ref=e449]: Get link-worthy content ideas by studying your competitor’s most linked to pages.
+            - img [ref=e451]
+          - heading "Discover top authors for outreach contacts and guest blogging opportunities." [level=3] [ref=e456]:
+            - generic [ref=e457]: Discover top authors for outreach contacts and guest blogging opportunities.
+      - generic [ref=e465]:
+        - generic [ref=e468]:
+          - generic [ref=e470]: Paid Ads Performance
+          - heading "Decode your competitors’ paid advertising and replicate their winning ads." [level=2] [ref=e471]:
+            - generic [ref=e472]: Decode your competitors’ paid advertising and replicate their winning ads.
+        - generic [ref=e473]:
+          - generic [ref=e476]:
+            - generic [ref=e478]:
+              - heading "Track competitor ad spend" [level=3] [ref=e479]
+              - paragraph [ref=e480]: See how much competitors invest in Google Ads and the paid traffic they’re capturing at a country level.
+            - img [ref=e482]
+          - generic [ref=e483]:
+            - generic [ref=e486]:
+              - generic [ref=e488]:
+                - heading "Find the highest converting pages" [level=3] [ref=e489]
+                - paragraph [ref=e490]: See which subfolders and landing pages drive the most ad dollars.
+              - img [ref=e492]
+            - generic [ref=e495]:
+              - generic [ref=e497]:
+                - heading "Bet on profitable keywords" [level=3] [ref=e498]
+                - paragraph [ref=e499]: Discover which keywords competitors target, their CPCs, ad positions, and paid-to-organic ratios.
+              - img [ref=e501]
+          - generic [ref=e505]:
+            - generic [ref=e507]:
+              - heading "Get ad inspiration" [level=3] [ref=e508]
+              - paragraph [ref=e509]: Analyze top-performing ads word-for-word and refine your copy to improve ROAS.
+            - img [ref=e511]
+      - generic [ref=e517]:
+        - heading "More reasons to use Ahrefs as your go-to marketing platform" [level=2] [ref=e519]:
+          - generic [ref=e520]: More reasons to use Ahrefs as your go-to marketing platform
+        - generic [ref=e521]:
+          - generic [ref=e526]:
+            - generic [ref=e527]:
+              - generic [ref=e529]:
+                - generic [ref=e531]: Brand Radar
+                - heading "Track your brand’s performance in AI search and beyond" [level=3] [ref=e532]
+              - list [ref=e534]:
+                - listitem [ref=e535]:
+                  - generic [ref=e536]:
+                    - img [ref=e538]
+                    - paragraph [ref=e541]: Compare your visibility against competitors in AI chatbots and the web
+                - listitem [ref=e542]:
+                  - generic [ref=e543]:
+                    - img [ref=e545]
+                    - paragraph [ref=e548]: Find and fill in AI content gaps
+                - listitem [ref=e549]:
+                  - generic [ref=e550]:
+                    - img [ref=e552]
+                    - paragraph [ref=e555]: Identify key topics and conversations that drive AI traffic
+            - link "Learn more →" [ref=e558] [cursor=pointer]:
+              - /url: /brand-radar
+              - generic [ref=e559]: Learn more →
+          - generic [ref=e570]:
+            - generic [ref=e571]:
+              - generic [ref=e573]:
+                - generic [ref=e575]: AI Content Helper
+                - heading "Create high-quality content that ranks" [level=3] [ref=e576]
+              - list [ref=e578]:
+                - listitem [ref=e579]:
+                  - generic [ref=e580]:
+                    - img [ref=e582]
+                    - paragraph [ref=e585]: Eliminate manual research with AI‑powered search intents
+                - listitem [ref=e586]:
+                  - generic [ref=e587]:
+                    - img [ref=e589]
+                    - paragraph [ref=e592]: Grade your content against competitors and fill in topical gaps
+                - listitem [ref=e593]:
+                  - generic [ref=e594]:
+                    - img [ref=e596]
+                    - paragraph [ref=e599]: Optimize content for SEO and AI search with proven titles, meta tags, and structure insights
+            - link "Learn more →" [ref=e602] [cursor=pointer]:
+              - /url: /ai-content-helper
+              - generic [ref=e603]: Learn more →
+      - generic [ref=e615]:
+        - generic [ref=e616]:
+          - generic [ref=e619]: Stop guessing. See exactly how competitors get discovered—and build a strategy that wins.
+          - generic [ref=e624]: 21,709 users joined Ahrefs in the last 7 days
+        - generic [ref=e625]:
+          - link "Sign up for Ahrefs" [ref=e626] [cursor=pointer]:
+            - /url: /pricing?utm_source=se_landing
+            - generic [ref=e629]: Sign up for Ahrefs
+          - generic [ref=e630]:
+            - link "Start for Free" [ref=e631] [cursor=pointer]:
+              - /url: /signup?utm_source=se_landing&plan=awt&return=SiteExplorer&feature=se
+              - generic [ref=e634]: Start for Free
+            - paragraph [ref=e636]: See the performance of your own verified websites.
+      - contentinfo [ref=e639]:
+        - generic [ref=e642]:
+          - generic [ref=e643]:
+            - generic [ref=e644]:
+              - generic [ref=e646]:
+                - generic [ref=e648]: Core tools
+                - generic [ref=e649]:
+                  - link "Brand Radar" [ref=e651] [cursor=pointer]:
+                    - /url: /brand-radar
+                    - generic [ref=e652]: Brand Radar
+                  - link "Custom Prompts" [ref=e654] [cursor=pointer]:
+                    - /url: /custom-prompts
+                    - generic [ref=e655]: Custom Prompts
+                  - link "Dashboard" [ref=e657] [cursor=pointer]:
+                    - /url: /dashboard
+                    - generic [ref=e658]: Dashboard
+                  - generic [ref=e660]: Site Explorer
+                  - link "Keywords Explorer" [ref=e662] [cursor=pointer]:
+                    - /url: /keywords-explorer
+                    - generic [ref=e663]: Keywords Explorer
+                  - link "Site Audit" [ref=e665] [cursor=pointer]:
+                    - /url: /site-audit
+                    - generic [ref=e666]: Site Audit
+                  - link "Rank Tracker" [ref=e668] [cursor=pointer]:
+                    - /url: /rank-tracker
+                    - generic [ref=e669]: Rank Tracker
+                  - link "GSC Insights" [ref=e671] [cursor=pointer]:
+                    - /url: /gsc-insights
+                    - generic [ref=e672]: GSC Insights
+                  - link "Content Explorer" [ref=e674] [cursor=pointer]:
+                    - /url: /content-explorer
+                    - generic [ref=e675]: Content Explorer
+                  - link "Web Analytics" [ref=e677] [cursor=pointer]:
+                    - /url: /web-analytics
+                    - generic [ref=e678]: Web Analytics
+                  - link "Bot Analytics" [ref=e680] [cursor=pointer]:
+                    - /url: /bot-analytics
+                    - generic [ref=e681]: Bot Analytics
+                  - link "GBP Monitor" [ref=e683] [cursor=pointer]:
+                    - /url: /gbp-monitor
+                    - generic [ref=e684]: GBP Monitor
+                  - link "Social Media Manager" [ref=e686] [cursor=pointer]:
+                    - /url: /social-media-manager
+                    - generic [ref=e687]: Social Media Manager
+                  - link "AI Content Helper" [ref=e689] [cursor=pointer]:
+                    - /url: /ai-content-helper
+                    - generic [ref=e690]: AI Content Helper
+                  - link "Report Builder" [ref=e692] [cursor=pointer]:
+                    - /url: /report-builder
+                    - generic [ref=e693]: Report Builder
+              - generic [ref=e695]:
+                - link "Use cases →" [ref=e697] [cursor=pointer]:
+                  - /url: /use-cases
+                  - generic [ref=e698]: Use cases →
+                - generic [ref=e699]:
+                  - link "Competitive Intelligence" [ref=e701] [cursor=pointer]:
+                    - /url: /use-cases/competitive-intelligence
+                    - generic [ref=e702]: Competitive Intelligence
+                  - link "PPC" [ref=e704] [cursor=pointer]:
+                    - /url: /use-cases/ppc
+                    - generic [ref=e705]: PPC
+                  - link "SEO" [ref=e707] [cursor=pointer]:
+                    - /url: /use-cases/seo
+                    - generic [ref=e708]: SEO
+                  - link "AEO" [ref=e710] [cursor=pointer]:
+                    - /url: /use-cases/aeo
+                    - generic [ref=e711]: AEO
+                  - link "Content Marketing" [ref=e713] [cursor=pointer]:
+                    - /url: /use-cases/content-marketing
+                    - generic [ref=e714]: Content Marketing
+                  - link "Brand Marketing" [ref=e716] [cursor=pointer]:
+                    - /url: /use-cases/brand-marketing
+                    - generic [ref=e717]: Brand Marketing
+                  - link "Investing" [ref=e719] [cursor=pointer]:
+                    - /url: /use-cases/investing
+                    - generic [ref=e720]: Investing
+            - generic [ref=e722]:
+              - generic [ref=e724]: Extra tools & features
+              - generic [ref=e725]:
+                - link "Domain Comparison" [ref=e727] [cursor=pointer]:
+                  - /url: /domain-comparison
+                  - generic [ref=e728]: Domain Comparison
+                - link "Batch Analysis" [ref=e730] [cursor=pointer]:
+                  - /url: /batch-analysis
+                  - generic [ref=e731]: Batch Analysis
+                - link "Link Intersect" [ref=e733] [cursor=pointer]:
+                  - /url: /link-intersect
+                  - generic [ref=e734]: Link Intersect
+                - link "Content Gap" [ref=e736] [cursor=pointer]:
+                  - /url: /content-gap
+                  - generic [ref=e737]: Content Gap
+                - link "Email Alerts" [ref=e739] [cursor=pointer]:
+                  - /url: /alerts
+                  - generic [ref=e740]: Email Alerts
+                - link "SEO Checker" [ref=e742] [cursor=pointer]:
+                  - /url: /seo-checker
+                  - generic [ref=e743]: SEO Checker
+                - link "Traffic Checker" [ref=e745] [cursor=pointer]:
+                  - /url: /traffic-checker
+                  - generic [ref=e746]: Traffic Checker
+                - link "Data Studio Connectors" [ref=e748] [cursor=pointer]:
+                  - /url: /google-data-studio-connectors
+                  - generic [ref=e749]: Data Studio Connectors
+                - link "Top Websites" [ref=e751] [cursor=pointer]:
+                  - /url: https://ahrefstop.com/websites
+                  - generic [ref=e752]: Top Websites
+                - link "Patches" [ref=e754] [cursor=pointer]:
+                  - /url: /patches
+                  - generic [ref=e755]: Patches
+                - link "Portfolios" [ref=e757] [cursor=pointer]:
+                  - /url: /portfolios
+                  - generic [ref=e758]: Portfolios
+                - link "IndexNow" [ref=e760] [cursor=pointer]:
+                  - /url: /index-now
+                  - generic [ref=e761]: IndexNow
+                - link "AI Tech SEO" [ref=e763] [cursor=pointer]:
+                  - /url: /ai-tech-seo
+                  - generic [ref=e764]: AI Tech SEO
+                - link "All tools" [ref=e766] [cursor=pointer]:
+                  - /url: /all
+                  - generic [ref=e767]: All tools
+                - link [ref=e769] [cursor=pointer]:
+                  - /url: /agent-a?utm_source=ahrefs_website&utm_content=footer
+            - generic [ref=e772]:
+              - generic [ref=e773]:
+                - link "Free SEO tools →" [ref=e775] [cursor=pointer]:
+                  - /url: /free-seo-tools
+                  - generic [ref=e776]: Free SEO tools →
+                - generic [ref=e777]:
+                  - link "Ahrefs Free" [ref=e779] [cursor=pointer]:
+                    - /url: /free
+                    - generic [ref=e780]: Ahrefs Free
+                  - link "AI Visibility Checker" [ref=e782] [cursor=pointer]:
+                    - /url: /ai-visibility-checker
+                    - generic [ref=e783]: AI Visibility Checker
+                  - link "AI Writing Tools" [ref=e785] [cursor=pointer]:
+                    - /url: /writing-tools
+                    - generic [ref=e786]: AI Writing Tools
+                  - link "Backlink Checker" [ref=e788] [cursor=pointer]:
+                    - /url: /backlink-checker
+                    - generic [ref=e789]: Backlink Checker
+                  - link "Broken Link Checker" [ref=e791] [cursor=pointer]:
+                    - /url: /broken-link-checker
+                    - generic [ref=e792]: Broken Link Checker
+                  - link "Website Authority Checker" [ref=e794] [cursor=pointer]:
+                    - /url: /website-authority-checker
+                    - generic [ref=e795]: Website Authority Checker
+                  - link "Keyword Generator" [ref=e797] [cursor=pointer]:
+                    - /url: /keyword-generator
+                    - generic [ref=e798]: Keyword Generator
+                  - link "SERP Checker" [ref=e800] [cursor=pointer]:
+                    - /url: /serp-checker
+                    - generic [ref=e801]: SERP Checker
+                  - link "SEO Toolbar" [ref=e803] [cursor=pointer]:
+                    - /url: /seo-toolbar
+                    - generic [ref=e804]: SEO Toolbar
+                  - link "Keyword Rank Checker" [ref=e806] [cursor=pointer]:
+                    - /url: /keyword-rank-checker
+                    - generic [ref=e807]: Keyword Rank Checker
+                  - link "Keyword Difficulty Checker" [ref=e809] [cursor=pointer]:
+                    - /url: /keyword-difficulty
+                    - generic [ref=e810]: Keyword Difficulty Checker
+                  - link "Website Checker" [ref=e812] [cursor=pointer]:
+                    - /url: /website-checker
+                    - generic [ref=e813]: Website Checker
+                  - link "SEO Audit Tool" [ref=e815] [cursor=pointer]:
+                    - /url: /seo-audit-tool
+                    - generic [ref=e816]: SEO Audit Tool
+                  - link "Word Count" [ref=e818] [cursor=pointer]:
+                    - /url: https://wordcount.com
+                    - generic [ref=e819]: Word Count
+              - generic [ref=e820]:
+                - link "Alternatives →" [ref=e822] [cursor=pointer]:
+                  - /url: /vs
+                  - generic [ref=e823]: Alternatives →
+                - link "Ahrefs vs Semrush" [ref=e826] [cursor=pointer]:
+                  - /url: /vs/semrush
+                  - generic [ref=e827]: Ahrefs vs Semrush
+            - generic [ref=e828]:
+              - generic [ref=e829]:
+                - generic [ref=e831]: Product
+                - generic [ref=e832]:
+                  - link "Pricing" [ref=e834] [cursor=pointer]:
+                    - /url: /pricing
+                    - generic [ref=e835]: Pricing
+                  - link "Our data" [ref=e837] [cursor=pointer]:
+                    - /url: /big-data
+                    - generic [ref=e838]: Our data
+                  - link "AhrefsBot" [ref=e840] [cursor=pointer]:
+                    - /url: /robot
+                    - generic [ref=e841]: AhrefsBot
+                  - link "API" [ref=e843] [cursor=pointer]:
+                    - /url: https://docs.ahrefs.com/api
+                    - generic [ref=e844]: API
+                  - link "MCP" [ref=e846] [cursor=pointer]:
+                    - /url: /mcp
+                    - generic [ref=e847]: MCP
+                  - link "Enterprise" [ref=e849] [cursor=pointer]:
+                    - /url: /enterprise
+                    - generic [ref=e850]: Enterprise
+                  - link "What’s new?" [ref=e852] [cursor=pointer]:
+                    - /url: https://ahrefs.com/blog/category/product-blog/
+                    - generic [ref=e853]: What’s new?
+              - generic [ref=e855]:
+                - generic [ref=e857]: Company
+                - generic [ref=e858]:
+                  - link "About" [ref=e860] [cursor=pointer]:
+                    - /url: /about
+                    - generic [ref=e861]: About
+                  - link "Testimonials" [ref=e863] [cursor=pointer]:
+                    - /url: /reviews
+                    - generic [ref=e864]: Testimonials
+                  - link "Events" [ref=e866] [cursor=pointer]:
+                    - /url: /events
+                    - generic [ref=e867]: Events
+                  - link "Team" [ref=e869] [cursor=pointer]:
+                    - /url: /team
+                    - generic [ref=e870]: Team
+                  - link "Careers" [ref=e872] [cursor=pointer]:
+                    - /url: /careers
+                    - generic [ref=e873]: Careers
+                  - link "Tech" [ref=e875] [cursor=pointer]:
+                    - /url: /tech
+                    - generic [ref=e876]: Tech
+                  - link "Media kit" [ref=e878] [cursor=pointer]:
+                    - /url: /media-kit
+                    - generic [ref=e879]: Media kit
+                  - link "FAQ" [ref=e881] [cursor=pointer]:
+                    - /url: /faq
+                    - generic [ref=e882]: FAQ
+                  - link "Contact us" [ref=e884] [cursor=pointer]:
+                    - /url: mailto:support@ahrefs.com
+                    - generic [ref=e885]: Contact us
+            - generic [ref=e887]:
+              - generic [ref=e889]: Resources
+              - generic [ref=e890]:
+                - link "Blog" [ref=e892] [cursor=pointer]:
+                  - /url: https://ahrefs.com/blog/
+                  - generic [ref=e893]: Blog
+                - link "Tech blog" [ref=e895] [cursor=pointer]:
+                  - /url: https://tech.ahrefs.com
+                  - generic [ref=e896]: Tech blog
+                - link "Podcast" [ref=e898] [cursor=pointer]:
+                  - /url: /podcast
+                  - generic [ref=e899]: Podcast
+                - link "Webinars" [ref=e901] [cursor=pointer]:
+                  - /url: /webinars
+                  - generic [ref=e902]: Webinars
+                - link "SEO Guide" [ref=e904] [cursor=pointer]:
+                  - /url: /seo
+                  - generic [ref=e905]: SEO Guide
+                - link "Help center" [ref=e907] [cursor=pointer]:
+                  - /url: https://help.ahrefs.com/
+                  - generic [ref=e908]: Help center
+                - link "Academy" [ref=e910] [cursor=pointer]:
+                  - /url: /academy
+                  - generic [ref=e911]: Academy
+                - link "Marketing Agencies" [ref=e913] [cursor=pointer]:
+                  - /url: /agencies
+                  - generic [ref=e914]: Marketing Agencies
+                - link "Digest" [ref=e916] [cursor=pointer]:
+                  - /url: /newsletter
+                  - generic [ref=e917]: Digest
+          - separator [ref=e919]
+          - generic [ref=e921]:
+            - generic [ref=e922]:
+              - paragraph [ref=e925]: "© 2026 Ahrefs Pte. Ltd. (201227417H) 16 Raffles Quay, #33-03 Hong Leong Building, Singapore 048581"
+              - generic [ref=e927]:
+                - link "Legal info" [ref=e929] [cursor=pointer]:
+                  - /url: /legal
+                  - generic [ref=e930]: Legal info
+                - link "Privacy Policy" [ref=e932] [cursor=pointer]:
+                  - /url: /legal/privacy-policy
+                  - generic [ref=e933]: Privacy Policy
+                - link "Cookie Settings" [ref=e935] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - generic [ref=e936]: Cookie Settings
+                - link "Terms of Service" [ref=e938] [cursor=pointer]:
+                  - /url: /legal/terms
+                  - generic [ref=e939]: Terms of Service
+            - generic [ref=e940]:
+              - generic [ref=e942]:
+                - link [ref=e943] [cursor=pointer]:
+                  - /url: https://x.com/ahrefs
+                  - button [ref=e944]:
+                    - img [ref=e945]
+                - link [ref=e947] [cursor=pointer]:
+                  - /url: https://www.youtube.com/c/AhrefsCom
+                  - button [ref=e948]:
+                    - img [ref=e949]
+                - link [ref=e951] [cursor=pointer]:
+                  - /url: https://www.instagram.com/ahrefs
+                  - button [ref=e952]:
+                    - img [ref=e953]
+                - link [ref=e955] [cursor=pointer]:
+                  - /url: https://www.facebook.com/Ahrefs
+                  - button [ref=e956]:
+                    - img [ref=e957]
+                - link [ref=e959] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/ahrefs/
+                  - button [ref=e960]:
+                    - img [ref=e961]
+              - button "English" [ref=e968] [cursor=pointer]:
+                - generic [ref=e969]:
+                  - generic [ref=e971]: English
+                  - img [ref=e973]
+    - link [ref=e976] [cursor=pointer]:
+      - /url: https://help.ahrefs.com/?mtm_campaign=floating-help-btn
+      - img [ref=e977]
+  - button "Close menu" [ref=e981] [cursor=pointer]:
+    - img [ref=e982]

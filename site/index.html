@@ -687,67 +687,6 @@ nav.sp-topnav{display:none!important}
 </script>
 </head>
 <body class="v2">
-<style>
-#sp-intro{position:fixed;inset:0;z-index:99999;background:radial-gradient(ellipse 120% 90% at 50% 50%,#1a0810,#040207 72%);display:flex;align-items:center;justify-content:center;overflow:hidden;transition:opacity .8s ease,transform .8s ease}
-#sp-intro.done{opacity:0;transform:scale(1.09);pointer-events:none}
-#sp-intro-orb{position:absolute;inset:0;width:100%;height:100%}
-.sp-intro-center{position:relative;z-index:2;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 1.5rem}
-.sp-intro-word{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:900;font-size:clamp(2.4rem,8vw,5rem);letter-spacing:-.045em;color:#fff;opacity:0;animation:spIntroWord 1s .55s cubic-bezier(.22,1,.36,1) forwards;text-shadow:0 0 50px rgba(233,69,96,.55)}
-.sp-intro-word em{font-style:normal;color:#e94560}
-.sp-intro-tag{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(.78rem,2.4vw,1rem);color:rgba(255,248,245,.62);letter-spacing:.22em;text-transform:uppercase;opacity:0;animation:spIntroFade 1s 1.35s ease forwards}
-.sp-intro-bar{position:absolute;bottom:15%;left:50%;transform:translateX(-50%);width:170px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;opacity:0;animation:spIntroFade .6s 1.55s ease forwards}
-.sp-intro-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#e94560,#ffb9c8);animation:spIntroBar 1.5s 1.65s cubic-bezier(.6,0,.2,1) forwards}
-.sp-intro-skip{position:absolute;bottom:7%;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,248,245,.32);cursor:pointer;opacity:0;animation:spIntroFade .6s 2.1s ease forwards;background:none;border:none;font-family:inherit}
-.sp-intro-skip:hover{color:rgba(255,248,245,.75)}
-@keyframes spIntroWord{from{opacity:0;transform:translateY(22px) scale(.95);filter:blur(10px)}to{opacity:1;transform:none;filter:blur(0)}}
-@keyframes spIntroFade{from{opacity:0}to{opacity:1}}
-@keyframes spIntroBar{to{width:100%}}
-@media(prefers-reduced-motion:reduce){#sp-intro{display:none!important}}
-</style>
-<div id="sp-intro" aria-hidden="true">
-  <canvas id="sp-intro-orb"></canvas>
-  <div class="sp-intro-center">
-    <div class="sp-intro-word">Saa<em>Spare</em></div>
-    <div class="sp-intro-tag">The honest guide to SaaS</div>
-  </div>
-  <div class="sp-intro-bar"><i></i></div>
-  <button class="sp-intro-skip" type="button">Skip intro</button>
-</div>
-<script>
-(function(){
-  var ov=document.getElementById('sp-intro');if(!ov)return;
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches,seen=false;
-  try{seen=sessionStorage.getItem('sp-intro')==='1'}catch(e){}
-  function strip(){ov.classList.add('done');setTimeout(function(){if(ov&&ov.parentNode)ov.parentNode.removeChild(ov)},850);}
-  if(reduce||seen){if(ov.parentNode)ov.parentNode.removeChild(ov);return;}
-  try{sessionStorage.setItem('sp-intro','1')}catch(e){}
-  document.documentElement.style.overflow='hidden';
-  var canvas=document.getElementById('sp-intro-orb'),ctx=canvas.getContext('2d');
-  var DPR=Math.min(window.devicePixelRatio||1,2),W,H;
-  function resize(){W=innerWidth;H=innerHeight;canvas.width=W*DPR;canvas.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);}
-  resize();addEventListener('resize',resize,{passive:true});
-  var N=innerWidth<700?120:200,GO=Math.PI*(3-Math.sqrt(5)),nodes=[];
-  for(var i=0;i<N;i++){var y=1-(i/(N-1))*2,rad=Math.sqrt(Math.max(0,1-y*y)),th=i*GO;nodes.push({x:Math.cos(th)*rad,y:y,z:Math.sin(th)*rad,rx:(Math.random()-.5)*7,ry:(Math.random()-.5)*7,rz:(Math.random()-.5)*7});}
-  var LINK=0.55,edges=[];
-  for(var a=0;a<N;a++)for(var b=a+1;b<N;b++){var dx=nodes[a].x-nodes[b].x,dy=nodes[a].y-nodes[b].y,dz=nodes[a].z-nodes[b].z,d=Math.sqrt(dx*dx+dy*dy+dz*dz);if(d<LINK)edges.push([a,b,1-d/LINK]);}
-  var start=performance.now(),rotY=0,proj=new Array(N),raf,done=false;
-  function loop(now){
-    var asm=Math.min(1,(now-start)/1500),ae=1-Math.pow(1-asm,3);
-    ctx.clearRect(0,0,W,H);
-    var cx=W*.5,cy=H*.5,R=Math.min(W,H)*.36,cY=Math.cos(rotY),sY=Math.sin(rotY);
-    for(var i=0;i<N;i++){var n=nodes[i],nx=n.rx+(n.x-n.rx)*ae,ny=n.ry+(n.y-n.ry)*ae,nz=n.rz+(n.z-n.rz)*ae,x1=nx*cY-nz*sY,z1=nx*sY+nz*cY,persp=1/(2.1-z1);proj[i]={sx:cx+x1*R*persp*1.5,sy:cy+ny*R*persp*1.5,z:z1};}
-    ctx.lineWidth=.8;
-    for(var e=0;e<edges.length;e++){var p1=proj[edges[e][0]],p2=proj[edges[e][1]],la=edges[e][2]*.5*ae*(((p1.z+p2.z)*.5+1)*.5);if(la<.02)continue;ctx.strokeStyle='rgba(255,90,120,'+la+')';ctx.beginPath();ctx.moveTo(p1.sx,p1.sy);ctx.lineTo(p2.sx,p2.sy);ctx.stroke();}
-    for(var k=0;k<N;k++){var p=proj[k],dp=(p.z+1)*.5,rr=1+dp*2.2,al=(.3+dp*.6)*(.35+.65*ae);ctx.beginPath();ctx.arc(p.sx,p.sy,rr,0,6.283);ctx.fillStyle=dp>.55?'rgba(255,150,170,'+al+')':'rgba(255,255,255,'+al*.8+')';ctx.fill();}
-    rotY+=0.006;raf=requestAnimationFrame(loop);
-  }
-  raf=requestAnimationFrame(loop);
-  function end(){if(done)return;done=true;cancelAnimationFrame(raf);document.documentElement.style.overflow='';strip();}
-  var auto=setTimeout(end,3500);
-  ov.addEventListener('click',function(){clearTimeout(auto);end();});
-  addEventListener('keydown',function(e){if(e.key==='Escape'||e.key===' '){clearTimeout(auto);end();}});
-})();
-</script>
 
 <!-- NAV -->
 <!-- NAV (canonical, v2) -->
@@ -764,7 +703,6 @@ nav.sp-topnav{display:none!important}
     <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="sp-nav-link">Comparisons</a>
-  <a href="/roi" class="sp-nav-link">ROI Calculator</a>
   <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
   <a href="/about" class="sp-nav-link">About</a>
@@ -792,7 +730,7 @@ nav.sp-topnav{display:none!important}
     <div class="vf vf-4"><span class="vf-dot green"></span><span class="vf-label">Linear</span>&nbsp;→&nbsp;Best dev UX, hands down</div>
   </div>
 
-  <div class="badge"><span class="badge-dot"></span>1,427 buyer pages live</div>
+  <div class="badge"><span class="badge-dot"></span>1420 comparisons live</div>
 
   <h1 class="hero-title">
     The honest guide to<br>
@@ -865,7 +803,7 @@ nav.sp-topnav{display:none!important}
 
 <!-- STATS -->
 <div class="stats">
-  <div class="stat"><span class="stat-val" data-count="1427" id="stat-pages">1,427<span>+</span></span><span class="stat-label">Buyer pages live</span></div>
+  <div class="stat"><span class="stat-val" data-count="1422" id="stat-pages">1,422<span>+</span></span><span class="stat-label">Buyer pages live</span></div>
   <div class="stat"><span class="stat-val" data-count="16">16</span><span class="stat-label">SaaS verticals</span></div>
   <div class="stat"><span class="stat-val" data-count="168">168</span><span class="stat-label">Offer paths tracked</span></div>
   <div class="stat"><span class="stat-val" style="color:var(--red)">$0</span><span class="stat-label">Always free to read</span></div>
@@ -1262,7 +1200,7 @@ setTimeout(spType, 600);
 
 /* SITEMAP COUNT */
 fetch('/sitemap.xml').then(r=>r.text()).then(xml=>{
-  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1317;
+  const n=(xml.match(/<loc>https:\/\/saaspare\.org\/pages\//g)||[]).length||1420;
   ['live-count','stat-pages'].forEach(id=>{const el=document.getElementById(id);if(el){el.dataset.count=n;el.textContent=n.toLocaleString()+(id==='stat-pages'?'+':'')}});
 }).catch(()=>{});
 

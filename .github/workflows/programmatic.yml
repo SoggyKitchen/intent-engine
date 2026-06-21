@@ -43,7 +43,6 @@ jobs:
           DB_PATH: data/intent.db
 
       - name: Run programmatic SEO
-        continue-on-error: true
         run: uv run engine programmatic --max-pages ${{ github.event.inputs.max_pages || '110' }}
         env:
           DB_PATH: data/intent.db
@@ -62,7 +61,9 @@ jobs:
           CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}
           DRY_RUN: ${{ secrets.DRY_RUN }}
           GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          BLOCK_ON_PROG: "false"
           LOG_LEVEL: INFO
+          NODE_OPTIONS: --max-old-space-size=2400
 
       - name: Validate affiliate redirects
         run: uv run python scripts/validate_affiliate_urls.py

@@ -169,6 +169,7 @@ def run_twitter():
         log.info("Twitter: launchpad written - open outputs/generated/tweet_launchpad.html to post")
         return
 
+    twitter_errors = 0
     for item in tweets:
         if _already_posted(item["url"]):
             continue
@@ -182,8 +183,9 @@ def run_twitter():
             time.sleep(60)
         except Exception as e:
             log.warning(f"Tweet failed: {e}")
+            twitter_errors += 1
 
-    _write_social_run_report({"twitter_candidates": len(pages)})
+    _write_social_run_report({"twitter_candidates": len(pages), "twitter_errors": twitter_errors})
 
 
 def _write_tweet_launchpad(tweets: list[dict]):
@@ -973,6 +975,7 @@ def run_linkedin():
     pages = _select_social_pages(limit=3, fresh_window_seconds=86400)
 
     posted = 0
+    linkedin_errors = 0
     for page in pages:
         url = _social_url(
             _page_url(page, domain),
@@ -999,9 +1002,10 @@ def run_linkedin():
             time.sleep(30)
         except Exception as e:
             log.warning(f"LinkedIn post failed: {e}")
+            linkedin_errors += 1
 
     log.info(f"LinkedIn: {posted} posts published")
-    _write_social_run_report({"linkedin_candidates": len(pages), "linkedin_posted": posted})
+    _write_social_run_report({"linkedin_candidates": len(pages), "linkedin_posted": posted, "linkedin_errors": linkedin_errors})
 
 
 def _generate_linkedin_post(title: str, vertical: str, url: str) -> Optional[str]:
@@ -1054,3 +1058,11 @@ def _post_linkedin(text: str, access_token: str, person_urn: str):
         timeout=20,
     )
     resp.raise_for_status()
+
+
+def run_social():
+    """Unified entry point: build social pack, then post to Twitter/X, LinkedIn, and Reddit."""
+    build_social_pack()
+    run_twitter()
+    run_linkedin()
+    run_reddit_answers()

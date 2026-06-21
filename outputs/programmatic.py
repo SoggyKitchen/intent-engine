@@ -1019,7 +1019,7 @@ def run_programmatic(max_pages: int = 500) -> int:
 
     tasks.sort(key=_task_priority)
 
-    if configured_provider_count() == 0:
+    if configured_provider_count() == 0 and max_pages > 0:
         log.error("No LLM providers configured — skipping page generation but still refreshing site artifacts")
         from publisher.pages_deploy import _rebuild_sitemap, _rebuild_homepage, _rebuild_pages_index
         _rebuild_sitemap(Path("site"))

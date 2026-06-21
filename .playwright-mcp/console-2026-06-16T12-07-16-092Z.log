@@ -1,0 +1,15 @@
+[    2268ms] [WARNING] dataLayerProxy:  prop [[getByName]] is not supported @ https://www.semrush.com/__static__/webpack/data_layer_proxy.a7aed3cd4257465b.js:1
+[    2268ms] [WARNING] dataLayerProxy:  method call is not supported @ https://www.semrush.com/__static__/webpack/data_layer_proxy.a7aed3cd4257465b.js:1
+[    2268ms] [WARNING] dataLayerProxy:  prop [[getByName]] is not supported @ https://www.semrush.com/__static__/webpack/data_layer_proxy.a7aed3cd4257465b.js:1
+[    2269ms] [WARNING] dataLayerProxy:  method call is not supported @ https://www.semrush.com/__static__/webpack/data_layer_proxy.a7aed3cd4257465b.js:1
+[    2269ms] [WARNING] dataLayerProxy:  prop [[getByName]] is not supported @ https://www.semrush.com/__static__/webpack/data_layer_proxy.a7aed3cd4257465b.js:1
+[    2269ms] [WARNING] dataLayerProxy:  method call is not supported @ https://www.semrush.com/__static__/webpack/data_layer_proxy.a7aed3cd4257465b.js:1
+[    2275ms] [WARNING] dataLayerProxy:  prop [[getByName]] is not supported @ https://www.semrush.com/__static__/webpack/data_layer_proxy.a7aed3cd4257465b.js:1
+[    2275ms] [WARNING] dataLayerProxy:  method call is not supported @ https://www.semrush.com/__static__/webpack/data_layer_proxy.a7aed3cd4257465b.js:1
+[    3394ms] [WARNING] [TikTok Pixel] - Duplicate Pixel ID
+Issue: The pixel ID is duplicate. This could impact the pixel data accuracy.
+Suggestion: Please double check and delete any unnecessary pixel code. @ https://analytics.tiktok.com/i18n/pixel/static/main.MTkwYWY0Y2Q1MQ.js:0
+[    3402ms] [WARNING] [TikTok Pixel] - Duplicate Pixel ID
+Issue: The pixel ID is duplicate. This could impact the pixel data accuracy.
+Suggestion: Please double check and delete any unnecessary pixel code. @ https://analytics.tiktok.com/i18n/pixel/static/main.MTkwYWY0Y2Q1MQ.js:0
+[    3670ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 239948206198576. @ https://connect.facebook.net/en_US/fbevents.js:183

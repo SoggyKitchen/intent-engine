@@ -1,0 +1,462 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - button "Skip to content" [ref=e4]
+    - banner "Top menu" [ref=e7]:
+      - link "Semrush homepage" [ref=e8] [cursor=pointer]:
+        - /url: /
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - button "Products" [ref=e13] [cursor=pointer]
+        - listitem [ref=e14]:
+          - link "Pricing" [ref=e15] [cursor=pointer]:
+            - /url: /pricing/
+        - listitem [ref=e16]:
+          - button "Resources" [ref=e17] [cursor=pointer]
+        - listitem [ref=e18]:
+          - link "Enterprise" [ref=e19] [cursor=pointer]:
+            - /url: https://enterprise.semrush.com/
+      - generic [ref=e21]:
+        - link "Log In" [ref=e22] [cursor=pointer]:
+          - /url: /login/?src=header
+        - link "Sign Up" [ref=e23] [cursor=pointer]:
+          - /url: /signup/?src=header
+    - generic [ref=e24]:
+      - main [ref=e25]:
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - navigation "Breadcrumbs" [ref=e30]:
+              - list [ref=e31]:
+                - listitem [ref=e32]:
+                  - link "Free Tools" [ref=e33] [cursor=pointer]:
+                    - /url: /free-tools/
+                - generic [ref=e34]: /
+                - listitem [ref=e35]:
+                  - generic [ref=e36]: Backlink Checker
+            - generic [ref=e37]:
+              - heading "Free Backlink Checker" [level=1] [ref=e38]
+              - paragraph [ref=e39]: Powered by Semrush Backlink Analytics
+              - generic [ref=e40]: Check your backlinks, find competitor backlinks, and uncover high-value opportunities you can turn into growth.
+              - generic [ref=e41]:
+                - generic [ref=e42]:
+                  - textbox "Enter a domain or URL" [ref=e45]
+                  - generic [ref=e47]:
+                    - generic [ref=e48]: "For example:"
+                    - generic [ref=e49]:
+                      - generic [ref=e51] [cursor=pointer]: google.com
+                      - generic [ref=e53] [cursor=pointer]: apple.com
+                - generic [ref=e54]:
+                  - button "Check Backlinks" [ref=e56] [cursor=pointer]:
+                    - generic [ref=e58]: Check Backlinks
+                  - generic [ref=e59]:
+                    - generic [ref=e60]: 3/3
+                    - img "You can only use this tool a limited number of times per day. The numbers show your daily limit and how many uses remain." [ref=e62]
+              - paragraph [ref=e65]:
+                - text: Does your website have a backlink problem? Try
+                - link "Backlink Analytics" [ref=e66] [cursor=pointer]:
+                  - /url: https://www.semrush.com/signup/?src=freetools&trial=force&redirect_to=%2Fanalytics%2Fbacklinks
+                - text: .
+          - generic [ref=e69]:
+            - heading "How to Check Backlinks" [level=2] [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - paragraph [ref=e73]: "1"
+                - generic [ref=e74]: Enter a domain or website URL in the field above
+              - generic [ref=e75]:
+                - paragraph [ref=e76]: "2"
+                - generic [ref=e77]: Click "Check Backlinks" to run your free backlink report
+              - generic [ref=e78]:
+                - paragraph [ref=e79]: "3"
+                - generic [ref=e80]: Review the backlinks and key metrics to understand your profile
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - img "Why Check Backlinks?" [ref=e84]
+              - generic [ref=e85]:
+                - heading "Why Check Backlinks?" [level=2] [ref=e86]
+                - generic [ref=e87]:
+                  - paragraph [ref=e88]: You should check backlinks because they affect how much search engines and AI search platforms trust your site and whether your pages appear in search results.
+                  - paragraph [ref=e89]: By checking your website's backlinks, you see whether your key pages have earned links from other sites.
+                  - paragraph [ref=e90]: Backlinks often explain why some pages have high visibility in Google and AI search results while others don't.
+                  - paragraph [ref=e91]: By checking competitor backlinks, you can compare their backlinks with yours and see whether they have more links from strong, relevant sites.
+                  - paragraph [ref=e92]: Comparing backlinks helps you understand if your competitor gets more visibility because of a stronger link profile and how big that gap is.
+            - generic [ref=e93]:
+              - img "What’s in Your Free Backlink Analysis?" [ref=e94]
+              - generic [ref=e95]:
+                - heading "What’s in Your Free Backlink Analysis?" [level=2] [ref=e96]
+                - generic [ref=e97]:
+                  - text: "Your free backlink analysis includes a list of the website's top backlinks, as well as these key metrics:"
+                  - list [ref=e98]:
+                    - listitem [ref=e99]: "Authority Score: Semrush's proprietary measure of a domain's SEO strength based on the quality and quantity of its backlinks."
+                    - listitem [ref=e100]: "Total backlinks: The total number of backlinks pointing to the analyzed domain."
+                    - listitem [ref=e101]: "Referring domains: The total number of unique websites linking to the analyzed domain."
+                    - listitem [ref=e102]: "Dofollow backlinks %: The percentage of the domain's backlinks that are dofollow."
+                    - listitem [ref=e103]: "Source page details: Each linking page's title, URL, anchor text, and Authority Score."
+                    - listitem [ref=e104]: "Link attribute tags: Tags specifying if backlinks are dofollow or nofollow."
+                    - listitem [ref=e105]: "Link status tags: Tags indicating whether backlinks are newly discovered or recently lost."
+                  - text: This data from our Backlink Analytics database helps you analyze any site's backlink strength, identify competitor link sources, and discover opportunities to improve your own backlink profile.
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - paragraph [ref=e110]: You need more than a free backlink check.
+              - link "Try Backlink Analytics" [ref=e111] [cursor=pointer]:
+                - /url: https://www.semrush.com/signup/?src=freetools&custom=sa&trial=force&redirect_to=%2Fanalytics%2Fbacklinks%2F
+                - generic [ref=e113]: Try Backlink Analytics
+            - paragraph [ref=e114]: Go beyond a list of links and get detailed backlink data and insights for your site and competitors.
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - paragraph [ref=e117]: Explore Full Profiles
+                - paragraph [ref=e118]: See complete backlink and referring domain data for any domain
+              - generic [ref=e119]:
+                - paragraph [ref=e120]: Track Your Progress
+                - paragraph [ref=e121]: Track new and lost links over time to understand your progress
+              - generic [ref=e122]:
+                - paragraph [ref=e123]: Find Opportunities
+                - paragraph [ref=e124]: Analyze anchor text, find weak pages, and identify clear opportunities
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - heading "How to Use Backlink Data Strategically" [level=2] [ref=e128]
+              - generic [ref=e129]: "Here's how to use backlink data strategically to improve your SEO and AI search visibility:"
+              - list [ref=e130]:
+                - listitem [ref=e131]:
+                  - img [ref=e133]
+                  - generic [ref=e136]:
+                    - heading "Analyze the strength of your pages" [level=3] [ref=e137]
+                    - generic [ref=e138]: Look at the backlinks and referring domains pointing to your key pages. If important pages have very few links from other sites, that often explains why they don't rank as well as others.
+                - listitem [ref=e139]:
+                  - img [ref=e141]
+                  - generic [ref=e144]:
+                    - heading "Benchmark your site against competitors" [level=3] [ref=e145]
+                    - generic [ref=e146]: Compare your total backlinks, referring domains, and key page metrics with competing sites. This shows whether competitors have stronger backlink profiles and how big the difference is.
+                - listitem [ref=e147]:
+                  - img [ref=e149]
+                  - generic [ref=e152]:
+                    - heading "Check if your link building is working" [level=3] [ref=e153]
+                    - generic [ref=e154]: Review link statuses to see new and lost backlinks over time. If you're running campaigns or working with an agency, this helps you see whether those efforts are actually adding relevant, high quality links.
+                - listitem [ref=e155]:
+                  - img [ref=e157]
+                  - generic [ref=e160]:
+                    - heading "Find new link opportunities from competitors" [level=3] [ref=e161]
+                    - generic [ref=e162]: Check which sites link to your competitors but not to you. These sites already cover your topic, so they're practical targets for future outreach and content.
+                - listitem [ref=e163]:
+                  - img [ref=e165]
+                  - generic [ref=e168]:
+                    - heading "See what type of content earns links" [level=3] [ref=e169]
+                    - generic [ref=e170]: Examine which competitor pages attract the most backlinks. Notice the content types and topics that earn links, then create your own, better versions.
+                - listitem [ref=e171]:
+                  - img [ref=e173]
+                  - generic [ref=e176]:
+                    - heading "Recover lost backlinks" [level=3] [ref=e177]
+                    - generic [ref=e178]: Identify valuable links that have disappeared. Contact site owners to restore these connections, as this is usually easier than building new relationships from scratch.
+            - generic [ref=e179]:
+              - heading "How We Get Accurate Backlink Data" [level=2] [ref=e180]
+              - generic [ref=e181]:
+                - img [ref=e182]
+                - generic [ref=e185]:
+                  - paragraph [ref=e186]: We get accurate backlink data by crawling the web with our own web crawler, storing the backlinks we find in a large, frequently updated database, and cleaning and assessing that data before you see it.
+                  - paragraph [ref=e187]: Our crawler visits billions of pages, finds new links, and adds them to a backlink index of more than 43 trillion backlinks and 390 million referring domains.
+                  - paragraph [ref=e188]: This is the same database that powers Backlink Analytics and the rest of our SEO tools.
+                  - paragraph [ref=e189]: The database is refreshed at least hourly, so when you check backlinks, you're working with the most recent data for your site and your competitors.
+                  - paragraph [ref=e190]: To keep the data accurate, we remove duplicate links, filter out obvious noise, and calculate Authority Score using signals like backlink quality and quantity, estimated organic traffic, and signs of manipulation.
+                  - paragraph [ref=e191]: This process reduces bad, inaccurate data and keeps each site's backlink profile as reliable as possible.
+          - generic [ref=e194]:
+            - generic [ref=e195]:
+              - paragraph [ref=e196]: Your website needs more than just backlinks.
+              - link "Try Semrush One" [ref=e197] [cursor=pointer]:
+                - /url: https://www.semrush.com/lp/semrush-one/?src=freetools
+                - generic [ref=e199]: Try Semrush One
+            - paragraph [ref=e200]: Success in the AI search era requires the right topics, quality content, and clear on-page SEO.
+            - generic [ref=e201]:
+              - generic [ref=e202]:
+                - paragraph [ref=e203]: Discover Winning Topics
+                - paragraph [ref=e204]: Find the topics you want to show up for in search and AI results
+              - generic [ref=e205]:
+                - paragraph [ref=e206]: Fix Technical Issues
+                - paragraph [ref=e207]: Fix website health and on-page issues that limit your search visibility
+              - generic [ref=e208]:
+                - paragraph [ref=e209]: Track Visibility Signals
+                - paragraph [ref=e210]: Track backlinks, rankings, and AI visibility signals all in one toolkit
+          - generic [ref=e212]:
+            - generic [ref=e213]:
+              - img "Why You Should Use Our Free Backlink Tool"
+              - generic [ref=e214]:
+                - heading "Why You Should Use Our Free Backlink Tool" [level=2] [ref=e215]
+                - generic [ref=e216]:
+                  - paragraph [ref=e217]: You should use our backlink checker because it provides more backlinks and more useful metrics than other free tools, and it uses the same data that powers Semrush's Backlink Analytics.
+                  - paragraph [ref=e218]: This data helps you decide what to focus on to get more visibility in search and AI results.
+                  - paragraph [ref=e219]: You can enter any domain and immediately see real, up-to-date backlinks, referring domains, Authority Score, anchor text, and follow / nofollow status without creating an account.
+                  - list [ref=e220]:
+                    - listitem [ref=e221]: Analyze data from the industry's largest backlink database
+                    - listitem [ref=e222]: Check your website or a competitor instantly with no registration
+                    - listitem [ref=e223]: View key backlink metrics together in a simple, readable report
+                  - paragraph [ref=e224]: This makes our free backlink tool a practical way to quickly understand a website's backlinks.
+            - generic [ref=e225]:
+              - img "What Is Backlink Analytics?"
+              - generic [ref=e226]:
+                - heading "What Is Backlink Analytics?" [level=2] [ref=e227]
+                - generic [ref=e228]:
+                  - paragraph [ref=e229]: Backlink Analytics is the paid, full version of this free backlink checker. It lets you analyze the complete backlink profile of any website using the same Semrush backlink database, with more data, reports, filters, and insights.
+                  - paragraph [ref=e230]: Backlink Analytics is built for people who want to look deeper into their own site and a few key competitors, track progress over time, and report on what's working and fix what isn't.
+                  - list [ref=e231]:
+                    - listitem [ref=e232]: See full backlink and referring domain data for any domain, not just a small sample, with detailed reports on links, referring domains, anchors, and top pages.
+                    - listitem [ref=e233]: Compare several domains side by side so you can see who has more backlinks and referring domains, how their profiles differ, and how your site compares.
+                    - listitem [ref=e234]: Track new and lost backlinks over time to check whether your campaigns, PR efforts, and agency work are actually earning and keeping links.
+                    - listitem [ref=e235]: Find link opportunities by identifying websites that already link to your competitors or to similar content in your niche.
+                  - paragraph [ref=e236]: If you outgrow the free backlink tool and need more than a quick look at your backlinks, Backlink Analytics provides unlimited results, advanced filters, and exportable reports for more in-depth SEO and backlink analysis.
+          - generic [ref=e240]:
+            - heading "Frequently Asked Questions" [level=2] [ref=e241]
+            - heading "Is the Backlink Checker Free to Use?" [level=3] [ref=e243] [cursor=pointer]:
+              - generic [ref=e244]: Is the Backlink Checker Free to Use?
+              - img [ref=e246]
+            - heading "How Many Backlinks Does the Free Backlink Checker Show?" [level=3] [ref=e249] [cursor=pointer]:
+              - generic [ref=e250]: How Many Backlinks Does the Free Backlink Checker Show?
+              - img [ref=e252]
+            - heading "Can I Check Competitor Backlinks?" [level=3] [ref=e255] [cursor=pointer]:
+              - generic [ref=e256]: Can I Check Competitor Backlinks?
+              - img [ref=e258]
+            - heading "Why Do Backlink Numbers Differ From Other Tools and Google Search Console?" [level=3] [ref=e261] [cursor=pointer]:
+              - generic [ref=e262]: Why Do Backlink Numbers Differ From Other Tools and Google Search Console?
+              - img [ref=e264]
+            - heading "How Long Does It Take for New Backlinks to Appear?" [level=3] [ref=e267] [cursor=pointer]:
+              - generic [ref=e268]: How Long Does It Take for New Backlinks to Appear?
+              - img [ref=e270]
+          - generic [ref=e274]:
+            - generic [ref=e275]:
+              - paragraph [ref=e276]: Analyze all your backlinks with Backlink Analytics.
+              - link "Try Backlink Analytics" [ref=e277] [cursor=pointer]:
+                - /url: https://www.semrush.com/signup/?src=freetools&custom=sa&trial=force&redirect_to=%2Fanalytics%2Fbacklinks%2F
+                - generic [ref=e279]: Try Backlink Analytics
+            - paragraph [ref=e280]: Get complete backlink and referring domain data with advanced reports and filters.
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - paragraph [ref=e283]: Identify Key Data Slices
+                - paragraph [ref=e284]: Filter backlinks by type, country, platform, and authority in a few clicks
+              - generic [ref=e285]:
+                - paragraph [ref=e286]: Share Key Insights
+                - paragraph [ref=e287]: Export backlink data for reports, audits, and progress tracking
+              - generic [ref=e288]:
+                - paragraph [ref=e289]: Find Hidden Opportunities
+                - paragraph [ref=e290]: Spot patterns in link types and anchor text to guide your strategy
+          - generic [ref=e293]:
+            - generic [ref=e294]: Trusted by the world’s leading brands
+            - img "logos" [ref=e297]
+          - generic [ref=e299]:
+            - heading "Try Semrush's Other Free Tools" [level=2] [ref=e301]
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - generic [ref=e304]: SEO & AI SEO Tools
+                - generic [ref=e305]:
+                  - generic [ref=e306]:
+                    - link "SEO Checker" [ref=e307] [cursor=pointer]:
+                      - /url: /free-tools/seo-checker
+                    - link "Website Authority Checker" [ref=e308] [cursor=pointer]:
+                      - /url: /free-tools/website-authority-checker
+                    - link "AI Search Visibility Checker" [ref=e309] [cursor=pointer]:
+                      - /url: /free-tools/ai-search-visibility-checker
+                    - link "Keyword Tool" [ref=e310] [cursor=pointer]:
+                      - /url: /free-tools/keyword-tool
+                    - link "Keyword Checker" [ref=e311] [cursor=pointer]:
+                      - /url: /free-tools/keyword-checker
+                    - link "Keyword Rank Checker" [ref=e312] [cursor=pointer]:
+                      - /url: /free-tools/keyword-rank-checker
+                    - link "Keyword Search Volume Checker" [ref=e313] [cursor=pointer]:
+                      - /url: /free-tools/keyword-search-volume-checker
+                  - generic [ref=e314]:
+                    - link "Backlink Checker" [ref=e315] [cursor=pointer]:
+                      - /url: /free-tools/backlink-checker
+                    - link "Website Traffic Checker" [ref=e316] [cursor=pointer]:
+                      - /url: https://www.semrush.com/website
+                    - link "Google SERP Simulator" [ref=e317] [cursor=pointer]:
+                      - /url: /free-tools/serp-simulator
+                    - link "SERP Checker" [ref=e318] [cursor=pointer]:
+                      - /url: /free-tools/serp-checker
+                    - link "Plagiarism Checker" [ref=e319] [cursor=pointer]:
+                      - /url: /free-tools/plagiarism-checker
+                    - link "Sitemap Generator" [ref=e320] [cursor=pointer]:
+                      - /url: /free-tools/sitemap-generator
+                    - link "Competitor Finder" [ref=e321] [cursor=pointer]:
+                      - /url: /free-tools/competitor-finder
+              - generic [ref=e322]:
+                - generic [ref=e323]: AI Writing Tools
+                - generic [ref=e324]:
+                  - link "AI Text Generator" [ref=e325] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/ai-text-generator
+                  - link "Paragraph Rewriter" [ref=e326] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/paragraph-rewriter
+                  - link "AI Title Generator" [ref=e327] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/title-generator
+                  - link "Paraphrasing Tool" [ref=e328] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/paraphrasing-tool
+                  - link "Sentence Rewriter" [ref=e329] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/sentence-rewriter
+                  - link "Word Counter Tool" [ref=e330] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/word-counter
+                  - link "Summary Generator" [ref=e331] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/summary-generator
+              - generic [ref=e332]:
+                - generic [ref=e333]: Local SEO Tools
+                - generic [ref=e334]:
+                  - link "Google Business Profile Description Generator" [ref=e335] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/business-description-generator
+                  - link "Google Review Link Generator" [ref=e336] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/google-review-link-generator
+                  - link "Google Review Template and QR Code Generator" [ref=e337] [cursor=pointer]:
+                    - /url: https://www.semrush.com/free-tools/google-review-qr-code-generator
+        - iframe [ref=e340]:
+          - generic [ref=f3e4]:
+            - text: protected by
+            - strong [ref=f3e5]: reCAPTCHA
+      - generic [ref=e341]:
+        - contentinfo [ref=e342]:
+          - generic [ref=e343]:
+            - generic [ref=e344]:
+              - heading "Get started with Semrush today" [level=2] [ref=e345]
+              - paragraph [ref=e346]: Try Semrush free for seven days. Cancel anytime.
+              - link "Start free trial" [ref=e347] [cursor=pointer]:
+                - /url: /signup/?src=footer
+            - generic [ref=e348]:
+              - generic [ref=e349]:
+                - paragraph [ref=e350]: Semrush
+                - list [ref=e351]:
+                  - listitem [ref=e352]:
+                    - link "Semrush One" [ref=e353] [cursor=pointer]:
+                      - /url: /one/
+                  - listitem [ref=e354]:
+                    - link "Features" [ref=e355] [cursor=pointer]:
+                      - /url: /features/
+                  - listitem [ref=e356]:
+                    - link "Pricing" [ref=e357] [cursor=pointer]:
+                      - /url: /pricing/
+                  - listitem [ref=e358]:
+                    - link "Free Trial" [ref=e359] [cursor=pointer]:
+                      - /url: /semrush-free-trial/
+                  - listitem [ref=e360]:
+                    - link "Compare Semrush" [ref=e361] [cursor=pointer]:
+                      - /url: /vs/
+                  - listitem [ref=e362]:
+                    - link "Success Stories" [ref=e363] [cursor=pointer]:
+                      - /url: /company/stories/
+                  - listitem [ref=e364]:
+                    - link "Stats and Facts" [ref=e365] [cursor=pointer]:
+                      - /url: /stats/
+                  - listitem [ref=e366]:
+                    - link "Affiliate Program" [ref=e367] [cursor=pointer]:
+                      - /url: /lp/affiliate-program/en/?utm_source=semrush&utm_medium=footer
+              - generic [ref=e368]:
+                - paragraph [ref=e369]: More tools
+                - list [ref=e370]:
+                  - listitem [ref=e371]:
+                    - link "Enterprise SEO" [ref=e372] [cursor=pointer]:
+                      - /url: https://enterprise.semrush.com/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e373]:
+                    - link "Enterprise AIO" [ref=e374] [cursor=pointer]:
+                      - /url: /lp/enterprise-aio/en/
+                  - listitem [ref=e375]:
+                    - link "Enterprise SI" [ref=e376] [cursor=pointer]:
+                      - /url: /lp/site-intelligence/en/
+                  - listitem [ref=e377]:
+                    - link "Insights24" [ref=e378] [cursor=pointer]:
+                      - /url: /lp/insights/en/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e379]:
+                    - link "Mfour" [ref=e380] [cursor=pointer]:
+                      - /url: /lp/mfour/en/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e381]:
+                    - link "App Center" [ref=e382] [cursor=pointer]:
+                      - /url: /apps/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e383]:
+                    - link "Top Websites" [ref=e384] [cursor=pointer]:
+                      - /url: /website/top/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e385]:
+                    - link "Free Tools" [ref=e386] [cursor=pointer]:
+                      - /url: /free-tools/?utm_source=semrush&utm_medium=footer
+                  - listitem [ref=e387]:
+                    - link "Sensor" [ref=e388] [cursor=pointer]:
+                      - /url: /sensor/?utm_source=semrush&utm_medium=footer
+              - generic [ref=e389]:
+                - paragraph [ref=e390]: Company
+                - list [ref=e391]:
+                  - listitem [ref=e392]:
+                    - link "About Us" [ref=e393] [cursor=pointer]:
+                      - /url: /company/
+                  - listitem [ref=e394]:
+                    - link "News" [ref=e395] [cursor=pointer]:
+                      - /url: /news/
+                  - listitem [ref=e396]:
+                    - link "Careers" [ref=e397] [cursor=pointer]:
+                      - /url: https://careers.semrush.com/
+                  - listitem [ref=e398]:
+                    - link "Partners" [ref=e399] [cursor=pointer]:
+                      - /url: /company/partners/
+                  - listitem [ref=e400]:
+                    - link "Semrush Select" [ref=e401] [cursor=pointer]:
+                      - /url: /company/semrush-select/
+                  - listitem [ref=e402]:
+                    - link "Global Issues Index" [ref=e403] [cursor=pointer]:
+                      - /url: /company/global-issues/
+                  - listitem [ref=e404]:
+                    - link "Do not sell my personal info" [ref=e405] [cursor=pointer]:
+                      - /url: javascript:window.showDontSellMyDataSettings();
+                  - listitem [ref=e406]:
+                    - link "Contact Us" [ref=e407] [cursor=pointer]:
+                      - /url: /company/contacts/
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - paragraph [ref=e410]: Support
+                  - list [ref=e411]:
+                    - listitem [ref=e412]:
+                      - link "Knowledge Base" [ref=e413] [cursor=pointer]:
+                        - /url: /kb/
+                    - listitem [ref=e414]:
+                      - link "Academy" [ref=e415] [cursor=pointer]:
+                        - /url: /academy/
+                    - listitem [ref=e416]:
+                      - link "Semrush API" [ref=e417] [cursor=pointer]:
+                        - /url: /api-documentation/
+                - generic [ref=e418]:
+                  - paragraph [ref=e419]: Community
+                  - list [ref=e420]:
+                    - listitem [ref=e421]:
+                      - link "Semrush Blog" [ref=e422] [cursor=pointer]:
+                        - /url: /blog/
+                    - listitem [ref=e423]:
+                      - link "Webinars" [ref=e424] [cursor=pointer]:
+                        - /url: /academy/webinars/
+                    - listitem [ref=e425]:
+                      - link "Ambassador Program" [ref=e426] [cursor=pointer]:
+                        - /url: /lp/semrush-circle/en/?utm_source=semrush&utm_medium=footer
+            - generic [ref=e427]:
+              - list [ref=e428]:
+                - listitem [ref=e429]:
+                  - link "Semrush linkedin" [ref=e430] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/semrush
+                - listitem [ref=e431]:
+                  - link "Semrush instagram" [ref=e432] [cursor=pointer]:
+                    - /url: https://instagram.com/semrush/
+                - listitem [ref=e433]:
+                  - link "Semrush tiktok" [ref=e434] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@semrush
+                - listitem [ref=e435]:
+                  - link "Semrush youtube" [ref=e436] [cursor=pointer]:
+                    - /url: https://www.youtube.com/user/SemrushHQ
+                - listitem [ref=e437]:
+                  - link "Semrush facebook" [ref=e438] [cursor=pointer]:
+                    - /url: https://www.facebook.com/Semrush
+                - listitem [ref=e439]:
+                  - link "Semrush twitter" [ref=e440] [cursor=pointer]:
+                    - /url: https://x.com/semrush
+              - paragraph [ref=e441]:
+                - link "Adobe" [ref=e442] [cursor=pointer]:
+                  - /url: https://business.adobe.com/
+                - generic [ref=e443]: © 2026 Semrush Holdings. All rights reserved.
+            - list [ref=e445]:
+              - listitem [ref=e446]:
+                - link "Privacy Policy" [ref=e447] [cursor=pointer]:
+                  - /url: /company/legal/privacy-policy/
+              - listitem [ref=e448]:
+                - link "Terms of Service" [ref=e449] [cursor=pointer]:
+                  - /url: /company/legal/
+              - listitem [ref=e450]:
+                - link "Cookies Settings" [ref=e451] [cursor=pointer]:
+                  - /url: javascript:window.showConsentSettings();
+            - button "English" [ref=e453] [cursor=pointer]
+        - img [ref=e455]
+  - region "Notifications"
+  - alert [ref=e457]
+  - status

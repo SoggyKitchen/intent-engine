@@ -30,6 +30,7 @@ class RSSAdapter(BaseAdapter):
     name = "rss"
 
     def fetch(self, since_ts: int) -> Iterator[RawSignal]:
+        failed_feeds = []
         for feed_url, source_name in FEEDS:
             try:
                 d = feedparser.parse(feed_url)
@@ -55,4 +56,6 @@ class RSSAdapter(BaseAdapter):
                     )
             except Exception as e:
                 log.warning(f"RSS adapter error on {source_name}: {e}")
-                continue
+                failed_feeds.append((source_name, str(e)))
+        if failed_feeds:
+            raise RuntimeError(f"RSS adapter failed on feeds: {failed_feeds}")

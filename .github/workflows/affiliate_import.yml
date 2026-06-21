@@ -72,7 +72,18 @@ jobs:
           CF_PAGES_DEPLOY_HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
           CF_PAGES_REPO: ${{ secrets.CF_PAGES_REPO }}
           GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          CEREBRAS_API_KEYS: ${{ secrets.CEREBRAS_API_KEYS }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          CEREBRAS_API_KEY_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
+          CEREBRAS_API_KEY_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
+          CEREBRAS_API_KEY_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
+          CEREBRAS_API_KEY_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
+          CEREBRAS_API_KEY_6: ${{ secrets.CEREBRAS_API_KEY_6 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          BLOCK_ON_PROG: "false"
           LOG_LEVEL: INFO
+          NODE_OPTIONS: --max-old-space-size=2400
 
       - name: Validate affiliate redirects
         run: uv run python scripts/validate_affiliate_urls.py

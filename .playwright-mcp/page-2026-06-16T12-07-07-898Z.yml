@@ -1,0 +1,17 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Ahrefs" [ref=e3] [cursor=pointer]:
+      - /url: /dashboard
+  - generic [ref=e4]:
+    - img "404 error" [ref=e6]
+    - generic [ref=e7]:
+      - heading "Page not found" [level=1] [ref=e8]
+      - paragraph [ref=e9]: Sorry, we couldn’t find that page. How about returning to your Dashboard?
+    - link "Go to Dashboard" [ref=e10] [cursor=pointer]:
+      - /url: /
+  - iframe [ref=e11]:
+    
+  - button "Open Intercom Messenger" [ref=e12] [cursor=pointer]:
+    - img [ref=e14]
+    - generic:
+      - img

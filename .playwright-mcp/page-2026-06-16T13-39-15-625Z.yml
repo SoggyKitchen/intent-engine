@@ -1,0 +1,67 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Featured" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - img "Featured" [ref=e10]
+          - button "Close Sidebar" [expanded] [ref=e11]:
+            - img
+            - generic [ref=e12]: Close Sidebar
+      - list [ref=e16]:
+        - listitem [ref=e17]:
+          - button "New chat" [ref=e18]:
+            - img [ref=e19]
+            - generic [ref=e20]: New chat
+      - generic [ref=e22]:
+        - link "See plans and pricing" [ref=e23] [cursor=pointer]:
+          - /url: /pricing
+          - img [ref=e25]
+          - generic [ref=e28]: See plans and pricing
+        - button "Help" [ref=e29]:
+          - img [ref=e31]
+          - generic [ref=e38]: Help
+          - img [ref=e39]
+        - generic [ref=e42]:
+          - paragraph [ref=e43]: Discover every media opportunity, in one place
+          - paragraph [ref=e44]: Log in to search, save, and respond to journalist requests, podcast invites, speaking gigs, and more.
+        - link "Log in" [ref=e45] [cursor=pointer]:
+          - /url: /signup?tab=signin
+    - main [ref=e46]:
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - link "Log in" [ref=e58] [cursor=pointer]:
+            - /url: /signup?tab=signin
+          - link "Sign up" [ref=e59] [cursor=pointer]:
+            - /url: /signup
+        - generic [ref=e61]:
+          - img [ref=e63]
+          - generic [ref=e66]:
+            - heading "Your co-pilot for PR" [level=1] [ref=e67]
+            - paragraph [ref=e68]: Find opportunities, submit pitches, get featured.
+          - group [ref=e72]:
+            - textbox "Chat message input" [disabled] [ref=e74]:
+              - /placeholder: Describe what you're looking for…
+            - group [ref=e75]:
+              - generic [ref=e76]:
+                - button "Submit" [disabled]:
+                  - img
+          - generic [ref=e78]:
+            - button "Find podcasts in fashion sustainability" [ref=e79]:
+              - img [ref=e81]
+              - generic [ref=e84]: Find podcasts in fashion sustainability
+            - button "Find media opportunities for a mental health therapist" [ref=e85]:
+              - img [ref=e87]
+              - generic [ref=e90]: Find media opportunities for a mental health therapist
+            - button "Find journalist requests focused on finance" [ref=e91]:
+              - img [ref=e93]
+              - generic [ref=e96]: Find journalist requests focused on finance
+            - button "Find writers covering AI and machine learning" [ref=e97]:
+              - img [ref=e99]
+              - generic [ref=e102]: Find writers covering AI and machine learning
+            - button "Find publications accepting bylined articles about SaaS" [ref=e103]:
+              - img [ref=e105]
+              - generic [ref=e108]: Find publications accepting bylined articles about SaaS
+  - region "Notifications alt+T"
+  - alert [ref=e109]

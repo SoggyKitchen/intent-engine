@@ -1,0 +1,244 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation "Public site" [ref=e4]:
+        - link "Featured home" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "Featured" [ref=e6]
+        - generic [ref=e7]:
+          - link "Pricing" [ref=e8] [cursor=pointer]:
+            - /url: /pricing
+          - link "Sign in" [ref=e9] [cursor=pointer]:
+            - /url: /sign-in
+    - main [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]:
+            - heading "Plans & Pricing" [level=1] [ref=e14]
+            - paragraph [ref=e15]: All plans include every feature. Upgrade when you need more daily credits.
+          - tablist "Who pricing applies to" [ref=e16]:
+            - generic [ref=e17]:
+              - tab "Individual" [selected] [ref=e18]
+              - tab "Team & Enterprise" [ref=e19]
+          - group "Billing period" [ref=e21]:
+            - generic [ref=e22]:
+              - button "Monthly" [ref=e23]
+              - switch "Switch to monthly billing" [checked] [ref=e24]
+              - button "Annual" [ref=e25]
+              - generic [ref=e26]: Saving 20%
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - generic [ref=e31]: Free
+                - paragraph [ref=e32]: Try Featured with no commitment.
+                - generic [ref=e34]:
+                  - generic [ref=e35]: $0
+                  - generic [ref=e36]: Free forever
+              - generic [ref=e37]:
+                - link "Get started" [ref=e38] [cursor=pointer]:
+                  - /url: /signup
+                - generic [ref=e39]:
+                  - paragraph [ref=e40]: Example usage
+                  - paragraph [ref=e41]: Chat with Featured to explore 2–3 media opportunities per week and see how AI-powered PR works.
+                - list [ref=e43]:
+                  - listitem [ref=e44]:
+                    - img [ref=e46]
+                    - generic [ref=e48]: Featured Chat for discovering media opportunities
+                  - listitem [ref=e49]:
+                    - img [ref=e51]
+                    - generic [ref=e53]: Daily pitching tools to reach journalists
+                  - listitem [ref=e54]:
+                    - img [ref=e56]
+                    - generic [ref=e58]: Journalist request matching
+                  - listitem [ref=e59]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Core workflows to speed up outreach
+                  - listitem [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: A gentle daily allowance to learn the platform
+            - generic [ref=e69]:
+              - generic [ref=e70]: Most popular
+              - generic [ref=e71]:
+                - generic [ref=e72]: Lite
+                - paragraph [ref=e73]: For solo practitioners running focused PR.
+                - generic [ref=e75]:
+                  - generic [ref=e76]: $29
+                  - generic [ref=e77]: Per month, billed annually at $348
+              - generic [ref=e78]:
+                - button "Get Lite" [disabled]
+                - generic [ref=e79]:
+                  - paragraph [ref=e80]: Example usage
+                  - paragraph [ref=e81]: Monitor HARO and similar feeds, draft pitches in Featured Chat, and ship a steady weekly cadence without burning out.
+                - list [ref=e83]:
+                  - listitem [ref=e84]:
+                    - img [ref=e86]
+                    - generic [ref=e88]: 5× more AI usage than Free
+                  - listitem [ref=e89]: "Everything in Free, plus:"
+                  - listitem [ref=e90]:
+                    - img [ref=e92]
+                    - generic [ref=e94]: Workflows across your saved opportunities
+                  - listitem [ref=e95]:
+                    - img [ref=e97]
+                    - generic [ref=e99]: Deeper AI chat for drafting and research
+                  - listitem [ref=e100]:
+                    - img [ref=e102]
+                    - generic [ref=e104]: Higher limits for active weekly pitching
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: Pro
+                - paragraph [ref=e108]: For power users running a full PR operation.
+                - generic [ref=e110]:
+                  - generic [ref=e111]: $79
+                  - generic [ref=e112]: Per month, billed annually at $948
+                - group "Pro allowance tier" [ref=e113]:
+                  - link "Pro · 5×" [ref=e114] [cursor=pointer]:
+                    - /url: /pricing
+                  - link "Pro+ · 20×" [ref=e115] [cursor=pointer]:
+                    - /url: /pricing?pro=20
+              - generic [ref=e116]:
+                - button "Get Pro" [disabled]
+                - generic [ref=e117]:
+                  - paragraph [ref=e118]: Example usage
+                  - paragraph [ref=e119]: Automate workflows across profiles, coordinate outreach, and lean on AI for research and drafting at serious volume.
+                - list [ref=e121]:
+                  - listitem [ref=e122]:
+                    - img [ref=e124]
+                    - generic [ref=e126]: 5× more usage than Lite
+                  - listitem [ref=e127]: "Everything in Lite, plus:"
+                  - listitem [ref=e128]:
+                    - img [ref=e130]
+                    - generic [ref=e132]: Maximum daily allowance for credit-based actions
+                  - listitem [ref=e133]:
+                    - img [ref=e135]
+                    - generic [ref=e137]: Built for teams that live in the product
+          - region "Every plan includes" [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]:
+                - heading "Every plan includes" [level=3] [ref=e141]
+                - paragraph [ref=e142]: Same features. Same opportunities. Only usage scales.
+              - list [ref=e143]:
+                - listitem [ref=e144]:
+                  - img [ref=e146]
+                  - generic [ref=e148]:
+                    - generic [ref=e149]: Featured Chat
+                    - paragraph [ref=e150]: AI-powered PR assistant for research, pitching, and strategy
+                - listitem [ref=e151]:
+                  - img [ref=e153]
+                  - generic [ref=e155]:
+                    - generic [ref=e156]: Workflows
+                    - paragraph [ref=e157]: Automated monitoring, drafting, and delivery on your schedule
+                - listitem [ref=e158]:
+                  - img [ref=e160]
+                  - generic [ref=e163]:
+                    - generic [ref=e164]: Journalist Requests
+                    - paragraph [ref=e165]: Respond to journalist queries from HARO, LinkedIn, and more
+                - listitem [ref=e166]:
+                  - img [ref=e168]
+                  - generic [ref=e171]:
+                    - generic [ref=e172]: Find Podcasts
+                    - paragraph [ref=e173]: Discover and pitch podcast guest opportunities
+                - listitem [ref=e174]:
+                  - img [ref=e176]
+                  - generic [ref=e179]:
+                    - generic [ref=e180]: Find Journalists
+                    - paragraph [ref=e181]: Build pipelines of journalists who cover your beat
+                - listitem [ref=e182]:
+                  - img [ref=e184]
+                  - generic [ref=e189]:
+                    - generic [ref=e190]: Bylined Articles
+                    - paragraph [ref=e191]: Find and land bylined article placements
+                - listitem [ref=e192]:
+                  - img [ref=e194]
+                  - generic [ref=e196]:
+                    - generic [ref=e197]: GEO Visibility
+                    - paragraph [ref=e198]: Track and improve your AI search engine citations
+                - listitem [ref=e199]:
+                  - img [ref=e201]
+                  - generic [ref=e203]:
+                    - generic [ref=e204]: Multi-channel Delivery
+                    - paragraph [ref=e205]: Get results via Slack, email, text, or in-app
+                - listitem [ref=e206]:
+                  - img [ref=e208]
+                  - generic [ref=e212]:
+                    - generic [ref=e213]: Speaking Opportunities
+                    - paragraph [ref=e214]: Find conferences, panels, and events seeking speakers
+                - listitem [ref=e215]:
+                  - img [ref=e217]
+                  - generic [ref=e223]:
+                    - generic [ref=e224]: Awards & Submissions
+                    - paragraph [ref=e225]: Discover and apply to industry awards and recognition programs
+                - listitem [ref=e226]:
+                  - img [ref=e228]
+                  - generic [ref=e233]:
+                    - generic [ref=e234]: Media Monitoring
+                    - paragraph [ref=e235]: Know the moment you're quoted, featured, or linked anywhere.
+                - listitem [ref=e236]:
+                  - img [ref=e238]
+                  - generic [ref=e243]:
+                    - generic [ref=e244]: Competitor Visibility Watch
+                    - paragraph [ref=e245]: Track where competitors are getting coverage and find your angle.
+              - paragraph [ref=e246]: Usage limits apply. Prices shown don't include applicable tax.
+        - region "Frequently asked questions" [ref=e247]:
+          - heading "Frequently asked questions" [level=2] [ref=e248]
+          - generic [ref=e249]:
+            - group [ref=e250]:
+              - generic "What counts as AI usage?" [ref=e251] [cursor=pointer]:
+                - generic [ref=e252]: What counts as AI usage?
+                - generic [ref=e254]: +
+            - group [ref=e255]:
+              - generic "How much usage do I need?" [ref=e256] [cursor=pointer]:
+                - generic [ref=e257]: How much usage do I need?
+                - generic [ref=e259]: +
+            - group [ref=e260]:
+              - generic "Do all plans include the same features?" [ref=e261] [cursor=pointer]:
+                - generic [ref=e262]: Do all plans include the same features?
+                - generic [ref=e264]: +
+            - group [ref=e265]:
+              - generic "What happens when I hit my daily limit?" [ref=e266] [cursor=pointer]:
+                - generic [ref=e267]: What happens when I hit my daily limit?
+                - generic [ref=e269]: +
+            - group [ref=e270]:
+              - generic "Can I switch plans anytime?" [ref=e271] [cursor=pointer]:
+                - generic [ref=e272]: Can I switch plans anytime?
+                - generic [ref=e274]: +
+        - region "Start using Featured today" [ref=e275]:
+          - heading "Start using Featured today" [level=2] [ref=e276]
+          - paragraph [ref=e277]: Free to start. No credit card required.
+          - link "Try Featured free" [ref=e278] [cursor=pointer]:
+            - /url: /signup
+    - contentinfo [ref=e279]:
+      - generic [ref=e280]:
+        - generic [ref=e281]:
+          - generic [ref=e282]:
+            - link "Featured home" [ref=e283] [cursor=pointer]:
+              - /url: /
+              - img "Featured" [ref=e284]
+            - generic [ref=e285]: 7014 E Camelback Road, Suite B100A, Scottsdale, AZ 85251
+            - link "support@featured.com" [ref=e286] [cursor=pointer]:
+              - /url: mailto:support@featured.com
+          - navigation "Public footer" [ref=e287]:
+            - link "Pricing" [ref=e288] [cursor=pointer]:
+              - /url: /pricing
+            - link "Privacy Policy" [ref=e289] [cursor=pointer]:
+              - /url: /privacy
+            - link "Terms of Service" [ref=e290] [cursor=pointer]:
+              - /url: /terms
+            - link "Acceptable Use Policy" [ref=e291] [cursor=pointer]:
+              - /url: /acceptable-use
+        - generic [ref=e292]:
+          - generic [ref=e293]:
+            - link "Featured on LinkedIn" [ref=e294] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/featureddotcom
+              - img [ref=e295]
+            - link "Featured on X" [ref=e297] [cursor=pointer]:
+              - /url: https://x.com/Featureddotcom
+              - img [ref=e299]
+            - link "Featured on Facebook" [ref=e301] [cursor=pointer]:
+              - /url: https://www.facebook.com/featured
+              - img [ref=e303]
+            - link "Featured on Instagram" [ref=e305] [cursor=pointer]:
+              - /url: https://www.instagram.com/featureddotcom
+              - img [ref=e307]
+          - paragraph [ref=e309]: © 2026 Featured. All rights reserved.
+  - region "Notifications alt+T"
+  - alert [ref=e310]

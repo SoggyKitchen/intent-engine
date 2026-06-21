@@ -121,12 +121,9 @@ def pack(vertical: str):
 @cli.command()
 def social():
     """Post comparison pages to Twitter/X, LinkedIn, and Reddit."""
-    from ops.social_post import build_social_pack, run_linkedin, run_reddit_answers, run_twitter
+    from ops.social_post import run_social
 
-    build_social_pack()
-    run_twitter()
-    run_linkedin()
-    run_reddit_answers()
+    run_social()
     click.echo("OK  Social posting done")
 
 
@@ -390,7 +387,8 @@ def health():
     score_pts += 2 if lf == 0 else 0
     score_pts += 1 if total_quota_limit == 0 or total_quota_used < total_quota_limit * 0.85 else 0
     score_pts += 2 if pages_total >= 10 else (1 if pages_total > 0 else 0)
-    grade = {10: "A", 9: "A", 8: "B", 7: "B", 6: "C", 5: "C"}.get(score_pts, "D" if score_pts >= 3 else "F")
+    score_pts += 1 if profit["cta_coverage_pct"] >= 95 else 0
+    grade = {11: "A", 10: "A", 9: "B", 8: "B", 7: "C", 6: "C"}.get(score_pts, "D" if score_pts >= 4 else "F")
     grade_color = {"A": "green", "B": "cyan", "C": "yellow", "D": "orange1", "F": "red"}[grade]
     console.print(Align.center(f"[bold {grade_color}] HEALTH SCORE: {grade} ({score_pts}/10) [/]"))
     console.print()

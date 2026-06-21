@@ -191,6 +191,10 @@ def main():
     print(f"Full report: {REPORT_FILE}")
     if counts[DEAD]:
         sys.exit(1)
+    block_on_prog = get("BLOCK_ON_PROG", "false").lower() not in {"0", "false", "no"}
+    if block_on_prog and counts[PROG]:
+        print(f"\nBLOCK_ON_PROG=true: blocking on {counts[PROG]} program page redirects")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

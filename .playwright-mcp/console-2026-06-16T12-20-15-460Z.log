@@ -1,0 +1,2 @@
+[     612ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app.ahrefs.com/user/login:0
+[     875ms] [ERROR] Failed to load resource: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH @ https://analytics-staging.ahrefs.dev/api/event:0

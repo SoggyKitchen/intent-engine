@@ -1,0 +1,2 @@
+[    1535ms] [WARNING] Common data field is missing: newUsersCount @ https://ahrefs.com/assets/esbuild/chunk-MO5GD2W7-release-20260616-bk16524-0315951e33c7b.js:81
+[    3419ms] [ERROR] Failed to load resource: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH @ https://analytics-staging.ahrefs.dev/api/event:0

@@ -1,0 +1,49 @@
+- generic [ref=e5]:
+  - link [ref=e7] [cursor=pointer]:
+    - /url: //ahrefs.com/
+    - img [ref=e9]
+  - generic [ref=e13]:
+    - generic [ref=e19]:
+      - heading "Sign in to Ahrefs" [level=1] [ref=e20]
+      - generic [ref=e25]:
+        - text: Don’t have an account?
+        - link "Sign up" [ref=e26] [cursor=pointer]:
+          - /url: //ahrefs.com/pricing
+        - text: .
+    - generic [ref=e31]:
+      - generic:
+        - img
+      - generic [ref=e34] [cursor=pointer]: "?"
+    - contentinfo [ref=e35]:
+      - generic [ref=e37]:
+        - link "About" [ref=e39] [cursor=pointer]:
+          - /url: //ahrefs.com/about
+        - link "Team" [ref=e41] [cursor=pointer]:
+          - /url: //ahrefs.com/team
+        - link "Our data" [ref=e43] [cursor=pointer]:
+          - /url: //ahrefs.com/big-data
+        - link "Blog" [ref=e45] [cursor=pointer]:
+          - /url: https://ahrefs.com/blog
+        - link "Robot" [ref=e47] [cursor=pointer]:
+          - /url: //ahrefs.com/robot
+        - link "Jobs" [ref=e49] [cursor=pointer]:
+          - /url: //ahrefs.com/jobs
+        - link "Plans & pricing" [ref=e51] [cursor=pointer]:
+          - /url: //ahrefs.com/pricing
+        - link "API" [ref=e53] [cursor=pointer]:
+          - /url: https://docs.ahrefs.com/api
+        - link "Help" [ref=e55] [cursor=pointer]:
+          - /url: https://help.ahrefs.com
+        - link "Contact us" [ref=e57] [cursor=pointer]:
+          - /url: mailto:support@ahrefs.com
+        - button "English" [ref=e62] [cursor=pointer]:
+          - generic [ref=e63]:
+            - generic [ref=e66]:
+              - img [ref=e67]
+              - generic [ref=e69]: English
+            - img [ref=e70]
+      - generic [ref=e74]:
+        - generic [ref=e75]: "© 2026 Ahrefs Pte. Ltd. (201227417H) 16 Raffles Quay, #33-03 Hong Leong Building, Singapore 048581"
+        - link "Legal info" [ref=e76] [cursor=pointer]:
+          - /url: //ahrefs.com/legal
+          - generic [ref=e77]: Legal info
