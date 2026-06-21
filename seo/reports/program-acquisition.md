@@ -13,10 +13,10 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 - **FreshBooks** [PENDING, Awin] — 23 pages, 0 impressions, $200/conv
 - **ClickUp** [LOCKED, PartnerStack] — 22 pages, 0 impressions, $90/conv
 - **ActiveCampaign** [LOCKED, PartnerStack] — 20 pages, 0 impressions, $85/conv
-- **Monday.com** [LOCKED, PartnerStack] — 18 pages, 0 impressions, $150/conv
+- **Monday.com** [LOCKED, PartnerStack] — 20 pages, 0 impressions, $150/conv
 - **Xero** [PENDING, Direct] — 15 pages, 0 impressions, $80/conv
 - **Datadog** [PLACEHOLDER, none] — 11 pages, 0 impressions, $80/conv
-- **Notion** [PLACEHOLDER, none] — 10 pages, 0 impressions, $15/conv
+- **Notion** [PLACEHOLDER, none] — 11 pages, 0 impressions, $15/conv
 - **Deel** [PLACEHOLDER, none] — 9 pages, 0 impressions, $100/conv
 - **Zoom** [PLACEHOLDER, none] — 9 pages, 0 impressions, $12/conv
 - **Dashlane** [LOCKED, PartnerStack] — 9 pages, 0 impressions, $38/conv
