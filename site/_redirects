@@ -287,6 +287,23 @@
 # PartnerStack — APPROVED 2026-06-12 (login to PartnerStack dashboard to get real referral link, replace URL below)
 /go/partnerstack https://partnerstack.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 
+# ── GSC 404 fixes — deleted pages redirected to best successors (2026-06-22) ──
+/pages/copy-ai-coupon-2026-discount-codes-promo /pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/freshbooks-coupon-2026-discount-codes-promo /pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step 301
+/pages/getresponse-free-trial-2026-how-to-start-what-you-get /pages/getresponse-free-trial-2026-how-to-get-it-step-by-step 301
+/pages/linear-coupon-2026-discount-codes-promo /pages/linear-free-trial-2026-how-to-get-it-step-by-step 301
+/pages/moz-pro-coupon-2026-discount-codes-promo /pages/moz-pro-free-trial-2026-how-to-get-it-step-by-step 301
+/pages/pandadoc-coupon-2026-discount-codes-promo /pages/pandadoc-free-trial-2026-how-to-start-what-you-get 301
+/pages/salesforce-coupon-2026-discount-codes-promo /pages/salesforce-free-trial-2026-how-to-get-it-step-by-step 301
+/pages/shopify-discount-code-promo-codes-2026-verified-deals /pages/shopify-coupon-code-promo-codes-2026-verified-discounts 301
+/pages/best-chrome-devtools-alternatives-in-2025-side-by-side-comparison /pages 301
+/pages/best-devtools-for-b2b-engineering-teams-in-2025 /pages 301
+/pages/best-devtools-for-b2b-software-development-in-2025 /pages 301
+
+# ── Strip .html — fixes 538 GSC "alternate page with proper canonical" exclusions ──
+/pages/*.html /pages/:splat 301
+/*.html /:splat 301
+
 # Constant Contact — CJ $105/sale (GET CJ DEEP LINK: app.cj.com -> Links -> search "Constant Contact")
 /go/constant-contact https://www.constantcontact.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 /go/constant-contact-trial https://www.constantcontact.com/signup?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
