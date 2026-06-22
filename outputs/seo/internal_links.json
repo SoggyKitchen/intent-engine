@@ -1,16 +1,16 @@
 {
-  "total_pages": 1409,
-  "updated": 1407,
+  "total_pages": 1410,
+  "updated": 1408,
   "skipped": 2,
   "orphans_before": 59,
-  "orphans_after": 55,
+  "orphans_after": 61,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-vs-expressvpn-business-which-is-better-in-2026",
+        "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
-        "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay",
         "/pages/zoho-crm-vs-nutshell-which-is-better-in-2026",
         "/pages/nordlayer-vs-tresorit-which-is-better-in-2026"
       ]
@@ -19,8 +19,8 @@
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
         "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
-        "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
-        "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
+        "/pages/okta-vs-duo-security-which-is-better-in-2026",
+        "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/bamboohr-vs-remote-com-which-is-better-in-2026",
         "/pages/partnerstack-vs-tune-which-is-better-in-2026"
       ]
