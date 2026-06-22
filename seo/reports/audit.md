@@ -8,7 +8,7 @@ Pages scanned: 1458
 
 ## Warning Counts
 - images_missing_alt: 2
-- meta_length_outside_target: 23
+- meta_length_outside_target: 21
 - missing_correction_cta: 296
 - missing_last_verified: 1
 - missing_methodology: 209

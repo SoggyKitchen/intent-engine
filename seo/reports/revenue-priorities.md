@@ -85,7 +85,6 @@
 - `/best-vpn-for-business-2026` (pricing, score 89.0): CTA=True, affiliateLinks=5, disclosure=True
 - `/pages/does-getresponse-have-a-free-plan-2026-full-breakdown` (free_trial, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/grandfathered-saas-pricing-2026` (pricing, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.78): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.81): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-elevenlabs-have-a-free-plan-2026-full-breakdown` (free_trial, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
@@ -100,3 +99,4 @@
 - `/pages/linear-review-2026-is-it-worth-it-honest-verdict` (pricing, score 92.19): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/clearscope-review-2026-is-it-worth-it-honest-verdict` (pricing, score 92.2): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/contabo-review-2026-is-it-worth-it-honest-verdict` (pricing, score 92.2): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/kajabi-review-2026-is-it-worth-it-honest-verdict` (pricing, score 92.2): CTA=True, affiliateLinks=1, disclosure=True

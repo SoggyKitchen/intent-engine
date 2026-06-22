@@ -15857,7 +15857,6 @@
       "https://saaspare.org/pages/does-ubersuggest-have-a-free-plan-2026-full-breakdown",
       "https://saaspare.org/pages/does-zoom-have-a-free-plan-2026-full-breakdown",
       "https://saaspare.org/pages/duo-security-vs-tresorit-which-is-better-in-2026",
-      "https://saaspare.org/pages/elementor-coupon-code-promo-codes-2026-verified-discounts",
       "https://saaspare.org/pages/elementor-free-trial-2026-how-to-get-it-step-by-step",
       "https://saaspare.org/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
       "https://saaspare.org/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
@@ -16169,8 +16168,6 @@
       "https://saaspare.org/pages/monday-com-vs-trello-which-is-better-in-2026",
       "https://saaspare.org/pages/monday-com-vs-wrike-which-is-better-in-2026",
       "https://saaspare.org/pages/monday-vs-hubspot-which-is-better-in-2026",
-      "https://saaspare.org/pages/monday-vs-jira-which-is-better-in-2026",
-      "https://saaspare.org/pages/monday-vs-trello-which-is-better-in-2026",
       "https://saaspare.org/pages/moz-pro-free-trial-2026-how-to-get-it-step-by-step",
       "https://saaspare.org/pages/moz-pro-pricing-2026-plans-costs-what-you-actually-pay",
       "https://saaspare.org/pages/moz-pro-promo-code-2026-discounts-deals-that-actually-work",
@@ -16237,7 +16234,6 @@
       "https://saaspare.org/pages/notion-vs-asana-which-is-better-in-2026",
       "https://saaspare.org/pages/notion-vs-basecamp-which-is-better-in-2026",
       "https://saaspare.org/pages/notion-vs-clickup-which-is-better-in-2026",
-      "https://saaspare.org/pages/notion-vs-confluence-which-is-better-in-2026",
       "https://saaspare.org/pages/notion-vs-jira-which-is-better-in-2026",
       "https://saaspare.org/pages/notion-vs-obsidian-which-is-better-in-2026",
       "https://saaspare.org/pages/notion-vs-smartsheet-which-is-better-in-2026",
@@ -16321,7 +16317,6 @@
       "https://saaspare.org/pages/power-bi-vs-heap-which-is-better-in-2026",
       "https://saaspare.org/pages/power-bi-vs-hotjar-which-is-better-in-2026",
       "https://saaspare.org/pages/power-bi-vs-segment-which-is-better-in-2026",
-      "https://saaspare.org/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay",
       "https://saaspare.org/pages/protonvpn-coupon-code-promo-codes-2026-verified-discounts",
       "https://saaspare.org/pages/protonvpn-free-trial-2026-how-to-get-it-step-by-step",
       "https://saaspare.org/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay",
@@ -42608,8 +42603,7 @@
   },
   "/pages/elementor-coupon-code-promo-codes-2026-verified-discounts": {
     "inbound": [
-      "/pages/aweber-review-2026-is-it-worth-it-honest-verdict",
-      "/pages"
+      "/pages/aweber-review-2026-is-it-worth-it-honest-verdict"
     ],
     "outbound": [
       "/",
@@ -52559,7 +52553,6 @@
     "inbound": [
       "/pages/best-notion-alternatives-in-2026-free-paid",
       "/pages/chargebee-vs-bold-commerce-which-is-better-in-2026",
-      "/pages",
       "/pages/linear-vs-terraform-which-is-better-in-2026",
       "/pages/miro-vs-google-jamboard-which-is-better-in-2026",
       "/pages/monday-vs-trello-which-is-better-in-2026",
@@ -52597,7 +52590,6 @@
       "/pages/basecamp-vs-todoist-which-is-better-in-2026",
       "/pages/best-devtools-for-agentic-workflows-and-engineering-velocity-in-2025",
       "/pages/clickup-vs-basecamp-which-is-better-in-2026",
-      "/pages",
       "/pages/monday-com-vs-basecamp-which-is-better-in-2026",
       "/pages/monday-vs-jira-which-is-better-in-2026",
       "/pages/notion-vs-confluence-which-is-better-in-2026",
@@ -54825,7 +54817,6 @@
       "/pages/best-cybersecurity-tools-for-b2b-devops-teams-in-2025",
       "/pages/does-monday-com-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
-      "/pages",
       "/pages/monday-vs-jira-which-is-better-in-2026",
       "/pages/monday-vs-trello-which-is-better-in-2026",
       "/pages/qualys-vs-tresorit-which-is-better-in-2026"
@@ -57439,7 +57430,6 @@
   },
   "/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay": {
     "inbound": [
-      "/pages",
       "/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay"
     ],
     "outbound": [

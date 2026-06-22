@@ -1,6 +1,6 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-21T08:37:20+00:00
+Generated: 2026-06-22T09:51:05+00:00
 Mode: `apply-safe`
 
 ## Current Score
@@ -19,7 +19,7 @@ Mode: `apply-safe`
 - Healthy pages (85+): 1409
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 84
+- Safe fixes applied this run: 79
 - GSC: GSC API error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 

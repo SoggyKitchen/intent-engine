@@ -130,19 +130,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/best-devops-configuration-drift-detection-tools-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-devops-configuration-drift-detection-tools-in-2025",
-    "premium": false
-  },
-  {
     "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
     "fixes": [
       "canonical",
@@ -310,19 +297,6 @@
     ],
     "path": "/pages/docusign-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/elementor-coupon-code-promo-codes-2026-verified-discounts.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/elementor-coupon-code-promo-codes-2026-verified-discounts",
-    "premium": false
   },
   {
     "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
@@ -572,32 +546,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/monday-vs-jira-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/monday-vs-jira-which-is-better-in-2026",
-    "premium": false
-  },
-  {
-    "file": "site/pages/monday-vs-trello-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/monday-vs-trello-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -674,19 +622,6 @@
     ],
     "path": "/pages/notion-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/notion-vs-confluence-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/notion-vs-confluence-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/pandadoc-review-2026-is-it-worth-it-honest-verdict.html",
