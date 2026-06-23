@@ -299,6 +299,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/does-nordpass-have-a-free-plan-2026-full-breakdown.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
+    "premium": false
+  },
+  {
     "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -804,6 +817,19 @@
     ],
     "path": "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/semrush-vs-moz-pro-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/semrush-vs-moz-pro-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/shopify-pricing-history-2026.html",
