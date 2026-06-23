@@ -295,6 +295,33 @@ COUPONS = {
             ("Does FreshBooks offer nonprofit pricing?", "FreshBooks doesn't publish a nonprofit-specific discount program. Contact their sales team to enquire about charitable organisation pricing."),
         ]
     ),
+    "parallels-desktop": dict(
+        name="Parallels Desktop", logo="https://www.google.com/s2/favicons?domain=parallels.com&sz=128",
+        go="/go/parallels",
+        pricing_url="/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay",
+        page_url="/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict",
+        top_pct="14 days", top_label="Free trial — no credit card required", top_meta="Full Standard features during trial",
+        hero_lead="Parallels Desktop doesn't issue traditional coupon codes — the best ways to save are the 14-day trial, annual billing, and the student discount. Here's every verified saving available right now.",
+        deals=[
+            dict(pct="Free", name="14-Day Free Trial — No Credit Card", desc="Full Parallels Desktop Standard access for 14 days. No credit card required. Best way to test Windows-on-Mac performance before committing. Trial ends automatically — no charge if you don't subscribe.", code="NO CODE NEEDED", expiry="Ongoing", verified=TODAY),
+            dict(pct="25%", name="Student & Education Discount", desc="Parallels offers ~25% off for students and educators via their Student Beans or direct education portal. Requires a valid .edu email or institutional verification. Applies to Standard and Pro plans.", code="Via student portal", expiry="Verify current availability", verified=TODAY),
+            dict(pct="Save", name="Annual vs Monthly Subscription", desc="Parallels Desktop is subscription-only. Standard is $99.99/yr. Purchasing the annual plan upfront is cheaper than any equivalent monthly-billing option. No coupon code needed.", code="NO CODE NEEDED", expiry="Ongoing", verified=TODAY),
+        ],
+        howto=[
+            ("Start the free trial","Click our link and choose 'Try Free' on the Parallels website. No credit card required."),
+            ("Download and install","Parallels Desktop installer runs on both Apple Silicon (M-series) and Intel Macs."),
+            ("Install Windows","Use the built-in Windows installer — Parallels downloads Windows 11 ARM directly from Microsoft."),
+            ("Subscribe before trial ends","Choose Standard ($99.99/yr), Pro ($119.99/yr), or Business ($149.99/user/yr). Annual is the only billing option in 2026."),
+        ],
+        no_code_text="Parallels Desktop doesn't issue traditional promo codes. The 14-day free trial is the best entry point, and the student discount (~25% off) is the best saving for eligible buyers. Annual billing is the standard pricing — there is no monthly plan.",
+        faqs=[
+            ("Does Parallels Desktop have a coupon code?", "Parallels Desktop rarely issues public coupon codes. The standard discounts are: 14-day free trial (no card required) and ~25% off for students/educators. Annual billing is the only available pricing — there's no monthly option to compare against."),
+            ("How much is Parallels Desktop in 2026?", "Parallels Desktop Standard is $99.99/year, Pro is $119.99/year, and Business is $149.99/user/year. All are annual subscriptions — Parallels no longer sells one-time permanent licenses for new purchases."),
+            ("Is Parallels Desktop free?", "No — Parallels has no free plan. There is a 14-day free trial with no credit card required. The cheapest free alternative for running Windows on Mac is UTM (open source) or VMware Fusion (free for personal use since 2024)."),
+            ("What is the student discount for Parallels Desktop?", "Parallels offers approximately 25% off for students and educators. You'll need a valid institutional email (.edu) or verification via Student Beans. Check Parallels' official education page for current terms."),
+            ("Parallels vs VMware Fusion — which is better?", "VMware Fusion is now free for personal use (since 2024) making it compelling for budget-conscious users. Parallels remains faster on Apple Silicon with better Retina support and coherence mode. For professionals, Parallels Pro adds GPU passthrough and developer tool integrations."),
+        ]
+    ),
     "canva": dict(
         name="Canva", logo="https://cdn.simpleicons.org/canva/00c4cc",
         go="/go/canva", pricing_url="/pages/canva-pricing-2026-plans-costs-what-you-actually-pay",
@@ -334,7 +361,7 @@ DISPLAY_NAMES = {
     "gusto":"Gusto","hubspot":"HubSpot","jira":"Jira","klaviyo":"Klaviyo",
     "lastpass":"LastPass","linear":"Linear","mailchimp":"Mailchimp",
     "mixpanel":"Mixpanel","monday-com":"Monday.com","moz-pro":"Moz Pro",
-    "nordpass":"NordPass","nordvpn":"NordVPN","notion":"Notion",
+    "nordpass":"NordPass","nordvpn":"NordVPN","notion":"Notion","parallels-desktop":"Parallels Desktop",
     "pipedrive":"Pipedrive","protonvpn":"ProtonVPN","quickbooks":"QuickBooks",
     "ramp":"Ramp","rippling":"Rippling","salesforce":"Salesforce",
     "se-ranking":"SE Ranking","semrush":"Semrush","shopify":"Shopify",
@@ -372,6 +399,7 @@ LOGO_MAP = {
     "monday-com":"https://cdn.simpleicons.org/monday/f62b54",
     "moz-pro":"https://cdn.simpleicons.org/moz/3f4de5",
     "nordpass":"https://cdn.simpleicons.org/nordpass/4687ff",
+    "parallels-desktop":"https://www.google.com/s2/favicons?domain=parallels.com&sz=128",
     "pipedrive":"https://cdn.simpleicons.org/pipedrive/1a73e8",
     "protonvpn":"https://cdn.simpleicons.org/protonvpn/6d4aff",
     "quickbooks":"https://cdn.simpleicons.org/intuit/2ca01c",

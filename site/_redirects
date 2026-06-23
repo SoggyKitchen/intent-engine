@@ -75,10 +75,14 @@
 # Elementor — CJ Advertiser ID: 6798066 (45% commission!)
 # TODO: Replace below with CJ deep link from app.cj.com -> Links -> search "Elementor"
 /go/elementor https://elementor.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-# AWeber — CJ Advertiser ID: 5111249
-# GET YOUR LINK: app.cj.com -> Links -> search "AWeber"
-# Parallels — CJ Advertiser ID: 2005415 (EPC $31.65)
-# GET YOUR LINK: app.cj.com -> Links -> search "Parallels"
+# AWeber — CJ Advertiser ID: 5111249 — placeholder until CJ deep link added
+# TODO: Replace with CJ deep link from app.cj.com -> Links -> search "AWeber"
+/go/aweber https://www.aweber.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/aweber-trial https://www.aweber.com/pricing.htm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+# Parallels — CJ Advertiser ID: 2005415 (EPC $31.65) — placeholder until CJ deep link added
+# TODO: Replace with CJ deep link from app.cj.com -> Links -> search "Parallels"
+/go/parallels https://www.parallels.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/parallels-desktop https://www.parallels.com/products/desktop/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 # Fiverr — Awin ID 6288, Publisher 2917137 — APPROVED 2026-06-03
 /go/fiverr https://www.awin1.com/cread.php?awinmid=6288&awinaffid=2917137&clickref=&p=https%3A%2F%2Fwww.fiverr.com%2F 302
 /go/fiverr-business https://www.awin1.com/cread.php?awinmid=6288&awinaffid=2917137&clickref=&p=https%3A%2F%2Fwww.fiverr.com%2Fbusiness 302
