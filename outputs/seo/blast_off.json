@@ -1,23 +1,28 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-23",
-  "titles_rewritten": 1,
-  "descs_rewritten": 20,
-  "dates_refreshed": 1109,
-  "answers_added": 15,
-  "files_changed": 1124,
-  "files_scanned": 1427,
+  "titles_rewritten": 2,
+  "descs_rewritten": 25,
+  "dates_refreshed": 0,
+  "answers_added": 16,
+  "files_changed": 25,
+  "files_scanned": 1428,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
+    },
+    {
+      "file": "parallels-desktop-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Parallels Desktop Coupon &amp; Discount 2026: Best Deals Right Now \u2014 SaaSpare",
+      "after": "Parallels Desktop Coupon 2026 (Verified June) \u2014 Real Working Codes"
     }
   ],
   "desc_examples": [
     {
       "file": "1password-pricing-history-2026.html",
-      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 22 June 2026.",
+      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 23 June 2026.",
       "after": "Updated June 2026. 1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
@@ -27,12 +32,12 @@
     },
     {
       "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 22 June 2026.",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 23 June 2026.",
       "after": "Updated June 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
       "file": "asana-pricing-history-2026.html",
-      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 22 June 2026.",
+      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 23 June 2026.",
       "after": "Updated June 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
