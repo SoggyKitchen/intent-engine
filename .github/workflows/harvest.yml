@@ -1,4 +1,4 @@
-name: Harvest Signals
+﻿name: Harvest Signals
 
 permissions:
   contents: write
@@ -23,11 +23,11 @@ jobs:
     timeout-minutes: 25
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
 

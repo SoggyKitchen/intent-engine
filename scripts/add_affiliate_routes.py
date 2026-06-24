@@ -51,8 +51,7 @@ NEW_ROUTES = """
 /go/expressvpn https://www.expressvpn.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 # CyberGhost CJ: ~$10/signup — streaming VPN queries
 /go/cyberghost https://www.cyberghostvpn.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-# ProtonVPN: ~$10/sale — free VPN queries (best-free-vpn-2026 page built)
-/go/protonvpn https://protonvpn.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+# ProtonVPN: CJ LIVE — see Wave 24 block in _redirects (anrdoezrs.net CJ link, $119.51 EPC)
 # Bitdefender CJ: security cluster
 /go/bitdefender https://www.bitdefender.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 # Malwarebytes CJ: security cluster

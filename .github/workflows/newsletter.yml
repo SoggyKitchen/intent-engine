@@ -1,4 +1,4 @@
-name: Weekly Newsletter
+﻿name: Weekly Newsletter
 
 permissions:
   contents: write
@@ -18,11 +18,11 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v5
 
       - name: Install dependencies
         run: uv sync
