@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-24T12:11:28+00:00",
+  "generated_at_utc": "2026-06-24T21:17:39+00:00",
   "mode": "apply",
-  "pages_flagged": 26,
+  "pages_flagged": 27,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -318,6 +318,22 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime guarantee",
           "context": "class=\"pc-item\"><span class=\"pc-dot\"></span>Best-in-class checkout conversion (99.99% uptime guaranteed)</div> <div class=\"pc-item\"><span class=\"pc-dot\"></span>POS hard"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "class=\"faq-a\">No. HostPapa does not offer a free hosting plan. They do offer a 30-day money-back guarantee on most plans, so you can test the service risk-free. A free domain name (year"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ed hosting</li> <li>Free domain + SSL included</li> <li>30-day money-back guarantee</li> <li>cPanel industry standard</li> </ul> </di"
         }
       ],
       "trust_state_bumped": false
