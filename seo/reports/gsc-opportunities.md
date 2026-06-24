@@ -1,6 +1,6 @@
 # GSC Opportunities
 
-Status: GSC API error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+Status: GSC API error: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
 
 When credentials are available, this report prioritizes:
 - high impressions / low CTR pages

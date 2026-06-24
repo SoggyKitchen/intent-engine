@@ -1,5 +1,5 @@
 {
   "opportunities": [],
-  "reason": "GSC API error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})",
+  "reason": "GSC API error: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})",
   "skipped": true
 }
