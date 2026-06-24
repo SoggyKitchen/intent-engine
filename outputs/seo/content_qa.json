@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T12:00:51.962206+00:00",
+  "generated_at": "2026-06-24T12:11:44.356463+00:00",
   "stats": {
     "sitemap_urls": 1439,
     "sitemap_with_lastmod": 1439,
@@ -13,11 +13,11 @@
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/pages/thanks.html: title <30 chars (29)",
-    "site/pages/v3-preview-404.html: title <30 chars (25)",
-    "site/pages/v3-preview-contact.html: title <30 chars (27)",
     "site/pages/v3-preview-privacy.html: title <30 chars (25)",
-    "duplicate description (4 pages): \"Updated 2026 guide from SaaSpare — expert analysis, real pri\" — ['site/about.html', 'site/contact.html', 'site/deal-radar.html']"
+    "site/pages/v3-preview-404.html: title <30 chars (25)",
+    "site/pages/thanks.html: title <30 chars (29)",
+    "site/pages/v3-preview-contact.html: title <30 chars (27)",
+    "duplicate description (4 pages): \"Updated 2026 guide from SaaSpare — expert analysis, real pri\" — ['site/methodology.html', 'site/about.html', 'site/contact.html']"
   ],
   "soft_issues_total": 5
 }
