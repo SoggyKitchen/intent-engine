@@ -45,7 +45,20 @@
       "WebFetch(domain:saasdatabase.net)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\smith\\\\intent-engine\" -Recurse -Directory)",
       "Bash(Select-Object FullName)",
-      "Bash(Sort-Object FullName)"
+      "Bash(Sort-Object FullName)",
+      "WebFetch(domain:www.aikenhouse.com)",
+      "WebFetch(domain:coldiq.com)",
+      "WebFetch(domain:b2bsaasreviews.com)",
+      "WebFetch(domain:www.kalungi.com)",
+      "WebFetch(domain:thesaasdir.com)",
+      "WebFetch(domain:www.imaginarium.agency)",
+      "WebFetch(domain:www.reviewflowz.com)",
+      "WebFetch(domain:technologymatch.com)",
+      "WebFetch(domain:trysaasbattle.com)",
+      "WebFetch(domain:saasairank.com)",
+      "WebFetch(domain:scopicstudios.com)",
+      "WebFetch(domain:getoden.com)",
+      "WebFetch(domain:vibefam.com)"
     ]
   }
 }
