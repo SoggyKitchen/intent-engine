@@ -64,25 +64,21 @@
 # === HIGH-COMMISSION CREATOR TOOLS (CJ Affiliate) ===
 # Teachable CJ: 30% commission, course creator niche
 # Kajabi CJ: 30% commission, ~$100/sale
-# Wave 24 — CJ Hidden Gems (added 2026-06-01)
-# Proton — CJ Advertiser ID: 5227916
-# TODO: Replace below with CJ deep link from app.cj.com -> Links -> search "Proton"
-/go/protonvpn https://proton.me/vpn?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/proton https://proton.me?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/proton-vpn https://proton.me/vpn?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-# GetResponse — CJ Advertiser ID: 3142111  ($100/lead EPC $31.63!)
-# CJ link active (deduped — canonical entry at /go/getresponse above)
-# Elementor — CJ Advertiser ID: 6798066 (45% commission!)
-# TODO: Replace below with CJ deep link from app.cj.com -> Links -> search "Elementor"
-/go/elementor https://elementor.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-# AWeber — CJ Advertiser ID: 5111249 — placeholder until CJ deep link added
-# TODO: Replace with CJ deep link from app.cj.com -> Links -> search "AWeber"
-/go/aweber https://www.aweber.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/aweber-trial https://www.aweber.com/pricing.htm?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-# Parallels — CJ Advertiser ID: 2005415 (EPC $31.65) — placeholder until CJ deep link added
-# TODO: Replace with CJ deep link from app.cj.com -> Links -> search "Parallels"
-/go/parallels https://www.parallels.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-/go/parallels-desktop https://www.parallels.com/products/desktop/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+# Wave 24 — CJ links LIVE (wired 2026-06-24, upgraded from bare placeholders)
+# Proton — CJ Advertiser 5227916
+/go/protonvpn https://www.anrdoezrs.net/click-101733230-15834536?utm_source=saaspare&utm_medium=affiliate 302
+/go/proton https://www.anrdoezrs.net/click-101733230-15834536?utm_source=saaspare&utm_medium=affiliate 302
+/go/proton-vpn https://www.anrdoezrs.net/click-101733230-15834536?utm_source=saaspare&utm_medium=affiliate 302
+/go/protonmail https://www.jdoqocy.com/click-101733230-13774763?utm_source=saaspare&utm_medium=affiliate 302
+/go/proton-pass https://www.jdoqocy.com/click-101733230-17061192?utm_source=saaspare&utm_medium=affiliate 302
+# Elementor — CJ Advertiser 6798066 (45% commission)
+/go/elementor https://www.tkqlhce.com/click-101733230-15736972?utm_source=saaspare&utm_medium=affiliate 302
+# AWeber — CJ Advertiser 5111249
+/go/aweber https://www.kqzyfj.com/click-101733230-15734825?utm_source=saaspare&utm_medium=affiliate 302
+/go/aweber-trial https://www.kqzyfj.com/click-101733230-15734825?utm_source=saaspare&utm_medium=affiliate 302
+# Parallels — CJ Advertiser 2005415 (Evergreen 15733336, EPC $147.81 AUD)
+/go/parallels https://www.kqzyfj.com/click-101733230-15733336?utm_source=saaspare&utm_medium=affiliate 302
+/go/parallels-desktop https://www.kqzyfj.com/click-101733230-15733336?utm_source=saaspare&utm_medium=affiliate 302
 # Fiverr — Awin ID 6288, Publisher 2917137 — APPROVED 2026-06-03
 /go/fiverr https://www.awin1.com/cread.php?awinmid=6288&awinaffid=2917137&clickref=&p=https%3A%2F%2Fwww.fiverr.com%2F 302
 /go/fiverr-business https://www.awin1.com/cread.php?awinmid=6288&awinaffid=2917137&clickref=&p=https%3A%2F%2Fwww.fiverr.com%2Fbusiness 302
