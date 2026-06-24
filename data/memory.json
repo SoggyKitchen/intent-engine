@@ -252,6 +252,41 @@
         "ACTION REQUIRED: Check CJ dashboard (app.cj.com) for AWeber, GetResponse, ProtonVPN, Elementor deep links",
         "Monitor Impact.com ticket #831603 \u2014 Wix contract pending approval"
       ]
+    },
+    {
+      "date": "2026-06-24",
+      "session": "revenue-hunter-routine",
+      "gmail_findings": {
+        "partnerstack": "PERMANENTLY LOCKED \u2014 3rd rejection June 22 confirmed by Anjola S June 23. Root cause: multiple accounts triggered fraud flag. ClickUp ($36-150/sale), Monday ($150/sale), Dashlane ($25-50/sale) now $0 indefinitely.",
+        "impact_partner_program": "APPROVED June 16 \u2014 already wired in _redirects as /go/impact \u2192 goto.impact.com tracking URL. Confirmed live.",
+        "activecampaign": "CONFIRMED LIVE \u2014 30% recurring, 10 clicks already received via /go/activecampaign \u2192 try.activecampaign.com/xc2j6av0g2wz (direct program, not PartnerStack)",
+        "getresponse_cj": "BROKEN \u2014 /go/getresponse \u2192 ?a=-CJ is a placeholder, earns $0. Owner must log into app.cj.com \u2192 Links \u2192 Get Links for advertiser 3142111 to get the real CJ tracking link."
+      },
+      "ctr_fixes": [
+        "does-notion-have-a-free-plan: featured-snippet trap removed (557 impr, 0% CTR) \u2014 new title removes yes/no answer",
+        "does-sentry-have-a-free-plan: featured-snippet trap removed (528 impr, 0% CTR)",
+        "does-loom-have-a-free-plan: featured-snippet trap removed (pos 8.1, 0% CTR)",
+        "linear-free-trial: meta was discouraging clicks ('no trial') \u2014 reframed free plan AS the trial (129 impr, pos 6.8, 0% CTR)",
+        "does-clickup-have-a-free-plan: curiosity-gap rewrite",
+        "does-bitwarden-have-a-free-plan: curiosity-gap rewrite",
+        "shopify-vs-recurly: curiosity-gap rewrite (ACTIVE EARNER via /go/shopify)"
+      ],
+      "built": [
+        "constant-contact-vs-mailchimp-which-is-better-in-2026.html \u2014 ~10K/mo keyword, CTAs to /go/activecampaign (live 30% recurring)"
+      ],
+      "affiliate_status_update": {
+        "earning_now": ["NordVPN", "Surfshark", "Sucuri", "NordPass", "Contabo", "HostPapa", "Semrush", "Shopify", "ElevenLabs", "ActiveCampaign (30% recurring)", "impact.com Partner Program"],
+        "partnerstack_permanently_locked": ["ClickUp", "Monday.com", "Dashlane", "ActiveCampaign (was PartnerStack \u2014 now direct)"],
+        "getresponse_broken_placeholder": "Owner must fix in app.cj.com (advertiser 3142111)"
+      },
+      "next_human_actions": [
+        "CRITICAL: Log into app.cj.com \u2192 Links \u2192 Get Links \u2192 search advertiser 3142111 (GetResponse) \u2192 copy real CJ tracking URL \u2192 update /go/getresponse in site/_redirects",
+        "PartnerStack permanently closed \u2014 no further action on ClickUp/Monday/Dashlane via that network",
+        "Consider alternate affiliate networks for ClickUp (direct program?), Monday (direct?)",
+        "Merge PR #5 (revenue-hunter-2026-06-24) when ready"
+      ],
+      "tests": "93/93 passing",
+      "pr": "https://github.com/SoggyKitchen/intent-engine/pull/5"
     }
   ],
   "sessions": [
