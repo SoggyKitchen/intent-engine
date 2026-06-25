@@ -403,19 +403,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay",
-    "premium": false
-  },
-  {
     "file": "site/pages/hubspot-pricing-history-2026.html",
     "fixes": [
       "canonical",
