@@ -31,6 +31,7 @@
 - `/pages/getresponse-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/gusto-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/hetzner-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/hubspot-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/hubspot-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -49,7 +50,6 @@
 - `/pages/notion-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/notion-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/pandadoc-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/parallels-desktop-coupon-code-promo-codes-2026-verified-discounts`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/partnerstack-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/pipedrive-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
