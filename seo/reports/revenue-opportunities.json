@@ -1,4 +1,75 @@
 {
-  "gscLive": false,
-  "opportunities": []
+  "gscLive": true,
+  "opportunities": [
+    {
+      "score": 13.22,
+      "page": "/pages/semrush-vs-moz-pro-which-is-better-in-2026",
+      "program": "Semrush",
+      "status": "EARNING",
+      "linkState": "placeholder",
+      "valuePerConvUsd": 200,
+      "impressions": 1322,
+      "position": 69.7,
+      "clicks": 0,
+      "estExtraClicksMo": 0.0,
+      "estMonthlyUpliftUsd": 0.0,
+      "pageType": "comparison"
+    },
+    {
+      "score": 5.03,
+      "page": "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
+      "program": "Semrush",
+      "status": "EARNING",
+      "linkState": "placeholder",
+      "valuePerConvUsd": 200,
+      "impressions": 503,
+      "position": 77.7,
+      "clicks": 0,
+      "estExtraClicksMo": 0.0,
+      "estMonthlyUpliftUsd": 0.0,
+      "pageType": "pricing"
+    },
+    {
+      "score": 4.3,
+      "page": "/pages/ramp-pricing-history-2026",
+      "program": "Ramp",
+      "status": "PLACEHOLDER",
+      "linkState": "placeholder",
+      "valuePerConvUsd": 100,
+      "impressions": 86,
+      "position": 9.3,
+      "clicks": 1,
+      "estExtraClicksMo": 4.3,
+      "estMonthlyUpliftUsd": 8.6,
+      "pageType": "pricing"
+    },
+    {
+      "score": 1.78,
+      "page": "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
+      "program": "Pipedrive",
+      "status": "PLACEHOLDER",
+      "linkState": "placeholder",
+      "valuePerConvUsd": 60,
+      "impressions": 46,
+      "position": 20.1,
+      "clicks": 0,
+      "estExtraClicksMo": 2.8,
+      "estMonthlyUpliftUsd": 3.31,
+      "pageType": "pricing"
+    },
+    {
+      "score": 0.68,
+      "page": "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
+      "program": "Notion",
+      "status": "PLACEHOLDER",
+      "linkState": "placeholder",
+      "valuePerConvUsd": 15,
+      "impressions": 41,
+      "position": 11.4,
+      "clicks": 0,
+      "estExtraClicksMo": 2.3,
+      "estMonthlyUpliftUsd": 0.68,
+      "pageType": "pricing"
+    }
+  ]
 }

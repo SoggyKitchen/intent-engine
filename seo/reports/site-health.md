@@ -1,6 +1,6 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-25T10:56:25+00:00
+Generated: 2026-06-25T11:22:16+00:00
 Mode: `audit`
 
 ## Current Score
@@ -20,7 +20,7 @@ Mode: `audit`
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
-- GSC: GSC API error: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+- GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
 ## Fastest Path To 70
