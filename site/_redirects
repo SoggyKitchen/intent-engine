@@ -1,5 +1,27 @@
 ﻿/authors/smith-elly /authors/kaylan-von-papen 301
 /editorial /editorial-policy 301
+
+# === Broken internal link fixes (2026-06-25 audit) ===
+# Pages that were linked to but never existed — resolved to nearest real page
+/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay /pages/does-bitwarden-have-a-free-plan-2026-full-breakdown 301
+/pages/linear-coupon-code-promo-codes-2026-verified-discounts /pages/linear-promo-code-2026-discounts-deals-that-actually-work 301
+/pages/salesforce-coupon-code-promo-codes-2026-verified-discounts /pages/salesforce-promo-code-2026-discounts-deals-that-actually-work 301
+/pages/stripe-coupon-code-promo-codes-2026-verified-discounts /pages/stripe-coupon-2026-discount-codes-promo 301
+/pages/stripe-pricing-2026-plans-costs-what-you-actually-pay /pages/stripe-pricing-history-2026 301
+
+# === v3-preview test pages → homepage (remove from index) ===
+/pages/v3-preview-404 / 301
+/pages/v3-preview-about / 301
+/pages/v3-preview-affiliate-disclosure /affiliate-disclosure 301
+/pages/v3-preview-contact /contact 301
+/pages/v3-preview-deal-radar /deal-radar 301
+/pages/v3-preview-homepage / 301
+/pages/v3-preview-index /pages 301
+/pages/v3-preview-library /pages 301
+/pages/v3-preview-newsletter /newsletter 301
+/pages/v3-preview-privacy /privacy 301
+/pages/v3-preview-roi-calculator /roi 301
+/pages/v3-preview-shortlist /shortlist 301
 # === Semrush vs Moz consolidation — eliminate cannibalization (2026-06-09) ===
 /pages/semrush-vs-moz-pro-which-is-better-in-2026 /pages/semrush-vs-moz-which-is-better-in-2026 301
 # === seo_consolidate.py duplicates -> canonical 301s ===
