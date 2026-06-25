@@ -97,5 +97,31 @@
       "inbound": [],
       "outbound": []
     }
+  },
+  {
+    "path": "/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/contact",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/hostpapa",
+        "/newsletter",
+        "/pages/",
+        "/pages/bigcommerce-vs-stripe-which-is-better-in-2026",
+        "/pages/does-getresponse-have-a-free-plan-2026-full-breakdown",
+        "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/ramp-vs-bill-com-which-is-better-in-2026",
+        "/privacy",
+        "/shortlist",
+        "/terms"
+      ]
+    }
   }
 ]

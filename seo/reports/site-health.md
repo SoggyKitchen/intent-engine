@@ -1,6 +1,6 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-24T13:06:24+00:00
+Generated: 2026-06-25T06:56:21+00:00
 Mode: `audit`
 
 ## Current Score
@@ -15,8 +15,8 @@ Mode: `audit`
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1460
-- Healthy pages (85+): 1408
+- Pages scanned: 1461
+- Healthy pages (85+): 1409
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
@@ -52,23 +52,23 @@ Mode: `audit`
 - `/pages/salesforce-pricing-history-2026` (84.41/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/accessibility` (75.67/100): meta_length_outside_target
-- `/pages/best-encrypted-cloud-storage-2026-business` (75.78/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/best-encrypted-cloud-storage-2026-business` (75.81/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.29/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/request-a-comparison` (79.37/100): title_length_outside_target
+- `/pages/request-a-comparison` (79.38/100): title_length_outside_target
 - `/privacy` (79.64/100): meta_length_outside_target
-- `/pages/how-saaspare-ranks-tools` (80.55/100): title_length_outside_target
+- `/pages/how-saaspare-ranks-tools` (80.58/100): title_length_outside_target
 - `/pages/saas-glossary` (81.0/100): title_length_outside_target
-- `/pages/v3-preview-404` (81.42/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-contact` (82.98/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-homepage` (83.17/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-affiliate-disclosure` (83.22/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-404` (81.43/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-contact` (82.94/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-homepage` (83.16/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-affiliate-disclosure` (83.25/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.39): CTA=True, affiliateLinks=5, disclosure=True
-- `/pages/best-saas-deals-this-week-2026` (coupon, score 83.67): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/best-saas-deals-this-week-2026` (coupon, score 83.68): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 91.12): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.69): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.71): CTA=True, affiliateLinks=1, disclosure=True
@@ -83,12 +83,12 @@ Mode: `audit`
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.03): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/linear-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.03): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.04): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/nordpass-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.05): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.05): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/bigcommerce-coupon-2026-discount-codes-promo` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/mixpanel-coupon-2026-discount-codes-promo` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/surfshark-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.07): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/gusto-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/hetzner-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/mixpanel-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/nordpass-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/vultr-coupon-2026-discount-codes-promo` (coupon, score 92.07): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/getresponse-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/ramp-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/supabase-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
