@@ -415,6 +415,43 @@ PRICING = {
             ("Is AWeber worth it in 2026?","AWeber is a solid choice for bloggers, consultants, and small businesses that want reliable email delivery and simple automations without complexity. For advanced segmentation or CRM-level automation, consider ActiveCampaign or GetResponse."),
         ]
     ),
+    "nordlayer": dict(
+        name="NordLayer", logo="https://cdn.simpleicons.org/nordvpn/4687ff",
+        go="/go/nordlayer", history="/pages/nordlayer-pricing-history-2026",
+        page="/pages/best-business-vpn-2026",
+        sticky="NordLayer's Lite plan starts at $9/user/mo (5-user min) — the most affordable business VPN with centralized management.",
+        meta_desc="NordLayer pricing 2026: Lite $9/user · Core $11/user · Business $14/user/mo (annual, 5-user min). No free plan — 14-day trial available. Per-user minimums, setup fees & true team cost exposed.",
+        hidden_risk="Medium", hidden_note="5-user minimum on all plans — smallest team commitment is 5 × plan price. Monthly billing adds ~30%.",
+        plans=[
+            dict(name="Lite",     mo="~$11",   annual="$9",    best="Small teams needing basic VPN", users="5+ min", storage="Unlimited bandwidth", support="Email + chat", f=["Shared gateways","Device limit: 6/user","SSO (SAML)"],        fc=["cm","cw","cw"]),
+            dict(name="Core",     mo="~$14",   annual="$11",   best="Growing teams with compliance needs", users="5+ min", storage="Unlimited", support="Priority 24/7", f=["Dedicated gateways available","Device limit: 10/user","Advanced SSO + MFA"], fc=["cw","cw","cw"]),
+            dict(name="Business", mo="~$18",   annual="$14",   best="Enterprises needing ZTNA controls", users="5+ min", storage="Unlimited", support="Dedicated account manager", f=["Dedicated IP gateways","Device limit: 15/user","Auto-connect + posture checks"], fc=["cw","cw","cw"]),
+            dict(name="Enterprise", mo="Custom", annual="Custom", best="Large orgs with custom needs", users="Unlimited", storage="Unlimited", support="Dedicated CSM", f=["Custom gateways","Unlimited devices","Custom SLA + onboarding"], fc=["cw","cw","cw"]),
+        ],
+        hidden=[
+            dict(name="5-user minimum", desc="No plan supports fewer than 5 users. Minimum bill: 5 × $9 = $45/mo (Lite, annual). A 3-person team pays for 5 regardless."),
+            dict(name="Monthly billing surcharge", desc="Month-to-month pricing is approximately 30% more than annual. A 10-person team on Lite pays ~$110/mo monthly vs $90/mo annual."),
+            dict(name="Dedicated gateway add-on", desc="Core plan includes shared gateways by default. Dedicated IP gateways (needed for allowlisting) cost extra on Lite and Core — only included by default on Business."),
+        ],
+        scenarios=[
+            dict(users="5-person team, Lite (annual)", cost="$45/mo", plan="Lite", plan_cls="v-value", breakdown="5 users × $9 = $45/mo — shared gateways, SSO, 6 devices/user"),
+            dict(users="20-person team, Core (annual)", cost="$220/mo", plan="Core", plan_cls="v-smb", breakdown="20 users × $11 = $220/mo — dedicated gateway option, 10 devices, advanced MFA"),
+            dict(users="50-person team, Business (annual)", cost="$700/mo", plan="Business", plan_cls="v-visual", breakdown="50 users × $14 = $700/mo — dedicated IPs, posture checks, 15 devices/user"),
+        ],
+        alts=[
+            dict(name="NordVPN Teams", url="/pages/nordlayer-vs-nordvpn-which-is-better-in-2026",   price="From $7/user",  logo="https://cdn.simpleicons.org/nordvpn/4687ff"),
+            dict(name="Perimeter 81",  url="/pages/best-business-vpn-2026",                         price="From $8/user",  logo="https://cdn.simpleicons.org/cloudflare/f38020"),
+            dict(name="Twingate",      url="/pages/twingate-vs-tailscale-which-is-better-in-2026",  price="From $5/user",  logo="https://cdn.simpleicons.org/cloudflare/f38020"),
+            dict(name="Tailscale",     url="/pages/tailscale-vs-zscaler-which-is-better-in-2026",   price="From $6/user",  logo="https://cdn.simpleicons.org/cloudflare/f38020"),
+        ],
+        faqs=[
+            ("How much does NordLayer cost?","NordLayer Lite costs $9/user/mo (annual, 5-user min). Core is $11/user/mo and Business is $14/user/mo, both billed annually. Monthly billing adds ~30%. Enterprise is custom pricing. Minimum team size is 5 users on any plan."),
+            ("Does NordLayer have a free plan?","No. NordLayer has no free plan. A 14-day free trial is available across all paid tiers. After the trial, plans start at $9/user/mo (Lite, annual) with a 5-user minimum."),
+            ("What is the minimum team size for NordLayer?","All NordLayer plans require a minimum of 5 users. The smallest possible commitment is 5 × $9 = $45/mo on the Lite annual plan."),
+            ("Is NordLayer worth it?","NordLayer is worth it for distributed teams of 5+ needing centralized VPN management, SSO, and device posture policies. At $9–$14/user/mo, it's more expensive than consumer VPNs but far cheaper than enterprise ZTNA platforms like Zscaler or Cloudflare Access."),
+            ("NordLayer vs NordVPN — what is the difference?","NordVPN is a consumer VPN for personal use. NordLayer is NordSec's business-grade VPN with team dashboards, SSO, dedicated gateways, and compliance features. They share branding but are entirely separate products with different pricing models."),
+        ]
+    ),
 }
 
 # Generic fallback for tools not in the database

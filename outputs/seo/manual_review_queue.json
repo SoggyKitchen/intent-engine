@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-25T12:43:36+00:00",
+  "generated_at_utc": "2026-06-25T21:21:54+00:00",
   "mode": "apply",
-  "pages_flagged": 27,
+  "pages_flagged": 28,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -450,6 +450,22 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime SLA",
           "context": "nt-size:.92rem;line-height:1.65;margin:0 0 .5rem\">Enterprise-grade Shopify with 99.99% uptime SLA, dedicated account management, unlimited staff accounts, customisable checkout,"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-protonvpn-alternatives-in-2026-free-paid.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "e=\"color:rgba(255,248,245,.6)\">From:</strong> $3.39/month (2-year plan) &mdash; 30-day money-back guarantee &mdash; 6 devices</p> </div> <a rel=\"sponsored\" href=\"/go/nordvpn\""
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "45-day money-back guarantee",
+          "context": "9rem;line-height:1.6;margin:0\">10,000+ servers (more than any competitor) and a 45-day money-back guarantee \u2014 the longest in the industry. At $2.03/month on the 3-year plan, it's the chea"
         }
       ],
       "trust_state_bumped": false
