@@ -1214,14 +1214,29 @@ def load_gsc_opportunities(config: dict) -> dict:
         authorized_user_source = os.environ.get("GSC_AUTHORIZED_USER_JSON")
         credentials_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
         if oauth_refresh and oauth_client_id and oauth_client_secret:
-            credentials = OAuthCredentials(
-                token=None,
-                refresh_token=oauth_refresh,
-                token_uri="https://oauth2.googleapis.com/token",
-                client_id=oauth_client_id,
-                client_secret=oauth_client_secret,
-                scopes=scopes,
-            )
+            try:
+                from google.auth.transport.requests import Request as GoogleAuthRequest
+                import requests as _requests
+                _creds = OAuthCredentials(
+                    token=None,
+                    refresh_token=oauth_refresh,
+                    token_uri="https://oauth2.googleapis.com/token",
+                    client_id=oauth_client_id,
+                    client_secret=oauth_client_secret,
+                    scopes=scopes,
+                )
+                _creds.refresh(GoogleAuthRequest())
+                credentials = _creds
+            except Exception as _oauth_err:
+                if credentials_source:
+                    credentials_json = decode_possible_base64(credentials_source)
+                    info = json.loads(credentials_json)
+                    if info.get("type") == "authorized_user":
+                        credentials = OAuthCredentials.from_authorized_user_info(info, scopes=scopes)
+                    else:
+                        credentials = service_account.Credentials.from_service_account_info(info, scopes=scopes)
+                else:
+                    raise
         elif credentials_source:
             credentials_json = decode_possible_base64(credentials_source)
             info = json.loads(credentials_json)
