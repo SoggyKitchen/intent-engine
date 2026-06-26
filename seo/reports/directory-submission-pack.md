@@ -16,17 +16,17 @@ Unbiased B2B SaaS comparisons with real pricing data.
 
 ### Short description (≤160 chars)
 ```
-SaaSpare is an independent B2B software comparison platform covering 1,000+ SaaS tools with real pricing breakdowns, hidden-fee callouts, and honest verdicts.
+SaaSpare is an independent B2B software comparison platform covering 200+ SaaS tools across 1,400+ pages with real pricing breakdowns, hidden-fee callouts, and honest verdicts.
 ```
 
 ### Medium description (≤300 chars)
 ```
-SaaSpare is an independent editorial platform comparing 1,000+ B2B SaaS tools across 16 verticals. We pull real pricing from vendor sources, expose hidden fees and per-seat traps, and publish weekly updates. No paid placements — verdicts can't be bought.
+SaaSpare is an independent editorial platform comparing 200+ B2B SaaS tools across 14+ verticals in 1,400+ pages. We pull real pricing from vendor sources, expose hidden fees and per-seat traps, and publish weekly updates. No paid placements — verdicts can't be bought.
 ```
 
 ### Long description (≤600 chars)
 ```
-SaaSpare.org is an independent comparison platform for B2B software buyers. We cover 1,000+ SaaS tools across CRM, SEO, HR, dev tools, finance ops, project management, ecommerce, security and more. Every page includes real pricing pulled from vendor sources, hidden-fee analysis, free-trial tracking and an honest verdict. Vendors cannot pay to change rankings or appear higher. Affiliate links are disclosed on every page and never influence verdicts. Our data is updated weekly. Built for founders, CTOs and operators making smart software decisions.
+SaaSpare.org is an independent comparison platform for B2B software buyers. We cover 200+ SaaS tools across 1,400+ pages spanning CRM, SEO, HR, dev tools, finance ops, project management, ecommerce, security and more. Every page includes real pricing pulled from vendor sources, hidden-fee analysis, free-trial tracking and an honest verdict. Vendors cannot pay to change rankings or appear higher. Affiliate links are disclosed on every page and never influence verdicts. Our data is updated weekly. Built for founders, CTOs and operators making smart software decisions.
 ```
 
 ### Tags / categories (paste relevant ones)
