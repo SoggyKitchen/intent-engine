@@ -99,6 +99,42 @@ PRICING = {
             ("Is there a HubSpot discount for startups?","HubSpot for Startups offers 30–90% off for qualifying startups under $2M ARR. Apply at hubspot.com/startups."),
         ]
     ),
+    "impact-com": dict(
+        name="impact.com", logo="https://cdn.simpleicons.org/impact/ffffff",
+        go="/go/impact", history="/pages/impact-com-pricing-history-2026",
+        page="/pages/best-impact-com-alternatives-2026", sticky="impact.com's Starter tier is self-serve — request a demo to get pricing for your program size.",
+        hidden_risk="Medium", hidden_note="Pricing scales with program size and partner count — get a custom quote from impact.com sales",
+        meta_desc="impact.com pricing 2026: not publicly listed — custom quotes based on program size. Starter, Growth, and Enterprise tiers available. What brands actually pay, plus the hidden costs nobody mentions.",
+        plans=[
+            dict(name="Publisher",  mo="$0",      annual="$0",       best="Affiliates & publishers", users="Unlimited", storage="Unlimited",  support="Help center", f=["Join affiliate programs","Track commissions","Publisher dashboard"],         fc=["cw","cw","cw"]),
+            dict(name="Starter",    mo="Custom",  annual="Custom",   best="Small brand programs",    users="Unlimited", storage="Unlimited",  support="Email",       f=["Affiliate program management","Automated payouts","Performance tracking"],   fc=["cw","cw","cm"]),
+            dict(name="Growth",     mo="Custom",  annual="Custom",   best="Mid-market brands",       users="Unlimited", storage="Unlimited",  support="Priority",    f=["Influencer + affiliate","Advanced fraud protection","Full API access"],       fc=["cw","cw","cw"]),
+            dict(name="Enterprise", mo="Custom",  annual="Custom",   best="Large brand programs",    users="Unlimited", storage="Unlimited",  support="Dedicated CSM",f=["Custom contract structures","Multi-program management","White-glove setup"],fc=["cw","cw","cw"]),
+        ],
+        hidden=[
+            dict(name="Custom pricing only", desc="impact.com does not publish pricing publicly. All paid tiers require a demo call with sales. Expect significant variation based on program size and partner count."),
+            dict(name="Minimum commitments", desc="Enterprise tiers typically require annual contracts with minimum partner counts. Ask about minimum spend requirements upfront."),
+            dict(name="Transaction fees", desc="Some tiers charge per-transaction fees on top of the platform fee. Clarify the full cost model (platform fee vs. percentage of spend) during your demo."),
+        ],
+        scenarios=[
+            dict(users="Publisher/affiliate", cost="$0/mo", plan="Publisher", plan_cls="v-value", breakdown="Free publisher account — join programs, track commissions, get paid"),
+            dict(users="Small brand (~50 partners)", cost="Custom", plan="Starter", plan_cls="v-visual", breakdown="Request a demo — pricing based on program size and annual partner volume"),
+            dict(users="Enterprise (500+ partners)", cost="Custom", plan="Enterprise", plan_cls="v-ent", breakdown="Enterprise contract — dedicated CSM, multi-program, custom payout structures"),
+        ],
+        alts=[
+            dict(name="PartnerStack", url="/pages/impact-com-vs-partnerstack-which-is-better-in-2026", price="Custom", logo="https://cdn.simpleicons.org/partnerstack/5cba68"),
+            dict(name="Refersion",    url="/pages/impact-com-vs-refersion-which-is-better-in-2026",    price="From $89/mo", logo="https://cdn.simpleicons.org/refersion/fc4f2a"),
+            dict(name="Rewardful",    url="/pages/impact-com-vs-rewardful-which-is-better-in-2026",    price="From $29/mo", logo="https://cdn.simpleicons.org/rewardful/663399"),
+            dict(name="Tapfiliate",   url="/pages/impact-com-vs-tapfiliate-which-is-better-in-2026",   price="From $119/mo", logo="https://cdn.simpleicons.org/tapfiliate/28b5f5"),
+        ],
+        faqs=[
+            ("How much does impact.com cost?", "impact.com does not publish pricing publicly — all paid plans require a custom quote from their sales team. Pricing scales with the number of partners you manage and your annual affiliate program spend."),
+            ("Is impact.com free for publishers?", "Yes — publisher (affiliate) accounts are completely free. You can join affiliate programs, track your commissions, and receive payouts at no cost."),
+            ("What is the difference between impact.com tiers?", "Starter suits smaller brand affiliate programs. Growth adds influencer and ambassador management. Enterprise adds multi-program support, advanced fraud detection, and a dedicated CSM."),
+            ("How does impact.com compare to PartnerStack?", "impact.com focuses on large-scale affiliate and influencer programs for enterprise brands. PartnerStack specialises in B2B SaaS partner programs. impact.com has better fraud protection; PartnerStack has stronger SaaS-native integrations."),
+            ("Does impact.com charge transaction fees?", "impact.com's pricing model varies by tier — some plans include a platform fee plus a transaction percentage, others are flat. Always clarify the full cost model during your demo call."),
+        ]
+    ),
     "nordvpn": dict(
         name="NordVPN", logo="https://cdn.simpleicons.org/nordvpn/4687ff",
         go="/go/nordvpn", history="/pages/nordvpn-pricing-history-2026",
@@ -459,7 +495,7 @@ def slug_to_name(slug):
         "bigcommerce":"BigCommerce","canva":"Canva","clearscope":"Clearscope",
         "clickup":"ClickUp","deel":"Deel","elementor":"Elementor",
         "freshbooks":"FreshBooks","getresponse":"GetResponse","github-copilot":"GitHub Copilot",
-        "gusto":"Gusto","hubspot":"HubSpot","jira":"Jira","lastpass":"LastPass",
+        "gusto":"Gusto","hubspot":"HubSpot","impact-com":"impact.com","jira":"Jira","lastpass":"LastPass",
         "linear":"Linear","mailchimp":"Mailchimp","mixpanel":"Mixpanel",
         "monday":"Monday.com","mondaycom":"Monday.com","moz-pro":"Moz Pro","notion":"Notion",
         "nordpass":"NordPass","nordvpn":"NordVPN","protonvpn":"ProtonVPN",
