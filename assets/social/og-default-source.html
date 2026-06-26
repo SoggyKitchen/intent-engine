@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+:root{
+  --bg-deep:#050407; --pink:#ff416d; --pink-soft:#ff557c; --pink-light:#ff7a9a;
+  --ink:#fff7f8; --ink-3:rgba(255,247,248,.64); --ink-4:rgba(255,247,248,.42);
+  --line:rgba(255,255,255,.09);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{
+  font-family:'Inter',system-ui,'Segoe UI',sans-serif;
+  background:var(--bg-deep);
+  color:var(--ink);
+  position:relative;
+}
+/* layered background */
+.bg{position:absolute;inset:0;overflow:hidden}
+.glow1{position:absolute;top:-260px;left:-180px;width:820px;height:820px;border-radius:50%;
+  background:radial-gradient(circle, rgba(255,65,109,.30), rgba(255,65,109,.06) 45%, transparent 70%);filter:blur(8px)}
+.glow2{position:absolute;bottom:-340px;right:-220px;width:760px;height:760px;border-radius:50%;
+  background:radial-gradient(circle, rgba(120,0,40,.45), rgba(120,0,40,.10) 50%, transparent 72%)}
+.dots{position:absolute;inset:0;opacity:.5;
+  background-image:radial-gradient(rgba(255,255,255,.10) 1.1px, transparent 1.2px);
+  background-size:26px 26px;
+  -webkit-mask-image:linear-gradient(120deg,#000 30%,transparent 85%);
+          mask-image:linear-gradient(120deg,#000 30%,transparent 85%)}
+.topbar{position:absolute;top:0;left:0;right:0;height:6px;
+  background:linear-gradient(90deg,var(--pink-light),var(--pink) 35%,var(--pink) 65%,transparent)}
+
+/* decorative giant mark bleeding off right */
+.ghost{position:absolute;right:-110px;top:50%;transform:translateY(-50%);width:560px;height:560px;opacity:.10}
+.ghost svg{width:100%;height:100%}
+
+.wrap{position:absolute;inset:0;padding:74px 80px;display:flex;flex-direction:column}
+
+/* brand row */
+.brand{display:flex;align-items:center;gap:18px}
+.brand .mark{width:54px;height:54px;filter:drop-shadow(0 6px 18px rgba(255,65,109,.45))}
+.brand .name{font-size:34px;font-weight:700;letter-spacing:-.02em}
+.brand .name b{color:var(--pink)}
+
+/* headline */
+.head{margin-top:auto}
+h1{font-size:104px;line-height:.95;font-weight:800;letter-spacing:-.035em;max-width:880px}
+h1 .hl{background:linear-gradient(120deg,var(--pink),var(--pink-light));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 .dot{color:var(--pink)}
+.sub{margin-top:26px;font-size:31px;font-weight:500;color:var(--ink-3);letter-spacing:-.01em;max-width:760px}
+
+/* feature pills + url */
+.foot{margin-top:auto;display:flex;align-items:center;gap:16px}
+.pill{display:flex;align-items:center;gap:11px;padding:14px 22px;border-radius:9999px;
+  background:linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.022));
+  border:1px solid var(--line);font-size:22px;font-weight:600;color:var(--ink)}
+.pill svg{width:22px;height:22px;color:var(--pink)}
+.spacer{flex:1}
+.url{font-size:24px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.url span{color:var(--ink-4);font-weight:500}
+</style>
+</head>
+<body>
+<div class="bg">
+  <div class="glow2"></div>
+  <div class="glow1"></div>
+  <div class="dots"></div>
+  <div class="topbar"></div>
+  <div class="ghost">
+    <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#ff416d" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/>
+      <path fill="#fff7f8" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/>
+    </svg>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#ff416d" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/>
+      <path fill="#fff7f8" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/>
+    </svg>
+    <div class="name">Saa<b>Spare</b></div>
+  </div>
+
+  <div class="head">
+    <h1><span class="hl">Honest</span> SaaS<br>comparisons<span class="dot">.</span></h1>
+    <div class="sub">Real pricing, free trials &amp; better alternatives — for 200+ B2B tools.</div>
+  </div>
+
+  <div class="foot">
+    <div class="pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      Pricing Guides
+    </div>
+    <div class="pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><path d="M3 7l4 9a4 4 0 0 1-8 0z" transform="translate(2 0)"/><path d="M15 7l4 9a4 4 0 0 1-8 0z" transform="translate(2 0)"/><line x1="6" y1="6" x2="18" y2="6"/></svg>
+      Comparisons
+    </div>
+    <div class="pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg>
+      Deal Radar
+    </div>
+    <div class="spacer"></div>
+    <div class="url">saaspare<span>.org</span></div>
+  </div>
+</div>
+</body>
+</html>
