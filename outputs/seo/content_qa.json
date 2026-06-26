@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-06-26T07:57:46.240497+00:00",
+  "generated_at": "2026-06-26T13:34:01.715286+00:00",
   "stats": {
-    "sitemap_urls": 1428,
-    "sitemap_with_lastmod": 1428,
+    "sitemap_urls": 1440,
+    "sitemap_with_lastmod": 1440,
     "total_pages": 1489,
     "indexable_pages": 1477,
-    "title_over_70": 118,
+    "title_over_70": 121,
     "desc_over_165": 27,
     "money_pages": 1211,
     "soft": 4
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/pages/v3-preview-privacy.html: title <30 chars (25)",
-    "site/pages/v3-preview-404.html: title <30 chars (25)",
     "site/pages/thanks.html: title <30 chars (29)",
-    "site/pages/v3-preview-contact.html: title <30 chars (27)"
+    "site/pages/v3-preview-404.html: title <30 chars (25)",
+    "site/pages/v3-preview-contact.html: title <30 chars (27)",
+    "site/pages/v3-preview-privacy.html: title <30 chars (25)"
   ],
   "soft_issues_total": 4
 }

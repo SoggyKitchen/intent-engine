@@ -64,12 +64,86 @@ NEW_ROUTES = """
 /go/kajabi https://kajabi.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 """
 
+# === MISSING-ROUTE BACKFILL (2026-06-25 audit) ===
+# Pages link to these /go/ routes but they were never defined → every click 404s.
+# No approved affiliate program for these yet, so they point to the vendor's real
+# homepage with utm tags: a working link (no fake tracking). Swap for tracked
+# network links the moment each program is approved.
+BACKFILL_ROUTES = {
+    "/go/bitwarden-pricing": "https://bitwarden.com/pricing/",
+    "/go/canva": "https://www.canva.com/",
+    "/go/coda": "https://coda.io/",
+    "/go/coda-pricing": "https://coda.io/pricing",
+    "/go/confluence": "https://www.atlassian.com/software/confluence",
+    "/go/confluence-pricing": "https://www.atlassian.com/software/confluence/pricing",
+    "/go/constant-contact-trial": "https://www.constantcontact.com/",
+    "/go/dynatrace": "https://www.dynatrace.com/",
+    "/go/dynatrace-pricing": "https://www.dynatrace.com/pricing/",
+    "/go/fraseio": "https://www.frase.io/",
+    "/go/getresponse-email": "https://www.getresponse.com/",
+    "/go/github-issues-pricing": "https://github.com/pricing",
+    "/go/google-meet": "https://workspace.google.com/products/meet/",
+    "/go/google-meet-pricing": "https://workspace.google.com/pricing",
+    "/go/grafana": "https://grafana.com/",
+    "/go/grafana-pricing": "https://grafana.com/pricing/",
+    "/go/hubspot-crm-pricing": "https://www.hubspot.com/pricing/crm",
+    "/go/jira": "https://www.atlassian.com/software/jira",
+    "/go/jira-pricing": "https://www.atlassian.com/software/jira/pricing",
+    "/go/marketmuse": "https://www.marketmuse.com/",
+    "/go/marketmuse-pricing": "https://www.marketmuse.com/pricing/",
+    "/go/microsoft-teams": "https://www.microsoft.com/microsoft-teams/group-chat-software",
+    "/go/microsoft-teams-pricing": "https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options",
+    "/go/miro": "https://miro.com/",
+    "/go/moz": "https://moz.com/",
+    "/go/myob": "https://www.myob.com/",
+    "/go/myob-pricing": "https://www.myob.com/au/pricing",
+    "/go/netlify": "https://www.netlify.com/",
+    "/go/netlify-pricing": "https://www.netlify.com/pricing/",
+    "/go/new-relic": "https://newrelic.com/",
+    "/go/new-relic-pricing": "https://newrelic.com/pricing",
+    "/go/partnerstack": "https://partnerstack.com/",
+    "/go/quickbooks-pricing": "https://quickbooks.intuit.com/pricing/",
+    "/go/remotecom": "https://remote.com/",
+    "/go/remotecom-pricing": "https://remote.com/pricing",
+    "/go/slack": "https://slack.com/",
+    "/go/stripe": "https://stripe.com/",
+    "/go/upwork": "https://www.upwork.com/",
+    "/go/vercel": "https://vercel.com/",
+    "/go/wave": "https://www.waveapps.com/",
+    "/go/wave-pricing": "https://www.waveapps.com/pricing",
+    "/go/webex": "https://www.webex.com/",
+    "/go/webex-pricing": "https://www.webex.com/pricing.html",
+    "/go/wix": "https://www.wix.com/",
+    "/go/wix-ecommerce-pricing": "https://www.wix.com/ecommerce/website",
+    "/go/woocommerce": "https://woocommerce.com/",
+    "/go/woocommerce-pricing": "https://woocommerce.com/pricing/",
+    "/go/workday": "https://www.workday.com/",
+    "/go/workday-pricing": "https://www.workday.com/en-us/pricing.html",
+    "/go/zendesk": "https://www.zendesk.com/",
+}
+
 current = REDIRECTS.read_text(encoding="utf-8")
 
 # Only add if not already present
 if "/go/expressvpn " not in current:
-    updated = current.rstrip() + NEW_ROUTES
-    REDIRECTS.write_text(updated, encoding="utf-8")
+    current = current.rstrip() + NEW_ROUTES
     print(f"Added {len(NEW_ROUTES.strip().splitlines())} new routes to _redirects")
 else:
-    print("Routes already present — skipped")
+    print("Pending routes already present — skipped")
+
+# Backfill missing routes (idempotent per-route check)
+defined = {line.split()[0] for line in current.splitlines() if line.startswith("/go/")}
+added = []
+backfill_lines = ["\n\n# === MISSING-ROUTE BACKFILL (2026-06-25 audit — vendor homepages, swap when approved) ==="]
+for route, url in sorted(BACKFILL_ROUTES.items()):
+    if route not in defined:
+        sep = "&" if "?" in url else "?"
+        backfill_lines.append(f"{route} {url}{sep}utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302")
+        added.append(route)
+if added:
+    current = current.rstrip() + "\n".join(backfill_lines) + "\n"
+    print(f"Backfilled {len(added)} missing routes: {', '.join(added)}")
+else:
+    print("Backfill routes already present — skipped")
+
+REDIRECTS.write_text(current, encoding="utf-8")
