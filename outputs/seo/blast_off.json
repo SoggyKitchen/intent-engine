@@ -1,12 +1,12 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-26",
-  "titles_rewritten": 3,
-  "descs_rewritten": 24,
+  "titles_rewritten": 4,
+  "descs_rewritten": 26,
   "dates_refreshed": 0,
-  "answers_added": 15,
-  "files_changed": 24,
-  "files_scanned": 1429,
+  "answers_added": 16,
+  "files_changed": 26,
+  "files_scanned": 1431,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
@@ -14,13 +14,18 @@
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
     },
     {
+      "file": "impact-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "impact.com Pricing 2026: What You Actually Pay \u2014 SaaSpare",
+      "after": "impact.com Pricing 2026 (Verified June) \u2014 Real Costs + Hidden Fees"
+    },
+    {
       "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free (20M Events/Month) + Growth Plans \u2014 All Costs Verified",
+      "before": "Mixpanel Pricing 2026: Is the Free Plan Enough? Honest June Cost Breakdown",
       "after": "Mixpanel Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
     },
     {
       "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Ramp Pricing 2026: Free Card Confirmed \u2014 All Changes Tracked (June Update)",
+      "before": "Ramp Pricing 2026: June Change Confirmed \u2014 Every Plan & Hidden Cost Exposed",
       "after": "Ramp Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
