@@ -6,16 +6,16 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 
 (Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.)
 
-- **Ramp** [PLACEHOLDER, none] — 7 pages, 86 impressions, $100/conv
+- **Ramp** [PLACEHOLDER, none] — 7 pages, 76 impressions, $100/conv
 - **Pipedrive** [PLACEHOLDER, none] — 8 pages, 53 impressions, $60/conv
-- **Notion** [PLACEHOLDER, none] — 11 pages, 41 impressions, $15/conv
+- **Notion** [PLACEHOLDER, none] — 11 pages, 39 impressions, $15/conv
 - **Linear** [PLACEHOLDER, none] — 9 pages, 13 impressions, $20/conv
 - **Asana** [PLACEHOLDER, none] — 28 pages, 4 impressions, $15/conv
 - **FreshBooks** [PENDING, Awin] — 23 pages, 3 impressions, $200/conv
+- **1Password** [PENDING, Impact] — 29 pages, 3 impressions, $45/conv
 - **Xero** [PENDING, Direct] — 15 pages, 3 impressions, $80/conv
 - **Deel** [PLACEHOLDER, none] — 9 pages, 1 impressions, $100/conv
 - **ActiveCampaign** [LOCKED, PartnerStack] — 20 pages, 1 impressions, $85/conv
-- **1Password** [PENDING, Impact] — 29 pages, 1 impressions, $45/conv
 - **Zoom** [PLACEHOLDER, none] — 9 pages, 1 impressions, $12/conv
 - **Dashlane** [LOCKED, PartnerStack] — 9 pages, 1 impressions, $38/conv
 - **Salesforce** [PLACEHOLDER, none] — 8 pages, 1 impressions, $120/conv

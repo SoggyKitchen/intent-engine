@@ -2,14 +2,14 @@
   "gscLive": true,
   "opportunities": [
     {
-      "score": 13.22,
+      "score": 11.07,
       "page": "/pages/semrush-vs-moz-pro-which-is-better-in-2026",
       "program": "Semrush",
       "status": "EARNING",
       "linkState": "placeholder",
       "valuePerConvUsd": 200,
-      "impressions": 1322,
-      "position": 69.7,
+      "impressions": 1107,
+      "position": 69.1,
       "clicks": 0,
       "estExtraClicksMo": 0.0,
       "estMonthlyUpliftUsd": 0.0,
@@ -30,17 +30,17 @@
       "pageType": "pricing"
     },
     {
-      "score": 4.3,
+      "score": 3.8,
       "page": "/pages/ramp-pricing-history-2026",
       "program": "Ramp",
       "status": "PLACEHOLDER",
       "linkState": "placeholder",
       "valuePerConvUsd": 100,
-      "impressions": 86,
+      "impressions": 76,
       "position": 9.3,
       "clicks": 1,
-      "estExtraClicksMo": 4.3,
-      "estMonthlyUpliftUsd": 8.6,
+      "estExtraClicksMo": 3.8,
+      "estMonthlyUpliftUsd": 7.6,
       "pageType": "pricing"
     },
     {
@@ -58,17 +58,17 @@
       "pageType": "pricing"
     },
     {
-      "score": 0.68,
+      "score": 0.65,
       "page": "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
       "program": "Notion",
       "status": "PLACEHOLDER",
       "linkState": "placeholder",
       "valuePerConvUsd": 15,
-      "impressions": 41,
-      "position": 11.4,
+      "impressions": 39,
+      "position": 11.8,
       "clicks": 0,
-      "estExtraClicksMo": 2.3,
-      "estMonthlyUpliftUsd": 0.68,
+      "estExtraClicksMo": 2.1,
+      "estMonthlyUpliftUsd": 0.64,
       "pageType": "pricing"
     }
   ]
