@@ -7,7 +7,6 @@ Pages scanned: 1463
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 1
 - images_missing_alt: 2
 - meta_length_outside_target: 25
 - missing_correction_cta: 299
@@ -38,7 +37,7 @@ Pages scanned: 1463
 - `/cookie-policy`: 75.98/100, issues=none
 - `/pages/saas-pricing-changes`: 75.99/100, issues=none
 - `/pages/which-saas-has-the-best-free-plan-2026`: 76.31/100, issues=none
-- `/pages`: 77.0/100, issues=none
+- `/pages`: 78.0/100, issues=none
 - `/advertise`: 79.32/100, issues=none
 - `/pages/request-a-comparison`: 79.34/100, issues=none
 - `/privacy`: 79.64/100, issues=none
@@ -58,7 +57,6 @@ Pages scanned: 1463
 - `/pages/v3-preview-about`: 83.76/100, issues=none
 - `/pages/v3-preview-newsletter`: 83.87/100, issues=none
 - `/pages/v3-preview-library`: 84.04/100, issues=none
-- `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay`: 84.5/100, issues=broken_internal_link
 - `/pages/v3-preview-shortlist`: 84.61/100, issues=none
 - `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 84.77/100, issues=none
 - `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.77/100, issues=none
@@ -69,3 +67,4 @@ Pages scanned: 1463
 - `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 84.81/100, issues=none
 - `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 84.88/100, issues=none
 - `/pages/v3-preview-roi-calculator`: 84.89/100, issues=none
+- `/terms`: 85.0/100, issues=none

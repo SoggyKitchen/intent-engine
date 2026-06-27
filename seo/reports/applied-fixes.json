@@ -351,6 +351,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/fiverr-vs-freelancer-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/fiverr-vs-freelancer-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -427,6 +440,19 @@
     ],
     "path": "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
   },
   {
     "file": "site/pages/index.html",
