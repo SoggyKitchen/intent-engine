@@ -1,25 +1,30 @@
 {
-  "generated_at": "2026-06-27T21:54:36.022129+00:00",
+  "generated_at": "2026-06-27T23:27:51.383917+00:00",
   "stats": {
-    "sitemap_urls": 1432,
-    "sitemap_with_lastmod": 1432,
-    "total_pages": 1493,
-    "indexable_pages": 1481,
-    "title_over_70": 121,
-    "desc_over_165": 25,
-    "money_pages": 1215,
-    "soft": 8
+    "sitemap_urls": 1435,
+    "sitemap_with_lastmod": 1435,
+    "total_pages": 1496,
+    "indexable_pages": 1484,
+    "title_over_70": 122,
+    "desc_over_165": 28,
+    "money_pages": 1218,
+    "soft": 12,
+    "duplicate_titles": 1
   },
   "hard_failures": [],
   "soft_issues": [
     "site/pages/v3-preview-privacy.html: title <30 chars (25)",
     "site/pages/v3-preview-404.html: title <30 chars (25)",
+    "site/pages/zapier-vs-make-which-is-better-in-2026.html: /go/ link without rel attribute: /go/hubspot",
+    "site/pages/zapier-vs-make-which-is-better-in-2026.html: /go/ link without rel attribute: /go/clickup-trial",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/thanks.html: title <30 chars (29)",
-    "site/pages/v3-preview-contact.html: title <30 chars (27)"
+    "site/pages/v3-preview-contact.html: title <30 chars (27)",
+    "site/pages/airtable-vs-notion-which-is-better-in-2026.html: /go/ link without rel attribute: /go/clickup-trial",
+    "duplicate title (2 pages): \"Ramp Pricing 2026 (Verified June 2026) — Real Costs + Hidden\" — ['site/pages/ramp-pricing-history-2026.html', 'site/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay.html']"
   ],
-  "soft_issues_total": 8
+  "soft_issues_total": 12
 }
