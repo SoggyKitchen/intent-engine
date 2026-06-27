@@ -1,21 +1,25 @@
 {
-  "generated_at": "2026-06-27T21:13:38.706751+00:00",
+  "generated_at": "2026-06-27T21:54:36.022129+00:00",
   "stats": {
-    "sitemap_urls": 1431,
-    "sitemap_with_lastmod": 1431,
-    "total_pages": 1492,
-    "indexable_pages": 1480,
-    "title_over_70": 120,
-    "desc_over_165": 28,
-    "money_pages": 1214,
-    "soft": 4
+    "sitemap_urls": 1432,
+    "sitemap_with_lastmod": 1432,
+    "total_pages": 1493,
+    "indexable_pages": 1481,
+    "title_over_70": 121,
+    "desc_over_165": 25,
+    "money_pages": 1215,
+    "soft": 8
   },
   "hard_failures": [],
   "soft_issues": [
     "site/pages/v3-preview-privacy.html: title <30 chars (25)",
     "site/pages/v3-preview-404.html: title <30 chars (25)",
+    "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
+    "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
+    "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
+    "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/thanks.html: title <30 chars (29)",
     "site/pages/v3-preview-contact.html: title <30 chars (27)"
   ],
-  "soft_issues_total": 4
+  "soft_issues_total": 8
 }
