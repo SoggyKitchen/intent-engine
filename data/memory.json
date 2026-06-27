@@ -441,6 +441,46 @@
         "URGENT: Log into Impact.com (account 7269601) - apply for HubSpot, 1Password, Monday",
         "ACTION: Log into Awin (publisher 2917137) - apply to GetResponse, Elementor, ProtonVPN, Parallels"
       ]
+    },
+    {
+      "date": "2026-06-27",
+      "session": "sunday-maximizer-2026-06-27",
+      "new_pages": [
+        "zapier-vs-make-which-is-better-in-2026.html - Zapier (9.0/10) wins vs Make (8.6/10), covers missing automation category (~50K+ monthly searches), CTAs -> /go/zapier + /go/make-com",
+        "airtable-vs-notion-which-is-better-in-2026.html - Notion (8.9/10) wins vs Airtable (8.7/10), covers missing database/docs category (~10K+ monthly searches), CTAs -> /go/notion + /go/airtable",
+        "hubspot-vs-intercom-which-is-better-in-2026.html - HubSpot (9.2/10) wins vs Intercom (8.5/10), adds to HubSpot cluster (39 pages, 50-1000/sale pending), CTAs -> /go/hubspot + /go/intercom"
+      ],
+      "redirects_added": [
+        "/go/zapier -> zapier.com",
+        "/go/make-com -> make.com",
+        "/go/make -> make.com",
+        "/go/airtable -> airtable.com",
+        "/go/intercom -> intercom.com"
+      ],
+      "ctr_fixes": [
+        "mixpanel-pricing: title -> Free Plan Gets 20M Events + Every Tier Compared [June Update] (208 impr, pos 12.4, CTR 0%)",
+        "ramp-pricing-history: title -> Bill Pay Fee Added April + Full Change History [June Update] (52 impr, pos 9.6, CTR 0%) + fixed truncated meta",
+        "tresorit-pricing-history: title -> Every Change Tracked, Real Cost & June 2026 Update (33 impr, pos 8.3, CTR 0%)"
+      ],
+      "design_checks": "All 3 new pages: dark bg body style, nav#sp-nav SVG logo, 3 CSS files, Article+FAQPage schema in <script> tags, affiliate disclosure, author Kaylan von Papen",
+      "post_build_scripts": "fix_universal_nav.py (17 pages updated) + fix_inject_ui_css.py (2 pages fixed)",
+      "site_health": "94.52/100, 1463 pages, sitemap updated to 1435 URLs",
+      "tests": "93/93 passed",
+      "measure_at_21days": {
+        "zapier-vs-make-impressions": "new page - baseline TBD",
+        "airtable-vs-notion-impressions": "new page - baseline TBD",
+        "hubspot-vs-intercom-impressions": "new page - baseline TBD",
+        "mixpanel-pricing-ctr": "was 0% @ pos 12.4, 208 impr -> target >0.5%",
+        "ramp-pricing-history-ctr": "was 0% @ pos 9.6, 52 impr -> target >0.5%",
+        "tresorit-pricing-history-ctr": "was 0% @ pos 8.3, 33 impr -> target >0.5%"
+      },
+      "next_human_actions": [
+        "URGENT: Log into Impact.com (account 7269601) - apply for HubSpot ($250-1000/sale), 1Password ($30-60/sale) manually from dashboard",
+        "URGENT: Log into PartnerStack - check ClickUp, ActiveCampaign, Monday, Dashlane application status",
+        "ACTION: Apply to Zapier affiliate program (share.zapier.com) and Make affiliate program (when available) - /go/zapier route ready",
+        "ACTION: Apply to Airtable affiliate program (airtable.com/partners) and Intercom affiliate (intercom.com/partners)",
+        "MONITOR: HubSpot Impact.com application - high value ($250-1000/sale), 39+ pages ready"
+      ]
     }
   ],
   "entries": [
