@@ -7,7 +7,6 @@ Pages scanned: 1465
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 1
 - images_missing_alt: 2
 - meta_length_outside_target: 21
 - missing_correction_cta: 300
@@ -38,7 +37,7 @@ Pages scanned: 1465
 - `/cookie-policy`: 75.98/100, issues=none
 - `/pages/saas-pricing-changes`: 75.99/100, issues=none
 - `/pages/which-saas-has-the-best-free-plan-2026`: 76.28/100, issues=none
-- `/pages`: 77.0/100, issues=none
+- `/pages`: 78.0/100, issues=none
 - `/advertise`: 79.32/100, issues=none
 - `/pages/request-a-comparison`: 79.33/100, issues=none
 - `/privacy`: 79.64/100, issues=none

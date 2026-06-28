@@ -312,6 +312,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elementor-vs-gutenberg-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -349,19 +362,6 @@
     ],
     "path": "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/fiverr-vs-freelancer-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/fiverr-vs-freelancer-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict.html",
@@ -416,6 +416,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
     "file": "site/pages/hubspot-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -440,19 +453,6 @@
     ],
     "path": "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay",
-    "premium": false
   },
   {
     "file": "site/pages/index.html",

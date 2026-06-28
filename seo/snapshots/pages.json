@@ -3681,8 +3681,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/1password-pricing-history-2026",
@@ -3690,17 +3690,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.32,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 89.57,
+      "overall": 92.07,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "1Password Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 69,
@@ -3860,7 +3861,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent 1Password review 2026 \u2014 rated 9.2/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -3870,20 +3871,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.91,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.41,
+      "overall": 92.91,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "1Password Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 68,
@@ -11110,7 +11109,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent ActiveCampaign review 2026 \u2014 rated 8.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026\u2026",
     "meta_length": 156,
     "page_type": "review",
@@ -11120,20 +11119,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.63,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.13,
+      "overall": 92.63,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "ActiveCampaign Review 2026: Is It Worth It? \u2014 SaaSpare",
     "title_length": 54,
@@ -12282,8 +12279,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 163,
     "page_type": "pricing",
     "path": "/pages/ahrefs-pricing-history-2026",
@@ -12291,17 +12288,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.89,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.14,
+      "overall": 92.64,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Ahrefs Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -12461,7 +12459,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Ahrefs review 2026 \u2014 rated 9.0/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 155,
     "page_type": "pricing",
@@ -12471,20 +12469,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.78,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.28,
+      "overall": 92.78,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Ahrefs Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 65,
@@ -13825,7 +13821,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Amplitude review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -13835,20 +13831,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.73,
+      "overall": 92.23,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Amplitude Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 68,
@@ -15576,8 +15570,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 162,
     "page_type": "pricing",
     "path": "/pages/asana-pricing-history-2026",
@@ -15585,17 +15579,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.8,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.05,
+      "overall": 92.55,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Asana Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 65,
@@ -15755,7 +15750,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Asana review 2026 \u2014 rated 8.3/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 154,
     "page_type": "pricing",
@@ -15765,20 +15760,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.78,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.28,
+      "overall": 92.78,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Asana Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 64,
@@ -16754,7 +16747,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent AWeber review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 155,
     "page_type": "pricing",
@@ -16764,20 +16757,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "AWeber Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 65,
@@ -17997,7 +17988,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent BambooHR review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -18007,20 +17998,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.2,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.69,
+      "overall": 92.19,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "BambooHR Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -30580,11 +30569,10 @@
     "jsonld_blocks": 3,
     "meta_description": "Updated June 2026. Independent Best Devtools For Secure Code review 2026: real pricing breakdown, hands-on pros and cons, and an honest final\u2026",
     "meta_length": 142,
-    "page_type": "pricing",
+    "page_type": "review",
     "path": "/pages/best-devtools-for-secure-code-review-in-2025",
     "robots": "",
     "schema_types": [
-      "AggregateRating",
       "Answer",
       "Article",
       "Brand",
@@ -40852,7 +40840,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent BigCommerce review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -40862,20 +40850,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.71,
+      "overall": 92.21,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "BigCommerce Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 70,
@@ -43545,7 +43531,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Canva review 2026 \u2014 rated 8.5/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 154,
     "page_type": "pricing",
@@ -43555,20 +43541,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.7,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.19,
+      "overall": 92.69,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Canva Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 64,
@@ -45859,7 +45843,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Clearscope review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -45869,20 +45853,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.25,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.75,
+      "overall": 92.25,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Clearscope Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 69,
@@ -46395,8 +46377,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/clickup-pricing-history-2026",
@@ -46404,17 +46386,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.94,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.19,
+      "overall": 92.69,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "ClickUp Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -46574,7 +46557,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent ClickUp review 2026 \u2014 rated 8.7/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -46584,20 +46567,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.82,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.33,
+      "overall": 92.83,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "ClickUp Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -49698,7 +49679,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Contabo review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -49708,20 +49689,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.22,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Contabo Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -51562,7 +51541,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Copy.ai review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -51572,20 +51551,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.4,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.9,
+      "overall": 92.4,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Copy.ai Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -54648,8 +54625,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Datadog pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Datadog pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/datadog-pricing-history-2026",
@@ -54657,17 +54634,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.32,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 89.57,
+      "overall": 92.07,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Datadog Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -54827,7 +54805,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Datadog review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -54837,20 +54815,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.73,
+      "overall": 92.23,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Datadog Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -55541,7 +55517,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Deel review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest verdict,\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -55551,20 +55527,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.19,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.69,
+      "overall": 92.19,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Deel Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 63,
@@ -56166,7 +56140,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent DigitalOcean review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 161,
     "page_type": "review",
@@ -56176,20 +56150,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.2,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.69,
+      "overall": 92.19,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "DigitalOcean Review 2026: Is It Worth It? \u2014 SaaSpare",
     "title_length": 52,
@@ -57574,7 +57546,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent DocuSign review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -57584,20 +57556,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.19,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.69,
+      "overall": 92.19,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "DocuSign Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -62296,7 +62266,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Elementor review 2026 \u2014 rated 8.4/10. Best WordPress page builder for most teams, but it",
     "meta_length": 119,
     "page_type": "review",
@@ -62306,20 +62276,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Elementor Review (2026): 8.4/10 \u2014 Is It Worth It? Honest Verdict",
     "title_length": 64,
@@ -62940,7 +62908,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent ElevenLabs review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -62950,20 +62918,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.2,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.7,
+      "overall": 92.2,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "ElevenLabs Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 69,
@@ -64343,7 +64309,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent ExpressVPN review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -64353,20 +64319,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.73,
+      "overall": 92.23,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "ExpressVPN Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 69,
@@ -65048,7 +65012,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Fiverr review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 155,
     "page_type": "pricing",
@@ -65058,20 +65022,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Fiverr Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 65,
@@ -65882,7 +65844,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent FreshBooks review 2026 \u2014 rated 8.2/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -65892,20 +65854,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.55,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.05,
+      "overall": 92.55,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "FreshBooks Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 69,
@@ -67673,7 +67633,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent GetResponse review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -67683,20 +67643,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.71,
+      "overall": 92.21,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "GetResponse Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 70,
@@ -71474,7 +71432,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Gusto review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 154,
     "page_type": "pricing",
@@ -71484,20 +71442,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Gusto Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 64,
@@ -72448,7 +72404,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Hetzner review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -72458,20 +72414,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Hetzner Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -73247,7 +73201,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. HostPapa review 2026: 7.1/10 \u2014 green hosting with great phone support, but renewal rates jump 2\u20133\u00d7. Best for small businesses and beginners.\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -73257,20 +73211,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 93.0,
+      "overall": 90.5,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "HostPapa Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -74608,8 +74560,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/hubspot-pricing-history-2026",
@@ -74617,17 +74569,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.97,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.22,
+      "overall": 92.72,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "HubSpot Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -74787,7 +74740,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent HubSpot review 2026 \u2014 rated 9.1/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -74797,20 +74750,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.88,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.38,
+      "overall": 92.88,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "HubSpot Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -77008,7 +76959,7 @@
   {
     "affiliate_links": [],
     "broken_internal_links": [],
-    "canonical": "https://saaspare.org/pages/index",
+    "canonical": "https://saaspare.org/pages",
     "external_links": [],
     "file": "site/pages/index.html",
     "h1": [
@@ -78479,17 +78430,16 @@
       "content": 13,
       "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 77.0,
+      "overall": 78.0,
       "performanceUx": 5,
       "schemaIndexability": 6,
-      "technical": 18,
+      "technical": 19,
       "trust": 15.0
     },
     "title": "SaaS Comparison Library: Pricing, Reviews, Free Trials & Alternatives | SaaSpare",
     "title_length": 80,
     "url": "https://saaspare.org/pages",
     "warnings": [
-      "canonical_mismatch",
       "missing_correction_cta",
       "missing_related_pages",
       "title_length_outside_target"
@@ -79434,7 +79384,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Jasper Ai review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -79444,20 +79394,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.41,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.91,
+      "overall": 92.41,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Jasper Ai Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 68,
@@ -81787,7 +81735,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Kajabi review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 155,
     "page_type": "pricing",
@@ -81797,20 +81745,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.22,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Kajabi Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 65,
@@ -84438,8 +84384,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Linear pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Linear pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 163,
     "page_type": "pricing",
     "path": "/pages/linear-pricing-history-2026",
@@ -84447,17 +84393,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.32,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 89.57,
+      "overall": 92.07,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Linear Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -84617,7 +84564,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Linear review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 155,
     "page_type": "pricing",
@@ -84627,20 +84574,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.73,
+      "overall": 92.23,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Linear Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 65,
@@ -88674,7 +88619,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Miro review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest verdict,\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -88684,20 +88629,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.24,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.74,
+      "overall": 92.24,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Miro Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 63,
@@ -89477,7 +89420,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Mixpanel review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -89487,20 +89430,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.71,
+      "overall": 92.21,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Mixpanel Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -90533,8 +90474,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/monday-com-pricing-history-2026",
@@ -90542,17 +90483,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.25,
+      "overall": 92.75,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Monday.com Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 70,
@@ -90711,7 +90653,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Monday.com review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -90721,20 +90663,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.38,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.88,
+      "overall": 92.38,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Monday.com Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 69,
@@ -92176,7 +92116,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Moz Pro review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -92186,20 +92126,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.41,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.91,
+      "overall": 92.41,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Moz Pro Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -93757,7 +93695,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Nordlayer review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -93767,20 +93705,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.22,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Nordlayer Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 68,
@@ -95787,7 +95723,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent NordPass review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -95797,20 +95733,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "NordPass Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -96616,7 +96550,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent NordVPN review 2026 \u2014 rated 8.6/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -96626,20 +96560,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.84,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.34,
+      "overall": 92.84,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "NordVPN Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -97250,8 +97182,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Notion pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Notion pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 163,
     "page_type": "pricing",
     "path": "/pages/notion-pricing-history-2026",
@@ -97259,17 +97191,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.82,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.07,
+      "overall": 92.57,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Notion Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -97429,7 +97362,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Notion review 2026 \u2014 rated 8.0/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 155,
     "page_type": "pricing",
@@ -97439,20 +97372,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.86,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.36,
+      "overall": 92.86,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Notion Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 65,
@@ -100330,7 +100261,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Pandadoc review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -100340,20 +100271,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.2,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.7,
+      "overall": 92.2,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Pandadoc Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -101395,7 +101324,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Parallels Desktop review 2026 \u2014 rated 8.7/10. Real pros and cons, verified pricing, and our honest verdict. Updated 8 June 2026.",
     "meta_length": 159,
     "page_type": "review",
@@ -101405,20 +101334,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Parallels Desktop Review 2026: Is It Worth It? \u2014 SaaSpare",
     "title_length": 57,
@@ -101755,7 +101682,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent PartnerStack review 2026 \u2014 rated 8.5/10. The leading B2B partner management platform. Real pros, cons, verified pricing info, and honest verdict for SaaS companies.",
     "meta_length": 195,
     "page_type": "review",
@@ -101765,20 +101692,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.0,
+      "overall": 88.5,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 18,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "PartnerStack Review 2026: Is It Worth It? Honest Verdict for SaaS Teams",
     "title_length": 71,
@@ -104029,8 +103954,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Pipedrive pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Pipedrive pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/pipedrive-pricing-history-2026",
@@ -104038,17 +103963,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.32,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 89.57,
+      "overall": 92.07,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Pipedrive Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 69,
@@ -104207,7 +104133,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Pipedrive review 2026 \u2014 rated 8.0/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -104217,20 +104143,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.68,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.18,
+      "overall": 92.68,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Pipedrive Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 68,
@@ -105634,7 +105558,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent ProtonVPN review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -105644,20 +105568,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "ProtonVPN Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 68,
@@ -107520,7 +107442,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Ramp",
     "meta_length": 23,
     "page_type": "review",
@@ -107530,20 +107452,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 93.72,
+      "overall": 91.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 19,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Ramp Review 2026: Is It Actually Free? 7.8/10 Score \u2014 Honest Verdict",
     "title_length": 68,
@@ -111113,7 +111033,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Rippling review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -111123,20 +111043,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.2,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.7,
+      "overall": 92.2,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Rippling Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -113569,8 +113487,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Salesforce pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Salesforce pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/salesforce-pricing-history-2026",
@@ -113578,17 +113496,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.91,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.41,
+      "overall": 92.91,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Salesforce Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 70,
@@ -113748,7 +113667,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Salesforce review 2026 \u2014 rated 8.4/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -113758,20 +113677,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.82,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.33,
+      "overall": 92.83,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Salesforce Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 69,
@@ -114992,7 +114909,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent SE Ranking review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -115002,20 +114919,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.37,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.87,
+      "overall": 92.37,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "SE Ranking Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 69,
@@ -115790,8 +115705,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Semrush pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Semrush pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/semrush-pricing-history-2026",
@@ -115799,17 +115714,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.85,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.1,
+      "overall": 92.6,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Semrush Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -115970,7 +115886,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Semrush review 2026 \u2014 rated 9.1/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -115980,20 +115896,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.94,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.44,
+      "overall": 92.94,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Semrush Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -118033,8 +117947,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Shopify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Shopify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/shopify-pricing-history-2026",
@@ -118042,17 +117956,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.87,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.12,
+      "overall": 92.62,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Shopify Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -118212,7 +118127,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Shopify review 2026 \u2014 rated 9.1/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -118222,20 +118137,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.75,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.25,
+      "overall": 92.75,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Shopify Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -119760,7 +119673,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Slack review 2026 \u2014 rated 8.2/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 154,
     "page_type": "pricing",
@@ -119770,20 +119683,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.92,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.42,
+      "overall": 92.92,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Slack Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 64,
@@ -121603,8 +121514,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Stripe pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Stripe pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 163,
     "page_type": "pricing",
     "path": "/pages/stripe-pricing-history-2026",
@@ -121612,17 +121523,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.84,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 90.09,
+      "overall": 92.59,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Stripe Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -121691,7 +121603,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Stripe review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 155,
     "page_type": "pricing",
@@ -121701,20 +121613,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Stripe Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 65,
@@ -122322,7 +122232,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Sucuri review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 155,
     "page_type": "pricing",
@@ -122332,20 +122242,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.24,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.74,
+      "overall": 92.24,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Sucuri Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 65,
@@ -122867,7 +122775,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Supabase review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -122877,20 +122785,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Supabase Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -123669,7 +123575,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Surfer SEO review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -123679,20 +123585,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.37,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.87,
+      "overall": 92.37,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Surfer SEO Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 69,
@@ -124568,7 +124472,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Surfshark review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -124578,20 +124482,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.71,
+      "overall": 92.21,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Surfshark Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 68,
@@ -126235,7 +126137,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Teachable review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -126245,20 +126147,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Teachable Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 68,
@@ -127216,8 +127116,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 1,
-    "meta_description": "Tresorit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 June 2026.",
+    "jsonld_blocks": 2,
+    "meta_description": "Tresorit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 June 2026.",
     "meta_length": 165,
     "page_type": "pricing",
     "path": "/pages/tresorit-pricing-history-2026",
@@ -127225,17 +127125,18 @@
     "schema_types": [
       "Answer",
       "FAQPage",
+      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.32,
       "conversionRevenue": 10,
       "internalLinking": 14.75,
-      "overall": 89.57,
+      "overall": 92.07,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Tresorit Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 68,
@@ -127304,7 +127205,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Tresorit review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -127314,20 +127215,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Tresorit Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -130397,7 +130296,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Vultr review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 154,
     "page_type": "pricing",
@@ -130407,20 +130306,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.21,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.72,
+      "overall": 92.22,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Vultr Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 64,
@@ -133299,7 +133196,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Workable review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -133309,20 +133206,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.23,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.73,
+      "overall": 92.23,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Workable Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 67,
@@ -135144,7 +135039,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Xero review 2026 \u2014 rated 8.4/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest verdict,\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -135154,20 +135049,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.82,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.32,
+      "overall": 92.82,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Xero Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 63,
@@ -136334,7 +136227,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Zendesk review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -136344,20 +136237,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.24,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.74,
+      "overall": 92.24,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Zendesk Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 66,
@@ -137747,7 +137638,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 2,
     "meta_description": "Updated June 2026. Independent Zoom review 2026 \u2014 rated 8.0/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest verdict,\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -137757,20 +137648,18 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
-      "Organization",
       "Question",
-      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 19.68,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.17,
+      "overall": 92.67,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 17.5
+      "trust": 15.0
     },
     "title": "Zoom Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
     "title_length": 63,

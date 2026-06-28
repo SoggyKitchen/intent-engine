@@ -1,14 +1,14 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-06-28T07:10:14+00:00
-Mode: `audit`
+Generated: 2026-06-28T07:54:08+00:00
+Mode: `apply-safe`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.6/100**
+- Overall SaaSpare Health Score: **94.52/100**
 - Level: **Strong authority-ready**
 - Technical SEO: 19.9/20
 - Content usefulness: 19.41/20
-- Trust/E-E-A-T: 18.8/20
+- Trust/E-E-A-T: 18.72/20
 - Internal linking: 14.89/15
 - Schema/indexability: 7.67/10
 - Conversion/revenue: 8.92/10
@@ -19,7 +19,7 @@ Mode: `audit`
 - Healthy pages (85+): 1416
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 81
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -54,7 +54,7 @@ Mode: `audit`
 - `/cookie-policy` (75.98/100): meta_length_outside_target
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.28/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.97/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/request-a-comparison` (79.33/100): title_length_outside_target
 - `/privacy` (79.64/100): meta_length_outside_target
 - `/pages/how-saaspare-ranks-tools` (80.55/100): title_length_outside_target
