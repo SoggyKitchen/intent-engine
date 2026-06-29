@@ -441,6 +441,47 @@
         "URGENT: Log into Impact.com (account 7269601) - apply for HubSpot, 1Password, Monday",
         "ACTION: Log into Awin (publisher 2917137) - apply to GetResponse, Elementor, ProtonVPN, Parallels"
       ]
+    },
+    {
+      "date": "2026-06-29",
+      "session": "ceo-daily",
+      "gmail_findings": {
+        "awin": "Fiverr APPROVED 2026-06-03 (confirmed previously active). FreshBooks REJECTED (program closing).",
+        "impact_com": "impact.com Partner Program APPROVED 2026-06-16 (publisher 7359133) \u2014 /go/impact /go/impact-demo /go/impact-com all LIVE in _redirects (confirmed set up prior session).",
+        "partnerstack": "3rd rejection 2026-06-22. Appeal ticket 116965 open. ClickUp/Monday/ActiveCampaign/Dashlane still locked.",
+        "wix_impact": "Contract application sent 2026-06-01 \u2014 still pending impact.com review.",
+        "activecampaign": "Marketing email received from psaffiliates@activecampaign.com \u2014 NOT an approval.",
+        "pipedrive": "Application sent via PartnerStack 2026-06-25 \u2014 pending."
+      },
+      "ctr_fixes": [
+        "best-vpn-business-software-for-startups: title fix (pos 5, 48 impr, zero monetization words in old title) -> Best VPN for Business 2026: NordLayer vs Tailscale vs Twingate [Ranked]",
+        "ramp-pricing: title -> /bin/bash Core vs 5/User Plus \u2014 Every Change Tracked (June Update) [1,687 impr, pos 10.2, 0.59% CTR]",
+        "mixpanel-pricing: title -> /bin/bash Free vs 8/mo Growth \u2014 Exactly When Costs Spike [742 impr, pos 13.7, 0% CTR]",
+        "notion-free-plan: title -> 10-Guest Cap & 7-Day History Are the Killers [557 impr, pos 9.4, 0% CTR]",
+        "sentry-free-plan: title -> Is Sentry Free? (2026): 5,000 Errors/Month Limit [528 impr, pos 7.5, 0% CTR]",
+        "shopify-vs-recurly: title -> 9/mo Shopify vs Custom Recurly \u2014 Which Wins for Subscriptions? [134 impr, pos 7.5, 0% CTR]"
+      ],
+      "new_page": "impact-com-review-2026-is-it-worth-it-honest-verdict.html \u2014 8.8/10 review, FAQPage schema, 5 FAQs, /go/impact-demo + /go/impact CTAs, full pros/cons/features/pricing/verdict/alternatives structure",
+      "revenue_leaks": "0 direct vendor URLs found \u2014 all clean",
+      "gsc_top_opportunities": {
+        "ramp_pricing_change": "279+141+121=541 impressions at pos 3-5 for ramp pricing change [month] 2026 queries \u2014 existing page already targets this. Title update should improve CTR.",
+        "semrush_vs_moz": "1,365 impr at pos 70 \u2014 deep SERP, needs ranking improvement not title fix. Content was upgraded 2026-06-13.",
+        "semrush_pricing": "483 impr at pos 79 \u2014 too deep for CTR fixes to help."
+      },
+      "tests": "93/93 passed",
+      "next_human_actions": [
+        "URGENT: Get GetResponse CJ deep link from app.cj.com (Advertiser 3142111) \u2014 current /go/getresponse uses non-CJ link, losing 00/lead commission",
+        "URGENT: Log into PartnerStack \u2014 check ticket 116965 status for ClickUp/Monday/ActiveCampaign unlock",
+        "ACTION: Log into impact.com (account 7269601) and apply for HubSpot and 1Password from their marketplace",
+        "ACTION: Check Wix contract on impact.com \u2014 sent 2026-06-01, should have a decision by now",
+        "MONITOR: Ramp pricing CTR \u2014 baseline 0.59% at 1,687 impr, pos 10.2 \u2014 expect improvement with new title targeting pricing change queries"
+      ],
+      "measure_at_21days": {
+        "ramp-pricing-ctr": "baseline 0.59%, pos 10.2, 1,687 impr \u2014 target >1.5% with change-tracker-focused title",
+        "mixpanel-pricing-ctr": "was 0% x 742 impr \u2014 target >0.5% by mid-July",
+        "notion-free-plan-ctr": "was 0% x 557 impr, pos 9.4 \u2014 target >1%",
+        "impact-com-review": "new page \u2014 baseline impressions TBD"
+      }
     }
   ],
   "entries": [
