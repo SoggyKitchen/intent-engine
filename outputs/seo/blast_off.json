@@ -1,12 +1,12 @@
 {
   "current_month": "June 2026",
   "today": "2026-06-29",
-  "titles_rewritten": 4,
-  "descs_rewritten": 20,
-  "dates_refreshed": 0,
+  "titles_rewritten": 2,
+  "descs_rewritten": 31,
+  "dates_refreshed": 1,
   "answers_added": 16,
-  "files_changed": 23,
-  "files_scanned": 1435,
+  "files_changed": 31,
+  "files_scanned": 1436,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
@@ -14,19 +14,9 @@
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
     },
     {
-      "file": "impact-com-review-2026-is-it-worth-it-honest-verdict.html",
-      "before": "impact.com Review 2026: Is It Worth It? Honest Verdict for Brands",
-      "after": "impact.com Review 2026: Is It Worth It? Honest Verdict + Real Pricing"
-    },
-    {
       "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: $0 Free vs $28/mo Growth \u2014 Exactly When Costs Spike",
+      "before": "Mixpanel Pricing 2026: Free (20M Events/mo), Growth $28/mo \u2014 Every Change",
       "after": "Mixpanel Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Ramp Pricing 2026: $0 Core vs $15/User Plus \u2014 Every Change Tracked (June Update)",
-      "after": "Ramp Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
