@@ -1,8 +1,8 @@
 # Sitemap Report
 
 - Sitemap exists: True
-- Sitemap URL count: 1432
-- Scanned HTML pages: 1465
+- Sitemap URL count: 1433
+- Scanned HTML pages: 1466
 - Scanned pages missing from sitemap: 46
 
 ## Missing Examples
