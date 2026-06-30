@@ -1,21 +1,22 @@
 # SEO Audit
 
-Pages scanned: 1466
+Pages scanned: 1468
 
 ## Severe Issue Counts
 - broken_internal_link: 1
 - no_h1: 2
 
 ## Warning Counts
+- canonical_mismatch: 1
 - images_missing_alt: 2
-- meta_length_outside_target: 26
-- missing_correction_cta: 302
+- meta_length_outside_target: 25
+- missing_correction_cta: 304
 - missing_last_verified: 2
 - missing_methodology: 214
 - missing_related_pages: 18
-- missing_trustbox: 49
-- thin_buyer_page: 1111
-- title_length_outside_target: 114
+- missing_trustbox: 51
+- thin_buyer_page: 1110
+- title_length_outside_target: 112
 
 ## Lowest Scoring Pages
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f`: 41.02/100, issues=no_h1
@@ -32,39 +33,39 @@ Pages scanned: 1466
 - `/pages/saas-buyer-signals-2026`: 74.6/100, issues=none
 - `/editorial-policy`: 75.05/100, issues=none
 - `/accessibility`: 75.67/100, issues=none
-- `/pages/best-encrypted-cloud-storage-2026-business`: 75.79/100, issues=none
+- `/pages/best-encrypted-cloud-storage-2026-business`: 75.8/100, issues=none
 - `/dmca`: 75.92/100, issues=none
 - `/cookie-policy`: 75.98/100, issues=none
 - `/pages/saas-pricing-changes`: 75.99/100, issues=none
-- `/pages/which-saas-has-the-best-free-plan-2026`: 76.32/100, issues=none
-- `/pages`: 78.0/100, issues=none
+- `/pages/which-saas-has-the-best-free-plan-2026`: 76.31/100, issues=none
+- `/pages`: 77.0/100, issues=none
+- `/pages/request-a-comparison`: 79.31/100, issues=none
 - `/advertise`: 79.32/100, issues=none
-- `/pages/request-a-comparison`: 79.34/100, issues=none
 - `/privacy`: 79.64/100, issues=none
 - `/affiliate-disclosure`: 80.04/100, issues=none
-- `/pages/how-saaspare-ranks-tools`: 80.56/100, issues=none
-- `/pages/saas-stack-audit-checkout`: 80.91/100, issues=none
+- `/pages/how-saaspare-ranks-tools`: 80.53/100, issues=none
+- `/pages/saas-stack-audit-checkout`: 80.92/100, issues=none
 - `/pages/saas-glossary`: 81.0/100, issues=none
-- `/pages/v3-preview-404`: 81.41/100, issues=none
+- `/pages/v3-preview-404`: 81.38/100, issues=none
 - `/pages/saas-spend-audit`: 82.0/100, issues=none
 - `/methodology`: 82.32/100, issues=none
-- `/pages/v3-preview-contact`: 82.95/100, issues=none
+- `/pages/v3-preview-contact`: 82.97/100, issues=none
 - `/pages/saas-price-hike-watch-may-2026`: 83.0/100, issues=none
-- `/pages/v3-preview-homepage`: 83.15/100, issues=none
-- `/pages/v3-preview-affiliate-disclosure`: 83.19/100, issues=none
+- `/pages/v3-preview-homepage`: 83.17/100, issues=none
+- `/pages/v3-preview-affiliate-disclosure`: 83.23/100, issues=none
 - `/`: 83.5/100, issues=none
-- `/pages/best-saas-deals-this-week-2026`: 83.68/100, issues=none
-- `/pages/v3-preview-about`: 83.79/100, issues=none
-- `/pages/v3-preview-newsletter`: 83.85/100, issues=none
+- `/pages/best-saas-deals-this-week-2026`: 83.7/100, issues=none
+- `/pages/v3-preview-about`: 83.75/100, issues=none
+- `/pages/v3-preview-newsletter`: 83.86/100, issues=none
 - `/pages/v3-preview-library`: 84.06/100, issues=none
-- `/pages/v3-preview-shortlist`: 84.62/100, issues=none
-- `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 84.73/100, issues=none
-- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.75/100, issues=none
+- `/pages/v3-preview-shortlist`: 84.61/100, issues=none
+- `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 84.72/100, issues=none
 - `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 84.75/100, issues=none
-- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.77/100, issues=none
+- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.77/100, issues=none
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.78/100, issues=none
-- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 84.78/100, issues=none
-- `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 84.79/100, issues=none
-- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 84.87/100, issues=none
+- `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 84.78/100, issues=none
+- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.78/100, issues=none
+- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 84.84/100, issues=none
+- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 84.91/100, issues=none
 - `/pages/v3-preview-roi-calculator`: 84.92/100, issues=none
 - `/terms`: 85.0/100, issues=none

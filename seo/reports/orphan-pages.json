@@ -97,5 +97,31 @@
       "inbound": [],
       "outbound": []
     }
+  },
+  {
+    "path": "/pages/elementor-coupon-code-promo-codes-2026-verified-discounts",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/deal-radar",
+        "/go/elementor",
+        "/pages/",
+        "/pages/does-elementor-have-a-free-plan-2026-full-breakdown",
+        "/pages/elementor-free-trial-2026-how-to-get-it-step-by-step",
+        "/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/elementor-vs-divi-which-is-better-in-2026",
+        "/pages/elementor-vs-webflow-which-is-better-in-2026",
+        "/pages/saas-roi-calculator",
+        "/shortlist",
+        "https://saaspare.org/affiliate-disclosure",
+        "https://saaspare.org/contact",
+        "https://saaspare.org/methodology"
+      ]
+    }
   }
 ]
