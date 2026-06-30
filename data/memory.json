@@ -486,6 +486,43 @@
   ],
   "entries": [
     {
+      "date": "2026-06-30",
+      "session": "revenue-hunter",
+      "gmail_findings": {
+        "partnerstack": "PERMANENTLY BLOCKED — 3rd rejection 2026-06-22/23 by Anjola S. 'Not a fit for the PartnerStack Network at this time.' ClickUp/Monday/ActiveCampaign/Dashlane revenue path is closed. No further appeals.",
+        "impact_com": "own program APPROVED 2026-06-16 — already activated in prior session (/go/impact live).",
+        "no_new_approvals": "No new affiliate program approvals found in Gmail scan."
+      },
+      "revenue_leak_found": {
+        "getresponse": "/go/getresponse points to https://www.getresponse.com/?a=-CJ&affpath=directbuy — NOT a real CJ tracking link. Real CJ links go through dpbolvw.net or tkqlhce.com. CJ advertiser ID is 3142111. OWNER ACTION REQUIRED: log into app.cj.com -> advertiser 3142111 -> Get Links -> replace /go/getresponse in site/_redirects with real deep link. Estimated loss: $100/lead commission on all referrals."
+      },
+      "ctr_fixes": [
+        "ramp-pricing: title -> 'Did Ramp Change Pricing in June 2026? [No — Free Card Still $0, Full Change Log]' (pos 3.7, 121 impr, 0 clicks for change-query variants)",
+        "mixpanel-pricing: title -> 'Mixpanel Pricing 2026: Is Free (20M Events) Enough or Do You Need $28/mo? [Verdict]' (742 impr, pos 13.7, 0% CTR)",
+        "semrush-pricing: title -> 'Semrush Pricing 2026: Pro $139.95/mo ($117 Annual) — Is It Worth It? [All Plans + Hidden Costs]' (483 impr, pos 79, active CJ earner via semrush.sjv.io)",
+        "nordlayer-pricing: title -> 'NordLayer Pricing 2026: $9 Lite vs $14 Business — Is It Worth It for Teams? [Verdict]' (270 impr, pos 19, 0.37% CTR)"
+      ],
+      "new_page": "nordlayer-vs-nordvpn-which-is-better-in-2026.html — NordVPN (9.2/10, consumer) vs NordLayer (8.5/10, business), 5x /go/nordvpn CTAs (CJ active earner), FAQPage JSON-LD schema (4 FAQs), pricing table, 13-row feature comparison, tab navigation, targets 'nordlayer vs nordvpn' keyword gap",
+      "direct_url_leaks": "0 — grep confirmed no untracked direct vendor hrefs in site/pages/",
+      "tests": "93/93 passed",
+      "sitemap": "1437 URLs (nordlayer-vs-nordvpn added)",
+      "measure_at_21days": {
+        "nordlayer-vs-nordvpn-impressions": "new page — baseline TBD",
+        "ramp-pricing-ctr": "pos 3.7 for 'ramp pricing change june 2026' — expect CTR > 5% with explicit yes/no question format",
+        "semrush-pricing-ctr": "pos 79 is too deep for CTR to matter — title fix is a SERP quality signal, real win needs ranking improvement",
+        "mixpanel-pricing-ctr": "was 0% at 742 impr — target > 0.5% by 21 July",
+        "nordlayer-pricing-ctr": "was 0.37% at 270 impr — target > 1.5% by 21 July"
+      },
+      "next_human_actions": [
+        "URGENT: Fix GetResponse revenue leak — log into app.cj.com -> Advertiser 3142111 -> Get Links -> replace /go/getresponse URL in site/_redirects with real tracking link. Currently losing $100/lead.",
+        "URGENT: PartnerStack PERMANENTLY CLOSED. Pivot strategy: apply to ClickUp direct (clickup.com/affiliates), Monday.com direct, ActiveCampaign direct — bypass PartnerStack entirely.",
+        "ACTION: Log into Impact.com (publisher 7269601) — apply for HubSpot ($250-1000/sale) and 1Password ($30-60/sale) from their marketplace.",
+        "ACTION: Get CJ deep links for GetResponse (3142111), Elementor (6798066), Proton (5227916), AWeber (5111249), Parallels (2005415) from app.cj.com -> Links -> Get Links.",
+        "MONITOR: Wix contract on Impact.com (sent 2026-06-01) — should have decision by now."
+      ]
+    },
+    {
+    {
       "date": "2026-06-11",
       "session": "ceo-daily",
       "affiliate_status": {
