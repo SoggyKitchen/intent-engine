@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-30T21:17:58+00:00",
+  "generated_at_utc": "2026-06-30T21:56:40+00:00",
   "mode": "apply",
-  "pages_flagged": 28,
+  "pages_flagged": 29,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -14,6 +14,22 @@
           "label": "money_back_guarantee",
           "snippet": "Money-Back Guarantee",
           "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordlayer-vs-nordvpn-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "Layer for personal use, with a better server network for streaming and privacy. 30-day money-back guarantee.</p> <a href=\"/go/nordvpn\" rel=\"noopener sponsored\">Get NordVPN f"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "answer. 9.2/10 score, 6,400+ servers, Threat Protection, Meshnet, and a genuine 30-day money-back guarantee.</p> <a href=\"/go/nordvpn\" rel=\"noopener sponsored\">Get NordVPN f"
         }
       ],
       "trust_state_bumped": false

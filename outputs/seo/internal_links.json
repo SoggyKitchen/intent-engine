@@ -1,38 +1,38 @@
 {
-  "total_pages": 1420,
-  "updated": 1418,
+  "total_pages": 1421,
+  "updated": 1419,
   "skipped": 2,
-  "orphans_before": 63,
-  "orphans_after": 56,
+  "orphans_before": 61,
+  "orphans_after": 70,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
         "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
-        "/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/perimeter-81-vs-zscaler-which-is-better-in-2026",
-        "/pages/pipedrive-vs-close-which-is-better-in-2026"
+        "/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step",
+        "/pages/nordlayer-vs-perimeter-81-which-is-better-in-2026",
+        "/pages/asana-vs-todoist-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-vs-okta-which-is-better-in-2026",
-        "/pages/okta-vs-tenable-which-is-better-in-2026",
-        "/pages/okta-vs-duo-security-which-is-better-in-2026",
-        "/pages/ramp-vs-airbase-which-is-better-in-2026",
-        "/pages/brevo-vs-klaviyo-which-is-better-in-2026"
+        "/pages/dashlane-vs-roboform-which-is-better-in-2026",
+        "/pages/tresorit-vs-sync-com-which-is-better-in-2026",
+        "/pages/dashlane-vs-nordpass-which-is-better-in-2026",
+        "/pages/mangools-vs-rankmath-pro-which-is-better-in-2026",
+        "/pages/surfer-seo-vs-mangools-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/okta-vs-cloudflare-which-is-better-in-2026",
-        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
-        "/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
-        "/pages/bigcommerce-vs-recurly-which-is-better-in-2026",
-        "/pages/linear-vs-retool-which-is-better-in-2026"
+        "/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
+        "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/cloudflare-vs-tenable-which-is-better-in-2026",
+        "/pages/freshbooks-vs-brex-which-is-better-in-2026",
+        "/pages/xero-vs-freshbooks-which-is-better-in-2026"
       ]
     }
   ]
