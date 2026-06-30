@@ -9,7 +9,19 @@
   <link rel="stylesheet" href="/assets/saaspare-v2.css">
   <link rel="stylesheet" href="/assets/saaspare-ui.css">
   <link rel="stylesheet" href="/assets/motion.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Has HubSpot raised prices recently?", "acceptedAnswer": {"@type": "Answer", "text": "See the timeline above for every verified pricing change. We document sources and dates for all increases."}}, {"@type": "Question", "name": "What is the true cost of HubSpot?", "acceptedAnswer": {"@type": "Answer", "text": "Advertised: $15/user/mo. Estimated true cost: $500-2,000/mo. The gap includes add-ons, implementation, and annual billing vs monthly rates."}}, {"@type": "Question", "name": "How do I lock in HubSpot's current price?", "acceptedAnswer": {"@type": "Answer", "text": "Annual billing locks your rate for 12 months and typically saves 15-25% vs monthly. If you're committed to HubSpot, annual is almost always the better financial decision."}}, {"@type": "Question", "name": "Will HubSpot raise prices again?", "acceptedAnswer": {"@type": "Answer", "text": "Based on historical patterns, SaaS vendors typically raise prices every 12-24 months citing AI features or infrastructure. We track HubSpot pricing weekly and update this page immediately on any change."}}, {"@type": "Question", "name": "How often does SaaSpare verify HubSpot pricing?", "acceptedAnswer": {"@type": "Answer", "text": "We verify every Wednesday via automated scraping and manual spot-checks. Last verified: 30 June 2026. If you spot a discrepancy, use the feedback button."}}]}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Has HubSpot raised prices recently?","acceptedAnswer":{"@type":"Answer","text":"See the timeline above for every verified pricing change. We document sources and dates for all increases."}},
+    {"@type":"Question","name":"What is the true cost of HubSpot?","acceptedAnswer":{"@type":"Answer","text":"Advertised: $15/user/mo. Estimated true cost: $500-2,000/mo. The gap includes add-ons, implementation, and annual billing vs monthly rates."}},
+    {"@type":"Question","name":"How do I lock in HubSpot's current price?","acceptedAnswer":{"@type":"Answer","text":"Annual billing locks your rate for 12 months and typically saves 15-25% vs monthly. If you're committed to HubSpot, annual is almost always the better financial decision."}},
+    {"@type":"Question","name":"Will HubSpot raise prices again?","acceptedAnswer":{"@type":"Answer","text":"Based on historical patterns, SaaS vendors typically raise prices every 12-24 months citing AI features or infrastructure. We track HubSpot pricing weekly and update this page immediately on any change."}},
+    {"@type":"Question","name":"How often does SaaSpare verify HubSpot pricing?","acceptedAnswer":{"@type":"Answer","text":"We verify every Wednesday via automated scraping and manual spot-checks. Last verified: 30 June 2026. If you spot a discrepancy, use the feedback button."}}
+  ]
+}
+</script>
 <style>
 /* ── HERO ─────────────────────────── */
 .ph-hero{padding:4.5rem 1.5rem 2.5rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.25rem;position:relative;isolation:isolate;overflow:hidden;}
@@ -321,16 +333,13 @@ nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp
 .sp-nav-wordmark em{color:#e94560;font-style:normal}
 nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
   border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
-nav#sp-nav .sp-nav-link:hover{color:#fff}
-nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
-nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
+nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
 .sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
   padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
   box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
-/* Remove old nav styles that cause bracket/black-bar glitches */
+.sp-nav-spacer{height:72px}
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
 </style>
@@ -338,35 +347,10 @@ nav.sp-topnav{display:none!important}
 (function(){
   window.addEventListener('scroll',function(){
     var nav=document.getElementById('sp-nav');
-    if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
+    if(nav){nav.classList.toggle('scrolled',window.scrollY>40);}
   },{passive:true});
-
-  function highlightNav(){
-    var path=window.location.pathname;
-    var override=document.body.getAttribute('data-nav');
-    var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
-    var best=null,bestLen=0;
-    links.forEach(function(a){
-      var href=a.getAttribute('href');
-      if(!href||href==='/') return;
-      if(override){if(href===override){best=a;}return;}
-      if(path===href||path.indexOf(href.replace(/\/$/,'')+'/')===0){
-        if(href.length>bestLen){best=a;bestLen=href.length;}
-      }
-    });
-    if(best){best.classList.add('active');}
-  }
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',highlightNav);}else{highlightNav();}
 })();
 </script>
-<meta name="keywords" content="HubSpot Pricing History Pricing 2026: Plans &amp; Costs, pricing, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
-<meta property="og:url" content="https://saaspare.org/pages/hubspot-pricing-history-2026">
-<meta property="og:type" content="article">
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@SaaSpare">
-<meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": ["https://twitter.com/SaaSpare"]}</script>
 </head>
 <body style="background:#050407;color:rgba(255,248,245,.88)">
 
@@ -392,7 +376,6 @@ nav.sp-topnav{display:none!important}
     <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="sp-nav-link">Comparisons</a>
-  <a href="/roi" class="sp-nav-link">ROI Calculator</a>
   <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
   <a href="/about" class="sp-nav-link">About</a>

@@ -1,9 +1,9 @@
 {
-  "total_pages": 1419,
-  "updated": 1417,
+  "total_pages": 1420,
+  "updated": 1418,
   "skipped": 2,
-  "orphans_before": 62,
-  "orphans_after": 58,
+  "orphans_before": 63,
+  "orphans_after": 56,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,28 +11,28 @@
         "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/vercel-vs-netlify-which-is-better-in-2026",
-        "/pages/nordlayer-vs-wireguard-which-is-better-in-2026"
+        "/pages/perimeter-81-vs-zscaler-which-is-better-in-2026",
+        "/pages/pipedrive-vs-close-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
+        "/pages/nordlayer-vs-okta-which-is-better-in-2026",
+        "/pages/okta-vs-tenable-which-is-better-in-2026",
         "/pages/okta-vs-duo-security-which-is-better-in-2026",
-        "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/bigcommerce-vs-bold-commerce-which-is-better-in-2026",
-        "/pages/se-ranking-vs-spyfu-which-is-better-in-2026"
+        "/pages/ramp-vs-airbase-which-is-better-in-2026",
+        "/pages/brevo-vs-klaviyo-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/1password-vs-lastpass-which-is-better-in-2026",
-        "/pages/7-best-crowdstrike-alternatives-in-2026-free-paid",
-        "/pages/okta-vs-duo-security-which-is-better-in-2026",
-        "/pages/keeper-vs-nordpass-which-is-better-in-2026",
-        "/pages/asana-vs-trello-which-is-better-in-2026"
+        "/pages/okta-vs-cloudflare-which-is-better-in-2026",
+        "/pages/bitwarden-vs-password-boss-which-is-better-in-2026",
+        "/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
+        "/pages/bigcommerce-vs-recurly-which-is-better-in-2026",
+        "/pages/linear-vs-retool-which-is-better-in-2026"
       ]
     }
   ]
