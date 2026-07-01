@@ -11,7 +11,6 @@
 - `/pages/aweber-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/best-devtools-for-secure-code-review-in-2025`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/best-vpn-business-software-for-startups-in-2026-ranked`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/canva-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/clearscope-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -24,13 +23,14 @@
 - `/pages/deel-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/digitalocean-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/docusign-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/does-sentry-have-a-free-plan-2026-full-breakdown`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/elementor-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/elevenlabs-vs-play-ht-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/fiverr-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/getresponse-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/getresponse-vs-hubspot-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/gusto-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/hetzner-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -48,6 +48,7 @@
 - `/pages/monday-com-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/nordlayer-vs-nordvpn-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/nordpass-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/notion-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block

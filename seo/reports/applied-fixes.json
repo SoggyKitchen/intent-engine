@@ -143,19 +143,6 @@
     "premium": false
   },
   {
-    "file": "site/pages/best-vpn-business-software-for-startups-in-2026-ranked.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
-    "premium": false
-  },
-  {
     "file": "site/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -312,6 +299,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/does-sentry-have-a-free-plan-2026-full-breakdown.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
+    "premium": false
+  },
+  {
     "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -336,6 +336,19 @@
     ],
     "path": "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/elevenlabs-vs-play-ht-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict.html",
@@ -387,19 +400,6 @@
       "trust_block"
     ],
     "path": "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
-  },
-  {
-    "file": "site/pages/getresponse-vs-hubspot-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/getresponse-vs-hubspot-which-is-better-in-2026",
     "premium": true
   },
   {
@@ -622,6 +622,19 @@
     ],
     "path": "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/nordlayer-vs-nordvpn-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordlayer-vs-nordvpn-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/nordpass-review-2026-is-it-worth-it-honest-verdict.html",

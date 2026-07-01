@@ -246,5 +246,13 @@
     "baseline_date": "2026-06-30",
     "pre_blob": "755c1d2831912d4c564527cc2f4dd39904fe7355",
     "status": "pending"
+  },
+  {
+    "path": "site/pages/does-sentry-have-a-free-plan-2026-full-breakdown.html",
+    "url": "https://saaspare.org/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-07-01",
+    "pre_blob": "ca6678c24c9c1ebba2bcff0d0f255c4523cf51a1",
+    "status": "pending"
   }
 ]
