@@ -313,7 +313,7 @@ PRICING = {
         name="Mixpanel", logo="https://cdn.simpleicons.org/mixpanel/7856ff",
         go="/go/mixpanel", history="/pages/mixpanel-pricing-history-2026",
         page="/pages/best-mixpanel-alternatives-2026", sticky="Mixpanel's free plan supports 20M events/mo — the most generous in analytics.",
-        meta_desc="Mixpanel pricing June 2026: Free = 20M events/month forever · Growth from $28/mo · Enterprise = custom. Event-volume costs spike at scale — every plan change tracked monthly with dates.",
+        meta_desc="Mixpanel pricing July 2026: Free = 20M events/month forever · Growth from $28/mo · Enterprise = custom. Event-volume costs spike at scale — every plan change tracked monthly with dates.",
         hidden_risk="Low", hidden_note="Pricing scales with event volume, which can surprise fast-growing products",
         plans=[
             dict(name="Free",    mo="$0",    annual="$0",    best="Early-stage products", users="Unlimited", storage="90-day retention", support="Community", f=["20M events/mo","Unlimited reports","Core analytics"],         fc=["cw","cw","cw"]),
@@ -383,7 +383,7 @@ PRICING = {
         go="/go/ramp", history="/pages/ramp-pricing-history-2026",
         page="/pages/best-ramp-alternatives-2026", sticky="Ramp is free for most businesses — it earns revenue from interchange fees.",
         hidden_risk="Low", hidden_note="Ramp is free but requires a US business entity and minimum revenue",
-        meta_desc="Ramp pricing confirmed June 2026: Free Card = $0 forever · Plus = $15/user/mo ($12 annual). Zero price changes in 2026 so far. Every update logged monthly with date and source.",
+        meta_desc="Ramp pricing confirmed July 2026: Free Card = $0 forever · Plus = $15/user/mo ($12 annual). Zero price changes in 2026 so far. Every update logged monthly with date and source.",
         plans=[
             dict(name="Ramp Free",      mo="$0",    annual="$0",    best="Most businesses",   users="Unlimited", storage="Unlimited cards",   support="Email+chat", f=["Unlimited virtual + physical cards","Expense management","Bill pay free"],         fc=["cw","cw","cw"]),
             dict(name="Ramp Plus",      mo="$15/user",annual="$12/user",best="Power users",   users="Unlimited", storage="Unlimited cards",   support="Priority",   f=["Custom approval chains","Advanced analytics","ERP integrations"],                  fc=["cw","cw","cw"]),

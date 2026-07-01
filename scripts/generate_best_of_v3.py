@@ -407,6 +407,46 @@ TOOLS = {
         pros=["Best-looking templates in any website builder","Built-in SEO, scheduling, and email marketing","24/7 live chat support on all plans"],
         cons=["Less flexible than Webflow for complex layouts","Transaction fees on Commerce Basic plan"],
         go="squarespace", scores=dict(value=80,ease=84,features=78,int=72,support=85)),
+    # ── WORDPRESS PAGE BUILDERS ───────────────────────────────────────────────
+    "Elementor": dict(
+        score=8.7, logo="https://cdn.simpleicons.org/elementor/92003b",
+        price_line="$49/yr", free_tag="Free plugin", price_note="Free version available",
+        tagline="The most popular WordPress page builder — drag-and-drop editor, 100+ widgets, WooCommerce integration, and a massive template library.",
+        verdict="Best for WordPress", verdict_class="v-best",
+        pros=["Most popular WordPress page builder — 12M+ sites","Free version with 40+ basic widgets","Full WooCommerce integration on Pro"],
+        cons=["WordPress-only — not useful outside WP","Pro pricing jumped to $49–$399/yr in 2024"],
+        go="elementor", scores=dict(value=82,ease=88,features=91,int=85,support=80)),
+    "Divi": dict(
+        score=8.2, logo="https://www.google.com/s2/favicons?domain=elegantthemes.com&sz=128",
+        price_line="$89/yr", free_tag="", price_note="Lifetime $249",
+        tagline="The second most popular WordPress page builder — visual front-end editor, split testing, and a 200-theme library all in one subscription.",
+        verdict="Best Value", verdict_class="v-value",
+        pros=["Visual front-end editor with inline text editing","Built-in A/B split testing — rare at this price","Lifetime access option at $249 (pay once)"],
+        cons=["Slower than Elementor in page-speed benchmarks","Less extensive widget library than Elementor Pro"],
+        go="divi", scores=dict(value=86,ease=82,features=85,int=78,support=77)),
+    "Beaver Builder": dict(
+        score=8.0, logo="https://www.google.com/s2/favicons?domain=wpbeaverbuilder.com&sz=128",
+        price_line="$99/yr", free_tag="", price_note="Lifetime from $399",
+        tagline="The most developer-friendly WordPress page builder — clean code output, white-labelling for agencies, and a strong backwards-compatibility guarantee.",
+        verdict="Best for Agencies", verdict_class="v-visual",
+        pros=["Cleanest code output of any major page builder","White-label option for client agencies","Strong backwards compatibility — no breaking changes between versions"],
+        cons=["Smaller template library than Elementor or Divi","No free version of the full builder"]),
+    "Bricks Builder": dict(
+        score=8.4, logo="https://www.google.com/s2/favicons?domain=bricksbuilder.io&sz=128",
+        price_line="$79/yr", free_tag="", price_note="Lifetime $299",
+        tagline="The performance-first WordPress page builder — no jQuery dependency, full theme control, and built for developers who care about Core Web Vitals.",
+        verdict="Best for Performance", verdict_class="v-smb",
+        pros=["No jQuery dependency — significantly faster page loads","Full theme builder — headers, footers, archives","Query loop builder for dynamic custom post types"],
+        cons=["Steeper learning curve than Elementor","Smaller community and ecosystem"],
+        go="bricks-builder", scores=dict(value=84,ease=72,features=88,int=78,support=74)),
+    "SeedProd": dict(
+        score=7.9, logo="https://www.google.com/s2/favicons?domain=seedprod.com&sz=128",
+        price_line="$79/yr", free_tag="Free version", price_note="Free landing pages available",
+        tagline="The best landing page builder for WordPress — coming soon pages, opt-in pages, and WooCommerce layouts without touching your existing theme.",
+        verdict="Best for Landing Pages", verdict_class="v-smb",
+        pros=["Works independently of your existing theme","350+ conversion-optimised templates","Built-in subscriber list integration with major email providers"],
+        cons=["Focused on landing pages — limited for full site building","Full WooCommerce features require top-tier plan"],
+        go="seedprod", scores=dict(value=80,ease=86,features=75,int=80,support=77)),
     # ── DEV TOOLS / INFRA ─────────────────────────────────────────────────────
     "GitHub Copilot": dict(
         score=8.9, logo="https://cdn.simpleicons.org/github/ffffff",
@@ -515,6 +555,10 @@ ALIASES = {
     "Notion (Alternative Option)": "Notion",
     "ClickUp (Alternative Option)": "ClickUp",
     "Asana (Alternative Option)": "Asana",
+    "Divi Builder": "Divi",
+    "Elegant Themes Divi": "Divi",
+    "Bricks": "Bricks Builder",
+    "SeedProd Builder": "SeedProd",
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -653,6 +697,7 @@ HARDCODED_PAGE_TOOLS = {
     "best-vpn-australia": ["NordVPN", "Surfshark", "ExpressVPN", "ProtonVPN", "CyberGhost"],
     "best-vpn-for-gaming": ["NordVPN", "Surfshark", "ExpressVPN", "ProtonVPN", "CyberGhost"],
     "best-ecommerce-platforms": ["Shopify", "BigCommerce", "Wix", "WooCommerce"],
+    "best-elementor-alternatives-in-2026-free-paid": ["Elementor", "Divi", "Beaver Builder", "Bricks Builder", "Webflow", "SeedProd"],
 }
 
 def extract_page_meta(html, filepath):
