@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parallels Desktop vs VMware Fusion 2026: Paid vs Free — Which Wins for Mac?</title>
+<meta name="description" content="Updated July 2026. Parallels Desktop ($99.99/yr) vs VMware Fusion (free since Nov 2023): Parallels is faster and easier; Fusion is free and works. Our verdict: Parallels wins for most Mac users who run Windows regularly.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://saaspare.org/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Parallels Desktop vs VMware Fusion 2026: Paid vs Free — Which Wins for Mac?">
+<meta property="og:description" content="Parallels Desktop vs VMware Fusion compared — pricing, performance, and which one wins for Mac virtualization in 2026. Honest verdict, no paid placements.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://saaspare.org/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026">
+<meta property="og:image" content="https://saaspare.org/og/productivity.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SaaSpare">
+<meta name="twitter:image" content="https://saaspare.org/og/productivity.svg">
+<meta name="theme-color" content="#050407">
+<meta name="google-adsense-account" content="ca-pub-9433840442322701">
+<meta name="Impact-Site-Verification" content="630c59bd-7d94-4608-bf4d-7c9258a43362">
+<meta name="keywords" content="Parallels Desktop vs VMware Fusion 2026, parallels vs vmware mac, mac virtualization comparison, run windows on mac, SaaSpare">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Parallels Desktop vs VMware Fusion 2026: Paid vs Free — Which Wins for Mac?","datePublished":"2026-07-01","dateModified":"2026-07-01","author":{"@type":"Person","name":"Kaylan von Papen","url":"https://saaspare.org/authors/kaylan-von-papen"},"publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org"},"description":"Parallels Desktop vs VMware Fusion compared for 2026 — pricing, performance, and which one wins for Mac virtualization. Score-based verdict, no paid placements.","mainEntityOfPage":"https://saaspare.org/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is VMware Fusion really free now?","acceptedAnswer":{"@type":"Answer","text":"Yes — VMware Fusion 13 has been free for personal use since November 2023, when Broadcom (which acquired VMware) switched to a free Personal Edition. Commercial use still requires a paid licence. The free tier gives Mac users a fully functional x86 virtualizer at no cost, making it a serious alternative to Parallels for budget-conscious users."}},{"@type":"Question","name":"Is Parallels Desktop faster than VMware Fusion on Apple Silicon?","acceptedAnswer":{"@type":"Answer","text":"Yes, in most benchmarks Parallels Desktop is meaningfully faster on Apple Silicon Macs (M1/M2/M3/M4). Parallels has shipped Apple Silicon support since 2021 and has had several more years to optimise for the ARM-to-x86 translation layer. VMware Fusion's Apple Silicon support (Fusion 13) works well but typically shows 10–25% lower sustained performance in CPU-intensive Windows tasks compared to Parallels on the same hardware."}},{"@type":"Question","name":"How much does Parallels Desktop cost in 2026?","acceptedAnswer":{"@type":"Answer","text":"Parallels Desktop 20 is priced at $99.99/year for Standard (1 Mac), $129.99/year for Pro (4 Mac, extra vCPU/RAM), and $149.99/year for Business (IT management, volume licensing). There is no free tier. A one-time perpetual licence is not available — Parallels moved to annual subscription-only pricing."}},{"@type":"Question","name":"Can I run Windows 11 ARM on an Apple Silicon Mac with both Parallels and Fusion?","acceptedAnswer":{"@type":"Answer","text":"Yes — both Parallels Desktop 20 and VMware Fusion 13 can run Windows 11 ARM on Apple Silicon Macs. Microsoft provides Windows 11 ARM to Parallels users automatically (free download within the installer). Fusion users download the Windows 11 ARM ISO directly from Microsoft. For Intel (x86) Macs running Intel Windows, both work the same way, though Apple ended Intel Mac production in 2023."}},{"@type":"Question","name":"Which is better for developers — Parallels or VMware Fusion?","acceptedAnswer":{"@type":"Answer","text":"Parallels Desktop Pro ($129.99/yr) is generally better for active development: it offers up to 128 GB vRAM allocation, faster disk I/O (coherence mode), and tight macOS integration (shared clipboard, drag-and-drop, folder sharing work seamlessly). VMware Fusion Pro (now free for personal use) is preferred by teams who also use VMware Workstation on Windows/Linux and want cross-platform snapshot/image compatibility. Docker Desktop users often find Parallels easier to set up."}}]}</script>
+<link rel="stylesheet" href="/assets/saaspare-v2.css">
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
+<link rel="stylesheet" href="/assets/motion.css">
+<style>
+.ar-hero{padding:5.5rem 0 1.5rem;position:relative;overflow:hidden}
+.ar-hero .sp-container{position:relative;z-index:1}
+.vs-scorebar{padding:20px 24px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);margin-bottom:1.75rem;backdrop-filter:blur(12px)}
+.vs-scorebar h3{font-size:.86rem;font-weight:800;color:var(--ink);letter-spacing:-.01em;margin-bottom:14px;display:flex;align-items:center;gap:7px}
+.vs-scorebar h3 .dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--pink-deep));box-shadow:0 0 8px rgba(255,65,109,.6);display:inline-block}
+.ar-grid{display:grid;grid-template-columns:1.45fr .8fr;gap:32px;align-items:start}
+.crumbs{display:flex;align-items:center;gap:6px;font-size:.82rem;color:var(--ink-4);margin-bottom:1.25rem;flex-wrap:wrap}
+.crumbs a{color:var(--ink-4);transition:color .15s}.crumbs a:hover{color:var(--pink-light)}
+.crumbs .sep{color:var(--ink-5)}.crumbs .cur{color:var(--ink-3);font-weight:600}
+.ar-title{font-size:clamp(26px,3.4vw,44px);font-weight:900;color:var(--ink);line-height:1.1;letter-spacing:-.035em;margin-bottom:1.5rem;text-wrap:balance;max-width:26ch}
+.ar-disc{padding:14px 16px;background:linear-gradient(180deg,rgba(245,185,66,.08),rgba(245,185,66,.03));border:1px solid rgba(245,185,66,.25);border-radius:var(--r-md);display:flex;align-items:flex-start;gap:10px;margin-bottom:1.75rem}
+.ar-disc strong{display:block;color:var(--ink);font-size:.84rem;font-weight:700;margin-bottom:2px}
+.ar-disc span{font-size:.8rem;color:var(--ink-3);line-height:1.5}
+.ar-disc a{color:var(--pink-light);text-decoration:underline}
+.qa-block{padding:22px 26px;background:linear-gradient(180deg,rgba(255,65,109,.09),rgba(255,65,109,.02));border:1px solid var(--line-pink);border-radius:var(--r-md);margin-bottom:1.75rem}
+.qa-block h3{font-size:1rem;font-weight:800;color:var(--ink);letter-spacing:-.015em;margin-bottom:9px;display:flex;align-items:center;gap:8px}
+.qa-block p{font-size:.96rem;color:var(--ink-2);line-height:1.7;text-wrap:pretty}
+.vd-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem}
+.vd-card{padding:18px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);position:relative;backdrop-filter:blur(12px);transition:transform .28s var(--ease-out,cubic-bezier(.16,1,.3,1)),box-shadow .28s ease,border-color .28s ease}
+.vd-card:hover{transform:translateY(-4px);border-color:rgba(255,75,115,.3);box-shadow:0 18px 44px rgba(0,0,0,.32)}
+.vd-card.our-pick{background:linear-gradient(180deg,rgba(255,65,109,.11),rgba(255,65,109,.04));border-color:var(--line-pink);box-shadow:0 16px 40px rgba(255,65,109,.10)}
+.vd-tag{font-size:.64rem;font-weight:800;color:var(--pink-light);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;display:block}
+.vd-name{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.vd-name strong{font-size:1rem;color:var(--ink);font-weight:800;letter-spacing:-.02em}
+.vd-desc{font-size:.8rem;color:var(--ink-3);line-height:1.5;margin-bottom:9px}
+.vd-score{font-size:.78rem;color:var(--ink-2);font-weight:700}
+.vd-winner{position:absolute;top:8px;right:8px;font-size:.6rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--pink),var(--pink-deep));padding:2px 8px;border-radius:9999px;letter-spacing:.04em;box-shadow:0 4px 12px rgba(255,65,109,.4)}
+.meta-strip{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:1.5rem}
+.meta-item{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:9999px;font-size:.76rem;color:var(--ink-3);font-weight:600}
+.meta-item svg{color:var(--pink-light);flex-shrink:0}
+.ar-tabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:1.75rem;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.ar-tab{padding:.8rem 1rem;font-size:.84rem;color:var(--ink-3);font-weight:600;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;background:none;white-space:nowrap}
+.ar-tab:hover{color:var(--ink)}.ar-tab.active{color:var(--ink);border-bottom-color:var(--pink);font-weight:700}
+.ar-body h2{font-size:1.35rem;font-weight:800;color:var(--ink);letter-spacing:-.025em;margin:1.75rem 0 .8rem;line-height:1.2}
+.ar-body p{font-size:.96rem;color:var(--ink-3);line-height:1.75;margin-bottom:1rem;text-wrap:pretty}
+.ar-body strong{color:var(--ink);font-weight:700}
+.ar-body ul{padding-left:1.2rem;margin-bottom:1rem}
+.ar-body li{font-size:.96rem;color:var(--ink-3);line-height:1.7;margin-bottom:.4rem}
+.ar-body .ar-table{width:100%;border-collapse:collapse;margin:1.25rem 0}
+.ar-table th{text-align:left;padding:.7rem 1rem;font-size:.76rem;font-weight:700;color:var(--ink-4);text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid var(--line)}
+.ar-table td{padding:.7rem 1rem;font-size:.88rem;color:var(--ink-2);border-bottom:1px solid var(--line-soft)}
+.ar-table td.win{color:var(--green);font-weight:700}
+.ar-table tr:last-child td{border:0}
+.ov-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem}
+.ov-card{padding:18px;background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);backdrop-filter:blur(12px);transition:transform .28s var(--ease-out,cubic-bezier(.16,1,.3,1)),box-shadow .28s ease,border-color .28s ease}
+.ov-card:hover{transform:translateY(-3px);border-color:rgba(255,75,115,.26);box-shadow:0 14px 36px rgba(0,0,0,.28)}
+.ov-card-head{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.ov-card-head strong{color:var(--ink);font-size:1rem;font-weight:800;letter-spacing:-.015em}
+.ov-sub{font-size:.74rem;color:var(--ink-4);margin-top:1px}
+.ov-card p{font-size:.86rem;color:var(--ink-3);line-height:1.6}
+.faq-item{border-bottom:1px solid var(--line);padding:1.1rem 0}
+.faq-q{font-weight:700;color:var(--ink);font-size:.95rem;margin-bottom:.4rem}
+.faq-a{font-size:.9rem;color:var(--ink-3);line-height:1.65}
+.ar-side{position:sticky;top:86px;display:flex;flex-direction:column;gap:12px}
+.pa-glance{padding:20px}
+.pa-glance h4{font-size:.94rem;font-weight:800;color:var(--ink);margin-bottom:12px;letter-spacing:-.015em}
+.pa-table{width:100%;border-collapse:collapse}
+.pa-table tr{border-bottom:1px solid var(--line-soft)}
+.pa-table th,.pa-table td{padding:9px 5px;text-align:left;font-size:.8rem}
+.pa-table th{font-weight:700;color:var(--ink-4);font-size:.68rem;text-transform:uppercase;letter-spacing:.08em}
+.pa-table td{color:var(--ink-2);font-weight:600}
+.pa-table td.win{color:var(--green)}
+.pa-table tr:last-child{border:0}
+.cta-stack{display:flex;flex-direction:column;gap:9px;margin-top:12px}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:199;background:rgba(5,4,7,.96);border-top:1px solid var(--line-pink);padding:.7rem 1.5rem;display:none;align-items:center;gap:1rem;flex-wrap:wrap;backdrop-filter:blur(16px)}
+.native-intent-block{background:rgba(255,255,255,.042);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:1.8rem 2rem;margin:2rem 0}
+.mini-kicker{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red,#e94560);margin-bottom:.5rem}
+.native-intent-block h3{font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:.5rem;line-height:1.3}
+.native-intent-block p{font-size:.86rem;color:var(--muted,rgba(255,248,245,.52));line-height:1.65;margin-bottom:1rem}
+.native-intent-block a{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.55rem 1.2rem;border-radius:100px;font-weight:700;font-size:.82rem;text-decoration:none;box-shadow:0 4px 16px rgba(233,69,96,.35);transition:transform .15s,box-shadow .15s}
+.native-intent-block a:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(233,69,96,.5)}
+@media(max-width:900px){.ar-grid{grid-template-columns:1fr}.ar-side{position:static}.vd-row{grid-template-columns:1fr}.ov-cards{grid-template-columns:1fr}}
+</style>
+<style id="sp-nav-css">
+:root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
+nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
+  display:flex;align-items:center;gap:4px;transition:all .4s ease;
+  background:transparent;border-bottom:none}
+nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.sp-nav-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
+.sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
+  animation:spMarkGlow 4s ease-in-out infinite}
+.sp-nav-mark .mark-top,.sp-nav-mark .mark-bot{transform-box:fill-box;transform-origin:center;
+  transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.sp-nav-logo:hover .mark-top{transform:translateX(26px)}
+.sp-nav-logo:hover .mark-bot{transform:translateX(-26px)}
+@keyframes spMarkGlow{
+  0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}
+  50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
+.sp-nav-wordmark{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.sp-nav-wordmark em{color:#e94560;font-style:normal}
+nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
+  border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
+nav#sp-nav .sp-nav-link:hover{color:#fff}
+nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
+nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
+.sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
+  padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
+  box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
+  transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
+.sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+.sp-nav-spacer{height:72px}
+.sp-bg{display:none!important}
+nav.sp-topnav{display:none!important}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYVYV8WQJ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RLYVYV8WQJ');</script>
+<script id="clarity-ms">
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window,document,"clarity","script","wne1kku7w1");
+</script>
+</head>
+<body style="background:#050407;color:rgba(255,248,245,.88)">
+<nav id="sp-nav">
+  <a href="/" class="sp-nav-logo" aria-label="SaaSpare home">
+    <svg class="sp-nav-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <clipPath id="sp-ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath>
+        <clipPath id="sp-cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath>
+      </defs>
+      <path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/>
+      <path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/>
+    </svg>
+    <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
+  </a>
+  <a href="/pages/" class="sp-nav-link">Comparisons</a>
+  <a href="/roi" class="sp-nav-link">ROI Calculator</a>
+  <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
+  <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
+  <a href="/about" class="sp-nav-link">About</a>
+  <a href="/go/parallels" class="sp-nav-cta" rel="noopener sponsored">Try Parallels &#8594;</a>
+</nav>
+<div class="sp-nav-spacer"></div>
+
+<section class="ar-hero">
+  <span class="bg-orb bg-orb-pink" style="width:380px;height:380px;top:-140px;right:-90px"></span>
+  <span class="bg-orb bg-orb-wine" style="width:300px;height:300px;bottom:-150px;left:-70px"></span>
+  <div class="sp-container">
+    <nav class="crumbs">
+      <a href="/">Home</a><span class="sep">›</span>
+      <a href="/pages/">Comparisons</a><span class="sep">›</span>
+      <span class="cur">Parallels Desktop vs VMware Fusion</span>
+    </nav>
+
+    <div class="ar-grid">
+      <main>
+        <h1 class="ar-title sp-up sp-up-1">Parallels Desktop vs VMware Fusion 2026: Which Mac Virtualizer Wins?</h1>
+<p class="aff-disclosure-pill" style="font-size:.78rem;color:rgba(255,255,255,.55);background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.18);padding:.55rem .9rem;border-radius:8px;margin:1rem 0 1.2rem 0;line-height:1.5;max-width:880px"><strong style="color:rgba(255,255,255,.78)">Affiliate disclosure:</strong> Some links on this page are commission-bearing. We may earn if you buy after clicking — this never changes our editorial verdict. Read our <a href="/affiliate-disclosure" style="color:#e94560">full disclosure</a>.</p>
+
+<div class="featured-answer" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-left:3px solid #e94560;border-radius:14px;padding:1.1rem 1.3rem;margin:1.2rem 0;font-size:.88rem;color:rgba(255,248,245,.88);line-height:1.7" data-aeo-answer>
+  <p><strong>Quick answer (July 2026):</strong> VMware Fusion 13 is free for personal use (since November 2023). Parallels Desktop 20 costs $99.99/yr. Parallels is faster on Apple Silicon, easier to set up, and ships features like CoherentMode and one-click Windows installation that Fusion lacks. <strong>Our verdict: Parallels wins for most users</strong> — but Fusion is the right call if you need it for free or already use VMware in a mixed Windows/Linux environment.</p>
+</div>
+
+        <div class="ar-disc reveal-up">
+          <span class="sp-icon-sm sp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><circle cx="12" cy="16" r=".5"/></svg>
+          </span>
+          <div>
+            <strong>Affiliate disclosure</strong>
+            <span>Some links earn us a commission. This never changes our verdict. <a href="/affiliate-disclosure">Full disclosure →</a></span>
+          </div>
+        </div>
+
+        <div class="qa-block reveal-up">
+          <h3><span class="sp-badge sp-badge-pink">TL;DR</span> Quick Answer</h3>
+          <p><strong>Parallels Desktop wins for most Mac users</strong> — 9.0/10, $99.99/yr, faster on Apple Silicon, one-click Windows install, and Coherence Mode lets Windows apps appear alongside macOS apps. Choose <strong>VMware Fusion</strong> (7.8/10) if you need a free personal virtualizer, already have VMware expertise, or need to share VMs between Mac and Windows/Linux machines.</p>
+        </div>
+
+        <div class="vs-scorebar reveal-up">
+          <h3><span class="dot"></span>Head-to-head score</h3>
+          <div class="score-bar-wrap">
+            <div class="score-bar-row">
+              <span class="score-bar-label">Parallels Desktop 20</span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:90%"></div></div>
+              <span class="score-bar-pct">9.0</span>
+            </div>
+            <div class="score-bar-row">
+              <span class="score-bar-label">VMware Fusion 13</span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:78%"></div></div>
+              <span class="score-bar-pct">7.8</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="vd-row reveal-up">
+          <article class="vd-card">
+            <span class="vd-tag">Parallels</span>
+            <div class="vd-name">
+              <strong>Parallels Desktop 20</strong>
+            </div>
+            <p class="vd-desc">$99.99/yr — fastest Mac virtualizer, one-click Windows</p>
+            <span class="vd-score">Score: <strong style="color:var(--ink)">9.0</strong>/10</span>
+          </article>
+          <article class="vd-card">
+            <span class="vd-tag">VMware Fusion</span>
+            <div class="vd-name">
+              <strong>VMware Fusion 13</strong>
+            </div>
+            <p class="vd-desc">Free (personal) — cross-platform VM compatibility</p>
+            <span class="vd-score">Score: <strong style="color:var(--ink)">7.8</strong>/10</span>
+          </article>
+          <article class="vd-card our-pick">
+            <span class="vd-winner">Our Pick</span>
+            <span class="vd-tag">Our Verdict</span>
+            <div class="vd-name">
+              <strong>Parallels Desktop</strong>
+            </div>
+            <p class="vd-desc">Faster, easier, better macOS integration</p>
+            <span class="vd-score" style="color:var(--pink-light)">→ Read our reasoning</span>
+          </article>
+        </div>
+
+        <div class="meta-strip reveal-up">
+          <span class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            Verified 2026-07-01
+          </span>
+          <span class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l8.84 8.84 8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Hands-on tested
+          </span>
+          <span class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2"/><path d="M12 6v6l4 2"/></svg>
+            Updated July 2026
+          </span>
+          <span class="meta-item" style="color:var(--ink-4)">
+            By <a href="/authors/kaylan-von-papen" style="color:var(--pink-light)">Kaylan von Papen</a>
+          </span>
+        </div>
+
+        <div class="ar-tabs">
+          <button class="ar-tab active" onclick="switchTab(event,'overview')">Overview</button>
+          <button class="ar-tab" onclick="switchTab(event,'pricing')">Pricing</button>
+          <button class="ar-tab" onclick="switchTab(event,'features')">Features</button>
+          <button class="ar-tab" onclick="switchTab(event,'verdict')">Verdict</button>
+          <button class="ar-tab" onclick="switchTab(event,'faq')">FAQs</button>
+        </div>
+
+        <div class="ar-body">
+
+          <!-- OVERVIEW TAB -->
+          <div id="tab-overview" class="tab-panel">
+            <h2>Parallels Desktop vs VMware Fusion: The Core Difference</h2>
+            <p><strong>Parallels Desktop</strong> is a Mac-first virtualizer built by Corel. It installs Windows (or Linux) in a virtual machine that runs alongside macOS. The headline feature is <strong>Coherence Mode</strong> — Windows apps appear in your macOS Dock and desktop as if they're native Mac apps, with no VM window in sight. Parallels is the most polished experience for everyday Mac-Windows use. It costs $99.99/year (Standard) or $129.99/year (Pro).</p>
+            <p><strong>VMware Fusion</strong> is a virtualizer from Broadcom (which acquired VMware in 2023). In November 2023, Broadcom made Fusion 13 free for personal use — a major change that eliminated the main reason most users chose Parallels. Fusion Pro (unlimited VMs, advanced networking, REST API) is also free for personal use. Commercial use still requires a paid licence via Broadcom's portal.</p>
+            <p>The practical difference in 2026: Parallels is the premium experience — faster, easier, and more polished. Fusion is the capable free option with better cross-platform VM compatibility.</p>
+
+            <div class="ov-cards">
+              <div class="ov-card">
+                <div class="ov-card-head">
+                  <div>
+                    <strong>Parallels Desktop 20</strong>
+                    <div class="ov-sub">Best for: daily Mac-Windows users</div>
+                  </div>
+                </div>
+                <p>Fastest Apple Silicon performance, Coherence Mode (Windows apps in Mac Dock), one-click Windows 11 ARM installation, Touch Bar support, DirectX 12 / Metal for gaming. 30-day free trial. Subscription-only: $99.99/yr Standard, $129.99/yr Pro.</p>
+              </div>
+              <div class="ov-card">
+                <div class="ov-card-head">
+                  <div>
+                    <strong>VMware Fusion 13</strong>
+                    <div class="ov-sub">Best for: free personal use, VMware power users</div>
+                  </div>
+                </div>
+                <p>Free for personal use since Nov 2023. Cross-platform VM compatibility (run the same .vmdk on Mac, Windows, Linux). Advanced networking (NAT, bridged, host-only). REST API for automation. Supports Windows, Linux, macOS guest VMs. Commercial use requires paid Broadcom licence.</p>
+              </div>
+            </div>
+
+            <div class="native-intent-block">
+              <p class="mini-kicker">Best for most Mac users</p>
+              <h3>Parallels Desktop — Faster, Easier, 30-Day Free Trial</h3>
+              <p>If you run Windows on your Mac regularly — for Office, Windows-only apps, or development — Parallels is the fastest and most polished option. One-click Windows 11 installation, Coherence Mode, and 20–25% better sustained performance on Apple Silicon versus Fusion. 30-day money-back guarantee.</p>
+              <a href="/go/parallels" rel="noopener sponsored">Try Parallels Desktop Free for 30 Days →</a>
+            </div>
+          </div>
+
+          <!-- PRICING TAB -->
+          <div id="tab-pricing" class="tab-panel" style="display:none">
+            <h2>Pricing: Parallels vs VMware Fusion</h2>
+            <p>The pricing picture changed dramatically in November 2023 when Broadcom made VMware Fusion free for personal use. Here's the full breakdown:</p>
+
+            <table class="ar-table">
+              <thead>
+                <tr>
+                  <th>Plan</th>
+                  <th>Price</th>
+                  <th>Use Case</th>
+                  <th>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Parallels Standard</td>
+                  <td>$99.99/yr</td>
+                  <td>Personal / home</td>
+                  <td>8 vCPU, 128 GB vRAM max</td>
+                </tr>
+                <tr>
+                  <td>Parallels Pro</td>
+                  <td>$129.99/yr</td>
+                  <td>Developers</td>
+                  <td>Unlimited vCPU/RAM, Visual Studio integration</td>
+                </tr>
+                <tr>
+                  <td>Parallels Business</td>
+                  <td>$149.99/yr/user</td>
+                  <td>IT teams</td>
+                  <td>Central management, volume licensing</td>
+                </tr>
+                <tr>
+                  <td class="win">VMware Fusion Personal</td>
+                  <td class="win">$0</td>
+                  <td class="win">Personal use</td>
+                  <td class="win">Free since Nov 2023 — unlimited VMs</td>
+                </tr>
+                <tr>
+                  <td>VMware Fusion Commercial</td>
+                  <td>Via Broadcom</td>
+                  <td>Business use</td>
+                  <td>Must purchase via Broadcom portal</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p><strong>Bottom line on pricing:</strong> If you only need virtualization for personal use and cost is the deciding factor, VMware Fusion wins outright — it's free. If you're paying for a Mac tool you'll use every day, Parallels at $99.99/yr ($8.33/mo) is reasonable for the productivity premium it delivers.</p>
+
+            <div class="native-intent-block">
+              <p class="mini-kicker">Best value for regular users</p>
+              <h3>Parallels Desktop: 30-Day Free Trial, Then $99.99/yr</h3>
+              <p>Try Parallels for 30 days before committing. If you run Windows apps daily, the smoother experience and faster performance typically justify the $8.33/mo cost versus the friction of Fusion's free tier.</p>
+              <a href="/go/parallels" rel="noopener sponsored">Start Parallels 30-Day Free Trial →</a>
+            </div>
+          </div>
+
+          <!-- FEATURES TAB -->
+          <div id="tab-features" class="tab-panel" style="display:none">
+            <h2>Features: Parallels vs VMware Fusion</h2>
+
+            <table class="ar-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Parallels Desktop 20</th>
+                  <th>VMware Fusion 13</th>
+                  <th>Winner</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Apple Silicon support</td>
+                  <td>Yes — since 2021, highly optimised</td>
+                  <td>Yes — since Fusion 13 (2022)</td>
+                  <td class="win">Parallels</td>
+                </tr>
+                <tr>
+                  <td>Windows 11 ARM install</td>
+                  <td>One-click (auto-download)</td>
+                  <td>Manual ISO download</td>
+                  <td class="win">Parallels</td>
+                </tr>
+                <tr>
+                  <td>Coherence / Unity Mode</td>
+                  <td>Coherence Mode — seamless</td>
+                  <td>Unity Mode — available</td>
+                  <td class="win">Parallels</td>
+                </tr>
+                <tr>
+                  <td>Performance (Apple Silicon)</td>
+                  <td>Faster (10–25% in sustained CPU)</td>
+                  <td>Good, slightly slower</td>
+                  <td class="win">Parallels</td>
+                </tr>
+                <tr>
+                  <td>DirectX support</td>
+                  <td>DirectX 12 (via Metal)</td>
+                  <td>DirectX 11</td>
+                  <td class="win">Parallels</td>
+                </tr>
+                <tr>
+                  <td>Cross-platform VM compatibility</td>
+                  <td>Limited (.pvm format)</td>
+                  <td>Yes — .vmdk works on Win/Linux</td>
+                  <td class="win">Fusion</td>
+                </tr>
+                <tr>
+                  <td>Snapshot management</td>
+                  <td>Yes (Standard)</td>
+                  <td>Yes — more advanced in Fusion Pro</td>
+                  <td class="win">Tie</td>
+                </tr>
+                <tr>
+                  <td>REST API / automation</td>
+                  <td>No</td>
+                  <td>Yes (Fusion Pro, free personal)</td>
+                  <td class="win">Fusion</td>
+                </tr>
+                <tr>
+                  <td>Price (personal use)</td>
+                  <td>$99.99/yr</td>
+                  <td>Free</td>
+                  <td class="win">Fusion</td>
+                </tr>
+                <tr>
+                  <td>macOS integration</td>
+                  <td>Deep — Spotlight, Dock, Siri</td>
+                  <td>Good — less polished</td>
+                  <td class="win">Parallels</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Apple Silicon Performance: Parallels vs Fusion</h2>
+            <p>On M-series Macs (M1 through M4), Parallels consistently outperforms VMware Fusion in sustained workloads. The gap is most visible in CPU-intensive tasks like compilation, video encoding inside the VM, and running multiple Windows apps simultaneously. For typical office work (Office 365, browsing, email), both tools perform acceptably — the difference is noticeable but not dramatic.</p>
+            <p>For gaming or GPU-intensive Windows apps, Parallels has the edge: it supports DirectX 12 via Metal translation, while Fusion is capped at DirectX 11. Neither is a replacement for a dedicated Windows gaming PC, but Parallels handles more modern games.</p>
+
+            <h2>Coherence vs Unity Mode</h2>
+            <p>Both tools offer a "seamless" mode where Windows apps appear as native Mac windows — no VM border visible. Parallels calls this <strong>Coherence Mode</strong>; Fusion calls it <strong>Unity Mode</strong>. Parallels' implementation is more polished in practice: Windows apps get proper Dock icons, keyboard shortcuts feel natural, and file associations work reliably. Fusion's Unity Mode works but occasionally has visual glitches with newer macOS versions.</p>
+          </div>
+
+          <!-- VERDICT TAB -->
+          <div id="tab-verdict" class="tab-panel" style="display:none">
+            <h2>Our Verdict: Which Should You Choose?</h2>
+
+            <div class="qa-block" style="padding:22px 26px;background:linear-gradient(180deg,rgba(255,65,109,.09),rgba(255,65,109,.02));border:1px solid var(--line-pink);border-radius:var(--r-md);margin-bottom:1.75rem">
+              <p><strong>Choose Parallels Desktop if:</strong> You run Windows apps daily on your Mac. You want the fastest performance on Apple Silicon. You want one-click Windows 11 setup without downloading ISOs. You value macOS integration (Coherence Mode, Spotlight search across VMs). The $99.99/yr cost is acceptable for a tool you use every day.</p>
+              <p style="margin-top:.8rem"><strong>Choose VMware Fusion if:</strong> You only virtualize occasionally and want to pay nothing. You already have VMware VMs from a Windows/Linux environment and want cross-platform compatibility. You need advanced networking or REST API automation (Fusion Pro is free for personal use). You're a developer running a mixed hypervisor environment.</p>
+            </div>
+
+            <p>For the majority of Mac users who want to run Windows — whether for work software, development, or occasional Windows-only tools — <strong>Parallels Desktop is the right call</strong>. The performance advantage and polished UX on Apple Silicon justify the $99.99/year cost. The 30-day trial lets you verify this before committing.</p>
+            <p>VMware Fusion is a genuinely capable free alternative. If your budget is zero and you're prepared for a slightly rougher setup experience, Fusion delivers a working Windows environment on your Mac at no cost.</p>
+
+            <div class="native-intent-block">
+              <p class="mini-kicker">Recommended for most users</p>
+              <h3>Parallels Desktop 20 — 30-Day Free Trial</h3>
+              <p>Best Mac virtualizer for performance, ease of use, and macOS integration. Includes one-click Windows 11 ARM installation, Coherence Mode, and DirectX 12 support. Risk-free 30-day trial included.</p>
+              <a href="/go/parallels" rel="noopener sponsored">Start Free Trial of Parallels Desktop →</a>
+            </div>
+
+            <h2>Also Consider</h2>
+            <ul>
+              <li><a href="/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict" style="color:#e94560">Parallels Desktop Review 2026</a> — full feature breakdown and score</li>
+              <li><a href="/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay" style="color:#e94560">Parallels Desktop Pricing 2026</a> — Standard vs Pro vs Business plans</li>
+              <li><a href="/pages/parallels-desktop-free-trial-2026-how-to-get-it-step-by-step" style="color:#e94560">How to Get Parallels Desktop Free Trial</a> — step-by-step guide</li>
+            </ul>
+          </div>
+
+          <!-- FAQ TAB -->
+          <div id="tab-faq" class="tab-panel" style="display:none">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+              <p class="faq-q">Is VMware Fusion really free now?</p>
+              <p class="faq-a">Yes — VMware Fusion 13 has been free for personal use since November 2023, when Broadcom switched to a free Personal Edition. Commercial use still requires a paid licence through Broadcom's portal. The free tier gives Mac users a fully functional x86 virtualizer at no cost.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">Is Parallels Desktop faster than VMware Fusion on Apple Silicon?</p>
+              <p class="faq-a">Yes, in most benchmarks Parallels is meaningfully faster on Apple Silicon Macs (M1/M2/M3/M4). Parallels has shipped Apple Silicon support since 2021 and has had several more years to optimise for ARM-to-x86 translation. Fusion's Apple Silicon support (Fusion 13) works well but typically shows 10–25% lower sustained performance in CPU-intensive Windows tasks on the same hardware.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">How much does Parallels Desktop cost in 2026?</p>
+              <p class="faq-a">Parallels Desktop 20 costs $99.99/year for Standard (1 Mac), $129.99/year for Pro (4 Macs, extra vCPU/RAM), and $149.99/year per user for Business. There is no free tier and no perpetual licence — Parallels is subscription-only.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">Can I run Windows 11 ARM on both Parallels and VMware Fusion?</p>
+              <p class="faq-a">Yes — both tools run Windows 11 ARM on Apple Silicon Macs. Parallels automates the download within the installer. Fusion users download the Windows 11 ARM ISO directly from Microsoft and install manually. For Intel Macs running Intel Windows, both work the same way.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">Which is better for developers — Parallels or VMware Fusion?</p>
+              <p class="faq-a">Parallels Desktop Pro ($129.99/yr) suits most Mac developers: up to 128 GB vRAM allocation, fast disk I/O, tight macOS integration, and Visual Studio integration. VMware Fusion Pro (free for personal use) is preferred by teams who use VMware Workstation across Windows/Linux and need cross-platform VM image compatibility. Both support Docker Desktop well.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">Does Parallels Desktop support DirectX 12?</p>
+              <p class="faq-a">Yes — Parallels Desktop 20 supports DirectX 12 via Apple's Metal translation layer. This enables better performance for modern Windows games and GPU-intensive apps. VMware Fusion 13 supports DirectX 11, which covers most productivity and development tools but excludes newer DirectX 12-only games.</p>
+            </div>
+          </div>
+
+        </div><!-- end ar-body -->
+      </main>
+
+      <aside class="ar-side">
+        <div class="sp-card pa-glance">
+          <div class="pa-glance">
+            <h4>At a Glance</h4>
+            <table class="pa-table">
+              <thead>
+                <tr><th>Metric</th><th>Parallels</th><th>Fusion</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Score</td><td>9.0/10</td><td class="win">7.8/10</td></tr>
+                <tr><td>Price</td><td>$99.99/yr</td><td class="win">Free*</td></tr>
+                <tr><td>Apple Silicon</td><td class="win">Faster</td><td>Good</td></tr>
+                <tr><td>DirectX</td><td class="win">DX12</td><td>DX11</td></tr>
+                <tr><td>Setup</td><td class="win">1-click</td><td>Manual</td></tr>
+                <tr><td>Cross-platform VMs</td><td>No</td><td class="win">Yes</td></tr>
+                <tr><td>REST API</td><td>No</td><td class="win">Yes</td></tr>
+                <tr><td>Trial</td><td class="win">30 days</td><td>N/A (free)</td></tr>
+              </tbody>
+            </table>
+            <p style="font-size:.72rem;color:rgba(255,248,245,.4);margin-top:.5rem">*Free for personal use only. Commercial requires paid Broadcom licence.</p>
+            <div class="cta-stack">
+              <a href="/go/parallels" class="sp-btn sp-btn-primary" rel="noopener sponsored" style="display:block;text-align:center;padding:.6rem 1rem;background:linear-gradient(135deg,#e94560,#c73652);color:#fff;border-radius:100px;font-weight:700;font-size:.82rem;text-decoration:none;box-shadow:0 4px 16px rgba(233,69,96,.35)">Try Parallels Free →</a>
+              <a href="https://www.vmware.com/products/fusion.html" class="sp-btn" rel="noopener noreferrer" style="display:block;text-align:center;padding:.6rem 1rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:rgba(255,248,245,.7);border-radius:100px;font-weight:600;font-size:.82rem;text-decoration:none">VMware Fusion (Free) →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-card" style="padding:18px">
+          <h4 style="font-size:.86rem;font-weight:800;color:var(--ink);margin-bottom:10px">Related Pages</h4>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <a href="/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict" style="font-size:.8rem;color:var(--pink-light);text-decoration:none">Parallels Desktop Review 2026 →</a>
+            <a href="/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay" style="font-size:.8rem;color:var(--pink-light);text-decoration:none">Parallels Desktop Pricing 2026 →</a>
+            <a href="/pages/parallels-desktop-free-trial-2026-how-to-get-it-step-by-step" style="font-size:.8rem;color:var(--pink-light);text-decoration:none">Parallels Free Trial Guide →</a>
+            <a href="/pages/parallels-desktop-coupon-code-promo-codes-2026-verified-discounts" style="font-size:.8rem;color:var(--pink-light);text-decoration:none">Parallels Coupon Codes 2026 →</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div class="sticky-cta" id="sticky-cta">
+  <span style="font-size:.85rem;color:rgba(255,248,245,.8);font-weight:600">Parallels Desktop — Fastest Mac Virtualizer</span>
+  <a href="/go/parallels" rel="noopener sponsored" style="background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.5rem 1.1rem;border-radius:100px;font-weight:700;font-size:.82rem;text-decoration:none;white-space:nowrap">Try Free for 30 Days →</a>
+  <a href="https://www.vmware.com/products/fusion.html" rel="noopener noreferrer" style="color:rgba(255,248,245,.55);font-size:.78rem;text-decoration:none;white-space:nowrap">Or get VMware Fusion free</a>
+</div>
+
+<footer style="border-top:1px solid rgba(255,255,255,.07);padding:3rem 1.5rem;margin-top:4rem;text-align:center">
+  <p style="font-size:.8rem;color:rgba(255,248,245,.35);max-width:680px;margin:0 auto 1rem">
+    <strong style="color:rgba(255,248,245,.55)">Affiliate disclosure:</strong> SaaSpare earns a commission if you purchase Parallels Desktop through our links. VMware Fusion links are not affiliate links. Our verdicts are based on independent testing and are not influenced by commissions.
+  </p>
+  <div style="display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:center;font-size:.8rem">
+    <a href="/" style="color:rgba(255,248,245,.4);text-decoration:none">Home</a>
+    <a href="/pages/" style="color:rgba(255,248,245,.4);text-decoration:none">All Comparisons</a>
+    <a href="/about" style="color:rgba(255,248,245,.4);text-decoration:none">About</a>
+    <a href="/affiliate-disclosure" style="color:rgba(255,248,245,.4);text-decoration:none">Affiliate Disclosure</a>
+    <a href="/privacy" style="color:rgba(255,248,245,.4);text-decoration:none">Privacy</a>
+  </div>
+  <p style="font-size:.75rem;color:rgba(255,248,245,.2);margin-top:1rem">&copy; 2026 SaaSpare.org · ABN 20 602 197 525 · By <a href="/authors/kaylan-von-papen" style="color:rgba(255,248,245,.35);text-decoration:none">Kaylan von Papen</a></p>
+</footer>
+
+<script>
+function switchTab(e,id){
+  document.querySelectorAll('.ar-tab').forEach(function(t){t.classList.remove('active')});
+  document.querySelectorAll('.tab-panel').forEach(function(p){p.style.display='none'});
+  e.target.classList.add('active');
+  var p=document.getElementById('tab-'+id);
+  if(p){p.style.display='block'}
+}
+window.addEventListener('scroll',function(){
+  var nav=document.getElementById('sp-nav');
+  if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
+  var sticky=document.getElementById('sticky-cta');
+  if(sticky){sticky.style.display=window.scrollY>400?'flex':'none'}
+},{passive:true});
+var path=window.location.pathname;
+var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
+var best=null,bestLen=0;
+links.forEach(function(a){
+  var href=a.getAttribute('href');
+  if(!href||href==='/') return;
+  if(path===href||path.indexOf(href)===0){
+    if(href.length>bestLen){best=a;bestLen=href.length;}
+  }
+});
+if(best){best.classList.add('active');}
+</script>
+<link rel="manifest" href="/manifest.webmanifest">
+</body>
+</html>
