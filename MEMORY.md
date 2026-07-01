@@ -230,3 +230,53 @@ actively regenerated. Also fixed `saas-glossary.html`'s broken/truncated meta de
 ### Direct URL leak scan: clean
 grep for hubspot/clickup/1password/etc direct hrefs in site/pages/ → 0 matches. All routed
 through /go/.
+
+## Revenue Hunter Session 2026-07-01 — CTR freshness sweep + new Elementor alternatives page
+
+### Gmail Scan
+- **Fiverr (Awin)** — ALREADY ACTIVE in _redirects (confirmed, no action needed)
+- **PartnerStack** — 3rd network rejection received 2026-06-22. Appeal pending (ticket 116965).
+  ClickUp, Monday.com, ActiveCampaign, Dashlane ALL still locked. Owner should escalate appeal.
+- **Impact.com** — Account active but ONLY Semrush is partnered. HubSpot ($250-1000/sale) and
+  1Password ($30-60/sale) still PENDING approval. Owner should follow up with Impact support.
+- **Wix** — Contract application sent via Impact.com (pending approval)
+- No Xero, Brevo, Hotjar, Constant Contact approvals found
+
+### CTR Freshness Fixes (June → July 2026)
+14 pages updated. Top by GSC impact:
+- `mixpanel-pricing` — pos 13.7, 742 impr/mo, 0 clicks. New title: "Mixpanel Pricing July 2026: Every Plan Cost, Real Growth Fees + No Surprise Billing"
+- `nordlayer-pricing` — pos 19.0, 270 impr/mo. Title updated to July 2026
+- `notion-pricing` — pos 17.4, 214 impr/mo. Title updated to July 2026
+- `does-cloudflare-access-free-plan` — pos 10.0, 219 impr/mo. Meta updated
+- `ramp-review` — pos 7.8, 127 impr/mo. Meta updated
+- `datadog-coupon` — pos 7.4, 131 impr/mo. Title + meta updated
+- `surfer-seo-vs-se-ranking` — pos 53.9, 131 impr/mo. Title updated (was "June")
+- `lastpass-vs-nordpass` — pos 66.6, 69 impr/mo. Title rewritten + July date
+- `best-devops-config-drift-2025` — pos 18.1, 380 impr/mo. Title "[June]" → "[July 2026]"
+- Plus: twingate-vs-tailscale, twingate-vs-zscaler, tailscale-vs-zscaler,
+  shopify-vs-recurly, does-linear-free-plan
+Measure CTR improvement in 14-21 days.
+
+### New Page Built
+- `best-elementor-alternatives-in-2026-free-paid.html`
+- Target queries: "elementor alternatives" (~3-5K searches/mo), "best elementor alternatives"
+- 6 tools: Elementor (winner), Divi, Beaver Builder, Bricks Builder, Webflow, SeedProd
+- All 6 /go/ routes active in _redirects
+- Monetized via /go/elementor → CJ #6798066 (45% commission, EPC $7.55)
+- Added to generator HARDCODED_PAGE_TOOLS (durable)
+- Added TOOLS dict entries for Elementor, Divi, Beaver Builder, Bricks Builder, SeedProd
+
+### GSC Opportunity Notes
+- `does-notion-free-plan` (557 impr, pos 9.4, 0% CTR) — title is good. Likely featured snippet
+  stealing clicks. Monitor — no action needed.
+- `does-sentry-free-plan` (528 impr, pos 7.5, 0% CTR) — same. Already says July 2026.
+- `ramp pricing change june 2026` — pos 3.7, 121 impr, 0 clicks. Ramp pricing page title already
+  targets this ("Did Ramp Change Pricing in June 2026?") — investigate why 0 clicks at pos 3.7.
+  Possibly a SERP feature (rich result) capturing all clicks.
+- Semrush vs Moz cluster: ~1,200 combined impr at pos 66-82. Two competing pages. Owner decision
+  needed to consolidate (redirect one to the other). Cannot fix autonomously.
+
+### Action for Owner
+1. PartnerStack appeal: follow up on ticket 116965 (Anjola S, 2026-06-23)
+2. Impact.com: HubSpot + 1Password program applications — check app.impact.com → Programs
+3. Semrush vs Moz dedup: `semrush-vs-moz-which-is-better-in-2026` vs `semrush-vs-moz-pro-which-is-better-in-2026` — 301 one to the other
