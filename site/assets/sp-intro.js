@@ -15,7 +15,7 @@
   if(window.spPlexus)window.spPlexus(ov.querySelector('canvas'));
   var done=false;
   function dismiss(){if(done)return;done=true;ov.classList.add('done');setTimeout(function(){ov.remove();},800);}
-  var timer=setTimeout(dismiss,2600);
+  var timer=setTimeout(dismiss,1700);
   ov.addEventListener('click',function(){clearTimeout(timer);dismiss();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'||e.key===' '){clearTimeout(timer);dismiss();}},{once:true});
 })();
