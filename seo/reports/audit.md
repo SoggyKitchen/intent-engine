@@ -7,7 +7,7 @@ Pages scanned: 1472
 - no_h1: 2
 
 ## Warning Counts
-- images_missing_alt: 3
+- images_missing_alt: 2
 - meta_length_outside_target: 29
 - missing_correction_cta: 307
 - missing_last_verified: 2
@@ -54,7 +54,6 @@ Pages scanned: 1472
 - `/pages/v3-preview-affiliate-disclosure`: 83.22/100, issues=none
 - `/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026`: 83.3/100, issues=none
 - `/`: 83.5/100, issues=none
-- `/pages/best-elementor-alternatives-in-2026-free-paid`: 83.5/100, issues=none
 - `/pages/best-saas-deals-this-week-2026`: 83.69/100, issues=none
 - `/pages/v3-preview-about`: 83.73/100, issues=none
 - `/pages/v3-preview-newsletter`: 83.87/100, issues=none
@@ -68,3 +67,4 @@ Pages scanned: 1472
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.8/100, issues=none
 - `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 84.81/100, issues=none
 - `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 84.87/100, issues=none
+- `/pages/v3-preview-roi-calculator`: 84.91/100, issues=none
