@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-07-02T07:36:23.691997+00:00",
+  "generated_at": "2026-07-02T21:26:55.302146+00:00",
   "stats": {
-    "sitemap_urls": 1439,
-    "sitemap_with_lastmod": 1439,
+    "sitemap_urls": 1451,
+    "sitemap_with_lastmod": 1451,
     "total_pages": 1500,
     "indexable_pages": 1488,
     "title_over_70": 134,
-    "desc_over_165": 33,
+    "desc_over_165": 30,
     "money_pages": 1221,
     "soft": 14
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/pages/v3-preview-privacy.html: title <30 chars (25)",
+    "site/pages/v3-preview-404.html: title <30 chars (25)",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/bricks-builder",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/webflow",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/divi",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/beaver-builder",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/seedprod",
-    "site/pages/v3-preview-404.html: title <30 chars (25)",
+    "site/pages/v3-preview-privacy.html: title <30 chars (25)",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
-    "site/pages/thanks.html: title <30 chars (29)",
-    "site/pages/v3-preview-contact.html: title <30 chars (27)"
+    "site/pages/v3-preview-contact.html: title <30 chars (27)",
+    "site/pages/thanks.html: title <30 chars (29)"
   ],
   "soft_issues_total": 14
 }
