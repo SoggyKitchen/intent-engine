@@ -6,10 +6,10 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 
 (Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.)
 
-- **Ramp** [PLACEHOLDER, none] — 7 pages, 57 impressions, $100/conv
 - **Pipedrive** [PLACEHOLDER, none] — 8 pages, 38 impressions, $60/conv
 - **ClickUp** [LOCKED, PartnerStack] — 22 pages, 18 impressions, $90/conv
-- **Notion** [PLACEHOLDER, none] — 11 pages, 18 impressions, $15/conv
+- **Ramp** [PLACEHOLDER, none] — 7 pages, 17 impressions, $100/conv
+- **Notion** [PLACEHOLDER, none] — 11 pages, 16 impressions, $15/conv
 - **Datadog** [PLACEHOLDER, none] — 11 pages, 15 impressions, $80/conv
 - **1Password** [PENDING, Impact] — 29 pages, 11 impressions, $45/conv
 - **Monday.com** [LOCKED, PartnerStack] — 20 pages, 11 impressions, $150/conv

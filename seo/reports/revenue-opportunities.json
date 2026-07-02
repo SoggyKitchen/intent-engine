@@ -14,20 +14,6 @@
       "estExtraClicksMo": 1.1,
       "estMonthlyUpliftUsd": 1.33,
       "pageType": "pricing"
-    },
-    {
-      "score": 0.57,
-      "page": "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
-      "program": "Ramp",
-      "status": "PLACEHOLDER",
-      "linkState": "placeholder",
-      "valuePerConvUsd": 100,
-      "impressions": 57,
-      "position": 3.4,
-      "clicks": 0,
-      "estExtraClicksMo": 0.0,
-      "estMonthlyUpliftUsd": 0.0,
-      "pageType": "pricing"
     }
   ]
 }
