@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-30T21:56:40+00:00",
+  "generated_at_utc": "2026-07-02T21:39:35+00:00",
   "mode": "apply",
-  "pages_flagged": 29,
+  "pages_flagged": 30,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -100,6 +100,17 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "at if you find nothing?</summary><p>Stack Audit and Stack Concierge come with a 30-day money-back guarantee. If we cannot identify at least 3\u00d7 your audit fee in recoverable annual savings"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "e Mode, and 20\u201325% better sustained performance on Apple Silicon versus Fusion. 30-day money-back guarantee.</p> <a href=\"/go/parallels\" rel=\"noopener sponsored\">Try Paralle"
         }
       ],
       "trust_state_bumped": false
