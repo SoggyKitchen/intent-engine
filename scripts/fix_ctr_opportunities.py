@@ -32,7 +32,8 @@ RAMP_CHANGE_BLOCK = """
   <strong style="display:block;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:#ea580c;margin-bottom:10px;">⚡ Ramp Pricing Changes 2026 — What Changed</strong>
   <p style="margin:0 0 10px;"><strong>April 2026:</strong> No headline pricing change verified. Ramp's free core card product remained $0 and Ramp Plus remained $15/user/month.</p>
   <p style="margin:0 0 10px;"><strong>May 2026:</strong> No headline pricing change verified. Reports of Bill Pay fee adjustments circulated, but we could not confirm them against Ramp's published pricing — treat them as unverified.</p>
-  <p style="margin:0;"><strong>June 2026:</strong> Verified — Ramp Free is still $0 and Ramp Plus is still $15/user/month. Always confirm transaction-level fees (like Bill Pay) on Ramp's official pricing page, as they are not always shown on the headline plan grid.</p>
+  <p style="margin:0 0 10px;"><strong>June 2026:</strong> Verified — Ramp Free is still $0 and Ramp Plus is still $15/user/month.</p>
+  <p style="margin:0;"><strong>July 2026:</strong> No change. Ramp Free remains $0 and Ramp Plus remains $15/user/month ($12/user/month annual). Bill Pay fees unchanged. Verified 2 July 2026.</p>
   <p style="margin:10px 0 0;font-size:.78rem;color:#fdba74;">SaaSpare monitors Ramp pricing weekly — <a href="/pages/ramp-pricing-history-2026" style="color:#fdba74;">see full Ramp pricing history</a> for timestamped changes.</p>
 </div>"""
 
@@ -44,10 +45,10 @@ def fix_ramp_page():
         return False
     html = p.read_text(encoding="utf-8")
 
-    # 1. Update title to include "Pricing Changes"
+    # 1. Update title to include "Pricing Changes" — broad regex catches any current title
     html = re.sub(
-        r'<title>Ramp Pricing 2026[^<]*</title>',
-        '<title>Ramp Pricing Changes 2026: Every Change Tracked (June 2026 Update)</title>',
+        r'<title>[^<]*[Rr]amp[^<]*[Pp]ric[^<]*</title>',
+        '<title>Ramp Pricing Changes 2026: Every Change Tracked (July 2026 Update)</title>',
         html
     )
     # Update og:title
@@ -59,7 +60,7 @@ def fix_ramp_page():
     # Update meta description — complete sentence, no ellipsis, 155 chars
     html = re.sub(
         r'<meta name="description" content="[^"]*[Rr]amp[^"]*">',
-        '<meta name="description" content="Ramp pricing June 2026 verified: core card free, Ramp Plus $15/user/mo — no headline change in 2026 so far. Every plan and fee tracked monthly with dates.">',
+        '<meta name="description" content="Ramp pricing July 2026 verified: core card free, Ramp Plus $15/user/mo — no headline change in 2026. Every plan and fee tracked monthly with dates. Updated 2 Jul 2026.">',
         html
     )
     # Update H1 if generic
@@ -287,7 +288,7 @@ def fix_notion_free_plan():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Nn]otion[^<]*</title>',
-        "<title>Notion Free Plan 2026: Yes — 4 Hidden Limits Teams Hit (June 2026)</title>",
+        "<title>Notion Free Plan 2026: Yes — 4 Hidden Limits Teams Hit (July 2026)</title>",
         html
     )
     html = re.sub(
@@ -297,7 +298,7 @@ def fix_notion_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Nn]otion[^"]*">',
-        '<meta name="description" content="Notion free plan 2026: yes it exists, but 4 limits trip up teams — 10-guest cap, 7-day page history, no automations, no API access. Real examples. Updated June 2026.">',
+        '<meta name="description" content="Notion free plan 2026: yes it exists, but 4 limits trip up teams — 10-guest cap, 7-day page history, no automations, no API access. Real examples. Updated July 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -324,7 +325,7 @@ def fix_sentry_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]entry[^"]*">',
-        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month free — but 6 features are locked including SSO, custom dashboards, and extended data retention. Full breakdown. Updated June 2026.">',
+        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month free — but 6 features are locked including SSO, custom dashboards, and extended data retention. Full breakdown. Updated July 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -351,7 +352,7 @@ def fix_linear_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ll]inear[^"]*">',
-        '<meta name="description" content="Linear free plan 2026: yes — but the 3-seat cap and no workflow automations push most engineering teams to paid. Full breakdown with upgrade triggers. Updated June 2026.">',
+        '<meta name="description" content="Linear free plan 2026: yes — but the 3-seat cap and no workflow automations push most engineering teams to paid. Full breakdown with upgrade triggers. Updated July 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -400,7 +401,7 @@ def fix_shopify_vs_recurly():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]hopify[^"]*[Rr]ecurly[^"]*">',
-        '<meta name="description" content="Shopify vs Recurly 2026: expert head-to-head on pricing, subscription billing, and integrations. Score-based verdict — Shopify wins overall for most merchants. Updated June 2026.">',
+        '<meta name="description" content="Shopify vs Recurly 2026: expert head-to-head on pricing, subscription billing, and integrations. Score-based verdict — Shopify wins overall for most merchants. Updated July 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -427,7 +428,7 @@ def fix_semrush_vs_moz():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]emrush[^"]*[Mm]oz[^"]*">',
-        '<meta name="description" content="Semrush vs Moz Pro 2026: pricing, keyword tools, backlink data, and the honest score-based verdict. Semrush scores 9.4/10 vs Moz 8.5/10 — updated June 2026. See who wins on each metric.">',
+        '<meta name="description" content="Semrush vs Moz Pro 2026: pricing, keyword tools, backlink data, and the honest score-based verdict. Semrush scores 9.4/10 vs Moz 8.5/10 — updated July 2026. See who wins on each metric.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
