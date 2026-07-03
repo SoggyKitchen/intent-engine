@@ -3,12 +3,12 @@
 Pages scanned: 1472
 
 ## Severe Issue Counts
-- broken_internal_link: 1
+- broken_internal_link: 5
 - no_h1: 2
 
 ## Warning Counts
 - images_missing_alt: 2
-- meta_length_outside_target: 29
+- meta_length_outside_target: 30
 - missing_correction_cta: 307
 - missing_last_verified: 2
 - missing_methodology: 216
@@ -37,6 +37,7 @@ Pages scanned: 1472
 - `/cookie-policy`: 75.98/100, issues=none
 - `/pages/saas-pricing-changes`: 76.0/100, issues=none
 - `/pages/which-saas-has-the-best-free-plan-2026`: 76.3/100, issues=none
+- `/`: 77.5/100, issues=broken_internal_link
 - `/pages`: 78.0/100, issues=none
 - `/advertise`: 79.32/100, issues=none
 - `/pages/request-a-comparison`: 79.33/100, issues=none
@@ -53,7 +54,6 @@ Pages scanned: 1472
 - `/pages/v3-preview-homepage`: 83.18/100, issues=none
 - `/pages/v3-preview-affiliate-disclosure`: 83.22/100, issues=none
 - `/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026`: 83.3/100, issues=none
-- `/`: 83.5/100, issues=none
 - `/pages/best-saas-deals-this-week-2026`: 83.69/100, issues=none
 - `/pages/v3-preview-about`: 83.73/100, issues=none
 - `/pages/v3-preview-newsletter`: 83.87/100, issues=none

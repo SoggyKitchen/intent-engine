@@ -17,7 +17,7 @@
 - `/deal-radar` (coupon, 68.39/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/dmca` (other, 75.92/100): meta_length_outside_target
 - `/editorial-policy` (review, 75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/` (pricing, 83.5/100): images_missing_alt, missing_correction_cta, missing_related_pages
+- `/` (pricing, 77.5/100): images_missing_alt, missing_correction_cta, missing_related_pages
 - `/newsletter` (pricing, 71.25/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/privacy` (trust, 79.64/100): meta_length_outside_target
 - `/roi` (pricing, 72.78/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page

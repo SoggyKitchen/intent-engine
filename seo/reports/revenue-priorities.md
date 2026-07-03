@@ -77,8 +77,11 @@
 - `/pages/v3-preview-deal-radar` (coupon, score 85.06): CTA=True, affiliateLinks=0, disclosure=True
 - `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown` (free_trial, score 85.99): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/saas-pricing-calculator-2026` (pricing, score 86.14): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/linear-pricing-history-2026` (pricing, score 86.33): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ai-tools-pricing-changes-2026` (pricing, score 86.52): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown` (free_trial, score 86.84): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/stripe-pricing-history-2026` (pricing, score 86.85): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/salesforce-pricing-history-2026` (pricing, score 86.92): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 86.94): CTA=True, affiliateLinks=1, disclosure=True
 - `/best-seo-tools-2026` (pricing, score 89.0): CTA=True, affiliateLinks=5, disclosure=True
 - `/best-vpn-for-business-2026` (pricing, score 89.0): CTA=True, affiliateLinks=5, disclosure=True
@@ -94,9 +97,6 @@
 - `/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ramp-pricing-history-2026` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/1password-pricing-history-2026` (pricing, score 92.33): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-pricing-history-2026` (pricing, score 92.33): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/linear-pricing-history-2026` (pricing, score 92.33): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/pipedrive-pricing-history-2026` (pricing, score 92.33): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/tresorit-pricing-history-2026` (pricing, score 92.33): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/clickup-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 92.65): CTA=True, affiliateLinks=1, disclosure=True

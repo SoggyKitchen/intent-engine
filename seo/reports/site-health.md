@@ -1,15 +1,15 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-07-02T07:36:21+00:00
-Mode: `apply-safe`
+Generated: 2026-07-03T06:42:16+00:00
+Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.6/100**
+- Overall SaaSpare Health Score: **94.58/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.89/20
+- Technical SEO: 19.88/20
 - Content usefulness: 19.42/20
 - Trust/E-E-A-T: 18.81/20
-- Internal linking: 14.89/15
+- Internal linking: 14.88/15
 - Schema/indexability: 7.67/10
 - Conversion/revenue: 8.93/10
 - Performance/UX: 5.0/5
@@ -19,7 +19,7 @@ Mode: `apply-safe`
 - Healthy pages (85+): 1422
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 68
+- Safe fixes applied this run: 0
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -44,6 +44,7 @@ Mode: `apply-safe`
 - `/fo-verify` (45.06/100): no_h1
 - `/shortlist` (62.87/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page, title_length_outside_target
 - `/contact` (64.76/100): title_length_outside_target
+- `/` (77.5/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_related_pages
 - `/deal-radar` (68.39/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/newsletter` (71.25/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/roi` (72.78/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
@@ -53,6 +54,9 @@ Mode: `apply-safe`
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.3/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (86.33/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (86.85/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (86.92/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.94/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/request-a-comparison` (79.33/100): title_length_outside_target
@@ -61,10 +65,6 @@ Mode: `apply-safe`
 - `/pages/saas-glossary` (81.0/100): title_length_outside_target
 - `/pages/v3-preview-404` (81.45/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/v3-preview-contact` (82.97/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-homepage` (83.18/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-affiliate-disclosure` (83.22/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026` (83.3/100): meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
-- `/` (83.5/100): images_missing_alt, missing_correction_cta, missing_related_pages
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.39): CTA=True, affiliateLinks=5, disclosure=True

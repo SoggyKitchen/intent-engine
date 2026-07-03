@@ -1896,7 +1896,9 @@
   },
   {
     "affiliate_links": [],
-    "broken_internal_links": [],
+    "broken_internal_links": [
+      "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay"
+    ],
     "canonical": "https://saaspare.org/",
     "external_links": [
       "https://sovrn.co/zq9zjs9"
@@ -1947,11 +1949,11 @@
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-vs-semrush-which-is-better-in-2026",
       "/pages/best-1password-alternatives-in-2026-free-paid",
+      "/pages/bitwarden-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/coupon-verification-policy",
       "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
       "/pages/digitalocean-pricing-2026-plans-costs-what-you-actually-pay",
-      "/pages/does-bitwarden-have-a-free-plan-2026-full-breakdown",
       "/pages/free-trial-database",
       "/pages/how-saaspare-ranks-tools",
       "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
@@ -1982,7 +1984,9 @@
       "/roi",
       "/shortlist"
     ],
-    "issues": [],
+    "issues": [
+      "broken_internal_link"
+    ],
     "jsonld_blocks": 2,
     "meta_description": "SaaSpare: 1,000+ unbiased B2B SaaS comparisons with verified pricing, honest reviews, and free-trial guides across 16 verticals. No paid rankings.",
     "meta_length": 146,
@@ -2005,11 +2009,11 @@
     "score": {
       "content": 17,
       "conversionRevenue": 8,
-      "internalLinking": 12,
-      "overall": 83.5,
+      "internalLinking": 9,
+      "overall": 77.5,
       "performanceUx": 4,
       "schemaIndexability": 6,
-      "technical": 19,
+      "technical": 16,
       "trust": 17.5
     },
     "title": "SaaSpare: Unbiased B2B SaaS Comparisons, Verified Pricing & Reviews",
@@ -2020,7 +2024,7 @@
       "missing_correction_cta",
       "missing_related_pages"
     ],
-    "word_count": 859
+    "word_count": 861
   },
   {
     "affiliate_links": [],
@@ -55017,8 +55021,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated June 2026. Independent Datadog review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026 Honest\u2026",
-    "meta_length": 156,
+    "meta_description": "Updated June 2026. Independent Datadog review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 27 June 2026 Honest\u2026",
+    "meta_length": 157,
     "page_type": "pricing",
     "path": "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
     "robots": "",
@@ -84853,7 +84857,9 @@
     "affiliate_links": [
       "/go/linear"
     ],
-    "broken_internal_links": [],
+    "broken_internal_links": [
+      "/pages/linear-coupon-code-promo-codes-2026-verified-discounts"
+    ],
     "canonical": "https://saaspare.org/pages/linear-pricing-history-2026",
     "external_links": [],
     "file": "site/pages/linear-pricing-history-2026.html",
@@ -84901,7 +84907,9 @@
       "/shortlist",
       "/terms"
     ],
-    "issues": [],
+    "issues": [
+      "broken_internal_link"
+    ],
     "jsonld_blocks": 2,
     "meta_description": "Linear pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 30 June 2026.",
     "meta_length": 163,
@@ -84917,11 +84925,11 @@
     "score": {
       "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 15,
-      "overall": 92.33,
+      "internalLinking": 12,
+      "overall": 86.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 17,
       "trust": 15.0
     },
     "title": "Linear Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
@@ -104596,8 +104604,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated June 2026. Pipedrive pricing 2026: all plans compared, hidden fees exposed, and real cost by team size. Verified 4 June 2026.",
-    "meta_length": 133,
+    "meta_description": "Updated June 2026 (re-verified June 27). Pipedrive pricing 2026: all plans compared, hidden fees exposed, and real cost by team size. Verified 27 June 2026.",
+    "meta_length": 156,
     "page_type": "pricing",
     "path": "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -114171,7 +114179,9 @@
       "/go/hubspot-crm",
       "/go/salesforce"
     ],
-    "broken_internal_links": [],
+    "broken_internal_links": [
+      "/pages/salesforce-coupon-code-promo-codes-2026-verified-discounts"
+    ],
     "canonical": "https://saaspare.org/pages/salesforce-pricing-history-2026",
     "external_links": [],
     "file": "site/pages/salesforce-pricing-history-2026.html",
@@ -114220,7 +114230,9 @@
       "/shortlist",
       "/terms"
     ],
-    "issues": [],
+    "issues": [
+      "broken_internal_link"
+    ],
     "jsonld_blocks": 2,
     "meta_description": "Salesforce pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 30 June 2026.",
     "meta_length": 167,
@@ -114236,11 +114248,11 @@
     "score": {
       "content": 19.92,
       "conversionRevenue": 10,
-      "internalLinking": 15,
-      "overall": 92.92,
+      "internalLinking": 12,
+      "overall": 86.92,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 17,
       "trust": 15.0
     },
     "title": "Salesforce Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
@@ -116358,8 +116370,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 4,
-    "meta_description": "Updated June 2026. Semrush pricing June 2026: Pro $139.95/mo ($117.33 annual), Guru $249.95, Business $449.95. All plans: 1 user only \u2014 extra seats cost $45/mo\u2026",
-    "meta_length": 160,
+    "meta_description": "Updated June 2026 (July check pending). Semrush pricing June 2026: Pro $139.95/mo ($117.33 annual), Guru $249.95, Business $449.95. All plans: 1 user only \u2014 extra seats cost $45/mo\u2026",
+    "meta_length": 181,
     "page_type": "pricing",
     "path": "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -116376,16 +116388,17 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 93.0,
+      "overall": 92.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 19,
       "trust": 15.0
     },
     "title": "Semrush Pricing 2026 (Verified June 2026) \u2014 Real Costs + Hidden Fees",
     "title_length": 68,
     "url": "https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology"
     ],
@@ -122209,7 +122222,10 @@
     "affiliate_links": [
       "/go/stripe"
     ],
-    "broken_internal_links": [],
+    "broken_internal_links": [
+      "/pages/stripe-coupon-code-promo-codes-2026-verified-discounts",
+      "/pages/stripe-pricing-2026-plans-costs-what-you-actually-pay"
+    ],
     "canonical": "https://saaspare.org/pages/stripe-pricing-history-2026",
     "external_links": [],
     "file": "site/pages/stripe-pricing-history-2026.html",
@@ -122257,7 +122273,9 @@
       "/shortlist",
       "/terms"
     ],
-    "issues": [],
+    "issues": [
+      "broken_internal_link"
+    ],
     "jsonld_blocks": 2,
     "meta_description": "Stripe pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 30 June 2026.",
     "meta_length": 163,
@@ -122273,11 +122291,11 @@
     "score": {
       "content": 19.85,
       "conversionRevenue": 10,
-      "internalLinking": 15,
-      "overall": 92.85,
+      "internalLinking": 12,
+      "overall": 86.85,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 17,
       "trust": 15.0
     },
     "title": "Stripe Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",

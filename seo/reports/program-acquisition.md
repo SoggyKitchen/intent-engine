@@ -6,17 +6,17 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 
 (Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.)
 
-- **Pipedrive** [PLACEHOLDER, none] — 8 pages, 38 impressions, $60/conv
+- **Pipedrive** [PLACEHOLDER, none] — 8 pages, 35 impressions, $60/conv
 - **ClickUp** [LOCKED, PartnerStack] — 22 pages, 18 impressions, $90/conv
-- **Ramp** [PLACEHOLDER, none] — 7 pages, 17 impressions, $100/conv
-- **Notion** [PLACEHOLDER, none] — 11 pages, 16 impressions, $15/conv
+- **Notion** [PLACEHOLDER, none] — 11 pages, 18 impressions, $15/conv
 - **Datadog** [PLACEHOLDER, none] — 11 pages, 15 impressions, $80/conv
+- **Ramp** [PLACEHOLDER, none] — 7 pages, 12 impressions, $100/conv
 - **1Password** [PENDING, Impact] — 29 pages, 11 impressions, $45/conv
 - **Monday.com** [LOCKED, PartnerStack] — 20 pages, 11 impressions, $150/conv
 - **Linear** [PLACEHOLDER, none] — 9 pages, 8 impressions, $20/conv
 - **HubSpot** [PENDING, Impact] — 40 pages, 7 impressions, $400/conv
 - **Deel** [PLACEHOLDER, none] — 9 pages, 6 impressions, $100/conv
-- **Asana** [PLACEHOLDER, none] — 28 pages, 6 impressions, $15/conv
+- **Asana** [PLACEHOLDER, none] — 28 pages, 5 impressions, $15/conv
 - **Rippling** [PLACEHOLDER, none] — 8 pages, 4 impressions, $120/conv
 - **FreshBooks** [PENDING, Awin] — 23 pages, 3 impressions, $200/conv
 - **Ahrefs** [PLACEHOLDER, none] — 28 pages, 2 impressions, $100/conv

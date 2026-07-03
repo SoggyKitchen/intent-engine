@@ -1,9 +1,9 @@
 # Sitemap Report
 
 - Sitemap exists: True
-- Sitemap URL count: 1439
+- Sitemap URL count: 1451
 - Scanned HTML pages: 1472
-- Scanned pages missing from sitemap: 46
+- Scanned pages missing from sitemap: 34
 
 ## Missing Examples
 - https://saaspare.org/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f
@@ -38,17 +38,5 @@
 - https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026
 - https://saaspare.org/pages/shopify-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/v3-preview-404
-- https://saaspare.org/pages/v3-preview-about
-- https://saaspare.org/pages/v3-preview-affiliate-disclosure
-- https://saaspare.org/pages/v3-preview-contact
-- https://saaspare.org/pages/v3-preview-deal-radar
-- https://saaspare.org/pages/v3-preview-homepage
-- https://saaspare.org/pages/v3-preview-index
-- https://saaspare.org/pages/v3-preview-library
-- https://saaspare.org/pages/v3-preview-newsletter
-- https://saaspare.org/pages/v3-preview-privacy
-- https://saaspare.org/pages/v3-preview-roi-calculator
-- https://saaspare.org/pages/v3-preview-shortlist
 - https://saaspare.org/pages/xero-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/zoom-promo-code-2026-discounts-deals-that-actually-work

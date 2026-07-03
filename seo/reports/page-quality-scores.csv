@@ -23,7 +23,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /editorial-policy,review,19,15.0,15.0,9.05,6,6,5,75.05
 /fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f,other,17,6.03,5.0,3.0,5,0,5,41.02
 /fo-verify,other,17,10.06,5.0,3.0,5,0,5,45.06
-/,pricing,19,17,17.5,12,6,8,4,83.5
+/,pricing,16,17,17.5,9,6,8,4,77.5
 /media-kit,other,20,15.22,10.0,9.5,6,6,5,71.72
 /methodology,trust,20,15.82,17.5,12,6,6,5,82.32
 /newsletter,pricing,20,10.25,12.5,9.5,6,8,5,71.25
@@ -858,7 +858,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/lever-vs-remote-com-which-is-better-in-2026,comparison,20,19.77,20.0,15,8,8,5,95.77
 /pages/linear-free-trial-2026-how-to-get-it-step-by-step,free_trial,19,19.7,15.0,15,8,10,5,91.7
 /pages/linear-pricing-2026-plans-costs-what-you-actually-pay,pricing,20,19.68,17.5,15,8,10,5,95.18
-/pages/linear-pricing-history-2026,pricing,20,19.33,15.0,15,8,10,5,92.33
+/pages/linear-pricing-history-2026,pricing,17,19.33,15.0,12,8,10,5,86.33
 /pages/linear-promo-code-2026-discounts-deals-that-actually-work,coupon,20,19.01,15.0,15,8,10,5,92.01
 /pages/linear-review-2026-is-it-worth-it-honest-verdict,pricing,20,19.24,17.5,15,8,10,5,94.74
 /pages/linear-vs-asana-which-is-better-in-2026,comparison,20,19.38,20.0,15,8,10,5,97.38
@@ -1188,7 +1188,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/sage-vs-divvy-which-is-better-in-2026,comparison,20,19.36,20.0,15,8,8,5,95.36
 /pages/salesforce-free-trial-2026-how-to-get-it-step-by-step,free_trial,20,19.7,15.0,15,8,10,5,92.7
 /pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay,pricing,19,19.68,17.5,15,8,10,5,94.17
-/pages/salesforce-pricing-history-2026,pricing,20,19.92,15.0,15,8,10,5,92.92
+/pages/salesforce-pricing-history-2026,pricing,17,19.92,15.0,12,8,10,5,86.92
 /pages/salesforce-promo-code-2026-discounts-deals-that-actually-work,coupon,20,19.05,15.0,15,8,10,5,92.06
 /pages/salesforce-review-2026-is-it-worth-it-honest-verdict,pricing,20,19.82,17.5,15,8,10,5,95.33
 /pages/salesforce-vs-close-which-is-better-in-2026,comparison,20,19.55,20.0,15,8,10,5,97.56
@@ -1212,7 +1212,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/se-ranking-vs-spyfu-which-is-better-in-2026,comparison,20,19.68,20.0,15,8,8,5,95.67
 /pages/semrush-coupon-code-promo-codes-2026-verified-discounts,coupon,20,19.39,15.0,15,8,10,5,92.39
 /pages/semrush-free-trial-2026-how-to-get-it-step-by-step,free_trial,20,20,15.0,15,8,10,5,93.0
-/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay,pricing,20,20,15.0,15,8,10,5,93.0
+/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay,pricing,19,20,15.0,15,8,10,5,92.0
 /pages/semrush-pricing-history-2026,pricing,20,19.86,15.0,15,8,10,5,92.86
 /pages/semrush-promo-code-2026-discounts-deals-that-actually-work,coupon,20,19.04,15.0,15,8,10,5,92.04
 /pages/semrush-review-2026-is-it-worth-it-honest-verdict,pricing,20,19.94,17.5,15,8,10,5,95.44
@@ -1278,7 +1278,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/sticky-password-vs-password-boss-which-is-better-in-2026,comparison,20,19.86,20.0,15,8,8,5,95.86
 /pages/streamyard-vs-descript-which-is-better-in-2026,comparison,20,19.63,20.0,15,8,8,5,95.63
 /pages/stripe-coupon-2026-discount-codes-promo,coupon,20,19.11,15.0,15,8,10,5,92.11
-/pages/stripe-pricing-history-2026,pricing,20,19.85,15.0,15,8,10,5,92.85
+/pages/stripe-pricing-history-2026,pricing,17,19.85,15.0,12,8,10,5,86.85
 /pages/stripe-review-2026-is-it-worth-it-honest-verdict,pricing,20,19.23,17.5,15,8,10,5,94.72
 /pages/stripe-vs-bold-commerce-which-is-better-in-2026,comparison,20,19.48,20.0,15,8,8,5,95.48
 /pages/stripe-vs-chargebee-which-is-better-in-2026,comparison,20,19.4,20.0,15,8,8,5,95.4
