@@ -1,7 +1,7 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-07-03T06:42:16+00:00
-Mode: `audit`
+Generated: 2026-07-03T07:24:27+00:00
+Mode: `apply-safe`
 
 ## Current Score
 - Overall SaaSpare Health Score: **94.58/100**
