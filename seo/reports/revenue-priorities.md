@@ -88,6 +88,7 @@
 - `/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 89.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-getresponse-have-a-free-plan-2026-full-breakdown` (free_trial, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/grandfathered-saas-pricing-2026` (pricing, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/linear-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 91.7): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.78): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.79): CTA=True, affiliateLinks=1, disclosure=True
@@ -95,7 +96,6 @@
 - `/pages/impact-com-review-2026-is-it-worth-it-honest-verdict` (pricing, score 92.0): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ramp-pricing-history-2026` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/1password-pricing-history-2026` (pricing, score 92.33): CTA=True, affiliateLinks=1, disclosure=True

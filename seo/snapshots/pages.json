@@ -60409,7 +60409,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 5,
-    "meta_description": "Updated June 2026. Loom free: 5 videos max, 5-minute cap per workspace. Business from $12.50/user/mo removes all limits. Full 2026 breakdown of every free plan restriction and when upgrading pays off.",
+    "meta_description": "Updated July 2026. Loom free: 5 videos max, 5-minute cap per workspace. Business from $12.50/user/mo removes all limits. Full 2026 breakdown of every free plan restriction and when upgrading pays off.",
     "meta_length": 200,
     "page_type": "free_trial",
     "path": "/pages/does-loom-have-a-free-plan-2026-full-breakdown",
@@ -60433,8 +60433,8 @@
       "technical": 18,
       "trust": 20.0
     },
-    "title": "Loom Free Plan 2026: 5 Videos + 5-Minute Cap \u2014 Who It Works For & When to Upgrade",
-    "title_length": 81,
+    "title": "Loom Free Plan July 2026: 5 Videos, 5-Min Cap \u2014 What You Actually Get [Honest Review]",
+    "title_length": 85,
     "url": "https://saaspare.org/pages/does-loom-have-a-free-plan-2026-full-breakdown",
     "warnings": [
       "meta_length_outside_target",
@@ -60897,14 +60897,14 @@
       "technical": 18,
       "trust": 20.0
     },
-    "title": "Does Notion Have a Free Plan? (2026) \u2014 Yes, but 4 Limits Break Most Teams",
-    "title_length": 73,
+    "title": "Does Notion Have a Free Plan? July 2026 \u2014 Yes, But These 4 Limits Hit Every Team",
+    "title_length": 80,
     "url": "https://saaspare.org/pages/does-notion-have-a-free-plan-2026-full-breakdown",
     "warnings": [
       "meta_length_outside_target",
       "title_length_outside_target"
     ],
-    "word_count": 1133
+    "word_count": 1135
   },
   {
     "affiliate_links": [
@@ -61356,8 +61356,8 @@
       "technical": 18,
       "trust": 20.0
     },
-    "title": "Does Sentry Have a Free Plan? (2026) \u2014 Yes: 5,000 Errors/Month + 6 Paid-Only Catches",
-    "title_length": 84,
+    "title": "Does Sentry Have a Free Plan? July 2026 \u2014 5K Errors/Mo Free + 6 Limits [Honest Verdict]",
+    "title_length": 87,
     "url": "https://saaspare.org/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
     "warnings": [
       "meta_length_outside_target",
@@ -67869,7 +67869,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated June 2026. GetResponse pricing June 2026 verified: Free up to 500 contacts, Email Marketing from $19/mo, Marketing Automation $59/mo, Ecommerce $119/mo.\u2026",
+    "meta_description": "Updated July 2026. GetResponse pricing July 2026 verified: Free up to 500 contacts, Email Marketing from $19/mo, Marketing Automation $59/mo, Ecommerce $119/mo.\u2026",
     "meta_length": 161,
     "page_type": "pricing",
     "path": "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
@@ -67886,19 +67886,20 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.5,
+      "overall": 94.5,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 19,
       "trust": 17.5
     },
-    "title": "GetResponse Pricing 2026 (Verified June) \u2014 Real Costs + Hidden Fees",
-    "title_length": 67,
+    "title": "GetResponse Pricing July 2026 (Verified) \u2014 Real Costs, Hidden Fees + Plan Comparison",
+    "title_length": 84,
     "url": "https://saaspare.org/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
-      "missing_methodology"
+      "missing_methodology",
+      "title_length_outside_target"
     ],
-    "word_count": 830
+    "word_count": 832
   },
   {
     "affiliate_links": [
@@ -67973,23 +67974,24 @@
       "SoftwareApplication"
     ],
     "score": {
-      "content": 19.23,
+      "content": 19.25,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.73,
+      "overall": 93.75,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 19,
       "trust": 17.5
     },
-    "title": "GetResponse Review 2026: Is It Worth It? Honest Verdict + Real Pricing",
-    "title_length": 70,
+    "title": "GetResponse Review July 2026: Is It Worth It? 8.1/10 Honest Verdict + Real Pricing",
+    "title_length": 82,
     "url": "https://saaspare.org/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
     "warnings": [
       "missing_correction_cta",
-      "thin_buyer_page"
+      "thin_buyer_page",
+      "title_length_outside_target"
     ],
-    "word_count": 647
+    "word_count": 651
   },
   {
     "affiliate_links": [
@@ -68813,6 +68815,97 @@
       "thin_buyer_page"
     ],
     "word_count": 688
+  },
+  {
+    "affiliate_links": [
+      "/go/getresponse"
+    ],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/getresponse-vs-mailerlite-which-is-better-in-2026",
+    "external_links": [],
+    "file": "site/pages/getresponse-vs-mailerlite-which-is-better-in-2026.html",
+    "h1": [
+      "GetResponse vs MailerLite 2026: Which Is Better?"
+    ],
+    "h2": [
+      "Verdict at a Glance",
+      "Pricing Comparison",
+      "Feature Comparison",
+      "Our Final Verdict",
+      "Frequently Asked Questions",
+      "More GetResponse comparisons",
+      "Related Comparisons"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 5,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/authors/kaylan-von-papen",
+      "/corrections",
+      "/deal-radar",
+      "/editorial-policy",
+      "/go/getresponse",
+      "/methodology",
+      "/newsletter",
+      "/pages/",
+      "/pages/getresponse-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
+      "/pages/getresponse-vs-brevo-which-is-better-in-2026",
+      "/pages/getresponse-vs-mailchimp-which-is-better-in-2026",
+      "/privacy",
+      "/roi",
+      "/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 2,
+    "meta_description": "Updated July 2026. GetResponse (8.4/10) vs MailerLite (8.3/10): GetResponse wins on automation depth and webinars. MailerLite wins on price \u2014 $9/mo vs $15/mo. Full side-by-side breakdown.",
+    "meta_length": 187,
+    "page_type": "comparison",
+    "path": "/pages/getresponse-vs-mailerlite-which-is-better-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "FAQPage",
+      "Organization",
+      "Person",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 10,
+      "internalLinking": 15,
+      "overall": 93.5,
+      "performanceUx": 5,
+      "schemaIndexability": 8,
+      "technical": 18,
+      "trust": 17.5
+    },
+    "title": "GetResponse vs MailerLite July 2026: Which Is Better? [Honest Head-to-Head]",
+    "title_length": 75,
+    "url": "https://saaspare.org/pages/getresponse-vs-mailerlite-which-is-better-in-2026",
+    "warnings": [
+      "meta_length_outside_target",
+      "title_length_outside_target"
+    ],
+    "word_count": 1084
   },
   {
     "affiliate_links": [
@@ -89859,7 +89952,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated June 2026. Mixpanel pricing July 2026: Free forever = 20M events/mo, 90-day retention. Growth from $28/mo adds session replay + 1-year data. Real cost\u2026",
+    "meta_description": "Updated July 2026. Mixpanel pricing July 2026: Free forever = 20M events/mo, 90-day retention. Growth from $28/mo adds session replay + 1-year data. Real cost\u2026",
     "meta_length": 159,
     "page_type": "pricing",
     "path": "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
@@ -89882,8 +89975,8 @@
       "technical": 19,
       "trust": 15.0
     },
-    "title": "Mixpanel Pricing July 2026: Every Plan Cost, Real Growth Fees + No Surprise Billing",
-    "title_length": 83,
+    "title": "Mixpanel Pricing July 2026: Free 20M Events, Growth from $28 \u2014 Real Cost Breakdown",
+    "title_length": 82,
     "url": "https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
       "missing_correction_cta",
@@ -108001,8 +108094,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated June 2026. Ramp pricing verified 30 June 2026: No change \u2014 Free Card = $0 forever, Plus = $15/user/mo ($12 annual). Zero price increases in 2026. Full\u2026",
-    "meta_length": 159,
+    "meta_description": "Updated July 2026. Ramp pricing July 2026: Free Card = $0/mo forever, Plus = $15/user/mo ($12 annual). No price changes in 2026. Full plan breakdown + pricing change history.",
+    "meta_length": 174,
     "page_type": "pricing",
     "path": "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -108018,21 +108111,22 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 92.0,
+      "overall": 91.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 19,
+      "technical": 18,
       "trust": 15.0
     },
-    "title": "Did Ramp Change Pricing in June 2026? [No \u2014 Free Card Still $0, Full Change Log]",
-    "title_length": 80,
+    "title": "Ramp Pricing July 2026: Free Card $0, Plus $15/user \u2014 No Change + Full History",
+    "title_length": 78,
     "url": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
       "title_length_outside_target"
     ],
-    "word_count": 1049
+    "word_count": 1048
   },
   {
     "affiliate_links": [
@@ -108196,24 +108290,25 @@
       "SoftwareApplication"
     ],
     "score": {
-      "content": 19.23,
+      "content": 19.25,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 93.73,
+      "overall": 92.75,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 19,
+      "technical": 18,
       "trust": 17.5
     },
-    "title": "Ramp Review 2026: Is It Actually Free? 7.8/10 Score \u2014 Honest Verdict",
-    "title_length": 68,
+    "title": "Ramp Review July 2026: 7.8/10 \u2014 Is the Free Card Truly Free? [Honest Verdict]",
+    "title_length": 77,
     "url": "https://saaspare.org/pages/ramp-review-2026-is-it-worth-it-honest-verdict",
     "warnings": [
       "meta_length_outside_target",
       "missing_correction_cta",
-      "thin_buyer_page"
+      "thin_buyer_page",
+      "title_length_outside_target"
     ],
-    "word_count": 647
+    "word_count": 649
   },
   {
     "affiliate_links": [],
@@ -117182,7 +117277,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Updated June 2026. Semrush (9.4/10) vs Moz Pro (8.7/10): Semrush wins on keyword depth (25B+ keywords), competitor research & PPC data. Moz Pro wins on price\u2026",
+    "meta_description": "Updated July 2026. Semrush (9.4/10) vs Moz Pro (8.7/10): Semrush wins on keyword depth (25B+ keywords), competitor research & PPC data. Moz Pro wins on price\u2026",
     "meta_length": 158,
     "page_type": "comparison",
     "path": "/pages/semrush-vs-moz-pro-which-is-better-in-2026",
@@ -117196,23 +117291,23 @@
       "Question"
     ],
     "score": {
-      "content": 19.73,
+      "content": 19.74,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 96.73,
+      "overall": 96.74,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 19,
       "trust": 20.0
     },
-    "title": "Semrush vs Moz Pro 2026: 9.4 vs 8.7 \u2014 Is $139/mo Worth 3\u00d7 Moz? [Tested June]",
-    "title_length": 76,
+    "title": "Semrush vs Moz Pro 2026: 9.4 vs 8.7 \u2014 Is $139/mo Worth 3\u00d7 Moz? [July 2026 Verdict]",
+    "title_length": 82,
     "url": "https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026",
     "warnings": [
       "thin_buyer_page",
       "title_length_outside_target"
     ],
-    "word_count": 747
+    "word_count": 748
   },
   {
     "affiliate_links": [
@@ -117277,7 +117372,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Updated June 2026. Semrush vs Moz Pro 2026: pricing, keyword tools, backlink data, and the honest score-based verdict. Semrush scores 9.4/10 vs Moz 8.5/10 \u2014\u2026",
+    "meta_description": "Updated July 2026. Semrush vs Moz Pro 2026: pricing, keyword tools, backlink data, and the honest score-based verdict. Semrush scores 9.4/10 vs Moz 8.5/10 \u2014\u2026",
     "meta_length": 157,
     "page_type": "comparison",
     "path": "/pages/semrush-vs-moz-which-is-better-in-2026",

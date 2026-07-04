@@ -69,6 +69,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/fiverr-vs-toptal-which-is-better-in-2026`: missing_methodology, missing_trustbox
 - `/pages/grandfathered-saas-pricing-2026`: missing_correction_cta, missing_methodology
 - `/pages/partnerstack-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/linear-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -89,7 +90,6 @@ These are not safe to fake or mass rewrite.
 - `/pages/impact-com-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_trustbox
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
-- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/ramp-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/linear-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -192,6 +192,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/zoom-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/activecampaign-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ramp-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, thin_buyer_page
 - `/pages/hubspot-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -201,4 +202,3 @@ These are not safe to fake or mass rewrite.
 - `/pages/se-ranking-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/surfer-seo-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/moz-pro-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/semrush-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
