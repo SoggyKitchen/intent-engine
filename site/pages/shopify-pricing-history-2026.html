@@ -4,12 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shopify Pricing History 2026: Every Price Change Tracked — SaaSpare</title>
-<meta name="description" content="Updated July 2026. Shopify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.…">
+<meta name="description" content="Shopify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 4 July 2026.">
 <link rel="canonical" href="https://saaspare.org/pages/shopify-pricing-history-2026">
   <link rel="stylesheet" href="/assets/saaspare-v2.css">
   <link rel="stylesheet" href="/assets/saaspare-ui.css">
   <link rel="stylesheet" href="/assets/motion.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Has Shopify raised prices recently?", "acceptedAnswer": {"@type": "Answer", "text": "See the timeline above for every verified pricing change. We document sources and dates for all increases."}}, {"@type": "Question", "name": "What is the true cost of Shopify?", "acceptedAnswer": {"@type": "Answer", "text": "Advertised: $29/mo. Estimated true cost: $80-200/mo. The gap includes add-ons, implementation, and annual billing vs monthly rates."}}, {"@type": "Question", "name": "How do I lock in Shopify's current price?", "acceptedAnswer": {"@type": "Answer", "text": "Annual billing locks your rate for 12 months and typically saves 15-25% vs monthly. If you're committed to Shopify, annual is almost always the better financial decision."}}, {"@type": "Question", "name": "Will Shopify raise prices again?", "acceptedAnswer": {"@type": "Answer", "text": "Based on historical patterns, SaaS vendors typically raise prices every 12-24 months citing AI features or infrastructure. We track Shopify pricing weekly and update this page immediately on any change."}}, {"@type": "Question", "name": "How often does SaaSpare verify Shopify pricing?", "acceptedAnswer": {"@type": "Answer", "text": "We verify every Wednesday via automated scraping and manual spot-checks. Last verified: 30 June 2026. If you spot a discrepancy, use the feedback button."}}]}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Has Shopify raised prices recently?","acceptedAnswer":{"@type":"Answer","text":"See the timeline above for every verified pricing change. We document sources and dates for all increases."}},
+    {"@type":"Question","name":"What is the true cost of Shopify?","acceptedAnswer":{"@type":"Answer","text":"Advertised: $29/mo. Estimated true cost: $80-200/mo. The gap includes add-ons, implementation, and annual billing vs monthly rates."}},
+    {"@type":"Question","name":"How do I lock in Shopify's current price?","acceptedAnswer":{"@type":"Answer","text":"Annual billing locks your rate for 12 months and typically saves 15-25% vs monthly. If you're committed to Shopify, annual is almost always the better financial decision."}},
+    {"@type":"Question","name":"Will Shopify raise prices again?","acceptedAnswer":{"@type":"Answer","text":"Based on historical patterns, SaaS vendors typically raise prices every 12-24 months citing AI features or infrastructure. We track Shopify pricing weekly and update this page immediately on any change."}},
+    {"@type":"Question","name":"How often does SaaSpare verify Shopify pricing?","acceptedAnswer":{"@type":"Answer","text":"We verify every Wednesday via automated scraping and manual spot-checks. Last verified: 4 July 2026. If you spot a discrepancy, use the feedback button."}}
+  ]
+}
+</script>
 <style>
 /* ── HERO ─────────────────────────── */
 .ph-hero{padding:4.5rem 1.5rem 2.5rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.25rem;position:relative;isolation:isolate;overflow:hidden;}
@@ -321,16 +333,13 @@ nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp
 .sp-nav-wordmark em{color:#e94560;font-style:normal}
 nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
   border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
-nav#sp-nav .sp-nav-link:hover{color:#fff}
-nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
-nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
+nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
 .sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
   padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
   box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
-/* Remove old nav styles that cause bracket/black-bar glitches */
+.sp-nav-spacer{height:72px}
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
 </style>
@@ -338,44 +347,9 @@ nav.sp-topnav{display:none!important}
 (function(){
   window.addEventListener('scroll',function(){
     var nav=document.getElementById('sp-nav');
-    if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
+    if(nav){nav.classList.toggle('scrolled',window.scrollY>40);}
   },{passive:true});
-
-  function highlightNav(){
-    var path=window.location.pathname;
-    var override=document.body.getAttribute('data-nav');
-    var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
-    var best=null,bestLen=0;
-    links.forEach(function(a){
-      var href=a.getAttribute('href');
-      if(!href||href==='/') return;
-      if(override){if(href===override){best=a;}return;}
-      if(path===href||path.indexOf(href.replace(/\/$/,'')+'/')===0){
-        if(href.length>bestLen){best=a;bestLen=href.length;}
-      }
-    });
-    if(best){best.classList.add('active');}
-  }
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',highlightNav);}else{highlightNav();}
 })();
-</script>
-<meta name="keywords" content="Shopify Pricing History Pricing 2026: Plans &amp; Costs, pricing, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
-<meta property="og:url" content="https://saaspare.org/pages/shopify-pricing-history-2026">
-<meta property="og:type" content="article">
-<meta property="og:image" content="https://saaspare.org/og-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@SaaSpare">
-<meta name="twitter:image" content="https://saaspare.org/og-default.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SaaSpare", "url": "https://saaspare.org/", "logo": "https://saaspare.org/og-default.png", "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.", "sameAs": ["https://twitter.com/SaaSpare"]}</script>
-<link rel="manifest" href="/manifest.webmanifest">
-
-<!-- Microsoft Clarity (heatmaps + session replay, cookieless by default) -->
-<script id="clarity-ms">
-(function(c,l,a,r,i,t,y){
-  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window,document,"clarity","script","wne1kku7w1");
 </script>
 </head>
 <body style="background:#050407;color:rgba(255,248,245,.88)">
@@ -402,7 +376,6 @@ nav.sp-topnav{display:none!important}
     <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
   </a>
   <a href="/pages/" class="sp-nav-link">Comparisons</a>
-  <a href="/roi" class="sp-nav-link">ROI Calculator</a>
   <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
   <a href="/about" class="sp-nav-link">About</a>
@@ -424,18 +397,14 @@ nav.sp-topnav{display:none!important}
       <span style="color:var(--ink-3);font-weight:600">Pricing History 2026</span>
     </nav>
     <div class="sp-up" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
-      <span class="sp-eyebrow"><span class="sp-eyebrow-dot"></span>Price Tracker · Updated 30 June 2026</span>
+      <span class="sp-eyebrow"><span class="sp-eyebrow-dot"></span>Price Tracker · Updated 4 July 2026</span>
       <span class="trust-chip"><span class="live-pulse-dot" style="width:7px;height:7px;flex-shrink:0"></span>Live pricing data</span>
     </div>
     <div class="sp-up sp-up-1" style="display:flex;align-items:center;gap:14px;justify-content:center;flex-wrap:wrap">
-      <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/shopify/96bf48" alt="Shopify" fetchpriority="high"></span>
+      <span class="sp-logo sp-logo-lg"><img src="https://cdn.simpleicons.org/shopify/96bf48" alt="Shopify"></span>
       <h1 class="sp-h1" style="max-width:680px;text-align:left">
         Shopify <span class="sp-accent">Pricing History</span> 2026
       </h1>
-<div class="featured-answer" data-aeo-answer>
-  <p><strong>Quick answer (July 2026):</strong> Shopify Pricing History 2026 pricing in July 2026: plans start at the entry tier with the most-quoted real-world cost being the published Pro/Standard plan. Hidden fees apply on per-seat add-ons and annual contracts. We track every pricing change and call out the traps below.</p>
-</div>
-
     </div>
     <p class="sp-lead sp-up sp-up-2" style="max-width:540px">Shopify raised plan prices significantly in January 2023. We've tracked every change since and document what merchants actually pay vs the advertised rate.</p>
     <div class="scorecard-grid sp-up sp-up-3">
@@ -456,7 +425,7 @@ nav.sp-topnav{display:none!important}
       </div>
       <div class="sp-glass scorecard premium-card reveal-up">
         <div class="scorecard-label">Last Verified</div>
-        <div class="scorecard-value" style="font-size:1.1rem">30 June 2026</div>
+        <div class="scorecard-value" style="font-size:1.1rem">4 July 2026</div>
         <div class="scorecard-sub">Re-verified every Wednesday</div>
       </div>
     </div>
@@ -639,7 +608,7 @@ nav.sp-topnav{display:none!important}
         <div class="faq-item"><h3 class="faq-q">What is the true cost of Shopify?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">Advertised: $29/mo. Estimated true cost: $80-200/mo. The gap includes add-ons, implementation, and annual billing vs monthly rates.</div></div>
         <div class="faq-item"><h3 class="faq-q">How do I lock in Shopify's current price?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">Annual billing locks your rate for 12 months and typically saves 15-25% vs monthly. If you're committed to Shopify, annual is almost always the better financial decision.</div></div>
         <div class="faq-item"><h3 class="faq-q">Will Shopify raise prices again?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">Based on historical patterns, SaaS vendors typically raise prices every 12-24 months citing AI features or infrastructure. We track Shopify pricing weekly and update this page immediately on any change.</div></div>
-        <div class="faq-item"><h3 class="faq-q">How often does SaaSpare verify Shopify pricing?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">We verify every Wednesday via automated scraping and manual spot-checks. Last verified: 30 June 2026. If you spot a discrepancy, use the feedback button.</div></div>
+        <div class="faq-item"><h3 class="faq-q">How often does SaaSpare verify Shopify pricing?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></h3><div class="faq-a">We verify every Wednesday via automated scraping and manual spot-checks. Last verified: 4 July 2026. If you spot a discrepancy, use the feedback button.</div></div>
       </div>
     </div>
 
@@ -681,7 +650,7 @@ nav.sp-topnav{display:none!important}
 
 <div class="sticky-bottom-cta" id="sticky-cta">
   <div class="sticky-bottom-cta-text">
-    <strong>Shopify Pricing History</strong> — 4 changes tracked · Last updated 30 June 2026
+    <strong>Shopify Pricing History</strong> — 4 changes tracked · Last updated 4 July 2026
   </div>
   <div style="display:flex;gap:8px;align-items:center;flex-shrink:0">
     <a href="/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay" class="sp-btn sp-btn-primary sp-btn-sm glint-button">Current Pricing →</a>
@@ -697,44 +666,5 @@ nav.sp-topnav{display:none!important}
 })();
 </script>
 <script src="/assets/motion.js" defer></script>
-
-<!-- Exit-intent newsletter modal (desktop only, one-time per session) -->
-<style>
-#ss-exit-modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:9999}
-#ss-exit-modal[data-open="1"]{display:flex}
-#ss-exit-card{max-width:440px;background:#0d0d16;padding:2rem;border-radius:16px;border:1px solid #1a1a28;color:#f4f4f8;text-align:center;font-family:inherit;box-shadow:0 30px 80px rgba(0,0,0,.5)}
-#ss-exit-card h3{margin:0 0 .5rem 0;font-size:1.4rem;color:#e94560}
-#ss-exit-card p{margin:0 0 1.2rem 0;opacity:.82;line-height:1.5}
-#ss-exit-card form{display:flex;gap:.5rem}
-#ss-exit-card input{flex:1;padding:.75rem 1rem;background:#07070d;border:1px solid #222;border-radius:8px;color:inherit;font-size:1rem}
-#ss-exit-card button{padding:.75rem 1.2rem;background:#e94560;color:#fff;border:0;border-radius:8px;font-weight:700;cursor:pointer}
-#ss-exit-close{position:absolute;top:18px;right:22px;background:transparent;border:0;color:#777;font-size:1.3rem;cursor:pointer}
-</style>
-<script id="exit-intent-newsletter">
-(function(){
-  if(sessionStorage.getItem('ssExitShown'))return;
-  if(window.innerWidth<768)return; // desktop only
-  var shown=false;
-  function show(){
-    if(shown)return; shown=true;
-    sessionStorage.setItem('ssExitShown','1');
-    var m=document.createElement('div'); m.id='ss-exit-modal'; m.setAttribute('data-open','1');
-    m.innerHTML='<div id="ss-exit-card"><button id="ss-exit-close" aria-label="Close">&times;</button>'
-      +'<h3>Before you go &mdash; the honest SaaS deals weekly</h3>'
-      +'<p>Every Friday we email 1 verified deal, 1 pricing change and 1 tool to avoid. Free, no spam.</p>'
-      +'<form action="https://formsubmit.co/ajax/hellothere@saaspare.org" method="POST" id="ss-exit-form">'
-      +'<input type="email" name="email" placeholder="you@company.com" required><button type="submit">Get it</button>'
-      +'</form></div>';
-    document.body.appendChild(m);
-    m.addEventListener('click',function(e){if(e.target===m)m.remove();});
-    document.getElementById('ss-exit-close').onclick=function(){m.remove();};
-    document.getElementById('ss-exit-form').addEventListener('submit',function(e){
-      if(window.gtag)gtag('event','newsletter_signup',{source:'exit_intent'});
-    });
-  }
-  document.addEventListener('mouseleave',function(e){if(e.clientY<=0)show();});
-  setTimeout(show,120000); // also show after 2 min if user stays
-})();
-</script>
 </body>
 </html>

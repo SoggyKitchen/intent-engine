@@ -1,78 +1,16 @@
 {
   "current_month": "July 2026",
   "today": "2026-07-04",
-  "titles_rewritten": 122,
-  "descs_rewritten": 1414,
-  "dates_refreshed": 1120,
-  "answers_added": 34,
-  "files_changed": 1436,
+  "titles_rewritten": 0,
+  "descs_rewritten": 0,
+  "dates_refreshed": 0,
+  "answers_added": 0,
+  "files_changed": 0,
   "files_scanned": 1443,
-  "title_examples": [
-    {
-      "file": "1password-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "1Password Coupon 2026 (Verified June 2026) \u2014 Real Working Codes",
-      "after": "1Password Coupon 2026 (Verified July 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "1password-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "1Password Free Trial 2026: How to Get the Full June 2026 Offer",
-      "after": "1Password Free Trial 2026: How to Get the Full July 2026 Offer"
-    },
-    {
-      "file": "1password-promo-code-2026-discounts-deals-that-actually-work.html",
-      "before": "1Password Coupon &amp; Discount 2026: Best Deals Right Now \u2014 SaaSpare",
-      "after": "1Password Coupon 2026 (Verified July 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
-      "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
-      "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
-    },
-    {
-      "file": "activecampaign-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "ActiveCampaign Coupon 2026 (Verified June 2026) \u2014 Real Working Codes",
-      "after": "ActiveCampaign Coupon 2026 (Verified July 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "activecampaign-free-trial-2026-how-to-start-what-you-get.html",
-      "before": "ActiveCampaign Free Trial 2026: How to Get the Full June 2026 Offer",
-      "after": "ActiveCampaign Free Trial 2026: How to Get the Full July 2026 Offer"
-    }
-  ],
-  "desc_examples": [
-    {
-      "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
-      "before": "Updated June 2026. 1Password Business vs Cloudflare compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid\u2026",
-      "after": "Updated July 2026. 1Password Business vs Cloudflare compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid\u2026\u2026"
-    },
-    {
-      "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
-      "before": "Updated June 2026. 1Password Business vs Crowdstrike compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid\u2026",
-      "after": "Updated July 2026. 1Password Business vs Crowdstrike compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid\u2026\u2026"
-    },
-    {
-      "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
-      "before": "Updated June 2026. 1Password Business vs Duo Security compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid\u2026",
-      "after": "Updated July 2026. 1Password Business vs Duo Security compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid\u2026\u2026"
-    },
-    {
-      "file": "1password-business-vs-okta-which-is-better-in-2026.html",
-      "before": "Updated June 2026. 1Password Business vs Okta compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid placements.",
-      "after": "Updated July 2026. 1Password Business vs Okta compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid placements."
-    },
-    {
-      "file": "1password-business-vs-qualys-which-is-better-in-2026.html",
-      "before": "Updated June 2026. 1Password Business vs Qualys compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid placements.",
-      "after": "Updated July 2026. 1Password Business vs Qualys compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid placements."
-    },
-    {
-      "file": "1password-business-vs-sentinelone-which-is-better-in-2026.html",
-      "before": "Updated June 2026. 1Password Business vs Sentinelone compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid\u2026",
-      "after": "Updated July 2026. 1Password Business vs Sentinelone compared for 2026 \u2014 pricing, features, and which one wins for your use case. Score-based verdict, no paid\u2026\u2026"
-    }
-  ],
+  "title_examples": [],
+  "desc_examples": [],
   "indexnow": {
     "submitted": 0,
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "skipped_reason": "no urls"
   }
 }
