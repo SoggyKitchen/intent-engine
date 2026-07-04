@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "file": "site/pages/getresponse-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/getresponse-vs-mailerlite-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/getresponse-vs-mailerlite-which-is-better-in-2026",
+    "premium": false
+  }
+]
