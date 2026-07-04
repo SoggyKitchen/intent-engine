@@ -274,7 +274,9 @@ def submit_indexnow(urls: list[str]) -> dict:
 # ---------- main runner -------------------------------------------------------
 
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.I | re.S)
-DESC_RE = re.compile(r'<meta name="description" content="([^"]*)"', re.I)
+# Limit desc match to a single line — a missing closing " would otherwise let
+# the regex swallow subsequent tags (e.g. the <link rel="canonical"> line).
+DESC_RE = re.compile(r'<meta name="description" content="([^"\n]*)"', re.I)
 
 
 def main(argv: list[str] | None = None) -> int:
