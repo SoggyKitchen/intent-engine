@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-30T21:56:40+00:00",
+  "generated_at_utc": "2026-07-04T23:30:51+00:00",
   "mode": "apply",
-  "pages_flagged": 29,
+  "pages_flagged": 32,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -105,6 +105,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "e Mode, and 20\u201325% better sustained performance on Apple Silicon versus Fusion. 30-day money-back guarantee.</p> <a href=\"/go/parallels\" rel=\"noopener sponsored\">Try Paralle"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
       "path": "site/pages/elementor-free-trial-2026-how-to-get-it-step-by-step.html",
       "claims": [
         {
@@ -184,6 +195,68 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "h3> <p style=\"color:rgba(255,248,245,.64);\">Both NordVPN and Surfshark have 30-day money-back guarantees. Try and return if gaming speed isn't better.</p> <div class=\"cta-btns\">"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/zapier-vs-make-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "sla_guarantee",
+          "snippet": "99.9% uptime SLA",
+          "context": "ebranded from Integromat in 2022 and has been used by 500,000+ teams. It offers 99.9% uptime SLA on paid plans, full error logging, and automatic retry for failed scenarios.</d"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "description\" content=\"Updated July 2026. NordVPN has no free plan. But it has a 30-day money-back guarantee and a 7-day iOS/macOS App Store trial. Plans start at $2.99/mo (2-year). Full h"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "<meta property=\"og:description\" content=\"NordVPN has no free plan. But their 30-day money-back guarantee is real \u2014 buy, test everything, and get a full refund. Plans from $2.99/mo on t"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money back guarantee",
+          "context": "=\"keywords\" content=\"does nordvpn have a free plan, nordvpn free trial, nordvpn money back guarantee, nordvpn pricing 2026, nordvpn free\"> <script type=\"application/ld+json\">{\"@"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "e\":\"Answer\",\"text\":\"No. NordVPN does not have a free plan in 2026. They offer a 30-day money-back guarantee on all paid plans (Basic, Plus, Ultimate). This means you can buy, use the full"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": ". On Windows, Android, and Linux, there is no free trial. All platforms get the 30-day money-back guarantee instead.\"}},{\"@type\":\"Question\",\"name\":\"How much does NordVPN cost?\",\"acceptedA"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "rst term; renewal rates are higher.\"}},{\"@type\":\"Question\",\"name\":\"Is NordVPN's money-back guarantee actually honoured?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. NordVPN's 3"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "e actually honoured?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. NordVPN's 30-day money-back guarantee is widely reported as genuine. You can request a refund via live chat \u2014 no leng"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "grams historically offered extended trials, but in 2026 the standard offer is a 30-day money-back guarantee. The 7-day App Store trial is the closest to a no-cost trial, and it does not a"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "e.org\"},\"description\":\"NordVPN has no free plan in 2026. This page explains the 30-day money-back guarantee, the 7-day iOS trial, and what you actually get risk-free.\",\"mainEntityOfPage\":"
         }
       ],
       "trust_state_bumped": false
