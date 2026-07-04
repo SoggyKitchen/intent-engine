@@ -1,7 +1,14 @@
 {
   "svg_files": 16,
-  "pages_updated": 1,
+  "pages_updated": 21,
   "by_vertical": {
-    "security": 1
+    "security": 2,
+    "seo": 2,
+    "project-mgmt": 5,
+    "default": 6,
+    "dev-tools": 1,
+    "crm": 3,
+    "ecommerce": 1,
+    "finance": 1
   }
 }
