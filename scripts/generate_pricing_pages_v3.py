@@ -383,7 +383,7 @@ PRICING = {
         go="/go/ramp", history="/pages/ramp-pricing-history-2026",
         page="/pages/best-ramp-alternatives-2026", sticky="Ramp is free for most businesses — it earns revenue from interchange fees.",
         hidden_risk="Low", hidden_note="Ramp is free but requires a US business entity and minimum revenue",
-        meta_desc="Ramp pricing confirmed July 2026: Free Card = $0 forever · Plus = $15/user/mo ($12 annual). Zero price changes in 2026 so far. Every update logged monthly with date and source.",
+        meta_desc="Updated July 2026. Ramp pricing: Free Card $0/mo forever, Plus $15/user/mo ($12 annual). We log every pricing change with date + source. Full plan breakdown and real cost by team size.",
         plans=[
             dict(name="Ramp Free",      mo="$0",    annual="$0",    best="Most businesses",   users="Unlimited", storage="Unlimited cards",   support="Email+chat", f=["Unlimited virtual + physical cards","Expense management","Bill pay free"],         fc=["cw","cw","cw"]),
             dict(name="Ramp Plus",      mo="$15/user",annual="$12/user",best="Power users",   users="Unlimited", storage="Unlimited cards",   support="Priority",   f=["Custom approval chains","Advanced analytics","ERP integrations"],                  fc=["cw","cw","cw"]),
