@@ -1,9 +1,24 @@
 {
-  "generated_at_utc": "2026-07-05T21:19:10+00:00",
-  "pages_scanned": 1448,
+  "generated_at_utc": "2026-07-05T21:51:22+00:00",
+  "pages_scanned": 1449,
   "index_size": 261,
   "brands_covered": 91,
-  "pages_updated": 0,
+  "pages_updated": 1,
   "mode": "apply",
-  "sample_change": null
+  "sample_change": {
+    "path": "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html",
+    "page_type": "comparison",
+    "brands": [
+      "se-ranking",
+      "surfer-seo"
+    ],
+    "links_added": [
+      "Se Ranking pricing breakdown",
+      "Se Ranking full review",
+      "Surfer SEO pricing breakdown",
+      "Surfer SEO free trial guide",
+      "Surfer SEO alternatives",
+      "Surfer SEO coupons &amp; deals"
+    ]
+  }
 }

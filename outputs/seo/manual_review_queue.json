@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-05T21:19:17+00:00",
+  "generated_at_utc": "2026-07-05T21:51:29+00:00",
   "mode": "apply",
   "pages_flagged": 33,
   "claim_labels_seen": [
@@ -280,7 +280,7 @@
           "context": "r, free account, or ad-supported option. What NordVPN offers instead: a <strong>30-day money-back guarantee</strong> on all paid plans (full refund, no questions), and a <strong>7-day fre"
         }
       ],
-      "trust_state_bumped": true
+      "trust_state_bumped": false
     },
     {
       "path": "site/pages/nordvpn-coupon-code-promo-codes-2026-verified-discounts.html",
