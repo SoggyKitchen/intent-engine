@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-05T06:51:01+00:00",
+  "generated_at_utc": "2026-07-05T21:19:17+00:00",
   "mode": "apply",
-  "pages_flagged": 32,
+  "pages_flagged": 33,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -41,6 +41,27 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "urfshark's 2-year deal works out to $2.19/mo. NordVPN is $3.09/mo. Both include 30-day money-back guarantees.</p> <div class=\"cta-btns\"> <a rel=\"sponsored\" href=\"/go/surfshark\""
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/surfshark-vs-cyberghost-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "45-day money-back guarantee",
+          "context": "CyberGhost caps at 7. CyberGhost has more raw servers (9,700+ vs 3,200+) and a 45-day money-back guarantee on longer plans. If device count matters, Surfshark wins clearly. If you want t"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "vices</td><td class=\"win\">Unlimited</td><td>7</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td class=\"win\">45 days (long plans)</td></tr>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": ">Can I try Surfshark and CyberGhost for free?</h3><div class=\"faq-a\">Surfshark: 30-day money-back guarantee on all plans. CyberGhost: 45-day money-back on 6-month+ plans (14 days on month"
         }
       ],
       "trust_state_bumped": false
@@ -225,28 +246,23 @@
         },
         {
           "label": "money_back_guarantee",
-          "snippet": "money back guarantee",
-          "context": "=\"keywords\" content=\"does nordvpn have a free plan, nordvpn free trial, nordvpn money back guarantee, nordvpn pricing 2026, nordvpn free\"> <script type=\"application/ld+json\">{\"@"
+          "snippet": "30-day money-back guarantee",
+          "context": "\"Answer\", \"text\": \"No. NordVPN does not have a free plan in 2026. They offer a 30-day money-back guarantee on all paid plans (Basic, Plus, Ultimate). This means you can buy, use the full"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "e\":\"Answer\",\"text\":\"No. NordVPN does not have a free plan in 2026. They offer a 30-day money-back guarantee on all paid plans (Basic, Plus, Ultimate). This means you can buy, use the full"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": ". On Windows, Android, and Linux, there is no free trial. All platforms get the 30-day money-back guarantee instead.\"}},{\"@type\":\"Question\",\"name\":\"How much does NordVPN cost?\",\"acceptedA"
+          "context": ". On Windows, Android, and Linux, there is no free trial. All platforms get the 30-day money-back guarantee instead.\"}}, {\"@type\": \"Question\", \"name\": \"How much does NordVPN cost?\", \"acce"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
-          "context": "rst term; renewal rates are higher.\"}},{\"@type\":\"Question\",\"name\":\"Is NordVPN's money-back guarantee actually honoured?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. NordVPN's 3"
+          "context": "term; renewal rates are higher.\"}}, {\"@type\": \"Question\", \"name\": \"Is NordVPN's money-back guarantee actually honoured?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. NordVP"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "e actually honoured?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. NordVPN's 30-day money-back guarantee is widely reported as genuine. You can request a refund via live chat \u2014 no leng"
+          "context": "ually honoured?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. NordVPN's 30-day money-back guarantee is widely reported as genuine. You can request a refund via live chat \u2014 no leng"
         },
         {
           "label": "money_back_guarantee",
@@ -256,10 +272,15 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "e.org\"},\"description\":\"NordVPN has no free plan in 2026. This page explains the 30-day money-back guarantee, the 7-day iOS trial, and what you actually get risk-free.\",\"mainEntityOfPage\":"
+          "context": "org\"}, \"description\": \"NordVPN has no free plan in 2026. This page explains the 30-day money-back guarantee, the 7-day iOS trial, and what you actually get risk-free.\", \"mainEntityOfPage\""
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "r, free account, or ad-supported option. What NordVPN offers instead: a <strong>30-day money-back guarantee</strong> on all paid plans (full refund, no questions), and a <strong>7-day fre"
         }
       ],
-      "trust_state_bumped": false
+      "trust_state_bumped": true
     },
     {
       "path": "site/pages/nordvpn-coupon-code-promo-codes-2026-verified-discounts.html",
