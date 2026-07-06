@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-06T07:23:17+00:00",
+  "generated_at_utc": "2026-07-06T21:18:36+00:00",
   "mode": "apply",
-  "pages_flagged": 33,
+  "pages_flagged": 34,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -406,6 +406,27 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "ly a free trial. ProtonVPN free doesn't unblock Netflix. The honest answer: the 30-day money-back guarantee on NordVPN ($3.39/month) is the best way to access Netflix free legally.</p></d"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/hostpapa-free-trial-2026-how-to-get-it-step-by-step.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "sp-up sp-up-2\" style=\"max-width:520px\">HostPapa backs every hosting plan with a 30-day money-back guarantee \u2014 try it risk-free. Every plan includes a free domain for year 1, free SSL cert"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "iv class=\"faq-a\">HostPapa doesn't offer a traditional free trial \u2014 they offer a 30-day money-back guarantee on all hosting plans. You pay upfront and receive a full refund if unsatisfied"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "?</h2> <p style=\"font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem\">30-day money-back guarantee. Free domain included year 1. Credit card required.</p> <a rel=\"sponsored"
         }
       ],
       "trust_state_bumped": false
