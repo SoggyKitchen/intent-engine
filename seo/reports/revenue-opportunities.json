@@ -2,17 +2,17 @@
   "gscLive": true,
   "opportunities": [
     {
-      "score": 0.73,
+      "score": 0.61,
       "page": "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
       "program": "Pipedrive",
       "status": "PLACEHOLDER",
       "linkState": "placeholder",
       "valuePerConvUsd": 60,
-      "impressions": 30,
-      "position": 6.1,
+      "impressions": 25,
+      "position": 5.8,
       "clicks": 0,
-      "estExtraClicksMo": 0.9,
-      "estMonthlyUpliftUsd": 1.08,
+      "estExtraClicksMo": 0.8,
+      "estMonthlyUpliftUsd": 0.9,
       "pageType": "pricing"
     }
   ]

@@ -30,5 +30,11 @@
       "/pages/stripe-pricing-2026-plans-costs-what-you-actually-pay"
     ],
     "path": "/pages/stripe-pricing-history-2026"
+  },
+  {
+    "broken": [
+      "/sitemap.xml"
+    ],
+    "path": "/pages/surfshark-vs-cyberghost-which-is-better-in-2026"
   }
 ]
