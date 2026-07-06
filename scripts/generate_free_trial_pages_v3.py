@@ -447,6 +447,44 @@ TRIALS = {
             ("Can I use Elementor without WooCommerce?", "Yes — Elementor works with any WordPress site. WooCommerce Builder widgets are optional. Most Elementor users use it for standard pages, landing pages, and blog layouts without ecommerce."),
         ]
     ),
+    "hostpapa": dict(
+        name="HostPapa", logo="https://www.google.com/s2/favicons?domain=hostpapa.com&sz=128",
+        go="/go/hostpapa", page_url="/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
+        trial_url="/go/hostpapa",
+        days="30", plan_access="Full hosting plan + free domain year 1", cc_class="chip-cc-yes", cc_label="Credit card required",
+        hero_lead="HostPapa backs every hosting plan with a 30-day money-back guarantee — try it risk-free. Every plan includes a free domain for year 1, free SSL certificate, and one-click WordPress install.",
+        steps=[
+            ("Choose your hosting plan", "Click our link to see HostPapa's current plans and pricing. Starter covers 1 website; Business adds unlimited sites and databases.", "Business plan is best value if you plan to host more than one site"),
+            ("Register your free domain", "Enter your desired domain name during checkout — HostPapa includes the first year free on all paid plans.", "Choose a .com if available — it still carries the most trust with visitors and search engines"),
+            ("Set up your cPanel account", "Complete checkout and log in to your cPanel dashboard. HostPapa's setup wizard walks you through email, files, and databases.", "Bookmark your cPanel URL — you'll return to it for email setup, backups, and file management"),
+            ("Install WordPress with one click", "In cPanel, open Softaculous App Installer, click WordPress, then Install. Your site is live in under 2 minutes.", "Install a staging copy in a subdirectory first so you can test theme changes before pushing live"),
+        ],
+        plan_starter="Starter ($2.95/mo)", plan_pro="Business Pro ($12.95/mo)",
+        feat_rows=[
+            ("Websites", "1", "1", "Unlimited", "cw", "cw", "cw"),
+            ("Storage", "100 GB SSD", "100 GB SSD", "Unlimited SSD", "cw", "cw", "cw"),
+            ("Free domain yr 1", "✓ Included", "✓ Included", "✓ Included", "cw", "cw", "cw"),
+            ("Free SSL", "✓ Included", "✓ Included", "✓ Included", "cw", "cw", "cw"),
+            ("Daily backups", "—", "✓ Included", "✓ Included", "cl", "cw", "cw"),
+        ],
+        trial_users="1 user", starter_users="1 user", pro_users="1 user",
+        trial_support="24/7 phone + chat", starter_support="24/7 phone + chat", pro_support="Priority 24/7",
+        starter_price="From $2.95/mo", pro_price="From $12.95/mo",
+        what_happens=[
+            ("Refund processed if claimed within 30 days", "If unsatisfied, contact HostPapa support within 30 days. Hosting fees are fully refunded — domain registration fees are non-refundable."),
+            ("Your domain registration stays active", "The free domain included in your plan cannot be refunded. It remains registered in your name for the full year."),
+            ("Promotional price renews at standard rate", "Year-1 pricing jumps at renewal — Business renews at ~$12.99/mo vs the promotional $3.95/mo. Set a calendar reminder before renewal."),
+            ("Export your site via FTP any time", "Use FileZilla or Cyberduck to download site files. Export your database via phpMyAdmin in cPanel. Your data is always accessible."),
+        ],
+        cta_note="30-day money-back guarantee. Free domain included year 1. Credit card required.",
+        faqs=[
+            ("Does HostPapa have a free trial?", "HostPapa doesn't offer a traditional free trial — they offer a 30-day money-back guarantee on all hosting plans. You pay upfront and receive a full refund if unsatisfied within 30 days. Note: domain registration fees are non-refundable."),
+            ("How much does HostPapa cost?", "HostPapa Starter starts from $2.95/month (promotional rate, billed annually). Business is $3.95/month, Business Pro $12.95/month. Renewal rates are higher: Starter renews at ~$9.99/mo. Check our link for current pricing and active discounts."),
+            ("Is HostPapa good for WordPress?", "Yes — HostPapa includes one-click WordPress installation via Softaculous, a free SSL certificate, and LiteSpeed servers on Business Pro. Their 24/7 phone support is a standout feature for WordPress beginners who need real guidance."),
+            ("How is HostPapa's customer support?", "HostPapa's 24/7 phone support is their top differentiator — rare at this price point. They also offer live chat and email. Multilingual support (English, French, Spanish, German) is available for international users."),
+            ("Does HostPapa include email hosting?", "Yes — all plans include unlimited email accounts at your domain. Access via webmail (Roundcube or Horde) or connect to Outlook/Gmail via IMAP. Business and Business Pro plans include larger mailbox storage."),
+        ]
+    ),
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -469,6 +507,7 @@ DISPLAY_NAMES = {
     "wix":"Wix","woocommerce":"WooCommerce","xero":"Xero","zapier":"Zapier",
     "zendesk":"Zendesk","zoho-crm":"Zoho CRM","zoom":"Zoom",
     "parallels-desktop":"Parallels Desktop","elementor":"Elementor",
+    "hostpapa":"HostPapa",
 }
 
 LOGO_MAP = {
@@ -520,6 +559,7 @@ LOGO_MAP = {
     "zoom":"https://cdn.simpleicons.org/zoom/2d8cff",
     "parallels-desktop":"https://cdn.simpleicons.org/parallels/CC3333",
     "elementor":"https://cdn.simpleicons.org/elementor/92003B",
+    "hostpapa":"https://www.google.com/s2/favicons?domain=hostpapa.com&sz=128",
 }
 
 def make_generic(slug, name, logo):
