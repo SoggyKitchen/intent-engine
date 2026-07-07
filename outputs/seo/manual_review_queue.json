@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-07T06:55:43+00:00",
+  "generated_at_utc": "2026-07-07T21:23:21+00:00",
   "mode": "apply",
-  "pages_flagged": 34,
+  "pages_flagged": 35,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -527,6 +527,32 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"background:rgba(255,2"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/protonvpn-vs-private-internet-access-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "s)</td><td>Unlimited simultaneous connections</td></tr> <tr><td>Money-back guarantee</td><td>30-day</td><td>30-day</td></tr> <tr><td>Score</td><td c"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "with no data cap. Starting at $0 (free) or $4.99/mo (Plus, 10 devices, annual). 30-day money-back guarantee on paid plans.</li> <li><strong>Choose PIA</strong> if budget is"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ear plan, 35,000+ servers, court-proven no-logs. MACE ad blocker included free. 30-day money-back guarantee.</li> </ul> <p>If you're currently on ProtonVPN Free an"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "untries (US, Netherlands, Romania, Japan, Poland). PIA has no free tier, only a 30-day money-back guarantee on paid plans.</div> </div> <div class=\"faq-item reveal"
         }
       ],
       "trust_state_bumped": false
