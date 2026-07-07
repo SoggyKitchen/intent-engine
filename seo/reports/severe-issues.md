@@ -4,7 +4,7 @@
 - `/fo-verify` (other, 45.06/100): no_h1
 - `/` (pricing, 77.5/100): broken_internal_link
 - `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 86.97/100): broken_internal_link
-- `/pages/linear-pricing-history-2026` (pricing, 83.57/100): broken_internal_link
-- `/pages/salesforce-pricing-history-2026` (pricing, 84.41/100): broken_internal_link
-- `/pages/stripe-pricing-history-2026` (pricing, 84.09/100): broken_internal_link
+- `/pages/linear-pricing-history-2026` (pricing, 86.07/100): broken_internal_link
+- `/pages/salesforce-pricing-history-2026` (pricing, 86.91/100): broken_internal_link
+- `/pages/stripe-pricing-history-2026` (pricing, 86.59/100): broken_internal_link
 - `/pages/surfshark-vs-cyberghost-which-is-better-in-2026` (comparison, 82.5/100): broken_internal_link

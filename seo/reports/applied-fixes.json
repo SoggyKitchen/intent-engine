@@ -431,6 +431,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/hostpapa-free-trial-2026-how-to-get-it-step-by-step.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hostpapa-free-trial-2026-how-to-get-it-step-by-step",
+    "premium": false
+  },
+  {
     "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -834,19 +847,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/semrush-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -988,19 +988,6 @@
     ],
     "path": "/pages/surfshark-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/surfshark-vs-cyberghost-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/surfshark-vs-cyberghost-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/teachable-review-2026-is-it-worth-it-honest-verdict.html",
