@@ -142,6 +142,10 @@ TITLE_OVERRIDES: dict[str, str] = {
     "twingate-vs-zscaler-which-is-better-in-2026":            "Twingate vs Zscaler 2026: Twingate for SMBs, Zscaler for Enterprise [Verdict]",
     "hetzner-vs-vultr-which-is-better-in-2026":               "Hetzner vs Vultr 2026: Hetzner Wins on Price — VPS Head-to-Head Compared",
     "shopify-vs-recurly-which-is-better-in-2026":             "Shopify vs Recurly 2026: Which Wins for Subscription Commerce? [Expert Tested]",
+    "chargebee-vs-recurly-which-is-better-in-2026":           "Chargebee vs Recurly July 2026: SaaS Billing Head-to-Head — Verdict &amp; Real Costs",
+    "semrush-vs-surfer-seo-which-is-better-in-2026":          "Semrush vs Surfer SEO July 2026: Different Tools, Not Rivals — Which Do You Actually Need?",
+    "workable-vs-culture-amp-which-is-better-in-2026":        "Workable vs Culture Amp July 2026: Hiring vs Engagement Platform — Verdict &amp; Who Wins",
+    "datadog-review-2026-is-it-worth-it-honest-verdict":      "Datadog Review July 2026 [7.8/10]: Is It Worth It? Real Pricing &amp; Honest Verdict",
 }
 DESC_OVERRIDES: dict[str, str] = {
     "surfer-seo-vs-se-ranking-which-is-better-in-2026": "SE Ranking wins (8.9/10 vs Surfer SEO's 8.8/10) and costs $55/mo vs $89/mo — 38% cheaper with a 14-day free trial. Full feature comparison tested June 2026.",
@@ -153,6 +157,9 @@ DESC_OVERRIDES: dict[str, str] = {
     "twingate-vs-zscaler-which-is-better-in-2026":    "Twingate wins for SMBs under 500 seats — faster setup, lower cost, no hardware required. Zscaler wins for large enterprise ZTNA with full SSE stack. Score-based verdict, June 2026.",
     "hetzner-vs-vultr-which-is-better-in-2026":       "Hetzner wins on price (9.0/10 vs Vultr 8.8/10) — 4 vCPU/8GB RAM from $5.83/mo vs $24/mo on Vultr. Vultr wins on global reach (32 locations vs 8). VPS comparison, June 2026.",
     "shopify-vs-recurly-which-is-better-in-2026":     "Shopify wins overall for most merchants (9.4/10 vs Recurly 8.6/10). Recurly wins for complex subscription billing. Shopify is cheaper at $39/mo; Recurly starts at $249/mo. June 2026.",
+    "chargebee-vs-recurly-which-is-better-in-2026":   "Chargebee vs Recurly July 2026: Chargebee wins for subscription automation and self-serve billing; Recurly wins for enterprise billing complexity. Full score-based comparison with real pricing.",
+    "semrush-vs-surfer-seo-which-is-better-in-2026":  "Semrush vs Surfer SEO July 2026: Semrush is an all-in-one SEO suite ($117/mo); Surfer is an on-page optimization tool ($89/mo). They're complementary — not direct competitors. Full score-based verdict.",
+    "workable-vs-culture-amp-which-is-better-in-2026": "Workable vs Culture Amp July 2026: Workable wins for ATS and recruiting ($189+/mo); Culture Amp wins for employee engagement and performance reviews. Different buyer profiles — full score-based comparison.",
 }
 
 

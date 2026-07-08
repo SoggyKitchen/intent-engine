@@ -210,7 +210,7 @@ PRICING = {
         go="/go/semrush", history="/pages/semrush-pricing-history-2026",
         page="/pages/best-semrush-alternatives-2026", sticky="Semrush Pro at $139.95/mo is the industry standard for SEO professionals.",
         hidden_risk="Medium", hidden_note="Multi-user access and historical data cost extra on all tiers",
-        meta_desc="Semrush raised Pro to $139.95/mo — we track every pricing change. June 2026: Pro $117/mo (annual), Guru $208/mo, Business $375/mo. Extra user seats $45/mo each. Full cost breakdown.",
+        meta_desc="Semrush pricing: Pro $117.33/mo annual ($139.95 monthly), Guru $208.33/mo, Business $374.95/mo. All plans: 1 user only — extra seats cost $45/mo each. Real cost breakdown. Updated July 2026.",
         plans=[
             dict(name="Pro",     mo="$139.95", annual="$117.33", best="Freelancers / startups", users="1",  storage="10K results/report", support="Email+chat", f=["5 projects","500 tracked keywords","100K pages/crawl"],     fc=["cm","cm","cw"]),
             dict(name="Guru",    mo="$249.95", annual="$208.33", best="SMBs / agencies",        users="1",  storage="30K results/report", support="Priority",   f=["15 projects","1,500 tracked keywords","Content Marketing"],  fc=["cw","cw","cw"]),
