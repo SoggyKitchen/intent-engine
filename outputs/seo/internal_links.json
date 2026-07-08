@@ -1,9 +1,9 @@
 {
-  "total_pages": 1433,
-  "updated": 1430,
+  "total_pages": 1434,
+  "updated": 1431,
   "skipped": 3,
-  "orphans_before": 65,
-  "orphans_after": 50,
+  "orphans_before": 54,
+  "orphans_after": 58,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,7 +11,7 @@
         "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/tailscale-vs-zscaler-which-is-better-in-2026",
+        "/pages/salesforce-vs-freshsales-which-is-better-in-2026",
         "/pages/perimeter-81-vs-cisco-anyconnect-which-is-better-in-2026"
       ]
     },
@@ -21,8 +21,8 @@
         "/pages/7-best-crowdstrike-alternatives-in-2026-free-paid",
         "/pages/nordpass-vs-enpass-which-is-better-in-2026",
         "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/brevo-vs-klaviyo-which-is-better-in-2026",
-        "/pages/freshsales-vs-nutshell-which-is-better-in-2026"
+        "/pages/weaviate-vs-hugging-face-which-is-better-in-2026",
+        "/pages/getresponse-vs-klaviyo-which-is-better-in-2026"
       ]
     },
     {
@@ -31,8 +31,8 @@
         "/pages/perimeter-81-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
         "/pages/cloudflare-vs-tenable-which-is-better-in-2026",
-        "/pages/hubspot-vs-monday-com-which-is-better-in-2026",
-        "/pages/stripe-vs-bold-commerce-which-is-better-in-2026"
+        "/pages/hubspot-vs-marketo-which-is-better-in-2026",
+        "/pages/trello-vs-basecamp-which-is-better-in-2026"
       ]
     }
   ]
