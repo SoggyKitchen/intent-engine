@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-08T06:07:47+00:00",
+  "generated_at_utc": "2026-07-08T21:21:05+00:00",
   "mode": "apply",
-  "pages_flagged": 35,
+  "pages_flagged": 36,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -580,6 +580,27 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime guarantee",
           "context": "cher, built-in CDN, daily backups, and the best support team in shared hosting. 99.99% uptime guarantee.</p> <p style=\"color:rgba(255,248,245,.42);font-size:.8rem;margin:0 0 .5r"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordvpn-vs-mullvad-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "3>Start with NordVPN \u2014 30-day money-back</h3> <p>NordVPN offers a 30-day money-back guarantee. Try it for a month \u2014 if it's not right, you get a full refund, no questions as"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "e trial?</h3> <div class=\"faq-a\">Mullvad has no free trial and no money-back guarantee, but accounts are anonymous (no email required) and you can top up as little as"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ail required) and you can top up as little as one month at \u20ac5. NordVPN offers a 30-day money-back guarantee on all plans.</div> </div> <div class=\"faq-item reveal-"
         }
       ],
       "trust_state_bumped": false
