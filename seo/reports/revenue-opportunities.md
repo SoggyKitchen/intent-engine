@@ -6,4 +6,4 @@ Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live ear
 
 ## Top revenue-weighted pages
 
-- **$1/mo** (score 0.49) `/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay` -> Pipedrive [PLACEHOLDER/placeholder] · impr 20, pos 5.8, +0.6 clicks/mo @ $60/conv
+_No traffic-scored opportunities (GSC offline). See program-acquisition.md._

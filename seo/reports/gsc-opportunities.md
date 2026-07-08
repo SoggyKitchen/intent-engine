@@ -2,8 +2,8 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-06-06 to 2026-07-04
-Rows pulled: 276
+Range: 2026-06-07 to 2026-07-05
+Rows pulled: 269
 
 ## Top Opportunities
 - Score 54.0: `https://saaspare.org/pages/weekly-saas-deal-digest` query `(page rollup)` - impressions 1.0, CTR 0.0, position 11.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
@@ -36,9 +36,7 @@ Rows pulled: 276
 - Score 49.0: `https://saaspare.org/pages/xero-vs-quickbooks-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 18.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 47.0: `https://saaspare.org/pages/firstpromoter-vs-affilae-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 20.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 46.0: `https://saaspare.org/pages/docusign-vs-icertis-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 21.0. Add supporting links from category hubs and improve page-specific evidence.
-- Score 45.44: `https://saaspare.org/deal-radar` query `(page rollup)` - impressions 22.0, CTR 0.0, position 1.09. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
-- Score 45.4: `https://saaspare.org/deal-radar` query `saaspare.org` - impressions 20.0, CTR 0.0, position 1.0. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
-- Score 45.4: `https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay` query `(page rollup)` - impressions 20.0, CTR 0.0, position 5.75. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
+- Score 45.42: `https://saaspare.org/deal-radar` query `(page rollup)` - impressions 21.0, CTR 0.0, position 1.1. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
 - Score 45.0: `https://saaspare.org/pages/tune-vs-leaddyno-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 22.0. Add supporting links from category hubs and improve page-specific evidence.
 - Score 44.5: `https://saaspare.org/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` query `(page rollup)` - impressions 2.0, CTR 0.0, position 22.5. Add supporting links from category hubs and improve page-specific evidence.
 - Score 44.0: `https://saaspare.org/pages/asana-vs-todoist-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 23.0. Add supporting links from category hubs and improve page-specific evidence.
@@ -49,29 +47,26 @@ Rows pulled: 276
 - Score 40.0: `https://saaspare.org/pages/woocommerce-vs-chargebee-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 27.0. Add supporting links from category hubs and improve page-specific evidence.
 - Score 39.0: `https://saaspare.org/pages/7-best-freshbooks-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 28.0. Add supporting links from category hubs and improve page-specific evidence.
 - Score 38.0: `https://saaspare.org/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` query `(page rollup)` - impressions 1.0, CTR 0.0, position 29.0. Add supporting links from category hubs and improve page-specific evidence.
-- Score 29.33: `https://saaspare.org/newsletter` query `saaspare.org` - impressions 3.0, CTR 0.0, position 11.33. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 29.33: `https://saaspare.org/newsletter` query `(page rollup)` - impressions 3.0, CTR 0.0, position 11.33. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 29.17: `https://saaspare.org/media-kit` query `(page rollup)` - impressions 6.0, CTR 0.0, position 12.83. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 29.0: `https://saaspare.org/pages/how-saaspare-ranks-tools` query `saaspare.org` - impressions 6.0, CTR 0.0, position 11.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 29.0: `https://saaspare.org/newsletter` query `saaspare.org` - impressions 1.0, CTR 0.0, position 11.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 29.0: `https://saaspare.org/newsletter` query `(page rollup)` - impressions 1.0, CTR 0.0, position 11.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 29.0: `https://saaspare.org/pages/best-devtools-for-software-development-in-2025` query `(page rollup)` - impressions 1.0, CTR 0.0, position 13.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 28.67: `https://saaspare.org/methodology` query `saaspare.org` - impressions 3.0, CTR 0.0, position 10.67. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 28.12: `https://saaspare.org/affiliate-disclosure` query `saaspare.org` - impressions 8.0, CTR 0.0, position 10.12. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 28.0: `https://saaspare.org/methodology` query `saaspare.org` - impressions 2.0, CTR 0.0, position 10.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 28.0: `https://saaspare.org/pages/how-saaspare-ranks-tools` query `saaspare.org` - impressions 5.0, CTR 0.0, position 10.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 28.0: `https://saaspare.org/pages/v3-preview-about` query `saaspare.org` - impressions 2.0, CTR 0.0, position 10.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 28.0: `https://saaspare.org/pages/best-legal-compliance-software-for-startups-in-2026-ranked` query `(page rollup)` - impressions 1.0, CTR 0.0, position 10.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 28.0: `https://saaspare.org/pages/v3-preview-about` query `(page rollup)` - impressions 2.0, CTR 0.0, position 10.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 27.6: `https://saaspare.org/affiliate-disclosure` query `saaspare.org` - impressions 5.0, CTR 0.0, position 9.6. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 27.4: `https://saaspare.org/media-kit` query `saaspare.org` - impressions 5.0, CTR 0.0, position 14.6. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 27.22: `https://saaspare.org/affiliate-disclosure` query `(page rollup)` - impressions 9.0, CTR 0.0, position 9.22. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 27.0: `https://saaspare.org/pages/best-ai-workflow-tools-for-b2b-software-teams-in-2025` query `(page rollup)` - impressions 3.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 27.0: `https://saaspare.org/pages/best-cybersecurity-software-for-remote-teams-in-2026-ranked` query `(page rollup)` - impressions 1.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 27.0: `https://saaspare.org/pages/best-devtools-for-chrome-extension-developers-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 26.5: `https://saaspare.org/pages/how-saaspare-ranks-tools` query `(page rollup)` - impressions 8.0, CTR 0.0, position 8.5. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 26.33: `https://saaspare.org/affiliate-disclosure` query `(page rollup)` - impressions 6.0, CTR 0.0, position 8.33. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 26.0: `https://saaspare.org/pages/best-vpn-business-software-for-startups-in-2026-ranked` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 26.0: `https://saaspare.org/pages/does-sentry-have-a-free-plan-2026-full-breakdown` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 25.38: `https://saaspare.org/deal-radar` query `saaspare.org` - impressions 19.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 25.28: `https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026` query `(page rollup)` - impressions 14.0, CTR 0.0, position 45.93. Monitor and prioritize if impressions continue rising.
-- Score 25.24: `https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` query `(page rollup)` - impressions 12.0, CTR 0.0, position 7.17. Monitor and prioritize if impressions continue rising.
-- Score 25.22: `https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict` query `(page rollup)` - impressions 11.0, CTR 0.0, position 6.82. Monitor and prioritize if impressions continue rising.
 - Score 25.22: `https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay` query `(page rollup)` - impressions 11.0, CTR 0.0, position 3.64. Monitor and prioritize if impressions continue rising.
-- Score 25.2: `https://saaspare.org/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` query `(page rollup)` - impressions 10.0, CTR 0.0, position 3.6. Monitor and prioritize if impressions continue rising.
+- Score 25.2: `https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict` query `(page rollup)` - impressions 10.0, CTR 0.0, position 6.7. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/buyer-type-alternatives` query `site:saaspare.org` - impressions 1.0, CTR 0.0, position 5.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` query `clickup pricing changes 2026` - impressions 1.0, CTR 0.0, position 2.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict` query `datadog pricing changes june 2026 after:2026-06-06` - impressions 1.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
@@ -83,8 +78,7 @@ Rows pulled: 276
 - Score 25.0: `https://saaspare.org/pages/linear-pricing-2026-plans-costs-what-you-actually-pay` query `linear performance pricing` - impressions 1.0, CTR 0.0, position 65.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/looker-vs-segment-which-is-better-in-2026` query `segment looker` - impressions 1.0, CTR 0.0, position 77.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay` query `notion pricing plans 2025 2026` - impressions 2.0, CTR 0.0, position 2.0. Monitor and prioritize if impressions continue rising.
-- Score 25.0: `https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay` query `pipedrive crm pricing 2026` - impressions 1.0, CTR 0.0, position 6.0. Monitor and prioritize if impressions continue rising.
-- Score 25.0: `https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay` query `pipedrive pricing changes 2026 after:2026-06-04` - impressions 8.0, CTR 0.0, position 6.75. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay` query `pipedrive pricing changes 2026 after:2026-06-04` - impressions 3.0, CTR 0.0, position 7.33. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/render-vs-supabase-which-is-better-in-2026` query `render vs supabase` - impressions 2.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/render-vs-supabase-which-is-better-in-2026` query `supabase vs render` - impressions 1.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/report-outdated-pricing` query `saaspare.org` - impressions 3.0, CTR 0.0, position 36.0. Monitor and prioritize if impressions continue rising.
@@ -97,7 +91,6 @@ Rows pulled: 276
 - Score 25.0: `https://saaspare.org/pages/slack-vs-mattermost-which-is-better-in-2026` query `site:saaspare.org` - impressions 1.0, CTR 0.0, position 7.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/state-of-saas-pricing-2026` query `saaspare.org` - impressions 1.0, CTR 0.0, position 93.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/workable-review-2026-is-it-worth-it-honest-verdict` query `actionable insights reviews` - impressions 1.0, CTR 0.0, position 97.0. Monitor and prioritize if impressions continue rising.
-- Score 25.0: `https://saaspare.org/pages/xero-pricing-2026-plans-costs-what-you-actually-pay` query `xero pricing plans 2026 small business` - impressions 1.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 86.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/1password-vs-roboform-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 64.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/7-best-dashlane-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 62.0. Monitor and prioritize if impressions continue rising.
@@ -106,3 +99,10 @@ Rows pulled: 276
 - Score 25.0: `https://saaspare.org/pages/7-best-power-bi-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 6.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/7-best-slack-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 76.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/7-best-splunk-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 60.0. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/7-best-tableau-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 94.0. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/7-best-woocommerce-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 64.0. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/7-best-workday-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 2.0, CTR 0.0, position 3.5. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/ahrefs-vs-mangools-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 46.0. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/asana-free-trial-2026-how-to-get-it-step-by-step` query `(page rollup)` - impressions 2.0, CTR 0.0, position 4.0. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/aws-vs-digitalocean-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 36.0. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/aws-vs-railway-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 39.0. Monitor and prioritize if impressions continue rising.
