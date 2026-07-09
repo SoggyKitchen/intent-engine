@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-09T21:22:51+00:00",
+  "generated_at_utc": "2026-07-09T21:55:32+00:00",
   "mode": "apply",
-  "pages_flagged": 37,
+  "pages_flagged": 38,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -406,6 +406,32 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "ly a free trial. ProtonVPN free doesn't unblock Netflix. The honest answer: the 30-day money-back guarantee on NordVPN ($3.39/month) is the best way to access Netflix free legally.</p></d"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-Day Money-Back Guarantee",
+          "context": "</div> <div class=\"deal-info\"> <div class=\"deal-name\">30-Day Money-Back Guarantee</div> <div class=\"deal-desc\">Not happy? HostPapa offers a 30-day"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "arantee</div> <div class=\"deal-desc\">Not happy? HostPapa offers a 30-day money-back guarantee on most shared hosting plans. Request a full refund within 30 days \u2014 no questio"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "aq-a\">HostPapa does not offer a traditional free trial. However, they provide a 30-day money-back guarantee on most shared hosting plans \u2014 so you can test the service risk-free for the fi"
+        },
+        {
+          "label": "sla_guarantee",
+          "snippet": "99.9% uptime guarantee",
+          "context": "3 years billed upfront). All plans include free SSL, cPanel, 24/7 support, and 99.9% uptime guarantee. Prices verified July 2026 \u2014 <a rel=\"sponsored nofollow\" href=\"/go/hostpapa\" st"
         }
       ],
       "trust_state_bumped": false
