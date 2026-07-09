@@ -1,7 +1,7 @@
 # UX / Performance
 
 - Pages with images missing alt: 2
-- Pages with sticky CTA detected: 1479
-- Pages with email capture detected: 1469
+- Pages with sticky CTA detected: 1481
+- Pages with email capture detected: 1471
 
 No browser performance trace was run in this static audit.

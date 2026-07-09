@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-07-05",
+  "endDate": "2026-07-06",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -304,12 +304,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 21.0,
+      "impressions": 20.0,
       "page": "https://saaspare.org/deal-radar",
       "position": 1.1,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 45.42
+      "score": 45.4
     },
     {
       "clicks": 0.0,
@@ -574,12 +574,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 19.0,
+      "impressions": 18.0,
       "page": "https://saaspare.org/deal-radar",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.38
+      "score": 25.36
     },
     {
       "clicks": 0.0,
@@ -590,26 +590,6 @@
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.28
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 11.0,
-      "page": "https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 3.64,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.22
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
-      "position": 6.7,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.2
     },
     {
       "clicks": 0.0,
@@ -724,16 +704,6 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 3.0,
-      "page": "https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 7.33,
-      "query": "pipedrive pricing changes 2026 after:2026-06-04",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
       "impressions": 2.0,
       "page": "https://saaspare.org/pages/render-vs-supabase-which-is-better-in-2026",
       "position": 1.0,
@@ -815,16 +785,6 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 1.0,
-      "page": "https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026",
-      "position": 7.0,
-      "query": "semrush pricing changes 2026 after:2026-06-07",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
       "page": "https://saaspare.org/pages/slack-vs-mattermost-which-is-better-in-2026",
       "position": 7.0,
       "query": "site:saaspare.org",
@@ -854,9 +814,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 1.0,
+      "impressions": 2.0,
       "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
-      "position": 86.0,
+      "position": 43.5,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1084,9 +1044,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 9.0,
+      "impressions": 6.0,
       "page": "https://saaspare.org/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 3.56,
+      "position": 4.33,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1137,6 +1097,16 @@
       "impressions": 2.0,
       "page": "https://saaspare.org/pages/databox-vs-fullstory-which-is-better-in-2026",
       "position": 80.0,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 5.0,
+      "page": "https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
+      "position": 5.4,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1394,7 +1364,7 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/jetbrains-vs-vercel-which-is-better-in-2026",
       "position": 7.0,
       "query": "",
@@ -1624,6 +1594,16 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
+      "impressions": 9.0,
+      "page": "https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 3.56,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
       "impressions": 2.0,
       "page": "https://saaspare.org/pages/notion-pricing-history-2026",
       "position": 7.0,
@@ -1717,16 +1697,6 @@
       "impressions": 1.0,
       "page": "https://saaspare.org/pages/perimeter-81-vs-twingate-which-is-better-in-2026",
       "position": 5.0,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 7.0,
-      "page": "https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 4.86,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1834,9 +1804,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/saas-pricing-changes",
-      "position": 3.5,
+      "position": 1.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1884,9 +1854,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 5.0,
+      "impressions": 4.0,
       "page": "https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026",
-      "position": 4.0,
+      "position": 3.25,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1975,6 +1945,16 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 1.0,
+      "page": "https://saaspare.org/pages/tableau-vs-segment-which-is-better-in-2026",
+      "position": 1.0,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/tailscale-vs-wireguard-which-is-better-in-2026",
       "position": 98.0,
       "query": "",
@@ -1997,6 +1977,26 @@
       "impressions": 1.0,
       "page": "https://saaspare.org/pages/trello-vs-basecamp-which-is-better-in-2026",
       "position": 73.0,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 3.0,
+      "page": "https://saaspare.org/pages/tune-vs-affilae-which-is-better-in-2026",
+      "position": 63.0,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 1.0,
+      "page": "https://saaspare.org/pages/webex-vs-loom-which-is-better-in-2026",
+      "position": 5.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -2159,7 +2159,6 @@
     "https://saaspare.org/pages/partnerstack-vs-tapfiliate-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/partnerstack-vs-tune-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/perimeter-81-vs-twingate-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay": 0.0,
     "https://saaspare.org/pages/pipedrive-vs-copper-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/qualys-vs-tenable-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/quickbooks-vs-netsuite-which-is-better-in-2026": 0.0,
@@ -2193,6 +2192,7 @@
     "https://saaspare.org/pages/stripe-vs-bold-commerce-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tableau-vs-heap-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tableau-vs-looker-which-is-better-in-2026": 0.0,
+    "https://saaspare.org/pages/tableau-vs-segment-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tailscale-vs-wireguard-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tapfiliate-vs-firstpromoter-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tapfiliate-vs-refersion-which-is-better-in-2026": 0.0,
@@ -2219,8 +2219,8 @@
     "https://saaspare.org/shortlist": 0.0,
     "https://saaspare.org/terms": 0.0
   },
-  "rowsPulled": 269,
+  "rowsPulled": 267,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-06-07"
+  "startDate": "2026-06-08"
 }

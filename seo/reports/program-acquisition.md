@@ -6,15 +6,14 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 
 (Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.)
 
-- **Notion** [PLACEHOLDER, none] — 11 pages, 17 impressions, $15/conv
-- **Datadog** [PLACEHOLDER, none] — 11 pages, 12 impressions, $80/conv
-- **1Password** [PENDING, Impact] — 29 pages, 12 impressions, $45/conv
-- **ClickUp** [LOCKED, PartnerStack] — 22 pages, 10 impressions, $90/conv
+- **Notion** [PLACEHOLDER, none] — 11 pages, 15 impressions, $15/conv
+- **1Password** [PENDING, Impact] — 29 pages, 11 impressions, $45/conv
 - **HubSpot** [PENDING, Impact] — 40 pages, 9 impressions, $400/conv
 - **Monday.com** [LOCKED, PartnerStack] — 20 pages, 9 impressions, $150/conv
 - **Ramp** [PLACEHOLDER, none] — 7 pages, 9 impressions, $100/conv
+- **Datadog** [PLACEHOLDER, none] — 11 pages, 7 impressions, $80/conv
 - **Rippling** [PLACEHOLDER, none] — 8 pages, 7 impressions, $120/conv
-- **Pipedrive** [PLACEHOLDER, none] — 8 pages, 7 impressions, $60/conv
+- **ClickUp** [LOCKED, PartnerStack] — 22 pages, 7 impressions, $90/conv
 - **Deel** [PLACEHOLDER, none] — 9 pages, 6 impressions, $100/conv
 - **Asana** [PLACEHOLDER, none] — 28 pages, 5 impressions, $15/conv
 - **FreshBooks** [PENDING, Awin] — 23 pages, 3 impressions, $200/conv
@@ -28,4 +27,5 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 - **Gusto** [PLACEHOLDER, none] — 5 pages, 0 impressions, $100/conv
 - **Canva** [PLACEHOLDER, none] — 5 pages, 0 impressions, $20/conv
 - **Salesforce** [PLACEHOLDER, none] — 8 pages, 0 impressions, $120/conv
+- **Pipedrive** [PLACEHOLDER, none] — 8 pages, 0 impressions, $60/conv
 - **Mailchimp** [PLACEHOLDER, none] — 1 pages, 0 impressions, $25/conv
