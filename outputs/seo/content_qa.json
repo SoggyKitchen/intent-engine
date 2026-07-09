@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-09T07:40:16.139855+00:00",
+  "generated_at": "2026-07-09T21:23:07.668539+00:00",
   "stats": {
-    "sitemap_urls": 1461,
-    "sitemap_with_lastmod": 1461,
-    "total_pages": 1511,
-    "indexable_pages": 1499,
+    "sitemap_urls": 1462,
+    "sitemap_with_lastmod": 1462,
+    "total_pages": 1512,
+    "indexable_pages": 1500,
     "title_over_70": 145,
-    "desc_over_165": 29,
-    "money_pages": 1231,
-    "soft": 18
+    "desc_over_165": 24,
+    "money_pages": 1232,
+    "soft": 23
   },
   "hard_failures": [],
   "soft_issues": [
@@ -28,8 +28,13 @@
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
+    "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/activecampaign",
+    "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/getresponse",
+    "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/brevo",
+    "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/mailchimp",
+    "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/aweber",
     "site/pages/thanks.html: title <30 chars (29)",
     "site/pages/v3-preview-contact.html: title <30 chars (27)"
   ],
-  "soft_issues_total": 18
+  "soft_issues_total": 23
 }
