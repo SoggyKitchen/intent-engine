@@ -168,6 +168,14 @@ TOOLS = {
         pros=["Unlimited contacts on ALL plans (including free)","SMS and WhatsApp marketing built in","Strong transactional email via SMTP/API"],
         cons=["Daily send limits on free plan (300/day)","Automation is less intuitive than ActiveCampaign"],
         go="brevo", scores=dict(value=91,ease=82,features=78,int=80,support=76)),
+    "AWeber": dict(
+        score=7.2, logo="https://cdn.simpleicons.org/aweber/ee342f",
+        price_line="Free", free_tag="500 subscribers", price_note="Paid from $12.50/mo",
+        tagline="One of the original email marketing platforms — reliable deliverability, solid autoresponders, and a genuine free plan up to 500 subscribers.",
+        verdict="Best for Bloggers", verdict_class="v-smb",
+        pros=["Generous free plan — 500 subscribers, full feature access","Industry-leading deliverability reputation","Huge library of email templates and landing pages"],
+        cons=["UI feels dated vs modern tools like GetResponse","Automation workflows less powerful than ActiveCampaign"],
+        go="aweber", scores=dict(value=78,ease=82,features=71,int=74,support=78)),
     # ── SEO ───────────────────────────────────────────────────────────────────
     "Semrush": dict(
         score=9.0, logo="https://cdn.simpleicons.org/semrush/ff642d",
@@ -698,6 +706,7 @@ HARDCODED_PAGE_TOOLS = {
     "best-vpn-for-gaming": ["NordVPN", "Surfshark", "ExpressVPN", "ProtonVPN", "CyberGhost"],
     "best-ecommerce-platforms": ["Shopify", "BigCommerce", "Wix", "WooCommerce"],
     "best-elementor-alternatives-in-2026-free-paid": ["Elementor", "Divi", "Beaver Builder", "Bricks Builder", "Webflow", "SeedProd"],
+    "best-aweber-alternatives-in-2026-free-paid": ["AWeber", "GetResponse", "Mailchimp", "Brevo", "ActiveCampaign"],
 }
 
 def extract_page_meta(html, filepath):
