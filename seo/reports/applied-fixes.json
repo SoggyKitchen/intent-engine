@@ -197,6 +197,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/chargebee-vs-recurly-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/chargebee-vs-recurly-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/clearscope-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -285,7 +298,7 @@
       "trust_block"
     ],
     "path": "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/deel-review-2026-is-it-worth-it-honest-verdict.html",
@@ -338,6 +351,19 @@
     ],
     "path": "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/elementor-vs-wix-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elementor-vs-wix-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
@@ -652,6 +678,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/nordvpn-vs-mullvad-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordvpn-vs-mullvad-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/notion-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -756,19 +795,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/protonvpn-vs-private-internet-access-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/protonvpn-vs-private-internet-access-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/ramp-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -871,6 +897,19 @@
     ],
     "path": "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/semrush-vs-surfer-seo-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/semrush-vs-surfer-seo-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/shopify-pricing-history-2026.html",
@@ -1053,6 +1092,19 @@
     ],
     "path": "/pages/workable-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/workable-vs-culture-amp-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/workable-vs-culture-amp-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/xero-review-2026-is-it-worth-it-honest-verdict.html",
