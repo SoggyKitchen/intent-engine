@@ -144,6 +144,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/best-aweber-alternatives-in-2026-free-paid.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-aweber-alternatives-in-2026-free-paid",
+    "premium": false
+  },
+  {
     "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
     "fixes": [
       "canonical",
@@ -195,19 +208,6 @@
     ],
     "path": "/pages/canva-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/chargebee-vs-recurly-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/chargebee-vs-recurly-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/clearscope-review-2026-is-it-worth-it-honest-verdict.html",
@@ -353,19 +353,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/elementor-vs-wix-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/elementor-vs-wix-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -455,6 +442,19 @@
     ],
     "path": "/pages/hetzner-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
+    "premium": false
   },
   {
     "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",
@@ -678,19 +678,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/nordvpn-vs-mullvad-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/nordvpn-vs-mullvad-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/notion-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -899,19 +886,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/semrush-vs-surfer-seo-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/semrush-vs-surfer-seo-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/shopify-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -1092,19 +1066,6 @@
     ],
     "path": "/pages/workable-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/workable-vs-culture-amp-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/workable-vs-culture-amp-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/xero-review-2026-is-it-worth-it-honest-verdict.html",
