@@ -59,7 +59,7 @@ def fix_ramp_page():
     # Update meta description — complete sentence, no ellipsis, 155 chars
     html = re.sub(
         r'<meta name="description" content="[^"]*[Rr]amp[^"]*">',
-        '<meta name="description" content="Ramp pricing June 2026 verified: core card free, Ramp Plus $15/user/mo — no headline change in 2026 so far. Every plan and fee tracked monthly with dates.">',
+        '<meta name="description" content="Updated July 2026. Ramp pricing July 2026: June added Bill Pay pricing; core card still free, Ramp Plus $15/user/mo. Every plan change tracked with exact dates.">',
         html
     )
     # Update H1 if generic
@@ -287,17 +287,17 @@ def fix_notion_free_plan():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Nn]otion[^<]*</title>',
-        "<title>Notion Free Plan 2026: Yes — 4 Hidden Limits Teams Hit (June 2026)</title>",
+        "<title>Notion Free Plan Limits 2026: 4 Restrictions Every Team Hits (July 2026)</title>",
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Nn]otion[^"]*(")',
-        r"\g<1>Notion Free Plan 2026: Yes — 4 Hidden Limits Teams Hit\2",
+        r"\g<1>Notion Free Plan Limits 2026: 4 Restrictions Every Team Hits\2",
         html
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Nn]otion[^"]*">',
-        '<meta name="description" content="Notion free plan 2026: yes it exists, but 4 limits trip up teams — 10-guest cap, 7-day page history, no automations, no API access. Real examples. Updated June 2026.">',
+        '<meta name="description" content="Updated July 2026. Notion free plan limits: 10-guest cap, 7-day page history, no automations, no API access. 4 real restrictions every growing team eventually hits.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -314,17 +314,17 @@ def fix_sentry_free_plan():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Ss]entry[^<]*</title>',
-        "<title>Sentry Free Plan 2026: Yes — But These 6 Features Are Locked [Tested]</title>",
+        "<title>Sentry Free Plan Limits 2026: 5K Errors/Month, 6 Features Locked — Full Breakdown</title>",
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Ss]entry[^"]*(")',
-        r"\g<1>Sentry Free Plan 2026: Yes — But These 6 Features Are Locked\2",
+        r"\g<1>Sentry Free Plan Limits 2026: 5K Errors/Month, 6 Features Locked\2",
         html
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]entry[^"]*">',
-        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month free — but 6 features are locked including SSO, custom dashboards, and extended data retention. Full breakdown. Updated June 2026.">',
+        '<meta name="description" content="Updated July 2026. Sentry free plan limits 2026: 5,000 errors/month, 7-day retention, no SSO, no custom dashboards — 6 features locked. Is Sentry free enough for your team?">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
