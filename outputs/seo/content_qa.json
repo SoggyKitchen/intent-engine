@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-07-11T21:42:18.985391+00:00",
+  "generated_at": "2026-07-11T23:25:01.107104+00:00",
   "stats": {
-    "sitemap_urls": 1464,
-    "sitemap_with_lastmod": 1464,
-    "total_pages": 1514,
-    "indexable_pages": 1502,
+    "sitemap_urls": 1467,
+    "sitemap_with_lastmod": 1467,
+    "total_pages": 1517,
+    "indexable_pages": 1505,
     "title_over_70": 151,
-    "desc_over_165": 32,
-    "money_pages": 1234,
-    "soft": 23
+    "desc_over_165": 35,
+    "money_pages": 1237,
+    "soft": 35
   },
   "hard_failures": [],
   "soft_issues": [
+    "site/pages/gusto-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/gusto",
+    "site/pages/gusto-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/gusto",
+    "site/pages/gusto-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/gusto",
+    "site/pages/gusto-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/gusto",
     "site/pages/v3-preview-privacy.html: title <30 chars (25)",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/bricks-builder",
@@ -20,6 +24,10 @@
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/beaver-builder",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/seedprod",
     "site/pages/v3-preview-404.html: title <30 chars (25)",
+    "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html: /go/ link without rel attribute: /go/salesforce",
+    "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html: /go/ link without rel attribute: /go/salesforce",
+    "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html: /go/ link without rel attribute: /go/salesforce",
+    "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html: /go/ link without rel attribute: /go/salesforce",
     "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html: /go/ link without rel attribute: /go/semrush",
     "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html: /go/ link without rel attribute: /go/semrush",
     "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html: /go/ link without rel attribute: /go/semrush",
@@ -33,8 +41,12 @@
     "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/brevo",
     "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/mailchimp",
     "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/aweber",
+    "site/pages/rippling-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/rippling",
+    "site/pages/rippling-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/rippling",
+    "site/pages/rippling-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/rippling",
+    "site/pages/rippling-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/rippling",
     "site/pages/thanks.html: title <30 chars (29)",
     "site/pages/v3-preview-contact.html: title <30 chars (27)"
   ],
-  "soft_issues_total": 23
+  "soft_issues_total": 35
 }

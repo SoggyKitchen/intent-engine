@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-11T21:42:03+00:00",
+  "generated_at_utc": "2026-07-11T23:24:47+00:00",
   "mode": "apply",
-  "pages_flagged": 38,
+  "pages_flagged": 39,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -14,6 +14,22 @@
           "label": "money_back_guarantee",
           "snippet": "Money-Back Guarantee",
           "context": "ont-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 1rem\">Free Trial &amp; Money-Back Guarantee</h2> <p style=\"color:rgba(255,248,245,.72);line-height:1.7;margin-bottom:2rem"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/gusto-vs-adp-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "plete/HR Pro: custom quote</td></tr> <tr><td>Free trial</td><td>30-day money-back guarantee</td><td class=\"win\">3-month free trial (new customers)</td></tr>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "iv> <div class=\"faq-a\">Gusto doesn't offer a free trial but has a 30-day money-back guarantee. ADP Run offers a 3-month free trial for new small business customers. We recom"
         }
       ],
       "trust_state_bumped": false
