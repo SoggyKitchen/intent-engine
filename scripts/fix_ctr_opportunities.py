@@ -176,18 +176,17 @@ def fix_mixpanel_page():
 
     html = re.sub(
         r'<title>[^<]*[Mm]ixpanel[^<]*</title>',
-        '<title>Mixpanel Pricing 2026: Free (20M Events/mo), Growth $28/mo — Every Change</title>',
+        '<title>Mixpanel Pricing July 2026: Free (20M Events) vs Growth ($28/mo) — Full Breakdown</title>',
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Mm]ixpanel[^"]*(")',
-        r'\g<1>Mixpanel Pricing 2026: Free (20M Events/mo), Growth $28/mo — Every Change\2',
+        r'\g<1>Mixpanel Pricing July 2026: Free (20M Events) vs Growth ($28/mo) — Full Breakdown\2',
         html
     )
-    # Corrected: free plan is 20M events/month (not 1M) — complete sentence, no ellipsis
     html = re.sub(
         r'<meta name="description" content="[^"]*[Mm]ixpanel[^"]*">',
-        '<meta name="description" content="Mixpanel pricing 2026: Free plan gives 20M events/month forever. Growth from $28/mo. Enterprise custom. Event-volume scaling trap and hidden costs exposed.">',
+        '<meta name="description" content="Updated July 2026. Mixpanel pricing: Free plan handles 20M events/month, Growth from $28/mo, Enterprise custom. The event-volume scaling trap explained with real numbers.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -287,17 +286,17 @@ def fix_notion_free_plan():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Nn]otion[^<]*</title>',
-        "<title>Notion Free Plan Limits 2026: 4 Restrictions Every Team Hits (July 2026)</title>",
+        "<title>Does Notion Have a Free Plan? (2026) — Yes, But These 4 Limits Will Hit Your Team</title>",
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Nn]otion[^"]*(")',
-        r"\g<1>Notion Free Plan Limits 2026: 4 Restrictions Every Team Hits\2",
+        r"\g<1>Does Notion Have a Free Plan? (2026) — Yes, But These 4 Limits Will Hit Your Team\2",
         html
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Nn]otion[^"]*">',
-        '<meta name="description" content="Updated July 2026. Notion free plan limits: 10-guest cap, 7-day page history, no automations, no API access. 4 real restrictions every growing team eventually hits.">',
+        '<meta name="description" content="Yes, Notion has a free plan in 2026 — unlimited blocks, but 10-guest cap, 7-day page history, no automations, no API. Updated July 2026: 4 restrictions that affect teams as they grow.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -314,17 +313,17 @@ def fix_sentry_free_plan():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Ss]entry[^<]*</title>',
-        "<title>Sentry Free Plan Limits 2026: 5K Errors/Month, 6 Features Locked — Full Breakdown</title>",
+        "<title>Does Sentry Have a Free Plan? (2026) — Yes, But 5K Errors/Month &amp; 6 Features Locked</title>",
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Ss]entry[^"]*(")',
-        r"\g<1>Sentry Free Plan Limits 2026: 5K Errors/Month, 6 Features Locked\2",
+        r"\g<1>Does Sentry Have a Free Plan? (2026) — Yes, But 5K Errors/Month &amp; 6 Features Locked\2",
         html
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]entry[^"]*">',
-        '<meta name="description" content="Updated July 2026. Sentry free plan limits 2026: 5,000 errors/month, 7-day retention, no SSO, no custom dashboards — 6 features locked. Is Sentry free enough for your team?">',
+        '<meta name="description" content="Yes, Sentry has a free plan in 2026 — 5,000 errors/month, 7-day retention. SSO, custom dashboards, and 4 more features are locked. Updated July 2026: see if free covers your team\'s scale.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -357,6 +356,60 @@ def fix_linear_free_plan():
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
     p.write_text(html, encoding="utf-8")
     print("  FIXED: does-linear-have-a-free-plan — title + meta upgraded (247 impr, pos 9.0)")
+    return True
+
+
+def fix_loom_free_plan():
+    p = PAGES / "does-loom-have-a-free-plan-2026-full-breakdown.html"
+    if not p.exists():
+        print("  SKIP: Loom free plan page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Ll]oom[^<]*</title>',
+        "<title>Does Loom Have a Free Plan? (2026) — Yes, But Only 5 Videos &amp; 5-Min Cap</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Ll]oom[^"]*(")',
+        r"\g<1>Does Loom Have a Free Plan? (2026) — Yes, But Only 5 Videos &amp; 5-Min Cap\2",
+        html
+    )
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Ll]oom[^"]*">',
+        '<meta name="description" content="Yes, Loom has a free plan in 2026 — capped at 5 videos total, 5 minutes each. Business plan ($12.50/user/mo) removes all limits. Updated July 2026: full breakdown of every free restriction.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: does-loom-have-a-free-plan — question-intent title (255 impr, pos 10.9)")
+    return True
+
+
+def fix_linear_free_trial():
+    p = PAGES / "linear-free-trial-2026-how-to-get-it-step-by-step.html"
+    if not p.exists():
+        print("  SKIP: Linear free trial page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Ll]inear[^<]*</title>',
+        "<title>Does Linear Have a Free Trial? (2026) — Yes, Full Features Free for Up to 3 Users</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Ll]inear[^"]*(")',
+        r"\g<1>Does Linear Have a Free Trial? (2026) — Yes, Full Features Free for Up to 3 Users\2",
+        html
+    )
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Ll]inear[^"]*">',
+        '<meta name="description" content="Yes, Linear has a free plan (no time limit) in 2026 — unlimited projects, 250 issues, all core features. The only limit is 3 members. Updated July 2026: full breakdown.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: linear-free-trial — question-intent title (129 impr, pos 6.8)")
     return True
 
 
@@ -446,7 +499,9 @@ def main():
     fix_mixpanel_page()
     fix_notion_free_plan()
     fix_sentry_free_plan()
+    fix_loom_free_plan()
     fix_linear_free_plan()
+    fix_linear_free_trial()
     fix_cloudflare_access_free_plan()
     fix_shopify_vs_recurly()
     fix_semrush_vs_moz()
