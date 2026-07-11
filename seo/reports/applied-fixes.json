@@ -144,19 +144,6 @@
     "premium": false
   },
   {
-    "file": "site/pages/best-aweber-alternatives-in-2026-free-paid.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-aweber-alternatives-in-2026-free-paid",
-    "premium": false
-  },
-  {
     "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
     "fixes": [
       "canonical",
@@ -340,6 +327,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/educative-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/educative-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
+  },
+  {
     "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -442,19 +442,6 @@
     ],
     "path": "/pages/hetzner-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
-    "premium": false
   },
   {
     "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",

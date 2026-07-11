@@ -7,7 +7,6 @@ Pages scanned: 1486
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 1
 - images_missing_alt: 2
 - meta_length_outside_target: 34
 - missing_correction_cta: 315
@@ -38,8 +37,8 @@ Pages scanned: 1486
 - `/cookie-policy`: 75.98/100, issues=none
 - `/pages/saas-pricing-changes`: 75.99/100, issues=none
 - `/pages/which-saas-has-the-best-free-plan-2026`: 76.3/100, issues=none
-- `/pages`: 77.0/100, issues=none
 - `/`: 77.5/100, issues=broken_internal_link
+- `/pages`: 78.0/100, issues=none
 - `/advertise`: 79.32/100, issues=none
 - `/pages/request-a-comparison`: 79.35/100, issues=none
 - `/privacy`: 79.64/100, issues=none
@@ -55,13 +54,10 @@ Pages scanned: 1486
 - `/pages/v3-preview-contact`: 83.0/100, issues=none
 - `/pages/v3-preview-homepage`: 83.14/100, issues=none
 - `/pages/v3-preview-affiliate-disclosure`: 83.22/100, issues=none
-- `/pages/linear-pricing-history-2026`: 83.57/100, issues=broken_internal_link
 - `/pages/best-saas-deals-this-week-2026`: 83.7/100, issues=none
 - `/pages/v3-preview-about`: 83.77/100, issues=none
 - `/pages/v3-preview-newsletter`: 83.89/100, issues=none
 - `/pages/v3-preview-library`: 84.04/100, issues=none
-- `/pages/stripe-pricing-history-2026`: 84.09/100, issues=broken_internal_link
-- `/pages/salesforce-pricing-history-2026`: 84.41/100, issues=broken_internal_link
 - `/pages/v3-preview-shortlist`: 84.56/100, issues=none
 - `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 84.76/100, issues=none
 - `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.76/100, issues=none
@@ -69,3 +65,6 @@ Pages scanned: 1486
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.78/100, issues=none
 - `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.78/100, issues=none
 - `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 84.78/100, issues=none
+- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 84.83/100, issues=none
+- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 84.88/100, issues=none
+- `/pages/v3-preview-roi-calculator`: 84.88/100, issues=none
