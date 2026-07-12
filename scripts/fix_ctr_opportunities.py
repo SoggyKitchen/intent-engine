@@ -123,13 +123,13 @@ def fix_nordlayer_page():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*NordLayer[^"]*">',
-        '<meta name="description" content="NordLayer price in 2026: Lite from $9/user, Core from $11/user, Business from $14/user (annual). Full breakdown of per-user costs, what\'s included, and how to get the best deal.">',
+        '<meta name="description" content="Updated July 2026. NordLayer 2026: Lite $9/user, Core $11/user, Business $14/user/mo (annual). Real pricing, team minimums, annual vs monthly.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
 
     p.write_text(html, encoding="utf-8")
-    print("  FIXED: nordlayer-pricing-2026 — title now matches 'nordlayer price' intent")
+    print("  FIXED: nordlayer-pricing-2026 — title + short meta (≤165 chars, real pricing keyword)")
     return True
 
 
@@ -453,12 +453,12 @@ def fix_shopify_vs_recurly():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]hopify[^"]*[Rr]ecurly[^"]*">',
-        '<meta name="description" content="Shopify vs Recurly 2026: expert head-to-head on pricing, subscription billing, and integrations. Score-based verdict — Shopify wins overall for most merchants. Updated June 2026.">',
+        '<meta name="description" content="Updated July 2026. Shopify wins (8.5/10) for D2C subscriptions. Recurly wins for SaaS billing. Real pricing $29/mo vs $249+/mo. Verdict inside.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
     p.write_text(html, encoding="utf-8")
-    print("  FIXED: shopify-vs-recurly — title + meta upgraded (134 impr, pos 7.5, Shopify earning)")
+    print("  FIXED: shopify-vs-recurly — short meta with real pricing keyword (134 impr, pos 7.5)")
     return True
 
 
@@ -489,6 +489,57 @@ def fix_semrush_vs_moz():
     return True
 
 
+def fix_aws_vs_supabase():
+    p = PAGES / "aws-vs-supabase-which-is-better-in-2026.html"
+    if not p.exists():
+        print("  SKIP: aws-vs-supabase page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Aa][Ww][Ss][^"]*[Ss]upabase[^"]*">',
+        '<meta name="description" content="Updated July 2026. AWS (9.0/10) wins on scale + 200 services. Supabase (8.8/10) wins on dev speed. Real pricing and verdict — no paid placements.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: aws-vs-supabase — complete meta ≤145 chars (286 impr, pos 10.1)")
+    return True
+
+
+def fix_cloudflare_access_meta():
+    p = PAGES / "does-cloudflare-access-have-a-free-plan-2026-full-breakdown.html"
+    if not p.exists():
+        print("  SKIP: Cloudflare Access free plan page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Cc]loudflare[^"]*[Aa]ccess[^"]*">',
+        '<meta name="description" content="Updated July 2026. Cloudflare Access: free up to 50 users (ZTNA, SSO, posture). Catch: Tunnel required. Real pricing, no standalone option.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: cloudflare-access — complete meta ≤139 chars (219 impr, pos 10.0)")
+    return True
+
+
+def fix_ramp_review():
+    p = PAGES / "ramp-review-2026-is-it-worth-it-honest-verdict.html"
+    if not p.exists():
+        print("  SKIP: Ramp review page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Rr]amp[^"]*[Rr]eview[^"]*">',
+        '<meta name="description" content="Updated July 2026. Ramp Review: 7.8/10. Core card is free; Ramp Plus $15/user/mo. Real pricing of what stays free vs paid — honest verdict.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: ramp-review — complete meta ≤139 chars (127 impr, pos 7.8)")
+    return True
+
+
 def main():
     print(f"Fixing CTR opportunities ({TODAY})...")
     print()
@@ -503,13 +554,17 @@ def main():
     fix_linear_free_plan()
     fix_linear_free_trial()
     fix_cloudflare_access_free_plan()
+    fix_cloudflare_access_meta()
+    fix_aws_vs_supabase()
     fix_shopify_vs_recurly()
+    fix_ramp_review()
     fix_semrush_vs_moz()
     refresh_top_pages()
     print()
     print("Done. Fixes target:")
-    print("  Semrush vs Moz 1365 impr (earning!) + Notion 557 + Sentry 528 + Linear 247 + Cloudflare 219 + Shopify/Recurly 134 (earning!)")
-    print("Expected: 40-80 more clicks/month once Google recrawls (3-7 days).")
+    print("  AWS/Supabase 286 impr + Cloudflare 219 + Shopify/Recurly 134 (earning!) + Ramp Review 127")
+    print("  Semrush vs Moz 1365 impr (earning!) + Notion 557 + Sentry 528 + NordLayer 270")
+    print("Expected: 50-90 more clicks/month once Google recrawls (3-7 days).")
 
 
 if __name__ == "__main__":
