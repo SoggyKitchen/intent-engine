@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-12T06:13:41+00:00",
+  "generated_at_utc": "2026-07-12T21:30:44+00:00",
   "mode": "apply",
-  "pages_flagged": 39,
+  "pages_flagged": 40,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -46,6 +46,22 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "answer. 9.2/10 score, 6,400+ servers, Threat Protection, Meshnet, and a genuine 30-day money-back guarantee.</p> <a href=\"/go/nordvpn\" rel=\"noopener sponsored\">Get NordVPN f"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordvpn-vs-private-internet-access-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "hoose <strong>PIA</strong> for unlimited devices and cheapest price. Both offer 30-day money-back guarantees.</p> </div> <!-- HEAD-TO-HEAD SCORE BARS --> <div cla"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "lan. PIA starts at $2.03/mo on the 3-year plan ($5.99/mo on 1-year). Both offer 30-day money-back guarantees. PIA is cheaper overall, but requires a 3-year commitment for its headline pri"
         }
       ],
       "trust_state_bumped": false
