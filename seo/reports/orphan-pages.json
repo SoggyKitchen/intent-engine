@@ -97,5 +97,63 @@
       "inbound": [],
       "outbound": []
     }
+  },
+  {
+    "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/contact",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/hostpapa",
+        "/newsletter",
+        "/pages/",
+        "/pages/best-marketing-automation-software-for-small-business-in-2026-ranked",
+        "/pages/digitalocean-vs-supabase-which-is-better-in-2026",
+        "/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/microsoft-teams-vs-around-which-is-better-in-2026",
+        "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
+        "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
+        "/privacy",
+        "/roi",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/nordvpn-vs-mullvad-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/corrections",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/nordvpn",
+        "/methodology",
+        "/newsletter",
+        "/pages/",
+        "/pages/bamboohr-vs-workable-which-is-better-in-2026",
+        "/pages/cloudflare-vs-qualys-which-is-better-in-2026",
+        "/pages/nordvpn-free-trial-2026-how-to-get-it-step-by-step",
+        "/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/nordvpn-vs-expressvpn-which-is-better-in-2026",
+        "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
+        "/pages/protonvpn-vs-nordvpn-which-is-better-in-2026",
+        "/pages/workable-vs-greenhouse-which-is-better-in-2026",
+        "/privacy",
+        "/roi",
+        "/shortlist"
+      ]
+    }
   }
 ]

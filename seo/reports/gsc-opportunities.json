@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-07-08",
+  "endDate": "2026-07-09",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -84,26 +84,6 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
-      "page": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 9.0,
-      "query": "ramp pricing change june 2026",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 52.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/best-deel-alternatives-in-2026-free-paid",
-      "position": 9.0,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 52.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
       "impressions": 1.0,
       "page": "https://saaspare.org/pages/best-linear-alternatives-in-2026-free-paid",
       "position": 15.0,
@@ -145,16 +125,6 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 1.0,
-      "page": "https://saaspare.org/pages/stripe-vs-bold-commerce-which-is-better-in-2026",
-      "position": 9.0,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 52.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
       "page": "https://saaspare.org/pages/tapfiliate-vs-refersion-which-is-better-in-2026",
       "position": 9.0,
       "query": "",
@@ -177,6 +147,16 @@
       "impressions": 1.0,
       "page": "https://saaspare.org/pages/best-zoom-alternatives-in-2026-free-paid",
       "position": 16.0,
+      "query": "",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 51.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 3.0,
+      "page": "https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
+      "position": 8.0,
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
       "score": 51.0
@@ -270,16 +250,6 @@
       "query": "",
       "recommendedAction": "Add supporting links from category hubs and improve page-specific evidence.",
       "score": 46.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 20.0,
-      "page": "https://saaspare.org/deal-radar",
-      "position": 1.1,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 45.4
     },
     {
       "clicks": 0.0,
@@ -405,26 +375,6 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 1.0,
-      "page": "https://saaspare.org/newsletter",
-      "position": 11.0,
-      "query": "saaspare.org",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 29.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/newsletter",
-      "position": 11.0,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 29.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
       "page": "https://saaspare.org/pages/best-devtools-for-software-development-in-2025",
       "position": 13.0,
       "query": "",
@@ -474,7 +424,7 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
+      "impressions": 3.0,
       "page": "https://saaspare.org/pages/how-saaspare-ranks-tools",
       "position": 9.0,
       "query": "saaspare.org",
@@ -524,12 +474,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 18.0,
+      "impressions": 19.0,
+      "page": "https://saaspare.org/deal-radar",
+      "position": 1.11,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.38
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 17.0,
       "page": "https://saaspare.org/deal-radar",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.36
+      "score": 25.34
     },
     {
       "clicks": 0.0,
@@ -1004,16 +964,6 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
-      "page": "https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
-      "position": 6.5,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
       "impressions": 3.0,
       "page": "https://saaspare.org/pages/deel-free-trial-2026-how-to-get-it-step-by-step",
       "position": 1.0,
@@ -1194,9 +1144,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 1.5,
+      "position": 2.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1434,9 +1384,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 7.0,
+      "impressions": 6.0,
       "page": "https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 3.14,
+      "position": 3.5,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1584,9 +1534,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 7.0,
+      "impressions": 2.0,
       "page": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 7.71,
+      "position": 7.5,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1604,9 +1554,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
+      "impressions": 3.0,
       "page": "https://saaspare.org/pages/remote-com-vs-lattice-which-is-better-in-2026",
-      "position": 6.25,
+      "position": 6.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1674,9 +1624,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 3.0,
+      "impressions": 2.0,
       "page": "https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 3.0,
+      "position": 3.5,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1687,16 +1637,6 @@
       "impressions": 1.0,
       "page": "https://saaspare.org/pages/sentry-vs-datadog-which-is-better-in-2026",
       "position": 55.0,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 1.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -1904,29 +1844,19 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 39.0,
+      "impressions": 38.0,
       "page": "https://saaspare.org/pages/",
-      "position": 2.49,
+      "position": 2.53,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.78
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 24.0,
-      "page": "https://saaspare.org/",
-      "position": 1.0,
-      "query": "saaspare.org",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.48
+      "score": 20.76
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 23.0,
-      "page": "https://saaspare.org/pages/",
-      "position": 2.39,
+      "page": "https://saaspare.org/",
+      "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 20.46
@@ -1935,9 +1865,9 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 22.0,
-      "page": "https://saaspare.org/terms",
-      "position": 2.73,
-      "query": "",
+      "page": "https://saaspare.org/pages/",
+      "position": 2.45,
+      "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 20.44
     },
@@ -1945,41 +1875,51 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 21.0,
-      "page": "https://saaspare.org/shortlist",
-      "position": 1.19,
+      "page": "https://saaspare.org/terms",
+      "position": 2.62,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 20.42
     },
     {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 20.0,
+      "page": "https://saaspare.org/shortlist",
+      "position": 1.2,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 20.4
+    },
+    {
       "clicks": 2.0,
-      "ctr": 0.0385,
-      "impressions": 52.0,
+      "ctr": 0.0392,
+      "impressions": 51.0,
       "page": "https://saaspare.org/",
       "position": 1.27,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 1.04
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 18.0,
-      "page": "https://saaspare.org/shortlist",
-      "position": 1.0,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.36
+      "score": 1.02
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 17.0,
-      "page": "https://saaspare.org/terms",
-      "position": 3.12,
+      "page": "https://saaspare.org/shortlist",
+      "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 0.34
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 16.0,
+      "page": "https://saaspare.org/terms",
+      "position": 3.0,
+      "query": "saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 0.32
     },
     {
       "clicks": 2.0,
@@ -1993,13 +1933,33 @@
     },
     {
       "clicks": 1.0,
-      "ctr": 0.0769,
-      "impressions": 13.0,
+      "ctr": 0.0833,
+      "impressions": 12.0,
       "page": "https://saaspare.org/about",
-      "position": 1.46,
+      "position": 1.5,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.26
+      "score": 0.24
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 10.0,
+      "page": "https://saaspare.org/roi",
+      "position": 1.0,
+      "query": "saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 0.2
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 10.0,
+      "page": "https://saaspare.org/roi",
+      "position": 1.0,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 0.2
     }
   ],
   "pageClicks": {
@@ -2016,7 +1976,6 @@
     "https://saaspare.org/editorial-policy": 0.0,
     "https://saaspare.org/media-kit": 0.0,
     "https://saaspare.org/methodology": 1.0,
-    "https://saaspare.org/newsletter": 0.0,
     "https://saaspare.org/pages/": 0.0,
     "https://saaspare.org/pages/7-best-dashlane-alternatives-in-2026-free-paid": 0.0,
     "https://saaspare.org/pages/7-best-freshbooks-alternatives-in-2026-free-paid": 0.0,
@@ -2050,7 +2009,6 @@
     "https://saaspare.org/pages/best-coi-verification-tools-for-compliance-in-2025": 0.0,
     "https://saaspare.org/pages/best-cybersecurity-software-for-remote-teams-in-2026-ranked": 0.0,
     "https://saaspare.org/pages/best-datadog-alternatives-in-2026-free-paid": 0.0,
-    "https://saaspare.org/pages/best-deel-alternatives-in-2026-free-paid": 0.0,
     "https://saaspare.org/pages/best-devtools-for-b2b-saas-teams-in-2025": 0.0,
     "https://saaspare.org/pages/best-devtools-for-secure-code-review-in-2025": 0.0,
     "https://saaspare.org/pages/best-devtools-for-secure-offline-capable-ai-development-in-2025": 0.0,
@@ -2170,12 +2128,10 @@
     "https://saaspare.org/pages/se-ranking-vs-spyfu-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay": 0.0,
     "https://saaspare.org/pages/sentry-vs-datadog-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay": 0.0,
     "https://saaspare.org/pages/shopify-vs-bigcommerce-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/slack-review-2026-is-it-worth-it-honest-verdict": 0.0,
     "https://saaspare.org/pages/slack-vs-mattermost-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/state-of-saas-pricing-2026": 0.0,
-    "https://saaspare.org/pages/stripe-vs-bold-commerce-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tableau-vs-looker-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tableau-vs-segment-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tailscale-vs-wireguard-which-is-better-in-2026": 0.0,
@@ -2203,8 +2159,8 @@
     "https://saaspare.org/shortlist": 0.0,
     "https://saaspare.org/terms": 0.0
   },
-  "rowsPulled": 246,
+  "rowsPulled": 240,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-06-10"
+  "startDate": "2026-06-11"
 }
