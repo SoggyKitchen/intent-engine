@@ -48,7 +48,7 @@ TOOLS: dict[str, tuple] = {
     "hubspot":         ("HubSpot",           "Free CRM, marketing+sales unified",                 "CRM",                "Free",      "/go/hubspot",       "ff7a59", "hubspot",          9.3, "Free forever"),
     "hubspot-crm":     ("HubSpot CRM",       "Free CRM, unlimited users",                         "CRM",                "Free",      "/go/hubspot-crm",   "ff7a59", "hubspot",          9.3, "Free forever"),
     "salesforce":      ("Salesforce",        "Enterprise CRM, most customisable",                 "CRM",                "$25/mo",    None,                "00a1e0", "salesforce",       9.1, "30-day trial"),
-    "pipedrive":       ("Pipedrive",         "Visual pipeline, sales-focused",                    "CRM",                "$14/mo",    None,                "26292b", "pipedrive",        9.0, "14-day trial"),
+    "pipedrive":       ("Pipedrive",         "Visual pipeline, sales-focused",                    "CRM",                "$14/mo",    "/go/pipedrive",     "26292b", "pipedrive",        9.0, "14-day trial"),
     "zoho-crm":        ("Zoho CRM",          "Most features per dollar",                          "CRM",                "Free",      None,                "e42527", "zoho",             8.8, "Free (3 users)"),
     "copper":          ("Copper",            "Native Google Workspace CRM",                       "CRM",                "$25/mo",    None,                "15a0dd", "googlechrome",     8.6, "14-day trial"),
     "close":           ("Close",             "Built-in calling/SMS for inside sales",             "CRM",                "$49/mo",    "/go/close",         "7c3aed", "close",            8.9, "14-day trial"),
