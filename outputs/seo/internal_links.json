@@ -1,8 +1,8 @@
 {
-  "total_pages": 1442,
+  "total_pages": 1443,
   "updated": 1439,
-  "skipped": 3,
-  "orphans_before": 67,
+  "skipped": 4,
+  "orphans_before": 68,
   "orphans_after": 59,
   "samples": [
     {
@@ -21,18 +21,18 @@
         "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",
         "/pages/does-tresorit-have-a-free-plan-2026-full-breakdown",
         "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
-        "/pages/docusign-vs-contractbook-which-is-better-in-2026",
-        "/pages/tableau-vs-segment-which-is-better-in-2026"
+        "/pages/brevo-vs-klaviyo-which-is-better-in-2026",
+        "/pages/semrush-vs-ahrefs-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/sentinelone-vs-duo-security-which-is-better-in-2026",
-        "/pages/crowdstrike-vs-duo-security-which-is-better-in-2026",
-        "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/crowdstrike-vs-tresorit-which-is-better-in-2026",
-        "/pages/surfer-seo-vs-mangools-which-is-better-in-2026"
+        "/pages/nordlayer-vs-tresorit-which-is-better-in-2026",
+        "/pages/does-tresorit-have-a-free-plan-2026-full-breakdown",
+        "/pages/bitwarden-vs-sticky-password-which-is-better-in-2026",
+        "/pages/quickbooks-vs-divvy-which-is-better-in-2026",
+        "/pages/surfer-seo-vs-se-ranking-which-is-better-in-2026"
       ]
     }
   ]
