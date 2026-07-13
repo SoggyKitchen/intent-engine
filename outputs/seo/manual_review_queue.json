@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-13T06:29:59+00:00",
+  "generated_at_utc": "2026-07-13T21:29:13+00:00",
   "mode": "apply",
-  "pages_flagged": 40,
+  "pages_flagged": 41,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -248,6 +248,32 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "h3> <p style=\"color:rgba(255,248,245,.64);\">Both NordVPN and Surfshark have 30-day money-back guarantees. Try and return if gaming speed isn't better.</p> <div class=\"cta-btns\">"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordvpn-vs-ipvanish-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "unlimited simultaneous connections or a bundled SOCKS5 proxy. Both come with a 30-day money-back guarantee.</p> </div> <!-- HEAD-TO-HEAD SCORE BARS --> <div clas"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "tocol, and extras like Threat Protection and Meshnet. Starts at $3.39/mo with a 30-day money-back guarantee. Up to 10 devices covered.</li> <li><strong>Choose IPVanish</stro"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "n. IPVanish starts at around $2.99/mo on promotional annual plans. Both offer a 30-day money-back guarantee. Always verify renewal pricing on each vendor's site \u2014 introductory rates are t"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "<div class=\"faq-a\">Neither offers a permanently free tier. Both offer a 30-day money-back guarantee on their standard plans \u2014 NordVPN on all plans, IPVanish on annual and longer p"
         }
       ],
       "trust_state_bumped": false
