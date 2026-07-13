@@ -2,8 +2,8 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-06-11 to 2026-07-09
-Rows pulled: 240
+Range: 2026-06-12 to 2026-07-10
+Rows pulled: 231
 
 ## Top Opportunities
 - Score 54.0: `https://saaspare.org/pages/weekly-saas-deal-digest` query `(page rollup)` - impressions 1.0, CTR 0.0, position 11.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
@@ -15,17 +15,18 @@ Rows pulled: 240
 - Score 53.0: `https://saaspare.org/pages/docusign-vs-juro-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 10.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 52.0: `https://saaspare.org/pages/partnerstack-vs-tapfiliate-which-is-better-in-2026` query `site:saaspare.org` - impressions 1.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 52.0: `https://saaspare.org/pages/best-linear-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 15.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 52.0: `https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict` query `(page rollup)` - impressions 2.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 52.0: `https://saaspare.org/pages/lever-vs-culture-amp-which-is-better-in-2026` query `(page rollup)` - impressions 2.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 52.0: `https://saaspare.org/pages/partnerstack-vs-tapfiliate-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 52.0: `https://saaspare.org/pages/rippling-vs-lattice-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 52.0: `https://saaspare.org/pages/tapfiliate-vs-refersion-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 51.0: `https://saaspare.org/pages/tune-vs-affilae-which-is-better-in-2026` query `site:saaspare.org` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 51.0: `https://saaspare.org/pages/best-zoom-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 16.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 51.0: `https://saaspare.org/pages/datadog-review-2026-is-it-worth-it-honest-verdict` query `(page rollup)` - impressions 3.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 51.0: `https://saaspare.org/pages/docusign-review-2026-is-it-worth-it-honest-verdict` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 51.0: `https://saaspare.org/pages/impact-com-vs-partnerstack-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 51.0: `https://saaspare.org/pages/lattice-vs-culture-amp-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 51.0: `https://saaspare.org/pages/partnerstack-vs-tune-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
+- Score 51.0: `https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 50.0: `https://saaspare.org/pages/best-datadog-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 1.0, CTR 0.0, position 17.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 49.29: `https://saaspare.org/pages/report-outdated-pricing` query `(page rollup)` - impressions 7.0, CTR 0.0, position 17.71. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 49.0: `https://saaspare.org/pages/xero-vs-quickbooks-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 18.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
@@ -50,7 +51,6 @@ Rows pulled: 240
 - Score 27.0: `https://saaspare.org/affiliate-disclosure` query `saaspare.org` - impressions 4.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 27.0: `https://saaspare.org/pages/how-saaspare-ranks-tools` query `saaspare.org` - impressions 3.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 27.0: `https://saaspare.org/pages/best-cybersecurity-software-for-remote-teams-in-2026-ranked` query `(page rollup)` - impressions 1.0, CTR 0.0, position 9.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
-- Score 26.0: `https://saaspare.org/pages/best-ai-workflow-tools-for-b2b-software-teams-in-2025` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 26.0: `https://saaspare.org/pages/best-vpn-business-software-for-startups-in-2026-ranked` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 26.0: `https://saaspare.org/pages/does-sentry-have-a-free-plan-2026-full-breakdown` query `(page rollup)` - impressions 1.0, CTR 0.0, position 8.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 25.38: `https://saaspare.org/deal-radar` query `(page rollup)` - impressions 19.0, CTR 0.0, position 1.11. Monitor and prioritize if impressions continue rising.
@@ -62,7 +62,6 @@ Rows pulled: 240
 - Score 25.0: `https://saaspare.org/pages/free-trial-database` query `saaspare.org` - impressions 2.0, CTR 0.0, position 85.5. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay` query `hubspot marketing hub starter pricing 2026` - impressions 1.0, CTR 0.0, position 2.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/linear-pricing-2026-plans-costs-what-you-actually-pay` query `linear performance pricing` - impressions 1.0, CTR 0.0, position 65.0. Monitor and prioritize if impressions continue rising.
-- Score 25.0: `https://saaspare.org/pages/looker-vs-segment-which-is-better-in-2026` query `segment looker` - impressions 1.0, CTR 0.0, position 77.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/notion-pricing-2026-plans-costs-what-you-actually-pay` query `notion pricing plans 2025 2026` - impressions 2.0, CTR 0.0, position 2.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/render-vs-supabase-which-is-better-in-2026` query `render vs supabase` - impressions 2.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/render-vs-supabase-which-is-better-in-2026` query `supabase vs render` - impressions 1.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
@@ -106,3 +105,4 @@ Rows pulled: 240
 - Score 25.0: `https://saaspare.org/pages/deel-pricing-2026-plans-costs-what-you-actually-pay` query `(page rollup)` - impressions 2.0, CTR 0.0, position 7.5. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/deel-vs-culture-amp-which-is-better-in-2026` query `(page rollup)` - impressions 2.0, CTR 0.0, position 7.5. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/digitalocean-vs-vultr-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 40.0. Monitor and prioritize if impressions continue rising.
+- Score 25.0: `https://saaspare.org/pages/docusign-clm-vs-juro-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 3.0. Monitor and prioritize if impressions continue rising.
