@@ -418,19 +418,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/gusto-vs-adp-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/gusto-vs-adp-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/hetzner-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -665,6 +652,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/nordvpn-vs-private-internet-access-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordvpn-vs-private-internet-access-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/notion-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -795,19 +795,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/rippling-vs-adp-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/rippling-vs-adp-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/saas-buyer-signals-2026.html",
     "fixes": [
       "canonical",
@@ -847,19 +834,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/se-ranking-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -897,6 +871,19 @@
     ],
     "path": "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/semrush-vs-moz-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/semrush-vs-moz-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/shopify-pricing-history-2026.html",
