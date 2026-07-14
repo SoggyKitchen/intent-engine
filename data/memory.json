@@ -192,6 +192,32 @@
         "CJ deep links needed for: GetResponse (3142111), Elementor (6798066), Proton (5227916), AWeber (5111249), Parallels (2005415) \u2014 get from app.cj.com -> Links -> Get Links"
       ],
       "tests": "57/57 passed"
+    },
+    {
+      "date": "2026-07-14",
+      "session": "ceo-daily",
+      "gmail_findings": [
+        "Educative affiliate approved via Rakuten Advertising (July 10) \u2014 /go/educative already exists but uses placeholder URL; owner must log into publisher.rakutenadvertising.com to get real tracking link",
+        "SpamGuard (via Awin) invited SaaSpare to join their programme (July 13) \u2014 awaiting owner decision to accept or decline",
+        "Pipedrive PartnerStack approval (July 10) \u2014 already handled in revenue-hunter commit July 13",
+        "Impact.com newsletters only \u2014 no new HubSpot/Shopify approval detected"
+      ],
+      "built": [
+        "nordvpn-vs-protonvpn-which-is-better-in-2026.html \u2014 new comparison page; both programs have active CJ affiliate links (/go/nordvpn + /go/protonvpn)"
+      ],
+      "fixed": [
+        "17 pages updated with universal nav (fix_universal_nav.py)",
+        "2 pages updated with saaspare-ui.css (fix_inject_ui_css.py)",
+        "Sitemap updated to 1471 URLs",
+        "memory.json corrupted JSON fixed (duplicate brace on line ~525)"
+      ],
+      "revenue_leaks": "None found \u2014 all vendor links already use /go/ tracked routes",
+      "tests": "93/93 passed",
+      "next_human_actions": [
+        "LOG INTO publisher.rakutenadvertising.com to get Educative CJ/Rakuten tracking link, update /go/educative in site/_redirects",
+        "DECIDE on SpamGuard Awin invitation \u2014 log into Awin to accept or decline",
+        "LOG INTO app.cj.com to get deep links for: GetResponse (ID 3142111), ProtonVPN (ID 5227916), Elementor (ID 6798066), AWeber (ID 5111249), Parallels (ID 2005415)"
+      ]
     }
   ],
   "affiliate_approvals": [
@@ -489,39 +515,38 @@
       "date": "2026-06-30",
       "session": "revenue-hunter",
       "gmail_findings": {
-        "partnerstack": "PERMANENTLY BLOCKED — 3rd rejection 2026-06-22/23 by Anjola S. 'Not a fit for the PartnerStack Network at this time.' ClickUp/Monday/ActiveCampaign/Dashlane revenue path is closed. No further appeals.",
-        "impact_com": "own program APPROVED 2026-06-16 — already activated in prior session (/go/impact live).",
+        "partnerstack": "PERMANENTLY BLOCKED \u2014 3rd rejection 2026-06-22/23 by Anjola S. 'Not a fit for the PartnerStack Network at this time.' ClickUp/Monday/ActiveCampaign/Dashlane revenue path is closed. No further appeals.",
+        "impact_com": "own program APPROVED 2026-06-16 \u2014 already activated in prior session (/go/impact live).",
         "no_new_approvals": "No new affiliate program approvals found in Gmail scan."
       },
       "revenue_leak_found": {
-        "getresponse": "/go/getresponse points to https://www.getresponse.com/?a=-CJ&affpath=directbuy — NOT a real CJ tracking link. Real CJ links go through dpbolvw.net or tkqlhce.com. CJ advertiser ID is 3142111. OWNER ACTION REQUIRED: log into app.cj.com -> advertiser 3142111 -> Get Links -> replace /go/getresponse in site/_redirects with real deep link. Estimated loss: $100/lead commission on all referrals."
+        "getresponse": "/go/getresponse points to https://www.getresponse.com/?a=-CJ&affpath=directbuy \u2014 NOT a real CJ tracking link. Real CJ links go through dpbolvw.net or tkqlhce.com. CJ advertiser ID is 3142111. OWNER ACTION REQUIRED: log into app.cj.com -> advertiser 3142111 -> Get Links -> replace /go/getresponse in site/_redirects with real deep link. Estimated loss: $100/lead commission on all referrals."
       },
       "ctr_fixes": [
-        "ramp-pricing: title -> 'Did Ramp Change Pricing in June 2026? [No — Free Card Still $0, Full Change Log]' (pos 3.7, 121 impr, 0 clicks for change-query variants)",
+        "ramp-pricing: title -> 'Did Ramp Change Pricing in June 2026? [No \u2014 Free Card Still $0, Full Change Log]' (pos 3.7, 121 impr, 0 clicks for change-query variants)",
         "mixpanel-pricing: title -> 'Mixpanel Pricing 2026: Is Free (20M Events) Enough or Do You Need $28/mo? [Verdict]' (742 impr, pos 13.7, 0% CTR)",
-        "semrush-pricing: title -> 'Semrush Pricing 2026: Pro $139.95/mo ($117 Annual) — Is It Worth It? [All Plans + Hidden Costs]' (483 impr, pos 79, active CJ earner via semrush.sjv.io)",
-        "nordlayer-pricing: title -> 'NordLayer Pricing 2026: $9 Lite vs $14 Business — Is It Worth It for Teams? [Verdict]' (270 impr, pos 19, 0.37% CTR)"
+        "semrush-pricing: title -> 'Semrush Pricing 2026: Pro $139.95/mo ($117 Annual) \u2014 Is It Worth It? [All Plans + Hidden Costs]' (483 impr, pos 79, active CJ earner via semrush.sjv.io)",
+        "nordlayer-pricing: title -> 'NordLayer Pricing 2026: $9 Lite vs $14 Business \u2014 Is It Worth It for Teams? [Verdict]' (270 impr, pos 19, 0.37% CTR)"
       ],
-      "new_page": "nordlayer-vs-nordvpn-which-is-better-in-2026.html — NordVPN (9.2/10, consumer) vs NordLayer (8.5/10, business), 5x /go/nordvpn CTAs (CJ active earner), FAQPage JSON-LD schema (4 FAQs), pricing table, 13-row feature comparison, tab navigation, targets 'nordlayer vs nordvpn' keyword gap",
-      "direct_url_leaks": "0 — grep confirmed no untracked direct vendor hrefs in site/pages/",
+      "new_page": "nordlayer-vs-nordvpn-which-is-better-in-2026.html \u2014 NordVPN (9.2/10, consumer) vs NordLayer (8.5/10, business), 5x /go/nordvpn CTAs (CJ active earner), FAQPage JSON-LD schema (4 FAQs), pricing table, 13-row feature comparison, tab navigation, targets 'nordlayer vs nordvpn' keyword gap",
+      "direct_url_leaks": "0 \u2014 grep confirmed no untracked direct vendor hrefs in site/pages/",
       "tests": "93/93 passed",
       "sitemap": "1437 URLs (nordlayer-vs-nordvpn added)",
       "measure_at_21days": {
-        "nordlayer-vs-nordvpn-impressions": "new page — baseline TBD",
-        "ramp-pricing-ctr": "pos 3.7 for 'ramp pricing change june 2026' — expect CTR > 5% with explicit yes/no question format",
-        "semrush-pricing-ctr": "pos 79 is too deep for CTR to matter — title fix is a SERP quality signal, real win needs ranking improvement",
-        "mixpanel-pricing-ctr": "was 0% at 742 impr — target > 0.5% by 21 July",
-        "nordlayer-pricing-ctr": "was 0.37% at 270 impr — target > 1.5% by 21 July"
+        "nordlayer-vs-nordvpn-impressions": "new page \u2014 baseline TBD",
+        "ramp-pricing-ctr": "pos 3.7 for 'ramp pricing change june 2026' \u2014 expect CTR > 5% with explicit yes/no question format",
+        "semrush-pricing-ctr": "pos 79 is too deep for CTR to matter \u2014 title fix is a SERP quality signal, real win needs ranking improvement",
+        "mixpanel-pricing-ctr": "was 0% at 742 impr \u2014 target > 0.5% by 21 July",
+        "nordlayer-pricing-ctr": "was 0.37% at 270 impr \u2014 target > 1.5% by 21 July"
       },
       "next_human_actions": [
-        "URGENT: Fix GetResponse revenue leak — log into app.cj.com -> Advertiser 3142111 -> Get Links -> replace /go/getresponse URL in site/_redirects with real tracking link. Currently losing $100/lead.",
-        "URGENT: PartnerStack PERMANENTLY CLOSED. Pivot strategy: apply to ClickUp direct (clickup.com/affiliates), Monday.com direct, ActiveCampaign direct — bypass PartnerStack entirely.",
-        "ACTION: Log into Impact.com (publisher 7269601) — apply for HubSpot ($250-1000/sale) and 1Password ($30-60/sale) from their marketplace.",
+        "URGENT: Fix GetResponse revenue leak \u2014 log into app.cj.com -> Advertiser 3142111 -> Get Links -> replace /go/getresponse URL in site/_redirects with real tracking link. Currently losing $100/lead.",
+        "URGENT: PartnerStack PERMANENTLY CLOSED. Pivot strategy: apply to ClickUp direct (clickup.com/affiliates), Monday.com direct, ActiveCampaign direct \u2014 bypass PartnerStack entirely.",
+        "ACTION: Log into Impact.com (publisher 7269601) \u2014 apply for HubSpot ($250-1000/sale) and 1Password ($30-60/sale) from their marketplace.",
         "ACTION: Get CJ deep links for GetResponse (3142111), Elementor (6798066), Proton (5227916), AWeber (5111249), Parallels (2005415) from app.cj.com -> Links -> Get Links.",
-        "MONITOR: Wix contract on Impact.com (sent 2026-06-01) — should have decision by now."
+        "MONITOR: Wix contract on Impact.com (sent 2026-06-01) \u2014 should have decision by now."
       ]
     },
-    {
     {
       "date": "2026-06-11",
       "session": "ceo-daily",
