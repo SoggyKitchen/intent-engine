@@ -1,12 +1,33 @@
 {
-  "generated_at_utc": "2026-07-14T05:40:44+00:00",
+  "generated_at_utc": "2026-07-14T21:19:41+00:00",
   "mode": "apply",
-  "pages_flagged": 41,
+  "pages_flagged": 42,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
   ],
   "pages": [
+    {
+      "path": "site/pages/nordvpn-vs-protonvpn-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "for Swiss privacy jurisdiction, free tier, and 10 device connections. Both have 30-day money-back guarantees.</p> </div> <div class=\"vs-scorebar reveal-up\"> <h3"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "td><td class=\"win\">$12.99/mo</td><td>$9.99/mo</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td>30 days</td></tr> <tr><td>Simultaneous"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "2-year plan. ProtonVPN also has a free tier with no bandwidth limits. Both have 30-day money-back guarantees.</div></div> <div class=\"faq-item reveal-up\"><h3 class=\"faq-q\">Whi"
+        }
+      ],
+      "trust_state_bumped": false
+    },
     {
       "path": "site/pages/sucuri-pricing-2026-plans-costs-what-you-actually-pay.html",
       "claims": [
