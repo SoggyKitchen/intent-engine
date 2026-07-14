@@ -652,7 +652,7 @@
     "premium": true
   },
   {
-    "file": "site/pages/nordvpn-vs-private-internet-access-which-is-better-in-2026.html",
+    "file": "site/pages/nordvpn-vs-ipvanish-which-is-better-in-2026.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -661,7 +661,7 @@
       "schema_safety",
       "trust_block"
     ],
-    "path": "/pages/nordvpn-vs-private-internet-access-which-is-better-in-2026",
+    "path": "/pages/nordvpn-vs-ipvanish-which-is-better-in-2026",
     "premium": false
   },
   {
@@ -753,6 +753,19 @@
       "trust_block"
     ],
     "path": "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/pipedrive-vs-monday-com-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/pipedrive-vs-monday-com-which-is-better-in-2026",
     "premium": true
   },
   {
@@ -871,19 +884,6 @@
     ],
     "path": "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/semrush-vs-moz-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/semrush-vs-moz-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/shopify-pricing-history-2026.html",
