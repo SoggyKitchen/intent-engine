@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-07-11",
+  "endDate": "2026-07-12",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -125,16 +125,6 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 1.0,
-      "page": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
-      "position": 8.0,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 51.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
       "page": "https://saaspare.org/pages/tune-vs-affilae-which-is-better-in-2026",
       "position": 8.0,
       "query": "",
@@ -164,12 +154,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/methodology",
-      "position": 10.0,
+      "position": 11.0,
       "query": "saaspare.org",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 28.0
+      "score": 29.0
     },
     {
       "clicks": 0.0,
@@ -184,8 +174,8 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 3.0,
-      "page": "https://saaspare.org/pages/how-saaspare-ranks-tools",
+      "impressions": 2.0,
+      "page": "https://saaspare.org/affiliate-disclosure",
       "position": 9.0,
       "query": "saaspare.org",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
@@ -194,12 +184,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 3.0,
-      "page": "https://saaspare.org/affiliate-disclosure",
-      "position": 8.67,
+      "impressions": 2.0,
+      "page": "https://saaspare.org/pages/how-saaspare-ranks-tools",
+      "position": 8.0,
       "query": "saaspare.org",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 26.67
+      "score": 26.0
     },
     {
       "clicks": 0.0,
@@ -244,12 +234,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 13.0,
+      "impressions": 10.0,
       "page": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
-      "position": 45.85,
+      "position": 45.8,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.26
+      "score": 25.2
     },
     {
       "clicks": 0.0,
@@ -274,9 +264,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/firstpromoter-vs-leaddyno-which-is-better-in-2026",
-      "position": 38.5,
+      "position": 39.0,
       "query": "firstpromoter vs leaddyno",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -284,9 +274,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/free-trial-database",
-      "position": 85.5,
+      "position": 85.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -354,9 +344,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
+      "impressions": 3.0,
       "page": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
-      "position": 46.5,
+      "position": 46.33,
       "query": "datadog retool",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -364,9 +354,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
+      "impressions": 3.0,
       "page": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
-      "position": 42.25,
+      "position": 42.33,
       "query": "retool datadog",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -374,9 +364,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 5.0,
+      "impressions": 4.0,
       "page": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
-      "position": 48.2,
+      "position": 48.0,
       "query": "retool datadog integration",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -398,16 +388,6 @@
       "page": "https://saaspare.org/pages/slack-vs-mattermost-which-is-better-in-2026",
       "position": 7.0,
       "query": "site:saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/state-of-saas-pricing-2026",
-      "position": 93.0,
-      "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
     },
@@ -544,9 +524,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/firstpromoter-vs-leaddyno-which-is-better-in-2026",
-      "position": 38.5,
+      "position": 39.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -554,9 +534,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/free-trial-database",
-      "position": 85.5,
+      "position": 85.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -764,7 +744,7 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/se-ranking-review-2026-is-it-worth-it-honest-verdict",
       "position": 1.0,
       "query": "",
@@ -787,16 +767,6 @@
       "impressions": 1.0,
       "page": "https://saaspare.org/pages/slack-vs-mattermost-which-is-better-in-2026",
       "position": 7.0,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/state-of-saas-pricing-2026",
-      "position": 93.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -855,16 +825,6 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 24.0,
-      "page": "https://saaspare.org/",
-      "position": 1.0,
-      "query": "saaspare.org",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.48
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 24.0,
       "page": "https://saaspare.org/pages/",
       "position": 3.12,
       "query": "saaspare.org",
@@ -874,19 +834,19 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 20.0,
-      "page": "https://saaspare.org/shortlist",
-      "position": 1.2,
-      "query": "",
+      "impressions": 23.0,
+      "page": "https://saaspare.org/",
+      "position": 1.0,
+      "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.4
+      "score": 20.46
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 20.0,
-      "page": "https://saaspare.org/terms",
-      "position": 2.55,
+      "page": "https://saaspare.org/shortlist",
+      "position": 1.2,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 20.4
@@ -904,6 +864,16 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
+      "impressions": 19.0,
+      "page": "https://saaspare.org/terms",
+      "position": 2.53,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 0.38
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
       "impressions": 17.0,
       "page": "https://saaspare.org/shortlist",
       "position": 1.0,
@@ -914,22 +884,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/terms",
       "position": 2.93,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 0.28
     },
     {
       "clicks": 2.0,
-      "ctr": 0.1333,
-      "impressions": 15.0,
+      "ctr": 0.1429,
+      "impressions": 14.0,
       "page": "https://saaspare.org/pages/saas-stack-audit-checkout",
-      "position": 4.2,
+      "position": 4.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 0.28
     },
     {
       "clicks": 0.0,
@@ -938,16 +908,6 @@
       "page": "https://saaspare.org/roi",
       "position": 1.0,
       "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.22
-    },
-    {
-      "clicks": 1.0,
-      "ctr": 0.0909,
-      "impressions": 11.0,
-      "page": "https://saaspare.org/about",
-      "position": 1.55,
-      "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 0.22
     },
@@ -970,6 +930,16 @@
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 0.22
+    },
+    {
+      "clicks": 1.0,
+      "ctr": 0.1,
+      "impressions": 10.0,
+      "page": "https://saaspare.org/about",
+      "position": 1.2,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 0.2
     }
   ],
   "pageClicks": {
@@ -992,7 +962,6 @@
     "https://saaspare.org/pages/bamboohr-vs-rippling-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/best-1password-alternatives-in-2026-free-paid": 0.0,
     "https://saaspare.org/pages/best-ai-ml-tools-for-enterprise-data-intelligence-in-2025": 0.0,
-    "https://saaspare.org/pages/best-coi-verification-tools-for-compliance-in-2025": 0.0,
     "https://saaspare.org/pages/best-devtools-for-b2b-saas-teams-in-2025": 0.0,
     "https://saaspare.org/pages/best-devtools-for-secure-offline-capable-ai-development-in-2025": 0.0,
     "https://saaspare.org/pages/best-ecommerce-optimization-tools-for-shopify-in-2025": 0.0,
@@ -1031,7 +1000,6 @@
     "https://saaspare.org/pages/notion-pricing-history-2026": 0.0,
     "https://saaspare.org/pages/partnerstack-vs-tapfiliate-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/perimeter-81-vs-twingate-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay": 0.0,
     "https://saaspare.org/pages/remote-com-vs-lattice-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/render-vs-supabase-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/report-outdated-pricing": 0.0,
@@ -1045,7 +1013,6 @@
     "https://saaspare.org/pages/se-ranking-review-2026-is-it-worth-it-honest-verdict": 0.0,
     "https://saaspare.org/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay": 0.0,
     "https://saaspare.org/pages/slack-vs-mattermost-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/state-of-saas-pricing-2026": 0.0,
     "https://saaspare.org/pages/tableau-vs-segment-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tune-vs-affilae-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/v3-preview-comparison": 0.0,
@@ -1057,8 +1024,8 @@
     "https://saaspare.org/shortlist": 0.0,
     "https://saaspare.org/terms": 0.0
   },
-  "rowsPulled": 125,
+  "rowsPulled": 121,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-06-13"
+  "startDate": "2026-06-14"
 }
