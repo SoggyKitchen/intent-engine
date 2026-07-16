@@ -85,7 +85,7 @@
     "baseline_clicks": 1.0,
     "baseline_date": "2026-06-25",
     "pre_blob": "3d76387c7f0ed69c7b84ced0e929707485d62808",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict.html",
@@ -133,7 +133,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-06-25",
     "pre_blob": "6d42d66818d35036ca6efc81e2b0c50f6b9b5f10",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/notion-pricing-history-2026.html",
@@ -141,7 +141,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-06-25",
     "pre_blob": "150710c2f9b569cd9e61c8f0bff0211564518678",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/pipedrive-pricing-history-2026.html",
@@ -213,7 +213,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-06-25",
     "pre_blob": "d1f3e1c764bb35094e6c365dac6ee120528e4c49",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/xero-review-2026-is-it-worth-it-honest-verdict.html",

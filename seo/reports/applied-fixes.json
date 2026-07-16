@@ -652,19 +652,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/nordvpn-vs-protonvpn-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/notion-pricing-history-2026.html",
     "fixes": [
       "canonical",
