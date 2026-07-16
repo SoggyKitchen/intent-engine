@@ -1,9 +1,9 @@
 {
-  "total_pages": 1444,
-  "updated": 1441,
+  "total_pages": 1445,
+  "updated": 1442,
   "skipped": 3,
-  "orphans_before": 72,
-  "orphans_after": 64,
+  "orphans_before": 73,
+  "orphans_after": 54,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/getresponse-vs-convertkit-which-is-better-in-2026",
-        "/pages/zoho-crm-vs-nutshell-which-is-better-in-2026"
+        "/pages/impact-com-vs-rewardful-which-is-better-in-2026",
+        "/pages/github-copilot-vs-jetbrains-which-is-better-in-2026"
       ]
     },
     {
@@ -31,7 +31,7 @@
         "/pages/nordlayer-vs-tresorit-which-is-better-in-2026",
         "/pages/does-tresorit-have-a-free-plan-2026-full-breakdown",
         "/pages/bitwarden-vs-sticky-password-which-is-better-in-2026",
-        "/pages/juro-vs-agiloft-which-is-better-in-2026",
+        "/pages/juro-vs-concord-which-is-better-in-2026",
         "/pages/bitwarden-vs-nordpass-which-is-better-in-2026"
       ]
     }
