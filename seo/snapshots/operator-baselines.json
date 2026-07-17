@@ -262,5 +262,37 @@
     "baseline_date": "2026-07-09",
     "pre_blob": "6d0df36692728fc0fdc7c4b46b097f16c0724560",
     "status": "pending"
+  },
+  {
+    "path": "site/pages/index.html",
+    "url": "https://saaspare.org/pages",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-07-17",
+    "pre_blob": "3d76387c7f0ed69c7b84ced0e929707485d62808",
+    "status": "pending"
+  },
+  {
+    "path": "site/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict.html",
+    "url": "https://saaspare.org/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-07-17",
+    "pre_blob": "7c0665021a1caeb4cf459b8e9927d927c8a59ca5",
+    "status": "pending"
+  },
+  {
+    "path": "site/pages/notion-pricing-history-2026.html",
+    "url": "https://saaspare.org/pages/notion-pricing-history-2026",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-07-17",
+    "pre_blob": "9f98017f885549deebf449753096b7d620c3361b",
+    "status": "pending"
+  },
+  {
+    "path": "site/pages/workable-review-2026-is-it-worth-it-honest-verdict.html",
+    "url": "https://saaspare.org/pages/workable-review-2026-is-it-worth-it-honest-verdict",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-07-17",
+    "pre_blob": "acf8dbb9541470bc4620be8a7794b667e1de2130",
+    "status": "pending"
   }
 ]
