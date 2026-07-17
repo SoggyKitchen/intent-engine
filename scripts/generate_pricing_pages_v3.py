@@ -313,7 +313,7 @@ PRICING = {
         name="Mixpanel", logo="https://cdn.simpleicons.org/mixpanel/7856ff",
         go="/go/mixpanel", history="/pages/mixpanel-pricing-history-2026",
         page="/pages/best-mixpanel-alternatives-2026", sticky="Mixpanel's free plan supports 20M events/mo — the most generous in analytics.",
-        meta_desc="Mixpanel pricing July 2026: Free = 20M events/month forever · Growth from $28/mo · Enterprise = custom. Event-volume costs spike at scale — every plan change tracked monthly with dates.",
+        meta_desc="Mixpanel pricing July 2026: Free (20M events), Growth from $28/mo, Enterprise custom. How event-volume pricing scales and the cost trap most teams hit.",
         hidden_risk="Low", hidden_note="Pricing scales with event volume, which can surprise fast-growing products",
         plans=[
             dict(name="Free",    mo="$0",    annual="$0",    best="Early-stage products", users="Unlimited", storage="90-day retention", support="Community", f=["20M events/mo","Unlimited reports","Core analytics"],         fc=["cw","cw","cw"]),

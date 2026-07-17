@@ -186,7 +186,7 @@ def fix_mixpanel_page():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Mm]ixpanel[^"]*">',
-        '<meta name="description" content="Updated July 2026. Mixpanel pricing: Free plan handles 20M events/month, Growth from $28/mo, Enterprise custom. The event-volume scaling trap explained with real numbers.">',
+        '<meta name="description" content="Mixpanel pricing July 2026: Free (20M events), Growth from $28/mo, Enterprise custom. How event-volume pricing scales and the cost trap most teams hit.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -296,7 +296,7 @@ def fix_notion_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Nn]otion[^"]*">',
-        '<meta name="description" content="Yes, Notion has a free plan in 2026 — unlimited blocks, but 10-guest cap, 7-day page history, no automations, no API. Updated July 2026: 4 restrictions that affect teams as they grow.">',
+        '<meta name="description" content="Notion free plan 2026: unlimited blocks, 10-guest cap, 7-day history, no automations, no API. 4 key limits that hit growing teams. Verified July 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -323,7 +323,7 @@ def fix_sentry_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]entry[^"]*">',
-        '<meta name="description" content="Yes, Sentry has a free plan in 2026 — 5,000 errors/month, 7-day retention. SSO, custom dashboards, and 4 more features are locked. Updated July 2026: see if free covers your team\'s scale.">',
+        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month, 7-day retention, 1 seat. SSO, custom dashboards, and 4 more features locked. Full breakdown updated July 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -377,7 +377,7 @@ def fix_loom_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ll]oom[^"]*">',
-        '<meta name="description" content="Yes, Loom has a free plan in 2026 — capped at 5 videos total, 5 minutes each. Business plan ($12.50/user/mo) removes all limits. Updated July 2026: full breakdown of every free restriction.">',
+        '<meta name="description" content="Loom free plan 2026: 5-video cap, 5-min limit per video, 720p only. Business at $12.50/user removes all limits. Full breakdown of what is blocked. Verified July 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
