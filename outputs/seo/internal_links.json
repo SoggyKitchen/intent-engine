@@ -1,9 +1,9 @@
 {
-  "total_pages": 1446,
-  "updated": 1443,
+  "total_pages": 1447,
+  "updated": 1444,
   "skipped": 3,
-  "orphans_before": 57,
-  "orphans_after": 52,
+  "orphans_before": 58,
+  "orphans_after": 65,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/impact-com-vs-rewardful-which-is-better-in-2026",
-        "/pages/github-copilot-vs-jetbrains-which-is-better-in-2026"
+        "/pages/impact-com-vs-refersion-which-is-better-in-2026",
+        "/pages/github-copilot-vs-datadog-which-is-better-in-2026"
       ]
     },
     {
@@ -22,7 +22,7 @@
         "/pages/does-tresorit-have-a-free-plan-2026-full-breakdown",
         "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
         "/pages/brevo-vs-klaviyo-which-is-better-in-2026",
-        "/pages/semrush-vs-ahrefs-which-is-better-in-2026"
+        "/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026"
       ]
     },
     {
@@ -31,8 +31,8 @@
         "/pages/nordlayer-vs-tresorit-which-is-better-in-2026",
         "/pages/does-tresorit-have-a-free-plan-2026-full-breakdown",
         "/pages/bitwarden-vs-sticky-password-which-is-better-in-2026",
-        "/pages/juro-vs-concord-which-is-better-in-2026",
-        "/pages/bitwarden-vs-nordpass-which-is-better-in-2026"
+        "/pages/getresponse-vs-brevo-which-is-better-in-2026",
+        "/pages/roboform-vs-sticky-password-which-is-better-in-2026"
       ]
     }
   ]
