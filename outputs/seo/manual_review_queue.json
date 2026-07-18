@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-18T21:47:57+00:00",
+  "generated_at_utc": "2026-07-18T23:25:34+00:00",
   "mode": "apply",
-  "pages_flagged": 42,
+  "pages_flagged": 45,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -186,6 +186,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/hostpapa-vs-siteground-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "sla_guarantee",
+          "snippet": "99.9% uptime guarantee",
+          "context": "uded</li> <li>Website builder included</li> <li>99.9% uptime guarantee</li> <li>24/7 phone, chat, and email support</li>"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
       "path": "site/pages/best-ecommerce-platform-2026.html",
       "claims": [
         {
@@ -244,6 +255,22 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "untries (US, Netherlands, Romania, Japan, Poland). PIA has no free tier, only a 30-day money-back guarantee on paid plans.</div> </div> <div class=\"faq-item reveal"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/hostpapa-vs-bluehost-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "</li> <li>Free CDN and SSL certificate</li> <li>30-day money-back guarantee</li> <li>24/7 live chat and phone support</li> </"
+        },
+        {
+          "label": "sla_guarantee",
+          "snippet": "99.9% uptime guarantee",
+          "context": "re)</li> <li>100% green energy powered</li> <li>99.9% uptime guarantee</li> <li>24/7/365 support via phone, chat, and email</li>"
         }
       ],
       "trust_state_bumped": false
@@ -586,6 +613,17 @@
           "label": "sla_guarantee",
           "snippet": "99.9% uptime SLA",
           "context": "ebranded from Integromat in 2022 and has been used by 500,000+ teams. It offers 99.9% uptime SLA on paid plans, full error logging, and automatic retry for failed scenarios.</d"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/hostpapa-vs-godaddy-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "sla_guarantee",
+          "snippet": "99.9% uptime guarantee",
+          "context": "<li>Free domain and SSL on annual plans</li> <li>99.9% uptime guarantee</li> <li>Straightforward pricing, fewer upsells</li>"
         }
       ],
       "trust_state_bumped": false
