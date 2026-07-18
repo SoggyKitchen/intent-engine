@@ -1,11 +1,11 @@
 {
   "current_month": "July 2026",
-  "today": "2026-07-17",
+  "today": "2026-07-18",
   "titles_rewritten": 1,
-  "descs_rewritten": 26,
-  "dates_refreshed": 0,
+  "descs_rewritten": 20,
+  "dates_refreshed": 1136,
   "answers_added": 15,
-  "files_changed": 26,
+  "files_changed": 1151,
   "files_scanned": 1463,
   "title_examples": [
     {
@@ -47,7 +47,7 @@
     }
   ],
   "indexnow": {
-    "submitted": 26,
+    "submitted": 200,
     "status": 200
   }
 }
