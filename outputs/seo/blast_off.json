@@ -1,17 +1,22 @@
 {
   "current_month": "July 2026",
   "today": "2026-07-18",
-  "titles_rewritten": 1,
-  "descs_rewritten": 23,
-  "dates_refreshed": 1,
-  "answers_added": 16,
-  "files_changed": 23,
+  "titles_rewritten": 2,
+  "descs_rewritten": 20,
+  "dates_refreshed": 0,
+  "answers_added": 15,
+  "files_changed": 21,
   "files_scanned": 1464,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
+    },
+    {
+      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Datadog Coupon Code 2026 [Verified July] \u2014 No Public Promo Codes: Annual Saves 25-30%",
+      "after": "Datadog Coupon 2026 (Verified July 2026) \u2014 Real Working Codes"
     }
   ],
   "desc_examples": [
@@ -36,18 +41,18 @@
       "after": "Updated July 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-accounting-software-for-freelancers-in-2026.html",
-      "before": "Discover the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features.",
-      "after": "Updated July 2026. the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features Real tests, real pricing \u2014\u2026"
-    },
-    {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated July 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated July 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {
-    "submitted": 23,
+    "submitted": 21,
     "status": 200
   }
 }
