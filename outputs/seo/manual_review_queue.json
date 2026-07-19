@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-19T06:08:22+00:00",
+  "generated_at_utc": "2026-07-19T21:18:01+00:00",
   "mode": "apply",
-  "pages_flagged": 45,
+  "pages_flagged": 46,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -729,6 +729,17 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "?</h2> <p style=\"font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem\">30-day money-back guarantee. Free plugin available with no time limit.</p> <a rel=\"sponsored\" href=\"/"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/elementor-vs-wpbakery-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ime (periodic promotions)</td></tr> <tr><td>Trial</td><td class=\"win\">30-day money-back guarantee</td><td>No free trial</td></tr> <tr><td>Hosting required</td><td>Yes"
         }
       ],
       "trust_state_bumped": false
