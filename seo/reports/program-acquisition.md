@@ -6,10 +6,9 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 
 (Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.)
 
-- **Rippling** [PLACEHOLDER, none] — 9 pages, 6 impressions, $120/conv
-- **Deel** [PLACEHOLDER, none] — 9 pages, 5 impressions, $100/conv
+- **Deel** [PLACEHOLDER, none] — 9 pages, 4 impressions, $100/conv
+- **Rippling** [PLACEHOLDER, none] — 9 pages, 4 impressions, $120/conv
 - **HubSpot** [PENDING, Impact] — 40 pages, 3 impressions, $400/conv
-- **Monday.com** [LOCKED, PartnerStack] — 21 pages, 3 impressions, $150/conv
 - **Asana** [PLACEHOLDER, none] — 28 pages, 2 impressions, $15/conv
 - **ActiveCampaign** [LOCKED, PartnerStack] — 20 pages, 1 impressions, $85/conv
 - **Datadog** [PLACEHOLDER, none] — 11 pages, 0 impressions, $80/conv
@@ -22,6 +21,7 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 - **ClickUp** [LOCKED, PartnerStack] — 22 pages, 0 impressions, $90/conv
 - **Dashlane** [LOCKED, PartnerStack] — 9 pages, 0 impressions, $38/conv
 - **Linear** [PLACEHOLDER, none] — 9 pages, 0 impressions, $20/conv
+- **Monday.com** [LOCKED, PartnerStack] — 21 pages, 0 impressions, $150/conv
 - **Ramp** [PLACEHOLDER, none] — 7 pages, 0 impressions, $100/conv
 - **Salesforce** [PLACEHOLDER, none] — 9 pages, 0 impressions, $120/conv
 - **Slack** [PLACEHOLDER, none] — 5 pages, 0 impressions, $20/conv

@@ -99,34 +99,83 @@
     }
   },
   {
-    "path": "/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay",
+    "path": "/pages/elementor-coupon-code-promo-codes-2026-verified-discounts",
     "score": {
       "inbound": [],
       "outbound": [
         "/",
         "/about",
         "/affiliate-disclosure",
-        "/contact",
+        "/authors/kaylan-von-papen",
         "/deal-radar",
-        "/editorial-policy",
-        "/go/protonmail",
-        "/newsletter",
+        "/go/elementor",
         "/pages/",
-        "/pages/asana-coupon-code-promo-codes-2026-verified-discounts",
-        "/pages/best-nordvpn-alternatives-in-2026-free-paid",
-        "/pages/bitwarden-vs-enpass-which-is-better-in-2026",
-        "/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown",
-        "/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/protonvpn-vs-mullvad-which-is-better-in-2026",
-        "/pages/protonvpn-vs-nordvpn-which-is-better-in-2026",
-        "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/slack-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/zoom-vs-around-which-is-better-in-2026",
-        "/privacy",
-        "/roi",
+        "/pages/does-elementor-have-a-free-plan-2026-full-breakdown",
+        "/pages/elementor-free-trial-2026-how-to-get-it-step-by-step",
+        "/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/elementor-vs-divi-which-is-better-in-2026",
+        "/pages/elementor-vs-webflow-which-is-better-in-2026",
+        "/pages/saas-roi-calculator",
         "/shortlist",
-        "/terms"
+        "https://saaspare.org/affiliate-disclosure",
+        "https://saaspare.org/contact",
+        "https://saaspare.org/methodology"
+      ]
+    }
+  },
+  {
+    "path": "/pages/figma-vs-sketch-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/#comparisons",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/deal-radar",
+        "/methodology",
+        "/pages/",
+        "/pages/canva-vs-figma-which-is-better-in-2026",
+        "/pages/dashlane-vs-enpass-which-is-better-in-2026",
+        "/pages/expressvpn-business-vs-twingate-which-is-better-in-2026",
+        "/pages/github-vs-gitlab-which-is-better-in-2026",
+        "/pages/notion-vs-confluence-which-is-better-in-2026",
+        "/pages/woocommerce-vs-paddle-which-is-better-in-2026",
+        "/pages/workable-vs-lever-which-is-better-in-2026",
+        "/pages/zapier-vs-make-which-is-better-in-2026",
+        "/pages/zendesk-vs-help-scout-which-is-better-in-2026",
+        "/roi",
+        "/shortlist"
+      ]
+    }
+  },
+  {
+    "path": "/pages/fiverr-pro-worth-it-2026-honest-review",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/contact",
+        "/go/fiverr-pro",
+        "/pages/best-fiverr-alternatives-2026",
+        "/pages/best-freelance-platforms-2026",
+        "/pages/best-project-management-software-2026",
+        "/pages/does-fiverr-have-a-free-plan-2026-full-breakdown",
+        "/pages/fiverr-coupon-code-promo-codes-2026-verified-discounts",
+        "/pages/fiverr-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/fiverr-vs-freelancer-which-is-better-in-2026",
+        "/pages/fiverr-vs-toptal-which-is-better-in-2026",
+        "/pages/fiverr-vs-upwork-which-is-better-in-2026",
+        "/pages/hugging-face-vs-weights-biases-which-is-better-in-2026",
+        "/pages/notion-coupon-code-promo-codes-2026-verified-discounts",
+        "/pages/sage-vs-divvy-which-is-better-in-2026",
+        "/pages/whereby-vs-around-which-is-better-in-2026"
       ]
     }
   }
