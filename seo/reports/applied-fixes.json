@@ -340,6 +340,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/elementor-vs-squarespace-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elementor-vs-squarespace-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -364,19 +377,6 @@
     ],
     "path": "/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/fiverr-pro-worth-it-2026-honest-review.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/fiverr-pro-worth-it-2026-honest-review",
-    "premium": false
   },
   {
     "file": "site/pages/fiverr-review-2026-is-it-worth-it-honest-verdict.html",
@@ -444,19 +444,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/hetzner-vs-supabase-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/hetzner-vs-supabase-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -467,6 +454,45 @@
       "trust_block"
     ],
     "path": "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/hostpapa-vs-bluehost-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hostpapa-vs-bluehost-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/hostpapa-vs-godaddy-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hostpapa-vs-godaddy-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/hostpapa-vs-siteground-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hostpapa-vs-siteground-which-is-better-in-2026",
     "premium": false
   },
   {
