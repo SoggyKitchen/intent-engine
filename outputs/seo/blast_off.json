@@ -1,11 +1,11 @@
 {
   "current_month": "July 2026",
-  "today": "2026-07-19",
+  "today": "2026-07-20",
   "titles_rewritten": 1,
-  "descs_rewritten": 29,
-  "dates_refreshed": 0,
+  "descs_rewritten": 20,
+  "dates_refreshed": 1142,
   "answers_added": 15,
-  "files_changed": 29,
+  "files_changed": 1157,
   "files_scanned": 1469,
   "title_examples": [
     {
@@ -36,18 +36,18 @@
       "after": "Updated July 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "aws-vs-supabase-which-is-better-in-2026.html",
-      "before": "July 2026. AWS (9.0/10) wins on scale + 200 services. Supabase (8.8/10) wins on dev speed + price. Real cost breakdown, side-by-side scoring, no paid placements. Verified July 2026.",
-      "after": "Updated July 2026. July 2026. AWS (9.0/10) wins on scale + 200 services. Supabase (8.8/10) wins on dev speed + price. Real cost breakdown, side-by-side scoring,\u2026"
-    },
-    {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated July 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated July 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {
-    "submitted": 29,
+    "submitted": 200,
     "status": 200
   }
 }
