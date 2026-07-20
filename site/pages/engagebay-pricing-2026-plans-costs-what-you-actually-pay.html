@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EngageBay Pricing 2026: Every Plan + Real Cost vs HubSpot [Free Plan Included]</title>
+<meta name="description" content="EngageBay pricing 2026: Free (250 contacts), Basic ~$13/user/mo, Growth ~$45/user/mo, Pro ~$100/user/mo (annual). All-in-one CRM + marketing + help desk. Real cost vs HubSpot breakdown.">
+<link rel="canonical" href="https://saaspare.org/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay">
+<link rel="stylesheet" href="/assets/saaspare-v2.css">
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
+<link rel="stylesheet" href="/assets/motion.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does EngageBay cost?","acceptedAnswer":{"@type":"Answer","text":"EngageBay All-in-One pricing starts at $0 (Free plan, 250 contacts). Paid plans start around $13/user/month (Basic, annual billing). Growth is around $45/user/month and Pro around $100/user/month (annual). All prices are per user — a 10-person team on Growth would pay around $450/month annually. Confirm current pricing at engagebay.com as rates can change."}},{"@type":"Question","name":"Does EngageBay have a free plan?","acceptedAnswer":{"@type":"Answer","text":"Yes. EngageBay's free plan includes up to 250 contacts, a basic CRM, 1 landing page, and email marketing (limited sends/month). It is a permanent free tier — not a trial — though it caps you at 250 contacts, which fills up quickly for growing teams."}},{"@type":"Question","name":"Is EngageBay cheaper than HubSpot?","acceptedAnswer":{"@type":"Answer","text":"Yes, significantly. HubSpot's Marketing Hub Professional starts at $800/month (3 seats), while EngageBay Growth with similar features starts around $45/user/month. For a 5-person team, EngageBay is typically 70-85% cheaper than an equivalent HubSpot paid plan. The trade-off is fewer integrations and a less mature ecosystem."}},{"@type":"Question","name":"What does EngageBay's All-in-One plan include?","acceptedAnswer":{"@type":"Answer","text":"EngageBay All-in-One bundles CRM (contact management, deals, tasks), Marketing (email campaigns, landing pages, automation, web pop-ups), and Service (help desk, live chat, ticketing) in a single subscription. You pay one price instead of buying separate sales, marketing, and support tools."}},{"@type":"Question","name":"What are the hidden costs in EngageBay?","acceptedAnswer":{"@type":"Answer","text":"The main hidden costs in EngageBay are: (1) email sending limits — high-volume sends may require add-ons; (2) monthly billing is significantly more expensive than annual; (3) advanced features like landing page A/B testing and web analytics are Growth/Pro only; (4) phone support is locked to Pro. Factor these in before choosing a plan."}}]}</script>
+<style>
+.pr-hero{padding:5rem 2rem 3rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.5rem;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse 100% 65% at 50% 0%,rgba(45,180,120,.14) 0%,transparent 65%);}
+.pr-hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:1.3rem;max-width:920px;width:100%;}
+.pr-crumbs{display:flex;align-items:center;gap:6px;font-size:.8rem;color:var(--ink-4);}
+.pr-crumbs a{color:var(--ink-4);transition:color .15s;}.pr-crumbs a:hover{color:var(--green);}
+.pr-crumbs .sep{color:var(--ink-5);}
+.jump-bar{position:sticky;top:58px;z-index:30;background:rgba(5,4,7,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--line-soft);padding:0 2rem;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none;}
+.jump-bar::-webkit-scrollbar{display:none;}
+.jchip{display:inline-flex;align-items:center;gap:6px;padding:16px 18px;font-size:.82rem;font-weight:700;color:var(--ink-4);white-space:nowrap;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;text-decoration:none;flex-shrink:0;}
+.jchip:hover{color:var(--ink);}
+.jchip-cta{margin-left:auto;padding:9px 18px;border-radius:var(--r-full);background:rgba(45,180,120,.12);border:1px solid rgba(45,180,120,.3);color:rgba(80,220,155,.9);font-size:.8rem;font-weight:700;white-space:nowrap;transition:all .15s;text-decoration:none;}
+.jchip-cta:hover{background:rgba(45,180,120,.22);}
+.pr-layout{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start;}
+.pr-main{display:flex;flex-direction:column;gap:40px;}
+.pr-side{position:sticky;top:106px;display:flex;flex-direction:column;gap:16px;}
+.side-panel{padding:24px;}
+.side-panel h4{font-size:.95rem;font-weight:800;color:var(--ink);margin-bottom:16px;letter-spacing:-.015em;}
+.pag-plan{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:14px;transition:background .15s;cursor:pointer;text-decoration:none;margin-bottom:4px;}
+.pag-plan:hover{background:rgba(255,255,255,.05);}
+.pag-plan.active{background:rgba(45,180,120,.09);border:1px solid rgba(45,180,120,.22);}
+.pag-plan-name{font-size:.82rem;font-weight:800;color:var(--ink);letter-spacing:-.01em;}
+.pag-plan-price{font-size:1.3rem;font-weight:900;color:var(--ink);letter-spacing:-.04em;line-height:1;}
+.pag-plan-price em{font-style:normal;font-size:.74rem;color:var(--ink-4);font-weight:500;}
+.pag-plan-badge{font-size:.72rem;color:var(--green);font-weight:700;margin-top:2px;}
+.plans-table-wrap{overflow-x:auto;border-radius:var(--r-xl);border:1px solid var(--line);}
+.plans-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.88rem;min-width:560px;}
+.plans-table thead th{padding:16px 18px;font-size:.7rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-4);border-bottom:1px solid var(--line);text-align:center;background:rgba(14,8,16,.95);}
+.plans-table thead th:first-child{text-align:left;min-width:150px;}
+.plans-table thead th.feat{color:rgba(80,220,155,.95);background:rgba(45,180,120,.06);}
+.plans-table tbody tr:hover{background:rgba(255,255,255,.025);}
+.plans-table tbody td{padding:14px 18px;border-bottom:1px solid var(--line-soft);color:var(--ink-3);text-align:center;vertical-align:middle;line-height:1.4;}
+.plans-table tbody td:first-child{text-align:left;color:var(--ink-2);font-weight:600;font-size:.86rem;}
+.plans-table tbody tr:last-child td{border-bottom:none;}
+.plans-table td.feat{background:rgba(45,180,120,.04);border-left:1px solid rgba(45,180,120,.1);border-right:1px solid rgba(45,180,120,.1);}
+.pt-check{color:var(--green);font-weight:700;}
+.pt-cross{color:rgba(255,255,255,.2);}
+.pt-partial{color:var(--amber);font-weight:600;}
+.pt-price{font-size:1.15rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;}
+.pt-price em{font-style:normal;font-size:.72rem;color:var(--ink-4);font-weight:400;}
+.hc-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid rgba(245,185,66,.1);}
+.hc-item:last-child{border-bottom:none;}
+.hc-icon{flex-shrink:0;width:36px;height:36px;border-radius:10px;background:rgba(245,185,66,.12);border:1px solid rgba(245,185,66,.22);display:flex;align-items:center;justify-content:center;font-size:.95rem;}
+.hc-name{font-size:.88rem;font-weight:700;color:var(--amber);}
+.hc-desc{font-size:.82rem;color:var(--ink-3);line-height:1.6;margin-top:3px;}
+.vs-table-wrap{overflow-x:auto;border-radius:var(--r-xl);border:1px solid var(--line);}
+.vs-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.86rem;min-width:500px;}
+.vs-table thead th{padding:14px 18px;font-size:.7rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-4);border-bottom:1px solid var(--line);text-align:left;background:rgba(14,8,16,.95);}
+.vs-table tbody tr:hover{background:rgba(255,255,255,.02);}
+.vs-table tbody td{padding:13px 18px;border-bottom:1px solid var(--line-soft);color:var(--ink-3);vertical-align:middle;line-height:1.4;}
+.vs-table tbody tr:last-child td{border-bottom:none;}
+.vs-table tbody td:first-child{color:var(--ink-2);font-weight:600;}
+.vs-table td.win{color:var(--green);font-weight:700;}
+.vs-table td.mid{color:var(--amber);font-weight:600;}
+.sec-hd{text-align:center;display:flex;flex-direction:column;align-items:center;gap:.8rem;margin-bottom:2.5rem;}
+.disclosure-box{padding:18px 22px;border-radius:var(--r-lg);background:rgba(255,255,255,.03);border:1px solid var(--line-soft);font-size:.8rem;color:var(--ink-4);line-height:1.6;}
+.disclosure-box a{color:var(--ink-4);text-decoration:underline;}
+@media(max-width:1040px){.pr-layout{grid-template-columns:1fr}.pr-side{position:static}}
+@media(max-width:560px){.pr-hero{padding:4rem 1.25rem 2rem}}
+</style>
+<style id="sp-nav-css">
+/* ── SaaSpare Universal Nav ───────────────────────────────────────────────── */
+:root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
+nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
+  display:flex;align-items:center;gap:4px;transition:all .4s ease;
+  background:transparent;border-bottom:none}
+nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.sp-nav-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
+.sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
+  animation:spMarkGlow 4s ease-in-out infinite}
+.sp-nav-mark .mark-top,.sp-nav-mark .mark-bot{transform-box:fill-box;transform-origin:center;
+  transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.sp-nav-logo:hover .mark-top{transform:translateX(26px)}
+.sp-nav-logo:hover .mark-bot{transform:translateX(-26px)}
+@keyframes spMarkGlow{
+  0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}
+  50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
+.sp-nav-wordmark{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.sp-nav-wordmark em{color:#e94560;font-style:normal}
+nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
+  border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
+nav#sp-nav .sp-nav-link:hover{color:#fff}
+nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
+nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
+.sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
+  padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
+  box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
+  transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
+.sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+.sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
+/* Remove old nav styles that cause bracket/black-bar glitches */
+.sp-bg{display:none!important}
+nav.sp-topnav{display:none!important}
+</style>
+<script>
+(function(){
+  window.addEventListener('scroll',function(){
+    var nav=document.getElementById('sp-nav');
+    if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
+  },{passive:true});
+
+  function highlightNav(){
+    var path=window.location.pathname;
+    var override=document.body.getAttribute('data-nav');
+    var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
+    var best=null,bestLen=0;
+    links.forEach(function(a){
+      var href=a.getAttribute('href');
+      if(!href||href==='/') return;
+      if(override){if(href===override){best=a;}return;}
+      if(path===href||path.indexOf(href.replace(/\/$/,'')+'/')===0){
+        if(href.length>bestLen){best=a;bestLen=href.length;}
+      }
+    });
+    if(best){best.classList.add('active');}
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',highlightNav);}else{highlightNav();}
+})();
+</script>
+</head>
+<body style="background:#050407;color:rgba(255,248,245,.88)">
+
+<nav id="sp-nav"></nav>
+
+<!-- HERO -->
+<section class="pr-hero">
+  <div class="pr-hero-inner">
+    <div class="pr-crumbs">
+      <a href="/">SaaSpare</a>
+      <span class="sep">›</span>
+      <a href="/pages/">CRM</a>
+      <span class="sep">›</span>
+      <span>EngageBay Pricing</span>
+    </div>
+    <div class="sp-badge sp-badge--green">Pricing Guide · July 2026</div>
+    <h1 class="display-lg" style="max-width:800px">EngageBay Pricing 2026: Every Plan, Real Costs &amp; HubSpot Comparison</h1>
+    <p class="lead" style="max-width:640px;color:var(--ink-3)">EngageBay bundles CRM, email marketing, and help desk at a fraction of HubSpot's price. Here's what each plan actually costs — and what you give up.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <a href="/go/engagebay" class="btn btn-primary" target="_blank" rel="noopener sponsored">Start Free on EngageBay →</a>
+      <a href="#plans" class="btn btn-ghost">See All Plans</a>
+    </div>
+    <p style="font-size:.75rem;color:var(--ink-5);margin-top:4px">Free plan available · No credit card required · Prices verified July 2026</p>
+  </div>
+</section>
+
+<!-- JUMP BAR -->
+<nav class="jump-bar" aria-label="Page sections">
+  <a href="#plans" class="jchip">Plans &amp; Pricing</a>
+  <a href="#hidden" class="jchip">Hidden Costs</a>
+  <a href="#vs-hubspot" class="jchip">vs HubSpot</a>
+  <a href="#faq" class="jchip">FAQ</a>
+  <a href="/go/engagebay" class="jchip-cta" target="_blank" rel="noopener sponsored">Try Free →</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="sp-container" style="padding-top:3rem;padding-bottom:5rem">
+  <div class="pr-layout">
+    <main class="pr-main">
+
+      <!-- QUICK VERDICT -->
+      <div class="sp-card" style="padding:32px">
+        <div class="sec-hd" style="margin-bottom:1.5rem;text-align:left;align-items:flex-start">
+          <h2 class="h3">The One-Paragraph Verdict</h2>
+        </div>
+        <p style="color:var(--ink-2);line-height:1.75;font-size:1rem">EngageBay is the most affordable all-in-one CRM + marketing + help desk platform for teams under 25 people. Its free tier supports up to 250 contacts with no time limit. Paid plans start around <strong>$13/user/month (annual)</strong> — roughly 70–85% cheaper than equivalent HubSpot tiers. The trade-off: fewer native integrations, a smaller ecosystem, and some enterprise features that HubSpot handles better. If you're a bootstrapped or early-stage team that needs CRM, email campaigns, and support ticketing without three separate tool subscriptions, EngageBay is worth a serious look.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px">
+          <div style="padding:20px;background:rgba(45,180,120,.07);border:1px solid rgba(45,180,120,.18);border-radius:14px;text-align:center">
+            <div style="font-size:1.8rem;font-weight:900;color:rgba(80,220,155,.9)">$0</div>
+            <div style="font-size:.78rem;color:var(--ink-4);margin-top:4px">Free plan, 250 contacts</div>
+          </div>
+          <div style="padding:20px;background:rgba(255,65,109,.07);border:1px solid rgba(255,65,109,.18);border-radius:14px;text-align:center">
+            <div style="font-size:1.8rem;font-weight:900;color:var(--pink-light)">~$13</div>
+            <div style="font-size:.78rem;color:var(--ink-4);margin-top:4px">Basic/user/mo (annual)</div>
+          </div>
+          <div style="padding:20px;background:rgba(255,185,0,.07);border:1px solid rgba(255,185,0,.18);border-radius:14px;text-align:center">
+            <div style="font-size:1.8rem;font-weight:900;color:var(--amber)">75%</div>
+            <div style="font-size:.78rem;color:var(--ink-4);margin-top:4px">Cheaper than HubSpot equiv.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLANS TABLE -->
+      <section id="plans">
+        <div class="sec-hd">
+          <h2 class="h2">EngageBay All-in-One Plans &amp; Pricing</h2>
+          <p class="text-muted">All prices per user/month. Annual billing shown — monthly billing is ~20% more. Prices verified July 2026; confirm current rates at engagebay.com.</p>
+        </div>
+        <div class="plans-table-wrap">
+          <table class="plans-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Free</th>
+                <th>Basic</th>
+                <th class="feat">Growth ★</th>
+                <th>Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Price (annual)</td>
+                <td><span class="pt-price">$0<em>/user/mo</em></span></td>
+                <td><span class="pt-price">~$13<em>/user/mo</em></span></td>
+                <td class="feat"><span class="pt-price">~$45<em>/user/mo</em></span></td>
+                <td><span class="pt-price">~$100<em>/user/mo</em></span></td>
+              </tr>
+              <tr>
+                <td>Price (monthly)</td>
+                <td>$0</td>
+                <td>~$15/user</td>
+                <td class="feat">~$50/user</td>
+                <td>~$120/user</td>
+              </tr>
+              <tr>
+                <td>Contact limit</td>
+                <td>250</td>
+                <td>1,000</td>
+                <td class="feat">25,000</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>Emails/month</td>
+                <td>1,000</td>
+                <td>3,000</td>
+                <td class="feat">Unlimited</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>CRM (contacts, deals, tasks)</td>
+                <td><span class="pt-check">✓</span></td>
+                <td><span class="pt-check">✓</span></td>
+                <td class="feat"><span class="pt-check">✓</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+              <tr>
+                <td>Email marketing</td>
+                <td><span class="pt-partial">Basic</span></td>
+                <td><span class="pt-check">✓</span></td>
+                <td class="feat"><span class="pt-check">✓</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+              <tr>
+                <td>Marketing automation</td>
+                <td><span class="pt-cross">—</span></td>
+                <td><span class="pt-cross">—</span></td>
+                <td class="feat"><span class="pt-check">✓</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+              <tr>
+                <td>Landing pages</td>
+                <td>1</td>
+                <td>5</td>
+                <td class="feat">Unlimited</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>Pop-ups &amp; forms</td>
+                <td><span class="pt-partial">Limited</span></td>
+                <td><span class="pt-check">✓</span></td>
+                <td class="feat"><span class="pt-check">✓</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+              <tr>
+                <td>Help desk &amp; ticketing</td>
+                <td><span class="pt-cross">—</span></td>
+                <td><span class="pt-check">✓</span></td>
+                <td class="feat"><span class="pt-check">✓</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+              <tr>
+                <td>Live chat</td>
+                <td><span class="pt-cross">—</span></td>
+                <td><span class="pt-check">✓</span></td>
+                <td class="feat"><span class="pt-check">✓</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+              <tr>
+                <td>Web analytics</td>
+                <td><span class="pt-cross">—</span></td>
+                <td><span class="pt-cross">—</span></td>
+                <td class="feat"><span class="pt-check">✓</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+              <tr>
+                <td>A/B testing</td>
+                <td><span class="pt-cross">—</span></td>
+                <td><span class="pt-cross">—</span></td>
+                <td class="feat"><span class="pt-partial">Limited</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+              <tr>
+                <td>Phone support</td>
+                <td><span class="pt-cross">—</span></td>
+                <td><span class="pt-cross">—</span></td>
+                <td class="feat"><span class="pt-cross">—</span></td>
+                <td><span class="pt-check">✓</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:.75rem;color:var(--ink-5);margin-top:12px;text-align:center">★ Growth is the recommended tier for most small businesses. Verify exact pricing at <a href="/go/engagebay" rel="noopener sponsored" style="color:var(--ink-5)">engagebay.com</a>.</p>
+      </section>
+
+      <!-- HIDDEN COSTS -->
+      <section id="hidden">
+        <div class="sec-hd">
+          <h2 class="h2">Hidden Costs &amp; Gotchas</h2>
+          <p class="text-muted">What to budget for beyond the base plan price.</p>
+        </div>
+        <div class="sp-card" style="padding:32px">
+          <div class="hc-item">
+            <div class="hc-icon">📈</div>
+            <div>
+              <div class="hc-name">Monthly billing premium</div>
+              <div class="hc-desc">Paying month-to-month costs ~20% more than annual. On a 5-person team on Growth, that's ~$45/month extra — $540/year. Commit to annual only if you're confident in the platform.</div>
+            </div>
+          </div>
+          <div class="hc-item">
+            <div class="hc-icon">📧</div>
+            <div>
+              <div class="hc-name">Email volume caps (Free &amp; Basic)</div>
+              <div class="hc-desc">Free plan caps at 1,000 emails/month; Basic at 3,000. If you're doing regular campaigns to even a 500-person list weekly, you'll hit Basic limits fast and need Growth ($45/user/mo).</div>
+            </div>
+          </div>
+          <div class="hc-item">
+            <div class="hc-icon">🔗</div>
+            <div>
+              <div class="hc-name">Integration gaps</div>
+              <div class="hc-desc">EngageBay's native integrations are fewer than HubSpot's. You may need Zapier ($20+/mo) to connect tools like Slack, Shopify, or Calendly — factor this into total cost of ownership.</div>
+            </div>
+          </div>
+          <div class="hc-item">
+            <div class="hc-icon">🆙</div>
+            <div>
+              <div class="hc-name">Contact-limit upgrades</div>
+              <div class="hc-desc">Basic caps at 1,000 contacts. Growing from 1,000 to 25,000 jumps you from Basic to Growth — a $32+/user/month increase. Plan your list-building timeline before committing to Basic.</div>
+            </div>
+          </div>
+          <div class="hc-item">
+            <div class="hc-icon">☎️</div>
+            <div>
+              <div class="hc-name">Phone support is Pro-only</div>
+              <div class="hc-desc">If your team relies on phone support, you need Pro (~$100/user/mo). Free, Basic, and Growth users get email and chat support only.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VS HUBSPOT -->
+      <section id="vs-hubspot">
+        <div class="sec-hd">
+          <h2 class="h2">EngageBay vs HubSpot: Cost Reality Check</h2>
+          <p class="text-muted">For a 5-person team needing CRM + email marketing + help desk.</p>
+        </div>
+        <div class="vs-table-wrap">
+          <table class="vs-table">
+            <thead>
+              <tr>
+                <th>Factor</th>
+                <th>EngageBay Growth</th>
+                <th>HubSpot Starter Suite</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly cost (5 users, annual)</td>
+                <td class="win">~$225/mo</td>
+                <td>~$400/mo</td>
+              </tr>
+              <tr>
+                <td>Annual cost (5 users)</td>
+                <td class="win">~$2,700/yr</td>
+                <td>~$4,800/yr</td>
+              </tr>
+              <tr>
+                <td>Free plan</td>
+                <td class="win">Yes (250 contacts)</td>
+                <td>Yes (limited features)</td>
+              </tr>
+              <tr>
+                <td>Marketing automation</td>
+                <td class="win">Included (Growth)</td>
+                <td>Starter (basic only)</td>
+              </tr>
+              <tr>
+                <td>Help desk / ticketing</td>
+                <td class="win">Included (Basic+)</td>
+                <td>Included (Starter)</td>
+              </tr>
+              <tr>
+                <td>Integrations ecosystem</td>
+                <td class="mid">Good (200+)</td>
+                <td>Excellent (1,000+)</td>
+              </tr>
+              <tr>
+                <td>Advanced reporting</td>
+                <td class="mid">Pro only</td>
+                <td>Professional ($800+/mo)</td>
+              </tr>
+              <tr>
+                <td>Community &amp; resources</td>
+                <td class="mid">Growing</td>
+                <td>Excellent (HubSpot Academy)</td>
+              </tr>
+              <tr>
+                <td>Best for</td>
+                <td class="win">SMBs, bootstrapped teams</td>
+                <td>Mid-market, scaling fast</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:.82rem;color:var(--ink-4);margin-top:16px;line-height:1.7"><strong style="color:var(--ink-3)">Bottom line:</strong> EngageBay saves ~$2,100/year for a 5-person team vs HubSpot Starter. If you're under 25 employees and don't need deep Salesforce-level integrations or advanced enterprise reporting, EngageBay Growth likely covers everything you need at 40–50% the cost.</p>
+      </section>
+
+      <!-- WHO IT'S FOR -->
+      <div class="sp-card" style="padding:32px">
+        <h2 class="h3" style="margin-bottom:1.25rem">Which EngageBay Plan Is Right for You?</h2>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:12px;background:rgba(45,180,120,.06);border:1px solid rgba(45,180,120,.15)">
+            <div style="font-size:1.3rem">🟢</div>
+            <div>
+              <div style="font-weight:700;color:var(--ink);margin-bottom:4px">Free → if you're just starting</div>
+              <div style="font-size:.85rem;color:var(--ink-3)">Under 250 contacts and want to test EngageBay before committing. No credit card needed. Expect to outgrow it within 3–6 months of active outreach.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:12px;background:rgba(255,65,109,.05);border:1px solid rgba(255,65,109,.12)">
+            <div style="font-size:1.3rem">🔵</div>
+            <div>
+              <div style="font-weight:700;color:var(--ink);margin-bottom:4px">Basic → 1–3 person team, &lt;1,000 contacts</div>
+              <div style="font-size:.85rem;color:var(--ink-3)">Solo founders or tiny teams doing manual outreach. At ~$13/user/mo it's a steal — you get CRM + help desk + email. Watch the 1,000-contact ceiling.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:12px;background:rgba(80,220,155,.05);border:1px solid rgba(80,220,155,.12)">
+            <div style="font-size:1.3rem">⭐</div>
+            <div>
+              <div style="font-weight:700;color:var(--ink);margin-bottom:4px">Growth → 3–20 person team (best value)</div>
+              <div style="font-size:.85rem;color:var(--ink-3)">Marketing automation, unlimited emails, web analytics, 25K contacts — this is the sweet spot. Most growing SMBs live here for 2–4 years.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:12px;background:rgba(245,185,66,.05);border:1px solid rgba(245,185,66,.12)">
+            <div style="font-size:1.3rem">🏢</div>
+            <div>
+              <div style="font-weight:700;color:var(--ink);margin-bottom:4px">Pro → 20+ person team, heavy automation</div>
+              <div style="font-size:.85rem;color:var(--ink-3)">Unlimited contacts, advanced A/B testing, phone support. If you're at this scale, also seriously evaluate HubSpot Professional — the price gap narrows and HubSpot's ecosystem becomes valuable.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="sec-hd">
+          <h2 class="h2">Frequently Asked Questions</h2>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div class="sp-card" style="padding:24px 28px">
+            <h3 class="h4" style="margin-bottom:10px">How much does EngageBay cost?</h3>
+            <p style="color:var(--ink-3);line-height:1.7;font-size:.9rem">EngageBay All-in-One starts at $0 (Free, 250 contacts). Paid plans run approximately $13/user/month (Basic), $45/user/month (Growth), and $100/user/month (Pro) on annual billing. Monthly billing adds ~20%. All prices are per user — verify current rates at engagebay.com as they can change.</p>
+          </div>
+          <div class="sp-card" style="padding:24px 28px">
+            <h3 class="h4" style="margin-bottom:10px">Does EngageBay have a free plan?</h3>
+            <p style="color:var(--ink-3);line-height:1.7;font-size:.9rem">Yes. The free plan supports up to 250 contacts with basic CRM, 1 landing page, and limited email sends. It is permanent — not a trial — but the 250-contact ceiling is very restrictive for any team doing active outreach.</p>
+          </div>
+          <div class="sp-card" style="padding:24px 28px">
+            <h3 class="h4" style="margin-bottom:10px">Is EngageBay cheaper than HubSpot?</h3>
+            <p style="color:var(--ink-3);line-height:1.7;font-size:.9rem">Yes — typically 70–85% cheaper for equivalent functionality. A 5-person team on EngageBay Growth pays roughly $2,700/year vs. $4,800+/year for HubSpot Starter Suite. The trade-off is fewer integrations and less enterprise polish.</p>
+          </div>
+          <div class="sp-card" style="padding:24px 28px">
+            <h3 class="h4" style="margin-bottom:10px">What does EngageBay All-in-One include?</h3>
+            <p style="color:var(--ink-3);line-height:1.7;font-size:.9rem">EngageBay bundles three products: Marketing (email campaigns, automation, landing pages, forms), CRM (contacts, deals, pipelines, tasks), and Service Bay (help desk, ticketing, live chat). Paid plans include all three in one subscription.</p>
+          </div>
+          <div class="sp-card" style="padding:24px 28px">
+            <h3 class="h4" style="margin-bottom:10px">Can I upgrade or downgrade EngageBay plans?</h3>
+            <p style="color:var(--ink-3);line-height:1.7;font-size:.9rem">Yes. EngageBay allows plan changes at any time. Upgrades are prorated. Downgrades typically apply at the next billing cycle. Annual plans may have refund restrictions — check with EngageBay support before committing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <div class="sp-card" style="padding:40px;text-align:center;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(45,180,120,.12),transparent 65%)">
+        <h2 class="h3" style="margin-bottom:12px">Start Free — No Credit Card Needed</h2>
+        <p style="color:var(--ink-3);max-width:480px;margin:0 auto 24px;line-height:1.7">EngageBay's free plan covers 250 contacts with real CRM and email features. Best way to decide if it fits your team before paying anything.</p>
+        <a href="/go/engagebay" class="btn btn-primary" target="_blank" rel="noopener sponsored">Try EngageBay Free →</a>
+        <p class="disclosure-text" style="margin-top:14px;font-size:.74rem;color:var(--ink-5)">Affiliate disclosure: SaaSpare may earn a commission if you purchase via our link — at no extra cost to you. <a href="/affiliate-disclosure" style="color:var(--ink-5)">Learn more</a>.</p>
+      </div>
+
+      <!-- DISCLOSURE -->
+      <div class="disclosure-box">
+        <strong>Affiliate disclosure:</strong> SaaSpare.org participates in affiliate programs. If you click a link marked "sponsored" or use our referral links and purchase a product, we may earn a commission. This does not affect our editorial independence — we never recommend tools we wouldn't use ourselves. <a href="/affiliate-disclosure">Full disclosure policy →</a>
+      </div>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="pr-side">
+      <div class="sp-card side-panel">
+        <h4>Pricing at a Glance</h4>
+        <a class="pag-plan" href="#plans">
+          <span class="pag-plan-name">Free</span>
+          <span class="pag-plan-price">$0<em>/user/mo</em></span>
+          <span class="pag-plan-badge">250 contacts</span>
+        </a>
+        <a class="pag-plan" href="#plans">
+          <span class="pag-plan-name">Basic</span>
+          <span class="pag-plan-price">~$13<em>/user/mo</em></span>
+          <span class="pag-plan-badge">1,000 contacts</span>
+        </a>
+        <a class="pag-plan active" href="#plans">
+          <span class="pag-plan-name">Growth ★ Best Value</span>
+          <span class="pag-plan-price">~$45<em>/user/mo</em></span>
+          <span class="pag-plan-badge">25,000 contacts</span>
+        </a>
+        <a class="pag-plan" href="#plans">
+          <span class="pag-plan-name">Pro</span>
+          <span class="pag-plan-price">~$100<em>/user/mo</em></span>
+          <span class="pag-plan-badge">Unlimited contacts</span>
+        </a>
+        <div style="height:1px;background:var(--line-soft);margin:12px 0"></div>
+        <a href="/go/engagebay" class="btn btn-primary" style="width:100%;text-align:center" target="_blank" rel="noopener sponsored">Start Free →</a>
+        <p style="font-size:.72rem;color:var(--ink-5);text-align:center;margin-top:8px">Annual billing · No credit card for free</p>
+      </div>
+      <div class="sp-card side-panel">
+        <h4>Quick Facts</h4>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:.84rem">
+          <div style="display:flex;justify-content:space-between"><span style="color:var(--ink-4)">Free plan</span><span style="color:var(--green);font-weight:700">Yes (250 contacts)</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:var(--ink-4)">Pricing model</span><span style="color:var(--ink-2)">Per user</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:var(--ink-4)">Annual discount</span><span style="color:var(--green);font-weight:700">~15-20% off</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:var(--ink-4)">All-in-one</span><span style="color:var(--green);font-weight:700">CRM + Marketing + Service</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:var(--ink-4)">vs HubSpot</span><span style="color:var(--amber);font-weight:700">70-85% cheaper</span></div>
+        </div>
+      </div>
+      <div class="sp-card side-panel">
+        <h4>Compare EngageBay</h4>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <a href="/pages/getresponse-vs-hubspot-which-is-better-in-2026" style="font-size:.84rem;color:var(--pink-light);display:block;padding:6px 0;border-bottom:1px solid var(--line-soft);text-decoration:none">GetResponse vs HubSpot →</a>
+          <a href="/pages/hubspot-vs-getresponse-which-is-better-in-2026" style="font-size:.84rem;color:var(--pink-light);display:block;padding:6px 0;border-bottom:1px solid var(--line-soft);text-decoration:none">HubSpot vs GetResponse →</a>
+          <a href="/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay" style="font-size:.84rem;color:var(--pink-light);display:block;padding:6px 0;text-decoration:none">GetResponse Pricing →</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="sp-footer">
+  <div class="sp-container">
+    <p style="font-size:.8rem;color:var(--ink-5)">Written by <a href="/authors/kaylan-von-papen" style="color:var(--ink-4)">Kaylan von Papen</a> · Last verified July 2026 · <a href="/affiliate-disclosure" style="color:var(--ink-4)">Affiliate disclosure</a> · <a href="/editorial-policy" style="color:var(--ink-4)">Editorial policy</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
