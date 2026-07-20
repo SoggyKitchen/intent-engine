@@ -236,6 +236,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/constant-contact-vs-mailchimp-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/constant-contact-vs-mailchimp-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/contabo-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -340,7 +353,7 @@
     "premium": true
   },
   {
-    "file": "site/pages/elementor-vs-squarespace-which-is-better-in-2026.html",
+    "file": "site/pages/elementor-vs-wpbakery-which-is-better-in-2026.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -349,7 +362,7 @@
       "schema_safety",
       "trust_block"
     ],
-    "path": "/pages/elementor-vs-squarespace-which-is-better-in-2026",
+    "path": "/pages/elementor-vs-wpbakery-which-is-better-in-2026",
     "premium": false
   },
   {
@@ -454,45 +467,6 @@
       "trust_block"
     ],
     "path": "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
-    "premium": false
-  },
-  {
-    "file": "site/pages/hostpapa-vs-bluehost-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/hostpapa-vs-bluehost-which-is-better-in-2026",
-    "premium": false
-  },
-  {
-    "file": "site/pages/hostpapa-vs-godaddy-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/hostpapa-vs-godaddy-which-is-better-in-2026",
-    "premium": false
-  },
-  {
-    "file": "site/pages/hostpapa-vs-siteground-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/hostpapa-vs-siteground-which-is-better-in-2026",
     "premium": false
   },
   {
