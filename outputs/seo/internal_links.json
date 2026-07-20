@@ -1,9 +1,9 @@
 {
-  "total_pages": 1452,
-  "updated": 1449,
+  "total_pages": 1453,
+  "updated": 1450,
   "skipped": 3,
-  "orphans_before": 56,
-  "orphans_after": 53,
+  "orphans_before": 57,
+  "orphans_after": 43,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/asana-vs-basecamp-which-is-better-in-2026",
-        "/pages/ahrefs-vs-clearscope-which-is-better-in-2026"
+        "/pages/tapfiliate-vs-leaddyno-which-is-better-in-2026",
+        "/pages/hetzner-vs-supabase-which-is-better-in-2026"
       ]
     },
     {
@@ -20,8 +20,8 @@
       "picks": [
         "/pages/dashlane-vs-sticky-password-which-is-better-in-2026",
         "/pages/1password-vs-keeper-which-is-better-in-2026",
-        "/pages/tresorit-vs-1password-business-which-is-better-in-2026",
-        "/pages/contabo-vs-hetzner-which-is-better-in-2026",
+        "/pages/okta-vs-tresorit-which-is-better-in-2026",
+        "/pages/impact-com-vs-refersion-which-is-better-in-2026",
         "/pages/semrush-vs-screaming-frog-which-is-better-in-2026"
       ]
     },
@@ -31,8 +31,8 @@
         "/pages/nordlayer-vs-tresorit-which-is-better-in-2026",
         "/pages/does-tresorit-have-a-free-plan-2026-full-breakdown",
         "/pages/bitwarden-vs-sticky-password-which-is-better-in-2026",
-        "/pages/hubspot-vs-getresponse-which-is-better-in-2026",
-        "/pages/keeper-vs-nordpass-which-is-better-in-2026"
+        "/pages/whereby-vs-around-which-is-better-in-2026",
+        "/pages/keeper-vs-password-boss-which-is-better-in-2026"
       ]
     }
   ]

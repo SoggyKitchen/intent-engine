@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-20T06:26:33+00:00",
+  "generated_at_utc": "2026-07-20T21:19:59+00:00",
   "mode": "apply",
-  "pages_flagged": 46,
+  "pages_flagged": 47,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -814,6 +814,22 @@
           "label": "money_back_guarantee",
           "snippet": "45-day money-back guarantee",
           "context": "<p>Free plan available. Pro from $59/yr for 1 site. 10,000+ templates, 45-day money-back guarantee.</p> <a rel=\"sponsored\" href=\"/go/elementor\" class=\"sp-btn sp-btn-pri"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/protonvpn-vs-ipvanish-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "for unlimited simultaneous connections at a lower advertised price. Both offer money-back guarantees.</p> </div> <div class=\"vs-scorebar reveal-up\"> <h3"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "icing</td><td>Promo price may jump on renewal</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td>30 days</td></tr> <tr><td>Devices inclu"
         }
       ],
       "trust_state_bumped": false
