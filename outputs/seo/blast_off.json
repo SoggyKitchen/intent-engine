@@ -1,11 +1,11 @@
 {
   "current_month": "July 2026",
-  "today": "2026-07-20",
-  "titles_rewritten": 3,
-  "descs_rewritten": 29,
-  "dates_refreshed": 0,
+  "today": "2026-07-21",
+  "titles_rewritten": 2,
+  "descs_rewritten": 21,
+  "dates_refreshed": 1143,
   "answers_added": 16,
-  "files_changed": 29,
+  "files_changed": 1159,
   "files_scanned": 1471,
   "title_examples": [
     {
@@ -14,14 +14,9 @@
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
     },
     {
-      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "Datadog Discount 2026: Save 25-30% on Annual Plans [No Promo Code Needed + Free Trial]",
-      "after": "Datadog Coupon 2026 (Verified July 2026) \u2014 Real Working Codes"
-    },
-    {
       "file": "engagebay-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "EngageBay Pricing 2026: Every Plan + Real Cost vs HubSpot [Free Plan Included]",
-      "after": "EngageBay Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
+      "before": "Engagebay Pricing 2026: What You Actually Pay \u2014 SaaSpare",
+      "after": "Engagebay Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
@@ -46,18 +41,18 @@
       "after": "Updated July 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-devops-configuration-drift-detection-tools-in-2025.html",
-      "before": "Best drift detection tools 2026: Puppet, Ansible, Terraform Cloud, Pulumi, AWS Config & Spacelift \u2014 ranked by accuracy, cost, and cloud-native fit. Expert picks with real pricing.",
-      "after": "Updated July 2026. Best drift detection tools 2026: Puppet, Ansible, Terraform Cloud, Pulumi, AWS Config & Spacelift \u2014 ranked by accuracy, cost, and cloud-native\u2026"
-    },
-    {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated July 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated July 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {
-    "submitted": 29,
+    "submitted": 200,
     "status": 200
   }
 }
