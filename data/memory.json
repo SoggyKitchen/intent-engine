@@ -227,15 +227,15 @@
         "SpamGuard Awin invitation (Jul 13) still awaiting owner decision"
       ],
       "upgraded": [
-        "getresponse-pricing-2026-plans-costs-what-you-actually-pay.html — replaced boilerplate with real content: actual plan names (Email Marketing/Marketing Automation/Ecommerce Marketing), real pricing (~$19/$59/$119/mo at 1K contacts annual), contact scaling trap explanation, transactional email exclusion, real alternatives (Mailchimp/ActiveCampaign/Brevo/AWeber) with working hrefs, 5 specific FAQ answers (replaced 'check their website' boilerplate), updated verification date to Jul 15 2026"
+        "getresponse-pricing-2026-plans-costs-what-you-actually-pay.html \u2014 replaced boilerplate with real content: actual plan names (Email Marketing/Marketing Automation/Ecommerce Marketing), real pricing (~$19/$59/$119/mo at 1K contacts annual), contact scaling trap explanation, transactional email exclusion, real alternatives (Mailchimp/ActiveCampaign/Brevo/AWeber) with working hrefs, 5 specific FAQ answers (replaced 'check their website' boilerplate), updated verification date to Jul 15 2026"
       ],
-      "revenue_leaks": "None found — all vendor links use /go/ tracked routes",
+      "revenue_leaks": "None found \u2014 all vendor links use /go/ tracked routes",
       "tests": "93/93 passed",
       "next_human_actions": [
         "LOG INTO publisher.rakutenadvertising.com to get Educative Rakuten tracking link, update /go/educative in site/_redirects",
-        "DECIDE on SpamGuard Awin invitation — log into Awin (publisher 2917137) to accept or decline",
+        "DECIDE on SpamGuard Awin invitation \u2014 log into Awin (publisher 2917137) to accept or decline",
         "LOG INTO app.cj.com to get deep links for: GetResponse (ID 3142111), ProtonVPN (ID 5227916), Elementor (ID 6798066), AWeber (ID 5111249), Parallels (ID 2005415)",
-        "NOTE: /go/getresponse in _redirects already uses tkqlhce.com CJ tracking link (ACTIVE) — verify commission is tracking in CJ dashboard"
+        "NOTE: /go/getresponse in _redirects already uses tkqlhce.com CJ tracking link (ACTIVE) \u2014 verify commission is tracking in CJ dashboard"
       ]
     }
   ],
@@ -666,6 +666,32 @@
         "MONITOR: FreshBooks PartnerStack application (sent 2026-06-09) - expect decision within 7-14 days",
         "MONITOR: Semrush vs Moz page content upgrade - check GSC position in 21 days (target: climb from pos 68 to <30)"
       ]
+    },
+    {
+      "date": "2026-07-21",
+      "session": "revenue-hunter",
+      "gmail_findings": {
+        "awin": "SpamGuard (Awin ID 127497) APPROVED 2026-07-20 \u2014 /go/spamguard LIVE with Awin tracking link (awinmid=127497, awinaffid=2917137). EngageBay CRM invited 2026-07-20 (30% recurring, accept via Awin portal). FreshBooks permanently rejected.",
+        "impact": "Wix (Impact) sent 'reapply if still interested' message 2026-07-19 \u2014 NOT an approval. Semrush contract terms changed 2026-07-18.",
+        "partnerstack": "PERMANENTLY BLOCKED (confirmed). No new PartnerStack approvals.",
+        "xero_brevo_hotjar": "No emails from Xero, Brevo, Hotjar, or Constant Contact."
+      },
+      "activated": "/go/spamguard \u2192 https://www.awin1.com/cread.php?awinmid=127497&awinaffid=2917137&ued=https%3A%2F%2Fspamguardapp.com%2F",
+      "ctr_fixes": [
+        "ramp-pricing: 1687 impr pos 10.2 \u2014 title shortened to 73 chars with July signal",
+        "mixpanel-pricing: 742 impr pos 13.7 \u2014 price anchors (20M events, $28/mo) in title",
+        "notion-free-plan: 557 impr pos 9.4 \u2014 title cut from 83\u219265 chars",
+        "sentry-free-plan: 528 impr pos 7.5 \u2014 5K/7-day/1-seat specifics in title",
+        "loom-free-plan: 255 impr pos 10.9 \u2014 title cut from 78\u219264 chars",
+        "nordlayer-pricing: 270 impr pos 19.0 \u2014 per-user prices in title"
+      ],
+      "new_page": "elementor-vs-beaver-builder-which-is-better-in-2026 (Elementor wins 9.0 vs Beaver Builder 8.2, /go/elementor CJ 45% commission)",
+      "escalate_to_owner": [
+        "EngageBay CRM invited on Awin \u2014 accept at ui.awin.com to unlock affiliate tracking (30% recurring commission)",
+        "Wix asked SaaSpare to reapply on Impact \u2014 worth reapplying at app.impact.com",
+        "SpamGuard is now live but verify the /go/spamguard link generates correctly in Awin portal (Advertiser 127497)"
+      ],
+      "commit": "4f5a81d1"
     }
   ]
 }
