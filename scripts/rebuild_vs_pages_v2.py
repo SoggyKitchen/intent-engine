@@ -33,6 +33,7 @@ TOOLS: dict[str, tuple] = {
     "sucuri":          ("Sucuri",            "Website firewall, CDN, malware removal",            "Website Security",   "$199/yr",   "/go/sucuri",        "2f9e4f", "sucuri",           8.9, "No free plan"),
     "wordfence":       ("Wordfence",         "WordPress security plugin, free plan",              "Website Security",   "Free",      None,                "e25050", "wordpress",        8.7, "Free plan available"),
     "cloudflare":      ("Cloudflare",        "CDN, DDoS protection, free plan",                   "Website Security",   "Free",      None,                "f48120", "cloudflare",       9.0, "Free plan"),
+    "sitelock":        ("SiteLock",          "GoDaddy-owned malware scanner, website security",   "Website Security",   "$14.99/mo", None,                "00a0d2", "sitelock",         7.8, "No free plan"),
     # Password managers
     "nordpass":        ("NordPass",          "XChaCha20 encryption, zero-knowledge",              "Password Manager",   "$1.99/mo",  "/go/nordpass",      "4687ff", "nordpass",         9.0, "Free (1 device)"),
     "1password":       ("1Password",         "Travel Mode, Apple ecosystem, families",            "Password Manager",   "$2.99/mo",  "/go/1password",     "0094f5", "1password",        9.2, "14-day trial"),
