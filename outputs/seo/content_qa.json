@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-21T21:20:24.014408+00:00",
+  "generated_at": "2026-07-21T21:51:32.379707+00:00",
   "stats": {
-    "sitemap_urls": 1482,
-    "sitemap_with_lastmod": 1482,
-    "total_pages": 1532,
-    "indexable_pages": 1520,
-    "title_over_70": 133,
-    "desc_over_165": 25,
-    "money_pages": 1251,
+    "sitemap_urls": 1483,
+    "sitemap_with_lastmod": 1483,
+    "total_pages": 1533,
+    "indexable_pages": 1521,
+    "title_over_70": 132,
+    "desc_over_165": 26,
+    "money_pages": 1252,
     "soft": 15
   },
   "hard_failures": [],

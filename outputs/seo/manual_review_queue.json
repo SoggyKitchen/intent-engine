@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-21T21:20:09+00:00",
+  "generated_at_utc": "2026-07-21T21:51:11+00:00",
   "mode": "apply",
-  "pages_flagged": 30,
+  "pages_flagged": 31,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -548,6 +548,17 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"background:rgba(255,2"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/elementor-vs-beaver-builder-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "r free?</div><div class=\"faq-a\">Elementor: Free tier available. Beaver Builder: 30-day money-back guarantee. We recommend trialling both before committing.</div></div><div class=\"faq-item"
         }
       ],
       "trust_state_bumped": false
