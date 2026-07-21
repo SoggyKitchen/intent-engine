@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-07-20T06:50:49+00:00
-Mode: `apply-safe`
+Generated: 2026-07-21T06:05:46+00:00
+Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.57/100**
+- Overall SaaSpare Health Score: **94.54/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.86/20
+- Technical SEO: 19.85/20
 - Content usefulness: 19.43/20
-- Trust/E-E-A-T: 18.78/20
+- Trust/E-E-A-T: 18.76/20
 - Internal linking: 14.88/15
 - Schema/indexability: 7.68/10
 - Conversion/revenue: 8.95/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1501
-- Healthy pages (85+): 1450
+- Pages scanned: 1503
+- Healthy pages (85+): 1448
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 85
+- Safe fixes applied this run: 0
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -45,31 +45,30 @@ Mode: `apply-safe`
 - `/shortlist` (62.87/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page, title_length_outside_target
 - `/contact` (64.76/100): title_length_outside_target
 - `/` (77.5/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_related_pages
+- `/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay` (77.77/100): broken_internal_link, images_missing_alt, missing_methodology, missing_related_pages, thin_buyer_page
 - `/deal-radar` (68.39/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/newsletter` (71.25/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/pages/fiverr-pro-worth-it-2026-honest-review` (82.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/surfshark-vs-cyberghost-which-is-better-in-2026` (82.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (83.83/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (84.35/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (84.42/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/accessibility` (75.67/100): meta_length_outside_target
-- `/pages/best-encrypted-cloud-storage-2026-business` (75.81/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/best-encrypted-cloud-storage-2026-business` (75.78/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
-- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.31/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (86.91/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.99/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/request-a-comparison` (79.34/100): title_length_outside_target
+- `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.95/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/request-a-comparison` (79.38/100): title_length_outside_target
 - `/privacy` (79.64/100): meta_length_outside_target
 - `/pages/how-saaspare-ranks-tools` (80.56/100): title_length_outside_target
-- `/pages/saas-glossary` (81.0/100): title_length_outside_target
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.39): CTA=True, affiliateLinks=5, disclosure=True
-- `/pages/best-saas-deals-this-week-2026` (coupon, score 83.67): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 91.12): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/best-saas-deals-this-week-2026` (coupon, score 83.69): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.69): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.7): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.72): CTA=True, affiliateLinks=1, disclosure=True
@@ -86,9 +85,10 @@ Mode: `apply-safe`
 - `/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.03): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.04): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.05): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/clearscope-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 92.05): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/vultr-coupon-2026-discount-codes-promo` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.07): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/contabo-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/getresponse-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/ramp-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/pandadoc-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
