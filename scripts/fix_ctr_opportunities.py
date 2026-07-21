@@ -47,7 +47,7 @@ def fix_ramp_page():
     # 1. Update title to include "Pricing Changes"
     html = re.sub(
         r'<title>Ramp Pricing 2026[^<]*</title>',
-        '<title>Ramp Pricing Changes 2026: Every Change Tracked (June 2026 Update)</title>',
+        '<title>Ramp Pricing 2026 [July Update]: Free Card, $15/user Plus — Full Breakdown</title>',
         html
     )
     # Update og:title
@@ -113,7 +113,7 @@ def fix_nordlayer_page():
 
     html = re.sub(
         r'<title>NordLayer Pricing 2026[^<]*</title>',
-        '<title>NordLayer Price 2026: All Plans, Per-User Cost &amp; What You Pay</title>',
+        '<title>NordLayer Pricing 2026: $9 Lite, $11 Core, $14 Business [July Compared]</title>',
         html
     )
     html = re.sub(
@@ -176,7 +176,7 @@ def fix_mixpanel_page():
 
     html = re.sub(
         r'<title>[^<]*[Mm]ixpanel[^<]*</title>',
-        '<title>Mixpanel Pricing July 2026: Free (20M Events) vs Growth ($28/mo) — Full Breakdown</title>',
+        '<title>Mixpanel Pricing 2026: Free (20M Events) vs $28/mo Growth [July Verified]</title>',
         html
     )
     html = re.sub(
