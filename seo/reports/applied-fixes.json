@@ -144,6 +144,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/best-devops-configuration-drift-detection-tools-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-devops-configuration-drift-detection-tools-in-2025",
+    "premium": false
+  },
+  {
     "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
     "fixes": [
       "canonical",
@@ -234,19 +247,6 @@
     ],
     "path": "/pages/clickup-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/constant-contact-vs-mailchimp-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/constant-contact-vs-mailchimp-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/contabo-review-2026-is-it-worth-it-honest-verdict.html",
@@ -353,19 +353,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/elementor-vs-wpbakery-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/elementor-vs-wpbakery-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -377,6 +364,19 @@
     ],
     "path": "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
   },
   {
     "file": "site/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict.html",
@@ -780,6 +780,19 @@
     ],
     "path": "/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/protonvpn-vs-ipvanish-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/protonvpn-vs-ipvanish-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/ramp-review-2026-is-it-worth-it-honest-verdict.html",
