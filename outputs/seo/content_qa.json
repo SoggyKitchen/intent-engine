@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-07-21T06:32:11.983580+00:00",
+  "generated_at": "2026-07-21T21:20:24.014408+00:00",
   "stats": {
-    "sitemap_urls": 1481,
-    "sitemap_with_lastmod": 1481,
-    "total_pages": 1531,
-    "indexable_pages": 1519,
-    "title_over_70": 154,
-    "desc_over_165": 35,
-    "money_pages": 1250,
-    "soft": 35
+    "sitemap_urls": 1482,
+    "sitemap_with_lastmod": 1482,
+    "total_pages": 1532,
+    "indexable_pages": 1520,
+    "title_over_70": 133,
+    "desc_over_165": 25,
+    "money_pages": 1251,
+    "soft": 15
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html: /go/ link without rel attribute: /go/salesforce",
-    "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html: /go/ link without rel attribute: /go/salesforce",
-    "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html: /go/ link without rel attribute: /go/salesforce",
-    "site/pages/salesforce-vs-microsoft-dynamics-365-which-is-better-in-2026.html: /go/ link without rel attribute: /go/salesforce",
     "site/pages/thanks.html: title <30 chars (29)",
     "site/pages/v3-preview-404.html: title <30 chars (25)",
     "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/activecampaign",
@@ -30,23 +26,7 @@
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/beaver-builder",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/seedprod",
     "site/pages/v3-preview-contact.html: title <30 chars (27)",
-    "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html: /go/ link without rel attribute: /go/semrush",
-    "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html: /go/ link without rel attribute: /go/semrush",
-    "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html: /go/ link without rel attribute: /go/semrush",
-    "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html: /go/ link without rel attribute: /go/semrush",
-    "site/pages/v3-preview-privacy.html: title <30 chars (25)",
-    "site/pages/rippling-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/rippling",
-    "site/pages/rippling-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/rippling",
-    "site/pages/rippling-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/rippling",
-    "site/pages/rippling-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/rippling",
-    "site/pages/gusto-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/gusto",
-    "site/pages/gusto-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/gusto",
-    "site/pages/gusto-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/gusto",
-    "site/pages/gusto-vs-adp-which-is-better-in-2026.html: /go/ link without rel attribute: /go/gusto",
-    "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
-    "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
-    "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
-    "site/pages/elementor-vs-gutenberg-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor"
+    "site/pages/v3-preview-privacy.html: title <30 chars (25)"
   ],
-  "soft_issues_total": 35
+  "soft_issues_total": 15
 }

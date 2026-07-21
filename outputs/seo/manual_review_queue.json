@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-21T06:06:21+00:00",
+  "generated_at_utc": "2026-07-21T21:20:09+00:00",
   "mode": "apply",
-  "pages_flagged": 47,
+  "pages_flagged": 30,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -56,32 +56,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "ly a free trial. ProtonVPN free doesn't unblock Netflix. The honest answer: the 30-day money-back guarantee on NordVPN ($3.39/month) is the best way to access Netflix free legally.</p></d"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordvpn-vs-ipvanish-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "unlimited simultaneous connections or a bundled SOCKS5 proxy. Both come with a 30-day money-back guarantee.</p> </div> <!-- HEAD-TO-HEAD SCORE BARS --> <div clas"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "tocol, and extras like Threat Protection and Meshnet. Starts at $3.39/mo with a 30-day money-back guarantee. Up to 10 devices covered.</li> <li><strong>Choose IPVanish</stro"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "n. IPVanish starts at around $2.99/mo on promotional annual plans. Both offer a 30-day money-back guarantee. Always verify renewal pricing on each vendor's site \u2014 introductory rates are t"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<div class=\"faq-a\">Neither offers a permanently free tier. Both offer a 30-day money-back guarantee on their standard plans \u2014 NordVPN on all plans, IPVanish on annual and longer p"
         }
       ],
       "trust_state_bumped": false
@@ -186,17 +160,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/hostpapa-vs-siteground-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "sla_guarantee",
-          "snippet": "99.9% uptime guarantee",
-          "context": "uded</li> <li>Website builder included</li> <li>99.9% uptime guarantee</li> <li>24/7 phone, chat, and email support</li>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/best-ecommerce-platform-2026.html",
       "claims": [
         {
@@ -208,101 +171,6 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime SLA",
           "context": "nt-size:.92rem;line-height:1.65;margin:0 0 .5rem\">Enterprise-grade Shopify with 99.99% uptime SLA, dedicated account management, unlimited staff accounts, customisable checkout,"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/surfshark-vs-cyberghost-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "45-day money-back guarantee",
-          "context": "CyberGhost caps at 7. CyberGhost has more raw servers (9,700+ vs 3,200+) and a 45-day money-back guarantee on longer plans. If device count matters, Surfshark wins clearly. If you want t"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "vices</td><td class=\"win\">Unlimited</td><td>7</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td class=\"win\">45 days (long plans)</td></tr>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": ">Can I try Surfshark and CyberGhost for free?</h3><div class=\"faq-a\">Surfshark: 30-day money-back guarantee on all plans. CyberGhost: 45-day money-back on 6-month+ plans (14 days on month"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/protonvpn-vs-private-internet-access-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "s)</td><td>Unlimited simultaneous connections</td></tr> <tr><td>Money-back guarantee</td><td>30-day</td><td>30-day</td></tr> <tr><td>Score</td><td c"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "with no data cap. Starting at $0 (free) or $4.99/mo (Plus, 10 devices, annual). 30-day money-back guarantee on paid plans.</li> <li><strong>Choose PIA</strong> if budget is"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ear plan, 35,000+ servers, court-proven no-logs. MACE ad blocker included free. 30-day money-back guarantee.</li> </ul> <p>If you're currently on ProtonVPN Free an"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "untries (US, Netherlands, Romania, Japan, Poland). PIA has no free tier, only a 30-day money-back guarantee on paid plans.</div> </div> <div class=\"faq-item reveal"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/hostpapa-vs-bluehost-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "</li> <li>Free CDN and SSL certificate</li> <li>30-day money-back guarantee</li> <li>24/7 live chat and phone support</li> </"
-        },
-        {
-          "label": "sla_guarantee",
-          "snippet": "99.9% uptime guarantee",
-          "context": "re)</li> <li>100% green energy powered</li> <li>99.9% uptime guarantee</li> <li>24/7/365 support via phone, chat, and email</li>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/elementor-vs-wix-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<p>Free plan available. Pro from $59/yr for 1 site. 10,000+ templates, 30-day money-back guarantee.</p> <a rel=\"sponsored nofollow\" href=\"/go/elementor\" class=\"sp-btn s"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordvpn-vs-mullvad-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "3>Start with NordVPN \u2014 30-day money-back</h3> <p>NordVPN offers a 30-day money-back guarantee. Try it for a month \u2014 if it's not right, you get a full refund, no questions as"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "e trial?</h3> <div class=\"faq-a\">Mullvad has no free trial and no money-back guarantee, but accounts are anonymous (no email required) and you can top up as little as"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ail required) and you can top up as little as one month at \u20ac5. NordVPN offers a 30-day money-back guarantee on all plans.</div> </div> <div class=\"faq-item reveal-"
         }
       ],
       "trust_state_bumped": false
@@ -390,22 +258,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/nordlayer-vs-nordvpn-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "Layer for personal use, with a better server network for streaming and privacy. 30-day money-back guarantee.</p> <a href=\"/go/nordvpn\" rel=\"noopener sponsored\">Get NordVPN f"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "answer. 9.2/10 score, 6,400+ servers, Threat Protection, Meshnet, and a genuine 30-day money-back guarantee.</p> <a href=\"/go/nordvpn\" rel=\"noopener sponsored\">Get NordVPN f"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/best-cheap-vps-hosting-2026.html",
       "claims": [
         {
@@ -434,22 +286,6 @@
           "label": "money_back_guarantee",
           "snippet": "45-day money-back guarantee",
           "context": "<p style=\"color:rgba(255,248,245,.65);font-size:.9rem;line-height:1.6;margin:0\">45-day money-back guarantee \u2014 the longest in the industry. 10,000+ servers. Cheaper at $2.03/month.</p>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordvpn-vs-private-internet-access-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "hoose <strong>PIA</strong> for unlimited devices and cheapest price. Both offer 30-day money-back guarantees.</p> </div> <!-- HEAD-TO-HEAD SCORE BARS --> <div cla"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "lan. PIA starts at $2.03/mo on the 3-year plan ($5.99/mo on 1-year). Both offer 30-day money-back guarantees. PIA is cheaper overall, but requires a 3-year commitment for its headline pri"
         }
       ],
       "trust_state_bumped": false
@@ -596,39 +432,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "e Mode, and 20\u201325% better sustained performance on Apple Silicon versus Fusion. 30-day money-back guarantee.</p> <a href=\"/go/parallels\" rel=\"noopener sponsored\">Try Paralle"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/zapier-vs-make-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "sla_guarantee",
-          "snippet": "99.9% uptime SLA",
-          "context": "ebranded from Integromat in 2022 and has been used by 500,000+ teams. It offers 99.9% uptime SLA on paid plans, full error logging, and automatic retry for failed scenarios.</d"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/hostpapa-vs-godaddy-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "sla_guarantee",
-          "snippet": "99.9% uptime guarantee",
-          "context": "<li>Free domain and SSL on annual plans</li> <li>99.9% uptime guarantee</li> <li>Straightforward pricing, fewer upsells</li>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay.html",
       "claims": [
         {
@@ -687,22 +490,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/gusto-vs-adp-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "plete/HR Pro: custom quote</td></tr> <tr><td>Free trial</td><td>30-day money-back guarantee</td><td class=\"win\">3-month free trial (new customers)</td></tr>"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "iv> <div class=\"faq-a\">Gusto doesn't offer a free trial but has a 30-day money-back guarantee. ADP Run offers a 3-month free trial for new small business customers. We recom"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/elementor-free-trial-2026-how-to-get-it-step-by-step.html",
       "claims": [
         {
@@ -734,17 +521,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/elementor-vs-wpbakery-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ime (periodic promotions)</td></tr> <tr><td>Trial</td><td class=\"win\">30-day money-back guarantee</td><td>No free trial</td></tr> <tr><td>Hosting required</td><td>Yes"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/hostpapa-free-trial-2026-how-to-get-it-step-by-step.html",
       "claims": [
         {
@@ -766,70 +542,12 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/nordvpn-vs-protonvpn-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "for Swiss privacy jurisdiction, free tier, and 10 device connections. Both have 30-day money-back guarantees.</p> </div> <div class=\"vs-scorebar reveal-up\"> <h3"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "td><td class=\"win\">$12.99/mo</td><td>$9.99/mo</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td>30 days</td></tr> <tr><td>Simultaneous"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "2-year plan. ProtonVPN also has a free tier with no bandwidth limits. Both have 30-day money-back guarantees.</div></div> <div class=\"faq-item reveal-up\"><h3 class=\"faq-q\">Whi"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/best-nordvpn-alternatives-in-2026-free-paid.html",
       "claims": [
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"background:rgba(255,2"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/elementor-vs-divi-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "d class=\"win\">$249 one-time (unlimited sites)</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td>30 days</td></tr> </tbody> </"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "and the core drag-and-drop editor. Divi does not have a free plan but offers a 30-day money-back guarantee.</div> </div> <div class=\"faq-item reveal-up\">"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "45-day money-back guarantee",
-          "context": "<p>Free plan available. Pro from $59/yr for 1 site. 10,000+ templates, 45-day money-back guarantee.</p> <a rel=\"sponsored\" href=\"/go/elementor\" class=\"sp-btn sp-btn-pri"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/protonvpn-vs-ipvanish-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money-back guarantee",
-          "context": "for unlimited simultaneous connections at a lower advertised price. Both offer money-back guarantees.</p> </div> <div class=\"vs-scorebar reveal-up\"> <h3"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "icing</td><td>Promo price may jump on renewal</td></tr> <tr><td>Money-back guarantee</td><td>30 days</td><td>30 days</td></tr> <tr><td>Devices inclu"
         }
       ],
       "trust_state_bumped": false
