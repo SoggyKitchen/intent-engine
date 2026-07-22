@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-22T06:05:14+00:00",
+  "generated_at_utc": "2026-07-22T21:23:13+00:00",
   "mode": "apply",
-  "pages_flagged": 31,
+  "pages_flagged": 32,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -516,6 +516,27 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "?</h2> <p style=\"font-size:.9rem;color:var(--ink-3);margin-bottom:1.5rem\">30-day money-back guarantee. Free plugin available with no time limit.</p> <a rel=\"sponsored\" href=\"/"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/surfshark-vs-private-internet-access-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "need port forwarding, dedicated IPs, or fully open-source VPN apps. Both offer 30-day money-back guarantees.</p> </div> <div class=\"ar-disc reveal-up\"> <span c"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "arding, dedicated IPs, or maximum transparency via open-source apps. Both offer 30-day money-back guarantees.</p> </div> <div class=\"vs-scorebar reveal-up\"> <h3"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ly billing, PIA ($11.95/mo) is cheaper than Surfshark ($15.45/mo). Both offer a 30-day money-back guarantee.</div> </div> <div class=\"faq-item reveal-up\">"
         }
       ],
       "trust_state_bumped": false
