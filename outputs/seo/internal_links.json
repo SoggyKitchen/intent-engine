@@ -1,9 +1,9 @@
 {
-  "total_pages": 1457,
-  "updated": 1454,
+  "total_pages": 1458,
+  "updated": 1455,
   "skipped": 3,
-  "orphans_before": 51,
-  "orphans_after": 56,
+  "orphans_before": 60,
+  "orphans_after": 58,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -12,7 +12,7 @@
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step",
         "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",
-        "/pages/hetzner-vs-render-which-is-better-in-2026"
+        "/pages/hetzner-vs-railway-which-is-better-in-2026"
       ]
     },
     {
@@ -21,7 +21,7 @@
         "/pages/dashlane-vs-sticky-password-which-is-better-in-2026",
         "/pages/1password-vs-keeper-which-is-better-in-2026",
         "/pages/okta-vs-tresorit-which-is-better-in-2026",
-        "/pages/semrush-vs-clearscope-which-is-better-in-2026",
+        "/pages/supabase-vs-google-cloud-which-is-better-in-2026",
         "/pages/zoom-vs-microsoft-teams-which-is-better-in-2026"
       ]
     },

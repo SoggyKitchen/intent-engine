@@ -1,18 +1,21 @@
 {
-  "generated_at": "2026-07-22T21:23:28.463732+00:00",
+  "generated_at": "2026-07-22T21:46:30.948079+00:00",
   "stats": {
-    "sitemap_urls": 1484,
-    "sitemap_with_lastmod": 1484,
-    "total_pages": 1534,
-    "indexable_pages": 1522,
+    "sitemap_urls": 1485,
+    "sitemap_with_lastmod": 1485,
+    "total_pages": 1535,
+    "indexable_pages": 1523,
     "title_over_70": 132,
     "desc_over_165": 26,
-    "money_pages": 1253,
-    "soft": 15
+    "money_pages": 1254,
+    "soft": 18
   },
   "hard_failures": [],
   "soft_issues": [
     "site/pages/thanks.html: title <30 chars (29)",
+    "site/pages/engagebay-vs-hubspot-which-is-better-in-2026.html: /go/ link without rel attribute: /go/engagebay",
+    "site/pages/engagebay-vs-hubspot-which-is-better-in-2026.html: /go/ link without rel attribute: /go/engagebay",
+    "site/pages/engagebay-vs-hubspot-which-is-better-in-2026.html: /go/ link without rel attribute: /go/engagebay",
     "site/pages/v3-preview-404.html: title <30 chars (25)",
     "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/activecampaign",
     "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/getresponse",
@@ -28,5 +31,5 @@
     "site/pages/v3-preview-contact.html: title <30 chars (27)",
     "site/pages/v3-preview-privacy.html: title <30 chars (25)"
   ],
-  "soft_issues_total": 15
+  "soft_issues_total": 18
 }
