@@ -527,6 +527,33 @@
         "notion-free-plan-ctr": "was 0% x 557 impr, pos 9.4 \u2014 target >1%",
         "impact-com-review": "new page \u2014 baseline impressions TBD"
       }
+    },
+    {
+      "date": "2026-07-22",
+      "session": "ceo-daily",
+      "gmail_findings": {
+        "awin": "EngageBay CRM invited SaaSpare to Awin programme (30% recurring commission) \u2014 invitation from 2026-07-20. Requires owner to accept at ui.awin.com (link: /awin/membership-invitation/accept/2917137/127075). SpamGuard already activated prior session.",
+        "impact": "impact.com partner program contract terms changed 2026-07-22 (notification only, no action needed). Wix still asking to reapply (not an approval). Semrush contract change = technical migration only, no commission changes.",
+        "partnerstack": "No new approvals.",
+        "xero_brevo_hotjar": "No emails from Xero, Brevo, Hotjar, or Constant Contact."
+      },
+      "ctr_fixes": [
+        "ramp-pricing: removed redundant 'July 2026 verified.' from meta desc \u2014 now leads with 'Ramp pricing July 2026: Free Card = $0 forever...' (1,687 impr, pos 10.2)",
+        "loom-free-plan: fixed double 'July 2026. July 2026.' meta desc \u2014 now clean value-led description (255 impr, pos 10.9)"
+      ],
+      "new_page": "surfshark-vs-private-internet-access-which-is-better-in-2026 (Surfshark wins 8.9 vs PIA 8.6, /go/surfshark CJ commission, detailed 5-tab comparison including port forwarding/dedicated IP analysis)",
+      "activated": "None \u2014 EngageBay requires manual Awin acceptance by owner",
+      "revenue_leaks_fixed": 0,
+      "tests": "93/93 passed",
+      "escalate_to_owner": [
+        "URGENT ACTION: Accept EngageBay CRM on Awin \u2014 visit ui.awin.com \u2192 Programmes \u2192 Pending invitations. Advertiser ID 127075. Earns 30% RECURRING commission. Worth $X/mo on any referred plan.",
+        "Wix (Impact) asked to reapply \u2014 worth reapplying at app.impact.com if still interested",
+        "Semrush contract change = technical migration only, no action needed"
+      ],
+      "measure_at_21days": {
+        "surfshark-vs-pia-position": "new page \u2014 baseline = no data, target <20 within 60 days",
+        "ramp-pricing-ctr": "baseline 0.59% @ pos 10.2, 1687 impr -> target >1.5%"
+      }
     }
   ],
   "entries": [
