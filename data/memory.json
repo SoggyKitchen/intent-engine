@@ -554,6 +554,39 @@
         "surfshark-vs-pia-position": "new page \u2014 baseline = no data, target <20 within 60 days",
         "ramp-pricing-ctr": "baseline 0.59% @ pos 10.2, 1687 impr -> target >1.5%"
       }
+    },
+    {
+      "date": "2026-07-22",
+      "session": "revenue-hunter",
+      "gmail_findings": {
+        "awin_engagebay": "EngageBay CRM invited SaaSpare to Awin programme (Advertiser ID 127075) on 2026-07-20 \u2014 30% RECURRING commission. Requires owner to accept at ui.awin.com. _redirects comment updated with ready-to-paste Awin link.",
+        "awin_spamguard": "Already activated prior session.",
+        "impact": "impact.com partner program contract terms changed 2026-07-22 (notification only). Wix still reapply request (not an approval).",
+        "partnerstack": "No new approvals.",
+        "xero_brevo_hotjar_constant_contact": "No emails found."
+      },
+      "activated": "None \u2014 EngageBay requires manual Awin acceptance by owner",
+      "direct_url_leaks_fixed": 0,
+      "ctr_fixes": [
+        "mixpanel-pricing: title -> Mixpanel Pricing 2026: Free at 20M Events, Growth from 8/mo [July Verified] | meta stripped double date prefix (742 impr, pos 13.7, 0% CTR)",
+        "nordlayer-pricing: title -> NordLayer Pricing 2026: Lite , Core 1, Business 4/user/mo [Team Cost Breakdown] | meta stripped Updated prefix (270 impr, pos 18.9, 0.37% CTR)",
+        "aws-vs-supabase: meta stripped Updated July 2026. prefix -> leads with score (286 impr, pos 10.0, 0% CTR)",
+        "tailscale-vs-zscaler: meta stripped Updated July 2026. prefix -> specific ZTNA verdict (251 impr, pos 8.78, 1.2% CTR)"
+      ],
+      "new_page": "engagebay-vs-hubspot-which-is-better-in-2026.html \u2014 EngageBay 8.4/10 vs HubSpot 8.9/10, /go/engagebay CTA, 5 FAQs, pricing table, who-wins breakdown. Targets \"engagebay vs hubspot\" and \"engagebay alternative to hubspot\" queries.",
+      "tests": "93/93 passed",
+      "escalate_to_owner": [
+        "URGENT ACTION: Accept EngageBay CRM on Awin \u2014 visit ui.awin.com -> Programmes -> Pending invitations. Advertiser ID 127075. 30% RECURRING commission. Once accepted, update /go/engagebay in site/_redirects with the ready-to-paste Awin link in the comment above line 341.",
+        "FYI: Wix (Impact) asked to reapply \u2014 reapply at app.impact.com if still interested in Wix affiliate",
+        "Semrush contract change = technical migration only, no commission impact"
+      ],
+      "measure_at_21days": {
+        "mixpanel-pricing-ctr": "baseline 0%, 742 impr, pos 13.7 \u2014 target >0.5% by Aug 12",
+        "nordlayer-pricing-ctr": "baseline 0.37%, 270 impr, pos 18.9 \u2014 target >1% by Aug 12",
+        "aws-vs-supabase-ctr": "baseline 0%, 286 impr, pos 10.0 \u2014 target >0.5% by Aug 12",
+        "tailscale-vs-zscaler-ctr": "baseline 1.2%, 251 impr, pos 8.78 \u2014 target >2% by Aug 12",
+        "engagebay-vs-hubspot": "new page \u2014 watch for impressions by Aug 5"
+      }
     }
   ],
   "entries": [

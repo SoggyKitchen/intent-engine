@@ -337,5 +337,6 @@
 # Pipedrive — PartnerStack APPROVED 2026-07-10 (email received) — TODO: login to app.partnerstack.com, get Pipedrive affiliate link, replace UTM placeholder below
 /go/pipedrive-ps https://app.partnerstack.com/?utm_source=saaspare 302
 
-# EngageBay — Awin INVITED 2026-07-20 (accept invitation in Awin portal to activate) — TODO: replace UTM placeholder with Awin tracking link
+# EngageBay — Awin INVITED 2026-07-20 (Advertiser ID 127075, Publisher 2917137) — PENDING acceptance by owner at ui.awin.com
+# Once accepted, replace below with: /go/engagebay https://www.awin1.com/cread.php?awinmid=127075&awinaffid=2917137&ued=https%3A%2F%2Fwww.engagebay.com%2F 302
 /go/engagebay https://www.engagebay.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
