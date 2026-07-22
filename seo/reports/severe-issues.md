@@ -6,6 +6,6 @@
 - `/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 89.06/100): broken_internal_link
 - `/pages/fiverr-pro-worth-it-2026-honest-review` (review, 82.5/100): broken_internal_link
 - `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 87.0/100): broken_internal_link
-- `/pages/linear-pricing-history-2026` (pricing, 83.57/100): broken_internal_link
-- `/pages/salesforce-pricing-history-2026` (pricing, 84.41/100): broken_internal_link
-- `/pages/stripe-pricing-history-2026` (pricing, 84.09/100): broken_internal_link
+- `/pages/linear-pricing-history-2026` (pricing, 86.07/100): broken_internal_link
+- `/pages/salesforce-pricing-history-2026` (pricing, 86.91/100): broken_internal_link
+- `/pages/stripe-pricing-history-2026` (pricing, 86.59/100): broken_internal_link

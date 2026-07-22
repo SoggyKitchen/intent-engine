@@ -294,5 +294,29 @@
     "baseline_date": "2026-07-17",
     "pre_blob": "acf8dbb9541470bc4620be8a7794b667e1de2130",
     "status": "pending"
+  },
+  {
+    "path": "site/pages/around-vs-loom-which-is-better-in-2026.html",
+    "url": "https://saaspare.org/pages/around-vs-loom-which-is-better-in-2026",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-07-22",
+    "pre_blob": "90dfde00b15f1fd211a98816b353556272d0999a",
+    "status": "pending"
+  },
+  {
+    "path": "site/pages/retool-vs-datadog-which-is-better-in-2026.html",
+    "url": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-07-22",
+    "pre_blob": "f2155ef4b85d5956313fccd65a50540ee188cd6c",
+    "status": "pending"
+  },
+  {
+    "path": "site/pages/tableau-vs-segment-which-is-better-in-2026.html",
+    "url": "https://saaspare.org/pages/tableau-vs-segment-which-is-better-in-2026",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-07-22",
+    "pre_blob": "b2c50cabb683838dc1dec4d96a7157ccc78e30f5",
+    "status": "pending"
   }
 ]
