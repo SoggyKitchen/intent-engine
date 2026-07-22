@@ -99,7 +99,7 @@
     }
   },
   {
-    "path": "/pages/educative-pricing-2026-plans-costs-what-you-actually-pay",
+    "path": "/pages/figma-vs-sketch-which-is-better-in-2026",
     "score": {
       "inbound": [],
       "outbound": [
@@ -107,52 +107,25 @@
         "/about",
         "/affiliate-disclosure",
         "/authors/kaylan-von-papen",
+        "/corrections",
         "/deal-radar",
-        "/go/educative",
+        "/editorial-policy",
+        "/methodology",
+        "/newsletter",
         "/pages/",
-        "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/cloudflare-vs-tresorit-which-is-better-in-2026",
-        "/pages/does-linear-have-a-free-plan-2026-full-breakdown",
-        "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
-        "/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
-        "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/miro-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/slack-free-trial-2026-how-to-get-it-step-by-step",
+        "/pages/ahrefs-vs-spyfu-which-is-better-in-2026",
+        "/pages/does-freshsales-have-a-free-plan-2026-full-breakdown",
+        "/pages/nordpass-coupon-code-promo-codes-2026-verified-discounts",
+        "/pages/snyk-vs-sentinelone-which-is-better-in-2026",
+        "/pages/vercel-vs-pagerduty-which-is-better-in-2026",
         "/privacy",
+        "/roi",
         "/shortlist"
       ]
     }
   },
   {
-    "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/contact",
-        "/deal-radar",
-        "/editorial-policy",
-        "/go/hostpapa",
-        "/newsletter",
-        "/pages/",
-        "/pages/7-best-ahrefs-alternatives-in-2026-free-paid",
-        "/pages/activecampaign-vs-brevo-which-is-better-in-2026",
-        "/pages/aws-vs-supabase-which-is-better-in-2026",
-        "/pages/expensify-vs-sage-which-is-better-in-2026",
-        "/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/nordpass-vs-enpass-which-is-better-in-2026",
-        "/privacy",
-        "/roi",
-        "/shortlist",
-        "/terms"
-      ]
-    }
-  },
-  {
-    "path": "/pages/surfshark-vs-cyberghost-which-is-better-in-2026",
+    "path": "/pages/getresponse-vs-mailerlite-which-is-better-in-2026",
     "score": {
       "inbound": [],
       "outbound": [
@@ -160,18 +133,21 @@
         "/about",
         "/affiliate-disclosure",
         "/authors/kaylan-von-papen",
+        "/corrections",
         "/deal-radar",
-        "/go/surfshark",
+        "/editorial-policy",
+        "/go/getresponse",
+        "/methodology",
+        "/newsletter",
         "/pages/",
-        "/pages/best-surfshark-alternatives-in-2026-free-paid",
-        "/pages/github-vs-gitlab-which-is-better-in-2026",
-        "/pages/moz-pro-vs-spyfu-which-is-better-in-2026",
-        "/pages/okta-vs-tresorit-which-is-better-in-2026",
-        "/pages/surfshark-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/activecampaign-free-trial-2026-how-to-start-what-you-get",
+        "/pages/activecampaign-vs-convertkit-which-is-better-in-2026",
+        "/pages/does-getresponse-have-a-free-plan-2026-full-breakdown",
+        "/pages/getresponse-coupon-2026-discount-codes-promo",
+        "/pages/mailchimp-vs-pardot-which-is-better-in-2026",
         "/privacy",
         "/roi",
-        "/shortlist",
-        "/sitemap.xml"
+        "/shortlist"
       ]
     }
   }
