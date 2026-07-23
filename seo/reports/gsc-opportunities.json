@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-07-19",
+  "endDate": "2026-07-20",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -45,6 +45,16 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 1.0,
+      "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
+      "position": 5.0,
+      "query": "site:saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/around-vs-loom-which-is-better-in-2026",
       "position": 5.0,
       "query": "saaspare.org",
@@ -65,6 +75,16 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 1.0,
+      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
+      "position": 4.0,
+      "query": "site:saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 1.0,
       "page": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
       "position": 40.0,
       "query": "datadog retool",
@@ -74,9 +94,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 3.0,
+      "impressions": 4.0,
       "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
-      "position": 1.0,
+      "position": 2.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -94,9 +114,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 3.0,
+      "impressions": 4.0,
       "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 47.33,
+      "position": 36.5,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -134,12 +154,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 41.0,
+      "impressions": 42.0,
       "page": "https://saaspare.org/pages/",
-      "position": 4.27,
+      "position": 4.21,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.82
+      "score": 20.84
     },
     {
       "clicks": 0.0,
@@ -162,11 +182,11 @@
       "score": 20.46
     },
     {
-      "clicks": 2.0,
-      "ctr": 0.0488,
+      "clicks": 1.0,
+      "ctr": 0.0244,
       "impressions": 41.0,
       "page": "https://saaspare.org/",
-      "position": 1.32,
+      "position": 1.51,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 0.82
@@ -214,22 +234,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 11.0,
+      "impressions": 12.0,
       "page": "https://saaspare.org/authors/kaylan-von-papen",
-      "position": 6.27,
+      "position": 6.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.22
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 11.0,
-      "page": "https://saaspare.org/terms",
-      "position": 2.27,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.22
+      "score": 0.24
     },
     {
       "clicks": 0.0,
@@ -245,15 +255,15 @@
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 10.0,
-      "page": "https://saaspare.org/pages/saas-stack-audit-checkout",
-      "position": 5.0,
+      "page": "https://saaspare.org/terms",
+      "position": 2.4,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 0.2
     }
   ],
   "pageClicks": {
-    "https://saaspare.org/": 2.0,
+    "https://saaspare.org/": 1.0,
     "https://saaspare.org/about": 0.0,
     "https://saaspare.org/authors/kaylan-von-papen": 0.0,
     "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026": 0.0,
@@ -273,8 +283,8 @@
     "https://saaspare.org/shortlist": 0.0,
     "https://saaspare.org/terms": 0.0
   },
-  "rowsPulled": 34,
+  "rowsPulled": 39,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-06-21"
+  "startDate": "2026-06-22"
 }
