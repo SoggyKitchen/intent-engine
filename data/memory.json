@@ -752,6 +752,22 @@
         "SpamGuard is now live but verify the /go/spamguard link generates correctly in Awin portal (Advertiser 127497)"
       ],
       "commit": "4f5a81d1"
+    },
+    {
+      "date": "2026-07-23",
+      "session": "revenue-hunter",
+      "actions": [
+        "NordLayer pricing title updated: added price specifics (Lite $9, Core $11, Business $14/User/mo) \u2014 97 impr at pos 11 for nordlayer price query. Old title: NordLayer Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees",
+        "NEW PAGE: engagebay-vs-activecampaign-which-is-better-in-2026.html \u2014 targeting EngageBay vs ActiveCampaign comparison. EngageBay active Awin (30% recurring), ActiveCampaign pending PartnerStack (BLOCKED).",
+        "EngageBay Awin: owner must ACCEPT invitation at ui.awin.com (publisher 2917137)",
+        "PartnerStack PERMANENTLY BLOCKED \u2014 no Pipedrive/ActiveCampaign/ClickUp/Monday links possible",
+        "Gmail scan: SpamGuard and Pipedrive already handled (Jul 21). No new affiliate approvals found."
+      ],
+      "owner_actions_needed": [
+        "ACCEPT EngageBay Awin invitation at ui.awin.com (publisher 2917137) \u2014 30% recurring commission",
+        "Apply on Awin to: GetResponse (3142111 EPC $31), ProtonVPN (5227916 EPC $30), Elementor (6798066 45%), Parallels (2005415 EPC $32)"
+      ],
+      "notes": "ceo-daily session already committed EngageBay activation, 4 CTR meta fixes, EngageBay vs Zoho CRM page \u2014 revenue-hunter adds NordLayer title + EngageBay vs ActiveCampaign on top."
     }
   ]
 }
