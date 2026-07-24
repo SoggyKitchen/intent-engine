@@ -4,7 +4,6 @@ Pages scanned: 1509
 
 ## Severe Issue Counts
 - broken_internal_link: 10
-- missing_meta: 4
 - no_h1: 2
 
 ## Warning Counts

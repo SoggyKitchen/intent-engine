@@ -23,16 +23,12 @@
 - `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.97/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-vs-hubspot-which-is-better-in-2026` (87.0/100): broken_internal_link, missing_correction_cta, missing_trustbox
 - `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (89.0/100): missing_meta, missing_correction_cta, missing_methodology, title_length_outside_target
-- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (89.0/100): missing_meta, missing_correction_cta, missing_methodology, title_length_outside_target
 - `/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay` (89.09/100): broken_internal_link, missing_methodology, thin_buyer_page
 - `/pages/request-a-comparison` (79.38/100): title_length_outside_target
 - `/privacy` (79.64/100): meta_length_outside_target
 - `/pages/how-saaspare-ranks-tools` (80.55/100): title_length_outside_target
 - `/pages/saas-glossary` (81.0/100): title_length_outside_target
 - `/pages/v3-preview-404` (81.4/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/does-notion-have-a-free-plan-2026-full-breakdown` (92.0/100): missing_meta, title_length_outside_target
-- `/pages/does-sentry-have-a-free-plan-2026-full-breakdown` (92.0/100): missing_meta, title_length_outside_target
 - `/pages/v3-preview-contact` (82.97/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/v3-preview-homepage` (83.17/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/v3-preview-affiliate-disclosure` (83.2/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
@@ -100,3 +96,7 @@
 - `/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay` (92.0/100): missing_correction_cta, missing_methodology, title_length_outside_target
 - `/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts` (92.0/100): meta_length_outside_target, missing_correction_cta, missing_methodology
 - `/pages/hostpapa-free-trial-2026-how-to-get-it-step-by-step` (92.0/100): meta_length_outside_target, missing_correction_cta, missing_methodology
+- `/pages/how-to-evaluate-hubspot-alternatives-for-saas-teams-2026` (92.0/100): missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (92.0/100): missing_correction_cta, missing_methodology, title_length_outside_target
+- `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay` (92.0/100): missing_correction_cta, missing_methodology, title_length_outside_target
+- `/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay` (92.0/100): missing_correction_cta, missing_methodology, title_length_outside_target

@@ -1,7 +1,7 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-07-24T06:03:51+00:00
-Mode: `audit`
+Generated: 2026-07-24T06:28:55+00:00
+Mode: `apply-safe`
 
 ## Current Score
 - Overall SaaSpare Health Score: **94.2/100**
@@ -19,7 +19,7 @@ Mode: `audit`
 - Healthy pages (85+): 1457
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 7
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -63,8 +63,8 @@ Mode: `audit`
 - `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.97/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-vs-hubspot-which-is-better-in-2026` (87.0/100): broken_internal_link, missing_correction_cta, missing_trustbox
 - `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (89.0/100): missing_meta, missing_correction_cta, missing_methodology, title_length_outside_target
-- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (89.0/100): missing_meta, missing_correction_cta, missing_methodology, title_length_outside_target
+- `/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay` (89.09/100): broken_internal_link, missing_methodology, thin_buyer_page
+- `/pages/request-a-comparison` (79.38/100): title_length_outside_target
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.39): CTA=True, affiliateLinks=5, disclosure=True

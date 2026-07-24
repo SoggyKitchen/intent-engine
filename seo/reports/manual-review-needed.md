@@ -62,8 +62,6 @@ These are not safe to fake or mass rewrite.
 - `/best-password-manager-business-2026`: missing_correction_cta
 - `/best-seo-tools-2026`: missing_correction_cta
 - `/best-vpn-for-business-2026`: missing_correction_cta
-- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
-- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay`: missing_methodology, thin_buyer_page
 - `/pages/best-vpn-for-privacy-and-security-2026`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/best-hr-software-2026`: missing_correction_cta
@@ -88,9 +86,11 @@ These are not safe to fake or mass rewrite.
 - `/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology
 - `/pages/hostpapa-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology
 - `/pages/how-to-evaluate-hubspot-alternatives-for-saas-teams-2026`: missing_correction_cta, missing_trustbox
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/partnerstack-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/ramp-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
