@@ -1,12 +1,12 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-07-23T06:33:14+00:00
-Mode: `apply-safe`
+Generated: 2026-07-24T06:03:51+00:00
+Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.22/100**
+- Overall SaaSpare Health Score: **94.2/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.58/20
+- Technical SEO: 19.57/20
 - Content usefulness: 19.33/20
 - Trust/E-E-A-T: 18.83/20
 - Internal linking: 14.88/15
@@ -15,11 +15,11 @@ Mode: `apply-safe`
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1507
+- Pages scanned: 1509
 - Healthy pages (85+): 1457
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 85
+- Safe fixes applied this run: 0
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -43,28 +43,28 @@ Mode: `apply-safe`
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f` (41.02/100): no_h1
 - `/fo-verify` (45.06/100): no_h1
 - `/shortlist` (62.87/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page, title_length_outside_target
+- `/pages/engagebay-vs-activecampaign-which-is-better-in-2026` (73.95/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_related_pages, missing_trustbox
 - `/contact` (64.76/100): title_length_outside_target
 - `/` (77.5/100): broken_internal_link, images_missing_alt, missing_correction_cta, missing_related_pages
 - `/deal-radar` (68.39/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/newsletter` (71.25/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/pages/fiverr-pro-worth-it-2026-honest-review` (82.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
+- `/pages/engagebay-vs-zoho-crm-which-is-better-in-2026` (84.75/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_trustbox, title_length_outside_target
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/accessibility` (75.67/100): meta_length_outside_target
 - `/pages/best-encrypted-cloud-storage-2026-business` (75.79/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
-- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.28/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (86.91/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (86.33/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (86.85/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (86.92/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.97/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-vs-hubspot-which-is-better-in-2026` (87.0/100): broken_internal_link, missing_correction_cta, missing_trustbox
 - `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay` (89.09/100): broken_internal_link, missing_methodology, thin_buyer_page
-- `/pages/request-a-comparison` (79.38/100): title_length_outside_target
-- `/privacy` (79.64/100): meta_length_outside_target
-- `/pages/how-saaspare-ranks-tools` (80.55/100): title_length_outside_target
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (89.0/100): missing_meta, missing_correction_cta, missing_methodology, title_length_outside_target
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (89.0/100): missing_meta, missing_correction_cta, missing_methodology, title_length_outside_target
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.39): CTA=True, affiliateLinks=5, disclosure=True

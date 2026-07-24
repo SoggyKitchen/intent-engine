@@ -151,6 +151,48 @@
     }
   },
   {
+    "path": "/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/about#affiliate",
+        "/authors/kaylan-von-papen",
+        "/go/activecampaign-trial",
+        "/go/engagebay",
+        "/pages/crm-software",
+        "/pages/email-marketing-software",
+        "/pages/marketing-automation-software",
+        "/privacy",
+        "/saas-deals"
+      ]
+    }
+  },
+  {
+    "path": "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about#affiliate",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/go/engagebay",
+        "/pages/",
+        "/pages/?type=comparison",
+        "/pages/?type=pricing",
+        "/pages/?type=review",
+        "/pages/activecampaign-vs-hubspot-which-is-better-in-2026",
+        "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+        "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
+        "/pages/getresponse-vs-hubspot-which-is-better-in-2026",
+        "/pages/zoho-crm-vs-keap-which-is-better-in-2026"
+      ]
+    }
+  },
+  {
     "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
     "score": {
       "inbound": [],

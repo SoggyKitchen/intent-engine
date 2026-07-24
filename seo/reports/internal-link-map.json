@@ -835,7 +835,9 @@
       "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages/enpass-vs-password-boss-which-is-better-in-2026",
       "/pages/expensify-vs-airbase-which-is-better-in-2026",
       "/pages/expensify-vs-brex-which-is-better-in-2026",
@@ -2413,7 +2415,10 @@
       "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
+      "/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages/enpass-vs-password-boss-which-is-better-in-2026",
       "/pages/expensify-vs-airbase-which-is-better-in-2026",
       "/pages/expensify-vs-brex-which-is-better-in-2026",
@@ -4199,6 +4204,7 @@
       "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages/enpass-vs-password-boss-which-is-better-in-2026",
       "/pages/expensify-vs-airbase-which-is-better-in-2026",
       "/pages/expensify-vs-brex-which-is-better-in-2026",
@@ -14718,6 +14724,10 @@
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages/enpass-vs-password-boss-which-is-better-in-2026",
       "/pages/expensify-vs-airbase-which-is-better-in-2026",
       "/pages/expensify-vs-brex-which-is-better-in-2026",
@@ -17514,6 +17524,7 @@
       "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -21714,6 +21725,7 @@
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -22953,6 +22965,7 @@
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -36925,6 +36938,7 @@
       "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/clickup-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -39949,6 +39963,7 @@
       "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -43697,6 +43712,7 @@
       "/pages/best-devtools-for-software-development-in-2025",
       "/pages/best-seo-tools-for-agencies-in-2026-enterprise-grade",
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages/state-of-saas-pricing-2026"
     ],
     "outbound": [
@@ -43722,11 +43738,28 @@
       "/terms"
     ]
   },
+  "/pages/engagebay-vs-activecampaign-which-is-better-in-2026": {
+    "inbound": [],
+    "outbound": [
+      "/",
+      "/about",
+      "/about#affiliate",
+      "/authors/kaylan-von-papen",
+      "/go/activecampaign-trial",
+      "/go/engagebay",
+      "/pages/crm-software",
+      "/pages/email-marketing-software",
+      "/pages/marketing-automation-software",
+      "/privacy",
+      "/saas-deals"
+    ]
+  },
   "/pages/engagebay-vs-hubspot-which-is-better-in-2026": {
     "inbound": [
       "/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/close-vs-freshsales-which-is-better-in-2026",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages/hubspot-crm-vs-keap-which-is-better-in-2026",
       "/pages/hubspot-vs-zoho-which-is-better-in-2026",
       "/pages/pipedrive-vs-insightly-which-is-better-in-2026",
@@ -43752,6 +43785,26 @@
       "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/hubspot-vs-drip-which-is-better-in-2026",
       "/pages/keap-vs-nutshell-which-is-better-in-2026",
+      "/pages/zoho-crm-vs-keap-which-is-better-in-2026"
+    ]
+  },
+  "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026": {
+    "inbound": [],
+    "outbound": [
+      "/",
+      "/about#affiliate",
+      "/affiliate-disclosure",
+      "/authors/kaylan-von-papen",
+      "/go/engagebay",
+      "/pages/",
+      "/pages/?type=comparison",
+      "/pages/?type=pricing",
+      "/pages/?type=review",
+      "/pages/activecampaign-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
+      "/pages/getresponse-vs-hubspot-which-is-better-in-2026",
       "/pages/zoho-crm-vs-keap-which-is-better-in-2026"
     ]
   },
@@ -45531,6 +45584,7 @@
       "/pages/activecampaign-vs-brevo-which-is-better-in-2026",
       "/pages/cheaper-alternative-to-semrush-after-price-hike-2026",
       "/pages/does-getresponse-have-a-free-plan-2026-full-breakdown",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages/getresponse-coupon-2026-discount-codes-promo",
       "/pages/getresponse-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
@@ -45735,6 +45789,7 @@
       "/pages/best-hubspot-alternatives-in-2026-free-paid",
       "/pages/cheaper-alternative-to-monday-com-after-price-hike-2026",
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
       "/pages/hubspot-vs-activecampaign-which-is-better-in-2026",
       "/pages/hubspot-vs-marketo-which-is-better-in-2026",
@@ -48314,6 +48369,7 @@
       "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -51308,6 +51364,7 @@
       "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -53532,6 +53589,7 @@
       "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/monday-com-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -56134,6 +56192,7 @@
       "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/notion-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -58555,6 +58614,7 @@
       "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -61638,6 +61698,7 @@
       "/pages/",
       "/pages/saas-buyer-signals-2026",
       "/pages/saas-pricing-changes",
+      "/roi",
       "/shortlist"
     ]
   },
@@ -62082,6 +62143,7 @@
       "/pages/shopify-pricing-history-2026",
       "/pages/stripe-pricing-history-2026",
       "/pages/tresorit-pricing-history-2026",
+      "/roi",
       "/shortlist"
     ]
   },
@@ -62703,6 +62765,7 @@
       "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/salesforce-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -63603,6 +63666,7 @@
       "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -64435,6 +64499,7 @@
       "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/shopify-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -65720,6 +65785,7 @@
       "/pages/stripe-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/stripe-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -67798,6 +67864,7 @@
       "/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/tresorit-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -71400,6 +71467,7 @@
     "inbound": [
       "/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked",
       "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
       "/pages",
       "/pages/pipedrive-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/pipedrive-vs-nutshell-which-is-better-in-2026",
@@ -72568,6 +72636,7 @@
       "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
       "/pages/enpass-vs-password-boss-which-is-better-in-2026",
       "/pages/expensify-vs-airbase-which-is-better-in-2026",
       "/pages/expensify-vs-brex-which-is-better-in-2026",
@@ -73470,6 +73539,7 @@
       "/pages/1password-business-vs-snyk-which-is-better-in-2026",
       "/pages/1password-business-vs-tenable-which-is-better-in-2026",
       "/pages/1password-business-vs-tresorit-which-is-better-in-2026",
+      "/pages/1password-pricing-history-2026",
       "/pages/1password-vs-bitwarden-which-is-better-in-2026",
       "/pages/1password-vs-dashlane-which-is-better-in-2026",
       "/pages/1password-vs-enpass-which-is-better-in-2026",
@@ -73488,6 +73558,7 @@
       "/pages/activecampaign-vs-pardot-which-is-better-in-2026",
       "/pages/affilae-vs-post-affiliate-pro-which-is-better-in-2026",
       "/pages/agiloft-vs-icertis-which-is-better-in-2026",
+      "/pages/ahrefs-pricing-history-2026",
       "/pages/ahrefs-vs-clearscope-which-is-better-in-2026",
       "/pages/ahrefs-vs-frase-io-which-is-better-in-2026",
       "/pages/ahrefs-vs-mangools-which-is-better-in-2026",
@@ -73514,6 +73585,7 @@
       "/pages/around-vs-loom-which-is-better-in-2026",
       "/pages/around-vs-riverside-fm-which-is-better-in-2026",
       "/pages/around-vs-streamyard-which-is-better-in-2026",
+      "/pages/asana-pricing-history-2026",
       "/pages/asana-vs-basecamp-which-is-better-in-2026",
       "/pages/asana-vs-clickup-which-is-better-in-2026",
       "/pages/asana-vs-jira-which-is-better-in-2026",
@@ -73590,6 +73662,7 @@
       "/pages/cisco-anyconnect-vs-zscaler-which-is-better-in-2026",
       "/pages/clearscope-vs-frase-io-which-is-better-in-2026",
       "/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026",
+      "/pages/clickup-pricing-history-2026",
       "/pages/clickup-vs-asana-which-is-better-in-2026",
       "/pages/clickup-vs-basecamp-which-is-better-in-2026",
       "/pages/clickup-vs-hubspot-which-is-better-in-2026",
@@ -73671,6 +73744,7 @@
       "/pages/databox-vs-power-bi-which-is-better-in-2026",
       "/pages/databox-vs-segment-which-is-better-in-2026",
       "/pages/databox-vs-tableau-which-is-better-in-2026",
+      "/pages/datadog-pricing-history-2026",
       "/pages/datadog-vs-new-relic-which-is-better-in-2026",
       "/pages/datadog-vs-pagerduty-which-is-better-in-2026",
       "/pages/datadog-vs-terraform-which-is-better-in-2026",
@@ -73821,6 +73895,7 @@
       "/pages/hubspot-crm-vs-nutshell-which-is-better-in-2026",
       "/pages/hubspot-crm-vs-pipedrive-which-is-better-in-2026",
       "/pages/hubspot-crm-vs-zoho-crm-which-is-better-in-2026",
+      "/pages/hubspot-pricing-history-2026",
       "/pages/hubspot-vs-activecampaign-which-is-better-in-2026",
       "/pages/hubspot-vs-brevo-which-is-better-in-2026",
       "/pages/hubspot-vs-convertkit-which-is-better-in-2026",
@@ -73905,6 +73980,7 @@
       "/pages/lever-vs-gusto-which-is-better-in-2026",
       "/pages/lever-vs-lattice-which-is-better-in-2026",
       "/pages/lever-vs-remote-com-which-is-better-in-2026",
+      "/pages/linear-pricing-history-2026",
       "/pages/linear-vs-asana-which-is-better-in-2026",
       "/pages/linear-vs-clickup-which-is-better-in-2026",
       "/pages/linear-vs-datadog-which-is-better-in-2026",
@@ -73960,6 +74036,7 @@
       "/pages/mixpanel-vs-power-bi-which-is-better-in-2026",
       "/pages/mixpanel-vs-segment-which-is-better-in-2026",
       "/pages/mixpanel-vs-tableau-which-is-better-in-2026",
+      "/pages/monday-com-pricing-history-2026",
       "/pages/monday-com-vs-asana-which-is-better-in-2026",
       "/pages/monday-com-vs-basecamp-which-is-better-in-2026",
       "/pages/monday-com-vs-clickup-which-is-better-in-2026",
@@ -74018,6 +74095,7 @@
       "/pages/nordvpn-vs-private-internet-access-which-is-better-in-2026",
       "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026",
       "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
+      "/pages/notion-pricing-history-2026",
       "/pages/notion-vs-asana-which-is-better-in-2026",
       "/pages/notion-vs-basecamp-which-is-better-in-2026",
       "/pages/notion-vs-clickup-which-is-better-in-2026",
@@ -74082,6 +74160,7 @@
       "/pages/pinecone-vs-openai-api-which-is-better-in-2026",
       "/pages/pinecone-vs-weaviate-which-is-better-in-2026",
       "/pages/pinecone-vs-weights-biases-which-is-better-in-2026",
+      "/pages/pipedrive-pricing-history-2026",
       "/pages/pipedrive-vs-close-which-is-better-in-2026",
       "/pages/pipedrive-vs-copper-which-is-better-in-2026",
       "/pages/pipedrive-vs-freshsales-which-is-better-in-2026",
@@ -74163,9 +74242,12 @@
       "/pages/roboform-vs-enpass-which-is-better-in-2026",
       "/pages/roboform-vs-password-boss-which-is-better-in-2026",
       "/pages/roboform-vs-sticky-password-which-is-better-in-2026",
+      "/pages/saas-buyer-signals-2026",
+      "/pages/saas-pricing-changes",
       "/pages/saas-roi-calculator",
       "/pages/sage-vs-airbase-which-is-better-in-2026",
       "/pages/sage-vs-divvy-which-is-better-in-2026",
+      "/pages/salesforce-pricing-history-2026",
       "/pages/salesforce-vs-close-which-is-better-in-2026",
       "/pages/salesforce-vs-copper-which-is-better-in-2026",
       "/pages/salesforce-vs-freshsales-which-is-better-in-2026",
@@ -74183,6 +74265,7 @@
       "/pages/se-ranking-vs-rankmath-pro-which-is-better-in-2026",
       "/pages/se-ranking-vs-spyfu-which-is-better-in-2026",
       "/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026",
+      "/pages/semrush-pricing-history-2026",
       "/pages/semrush-vs-ahrefs-which-is-better-in-2026",
       "/pages/semrush-vs-clearscope-which-is-better-in-2026",
       "/pages/semrush-vs-frase-io-which-is-better-in-2026",
@@ -74202,6 +74285,7 @@
       "/pages/sentry-vs-datadog-which-is-better-in-2026",
       "/pages/sentry-vs-pagerduty-which-is-better-in-2026",
       "/pages/sentry-vs-terraform-which-is-better-in-2026",
+      "/pages/shopify-pricing-history-2026",
       "/pages/shopify-vs-amazon-which-is-better-in-2026",
       "/pages/shopify-vs-bigcommerce-which-is-better-in-2026",
       "/pages/shopify-vs-bold-commerce-which-is-better-in-2026",
@@ -74233,6 +74317,7 @@
       "/pages/sticky-password-vs-enpass-which-is-better-in-2026",
       "/pages/sticky-password-vs-password-boss-which-is-better-in-2026",
       "/pages/streamyard-vs-descript-which-is-better-in-2026",
+      "/pages/stripe-pricing-history-2026",
       "/pages/stripe-vs-bold-commerce-which-is-better-in-2026",
       "/pages/stripe-vs-chargebee-which-is-better-in-2026",
       "/pages/stripe-vs-recharge-which-is-better-in-2026",
@@ -74277,6 +74362,7 @@
       "/pages/trello-vs-smartsheet-which-is-better-in-2026",
       "/pages/trello-vs-todoist-which-is-better-in-2026",
       "/pages/trello-vs-wrike-which-is-better-in-2026",
+      "/pages/tresorit-pricing-history-2026",
       "/pages/tresorit-vs-1password-business-which-is-better-in-2026",
       "/pages/tresorit-vs-box-which-is-better-in-2026",
       "/pages/tresorit-vs-dropbox-which-is-better-in-2026",

@@ -33,7 +33,7 @@
 - `/pages/1password-business-vs-tresorit-which-is-better-in-2026` (comparison, 94.62/100): meta_length_outside_target, thin_buyer_page
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.62/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.96/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/1password-pricing-history-2026` (pricing, 92.07/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/1password-pricing-history-2026` (pricing, 92.33/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.25/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.41/100): missing_correction_cta, thin_buyer_page
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 97.34/100): thin_buyer_page
@@ -69,7 +69,7 @@
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.42/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.73/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 92.8/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/ahrefs-pricing-history-2026` (pricing, 92.64/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ahrefs-pricing-history-2026` (pricing, 92.9/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.05/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.25/100): missing_correction_cta, thin_buyer_page
 - `/pages/ahrefs-vs-clearscope-which-is-better-in-2026` (comparison, 97.32/100): thin_buyer_page
@@ -106,7 +106,7 @@
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.42/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.95/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 95.14/100): missing_methodology, thin_buyer_page
-- `/pages/asana-pricing-history-2026` (pricing, 92.55/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/asana-pricing-history-2026` (pricing, 92.81/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.03/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.28/100): missing_correction_cta, thin_buyer_page
 - `/pages/asana-vs-basecamp-which-is-better-in-2026` (comparison, 97.36/100): thin_buyer_page
@@ -287,7 +287,7 @@
 - `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.38/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.67/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): missing_correction_cta, missing_methodology
-- `/pages/clickup-pricing-history-2026` (pricing, 92.69/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/clickup-pricing-history-2026` (pricing, 92.94/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.03/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.29/100): missing_correction_cta, thin_buyer_page
 - `/pages/clickup-vs-asana-which-is-better-in-2026` (comparison, 97.29/100): thin_buyer_page

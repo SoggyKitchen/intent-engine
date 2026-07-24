@@ -14,9 +14,24 @@
   },
   {
     "broken": [
+      "/pages/crm-software",
+      "/pages/email-marketing-software",
+      "/pages/marketing-automation-software",
+      "/saas-deals"
+    ],
+    "path": "/pages/engagebay-vs-activecampaign-which-is-better-in-2026"
+  },
+  {
+    "broken": [
       "/pages/activecampaign-vs-hubspot-which-is-better-in-2026"
     ],
     "path": "/pages/engagebay-vs-hubspot-which-is-better-in-2026"
+  },
+  {
+    "broken": [
+      "/pages/activecampaign-vs-hubspot-which-is-better-in-2026"
+    ],
+    "path": "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026"
   },
   {
     "broken": [

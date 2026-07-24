@@ -16,7 +16,7 @@
 - `/pages/1password-business-vs-tresorit-which-is-better-in-2026`: 724 words, score 94.62
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts`: 723 words, score 92.62
 - `/pages/1password-free-trial-2026-how-to-get-it-step-by-step`: 792 words, score 92.96
-- `/pages/1password-pricing-history-2026`: 664 words, score 92.07
+- `/pages/1password-pricing-history-2026`: 666 words, score 92.33
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work`: 650 words, score 92.25
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict`: 781 words, score 95.41
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026`: 667 words, score 97.34
@@ -49,7 +49,7 @@
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts`: 685 words, score 92.42
 - `/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step`: 747 words, score 92.73
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay`: 759 words, score 92.8
-- `/pages/ahrefs-pricing-history-2026`: 778 words, score 92.64
+- `/pages/ahrefs-pricing-history-2026`: 780 words, score 92.9
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work`: 610 words, score 92.05
 - `/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict`: 749 words, score 95.25
 - `/pages/ahrefs-vs-clearscope-which-is-better-in-2026`: 664 words, score 97.32
@@ -86,7 +86,7 @@
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts`: 685 words, score 92.42
 - `/pages/asana-free-trial-2026-how-to-get-it-step-by-step`: 790 words, score 92.95
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay`: 729 words, score 95.14
-- `/pages/asana-pricing-history-2026`: 759 words, score 92.55
+- `/pages/asana-pricing-history-2026`: 761 words, score 92.81
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work`: 606 words, score 92.03
 - `/pages/asana-review-2026-is-it-worth-it-honest-verdict`: 757 words, score 95.28
 - `/pages/asana-vs-basecamp-which-is-better-in-2026`: 672 words, score 97.36
@@ -195,7 +195,7 @@
 - `/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026`: 687 words, score 95.44
 - `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts`: 676 words, score 92.38
 - `/pages/clickup-free-trial-2026-how-to-get-it-step-by-step`: 734 words, score 92.67
-- `/pages/clickup-pricing-history-2026`: 787 words, score 92.69
+- `/pages/clickup-pricing-history-2026`: 789 words, score 92.94
 - `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work`: 605 words, score 92.03
 - `/pages/clickup-review-2026-is-it-worth-it-honest-verdict`: 758 words, score 95.29
 - `/pages/clickup-vs-asana-which-is-better-in-2026`: 658 words, score 97.29
@@ -286,7 +286,7 @@
 - `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: 618 words, score 92.09
 - `/pages/datadog-free-trial-2026-how-to-get-it-step-by-step`: 741 words, score 92.7
 - `/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay`: 732 words, score 95.16
-- `/pages/datadog-pricing-history-2026`: 664 words, score 92.07
+- `/pages/datadog-pricing-history-2026`: 666 words, score 92.33
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work`: 551 words, score 91.75
 - `/pages/datadog-review-2026-is-it-worth-it-honest-verdict`: 653 words, score 93.77
 - `/pages/datadog-vs-new-relic-which-is-better-in-2026`: 699 words, score 95.5

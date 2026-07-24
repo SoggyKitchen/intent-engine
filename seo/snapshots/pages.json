@@ -3694,6 +3694,7 @@
       "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -3711,10 +3712,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.07,
+      "internalLinking": 15,
+      "overall": 92.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -3728,7 +3729,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -12286,6 +12287,7 @@
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -12303,10 +12305,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.89,
+      "content": 19.9,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.64,
+      "internalLinking": 15,
+      "overall": 92.9,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -12320,7 +12322,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 778
+    "word_count": 780
   },
   {
     "affiliate_links": [
@@ -15595,6 +15597,7 @@
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -15614,8 +15617,8 @@
     "score": {
       "content": 19.8,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.55,
+      "internalLinking": 15,
+      "overall": 92.81,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -15629,7 +15632,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 759
+    "word_count": 761
   },
   {
     "affiliate_links": [
@@ -46724,6 +46727,7 @@
       "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/clickup-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -46741,10 +46745,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.94,
+      "content": 19.95,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.69,
+      "internalLinking": 15,
+      "overall": 92.94,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -46758,7 +46762,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 787
+    "word_count": 789
   },
   {
     "affiliate_links": [
@@ -55098,6 +55102,7 @@
       "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -55115,10 +55120,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.07,
+      "internalLinking": 15,
+      "overall": 92.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -55132,7 +55137,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -61242,10 +61247,12 @@
       "https://saaspare.org/pages/wrike-vs-smartsheet-which-is-better-in-2026",
       "https://saaspare.org/pages/wrike-vs-todoist-which-is-better-in-2026"
     ],
-    "issues": [],
+    "issues": [
+      "missing_meta"
+    ],
     "jsonld_blocks": 5,
-    "meta_description": "Updated July 2026. July 2026. Notion",
-    "meta_length": 36,
+    "meta_description": "",
+    "meta_length": 0,
     "page_type": "free_trial",
     "path": "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
     "robots": "",
@@ -61262,20 +61269,19 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.0,
+      "overall": 92.0,
       "performanceUx": 5,
       "schemaIndexability": 6,
-      "technical": 18,
+      "technical": 16,
       "trust": 20.0
     },
-    "title": "Notion Free Plan 2026: Yes \u2014 But 10-Guest Cap & No Automations [Honest]",
-    "title_length": 71,
+    "title": "Does Notion Have a Free Plan in 2026? Yes \u2014 10-Guest Cap & 4 Real Limits",
+    "title_length": 72,
     "url": "https://saaspare.org/pages/does-notion-have-a-free-plan-2026-full-breakdown",
     "warnings": [
-      "meta_length_outside_target",
       "title_length_outside_target"
     ],
-    "word_count": 1136
+    "word_count": 1180
   },
   {
     "affiliate_links": [
@@ -61701,10 +61707,12 @@
       "https://saaspare.org/pages/sentry-vs-pagerduty-which-is-better-in-2026",
       "https://saaspare.org/pages/sentry-vs-terraform-which-is-better-in-2026"
     ],
-    "issues": [],
+    "issues": [
+      "missing_meta"
+    ],
     "jsonld_blocks": 5,
-    "meta_description": "Updated July 2026. July 2026. Sentry free: 5,000 errors/month, 1 developer seat, 7-day data retention. SSO, custom dashboards & alerts are paid-only. Honest\u2026",
-    "meta_length": 157,
+    "meta_description": "",
+    "meta_length": 0,
     "page_type": "free_trial",
     "path": "/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
     "robots": "",
@@ -61721,19 +61729,19 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.0,
+      "overall": 92.0,
       "performanceUx": 5,
       "schemaIndexability": 6,
-      "technical": 19,
+      "technical": 16,
       "trust": 20.0
     },
-    "title": "Sentry Free Plan 2026: 5K Errors, 7-Day Retention, 1 Seat [Honest Verdict]",
-    "title_length": 74,
+    "title": "Does Sentry Have a Free Plan in 2026? Yes \u2014 5,000 Errors/mo & What You Give Up",
+    "title_length": 78,
     "url": "https://saaspare.org/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
     "warnings": [
       "title_length_outside_target"
     ],
-    "word_count": 1093
+    "word_count": 1144
   },
   {
     "affiliate_links": [
@@ -64347,6 +64355,99 @@
   },
   {
     "affiliate_links": [
+      "/go/activecampaign-trial",
+      "/go/engagebay"
+    ],
+    "broken_internal_links": [
+      "/pages/crm-software",
+      "/pages/email-marketing-software",
+      "/pages/marketing-automation-software",
+      "/saas-deals"
+    ],
+    "canonical": "https://saaspare.org/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
+    "external_links": [],
+    "file": "site/pages/engagebay-vs-activecampaign-which-is-better-in-2026.html",
+    "h1": [
+      "EngageBay vs ActiveCampaign 2026:<br>Which CRM Wins for Small Teams?"
+    ],
+    "h2": [
+      "Pricing Comparison: EngageBay vs ActiveCampaign",
+      "Where EngageBay Wins",
+      "Where ActiveCampaign Wins",
+      "Feature Comparison: Head to Head",
+      "How to Choose: The One-Question Framework",
+      "Frequently Asked Questions"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": false,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": false,
+    "has_sticky_cta": true,
+    "has_trust_box": false,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/about#affiliate",
+      "/authors/kaylan-von-papen",
+      "/go/activecampaign-trial",
+      "/go/engagebay",
+      "/pages/crm-software",
+      "/pages/email-marketing-software",
+      "/pages/marketing-automation-software",
+      "/privacy",
+      "/saas-deals"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 2,
+    "meta_description": "Updated July 2026. EngageBay wins on value (8.4/10, $12/user) \u2014 CRM+email+live chat bundled. ActiveCampaign wins on automation (8.7/10, $15/mo) \u2014 best-in-class sequences. Honest verdict.",
+    "meta_length": 186,
+    "page_type": "comparison",
+    "path": "/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "FAQPage",
+      "Organization",
+      "Person",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 8,
+      "internalLinking": 6.95,
+      "overall": 73.95,
+      "performanceUx": 5,
+      "schemaIndexability": 8,
+      "technical": 16,
+      "trust": 10.0
+    },
+    "title": "EngageBay vs ActiveCampaign 2026: Which CRM Wins for Small Teams?",
+    "title_length": 65,
+    "url": "https://saaspare.org/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
+    "warnings": [
+      "meta_length_outside_target",
+      "missing_correction_cta",
+      "missing_methodology",
+      "missing_related_pages",
+      "missing_trustbox"
+    ],
+    "word_count": 1390
+  },
+  {
+    "affiliate_links": [
       "/go/engagebay"
     ],
     "broken_internal_links": [
@@ -64441,6 +64542,104 @@
       "missing_trustbox"
     ],
     "word_count": 1597
+  },
+  {
+    "affiliate_links": [
+      "/go/engagebay"
+    ],
+    "broken_internal_links": [
+      "/pages/activecampaign-vs-hubspot-which-is-better-in-2026"
+    ],
+    "canonical": "https://saaspare.org/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
+    "external_links": [],
+    "file": "site/pages/engagebay-vs-zoho-crm-which-is-better-in-2026.html",
+    "h1": [
+      "EngageBay vs Zoho CRM 2026: Which Is Better for Small Business?"
+    ],
+    "h2": [
+      "Pricing: EngageBay vs Zoho CRM (2026)",
+      "Features: Where Each Wins",
+      "Free Plan Comparison",
+      "CRM Depth: Where Zoho Leads",
+      "All-in-One Bundling: Where EngageBay Leads",
+      "Ease of Use",
+      "Integration Ecosystem",
+      "Who Should Choose EngageBay?",
+      "Who Should Choose Zoho CRM?",
+      "Verdict: EngageBay vs Zoho CRM 2026",
+      "Frequently Asked Questions",
+      "More CRM comparisons"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": true,
+    "has_pricing_source": true,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": false,
+    "images": 5,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about#affiliate",
+      "/affiliate-disclosure",
+      "/authors/kaylan-von-papen",
+      "/go/engagebay",
+      "/pages/",
+      "/pages/?type=comparison",
+      "/pages/?type=pricing",
+      "/pages/?type=review",
+      "/pages/activecampaign-vs-hubspot-which-is-better-in-2026",
+      "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+      "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
+      "/pages/getresponse-vs-hubspot-which-is-better-in-2026",
+      "/pages/zoho-crm-vs-keap-which-is-better-in-2026"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 2,
+    "meta_description": "Updated July 2026. EngageBay vs Zoho CRM: EngageBay wins on all-in-one bundling (CRM+marketing+helpdesk from $11.99/user). Zoho CRM wins on CRM depth, automations, and free plan (3 users). Score-based verdict.",
+    "meta_length": 209,
+    "page_type": "comparison",
+    "path": "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "FAQPage",
+      "Organization",
+      "Person",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 10,
+      "internalLinking": 11.75,
+      "overall": 84.75,
+      "performanceUx": 5,
+      "schemaIndexability": 8,
+      "technical": 15,
+      "trust": 15.0
+    },
+    "title": "EngageBay vs Zoho CRM 2026: Which Is Better for Small Business? [Honest Verdict]",
+    "title_length": 80,
+    "url": "https://saaspare.org/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
+    "warnings": [
+      "meta_length_outside_target",
+      "missing_correction_cta",
+      "missing_trustbox",
+      "title_length_outside_target"
+    ],
+    "word_count": 1988
   },
   {
     "affiliate_links": [],
@@ -77018,6 +77217,7 @@
       "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -77035,10 +77235,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.97,
+      "content": 19.98,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.72,
+      "internalLinking": 15,
+      "overall": 92.98,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -77052,7 +77252,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 794
+    "word_count": 796
   },
   {
     "affiliate_links": [
@@ -86954,6 +87154,7 @@
       "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -86973,10 +87174,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 11.75,
-      "overall": 86.07,
+      "internalLinking": 12,
+      "overall": 86.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 17,
@@ -86990,7 +87191,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -91938,10 +92139,12 @@
       "/shortlist",
       "/terms"
     ],
-    "issues": [],
+    "issues": [
+      "missing_meta"
+    ],
     "jsonld_blocks": 3,
-    "meta_description": "Updated July 2026. Mixpanel pricing July 2026: Free plan at 20M events/mo (no time limit), Growth from $28/mo (100M events, annual). Event-volume trap explained,\u2026",
-    "meta_length": 162,
+    "meta_description": "",
+    "meta_length": 0,
     "page_type": "pricing",
     "path": "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -91954,24 +92157,24 @@
       "SoftwareApplication"
     ],
     "score": {
-      "content": 19.79,
+      "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 92.79,
+      "overall": 89.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 16,
       "trust": 15.0
     },
-    "title": "Mixpanel Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees",
-    "title_length": 69,
+    "title": "Mixpanel Pricing 2026: Free 20M Events, Growth $28/mo \u2014 Every Plan, Real Costs",
+    "title_length": 78,
     "url": "https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
       "missing_correction_cta",
       "missing_methodology",
-      "thin_buyer_page"
+      "title_length_outside_target"
     ],
-    "word_count": 758
+    "word_count": 800
   },
   {
     "affiliate_links": [
@@ -93090,6 +93293,7 @@
       "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/monday-com-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -93109,8 +93313,8 @@
     "score": {
       "content": 20,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.75,
+      "internalLinking": 15,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -93123,7 +93327,7 @@
       "missing_correction_cta",
       "missing_methodology"
     ],
-    "word_count": 814
+    "word_count": 816
   },
   {
     "affiliate_links": [
@@ -96224,23 +96428,24 @@
       "SoftwareApplication"
     ],
     "score": {
-      "content": 19.68,
+      "content": 19.7,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 95.18,
+      "overall": 94.19,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 19,
       "trust": 17.5
     },
-    "title": "NordLayer Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees",
-    "title_length": 70,
+    "title": "NordLayer Pricing 2026: Lite $9, Core $11, Business $14/User/mo \u2014 Full Breakdown",
+    "title_length": 80,
     "url": "https://saaspare.org/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
       "missing_methodology",
-      "thin_buyer_page"
+      "thin_buyer_page",
+      "title_length_outside_target"
     ],
-    "word_count": 736
+    "word_count": 739
   },
   {
     "affiliate_links": [
@@ -100259,6 +100464,7 @@
       "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/notion-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -100276,10 +100482,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.82,
+      "content": 19.83,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.57,
+      "internalLinking": 15,
+      "overall": 92.83,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -100293,7 +100499,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 764
+    "word_count": 766
   },
   {
     "affiliate_links": [
@@ -107156,6 +107362,7 @@
       "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -107173,10 +107380,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.07,
+      "internalLinking": 15,
+      "overall": 92.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -107190,7 +107397,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -110768,10 +110975,12 @@
       "/shortlist",
       "/terms"
     ],
-    "issues": [],
+    "issues": [
+      "missing_meta"
+    ],
     "jsonld_blocks": 3,
-    "meta_description": "Updated July 2026. Ramp pricing July 2026: Free Card = $0 forever, Plus = $15/user/mo ($12 annual). Bill Pay added Jun 2026. Every plan change tracked monthly \u2014\u2026",
-    "meta_length": 161,
+    "meta_description": "",
+    "meta_length": 0,
     "page_type": "pricing",
     "path": "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -110787,21 +110996,21 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 92.0,
+      "overall": 89.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 19,
+      "technical": 16,
       "trust": 15.0
     },
-    "title": "Ramp Pricing 2026 [July Update]: Free Card, $15/user Plus \u2014 Full Breakdown",
-    "title_length": 74,
+    "title": "Ramp Pricing 2026: Every Change, Real Cost & July Update \u2014 Is It Really Free?",
+    "title_length": 77,
     "url": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
       "missing_correction_cta",
       "missing_methodology",
       "title_length_outside_target"
     ],
-    "word_count": 1045
+    "word_count": 1090
   },
   {
     "affiliate_links": [
@@ -115884,6 +116093,7 @@
       "/pages/",
       "/pages/saas-buyer-signals-2026",
       "/pages/saas-pricing-changes",
+      "/roi",
       "/shortlist"
     ],
     "issues": [],
@@ -115900,8 +116110,8 @@
     "score": {
       "content": 17,
       "conversionRevenue": 8,
-      "internalLinking": 8.6,
-      "overall": 74.6,
+      "internalLinking": 9.05,
+      "overall": 75.05,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 20,
@@ -115911,7 +116121,7 @@
     "title_length": 65,
     "url": "https://saaspare.org/pages/saas-buyer-signals-2026",
     "warnings": [],
-    "word_count": 1182
+    "word_count": 1184
   },
   {
     "affiliate_links": [],
@@ -116269,6 +116479,7 @@
       "/pages/shopify-pricing-history-2026",
       "/pages/stripe-pricing-history-2026",
       "/pages/tresorit-pricing-history-2026",
+      "/roi",
       "/shortlist"
     ],
     "issues": [],
@@ -116283,10 +116494,10 @@
       "Organization"
     ],
     "score": {
-      "content": 14.99,
+      "content": 15.0,
       "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 75.99,
+      "overall": 76.0,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 20,
@@ -116296,7 +116507,7 @@
     "title_length": 57,
     "url": "https://saaspare.org/pages/saas-pricing-changes",
     "warnings": [],
-    "word_count": 398
+    "word_count": 400
   },
   {
     "affiliate_links": [
@@ -117114,6 +117325,7 @@
       "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/salesforce-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -117133,10 +117345,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.91,
+      "content": 19.92,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 86.91,
+      "overall": 86.92,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 17,
@@ -117150,7 +117362,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 782
+    "word_count": 784
   },
   {
     "affiliate_links": [
@@ -119514,6 +119726,7 @@
       "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -119531,10 +119744,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.85,
+      "content": 19.86,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.6,
+      "internalLinking": 15,
+      "overall": 92.86,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -119548,7 +119761,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 770
+    "word_count": 772
   },
   {
     "affiliate_links": [
@@ -121760,6 +121973,7 @@
       "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/shopify-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -121777,10 +121991,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.87,
+      "content": 19.88,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.62,
+      "internalLinking": 15,
+      "overall": 92.88,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -121794,7 +122008,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 773
+    "word_count": 775
   },
   {
     "affiliate_links": [
@@ -125345,6 +125559,7 @@
       "/pages/stripe-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/stripe-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -125364,10 +125579,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.84,
+      "content": 19.85,
       "conversionRevenue": 10,
-      "internalLinking": 11.75,
-      "overall": 86.59,
+      "internalLinking": 12,
+      "overall": 86.85,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 17,
@@ -125381,7 +125596,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 768
+    "word_count": 770
   },
   {
     "affiliate_links": [
@@ -131249,6 +131464,7 @@
       "/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/tresorit-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -131266,10 +131482,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.07,
+      "internalLinking": 15,
+      "overall": 92.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -131283,7 +131499,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
