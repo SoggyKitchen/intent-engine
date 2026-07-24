@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-24T06:28:57.757129+00:00",
+  "generated_at": "2026-07-24T21:26:41.836698+00:00",
   "stats": {
     "sitemap_urls": 1487,
     "sitemap_with_lastmod": 1487,
     "total_pages": 1537,
     "indexable_pages": 1525,
     "desc_over_165": 28,
-    "title_over_70": 135,
+    "title_over_70": 133,
     "money_pages": 1256,
-    "soft": 29
+    "soft": 28
   },
   "hard_failures": [],
   "soft_issues": [
@@ -21,7 +21,6 @@
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/beaver-builder",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/seedprod",
     "site/pages/v3-preview-privacy.html: title <30 chars (25)",
-    "site/pages/engagebay-vs-activecampaign-which-is-better-in-2026.html: money page missing affiliate disclosure mention",
     "site/pages/engagebay-vs-activecampaign-which-is-better-in-2026.html: /go/ link without rel attribute: /go/engagebay",
     "site/pages/engagebay-vs-activecampaign-which-is-better-in-2026.html: /go/ link without rel attribute: /go/engagebay",
     "site/pages/engagebay-vs-activecampaign-which-is-better-in-2026.html: /go/ link without rel attribute: /go/activecampaign-trial",
@@ -42,5 +41,5 @@
     "site/pages/engagebay-vs-zoho-crm-which-is-better-in-2026.html: /go/ link without rel attribute: /go/engagebay",
     "site/pages/v3-preview-contact.html: title <30 chars (27)"
   ],
-  "soft_issues_total": 29
+  "soft_issues_total": 28
 }

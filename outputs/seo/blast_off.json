@@ -1,23 +1,38 @@
 {
   "current_month": "July 2026",
-  "today": "2026-07-23",
-  "titles_rewritten": 1,
-  "descs_rewritten": 20,
-  "dates_refreshed": 1147,
-  "answers_added": 15,
-  "files_changed": 1162,
-  "files_scanned": 1475,
+  "today": "2026-07-24",
+  "titles_rewritten": 4,
+  "descs_rewritten": 27,
+  "dates_refreshed": 1149,
+  "answers_added": 16,
+  "files_changed": 1167,
+  "files_scanned": 1477,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
+    },
+    {
+      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Mixpanel Pricing 2026: Free 20M Events, Growth $28/mo \u2014 Every Plan, Real Costs",
+      "after": "Mixpanel Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "NordLayer Pricing 2026: Lite $9, Core $11, Business $14/User/mo \u2014 Full Breakdown",
+      "after": "NordLayer Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Ramp Pricing 2026: Free Card ($0) + Plus $15/User \u2014 Every Change Logged [July Update]",
+      "after": "Ramp Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
     {
       "file": "1password-pricing-history-2026.html",
-      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 22 July 2026.",
+      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 23 July 2026.",
       "after": "Updated July 2026. 1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
@@ -27,27 +42,27 @@
     },
     {
       "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 22 July 2026.",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 23 July 2026.",
       "after": "Updated July 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
       "file": "asana-pricing-history-2026.html",
-      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 22 July 2026.",
+      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 23 July 2026.",
       "after": "Updated July 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
+    },
+    {
+      "file": "best-accounting-software-for-freelancers-in-2026.html",
+      "before": "Discover the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features.",
+      "after": "Updated July 2026. the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features Real tests, real pricing \u2014\u2026"
     },
     {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated July 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
-    },
-    {
-      "file": "best-vpn-australia-2026.html",
-      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated July 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {
-    "submitted": 200,
-    "status": 200
+    "submitted": 0,
+    "error": "HTTP Error 403: Forbidden"
   }
 }

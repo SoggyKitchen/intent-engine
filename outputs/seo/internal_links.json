@@ -1,9 +1,9 @@
 {
-  "total_pages": 1458,
-  "updated": 1455,
+  "total_pages": 1460,
+  "updated": 1457,
   "skipped": 3,
-  "orphans_before": 64,
-  "orphans_after": 58,
+  "orphans_before": 66,
+  "orphans_after": 56,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",
-        "/pages/hetzner-vs-railway-which-is-better-in-2026"
+        "/pages/supabase-vs-google-cloud-which-is-better-in-2026",
+        "/pages/quickbooks-vs-sage-which-is-better-in-2026"
       ]
     },
     {
@@ -21,8 +21,8 @@
         "/pages/dashlane-vs-sticky-password-which-is-better-in-2026",
         "/pages/1password-vs-keeper-which-is-better-in-2026",
         "/pages/okta-vs-tresorit-which-is-better-in-2026",
-        "/pages/supabase-vs-google-cloud-which-is-better-in-2026",
-        "/pages/zoom-vs-microsoft-teams-which-is-better-in-2026"
+        "/pages/spyfu-vs-rankmath-pro-which-is-better-in-2026",
+        "/pages/datadog-vs-pagerduty-which-is-better-in-2026"
       ]
     },
     {
@@ -31,7 +31,7 @@
         "/pages/nordlayer-vs-tresorit-which-is-better-in-2026",
         "/pages/does-tresorit-have-a-free-plan-2026-full-breakdown",
         "/pages/bitwarden-vs-sticky-password-which-is-better-in-2026",
-        "/pages/whereby-vs-loom-which-is-better-in-2026",
+        "/pages/whereby-vs-descript-which-is-better-in-2026",
         "/pages/deel-vs-remote-com-which-is-better-in-2026"
       ]
     }
