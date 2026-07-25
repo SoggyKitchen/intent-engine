@@ -99,100 +99,6 @@
     }
   },
   {
-    "path": "/pages/elementor-coupon-code-promo-codes-2026-verified-discounts",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/authors/kaylan-von-papen",
-        "/deal-radar",
-        "/go/elementor",
-        "/pages/",
-        "/pages/does-elementor-have-a-free-plan-2026-full-breakdown",
-        "/pages/elementor-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/elementor-vs-divi-which-is-better-in-2026",
-        "/pages/elementor-vs-webflow-which-is-better-in-2026",
-        "/pages/saas-roi-calculator",
-        "/shortlist",
-        "https://saaspare.org/affiliate-disclosure",
-        "https://saaspare.org/contact",
-        "https://saaspare.org/methodology"
-      ]
-    }
-  },
-  {
-    "path": "/pages/elementor-vs-squarespace-which-is-better-in-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/authors/kaylan-von-papen",
-        "/corrections",
-        "/deal-radar",
-        "/editorial-policy",
-        "/methodology",
-        "/newsletter",
-        "/pages/",
-        "/pages/best-elementor-alternatives-in-2026-free-paid",
-        "/pages/best-open-source-object-storage-solutions-in-2025-minio-alternatives-compared",
-        "/pages/cisco-anyconnect-vs-tailscale-which-is-better-in-2026",
-        "/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/gusto-vs-culture-amp-which-is-better-in-2026",
-        "/privacy",
-        "/roi",
-        "/shortlist"
-      ]
-    }
-  },
-  {
-    "path": "/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/about#affiliate",
-        "/authors/kaylan-von-papen",
-        "/go/activecampaign-trial",
-        "/go/engagebay",
-        "/pages/crm-software",
-        "/pages/email-marketing-software",
-        "/pages/marketing-automation-software",
-        "/privacy",
-        "/saas-deals"
-      ]
-    }
-  },
-  {
-    "path": "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about#affiliate",
-        "/affiliate-disclosure",
-        "/authors/kaylan-von-papen",
-        "/go/engagebay",
-        "/pages/",
-        "/pages/?type=comparison",
-        "/pages/?type=pricing",
-        "/pages/?type=review",
-        "/pages/activecampaign-vs-hubspot-which-is-better-in-2026",
-        "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
-        "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
-        "/pages/getresponse-vs-hubspot-which-is-better-in-2026",
-        "/pages/zoho-crm-vs-keap-which-is-better-in-2026"
-      ]
-    }
-  },
-  {
     "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
     "score": {
       "inbound": [],
@@ -206,13 +112,45 @@
         "/go/hostpapa",
         "/newsletter",
         "/pages/",
-        "/pages/asana-vs-basecamp-which-is-better-in-2026",
-        "/pages/getresponse-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/gusto-free-trial-2026-how-to-start-what-you-get",
+        "/pages/clickup-vs-wrike-which-is-better-in-2026",
+        "/pages/contabo-coupon-2026-discount-codes-promo",
+        "/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay",
         "/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay",
         "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/miro-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/monday-com-vs-smartsheet-which-is-better-in-2026",
+        "/pages/monday-vs-jira-which-is-better-in-2026",
+        "/pages/zendesk-vs-intercom-which-is-better-in-2026",
+        "/privacy",
+        "/roi",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/contact",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/protonmail",
+        "/newsletter",
+        "/pages/",
+        "/pages/best-nordvpn-alternatives-in-2026-free-paid",
+        "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown",
+        "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/protonvpn-vs-mullvad-which-is-better-in-2026",
+        "/pages/protonvpn-vs-nordvpn-which-is-better-in-2026",
+        "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
+        "/pages/semrush-vs-mangools-which-is-better-in-2026",
+        "/pages/semrush-vs-ubersuggest-which-is-better-in-2026",
         "/privacy",
         "/roi",
         "/shortlist",
