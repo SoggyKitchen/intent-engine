@@ -273,6 +273,7 @@ def make_vs_page(slug_a: str, slug_b: str, canonical_slug: str) -> str:
 <script type="application/ld+json">{art_s}</script>
 <script type="application/ld+json">{faq_s}</script>
 <link rel="stylesheet" href="/assets/saaspare-v2.css">
+<link rel="stylesheet" href="/assets/saaspare-ui.css">
 <link rel="stylesheet" href="/assets/motion.css">
 <style>
 /* ── Article-specific layout ── */
