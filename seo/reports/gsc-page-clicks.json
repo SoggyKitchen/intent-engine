@@ -1,26 +1,5 @@
 {
-  "endDate": "2026-07-22",
-  "pageClicks": {
-    "https://saaspare.org/": 1.0,
-    "https://saaspare.org/authors/kaylan-von-papen": 0.0,
-    "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026": 0.0,
-    "https://saaspare.org/deal-radar": 0.0,
-    "https://saaspare.org/editorial-policy": 0.0,
-    "https://saaspare.org/media-kit": 0.0,
-    "https://saaspare.org/pages/": 0.0,
-    "https://saaspare.org/pages/around-vs-loom-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/best-devtools-for-multi-agent-workflows-in-2025": 0.0,
-    "https://saaspare.org/pages/best-devtools-for-secure-scalable-b2b-software-integrations-in-2025": 0.0,
-    "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid": 0.0,
-    "https://saaspare.org/pages/miro-coupon-code-promo-codes-2026-verified-discounts": 0.0,
-    "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/saas-stack-audit-checkout": 0.0,
-    "https://saaspare.org/pages/shopify-vs-recharge-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/tableau-vs-segment-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/zoom-vs-riverside-fm-which-is-better-in-2026.html": 0.0,
-    "https://saaspare.org/roi": 0.0,
-    "https://saaspare.org/shortlist": 0.0,
-    "https://saaspare.org/terms": 0.0
-  },
-  "skipped": false
+  "endDate": null,
+  "pageClicks": {},
+  "skipped": true
 }

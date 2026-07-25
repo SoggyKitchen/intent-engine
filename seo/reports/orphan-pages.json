@@ -99,6 +99,31 @@
     }
   },
   {
+    "path": "/pages/educative-pricing-2026-plans-costs-what-you-actually-pay",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/deal-radar",
+        "/go/educative",
+        "/pages/",
+        "/pages/cheaper-alternative-to-semrush-after-price-hike-2026",
+        "/pages/does-linear-have-a-free-plan-2026-full-breakdown",
+        "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
+        "/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
+        "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/pandadoc-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/tresorit-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/v3-preview-homepage",
+        "/privacy",
+        "/shortlist"
+      ]
+    }
+  },
+  {
     "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
     "score": {
       "inbound": [],
@@ -117,40 +142,8 @@
         "/pages/docusign-pricing-2026-plans-costs-what-you-actually-pay",
         "/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay",
         "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/monday-vs-jira-which-is-better-in-2026",
+        "/pages/monday-vs-hubspot-which-is-better-in-2026",
         "/pages/zendesk-vs-intercom-which-is-better-in-2026",
-        "/privacy",
-        "/roi",
-        "/shortlist",
-        "/terms"
-      ]
-    }
-  },
-  {
-    "path": "/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/contact",
-        "/deal-radar",
-        "/editorial-policy",
-        "/go/protonmail",
-        "/newsletter",
-        "/pages/",
-        "/pages/best-nordvpn-alternatives-in-2026-free-paid",
-        "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown",
-        "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/protonvpn-vs-mullvad-which-is-better-in-2026",
-        "/pages/protonvpn-vs-nordvpn-which-is-better-in-2026",
-        "/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/semrush-vs-mangools-which-is-better-in-2026",
-        "/pages/semrush-vs-ubersuggest-which-is-better-in-2026",
         "/privacy",
         "/roi",
         "/shortlist",
