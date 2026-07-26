@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-26T07:31:22+00:00",
+  "generated_at_utc": "2026-07-26T21:23:06+00:00",
   "mode": "apply",
-  "pages_flagged": 32,
+  "pages_flagged": 33,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -437,6 +437,17 @@
           "label": "sla_guarantee",
           "snippet": "99.99% uptime guarantee",
           "context": "class=\"pc-item\"><span class=\"pc-dot\"></span>Best-in-class checkout conversion (99.99% uptime guaranteed)</div> <div class=\"pc-item\"><span class=\"pc-dot\"></span>POS hard"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/protonvpn-vs-windscribe-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "evices (Plus)</td><td>Unlimited devices (Pro)</td></tr> <tr><td>Money-back guarantee</td><td class=\"win\">30-day refund</td><td>3-day refund</td></tr>"
         }
       ],
       "trust_state_bumped": false
