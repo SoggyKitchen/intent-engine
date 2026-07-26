@@ -6,9 +6,9 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 
 (Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.)
 
-- **Ahrefs** [PLACEHOLDER, none] — 28 pages, 4 impressions, $100/conv
+- **Ahrefs** [PLACEHOLDER, none] — 28 pages, 5 impressions, $100/conv
 - **Datadog** [PLACEHOLDER, none] — 11 pages, 0 impressions, $80/conv
-- **HubSpot** [PENDING, Impact] — 40 pages, 0 impressions, $400/conv
+- **HubSpot** [PENDING, Impact] — 43 pages, 0 impressions, $400/conv
 - **FreshBooks** [PENDING, Awin] — 23 pages, 0 impressions, $200/conv
 - **Deel** [PLACEHOLDER, none] — 9 pages, 0 impressions, $100/conv
 - **ActiveCampaign** [LOCKED, PartnerStack] — 21 pages, 0 impressions, $85/conv

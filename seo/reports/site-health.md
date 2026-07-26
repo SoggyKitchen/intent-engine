@@ -1,26 +1,26 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-07-25T21:36:42+00:00
+Generated: 2026-07-26T06:14:10+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.18/100**
+- Overall SaaSpare Health Score: **94.17/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.57/20
+- Technical SEO: 19.56/20
 - Content usefulness: 19.33/20
-- Trust/E-E-A-T: 18.8/20
-- Internal linking: 14.88/15
+- Trust/E-E-A-T: 18.79/20
+- Internal linking: 14.87/15
 - Schema/indexability: 7.68/10
 - Conversion/revenue: 8.93/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1511
-- Healthy pages (85+): 1456
+- Pages scanned: 1515
+- Healthy pages (85+): 1460
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
-- GSC: skipped; add GSC OAuth secrets, authorized-user JSON, service-account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls
+- GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
 ## Fastest Path To 70
@@ -51,44 +51,44 @@ Mode: `audit`
 - `/pages/fiverr-pro-worth-it-2026-honest-review` (82.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
 - `/pages/engagebay-vs-activecampaign-which-is-better-in-2026` (83.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/linear-pricing-history-2026` (83.83/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (84.35/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (84.42/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (83.57/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (84.09/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (84.41/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-vs-zoho-crm-which-is-better-in-2026` (85.0/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_trustbox, title_length_outside_target
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/accessibility` (75.67/100): meta_length_outside_target
 - `/pages/best-encrypted-cloud-storage-2026-business` (75.81/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
-- `/pages/which-saas-has-the-best-free-plan-2026` (76.3/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.97/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/which-saas-has-the-best-free-plan-2026` (76.27/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (86.95/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-vs-hubspot-which-is-better-in-2026` (87.0/100): broken_internal_link, missing_correction_cta, missing_trustbox
 - `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay` (89.08/100): broken_internal_link, missing_methodology, thin_buyer_page
+- `/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay` (89.09/100): broken_internal_link, missing_methodology, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.39): CTA=True, affiliateLinks=5, disclosure=True
-- `/pages/best-saas-deals-this-week-2026` (coupon, score 83.66): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.69): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.7): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.72): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/best-saas-deals-this-week-2026` (coupon, score 83.63): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.7): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.7): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.72): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.72): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.72): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.73): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.73): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.75): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.75): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.87): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.88): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.75): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.85): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.86): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.98): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.03): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.03): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.03): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.04): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.05): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/linear-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.05): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/ramp-coupon-2026-discount-codes-promo` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/vultr-coupon-2026-discount-codes-promo` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/bigcommerce-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/sucuri-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/workable-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/linear-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.04): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 92.05): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/slack-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.07): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/rippling-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.07): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/xero-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.07): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/contabo-coupon-2026-discount-codes-promo` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/docusign-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 92.08): CTA=True, affiliateLinks=1, disclosure=True
