@@ -101,8 +101,8 @@ PRICING = {
     ),
     "impact-com": dict(
         name="impact.com", logo="https://cdn.simpleicons.org/impact/ffffff",
-        go="/go/impact", history="/pages/impact-com-pricing-history-2026",
-        page="/pages/best-impact-com-alternatives-2026", sticky="impact.com's Starter tier is self-serve — request a demo to get pricing for your program size.",
+        go="/go/impact", history="/pages/impact-com-review-2026-is-it-worth-it-honest-verdict",
+        page="/pages/impact-com-vs-partnerstack-which-is-better-in-2026", sticky="impact.com's Starter tier is self-serve — request a demo to get pricing for your program size.",
         hidden_risk="Medium", hidden_note="Pricing scales with program size and partner count — get a custom quote from impact.com sales",
         meta_desc="impact.com pricing 2026: not publicly listed — custom quotes based on program size. Starter, Growth, and Enterprise tiers available. What brands actually pay, plus the hidden costs nobody mentions.",
         plans=[
