@@ -707,6 +707,7 @@ HARDCODED_PAGE_TOOLS = {
     "best-ecommerce-platforms": ["Shopify", "BigCommerce", "Wix", "WooCommerce"],
     "best-elementor-alternatives-in-2026-free-paid": ["Elementor", "Divi", "Beaver Builder", "Bricks Builder", "Webflow", "SeedProd"],
     "best-aweber-alternatives-in-2026-free-paid": ["AWeber", "GetResponse", "Mailchimp", "Brevo", "ActiveCampaign"],
+    "best-wordpress-page-builders-2026": ["Elementor", "Divi", "Beaver Builder", "Bricks Builder", "SeedProd"],
 }
 
 def extract_page_meta(html, filepath):
