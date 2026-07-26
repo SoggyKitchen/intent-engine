@@ -7,7 +7,6 @@ Pages scanned: 1515
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 1
 - images_missing_alt: 2
 - meta_length_outside_target: 490
 - missing_correction_cta: 316
@@ -38,8 +37,8 @@ Pages scanned: 1515
 - `/cookie-policy`: 75.98/100, issues=none
 - `/pages/saas-pricing-changes`: 75.99/100, issues=none
 - `/pages/which-saas-has-the-best-free-plan-2026`: 76.27/100, issues=none
-- `/pages`: 77.0/100, issues=none
 - `/`: 77.5/100, issues=broken_internal_link
+- `/pages`: 78.0/100, issues=none
 - `/advertise`: 79.32/100, issues=none
 - `/pages/request-a-comparison`: 79.33/100, issues=none
 - `/privacy`: 79.64/100, issues=none
@@ -57,15 +56,15 @@ Pages scanned: 1515
 - `/pages/v3-preview-homepage`: 83.16/100, issues=none
 - `/pages/v3-preview-affiliate-disclosure`: 83.25/100, issues=none
 - `/pages/engagebay-vs-activecampaign-which-is-better-in-2026`: 83.5/100, issues=broken_internal_link
-- `/pages/linear-pricing-history-2026`: 83.57/100, issues=broken_internal_link
 - `/pages/best-saas-deals-this-week-2026`: 83.63/100, issues=none
 - `/pages/v3-preview-about`: 83.74/100, issues=none
 - `/pages/v3-preview-newsletter`: 83.87/100, issues=none
 - `/pages/v3-preview-library`: 84.03/100, issues=none
-- `/pages/stripe-pricing-history-2026`: 84.09/100, issues=broken_internal_link
-- `/pages/salesforce-pricing-history-2026`: 84.41/100, issues=broken_internal_link
 - `/pages/v3-preview-shortlist`: 84.56/100, issues=none
 - `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 84.77/100, issues=none
 - `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.77/100, issues=none
 - `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 84.77/100, issues=none
 - `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.77/100, issues=none
+- `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.78/100, issues=none
+- `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 84.78/100, issues=none
+- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 84.84/100, issues=none

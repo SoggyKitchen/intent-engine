@@ -144,6 +144,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/best-devops-configuration-drift-detection-tools-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-devops-configuration-drift-detection-tools-in-2025",
+    "premium": false
+  },
+  {
     "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
     "fixes": [
       "canonical",
@@ -327,6 +340,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/does-engagebay-have-a-free-plan-2026-full-breakdown.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/does-engagebay-have-a-free-plan-2026-full-breakdown",
+    "premium": false
+  },
+  {
     "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -353,7 +379,7 @@
     "premium": true
   },
   {
-    "file": "site/pages/elevenlabs-vs-murf-which-is-better-in-2026.html",
+    "file": "site/pages/engagebay-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -362,8 +388,8 @@
       "schema_safety",
       "trust_block"
     ],
-    "path": "/pages/elevenlabs-vs-murf-which-is-better-in-2026",
-    "premium": false
+    "path": "/pages/engagebay-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
   },
   {
     "file": "site/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict.html",
@@ -483,6 +509,32 @@
     "premium": true
   },
   {
+    "file": "site/pages/hubspot-vs-notion-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hubspot-vs-notion-which-is-better-in-2026",
+    "premium": true
+  },
+  {
+    "file": "site/pages/hubspot-vs-zoho-crm-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hubspot-vs-zoho-crm-which-is-better-in-2026",
+    "premium": true
+  },
+  {
     "file": "site/pages/impact-com-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -558,6 +610,19 @@
       "trust_block"
     ],
     "path": "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/mailchimp-vs-hubspot-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/mailchimp-vs-hubspot-which-is-better-in-2026",
     "premium": true
   },
   {
@@ -847,6 +912,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/semrush-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -871,19 +949,6 @@
     ],
     "path": "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/semrush-vs-moz-pro-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/semrush-vs-moz-pro-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/shopify-pricing-history-2026.html",
