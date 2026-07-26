@@ -1,12 +1,12 @@
 {
   "current_month": "July 2026",
   "today": "2026-07-26",
-  "titles_rewritten": 3,
-  "descs_rewritten": 29,
-  "dates_refreshed": 1,
-  "answers_added": 15,
-  "files_changed": 31,
-  "files_scanned": 1484,
+  "titles_rewritten": 5,
+  "descs_rewritten": 21,
+  "dates_refreshed": 0,
+  "answers_added": 16,
+  "files_changed": 25,
+  "files_scanned": 1485,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
@@ -15,13 +15,23 @@
     },
     {
       "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free (20M Events) vs $28/mo Growth [July Verified]",
+      "before": "Mixpanel Pricing 2026: Every Change, Real Costs &amp; July 2026 Update",
       "after": "Mixpanel Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
     },
     {
       "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "NordLayer Pricing 2026: $9 Lite, $11 Core, $14 Business [July Compared]",
+      "before": "NordLayer Pricing 2026: Every Change, Real Costs &amp; July 2026 Update",
       "after": "NordLayer Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "notion-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Notion Pricing 2026: Every Plan Change, Real Costs &amp; July 2026 Update",
+      "after": "Notion Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "xero-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Xero Pricing 2026: Every Change, Real Costs &amp; July 2026 Update",
+      "after": "Xero Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
