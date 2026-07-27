@@ -11,9 +11,9 @@
 - `/pages/aweber-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/best-accounting-software-for-freelancers-in-2026`: canonical, image_alt, internal_links, meta, organization_schema, schema_safety, trust_block
-- `/pages/best-devops-configuration-drift-detection-tools-in-2025`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/best-devtools-for-secure-code-review-in-2025`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed`: canonical, image_alt, internal_links, meta, organization_schema, schema_safety, trust_block
+- `/pages/best-wordpress-page-builders-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/canva-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/clearscope-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -26,7 +26,6 @@
 - `/pages/deel-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/digitalocean-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/docusign-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/does-engagebay-have-a-free-plan-2026-full-breakdown`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/elementor-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/engagebay-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -39,15 +38,12 @@
 - `/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/hubspot-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/hubspot-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/hubspot-vs-notion-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/hubspot-vs-zoho-crm-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/impact-com-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/kajabi-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/linear-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/linear-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/mailchimp-vs-hubspot-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/miro-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/mixpanel-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/monday-com-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -64,13 +60,13 @@
 - `/pages/pipedrive-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/protonvpn-vs-windscribe-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/ramp-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/rippling-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/saas-buyer-signals-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/salesforce-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/salesforce-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/se-ranking-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/semrush-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/semrush-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/shopify-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -87,6 +83,7 @@
 - `/pages/tresorit-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/vultr-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/workable-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/xero-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, meta, organization_schema, schema_safety, trust_block
 - `/pages/xero-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/zendesk-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/zoom-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block

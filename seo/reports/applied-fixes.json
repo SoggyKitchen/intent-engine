@@ -144,19 +144,6 @@
     "premium": false
   },
   {
-    "file": "site/pages/best-devops-configuration-drift-detection-tools-in-2025.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-devops-configuration-drift-detection-tools-in-2025",
-    "premium": false
-  },
-  {
     "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
     "fixes": [
       "canonical",
@@ -181,6 +168,19 @@
       "trust_block"
     ],
     "path": "/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-wordpress-page-builders-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-wordpress-page-builders-2026",
     "premium": false
   },
   {
@@ -340,19 +340,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/does-engagebay-have-a-free-plan-2026-full-breakdown.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/does-engagebay-have-a-free-plan-2026-full-breakdown",
-    "premium": false
-  },
-  {
     "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -509,32 +496,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/hubspot-vs-notion-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/hubspot-vs-notion-which-is-better-in-2026",
-    "premium": true
-  },
-  {
-    "file": "site/pages/hubspot-vs-zoho-crm-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/hubspot-vs-zoho-crm-which-is-better-in-2026",
-    "premium": true
-  },
-  {
     "file": "site/pages/impact-com-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -610,19 +571,6 @@
       "trust_block"
     ],
     "path": "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
-  },
-  {
-    "file": "site/pages/mailchimp-vs-hubspot-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/mailchimp-vs-hubspot-which-is-better-in-2026",
     "premium": true
   },
   {
@@ -834,6 +782,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/protonvpn-vs-windscribe-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/protonvpn-vs-windscribe-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/ramp-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -910,19 +871,6 @@
     ],
     "path": "/pages/se-ranking-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/semrush-pricing-history-2026.html",
@@ -1131,6 +1079,20 @@
     ],
     "path": "/pages/workable-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/xero-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "meta",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/xero-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
   },
   {
     "file": "site/pages/xero-review-2026-is-it-worth-it-honest-verdict.html",
