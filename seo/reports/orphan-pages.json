@@ -99,32 +99,7 @@
     }
   },
   {
-    "path": "/pages/educative-pricing-2026-plans-costs-what-you-actually-pay",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/authors/kaylan-von-papen",
-        "/deal-radar",
-        "/go/educative",
-        "/pages/",
-        "/pages/copy-ai-vs-weights-biases-which-is-better-in-2026",
-        "/pages/does-linear-have-a-free-plan-2026-full-breakdown",
-        "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
-        "/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
-        "/pages/hubspot-crm-vs-zoho-crm-which-is-better-in-2026",
-        "/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/rippling-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/tableau-vs-looker-which-is-better-in-2026",
-        "/privacy",
-        "/shortlist"
-      ]
-    }
-  },
-  {
-    "path": "/pages/elementor-vs-wix-which-is-better-in-2026",
+    "path": "/pages/elementor-vs-wpbakery-which-is-better-in-2026",
     "score": {
       "inbound": [],
       "outbound": [
@@ -138,11 +113,11 @@
         "/methodology",
         "/newsletter",
         "/pages/",
-        "/pages/best-elementor-alternatives-in-2026-free-paid",
-        "/pages/best-project-management-software-2026",
+        "/pages/does-elementor-have-a-free-plan-2026-full-breakdown",
         "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/gumroad-vs-recharge-which-is-better-in-2026",
-        "/pages/streamyard-vs-descript-which-is-better-in-2026",
+        "/pages/mailchimp-vs-hubspot-which-is-better-in-2026",
+        "/pages/weaviate-vs-cohere-which-is-better-in-2026",
+        "/pages/wrike-vs-todoist-which-is-better-in-2026",
         "/privacy",
         "/roi",
         "/shortlist"
@@ -150,7 +125,34 @@
     }
   },
   {
-    "path": "/pages/parallels-desktop-coupon-code-promo-codes-2026-verified-discounts",
+    "path": "/pages/fiverr-pro-worth-it-2026-honest-review",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/contact",
+        "/go/fiverr-pro",
+        "/pages/7-best-canva-alternatives-in-2026-free-paid",
+        "/pages/best-fiverr-alternatives-2026",
+        "/pages/best-web-hosting-2026",
+        "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
+        "/pages/does-fiverr-have-a-free-plan-2026-full-breakdown",
+        "/pages/fiverr-coupon-code-promo-codes-2026-verified-discounts",
+        "/pages/fiverr-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/fiverr-vs-freelancer-which-is-better-in-2026",
+        "/pages/fiverr-vs-toptal-which-is-better-in-2026",
+        "/pages/fiverr-vs-upwork-which-is-better-in-2026",
+        "/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/semrush-vs-moz-which-is-better-in-2026"
+      ]
+    }
+  },
+  {
+    "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
     "score": {
       "inbound": [],
       "outbound": [
@@ -159,18 +161,19 @@
         "/affiliate-disclosure",
         "/contact",
         "/deal-radar",
-        "/editorial",
-        "/go/parallels",
+        "/editorial-policy",
+        "/go/hostpapa",
         "/newsletter",
         "/pages/",
-        "/pages/best-developer-productivity-tools-for-engineering-teams-in-2025",
-        "/pages/does-hubspot-have-a-free-plan-2026-full-breakdown",
-        "/pages/ironclad-vs-docusign-clm-which-is-better-in-2026",
-        "/pages/keeper-vs-password-boss-which-is-better-in-2026",
-        "/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/shopify-vs-chargebee-which-is-better-in-2026",
+        "/pages/best-ai-powered-cybersecurity-coding-assistants-in-2025",
+        "/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/mangools-vs-clearscope-which-is-better-in-2026",
+        "/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/railway-vs-linode-which-is-better-in-2026",
+        "/pages/surfer-seo-vs-rankmath-pro-which-is-better-in-2026",
         "/privacy",
+        "/roi",
         "/shortlist",
         "/terms"
       ]
