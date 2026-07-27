@@ -1,12 +1,12 @@
 {
   "current_month": "July 2026",
   "today": "2026-07-27",
-  "titles_rewritten": 4,
+  "titles_rewritten": 2,
   "descs_rewritten": 24,
   "dates_refreshed": 0,
   "answers_added": 16,
-  "files_changed": 27,
-  "files_scanned": 1486,
+  "files_changed": 24,
+  "files_scanned": 1487,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
@@ -14,19 +14,9 @@
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
     },
     {
-      "file": "engagebay-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "EngageBay Free Trial 2026: 30% Recurring Commissions \u2014 How to Start",
-      "after": "EngageBay Free Trial 2026: How to Get the Full July 2026 Offer"
-    },
-    {
-      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free \u2192 $28/mo Growth \u2014 The Event-Volume Trap Explained",
-      "after": "Mixpanel Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "NordLayer Pricing 2026: $9\u2013$14/User/Mo + 5-Seat Minimum \u2014 Full Plan Breakdown",
-      "after": "NordLayer Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
+      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Ramp Pricing 2026: Every Change Tracked \u2014 Free Card + Plus $15/user [July Update]",
+      "after": "Ramp Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
@@ -51,14 +41,14 @@
       "after": "Updated July 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-accounting-software-for-freelancers-in-2026.html",
-      "before": "Discover the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features.",
-      "after": "Updated July 2026. the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features Real tests, real pricing \u2014\u2026"
-    },
-    {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated July 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated July 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {
