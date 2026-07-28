@@ -144,6 +144,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/best-devops-configuration-drift-detection-tools-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-devops-configuration-drift-detection-tools-in-2025",
+    "premium": false
+  },
+  {
     "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
     "fixes": [
       "canonical",
@@ -168,19 +181,6 @@
       "trust_block"
     ],
     "path": "/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed",
-    "premium": false
-  },
-  {
-    "file": "site/pages/best-wordpress-page-builders-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-wordpress-page-builders-2026",
     "premium": false
   },
   {
@@ -364,6 +364,19 @@
     ],
     "path": "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step",
+    "premium": false
   },
   {
     "file": "site/pages/engagebay-review-2026-is-it-worth-it-honest-verdict.html",
@@ -769,6 +782,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/protonvpn-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/protonvpn-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -780,19 +806,6 @@
     ],
     "path": "/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/protonvpn-vs-windscribe-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/protonvpn-vs-windscribe-which-is-better-in-2026",
-    "premium": false
   },
   {
     "file": "site/pages/ramp-review-2026-is-it-worth-it-honest-verdict.html",
@@ -1079,20 +1092,6 @@
     ],
     "path": "/pages/workable-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/xero-pricing-2026-plans-costs-what-you-actually-pay.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "meta",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/xero-pricing-2026-plans-costs-what-you-actually-pay",
-    "premium": false
   },
   {
     "file": "site/pages/xero-review-2026-is-it-worth-it-honest-verdict.html",
