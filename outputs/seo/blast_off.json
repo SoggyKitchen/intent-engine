@@ -1,12 +1,12 @@
 {
   "current_month": "July 2026",
   "today": "2026-07-28",
-  "titles_rewritten": 4,
-  "descs_rewritten": 22,
-  "dates_refreshed": 1,
+  "titles_rewritten": 3,
+  "descs_rewritten": 25,
+  "dates_refreshed": 0,
   "answers_added": 15,
-  "files_changed": 26,
-  "files_scanned": 1488,
+  "files_changed": 25,
+  "files_scanned": 1489,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
@@ -14,18 +14,13 @@
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
     },
     {
-      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free (20M Events) to Growth $28/mo \u2014 Event Traps Explained (July)",
-      "after": "Mixpanel Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "notion-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Notion Pricing 2026: Free to $15/User + $10 AI Add-On \u2014 All Plans Compared (July)",
-      "after": "Notion Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
+      "file": "engagebay-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "EngageBay Coupon Code 2026 [Verified July] \u2014 Best Discount &amp; Free Plan",
+      "after": "EngageBay Coupon 2026 (Verified July 2026) \u2014 Real Working Codes"
     },
     {
       "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Ramp Pricing 2026: Free Card vs $12\u201315/User Plans \u2014 Real Costs & Bill Pay Fees (July)",
+      "before": "Ramp Pricing 2026: Every Plan Change, Real Costs &amp; July Update [Verified]",
       "after": "Ramp Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
@@ -51,14 +46,14 @@
       "after": "Updated July 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-accounting-software-for-freelancers-in-2026.html",
-      "before": "Discover the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features.",
-      "after": "Updated July 2026. the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features Real tests, real pricing \u2014\u2026"
-    },
-    {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated July 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated July 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for\u2026"
     }
   ],
   "indexnow": {
