@@ -1,9 +1,9 @@
 {
-  "total_pages": 1472,
-  "updated": 1469,
+  "total_pages": 1474,
+  "updated": 1471,
   "skipped": 3,
-  "orphans_before": 68,
-  "orphans_after": 64,
+  "orphans_before": 69,
+  "orphans_after": 54,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,7 +11,7 @@
         "/pages/nordlayer-vs-duo-security-which-is-better-in-2026",
         "/pages/tresorit-vs-box-which-is-better-in-2026",
         "/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/google-meet-vs-loom-which-is-better-in-2026",
+        "/pages/google-meet-vs-descript-which-is-better-in-2026",
         "/pages/stripe-vs-chargebee-which-is-better-in-2026"
       ]
     },
@@ -22,7 +22,7 @@
         "/pages/okta-vs-cloudflare-which-is-better-in-2026",
         "/pages/does-tresorit-have-a-free-plan-2026-full-breakdown",
         "/pages/weaviate-vs-openai-api-which-is-better-in-2026",
-        "/pages/clickup-vs-todoist-which-is-better-in-2026"
+        "/pages/clickup-vs-smartsheet-which-is-better-in-2026"
       ]
     },
     {
@@ -31,8 +31,8 @@
         "/pages/lastpass-vs-bitwarden-which-is-better-in-2026",
         "/pages/nordlayer-vs-twingate-which-is-better-in-2026",
         "/pages/cloudflare-access-vs-tailscale-which-is-better-in-2026",
-        "/pages/railway-vs-google-cloud-which-is-better-in-2026",
-        "/pages/shopify-vs-squarespace-which-is-better-in-2026"
+        "/pages/zendesk-vs-freshdesk-which-is-better-in-2026",
+        "/pages/writesonic-vs-anthropic-claude-which-is-better-in-2026"
       ]
     }
   ]

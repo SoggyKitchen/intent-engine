@@ -1,17 +1,24 @@
 {
-  "generated_at": "2026-07-29T06:34:36.684726+00:00",
+  "generated_at": "2026-07-29T21:52:58.939505+00:00",
   "stats": {
-    "sitemap_urls": 1499,
-    "sitemap_with_lastmod": 1499,
-    "total_pages": 1549,
-    "indexable_pages": 1537,
-    "desc_over_165": 37,
-    "title_over_70": 142,
-    "money_pages": 1265,
-    "soft": 28
+    "sitemap_urls": 1501,
+    "sitemap_with_lastmod": 1501,
+    "total_pages": 1551,
+    "indexable_pages": 1539,
+    "desc_over_165": 45,
+    "title_over_70": 145,
+    "money_pages": 1266,
+    "soft": 35
   },
   "hard_failures": [],
   "soft_issues": [
+    "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/convertkit",
+    "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/convertkit",
+    "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/aweber",
+    "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/convertkit",
+    "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/aweber",
+    "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/convertkit",
+    "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/aweber",
     "site/pages/thanks.html: title <30 chars (29)",
     "site/pages/v3-preview-404.html: title <30 chars (25)",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/elementor",
@@ -41,5 +48,5 @@
     "site/pages/engagebay-vs-zoho-crm-which-is-better-in-2026.html: /go/ link without rel attribute: /go/engagebay",
     "site/pages/v3-preview-contact.html: title <30 chars (27)"
   ],
-  "soft_issues_total": 28
+  "soft_issues_total": 35
 }
