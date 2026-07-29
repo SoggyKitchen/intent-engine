@@ -2,7 +2,7 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-06-27 to 2026-07-25
+Range: 2026-06-28 to 2026-07-26
 Rows pulled: 42
 
 ## Top Opportunities
@@ -26,10 +26,10 @@ Rows pulled: 42
 - Score 25.0: `https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 40.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/tableau-vs-segment-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/zoom-vs-riverside-fm-which-is-better-in-2026.html` query `(page rollup)` - impressions 1.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
-- Score 20.96: `https://saaspare.org/pages/` query `(page rollup)` - impressions 48.0, CTR 0.0, position 5.4. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
-- Score 20.62: `https://saaspare.org/pages/` query `saaspare.org` - impressions 31.0, CTR 0.0, position 6.81. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
-- Score 20.54: `https://saaspare.org/` query `saaspare.org` - impressions 27.0, CTR 0.0, position 1.0. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
-- Score 0.86: `https://saaspare.org/` query `(page rollup)` - impressions 43.0, CTR 0.0233, position 1.49. Monitor and prioritize if impressions continue rising.
+- Score 20.92: `https://saaspare.org/pages/` query `(page rollup)` - impressions 46.0, CTR 0.0, position 5.5. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
+- Score 20.6: `https://saaspare.org/pages/` query `saaspare.org` - impressions 30.0, CTR 0.0, position 6.87. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
+- Score 20.52: `https://saaspare.org/` query `saaspare.org` - impressions 26.0, CTR 0.0, position 1.0. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
+- Score 0.8: `https://saaspare.org/` query `(page rollup)` - impressions 40.0, CTR 0.025, position 1.52. Monitor and prioritize if impressions continue rising.
 - Score 0.34: `https://saaspare.org/roi` query `saaspare.org` - impressions 17.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 0.34: `https://saaspare.org/shortlist` query `saaspare.org` - impressions 17.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 0.34: `https://saaspare.org/roi` query `(page rollup)` - impressions 17.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
