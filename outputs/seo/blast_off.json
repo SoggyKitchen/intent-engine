@@ -1,27 +1,17 @@
 {
   "current_month": "July 2026",
-  "today": "2026-07-28",
-  "titles_rewritten": 3,
-  "descs_rewritten": 25,
-  "dates_refreshed": 0,
+  "today": "2026-07-29",
+  "titles_rewritten": 1,
+  "descs_rewritten": 20,
+  "dates_refreshed": 1155,
   "answers_added": 15,
-  "files_changed": 25,
+  "files_changed": 1170,
   "files_scanned": 1489,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
-    },
-    {
-      "file": "engagebay-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "EngageBay Coupon Code 2026 [Verified July] \u2014 Best Discount &amp; Free Plan",
-      "after": "EngageBay Coupon 2026 (Verified July 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "ramp-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Ramp Pricing 2026: Every Plan Change, Real Costs &amp; July Update [Verified]",
-      "after": "Ramp Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [

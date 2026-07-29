@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-28T21:45:09+00:00",
+  "generated_at_utc": "2026-07-29T06:07:30+00:00",
   "mode": "apply",
   "pages_flagged": 35,
   "claim_labels_seen": [
@@ -502,7 +502,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-- related-"
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-- related"
         }
       ],
       "trust_state_bumped": false
