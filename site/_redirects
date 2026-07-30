@@ -339,3 +339,5 @@
 
 # EngageBay — Awin APPROVED 2026-07-22 (Advertiser ID 127075, Publisher 2917137) — 30% recurring commissions
 /go/engagebay https://www.awin1.com/cread.php?awinmid=127075&awinaffid=2917137&ued=https%3A%2F%2Fwww.engagebay.com%2F 302
+# EngageBay pricing deep link — from Awin email 2026-07-30 (direct to pricing page, higher conversion)
+/go/engagebay-pricing https://www.awin1.com/cread.php?awinmid=127075&awinaffid=2917137&campaign=AffiliatePricingPush2026&ued=https%3A%2F%2Fwww.engagebay.com%2Fpricing%2Fall-in-one 302
