@@ -18,7 +18,7 @@
   <meta name="twitter:site" content="@SaaSpare">
   <meta name="twitter:image" content="https://saaspare.org/og/default.svg">
   <meta name="author" content="Kaylan von Papen">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Does ProtonMail Have a Free Plan in 2026? Yes — 1GB Storage, 150 Msg/Day [Full Breakdown]","description":"ProtonMail free plan: 1GB storage, 150 emails/day, 1 address, end-to-end encryption. What's included, what's locked, and when to upgrade.","url":"https://saaspare.org/pages/does-protonmail-have-a-free-plan-2026-full-breakdown","datePublished":"2026-07-31","dateModified":"2026-07-31","author":{"@type":"Person","name":"Kaylan von Papen","url":"https://saaspare.org/authors/kaylan-von-papen"},"publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Does ProtonMail Have a Free Plan in 2026? Yes — 1GB Storage, 150 Msg/Day [Full Breakdown]","description":"ProtonMail free plan: 1GB storage, 150 emails/day, 1 address, end-to-end encryption. What's included, what's locked, and when to upgrade.","url":"https://saaspare.org/pages/does-protonmail-have-a-free-plan-2026-full-breakdown","datePublished":"2026-07-31","dateModified": "2026-07-31","author":{"@type":"Person","name":"Kaylan von Papen","url":"https://saaspare.org/authors/kaylan-von-papen"},"publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is ProtonMail free forever?","acceptedAnswer":{"@type":"Answer","text":"Yes — ProtonMail's free plan has no time limit or expiry. You can use it indefinitely with 1GB storage, 1 email address, and 150 messages per day at no cost."}},{"@type":"Question","name":"What is the catch with ProtonMail free?","acceptedAnswer":{"@type":"Answer","text":"Three real limits: 1GB storage (fills up faster than you'd expect), 150 outgoing messages per day, and only 1 email address. No custom domains and no priority customer support on the free plan. There are no ads and no data selling — Proton funds the free tier from paid subscribers."}},{"@type":"Question","name":"What is the difference between Proton Free and Mail Plus?","acceptedAnswer":{"@type":"Answer","text":"Proton Free gives you 1GB storage, 1 address, 150 msg/day. Mail Plus ($3.99/mo annual) gives 15GB storage, 10 email addresses, 1 custom domain, unlimited messages per day, priority support, and no Proton branding."}},{"@type":"Question","name":"Does ProtonMail free include ProtonVPN?","acceptedAnswer":{"@type":"Answer","text":"Yes — the Proton Free account includes ProtonVPN Free as well: 1 device, 3 server locations, unlimited data. They are the same Proton account with separate apps."}},{"@type":"Question","name":"Is ProtonMail free safe?","acceptedAnswer":{"@type":"Answer","text":"Yes — ProtonMail free uses the same end-to-end encryption, open-source code, and Swiss privacy laws as the paid plans. Zero-access encryption means Proton cannot read your emails. Only storage, address count, and daily message limits differ."}}]}</script>
   <link rel="manifest" href="/manifest.webmanifest">
   <script id="clarity-ms">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wne1kku7w1");</script>
@@ -49,53 +49,264 @@ nav.sp-topnav{display:none!important}
   </style>
   <script>(function(){window.addEventListener('scroll',function(){var nav=document.getElementById('sp-nav');if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}},{passive:true});var path=window.location.pathname;var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');var best=null,bestLen=0;links.forEach(function(a){var href=a.getAttribute('href');if(!href||href==='/')return;if(path===href||path.indexOf(href)===0){if(href.length>bestLen){best=a;bestLen=href.length;}}});if(best){best.classList.add('active');}})();</script>
   <style id="upgrade-v2">
-:root{--red:#e94560;--red2:#c73652;--green:#36e6a1;--amber:#f5b942;--bg:#050407;--text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.52);--dim:rgba(255,248,245,.22);--border:rgba(255,255,255,.08);--card:rgba(255,255,255,.042)}
-.page-hero{padding:5rem 0 3rem;background:radial-gradient(ellipse 120% 60% at 50% 0%,rgba(220,45,72,.14) 0%,transparent 65%);border-bottom:1px solid var(--border);margin-bottom:2.5rem;}
-.breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:4px;font-size:.78rem;color:var(--muted);margin-bottom:1.2rem;}
+/* ── PAGE UPGRADE v2 — premium shell for comparison/alternatives/review pages ── */
+:root{--red:#e94560;--red2:#c73652;--green:#36e6a1;--amber:#f5b942;--bg:#050407;
+  --text:rgba(255,248,245,.88);--muted:rgba(255,248,245,.52);--dim:rgba(255,248,245,.22);
+  --border:rgba(255,255,255,.08);--card:rgba(255,255,255,.042)}
+
+/* ── PAGE HERO ── */
+.page-hero{
+  padding:5rem 0 3rem;
+  background:radial-gradient(ellipse 120% 60% at 50% 0%,rgba(220,45,72,.14) 0%,transparent 65%);
+  border-bottom:1px solid var(--border);margin-bottom:2.5rem;
+}
+.breadcrumb{
+  display:flex;align-items:center;flex-wrap:wrap;gap:4px;
+  font-size:.78rem;color:var(--muted);margin-bottom:1.2rem;
+}
 .breadcrumb a{color:var(--muted);text-decoration:none;transition:color .15s}
 .breadcrumb a:hover{color:#fff}
 .breadcrumb span{color:var(--dim)}
-.page-hero h1,.sp-h1{font-size:clamp(1.9rem,4.5vw,3rem);font-weight:900;color:#fff;line-height:1.12;letter-spacing:-.04em;margin-bottom:1rem;}
-.featured-answer,.qa-block{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-left:3px solid var(--red);border-radius:14px;padding:1.1rem 1.3rem;margin:1.2rem 0;font-size:.88rem;color:var(--text);line-height:1.7;}
+
+/* ── H1 ── */
+.page-hero h1,.sp-h1{
+  font-size:clamp(1.9rem,4.5vw,3rem);font-weight:900;color:#fff;
+  line-height:1.12;letter-spacing:-.04em;margin-bottom:1rem;
+}
+
+/* ── QUICK ANSWER FEATURED BOX ── */
+.featured-answer,.qa-block{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);
+  border-left:3px solid var(--red);border-radius:14px;
+  padding:1.1rem 1.3rem;margin:1.2rem 0;font-size:.88rem;
+  color:var(--text);line-height:1.7;
+}
 .featured-answer strong,.qa-block strong{color:#fff}
-.subtitle,.sp-lead{font-size:1rem;color:var(--muted);line-height:1.7;margin:.5rem 0 1.2rem;max-width:680px;}
-.trust-bar{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:1rem;}
-.trust-bar span{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:4px 12px;font-size:.72rem;font-weight:600;color:var(--muted);}
+
+/* ── SUBTITLE / LEAD ── */
+.subtitle,.sp-lead{
+  font-size:1rem;color:var(--muted);line-height:1.7;
+  margin:.5rem 0 1.2rem;max-width:680px;
+}
+
+/* ── TRUST BAR ── */
+.trust-bar{
+  display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:1rem;
+}
+.trust-bar span{
+  display:inline-flex;align-items:center;gap:5px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+  border-radius:100px;padding:4px 12px;font-size:.72rem;
+  font-weight:600;color:var(--muted);
+}
 .trust-bar span::before{content:"✓ ";color:var(--green)}
+
+/* ── CONTAINER ── */
 .container{max-width:1100px;margin:0 auto;}
-.tldr-box{background:rgba(233,69,96,.06);border:1px solid rgba(233,69,96,.18);border-radius:14px;padding:1.1rem 1.4rem;font-size:.9rem;color:var(--text);margin-bottom:2rem;line-height:1.65;}
+
+/* ── TLDR BOX ── */
+.tldr-box{
+  background:rgba(233,69,96,.06);border:1px solid rgba(233,69,96,.18);
+  border-radius:14px;padding:1.1rem 1.4rem;font-size:.9rem;
+  color:var(--text);margin-bottom:2rem;line-height:1.65;
+}
 .tldr-box strong{color:var(--red)}
-.native-intent-block{background:rgba(255,255,255,.042);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:1.8rem 2rem;margin:2rem 0;}
-.mini-kicker{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;}
-.native-intent-block h3{font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:.5rem;line-height:1.3;}
+
+/* ── NATIVE INTENT / CTA CARD ── */
+.native-intent-block{
+  background:rgba(255,255,255,.042);border:1px solid rgba(255,255,255,.09);
+  border-radius:18px;padding:1.8rem 2rem;margin:2rem 0;
+}
+.mini-kicker{
+  font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--red);margin-bottom:.5rem;
+}
+.native-intent-block h3{
+  font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:.5rem;line-height:1.3;
+}
 .native-intent-block p{font-size:.86rem;color:var(--muted);line-height:1.65;margin-bottom:1rem}
-.native-intent-block a{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:.55rem 1.2rem;border-radius:100px;font-weight:700;font-size:.82rem;text-decoration:none;box-shadow:0 4px 16px rgba(233,69,96,.35);transition:transform .15s,box-shadow .15s;}
+.native-intent-block a{
+  display:inline-flex;align-items:center;gap:6px;
+  background:linear-gradient(135deg,var(--red),var(--red2));
+  color:#fff;padding:.55rem 1.2rem;border-radius:100px;
+  font-weight:700;font-size:.82rem;text-decoration:none;
+  box-shadow:0 4px 16px rgba(233,69,96,.35);transition:transform .15s,box-shadow .15s;
+}
 .native-intent-block a:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(233,69,96,.5)}
+
+/* ── SECTION HEADINGS ── */
 .section{margin:2.5rem 0}
-.section h2,.section h3{font-size:clamp(1.3rem,3vw,1.9rem);font-weight:900;color:#fff;letter-spacing:-.03em;margin-bottom:1rem;line-height:1.2;}
+.section h2,.section h3{
+  font-size:clamp(1.3rem,3vw,1.9rem);font-weight:900;color:#fff;
+  letter-spacing:-.03em;margin-bottom:1rem;line-height:1.2;
+}
+.section h2 span.sp-accent,.section h3 span.sp-accent{color:var(--red)}
 .section p{font-size:.9rem;color:var(--muted);line-height:1.75;margin-bottom:.9rem}
-.section table,.comparison-table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:1.5rem 0;font-size:.85rem;}
-.section table th,.comparison-table th{padding:14px 16px;background:rgba(14,8,18,.95);font-size:.7rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border);text-align:left;}
-.section table td,.comparison-table td{padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.05);color:rgba(255,248,245,.72);vertical-align:middle;}
+
+/* ── COMPARISON TABLE ── */
+.section table,.comparison-table{
+  width:100%;border-collapse:separate;border-spacing:0;
+  border:1px solid var(--border);border-radius:18px;overflow:hidden;
+  margin:1.5rem 0;font-size:.85rem;
+}
+.section table th,.comparison-table th{
+  padding:14px 16px;background:rgba(14,8,18,.95);
+  font-size:.7rem;font-weight:900;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--muted);
+  border-bottom:1px solid var(--border);text-align:left;position:relative;
+}
+.section table td,.comparison-table td{
+  padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.05);
+  color:rgba(255,248,245,.72);vertical-align:middle;
+}
 .section table tr:last-child td,.comparison-table tr:last-child td{border-bottom:none}
 .section table tr:hover td,.comparison-table tr:hover td{background:rgba(255,255,255,.025)}
-.section table td:first-child,.comparison-table td:first-child{color:#fff;font-weight:600;}
-.winner-badge{display:inline-flex;align-items:center;gap:4px;background:rgba(233,69,96,.15);border:1px solid rgba(233,69,96,.3);color:var(--red);border-radius:100px;padding:2px 8px;font-size:.62rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-left:6px;vertical-align:middle;}
-.tbl-cta{display:inline-block;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff!important;padding:.35rem .9rem;border-radius:100px;font-weight:700;font-size:.75rem;text-decoration:none!important;white-space:nowrap;box-shadow:0 3px 12px rgba(233,69,96,.3);transition:transform .15s,box-shadow .15s;}
+.section table td:first-child,.comparison-table td:first-child{
+  color:#fff;font-weight:600;
+}
+
+/* ── WINNER BADGE ── */
+.winner-badge{
+  display:inline-flex;align-items:center;gap:4px;
+  background:rgba(233,69,96,.15);border:1px solid rgba(233,69,96,.3);
+  color:var(--red);border-radius:100px;
+  padding:2px 8px;font-size:.62rem;font-weight:800;
+  letter-spacing:.04em;text-transform:uppercase;margin-left:6px;
+  vertical-align:middle;
+}
+
+/* ── TABLE CTA BUTTONS ── */
+.tbl-cta{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--red),var(--red2));
+  color:#fff!important;padding:.35rem .9rem;border-radius:100px;
+  font-weight:700;font-size:.75rem;text-decoration:none!important;
+  white-space:nowrap;box-shadow:0 3px 12px rgba(233,69,96,.3);
+  transition:transform .15s,box-shadow .15s;
+}
 .tbl-cta:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(233,69,96,.45)}
-.verdict-box,.score-box{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:1.5rem 1.8rem;margin:1.5rem 0;}
-.section-eyebrow,.sp-eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;}
+.tbl-cta.alt{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+  box-shadow:none;
+}
+.tbl-cta.alt:hover{background:rgba(255,255,255,.12);box-shadow:none}
+
+/* ── VERDICT / SCORE SECTIONS ── */
+.verdict-box,.score-box{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);
+  border-radius:18px;padding:1.5rem 1.8rem;margin:1.5rem 0;
+}
+
+/* ── SECTION EYEBROW ── */
+.section-eyebrow,.sp-eyebrow{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.7rem;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--red);margin-bottom:.5rem;
+}
+
+/* ── AFFILIATE DISCLOSURE PILL (keep only one) ── */
 .aff-disclosure-pill{display:none!important}
-.author-byline,.byline{font-size:.78rem;color:var(--muted);margin-bottom:1rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;}
+
+/* ── HIDE JUNK ── */
+.ad-placeholder,.ad-slot,.advertisement{display:none!important}
+
+/* ── AUTHOR BYLINE ── */
+.author-byline,.byline{
+  font-size:.78rem;color:var(--muted);margin-bottom:1rem;
+  display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;
+}
 .author-byline a,.byline a{color:var(--red);text-decoration:none}
-.journey-links-block{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.2rem 1.5rem;margin:2rem 0;}
+
+/* ── JOURNEY LINKS ── */
+.journey-links-block{
+  background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;padding:1.2rem 1.5rem;margin:2rem 0;
+}
 .journey-links-block h4{font-size:.82rem;font-weight:700;color:var(--muted);margin-bottom:.75rem}
-.journey-links-block a{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:.3rem .8rem;font-size:.78rem;color:rgba(255,248,245,.7);text-decoration:none;margin:.2rem;transition:all .15s;}
+.journey-links-block a{
+  display:inline-block;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);border-radius:8px;
+  padding:.3rem .8rem;font-size:.78rem;color:rgba(255,248,245,.7);
+  text-decoration:none;margin:.2rem;transition:all .15s;
+}
 .journey-links-block a:hover{border-color:rgba(233,69,96,.3);color:#fff}
-.faq-item{background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.2rem 1.4rem;margin:.75rem 0;}
+
+/* ── FAQ SECTION ── */
+.faq-item{
+  background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;padding:1.2rem 1.4rem;margin:.75rem 0;
+}
 .faq-item h3,.faq-q{font-size:.92rem;font-weight:700;color:#fff;margin-bottom:.5rem}
 .faq-item p,.faq-a{font-size:.86rem;color:var(--muted);line-height:1.7}
-  </style>
+
+/* ── OUTER WRAPPER ── */
+[style*="max-width:900px"],[style*="max-width: 900px"],
+[style*="max-width:940px"],[style*="max-width: 940px"]{
+  max-width:1100px!important;
+  padding-top:0!important;
+}
+</style>
+
+<script type="application/ld+json" id="schema-software-app" data-schema-pro-injected="1">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Protonmail",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, iOS, Android",
+  "description": "Protonmail is a B2B SaaS tool covered by SaaSpare with verified pricing and an honest editorial verdict.",
+  "url": "https://saaspare.org/pages/does-protonmail-have-a-free-plan-2026-full-breakdown",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "0",
+    "offerCount": "3",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+<script type="application/ld+json" id="schema-howto" data-schema-pro-injected="1">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Get Protonmail Free Trial in 2026",
+  "url": "https://saaspare.org/pages/does-protonmail-have-a-free-plan-2026-full-breakdown",
+  "totalTime": "PT5M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Open the Protonmail sign-up page",
+      "text": "Click through to the Protonmail sign-up form linked on this page. Some vendors hide the trial CTA \u2014 we link directly to the trial path that does not require a sales call."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Use a real work email",
+      "text": "Most B2B vendors block free-mail providers. Use your actual work email so the trial activates correctly and your data persists if you upgrade."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Skip credit card if possible",
+      "text": "Where Protonmail offers a no-card trial, choose that path. Card-required trials auto-convert to paid; we flag which trials convert vs which expire."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Test the actual workflow you'll buy for",
+      "text": "Don't tour the demo data \u2014 load your real workflow. The trial reveals integration gaps, performance limits, and feature coverage faster than any demo."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Compare against alternatives during the trial",
+      "text": "While in the Protonmail trial, run a parallel free trial of the closest alternative. Decision-quality is highest when you have both tools open at once."
+    }
+  ]
+}
+</script>
 </head>
 <body style="background:#050407;color:rgba(255,248,245,.88)">
 <nav id="sp-nav">
@@ -123,6 +334,8 @@ nav.sp-topnav{display:none!important}
   <nav class="breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/pages/">Email</a> <span>/</span> <span>ProtonMail Free Plan</span></nav>
 
   <h1 class="sp-h1">Does ProtonMail Have a Free Plan in 2026?<br><span style="color:#ff416d;">Yes — But 3 Limits Will Catch You Out</span></h1>
+<p class="aff-disclosure-pill" style="font-size:.78rem;color:rgba(255,255,255,.55);background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.18);padding:.55rem .9rem;border-radius:8px;margin:1rem 0 1.2rem 0;line-height:1.5;max-width:880px"><strong style="color:rgba(255,255,255,.78)">Affiliate disclosure:</strong> Some links on this page are commission-bearing. We may earn if you buy after clicking — this never changes our editorial verdict. Read our <a href="/affiliate-disclosure" style="color:#e94560">full disclosure</a>.</p>
+
 
   <p class="author-byline">By <a href="/authors/kaylan-von-papen">Kaylan von Papen</a> &nbsp;·&nbsp; Updated 31 July 2026 &nbsp;·&nbsp; ~8,000 monthly searches</p>
 
@@ -278,19 +491,19 @@ nav.sp-topnav{display:none!important}
     <a href="/pages/protonvpn-vs-surfshark-which-is-better-in-2026">ProtonVPN vs Surfshark</a>
   </div>
 
-  <!-- related-links-start (do not edit: managed by internal_links.py) -->
-  <aside class="related-links" aria-label="Related comparisons" style="max-width:920px;margin:3rem auto;padding:1.5rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:14px">
-    <h2 style="font-size:1.1rem;margin:0 0 1rem 0;color:#e94560">Related guides you should also see</h2>
-    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.7rem">
-      <li><a href="/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown">Does ProtonVPN Have a Free Plan? (2026)</a></li>
-      <li><a href="/pages/protonvpn-vs-nordvpn-which-is-better-in-2026">ProtonVPN vs NordVPN 2026: Which Is Better?</a></li>
-      <li><a href="/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay">ProtonVPN Pricing 2026: Full Breakdown</a></li>
-      <li><a href="/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay">ProtonMail Pricing 2026: Plans &amp; Costs</a></li>
-      <li><a href="/pages/nordpass-pricing-2026-plans-costs-what-you-actually-pay">NordPass Pricing 2026</a></li>
-    </ul>
-  </aside>
-  <!-- related-links-end -->
-
+  
+<!-- related-links-start (do not edit: managed by internal_links.py) -->
+<aside class="related-links" aria-label="Related comparisons" style="max-width:920px;margin:3rem auto;padding:1.5rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:14px">
+  <h2 style="font-size:1.1rem;margin:0 0 1rem 0;color:#e94560">Related comparisons you should also see</h2>
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.7rem">
+    <li><a href="/pages/protonmail-pricing-2026-plans-costs-what-you-actually-pay">ProtonMail Pricing 2026</a></li>
+    <li><a href="/pages/does-ubersuggest-have-a-free-plan-2026-full-breakdown">Does Ubersuggest Have a Free Plan? (2026 Full Breakdown)</a></li>
+    <li><a href="/pages/does-amplitude-have-a-free-plan-2026-full-breakdown">Does Amplitude Have a Free Plan? (2026 Full Breakdown)</a></li>
+    <li><a href="/pages/nordlayer-vs-wireguard-which-is-better-in-2026">Nordlayer vs Wireguard 2026: Which Is Better?</a></li>
+    <li><a href="/pages/se-ranking-vs-spyfu-which-is-better-in-2026">SE Ranking vs SpyFu 2026: Which Is Better?</a></li>
+  </ul>
+</aside>
+<!-- related-links-end -->
 </main>
 <footer class="sp-footer">
   <div class="sp-footer-inner">
