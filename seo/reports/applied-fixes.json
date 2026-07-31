@@ -117,19 +117,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/aweber-vs-convertkit-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -167,19 +154,6 @@
       "trust_block"
     ],
     "path": "/pages/best-devtools-for-secure-code-review-in-2025",
-    "premium": false
-  },
-  {
-    "file": "site/pages/best-email-marketing-apps-for-shopify-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-email-marketing-apps-for-shopify-2026",
     "premium": false
   },
   {
@@ -366,6 +340,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/elementor-vs-oxygen-builder-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elementor-vs-oxygen-builder-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -377,6 +364,19 @@
     ],
     "path": "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/engagebay-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/engagebay-pricing-history-2026",
+    "premium": false
   },
   {
     "file": "site/pages/engagebay-review-2026-is-it-worth-it-honest-verdict.html",
