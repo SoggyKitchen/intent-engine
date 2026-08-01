@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-01T06:09:03+00:00",
+  "generated_at_utc": "2026-08-01T21:20:12+00:00",
   "mode": "apply",
   "pages_flagged": 35,
   "claim_labels_seen": [
@@ -348,7 +348,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "description\" content=\"Updated July 2026. NordVPN has no free plan. But it has a 30-day money-back guarantee and a 7-day iOS/macOS App Store trial. Plans start at $2.99/mo (2-year). Full h"
+          "context": "scription\" content=\"Updated August 2026. NordVPN has no free plan. But it has a 30-day money-back guarantee and a 7-day iOS/macOS App Store trial. Plans start at $2.99/mo (2-year).\u2026\"> <"
         },
         {
           "label": "money_back_guarantee",
@@ -502,7 +502,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!--"
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-"
         }
       ],
       "trust_state_bumped": false
