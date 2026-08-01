@@ -237,6 +237,59 @@
         "LOG INTO app.cj.com to get deep links for: GetResponse (ID 3142111), ProtonVPN (ID 5227916), Elementor (ID 6798066), AWeber (ID 5111249), Parallels (ID 2005415)",
         "NOTE: /go/getresponse in _redirects already uses tkqlhce.com CJ tracking link (ACTIVE) \u2014 verify commission is tracking in CJ dashboard"
       ]
+    },
+    {
+      "date": "2026-08-01",
+      "session": "sunday-maximizer-2026-08-01",
+      "built": [
+        "quickbooks-vs-xero-which-is-better-in-2026.html \u2014 head-to-head comparison, full FAQ schema, /go/quickbooks-trial + /go/xero-trial CTAs, sticky CTA, 5-FAQ schema",
+        "moz-vs-semrush-which-is-better-in-2026.html \u2014 Semrush (9.4/10) vs Moz Pro (8.8/10), /go/semrush-trial CTA, FAQPage schema, sticky CTA",
+        "hostpapa-vs-hostgator-which-is-better-in-2026.html \u2014 HostPapa wins (8.4/10), /go/hostpapa CTA, FAQPage schema, sticky CTA"
+      ],
+      "fixed": [
+        "902 pages missing background:#050407 \u2014 fixed via fix_body_background.py (design audit revealed pervasive issue)",
+        "2 pages missing saaspare-ui.css \u2014 fixed by fix_inject_ui_css.py",
+        "Universal nav applied to new pages via fix_universal_nav.py"
+      ],
+      "sitemap": "1509 URLs (was 1471 last week)",
+      "tests": "93/93 passed",
+      "opportunity_gaps_identified": [
+        "918 pages were missing dark background at session start \u2014 nightly CI appears to not be running body_background fix reliably",
+        "quickbooks-vs-xero was missing despite 40K+/mo search volume",
+        "moz-vs-semrush was missing despite Semrush being active CJ affiliate",
+        "hostpapa-vs-hostgator was 4th HostPapa VS page \u2014 good for hub internal linking"
+      ],
+      "revenue_status": {
+        "earning": [
+          "NordVPN",
+          "Surfshark",
+          "Sucuri",
+          "NordPass",
+          "Contabo",
+          "HostPapa",
+          "Semrush",
+          "Shopify",
+          "ElevenLabs"
+        ],
+        "pending": {
+          "HubSpot": "Impact.com PENDING \u2014 39 pages live",
+          "1Password": "PartnerStack PENDING \u2014 37 pages live",
+          "ClickUp": "PartnerStack LOCKED \u2014 27 pages live",
+          "ActiveCampaign": "PartnerStack LOCKED \u2014 20 pages live",
+          "Monday.com": "Impact.com PENDING \u2014 20 pages live",
+          "FreshBooks": "Awin PENDING (applied 2026-06-01) \u2014 19 pages live",
+          "Xero": "Direct (applied 2026-06-01) \u2014 18 pages live",
+          "Dashlane": "CJ TODO \u2014 14 pages live"
+        }
+      },
+      "next_priorities": [
+        "Owner action: log into CJ dashboard to get deep links for GetResponse (3142111), ProtonVPN (5227916), Elementor (6798066), AWeber (5111249), Parallels (2005415)",
+        "Owner action: check Impact.com dashboard for HubSpot/Monday.com approval status",
+        "Owner action: decide on SpamGuard Awin invitation (accepted/declined since Jul 13)",
+        "Claude: build slack-vs-microsoft-teams page (massive volume, ClickUp as alternative CTA)",
+        "Claude: build stripe-vs-paypal page (high volume, Shopify as payment alternative CTA)",
+        "Claude: run investigate why nightly CI body_background fix isn't reliably running"
+      ]
     }
   ],
   "affiliate_approvals": [
