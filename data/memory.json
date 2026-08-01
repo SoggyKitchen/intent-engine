@@ -587,6 +587,30 @@
         "tailscale-vs-zscaler-ctr": "baseline 1.2%, 251 impr, pos 8.78 \u2014 target >2% by Aug 12",
         "engagebay-vs-hubspot": "new page \u2014 watch for impressions by Aug 5"
       }
+    },
+    {
+      "date": "2026-08-01",
+      "session": "revenue-hunter",
+      "gmail_findings": {
+        "awin": "No new approvals. EngageBay (Awin 127075) was already activated in a prior session \u2014 /go/engagebay and /go/engagebay-pricing live with publisher 2917137. EngageBay pricing deep-link email received 2026-07-30 (already incorporated). SpamGuard previously activated. FreshBooks permanently rejected.",
+        "impact": "Semrush contract terms migration (no commission change). Wix asked to reapply (not approved). No new Impact approvals.",
+        "partnerstack": "Still permanently blocked.",
+        "xero_brevo_hotjar": "No new approvals from Xero, Brevo, Hotjar, or Constant Contact."
+      },
+      "activated": "None new \u2014 EngageBay already activated previously",
+      "ctr_title_fixes": "248 pages updated: batch-replaced [July]/[June 2026] \u2192 [August 2026] in <title> and meta description tags site-wide. Top impressions fixed: xero-pricing (486 impr), semrush-pricing (483 impr), gusto-pricing (360 impr), does-asana-have-a-free-plan (327 impr), nordlayer-pricing (270 impr) + 243 more. Also targeted 7 additional pages: datadog-coupon, linear-free-trial, twingate-vs-zscaler, aws-vs-supabase, cloudflare-access free plan, shopify-vs-recurly, semrush-promo-code.",
+      "ramp_pricing_update": "Updated 6 internal FAQ/schema date references from July \u2192 August 2026 in ramp-pricing page",
+      "new_page": "nordpass-vs-1password-which-is-better-in-2026 \u2014 NordPass ($1.99/mo) vs 1Password ($2.99/mo) comparison. FAQPage schema, pricing table, Travel Mode section, 5 buyer-intent FAQs. /go/nordpass (earning NOW), /go/1password-trial (pending Impact). Targets 'nordpass vs 1password' + '1password vs nordpass 2026' queries.",
+      "leaks_fixed": 0,
+      "tests": "93/93 passed",
+      "commit": "52a4f5c0",
+      "next_human_actions": [
+        "ACCEPT any new Awin/PartnerStack invitations if they arrive \u2014 check Awin portal (publisher 2917137)",
+        "Apply for Wix on Impact \u2014 they asked to reapply (could be $100/sale)",
+        "Get CJ deep links from app.cj.com for: GetResponse (3142111), ProtonVPN (5227916), Elementor (6798066), AWeber (5111249), Parallels (2005415) \u2014 these are APPROVED but need real tracking links",
+        "MONITOR: Impact.com applications for HubSpot, 1Password \u2014 check app.impact.com dashboard",
+        "MONITOR: nordpass-vs-1password page \u2014 track GSC position at 21 days (target: <30)"
+      ]
     }
   ],
   "entries": [
