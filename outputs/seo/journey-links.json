@@ -1,9 +1,24 @@
 {
-  "generated_at_utc": "2026-08-01T21:20:05+00:00",
-  "pages_scanned": 1498,
+  "generated_at_utc": "2026-08-01T21:50:09+00:00",
+  "pages_scanned": 1499,
   "index_size": 269,
   "brands_covered": 93,
-  "pages_updated": 0,
+  "pages_updated": 1,
   "mode": "apply",
-  "sample_change": null
+  "sample_change": {
+    "path": "site/pages/nordpass-vs-1password-which-is-better-in-2026.html",
+    "page_type": "comparison",
+    "brands": [
+      "nordpass",
+      "1password"
+    ],
+    "links_added": [
+      "Nordpass pricing breakdown",
+      "Nordpass free trial guide",
+      "Nordpass alternatives",
+      "Nordpass coupons &amp; deals",
+      "Nordpass full review",
+      "1Password pricing breakdown"
+    ]
+  }
 }

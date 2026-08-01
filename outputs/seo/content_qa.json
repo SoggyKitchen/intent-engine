@@ -1,17 +1,24 @@
 {
-  "generated_at": "2026-08-01T21:20:28.716739+00:00",
+  "generated_at": "2026-08-01T21:50:32.733720+00:00",
   "stats": {
-    "sitemap_urls": 1506,
-    "sitemap_with_lastmod": 1506,
-    "total_pages": 1556,
-    "indexable_pages": 1544,
-    "desc_over_165": 14,
-    "title_over_70": 146,
-    "money_pages": 1270,
-    "soft": 35
+    "sitemap_urls": 1507,
+    "sitemap_with_lastmod": 1507,
+    "total_pages": 1557,
+    "indexable_pages": 1545,
+    "desc_over_165": 25,
+    "title_over_70": 169,
+    "money_pages": 1271,
+    "soft": 42
   },
   "hard_failures": [],
   "soft_issues": [
+    "site/pages/nordpass-vs-1password-which-is-better-in-2026.html: /go/ link without rel attribute: /go/nordpass",
+    "site/pages/nordpass-vs-1password-which-is-better-in-2026.html: /go/ link without rel attribute: /go/1password-trial",
+    "site/pages/nordpass-vs-1password-which-is-better-in-2026.html: /go/ link without rel attribute: /go/nordpass",
+    "site/pages/nordpass-vs-1password-which-is-better-in-2026.html: /go/ link without rel attribute: /go/1password-trial",
+    "site/pages/nordpass-vs-1password-which-is-better-in-2026.html: /go/ link without rel attribute: /go/nordpass",
+    "site/pages/nordpass-vs-1password-which-is-better-in-2026.html: /go/ link without rel attribute: /go/nordpass",
+    "site/pages/nordpass-vs-1password-which-is-better-in-2026.html: /go/ link without rel attribute: /go/1password-trial",
     "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/convertkit",
     "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/convertkit",
     "site/pages/aweber-vs-convertkit-which-is-better-in-2026.html: /go/ link without rel attribute: /go/aweber",
@@ -48,5 +55,5 @@
     "site/pages/engagebay-vs-zoho-crm-which-is-better-in-2026.html: /go/ link without rel attribute: /go/engagebay",
     "site/pages/v3-preview-contact.html: title <30 chars (27)"
   ],
-  "soft_issues_total": 35
+  "soft_issues_total": 42
 }
