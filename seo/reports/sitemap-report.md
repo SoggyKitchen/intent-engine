@@ -1,9 +1,9 @@
 # Sitemap Report
 
 - Sitemap exists: True
-- Sitemap URL count: 1505
-- Scanned HTML pages: 1527
-- Scanned pages missing from sitemap: 35
+- Sitemap URL count: 1509
+- Scanned HTML pages: 1532
+- Scanned pages missing from sitemap: 36
 
 ## Missing Examples
 - https://saaspare.org/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f
@@ -31,6 +31,7 @@
 - https://saaspare.org/pages/deel-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/moz-vs-semrush-which-is-better-in-2026
 - https://saaspare.org/pages/notion-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work
 - https://saaspare.org/pages/rippling-promo-code-2026-discounts-deals-that-actually-work

@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-07-29",
+  "endDate": "2026-07-30",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -194,22 +194,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/zoom-vs-riverside-fm-which-is-better-in-2026.html",
-      "position": 1.0,
+      "impressions": 40.0,
+      "page": "https://saaspare.org/pages/",
+      "position": 7.25,
       "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 20.8
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 42.0,
-      "page": "https://saaspare.org/pages/",
-      "position": 6.95,
+      "impressions": 36.0,
+      "page": "https://saaspare.org/",
+      "position": 1.58,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.84
+      "score": 20.72
     },
     {
       "clicks": 0.0,
@@ -230,16 +230,6 @@
       "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
       "score": 20.46
-    },
-    {
-      "clicks": 1.0,
-      "ctr": 0.027,
-      "impressions": 37.0,
-      "page": "https://saaspare.org/",
-      "position": 1.57,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.74
     },
     {
       "clicks": 0.0,
@@ -293,7 +283,7 @@
     }
   ],
   "pageClicks": {
-    "https://saaspare.org/": 1.0,
+    "https://saaspare.org/": 0.0,
     "https://saaspare.org/authors/kaylan-von-papen": 0.0,
     "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026": 0.0,
     "https://saaspare.org/deal-radar": 0.0,
@@ -307,12 +297,11 @@
     "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/shopify-vs-recharge-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/tableau-vs-segment-which-is-better-in-2026": 0.0,
-    "https://saaspare.org/pages/zoom-vs-riverside-fm-which-is-better-in-2026.html": 0.0,
     "https://saaspare.org/roi": 0.0,
     "https://saaspare.org/shortlist": 0.0
   },
-  "rowsPulled": 36,
+  "rowsPulled": 35,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-07-01"
+  "startDate": "2026-07-02"
 }

@@ -12,7 +12,7 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 - **FreshBooks** [PENDING, Awin] — 23 pages, 0 impressions, $200/conv
 - **Deel** [PLACEHOLDER, none] — 9 pages, 0 impressions, $100/conv
 - **ActiveCampaign** [LOCKED, PartnerStack] — 21 pages, 0 impressions, $85/conv
-- **1Password** [PENDING, Impact] — 29 pages, 0 impressions, $45/conv
+- **1Password** [PENDING, Impact] — 30 pages, 0 impressions, $45/conv
 - **Asana** [PLACEHOLDER, none] — 28 pages, 0 impressions, $15/conv
 - **Zoom** [PLACEHOLDER, none] — 9 pages, 0 impressions, $12/conv
 - **Rippling** [PLACEHOLDER, none] — 8 pages, 0 impressions, $120/conv
@@ -25,7 +25,7 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 - **Ramp** [PLACEHOLDER, none] — 7 pages, 0 impressions, $100/conv
 - **Salesforce** [PLACEHOLDER, none] — 8 pages, 0 impressions, $120/conv
 - **Slack** [PLACEHOLDER, none] — 5 pages, 0 impressions, $20/conv
-- **Xero** [PENDING, Direct] — 15 pages, 0 impressions, $80/conv
+- **Xero** [PENDING, Direct] — 16 pages, 0 impressions, $80/conv
 - **Notion** [PLACEHOLDER, none] — 10 pages, 0 impressions, $15/conv
 - **Pipedrive** [PLACEHOLDER, none] — 16 pages, 0 impressions, $60/conv
 - **Mailchimp** [PLACEHOLDER, none] — 1 pages, 0 impressions, $25/conv
