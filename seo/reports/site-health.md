@@ -1,22 +1,22 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-08-02T06:12:05+00:00
+Generated: 2026-08-03T06:34:07+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.19/100**
+- Overall SaaSpare Health Score: **94.17/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.57/20
+- Technical SEO: 19.56/20
 - Content usefulness: 19.34/20
-- Trust/E-E-A-T: 18.77/20
-- Internal linking: 14.89/15
+- Trust/E-E-A-T: 18.75/20
+- Internal linking: 14.88/15
 - Schema/indexability: 7.68/10
 - Conversion/revenue: 8.95/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1532
-- Healthy pages (85+): 1478
+- Pages scanned: 1534
+- Healthy pages (85+): 1480
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0

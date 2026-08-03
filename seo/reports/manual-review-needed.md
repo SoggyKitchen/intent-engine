@@ -45,6 +45,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-vpn-for-gaming-2026`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/buyer-type-alternatives`: missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/7-best-protonvpn-alternatives-in-2026-free-paid`: missing_correction_cta, missing_trustbox
 - `/pages/7-best-canva-alternatives-in-2026-free-paid`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-miro-alternatives-in-2026-free-paid`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-zendesk-alternatives-in-2026-free-paid`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
@@ -58,7 +59,10 @@ These are not safe to fake or mass rewrite.
 - `/best-password-manager-business-2026`: missing_correction_cta
 - `/best-seo-tools-2026`: missing_correction_cta
 - `/best-vpn-for-business-2026`: missing_correction_cta
+- `/pages/chargebee-vs-recurly-which-is-better-in-2026`: thin_buyer_page
+- `/pages/aws-vs-render-which-is-better-in-2026`: thin_buyer_page
 - `/pages/elevenlabs-vs-murf-which-is-better-in-2026`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/tailscale-vs-zscaler-which-is-better-in-2026`: thin_buyer_page
 - `/pages/best-vpn-for-privacy-and-security-2026`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/does-engagebay-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/educative-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox
@@ -85,6 +89,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/does-protonmail-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_trustbox
 - `/pages/grandfathered-saas-pricing-2026`: missing_correction_cta, missing_methodology
 - `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/shopify-vs-recurly-which-is-better-in-2026`: thin_buyer_page
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/xero-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -95,6 +100,8 @@ These are not safe to fake or mass rewrite.
 - `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/semrush-vs-moz-pro-which-is-better-in-2026`: thin_buyer_page
+- `/pages/fiverr-vs-99designs-which-is-better-in-2026`: thin_buyer_page
 - `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -195,10 +202,3 @@ These are not safe to fake or mass rewrite.
 - `/pages/mixpanel-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/nordlayer-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/pipedrive-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/xero-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/bamboohr-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/datadog-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/getresponse-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/tresorit-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page

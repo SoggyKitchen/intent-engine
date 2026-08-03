@@ -51,6 +51,7 @@
 - `/pages/7-best-google-analytics-alternatives-in-2026-free-paid` (alternatives, 95.0/100): title_length_outside_target
 - `/pages/7-best-microsoft-teams-alternatives-in-2026-free-paid` (alternatives, 95.0/100): title_length_outside_target
 - `/pages/7-best-miro-alternatives-in-2026-free-paid` (alternatives, 87.56/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-protonvpn-alternatives-in-2026-free-paid` (alternatives, 87.5/100): missing_correction_cta, missing_trustbox, title_length_outside_target
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid` (alternatives, 84.78/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-slack-alternatives-in-2026-free-paid` (alternatives, 87.59/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (alternatives, 87.56/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
@@ -130,7 +131,7 @@
 - `/pages/aws-vs-hetzner-which-is-better-in-2026` (comparison, 94.42/100): meta_length_outside_target, thin_buyer_page
 - `/pages/aws-vs-linode-which-is-better-in-2026` (comparison, 95.32/100): thin_buyer_page
 - `/pages/aws-vs-railway-which-is-better-in-2026` (comparison, 95.38/100): thin_buyer_page
-- `/pages/aws-vs-render-which-is-better-in-2026` (comparison, 94.33/100): thin_buyer_page, title_length_outside_target
+- `/pages/aws-vs-render-which-is-better-in-2026` (comparison, 89.13/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
 - `/pages/aws-vs-supabase-which-is-better-in-2026` (comparison, 94.37/100): thin_buyer_page, title_length_outside_target
 - `/pages/aws-vs-vultr-which-is-better-in-2026` (comparison, 95.41/100): thin_buyer_page
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.09/100): missing_correction_cta, missing_methodology, thin_buyer_page
@@ -275,7 +276,7 @@
 - `/pages/canva-vs-visme-which-is-better-in-2026` (comparison, 94.42/100): meta_length_outside_target, thin_buyer_page
 - `/pages/chargebee-vs-bold-commerce-which-is-better-in-2026` (comparison, 95.39/100): thin_buyer_page
 - `/pages/chargebee-vs-recharge-which-is-better-in-2026` (comparison, 95.28/100): thin_buyer_page
-- `/pages/chargebee-vs-recurly-which-is-better-in-2026` (comparison, 94.27/100): thin_buyer_page, title_length_outside_target
+- `/pages/chargebee-vs-recurly-which-is-better-in-2026` (comparison, 89.06/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
 - `/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work` (review, 85.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026` (comparison, 93.77/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
 - `/pages/cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026` (comparison, 93.76/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
@@ -299,4 +300,3 @@
 - `/pages/clickup-vs-basecamp-which-is-better-in-2026` (comparison, 97.3/100): thin_buyer_page
 - `/pages/clickup-vs-hubspot-which-is-better-in-2026` (comparison, 97.22/100): thin_buyer_page
 - `/pages/clickup-vs-jira-which-is-better-in-2026` (comparison, 97.27/100): thin_buyer_page
-- `/pages/clickup-vs-monday-com-which-is-better-in-2026` (comparison, 97.42/100): thin_buyer_page

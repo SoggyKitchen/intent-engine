@@ -104,7 +104,7 @@
 - `/pages/aws-vs-hetzner-which-is-better-in-2026`: 685 words, score 94.42
 - `/pages/aws-vs-linode-which-is-better-in-2026`: 664 words, score 95.32
 - `/pages/aws-vs-railway-which-is-better-in-2026`: 675 words, score 95.38
-- `/pages/aws-vs-render-which-is-better-in-2026`: 666 words, score 94.33
+- `/pages/aws-vs-render-which-is-better-in-2026`: 557 words, score 89.13
 - `/pages/aws-vs-supabase-which-is-better-in-2026`: 673 words, score 94.37
 - `/pages/aws-vs-vultr-which-is-better-in-2026`: 681 words, score 95.41
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts`: 618 words, score 92.09
@@ -179,7 +179,7 @@
 - `/pages/canva-vs-visme-which-is-better-in-2026`: 684 words, score 94.42
 - `/pages/chargebee-vs-bold-commerce-which-is-better-in-2026`: 679 words, score 95.39
 - `/pages/chargebee-vs-recharge-which-is-better-in-2026`: 655 words, score 95.28
-- `/pages/chargebee-vs-recurly-which-is-better-in-2026`: 653 words, score 94.27
+- `/pages/chargebee-vs-recurly-which-is-better-in-2026`: 543 words, score 89.06
 - `/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026`: 754 words, score 93.77
 - `/pages/cisco-anyconnect-vs-expressvpn-business-which-is-better-in-2026`: 752 words, score 93.76
 - `/pages/cisco-anyconnect-vs-openvpn-which-is-better-in-2026`: 725 words, score 94.62

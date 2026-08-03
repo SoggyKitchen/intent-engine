@@ -56,6 +56,7 @@
 - `/pages/best-vpn-for-gaming-2026` (86.84/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/coupon-verification-policy` (87.07/100): meta_length_outside_target, title_length_outside_target
 - `/pages/buyer-type-alternatives` (87.41/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/7-best-protonvpn-alternatives-in-2026-free-paid` (87.5/100): missing_correction_cta, missing_trustbox, title_length_outside_target
 - `/pages/7-best-canva-alternatives-in-2026-free-paid` (87.56/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-miro-alternatives-in-2026-free-paid` (87.56/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (87.56/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
@@ -70,7 +71,10 @@
 - `/best-password-manager-business-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/best-seo-tools-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/best-vpn-for-business-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/chargebee-vs-recurly-which-is-better-in-2026` (89.06/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
+- `/pages/aws-vs-render-which-is-better-in-2026` (89.13/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
 - `/pages/elevenlabs-vs-murf-which-is-better-in-2026` (89.25/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/tailscale-vs-zscaler-which-is-better-in-2026` (89.25/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
 - `/pages/best-vpn-for-privacy-and-security-2026` (89.28/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/does-engagebay-have-a-free-plan-2026-full-breakdown` (89.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/educative-pricing-2026-plans-costs-what-you-actually-pay` (89.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
@@ -96,7 +100,3 @@
 - `/pages/monday-com-pricing-history-2026` (90.5/100): missing_correction_cta, missing_methodology
 - `/pages/does-protonmail-have-a-free-plan-2026-full-breakdown` (91.0/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, title_length_outside_target
 - `/pages/grandfathered-saas-pricing-2026` (91.0/100): missing_correction_cta, missing_methodology
-- `/pages/saas-pricing-index` (91.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (91.08/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (91.65/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (91.7/100): missing_correction_cta, missing_methodology, thin_buyer_page
