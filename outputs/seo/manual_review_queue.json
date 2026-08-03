@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-01T21:50:16+00:00",
+  "generated_at_utc": "2026-08-03T21:23:15+00:00",
   "mode": "apply",
-  "pages_flagged": 35,
+  "pages_flagged": 33,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -311,27 +311,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/surfshark-vs-private-internet-access-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "need port forwarding, dedicated IPs, or fully open-source VPN apps. Both offer 30-day money-back guarantees.</p> </div> <div class=\"ar-disc reveal-up\"> <span c"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "arding, dedicated IPs, or maximum transparency via open-source apps. Both offer 30-day money-back guarantees.</p> </div> <div class=\"vs-scorebar reveal-up\"> <h3"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ly billing, PIA ($11.95/mo) is cheaper than Surfshark ($15.45/mo). Both offer a 30-day money-back guarantee.</div> </div> <div class=\"faq-item reveal-up\">"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/saas-stack-audit-checkout.html",
       "claims": [
         {
@@ -442,17 +421,6 @@
       "trust_state_bumped": false
     },
     {
-      "path": "site/pages/protonvpn-vs-windscribe-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "evices (Plus)</td><td>Unlimited devices (Pro)</td></tr> <tr><td>Money-back guarantee</td><td class=\"win\">30-day refund</td><td>3-day refund</td></tr>"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
       "path": "site/pages/best-surfshark-alternatives-in-2026-free-paid.html",
       "claims": [
         {
@@ -486,6 +454,17 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/7-best-protonvpn-alternatives-in-2026-free-paid.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "45-day money-back guarantee",
+          "context": "ers with dedicated streaming and torrenting profiles make it beginner-friendly. 45-day money-back guarantee (the longest in this list). Romania-based (outside EU data retention directives"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
       "path": "site/pages/best-nordpass-alternatives-in-2026-free-paid.html",
       "claims": [
         {
@@ -502,18 +481,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/elementor-vs-beaver-builder-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "r free?</div><div class=\"faq-a\">Elementor: Free tier available. Beaver Builder: 30-day money-back guarantee. We recommend trialling both before committing.</div></div><div class=\"faq-item"
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <"
         }
       ],
       "trust_state_bumped": false
