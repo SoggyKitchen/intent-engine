@@ -152,6 +152,14 @@ TOOLS = {
         pros=["Most sophisticated conditional automation in the market","Built-in CRM with pipeline and lead scoring","Predictive sending and win probability AI"],
         cons=["Steeper learning curve than Mailchimp","No free plan — $15/mo minimum"],
         go="activecampaign", scores=dict(value=82,ease=71,features=96,int=91,support=84)),
+    "EngageBay": dict(
+        score=8.5, logo="https://cdn.simpleicons.org/engagebay/888888",
+        price_line="Free", free_tag="500 contacts", price_note="Paid from $12.99/user/mo",
+        tagline="All-in-one CRM, email marketing, and customer support platform — generous free plan with 500 contacts included.",
+        verdict="Best All-in-One Value", verdict_class="v-value",
+        pros=["Free plan includes CRM, email marketing, and helpdesk","30% recurring affiliate commission — strong for promoters","Unified marketing, sales, and support in one dashboard"],
+        cons=["Less brand recognition than HubSpot or ActiveCampaign","Automation depth lags ActiveCampaign on complex workflows"],
+        go="engagebay", scores=dict(value=88,ease=82,features=80,int=72,support=78)),
     "GetResponse": dict(
         score=8.0, logo="https://cdn.simpleicons.org/getresponse/00baff",
         price_line="Free", free_tag="500 contacts", price_note="Paid from $15/mo",
@@ -707,6 +715,7 @@ HARDCODED_PAGE_TOOLS = {
     "best-ecommerce-platforms": ["Shopify", "BigCommerce", "Wix", "WooCommerce"],
     "best-elementor-alternatives-in-2026-free-paid": ["Elementor", "Divi", "Beaver Builder", "Bricks Builder", "Webflow", "SeedProd"],
     "best-aweber-alternatives-in-2026-free-paid": ["AWeber", "GetResponse", "Mailchimp", "Brevo", "ActiveCampaign"],
+    "best-engagebay-alternatives-in-2026-free-paid": ["EngageBay", "HubSpot", "ActiveCampaign", "GetResponse", "Brevo", "Zoho CRM"],
     "best-wordpress-page-builders-2026": ["Elementor", "Divi", "Beaver Builder", "Bricks Builder", "SeedProd"],
 }
 
