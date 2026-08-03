@@ -4,6 +4,34 @@
   "initialized": "2026-05-31",
   "log": [
     {
+      "date": "2026-08-03",
+      "session": "ceo-daily",
+      "gmail_checked": [
+        "from:awin \u2014 EngageBay already set up (approved 2026-07-22)",
+        "from:cj \u2014 Iternal Technologies CJ APPROVED today (2026-08-03), advertiser ID 7676842, $40-$450/sale",
+        "from:impact \u2014 only newsletters, no new HubSpot/1Password approvals",
+        "partnerstack \u2014 no new approvals",
+        "from:xero \u2014 no email"
+      ],
+      "built": [
+        "elevenlabs-vs-speechify-which-is-better-in-2026 \u2014 new comparison page, ElevenLabs earns /go/elevenlabs",
+        "910 VS pages regenerated from TOOLS dict with current dateModified"
+      ],
+      "activated": [
+        "/go/iternal, /go/airgapai, /go/airgapai-code \u2014 Iternal Technologies placeholder redirects (TODO: replace with real CJ link IDs from app.cj.com -> Links -> search Iternal Technologies)"
+      ],
+      "fixed": [
+        "Revenue leaks confirmed clean \u2014 all major vendor hrefs use /go/ tracked routes",
+        "All 910 VS pages refreshed with consistent template"
+      ],
+      "tests": "93/93 passed",
+      "notes": [
+        "Iternal Technologies: CJ advertiser ID 7676842. Products: AirgapAI Code $200-300/sale, Blockify $135-200/sale, AirgapAI Chat $70-105/sale. NEED real CJ link IDs from app.cj.com.",
+        "CTR analysis: Ramp pricing (1687 impr, 10.2 pos, 0.6% CTR), Mixpanel pricing (742 impr, 13.7 pos, 0% CTR) \u2014 titles already well-optimized from previous sessions.",
+        "Site: 1505 pages live (up 7 from 1498 due to VS rebuilds adding new pairs)."
+      ]
+    },
+    {
       "date": "2026-05-31",
       "session": "founding-ceo-session",
       "built": [
@@ -14,13 +42,13 @@
         "Commission Factory verification file"
       ],
       "fixed": [
-        "body.sp-bg scroll/click freeze — CSS override + nightly CI auto-heal added",
+        "body.sp-bg scroll/click freeze \u2014 CSS override + nightly CI auto-heal added",
         "468 bare JSON-LD blocks wrapped in proper script tags",
         "4 direct vendor URL leaks fixed to /go/ tracked routes",
         "Smith Elly replaced with Kaylan von Papen across 1,385 files",
         "Dark background inline style on 1,377 pages",
         "Real SaaSpare SVG nav deployed to 1,372 inner pages",
-        "154 pages missing Article schema — injected",
+        "154 pages missing Article schema \u2014 injected",
         "Author page fixed: scrollable, clickable, professional design"
       ],
       "affiliate_status": {
@@ -121,14 +149,14 @@
         "tests": "57/57 passing"
       },
       "routines_live": [
-        "SaaSpare Daily CEO Review — 7am Brisbane daily (trig_01FCDNuqeXEivnZ1LJvTyugK)",
-        "SaaSpare Revenue Hunter — 7:30am Brisbane daily (trig_01U3FBGZ1hcxNegCd5wiFZhU)",
-        "SaaSpare Sunday Profit Maximizer — 9am Brisbane Sundays (trig_01Ag9J9J4uq5pgLqKqfYTyPL)"
+        "SaaSpare Daily CEO Review \u2014 7am Brisbane daily (trig_01FCDNuqeXEivnZ1LJvTyugK)",
+        "SaaSpare Revenue Hunter \u2014 7:30am Brisbane daily (trig_01U3FBGZ1hcxNegCd5wiFZhU)",
+        "SaaSpare Sunday Profit Maximizer \u2014 9am Brisbane Sundays (trig_01Ag9J9J4uq5pgLqKqfYTyPL)"
       ],
       "key_decisions": [
-        "Forex bot archived — 100% focus on SaaSpare",
+        "Forex bot archived \u2014 100% focus on SaaSpare",
         "ABN registered: 20 602 197 525 (sole trader, website design)",
-        "No push-to-main gate — full CEO operational authority",
+        "No push-to-main gate \u2014 full CEO operational authority",
         "3 autonomous Claude Code routines deployed"
       ],
       "estimated_monthly_revenue_lost": "$2700-$6600/month from untracked programs",
@@ -148,11 +176,11 @@
       "findings": [
         "CRITICAL BUG: wave23_ctr_optimizer generates truncated metas ending in ... for 4 top-impression pages (Ramp 1687 impr, Mixpanel 742, Notion 557, Sentry 528)",
         "Mixpanel meta had factual error: said 1M events/month free but correct is 20M events/month",
-        "Fiverr affiliate (Awin) was already configured in _redirects — Awin approval email 2026-06-03",
+        "Fiverr affiliate (Awin) was already configured in _redirects \u2014 Awin approval email 2026-06-03",
         "FreshBooks rejected by Awin. PartnerStack account locked (appeal #115928 filed 2026-06-05)",
         "Impact.com account: only Semrush active. Wix contract application pending",
-        "Parallels Desktop review page built — 1.65 EPC CJ program, only had pricing page before",
-        "No actual <a href> revenue leaks found in pages — grep hits were text mentions in FAQ/steps"
+        "Parallels Desktop review page built \u2014 1.65 EPC CJ program, only had pricing page before",
+        "No actual <a href> revenue leaks found in pages \u2014 grep hits were text mentions in FAQ/steps"
       ],
       "actions": [
         "Fixed truncated metas: fix_ctr_opportunities.py now has complete sentences for all 4 pages",
@@ -162,9 +190,9 @@
         "Pushed to main: d4b8251f"
       ],
       "watch": [
-        "wave23_ctr_optimizer uses hardcoded estimated pages (not real GSC) — will NOT overwrite our fixes",
+        "wave23_ctr_optimizer uses hardcoded estimated pages (not real GSC) \u2014 will NOT overwrite our fixes",
         "generate_pricing_pages_v3.py SKIPS pages that already have premium template (pr-layout/price-at-glance/feat-col)",
-        "PartnerStack appeal still pending — check #115928 status in 7-10 days"
+        "PartnerStack appeal still pending \u2014 check #115928 status in 7-10 days"
       ]
     },
     {
@@ -173,7 +201,7 @@
       "gmail_scan": {
         "awin": "Fiverr APPROVED (already activated in prior session). FreshBooks REJECTED by Awin.",
         "impact": "Account 7269601 active but ONLY Semrush partnered. Wix contract pending. HubSpot/Shopify not yet approved.",
-        "partnerstack": "APPROVED for PartnerStack own affiliate program (promoting PartnerStack.com). Separate program DECLINED (reason: approved other account). /go/partnerstack needs real tracking link from PS dashboard — ESCALATE TO OWNER.",
+        "partnerstack": "APPROVED for PartnerStack own affiliate program (promoting PartnerStack.com). Separate program DECLINED (reason: approved other account). /go/partnerstack needs real tracking link from PS dashboard \u2014 ESCALATE TO OWNER.",
         "freshbooks": "PartnerStack application submitted 2026-06-09, pending.",
         "hubspot_direct": "REJECTED by HubSpot direct affiliate program (website quality requirement)."
       },
@@ -183,13 +211,13 @@
         "nordlayer-pricing: meta expanded to full sentence, no truncation (pos 19.0, 270 impr)"
       ],
       "new_pages": [
-        "partnerstack-pricing-2026-plans-costs-what-you-actually-pay — full pricing breakdown, FAQ schema, alternatives table, /go/partnerstack CTAs"
+        "partnerstack-pricing-2026-plans-costs-what-you-actually-pay \u2014 full pricing breakdown, FAQ schema, alternatives table, /go/partnerstack CTAs"
       ],
       "leaks_fixed": 0,
       "action_required_from_owner": [
         "PartnerStack own affiliate: log into PartnerStack dashboard, get real tracking link for promoting PartnerStack.com, update /go/partnerstack in site/_redirects",
         "Impact.com: apply to Shopify and other programs directly from impact.com dashboard (currently only Semrush is connected)",
-        "CJ deep links needed for: GetResponse (3142111), Elementor (6798066), Proton (5227916), AWeber (5111249), Parallels (2005415) — get from app.cj.com -> Links -> Get Links"
+        "CJ deep links needed for: GetResponse (3142111), Elementor (6798066), Proton (5227916), AWeber (5111249), Parallels (2005415) \u2014 get from app.cj.com -> Links -> Get Links"
       ],
       "tests": "57/57 passed"
     },
@@ -197,13 +225,13 @@
       "date": "2026-07-14",
       "session": "ceo-daily",
       "gmail_findings": [
-        "Educative affiliate approved via Rakuten Advertising (July 10) — /go/educative already exists but uses placeholder URL; owner must log into publisher.rakutenadvertising.com to get real tracking link",
-        "SpamGuard (via Awin) invited SaaSpare to join their programme (July 13) — awaiting owner decision to accept or decline",
-        "Pipedrive PartnerStack approval (July 10) — already handled in revenue-hunter commit July 13",
-        "Impact.com newsletters only — no new HubSpot/Shopify approval detected"
+        "Educative affiliate approved via Rakuten Advertising (July 10) \u2014 /go/educative already exists but uses placeholder URL; owner must log into publisher.rakutenadvertising.com to get real tracking link",
+        "SpamGuard (via Awin) invited SaaSpare to join their programme (July 13) \u2014 awaiting owner decision to accept or decline",
+        "Pipedrive PartnerStack approval (July 10) \u2014 already handled in revenue-hunter commit July 13",
+        "Impact.com newsletters only \u2014 no new HubSpot/Shopify approval detected"
       ],
       "built": [
-        "nordvpn-vs-protonvpn-which-is-better-in-2026.html — new comparison page; both programs have active CJ affiliate links (/go/nordvpn + /go/protonvpn)"
+        "nordvpn-vs-protonvpn-which-is-better-in-2026.html \u2014 new comparison page; both programs have active CJ affiliate links (/go/nordvpn + /go/protonvpn)"
       ],
       "fixed": [
         "17 pages updated with universal nav (fix_universal_nav.py)",
@@ -211,11 +239,11 @@
         "Sitemap updated to 1471 URLs",
         "memory.json corrupted JSON fixed (duplicate brace on line ~525)"
       ],
-      "revenue_leaks": "None found — all vendor links already use /go/ tracked routes",
+      "revenue_leaks": "None found \u2014 all vendor links already use /go/ tracked routes",
       "tests": "93/93 passed",
       "next_human_actions": [
         "LOG INTO publisher.rakutenadvertising.com to get Educative CJ/Rakuten tracking link, update /go/educative in site/_redirects",
-        "DECIDE on SpamGuard Awin invitation — log into Awin to accept or decline",
+        "DECIDE on SpamGuard Awin invitation \u2014 log into Awin to accept or decline",
         "LOG INTO app.cj.com to get deep links for: GetResponse (ID 3142111), ProtonVPN (ID 5227916), Elementor (ID 6798066), AWeber (ID 5111249), Parallels (ID 2005415)"
       ]
     },
@@ -227,37 +255,37 @@
         "SpamGuard Awin invitation (Jul 13) still awaiting owner decision"
       ],
       "upgraded": [
-        "getresponse-pricing-2026-plans-costs-what-you-actually-pay.html — replaced boilerplate with real content: actual plan names (Email Marketing/Marketing Automation/Ecommerce Marketing), real pricing (~$19/$59/$119/mo at 1K contacts annual), contact scaling trap explanation, transactional email exclusion, real alternatives (Mailchimp/ActiveCampaign/Brevo/AWeber) with working hrefs, 5 specific FAQ answers (replaced 'check their website' boilerplate), updated verification date to Jul 15 2026"
+        "getresponse-pricing-2026-plans-costs-what-you-actually-pay.html \u2014 replaced boilerplate with real content: actual plan names (Email Marketing/Marketing Automation/Ecommerce Marketing), real pricing (~$19/$59/$119/mo at 1K contacts annual), contact scaling trap explanation, transactional email exclusion, real alternatives (Mailchimp/ActiveCampaign/Brevo/AWeber) with working hrefs, 5 specific FAQ answers (replaced 'check their website' boilerplate), updated verification date to Jul 15 2026"
       ],
-      "revenue_leaks": "None found — all vendor links use /go/ tracked routes",
+      "revenue_leaks": "None found \u2014 all vendor links use /go/ tracked routes",
       "tests": "93/93 passed",
       "next_human_actions": [
         "LOG INTO publisher.rakutenadvertising.com to get Educative Rakuten tracking link, update /go/educative in site/_redirects",
-        "DECIDE on SpamGuard Awin invitation — log into Awin (publisher 2917137) to accept or decline",
+        "DECIDE on SpamGuard Awin invitation \u2014 log into Awin (publisher 2917137) to accept or decline",
         "LOG INTO app.cj.com to get deep links for: GetResponse (ID 3142111), ProtonVPN (ID 5227916), Elementor (ID 6798066), AWeber (ID 5111249), Parallels (ID 2005415)",
-        "NOTE: /go/getresponse in _redirects already uses tkqlhce.com CJ tracking link (ACTIVE) — verify commission is tracking in CJ dashboard"
+        "NOTE: /go/getresponse in _redirects already uses tkqlhce.com CJ tracking link (ACTIVE) \u2014 verify commission is tracking in CJ dashboard"
       ]
     },
     {
       "date": "2026-08-01",
       "session": "sunday-maximizer-2026-08-01",
       "built": [
-        "quickbooks-vs-xero-which-is-better-in-2026.html — head-to-head comparison, full FAQ schema, /go/quickbooks-trial + /go/xero-trial CTAs, sticky CTA, 5-FAQ schema",
-        "moz-vs-semrush-which-is-better-in-2026.html — Semrush (9.4/10) vs Moz Pro (8.8/10), /go/semrush-trial CTA, FAQPage schema, sticky CTA",
-        "hostpapa-vs-hostgator-which-is-better-in-2026.html — HostPapa wins (8.4/10), /go/hostpapa CTA, FAQPage schema, sticky CTA"
+        "quickbooks-vs-xero-which-is-better-in-2026.html \u2014 head-to-head comparison, full FAQ schema, /go/quickbooks-trial + /go/xero-trial CTAs, sticky CTA, 5-FAQ schema",
+        "moz-vs-semrush-which-is-better-in-2026.html \u2014 Semrush (9.4/10) vs Moz Pro (8.8/10), /go/semrush-trial CTA, FAQPage schema, sticky CTA",
+        "hostpapa-vs-hostgator-which-is-better-in-2026.html \u2014 HostPapa wins (8.4/10), /go/hostpapa CTA, FAQPage schema, sticky CTA"
       ],
       "fixed": [
-        "902 pages missing background:#050407 — fixed via fix_body_background.py (design audit revealed pervasive issue)",
-        "2 pages missing saaspare-ui.css — fixed by fix_inject_ui_css.py",
+        "902 pages missing background:#050407 \u2014 fixed via fix_body_background.py (design audit revealed pervasive issue)",
+        "2 pages missing saaspare-ui.css \u2014 fixed by fix_inject_ui_css.py",
         "Universal nav applied to new pages via fix_universal_nav.py"
       ],
       "sitemap": "1509 URLs (was 1471 last week)",
       "tests": "93/93 passed",
       "opportunity_gaps_identified": [
-        "918 pages were missing dark background at session start — nightly CI appears to not be running body_background fix reliably",
+        "918 pages were missing dark background at session start \u2014 nightly CI appears to not be running body_background fix reliably",
         "quickbooks-vs-xero was missing despite 40K+/mo search volume",
         "moz-vs-semrush was missing despite Semrush being active CJ affiliate",
-        "hostpapa-vs-hostgator was 4th HostPapa VS page — good for hub internal linking"
+        "hostpapa-vs-hostgator was 4th HostPapa VS page \u2014 good for hub internal linking"
       ],
       "revenue_status": {
         "earning": [
@@ -272,14 +300,14 @@
           "ElevenLabs"
         ],
         "pending": {
-          "HubSpot": "Impact.com PENDING — 39 pages live",
-          "1Password": "PartnerStack PENDING — 37 pages live",
-          "ClickUp": "PartnerStack LOCKED — 27 pages live",
-          "ActiveCampaign": "PartnerStack LOCKED — 20 pages live",
-          "Monday.com": "Impact.com PENDING — 20 pages live",
-          "FreshBooks": "Awin PENDING (applied 2026-06-01) — 19 pages live",
-          "Xero": "Direct (applied 2026-06-01) — 18 pages live",
-          "Dashlane": "CJ TODO — 14 pages live"
+          "HubSpot": "Impact.com PENDING \u2014 39 pages live",
+          "1Password": "PartnerStack PENDING \u2014 37 pages live",
+          "ClickUp": "PartnerStack LOCKED \u2014 27 pages live",
+          "ActiveCampaign": "PartnerStack LOCKED \u2014 20 pages live",
+          "Monday.com": "Impact.com PENDING \u2014 20 pages live",
+          "FreshBooks": "Awin PENDING (applied 2026-06-01) \u2014 19 pages live",
+          "Xero": "Direct (applied 2026-06-01) \u2014 18 pages live",
+          "Dashlane": "CJ TODO \u2014 14 pages live"
         }
       },
       "next_priorities": [
@@ -295,7 +323,7 @@
       "date": "2026-08-02",
       "session": "revenue-hunter",
       "gmail_scan": {
-        "awin": "EngageBay CRM (127075) already active + new pricing deep link — already in _redirects from prior session",
+        "awin": "EngageBay CRM (127075) already active + new pricing deep link \u2014 already in _redirects from prior session",
         "impact": "Newsletter only, no new approvals",
         "partnerstack": "None",
         "wix": "Impact.com asking SaaSpare to reapply (not an approval)"
@@ -304,21 +332,21 @@
         "NEW PAGE: fiverr-vs-99designs-which-is-better-in-2026 (Fiverr 9.1/10 wins, /go/fiverr affiliate, buyer-intent query)"
       ],
       "fixed": [
-        "semrush-vs-moz-pro: truncated meta ('better for… Honest…') replaced with full 160-char verdict — was killing CTR at 1365 impressions/pos 70",
+        "semrush-vs-moz-pro: truncated meta ('better for\u2026 Honest\u2026') replaced with full 160-char verdict \u2014 was killing CTR at 1365 impressions/pos 70",
         "tailscale-vs-zscaler: title now signals dev-teams vs enterprise use-case split",
-        "shopify-vs-recurly: July→August date refresh (Shopify earns NOW)",
-        "chargebee-vs-recurly, semrush-vs-surfer-seo, aws-vs-render: July→August stale date fixes",
+        "shopify-vs-recurly: July\u2192August date refresh (Shopify earns NOW)",
+        "chargebee-vs-recurly, semrush-vs-surfer-seo, aws-vs-render: July\u2192August stale date fixes",
         "rebuild_vs_pages_v2.py: added fiverr (9.1, /go/fiverr), 99designs (8.3), speechify (8.4) to TOOLS dict"
       ],
       "gsc_insights": {
-        "top_opportunity": "semrush-vs-moz-pro: 1365 impr at pos 70 — meta was truncated, now fixed",
-        "biggest_volume_page": "ramp-pricing: 1687 impr, pos 10.2, 0.59% CTR — titles already strong",
+        "top_opportunity": "semrush-vs-moz-pro: 1365 impr at pos 70 \u2014 meta was truncated, now fixed",
+        "biggest_volume_page": "ramp-pricing: 1687 impr, pos 10.2, 0.59% CTR \u2014 titles already strong",
         "new_page_gap": "fiverr-vs-99designs (Fiverr Awin approved, $20-150/FTB)"
       },
       "tests": "93/93 passed",
       "affiliate_programs": {
-        "EngageBay": "CONFIRMED ACTIVE — Awin 127075, Publisher 2917137, 30% recurring, pricing deep link in _redirects",
-        "Wix": "Asked to reapply via Impact.com — not yet approved"
+        "EngageBay": "CONFIRMED ACTIVE \u2014 Awin 127075, Publisher 2917137, 30% recurring, pricing deep link in _redirects",
+        "Wix": "Asked to reapply via Impact.com \u2014 not yet approved"
       }
     }
   ],
@@ -330,7 +358,7 @@
       "date": "2026-05-13",
       "commission": "up to $300/referred account (base $10)",
       "cookie": "90 days",
-      "status": "APPROVED — /go/aweber CJ tracking link active",
+      "status": "APPROVED \u2014 /go/aweber CJ tracking link active",
       "note": "AWeber review page built 2026-06-02: aweber-review-2026-is-it-worth-it-honest-verdict.html"
     },
     {
@@ -338,7 +366,7 @@
       "network": "Awin",
       "publisher_id": "2917137",
       "date": "2026-06-01",
-      "status": "APPROVED — account active, publisher ID 2917137",
+      "status": "APPROVED \u2014 account active, publisher ID 2917137",
       "note": "FreshBooks REJECTED by Awin (aid:56787). Need to find other Awin programs to apply for."
     }
   ],
@@ -347,13 +375,13 @@
       "date": "2026-06-02",
       "session": "ceo-daily-routine",
       "gmail_findings": {
-        "awin": "APPROVED — publisher ID 2917137 active since June 1",
-        "freshbooks_awin": "REJECTED by Awin — need alternative network",
+        "awin": "APPROVED \u2014 publisher ID 2917137 active since June 1",
+        "freshbooks_awin": "REJECTED by Awin \u2014 need alternative network",
         "aweber_cj": "Already approved May 13, /go/aweber link active",
         "impact_com": "Still only Semrush partnered; Wix contract application sent June 1; ticket #831603 following up",
-        "partnerstack_marketplace": "BLOCKED June 2 — reason: 'association with potentially fraudulent accounts' — can reapply via dashboard",
-        "partnerstack_email": "Nina R cleared domain from blocklist June 2 — verification emails should now work for partnerships@saaspare.org",
-        "xero": "No email — still TODO"
+        "partnerstack_marketplace": "BLOCKED June 2 \u2014 reason: 'association with potentially fraudulent accounts' \u2014 can reapply via dashboard",
+        "partnerstack_email": "Nina R cleared domain from blocklist June 2 \u2014 verification emails should now work for partnerships@saaspare.org",
+        "xero": "No email \u2014 still TODO"
       },
       "revenue_leaks_fixed": [
         "1password-pricing-history-2026.html: /go/1password",
@@ -372,13 +400,13 @@
         "twingate-vs-tailscale: removed stale May 2026 text"
       ],
       "built": [
-        "aweber-review-2026-is-it-worth-it-honest-verdict.html — CJ program, $10-300/referred account"
+        "aweber-review-2026-is-it-worth-it-honest-verdict.html \u2014 CJ program, $10-300/referred account"
       ],
       "next_human_actions": [
-        "ACTION REQUIRED: Go to PartnerStack dashboard and reapply to Network (Nina R cleared email blocklist — verification emails will now arrive at partnerships@saaspare.org)",
+        "ACTION REQUIRED: Go to PartnerStack dashboard and reapply to Network (Nina R cleared email blocklist \u2014 verification emails will now arrive at partnerships@saaspare.org)",
         "ACTION REQUIRED: Log into Awin (publisher ID 2917137) and apply to programs: GetResponse, Elementor, AWeber, ProtonVPN",
         "ACTION REQUIRED: Check CJ dashboard (app.cj.com) for AWeber, GetResponse, ProtonVPN, Elementor deep links",
-        "Monitor Impact.com ticket #831603 — Wix contract pending approval"
+        "Monitor Impact.com ticket #831603 \u2014 Wix contract pending approval"
       ]
     }
   ],
@@ -387,57 +415,57 @@
       "date": "2026-06-06",
       "session": "revenue-hunter",
       "affiliate_status": {
-        "fiverr": "APPROVED Awin awinmid=6288 awinaffid=2917137 — live since 2026-06-03",
-        "freshbooks_awin": "REJECTED — program closing 2026-06-01. Redirect unchanged (still placeholder).",
+        "fiverr": "APPROVED Awin awinmid=6288 awinaffid=2917137 \u2014 live since 2026-06-03",
+        "freshbooks_awin": "REJECTED \u2014 program closing 2026-06-01. Redirect unchanged (still placeholder).",
         "partnerstack": "BLOCKED 2026-06-04 (suspicious accounts). Appeal filed 2026-06-05 Ticket 115928. Affects ClickUp/Monday/ActiveCampaign/Dashlane.",
         "clickup_partnerstack": "DECLINED independently by ClickUp on PartnerStack 2026-06-03",
-        "impact_7269601": "ACTIVE — only Semrush partnered. Wix contract application sent 2026-06-01.",
+        "impact_7269601": "ACTIVE \u2014 only Semrush partnered. Wix contract application sent 2026-06-01.",
         "xero": "No approval email yet",
-        "wix": "Application sent Impact.com 2026-06-01 — pending"
+        "wix": "Application sent Impact.com 2026-06-01 \u2014 pending"
       },
       "url_leaks_fixed": [
-        "semrush-free-trial: 4x https://www.semrush.com/ → /go/semrush",
-        "aweber-free-trial: 4x https://www.aweber.com/pricing.htm → /go/aweber + typo fix"
+        "semrush-free-trial: 4x https://www.semrush.com/ \u2192 /go/semrush",
+        "aweber-free-trial: 4x https://www.aweber.com/pricing.htm \u2192 /go/aweber + typo fix"
       ],
       "ctr_fixes": [
         "ramp-pricing: Bill Pay change alert block + sharpened title (1,687 impr, pos 10.2, 0.59% CTR)",
         "mixpanel-pricing: \"Pricing Changes 2026\" title (742 impr, pos 13.7, 0% CTR)",
         "nordlayer-pricing: \"Price 2026\" intent match (270 impr, pos 19.0)",
-        "does-notion-free-plan: \"Yes — 4 Limits\" title (557 impr, pos 9.4, 0% CTR)",
-        "does-sentry-free-plan: \"Yes — 5,000 Errors/Month Free\" title (528 impr, pos 7.5, 0% CTR)",
+        "does-notion-free-plan: \"Yes \u2014 4 Limits\" title (557 impr, pos 9.4, 0% CTR)",
+        "does-sentry-free-plan: \"Yes \u2014 5,000 Errors/Month Free\" title (528 impr, pos 7.5, 0% CTR)",
         "best-devops-drift-tools: \"8 DevOps Tools Ranked\" title (380 impr, pos 18.1, 0% CTR)",
         "aws-vs-supabase: \"[Startup vs Scale]\" title (286 impr, pos 10.1, 0% CTR)",
         "does-bitwarden-free-plan: \"Limitations 2026\" title"
       ],
       "semrush_fixes": [
-        "semrush-vs-moz: title now targets plain \"semrush vs moz\" — 1,237 impr at pos 67-80",
-        "semrush-vs-moz-pro: canonical → /pages/semrush-vs-moz-which-is-better-in-2026 (consolidates link equity)",
+        "semrush-vs-moz: title now targets plain \"semrush vs moz\" \u2014 1,237 impr at pos 67-80",
+        "semrush-vs-moz-pro: canonical \u2192 /pages/semrush-vs-moz-which-is-better-in-2026 (consolidates link equity)",
         "semrush-pricing/coupon/promo: added dateModified WebPage schema (pages ranking pos 73-82)"
       ],
       "built": [
-        "fiverr-coupon-code-promo-codes-2026-verified-discounts.html — Awin approved, 5 FAQs, /go/fiverr x6",
+        "fiverr-coupon-code-promo-codes-2026-verified-discounts.html \u2014 Awin approved, 5 FAQs, /go/fiverr x6",
         "Added Fiverr entry to generate_coupon_pages_v3.py COUPONS dict"
       ],
       "measure_at_21days": {
-        "ramp-pricing-ctr": "baseline 0.59% @ pos 10.2 — target >1.5%",
-        "mixpanel-pricing-ctr": "baseline 0% @ pos 13.7 — target >0.5%",
-        "notion-sentry-ctr": "baseline 0% @ pos 7-9 — target >0.5%",
-        "semrush-vs-moz-pos": "baseline pos 67-80 — target <30 after canonical consolidation"
+        "ramp-pricing-ctr": "baseline 0.59% @ pos 10.2 \u2014 target >1.5%",
+        "mixpanel-pricing-ctr": "baseline 0% @ pos 13.7 \u2014 target >0.5%",
+        "notion-sentry-ctr": "baseline 0% @ pos 7-9 \u2014 target >0.5%",
+        "semrush-vs-moz-pos": "baseline pos 67-80 \u2014 target <30 after canonical consolidation"
       },
       "next_human_actions": [
-        "URGENT: PartnerStack appeal — check for response to Ticket 115928 (filed 2026-06-05)",
+        "URGENT: PartnerStack appeal \u2014 check for response to Ticket 115928 (filed 2026-06-05)",
         "ACTION: Log into Awin (publisher 2917137) and apply to programs not yet joined: GetResponse (3142111), Elementor (6798066), AWeber (5111249), ProtonVPN (5227916), Parallels (2005415)",
         "ACTION: Check Impact.com (account 7269601) for Wix approval and to apply for HubSpot/1Password manually",
-        "MONITOR: Semrush-vs-Moz canonical consolidation — check GSC in 3 weeks"
+        "MONITOR: Semrush-vs-Moz canonical consolidation \u2014 check GSC in 3 weeks"
       ]
     },
     {
       "date": "2026-06-06",
       "session": "sunday-profit-maximizer",
       "built": [
-        "hubspot-vs-monday-com-which-is-better-in-2026.html — HubSpot ($250-1000 PENDING) vs Monday.com ($150 LOCKED), dual high-commission VS page",
-        "salesforce-vs-monday-com-which-is-better-in-2026.html — enterprise CRM vs Work OS, Monday.com /go/monday primary CTA",
-        "freshbooks-vs-wave-which-is-better-in-2026.html — FreshBooks ($200/sale Awin PENDING) vs Wave (free), FreshBooks /go/freshbooks-trial primary CTA"
+        "hubspot-vs-monday-com-which-is-better-in-2026.html \u2014 HubSpot ($250-1000 PENDING) vs Monday.com ($150 LOCKED), dual high-commission VS page",
+        "salesforce-vs-monday-com-which-is-better-in-2026.html \u2014 enterprise CRM vs Work OS, Monday.com /go/monday primary CTA",
+        "freshbooks-vs-wave-which-is-better-in-2026.html \u2014 FreshBooks ($200/sale Awin PENDING) vs Wave (free), FreshBooks /go/freshbooks-trial primary CTA"
       ],
       "ctr_fixes": [
         "twingate-vs-tailscale: 'Zero-Trust' specificity (124 impr, pos 14.0)",
@@ -465,25 +493,25 @@
         "FAQPage schema: monday-com-vs-asana, getresponse-vs-aweber, clickup-vs-asana, notion-vs-obsidian"
       ],
       "internal_links_upgraded": [
-        "hubspot-pricing → crm-vs-pipedrive, vs-salesforce, vs-monday-com",
-        "monday-com-pricing → vs-asana, vs-clickup, vs-hubspot, vs-salesforce",
-        "salesforce-pricing → vs-hubspot, vs-pipedrive, vs-monday, vs-zoho",
-        "freshbooks-vs-quickbooks → vs-xero, vs-wave, pricing",
-        "does-notion-have-a-free-plan → pricing, coupon, vs-clickup, vs-monday"
+        "hubspot-pricing \u2192 crm-vs-pipedrive, vs-salesforce, vs-monday-com",
+        "monday-com-pricing \u2192 vs-asana, vs-clickup, vs-hubspot, vs-salesforce",
+        "salesforce-pricing \u2192 vs-hubspot, vs-pipedrive, vs-monday, vs-zoho",
+        "freshbooks-vs-quickbooks \u2192 vs-xero, vs-wave, pricing",
+        "does-notion-have-a-free-plan \u2192 pricing, coupon, vs-clickup, vs-monday"
       ],
       "design_fixes": [
         "saas-pricing-changes + saas-buyer-signals-2026: added missing saaspare-ui.css"
       ],
       "measure_at_21days": {
-        "twingate-vs-tailscale-ctr": "baseline pos 14.0 — target >1%",
-        "cloudflare-access-vs-tailscale-ctr": "baseline pos 8.9 CTR 0% — target >1.5%",
-        "hetzner-vs-vultr-ctr": "baseline pos 9.6 CTR 0% — target >1.5%",
-        "hubspot-vs-monday-impressions": "new page — baseline TBD at 21 days",
-        "freshbooks-vs-wave-impressions": "new page — baseline TBD at 21 days"
+        "twingate-vs-tailscale-ctr": "baseline pos 14.0 \u2014 target >1%",
+        "cloudflare-access-vs-tailscale-ctr": "baseline pos 8.9 CTR 0% \u2014 target >1.5%",
+        "hetzner-vs-vultr-ctr": "baseline pos 9.6 CTR 0% \u2014 target >1.5%",
+        "hubspot-vs-monday-impressions": "new page \u2014 baseline TBD at 21 days",
+        "freshbooks-vs-wave-impressions": "new page \u2014 baseline TBD at 21 days"
       },
       "next_human_actions": [
-        "URGENT: PartnerStack appeal Ticket 115928 — check for approval (affects Monday.com $150, ClickUp $36-150, ActiveCampaign $85, Dashlane $25-50)",
-        "ACTION: Log into Awin (publisher 2917137) — apply to GetResponse (3142111), Elementor (6798066), ProtonVPN (5227916), Parallels (2005415)",
+        "URGENT: PartnerStack appeal Ticket 115928 \u2014 check for approval (affects Monday.com $150, ClickUp $36-150, ActiveCampaign $85, Dashlane $25-50)",
+        "ACTION: Log into Awin (publisher 2917137) \u2014 apply to GetResponse (3142111), Elementor (6798066), ProtonVPN (5227916), Parallels (2005415)",
         "ACTION: Check Impact.com (account 7269601) for HubSpot, 1Password, Wix status",
         "MONITOR: Check GSC in 21 days for CTR improvements on twingate/cloudflare/hetzner pages"
       ]
@@ -494,22 +522,22 @@
       "gmail_findings": {
         "awin": "Fiverr already activated in prior session (awinmid=6288, awinaffid=2917137, /go/fiverr live)",
         "freshbooks_awin": "REJECTED (2026-06-01). PartnerStack application submitted 2026-06-09 via partnerships@saaspare.org",
-        "impact": "Still only partnered with Semrush — HubSpot/1Password/Monday still PENDING",
+        "impact": "Still only partnered with Semrush \u2014 HubSpot/1Password/Monday still PENDING",
         "wix": "Contract application sent via Impact.com (pending approval)",
         "xero": "No email response yet"
       },
       "ctr_fixes": [
         "ramp-pricing: title + meta updated to target ramp pricing change june 2026 (pos 3.7, 121 impr, 0 clicks)",
         "mixpanel-pricing: title + meta updated to surface 20M events free (742 impr, pos 13.7, 0 CTR)",
-        "does-notion-have-free-plan: meta sharpened — 4 limits angle + june freshness (557 impr, pos 9.4)",
-        "does-sentry-have-free-plan: title + meta — 5K errors specific, june freshness (528 impr, pos 7.5)"
+        "does-notion-have-free-plan: meta sharpened \u2014 4 limits angle + june freshness (557 impr, pos 9.4)",
+        "does-sentry-have-free-plan: title + meta \u2014 5K errors specific, june freshness (528 impr, pos 7.5)"
       ],
-      "new_page": "does-elevenlabs-have-a-free-plan-2026-full-breakdown.html — ElevenLabs active affiliate, free plan breakdown, 6 locked features, full FAQ schema",
-      "revenue_leaks": "Clean — no direct vendor hrefs found",
+      "new_page": "does-elevenlabs-have-a-free-plan-2026-full-breakdown.html \u2014 ElevenLabs active affiliate, free plan breakdown, 6 locked features, full FAQ schema",
+      "revenue_leaks": "Clean \u2014 no direct vendor hrefs found",
       "tests": "57/57 passed",
       "notes": [
-        "ramp pricing change june 2026 at pos 3.7 with 121 impr and 0 clicks is the biggest immediate CTR fix — title now explicitly includes june",
-        "Semrush vs Moz queries ranking 60-82 with 278-269 impressions — deep work needed but long-term play",
+        "ramp pricing change june 2026 at pos 3.7 with 121 impr and 0 clicks is the biggest immediate CTR fix \u2014 title now explicitly includes june",
+        "Semrush vs Moz queries ranking 60-82 with 278-269 impressions \u2014 deep work needed but long-term play",
         "ElevenLabs does-have-free-plan format mirrors proven Notion/Sentry traffic pattern"
       ]
     },
@@ -517,23 +545,23 @@
       "date": "2026-06-19",
       "session": "ceo-daily",
       "actions": [
-        "NEW PAGE: protonmail-pricing-2026-plans-costs-what-you-actually-pay.html — biggest content gap filled (10 ProtonVPN pages existed, zero ProtonMail). CJ route /go/protonmail live (advertiser 5227916, dpbolvw.net). Covers Free/Mail Plus/Unlimited/Business. All prices approximate per Hard Rule #1.",
-        "CTR FIX: Mixpanel pricing title again updated to data-specific version (pos 13.7, 742 impr, 0% CTR). Previous session improvement was overwritten by nightly IntentBot AGAIN. Title: Mixpanel Pricing 2026: Free = 20M Events, Growth from $28/mo — Is It Enough?",
+        "NEW PAGE: protonmail-pricing-2026-plans-costs-what-you-actually-pay.html \u2014 biggest content gap filled (10 ProtonVPN pages existed, zero ProtonMail). CJ route /go/protonmail live (advertiser 5227916, dpbolvw.net). Covers Free/Mail Plus/Unlimited/Business. All prices approximate per Hard Rule #1.",
+        "CTR FIX: Mixpanel pricing title again updated to data-specific version (pos 13.7, 742 impr, 0% CTR). Previous session improvement was overwritten by nightly IntentBot AGAIN. Title: Mixpanel Pricing 2026: Free = 20M Events, Growth from $28/mo \u2014 Is It Enough?",
         "CONFIRMED: PartnerStack still locked as of June 19. Owner filed another appeal June 19 citing account consolidation complete. Blocks ClickUp/ActiveCampaign/Monday/Dashlane (~$400+/mo potential).",
         "CONFIRMED: Impact.com own program approved 2026-06-16 (/go/impact live). HubSpot/1Password/Monday still pending on Impact.com.",
         "CONFIRMED: FreshBooks Awin REJECTED (program closed). FreshBooks PartnerStack pending but account locked.",
-        "NOTE: Nightly IntentBot CTR optimizer continues to overwrite manual title improvements. Known regression — consider adding mixpanel/protonmail pages to STRATEGIC_PROTECTED_PATHS or adding override logic."
+        "NOTE: Nightly IntentBot CTR optimizer continues to overwrite manual title improvements. Known regression \u2014 consider adding mixpanel/protonmail pages to STRATEGIC_PROTECTED_PATHS or adding override logic."
       ],
       "learnings": [
         "IntentBot overwrites improved titles on pos 8-20 pages every night. Need to protect high-value manual titles or bake improvements into the bot logic.",
-        "Local git main branch pointer gets stale in ephemeral containers — remote main advances via CI but local clone is not updated. cherry-pick workflow is the correct approach.",
+        "Local git main branch pointer gets stale in ephemeral containers \u2014 remote main advances via CI but local clone is not updated. cherry-pick workflow is the correct approach.",
         "ProtonMail page gap: CJ route was live but zero pages existed. Page created covers the /protonmail affiliate link."
       ],
       "owner_actions_needed": [
         "PartnerStack appeal: follow up if not reinstated within 48h of June 19 appeal",
         "Apply HubSpot on Impact.com from dashboard (publisher 7269601)",
         "Apply GetResponse/Elementor/ProtonVPN/Parallels on Awin (publisher 2917137)",
-        "Get CJ deep links for GetResponse/Proton/Elementor/AWeber/Parallels (app.cj.com → Links → Get Links)"
+        "Get CJ deep links for GetResponse/Proton/Elementor/AWeber/Parallels (app.cj.com \u2192 Links \u2192 Get Links)"
       ]
     },
     {
@@ -575,66 +603,66 @@
       "session": "ceo-daily",
       "gmail_findings": {
         "awin": "Fiverr APPROVED 2026-06-03 (confirmed previously active). FreshBooks REJECTED (program closing).",
-        "impact_com": "impact.com Partner Program APPROVED 2026-06-16 (publisher 7359133) — /go/impact /go/impact-demo /go/impact-com all LIVE in _redirects (confirmed set up prior session).",
+        "impact_com": "impact.com Partner Program APPROVED 2026-06-16 (publisher 7359133) \u2014 /go/impact /go/impact-demo /go/impact-com all LIVE in _redirects (confirmed set up prior session).",
         "partnerstack": "3rd rejection 2026-06-22. Appeal ticket 116965 open. ClickUp/Monday/ActiveCampaign/Dashlane still locked.",
-        "wix_impact": "Contract application sent 2026-06-01 — still pending impact.com review.",
-        "activecampaign": "Marketing email received from psaffiliates@activecampaign.com — NOT an approval.",
-        "pipedrive": "Application sent via PartnerStack 2026-06-25 — pending."
+        "wix_impact": "Contract application sent 2026-06-01 \u2014 still pending impact.com review.",
+        "activecampaign": "Marketing email received from psaffiliates@activecampaign.com \u2014 NOT an approval.",
+        "pipedrive": "Application sent via PartnerStack 2026-06-25 \u2014 pending."
       },
       "ctr_fixes": [
         "best-vpn-business-software-for-startups: title fix (pos 5, 48 impr, zero monetization words in old title) -> Best VPN for Business 2026: NordLayer vs Tailscale vs Twingate [Ranked]",
-        "ramp-pricing: title -> /bin/bash Core vs 5/User Plus — Every Change Tracked (June Update) [1,687 impr, pos 10.2, 0.59% CTR]",
-        "mixpanel-pricing: title -> /bin/bash Free vs 8/mo Growth — Exactly When Costs Spike [742 impr, pos 13.7, 0% CTR]",
+        "ramp-pricing: title -> /bin/bash Core vs 5/User Plus \u2014 Every Change Tracked (June Update) [1,687 impr, pos 10.2, 0.59% CTR]",
+        "mixpanel-pricing: title -> /bin/bash Free vs 8/mo Growth \u2014 Exactly When Costs Spike [742 impr, pos 13.7, 0% CTR]",
         "notion-free-plan: title -> 10-Guest Cap & 7-Day History Are the Killers [557 impr, pos 9.4, 0% CTR]",
         "sentry-free-plan: title -> Is Sentry Free? (2026): 5,000 Errors/Month Limit [528 impr, pos 7.5, 0% CTR]",
-        "shopify-vs-recurly: title -> 9/mo Shopify vs Custom Recurly — Which Wins for Subscriptions? [134 impr, pos 7.5, 0% CTR]"
+        "shopify-vs-recurly: title -> 9/mo Shopify vs Custom Recurly \u2014 Which Wins for Subscriptions? [134 impr, pos 7.5, 0% CTR]"
       ],
-      "new_page": "impact-com-review-2026-is-it-worth-it-honest-verdict.html — 8.8/10 review, FAQPage schema, 5 FAQs, /go/impact-demo + /go/impact CTAs, full pros/cons/features/pricing/verdict/alternatives structure",
-      "revenue_leaks": "0 direct vendor URLs found — all clean",
+      "new_page": "impact-com-review-2026-is-it-worth-it-honest-verdict.html \u2014 8.8/10 review, FAQPage schema, 5 FAQs, /go/impact-demo + /go/impact CTAs, full pros/cons/features/pricing/verdict/alternatives structure",
+      "revenue_leaks": "0 direct vendor URLs found \u2014 all clean",
       "gsc_top_opportunities": {
-        "ramp_pricing_change": "279+141+121=541 impressions at pos 3-5 for ramp pricing change [month] 2026 queries — existing page already targets this. Title update should improve CTR.",
-        "semrush_vs_moz": "1,365 impr at pos 70 — deep SERP, needs ranking improvement not title fix. Content was upgraded 2026-06-13.",
-        "semrush_pricing": "483 impr at pos 79 — too deep for CTR fixes to help."
+        "ramp_pricing_change": "279+141+121=541 impressions at pos 3-5 for ramp pricing change [month] 2026 queries \u2014 existing page already targets this. Title update should improve CTR.",
+        "semrush_vs_moz": "1,365 impr at pos 70 \u2014 deep SERP, needs ranking improvement not title fix. Content was upgraded 2026-06-13.",
+        "semrush_pricing": "483 impr at pos 79 \u2014 too deep for CTR fixes to help."
       },
       "tests": "93/93 passed",
       "next_human_actions": [
-        "URGENT: Get GetResponse CJ deep link from app.cj.com (Advertiser 3142111) — current /go/getresponse uses non-CJ link, losing 00/lead commission",
-        "URGENT: Log into PartnerStack — check ticket 116965 status for ClickUp/Monday/ActiveCampaign unlock",
+        "URGENT: Get GetResponse CJ deep link from app.cj.com (Advertiser 3142111) \u2014 current /go/getresponse uses non-CJ link, losing 00/lead commission",
+        "URGENT: Log into PartnerStack \u2014 check ticket 116965 status for ClickUp/Monday/ActiveCampaign unlock",
         "ACTION: Log into impact.com (account 7269601) and apply for HubSpot and 1Password from their marketplace",
-        "ACTION: Check Wix contract on impact.com — sent 2026-06-01, should have a decision by now",
-        "MONITOR: Ramp pricing CTR — baseline 0.59% at 1,687 impr, pos 10.2 — expect improvement with new title targeting pricing change queries"
+        "ACTION: Check Wix contract on impact.com \u2014 sent 2026-06-01, should have a decision by now",
+        "MONITOR: Ramp pricing CTR \u2014 baseline 0.59% at 1,687 impr, pos 10.2 \u2014 expect improvement with new title targeting pricing change queries"
       ],
       "measure_at_21days": {
-        "ramp-pricing-ctr": "baseline 0.59%, pos 10.2, 1,687 impr — target >1.5% with change-tracker-focused title",
-        "mixpanel-pricing-ctr": "was 0% x 742 impr — target >0.5% by mid-July",
-        "notion-free-plan-ctr": "was 0% x 557 impr, pos 9.4 — target >1%",
-        "impact-com-review": "new page — baseline impressions TBD"
+        "ramp-pricing-ctr": "baseline 0.59%, pos 10.2, 1,687 impr \u2014 target >1.5% with change-tracker-focused title",
+        "mixpanel-pricing-ctr": "was 0% x 742 impr \u2014 target >0.5% by mid-July",
+        "notion-free-plan-ctr": "was 0% x 557 impr, pos 9.4 \u2014 target >1%",
+        "impact-com-review": "new page \u2014 baseline impressions TBD"
       }
     },
     {
       "date": "2026-07-22",
       "session": "ceo-daily",
       "gmail_findings": {
-        "awin": "EngageBay CRM invited SaaSpare to Awin programme (30% recurring commission) — invitation from 2026-07-20. Requires owner to accept at ui.awin.com (link: /awin/membership-invitation/accept/2917137/127075). SpamGuard already activated prior session.",
+        "awin": "EngageBay CRM invited SaaSpare to Awin programme (30% recurring commission) \u2014 invitation from 2026-07-20. Requires owner to accept at ui.awin.com (link: /awin/membership-invitation/accept/2917137/127075). SpamGuard already activated prior session.",
         "impact": "impact.com partner program contract terms changed 2026-07-22 (notification only, no action needed). Wix still asking to reapply (not an approval). Semrush contract change = technical migration only, no commission changes.",
         "partnerstack": "No new approvals.",
         "xero_brevo_hotjar": "No emails from Xero, Brevo, Hotjar, or Constant Contact."
       },
       "ctr_fixes": [
-        "ramp-pricing: removed redundant 'July 2026 verified.' from meta desc — now leads with 'Ramp pricing July 2026: Free Card = $0 forever...' (1,687 impr, pos 10.2)",
-        "loom-free-plan: fixed double 'July 2026. July 2026.' meta desc — now clean value-led description (255 impr, pos 10.9)"
+        "ramp-pricing: removed redundant 'July 2026 verified.' from meta desc \u2014 now leads with 'Ramp pricing July 2026: Free Card = $0 forever...' (1,687 impr, pos 10.2)",
+        "loom-free-plan: fixed double 'July 2026. July 2026.' meta desc \u2014 now clean value-led description (255 impr, pos 10.9)"
       ],
       "new_page": "surfshark-vs-private-internet-access-which-is-better-in-2026 (Surfshark wins 8.9 vs PIA 8.6, /go/surfshark CJ commission, detailed 5-tab comparison including port forwarding/dedicated IP analysis)",
-      "activated": "None — EngageBay requires manual Awin acceptance by owner",
+      "activated": "None \u2014 EngageBay requires manual Awin acceptance by owner",
       "revenue_leaks_fixed": 0,
       "tests": "93/93 passed",
       "escalate_to_owner": [
-        "URGENT ACTION: Accept EngageBay CRM on Awin — visit ui.awin.com → Programmes → Pending invitations. Advertiser ID 127075. Earns 30% RECURRING commission. Worth $X/mo on any referred plan.",
-        "Wix (Impact) asked to reapply — worth reapplying at app.impact.com if still interested",
+        "URGENT ACTION: Accept EngageBay CRM on Awin \u2014 visit ui.awin.com \u2192 Programmes \u2192 Pending invitations. Advertiser ID 127075. Earns 30% RECURRING commission. Worth $X/mo on any referred plan.",
+        "Wix (Impact) asked to reapply \u2014 worth reapplying at app.impact.com if still interested",
         "Semrush contract change = technical migration only, no action needed"
       ],
       "measure_at_21days": {
-        "surfshark-vs-pia-position": "new page — baseline = no data, target <20 within 60 days",
+        "surfshark-vs-pia-position": "new page \u2014 baseline = no data, target <20 within 60 days",
         "ramp-pricing-ctr": "baseline 0.59% @ pos 10.2, 1687 impr -> target >1.5%"
       }
     },
@@ -642,13 +670,13 @@
       "date": "2026-07-22",
       "session": "revenue-hunter",
       "gmail_findings": {
-        "awin_engagebay": "EngageBay CRM invited SaaSpare to Awin programme (Advertiser ID 127075) on 2026-07-20 — 30% RECURRING commission. Requires owner to accept at ui.awin.com. _redirects comment updated with ready-to-paste Awin link.",
+        "awin_engagebay": "EngageBay CRM invited SaaSpare to Awin programme (Advertiser ID 127075) on 2026-07-20 \u2014 30% RECURRING commission. Requires owner to accept at ui.awin.com. _redirects comment updated with ready-to-paste Awin link.",
         "awin_spamguard": "Already activated prior session.",
         "impact": "impact.com partner program contract terms changed 2026-07-22 (notification only). Wix still reapply request (not an approval).",
         "partnerstack": "No new approvals.",
         "xero_brevo_hotjar_constant_contact": "No emails found."
       },
-      "activated": "None — EngageBay requires manual Awin acceptance by owner",
+      "activated": "None \u2014 EngageBay requires manual Awin acceptance by owner",
       "direct_url_leaks_fixed": 0,
       "ctr_fixes": [
         "mixpanel-pricing: title -> Mixpanel Pricing 2026: Free at 20M Events, Growth from 8/mo [July Verified] | meta stripped double date prefix (742 impr, pos 13.7, 0% CTR)",
@@ -656,43 +684,43 @@
         "aws-vs-supabase: meta stripped Updated July 2026. prefix -> leads with score (286 impr, pos 10.0, 0% CTR)",
         "tailscale-vs-zscaler: meta stripped Updated July 2026. prefix -> specific ZTNA verdict (251 impr, pos 8.78, 1.2% CTR)"
       ],
-      "new_page": "engagebay-vs-hubspot-which-is-better-in-2026.html — EngageBay 8.4/10 vs HubSpot 8.9/10, /go/engagebay CTA, 5 FAQs, pricing table, who-wins breakdown. Targets \"engagebay vs hubspot\" and \"engagebay alternative to hubspot\" queries.",
+      "new_page": "engagebay-vs-hubspot-which-is-better-in-2026.html \u2014 EngageBay 8.4/10 vs HubSpot 8.9/10, /go/engagebay CTA, 5 FAQs, pricing table, who-wins breakdown. Targets \"engagebay vs hubspot\" and \"engagebay alternative to hubspot\" queries.",
       "tests": "93/93 passed",
       "escalate_to_owner": [
-        "URGENT ACTION: Accept EngageBay CRM on Awin — visit ui.awin.com -> Programmes -> Pending invitations. Advertiser ID 127075. 30% RECURRING commission. Once accepted, update /go/engagebay in site/_redirects with the ready-to-paste Awin link in the comment above line 341.",
-        "FYI: Wix (Impact) asked to reapply — reapply at app.impact.com if still interested in Wix affiliate",
+        "URGENT ACTION: Accept EngageBay CRM on Awin \u2014 visit ui.awin.com -> Programmes -> Pending invitations. Advertiser ID 127075. 30% RECURRING commission. Once accepted, update /go/engagebay in site/_redirects with the ready-to-paste Awin link in the comment above line 341.",
+        "FYI: Wix (Impact) asked to reapply \u2014 reapply at app.impact.com if still interested in Wix affiliate",
         "Semrush contract change = technical migration only, no commission impact"
       ],
       "measure_at_21days": {
-        "mixpanel-pricing-ctr": "baseline 0%, 742 impr, pos 13.7 — target >0.5% by Aug 12",
-        "nordlayer-pricing-ctr": "baseline 0.37%, 270 impr, pos 18.9 — target >1% by Aug 12",
-        "aws-vs-supabase-ctr": "baseline 0%, 286 impr, pos 10.0 — target >0.5% by Aug 12",
-        "tailscale-vs-zscaler-ctr": "baseline 1.2%, 251 impr, pos 8.78 — target >2% by Aug 12",
-        "engagebay-vs-hubspot": "new page — watch for impressions by Aug 5"
+        "mixpanel-pricing-ctr": "baseline 0%, 742 impr, pos 13.7 \u2014 target >0.5% by Aug 12",
+        "nordlayer-pricing-ctr": "baseline 0.37%, 270 impr, pos 18.9 \u2014 target >1% by Aug 12",
+        "aws-vs-supabase-ctr": "baseline 0%, 286 impr, pos 10.0 \u2014 target >0.5% by Aug 12",
+        "tailscale-vs-zscaler-ctr": "baseline 1.2%, 251 impr, pos 8.78 \u2014 target >2% by Aug 12",
+        "engagebay-vs-hubspot": "new page \u2014 watch for impressions by Aug 5"
       }
     },
     {
       "date": "2026-08-01",
       "session": "revenue-hunter",
       "gmail_findings": {
-        "awin": "No new approvals. EngageBay (Awin 127075) was already activated in a prior session — /go/engagebay and /go/engagebay-pricing live with publisher 2917137. EngageBay pricing deep-link email received 2026-07-30 (already incorporated). SpamGuard previously activated. FreshBooks permanently rejected.",
+        "awin": "No new approvals. EngageBay (Awin 127075) was already activated in a prior session \u2014 /go/engagebay and /go/engagebay-pricing live with publisher 2917137. EngageBay pricing deep-link email received 2026-07-30 (already incorporated). SpamGuard previously activated. FreshBooks permanently rejected.",
         "impact": "Semrush contract terms migration (no commission change). Wix asked to reapply (not approved). No new Impact approvals.",
         "partnerstack": "Still permanently blocked.",
         "xero_brevo_hotjar": "No new approvals from Xero, Brevo, Hotjar, or Constant Contact."
       },
-      "activated": "None new — EngageBay already activated previously",
-      "ctr_title_fixes": "248 pages updated: batch-replaced [July]/[June 2026] → [August 2026] in <title> and meta description tags site-wide. Top impressions fixed: xero-pricing (486 impr), semrush-pricing (483 impr), gusto-pricing (360 impr), does-asana-have-a-free-plan (327 impr), nordlayer-pricing (270 impr) + 243 more. Also targeted 7 additional pages: datadog-coupon, linear-free-trial, twingate-vs-zscaler, aws-vs-supabase, cloudflare-access free plan, shopify-vs-recurly, semrush-promo-code.",
-      "ramp_pricing_update": "Updated 6 internal FAQ/schema date references from July → August 2026 in ramp-pricing page",
-      "new_page": "nordpass-vs-1password-which-is-better-in-2026 — NordPass ($1.99/mo) vs 1Password ($2.99/mo) comparison. FAQPage schema, pricing table, Travel Mode section, 5 buyer-intent FAQs. /go/nordpass (earning NOW), /go/1password-trial (pending Impact). Targets 'nordpass vs 1password' + '1password vs nordpass 2026' queries.",
+      "activated": "None new \u2014 EngageBay already activated previously",
+      "ctr_title_fixes": "248 pages updated: batch-replaced [July]/[June 2026] \u2192 [August 2026] in <title> and meta description tags site-wide. Top impressions fixed: xero-pricing (486 impr), semrush-pricing (483 impr), gusto-pricing (360 impr), does-asana-have-a-free-plan (327 impr), nordlayer-pricing (270 impr) + 243 more. Also targeted 7 additional pages: datadog-coupon, linear-free-trial, twingate-vs-zscaler, aws-vs-supabase, cloudflare-access free plan, shopify-vs-recurly, semrush-promo-code.",
+      "ramp_pricing_update": "Updated 6 internal FAQ/schema date references from July \u2192 August 2026 in ramp-pricing page",
+      "new_page": "nordpass-vs-1password-which-is-better-in-2026 \u2014 NordPass ($1.99/mo) vs 1Password ($2.99/mo) comparison. FAQPage schema, pricing table, Travel Mode section, 5 buyer-intent FAQs. /go/nordpass (earning NOW), /go/1password-trial (pending Impact). Targets 'nordpass vs 1password' + '1password vs nordpass 2026' queries.",
       "leaks_fixed": 0,
       "tests": "93/93 passed",
       "commit": "52a4f5c0",
       "next_human_actions": [
-        "ACCEPT any new Awin/PartnerStack invitations if they arrive — check Awin portal (publisher 2917137)",
-        "Apply for Wix on Impact — they asked to reapply (could be $100/sale)",
-        "Get CJ deep links from app.cj.com for: GetResponse (3142111), ProtonVPN (5227916), Elementor (6798066), AWeber (5111249), Parallels (2005415) — these are APPROVED but need real tracking links",
-        "MONITOR: Impact.com applications for HubSpot, 1Password — check app.impact.com dashboard",
-        "MONITOR: nordpass-vs-1password page — track GSC position at 21 days (target: <30)"
+        "ACCEPT any new Awin/PartnerStack invitations if they arrive \u2014 check Awin portal (publisher 2917137)",
+        "Apply for Wix on Impact \u2014 they asked to reapply (could be $100/sale)",
+        "Get CJ deep links from app.cj.com for: GetResponse (3142111), ProtonVPN (5227916), Elementor (6798066), AWeber (5111249), Parallels (2005415) \u2014 these are APPROVED but need real tracking links",
+        "MONITOR: Impact.com applications for HubSpot, 1Password \u2014 check app.impact.com dashboard",
+        "MONITOR: nordpass-vs-1password page \u2014 track GSC position at 21 days (target: <30)"
       ]
     }
   ],
@@ -701,36 +729,36 @@
       "date": "2026-06-30",
       "session": "revenue-hunter",
       "gmail_findings": {
-        "partnerstack": "PERMANENTLY BLOCKED — 3rd rejection 2026-06-22/23 by Anjola S. 'Not a fit for the PartnerStack Network at this time.' ClickUp/Monday/ActiveCampaign/Dashlane revenue path is closed. No further appeals.",
-        "impact_com": "own program APPROVED 2026-06-16 — already activated in prior session (/go/impact live).",
+        "partnerstack": "PERMANENTLY BLOCKED \u2014 3rd rejection 2026-06-22/23 by Anjola S. 'Not a fit for the PartnerStack Network at this time.' ClickUp/Monday/ActiveCampaign/Dashlane revenue path is closed. No further appeals.",
+        "impact_com": "own program APPROVED 2026-06-16 \u2014 already activated in prior session (/go/impact live).",
         "no_new_approvals": "No new affiliate program approvals found in Gmail scan."
       },
       "revenue_leak_found": {
-        "getresponse": "/go/getresponse points to https://www.getresponse.com/?a=-CJ&affpath=directbuy — NOT a real CJ tracking link. Real CJ links go through dpbolvw.net or tkqlhce.com. CJ advertiser ID is 3142111. OWNER ACTION REQUIRED: log into app.cj.com -> advertiser 3142111 -> Get Links -> replace /go/getresponse in site/_redirects with real deep link. Estimated loss: $100/lead commission on all referrals."
+        "getresponse": "/go/getresponse points to https://www.getresponse.com/?a=-CJ&affpath=directbuy \u2014 NOT a real CJ tracking link. Real CJ links go through dpbolvw.net or tkqlhce.com. CJ advertiser ID is 3142111. OWNER ACTION REQUIRED: log into app.cj.com -> advertiser 3142111 -> Get Links -> replace /go/getresponse in site/_redirects with real deep link. Estimated loss: $100/lead commission on all referrals."
       },
       "ctr_fixes": [
-        "ramp-pricing: title -> 'Did Ramp Change Pricing in June 2026? [No — Free Card Still $0, Full Change Log]' (pos 3.7, 121 impr, 0 clicks for change-query variants)",
+        "ramp-pricing: title -> 'Did Ramp Change Pricing in June 2026? [No \u2014 Free Card Still $0, Full Change Log]' (pos 3.7, 121 impr, 0 clicks for change-query variants)",
         "mixpanel-pricing: title -> 'Mixpanel Pricing 2026: Is Free (20M Events) Enough or Do You Need $28/mo? [Verdict]' (742 impr, pos 13.7, 0% CTR)",
-        "semrush-pricing: title -> 'Semrush Pricing 2026: Pro $139.95/mo ($117 Annual) — Is It Worth It? [All Plans + Hidden Costs]' (483 impr, pos 79, active CJ earner via semrush.sjv.io)",
-        "nordlayer-pricing: title -> 'NordLayer Pricing 2026: $9 Lite vs $14 Business — Is It Worth It for Teams? [Verdict]' (270 impr, pos 19, 0.37% CTR)"
+        "semrush-pricing: title -> 'Semrush Pricing 2026: Pro $139.95/mo ($117 Annual) \u2014 Is It Worth It? [All Plans + Hidden Costs]' (483 impr, pos 79, active CJ earner via semrush.sjv.io)",
+        "nordlayer-pricing: title -> 'NordLayer Pricing 2026: $9 Lite vs $14 Business \u2014 Is It Worth It for Teams? [Verdict]' (270 impr, pos 19, 0.37% CTR)"
       ],
-      "new_page": "nordlayer-vs-nordvpn-which-is-better-in-2026.html — NordVPN (9.2/10, consumer) vs NordLayer (8.5/10, business), 5x /go/nordvpn CTAs (CJ active earner), FAQPage JSON-LD schema (4 FAQs), pricing table, 13-row feature comparison, tab navigation, targets 'nordlayer vs nordvpn' keyword gap",
-      "direct_url_leaks": "0 — grep confirmed no untracked direct vendor hrefs in site/pages/",
+      "new_page": "nordlayer-vs-nordvpn-which-is-better-in-2026.html \u2014 NordVPN (9.2/10, consumer) vs NordLayer (8.5/10, business), 5x /go/nordvpn CTAs (CJ active earner), FAQPage JSON-LD schema (4 FAQs), pricing table, 13-row feature comparison, tab navigation, targets 'nordlayer vs nordvpn' keyword gap",
+      "direct_url_leaks": "0 \u2014 grep confirmed no untracked direct vendor hrefs in site/pages/",
       "tests": "93/93 passed",
       "sitemap": "1437 URLs (nordlayer-vs-nordvpn added)",
       "measure_at_21days": {
-        "nordlayer-vs-nordvpn-impressions": "new page — baseline TBD",
-        "ramp-pricing-ctr": "pos 3.7 for 'ramp pricing change june 2026' — expect CTR > 5% with explicit yes/no question format",
-        "semrush-pricing-ctr": "pos 79 is too deep for CTR to matter — title fix is a SERP quality signal, real win needs ranking improvement",
-        "mixpanel-pricing-ctr": "was 0% at 742 impr — target > 0.5% by 21 July",
-        "nordlayer-pricing-ctr": "was 0.37% at 270 impr — target > 1.5% by 21 July"
+        "nordlayer-vs-nordvpn-impressions": "new page \u2014 baseline TBD",
+        "ramp-pricing-ctr": "pos 3.7 for 'ramp pricing change june 2026' \u2014 expect CTR > 5% with explicit yes/no question format",
+        "semrush-pricing-ctr": "pos 79 is too deep for CTR to matter \u2014 title fix is a SERP quality signal, real win needs ranking improvement",
+        "mixpanel-pricing-ctr": "was 0% at 742 impr \u2014 target > 0.5% by 21 July",
+        "nordlayer-pricing-ctr": "was 0.37% at 270 impr \u2014 target > 1.5% by 21 July"
       },
       "next_human_actions": [
-        "URGENT: Fix GetResponse revenue leak — log into app.cj.com -> Advertiser 3142111 -> Get Links -> replace /go/getresponse URL in site/_redirects with real tracking link. Currently losing $100/lead.",
-        "URGENT: PartnerStack PERMANENTLY CLOSED. Pivot strategy: apply to ClickUp direct (clickup.com/affiliates), Monday.com direct, ActiveCampaign direct — bypass PartnerStack entirely.",
-        "ACTION: Log into Impact.com (publisher 7269601) — apply for HubSpot ($250-1000/sale) and 1Password ($30-60/sale) from their marketplace.",
+        "URGENT: Fix GetResponse revenue leak \u2014 log into app.cj.com -> Advertiser 3142111 -> Get Links -> replace /go/getresponse URL in site/_redirects with real tracking link. Currently losing $100/lead.",
+        "URGENT: PartnerStack PERMANENTLY CLOSED. Pivot strategy: apply to ClickUp direct (clickup.com/affiliates), Monday.com direct, ActiveCampaign direct \u2014 bypass PartnerStack entirely.",
+        "ACTION: Log into Impact.com (publisher 7269601) \u2014 apply for HubSpot ($250-1000/sale) and 1Password ($30-60/sale) from their marketplace.",
         "ACTION: Get CJ deep links for GetResponse (3142111), Elementor (6798066), Proton (5227916), AWeber (5111249), Parallels (2005415) from app.cj.com -> Links -> Get Links.",
-        "MONITOR: Wix contract on Impact.com (sent 2026-06-01) — should have decision by now."
+        "MONITOR: Wix contract on Impact.com (sent 2026-06-01) \u2014 should have decision by now."
       ]
     },
     {
@@ -838,24 +866,24 @@
       "date": "2026-07-21",
       "session": "revenue-hunter",
       "gmail_findings": {
-        "awin": "SpamGuard (Awin ID 127497) APPROVED 2026-07-20 — /go/spamguard LIVE with Awin tracking link (awinmid=127497, awinaffid=2917137). EngageBay CRM invited 2026-07-20 (30% recurring, accept via Awin portal). FreshBooks permanently rejected.",
-        "impact": "Wix (Impact) sent 'reapply if still interested' message 2026-07-19 — NOT an approval. Semrush contract terms changed 2026-07-18.",
+        "awin": "SpamGuard (Awin ID 127497) APPROVED 2026-07-20 \u2014 /go/spamguard LIVE with Awin tracking link (awinmid=127497, awinaffid=2917137). EngageBay CRM invited 2026-07-20 (30% recurring, accept via Awin portal). FreshBooks permanently rejected.",
+        "impact": "Wix (Impact) sent 'reapply if still interested' message 2026-07-19 \u2014 NOT an approval. Semrush contract terms changed 2026-07-18.",
         "partnerstack": "PERMANENTLY BLOCKED (confirmed). No new PartnerStack approvals.",
         "xero_brevo_hotjar": "No emails from Xero, Brevo, Hotjar, or Constant Contact."
       },
-      "activated": "/go/spamguard → https://www.awin1.com/cread.php?awinmid=127497&awinaffid=2917137&ued=https%3A%2F%2Fspamguardapp.com%2F",
+      "activated": "/go/spamguard \u2192 https://www.awin1.com/cread.php?awinmid=127497&awinaffid=2917137&ued=https%3A%2F%2Fspamguardapp.com%2F",
       "ctr_fixes": [
-        "ramp-pricing: 1687 impr pos 10.2 — title shortened to 73 chars with July signal",
-        "mixpanel-pricing: 742 impr pos 13.7 — price anchors (20M events, $28/mo) in title",
-        "notion-free-plan: 557 impr pos 9.4 — title cut from 83→65 chars",
-        "sentry-free-plan: 528 impr pos 7.5 — 5K/7-day/1-seat specifics in title",
-        "loom-free-plan: 255 impr pos 10.9 — title cut from 78→64 chars",
-        "nordlayer-pricing: 270 impr pos 19.0 — per-user prices in title"
+        "ramp-pricing: 1687 impr pos 10.2 \u2014 title shortened to 73 chars with July signal",
+        "mixpanel-pricing: 742 impr pos 13.7 \u2014 price anchors (20M events, $28/mo) in title",
+        "notion-free-plan: 557 impr pos 9.4 \u2014 title cut from 83\u219265 chars",
+        "sentry-free-plan: 528 impr pos 7.5 \u2014 5K/7-day/1-seat specifics in title",
+        "loom-free-plan: 255 impr pos 10.9 \u2014 title cut from 78\u219264 chars",
+        "nordlayer-pricing: 270 impr pos 19.0 \u2014 per-user prices in title"
       ],
       "new_page": "elementor-vs-beaver-builder-which-is-better-in-2026 (Elementor wins 9.0 vs Beaver Builder 8.2, /go/elementor CJ 45% commission)",
       "escalate_to_owner": [
-        "EngageBay CRM invited on Awin — accept at ui.awin.com to unlock affiliate tracking (30% recurring commission)",
-        "Wix asked SaaSpare to reapply on Impact — worth reapplying at app.impact.com",
+        "EngageBay CRM invited on Awin \u2014 accept at ui.awin.com to unlock affiliate tracking (30% recurring commission)",
+        "Wix asked SaaSpare to reapply on Impact \u2014 worth reapplying at app.impact.com",
         "SpamGuard is now live but verify the /go/spamguard link generates correctly in Awin portal (Advertiser 127497)"
       ],
       "commit": "4f5a81d1"
@@ -864,17 +892,17 @@
       "date": "2026-07-23",
       "session": "revenue-hunter",
       "actions": [
-        "NordLayer pricing title updated: added price specifics (Lite $9, Core $11, Business $14/User/mo) — 97 impr at pos 11 for nordlayer price query. Old title: NordLayer Pricing 2026 (Verified July 2026) — Real Costs + Hidden Fees",
-        "NEW PAGE: engagebay-vs-activecampaign-which-is-better-in-2026.html — targeting EngageBay vs ActiveCampaign comparison. EngageBay active Awin (30% recurring), ActiveCampaign pending PartnerStack (BLOCKED).",
+        "NordLayer pricing title updated: added price specifics (Lite $9, Core $11, Business $14/User/mo) \u2014 97 impr at pos 11 for nordlayer price query. Old title: NordLayer Pricing 2026 (Verified July 2026) \u2014 Real Costs + Hidden Fees",
+        "NEW PAGE: engagebay-vs-activecampaign-which-is-better-in-2026.html \u2014 targeting EngageBay vs ActiveCampaign comparison. EngageBay active Awin (30% recurring), ActiveCampaign pending PartnerStack (BLOCKED).",
         "EngageBay Awin: owner must ACCEPT invitation at ui.awin.com (publisher 2917137)",
-        "PartnerStack PERMANENTLY BLOCKED — no Pipedrive/ActiveCampaign/ClickUp/Monday links possible",
+        "PartnerStack PERMANENTLY BLOCKED \u2014 no Pipedrive/ActiveCampaign/ClickUp/Monday links possible",
         "Gmail scan: SpamGuard and Pipedrive already handled (Jul 21). No new affiliate approvals found."
       ],
       "owner_actions_needed": [
-        "ACCEPT EngageBay Awin invitation at ui.awin.com (publisher 2917137) — 30% recurring commission",
+        "ACCEPT EngageBay Awin invitation at ui.awin.com (publisher 2917137) \u2014 30% recurring commission",
         "Apply on Awin to: GetResponse (3142111 EPC $31), ProtonVPN (5227916 EPC $30), Elementor (6798066 45%), Parallels (2005415 EPC $32)"
       ],
-      "notes": "ceo-daily session already committed EngageBay activation, 4 CTR meta fixes, EngageBay vs Zoho CRM page — revenue-hunter adds NordLayer title + EngageBay vs ActiveCampaign on top."
+      "notes": "ceo-daily session already committed EngageBay activation, 4 CTR meta fixes, EngageBay vs Zoho CRM page \u2014 revenue-hunter adds NordLayer title + EngageBay vs ActiveCampaign on top."
     }
   ]
 }
