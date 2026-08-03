@@ -341,3 +341,9 @@
 /go/engagebay https://www.awin1.com/cread.php?awinmid=127075&awinaffid=2917137&ued=https%3A%2F%2Fwww.engagebay.com%2F 302
 # EngageBay pricing deep link — from Awin email 2026-07-30 (direct to pricing page, higher conversion)
 /go/engagebay-pricing https://www.awin1.com/cread.php?awinmid=127075&awinaffid=2917137&campaign=AffiliatePricingPush2026&ued=https%3A%2F%2Fwww.engagebay.com%2Fpricing%2Fall-in-one 302
+
+# Iternal Technologies — CJ APPROVED 2026-08-03 (Advertiser ID 7676842) — $40-$450/sale AirgapAI portfolio
+# TODO: Login to app.cj.com → Links → search "Iternal Technologies" → get real deep link IDs, replace placeholders below
+/go/iternal https://www.iternal.us/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/airgapai https://www.iternal.us/airgapai/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
+/go/airgapai-code https://www.iternal.us/airgapai-code/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
