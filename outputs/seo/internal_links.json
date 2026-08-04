@@ -1,9 +1,9 @@
 {
-  "total_pages": 1487,
-  "updated": 1484,
+  "total_pages": 1488,
+  "updated": 1485,
   "skipped": 3,
-  "orphans_before": 50,
-  "orphans_after": 45,
+  "orphans_before": 51,
+  "orphans_after": 44,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -12,7 +12,7 @@
         "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/okta-vs-duo-security-which-is-better-in-2026",
         "/pages/1password-vs-nordpass-which-is-better-in-2026",
-        "/pages/ramp-vs-airbase-which-is-better-in-2026"
+        "/pages/github-copilot-vs-terraform-which-is-better-in-2026"
       ]
     },
     {
@@ -21,7 +21,7 @@
         "/pages/nordlayer-vs-tailscale-which-is-better-in-2026",
         "/pages/nordpass-vs-bitwarden-which-is-better-in-2026",
         "/pages/bitwarden-vs-keeper-which-is-better-in-2026",
-        "/pages/freshbooks-vs-brex-which-is-better-in-2026",
+        "/pages/freshbooks-vs-airbase-which-is-better-in-2026",
         "/pages/pardot-vs-drip-which-is-better-in-2026"
       ]
     },
@@ -31,8 +31,8 @@
         "/pages/7-best-1password-alternatives-in-2026-free-paid",
         "/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026",
         "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/trello-vs-wrike-which-is-better-in-2026",
-        "/pages/expensify-vs-divvy-which-is-better-in-2026"
+        "/pages/elementor-vs-bricks-builder-which-is-better-in-2026",
+        "/pages/dashlane-vs-roboform-which-is-better-in-2026"
       ]
     }
   ]

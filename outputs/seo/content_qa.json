@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-04T06:30:39.175527+00:00",
+  "generated_at": "2026-08-04T21:30:53.467296+00:00",
   "stats": {
-    "sitemap_urls": 1513,
-    "sitemap_with_lastmod": 1513,
-    "total_pages": 1564,
-    "indexable_pages": 1552,
+    "sitemap_urls": 1514,
+    "sitemap_with_lastmod": 1514,
+    "total_pages": 1565,
+    "indexable_pages": 1553,
     "desc_over_165": 29,
-    "title_over_70": 166,
-    "money_pages": 1278,
-    "soft": 21
+    "title_over_70": 167,
+    "money_pages": 1279,
+    "soft": 26
   },
   "hard_failures": [],
   "soft_issues": [
@@ -18,6 +18,11 @@
     "site/pages/best-engagebay-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/getresponse",
     "site/pages/best-engagebay-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/brevo",
     "site/pages/best-engagebay-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/zoho-crm",
+    "site/pages/elementor-vs-bricks-builder-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
+    "site/pages/elementor-vs-bricks-builder-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
+    "site/pages/elementor-vs-bricks-builder-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
+    "site/pages/elementor-vs-bricks-builder-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
+    "site/pages/elementor-vs-bricks-builder-which-is-better-in-2026.html: /go/ link without rel attribute: /go/elementor",
     "site/pages/thanks.html: title <30 chars (29)",
     "site/pages/v3-preview-404.html: title <30 chars (25)",
     "site/pages/best-elementor-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/elementor",
@@ -34,5 +39,5 @@
     "site/pages/best-aweber-alternatives-in-2026-free-paid.html: /go/ link without rel attribute: /go/aweber",
     "site/pages/v3-preview-contact.html: title <30 chars (27)"
   ],
-  "soft_issues_total": 21
+  "soft_issues_total": 26
 }
