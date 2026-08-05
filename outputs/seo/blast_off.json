@@ -1,23 +1,38 @@
 {
   "current_month": "August 2026",
   "today": "2026-08-05",
-  "titles_rewritten": 1,
-  "descs_rewritten": 20,
-  "dates_refreshed": 1168,
+  "titles_rewritten": 4,
+  "descs_rewritten": 30,
+  "dates_refreshed": 0,
   "answers_added": 15,
-  "files_changed": 1183,
+  "files_changed": 31,
   "files_scanned": 1506,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
+    },
+    {
+      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Datadog Coupon 2026 \u2014 Real Working Promo Codes (Not Expired)",
+      "after": "Datadog Coupon 2026 (Verified August 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "linear-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Linear Free Trial 2026: How to Get It + What Is Included (Step-by-Step)",
+      "after": "Linear Free Trial 2026: How to Get the Full August 2026 Offer"
+    },
+    {
+      "file": "semrush-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Semrush Free Trial 2026: Get Started Step-by-Step | SaaSpare",
+      "after": "Semrush Free Trial 2026: How to Get the Full August 2026 Offer"
     }
   ],
   "desc_examples": [
     {
       "file": "1password-pricing-history-2026.html",
-      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 4 August 2026.",
+      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 5 August 2026.",
       "after": "Updated August 2026. 1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
@@ -27,23 +42,23 @@
     },
     {
       "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 4 August 2026.",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 5 August 2026.",
       "after": "Updated August 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
       "file": "asana-pricing-history-2026.html",
-      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 4 August 2026.",
+      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 5 August 2026.",
       "after": "Updated August 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-ecommerce-platforms-2026.html",
-      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated August 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+      "file": "aws-vs-render-which-is-better-in-2026.html",
+      "before": "AWS vs Render 2026: Render at $7/mo vs AWS complexity. Which cloud platform wins for your team size and budget? Honest comparison with real pricing.",
+      "after": "Updated August 2026. AWS vs Render 2026: Render at $7/mo vs AWS complexity. Which cloud platform wins for your team size and budget? Honest comparison with real\u2026"
     },
     {
-      "file": "best-vpn-australia-2026.html",
-      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated August 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying\u2026"
+      "file": "aws-vs-supabase-which-is-better-in-2026.html",
+      "before": "AWS vs Supabase compared: pricing, scalability, vendor lock-in, and which wins for your stack in 2026. Honest verdict with real cost breakdown.",
+      "after": "Updated August 2026. AWS vs Supabase compared: pricing, scalability, vendor lock-in, and which wins for your stack in 2026. Honest verdict with real cost breakdown."
     }
   ],
   "indexnow": {
