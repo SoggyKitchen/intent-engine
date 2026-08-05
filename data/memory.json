@@ -722,6 +722,38 @@
         "MONITOR: Impact.com applications for HubSpot, 1Password \u2014 check app.impact.com dashboard",
         "MONITOR: nordpass-vs-1password page \u2014 track GSC position at 21 days (target: <30)"
       ]
+    },
+    {
+      "date": "2026-08-05",
+      "session": "revenue-hunter",
+      "gmail_findings": {
+        "awin_engagebay": "EngageBay affiliate already ACTIVE in _redirects (Awin ID 127075, publisher 2917137, 30% recurring). Links confirmed working via deep link email 2026-07-30.",
+        "awin_iternal_note": "Iternal Technologies CJ approved (0-450/sale, adv ID 7676842). Placeholder non-CJ links in _redirects \u2014 owner action needed: get real CJ deep links from app.cj.com search Iternal Technologies.",
+        "impact": "No new HubSpot/1Password approvals. Semrush contract change was technical (no action). Wix asked to reapply (not approved).",
+        "partnerstack": "No new approvals for ClickUp/Monday/ActiveCampaign/Dashlane.",
+        "freshbooks_xero": "No approval emails found.",
+        "fiverr_awin": "Fiverr sent click-active partner check-in (no conversions noted) \u2014 no new approval, existing program."
+      },
+      "direct_url_leaks_fixed": 0,
+      "ctr_fixes": [
+        "does-sentry-have-a-free-plan: meta stripped Updated Aug prefix \u2192 now leads with specific limits checklist (528 impr, pos 7.5, 0% CTR)",
+        "mixpanel-pricing: title -> Mixpanel Pricing 2026: Free at 20M Events, Growth from $28/mo \u2014 Hidden Costs Exposed | meta stripped Update prefix (742 impr, pos 13.7, 0% CTR)",
+        "does-notion-have-a-free-plan: meta stripped Updated Aug prefix \u2192 ends with call-to-action question (557 impr, pos 9.4, 0% CTR)",
+        "datadog-coupon: title -> Datadog Coupon & Promo Codes 2026: Verified Discounts + Trial Credit Guide | meta stripped prefix (131 impr, pos 7.4, 0% CTR)",
+        "linear-free-trial: title -> Linear Free Trial 2026: Full Trial Guide \u2014 Duration, Limits & When to Upgrade | meta stripped prefix (129 impr, pos 6.8, 0% CTR)"
+      ],
+      "new_page": "engagebay-vs-pipedrive-which-is-better-in-2026 \u2014 EngageBay wins (8.6/10) vs Pipedrive (8.4/10), /go/engagebay CTA with 30% recurring commission. Targets engagebay vs pipedrive, crm comparison, all-in-one crm vs sales pipeline queries.",
+      "tests": "93/93 passed",
+      "escalate_to_owner": [
+        "ACTION: Get real CJ affiliate links for Iternal Technologies (adv ID 7676842, $40-450/sale enterprise AI). Login app.cj.com \u2192 Links \u2192 search Iternal Technologies \u2192 replace placeholder /go/iternal links in _redirects.",
+        "FYI: Wix (Impact) still asking to reapply \u2014 worth doing if interested in $100/sale Wix commission."
+      ],
+      "measure_at_21days": {
+        "sentry-free-plan-ctr": "baseline 0% @ pos 7.5, 528 impr \u2192 target >3% after meta fix",
+        "mixpanel-pricing-ctr": "baseline 0% @ pos 13.7, 742 impr \u2192 target >1% after title+meta fix",
+        "notion-free-plan-ctr": "baseline 0% @ pos 9.4, 557 impr \u2192 target >2% after meta fix",
+        "engagebay-vs-pipedrive": "new page \u2014 baseline no data, target pos <30 within 30 days"
+      }
     }
   ],
   "entries": [
