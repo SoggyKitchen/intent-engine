@@ -339,19 +339,6 @@
     "premium": true
   },
   {
-    "file": "site/pages/elementor-vs-bricks-builder-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/elementor-vs-bricks-builder-which-is-better-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -376,6 +363,19 @@
     ],
     "path": "/pages/engagebay-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/engagebay-vs-pipedrive-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/engagebay-vs-pipedrive-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict.html",
@@ -427,6 +427,19 @@
       "trust_block"
     ],
     "path": "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/getresponse-vs-mailchimp-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/getresponse-vs-mailchimp-which-is-better-in-2026",
     "premium": false
   },
   {
