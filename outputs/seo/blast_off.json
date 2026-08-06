@@ -1,32 +1,17 @@
 {
   "current_month": "August 2026",
-  "today": "2026-08-05",
-  "titles_rewritten": 4,
-  "descs_rewritten": 26,
-  "dates_refreshed": 0,
+  "today": "2026-08-06",
+  "titles_rewritten": 1,
+  "descs_rewritten": 20,
+  "dates_refreshed": 1169,
   "answers_added": 15,
-  "files_changed": 26,
+  "files_changed": 1184,
   "files_scanned": 1507,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
-    },
-    {
-      "file": "datadog-coupon-code-promo-codes-2026-verified-discounts.html",
-      "before": "Datadog Coupon & Promo Codes 2026: Verified Discounts + Trial Credit Guide",
-      "after": "Datadog Coupon 2026 (Verified August 2026) \u2014 Real Working Codes"
-    },
-    {
-      "file": "linear-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Linear Free Trial 2026: Full Trial Guide \u2014 Duration, Limits & When to Upgrade",
-      "after": "Linear Free Trial 2026: How to Get the Full August 2026 Offer"
-    },
-    {
-      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free at 20M Events, Growth from $28/mo \u2014 Hidden Costs Exposed",
-      "after": "Mixpanel Pricing 2026 (Verified August) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
