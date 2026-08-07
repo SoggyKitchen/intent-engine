@@ -132,30 +132,40 @@ TOOLS: dict[str, tuple] = {
     "fiverr":          ("Fiverr",            "On-demand marketplace, 700+ service categories",   "Freelance Marketplace", "From $5/project", "/go/fiverr", "1dbf2d", "fiverr",       9.1, "Free to browse"),
     "99designs":       ("99designs",         "Contest-based design platform, curated freelancers", "Freelance Design", "From $299/contest", None,         "ff7f00", "99designs",       8.3, "Free to post brief"),
     "speechify":       ("Speechify",         "AI text-to-speech reader, listen at 4.5× speed",  "Text-to-Speech",     "Free",      None,                "4a9fe8", "speechify",        8.4, "Free (limited)"),
+    # Email marketing (CJ-earning programs)
+    "aweber":          ("AWeber",            "Small-business email, RSS-to-email, AI writer",    "Email Marketing",    "Free",      "/go/aweber",        "dd1c1a", "aweber",           8.3, "Free forever (500 subs)"),
+    "mailerlite":      ("MailerLite",        "Simple email + landing pages, generous free plan", "Email Marketing",    "Free",      None,                "09c269", "mailerlite",       8.7, "Free forever (1,000 subs)"),
+    "klaviyo":         ("Klaviyo",           "eCommerce email, revenue attribution",              "Email Marketing",    "Free",      None,                "ffd700", "klaviyo",          9.0, "Free (250 contacts)"),
+    "drip":            ("Drip",              "eCommerce automation, revenue-focused email",       "Email Marketing",    "$39/mo",    None,                "ea4c89", "drip",             8.6, "14-day trial"),
+    "moosend":         ("Moosend",           "Simple automation, affordable pricing",             "Email Marketing",    "$9/mo",     None,                "ffcb05", "moosend",          8.4, "30-day trial"),
 }
 
 # Per-page title/desc overrides — baked here so they survive regeneration.
 # Key = canonical_slug (filename stem without .html)
 TITLE_OVERRIDES: dict[str, str] = {
-    "surfer-seo-vs-se-ranking-which-is-better-in-2026":       "Surfer SEO vs SE Ranking 2026 [August]: SE Ranking Wins — $55/mo vs $89/mo [Tested]",
+    "surfer-seo-vs-se-ranking-which-is-better-in-2026":       "Surfer SEO vs SE Ranking 2026: SE Ranking Wins — $55/mo vs $89/mo [Tested]",
     "semrush-vs-moz-which-is-better-in-2026":                 "Semrush vs Moz Pro 2026: $139/mo vs $49/mo — Which Wins? [Honest Verdict]",
     # High-impression pages with 0% CTR — specific verdicts beat generic "Honest Verdict & Who Wins"
     "aws-vs-supabase-which-is-better-in-2026":                "AWS vs Supabase 2026: AWS Wins on Scale, Supabase Wins on Speed [Compared]",
-    "docusign-clm-vs-icertis-which-is-better-in-2026":        "DocuSign CLM vs Icertis 2026 [August]: Which CLM Wins? Pricing, AI Features &amp; Verdict",
+    "docusign-clm-vs-icertis-which-is-better-in-2026":        "DocuSign CLM vs Icertis 2026: Which CLM Wins? Pricing, AI Features &amp; Verdict",
     "twingate-vs-tailscale-which-is-better-in-2026":          "Twingate vs Tailscale 2026: Twingate for Business, Tailscale for Dev Teams [Verdict]",
-    "aws-vs-render-which-is-better-in-2026":                  "AWS vs Render 2026 [August]: Render Wins at $7/mo, AWS Wins at Scale [Honest Comparison]",
+    "aws-vs-render-which-is-better-in-2026":                  "AWS vs Render 2026: Render Wins at $7/mo, AWS Wins at Scale [Compared]",
     "twingate-vs-zscaler-which-is-better-in-2026":            "Twingate vs Zscaler 2026: Twingate for SMBs, Zscaler for Enterprise [Verdict]",
     "hetzner-vs-vultr-which-is-better-in-2026":               "Hetzner vs Vultr 2026: Hetzner Wins on Price — VPS Head-to-Head Compared",
-    "shopify-vs-recurly-which-is-better-in-2026":             "Shopify vs Recurly 2026 [August]: $39/mo vs $249/mo — Who Wins for Subscriptions?",
-    "chargebee-vs-recurly-which-is-better-in-2026":           "Chargebee vs Recurly 2026 [August]: SaaS Billing Head-to-Head — Verdict &amp; Real Costs",
-    "semrush-vs-surfer-seo-which-is-better-in-2026":          "Semrush vs Surfer SEO 2026 [August]: Different Tools, Not Rivals — Which Do You Actually Need?",
-    "workable-vs-culture-amp-which-is-better-in-2026":        "Workable vs Culture Amp 2026 [August]: Hiring vs Engagement Platform — Verdict &amp; Who Wins",
-    "datadog-review-2026-is-it-worth-it-honest-verdict":      "Datadog Review 2026 [August, 7.8/10]: Is It Worth It? Real Pricing &amp; Honest Verdict",
+    "shopify-vs-recurly-which-is-better-in-2026":             "Shopify vs Recurly 2026: $39/mo vs $249/mo — Who Wins for Subscriptions?",
+    "chargebee-vs-recurly-which-is-better-in-2026":           "Chargebee vs Recurly 2026: SaaS Billing Head-to-Head — Verdict &amp; Real Costs",
+    "semrush-vs-surfer-seo-which-is-better-in-2026":          "Semrush vs Surfer SEO 2026: Different Tools, Not Rivals — Which Do You Actually Need?",
+    "workable-vs-culture-amp-which-is-better-in-2026":        "Workable vs Culture Amp 2026: Hiring vs Engagement Platform — Verdict &amp; Who Wins",
+    "datadog-review-2026-is-it-worth-it-honest-verdict":      "Datadog Review 2026 [7.8/10]: Is It Worth It? Real Pricing &amp; Honest Verdict",
     # New pages — revenue-hunter additions
-    "fiverr-vs-99designs-which-is-better-in-2026":            "Fiverr vs 99designs 2026 [August]: $5/Project vs $299/Contest — Which Wins for Design?",
+    "fiverr-vs-99designs-which-is-better-in-2026":            "Fiverr vs 99designs 2026: $5/Project vs $299/Contest — Which Wins for Design?",
     # CTR fixes — zero-click pages at good positions
-    "tailscale-vs-zscaler-which-is-better-in-2026":           "Tailscale vs Zscaler 2026 [August]: WireGuard for Dev Teams vs Zero Trust for Enterprise",
-    "semrush-vs-moz-pro-which-is-better-in-2026":             "Semrush vs Moz Pro 2026 [August]: $139/mo vs $99/mo — 9.4/10 vs 8.7/10, Tested",
+    "tailscale-vs-zscaler-which-is-better-in-2026":           "Tailscale vs Zscaler 2026: WireGuard for Dev Teams vs Zero Trust for Enterprise",
+    "semrush-vs-moz-pro-which-is-better-in-2026":             "Semrush vs Moz Pro 2026: $139/mo vs $99/mo — 9.4/10 vs 8.7/10, Tested",
+    "elementor-vs-bricks-builder-which-is-better-in-2026":    "Elementor vs Bricks Builder 2026: Which WordPress Builder Actually Wins?",
+    "engagebay-vs-mailchimp-which-is-better-in-2026":         "EngageBay vs Mailchimp 2026: All-in-One CRM vs Email Giant — Honest Verdict",
+    "aweber-vs-brevo-which-is-better-in-2026":               "AWeber vs Brevo 2026: Small Business Email vs Unlimited Contacts — Honest Verdict",
+    "aweber-vs-mailerlite-which-is-better-in-2026":          "AWeber vs MailerLite 2026: Which Email Tool Wins for Small Business?",
 }
 DESC_OVERRIDES: dict[str, str] = {
     "surfer-seo-vs-se-ranking-which-is-better-in-2026": "SE Ranking wins (8.9/10 vs Surfer SEO's 8.8/10) and costs $55/mo vs $89/mo — 38% cheaper with a 14-day free trial. Full feature comparison, August 2026.",
