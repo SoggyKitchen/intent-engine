@@ -269,7 +269,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-07-17",
     "pre_blob": "3d76387c7f0ed69c7b84ced0e929707485d62808",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict.html",

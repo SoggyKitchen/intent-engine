@@ -157,19 +157,6 @@
     "premium": false
   },
   {
-    "file": "site/pages/best-landing-page-builder-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-landing-page-builder-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -365,7 +352,7 @@
     "premium": true
   },
   {
-    "file": "site/pages/engagebay-vs-pipedrive-which-is-better-in-2026.html",
+    "file": "site/pages/engagebay-vs-getresponse-which-is-better-in-2026.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -374,7 +361,20 @@
       "schema_safety",
       "trust_block"
     ],
-    "path": "/pages/engagebay-vs-pipedrive-which-is-better-in-2026",
+    "path": "/pages/engagebay-vs-getresponse-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/engagebay-vs-mailchimp-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/engagebay-vs-mailchimp-which-is-better-in-2026",
     "premium": false
   },
   {
@@ -427,19 +427,6 @@
       "trust_block"
     ],
     "path": "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
-    "premium": false
-  },
-  {
-    "file": "site/pages/getresponse-vs-mailchimp-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/getresponse-vs-mailchimp-which-is-better-in-2026",
     "premium": false
   },
   {
