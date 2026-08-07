@@ -1,9 +1,9 @@
 {
-  "total_pages": 1493,
-  "updated": 1490,
+  "total_pages": 1494,
+  "updated": 1491,
   "skipped": 3,
-  "orphans_before": 68,
-  "orphans_after": 54,
+  "orphans_before": 62,
+  "orphans_after": 66,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -12,7 +12,7 @@
         "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/okta-vs-duo-security-which-is-better-in-2026",
         "/pages/1password-vs-nordpass-which-is-better-in-2026",
-        "/pages/pipedrive-vs-monday-com-which-is-better-in-2026"
+        "/pages/whereby-vs-descript-which-is-better-in-2026"
       ]
     },
     {
@@ -21,7 +21,7 @@
         "/pages/nordlayer-vs-tailscale-which-is-better-in-2026",
         "/pages/nordpass-vs-bitwarden-which-is-better-in-2026",
         "/pages/bitwarden-vs-keeper-which-is-better-in-2026",
-        "/pages/semrush-vs-se-ranking-which-is-better-in-2026",
+        "/pages/semrush-vs-screaming-frog-which-is-better-in-2026",
         "/pages/docusign-clm-vs-concord-which-is-better-in-2026"
       ]
     },
