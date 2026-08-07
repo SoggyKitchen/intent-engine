@@ -484,10 +484,10 @@
     "trust": 20.0
   },
   {
-    "content": 19.32,
+    "content": 19.33,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.07,
+    "internalLinking": 15,
+    "overall": 92.33,
     "path": "/pages/1password-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -1353,10 +1353,10 @@
     "trust": 15.0
   },
   {
-    "content": 19.89,
+    "content": 19.9,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.64,
+    "internalLinking": 15,
+    "overall": 92.9,
     "path": "/pages/ahrefs-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -1762,8 +1762,8 @@
   {
     "content": 19.8,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.55,
+    "internalLinking": 15,
+    "overall": 92.81,
     "path": "/pages/asana-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -2024,14 +2024,14 @@
     "trust": 20.0
   },
   {
-    "content": 19.37,
+    "content": 19.38,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 94.37,
+    "overall": 93.38,
     "path": "/pages/aws-vs-supabase-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
-    "technical": 19,
+    "technical": 18,
     "trust": 20.0
   },
   {
@@ -5082,10 +5082,10 @@
     "trust": 15.0
   },
   {
-    "content": 19.94,
+    "content": 19.95,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.69,
+    "internalLinking": 15,
+    "overall": 92.94,
     "path": "/pages/clickup-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -6116,10 +6116,10 @@
     "trust": 17.5
   },
   {
-    "content": 19.32,
+    "content": 19.33,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.07,
+    "internalLinking": 15,
+    "overall": 92.33,
     "path": "/pages/datadog-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -6823,11 +6823,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 95.0,
+    "overall": 94.0,
     "path": "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
     "performanceUx": 5,
     "schemaIndexability": 6,
-    "technical": 19,
+    "technical": 18,
     "trust": 20.0
   },
   {
@@ -6878,11 +6878,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 95.0,
+    "overall": 94.0,
     "path": "/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
     "performanceUx": 5,
     "schemaIndexability": 6,
-    "technical": 19,
+    "technical": 18,
     "trust": 20.0
   },
   {
@@ -7282,6 +7282,17 @@
     "trust": 20.0
   },
   {
+    "content": 20,
+    "conversionRevenue": 10,
+    "internalLinking": 15,
+    "overall": 89.5,
+    "path": "/pages/engagebay-vs-getresponse-which-is-better-in-2026",
+    "performanceUx": 5,
+    "schemaIndexability": 8,
+    "technical": 19,
+    "trust": 12.5
+  },
+  {
     "content": 19.37,
     "conversionRevenue": 10,
     "internalLinking": 15,
@@ -7291,6 +7302,17 @@
     "schemaIndexability": 8,
     "technical": 20,
     "trust": 20.0
+  },
+  {
+    "content": 20,
+    "conversionRevenue": 8,
+    "internalLinking": 15,
+    "overall": 84.0,
+    "path": "/pages/engagebay-vs-mailchimp-which-is-better-in-2026",
+    "performanceUx": 5,
+    "schemaIndexability": 8,
+    "technical": 18,
+    "trust": 10.0
   },
   {
     "content": 20,
@@ -8888,10 +8910,10 @@
     "trust": 15.0
   },
   {
-    "content": 19.97,
+    "content": 19.98,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.72,
+    "internalLinking": 15,
+    "overall": 92.98,
     "path": "/pages/hubspot-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -9966,10 +9988,10 @@
     "trust": 17.5
   },
   {
-    "content": 19.32,
+    "content": 19.33,
     "conversionRevenue": 10,
-    "internalLinking": 11.75,
-    "overall": 86.07,
+    "internalLinking": 12,
+    "overall": 86.33,
     "path": "/pages/linear-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -10593,14 +10615,14 @@
     "trust": 15.0
   },
   {
-    "content": 19.75,
+    "content": 19.79,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 92.75,
+    "overall": 90.78,
     "path": "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 8,
-    "technical": 20,
+    "technical": 18,
     "trust": 15.0
   },
   {
@@ -10738,8 +10760,8 @@
   {
     "content": 20,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.75,
+    "internalLinking": 15,
+    "overall": 93.0,
     "path": "/pages/monday-com-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -11638,10 +11660,10 @@
     "trust": 17.5
   },
   {
-    "content": 19.82,
+    "content": 19.83,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.57,
+    "internalLinking": 15,
+    "overall": 92.83,
     "path": "/pages/notion-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -12496,10 +12518,10 @@
     "trust": 17.5
   },
   {
-    "content": 19.32,
+    "content": 19.33,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.07,
+    "internalLinking": 15,
+    "overall": 92.33,
     "path": "/pages/pipedrive-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -12972,11 +12994,11 @@
     "content": 20,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 92.0,
+    "overall": 91.0,
     "path": "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "performanceUx": 5,
     "schemaIndexability": 8,
-    "technical": 19,
+    "technical": 18,
     "trust": 15.0
   },
   {
@@ -13609,8 +13631,8 @@
   {
     "content": 17,
     "conversionRevenue": 8,
-    "internalLinking": 8.6,
-    "overall": 74.6,
+    "internalLinking": 9.05,
+    "overall": 75.05,
     "path": "/pages/saas-buyer-signals-2026",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -13651,10 +13673,10 @@
     "trust": 15.0
   },
   {
-    "content": 14.99,
+    "content": 15.0,
     "conversionRevenue": 8,
     "internalLinking": 12,
-    "overall": 75.99,
+    "overall": 76.0,
     "path": "/pages/saas-pricing-changes",
     "performanceUx": 5,
     "schemaIndexability": 6,
@@ -13750,10 +13772,10 @@
     "trust": 17.5
   },
   {
-    "content": 19.91,
+    "content": 19.92,
     "conversionRevenue": 10,
     "internalLinking": 12,
-    "overall": 86.91,
+    "overall": 86.92,
     "path": "/pages/salesforce-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -14047,10 +14069,10 @@
     "trust": 15.0
   },
   {
-    "content": 19.85,
+    "content": 19.86,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.6,
+    "internalLinking": 15,
+    "overall": 92.86,
     "path": "/pages/semrush-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -14322,10 +14344,10 @@
     "trust": 15.0
   },
   {
-    "content": 19.87,
+    "content": 19.88,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.62,
+    "internalLinking": 15,
+    "overall": 92.88,
     "path": "/pages/shopify-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -14443,14 +14465,14 @@
     "trust": 20.0
   },
   {
-    "content": 19.27,
+    "content": 19.29,
     "conversionRevenue": 10,
     "internalLinking": 15,
-    "overall": 96.28,
+    "overall": 95.28,
     "path": "/pages/shopify-vs-recurly-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
-    "technical": 19,
+    "technical": 18,
     "trust": 20.0
   },
   {
@@ -14762,10 +14784,10 @@
     "trust": 15.0
   },
   {
-    "content": 19.84,
+    "content": 19.85,
     "conversionRevenue": 10,
-    "internalLinking": 11.75,
-    "overall": 86.59,
+    "internalLinking": 12,
+    "overall": 86.85,
     "path": "/pages/stripe-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -15488,10 +15510,10 @@
     "trust": 17.5
   },
   {
-    "content": 19.32,
+    "content": 19.33,
     "conversionRevenue": 10,
-    "internalLinking": 14.75,
-    "overall": 92.07,
+    "internalLinking": 15,
+    "overall": 92.33,
     "path": "/pages/tresorit-pricing-history-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
@@ -15631,14 +15653,14 @@
     "trust": 20.0
   },
   {
-    "content": 19.46,
+    "content": 19.47,
     "conversionRevenue": 8,
     "internalLinking": 15,
-    "overall": 94.47,
+    "overall": 93.47,
     "path": "/pages/twingate-vs-tailscale-which-is-better-in-2026",
     "performanceUx": 5,
     "schemaIndexability": 8,
-    "technical": 19,
+    "technical": 18,
     "trust": 20.0
   },
   {

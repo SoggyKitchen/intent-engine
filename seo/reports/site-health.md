@@ -1,26 +1,26 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-08-06T21:18:13+00:00
+Generated: 2026-08-07T05:01:51+00:00
 Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.24/100**
+- Overall SaaSpare Health Score: **94.23/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.58/20
+- Technical SEO: 19.57/20
 - Content usefulness: 19.34/20
-- Trust/E-E-A-T: 18.81/20
+- Trust/E-E-A-T: 18.8/20
 - Internal linking: 14.89/15
 - Schema/indexability: 7.69/10
 - Conversion/revenue: 8.95/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1539
-- Healthy pages (85+): 1489
+- Pages scanned: 1541
+- Healthy pages (85+): 1490
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
 - Safe fixes applied this run: 0
-- GSC: skipped; add GSC OAuth secrets, authorized-user JSON, service-account JSON, or GOOGLE_APPLICATION_CREDENTIALS to enable live Search Console pulls
+- GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
 ## Fastest Path To 70
@@ -53,10 +53,10 @@ Mode: `audit`
 - `/pages/best-encrypted-cloud-storage-2026-business` (75.77/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
-- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.32/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (86.91/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (86.33/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (86.85/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (86.92/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/request-a-comparison` (79.34/100): title_length_outside_target
 - `/privacy` (79.64/100): meta_length_outside_target
