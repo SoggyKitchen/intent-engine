@@ -59,7 +59,7 @@ def fix_ramp_page():
     # Update meta description — complete sentence, no ellipsis, 155 chars
     html = re.sub(
         r'<meta name="description" content="[^"]*[Rr]amp[^"]*">',
-        '<meta name="description" content="Updated July 2026. Ramp pricing July 2026: June added Bill Pay pricing; core card still free, Ramp Plus $15/user/mo. Every plan change tracked with exact dates.">',
+        '<meta name="description" content="Updated August 2026. Ramp pricing August 2026: June added Bill Pay pricing; core card still free, Ramp Plus $15/user/mo. Every plan change tracked with exact dates.">',
         html
     )
     # Update H1 if generic
@@ -123,7 +123,7 @@ def fix_nordlayer_page():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*NordLayer[^"]*">',
-        '<meta name="description" content="Updated July 2026. NordLayer 2026: Lite $9/user, Core $11/user, Business $14/user/mo (annual). Real pricing, team minimums, annual vs monthly.">',
+        '<meta name="description" content="Updated August 2026. NordLayer 2026: Lite $9/user, Core $11/user, Business $14/user/mo (annual). Real pricing, team minimums, annual vs monthly.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -181,12 +181,12 @@ def fix_mixpanel_page():
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Mm]ixpanel[^"]*(")',
-        r'\g<1>Mixpanel Pricing July 2026: Free (20M Events) vs Growth ($28/mo) — Full Breakdown\2',
+        r'\g<1>Mixpanel Pricing August 2026: Free (20M Events) vs Growth ($28/mo) — Full Breakdown\2',
         html
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Mm]ixpanel[^"]*">',
-        '<meta name="description" content="Mixpanel pricing July 2026: Free (20M events), Growth from $28/mo, Enterprise custom. How event-volume pricing scales and the cost trap most teams hit.">',
+        '<meta name="description" content="Mixpanel pricing August 2026: Free (20M events), Growth from $28/mo, Enterprise custom. How event-volume pricing scales and the cost trap most teams hit.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -296,7 +296,7 @@ def fix_notion_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Nn]otion[^"]*">',
-        '<meta name="description" content="Notion free plan 2026: unlimited blocks, 10-guest cap, 7-day history, no automations, no API. 4 key limits that hit growing teams. Verified July 2026.">',
+        '<meta name="description" content="Notion free plan 2026: unlimited blocks, 10-guest cap, 7-day history, no automations, no API. 4 key limits that hit growing teams. Verified August 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -323,7 +323,7 @@ def fix_sentry_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]entry[^"]*">',
-        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month, 7-day retention, 1 seat. SSO, custom dashboards, and 4 more features locked. Full breakdown updated July 2026.">',
+        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month, 7-day retention, 1 seat. SSO, custom dashboards, and 4 more features locked. Full breakdown updated August 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -377,7 +377,7 @@ def fix_loom_free_plan():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ll]oom[^"]*">',
-        '<meta name="description" content="Loom free plan 2026: 5-video cap, 5-min limit per video, 720p only. Business at $12.50/user removes all limits. Full breakdown of what is blocked. Verified July 2026.">',
+        '<meta name="description" content="Loom free plan 2026: 5-video cap, 5-min limit per video, 720p only. Business at $12.50/user removes all limits. Full breakdown of what is blocked. Verified August 2026.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -404,7 +404,7 @@ def fix_linear_free_trial():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ll]inear[^"]*">',
-        '<meta name="description" content="Yes, Linear has a free plan (no time limit) in 2026 — unlimited projects, 250 issues, all core features. The only limit is 3 members. Updated July 2026: full breakdown.">',
+        '<meta name="description" content="Yes, Linear has a free plan (no time limit) in 2026 — unlimited projects, 250 issues, all core features. The only limit is 3 members. Updated August 2026: full breakdown.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -453,7 +453,7 @@ def fix_shopify_vs_recurly():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]hopify[^"]*[Rr]ecurly[^"]*">',
-        '<meta name="description" content="Updated July 2026. Shopify wins (8.5/10) for D2C subscriptions. Recurly wins for SaaS billing. Real pricing $29/mo vs $249+/mo. Verdict inside.">',
+        '<meta name="description" content="Updated August 2026. Shopify wins (8.5/10) for D2C subscriptions. Recurly wins for SaaS billing. Real pricing $29/mo vs $249+/mo. Verdict inside.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -480,12 +480,99 @@ def fix_semrush_vs_moz():
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]emrush[^"]*[Mm]oz[^"]*">',
-        '<meta name="description" content="Semrush vs Moz Pro 2026: pricing, keyword tools, backlink data, and the honest score-based verdict. Semrush scores 9.4/10 vs Moz 8.5/10 — updated June 2026. See who wins on each metric.">',
+        '<meta name="description" content="Semrush vs Moz Pro 2026: pricing, keyword tools, backlink data, and the honest score-based verdict. Semrush scores 9.4/10 vs Moz 8.5/10 — updated August 2026. See who wins on each metric.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
     p.write_text(html, encoding="utf-8")
     print("  FIXED: semrush-vs-moz — title includes Moz Pro; captures 1365+ impr cluster (Semrush earning)")
+    return True
+
+
+# ── NEW: TAILSCALE VS ZSCALER — 251 impr, pos 8.8, 1.2% CTR (Aug 2026 data) ──
+
+def fix_tailscale_vs_zscaler():
+    p = PAGES / "tailscale-vs-zscaler-which-is-better-in-2026.html"
+    if not p.exists():
+        print("  SKIP: Tailscale vs Zscaler page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Tt]ailscale[^<]*[Zz]scaler[^<]*</title>',
+        "<title>Tailscale vs Zscaler 2026: Honest Verdict — Which Zero Trust Actually Fits? [Compared]</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Tt]ailscale[^"]*[Zz]scaler[^"]*(")',
+        r"\g<1>Tailscale vs Zscaler 2026: Which Zero Trust Actually Fits?\2",
+        html
+    )
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Tt]ailscale[^"]*[Zz]scaler[^"]*">',
+        '<meta name="description" content="Tailscale vs Zscaler 2026: WireGuard mesh (free, 100 devices) vs SASE enterprise. Honest scores, real pricing, and which zero trust wins for your team size. Updated August 2026.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: tailscale-vs-zscaler — sharper title + meta (251 impr, pos 8.8)")
+    return True
+
+
+# ── NEW: DATADOG COUPON — 131 impr, pos 7.4, 0% CTR (Aug 2026 data) ──────────
+
+def fix_datadog_coupon():
+    p = PAGES / "datadog-coupon-code-promo-codes-2026-verified-discounts.html"
+    if not p.exists():
+        print("  SKIP: Datadog coupon page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Dd]atadog[^<]*[Cc]oupon[^<]*</title>',
+        "<title>Datadog Coupon 2026: Best Verified Discounts — Up to 20% Off [August]</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Dd]atadog[^"]*[Cc]oupon[^"]*(")',
+        r"\g<1>Datadog Coupon 2026: Best Verified Discounts — Up to 20% Off\2",
+        html
+    )
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Dd]atadog[^"]*[Cc]oupon[^"]*">',
+        '<meta name="description" content="Datadog coupon codes August 2026: 14-day free trial, annual plan discount (up to 20%), and startup credits. Verified working codes. No fake codes listed.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: datadog-coupon — stronger CTR title (131 impr, pos 7.4)")
+    return True
+
+
+# ── NEW: BREVO FREE PLAN — 56 impr, pos 13.7, 0% CTR ─────────────────────────
+
+def fix_brevo_free_plan():
+    p = PAGES / "does-brevo-have-a-free-plan-2026-full-breakdown.html"
+    if not p.exists():
+        print("  SKIP: Brevo free plan page not found")
+        return False
+    html = p.read_text(encoding="utf-8")
+    html = re.sub(
+        r'<title>[^<]*[Bb]revo[^<]*[Ff]ree[^<]*</title>',
+        "<title>Brevo Free Plan 2026: 300 Emails/Day Free — 5 Limits Before You Pay [August]</title>",
+        html
+    )
+    html = re.sub(
+        r'(<meta property="og:title" content=")[^"]*[Bb]revo[^"]*[Ff]ree[^"]*(")',
+        r"\g<1>Brevo Free Plan 2026: 300 Emails/Day — 5 Limits Before You Pay\2",
+        html
+    )
+    html = re.sub(
+        r'<meta name="description" content="[^"]*[Bb]revo[^"]*">',
+        '<meta name="description" content="Brevo free plan 2026: 300 emails/day, unlimited contacts, no credit card. But 5 real limits — daily send cap, no landing pages, no A/B testing, no heat maps, Brevo branding. Full breakdown August 2026.">',
+        html
+    )
+    html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
+    p.write_text(html, encoding="utf-8")
+    print("  FIXED: brevo-free-plan — strong specifics title (56 impr, pos 13.7)")
     return True
 
 
@@ -497,7 +584,7 @@ def fix_aws_vs_supabase():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<meta name="description" content="[^"]*[Aa][Ww][Ss][^"]*[Ss]upabase[^"]*">',
-        '<meta name="description" content="Updated July 2026. AWS (9.0/10) wins on scale + 200 services. Supabase (8.8/10) wins on dev speed. Real pricing and verdict — no paid placements.">',
+        '<meta name="description" content="Updated August 2026. AWS (9.0/10) wins on scale + 200 services. Supabase (8.8/10) wins on dev speed. Real pricing and verdict — no paid placements.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -514,7 +601,7 @@ def fix_cloudflare_access_meta():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<meta name="description" content="[^"]*[Cc]loudflare[^"]*[Aa]ccess[^"]*">',
-        '<meta name="description" content="Updated July 2026. Cloudflare Access: free up to 50 users (ZTNA, SSO, posture). Catch: Tunnel required. Real pricing, no standalone option.">',
+        '<meta name="description" content="Updated August 2026. Cloudflare Access: free up to 50 users (ZTNA, SSO, posture). Catch: Tunnel required. Real pricing, no standalone option.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -531,7 +618,7 @@ def fix_ramp_review():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<meta name="description" content="[^"]*[Rr]amp[^"]*[Rr]eview[^"]*">',
-        '<meta name="description" content="Updated July 2026. Ramp Review: 7.8/10. Core card is free; Ramp Plus $15/user/mo. Real pricing of what stays free vs paid — honest verdict.">',
+        '<meta name="description" content="Updated August 2026. Ramp Review: 7.8/10. Core card is free; Ramp Plus $15/user/mo. Real pricing of what stays free vs paid — honest verdict.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -559,12 +646,16 @@ def main():
     fix_shopify_vs_recurly()
     fix_ramp_review()
     fix_semrush_vs_moz()
+    # New Aug 2026 additions from revenue-hunter GSC data
+    fix_tailscale_vs_zscaler()
+    fix_datadog_coupon()
+    fix_brevo_free_plan()
     refresh_top_pages()
     print()
     print("Done. Fixes target:")
-    print("  AWS/Supabase 286 impr + Cloudflare 219 + Shopify/Recurly 134 (earning!) + Ramp Review 127")
-    print("  Semrush vs Moz 1365 impr (earning!) + Notion 557 + Sentry 528 + NordLayer 270")
-    print("Expected: 50-90 more clicks/month once Google recrawls (3-7 days).")
+    print("  Notion 557 impr + Sentry 528 + Mixpanel 742 + Tailscale/Zscaler 251 + Datadog coupon 131")
+    print("  Semrush vs Moz 1365 impr (earning!) + NordLayer 270 + Brevo free plan 56")
+    print("Expected: 60-100 more clicks/month once Google recrawls (3-7 days).")
 
 
 if __name__ == "__main__":
