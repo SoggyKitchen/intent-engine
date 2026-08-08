@@ -1,27 +1,27 @@
 {
-  "total_pages": 1494,
-  "updated": 1491,
+  "total_pages": 1495,
+  "updated": 1492,
   "skipped": 3,
-  "orphans_before": 71,
-  "orphans_after": 66,
+  "orphans_before": 72,
+  "orphans_after": 50,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/okta-vs-crowdstrike-which-is-better-in-2026",
-        "/pages/nordlayer-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/okta-vs-duo-security-which-is-better-in-2026",
+        "/pages/1password-vs-password-boss-which-is-better-in-2026",
+        "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/okta-vs-sentinelone-which-is-better-in-2026",
         "/pages/1password-vs-nordpass-which-is-better-in-2026",
-        "/pages/whereby-vs-descript-which-is-better-in-2026"
+        "/pages/zendesk-vs-help-scout-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/nordlayer-vs-tailscale-which-is-better-in-2026",
-        "/pages/nordpass-vs-bitwarden-which-is-better-in-2026",
-        "/pages/bitwarden-vs-keeper-which-is-better-in-2026",
-        "/pages/semrush-vs-screaming-frog-which-is-better-in-2026",
+        "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026",
+        "/pages/nordlayer-vs-cisco-anyconnect-which-is-better-in-2026",
+        "/pages/tenable-vs-tresorit-which-is-better-in-2026",
+        "/pages/remote-com-vs-lattice-which-is-better-in-2026",
         "/pages/docusign-clm-vs-concord-which-is-better-in-2026"
       ]
     },
@@ -29,10 +29,10 @@
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
         "/pages/7-best-1password-alternatives-in-2026-free-paid",
-        "/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026",
+        "/pages/cloudflare-access-vs-tailscale-which-is-better-in-2026",
         "/pages/1password-free-trial-2026-how-to-get-it-step-by-step",
-        "/pages/whereby-vs-descript-which-is-better-in-2026",
-        "/pages/elementor-vs-divi-which-is-better-in-2026"
+        "/pages/vultr-vs-linode-which-is-better-in-2026",
+        "/pages/writesonic-vs-pinecone-which-is-better-in-2026"
       ]
     }
   ]
