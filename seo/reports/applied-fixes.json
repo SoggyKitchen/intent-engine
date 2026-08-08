@@ -117,6 +117,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/aweber-vs-brevo-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/aweber-vs-brevo-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -352,7 +365,7 @@
     "premium": true
   },
   {
-    "file": "site/pages/engagebay-vs-getresponse-which-is-better-in-2026.html",
+    "file": "site/pages/engagebay-vs-brevo-which-is-better-in-2026.html",
     "fixes": [
       "canonical",
       "image_alt",
@@ -361,20 +374,7 @@
       "schema_safety",
       "trust_block"
     ],
-    "path": "/pages/engagebay-vs-getresponse-which-is-better-in-2026",
-    "premium": false
-  },
-  {
-    "file": "site/pages/engagebay-vs-mailchimp-which-is-better-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/engagebay-vs-mailchimp-which-is-better-in-2026",
+    "path": "/pages/engagebay-vs-brevo-which-is-better-in-2026",
     "premium": false
   },
   {

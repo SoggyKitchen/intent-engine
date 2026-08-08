@@ -1,14 +1,14 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-08-08T04:21:16+00:00
-Mode: `audit`
+Generated: 2026-08-08T05:00:33+00:00
+Mode: `apply-safe`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.21/100**
+- Overall SaaSpare Health Score: **94.24/100**
 - Level: **Strong authority-ready**
 - Technical SEO: 19.58/20
 - Content usefulness: 19.34/20
-- Trust/E-E-A-T: 18.77/20
+- Trust/E-E-A-T: 18.8/20
 - Internal linking: 14.89/15
 - Schema/indexability: 7.69/10
 - Conversion/revenue: 8.95/10
@@ -16,10 +16,10 @@ Mode: `audit`
 
 ## Dashboard Summary
 - Pages scanned: 1543
-- Healthy pages (85+): 1490
+- Healthy pages (85+): 1493
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 86
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -47,17 +47,17 @@ Mode: `audit`
 - `/deal-radar` (68.39/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/newsletter` (71.25/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/linear-pricing-history-2026` (83.57/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (84.09/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (84.41/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/accessibility` (75.67/100): meta_length_outside_target
 - `/pages/best-encrypted-cloud-storage-2026-business` (75.8/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
+- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.31/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/stripe-pricing-history-2026` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (86.91/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/request-a-comparison` (79.36/100): title_length_outside_target
 - `/privacy` (79.64/100): meta_length_outside_target
 - `/pages/how-saaspare-ranks-tools` (80.55/100): title_length_outside_target

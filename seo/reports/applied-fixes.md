@@ -9,6 +9,7 @@
 - `/pages/asana-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/asana-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/aweber-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/aweber-vs-brevo-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/best-accounting-software-for-freelancers-in-2026`: canonical, image_alt, internal_links, meta, organization_schema, schema_safety, trust_block
 - `/pages/best-devtools-for-secure-code-review-in-2025`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -27,8 +28,7 @@
 - `/pages/elementor-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/engagebay-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/engagebay-vs-getresponse-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/engagebay-vs-mailchimp-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/engagebay-vs-brevo-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/fiverr-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
