@@ -38,6 +38,7 @@ TOOLS: dict[str, tuple] = {
     "nordpass":        ("NordPass",          "XChaCha20 encryption, zero-knowledge",              "Password Manager",   "$1.99/mo",  "/go/nordpass",      "4687ff", "nordpass",         9.0, "Free (1 device)"),
     "1password":       ("1Password",         "Travel Mode, Apple ecosystem, families",            "Password Manager",   "$2.99/mo",  "/go/1password",     "0094f5", "1password",        9.2, "14-day trial"),
     "bitwarden":       ("Bitwarden",         "Open-source, free cross-device sync",               "Password Manager",   "Free",      "/go/bitwarden",     "175ddc", "bitwarden",        9.1, "Free forever"),
+    "protonpass":      ("Proton Pass",       "Open-source, email aliases, Swiss privacy",         "Password Manager",   "$2.99/mo",  "/go/proton-pass",   "6d4aff", "protonvpn",        8.5, "Free (10 email aliases)"),
     "dashlane":        ("Dashlane",          "Dark web monitoring, VPN bundled",                  "Password Manager",   "$4.99/mo",  "/go/dashlane",      "007ac1", "dashlane",         8.8, "Free (1 device)"),
     "keeper":          ("Keeper",            "HIPAA/SOC 2, enterprise compliance",                "Password Manager",   "$2.91/mo",  "/go/keeper",        "00aeef", "keepersecurity",   9.0, "14-day trial"),
     "lastpass":        ("LastPass",          "Popular, breached 2022 — avoid",                   "Password Manager",   "$3/mo",     None,                "cc2227", "lastpass",         6.5, "Free (limited)"),
@@ -166,6 +167,7 @@ TITLE_OVERRIDES: dict[str, str] = {
     "engagebay-vs-mailchimp-which-is-better-in-2026":         "EngageBay vs Mailchimp 2026: All-in-One CRM vs Email Giant — Honest Verdict",
     "aweber-vs-brevo-which-is-better-in-2026":               "AWeber vs Brevo 2026: Small Business Email vs Unlimited Contacts — Honest Verdict",
     "aweber-vs-mailerlite-which-is-better-in-2026":          "AWeber vs MailerLite 2026: Which Email Tool Wins for Small Business?",
+    "protonpass-vs-1password-which-is-better-in-2026":       "Proton Pass vs 1Password 2026: $2.99/mo Each — Same Price, Different Strengths [Verdict]",
 }
 DESC_OVERRIDES: dict[str, str] = {
     "surfer-seo-vs-se-ranking-which-is-better-in-2026": "SE Ranking wins (8.9/10 vs Surfer SEO's 8.8/10) and costs $55/mo vs $89/mo — 38% cheaper with a 14-day free trial. Full feature comparison, August 2026.",
@@ -185,6 +187,7 @@ DESC_OVERRIDES: dict[str, str] = {
     # CTR fixes
     "tailscale-vs-zscaler-which-is-better-in-2026":  "Tailscale wins for dev teams (8.8/10): zero-config WireGuard mesh, free up to 100 devices. Zscaler wins for enterprise (9.0/10): full SASE, ZTNA, cloud-native. Score-based verdict, August 2026.",
     "semrush-vs-moz-pro-which-is-better-in-2026":    "Semrush wins (9.4/10 vs Moz Pro 8.7/10). $139/mo buys 25B+ keywords, competitor gap analysis, and 55+ tools. Moz Pro is $99/mo with a 30-day trial but thinner data. Worth the price gap? Tested August 2026.",
+    "protonpass-vs-1password-which-is-better-in-2026": "1Password wins overall (9.2/10 vs Proton Pass 8.5/10): better UX, Travel Mode, Watchtower breach alerts. Proton Pass wins for privacy: email aliases, open-source, Swiss jurisdiction. Both cost $2.99/mo annual. Score-based verdict, 2026.",
 }
 
 

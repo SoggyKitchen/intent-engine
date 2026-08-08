@@ -374,6 +374,40 @@
         "Pipedrive: affiliate@pipedrive.com emailed about TOS approval needed in PartnerStack (owner action).",
         "Sitemap: 1521 URLs."
       ]
+    },
+    {
+      "date": "2026-08-08",
+      "session": "revenue-hunter",
+      "gmail_scan": {
+        "awin": "No new program approvals. EngageBay already active.",
+        "impact": "No new HubSpot/1Password/Monday approvals.",
+        "partnerstack": "No approvals. Pipedrive TOS still pending owner action.",
+        "cj": "No new approvals. Iternal Technologies links still placeholders (owner action).",
+        "xero": "No email.",
+        "general": "No new affiliate approved emails found."
+      },
+      "activated": [],
+      "ctr_fixes": [
+        "ramp-pricing: [August Update] \u2192 [Price Tracker]: Free Card, $15/user Plus \u2014 Every Change Logged. Meta updated to evergreen. (1687 impr, pos 10.2, 0.6% CTR)",
+        "mixpanel-pricing: (Verified August) \u2192 [Verified] \u2014 Real Costs + Event-Volume Trap Explained. (742 impr, pos 13.7, 0% CTR)",
+        "nordlayer-pricing: (Verified August) \u2192 [Verified] \u2014 Lite $9, Core $11, Business $14/user. (270 impr, pos 19.0, 0.4% CTR)"
+      ],
+      "built": [
+        "protonpass-vs-1password-which-is-better-in-2026 \u2014 password manager comparison page; 1Password wins (9.2/10 vs 8.5/10); /go/proton-pass + /go/1password CTAs; same $2.99/mo price both tools"
+      ],
+      "generator_updated": [
+        "rebuild_vs_pages_v2.py: added protonpass to TOOLS dict + TITLE_OVERRIDE + DESC_OVERRIDE for protonpass-vs-1password"
+      ],
+      "tests": "93/93 passed",
+      "notes": [
+        "MONTH TAG ANTI-PATTERN: CEO daily (Aug 8 commit 343844e5) re-introduced [August Update] on Ramp pricing title, re-triggering the CTR problem fixed Aug 4. Root cause: each monthly session updates the month thinking it's freshness. Fix: use [Price Tracker] / [Verified] \u2014 no month needed.",
+        "Revenue leaks: CLEAN \u2014 all vendor links use /go/ tracked routes."
+      ],
+      "next_human_actions": [
+        "URGENT: Log into dash.partnerstack.com/pipedrive and accept Pipedrive PartnerStack TOS to unlock tracking links (affiliate@pipedrive.com sent reminder)",
+        "ACTION: Log into app.cj.com \u2192 search 'Iternal Technologies' \u2192 Links \u2192 get real CJ link IDs to replace placeholder /go/iternal, /go/airgapai, /go/airgapai-code ($40-450/sale, advertiser 7676842)",
+        "ACTION: Log into app.cj.com to get deep links for: GetResponse (3142111), ProtonVPN (5227916), Elementor (6798066), AWeber (5111249), Parallels (2005415)"
+      ]
     }
   ],
   "affiliate_approvals": [
