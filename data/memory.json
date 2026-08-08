@@ -348,6 +348,32 @@
         "EngageBay": "CONFIRMED ACTIVE \u2014 Awin 127075, Publisher 2917137, 30% recurring, pricing deep link in _redirects",
         "Wix": "Asked to reapply via Impact.com \u2014 not yet approved"
       }
+    },
+    {
+      "date": "2026-08-08",
+      "session": "ceo-daily",
+      "gmail_checked": [
+        "from:awin \u2014 Fresent LLC invite (irrelevant to SaaS); EngageBay _redirects already live",
+        "from:impact \u2014 no new HubSpot/1Password approvals; Semrush terms changed (no action)",
+        "partnerstack \u2014 Pipedrive TOS reminder (owner must accept TOS in PartnerStack to unlock)",
+        "from:xero \u2014 no email",
+        "affiliate approved \u2014 nothing new beyond EngageBay already live"
+      ],
+      "built": [
+        "protonpass-vs-bitwarden-which-is-better-in-2026 \u2014 password manager comparison page; /go/proton-pass CJ link; FAQ schema, tabs, sticky CTA"
+      ],
+      "fixed": [
+        "Ramp pricing title: [July Update] \u2192 [August 2026] \u2014 stale month was killing CTR",
+        "Nav active-link highlight upgraded on 17 pricing-history/hub pages via fix_universal_nav.py"
+      ],
+      "activated": [],
+      "tests": "93/93 passed",
+      "notes": [
+        "GSC data is from 2026-05-31 \u2014 stale. No fresh CTR numbers. Most titles already well-optimized from prior sessions.",
+        "Revenue leaks: CLEAN \u2014 no direct vendor hrefs found in pages.",
+        "Pipedrive: affiliate@pipedrive.com emailed about TOS approval needed in PartnerStack (owner action).",
+        "Sitemap: 1521 URLs."
+      ]
     }
   ],
   "affiliate_approvals": [
