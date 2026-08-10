@@ -286,17 +286,17 @@ def fix_notion_free_plan():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Nn]otion[^<]*</title>',
-        "<title>Does Notion Have a Free Plan? (2026) — Yes, But These 4 Limits Will Hit Your Team</title>",
+        "<title>Notion Free Plan 2026: Unlimited Blocks — But 10-Guest Cap, 7-Day History &amp; No Automations</title>",
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Nn]otion[^"]*(")',
-        r"\g<1>Does Notion Have a Free Plan? (2026) — Yes, But These 4 Limits Will Hit Your Team\2",
+        r"\g<1>Notion Free Plan 2026: Unlimited Blocks — But 10-Guest Cap, 7-Day History & No Automations\2",
         html
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Nn]otion[^"]*">',
-        '<meta name="description" content="Notion free plan 2026: unlimited blocks, 10-guest cap, 7-day history, no automations, no API. 4 key limits that hit growing teams. Verified August 2026.">',
+        '<meta name="description" content="Notion\'s free plan (August 2026): unlimited blocks and pages — but caps guests at 10, version history at 7 days, and locks all automations. Full limits breakdown + upgrade decision guide.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)
@@ -313,17 +313,17 @@ def fix_sentry_free_plan():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Ss]entry[^<]*</title>',
-        "<title>Does Sentry Have a Free Plan? (2026) — Yes, But 5K Errors/Month &amp; 6 Features Locked</title>",
+        "<title>Sentry Free Plan 2026: 5K Events/Month, 1 Seat, 7-Day Retention — Is It Enough?</title>",
         html
     )
     html = re.sub(
         r'(<meta property="og:title" content=")[^"]*[Ss]entry[^"]*(")',
-        r"\g<1>Does Sentry Have a Free Plan? (2026) — Yes, But 5K Errors/Month &amp; 6 Features Locked\2",
+        r"\g<1>Sentry Free Plan 2026: 5K Events/Month, 1 Seat, 7-Day Retention — Is It Enough?\2",
         html
     )
     html = re.sub(
         r'<meta name="description" content="[^"]*[Ss]entry[^"]*">',
-        '<meta name="description" content="Sentry free plan 2026: 5,000 errors/month, 7-day retention, 1 seat. SSO, custom dashboards, and 4 more features locked. Full breakdown updated August 2026.">',
+        '<meta name="description" content="Sentry\'s free plan (August 2026): 5,000 error events/month, 1 seat, 7-day data retention. What\'s included, what\'s locked behind paid plans, and exactly when you\'ll hit the ceiling.">',
         html
     )
     html = re.sub(r'"dateModified":\s*"[^"]*"', f'"dateModified": "{TODAY}"', html)

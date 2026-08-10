@@ -54,6 +54,8 @@ TOOLS: dict[str, tuple] = {
     "zoho-crm":        ("Zoho CRM",          "Most features per dollar",                          "CRM",                "Free",      None,                "e42527", "zoho",             8.8, "Free (3 users)"),
     "copper":          ("Copper",            "Native Google Workspace CRM",                       "CRM",                "$25/mo",    None,                "15a0dd", "googlechrome",     8.6, "14-day trial"),
     "close":           ("Close",             "Built-in calling/SMS for inside sales",             "CRM",                "$49/mo",    "/go/close",         "7c3aed", "close",            8.9, "14-day trial"),
+    "engagebay":       ("EngageBay",         "All-in-one CRM, marketing & support for SMBs",      "CRM",                "Free",      "/go/engagebay",     "3a9ad9", "engagebay",        8.5, "Free forever (250 contacts)"),
+    "keap":            ("Keap",              "All-in-one CRM + automation, formerly Infusionsoft", "CRM",                "$249/mo",   None,                "2f9e4f", "keap",             8.1, "14-day trial"),
     # Project management
     "clickup":         ("ClickUp",           "Most features, generous free plan",                 "Project Management", "Free",      "/go/clickup",       "7b68ee", "clickup",          9.2, "Free forever"),
     "asana":           ("Asana",             "Best workflow management, clean UI",                 "Project Management", "Free",      "/go/asana",         "f06a6a", "asana",            9.0, "Free (15 users)"),
@@ -148,7 +150,7 @@ TITLE_OVERRIDES: dict[str, str] = {
     "semrush-vs-moz-which-is-better-in-2026":                 "Semrush vs Moz Pro 2026: $139/mo vs $49/mo — Which Wins? [Honest Verdict]",
     # High-impression pages with 0% CTR — specific verdicts beat generic "Honest Verdict & Who Wins"
     "aws-vs-supabase-which-is-better-in-2026":                "AWS vs Supabase 2026: AWS Wins on Scale, Supabase Wins on Speed [Compared]",
-    "docusign-clm-vs-icertis-which-is-better-in-2026":        "DocuSign CLM vs Icertis 2026: Which CLM Wins? Pricing, AI Features &amp; Verdict",
+    "docusign-clm-vs-icertis-which-is-better-in-2026":        "DocuSign CLM vs Icertis (2026): Head-to-Head Compared — Pricing, AI Features &amp; Verdict",
     "twingate-vs-tailscale-which-is-better-in-2026":          "Twingate vs Tailscale 2026: Twingate for Business, Tailscale for Dev Teams [Verdict]",
     "aws-vs-render-which-is-better-in-2026":                  "AWS vs Render 2026: Render Wins at $7/mo, AWS Wins at Scale [Compared]",
     "twingate-vs-zscaler-which-is-better-in-2026":            "Twingate vs Zscaler 2026: Twingate for SMBs, Zscaler for Enterprise [Verdict]",
@@ -168,6 +170,7 @@ TITLE_OVERRIDES: dict[str, str] = {
     "aweber-vs-brevo-which-is-better-in-2026":               "AWeber vs Brevo 2026: Small Business Email vs Unlimited Contacts — Honest Verdict",
     "aweber-vs-mailerlite-which-is-better-in-2026":          "AWeber vs MailerLite 2026: Which Email Tool Wins for Small Business?",
     "protonpass-vs-1password-which-is-better-in-2026":       "Proton Pass vs 1Password 2026: $2.99/mo Each — Same Price, Different Strengths [Verdict]",
+    "engagebay-vs-keap-which-is-better-in-2026":             "EngageBay vs Keap (2026): Which SMB CRM Wins? Free Plan vs $249/mo — Honest Verdict",
 }
 DESC_OVERRIDES: dict[str, str] = {
     "surfer-seo-vs-se-ranking-which-is-better-in-2026": "SE Ranking wins (8.9/10 vs Surfer SEO's 8.8/10) and costs $55/mo vs $89/mo — 38% cheaper with a 14-day free trial. Full feature comparison, August 2026.",
@@ -188,6 +191,7 @@ DESC_OVERRIDES: dict[str, str] = {
     "tailscale-vs-zscaler-which-is-better-in-2026":  "Tailscale wins for dev teams (8.8/10): zero-config WireGuard mesh, free up to 100 devices. Zscaler wins for enterprise (9.0/10): full SASE, ZTNA, cloud-native. Score-based verdict, August 2026.",
     "semrush-vs-moz-pro-which-is-better-in-2026":    "Semrush wins (9.4/10 vs Moz Pro 8.7/10). $139/mo buys 25B+ keywords, competitor gap analysis, and 55+ tools. Moz Pro is $99/mo with a 30-day trial but thinner data. Worth the price gap? Tested August 2026.",
     "protonpass-vs-1password-which-is-better-in-2026": "1Password wins overall (9.2/10 vs Proton Pass 8.5/10): better UX, Travel Mode, Watchtower breach alerts. Proton Pass wins for privacy: email aliases, open-source, Swiss jurisdiction. Both cost $2.99/mo annual. Score-based verdict, 2026.",
+    "engagebay-vs-keap-which-is-better-in-2026": "EngageBay wins for budget SMBs: free plan up to 250 contacts, lower per-seat cost, all-in-one CRM + email + support. Keap wins for teams needing advanced automation workflows (formerly Infusionsoft). Score-based verdict, August 2026.",
 }
 
 
