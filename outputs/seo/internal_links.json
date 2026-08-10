@@ -1,9 +1,9 @@
 {
-  "total_pages": 1500,
-  "updated": 1497,
+  "total_pages": 1501,
+  "updated": 1498,
   "skipped": 3,
-  "orphans_before": 65,
-  "orphans_after": 61,
+  "orphans_before": 219,
+  "orphans_after": 57,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -21,8 +21,8 @@
         "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/nordlayer-vs-cisco-anyconnect-which-is-better-in-2026",
         "/pages/tenable-vs-tresorit-which-is-better-in-2026",
-        "/pages/gumroad-vs-recurly-which-is-better-in-2026",
-        "/pages/semrush-vs-spyfu-which-is-better-in-2026"
+        "/pages/gumroad-vs-recharge-which-is-better-in-2026",
+        "/pages/semrush-vs-similarweb-which-is-better-in-2026"
       ]
     },
     {
