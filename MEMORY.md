@@ -280,3 +280,51 @@ Measure CTR improvement in 14-21 days.
 1. PartnerStack appeal: follow up on ticket 116965 (Anjola S, 2026-06-23)
 2. Impact.com: HubSpot + 1Password program applications — check app.impact.com → Programs
 3. Semrush vs Moz dedup: `semrush-vs-moz-which-is-better-in-2026` vs `semrush-vs-moz-pro-which-is-better-in-2026` — 301 one to the other
+
+## CEO Daily Session — 2026-08-10
+
+### Gmail Scan
+- **EngageBay (Awin)**: APPROVED 2026-07-22. Awin publisher 2917137, commission 30% recurring.
+  `/go/engagebay` and `/go/engagebay-pricing` already in _redirects from a prior session.
+  Awin tracking link confirmed correct (awinmid + awinaffid=2917137). ✅ ACTIVE
+- **Iternal Technologies (CJ)**: APPROVED 2026-08-03. Also covers AirgapAI.
+  `/go/iternal`, `/go/airgapai`, `/go/airgapai-code` in _redirects — but links are UTM-only,
+  NOT CJ tracking links. **Gap**: commissions won't attribute through CJ until the real kqzyfj.com
+  links are obtained from app.cj.com → Links → Get Links → Advertiser 2177716.
+  **Owner action required**: get CJ deep links and update _redirects.
+- **Pipedrive (PartnerStack)**: Email says "application review in progress" — manual TOS approval
+  needed at https://dash.partnerstack.com/pipedrive. **Owner action required.**
+- No new Impact.com approvals (HubSpot/1Password still PENDING).
+- PartnerStack network lock still unresolved (ClickUp, Monday, ActiveCampaign, Dashlane blocked).
+
+### CTR Title Upgrades (baked into generators — survive nightly CI)
+All changes baked into `scripts/fix_ctr_opportunities.py` so nightly CI won't revert:
+- **Notion free plan** (557 impr, pos 9.4, 0% CTR):
+  New: "Notion Free Plan 2026: Unlimited Blocks — But 10-Guest Cap, 7-Day History & No Automations"
+  (statement-format with the 3 specific limits that block upgrade decisions)
+- **Sentry free plan** (528 impr, pos 7.5, 0% CTR):
+  New: "Sentry Free Plan 2026: 5K Events/Month, 1 Seat, 7-Day Retention — Is It Enough?"
+  (specific numbers in title — more informative, better CTR signal)
+- **DocuSign CLM vs Icertis** (237 impr, pos 8.8, 0% CTR):
+  New: "DocuSign CLM vs Icertis (2026): Head-to-Head Compared — Pricing, AI Features & Verdict"
+  (baked into TITLE_OVERRIDES in rebuild_vs_pages_v2.py)
+- Cloudflare Access free plan: meta updated (August 2026 freshness)
+Measure CTR in 14-21 days. Hypothesis: statement titles with specific numbers outperform question titles.
+
+### New Page Built: EngageBay vs Keap
+- `engagebay-vs-keap-which-is-better-in-2026.html`
+- Target: SMB CRM buyers choosing between free-plan CRM (EngageBay) vs Keap's $249/mo (formerly Infusionsoft)
+- EngageBay wins (8.5/10 vs 8.1/10) — monetized via `/go/engagebay` (Awin 30% recurring)
+- Both tools baked into `rebuild_vs_pages_v2.py` TOOLS dict — all future EngageBay and Keap VS pages will be generated automatically
+- Triggers 14 new EngageBay VS pages (vs HubSpot, Pipedrive, etc.) on next generator run
+
+### Revenue Leak Scan: CLEAN
+grep for direct vendor hrefs across all site/pages/ → 0 matches. All affiliate links route through /go/.
+
+### Tests: 93 passed (up from 57 — test suite grew, this is healthy)
+
+### Action Items for Owner
+1. **Pipedrive (PartnerStack)**: Visit https://dash.partnerstack.com/pipedrive to manually approve TOS. Quick win.
+2. **Iternal/AirgapAI (CJ)**: Get real CJ tracking links from app.cj.com → Links → Advertiser 2177716 → Get Links. Update `/go/iternal`, `/go/airgapai`, `/go/airgapai-code` in `site/_redirects`. Currently earning $0 from CJ on these.
+3. **Impact.com**: Follow up on HubSpot ($250-1000/sale, 39 pages live) and 1Password ($30-60/sale, 37 pages live) — both still PENDING.
+4. **PartnerStack ban**: Escalate ticket 116965 — ClickUp, Monday, ActiveCampaign, Dashlane still locked.
