@@ -1,9 +1,9 @@
 {
-  "total_pages": 1502,
-  "updated": 1498,
+  "total_pages": 1503,
+  "updated": 1499,
   "skipped": 4,
-  "orphans_before": 62,
-  "orphans_after": 60,
+  "orphans_before": 63,
+  "orphans_after": 70,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -12,7 +12,7 @@
         "/pages/nordpass-vs-1password-which-is-better-in-2026",
         "/pages/nordlayer-vs-openvpn-which-is-better-in-2026",
         "/pages/1password-vs-nordpass-which-is-better-in-2026",
-        "/pages/stripe-vs-recharge-which-is-better-in-2026"
+        "/pages/datadog-vs-terraform-which-is-better-in-2026"
       ]
     },
     {
@@ -21,8 +21,8 @@
         "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/nordlayer-vs-cisco-anyconnect-which-is-better-in-2026",
         "/pages/tenable-vs-tresorit-which-is-better-in-2026",
-        "/pages/gumroad-vs-recharge-which-is-better-in-2026",
-        "/pages/semrush-vs-similarweb-which-is-better-in-2026"
+        "/pages/surfer-seo-vs-mangools-which-is-better-in-2026",
+        "/pages/render-vs-vultr-which-is-better-in-2026"
       ]
     },
     {
