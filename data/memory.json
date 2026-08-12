@@ -4,6 +4,35 @@
   "initialized": "2026-05-31",
   "log": [
     {
+      "date": "2026-08-12",
+      "session": "revenue-hunter",
+      "gmail_checked": [
+        "from:awin — no new approvals (EngageBay/SpamGuard already active)",
+        "from:cj — no new approvals (Iternal Technologies still needs real CJ link IDs)",
+        "from:impact — no HubSpot/1Password approvals",
+        "partnerstack — no approvals",
+        "from:xero — no email yet"
+      ],
+      "built": [
+        "expressvpn-vs-nordvpn-which-is-better-in-2026.html — reverse-direction SERP coverage; NordVPN earns /go/nordvpn (active CJ). Title: '$8.32/mo vs $3.39/mo — Which VPN Actually Wins?'. TITLE_OVERRIDE + DESC_OVERRIDE baked into rebuild_vs_pages_v2.py generator.",
+        "925 VS pages rebuilt (dateModified refresh + og:image update)"
+      ],
+      "fixed": [
+        "Sentry free plan (528 impr, pos 7.5, 0 CTR): title rewritten to 'Exactly When You'll Hit the Limit [Dev Guide]' — beyond AI Overview snippet",
+        "Loom free plan (255 impr, pos 10.9, 0 CTR): title rewritten to '5-Video Cap + 5-Min Limit — The Catch Every New User Hits'",
+        "AWS vs Supabase (286 impr, pos 10.1, 0 CTR): meta desc rewritten with decision-rule framing and real pricing figures",
+        "Sitemap rebuilt: 1531 URLs"
+      ],
+      "tests": "93/93 passed",
+      "notes": [
+        "AI Overview root cause confirmed: Sentry/Loom/Notion free-plan pages at pos 7-10 get 0 clicks because SGE answers the basic question. New title angle: promise what's BEYOND the AI answer (usage limits, decision help, upgrade triggers).",
+        "expressvpn-vs-nordvpn fills last major VPN comparison gap — nordvpn-vs-expressvpn existed but not the reverse keyword cluster.",
+        "MANUAL ACTION NEEDED: Iternal Technologies — login app.cj.com → Links → search 'Iternal Technologies' → get real CJ deep link IDs → update /go/iternal, /go/airgapai, /go/airgapai-code in site/_redirects.",
+        "MANUAL ACTION NEEDED: Pipedrive TOS — accept at partnerships@saaspare.org.",
+        "MANUAL ACTION NEEDED: Fresent LLC Awin invite — accept/decline at ui.awin.com."
+      ]
+    },
+    {
       "date": "2026-08-09",
       "session": "ceo-daily",
       "gmail_checked": [
