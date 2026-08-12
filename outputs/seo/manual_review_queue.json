@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-12T05:01:39+00:00",
+  "generated_at_utc": "2026-08-12T21:33:52+00:00",
   "mode": "apply",
-  "pages_flagged": 33,
+  "pages_flagged": 34,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -460,6 +460,17 @@
           "label": "money_back_guarantee",
           "snippet": "45-day money-back guarantee",
           "context": "ers with dedicated streaming and torrenting profiles make it beginner-friendly. 45-day money-back guarantee (the longest in this list). Romania-based (outside EU data retention directives"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/best-vpn-for-remote-work-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-- related-l"
         }
       ],
       "trust_state_bumped": false
