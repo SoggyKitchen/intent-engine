@@ -1,9 +1,9 @@
 {
   "_comment": "Single source of truth for public-facing KPI counts. Regenerate via scripts/sync_public_kpis.py.",
-  "generated_at_utc": "2026-08-12T21:33:44+00:00",
+  "generated_at_utc": "2026-08-12T21:57:47+00:00",
   "page_counts": {
-    "total_buyer_pages": 1522,
-    "comparison_pages": 921,
+    "total_buyer_pages": 1523,
+    "comparison_pages": 922,
     "pricing_pages": 65,
     "free_trial_pages": 52,
     "alternatives_pages": 80,
@@ -12,13 +12,13 @@
     "verticals": 16
   },
   "display_strings": {
-    "badge_live": "1,522 buyer pages live",
-    "stat_buyer_pages": "1,522+",
+    "badge_live": "1,523 buyer pages live",
+    "stat_buyer_pages": "1,523+",
     "stat_verticals": "16",
-    "hero_headline_pages": "1,522 comparison, pricing, review, trial, and coupon pages across 16 verticals",
-    "library_stat_pages": "1,522 buyer pages",
-    "media_kit_indexed": "1,522+ indexed pages",
-    "about_stat_pages": "1,522+ comparison, pricing, review, trial, alternatives, and coupon pages",
-    "comparison_count": "921+ side-by-side comparisons"
+    "hero_headline_pages": "1,523 comparison, pricing, review, trial, and coupon pages across 16 verticals",
+    "library_stat_pages": "1,523 buyer pages",
+    "media_kit_indexed": "1,523+ indexed pages",
+    "about_stat_pages": "1,523+ comparison, pricing, review, trial, alternatives, and coupon pages",
+    "comparison_count": "922+ side-by-side comparisons"
   }
 }
