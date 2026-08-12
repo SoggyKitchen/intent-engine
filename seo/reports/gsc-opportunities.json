@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-08-08",
+  "endDate": "2026-08-09",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -54,22 +54,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 33.0,
+      "impressions": 30.0,
       "page": "https://saaspare.org/pages/",
-      "position": 10.79,
+      "position": 11.13,
       "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 49.45
+      "score": 49.73
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 42.0,
+      "impressions": 39.0,
       "page": "https://saaspare.org/pages/",
-      "position": 10.29,
+      "position": 10.51,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 49.13
+      "score": 49.29
     },
     {
       "clicks": 0.0,
@@ -104,42 +104,42 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 5.0,
+      "impressions": 4.0,
       "page": "https://saaspare.org/authors/kaylan-von-papen",
-      "position": 10.2,
-      "query": "saaspare.org",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 28.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 6.0,
-      "page": "https://saaspare.org/authors/kaylan-von-papen",
-      "position": 9.0,
+      "position": 11.5,
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 27.0
+      "score": 29.5
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 3.0,
+      "page": "https://saaspare.org/authors/kaylan-von-papen",
+      "position": 14.33,
+      "query": "saaspare.org",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 27.67
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/deal-radar",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.3
+      "score": 25.28
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/deal-radar",
       "position": 1.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.3
+      "score": 25.28
     },
     {
       "clicks": 0.0,
@@ -204,62 +204,62 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 25.0,
+      "impressions": 23.0,
       "page": "https://saaspare.org/",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.5
+      "score": 20.46
     },
     {
       "clicks": 1.0,
-      "ctr": 0.025,
-      "impressions": 40.0,
+      "ctr": 0.0263,
+      "impressions": 38.0,
       "page": "https://saaspare.org/",
-      "position": 1.68,
+      "position": 1.71,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.8
+      "score": 0.76
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/roi",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 0.28
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/shortlist",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 0.28
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/roi",
       "position": 1.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 0.28
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/shortlist",
       "position": 1.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 0.28
     }
   ],
   "pageClicks": {
@@ -280,5 +280,5 @@
   "rowsPulled": 30,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-07-11"
+  "startDate": "2026-07-12"
 }
