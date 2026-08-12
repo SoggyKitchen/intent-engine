@@ -309,7 +309,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-07-22",
     "pre_blob": "f2155ef4b85d5956313fccd65a50540ee188cd6c",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/tableau-vs-segment-which-is-better-in-2026.html",
