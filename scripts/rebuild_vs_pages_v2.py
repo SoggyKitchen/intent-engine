@@ -171,6 +171,8 @@ TITLE_OVERRIDES: dict[str, str] = {
     "aweber-vs-mailerlite-which-is-better-in-2026":          "AWeber vs MailerLite 2026: Which Email Tool Wins for Small Business?",
     "protonpass-vs-1password-which-is-better-in-2026":       "Proton Pass vs 1Password 2026: $2.99/mo Each — Same Price, Different Strengths [Verdict]",
     "engagebay-vs-keap-which-is-better-in-2026":             "EngageBay vs Keap (2026): Which SMB CRM Wins? Free Plan vs $249/mo — Honest Verdict",
+    # Revenue-hunter 2026-08-12 — reverse-direction page for active NordVPN earner
+    "expressvpn-vs-nordvpn-which-is-better-in-2026": "ExpressVPN vs NordVPN 2026: $8.32/mo vs $3.39/mo — Which VPN Actually Wins?",
 }
 DESC_OVERRIDES: dict[str, str] = {
     "surfer-seo-vs-se-ranking-which-is-better-in-2026": "SE Ranking wins (8.9/10 vs Surfer SEO's 8.8/10) and costs $55/mo vs $89/mo — 38% cheaper with a 14-day free trial. Full feature comparison, August 2026.",
@@ -192,6 +194,8 @@ DESC_OVERRIDES: dict[str, str] = {
     "semrush-vs-moz-pro-which-is-better-in-2026":    "Semrush wins (9.4/10 vs Moz Pro 8.7/10). $139/mo buys 25B+ keywords, competitor gap analysis, and 55+ tools. Moz Pro is $99/mo with a 30-day trial but thinner data. Worth the price gap? Tested August 2026.",
     "protonpass-vs-1password-which-is-better-in-2026": "1Password wins overall (9.2/10 vs Proton Pass 8.5/10): better UX, Travel Mode, Watchtower breach alerts. Proton Pass wins for privacy: email aliases, open-source, Swiss jurisdiction. Both cost $2.99/mo annual. Score-based verdict, 2026.",
     "engagebay-vs-keap-which-is-better-in-2026": "EngageBay wins for budget SMBs: free plan up to 250 contacts, lower per-seat cost, all-in-one CRM + email + support. Keap wins for teams needing advanced automation workflows (formerly Infusionsoft). Score-based verdict, August 2026.",
+    # Revenue-hunter 2026-08-12
+    "expressvpn-vs-nordvpn-which-is-better-in-2026": "NordVPN wins (9.2/10 vs ExpressVPN 9.0/10) at $3.39/mo — 2.5x cheaper than ExpressVPN's $8.32/mo with more servers (6,400+ vs 3,000+). ExpressVPN wins on Lightway protocol speed. Score-based verdict, August 2026.",
 }
 
 
