@@ -1,23 +1,33 @@
 {
   "current_month": "August 2026",
   "today": "2026-08-13",
-  "titles_rewritten": 1,
-  "descs_rewritten": 20,
-  "dates_refreshed": 1183,
+  "titles_rewritten": 3,
+  "descs_rewritten": 21,
+  "dates_refreshed": 1,
   "answers_added": 15,
-  "files_changed": 1198,
-  "files_scanned": 1522,
+  "files_changed": 24,
+  "files_scanned": 1523,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
+    },
+    {
+      "file": "notion-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Notion Pricing 2026: Every Plan, Hidden AI Fee & Real Costs [Verified]",
+      "after": "Notion Pricing 2026 (Verified August 2026) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "semrush-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Semrush Free Trial 2026: Get Started Step-by-Step | SaaSpare",
+      "after": "Semrush Free Trial 2026: How to Get the Full August 2026 Offer"
     }
   ],
   "desc_examples": [
     {
       "file": "1password-pricing-history-2026.html",
-      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 12 August 2026.",
+      "before": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 13 August 2026.",
       "after": "Updated August 2026. 1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
@@ -27,23 +37,23 @@
     },
     {
       "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 12 August 2026.",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 13 August 2026.",
       "after": "Updated August 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
       "file": "asana-pricing-history-2026.html",
-      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 12 August 2026.",
+      "before": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 13 August 2026.",
       "after": "Updated August 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
+    },
+    {
+      "file": "best-accounting-software-for-freelancers-in-2026.html",
+      "before": "Discover the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features.",
+      "after": "Updated August 2026. the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features Real tests, real pricing\u2026"
     },
     {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated August 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
-    },
-    {
-      "file": "best-vpn-australia-2026.html",
-      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated August 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying\u2026"
     }
   ],
   "indexnow": {
