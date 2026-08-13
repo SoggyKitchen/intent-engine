@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-13T21:45:45+00:00",
+  "generated_at_utc": "2026-08-13T21:56:44+00:00",
   "mode": "apply",
-  "pages_flagged": 34,
+  "pages_flagged": 35,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -83,6 +83,17 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "d=\"M6 9l6 6 6-6\"/></svg></h3><div class=\"faq-a\">Yes \u2014 Elementor Pro includes a 30-day money-back guarantee. Contact Elementor's support team within 30 days of purchase to request a refun"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordpass-vs-lastpass-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "ier</td><td>$5.99/user/mo</td><td>~$7/user/mo</td></tr> <tr><td>Money-back guarantee</td><td class=\"win\">30-day</td><td>30-day</td></tr> </tbody>"
         }
       ],
       "trust_state_bumped": false
@@ -470,7 +481,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-- relate"
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-- relat"
         }
       ],
       "trust_state_bumped": false

@@ -1,16 +1,16 @@
 {
-  "total_pages": 1506,
-  "updated": 1502,
+  "total_pages": 1507,
+  "updated": 1503,
   "skipped": 4,
-  "orphans_before": 61,
-  "orphans_after": 56,
+  "orphans_before": 60,
+  "orphans_after": 75,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
         "/pages/1password-vs-password-boss-which-is-better-in-2026",
-        "/pages/nordpass-vs-1password-which-is-better-in-2026",
-        "/pages/nordlayer-vs-openvpn-which-is-better-in-2026",
+        "/pages/tenable-vs-tresorit-which-is-better-in-2026",
+        "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
         "/pages/1password-vs-nordpass-which-is-better-in-2026",
         "/pages/datadog-vs-terraform-which-is-better-in-2026"
       ]
@@ -19,10 +19,10 @@
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
         "/pages/cisco-anyconnect-vs-cloudflare-access-which-is-better-in-2026",
-        "/pages/nordlayer-vs-cisco-anyconnect-which-is-better-in-2026",
+        "/pages/nordpass-vs-sticky-password-which-is-better-in-2026",
         "/pages/tenable-vs-tresorit-which-is-better-in-2026",
         "/pages/surfer-seo-vs-clearscope-which-is-better-in-2026",
-        "/pages/render-vs-supabase-which-is-better-in-2026"
+        "/pages/zoom-vs-riverside-fm-which-is-better-in-2026"
       ]
     },
     {

@@ -1,12 +1,12 @@
 {
   "current_month": "August 2026",
   "today": "2026-08-13",
-  "titles_rewritten": 3,
-  "descs_rewritten": 21,
-  "dates_refreshed": 1,
-  "answers_added": 15,
-  "files_changed": 24,
-  "files_scanned": 1523,
+  "titles_rewritten": 4,
+  "descs_rewritten": 28,
+  "dates_refreshed": 0,
+  "answers_added": 16,
+  "files_changed": 28,
+  "files_scanned": 1524,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
@@ -14,14 +14,19 @@
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
     },
     {
-      "file": "notion-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Notion Pricing 2026: Every Plan, Hidden AI Fee & Real Costs [Verified]",
-      "after": "Notion Pricing 2026 (Verified August 2026) \u2014 Real Costs + Hidden Fees"
+      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Mixpanel Pricing 2026: Every Plan, Real Cost & August Update \u2014 $0 to $833/mo Breakdown",
+      "after": "Mixpanel Pricing 2026 (Verified August) \u2014 Real Costs + Hidden Fees"
     },
     {
-      "file": "semrush-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Semrush Free Trial 2026: Get Started Step-by-Step | SaaSpare",
-      "after": "Semrush Free Trial 2026: How to Get the Full August 2026 Offer"
+      "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "NordLayer Pricing 2026: $9\u2013$14/User Per Month \u2014 Every Plan + Hidden Fees [August Update]",
+      "after": "NordLayer Pricing 2026 (Verified August) \u2014 Real Costs + Hidden Fees"
+    },
+    {
+      "file": "notion-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Notion Pricing 2026: Free, $10, $15/User \u2014 What You're Actually Paying [August Update]",
+      "after": "Notion Pricing 2026 (Verified August 2026) \u2014 Real Costs + Hidden Fees"
     }
   ],
   "desc_examples": [
@@ -46,14 +51,14 @@
       "after": "Updated August 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-accounting-software-for-freelancers-in-2026.html",
-      "before": "Discover the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features.",
-      "after": "Updated August 2026. the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features Real tests, real pricing\u2026"
-    },
-    {
       "file": "best-ecommerce-platforms-2026.html",
       "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
       "after": "Updated August 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-vpn-australia-2026.html",
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated August 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying\u2026"
     }
   ],
   "indexnow": {
