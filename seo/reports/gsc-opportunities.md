@@ -2,7 +2,7 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-07-12 to 2026-08-09
+Range: 2026-07-13 to 2026-08-10
 Rows pulled: 30
 
 ## Top Opportunities
@@ -27,7 +27,7 @@ Rows pulled: 30
 - Score 25.0: `https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026` query `datadog retool` - impressions 1.0, CTR 0.0, position 40.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 40.0. Monitor and prioritize if impressions continue rising.
 - Score 20.46: `https://saaspare.org/` query `saaspare.org` - impressions 23.0, CTR 0.0, position 1.0. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
-- Score 0.76: `https://saaspare.org/` query `(page rollup)` - impressions 38.0, CTR 0.0263, position 1.71. Monitor and prioritize if impressions continue rising.
+- Score 0.74: `https://saaspare.org/` query `(page rollup)` - impressions 37.0, CTR 0.027, position 1.73. Monitor and prioritize if impressions continue rising.
 - Score 0.28: `https://saaspare.org/roi` query `saaspare.org` - impressions 14.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 0.28: `https://saaspare.org/shortlist` query `saaspare.org` - impressions 14.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 0.28: `https://saaspare.org/roi` query `(page rollup)` - impressions 14.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
