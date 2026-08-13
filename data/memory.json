@@ -5,6 +5,43 @@
   "log": [
     {
       "date": "2026-08-13",
+      "session": "revenue-hunter",
+      "gmail_checked": [
+        "No new affiliate program approvals found.",
+        "Warden9 Awin invite (2026-08-13, noted from CEO daily) — owner to review at ui.awin.com.",
+        "Iternal Technologies CJ: still requires manual login to app.cj.com to get real deep link IDs.",
+        "Pipedrive PartnerStack TOS: still requires manual acceptance.",
+        "HubSpot/1Password Impact.com: still pending approval."
+      ],
+      "ctr_fixes": [
+        "mixpanel-pricing (742 impr, pos 13.7, 0% CTR): title now '$0 to $833/mo Breakdown' with August date anchor",
+        "does-notion-have-a-free-plan (557 impr, pos 9.4, 0% CTR): AI-proof title exposes 10-guest cap & 7-day history wall — beyond AI Overview snippet",
+        "nordlayer-pricing (270 impr, pos 19.0, 0.4% CTR): title surfaces $9–$14/user + 5-seat minimum entry cost",
+        "notion-pricing (214 impr, pos 17.4, 0.9% CTR): title clarifies $10/$15 tiers + $8/user AI add-on hidden cost",
+        "twingate-vs-tailscale (168 impr, pos 13.8, 0% CTR): comparison-intent title with honest verdict signal",
+        "ramp-pricing (1687 impr, pos 10.2, 0.6% CTR): title surfaces Free Core + Plus $12–15/user, August-dated",
+        "ramp-pricing-history: meta sharpens June 2026 Bill Pay tiered fee change for zero-click 'ramp pricing change june 2026' query (pos 3.7, 121 impr, 0 clicks)"
+      ],
+      "built": [
+        "nordpass-vs-lastpass-which-is-better-in-2026.html — NEW PAGE. Gap: 'nordpass vs lastpass' at pos 66, 69 impressions. Reverse direction 'lastpass-vs-nordpass' existed. NordPass wins 9.0/10 vs LastPass 6.5/10. Breach warning box. /go/nordpass affiliate (active earner). FAQPage schema. Sitemap rebuilt (1532 URLs)."
+      ],
+      "activated": "none — all pending programs require manual owner action",
+      "leaks_fixed": "0 — direct URL leaks identified (205 in index.html) but not fixed this session; nav page scripts applied to 17 pricing-history pages",
+      "tests": "93/93 passed",
+      "learnings": [
+        "AI Overview bypass confirmed again: 'does notion have a free plan' at pos 9.4 gets 0 clicks. Effective fix: expose the PAINFUL LIMIT in the title (10-guest cap, 7-day history) — this is what searchers need beyond the AI snippet.",
+        "MONTH TAG CAUTION: Ramp pricing title kept [August Update] bracket-style — safer than inline month which can block non-August month queries. CEO daily already cleaned ramp history; reconfirmed pattern.",
+        "New page gap for active earners: NordPass /go/nordpass is live and earning. nordpass-vs-[competitor] pages exist for bitwarden, 1password, dashlane, roboform — now also lastpass."
+      ],
+      "owner_actions_needed": [
+        "Warden9 Awin invitation (2026-08-13): review and accept/decline at ui.awin.com.",
+        "Iternal Technologies (CJ): login app.cj.com → Links → search 'Iternal Technologies' → get real CJ deep link IDs → update /go/iternal, /go/airgapai, /go/airgapai-code in _redirects.",
+        "Pipedrive PartnerStack TOS: accept at PartnerStack dashboard (partnerships@saaspare.org).",
+        "Impact.com HubSpot/1Password: still pending — check app.impact.com for status updates."
+      ]
+    },
+    {
+      "date": "2026-08-13",
       "session": "ceo-daily",
       "gmail_checked": [
         "from:awin — Warden9 invited SaaSpare today (2026-08-13, UNREAD). Unknown program — owner should review/accept at ui.awin.com if relevant.",
