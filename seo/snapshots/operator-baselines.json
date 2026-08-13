@@ -334,5 +334,13 @@
     "baseline_date": "2026-08-08",
     "pre_blob": "f7f15970813e925dc142e8e1d694613bc490cdfb",
     "status": "pending"
+  },
+  {
+    "path": "site/pages/retool-vs-datadog-which-is-better-in-2026.html",
+    "url": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-08-13",
+    "pre_blob": "46d2ffc40d4e91c6aa53f4a3fdb184810e5051aa",
+    "status": "pending"
   }
 ]
