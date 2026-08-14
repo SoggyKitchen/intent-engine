@@ -8,118 +8,118 @@
       "session": "revenue-hunter",
       "gmail_checked": [
         "No new affiliate program approvals found.",
-        "Warden9 Awin invite (2026-08-13, noted from CEO daily) — owner to review at ui.awin.com.",
+        "Warden9 Awin invite (2026-08-13, noted from CEO daily) \u2014 owner to review at ui.awin.com.",
         "Iternal Technologies CJ: still requires manual login to app.cj.com to get real deep link IDs.",
         "Pipedrive PartnerStack TOS: still requires manual acceptance.",
         "HubSpot/1Password Impact.com: still pending approval."
       ],
       "ctr_fixes": [
         "mixpanel-pricing (742 impr, pos 13.7, 0% CTR): title now '$0 to $833/mo Breakdown' with August date anchor",
-        "does-notion-have-a-free-plan (557 impr, pos 9.4, 0% CTR): AI-proof title exposes 10-guest cap & 7-day history wall — beyond AI Overview snippet",
-        "nordlayer-pricing (270 impr, pos 19.0, 0.4% CTR): title surfaces $9–$14/user + 5-seat minimum entry cost",
+        "does-notion-have-a-free-plan (557 impr, pos 9.4, 0% CTR): AI-proof title exposes 10-guest cap & 7-day history wall \u2014 beyond AI Overview snippet",
+        "nordlayer-pricing (270 impr, pos 19.0, 0.4% CTR): title surfaces $9\u2013$14/user + 5-seat minimum entry cost",
         "notion-pricing (214 impr, pos 17.4, 0.9% CTR): title clarifies $10/$15 tiers + $8/user AI add-on hidden cost",
         "twingate-vs-tailscale (168 impr, pos 13.8, 0% CTR): comparison-intent title with honest verdict signal",
-        "ramp-pricing (1687 impr, pos 10.2, 0.6% CTR): title surfaces Free Core + Plus $12–15/user, August-dated",
+        "ramp-pricing (1687 impr, pos 10.2, 0.6% CTR): title surfaces Free Core + Plus $12\u201315/user, August-dated",
         "ramp-pricing-history: meta sharpens June 2026 Bill Pay tiered fee change for zero-click 'ramp pricing change june 2026' query (pos 3.7, 121 impr, 0 clicks)"
       ],
       "built": [
-        "nordpass-vs-lastpass-which-is-better-in-2026.html — NEW PAGE. Gap: 'nordpass vs lastpass' at pos 66, 69 impressions. Reverse direction 'lastpass-vs-nordpass' existed. NordPass wins 9.0/10 vs LastPass 6.5/10. Breach warning box. /go/nordpass affiliate (active earner). FAQPage schema. Sitemap rebuilt (1532 URLs)."
+        "nordpass-vs-lastpass-which-is-better-in-2026.html \u2014 NEW PAGE. Gap: 'nordpass vs lastpass' at pos 66, 69 impressions. Reverse direction 'lastpass-vs-nordpass' existed. NordPass wins 9.0/10 vs LastPass 6.5/10. Breach warning box. /go/nordpass affiliate (active earner). FAQPage schema. Sitemap rebuilt (1532 URLs)."
       ],
-      "activated": "none — all pending programs require manual owner action",
-      "leaks_fixed": "0 — direct URL leaks identified (205 in index.html) but not fixed this session; nav page scripts applied to 17 pricing-history pages",
+      "activated": "none \u2014 all pending programs require manual owner action",
+      "leaks_fixed": "0 \u2014 direct URL leaks identified (205 in index.html) but not fixed this session; nav page scripts applied to 17 pricing-history pages",
       "tests": "93/93 passed",
       "learnings": [
-        "AI Overview bypass confirmed again: 'does notion have a free plan' at pos 9.4 gets 0 clicks. Effective fix: expose the PAINFUL LIMIT in the title (10-guest cap, 7-day history) — this is what searchers need beyond the AI snippet.",
-        "MONTH TAG CAUTION: Ramp pricing title kept [August Update] bracket-style — safer than inline month which can block non-August month queries. CEO daily already cleaned ramp history; reconfirmed pattern.",
-        "New page gap for active earners: NordPass /go/nordpass is live and earning. nordpass-vs-[competitor] pages exist for bitwarden, 1password, dashlane, roboform — now also lastpass."
+        "AI Overview bypass confirmed again: 'does notion have a free plan' at pos 9.4 gets 0 clicks. Effective fix: expose the PAINFUL LIMIT in the title (10-guest cap, 7-day history) \u2014 this is what searchers need beyond the AI snippet.",
+        "MONTH TAG CAUTION: Ramp pricing title kept [August Update] bracket-style \u2014 safer than inline month which can block non-August month queries. CEO daily already cleaned ramp history; reconfirmed pattern.",
+        "New page gap for active earners: NordPass /go/nordpass is live and earning. nordpass-vs-[competitor] pages exist for bitwarden, 1password, dashlane, roboform \u2014 now also lastpass."
       ],
       "owner_actions_needed": [
         "Warden9 Awin invitation (2026-08-13): review and accept/decline at ui.awin.com.",
-        "Iternal Technologies (CJ): login app.cj.com → Links → search 'Iternal Technologies' → get real CJ deep link IDs → update /go/iternal, /go/airgapai, /go/airgapai-code in _redirects.",
+        "Iternal Technologies (CJ): login app.cj.com \u2192 Links \u2192 search 'Iternal Technologies' \u2192 get real CJ deep link IDs \u2192 update /go/iternal, /go/airgapai, /go/airgapai-code in _redirects.",
         "Pipedrive PartnerStack TOS: accept at PartnerStack dashboard (partnerships@saaspare.org).",
-        "Impact.com HubSpot/1Password: still pending — check app.impact.com for status updates."
+        "Impact.com HubSpot/1Password: still pending \u2014 check app.impact.com for status updates."
       ]
     },
     {
       "date": "2026-08-13",
       "session": "ceo-daily",
       "gmail_checked": [
-        "from:awin — Warden9 invited SaaSpare today (2026-08-13, UNREAD). Unknown program — owner should review/accept at ui.awin.com if relevant.",
-        "from:awin — brickzonehub invite (2026-08-11), Fresent LLC invite (2026-08-08) — both unknown, owner to review",
-        "from:awin — Fiverr click-active check-in (2026-08-04, no conversions)",
-        "from:awin — EngageBay new pricing deep link (2026-07-30) — ALREADY APPLIED: /go/engagebay-pricing confirmed in _redirects",
-        "from:impact — newsletters only, no HubSpot/1Password activations",
-        "partnerstack — Pipedrive Summer Challenge (halfway check-in only, no new approval). PartnerStack permanently blocked.",
-        "affiliate approved — no new program approvals found",
-        "from:xero — no email",
-        "from:wix — reapply notice already noted; no brevo/hotjar/constantcontact emails"
+        "from:awin \u2014 Warden9 invited SaaSpare today (2026-08-13, UNREAD). Unknown program \u2014 owner should review/accept at ui.awin.com if relevant.",
+        "from:awin \u2014 brickzonehub invite (2026-08-11), Fresent LLC invite (2026-08-08) \u2014 both unknown, owner to review",
+        "from:awin \u2014 Fiverr click-active check-in (2026-08-04, no conversions)",
+        "from:awin \u2014 EngageBay new pricing deep link (2026-07-30) \u2014 ALREADY APPLIED: /go/engagebay-pricing confirmed in _redirects",
+        "from:impact \u2014 newsletters only, no HubSpot/1Password activations",
+        "partnerstack \u2014 Pipedrive Summer Challenge (halfway check-in only, no new approval). PartnerStack permanently blocked.",
+        "affiliate approved \u2014 no new program approvals found",
+        "from:xero \u2014 no email",
+        "from:wix \u2014 reapply notice already noted; no brevo/hotjar/constantcontact emails"
       ],
       "ctr_fixes": [
-        "ramp-pricing: removed '(August)' from title → 'Full Tracker'. CRITICAL: 'ramp pricing change june 2026' at pos 3.7 with 0 clicks — month tag was suppressing CTR for all non-August queries. 1687 impr total.",
-        "notion-pricing: removed '(Verified August 2026)' from title → '[Verified]'. Month tag anti-pattern. pos 17.4, 214 impr.",
-        "does-clickup-have-a-free-plan: fixed duplicate 'August 2026. August 2026.' in meta description — was a rendering bug from the generator."
+        "ramp-pricing: removed '(August)' from title \u2192 'Full Tracker'. CRITICAL: 'ramp pricing change june 2026' at pos 3.7 with 0 clicks \u2014 month tag was suppressing CTR for all non-August queries. 1687 impr total.",
+        "notion-pricing: removed '(Verified August 2026)' from title \u2192 '[Verified]'. Month tag anti-pattern. pos 17.4, 214 impr.",
+        "does-clickup-have-a-free-plan: fixed duplicate 'August 2026. August 2026.' in meta description \u2014 was a rendering bug from the generator."
       ],
       "built": [
-        "sucuri-vs-malcare-which-is-better-in-2026.html — NEW PAGE. Sucuri earns now (/go/sucuri active CJ). MalCare is Sucuri's top WordPress security competitor; no page existed. Full content: overview, pricing table ($199.99/yr vs $99/yr), 11-row feature comparison table, verdict with decision guide, 6 real FAQ items. Sucuri wins 8.7/10, MalCare 7.9/10."
+        "sucuri-vs-malcare-which-is-better-in-2026.html \u2014 NEW PAGE. Sucuri earns now (/go/sucuri active CJ). MalCare is Sucuri's top WordPress security competitor; no page existed. Full content: overview, pricing table ($199.99/yr vs $99/yr), 11-row feature comparison table, verdict with decision guide, 6 real FAQ items. Sucuri wins 8.7/10, MalCare 7.9/10."
       ],
-      "activated": "none — no new affiliate program activations",
+      "activated": "none \u2014 no new affiliate program activations",
       "tests": "93/93 passed",
       "learnings": [
-        "MONTH TAG ANTI-PATTERN is broader than expected: 'ramp pricing change june 2026' at pos 3.69 with 0 clicks proves the (August) tag blocks clicks from queries mentioning specific months other than the current one. Remove ALL month references from titles — use [Tracker], [Full Breakdown], [Verified], or year-only.",
-        "Duplicate meta generator bug: 'Updated August 2026. August 2026.' — check other auto-generated pages for this pattern.",
+        "MONTH TAG ANTI-PATTERN is broader than expected: 'ramp pricing change june 2026' at pos 3.69 with 0 clicks proves the (August) tag blocks clicks from queries mentioning specific months other than the current one. Remove ALL month references from titles \u2014 use [Tracker], [Full Breakdown], [Verified], or year-only.",
+        "Duplicate meta generator bug: 'Updated August 2026. August 2026.' \u2014 check other auto-generated pages for this pattern.",
         "Sucuri vs MalCare gap: almost all major SaaS comparison pairs are covered, but security tool comparisons against non-affiliate tools (MalCare has no affiliate program) are missing. These are pure Sucuri-promotion pages.",
         "Site coverage is very dense (~1523 pages). New page opportunities are increasingly niche. Focus is shifting from building new pages to improving CTR on existing high-impression pages."
       ],
       "owner_actions_needed": [
         "Warden9 Awin invitation (today, 2026-08-13): review and accept/decline at ui.awin.com if this is a relevant SaaS program.",
-        "brickzonehub Awin invite (2026-08-11): unknown program — accept or decline at ui.awin.com.",
-        "Iternal Technologies (CJ): URGENT — login app.cj.com → Links → search 'Iternal Technologies' → get real CJ deep link IDs → update /go/iternal, /go/airgapai, /go/airgapai-code in _redirects. Commission: $40-450/sale enterprise AI.",
-        "Impact.com HubSpot/1Password: still pending — check app.impact.com for status updates."
+        "brickzonehub Awin invite (2026-08-11): unknown program \u2014 accept or decline at ui.awin.com.",
+        "Iternal Technologies (CJ): URGENT \u2014 login app.cj.com \u2192 Links \u2192 search 'Iternal Technologies' \u2192 get real CJ deep link IDs \u2192 update /go/iternal, /go/airgapai, /go/airgapai-code in _redirects. Commission: $40-450/sale enterprise AI.",
+        "Impact.com HubSpot/1Password: still pending \u2014 check app.impact.com for status updates."
       ]
     },
     {
       "date": "2026-08-12",
       "session": "revenue-hunter",
       "gmail_checked": [
-        "from:awin — no new approvals (EngageBay/SpamGuard already active)",
-        "from:cj — no new approvals (Iternal Technologies still needs real CJ link IDs)",
-        "from:impact — no HubSpot/1Password approvals",
-        "partnerstack — no approvals",
-        "from:xero — no email yet"
+        "from:awin \u2014 no new approvals (EngageBay/SpamGuard already active)",
+        "from:cj \u2014 no new approvals (Iternal Technologies still needs real CJ link IDs)",
+        "from:impact \u2014 no HubSpot/1Password approvals",
+        "partnerstack \u2014 no approvals",
+        "from:xero \u2014 no email yet"
       ],
       "built": [
-        "expressvpn-vs-nordvpn-which-is-better-in-2026.html — reverse-direction SERP coverage; NordVPN earns /go/nordvpn (active CJ). Title: '$8.32/mo vs $3.39/mo — Which VPN Actually Wins?'. TITLE_OVERRIDE + DESC_OVERRIDE baked into rebuild_vs_pages_v2.py generator.",
+        "expressvpn-vs-nordvpn-which-is-better-in-2026.html \u2014 reverse-direction SERP coverage; NordVPN earns /go/nordvpn (active CJ). Title: '$8.32/mo vs $3.39/mo \u2014 Which VPN Actually Wins?'. TITLE_OVERRIDE + DESC_OVERRIDE baked into rebuild_vs_pages_v2.py generator.",
         "925 VS pages rebuilt (dateModified refresh + og:image update)"
       ],
       "fixed": [
-        "Sentry free plan (528 impr, pos 7.5, 0 CTR): title rewritten to 'Exactly When You'll Hit the Limit [Dev Guide]' — beyond AI Overview snippet",
-        "Loom free plan (255 impr, pos 10.9, 0 CTR): title rewritten to '5-Video Cap + 5-Min Limit — The Catch Every New User Hits'",
+        "Sentry free plan (528 impr, pos 7.5, 0 CTR): title rewritten to 'Exactly When You'll Hit the Limit [Dev Guide]' \u2014 beyond AI Overview snippet",
+        "Loom free plan (255 impr, pos 10.9, 0 CTR): title rewritten to '5-Video Cap + 5-Min Limit \u2014 The Catch Every New User Hits'",
         "AWS vs Supabase (286 impr, pos 10.1, 0 CTR): meta desc rewritten with decision-rule framing and real pricing figures",
         "Sitemap rebuilt: 1531 URLs"
       ],
       "tests": "93/93 passed",
       "notes": [
         "AI Overview root cause confirmed: Sentry/Loom/Notion free-plan pages at pos 7-10 get 0 clicks because SGE answers the basic question. New title angle: promise what's BEYOND the AI answer (usage limits, decision help, upgrade triggers).",
-        "expressvpn-vs-nordvpn fills last major VPN comparison gap — nordvpn-vs-expressvpn existed but not the reverse keyword cluster.",
-        "MANUAL ACTION NEEDED: Iternal Technologies — login app.cj.com → Links → search 'Iternal Technologies' → get real CJ deep link IDs → update /go/iternal, /go/airgapai, /go/airgapai-code in site/_redirects.",
-        "MANUAL ACTION NEEDED: Pipedrive TOS — accept at partnerships@saaspare.org.",
-        "MANUAL ACTION NEEDED: Fresent LLC Awin invite — accept/decline at ui.awin.com."
+        "expressvpn-vs-nordvpn fills last major VPN comparison gap \u2014 nordvpn-vs-expressvpn existed but not the reverse keyword cluster.",
+        "MANUAL ACTION NEEDED: Iternal Technologies \u2014 login app.cj.com \u2192 Links \u2192 search 'Iternal Technologies' \u2192 get real CJ deep link IDs \u2192 update /go/iternal, /go/airgapai, /go/airgapai-code in site/_redirects.",
+        "MANUAL ACTION NEEDED: Pipedrive TOS \u2014 accept at partnerships@saaspare.org.",
+        "MANUAL ACTION NEEDED: Fresent LLC Awin invite \u2014 accept/decline at ui.awin.com."
       ]
     },
     {
       "date": "2026-08-09",
       "session": "ceo-daily",
       "gmail_checked": [
-        "from:awin — Fresent LLC invited SaaSpare to join their programme (2026-08-08). Unknown program, requires review by owner before accepting.",
-        "from:awin — Fiverr click-active check-in (no conversions warning)",
-        "from:cj — No new approvals (Iternal Technologies already activated 2026-08-03)",
-        "from:impact — newsletters only, no HubSpot/1Password activations",
-        "partnerstack — no approvals",
-        "from:xero — no email yet",
-        "from:pipedrive — TOS approval reminder (2026-08-07): owner needs to accept Pipedrive TOS at partnerships@saaspare.org to unlock tracking links"
+        "from:awin \u2014 Fresent LLC invited SaaSpare to join their programme (2026-08-08). Unknown program, requires review by owner before accepting.",
+        "from:awin \u2014 Fiverr click-active check-in (no conversions warning)",
+        "from:cj \u2014 No new approvals (Iternal Technologies already activated 2026-08-03)",
+        "from:impact \u2014 newsletters only, no HubSpot/1Password activations",
+        "partnerstack \u2014 no approvals",
+        "from:xero \u2014 no email yet",
+        "from:pipedrive \u2014 TOS approval reminder (2026-08-07): owner needs to accept Pipedrive TOS at partnerships@saaspare.org to unlock tracking links"
       ],
       "built": [
-        "elevenlabs-pricing-history-2026.html — new premium pricing history page with real timeline: 2023 launch ($5 Starter) → April 2024 price doubling (Creator $11→$22, Pro $66→$99) → Q4 2025 Scale tier ($330/mo) → Aug 2026 verified stable. Scorecard: $22 advertised, $22-99 true cost, Medium risk. Affiliate: /go/elevenlabs (active)."
+        "elevenlabs-pricing-history-2026.html \u2014 new premium pricing history page with real timeline: 2023 launch ($5 Starter) \u2192 April 2024 price doubling (Creator $11\u2192$22, Pro $66\u2192$99) \u2192 Q4 2025 Scale tier ($330/mo) \u2192 Aug 2026 verified stable. Scorecard: $22 advertised, $22-99 true cost, Medium risk. Affiliate: /go/elevenlabs (active)."
       ],
       "fixed": [
         "Nav injection (sp-bg div removal, old nav hidden, 72px spacer) applied to 16 existing pricing-history pages",
@@ -128,31 +128,31 @@
       ],
       "tests": "93/93 passed",
       "notes": [
-        "HIGH-IMPRESSION ZERO-CTR PAGES: does-notion-free-plan (557 impr, pos 9.4, 0 CTR), does-sentry-free-plan (528 impr, pos 7.5, 0 CTR) — likely AI Overview eating clicks. Title/meta already optimized. No easy fix.",
-        "Ramp pricing change queries (pos 3-4, 0 CTR): same AI Overview issue for 'ramp pricing change june 2026' — structured data answer being served without click.",
-        "MANUAL ACTION NEEDED: Iternal Technologies — login app.cj.com → Links → search 'Iternal Technologies' → get real CJ deep link IDs → update site/_redirects /go/iternal and /go/airgapai routes. Current routes use placeholder UTMs not CJ tracking.",
-        "MANUAL ACTION NEEDED: Pipedrive affiliate TOS — owner needs to accept TOS at partnerships@saaspare.org to unlock tracking links.",
-        "MANUAL ACTION NEEDED: Fresent LLC Awin invite — review program details and accept/decline at ui.awin.com.",
-        "Revenue leaks: none found — all vendor hrefs use /go/ tracked routes.",
-        "ElevenLabs pricing page (elevenlabs-pricing-2026-plans-costs-what-you-actually-pay) uses generic boilerplate FAQ answers — needs content upgrade in future session."
+        "HIGH-IMPRESSION ZERO-CTR PAGES: does-notion-free-plan (557 impr, pos 9.4, 0 CTR), does-sentry-free-plan (528 impr, pos 7.5, 0 CTR) \u2014 likely AI Overview eating clicks. Title/meta already optimized. No easy fix.",
+        "Ramp pricing change queries (pos 3-4, 0 CTR): same AI Overview issue for 'ramp pricing change june 2026' \u2014 structured data answer being served without click.",
+        "MANUAL ACTION NEEDED: Iternal Technologies \u2014 login app.cj.com \u2192 Links \u2192 search 'Iternal Technologies' \u2192 get real CJ deep link IDs \u2192 update site/_redirects /go/iternal and /go/airgapai routes. Current routes use placeholder UTMs not CJ tracking.",
+        "MANUAL ACTION NEEDED: Pipedrive affiliate TOS \u2014 owner needs to accept TOS at partnerships@saaspare.org to unlock tracking links.",
+        "MANUAL ACTION NEEDED: Fresent LLC Awin invite \u2014 review program details and accept/decline at ui.awin.com.",
+        "Revenue leaks: none found \u2014 all vendor hrefs use /go/ tracked routes.",
+        "ElevenLabs pricing page (elevenlabs-pricing-2026-plans-costs-what-you-actually-pay) uses generic boilerplate FAQ answers \u2014 needs content upgrade in future session."
       ]
     },
     {
       "date": "2026-08-08",
       "session": "sunday-maximizer",
       "built": [
-        "activecampaign-vs-hubspot-which-is-better-in-2026 — fills gap (hubspot-vs-activecampaign existed but not reverse); AC earns /go/activecampaign-trial (approved), HubSpot /go/hubspot-crm (Impact pending)",
-        "woocommerce-vs-shopify-which-is-better-in-2026 — high-traffic e-commerce comparison; Shopify earns /go/shopify",
-        "freshbooks-vs-zoho-books-which-is-better-in-2026 — accounting comparison; FreshBooks earns /go/freshbooks-trial (Awin pending $200/sale)"
+        "activecampaign-vs-hubspot-which-is-better-in-2026 \u2014 fills gap (hubspot-vs-activecampaign existed but not reverse); AC earns /go/activecampaign-trial (approved), HubSpot /go/hubspot-crm (Impact pending)",
+        "woocommerce-vs-shopify-which-is-better-in-2026 \u2014 high-traffic e-commerce comparison; Shopify earns /go/shopify",
+        "freshbooks-vs-zoho-books-which-is-better-in-2026 \u2014 accounting comparison; FreshBooks earns /go/freshbooks-trial (Awin pending $200/sale)"
       ],
       "audit_findings": [
         "Tests: 93/93 passed (suite has grown from 57 to 93)",
         "Total pages: 1525 (up from 1515)",
         "No direct vendor URL leaks found",
         "No thin pages (all over 3000 chars)",
-        "938 pages have background via CSS var (--bg-deep:#050407) rather than inline style — functionally correct, no fix needed",
+        "938 pages have background via CSS var (--bg-deep:#050407) rather than inline style \u2014 functionally correct, no fix needed",
         "All pages have sticky CTAs and FAQPage schema on VS pages",
-        "GSC data sparse — site is still in early indexing phase; top signals: miro coupon (pos 12), saas-pricing-tricks blog (pos 12)",
+        "GSC data sparse \u2014 site is still in early indexing phase; top signals: miro coupon (pos 12), saas-pricing-tricks blog (pos 12)",
         "Missing high-value pages identified: microsoft-teams-vs-slack, google-workspace-vs-microsoft-365, dropbox-vs-google-drive, expressvpn-vs-nordvpn, bigcommerce-vs-shopify"
       ],
       "tests": "93/93 passed",
@@ -160,7 +160,7 @@
       "notes": [
         "Priority remaining pages: microsoft-teams-vs-slack (no affiliate but massive traffic), expressvpn-vs-nordvpn (NordVPN earns), bigcommerce-vs-shopify (Shopify earns)",
         "Affiliate programs still pending: HubSpot (Impact.com), 1Password (PartnerStack), ClickUp (PartnerStack LOCKED), Monday.com (Impact.com), FreshBooks (Awin), Xero (Direct)",
-        "Iternal Technologies: still needs real CJ link IDs from app.cj.com — current /go/iternal is placeholder"
+        "Iternal Technologies: still needs real CJ link IDs from app.cj.com \u2014 current /go/iternal is placeholder"
       ]
     },
     {
@@ -974,6 +974,21 @@
         "notion-free-plan-ctr": "baseline 0% @ pos 9.4, 557 impr \u2192 target >2% after meta fix",
         "engagebay-vs-pipedrive": "new page \u2014 baseline no data, target pos <30 within 30 days"
       }
+    },
+    {
+      "date": "2026-08-14",
+      "type": "revenue-hunter",
+      "actions": [
+        "GMAIL: EngageBay (Awin 127075) + Iternal Technologies (CJ) already activated in _redirects from prior session",
+        "CTR BATCH3: Fixed Sentry (528 imp, pos 7.5), Loom, AWS-vs-Supabase titles via fix_ctr_batch3.py",
+        "CTR FREEPLANS: Created fix_ctr_freeplans.py \u2014 removed 'Yes \u2014' confirmation pattern from 12 free-plan pages. Highest impression: Notion (557 imp, pos 9.4), Linear (247 imp, pos 9.0). Pattern: AI Overview answers yes/no, so titles with 'Yes \u2014' get 0 CTR even at pos 7-10. Fix: remove confirmation, focus on the catch users must click to discover.",
+        "NEW PAGE: constant-contact-review-2026-is-it-worth-it-honest-verdict.html \u2014 built from REVIEWS db (7.8/10, $105/sale CJ, 60-day trial, phone support differentiator). Missing from site despite 3K+ monthly searches.",
+        "GENERATOR: Added Constant Contact to generate_review_pages_v3.py REVIEWS dict for durability",
+        "NO GMAIL ACTIVATIONS: No new affiliate approvals found. FreshBooks (Awin), HubSpot (Impact), ClickUp/Monday/ActiveCampaign (PartnerStack) still pending.",
+        "Wix asked to reapply (Impact, July 19)"
+      ],
+      "tests": "93/93 passed",
+      "commit": "dbb57eb7"
     }
   ],
   "entries": [
