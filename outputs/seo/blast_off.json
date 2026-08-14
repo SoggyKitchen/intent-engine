@@ -1,37 +1,17 @@
 {
   "current_month": "August 2026",
   "today": "2026-08-14",
-  "titles_rewritten": 5,
-  "descs_rewritten": 27,
+  "titles_rewritten": 1,
+  "descs_rewritten": 22,
   "dates_refreshed": 0,
   "answers_added": 16,
-  "files_changed": 28,
-  "files_scanned": 1525,
+  "files_changed": 22,
+  "files_scanned": 1526,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
       "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
-    },
-    {
-      "file": "mixpanel-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "Mixpanel Pricing 2026: Free Plan + Growth From $28/mo \u2014 Every Plan Ranked [August Update]",
-      "after": "Mixpanel Pricing 2026 (Verified August) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "nordlayer-pricing-2026-plans-costs-what-you-actually-pay.html",
-      "before": "NordLayer Pricing 2026: Lite $9, Core $11, Business $14/User \u2014 Is the 5-Seat Minimum Worth It?",
-      "after": "NordLayer Pricing 2026 (Verified August) \u2014 Real Costs + Hidden Fees"
-    },
-    {
-      "file": "semrush-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Semrush Free Trial 2026: Get Started Step-by-Step | SaaSpare",
-      "after": "Semrush Free Trial 2026: How to Get the Full August 2026 Offer"
-    },
-    {
-      "file": "sucuri-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Sucuri Free Trial 2026: 30-Day Money-Back + Free Scanner \u2014 How to Get It",
-      "after": "Sucuri Free Trial 2026: How to Get the Full August 2026 Offer"
     }
   ],
   "desc_examples": [
@@ -57,13 +37,13 @@
     },
     {
       "file": "aws-vs-supabase-which-is-better-in-2026.html",
-      "before": "AWS scores 9.0/10 vs Supabase 8.8/10 in our 2026 head-to-head. Supabase wins on developer speed and its generous free tier. AWS wins at enterprise scale. Full pricing, feature, and migration comparison.",
-      "after": "Updated August 2026. AWS scores 9.0/10 vs Supabase 8.8/10 in our 2026 head-to-head. Supabase wins on developer speed and its generous free tier. AWS wins at\u2026"
+      "before": "AWS wins at scale (9.0/10), Supabase wins on speed (8.8/10). Real pricing: AWS free tier \u2192 $0.023/GB/mo, Supabase free \u2192 $25/mo Pro. The one decision rule that picks the right one for your stack. August 2026.",
+      "after": "Updated August 2026. AWS wins at scale (9.0/10), Supabase wins on speed (8.8/10). Real pricing: AWS free tier \u2192 $0.023/GB/mo, Supabase free \u2192 $25/mo Pro. The one\u2026"
     },
     {
-      "file": "best-accounting-software-for-freelancers-in-2026.html",
-      "before": "Discover the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features.",
-      "after": "Updated August 2026. the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features Real tests, real pricing\u2026"
+      "file": "best-ecommerce-platforms-2026.html",
+      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
+      "after": "Updated August 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
     }
   ],
   "indexnow": {

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-14T21:28:56+00:00",
+  "generated_at_utc": "2026-08-14T21:47:47+00:00",
   "mode": "apply",
   "pages_flagged": 36,
   "claim_labels_seen": [
@@ -154,7 +154,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "ame=\"description\" content=\"Sucuri has no traditional free trial \u2014 but you get a 30-day money-back guarantee on any paid plan and a completely free malware scanner (no signup). Here's exac"
+          "context": "tent=\"Updated August 2026. Sucuri has no traditional free trial \u2014 but you get a 30-day money-back guarantee on any paid plan and a completely free malware scanner (no\u2026\"> <link rel=\"canoni"
         },
         {
           "label": "money_back_guarantee",
@@ -388,7 +388,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-- rel"
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-- re"
         }
       ],
       "trust_state_bumped": false
