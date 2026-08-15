@@ -5,6 +5,39 @@
   "log": [
     {
       "date": "2026-08-15",
+      "session": "sunday-maximizer",
+      "built": [
+        "elevenlabs-vs-synthesia-which-is-better-in-2026.html — NEW PAGE. ElevenLabs (9.1/10) vs Synthesia (8.6/10). EL wins for voice/audio/TTS/cloning, Synthesia wins for avatar video generation. /go/elevenlabs affiliate, FAQPage schema, decision table.",
+        "elevenlabs-vs-heygen-which-is-better-in-2026.html — NEW PAGE. ElevenLabs (9.1/10) vs HeyGen (8.4/10). EL wins voice quality/cloning, HeyGen wins video with custom avatars/lip-sync. SVG workflow diagram showing EL+HeyGen integration.",
+        "shopify-vs-webflow-which-is-better-in-2026.html — NEW PAGE. Shopify (9.3/10) vs Webflow (8.0/10). Shopify wins ecommerce, Webflow wins design/CMS-first sites. /go/shopify affiliate, FAQPage schema."
+      ],
+      "internal_links_added": [
+        "elevenlabs-review page now links to VS Synthesia and VS HeyGen pages",
+        "elevenlabs-pricing page now links to VS Synthesia and VS HeyGen pages",
+        "shopify-review page now links to VS Webflow page",
+        "shopify-pricing page now links to VS Webflow page"
+      ],
+      "fixes": [
+        "best-devtools-for-secure-code-review-in-2025: fixed malformed nested script JSON-LD tags — test_every_jsonld_block_parses was failing"
+      ],
+      "design_audit": "10 random pages checked: no sp-bg on body (ok), nav id=sp-nav (ok), saaspare-ui.css (ok). Dark bg via CSS var(--bg-deep):#050407 on all pages.",
+      "tests": "93/93 passed",
+      "sitemap": "1541 URLs after 3 new pages",
+      "learnings": [
+        "ElevenLabs vs Synthesia and ElevenLabs vs HeyGen were missing pages — both in hot AI content creation space, ElevenLabs earns actively via /go/elevenlabs.",
+        "Shopify vs Webflow was missing — Shopify earns via /go/shopify, Webflow is major ecomm alternative.",
+        "JSON-LD fix: best-devtools-for-secure-code-review page had nested <script> tags — outer tag had '[' content which is invalid JSON; fixed by wrapping the whole array properly.",
+        "Schema/indexability is 7.69/10 due to 237 pages missing FAQPage — high-value active-earner pages all have it, gap is in older generated content."
+      ],
+      "owner_actions_needed": [
+        "HubSpot Impact.com: URGENT — 44 pages live, $400/conv, still PENDING. Check app.impact.com.",
+        "Pipedrive PartnerStack TOS: URGENT — accept at PartnerStack dashboard (partnerships@saaspare.org) to unlock commissions.",
+        "FreshBooks Awin: PENDING — 24 pages, $200/conv. Check Awin dashboard for approval.",
+        "Warden9 Awin invitation (2026-08-13): review at ui.awin.com."
+      ]
+    },
+    {
+      "date": "2026-08-15",
       "session": "ceo-daily",
       "gmail_checked": [
         "from:awin — Warden9 invitation (2026-08-13, UNREAD) — owner to review at ui.awin.com if relevant",
