@@ -31,5 +31,11 @@
       "/pages/stripe-pricing-2026-plans-costs-what-you-actually-pay"
     ],
     "path": "/pages/stripe-pricing-history-2026"
+  },
+  {
+    "broken": [
+      "/sitemap.xml"
+    ],
+    "path": "/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step"
   }
 ]
