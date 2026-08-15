@@ -5,6 +5,45 @@
   "log": [
     {
       "date": "2026-08-15",
+      "session": "revenue-hunter",
+      "gmail_checked": [
+        "from:awin — Warden9 invite (2026-08-13, irrelevant), brickzonehub invite (2026-08-11, irrelevant), EngageBay CRM already approved (2026-07-22, links already live), Iternal CJ approved (2026-08-03)",
+        "from:impact — newsletter only, no new program activations; Wix asked to reapply (2026-07-19)",
+        "partnerstack — no new unlocks; Pipedrive TOS still pending (email 2026-08-14)",
+        "affiliate approved — Iternal Technologies CJ welcome (2026-08-03, advertiser 7676842, $40-450/sale)",
+        "EngageBay deep link confirmed: awinaffid=2917137 is correct publisher ID — /go/engagebay-pricing redirect already correct"
+      ],
+      "ctr_fixes": [
+        "mixpanel-pricing (742 impr, pos 13.7, 0% CTR): added 'Free (20M Events) vs $28/mo Growth' price hook",
+        "does-notion-have-a-free-plan (557 impr, pos 9.4, 0% CTR): question-first title 'Does Notion Have a Free Plan in 2026? Yes — But the 10-Guest Cap Blocks Teams'",
+        "does-sentry-have-a-free-plan (528 impr, pos 7.5, 0% CTR): question-first title 'Does Sentry Have a Free Plan in 2026? Yes (5K Events/Mo)'",
+        "best-devops-config-drift-tools (380 impr, pos 18.1, 0% CTR): updated to 9 tools + 2026 year, expanded tool names",
+        "nordlayer-pricing (270 impr, pos 19.0, 0% CTR): '$9–$14/User/Mo' in title with hidden team fees hook",
+        "notion-pricing (214 impr, pos 17.4, 0.9% CTR): 'Free to $15/User/Mo' hook in title",
+        "surfer-seo-vs-se-ranking (pos 54, query 'se ranking vs surfer'): reordered to 'SE Ranking vs Surfer SEO 2026' to match query intent"
+      ],
+      "built": [
+        "airgapai-code-review-2026-is-it-worth-it-honest-verdict.html — NEW PAGE. First Iternal Technologies content (zero pages before). AirgapAI Code = $1,999 one-time → $200-300 CJ commission/sale. Targets: 'airgapai code review', 'offline ai coding assistant', 'local ai coding agent'. Score 7.8/10. Comparison table vs Copilot/Cursor/Claude Code/Continue.dev. 5 FAQ schema entries. Vendor-claim disclosure included."
+      ],
+      "activated": "none — /go/airgapai-code uses UTM link, NOT real CJ affiliate link. CJ commissions will not track until owner updates _redirects with CJ deep links.",
+      "leaks_fixed": "0 — grep found no direct affiliate href leaks (all use /go/ routes)",
+      "tests": "93/93 passed",
+      "learnings": [
+        "ITERNAL CJ LINK GAP: The CJ welcome email (Aug 3) says to log into CJ to get links — no direct link in email. Current /go/iternal, /go/airgapai, /go/airgapai-code use UTM direct links. Commissions will be $0 until owner gets real CJ deep links. HIGH PRIORITY owner action.",
+        "ENGAGEBAY CONFIRMED: Publisher ID 2917137 confirmed from Awin email. /go/engagebay and /go/engagebay-pricing already correctly formatted with awinaffid=2917137.",
+        "WIX NOT APPROVED: Impact.com sent 'please reapply' message July 19. Not a live earning program.",
+        "PIPEDRIVE TOS OUTSTANDING: Two Pipedrive emails (Aug 12, Aug 14) — one Summer Challenge update, one TOS required. Need owner to accept TOS before commissions flow."
+      ],
+      "owner_actions_needed": [
+        "URGENT — Iternal Technologies CJ links: login app.cj.com → Links → search 'Iternal Technologies' (advertiser 7676842) → get text link IDs → update /go/iternal, /go/airgapai, /go/airgapai-code in site/_redirects. Without this, $200-300/sale commissions cannot track.",
+        "Pipedrive PartnerStack TOS (email Aug 14): accept at PartnerStack dashboard (partnerships@saaspare.org).",
+        "Wix reapplication (Impact.com): reapply at app.impact.com if still interested.",
+        "Impact.com HubSpot/1Password: still pending — check app.impact.com for status updates.",
+        "Warden9 Awin invitation (2026-08-13): review and accept/decline at ui.awin.com (likely irrelevant to SaaSpare)."
+      ]
+    },
+    {
+      "date": "2026-08-15",
       "session": "ceo-daily",
       "gmail_checked": [
         "from:awin — Warden9 invitation (2026-08-13, UNREAD) — owner to review at ui.awin.com if relevant",
