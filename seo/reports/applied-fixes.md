@@ -17,6 +17,7 @@
 - `/pages/clearscope-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/clickup-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/clickup-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/constant-contact-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/contabo-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/copy-ai-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/datadog-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -49,7 +50,6 @@
 - `/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/nordpass-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/nordpass-vs-lastpass-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/notion-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/notion-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -73,8 +73,8 @@
 - `/pages/slack-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/stripe-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/stripe-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/sucuri-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
-- `/pages/sucuri-vs-malcare-which-is-better-in-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/supabase-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/surfshark-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
