@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-15T03:53:55+00:00",
+  "generated_at_utc": "2026-08-16T21:50:25+00:00",
   "mode": "apply",
-  "pages_flagged": 36,
+  "pages_flagged": 35,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -159,22 +159,17 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "0% free website malware scanner (SiteCheck) with no account required, and (2) a 30-day money-back guarantee on all paid plans \u2014 Basic, Pro, Business, and Platform.\"}},{\"@type\":\"Question\","
+          "context": "0% free website malware scanner (SiteCheck) with no account required, and (2) a 30-day money-back guarantee on all paid plans \u2014 Basic, Pro, Business, and Platform.\"}}, {\"@type\": \"Question"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "h require a paid plan.\"}},{\"@type\":\"Question\",\"name\":\"How do I claim the Sucuri 30-day money-back guarantee?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Email Sucuri support (support@sucu"
+          "context": "quire a paid plan.\"}}, {\"@type\": \"Question\", \"name\": \"How do I claim the Sucuri 30-day money-back guarantee?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Email Sucuri support (support"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "\"text\":\"Sucuri plans are sold annually. There is no monthly billing option. The 30-day money-back guarantee covers the full year's purchase if you cancel within 30 days of the original tr"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "money back guarantee",
-          "context": "Stock\"}}</script> <meta name=\"keywords\" content=\"Sucuri free trial 2026, Sucuri money back guarantee, Sucuri SiteCheck, website security trial, sucuri review\"> <meta property=\"og:u"
+          "context": "text\": \"Sucuri plans are sold annually. There is no monthly billing option. The 30-day money-back guarantee covers the full year's purchase if you cancel within 30 days of the original tr"
         },
         {
           "label": "money_back_guarantee",
@@ -195,6 +190,11 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "malware scanner with no login required \u2014 and <strong style=\"color:#fff;\">(2) a 30-day money-back guarantee</strong> on any paid annual plan (Basic $199.99/yr, Pro $299.99/yr, Business $4"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "ass=\"wh-label\">No reason required</div> <div class=\"wh-desc\">Sucuri's money-back guarantee is unconditional within the 30-day window. You don't need to justify the refund"
         }
       ],
       "trust_state_bumped": false
@@ -388,7 +388,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-- r"
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!--"
         }
       ],
       "trust_state_bumped": false
@@ -484,17 +484,6 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "r VPNs. PwC-audited no-logs, NordLynx (WireGuard) speeds, 6,400+ servers, and a 30-day money-back guarantee make it the safest pick for most users.</p> <div style=\"background:rgba(255,2"
-        }
-      ],
-      "trust_state_bumped": false
-    },
-    {
-      "path": "site/pages/nordpass-vs-lastpass-which-is-better-in-2026.html",
-      "claims": [
-        {
-          "label": "money_back_guarantee",
-          "snippet": "Money-back guarantee",
-          "context": "ier</td><td>$5.99/user/mo</td><td>~$7/user/mo</td></tr> <tr><td>Money-back guarantee</td><td class=\"win\">30-day</td><td>30-day</td></tr> </tbody>"
         }
       ],
       "trust_state_bumped": false
