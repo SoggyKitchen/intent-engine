@@ -173,6 +173,8 @@ TITLE_OVERRIDES: dict[str, str] = {
     "engagebay-vs-keap-which-is-better-in-2026":             "EngageBay vs Keap (2026): Which SMB CRM Wins? Free Plan vs $249/mo — Honest Verdict",
     # Revenue-hunter 2026-08-12 — reverse-direction page for active NordVPN earner
     "expressvpn-vs-nordvpn-which-is-better-in-2026": "ExpressVPN vs NordVPN 2026: $8.32/mo vs $3.39/mo — Which VPN Actually Wins?",
+    # Revenue-hunter 2026-08-16 — new page: Surfshark (active earner) vs ProtonVPN (CJ earner)
+    "surfshark-vs-protonvpn-which-is-better-in-2026": "Surfshark vs ProtonVPN 2026: $2.19/mo vs $3.99/mo — Best Value vs Best Privacy [Verdict]",
 }
 DESC_OVERRIDES: dict[str, str] = {
     "surfer-seo-vs-se-ranking-which-is-better-in-2026": "SE Ranking wins (8.9/10 vs Surfer SEO's 8.8/10) and costs $55/mo vs $89/mo — 38% cheaper with a 14-day free trial. Full feature comparison, August 2026.",
@@ -196,6 +198,8 @@ DESC_OVERRIDES: dict[str, str] = {
     "engagebay-vs-keap-which-is-better-in-2026": "EngageBay wins for budget SMBs: free plan up to 250 contacts, lower per-seat cost, all-in-one CRM + email + support. Keap wins for teams needing advanced automation workflows (formerly Infusionsoft). Score-based verdict, August 2026.",
     # Revenue-hunter 2026-08-12
     "expressvpn-vs-nordvpn-which-is-better-in-2026": "NordVPN wins (9.2/10 vs ExpressVPN 9.0/10) at $3.39/mo — 2.5x cheaper than ExpressVPN's $8.32/mo with more servers (6,400+ vs 3,000+). ExpressVPN wins on Lightway protocol speed. Score-based verdict, August 2026.",
+    # Revenue-hunter 2026-08-16
+    "surfshark-vs-protonvpn-which-is-better-in-2026": "Surfshark wins (9.1/10 vs ProtonVPN 8.9/10) for pure value: $2.19/mo with unlimited devices. ProtonVPN wins for privacy: Swiss-based, open-source, free plan. Score-based verdict, August 2026.",
 }
 
 
