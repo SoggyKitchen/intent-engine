@@ -7,9 +7,9 @@
       "date": "2026-08-15",
       "session": "sunday-maximizer",
       "built": [
-        "elevenlabs-vs-synthesia-which-is-better-in-2026.html — NEW PAGE. ElevenLabs (9.1/10) vs Synthesia (8.6/10). EL wins for voice/audio/TTS/cloning, Synthesia wins for avatar video generation. /go/elevenlabs affiliate, FAQPage schema, decision table.",
-        "elevenlabs-vs-heygen-which-is-better-in-2026.html — NEW PAGE. ElevenLabs (9.1/10) vs HeyGen (8.4/10). EL wins voice quality/cloning, HeyGen wins video with custom avatars/lip-sync. SVG workflow diagram showing EL+HeyGen integration.",
-        "shopify-vs-webflow-which-is-better-in-2026.html — NEW PAGE. Shopify (9.3/10) vs Webflow (8.0/10). Shopify wins ecommerce, Webflow wins design/CMS-first sites. /go/shopify affiliate, FAQPage schema."
+        "elevenlabs-vs-synthesia-which-is-better-in-2026.html \u2014 NEW PAGE. ElevenLabs (9.1/10) vs Synthesia (8.6/10). EL wins for voice/audio/TTS/cloning, Synthesia wins for avatar video generation. /go/elevenlabs affiliate, FAQPage schema, decision table.",
+        "elevenlabs-vs-heygen-which-is-better-in-2026.html \u2014 NEW PAGE. ElevenLabs (9.1/10) vs HeyGen (8.4/10). EL wins voice quality/cloning, HeyGen wins video with custom avatars/lip-sync. SVG workflow diagram showing EL+HeyGen integration.",
+        "shopify-vs-webflow-which-is-better-in-2026.html \u2014 NEW PAGE. Shopify (9.3/10) vs Webflow (8.0/10). Shopify wins ecommerce, Webflow wins design/CMS-first sites. /go/shopify affiliate, FAQPage schema."
       ],
       "internal_links_added": [
         "elevenlabs-review page now links to VS Synthesia and VS HeyGen pages",
@@ -18,21 +18,21 @@
         "shopify-pricing page now links to VS Webflow page"
       ],
       "fixes": [
-        "best-devtools-for-secure-code-review-in-2025: fixed malformed nested script JSON-LD tags — test_every_jsonld_block_parses was failing"
+        "best-devtools-for-secure-code-review-in-2025: fixed malformed nested script JSON-LD tags \u2014 test_every_jsonld_block_parses was failing"
       ],
       "design_audit": "10 random pages checked: no sp-bg on body (ok), nav id=sp-nav (ok), saaspare-ui.css (ok). Dark bg via CSS var(--bg-deep):#050407 on all pages.",
       "tests": "93/93 passed",
       "sitemap": "1541 URLs after 3 new pages",
       "learnings": [
-        "ElevenLabs vs Synthesia and ElevenLabs vs HeyGen were missing pages — both in hot AI content creation space, ElevenLabs earns actively via /go/elevenlabs.",
-        "Shopify vs Webflow was missing — Shopify earns via /go/shopify, Webflow is major ecomm alternative.",
-        "JSON-LD fix: best-devtools-for-secure-code-review page had nested <script> tags — outer tag had '[' content which is invalid JSON; fixed by wrapping the whole array properly.",
-        "Schema/indexability is 7.69/10 due to 237 pages missing FAQPage — high-value active-earner pages all have it, gap is in older generated content."
+        "ElevenLabs vs Synthesia and ElevenLabs vs HeyGen were missing pages \u2014 both in hot AI content creation space, ElevenLabs earns actively via /go/elevenlabs.",
+        "Shopify vs Webflow was missing \u2014 Shopify earns via /go/shopify, Webflow is major ecomm alternative.",
+        "JSON-LD fix: best-devtools-for-secure-code-review page had nested <script> tags \u2014 outer tag had '[' content which is invalid JSON; fixed by wrapping the whole array properly.",
+        "Schema/indexability is 7.69/10 due to 237 pages missing FAQPage \u2014 high-value active-earner pages all have it, gap is in older generated content."
       ],
       "owner_actions_needed": [
-        "HubSpot Impact.com: URGENT — 44 pages live, $400/conv, still PENDING. Check app.impact.com.",
-        "Pipedrive PartnerStack TOS: URGENT — accept at PartnerStack dashboard (partnerships@saaspare.org) to unlock commissions.",
-        "FreshBooks Awin: PENDING — 24 pages, $200/conv. Check Awin dashboard for approval.",
+        "HubSpot Impact.com: URGENT \u2014 44 pages live, $400/conv, still PENDING. Check app.impact.com.",
+        "Pipedrive PartnerStack TOS: URGENT \u2014 accept at PartnerStack dashboard (partnerships@saaspare.org) to unlock commissions.",
+        "FreshBooks Awin: PENDING \u2014 24 pages, $200/conv. Check Awin dashboard for approval.",
         "Warden9 Awin invitation (2026-08-13): review at ui.awin.com."
       ]
     },
@@ -40,35 +40,35 @@
       "date": "2026-08-15",
       "session": "ceo-daily",
       "gmail_checked": [
-        "from:awin — Warden9 invitation (2026-08-13, UNREAD) — owner to review at ui.awin.com if relevant",
-        "from:impact — no new HubSpot/1Password activations",
-        "partnerstack — Pipedrive affiliate TOS email (2026-08-14): owner must accept TOS at PartnerStack dashboard (partnerships@saaspare.org)",
-        "affiliate approved — no new program approvals",
-        "from:xero/wix/brevo/hotjar/constantcontact — no emails"
+        "from:awin \u2014 Warden9 invitation (2026-08-13, UNREAD) \u2014 owner to review at ui.awin.com if relevant",
+        "from:impact \u2014 no new HubSpot/1Password activations",
+        "partnerstack \u2014 Pipedrive affiliate TOS email (2026-08-14): owner must accept TOS at PartnerStack dashboard (partnerships@saaspare.org)",
+        "affiliate approved \u2014 no new program approvals",
+        "from:xero/wix/brevo/hotjar/constantcontact \u2014 no emails"
       ],
       "ctr_fixes": [
-        "mixpanel-pricing (742 impr, pos 13.7, 0.0% CTR): removed '(Verified August)' — new title surfaces Free (20M Events/mo) to $28/mo tier data",
-        "ramp-pricing (1687 impr, pos 10.2, 0.6% CTR): removed '[August Update]' — now 'Full Change Tracker' (anti-pattern was persisting through nightly CI regeneration)",
-        "aws-vs-supabase (286 impr, pos 10.1, 0.0% CTR): removed '[August Update]' — title now '[Compared]'",
-        "twingate-vs-tailscale (168 impr, pos 13.8, 0.0% CTR): removed '[August]' — title now '[Compared]'"
+        "mixpanel-pricing (742 impr, pos 13.7, 0.0% CTR): removed '(Verified August)' \u2014 new title surfaces Free (20M Events/mo) to $28/mo tier data",
+        "ramp-pricing (1687 impr, pos 10.2, 0.6% CTR): removed '[August Update]' \u2014 now 'Full Change Tracker' (anti-pattern was persisting through nightly CI regeneration)",
+        "aws-vs-supabase (286 impr, pos 10.1, 0.0% CTR): removed '[August Update]' \u2014 title now '[Compared]'",
+        "twingate-vs-tailscale (168 impr, pos 13.8, 0.0% CTR): removed '[August]' \u2014 title now '[Compared]'"
       ],
       "built": [
-        "nordvpn-vs-windscribe-which-is-better-in-2026.html — NEW PAGE. NordVPN active earner (/go/nordvpn). Windscribe is a popular budget VPN alternative not in our coverage. Full comparison: pricing table, 8-row decision guide, 6 FAQ items with schema, sticky CTA. NordVPN wins 9.2/10; Windscribe wins for free plan (10GB/mo) and Build-a-Plan."
+        "nordvpn-vs-windscribe-which-is-better-in-2026.html \u2014 NEW PAGE. NordVPN active earner (/go/nordvpn). Windscribe is a popular budget VPN alternative not in our coverage. Full comparison: pricing table, 8-row decision guide, 6 FAQ items with schema, sticky CTA. NordVPN wins 9.2/10; Windscribe wins for free plan (10GB/mo) and Build-a-Plan."
       ],
-      "activated": "none — all pending programs require manual owner action",
-      "leaks_fixed": "0 — no actual outbound affiliate href leaks found; earlier grep was matching favicon img src URLs, not real links",
+      "activated": "none \u2014 all pending programs require manual owner action",
+      "leaks_fixed": "0 \u2014 no actual outbound affiliate href leaks found; earlier grep was matching favicon img src URLs, not real links",
       "tests": "93/93 passed",
       "learnings": [
         "MONTH TAG PERSISTENCE: ramp-pricing '[August Update]' was still in title even after being 'fixed' in 2026-08-13 session. The nightly CI regeneration is re-inserting month tags from generator data. Need to fix the generator source, not just the HTML.",
         "REVENUE LEAK GREP: grep for 'hubspot.com' etc. in pages matches favicon img src URLs (Google favicon API), not actual outbound href links. No real untracked outbound links found.",
-        "GSC DATA INSIGHT: Semrush-vs-Moz queries have 278+ impressions but our pages rank at position 67-73 — highly competitive, not a quick win. Focus on climb-zone (pos 4-20) pages instead.",
+        "GSC DATA INSIGHT: Semrush-vs-Moz queries have 278+ impressions but our pages rank at position 67-73 \u2014 highly competitive, not a quick win. Focus on climb-zone (pos 4-20) pages instead.",
         "WINDSCRIBE GAP CONFIRMED: nordvpn-vs-windscribe was missing. Windscribe is among the most-searched budget VPN alternatives. NordVPN earns actively. Built."
       ],
       "owner_actions_needed": [
         "Warden9 Awin invitation (2026-08-13): review and accept/decline at ui.awin.com.",
-        "Pipedrive PartnerStack TOS (email 2026-08-14): URGENT — accept at PartnerStack dashboard (partnerships@saaspare.org). This unlocks Pipedrive affiliate commissions.",
-        "Impact.com HubSpot/1Password: still pending — check app.impact.com for status updates.",
-        "Iternal Technologies (CJ): login app.cj.com → Links → get real CJ deep link IDs → update /go/iternal in _redirects."
+        "Pipedrive PartnerStack TOS (email 2026-08-14): URGENT \u2014 accept at PartnerStack dashboard (partnerships@saaspare.org). This unlocks Pipedrive affiliate commissions.",
+        "Impact.com HubSpot/1Password: still pending \u2014 check app.impact.com for status updates.",
+        "Iternal Technologies (CJ): login app.cj.com \u2192 Links \u2192 get real CJ deep link IDs \u2192 update /go/iternal in _redirects."
       ]
     },
     {
@@ -1057,6 +1057,25 @@
       ],
       "tests": "93/93 passed",
       "commit": "dbb57eb7"
+    },
+    {
+      "date": "2026-08-16",
+      "type": "ceo-daily",
+      "actions": [
+        "GMAIL: No new affiliate approvals. EngageBay (Awin 127075) already activated in prior sessions. Pipedrive affiliate TOS approval email 2026-08-14 \u2014 owner needs to accept Pipedrive TOS to unlock tracking. Wix still pending reapply. No PartnerStack/HubSpot/1Password approvals.",
+        "REVENUE LEAKS: All false positives \u2014 all CTAs use /go/ routes with CJ tracking. No untracked outbound hrefs.",
+        "CTR FIXES: Top GSC pages already fixed in prior sessions (Aug 14-15). GSC data lags ~3 days.",
+        "NEW PAGE: surfshark-vs-ipvanish-which-is-better-in-2026.html \u2014 Surfshark wins 9.1/10 vs IPVanish 8.0/10. FAQPage schema (5 Q), sticky CTA, /go/surfshark CJ tracking. Fills Surfshark comparison gap.",
+        "SURFSHARK GAPS REMAINING: surfshark-vs-mullvad, surfshark-vs-windscribe, surfshark-vs-hotspot-shield."
+      ],
+      "gmail_findings": {
+        "awin": "No affiliate approvals. Warden9/brickzonehub/Fresent LLC partnership invites (not relevant SaaS). Fiverr check-in.",
+        "impact": "No HubSpot/1Password approvals. Contract change notifications only.",
+        "partnerstack": "No new approvals.",
+        "pipedrive": "TOS approval email 2026-08-14 \u2014 OWNER ACTION NEEDED: accept Pipedrive TOS at their affiliate portal to get tracking link.",
+        "xero_brevo_hotjar": "No approvals."
+      },
+      "new_page": "surfshark-vs-ipvanish-which-is-better-in-2026"
     }
   ],
   "entries": [
