@@ -82,16 +82,17 @@
 - `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown` (free_trial, score 84.85): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ai-tools-pricing-changes-2026` (pricing, score 85.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown` (free_trial, score 85.91): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/linear-pricing-history-2026` (pricing, score 86.07): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/saas-pricing-calculator-2026` (pricing, score 86.12): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/stripe-pricing-history-2026` (pricing, score 86.59): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/salesforce-pricing-history-2026` (pricing, score 86.91): CTA=True, affiliateLinks=2, disclosure=True
+- `/pages/linear-pricing-history-2026` (pricing, score 86.33): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/stripe-pricing-history-2026` (pricing, score 86.85): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/salesforce-pricing-history-2026` (pricing, score 86.92): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/does-engagebay-have-a-free-plan-2026-full-breakdown` (free_trial, score 88.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/best-seo-tools-2026` (pricing, score 89.0): CTA=True, affiliateLinks=5, disclosure=True
 - `/best-vpn-for-business-2026` (pricing, score 89.0): CTA=True, affiliateLinks=5, disclosure=True
 - `/pages/educative-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 89.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 89.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/best-vpn-for-small-business-2026` (pricing, score 90.5): CTA=True, affiliateLinks=4, disclosure=True
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 90.81): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-elevenlabs-have-a-free-plan-2026-full-breakdown` (free_trial, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-getresponse-have-a-free-plan-2026-full-breakdown` (free_trial, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-protonmail-have-a-free-plan-2026-full-breakdown` (free_trial, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
@@ -99,4 +100,3 @@
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.64): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/linear-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 91.73): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.81): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.99): CTA=True, affiliateLinks=1, disclosure=True

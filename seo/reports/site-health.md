@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-08-15T04:34:40+00:00
-Mode: `apply-safe`
+Generated: 2026-08-16T03:58:47+00:00
+Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.25/100**
+- Overall SaaSpare Health Score: **94.2/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.57/20
+- Technical SEO: 19.56/20
 - Content usefulness: 19.34/20
-- Trust/E-E-A-T: 18.81/20
-- Internal linking: 14.89/15
+- Trust/E-E-A-T: 18.78/20
+- Internal linking: 14.88/15
 - Schema/indexability: 7.69/10
 - Conversion/revenue: 8.96/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1558
+- Pages scanned: 1562
 - Healthy pages (85+): 1506
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 86
+- Safe fixes applied this run: 0
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -43,7 +43,11 @@ Mode: `apply-safe`
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f` (41.02/100): no_h1
 - `/fo-verify` (45.06/100): no_h1
 - `/shortlist` (62.87/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page, title_length_outside_target
+- `/pages/elevenlabs-vs-synthesia-which-is-better-in-2026` (73.45/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/shopify-vs-webflow-which-is-better-in-2026` (73.45/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_trustbox, title_length_outside_target
 - `/contact` (64.76/100): title_length_outside_target
+- `/pages/elevenlabs-vs-heygen-which-is-better-in-2026` (75.45/100): broken_internal_link, missing_correction_cta, missing_last_verified, missing_methodology, missing_trustbox
+- `/pages/nordvpn-vs-windscribe-which-is-better-in-2026` (76.85/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/deal-radar` (68.39/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/newsletter` (71.25/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
@@ -54,17 +58,13 @@ Mode: `apply-safe`
 - `/pages/best-encrypted-cloud-storage-2026-business` (75.81/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.92/100): meta_length_outside_target
 - `/cookie-policy` (75.98/100): meta_length_outside_target
-- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.29/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (86.91/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (86.33/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (86.85/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (86.92/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/request-a-comparison` (79.34/100): title_length_outside_target
 - `/privacy` (79.64/100): meta_length_outside_target
-- `/pages/how-saaspare-ranks-tools` (80.56/100): title_length_outside_target
-- `/pages/saas-glossary` (81.0/100): title_length_outside_target
-- `/pages/v3-preview-404` (81.38/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-contact` (82.98/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.39): CTA=True, affiliateLinks=5, disclosure=True

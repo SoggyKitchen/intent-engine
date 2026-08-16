@@ -3692,6 +3692,7 @@
       "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -3709,10 +3710,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.07,
+      "internalLinking": 15,
+      "overall": 92.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -3726,7 +3727,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -12494,6 +12495,7 @@
       "/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -12511,10 +12513,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.89,
+      "content": 19.9,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.64,
+      "internalLinking": 15,
+      "overall": 92.9,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -12528,7 +12530,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 778
+    "word_count": 780
   },
   {
     "affiliate_links": [
@@ -15803,6 +15805,7 @@
       "/pages/asana-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -15822,8 +15825,8 @@
     "score": {
       "content": 19.8,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.55,
+      "internalLinking": 15,
+      "overall": 92.81,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -15837,7 +15840,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 759
+    "word_count": 761
   },
   {
     "affiliate_links": [
@@ -18060,8 +18063,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Updated August 2026. AWS wins at scale (9.0/10), Supabase wins on speed (8.8/10). Real pricing: AWS free tier \u2192 $0.023/GB/mo, Supabase free \u2192 $25/mo Pro. The one\u2026",
-    "meta_length": 162,
+    "meta_description": "AWS wins at scale (9.0/10), Supabase wins on developer speed (8.8/10). Real pricing: AWS free tier \u2192 $0.023/GB/mo, Supabase free \u2192 $25/mo Pro. Which one to pick for your stack.",
+    "meta_length": 176,
     "page_type": "comparison",
     "path": "/pages/aws-vs-supabase-which-is-better-in-2026",
     "robots": "index, follow",
@@ -18074,23 +18077,24 @@
       "Question"
     ],
     "score": {
-      "content": 19.38,
+      "content": 19.37,
       "conversionRevenue": 8,
       "internalLinking": 15,
-      "overall": 94.38,
+      "overall": 93.37,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 19,
+      "technical": 18,
       "trust": 20.0
     },
-    "title": "AWS vs Supabase 2026: Which Backend Wins for Your Stack? Full Comparison [August Update]",
-    "title_length": 88,
+    "title": "AWS vs Supabase 2026: Which Backend Actually Wins? Honest Verdict [Compared]",
+    "title_length": 76,
     "url": "https://saaspare.org/pages/aws-vs-supabase-which-is-better-in-2026",
     "warnings": [
+      "meta_length_outside_target",
       "thin_buyer_page",
       "title_length_outside_target"
     ],
-    "word_count": 676
+    "word_count": 673
   },
   {
     "affiliate_links": [],
@@ -47949,6 +47953,7 @@
       "/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/clickup-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -47966,10 +47971,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.94,
+      "content": 19.95,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.69,
+      "internalLinking": 15,
+      "overall": 92.94,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -47983,7 +47988,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 787
+    "word_count": 789
   },
   {
     "affiliate_links": [
@@ -56409,6 +56414,7 @@
       "/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -56426,10 +56432,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.07,
+      "internalLinking": 15,
+      "overall": 92.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -56443,7 +56449,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -65539,17 +65545,17 @@
       "/pages/?q=crm",
       "/pages/?q=seo",
       "/pages/?q=vpn",
-      "/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/best-ai-voice-generator-2026",
       "/pages/best-elevenlabs-alternatives-in-2026-free-paid",
       "/pages/best-password-manager-2026",
       "/pages/best-vpn-for-streaming-2026",
+      "/pages/elevenlabs-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/elevenlabs-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
+      "/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
       "/pages/elevenlabs-vs-speechify-which-is-better-in-2026",
-      "/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
       "/pages/saas-pricing-changes",
-      "/pages/state-of-saas-pricing-2026",
       "/privacy",
       "/shortlist",
       "/terms"
@@ -65585,7 +65591,7 @@
     "warnings": [
       "title_length_outside_target"
     ],
-    "word_count": 1276
+    "word_count": 1278
   },
   {
     "affiliate_links": [
@@ -65724,11 +65730,11 @@
       "/newsletter",
       "/pages/",
       "/pages/does-elevenlabs-have-a-free-plan-2026-full-breakdown",
-      "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
       "/pages/elevenlabs-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-resemble-ai-which-is-better-in-2026",
-      "/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/shopify-vs-gumroad-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
       "/privacy",
       "/shortlist",
       "/terms"
@@ -65749,10 +65755,10 @@
       "SoftwareApplication"
     ],
     "score": {
-      "content": 19.24,
+      "content": 19.25,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.74,
+      "overall": 94.75,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -65765,7 +65771,7 @@
       "missing_correction_cta",
       "thin_buyer_page"
     ],
-    "word_count": 648
+    "word_count": 649
   },
   {
     "affiliate_links": [
@@ -65856,6 +65862,97 @@
       "thin_buyer_page"
     ],
     "word_count": 690
+  },
+  {
+    "affiliate_links": [
+      "/go/elevenlabs"
+    ],
+    "broken_internal_links": [
+      "/pages/affiliate-disclosure.html",
+      "/pages/privacy-policy.html"
+    ],
+    "canonical": "https://saaspare.org/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
+    "external_links": [
+      "https://heygen.com"
+    ],
+    "file": "site/pages/elevenlabs-vs-heygen-which-is-better-in-2026.html",
+    "h1": [
+      "ElevenLabs vs HeyGen (2026): Voice AI or Video AI \u2014 Which Do You Actually Need?"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Tool Overviews",
+      "How ElevenLabs and HeyGen Work Together",
+      "Pricing in Detail",
+      "Decision Guide: Who Should Choose Which",
+      "Frequently Asked Questions"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": false,
+    "has_methodology": false,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": false,
+    "images": 5,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/authors/kaylan-von-papen",
+      "/go/elevenlabs",
+      "/pages/",
+      "/pages/affiliate-disclosure.html",
+      "/pages/elevenlabs-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
+      "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026.html",
+      "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026.html",
+      "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026.html",
+      "/pages/privacy-policy.html"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 2,
+    "meta_description": "ElevenLabs (9.1/10) leads on voice cloning, TTS quality, and audio API. HeyGen (8.4/10) leads on AI avatar video and lip-sync translation. Most teams use both \u2014 here",
+    "meta_length": 165,
+    "page_type": "comparison",
+    "path": "/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "FAQPage",
+      "Organization",
+      "Person",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 8,
+      "internalLinking": 9.95,
+      "overall": 75.45,
+      "performanceUx": 5,
+      "schemaIndexability": 8,
+      "technical": 17,
+      "trust": 7.5
+    },
+    "title": "ElevenLabs vs HeyGen 2026: Voice AI or Video AI \u2014 Which Wins?",
+    "title_length": 61,
+    "url": "https://saaspare.org/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
+    "warnings": [
+      "missing_correction_cta",
+      "missing_last_verified",
+      "missing_methodology",
+      "missing_trustbox"
+    ],
+    "word_count": 1805
   },
   {
     "affiliate_links": [
@@ -66306,6 +66403,100 @@
       "thin_buyer_page"
     ],
     "word_count": 703
+  },
+  {
+    "affiliate_links": [
+      "/go/elevenlabs"
+    ],
+    "broken_internal_links": [
+      "/pages/affiliate-disclosure.html",
+      "/pages/privacy-policy.html"
+    ],
+    "canonical": "https://saaspare.org/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
+    "external_links": [
+      "https://www.synthesia.io"
+    ],
+    "file": "site/pages/elevenlabs-vs-synthesia-which-is-better-in-2026.html",
+    "h1": [
+      "ElevenLabs vs Synthesia (2026): Which AI Tool Actually Wins?"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Tool Overviews",
+      "Pricing in Detail",
+      "Where They Overlap (and When to Use Both)",
+      "Dubbing Existing Video vs Creating New Video",
+      "Decision Guide: Who Should Pick Which",
+      "Frequently Asked Questions"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": false,
+    "has_methodology": false,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": false,
+    "images": 5,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/authors/kaylan-von-papen",
+      "/go/elevenlabs",
+      "/pages/",
+      "/pages/affiliate-disclosure.html",
+      "/pages/elevenlabs-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
+      "/pages/elevenlabs-vs-descript-which-is-better-in-2026.html",
+      "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026.html",
+      "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026.html",
+      "/pages/privacy-policy.html"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 2,
+    "meta_description": "ElevenLabs wins for voice/audio (9.1/10) \u2014 better voice cloning, dubbing, and audio-only workflows. Synthesia wins for AI talking-head video (8.6/10) \u2014 160+ avatars, no camera needed. Side-by-side verdict.",
+    "meta_length": 205,
+    "page_type": "comparison",
+    "path": "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "FAQPage",
+      "Organization",
+      "Person",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 8,
+      "internalLinking": 9.95,
+      "overall": 73.45,
+      "performanceUx": 5,
+      "schemaIndexability": 8,
+      "technical": 15,
+      "trust": 7.5
+    },
+    "title": "ElevenLabs vs Synthesia 2026: Honest Verdict \u2014 Voice Quality, Video Avatars & Pricing Compared",
+    "title_length": 94,
+    "url": "https://saaspare.org/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
+    "warnings": [
+      "meta_length_outside_target",
+      "missing_correction_cta",
+      "missing_last_verified",
+      "missing_methodology",
+      "missing_trustbox",
+      "title_length_outside_target"
+    ],
+    "word_count": 1931
   },
   {
     "affiliate_links": [
@@ -80551,6 +80742,7 @@
       "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -80568,10 +80760,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.97,
+      "content": 19.98,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.72,
+      "internalLinking": 15,
+      "overall": 92.98,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -80585,7 +80777,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 794
+    "word_count": 796
   },
   {
     "affiliate_links": [
@@ -90661,6 +90853,7 @@
       "/pages/linear-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -90680,10 +90873,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 11.75,
-      "overall": 86.07,
+      "internalLinking": 12,
+      "overall": 86.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 17,
@@ -90697,7 +90890,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -95736,8 +95929,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated August 2026. Mixpanel pricing August 2026: Free (20M events/month, 90-day retention), Growth from $28/mo billed annually. We compare all plans, true\u2026",
-    "meta_length": 157,
+    "meta_description": "Mixpanel has 3 plans: Free (20M events/mo, 90-day retention), Growth from $28/mo billed annually, Enterprise custom. Hidden cost when you hit limits + full plan comparison.",
+    "meta_length": 172,
     "page_type": "pricing",
     "path": "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -95750,24 +95943,26 @@
       "SoftwareApplication"
     ],
     "score": {
-      "content": 19.78,
+      "content": 19.8,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 92.78,
+      "overall": 90.81,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
+      "technical": 18,
       "trust": 15.0
     },
-    "title": "Mixpanel Pricing 2026 (Verified August) \u2014 Real Costs + Hidden Fees",
-    "title_length": 66,
+    "title": "Mixpanel Pricing 2026: Free (20M Events/mo) to $28/mo Growth \u2014 Every Plan Compared",
+    "title_length": 82,
     "url": "https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
-      "thin_buyer_page"
+      "thin_buyer_page",
+      "title_length_outside_target"
     ],
-    "word_count": 756
+    "word_count": 761
   },
   {
     "affiliate_links": [
@@ -96886,6 +97081,7 @@
       "/pages/monday-com-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/monday-com-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -96905,8 +97101,8 @@
     "score": {
       "content": 20,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.75,
+      "internalLinking": 15,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -96919,7 +97115,7 @@
       "missing_correction_cta",
       "missing_methodology"
     ],
-    "word_count": 814
+    "word_count": 816
   },
   {
     "affiliate_links": [
@@ -104012,6 +104208,100 @@
   },
   {
     "affiliate_links": [
+      "/go/nordvpn"
+    ],
+    "broken_internal_links": [
+      "/pages/affiliate-disclosure.html",
+      "/pages/privacy-policy.html",
+      "/pages/saaspare-vpn-comparison-2026.html"
+    ],
+    "canonical": "https://saaspare.org/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
+    "external_links": [],
+    "file": "site/pages/nordvpn-vs-windscribe-which-is-better-in-2026.html",
+    "h1": [
+      "NordVPN vs Windscribe (2026): Which VPN Actually Wins?"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Tool Overviews",
+      "Pricing in Detail",
+      "Privacy & Jurisdiction",
+      "Streaming Performance",
+      "Decision Guide: Who Should Pick Which",
+      "Frequently Asked Questions"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": true,
+    "has_methodology": false,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": false,
+    "images": 5,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/authors/kaylan-von-papen",
+      "/go/nordvpn",
+      "/pages/",
+      "/pages/affiliate-disclosure.html",
+      "/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict.html",
+      "/pages/nordvpn-vs-expressvpn-which-is-better-in-2026.html",
+      "/pages/nordvpn-vs-mullvad-which-is-better-in-2026.html",
+      "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026.html",
+      "/pages/nordvpn-vs-surfshark-which-is-better-in-2026.html",
+      "/pages/privacy-policy.html",
+      "/pages/protonvpn-vs-windscribe-which-is-better-in-2026.html",
+      "/pages/saaspare-vpn-comparison-2026.html"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 2,
+    "meta_description": "NordVPN wins overall (9.2/10) \u2014 faster, more servers, Panama jurisdiction. Windscribe wins if you want a free tier (10GB/mo) or a custom $1/location plan. Side-by-side verdict.",
+    "meta_length": 176,
+    "page_type": "comparison",
+    "path": "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "FAQPage",
+      "Organization",
+      "Person",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 8,
+      "internalLinking": 10.85,
+      "overall": 76.85,
+      "performanceUx": 5,
+      "schemaIndexability": 8,
+      "technical": 15,
+      "trust": 10.0
+    },
+    "title": "NordVPN vs Windscribe 2026: Honest Verdict \u2014 Speed, Privacy & Free Plan Compared",
+    "title_length": 80,
+    "url": "https://saaspare.org/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
+    "warnings": [
+      "meta_length_outside_target",
+      "missing_correction_cta",
+      "missing_methodology",
+      "missing_trustbox",
+      "title_length_outside_target"
+    ],
+    "word_count": 1424
+  },
+  {
+    "affiliate_links": [
       "/go/notion"
     ],
     "broken_internal_links": [],
@@ -104331,6 +104621,7 @@
       "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/notion-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -104348,10 +104639,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.82,
+      "content": 19.83,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.57,
+      "internalLinking": 15,
+      "overall": 92.83,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -104365,7 +104656,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 764
+    "word_count": 766
   },
   {
     "affiliate_links": [
@@ -111233,6 +111524,7 @@
       "/pages/pipedrive-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -111250,10 +111542,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.07,
+      "internalLinking": 15,
+      "overall": 92.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -111267,7 +111559,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -115312,8 +115604,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated August 2026. Ramp pricing August 2026: Core card = $0 forever. Plus = $12/user/mo (annual) or $15/user/mo (monthly). Bill Pay fee tiers introduced June\u2026",
-    "meta_length": 160,
+    "meta_description": "Ramp Core card = $0 forever. Plus = $12/user/mo (annual) or $15/user/mo (monthly). Bill Pay fee tiers introduced June 2026. Every pricing change tracked with dates.",
+    "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -115335,15 +115627,15 @@
       "technical": 19,
       "trust": 15.0
     },
-    "title": "Ramp Pricing 2026 [August Update]: Free Card Forever + Plus $12\u201315/User \u2014 Every Change Tracked",
-    "title_length": 94,
+    "title": "Ramp Pricing 2026: Free Card Forever + Plus $12\u201315/User \u2014 Full Change Tracker",
+    "title_length": 77,
     "url": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
       "missing_correction_cta",
       "missing_methodology",
       "title_length_outside_target"
     ],
-    "word_count": 1095
+    "word_count": 1093
   },
   {
     "affiliate_links": [
@@ -120425,6 +120717,7 @@
       "/pages/",
       "/pages/saas-buyer-signals-2026",
       "/pages/saas-pricing-changes",
+      "/roi",
       "/shortlist"
     ],
     "issues": [],
@@ -120441,8 +120734,8 @@
     "score": {
       "content": 17,
       "conversionRevenue": 8,
-      "internalLinking": 8.6,
-      "overall": 74.6,
+      "internalLinking": 9.05,
+      "overall": 75.05,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 20,
@@ -120452,7 +120745,7 @@
     "title_length": 67,
     "url": "https://saaspare.org/pages/saas-buyer-signals-2026",
     "warnings": [],
-    "word_count": 1182
+    "word_count": 1184
   },
   {
     "affiliate_links": [],
@@ -120810,6 +121103,7 @@
       "/pages/shopify-pricing-history-2026",
       "/pages/stripe-pricing-history-2026",
       "/pages/tresorit-pricing-history-2026",
+      "/roi",
       "/shortlist"
     ],
     "issues": [],
@@ -120824,10 +121118,10 @@
       "Organization"
     ],
     "score": {
-      "content": 14.99,
+      "content": 15.0,
       "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 75.99,
+      "overall": 76.0,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 20,
@@ -120837,7 +121131,7 @@
     "title_length": 59,
     "url": "https://saaspare.org/pages/saas-pricing-changes",
     "warnings": [],
-    "word_count": 398
+    "word_count": 400
   },
   {
     "affiliate_links": [
@@ -121655,6 +121949,7 @@
       "/pages/salesforce-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/salesforce-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -121674,10 +121969,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.91,
+      "content": 19.92,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 86.91,
+      "overall": 86.92,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 17,
@@ -121691,7 +121986,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 782
+    "word_count": 784
   },
   {
     "affiliate_links": [
@@ -124056,6 +124351,7 @@
       "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -124073,10 +124369,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.85,
+      "content": 19.86,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.6,
+      "internalLinking": 15,
+      "overall": 92.86,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -124090,7 +124386,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 770
+    "word_count": 772
   },
   {
     "affiliate_links": [
@@ -126206,17 +126502,16 @@
       "/go/shopify",
       "/newsletter",
       "/pages/",
+      "/pages/7-best-shopify-alternatives-in-2026-free-paid",
       "/pages/best-shopify-alternatives-in-2026-free-paid",
       "/pages/bigcommerce-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026",
-      "/pages/paddle-vs-bold-commerce-which-is-better-in-2026",
-      "/pages/paddle-vs-recharge-which-is-better-in-2026",
       "/pages/shopify-pricing-history-2026",
-      "/pages/shopify-vs-bold-commerce-which-is-better-in-2026",
-      "/pages/shopify-vs-recharge-which-is-better-in-2026",
+      "/pages/shopify-vs-bigcommerce-which-is-better-in-2026",
       "/pages/shopify-vs-squarespace-which-is-better-in-2026",
+      "/pages/shopify-vs-webflow-which-is-better-in-2026",
       "/pages/shopify-vs-wix-which-is-better-in-2026",
-      "/pages/woocommerce-vs-recharge-which-is-better-in-2026",
+      "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
       "/privacy",
       "/shortlist",
       "/terms"
@@ -126253,7 +126548,7 @@
       "missing_correction_cta",
       "missing_methodology"
     ],
-    "word_count": 974
+    "word_count": 969
   },
   {
     "affiliate_links": [
@@ -126303,6 +126598,7 @@
       "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/shopify-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -126320,10 +126616,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.87,
+      "content": 19.88,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.62,
+      "internalLinking": 15,
+      "overall": 92.88,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -126337,7 +126633,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 773
+    "word_count": 775
   },
   {
     "affiliate_links": [
@@ -126477,10 +126773,10 @@
       "/newsletter",
       "/pages/",
       "/pages/7-best-shopify-alternatives-in-2026-free-paid",
-      "/pages/gumroad-vs-recharge-which-is-better-in-2026",
-      "/pages/gumroad-vs-recurly-which-is-better-in-2026",
-      "/pages/recurly-vs-recharge-which-is-better-in-2026",
       "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/shopify-vs-bigcommerce-which-is-better-in-2026",
+      "/pages/shopify-vs-webflow-which-is-better-in-2026",
+      "/pages/shopify-vs-wix-which-is-better-in-2026",
       "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
       "/privacy",
       "/shortlist",
@@ -127511,6 +127807,100 @@
       "thin_buyer_page"
     ],
     "word_count": 657
+  },
+  {
+    "affiliate_links": [
+      "/go/shopify"
+    ],
+    "broken_internal_links": [
+      "/pages/affiliate-disclosure.html",
+      "/pages/privacy-policy.html"
+    ],
+    "canonical": "https://saaspare.org/pages/shopify-vs-webflow-which-is-better-in-2026",
+    "external_links": [
+      "https://webflow.com"
+    ],
+    "file": "site/pages/shopify-vs-webflow-which-is-better-in-2026.html",
+    "h1": [
+      "Shopify vs Webflow (2026): Which Platform Actually Wins?"
+    ],
+    "h2": [
+      "Quick Comparison",
+      "Tool Overviews",
+      "Pricing in Detail",
+      "Design Control & CMS",
+      "Ecommerce Capability",
+      "Decision Guide: Who Should Pick Which",
+      "Frequently Asked Questions"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": false,
+    "has_cta": true,
+    "has_email_capture": false,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": false,
+    "has_methodology": false,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": false,
+    "images": 5,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/authors/kaylan-von-papen",
+      "/go/shopify",
+      "/pages/",
+      "/pages/affiliate-disclosure.html",
+      "/pages/privacy-policy.html",
+      "/pages/shopify-review-2026-is-it-worth-it-honest-verdict.html",
+      "/pages/shopify-vs-bigcommerce-which-is-better-in-2026.html",
+      "/pages/shopify-vs-squarespace-which-is-better-in-2026.html",
+      "/pages/shopify-vs-wix-which-is-better-in-2026.html",
+      "/pages/shopify-vs-woocommerce-which-is-better-in-2026.html"
+    ],
+    "issues": [
+      "broken_internal_link"
+    ],
+    "jsonld_blocks": 2,
+    "meta_description": "Shopify wins overall (9.3/10) \u2014 purpose-built ecommerce, 6,000+ apps, built-in payments, multi-channel selling. Webflow wins for design-first sites and CMS (8.0/10). Full side-by-side verdict.",
+    "meta_length": 192,
+    "page_type": "comparison",
+    "path": "/pages/shopify-vs-webflow-which-is-better-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "FAQPage",
+      "Organization",
+      "Person",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 8,
+      "internalLinking": 9.95,
+      "overall": 73.45,
+      "performanceUx": 5,
+      "schemaIndexability": 8,
+      "technical": 15,
+      "trust": 7.5
+    },
+    "title": "Shopify vs Webflow 2026: Honest Verdict \u2014 Ecommerce, Design & Pricing Compared",
+    "title_length": 78,
+    "url": "https://saaspare.org/pages/shopify-vs-webflow-which-is-better-in-2026",
+    "warnings": [
+      "meta_length_outside_target",
+      "missing_correction_cta",
+      "missing_last_verified",
+      "missing_methodology",
+      "missing_trustbox",
+      "title_length_outside_target"
+    ],
+    "word_count": 1862
   },
   {
     "affiliate_links": [
@@ -129888,6 +130278,7 @@
       "/pages/stripe-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/stripe-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -129907,10 +130298,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.84,
+      "content": 19.85,
       "conversionRevenue": 10,
-      "internalLinking": 11.75,
-      "overall": 86.59,
+      "internalLinking": 12,
+      "overall": 86.85,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 17,
@@ -129924,7 +130315,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 768
+    "word_count": 770
   },
   {
     "affiliate_links": [
@@ -135986,6 +136377,7 @@
       "/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/tresorit-review-2026-is-it-worth-it-honest-verdict",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ],
@@ -136003,10 +136395,10 @@
       "Question"
     ],
     "score": {
-      "content": 19.32,
+      "content": 19.33,
       "conversionRevenue": 10,
-      "internalLinking": 14.75,
-      "overall": 92.07,
+      "internalLinking": 15,
+      "overall": 92.33,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
@@ -136020,7 +136412,7 @@
       "missing_methodology",
       "thin_buyer_page"
     ],
-    "word_count": 664
+    "word_count": 666
   },
   {
     "affiliate_links": [
@@ -137137,8 +137529,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Updated August 2026. Twingate vs Tailscale 2026: Twingate wins for managed business (SSO, audit logs, $8/user). Tailscale wins for dev teams (free up to 3 users,\u2026",
-    "meta_length": 162,
+    "meta_description": "Twingate vs Tailscale 2026: Twingate wins for managed business (SSO, audit logs, $8/user). Tailscale wins for dev teams (free up to 3 users, mesh networking). Side-by-side verdict.",
+    "meta_length": 180,
     "page_type": "comparison",
     "path": "/pages/twingate-vs-tailscale-which-is-better-in-2026",
     "robots": "index, follow",
@@ -137154,16 +137546,17 @@
       "content": 19.48,
       "conversionRevenue": 8,
       "internalLinking": 15,
-      "overall": 94.48,
+      "overall": 93.48,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 19,
+      "technical": 18,
       "trust": 20.0
     },
-    "title": "Twingate vs Tailscale 2026: Side-by-Side Pricing, Features & Honest Verdict [August]",
-    "title_length": 84,
+    "title": "Twingate vs Tailscale 2026: Side-by-Side Pricing, Features & Honest Verdict [Compared]",
+    "title_length": 86,
     "url": "https://saaspare.org/pages/twingate-vs-tailscale-which-is-better-in-2026",
     "warnings": [
+      "meta_length_outside_target",
       "thin_buyer_page",
       "title_length_outside_target"
     ],

@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-08-12",
+  "endDate": "2026-08-13",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -174,26 +174,6 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
-      "position": 40.0,
-      "query": "datadog retool",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026",
-      "position": 40.0,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
       "impressions": 2.0,
       "page": "https://saaspare.org/authors/kaylan-von-papen",
       "position": 20.0,
@@ -271,13 +251,12 @@
     "https://saaspare.org/pages/best-devtools-for-secure-scalable-b2b-software-integrations-in-2025": 0.0,
     "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid": 0.0,
     "https://saaspare.org/pages/miro-coupon-code-promo-codes-2026-verified-discounts": 0.0,
-    "https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026": 0.0,
     "https://saaspare.org/pages/shopify-vs-recharge-which-is-better-in-2026": 0.0,
     "https://saaspare.org/roi": 0.0,
     "https://saaspare.org/shortlist": 0.0
   },
-  "rowsPulled": 29,
+  "rowsPulled": 27,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-07-15"
+  "startDate": "2026-07-16"
 }

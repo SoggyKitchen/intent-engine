@@ -34,7 +34,7 @@
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.62/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 93.0/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.0/100): title_length_outside_target
-- `/pages/1password-pricing-history-2026` (pricing, 92.07/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/1password-pricing-history-2026` (pricing, 92.33/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.25/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.4/100): missing_correction_cta, thin_buyer_page
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 97.34/100): thin_buyer_page
@@ -72,7 +72,7 @@
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 91.44/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.71/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 92.8/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/ahrefs-pricing-history-2026` (pricing, 92.64/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ahrefs-pricing-history-2026` (pricing, 92.9/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.06/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.24/100): missing_correction_cta, thin_buyer_page
 - `/pages/ahrefs-vs-clearscope-which-is-better-in-2026` (comparison, 97.34/100): thin_buyer_page
@@ -109,7 +109,7 @@
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.41/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.96/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 95.17/100): missing_methodology, thin_buyer_page
-- `/pages/asana-pricing-history-2026` (pricing, 92.55/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/asana-pricing-history-2026` (pricing, 92.81/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.03/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.28/100): missing_correction_cta, thin_buyer_page
 - `/pages/asana-vs-basecamp-which-is-better-in-2026` (comparison, 97.32/100): thin_buyer_page
@@ -134,7 +134,7 @@
 - `/pages/aws-vs-linode-which-is-better-in-2026` (comparison, 95.32/100): thin_buyer_page
 - `/pages/aws-vs-railway-which-is-better-in-2026` (comparison, 95.36/100): thin_buyer_page
 - `/pages/aws-vs-render-which-is-better-in-2026` (comparison, 94.34/100): meta_length_outside_target, thin_buyer_page
-- `/pages/aws-vs-supabase-which-is-better-in-2026` (comparison, 94.38/100): thin_buyer_page, title_length_outside_target
+- `/pages/aws-vs-supabase-which-is-better-in-2026` (comparison, 93.37/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
 - `/pages/aws-vs-vultr-which-is-better-in-2026` (comparison, 95.41/100): thin_buyer_page
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.08/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/bamboohr-free-trial-2026-how-to-start-what-you-get` (free_trial, 92.7/100): missing_correction_cta, missing_methodology, thin_buyer_page
@@ -299,4 +299,4 @@
 - `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.38/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.66/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): missing_correction_cta, missing_methodology
-- `/pages/clickup-pricing-history-2026` (pricing, 92.69/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/clickup-pricing-history-2026` (pricing, 92.94/100): missing_correction_cta, missing_methodology, thin_buyer_page

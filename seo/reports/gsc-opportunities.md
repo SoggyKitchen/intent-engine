@@ -2,8 +2,8 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-07-15 to 2026-08-12
-Rows pulled: 29
+Range: 2026-07-16 to 2026-08-13
+Rows pulled: 27
 
 ## Top Opportunities
 - Score 55.0: `https://saaspare.org/pages/miro-coupon-code-promo-codes-2026-verified-discounts` query `saaspare.org` - impressions 1.0, CTR 0.0, position 12.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
@@ -23,8 +23,6 @@ Rows pulled: 29
 - Score 25.22: `https://saaspare.org/deal-radar` query `(page rollup)` - impressions 11.0, CTR 0.0, position 1.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026` query `site:saaspare.org` - impressions 1.0, CTR 0.0, position 5.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid` query `site:saaspare.org` - impressions 1.0, CTR 0.0, position 4.0. Monitor and prioritize if impressions continue rising.
-- Score 25.0: `https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026` query `datadog retool` - impressions 1.0, CTR 0.0, position 40.0. Monitor and prioritize if impressions continue rising.
-- Score 25.0: `https://saaspare.org/pages/retool-vs-datadog-which-is-better-in-2026` query `(page rollup)` - impressions 1.0, CTR 0.0, position 40.0. Monitor and prioritize if impressions continue rising.
 - Score 22.0: `https://saaspare.org/authors/kaylan-von-papen` query `saaspare.org` - impressions 2.0, CTR 0.0, position 20.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
 - Score 20.4: `https://saaspare.org/` query `saaspare.org` - impressions 20.0, CTR 0.0, position 1.0. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
 - Score 0.62: `https://saaspare.org/` query `(page rollup)` - impressions 31.0, CTR 0.0323, position 1.84. Monitor and prioritize if impressions continue rising.
