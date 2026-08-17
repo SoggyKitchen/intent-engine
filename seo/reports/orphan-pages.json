@@ -178,33 +178,6 @@
     }
   },
   {
-    "path": "/pages/nordvpn-vs-ipvanish-which-is-better-in-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/about",
-        "/affiliate-disclosure",
-        "/authors/kaylan-von-papen",
-        "/corrections",
-        "/deal-radar",
-        "/editorial-policy",
-        "/go/nordvpn",
-        "/methodology",
-        "/newsletter",
-        "/pages/",
-        "/pages/asana-vs-todoist-which-is-better-in-2026",
-        "/pages/best-cloud-infrastructure-management-tools-for-b2b-saas-teams-in-2025",
-        "/pages/best-nordvpn-alternatives-in-2026-free-paid",
-        "/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/se-ranking-vs-frase-io-which-is-better-in-2026",
-        "/privacy",
-        "/roi",
-        "/shortlist"
-      ]
-    }
-  },
-  {
     "path": "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
     "score": {
       "inbound": [],
@@ -249,6 +222,34 @@
         "/privacy",
         "/shortlist",
         "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/surfshark-vs-ipvanish-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/corrections",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/surfshark",
+        "/methodology",
+        "/newsletter",
+        "/pages/",
+        "/pages/best-surfshark-alternatives-in-2026-free-paid",
+        "/pages/nordvpn-vs-ipvanish-which-is-better-in-2026",
+        "/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/surfshark-vs-cyberghost-which-is-better-in-2026",
+        "/pages/surfshark-vs-expressvpn-which-is-better-in-2026",
+        "/pages/surfshark-vs-nordvpn-which-is-better-in-2026",
+        "/privacy",
+        "/roi",
+        "/shortlist"
       ]
     }
   }

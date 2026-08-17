@@ -1,6 +1,6 @@
 # SEO Audit
 
-Pages scanned: 1562
+Pages scanned: 1563
 
 ## Severe Issue Counts
 - broken_internal_link: 10
@@ -8,7 +8,7 @@ Pages scanned: 1562
 
 ## Warning Counts
 - images_missing_alt: 2
-- meta_length_outside_target: 489
+- meta_length_outside_target: 490
 - missing_correction_cta: 332
 - missing_last_verified: 5
 - missing_methodology: 233
