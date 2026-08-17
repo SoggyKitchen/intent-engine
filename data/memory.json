@@ -1076,6 +1076,27 @@
         "xero_brevo_hotjar": "No approvals."
       },
       "new_page": "surfshark-vs-ipvanish-which-is-better-in-2026"
+    },
+    {
+      "date": "2026-08-17",
+      "type": "ceo-daily",
+      "actions": [
+        "GMAIL: No new affiliate approvals. EngageBay (Awin 127075) confirmed active in _redirects from prior sessions. Pipedrive TOS still pending (owner action needed). Wix still pending reapply. No PartnerStack/HubSpot/1Password/Xero approvals.",
+        "REVENUE LEAKS: 0 actual href= revenue leaks found \u2014 all CTAs already use /go/ tracked routes.",
+        "CTR FIXES: Top pages already optimized in prior sessions (Aug 14-16). GSC data lags 3 days. No new CTR fixes needed this session.",
+        "NEW PAGE: surfshark-vs-mullvad-which-is-better-in-2026.html \u2014 Surfshark wins 9.1/10 vs Mullvad 8.8/10. Privacy-vs-value comparison: Surfshark wins on price ($2.19/mo), unlimited devices, streaming. Mullvad wins on anonymity (no email, cash payment, seizure-proven no-logs). FAQPage schema (5 Q), sticky CTA, /go/surfshark CJ tracking.",
+        "SURFSHARK GAPS REMAINING: surfshark-vs-windscribe, surfshark-vs-hotspot-shield."
+      ],
+      "gmail_findings": {
+        "awin": "No new affiliate approvals. EngageBay (Awin 127075) already activated. Warden9/brickzonehub/Fresent LLC invites (not relevant SaaS).",
+        "impact": "No HubSpot/1Password approvals. Wix asked to reapply (July 19). Contract notifications only.",
+        "partnerstack": "No new approvals.",
+        "xero": "No response.",
+        "pipedrive": "TOS approval required \u2014 OWNER ACTION NEEDED.",
+        "brevo_hotjar": "No approvals found."
+      },
+      "new_page": "surfshark-vs-mullvad-which-is-better-in-2026",
+      "tests": "93/93 passed"
     }
   ],
   "entries": [
