@@ -4,6 +4,35 @@
   "initialized": "2026-05-31",
   "log": [
     {
+      "date": "2026-08-18",
+      "session": "revenue-hunter",
+      "gmail_scan": {
+        "awin": "No new approvals \u2014 EngageBay/SpamGuard/Iternal already activated in prior sessions",
+        "impact": "No new activations \u2014 HubSpot/1Password still pending",
+        "partnerstack": "No unlock \u2014 ClickUp/Monday/ActiveCampaign/Dashlane still locked",
+        "wix": "Asked to reapply",
+        "freshbooks": "No approval email found"
+      },
+      "built": [
+        "aweber-vs-constant-contact-which-is-better-in-2026.html \u2014 NEW PAGE. Constant Contact wins (8.5/10) vs AWeber (8.0/10). Both CJ active: AWeber 0-15/sale, Constant Contact 05/sale. FAQPage schema, full pricing/features/verdict tabs, /go/constant-contact-trial + /go/aweber CTAs."
+      ],
+      "ctr_fixes": [
+        "shopify-vs-recurly: title rewritten for buyer intent (pos 7.5, 134 impr, 0% CTR, active Shopify affiliate)"
+      ],
+      "gsc_observations": {
+        "top_climb_zone": [
+          "ramp-pricing: 1687 impr, pos 10.2, CTR 0.6% \u2014 already optimised",
+          "mixpanel-pricing: 742 impr, pos 13.7, CTR 0% \u2014 not monetised",
+          "does-notion-free-plan: 557 impr, pos 9.4, CTR 0% \u2014 not monetised",
+          "does-sentry-free-plan: 528 impr, pos 7.5, CTR 0% \u2014 not monetised",
+          "shopify-vs-recurly: 134 impr, pos 7.5, CTR 0% \u2014 FIXED (active Shopify affiliate)"
+        ],
+        "zero_click_high_impr": "semrush-vs-moz at pos 67-82 with 278+ impr \u2014 too deep for CTR fixes"
+      },
+      "tests": "93/93 passed",
+      "commit": "ae92f4fb"
+    },
+    {
       "date": "2026-08-15",
       "session": "sunday-maximizer",
       "built": [
