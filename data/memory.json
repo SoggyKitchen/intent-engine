@@ -636,6 +636,32 @@
         "ACTION: Log into app.cj.com \u2192 search 'Iternal Technologies' \u2192 Links \u2192 get real CJ link IDs to replace placeholder /go/iternal, /go/airgapai, /go/airgapai-code ($40-450/sale, advertiser 7676842)",
         "ACTION: Log into app.cj.com to get deep links for: GetResponse (3142111), ProtonVPN (5227916), Elementor (6798066), AWeber (5111249), Parallels (2005415)"
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "session": "ceo-daily",
+      "gmail_scan": [
+        "No new affiliate approvals for key pending programs (FreshBooks/Awin, HubSpot/Impact, ClickUp/Monday/ActiveCampaign/PartnerStack, Xero/Direct).",
+        "Awin: 4 random partner invites (Rewarx Studio AI, Warden9, brickzonehub, Fresent LLC) \u2014 not our pending programs, require owner review.",
+        "Impact: newsletter only (no account activation).",
+        "Pipedrive TOS still pending \u2014 owner action needed at affiliates@pipedrive.com.",
+        "Fiverr click check-in (no conversions) \u2014 not an approval."
+      ],
+      "built": [
+        "surfshark-vs-windscribe-which-is-better-in-2026.html \u2014 NEW PAGE. Surfshark (9.1/10) wins for most paid buyers (.19/mo 2yr, 3200+ servers, unlimited devices, Deloitte-audited). Windscribe (8.0/10) wins for free tier (10GB/mo) and Build-a-Plan. /go/surfshark affiliate, FAQPage schema (5 questions), sticky CTA."
+      ],
+      "ctr_fixes": [
+        "pages/index.html: title updated to buyer-intent \"B2B SaaS Pricing & Comparisons 2026\" (40 impressions, pos 10.9, 0% CTR)."
+      ],
+      "revenue_leaks": "0 untracked vendor hrefs found in site/pages/",
+      "tests": "93/93 passed",
+      "sitemap": "rebuilt after new page + index CTR fix",
+      "learnings": [
+        "surfshark-vs-windscribe was the last major missing Surfshark VS comparison (nordvpn-vs-windscribe built Aug 15, natural companion).",
+        "Windscribe is popular as freemium VPN \u2014 its Build-a-Plan model is unique, Surfshark wins on pure paid pricing.",
+        "GSC data remains thin (27 rows only). Key pages still at pos 10+ with 0% CTR \u2014 wait for more impressions before aggressive CTR work.",
+        "Awin partner invites (non-FreshBooks) should be reviewed by owner \u2014 could be legitimate small programs worth joining."
+      ]
     }
   ],
   "affiliate_approvals": [
