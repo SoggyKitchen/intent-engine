@@ -252,5 +252,33 @@
         "/shortlist"
       ]
     }
+  },
+  {
+    "path": "/pages/surfshark-vs-mullvad-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/corrections",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/surfshark",
+        "/methodology",
+        "/newsletter",
+        "/pages/",
+        "/pages/best-surfshark-alternatives-in-2026-free-paid",
+        "/pages/protonvpn-vs-mullvad-which-is-better-in-2026",
+        "/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/surfshark-vs-cyberghost-which-is-better-in-2026",
+        "/pages/surfshark-vs-expressvpn-which-is-better-in-2026",
+        "/pages/surfshark-vs-nordvpn-which-is-better-in-2026",
+        "/privacy",
+        "/roi",
+        "/shortlist"
+      ]
+    }
   }
 ]

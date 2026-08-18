@@ -73,11 +73,12 @@ These are not safe to fake or mass rewrite.
 - `/pages/best-vpn-for-remote-work-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/best-vpn-for-small-business-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/rippling-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/does-elevenlabs-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_trustbox
 - `/pages/does-getresponse-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_trustbox
 - `/pages/does-protonmail-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_trustbox
 - `/pages/grandfathered-saas-pricing-2026`: missing_correction_cta, missing_methodology
+- `/pages/ramp-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/notion-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/semrush-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -92,6 +93,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/linear-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -108,7 +110,6 @@ These are not safe to fake or mass rewrite.
 - `/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/partnerstack-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta
 - `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
-- `/pages/ramp-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -130,10 +131,10 @@ These are not safe to fake or mass rewrite.
 - `/pages/surfshark-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/tresorit-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/workable-coupon-2026-discount-codes-promo`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/stripe-coupon-2026-discount-codes-promo`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/bigcommerce-coupon-2026-discount-codes-promo`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clearscope-coupon-2026-discount-codes-promo`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/pipedrive-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/slack-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/deel-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -184,7 +185,6 @@ These are not safe to fake or mass rewrite.
 - `/pages/hetzner-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/nordlayer-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/protonvpn-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/rippling-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/salesforce-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/supabase-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/vultr-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page

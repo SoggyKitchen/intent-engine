@@ -1,6 +1,6 @@
 # SEO Audit
 
-Pages scanned: 1563
+Pages scanned: 1564
 
 ## Severe Issue Counts
 - broken_internal_link: 10
@@ -15,7 +15,7 @@ Pages scanned: 1563
 - missing_related_pages: 18
 - missing_trustbox: 63
 - thin_buyer_page: 1188
-- title_length_outside_target: 168
+- title_length_outside_target: 178
 
 ## Lowest Scoring Pages
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f`: 41.02/100, issues=no_h1

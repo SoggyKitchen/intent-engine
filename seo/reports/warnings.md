@@ -134,7 +134,7 @@
 - `/pages/aws-vs-linode-which-is-better-in-2026` (comparison, 95.32/100): thin_buyer_page
 - `/pages/aws-vs-railway-which-is-better-in-2026` (comparison, 95.36/100): thin_buyer_page
 - `/pages/aws-vs-render-which-is-better-in-2026` (comparison, 94.34/100): meta_length_outside_target, thin_buyer_page
-- `/pages/aws-vs-supabase-which-is-better-in-2026` (comparison, 93.37/100): meta_length_outside_target, thin_buyer_page, title_length_outside_target
+- `/pages/aws-vs-supabase-which-is-better-in-2026` (comparison, 94.37/100): thin_buyer_page, title_length_outside_target
 - `/pages/aws-vs-vultr-which-is-better-in-2026` (comparison, 95.41/100): thin_buyer_page
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.08/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/bamboohr-free-trial-2026-how-to-start-what-you-get` (free_trial, 92.7/100): missing_correction_cta, missing_methodology, thin_buyer_page

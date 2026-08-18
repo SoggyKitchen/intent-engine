@@ -109,7 +109,7 @@
 - `/pages/aws-vs-linode-which-is-better-in-2026`: 664 words, score 95.32
 - `/pages/aws-vs-railway-which-is-better-in-2026`: 672 words, score 95.36
 - `/pages/aws-vs-render-which-is-better-in-2026`: 669 words, score 94.34
-- `/pages/aws-vs-supabase-which-is-better-in-2026`: 673 words, score 93.37
+- `/pages/aws-vs-supabase-which-is-better-in-2026`: 673 words, score 94.37
 - `/pages/aws-vs-vultr-which-is-better-in-2026`: 682 words, score 95.41
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts`: 615 words, score 92.08
 - `/pages/bamboohr-free-trial-2026-how-to-start-what-you-get`: 741 words, score 92.7
@@ -217,7 +217,7 @@
 - `/pages/close-vs-keap-which-is-better-in-2026`: 716 words, score 97.58
 - `/pages/close-vs-nutshell-which-is-better-in-2026`: 706 words, score 97.53
 - `/pages/cloudflare-access-vs-openvpn-which-is-better-in-2026`: 729 words, score 94.64
-- `/pages/cloudflare-access-vs-tailscale-which-is-better-in-2026`: 726 words, score 94.63
+- `/pages/cloudflare-access-vs-tailscale-which-is-better-in-2026`: 730 words, score 93.65
 - `/pages/cloudflare-access-vs-wireguard-which-is-better-in-2026`: 729 words, score 94.64
 - `/pages/cloudflare-access-vs-zscaler-which-is-better-in-2026`: 727 words, score 94.63
 - `/pages/cloudflare-vs-duo-security-which-is-better-in-2026`: 693 words, score 95.47
@@ -286,7 +286,7 @@
 - `/pages/databox-vs-power-bi-which-is-better-in-2026`: 718 words, score 94.59
 - `/pages/databox-vs-segment-which-is-better-in-2026`: 688 words, score 94.44
 - `/pages/databox-vs-tableau-which-is-better-in-2026`: 686 words, score 94.43
-- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: 620 words, score 92.1
+- `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: 622 words, score 92.11
 - `/pages/datadog-free-trial-2026-how-to-get-it-step-by-step`: 740 words, score 92.7
 - `/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay`: 731 words, score 95.16
 - `/pages/datadog-pricing-history-2026`: 666 words, score 92.33
