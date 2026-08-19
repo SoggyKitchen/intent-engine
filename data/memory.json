@@ -1177,6 +1177,37 @@
       },
       "new_page": "surfshark-vs-mullvad-which-is-better-in-2026",
       "tests": "93/93 passed"
+    },
+    {
+      "date": "2026-08-19",
+      "routine": "revenue-hunter",
+      "summary": "Gmail scan + GSC analysis + new page build",
+      "gmail_findings": {
+        "awin": "EngageBay already activated (done 2026-07-22). No FreshBooks/Fiverr approval yet.",
+        "partnerstack": "monday.com DECLINED application (2026-08-19). ClickUp/ActiveCampaign/Dashlane still pending.",
+        "impact": "No new program approvals. HubSpot/1Password still PENDING.",
+        "xero": "No approval email found.",
+        "wix": "Wix (Impact) asked to re-apply (2026-07-19 email) - action needed by owner.",
+        "engagebay_deep_link": "Awin sent pricing page deep link (2026-07-30) - already in _redirects."
+      },
+      "gsc_highlights": {
+        "top_impression_page": "ramp-pricing-2026 - 1687 impr, pos 10.2, 0.59% CTR (previously fixed)",
+        "mixpanel": "742 impr, pos 13.7, 0% CTR (AI Overview likely answering inline)",
+        "notion_free": "557 impr, pos 9.4, 0% CTR (AI Overview likely)",
+        "sentry_free": "528 impr, pos 7.5, 0% CTR (AI Overview likely)"
+      },
+      "actions_taken": [
+        "Built engagebay-vs-freshsales-which-is-better-in-2026.html (EngageBay 30% recurring on Awin)",
+        "Updated sitemap",
+        "All existing CTR fixes confirmed already applied from prior sessions"
+      ],
+      "learnings": [
+        "monday.com declined PartnerStack - do not re-apply without strategy change",
+        "Wix wants re-application on Impact.com - owner action needed",
+        "0% CTR at pos 7-10 for free-plan pages is likely Google AI Overviews, not title issues",
+        "EngageBay 30% recurring commission is highest-value active program for CRM category",
+        "Semrush vs Moz has 3 cannibalizing pages (moz-vs-semrush, semrush-vs-moz-pro, semrush-vs-moz) - consolidation needed"
+      ]
     }
   ],
   "entries": [
