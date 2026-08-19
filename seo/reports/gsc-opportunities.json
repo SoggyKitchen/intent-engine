@@ -1,26 +1,6 @@
 {
-  "endDate": "2026-08-15",
+  "endDate": "2026-08-16",
   "opportunities": [
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/miro-coupon-code-promo-codes-2026-verified-discounts",
-      "position": 12.0,
-      "query": "saaspare.org",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 55.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 1.0,
-      "page": "https://saaspare.org/pages/miro-coupon-code-promo-codes-2026-verified-discounts",
-      "position": 12.0,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 55.0
-    },
     {
       "clicks": 0.0,
       "ctr": 0.0,
@@ -54,22 +34,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 40.0,
+      "impressions": 37.0,
       "page": "https://saaspare.org/pages/",
-      "position": 10.95,
+      "position": 10.51,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 49.75
+      "score": 49.25
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 34.0,
+      "impressions": 31.0,
       "page": "https://saaspare.org/pages/",
-      "position": 10.94,
+      "position": 10.42,
       "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 49.62
+      "score": 49.04
     },
     {
       "clicks": 0.0,
@@ -104,39 +84,19 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 3.0,
-      "page": "https://saaspare.org/authors/kaylan-von-papen",
-      "position": 14.33,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 27.67
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 14.0,
+      "impressions": 13.0,
       "page": "https://saaspare.org/deal-radar",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.28
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 14.0,
-      "page": "https://saaspare.org/deal-radar",
-      "position": 1.0,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.28
+      "score": 25.26
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 13.0,
-      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 46.38,
+      "page": "https://saaspare.org/deal-radar",
+      "position": 1.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.26
@@ -144,12 +104,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 12.0,
+      "impressions": 11.0,
       "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 49.92,
+      "position": 42.09,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.22
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 10.0,
+      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
+      "position": 45.9,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.24
+      "score": 25.2
     },
     {
       "clicks": 0.0,
@@ -174,72 +144,62 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 2.0,
-      "page": "https://saaspare.org/authors/kaylan-von-papen",
-      "position": 20.0,
-      "query": "saaspare.org",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 22.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 26.0,
+      "impressions": 23.0,
       "page": "https://saaspare.org/",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.52
+      "score": 20.46
     },
     {
       "clicks": 1.0,
-      "ctr": 0.0263,
-      "impressions": 38.0,
+      "ctr": 0.0294,
+      "impressions": 34.0,
       "page": "https://saaspare.org/",
-      "position": 1.74,
+      "position": 1.71,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.76
+      "score": 0.68
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 14.0,
+      "impressions": 13.0,
       "page": "https://saaspare.org/roi",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.28
+      "score": 0.26
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 14.0,
+      "impressions": 13.0,
       "page": "https://saaspare.org/shortlist",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.28
+      "score": 0.26
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 14.0,
+      "impressions": 13.0,
       "page": "https://saaspare.org/roi",
       "position": 1.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.28
+      "score": 0.26
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 14.0,
+      "impressions": 13.0,
       "page": "https://saaspare.org/shortlist",
       "position": 1.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.28
+      "score": 0.26
     }
   ],
   "pageClicks": {
@@ -250,13 +210,12 @@
     "https://saaspare.org/pages/": 0.0,
     "https://saaspare.org/pages/best-devtools-for-secure-scalable-b2b-software-integrations-in-2025": 0.0,
     "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid": 0.0,
-    "https://saaspare.org/pages/miro-coupon-code-promo-codes-2026-verified-discounts": 0.0,
     "https://saaspare.org/pages/shopify-vs-recharge-which-is-better-in-2026": 0.0,
     "https://saaspare.org/roi": 0.0,
     "https://saaspare.org/shortlist": 0.0
   },
-  "rowsPulled": 27,
+  "rowsPulled": 24,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-07-18"
+  "startDate": "2026-07-19"
 }

@@ -176,6 +176,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/aweber-pricing-history-2026,pricing,19,20,15.0,15,8,10,5,92.0
 /pages/aweber-review-2026-is-it-worth-it-honest-verdict,pricing,20,19.23,17.5,15,8,10,5,94.73
 /pages/aweber-vs-brevo-which-is-better-in-2026,comparison,19,19.38,20.0,15,8,10,5,96.38
+/pages/aweber-vs-constant-contact-which-is-better-in-2026,comparison,18,20,17.5,15,8,10,5,93.5
 /pages/aweber-vs-convertkit-which-is-better-in-2026,comparison,20,19.44,20.0,15,8,10,5,97.44
 /pages/aweber-vs-mailchimp-which-is-better-in-2026,comparison,20,19.39,20.0,15,8,10,5,97.39
 /pages/aws-vs-contabo-which-is-better-in-2026,comparison,20,19.52,20.0,15,8,10,5,97.52
@@ -1331,7 +1332,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/shopify-vs-gumroad-which-is-better-in-2026,comparison,20,19.31,20.0,15,8,10,5,97.31
 /pages/shopify-vs-paddle-which-is-better-in-2026,comparison,20,19.31,20.0,15,8,10,5,97.31
 /pages/shopify-vs-recharge-which-is-better-in-2026,comparison,20,19.3,20.0,15,8,10,5,97.3
-/pages/shopify-vs-recurly-which-is-better-in-2026,comparison,19,19.3,20.0,15,8,10,5,96.31
+/pages/shopify-vs-recurly-which-is-better-in-2026,comparison,18,19.31,20.0,15,8,10,5,95.31
 /pages/shopify-vs-squarespace-which-is-better-in-2026,comparison,20,19.31,20.0,15,8,10,5,97.31
 /pages/shopify-vs-stripe-which-is-better-in-2026,comparison,20,19.29,20.0,15,8,10,5,97.28
 /pages/shopify-vs-webflow-which-is-better-in-2026,comparison,15,20,7.5,9.95,8,8,5,73.45
@@ -1404,6 +1405,7 @@ path,page_type,technical,content,trust,internalLinking,schemaIndexability,conver
 /pages/surfshark-vs-mullvad-which-is-better-in-2026,comparison,19,20,20.0,15,8,10,5,97.0
 /pages/surfshark-vs-nordvpn-which-is-better-in-2026,comparison,20,19.49,20.0,15,8,10,5,97.49
 /pages/surfshark-vs-private-internet-access-which-is-better-in-2026,comparison,20,19.73,20.0,15,8,10,5,97.72
+/pages/surfshark-vs-windscribe-which-is-better-in-2026,comparison,19,20,20.0,15,8,10,5,97.0
 /pages/tableau-vs-fullstory-which-is-better-in-2026,comparison,19,19.43,20.0,15,8,8,5,94.43
 /pages/tableau-vs-heap-which-is-better-in-2026,comparison,19,19.43,20.0,15,8,8,5,94.43
 /pages/tableau-vs-hotjar-which-is-better-in-2026,comparison,19,19.45,20.0,15,8,8,5,94.44

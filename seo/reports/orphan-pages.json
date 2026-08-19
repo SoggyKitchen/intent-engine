@@ -99,6 +99,36 @@
     }
   },
   {
+    "path": "/pages/aweber-vs-constant-contact-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/corrections",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/aweber",
+        "/go/constant-contact-trial",
+        "/methodology",
+        "/newsletter",
+        "/pages/",
+        "/pages/aweber-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/aweber-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/aweber-vs-mailchimp-which-is-better-in-2026",
+        "/pages/constant-contact-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/constant-contact-vs-mailchimp-which-is-better-in-2026",
+        "/pages/getresponse-vs-aweber-which-is-better-in-2026",
+        "/pages/getresponse-vs-constant-contact-which-is-better-in-2026",
+        "/privacy",
+        "/roi",
+        "/shortlist"
+      ]
+    }
+  },
+  {
     "path": "/pages/educative-pricing-2026-plans-costs-what-you-actually-pay",
     "score": {
       "inbound": [],
@@ -178,27 +208,6 @@
     }
   },
   {
-    "path": "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
-    "score": {
-      "inbound": [],
-      "outbound": [
-        "/",
-        "/authors/kaylan-von-papen",
-        "/go/nordvpn",
-        "/pages/",
-        "/pages/affiliate-disclosure.html",
-        "/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict.html",
-        "/pages/nordvpn-vs-expressvpn-which-is-better-in-2026.html",
-        "/pages/nordvpn-vs-mullvad-which-is-better-in-2026.html",
-        "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026.html",
-        "/pages/nordvpn-vs-surfshark-which-is-better-in-2026.html",
-        "/pages/privacy-policy.html",
-        "/pages/protonvpn-vs-windscribe-which-is-better-in-2026.html",
-        "/pages/saaspare-vpn-comparison-2026.html"
-      ]
-    }
-  },
-  {
     "path": "/pages/parallels-desktop-coupon-code-promo-codes-2026-verified-discounts",
     "score": {
       "inbound": [],
@@ -254,7 +263,7 @@
     }
   },
   {
-    "path": "/pages/surfshark-vs-mullvad-which-is-better-in-2026",
+    "path": "/pages/surfshark-vs-windscribe-which-is-better-in-2026",
     "score": {
       "inbound": [],
       "outbound": [
@@ -270,13 +279,12 @@
         "/newsletter",
         "/pages/",
         "/pages/best-surfshark-alternatives-in-2026-free-paid",
-        "/pages/protonvpn-vs-mullvad-which-is-better-in-2026",
+        "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
         "/pages/surfshark-pricing-2026-plans-costs-what-you-actually-pay",
-        "/pages/surfshark-vs-cyberghost-which-is-better-in-2026",
         "/pages/surfshark-vs-expressvpn-which-is-better-in-2026",
+        "/pages/surfshark-vs-mullvad-which-is-better-in-2026",
         "/pages/surfshark-vs-nordvpn-which-is-better-in-2026",
         "/privacy",
-        "/roi",
         "/shortlist"
       ]
     }

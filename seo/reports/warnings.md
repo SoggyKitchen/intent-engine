@@ -125,6 +125,7 @@
 - `/pages/aweber-pricing-history-2026` (pricing, 92.0/100): meta_length_outside_target, missing_correction_cta, missing_methodology
 - `/pages/aweber-review-2026-is-it-worth-it-honest-verdict` (pricing, 94.73/100): missing_correction_cta, thin_buyer_page
 - `/pages/aweber-vs-brevo-which-is-better-in-2026` (comparison, 96.38/100): thin_buyer_page, title_length_outside_target
+- `/pages/aweber-vs-constant-contact-which-is-better-in-2026` (comparison, 93.5/100): meta_length_outside_target, title_length_outside_target
 - `/pages/aweber-vs-convertkit-which-is-better-in-2026` (comparison, 97.44/100): thin_buyer_page
 - `/pages/aweber-vs-mailchimp-which-is-better-in-2026` (comparison, 97.39/100): thin_buyer_page
 - `/pages/aws-vs-contabo-which-is-better-in-2026` (comparison, 97.52/100): thin_buyer_page
@@ -299,4 +300,3 @@
 - `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.38/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.66/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): missing_correction_cta, missing_methodology
-- `/pages/clickup-pricing-history-2026` (pricing, 92.94/100): missing_correction_cta, missing_methodology, thin_buyer_page
