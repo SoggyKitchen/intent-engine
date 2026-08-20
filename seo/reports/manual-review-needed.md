@@ -48,6 +48,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/best-vpn-for-gaming-2026`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/stripe-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/salesforce-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/parallels-desktop-vs-virtualbox-which-is-better-in-2026`: missing_correction_cta, missing_last_verified, missing_methodology
 - `/pages/buyer-type-alternatives`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/7-best-canva-alternatives-in-2026-free-paid`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-miro-alternatives-in-2026-free-paid`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
@@ -102,6 +103,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/7-best-protonvpn-alternatives-in-2026-free-paid`: missing_correction_cta, missing_trustbox
 - `/pages/aweber-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/best-vpn-for-streaming-2026`: missing_correction_cta, missing_trustbox
+- `/pages/engagebay-vs-freshsales-which-is-better-in-2026`: missing_last_verified
 - `/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/hostpapa-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology
 - `/pages/how-to-evaluate-hubspot-alternatives-for-saas-teams-2026`: missing_correction_cta, missing_trustbox
@@ -200,5 +202,3 @@ These are not safe to fake or mass rewrite.
 - `/pages/tresorit-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/xero-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/nordpass-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/surfshark-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/best-cheap-vps-hosting-2026`: missing_correction_cta, missing_trustbox, thin_buyer_page

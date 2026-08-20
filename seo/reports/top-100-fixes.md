@@ -57,6 +57,7 @@
 - `/pages/best-nordvpn-alternatives-in-2026-free-paid` (86.72/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-privacy-vpn-2026` (86.77/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-vpn-for-gaming-2026` (86.85/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/parallels-desktop-vs-virtualbox-which-is-better-in-2026` (87.0/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology
 - `/pages/coupon-verification-policy` (87.08/100): meta_length_outside_target, title_length_outside_target
 - `/pages/buyer-type-alternatives` (87.41/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/7-best-canva-alternatives-in-2026-free-paid` (87.54/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
@@ -99,4 +100,3 @@
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (91.64/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (91.7/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (91.7/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (91.72/100): missing_correction_cta, missing_methodology, thin_buyer_page

@@ -180,6 +180,31 @@
     }
   },
   {
+    "path": "/pages/engagebay-vs-freshsales-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/corrections",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/engagebay",
+        "/methodology",
+        "/newsletter",
+        "/pages/",
+        "/pages/engagebay-vs-activecampaign-which-is-better-in-2026",
+        "/pages/engagebay-vs-hubspot-which-is-better-in-2026",
+        "/pages/engagebay-vs-mailchimp-which-is-better-in-2026",
+        "/pages/engagebay-vs-zoho-crm-which-is-better-in-2026",
+        "/pages/freshsales-vs-keap-which-is-better-in-2026",
+        "/privacy"
+      ]
+    }
+  },
+  {
     "path": "/pages/hostpapa-coupon-code-promo-codes-2026-verified-discounts",
     "score": {
       "inbound": [],
@@ -228,6 +253,30 @@
         "/pages/perimeter-81-vs-openvpn-which-is-better-in-2026",
         "/pages/render-vs-google-cloud-which-is-better-in-2026",
         "/pages/supabase-pricing-2026-plans-costs-what-you-actually-pay",
+        "/privacy",
+        "/shortlist",
+        "/terms"
+      ]
+    }
+  },
+  {
+    "path": "/pages/parallels-desktop-vs-virtualbox-which-is-better-in-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/contact",
+        "/deal-radar",
+        "/editorial-policy",
+        "/go/parallels",
+        "/newsletter",
+        "/pages/",
+        "/pages/parallels-desktop-free-trial-2026-how-to-get-it-step-by-step",
+        "/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026",
         "/privacy",
         "/shortlist",
         "/terms"
