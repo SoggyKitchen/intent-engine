@@ -235,7 +235,7 @@
 /go/quickbooks-trial https://quickbooks.intuit.com/signup/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 # Xero CJ: ~$40/signup (adding trial variant alongside existing /go/xero)
 /go/xero-trial https://www.xero.com/signup/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
-# Monday.com Impact: ~$30/conversion
+# Monday.com: PartnerStack application DECLINED 2026-08-19 — non-affiliate UTM link only
 /go/monday https://monday.com/?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
 # Dashlane CJ: adding trial variant
 /go/dashlane-trial https://www.dashlane.com/download?utm_source=saaspare&utm_medium=affiliate&utm_campaign=go 302
