@@ -33,6 +33,28 @@
       "commit": "ae92f4fb"
     },
     {
+      "date": "2026-08-20",
+      "session": "revenue-hunter",
+      "gmail_scan": {
+        "monday_com": "PartnerStack application DECLINED 2026-08-19 — updated _redirects comment, links remain as non-affiliate UTM only",
+        "awin": "No new approvals — EngageBay already live",
+        "impact": "No new activations — HubSpot/1Password still pending",
+        "partnerstack": "monday.com DECLINED; ClickUp/ActiveCampaign/Dashlane still locked"
+      },
+      "built": [
+        "shopify-vs-woocommerce-which-is-better-in-2026.html — NEW PAGE (rebuilt full featured version). Shopify 9.1/10 vs WooCommerce 8.7/10. Shopify wins. 3x /go/shopify CTAs. WooCommerce wins exceptions documented honestly. FAQPage + Article JSON-LD schema. 5-tab layout. Massive search volume gap filled."
+      ],
+      "ctr_fixes": [
+        "shopify-vs-recurly: title already updated by CEO daily session (77a1895e) — no duplicate fix needed"
+      ],
+      "affiliates_activated": [],
+      "gsc_observations": {
+        "note": "CEO daily session 77a1895e already fixed: ramp-pricing, mixpanel-pricing, notion-free-plan, sentry-free-plan, nordlayer-pricing, new getresponse-vs-campaign-monitor page"
+      },
+      "tests": "93/93 passed",
+      "commit": "153ec1f7"
+    },
+    {
       "date": "2026-08-15",
       "session": "sunday-maximizer",
       "built": [
