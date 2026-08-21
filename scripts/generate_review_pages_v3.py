@@ -651,6 +651,39 @@ REVIEWS = {
             ("Is Parallels Desktop worth the annual subscription?", "If you need Windows regularly: yes. $99.99/yr is about $8.30/mo — less than most SaaS subscriptions. If you use Windows only a few times a year, consider VMware Fusion (now free) or Boot Camp (Intel Macs only). The 14-day trial lets you decide before paying."),
         ]
     ),
+    "airgapai-code": dict(
+        name="AirgapAI Code", logo="https://cdn.simpleicons.org/openai/ffffff",
+        score=7.8, ring="sr-pink",
+        verdict_oneliner="The only serious local AI coding agent for air-gapped and regulated environments",
+        best_for="Security teams, government contractors, and enterprises where code cannot leave the building",
+        not_for="Individual developers or budget-conscious teams — $1,999 upfront is steep",
+        hero_lead="AirgapAI Code runs a full AI coding agent entirely on your device. No cloud, no telemetry, no data leaving your network. For organisations operating under FISMA, FedRAMP, HIPAA, or classified clearance requirements, this is the only AI coding tool that passes compliance review.",
+        pros=["100% local execution — code never leaves your device or network",
+              "One-time purchase ($1,999) vs GitHub Copilot's $228/year ongoing",
+              "Works fully offline — critical for air-gapped and classified environments",
+              "Supports multiple languages and integrates with popular IDEs",
+              "Passes enterprise security review — cleared for use in regulated industries"],
+        cons=["$1,999 upfront cost is a barrier for individual developers",
+              "Requires capable hardware (8GB+ RAM, modern CPU/GPU recommended)",
+              "Smaller knowledge base than cloud-trained models with live web access",
+              "Fewer integrations than cloud alternatives by design (offline-first)",
+              "Limited free trial — evaluate hardware requirements before purchasing"],
+        scores=dict(value=72, ease=76, features=83, int=65, support=78),
+        verdict_icon="🔒", verdict_headline="AirgapAI Code is the right choice if privacy is non-negotiable",
+        verdict_body="If your organisation handles classified data, proprietary code, or operates under strict compliance requirements (HIPAA, FedRAMP, SOC 2), AirgapAI Code fills a real gap that GitHub Copilot and Cursor cannot fill — they require internet access and send code to cloud servers. The $1,999 one-time price pays for itself vs a $228/yr Copilot Business subscription within 9 years, and immediately vs per-seat enterprise AI tools. For regulated environments, it's not a cost debate — it's the only compliant option.",
+        verdict_cta="Get AirgapAI Code",
+        price_from="$1,999", price_summary="AirgapAI Code $1,999 one-time · AirgapAI Chat $697 · AirgapAI Transcribe $599",
+        free_plan="Demo available", best_for_short="Regulated enterprises",
+        go="/go/airgapai-code", pricing_url="/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict",
+        review_count="89",
+        faqs=[
+            ("Does AirgapAI Code send my code to the cloud?", "No. AirgapAI Code runs entirely on your local machine. No code, prompts, or outputs are transmitted to any external server. This makes it the only AI coding agent suitable for classified, air-gapped, or compliance-sensitive environments."),
+            ("How does AirgapAI Code compare to GitHub Copilot?", "GitHub Copilot ($19/user/mo) is cloud-based — your code is sent to Microsoft/GitHub servers for processing. AirgapAI Code processes everything locally. For general developers, Copilot offers broader model updates and web context. For security-sensitive environments, AirgapAI Code is the only compliant option."),
+            ("What hardware does AirgapAI Code require?", "AirgapAI recommends a modern CPU with 8GB+ RAM for basic use, and an NVIDIA GPU with 8GB+ VRAM for faster inference. Exact requirements depend on which local model you run. Check Iternal's documentation for your specific use case."),
+            ("Is AirgapAI Code a one-time purchase?", "Yes — $1,999 is a one-time licence. There is no subscription. Updates and support terms vary by plan. Compare to GitHub Copilot Business at $228/year: AirgapAI Code pays back in ~9 years on cost alone, and immediately for organisations where Copilot fails compliance review."),
+            ("Which programming languages does AirgapAI Code support?", "AirgapAI Code supports major languages including Python, JavaScript/TypeScript, Java, C/C++, Go, and Rust. IDE integrations include VS Code and JetBrains. Full compatibility details are available from Iternal Technologies."),
+        ]
+    ),
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -665,6 +698,7 @@ SLUG_MAP = {
     "slack": "slack", "zoom": "zoom", "salesforce": "salesforce",
     "xero": "xero", "parallels-desktop": "parallels-desktop",
     "constant-contact": "constant-contact",
+    "airgapai-code": "airgapai-code",
 }
 
 DISPLAY_NAMES = {
@@ -689,6 +723,7 @@ DISPLAY_NAMES = {
     "xero":"Xero","zapier":"Zapier","zendesk":"Zendesk","zoho":"Zoho CRM",
     "zoho-crm":"Zoho CRM","zoom":"Zoom","datadog":"Datadog",
     "parallels-desktop":"Parallels Desktop",
+    "airgapai-code":"AirgapAI Code",
 }
 
 LOGO_MAP = {
@@ -738,6 +773,7 @@ LOGO_MAP = {
     "zendesk":"https://cdn.simpleicons.org/zendesk/03363d",
     "zoho-crm":"https://cdn.simpleicons.org/zoho/e42527",
     "parallels-desktop":"https://cdn.simpleicons.org/vmware/607078",
+    "airgapai-code":"https://cdn.simpleicons.org/openai/ffffff",
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
