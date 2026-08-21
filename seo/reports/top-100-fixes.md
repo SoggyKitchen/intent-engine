@@ -86,10 +86,13 @@
 - `/pages/best-vpn-for-small-business-2026` (90.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts` (90.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/rippling-free-trial-2026-how-to-get-it-step-by-step` (90.69/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (90.81/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
 - `/pages/does-elevenlabs-have-a-free-plan-2026-full-breakdown` (91.0/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, title_length_outside_target
 - `/pages/does-getresponse-have-a-free-plan-2026-full-breakdown` (91.0/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, title_length_outside_target
 - `/pages/does-protonmail-have-a-free-plan-2026-full-breakdown` (91.0/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, title_length_outside_target
+- `/pages/getresponse-vs-campaign-monitor-which-is-better-in-2026` (91.0/100): meta_length_outside_target, missing_last_verified, title_length_outside_target
 - `/pages/grandfathered-saas-pricing-2026` (91.0/100): missing_correction_cta, missing_methodology
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (91.0/100): meta_length_outside_target, missing_correction_cta, missing_methodology, title_length_outside_target
 - `/pages/ramp-pricing-history-2026` (91.0/100): meta_length_outside_target, missing_correction_cta, missing_methodology, title_length_outside_target
 - `/pages/saas-pricing-index` (91.0/100): meta_length_outside_target, title_length_outside_target
 - `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (91.07/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
@@ -97,6 +100,3 @@
 - `/pages/semrush-coupon-code-promo-codes-2026-verified-discounts` (91.41/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (91.44/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/best-landing-page-builder-2026` (91.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
-- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (91.64/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (91.7/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (91.7/100): missing_correction_cta, missing_methodology, thin_buyer_page

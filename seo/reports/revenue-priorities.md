@@ -93,10 +93,10 @@
 - `/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 89.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/best-vpn-for-small-business-2026` (pricing, score 90.5): CTA=True, affiliateLinks=4, disclosure=True
 - `/pages/rippling-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 90.69): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 90.81): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-elevenlabs-have-a-free-plan-2026-full-breakdown` (free_trial, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-getresponse-have-a-free-plan-2026-full-breakdown` (free_trial, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-protonmail-have-a-free-plan-2026-full-breakdown` (free_trial, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/grandfathered-saas-pricing-2026` (pricing, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/ramp-pricing-history-2026` (pricing, score 91.0): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (pricing, score 91.64): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/linear-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 91.73): CTA=True, affiliateLinks=1, disclosure=True

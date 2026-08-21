@@ -62760,8 +62760,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 5,
-    "meta_description": "Notion",
-    "meta_length": 6,
+    "meta_description": "Notion free plan August 2026: unlimited blocks \u2014 hard limits are 10 guests, 7-day version history, no automations, no AI. Full limits table + exactly when the free plan stops working.",
+    "meta_length": 183,
     "page_type": "free_trial",
     "path": "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
     "robots": "",
@@ -62784,8 +62784,8 @@
       "technical": 18,
       "trust": 20.0
     },
-    "title": "Notion Free Plan 2026: Unlimited Blocks \u2014 But 10-Guest Cap, 7-Day History & No Automations",
-    "title_length": 90,
+    "title": "Does Notion Have a Free Plan? (2026) \u2014 Yes, But 10-Guest Limit & 7-Day History Cap",
+    "title_length": 82,
     "url": "https://saaspare.org/pages/does-notion-have-a-free-plan-2026-full-breakdown",
     "warnings": [
       "meta_length_outside_target",
@@ -63321,8 +63321,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 5,
-    "meta_description": "Sentry",
-    "meta_length": 6,
+    "meta_description": "Sentry free plan August 2026: 5,000 error events/month, 1 seat, 7-day retention. Enough for solo devs, not for teams. Exactly when you need Team ($26/mo) or Business ($80/mo).",
+    "meta_length": 175,
     "page_type": "free_trial",
     "path": "/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
     "robots": "",
@@ -63345,8 +63345,8 @@
       "technical": 18,
       "trust": 20.0
     },
-    "title": "Sentry Free Plan 2026: 5K Events/Month, 1 Seat, 7-Day Retention \u2014 Is It Enough?",
-    "title_length": 79,
+    "title": "Does Sentry Have a Free Plan? (2026) \u2014 5K Events/Month, 1 Dev Seat: Honest Verdict",
+    "title_length": 82,
     "url": "https://saaspare.org/pages/does-sentry-have-a-free-plan-2026-full-breakdown",
     "warnings": [
       "meta_length_outside_target",
@@ -73379,6 +73379,102 @@
       "thin_buyer_page"
     ],
     "word_count": 663
+  },
+  {
+    "affiliate_links": [
+      "/go/getresponse"
+    ],
+    "broken_internal_links": [],
+    "canonical": "https://saaspare.org/pages/getresponse-vs-campaign-monitor-which-is-better-in-2026",
+    "external_links": [],
+    "file": "site/pages/getresponse-vs-campaign-monitor-which-is-better-in-2026.html",
+    "h1": [
+      "GetResponse vs Campaign Monitor (2026): Which Email Tool Wins?"
+    ],
+    "h2": [
+      "Overview: GetResponse vs Campaign Monitor",
+      "Who Should Pick GetResponse?",
+      "Who Should Pick Campaign Monitor?",
+      "Pricing Comparison (August 2026)",
+      "Feature Comparison",
+      "Our Final Verdict",
+      "Frequently Asked Questions",
+      "More GetResponse comparisons",
+      "Related Comparisons"
+    ],
+    "has_affiliate_disclosure": true,
+    "has_comparison_table": true,
+    "has_correction": true,
+    "has_cta": true,
+    "has_email_capture": true,
+    "has_faq": true,
+    "has_faq_schema": true,
+    "has_last_verified": false,
+    "has_methodology": true,
+    "has_pricing_source": false,
+    "has_pricing_table": true,
+    "has_related_pages": true,
+    "has_sticky_cta": true,
+    "has_trust_box": true,
+    "images": 0,
+    "images_missing_alt": 0,
+    "internal_links": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/authors/kaylan-von-papen",
+      "/corrections",
+      "/deal-radar",
+      "/editorial-policy",
+      "/go/getresponse",
+      "/methodology",
+      "/newsletter",
+      "/pages/",
+      "/pages/getresponse-free-trial-2026-how-to-get-it-step-by-step",
+      "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
+      "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
+      "/pages/getresponse-vs-brevo-which-is-better-in-2026",
+      "/pages/getresponse-vs-klaviyo-which-is-better-in-2026",
+      "/pages/getresponse-vs-mailchimp-which-is-better-in-2026",
+      "/privacy",
+      "/roi",
+      "/shortlist"
+    ],
+    "issues": [],
+    "jsonld_blocks": 2,
+    "meta_description": "GetResponse vs Campaign Monitor 2026: GetResponse wins for automation, webinars and landing pages ($15/mo). Campaign Monitor wins for design templates and agency work. Score-based verdict.",
+    "meta_length": 188,
+    "page_type": "comparison",
+    "path": "/pages/getresponse-vs-campaign-monitor-which-is-better-in-2026",
+    "robots": "index, follow",
+    "schema_types": [
+      "Answer",
+      "Article",
+      "FAQPage",
+      "Organization",
+      "Person",
+      "Question"
+    ],
+    "score": {
+      "content": 20,
+      "conversionRevenue": 10,
+      "internalLinking": 15,
+      "overall": 91.0,
+      "performanceUx": 5,
+      "schemaIndexability": 8,
+      "technical": 18,
+      "trust": 15.0
+    },
+    "title": "GetResponse vs Campaign Monitor (2026): Which Email Tool Wins? Honest Verdict",
+    "title_length": 77,
+    "url": "https://saaspare.org/pages/getresponse-vs-campaign-monitor-which-is-better-in-2026",
+    "warnings": [
+      "meta_length_outside_target",
+      "missing_last_verified",
+      "title_length_outside_target"
+    ],
+    "word_count": 1156
   },
   {
     "affiliate_links": [
@@ -96121,8 +96217,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Mixpanel pricing August 2026: Free (20M events), Growth from $28/mo, Enterprise custom. How event-volume pricing scales and the cost trap most teams hit.",
-    "meta_length": 153,
+    "meta_description": "Mixpanel pricing August 2026: Free tier gives 20M events/mo \u2014 but growth teams hit the $28/mo Growth plan faster than expected. Event-volume cost trap explained, real upgrade triggers.",
+    "meta_length": 184,
     "page_type": "pricing",
     "path": "/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -96135,25 +96231,26 @@
       "SoftwareApplication"
     ],
     "score": {
-      "content": 19.8,
+      "content": 19.81,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.8,
+      "overall": 90.81,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 19,
+      "technical": 18,
       "trust": 15.0
     },
-    "title": "Mixpanel Pricing 2026: Free (20M Events) vs $28/mo Growth \u2014 Every Plan Compared",
-    "title_length": 79,
+    "title": "Mixpanel Pricing 2026 [August]: Free 20M Events \u2014 When You'll Hit the $28/mo Wall",
+    "title_length": 81,
     "url": "https://saaspare.org/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
       "thin_buyer_page",
       "title_length_outside_target"
     ],
-    "word_count": 760
+    "word_count": 762
   },
   {
     "affiliate_links": [
@@ -100482,8 +100579,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated August 2026. NordLayer 2026: Lite $9/user, Core $11/user, Business $14/user/mo (annual). Real pricing, team minimums, annual vs monthly.",
-    "meta_length": 144,
+    "meta_description": "NordLayer pricing August 2026: Lite $9/user, Core $11/user, Business $14/user/mo (annual). Critical catch: 5-seat minimum means entry cost is $45/mo even for 1 user. Full team-size math.",
+    "meta_length": 186,
     "page_type": "pricing",
     "path": "/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -100496,24 +100593,25 @@
       "SoftwareApplication"
     ],
     "score": {
-      "content": 19.68,
+      "content": 19.7,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 94.18,
+      "overall": 93.2,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 19,
+      "technical": 18,
       "trust": 17.5
     },
-    "title": "NordLayer Pricing 2026: $9 Lite, $11 Core, $14 Business [August Compared]",
-    "title_length": 73,
+    "title": "NordLayer Pricing 2026: $9\u2013$14/user \u2014 But the 5-Seat Minimum Costs $45/mo Minimum",
+    "title_length": 81,
     "url": "https://saaspare.org/pages/nordlayer-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
+      "meta_length_outside_target",
       "missing_methodology",
       "thin_buyer_page",
       "title_length_outside_target"
     ],
-    "word_count": 736
+    "word_count": 740
   },
   {
     "affiliate_links": [
@@ -115888,8 +115986,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Updated August 2026. Ramp pricing August 2026: June added Bill Pay pricing; core card still free, Ramp Plus $15/user/mo. Every plan change tracked with exact dates.",
-    "meta_length": 164,
+    "meta_description": "Ramp pricing August 2026: core card is genuinely free ($0). Ramp Plus costs $15/user/mo (or $12 annual). Every plan change logged with exact dates \u2014 no guessing what changed.",
+    "meta_length": 174,
     "page_type": "pricing",
     "path": "/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "robots": "",
@@ -115905,21 +116003,22 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 92.0,
+      "overall": 91.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 19,
+      "technical": 18,
       "trust": 15.0
     },
-    "title": "Ramp Pricing 2026 [August Update]: Free Card, $15/user Plus \u2014 Every Change Tracked",
-    "title_length": 82,
+    "title": "Ramp Pricing 2026: Is the Card Really Free? $0 Free vs $15/user Plus \u2014 August Verdict",
+    "title_length": 85,
     "url": "https://saaspare.org/pages/ramp-pricing-2026-plans-costs-what-you-actually-pay",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
       "title_length_outside_target"
     ],
-    "word_count": 1093
+    "word_count": 1096
   },
   {
     "affiliate_links": [
@@ -128308,7 +128407,7 @@
     "has_faq_schema": true,
     "has_last_verified": true,
     "has_methodology": true,
-    "has_pricing_source": true,
+    "has_pricing_source": false,
     "has_pricing_table": true,
     "has_related_pages": true,
     "has_sticky_cta": true,
@@ -128327,19 +128426,20 @@
       "/methodology",
       "/newsletter",
       "/pages/",
-      "/pages/7-best-shopify-alternatives-in-2026-free-paid",
-      "/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict",
-      "/pages/recurly-vs-bold-commerce-which-is-better-in-2026",
-      "/pages/shopify-free-trial-2026-how-to-get-it-step-by-step",
-      "/pages/woocommerce-vs-shopify-which-is-better-in-2026",
+      "/pages/best-shopify-alternatives-in-2026-free-paid",
+      "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/shopify-review-2026-is-it-worth-it-honest-verdict",
+      "/pages/shopify-vs-bigcommerce-which-is-better-in-2026",
+      "/pages/shopify-vs-recurly-which-is-better-in-2026",
+      "/pages/shopify-vs-squarespace-which-is-better-in-2026",
       "/privacy",
       "/roi",
       "/shortlist"
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Updated August 2026. Bottom line: Shopify wins (9.4/10). Shopify vs WooCommerce compared on pricing and features \u2014 score-based verdict, no paid placements. 2026.",
-    "meta_length": 161,
+    "meta_description": "Shopify vs WooCommerce August 2026: Shopify ($29/mo) wins for ease + reliability. WooCommerce (free plugin) wins for control + lower cost at scale. Real pricing, no paid placements.",
+    "meta_length": 181,
     "page_type": "comparison",
     "path": "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
     "robots": "index, follow",
@@ -128352,22 +128452,23 @@
       "Question"
     ],
     "score": {
-      "content": 19.29,
+      "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 97.29,
+      "overall": 93.5,
       "performanceUx": 5,
       "schemaIndexability": 8,
-      "technical": 20,
-      "trust": 20.0
+      "technical": 18,
+      "trust": 17.5
     },
-    "title": "Shopify vs WooCommerce (2026): Honest Verdict & Who Wins",
-    "title_length": 56,
+    "title": "Shopify vs WooCommerce 2026: Honest Verdict \u2014 $29/mo Hosted vs Free Self-Hosted",
+    "title_length": 79,
     "url": "https://saaspare.org/pages/shopify-vs-woocommerce-which-is-better-in-2026",
     "warnings": [
-      "thin_buyer_page"
+      "meta_length_outside_target",
+      "title_length_outside_target"
     ],
-    "word_count": 658
+    "word_count": 1466
   },
   {
     "affiliate_links": [
