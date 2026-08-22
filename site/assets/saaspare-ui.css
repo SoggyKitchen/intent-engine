@@ -208,6 +208,40 @@ h1:not(.hero-title) span.grad-text,
 .panel{
   background:linear-gradient(145deg,rgba(255,255,255,.054),rgba(255,255,255,.028)) !important;
 }
+.related.section{
+  max-width:920px;
+  margin:3rem auto;
+  padding:1.5rem;
+  background:var(--glass);
+  border:1px solid var(--line);
+}
+.related.section h3{
+  font-size:1.1rem;
+  margin:0 0 1rem 0;
+  color:var(--pink);
+}
+.related.section{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.7rem;
+}
+.related.section h3{
+  flex-basis:100%;
+}
+.related.section a{
+  padding:.5rem .9rem;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  color:var(--ink-2);
+  text-decoration:none;
+  font-size:.88rem;
+  transition:border-color .2s,color .2s;
+}
+.related.section a:hover{
+  border-color:var(--line-pink,rgba(255,75,115,.25));
+  color:var(--pink);
+}
 @media(min-width:980px){
   .container{
     display:grid;

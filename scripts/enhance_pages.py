@@ -163,6 +163,12 @@ def patch(f: Path, html: str) -> str | None:
             f'<a href="{DOMAIN}/pages/{s}.html">{t}</a>'
             for s, t in cluster_links
         )
+        # Strip any prior injected block first so re-runs (even without the
+        # <head> marker surviving a regen) can never duplicate this section.
+        html = re.sub(
+            r'\s*<div class="related section">\s*<h3>Related Comparisons</h3>.*?</div>',
+            '', html, flags=re.DOTALL
+        )
         # Append to existing .related section if present, else inject before </body>
         if 'class="related"' in html:
             html = re.sub(
