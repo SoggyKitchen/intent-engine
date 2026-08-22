@@ -1,9 +1,9 @@
 {
-  "total_pages": 1522,
-  "updated": 1518,
+  "total_pages": 1523,
+  "updated": 1519,
   "skipped": 4,
-  "orphans_before": 63,
-  "orphans_after": 59,
+  "orphans_before": 64,
+  "orphans_after": 53,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
@@ -11,8 +11,8 @@
         "/pages/1password-vs-password-boss-which-is-better-in-2026",
         "/pages/tenable-vs-tresorit-which-is-better-in-2026",
         "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/microsoft-teams-vs-loom-which-is-better-in-2026",
-        "/pages/retool-vs-vercel-which-is-better-in-2026"
+        "/pages/lever-vs-deel-which-is-better-in-2026",
+        "/pages/jetbrains-vs-vercel-which-is-better-in-2026"
       ]
     },
     {
@@ -21,8 +21,8 @@
         "/pages/qualys-vs-tenable-which-is-better-in-2026",
         "/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026",
         "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
-        "/pages/hubspot-vs-convertkit-which-is-better-in-2026",
-        "/pages/jasper-ai-vs-pinecone-which-is-better-in-2026"
+        "/pages/hubspot-vs-drip-which-is-better-in-2026",
+        "/pages/semrush-vs-spyfu-which-is-better-in-2026"
       ]
     },
     {
@@ -31,8 +31,8 @@
         "/pages/lastpass-vs-dashlane-which-is-better-in-2026",
         "/pages/1password-vs-roboform-which-is-better-in-2026",
         "/pages/nordlayer-vs-wireguard-which-is-better-in-2026",
-        "/pages/datadog-vs-pagerduty-which-is-better-in-2026",
-        "/pages/bamboohr-vs-culture-amp-which-is-better-in-2026"
+        "/pages/amplitude-vs-looker-which-is-better-in-2026",
+        "/pages/shopify-vs-etsy-which-is-better-in-2026"
       ]
     }
   ]

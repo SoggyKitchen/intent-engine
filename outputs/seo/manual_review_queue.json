@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-22T07:18:25+00:00",
+  "generated_at_utc": "2026-08-22T21:19:41+00:00",
   "mode": "apply",
-  "pages_flagged": 41,
+  "pages_flagged": 42,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -118,6 +118,27 @@
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
           "context": "r, free account, or ad-supported option. What NordVPN offers instead: a <strong>30-day money-back guarantee</strong> on all paid plans (full refund, no questions), and a <strong>7-day fre"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/nordvpn-vs-hotspot-shield-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "26)</h2> <p><strong>NordVPN offers three plans</strong>, all with a 30-day money-back guarantee:</p> <div style=\"overflow-x:auto\"> <table class=\"ar-t"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "<div class=\"vd-desc\">9.2/10 \u2014 Audited no-logs, NordLynx speed, 6,300+ servers, 30-day money-back guarantee.</div> <div class=\"cta-stack\" style=\"margin-top:1rem\">"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "<div class=\"faq-a\">No. NordVPN has no free tier. All paid plans come with a 30-day money-back guarantee with no questions asked. Hotspot Shield's free plan is limited to 500MB of data"
         }
       ],
       "trust_state_bumped": false
@@ -415,7 +436,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!-"
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <!"
         }
       ],
       "trust_state_bumped": false
