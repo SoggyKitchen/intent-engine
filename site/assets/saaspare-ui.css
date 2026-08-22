@@ -209,8 +209,8 @@ h1:not(.hero-title) span.grad-text,
   background:linear-gradient(145deg,rgba(255,255,255,.054),rgba(255,255,255,.028)) !important;
 }
 .related.section{
-  max-width:920px;
-  margin:3rem auto;
+  max-width:920px !important;
+  margin:3rem auto !important;
   padding:1.5rem;
   background:var(--glass);
   border:1px solid var(--line);
