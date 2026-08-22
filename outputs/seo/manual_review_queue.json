@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-22T21:41:38+00:00",
+  "generated_at_utc": "2026-08-22T23:23:11+00:00",
   "mode": "apply",
-  "pages_flagged": 42,
+  "pages_flagged": 44,
   "claim_labels_seen": [
     "money_back_guarantee",
     "sla_guarantee"
@@ -144,6 +144,32 @@
       "trust_state_bumped": false
     },
     {
+      "path": "site/pages/nordvpn-vs-tunnelbear-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "><td class=\"win\">10 devices</td><td>Unlimited</td></tr> <tr><td>Money-back guarantee</td><td class=\"win\">30 days</td><td>Limited (no refunds after purchase in most"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "ffers 6,400+ servers, faster speeds, split tunnelling, Threat Protection, and a 30-day money-back guarantee. TunnelBear's free 500MB/mo tier is its only unique advantage.</div></div>"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "tier (500MB/mo) and paid plans from $3.33/mo (annual). NordVPN offers a proper 30-day money-back guarantee; TunnelBear's refund policy varies by region.</div></div> <div clas"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "aming, torrenting, or daily use. NordVPN has no free tier but covers you with a 30-day money-back guarantee.</div></div> <div class=\"faq-item reveal-up\"><div class=\"faq-q\">Wha"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
       "path": "site/pages/elementor-free-trial-2026-how-to-get-it-step-by-step.html",
       "claims": [
         {
@@ -254,6 +280,17 @@
           "label": "money_back_guarantee",
           "snippet": "45-day money-back guarantee",
           "context": "<p style=\"color:rgba(255,248,245,.65);font-size:.9rem;line-height:1.6;margin:0\">45-day money-back guarantee \u2014 the longest in the industry. 10,000+ servers. Cheaper at $2.03/month.</p>"
+        }
+      ],
+      "trust_state_bumped": false
+    },
+    {
+      "path": "site/pages/hostpapa-vs-namecheap-which-is-better-in-2026.html",
+      "claims": [
+        {
+          "label": "money_back_guarantee",
+          "snippet": "Money-back guarantee",
+          "context": "ort</td><td class=\"win\">Yes (24/7)</td><td>No</td></tr> <tr><td>Money-back guarantee</td><td class=\"win\">30 days</td><td>30 days</td></tr> </tbody>"
         }
       ],
       "trust_state_bumped": false
@@ -436,7 +473,7 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div> <"
+          "context": "a> <p style=\"font-size:.72rem;color:rgba(255,248,245,.3);margin-top:.75rem\">30-day money-back guarantee &middot; Affiliate link \u2014 we may earn a commission</p> </div>"
         }
       ],
       "trust_state_bumped": false
