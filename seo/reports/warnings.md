@@ -86,6 +86,7 @@
 - `/pages/ahrefs-vs-surfer-seo-which-is-better-in-2026` (comparison, 97.5/100): thin_buyer_page
 - `/pages/ai-tools-pricing-changes-2026` (pricing, 85.5/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
 - `/pages/airbase-vs-divvy-which-is-better-in-2026` (comparison, 95.14/100): thin_buyer_page
+- `/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict` (review, 86.27/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, 92.09/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/amplitude-free-trial-2026-how-to-start-what-you-get` (free_trial, 92.67/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 91.64/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
@@ -299,4 +300,3 @@
 - `/pages/clearscope-vs-rankmath-pro-which-is-better-in-2026` (comparison, 95.44/100): thin_buyer_page
 - `/pages/clickup-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.38/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/clickup-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.66/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/clickup-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): missing_correction_cta, missing_methodology

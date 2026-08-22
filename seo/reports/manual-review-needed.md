@@ -35,6 +35,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/best-ecommerce-platforms-2026`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/saas-pricing-calculator-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/v3-preview-privacy`: missing_trustbox, thin_buyer_page
 - `/pages/linear-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/best-fiverr-alternatives-2026`: missing_correction_cta, missing_trustbox, thin_buyer_page
@@ -201,4 +202,3 @@ These are not safe to fake or mass rewrite.
 - `/pages/getresponse-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/mixpanel-free-trial-2026-how-to-start-what-you-get`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/tresorit-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/xero-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page

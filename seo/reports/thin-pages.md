@@ -64,6 +64,7 @@
 - `/pages/ahrefs-vs-surfer-seo-which-is-better-in-2026`: 701 words, score 97.5
 - `/pages/ai-tools-pricing-changes-2026`: 499 words, score 85.5
 - `/pages/airbase-vs-divvy-which-is-better-in-2026`: 628 words, score 95.14
+- `/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict`: 783 words, score 86.27
 - `/pages/amplitude-coupon-2026-discount-codes-promo`: 617 words, score 92.09
 - `/pages/amplitude-free-trial-2026-how-to-start-what-you-get`: 734 words, score 92.67
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay`: 728 words, score 91.64
@@ -299,4 +300,3 @@
 - `/pages/deel-free-trial-2026-how-to-get-it-step-by-step`: 741 words, score 92.7
 - `/pages/deel-pricing-2026-plans-costs-what-you-actually-pay`: 735 words, score 95.17
 - `/pages/deel-promo-code-2026-discounts-deals-that-actually-work`: 545 words, score 91.72
-- `/pages/deel-review-2026-is-it-worth-it-honest-verdict`: 641 words, score 94.7

@@ -6,7 +6,7 @@
 - accounting: 2 supporting pages detected
 - security: 28 supporting pages detected
 - developer: 14 supporting pages detected
-- ai: 216 supporting pages detected
-- hr: 49 supporting pages detected
+- ai: 217 supporting pages detected
+- hr: 50 supporting pages detected
 - ecommerce: 7 supporting pages detected
 - marketing: 6 supporting pages detected

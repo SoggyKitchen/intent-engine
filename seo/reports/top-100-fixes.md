@@ -47,6 +47,7 @@
 - `/pages/best-ecommerce-platforms-2026` (85.7/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown` (85.91/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/saas-pricing-calculator-2026` (86.12/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
+- `/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict` (86.27/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/pages/v3-preview-privacy` (86.31/100): missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/best-fiverr-alternatives-2026` (86.36/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-vpn-australia-2026` (86.38/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
@@ -99,4 +100,3 @@
 - `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (91.09/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/semrush-coupon-code-promo-codes-2026-verified-discounts` (91.41/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (91.44/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/best-landing-page-builder-2026` (91.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
