@@ -65,6 +65,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
     "file": "site/pages/amplitude-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -117,6 +130,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/aweber-vs-constant-contact-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/aweber-vs-constant-contact-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -154,6 +180,19 @@
       "trust_block"
     ],
     "path": "/pages/best-devtools-for-secure-code-review-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-email-marketing-apps-for-shopify-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-email-marketing-apps-for-shopify-2026",
     "premium": false
   },
   {
@@ -339,6 +378,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/elementor-vs-thrive-architect-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elementor-vs-thrive-architect-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -352,6 +404,32 @@
     "premium": true
   },
   {
+    "file": "site/pages/elevenlabs-vs-heygen-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/elevenlabs-vs-synthesia-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/engagebay-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -363,6 +441,19 @@
     ],
     "path": "/pages/engagebay-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/engagebay-vs-freshsales-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/engagebay-vs-freshsales-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict.html",
@@ -417,6 +508,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/getresponse-vs-campaign-monitor-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/getresponse-vs-campaign-monitor-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/gusto-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -443,6 +547,32 @@
     "premium": true
   },
   {
+    "file": "site/pages/hetzner-vs-railway-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hetzner-vs-railway-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/hetzner-vs-supabase-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hetzner-vs-supabase-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -454,6 +584,19 @@
     ],
     "path": "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/hostpapa-vs-namecheap-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hostpapa-vs-namecheap-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/hubspot-pricing-history-2026.html",
@@ -664,6 +807,45 @@
     "premium": true
   },
   {
+    "file": "site/pages/nordvpn-vs-hotspot-shield-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordvpn-vs-hotspot-shield-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/nordvpn-vs-tunnelbear-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordvpn-vs-tunnelbear-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/nordvpn-vs-windscribe-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/notion-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -714,6 +896,19 @@
     ],
     "path": "/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/parallels-desktop-vs-virtualbox-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/parallels-desktop-vs-virtualbox-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/partnerstack-review-2026-is-it-worth-it-honest-verdict.html",
@@ -912,6 +1107,45 @@
     "premium": true
   },
   {
+    "file": "site/pages/shopify-vs-ecwid-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/shopify-vs-ecwid-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/shopify-vs-webflow-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/shopify-vs-webflow-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/shopify-vs-woocommerce-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/slack-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -949,19 +1183,6 @@
     ],
     "path": "/pages/stripe-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
-  },
-  {
-    "file": "site/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step",
-    "premium": false
   },
   {
     "file": "site/pages/sucuri-review-2026-is-it-worth-it-honest-verdict.html",
@@ -1014,6 +1235,45 @@
     ],
     "path": "/pages/surfshark-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/surfshark-vs-ipvanish-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/surfshark-vs-ipvanish-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/surfshark-vs-mullvad-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/surfshark-vs-mullvad-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/surfshark-vs-windscribe-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/surfshark-vs-windscribe-which-is-better-in-2026",
+    "premium": false
   },
   {
     "file": "site/pages/teachable-review-2026-is-it-worth-it-honest-verdict.html",

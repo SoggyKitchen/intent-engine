@@ -1,7 +1,7 @@
 # Link Cleanup
 
 - Pages with broken internal links: 5
-- Internal links still containing `.html`: 21
+- Internal links still containing `.html`: 0
 
 ## Broken Internal Links
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: /pages/affiliate-disclosure, /pages/categories/crm, /pages/privacy-policy
