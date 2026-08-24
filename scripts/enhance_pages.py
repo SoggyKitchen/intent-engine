@@ -25,7 +25,18 @@ ORG_SCHEMA = json.dumps({
     "url": DOMAIN,
     "logo": f"{DOMAIN}/og-default.png",
     "description": "Unbiased B2B SaaS comparisons, real pricing, and expert recommendations.",
-    "sameAs": ["https://twitter.com/SaaSpare"]
+    "foundingDate": "2026-04-18",
+    "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ABN",
+        "value": "20602197525"
+    },
+    "sameAs": [
+        "https://www.linkedin.com/company/saaspare",
+        "https://twitter.com/saaspare",
+        "https://x.com/saaspare",
+        "https://www.crunchbase.com/organization/saaspare"
+    ]
 }, ensure_ascii=False, indent=2)
 
 # ---------------------------------------------------------------------------
