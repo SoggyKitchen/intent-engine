@@ -1,5 +1,15 @@
 {
   "svg_files": 16,
-  "pages_updated": 0,
-  "by_vertical": {}
+  "pages_updated": 21,
+  "by_vertical": {
+    "security": 2,
+    "seo": 2,
+    "default": 4,
+    "project-mgmt": 5,
+    "dev-tools": 1,
+    "marketing": 1,
+    "crm": 3,
+    "ecommerce": 2,
+    "finance": 1
+  }
 }
