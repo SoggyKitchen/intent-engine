@@ -4,7 +4,7 @@ Replaces plain engine-generated pricing pages with the premium layout.
 Covers all *-pricing-2026-plans-costs-what-you-actually-pay.html pages.
 """
 from pathlib import Path
-import re, datetime
+import re, datetime, json
 
 SITE      = Path(__file__).resolve().parents[1] / "site"
 TEMPLATES = Path(__file__).resolve().parents[1] / "outputs/templates"
@@ -510,6 +510,41 @@ def slug_to_name(slug):
     }
     return known.get(slug, slug.replace("-", " ").title())
 
+def _parse_price(s):
+    """Extract a numeric monthly price from strings like '$139.95', '$14/user', 'Custom'. None if not a real number."""
+    if not s:
+        return None
+    m = re.search(r'(\d+(?:\.\d+)?)', s.replace(",", ""))
+    return float(m.group(1)) if m else None
+
+
+def build_product_schema(data, canonical_url):
+    """Real Product/AggregateOffer JSON-LD from actual plan prices only.
+    No aggregateRating/reviewCount — we don't have verified review data
+    to back that, and fabricating it is a Google structured-data policy
+    violation (review-snippet spam), not a real trust signal."""
+    plans = data["plans"]
+    prices = [p for p in (_parse_price(pl.get("mo")) for pl in plans) if p is not None]
+    if not prices:
+        return ""
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": data["name"],
+        "description": f"Verified, un-sponsored pricing breakdown for {data['name']} — every plan, hidden fee, and real cost by team size.",
+        "image": data.get("logo", ""),
+        "offers": {
+            "@type": "AggregateOffer",
+            "url": f"https://saaspare.org/{canonical_url}",
+            "priceCurrency": "USD",
+            "lowPrice": min(prices),
+            "highPrice": max(prices),
+            "offerCount": len(plans)
+        }
+    }
+    return f'<script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>'
+
+
 def build_tokens(data):
     plans = data["plans"]
     hidden = data["hidden"]
@@ -624,6 +659,12 @@ def generate_pricing_page(path, template_html, tool_data):
     # Inject favicon
     if "favicon" not in out:
         out = out.replace("</head>", '  <link rel="icon" href="/favicon.ico" sizes="any">\n</head>', 1)
+
+    # Inject Product/AggregateOffer schema (real prices only, no fabricated ratings)
+    if '"@type": "Product"' not in out and '"@type":"Product"' not in out:
+        product_schema = build_product_schema(tool_data, tokens["CANONICAL_URL"])
+        if product_schema:
+            out = out.replace("</head>", product_schema + "\n</head>", 1)
 
     # Clean any remaining tokens
     remaining = re.findall(r'\{\{[A-Z0-9_]+\}\}', out)
