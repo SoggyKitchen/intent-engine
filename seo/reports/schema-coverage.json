@@ -6,7 +6,7 @@
     "/shortlist"
   ],
   "schemaTypes": {
-    "AggregateOffer": 232,
+    "AggregateOffer": 233,
     "Answer": 1320,
     "Article": 1101,
     "Brand": 53,
@@ -30,7 +30,7 @@
     "Report": 1,
     "SearchAction": 1,
     "Service": 1,
-    "SoftwareApplication": 233,
+    "SoftwareApplication": 234,
     "SpeakableSpecification": 9,
     "WebApplication": 1,
     "WebPage": 23,
