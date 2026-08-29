@@ -333,7 +333,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-08-08",
     "pre_blob": "f7f15970813e925dc142e8e1d694613bc490cdfb",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/retool-vs-datadog-which-is-better-in-2026.html",

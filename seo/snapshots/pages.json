@@ -13832,7 +13832,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Updated August 2026. Independent AirgapAI Code review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 21 August 2026.",
     "meta_length": 160,
     "page_type": "review",
@@ -13842,6 +13842,7 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
+      "Organization",
       "Question",
       "SoftwareApplication"
     ],
@@ -13849,11 +13850,11 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 93.0,
+      "overall": 95.5,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 15.0
+      "trust": 17.5
     },
     "title": "AirgapAI Code Review 2026: Is It Worth It? \u2014 SaaSpare",
     "title_length": 53,
@@ -51449,7 +51450,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Updated August 2026. Independent Constant Contact review 2026 \u2014 rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 14 August 2026.",
     "meta_length": 163,
     "page_type": "review",
@@ -51459,6 +51460,7 @@
       "AggregateOffer",
       "Answer",
       "FAQPage",
+      "Organization",
       "Question",
       "SoftwareApplication"
     ],
@@ -51466,11 +51468,11 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 93.0,
+      "overall": 95.5,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 15.0
+      "trust": 17.5
     },
     "title": "Constant Contact Review 2026: Is It Worth It? \u2014 SaaSpare",
     "title_length": 56,
