@@ -1,22 +1,27 @@
 {
   "current_month": "August 2026",
   "today": "2026-08-31",
-  "titles_rewritten": 2,
-  "descs_rewritten": 20,
+  "titles_rewritten": 3,
+  "descs_rewritten": 21,
   "dates_refreshed": 0,
   "answers_added": 15,
-  "files_changed": 21,
+  "files_changed": 23,
   "files_scanned": 1543,
   "title_examples": [
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
-      "before": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
+      "before": "1Password vs Bitwarden: Which Is Better in 2026? [Full Comparison]",
       "after": "1Password vs Bitwarden in 2026: Honest Verdict \u2014 Who Wins & Why"
     },
     {
       "file": "parallels-desktop-coupon-code-promo-codes-2026-verified-discounts.html",
       "before": "Parallels Desktop Coupon 2026 (Verified August): Real Working Codes",
       "after": "Parallels Desktop Coupon 2026 (Verified August) \u2014 Real Working Codes"
+    },
+    {
+      "file": "semrush-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Semrush Free Trial 2026: Get Started Step-by-Step | SaaSpare",
+      "after": "Semrush Free Trial 2026: How to Get the Full August 2026 Offer"
     }
   ],
   "desc_examples": [
@@ -27,8 +32,8 @@
     },
     {
       "file": "1password-vs-bitwarden-which-is-better-in-2026.html",
-      "before": "We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
-      "after": "Updated August 2026. We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for."
+      "before": "We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict, plus who each tool is actually for.",
+      "after": "Updated August 2026. We tested 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict, plus who each tool is actually for."
     },
     {
       "file": "ahrefs-pricing-history-2026.html",
@@ -41,18 +46,18 @@
       "after": "Updated August 2026. Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide.\u2026"
     },
     {
-      "file": "best-ecommerce-platforms-2026.html",
-      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated August 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+      "file": "best-accounting-software-for-freelancers-in-2026.html",
+      "before": "Discover the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features.",
+      "after": "Updated August 2026. the best accounting software for freelancers in 2026. SaaSpare compares tools by ease of use, pricing, and features Real tests, real pricing\u2026"
     },
     {
-      "file": "best-vpn-australia-2026.html",
-      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated August 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying\u2026"
+      "file": "best-ecommerce-platforms-2026.html",
+      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth paying for.",
+      "after": "Updated August 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth\u2026"
     }
   ],
   "indexnow": {
-    "submitted": 21,
+    "submitted": 23,
     "status": 200
   }
 }
