@@ -247,8 +247,17 @@ INDEXNOW_KEY = None
 INDEXNOW_HOST = "api.indexnow.org"
 
 
+# The key IndexNow actually accepts for this host. Two other key files used to
+# sit at site root; both returned 403 UserForbiddedToAccessSite, and because the
+# glob below is alphabetical it always picked a dead one — so every automated
+# IndexNow submission silently failed. Dead keys removed; this pins the good one.
+VERIFIED_INDEXNOW_KEY = "f8fe5282236748eda9fa6a1f13d1afe8"
+
+
 def find_indexnow_key() -> str | None:
     """Look for an existing IndexNow key file (ABC.txt at site root)."""
+    if (SITE / f"{VERIFIED_INDEXNOW_KEY}.txt").exists():
+        return VERIFIED_INDEXNOW_KEY
     for f in SITE.glob("*.txt"):
         if re.fullmatch(r"[a-f0-9]{32,64}\.txt", f.name, re.I):
             return f.stem
