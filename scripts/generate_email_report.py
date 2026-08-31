@@ -56,12 +56,33 @@ memory     = read_json(DATA / "memory.json")
 affiliate  = read_json(DATA / "affiliate_data.json")
 
 pages_total = safe_int(kpis.get("page_counts", {}).get("total_buyer_pages", 0))
-gsc_summary = gsc_opps.get("summary", {})
-gsc_clicks  = safe_int(gsc_summary.get("total_clicks", 0))
-gsc_impr    = safe_int(gsc_summary.get("total_impressions", 0))
-gsc_ctr     = safe_float(gsc_summary.get("overall_ctr_pct", 0))
-p1_pages    = safe_int(gsc_summary.get("pages_pos_4_10", 0))
-p2_pages    = safe_int(gsc_summary.get("pages_pos_11_20", 0))
+# Prefer the LIVE GSC report written by seo_agent.py each run
+# (seo/reports/gsc-opportunities.json). The legacy data/gsc_opportunities.json
+# is a static snapshot that went stale on 2026-06-10 and silently pinned this
+# report to 79 clicks / 22,919 impressions for months.
+_live_gsc = read_json(ROOT / "seo" / "reports" / "gsc-opportunities.json")
+_live_opps = _live_gsc.get("opportunities") or []
+if _live_opps:
+    _seen = {}
+    for _o in _live_opps:
+        _pg = _o.get("page")
+        # de-dupe: engine emits per-query rows plus a "(page rollup)" row per page
+        if _o.get("query") == "(page rollup)":
+            _seen[_pg] = _o
+        elif _pg not in _seen:
+            _seen[_pg] = _o
+    gsc_clicks = safe_int(sum(safe_float(o.get("clicks", 0)) for o in _seen.values()))
+    gsc_impr   = safe_int(sum(safe_float(o.get("impressions", 0)) for o in _seen.values()))
+    gsc_ctr    = round((gsc_clicks / gsc_impr * 100), 2) if gsc_impr else 0.0
+    p1_pages   = sum(1 for o in _seen.values() if 4 <= safe_float(o.get("position", 0)) <= 10)
+    p2_pages   = sum(1 for o in _seen.values() if 11 <= safe_float(o.get("position", 0)) <= 20)
+else:
+    gsc_summary = gsc_opps.get("summary", {})
+    gsc_clicks  = safe_int(gsc_summary.get("total_clicks", 0))
+    gsc_impr    = safe_int(gsc_summary.get("total_impressions", 0))
+    gsc_ctr     = safe_float(gsc_summary.get("overall_ctr_pct", 0))
+    p1_pages    = safe_int(gsc_summary.get("pages_pos_4_10", 0))
+    p2_pages    = safe_int(gsc_summary.get("pages_pos_11_20", 0))
 
 aff_earned  = safe_float(affiliate.get("total_earned_usd", 0))
 aff_period  = affiliate.get("period", "last 30 days")
