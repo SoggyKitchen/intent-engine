@@ -342,5 +342,21 @@
     "baseline_date": "2026-08-13",
     "pre_blob": "46d2ffc40d4e91c6aa53f4a3fdb184810e5051aa",
     "status": "pending"
+  },
+  {
+    "path": "site/pages/index.html",
+    "url": "https://saaspare.org/pages",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-08-31",
+    "pre_blob": "b96da241a91bb2cb7b2b0463527bd62ef604ae75",
+    "status": "pending"
+  },
+  {
+    "path": "site/roi.html",
+    "url": "https://saaspare.org/roi",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-08-31",
+    "pre_blob": "3c2157265f99f473ed3dbcf439217523a548f847",
+    "status": "pending"
   }
 ]

@@ -1,1 +1,2175 @@
-[]
+[
+  {
+    "file": "site/404.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/404",
+    "premium": false
+  },
+  {
+    "file": "site/best-cloud-hosting-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-cloud-hosting-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-crm-software-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-crm-software-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-ecommerce-platform-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-ecommerce-platform-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-finance-software-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-finance-software-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-hr-software-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-hr-software-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-marketing-automation-software-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-marketing-automation-software-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-password-manager-business-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-password-manager-business-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-project-management-software-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-project-management-software-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-seo-tools-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-seo-tools-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-video-conferencing-software-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-video-conferencing-software-2026",
+    "premium": false
+  },
+  {
+    "file": "site/best-vpn-for-business-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/best-vpn-for-business-2026",
+    "premium": false
+  },
+  {
+    "file": "site/cookie-policy.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/cookie-policy",
+    "premium": false
+  },
+  {
+    "file": "site/corrections.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/corrections",
+    "premium": false
+  },
+  {
+    "file": "site/editorial-policy.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/editorial-policy",
+    "premium": false
+  },
+  {
+    "file": "site/newsletter.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/newsletter",
+    "premium": false
+  },
+  {
+    "file": "site/roi.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/roi",
+    "premium": false
+  },
+  {
+    "file": "site/terms.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/terms",
+    "premium": false
+  },
+  {
+    "file": "site/pages/1password-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/1password-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/1password-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/1password-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/ahrefs-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/ahrefs-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/airbase-vs-divvy-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/airbase-vs-divvy-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/amplitude-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/amplitude-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/asana-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/asana-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/asana-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/asana-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/aweber-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/aweber-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-accounting-software-for-freelancers-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "meta",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-accounting-software-for-freelancers-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-affiliate-management-software-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-affiliate-management-software-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-ai-code-assistant-tools-in-2025-deepseek-github-copilot-more-compared.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-ai-code-assistant-tools-in-2025-deepseek-github-copilot-more-compared",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-ai-ml-code-assistant-tools-for-developers-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-ai-ml-code-assistant-tools-for-developers-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-ai-powered-analytics-tools-for-saas-teams-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-ai-powered-analytics-tools-for-saas-teams-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-crm-software-for-b2b-saas-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-crm-software-for-b2b-saas-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-crm-software-for-small-business-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-crm-software-for-small-business-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-crm-software-for-startups-in-2026-free-paid.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-crm-software-for-startups-in-2026-free-paid",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-cybersecurity-software-for-remote-teams-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-cybersecurity-software-for-remote-teams-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-cybersecurity-software-for-small-business-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-cybersecurity-software-for-small-business-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-cybersecurity-tools-for-2025-protect-your-business-from-threats.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-cybersecurity-tools-for-2025-protect-your-business-from-threats",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-cybersecurity-tools-for-b2b-devops-teams-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-cybersecurity-tools-for-b2b-devops-teams-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-cybersecurity-tools-for-b2b-saas-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-cybersecurity-tools-for-b2b-saas-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-cybersecurity-tools-for-b2b-software-teams-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-cybersecurity-tools-for-b2b-software-teams-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-cybersecurity-tools-for-secure-devops-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-cybersecurity-tools-for-secure-devops-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-devops-tools-for-security-compliance-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-devops-tools-for-security-compliance-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-devtools-for-modern-full-stack-developers-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-devtools-for-modern-full-stack-developers-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-devtools-for-secure-code-review-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-devtools-for-secure-code-review-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-devtools-software-for-startups-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-devtools-software-for-startups-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-ecommerce-tools-software-for-small-business-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-finance-ops-software-for-small-business-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-finance-ops-software-for-small-business-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-hr-recruiting-software-for-startups-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-hr-recruiting-software-for-startups-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-hr-software-for-small-business-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-hr-software-for-small-business-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-marketing-automation-software-for-ecommerce-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-marketing-automation-software-for-small-business-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-marketing-automation-software-for-small-business-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-password-managers-software-for-business-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-password-managers-software-for-business-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-project-management-software-for-remote-teams-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-project-management-software-for-remote-teams-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-project-management-software-for-startups-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-project-management-software-for-startups-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-project-management-software-in-2026-for-every-team-size.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-project-management-software-in-2026-for-every-team-size",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-saas-analytics-software-for-small-business-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-saas-analytics-software-for-small-business-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-saas-analytics-tools-for-b2b-companies-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-saas-analytics-tools-for-b2b-companies-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-saas-analytics-tools-for-b2b-product-teams-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-saas-analytics-tools-for-b2b-software-teams-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-saas-analytics-tools-for-b2b-software-teams-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-saas-analytics-tools-for-business-growth-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-saas-analytics-tools-for-business-growth-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-saas-analytics-tools-for-guest-user-flow-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-saas-analytics-tools-for-guest-user-flow-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-saas-analytics-tools-for-product-led-growth-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-saas-analytics-tools-for-product-led-growth-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-saas-analytics-tools-with-ai-export-features-in-2025.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-saas-analytics-tools-with-ai-export-features-in-2025",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-seo-tools-for-agencies-in-2026-enterprise-grade.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-seo-tools-for-agencies-in-2026-enterprise-grade",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-seo-tools-software-for-bloggers-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-seo-tools-software-for-bloggers-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-seo-tools-software-for-content-teams-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-seo-tools-software-for-content-teams-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-video-conferencing-software-for-remote-teams-in-2026-ranked",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-vpn-for-small-business-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-vpn-for-small-business-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/best-wordpress-page-builders-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/best-wordpress-page-builders-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/brex-vs-airbase-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/brex-vs-airbase-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/brex-vs-divvy-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/brex-vs-divvy-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/canva-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/canva-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/clearscope-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/clearscope-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/clickup-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/clickup-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/clickup-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/clickup-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/constant-contact-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/constant-contact-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/contabo-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/contabo-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/copy-ai-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/copy-ai-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/datadog-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/datadog-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/datadog-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/datadog-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/deel-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/deel-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/digitalocean-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/digitalocean-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/docusign-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/docusign-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/does-elementor-have-a-free-plan-2026-full-breakdown.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/does-elementor-have-a-free-plan-2026-full-breakdown",
+    "premium": false
+  },
+  {
+    "file": "site/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
+    "premium": false
+  },
+  {
+    "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/engagebay-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/engagebay-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/expensify-vs-divvy-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/expensify-vs-divvy-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/expensify-vs-netsuite-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/expensify-vs-netsuite-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/expressvpn-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/fiverr-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/getresponse-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/gusto-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/gusto-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/hetzner-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hetzner-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/how-to-evaluate-hubspot-alternatives-for-saas-teams-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/how-to-evaluate-hubspot-alternatives-for-saas-teams-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/hubspot-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hubspot-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/hubspot-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/impact-com-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/impact-com-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/index.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages",
+    "premium": false
+  },
+  {
+    "file": "site/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/jasper-ai-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/jira-vs-wrike-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/jira-vs-wrike-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/kajabi-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/kajabi-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/linear-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/linear-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/linear-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/linear-vs-jira-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/linear-vs-jira-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/miro-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/miro-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/mixpanel-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/mixpanel-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/monday-com-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/monday-com-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/monday-com-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/monday-com-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/netsuite-vs-airbase-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/netsuite-vs-airbase-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/netsuite-vs-divvy-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/netsuite-vs-divvy-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/nordpass-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordpass-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/notion-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/notion-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/notion-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/notion-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/notion-vs-jira-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/notion-vs-jira-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/notion-vs-wrike-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/notion-vs-wrike-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/pandadoc-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/pandadoc-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/partnerstack-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/partnerstack-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/pipedrive-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/pipedrive-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/pipedrive-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/ramp-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/ramp-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/ramp-vs-airbase-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/ramp-vs-airbase-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/ramp-vs-brex-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/ramp-vs-brex-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/ramp-vs-divvy-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/ramp-vs-divvy-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/ramp-vs-netsuite-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/ramp-vs-netsuite-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/rippling-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/rippling-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/saas-buyer-signals-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/saas-buyer-signals-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/saas-roi-calculator.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/saas-roi-calculator",
+    "premium": false
+  },
+  {
+    "file": "site/pages/salesforce-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/salesforce-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/salesforce-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/salesforce-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/se-ranking-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/se-ranking-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/semrush-free-trial-2026-how-to-get-it-step-by-step.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "title",
+      "trust_block"
+    ],
+    "path": "/pages/semrush-free-trial-2026-how-to-get-it-step-by-step",
+    "premium": false
+  },
+  {
+    "file": "site/pages/semrush-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/semrush-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/semrush-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/semrush-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/shopify-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/shopify-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/shopify-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/shopify-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/slack-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/slack-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/stripe-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/stripe-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/stripe-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/stripe-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/stripe-vs-recharge-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/stripe-vs-recharge-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/stripe-vs-recurly-which-is-better-in-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/stripe-vs-recurly-which-is-better-in-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/sucuri-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/sucuri-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/supabase-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/supabase-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/surfshark-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/surfshark-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/teachable-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/teachable-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/tresorit-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/tresorit-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/tresorit-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/tresorit-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/vultr-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/vultr-review-2026-is-it-worth-it-honest-verdict",
+    "premium": false
+  },
+  {
+    "file": "site/pages/workable-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/workable-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/xero-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/xero-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/zendesk-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/zendesk-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/zoom-review-2026-is-it-worth-it-honest-verdict.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/zoom-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  }
+]

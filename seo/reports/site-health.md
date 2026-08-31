@@ -1,14 +1,14 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-08-31T09:43:49+00:00
-Mode: `audit`
+Generated: 2026-08-31T10:40:55+00:00
+Mode: `apply-safe`
 
 ## Current Score
-- Overall SaaSpare Health Score: **94.11/100**
+- Overall SaaSpare Health Score: **94.14/100**
 - Level: **Strong authority-ready**
 - Technical SEO: 19.57/20
 - Content usefulness: 19.21/20
-- Trust/E-E-A-T: 18.77/20
+- Trust/E-E-A-T: 18.8/20
 - Internal linking: 14.89/15
 - Schema/indexability: 7.7/10
 - Conversion/revenue: 8.97/10
@@ -16,10 +16,10 @@ Mode: `audit`
 
 ## Dashboard Summary
 - Pages scanned: 1575
-- Healthy pages (85+): 1519
+- Healthy pages (85+): 1522
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 167
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -42,14 +42,11 @@ Mode: `audit`
 ## Top 25 Highest-Impact Fixes
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f` (41.02/100): no_h1
 - `/fo-verify` (45.06/100): no_h1
-- `/shortlist` (62.87/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page, title_length_outside_target
-- `/contact` (64.76/100): title_length_outside_target
-- `/deal-radar` (68.39/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
-- `/newsletter` (71.25/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
+- `/shortlist` (62.88/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page, title_length_outside_target
+- `/contact` (64.77/100): title_length_outside_target
+- `/deal-radar` (68.41/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
+- `/newsletter` (71.26/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/linear-pricing-history-2026` (83.57/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (84.09/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (84.41/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
@@ -57,17 +54,20 @@ Mode: `audit`
 - `/pages/best-encrypted-cloud-storage-2026-business` (75.81/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/dmca` (75.91/100): meta_length_outside_target
 - `/cookie-policy` (75.97/100): meta_length_outside_target
+- `/pages/linear-pricing-history-2026` (86.07/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (76.3/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/stripe-pricing-history-2026` (86.59/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (86.91/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/request-a-comparison` (79.38/100): title_length_outside_target
-- `/privacy` (79.64/100): meta_length_outside_target
-- `/pages/v3-preview-404` (80.19/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/privacy` (79.66/100): meta_length_outside_target
+- `/pages/v3-preview-404` (80.2/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/saas-glossary` (81.0/100): title_length_outside_target
-- `/pages/v3-preview-contact` (82.71/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-homepage` (82.9/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-contact` (82.72/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-homepage` (82.91/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 
 ## Top 25 Revenue Opportunities
-- `/deal-radar` (coupon, score 68.39): CTA=True, affiliateLinks=5, disclosure=True
+- `/deal-radar` (coupon, score 68.41): CTA=True, affiliateLinks=5, disclosure=True
 - `/pages/best-saas-deals-this-week-2026` (coupon, score 83.64): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 90.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.07): CTA=True, affiliateLinks=1, disclosure=True

@@ -143,6 +143,38 @@
     }
   },
   {
+    "path": "/pages/best-landing-page-builder-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/deal-radar",
+        "/go/elementor",
+        "/go/getresponse",
+        "/go/hubspot-crm",
+        "/pages/",
+        "/pages/best-email-marketing-software-2026",
+        "/pages/contabo-coupon-2026-discount-codes-promo",
+        "/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/elementor-vs-webflow-which-is-better-in-2026",
+        "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/getresponse-vs-mailchimp-which-is-better-in-2026",
+        "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/linear-vs-shortcut-which-is-better-in-2026",
+        "/pages/nordpass-vs-1password-which-is-better-in-2026",
+        "/pages/pagerduty-vs-terraform-which-is-better-in-2026",
+        "/roi",
+        "/shortlist"
+      ]
+    }
+  },
+  {
     "path": "/pages/best-wordpress-page-builders-2026",
     "score": {
       "inbound": [],
@@ -181,7 +213,9 @@
         "/affiliate-disclosure",
         "/authors/kaylan-von-papen",
         "/contact",
+        "/deal-radar",
         "/go/fiverr-pro",
+        "/pages/",
         "/pages/best-fiverr-alternatives-2026",
         "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
         "/pages/does-fiverr-have-a-free-plan-2026-full-breakdown",
@@ -194,7 +228,9 @@
         "/pages/fiverr-vs-upwork-which-is-better-in-2026",
         "/pages/freshsales-vs-keap-which-is-better-in-2026",
         "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
-        "/pages/snyk-vs-tresorit-which-is-better-in-2026"
+        "/pages/snyk-vs-tresorit-which-is-better-in-2026",
+        "/roi",
+        "/shortlist"
       ]
     }
   },

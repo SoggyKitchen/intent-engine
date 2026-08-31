@@ -560,6 +560,7 @@
       "/pages/best-vpn-for-gaming-2026",
       "/pages/best-vpn-for-privacy-and-security-2026",
       "/pages/best-vpn-for-remote-work-2026",
+      "/pages/best-vpn-for-small-business-2026",
       "/pages/best-vpn-for-streaming-2026",
       "/pages/best-web-hosting-2026",
       "/pages/best-wordpress-page-builders-2026",
@@ -783,6 +784,7 @@
       "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
       "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
       "/pages/does-elementor-have-a-free-plan-2026-full-breakdown",
+      "/pages/does-elementor-have-a-free-plan-2026-full-breakdown",
       "/pages/does-elevenlabs-have-a-free-plan-2026-full-breakdown",
       "/pages/does-elevenlabs-have-a-free-plan-2026-full-breakdown",
       "/pages/does-engagebay-have-a-free-plan-2026-full-breakdown",
@@ -807,6 +809,7 @@
       "/pages/does-monday-com-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
+      "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
@@ -2465,6 +2468,7 @@
       "/pages/does-mangools-have-a-free-plan-2026-full-breakdown",
       "/pages/does-monday-com-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
+      "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
       "/pages/does-pipedrive-have-a-free-plan-2026-full-breakdown",
       "/pages/does-protonmail-have-a-free-plan-2026-full-breakdown",
@@ -2499,12 +2503,15 @@
       "/pages/elevenlabs-pricing-history-2026",
       "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
       "/pages/elevenlabs-vs-descript-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
       "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-murf-which-is-better-in-2026",
       "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
       "/pages/elevenlabs-vs-resemble-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-speechify-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
       "/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts",
+      "/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/engagebay-pricing-history-2026",
       "/pages/engagebay-review-2026-is-it-worth-it-honest-verdict",
@@ -2913,6 +2920,7 @@
       "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026",
       "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
       "/pages/nordvpn-vs-tunnelbear-which-is-better-in-2026",
+      "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
       "/pages/notion-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/notion-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
@@ -3178,6 +3186,7 @@
       "/pages/shopify-vs-recurly-which-is-better-in-2026",
       "/pages/shopify-vs-squarespace-which-is-better-in-2026",
       "/pages/shopify-vs-stripe-which-is-better-in-2026",
+      "/pages/shopify-vs-webflow-which-is-better-in-2026",
       "/pages/shopify-vs-wix-which-is-better-in-2026",
       "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
       "/pages/slack-coupon-code-promo-codes-2026-verified-discounts",
@@ -5535,8 +5544,7 @@
   },
   "/best-vpn-for-business-2026": {
     "inbound": [
-      "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
-      "/pages/nordvpn-vs-windscribe-which-is-better-in-2026"
+      "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown"
     ],
     "outbound": [
       "/",
@@ -7624,6 +7632,7 @@
       "/pages/best-1password-alternatives-in-2026-free-paid",
       "/pages/best-accounting-software-for-freelancers-in-2026",
       "/pages/best-accounting-software-for-small-business-2026",
+      "/pages/best-affiliate-management-software-2026",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-ahrefs-alternatives-in-2026-free-paid",
       "/pages/best-ai-agent-tools-for-developers-in-2026",
@@ -7802,6 +7811,7 @@
       "/pages/best-hubspot-alternatives-in-2026-free-paid",
       "/pages/best-infrastructure-as-code-and-cloud-cost-tools-for-aws-in-2025",
       "/pages/best-infrastructure-as-code-and-cloud-cost-tools-for-aws-in-2025",
+      "/pages/best-landing-page-builder-2026",
       "/pages/best-legal-compliance-software-for-startups-in-2026-ranked",
       "/pages/best-linear-alternatives-in-2026-free-paid",
       "/pages/best-load-balancers-for-zero-downtime-deployments-in-2025",
@@ -7863,6 +7873,7 @@
       "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
       "/pages/best-vpn-for-gaming-2026",
       "/pages/best-vpn-for-privacy-and-security-2026",
+      "/pages/best-vpn-for-remote-work-2026",
       "/pages/best-vpn-for-small-business-2026",
       "/pages/best-vpn-for-streaming-2026",
       "/pages/best-web-hosting-2026",
@@ -8094,6 +8105,7 @@
       "/pages/does-monday-com-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
+      "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
       "/pages/does-pipedrive-have-a-free-plan-2026-full-breakdown",
       "/pages/does-protonmail-have-a-free-plan-2026-full-breakdown",
@@ -8128,12 +8140,15 @@
       "/pages/elevenlabs-pricing-history-2026",
       "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
       "/pages/elevenlabs-vs-descript-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
       "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-murf-which-is-better-in-2026",
       "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
       "/pages/elevenlabs-vs-resemble-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-speechify-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
       "/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts",
+      "/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/engagebay-pricing-history-2026",
       "/pages/engagebay-review-2026-is-it-worth-it-honest-verdict",
@@ -8170,6 +8185,7 @@
       "/pages/firstpromoter-vs-tune-which-is-better-in-2026",
       "/pages/fiverr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/fiverr-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/fiverr-pro-worth-it-2026-honest-review",
       "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
       "/pages/fiverr-vs-99designs-which-is-better-in-2026",
       "/pages/fiverr-vs-freelancer-which-is-better-in-2026",
@@ -8542,6 +8558,7 @@
       "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026",
       "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
       "/pages/nordvpn-vs-tunnelbear-which-is-better-in-2026",
+      "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
       "/pages/notion-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/notion-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
@@ -8808,6 +8825,7 @@
       "/pages/shopify-vs-recurly-which-is-better-in-2026",
       "/pages/shopify-vs-squarespace-which-is-better-in-2026",
       "/pages/shopify-vs-stripe-which-is-better-in-2026",
+      "/pages/shopify-vs-webflow-which-is-better-in-2026",
       "/pages/shopify-vs-wix-which-is-better-in-2026",
       "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
       "/pages/slack-coupon-code-promo-codes-2026-verified-discounts",
@@ -8841,6 +8859,7 @@
       "/pages/stripe-vs-recharge-which-is-better-in-2026",
       "/pages/stripe-vs-recurly-which-is-better-in-2026",
       "/pages/sucuri-coupon-code-promo-codes-2026-verified-discounts",
+      "/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/sucuri-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/sucuri-review-2026-is-it-worth-it-honest-verdict",
       "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",
@@ -13812,6 +13831,7 @@
       "/pages/best-accounting-software-for-small-business-2026",
       "/pages/best-accounting-software-for-small-business-2026",
       "/pages/best-accounting-software-for-small-business-2026",
+      "/pages/best-affiliate-management-software-2026",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
@@ -15119,6 +15139,7 @@
       "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
+      "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
@@ -15256,6 +15277,7 @@
       "/pages/firstpromoter-vs-tune-which-is-better-in-2026",
       "/pages/fiverr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/fiverr-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/fiverr-pro-worth-it-2026-honest-review",
       "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
       "/pages/fiverr-vs-99designs-which-is-better-in-2026",
       "/pages/fiverr-vs-freelancer-which-is-better-in-2026",
@@ -15649,7 +15671,6 @@
       "/pages/nordvpn-review-2026-is-it-worth-it-honest-verdict",
       "/pages/nordvpn-vs-cyberghost-which-is-better-in-2026",
       "/pages/nordvpn-vs-expressvpn-which-is-better-in-2026",
-      "/pages/nordvpn-vs-hotspot-shield-which-is-better-in-2026",
       "/pages/nordvpn-vs-hotspot-shield-which-is-better-in-2026",
       "/pages/nordvpn-vs-ipvanish-which-is-better-in-2026",
       "/pages/nordvpn-vs-mullvad-which-is-better-in-2026",
@@ -25229,10 +25250,12 @@
       "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/go/firstpromoter",
       "/go/impact-com",
       "/go/impact-demo",
       "/go/tapfiliate",
+      "/pages/",
       "/pages/best-fiverr-alternatives-2026",
       "/pages/clickup-vs-smartsheet-which-is-better-in-2026",
       "/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay",
@@ -25243,7 +25266,9 @@
       "/pages/snyk-vs-tenable-which-is-better-in-2026",
       "/pages/surfshark-vs-nordvpn-which-is-better-in-2026",
       "/pages/vultr-vs-linode-which-is-better-in-2026",
-      "/privacy"
+      "/privacy",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/best-agentic-development-tools-for-engineering-teams-in-2025": {
@@ -27717,7 +27742,6 @@
     "inbound": [
       "/pages/best-devtools-for-efficient-coding-in-2025",
       "/pages/best-email-marketing-software-2026",
-      "/pages/best-landing-page-builder-2026",
       "/pages"
     ],
     "outbound": [
@@ -32077,22 +32101,18 @@
     ]
   },
   "/pages/best-landing-page-builder-2026": {
-    "inbound": [
-      "/pages/best-landing-page-builder-2026"
-    ],
+    "inbound": [],
     "outbound": [
       "/",
       "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/go/elementor",
       "/go/getresponse",
       "/go/hubspot-crm",
       "/pages/",
-      "/pages/best-crm-software-2026",
       "/pages/best-email-marketing-software-2026",
-      "/pages/best-landing-page-builder-2026",
-      "/pages/best-vpn-for-small-business-2026",
       "/pages/contabo-coupon-2026-discount-codes-promo",
       "/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
@@ -32104,7 +32124,9 @@
       "/pages/impact-com-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/linear-vs-shortcut-which-is-better-in-2026",
       "/pages/nordpass-vs-1password-which-is-better-in-2026",
-      "/pages/pagerduty-vs-terraform-which-is-better-in-2026"
+      "/pages/pagerduty-vs-terraform-which-is-better-in-2026",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/best-legal-compliance-software-for-startups-in-2026-ranked": {
@@ -35335,6 +35357,7 @@
       "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/go/nordlayer",
       "/go/nordvpn",
       "/go/protonvpn",
@@ -35365,16 +35388,18 @@
       "/pages/surfshark-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/surfshark-review-2026-is-it-worth-it-honest-verdict",
       "/pages/surfshark-vs-nordvpn-which-is-better-in-2026",
-      "/privacy"
+      "/privacy",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/best-vpn-for-small-business-2026": {
     "inbound": [
       "/pages/best-ai-agent-tools-for-developers-in-2026",
-      "/pages/best-landing-page-builder-2026",
       "/pages/best-vpn-for-remote-work-2026"
     ],
     "outbound": [
+      "/",
       "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
@@ -35407,7 +35432,9 @@
       "/pages/surfshark-review-2026-is-it-worth-it-honest-verdict",
       "/pages/surfshark-vs-nordvpn-which-is-better-in-2026",
       "/pages/xero-vs-divvy-which-is-better-in-2026",
-      "/privacy"
+      "/privacy",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/best-vpn-for-streaming-2026": {
@@ -42893,6 +42920,7 @@
       "/pages"
     ],
     "outbound": [
+      "/",
       "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
@@ -42919,6 +42947,7 @@
       "/pages/how-saaspare-ranks-tools",
       "/pages/saas-pricing-changes",
       "/privacy",
+      "/roi",
       "/shortlist",
       "https://saaspare.org",
       "https://saaspare.org/affiliate-disclosure",
@@ -43617,10 +43646,14 @@
       "/pages/nordvpn-vs-private-internet-access-which-is-better-in-2026"
     ],
     "outbound": [
+      "/",
+      "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/go/nordvpn",
       "/methodology",
+      "/pages/",
       "/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/nordvpn-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/nordvpn-free-trial-2026-how-to-get-it-step-by-step",
@@ -43629,6 +43662,8 @@
       "/pages/nordvpn-vs-expressvpn-which-is-better-in-2026",
       "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
       "/pages/protonvpn-vs-nordvpn-which-is-better-in-2026",
+      "/roi",
+      "/shortlist",
       "https://saaspare.org",
       "https://saaspare.org/affiliate-disclosure",
       "https://saaspare.org/contact",
@@ -45030,8 +45065,10 @@
     ],
     "outbound": [
       "/",
+      "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/go/elevenlabs",
       "/pages/",
       "/pages/best-elevenlabs-alternatives-in-2026-free-paid",
@@ -45043,7 +45080,9 @@
       "/pages/ramp-vs-bill-com-which-is-better-in-2026",
       "/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026",
       "/pages/vercel-vs-sentry-which-is-better-in-2026",
-      "/privacy"
+      "/privacy",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026": {
@@ -45200,8 +45239,10 @@
     ],
     "outbound": [
       "/",
+      "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/go/elevenlabs",
       "/pages/",
       "/pages/best-elevenlabs-alternatives-in-2026-free-paid",
@@ -45213,7 +45254,9 @@
       "/pages/engagebay-vs-freshsales-which-is-better-in-2026",
       "/pages/leaddyno-vs-post-affiliate-pro-which-is-better-in-2026",
       "/pages/looker-vs-heap-which-is-better-in-2026",
-      "/privacy"
+      "/privacy",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts": {
@@ -45257,8 +45300,10 @@
     ],
     "outbound": [
       "/",
+      "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/go/engagebay",
       "/pages/",
       "/pages/affiliate-disclosure",
@@ -45274,6 +45319,7 @@
       "/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/privacy-policy",
       "/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step",
+      "/roi",
       "/shortlist"
     ]
   },
@@ -46411,7 +46457,9 @@
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
       "/contact",
+      "/deal-radar",
       "/go/fiverr-pro",
+      "/pages/",
       "/pages/best-fiverr-alternatives-2026",
       "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
       "/pages/does-fiverr-have-a-free-plan-2026-full-breakdown",
@@ -46424,7 +46472,9 @@
       "/pages/fiverr-vs-upwork-which-is-better-in-2026",
       "/pages/freshsales-vs-keap-which-is-better-in-2026",
       "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
-      "/pages/snyk-vs-tresorit-which-is-better-in-2026"
+      "/pages/snyk-vs-tresorit-which-is-better-in-2026",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict": {
@@ -58221,7 +58271,6 @@
       "/methodology",
       "/newsletter",
       "/pages/",
-      "/pages/?type=pricing",
       "/pages/activecampaign-vs-mailchimp-which-is-better-in-2026",
       "/pages/microsoft-teams-vs-around-which-is-better-in-2026",
       "/pages/nordvpn-pricing-2026-plans-costs-what-you-actually-pay",
@@ -58435,9 +58484,10 @@
     ],
     "outbound": [
       "/",
+      "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
-      "/best-vpn-for-business-2026",
+      "/deal-radar",
       "/go/nordvpn",
       "/pages/",
       "/pages/best-devtools-for-b2b-engineering-teams-in-2026",
@@ -58451,7 +58501,9 @@
       "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
       "/pages/protonvpn-vs-windscribe-which-is-better-in-2026",
       "/pages/zoom-vs-google-meet-which-is-better-in-2026",
-      "/privacy"
+      "/privacy",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/notion-coupon-code-promo-codes-2026-verified-discounts": {
@@ -60103,6 +60155,7 @@
       "/pages/shopify-vs-stripe-which-is-better-in-2026",
       "/pages/tableau-vs-looker-which-is-better-in-2026",
       "/privacy",
+      "/roi",
       "/shortlist",
       "/terms"
     ]
@@ -67579,8 +67632,10 @@
     ],
     "outbound": [
       "/",
+      "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/go/shopify",
       "/pages/",
       "/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026",
@@ -67592,7 +67647,9 @@
       "/pages/shopify-vs-squarespace-which-is-better-in-2026",
       "/pages/shopify-vs-wix-which-is-better-in-2026",
       "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
-      "/privacy"
+      "/privacy",
+      "/roi",
+      "/shortlist"
     ]
   },
   "/pages/shopify-vs-wix-which-is-better-in-2026": {
@@ -68665,6 +68722,7 @@
       "/about",
       "/affiliate-disclosure",
       "/authors/kaylan-von-papen",
+      "/deal-radar",
       "/editorial-policy",
       "/go/sucuri",
       "/pages/",
@@ -68676,6 +68734,8 @@
       "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",
       "/pages/sucuri-vs-wordfence-which-is-better-in-2026",
       "/pages/supabase-free-trial-2026-how-to-start-what-you-get",
+      "/roi",
+      "/shortlist",
       "/sitemap.xml"
     ]
   },
@@ -69878,6 +69938,7 @@
       "/pages/surfshark-review-2026-is-it-worth-it-honest-verdict",
       "/pages/surfshark-vs-mullvad-which-is-better-in-2026",
       "/privacy",
+      "/roi",
       "/shortlist"
     ]
   },
@@ -76523,12 +76584,16 @@
       "/pages/basecamp-vs-smartsheet-which-is-better-in-2026",
       "/pages/basecamp-vs-todoist-which-is-better-in-2026",
       "/pages/basecamp-vs-wrike-which-is-better-in-2026",
+      "/pages/best-affiliate-management-software-2026",
       "/pages/best-devtools-for-ai-agent-development-in-2025-ollama-vs-openclaw-vs-omlx",
       "/pages/best-email-autoresponder-software-2026",
       "/pages/best-email-marketing-apps-for-shopify-2026",
       "/pages/best-fiverr-alternatives-2026",
+      "/pages/best-landing-page-builder-2026",
       "/pages/best-open-source-iac-and-cloud-storage-tools-in-2025-opentofu-vs-terraform-minio-alternatives",
       "/pages/best-privacy-vpn-2026",
+      "/pages/best-vpn-for-remote-work-2026",
+      "/pages/best-vpn-for-small-business-2026",
       "/pages/bigcommerce-vs-bold-commerce-which-is-better-in-2026",
       "/pages/bigcommerce-vs-chargebee-which-is-better-in-2026",
       "/pages/bigcommerce-vs-gumroad-which-is-better-in-2026",
@@ -76679,9 +76744,11 @@
       "/pages/docusign-vs-ironclad-which-is-better-in-2026",
       "/pages/docusign-vs-juro-which-is-better-in-2026",
       "/pages/docusign-vs-pandadoc-which-is-better-in-2026",
+      "/pages/does-elementor-have-a-free-plan-2026-full-breakdown",
       "/pages/does-engagebay-have-a-free-plan-2026-full-breakdown",
       "/pages/does-fiverr-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
+      "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/does-protonmail-have-a-free-plan-2026-full-breakdown",
       "/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/duo-security-vs-tresorit-which-is-better-in-2026",
@@ -76696,11 +76763,14 @@
       "/pages/elementor-vs-wix-which-is-better-in-2026",
       "/pages/elementor-vs-wpbakery-which-is-better-in-2026",
       "/pages/elevenlabs-vs-descript-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
       "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-murf-which-is-better-in-2026",
       "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
       "/pages/elevenlabs-vs-resemble-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-speechify-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
+      "/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/engagebay-pricing-history-2026",
       "/pages/engagebay-review-2026-is-it-worth-it-honest-verdict",
@@ -76733,6 +76803,7 @@
       "/pages/firstpromoter-vs-post-affiliate-pro-which-is-better-in-2026",
       "/pages/firstpromoter-vs-refersion-which-is-better-in-2026",
       "/pages/firstpromoter-vs-tune-which-is-better-in-2026",
+      "/pages/fiverr-pro-worth-it-2026-honest-review",
       "/pages/fiverr-vs-99designs-which-is-better-in-2026",
       "/pages/fiverr-vs-freelancer-which-is-better-in-2026",
       "/pages/fiverr-vs-toptal-which-is-better-in-2026",
@@ -77032,6 +77103,7 @@
       "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026",
       "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
       "/pages/nordvpn-vs-tunnelbear-which-is-better-in-2026",
+      "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
       "/pages/notion-vs-asana-which-is-better-in-2026",
       "/pages/notion-vs-basecamp-which-is-better-in-2026",
       "/pages/notion-vs-clickup-which-is-better-in-2026",
@@ -77070,6 +77142,7 @@
       "/pages/pandadoc-vs-ironclad-which-is-better-in-2026",
       "/pages/pandadoc-vs-juro-which-is-better-in-2026",
       "/pages/parallels-desktop-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/parallels-desktop-vs-virtualbox-which-is-better-in-2026",
       "/pages/parallels-desktop-vs-vmware-fusion-which-is-better-in-2026",
       "/pages/pardot-vs-convertkit-which-is-better-in-2026",
       "/pages/pardot-vs-drip-which-is-better-in-2026",
@@ -77233,6 +77306,7 @@
       "/pages/shopify-vs-recurly-which-is-better-in-2026",
       "/pages/shopify-vs-squarespace-which-is-better-in-2026",
       "/pages/shopify-vs-stripe-which-is-better-in-2026",
+      "/pages/shopify-vs-webflow-which-is-better-in-2026",
       "/pages/shopify-vs-wix-which-is-better-in-2026",
       "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
       "/pages/slack-vs-discord-which-is-better-in-2026",
@@ -77257,6 +77331,7 @@
       "/pages/stripe-vs-chargebee-which-is-better-in-2026",
       "/pages/stripe-vs-recharge-which-is-better-in-2026",
       "/pages/stripe-vs-recurly-which-is-better-in-2026",
+      "/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",
       "/pages/sucuri-vs-malcare-which-is-better-in-2026",
       "/pages/sucuri-vs-sitelock-which-is-better-in-2026",
@@ -77277,6 +77352,7 @@
       "/pages/surfshark-vs-mullvad-which-is-better-in-2026",
       "/pages/surfshark-vs-nordvpn-which-is-better-in-2026",
       "/pages/surfshark-vs-private-internet-access-which-is-better-in-2026",
+      "/pages/surfshark-vs-windscribe-which-is-better-in-2026",
       "/pages/tableau-vs-fullstory-which-is-better-in-2026",
       "/pages/tableau-vs-heap-which-is-better-in-2026",
       "/pages/tableau-vs-hotjar-which-is-better-in-2026",
@@ -77673,6 +77749,7 @@
       "/pages/best-1password-alternatives-in-2026-free-paid",
       "/pages/best-accounting-software-for-freelancers-in-2026",
       "/pages/best-accounting-software-for-small-business-2026",
+      "/pages/best-affiliate-management-software-2026",
       "/pages/best-agentic-development-tools-for-engineering-teams-in-2025",
       "/pages/best-ahrefs-alternatives-in-2026-free-paid",
       "/pages/best-ai-agent-tools-for-developers-in-2026",
@@ -77851,6 +77928,7 @@
       "/pages/best-hubspot-alternatives-in-2026-free-paid",
       "/pages/best-infrastructure-as-code-and-cloud-cost-tools-for-aws-in-2025",
       "/pages/best-infrastructure-as-code-and-cloud-cost-tools-for-aws-in-2025",
+      "/pages/best-landing-page-builder-2026",
       "/pages/best-legal-compliance-software-for-startups-in-2026-ranked",
       "/pages/best-linear-alternatives-in-2026-free-paid",
       "/pages/best-load-balancers-for-zero-downtime-deployments-in-2025",
@@ -77912,6 +77990,8 @@
       "/pages/best-vpn-business-software-for-startups-in-2026-ranked",
       "/pages/best-vpn-for-gaming-2026",
       "/pages/best-vpn-for-privacy-and-security-2026",
+      "/pages/best-vpn-for-remote-work-2026",
+      "/pages/best-vpn-for-small-business-2026",
       "/pages/best-vpn-for-streaming-2026",
       "/pages/best-web-hosting-2026",
       "/pages/best-wordpress-page-builders-2026",
@@ -78144,6 +78224,7 @@
       "/pages/does-monday-com-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordpass-have-a-free-plan-2026-full-breakdown",
       "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
+      "/pages/does-nordvpn-have-a-free-plan-2026-full-breakdown",
       "/pages/does-notion-have-a-free-plan-2026-full-breakdown",
       "/pages/does-pipedrive-have-a-free-plan-2026-full-breakdown",
       "/pages/does-protonmail-have-a-free-plan-2026-full-breakdown",
@@ -78178,11 +78259,13 @@
       "/pages/elevenlabs-pricing-history-2026",
       "/pages/elevenlabs-review-2026-is-it-worth-it-honest-verdict",
       "/pages/elevenlabs-vs-descript-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-heygen-which-is-better-in-2026",
       "/pages/elevenlabs-vs-murf-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-murf-which-is-better-in-2026",
       "/pages/elevenlabs-vs-play-ht-which-is-better-in-2026",
       "/pages/elevenlabs-vs-resemble-ai-which-is-better-in-2026",
       "/pages/elevenlabs-vs-speechify-which-is-better-in-2026",
+      "/pages/elevenlabs-vs-synthesia-which-is-better-in-2026",
       "/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/engagebay-pricing-2026-plans-costs-what-you-actually-pay",
@@ -78220,6 +78303,7 @@
       "/pages/firstpromoter-vs-tune-which-is-better-in-2026",
       "/pages/fiverr-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/fiverr-pricing-2026-plans-costs-what-you-actually-pay",
+      "/pages/fiverr-pro-worth-it-2026-honest-review",
       "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
       "/pages/fiverr-vs-99designs-which-is-better-in-2026",
       "/pages/fiverr-vs-freelancer-which-is-better-in-2026",
@@ -78592,6 +78676,7 @@
       "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026",
       "/pages/nordvpn-vs-surfshark-which-is-better-in-2026",
       "/pages/nordvpn-vs-tunnelbear-which-is-better-in-2026",
+      "/pages/nordvpn-vs-windscribe-which-is-better-in-2026",
       "/pages/notion-coupon-code-promo-codes-2026-verified-discounts",
       "/pages/notion-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/notion-pricing-2026-plans-costs-what-you-actually-pay",
@@ -78858,6 +78943,7 @@
       "/pages/shopify-vs-recurly-which-is-better-in-2026",
       "/pages/shopify-vs-squarespace-which-is-better-in-2026",
       "/pages/shopify-vs-stripe-which-is-better-in-2026",
+      "/pages/shopify-vs-webflow-which-is-better-in-2026",
       "/pages/shopify-vs-wix-which-is-better-in-2026",
       "/pages/shopify-vs-woocommerce-which-is-better-in-2026",
       "/pages/slack-coupon-code-promo-codes-2026-verified-discounts",
@@ -78891,6 +78977,7 @@
       "/pages/stripe-vs-recharge-which-is-better-in-2026",
       "/pages/stripe-vs-recurly-which-is-better-in-2026",
       "/pages/sucuri-coupon-code-promo-codes-2026-verified-discounts",
+      "/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step",
       "/pages/sucuri-pricing-2026-plans-costs-what-you-actually-pay",
       "/pages/sucuri-review-2026-is-it-worth-it-honest-verdict",
       "/pages/sucuri-vs-cloudflare-which-is-better-in-2026",

@@ -7,7 +7,6 @@ Pages scanned: 1575
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 1
 - images_missing_alt: 2
 - meta_length_outside_target: 490
 - missing_correction_cta: 334
@@ -21,13 +20,13 @@ Pages scanned: 1575
 ## Lowest Scoring Pages
 - `/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f`: 41.02/100, issues=no_h1
 - `/fo-verify`: 45.06/100, issues=no_h1
-- `/shortlist`: 62.87/100, issues=none
-- `/contact`: 64.76/100, issues=none
-- `/404`: 68.23/100, issues=none
-- `/deal-radar`: 68.39/100, issues=none
+- `/shortlist`: 62.88/100, issues=none
+- `/contact`: 64.77/100, issues=none
+- `/404`: 68.24/100, issues=none
+- `/deal-radar`: 68.41/100, issues=none
 - `/about`: 68.56/100, issues=none
-- `/newsletter`: 71.25/100, issues=none
-- `/media-kit`: 71.7/100, issues=none
+- `/newsletter`: 71.26/100, issues=none
+- `/media-kit`: 71.72/100, issues=none
 - `/corrections`: 71.92/100, issues=none
 - `/roi`: 72.84/100, issues=none
 - `/pages/saas-buyer-signals-2026`: 74.6/100, issues=none
@@ -38,34 +37,34 @@ Pages scanned: 1575
 - `/cookie-policy`: 75.97/100, issues=none
 - `/pages/saas-pricing-changes`: 75.99/100, issues=none
 - `/pages/which-saas-has-the-best-free-plan-2026`: 76.3/100, issues=none
-- `/pages`: 77.0/100, issues=none
+- `/pages`: 78.0/100, issues=none
 - `/advertise`: 79.31/100, issues=none
 - `/pages/request-a-comparison`: 79.38/100, issues=none
-- `/privacy`: 79.64/100, issues=none
+- `/privacy`: 79.66/100, issues=none
 - `/affiliate-disclosure`: 80.02/100, issues=none
-- `/pages/v3-preview-404`: 80.19/100, issues=none
+- `/pages/v3-preview-404`: 80.2/100, issues=none
 - `/pages/saas-stack-audit-checkout`: 80.94/100, issues=none
 - `/pages/saas-glossary`: 81.0/100, issues=none
 - `/pages/how-saaspare-ranks-tools`: 81.58/100, issues=none
 - `/pages/saas-spend-audit`: 82.0/100, issues=none
-- `/methodology`: 82.32/100, issues=none
-- `/pages/v3-preview-contact`: 82.71/100, issues=none
-- `/pages/v3-preview-homepage`: 82.9/100, issues=none
+- `/methodology`: 82.33/100, issues=none
+- `/pages/v3-preview-contact`: 82.72/100, issues=none
+- `/pages/v3-preview-homepage`: 82.91/100, issues=none
 - `/pages/saas-price-hike-watch-may-2026`: 83.0/100, issues=none
-- `/pages/v3-preview-affiliate-disclosure`: 83.0/100, issues=none
+- `/pages/v3-preview-affiliate-disclosure`: 83.02/100, issues=none
 - `/`: 83.5/100, issues=none
-- `/pages/v3-preview-about`: 83.51/100, issues=none
-- `/pages/linear-pricing-history-2026`: 83.57/100, issues=broken_internal_link
+- `/pages/v3-preview-about`: 83.52/100, issues=none
 - `/pages/best-saas-deals-this-week-2026`: 83.64/100, issues=none
-- `/pages/v3-preview-newsletter`: 83.69/100, issues=none
-- `/pages/v3-preview-library`: 83.8/100, issues=none
-- `/pages/stripe-pricing-history-2026`: 84.09/100, issues=broken_internal_link
-- `/pages/v3-preview-shortlist`: 84.39/100, issues=none
-- `/pages/salesforce-pricing-history-2026`: 84.41/100, issues=broken_internal_link
+- `/pages/v3-preview-newsletter`: 83.7/100, issues=none
+- `/pages/v3-preview-library`: 83.81/100, issues=none
+- `/pages/v3-preview-shortlist`: 84.4/100, issues=none
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
-- `/pages/v3-preview-roi-calculator`: 84.67/100, issues=none
+- `/pages/v3-preview-roi-calculator`: 84.69/100, issues=none
 - `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 84.75/100, issues=none
 - `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.75/100, issues=none
 - `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 84.75/100, issues=none
 - `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 84.77/100, issues=none
+- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.78/100, issues=none
+- `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.8/100, issues=none
+- `/pages/v3-preview-deal-radar`: 84.81/100, issues=none
