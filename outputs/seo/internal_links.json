@@ -1,38 +1,38 @@
 {
-  "total_pages": 1542,
-  "updated": 1538,
+  "total_pages": 1526,
+  "updated": 1522,
   "skipped": 4,
-  "orphans_before": 72,
-  "orphans_after": 65,
+  "orphans_before": 61,
+  "orphans_after": 60,
   "samples": [
     {
       "file": "1password-business-vs-cloudflare-which-is-better-in-2026.html",
       "picks": [
-        "/pages/1password-vs-bitwarden-which-is-better-in-2026",
-        "/pages/lastpass-vs-nordpass-which-is-better-in-2026",
-        "/pages/crowdstrike-vs-qualys-which-is-better-in-2026",
-        "/pages/amplitude-vs-looker-which-is-better-in-2026",
-        "/pages/pandadoc-vs-ironclad-which-is-better-in-2026"
+        "/pages/1password-vs-password-boss-which-is-better-in-2026",
+        "/pages/tenable-vs-tresorit-which-is-better-in-2026",
+        "/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/gumroad-vs-bold-commerce-which-is-better-in-2026",
+        "/pages/vultr-vs-linode-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-crowdstrike-which-is-better-in-2026.html",
       "picks": [
-        "/pages/keeper-vs-nordpass-which-is-better-in-2026",
-        "/pages/cloudflare-vs-tresorit-which-is-better-in-2026",
-        "/pages/7-best-tresorit-alternatives-in-2026-free-paid",
-        "/pages/hubspot-vs-activecampaign-which-is-better-in-2026",
-        "/pages/semrush-vs-mangools-which-is-better-in-2026"
+        "/pages/qualys-vs-tenable-which-is-better-in-2026",
+        "/pages/expressvpn-business-vs-cloudflare-access-which-is-better-in-2026",
+        "/pages/nordlayer-vs-sentinelone-which-is-better-in-2026",
+        "/pages/hubspot-vs-convertkit-which-is-better-in-2026",
+        "/pages/tableau-vs-power-bi-which-is-better-in-2026"
       ]
     },
     {
       "file": "1password-business-vs-duo-security-which-is-better-in-2026.html",
       "picks": [
-        "/pages/cloudflare-vs-sentinelone-which-is-better-in-2026",
-        "/pages/dashlane-vs-nordpass-which-is-better-in-2026",
-        "/pages/nordlayer-vs-openvpn-which-is-better-in-2026",
-        "/pages/xero-vs-netsuite-which-is-better-in-2026",
-        "/pages/hostpapa-vs-namecheap-which-is-better-in-2026"
+        "/pages/lastpass-vs-dashlane-which-is-better-in-2026",
+        "/pages/1password-vs-roboform-which-is-better-in-2026",
+        "/pages/nordlayer-vs-wireguard-which-is-better-in-2026",
+        "/pages/tapfiliate-vs-refersion-which-is-better-in-2026",
+        "/pages/leaddyno-vs-affilae-which-is-better-in-2026"
       ]
     }
   ]
