@@ -1,10 +1,14 @@
 """
-fix_universal_nav.py — Apply the perfect shortlist nav to ALL pages.
+fix_universal_nav.py — Apply the canonical nav (NAV_HTML/NAV_CSS below) to ALL pages,
+including shortlist.html — it used to be excluded as "the perfect nav" but was
+actually a stale legacy version (different CSS classes, no ROI Calculator link,
+no search bar). There is exactly one canonical header now, defined in this file.
 
-The shortlist.html nav is the canonical design:
+The canonical design:
 - Animated SVG logo mark (red/white, glows on hover)
 - Fixed position, transparent → frosted glass on scroll
-- Links: Comparisons | Shortlist Builder | Deal Radar | About
+- Links: Comparisons | ROI Calculator | Shortlist Builder | Deal Radar | About
+- Header search bar (⌘K / Ctrl+K focuses it), submits to /pages/?q=
 - CTA: Build Shortlist →
 
 This script:
@@ -54,6 +58,18 @@ nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;rig
 /* Remove old nav styles that cause bracket/black-bar glitches */
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
+#sp-nav-search{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:7px 12px;
+  margin:0 6px 0 auto;min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
+#sp-nav-search:focus-within{width:240px;border-color:rgba(255,75,115,.4)}
+#sp-nav-search svg{flex-shrink:0;color:rgba(255,248,245,.42)}
+#sp-nav-search-input{background:none;border:none;outline:none;color:#fff7f8;
+  font-size:.8rem;font-family:inherit;width:100%;min-width:0}
+#sp-nav-search-input::placeholder{color:rgba(255,248,245,.38)}
+#sp-nav-search .sp-nav-kbd{flex-shrink:0;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:1px 6px;
+  font-size:.68rem;color:rgba(255,248,245,.4);font-family:inherit}
+@media(max-width:900px){#sp-nav-search{display:none}}
 </style>
 <script>
 (function(){
@@ -61,6 +77,15 @@ nav.sp-topnav{display:none!important}
     var nav=document.getElementById('sp-nav');
     if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
   },{passive:true});
+
+  var searchInput=document.getElementById('sp-nav-search-input');
+  if(searchInput){
+    document.addEventListener('keydown',function(e){
+      if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){
+        e.preventDefault();searchInput.focus();searchInput.select();
+      }
+    });
+  }
 
   function highlightNav(){
     var path=window.location.pathname;
@@ -99,6 +124,11 @@ NAV_HTML = """<nav id="sp-nav">
   <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
   <a href="/about" class="sp-nav-link">About</a>
+  <form id="sp-nav-search" action="/pages/" role="search" aria-label="Search tools">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="sp-nav-search-input" name="q" type="search" placeholder="Search tools..." autocomplete="off">
+    <span class="sp-nav-kbd">&#8984;K</span>
+  </form>
   <a href="/shortlist" class="sp-nav-cta">Build Shortlist &#8594;</a>
 </nav>
 <div class="sp-nav-spacer"></div>"""
@@ -126,6 +156,15 @@ OLD_NAV_PATTERNS = [
 # Marker so we don't double-inject CSS
 CSS_MARKER = 'id="sp-nav-css"'
 NAV_MARKER = 'id="sp-nav"'
+SEARCH_MARKER = 'id="sp-nav-search"'
+NAV_SEARCH_HTML = (
+    '<form id="sp-nav-search" action="/pages/" role="search" aria-label="Search tools">\n'
+    '    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+    'stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>\n'
+    '    <input id="sp-nav-search-input" name="q" type="search" placeholder="Search tools..." autocomplete="off">\n'
+    '    <span class="sp-nav-kbd">&#8984;K</span>\n'
+    '  </form>'
+)
 
 def fix_page(path: Path) -> bool:
     """Inject universal nav CSS and replace nav element. Returns True if changed."""
@@ -139,12 +178,14 @@ def fix_page(path: Path) -> bool:
         if NAV_MARKER in html and dup_pat.search(html):
             html = dup_pat.sub('', html)
 
-        # Upgrade outdated nav CSS/JS block (missing active-link underglow) in place
+        # Upgrade outdated nav CSS/JS block (missing active-link underglow,
+        # or missing the search-bar styles/⌘K shortcut) in place
         old_css_pat = re.compile(
             r'<style id="sp-nav-css">.*?</script>',
             re.DOTALL
         )
-        if CSS_MARKER in html and 'sp-nav-link.active::after' not in html:
+        if CSS_MARKER in html and ('sp-nav-link.active::after' not in html
+                                    or '#sp-nav-search{' not in html):
             if old_css_pat.search(html):
                 html = old_css_pat.sub(NAV_CSS, html, count=1)
 
@@ -155,8 +196,16 @@ def fix_page(path: Path) -> bool:
                 '<a href="/pages/" class="sp-nav-link">Comparisons</a>\n'
                 '  <a href="/roi" class="sp-nav-link">ROI Calculator</a>', 1)
 
-        # Skip if already has new nav, current CSS, and no duplicate (idempotent)
-        if NAV_MARKER in html and CSS_MARKER in html and 'sp-nav-link.active::after' in html:
+        # Upgrade navs missing the header search bar (Aug 2026 redesign)
+        if NAV_MARKER in html and SEARCH_MARKER not in html:
+            html = html.replace(
+                '<a href="/about" class="sp-nav-link">About</a>',
+                '<a href="/about" class="sp-nav-link">About</a>\n'
+                '  ' + NAV_SEARCH_HTML, 1)
+
+        # Skip if already has new nav, current CSS, search bar, and no duplicate (idempotent)
+        if (NAV_MARKER in html and CSS_MARKER in html
+                and 'sp-nav-link.active::after' in html and SEARCH_MARKER in html):
             if html != original:
                 path.write_text(html, encoding="utf-8")
                 return True
@@ -219,14 +268,11 @@ def main():
 
     # Key root pages
     for name in ["index.html", "about.html", "contact.html", "deal-radar.html",
-                 "newsletter.html", "404.html", "media-kit.html",
+                 "newsletter.html", "404.html", "media-kit.html", "shortlist.html",
                  "privacy.html", "terms.html", "methodology.html"]:
         p = SITE / name
         if p.exists():
             targets.append(p)
-
-    # Skip shortlist.html — it already has the perfect nav
-    targets = [t for t in targets if t.name != "shortlist.html"]
 
     total = len(targets)
     updated = 0
@@ -253,8 +299,7 @@ def main():
     print("  - sp-bg div removed (was causing bracket/black-bar glitch)")
     print("  - Old sp-topnav hidden via CSS")
     print("  - 72px spacer added to prevent content hiding behind fixed nav")
-    print()
-    print("Shortlist.html: unchanged (already has the perfect nav)")
+    print("  - Header search bar (⌘K) present on every page")
 
 
 if __name__ == "__main__":

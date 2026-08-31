@@ -186,6 +186,18 @@ nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;rig
 /* Remove old nav styles that cause bracket/black-bar glitches */
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
+#sp-nav-search{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:7px 12px;
+  margin:0 6px 0 auto;min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
+#sp-nav-search:focus-within{width:240px;border-color:rgba(255,75,115,.4)}
+#sp-nav-search svg{flex-shrink:0;color:rgba(255,248,245,.42)}
+#sp-nav-search-input{background:none;border:none;outline:none;color:#fff7f8;
+  font-size:.8rem;font-family:inherit;width:100%;min-width:0}
+#sp-nav-search-input::placeholder{color:rgba(255,248,245,.38)}
+#sp-nav-search .sp-nav-kbd{flex-shrink:0;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:1px 6px;
+  font-size:.68rem;color:rgba(255,248,245,.4);font-family:inherit}
+@media(max-width:900px){#sp-nav-search{display:none}}
 </style>
 <script>
 (function(){
@@ -194,18 +206,31 @@ nav.sp-topnav{display:none!important}
     if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
   },{passive:true});
 
-  // Highlight the nav link matching the current page (red underglow)
-  var path=window.location.pathname;
-  var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
-  var best=null,bestLen=0;
-  links.forEach(function(a){
-    var href=a.getAttribute('href');
-    if(!href||href==='/') return;
-    if(path===href||path.indexOf(href)===0){
-      if(href.length>bestLen){best=a;bestLen=href.length;}
-    }
-  });
-  if(best){best.classList.add('active');}
+  var searchInput=document.getElementById('sp-nav-search-input');
+  if(searchInput){
+    document.addEventListener('keydown',function(e){
+      if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){
+        e.preventDefault();searchInput.focus();searchInput.select();
+      }
+    });
+  }
+
+  function highlightNav(){
+    var path=window.location.pathname;
+    var override=document.body.getAttribute('data-nav');
+    var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
+    var best=null,bestLen=0;
+    links.forEach(function(a){
+      var href=a.getAttribute('href');
+      if(!href||href==='/') return;
+      if(override){if(href===override){best=a;}return;}
+      if(path===href||path.indexOf(href.replace(/\/$/,'')+'/')===0){
+        if(href.length>bestLen){best=a;bestLen=href.length;}
+      }
+    });
+    if(best){best.classList.add('active');}
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',highlightNav);}else{highlightNav();}
 })();
 </script>
 <meta name="keywords" content="Best SEO Tools for Small Business in 2026: Ranked &amp; Reviewed, pricing, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
