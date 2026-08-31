@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SaaS Deal Radar — Verified Discounts & Free Trials (2026) | SaaSpare</title>
-<meta name="description" content="Verified SaaS discounts, free trials and limited-time deals updated weekly. Filter by category, savings size or expiry. No expired codes — every deal is manually checked.">
+<title>SaaS Deal Radar: Verified Discounts & Free Trials (2026) | SaaSpare</title>
+<meta name="description" content="Verified SaaS discounts, free trials and limited-time deals updated weekly. Filter by category, savings size or expiry. No expired codes, every deal is manually checked.">
 <link rel="stylesheet" href="/assets/sp-shared.css">
   <link rel="stylesheet" href="/assets/saaspare-ui.css">
 <link rel="stylesheet" href="/assets/sp-motion.css">
@@ -250,7 +250,7 @@ nav.sp-topnav{display:none!important}
   </div>
 
   <div class="sp-up" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center">
-    <span class="sp-eyebrow hero-badge-animated"><span class="live-pulse"><span class="live-pulse-dot"></span></span>Live deals — updated daily</span>
+    <span class="sp-eyebrow hero-badge-animated"><span class="live-pulse"><span class="live-pulse-dot"></span></span>Live deals, updated daily</span>
     <span class="trust-chip hero-badge-animated" style="animation-delay:.1s"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Verified &amp; tested</span>
     <span class="trust-chip hero-badge-animated" style="animation-delay:.2s">Avg. 42% savings</span>
   </div>
@@ -404,7 +404,7 @@ nav.sp-topnav{display:none!important}
                 <span class="dr-deal-name">Contabo</span>
                 <span class="sp-badge sp-badge-green"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Verified</span>
               </div>
-              <p class="dr-deal-desc">Best-value VPS hosting — 4GB RAM from $5.50/mo in EU &amp; US.</p>
+              <p class="dr-deal-desc">Best-value VPS hosting, 4GB RAM from $5.50/mo in EU &amp; US.</p>
               <div class="dr-deal-tags"><span class="sp-badge sp-badge-ghost">Cloud Hosting</span><span class="sp-badge sp-badge-ghost">VPS</span><span class="sp-badge sp-badge-ghost">Developer</span></div>
             </div>
             <div class="dr-deal-disc-col">
@@ -449,7 +449,7 @@ nav.sp-topnav{display:none!important}
           </div>
           <div class="dr-trust-item">
             <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
-            <div><strong>Real savings only</strong><span>We list genuine discounts — no marketing fluff.</span></div>
+            <div><strong>Real savings only</strong><span>We list genuine discounts, no marketing fluff.</span></div>
           </div>
           <div class="dr-trust-item">
             <span class="sp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
@@ -501,10 +501,10 @@ nav.sp-topnav{display:none!important}
 </script>
 
 <script>
-/* ── Deal Radar — interactive wiring ── */
+/* ── Deal Radar, interactive wiring ── */
 (function(){
 
-  /* ── Filters + sort tabs — all driven by real data attributes baked into each
+  /* ── Filters + sort tabs, all driven by real data attributes baked into each
      deal card (data-category, data-type, data-discount, data-added,
      data-billing-months). Nothing here is fabricated: discount %, category and
      billing cadence all match the verified figures shown on the card. ── */
@@ -527,7 +527,7 @@ nav.sp-topnav{display:none!important}
       if (match) visible.push(card);
     });
 
-    // Sort the visible cards according to the active tab — using only real,
+    // Sort the visible cards according to the active tab, using only real,
     // already-displayed data (discount %, verified-added date, billing cadence).
     var sorted = visible.slice();
     if (state.tab === 'savings') {
@@ -558,7 +558,7 @@ nav.sp-topnav{display:none!important}
         var empty = document.createElement('div');
         empty.className = 'dr-empty';
         empty.style.cssText = 'padding:2.5rem 1rem;text-align:center;color:var(--ink-4);font-size:.9rem';
-        empty.textContent = 'No verified deals match these filters right now — check back soon, new deals are added as we verify them.';
+        empty.textContent = 'No verified deals match these filters right now, check back soon, new deals are added as we verify them.';
         dealsList.appendChild(empty);
       }
     } else if (existingEmpty) {
@@ -566,7 +566,7 @@ nav.sp-topnav{display:none!important}
     }
   }
 
-  /* Tab switching — sorts by real data, no fabricated freshness/expiry numbers */
+  /* Tab switching, sorts by real data, no fabricated freshness/expiry numbers */
   document.querySelectorAll('.dr-tab').forEach(function(tab) {
     tab.addEventListener('click', function() {
       document.querySelectorAll('.dr-tab').forEach(function(t){ t.classList.remove('active'); });
@@ -576,7 +576,7 @@ nav.sp-topnav{display:none!important}
     });
   });
 
-  /* Sidebar filter chips — Categories / Deal Type / Discount */
+  /* Sidebar filter chips, Categories / Deal Type / Discount */
   document.querySelectorAll('.dr-group[data-filter-group]').forEach(function(group){
     var key = group.getAttribute('data-filter-group');
     group.querySelectorAll('.dr-opt[data-filter-value]').forEach(function(opt){
@@ -590,7 +590,7 @@ nav.sp-topnav{display:none!important}
     });
   });
 
-  /* Clear all — resets every filter group back to "All" */
+  /* Clear all, resets every filter group back to "All" */
   var clearBtn = document.querySelector('.dr-clear');
   if (clearBtn) {
     clearBtn.addEventListener('click', function(){
@@ -602,7 +602,7 @@ nav.sp-topnav{display:none!important}
     });
   }
 
-  /* Save to shortlist — star bookmark toggle with toast */
+  /* Save to shortlist, star bookmark toggle with toast */
   var toast = document.createElement('div');
   toast.style.cssText = 'position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#1a0d14;border:1px solid rgba(255,65,109,.35);color:#fff;padding:10px 20px;border-radius:100px;font-size:.85rem;font-weight:700;z-index:9999;pointer-events:none;opacity:0;transition:opacity .25s;white-space:nowrap;box-shadow:0 8px 32px rgba(0,0,0,.5)';
   document.body.appendChild(toast);
@@ -623,7 +623,7 @@ nav.sp-topnav{display:none!important}
         btn.style.background = 'rgba(255,65,109,.18)';
         btn.style.color = '#ff416d';
         btn.style.borderColor = 'rgba(255,65,109,.4)';
-        showToast('★ ' + name + ' saved — view on /shortlist');
+        showToast('★ ' + name + ' saved, view on /shortlist');
       } else {
         btn.style.background = '';
         btn.style.color = '';
@@ -633,7 +633,7 @@ nav.sp-topnav{display:none!important}
     });
   });
 
-  /* Search bar — combines with the category/type/discount/tab state above
+  /* Search bar, combines with the category/type/discount/tab state above
      instead of fighting it for display:none control */
   var searchInput = document.querySelector('.dr-search input, .dr-sidebar input[type="text"]');
   var searchBtn   = document.querySelector('.dr-search .sp-btn, button.glint-button:not(.sp-btn-primary ~ *)');

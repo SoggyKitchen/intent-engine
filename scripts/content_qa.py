@@ -196,6 +196,20 @@ def check_pages(rep: Report) -> None:
         elif h1_count > 1:
             rep.S(f'{rel}: {h1_count} <h1> tags (should be 1)')
 
+        # AI-tell markers: em-dashes and overused AI vocabulary read as
+        # machine-generated to both readers and Google's scaled-content-abuse
+        # detection. Soft flag only; a script can rewrite offending text with
+        # scripts/humanize_text.py.
+        body_text = re.sub(r'<script.*?</script>', ' ', html, flags=re.S | re.I)
+        body_text = re.sub(r'<style.*?</style>', ' ', body_text, flags=re.S | re.I)
+        em_hits = body_text.count('—') + body_text.count('&mdash;')
+        if em_hits:
+            rep.S(f'{rel}: {em_hits} em-dash(es) — run scripts/humanize_text.py')
+        for w in ('seamless', 'seamlessly', 'robust'):
+            if re.search(r'' + w + r'', body_text, re.IGNORECASE):
+                rep.S(f'{rel}: AI-tell word "{w}" — run scripts/humanize_text.py')
+                break
+
         # JSON-LD parse
         for offset, blob in find_jsonld(html):
             try:

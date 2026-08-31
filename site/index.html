@@ -33,7 +33,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
-<!-- Design system — provides sp-* classes for marquee, library, newsletter sections -->
+<!-- Design system, provides sp-* classes for marquee, library, newsletter sections -->
 <link rel="stylesheet" href="/assets/sp-shared.css">
 <link rel="stylesheet" href="/assets/sp-motion.css">
 <style>
@@ -109,7 +109,7 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
   100%{opacity:1}
 }
 
-/* deep layered background — extends above hero so no black gap at top */
+/* deep layered background, extends above hero so no black gap at top */
 .hero-bg{position:absolute;top:-80px;left:0;right:0;bottom:0;pointer-events:none;background:
   radial-gradient(ellipse 140% 70% at 50% 0%,rgba(220,45,72,0.92) 0%,rgba(120,18,36,0.7) 25%,transparent 58%),
   radial-gradient(ellipse 70% 40% at 20% 60%,rgba(130,20,40,.22) 0%,transparent 60%),
@@ -117,7 +117,7 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
   radial-gradient(ellipse 60% 50% at 50% 40%,rgba(233,69,96,.055) 0%,transparent 70%),
   #07070d}
 
-/* flowing wave dot grid — full page with parallax scroll */
+/* flowing wave dot grid, full page with parallax scroll */
 .hero-grid{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0;top:0;left:0;width:100%;height:500vh}
 .hero-grid canvas{position:fixed;inset:0;width:100%;height:100vh;opacity:.6}
 
@@ -156,7 +156,7 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .activity-pill{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:.32rem .8rem;font-size:.68rem;color:var(--muted);font-weight:600}
 .activity-sep{color:var(--dim);font-size:.55rem}
 
-/* floating verdict chips — only visible while hero is in view */
+/* floating verdict chips, only visible while hero is in view */
 .verdict-floats{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:2;transition:opacity .4s ease}
 .verdict-floats.hidden{opacity:0;pointer-events:none}
 .vf{position:fixed;display:flex;align-items:center;gap:.5rem;background:rgba(10,10,18,.82);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(12px);border-radius:100px;padding:.45rem .85rem;font-size:.72rem;font-weight:700;color:rgba(255,255,255,.7);white-space:nowrap;cursor:pointer;pointer-events:auto;transition:opacity .4s ease, top .5s ease, left .5s ease, right .5s ease;text-decoration:none}
@@ -166,7 +166,7 @@ nav.scrolled{background:rgba(7,7,13,.82);border-bottom:1px solid var(--border);b
 .vf-dot.green{background:#65d6a3;box-shadow:0 0 6px #65d6a3}
 .vf-dot.red{background:var(--red);box-shadow:0 0 6px var(--red)}
 .vf-label{color:var(--muted);font-weight:500}
-/* positions — random placement around hero */
+/* positions, random placement around hero */
 .vf-1{animation:vfFloat 3s ease-in-out infinite}
 .vf-2{animation:vfFloat 3.2s ease-in-out infinite 0.2s}
 .vf-3{animation:vfFloat 3.4s ease-in-out infinite 0.4s}
@@ -182,7 +182,7 @@ h1.hero-title{font-size:clamp(2.8rem,8.5vw,5.8rem);font-weight:900;color:#fff;li
 @keyframes titleEnter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .grad-text{background:linear-gradient(135deg,#ff8fa3 0%,var(--red) 45%,var(--red2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding-bottom:.15em}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-/* ── Typewriter glint — identical to .sp-accent in saaspare-v2.css ── */
+/* ── Typewriter glint, identical to .sp-accent in saaspare-v2.css ── */
 .tw-line{display:block;min-height:1em}
 @keyframes spGlint{0%{background-position:100% 50%}100%{background-position:-200% 50%}}
 #tw-word{
@@ -744,11 +744,11 @@ nav.sp-topnav{display:none!important}
     </div>
 <p style="font-size:0.82rem;color:rgba(255,248,245,.38);margin:8px 0 24px;position:relative;z-index:2;animation:subEnter .8s .45s cubic-bezier(.34,1.56,.64,1) both">By <a href="/authors/kaylan-von-papen" style="color:rgba(255,248,245,.6);font-weight:600;">Kaylan von Papen</a> &middot; Updated <time datetime="2026-07-26">26 July 2026</time> &middot; <a href="/methodology" style="color:rgba(255,248,245,.38);text-decoration:underline;text-underline-offset:3px;">Methodology</a></p>
 
-  <p class="hero-sub">We dig through pricing pages, call out hidden fees, and give you a straight verdict — so your team picks the right tool without the regret.</p>
+  <p class="hero-sub">We dig through pricing pages, call out hidden fees, and give you a straight verdict, so your team picks the right tool without the regret.</p>
 
   <div class="search-wrap">
     <div class="search-box">
-      <input type="text" id="hero-search" placeholder="Search tools — HubSpot, Notion, Shopify..." autocomplete="off" onkeydown="if(event.key==='Enter')doHeroSearch()">
+      <input type="text" id="hero-search" placeholder="Search tools, HubSpot, Notion, Shopify..." autocomplete="off" onkeydown="if(event.key==='Enter')doHeroSearch()">
       <button onclick="doHeroSearch()">Compare &#8594;</button>
     </div>
 
@@ -786,7 +786,7 @@ nav.sp-topnav{display:none!important}
     <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/1password/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)" onerror="var e=document.createElement('em');e.textContent='S';e.style.cssText='font-style:normal;font-weight:900;color:#fff;font-size:1.1em;line-height:1';this.replaceWith(e)"> 1Password</span>
     <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/bitwarden/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)" onerror="var e=document.createElement('em');e.textContent='S';e.style.cssText='font-style:normal;font-weight:900;color:#fff;font-size:1.1em;line-height:1';this.replaceWith(e)"> Bitwarden</span>
     <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/figma/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)" onerror="var e=document.createElement('em');e.textContent='S';e.style.cssText='font-style:normal;font-weight:900;color:#fff;font-size:1.1em;line-height:1';this.replaceWith(e)"> Figma</span>
-    <!-- duplicate for seamless loop -->
+    <!-- duplicate for smooth loop -->
     <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/hubspot/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)" onerror="var e=document.createElement('em');e.textContent='S';e.style.cssText='font-style:normal;font-weight:900;color:#fff;font-size:1.1em;line-height:1';this.replaceWith(e)"> HubSpot</span>
     <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:20px;height:20px;object-fit:contain;filter:grayscale(1) brightness(1.6)" onerror="var e=document.createElement('em');e.textContent='S';e.style.cssText='font-style:normal;font-weight:900;color:#fff;font-size:1.1em;line-height:1';this.replaceWith(e)"> Notion</span>
     <span class="brand-item" style="display:inline-flex;align-items:center;gap:10px;padding:0 2.5rem;color:rgba(255,248,245,.42);font-weight:600;font-size:.95rem;white-space:nowrap;opacity:.7"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#00a1e0,#0070a0);color:#fff;font-weight:900;font-size:.55rem;letter-spacing:-.02em">SF</span> Salesforce</span>
@@ -898,7 +898,7 @@ nav.sp-topnav{display:none!important}
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
       <a href="/pages/1password-pricing-2026-plans-costs-what-you-actually-pay" style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:14px;display:flex;flex-direction:column;gap:10px;transition:all .2s;text-decoration:none;position:relative;overflow:hidden" onmouseover="this.style.borderColor='rgba(255,75,115,.38)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.transform='translateY(0)'">
         <div style="display:flex;align-items:center;gap:10px"><span style="width:44px;height:44px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="https://cdn.simpleicons.org/1password/0094f5" style="width:55%;height:55%;object-fit:contain;filter:brightness(1.15)" onerror="var e=document.createElement('em');e.textContent='S';e.style.cssText='font-style:normal;font-weight:900;color:#fff;font-size:1.1em;line-height:1';this.replaceWith(e)"></span><div><div style="font-size:.95rem;font-weight:700;color:#fff7f8;letter-spacing:-.01em">1Password</div><div style="font-size:.72rem;color:rgba(255,247,248,.42)">Security &amp; PWD Mgmt</div></div></div>
-        <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Secure passwords, SSO, secrets management — for teams up to enterprise.</p>
+        <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Secure passwords, SSO, secrets management, for teams up to enterprise.</p>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
           <div style="font-size:.95rem;color:#fff7f8;font-weight:700">$2.99<span style="font-style:normal;font-size:.74rem;color:rgba(255,247,248,.42);font-weight:500">/user/mo</span></div>
           <div style="font-size:.78rem;color:rgba(255,247,248,.64)"><span style="color:#f5b942">&#9733;</span> 4.9 (312)</div>
@@ -914,7 +914,7 @@ nav.sp-topnav{display:none!important}
       </a>
       <a href="/pages/notion-pricing-2026-plans-costs-what-you-actually-pay" style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:14px;display:flex;flex-direction:column;gap:10px;transition:all .2s;text-decoration:none;position:relative;overflow:hidden" onmouseover="this.style.borderColor='rgba(255,75,115,.38)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.transform='translateY(0)'">
         <div style="display:flex;align-items:center;gap:10px"><span style="width:44px;height:44px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="https://cdn.simpleicons.org/notion/ffffff" style="width:55%;height:55%;object-fit:contain;filter:brightness(1.15)" onerror="var e=document.createElement('em');e.textContent='S';e.style.cssText='font-style:normal;font-weight:900;color:#fff;font-size:1.1em;line-height:1';this.replaceWith(e)"></span><div><div style="font-size:.95rem;font-weight:700;color:#fff7f8;letter-spacing:-.01em">Notion</div><div style="font-size:.72rem;color:rgba(255,247,248,.42)">Docs &amp; Productivity</div></div></div>
-        <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Docs, wikis, projects — all-in-one workspace for fast-moving teams.</p>
+        <p style="font-size:.82rem;color:rgba(255,247,248,.64);line-height:1.5;flex:1">Docs, wikis, projects, all-in-one workspace for fast-moving teams.</p>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
           <div style="font-size:.95rem;color:#fff7f8;font-weight:700">$8.00<span style="font-style:normal;font-size:.74rem;color:rgba(255,247,248,.42);font-weight:500">/user/mo</span></div>
           <div style="font-size:.78rem;color:rgba(255,247,248,.64)"><span style="color:#f5b942">&#9733;</span> 4.7 (201)</div>
@@ -981,7 +981,7 @@ nav.sp-topnav{display:none!important}
     <div class="verdict-right">
       <div class="verdict-item">
         <div class="verdict-icon">✗</div>
-        <div><h4>No paid placements</h4><p>Vendors can't buy rank. Commission links are disclosed on every page — they never move the verdict.</p></div>
+        <div><h4>No paid placements</h4><p>Vendors can't buy rank. Commission links are disclosed on every page, they never move the verdict.</p></div>
       </div>
       <div class="verdict-item">
         <div class="verdict-icon">↓</div>
@@ -1018,7 +1018,7 @@ nav.sp-topnav{display:none!important}
     <div class="news-glow" style="padding:3.5rem 2.5rem;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(255,70,111,.20),transparent 55%),linear-gradient(180deg,rgba(60,9,24,.82),rgba(22,9,15,.92));border:1px solid rgba(255,75,115,.25);border-radius:28px;box-shadow:0 30px 90px rgba(255,45,92,.14),inset 0 1px 0 rgba(255,255,255,.06)">
       <span style="display:inline-flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ff7a9a;padding:6px 14px;border-radius:9999px;background:rgba(255,65,109,.10);border:1px solid rgba(255,75,115,.25)"><span style="width:6px;height:6px;border-radius:50%;background:#ff416d;box-shadow:0 0 10px #ff416d;animation:dotPulse 2.4s ease-in-out infinite"></span>Newsletter</span>
       <h2 style="font-size:clamp(32px,4vw,52px);line-height:1.02;font-weight:900;letter-spacing:-.035em;color:#fff7f8;margin:1rem 0;text-wrap:balance">Insider insights. <span style="background:linear-gradient(100deg,#ff416d 0%,#ff7a9a 35%,#ffd0dc 50%,#ff7a9a 65%,#ff416d 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:spGlint 3.6s linear infinite">Smarter SaaS decisions.</span></h2>
-      <p style="font-size:1.05rem;line-height:1.65;color:rgba(255,247,248,.64);max-width:480px;margin:0 auto">Pricing changes, hidden fees, tool comparisons, and verified deal alerts &mdash; every Wednesday.</p>
+      <p style="font-size:1.05rem;line-height:1.65;color:rgba(255,247,248,.64);max-width:480px;margin:0 auto">Pricing changes, hidden fees, tool comparisons, and verified deal alerts, every Wednesday.</p>
       <form id="hp-news-form" action="https://formsubmit.co/hello@saaspare.org" method="POST" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:1.75rem;max-width:480px;margin-left:auto;margin-right:auto" onsubmit="return hpNewsSubmit(this)">
         <input type="hidden" name="_subject" value="New SaaSpare newsletter signup (homepage)">
         <input type="hidden" name="_template" value="table">
@@ -1027,7 +1027,7 @@ nav.sp-topnav{display:none!important}
         <input type="email" name="email" placeholder="Enter your work email" required style="flex:1;min-width:220px;padding:.85rem 1.1rem;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.09);border-radius:9999px;color:#fff7f8;font-size:.95rem;outline:none;font-family:inherit">
         <button type="submit" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:.85rem 1.5rem;border-radius:9999px;font-weight:700;font-size:.92rem;background:linear-gradient(135deg,#ff416d,#c92950);color:#fff;box-shadow:0 10px 30px rgba(255,65,109,.45);border:none;cursor:pointer;font-family:inherit;position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='translateY(0)'">Subscribe Free</button>
       </form>
-      <p id="hp-news-success" style="display:none;font-size:.95rem;color:#65d6a3;font-weight:700;margin-top:1.25rem">✓ You're in! Check your inbox to confirm — first issue lands Wednesday.</p>
+      <p id="hp-news-success" style="display:none;font-size:.95rem;color:#65d6a3;font-weight:700;margin-top:1.25rem">✓ You're in! Check your inbox to confirm, first issue lands Wednesday.</p>
       <p style="font-size:.82rem;color:rgba(255,247,248,.42);margin-top:1rem">No spam. Unsubscribe anytime. Written by real buyers.</p>
       <script>
       function hpNewsSubmit(form){
@@ -1102,7 +1102,7 @@ nav.sp-topnav{display:none!important}
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40),{passive:true});
 
-/* SOUND WAVE DOT GRID — longitudinal compression wave */
+/* SOUND WAVE DOT GRID, longitudinal compression wave */
 (function(){
   const canvas=document.getElementById('wave-dots');
   if(!canvas)return;
@@ -1243,7 +1243,7 @@ const cObs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){
 }})},{threshold:.06});
 document.querySelectorAll('.cat-grid,.comp-grid').forEach(g=>cObs.observe(g));
 
-/* CARD MOUSE GLOW — spotlight follows cursor on every card type */
+/* CARD MOUSE GLOW, spotlight follows cursor on every card type */
 document.querySelectorAll('.cat-card,.comp-card,.tool-card,.trust-item,.hero-path').forEach(c=>c.addEventListener('mousemove',e=>{
   const r=c.getBoundingClientRect();
   c.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
@@ -1349,7 +1349,7 @@ document.addEventListener('click',function(e){
     + 'border-radius:50%;background:rgba(52,211,153,.18);border:1px solid rgba(52,211,153,.35);'
     + 'color:#34d399;font-size:1.3rem;margin-bottom:.5rem">&#10003;</div>'
     + '<p style="color:#34d399;font-weight:700;margin-bottom:.25rem">You're in!</p>'
-    + '<p style="color:rgba(255,255,255,.5);font-size:.83rem">Check your inbox — welcome email on its way.</p></div>';
+    + '<p style="color:rgba(255,255,255,.5);font-size:.83rem">Check your inbox, welcome email on its way.</p></div>';
   var SUCCESS_EXIT = '<div style="text-align:center;padding:.5rem 0">'
     + '<p style="color:#34d399;font-weight:700;font-size:1rem">&#10003; You're subscribed!</p>'
     + '<p style="color:rgba(255,255,255,.45);font-size:.8rem;margin-top:.25rem">Check your inbox in a moment.</p></div>';
@@ -1429,7 +1429,7 @@ document.addEventListener('click',function(e){
     sessionStorage.setItem('ssExitShown','1');
     var m=document.createElement('div'); m.id='ss-exit-modal'; m.setAttribute('data-open','1');
     m.innerHTML='<div id="ss-exit-card"><button id="ss-exit-close" aria-label="Close">&times;</button>'
-      +'<h3>Before you go &mdash; the honest SaaS deals weekly</h3>'
+      +'<h3>Before you go: the honest SaaS deals weekly</h3>'
       +'<p>Every Friday we email 1 verified deal, 1 pricing change and 1 tool to avoid. Free, no spam.</p>'
       +'<form action="https://formsubmit.co/hello@saaspare.org" method="POST" id="ss-exit-form">'
       +'<input type="email" name="email" placeholder="you@company.com" required><button type="submit">Get it</button>'

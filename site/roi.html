@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SaaS ROI Calculator — Real Savings, Real Costs | SaaSpare 2026</title>
+<title>SaaS ROI Calculator: Real Savings, Real Costs | SaaSpare 2026</title>
 <meta name="description" content="Calculate your ROI before switching SaaS tools. Compare total cost of ownership, savings, and payback period with real pricing data.">
 <link rel="stylesheet" href="/assets/sp-shared.css">
 <link rel="stylesheet" href="/assets/sp-motion.css">
@@ -156,7 +156,7 @@ body>div.sp-bg+nav#nav~*:first-of-type{padding-top:4.5rem}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="theme-color" content="#050407">
   <meta name="robots" content="index,follow">
-<meta name="keywords" content="SaaS ROI Calculator — Real Savings, Real Costs 2026, pricing, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
+<meta name="keywords" content="SaaS ROI Calculator, Real Savings, Real Costs 2026, pricing, SaaS pricing, software comparison, free trial, alternatives, SaaSpare">
 <meta property="og:url" content="https://saaspare.org/roi">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://saaspare.org/og-default.png">
@@ -429,7 +429,7 @@ nav.sp-topnav{display:none!important}
 
 /* ── ROI Calculator engine ──────────────────────────────────────────────── */
 (function(){
-  /* Tool price lookup — drives auto-fill when tool is changed */
+  /* Tool price lookup, drives auto-fill when tool is changed */
   var TOOLS={
     '1Password':{price:2.99},'Bitwarden':{price:3.00},'HubSpot':{price:20},
     'NordVPN':{price:4.49},'Semrush':{price:129},'ClickUp':{price:7},
@@ -522,7 +522,7 @@ nav.sp-topnav{display:none!important}
         setTimeout(function(){savPanel.style.boxShadow='';},900);
       }
     } else {
-      /* Static — no animation */
+      /* Static, no animation */
       var sv=document.getElementById('roi-saving-val');
       if(sv)sv.innerHTML=fmt(r.savings)+'<em>/year</em>';
       var rv=document.getElementById('roi-roi-val');
@@ -607,7 +607,7 @@ nav.sp-topnav{display:none!important}
 
     /* Team size */
     var teamInp=document.querySelectorAll('input.roi-input')[1]; // second input = team size
-    /* Actually identify by placeholder proximity — grab text inputs */
+    /* Actually identify by placeholder proximity, grab text inputs */
     var numInputs=Array.from(document.querySelectorAll('.roi-input-sm'));
     /* numInputs[0]=team size, numInputs[1]=price, numInputs[2]=discount */
     if(numInputs[0]){
