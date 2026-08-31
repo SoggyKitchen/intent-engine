@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-31T09:42:13+00:00",
+  "generated_at_utc": "2026-08-31T10:20:14+00:00",
   "mode": "apply",
   "pages_flagged": 44,
   "claim_labels_seen": [
@@ -77,47 +77,47 @@
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "scription\" content=\"Updated August 2026. NordVPN has no free plan. But it has a 30-day money-back guarantee and a 7-day iOS/macOS App Store trial. Plans start at $2.99/mo (2-year).\u2026\"> <"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "<meta property=\"og:description\" content=\"NordVPN has no free plan. But their 30-day money-back guarantee is real, buy, test everything, and get a full refund. Plans from $2.99/mo on th"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "\"Answer\", \"text\": \"No. NordVPN does not have a free plan in 2026. They offer a 30-day money-back guarantee on all paid plans (Basic, Plus, Ultimate). This means you can buy, use the full"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": ". On Windows, Android, and Linux, there is no free trial. All platforms get the 30-day money-back guarantee instead.\"}}, {\"@type\": \"Question\", \"name\": \"How much does NordVPN cost?\", \"acce"
+          "context": "r, free account, or ad-supported option. What NordVPN offers instead: a <strong>30-day money-back guarantee</strong> on all paid plans (full refund, no questions), and a <strong>7-day fre"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
-          "context": "term; renewal rates are higher.\"}}, {\"@type\": \"Question\", \"name\": \"Is NordVPN's money-back guarantee actually honoured?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. NordVP"
+          "context": "class=\"subtitle\">Everything you need to know about NordVPN's trial options, the money-back guarantee process, and how it compares to genuinely free VPNs</p> <div class=\"trust-ba"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "ually honoured?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. NordVPN's 30-day money-back guarantee is widely reported as genuine. You can request a refund via live chat, no lengt"
+          "context": "=\"tldr-box\"> <strong>TL;DR, </strong> NordVPN has no free plan. The <strong>30-day money-back guarantee</strong> is the real alternative, buy the 2-year plan at $2.99/mo, use the full"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "grams historically offered extended trials, but in 2026 the standard offer is a 30-day money-back guarantee. The 7-day App Store trial is the closest to a no-cost trial, and it does not a"
+          "context": "s a subscription.</p> <p>What they do offer:</p> <ul> <li><strong>30-day money-back guarantee</strong>, available on all plans, all billing periods. Buy \u2192 use \u2192 refund if un"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-Day Money-Back Guarantee",
+          "context": "lass=\"mini-kicker\">Active Affiliate, NordVPN</p> <h3>Try NordVPN Risk-Free: 30-Day Money-Back Guarantee</h3> <p>Buy the 2-year plan at $2.99/mo, use every feature for up to 30 day"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "org\"}, \"description\": \"NordVPN has no free plan in 2026. This page explains the 30-day money-back guarantee, the 7-day iOS trial, and what you actually get risk-free.\", \"mainEntityOfPage\""
+          "context": "<p>Since there's no free plan, here are the paid options, all covered by the 30-day money-back guarantee:</p> <table> <caption style=\"position:absolute;width:1px;height:1px;"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-Day Money-Back Guarantee",
+          "context": "period you choose.</p> </div> <div class=\"section\"> <h2>How to Use the 30-Day Money-Back Guarantee</h2> <p>The money-back process is genuinely straightforward. Here's how it"
         },
         {
           "label": "money_back_guarantee",
           "snippet": "30-day money-back guarantee",
-          "context": "r, free account, or ad-supported option. What NordVPN offers instead: a <strong>30-day money-back guarantee</strong> on all paid plans (full refund, no questions), and a <strong>7-day fre"
+          "context": "is is not available on Windows, Android, or Linux. Those platforms get only the 30-day money-back guarantee.</p> </div> <div class=\"section\"> <h2>NordVPN vs Genuinely Free VPNs</"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "money-back guarantee",
+          "context": "he service.</p> </div> <div class=\"faq-item\"> <h3>Is the NordVPN money-back guarantee real?</h3> <p>Yes, it is broadly considered genuine. Users across Reddit"
         }
       ],
       "trust_state_bumped": false
@@ -216,31 +216,6 @@
       "claims": [
         {
           "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "ntent=\"Updated August 2026. Sucuri has no traditional free trial, but you get a 30-day money-back guarantee on any paid plan and a completely free malware scanner (no\u2026\"> <link rel=\"canoni"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "0% free website malware scanner (SiteCheck) with no account required, and (2) a 30-day money-back guarantee on all paid plans, Basic, Pro, Business, and Platform.\"}}, {\"@type\": \"Question\""
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "quire a paid plan.\"}}, {\"@type\": \"Question\", \"name\": \"How do I claim the Sucuri 30-day money-back guarantee?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Email Sucuri support (support"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "text\": \"Sucuri plans are sold annually. There is no monthly billing option. The 30-day money-back guarantee covers the full year's purchase if you cancel within 30 days of the original tr"
-        },
-        {
-          "label": "money_back_guarantee",
-          "snippet": "30-day money-back guarantee",
-          "context": "y=\"og:description\" content=\"Sucuri has no traditional free trial, but you get a 30-day money-back guarantee and a completely free malware scanner. Here's exactly how to use both.\"> <meta"
-        },
-        {
-          "label": "money_back_guarantee",
           "snippet": "Money-Back Guarantee",
           "context": "er\"></div> <div class=\"trial-meta\"> <div class=\"trial-free-label\">Money-Back Guarantee</div> <div class=\"chip-cc-req chip-cc-yes\" style=\"margin-bottom:6px\">\u26a0"
         },
@@ -258,6 +233,11 @@
           "label": "money_back_guarantee",
           "snippet": "money-back guarantee",
           "context": "ass=\"wh-label\">No reason required</div> <div class=\"wh-desc\">Sucuri's money-back guarantee is unconditional within the 30-day window. You don't need to justify the refund"
+        },
+        {
+          "label": "money_back_guarantee",
+          "snippet": "30-day money-back guarantee",
+          "context": "completely free malware scanner (SiteCheck) that requires no account, and (2) a 30-day money-back guarantee on all paid plans. The guarantee is unconditional, no reason required within 30"
         }
       ],
       "trust_state_bumped": false
