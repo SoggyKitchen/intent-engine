@@ -213,6 +213,12 @@ jobs:
         run: uv run python scripts/fix_universal_nav.py
         continue-on-error: true
 
+      # 4i-humanize. Strip em-dashes and AI-tell words that regenerated pages
+      # from the ~20 individual generator scripts keep reintroducing.
+      - name: Humanize text (strip em-dashes, AI-tell words)
+        run: uv run python scripts/humanize_text.py
+        continue-on-error: true
+
       # 4i-ui. Inject saaspare-ui.css into any pages missing it.
       # Without this, engine-generated pages show as plain text (no card styles).
       - name: Inject saaspare-ui.css into pages missing it
