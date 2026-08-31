@@ -249,6 +249,12 @@ def fix_page(path: Path) -> bool:
         html = re.sub(r'<div\s+class=["\']sp-bg["\'][^>]*>\s*</div>', '', html)
         html = re.sub(r'<div\s+class=["\']sp-bg["\'][^>]*/>', '', html)
 
+        # 5. Homepage hero sits flush against the fixed nav (no reserved gap) -
+        # a CSS upgrade/replace above would otherwise stamp the generic 72px
+        # spacer over this intentional override every run. Preserve it.
+        if path.name == "index.html":
+            html = html.replace('.sp-nav-spacer{height:72px}', '.sp-nav-spacer{height:0}')
+
         if html != original:
             path.write_text(html, encoding="utf-8")
             return True
