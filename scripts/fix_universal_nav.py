@@ -28,11 +28,13 @@ NAV_CSS = """<style id="sp-nav-css">
 /* ── SaaSpare Universal Nav ───────────────────────────────────────────────── */
 :root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
 nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
-  display:flex;align-items:center;gap:4px;transition:all .4s ease;
+  display:grid;grid-template-columns:1fr auto 1fr;column-gap:12px;align-items:center;transition:all .4s ease;
   background:transparent;border-bottom:none}
 nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.sp-nav-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
+.sp-nav-logo{display:flex;align-items:center;gap:9px;justify-self:start;text-decoration:none}
+.sp-nav-links{display:flex;align-items:center;gap:4px;justify-self:center}
+.sp-nav-right{display:flex;align-items:center;gap:6px;justify-self:end}
 .sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
   animation:spMarkGlow 4s ease-in-out infinite}
 .sp-nav-mark .mark-top,.sp-nav-mark .mark-bot{transform-box:fill-box;transform-origin:center;
@@ -51,7 +53,7 @@ nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
 nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
 .sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
   padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
-  box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
+  box-shadow:0 4px 16px rgba(233,69,96,.4);
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 .sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
@@ -60,7 +62,7 @@ nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;rig
 nav.sp-topnav{display:none!important}
 #sp-nav-search{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);
   border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:7px 12px;
-  margin:0 6px 0 auto;min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
+  min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
 #sp-nav-search:focus-within{width:240px;border-color:rgba(255,75,115,.4)}
 #sp-nav-search svg{flex-shrink:0;color:rgba(255,248,245,.42)}
 #sp-nav-search-input{background:none;border:none;outline:none;color:#fff7f8;
@@ -119,17 +121,21 @@ NAV_HTML = """<nav id="sp-nav">
     </svg>
     <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
   </a>
+  <div class="sp-nav-links">
   <a href="/pages/" class="sp-nav-link">Comparisons</a>
   <a href="/roi" class="sp-nav-link">ROI Calculator</a>
   <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
   <a href="/about" class="sp-nav-link">About</a>
+  </div>
+  <div class="sp-nav-right">
   <form id="sp-nav-search" action="/pages/" role="search" aria-label="Search tools">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
     <input id="sp-nav-search-input" name="q" type="search" placeholder="Search tools..." autocomplete="off">
     <span class="sp-nav-kbd">&#8984;K</span>
   </form>
   <a href="/shortlist" class="sp-nav-cta">Build Shortlist &#8594;</a>
+  </div>
 </nav>
 <div class="sp-nav-spacer"></div>"""
 
@@ -144,6 +150,17 @@ OLD_NAV_PATTERNS = [
     # Old nav#nav from shortlist-style pages
     re.compile(
         r'<nav\s+id=["\']nav["\'][^>]*>.*?</nav>',
+        re.DOTALL
+    ),
+    # Legacy fully-inline-styled nav baked directly into ~540 older page
+    # templates (no shared classes, no spacer div - so the id="sp-nav"
+    # idempotent pattern below never matched it, stranding these pages on
+    # an outdated link set/CTA). Also swallow its trailing inline scroll
+    # script, which is now redundant with (and fights) the canonical
+    # classList-based scroll toggle in NAV_CSS.
+    re.compile(
+        r'<nav\s+id=["\']sp-nav["\']\s+style="position:fixed.*?</nav>'
+        r'(?:\s*<script>(?:(?!</script>).)*?getElementById\(.sp-nav.\)(?:(?!</script>).)*?</script>)?',
         re.DOTALL
     ),
     # sp-nav already (idempotent - skip if already correct)
@@ -185,7 +202,8 @@ def fix_page(path: Path) -> bool:
             re.DOTALL
         )
         if CSS_MARKER in html and ('sp-nav-link.active::after' not in html
-                                    or '#sp-nav-search{' not in html):
+                                    or '#sp-nav-search{' not in html
+                                    or 'grid-template-columns:1fr auto 1fr' not in html):
             if old_css_pat.search(html):
                 html = old_css_pat.sub(NAV_CSS, html, count=1)
 
@@ -203,9 +221,21 @@ def fix_page(path: Path) -> bool:
                 '<a href="/about" class="sp-nav-link">About</a>\n'
                 '  ' + NAV_SEARCH_HTML, 1)
 
-        # Skip if already has new nav, current CSS, search bar, and no duplicate (idempotent)
+        # Upgrade navs still using the old flat/flex layout to the symmetric
+        # 3-column grid (logo | links centered | search+CTA) (Aug 2026 redesign)
+        if NAV_MARKER in html and 'class="sp-nav-links"' not in html:
+            full_nav_pat = re.compile(
+                r'<nav\s+id=["\']sp-nav["\'][^>]*>.*?</nav>\s*<div\s+class=["\']sp-nav-spacer["\']></div>',
+                re.DOTALL
+            )
+            if full_nav_pat.search(html):
+                html = full_nav_pat.sub(NAV_HTML, html, count=1)
+
+        # Skip if already has new nav, current CSS, search bar, symmetric
+        # layout, and no duplicate (idempotent)
         if (NAV_MARKER in html and CSS_MARKER in html
-                and 'sp-nav-link.active::after' in html and SEARCH_MARKER in html):
+                and 'sp-nav-link.active::after' in html and SEARCH_MARKER in html
+                and 'class="sp-nav-links"' in html):
             if html != original:
                 path.write_text(html, encoding="utf-8")
                 return True
@@ -301,11 +331,11 @@ def main():
     print()
     print("What was fixed:")
     print("  - Universal animated SVG logo nav injected on all pages")
-    print("  - Transparent→frosted glass scroll behaviour")
+    print("  - Transparent -> frosted glass scroll behaviour")
     print("  - sp-bg div removed (was causing bracket/black-bar glitch)")
     print("  - Old sp-topnav hidden via CSS")
     print("  - 72px spacer added to prevent content hiding behind fixed nav")
-    print("  - Header search bar (⌘K) present on every page")
+    print("  - Header search bar (Cmd/Ctrl+K) present on every page")
 
 
 if __name__ == "__main__":

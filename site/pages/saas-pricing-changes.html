@@ -279,11 +279,13 @@
 /* ── SaaSpare Universal Nav ───────────────────────────────────────────────── */
 :root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
 nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
-  display:flex;align-items:center;gap:4px;transition:all .4s ease;
+  display:grid;grid-template-columns:1fr auto 1fr;column-gap:12px;align-items:center;transition:all .4s ease;
   background:transparent;border-bottom:none}
 nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.sp-nav-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
+.sp-nav-logo{display:flex;align-items:center;gap:9px;justify-self:start;text-decoration:none}
+.sp-nav-links{display:flex;align-items:center;gap:4px;justify-self:center}
+.sp-nav-right{display:flex;align-items:center;gap:6px;justify-self:end}
 .sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
   animation:spMarkGlow 4s ease-in-out infinite}
 .sp-nav-mark .mark-top,.sp-nav-mark .mark-bot{transform-box:fill-box;transform-origin:center;
@@ -297,22 +299,63 @@ nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp
 .sp-nav-wordmark em{color:#e94560;font-style:normal}
 nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
   border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
-nav#sp-nav .sp-nav-link:hover,.sp-nav-link.active{color:#fff}
+nav#sp-nav .sp-nav-link:hover{color:#fff}
+nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
+nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
 .sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
   padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
-  box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
+  box-shadow:0 4px 16px rgba(233,69,96,.4);
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
-.sp-nav-spacer{height:72px}
+.sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
+/* Remove old nav styles that cause bracket/black-bar glitches */
 .sp-bg{display:none!important}
 nav.sp-topnav{display:none!important}
+#sp-nav-search{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:7px 12px;
+  min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
+#sp-nav-search:focus-within{width:240px;border-color:rgba(255,75,115,.4)}
+#sp-nav-search svg{flex-shrink:0;color:rgba(255,248,245,.42)}
+#sp-nav-search-input{background:none;border:none;outline:none;color:#fff7f8;
+  font-size:.8rem;font-family:inherit;width:100%;min-width:0}
+#sp-nav-search-input::placeholder{color:rgba(255,248,245,.38)}
+#sp-nav-search .sp-nav-kbd{flex-shrink:0;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:1px 6px;
+  font-size:.68rem;color:rgba(255,248,245,.4);font-family:inherit}
+@media(max-width:900px){#sp-nav-search{display:none}}
 </style>
 <script>
 (function(){
   window.addEventListener('scroll',function(){
     var nav=document.getElementById('sp-nav');
-    if(nav){nav.classList.toggle('scrolled',window.scrollY>40);}
+    if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
   },{passive:true});
+
+  var searchInput=document.getElementById('sp-nav-search-input');
+  if(searchInput){
+    document.addEventListener('keydown',function(e){
+      if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){
+        e.preventDefault();searchInput.focus();searchInput.select();
+      }
+    });
+  }
+
+  function highlightNav(){
+    var path=window.location.pathname;
+    var override=document.body.getAttribute('data-nav');
+    var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
+    var best=null,bestLen=0;
+    links.forEach(function(a){
+      var href=a.getAttribute('href');
+      if(!href||href==='/') return;
+      if(override){if(href===override){best=a;}return;}
+      if(path===href||path.indexOf(href.replace(/\/$/,'')+'/')===0){
+        if(href.length>bestLen){best=a;bestLen=href.length;}
+      }
+    });
+    if(best){best.classList.add('active');}
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',highlightNav);}else{highlightNav();}
 })();
 </script>
 </head>
@@ -329,11 +372,21 @@ nav.sp-topnav{display:none!important}
     </svg>
     <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
   </a>
+  <div class="sp-nav-links">
   <a href="/pages/" class="sp-nav-link">Comparisons</a>
+  <a href="/roi" class="sp-nav-link">ROI Calculator</a>
   <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
   <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
   <a href="/about" class="sp-nav-link">About</a>
+  </div>
+  <div class="sp-nav-right">
+  <form id="sp-nav-search" action="/pages/" role="search" aria-label="Search tools">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="sp-nav-search-input" name="q" type="search" placeholder="Search tools..." autocomplete="off">
+    <span class="sp-nav-kbd">&#8984;K</span>
+  </form>
   <a href="/shortlist" class="sp-nav-cta">Build Shortlist &#8594;</a>
+  </div>
 </nav>
 <div class="sp-nav-spacer"></div>
 <nav><a href="/">SaaSpare</a> &middot; <a href="/pages/">Compare</a> &middot; <a href="/pages/saas-pricing-changes">Price Changes</a> &middot; <a href="/pages/saas-buyer-signals-2026">Buyer Signals</a></nav>

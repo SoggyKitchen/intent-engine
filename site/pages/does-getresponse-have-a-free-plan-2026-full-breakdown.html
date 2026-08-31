@@ -30,11 +30,13 @@
 /* ── SaaSpare Universal Nav ───────────────────────────────────────────────── */
 :root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
 nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
-  display:flex;align-items:center;gap:4px;transition:all .4s ease;
+  display:grid;grid-template-columns:1fr auto 1fr;column-gap:12px;align-items:center;transition:all .4s ease;
   background:transparent;border-bottom:none}
 nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.sp-nav-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
+.sp-nav-logo{display:flex;align-items:center;gap:9px;justify-self:start;text-decoration:none}
+.sp-nav-links{display:flex;align-items:center;gap:4px;justify-self:center}
+.sp-nav-right{display:flex;align-items:center;gap:6px;justify-self:end}
 .sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
   animation:spMarkGlow 4s ease-in-out infinite}
 .sp-nav-mark .mark-top,.sp-nav-mark .mark-bot{transform-box:fill-box;transform-origin:center;
@@ -53,7 +55,7 @@ nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
 nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
 .sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
   padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
-  box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
+  box-shadow:0 4px 16px rgba(233,69,96,.4);
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 .sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
@@ -62,7 +64,7 @@ nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;rig
 nav.sp-topnav{display:none!important}
 #sp-nav-search{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);
   border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:7px 12px;
-  margin:0 6px 0 auto;min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
+  min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
 #sp-nav-search:focus-within{width:240px;border-color:rgba(255,75,115,.4)}
 #sp-nav-search svg{flex-shrink:0;color:rgba(255,248,245,.42)}
 #sp-nav-search-input{background:none;border:none;outline:none;color:#fff7f8;

@@ -34,11 +34,13 @@
 /* ── SaaSpare Universal Nav ───────────────────────────────────────────────── */
 :root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
 nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
-  display:flex;align-items:center;gap:4px;transition:all .4s ease;
+  display:grid;grid-template-columns:1fr auto 1fr;column-gap:12px;align-items:center;transition:all .4s ease;
   background:transparent;border-bottom:none}
 nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.sp-nav-logo{display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none}
+.sp-nav-logo{display:flex;align-items:center;gap:9px;justify-self:start;text-decoration:none}
+.sp-nav-links{display:flex;align-items:center;gap:4px;justify-self:center}
+.sp-nav-right{display:flex;align-items:center;gap:6px;justify-self:end}
 .sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
   animation:spMarkGlow 4s ease-in-out infinite}
 .sp-nav-mark .mark-top,.sp-nav-mark .mark-bot{transform-box:fill-box;transform-origin:center;
@@ -57,7 +59,7 @@ nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
 nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
 .sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
   padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
-  box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;
+  box-shadow:0 4px 16px rgba(233,69,96,.4);
   transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
 .sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
 .sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
@@ -66,7 +68,7 @@ nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;rig
 nav.sp-topnav{display:none!important}
 #sp-nav-search{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);
   border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:7px 12px;
-  margin:0 6px 0 auto;min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
+  min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
 #sp-nav-search:focus-within{width:240px;border-color:rgba(255,75,115,.4)}
 #sp-nav-search svg{flex-shrink:0;color:rgba(255,248,245,.42)}
 #sp-nav-search-input{background:none;border:none;outline:none;color:#fff7f8;
@@ -117,33 +119,35 @@ nav.sp-topnav{display:none!important}
 </head>
 <body style="background:#050407;color:#fff7f8">
 
-  <nav id="sp-nav" style="position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 2rem;display:flex;align-items:center;gap:6px;background:transparent;border-bottom:none;transition:all .3s ease;">
-    <a href="/" style="display:flex;align-items:center;gap:9px;margin-right:auto;text-decoration:none;">
-      <svg style="height:26px;width:auto;flex-shrink:0;overflow:visible" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath><clipPath id="cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath></defs><path fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/><path fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></svg>
-      <span style="font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff">Saa<em style="color:#e94560;font-style:normal">Spare</em></span>
-    </a>
-    <a href="/pages/" style="color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;text-decoration:none;white-space:nowrap;">Comparisons</a>
-    <a href="/deal-radar" style="color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;text-decoration:none;white-space:nowrap;">Deal Radar</a>
-    <a href="/about" style="color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;border-radius:8px;font-weight:500;text-decoration:none;white-space:nowrap;">About</a>
-    <a href="/shortlist" style="background:linear-gradient(135deg,#e94560,#c73652);color:#fff;padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;box-shadow:0 4px 16px rgba(233,69,96,.4);margin-left:6px;text-decoration:none;white-space:nowrap;">Shortlist Builder &#8594;</a>
-  </nav>
-  <script>
-    (function(){
-      var n=document.getElementById('sp-nav');
-      if(!n) return;
-      window.addEventListener('scroll',function(){
-        if(window.scrollY>40){
-          n.style.background='rgba(7,7,13,.85)';
-          n.style.borderBottom='1px solid rgba(255,255,255,.07)';
-          n.style.backdropFilter='blur(20px)';
-        } else {
-          n.style.background='transparent';
-          n.style.borderBottom='none';
-          n.style.backdropFilter='none';
-        }
-      },{passive:true});
-    })();
-  </script>
+  <nav id="sp-nav">
+  <a href="/" class="sp-nav-logo" aria-label="SaaSpare home">
+    <svg class="sp-nav-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <clipPath id="sp-ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath>
+        <clipPath id="sp-cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath>
+      </defs>
+      <path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/>
+      <path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/>
+    </svg>
+    <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
+  </a>
+  <div class="sp-nav-links">
+  <a href="/pages/" class="sp-nav-link">Comparisons</a>
+  <a href="/roi" class="sp-nav-link">ROI Calculator</a>
+  <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
+  <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
+  <a href="/about" class="sp-nav-link">About</a>
+  </div>
+  <div class="sp-nav-right">
+  <form id="sp-nav-search" action="/pages/" role="search" aria-label="Search tools">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="sp-nav-search-input" name="q" type="search" placeholder="Search tools..." autocomplete="off">
+    <span class="sp-nav-kbd">&#8984;K</span>
+  </form>
+  <a href="/shortlist" class="sp-nav-cta">Build Shortlist &#8594;</a>
+  </div>
+</nav>
+<div class="sp-nav-spacer"></div>
 
   <div style="max-width:940px;margin:0 auto;padding:5rem 1.5rem 4rem;">
 <div class="sticky-cta" id="sticky-bar">
