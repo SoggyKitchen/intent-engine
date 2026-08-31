@@ -365,6 +365,17 @@ jobs:
           PYEOF
         continue-on-error: true
 
+      # 4z-3d. Universal nav consistency, FINAL pass. The premium-template
+      # generators above (4z-1..4z-2e) render some pages from static files in
+      # outputs/templates/ that carry their own frozen nav snapshot - when a
+      # generator decides a page still needs (re)rendering, it silently reverts
+      # that page's nav to whatever was last saved in the template, undoing the
+      # 4i-nav pass earlier in this run. Re-running it here, after every
+      # generator, is what actually makes "nav always wins" true end to end.
+      - name: Universal nav consistency (final pass)
+        run: uv run python scripts/fix_universal_nav.py
+        continue-on-error: true
+
       # 4z-FINAL. Rebuild the sitemap AFTER all page generators have run.
       # The earlier sitemap build (update_sitemap_hubs + update_sitemap_and_index)
       # happens before the best-of/pricing/review/etc. generators create new pages,
