@@ -213,6 +213,14 @@ jobs:
         run: uv run python scripts/fix_universal_nav.py
         continue-on-error: true
 
+      # 4i-otto. Search Atlas OTTO SEO pixel — lets the dashboard detect and
+      # (with per-fix approval in that dashboard) live-apply SEO fixes without
+      # a deploy. Installed on the 7-day trial; keep this step even if the
+      # trial lapses, it's a harmless no-op with no active subscription.
+      - name: OTTO SEO pixel consistency
+        run: uv run python scripts/fix_otto_script.py
+        continue-on-error: true
+
       # 4i-humanize. Strip em-dashes and AI-tell words that regenerated pages
       # from the ~20 individual generator scripts keep reintroducing.
       - name: Humanize text (strip em-dashes, AI-tell words)
@@ -374,6 +382,12 @@ jobs:
       # generator, is what actually makes "nav always wins" true end to end.
       - name: Universal nav consistency (final pass)
         run: uv run python scripts/fix_universal_nav.py
+        continue-on-error: true
+
+      # 4z-3e. Same "generators can silently revert it" risk applies to the
+      # OTTO SEO pixel - re-run after every generator for the same reason.
+      - name: OTTO SEO pixel consistency (final pass)
+        run: uv run python scripts/fix_otto_script.py
         continue-on-error: true
 
       # 4z-FINAL. Rebuild the sitemap AFTER all page generators have run.
