@@ -301,7 +301,7 @@ def build_email_marketing():
   <ul style="color:rgba(255,248,245,.65);line-height:2;padding-left:1.2rem">{related}</ul>
 
   <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;margin-top:3rem">
-    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All platforms independently tested by SaaSpare. Pricing verified {TODAY}. We receive commissions on some tools — this does not affect rankings. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
+    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All platforms independently researched. Pricing verified {TODAY}. We receive commissions on some tools — this does not affect rankings. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
   </div>
 </main>
 {footer_scripts("email-marketing-hub")}"""
@@ -431,7 +431,7 @@ def build_ecommerce():
   <ul style="color:rgba(255,248,245,.65);line-height:2;padding-left:1.2rem">{related}</ul>
 
   <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;margin-top:3rem">
-    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All platforms independently tested by SaaSpare. Pricing verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
+    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All platforms independently researched. Pricing verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
   </div>
 </main>
 {footer_scripts("ecommerce-hub")}"""
@@ -559,7 +559,7 @@ def build_accounting():
   <ul style="color:rgba(255,248,245,.65);line-height:2;padding-left:1.2rem">{related}</ul>
 
   <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;margin-top:3rem">
-    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All platforms independently tested. Pricing verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
+    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> Pricing independently verified. Pricing verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
   </div>
 </main>
 {footer_scripts("accounting-hub")}"""
@@ -689,7 +689,7 @@ def build_crm():
   <ul style="color:rgba(255,248,245,.65);line-height:2;padding-left:1.2rem">{related}</ul>
 
   <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;margin-top:3rem">
-    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All CRMs independently tested by SaaSpare. Pricing verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
+    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All CRMs independently researched. Pricing verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
   </div>
 </main>
 {footer_scripts("crm-hub")}"""
@@ -813,7 +813,7 @@ def build_project_management():
   <ul style="color:rgba(255,248,245,.65);line-height:2;padding-left:1.2rem">{related}</ul>
 
   <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;margin-top:3rem">
-    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All platforms independently tested by SaaSpare. Pricing verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
+    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All platforms independently researched. Pricing verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
   </div>
 </main>
 {footer_scripts("pm-hub")}"""

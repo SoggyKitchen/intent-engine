@@ -156,7 +156,7 @@ def related_links(pairs):
 
 def disclosure():
     return """<div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;margin-top:3rem">
-  <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All tools independently tested by SaaSpare. Pricing verified {today}. We receive commissions on some purchases — this does not affect rankings. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
+  <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All tools independently researched by SaaSpare. Pricing verified {today}. We receive commissions on some purchases — this does not affect rankings. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
 </div>""".format(today=TODAY)
 
 

@@ -820,7 +820,7 @@ def make_alternatives_page(tool: dict, alternatives: list) -> str:
   {cta_box(tool)}
 
   <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;margin-top:3rem">
-    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All alternatives independently tested. Prices verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Affiliate disclosure</a>.</p>
+    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All alternatives independently researched. Prices verified {TODAY}. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Affiliate disclosure</a>.</p>
   </div>
 </main>
 {footer_html(YEAR)}
@@ -990,7 +990,7 @@ nav.scrolled{{background:rgba(7,7,13,.9);border-bottom:1px solid rgba(255,255,25
   </ul>
 
   <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;margin-top:3rem">
-    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All VPNs independently tested by SaaSpare. Prices verified {TODAY}. We receive commissions on NordVPN and Surfshark purchases — this does not affect rankings. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
+    <p style="font-size:.78rem;color:rgba(255,248,245,.32);line-height:1.6"><strong style="color:rgba(255,248,245,.45)">Methodology:</strong> All VPNs independently researched. Prices verified {TODAY}. We receive commissions on NordVPN and Surfshark purchases — this does not affect rankings. <a href="/affiliate-disclosure" style="color:rgba(233,69,96,.6)">Full disclosure</a>.</p>
   </div>
 </main>
 
