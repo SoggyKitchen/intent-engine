@@ -177,7 +177,24 @@ def fix_page(path: Path) -> bool:
 
         # 3. If no nav found, inject after <body...>
         if not nav_replaced and NAV_MARKER not in html:
-            html = re.sub(r'(<body[^>]*>)', r'\1\n' + NAV_HTML, html, count=1)
+            if re.search(r'<body[^>]*>', html):
+                html = re.sub(r'(<body[^>]*>)', r'\1\n' + NAV_HTML, html, count=1)
+            elif '</head>' in html:
+                # <body> tag itself is missing (seen on 5 pages, Aug 2026) -
+                # add it rather than silently doing nothing.
+                html = html.replace(
+                    '</head>',
+                    '</head>\n<body style="background:#050407;color:rgba(255,248,245,.88)">\n' + NAV_HTML,
+                    1)
+            elif CSS_MARKER in html:
+                # Neither </head> nor <body> present - insert right after the
+                # nav CSS/JS block, which is the last head-level content.
+                css_block = re.search(r'<style id="sp-nav-css">.*?</script>', html, re.DOTALL)
+                if css_block:
+                    insert_at = css_block.end()
+                    html = (html[:insert_at]
+                            + '\n</head>\n<body style="background:#050407;color:rgba(255,248,245,.88)">\n'
+                            + NAV_HTML + '\n' + html[insert_at:])
 
         # 4. Remove stray <div class="sp-bg"> elements (cause bracket glitch)
         html = re.sub(r'<div\s+class=["\']sp-bg["\'][^>]*>\s*</div>', '', html)
