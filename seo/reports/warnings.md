@@ -34,7 +34,7 @@
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.66/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 93.0/100): missing_correction_cta, missing_methodology
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.0/100): title_length_outside_target
-- `/pages/1password-pricing-history-2026` (pricing, 89.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/1password-pricing-history-2026` (pricing, 92.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.28/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.21/100): missing_correction_cta, thin_buyer_page
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 97.16/100): thin_buyer_page
@@ -55,8 +55,8 @@
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid` (alternatives, 84.83/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-slack-alternatives-in-2026-free-paid` (alternatives, 87.6/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (alternatives, 87.62/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.53/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/activecampaign-free-trial-2026-how-to-start-what-you-get` (free_trial, 92.79/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.52/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/activecampaign-free-trial-2026-how-to-start-what-you-get` (free_trial, 92.78/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 94.18/100): missing_methodology, thin_buyer_page, title_length_outside_target
 - `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict` (review, 94.96/100): missing_correction_cta, thin_buyer_page
 - `/pages/activecampaign-vs-brevo-which-is-better-in-2026` (comparison, 97.08/100): thin_buyer_page
@@ -69,10 +69,10 @@
 - `/pages/activecampaign-vs-pardot-which-is-better-in-2026` (comparison, 97.14/100): thin_buyer_page
 - `/pages/affilae-vs-post-affiliate-pro-which-is-better-in-2026` (comparison, 94.51/100): meta_length_outside_target, thin_buyer_page
 - `/pages/agiloft-vs-icertis-which-is-better-in-2026` (comparison, 94.24/100): meta_length_outside_target, thin_buyer_page
-- `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 91.47/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.47/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.75/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 92.83/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/ahrefs-pricing-history-2026` (pricing, 90.41/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ahrefs-pricing-history-2026` (pricing, 92.91/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.12/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.09/100): missing_correction_cta, thin_buyer_page
 - `/pages/ahrefs-vs-clearscope-which-is-better-in-2026` (comparison, 97.11/100): thin_buyer_page
@@ -110,7 +110,7 @@
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.47/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.98/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 95.19/100): missing_methodology, thin_buyer_page
-- `/pages/asana-pricing-history-2026` (pricing, 90.31/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/asana-pricing-history-2026` (pricing, 92.81/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, 92.05/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-review-2026-is-it-worth-it-honest-verdict` (pricing, 95.08/100): missing_correction_cta, thin_buyer_page
 - `/pages/asana-vs-basecamp-which-is-better-in-2026` (comparison, 97.16/100): thin_buyer_page
@@ -123,10 +123,10 @@
 - `/pages/asana-vs-wrike-which-is-better-in-2026` (comparison, 97.04/100): thin_buyer_page
 - `/pages/aweber-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 93.0/100): missing_correction_cta, missing_methodology
 - `/pages/aweber-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 93.0/100): missing_correction_cta, missing_methodology
-- `/pages/aweber-pricing-history-2026` (pricing, 92.0/100): meta_length_outside_target, missing_correction_cta, missing_methodology
+- `/pages/aweber-pricing-history-2026` (pricing, 93.0/100): missing_correction_cta, missing_methodology
 - `/pages/aweber-review-2026-is-it-worth-it-honest-verdict` (pricing, 94.54/100): missing_correction_cta, thin_buyer_page
 - `/pages/aweber-vs-brevo-which-is-better-in-2026` (comparison, 96.2/100): thin_buyer_page, title_length_outside_target
-- `/pages/aweber-vs-constant-contact-which-is-better-in-2026` (comparison, 96.0/100): meta_length_outside_target, title_length_outside_target
+- `/pages/aweber-vs-constant-contact-which-is-better-in-2026` (comparison, 97.0/100): title_length_outside_target
 - `/pages/aweber-vs-convertkit-which-is-better-in-2026` (comparison, 97.19/100): thin_buyer_page
 - `/pages/aweber-vs-mailchimp-which-is-better-in-2026` (comparison, 97.14/100): thin_buyer_page
 - `/pages/aws-vs-contabo-which-is-better-in-2026` (comparison, 97.28/100): thin_buyer_page
@@ -135,7 +135,7 @@
 - `/pages/aws-vs-hetzner-which-is-better-in-2026` (comparison, 94.21/100): meta_length_outside_target, thin_buyer_page
 - `/pages/aws-vs-linode-which-is-better-in-2026` (comparison, 95.12/100): thin_buyer_page
 - `/pages/aws-vs-railway-which-is-better-in-2026` (comparison, 95.12/100): thin_buyer_page
-- `/pages/aws-vs-render-which-is-better-in-2026` (comparison, 94.13/100): meta_length_outside_target, thin_buyer_page
+- `/pages/aws-vs-render-which-is-better-in-2026` (comparison, 95.13/100): thin_buyer_page
 - `/pages/aws-vs-supabase-which-is-better-in-2026` (comparison, 94.12/100): thin_buyer_page, title_length_outside_target
 - `/pages/aws-vs-vultr-which-is-better-in-2026` (comparison, 95.16/100): thin_buyer_page
 - `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (coupon, 92.15/100): missing_correction_cta, missing_methodology, thin_buyer_page
@@ -193,7 +193,7 @@
 - `/pages/best-devtools-for-database-and-infrastructure-management-in-2025` (best_of, 95.0/100): title_length_outside_target
 - `/pages/best-devtools-for-modernizing-legacy-apps-and-api-drift-detection-in-2025` (best_of, 93.0/100): title_length_outside_target
 - `/pages/best-devtools-for-secure-and-efficient-developer-workflows-in-2025` (best_of, 93.0/100): title_length_outside_target
-- `/pages/best-devtools-for-secure-code-review-in-2025` (pricing, 97.5/100): missing_correction_cta
+- `/pages/best-devtools-for-secure-code-review-in-2025` (review, 97.5/100): missing_correction_cta
 - `/pages/best-devtools-for-secure-offline-capable-ai-development-in-2025` (best_of, 93.0/100): title_length_outside_target
 - `/pages/best-devtools-for-secure-scalable-b2b-software-integrations-in-2025` (best_of, 93.0/100): title_length_outside_target
 - `/pages/best-ecommerce-platform-2026` (best_of, 97.5/100): missing_correction_cta
@@ -203,7 +203,7 @@
 - `/pages/best-email-autoresponder-software-2026` (review, 99.0/100): title_length_outside_target
 - `/pages/best-email-marketing-software-2026` (best_of, 95.0/100): missing_correction_cta, missing_trustbox
 - `/pages/best-encrypted-cloud-storage-2026-business` (best_of, 81.84/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/best-engagebay-alternatives-in-2026-free-paid` (alternatives, 93.5/100): meta_length_outside_target, missing_correction_cta, title_length_outside_target
+- `/pages/best-engagebay-alternatives-in-2026-free-paid` (alternatives, 94.5/100): missing_correction_cta, title_length_outside_target
 - `/pages/best-error-handling-developer-tooling-libraries-for-go-in-2025` (review, 93.0/100): title_length_outside_target
 - `/pages/best-fiverr-alternatives-2026` (alternatives, 86.36/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-free-vpn-2026` (best_of, 93.0/100): missing_correction_cta, missing_trustbox

@@ -7,9 +7,8 @@ Pages scanned: 1575
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 1
-- images_missing_alt: 3
-- meta_length_outside_target: 490
+- images_missing_alt: 2
+- meta_length_outside_target: 464
 - missing_correction_cta: 334
 - missing_last_verified: 2
 - missing_methodology: 234
@@ -30,13 +29,13 @@ Pages scanned: 1575
 - `/media-kit`: 71.72/100, issues=none
 - `/corrections`: 71.92/100, issues=none
 - `/roi`: 72.84/100, issues=none
-- `/pages`: 75.0/100, issues=none
+- `/pages/saas-pricing-changes`: 75.01/100, issues=none
 - `/editorial-policy`: 75.05/100, issues=none
 - `/pages/saas-buyer-signals-2026`: 75.05/100, issues=none
 - `/accessibility`: 75.66/100, issues=none
 - `/dmca`: 75.91/100, issues=none
 - `/cookie-policy`: 75.97/100, issues=none
-- `/pages/saas-pricing-changes`: 76.01/100, issues=none
+- `/pages`: 78.0/100, issues=none
 - `/advertise`: 79.31/100, issues=none
 - `/privacy`: 79.66/100, issues=none
 - `/affiliate-disclosure`: 80.02/100, issues=none
@@ -52,10 +51,7 @@ Pages scanned: 1575
 - `/pages/best-saas-deals-this-week-2026`: 83.67/100, issues=none
 - `/pages/v3-preview-newsletter`: 83.7/100, issues=none
 - `/pages/v3-preview-library`: 83.81/100, issues=none
-- `/pages/linear-pricing-history-2026`: 83.84/100, issues=broken_internal_link
-- `/pages/stripe-pricing-history-2026`: 84.36/100, issues=broken_internal_link
 - `/pages/v3-preview-shortlist`: 84.4/100, issues=none
-- `/pages/salesforce-pricing-history-2026`: 84.43/100, issues=broken_internal_link
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
 - `/pages/v3-preview-roi-calculator`: 84.69/100, issues=none
@@ -66,6 +62,9 @@ Pages scanned: 1575
 - `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.81/100, issues=none
 - `/pages/v3-preview-deal-radar`: 84.81/100, issues=none
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.83/100, issues=none
-- `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown`: 84.84/100, issues=none
 - `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 84.86/100, issues=none
 - `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 84.92/100, issues=none
+- `/terms`: 85.0/100, issues=none
+- `/pages/request-a-comparison`: 85.41/100, issues=none
+- `/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work`: 85.5/100, issues=none
+- `/pages/best-ecommerce-platforms-2026`: 85.73/100, issues=none
