@@ -1,44 +1,58 @@
 # Sitemap Report
 
 - Sitemap exists: True
-- Sitemap URL count: 1552
+- Sitemap URL count: 516
 - Scanned HTML pages: 1575
-- Scanned pages missing from sitemap: 36
+- Scanned pages missing from sitemap: 1072
 
 ## Missing Examples
 - https://saaspare.org/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f
 - https://saaspare.org/fo-verify
+- https://saaspare.org/pages/1password-business-vs-cloudflare-which-is-better-in-2026
+- https://saaspare.org/pages/1password-business-vs-crowdstrike-which-is-better-in-2026
+- https://saaspare.org/pages/1password-business-vs-duo-security-which-is-better-in-2026
+- https://saaspare.org/pages/1password-business-vs-okta-which-is-better-in-2026
+- https://saaspare.org/pages/1password-business-vs-qualys-which-is-better-in-2026
+- https://saaspare.org/pages/1password-business-vs-sentinelone-which-is-better-in-2026
+- https://saaspare.org/pages/1password-business-vs-snyk-which-is-better-in-2026
+- https://saaspare.org/pages/1password-business-vs-tenable-which-is-better-in-2026
+- https://saaspare.org/pages/1password-business-vs-tresorit-which-is-better-in-2026
+- https://saaspare.org/pages/1password-coupon-code-promo-codes-2026-verified-discounts
+- https://saaspare.org/pages/1password-free-trial-2026-how-to-get-it-step-by-step
+- https://saaspare.org/pages/1password-pricing-history-2026
 - https://saaspare.org/pages/1password-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/1password-review-2026-is-it-worth-it-honest-verdict
+- https://saaspare.org/pages/1password-vs-bitwarden-which-is-better-in-2026
+- https://saaspare.org/pages/1password-vs-dashlane-which-is-better-in-2026
+- https://saaspare.org/pages/1password-vs-enpass-which-is-better-in-2026
+- https://saaspare.org/pages/1password-vs-keeper-which-is-better-in-2026
+- https://saaspare.org/pages/1password-vs-lastpass-which-is-better-in-2026
+- https://saaspare.org/pages/1password-vs-password-boss-which-is-better-in-2026
+- https://saaspare.org/pages/1password-vs-roboform-which-is-better-in-2026
+- https://saaspare.org/pages/1password-vs-sticky-password-which-is-better-in-2026
 - https://saaspare.org/pages/7-best-1password-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-ahrefs-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-asana-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-canva-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-clickup-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-datadog-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-freshbooks-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-hubspot-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-miro-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-monday-com-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-moz-pro-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-ramp-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-salesforce-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-semrush-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-shopify-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-slack-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-surfer-seo-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-xero-alternatives-in-2026-free-paid
+- https://saaspare.org/pages/7-best-zendesk-alternatives-in-2026-free-paid
 - https://saaspare.org/pages/7-best-zoom-alternatives-in-2026-free-paid
-- https://saaspare.org/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/asana-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/clickup-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/datadog-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/deel-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/hubspot-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/moz-vs-semrush-which-is-better-in-2026
-- https://saaspare.org/pages/notion-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/rippling-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/se-ranking-vs-surfer-seo-which-is-better-in-2026
-- https://saaspare.org/pages/semrush-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/semrush-vs-moz-pro-which-is-better-in-2026
-- https://saaspare.org/pages/shopify-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/xero-promo-code-2026-discounts-deals-that-actually-work
-- https://saaspare.org/pages/zoom-promo-code-2026-discounts-deals-that-actually-work
+- https://saaspare.org/pages/activecampaign-coupon-code-promo-codes-2026-verified-discounts
+- https://saaspare.org/pages/activecampaign-free-trial-2026-how-to-start-what-you-get
+- https://saaspare.org/pages/activecampaign-pricing-2026-plans-costs-what-you-actually-pay
+- https://saaspare.org/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict
+- https://saaspare.org/pages/activecampaign-vs-brevo-which-is-better-in-2026
+- https://saaspare.org/pages/activecampaign-vs-convertkit-which-is-better-in-2026

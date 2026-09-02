@@ -7,6 +7,7 @@ Pages scanned: 1575
 - no_h1: 2
 
 ## Warning Counts
+- canonical_mismatch: 1
 - images_missing_alt: 2
 - meta_length_outside_target: 464
 - missing_correction_cta: 334
@@ -14,7 +15,7 @@ Pages scanned: 1575
 - missing_methodology: 234
 - missing_related_pages: 18
 - missing_trustbox: 63
-- thin_buyer_page: 1186
+- thin_buyer_page: 1185
 - title_length_outside_target: 164
 
 ## Lowest Scoring Pages
@@ -35,36 +36,36 @@ Pages scanned: 1575
 - `/accessibility`: 75.66/100, issues=none
 - `/dmca`: 75.91/100, issues=none
 - `/cookie-policy`: 75.97/100, issues=none
-- `/pages`: 78.0/100, issues=none
+- `/pages`: 77.0/100, issues=none
+- `/pages/v3-preview-404`: 79.2/100, issues=none
 - `/advertise`: 79.31/100, issues=none
 - `/privacy`: 79.66/100, issues=none
 - `/affiliate-disclosure`: 80.02/100, issues=none
-- `/pages/v3-preview-404`: 80.2/100, issues=none
-- `/pages/best-encrypted-cloud-storage-2026-business`: 81.84/100, issues=none
+- `/pages/best-encrypted-cloud-storage-2026-business`: 80.84/100, issues=none
+- `/pages/which-saas-has-the-best-free-plan-2026`: 81.28/100, issues=none
+- `/pages/v3-preview-contact`: 81.72/100, issues=none
+- `/pages/v3-preview-homepage`: 81.91/100, issues=none
+- `/pages/v3-preview-affiliate-disclosure`: 82.02/100, issues=none
 - `/methodology`: 82.33/100, issues=none
-- `/pages/which-saas-has-the-best-free-plan-2026`: 82.33/100, issues=none
-- `/pages/v3-preview-contact`: 82.72/100, issues=none
-- `/pages/v3-preview-homepage`: 82.91/100, issues=none
-- `/pages/v3-preview-affiliate-disclosure`: 83.02/100, issues=none
+- `/pages/v3-preview-about`: 82.52/100, issues=none
+- `/pages/v3-preview-newsletter`: 82.7/100, issues=none
+- `/pages/v3-preview-library`: 82.81/100, issues=none
+- `/pages/linear-pricing-history-2026`: 82.84/100, issues=broken_internal_link
+- `/pages/stripe-pricing-history-2026`: 83.36/100, issues=broken_internal_link
+- `/pages/v3-preview-shortlist`: 83.4/100, issues=none
+- `/pages/salesforce-pricing-history-2026`: 83.43/100, issues=broken_internal_link
 - `/`: 83.5/100, issues=none
-- `/pages/v3-preview-about`: 83.52/100, issues=none
-- `/pages/best-saas-deals-this-week-2026`: 83.67/100, issues=none
-- `/pages/v3-preview-newsletter`: 83.7/100, issues=none
-- `/pages/v3-preview-library`: 83.81/100, issues=none
-- `/pages/v3-preview-shortlist`: 84.4/100, issues=none
+- `/pages/best-saas-deals-this-week-2026`: 83.69/100, issues=none
+- `/pages/v3-preview-roi-calculator`: 83.69/100, issues=none
+- `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 83.76/100, issues=none
+- `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 83.78/100, issues=none
+- `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 83.78/100, issues=none
+- `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 83.8/100, issues=none
+- `/pages/v3-preview-deal-radar`: 83.81/100, issues=none
+- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 83.84/100, issues=none
+- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 83.89/100, issues=none
+- `/pages/request-a-comparison`: 84.38/100, issues=none
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
-- `/pages/v3-preview-roi-calculator`: 84.69/100, issues=none
-- `/pages/cheaper-alternative-to-asana-after-price-hike-2026`: 84.78/100, issues=none
-- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.78/100, issues=none
-- `/pages/cheaper-alternative-to-notion-after-price-hike-2026`: 84.78/100, issues=none
-- `/pages/cheaper-alternative-to-salesforce-after-price-hike-2026`: 84.8/100, issues=none
-- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.81/100, issues=none
-- `/pages/v3-preview-deal-radar`: 84.81/100, issues=none
-- `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 84.83/100, issues=none
-- `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 84.86/100, issues=none
-- `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 84.92/100, issues=none
-- `/terms`: 85.0/100, issues=none
-- `/pages/request-a-comparison`: 85.41/100, issues=none
-- `/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work`: 85.5/100, issues=none
-- `/pages/best-ecommerce-platforms-2026`: 85.73/100, issues=none
+- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.77/100, issues=none
+- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.79/100, issues=none

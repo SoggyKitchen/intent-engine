@@ -7,96 +7,96 @@
 - `/deal-radar` (68.41/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/newsletter` (71.26/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/stripe-pricing-history-2026` (83.36/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (83.43/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/saas-pricing-changes` (75.01/100): meta_length_outside_target
 - `/editorial-policy` (75.05/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/accessibility` (75.66/100): meta_length_outside_target
 - `/dmca` (75.91/100): meta_length_outside_target
-- `/pages/salesforce-pricing-history-2026` (85.93/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/cookie-policy` (75.97/100): meta_length_outside_target
-- `/pages/linear-pricing-history-2026` (86.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (86.86/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/v3-preview-404` (79.2/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/privacy` (79.66/100): meta_length_outside_target
-- `/pages/v3-preview-404` (80.2/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/best-encrypted-cloud-storage-2026-business` (81.84/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/which-saas-has-the-best-free-plan-2026` (82.33/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-contact` (82.72/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-homepage` (82.91/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-affiliate-disclosure` (83.02/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-encrypted-cloud-storage-2026-business` (80.84/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/which-saas-has-the-best-free-plan-2026` (81.28/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-contact` (81.72/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-homepage` (81.91/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-affiliate-disclosure` (82.02/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-about` (82.52/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-newsletter` (82.7/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-library` (82.81/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-shortlist` (83.4/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/` (83.5/100): images_missing_alt, missing_correction_cta, missing_related_pages
-- `/pages/v3-preview-about` (83.52/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/best-saas-deals-this-week-2026` (83.67/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-newsletter` (83.7/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-library` (83.81/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-shortlist` (84.4/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-roi-calculator` (84.69/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-deal-radar` (84.81/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/7-best-ramp-alternatives-in-2026-free-paid` (84.83/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/request-a-comparison` (85.41/100): title_length_outside_target
+- `/pages/best-saas-deals-this-week-2026` (83.69/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-roi-calculator` (83.69/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/7-best-ramp-alternatives-in-2026-free-paid` (83.78/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-deal-radar` (83.81/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/request-a-comparison` (84.38/100): title_length_outside_target
+- `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown` (84.92/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/v3-preview-privacy` (85.13/100): missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/best-fiverr-alternatives-2026` (85.39/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/cheapest-vpn-2026-lowest-price-vpns-that-still-work` (85.5/100): missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/best-ecommerce-platforms-2026` (85.73/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown` (85.84/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown` (85.92/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-privacy` (86.13/100): missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/best-fiverr-alternatives-2026` (86.36/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/best-vpn-australia-2026` (86.39/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/best-nordpass-alternatives-in-2026-free-paid` (86.47/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/ai-tools-pricing-changes-2026` (86.58/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/best-ecommerce-platforms-2026` (85.7/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/does-protonvpn-have-a-free-plan-2026-full-breakdown` (85.86/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/coupon-verification-policy` (86.09/100): meta_length_outside_target, title_length_outside_target
+- `/pages/best-vpn-australia-2026` (86.36/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/best-nordpass-alternatives-in-2026-free-paid` (86.45/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/7-best-canva-alternatives-in-2026-free-paid` (86.52/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/ai-tools-pricing-changes-2026` (86.53/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/7-best-slack-alternatives-in-2026-free-paid` (86.57/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-miro-alternatives-in-2026-free-paid` (86.59/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (86.59/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/best-sucuri-alternatives-in-2026-free-paid` (86.6/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/best-surfshark-alternatives-in-2026-free-paid` (86.62/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/best-elevenlabs-alternatives-in-2026-free-paid` (86.66/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-surfshark-alternatives-in-2026-free-paid` (86.63/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-elevenlabs-alternatives-in-2026-free-paid` (86.73/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-nordvpn-alternatives-in-2026-free-paid` (86.77/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-privacy-vpn-2026` (86.78/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/best-vpn-for-gaming-2026` (86.91/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/best-vpn-for-gaming-2026` (86.9/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/saas-glossary` (87.0/100): title_length_outside_target
-- `/pages/coupon-verification-policy` (87.09/100): meta_length_outside_target, title_length_outside_target
-- `/pages/saas-pricing-calculator-2026` (87.16/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/buyer-type-alternatives` (87.47/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/7-best-miro-alternatives-in-2026-free-paid` (87.56/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/7-best-canva-alternatives-in-2026-free-paid` (87.59/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/7-best-slack-alternatives-in-2026-free-paid` (87.6/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/7-best-zendesk-alternatives-in-2026-free-paid` (87.62/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/saas-pricing-calculator-2026` (87.13/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/buyer-type-alternatives` (87.39/100): missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/best-cloud-hosting-2026` (88.3/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/best-finance-software-2026` (88.3/100): missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/state-of-saas-pricing-2026` (88.41/100): title_length_outside_target
+- `/pages/state-of-saas-pricing-2026` (88.42/100): title_length_outside_target
 - `/pages/does-engagebay-have-a-free-plan-2026-full-breakdown` (88.5/100): meta_length_outside_target, missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/best-ecommerce-platform-2026` (88.75/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/best-marketing-automation-software-2026` (88.75/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/best-video-conferencing-software-2026` (88.75/100): missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages/1password-pricing-history-2026` (88.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/datadog-pricing-history-2026` (88.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/pipedrive-pricing-history-2026` (88.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/tresorit-pricing-history-2026` (88.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/best-crm-software-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/best-password-manager-business-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/best-seo-tools-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/best-vpn-for-business-2026` (89.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/best-vpn-for-privacy-and-security-2026` (89.28/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/best-vpn-for-privacy-and-security-2026` (89.27/100): missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/asana-pricing-history-2026` (89.31/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/notion-pricing-history-2026` (89.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/educative-pricing-2026-plans-costs-what-you-actually-pay` (89.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/elevenlabs-vs-synthesia-which-is-better-in-2026` (89.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/fiverr-pro-worth-it-2026-honest-review` (89.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
+- `/pages/monday-com-pricing-history-2026` (89.5/100): meta_length_outside_target, missing_correction_cta, missing_methodology
 - `/pages/nordvpn-vs-windscribe-which-is-better-in-2026` (89.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/pages/shopify-vs-webflow-which-is-better-in-2026` (89.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/best-hr-software-2026` (89.75/100): missing_correction_cta, missing_related_pages
 - `/best-project-management-software-2026` (90.0/100): missing_correction_cta, missing_related_pages
+- `/pages/semrush-pricing-history-2026` (90.37/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/shopify-pricing-history-2026` (90.38/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ahrefs-pricing-history-2026` (90.41/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/clickup-pricing-history-2026` (90.45/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/hubspot-pricing-history-2026` (90.49/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/best-affiliate-management-software-2026` (90.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/best-vpn-for-remote-work-2026` (90.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/best-vpn-for-small-business-2026` (90.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/elevenlabs-vs-heygen-which-is-better-in-2026` (90.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts` (90.5/100): missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay` (90.5/100): missing_correction_cta, missing_methodology
-- `/pages/does-protonmail-have-a-free-plan-2026-full-breakdown` (91.0/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, title_length_outside_target
-- `/pages/grandfathered-saas-pricing-2026` (91.0/100): missing_correction_cta, missing_methodology
-- `/pages/saas-pricing-index` (91.0/100): meta_length_outside_target, title_length_outside_target
-- `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (91.08/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/best-landing-page-builder-2026` (91.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
-- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (91.7/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/linear-free-trial-2026-how-to-get-it-step-by-step` (91.75/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
-- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (91.75/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (91.77/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (91.77/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (91.77/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/zoom-promo-code-2026-discounts-deals-that-actually-work` (91.77/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/deel-promo-code-2026-discounts-deals-that-actually-work` (91.8/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/pipedrive-promo-code-2026-discounts-deals-that-actually-work` (91.8/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/surfer-seo-promo-code-2026-discounts-deals-that-actually-work` (91.87/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (91.88/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay` (91.89/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
+- `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (90.67/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
+- `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (90.75/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (90.77/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/notion-promo-code-2026-discounts-deals-that-actually-work` (90.77/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/xero-promo-code-2026-discounts-deals-that-actually-work` (90.77/100): missing_correction_cta, missing_methodology, thin_buyer_page
