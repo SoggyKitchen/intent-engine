@@ -261,6 +261,11 @@ jobs:
         run: uv run python scripts/wave23_ctr_optimizer.py
         continue-on-error: true
 
+      # 4j-0. Gate the pricing data before anything reads it. A bad row here
+      # becomes a published price, and a wrong price is worse than no price.
+      - name: CI gate - pricing data integrity
+        run: uv run python scripts/validate_pricing_data.py
+
       # 4j. Price Intelligence: snapshot 15 tracked vendors and detect diffs.
       - name: Price intelligence track
         run: uv run python scripts/track_pricing.py
