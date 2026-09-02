@@ -35,6 +35,12 @@ import argparse, hashlib, json, pathlib, sqlite3, sys, time
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "data" / "intent.db"
 SEED_PATH = ROOT / "data" / "pricing_seed.json"
+# Durable, git-committed history. data/intent.db is ~96MB and is never committed
+# back by CI, so every nightly run used to start from an empty table, diff every
+# plan as "new", and throw the history away again - which is why the tracker had
+# 52 "new" and zero hikes/drops after months of running. This file is small
+# enough to commit each night, so history actually accumulates.
+HISTORY_PATH = ROOT / "data" / "pricing_history.json"
 OUTPUTS = ROOT / "outputs" / "seo"
 OUTPUTS.mkdir(parents=True, exist_ok=True)
 
@@ -122,6 +128,24 @@ def diff_plan(old: dict | None, new: dict) -> list[tuple[str, str | None, str, s
     return out
 
 
+def load_history() -> dict:
+    """Previous run's state: {"plans": {"<tool>|<plan>": row}, "changes": [...]}"""
+    if HISTORY_PATH.exists():
+        try:
+            return json.loads(HISTORY_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {"plans": {}, "changes": []}
+
+
+def save_history(hist: dict) -> None:
+    HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
+    # Keep the changelog bounded so the file stays git-friendly.
+    hist["changes"] = hist.get("changes", [])[-2000:]
+    HISTORY_PATH.write_text(
+        json.dumps(hist, indent=1, sort_keys=True, default=str), encoding="utf-8")
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--check", action="store_true")
@@ -132,6 +156,7 @@ def main(argv: list[str] | None = None) -> int:
 
     con = sqlite3.connect(DB_PATH)
     migrate(con)
+    hist = load_history()
 
     report = {
         "snapshot_at": now,
@@ -157,7 +182,9 @@ def main(argv: list[str] | None = None) -> int:
                 "source_url": tool["source_url"],
                 "notes": plan.get("notes", ""),
             }
-            old = latest_snapshot(con, slug, plan["plan"])
+            key = f"{slug}|{plan['plan']}"
+            # Durable history wins; the DB is a same-run cache that CI discards.
+            old = hist["plans"].get(key) or latest_snapshot(con, slug, plan["plan"])
             diffs = diff_plan(old, row)
             # Record snapshot every run (history matters)
             sid = hashlib.md5(f"{slug}|{plan['plan']}|{now}".encode()).hexdigest()[:16]
@@ -172,6 +199,8 @@ def main(argv: list[str] | None = None) -> int:
                      row["source_url"], now, json.dumps(row)),
                 )
             report["snapshots_taken"] += 1
+            if not args.check:
+                hist["plans"][key] = row
             for field, old_v, new_v, direction, pct in diffs:
                 report["changes_detected"] += 1
                 report["changes_by_direction"][direction] = (
@@ -189,6 +218,12 @@ def main(argv: list[str] | None = None) -> int:
                         (cid, slug, plan["plan"], field, old_v, new_v,
                          direction, pct, tool["source_url"], now, 1.0),
                     )
+                if not args.check and direction != "new":
+                    hist.setdefault("changes", []).append({
+                        "at": now, "tool": slug, "plan": plan["plan"],
+                        "field": field, "old": old_v, "new": new_v,
+                        "direction": direction, "pct_change": pct,
+                    })
                 if len(report["examples"]) < 8:
                     report["examples"].append({
                         "tool": slug, "plan": plan["plan"], "field": field,
@@ -198,6 +233,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if not args.check:
         con.commit()
+        save_history(hist)
     con.close()
 
     (OUTPUTS / "pricing_track.json").write_text(
