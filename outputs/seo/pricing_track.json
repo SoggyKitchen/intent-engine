@@ -1,88 +1,15 @@
 {
-  "snapshot_at": 1788321653,
+  "snapshot_at": 1788324324,
   "tools_processed": 15,
   "snapshots_taken": 52,
-  "changes_detected": 52,
+  "changes_detected": 0,
   "changes_by_direction": {
     "hike": 0,
     "drop": 0,
-    "new": 52,
+    "new": 0,
     "removed": 0,
     "changed": 0,
     "added": 0
   },
-  "examples": [
-    {
-      "tool": "hubspot",
-      "plan": "Free Tools",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"hubspot\", \"plan\": \"Free Tools\", \"monthly_usd\": 0, \"annual_usd\": 0, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://www.hubspot.com/pricing/sales\", \"notes\": \"Forever free; capped CRM contacts and limited automations\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "hubspot",
-      "plan": "Sales Hub Starter",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"hubspot\", \"plan\": \"Sales Hub Starter\", \"monthly_usd\": 20, \"annual_usd\": 180, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://www.hubspot.com/pricing/sales\", \"notes\": \"$20/seat/mo monthly, $15/seat/mo if billed annually\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "hubspot",
-      "plan": "Sales Hub Professional",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"hubspot\", \"plan\": \"Sales Hub Professional\", \"monthly_usd\": 100, \"annual_usd\": 1080, \"seat_minimum\": 5, \"free_trial\": 0, \"cc_required\": 0, \"source_url\": \"https://www.hubspot.com/pricing/sales\", \"notes\": \"$100/seat/mo, 5-seat minimum, +mandatory onboarding fee\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "hubspot",
-      "plan": "Sales Hub Enterprise",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"hubspot\", \"plan\": \"Sales Hub Enterprise\", \"monthly_usd\": 150, \"annual_usd\": 1620, \"seat_minimum\": 10, \"free_trial\": 0, \"cc_required\": 0, \"source_url\": \"https://www.hubspot.com/pricing/sales\", \"notes\": \"$150/seat/mo, 10-seat minimum, custom onboarding\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "salesforce",
-      "plan": "Starter Suite",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"salesforce\", \"plan\": \"Starter Suite\", \"monthly_usd\": 27.5, \"annual_usd\": 300, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://www.salesforce.com/sales/pricing/\", \"notes\": \"Hiked from $25 to $27.50 in Feb 2026\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "salesforce",
-      "plan": "Pro Suite",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"salesforce\", \"plan\": \"Pro Suite\", \"monthly_usd\": 110, \"annual_usd\": 1200, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://www.salesforce.com/sales/pricing/\", \"notes\": \"Annual billing only above Starter\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "salesforce",
-      "plan": "Enterprise",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"salesforce\", \"plan\": \"Enterprise\", \"monthly_usd\": 165, \"annual_usd\": 1800, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://www.salesforce.com/sales/pricing/\", \"notes\": \"\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "salesforce",
-      "plan": "Unlimited",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"salesforce\", \"plan\": \"Unlimited\", \"monthly_usd\": 330, \"annual_usd\": 3600, \"seat_minimum\": 1, \"free_trial\": 0, \"cc_required\": 0, \"source_url\": \"https://www.salesforce.com/sales/pricing/\", \"notes\": \"\"}",
-      "direction": "new",
-      "pct_change": null
-    }
-  ]
+  "examples": []
 }
