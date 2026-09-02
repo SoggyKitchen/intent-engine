@@ -19,6 +19,16 @@
    "pct_change": -20.0,
    "plan": "Sales Hub Starter",
    "tool": "hubspot"
+  },
+  {
+   "at": 1788325069,
+   "direction": "removed",
+   "field": "monthly_usd",
+   "new": "null",
+   "old": "14990",
+   "pct_change": null,
+   "plan": "Enterprise",
+   "tool": "ahrefs"
   }
  ],
  "plans": {
@@ -81,8 +91,8 @@
    "annual_usd": 14990,
    "cc_required": 0,
    "free_trial": 0,
-   "monthly_usd": 14990,
-   "notes": "$14,990 billed annually only",
+   "monthly_usd": null,
+   "notes": "$14,990 billed annually only; no monthly option (effective ~$1,249/mo)",
    "plan": "Enterprise",
    "seat_minimum": 5,
    "source_url": "https://ahrefs.com/pricing",

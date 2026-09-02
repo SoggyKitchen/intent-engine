@@ -1,15 +1,25 @@
 {
-  "snapshot_at": 1788324324,
+  "snapshot_at": 1788325069,
   "tools_processed": 15,
   "snapshots_taken": 52,
-  "changes_detected": 0,
+  "changes_detected": 1,
   "changes_by_direction": {
     "hike": 0,
     "drop": 0,
     "new": 0,
-    "removed": 0,
+    "removed": 1,
     "changed": 0,
     "added": 0
   },
-  "examples": []
+  "examples": [
+    {
+      "tool": "ahrefs",
+      "plan": "Enterprise",
+      "field": "monthly_usd",
+      "old": "14990",
+      "new": "null",
+      "direction": "removed",
+      "pct_change": null
+    }
+  ]
 }
