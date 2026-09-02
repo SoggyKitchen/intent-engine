@@ -7,7 +7,6 @@ Pages scanned: 1575
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 1
 - images_missing_alt: 2
 - meta_length_outside_target: 464
 - missing_correction_cta: 334
@@ -36,7 +35,7 @@ Pages scanned: 1575
 - `/accessibility`: 75.66/100, issues=none
 - `/dmca`: 75.91/100, issues=none
 - `/cookie-policy`: 75.97/100, issues=none
-- `/pages`: 77.0/100, issues=none
+- `/pages`: 78.0/100, issues=none
 - `/pages/v3-preview-404`: 79.2/100, issues=none
 - `/advertise`: 79.31/100, issues=none
 - `/privacy`: 79.66/100, issues=none
@@ -50,10 +49,7 @@ Pages scanned: 1575
 - `/pages/v3-preview-about`: 82.52/100, issues=none
 - `/pages/v3-preview-newsletter`: 82.7/100, issues=none
 - `/pages/v3-preview-library`: 82.81/100, issues=none
-- `/pages/linear-pricing-history-2026`: 82.84/100, issues=broken_internal_link
-- `/pages/stripe-pricing-history-2026`: 83.36/100, issues=broken_internal_link
 - `/pages/v3-preview-shortlist`: 83.4/100, issues=none
-- `/pages/salesforce-pricing-history-2026`: 83.43/100, issues=broken_internal_link
 - `/`: 83.5/100, issues=none
 - `/pages/best-saas-deals-this-week-2026`: 83.69/100, issues=none
 - `/pages/v3-preview-roi-calculator`: 83.69/100, issues=none
@@ -69,3 +65,6 @@ Pages scanned: 1575
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
 - `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.77/100, issues=none
 - `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.79/100, issues=none
+- `/pages/hidden-fee-detector`: 84.85/100, issues=none
+- `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown`: 84.92/100, issues=none
+- `/terms`: 85.0/100, issues=none

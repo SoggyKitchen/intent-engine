@@ -88,7 +88,7 @@
       "trust_block"
     ],
     "path": "/pages/amplitude-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/asana-pricing-history-2026.html",
@@ -140,20 +140,6 @@
       "trust_block"
     ],
     "path": "/pages/bamboohr-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
-  },
-  {
-    "file": "site/pages/best-accounting-software-for-freelancers-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "meta",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-accounting-software-for-freelancers-in-2026",
     "premium": false
   },
   {
@@ -181,19 +167,6 @@
       "trust_block"
     ],
     "path": "/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed",
-    "premium": false
-  },
-  {
-    "file": "site/pages/best-vpn-for-remote-work-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-vpn-for-remote-work-2026",
     "premium": false
   },
   {
@@ -233,7 +206,7 @@
       "trust_block"
     ],
     "path": "/pages/clearscope-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/clickup-pricing-history-2026.html",
@@ -337,7 +310,7 @@
       "trust_block"
     ],
     "path": "/pages/deel-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/digitalocean-review-2026-is-it-worth-it-honest-verdict.html",
@@ -363,7 +336,7 @@
       "trust_block"
     ],
     "path": "/pages/docusign-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/elementor-review-2026-is-it-worth-it-honest-verdict.html",
@@ -480,7 +453,7 @@
       "trust_block"
     ],
     "path": "/pages/hetzner-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",
@@ -597,7 +570,7 @@
       "trust_block"
     ],
     "path": "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/miro-review-2026-is-it-worth-it-honest-verdict.html",
@@ -740,7 +713,7 @@
       "trust_block"
     ],
     "path": "/pages/pandadoc-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/parallels-desktop-review-2026-is-it-worth-it-honest-verdict.html",
@@ -1092,7 +1065,7 @@
       "trust_block"
     ],
     "path": "/pages/vultr-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/workable-review-2026-is-it-worth-it-honest-verdict.html",
