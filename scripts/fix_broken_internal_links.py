@@ -77,9 +77,20 @@ def collect_dead_targets(existing, redirect_srcs):
 def decide(dead_slugs, existing):
     """target slug -> ('retarget', new_slug) or ('unwrap', None).
 
-    Retarget ONLY when an existing page shares the exact same entity key
-    (identical tool/comparison subject, differing only in format/year/
-    connector wording). Never map one product to a different product.
+    Two retarget rules, both of which preserve the core safety property:
+    never map one product (or page type) onto a different one.
+
+    1. Exact entity-key match - the existing page differs only in
+       format/year/connector wording.
+    2. Unique superset - the dead slug's entity key is a strict subset of
+       exactly ONE existing page's key. A truncated link like
+       `nordvpn-pricing-2026` is unambiguously the same page as
+       `nordvpn-pricing-2026-plans-costs-what-you-actually-pay`; the tool
+       AND the page type both still have to match, and if two or more pages
+       could absorb the link (e.g. a bare `salesforce`, which fits pricing,
+       review and coupon alike) it stays ambiguous and we unwrap instead.
+       Without this rule a truncated link to a live money page had its
+       equity thrown away rather than redirected to the real page.
     """
     # Index existing pages by entity key.
     by_entity = {}
@@ -94,6 +105,17 @@ def decide(dead_slugs, existing):
             # Tiebreak (rare): closest textual match.
             best = get_close_matches(slug, cands, n=1, cutoff=0.0) or cands
             plan[slug] = ("retarget", best[0])
+            continue
+
+        # Rule 2: unique strict superset.
+        supersets = [
+            c for k, group in by_entity.items()
+            if ek < k
+            for c in group
+            if c != slug
+        ]
+        if len(supersets) == 1:
+            plan[slug] = ("retarget", supersets[0])
         else:
             plan[slug] = ("unwrap", None)
     return plan
