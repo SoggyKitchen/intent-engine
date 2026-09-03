@@ -1,7 +1,7 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-09-03T08:02:25+00:00
-Mode: `audit`
+Generated: 2026-09-03T08:43:18+00:00
+Mode: `apply-safe`
 
 ## Current Score
 - Overall SaaSpare Health Score: **93.52/100**
@@ -19,7 +19,7 @@ Mode: `audit`
 - Healthy pages (85+): 1526
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 86
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
