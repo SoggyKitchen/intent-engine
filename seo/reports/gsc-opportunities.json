@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-08-31",
+  "endDate": "2026-09-01",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -14,22 +14,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 22.0,
+      "impressions": 20.0,
       "page": "https://saaspare.org/pages/",
-      "position": 11.14,
+      "position": 12.15,
       "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 49.58
+      "score": 50.25
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 12.0,
+      "impressions": 11.0,
       "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
-      "position": 6.17,
+      "position": 6.09,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.24
+      "score": 25.22
     },
     {
       "clicks": 0.0,
@@ -44,22 +44,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 10.0,
+      "impressions": 8.0,
       "page": "https://saaspare.org/deal-radar",
-      "position": 1.1,
+      "position": 1.12,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/deal-radar",
-      "position": 1.1,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.2
+      "score": 25.0
     },
     {
       "clicks": 0.0,
@@ -74,72 +64,42 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 55.0,
-      "page": "https://saaspare.org/pages/",
-      "position": 5.6,
+      "impressions": 8.0,
+      "page": "https://saaspare.org/deal-radar",
+      "position": 1.12,
       "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 21.1
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 22.0,
+      "impressions": 52.0,
+      "page": "https://saaspare.org/pages/",
+      "position": 5.73,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 21.04
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 20.0,
       "page": "https://saaspare.org/",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.44
+      "score": 20.4
     },
     {
       "clicks": 5.0,
-      "ctr": 0.0588,
-      "impressions": 85.0,
+      "ctr": 0.0602,
+      "impressions": 83.0,
       "page": "https://saaspare.org/",
-      "position": 7.67,
+      "position": 7.72,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 1.7
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/roi",
-      "position": 1.1,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/shortlist",
-      "position": 1.1,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/roi",
-      "position": 1.1,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/shortlist",
-      "position": 1.1,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.2
+      "score": 1.66
     }
   ],
   "pageClicks": {
@@ -154,5 +114,5 @@
   "rowsPulled": 15,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-08-03"
+  "startDate": "2026-08-04"
 }
