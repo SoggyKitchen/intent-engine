@@ -149,35 +149,14 @@ def build_page(d, vd):
         for s in scores
     )
 
-    reviews = []
-    for s in scores:
-        v = verdicts.get(s["tool"])
-        if not v:
-            continue
-        pos = [labels[k] for k, x in s["criteria"].items() if x == 2]
-        neg = [labels[k] for k, x in s["criteria"].items() if x == 0]
-        r = {
-            "@type": "Review",
-            "itemReviewed": {"@type": "SoftwareApplication", "name": s["vendor"],
-                             "applicationCategory": "BusinessApplication"},
-            "reviewRating": {"@type": "Rating", "ratingValue": s["stars"],
-                             "bestRating": 5, "worstRating": 0},
-            "name": f"{s['vendor']}: {v['headline']}",
-            "author": {"@id": "https://saaspare.org/#organization"},
-            "publisher": {"@id": "https://saaspare.org/#organization"},
-            "datePublished": verified,
-            "reviewBody": v["body"] + " Best for: " + v["best_for"] +
-                          " Watch for: " + v["watch_for"],
-        }
-        if pos:
-            r["positiveNotes"] = {"@type": "ItemList", "itemListElement": [
-                {"@type": "ListItem", "position": i, "name": p}
-                for i, p in enumerate(pos, 1)]}
-        if neg:
-            r["negativeNotes"] = {"@type": "ItemList", "itemListElement": [
-                {"@type": "ListItem", "position": i, "name": n}
-                for i, n in enumerate(neg, 1)]}
-        reviews.append(r)
+    # The reviews deliberately do NOT live here. Google's Rich Results Test
+    # rejected all 15 when they were nested under this Article (2026-09-06):
+    # "Multiple reviews without aggregateRating object", plus Review being an
+    # invalid child of Article. Google's guidance is explicit - review markup
+    # must describe "a specific item, not about a category or a list of items",
+    # and a 15-tool ranking is a list. Each tool's review now lives on that
+    # tool's own page via scripts/inject_tool_reviews.py, where the tool is the
+    # specific item. This page stays a clean, valid Article.
 
     def ld(o):
         return ('<script type="application/ld+json">\n'
@@ -189,8 +168,12 @@ def build_page(d, vd):
         "datePublished": verified, "dateModified": verified,
         "author": {"@type": "Person", "name": "Kaylan von Papen",
                    "url": "https://saaspare.org/authors/kaylan-von-papen"},
-        "publisher": {"@id": "https://saaspare.org/#organization"},
-        "review": reviews,
+        # Inline name: a bare @id pointer does not resolve for the parser
+        # when the Organization node is in another script block, which is what
+        # produced 30 "Missing field name" errors.
+        "publisher": {"@type": "Organization", "name": "SaaSpare",
+                      "url": "https://saaspare.org/",
+                      "@id": "https://saaspare.org/#organization"},
     }
 
     top = scores[0]
