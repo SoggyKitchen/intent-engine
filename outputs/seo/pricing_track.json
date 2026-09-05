@@ -1,61 +1,15 @@
 {
-  "snapshot_at": 1788621618,
+  "snapshot_at": 1788622838,
   "tools_processed": 15,
   "snapshots_taken": 53,
-  "changes_detected": 5,
+  "changes_detected": 0,
   "changes_by_direction": {
     "hike": 0,
-    "drop": 2,
-    "new": 3,
+    "drop": 0,
+    "new": 0,
     "removed": 0,
     "changed": 0,
     "added": 0
   },
-  "examples": [
-    {
-      "tool": "salesforce",
-      "plan": "Starter Suite",
-      "field": "monthly_usd",
-      "old": "27.5",
-      "new": "25",
-      "direction": "drop",
-      "pct_change": -9.090909090909092
-    },
-    {
-      "tool": "salesforce",
-      "plan": "Pro Suite",
-      "field": "monthly_usd",
-      "old": "110",
-      "new": "100",
-      "direction": "drop",
-      "pct_change": -9.090909090909092
-    },
-    {
-      "tool": "salesforce",
-      "plan": "Core",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"salesforce\", \"plan\": \"Core\", \"monthly_usd\": 195, \"annual_usd\": 2340, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://www.salesforce.com/sales/pricing/\", \"notes\": \"Billed annually only. Replaces the retired Enterprise tier ($165).\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "salesforce",
-      "plan": "Advanced",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"salesforce\", \"plan\": \"Advanced\", \"monthly_usd\": 395, \"annual_usd\": 4740, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://www.salesforce.com/sales/pricing/\", \"notes\": \"Billed annually only. New tier, no 2026-05 equivalent.\"}",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "salesforce",
-      "plan": "Max",
-      "field": "plan",
-      "old": null,
-      "new": "{\"tool\": \"salesforce\", \"plan\": \"Max\", \"monthly_usd\": 550, \"annual_usd\": 6600, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://www.salesforce.com/sales/pricing/\", \"notes\": \"Billed annually only. Replaces the retired Unlimited tier ($330).\"}",
-      "direction": "new",
-      "pct_change": null
-    }
-  ]
+  "examples": []
 }
