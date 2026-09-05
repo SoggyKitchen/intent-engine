@@ -33,6 +33,7 @@ noindexed pages in the first place.
 Idempotent: comment-delimited, so a re-run replaces rather than stacks.
 """
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -112,12 +113,9 @@ def block(s, v, seed_tool, verified):
             "availability": "https://schema.org/InStock",
         }
 
-    ld = ('<script type="application/ld+json">\n'
-          + json.dumps(app, indent=2, ensure_ascii=False) + "\n</script>")
-
     # The visible half. Google requires marked-up review content to be readable
     # on the page; schema without visible text would be cloaking.
-    return f"""{START}
+    visible = f"""{START}
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <linearGradient id="sp-tr-half"><stop offset="50%" stop-color="#ff416d"/>
 <stop offset="50%" stop-color="rgba(255,247,248,.18)"/></linearGradient></defs></svg>
@@ -168,8 +166,68 @@ def block(s, v, seed_tool, verified):
   computed from pricing verified {verified}.
   <a href="{RANKING}">See how all 15 tools rank</a>.</p>
 </section>
-{ld}
 {END}"""
+    return visible, app
+
+
+LD_RE = re.compile(r'(<script type="application/ld\+json"[^>]*>)(.*?)(</script>)', re.S)
+
+
+def merge_review(html, vendor, app):
+    """Attach the review to a SoftwareApplication node the page already has.
+
+    Four of the pricing pages already ship their own SoftwareApplication node
+    for the same product. Appending a second one leaves two nodes describing
+    one entity, and Google is free to pick the one WITHOUT the review - no star
+    despite valid markup. So merge where possible, append only where there is
+    nothing to merge into.
+    """
+    state = {"merged": False}
+
+    def repl(m):
+        if state["merged"]:
+            return m.group(0)
+        try:
+            d = json.loads(m.group(2))
+        except Exception:
+            return m.group(0)
+        items = d if isinstance(d, list) else (d.get("@graph") or [d])
+        for it in items:
+            if (isinstance(it, dict)
+                    and it.get("@type") == "SoftwareApplication"
+                    and (it.get("name") or "").strip().lower() == vendor.lower()):
+                it["review"] = app["review"]
+                if "offers" not in it and "offers" in app:
+                    it["offers"] = app["offers"]
+                state["merged"] = True
+                return (m.group(1) + "\n"
+                        + json.dumps(d, indent=2, ensure_ascii=False)
+                        + "\n" + m.group(3))
+        return m.group(0)
+
+    return LD_RE.sub(repl, html), state["merged"]
+
+
+def strip_ours(html):
+    """Remove a review we merged in previously, so re-runs stay idempotent."""
+    def repl(m):
+        try:
+            d = json.loads(m.group(2))
+        except Exception:
+            return m.group(0)
+        items = d if isinstance(d, list) else (d.get("@graph") or [d])
+        changed = False
+        for it in items:
+            if isinstance(it, dict) and it.get("@type") == "SoftwareApplication":
+                rev = it.get("review")
+                if isinstance(rev, dict) and (rev.get("author") or {}).get("name") == "SaaSpare":
+                    it.pop("review")
+                    changed = True
+        if not changed:
+            return m.group(0)
+        return (m.group(1) + "\n" + json.dumps(d, indent=2, ensure_ascii=False)
+                + "\n" + m.group(3))
+    return LD_RE.sub(repl, html)
 
 
 def main():
@@ -189,17 +247,27 @@ def main():
             continue
 
         html = p.read_text(encoding="utf-8", errors="replace")
-        b = block(s, v, seed[tool], verified)
+        visible, app = block(s, v, seed[tool], verified)
+
+        # Clear anything from a previous run first, so a merge and an appended
+        # node can never both end up on the page.
         if START in html and END in html:
-            html = html.split(START)[0] + b + html.split(END)[1]
-        else:
-            anchor = "</main>" if "</main>" in html else "</body>"
-            if anchor not in html:
-                skipped.append(tool)
-                continue
-            html = html.replace(anchor, b + "\n" + anchor, 1)
+            html = html.split(START)[0] + html.split(END)[1]
+        html = strip_ours(html)
+
+        html, merged = merge_review(html, s["vendor"], app)
+        if not merged:
+            visible += ('\n<script type="application/ld+json">\n'
+                        + json.dumps(app, indent=2, ensure_ascii=False)
+                        + "\n</script>")
+
+        anchor = "</main>" if "</main>" in html else "</body>"
+        if anchor not in html:
+            skipped.append(tool)
+            continue
+        html = html.replace(anchor, visible + "\n" + anchor, 1)
         p.write_text(html, encoding="utf-8")
-        done.append(f"{tool} -> {p.name}")
+        done.append(f"{tool} -> {p.name} ({'merged' if merged else 'new node'})")
 
     print(f"review schema + visible verdict on {len(done)} tool pages:")
     for d in done:
