@@ -1,589 +1,590 @@
 {
- "_meta": {
-  "version": 1,
-  "snapshot_date": "2026-05-07",
-  "notes": "Seed prices for the SaaSpare Price Intelligence Engine. All values verified from official vendor pricing pages on the snapshot_date. The crawler will diff future snapshots against these values. Inaccurate values destroy trust faster than missing values — better to omit a plan than guess.",
-  "currency_default": "USD"
- },
- "tools": [
-  {
-   "tool": "hubspot",
-   "vendor_name": "HubSpot",
-   "category": "crm",
-   "source_url": "https://www.hubspot.com/pricing/sales",
-   "affiliate_slug": "hubspot",
-   "plans": [
-    {
-     "plan": "Free Tools",
-     "monthly_usd": 0,
-     "annual_usd": 0,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Forever free; capped CRM contacts and limited automations"
-    },
-    {
-     "plan": "Sales Hub Starter",
-     "monthly_usd": 20,
-     "annual_usd": 180,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "$20/seat/mo monthly, $15/seat/mo if billed annually"
-    },
-    {
-     "plan": "Sales Hub Professional",
-     "monthly_usd": 100,
-     "annual_usd": 1080,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 5,
-     "notes": "$100/seat/mo, 5-seat minimum, +mandatory onboarding fee"
-    },
-    {
-     "plan": "Sales Hub Enterprise",
-     "monthly_usd": 150,
-     "annual_usd": 1620,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 10,
-     "notes": "$150/seat/mo, 10-seat minimum, custom onboarding"
-    }
-   ]
+  "_meta": {
+    "version": 1,
+    "snapshot_date": "2026-09-06",
+    "notes": "Seed prices for the SaaSpare Price Intelligence Engine. All values verified from official vendor pricing pages on the snapshot_date. The crawler will diff future snapshots against these values. Inaccurate values destroy trust faster than missing values — better to omit a plan than guess. 2026-09-06: HubSpot and Ahrefs plans re-verified against live vendor pages. The stored seat_minimum values for HubSpot Professional (5), HubSpot Enterprise (10), Ahrefs Advanced (3) and Ahrefs Enterprise (5) were NOT supported by the vendors' current pricing pages and have been reset to 1. Mandatory one-time onboarding fees recorded in notes.",
+    "currency_default": "USD"
   },
-  {
-   "tool": "salesforce",
-   "vendor_name": "Salesforce",
-   "category": "crm",
-   "source_url": "https://www.salesforce.com/sales/pricing/",
-   "affiliate_slug": "salesforce",
-   "plans": [
+  "tools": [
     {
-     "plan": "Starter Suite",
-     "monthly_usd": 27.5,
-     "annual_usd": 300,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Hiked from $25 to $27.50 in Feb 2026"
+      "tool": "hubspot",
+      "vendor_name": "HubSpot",
+      "category": "crm",
+      "source_url": "https://www.hubspot.com/pricing/sales",
+      "affiliate_slug": "hubspot",
+      "plans": [
+        {
+          "plan": "Free Tools",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Forever free; capped CRM contacts and limited automations"
+        },
+        {
+          "plan": "Sales Hub Starter",
+          "monthly_usd": 20,
+          "annual_usd": 84,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$20/seat/mo monthly, $7/seat/mo billed annually. Re-verified 2026-09-06: annual rate cut from $15 to $7/seat/mo."
+        },
+        {
+          "plan": "Sales Hub Professional",
+          "monthly_usd": 100,
+          "annual_usd": 1080,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$100/seat/mo monthly, $90/seat/mo annually. Re-verified 2026-09-06: HubSpot NO LONGER states a 5-seat minimum. One-time Professional Onboarding fee of $1,500 is mandatory."
+        },
+        {
+          "plan": "Sales Hub Enterprise",
+          "monthly_usd": 150,
+          "annual_usd": 1620,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$150/seat/mo billed annually. Re-verified 2026-09-06: no stated seat minimum. One-time Enterprise Onboarding fee of $3,500 is mandatory."
+        }
+      ]
     },
     {
-     "plan": "Pro Suite",
-     "monthly_usd": 110,
-     "annual_usd": 1200,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Annual billing only above Starter"
+      "tool": "salesforce",
+      "vendor_name": "Salesforce",
+      "category": "crm",
+      "source_url": "https://www.salesforce.com/sales/pricing/",
+      "affiliate_slug": "salesforce",
+      "plans": [
+        {
+          "plan": "Starter Suite",
+          "monthly_usd": 27.5,
+          "annual_usd": 300,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Hiked from $25 to $27.50 in Feb 2026"
+        },
+        {
+          "plan": "Pro Suite",
+          "monthly_usd": 110,
+          "annual_usd": 1200,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Annual billing only above Starter"
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": 165,
+          "annual_usd": 1800,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Unlimited",
+          "monthly_usd": 330,
+          "annual_usd": 3600,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
     },
     {
-     "plan": "Enterprise",
-     "monthly_usd": 165,
-     "annual_usd": 1800,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
+      "tool": "ahrefs",
+      "vendor_name": "Ahrefs",
+      "category": "seo",
+      "source_url": "https://ahrefs.com/pricing",
+      "affiliate_slug": "ahrefs",
+      "plans": [
+        {
+          "plan": "Lite",
+          "monthly_usd": 129,
+          "annual_usd": 1290,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "1 user; pay-as-you-go credits for extra workspaces"
+        },
+        {
+          "plan": "Standard",
+          "monthly_usd": 249,
+          "annual_usd": 2490,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Advanced",
+          "monthly_usd": 449,
+          "annual_usd": 4490,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Includes 1 user. Extra users $80/mo each, up to 10. Re-verified 2026-09-06: no seat minimum."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": 1499,
+          "annual_usd": 14990,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$1,499/mo list price, annual commitment required ($14,990/yr). Re-verified 2026-09-06: no seat minimum."
+        }
+      ]
     },
     {
-     "plan": "Unlimited",
-     "monthly_usd": 330,
-     "annual_usd": 3600,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1
+      "tool": "semrush",
+      "vendor_name": "Semrush",
+      "category": "seo",
+      "source_url": "https://www.semrush.com/pricing/",
+      "affiliate_slug": "semrush",
+      "plans": [
+        {
+          "plan": "Pro",
+          "monthly_usd": 139.95,
+          "annual_usd": 1399.44,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "7-day free trial"
+        },
+        {
+          "plan": "Guru",
+          "monthly_usd": 249.95,
+          "annual_usd": 2499.36,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": 499.95,
+          "annual_usd": 4999.2,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
+    },
+    {
+      "tool": "notion",
+      "vendor_name": "Notion",
+      "category": "project-mgmt",
+      "source_url": "https://www.notion.com/pricing",
+      "affiliate_slug": "notion",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Plus",
+          "monthly_usd": 12,
+          "annual_usd": 120,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$12/seat/mo monthly, $10/seat/mo annual"
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": 18,
+          "annual_usd": 180,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$18/seat/mo monthly, $15/seat/mo annual"
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Quote only"
+        }
+      ]
+    },
+    {
+      "tool": "clickup",
+      "vendor_name": "ClickUp",
+      "category": "project-mgmt",
+      "source_url": "https://clickup.com/pricing",
+      "affiliate_slug": "clickup",
+      "plans": [
+        {
+          "plan": "Free Forever",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "100MB storage, unlimited members"
+        },
+        {
+          "plan": "Unlimited",
+          "monthly_usd": 10,
+          "annual_usd": 84,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$10/seat/mo monthly, $7/seat/mo annual"
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": 19,
+          "annual_usd": 144,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$19/seat/mo monthly, $12/seat/mo annual"
+        },
+        {
+          "plan": "Business Plus",
+          "monthly_usd": 29,
+          "annual_usd": 228,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
+    },
+    {
+      "tool": "asana",
+      "vendor_name": "Asana",
+      "category": "project-mgmt",
+      "source_url": "https://asana.com/pricing",
+      "affiliate_slug": "asana",
+      "plans": [
+        {
+          "plan": "Personal",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 10 users"
+        },
+        {
+          "plan": "Starter",
+          "monthly_usd": 13.49,
+          "annual_usd": 131.88,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Advanced",
+          "monthly_usd": 30.49,
+          "annual_usd": 299.88,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
+    },
+    {
+      "tool": "monday-com",
+      "vendor_name": "Monday.com",
+      "category": "project-mgmt",
+      "source_url": "https://monday.com/pricing/",
+      "affiliate_slug": "monday-com",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 2 seats"
+        },
+        {
+          "plan": "Basic",
+          "monthly_usd": 12,
+          "annual_usd": 108,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 3,
+          "notes": "3-seat minimum"
+        },
+        {
+          "plan": "Standard",
+          "monthly_usd": 14,
+          "annual_usd": 144,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 3
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 24,
+          "annual_usd": 252,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 3
+        }
+      ]
+    },
+    {
+      "tool": "pipedrive",
+      "vendor_name": "Pipedrive",
+      "category": "crm",
+      "source_url": "https://www.pipedrive.com/en/pricing",
+      "affiliate_slug": "pipedrive",
+      "plans": [
+        {
+          "plan": "Essential",
+          "monthly_usd": 24,
+          "annual_usd": 168,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Advanced",
+          "monthly_usd": 39,
+          "annual_usd": 348,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Professional",
+          "monthly_usd": 64,
+          "annual_usd": 588,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Power",
+          "monthly_usd": 79,
+          "annual_usd": 768,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": 129,
+          "annual_usd": 1188,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
+    },
+    {
+      "tool": "linear",
+      "vendor_name": "Linear",
+      "category": "dev-tools",
+      "source_url": "https://linear.app/pricing",
+      "affiliate_slug": "linear",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 250 issues, 10 users"
+        },
+        {
+          "plan": "Basic",
+          "monthly_usd": 8,
+          "annual_usd": 96,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": 14,
+          "annual_usd": 168,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
+    },
+    {
+      "tool": "stripe",
+      "vendor_name": "Stripe",
+      "category": "finance",
+      "source_url": "https://stripe.com/pricing",
+      "affiliate_slug": "stripe",
+      "plans": [
+        {
+          "plan": "Standard",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Pay 2.9% + 30¢ per successful card charge; no monthly fee"
+        }
+      ]
+    },
+    {
+      "tool": "1password",
+      "vendor_name": "1Password",
+      "category": "security",
+      "source_url": "https://1password.com/pricing",
+      "affiliate_slug": "1password",
+      "plans": [
+        {
+          "plan": "Individual",
+          "monthly_usd": 2.99,
+          "annual_usd": 35.88,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Families",
+          "monthly_usd": 4.99,
+          "annual_usd": 59.88,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 5 family members"
+        },
+        {
+          "plan": "Teams Starter Pack",
+          "monthly_usd": 19.95,
+          "annual_usd": 239.4,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Flat rate for up to 10 team members"
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": 7.99,
+          "annual_usd": 95.88,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
+    },
+    {
+      "tool": "tresorit",
+      "vendor_name": "Tresorit",
+      "category": "security",
+      "source_url": "https://tresorit.com/pricing",
+      "affiliate_slug": "tresorit",
+      "plans": [
+        {
+          "plan": "Personal",
+          "monthly_usd": 11.99,
+          "annual_usd": 119.88,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "1TB storage"
+        },
+        {
+          "plan": "Personal Plus",
+          "monthly_usd": 19.99,
+          "annual_usd": 191.88,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "4TB storage"
+        },
+        {
+          "plan": "Business Standard",
+          "monthly_usd": 14.5,
+          "annual_usd": 174,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 3,
+          "notes": "$14.50/seat/mo, 3-seat minimum"
+        }
+      ]
+    },
+    {
+      "tool": "shopify",
+      "vendor_name": "Shopify",
+      "category": "ecommerce",
+      "source_url": "https://www.shopify.com/pricing",
+      "affiliate_slug": "shopify",
+      "plans": [
+        {
+          "plan": "Basic",
+          "monthly_usd": 39,
+          "annual_usd": 348,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "+ payment processing fees: 2.9% + 30¢"
+        },
+        {
+          "plan": "Shopify",
+          "monthly_usd": 105,
+          "annual_usd": 948,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        },
+        {
+          "plan": "Advanced",
+          "monthly_usd": 399,
+          "annual_usd": 3588,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
+    },
+    {
+      "tool": "datadog",
+      "vendor_name": "Datadog",
+      "category": "dev-tools",
+      "source_url": "https://www.datadoghq.com/pricing/",
+      "affiliate_slug": "datadog",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 5 hosts, 1-day metric retention"
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 15,
+          "annual_usd": 180,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Per host/mo, 15-month metric retention"
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": 23,
+          "annual_usd": 276,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 1
+        }
+      ]
     }
-   ]
-  },
-  {
-   "tool": "ahrefs",
-   "vendor_name": "Ahrefs",
-   "category": "seo",
-   "source_url": "https://ahrefs.com/pricing",
-   "affiliate_slug": "ahrefs",
-   "plans": [
-    {
-     "plan": "Lite",
-     "monthly_usd": 129,
-     "annual_usd": 1290,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "1 user; pay-as-you-go credits for extra workspaces"
-    },
-    {
-     "plan": "Standard",
-     "monthly_usd": 249,
-     "annual_usd": 2490,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Advanced",
-     "monthly_usd": 449,
-     "annual_usd": 4490,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 3
-    },
-    {
-     "plan": "Enterprise",
-     "monthly_usd": null,
-     "annual_usd": 14990,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 5,
-     "notes": "$14,990 billed annually only; no monthly option (effective ~$1,249/mo)"
-    }
-   ]
-  },
-  {
-   "tool": "semrush",
-   "vendor_name": "Semrush",
-   "category": "seo",
-   "source_url": "https://www.semrush.com/pricing/",
-   "affiliate_slug": "semrush",
-   "plans": [
-    {
-     "plan": "Pro",
-     "monthly_usd": 139.95,
-     "annual_usd": 1399.44,
-     "free_trial": true,
-     "cc_required": true,
-     "seat_minimum": 1,
-     "notes": "7-day free trial"
-    },
-    {
-     "plan": "Guru",
-     "monthly_usd": 249.95,
-     "annual_usd": 2499.36,
-     "free_trial": true,
-     "cc_required": true,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Business",
-     "monthly_usd": 499.95,
-     "annual_usd": 4999.2,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1
-    }
-   ]
-  },
-  {
-   "tool": "notion",
-   "vendor_name": "Notion",
-   "category": "project-mgmt",
-   "source_url": "https://www.notion.com/pricing",
-   "affiliate_slug": "notion",
-   "plans": [
-    {
-     "plan": "Free",
-     "monthly_usd": 0,
-     "annual_usd": 0,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Plus",
-     "monthly_usd": 12,
-     "annual_usd": 120,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "$12/seat/mo monthly, $10/seat/mo annual"
-    },
-    {
-     "plan": "Business",
-     "monthly_usd": 18,
-     "annual_usd": 180,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "$18/seat/mo monthly, $15/seat/mo annual"
-    },
-    {
-     "plan": "Enterprise",
-     "monthly_usd": null,
-     "annual_usd": null,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Quote only"
-    }
-   ]
-  },
-  {
-   "tool": "clickup",
-   "vendor_name": "ClickUp",
-   "category": "project-mgmt",
-   "source_url": "https://clickup.com/pricing",
-   "affiliate_slug": "clickup",
-   "plans": [
-    {
-     "plan": "Free Forever",
-     "monthly_usd": 0,
-     "annual_usd": 0,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "100MB storage, unlimited members"
-    },
-    {
-     "plan": "Unlimited",
-     "monthly_usd": 10,
-     "annual_usd": 84,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "$10/seat/mo monthly, $7/seat/mo annual"
-    },
-    {
-     "plan": "Business",
-     "monthly_usd": 19,
-     "annual_usd": 144,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "$19/seat/mo monthly, $12/seat/mo annual"
-    },
-    {
-     "plan": "Business Plus",
-     "monthly_usd": 29,
-     "annual_usd": 228,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1
-    }
-   ]
-  },
-  {
-   "tool": "asana",
-   "vendor_name": "Asana",
-   "category": "project-mgmt",
-   "source_url": "https://asana.com/pricing",
-   "affiliate_slug": "asana",
-   "plans": [
-    {
-     "plan": "Personal",
-     "monthly_usd": 0,
-     "annual_usd": 0,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Up to 10 users"
-    },
-    {
-     "plan": "Starter",
-     "monthly_usd": 13.49,
-     "annual_usd": 131.88,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Advanced",
-     "monthly_usd": 30.49,
-     "annual_usd": 299.88,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    }
-   ]
-  },
-  {
-   "tool": "monday-com",
-   "vendor_name": "Monday.com",
-   "category": "project-mgmt",
-   "source_url": "https://monday.com/pricing/",
-   "affiliate_slug": "monday-com",
-   "plans": [
-    {
-     "plan": "Free",
-     "monthly_usd": 0,
-     "annual_usd": 0,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Up to 2 seats"
-    },
-    {
-     "plan": "Basic",
-     "monthly_usd": 12,
-     "annual_usd": 108,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 3,
-     "notes": "3-seat minimum"
-    },
-    {
-     "plan": "Standard",
-     "monthly_usd": 14,
-     "annual_usd": 144,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 3
-    },
-    {
-     "plan": "Pro",
-     "monthly_usd": 24,
-     "annual_usd": 252,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 3
-    }
-   ]
-  },
-  {
-   "tool": "pipedrive",
-   "vendor_name": "Pipedrive",
-   "category": "crm",
-   "source_url": "https://www.pipedrive.com/en/pricing",
-   "affiliate_slug": "pipedrive",
-   "plans": [
-    {
-     "plan": "Essential",
-     "monthly_usd": 24,
-     "annual_usd": 168,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Advanced",
-     "monthly_usd": 39,
-     "annual_usd": 348,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Professional",
-     "monthly_usd": 64,
-     "annual_usd": 588,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Power",
-     "monthly_usd": 79,
-     "annual_usd": 768,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Enterprise",
-     "monthly_usd": 129,
-     "annual_usd": 1188,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1
-    }
-   ]
-  },
-  {
-   "tool": "linear",
-   "vendor_name": "Linear",
-   "category": "dev-tools",
-   "source_url": "https://linear.app/pricing",
-   "affiliate_slug": "linear",
-   "plans": [
-    {
-     "plan": "Free",
-     "monthly_usd": 0,
-     "annual_usd": 0,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Up to 250 issues, 10 users"
-    },
-    {
-     "plan": "Basic",
-     "monthly_usd": 8,
-     "annual_usd": 96,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Business",
-     "monthly_usd": 14,
-     "annual_usd": 168,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    }
-   ]
-  },
-  {
-   "tool": "stripe",
-   "vendor_name": "Stripe",
-   "category": "finance",
-   "source_url": "https://stripe.com/pricing",
-   "affiliate_slug": "stripe",
-   "plans": [
-    {
-     "plan": "Standard",
-     "monthly_usd": 0,
-     "annual_usd": 0,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Pay 2.9% + 30¢ per successful card charge; no monthly fee"
-    }
-   ]
-  },
-  {
-   "tool": "1password",
-   "vendor_name": "1Password",
-   "category": "security",
-   "source_url": "https://1password.com/pricing",
-   "affiliate_slug": "1password",
-   "plans": [
-    {
-     "plan": "Individual",
-     "monthly_usd": 2.99,
-     "annual_usd": 35.88,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Families",
-     "monthly_usd": 4.99,
-     "annual_usd": 59.88,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Up to 5 family members"
-    },
-    {
-     "plan": "Teams Starter Pack",
-     "monthly_usd": 19.95,
-     "annual_usd": 239.4,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Flat rate for up to 10 team members"
-    },
-    {
-     "plan": "Business",
-     "monthly_usd": 7.99,
-     "annual_usd": 95.88,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    }
-   ]
-  },
-  {
-   "tool": "tresorit",
-   "vendor_name": "Tresorit",
-   "category": "security",
-   "source_url": "https://tresorit.com/pricing",
-   "affiliate_slug": "tresorit",
-   "plans": [
-    {
-     "plan": "Personal",
-     "monthly_usd": 11.99,
-     "annual_usd": 119.88,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "1TB storage"
-    },
-    {
-     "plan": "Personal Plus",
-     "monthly_usd": 19.99,
-     "annual_usd": 191.88,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "4TB storage"
-    },
-    {
-     "plan": "Business Standard",
-     "monthly_usd": 14.5,
-     "annual_usd": 174,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 3,
-     "notes": "$14.50/seat/mo, 3-seat minimum"
-    }
-   ]
-  },
-  {
-   "tool": "shopify",
-   "vendor_name": "Shopify",
-   "category": "ecommerce",
-   "source_url": "https://www.shopify.com/pricing",
-   "affiliate_slug": "shopify",
-   "plans": [
-    {
-     "plan": "Basic",
-     "monthly_usd": 39,
-     "annual_usd": 348,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "+ payment processing fees: 2.9% + 30¢"
-    },
-    {
-     "plan": "Shopify",
-     "monthly_usd": 105,
-     "annual_usd": 948,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    },
-    {
-     "plan": "Advanced",
-     "monthly_usd": 399,
-     "annual_usd": 3588,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1
-    }
-   ]
-  },
-  {
-   "tool": "datadog",
-   "vendor_name": "Datadog",
-   "category": "dev-tools",
-   "source_url": "https://www.datadoghq.com/pricing/",
-   "affiliate_slug": "datadog",
-   "plans": [
-    {
-     "plan": "Free",
-     "monthly_usd": 0,
-     "annual_usd": 0,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Up to 5 hosts, 1-day metric retention"
-    },
-    {
-     "plan": "Pro",
-     "monthly_usd": 15,
-     "annual_usd": 180,
-     "free_trial": true,
-     "cc_required": false,
-     "seat_minimum": 1,
-     "notes": "Per host/mo, 15-month metric retention"
-    },
-    {
-     "plan": "Enterprise",
-     "monthly_usd": 23,
-     "annual_usd": 276,
-     "free_trial": false,
-     "cc_required": false,
-     "seat_minimum": 1
-    }
-   ]
-  }
- ]
+  ]
 }

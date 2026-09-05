@@ -1,0 +1,136 @@
+<style>
+  .lr-frame{background:#050407;border-radius:14px;border:1px solid rgba(255,255,255,.09);padding:0;overflow:hidden;font-family:'Inter',system-ui,sans-serif;color:#fff7f8}
+  .lr-inner{padding:22px}
+
+  /* A: Category-hub-first */
+  .a-hero{padding:32px 22px 20px;background:radial-gradient(ellipse 120% 60% at 50% 0%,rgba(255,65,109,.14) 0%,transparent 70%)}
+  .a-hero h1{font-size:1.6rem;font-weight:900;margin:0 0 6px;letter-spacing:-.02em}
+  .a-hero p{color:rgba(255,247,248,.5);font-size:.85rem;margin:0 0 18px}
+  .a-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .a-cat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px;text-align:center}
+  .a-cat .n{font-size:1.3rem}
+  .a-cat .t{font-size:.72rem;color:rgba(255,247,248,.68);margin-top:4px;font-weight:600}
+  .a-cat .c{font-size:.65rem;color:rgba(255,247,248,.38)}
+  .a-feat{padding:0 22px 22px;margin-top:6px}
+  .a-feat h3{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,247,248,.4);margin:0 0 10px}
+  .a-row{display:flex;gap:10px;overflow-x:auto}
+  .a-tool{flex:0 0 130px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px;text-align:center}
+  .a-logo{width:36px;height:36px;border-radius:9px;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.85rem;color:#fff}
+  .a-name{font-size:.78rem;font-weight:700}
+  .a-sub{font-size:.65rem;color:rgba(255,247,248,.4);margin-top:2px}
+
+  /* B: Big card grid */
+  .b-top{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.07)}
+  .b-top h1{font-size:1.1rem;margin:0}
+  .b-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 22px}
+  .b-card{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:18px;position:relative;overflow:hidden}
+  .b-card::before{content:"";position:absolute;top:-40%;right:-30%;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,var(--glow,rgba(255,65,109,.18)),transparent 70%)}
+  .b-logo{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;margin-bottom:12px;position:relative}
+  .b-title{font-size:.92rem;font-weight:800;margin-bottom:4px;position:relative}
+  .b-tag{font-size:.68rem;color:rgba(255,247,248,.42);position:relative}
+  .b-badge{position:absolute;top:14px;right:14px;font-size:.6rem;background:rgba(54,230,161,.14);color:#36e6a1;padding:2px 8px;border-radius:100px;font-weight:700}
+
+  /* C: Hybrid rail + spotlight */
+  .c-wrap{display:grid;grid-template-columns:170px 1fr}
+  .c-rail{border-right:1px solid rgba(255,255,255,.07);padding:18px 12px}
+  .c-rail-item{padding:8px 10px;border-radius:8px;font-size:.76rem;color:rgba(255,247,248,.55);margin-bottom:2px}
+  .c-rail-item.active{background:rgba(255,65,109,.1);color:#ff7a9a;font-weight:700}
+  .c-main{padding:18px 20px}
+  .c-spot{background:linear-gradient(120deg,rgba(255,65,109,.14),rgba(255,65,109,.02));border:1px solid rgba(255,75,115,.22);border-radius:14px;padding:16px;display:flex;gap:14px;align-items:center;margin-bottom:16px}
+  .c-spot-logo{width:48px;height:48px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.1rem;flex-shrink:0}
+  .c-spot h4{margin:0 0 3px;font-size:.9rem}
+  .c-spot p{margin:0;font-size:.72rem;color:rgba(255,247,248,.55)}
+  .c-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .c-item{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:10px}
+  .c-item .lg{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.68rem;color:#fff;flex-shrink:0}
+  .c-item .tt{font-size:.76rem;font-weight:600}
+</style>
+
+<h2>Library page — 3 real directions</h2>
+<p class="subtitle">Current state: one flat filterable list of 1,429 rows, tiny logos, no hierarchy. Here's what "cinematic" could actually look like.</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Category-hub-first (browse, not search)</h3>
+      <div class="mockup" style="margin-top:10px">
+        <div class="lr-frame">
+          <div class="a-hero">
+            <h1>Find the right tool. Fast.</h1>
+            <p>200+ tools · 16 categories · every price verified</p>
+            <div class="a-cats">
+              <div class="a-cat"><div class="n">📊</div><div class="t">CRM</div><div class="c">28 tools</div></div>
+              <div class="a-cat"><div class="n">🔒</div><div class="t">Security</div><div class="c">19 tools</div></div>
+              <div class="a-cat"><div class="n">💰</div><div class="t">Finance</div><div class="c">22 tools</div></div>
+              <div class="a-cat"><div class="n">📧</div><div class="t">Marketing</div><div class="c">31 tools</div></div>
+            </div>
+          </div>
+          <div class="a-feat">
+            <h3>Most compared this week</h3>
+            <div class="a-row">
+              <div class="a-tool"><div class="a-logo" style="background:#635bff">S</div><div class="a-name">Stripe</div><div class="a-sub">vs Paddle</div></div>
+              <div class="a-tool"><div class="a-logo" style="background:#ff7a59">H</div><div class="a-name">HubSpot</div><div class="a-sub">Pricing 2026</div></div>
+              <div class="a-tool"><div class="a-logo" style="background:#5e6ad2">L</div><div class="a-name">Linear</div><div class="a-sub">vs Asana</div></div>
+              <div class="a-tool"><div class="a-logo" style="background:#4353ff">R</div><div class="a-name">Ramp</div><div class="a-sub">Free plan?</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Lead with categories and curated "most compared" strips, like saaspare.com's homepage. Search still works, but browsing feels editorial and guided instead of a spreadsheet dump. Best for people who don't know exactly what they want yet.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Big visual card grid</h3>
+      <div class="mockup" style="margin-top:10px">
+        <div class="lr-frame">
+          <div class="b-top"><h1>All tools</h1><span style="font-size:.75rem;color:rgba(255,247,248,.4)">1,429 pages</span></div>
+          <div class="b-grid">
+            <div class="b-card" style="--glow:rgba(99,91,255,.22)"><div class="b-badge">Live</div><div class="b-logo" style="background:#635bff">S</div><div class="b-title">Stripe</div><div class="b-tag">Pricing · Reviews · vs 6 tools</div></div>
+            <div class="b-card" style="--glow:rgba(255,122,89,.22)"><div class="b-logo" style="background:#ff7a59">H</div><div class="b-title">HubSpot</div><div class="b-tag">$0–1000/conv · 44 pages</div></div>
+            <div class="b-card" style="--glow:rgba(94,106,210,.22)"><div class="b-logo" style="background:#5e6ad2">L</div><div class="b-title">Linear</div><div class="b-tag">Dev favorite · 9 pages</div></div>
+          </div>
+        </div>
+      </div>
+      <p>Every tool gets real visual weight — big logo, glow accent, status badge. Feels like a product showcase / app store, not a directory. Best for people who like to visually scan and click around. Fewer tools per screen though (grid vs. dense list).</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Sidebar rail + spotlight hybrid</h3>
+      <div class="mockup" style="margin-top:10px">
+        <div class="lr-frame">
+          <div class="c-wrap">
+            <div class="c-rail">
+              <div class="c-rail-item active">All (200)</div>
+              <div class="c-rail-item">CRM (28)</div>
+              <div class="c-rail-item">Security (19)</div>
+              <div class="c-rail-item">Finance (22)</div>
+              <div class="c-rail-item">Marketing (31)</div>
+            </div>
+            <div class="c-main">
+              <div class="c-spot">
+                <div class="c-spot-logo" style="color:#635bff">S</div>
+                <div><h4>Stripe just changed pricing</h4><p>See what moved in the last 30 days →</p></div>
+              </div>
+              <div class="c-list">
+                <div class="c-item"><span class="lg" style="background:#635bff">S</span><span class="tt">Stripe</span></div>
+                <div class="c-item"><span class="lg" style="background:#ff7a59">H</span><span class="tt">HubSpot</span></div>
+                <div class="c-item"><span class="lg" style="background:#5e6ad2">L</span><span class="tt">Linear</span></div>
+                <div class="c-item"><span class="lg" style="background:#4353ff">R</span><span class="tt">Ramp</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Persistent category rail (always visible, no navigating away) + a rotating "spotlight" callout for timely stuff (pricing changes, new pages) + a denser list below. Most information-dense of the three while still feeling organized. Best balance of browse + power-search.</p>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:20px">Click one, or tell me in the terminal if you want a mix (e.g. A's hero + C's spotlight).</p>

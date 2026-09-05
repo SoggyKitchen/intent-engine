@@ -29,6 +29,56 @@
    "pct_change": null,
    "plan": "Enterprise",
    "tool": "ahrefs"
+  },
+  {
+   "at": 1788619264,
+   "direction": "drop",
+   "field": "annual_usd",
+   "new": "84",
+   "old": "180",
+   "pct_change": -53.333333333333336,
+   "plan": "Sales Hub Starter",
+   "tool": "hubspot"
+  },
+  {
+   "at": 1788619264,
+   "direction": "drop",
+   "field": "seat_minimum",
+   "new": "1",
+   "old": "5",
+   "pct_change": -80.0,
+   "plan": "Sales Hub Professional",
+   "tool": "hubspot"
+  },
+  {
+   "at": 1788619264,
+   "direction": "drop",
+   "field": "seat_minimum",
+   "new": "1",
+   "old": "10",
+   "pct_change": -90.0,
+   "plan": "Sales Hub Enterprise",
+   "tool": "hubspot"
+  },
+  {
+   "at": 1788619264,
+   "direction": "drop",
+   "field": "seat_minimum",
+   "new": "1",
+   "old": "3",
+   "pct_change": -66.66666666666666,
+   "plan": "Advanced",
+   "tool": "ahrefs"
+  },
+  {
+   "at": 1788619264,
+   "direction": "drop",
+   "field": "seat_minimum",
+   "new": "1",
+   "old": "5",
+   "pct_change": -80.0,
+   "plan": "Enterprise",
+   "tool": "ahrefs"
   }
  ],
  "plans": {
@@ -81,9 +131,9 @@
    "cc_required": 0,
    "free_trial": 0,
    "monthly_usd": 449,
-   "notes": "",
+   "notes": "Includes 1 user. Extra users $80/mo each, up to 10. Re-verified 2026-09-06: no seat minimum.",
    "plan": "Advanced",
-   "seat_minimum": 3,
+   "seat_minimum": 1,
    "source_url": "https://ahrefs.com/pricing",
    "tool": "ahrefs"
   },
@@ -91,10 +141,10 @@
    "annual_usd": 14990,
    "cc_required": 0,
    "free_trial": 0,
-   "monthly_usd": null,
-   "notes": "$14,990 billed annually only; no monthly option (effective ~$1,249/mo)",
+   "monthly_usd": 1499,
+   "notes": "$1,499/mo list price, annual commitment required ($14,990/yr). Re-verified 2026-09-06: no seat minimum.",
    "plan": "Enterprise",
-   "seat_minimum": 5,
+   "seat_minimum": 1,
    "source_url": "https://ahrefs.com/pricing",
    "tool": "ahrefs"
   },
@@ -246,9 +296,9 @@
    "cc_required": 0,
    "free_trial": 0,
    "monthly_usd": 150,
-   "notes": "$150/seat/mo, 10-seat minimum, custom onboarding",
+   "notes": "$150/seat/mo billed annually. Re-verified 2026-09-06: no stated seat minimum. One-time Enterprise Onboarding fee of $3,500 is mandatory.",
    "plan": "Sales Hub Enterprise",
-   "seat_minimum": 10,
+   "seat_minimum": 1,
    "source_url": "https://www.hubspot.com/pricing/sales",
    "tool": "hubspot"
   },
@@ -257,18 +307,18 @@
    "cc_required": 0,
    "free_trial": 0,
    "monthly_usd": 100,
-   "notes": "$100/seat/mo, 5-seat minimum, +mandatory onboarding fee",
+   "notes": "$100/seat/mo monthly, $90/seat/mo annually. Re-verified 2026-09-06: HubSpot NO LONGER states a 5-seat minimum. One-time Professional Onboarding fee of $1,500 is mandatory.",
    "plan": "Sales Hub Professional",
-   "seat_minimum": 5,
+   "seat_minimum": 1,
    "source_url": "https://www.hubspot.com/pricing/sales",
    "tool": "hubspot"
   },
   "hubspot|Sales Hub Starter": {
-   "annual_usd": 180,
+   "annual_usd": 84,
    "cc_required": 0,
    "free_trial": 1,
    "monthly_usd": 20,
-   "notes": "$20/seat/mo monthly, $15/seat/mo if billed annually",
+   "notes": "$20/seat/mo monthly, $7/seat/mo billed annually. Re-verified 2026-09-06: annual rate cut from $15 to $7/seat/mo.",
    "plan": "Sales Hub Starter",
    "seat_minimum": 1,
    "source_url": "https://www.hubspot.com/pricing/sales",

@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - img [ref=e8]
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - img [ref=e13]
+      - generic [ref=e16]: SaaSpare
+    - generic [ref=e17]:
+      - heading "Honest SaaS comparisons." [level=1] [ref=e18]:
+        - text: Honest SaaS
+        - text: comparisons.
+      - generic [ref=e19]: Real pricing, free trials & better alternatives — for 200+ B2B tools.
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - img [ref=e22]
+        - text: Pricing Guides
+      - generic [ref=e24]:
+        - img [ref=e25]
+        - text: Comparisons
+      - generic [ref=e28]:
+        - img [ref=e29]
+        - text: Deal Radar
+      - generic [ref=e33]: saaspare.org

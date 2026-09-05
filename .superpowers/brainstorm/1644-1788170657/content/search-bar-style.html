@@ -1,0 +1,70 @@
+<style>
+  .nav-demo{background:#050407;padding:14px 24px;border-radius:14px;display:flex;align-items:center;gap:20px;border:1px solid rgba(255,255,255,.09);font-family:'Inter',system-ui,sans-serif}
+  .nav-logo{color:#fff7f8;font-weight:800;font-size:1.05rem;letter-spacing:-.4px;white-space:nowrap}
+  .nav-logo em{color:#ff416d;font-style:normal}
+  .nav-links{display:flex;gap:4px;color:rgba(255,247,248,.64);font-size:.82rem;white-space:nowrap}
+  .nav-links span{padding:6px 10px}
+  .nav-spacer{flex:1}
+  .pill-search{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:9999px;padding:8px 14px;color:rgba(255,247,248,.42);font-size:.82rem;min-width:200px}
+  .pill-search .kbd{margin-left:auto;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:1px 6px;font-size:.7rem;color:rgba(255,247,248,.4)}
+  .icon-search{width:34px;height:34px;border-radius:9999px;border:1px solid rgba(255,255,255,.09);display:flex;align-items:center;justify-content:center;color:rgba(255,247,248,.64);cursor:pointer}
+  .expand-search{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid rgba(255,75,115,.3);border-radius:9999px;padding:8px 16px 8px 14px;color:#fff7f8;font-size:.82rem;box-shadow:0 0 0 3px rgba(255,65,109,.08)}
+  .cta{background:linear-gradient(135deg,#ff416d,#c92950);color:#fff;padding:8px 18px;border-radius:9999px;font-weight:700;font-size:.78rem;white-space:nowrap}
+</style>
+
+<h2>Which header search style fits SaaSpare?</h2>
+<p class="subtitle">All three use your existing dark canvas + pink accent tokens. saaspare.com uses a version of Option A.</p>
+
+<div class="options" data-multiselect="false">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Command-palette pill (saaspare.com style)</h3>
+      <div class="mockup" style="margin-top:10px">
+        <div class="nav-demo">
+          <span class="nav-logo">Saa<em>Spare</em></span>
+          <span class="nav-links"><span>Comparisons</span><span>Deal Radar</span></span>
+          <span class="nav-spacer"></span>
+          <span class="pill-search">🔍 Search tools...<span class="kbd">⌘K</span></span>
+          <span class="cta">Build Shortlist →</span>
+        </div>
+      </div>
+      <p>A quiet pill that expands into a full command-palette overlay on click or ⌘K. Doesn't compete visually with the CTA. Feels modern/fast (Linear, Vercel, Raycast use this).</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Icon-only, expands on click</h3>
+      <div class="mockup" style="margin-top:10px">
+        <div class="nav-demo">
+          <span class="nav-logo">Saa<em>Spare</em></span>
+          <span class="nav-links"><span>Comparisons</span><span>Deal Radar</span></span>
+          <span class="nav-spacer"></span>
+          <span class="icon-search">🔍</span>
+          <span class="cta">Build Shortlist →</span>
+        </div>
+      </div>
+      <p>Most minimal — just a circular icon button. Clicking expands it into an input inline or opens the overlay. Saves header space on 1,500+ pages where nav is already busy.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Always-open pink-glow input</h3>
+      <div class="mockup" style="margin-top:10px">
+        <div class="nav-demo">
+          <span class="nav-logo">Saa<em>Spare</em></span>
+          <span class="nav-spacer"></span>
+          <span class="expand-search">🔍 Search 200+ tools...</span>
+          <span class="cta">Build Shortlist →</span>
+        </div>
+      </div>
+      <p>Search is always visible and inviting (glowing pink border matches your accent). Pushes some nav links to a "More" menu to make room. Most discoverable, least subtle.</p>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:20px">Click one to select, or tell me in the terminal if you want a mix (e.g. A's behavior with C's visibility).</p>
