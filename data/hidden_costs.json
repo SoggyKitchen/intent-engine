@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "verified_on": "2026-09-06",
+    "method": "Each row was read off the vendor's own public pricing page on verified_on. Nothing here is modelled, estimated, or carried over from a previous snapshot. If a vendor's page does not state a fee, this file records that it does not - absence of evidence is recorded as absence, never inferred as zero.",
+    "currency_note": "Vendor pricing pages geolocate. Rows captured in a non-USD currency are labelled with the currency actually shown."
+  },
+  "onboarding_fees": [
+    {
+      "vendor": "HubSpot", "plan": "Sales Hub Professional",
+      "fee_usd": 1500, "recurrence": "one-time", "mandatory": true,
+      "quote": "Professional Onboarding for a fee of $1,500",
+      "page_wording": "required, one-time",
+      "advertised_monthly_usd": 100,
+      "source": "https://www.hubspot.com/pricing/sales"
+    },
+    {
+      "vendor": "HubSpot", "plan": "Sales Hub Enterprise",
+      "fee_usd": 3500, "recurrence": "one-time", "mandatory": true,
+      "quote": "Enterprise Onboarding for a fee of $3,500",
+      "page_wording": "required, one-time",
+      "advertised_monthly_usd": 150,
+      "source": "https://www.hubspot.com/pricing/sales"
+    }
+  ],
+  "seat_minimums": [
+    {
+      "vendor": "monday.com", "plan": "Basic / Standard / Pro",
+      "min_seats": 3,
+      "quote": "Plans start from 3 users.",
+      "advertised_price": 14, "currency": "AUD",
+      "source": "https://monday.com/pricing/"
+    }
+  ],
+  "annual_only": [
+    {"vendor": "Salesforce", "plan": "Pro Suite", "price_usd": 100, "quote": "Billed annually", "annual_commitment_usd": 1200, "source": "https://www.salesforce.com/sales/pricing/"},
+    {"vendor": "Salesforce", "plan": "Core", "price_usd": 195, "quote": "Billed annually", "annual_commitment_usd": 2340, "source": "https://www.salesforce.com/sales/pricing/"},
+    {"vendor": "Salesforce", "plan": "Advanced", "price_usd": 395, "quote": "Billed annually", "annual_commitment_usd": 4740, "source": "https://www.salesforce.com/sales/pricing/"},
+    {"vendor": "Salesforce", "plan": "Max", "price_usd": 550, "quote": "Billed annually", "annual_commitment_usd": 6600, "source": "https://www.salesforce.com/sales/pricing/"},
+    {"vendor": "Ahrefs", "plan": "Enterprise", "price_usd": 1499, "quote": "Annual commitment required", "annual_commitment_usd": 14990, "source": "https://ahrefs.com/pricing"}
+  ],
+  "monthly_billing_penalty": [
+    {"vendor": "HubSpot", "plan": "Sales Hub Starter", "annual_rate_usd": 7, "monthly_rate_usd": 20, "source": "https://www.hubspot.com/pricing/sales"},
+    {"vendor": "HubSpot", "plan": "Sales Hub Professional", "annual_rate_usd": 90, "monthly_rate_usd": 100, "source": "https://www.hubspot.com/pricing/sales"}
+  ],
+  "extra_seat_costs": [
+    {"vendor": "Ahrefs", "plan": "Lite", "included_users": 1, "extra_seat_usd": 40, "max_extra": 2, "source": "https://ahrefs.com/pricing"},
+    {"vendor": "Ahrefs", "plan": "Standard", "included_users": 1, "extra_seat_usd": 60, "max_extra": 5, "source": "https://ahrefs.com/pricing"},
+    {"vendor": "Ahrefs", "plan": "Advanced", "included_users": 1, "extra_seat_usd": 80, "max_extra": 10, "source": "https://ahrefs.com/pricing"}
+  ],
+  "checked_and_none_found": [
+    {"vendor": "monday.com", "checked_for": "onboarding or implementation fee", "result": "No mention of onboarding, implementation, or setup fees on the pricing page.", "source": "https://monday.com/pricing/"},
+    {"vendor": "Salesforce", "checked_for": "seat minimum or implementation fee", "result": "Page does not state a minimum user count or a one-time implementation fee for any Sales Cloud plan.", "source": "https://www.salesforce.com/sales/pricing/"}
+  ]
+}
