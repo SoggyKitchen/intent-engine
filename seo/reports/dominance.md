@@ -14,11 +14,11 @@ Generated 2026-09-05. GSC window 2026-08-05 to 2026-09-02.
 | <sub>THE headline metric. Baseline was 0 - every impression was our own domain name.</sub> | | | |
 | Distinct non-branded queries | 0 | 15 | FAIL |
 | <sub>beat saaspare.com's 15 organic keywords</sub> | | | |
-| Indexable pages >= competitor page count | 493 | 42 | PASS |
+| Indexable pages >= competitor page count | 494 | 42 | PASS |
 | Entity consistency: one sameAs array | 1 | 1 | PASS |
 | <sub>conflicting identity claims break entity resolution</sub> | | | |
 | Sitemap matches indexable set (+/-10%) | 1 | 1 | PASS |
-| <sub>sitemap 517 vs indexable 493</sub> | | | |
+| <sub>sitemap 518 vs indexable 494</sub> | | | |
 
 ## Manual (Search Atlas, typed into data/dominance_targets.json)
 
@@ -42,10 +42,10 @@ that people who already know the domain can find it.
 
 ## Corpus
 
-- Total pages: 1546
-- Indexable: 493
+- Total pages: 1547
+- Indexable: 494
 - Noindexed (pruned 2026-09-01): 1053
-- Sitemap URLs: 517
+- Sitemap URLs: 518
 - Distinct `sameAs` arrays: 1
 
 ## Verdict

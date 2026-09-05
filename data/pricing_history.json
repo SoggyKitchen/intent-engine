@@ -79,6 +79,26 @@
    "pct_change": -80.0,
    "plan": "Enterprise",
    "tool": "ahrefs"
+  },
+  {
+   "at": 1788621618,
+   "direction": "drop",
+   "field": "monthly_usd",
+   "new": "25",
+   "old": "27.5",
+   "pct_change": -9.090909090909092,
+   "plan": "Starter Suite",
+   "tool": "salesforce"
+  },
+  {
+   "at": 1788621618,
+   "direction": "drop",
+   "field": "monthly_usd",
+   "new": "100",
+   "old": "110",
+   "pct_change": -9.090909090909092,
+   "plan": "Pro Suite",
+   "tool": "salesforce"
   }
  ],
  "plans": {
@@ -500,6 +520,28 @@
    "source_url": "https://www.pipedrive.com/en/pricing",
    "tool": "pipedrive"
   },
+  "salesforce|Advanced": {
+   "annual_usd": 4740,
+   "cc_required": 0,
+   "free_trial": 1,
+   "monthly_usd": 395,
+   "notes": "Billed annually only. New tier, no 2026-05 equivalent.",
+   "plan": "Advanced",
+   "seat_minimum": 1,
+   "source_url": "https://www.salesforce.com/sales/pricing/",
+   "tool": "salesforce"
+  },
+  "salesforce|Core": {
+   "annual_usd": 2340,
+   "cc_required": 0,
+   "free_trial": 1,
+   "monthly_usd": 195,
+   "notes": "Billed annually only. Replaces the retired Enterprise tier ($165).",
+   "plan": "Core",
+   "seat_minimum": 1,
+   "source_url": "https://www.salesforce.com/sales/pricing/",
+   "tool": "salesforce"
+  },
   "salesforce|Enterprise": {
    "annual_usd": 1800,
    "cc_required": 0,
@@ -511,12 +553,23 @@
    "source_url": "https://www.salesforce.com/sales/pricing/",
    "tool": "salesforce"
   },
+  "salesforce|Max": {
+   "annual_usd": 6600,
+   "cc_required": 0,
+   "free_trial": 1,
+   "monthly_usd": 550,
+   "notes": "Billed annually only. Replaces the retired Unlimited tier ($330).",
+   "plan": "Max",
+   "seat_minimum": 1,
+   "source_url": "https://www.salesforce.com/sales/pricing/",
+   "tool": "salesforce"
+  },
   "salesforce|Pro Suite": {
    "annual_usd": 1200,
    "cc_required": 0,
    "free_trial": 1,
-   "monthly_usd": 110,
-   "notes": "Annual billing only above Starter",
+   "monthly_usd": 100,
+   "notes": "Billed annually only. Re-verified 2026-09-06: down from $110.",
    "plan": "Pro Suite",
    "seat_minimum": 1,
    "source_url": "https://www.salesforce.com/sales/pricing/",
@@ -526,8 +579,8 @@
    "annual_usd": 300,
    "cc_required": 0,
    "free_trial": 1,
-   "monthly_usd": 27.5,
-   "notes": "Hiked from $25 to $27.50 in Feb 2026",
+   "monthly_usd": 25,
+   "notes": "Billed monthly or annually. Re-verified 2026-09-06: down from $27.50.",
    "plan": "Starter Suite",
    "seat_minimum": 1,
    "source_url": "https://www.salesforce.com/sales/pricing/",
