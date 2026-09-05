@@ -1,0 +1,297 @@
+{
+  "_meta": {
+    "generated_from": [
+      "data/pricing_seed.json",
+      "data/hidden_costs.json"
+    ],
+    "pricing_verified_on": "2026-09-06",
+    "facts_verified_on": "2026-09-06",
+    "scale": "5 criteria, 0-2 points each, 10 points total, halved to 0-5 stars",
+    "authored_by": "SaaSpare editorial",
+    "note": "Editorial score, not user reviews. Measures how transparent a vendor's own pricing page is with the buyer. Deterministic: recomputed from verified data, never hand-set.",
+    "criteria": [
+      {
+        "key": "published_pricing",
+        "label": "Publishes a real price",
+        "test": "Every paid tier shows a number instead of a contact-sales form."
+      },
+      {
+        "key": "no_setup_fee",
+        "label": "No mandatory setup fee",
+        "test": "No required one-time onboarding or implementation charge."
+      },
+      {
+        "key": "single_seat",
+        "label": "Will sell you one seat",
+        "test": "No minimum seat count standing between you and the advertised price."
+      },
+      {
+        "key": "monthly_billing",
+        "label": "Lets you pay monthly",
+        "test": "Paid tiers can be bought month to month, not annual commitment only."
+      },
+      {
+        "key": "try_before_buy",
+        "label": "Try before you buy",
+        "test": "A free tier, or at minimum a free trial."
+      }
+    ]
+  },
+  "scores": [
+    {
+      "tool": "asana",
+      "vendor": "Asana",
+      "category": "project-mgmt",
+      "source_url": "https://asana.com/pricing",
+      "affiliate_slug": "asana",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 2
+      },
+      "points": 10,
+      "max_points": 10,
+      "stars": 5.0
+    },
+    {
+      "tool": "clickup",
+      "vendor": "ClickUp",
+      "category": "project-mgmt",
+      "source_url": "https://clickup.com/pricing",
+      "affiliate_slug": "clickup",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 2
+      },
+      "points": 10,
+      "max_points": 10,
+      "stars": 5.0
+    },
+    {
+      "tool": "datadog",
+      "vendor": "Datadog",
+      "category": "dev-tools",
+      "source_url": "https://www.datadoghq.com/pricing/",
+      "affiliate_slug": "datadog",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 2
+      },
+      "points": 10,
+      "max_points": 10,
+      "stars": 5.0
+    },
+    {
+      "tool": "linear",
+      "vendor": "Linear",
+      "category": "dev-tools",
+      "source_url": "https://linear.app/pricing",
+      "affiliate_slug": "linear",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 2
+      },
+      "points": 10,
+      "max_points": 10,
+      "stars": 5.0
+    },
+    {
+      "tool": "stripe",
+      "vendor": "Stripe",
+      "category": "finance",
+      "source_url": "https://stripe.com/pricing",
+      "affiliate_slug": "stripe",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 2
+      },
+      "points": 10,
+      "max_points": 10,
+      "stars": 5.0
+    },
+    {
+      "tool": "1password",
+      "vendor": "1Password",
+      "category": "security",
+      "source_url": "https://1password.com/pricing",
+      "affiliate_slug": "1password",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 1
+      },
+      "points": 9,
+      "max_points": 10,
+      "stars": 4.5
+    },
+    {
+      "tool": "monday-com",
+      "vendor": "Monday.com",
+      "category": "project-mgmt",
+      "source_url": "https://monday.com/pricing/",
+      "affiliate_slug": "monday-com",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 1,
+        "monthly_billing": 2,
+        "try_before_buy": 2
+      },
+      "points": 9,
+      "max_points": 10,
+      "stars": 4.5
+    },
+    {
+      "tool": "notion",
+      "vendor": "Notion",
+      "category": "project-mgmt",
+      "source_url": "https://www.notion.com/pricing",
+      "affiliate_slug": "notion",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 2
+      },
+      "points": 9,
+      "max_points": 10,
+      "stars": 4.5
+    },
+    {
+      "tool": "pipedrive",
+      "vendor": "Pipedrive",
+      "category": "crm",
+      "source_url": "https://www.pipedrive.com/en/pricing",
+      "affiliate_slug": "pipedrive",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 1
+      },
+      "points": 9,
+      "max_points": 10,
+      "stars": 4.5
+    },
+    {
+      "tool": "semrush",
+      "vendor": "Semrush",
+      "category": "seo",
+      "source_url": "https://www.semrush.com/pricing/",
+      "affiliate_slug": "semrush",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 1
+      },
+      "points": 9,
+      "max_points": 10,
+      "stars": 4.5
+    },
+    {
+      "tool": "shopify",
+      "vendor": "Shopify",
+      "category": "ecommerce",
+      "source_url": "https://www.shopify.com/pricing",
+      "affiliate_slug": "shopify",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 1
+      },
+      "points": 9,
+      "max_points": 10,
+      "stars": 4.5
+    },
+    {
+      "tool": "hubspot",
+      "vendor": "HubSpot",
+      "category": "crm",
+      "source_url": "https://www.hubspot.com/pricing/sales",
+      "affiliate_slug": "hubspot",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 0,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "try_before_buy": 2
+      },
+      "points": 8,
+      "max_points": 10,
+      "stars": 4.0
+    },
+    {
+      "tool": "salesforce",
+      "vendor": "Salesforce",
+      "category": "crm",
+      "source_url": "https://www.salesforce.com/sales/pricing/",
+      "affiliate_slug": "salesforce",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 1,
+        "try_before_buy": 1
+      },
+      "points": 8,
+      "max_points": 10,
+      "stars": 4.0
+    },
+    {
+      "tool": "tresorit",
+      "vendor": "Tresorit",
+      "category": "security",
+      "source_url": "https://tresorit.com/pricing",
+      "affiliate_slug": "tresorit",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 1,
+        "monthly_billing": 2,
+        "try_before_buy": 1
+      },
+      "points": 8,
+      "max_points": 10,
+      "stars": 4.0
+    },
+    {
+      "tool": "ahrefs",
+      "vendor": "Ahrefs",
+      "category": "seo",
+      "source_url": "https://ahrefs.com/pricing",
+      "affiliate_slug": "ahrefs",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 1,
+        "try_before_buy": 0
+      },
+      "points": 7,
+      "max_points": 10,
+      "stars": 3.5
+    }
+  ]
+}

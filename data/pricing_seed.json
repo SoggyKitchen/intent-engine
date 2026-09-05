@@ -2,7 +2,7 @@
   "_meta": {
     "version": 1,
     "snapshot_date": "2026-09-06",
-    "notes": "Seed prices for the SaaSpare Price Intelligence Engine. All values verified from official vendor pricing pages on the snapshot_date. The crawler will diff future snapshots against these values. Inaccurate values destroy trust faster than missing values — better to omit a plan than guess. 2026-09-06: HubSpot and Ahrefs plans re-verified against live vendor pages. The stored seat_minimum values for HubSpot Professional (5), HubSpot Enterprise (10), Ahrefs Advanced (3) and Ahrefs Enterprise (5) were NOT supported by the vendors' current pricing pages and have been reset to 1. Mandatory one-time onboarding fees recorded in notes.",
+    "notes": "Seed prices for the SaaSpare Price Intelligence Engine. All values verified from official vendor pricing pages on the snapshot_date. The crawler will diff future snapshots against these values. Inaccurate values destroy trust faster than missing values — better to omit a plan than guess. 2026-09-06: HubSpot and Ahrefs plans re-verified against live vendor pages. The stored seat_minimum values for HubSpot Professional (5), HubSpot Enterprise (10), Ahrefs Advanced (3) and Ahrefs Enterprise (5) were NOT supported by the vendors' current pricing pages and have been reset to 1. Mandatory one-time onboarding fees recorded in notes. 2026-09-06: Salesforce Sales Cloud re-verified - Enterprise and Unlimited tiers retired, replaced by Core/Advanced/Max, and Starter/Pro repriced.",
     "currency_default": "USD"
   },
   "tools": [
@@ -60,37 +60,48 @@
       "plans": [
         {
           "plan": "Starter Suite",
-          "monthly_usd": 27.5,
+          "monthly_usd": 25,
           "annual_usd": 300,
           "free_trial": true,
           "cc_required": false,
           "seat_minimum": 1,
-          "notes": "Hiked from $25 to $27.50 in Feb 2026"
+          "notes": "Billed monthly or annually. Re-verified 2026-09-06: down from $27.50."
         },
         {
           "plan": "Pro Suite",
-          "monthly_usd": 110,
+          "monthly_usd": 100,
           "annual_usd": 1200,
           "free_trial": true,
           "cc_required": false,
           "seat_minimum": 1,
-          "notes": "Annual billing only above Starter"
+          "notes": "Billed annually only. Re-verified 2026-09-06: down from $110."
         },
         {
-          "plan": "Enterprise",
-          "monthly_usd": 165,
-          "annual_usd": 1800,
+          "plan": "Core",
+          "monthly_usd": 195,
+          "annual_usd": 2340,
           "free_trial": true,
           "cc_required": false,
-          "seat_minimum": 1
+          "seat_minimum": 1,
+          "notes": "Billed annually only. Replaces the retired Enterprise tier ($165)."
         },
         {
-          "plan": "Unlimited",
-          "monthly_usd": 330,
-          "annual_usd": 3600,
-          "free_trial": false,
+          "plan": "Advanced",
+          "monthly_usd": 395,
+          "annual_usd": 4740,
+          "free_trial": true,
           "cc_required": false,
-          "seat_minimum": 1
+          "seat_minimum": 1,
+          "notes": "Billed annually only. New tier, no 2026-05 equivalent."
+        },
+        {
+          "plan": "Max",
+          "monthly_usd": 550,
+          "annual_usd": 6600,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Billed annually only. Replaces the retired Unlimited tier ($330)."
         }
       ]
     },

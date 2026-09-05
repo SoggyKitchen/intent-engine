@@ -408,6 +408,15 @@ jobs:
       - name: Brand entity consistency (final pass)
         run: uv run python scripts/fix_brand_entity.py
 
+      # Ratings are recomputed from verified pricing every night, so a price
+      # change moves the score automatically instead of leaving a stale star
+      # rating on the homepage. Deterministic: same data in, same score out.
+      - name: Cost transparency scores (final pass)
+        run: |
+          uv run python scripts/compute_transparency_score.py
+          uv run python scripts/build_transparency_ratings.py
+          uv run python scripts/link_hidden_costs.py
+
       # 4z-FINAL. Rebuild the sitemap AFTER all page generators have run.
       # The earlier sitemap build (update_sitemap_hubs + update_sitemap_and_index)
       # happens before the best-of/pricing/review/etc. generators create new pages,
@@ -466,6 +475,7 @@ jobs:
             data/ctr_optimizer_report.json \
             data/pricing_history.json \
             seo/reports/dominance.md \
+            data/transparency_scores.json \
             || true
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: nightly site integrity auto-fixes [skip ci]
