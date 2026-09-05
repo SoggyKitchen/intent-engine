@@ -1,70 +1,15 @@
 {
-  "snapshot_at": 1788619264,
+  "snapshot_at": 1788619431,
   "tools_processed": 15,
   "snapshots_taken": 52,
-  "changes_detected": 6,
+  "changes_detected": 0,
   "changes_by_direction": {
     "hike": 0,
-    "drop": 5,
-    "new": 1,
+    "drop": 0,
+    "new": 0,
     "removed": 0,
     "changed": 0,
     "added": 0
   },
-  "examples": [
-    {
-      "tool": "hubspot",
-      "plan": "Sales Hub Starter",
-      "field": "annual_usd",
-      "old": "180",
-      "new": "84",
-      "direction": "drop",
-      "pct_change": -53.333333333333336
-    },
-    {
-      "tool": "hubspot",
-      "plan": "Sales Hub Professional",
-      "field": "seat_minimum",
-      "old": "5",
-      "new": "1",
-      "direction": "drop",
-      "pct_change": -80.0
-    },
-    {
-      "tool": "hubspot",
-      "plan": "Sales Hub Enterprise",
-      "field": "seat_minimum",
-      "old": "10",
-      "new": "1",
-      "direction": "drop",
-      "pct_change": -90.0
-    },
-    {
-      "tool": "ahrefs",
-      "plan": "Advanced",
-      "field": "seat_minimum",
-      "old": "3",
-      "new": "1",
-      "direction": "drop",
-      "pct_change": -66.66666666666666
-    },
-    {
-      "tool": "ahrefs",
-      "plan": "Enterprise",
-      "field": "monthly_usd",
-      "old": "null",
-      "new": "1499",
-      "direction": "new",
-      "pct_change": null
-    },
-    {
-      "tool": "ahrefs",
-      "plan": "Enterprise",
-      "field": "seat_minimum",
-      "old": "5",
-      "new": "1",
-      "direction": "drop",
-      "pct_change": -80.0
-    }
-  ]
+  "examples": []
 }
