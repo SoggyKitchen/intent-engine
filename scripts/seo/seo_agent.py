@@ -67,7 +67,7 @@ ORG_SCHEMA = {
     "url": "https://saaspare.org/",
     "logo": DEFAULT_OG_IMAGE,
     "description": "Independent B2B SaaS comparisons, pricing guides, free-trial checks, alternatives, and buyer tools.",
-    "sameAs": ["https://twitter.com/SaaSpare"],
+    "sameAs": ["https://abr.business.gov.au/ABN/View?abn=20602197525"],
 }
 
 

@@ -399,6 +399,15 @@ jobs:
         run: uv run python scripts/prune_thin_pages.py
         continue-on-error: true
 
+      # 4y-FINAL. Entity identity must be the LAST thing written to the pages.
+      # Several generators emit their own Organization/Person schema, so this
+      # runs after all of them to guarantee exactly one sameAs array site-wide.
+      # Conflicting identity claims are why brand signal measured 0 on
+      # 2026-09-01 (see scripts/seo/brand_identity.py). It self-verifies and
+      # exits non-zero if it fails to converge, so it does NOT swallow errors.
+      - name: Brand entity consistency (final pass)
+        run: uv run python scripts/fix_brand_entity.py
+
       # 4z-FINAL. Rebuild the sitemap AFTER all page generators have run.
       # The earlier sitemap build (update_sitemap_hubs + update_sitemap_and_index)
       # happens before the best-of/pricing/review/etc. generators create new pages,
@@ -406,6 +415,13 @@ jobs:
       # integrity gate every night. This final rebuild closes that gap.
       - name: Rebuild sitemap after all generators (pre-gate)
         run: uv run python scripts/update_sitemap_and_index.py
+
+      # Re-measure the one goal: overtake saaspare.com. Reporting only, never
+      # gates the build - a scoreboard that can fail a deploy is a scoreboard
+      # people delete.
+      - name: Dominance scoreboard
+        run: uv run python scripts/dominance_scoreboard.py
+        continue-on-error: true
 
       # 5. Comprehensive content QA gate (titles, descs, canonicals, JSON-LD,
       # sitemap, robots, money-page disclosure + sponsored attrs).
@@ -449,6 +465,7 @@ jobs:
             data/public_kpis.json \
             data/ctr_optimizer_report.json \
             data/pricing_history.json \
+            seo/reports/dominance.md \
             || true
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: nightly site integrity auto-fixes [skip ci]

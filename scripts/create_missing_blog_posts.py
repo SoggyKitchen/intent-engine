@@ -514,7 +514,7 @@ BLOG_TEMPLATE = '''<!DOCTYPE html>
       "name": "Smith Elly",
       "url": "https://saaspare.org/authors/smith-elly",
       "image": "https://saaspare.org/og-default.png",
-      "sameAs": ["https://x.com/SaaSpare", "https://www.linkedin.com/company/saaspare/"]
+      "sameAs": ["https://abr.business.gov.au/ABN/View?abn=20602197525"]
     }},
     "publisher": {{
       "@type": "Organization",

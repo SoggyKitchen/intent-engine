@@ -136,11 +136,7 @@ HOMEPAGE_SCHEMA_BLOCK = '''\
       "areaServed": "Worldwide",
       "knowsAbout": ["B2B SaaS", "Software Pricing", "CRM", "SEO Tools", "Dev Tools", "HR Software", "Finance Operations"],
       "sameAs": [
-        "https://www.linkedin.com/company/saaspare",
-        "https://twitter.com/saaspare",
-        "https://x.com/saaspare",
-        "https://www.producthunt.com/@saaspare",
-        "https://www.crunchbase.com/organization/saaspare"
+        "https://abr.business.gov.au/ABN/View?abn=20602197525"
       ],
       "contactPoint": {
         "@type": "ContactPoint",

@@ -28,17 +28,20 @@ SITE = {
     "email":        "hello@saaspare.org",
     "country":      "Australia",
     "niche":        "B2B SaaS comparison and pricing",
-    "pages":        "1,034",
+    # Live indexable count after the 2026-09-01 quality prune. Networks verify
+    # this; an inflated number is the fastest way to lose an application.
+    "pages":        "492",
     "verticals":    "16",
     "launch":       "April 2026",
     "gsc_impr":     "6,540 impressions (Apr 21 – May 7 2026)",
     "audience":     "Founders, operators, and procurement leads evaluating B2B software",
     "promo_methods": "Editorial reviews, comparison pages, pricing guides, free trial guides, alternatives roundups",
     "traffic_sources": "Google organic search (primary), Reddit brand mentions, direct/social",
-    "social": {
-        "twitter": "https://x.com/SaaSpare",
-        "linkedin": "https://www.linkedin.com/company/saaspare/",
-    },
+    # Only send references a reviewer can actually open. The previous LinkedIn
+    # URL returned 404. ABN is a government registry record and verifies us as
+    # a real Australian business, which is stronger than a social profile.
+    "abn": "20 602 197 525 (VON PAPEN, KAYLAN - verify at abr.business.gov.au)",
+    "social": {},
     "unique_asset": (
         "Price Intelligence Engine: weekly pricing snapshots for 15+ SaaS tools with diff logs. "
         "Original timestamped data not available elsewhere."

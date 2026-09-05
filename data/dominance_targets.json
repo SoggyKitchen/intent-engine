@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "goal": "Overtake saaspare.com on every measured axis, without fabricating anything.",
+    "baseline_date": "2026-09-01",
+    "source": "Search Atlas Site Explorer, US, both domains measured same day",
+    "review_cadence_days": 14
+  },
+  "competitor": {
+    "domain": "saaspare.com",
+    "measured": "2026-09-01",
+    "domain_rating": 0,
+    "backlinks": 20,
+    "referring_domains": 17,
+    "organic_keywords": 15,
+    "organic_traffic": 22,
+    "brand_signal": 52.5,
+    "spam_score": 0,
+    "indexed_pages_est": 42
+  },
+  "us_baseline": {
+    "domain": "saaspare.org",
+    "measured": "2026-09-01",
+    "domain_rating": 11,
+    "backlinks": 314,
+    "referring_domains": 99,
+    "organic_keywords": 0,
+    "organic_traffic": 0,
+    "brand_signal": 0,
+    "spam_score": 8,
+    "indexed_pages_est": 374
+  },
+  "us_current": {
+    "measured": null,
+    "domain_rating": null,
+    "backlinks": null,
+    "referring_domains": null,
+    "organic_keywords": null,
+    "organic_traffic": null,
+    "brand_signal": null,
+    "spam_score": null,
+    "indexed_pages_est": null
+  },
+  "notes": "us_current is filled in by hand from Search Atlas (no API). Everything in the AUTOMATED section of the scoreboard is measured from the repo and live GSC and needs no manual input."
+}

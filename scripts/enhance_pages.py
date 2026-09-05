@@ -32,10 +32,7 @@ ORG_SCHEMA = json.dumps({
         "value": "20602197525"
     },
     "sameAs": [
-        "https://www.linkedin.com/company/saaspare",
-        "https://twitter.com/saaspare",
-        "https://x.com/saaspare",
-        "https://www.crunchbase.com/organization/saaspare"
+        "https://abr.business.gov.au/ABN/View?abn=20602197525"
     ]
 }, ensure_ascii=False, indent=2)
 
