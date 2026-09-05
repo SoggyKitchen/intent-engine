@@ -6,14 +6,14 @@
     ],
     "pricing_verified_on": "2026-09-06",
     "facts_verified_on": "2026-09-06",
-    "scale": "5 criteria, 0-2 points each, 10 points total, halved to 0-5 stars",
+    "scale": "8 criteria, 0-2 points each, 16 points total, mapped to 0-5 stars",
     "authored_by": "SaaSpare editorial",
     "note": "Editorial score, not user reviews. Measures how transparent a vendor's own pricing page is with the buyer. Deterministic: recomputed from verified data, never hand-set.",
     "criteria": [
       {
         "key": "published_pricing",
         "label": "Publishes a real price",
-        "test": "Every paid tier shows a number instead of a contact-sales form."
+        "test": "Every tier shows a number instead of a contact-sales form."
       },
       {
         "key": "no_setup_fee",
@@ -31,9 +31,24 @@
         "test": "Paid tiers can be bought month to month, not annual commitment only."
       },
       {
-        "key": "try_before_buy",
-        "label": "Try before you buy",
-        "test": "A free tier, or at minimum a free trial."
+        "key": "free_tier",
+        "label": "Has a free tier",
+        "test": "A genuinely free plan you can stay on, not just a countdown trial."
+      },
+      {
+        "key": "trial_no_card",
+        "label": "Trial without a card",
+        "test": "You can try it without handing over card details first."
+      },
+      {
+        "key": "fair_annual_gap",
+        "label": "Monthly billing isn't punished",
+        "test": "The premium for paying monthly instead of yearly stays under 25%."
+      },
+      {
+        "key": "seats_at_list",
+        "label": "Extra seats at list price",
+        "test": "Adding a colleague costs the advertised per-seat price, with no surcharge."
       }
     ]
   },
@@ -49,28 +64,15 @@
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 2,
-        "try_before_buy": 2
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
       },
-      "points": 10,
-      "max_points": 10,
-      "stars": 5.0
-    },
-    {
-      "tool": "clickup",
-      "vendor": "ClickUp",
-      "category": "project-mgmt",
-      "source_url": "https://clickup.com/pricing",
-      "affiliate_slug": "clickup",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "try_before_buy": 2
-      },
-      "points": 10,
-      "max_points": 10,
-      "stars": 5.0
+      "points": 16,
+      "max_points": 16,
+      "stars": 5.0,
+      "worst_annual_gap_pct": 23
     },
     {
       "tool": "datadog",
@@ -83,11 +85,15 @@
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 2,
-        "try_before_buy": 2
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
       },
-      "points": 10,
-      "max_points": 10,
-      "stars": 5.0
+      "points": 16,
+      "max_points": 16,
+      "stars": 5.0,
+      "worst_annual_gap_pct": 0
     },
     {
       "tool": "linear",
@@ -100,11 +106,15 @@
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 2,
-        "try_before_buy": 2
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
       },
-      "points": 10,
-      "max_points": 10,
-      "stars": 5.0
+      "points": 16,
+      "max_points": 16,
+      "stars": 5.0,
+      "worst_annual_gap_pct": 0
     },
     {
       "tool": "stripe",
@@ -117,11 +127,15 @@
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 2,
-        "try_before_buy": 2
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
       },
-      "points": 10,
-      "max_points": 10,
-      "stars": 5.0
+      "points": 16,
+      "max_points": 16,
+      "stars": 5.0,
+      "worst_annual_gap_pct": 0
     },
     {
       "tool": "1password",
@@ -134,28 +148,36 @@
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 2,
-        "try_before_buy": 1
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
       },
-      "points": 9,
-      "max_points": 10,
-      "stars": 4.5
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
     },
     {
-      "tool": "monday-com",
-      "vendor": "Monday.com",
+      "tool": "clickup",
+      "vendor": "ClickUp",
       "category": "project-mgmt",
-      "source_url": "https://monday.com/pricing/",
-      "affiliate_slug": "monday-com",
+      "source_url": "https://clickup.com/pricing",
+      "affiliate_slug": "clickup",
       "criteria": {
         "published_pricing": 2,
         "no_setup_fee": 2,
-        "single_seat": 1,
+        "single_seat": 2,
         "monthly_billing": 2,
-        "try_before_buy": 2
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2
       },
-      "points": 9,
-      "max_points": 10,
-      "stars": 4.5
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 58
     },
     {
       "tool": "notion",
@@ -168,79 +190,36 @@
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 2,
-        "try_before_buy": 2
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
       },
-      "points": 9,
-      "max_points": 10,
-      "stars": 4.5
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 20
     },
     {
-      "tool": "pipedrive",
-      "vendor": "Pipedrive",
-      "category": "crm",
-      "source_url": "https://www.pipedrive.com/en/pricing",
-      "affiliate_slug": "pipedrive",
+      "tool": "monday-com",
+      "vendor": "Monday.com",
+      "category": "project-mgmt",
+      "source_url": "https://monday.com/pricing/",
+      "affiliate_slug": "monday-com",
       "criteria": {
         "published_pricing": 2,
         "no_setup_fee": 2,
-        "single_seat": 2,
+        "single_seat": 1,
         "monthly_billing": 2,
-        "try_before_buy": 1
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2
       },
-      "points": 9,
-      "max_points": 10,
-      "stars": 4.5
-    },
-    {
-      "tool": "semrush",
-      "vendor": "Semrush",
-      "category": "seo",
-      "source_url": "https://www.semrush.com/pricing/",
-      "affiliate_slug": "semrush",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "try_before_buy": 1
-      },
-      "points": 9,
-      "max_points": 10,
-      "stars": 4.5
-    },
-    {
-      "tool": "shopify",
-      "vendor": "Shopify",
-      "category": "ecommerce",
-      "source_url": "https://www.shopify.com/pricing",
-      "affiliate_slug": "shopify",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "try_before_buy": 1
-      },
-      "points": 9,
-      "max_points": 10,
-      "stars": 4.5
-    },
-    {
-      "tool": "hubspot",
-      "vendor": "HubSpot",
-      "category": "crm",
-      "source_url": "https://www.hubspot.com/pricing/sales",
-      "affiliate_slug": "hubspot",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 0,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "try_before_buy": 2
-      },
-      "points": 8,
-      "max_points": 10,
-      "stars": 4.0
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 33
     },
     {
       "tool": "salesforce",
@@ -253,11 +232,78 @@
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 1,
-        "try_before_buy": 1
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
       },
-      "points": 8,
-      "max_points": 10,
-      "stars": 4.0
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "shopify",
+      "vendor": "Shopify",
+      "category": "ecommerce",
+      "source_url": "https://www.shopify.com/pricing",
+      "affiliate_slug": "shopify",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 34
+    },
+    {
+      "tool": "pipedrive",
+      "vendor": "Pipedrive",
+      "category": "crm",
+      "source_url": "https://www.pipedrive.com/en/pricing",
+      "affiliate_slug": "pipedrive",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 0,
+        "seats_at_list": 2
+      },
+      "points": 13,
+      "max_points": 16,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 71
+    },
+    {
+      "tool": "semrush",
+      "vendor": "Semrush",
+      "category": "seo",
+      "source_url": "https://www.semrush.com/pricing/",
+      "affiliate_slug": "semrush",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 1,
+        "trial_no_card": 0,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 13,
+      "max_points": 16,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 20
     },
     {
       "tool": "tresorit",
@@ -270,11 +316,36 @@
         "no_setup_fee": 2,
         "single_seat": 1,
         "monthly_billing": 2,
-        "try_before_buy": 1
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2
       },
-      "points": 8,
-      "max_points": 10,
-      "stars": 4.0
+      "points": 13,
+      "max_points": 16,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 25
+    },
+    {
+      "tool": "hubspot",
+      "vendor": "HubSpot",
+      "category": "crm",
+      "source_url": "https://www.hubspot.com/pricing/sales",
+      "affiliate_slug": "hubspot",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 0,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 0,
+        "seats_at_list": 2
+      },
+      "points": 12,
+      "max_points": 16,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 186
     },
     {
       "tool": "ahrefs",
@@ -287,11 +358,15 @@
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 1,
-        "try_before_buy": 0
+        "free_tier": 0,
+        "trial_no_card": 0,
+        "fair_annual_gap": 2,
+        "seats_at_list": 0
       },
-      "points": 7,
-      "max_points": 10,
-      "stars": 3.5
+      "points": 9,
+      "max_points": 16,
+      "stars": 3.0,
+      "worst_annual_gap_pct": 20
     }
   ]
 }

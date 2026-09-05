@@ -38,29 +38,38 @@ OUT = ROOT / "data" / "transparency_scores.json"
 
 CRITERIA = [
     ("published_pricing", "Publishes a real price",
-     "Every paid tier shows a number instead of a contact-sales form."),
+     "Every tier shows a number instead of a contact-sales form."),
     ("no_setup_fee", "No mandatory setup fee",
      "No required one-time onboarding or implementation charge."),
     ("single_seat", "Will sell you one seat",
      "No minimum seat count standing between you and the advertised price."),
     ("monthly_billing", "Lets you pay monthly",
      "Paid tiers can be bought month to month, not annual commitment only."),
-    ("try_before_buy", "Try before you buy",
-     "A free tier, or at minimum a free trial."),
+    ("free_tier", "Has a free tier",
+     "A genuinely free plan you can stay on, not just a countdown trial."),
+    ("trial_no_card", "Trial without a card",
+     "You can try it without handing over card details first."),
+    ("fair_annual_gap", "Monthly billing isn't punished",
+     "The premium for paying monthly instead of yearly stays under 25%."),
+    ("seats_at_list", "Extra seats at list price",
+     "Adding a colleague costs the advertised per-seat price, with no surcharge."),
 ]
-
 
 def load():
     seed = json.loads(SEED.read_text(encoding="utf-8"))
     hidden = json.loads(HIDDEN.read_text(encoding="utf-8"))
-    fees = {r["vendor"].lower() for r in hidden["onboarding_fees"]}
-    annual_only = {r["vendor"].lower() for r in hidden["annual_only"]}
-    return seed, fees, annual_only
+    return seed, {
+        "fees": {r["vendor"].lower() for r in hidden["onboarding_fees"]},
+        "annual_only": {r["vendor"].lower() for r in hidden["annual_only"]},
+        "seat_surcharge": {r["vendor"].lower() for r in hidden["extra_seat_costs"]},
+    }
 
 
-def score_tool(tool, fee_vendors, annual_only_vendors):
+def score_tool(tool, flags):
     plans = tool["plans"]
     vendor = tool["vendor_name"].lower()
+    fee_vendors = flags["fees"]
+    annual_only_vendors = flags["annual_only"]
     paid = [p for p in plans
             if (p.get("monthly_usd") or 0) > 0 or (p.get("annual_usd") or 0) > 0]
     quote_only = [p for p in plans
@@ -92,10 +101,32 @@ def score_tool(tool, fee_vendors, annual_only_vendors):
     else:
         s["monthly_billing"] = 2
 
-    # 5. Free tier beats free trial beats nothing.
+    # 5. A free tier you can stay on is worth more than a countdown trial.
     has_free = any(p.get("monthly_usd") == 0 for p in plans)
     has_trial = any(p.get("free_trial") for p in plans)
-    s["try_before_buy"] = 2 if has_free else (1 if has_trial else 0)
+    s["free_tier"] = 2 if has_free else (1 if has_trial else 0)
+
+    # 6. Card-up-front on a "free" trial is the oldest dark pattern there is.
+    trials = [p for p in plans if p.get("free_trial")]
+    if not trials and not has_free:
+        s["trial_no_card"] = 0
+    elif any(p.get("cc_required") for p in trials):
+        s["trial_no_card"] = 0 if all(p.get("cc_required") for p in trials) else 1
+    else:
+        s["trial_no_card"] = 2
+
+    # 7. How hard monthly buyers are punished. A discount for committing is
+    #    fair; charging 186% more to stay flexible is a penalty, not a discount.
+    gaps = []
+    for p in paid:
+        m, a = p.get("monthly_usd"), p.get("annual_usd")
+        if m and a and a > 0:
+            gaps.append((m * 12 - a) / a)
+    worst = max(gaps) if gaps else 0
+    s["fair_annual_gap"] = 2 if worst <= 0.25 else (1 if worst <= 0.60 else 0)
+
+    # 8. Per-seat surcharges on top of the plan price.
+    s["seats_at_list"] = 0 if vendor in flags["seat_surcharge"] else 2
 
     total = sum(s.values())
     return {
@@ -107,16 +138,16 @@ def score_tool(tool, fee_vendors, annual_only_vendors):
         "criteria": s,
         "points": total,
         "max_points": len(CRITERIA) * 2,
-        # Half-star resolution, which is as fine as a 10-point scale honestly
-        # supports. Reporting 4.37 stars off ten integer points is false
-        # precision.
-        "stars": round(total / 2 * 2) / 2,
+        # Half-star resolution. Reporting 4.37 stars off sixteen integer
+        # points would be false precision.
+        "stars": round(total / (len(CRITERIA) * 2) * 5 * 2) / 2,
+        "worst_annual_gap_pct": round(worst * 100),
     }
 
 
 def main():
-    seed, fees, annual_only = load()
-    scores = [score_tool(t, fees, annual_only) for t in seed["tools"]]
+    seed, flags = load()
+    scores = [score_tool(t, flags) for t in seed["tools"]]
     scores.sort(key=lambda x: (-x["points"], x["vendor"]))
 
     payload = {
@@ -124,7 +155,7 @@ def main():
             "generated_from": ["data/pricing_seed.json", "data/hidden_costs.json"],
             "pricing_verified_on": seed["_meta"]["snapshot_date"],
             "facts_verified_on": json.loads(HIDDEN.read_text(encoding="utf-8"))["_meta"]["verified_on"],
-            "scale": "5 criteria, 0-2 points each, 10 points total, halved to 0-5 stars",
+            "scale": "8 criteria, 0-2 points each, 16 points total, mapped to 0-5 stars",
             "authored_by": "SaaSpare editorial",
             "note": ("Editorial score, not user reviews. Measures how transparent a "
                      "vendor's own pricing page is with the buyer. Deterministic: "

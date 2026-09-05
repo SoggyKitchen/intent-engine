@@ -1,0 +1,102 @@
+{
+  "_meta": {
+    "author": "Kaylan von Papen",
+    "written_on": "2026-09-06",
+    "scope": "Pricing and terms only. These verdicts judge how a vendor sells, not how the software performs. We have not run usability testing and do not pretend to.",
+    "rule": "Every claim traces to data/pricing_seed.json or data/hidden_costs.json, both read off vendor pricing pages. No invented usage experience, no 'we tested' language.",
+    "hand_written": true,
+    "why_hand_written": "Template-generated verdicts are the exact thin-content pattern that got 1,053 pages noindexed. Fifteen tools is small enough to write properly."
+  },
+  "verdicts": {
+    "asana": {
+      "headline": "The pricing page does everything right",
+      "body": "Free for up to ten people, then $13.49 a seat. No minimum, no setup fee, no card to start, and the annual discount is a modest 23% rather than a penalty for staying flexible. There is nothing hidden here, which is rarer than it should be.",
+      "best_for": "Teams who want to grow into a paid plan on their own schedule.",
+      "watch_for": "The jump from Starter to Advanced is more than double, at $30.49 a seat."
+    },
+    "datadog": {
+      "headline": "Enterprise monitoring with a genuinely honest price page",
+      "body": "A free tier, $15 a seat for Pro, $23 for Enterprise, and the annual price is exactly twelve times the monthly. No commitment premium at all. For a category that usually hides behind 'contact sales', publishing every number is a real choice.",
+      "best_for": "Anyone who wants to know the bill before talking to a salesperson.",
+      "watch_for": "Host and volume-based charges sit outside per-seat pricing. The seat price is not the whole bill."
+    },
+    "linear": {
+      "headline": "The cleanest pricing in the set",
+      "body": "Free up to 250 issues and ten users, $8 a seat for Basic, $14 for Business. Annual costs exactly twelve monthlies, so there is no penalty for month-to-month. Three plans, three numbers, no asterisks.",
+      "best_for": "Small engineering teams that want to start free and pay monthly.",
+      "watch_for": "The free tier's 250-issue ceiling arrives faster than you expect."
+    },
+    "stripe": {
+      "headline": "No subscription at all, which sidesteps every trap here",
+      "body": "There is no monthly fee. You pay 2.9% plus 30 cents per successful card charge. That scores full marks on our rubric almost by definition, because there is no seat, no tier and no commitment to hide anything inside.",
+      "best_for": "Anyone who would rather pay per transaction than per month.",
+      "watch_for": "Percentage pricing is not free pricing. At volume the effective cost can exceed a flat fee, and our rubric does not measure that."
+    },
+    "1password": {
+      "headline": "Honest pricing, but no free tier to fall back on",
+      "body": "$2.99 for an individual, $7.99 a seat for Business, annual priced at exactly twelve months. No minimum, no card for the trial, no surcharges. The one point it drops is the absence of a permanently free plan, so eventually you pay.",
+      "best_for": "Teams who want a straight per-seat price with no commitment games.",
+      "watch_for": "The Teams Starter Pack is a flat $19.95 for up to ten people, which undercuts per-seat Business for small teams. It is easy to miss."
+    },
+    "clickup": {
+      "headline": "Free forever is real, but monthly billing costs you",
+      "body": "The free plan is genuinely usable and Unlimited is $10 a seat. The catch is the annual gap: Business is $19 monthly but works out at $12 a seat on the annual plan, so paying month to month costs 58% more. That is a commitment premium, not a discount.",
+      "best_for": "Teams confident enough to commit to a year up front.",
+      "watch_for": "Budget on the monthly rate if you might leave. The advertised price is usually the annual one."
+    },
+    "notion": {
+      "headline": "Transparent until you reach Enterprise",
+      "body": "Free tier, $12 a seat for Plus, $18 for Business, and only a 20% annual gap. All good. Then Enterprise is quote-only, which is the single point it drops. One hidden tier in an otherwise fully published range.",
+      "best_for": "Teams who will live in the published tiers and never need a quote.",
+      "watch_for": "If Enterprise is where you are heading, budget blind. There is no public number."
+    },
+    "monday-com": {
+      "headline": "The advertised price is never the price you pay",
+      "body": "Basic reads as $14 a seat. You cannot buy fewer than three, so the real floor is $42 a month. Monday.com states the minimum plainly on the page, which is more than some do, but the headline number is still for a purchase you are not allowed to make.",
+      "best_for": "Teams of three or more, where the minimum costs you nothing.",
+      "watch_for": "Solo users and pairs. You will pay for a seat you do not use."
+    },
+    "salesforce": {
+      "headline": "Prices published, but only one plan can be paid monthly",
+      "body": "Starter Suite at $25 is billed monthly or annually. Everything above it, from Pro Suite at $100 through to Max at $550, is billed annually only. That $100 a seat is really $1,200 a seat, due up front. The number on the page is a monthly rate for an annual product.",
+      "best_for": "Buyers with the cash and the certainty to commit for a year.",
+      "watch_for": "The tier names changed in 2026. Enterprise and Unlimited are gone, replaced by Core, Advanced and Max at higher prices."
+    },
+    "shopify": {
+      "headline": "Clear tiers, steep climb, meaningful annual gap",
+      "body": "$39 for Basic, $105 for Shopify, $399 for Advanced, all published with no minimum and no setup fee. Monthly billing costs 34% more than annual, which is on the punishing side of a discount without being outrageous.",
+      "best_for": "Merchants who know which tier they need and will stay a year.",
+      "watch_for": "Transaction fees sit on top of the subscription and vary by payment method. The plan price is not the total."
+    },
+    "pipedrive": {
+      "headline": "Straightforward CRM pricing with one sharp catch",
+      "body": "Five published tiers from $24 to $129, no minimum, no setup fee, trial without a card. The problem is the annual gap: Essential is $24 monthly but $14 a seat annually, so staying flexible costs 71% more. That is the widest gap here after HubSpot.",
+      "best_for": "Teams committing annually, where the effective price is genuinely competitive.",
+      "watch_for": "No free tier. Once the trial ends you are paying."
+    },
+    "semrush": {
+      "headline": "Priced honestly, but the trial wants your card",
+      "body": "Pro at $139.95, Guru at $249.95, Business at $499.95, all published, no minimum, and annual pricing that does not punish monthly buyers. The point it loses is the card requirement on the seven-day trial, which turns a trial into a subscription you have to remember to cancel.",
+      "best_for": "Buyers who were going to pay anyway and want the numbers up front.",
+      "watch_for": "Diarise the trial end date. Card-up-front trials bill by default."
+    },
+    "tresorit": {
+      "headline": "Solid personal pricing, a three-seat floor for business",
+      "body": "Personal plans at $11.99 and $19.99 are clean. Business Standard reads as $14.50 a seat but requires three, so the real entry point is $43.50 a month. No free tier either, so there is no way to sit still without paying.",
+      "best_for": "Individuals, or business teams already at three or more people.",
+      "watch_for": "The seat minimum, and a 25% premium for paying monthly."
+    },
+    "hubspot": {
+      "headline": "The published price is less than half the first-year cost",
+      "body": "Sales Hub Professional advertises $100 a seat. Onboarding is a required $1,500 on top, so year one for one seat is $2,700 rather than $1,200. Enterprise onboarding is $3,500. Starter has the widest monthly penalty we found anywhere: $7 a seat annually against $20 monthly, so paying monthly costs 186% more.",
+      "best_for": "Buyers on the genuinely free tools, or committing annually with the onboarding fee already budgeted.",
+      "watch_for": "The onboarding fee. It is disclosed, but it is one line under a very large price."
+    },
+    "ahrefs": {
+      "headline": "Lowest score here, and not because it is expensive",
+      "body": "No free tier and no trial, so there is no way to evaluate it without paying. Each plan includes exactly one user and extra seats cost $40 to $80 a month on top. Enterprise requires an annual commitment at $14,990. Every one of those is a published, honest fact, and together they make it the hardest tool here to try before you buy.",
+      "best_for": "Solo operators who already know they want it.",
+      "watch_for": "Team costs. Three users on Advanced is $449 plus two surcharged seats, not $449."
+    }
+  }
+}

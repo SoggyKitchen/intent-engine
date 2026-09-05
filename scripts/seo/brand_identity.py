@@ -32,8 +32,19 @@ PERSON_ID = "https://saaspare.org/authors/kaylan-von-papen#person"
 ABN = "20602197525"
 ABN_LOOKUP = f"https://abr.business.gov.au/ABN/View?abn={ABN}"
 
+X_PROFILE = "https://x.com/saaspare"
+
 # VERIFIED references only. Do not add an entry without a passing check.
-ORG_SAME_AS = [ABN_LOOKUP]
+#
+# x.com/saaspare: ownership confirmed by Kaylan 2026-09-06. X returns HTTP 402
+# to automated fetches so it cannot be machine-verified, and saaspare.com also
+# claims this handle in their schema - which makes publishing it a correction,
+# not a risk, since only one of us actually holds it.
+#
+# LinkedIn stays OUT. The company page was created but the admin account was
+# banned, so we cannot demonstrate control of the URL. A sameAs we cannot stand
+# behind is what caused this problem in the first place.
+ORG_SAME_AS = [X_PROFILE, ABN_LOOKUP]
 PERSON_SAME_AS = [ABN_LOOKUP]
 
 ORG_NAME = "SaaSpare"

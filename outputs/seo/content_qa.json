@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T15:21:03.187711+00:00",
+  "generated_at": "2026-09-05T15:37:12.068756+00:00",
   "stats": {
     "sitemap_urls": 518,
     "sitemap_with_lastmod": 518,
@@ -12,22 +12,22 @@
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/templates/index.html: 1 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/salesforce-pricing-history-2026.html: 11 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/shopify-pricing-history-2026.html: 9 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/saas-buyer-signals-2026.html: 7 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/semrush-pricing-history-2026.html: 12 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/ahrefs-pricing-history-2026.html: 11 em-dash(es) — run scripts/humanize_text.py",
     "site/pages/best-ecommerce-platforms-2026.html: 1 em-dash(es) — run scripts/humanize_text.py",
     "site/pages/best-vpn-australia-2026.html: 1 em-dash(es) — run scripts/humanize_text.py",
     "site/pages/clickup-pricing-history-2026.html: 15 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/nordpass-vs-bitwarden-which-is-better-in-2026.html: 1 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/ahrefs-pricing-history-2026.html: 11 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/saas-pricing-changes.html: 8 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/monday-com-pricing-history-2026.html: 10 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/semrush-vs-similarweb-which-is-better-in-2026.html: 1 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/saas-pricing-transparency-scores-2026.html: money page missing affiliate disclosure mention",
     "site/pages/hubspot-pricing-history-2026.html: 9 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step.html: /go/ link without rel attribute: /go/sucuri"
+    "site/pages/monday-com-pricing-history-2026.html: 10 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/nordpass-vs-bitwarden-which-is-better-in-2026.html: 1 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/saas-buyer-signals-2026.html: 7 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/saas-pricing-changes.html: 8 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/saas-pricing-transparency-scores-2026.html: money page missing affiliate disclosure mention",
+    "site/pages/salesforce-pricing-history-2026.html: 11 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/semrush-pricing-history-2026.html: 12 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/semrush-vs-similarweb-which-is-better-in-2026.html: 1 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/shopify-pricing-history-2026.html: 9 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step.html: /go/ link without rel attribute: /go/sucuri",
+    "site/templates/index.html: 1 em-dash(es) — run scripts/humanize_text.py"
   ],
   "soft_issues_total": 16
 }
