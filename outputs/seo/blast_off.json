@@ -1,13 +1,19 @@
 {
   "current_month": "September 2026",
   "today": "2026-09-06",
-  "titles_rewritten": 0,
-  "descs_rewritten": 12,
-  "dates_refreshed": 0,
+  "titles_rewritten": 1,
+  "descs_rewritten": 13,
+  "dates_refreshed": 1,
   "answers_added": 8,
-  "files_changed": 12,
-  "files_scanned": 1545,
-  "title_examples": [],
+  "files_changed": 15,
+  "files_scanned": 1571,
+  "title_examples": [
+    {
+      "file": "semrush-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Semrush Free Trial 2026: Get Started Step-by-Step | SaaSpare",
+      "after": "Semrush Free Trial 2026: How to Get the Full September 2026 Offer"
+    }
+  ],
   "desc_examples": [
     {
       "file": "ahrefs-pricing-history-2026.html",
@@ -16,13 +22,18 @@
     },
     {
       "file": "best-ecommerce-platforms-2026.html",
-      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated September 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth paying for.",
+      "after": "Updated September 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth\u2026"
+    },
+    {
+      "file": "best-seo-tools-for-small-business-in-2026-ranked-reviewed.html",
+      "before": "Find the best SEO tools for small business in 2026. SaaSpare ranks and reviews affordable, effective tools to boost your organic traffic.",
+      "after": "Updated September 2026. Find the best SEO tools for small business in 2026. SaaSpare ranks and reviews affordable, effective tools to boost your organic traffic\u2026"
     },
     {
       "file": "best-vpn-australia-2026.html",
-      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth paying for.",
-      "after": "Updated September 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here's what's actually worth\u2026"
+      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth paying for.",
+      "after": "Updated September 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth paying\u2026"
     },
     {
       "file": "clickup-pricing-history-2026.html",
@@ -33,15 +44,10 @@
       "file": "hubspot-pricing-history-2026.html",
       "before": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 September 2026.",
       "after": "Updated September 2026. HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
-    },
-    {
-      "file": "monday-com-pricing-history-2026.html",
-      "before": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 September 2026.",
-      "after": "Updated September 2026. Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer\u2026"
     }
   ],
   "indexnow": {
-    "submitted": 12,
+    "submitted": 15,
     "status": 200
   }
 }
