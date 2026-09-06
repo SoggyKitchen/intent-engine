@@ -99,7 +99,7 @@
     }
   },
   {
-    "path": "/pages/best-email-autoresponder-software-2026",
+    "path": "/pages/best-landing-page-builder-2026",
     "score": {
       "inbound": [],
       "outbound": [
@@ -108,25 +108,25 @@
         "/affiliate-disclosure",
         "/authors/kaylan-von-papen",
         "/deal-radar",
-        "/go/activecampaign-trial",
-        "/go/aweber",
+        "/go/elementor",
         "/go/getresponse",
+        "/go/hubspot-crm",
         "/pages/",
+        "/pages/7-best-hubspot-crm-alternatives-in-2026-free-paid",
+        "/pages/best-devtools-for-code-security-logging-developer-productivity-in-2025",
         "/pages/best-email-marketing-software-2026",
-        "/pages/does-getresponse-have-a-free-plan-2026-full-breakdown",
+        "/pages/best-privacy-vpn-2026",
+        "/pages/does-cloudflare-access-have-a-free-plan-2026-full-breakdown",
+        "/pages/elementor-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/elementor-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/elementor-vs-webflow-which-is-better-in-2026",
+        "/pages/free-trial-database",
         "/pages/getresponse-pricing-2026-plans-costs-what-you-actually-pay",
         "/pages/getresponse-review-2026-is-it-worth-it-honest-verdict",
-        "/pages/getresponse-vs-activecampaign-which-is-better-in-2026",
-        "/pages/getresponse-vs-aweber-which-is-better-in-2026",
-        "/pages/getresponse-vs-brevo-which-is-better-in-2026",
-        "/pages/getresponse-vs-convertkit-which-is-better-in-2026",
         "/pages/getresponse-vs-mailchimp-which-is-better-in-2026",
-        "/pages/getresponse-vs-mailerlite-which-is-better-in-2026",
+        "/pages/hubspot-review-2026-is-it-worth-it-honest-verdict",
         "/roi",
-        "/shortlist",
-        "https://saaspare.org/affiliate-disclosure",
-        "https://saaspare.org/contact",
-        "https://saaspare.org/methodology"
+        "/shortlist"
       ]
     }
   },
@@ -231,6 +231,41 @@
         "/privacy",
         "/roi",
         "/shortlist"
+      ]
+    }
+  },
+  {
+    "path": "/pages/protonvpn-pricing-history-2026",
+    "score": {
+      "inbound": [],
+      "outbound": [
+        "/",
+        "/about",
+        "/affiliate-disclosure",
+        "/authors/kaylan-von-papen",
+        "/contact",
+        "/deal-radar",
+        "/editorial",
+        "/go/protonvpn",
+        "/newsletter",
+        "/pages/",
+        "/pages/7-best-okta-alternatives-in-2026-free-paid",
+        "/pages/7-best-power-bi-alternatives-in-2026-free-paid",
+        "/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/best-saas-analytics-tools-for-business-in-2025",
+        "/pages/does-protonmail-have-a-free-plan-2026-full-breakdown",
+        "/pages/nordvpn-vs-protonvpn-which-is-better-in-2026",
+        "/pages/protonvpn-pricing-2026-plans-costs-what-you-actually-pay",
+        "/pages/protonvpn-review-2026-is-it-worth-it-honest-verdict",
+        "/pages/protonvpn-vs-expressvpn-which-is-better-in-2026",
+        "/pages/protonvpn-vs-mullvad-which-is-better-in-2026",
+        "/pages/protonvpn-vs-nordvpn-which-is-better-in-2026",
+        "/pages/protonvpn-vs-surfshark-which-is-better-in-2026",
+        "/pages/saas-hidden-costs-2026",
+        "/privacy",
+        "/roi",
+        "/shortlist",
+        "/terms"
       ]
     }
   },
