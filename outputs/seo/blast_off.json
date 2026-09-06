@@ -3,15 +3,15 @@
   "today": "2026-09-06",
   "titles_rewritten": 0,
   "descs_rewritten": 12,
-  "dates_refreshed": 346,
+  "dates_refreshed": 0,
   "answers_added": 8,
-  "files_changed": 354,
+  "files_changed": 12,
   "files_scanned": 1545,
   "title_examples": [],
   "desc_examples": [
     {
       "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 5 September 2026.",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 September 2026.",
       "after": "Updated September 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
@@ -26,22 +26,22 @@
     },
     {
       "file": "clickup-pricing-history-2026.html",
-      "before": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 5 September 2026.",
+      "before": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 September 2026.",
       "after": "Updated September 2026. ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
       "file": "hubspot-pricing-history-2026.html",
-      "before": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 5 September 2026.",
+      "before": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 September 2026.",
       "after": "Updated September 2026. HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
       "file": "monday-com-pricing-history-2026.html",
-      "before": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 5 September 2026.",
+      "before": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 6 September 2026.",
       "after": "Updated September 2026. Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer\u2026"
     }
   ],
   "indexnow": {
-    "submitted": 200,
+    "submitted": 12,
     "status": 200
   }
 }
