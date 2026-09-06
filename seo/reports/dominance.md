@@ -40,9 +40,9 @@ that people who already know the domain can find it.
 
 ## Corpus
 
-- Total pages: 1547
+- Total pages: 1573
 - Indexable: 494
-- Noindexed (pruned 2026-09-01): 1053
+- Noindexed (pruned 2026-09-01): 1079
 - Sitemap URLs: 518
 - Distinct `sameAs` arrays: 1
 

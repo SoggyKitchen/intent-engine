@@ -1,15 +1,88 @@
 {
-  "snapshot_at": 1788682386,
-  "tools_processed": 15,
-  "snapshots_taken": 53,
-  "changes_detected": 0,
+  "snapshot_at": 1788683325,
+  "tools_processed": 41,
+  "snapshots_taken": 155,
+  "changes_detected": 102,
   "changes_by_direction": {
     "hike": 0,
     "drop": 0,
-    "new": 0,
+    "new": 102,
     "removed": 0,
     "changed": 0,
     "added": 0
   },
-  "examples": []
+  "examples": [
+    {
+      "tool": "slack",
+      "plan": "Free",
+      "field": "plan",
+      "old": null,
+      "new": "{\"tool\": \"slack\", \"plan\": \"Free\", \"monthly_usd\": 0, \"annual_usd\": 0, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://slack.com/pricing\", \"notes\": \"90-day message history, up to 10 apps. Verified 2026-09-06.\"}",
+      "direction": "new",
+      "pct_change": null
+    },
+    {
+      "tool": "slack",
+      "plan": "Pro",
+      "field": "plan",
+      "old": null,
+      "new": "{\"tool\": \"slack\", \"plan\": \"Pro\", \"monthly_usd\": 8.75, \"annual_usd\": 87, \"seat_minimum\": 1, \"free_trial\": 0, \"cc_required\": 1, \"source_url\": \"https://slack.com/pricing\", \"notes\": \"$7.25/seat/mo billed annually. Verified 2026-09-06.\"}",
+      "direction": "new",
+      "pct_change": null
+    },
+    {
+      "tool": "slack",
+      "plan": "Business+",
+      "field": "plan",
+      "old": null,
+      "new": "{\"tool\": \"slack\", \"plan\": \"Business+\", \"monthly_usd\": 18, \"annual_usd\": 180, \"seat_minimum\": 1, \"free_trial\": 0, \"cc_required\": 1, \"source_url\": \"https://slack.com/pricing\", \"notes\": \"$15/seat/mo billed annually. Verified 2026-09-06.\"}",
+      "direction": "new",
+      "pct_change": null
+    },
+    {
+      "tool": "slack",
+      "plan": "Enterprise+",
+      "field": "plan",
+      "old": null,
+      "new": "{\"tool\": \"slack\", \"plan\": \"Enterprise+\", \"monthly_usd\": null, \"annual_usd\": null, \"seat_minimum\": 1, \"free_trial\": 0, \"cc_required\": 1, \"source_url\": \"https://slack.com/pricing\", \"notes\": \"Quote only. Verified 2026-09-06.\"}",
+      "direction": "new",
+      "pct_change": null
+    },
+    {
+      "tool": "airtable",
+      "plan": "Free",
+      "field": "plan",
+      "old": null,
+      "new": "{\"tool\": \"airtable\", \"plan\": \"Free\", \"monthly_usd\": 0, \"annual_usd\": 0, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 0, \"source_url\": \"https://airtable.com/pricing\", \"notes\": \"Verified 2026-09-06.\"}",
+      "direction": "new",
+      "pct_change": null
+    },
+    {
+      "tool": "airtable",
+      "plan": "Team",
+      "field": "plan",
+      "old": null,
+      "new": "{\"tool\": \"airtable\", \"plan\": \"Team\", \"monthly_usd\": null, \"annual_usd\": 240, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 1, \"source_url\": \"https://airtable.com/pricing\", \"notes\": \"$20/seat/mo billed annually; no monthly rate published. Verified 2026-09-06.\"}",
+      "direction": "new",
+      "pct_change": null
+    },
+    {
+      "tool": "airtable",
+      "plan": "Business",
+      "field": "plan",
+      "old": null,
+      "new": "{\"tool\": \"airtable\", \"plan\": \"Business\", \"monthly_usd\": null, \"annual_usd\": 540, \"seat_minimum\": 1, \"free_trial\": 1, \"cc_required\": 1, \"source_url\": \"https://airtable.com/pricing\", \"notes\": \"$45/seat/mo billed annually; no monthly rate published. Verified 2026-09-06.\"}",
+      "direction": "new",
+      "pct_change": null
+    },
+    {
+      "tool": "airtable",
+      "plan": "Enterprise Scale",
+      "field": "plan",
+      "old": null,
+      "new": "{\"tool\": \"airtable\", \"plan\": \"Enterprise Scale\", \"monthly_usd\": null, \"annual_usd\": null, \"seat_minimum\": 1, \"free_trial\": 0, \"cc_required\": 1, \"source_url\": \"https://airtable.com/pricing\", \"notes\": \"Quote only. Verified 2026-09-06.\"}",
+      "direction": "new",
+      "pct_change": null
+    }
+  ]
 }
