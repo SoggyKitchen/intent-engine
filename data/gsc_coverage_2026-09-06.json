@@ -1,0 +1,577 @@
+{
+  "_meta": {
+    "exported": "2026-09-06",
+    "source": "GSC Coverage export, property sc-domain:saaspare.org",
+    "covers": "2026-06-08 to 2026-08-28 (ENDS BEFORE the 2026-09-01 prune, so prune effects are NOT visible here)",
+    "headline": "Indexed collapsed 1,196 -> 198 in a SINGLE STEP on 2026-06-13, then froze at 187 from 2026-07-11 onward. The 2026-09-01 prune did not cause this and has had no time to show.",
+    "crawl_stats_2026-09-06": {
+      "total_requests_90d": 2250,
+      "requests_per_day": 25,
+      "avg_response_ms": 152,
+      "by_response": {
+        "ok_200": "75%",
+        "not_found_404": "11%",
+        "moved_301": "6%",
+        "dns_error": "5%",
+        "moved_302": "3%"
+      },
+      "by_purpose": {
+        "refresh": "83%",
+        "discovery": "17%"
+      },
+      "by_filetype": {
+        "html": "50%"
+      },
+      "hosts": {
+        "saaspare.org": 2130,
+        "www.saaspare.org": 116
+      },
+      "implication": "~12.5 HTML crawls/day against 1,547 pages = ~124 days for Google to see every page once. This is why only 40 of 1,053 noindexed pages have registered.",
+      "dns_error_cause": "www.saaspare.org has NO DNS record (NXDOMAIN). We reference www nowhere, but the domain property makes Google probe it, and every attempt fails. DNS failures make Googlebot throttle the whole host."
+    }
+  },
+  "daily": [
+    {
+      "date": "2026-06-08",
+      "not_indexed": 1135.0,
+      "indexed": 1168.0,
+      "impressions": 29.0
+    },
+    {
+      "date": "2026-06-09",
+      "not_indexed": 1156.0,
+      "indexed": 1196.0,
+      "impressions": 10.0
+    },
+    {
+      "date": "2026-06-10",
+      "not_indexed": 1156.0,
+      "indexed": 1196.0,
+      "impressions": 15.0
+    },
+    {
+      "date": "2026-06-11",
+      "not_indexed": 1156.0,
+      "indexed": 1196.0,
+      "impressions": 11.0
+    },
+    {
+      "date": "2026-06-12",
+      "not_indexed": 1156.0,
+      "indexed": 1196.0,
+      "impressions": 27.0
+    },
+    {
+      "date": "2026-06-13",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 18.0
+    },
+    {
+      "date": "2026-06-14",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 16.0
+    },
+    {
+      "date": "2026-06-15",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 8.0
+    },
+    {
+      "date": "2026-06-16",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 24.0
+    },
+    {
+      "date": "2026-06-17",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 13.0
+    },
+    {
+      "date": "2026-06-18",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 13.0
+    },
+    {
+      "date": "2026-06-19",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 7.0
+    },
+    {
+      "date": "2026-06-20",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 9.0
+    },
+    {
+      "date": "2026-06-21",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 2.0
+    },
+    {
+      "date": "2026-06-22",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 2.0
+    },
+    {
+      "date": "2026-06-23",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 2.0
+    },
+    {
+      "date": "2026-06-24",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-06-25",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-06-26",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 3.0
+    },
+    {
+      "date": "2026-06-27",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 3.0
+    },
+    {
+      "date": "2026-06-28",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 4.0
+    },
+    {
+      "date": "2026-06-29",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-06-30",
+      "not_indexed": 2206.0,
+      "indexed": 198.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-07-01",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 2.0
+    },
+    {
+      "date": "2026-07-02",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-03",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 2.0
+    },
+    {
+      "date": "2026-07-04",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 6.0
+    },
+    {
+      "date": "2026-07-05",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-06",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 3.0
+    },
+    {
+      "date": "2026-07-07",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 4.0
+    },
+    {
+      "date": "2026-07-08",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-09",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-10",
+      "not_indexed": 2216.0,
+      "indexed": 188.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-07-11",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 3.0
+    },
+    {
+      "date": "2026-07-12",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-07-13",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 4.0
+    },
+    {
+      "date": "2026-07-14",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 4.0
+    },
+    {
+      "date": "2026-07-15",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-07-16",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 2.0
+    },
+    {
+      "date": "2026-07-17",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-07-18",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 9.0
+    },
+    {
+      "date": "2026-07-19",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-20",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 2.0
+    },
+    {
+      "date": "2026-07-21",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-07-22",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 3.0
+    },
+    {
+      "date": "2026-07-23",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-24",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 5.0
+    },
+    {
+      "date": "2026-07-25",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 4.0
+    },
+    {
+      "date": "2026-07-26",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-27",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-28",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 2.0
+    },
+    {
+      "date": "2026-07-29",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-30",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-07-31",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-01",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 14.0
+    },
+    {
+      "date": "2026-08-02",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-03",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 8.0
+    },
+    {
+      "date": "2026-08-04",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-08-05",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-06",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-07",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-08",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 9.0
+    },
+    {
+      "date": "2026-08-09",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-10",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-11",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-08-12",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-13",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-14",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-15",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 9.0
+    },
+    {
+      "date": "2026-08-16",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-17",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-08-18",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-08-19",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-08-20",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 1.0
+    },
+    {
+      "date": "2026-08-21",
+      "not_indexed": 2219.0,
+      "indexed": 187.0,
+      "impressions": 3.0
+    },
+    {
+      "date": "2026-08-22",
+      "not_indexed": 2542.0,
+      "indexed": 187.0,
+      "impressions": 41.0
+    },
+    {
+      "date": "2026-08-23",
+      "not_indexed": 2542.0,
+      "indexed": 187.0,
+      "impressions": 5.0
+    },
+    {
+      "date": "2026-08-24",
+      "not_indexed": 2542.0,
+      "indexed": 187.0,
+      "impressions": 7.0
+    },
+    {
+      "date": "2026-08-25",
+      "not_indexed": 2542.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-26",
+      "not_indexed": 2542.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-27",
+      "not_indexed": 2542.0,
+      "indexed": 187.0,
+      "impressions": 0.0
+    },
+    {
+      "date": "2026-08-28",
+      "not_indexed": 2542.0,
+      "indexed": 187.0,
+      "impressions": 2.0
+    }
+  ],
+  "critical_issues": [
+    {
+      "reason": "Alternate page with proper canonical tag",
+      "source": "Website",
+      "validation": "Failed",
+      "pages": 465.0
+    },
+    {
+      "reason": "Not found (404)",
+      "source": "Website",
+      "validation": "Failed",
+      "pages": 387.0
+    },
+    {
+      "reason": "Page with redirect",
+      "source": "Website",
+      "validation": "Failed",
+      "pages": 68.0
+    },
+    {
+      "reason": "Excluded by \u2018noindex\u2019 tag",
+      "source": "Website",
+      "validation": "Started",
+      "pages": 40.0
+    },
+    {
+      "reason": "Blocked by robots.txt",
+      "source": "Website",
+      "validation": "Started",
+      "pages": 11.0
+    },
+    {
+      "reason": "Crawled - currently not indexed",
+      "source": "Google systems",
+      "validation": "Started",
+      "pages": 1168.0
+    },
+    {
+      "reason": "Duplicate, Google chose different canonical than user",
+      "source": "Google systems",
+      "validation": "Started",
+      "pages": 80.0
+    },
+    {
+      "reason": "Discovered - currently not indexed",
+      "source": "Google systems",
+      "validation": "Passed",
+      "pages": 323.0
+    }
+  ]
+}
