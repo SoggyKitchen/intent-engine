@@ -314,7 +314,7 @@ def build_best_seo_tools():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 8 Tools Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best SEO Tools {YEAR}: Top 8 Tested, Ranked &amp; Compared</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We tested every major SEO platform across keyword research quality, backlink data freshness, site audit depth, and ROI at different price points. Here are the 8 best SEO tools in {YEAR} — no paid placements.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We compared every major SEO platform across keyword research quality, backlink data freshness, site audit depth, and ROI at different price points, using published pricing and documentation. Here are the 8 best SEO tools in {YEAR} — no paid placements.</p>
   {quick_picks}
   <h2 style="font-size:1.5rem;font-weight:800;color:#fff;margin:2rem 0 1.25rem">The 8 Best SEO Tools in {YEAR}</h2>
   {tools_html}
@@ -406,7 +406,7 @@ def build_semrush_vs_ubersuggest():
   </nav>
   <div class="badge">Updated {TODAY} &middot; Verified Comparison</div>
   <h1 style="font-size:clamp(1.8rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Semrush vs Ubersuggest ({YEAR}): Which Is Better?</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">Semrush costs 5× more than Ubersuggest. Is it 5× better? We tested both on keyword data quality, competitor analysis, site auditing, and real-world usability. Honest verdict below.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">Semrush costs 5× more than Ubersuggest. Is it 5× better? We compared both on keyword data quality, competitor analysis, site auditing, and real-world usability. Honest verdict below.</p>
   {verdict_box("Semrush", "Semrush wins on every data quality metric — keyword database, backlink index, competitor intelligence, and site audit depth. Ubersuggest is fine for beginners on a tight budget, but professionals and agencies should use Semrush. The 14-day free trial lets you verify this yourself.", "/go/semrush", "Try Semrush Free")}
   <h2 style="font-size:1.4rem;font-weight:800;color:#fff;margin:2rem 0 .75rem">Quick Comparison</h2>
   {table}

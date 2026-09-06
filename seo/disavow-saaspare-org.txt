@@ -1,0 +1,41 @@
+# Google disavow file for saaspare.org
+# Generated 2026-09-06 from Search Atlas backlink audit.
+#
+# These are inbound spam links we did NOT build. They are the explanation for
+# Spam Score 8 (the competitor sits at 0), and most appeared new in August 2026.
+#
+# Categories:
+#   - PBN anchor spam: anchor text reads "High Quality Dofollow Backlinks DA 50
+#     PA 40 Premium PBN Network Service saaspare.org ... Buy Backlinks Online Cheap"
+#   - Fake testimonial spam claiming our lead generation "tripled" via Fiverr
+#   - Casino/gambling link network
+#   - Auto-generated "website stats" scraper pages
+#
+# NOT included, deliberately: the press-release syndication network
+# (kimberleybulletin, newsblaze, middletownlifemagazine, xpr.media,
+# adamtorkildson, adriennemonson, agree.net, side.cr, small-bizsense, timesla).
+# Low authority and mostly nofollow, but they are legitimate distribution of our
+# own press releases, not spam.
+#
+# To submit: https://search.google.com/search-console/disavow-links
+# Select the sc-domain:saaspare.org property and upload this file.
+# Disavow is not reversible quickly - read each line before submitting.
+
+domain:8coint.com
+domain:analyticshaven.top
+domain:betwinnermirror.com
+domain:blogsphere.top
+domain:bye.fyi
+domain:clifflisting.com
+domain:creativeposts.top
+domain:domraider.eu.com
+domain:domraider.gb.net
+domain:domraider.it.com
+domain:fashionclothingnews.com
+domain:fiverr-affordable-seo-services.site
+domain:gladeflowers.com
+domain:jameslinks.agency
+domain:portailorange.net
+domain:qwenterprise.com
+domain:skystarnews.com
+domain:trendyhealthtimes.com

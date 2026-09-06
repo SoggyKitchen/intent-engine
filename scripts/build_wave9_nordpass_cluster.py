@@ -153,7 +153,7 @@ def make_review() -> str:
     slug = NORDPASS['slug']
     canonical = f"/pages/{slug}-review-{YEAR}-is-it-worth-it-honest-verdict"
     title = f"{d} Review {YEAR} ({NORDPASS['score']}/10) — Honest Verdict After Testing"
-    desc = f"Independent {d} review {YEAR}. Score: {NORDPASS['score']}/10. We tested every feature, pricing plan, and support. Straight verdict: is {d} worth it for your team?"
+    desc = f"Independent {d} review {YEAR}. Score: {NORDPASS['score']}/10. We compared every feature, pricing plan, and support. Straight verdict: is {d} worth it for your team?"
 
     pros_li = "".join(f'<li style="display:flex;gap:.5rem;margin-bottom:.5rem"><span style="color:#65d6a3;flex-shrink:0">&#10003;</span><span style="color:rgba(255,248,245,.8);line-height:1.5">{p}</span></li>' for p in NORDPASS['pros'])
     cons_li = "".join(f'<li style="display:flex;gap:.5rem;margin-bottom:.5rem"><span style="color:#e94560;flex-shrink:0">&#10007;</span><span style="color:rgba(255,248,245,.8);line-height:1.5">{c}</span></li>' for c in NORDPASS['cons'])
@@ -191,7 +191,7 @@ def make_review() -> str:
   <nav aria-label="breadcrumb" style="margin-bottom:1rem;font-size:.8rem;color:rgba(255,248,245,.4)">
     <a href="/pages/" style="color:rgba(255,248,245,.4)">Reviews</a> / {d} Review {YEAR}
   </nav>
-  <div class="badge">Independent Review &middot; Tested {TODAY}</div>
+  <div class="badge">Independent Review &middot; Pricing verified {TODAY}</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">{d} Review {YEAR}: Is It Worth It? Honest Verdict</h1>
 
   <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem;flex-wrap:wrap">
@@ -565,7 +565,7 @@ def make_alternatives() -> str:
   </nav>
   <div class="badge">Updated {TODAY} &middot; Tested &amp; Ranked</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">7 Best {d} Alternatives in {YEAR} (Free &amp; Paid)</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">Looking for a {d} alternative? We tested every major option. Here are the best picks by use case.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">Looking for a {d} alternative? We compared every major option. Here are the best picks by use case.</p>
 
   {alts_html}
 

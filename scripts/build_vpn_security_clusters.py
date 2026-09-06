@@ -212,7 +212,7 @@ nav.scrolled{{background:rgba(7,7,13,.9);border-bottom:1px solid rgba(255,255,25
   </nav>
 
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:1rem">{d} Pricing {YEAR}: Every Plan, Real Costs &amp; What You Pay</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">Updated {TODAY}. We tested {d} and break down every plan — including what you actually pay vs the marketed price. Starting at <strong style="color:#fff">{data['pricing_start']}</strong>.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">Updated {TODAY}. We compared {d} and break down every plan — including what you actually pay vs the marketed price. Starting at <strong style="color:#fff">{data['pricing_start']}</strong>.</p>
 
   <div style="background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.2);border-radius:14px;padding:1.5rem;margin-bottom:2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
     <div>
@@ -286,7 +286,7 @@ nav.scrolled{{background:rgba(7,7,13,.9);border-bottom:1px solid rgba(255,255,25
 def make_review_page(tool_slug: str, data: dict) -> str:
     d = data["display"]
     title = f'{d} Review {YEAR} ({data["score"]}/10) — Honest Verdict After Testing'
-    desc = f'Independent {d} review {YEAR}. Score: {data["score"]}/10. We tested every feature, pricing, and support. Straight verdict: is {d} worth it for your team?'
+    desc = f'Independent {d} review {YEAR}. Score: {data["score"]}/10. We reviewed published features, pricing, and support tiers. Straight verdict: is {d} worth it for your team?'
     pros_li = "".join(f'<li style="display:flex;gap:.5rem;margin-bottom:.5rem"><span style="color:#65d6a3;flex-shrink:0">&#10003;</span><span style="color:rgba(255,248,245,.8);line-height:1.5">{p}</span></li>' for p in data["pros"])
     cons_li = "".join(f'<li style="display:flex;gap:.5rem;margin-bottom:.5rem"><span style="color:#e94560;flex-shrink:0">&#10007;</span><span style="color:rgba(255,248,245,.8);line-height:1.5">{c}</span></li>' for c in data["cons"])
 

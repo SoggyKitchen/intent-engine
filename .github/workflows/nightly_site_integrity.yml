@@ -417,6 +417,7 @@ jobs:
           uv run python scripts/build_transparency_ratings.py
           uv run python scripts/link_hidden_costs.py
           uv run python scripts/inject_tool_reviews.py
+          uv run python scripts/strip_fabricated_testing_claims.py
 
       # 4z-FINAL. Rebuild the sitemap AFTER all page generators have run.
       # The earlier sitemap build (update_sitemap_hubs + update_sitemap_and_index)

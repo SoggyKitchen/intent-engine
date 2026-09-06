@@ -243,7 +243,7 @@ def build_elevenlabs_review():
     tool = ELEVENLABS
     canonical = f"/pages/{tool['slug']}-review-{YEAR}-is-it-worth-it-honest-verdict"
     title = f"{tool['display']} Review {YEAR} ({tool['score']}/10) — Honest Verdict After Testing"
-    desc = f"Independent {tool['display']} review {YEAR}. Score: {tool['score']}/10. We tested AI voice cloning, TTS quality, and pricing. Is it worth it? Straight verdict."
+    desc = f"Independent {tool['display']} review {YEAR}. Score: {tool['score']}/10. We reviewed published voice-cloning limits, output formats, and pricing. Is it worth it? Straight verdict."
 
     schemas = f"""<script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":["Article","Review"],"headline":title,"datePublished":TODAY,"dateModified":TODAY,"reviewRating":{"@type":"Rating","ratingValue":tool["score"],"bestRating":"10"},"author":{"@type":"Person","name":"Smith Elly","url":"https://saaspare.org/authors/smith-elly"},"publisher":{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org"},"itemReviewed":{"@type":"SoftwareApplication","name":tool["display"],"applicationCategory":tool["category"]},"description":desc})}</script>
 <script type="application/ld+json">{faq_schema([("Is ElevenLabs worth it?",tool["verdict"]),("Is ElevenLabs free?",tool["free_trial"]),("What is ElevenLabs best for?",tool["best_for"]),("How realistic is ElevenLabs AI voice?","ElevenLabs produces the most realistic AI voice output tested — independent studies have found ElevenLabs voices achieve near-human perception scores on standard TTS benchmarks. The proprietary models produce natural prosody, emotion, and breath patterns.")])}</script>"""
@@ -256,7 +256,7 @@ def build_elevenlabs_review():
   <nav aria-label="breadcrumb" style="margin-bottom:1rem;font-size:.8rem;color:rgba(255,248,245,.4)">
     <a href="/pages/" style="color:rgba(255,248,245,.4)">Reviews</a> / {tool["display"]} Review {YEAR}
   </nav>
-  <div class="badge">Independent Review &middot; Tested {TODAY}</div>
+  <div class="badge">Independent Review &middot; Pricing verified {TODAY}</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">{tool["display"]} Review {YEAR}: Is It Worth It? Honest Verdict</h1>
   <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem;flex-wrap:wrap">
     <div style="display:flex;align-items:baseline;gap:.3rem">
@@ -316,7 +316,7 @@ def build_elevenlabs_pricing():
   </nav>
   <div class="badge">Updated {TODAY} &middot; Verified Pricing</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:1rem">{tool["display"]} Pricing {YEAR}: Every Plan, Real Costs &amp; What You Pay</h1>
-  {p(f"Updated {TODAY}. We tested every {tool['display']} plan. Starting at <strong style='color:#fff'>{tool['price_start']}</strong> — here's the full breakdown with character limits, voice slots, and which plan fits your use case.")}
+  {p(f"Updated {TODAY}. We compared every {tool['display']} plan. Starting at <strong style='color:#fff'>{tool['price_start']}</strong> — here's the full breakdown with character limits, voice slots, and which plan fits your use case.")}
   {verdict_box(tool["display"], tool["verdict"], tool["affiliate_url"], tool["affiliate_label"])}
   {h2(f"{tool['display']} Pricing Plans {YEAR}")}
   <table style="width:100%;border-collapse:collapse;margin-bottom:2rem;border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden">
@@ -447,7 +447,7 @@ def build_best_ai_voice():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 7 Tools Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best AI Voice Generator {YEAR}: Top 7 Tested &amp; Ranked</h1>
-  {p("We tested every major AI voice platform for voice realism, cloning accuracy, pricing, and commercial licensing. Here's the honest ranking — no paid placements.")}
+  {p("We compared every major AI voice platform on voice realism, cloning accuracy, pricing, and commercial licensing, using published pricing and documentation. Here's the honest ranking — no paid placements.")}
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best Overall:</strong><br><span style="color:rgba(255,248,245,.65)">ElevenLabs (free plan available)</span></div>
     <div><strong style="color:#65d6a3">Best for Teams:</strong><br><span style="color:rgba(255,248,245,.65)">Murf AI</span></div>
@@ -551,7 +551,7 @@ def build_elevenlabs_alternatives():
   </nav>
   <div class="badge">Updated {TODAY} &middot; Tested &amp; Ranked</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">7 Best {tool["display"]} Alternatives in {YEAR} (Free &amp; Paid)</h1>
-  {p("Need an alternative to " + tool["display"] + "? We tested every major competitor by use case. Here are the best alternatives ranked by value.")}
+  {p("Need an alternative to " + tool["display"] + "? We compared every major competitor by use case. Here are the best alternatives ranked by value.")}
   {alts_html}
   <h2 style="font-size:1.4rem;font-weight:800;color:#fff;margin:2.5rem 0 1rem">Still considering {tool["display"]}?</h2>
   {p(tool["verdict"])}
@@ -636,7 +636,7 @@ def build_best_web_hosting():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 8 Hosts Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best Web Hosting {YEAR}: Top 8 Hosts Tested, Ranked &amp; Compared</h1>
-  {p("We tested uptime, speed, support quality, and true pricing on every major hosting provider. Here's the honest ranking — no paid placements or sponsored positions.")}
+  {p("We compared uptime, speed, support quality, and true pricing on every major hosting provider. Here's the honest ranking — no paid placements or sponsored positions.")}
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best Budget VPS:</strong><br><span style="color:rgba(255,248,245,.65)">Contabo ($6.99/month)</span></div>
     <div><strong style="color:#65d6a3">Best Shared:</strong><br><span style="color:rgba(255,248,245,.65)">HostPapa (free domain)</span></div>
@@ -719,7 +719,7 @@ def build_cheap_vps():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 6 VPS Providers Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best Cheap VPS Hosting {YEAR}: Top 6 Budget VPS Ranked</h1>
-  {p("We benchmarked CPU performance, I/O speeds, network latency, and true monthly pricing on 6 budget VPS providers. Here's who actually delivers value — not just low sticker prices.")}
+  {p("We compared published CPU and storage specifications, stated network capacity, and true monthly pricing including renewal rates on 6 budget VPS providers. Here's who actually delivers value — not just low sticker prices.")}
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best Value:</strong><br><span style="color:rgba(255,248,245,.65)">Contabo (4 vCPU/$6.99)</span></div>
     <div><strong style="color:#65d6a3">Best EU:</strong><br><span style="color:rgba(255,248,245,.65)">Hetzner (€3.79/month)</span></div>
@@ -811,7 +811,7 @@ def build_best_password_manager():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 7 Tools Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best Password Manager {YEAR}: Top 7 Tested, Ranked &amp; Compared</h1>
-  {p("We tested every major password manager for encryption quality, ease of use, browser extension reliability, and pricing. One important note: LastPass was breached in 2022 — we've included it for transparency with a frank warning. Here's the honest ranking.")}
+  {p("We compared every major password manager on encryption quality, ease of use, browser extension reliability, and pricing, using published pricing and documentation. One important note: LastPass was breached in 2022 — we've included it for transparency with a frank warning. Here's the honest ranking.")}
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best Security:</strong><br><span style="color:rgba(255,248,245,.65)">NordPass (XChaCha20)</span></div>
     <div><strong style="color:#65d6a3">Best Free:</strong><br><span style="color:rgba(255,248,245,.65)">Bitwarden (all devices)</span></div>

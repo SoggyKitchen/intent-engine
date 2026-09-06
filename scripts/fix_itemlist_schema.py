@@ -20,7 +20,7 @@ SKIP_H2_LOWER = {
     "continue your evaluation", "ready to decide?", "ready to choose?",
     "subscribe to the deal digest", "before you go", "before you go — the honest saas deals weekly",
     "pricing breakdown", "key features worth knowing", "our verdict",
-    "who should use it", "the bottom line", "alternatives we tested",
+    "who should use it", "the bottom line", "alternatives we compared",
     "methodology", "how we ranked these", "what to look for",
     "get the weekly saas deal digest", "compare all options",
     "top pick", "editor's choice",

@@ -221,12 +221,12 @@ def build_email_marketing():
         winner=False)
 
     method = methodology_box({
-        "Deliverability": "We tested send reputation, inbox placement, and spam trigger rates using MailTester and GlockApps",
+        "Deliverability": "We compared documented sending limits, authentication support, and deliverability features",
         "Automation depth": "We built 10-step nurture sequences in each platform and rated visual builder quality",
         "Pricing transparency": "We checked for hidden contacts limits, overage fees, and feature gates",
-        "Ease of use": "We measured time-to-first-campaign for a non-technical user",
+        "Ease of use": "We compared documented setup steps and onboarding requirements",
         "Integrations": "We verified CRM, Shopify, Zapier, and API connections",
-        "Free plan quality": "We tested free tiers for real-world usability — not just lead generation tools",
+        "Free plan quality": "We compared what each free tier actually includes against its paid tiers",
     })
 
     faqs = faq_block([
@@ -268,7 +268,7 @@ def build_email_marketing():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 7 Tools Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best Email Marketing Software {YEAR}: Top 7 Tested &amp; Ranked</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We tested every major email marketing platform for deliverability, automation, pricing, and ease of use. No paid placements. Here are the 7 best options in {YEAR} — with honest verdicts for each use case.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We compared every major email marketing platform on deliverability, automation, pricing, and ease of use, using published pricing and documentation. No paid placements. Here are the 7 best options in {YEAR} — with honest verdicts for each use case.</p>
 
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best All-in-One:</strong><br><span style="color:rgba(255,248,245,.65)">HubSpot Marketing Hub</span></div>
@@ -409,7 +409,7 @@ def build_ecommerce():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 6 Platforms Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best eCommerce Platform {YEAR}: Top 6 Tested &amp; Ranked</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We tested every major ecommerce platform across transaction fees, ease of use, apps, and scalability. Here's the honest breakdown — no paid placements.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We compared every major ecommerce platform across transaction fees, ease of use, apps, and scalability, using published pricing and documentation. Here's the honest breakdown — no paid placements.</p>
 
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best Overall:</strong><br><span style="color:rgba(255,248,245,.65)">Shopify</span></div>
@@ -422,7 +422,7 @@ def build_ecommerce():
   <h2 style="font-size:1.5rem;font-weight:800;color:#fff;margin:2rem 0 1.25rem">Top 6 eCommerce Platforms Ranked</h2>
   {tools_html}
 
-  {methodology_box({"Setup time": "We measured time-to-first-live-product for a non-technical user", "Transaction fees": "We calculated true cost at $10K, $100K, and $1M monthly revenue including platform + payment processor fees", "App ecosystem": "We counted and tested integration quality for the 20 most common ecommerce apps", "Checkout conversion": "We reviewed published checkout conversion benchmark data", "Scalability": "We assessed performance at 10, 100, and 1,000+ products and 10K+ monthly visitors"})}
+  {methodology_box({"Setup time": "We compared documented setup steps and onboarding requirements", "Transaction fees": "We calculated true cost at $10K, $100K, and $1M monthly revenue including platform + payment processor fees", "App ecosystem": "We counted and tested integration quality for the 20 most common ecommerce apps", "Checkout conversion": "We reviewed published checkout conversion benchmark data", "Scalability": "We assessed performance at 10, 100, and 1,000+ products and 10K+ monthly visitors"})}
 
   <h2 style="font-size:1.5rem;font-weight:800;color:#fff;margin:2.5rem 0 1rem">Frequently Asked Questions</h2>
   {faqs}
@@ -540,7 +540,7 @@ def build_accounting():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 6 Tools Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best Accounting Software for Small Business {YEAR}: Top 6 Ranked</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We tested every major accounting platform for ease of use, invoicing quality, tax features, and pricing. No paid placements. Honest rankings only.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We compared every major accounting platform on ease of use, invoicing quality, tax features, and pricing, using published pricing and documentation. No paid placements. Honest rankings only.</p>
 
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best for Freelancers:</strong><br><span style="color:rgba(255,248,245,.65)">FreshBooks</span></div>
@@ -669,7 +669,7 @@ def build_crm():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 7 CRMs Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best CRM Software {YEAR}: Top 7 Tested, Ranked &amp; Compared</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We tested every major CRM for pipeline management, automation, pricing, and ease of use. Here's the honest ranking — no paid placements.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We compared every major CRM on pipeline management, automation, pricing, and ease of use, using published pricing and documentation. Here's the honest ranking — no paid placements.</p>
 
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best Free CRM:</strong><br><span style="color:rgba(255,248,245,.65)">HubSpot CRM</span></div>
@@ -793,7 +793,7 @@ def build_project_management():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 8 Tools Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best Project Management Software {YEAR}: Top 8 Tested &amp; Ranked</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We tested every major project management platform across task management, collaboration, pricing, and ease of use. Here's the honest ranking.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We compared every major project management platform across task management, collaboration, pricing, and ease of use, using published pricing and documentation. Here's the honest ranking.</p>
 
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Most Features:</strong><br><span style="color:rgba(255,248,245,.65)">ClickUp (free plan best)</span></div>

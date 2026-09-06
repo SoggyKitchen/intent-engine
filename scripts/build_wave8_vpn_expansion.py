@@ -688,7 +688,7 @@ def make_vs_page(tool_a: dict, tool_b: dict, winner_slug: str) -> str:
   </nav>
   <div class="badge">Updated {TODAY} &middot; Verified Comparison</div>
   <h1 style="font-size:clamp(1.8rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">{a} vs {b} ({YEAR}): Which Is Better?</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We tested both head-to-head. Here's the honest comparison — price, speed, privacy, features, and our verdict.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We compared both head-to-head. Here's the honest comparison — price, speed, privacy, features, and our verdict.</p>
 
   <div style="background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.2);border-radius:14px;padding:1.5rem;margin-bottom:2.5rem">
     <div style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(233,69,96,.8);margin-bottom:.6rem">Winner: {winner['display']}</div>
@@ -811,7 +811,7 @@ def make_alternatives_page(tool: dict, alternatives: list) -> str:
   </nav>
   <div class="badge">Updated {TODAY} &middot; Tested &amp; Ranked</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">7 Best {d} Alternatives in {YEAR} (Free &amp; Paid)</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">Not sure {d} is right for you? We tested every major alternative. Here are the best options — ranked by value, privacy, and features.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">Not sure {d} is right for you? We compared every major alternative. Here are the best options — ranked by value, privacy, and features.</p>
 
   {alts_html}
 
@@ -966,7 +966,7 @@ nav.scrolled{{background:rgba(7,7,13,.9);border-bottom:1px solid rgba(255,255,25
   </nav>
   <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(233,69,96,.08);border:1px solid rgba(233,69,96,.18);padding:5px 14px;border-radius:100px;font-size:.7rem;font-weight:700;color:rgba(233,69,96,.85);margin-bottom:1rem;text-transform:uppercase;letter-spacing:.08em">Updated {TODAY} &middot; 5 VPNs Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best VPN for Privacy &amp; Security {YEAR}: Top 5 Tested &amp; Ranked</h1>
-  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We tested every major VPN for speed, privacy, price, and streaming. Here are the 5 best — no paid placements, no fake reviews.</p>
+  <p style="font-size:1.05rem;color:rgba(255,248,245,.65);line-height:1.75;margin-bottom:2rem">We compared every major VPN on speed, privacy, price, and streaming, using published pricing and documentation. Here are the 5 best — no paid placements, no fake reviews.</p>
 
   {picks_html}
 

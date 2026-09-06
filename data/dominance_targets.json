@@ -7,7 +7,7 @@
   },
   "competitor": {
     "domain": "saaspare.com",
-    "measured": "2026-09-01",
+    "measured": "2026-09-06",
     "domain_rating": 0,
     "backlinks": 20,
     "referring_domains": 17,
@@ -30,15 +30,15 @@
     "indexed_pages_est": 374
   },
   "us_current": {
-    "measured": null,
-    "domain_rating": null,
-    "backlinks": null,
-    "referring_domains": null,
-    "organic_keywords": null,
-    "organic_traffic": null,
-    "brand_signal": null,
-    "spam_score": null,
-    "indexed_pages_est": null
+    "measured": "2026-09-06",
+    "domain_rating": 11,
+    "backlinks": 314,
+    "referring_domains": 99,
+    "organic_keywords": 0,
+    "organic_traffic": 0,
+    "brand_signal": 0,
+    "spam_score": 8,
+    "indexed_pages_est": 187
   },
-  "notes": "us_current is filled in by hand from Search Atlas (no API). Everything in the AUTOMATED section of the scoreboard is measured from the repo and live GSC and needs no manual input."
+  "notes": "us_current filled from Search Atlas 2026-09-06, the FINAL reading - the trial expires 2026-09-07, so these numbers will not refresh again unless Kaylan buys a plan or we switch tools. Automated scoreboard metrics keep updating nightly. IMPORTANT CONTEXT: the competitor's 15 keywords are all position 21-100 with zero measured traffic (see data/searchatlas_export_2026-09-06.json). Beating 15 keywords is a low bar; beating them on brand signal is the real contest."
 }

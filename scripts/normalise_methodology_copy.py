@@ -1,6 +1,6 @@
 """
 Normalise the inconsistent per-page "how we evaluated" paragraphs that the
-AI generator shipped (e.g. "we tested for 10 hours", "over 40+ hours",
+AI generator shipped (e.g. "we compared for 10 hours", "over 40+ hours",
 "consulted with 12 IT leaders", "surveyed 120+ teams", "1,200+ data
 points"). Those claims are not uniformly verifiable and they are flagged
 as an E-E-A-T risk in the external audit.
@@ -41,7 +41,7 @@ CANONICAL_METHODOLOGY_PARAGRAPH = (
 # the same <p> for one of the unverifiable claim markers.
 METHODOLOGY_P_RE = re.compile(
     r"<p([^>]*)>\s*"  # 1 = attrs
-    r"(?:We evaluated|We tested|SaaSpare evaluated|SaaSpare tested|"
+    r"(?:We evaluated|We compared|SaaSpare evaluated|SaaSpare tested|"
     r"We compared|SaaSpare compared)\s+"
     r"[^<]{0,600}?"  # body up to marker (same <p>, no nested tags)
     r"(?:\d+\+?\s+hours|\d{2,4}\+?\s+data points|consulted with \d+|"

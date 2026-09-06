@@ -91,7 +91,7 @@ def upgrade_meta(old_meta: str, keyword: str, page_url: str) -> str:
         parts = re.split(r" vs |-vs-", kw_lower)
         if len(parts) == 2:
             a, b = parts[0].strip().title(), parts[1].strip().title()
-            return (f"We tested {a} and {b} side-by-side in {year}. "
+            return (f"We compared {a} and {b} side-by-side in {year}. "
                     f"See pricing, features, and our verdict — plus who each tool is actually for.")
 
     # Best X pages

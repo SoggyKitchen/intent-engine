@@ -143,7 +143,7 @@ def build_expressvpn_review():
     title = f"ExpressVPN Review {YEAR}: Is It Worth It? Honest Verdict"
     desc = f"Updated {TODAY}. Independent ExpressVPN review. Score: 9.0/10. Best-in-class speed and streaming, but costs more than NordVPN and Surfshark. Is it worth the price? Honest verdict."
     faq_pairs = [
-        ("Is ExpressVPN worth it in 2026?", "ExpressVPN is worth it if speed and streaming are your top priorities. Lightway protocol delivers the lowest latency of any VPN we tested. However, at $8.32/month it costs more than NordVPN ($3.39) and Surfshark ($2.19) which offer comparable features. For most users, NordVPN is better value."),
+        ("Is ExpressVPN worth it in 2026?", "ExpressVPN is worth it if speed and streaming are your top priorities. ExpressVPN publishes its Lightway protocol as its lowest-latency option. However, at $8.32/month it costs more than NordVPN ($3.39) and Surfshark ($2.19) which offer comparable features. For most users, NordVPN is better value."),
         ("Is ExpressVPN the fastest VPN?", "ExpressVPN with Lightway protocol is one of the fastest VPNs tested — consistently delivering 400-600 Mbps on nearby servers. NordLynx (NordVPN) is comparable. For most users, both are fast enough for 4K streaming."),
         ("Does ExpressVPN work with Netflix?", "Yes — ExpressVPN reliably unblocks Netflix US, UK, Japan, and 15+ other regional libraries. It's one of the most reliable VPNs for streaming, though NordVPN and Surfshark match it at lower prices."),
         ("How many devices can ExpressVPN connect?", "ExpressVPN allows 8 simultaneous device connections. Surfshark allows unlimited devices — a significant advantage for households."),
@@ -155,7 +155,7 @@ def build_expressvpn_review():
 {sticky("ExpressVPN — fastest VPN for streaming and privacy", "/go/expressvpn", "Get ExpressVPN")}
 <main style="max-width:820px;margin:0 auto;padding:7rem 1.5rem 5rem">
   <nav aria-label="breadcrumb" style="margin-bottom:1rem;font-size:.8rem;color:rgba(255,248,245,.4)"><a href="/pages/" style="color:rgba(255,248,245,.4)">Reviews</a> / ExpressVPN Review {YEAR}</nav>
-  <div class="badge">Independent Review &middot; Tested {TODAY}</div>
+  <div class="badge">Independent Review &middot; Pricing verified {TODAY}</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">ExpressVPN Review {YEAR}: Is It Worth It?</h1>
   <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem;flex-wrap:wrap">
     <div style="display:flex;align-items:baseline;gap:.3rem"><span style="font-size:2.8rem;font-weight:900;color:#fff;line-height:1">9.0</span><span style="font-size:1rem;color:rgba(255,248,245,.38)">/10</span></div>
@@ -206,7 +206,7 @@ def build_kajabi_review():
 {sticky("Kajabi — all-in-one platform for course creators", "/go/kajabi", "Try Kajabi Free (30 days)")}
 <main style="max-width:820px;margin:0 auto;padding:7rem 1.5rem 5rem">
   <nav aria-label="breadcrumb" style="margin-bottom:1rem;font-size:.8rem;color:rgba(255,248,245,.4)"><a href="/pages/" style="color:rgba(255,248,245,.4)">Reviews</a> / Kajabi Review {YEAR}</nav>
-  <div class="badge">Independent Review &middot; Tested {TODAY}</div>
+  <div class="badge">Independent Review &middot; Pricing verified {TODAY}</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Kajabi Review {YEAR}: Is It Worth $149/Month?</h1>
   <div style="display:flex;align-items:baseline;gap:.3rem;margin-bottom:1.5rem"><span style="font-size:2.8rem;font-weight:900;color:#fff;line-height:1">8.9</span><span style="font-size:1rem;color:rgba(255,248,245,.38)">/10</span></div>
   {p("Kajabi is the most complete all-in-one platform for course creators and digital entrepreneurs. Courses, memberships, website, email marketing, community, and checkout — all in one. At $149/month, it's expensive, but for established creators it often replaces $200-400/month in separate tools.")}
@@ -247,7 +247,7 @@ def build_teachable_review():
 {sticky("Teachable — easiest course platform. Free plan available.", "/go/teachable", "Try Teachable Free")}
 <main style="max-width:820px;margin:0 auto;padding:7rem 1.5rem 5rem">
   <nav aria-label="breadcrumb" style="margin-bottom:1rem;font-size:.8rem;color:rgba(255,248,245,.4)"><a href="/pages/" style="color:rgba(255,248,245,.4)">Reviews</a> / Teachable Review {YEAR}</nav>
-  <div class="badge">Independent Review &middot; Tested {TODAY}</div>
+  <div class="badge">Independent Review &middot; Pricing verified {TODAY}</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900;line-height:1.1;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Teachable Review {YEAR}: Best Course Platform for Beginners?</h1>
   <div style="display:flex;align-items:baseline;gap:.3rem;margin-bottom:1.5rem"><span style="font-size:2.8rem;font-weight:900;color:#fff;line-height:1">8.8</span><span style="font-size:1rem;color:rgba(255,248,245,.38)">/10</span></div>
   {p("Teachable is the best online course platform for creators just getting started. A free plan, easy course builder, and 0% transaction fees on paid plans make it the lowest-risk way to start selling courses. Over 100,000 creators have used it to generate $1B+ in course revenue.")}

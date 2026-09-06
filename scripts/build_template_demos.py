@@ -20,8 +20,8 @@ def fill(template_path, replacements):
 # ─── BEST-OF DEMO ───────────────────────────────────────────────────────────
 best_of_data = {
     "PAGE_TITLE": "Best CRM Software 2026: Ranked &amp; Reviewed",
-    "HERO_LEAD": "We tested 24 CRM platforms across 47 data points — pricing, features, support, real buyer feedback, and ROI signal. Here's who actually wins.",
-    "META_DESCRIPTION": "We tested 24 CRM platforms across 47 data points. Here are the 6 best CRM tools of 2026 — ranked by real value, not vendor payments.",
+    "HERO_LEAD": "We compared 24 CRM platforms on published pricing, plan limits, and documented features. Here's how they stack up.",
+    "META_DESCRIPTION": "We compared 24 CRM platforms on published pricing and plan limits. Here are the 6 best CRM tools of 2026 — ranked by real value, not vendor payments.",
     "CANONICAL_URL": "pages/best-crm-software-2026",
     "VERIFIED_DATE": "June 2026",
     "STAT_1_NUM": "24", "STAT_1_LABEL": "CRMs tested",

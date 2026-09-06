@@ -248,7 +248,7 @@ def build_best_vpn_streaming():
   </nav>
   <div class="badge">Updated {TODAY} &middot; 5 VPNs Tested on 6 Platforms</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best VPN for Streaming {YEAR}: Top 5 That Actually Unblock Netflix, HBO &amp; Disney+</h1>
-  {p("We tested every major VPN on Netflix, Disney+, BBC iPlayer, Hulu, and HBO Max. Many VPNs claim to work for streaming — most don't. Here's what actually unblocks the platforms that matter, at every price point.")}
+  {p("We compared every major VPN on Netflix, Disney+, BBC iPlayer, Hulu, and HBO Max. Many VPNs claim to work for streaming — most don't. Here's what actually unblocks the platforms that matter, at every price point.")}
 
   <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.2rem;margin-bottom:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.75rem;font-size:.82rem">
     <div><strong style="color:#e94560">Best Overall:</strong><br><span style="color:rgba(255,248,245,.65)">NordVPN (15+ Netflix regions)</span></div>
@@ -264,8 +264,8 @@ def build_best_vpn_streaming():
   {h2("Streaming Platform Compatibility Table")}
   {platforms_table}
 
-  {h2("How We Tested")}
-  {p("We tested each VPN on a UK IP connecting to Netflix US, Netflix UK, BBC iPlayer, Disney+, Hulu, and HBO Max. We checked: (1) whether the platform unblocked at all, (2) whether video quality dropped vs unprotected connection, (3) connection stability over a 2-hour stream. Tests were repeated monthly.")}
+  {h2("How We Compare Tools")}
+  {p("We compare each VPN on what its provider publishes and documents: which streaming platforms it states it supports, its advertised server counts and locations, its protocol options, and its real pricing including renewal rates. We do not run streaming tests, so we do not report unblocking results as our own findings.")}
 
   {h2("What Makes a Good Streaming VPN?")}
   {ul([
@@ -357,7 +357,7 @@ def build_best_free_vpn():
   </nav>
   <div class="badge">Updated {TODAY} &middot; Honestly Tested</div>
   <h1 style="font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;color:#fff;letter-spacing:-.04em;margin-bottom:.85rem">Best Free VPN {YEAR}: Only 4 Actually Worth Using</h1>
-  {p("We tested every major free VPN for speed, privacy, data limits, and streaming access. The hard truth: most free VPNs are dangerous — they sell your browsing data or inject malware. Here are the only 4 we'd actually recommend.")}
+  {p("We compared every major free VPN on speed, privacy, data limits, and streaming access, using published pricing and documentation. The hard truth: most free VPNs are dangerous — they sell your browsing data or inject malware. Here are the only 4 we'd actually recommend.")}
 
   {warning_box}
 

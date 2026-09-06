@@ -136,7 +136,7 @@ def vs_table(rows):
 def protonvpn_vs_expressvpn():
     slug = "protonvpn-vs-expressvpn-which-is-better-in-2026"
     title = f"ProtonVPN vs ExpressVPN ({YR}): Honest Head-to-Head Verdict"
-    desc = f"ProtonVPN vs ExpressVPN in {YR} — privacy, speed, price compared. One is open source and audited. The other is the fastest. We tested both."
+    desc = f"ProtonVPN vs ExpressVPN in {YR} — privacy, speed, price compared. One is open source and audited. The other is the fastest. We compared both."
     body = f"""
   <nav class="crumbs"><a href="/">Home</a> <span>/</span> <a href="/pages/">VPN</a> <span>/</span> <span>ProtonVPN vs ExpressVPN</span></nav>
   <h1>ProtonVPN vs ExpressVPN ({YR})<br><span style="color:#ff416d;">Privacy vs Speed — Which Wins?</span></h1>

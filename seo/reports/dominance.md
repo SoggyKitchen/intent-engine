@@ -1,10 +1,8 @@
 # Dominance scoreboard — saaspare.org vs saaspare.com
 
-Generated 2026-09-05. GSC window 2026-08-05 to 2026-09-02.
+Generated 2026-09-06. GSC window 2026-08-05 to 2026-09-02.
 
 **Goal:** beat saaspare.com on every axis below. Not "improve". Beat.
-
-> **Manual numbers have never been recorded.** Measure both domains in Search Atlas and fill `data/dominance_targets.json`.
 
 ## Automated (re-measured every run)
 
@@ -24,10 +22,10 @@ Generated 2026-09-05. GSC window 2026-08-05 to 2026-09-02.
 
 | Metric | Now | Target | |
 |---|---|---|---|
-| Organic keywords | not measured | 15 | ? |
-| Organic traffic / mo | not measured | 22 | ? |
-| Brand signal | not measured | 52.5 | ? |
-| Spam score | not measured | 2 | ? |
+| Organic keywords | 0 | 15 | FAIL |
+| Organic traffic / mo | 0 | 22 | FAIL |
+| Brand signal | 0 | 52.5 | FAIL |
+| Spam score | 8 | 2 | FAIL |
 | <sub>baseline 8, competitor 0</sub> | | | |
 
 ## Where the traffic actually comes from
@@ -56,7 +54,7 @@ Not done. Outstanding:
 
 - Non-branded GSC impressions (28d) — 0.0 vs target 1
 - Distinct non-branded queries — 0 vs target 15
-- Organic keywords — not measured vs target 15
-- Organic traffic / mo — not measured vs target 22
-- Brand signal — not measured vs target 52.5
-- Spam score — not measured vs target 2
+- Organic keywords — 0 vs target 15
+- Organic traffic / mo — 0 vs target 22
+- Brand signal — 0 vs target 52.5
+- Spam score — 8 vs target 2

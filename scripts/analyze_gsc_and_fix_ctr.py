@@ -88,7 +88,7 @@ def upgrade_meta(keyword, position):
 
     if kw.startswith("best "):
         topic = kw.replace("best ","").replace(yr,"").strip()
-        return (f"The best {topic} tools ranked for {yr}. We tested pricing, features & support "
+        return (f"The best {topic} tools ranked for {yr}. We compared published pricing, features and support tiers "
                 f"across 10+ options. Here's what's actually worth paying for.")
 
     if any(x in kw for x in ["pricing","price","cost","plans"]):
@@ -99,7 +99,7 @@ def upgrade_meta(keyword, position):
     if "review" in kw:
         tool = kw.split("review")[0].strip().title()
         return (f"Honest {tool} review for {yr}. Real pros, cons, pricing, and who it's built for. "
-                f"Tested by SaaS experts — no affiliate spin, just straight answers.")
+                f"Pricing verified against vendor pages — no affiliate spin, just straight answers.")
 
     if "free trial" in kw:
         tool = re.sub(r"free (trial|plan)","",kw).strip().title()
