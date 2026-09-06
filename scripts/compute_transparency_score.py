@@ -53,6 +53,10 @@ CRITERIA = [
      "The premium for paying monthly instead of yearly stays under 25%."),
     ("seats_at_list", "Extra seats at list price",
      "Adding a colleague costs the advertised per-seat price, with no surcharge."),
+    ("price_is_the_bill", "The price is the whole bill",
+     "No usage or transaction charges metered on top of the published plan price."),
+    ("no_intro_cliff", "No intro-price cliff",
+     "The advertised entry price is the real one, not a promotion that expires."),
 ]
 
 def load():
@@ -62,6 +66,8 @@ def load():
         "fees": {r["vendor"].lower() for r in hidden["onboarding_fees"]},
         "annual_only": {r["vendor"].lower() for r in hidden["annual_only"]},
         "seat_surcharge": {r["vendor"].lower() for r in hidden["extra_seat_costs"]},
+        "metered": {r["vendor"].lower() for r in hidden["metered_on_top"]["vendors"]},
+        "intro": {r["vendor"].lower() for r in hidden["intro_price_step_up"]["vendors"]},
     }
 
 
@@ -134,6 +140,15 @@ def score_tool(tool, flags):
     # 8. Per-seat surcharges on top of the plan price.
     s["seats_at_list"] = 0 if vendor in flags["seat_surcharge"] else 2
 
+    # 9. Metered usage on top of a seat price. A vendor with no seat price at
+    #    all (Stripe, Wave) is not penalised - there the percentage IS the
+    #    advertised price, so nothing is hidden behind it.
+    s["price_is_the_bill"] = 0 if vendor in flags["metered"] else 2
+
+    # 10. Intro-price cliffs. The discount is always disclosed; what buyers
+    #     miss is that the bill rises sharply on a known date.
+    s["no_intro_cliff"] = 0 if vendor in flags["intro"] else 2
+
     total = sum(s.values())
     return {
         "tool": tool["tool"],
@@ -144,8 +159,11 @@ def score_tool(tool, flags):
         "criteria": s,
         "points": total,
         "max_points": len(CRITERIA) * 2,
-        # Half-star resolution. Reporting 4.37 stars off sixteen integer
-        # points would be false precision.
+        # Headline is a /10 score to one decimal. Twenty points gives 21
+        # distinct values; the old half-star scale gave nine and piled 24 of
+        # 41 tools onto 4.5, which read as flattery rather than a rating.
+        "score10": round(total / (len(CRITERIA) * 2) * 10, 1),
+        # Stars stay as the visual, at half-star resolution.
         "stars": round(total / (len(CRITERIA) * 2) * 5 * 2) / 2,
         "worst_annual_gap_pct": round(worst * 100),
     }
@@ -161,7 +179,7 @@ def main():
             "generated_from": ["data/pricing_seed.json", "data/hidden_costs.json"],
             "pricing_verified_on": seed["_meta"]["snapshot_date"],
             "facts_verified_on": json.loads(HIDDEN.read_text(encoding="utf-8"))["_meta"]["verified_on"],
-            "scale": "8 criteria, 0-2 points each, 16 points total, mapped to 0-5 stars",
+            "scale": "10 criteria, 0-2 points each, 20 points total, reported as a score out of 10 to one decimal; stars are the visual at half-star resolution",
             "authored_by": "SaaSpare editorial",
             "note": ("Editorial score, not user reviews. Measures how transparent a "
                      "vendor's own pricing page is with the buyer. Deterministic: "

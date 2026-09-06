@@ -6,7 +6,7 @@
     ],
     "pricing_verified_on": "2026-09-06",
     "facts_verified_on": "2026-09-06",
-    "scale": "8 criteria, 0-2 points each, 16 points total, mapped to 0-5 stars",
+    "scale": "10 criteria, 0-2 points each, 20 points total, reported as a score out of 10 to one decimal; stars are the visual at half-star resolution",
     "authored_by": "SaaSpare editorial",
     "note": "Editorial score, not user reviews. Measures how transparent a vendor's own pricing page is with the buyer. Deterministic: recomputed from verified data, never hand-set.",
     "criteria": [
@@ -49,6 +49,16 @@
         "key": "seats_at_list",
         "label": "Extra seats at list price",
         "test": "Adding a colleague costs the advertised per-seat price, with no surcharge."
+      },
+      {
+        "key": "price_is_the_bill",
+        "label": "The price is the whole bill",
+        "test": "No usage or transaction charges metered on top of the published plan price."
+      },
+      {
+        "key": "no_intro_cliff",
+        "label": "No intro-price cliff",
+        "test": "The advertised entry price is the real one, not a promotion that expires."
       }
     ]
   },
@@ -67,33 +77,15 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 16,
-      "max_points": 16,
+      "points": 20,
+      "max_points": 20,
+      "score10": 10.0,
       "stars": 5.0,
       "worst_annual_gap_pct": 23
-    },
-    {
-      "tool": "datadog",
-      "vendor": "Datadog",
-      "category": "dev-tools",
-      "source_url": "https://www.datadoghq.com/pricing/",
-      "affiliate_slug": "datadog",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "free_tier": 2,
-        "trial_no_card": 2,
-        "fair_annual_gap": 2,
-        "seats_at_list": 2
-      },
-      "points": 16,
-      "max_points": 16,
-      "stars": 5.0,
-      "worst_annual_gap_pct": 0
     },
     {
       "tool": "helpscout",
@@ -109,10 +101,13 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 16,
-      "max_points": 16,
+      "points": 20,
+      "max_points": 20,
+      "score10": 10.0,
       "stars": 5.0,
       "worst_annual_gap_pct": 19
     },
@@ -130,10 +125,13 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 16,
-      "max_points": 16,
+      "points": 20,
+      "max_points": 20,
+      "score10": 10.0,
       "stars": 5.0,
       "worst_annual_gap_pct": 2
     },
@@ -151,10 +149,13 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 16,
-      "max_points": 16,
+      "points": 20,
+      "max_points": 20,
+      "score10": 10.0,
       "stars": 5.0,
       "worst_annual_gap_pct": 0
     },
@@ -172,33 +173,15 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 16,
-      "max_points": 16,
+      "points": 20,
+      "max_points": 20,
+      "score10": 10.0,
       "stars": 5.0,
       "worst_annual_gap_pct": 0
-    },
-    {
-      "tool": "wave",
-      "vendor": "Wave",
-      "category": "finance",
-      "source_url": "https://www.waveapps.com/pricing",
-      "affiliate_slug": "wave",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "free_tier": 2,
-        "trial_no_card": 2,
-        "fair_annual_gap": 2,
-        "seats_at_list": 2
-      },
-      "points": 16,
-      "max_points": 16,
-      "stars": 5.0,
-      "worst_annual_gap_pct": 20
     },
     {
       "tool": "1password",
@@ -214,11 +197,14 @@
         "free_tier": 1,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
+      "points": 19,
+      "max_points": 20,
+      "score10": 9.5,
+      "stars": 5.0,
       "worst_annual_gap_pct": 0
     },
     {
@@ -235,11 +221,14 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
+      "points": 19,
+      "max_points": 20,
+      "score10": 9.5,
+      "stars": 5.0,
       "worst_annual_gap_pct": 0
     },
     {
@@ -256,11 +245,14 @@
         "free_tier": 2,
         "trial_no_card": 1,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
+      "points": 19,
+      "max_points": 20,
+      "score10": 9.5,
+      "stars": 5.0,
       "worst_annual_gap_pct": 0
     },
     {
@@ -277,11 +269,14 @@
         "free_tier": 2,
         "trial_no_card": 1,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
+      "points": 19,
+      "max_points": 20,
+      "score10": 9.5,
+      "stars": 5.0,
       "worst_annual_gap_pct": 0
     },
     {
@@ -298,11 +293,14 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 1,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
+      "points": 19,
+      "max_points": 20,
+      "score10": 9.5,
+      "stars": 5.0,
       "worst_annual_gap_pct": 58
     },
     {
@@ -319,53 +317,14 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
-      "worst_annual_gap_pct": 0
-    },
-    {
-      "tool": "github",
-      "vendor": "GitHub",
-      "category": "dev-tools",
-      "source_url": "https://github.com/pricing",
-      "affiliate_slug": "github",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "free_tier": 2,
-        "trial_no_card": 1,
-        "fair_annual_gap": 2,
-        "seats_at_list": 2
-      },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
-      "worst_annual_gap_pct": 0
-    },
-    {
-      "tool": "netlify",
-      "vendor": "Netlify",
-      "category": "dev-tools",
-      "source_url": "https://www.netlify.com/pricing/",
-      "affiliate_slug": "netlify",
-      "criteria": {
-        "published_pricing": 1,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "free_tier": 2,
-        "trial_no_card": 2,
-        "fair_annual_gap": 2,
-        "seats_at_list": 2
-      },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
+      "points": 19,
+      "max_points": 20,
+      "score10": 9.5,
+      "stars": 5.0,
       "worst_annual_gap_pct": 0
     },
     {
@@ -382,54 +341,15 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
+      "points": 19,
+      "max_points": 20,
+      "score10": 9.5,
+      "stars": 5.0,
       "worst_annual_gap_pct": 20
-    },
-    {
-      "tool": "quickbooks",
-      "vendor": "QuickBooks",
-      "category": "finance",
-      "source_url": "https://quickbooks.intuit.com/pricing/",
-      "affiliate_slug": "quickbooks",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "free_tier": 1,
-        "trial_no_card": 2,
-        "fair_annual_gap": 2,
-        "seats_at_list": 2
-      },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
-      "worst_annual_gap_pct": 0
-    },
-    {
-      "tool": "slack",
-      "vendor": "Slack",
-      "category": "collaboration",
-      "source_url": "https://slack.com/pricing",
-      "affiliate_slug": "slack",
-      "criteria": {
-        "published_pricing": 1,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "free_tier": 2,
-        "trial_no_card": 2,
-        "fair_annual_gap": 2,
-        "seats_at_list": 2
-      },
-      "points": 15,
-      "max_points": 16,
-      "stars": 4.5,
-      "worst_annual_gap_pct": 21
     },
     {
       "tool": "calendly",
@@ -445,12 +365,39 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 1,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 25
+    },
+    {
+      "tool": "datadog",
+      "vendor": "Datadog",
+      "category": "dev-tools",
+      "source_url": "https://www.datadoghq.com/pricing/",
+      "affiliate_slug": "datadog",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2,
+        "price_is_the_bill": 0,
+        "no_intro_cliff": 2
+      },
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
     },
     {
       "tool": "figma",
@@ -466,31 +413,13 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
-      "stars": 4.5,
-      "worst_annual_gap_pct": 0
-    },
-    {
-      "tool": "freshbooks",
-      "vendor": "FreshBooks",
-      "category": "finance",
-      "source_url": "https://www.freshbooks.com/pricing",
-      "affiliate_slug": "freshbooks",
-      "criteria": {
-        "published_pricing": 1,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "free_tier": 1,
-        "trial_no_card": 2,
-        "fair_annual_gap": 2,
-        "seats_at_list": 2
-      },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 0
     },
@@ -508,10 +437,13 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 0
     },
@@ -529,10 +461,13 @@
         "free_tier": 2,
         "trial_no_card": 1,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 20
     },
@@ -550,10 +485,13 @@
         "free_tier": 2,
         "trial_no_card": 1,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 25
     },
@@ -571,10 +509,13 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 1,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 33
     },
@@ -592,33 +533,15 @@
         "free_tier": 1,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 0
-    },
-    {
-      "tool": "shopify",
-      "vendor": "Shopify",
-      "category": "ecommerce",
-      "source_url": "https://www.shopify.com/pricing",
-      "affiliate_slug": "shopify",
-      "criteria": {
-        "published_pricing": 2,
-        "no_setup_fee": 2,
-        "single_seat": 2,
-        "monthly_billing": 2,
-        "free_tier": 1,
-        "trial_no_card": 2,
-        "fair_annual_gap": 1,
-        "seats_at_list": 2
-      },
-      "points": 14,
-      "max_points": 16,
-      "stars": 4.5,
-      "worst_annual_gap_pct": 34
     },
     {
       "tool": "tresorit",
@@ -634,10 +557,13 @@
         "free_tier": 1,
         "trial_no_card": 2,
         "fair_annual_gap": 1,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 25
     },
@@ -655,33 +581,39 @@
         "free_tier": 2,
         "trial_no_card": 1,
         "fair_annual_gap": 1,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 42
     },
     {
-      "tool": "vercel",
-      "vendor": "Vercel",
-      "category": "dev-tools",
-      "source_url": "https://vercel.com/pricing",
-      "affiliate_slug": "vercel",
+      "tool": "wave",
+      "vendor": "Wave",
+      "category": "finance",
+      "source_url": "https://www.waveapps.com/pricing",
+      "affiliate_slug": "wave",
       "criteria": {
-        "published_pricing": 0,
+        "published_pricing": 2,
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 2,
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 0
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
-      "worst_annual_gap_pct": 0
+      "worst_annual_gap_pct": 20
     },
     {
       "tool": "zapier",
@@ -697,12 +629,63 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 1,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 14,
-      "max_points": 16,
+      "points": 18,
+      "max_points": 20,
+      "score10": 9.0,
       "stars": 4.5,
       "worst_annual_gap_pct": 50
+    },
+    {
+      "tool": "github",
+      "vendor": "GitHub",
+      "category": "dev-tools",
+      "source_url": "https://github.com/pricing",
+      "affiliate_slug": "github",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 1,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 0
+      },
+      "points": 17,
+      "max_points": 20,
+      "score10": 8.5,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "netlify",
+      "vendor": "Netlify",
+      "category": "dev-tools",
+      "source_url": "https://www.netlify.com/pricing/",
+      "affiliate_slug": "netlify",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2,
+        "price_is_the_bill": 0,
+        "no_intro_cliff": 2
+      },
+      "points": 17,
+      "max_points": 20,
+      "score10": 8.5,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 0
     },
     {
       "tool": "pipedrive",
@@ -718,12 +701,39 @@
         "free_tier": 1,
         "trial_no_card": 2,
         "fair_annual_gap": 0,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 13,
-      "max_points": 16,
+      "points": 17,
+      "max_points": 20,
+      "score10": 8.5,
       "stars": 4.0,
       "worst_annual_gap_pct": 71
+    },
+    {
+      "tool": "quickbooks",
+      "vendor": "QuickBooks",
+      "category": "finance",
+      "source_url": "https://quickbooks.intuit.com/pricing/",
+      "affiliate_slug": "quickbooks",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 0
+      },
+      "points": 17,
+      "max_points": 20,
+      "score10": 8.5,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 0
     },
     {
       "tool": "semrush",
@@ -739,12 +749,39 @@
         "free_tier": 1,
         "trial_no_card": 0,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 13,
-      "max_points": 16,
+      "points": 17,
+      "max_points": 20,
+      "score10": 8.5,
       "stars": 4.0,
       "worst_annual_gap_pct": 20
+    },
+    {
+      "tool": "slack",
+      "vendor": "Slack",
+      "category": "collaboration",
+      "source_url": "https://slack.com/pricing",
+      "affiliate_slug": "slack",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 0
+      },
+      "points": 17,
+      "max_points": 20,
+      "score10": 8.5,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 21
     },
     {
       "tool": "trello",
@@ -760,10 +797,13 @@
         "free_tier": 2,
         "trial_no_card": 1,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 13,
-      "max_points": 16,
+      "points": 17,
+      "max_points": 20,
+      "score10": 8.5,
       "stars": 4.0,
       "worst_annual_gap_pct": 25
     },
@@ -781,10 +821,37 @@
         "free_tier": 2,
         "trial_no_card": 1,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 12,
-      "max_points": 16,
+      "points": 16,
+      "max_points": 20,
+      "score10": 8.0,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "freshbooks",
+      "vendor": "FreshBooks",
+      "category": "finance",
+      "source_url": "https://www.freshbooks.com/pricing",
+      "affiliate_slug": "freshbooks",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 0
+      },
+      "points": 16,
+      "max_points": 20,
+      "score10": 8.0,
       "stars": 4.0,
       "worst_annual_gap_pct": 0
     },
@@ -802,31 +869,61 @@
         "free_tier": 2,
         "trial_no_card": 2,
         "fair_annual_gap": 0,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 12,
-      "max_points": 16,
+      "points": 16,
+      "max_points": 20,
+      "score10": 8.0,
       "stars": 4.0,
       "worst_annual_gap_pct": 186
     },
     {
-      "tool": "xero",
-      "vendor": "Xero",
-      "category": "finance",
-      "source_url": "https://www.xero.com/us/pricing-plans/",
-      "affiliate_slug": "xero",
+      "tool": "shopify",
+      "vendor": "Shopify",
+      "category": "ecommerce",
+      "source_url": "https://www.shopify.com/pricing",
+      "affiliate_slug": "shopify",
       "criteria": {
         "published_pricing": 2,
         "no_setup_fee": 2,
         "single_seat": 2,
         "monthly_billing": 2,
-        "free_tier": 0,
-        "trial_no_card": 0,
-        "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2,
+        "price_is_the_bill": 0,
+        "no_intro_cliff": 2
       },
-      "points": 12,
-      "max_points": 16,
+      "points": 16,
+      "max_points": 20,
+      "score10": 8.0,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 34
+    },
+    {
+      "tool": "vercel",
+      "vendor": "Vercel",
+      "category": "dev-tools",
+      "source_url": "https://vercel.com/pricing",
+      "affiliate_slug": "vercel",
+      "criteria": {
+        "published_pricing": 0,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2,
+        "price_is_the_bill": 0,
+        "no_intro_cliff": 2
+      },
+      "points": 16,
+      "max_points": 20,
+      "score10": 8.0,
       "stars": 4.0,
       "worst_annual_gap_pct": 0
     },
@@ -844,11 +941,14 @@
         "free_tier": 0,
         "trial_no_card": 0,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 11,
-      "max_points": 16,
-      "stars": 3.5,
+      "points": 15,
+      "max_points": 20,
+      "score10": 7.5,
+      "stars": 4.0,
       "worst_annual_gap_pct": 0
     },
     {
@@ -865,11 +965,38 @@
         "free_tier": 1,
         "trial_no_card": 0,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 10,
-      "max_points": 16,
-      "stars": 3.0,
+      "points": 14,
+      "max_points": 20,
+      "score10": 7.0,
+      "stars": 3.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "xero",
+      "vendor": "Xero",
+      "category": "finance",
+      "source_url": "https://www.xero.com/us/pricing-plans/",
+      "affiliate_slug": "xero",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 0,
+        "trial_no_card": 0,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 0
+      },
+      "points": 14,
+      "max_points": 20,
+      "score10": 7.0,
+      "stars": 3.5,
       "worst_annual_gap_pct": 0
     },
     {
@@ -886,11 +1013,14 @@
         "free_tier": 1,
         "trial_no_card": 0,
         "fair_annual_gap": 2,
-        "seats_at_list": 2
+        "seats_at_list": 2,
+        "price_is_the_bill": 2,
+        "no_intro_cliff": 2
       },
-      "points": 10,
-      "max_points": 16,
-      "stars": 3.0,
+      "points": 14,
+      "max_points": 20,
+      "score10": 7.0,
+      "stars": 3.5,
       "worst_annual_gap_pct": 0
     },
     {
@@ -907,10 +1037,13 @@
         "free_tier": 0,
         "trial_no_card": 0,
         "fair_annual_gap": 2,
-        "seats_at_list": 0
+        "seats_at_list": 0,
+        "price_is_the_bill": 0,
+        "no_intro_cliff": 2
       },
-      "points": 9,
-      "max_points": 16,
+      "points": 11,
+      "max_points": 20,
+      "score10": 5.5,
       "stars": 3.0,
       "worst_annual_gap_pct": 20
     }

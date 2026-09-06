@@ -82,7 +82,7 @@ def stars_svg(value, size=16):
     return "".join(out)
 
 
-def block(s, v, seed_tool, verified):
+def block(s, v, seed_tool, verified, total):
     plan = cheapest_paid(seed_tool)
     app = {
         "@context": "https://schema.org",
@@ -94,6 +94,9 @@ def block(s, v, seed_tool, verified):
         "review": {
             "@type": "Review",
             "name": v["headline"],
+            # Schema keeps the 0-5 star scale, which is what review snippets
+            # expect. The visible block shows the /10 score, matching the
+            # ranking page.
             "reviewRating": {"@type": "Rating", "ratingValue": s["stars"],
                              "bestRating": 5, "worstRating": 1},
             "author": ORG,
@@ -153,7 +156,7 @@ def block(s, v, seed_tool, verified):
     </div>
     <div class="sptr-tool-rate">
       <span class="sptr-tool-stars" role="img" aria-label="{s['stars']} out of 5">{stars_svg(s['stars'])}</span>
-      <span class="sptr-tool-num">{s['stars']}<span>/5</span></span>
+      <span class="sptr-tool-num">{s['score10']}<span>/10</span></span>
     </div>
   </div>
   <p class="v">{v['body']}</p>
@@ -162,9 +165,9 @@ def block(s, v, seed_tool, verified):
     <p class="w"><b>Watch for</b>{v['watch_for']}</p>
   </div>
   <p class="sptr-tool-foot">Editorial score by SaaSpare, not a user rating.
-  {s['points']}/{s['max_points']} points across eight pricing-transparency tests,
+  {s['points']}/{s['max_points']} points across ten pricing-transparency tests,
   computed from pricing verified {verified}.
-  <a href="{RANKING}">See how all 15 tools rank</a>.</p>
+  <a href="{RANKING}">See how all {total} tools rank</a>.</p>
 </section>
 {END}"""
     return visible, app
@@ -247,7 +250,7 @@ def main():
             continue
 
         html = p.read_text(encoding="utf-8", errors="replace")
-        visible, app = block(s, v, seed[tool], verified)
+        visible, app = block(s, v, seed[tool], verified, len(scores))
 
         # Clear anything from a previous run first, so a merge and an appended
         # node can never both end up on the page.

@@ -6,16 +6,22 @@
   },
   "onboarding_fees": [
     {
-      "vendor": "HubSpot", "plan": "Sales Hub Professional",
-      "fee_usd": 1500, "recurrence": "one-time", "mandatory": true,
+      "vendor": "HubSpot",
+      "plan": "Sales Hub Professional",
+      "fee_usd": 1500,
+      "recurrence": "one-time",
+      "mandatory": true,
       "quote": "Professional Onboarding for a fee of $1,500",
       "page_wording": "required, one-time",
       "advertised_monthly_usd": 100,
       "source": "https://www.hubspot.com/pricing/sales"
     },
     {
-      "vendor": "HubSpot", "plan": "Sales Hub Enterprise",
-      "fee_usd": 3500, "recurrence": "one-time", "mandatory": true,
+      "vendor": "HubSpot",
+      "plan": "Sales Hub Enterprise",
+      "fee_usd": 3500,
+      "recurrence": "one-time",
+      "mandatory": true,
       "quote": "Enterprise Onboarding for a fee of $3,500",
       "page_wording": "required, one-time",
       "advertised_monthly_usd": 150,
@@ -24,31 +30,171 @@
   ],
   "seat_minimums": [
     {
-      "vendor": "monday.com", "plan": "Basic / Standard / Pro",
+      "vendor": "monday.com",
+      "plan": "Basic / Standard / Pro",
       "min_seats": 3,
       "quote": "Plans start from 3 users.",
-      "advertised_price": 14, "currency": "AUD",
+      "advertised_price": 14,
+      "currency": "AUD",
       "source": "https://monday.com/pricing/"
     }
   ],
   "annual_only": [
-    {"vendor": "Salesforce", "plan": "Pro Suite", "price_usd": 100, "quote": "Billed annually", "annual_commitment_usd": 1200, "source": "https://www.salesforce.com/sales/pricing/"},
-    {"vendor": "Salesforce", "plan": "Core", "price_usd": 195, "quote": "Billed annually", "annual_commitment_usd": 2340, "source": "https://www.salesforce.com/sales/pricing/"},
-    {"vendor": "Salesforce", "plan": "Advanced", "price_usd": 395, "quote": "Billed annually", "annual_commitment_usd": 4740, "source": "https://www.salesforce.com/sales/pricing/"},
-    {"vendor": "Salesforce", "plan": "Max", "price_usd": 550, "quote": "Billed annually", "annual_commitment_usd": 6600, "source": "https://www.salesforce.com/sales/pricing/"},
-    {"vendor": "Ahrefs", "plan": "Enterprise", "price_usd": 1499, "quote": "Annual commitment required", "annual_commitment_usd": 14990, "source": "https://ahrefs.com/pricing"}
+    {
+      "vendor": "Salesforce",
+      "plan": "Pro Suite",
+      "price_usd": 100,
+      "quote": "Billed annually",
+      "annual_commitment_usd": 1200,
+      "source": "https://www.salesforce.com/sales/pricing/"
+    },
+    {
+      "vendor": "Salesforce",
+      "plan": "Core",
+      "price_usd": 195,
+      "quote": "Billed annually",
+      "annual_commitment_usd": 2340,
+      "source": "https://www.salesforce.com/sales/pricing/"
+    },
+    {
+      "vendor": "Salesforce",
+      "plan": "Advanced",
+      "price_usd": 395,
+      "quote": "Billed annually",
+      "annual_commitment_usd": 4740,
+      "source": "https://www.salesforce.com/sales/pricing/"
+    },
+    {
+      "vendor": "Salesforce",
+      "plan": "Max",
+      "price_usd": 550,
+      "quote": "Billed annually",
+      "annual_commitment_usd": 6600,
+      "source": "https://www.salesforce.com/sales/pricing/"
+    },
+    {
+      "vendor": "Ahrefs",
+      "plan": "Enterprise",
+      "price_usd": 1499,
+      "quote": "Annual commitment required",
+      "annual_commitment_usd": 14990,
+      "source": "https://ahrefs.com/pricing"
+    }
   ],
   "monthly_billing_penalty": [
-    {"vendor": "HubSpot", "plan": "Sales Hub Starter", "annual_rate_usd": 7, "monthly_rate_usd": 20, "source": "https://www.hubspot.com/pricing/sales"},
-    {"vendor": "HubSpot", "plan": "Sales Hub Professional", "annual_rate_usd": 90, "monthly_rate_usd": 100, "source": "https://www.hubspot.com/pricing/sales"}
+    {
+      "vendor": "HubSpot",
+      "plan": "Sales Hub Starter",
+      "annual_rate_usd": 7,
+      "monthly_rate_usd": 20,
+      "source": "https://www.hubspot.com/pricing/sales"
+    },
+    {
+      "vendor": "HubSpot",
+      "plan": "Sales Hub Professional",
+      "annual_rate_usd": 90,
+      "monthly_rate_usd": 100,
+      "source": "https://www.hubspot.com/pricing/sales"
+    }
   ],
   "extra_seat_costs": [
-    {"vendor": "Ahrefs", "plan": "Lite", "included_users": 1, "extra_seat_usd": 40, "max_extra": 2, "source": "https://ahrefs.com/pricing"},
-    {"vendor": "Ahrefs", "plan": "Standard", "included_users": 1, "extra_seat_usd": 60, "max_extra": 5, "source": "https://ahrefs.com/pricing"},
-    {"vendor": "Ahrefs", "plan": "Advanced", "included_users": 1, "extra_seat_usd": 80, "max_extra": 10, "source": "https://ahrefs.com/pricing"}
+    {
+      "vendor": "Ahrefs",
+      "plan": "Lite",
+      "included_users": 1,
+      "extra_seat_usd": 40,
+      "max_extra": 2,
+      "source": "https://ahrefs.com/pricing"
+    },
+    {
+      "vendor": "Ahrefs",
+      "plan": "Standard",
+      "included_users": 1,
+      "extra_seat_usd": 60,
+      "max_extra": 5,
+      "source": "https://ahrefs.com/pricing"
+    },
+    {
+      "vendor": "Ahrefs",
+      "plan": "Advanced",
+      "included_users": 1,
+      "extra_seat_usd": 80,
+      "max_extra": 10,
+      "source": "https://ahrefs.com/pricing"
+    }
   ],
   "checked_and_none_found": [
-    {"vendor": "monday.com", "checked_for": "onboarding or implementation fee", "result": "No mention of onboarding, implementation, or setup fees on the pricing page.", "source": "https://monday.com/pricing/"},
-    {"vendor": "Salesforce", "checked_for": "seat minimum or implementation fee", "result": "Page does not state a minimum user count or a one-time implementation fee for any Sales Cloud plan.", "source": "https://www.salesforce.com/sales/pricing/"}
-  ]
+    {
+      "vendor": "monday.com",
+      "checked_for": "onboarding or implementation fee",
+      "result": "No mention of onboarding, implementation, or setup fees on the pricing page.",
+      "source": "https://monday.com/pricing/"
+    },
+    {
+      "vendor": "Salesforce",
+      "checked_for": "seat minimum or implementation fee",
+      "result": "Page does not state a minimum user count or a one-time implementation fee for any Sales Cloud plan.",
+      "source": "https://www.salesforce.com/sales/pricing/"
+    }
+  ],
+  "metered_on_top": {
+    "_what": "Vendors that charge usage on TOP of a published seat price, so the seat price is a floor rather than the bill. Excludes vendors like Stripe and Wave whose whole model is transactional with no seat fee to be surprised beyond - there the percentage IS the advertised price.",
+    "vendors": [
+      {
+        "vendor": "Vercel",
+        "what": "Edge requests, bandwidth, function invocations, build minutes, image transformations, all metered above a $20 included credit."
+      },
+      {
+        "vendor": "Netlify",
+        "what": "Credit system for builds, bandwidth and compute on every tier including paid."
+      },
+      {
+        "vendor": "Datadog",
+        "what": "Host and volume-based charges sit outside the per-seat price."
+      },
+      {
+        "vendor": "Shopify",
+        "what": "Transaction fees apply on top of the plan and vary by payment method."
+      },
+      {
+        "vendor": "Ahrefs",
+        "what": "Pay-as-you-go credits for extra workspaces above the plan."
+      }
+    ]
+  },
+  "intro_price_step_up": {
+    "_what": "Vendors whose advertised entry price is a time-limited promotion, so the bill rises sharply on a known date. The discount is disclosed; the step-up is what buyers miss when budgeting.",
+    "vendors": [
+      {
+        "vendor": "Xero",
+        "discount": "90% off for 6 months",
+        "step_up": "$2.50 -> $25 at month 7, a 10x increase"
+      },
+      {
+        "vendor": "QuickBooks",
+        "discount": "50% off for 3 months",
+        "step_up": "$19 -> $38 at month 4"
+      },
+      {
+        "vendor": "FreshBooks",
+        "discount": "90% off for 3 months",
+        "step_up": "returns to $23-$70 list at month 4"
+      },
+      {
+        "vendor": "Slack",
+        "discount": "50% off for 3 months on Pro and Business+",
+        "step_up": "returns to list at month 4"
+      },
+      {
+        "vendor": "Wave",
+        "discount": "$9.50/mo for the first 3 months on Pro",
+        "step_up": "$9.50 -> $19 at month 4"
+      },
+      {
+        "vendor": "GitHub",
+        "discount": "page states pricing is 'for the first 12 months'",
+        "step_up": "rate after month 12 is not published"
+      }
+    ]
+  }
 }

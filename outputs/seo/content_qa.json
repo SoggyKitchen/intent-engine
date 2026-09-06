@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T08:28:51.307138+00:00",
+  "generated_at": "2026-09-06T08:51:46.142070+00:00",
   "stats": {
     "sitemap_urls": 518,
     "sitemap_with_lastmod": 518,
@@ -7,13 +7,15 @@
     "indexable_pages": 540,
     "desc_over_165": 17,
     "title_over_70": 128,
-    "money_pages": 292,
-    "soft": 2
+    "soft": 4,
+    "money_pages": 292
   },
   "hard_failures": [],
   "soft_issues": [
-    "site/templates/index.html: 1 em-dash(es) — run scripts/humanize_text.py",
-    "site/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step.html: /go/ link without rel attribute: /go/sucuri"
+    "site/index.html: 1 em-dash(es) — run scripts/humanize_text.py",
+    "site/pages/saas-pricing-transparency-scores-2026.html: money page missing affiliate disclosure mention",
+    "site/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step.html: /go/ link without rel attribute: /go/sucuri",
+    "site/templates/index.html: 1 em-dash(es) — run scripts/humanize_text.py"
   ],
-  "soft_issues_total": 2
+  "soft_issues_total": 4
 }
