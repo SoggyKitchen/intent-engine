@@ -17,6 +17,13 @@
 # Low authority and mostly nofollow, but they are legitimate distribution of our
 # own press releases, not spam.
 #
+# INCOMPLETE - known gap. The Search Atlas anchor report (2026-09-06) shows the
+# PBN anchor "high quality dofollow backli..." across 26 REFERRING DOMAINS.
+# Only 8 of them were enumerable from the backlink list before the trial
+# expired, so roughly 18 spam domains are missing from this file. Treat it as a
+# starting point, not a complete cleanup. Re-derive from a fresh backlink tool
+# if this is ever actually submitted.
+#
 # To submit: https://search.google.com/search-console/disavow-links
 # Select the sc-domain:saaspare.org property and upload this file.
 # Disavow is not reversible quickly - read each line before submitting.

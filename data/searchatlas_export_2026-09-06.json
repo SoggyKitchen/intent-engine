@@ -5,7 +5,6 @@
     "why": "Trial ends 2026-09-07. This is the last snapshot we get from this tool, so everything usable was pulled out before it expired. Treat every number here as of the capture date, not as live.",
     "note": "app.searchatlas.com returns HTTP 503; the working host is dashboard.searchatlas.com."
   },
-
   "domains": {
     "saaspare.org": {
       "domain_rating": 11,
@@ -23,7 +22,12 @@
       "organic_keywords": 0,
       "organic_traffic": 0,
       "organic_traffic_value_usd": 0,
-      "holistic_pillars": {"content": 13, "authority": 3, "technical": 96, "ux_signals": 0}
+      "holistic_pillars": {
+        "content": 13,
+        "authority": 3,
+        "technical": 96,
+        "ux_signals": 0
+      }
     },
     "saaspare.com": {
       "domain_rating": 0,
@@ -39,105 +43,419 @@
       "organic_keywords": 15,
       "organic_traffic": 22,
       "organic_traffic_value_usd": 86,
-      "holistic_pillars": {"content": 13, "authority": 0, "technical": null, "ux_signals": 52.5}
+      "holistic_pillars": {
+        "content": 13,
+        "authority": 0,
+        "technical": null,
+        "ux_signals": 52.5
+      }
     }
   },
-
   "competitor_keyword_reality_check": {
     "finding": "saaspare.com's 15 keywords are worthless. ZERO rank in the top 20: 3 sit at position 21-50 and 12 at 51-100. The traffic column reads 0 or blank for every single one. Their '22 organic traffic' is a modelled estimate, not measured clicks.",
-    "position_buckets": {"top_3": 0, "pos_4_10": 0, "pos_11_20": 0, "pos_21_50": 3, "pos_51_100": 12},
+    "position_buckets": {
+      "top_3": 0,
+      "pos_4_10": 0,
+      "pos_11_20": 0,
+      "pos_21_50": 3,
+      "pos_51_100": 12
+    },
     "implication": "We have been treating them as ahead of us. On this data neither site has real organic traffic. Their only genuine edge is brand signal (52.5 vs our 0), which the 2026-09-06 entity fix targets directly.",
     "keywords": [
-      {"kw": "clickitup", "pos": 21, "vol": 14800, "cpc": 3.94, "kd": 55, "note": "misspelling of clickup"},
-      {"kw": "mailchimp or", "pos": 80, "vol": 50, "cpc": 16.52, "kd": 48, "note": "fragment"},
-      {"kw": "liniar", "pos": 65, "vol": 390, "cpc": 0.0, "kd": 41, "note": "misspelling of linear"},
-      {"kw": "hr payroll saas", "pos": 71, "vol": 40, "cpc": 0.0, "kd": null},
-      {"kw": "sketch price", "pos": 74, "vol": 40, "cpc": 0.0, "kd": 20},
-      {"kw": "moz pricing", "pos": 61, "vol": 3600, "cpc": 17.0, "kd": 49, "note": "real volume, they rank 61"},
-      {"kw": "wpenginer", "pos": 71, "vol": 210, "cpc": 3.21, "kd": 70, "note": "misspelling of wpengine"},
-      {"kw": "circle.so pricing plans", "pos": 74, "vol": 40, "cpc": 0.0, "kd": 22},
-      {"kw": "linear vs asana", "pos": 52, "vol": 90, "cpc": 15.17, "kd": 8, "note": "KD 8 - very easy, they only rank 52"},
-      {"kw": "canvas monthly price", "pos": 53, "vol": 50, "cpc": 0.0, "kd": 23, "note": "misspelling of canva"},
-      {"kw": "linear orbit", "pos": 37, "vol": 110, "cpc": 0.0, "kd": 40},
-      {"kw": "sketch pricing", "pos": 68, "vol": 90, "cpc": 0.0, "kd": 24},
-      {"kw": "circle platform pricing", "pos": 57, "vol": 50, "cpc": 16.91, "kd": 16},
-      {"kw": "omr reviews hubspot crm preis-leistung", "pos": 32, "vol": 50, "cpc": 0.0, "kd": 29, "note": "German"},
-      {"kw": "rippling peo cost", "pos": 89, "vol": 30, "cpc": 64.14, "kd": 36, "note": "CPC $64"}
+      {
+        "kw": "clickitup",
+        "pos": 21,
+        "vol": 14800,
+        "cpc": 3.94,
+        "kd": 55,
+        "note": "misspelling of clickup"
+      },
+      {
+        "kw": "mailchimp or",
+        "pos": 80,
+        "vol": 50,
+        "cpc": 16.52,
+        "kd": 48,
+        "note": "fragment"
+      },
+      {
+        "kw": "liniar",
+        "pos": 65,
+        "vol": 390,
+        "cpc": 0.0,
+        "kd": 41,
+        "note": "misspelling of linear"
+      },
+      {
+        "kw": "hr payroll saas",
+        "pos": 71,
+        "vol": 40,
+        "cpc": 0.0,
+        "kd": null
+      },
+      {
+        "kw": "sketch price",
+        "pos": 74,
+        "vol": 40,
+        "cpc": 0.0,
+        "kd": 20
+      },
+      {
+        "kw": "moz pricing",
+        "pos": 61,
+        "vol": 3600,
+        "cpc": 17.0,
+        "kd": 49,
+        "note": "real volume, they rank 61"
+      },
+      {
+        "kw": "wpenginer",
+        "pos": 71,
+        "vol": 210,
+        "cpc": 3.21,
+        "kd": 70,
+        "note": "misspelling of wpengine"
+      },
+      {
+        "kw": "circle.so pricing plans",
+        "pos": 74,
+        "vol": 40,
+        "cpc": 0.0,
+        "kd": 22
+      },
+      {
+        "kw": "linear vs asana",
+        "pos": 52,
+        "vol": 90,
+        "cpc": 15.17,
+        "kd": 8,
+        "note": "KD 8 - very easy, they only rank 52"
+      },
+      {
+        "kw": "canvas monthly price",
+        "pos": 53,
+        "vol": 50,
+        "cpc": 0.0,
+        "kd": 23,
+        "note": "misspelling of canva"
+      },
+      {
+        "kw": "linear orbit",
+        "pos": 37,
+        "vol": 110,
+        "cpc": 0.0,
+        "kd": 40
+      },
+      {
+        "kw": "sketch pricing",
+        "pos": 68,
+        "vol": 90,
+        "cpc": 0.0,
+        "kd": 24
+      },
+      {
+        "kw": "circle platform pricing",
+        "pos": 57,
+        "vol": 50,
+        "cpc": 16.91,
+        "kd": 16
+      },
+      {
+        "kw": "omr reviews hubspot crm preis-leistung",
+        "pos": 32,
+        "vol": 50,
+        "cpc": 0.0,
+        "kd": 29,
+        "note": "German"
+      },
+      {
+        "kw": "rippling peo cost",
+        "pos": 89,
+        "vol": 30,
+        "cpc": 64.14,
+        "kd": 36,
+        "note": "CPC $64"
+      }
     ],
     "their_url_pattern": "/tools/<tool>, /tools/<tool>/pricing, /compare/<a>-vs-<b>, /best-<category>-software - short and clean vs our long descriptive slugs"
   },
-
   "ai_visibility": {
     "headline": "This is the single most valuable thing in the account. We hold a real beachhead in ChatGPT on exactly the topic we have been building for.",
     "overall_visibility_pct": 3.3,
     "overall_sentiment_pct": 72.6,
     "avg_citations_per_scan": 165,
     "by_platform": {
-      "chatgpt_openai": {"visibility": 10, "topics": 1, "sentiment": 65.2},
-      "gemini": {"visibility": 0, "sentiment": 82.5},
-      "google_ai_mode": {"visibility": 0, "sentiment": 72.0}
+      "chatgpt_openai": {
+        "visibility": 10,
+        "topics": 1,
+        "sentiment": 65.2
+      },
+      "gemini": {
+        "visibility": 0,
+        "sentiment": 82.5
+      },
+      "google_ai_mode": {
+        "visibility": 0,
+        "sentiment": 72.0
+      }
     },
     "topics": [
-      {"topic": "Real SaaS Pricing Data", "visibility": 16, "rank": "#4", "citation_share_pct": 2, "search_volume": 0},
-      {"topic": "SEO Tools Comparisons", "visibility": 0, "rank": null, "search_volume": 2600},
-      {"topic": "CRM SaaS Comparisons", "visibility": 0, "rank": null, "search_volume": 0},
-      {"topic": "Project Management Tools Comparisons", "visibility": 0, "rank": null, "search_volume": 0},
-      {"topic": "Unbiased SaaS Comparisons", "visibility": 0, "rank": null, "search_volume": 0}
+      {
+        "topic": "Real SaaS Pricing Data",
+        "visibility": 16,
+        "rank": "#4",
+        "citation_share_pct": 2,
+        "search_volume": 0
+      },
+      {
+        "topic": "SEO Tools Comparisons",
+        "visibility": 0,
+        "rank": null,
+        "search_volume": 2600
+      },
+      {
+        "topic": "CRM SaaS Comparisons",
+        "visibility": 0,
+        "rank": null,
+        "search_volume": 0
+      },
+      {
+        "topic": "Project Management Tools Comparisons",
+        "visibility": 0,
+        "rank": null,
+        "search_volume": 0
+      },
+      {
+        "topic": "Unbiased SaaS Comparisons",
+        "visibility": 0,
+        "rank": null,
+        "search_volume": 0
+      }
     ],
     "real_saas_pricing_data_leaderboard": [
-      {"rank": 1, "brand": "g2.com", "visibility_pct": 50.0},
-      {"rank": 2, "brand": "capterra.com", "visibility_pct": 33.3},
-      {"rank": 2, "brand": "notion.so", "visibility_pct": 33.3},
-      {"rank": 2, "brand": "trulycritic.com", "visibility_pct": 33.3},
-      {"rank": 5, "brand": "atlassian.com", "visibility_pct": 16.7},
-      {"rank": 5, "brand": "saaspare.org", "visibility_pct": 16.0, "note": "us"}
+      {
+        "rank": 1,
+        "brand": "g2.com",
+        "visibility_pct": 50.0
+      },
+      {
+        "rank": 2,
+        "brand": "capterra.com",
+        "visibility_pct": 33.3
+      },
+      {
+        "rank": 2,
+        "brand": "notion.so",
+        "visibility_pct": 33.3
+      },
+      {
+        "rank": 2,
+        "brand": "trulycritic.com",
+        "visibility_pct": 33.3
+      },
+      {
+        "rank": 5,
+        "brand": "atlassian.com",
+        "visibility_pct": 16.7
+      },
+      {
+        "rank": 5,
+        "brand": "saaspare.org",
+        "visibility_pct": 16.0,
+        "note": "us"
+      }
     ],
     "share_of_voice": [
-      {"brand": "g2.com", "pct": 9.4},
-      {"brand": "trulycritic.com", "pct": 8.9},
-      {"brand": "capterra.com", "pct": 6.1},
-      {"brand": "costbench.com", "pct": 3.6},
-      {"brand": "trustradius.com", "pct": 3.3},
-      {"brand": "others", "pct": 68.6}
+      {
+        "brand": "g2.com",
+        "pct": 9.4
+      },
+      {
+        "brand": "trulycritic.com",
+        "pct": 8.9
+      },
+      {
+        "brand": "capterra.com",
+        "pct": 6.1
+      },
+      {
+        "brand": "costbench.com",
+        "pct": 3.6
+      },
+      {
+        "brand": "trustradius.com",
+        "pct": 3.3
+      },
+      {
+        "brand": "others",
+        "pct": 68.6
+      }
     ],
     "new_competitors_discovered": [
-      {"domain": "trulycritic.com", "why": "8.9% share of voice, ties g2 on visibility - a small site punching far above weight in AI citation"},
-      {"domain": "costbench.com", "why": "3.6% share of voice; name implies cost benchmarking, i.e. our exact niche. Study their model."}
+      {
+        "domain": "trulycritic.com",
+        "why": "8.9% share of voice, ties g2 on visibility - a small site punching far above weight in AI citation"
+      },
+      {
+        "domain": "costbench.com",
+        "why": "3.6% share of voice; name implies cost benchmarking, i.e. our exact niche. Study their model."
+      }
     ],
     "so_what": "g2 holds only 9.4% share of voice and 68.6% is 'others', so the field is not locked up. We already rank #4-5 on Real SaaS Pricing Data - the hidden-costs and transparency-score assets built 2026-09-06 aim straight at it. Gemini and Google AI Mode are at ZERO for us, which is the obvious next front."
   },
-
   "toxic_backlinks_to_disavow": {
     "finding": "Spam Score 8 (competitor is 0) is explained by an inbound spam campaign, most of it appearing new in August 2026. These are not links we built.",
     "categories": {
       "pbn_dofollow_anchor_spam": {
         "anchor": "High Quality Dofollow Backlinks DA 50 PA 40 Premium PBN Network Service saaspare.org Rank First Page Google Fast SEO Link Building Buy Backlinks Online Cheap",
-        "domains": ["qwenterprise.com", "skystarnews.com", "portailorange.net", "trendyhealthtimes.com", "betwinnermirror.com", "clifflisting.com", "fashionclothingnews.com", "gladeflowers.com"]
+        "domains": [
+          "qwenterprise.com",
+          "skystarnews.com",
+          "portailorange.net",
+          "trendyhealthtimes.com",
+          "betwinnermirror.com",
+          "clifflisting.com",
+          "fashionclothingnews.com",
+          "gladeflowers.com"
+        ]
       },
       "fake_testimonial_spam": {
         "anchor": "{saaspare.org}s lead generation tripled after implementing strategies from Fiverr",
-        "domains": ["fiverr-affordable-seo-services.site"]
+        "domains": [
+          "fiverr-affordable-seo-services.site"
+        ]
       },
-      "seo_resource_dofollow": {"domains": ["domraider.eu.com", "domraider.gb.net", "domraider.it.com"]},
-      "casino_gambling_network": {"domains": ["jameslinks.agency"]},
-      "auto_generated_stats_pages": {"domains": ["analyticshaven.top", "blogsphere.top", "creativeposts.top", "bye.fyi", "8coint.com"]}
+      "seo_resource_dofollow": {
+        "domains": [
+          "domraider.eu.com",
+          "domraider.gb.net",
+          "domraider.it.com"
+        ]
+      },
+      "casino_gambling_network": {
+        "domains": [
+          "jameslinks.agency"
+        ]
+      },
+      "auto_generated_stats_pages": {
+        "domains": [
+          "analyticshaven.top",
+          "blogsphere.top",
+          "creativeposts.top",
+          "bye.fyi",
+          "8coint.com"
+        ]
+      }
     },
     "action": "Build a disavow file for these domains and submit in GSC. Owner action - needs Kaylan's Google login.",
     "caution": "Do NOT disavow the press-release syndication (kimberleybulletin, newsblaze, middletownlife, xpr.media, adamtorkildson, adriennemonson, agree.net, side.cr, small-bizsense, timesla). Low DP and mostly nofollow, but they are legitimate distribution of our own releases."
   },
-
   "genuine_backlinks_worth_keeping": [
-    {"url": "https://linear.app/startups/partners", "dp": 47, "anchor": "Saaspare", "type": "dofollow", "note": "best real link we have"},
-    {"url": "https://www.producthunt.com/r/...", "dp": 63, "type": "301 redirect"},
-    {"url": "https://www.thewayhow.com/learn-something/hubspot-ai-features-pricing", "dp": 23, "target": "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay", "note": "editorial citation of our pricing page - proof the pricing angle earns links"},
-    {"url": "https://www.thewayhow.com/learn-something/hubspot-features-pricing-guide-2026", "dp": 23, "target": "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay"},
-    {"url": "https://www.thewayhow.com/learn-something/hubspot-hosting-pricing-guide-2026", "dp": 23, "target": "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay", "type": "dofollow"}
+    {
+      "url": "https://linear.app/startups/partners",
+      "dp": 47,
+      "anchor": "Saaspare",
+      "type": "dofollow",
+      "note": "best real link we have"
+    },
+    {
+      "url": "https://www.producthunt.com/r/...",
+      "dp": 63,
+      "type": "301 redirect"
+    },
+    {
+      "url": "https://www.thewayhow.com/learn-something/hubspot-ai-features-pricing",
+      "dp": 23,
+      "target": "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
+      "note": "editorial citation of our pricing page - proof the pricing angle earns links"
+    },
+    {
+      "url": "https://www.thewayhow.com/learn-something/hubspot-features-pricing-guide-2026",
+      "dp": 23,
+      "target": "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay"
+    },
+    {
+      "url": "https://www.thewayhow.com/learn-something/hubspot-hosting-pricing-guide-2026",
+      "dp": 23,
+      "target": "/pages/hubspot-pricing-2026-plans-costs-what-you-actually-pay",
+      "type": "dofollow"
+    }
   ],
-
   "otto_status": {
-    "pixel": "Installed", "seo": "Engaged", "score": 5,
-    "fixed_issues": 521, "healthy_pages": "329/1540", "pages_with_issues": 1211,
+    "pixel": "Installed",
+    "seo": "Engaged",
+    "score": 5,
+    "fixed_issues": 521,
+    "healthy_pages": "329/1540",
+    "pages_with_issues": 1211,
     "last_analysis": "2026-09-01",
     "note": "Pre-dates the 2026-09-01 prune, so the page counts describe the old 1,545-page corpus, not the current 492 indexable."
+  },
+  "final_export_2026-09-06_pdf": {
+    "note": "From Kaylan's PDF export, a slightly newer crawl than the same-day dashboard read.",
+    "domain_metrics_delta": {
+      "domain_rating": "11 -> 12",
+      "domain_authority": "8 -> 6",
+      "referring_domains": "99 -> 111",
+      "backlinks": "314 -> 329",
+      "trust_flow": "2 -> 5",
+      "citation_flow": "27 -> 24",
+      "spam_score": "8 (unchanged)",
+      "brand_signal": "0 (unchanged)",
+      "authority_pillar": "3 -> 5 / 100",
+      "technical_pillar": "96 -> 94 / 100"
+    },
+    "organic_keyword_history": {
+      "headline": "The site PEAKED at roughly 219 organic keywords in 2026, then fell to 0.",
+      "why_it_matters": "This is the measured cost of the demotion, and it is the most encouraging data point we have: the site demonstrably COULD rank. It is suppressed, not incapable. Recovering something that once worked is a different problem from building ranking ability from nothing.",
+      "current": {
+        "organic_keywords": 0,
+        "organic_traffic": 0,
+        "branded_pct": 0.0,
+        "non_branded_pct": 0.0
+      }
+    },
+    "backlink_shape": {
+      "homepage_backlinks": 137,
+      "total_backlinks": 329,
+      "deep_page_example": {
+        "url": "/pages/saas-price-hike-watc...",
+        "backlinks": 2
+      },
+      "problem": "~42% of all backlinks point at the homepage and almost none at deep pages. Typical of press-release syndication. Weak for ranking individual money pages, which is what actually earns.",
+      "top_anchors": [
+        {
+          "anchor": "saaspare",
+          "domains": 52,
+          "backlinks": 83
+        },
+        {
+          "anchor": "https://saaspare.org",
+          "domains": 50,
+          "backlinks": 81
+        },
+        {
+          "anchor": "saaspare.org",
+          "domains": 46,
+          "backlinks": 64
+        },
+        {
+          "anchor": "製品ページ (ai-hunt.tech)",
+          "domains": 1,
+          "backlinks": 46
+        },
+        {
+          "anchor": "high quality dofollow backli... (PBN SPAM)",
+          "domains": 26,
+          "backlinks": 30
+        }
+      ],
+      "spam_gap": "The PBN anchor spans 26 domains; seo/disavow-saaspare-org.txt names only 8."
+    },
+    "ai_visibility_paywalled": {
+      "perplexity": "6 topics, 80% - LOCKED behind Pro, unverified",
+      "copilot": "6 topics, 80% - LOCKED behind Pro, unverified",
+      "caution": "These may be sample or placeholder figures shown to upsell. Do NOT treat them as measured visibility without confirmation."
+    }
   }
 }
