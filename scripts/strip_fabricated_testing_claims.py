@@ -35,7 +35,10 @@ ROOT = Path(__file__).resolve().parents[1]
 WT = "We " + "tested"
 wt = "we " + "tested"
 
-EXEMPT = {"strip_fabricated_testing_claims.py", "trust_pass.py"}
+# fix_otto_script.py quotes the exact string OTTO was injecting, as evidence
+# for why the pixel was removed. Stripping it there destroys the record.
+EXEMPT = {"strip_fabricated_testing_claims.py", "trust_pass.py",
+          "fix_otto_script.py"}
 
 # Specific fabrications, longest first. Invented counts and named tools are
 # replaced with what we can actually stand behind, not softened in place.

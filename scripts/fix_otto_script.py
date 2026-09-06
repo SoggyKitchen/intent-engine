@@ -1,78 +1,75 @@
 """
-fix_otto_script.py — Inject the Search Atlas OTTO SEO dynamic-optimization
-pixel into every page's <head>, with `defer` so it doesn't block rendering.
+fix_otto_script.py — REMOVE the Search Atlas OTTO dynamic-optimization pixel.
 
-OTTO uses this script to detect and (with owner approval per-fix inside the
-OTTO dashboard) live-apply SEO fixes - meta tags, schema, alt text - without
-a code deploy. This script only installs the pixel; it does not grant OTTO
-authority to auto-publish anything. Fixes are reviewed/approved in the
-Search Atlas dashboard, not applied blind.
+This script used to INSTALL the pixel. It now strips it, and the filename is
+kept so the two existing nightly steps keep working.
 
-`defer` matters: the tag Search Atlas hands you has no async/defer, which
-makes it a classic render-blocking third-party <script src> sitting in
-<head> - measured contributing to a 6.3s mobile LCP on the HubSpot pricing
-page. Every other third-party script on this site (GA4, motion.js,
-saaspare-ui.js) already uses async/defer; this brings OTTO in line with
-that, and `defer` still runs it before DOMContentLoaded so OTTO's
-dashboard-approved fixes still land before the user interacts with the page.
+Why it was removed (2026-09-06)
+-------------------------------
+The pixel rewrites the DOM client-side after load, so what a rendering crawler
+sees is not what our HTML says. Verified in a browser on /about the same day:
 
-Idempotent: safe to re-run in CI on every nightly build, same pattern as
-fix_universal_nav.py and fix_inject_ui_css.py.
+    served by us : "...honest verdicts and free-trial guides for 490+ comparisons."
+    seen in DOM  : "...verified pricing, and expert insights for 1,400+ tools."
+
+We have 494 indexable pages and 15 tools with verified pricing. OTTO was
+live-injecting a corpus claim we had just finished removing from the HTML,
+along with "Expert-Tested" headings for testing we have never run. Its queue
+held more of the same, plus meta keywords for 525 pages - a tag Google has
+ignored since 2009.
+
+The previous docstring here claimed the pixel "does not grant OTTO authority to
+auto-publish anything" because fixes are approved in the dashboard. In practice
+ten meta descriptions were deployed and they carried fabricated claims, so that
+reassurance did not hold. A third-party script that can silently rewrite our
+pages is not compatible with a site whose entire pitch is verifiable facts.
+
+The Search Atlas subscription is also being cancelled, which would leave this
+script requesting a dead endpoint on all 1,571 pages on every page load.
+
+Idempotent. Safe to re-run.
 """
+import re
 from pathlib import Path
 
 SITE = Path(__file__).resolve().parents[1] / "site"
 
-OTTO_MARKER = 'id="sa-dynamic-optimization"'
-OTTO_SCRIPT = (
-    '<script defer nowprocket nitro-exclude type="text/javascript" '
-    'id="sa-dynamic-optimization" '
-    'data-uuid="34c3284f-0872-48df-8c54-bb1a550278e6" '
-    'src="https://dashboard.searchatlas.com/scripts/dynamic_optimization.js"></script>'
+# Matches the tag in any attribute order, deferred or not, so older installs
+# are caught too.
+OTTO_TAG = re.compile(
+    r'\s*<script[^>]*id="sa-dynamic-optimization"[^>]*>\s*</script>',
+    re.IGNORECASE,
 )
-# Old, render-blocking form (no defer) - upgrade in place if found.
-OTTO_SCRIPT_OLD = (
-    '<script nowprocket nitro-exclude type="text/javascript" '
-    'id="sa-dynamic-optimization" '
-    'data-uuid="34c3284f-0872-48df-8c54-bb1a550278e6" '
-    'src="https://dashboard.searchatlas.com/scripts/dynamic_optimization.js"></script>'
+# Belt and braces: any leftover reference to the loader.
+OTTO_SRC = re.compile(
+    r'\s*<script[^>]*dynamic_optimization\.js[^>]*>\s*</script>',
+    re.IGNORECASE,
 )
 
-all_pages = list((SITE / "pages").glob("*.html"))
-for subdir in ["blog", "authors"]:
-    all_pages.extend((SITE / subdir).glob("*.html"))
-for name in ["index.html", "about.html", "contact.html", "deal-radar.html",
-             "shortlist.html", "newsletter.html", "404.html", "media-kit.html",
-             "privacy.html", "terms.html", "methodology.html"]:
-    p = SITE / name
-    if p.exists():
-        all_pages.append(p)
 
-fixed = upgraded = skipped = errors = 0
-for path in all_pages:
-    try:
-        html = path.read_text(encoding="utf-8", errors="replace")
+def main() -> None:
+    removed = 0
+    for p in SITE.rglob("*.html"):
+        html = original = p.read_text(encoding="utf-8", errors="replace")
+        html = OTTO_TAG.sub("", html)
+        html = OTTO_SRC.sub("", html)
+        if html != original:
+            p.write_text(html, encoding="utf-8")
+            removed += 1
 
-        if OTTO_SCRIPT_OLD in html:
-            html = html.replace(OTTO_SCRIPT_OLD, OTTO_SCRIPT, 1)
-            path.write_text(html, encoding="utf-8")
-            upgraded += 1
-            continue
+    left = [
+        str(p.relative_to(SITE))
+        for p in SITE.rglob("*.html")
+        if "sa-dynamic-optimization" in p.read_text(encoding="utf-8", errors="replace")
+        or "dynamic_optimization.js" in p.read_text(encoding="utf-8", errors="replace")
+    ]
+    print(f"OTTO pixel removed from {removed} pages")
+    print(f"VERIFY  pages still carrying it: {len(left)}")
+    for f in left[:10]:
+        print("  " + f)
+    if left:
+        raise SystemExit("fix_otto_script: did not converge")
 
-        if OTTO_MARKER in html:
-            skipped += 1
-            continue
 
-        if "</head>" not in html:
-            errors += 1
-            print(f"  ERR no </head>: {path.name}")
-            continue
-        html = html.replace("</head>", "  " + OTTO_SCRIPT + "\n</head>", 1)
-        path.write_text(html, encoding="utf-8")
-        fixed += 1
-    except Exception as e:
-        errors += 1
-        print(f"  ERR {path.name}: {e}")
-
-print(f"Done: {fixed} newly installed | {upgraded} upgraded to defer | "
-      f"{skipped} already correct | {errors} errors")
+if __name__ == "__main__":
+    main()
