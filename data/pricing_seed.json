@@ -2,8 +2,28 @@
   "_meta": {
     "version": 1,
     "snapshot_date": "2026-09-06",
-    "notes": "Seed prices for the SaaSpare Price Intelligence Engine. All values verified from official vendor pricing pages on the snapshot_date. The crawler will diff future snapshots against these values. Inaccurate values destroy trust faster than missing values — better to omit a plan than guess. 2026-09-06: HubSpot and Ahrefs plans re-verified against live vendor pages. The stored seat_minimum values for HubSpot Professional (5), HubSpot Enterprise (10), Ahrefs Advanced (3) and Ahrefs Enterprise (5) were NOT supported by the vendors' current pricing pages and have been reset to 1. Mandatory one-time onboarding fees recorded in notes. 2026-09-06: Salesforce Sales Cloud re-verified - Enterprise and Unlimited tiers retired, replaced by Core/Advanced/Max, and Starter/Pro repriced.",
-    "currency_default": "USD"
+    "notes": "Seed prices for the SaaSpare Price Intelligence Engine. All values verified from official vendor pricing pages on the snapshot_date. The crawler will diff future snapshots against these values. Inaccurate values destroy trust faster than missing values — better to omit a plan than guess. 2026-09-06: HubSpot and Ahrefs plans re-verified against live vendor pages. The stored seat_minimum values for HubSpot Professional (5), HubSpot Enterprise (10), Ahrefs Advanced (3) and Ahrefs Enterprise (5) were NOT supported by the vendors' current pricing pages and have been reset to 1. Mandatory one-time onboarding fees recorded in notes. 2026-09-06: Salesforce Sales Cloud re-verified - Enterprise and Unlimited tiers retired, replaced by Core/Advanced/Max, and Starter/Pro repriced. 2026-09-06: expanded from 15 to 41 tools. Every new plan read off the vendor's own pricing page the same day. Vendors that could not be verified cleanly were SKIPPED, not guessed - see skipped_vendors for the reason on each. Geolocated (AUD/INR) and promo-discounted pages were rejected rather than recorded in the wrong currency or at a temporary rate.",
+    "currency_default": "USD",
+    "skipped_vendors": {
+      "nordvpn": "HTTP 403 - blocks automated fetches",
+      "gitlab": "HTTP 403",
+      "moz": "blocked",
+      "seranking": "HTTP 404",
+      "surfshark": "AUD term-based pricing (24-month intro vs renewal); does not fit the monthly/annual schema",
+      "dropbox": "AUD geolocated pricing",
+      "zoho": "INR geolocated pricing",
+      "canva": "Business tier listed $250/month AND $250/year - internally contradictory",
+      "descript": "Annual column cheaper than monthly, contradicting the page's own '35% savings' note",
+      "zoom": "prices render client-side, not in HTML",
+      "todoist": "price placeholders only",
+      "activecampaign": "price placeholders only",
+      "squarespace": "prices not in page content",
+      "brevo": "prices not in page content",
+      "hootsuite": "prices only in FAQ prose, billing frequency unclear",
+      "mailchimp": "quoted prices are promo-discounted and contact-tier dependent",
+      "posthog": "usage-based; per-unit rates not captured",
+      "webflow": "fetch parse error"
+    }
   },
   "tools": [
     {
@@ -594,6 +614,1158 @@
           "free_trial": false,
           "cc_required": false,
           "seat_minimum": 1
+        }
+      ]
+    },
+    {
+      "tool": "slack",
+      "vendor_name": "Slack",
+      "category": "collaboration",
+      "source_url": "https://slack.com/pricing",
+      "affiliate_slug": "slack",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "90-day message history, up to 10 apps. Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 8.75,
+          "annual_usd": 87,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$7.25/seat/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Business+",
+          "monthly_usd": 18,
+          "annual_usd": 180,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$15/seat/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise+",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "airtable",
+      "vendor_name": "Airtable",
+      "category": "project-mgmt",
+      "source_url": "https://airtable.com/pricing",
+      "affiliate_slug": "airtable",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Team",
+          "monthly_usd": null,
+          "annual_usd": 240,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$20/seat/mo billed annually; no monthly rate published. Verified 2026-09-06."
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": null,
+          "annual_usd": 540,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$45/seat/mo billed annually; no monthly rate published. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise Scale",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "trello",
+      "vendor_name": "Trello",
+      "category": "project-mgmt",
+      "source_url": "https://trello.com/pricing",
+      "affiliate_slug": "trello",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 10 collaborators per Workspace. Verified 2026-09-06."
+        },
+        {
+          "plan": "Standard",
+          "monthly_usd": 6,
+          "annual_usd": 60,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$5/user/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Premium",
+          "monthly_usd": 12.5,
+          "annual_usd": 120,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$10/user/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": 210,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$17.50/user/mo, billed annually only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "figma",
+      "vendor_name": "Figma",
+      "category": "design",
+      "source_url": "https://www.figma.com/pricing/",
+      "affiliate_slug": "figma",
+      "plans": [
+        {
+          "plan": "Starter",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Free tier. Verified 2026-09-06."
+        },
+        {
+          "plan": "Professional (full seat)",
+          "monthly_usd": 16,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Annual rate not published. Verified 2026-09-06."
+        },
+        {
+          "plan": "Organization (full seat)",
+          "monthly_usd": null,
+          "annual_usd": 660,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$55/seat/mo, billed annually only. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise (full seat)",
+          "monthly_usd": null,
+          "annual_usd": 1080,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$90/seat/mo, billed annually only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "calendly",
+      "vendor_name": "Calendly",
+      "category": "productivity",
+      "source_url": "https://calendly.com/pricing",
+      "affiliate_slug": "calendly",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Standard",
+          "monthly_usd": 10,
+          "annual_usd": 99.6,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$8.30/seat/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Teams",
+          "monthly_usd": 16,
+          "annual_usd": 153.6,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$12.80/seat/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 50,
+          "notes": "Quote only; starts at $15,000/yr, 50-seat minimum. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "grammarly",
+      "vendor_name": "Grammarly",
+      "category": "productivity",
+      "source_url": "https://www.grammarly.com/plans",
+      "affiliate_slug": "grammarly",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 12,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "7-day trial, no card required. Annual rate not published. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "xero",
+      "vendor_name": "Xero",
+      "category": "finance",
+      "source_url": "https://www.xero.com/us/pricing-plans/",
+      "affiliate_slug": "xero",
+      "plans": [
+        {
+          "plan": "Early",
+          "monthly_usd": 25,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "List price. 90% off for the first 6 months means $2.50/mo intro, then $25 - a 10x step-up at month 7. Verified 2026-09-06."
+        },
+        {
+          "plan": "Growing",
+          "monthly_usd": 55,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "List price; $5.50/mo for the first 6 months. Verified 2026-09-06."
+        },
+        {
+          "plan": "Established",
+          "monthly_usd": 90,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "List price; $9/mo for the first 6 months. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "freshbooks",
+      "vendor_name": "FreshBooks",
+      "category": "finance",
+      "source_url": "https://www.freshbooks.com/pricing",
+      "affiliate_slug": "freshbooks",
+      "plans": [
+        {
+          "plan": "Lite",
+          "monthly_usd": 23,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "30-day trial. 5 billable clients. Extra team members $11/mo each. Verified 2026-09-06."
+        },
+        {
+          "plan": "Plus",
+          "monthly_usd": 43,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "50 billable clients. Extra team members $11/mo each. Verified 2026-09-06."
+        },
+        {
+          "plan": "Premium",
+          "monthly_usd": 70,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Unlimited billable clients. Extra team members $11/mo each. Verified 2026-09-06."
+        },
+        {
+          "plan": "Select",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. 2 team members included, then $11/mo each. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "bitwarden",
+      "vendor_name": "Bitwarden",
+      "category": "security",
+      "source_url": "https://bitwarden.com/pricing/business/",
+      "affiliate_slug": "bitwarden",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Premium",
+          "monthly_usd": 1.65,
+          "annual_usd": 19.8,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Personal. Verified 2026-09-06."
+        },
+        {
+          "plan": "Families",
+          "monthly_usd": 3.99,
+          "annual_usd": 47.88,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Up to 6 users. Verified 2026-09-06."
+        },
+        {
+          "plan": "Teams",
+          "monthly_usd": 4,
+          "annual_usd": 48,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": 6,
+          "annual_usd": 72,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "zendesk",
+      "vendor_name": "Zendesk",
+      "category": "support",
+      "source_url": "https://www.zendesk.com/pricing/",
+      "affiliate_slug": "zendesk",
+      "plans": [
+        {
+          "plan": "Support Team",
+          "monthly_usd": null,
+          "annual_usd": 228,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$19/agent/mo billed annually; no monthly rate shown. Verified 2026-09-06."
+        },
+        {
+          "plan": "Suite Team",
+          "monthly_usd": null,
+          "annual_usd": 660,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$55/agent/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Suite Professional",
+          "monthly_usd": null,
+          "annual_usd": 1380,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$115/agent/mo billed annually. 14-day trial. Verified 2026-09-06."
+        },
+        {
+          "plan": "Suite Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "miro",
+      "vendor_name": "Miro",
+      "category": "collaboration",
+      "source_url": "https://miro.com/pricing/",
+      "affiliate_slug": "miro",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "3 editable boards. Verified 2026-09-06."
+        },
+        {
+          "plan": "Starter",
+          "monthly_usd": 10,
+          "annual_usd": 96,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$8/member/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": 25,
+          "annual_usd": 240,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$20/member/mo billed annually. 14-day trial. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 30,
+          "notes": "Quote only; starts from 30 members. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "github",
+      "vendor_name": "GitHub",
+      "category": "dev-tools",
+      "source_url": "https://github.com/pricing",
+      "affiliate_slug": "github",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Team",
+          "monthly_usd": 4,
+          "annual_usd": 48,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Page notes pricing is 'for the first 12 months'; later rate not published. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": 21,
+          "annual_usd": 252,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "From $21/user/mo. 30-day trial. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "basecamp",
+      "vendor_name": "Basecamp",
+      "category": "project-mgmt",
+      "source_url": "https://basecamp.com/pricing",
+      "affiliate_slug": "basecamp",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Freelancer",
+          "monthly_usd": 25,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "FLAT rate, not per seat. 30-day trial, no card. Verified 2026-09-06."
+        },
+        {
+          "plan": "Studio",
+          "monthly_usd": 59,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Flat rate, everyone included. Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 99,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Flat rate, everyone included. Verified 2026-09-06."
+        },
+        {
+          "plan": "Unlimited",
+          "monthly_usd": null,
+          "annual_usd": 3588,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$299/mo billed annually. 45-day trial. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "typeform",
+      "vendor_name": "Typeform",
+      "category": "productivity",
+      "source_url": "https://www.typeform.com/pricing/",
+      "affiliate_slug": "typeform",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "100 responses/mo. Verified 2026-09-06."
+        },
+        {
+          "plan": "Basic",
+          "monthly_usd": 39,
+          "annual_usd": 336,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$28/mo billed annually. 14-day trial. Verified 2026-09-06."
+        },
+        {
+          "plan": "Plus",
+          "monthly_usd": 79,
+          "annual_usd": 672,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 3,
+          "notes": "$56/mo billed annually. 3-seat minimum. Verified 2026-09-06."
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": 129,
+          "annual_usd": 1092,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 5,
+          "notes": "$91/mo billed annually. 5-seat minimum. Verified 2026-09-06."
+        },
+        {
+          "plan": "Growth Flow",
+          "monthly_usd": 379,
+          "annual_usd": 3192,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 5,
+          "notes": "$266/mo billed annually. 5-seat minimum. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "buffer",
+      "vendor_name": "Buffer",
+      "category": "marketing",
+      "source_url": "https://buffer.com/pricing",
+      "affiliate_slug": "buffer",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 3 channels. Verified 2026-09-06."
+        },
+        {
+          "plan": "Essentials",
+          "monthly_usd": 5,
+          "annual_usd": 60,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Per channel. 14-day trial. Verified 2026-09-06."
+        },
+        {
+          "plan": "Team",
+          "monthly_usd": 10,
+          "annual_usd": 120,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Per channel. 14-day trial. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "helpscout",
+      "vendor_name": "Help Scout",
+      "category": "support",
+      "source_url": "https://www.helpscout.com/pricing/",
+      "affiliate_slug": "helpscout",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "5 users, 1 inbox. Verified 2026-09-06."
+        },
+        {
+          "plan": "Standard",
+          "monthly_usd": 25,
+          "annual_usd": 252,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$21/user/mo annually. 15-day trial, no card. Verified 2026-09-06."
+        },
+        {
+          "plan": "Plus",
+          "monthly_usd": 45,
+          "annual_usd": 453.6,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$37.80/user/mo annually. 15-day trial, no card. Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 75,
+          "annual_usd": 756,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 10,
+          "notes": "$63/user/mo annually. 10-seat minimum, demo only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "loom",
+      "vendor_name": "Loom",
+      "category": "productivity",
+      "source_url": "https://www.loom.com/pricing",
+      "affiliate_slug": "loom",
+      "plans": [
+        {
+          "plan": "Starter",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 50 members. Verified 2026-09-06."
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": 18,
+          "annual_usd": 180,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$15/creator/mo annually. 14-day trial. Verified 2026-09-06."
+        },
+        {
+          "plan": "Business + AI",
+          "monthly_usd": 24,
+          "annual_usd": 240,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$20/creator/mo annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "vercel",
+      "vendor_name": "Vercel",
+      "category": "dev-tools",
+      "source_url": "https://vercel.com/pricing",
+      "affiliate_slug": "vercel",
+      "plans": [
+        {
+          "plan": "Hobby",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 20,
+          "annual_usd": 240,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Includes $20 usage credit. Usage charges apply on top: edge requests, bandwidth, functions, build minutes. Extra seats $20/mo each. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "kit",
+      "vendor_name": "Kit",
+      "category": "marketing",
+      "source_url": "https://kit.com/pricing",
+      "affiliate_slug": "kit",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Up to 10,000 subscribers. Verified 2026-09-06."
+        },
+        {
+          "plan": "Creator",
+          "monthly_usd": 33,
+          "annual_usd": 390,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "At 1,000 subscribers; scales with list size. 14-day trial, no card. Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 66,
+          "annual_usd": 790,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "At 1,000 subscribers; scales with list size. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "netlify",
+      "vendor_name": "Netlify",
+      "category": "dev-tools",
+      "source_url": "https://www.netlify.com/pricing/",
+      "affiliate_slug": "netlify",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Credit-based usage limits. Verified 2026-09-06."
+        },
+        {
+          "plan": "Personal",
+          "monthly_usd": 9,
+          "annual_usd": 108,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Credit-based usage charges apply on top. Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 20,
+          "annual_usd": 240,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Credit-based usage charges apply on top. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "framer",
+      "vendor_name": "Framer",
+      "category": "design",
+      "source_url": "https://www.framer.com/pricing/",
+      "affiliate_slug": "framer",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Verified 2026-09-06."
+        },
+        {
+          "plan": "Basic (site)",
+          "monthly_usd": 10,
+          "annual_usd": 120,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "No annual discount published. Extra editor seats $20/mo each. Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro (site)",
+          "monthly_usd": 30,
+          "annual_usd": 360,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Extra editor seats $20/mo each; content editor seats $10/mo. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "ghost",
+      "vendor_name": "Ghost",
+      "category": "publishing",
+      "source_url": "https://ghost.org/pricing/",
+      "affiliate_slug": "ghost",
+      "plans": [
+        {
+          "plan": "Starter",
+          "monthly_usd": 18,
+          "annual_usd": 216,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "At 1,000 members. Verified 2026-09-06."
+        },
+        {
+          "plan": "Publisher",
+          "monthly_usd": null,
+          "annual_usd": 348,
+          "free_trial": true,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$29/mo billed annually; monthly rate not published. Verified 2026-09-06."
+        },
+        {
+          "plan": "Business",
+          "monthly_usd": null,
+          "annual_usd": 2388,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$199/mo billed annually, 10,000 members. Verified 2026-09-06."
+        },
+        {
+          "plan": "Custom",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "quickbooks",
+      "vendor_name": "QuickBooks",
+      "category": "finance",
+      "source_url": "https://quickbooks.intuit.com/pricing/",
+      "affiliate_slug": "quickbooks",
+      "plans": [
+        {
+          "plan": "Simple Start",
+          "monthly_usd": 38,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "List price; 50% off for 3 months ($19). 30-day trial. 1 user. Verified 2026-09-06."
+        },
+        {
+          "plan": "Essentials",
+          "monthly_usd": 85,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "List price; $42.50 for 3 months. 3 users. Verified 2026-09-06."
+        },
+        {
+          "plan": "Plus",
+          "monthly_usd": 140,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "List price; $70 for 3 months. 5 users. Verified 2026-09-06."
+        },
+        {
+          "plan": "Advanced",
+          "monthly_usd": 340,
+          "annual_usd": null,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "List price; $170 for 3 months. 25 users. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "surfer",
+      "vendor_name": "Surfer SEO",
+      "category": "seo",
+      "source_url": "https://surferseo.com/pricing/",
+      "affiliate_slug": "surfer",
+      "plans": [
+        {
+          "plan": "Discovery",
+          "monthly_usd": 49,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "No free tier and no free trial. Verified 2026-09-06."
+        },
+        {
+          "plan": "Standard",
+          "monthly_usd": 99,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 3,
+          "notes": "3-seat minimum. Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 182,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 5,
+          "notes": "5-seat minimum. Verified 2026-09-06."
+        },
+        {
+          "plan": "Peace of Mind",
+          "monthly_usd": 299,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 10,
+          "notes": "10-seat minimum. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "zapier",
+      "vendor_name": "Zapier",
+      "category": "productivity",
+      "source_url": "https://zapier.com/pricing",
+      "affiliate_slug": "zapier",
+      "plans": [
+        {
+          "plan": "Free",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "100 tasks/mo. Verified 2026-09-06."
+        },
+        {
+          "plan": "Professional 750",
+          "monthly_usd": 29.99,
+          "annual_usd": 239.88,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$19.99/mo billed annually. 14-day trial, no card. Verified 2026-09-06."
+        },
+        {
+          "plan": "Professional 1,500",
+          "monthly_usd": 58.5,
+          "annual_usd": 468,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$39/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Professional 2,000",
+          "monthly_usd": 73.5,
+          "annual_usd": 588,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "$49/mo billed annually. Verified 2026-09-06."
+        },
+        {
+          "plan": "Team 2,000",
+          "monthly_usd": 103.5,
+          "annual_usd": 828,
+          "free_trial": false,
+          "cc_required": false,
+          "seat_minimum": 25,
+          "notes": "$69/mo billed annually. 25-seat minimum. Verified 2026-09-06."
+        },
+        {
+          "plan": "Enterprise",
+          "monthly_usd": null,
+          "annual_usd": null,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "Quote only. Verified 2026-09-06."
+        }
+      ]
+    },
+    {
+      "tool": "wave",
+      "vendor_name": "Wave",
+      "category": "finance",
+      "source_url": "https://www.waveapps.com/pricing",
+      "affiliate_slug": "wave",
+      "plans": [
+        {
+          "plan": "Starter",
+          "monthly_usd": 0,
+          "annual_usd": 0,
+          "free_trial": true,
+          "cc_required": false,
+          "seat_minimum": 1,
+          "notes": "Genuinely free. Payment processing 2.9% + $0.60 per card transaction. Verified 2026-09-06."
+        },
+        {
+          "plan": "Pro",
+          "monthly_usd": 19,
+          "annual_usd": 190,
+          "free_trial": false,
+          "cc_required": true,
+          "seat_minimum": 1,
+          "notes": "$9.50/mo for the first 3 months. Processing 2.9% + $0 on the first 10 transactions/mo. Verified 2026-09-06."
         }
       ]
     }

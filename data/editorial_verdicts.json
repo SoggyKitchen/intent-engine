@@ -5,7 +5,8 @@
     "scope": "Pricing and terms only. These verdicts judge how a vendor sells, not how the software performs. We have not run usability testing and do not pretend to.",
     "rule": "Every claim traces to data/pricing_seed.json or data/hidden_costs.json, both read off vendor pricing pages. No invented usage experience, no 'we tested' language.",
     "hand_written": true,
-    "why_hand_written": "Template-generated verdicts are the exact thin-content pattern that got 1,053 pages noindexed. Fifteen tools is small enough to write properly."
+    "why_hand_written": "Template-generated verdicts are the exact thin-content pattern that got 1,053 pages noindexed. build_transparency_ratings.py refuses to run if any scored tool lacks a hand-written verdict, so this file cannot quietly fall behind the data.",
+    "count": 41
   },
   "verdicts": {
     "asana": {
@@ -97,6 +98,162 @@
       "body": "No free tier and no trial, so there is no way to evaluate it without paying. Each plan includes exactly one user and extra seats cost $40 to $80 a month on top. Enterprise requires an annual commitment at $14,990. Every one of those is a published, honest fact, and together they make it the hardest tool here to try before you buy.",
       "best_for": "Solo operators who already know they want it.",
       "watch_for": "Team costs. Three users on Advanced is $449 plus two surcharged seats, not $449."
+    },
+    "helpscout": {
+      "headline": "Full marks, and the trial does not ask for a card",
+      "body": "Free for five users on one inbox, then $25 a seat, or $21 annually. Fifteen days to try Standard or Plus with no card, no setup fee, and no minimum until the Pro tier. One of only a handful here that passes all eight tests.",
+      "best_for": "Small support teams who want to start free and scale without a sales call.",
+      "watch_for": "Pro carries a ten-seat minimum, so the jump from Plus is larger than the per-seat price suggests."
+    },
+    "kit": {
+      "headline": "The most generous free tier in this entire set",
+      "body": "Free up to ten thousand subscribers. Not ten thousand emails, ten thousand subscribers. Creator is $33 a month at a thousand subscribers, or $390 annually, with a fourteen-day trial that needs no card. Full marks.",
+      "best_for": "Newsletter operators who want to prove the model before paying anything.",
+      "watch_for": "Price scales with list size, so the $33 headline is an entry point, not your steady-state bill."
+    },
+    "wave": {
+      "headline": "Free accounting that is actually free",
+      "body": "Starter is $0 with no trial clock and no feature countdown. Pro is $19 a month or $190 annually. The money is made on payment processing at 2.9% plus 60 cents, which is disclosed plainly rather than buried.",
+      "best_for": "Sole traders and small businesses who invoice occasionally and do not want a subscription.",
+      "watch_for": "Processing fees are where the cost lives. If you take a lot of card payments, model that, not the subscription."
+    },
+    "slack": {
+      "headline": "Clean per-seat pricing, one quote-only tier",
+      "body": "Free tier with a ninety-day message limit, Pro at $8.75 a seat or $7.25 annually, Business+ at $18 or $15. No seat minimums, no setup fee. The single point it drops is Enterprise+, which is quote-only.",
+      "best_for": "Teams who will live in Pro or Business+ and never need a quote.",
+      "watch_for": "The free tier's ninety-day history limit arrives quietly, and older messages become unreachable rather than deleted."
+    },
+    "github": {
+      "headline": "Cheap, published, and honest about the free tier",
+      "body": "Free is genuinely usable, Team is $4 a seat and Enterprise $21. Annual costs exactly twelve monthlies, so there is no penalty for staying flexible. The page notes pricing is for the first twelve months without publishing the rate after that.",
+      "best_for": "Teams of any size; the free tier covers a surprising amount.",
+      "watch_for": "That first-twelve-months footnote. Ask what year two costs before you commit a large seat count."
+    },
+    "basecamp": {
+      "headline": "Flat rate, so headcount does not change the bill",
+      "body": "Freelancer $25, Studio $59, Pro $99 a month, and everyone is included. No per-user fees at all, which makes it the only tool here where adding people costs nothing. Trials run thirty days, forty-five on Unlimited, with no card.",
+      "best_for": "Growing teams tired of every new hire increasing four different bills.",
+      "watch_for": "Unlimited at $299 is billed annually only. Extra storage beyond the plan is $100 a month for 5TB."
+    },
+    "bitwarden": {
+      "headline": "Cheapest credible password manager, with a real free tier",
+      "body": "Free covers unlimited passwords. Teams is $4 a seat, Enterprise $6, and annual is exactly twelve monthlies on every tier, so there is no commitment premium anywhere. Personal Premium is $1.65 a month.",
+      "best_for": "Teams who want managed password security without a per-seat argument.",
+      "watch_for": "Trial length is not published on any business tier, so plan the evaluation window yourself."
+    },
+    "buffer": {
+      "headline": "Priced per channel, which is unusual and mostly fair",
+      "body": "Free covers three channels. Essentials is $5 and Team $10, both per channel rather than per user, with a 20% annual discount and a fourteen-day trial. Channels beyond ten cost less each.",
+      "best_for": "Solo operators and small teams running a handful of accounts.",
+      "watch_for": "Per-channel pricing scales fast. Ten channels on Team is $100 a month, not $10."
+    },
+    "netlify": {
+      "headline": "Published seat prices, then credits on top",
+      "body": "Free, Personal at $9 and Pro at $20 a member, all published. The catch is that every tier runs on a credit system for builds, bandwidth and compute, so the seat price is the floor rather than the bill. Enterprise is quote-only.",
+      "best_for": "Developers who can predict their build and bandwidth usage.",
+      "watch_for": "Auto-recharge credit packs. Understand the burn rate before enabling them."
+    },
+    "framer": {
+      "headline": "Straight site pricing, expensive collaborators",
+      "body": "Basic $10 and Pro $30 a month for a site, published clearly. There is no annual discount at all, which is unusual and means monthly buyers are not punished. Extra editor seats are $20 a month each, more than the Basic site plan itself.",
+      "best_for": "Solo designers and small studios where one person edits.",
+      "watch_for": "Editor seats. A three-person team on Basic is $50 a month, not $10."
+    },
+    "quickbooks": {
+      "headline": "Published prices, aggressive intro discount",
+      "body": "Simple Start $38 through Advanced $340, all published, with a thirty-day trial. The wrinkle is the promotion: 50% off for three months means month four roughly doubles. User counts are capped per tier, from one on Simple Start to twenty-five on Advanced.",
+      "best_for": "Businesses that will stay long enough for the intro rate to stop mattering.",
+      "watch_for": "Budget from the list price, not the promotional one, and check the user cap against your headcount."
+    },
+    "miro": {
+      "headline": "Clear pricing until the Enterprise wall",
+      "body": "Free covers three editable boards. Starter is $10 a member or $8 annually, Business $25 or $20, with a fourteen-day Business trial. Enterprise is quote-only and starts from thirty members.",
+      "best_for": "Teams under thirty who will stay on Business.",
+      "watch_for": "The thirty-member Enterprise floor. There is no middle tier between Business and a sales call."
+    },
+    "figma": {
+      "headline": "Monthly exists on Professional and nowhere else",
+      "body": "Professional is $16 a full seat monthly. Organization at $55 and Enterprise at $90 are billed annually only, so the monthly-looking number is a twelve-month commitment. Seats are split three ways, full, dev and collaborator, which genuinely lowers cost for mixed teams.",
+      "best_for": "Design teams who can stay on Professional, or who have many view-only collaborators.",
+      "watch_for": "The annual-only wall above Professional, and Professional's own annual rate is not published at all."
+    },
+    "calendly": {
+      "headline": "Honest at the bottom, a hard wall at the top",
+      "body": "Free tier, Standard $10 a seat or $8.30 annually, Teams $16 or $12.80. All clean. Enterprise is quote-only, starts at $15,000 a year, and requires fifty seats, which is a very large step from a $16 plan.",
+      "best_for": "Individuals and small teams; the paid tiers are genuinely priced for them.",
+      "watch_for": "There is nothing between Teams and a $15,000 minimum commitment."
+    },
+    "typeform": {
+      "headline": "The seat minimums climb faster than the price",
+      "body": "Free covers a hundred responses. Basic is $39 or $28 annually with a fourteen-day trial. Then it stacks: Plus requires three seats, Business and Growth Flow require five. Business reads as $129 but cannot be bought for less than five seats.",
+      "best_for": "Solo users on Basic, or teams already at five people.",
+      "watch_for": "Response caps as much as seats. Basic includes only a hundred responses a month."
+    },
+    "loom": {
+      "headline": "Simple pricing, generous free tier",
+      "body": "Starter is free for up to fifty members. Business is $18 a creator or $15 annually, Business plus AI is $24 or $20, both with a fourteen-day trial. Enterprise is quote-only.",
+      "best_for": "Teams where a few people record and many people watch; viewers are not charged.",
+      "watch_for": "The AI tier is a third more expensive. Check whether you need it before defaulting to it."
+    },
+    "zapier": {
+      "headline": "Task-based pricing that is clear until the Team tier",
+      "body": "Free covers a hundred tasks. Professional runs $29.99 to $73.50 monthly depending on task volume, or a third less annually, with a fourteen-day trial and no card. Team is $103.50 but carries a twenty-five seat minimum.",
+      "best_for": "Individuals and small teams on Professional, where the pricing is genuinely transparent.",
+      "watch_for": "Tasks, not Zaps, are the unit. A single busy automation can consume a tier."
+    },
+    "vercel": {
+      "headline": "Twenty dollars, plus whatever you use",
+      "body": "Hobby is free and Pro is $20 a seat with $20 of usage credit included. Everything past that is metered: edge requests, bandwidth, function invocations, build minutes, image transformations. Extra seats are another $20 each. Enterprise is quote-only.",
+      "best_for": "Teams who have modelled their traffic and know the usage line.",
+      "watch_for": "The seat price is the smallest part of a busy project's bill. Model the metered items first."
+    },
+    "grammarly": {
+      "headline": "Cheap and clear, but only half the prices are published",
+      "body": "The free tier is real. Pro is $12 a member monthly with a seven-day trial that needs no card. What is missing is the annual rate, which is not published anywhere, and Enterprise, which is quote-only.",
+      "best_for": "Individuals and small teams on Pro.",
+      "watch_for": "You cannot compare the annual commitment, because Grammarly does not publish it."
+    },
+    "freshbooks": {
+      "headline": "The team-member surcharge is the real cost",
+      "body": "Lite $23, Plus $43, Premium $70, with a thirty-day trial. Straightforward until you add people: every extra team member is $11 a month on every tier. A four-person team on Plus is $76, not $43. Select is quote-only.",
+      "best_for": "Sole traders and single-operator businesses.",
+      "watch_for": "The $11 per head. It is disclosed, but it sits well below the headline price."
+    },
+    "airtable": {
+      "headline": "The monthly option is simply not offered",
+      "body": "The free tier is generous. Team is $20 a seat and Business $45, but both are published as annual rates with no monthly figure at all, so the entry commitment is a year. Enterprise Scale is quote-only.",
+      "best_for": "Teams committing for a year who will stay inside Team or Business.",
+      "watch_for": "There is no way to buy a single month at a paid tier to trial it properly."
+    },
+    "trello": {
+      "headline": "Cheap and honest, until Enterprise",
+      "body": "Free supports up to ten collaborators. Standard is $6 a user or $5 annually, Premium $12.50 or $10. All clean and all buyable one seat at a time. Enterprise is annual-only at $17.50 a user.",
+      "best_for": "Small teams; the free and Standard tiers cover most of what people actually use.",
+      "watch_for": "The free tier's ten-collaborator ceiling, which arrives sooner than the feature limits do."
+    },
+    "xero": {
+      "headline": "The intro price is a tenth of the real one",
+      "body": "Early $25, Growing $55, Established $90, all published. The problem is the promotion: 90% off for six months means you pay $2.50 and then $25, a tenfold step-up at month seven. There is no free tier and no free trial listed.",
+      "best_for": "Businesses that have already decided and will absorb the month-seven increase.",
+      "watch_for": "Month seven. Budget from the list price and treat the discount as a rebate, not a rate."
+    },
+    "zendesk": {
+      "headline": "Every price is a twelve-month commitment",
+      "body": "Support Team $19, Suite Team $55, Suite Professional $115 per agent, all shown as monthly figures and all billed annually. No monthly option is published on any tier, so Suite Professional is $1,380 per agent up front. Enterprise is quote-only.",
+      "best_for": "Support teams with budget approved for a full year.",
+      "watch_for": "The fourteen-day trial runs on Suite Professional, the most expensive published tier, which flatters the evaluation."
+    },
+    "ghost": {
+      "headline": "Annual-only above the entry plan",
+      "body": "Starter is $18 a month at a thousand members. Publisher at $29 and Business at $199 are published as annual rates only, with no monthly option shown. There is no free tier and no trial length published.",
+      "best_for": "Publishers who know they are committing for a year.",
+      "watch_for": "Member counts, not features, drive the tier. Growth moves you up the price list automatically."
+    },
+    "surfer": {
+      "headline": "No free tier, no trial, and the seats stack",
+      "body": "Discovery $49, Standard $99, Pro $182, Peace of Mind $299. All published, but there is no free tier and no free trial, so there is no way to evaluate it without paying. The minimums climb with the tier: one seat, then three, then five, then ten.",
+      "best_for": "Agencies who already know the tool and have the headcount for the tier.",
+      "watch_for": "Standard is not $99 for a solo user. It is $99 with a three-seat floor."
     }
   }
 }

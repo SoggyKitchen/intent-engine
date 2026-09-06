@@ -89,8 +89,14 @@ def score_tool(tool, flags):
     # 2. Mandatory one-time fees. Binary: either the buyer is ambushed or not.
     s["no_setup_fee"] = 0 if vendor in fee_vendors else 2
 
-    # 3. Seat minimums.
-    seat_min = max((p.get("seat_minimum") or 1) for p in plans)
+    # 3. Seat minimums, judged at the ENTRY point: the cheapest paid plan.
+    #    Using max() across all plans was wrong - it scored Calendly and Zapier
+    #    as if you cannot buy one seat, when in fact only their Enterprise tier
+    #    carries a minimum and anyone can start with a single seat. The question
+    #    this criterion asks is "will they sell you one seat", so the answer
+    #    lives at the cheapest paid tier, not the most expensive.
+    entry = min(paid, key=lambda p: p.get("monthly_usd") or p.get("annual_usd") or 0)         if paid else None
+    seat_min = (entry.get("seat_minimum") or 1) if entry else 1
     s["single_seat"] = 2 if seat_min <= 1 else (1 if seat_min <= 3 else 0)
 
     # 4. Monthly billing. A plan priced annually with no monthly option locks

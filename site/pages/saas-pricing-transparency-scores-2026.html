@@ -108,8 +108,124 @@
     .tr-stars{justify-content:flex-start}
   }
 </style>
+<style id="sp-nav-css">
+/* ── SaaSpare Universal Nav ───────────────────────────────────────────────── */
+:root{--sp-red:#e94560;--sp-red2:#c73652;--sp-border:rgba(255,255,255,.07)}
+nav#sp-nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:.9rem 2rem;
+  display:flex;align-items:center;justify-content:space-between;column-gap:12px;transition:all .4s ease;
+  background:transparent;border-bottom:none}
+nav#sp-nav.scrolled{background:rgba(7,7,13,.88);border-bottom:1px solid var(--sp-border);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.sp-nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
+/* Absolutely centered on the nav's full width - a flex/grid 1fr split would
+   only be centered if the logo and search+CTA groups were equal width,
+   which they never are, so this is the only way to keep it dead-center. */
+.sp-nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  display:flex;align-items:center;gap:4px}
+.sp-nav-right{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.sp-nav-mark{height:26px;width:auto;flex-shrink:0;overflow:visible;
+  animation:spMarkGlow 4s ease-in-out infinite}
+.sp-nav-mark .mark-top,.sp-nav-mark .mark-bot{transform-box:fill-box;transform-origin:center;
+  transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.sp-nav-logo:hover .mark-top{transform:translateX(26px)}
+.sp-nav-logo:hover .mark-bot{transform:translateX(-26px)}
+@keyframes spMarkGlow{
+  0%,100%{filter:drop-shadow(0 0 0px rgba(233,69,96,0))}
+  50%{filter:drop-shadow(0 3px 18px rgba(233,69,96,.6))}}
+.sp-nav-wordmark{font-weight:800;font-size:1.05rem;letter-spacing:-.4px;color:#fff}
+.sp-nav-wordmark em{color:#e94560;font-style:normal}
+nav#sp-nav .sp-nav-link{color:rgba(255,248,245,.42);font-size:.8rem;padding:.38rem .82rem;
+  border-radius:8px;font-weight:500;transition:color .18s;white-space:nowrap;text-decoration:none}
+nav#sp-nav .sp-nav-link:hover{color:#fff}
+nav#sp-nav .sp-nav-link.active{color:#fff;font-weight:600;position:relative}
+nav#sp-nav .sp-nav-link.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:2px;background:linear-gradient(90deg, transparent, var(--sp-red), transparent);box-shadow:0 0 10px var(--sp-red)}
+.sp-nav-cta{background:linear-gradient(135deg,#e94560,#c73652);color:#fff;
+  padding:.44rem 1.15rem;border-radius:100px;font-weight:700;font-size:.78rem;
+  box-shadow:0 4px 16px rgba(233,69,96,.4);
+  transition:transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none}
+.sp-nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(233,69,96,.55)}
+.sp-nav-spacer{height:72px} /* overridden to 0 on homepage */
+/* Remove old nav styles that cause bracket/black-bar glitches */
+.sp-bg{display:none!important}
+nav.sp-topnav{display:none!important}
+#sp-nav-search{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:7px 12px;
+  min-width:0;width:190px;transition:width .2s ease,border-color .2s ease}
+#sp-nav-search:focus-within{width:240px;border-color:rgba(255,75,115,.4)}
+#sp-nav-search svg{flex-shrink:0;color:rgba(255,248,245,.42)}
+#sp-nav-search-input{background:none;border:none;outline:none;color:#fff7f8;
+  font-size:.8rem;font-family:inherit;width:100%;min-width:0}
+#sp-nav-search-input::placeholder{color:rgba(255,248,245,.38)}
+#sp-nav-search .sp-nav-kbd{flex-shrink:0;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:1px 6px;
+  font-size:.68rem;color:rgba(255,248,245,.4);font-family:inherit}
+@media(max-width:900px){#sp-nav-search{display:none}}
+</style>
+<script>
+(function(){
+  window.addEventListener('scroll',function(){
+    var nav=document.getElementById('sp-nav');
+    if(nav){nav.classList.toggle('scrolled',window.scrollY>20);}
+  },{passive:true});
+
+  var searchInput=document.getElementById('sp-nav-search-input');
+  if(searchInput){
+    document.addEventListener('keydown',function(e){
+      if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){
+        e.preventDefault();searchInput.focus();searchInput.select();
+      }
+    });
+  }
+
+  function highlightNav(){
+    var path=window.location.pathname;
+    var override=document.body.getAttribute('data-nav');
+    var links=document.querySelectorAll('nav#sp-nav .sp-nav-link');
+    var best=null,bestLen=0;
+    links.forEach(function(a){
+      var href=a.getAttribute('href');
+      if(!href||href==='/') return;
+      if(override){if(href===override){best=a;}return;}
+      if(path===href||path.indexOf(href.replace(/\/$/,'')+'/')===0){
+        if(href.length>bestLen){best=a;bestLen=href.length;}
+      }
+    });
+    if(best){best.classList.add('active');}
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',highlightNav);}else{highlightNav();}
+})();
+</script>
 </head>
 <body style="background:#050407;color:rgba(255,248,245,.88)">
+<nav id="sp-nav">
+  <a href="/" class="sp-nav-logo" aria-label="SaaSpare home">
+    <svg class="sp-nav-mark" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <clipPath id="sp-ct"><path d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/></clipPath>
+        <clipPath id="sp-cb"><path d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/></clipPath>
+      </defs>
+      <path class="mark-bot" fill="#e94560" d="M8,180 C6.809,178.947 16.249,170.148 17.474,168.974 C29.513,157.429 41.867,146.05 53.705,134.205 L122.523,134.023 C131.393,132.259 134.949,122.943 128.546,115.954 C124.629,111.68 96.06,97.422 96.018,95.501 L129.483,61.989 C156.236,78.393 178.812,94.454 176.036,129.536 C174.239,152.239 151.336,180 127.5,180 L8,180 Z"/>
+      <path class="mark-top" fill="#fff" d="M170,0 L126.338,45.838 L60.476,45.976 C51.069,46.978 47.054,58.107 53.446,65.053 C57.608,69.575 86.408,82.481 86.951,85.614 L53.687,118.84 C24.96,102.655 0.111,82.629 7.258,45.758 C11.54,23.666 33.934,0 57.5,0 L170,0 Z"/>
+    </svg>
+    <span class="sp-nav-wordmark">Saa<em>Spare</em></span>
+  </a>
+  <div class="sp-nav-links">
+  <a href="/pages/" class="sp-nav-link">Comparisons</a>
+  <a href="/roi" class="sp-nav-link">ROI Calculator</a>
+  <a href="/shortlist" class="sp-nav-link">Shortlist Builder</a>
+  <a href="/deal-radar" class="sp-nav-link">Deal Radar</a>
+  <a href="/about" class="sp-nav-link">About</a>
+  </div>
+  <div class="sp-nav-right">
+  <form id="sp-nav-search" action="/pages/" role="search" aria-label="Search tools">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="sp-nav-search-input" name="q" type="search" placeholder="Search tools..." autocomplete="off">
+    <span class="sp-nav-kbd">&#8984;K</span>
+  </form>
+  <a href="/shortlist" class="sp-nav-cta">Build Shortlist &#8594;</a>
+  </div>
+</nav>
+<div class="sp-nav-spacer"></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="sp-half"><stop offset="50%" stop-color="var(--pink)"/><stop offset="50%" stop-color="rgba(255,247,248,.18)"/></linearGradient></defs></svg>
 <main class="tr-wrap">
   <p class="tr-eyebrow">Editorial ratings</p>
@@ -119,7 +235,7 @@
   points total. Every point traces back to a price we read off the vendor's own
   page, and every tool gets a written verdict.</p>
 
-  <p class="tr-stamp">Pricing verified <b>6 September 2026</b> &middot; 15 vendors
+  <p class="tr-stamp">Pricing verified <b>6 September 2026</b> &middot; 41 vendors
   &middot; 8 criteria &middot; recomputed nightly, never hand-set</p>
 
   <div class="tr-callout">
@@ -136,7 +252,7 @@
   <h2 class="tr-h">Most transparent by category</h2>
   <p class="tr-note">Categories with only one tracked vendor are left out. A field of
   one has no winner.</p>
-  <div class="tr-awards"><a class="tr-award" href="#salesforce"><span class="tr-award-cat">CRM</span><span class="tr-award-name">Salesforce</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#datadog"><span class="tr-award-cat">Dev tools</span><span class="tr-award-name">Datadog</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#asana"><span class="tr-award-cat">Project management</span><span class="tr-award-name">Asana</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#1password"><span class="tr-award-cat">Security</span><span class="tr-award-name">1Password</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#semrush"><span class="tr-award-cat">SEO tools</span><span class="tr-award-name">Semrush</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a></div>
+  <div class="tr-awards"><a class="tr-award" href="#slack"><span class="tr-award-cat">collaboration</span><span class="tr-award-name">Slack</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#salesforce"><span class="tr-award-cat">CRM</span><span class="tr-award-name">Salesforce</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#framer"><span class="tr-award-cat">design</span><span class="tr-award-name">Framer</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#datadog"><span class="tr-award-cat">Dev tools</span><span class="tr-award-name">Datadog</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#stripe"><span class="tr-award-cat">Finance</span><span class="tr-award-name">Stripe</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#kit"><span class="tr-award-cat">marketing</span><span class="tr-award-name">Kit</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#calendly"><span class="tr-award-cat">productivity</span><span class="tr-award-name">Calendly</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#asana"><span class="tr-award-cat">Project management</span><span class="tr-award-name">Asana</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#1password"><span class="tr-award-cat">Security</span><span class="tr-award-name">1Password</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#semrush"><span class="tr-award-cat">SEO tools</span><span class="tr-award-name">Semrush</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a><a class="tr-award" href="#helpscout"><span class="tr-award-cat">support</span><span class="tr-award-name">Help Scout</span><span class="tr-award-stars"><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></span></a></div>
 
   <h2 class="tr-h">The ranking, with verdicts</h2>
   <p class="tr-note">Written by hand, from the pricing data. These judge how a vendor
@@ -183,9 +299,51 @@
     <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
     <a class="tr-src" href="https://www.datadoghq.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
-  <article class="tr-v" id="linear">
+  <article class="tr-v" id="helpscout">
     <div class="tr-v-head">
       <span class="tr-rank">#3</span>
+      <div class="tr-v-title">
+        <h3>Help Scout</h3>
+        <p class="tr-cat">support</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="5.0 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">5.0 &middot; 16/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Full marks, and the trial does not ask for a card</h4>
+    <p class="tr-v-body">Free for five users on one inbox, then $25 a seat, or $21 annually. Fifteen days to try Standard or Plus with no card, no setup fee, and no minimum until the Pro tier. One of only a handful here that passes all eight tests.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Small support teams who want to start free and scale without a sales call.</p>
+      <p class="tr-warn"><b>Watch for</b> Pro carries a ten-seat minimum, so the jump from Plus is larger than the per-seat price suggests.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.helpscout.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="kit">
+    <div class="tr-v-head">
+      <span class="tr-rank">#4</span>
+      <div class="tr-v-title">
+        <h3>Kit</h3>
+        <p class="tr-cat">marketing</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="5.0 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">5.0 &middot; 16/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">The most generous free tier in this entire set</h4>
+    <p class="tr-v-body">Free up to ten thousand subscribers. Not ten thousand emails, ten thousand subscribers. Creator is $33 a month at a thousand subscribers, or $390 annually, with a fourteen-day trial that needs no card. Full marks.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Newsletter operators who want to prove the model before paying anything.</p>
+      <p class="tr-warn"><b>Watch for</b> Price scales with list size, so the $33 headline is an entry point, not your steady-state bill.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://kit.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="linear">
+    <div class="tr-v-head">
+      <span class="tr-rank">#5</span>
       <div class="tr-v-title">
         <h3>Linear</h3>
         <p class="tr-cat">Dev tools</p>
@@ -206,7 +364,7 @@
   </article>
   <article class="tr-v" id="stripe">
     <div class="tr-v-head">
-      <span class="tr-rank">#4</span>
+      <span class="tr-rank">#6</span>
       <div class="tr-v-title">
         <h3>Stripe</h3>
         <p class="tr-cat">Finance</p>
@@ -225,9 +383,30 @@
     <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
     <a class="tr-src" href="https://stripe.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
+  <article class="tr-v" id="wave">
+    <div class="tr-v-head">
+      <span class="tr-rank">#7</span>
+      <div class="tr-v-title">
+        <h3>Wave</h3>
+        <p class="tr-cat">Finance</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="5.0 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">5.0 &middot; 16/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Free accounting that is actually free</h4>
+    <p class="tr-v-body">Starter is $0 with no trial clock and no feature countdown. Pro is $19 a month or $190 annually. The money is made on payment processing at 2.9% plus 60 cents, which is disclosed plainly rather than buried.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Sole traders and small businesses who invoice occasionally and do not want a subscription.</p>
+      <p class="tr-warn"><b>Watch for</b> Processing fees are where the cost lives. If you take a lot of card payments, model that, not the subscription.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.waveapps.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
   <article class="tr-v" id="1password">
     <div class="tr-v-head">
-      <span class="tr-rank">#5</span>
+      <span class="tr-rank">#8</span>
       <div class="tr-v-title">
         <h3>1Password</h3>
         <p class="tr-cat">Security</p>
@@ -246,9 +425,72 @@
     <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
     <a class="tr-src" href="https://1password.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
+  <article class="tr-v" id="basecamp">
+    <div class="tr-v-head">
+      <span class="tr-rank">#9</span>
+      <div class="tr-v-title">
+        <h3>Basecamp</h3>
+        <p class="tr-cat">Project management</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 15/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Flat rate, so headcount does not change the bill</h4>
+    <p class="tr-v-body">Freelancer $25, Studio $59, Pro $99 a month, and everyone is included. No per-user fees at all, which makes it the only tool here where adding people costs nothing. Trials run thirty days, forty-five on Unlimited, with no card.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Growing teams tired of every new hire increasing four different bills.</p>
+      <p class="tr-warn"><b>Watch for</b> Unlimited at $299 is billed annually only. Extra storage beyond the plan is $100 a month for 5TB.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-mid">~ Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://basecamp.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="bitwarden">
+    <div class="tr-v-head">
+      <span class="tr-rank">#10</span>
+      <div class="tr-v-title">
+        <h3>Bitwarden</h3>
+        <p class="tr-cat">Security</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 15/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Cheapest credible password manager, with a real free tier</h4>
+    <p class="tr-v-body">Free covers unlimited passwords. Teams is $4 a seat, Enterprise $6, and annual is exactly twelve monthlies on every tier, so there is no commitment premium anywhere. Personal Premium is $1.65 a month.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Teams who want managed password security without a per-seat argument.</p>
+      <p class="tr-warn"><b>Watch for</b> Trial length is not published on any business tier, so plan the evaluation window yourself.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-mid">~ Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://bitwarden.com/pricing/business/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="buffer">
+    <div class="tr-v-head">
+      <span class="tr-rank">#11</span>
+      <div class="tr-v-title">
+        <h3>Buffer</h3>
+        <p class="tr-cat">marketing</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 15/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Priced per channel, which is unusual and mostly fair</h4>
+    <p class="tr-v-body">Free covers three channels. Essentials is $5 and Team $10, both per channel rather than per user, with a 20% annual discount and a fourteen-day trial. Channels beyond ten cost less each.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Solo operators and small teams running a handful of accounts.</p>
+      <p class="tr-warn"><b>Watch for</b> Per-channel pricing scales fast. Ten channels on Team is $100 a month, not $10.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-mid">~ Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://buffer.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
   <article class="tr-v" id="clickup">
     <div class="tr-v-head">
-      <span class="tr-rank">#6</span>
+      <span class="tr-rank">#12</span>
       <div class="tr-v-title">
         <h3>ClickUp</h3>
         <p class="tr-cat">Project management</p>
@@ -267,9 +509,72 @@
     <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-mid">~ Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
     <a class="tr-src" href="https://clickup.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
+  <article class="tr-v" id="framer">
+    <div class="tr-v-head">
+      <span class="tr-rank">#13</span>
+      <div class="tr-v-title">
+        <h3>Framer</h3>
+        <p class="tr-cat">design</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 15/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Straight site pricing, expensive collaborators</h4>
+    <p class="tr-v-body">Basic $10 and Pro $30 a month for a site, published clearly. There is no annual discount at all, which is unusual and means monthly buyers are not punished. Extra editor seats are $20 a month each, more than the Basic site plan itself.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Solo designers and small studios where one person edits.</p>
+      <p class="tr-warn"><b>Watch for</b> Editor seats. A three-person team on Basic is $50 a month, not $10.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.framer.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="github">
+    <div class="tr-v-head">
+      <span class="tr-rank">#14</span>
+      <div class="tr-v-title">
+        <h3>GitHub</h3>
+        <p class="tr-cat">Dev tools</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 15/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Cheap, published, and honest about the free tier</h4>
+    <p class="tr-v-body">Free is genuinely usable, Team is $4 a seat and Enterprise $21. Annual costs exactly twelve monthlies, so there is no penalty for staying flexible. The page notes pricing is for the first twelve months without publishing the rate after that.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Teams of any size; the free tier covers a surprising amount.</p>
+      <p class="tr-warn"><b>Watch for</b> That first-twelve-months footnote. Ask what year two costs before you commit a large seat count.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-mid">~ Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://github.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="netlify">
+    <div class="tr-v-head">
+      <span class="tr-rank">#15</span>
+      <div class="tr-v-title">
+        <h3>Netlify</h3>
+        <p class="tr-cat">Dev tools</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 15/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Published seat prices, then credits on top</h4>
+    <p class="tr-v-body">Free, Personal at $9 and Pro at $20 a member, all published. The catch is that every tier runs on a credit system for builds, bandwidth and compute, so the seat price is the floor rather than the bill. Enterprise is quote-only.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Developers who can predict their build and bandwidth usage.</p>
+      <p class="tr-warn"><b>Watch for</b> Auto-recharge credit packs. Understand the burn rate before enabling them.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.netlify.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
   <article class="tr-v" id="notion">
     <div class="tr-v-head">
-      <span class="tr-rank">#7</span>
+      <span class="tr-rank">#16</span>
       <div class="tr-v-title">
         <h3>Notion</h3>
         <p class="tr-cat">Project management</p>
@@ -288,9 +593,177 @@
     <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
     <a class="tr-src" href="https://www.notion.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
+  <article class="tr-v" id="quickbooks">
+    <div class="tr-v-head">
+      <span class="tr-rank">#17</span>
+      <div class="tr-v-title">
+        <h3>QuickBooks</h3>
+        <p class="tr-cat">Finance</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 15/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Published prices, aggressive intro discount</h4>
+    <p class="tr-v-body">Simple Start $38 through Advanced $340, all published, with a thirty-day trial. The wrinkle is the promotion: 50% off for three months means month four roughly doubles. User counts are capped per tier, from one on Simple Start to twenty-five on Advanced.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Businesses that will stay long enough for the intro rate to stop mattering.</p>
+      <p class="tr-warn"><b>Watch for</b> Budget from the list price, not the promotional one, and check the user cap against your headcount.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://quickbooks.intuit.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="slack">
+    <div class="tr-v-head">
+      <span class="tr-rank">#18</span>
+      <div class="tr-v-title">
+        <h3>Slack</h3>
+        <p class="tr-cat">collaboration</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 15/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Clean per-seat pricing, one quote-only tier</h4>
+    <p class="tr-v-body">Free tier with a ninety-day message limit, Pro at $8.75 a seat or $7.25 annually, Business+ at $18 or $15. No seat minimums, no setup fee. The single point it drops is Enterprise+, which is quote-only.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Teams who will live in Pro or Business+ and never need a quote.</p>
+      <p class="tr-warn"><b>Watch for</b> The free tier's ninety-day history limit arrives quietly, and older messages become unreachable rather than deleted.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://slack.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="calendly">
+    <div class="tr-v-head">
+      <span class="tr-rank">#19</span>
+      <div class="tr-v-title">
+        <h3>Calendly</h3>
+        <p class="tr-cat">productivity</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Honest at the bottom, a hard wall at the top</h4>
+    <p class="tr-v-body">Free tier, Standard $10 a seat or $8.30 annually, Teams $16 or $12.80. All clean. Enterprise is quote-only, starts at $15,000 a year, and requires fifty seats, which is a very large step from a $16 plan.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Individuals and small teams; the paid tiers are genuinely priced for them.</p>
+      <p class="tr-warn"><b>Watch for</b> There is nothing between Teams and a $15,000 minimum commitment.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-mid">~ Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://calendly.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="figma">
+    <div class="tr-v-head">
+      <span class="tr-rank">#20</span>
+      <div class="tr-v-title">
+        <h3>Figma</h3>
+        <p class="tr-cat">design</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Monthly exists on Professional and nowhere else</h4>
+    <p class="tr-v-body">Professional is $16 a full seat monthly. Organization at $55 and Enterprise at $90 are billed annually only, so the monthly-looking number is a twelve-month commitment. Seats are split three ways, full, dev and collaborator, which genuinely lowers cost for mixed teams.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Design teams who can stay on Professional, or who have many view-only collaborators.</p>
+      <p class="tr-warn"><b>Watch for</b> The annual-only wall above Professional, and Professional's own annual rate is not published at all.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-bad">&#10007; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.figma.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="freshbooks">
+    <div class="tr-v-head">
+      <span class="tr-rank">#21</span>
+      <div class="tr-v-title">
+        <h3>FreshBooks</h3>
+        <p class="tr-cat">Finance</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">The team-member surcharge is the real cost</h4>
+    <p class="tr-v-body">Lite $23, Plus $43, Premium $70, with a thirty-day trial. Straightforward until you add people: every extra team member is $11 a month on every tier. A four-person team on Plus is $76, not $43. Select is quote-only.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Sole traders and single-operator businesses.</p>
+      <p class="tr-warn"><b>Watch for</b> The $11 per head. It is disclosed, but it sits well below the headline price.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.freshbooks.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="grammarly">
+    <div class="tr-v-head">
+      <span class="tr-rank">#22</span>
+      <div class="tr-v-title">
+        <h3>Grammarly</h3>
+        <p class="tr-cat">productivity</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Cheap and clear, but only half the prices are published</h4>
+    <p class="tr-v-body">The free tier is real. Pro is $12 a member monthly with a seven-day trial that needs no card. What is missing is the annual rate, which is not published anywhere, and Enterprise, which is quote-only.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Individuals and small teams on Pro.</p>
+      <p class="tr-warn"><b>Watch for</b> You cannot compare the annual commitment, because Grammarly does not publish it.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-bad">&#10007; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.grammarly.com/plans" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="loom">
+    <div class="tr-v-head">
+      <span class="tr-rank">#23</span>
+      <div class="tr-v-title">
+        <h3>Loom</h3>
+        <p class="tr-cat">productivity</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Simple pricing, generous free tier</h4>
+    <p class="tr-v-body">Starter is free for up to fifty members. Business is $18 a creator or $15 annually, Business plus AI is $24 or $20, both with a fourteen-day trial. Enterprise is quote-only.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Teams where a few people record and many people watch; viewers are not charged.</p>
+      <p class="tr-warn"><b>Watch for</b> The AI tier is a third more expensive. Check whether you need it before defaulting to it.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-mid">~ Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.loom.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="miro">
+    <div class="tr-v-head">
+      <span class="tr-rank">#24</span>
+      <div class="tr-v-title">
+        <h3>Miro</h3>
+        <p class="tr-cat">collaboration</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Clear pricing until the Enterprise wall</h4>
+    <p class="tr-v-body">Free covers three editable boards. Starter is $10 a member or $8 annually, Business $25 or $20, with a fourteen-day Business trial. Enterprise is quote-only and starts from thirty members.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Teams under thirty who will stay on Business.</p>
+      <p class="tr-warn"><b>Watch for</b> The thirty-member Enterprise floor. There is no middle tier between Business and a sales call.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-mid">~ Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://miro.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
   <article class="tr-v" id="monday-com">
     <div class="tr-v-head">
-      <span class="tr-rank">#8</span>
+      <span class="tr-rank">#25</span>
       <div class="tr-v-title">
         <h3>Monday.com</h3>
         <p class="tr-cat">Project management</p>
@@ -311,7 +784,7 @@
   </article>
   <article class="tr-v" id="salesforce">
     <div class="tr-v-head">
-      <span class="tr-rank">#9</span>
+      <span class="tr-rank">#26</span>
       <div class="tr-v-title">
         <h3>Salesforce</h3>
         <p class="tr-cat">CRM</p>
@@ -332,7 +805,7 @@
   </article>
   <article class="tr-v" id="shopify">
     <div class="tr-v-head">
-      <span class="tr-rank">#10</span>
+      <span class="tr-rank">#27</span>
       <div class="tr-v-title">
         <h3>Shopify</h3>
         <p class="tr-cat">E-commerce</p>
@@ -351,9 +824,93 @@
     <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-mid">~ Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
     <a class="tr-src" href="https://www.shopify.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
+  <article class="tr-v" id="tresorit">
+    <div class="tr-v-head">
+      <span class="tr-rank">#28</span>
+      <div class="tr-v-title">
+        <h3>Tresorit</h3>
+        <p class="tr-cat">Security</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Solid personal pricing, a three-seat floor for business</h4>
+    <p class="tr-v-body">Personal plans at $11.99 and $19.99 are clean. Business Standard reads as $14.50 a seat but requires three, so the real entry point is $43.50 a month. No free tier either, so there is no way to sit still without paying.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Individuals, or business teams already at three or more people.</p>
+      <p class="tr-warn"><b>Watch for</b> The seat minimum, and a 25% premium for paying monthly.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-mid">~ Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://tresorit.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="typeform">
+    <div class="tr-v-head">
+      <span class="tr-rank">#29</span>
+      <div class="tr-v-title">
+        <h3>Typeform</h3>
+        <p class="tr-cat">productivity</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">The seat minimums climb faster than the price</h4>
+    <p class="tr-v-body">Free covers a hundred responses. Basic is $39 or $28 annually with a fourteen-day trial. Then it stacks: Plus requires three seats, Business and Growth Flow require five. Business reads as $129 but cannot be bought for less than five seats.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Solo users on Basic, or teams already at five people.</p>
+      <p class="tr-warn"><b>Watch for</b> Response caps as much as seats. Basic includes only a hundred responses a month.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-mid">~ Trial without a card</span><span class="tr-pill tr-mid">~ Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.typeform.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="vercel">
+    <div class="tr-v-head">
+      <span class="tr-rank">#30</span>
+      <div class="tr-v-title">
+        <h3>Vercel</h3>
+        <p class="tr-cat">Dev tools</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Twenty dollars, plus whatever you use</h4>
+    <p class="tr-v-body">Hobby is free and Pro is $20 a seat with $20 of usage credit included. Everything past that is metered: edge requests, bandwidth, function invocations, build minutes, image transformations. Extra seats are another $20 each. Enterprise is quote-only.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Teams who have modelled their traffic and know the usage line.</p>
+      <p class="tr-warn"><b>Watch for</b> The seat price is the smallest part of a busy project's bill. Model the metered items first.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-bad">&#10007; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://vercel.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="zapier">
+    <div class="tr-v-head">
+      <span class="tr-rank">#31</span>
+      <div class="tr-v-title">
+        <h3>Zapier</h3>
+        <p class="tr-cat">productivity</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.5 &middot; 14/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Task-based pricing that is clear until the Team tier</h4>
+    <p class="tr-v-body">Free covers a hundred tasks. Professional runs $29.99 to $73.50 monthly depending on task volume, or a third less annually, with a fourteen-day trial and no card. Team is $103.50 but carries a twenty-five seat minimum.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Individuals and small teams on Professional, where the pricing is genuinely transparent.</p>
+      <p class="tr-warn"><b>Watch for</b> Tasks, not Zaps, are the unit. A single busy automation can consume a tier.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-mid">~ Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://zapier.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
   <article class="tr-v" id="pipedrive">
     <div class="tr-v-head">
-      <span class="tr-rank">#11</span>
+      <span class="tr-rank">#32</span>
       <div class="tr-v-title">
         <h3>Pipedrive</h3>
         <p class="tr-cat">CRM</p>
@@ -374,7 +931,7 @@
   </article>
   <article class="tr-v" id="semrush">
     <div class="tr-v-head">
-      <span class="tr-rank">#12</span>
+      <span class="tr-rank">#33</span>
       <div class="tr-v-title">
         <h3>Semrush</h3>
         <p class="tr-cat">SEO tools</p>
@@ -393,30 +950,51 @@
     <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-bad">&#10007; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
     <a class="tr-src" href="https://www.semrush.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
-  <article class="tr-v" id="tresorit">
+  <article class="tr-v" id="trello">
     <div class="tr-v-head">
-      <span class="tr-rank">#13</span>
+      <span class="tr-rank">#34</span>
       <div class="tr-v-title">
-        <h3>Tresorit</h3>
-        <p class="tr-cat">Security</p>
+        <h3>Trello</h3>
+        <p class="tr-cat">Project management</p>
       </div>
       <div class="tr-v-score">
         <div class="tr-stars" role="img" aria-label="4.0 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
         <p class="tr-pts">4.0 &middot; 13/16 points</p>
       </div>
     </div>
-    <h4 class="tr-v-headline">Solid personal pricing, a three-seat floor for business</h4>
-    <p class="tr-v-body">Personal plans at $11.99 and $19.99 are clean. Business Standard reads as $14.50 a seat but requires three, so the real entry point is $43.50 a month. No free tier either, so there is no way to sit still without paying.</p>
+    <h4 class="tr-v-headline">Cheap and honest, until Enterprise</h4>
+    <p class="tr-v-body">Free supports up to ten collaborators. Standard is $6 a user or $5 annually, Premium $12.50 or $10. All clean and all buyable one seat at a time. Enterprise is annual-only at $17.50 a user.</p>
     <div class="tr-v-cols">
-      <p><b>Best for</b> Individuals, or business teams already at three or more people.</p>
-      <p class="tr-warn"><b>Watch for</b> The seat minimum, and a 25% premium for paying monthly.</p>
+      <p><b>Best for</b> Small teams; the free and Standard tiers cover most of what people actually use.</p>
+      <p class="tr-warn"><b>Watch for</b> The free tier's ten-collaborator ceiling, which arrives sooner than the feature limits do.</p>
     </div>
-    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-mid">~ Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-mid">~ Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
-    <a class="tr-src" href="https://tresorit.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-bad">&#10007; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-mid">~ Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://trello.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="airtable">
+    <div class="tr-v-head">
+      <span class="tr-rank">#35</span>
+      <div class="tr-v-title">
+        <h3>Airtable</h3>
+        <p class="tr-cat">Project management</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.0 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.0 &middot; 12/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">The monthly option is simply not offered</h4>
+    <p class="tr-v-body">The free tier is generous. Team is $20 a seat and Business $45, but both are published as annual rates with no monthly figure at all, so the entry commitment is a year. Enterprise Scale is quote-only.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Teams committing for a year who will stay inside Team or Business.</p>
+      <p class="tr-warn"><b>Watch for</b> There is no way to buy a single month at a paid tier to trial it properly.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-bad">&#10007; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-mid">~ Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://airtable.com/pricing" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
   <article class="tr-v" id="hubspot">
     <div class="tr-v-head">
-      <span class="tr-rank">#14</span>
+      <span class="tr-rank">#36</span>
       <div class="tr-v-title">
         <h3>HubSpot</h3>
         <p class="tr-cat">CRM</p>
@@ -435,9 +1013,93 @@
     <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-bad">&#10007; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-ok">&#10003; Has a free tier</span><span class="tr-pill tr-ok">&#10003; Trial without a card</span><span class="tr-pill tr-bad">&#10007; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
     <a class="tr-src" href="https://www.hubspot.com/pricing/sales" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
   </article>
+  <article class="tr-v" id="xero">
+    <div class="tr-v-head">
+      <span class="tr-rank">#37</span>
+      <div class="tr-v-title">
+        <h3>Xero</h3>
+        <p class="tr-cat">Finance</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="4.0 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">4.0 &middot; 12/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">The intro price is a tenth of the real one</h4>
+    <p class="tr-v-body">Early $25, Growing $55, Established $90, all published. The problem is the promotion: 90% off for six months means you pay $2.50 and then $25, a tenfold step-up at month seven. There is no free tier and no free trial listed.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Businesses that have already decided and will absorb the month-seven increase.</p>
+      <p class="tr-warn"><b>Watch for</b> Month seven. Budget from the list price and treat the discount as a rebate, not a rate.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-ok">&#10003; Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-bad">&#10007; Has a free tier</span><span class="tr-pill tr-bad">&#10007; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.xero.com/us/pricing-plans/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="surfer">
+    <div class="tr-v-head">
+      <span class="tr-rank">#38</span>
+      <div class="tr-v-title">
+        <h3>Surfer SEO</h3>
+        <p class="tr-cat">SEO tools</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="3.5 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="url(#sp-half)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">3.5 &middot; 11/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">No free tier, no trial, and the seats stack</h4>
+    <p class="tr-v-body">Discovery $49, Standard $99, Pro $182, Peace of Mind $299. All published, but there is no free tier and no free trial, so there is no way to evaluate it without paying. The minimums climb with the tier: one seat, then three, then five, then ten.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Agencies who already know the tool and have the headcount for the tier.</p>
+      <p class="tr-warn"><b>Watch for</b> Standard is not $99 for a solo user. It is $99 with a three-seat floor.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-ok">&#10003; Lets you pay monthly</span><span class="tr-pill tr-bad">&#10007; Has a free tier</span><span class="tr-pill tr-bad">&#10007; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://surferseo.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="ghost">
+    <div class="tr-v-head">
+      <span class="tr-rank">#39</span>
+      <div class="tr-v-title">
+        <h3>Ghost</h3>
+        <p class="tr-cat">publishing</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="3.0 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">3.0 &middot; 10/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Annual-only above the entry plan</h4>
+    <p class="tr-v-body">Starter is $18 a month at a thousand members. Publisher at $29 and Business at $199 are published as annual rates only, with no monthly option shown. There is no free tier and no trial length published.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Publishers who know they are committing for a year.</p>
+      <p class="tr-warn"><b>Watch for</b> Member counts, not features, drive the tier. Growth moves you up the price list automatically.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-bad">&#10007; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-bad">&#10007; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://ghost.org/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
+  <article class="tr-v" id="zendesk">
+    <div class="tr-v-head">
+      <span class="tr-rank">#40</span>
+      <div class="tr-v-title">
+        <h3>Zendesk</h3>
+        <p class="tr-cat">support</p>
+      </div>
+      <div class="tr-v-score">
+        <div class="tr-stars" role="img" aria-label="3.0 out of 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--pink)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,247,248,.18)" aria-hidden="true" style="flex:none"><path d="M12 2l3 6.9 7.5.8-5.6 5 1.6 7.3L12 18.3 5.5 22l1.6-7.3-5.6-5 7.5-.8z"/></svg></div>
+        <p class="tr-pts">3.0 &middot; 10/16 points</p>
+      </div>
+    </div>
+    <h4 class="tr-v-headline">Every price is a twelve-month commitment</h4>
+    <p class="tr-v-body">Support Team $19, Suite Team $55, Suite Professional $115 per agent, all shown as monthly figures and all billed annually. No monthly option is published on any tier, so Suite Professional is $1,380 per agent up front. Enterprise is quote-only.</p>
+    <div class="tr-v-cols">
+      <p><b>Best for</b> Support teams with budget approved for a full year.</p>
+      <p class="tr-warn"><b>Watch for</b> The fourteen-day trial runs on Suite Professional, the most expensive published tier, which flatters the evaluation.</p>
+    </div>
+    <div class="tr-pills"><span class="tr-pill tr-mid">~ Publishes a real price</span><span class="tr-pill tr-ok">&#10003; No mandatory setup fee</span><span class="tr-pill tr-ok">&#10003; Will sell you one seat</span><span class="tr-pill tr-bad">&#10007; Lets you pay monthly</span><span class="tr-pill tr-mid">~ Has a free tier</span><span class="tr-pill tr-bad">&#10007; Trial without a card</span><span class="tr-pill tr-ok">&#10003; Monthly billing isn't punished</span><span class="tr-pill tr-ok">&#10003; Extra seats at list price</span></div>
+    <a class="tr-src" href="https://www.zendesk.com/pricing/" rel="nofollow noopener" target="_blank">Vendor pricing page &rarr;</a>
+  </article>
   <article class="tr-v" id="ahrefs">
     <div class="tr-v-head">
-      <span class="tr-rank">#15</span>
+      <span class="tr-rank">#41</span>
       <div class="tr-v-title">
         <h3>Ahrefs</h3>
         <p class="tr-cat">SEO tools</p>
@@ -481,18 +1143,44 @@
     <tbody>
 <tr><td><a href="#asana"><strong>Asana</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">16</td><td class="tr-total">5.0</td></tr>
 <tr><td><a href="#datadog"><strong>Datadog</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">16</td><td class="tr-total">5.0</td></tr>
+<tr><td><a href="#helpscout"><strong>Help Scout</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">16</td><td class="tr-total">5.0</td></tr>
+<tr><td><a href="#kit"><strong>Kit</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">16</td><td class="tr-total">5.0</td></tr>
 <tr><td><a href="#linear"><strong>Linear</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">16</td><td class="tr-total">5.0</td></tr>
 <tr><td><a href="#stripe"><strong>Stripe</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">16</td><td class="tr-total">5.0</td></tr>
+<tr><td><a href="#wave"><strong>Wave</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">16</td><td class="tr-total">5.0</td></tr>
 <tr><td><a href="#1password"><strong>1Password</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#basecamp"><strong>Basecamp</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#bitwarden"><strong>Bitwarden</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#buffer"><strong>Buffer</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
 <tr><td><a href="#clickup"><strong>ClickUp</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#framer"><strong>Framer</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#github"><strong>GitHub</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#netlify"><strong>Netlify</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
 <tr><td><a href="#notion"><strong>Notion</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#quickbooks"><strong>QuickBooks</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#slack"><strong>Slack</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">15</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#calendly"><strong>Calendly</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#figma"><strong>Figma</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#freshbooks"><strong>FreshBooks</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#grammarly"><strong>Grammarly</strong></a></td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#loom"><strong>Loom</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#miro"><strong>Miro</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
 <tr><td><a href="#monday-com"><strong>Monday.com</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
 <tr><td><a href="#salesforce"><strong>Salesforce</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
 <tr><td><a href="#shopify"><strong>Shopify</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#tresorit"><strong>Tresorit</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#typeform"><strong>Typeform</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#vercel"><strong>Vercel</strong></a></td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
+<tr><td><a href="#zapier"><strong>Zapier</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-total">14</td><td class="tr-total">4.5</td></tr>
 <tr><td><a href="#pipedrive"><strong>Pipedrive</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-total">13</td><td class="tr-total">4.0</td></tr>
 <tr><td><a href="#semrush"><strong>Semrush</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">13</td><td class="tr-total">4.0</td></tr>
-<tr><td><a href="#tresorit"><strong>Tresorit</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-total">13</td><td class="tr-total">4.0</td></tr>
+<tr><td><a href="#trello"><strong>Trello</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">13</td><td class="tr-total">4.0</td></tr>
+<tr><td><a href="#airtable"><strong>Airtable</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">12</td><td class="tr-total">4.0</td></tr>
 <tr><td><a href="#hubspot"><strong>HubSpot</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-total">12</td><td class="tr-total">4.0</td></tr>
+<tr><td><a href="#xero"><strong>Xero</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">12</td><td class="tr-total">4.0</td></tr>
+<tr><td><a href="#surfer"><strong>Surfer SEO</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">11</td><td class="tr-total">3.5</td></tr>
+<tr><td><a href="#ghost"><strong>Ghost</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">10</td><td class="tr-total">3.0</td></tr>
+<tr><td><a href="#zendesk"><strong>Zendesk</strong></a></td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-total">10</td><td class="tr-total">3.0</td></tr>
 <tr><td><a href="#ahrefs"><strong>Ahrefs</strong></a></td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c1">1</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c0">0</td><td class="tr-c tr-c2">2</td><td class="tr-c tr-c0">0</td><td class="tr-total">9</td><td class="tr-total">3.0</td></tr>
     </tbody>
   </table></div>

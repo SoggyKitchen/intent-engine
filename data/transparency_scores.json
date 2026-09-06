@@ -96,6 +96,48 @@
       "worst_annual_gap_pct": 0
     },
     {
+      "tool": "helpscout",
+      "vendor": "Help Scout",
+      "category": "support",
+      "source_url": "https://www.helpscout.com/pricing/",
+      "affiliate_slug": "helpscout",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 16,
+      "max_points": 16,
+      "stars": 5.0,
+      "worst_annual_gap_pct": 19
+    },
+    {
+      "tool": "kit",
+      "vendor": "Kit",
+      "category": "marketing",
+      "source_url": "https://kit.com/pricing",
+      "affiliate_slug": "kit",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 16,
+      "max_points": 16,
+      "stars": 5.0,
+      "worst_annual_gap_pct": 2
+    },
+    {
       "tool": "linear",
       "vendor": "Linear",
       "category": "dev-tools",
@@ -138,6 +180,27 @@
       "worst_annual_gap_pct": 0
     },
     {
+      "tool": "wave",
+      "vendor": "Wave",
+      "category": "finance",
+      "source_url": "https://www.waveapps.com/pricing",
+      "affiliate_slug": "wave",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 16,
+      "max_points": 16,
+      "stars": 5.0,
+      "worst_annual_gap_pct": 20
+    },
+    {
       "tool": "1password",
       "vendor": "1Password",
       "category": "security",
@@ -150,6 +213,69 @@
         "monthly_billing": 2,
         "free_tier": 1,
         "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "basecamp",
+      "vendor": "Basecamp",
+      "category": "project-mgmt",
+      "source_url": "https://basecamp.com/pricing",
+      "affiliate_slug": "basecamp",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 1,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "bitwarden",
+      "vendor": "Bitwarden",
+      "category": "security",
+      "source_url": "https://bitwarden.com/pricing/business/",
+      "affiliate_slug": "bitwarden",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 1,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "buffer",
+      "vendor": "Buffer",
+      "category": "marketing",
+      "source_url": "https://buffer.com/pricing",
+      "affiliate_slug": "buffer",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 1,
         "fair_annual_gap": 2,
         "seats_at_list": 2
       },
@@ -180,6 +306,69 @@
       "worst_annual_gap_pct": 58
     },
     {
+      "tool": "framer",
+      "vendor": "Framer",
+      "category": "design",
+      "source_url": "https://www.framer.com/pricing/",
+      "affiliate_slug": "framer",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "github",
+      "vendor": "GitHub",
+      "category": "dev-tools",
+      "source_url": "https://github.com/pricing",
+      "affiliate_slug": "github",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 1,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "netlify",
+      "vendor": "Netlify",
+      "category": "dev-tools",
+      "source_url": "https://www.netlify.com/pricing/",
+      "affiliate_slug": "netlify",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
       "tool": "notion",
       "vendor": "Notion",
       "category": "project-mgmt",
@@ -199,6 +388,174 @@
       "max_points": 16,
       "stars": 4.5,
       "worst_annual_gap_pct": 20
+    },
+    {
+      "tool": "quickbooks",
+      "vendor": "QuickBooks",
+      "category": "finance",
+      "source_url": "https://quickbooks.intuit.com/pricing/",
+      "affiliate_slug": "quickbooks",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "slack",
+      "vendor": "Slack",
+      "category": "collaboration",
+      "source_url": "https://slack.com/pricing",
+      "affiliate_slug": "slack",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 15,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 21
+    },
+    {
+      "tool": "calendly",
+      "vendor": "Calendly",
+      "category": "productivity",
+      "source_url": "https://calendly.com/pricing",
+      "affiliate_slug": "calendly",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 25
+    },
+    {
+      "tool": "figma",
+      "vendor": "Figma",
+      "category": "design",
+      "source_url": "https://www.figma.com/pricing/",
+      "affiliate_slug": "figma",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 0,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "freshbooks",
+      "vendor": "FreshBooks",
+      "category": "finance",
+      "source_url": "https://www.freshbooks.com/pricing",
+      "affiliate_slug": "freshbooks",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "grammarly",
+      "vendor": "Grammarly",
+      "category": "productivity",
+      "source_url": "https://www.grammarly.com/plans",
+      "affiliate_slug": "grammarly",
+      "criteria": {
+        "published_pricing": 0,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "loom",
+      "vendor": "Loom",
+      "category": "productivity",
+      "source_url": "https://www.loom.com/pricing",
+      "affiliate_slug": "loom",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 1,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 20
+    },
+    {
+      "tool": "miro",
+      "vendor": "Miro",
+      "category": "collaboration",
+      "source_url": "https://miro.com/pricing/",
+      "affiliate_slug": "miro",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 1,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 25
     },
     {
       "tool": "monday-com",
@@ -264,6 +621,90 @@
       "worst_annual_gap_pct": 34
     },
     {
+      "tool": "tresorit",
+      "vendor": "Tresorit",
+      "category": "security",
+      "source_url": "https://tresorit.com/pricing",
+      "affiliate_slug": "tresorit",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 1,
+        "trial_no_card": 2,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 25
+    },
+    {
+      "tool": "typeform",
+      "vendor": "Typeform",
+      "category": "productivity",
+      "source_url": "https://www.typeform.com/pricing/",
+      "affiliate_slug": "typeform",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 1,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 42
+    },
+    {
+      "tool": "vercel",
+      "vendor": "Vercel",
+      "category": "dev-tools",
+      "source_url": "https://vercel.com/pricing",
+      "affiliate_slug": "vercel",
+      "criteria": {
+        "published_pricing": 0,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "zapier",
+      "vendor": "Zapier",
+      "category": "productivity",
+      "source_url": "https://zapier.com/pricing",
+      "affiliate_slug": "zapier",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 2,
+        "trial_no_card": 2,
+        "fair_annual_gap": 1,
+        "seats_at_list": 2
+      },
+      "points": 14,
+      "max_points": 16,
+      "stars": 4.5,
+      "worst_annual_gap_pct": 50
+    },
+    {
       "tool": "pipedrive",
       "vendor": "Pipedrive",
       "category": "crm",
@@ -306,25 +747,46 @@
       "worst_annual_gap_pct": 20
     },
     {
-      "tool": "tresorit",
-      "vendor": "Tresorit",
-      "category": "security",
-      "source_url": "https://tresorit.com/pricing",
-      "affiliate_slug": "tresorit",
+      "tool": "trello",
+      "vendor": "Trello",
+      "category": "project-mgmt",
+      "source_url": "https://trello.com/pricing",
+      "affiliate_slug": "trello",
       "criteria": {
         "published_pricing": 2,
         "no_setup_fee": 2,
-        "single_seat": 1,
-        "monthly_billing": 2,
-        "free_tier": 1,
-        "trial_no_card": 2,
-        "fair_annual_gap": 1,
+        "single_seat": 2,
+        "monthly_billing": 0,
+        "free_tier": 2,
+        "trial_no_card": 1,
+        "fair_annual_gap": 2,
         "seats_at_list": 2
       },
       "points": 13,
       "max_points": 16,
       "stars": 4.0,
       "worst_annual_gap_pct": 25
+    },
+    {
+      "tool": "airtable",
+      "vendor": "Airtable",
+      "category": "project-mgmt",
+      "source_url": "https://airtable.com/pricing",
+      "affiliate_slug": "airtable",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 0,
+        "free_tier": 2,
+        "trial_no_card": 1,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 12,
+      "max_points": 16,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 0
     },
     {
       "tool": "hubspot",
@@ -346,6 +808,90 @@
       "max_points": 16,
       "stars": 4.0,
       "worst_annual_gap_pct": 186
+    },
+    {
+      "tool": "xero",
+      "vendor": "Xero",
+      "category": "finance",
+      "source_url": "https://www.xero.com/us/pricing-plans/",
+      "affiliate_slug": "xero",
+      "criteria": {
+        "published_pricing": 2,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 0,
+        "trial_no_card": 0,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 12,
+      "max_points": 16,
+      "stars": 4.0,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "surfer",
+      "vendor": "Surfer SEO",
+      "category": "seo",
+      "source_url": "https://surferseo.com/pricing/",
+      "affiliate_slug": "surfer",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 2,
+        "free_tier": 0,
+        "trial_no_card": 0,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 11,
+      "max_points": 16,
+      "stars": 3.5,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "ghost",
+      "vendor": "Ghost",
+      "category": "publishing",
+      "source_url": "https://ghost.org/pricing/",
+      "affiliate_slug": "ghost",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 0,
+        "free_tier": 1,
+        "trial_no_card": 0,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 10,
+      "max_points": 16,
+      "stars": 3.0,
+      "worst_annual_gap_pct": 0
+    },
+    {
+      "tool": "zendesk",
+      "vendor": "Zendesk",
+      "category": "support",
+      "source_url": "https://www.zendesk.com/pricing/",
+      "affiliate_slug": "zendesk",
+      "criteria": {
+        "published_pricing": 1,
+        "no_setup_fee": 2,
+        "single_seat": 2,
+        "monthly_billing": 0,
+        "free_tier": 1,
+        "trial_no_card": 0,
+        "fair_annual_gap": 2,
+        "seats_at_list": 2
+      },
+      "points": 10,
+      "max_points": 16,
+      "stars": 3.0,
+      "worst_annual_gap_pct": 0
     },
     {
       "tool": "ahrefs",
