@@ -1,11 +1,11 @@
 {
   "current_month": "September 2026",
-  "today": "2026-09-05",
+  "today": "2026-09-06",
   "titles_rewritten": 0,
   "descs_rewritten": 12,
-  "dates_refreshed": 1,
+  "dates_refreshed": 346,
   "answers_added": 8,
-  "files_changed": 12,
+  "files_changed": 354,
   "files_scanned": 1545,
   "title_examples": [],
   "desc_examples": [
@@ -41,7 +41,7 @@
     }
   ],
   "indexnow": {
-    "submitted": 12,
+    "submitted": 200,
     "status": 200
   }
 }
