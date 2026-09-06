@@ -38,7 +38,14 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+  # Deliberately NO index/follow here. 'index, follow' is Google's default, so
+  # declaring it gains nothing - and it was being sent on the 1,053 pages whose
+  # meta tag says 'noindex, follow', a contradictory signal. Google resolves
+  # conflicts by taking the more restrictive rule, so the prune still worked,
+  # but their docs do not explicitly cover header-vs-meta and there is no
+  # reason to make them arbitrate. The preview directives below DO have effect
+  # and are kept.
+  X-Robots-Tag: max-image-preview:large, max-snippet:-1, max-video-preview:-1
 
 # /go/ affiliate redirects — do not index, do not cache
 /go/*
