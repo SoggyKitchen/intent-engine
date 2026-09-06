@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-09-06T07:53:42+00:00
-Mode: `audit`
+Generated: 2026-09-06T08:28:41+00:00
+Mode: `apply-safe`
 
 ## Current Score
-- Overall SaaSpare Health Score: **93.49/100**
+- Overall SaaSpare Health Score: **93.51/100**
 - Level: **Strong authority-ready**
 - Technical SEO: 19.59/20
 - Content usefulness: 19.23/20
-- Trust/E-E-A-T: 18.78/20
+- Trust/E-E-A-T: 18.79/20
 - Internal linking: 14.89/15
 - Schema/indexability: 7.03/10
-- Conversion/revenue: 8.98/10
+- Conversion/revenue: 8.99/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
 - Pages scanned: 1577
-- Healthy pages (85+): 1524
+- Healthy pages (85+): 1527
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 94
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -45,26 +45,26 @@ Mode: `audit`
 - `/shortlist` (63.87/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
 - `/contact` (64.77/100): title_length_outside_target
 - `/deal-radar` (68.41/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/saas-pricing-transparency-scores-2026` (68.75/100): meta_length_outside_target, missing_related_pages, missing_trustbox, title_length_outside_target
 - `/newsletter` (71.26/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/linear-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/stripe-pricing-history-2026` (83.36/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (83.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/editorial-policy` (75.17/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/saas-pricing-changes` (75.32/100): meta_length_outside_target
+- `/pages/linear-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/accessibility` (75.66/100): meta_length_outside_target
+- `/pages/stripe-pricing-history-2026` (85.86/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/dmca` (75.91/100): meta_length_outside_target
 - `/cookie-policy` (75.97/100): meta_length_outside_target
-- `/pages/salesforce-pricing-history-2026` (86.0/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology
-- `/pages` (77.0/100): canonical_mismatch, missing_correction_cta, missing_related_pages, title_length_outside_target
+- `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/v3-preview-404` (79.2/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/privacy` (79.66/100): meta_length_outside_target
 - `/pages/best-encrypted-cloud-storage-2026-business` (80.84/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/which-saas-has-the-best-free-plan-2026` (81.31/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/v3-preview-contact` (81.72/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/pages/v3-preview-homepage` (81.91/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
+- `/pages/v3-preview-affiliate-disclosure` (82.02/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.41): CTA=True, affiliateLinks=5, disclosure=True

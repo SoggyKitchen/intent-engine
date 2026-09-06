@@ -7,14 +7,13 @@ Pages scanned: 1577
 - no_h1: 2
 
 ## Warning Counts
-- canonical_mismatch: 1
 - images_missing_alt: 2
 - meta_length_outside_target: 465
 - missing_correction_cta: 334
 - missing_last_verified: 2
 - missing_methodology: 234
-- missing_related_pages: 19
-- missing_trustbox: 65
+- missing_related_pages: 18
+- missing_trustbox: 63
 - thin_buyer_page: 1181
 - title_length_outside_target: 164
 
@@ -26,7 +25,6 @@ Pages scanned: 1577
 - `/404`: 68.24/100, issues=none
 - `/deal-radar`: 68.41/100, issues=none
 - `/about`: 68.56/100, issues=none
-- `/pages/saas-pricing-transparency-scores-2026`: 68.75/100, issues=none
 - `/newsletter`: 71.26/100, issues=none
 - `/media-kit`: 71.72/100, issues=none
 - `/corrections`: 71.92/100, issues=none
@@ -37,7 +35,7 @@ Pages scanned: 1577
 - `/accessibility`: 75.66/100, issues=none
 - `/dmca`: 75.91/100, issues=none
 - `/cookie-policy`: 75.97/100, issues=none
-- `/pages`: 77.0/100, issues=none
+- `/pages`: 78.0/100, issues=none
 - `/pages/v3-preview-404`: 79.2/100, issues=none
 - `/advertise`: 79.3/100, issues=none
 - `/privacy`: 79.66/100, issues=none
@@ -51,10 +49,9 @@ Pages scanned: 1577
 - `/pages/v3-preview-about`: 82.52/100, issues=none
 - `/pages/v3-preview-newsletter`: 82.7/100, issues=none
 - `/pages/v3-preview-library`: 82.81/100, issues=none
-- `/pages/linear-pricing-history-2026`: 82.84/100, issues=broken_internal_link
-- `/pages/stripe-pricing-history-2026`: 83.36/100, issues=broken_internal_link
 - `/pages/v3-preview-shortlist`: 83.4/100, issues=none
 - `/`: 83.5/100, issues=none
+- `/pages/salesforce-pricing-history-2026`: 83.5/100, issues=broken_internal_link
 - `/pages/best-saas-deals-this-week-2026`: 83.66/100, issues=none
 - `/pages/v3-preview-roi-calculator`: 83.69/100, issues=none
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 83.78/100, issues=none
@@ -67,5 +64,7 @@ Pages scanned: 1577
 - `/pages/request-a-comparison`: 84.4/100, issues=none
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
-- `/pages/saas-hidden-costs-2026`: 84.75/100, issues=none
 - `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.78/100, issues=none
+- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.79/100, issues=none
+- `/pages/hidden-fee-detector`: 84.79/100, issues=none
+- `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown`: 84.95/100, issues=none

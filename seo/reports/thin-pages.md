@@ -15,7 +15,7 @@
 - `/pages/1password-business-vs-tenable-which-is-better-in-2026`: 680 words, score 93.4
 - `/pages/1password-business-vs-tresorit-which-is-better-in-2026`: 680 words, score 93.4
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts`: 730 words, score 91.65
-- `/pages/1password-pricing-history-2026`: 668 words, score 88.84
+- `/pages/1password-pricing-history-2026`: 668 words, score 91.34
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work`: 657 words, score 91.28
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict`: 739 words, score 94.19
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026`: 631 words, score 96.16
@@ -85,7 +85,7 @@
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts`: 691 words, score 91.45
 - `/pages/asana-free-trial-2026-how-to-get-it-step-by-step`: 793 words, score 91.97
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay`: 746 words, score 94.23
-- `/pages/asana-pricing-history-2026`: 763 words, score 89.31
+- `/pages/asana-pricing-history-2026`: 763 words, score 91.81
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work`: 609 words, score 91.05
 - `/pages/asana-review-2026-is-it-worth-it-honest-verdict`: 716 words, score 94.08
 - `/pages/asana-vs-basecamp-which-is-better-in-2026`: 631 words, score 96.16
@@ -287,7 +287,7 @@
 - `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: 626 words, score 91.13
 - `/pages/datadog-free-trial-2026-how-to-get-it-step-by-step`: 735 words, score 91.67
 - `/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay`: 733 words, score 94.16
-- `/pages/datadog-pricing-history-2026`: 668 words, score 88.84
+- `/pages/datadog-pricing-history-2026`: 668 words, score 91.34
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work`: 553 words, score 90.77
 - `/pages/datadog-review-2026-is-it-worth-it-honest-verdict`: 607 words, score 92.53
 - `/pages/datadog-vs-new-relic-which-is-better-in-2026`: 653 words, score 94.27

@@ -1,5 +1,18 @@
 [
   {
+    "file": "site/pages/1password-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
+  },
+  {
     "file": "site/pages/1password-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -193,7 +206,7 @@
       "trust_block"
     ],
     "path": "/pages/clearscope-review-2026-is-it-worth-it-honest-verdict",
-    "premium": false
+    "premium": true
   },
   {
     "file": "site/pages/clickup-pricing-history-2026.html",
@@ -427,7 +440,7 @@
       "trust_block"
     ],
     "path": "/pages/gusto-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/hetzner-review-2026-is-it-worth-it-honest-verdict.html",
@@ -557,6 +570,19 @@
       "trust_block"
     ],
     "path": "/pages/linear-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/miro-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/miro-pricing-2026-plans-costs-what-you-actually-pay",
     "premium": false
   },
   {
@@ -570,7 +596,7 @@
       "trust_block"
     ],
     "path": "/pages/miro-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/mixpanel-review-2026-is-it-worth-it-honest-verdict.html",
@@ -807,6 +833,32 @@
     "premium": false
   },
   {
+    "file": "site/pages/saas-hidden-costs-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/saas-hidden-costs-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/saas-pricing-transparency-scores-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/saas-pricing-transparency-scores-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/salesforce-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -860,6 +912,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
+  },
+  {
     "file": "site/pages/semrush-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -886,6 +951,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
+  },
+  {
     "file": "site/pages/shopify-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -910,6 +988,19 @@
     ],
     "path": "/pages/shopify-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/slack-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/slack-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
   },
   {
     "file": "site/pages/slack-review-2026-is-it-worth-it-honest-verdict.html",
@@ -1016,6 +1107,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
+  },
+  {
     "file": "site/pages/tresorit-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -1039,7 +1143,7 @@
       "trust_block"
     ],
     "path": "/pages/tresorit-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/vultr-review-2026-is-it-worth-it-honest-verdict.html",
@@ -1052,7 +1156,7 @@
       "trust_block"
     ],
     "path": "/pages/vultr-review-2026-is-it-worth-it-honest-verdict",
-    "premium": false
+    "premium": true
   },
   {
     "file": "site/pages/workable-review-2026-is-it-worth-it-honest-verdict.html",
@@ -1065,7 +1169,7 @@
       "trust_block"
     ],
     "path": "/pages/workable-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/xero-review-2026-is-it-worth-it-honest-verdict.html",
@@ -1079,6 +1183,19 @@
     ],
     "path": "/pages/xero-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
   },
   {
     "file": "site/pages/zendesk-review-2026-is-it-worth-it-honest-verdict.html",

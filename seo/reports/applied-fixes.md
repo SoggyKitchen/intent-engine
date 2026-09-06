@@ -1,5 +1,6 @@
 # Applied Safe Fixes
 
+- `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/1password-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/activecampaign-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -43,6 +44,7 @@
 - `/pages/kajabi-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/linear-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/linear-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/miro-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/miro-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/mixpanel-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/monday-com-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -62,14 +64,19 @@
 - `/pages/ramp-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/rippling-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/saas-buyer-signals-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/saas-hidden-costs-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/saas-pricing-transparency-scores-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/salesforce-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/salesforce-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/se-ranking-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/semrush-free-trial-2026-how-to-get-it-step-by-step`: canonical, image_alt, internal_links, organization_schema, schema_safety, title, trust_block
+- `/pages/semrush-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/semrush-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/semrush-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/shopify-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/shopify-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/shopify-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/slack-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/slack-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/stripe-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/stripe-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
@@ -78,10 +85,12 @@
 - `/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/surfshark-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/teachable-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/tresorit-pricing-history-2026`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/tresorit-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/vultr-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/workable-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/xero-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
+- `/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/zendesk-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
 - `/pages/zoom-review-2026-is-it-worth-it-honest-verdict`: canonical, image_alt, internal_links, organization_schema, schema_safety, trust_block
