@@ -443,7 +443,7 @@ def fix_shopify_vs_recurly():
     html = p.read_text(encoding="utf-8")
     html = re.sub(
         r'<title>[^<]*[Ss]hopify[^<]*[Rr]ecurly[^<]*</title>',
-        "<title>Shopify vs Recurly 2026: Which Wins for Subscription Commerce? [Expert Tested]</title>",
+        "<title>Shopify vs Recurly 2026: Which Wins for Subscription Commerce? </title>",
         html
     )
     html = re.sub(

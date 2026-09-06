@@ -190,7 +190,7 @@ REVIEWS = {
         hero_lead="HubSpot's free CRM has no seat cap, no contact limit, and no credit card required. After 8 years of reviewing CRMs, it remains the default recommendation for teams under 100 people.",
         pros=["Unlimited contacts and users on the free CRM — no catch",
               "Sales, marketing, and service share one data layer",
-              "1,400+ native integrations out of the box",
+              " native integrations out of the box",
               "HubSpot AI (ChatSpot) included on all paid plans",
               "Best-in-class onboarding resources and HubSpot Academy"],
         cons=["Professional plan requires 3+ seats ($890+/mo) — steep jump from Starter",

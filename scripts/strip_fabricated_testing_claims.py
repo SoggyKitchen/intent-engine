@@ -40,6 +40,31 @@ EXEMPT = {"strip_fabricated_testing_claims.py", "trust_pass.py"}
 # Specific fabrications, longest first. Invented counts and named tools are
 # replaced with what we can actually stand behind, not softened in place.
 EXACT = [
+    # The editorial policy - the page our Organization schema cites as
+    # publishingPrinciples - claimed we subscribe to and use the tools we
+    # review. We do not, and /methodology says the opposite ("Pricing is pulled
+    # from live vendor pages and linked"). A false claim on the trust page is
+    # the most damaging place to have one.
+    ("We subscribe to, test, and use the tools we review. We do not rely solely on "
+     "vendor-provided materials.",
+     "We work from vendors' published pricing pages, plan documentation and terms, "
+     "and we link to the source for every figure. We do not run usability, "
+     "performance or deliverability testing, and we do not present vendor "
+     "materials as our own hands-on findings."),
+    ("Testing Methodology", "How We Evaluate Tools"),
+    ("[Expert Tested]", ""),
+    ("Expert Tested", "Pricing Verified"),
+    # Corpus size. After the 2026-09-01 prune there are 494 indexable pages and
+    # 15 tools with verified pricing. "1,400+" describes a site that no longer
+    # exists, and an inflated corpus claim is the exact signal a scaled-content
+    # demotion looks for. Left deliberately vague rather than hardcoding a
+    # number that will drift again - fix_brand_entity.py computes the live one.
+    ("1,400+ B2B SaaS tools side-by-side", "B2B SaaS tools side-by-side"),
+    ("1,400+ B2B tools", "B2B tools"),
+    ("1,400+ Tools, Real Plans", "Real Plans"),
+    ("1,400+ buyer-intent pages", "buyer-intent pages"),
+    ("1,400+ tools", "tools"),
+    ("1,400+", ""),
     # Wholly invented methodologies. These describe physical actions - network
     # connections, stopwatch timings, hardware benchmarks - that we have never
     # performed. There is no honest rewording, so the claim is replaced with

@@ -27,7 +27,7 @@ TOOLS = {
         price_line="Free", free_tag="$0 forever", price_note="Paid from $15/user/mo",
         tagline="The most complete CRM for growing teams — unlimited free contacts, intuitive interface, sales-marketing-service flywheel.",
         verdict="Best Overall", verdict_class="v-best",
-        pros=["Generous free plan — unlimited contacts, no seat limit","1,400+ native integrations out of the box","Sales, marketing &amp; service share one data layer"],
+        pros=["Generous free plan — unlimited contacts, no seat limit"," native integrations out of the box","Sales, marketing &amp; service share one data layer"],
         cons=["Advanced features locked behind paid Hubs","Pricing jumps sharply above 5 paid users"],
         go="hubspot-crm", scores=dict(value=93,ease=96,features=87,int=98,support=88)),
     "HubSpot": dict(
@@ -35,7 +35,7 @@ TOOLS = {
         price_line="Free", free_tag="$0 forever", price_note="Paid from $15/user/mo",
         tagline="All-in-one marketing, sales, and service platform — unlimited free contacts and the best CRM for growing teams.",
         verdict="Best Overall", verdict_class="v-best",
-        pros=["Unlimited free CRM — no seat cap, no contact limit","ChatSpot AI assistant included on all plans","1,400+ native integrations"],
+        pros=["Unlimited free CRM — no seat cap, no contact limit","ChatSpot AI assistant included on all plans"," native integrations"],
         cons=["Premium features require expensive Hubs","Pricing jumps sharply at scale"],
         go="hubspot", scores=dict(value=93,ease=96,features=87,int=98,support=88)),
     "Salesforce": dict(

@@ -304,7 +304,7 @@ advertise_html = f'''<!DOCTYPE html>
 <head>
 {HEAD_COMMON}
   <title>Advertise on SaaSpare | Partner With Us</title>
-  <meta name="description" content="Partner with SaaSpare to reach 1,400+ pages of B2B SaaS buyer intent traffic. Independent research, no paid rankings — honest affiliate partnerships only.">
+  <meta name="description" content="Partner with SaaSpare to reach  pages of B2B SaaS buyer intent traffic. Independent research, no paid rankings — honest affiliate partnerships only.">
   <link rel="canonical" href="https://saaspare.org/advertise">
   <script type="application/ld+json">{{"@context":"https://schema.org","@type":"WebPage","name":"Advertise on SaaSpare","url":"https://saaspare.org/advertise","description":"Affiliate and partnership opportunities with SaaSpare — independent B2B SaaS comparison publisher.","publisher":{{"@type":"Organization","name":"SaaSpare","url":"https://saaspare.org"}}}}</script>
 </head>
@@ -315,7 +315,7 @@ advertise_html = f'''<!DOCTYPE html>
     <div class="accent-bar"></div>
     <div class="trust-meta">Affiliate &amp; Partnership Enquiries</div>
     <h1>Partner With SaaSpare</h1>
-    <p>SaaSpare is an independent B2B SaaS comparison publisher with 1,400+ buyer-intent pages. We work with software companies through honest affiliate partnerships — no paid placements, no ranking manipulation.</p>
+    <p>SaaSpare is an independent B2B SaaS comparison publisher with buyer-intent pages. We work with software companies through honest affiliate partnerships — no paid placements, no ranking manipulation.</p>
   </div>
   <div class="trust-body">
     <h2>Who we are</h2>
@@ -324,7 +324,7 @@ advertise_html = f'''<!DOCTYPE html>
 
     <h2>Our audience</h2>
     <ul>
-      <li><strong>1,400+ buyer-intent pages</strong> covering software pricing, alternatives, reviews, and comparisons</li>
+      <li><strong>buyer-intent pages</strong> covering software pricing, alternatives, reviews, and comparisons</li>
       <li><strong>Primary audience:</strong> B2B decision-makers, IT managers, founders, and finance teams evaluating software purchases</li>
       <li><strong>Traffic:</strong> Growing organic search audience primarily from English-speaking markets (Australia, US, UK, Canada, Singapore)</li>
       <li><strong>Content freshness:</strong> Pricing data verified weekly via automated scraping and manual review</li>
