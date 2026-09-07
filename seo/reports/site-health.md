@@ -1,14 +1,14 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-09-07T08:17:00+00:00
-Mode: `audit`
+Generated: 2026-09-07T09:06:24+00:00
+Mode: `apply-safe`
 
 ## Current Score
-- Overall SaaSpare Health Score: **93.33/100**
+- Overall SaaSpare Health Score: **93.39/100**
 - Level: **Strong authority-ready**
 - Technical SEO: 19.55/20
 - Content usefulness: 19.23/20
-- Trust/E-E-A-T: 18.68/20
+- Trust/E-E-A-T: 18.73/20
 - Internal linking: 14.85/15
 - Schema/indexability: 7.03/10
 - Conversion/revenue: 9.0/10
@@ -16,10 +16,10 @@ Mode: `audit`
 
 ## Dashboard Summary
 - Pages scanned: 1603
-- Healthy pages (85+): 1529
+- Healthy pages (85+): 1551
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 119
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -45,26 +45,26 @@ Mode: `audit`
 - `/shortlist` (63.87/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
 - `/contact` (64.77/100): title_length_outside_target
 - `/deal-radar` (68.41/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/saas-pricing-transparency-scores-2026` (69.75/100): meta_length_outside_target, missing_related_pages, missing_trustbox, title_length_outside_target
 - `/newsletter` (71.26/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/freshbooks-pricing-history-2026` (81.84/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/quickbooks-pricing-history-2026` (81.84/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/airtable-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/basecamp-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/bitwarden-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/buffer-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/calendly-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/figma-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/framer-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/ghost-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/github-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/grammarly-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/helpscout-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/kit-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/linear-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/loom-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/netlify-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026` (83.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology
+- `/pages/freshbooks-pricing-history-2026` (84.34/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/quickbooks-pricing-history-2026` (84.34/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
+- `/editorial-policy` (75.17/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
+- `/pages/airtable-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/basecamp-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/bitwarden-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/buffer-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/calendly-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/figma-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/framer-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ghost-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/github-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/grammarly-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/helpscout-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/kit-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.41): CTA=True, affiliateLinks=5, disclosure=True

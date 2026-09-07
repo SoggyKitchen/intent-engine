@@ -15,7 +15,7 @@
 - `/pages/1password-business-vs-tenable-which-is-better-in-2026`: 680 words, score 93.4
 - `/pages/1password-business-vs-tresorit-which-is-better-in-2026`: 680 words, score 93.4
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts`: 727 words, score 91.63
-- `/pages/1password-pricing-history-2026`: 668 words, score 88.84
+- `/pages/1password-pricing-history-2026`: 668 words, score 91.34
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work`: 657 words, score 91.28
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict`: 745 words, score 94.22
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026`: 631 words, score 96.16
@@ -62,7 +62,7 @@
 - `/pages/ahrefs-vs-surfer-seo-which-is-better-in-2026`: 657 words, score 96.28
 - `/pages/ai-tools-pricing-changes-2026`: 504 words, score 86.52
 - `/pages/airbase-vs-divvy-which-is-better-in-2026`: 585 words, score 93.92
-- `/pages/airtable-pricing-history-2026`: 668 words, score 82.84
+- `/pages/airtable-pricing-history-2026`: 668 words, score 85.34
 - `/pages/amplitude-coupon-2026-discount-codes-promo`: 616 words, score 91.08
 - `/pages/amplitude-free-trial-2026-how-to-start-what-you-get`: 739 words, score 91.69
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay`: 735 words, score 90.67
@@ -86,7 +86,7 @@
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts`: 695 words, score 91.47
 - `/pages/asana-free-trial-2026-how-to-get-it-step-by-step`: 792 words, score 91.96
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay`: 742 words, score 94.21
-- `/pages/asana-pricing-history-2026`: 763 words, score 89.31
+- `/pages/asana-pricing-history-2026`: 763 words, score 91.81
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work`: 609 words, score 91.05
 - `/pages/asana-review-2026-is-it-worth-it-honest-verdict`: 714 words, score 94.07
 - `/pages/asana-vs-basecamp-which-is-better-in-2026`: 631 words, score 96.16
@@ -123,7 +123,7 @@
 - `/pages/bamboohr-vs-remote-com-which-is-better-in-2026`: 671 words, score 93.36
 - `/pages/bamboohr-vs-rippling-which-is-better-in-2026`: 642 words, score 93.21
 - `/pages/bamboohr-vs-workable-which-is-better-in-2026`: 643 words, score 93.22
-- `/pages/basecamp-pricing-history-2026`: 668 words, score 82.84
+- `/pages/basecamp-pricing-history-2026`: 668 words, score 85.34
 - `/pages/basecamp-vs-smartsheet-which-is-better-in-2026`: 639 words, score 94.19
 - `/pages/basecamp-vs-todoist-which-is-better-in-2026`: 641 words, score 94.2
 - `/pages/basecamp-vs-wrike-which-is-better-in-2026`: 613 words, score 94.06
@@ -155,7 +155,7 @@
 - `/pages/bigcommerce-vs-recurly-which-is-better-in-2026`: 609 words, score 94.05
 - `/pages/bigcommerce-vs-stripe-which-is-better-in-2026`: 610 words, score 94.05
 - `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026`: 614 words, score 94.07
-- `/pages/bitwarden-pricing-history-2026`: 668 words, score 82.84
+- `/pages/bitwarden-pricing-history-2026`: 668 words, score 85.34
 - `/pages/bitwarden-vs-dashlane-which-is-better-in-2026`: 633 words, score 96.16
 - `/pages/bitwarden-vs-enpass-which-is-better-in-2026`: 630 words, score 96.15
 - `/pages/bitwarden-vs-keeper-which-is-better-in-2026`: 632 words, score 96.16
@@ -173,9 +173,9 @@
 - `/pages/brex-vs-netsuite-which-is-better-in-2026`: 597 words, score 92.98
 - `/pages/brex-vs-quickbooks-which-is-better-in-2026`: 612 words, score 96.06
 - `/pages/brex-vs-sage-which-is-better-in-2026`: 607 words, score 94.03
-- `/pages/buffer-pricing-history-2026`: 668 words, score 82.84
+- `/pages/buffer-pricing-history-2026`: 668 words, score 85.34
 - `/pages/buyer-type-alternatives`: 285 words, score 87.42
-- `/pages/calendly-pricing-history-2026`: 668 words, score 82.84
+- `/pages/calendly-pricing-history-2026`: 668 words, score 85.34
 - `/pages/canva-coupon-code-promo-codes-2026-verified-discounts`: 682 words, score 91.41
 - `/pages/canva-free-trial-2026-how-to-get-it-step-by-step`: 742 words, score 91.71
 - `/pages/canva-review-2026-is-it-worth-it-honest-verdict`: 700 words, score 94.0
@@ -292,7 +292,7 @@
 - `/pages/datadog-coupon-code-promo-codes-2026-verified-discounts`: 626 words, score 91.13
 - `/pages/datadog-free-trial-2026-how-to-get-it-step-by-step`: 750 words, score 91.75
 - `/pages/datadog-pricing-2026-plans-costs-what-you-actually-pay`: 739 words, score 94.19
-- `/pages/datadog-pricing-history-2026`: 668 words, score 88.84
+- `/pages/datadog-pricing-history-2026`: 668 words, score 91.34
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work`: 553 words, score 90.77
 - `/pages/datadog-review-2026-is-it-worth-it-honest-verdict`: 612 words, score 92.56
 - `/pages/datadog-vs-new-relic-which-is-better-in-2026`: 653 words, score 94.27

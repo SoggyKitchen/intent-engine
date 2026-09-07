@@ -91,6 +91,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/airtable-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/airtable-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/amplitude-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -156,6 +169,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/basecamp-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/basecamp-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed.html",
     "fixes": [
       "canonical",
@@ -181,6 +207,45 @@
     ],
     "path": "/pages/bigcommerce-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/bitwarden-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/bitwarden-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/buffer-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/buffer-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/calendly-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/calendly-pricing-history-2026",
+    "premium": false
   },
   {
     "file": "site/pages/canva-review-2026-is-it-worth-it-honest-verdict.html",
@@ -391,6 +456,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/figma-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/figma-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/fiverr-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -402,6 +480,32 @@
     ],
     "path": "/pages/fiverr-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/framer-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/framer-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/freshbooks-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/freshbooks-pricing-history-2026",
+    "premium": false
   },
   {
     "file": "site/pages/freshbooks-review-2026-is-it-worth-it-honest-verdict.html",
@@ -430,6 +534,45 @@
     "premium": false
   },
   {
+    "file": "site/pages/ghost-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/ghost-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/github-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/github-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/grammarly-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/grammarly-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/gusto-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -440,6 +583,19 @@
       "trust_block"
     ],
     "path": "/pages/gusto-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/helpscout-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/helpscout-pricing-history-2026",
     "premium": false
   },
   {
@@ -453,7 +609,7 @@
       "trust_block"
     ],
     "path": "/pages/hetzner-review-2026-is-it-worth-it-honest-verdict",
-    "premium": false
+    "premium": true
   },
   {
     "file": "site/pages/hostpapa-review-2026-is-it-worth-it-honest-verdict.html",
@@ -547,6 +703,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/kit-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/kit-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/linear-pricing-history-2026.html",
     "fixes": [
       "canonical",
@@ -573,6 +742,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/loom-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/loom-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/miro-pricing-2026-plans-costs-what-you-actually-pay.html",
     "fixes": [
       "canonical",
@@ -586,6 +768,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/miro-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/miro-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/miro-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -596,7 +791,7 @@
       "trust_block"
     ],
     "path": "/pages/miro-review-2026-is-it-worth-it-honest-verdict",
-    "premium": false
+    "premium": true
   },
   {
     "file": "site/pages/mixpanel-review-2026-is-it-worth-it-honest-verdict.html",
@@ -609,7 +804,7 @@
       "trust_block"
     ],
     "path": "/pages/mixpanel-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/monday-com-pricing-history-2026.html",
@@ -649,6 +844,19 @@
     ],
     "path": "/pages/moz-pro-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/netlify-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/netlify-pricing-history-2026",
+    "premium": false
   },
   {
     "file": "site/pages/nordlayer-review-2026-is-it-worth-it-honest-verdict.html",
@@ -794,6 +1002,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/quickbooks-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/quickbooks-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/ramp-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -817,7 +1038,7 @@
       "trust_block"
     ],
     "path": "/pages/rippling-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
   },
   {
     "file": "site/pages/saas-buyer-signals-2026.html",
@@ -830,19 +1051,6 @@
       "trust_block"
     ],
     "path": "/pages/saas-buyer-signals-2026",
-    "premium": false
-  },
-  {
-    "file": "site/pages/saas-hidden-costs-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/saas-hidden-costs-2026",
     "premium": false
   },
   {
@@ -1003,6 +1211,19 @@
     "premium": false
   },
   {
+    "file": "site/pages/slack-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/slack-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/slack-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -1068,6 +1289,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/surfer-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/surfer-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/surfer-seo-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -1105,6 +1339,19 @@
     ],
     "path": "/pages/teachable-review-2026-is-it-worth-it-honest-verdict",
     "premium": true
+  },
+  {
+    "file": "site/pages/trello-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/trello-pricing-history-2026",
+    "premium": false
   },
   {
     "file": "site/pages/tresorit-pricing-2026-plans-costs-what-you-actually-pay.html",
@@ -1146,6 +1393,32 @@
     "premium": false
   },
   {
+    "file": "site/pages/typeform-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/typeform-pricing-history-2026",
+    "premium": false
+  },
+  {
+    "file": "site/pages/vercel-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/vercel-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/vultr-review-2026-is-it-worth-it-honest-verdict.html",
     "fixes": [
       "canonical",
@@ -1156,7 +1429,20 @@
       "trust_block"
     ],
     "path": "/pages/vultr-review-2026-is-it-worth-it-honest-verdict",
-    "premium": true
+    "premium": false
+  },
+  {
+    "file": "site/pages/wave-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/wave-pricing-history-2026",
+    "premium": false
   },
   {
     "file": "site/pages/workable-review-2026-is-it-worth-it-honest-verdict.html",
@@ -1169,6 +1455,19 @@
       "trust_block"
     ],
     "path": "/pages/workable-review-2026-is-it-worth-it-honest-verdict",
+    "premium": true
+  },
+  {
+    "file": "site/pages/xero-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/xero-pricing-history-2026",
     "premium": false
   },
   {
@@ -1185,6 +1484,19 @@
     "premium": true
   },
   {
+    "file": "site/pages/zapier-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/zapier-pricing-history-2026",
+    "premium": false
+  },
+  {
     "file": "site/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay.html",
     "fixes": [
       "canonical",
@@ -1195,6 +1507,19 @@
       "trust_block"
     ],
     "path": "/pages/zendesk-pricing-2026-plans-costs-what-you-actually-pay",
+    "premium": false
+  },
+  {
+    "file": "site/pages/zendesk-pricing-history-2026.html",
+    "fixes": [
+      "canonical",
+      "image_alt",
+      "internal_links",
+      "organization_schema",
+      "schema_safety",
+      "trust_block"
+    ],
+    "path": "/pages/zendesk-pricing-history-2026",
     "premium": false
   },
   {
