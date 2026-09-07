@@ -1,25 +1,25 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-09-06T08:28:41+00:00
-Mode: `apply-safe`
+Generated: 2026-09-07T08:17:00+00:00
+Mode: `audit`
 
 ## Current Score
-- Overall SaaSpare Health Score: **93.51/100**
+- Overall SaaSpare Health Score: **93.33/100**
 - Level: **Strong authority-ready**
-- Technical SEO: 19.59/20
+- Technical SEO: 19.55/20
 - Content usefulness: 19.23/20
-- Trust/E-E-A-T: 18.79/20
-- Internal linking: 14.89/15
+- Trust/E-E-A-T: 18.68/20
+- Internal linking: 14.85/15
 - Schema/indexability: 7.03/10
-- Conversion/revenue: 8.99/10
+- Conversion/revenue: 9.0/10
 - Performance/UX: 5.0/5
 
 ## Dashboard Summary
-- Pages scanned: 1577
-- Healthy pages (85+): 1527
+- Pages scanned: 1603
+- Healthy pages (85+): 1529
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 94
+- Safe fixes applied this run: 0
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -45,30 +45,30 @@ Mode: `apply-safe`
 - `/shortlist` (63.87/100): meta_length_outside_target, missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
 - `/contact` (64.77/100): title_length_outside_target
 - `/deal-radar` (68.41/100): images_missing_alt, missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
+- `/pages/saas-pricing-transparency-scores-2026` (69.75/100): meta_length_outside_target, missing_related_pages, missing_trustbox, title_length_outside_target
 - `/newsletter` (71.26/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
+- `/pages/freshbooks-pricing-history-2026` (81.84/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/quickbooks-pricing-history-2026` (81.84/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
-- `/pages/salesforce-pricing-history-2026` (83.5/100): broken_internal_link, meta_length_outside_target, missing_correction_cta, missing_methodology
-- `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
-- `/editorial-policy` (75.17/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
-- `/pages/saas-pricing-changes` (75.32/100): meta_length_outside_target
-- `/pages/linear-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/accessibility` (75.66/100): meta_length_outside_target
-- `/pages/stripe-pricing-history-2026` (85.86/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
-- `/dmca` (75.91/100): meta_length_outside_target
-- `/cookie-policy` (75.97/100): meta_length_outside_target
-- `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
-- `/pages/v3-preview-404` (79.2/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/privacy` (79.66/100): meta_length_outside_target
-- `/pages/best-encrypted-cloud-storage-2026-business` (80.84/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/which-saas-has-the-best-free-plan-2026` (81.31/100): missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
-- `/pages/v3-preview-contact` (81.72/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-homepage` (81.91/100): missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
-- `/pages/v3-preview-affiliate-disclosure` (82.02/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page
+- `/pages/airtable-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/basecamp-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/bitwarden-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/buffer-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/calendly-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/figma-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/framer-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/ghost-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/github-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/grammarly-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/helpscout-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/kit-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/linear-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/loom-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/netlify-pricing-history-2026` (82.84/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.41): CTA=True, affiliateLinks=5, disclosure=True
-- `/pages/best-saas-deals-this-week-2026` (coupon, score 83.66): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/best-saas-deals-this-week-2026` (coupon, score 83.7): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 90.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 90.75): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/datadog-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 90.77): CTA=True, affiliateLinks=1, disclosure=True
@@ -81,14 +81,14 @@ Mode: `apply-safe`
 - `/pages/monday-com-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 90.88): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.05): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/clickup-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.05): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/workable-coupon-2026-discount-codes-promo` (coupon, score 91.06): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/clearscope-coupon-2026-discount-codes-promo` (coupon, score 91.07): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/linear-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.07): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/bigcommerce-coupon-2026-discount-codes-promo` (coupon, score 91.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/digitalocean-coupon-2026-discount-codes-promo` (coupon, score 91.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/gusto-coupon-2026-discount-codes-promo` (coupon, score 91.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/nordlayer-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 91.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/gusto-coupon-2026-discount-codes-promo` (coupon, score 91.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/linear-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.06): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.07): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/slack-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 91.07): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, score 91.08): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/semrush-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.08): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/mixpanel-coupon-2026-discount-codes-promo` (coupon, score 91.09): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/ramp-coupon-2026-discount-codes-promo` (coupon, score 91.09): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/salesforce-promo-code-2026-discounts-deals-that-actually-work` (coupon, score 91.09): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/tresorit-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 91.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/vultr-coupon-2026-discount-codes-promo` (coupon, score 91.08): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/bamboohr-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 91.09): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/notion-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 91.09): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/stripe-coupon-2026-discount-codes-promo` (coupon, score 91.09): CTA=True, affiliateLinks=1, disclosure=True

@@ -9,7 +9,7 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 - **Ahrefs** [PLACEHOLDER, none] — 28 pages, 11 impressions, $100/conv
 - **Datadog** [PLACEHOLDER, none] — 11 pages, 0 impressions, $80/conv
 - **HubSpot** [PENDING, Impact] — 44 pages, 0 impressions, $400/conv
-- **FreshBooks** [PENDING, Awin] — 24 pages, 0 impressions, $200/conv
+- **FreshBooks** [PENDING, Awin] — 25 pages, 0 impressions, $200/conv
 - **Deel** [PLACEHOLDER, none] — 9 pages, 0 impressions, $100/conv
 - **ActiveCampaign** [LOCKED, PartnerStack] — 24 pages, 0 impressions, $85/conv
 - **1Password** [PENDING, Impact] — 31 pages, 0 impressions, $45/conv
@@ -24,8 +24,8 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 - **Monday.com** [LOCKED, PartnerStack] — 19 pages, 0 impressions, $150/conv
 - **Ramp** [PLACEHOLDER, none] — 7 pages, 0 impressions, $100/conv
 - **Salesforce** [PLACEHOLDER, none] — 8 pages, 0 impressions, $120/conv
-- **Slack** [PLACEHOLDER, none] — 5 pages, 0 impressions, $20/conv
-- **Xero** [PENDING, Direct] — 16 pages, 0 impressions, $80/conv
+- **Slack** [PLACEHOLDER, none] — 6 pages, 0 impressions, $20/conv
+- **Xero** [PENDING, Direct] — 17 pages, 0 impressions, $80/conv
 - **Notion** [PLACEHOLDER, none] — 10 pages, 0 impressions, $15/conv
 - **Pipedrive** [PLACEHOLDER, none] — 17 pages, 0 impressions, $60/conv
 - **Mailchimp** [PLACEHOLDER, none] — 1 pages, 0 impressions, $25/conv

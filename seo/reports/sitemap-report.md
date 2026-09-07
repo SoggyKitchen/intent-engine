@@ -2,8 +2,8 @@
 
 - Sitemap exists: True
 - Sitemap URL count: 518
-- Scanned HTML pages: 1577
-- Scanned pages missing from sitemap: 1072
+- Scanned HTML pages: 1603
+- Scanned pages missing from sitemap: 1098
 
 ## Missing Examples
 - https://saaspare.org/fo-verify-c0ceba67-f661-491b-9895-78e0a0a9eb9f
