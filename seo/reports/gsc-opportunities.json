@@ -1,6 +1,16 @@
 {
-  "endDate": "2026-09-06",
+  "endDate": "2026-09-07",
   "opportunities": [
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 10.0,
+      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
+      "position": 28.1,
+      "query": "",
+      "recommendedAction": "Add supporting links from category hubs and improve page-specific evidence.",
+      "score": 39.1
+    },
     {
       "clicks": 0.0,
       "ctr": 0.0,
@@ -64,32 +74,22 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 9.0,
-      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 30.89,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 50.0,
+      "impressions": 56.0,
       "page": "https://saaspare.org/pages/",
-      "position": 5.28,
+      "position": 4.88,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 21.0
+      "score": 21.12
     },
     {
       "clicks": 7.0,
-      "ctr": 0.0753,
-      "impressions": 93.0,
+      "ctr": 0.0722,
+      "impressions": 97.0,
       "page": "https://saaspare.org/",
-      "position": 7.03,
+      "position": 6.8,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 1.86
+      "score": 1.94
     },
     {
       "clicks": 0.0,
@@ -114,5 +114,5 @@
   "rowsPulled": 15,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-08-09"
+  "startDate": "2026-08-10"
 }
