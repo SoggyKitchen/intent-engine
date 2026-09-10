@@ -2034,7 +2034,7 @@
       "missing_correction_cta",
       "missing_related_pages"
     ],
-    "word_count": 1058
+    "word_count": 1059
   },
   {
     "affiliate_links": [],
@@ -3718,8 +3718,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 170,
+    "meta_description": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 171,
     "page_type": "pricing",
     "path": "/pages/1password-pricing-history-2026",
     "robots": "noindex, follow",
@@ -3733,16 +3733,17 @@
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 90.34,
       "performanceUx": 5,
       "schemaIndexability": 7,
-      "technical": 20,
+      "technical": 19,
       "trust": 15.0
     },
-    "title": "1Password Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 68,
+    "title": "1Password Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 69,
     "url": "https://saaspare.org/pages/1password-pricing-history-2026",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
       "thin_buyer_page"
@@ -3994,8 +3995,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "We compared 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict, plus who each tool is actually for.",
-    "meta_length": 133,
+    "meta_description": "We compared 1Password and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+    "meta_length": 134,
     "page_type": "comparison",
     "path": "/pages/1password-vs-bitwarden-which-is-better-in-2026",
     "robots": "noindex, follow",
@@ -4017,8 +4018,8 @@
       "technical": 20,
       "trust": 20.0
     },
-    "title": "1Password vs Bitwarden: Which Is Better in 2026? [Full Comparison]",
-    "title_length": 66,
+    "title": "1Password vs Bitwarden \u2014 Which Is Better in 2026? [Full Comparison]",
+    "title_length": 67,
     "url": "https://saaspare.org/pages/1password-vs-bitwarden-which-is-better-in-2026",
     "warnings": [
       "thin_buyer_page"
@@ -12625,8 +12626,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/ahrefs-pricing-history-2026",
     "robots": "",
@@ -12647,8 +12648,8 @@
       "technical": 20,
       "trust": 12.5
     },
-    "title": "Ahrefs Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Ahrefs Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/ahrefs-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -13988,8 +13989,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Airtable pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 169,
+    "meta_description": "Airtable pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/airtable-pricing-history-2026",
     "robots": "noindex, follow",
@@ -14009,8 +14010,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Airtable Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 67,
+    "title": "Airtable Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 68,
     "url": "https://saaspare.org/pages/airtable-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -16137,8 +16138,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 166,
+    "meta_description": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/asana-pricing-history-2026",
     "robots": "noindex, follow",
@@ -16158,8 +16159,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Asana Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 64,
+    "title": "Asana Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 65,
     "url": "https://saaspare.org/pages/asana-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -19836,8 +19837,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Basecamp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 169,
+    "meta_description": "Basecamp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/basecamp-pricing-history-2026",
     "robots": "noindex, follow",
@@ -19857,8 +19858,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Basecamp Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 67,
+    "title": "Basecamp Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 68,
     "url": "https://saaspare.org/pages/basecamp-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -32982,8 +32983,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews, here",
-    "meta_length": 112,
+    "meta_description": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here",
+    "meta_length": 113,
     "page_type": "best_of",
     "path": "/pages/best-ecommerce-platforms-2026",
     "robots": "",
@@ -41664,8 +41665,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews, here",
-    "meta_length": 106,
+    "meta_description": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews \u2014 here",
+    "meta_length": 107,
     "page_type": "best_of",
     "path": "/pages/best-vpn-australia-2026",
     "robots": "",
@@ -43982,8 +43983,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Bitwarden pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 170,
+    "meta_description": "Bitwarden pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 171,
     "page_type": "pricing",
     "path": "/pages/bitwarden-pricing-history-2026",
     "robots": "noindex, follow",
@@ -43997,16 +43998,17 @@
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 84.34,
       "performanceUx": 5,
       "schemaIndexability": 7,
-      "technical": 17,
+      "technical": 16,
       "trust": 15.0
     },
-    "title": "Bitwarden Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 68,
+    "title": "Bitwarden Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 69,
     "url": "https://saaspare.org/pages/bitwarden-pricing-history-2026",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
       "thin_buyer_page"
@@ -45601,8 +45603,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Buffer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Buffer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/buffer-pricing-history-2026",
     "robots": "noindex, follow",
@@ -45622,8 +45624,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Buffer Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Buffer Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/buffer-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -45788,8 +45790,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Calendly pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 169,
+    "meta_description": "Calendly pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/calendly-pricing-history-2026",
     "robots": "noindex, follow",
@@ -45809,8 +45811,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Calendly Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 67,
+    "title": "Calendly Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 68,
     "url": "https://saaspare.org/pages/calendly-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -49056,8 +49058,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 168,
+    "meta_description": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/clickup-pricing-history-2026",
     "robots": "",
@@ -49078,8 +49080,8 @@
       "technical": 20,
       "trust": 12.5
     },
-    "title": "ClickUp Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 66,
+    "title": "ClickUp Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 67,
     "url": "https://saaspare.org/pages/clickup-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -57548,8 +57550,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Datadog pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 168,
+    "meta_description": "Datadog pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/datadog-pricing-history-2026",
     "robots": "noindex, follow",
@@ -57569,8 +57571,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Datadog Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 66,
+    "title": "Datadog Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 67,
     "url": "https://saaspare.org/pages/datadog-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -70620,8 +70622,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Figma pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 166,
+    "meta_description": "Figma pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/figma-pricing-history-2026",
     "robots": "noindex, follow",
@@ -70641,8 +70643,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Figma Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 64,
+    "title": "Figma Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 65,
     "url": "https://saaspare.org/pages/figma-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -71976,8 +71978,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Framer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Framer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/framer-pricing-history-2026",
     "robots": "noindex, follow",
@@ -71997,8 +71999,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Framer Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Framer Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/framer-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -72450,8 +72452,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Freshbooks pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 171,
+    "meta_description": "Freshbooks pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 172,
     "page_type": "pricing",
     "path": "/pages/freshbooks-pricing-history-2026",
     "robots": "noindex, follow",
@@ -72471,8 +72473,8 @@
       "technical": 16,
       "trust": 15.0
     },
-    "title": "Freshbooks Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 69,
+    "title": "Freshbooks Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 70,
     "url": "https://saaspare.org/pages/freshbooks-pricing-history-2026",
     "warnings": [
       "meta_length_outside_target",
@@ -75910,8 +75912,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Ghost pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 166,
+    "meta_description": "Ghost pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/ghost-pricing-history-2026",
     "robots": "noindex, follow",
@@ -75931,8 +75933,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Ghost Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 64,
+    "title": "Ghost Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 65,
     "url": "https://saaspare.org/pages/ghost-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -76791,8 +76793,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Github pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Github pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/github-pricing-history-2026",
     "robots": "noindex, follow",
@@ -76812,8 +76814,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Github Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Github Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/github-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -77586,8 +77588,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Grammarly pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 170,
+    "meta_description": "Grammarly pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 171,
     "page_type": "pricing",
     "path": "/pages/grammarly-pricing-history-2026",
     "robots": "noindex, follow",
@@ -77601,16 +77603,17 @@
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 84.34,
       "performanceUx": 5,
       "schemaIndexability": 7,
-      "technical": 17,
+      "technical": 16,
       "trust": 15.0
     },
-    "title": "Grammarly Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 68,
+    "title": "Grammarly Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 69,
     "url": "https://saaspare.org/pages/grammarly-pricing-history-2026",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
       "thin_buyer_page"
@@ -79894,8 +79897,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Helpscout pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 170,
+    "meta_description": "Helpscout pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 171,
     "page_type": "pricing",
     "path": "/pages/helpscout-pricing-history-2026",
     "robots": "noindex, follow",
@@ -79909,16 +79912,17 @@
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 84.34,
       "performanceUx": 5,
       "schemaIndexability": 7,
-      "technical": 17,
+      "technical": 16,
       "trust": 15.0
     },
-    "title": "Helpscout Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 68,
+    "title": "Helpscout Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 69,
     "url": "https://saaspare.org/pages/helpscout-pricing-history-2026",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
       "thin_buyer_page"
@@ -83085,8 +83089,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 168,
+    "meta_description": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/hubspot-pricing-history-2026",
     "robots": "",
@@ -83107,8 +83111,8 @@
       "technical": 20,
       "trust": 12.5
     },
-    "title": "HubSpot Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 66,
+    "title": "HubSpot Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 67,
     "url": "https://saaspare.org/pages/hubspot-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -91271,8 +91275,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Kit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 164,
+    "meta_description": "Kit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 165,
     "page_type": "pricing",
     "path": "/pages/kit-pricing-history-2026",
     "robots": "noindex, follow",
@@ -91292,8 +91296,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Kit Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 62,
+    "title": "Kit Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 63,
     "url": "https://saaspare.org/pages/kit-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -93310,8 +93314,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Linear pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Linear pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/linear-pricing-history-2026",
     "robots": "noindex, follow",
@@ -93331,8 +93335,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Linear Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Linear Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/linear-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -95164,8 +95168,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Loom pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 165,
+    "meta_description": "Loom pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/loom-pricing-history-2026",
     "robots": "noindex, follow",
@@ -95185,8 +95189,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Loom Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 63,
+    "title": "Loom Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 64,
     "url": "https://saaspare.org/pages/loom-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -97757,8 +97761,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Miro pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 165,
+    "meta_description": "Miro pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/miro-pricing-history-2026",
     "robots": "noindex, follow",
@@ -97778,8 +97782,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Miro Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 63,
+    "title": "Miro Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 64,
     "url": "https://saaspare.org/pages/miro-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -99734,8 +99738,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 171,
+    "meta_description": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 172,
     "page_type": "pricing",
     "path": "/pages/monday-com-pricing-history-2026",
     "robots": "",
@@ -99756,8 +99760,8 @@
       "technical": 19,
       "trust": 12.5
     },
-    "title": "Monday.com Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 69,
+    "title": "Monday.com Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 70,
     "url": "https://saaspare.org/pages/monday-com-pricing-history-2026",
     "warnings": [
       "meta_length_outside_target",
@@ -102160,8 +102164,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Netlify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 168,
+    "meta_description": "Netlify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/netlify-pricing-history-2026",
     "robots": "noindex, follow",
@@ -102181,8 +102185,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Netlify Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 66,
+    "title": "Netlify Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 67,
     "url": "https://saaspare.org/pages/netlify-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -105470,8 +105474,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "We compared Nordpass and Bitwarden side-by-side in 2026. See pricing, features, and our verdict, plus who each tool is actually for.",
-    "meta_length": 132,
+    "meta_description": "We compared Nordpass and Bitwarden side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+    "meta_length": 133,
     "page_type": "comparison",
     "path": "/pages/nordpass-vs-bitwarden-which-is-better-in-2026",
     "robots": "index, follow",
@@ -107598,8 +107602,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Notion pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Notion pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/notion-pricing-history-2026",
     "robots": "noindex, follow",
@@ -107619,8 +107623,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Notion Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Notion Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/notion-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -114621,8 +114625,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Pipedrive pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 170,
+    "meta_description": "Pipedrive pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 171,
     "page_type": "pricing",
     "path": "/pages/pipedrive-pricing-history-2026",
     "robots": "noindex, follow",
@@ -114636,16 +114640,17 @@
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 90.34,
       "performanceUx": 5,
       "schemaIndexability": 7,
-      "technical": 20,
+      "technical": 19,
       "trust": 15.0
     },
-    "title": "Pipedrive Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 68,
+    "title": "Pipedrive Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 69,
     "url": "https://saaspare.org/pages/pipedrive-pricing-history-2026",
     "warnings": [
+      "meta_length_outside_target",
       "missing_correction_cta",
       "missing_methodology",
       "thin_buyer_page"
@@ -117813,8 +117818,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Quickbooks pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 171,
+    "meta_description": "Quickbooks pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 172,
     "page_type": "pricing",
     "path": "/pages/quickbooks-pricing-history-2026",
     "robots": "noindex, follow",
@@ -117834,8 +117839,8 @@
       "technical": 16,
       "trust": 15.0
     },
-    "title": "Quickbooks Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 69,
+    "title": "Quickbooks Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 70,
     "url": "https://saaspare.org/pages/quickbooks-pricing-history-2026",
     "warnings": [
       "meta_length_outside_target",
@@ -123942,8 +123947,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 1,
-    "meta_description": "Updated September 2026. 500 public B2B-buyer signals analysed across 10 verticals. Source citations on every row. Original SaaSpare data, updated nightly.",
-    "meta_length": 154,
+    "meta_description": "Updated September 2026. 500 public B2B-buyer signals analysed across 10 verticals. Source citations on every row. Original SaaSpare data \u2014 updated nightly.",
+    "meta_length": 155,
     "page_type": "other",
     "path": "/pages/saas-buyer-signals-2026",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
@@ -123961,8 +123966,8 @@
       "technical": 20,
       "trust": 10.0
     },
-    "title": "SaaS Buyer Signals September 2026: Real Public-Discussion Intent Data",
-    "title_length": 69,
+    "title": "SaaS Buyer Signals September 2026 \u2014 Real Public-Discussion Intent Data",
+    "title_length": 70,
     "url": "https://saaspare.org/pages/saas-buyer-signals-2026",
     "warnings": [],
     "word_count": 1186
@@ -124395,7 +124400,7 @@
     ],
     "file": "site/pages/saas-pricing-changes.html",
     "h1": [
-      "SaaS Pricing Changes: September 2026"
+      "SaaS Pricing Changes \u2014 September 2026"
     ],
     "h2": [
       "Detected changes (September 2026)",
@@ -124479,8 +124484,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 1,
-    "meta_description": "Updated September 2026. Live tracker of SaaS pricing changes across 41+ vendors. Daily diff vs. vendor pages. 5 changes this month. No fluff, just data, sources, and dates.",
-    "meta_length": 172,
+    "meta_description": "Updated September 2026. Live tracker of SaaS pricing changes across 41+ vendors. Daily diff vs. vendor pages. 5 changes this month. No fluff \u2014 just data, sources, and dates.",
+    "meta_length": 173,
     "page_type": "trust",
     "path": "/pages/saas-pricing-changes",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
@@ -124498,8 +124503,8 @@
       "technical": 19,
       "trust": 10.0
     },
-    "title": "SaaS Pricing Changes September 2026: Live Tracker, Real Diffs",
-    "title_length": 61,
+    "title": "SaaS Pricing Changes September 2026 \u2014 Live Tracker, Real Diffs",
+    "title_length": 62,
     "url": "https://saaspare.org/pages/saas-pricing-changes",
     "warnings": [
       "meta_length_outside_target"
@@ -124754,7 +124759,7 @@
       "meta_length_outside_target",
       "title_length_outside_target"
     ],
-    "word_count": 7378
+    "word_count": 7379
   },
   {
     "affiliate_links": [
@@ -125457,8 +125462,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Salesforce pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 171,
+    "meta_description": "Salesforce pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 172,
     "page_type": "pricing",
     "path": "/pages/salesforce-pricing-history-2026",
     "robots": "",
@@ -125479,8 +125484,8 @@
       "technical": 16,
       "trust": 12.5
     },
-    "title": "Salesforce Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 69,
+    "title": "Salesforce Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 70,
     "url": "https://saaspare.org/pages/salesforce-pricing-history-2026",
     "warnings": [
       "meta_length_outside_target",
@@ -127880,8 +127885,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Semrush pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 168,
+    "meta_description": "Semrush pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/semrush-pricing-history-2026",
     "robots": "",
@@ -127901,8 +127906,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Semrush Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 66,
+    "title": "Semrush Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 67,
     "url": "https://saaspare.org/pages/semrush-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -129059,8 +129064,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "We compared Semrush and Similarweb side-by-side in 2026. See pricing, features, and our verdict, plus who each tool is actually for.",
-    "meta_length": 132,
+    "meta_description": "We compared Semrush and Similarweb side-by-side in 2026. See pricing, features, and our verdict \u2014 plus who each tool is actually for.",
+    "meta_length": 133,
     "page_type": "comparison",
     "path": "/pages/semrush-vs-similarweb-which-is-better-in-2026",
     "robots": "index, follow",
@@ -130140,8 +130145,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Shopify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 168,
+    "meta_description": "Shopify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/shopify-pricing-history-2026",
     "robots": "",
@@ -130161,8 +130166,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Shopify Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 66,
+    "title": "Shopify Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 67,
     "url": "https://saaspare.org/pages/shopify-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -132066,8 +132071,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Slack pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 166,
+    "meta_description": "Slack pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/slack-pricing-history-2026",
     "robots": "noindex, follow",
@@ -132087,8 +132092,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Slack Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 64,
+    "title": "Slack Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 65,
     "url": "https://saaspare.org/pages/slack-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -134019,8 +134024,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Stripe pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Stripe pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/stripe-pricing-history-2026",
     "robots": "noindex, follow",
@@ -134040,8 +134045,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Stripe Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Stripe Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/stripe-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -136024,8 +136029,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Surfer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Surfer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/surfer-pricing-history-2026",
     "robots": "noindex, follow",
@@ -136045,8 +136050,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Surfer Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Surfer Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/surfer-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -139885,8 +139890,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Trello pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Trello pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/trello-pricing-history-2026",
     "robots": "noindex, follow",
@@ -139906,8 +139911,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Trello Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Trello Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/trello-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -140613,8 +140618,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Tresorit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 169,
+    "meta_description": "Tresorit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/tresorit-pricing-history-2026",
     "robots": "noindex, follow",
@@ -140634,8 +140639,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Tresorit Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 67,
+    "title": "Tresorit Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 68,
     "url": "https://saaspare.org/pages/tresorit-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -142028,8 +142033,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Typeform pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 169,
+    "meta_description": "Typeform pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/typeform-pricing-history-2026",
     "robots": "noindex, follow",
@@ -142049,8 +142054,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Typeform Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 67,
+    "title": "Typeform Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 68,
     "url": "https://saaspare.org/pages/typeform-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -143193,8 +143198,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Vercel pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Vercel pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/vercel-pricing-history-2026",
     "robots": "noindex, follow",
@@ -143214,8 +143219,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Vercel Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Vercel Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/vercel-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -144267,8 +144272,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Wave pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 165,
+    "meta_description": "Wave pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/wave-pricing-history-2026",
     "robots": "noindex, follow",
@@ -144288,8 +144293,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Wave Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 63,
+    "title": "Wave Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 64,
     "url": "https://saaspare.org/pages/wave-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -148881,8 +148886,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Xero pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 165,
+    "meta_description": "Xero pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/xero-pricing-history-2026",
     "robots": "noindex, follow",
@@ -148902,8 +148907,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Xero Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 63,
+    "title": "Xero Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 64,
     "url": "https://saaspare.org/pages/xero-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -149972,8 +149977,8 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Zapier pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 167,
+    "meta_description": "Zapier pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/zapier-pricing-history-2026",
     "robots": "noindex, follow",
@@ -149993,8 +149998,8 @@
       "technical": 17,
       "trust": 15.0
     },
-    "title": "Zapier Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 65,
+    "title": "Zapier Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 66,
     "url": "https://saaspare.org/pages/zapier-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",
@@ -150436,8 +150441,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Zendesk pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 9 September 2026.",
-    "meta_length": 168,
+    "meta_description": "Zendesk pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 10 September 2026.",
+    "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/zendesk-pricing-history-2026",
     "robots": "noindex, follow",
@@ -150457,8 +150462,8 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Zendesk Pricing History 2026: Every Price Change Tracked: SaaSpare",
-    "title_length": 66,
+    "title": "Zendesk Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
+    "title_length": 67,
     "url": "https://saaspare.org/pages/zendesk-pricing-history-2026",
     "warnings": [
       "missing_correction_cta",

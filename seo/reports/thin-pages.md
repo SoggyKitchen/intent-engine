@@ -15,7 +15,7 @@
 - `/pages/1password-business-vs-tenable-which-is-better-in-2026`: 680 words, score 93.4
 - `/pages/1password-business-vs-tresorit-which-is-better-in-2026`: 680 words, score 93.4
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts`: 727 words, score 91.63
-- `/pages/1password-pricing-history-2026`: 668 words, score 91.34
+- `/pages/1password-pricing-history-2026`: 668 words, score 90.34
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work`: 657 words, score 91.28
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict`: 745 words, score 94.22
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026`: 631 words, score 96.16
@@ -155,7 +155,7 @@
 - `/pages/bigcommerce-vs-recurly-which-is-better-in-2026`: 609 words, score 94.05
 - `/pages/bigcommerce-vs-stripe-which-is-better-in-2026`: 610 words, score 94.05
 - `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026`: 614 words, score 94.07
-- `/pages/bitwarden-pricing-history-2026`: 668 words, score 85.34
+- `/pages/bitwarden-pricing-history-2026`: 668 words, score 84.34
 - `/pages/bitwarden-vs-dashlane-which-is-better-in-2026`: 633 words, score 96.16
 - `/pages/bitwarden-vs-enpass-which-is-better-in-2026`: 630 words, score 96.15
 - `/pages/bitwarden-vs-keeper-which-is-better-in-2026`: 632 words, score 96.16

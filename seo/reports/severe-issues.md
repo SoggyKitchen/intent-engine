@@ -4,7 +4,7 @@
 - `/fo-verify` (other, 45.06/100): no_h1
 - `/pages/airtable-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
 - `/pages/basecamp-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
-- `/pages/bitwarden-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
+- `/pages/bitwarden-pricing-history-2026` (pricing, 84.34/100): broken_internal_link
 - `/pages/buffer-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
 - `/pages/calendly-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 84.5/100): broken_internal_link
@@ -13,8 +13,8 @@
 - `/pages/freshbooks-pricing-history-2026` (pricing, 84.34/100): broken_internal_link
 - `/pages/ghost-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
 - `/pages/github-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
-- `/pages/grammarly-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
-- `/pages/helpscout-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
+- `/pages/grammarly-pricing-history-2026` (pricing, 84.34/100): broken_internal_link
+- `/pages/helpscout-pricing-history-2026` (pricing, 84.34/100): broken_internal_link
 - `/pages/kit-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
 - `/pages/linear-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
 - `/pages/loom-pricing-history-2026` (pricing, 85.34/100): broken_internal_link

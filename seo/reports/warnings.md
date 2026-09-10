@@ -34,7 +34,7 @@
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, 91.63/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.0/100): missing_correction_cta, missing_methodology
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.0/100): title_length_outside_target
-- `/pages/1password-pricing-history-2026` (pricing, 91.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/1password-pricing-history-2026` (pricing, 90.34/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, 91.28/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict` (pricing, 94.22/100): missing_correction_cta, thin_buyer_page
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 96.16/100): thin_buyer_page
@@ -257,7 +257,7 @@
 - `/pages/bigcommerce-vs-recurly-which-is-better-in-2026` (comparison, 94.05/100): thin_buyer_page
 - `/pages/bigcommerce-vs-stripe-which-is-better-in-2026` (comparison, 94.05/100): thin_buyer_page
 - `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026` (comparison, 94.07/100): thin_buyer_page
-- `/pages/bitwarden-pricing-history-2026` (pricing, 85.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/bitwarden-pricing-history-2026` (pricing, 84.34/100): meta_length_outside_target, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/bitwarden-vs-dashlane-which-is-better-in-2026` (comparison, 96.16/100): thin_buyer_page
 - `/pages/bitwarden-vs-enpass-which-is-better-in-2026` (comparison, 96.15/100): thin_buyer_page
 - `/pages/bitwarden-vs-keeper-which-is-better-in-2026` (comparison, 96.16/100): thin_buyer_page

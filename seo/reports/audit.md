@@ -8,7 +8,7 @@ Pages scanned: 1603
 
 ## Warning Counts
 - images_missing_alt: 2
-- meta_length_outside_target: 467
+- meta_length_outside_target: 472
 - missing_correction_cta: 360
 - missing_last_verified: 2
 - missing_methodology: 260
@@ -61,10 +61,10 @@ Pages scanned: 1603
 - `/pages/v3-preview-deal-radar`: 83.81/100, issues=none
 - `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 83.83/100, issues=none
 - `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 83.93/100, issues=none
+- `/pages/bitwarden-pricing-history-2026`: 84.34/100, issues=broken_internal_link
 - `/pages/freshbooks-pricing-history-2026`: 84.34/100, issues=broken_internal_link
+- `/pages/grammarly-pricing-history-2026`: 84.34/100, issues=broken_internal_link
+- `/pages/helpscout-pricing-history-2026`: 84.34/100, issues=broken_internal_link
 - `/pages/quickbooks-pricing-history-2026`: 84.34/100, issues=broken_internal_link
 - `/pages/request-a-comparison`: 84.38/100, issues=none
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
-- `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
-- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.8/100, issues=none
-- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.81/100, issues=none
