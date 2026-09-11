@@ -1,15 +1,15 @@
 {
-  "endDate": "2026-09-07",
+  "endDate": "2026-09-08",
   "opportunities": [
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 10.0,
+      "impressions": 12.0,
       "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 28.1,
+      "position": 23.92,
       "query": "",
       "recommendedAction": "Add supporting links from category hubs and improve page-specific evidence.",
-      "score": 39.1
+      "score": 43.32
     },
     {
       "clicks": 0.0,
@@ -24,12 +24,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 10.0,
+      "impressions": 12.0,
       "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
-      "position": 3.4,
+      "position": 3.5,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.2
+      "score": 25.24
     },
     {
       "clicks": 0.0,
@@ -74,22 +74,32 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 56.0,
-      "page": "https://saaspare.org/pages/",
-      "position": 4.88,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 21.12
-    },
-    {
-      "clicks": 7.0,
-      "ctr": 0.0722,
-      "impressions": 97.0,
-      "page": "https://saaspare.org/",
-      "position": 6.8,
+      "impressions": 2.0,
+      "page": "https://saaspare.org/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
+      "position": 5.0,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 1.94
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 58.0,
+      "page": "https://saaspare.org/pages/",
+      "position": 4.78,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 21.16
+    },
+    {
+      "clicks": 8.0,
+      "ctr": 0.0792,
+      "impressions": 101.0,
+      "page": "https://saaspare.org/",
+      "position": 6.59,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 2.02
     },
     {
       "clicks": 0.0,
@@ -103,16 +113,17 @@
     }
   ],
   "pageClicks": {
-    "https://saaspare.org/": 7.0,
+    "https://saaspare.org/": 8.0,
     "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026": 0.0,
     "https://saaspare.org/deal-radar": 0.0,
     "https://saaspare.org/pages/": 0.0,
+    "https://saaspare.org/pages/1password-pricing-2026-plans-costs-what-you-actually-pay": 0.0,
     "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid": 0.0,
     "https://saaspare.org/roi": 0.0,
     "https://saaspare.org/shortlist": 0.0
   },
-  "rowsPulled": 15,
+  "rowsPulled": 16,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-08-10"
+  "startDate": "2026-08-11"
 }
