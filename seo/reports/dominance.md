@@ -1,6 +1,6 @@
 # Dominance scoreboard — saaspare.org vs saaspare.com
 
-Generated 2026-09-16. GSC window 2026-08-15 to 2026-09-12.
+Generated 2026-09-17. GSC window 2026-08-16 to 2026-09-13.
 
 **Goal:** beat saaspare.com on every axis below. Not "improve". Beat.
 
@@ -32,7 +32,7 @@ Generated 2026-09-16. GSC window 2026-08-15 to 2026-09-12.
 
 | Source | Impressions (28d) |
 |---|---|
-| Branded (`saaspare.org` typed as a query) | 62 |
+| Branded (`saaspare.org` typed as a query) | 44 |
 | **Non-branded (real topical demand)** | **0** |
 
 Non-branded impressions are the whole game. Branded impressions only prove
