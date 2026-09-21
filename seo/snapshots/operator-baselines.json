@@ -349,7 +349,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-08-31",
     "pre_blob": "b96da241a91bb2cb7b2b0463527bd62ef604ae75",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/roi.html",
@@ -357,7 +357,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-08-31",
     "pre_blob": "3c2157265f99f473ed3dbcf439217523a548f847",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/index.html",
