@@ -1,42 +1,62 @@
 {
-  "endDate": "2026-09-18",
+  "endDate": "2026-09-19",
   "opportunities": [
     {
       "clicks": 0.0,
       "ctr": 0.0,
+      "impressions": 17.0,
+      "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
+      "position": 12.24,
+      "query": "",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 55.1
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 11.0,
+      "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
+      "position": 17.18,
+      "query": "saaspare.org",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 50.04
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 15.0,
+      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
+      "position": 38.93,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.3
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 19.0,
+      "page": "https://saaspare.org/pages/",
+      "position": 17.37,
+      "query": "saaspare.org",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 25.01
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 9.0,
+      "page": "https://saaspare.org/deal-radar",
+      "position": 1.11,
+      "query": "saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
       "impressions": 8.0,
-      "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
-      "position": 13.5,
-      "query": "saaspare.org",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 53.5
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 14.0,
-      "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
-      "position": 9.07,
-      "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 52.35
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 12.0,
       "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 24.0,
-      "query": "",
-      "recommendedAction": "Add supporting links from category hubs and improve page-specific evidence.",
-      "score": 43.24
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 6.0,
-      "page": "https://saaspare.org/deal-radar",
-      "position": 1.17,
+      "position": 70.5,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -44,19 +64,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 4.0,
-      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 66.5,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 6.0,
+      "impressions": 9.0,
       "page": "https://saaspare.org/deal-radar",
-      "position": 1.17,
+      "position": 1.11,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -74,46 +84,36 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 14.0,
+      "impressions": 63.0,
       "page": "https://saaspare.org/pages/",
-      "position": 17.43,
-      "query": "saaspare.org",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 24.85
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 59.0,
-      "page": "https://saaspare.org/pages/",
-      "position": 5.68,
+      "position": 6.63,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 21.18
+      "score": 21.26
     },
     {
-      "clicks": 8.0,
-      "ctr": 0.08,
-      "impressions": 100.0,
+      "clicks": 7.0,
+      "ctr": 0.0693,
+      "impressions": 101.0,
       "page": "https://saaspare.org/",
-      "position": 6.68,
+      "position": 6.62,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 2.0
+      "score": 2.02
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 19.0,
       "page": "https://saaspare.org/",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 0.38
     }
   ],
   "pageClicks": {
-    "https://saaspare.org/": 8.0,
+    "https://saaspare.org/": 7.0,
     "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026": 0.0,
     "https://saaspare.org/deal-radar": 0.0,
     "https://saaspare.org/pages/": 0.0,
@@ -125,5 +125,5 @@
   "rowsPulled": 16,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-08-21"
+  "startDate": "2026-08-22"
 }
