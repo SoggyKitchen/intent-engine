@@ -1,25 +1,25 @@
 {
-  "endDate": "2026-09-20",
+  "endDate": "2026-09-21",
   "opportunities": [
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
-      "position": 18.5,
+      "impressions": 37.0,
+      "page": "https://saaspare.org/pages/",
+      "position": 8.3,
       "query": "",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 48.7
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 47.04
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 39.0,
-      "page": "https://saaspare.org/pages/",
-      "position": 8.05,
+      "impressions": 9.0,
+      "page": "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026",
+      "position": 20.11,
       "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 46.83
+      "recommendedAction": "Add supporting links from category hubs and improve page-specific evidence.",
+      "score": 46.89
     },
     {
       "clicks": 0.0,
@@ -33,13 +33,13 @@
     },
     {
       "clicks": 6.0,
-      "ctr": 0.0779,
-      "impressions": 77.0,
+      "ctr": 0.0822,
+      "impressions": 73.0,
       "page": "https://saaspare.org/",
-      "position": 8.31,
+      "position": 8.68,
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 27.85
+      "score": 28.14
     },
     {
       "clicks": 0.0,
@@ -54,12 +54,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 12.0,
+      "impressions": 11.0,
       "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 43.33,
+      "position": 46.73,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.24
+      "score": 25.22
     },
     {
       "clicks": 0.0,
@@ -125,5 +125,5 @@
   "rowsPulled": 16,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-08-23"
+  "startDate": "2026-08-24"
 }
