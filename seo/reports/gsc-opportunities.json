@@ -1,15 +1,15 @@
 {
-  "endDate": "2026-09-21",
+  "endDate": "2026-09-22",
   "opportunities": [
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 37.0,
+      "impressions": 35.0,
       "page": "https://saaspare.org/pages/",
-      "position": 8.3,
+      "position": 8.69,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 47.04
+      "score": 47.39
     },
     {
       "clicks": 0.0,
@@ -32,24 +32,14 @@
       "score": 38.67
     },
     {
-      "clicks": 6.0,
-      "ctr": 0.0822,
-      "impressions": 73.0,
+      "clicks": 5.0,
+      "ctr": 0.0758,
+      "impressions": 66.0,
       "page": "https://saaspare.org/",
-      "position": 8.68,
+      "position": 9.42,
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 28.14
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 16.0,
-      "page": "https://saaspare.org/pages/",
-      "position": 16.12,
-      "query": "saaspare.org",
-      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 26.2
+      "score": 28.74
     },
     {
       "clicks": 0.0,
@@ -64,9 +54,19 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 8.0,
+      "impressions": 15.0,
+      "page": "https://saaspare.org/pages/",
+      "position": 17.13,
+      "query": "saaspare.org",
+      "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
+      "score": 25.17
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 7.0,
       "page": "https://saaspare.org/deal-radar",
-      "position": 1.12,
+      "position": 1.14,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -84,9 +84,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 8.0,
+      "impressions": 7.0,
       "page": "https://saaspare.org/deal-radar",
-      "position": 1.12,
+      "position": 1.14,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -104,16 +104,16 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 11.0,
+      "impressions": 10.0,
       "page": "https://saaspare.org/",
       "position": 1.0,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.22
+      "score": 0.2
     }
   ],
   "pageClicks": {
-    "https://saaspare.org/": 6.0,
+    "https://saaspare.org/": 5.0,
     "https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026": 0.0,
     "https://saaspare.org/deal-radar": 0.0,
     "https://saaspare.org/pages/": 0.0,
@@ -125,5 +125,5 @@
   "rowsPulled": 16,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-08-24"
+  "startDate": "2026-08-25"
 }
