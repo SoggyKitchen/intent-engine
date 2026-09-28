@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-09-24",
+  "endDate": "2026-09-25",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -33,13 +33,13 @@
     },
     {
       "clicks": 5.0,
-      "ctr": 0.0758,
-      "impressions": 66.0,
+      "ctr": 0.0746,
+      "impressions": 67.0,
       "page": "https://saaspare.org/",
-      "position": 9.42,
+      "position": 9.3,
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 28.74
+      "score": 28.64
     },
     {
       "clicks": 0.0,
@@ -125,5 +125,5 @@
   "rowsPulled": 16,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-08-27"
+  "startDate": "2026-08-28"
 }
