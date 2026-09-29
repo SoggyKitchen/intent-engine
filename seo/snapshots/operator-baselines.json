@@ -382,5 +382,13 @@
     "baseline_date": "2026-09-22",
     "pre_blob": "0ab75c9090b92e60d190b82f8ef55cb7190c428a",
     "status": "pending"
+  },
+  {
+    "path": "site/index.html",
+    "url": "https://saaspare.org",
+    "baseline_clicks": 5.0,
+    "baseline_date": "2026-09-29",
+    "pre_blob": "0c6030b8c5859493512793445d66c56855513ba9",
+    "status": "pending"
   }
 ]
