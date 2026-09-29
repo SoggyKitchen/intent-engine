@@ -1,10 +1,10 @@
 # Dominance scoreboard — saaspare.org vs saaspare.com
 
-Generated 2026-09-28. GSC window 2026-08-27 to 2026-09-24.
+Generated 2026-09-29. GSC window 2026-08-28 to 2026-09-25.
 
 **Goal:** beat saaspare.com on every axis below. Not "improve". Beat.
 
-> **Manual numbers are 22 days old.** Re-measure in Search Atlas.
+> **Manual numbers are 23 days old.** Re-measure in Search Atlas.
 
 ## Automated (re-measured every run)
 
