@@ -1,49 +1,74 @@
 {
-  "current_month": "September 2026",
-  "today": "2026-09-30",
-  "titles_rewritten": 1,
-  "descs_rewritten": 13,
+  "current_month": "October 2026",
+  "today": "2026-10-01",
+  "titles_rewritten": 29,
+  "descs_rewritten": 491,
   "dates_refreshed": 347,
   "answers_added": 8,
-  "files_changed": 355,
+  "files_changed": 491,
   "files_scanned": 1571,
   "title_examples": [
     {
-      "file": "semrush-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Semrush Free Trial 2026: Get Started Step-by-Step | SaaSpare",
-      "after": "Semrush Free Trial 2026: How to Get the Full September 2026 Offer"
+      "file": "aweber-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "AWeber Free Trial 2026: How to Get the Full September 2026 Offer",
+      "after": "AWeber Free Trial 2026: How to Get the Full October 2026 Offer"
+    },
+    {
+      "file": "contabo-coupon-2026-discount-codes-promo.html",
+      "before": "Contabo Coupon 2026 (Verified September 2026): Real Working Codes",
+      "after": "Contabo Coupon 2026 (Verified October 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "elementor-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "Elementor Coupon 2026 (Verified September 2026): Real Working Codes",
+      "after": "Elementor Coupon 2026 (Verified October 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "elementor-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "Elementor Free Trial 2026: How to Get the Full September 2026 Offer",
+      "after": "Elementor Free Trial 2026: How to Get the Full October 2026 Offer"
+    },
+    {
+      "file": "elevenlabs-coupon-code-promo-codes-2026-verified-discounts.html",
+      "before": "ElevenLabs Coupon 2026 (Verified September 2026): Real Working Codes",
+      "after": "ElevenLabs Coupon 2026 (Verified October 2026) \u2014 Real Working Codes"
+    },
+    {
+      "file": "elevenlabs-free-trial-2026-how-to-get-it-step-by-step.html",
+      "before": "ElevenLabs Free Trial 2026: How to Get the Full September 2026 Offer",
+      "after": "ElevenLabs Free Trial 2026: How to Get the Full October 2026 Offer"
     }
   ],
   "desc_examples": [
     {
-      "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 29 September 2026.",
-      "after": "Updated September 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
+      "file": "1password-pricing-2026-plans-costs-what-you-actually-pay.html",
+      "before": "Updated September 2026. 1Password pricing 2026: all plans compared, hidden fees exposed, and real cost by team size. Verified 4 August 2026.",
+      "after": "Updated October 2026. 1Password pricing 2026: all plans compared, hidden fees exposed, and real cost by team size. Verified 4 August 2026."
     },
     {
-      "file": "best-ecommerce-platforms-2026.html",
-      "before": "The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth paying for.",
-      "after": "Updated September 2026. The 2 best ecommerce platforms tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth\u2026"
+      "file": "1password-vs-nordpass-which-is-better-in-2026.html",
+      "before": "Updated September 2026. Bottom line: 1Password wins (9.2/10). 1Password vs NordPass compared on pricing and features, score-based verdict, no paid placements. 2026.",
+      "after": "Updated October 2026. Bottom line: 1Password wins (9.2/10). 1Password vs NordPass compared on pricing and features, score-based verdict, no paid placements. 2026."
     },
     {
-      "file": "best-seo-tools-for-small-business-in-2026-ranked-reviewed.html",
-      "before": "Find the best SEO tools for small business in 2026. SaaSpare ranks and reviews affordable, effective tools to boost your organic traffic.",
-      "after": "Updated September 2026. Find the best SEO tools for small business in 2026. SaaSpare ranks and reviews affordable, effective tools to boost your organic traffic\u2026"
+      "file": "7-best-1password-alternatives-in-2026-free-paid.html",
+      "before": "Updated September 2026. Find the best 1Password alternatives in 2026. We compare pricing, free plans, and key features so you can switch with\u2026 Tested alternatives\u2026",
+      "after": "Updated October 2026. Find the best 1Password alternatives in 2026. We compare pricing, free plans, and key features so you can switch with\u2026 Tested alternatives\u2026"
     },
     {
-      "file": "best-vpn-australia-2026.html",
-      "before": "The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth paying for.",
-      "after": "Updated September 2026. The 2 best vpn australia tools ranked for 2026. We compared pricing, features, and real user reviews, here's what's actually worth paying\u2026"
+      "file": "7-best-adp-alternatives-in-2026-free-paid.html",
+      "before": "Updated September 2026. Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence\u2026 Tested\u2026",
+      "after": "Updated October 2026. Find the best ADP alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence\u2026 Tested\u2026"
     },
     {
-      "file": "clickup-pricing-history-2026.html",
-      "before": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 29 September 2026.",
-      "after": "Updated September 2026. ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
+      "file": "7-best-ahrefs-alternatives-in-2026-free-paid.html",
+      "before": "Updated September 2026. Find the best Ahrefs alternatives in 2026. We compare pricing, free plans, and key features so you can switch with\u2026 Tested alternatives with\u2026",
+      "after": "Updated October 2026. Find the best Ahrefs alternatives in 2026. We compare pricing, free plans, and key features so you can switch with\u2026 Tested alternatives with\u2026"
     },
     {
-      "file": "hubspot-pricing-history-2026.html",
-      "before": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 29 September 2026.",
-      "after": "Updated September 2026. HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
+      "file": "7-best-asana-alternatives-in-2026-free-paid.html",
+      "before": "Updated September 2026. Find the best Asana alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence\u2026 Tested\u2026",
+      "after": "Updated October 2026. Find the best Asana alternatives in 2026. We compare pricing, free plans, and key features so you can switch with confidence\u2026 Tested\u2026"
     }
   ],
   "indexnow": {
