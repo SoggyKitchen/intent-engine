@@ -8,7 +8,7 @@ Pages scanned: 1603
 
 ## Warning Counts
 - images_missing_alt: 2
-- meta_length_outside_target: 472
+- meta_length_outside_target: 463
 - missing_correction_cta: 360
 - missing_last_verified: 2
 - missing_methodology: 260
@@ -51,7 +51,6 @@ Pages scanned: 1603
 - `/pages/v3-preview-library`: 82.81/100, issues=none
 - `/pages/v3-preview-shortlist`: 83.4/100, issues=none
 - `/`: 83.5/100, issues=none
-- `/pages/salesforce-pricing-history-2026`: 83.5/100, issues=broken_internal_link
 - `/pages/v3-preview-roi-calculator`: 83.69/100, issues=none
 - `/pages/best-saas-deals-this-week-2026`: 83.7/100, issues=none
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid`: 83.77/100, issues=none
@@ -61,10 +60,11 @@ Pages scanned: 1603
 - `/pages/v3-preview-deal-radar`: 83.81/100, issues=none
 - `/pages/cheaper-alternative-to-ramp-after-price-hike-2026`: 83.83/100, issues=none
 - `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 83.93/100, issues=none
-- `/pages/bitwarden-pricing-history-2026`: 84.34/100, issues=broken_internal_link
-- `/pages/freshbooks-pricing-history-2026`: 84.34/100, issues=broken_internal_link
-- `/pages/grammarly-pricing-history-2026`: 84.34/100, issues=broken_internal_link
-- `/pages/helpscout-pricing-history-2026`: 84.34/100, issues=broken_internal_link
-- `/pages/quickbooks-pricing-history-2026`: 84.34/100, issues=broken_internal_link
 - `/pages/request-a-comparison`: 84.38/100, issues=none
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
+- `/pages/salesforce-pricing-history-2026`: 84.5/100, issues=broken_internal_link
+- `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
+- `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.8/100, issues=none
+- `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.81/100, issues=none
+- `/pages/hidden-fee-detector`: 84.81/100, issues=none
+- `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown`: 84.94/100, issues=none

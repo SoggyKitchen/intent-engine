@@ -19,32 +19,32 @@ These are not safe to fake or mass rewrite.
 - `/pages/v3-preview-library`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/v3-preview-shortlist`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/`: missing_correction_cta
-- `/pages/salesforce-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/v3-preview-roi-calculator`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-saas-deals-this-week-2026`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/v3-preview-deal-radar`: missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/bitwarden-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/freshbooks-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/grammarly-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/helpscout-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/quickbooks-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, missing_trustbox
+- `/pages/salesforce-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/v3-preview-privacy`: missing_trustbox, thin_buyer_page
 - `/pages/airtable-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/basecamp-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/bitwarden-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/buffer-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/calendly-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/figma-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/framer-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/freshbooks-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ghost-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/github-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/grammarly-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/helpscout-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/kit-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/linear-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/loom-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/netlify-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/quickbooks-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/surfer-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/trello-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/typeform-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -85,13 +85,10 @@ These are not safe to fake or mass rewrite.
 - `/pages/educative-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/elevenlabs-vs-synthesia-which-is-better-in-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/fiverr-pro-worth-it-2026-honest-review`: missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/monday-com-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/nordvpn-vs-windscribe-which-is-better-in-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/shopify-vs-webflow-which-is-better-in-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/best-hr-software-2026`: missing_correction_cta
 - `/best-project-management-software-2026`: missing_correction_cta
-- `/pages/1password-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/pipedrive-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/best-affiliate-management-software-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/best-vpn-for-remote-work-2026`: missing_correction_cta, missing_methodology, missing_trustbox
@@ -101,6 +98,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
 - `/pages/hubspot-pricing-history-2026`: missing_correction_cta, missing_methodology
+- `/pages/monday-com-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/linear-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -159,8 +157,10 @@ These are not safe to fake or mass rewrite.
 - `/pages/se-ranking-coupon-2026-discount-codes-promo`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/jasper-ai-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/copy-ai-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/1password-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/datadog-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/miro-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/pipedrive-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/slack-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/tresorit-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/xero-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
