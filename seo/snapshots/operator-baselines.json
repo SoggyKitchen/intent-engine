@@ -390,5 +390,13 @@
     "baseline_date": "2026-09-29",
     "pre_blob": "0c6030b8c5859493512793445d66c56855513ba9",
     "status": "pending"
+  },
+  {
+    "path": "site/pages/1password-pricing-2026-plans-costs-what-you-actually-pay.html",
+    "url": "https://saaspare.org/pages/1password-pricing-2026-plans-costs-what-you-actually-pay",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-10-03",
+    "pre_blob": "66afa7e2d332f5fba707737b78a4a33a8852bebc",
+    "status": "pending"
   }
 ]
