@@ -2,11 +2,11 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-09-02 to 2026-09-30
+Range: 2026-09-03 to 2026-10-01
 Rows pulled: 15
 
 ## Top Opportunities
-- Score 47.65: `https://saaspare.org/pages/` query `(page rollup)` - impressions 29.0, CTR 0.0, position 9.07. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
+- Score 47.74: `https://saaspare.org/pages/` query `(page rollup)` - impressions 28.0, CTR 0.0, position 9.18. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
 - Score 44.22: `https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026` query `(page rollup)` - impressions 9.0, CTR 0.0, position 22.78. Add supporting links from category hubs and improve page-specific evidence.
 - Score 38.86: `https://saaspare.org/blog/saas-pricing-tricks-to-watch-for-in-2026` query `saaspare.org` - impressions 7.0, CTR 0.0, position 28.14. Add supporting links from category hubs and improve page-specific evidence.
 - Score 26.28: `https://saaspare.org/pages/` query `saaspare.org` - impressions 14.0, CTR 0.0, position 16.0. Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.
