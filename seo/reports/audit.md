@@ -8,7 +8,7 @@ Pages scanned: 1603
 
 ## Warning Counts
 - images_missing_alt: 2
-- meta_length_outside_target: 462
+- meta_length_outside_target: 463
 - missing_correction_cta: 360
 - missing_last_verified: 2
 - missing_methodology: 260
@@ -34,7 +34,7 @@ Pages scanned: 1603
 - `/accessibility`: 75.66/100, issues=none
 - `/dmca`: 75.91/100, issues=none
 - `/cookie-policy`: 75.97/100, issues=none
-- `/pages/saas-pricing-changes`: 77.53/100, issues=none
+- `/pages/saas-pricing-changes`: 76.37/100, issues=none
 - `/pages`: 78.0/100, issues=none
 - `/pages/v3-preview-404`: 79.2/100, issues=none
 - `/advertise`: 79.3/100, issues=none
