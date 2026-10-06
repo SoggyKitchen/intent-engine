@@ -38,7 +38,6 @@
 - `/pages/stripe-pricing-history-2026` (85.86/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/dmca` (75.91/100): meta_length_outside_target
 - `/cookie-policy` (75.97/100): meta_length_outside_target
-- `/pages/saas-pricing-changes` (76.53/100): meta_length_outside_target
 - `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/v3-preview-404` (79.2/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/privacy` (79.66/100): meta_length_outside_target
@@ -100,3 +99,4 @@
 - `/pages/shopify-vs-webflow-which-is-better-in-2026` (89.5/100): missing_correction_cta, missing_methodology, missing_trustbox, title_length_outside_target
 - `/best-hr-software-2026` (89.75/100): missing_correction_cta, missing_related_pages
 - `/best-project-management-software-2026` (90.0/100): missing_correction_cta, missing_related_pages
+- `/pages/saas-hidden-costs-2026` (90.0/100): title_length_outside_target
