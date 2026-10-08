@@ -2,7 +2,7 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-09-06 to 2026-10-04
+Range: 2026-09-07 to 2026-10-05
 Rows pulled: 17
 
 ## Top Opportunities
@@ -15,5 +15,5 @@ Rows pulled: 17
 - Score 25.0: `https://saaspare.org/deal-radar` query `(page rollup)` - impressions 8.0, CTR 0.0, position 1.38. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` query `(page rollup)` - impressions 2.0, CTR 0.0, position 5.0. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid` query `(page rollup)` - impressions 8.0, CTR 0.0, position 46.38. Monitor and prioritize if impressions continue rising.
-- Score 0.66: `https://saaspare.org/` query `(page rollup)` - impressions 33.0, CTR 0.0303, position 1.67. Monitor and prioritize if impressions continue rising.
+- Score 0.58: `https://saaspare.org/` query `(page rollup)` - impressions 29.0, CTR 0.0345, position 1.69. Monitor and prioritize if impressions continue rising.
 - Score 0.22: `https://saaspare.org/` query `saaspare.org` - impressions 11.0, CTR 0.0, position 1.18. Monitor and prioritize if impressions continue rising.
