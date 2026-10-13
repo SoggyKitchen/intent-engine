@@ -381,7 +381,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-09-22",
     "pre_blob": "0ab75c9090b92e60d190b82f8ef55cb7190c428a",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/index.html",
@@ -397,6 +397,14 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-10-03",
     "pre_blob": "66afa7e2d332f5fba707737b78a4a33a8852bebc",
+    "status": "pending"
+  },
+  {
+    "path": "site/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step.html",
+    "url": "https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
+    "baseline_clicks": 0.0,
+    "baseline_date": "2026-10-13",
+    "pre_blob": "8cf72e9370bd1c00ad00f64e7c459426638afe27",
     "status": "pending"
   }
 ]

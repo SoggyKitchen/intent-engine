@@ -1,15 +1,15 @@
 {
-  "endDate": "2026-10-09",
+  "endDate": "2026-10-10",
   "opportunities": [
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 22.0,
+      "impressions": 24.0,
       "page": "https://saaspare.org/pages/",
-      "position": 11.5,
+      "position": 13.96,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 49.94
+      "score": 48.52
     },
     {
       "clicks": 0.0,
@@ -34,72 +34,92 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 14.0,
+      "impressions": 9.0,
+      "page": "https://saaspare.org/deal-radar",
+      "position": 1.33,
+      "query": "saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 5.0,
+      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
+      "position": 72.4,
+      "query": "saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 2.0,
+      "page": "https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
+      "position": 68.5,
+      "query": "saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 9.0,
+      "page": "https://saaspare.org/deal-radar",
+      "position": 1.33,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 5.0,
+      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
+      "position": 72.4,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 2.0,
+      "page": "https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step",
+      "position": 68.5,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 25.0
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 18.0,
       "page": "https://saaspare.org/pages/",
-      "position": 16.36,
+      "position": 17.67,
       "query": "saaspare.org",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 25.92
+      "score": 24.69
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 8.0,
-      "page": "https://saaspare.org/deal-radar",
-      "position": 1.38,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 5.0,
-      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 72.4,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 8.0,
-      "page": "https://saaspare.org/deal-radar",
-      "position": 1.38,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 5.0,
-      "page": "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid",
-      "position": 72.4,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.0
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 22.0,
-      "page": "https://saaspare.org/",
-      "position": 1.73,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.44
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 11.0,
+      "impressions": 17.0,
       "page": "https://saaspare.org/",
       "position": 1.18,
+      "query": "",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 0.34
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 13.0,
+      "page": "https://saaspare.org/",
+      "position": 1.15,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.22
+      "score": 0.26
     }
   ],
   "pageClicks": {
@@ -109,11 +129,12 @@
     "https://saaspare.org/deal-radar": 0.0,
     "https://saaspare.org/pages/": 0.0,
     "https://saaspare.org/pages/best-moz-pro-alternatives-in-2026-free-paid": 0.0,
+    "https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step": 0.0,
     "https://saaspare.org/roi": 0.0,
     "https://saaspare.org/shortlist": 0.0
   },
-  "rowsPulled": 16,
+  "rowsPulled": 18,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-09-11"
+  "startDate": "2026-09-12"
 }
