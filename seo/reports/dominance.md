@@ -1,10 +1,10 @@
 # Dominance scoreboard — saaspare.org vs saaspare.com
 
-Generated 2026-10-13. GSC window 2026-09-11 to 2026-10-09.
+Generated 2026-10-14. GSC window 2026-09-12 to 2026-10-10.
 
 **Goal:** beat saaspare.com on every axis below. Not "improve". Beat.
 
-> **Manual numbers are 37 days old.** Re-measure in Search Atlas.
+> **Manual numbers are 38 days old.** Re-measure in Search Atlas.
 
 ## Automated (re-measured every run)
 
@@ -14,11 +14,11 @@ Generated 2026-10-13. GSC window 2026-09-11 to 2026-10-09.
 | <sub>THE headline metric. Baseline was 0 - every impression was our own domain name.</sub> | | | |
 | Distinct non-branded queries | 0 | 15 | FAIL |
 | <sub>beat saaspare.com's 15 organic keywords</sub> | | | |
-| Indexable pages >= competitor page count | 494 | 42 | PASS |
+| Indexable pages >= competitor page count | 495 | 42 | PASS |
 | Entity consistency: one sameAs array | 1 | 1 | PASS |
 | <sub>conflicting identity claims break entity resolution</sub> | | | |
 | Sitemap matches indexable set (+/-10%) | 1 | 1 | PASS |
-| <sub>sitemap 518 vs indexable 494</sub> | | | |
+| <sub>sitemap 519 vs indexable 495</sub> | | | |
 
 ## Manual (Search Atlas, typed into data/dominance_targets.json)
 
@@ -34,7 +34,7 @@ Generated 2026-10-13. GSC window 2026-09-11 to 2026-10-09.
 
 | Source | Impressions (28d) |
 |---|---|
-| Branded (`saaspare.org` typed as a query) | 45 |
+| Branded (`saaspare.org` typed as a query) | 54 |
 | **Non-branded (real topical demand)** | **0** |
 
 Non-branded impressions are the whole game. Branded impressions only prove
@@ -43,9 +43,9 @@ that people who already know the domain can find it.
 ## Corpus
 
 - Total pages: 1573
-- Indexable: 494
-- Noindexed (pruned 2026-09-01): 1079
-- Sitemap URLs: 518
+- Indexable: 495
+- Noindexed (pruned 2026-09-01): 1078
+- Sitemap URLs: 519
 - Distinct `sameAs` arrays: 1
 
 ## Verdict
