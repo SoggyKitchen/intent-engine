@@ -1,18 +1,13 @@
 {
   "current_month": "October 2026",
-  "today": "2026-10-15",
-  "titles_rewritten": 3,
-  "descs_rewritten": 14,
+  "today": "2026-10-16",
+  "titles_rewritten": 2,
+  "descs_rewritten": 13,
   "dates_refreshed": 347,
   "answers_added": 8,
-  "files_changed": 357,
+  "files_changed": 356,
   "files_scanned": 1571,
   "title_examples": [
-    {
-      "file": "freshbooks-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "FreshBooks Free Trial 2026: How to Get the Full September 2026 Offer",
-      "after": "FreshBooks Free Trial 2026: How to Get the Full October 2026 Offer"
-    },
     {
       "file": "parallels-desktop-coupon-code-promo-codes-2026-verified-discounts.html",
       "before": "Parallels Desktop Coupon 2026 (Verified October): Real Working Codes",
@@ -27,7 +22,7 @@
   "desc_examples": [
     {
       "file": "ahrefs-pricing-history-2026.html",
-      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 14 October 2026.",
+      "before": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 15 October 2026.",
       "after": "Updated October 2026. Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
@@ -47,13 +42,13 @@
     },
     {
       "file": "clickup-pricing-history-2026.html",
-      "before": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 14 October 2026.",
+      "before": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 15 October 2026.",
       "after": "Updated October 2026. ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     },
     {
-      "file": "freshbooks-free-trial-2026-how-to-get-it-step-by-step.html",
-      "before": "Updated September 2026. Everything in the FreshBooks free trial 2026: length, credit card requirements, feature access, and pro tips. Verified 4 August 2026.",
-      "after": "Updated October 2026. Everything in the FreshBooks free trial 2026: length, credit card requirements, feature access, and pro tips. Verified 4 August 2026."
+      "file": "hubspot-pricing-history-2026.html",
+      "before": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 15 October 2026.",
+      "after": "Updated October 2026. HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing\u2026"
     }
   ],
   "indexnow": {
