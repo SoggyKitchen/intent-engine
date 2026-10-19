@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-10-15",
+  "endDate": "2026-10-16",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -26,10 +26,10 @@
       "ctr": 0.0,
       "impressions": 17.0,
       "page": "https://saaspare.org/pages/",
-      "position": 14.29,
+      "position": 14.24,
       "query": "",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 28.05
+      "score": 28.1
     },
     {
       "clicks": 0.0,
@@ -104,12 +104,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 15.0,
+      "impressions": 16.0,
       "page": "https://saaspare.org/",
-      "position": 1.2,
+      "position": 1.19,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 0.32
     },
     {
       "clicks": 0.0,
@@ -136,5 +136,5 @@
   "rowsPulled": 18,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-09-17"
+  "startDate": "2026-09-18"
 }
