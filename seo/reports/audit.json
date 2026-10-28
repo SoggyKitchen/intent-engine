@@ -3644,6 +3644,8 @@
       "Product",
       "PropertyValue",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -3717,8 +3719,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "1Password pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/1password-pricing-history-2026",
@@ -3726,18 +3728,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 88.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "1Password Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 69,
@@ -3899,7 +3900,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent 1Password review 2026, rated 9.2/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 164,
     "page_type": "pricing",
@@ -3912,6 +3913,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -11349,7 +11351,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent ActiveCampaign review 2026, rated 8.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 June 2026\u2026",
     "meta_length": 160,
     "page_type": "review",
@@ -11362,6 +11364,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -12625,7 +12628,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "meta_description": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/ahrefs-pricing-history-2026",
@@ -12634,18 +12637,21 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Ahrefs Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -12807,7 +12813,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Ahrefs review 2026, rated 9.0/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 161,
     "page_type": "pricing",
@@ -12820,6 +12826,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -13896,7 +13903,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent AirgapAI Code review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 21 August 2026.",
     "meta_length": 162,
     "page_type": "review",
@@ -13908,6 +13915,7 @@
       "FAQPage",
       "Organization",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -13987,8 +13995,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Airtable pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Airtable pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/airtable-pricing-history-2026",
@@ -13996,18 +14004,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Airtable Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 68,
@@ -14361,7 +14368,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Amplitude review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 164,
     "page_type": "pricing",
@@ -14374,6 +14381,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -16136,8 +16144,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Asana pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 165,
     "page_type": "pricing",
     "path": "/pages/asana-pricing-history-2026",
@@ -16145,18 +16153,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.81,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.81,
+      "overall": 89.31,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Asana Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 65,
@@ -16318,7 +16325,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Asana review 2026, rated 8.3/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -16331,6 +16338,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -17421,7 +17429,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent AWeber review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -17434,6 +17442,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -18951,7 +18960,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent BambooHR review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -18964,6 +18973,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -19835,8 +19845,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Basecamp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Basecamp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/basecamp-pricing-history-2026",
@@ -19844,18 +19854,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Basecamp Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 68,
@@ -40746,8 +40755,8 @@
     ],
     "issues": [],
     "jsonld_blocks": 3,
-    "meta_description": "Find the best SEO tools for small business in 2026. SaaSpare ranks and reviews affordable, effective tools to boost your organic traffic.",
-    "meta_length": 137,
+    "meta_description": "Updated October 2026. Find the best SEO tools for small business in 2026. SaaSpare ranks and reviews affordable, effective tools to boost your organic traffic\u2026",
+    "meta_length": 159,
     "page_type": "pricing",
     "path": "/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed",
     "robots": "",
@@ -43192,7 +43201,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent BigCommerce review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -43205,6 +43214,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -43981,8 +43991,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Bitwarden pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Bitwarden pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/bitwarden-pricing-history-2026",
@@ -43990,18 +44000,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Bitwarden Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 69,
@@ -45600,8 +45609,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Buffer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Buffer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/buffer-pricing-history-2026",
@@ -45609,18 +45618,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Buffer Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -45787,8 +45795,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Calendly pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Calendly pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/calendly-pricing-history-2026",
@@ -45796,18 +45804,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Calendly Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 68,
@@ -46167,7 +46174,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Canva review 2026, rated 8.5/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -46180,6 +46187,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -48507,7 +48515,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Clearscope review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 165,
     "page_type": "pricing",
@@ -48520,6 +48528,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -49056,7 +49065,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "meta_description": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/clickup-pricing-history-2026",
@@ -49065,18 +49074,21 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "ClickUp Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -49238,7 +49250,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent ClickUp review 2026, rated 8.7/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -49251,6 +49263,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -52190,7 +52203,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Constant Contact review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 14 August 2026.",
     "meta_length": 165,
     "page_type": "review",
@@ -52202,6 +52215,7 @@
       "FAQPage",
       "Organization",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -52555,7 +52569,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent Contabo review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -52568,6 +52582,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -54431,7 +54446,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Copy.ai review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -54444,6 +54459,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -57547,8 +57563,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Datadog pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Datadog pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/datadog-pricing-history-2026",
@@ -57556,18 +57572,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 88.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Datadog Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -57729,7 +57744,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Datadog review August 2026: 7.8/10. Strong APM & unified observability, but pricing is complex, costs spike at scale Honest verdict, real\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -57742,6 +57757,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -58453,7 +58469,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Deel review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -58466,6 +58482,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -59086,7 +59103,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent DigitalOcean review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026\u2026",
     "meta_length": 160,
     "page_type": "review",
@@ -59099,6 +59116,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -60504,7 +60522,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent DocuSign review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -60517,6 +60535,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -65705,7 +65724,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent Elementor review 2026, rated 8.4/10. Best WordPress page builder for most teams, but it",
     "meta_length": 121,
     "page_type": "review",
@@ -65718,6 +65737,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -67071,7 +67091,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent ElevenLabs review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -67084,6 +67104,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -68283,7 +68304,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent EngageBay review, rated 7.9/10. All-in-one CRM, email marketing, and helpdesk from $15/user/mo. Honest pros, cons, and who\u2026\u2026",
     "meta_length": 158,
     "page_type": "pricing",
@@ -68296,6 +68317,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -70433,7 +70455,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent ExpressVPN review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 165,
     "page_type": "pricing",
@@ -70446,6 +70468,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -70619,8 +70642,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Figma pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Figma pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 165,
     "page_type": "pricing",
     "path": "/pages/figma-pricing-history-2026",
@@ -70628,18 +70651,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Figma Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 65,
@@ -71521,7 +71543,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Fiverr review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 161,
     "page_type": "pricing",
@@ -71534,6 +71556,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -71975,8 +71998,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Framer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Framer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/framer-pricing-history-2026",
@@ -71984,18 +72007,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Framer Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -72449,8 +72471,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Freshbooks pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Freshbooks pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/freshbooks-pricing-history-2026",
@@ -72458,18 +72480,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Freshbooks Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 70,
@@ -72632,7 +72653,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent FreshBooks review 2026, rated 8.2/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 165,
     "page_type": "pricing",
@@ -72645,6 +72666,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -74628,7 +74650,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent GetResponse review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026\u2026",
     "meta_length": 157,
     "page_type": "pricing",
@@ -74641,6 +74663,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -75908,8 +75931,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Ghost pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Ghost pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 165,
     "page_type": "pricing",
     "path": "/pages/ghost-pricing-history-2026",
@@ -75917,18 +75940,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Ghost Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 65,
@@ -76789,8 +76811,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Github pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Github pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/github-pricing-history-2026",
@@ -76798,18 +76820,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Github Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -77584,8 +77605,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Grammarly pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Grammarly pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/grammarly-pricing-history-2026",
@@ -77593,18 +77614,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Grammarly Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 69,
@@ -79096,7 +79116,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Gusto review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -79109,6 +79129,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -79892,8 +79913,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Helpscout pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Helpscout pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/helpscout-pricing-history-2026",
@@ -79901,18 +79922,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Helpscout Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 69,
@@ -80261,7 +80281,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Hetzner review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -80274,6 +80294,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -81255,7 +81276,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. HostPapa review 2026: 7.1/10, green hosting with great phone support, but renewal rates jump 2\u20133\u00d7. Best for small businesses and\u2026 Honest\u2026\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -81268,6 +81289,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -83084,7 +83106,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "meta_description": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/hubspot-pricing-history-2026",
@@ -83093,18 +83115,21 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "HubSpot Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -83266,7 +83291,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent HubSpot review 2026, rated 9.1/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -83279,6 +83304,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -84908,7 +84934,7 @@
       "/privacy"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. impact.com rated 8.8/10. Enterprise-grade affiliate & partnership management: real-time tracking, fraud prevention, global payouts.\u2026\u2026\u2026",
     "meta_length": 156,
     "page_type": "pricing",
@@ -84921,6 +84947,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -85737,7 +85764,7 @@
   {
     "affiliate_links": [],
     "broken_internal_links": [],
-    "canonical": "https://saaspare.org/pages",
+    "canonical": "https://saaspare.org/pages/index",
     "external_links": [],
     "file": "site/pages/index.html",
     "h1": [
@@ -87209,16 +87236,17 @@
       "content": 13,
       "conversionRevenue": 8,
       "internalLinking": 12,
-      "overall": 78.0,
+      "overall": 77.0,
       "performanceUx": 5,
       "schemaIndexability": 6,
-      "technical": 19,
+      "technical": 18,
       "trust": 15.0
     },
     "title": "B2B SaaS Pricing & Comparisons 2026: Reviews, Free Trials & Alternatives | SaaSpare",
     "title_length": 83,
     "url": "https://saaspare.org/pages",
     "warnings": [
+      "canonical_mismatch",
       "missing_correction_cta",
       "missing_related_pages",
       "title_length_outside_target"
@@ -88176,7 +88204,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Jasper Ai review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 164,
     "page_type": "pricing",
@@ -88189,6 +88217,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -90549,7 +90578,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Kajabi review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 161,
     "page_type": "pricing",
@@ -90562,6 +90591,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -91269,8 +91299,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Kit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Kit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 163,
     "page_type": "pricing",
     "path": "/pages/kit-pricing-history-2026",
@@ -91278,18 +91308,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Kit Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 63,
@@ -93308,8 +93337,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Linear pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Linear pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/linear-pricing-history-2026",
@@ -93317,18 +93346,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Linear Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -93491,7 +93519,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Linear review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 161,
     "page_type": "pricing",
@@ -93504,6 +93532,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -95162,8 +95191,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Loom pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Loom pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/loom-pricing-history-2026",
@@ -95171,18 +95200,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Loom Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 64,
@@ -97682,6 +97710,8 @@
       "Product",
       "PropertyValue",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -97755,8 +97785,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Miro pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Miro pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/miro-pricing-history-2026",
@@ -97764,18 +97794,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 88.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Miro Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 64,
@@ -97846,7 +97875,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Miro review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -97859,6 +97888,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -98659,7 +98689,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Mixpanel review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -98672,6 +98702,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -99733,7 +99764,7 @@
     ],
     "issues": [],
     "jsonld_blocks": 2,
-    "meta_description": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "meta_description": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/monday-com-pricing-history-2026",
@@ -99742,18 +99773,21 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Monday.com Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 70,
@@ -99914,7 +99948,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Monday.com review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 165,
     "page_type": "pricing",
@@ -99927,6 +99961,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -101364,7 +101399,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Moz Pro review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -101377,6 +101412,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -102157,8 +102193,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Netlify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Netlify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/netlify-pricing-history-2026",
@@ -102166,18 +102202,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Netlify Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -103137,7 +103172,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Nordlayer review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 164,
     "page_type": "pricing",
@@ -103150,6 +103185,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -105281,7 +105317,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent NordPass review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 161,
     "page_type": "pricing",
@@ -105294,6 +105330,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -106305,7 +106342,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent NordVPN review 2026, rated 8.6/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -106318,6 +106355,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -107595,8 +107633,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Notion pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Notion pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/notion-pricing-history-2026",
@@ -107604,18 +107642,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.84,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.84,
+      "overall": 89.34,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Notion Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -107778,7 +107815,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Notion review 2026, rated 8.0/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 161,
     "page_type": "pricing",
@@ -107791,6 +107828,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -110689,7 +110727,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Pandadoc review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -110702,6 +110740,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -111769,7 +111808,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent Parallels Desktop review 2026, rated 8.7/10. Real pros and cons, verified pricing, and our honest verdict. Updated 8 August 2026.",
     "meta_length": 163,
     "page_type": "review",
@@ -111782,6 +111821,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -112314,7 +112354,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent PartnerStack review 2026, rated 8.5/10. The leading B2B partner management platform. Real pros, cons, verified pricing info, and\u2026",
     "meta_length": 165,
     "page_type": "review",
@@ -112327,6 +112367,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -114618,8 +114659,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Pipedrive pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Pipedrive pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 169,
     "page_type": "pricing",
     "path": "/pages/pipedrive-pricing-history-2026",
@@ -114627,18 +114668,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 88.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Pipedrive Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 69,
@@ -114800,7 +114840,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Pipedrive review 2026, rated 8.0/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 164,
     "page_type": "pricing",
@@ -114813,6 +114853,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -116637,7 +116678,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent ProtonVPN review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -116650,6 +116691,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -117810,8 +117852,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Quickbooks pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Quickbooks pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/quickbooks-pricing-history-2026",
@@ -117819,18 +117861,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Quickbooks Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 70,
@@ -118991,7 +119032,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Ramp Review: 7.8/10. Core card is free; Ramp Plus $15/user/mo. Real pricing of what stays free vs paid, honest verdict.",
     "meta_length": 143,
     "page_type": "review",
@@ -119004,6 +119045,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -122609,7 +122651,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Rippling review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -122622,6 +122664,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -124689,11 +124732,10 @@
     ],
     "h2": [
       "All Reviews",
-      "How we score",
-      "How SaaSpare keeps this page useful"
+      "How we score"
     ],
-    "has_affiliate_disclosure": true,
-    "has_comparison_table": true,
+    "has_affiliate_disclosure": false,
+    "has_comparison_table": false,
     "has_correction": true,
     "has_cta": true,
     "has_email_capture": true,
@@ -124701,11 +124743,11 @@
     "has_faq_schema": false,
     "has_last_verified": true,
     "has_methodology": true,
-    "has_pricing_source": true,
+    "has_pricing_source": false,
     "has_pricing_table": true,
-    "has_related_pages": true,
+    "has_related_pages": false,
     "has_sticky_cta": true,
-    "has_trust_box": true,
+    "has_trust_box": false,
     "images": 0,
     "images_missing_alt": 0,
     "internal_links": [
@@ -124713,14 +124755,7 @@
       "/contact",
       "/corrections",
       "/methodology",
-      "/pages/saas-hidden-costs-2026",
-      "https://saaspare.org/affiliate-disclosure",
-      "https://saaspare.org/contact",
-      "https://saaspare.org/deal-radar",
-      "https://saaspare.org/methodology",
-      "https://saaspare.org/pages/",
-      "https://saaspare.org/pages/saas-roi-calculator",
-      "https://saaspare.org/shortlist"
+      "/pages/saas-hidden-costs-2026"
     ],
     "issues": [],
     "jsonld_blocks": 1,
@@ -124735,23 +124770,25 @@
       "Person"
     ],
     "score": {
-      "content": 17,
-      "conversionRevenue": 8,
-      "internalLinking": 13.4,
-      "overall": 87.4,
+      "content": 14,
+      "conversionRevenue": 7,
+      "internalLinking": 7.25,
+      "overall": 69.75,
       "performanceUx": 5,
       "schemaIndexability": 6,
       "technical": 18,
-      "trust": 20.0
+      "trust": 12.5
     },
     "title": "SaaS Pricing Transparency Scores 2026: 41 Tools Ranked on What They Hide",
     "title_length": 72,
     "url": "https://saaspare.org/pages/saas-pricing-transparency-scores-2026",
     "warnings": [
       "meta_length_outside_target",
+      "missing_related_pages",
+      "missing_trustbox",
       "title_length_outside_target"
     ],
-    "word_count": 7379
+    "word_count": 7216
   },
   {
     "affiliate_links": [
@@ -125454,7 +125491,7 @@
       "broken_internal_link"
     ],
     "jsonld_blocks": 2,
-    "meta_description": "Salesforce pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "meta_description": "Salesforce pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 170,
     "page_type": "pricing",
     "path": "/pages/salesforce-pricing-history-2026",
@@ -125463,18 +125500,21 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 84.5,
+      "overall": 87.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 17,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Salesforce Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 70,
@@ -125635,7 +125675,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Salesforce review 2026, rated 8.4/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 165,
     "page_type": "pricing",
@@ -125648,6 +125688,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -126977,7 +127018,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent SE Ranking review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 165,
     "page_type": "pricing",
@@ -126990,6 +127031,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -127710,14 +127752,14 @@
       "technical": 20,
       "trust": 15.0
     },
-    "title": "Semrush Free Trial 2026: Get Started Step-by-Step | SaaSpare",
-    "title_length": 60,
+    "title": "Semrush Free Trial 2026: How to Get the Full October 2026 Offer",
+    "title_length": 63,
     "url": "https://saaspare.org/pages/semrush-free-trial-2026-how-to-get-it-step-by-step",
     "warnings": [
       "missing_correction_cta",
       "missing_methodology"
     ],
-    "word_count": 824
+    "word_count": 826
   },
   {
     "affiliate_links": [
@@ -127798,6 +127840,8 @@
       "Product",
       "PropertyValue",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication",
       "WebPage"
     ],
@@ -127875,8 +127919,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Semrush pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Semrush pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/semrush-pricing-history-2026",
@@ -127884,18 +127928,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 93.0,
+      "overall": 90.5,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Semrush Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -128059,7 +128102,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent Semrush review 2026, rated 9.1/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -128072,6 +128115,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -130060,6 +130104,8 @@
       "Product",
       "PropertyValue",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -130135,8 +130181,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Shopify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Shopify pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/shopify-pricing-history-2026",
@@ -130144,18 +130190,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 93.0,
+      "overall": 90.5,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Shopify Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -130317,7 +130362,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent Shopify review 2026, rated 9.1/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -130330,6 +130375,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -131988,6 +132034,8 @@
       "Product",
       "PropertyValue",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -132061,8 +132109,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Slack pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Slack pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 165,
     "page_type": "pricing",
     "path": "/pages/slack-pricing-history-2026",
@@ -132070,18 +132118,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 88.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Slack Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 65,
@@ -132151,7 +132198,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Slack review 2026, rated 8.2/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -132164,6 +132211,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -134014,8 +134062,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Stripe pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Stripe pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/stripe-pricing-history-2026",
@@ -134023,18 +134071,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.86,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.86,
+      "overall": 83.36,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Stripe Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -134104,7 +134151,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Stripe review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 161,
     "page_type": "pricing",
@@ -134117,6 +134164,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -134839,7 +134887,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent Sucuri review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -134852,6 +134900,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -135577,7 +135626,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Supabase review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -135590,6 +135639,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -136019,8 +136069,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Surfer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Surfer pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/surfer-pricing-history-2026",
@@ -136028,18 +136078,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Surfer Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -136481,7 +136530,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Surfer SEO review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 165,
     "page_type": "pricing",
@@ -136494,6 +136543,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -137390,7 +137440,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated October 2026. Independent Surfshark review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -137403,6 +137453,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -139523,7 +139574,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Teachable review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 164,
     "page_type": "pricing",
@@ -139536,6 +139587,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -139880,8 +139932,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Trello pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Trello pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/trello-pricing-history-2026",
@@ -139889,18 +139941,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Trello Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -140535,6 +140586,8 @@
       "Product",
       "PropertyValue",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -140608,8 +140661,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Tresorit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Tresorit pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/tresorit-pricing-history-2026",
@@ -140617,18 +140670,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 88.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Tresorit Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 68,
@@ -140698,7 +140750,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Tresorit review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -140711,6 +140763,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -142023,8 +142076,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Typeform pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Typeform pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 168,
     "page_type": "pricing",
     "path": "/pages/typeform-pricing-history-2026",
@@ -142032,18 +142085,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Typeform Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 68,
@@ -143188,8 +143240,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Vercel pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Vercel pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/vercel-pricing-history-2026",
@@ -143197,18 +143249,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Vercel Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -143995,7 +144046,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Vultr review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 160,
     "page_type": "pricing",
@@ -144008,6 +144059,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -144262,8 +144314,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Wave pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Wave pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/wave-pricing-history-2026",
@@ -144271,18 +144323,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Wave Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 64,
@@ -147106,7 +147157,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Workable review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 163,
     "page_type": "pricing",
@@ -147119,6 +147170,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -148876,8 +148928,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Xero pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Xero pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 164,
     "page_type": "pricing",
     "path": "/pages/xero-pricing-history-2026",
@@ -148885,18 +148937,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 88.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Xero Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 64,
@@ -149059,7 +149110,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Xero review 2026, rated 8.4/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -149072,6 +149123,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -149967,8 +150019,8 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
-    "meta_description": "Zapier pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Zapier pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 166,
     "page_type": "pricing",
     "path": "/pages/zapier-pricing-history-2026",
@@ -149976,18 +150028,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 85.34,
+      "overall": 82.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 17,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Zapier Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 66,
@@ -150358,6 +150409,8 @@
       "Product",
       "PropertyValue",
       "Question",
+      "Rating",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -150431,8 +150484,8 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
-    "meta_description": "Zendesk pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 27 October 2026.",
+    "jsonld_blocks": 1,
+    "meta_description": "Zendesk pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 28 October 2026.",
     "meta_length": 167,
     "page_type": "pricing",
     "path": "/pages/zendesk-pricing-history-2026",
@@ -150440,18 +150493,17 @@
     "schema_types": [
       "Answer",
       "FAQPage",
-      "Organization",
       "Question"
     ],
     "score": {
       "content": 19.34,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 91.34,
+      "overall": 88.84,
       "performanceUx": 5,
       "schemaIndexability": 7,
       "technical": 20,
-      "trust": 15.0
+      "trust": 12.5
     },
     "title": "Zendesk Pricing History 2026: Every Price Change Tracked \u2014 SaaSpare",
     "title_length": 67,
@@ -150522,7 +150574,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Zendesk review 2026, rated 7.8/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 162,
     "page_type": "pricing",
@@ -150535,6 +150587,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
@@ -151950,7 +152003,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 3,
+    "jsonld_blocks": 4,
     "meta_description": "Updated September 2026. Independent Zoom review 2026, rated 8.0/10. Real pros and cons, verified pricing, and our honest verdict. Updated 4 August 2026 Honest\u2026",
     "meta_length": 159,
     "page_type": "pricing",
@@ -151963,6 +152016,7 @@
       "Organization",
       "PropertyValue",
       "Question",
+      "Review",
       "SoftwareApplication"
     ],
     "score": {
