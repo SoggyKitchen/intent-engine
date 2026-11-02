@@ -182,20 +182,6 @@
     "premium": false
   },
   {
-    "file": "site/pages/best-accounting-software-for-freelancers-in-2026.html",
-    "fixes": [
-      "canonical",
-      "image_alt",
-      "internal_links",
-      "meta",
-      "organization_schema",
-      "schema_safety",
-      "trust_block"
-    ],
-    "path": "/pages/best-accounting-software-for-freelancers-in-2026",
-    "premium": false
-  },
-  {
     "file": "site/pages/best-seo-tools-for-small-business-in-2026-ranked-reviewed.html",
     "fixes": [
       "canonical",
