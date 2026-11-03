@@ -405,7 +405,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-10-13",
     "pre_blob": "8cf72e9370bd1c00ad00f64e7c459426638afe27",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/index.html",
