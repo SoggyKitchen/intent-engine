@@ -72,7 +72,7 @@
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 91.41/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 91.7/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 91.83/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/ahrefs-pricing-history-2026` (pricing, 90.5/100): missing_correction_cta, missing_methodology
+- `/pages/ahrefs-pricing-history-2026` (pricing, 93.0/100): missing_correction_cta, missing_methodology
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, 91.12/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict` (pricing, 94.06/100): missing_correction_cta, thin_buyer_page
 - `/pages/ahrefs-vs-clearscope-which-is-better-in-2026` (comparison, 96.11/100): thin_buyer_page

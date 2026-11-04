@@ -62,9 +62,9 @@ Pages scanned: 1603
 - `/pages/cheaper-alternative-to-monday-com-after-price-hike-2026`: 83.93/100, issues=none
 - `/pages/request-a-comparison`: 84.38/100, issues=none
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
-- `/pages/salesforce-pricing-history-2026`: 84.5/100, issues=broken_internal_link
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: 84.5/100, issues=broken_internal_link
 - `/pages/cheaper-alternative-to-semrush-after-price-hike-2026`: 84.8/100, issues=none
 - `/pages/cheaper-alternative-to-hubspot-after-price-hike-2026`: 84.81/100, issues=none
 - `/pages/hidden-fee-detector`: 84.81/100, issues=none
 - `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown`: 84.94/100, issues=none
+- `/terms`: 85.0/100, issues=none

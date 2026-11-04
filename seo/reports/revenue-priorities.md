@@ -78,7 +78,6 @@
 - `/pages/elementor-coupon-code-promo-codes-2026-verified-discounts` (coupon, score 98.0): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/v3-preview-deal-radar` (coupon, score 83.81): CTA=True, affiliateLinks=0, disclosure=True
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 84.5): CTA=True, affiliateLinks=1, disclosure=True
-- `/pages/salesforce-pricing-history-2026` (pricing, score 84.5): CTA=True, affiliateLinks=2, disclosure=True
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (free_trial, score 84.5): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown` (free_trial, score 84.94): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/airtable-pricing-history-2026` (pricing, score 85.34): CTA=True, affiliateLinks=1, disclosure=True
@@ -100,3 +99,4 @@
 - `/pages/quickbooks-pricing-history-2026` (pricing, score 85.34): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/surfer-pricing-history-2026` (pricing, score 85.34): CTA=True, affiliateLinks=1, disclosure=True
 - `/pages/trello-pricing-history-2026` (pricing, score 85.34): CTA=True, affiliateLinks=1, disclosure=True
+- `/pages/typeform-pricing-history-2026` (pricing, score 85.34): CTA=True, affiliateLinks=1, disclosure=True

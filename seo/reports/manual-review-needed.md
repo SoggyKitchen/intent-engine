@@ -24,7 +24,6 @@ These are not safe to fake or mass rewrite.
 - `/pages/7-best-ramp-alternatives-in-2026-free-paid`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
 - `/pages/v3-preview-deal-radar`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/salesforce-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/does-fiverr-have-a-free-plan-2026-full-breakdown`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/v3-preview-privacy`: missing_trustbox, thin_buyer_page
@@ -69,6 +68,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/best-nordvpn-alternatives-in-2026-free-paid`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-privacy-vpn-2026`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/pages/best-vpn-for-gaming-2026`: missing_correction_cta, missing_methodology, missing_trustbox, thin_buyer_page
+- `/pages/salesforce-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/saas-pricing-calculator-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/buyer-type-alternatives`: missing_correction_cta, missing_trustbox, thin_buyer_page
 - `/best-cloud-hosting-2026`: missing_correction_cta
@@ -89,16 +89,12 @@ These are not safe to fake or mass rewrite.
 - `/pages/shopify-vs-webflow-which-is-better-in-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/best-hr-software-2026`: missing_correction_cta
 - `/best-project-management-software-2026`: missing_correction_cta
-- `/pages/ahrefs-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/best-affiliate-management-software-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/best-vpn-for-remote-work-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/best-vpn-for-small-business-2026`: missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/clickup-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/elevenlabs-vs-heygen-which-is-better-in-2026`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/engagebay-coupon-code-promo-codes-2026-verified-discounts`: missing_correction_cta, missing_methodology, missing_trustbox
 - `/pages/hostpapa-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology
-- `/pages/hubspot-pricing-history-2026`: missing_correction_cta, missing_methodology
-- `/pages/monday-com-pricing-history-2026`: missing_correction_cta, missing_methodology
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/linear-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/rippling-promo-code-2026-discounts-deals-that-actually-work`: missing_correction_cta, missing_methodology, thin_buyer_page
@@ -202,3 +198,7 @@ These are not safe to fake or mass rewrite.
 - `/pages/datadog-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/zoom-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/mixpanel-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/pipedrive-free-trial-2026-how-to-get-it-step-by-step`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/asana-pricing-history-2026`: missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/v3-preview-index`: thin_buyer_page
+- `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay`: missing_correction_cta, missing_methodology, thin_buyer_page

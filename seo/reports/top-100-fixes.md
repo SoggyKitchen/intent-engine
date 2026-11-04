@@ -8,7 +8,6 @@
 - `/newsletter` (71.26/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/salesforce-pricing-history-2026` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/editorial-policy` (75.17/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/airtable-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
@@ -39,6 +38,7 @@
 - `/dmca` (75.91/100): meta_length_outside_target
 - `/cookie-policy` (75.97/100): meta_length_outside_target
 - `/pages/saas-pricing-changes` (76.37/100): meta_length_outside_target
+- `/pages/salesforce-pricing-history-2026` (87.0/100): broken_internal_link, missing_correction_cta, missing_methodology
 - `/pages` (78.0/100): missing_correction_cta, missing_related_pages, title_length_outside_target
 - `/pages/v3-preview-404` (79.2/100): meta_length_outside_target, missing_correction_cta, missing_trustbox, thin_buyer_page, title_length_outside_target
 - `/privacy` (79.66/100): meta_length_outside_target

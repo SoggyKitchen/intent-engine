@@ -20,7 +20,7 @@
 - `/pages/loom-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
 - `/pages/netlify-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
 - `/pages/quickbooks-pricing-history-2026` (pricing, 85.34/100): broken_internal_link
-- `/pages/salesforce-pricing-history-2026` (pricing, 84.5/100): broken_internal_link
+- `/pages/salesforce-pricing-history-2026` (pricing, 87.0/100): broken_internal_link
 - `/pages/stripe-pricing-history-2026` (pricing, 85.86/100): broken_internal_link
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 84.5/100): broken_internal_link
 - `/pages/surfer-pricing-history-2026` (pricing, 85.34/100): broken_internal_link

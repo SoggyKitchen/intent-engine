@@ -12624,7 +12624,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Ahrefs pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 3 November 2026.",
     "meta_length": 166,
     "page_type": "pricing",
@@ -12634,6 +12634,7 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
       "SoftwareApplication"
     ],
@@ -12641,11 +12642,11 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Ahrefs Pricing History 2026: Every Price Change Tracked: SaaSpare",
     "title_length": 65,
@@ -49055,7 +49056,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "ClickUp pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 3 November 2026.",
     "meta_length": 167,
     "page_type": "pricing",
@@ -49065,6 +49066,7 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
       "SoftwareApplication"
     ],
@@ -49072,11 +49074,11 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "ClickUp Pricing History 2026: Every Price Change Tracked: SaaSpare",
     "title_length": 66,
@@ -83083,7 +83085,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "HubSpot pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 3 November 2026.",
     "meta_length": 167,
     "page_type": "pricing",
@@ -83093,6 +83095,7 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
       "SoftwareApplication"
     ],
@@ -83100,11 +83103,11 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "HubSpot Pricing History 2026: Every Price Change Tracked: SaaSpare",
     "title_length": 66,
@@ -99732,7 +99735,7 @@
       "/terms"
     ],
     "issues": [],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Monday.com pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 3 November 2026.",
     "meta_length": 170,
     "page_type": "pricing",
@@ -99742,6 +99745,7 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
       "SoftwareApplication"
     ],
@@ -99749,11 +99753,11 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 15,
-      "overall": 90.5,
+      "overall": 93.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 20,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Monday.com Pricing History 2026: Every Price Change Tracked: SaaSpare",
     "title_length": 69,
@@ -125453,7 +125457,7 @@
     "issues": [
       "broken_internal_link"
     ],
-    "jsonld_blocks": 2,
+    "jsonld_blocks": 3,
     "meta_description": "Salesforce pricing history 2026: every price change tracked with dates and sources. Advertised vs true cost, hidden fees, and buyer timing guide. Updated 3 November 2026.",
     "meta_length": 170,
     "page_type": "pricing",
@@ -125463,6 +125467,7 @@
       "Answer",
       "FAQPage",
       "Offer",
+      "Organization",
       "Question",
       "SoftwareApplication"
     ],
@@ -125470,11 +125475,11 @@
       "content": 20,
       "conversionRevenue": 10,
       "internalLinking": 12,
-      "overall": 84.5,
+      "overall": 87.0,
       "performanceUx": 5,
       "schemaIndexability": 8,
       "technical": 17,
-      "trust": 12.5
+      "trust": 15.0
     },
     "title": "Salesforce Pricing History 2026: Every Price Change Tracked: SaaSpare",
     "title_length": 69,

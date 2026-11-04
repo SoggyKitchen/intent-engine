@@ -1,14 +1,14 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-11-04T10:54:06+00:00
-Mode: `audit`
+Generated: 2026-11-04T11:56:20+00:00
+Mode: `apply-safe`
 
 ## Current Score
 - Overall SaaSpare Health Score: **93.4/100**
 - Level: **Strong authority-ready**
 - Technical SEO: 19.55/20
 - Content usefulness: 19.23/20
-- Trust/E-E-A-T: 18.73/20
+- Trust/E-E-A-T: 18.74/20
 - Internal linking: 14.85/15
 - Schema/indexability: 7.03/10
 - Conversion/revenue: 9.0/10
@@ -16,10 +16,10 @@ Mode: `audit`
 
 ## Dashboard Summary
 - Pages scanned: 1603
-- Healthy pages (85+): 1553
+- Healthy pages (85+): 1554
 - Unhealthy pages (<55): 2
 - OTTO import rows normalized: 18595
-- Safe fixes applied this run: 0
+- Safe fixes applied this run: 6
 - GSC: connected
 - Cerebras AI suggestions: skipped; CEREBRAS_API_KEY missing
 
@@ -48,7 +48,6 @@ Mode: `audit`
 - `/newsletter` (71.26/100): missing_correction_cta, missing_methodology, missing_related_pages, thin_buyer_page
 - `/roi` (72.84/100): missing_correction_cta, missing_last_verified, missing_methodology, missing_related_pages, thin_buyer_page
 - `/pages/engagebay-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
-- `/pages/salesforce-pricing-history-2026` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology
 - `/pages/sucuri-free-trial-2026-how-to-get-it-step-by-step` (84.5/100): broken_internal_link, missing_correction_cta, missing_methodology, missing_trustbox
 - `/editorial-policy` (75.17/100): meta_length_outside_target, missing_related_pages, missing_trustbox, thin_buyer_page
 - `/pages/airtable-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
@@ -65,6 +64,7 @@ Mode: `audit`
 - `/pages/helpscout-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/kit-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/linear-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/loom-pricing-history-2026` (85.34/100): broken_internal_link, missing_correction_cta, missing_methodology, thin_buyer_page
 
 ## Top 25 Revenue Opportunities
 - `/deal-radar` (coupon, score 68.41): CTA=True, affiliateLinks=5, disclosure=True
