@@ -2,7 +2,7 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-10-05 to 2026-11-02
+Range: 2026-10-06 to 2026-11-03
 Rows pulled: 13
 
 ## Top Opportunities
@@ -12,5 +12,5 @@ Rows pulled: 13
 - Score 25.0: `https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step` query `saaspare.org` - impressions 2.0, CTR 0.0, position 68.5. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/deal-radar` query `(page rollup)` - impressions 6.0, CTR 0.0, position 1.67. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step` query `(page rollup)` - impressions 2.0, CTR 0.0, position 68.5. Monitor and prioritize if impressions continue rising.
-- Score 20.48: `https://saaspare.org/` query `(page rollup)` - impressions 24.0, CTR 0.0, position 1.54. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
+- Score 20.46: `https://saaspare.org/` query `(page rollup)` - impressions 23.0, CTR 0.0, position 1.52. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
 - Score 0.2: `https://saaspare.org/` query `saaspare.org` - impressions 10.0, CTR 0.0, position 1.6. Monitor and prioritize if impressions continue rising.
