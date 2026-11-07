@@ -34,7 +34,7 @@
 - `/pages/1password-coupon-code-promo-codes-2026-verified-discounts` (coupon, 91.63/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 92.0/100): missing_correction_cta, missing_methodology
 - `/pages/1password-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 97.0/100): title_length_outside_target
-- `/pages/1password-pricing-history-2026` (pricing, 88.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/1password-pricing-history-2026` (pricing, 91.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-promo-code-2026-discounts-deals-that-actually-work` (coupon, 91.28/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/1password-review-2026-is-it-worth-it-honest-verdict` (pricing, 94.22/100): missing_correction_cta, thin_buyer_page
 - `/pages/1password-vs-bitwarden-which-is-better-in-2026` (comparison, 96.16/100): thin_buyer_page
@@ -72,7 +72,7 @@
 - `/pages/ahrefs-coupon-code-promo-codes-2026-verified-discounts` (coupon, 91.41/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 91.7/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 91.83/100): missing_correction_cta, missing_methodology, thin_buyer_page
-- `/pages/ahrefs-pricing-history-2026` (pricing, 93.0/100): missing_correction_cta, missing_methodology
+- `/pages/ahrefs-pricing-history-2026` (pricing, 90.5/100): missing_correction_cta, missing_methodology
 - `/pages/ahrefs-promo-code-2026-discounts-deals-that-actually-work` (coupon, 91.12/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/ahrefs-review-2026-is-it-worth-it-honest-verdict` (pricing, 94.06/100): missing_correction_cta, thin_buyer_page
 - `/pages/ahrefs-vs-clearscope-which-is-better-in-2026` (comparison, 96.11/100): thin_buyer_page
@@ -87,7 +87,7 @@
 - `/pages/ai-tools-pricing-changes-2026` (pricing, 86.52/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/airbase-vs-divvy-which-is-better-in-2026` (comparison, 93.92/100): thin_buyer_page
 - `/pages/airgapai-code-review-2026-is-it-worth-it-honest-verdict` (review, 94.5/100): missing_correction_cta
-- `/pages/airtable-pricing-history-2026` (pricing, 82.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/airtable-pricing-history-2026` (pricing, 85.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/amplitude-coupon-2026-discount-codes-promo` (coupon, 91.08/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/amplitude-free-trial-2026-how-to-start-what-you-get` (free_trial, 91.69/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/amplitude-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 90.67/100): missing_correction_cta, missing_methodology, thin_buyer_page, title_length_outside_target
@@ -111,7 +111,7 @@
 - `/pages/asana-coupon-code-promo-codes-2026-verified-discounts` (coupon, 91.47/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 91.96/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 94.21/100): missing_methodology, thin_buyer_page
-- `/pages/asana-pricing-history-2026` (pricing, 89.31/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/asana-pricing-history-2026` (pricing, 91.81/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-promo-code-2026-discounts-deals-that-actually-work` (coupon, 91.05/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/asana-review-2026-is-it-worth-it-honest-verdict` (pricing, 94.07/100): missing_correction_cta, thin_buyer_page
 - `/pages/asana-vs-basecamp-which-is-better-in-2026` (comparison, 96.16/100): thin_buyer_page
@@ -152,7 +152,7 @@
 - `/pages/bamboohr-vs-remote-com-which-is-better-in-2026` (comparison, 93.36/100): meta_length_outside_target, thin_buyer_page
 - `/pages/bamboohr-vs-rippling-which-is-better-in-2026` (comparison, 93.21/100): meta_length_outside_target, thin_buyer_page
 - `/pages/bamboohr-vs-workable-which-is-better-in-2026` (comparison, 93.22/100): meta_length_outside_target, thin_buyer_page
-- `/pages/basecamp-pricing-history-2026` (pricing, 82.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/basecamp-pricing-history-2026` (pricing, 85.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/basecamp-vs-smartsheet-which-is-better-in-2026` (comparison, 94.19/100): thin_buyer_page
 - `/pages/basecamp-vs-todoist-which-is-better-in-2026` (comparison, 94.2/100): thin_buyer_page
 - `/pages/basecamp-vs-wrike-which-is-better-in-2026` (comparison, 94.06/100): thin_buyer_page
@@ -257,7 +257,7 @@
 - `/pages/bigcommerce-vs-recurly-which-is-better-in-2026` (comparison, 94.05/100): thin_buyer_page
 - `/pages/bigcommerce-vs-stripe-which-is-better-in-2026` (comparison, 94.05/100): thin_buyer_page
 - `/pages/bigcommerce-vs-woocommerce-which-is-better-in-2026` (comparison, 94.07/100): thin_buyer_page
-- `/pages/bitwarden-pricing-history-2026` (pricing, 82.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/bitwarden-pricing-history-2026` (pricing, 85.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/bitwarden-vs-dashlane-which-is-better-in-2026` (comparison, 96.16/100): thin_buyer_page
 - `/pages/bitwarden-vs-enpass-which-is-better-in-2026` (comparison, 96.15/100): thin_buyer_page
 - `/pages/bitwarden-vs-keeper-which-is-better-in-2026` (comparison, 96.16/100): thin_buyer_page
@@ -275,9 +275,9 @@
 - `/pages/brex-vs-netsuite-which-is-better-in-2026` (comparison, 92.98/100): meta_length_outside_target, thin_buyer_page
 - `/pages/brex-vs-quickbooks-which-is-better-in-2026` (comparison, 96.06/100): thin_buyer_page
 - `/pages/brex-vs-sage-which-is-better-in-2026` (comparison, 94.03/100): thin_buyer_page
-- `/pages/buffer-pricing-history-2026` (pricing, 82.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/buffer-pricing-history-2026` (pricing, 85.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/buyer-type-alternatives` (alternatives, 87.42/100): missing_correction_cta, missing_trustbox, thin_buyer_page
-- `/pages/calendly-pricing-history-2026` (pricing, 82.84/100): missing_correction_cta, missing_methodology, thin_buyer_page
+- `/pages/calendly-pricing-history-2026` (pricing, 85.34/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/canva-coupon-code-promo-codes-2026-verified-discounts` (coupon, 91.41/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/canva-free-trial-2026-how-to-get-it-step-by-step` (free_trial, 91.71/100): missing_correction_cta, missing_methodology, thin_buyer_page
 - `/pages/canva-pricing-2026-plans-costs-what-you-actually-pay` (pricing, 95.5/100): missing_methodology
