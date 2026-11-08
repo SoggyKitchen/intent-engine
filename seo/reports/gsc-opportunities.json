@@ -1,15 +1,15 @@
 {
-  "endDate": "2026-11-04",
+  "endDate": "2026-11-05",
   "opportunities": [
     {
       "clicks": 0.0,
       "ctr": 0.0,
       "impressions": 23.0,
       "page": "https://saaspare.org/pages/",
-      "position": 8.48,
+      "position": 8.43,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 46.94
+      "score": 46.89
     },
     {
       "clicks": 0.0,
@@ -64,12 +64,12 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 24.0,
+      "impressions": 25.0,
       "page": "https://saaspare.org/",
-      "position": 1.5,
+      "position": 1.68,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.48
+      "score": 20.5
     },
     {
       "clicks": 0.0,
@@ -94,5 +94,5 @@
   "rowsPulled": 13,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-10-07"
+  "startDate": "2026-10-08"
 }
