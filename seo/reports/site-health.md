@@ -1,6 +1,6 @@
 # SaaSpare SEO Helper Health Dashboard
 
-Generated: 2026-11-08T11:07:47+00:00
+Generated: 2026-11-09T12:39:19+00:00
 Mode: `apply-safe`
 
 ## Current Score
