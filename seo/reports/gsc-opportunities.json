@@ -1,32 +1,32 @@
 {
-  "endDate": "2026-11-06",
+  "endDate": "2026-11-07",
   "opportunities": [
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 23.0,
+      "impressions": 27.0,
       "page": "https://saaspare.org/pages/",
-      "position": 8.43,
+      "position": 9.93,
       "query": "",
       "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 46.89
+      "score": 48.47
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 13.0,
+      "impressions": 17.0,
       "page": "https://saaspare.org/pages/",
-      "position": 13.08,
+      "position": 14.35,
       "query": "saaspare.org",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 29.18
+      "score": 27.99
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 7.0,
+      "impressions": 9.0,
       "page": "https://saaspare.org/deal-radar",
-      "position": 1.57,
+      "position": 1.67,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -44,9 +44,9 @@
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 7.0,
+      "impressions": 9.0,
       "page": "https://saaspare.org/deal-radar",
-      "position": 1.57,
+      "position": 1.67,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
       "score": 25.0
@@ -62,29 +62,29 @@
       "score": 25.0
     },
     {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 25.0,
+      "clicks": 1.0,
+      "ctr": 0.0345,
+      "impressions": 29.0,
       "page": "https://saaspare.org/",
-      "position": 1.68,
+      "position": 1.72,
       "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.5
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 0.58
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 11.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/",
-      "position": 1.55,
+      "position": 1.64,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.22
+      "score": 0.28
     }
   ],
   "pageClicks": {
     "http://saaspare.org/": 0.0,
-    "https://saaspare.org/": 0.0,
+    "https://saaspare.org/": 1.0,
     "https://saaspare.org/deal-radar": 0.0,
     "https://saaspare.org/pages/": 0.0,
     "https://saaspare.org/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step": 0.0,
@@ -94,5 +94,5 @@
   "rowsPulled": 13,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-10-09"
+  "startDate": "2026-10-10"
 }
