@@ -421,7 +421,7 @@
     "baseline_clicks": 0.0,
     "baseline_date": "2026-10-21",
     "pre_blob": "0c6030b8c5859493512793445d66c56855513ba9",
-    "status": "pending"
+    "status": "skipped_low_traffic"
   },
   {
     "path": "site/pages/freshbooks-free-trial-2026-how-to-get-it-step-by-step.html",
