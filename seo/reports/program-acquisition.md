@@ -6,9 +6,9 @@ Unapproved / locked / placeholder programs ranked by traffic already on their pa
 
 (Dollar values are MODELLED from network benchmarks (see CLAUDE.md), not live earnings. Connect IMPACT_API_TOKEN for real EPC + conversions.)
 
-- **FreshBooks** [PENDING, Awin] — 25 pages, 2 impressions, $200/conv
 - **Datadog** [PLACEHOLDER, none] — 11 pages, 0 impressions, $80/conv
 - **HubSpot** [PENDING, Impact] — 44 pages, 0 impressions, $400/conv
+- **FreshBooks** [PENDING, Awin] — 25 pages, 0 impressions, $200/conv
 - **Deel** [PLACEHOLDER, none] — 9 pages, 0 impressions, $100/conv
 - **ActiveCampaign** [LOCKED, PartnerStack] — 24 pages, 0 impressions, $85/conv
 - **1Password** [PENDING, Impact] — 31 pages, 0 impressions, $45/conv
