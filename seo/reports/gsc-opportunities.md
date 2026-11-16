@@ -2,7 +2,7 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-10-15 to 2026-11-12
+Range: 2026-10-16 to 2026-11-13
 Rows pulled: 11
 
 ## Top Opportunities
