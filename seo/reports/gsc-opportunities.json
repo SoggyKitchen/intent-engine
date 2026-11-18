@@ -1,105 +1,65 @@
 {
-  "endDate": "2026-11-14",
+  "endDate": "2026-11-15",
   "opportunities": [
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 16.0,
+      "impressions": 14.0,
       "page": "https://saaspare.org/pages/",
-      "position": 10.12,
+      "position": 9.71,
       "query": "saaspare.org",
       "recommendedAction": "Add internal links, source-backed FAQ, and stronger above-fold verdict to push into top 10.",
-      "score": 28.45
+      "score": 27.99
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 10.0,
+      "impressions": 9.0,
       "page": "https://saaspare.org/deal-radar",
-      "position": 1.7,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/deal-radar",
-      "position": 1.7,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 25.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 29.0,
-      "page": "https://saaspare.org/pages/",
-      "position": 6.62,
-      "query": "",
-      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
-      "score": 20.58
-    },
-    {
-      "clicks": 1.0,
-      "ctr": 0.0294,
-      "impressions": 34.0,
-      "page": "https://saaspare.org/",
-      "position": 1.79,
-      "query": "",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.68
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 15.0,
-      "page": "https://saaspare.org/",
       "position": 1.67,
       "query": "saaspare.org",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.3
+      "score": 25.0
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/roi",
-      "position": 1.7,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/shortlist",
-      "position": 1.7,
-      "query": "saaspare.org",
-      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.2
-    },
-    {
-      "clicks": 0.0,
-      "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/roi",
-      "position": 1.7,
+      "impressions": 9.0,
+      "page": "https://saaspare.org/deal-radar",
+      "position": 1.67,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.2
+      "score": 25.0
     },
     {
       "clicks": 0.0,
       "ctr": 0.0,
-      "impressions": 10.0,
-      "page": "https://saaspare.org/shortlist",
-      "position": 1.7,
+      "impressions": 27.0,
+      "page": "https://saaspare.org/pages/",
+      "position": 6.15,
+      "query": "",
+      "recommendedAction": "Rewrite title/meta for stronger buyer-intent CTR; keep content factual.",
+      "score": 20.54
+    },
+    {
+      "clicks": 1.0,
+      "ctr": 0.0312,
+      "impressions": 32.0,
+      "page": "https://saaspare.org/",
+      "position": 1.78,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.2
+      "score": 0.64
+    },
+    {
+      "clicks": 0.0,
+      "ctr": 0.0,
+      "impressions": 13.0,
+      "page": "https://saaspare.org/",
+      "position": 1.62,
+      "query": "saaspare.org",
+      "recommendedAction": "Monitor and prioritize if impressions continue rising.",
+      "score": 0.26
     }
   ],
   "pageClicks": {
@@ -113,5 +73,5 @@
   "rowsPulled": 11,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-10-17"
+  "startDate": "2026-10-18"
 }
