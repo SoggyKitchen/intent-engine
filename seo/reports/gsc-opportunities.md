@@ -2,7 +2,7 @@
 
 Status: connected
 Site: sc-domain:saaspare.org
-Range: 2026-10-18 to 2026-11-15
+Range: 2026-10-19 to 2026-11-16
 Rows pulled: 11
 
 ## Top Opportunities
@@ -10,5 +10,5 @@ Rows pulled: 11
 - Score 25.0: `https://saaspare.org/deal-radar` query `saaspare.org` - impressions 9.0, CTR 0.0, position 1.67. Monitor and prioritize if impressions continue rising.
 - Score 25.0: `https://saaspare.org/deal-radar` query `(page rollup)` - impressions 9.0, CTR 0.0, position 1.67. Monitor and prioritize if impressions continue rising.
 - Score 20.54: `https://saaspare.org/pages/` query `(page rollup)` - impressions 27.0, CTR 0.0, position 6.15. Rewrite title/meta for stronger buyer-intent CTR; keep content factual.
-- Score 0.64: `https://saaspare.org/` query `(page rollup)` - impressions 32.0, CTR 0.0312, position 1.78. Monitor and prioritize if impressions continue rising.
-- Score 0.26: `https://saaspare.org/` query `saaspare.org` - impressions 13.0, CTR 0.0, position 1.62. Monitor and prioritize if impressions continue rising.
+- Score 0.62: `https://saaspare.org/` query `(page rollup)` - impressions 31.0, CTR 0.0323, position 1.81. Monitor and prioritize if impressions continue rising.
+- Score 0.24: `https://saaspare.org/` query `saaspare.org` - impressions 12.0, CTR 0.0, position 1.67. Monitor and prioritize if impressions continue rising.
