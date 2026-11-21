@@ -1,5 +1,5 @@
 {
-  "endDate": "2026-11-17",
+  "endDate": "2026-11-18",
   "opportunities": [
     {
       "clicks": 0.0,
@@ -43,13 +43,13 @@
     },
     {
       "clicks": 1.0,
-      "ctr": 0.0323,
-      "impressions": 31.0,
+      "ctr": 0.0333,
+      "impressions": 30.0,
       "page": "https://saaspare.org/",
-      "position": 1.81,
+      "position": 1.8,
       "query": "",
       "recommendedAction": "Monitor and prioritize if impressions continue rising.",
-      "score": 0.62
+      "score": 0.6
     },
     {
       "clicks": 0.0,
@@ -63,15 +63,14 @@
     }
   ],
   "pageClicks": {
-    "http://saaspare.org/": 0.0,
     "https://saaspare.org/": 1.0,
     "https://saaspare.org/deal-radar": 0.0,
     "https://saaspare.org/pages/": 0.0,
     "https://saaspare.org/roi": 0.0,
     "https://saaspare.org/shortlist": 0.0
   },
-  "rowsPulled": 11,
+  "rowsPulled": 10,
   "siteUrl": "sc-domain:saaspare.org",
   "skipped": false,
-  "startDate": "2026-10-20"
+  "startDate": "2026-10-21"
 }
